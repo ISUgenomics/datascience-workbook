@@ -1,2 +1,3 @@
-# hpcworkbook
-Tutorials and introduction to linux and high performance computing
+# HPC workbook
+
+Tutorials and training on linux and High performance training.
