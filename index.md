@@ -7,16 +7,16 @@ header:
 excerpt: 'Learning command line and HPC through practical tutorials'
 feature_row:
 
-  - title: "Example 1: Introduction to Unix"
+  - title: "01: Introduction to the Command Line"
     image_path: /assets/images/alexander-sinn-KgLtFCgfC28-unsplash.jpg
-    alt: "Programs"
-    url: "IntroductionToCommandLine/IntroToCommandLine_landingPage"
+    alt: "Command Line"
+    url: "01_IntroductionToCommandLine/IntroToCommandLine_landingPage"
     btn_label: "Learn More"
 
-  - title: "Example 2: Introduction to Ceres HPC workflows"
+  - title: "02: Introduction to HPC"
     image_path: /assets/images/nasa-1lfI7wkGWZ4-unsplash.jpg
-    alt: "Programs2"
-    url: "Workshops/Workshop"
+    alt: "HPC"
+    url: "02_HPC/00_IntroToHPC_landingPage"
     btn_label: "Learn More"
 
 ---
