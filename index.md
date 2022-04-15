@@ -7,7 +7,7 @@ header:
 excerpt: 'Learning command line and HPC through practical tutorials'
 feature_row:
 
-  - title: "01: Data Science Intro"
+  - title: "01: Data Science Brief"
     image_path: /assets/images/alexander-sinn-KgLtFCgfC28-unsplash.jpg
     alt: "Introduction to Data Science"
     url: "01-IntroToDataScience/00-IntroToDataScience-LandingPage"
@@ -25,7 +25,7 @@ feature_row:
     url: "03-SetUpComputingMachine/00-SetUpComputingMachine-LandingPage"
     btn_label: "Learn More"
 
-  - title: "04: Development Environment"
+  - title: "04: IDE Software"
     image_path: /assets/images/alexander-sinn-KgLtFCgfC28-unsplash.jpg
     alt: "Development Environment"
     url: "04-DevelopmentEnvironment/00-DevelopmentEnvironment-LandingPage"
@@ -43,7 +43,7 @@ feature_row:
     url: "06-IntroToHPC/00-IntroToHPC-LandingPage"
     btn_label: "Learn More"
 
-  - title: "07: Data Parsing"
+  - title: "07: Data Wrangling"
     image_path: /assets/images/alexander-sinn-KgLtFCgfC28-unsplash.jpg
     alt: "Data Acquisition and Wrangling"
     url: "07-DataParsing/00-DataParsing-LandingPage"
