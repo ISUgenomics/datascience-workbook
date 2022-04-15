@@ -7,16 +7,58 @@ header:
 excerpt: 'Learning command line and HPC through practical tutorials'
 feature_row:
 
-  - title: "01: Introduction to the Command Line"
+  - title: "01: Data Science Intro"
     image_path: /assets/images/alexander-sinn-KgLtFCgfC28-unsplash.jpg
-    alt: "Command Line"
-    url: "01_IntroductionToCommandLine/IntroToCommandLine_landingPage"
+    alt: "Introduction to Data Science"
+    url: "01-IntroToDataScience/00-IntroToDataScience-LandingPage"
     btn_label: "Learn More"
 
-  - title: "02: Introduction to HPC"
-    image_path: /assets/images/nasa-1lfI7wkGWZ4-unsplash.jpg
-    alt: "HPC"
-    url: "02_HPC/00_IntroToHPC_landingPage"
+  - title: "02: Command Line Basics"
+    image_path: /assets/images/alexander-sinn-KgLtFCgfC28-unsplash.jpg
+    alt: "Introduction to the Command Line"
+    url: "02-IntroToCommandLine/00-IntroToCommandLine-LandingPage"
+    btn_label: "Learn More"
+
+  - title: "03: Computer Set Up "
+    image_path: /assets/images/alexander-sinn-KgLtFCgfC28-unsplash.jpg
+    alt: "Setting Up Computing Machine"
+    url: "03-SetUpComputingMachine/00-SetUpComputingMachine-LandingPage"
+    btn_label: "Learn More"
+
+  - title: "04: Development Environment"
+    image_path: /assets/images/alexander-sinn-KgLtFCgfC28-unsplash.jpg
+    alt: "Development Environment"
+    url: "04-DevelopmentEnvironment/00-DevelopmentEnvironment-LandingPage"
+    btn_label: "Learn More"
+
+  - title: "05: Programming Intro"
+    image_path: /assets/images/alexander-sinn-KgLtFCgfC28-unsplash.jpg
+    alt: "Introduction to Programming"
+    url: "05-IntroToProgramming/00-IntroToProgramming-LandingPage"
+    btn_label: "Learn More"
+
+  - title: "06: Introduction to HPC"
+    image_path: /assets/images/alexander-sinn-KgLtFCgfC28-unsplash.jpg
+    alt: "High-Performance Computing (HPC)"
+    url: "06-IntroToHPC/00-IntroToHPC-LandingPage"
+    btn_label: "Learn More"
+
+  - title: "07: Data Parsing"
+    image_path: /assets/images/alexander-sinn-KgLtFCgfC28-unsplash.jpg
+    alt: "Data Acquisition and Wrangling"
+    url: "07-DataParsing/00-DataParsing-LandingPage"
+    btn_label: "Learn More"
+
+  - title: "08: Data Visualization"
+    image_path: /assets/images/alexander-sinn-KgLtFCgfC28-unsplash.jpg
+    alt: "Data Visualization"
+    url: "08-DataVisualization/00-DataVisualization-LandingPage"
+    btn_label: "Learn More"
+
+  - title: "09: Project Management"
+    image_path: /assets/images/alexander-sinn-KgLtFCgfC28-unsplash.jpg
+    alt: "Project Management"
+    url: "09-ProjectManagement/00-ProjectManagement-LandingPage"
     btn_label: "Learn More"
 
 ---

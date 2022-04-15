@@ -20,7 +20,7 @@ header:
     * *go to [AI Workbook](https://isugenomics.github.io/AI-workbook/)*
 
 
-# <span style="color:black">02. Introduction to Command Line</span>
+# <span style="color:black">02. Introduction to the Command Line</span>
 * **<a href="" style="color: red;">Terminal: a text-based interface for command-line operations</a>**   <!--- **[Terminal: a text-based interface for command-line operations]()** -->
 * **<a href="" style="color: red;">Introduction to UNIX Shell</a>**             <!--- **[Introduction to Unix Shell]()** -->
   * <a href="" style="color: red;">UNIX Shell Basics</a>                        <!--- [UNIX Shell Basics]() -->
