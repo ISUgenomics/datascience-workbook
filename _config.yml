@@ -16,13 +16,13 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "HPC Workbook"
+title                    : "Data Science Workbook"
 title_separator          : "-"
 name                     : ""
-description              : "Tutorial on applying AI in informatics"
+description              : "Introduction to Data Science informatics"
 url                      : "https://isugenomics.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "hpcworkbook" # the subpath of your site, e.g. "/blog"
-repository               : "isugenomics/hpcworkbook" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+baseurl                  : "datascience-workbook" # the subpath of your site, e.g. "/blog"
+repository               : "isugenomics/datascience-workbook" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 permalink: none
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
