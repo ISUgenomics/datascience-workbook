@@ -5,11 +5,11 @@ permalink: /list.html
 layout: single
 header:
   overlay_color: "444444"
-  overlay_image: /assets/images/dna.jpg
+  overlay_image: /assets/images/markus-spiske-qjnAnF0jIGk-unsplash.jpg
 ---
 
 
-# <span style="color:black">Introduction to Data Science</span>
+# <span style="color:black">01. Introduction to Data Science</span>
 * **<a href="" style="color: red;">Data Science Principles</a>**                <!--- **[Data Science Principles]()** -->
 * **<a href="" style="color: red;">Applications of Computational Science</a>**  <!--- **[Applications of Computational Science]()** -->
   * <a href="" style="color: red;">Computational Biology</a>                    <!--- [Computational Biology]() -->
@@ -20,7 +20,7 @@ header:
     * *go to [AI Workbook](https://isugenomics.github.io/AI-workbook/)*
 
 
-# <span style="color:black">Introduction to Command Line</span>
+# <span style="color:black">02. Introduction to Command Line</span>
 * **<a href="" style="color: red;">Terminal: a text-based interface for command-line operations</a>**   <!--- **[Terminal: a text-based interface for command-line operations]()** -->
 * **<a href="" style="color: red;">Introduction to UNIX Shell</a>**             <!--- **[Introduction to Unix Shell]()** -->
   * <a href="" style="color: red;">UNIX Shell Basics</a>                        <!--- [UNIX Shell Basics]() -->
@@ -34,7 +34,7 @@ header:
     * <a href="" style="color: red;">Tutorial: BIOAWK – biological data manipulation</a>           <!--- [Tutorial: BIOAWK – biological data manipulation]() -->
 
 
-# <span style="color:black">Setting Up Computing Machine</span>
+# <span style="color:black">03. Setting Up Computing Machine</span>
 * **<span style="color:black">Operating System Installation</span>**
   * <a href="" style="color: red;">Windows OS Installation</a>                  <!--- [Windows OS Installation]() -->
   * <a href="" style="color: red;">Linux OS Installation</a>                    <!--- [Linux OS Installation]() -->
@@ -48,7 +48,7 @@ header:
   * <a href="" style="color: red;">Tutorial: Installations on Linux</a>         <!--- [Tutorial: Installations on Windows]() -->
 
 
-# <span style="color:black">Development Environment</span>
+# <span style="color:black">04. Development Environment</span>
 * **<a href="" style="color: red;">Integrated Development Environment (IDE)</a>**  <!--- **[Integrated Development Environment (IDE)]()** -->
   * <a href="" style="color: red;">Tutorial: Atom Editor</a>                    <!--- [Atom Editor]() -->
 * **<a href="" style="color: red;">Python programming environment</a>**         <!--- **[Python programming environment]()** -->
@@ -60,14 +60,14 @@ header:
     * <a href="" style="color: red;">Tutorial: Setting Up RStudio</a>           <!--- [Tutorial: Setting Up RStudio]() -->
 
 
-# <span style="color:black">Introduction to Programming</span>
+# <span style="color:black">05. Introduction to Programming</span>
 * **<a href="" style="color: red;">Basics of Algorithm Structure</a>**          <!--- **[Basics of Algorithm Structure]()** -->
 * **<a href="" style="color: red;">Introduction to Bash Scripting</a>**         <!--- **[Introduction to Bash Scripting]()** -->
 * **<a href="" style="color: red;">Introduction to Python programming</a>**     <!--- **[Introduction to Python programming]()** -->
 * **<a href="" style="color: red;">Introduction to R programming</a>**          <!--- **[Introduction to R programming]()** -->
 
 
-# <span style="color:black">High-Performance Computing (HPC)</span>
+# <span style="color:black">06. High-Performance Computing (HPC)</span>
 * **<a href="" style="color: red;">Introduction to HPC infrastructure</a>**     <!--- **[Introduction to HPC infrastructure]()** -->
 * **<a href="" style="color: red;">Secure Shell Connection (SSH)</a>**          <!--- **[Secure Shell Connection (SSH)]()** -->
   * <a href="" style="color: red;">SSH Shortcuts</a>                            <!--- [SSH Shortcuts]() -->
@@ -105,7 +105,7 @@ header:
    * <a href="" style="color: red;">LSS Storage</a>                             <!--- [LSS Storage]() -->
 
 
-# <span style="color:black">Data Acquisition and Wrangling</span>
+# <span style="color:black">07. Data Acquisition and Wrangling</span>
 * **<a href="" style="color: red;">Remote Data Access</a>**                     <!--- **[Remote Data Access]()** -->
   * <a href="" style="color: red;">Remote Data Transfer</a>                     <!--- [Remote Data Transfer]() -->
     * <a href="" style="color: red;">Tutorial: Copying Data using SSH</a>       <!--- [Tutorial: Copying Data using SSH]() -->
@@ -135,7 +135,7 @@ header:
     * <a href="" style="color: red;">SciPy Library - Algorithms for Scientific Computing</a>   <!--- [SciPy Library - Algorithms for Scientific Computing]() -->
 
 
-# <span style="color:black">Data Visualization</span>
+# <span style="color:black">08. Data Visualization</span>
 * **<a href="" style="color: red;">Introduction to Scientific Graphic Design</a>**    <!--- **[Introduction to Scientific Graphic Design]()** -->
   * <a href="" style="color: red;">Raster Graphics Tools</a>                    <!--- [Raster Graphics Tools]() -->
   * <a href="" style="color: red;">Vector Graphics Tools</a>                    <!--- [Vector Graphics Tools]() -->
@@ -158,7 +158,7 @@ header:
     * <a href="" style="color: red;">Creating Boxplots in R</a>                 <!--- [Creating Boxplots in R]() -->
     * <a href="" style="color: red;">Creating Heatmaps in R</a>                 <!--- [Creating Heatmaps in R]() -->
 
-# <span style="color:black">Project Management</span>
+# <span style="color:black">09. Project Management</span>
 * **<a href="" style="color: red;">Introduction to Project Management</a>**     <!--- **[Introduction to Project Management]()** -->
 * **<a href="" style="color: red;">Project Management Tools</a>**               <!--- **[Project Management Tools]()** -->
   * <a href="" style="color: red;">Introduction to GitHub</a>                   <!--- [Introduction to GitHub]() -->
