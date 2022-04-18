@@ -207,3 +207,15 @@ header:
 |||`module unload` <span style="color:Red">PROGRAM</span>	# unloads module|
 
 PS: An A-Z Index of the Bash command line for Linux can be found at found [Here](http://ss64.com/bash/index.html)
+
+
+___
+# Further Reading
+* [Setting Up Computing Machine](/03-SetUpComputingMachine/00-SetUpComputingMachine-LandingPage.md)
+
+___
+
+[Previous](03D-tutorial-unix-bioawk.md){: .btn  .btn--primary}
+[Section Index](00-IntroToCommandLine-LandingPage.md){: .btn  .btn--primary}
+[Next](/03-SetUpComputingMachine/00-SetUpComputingMachine-LandingPage.md){: .btn  .btn--primary}
+<br>[Homepage](../index.md){: .btn  .btn--primary}

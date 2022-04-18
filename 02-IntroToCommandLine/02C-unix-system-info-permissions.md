@@ -1,12 +1,13 @@
 ---
 title: "Administrative Commands"
 layout: single
+author: Andrew Severin
 header:
   overlay_color: "444444"
   overlay_image: /assets/images/margaret-weir-GZyjbLNOaFg-unsplash_dark.jpg
 ---
 
-# Unix Basics 2
+# Unix File System Administration
 This exercise will provide you details about some administrative commands with examples. Here, you can learn how to change permissions for files and folders to modify its accessibility and commands to obtain information about the system you are using.
 
 ## Changing permissions
@@ -272,27 +273,15 @@ ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}
 ```
 
 
-### 9. Other information:
+___
+# Further Reading
+* [Unix Admin Commands](02D-admin-commands.md)
+* [Tutorial: Unix Getting Started](02E-tutorial-unix-getting-started.md)
+* [Summary of Unix Commands](04-unix-cheat-sheet.md)
 
-For getting more information about the environment, you can type `env`, which lists all the variables currently set. If you want to know specifically about a variable, you can do:
+___
 
-```
-echo $VARIABLE
-```
-Some variables that are useful are:
-
-| Variable   | Information                        |
-|:-----------|:-----------------------------------|
-| `HOSTNAME` | hostname for the system            |
-| `TERM`     | terminal                           |
-| `SHELL`    | Shell type (bash, csh, ksh etc)    |
-| `USER`     | Username                           |
-| `PATH`     | paths where executables are stored |
-| `PWD`      | present working directory          |
-| `EDITOR`   | default text editor                |
-| `HOME`     | path for home                      |
-| `DISPLAY`  | where to route the display         |
-| `HISTFILE` | file where the history is saved    |
-
----
-[Table of contents](../programs.md)
+[Previous](02C-text-files-editors.md){: .btn  .btn--primary}
+[Section Index](00-IntroToCommandLine-LandingPage.md){: .btn  .btn--primary}
+[Next](02D-admin-commands.md){: .btn  .btn--primary}
+<br>[Homepage](../index.md){: .btn  .btn--primary}

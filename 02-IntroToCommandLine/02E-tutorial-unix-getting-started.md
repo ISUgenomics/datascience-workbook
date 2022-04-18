@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Unix"
+title: "Tutorial: Unix Getting Started"
 layout: single
 author: Andrew Severin
 author_profile: true
@@ -10,84 +10,8 @@ header:
 
 {% include toc %}
 
-# Introduction
----
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OAAdLMZvk1I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-## What is Unix?
-* Multiuser operating system
-* Linux: free version of this type of operating system
-  * Red Hat Enterprise Linux, Ubuntu, and CentOS
-* Used on high-end workstations, database servers, web servers and managing shared resources
-* Standard features include: Security, reliability, scalability
-  * Can supports 100s of users at a time
-
-
-## Can I learn Unix?
-
-* **Yes!** Absolutely. It is just another way of operating your computer
-* No more difficult than learning Word, Excel or Powerpoint
-* Biggest difference
-  * In Linux:  You type the command to execute
-  * In Windows and Mac: You use your mouse to execute a command
-* **Remember. In the Terminal, “Don’t use the mouse.”**
-
-
-## What is a terminal?
-
-A terminal is the program that is used to access files on your laptop/computer that is sitting in front of you (local machine) or access to files on a supercomputer in a different location (remote machine).  You can access a terminal on a Mac or Windows machine as described below.
-
-### On a Mac (OS)
-
-1. Use the Finder ![](assets/MagnifyingGlass.png) and search for and open the Terminal program ![](assets/terminal.png).
-2. Type ```ssh username@hostname```
-  * Example1:  ```ssh andrew.severin@ceres.scinet.science```
-  * Example2: ```ssh severin@bridges.psc.edu```
-3. Hit by &#8629; (`Enter`) key and enter your password and verification code.
-  * Note: as you type the password, you will not see your typing.
-
-### On a PC (Windows)
-
-On Windows, it will be easier for you to login first to a linux based system for the rest of this tutorial (remote machine).  You will first need to open up the command prompt which is similar to a terminal in the Mac OS operating system.
-
-1. Press windows key + r, type cmd and enter
-
-  ![](assets/WindowsRun.png)
-
-* Type ssh usename@hostname
-  * Example1:  ```ssh andrew.severin@ceres.scinet.science```
-  * Example2: ```ssh severin@bridges.psc.edu```
-  * Hit by &#8629; (`Enter`) key and enter your password and verification code.
-    * Note: as you type the password, you will not see your typing.
-
-2. Search for ```cmd``` using Window's search.
-
-  ![](assets/WindowsSearch.png)
-
-**Note:** The window can be resized with the mouse and the font text can be increased by pressing `cmd +` or `control +` on Mac or Windows, respectively.
-
-## Terminal Terminology
-
-When working in a terminal, it is helpful to know some basic terminology for when asking for help or describing a problem.
-
-  * **Welcome Message:** the startup message when logging into a remote machine
-  * **Prompt:** The text next to where you type your commands
-    * prompts can be modified to include addtional information like hostname or current folder location
-  * **Command:** the function or script you are trying to run.
-  * **Argument:** added to a Command to modify the output
-    * there is always a space between a command an the argument
-  * **Standard Out:** the result of a command
-  * **Standard Error:** the error of a failed command
-
-![](assets/TerminalWelcome_small.png)
-
 
 # Getting started
-
-
----
 
 Let us start by getting everyone logged in and to the same location in the file system. If you haven't already logged in to a remote machine by typing in the following command in the terminal.
 
@@ -960,6 +884,14 @@ rm myFirstFile.txt
 This will not affect the file in unixTutorial but will remove it from the subfolder Numbers.
 
 
+___
 # Further Reading
----
-* [Summary of Unix commands](UnixCheatSheet.md)
+* [Summary of Unix Commands](04-unix-cheat-sheet.md)
+* [Text Files Manipulation Programs](03-text-manipulation-programs.md)
+
+___
+
+[Previous](02D-admin-commands.md){: .btn  .btn--primary}
+[Section Index](00-IntroToCommandLine-LandingPage.md){: .btn  .btn--primary}
+[Next](03-text-manipulation-programs.md){: .btn  .btn--primary}
+<br>[Homepage](../index.md){: .btn  .btn--primary}

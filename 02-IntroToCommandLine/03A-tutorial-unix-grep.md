@@ -207,5 +207,16 @@ You can also combine to get both before and after lines
 grep -B 10 -A 10 "PATTERN" FILENAME
 ```
 
----
-[Table of contents](../programs.md)
+___
+# Further Reading
+* [Tutorial: SED – edit stream text](03B-tutorial-unix-sed.md)
+* [Tutorial: AWK – advanced text processing](03C-tutorial-unix-awk.md)
+* [Tutorial: BIOAWK – biological data manipulation](03D-tutorial-unix-bioawk.md)
+* [Summary of Unix Commands](04-unix-cheat-sheet.md)
+
+___
+
+[Previous](03-text-manipulation-programs.md){: .btn  .btn--primary}
+[Section Index](00-IntroToCommandLine-LandingPage.md){: .btn  .btn--primary}
+[Next](03B-tutorial-unix-sed.md){: .btn  .btn--primary}
+<br>[Homepage](../index.md){: .btn  .btn--primary}

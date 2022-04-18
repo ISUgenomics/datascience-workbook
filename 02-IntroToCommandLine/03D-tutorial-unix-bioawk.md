@@ -1,5 +1,5 @@
 ---
-title: "Useful Programs and Unix Basics"
+title: "Introduction to BioAWK"
 layout: single
 author: Arun Seetharam
 author_profile: true
@@ -164,4 +164,13 @@ Say, if your input file is as follows:
 bioawk -t -c header '$age < "25" {print $0}' input.txt
 ```
 
-[Table of contents](https://isugenomics.github.io/bioinformatics-workbook/)
+___
+# Further Reading
+* [Summary of Unix Commands](04-unix-cheat-sheet.md)
+
+___
+
+[Previous](03C-tutorial-unix-awk.md){: .btn  .btn--primary}
+[Section Index](00-IntroToCommandLine-LandingPage.md){: .btn  .btn--primary}
+[Next](04-unix-cheat-sheet.md){: .btn  .btn--primary}
+<br>[Homepage](../index.md){: .btn  .btn--primary}

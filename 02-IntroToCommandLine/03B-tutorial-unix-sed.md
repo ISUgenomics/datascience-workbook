@@ -129,5 +129,15 @@ sed '2 i line to insert' FILENAME
 ### 5. Extract portions of the lines
 still to come!
 
----
-[Table of contents](../programs.md)
+___
+# Further Reading
+* [Tutorial: AWK – advanced text processing](03C-tutorial-unix-awk.md)
+* [Tutorial: BIOAWK – biological data manipulation](03D-tutorial-unix-bioawk.md)
+* [Summary of Unix Commands](04-unix-cheat-sheet.md)
+
+___
+
+[Previous](03A-tutorial-unix-grep.md){: .btn  .btn--primary}
+[Section Index](00-IntroToCommandLine-LandingPage.md){: .btn  .btn--primary}
+[Next](03C-tutorial-unix-awk.md){: .btn  .btn--primary}
+<br>[Homepage](../index.md){: .btn  .btn--primary}

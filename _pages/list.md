@@ -23,15 +23,17 @@ header:
 # <span style="color:black">02. Introduction to the Command Line</span>
 * **<a href="" style="color: red;">Terminal: a text-based interface for command-line operations</a>**   <!--- **[Terminal: a text-based interface for command-line operations]()** -->
 * **<a href="" style="color: red;">Introduction to UNIX Shell</a>**             <!--- **[Introduction to Unix Shell]()** -->
-  * <a href="" style="color: red;">UNIX Shell Basics</a>                        <!--- [UNIX Shell Basics]() -->
-    * <a href="" style="color: red;">UNIX CheatSheet</a>                        <!--- [UNIX CheatSheet]() -->
-  * <a href="" style="color: red;">UNIX Admin Commands</a>                      <!--- [Unix Admin Commands]() -->
-    * <a href="" style="color: red;">Tutorial: How to Install a Program?</a>    <!--- [Tutorial: How to Install a Program?]() -->
-  * <a href="" style="color: red;">UNIX Useful Programs</a>                     <!--- [UNIX Useful Programs]() -->
-    * <a href="" style="color: red;">Tutorial: GREP – simple search for regular expressions</a>     <!--- [Tutorial: GREP – simple search for regular expressions]() -->
-    * <a href="" style="color: red;">Tutorial: SED – edit stream text</a>       <!--- [Tutorial: SED – edit stream text]() -->
-    * <a href="" style="color: red;">Tutorial: AWK – advanced text processing</a>                  <!--- [Tutorial: AWK – advanced text processing]() -->
-    * <a href="" style="color: red;">Tutorial: BIOAWK – biological data manipulation</a>           <!--- [Tutorial: BIOAWK – biological data manipulation]() -->
+  * <a href="" style="color: red;">Basic Commands: Navigation, File Creation & Preview</a>    <!--- [Basic Commands: Navigation, File Creation & Preview]() -->
+  * <a href="" style="color: red;">System Info and Access Permissions</a>       <!--- [System Info and Access Permissions]() -->
+  * <a href="" style="color: red;">Text Files Editors</a>                       <!--- [Text Files Editors]() -->
+  * <a href="" style="color: red;">Admin Commands</a>                           <!--- [Admin Commands]() -->
+  * <a href="" style="color: red;">Tutorial: Getting Started with UNIX</a>      <!--- [Tutorial: Getting Started with UNIX]() -->
+* **<a href="" style="color: red;">Useful Text Manipulation Programs</a>**      <!--- **[Useful Text Manipulation Programs]()** -->
+  * <a href="" style="color: red;">Tutorial: GREP – simple search for regular expressions</a>    <!--- [Tutorial: GREP – simple search for regular expressions]() -->
+  * <a href="" style="color: red;">Tutorial: SED – edit stream text</a>         <!--- [Tutorial: SED – edit stream text]() -->
+  * <a href="" style="color: red;">Tutorial: AWK – advanced text processing</a>                  <!--- [Tutorial: AWK – advanced text processing]() -->
+  * <a href="" style="color: red;">Tutorial: BIOAWK – biological data manipulation</a>           <!--- [Tutorial: BIOAWK – biological data manipulation]() -->
+* **<a href="" style="color: red;">UNIX CheatSheet</a>**                        <!--- **[UNIX CheatSheet]()** -->
 
 
 # <span style="color:black">03. Setting Up Computing Machine</span>
