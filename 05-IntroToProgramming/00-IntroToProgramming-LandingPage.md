@@ -23,4 +23,5 @@ header:
 ---
 
 [Homepage](../index.md){: .btn  .btn--primary}
-[Next](){: .btn  .btn--primary}
+[Prior Section](../04-DevelopmentEnvironment/00-DevelopmentEnvironment-LandingPage){: .btn  .btn--primary}
+[Next Section](../06-IntroToHPC/00-IntroToHPC-LandingPage){: .btn  .btn--primary}

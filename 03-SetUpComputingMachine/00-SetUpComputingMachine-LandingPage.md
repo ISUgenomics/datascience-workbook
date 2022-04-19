@@ -29,4 +29,5 @@ header:
 ---
 
 [Homepage](../index.md){: .btn  .btn--primary}
-[Next](){: .btn  .btn--primary}
+[Prior Section](../02-IntroToCommandLine/00-IntroToCommandLine-LandingPage){: .btn  .btn--primary}
+[Next Section](../04-DevelopmentEnvironment/00-DevelopmentEnvironment-LandingPage){: .btn  .btn--primary}

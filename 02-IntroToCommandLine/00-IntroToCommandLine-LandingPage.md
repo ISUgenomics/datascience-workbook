@@ -30,4 +30,5 @@ header:
 ---
 
 [Homepage](../index.md){: .btn  .btn--primary}
-[Next](Unix/unix-basics-1.md){: .btn  .btn--primary}
+[Prior Section](../01-IntroToDataScience/00-IntroToDataScience-LandingPage){: .btn  .btn--primary}
+[Next Section](../03-SetUpComputingMachine/00-SetUpComputingMachine-LandingPage){: .btn  .btn--primary}

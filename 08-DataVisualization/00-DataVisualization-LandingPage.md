@@ -38,4 +38,5 @@ header:
 ---
 
 [Homepage](../index.md){: .btn  .btn--primary}
-[Next](){: .btn  .btn--primary}
+[Prior Section](../07-DataParsing/00-DataParsing-LandingPage){: .btn  .btn--primary}
+[Next Section](../09-ProjectManagement/00-ProjectManagement-LandingPage){: .btn  .btn--primary}

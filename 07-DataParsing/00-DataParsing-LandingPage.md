@@ -44,4 +44,5 @@ header:
 ---
 
 [Homepage](../index.md){: .btn  .btn--primary}
-[Next](){: .btn  .btn--primary}
+[Prior Section](../06-IntroToHPC/00-IntroToHPC-LandingPage){: .btn  .btn--primary}
+[Next Section](../08-DataVisualization/00-DataVisualization-LandingPage){: .btn  .btn--primary}

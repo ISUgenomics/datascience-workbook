@@ -59,4 +59,5 @@ header:
 ---
 
 [Homepage](../index.md){: .btn  .btn--primary}
-[Next](){: .btn  .btn--primary}
+[Prior Section](../05-IntroToProgramming/00-IntroToProgramming-LandingPage){: .btn  .btn--primary}
+[Next Section](../07-DataParsing/00-DataParsing-LandingPage){: .btn  .btn--primary}
