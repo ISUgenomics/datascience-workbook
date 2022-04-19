@@ -3,7 +3,7 @@ layout: splash
 permalink: /
 header:
   overlay_color: "444444"
-  overlay_image: /assets/images/margaret-weir-GZyjbLNOaFg-unsplash_dark.jpg
+  overlay_image: /assets/images/data_science_workbook_banner.png
 excerpt: 'Learning command line and HPC through practical tutorials'
 feature_row:
 
