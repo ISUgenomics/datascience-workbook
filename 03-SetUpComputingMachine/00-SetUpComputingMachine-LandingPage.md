@@ -9,7 +9,7 @@ header:
 
 
 
-## Index
+## Table of contents
 
 ### **<span style="color:black">1. Operating System Installation</span>**
 * <a href="" style="color: red;">1.2 Windows OS Installation</a>                  <!--- [Windows OS Installation]() -->

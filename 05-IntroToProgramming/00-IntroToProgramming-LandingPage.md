@@ -9,7 +9,7 @@ header:
 
 
 
-## Index
+## Table of contents
 
 ### **<a href="" style="color: red;">1. Basics of Algorithm Structure</a>**          <!--- **[Basics of Algorithm Structure]()** -->
 

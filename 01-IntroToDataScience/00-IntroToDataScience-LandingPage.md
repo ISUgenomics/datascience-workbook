@@ -9,7 +9,7 @@ header:
 
 
 
-## Index
+## Table of contents
 
 ### **<a href="" style="color: red;">1. Data Science Principles</a>**          <!--- **[Data Science Principles]()** -->
 

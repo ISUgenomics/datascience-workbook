@@ -9,7 +9,7 @@ header:
 
 
 
-## Index
+## Table of contents
 
 ### **<a href="" style="color: red;">1. Introduction to Scientific Graphic Design</a>**    <!--- **[Introduction to Scientific Graphic Design]()** -->
 * <a href="" style="color: red;">1.1 Raster Graphics Tools</a>                    <!--- [Raster Graphics Tools]() -->

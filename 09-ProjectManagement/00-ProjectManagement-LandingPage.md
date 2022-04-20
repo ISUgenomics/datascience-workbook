@@ -9,7 +9,7 @@ header:
 
 
 
-## Index
+## Table of contents
 
 ### **<a href="" style="color: red;">1. Introduction to Project Management</a>**     <!--- **[Introduction to Project Management]()** -->
 

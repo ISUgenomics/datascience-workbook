@@ -9,7 +9,7 @@ header:
 
 
 
-## Index
+## Table of contents
 
 ### **<a href="01-terminal-basics.md" style="color: red;">1. Terminal: a text-based interface for command-line operations</a>**   <!--- **[Terminal: a text-based interface for command-line operations](01-terminal-basics.md)** -->
 
