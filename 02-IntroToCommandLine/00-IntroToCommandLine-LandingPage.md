@@ -15,8 +15,8 @@ header:
 
 ### **<a href="02-IntroToCommandLine/02-intro-to-unix-shell" style="color: #24376b;">2. Introduction to UNIX Shell</a>**
 * <a href="02-IntroToCommandLine/02A-basic-commands" style="color: #3f5a8a;">2.1 Basic Commands: Navigation, File Creation & Preview</a>
-* <a href="02-IntroToCommandLine/02B-unix-system-info-permissions" style="color: #3f5a8a;">2.2 System Info and Access Permissions</a>
-* <a href="02-IntroToCommandLine/02C-text-files-editors" style="color: #3f5a8a;">2.3 Text Files Editors</a>
+* <a href="02-IntroToCommandLine/02B-text-files-editors" style="color: #3f5a8a;">2.3 Text Files Editors</a>
+* <a href="02-IntroToCommandLine/02C-unix-system-info-permissions" style="color: #3f5a8a;">2.2 System Info and Access Permissions</a>
 * <a href="02-IntroToCommandLine/02D-admin-commands" style="color: #3f5a8a;">2.4 Admin Commands</a>
 * <a href="02-IntroToCommandLine/02E-tutorial-unix-getting-started" style="color: #3f5a8a;">2.5 Tutorial: Getting Started with UNIX</a>
 
