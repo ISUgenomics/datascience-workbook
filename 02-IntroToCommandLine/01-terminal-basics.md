@@ -1,5 +1,5 @@
 ---
-title: "Terminal: a text-based interface for command-line operations"
+title: "Terminal: the command-line interface"
 layout: single
 author: Aleksandra Badaczewska
 author_profile: true
@@ -71,6 +71,6 @@ ___
 
 ___
 
-[Section Index](00-IntroToCommandLine-LandingPage.md){: .btn  .btn--primary}
+[Homepage](../index.md){: .btn  .btn--primary} 〉
+[Section Index](00-IntroToCommandLine-LandingPage.md){: .btn  .btn--primary} 〉
 [Next](02-intro-to-unix-shell.md){: .btn  .btn--primary}
-<br>[Homepage](../index.md){: .btn  .btn--primary}

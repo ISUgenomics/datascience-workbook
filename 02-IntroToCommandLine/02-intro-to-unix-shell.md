@@ -1,7 +1,7 @@
 ---
 title: "Introduction to Unix"
 layout: single
-author: Aleksandra Badaczewska
+author: Andrew Severin
 author_profile: true
 header:
   overlay_color: "444444"
