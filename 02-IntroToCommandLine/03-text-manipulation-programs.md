@@ -1,7 +1,7 @@
 ---
 title: "Unix Text Manipulation Programs"
 layout: single
-author_profile: true
+author_profile: false
 header:
   overlay_color: "444444"
   overlay_image: /assets/images/margaret-weir-GZyjbLNOaFg-unsplash_dark.jpg

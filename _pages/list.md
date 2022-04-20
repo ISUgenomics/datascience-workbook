@@ -18,7 +18,7 @@ header:
     * <span style="color: #3f5a8a;">go to</span> <a href="https://geospatial.101workbook.org" style="color: #518cc2;">_Geospatial Workbook_</a>
   * <a href="" style="color: #3f5a8a;">Machine Learning Outlook</a>
     * <span style="color: #3f5a8a;">go to</span> <a href="https://isugenomics.github.io/AI-workbook" style="color: #518cc2;">_AI Workbook_</a>
-
+<br>
 
 # <a href="02-IntroToCommandLine/00-IntroToCommandLine-LandingPage" style="color: #8997c1;">02. Introduction to the Command Line</a>
 * **<a href="02-IntroToCommandLine/01-terminal-basics" style="color: #24376b;">Terminal: a text-based interface for command-line operations</a>**
@@ -34,7 +34,7 @@ header:
   * <a href="02-IntroToCommandLine/03C-tutorial-unix-awk" style="color: #3f5a8a;">Tutorial: AWK – advanced text processing</a>
   * <a href="02-IntroToCommandLine/03D-tutorial-unix-bioawk" style="color: #3f5a8a;">Tutorial: BIOAWK – biological data manipulation</a>
 * **<a href="02-IntroToCommandLine/04-unix-cheat-sheet" style="color: #24376b;">UNIX CheatSheet</a>**
-
+<br>
 
 # <a href="03-SetUpComputingMachine/00-SetUpComputingMachine-LandingPage" style="color: #8997c1;">03. Setting Up Computing Machine</a>
 * **<span style="color:#24376b">Operating System Installation</span>**
@@ -48,7 +48,7 @@ header:
   * <a href="" style="color: #3f5a8a;">Tutorial: Installations on MacBook Pro</a>
   * <a href="" style="color: #3f5a8a;">Tutorial: Installations on Windows</a>
   * <a href="" style="color: #3f5a8a;">Tutorial: Installations on Linux</a>
-
+<br>
 
 # <a href="04-DevelopmentEnvironment/00-DevelopmentEnvironment-LandingPage" style="color: #8997c1;">04. Development Environment</a>
 * **<a href="" style="color: #24376b;">Integrated Development Environment (IDE)</a>**
@@ -60,14 +60,14 @@ header:
 * **<a href="" style="color: #24376b;">R programming environment</a>**
   * <a href="" style="color: #3f5a8a;">RStudio: Integrated Environment for R Programming</a>
     * <a href="" style="color: #3f5a8a;">Tutorial: Setting Up RStudio</a>
-
+<br>
 
 # <a href="05-IntroToProgramming/00-IntroToProgramming-LandingPage" style="color: #8997c1;">05. Introduction to Programming</a>
 * **<a href="" style="color: #24376b;">Basics of Algorithm Structure</a>**
 * **<a href="" style="color: #24376b;">Introduction to Bash Scripting</a>**
 * **<a href="" style="color: #24376b;">Introduction to Python programming</a>**
 * **<a href="" style="color: #24376b;">Introduction to R programming</a>**
-
+<br>
 
 # <a href="06-IntroToHPC/00-IntroToHPC-LandingPage" style="color: #8997c1;">06. High-Performance Computing (HPC)</a>
 * **<a href="" style="color: #24376b;">Introduction to HPC infrastructure</a>**
@@ -105,7 +105,7 @@ header:
    * <a href="" style="color: #3f5a8a;">Nova Computing Cluster</a>
    * <a href="" style="color: #3f5a8a;">Condo Computing Cluster</a>
    * <a href="" style="color: #3f5a8a;">LSS Storage</a>
-
+<br>
 
 # <a href="07-DataParsing/00-DataParsing-LandingPage" style="color: #8997c1;">07. Data Acquisition and Wrangling</a>
 * **<a href="" style="color: #24376b;">Remote Data Access</a>**
@@ -135,7 +135,7 @@ header:
     * <a href="" style="color: #3f5a8a;">Math Module - Pandas Library - Data Structure Manipulation Tool</a>
     * <a href="" style="color: #3f5a8a;">Math Module - Numpy Library - Multi-Dimensional Arrays Parser</a>
     * <a href="" style="color: #3f5a8a;">SciPy Library - Algorithms for Scientific Computing</a>
-
+<br>
 
 # <a href="08-DataVisualization/00-DataVisualization-LandingPage" style="color: #8997c1;">08. Data Visualization</a>
 * **<a href="" style="color: #24376b;">Introduction to Scientific Graphic Design</a>**
@@ -159,7 +159,7 @@ header:
     * <a href="" style="color: #3f5a8a;">Setting Up an RStudio Environment</a>
     * <a href="" style="color: #3f5a8a;">Creating Boxplots in R</a>
     * <a href="" style="color: #3f5a8a;">Creating Heatmaps in R</a>
-
+<br>
 
 # <a href="09-ProjectManagement/00-ProjectManagement-LandingPage" style="color: #8997c1;">09. Project Management</a>
 * **<a href="" style="color: #24376b;">Introduction to Project Management</a>**
