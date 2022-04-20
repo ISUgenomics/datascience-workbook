@@ -13,8 +13,8 @@ header:
 ### Andrew Severin
 
 ![Andrew](../assets/images/people/Andrew.png){: .align-left}
-His PhD was in Biophysics/NMR spectroscopy. He did a Bioinformatics Postdoc in Soybean genetics and now runs the Genome Informatics Facility at Iowa State University.
-
+Andrew manages the Genome Informatics Facility at Iowa State University. His academic background is in biochemistry with a Ph.D. in Biophysics/NMR spectroscopy. He is an interdisciplinary scientist working at the interface of genetics and bioinformatics. He is passionate about evolution and the science behind the genome.
+<br><br>
 
 ### Arun S. Seetharam
 
