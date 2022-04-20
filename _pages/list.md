@@ -10,13 +10,13 @@ header:
 
 
 # <a href="01-IntroToDataScience/00-IntroToDataScience-LandingPage" style="color: #8997c1;">01. Introduction to Data Science</a>
-* **<a href="" style="color: #24376b;">Data Science Principles</a>**
-* **<a href="" style="color: #24376b;">Applications of Computational Science</a>**
-  * <a href="" style="color: #3f5a8a;">Computational Biology</a>
+* **<a href="01-IntroToDataScience/01-data-science-principles" style="color: #24376b;">Data Science Principles</a>**
+* **<a href="01-IntroToDataScience/02-computational-science-applications" style="color: #24376b;">Applications of Computational Science</a>**
+  * <a href="01-IntroToDataScience/02A-computational-biology" style="color: #3f5a8a;">Computational Biology</a>
     * <span style="color: #3f5a8a;">go to</span> <a href="https://bioinformaticsworkbook.org" style="color: #518cc2;">_Bioinformatics Workbook_</a>
-  * <a href="" style="color: #3f5a8a;">Geospatial Analytics</a>
+  * <a href="01-IntroToDataScience/02B-geospatial-analytics" style="color: #3f5a8a;">Geospatial Analytics</a>
     * <span style="color: #3f5a8a;">go to</span> <a href="https://geospatial.101workbook.org" style="color: #518cc2;">_Geospatial Workbook_</a>
-  * <a href="" style="color: #3f5a8a;">Machine Learning Outlook</a>
+  * <a href="01-IntroToDataScience/02C-machine-learning" style="color: #3f5a8a;">Machine Learning Outlook</a>
     * <span style="color: #3f5a8a;">go to</span> <a href="https://isugenomics.github.io/AI-workbook" style="color: #518cc2;">_AI Workbook_</a>
 <br>
 

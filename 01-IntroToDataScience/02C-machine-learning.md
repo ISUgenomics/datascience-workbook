@@ -1,5 +1,5 @@
 ---
-title: "Applications of Computational Science"
+title: "Machine Learning"
 layout: single
 author:
 author_profile: false
@@ -20,13 +20,10 @@ header:
 
 ___
 # Further Reading
-* [Computational Biology](02A-computational-biology)
-* [Geospatial Analytics](02B-geospatial-analytics)
-* [Machine Learning Outlook](02C-machine-learning)
+* [SECTION 2. Introduction to the Command Line](02-IntroToCommandLine/00-IntroToCommandLine-LandingPage)
 
 ___
 
 [Homepage](../index.md){: .btn  .btn--primary}
 [Section Index](00-IntroToDataScience-LandingPage){: .btn  .btn--primary}
-[Previous](01-data-science-principles){: .btn  .btn--primary}
-[Next](02A-computational-biology){: .btn  .btn--primary}
+[Previous](02B-geospatial-analytics){: .btn  .btn--primary}
