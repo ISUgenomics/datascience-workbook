@@ -5,7 +5,7 @@ permalink: /list.html
 layout: single
 header:
   overlay_color: "444444"
-  overlay_image: /assets/images/markus-spiske-qjnAnF0jIGk-unsplash.jpg
+  overlay_image: /assets/images/data_science_about_banner.png
 ---
 
 
