@@ -20,7 +20,6 @@ header:
 
 ___
 # Further Reading
-* [Geospatial Analytics](02B-geospatial-analytics)
 * [Machine Learning Outlook](02C-machine-learning)
 
 ___
