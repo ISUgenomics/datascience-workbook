@@ -11,15 +11,15 @@ header:
 
 ## Table of contents
 
-### **<a href="" style="color: red;">1. Data Science Principles</a>**          <!--- **[Data Science Principles]()** -->
+### **<a href="01-data-science-principles" style="color: #24376b;">1. Data Science Principles</a>**
 
-### **<a href="" style="color: red;">2. Applications of Computational Science</a>**  <!--- **[Applications of Computational Science]()** -->
-* <a href="" style="color: red;">2.1 Computational Biology</a>                <!--- [Computational Biology]() -->
-  * *go to [Bioinformatics Workbook](https://bioinformaticsworkbook.org/)*
-* <a href="" style="color: red;">2.2 Geospatial Analytics</a>                 <!--- [Computational Biology]() -->
-  * *go to [Geospatial Workbook](https://geospatial.101workbook.org)*
-* <a href="" style="color: red;">2.3 Machine Learning Outlook</a>             <!--- [Machine Learning Outlook]() -->
-  * *go to [AI Workbook](https://isugenomics.github.io/AI-workbook/)*
+### **<a href="02-computational-science-applications" style="color: #24376b;">2. Applications of Computational Science</a>**
+* <a href="02A-computational-biology" style="color: #3f5a8a;">2.1 Computational Biology</a>
+  * <span style="color: #3f5a8a;">go to</span > *[Bioinformatics Workbook](https://bioinformaticsworkbook.org/)*
+* <a href="02B-geospatial-analytics" style="color: #3f5a8a;">2.2 Geospatial Analytics</a>
+  * <span style="color: #3f5a8a;">go to</span> *[Geospatial Workbook](https://geospatial.101workbook.org)*
+* <a href="02C-machine-learning" style="color: #3f5a8a;">2.3 Machine Learning Outlook</a>
+  * <span style="color: #3f5a8a;">go to</span> *[AI Workbook](https://isugenomics.github.io/AI-workbook/)*
 
 
 ---
