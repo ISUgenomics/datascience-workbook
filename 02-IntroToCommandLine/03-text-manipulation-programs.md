@@ -27,7 +27,7 @@ ___
 
 ___
 
-[Previous](02E-tutorial-unix-getting-started.md){: .btn  .btn--primary}
+[Homepage](../index.md){: .btn  .btn--primary}
 [Section Index](00-IntroToCommandLine-LandingPage.md){: .btn  .btn--primary}
+[Previous](02E-tutorial-unix-getting-started.md){: .btn  .btn--primary}
 [Next](03A-tutorial-unix-grep.md){: .btn  .btn--primary}
-<br>[Homepage](../index.md){: .btn  .btn--primary}

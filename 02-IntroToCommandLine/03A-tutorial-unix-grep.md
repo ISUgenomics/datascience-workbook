@@ -217,7 +217,7 @@ ___
 
 ___
 
-[Previous](03-text-manipulation-programs.md){: .btn  .btn--primary}
+[Homepage](../index.md){: .btn  .btn--primary}
 [Section Index](00-IntroToCommandLine-LandingPage.md){: .btn  .btn--primary}
+[Previous](03-text-manipulation-programs.md){: .btn  .btn--primary}
 [Next](03B-tutorial-unix-sed.md){: .btn  .btn--primary}
-<br>[Homepage](../index.md){: .btn  .btn--primary}
