@@ -33,12 +33,12 @@ header:
   * <a href="02A-3-tutorial-create-index-for-all-worksheets" style="color: #3f5a8a;">Create Index for All Worksheets</a>
   * <a href="02A-4-tutorial-merge-spreadsheets-by-column" style="color: #3f5a8a;">Merge Two Spreadsheets using a Common Column</a>
 * <a href="02B-0-manipulate-data-with-python" style="color: #3f5a8a;">2.2 Manipulating Text Files with Python</a>
-  * <a href="02B-1-tutorial-read-write-split-select-data" style="color: #3f5a8a;">Read, Write, Split, Select Data</a>
-  * <a href="02B-2-tutorial-python-manage-data-json-string" style="color: #3f5a8a;">JSON Module - Encoding & Decoding JSON Data</a>
-  * <a href="02B-3-tutorial-python-round-abs-data-math-module" style="color: #3f5a8a;">Math Module - Various Mathematical Functions</a>
-  * <a href="02B-4-tutorial-python-data-manipulation-pandas" style="color: #3f5a8a;">Math Module - Pandas Library - Data Structure Manipulation Tool</a>
-  * <a href="02B-5-tutorial-python-array-manipulation-numpy" style="color: #3f5a8a;">Math Module - Numpy Library - Multi-Dimensional Arrays Parser</a>
-  * <a href="02B-6-tutorial-python-apply-statistics-scipy" style="color: #3f5a8a;">SciPy Library - Algorithms for Scientific Computing</a>
+  * <a href="02B-1-tutorial-read-write-split-select-data" style="color: #3f5a8a;">Tutorial: Read, Write, Split, Select Data</a>
+  * <a href="02B-2-tutorial-python-manage-data-json-string" style="color: #3f5a8a;">Tutorial: JSON Module - Encoding & Decoding JSON Data</a>
+  * <a href="02B-3-tutorial-python-round-abs-data-math-module" style="color: #3f5a8a;">Tutorial: Math Module - Various Mathematical Functions</a>
+  * <a href="02B-4-tutorial-python-data-manipulation-pandas" style="color: #3f5a8a;">Tutorial: Math Module - Pandas Library - Data Structure Manipulation Tool</a>
+  * <a href="02B-5-tutorial-python-array-manipulation-numpy" style="color: #3f5a8a;">Tutorial: Math Module - Numpy Library - Multi-Dimensional Arrays Parser</a>
+  * <a href="02B-6-tutorial-python-apply-statistics-scipy" style="color: #3f5a8a;">Tutorial: SciPy Library - Algorithms for Scientific Computing</a>
 
 
 ---
