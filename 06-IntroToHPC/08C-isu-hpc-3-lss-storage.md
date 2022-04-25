@@ -27,4 +27,4 @@ ___
 [Homepage](../index.md){: .btn  .btn--primary}
 [Section Index](00-IntroToHPC-LandingPage){: .btn  .btn--primary}
 [Previous](08C-isu-hpc-2-nova-cluster){: .btn  .btn--primary}
-[Next](07-DataParsing/00-DataParsing-LandingPage){: .btn  .btn--primary}
+[Next](../07-DataParsing/00-DataParsing-LandingPage){: .btn  .btn--primary}

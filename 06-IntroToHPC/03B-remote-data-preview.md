@@ -20,7 +20,7 @@ header:
 
 ___
 # Further Reading
-* [Software Available on HPC](04-software-available-on-HP)
+* [Software Available on HPC](04-software-available-on-HPC)
 * [Introduction to Job Scheduling](05-introduction-to-job-scheduling)
 * [Introduction to GNU Parallel](06-introduction-to-gnu-parallel)
 * [Introduction to Containers](07-introduction-to-containers)
@@ -31,4 +31,4 @@ ___
 [Homepage](../index.md){: .btn  .btn--primary}
 [Section Index](00-IntroToHPC-LandingPage){: .btn  .btn--primary}
 [Previous](03A-remote-data-transfer){: .btn  .btn--primary}
-[Next](04-software-available-on-HP){: .btn  .btn--primary}
+[Next](04-software-available-on-HPC){: .btn  .btn--primary}
