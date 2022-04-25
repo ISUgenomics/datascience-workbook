@@ -63,10 +63,10 @@ header:
 <br>
 
 # <a href="05-IntroToProgramming/00-IntroToProgramming-LandingPage" style="color: #8997c1;">05. Introduction to Programming</a>
-* **<a href="" style="color: #24376b;">Basics of Algorithm Structure</a>**
-* **<a href="" style="color: #24376b;">Introduction to Bash Scripting</a>**
-* **<a href="" style="color: #24376b;">Introduction to Python programming</a>**
-* **<a href="" style="color: #24376b;">Introduction to R programming</a>**
+* **<a href="05-IntroToProgramming/01-basics-of-algorithm-structure" style="color: #24376b;">Basics of Algorithm Structure</a>**
+* **<a href="05-IntroToProgramming/02-introduction-to-bash-scripting" style="color: #24376b;">Introduction to Bash Scripting</a>**
+* **<a href="05-IntroToProgramming/03-introduction-to-python" style="color: #24376b;">Introduction to Python programming</a>**
+* **<a href="05-IntroToProgramming/04-introduction-to-R" style="color: #24376b;">Introduction to R programming</a>**
 <br>
 
 # <a href="06-IntroToHPC/00-IntroToHPC-LandingPage" style="color: #8997c1;">06. High-Performance Computing (HPC)</a>
