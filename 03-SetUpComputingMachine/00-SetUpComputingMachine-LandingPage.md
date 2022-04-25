@@ -11,19 +11,19 @@ header:
 
 ## Table of contents
 
-### **<span style="color:black">1. Operating System Installation</span>**
-* <a href="" style="color: red;">1.2 Windows OS Installation</a>                  <!--- [Windows OS Installation]() -->
-* <a href="" style="color: red;">1.2 Linux OS Installation</a>                    <!--- [Linux OS Installation]() -->
+### **<a href="01-operating-system-installation" style="color: #24376b;">1. Operating System Installation</a>**
+* <a href="01A-windows-installation" style="color: #3f5a8a;">1.2 Windows OS Installation</a>
+* <a href="01B-linux-installation" style="color: #3f5a8a;">1.2 Linux OS Installation</a>
 
-### **<span style="color:black">2. Must-Have Software</span>**
-* <a href="" style="color: red;">2.1 Basic Office Software</a>                    <!--- [Basic Office Software]() -->
-* <a href="" style="color: red;">2.2 Basic Developer Tools</a>                    <!--- [Basic Developer Tools]() -->
-* <a href="" style="color: red;">2.3 Basic Developer Libraries</a>                <!--- [Basic Developer Libraries]() -->
+### **<a href="02-must-have-software" style="color: #24376b;">2. Must-Have Software</a>**
+* <a href="02A-basic-office-software" style="color: #3f5a8a;">2.1 Basic Office Software</a>
+* <a href="02B-basic-developer-tools" style="color: #3f5a8a;">2.2 Basic Developer Tools</a>
+* <a href="02C-basic-developer-libraries" style="color: #3f5a8a;">2.3 Basic Developer Libraries</a>
 
-### **<span style="color:black">3. Various Methods of Software Installation</span>**
-* <a href="" style="color: red;">Tutorial: Installations on MacBook Pro</a>   <!--- [Tutorial: Installations on MacBook Pro]() -->
-* <a href="" style="color: red;">Tutorial: Installations on Windows</a>       <!--- [Tutorial: Installations on Windows]() -->
-* <a href="" style="color: red;">Tutorial: Installations on Linux</a>         <!--- [Tutorial: Installations on Windows]() -->
+### **<a href="03-various-methods-of-software-installation" style="color: #24376b;">3. Various Methods of Software Installation</a>**
+* <a href="03A-tutorial-installations-on-mac" style="color: #3f5a8a;">Tutorial: Installations on MacBook Pro</a>
+* <a href="03B-tutorial-installations-on-windows" style="color: #3f5a8a;">Tutorial: Installations on Windows</a>
+* <a href="03C-tutorial-installations-on-linux" style="color: #3f5a8a;">Tutorial: Installations on Linux</a>
 
 
 ---

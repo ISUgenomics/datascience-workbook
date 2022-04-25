@@ -37,17 +37,17 @@ header:
 <br>
 
 # <a href="03-SetUpComputingMachine/00-SetUpComputingMachine-LandingPage" style="color: #8997c1;">03. Setting Up Computing Machine</a>
-* **<span style="color:#24376b">Operating System Installation</span>**
-  * <a href="" style="color: #3f5a8a;">Windows OS Installation</a>
-  * <a href="" style="color: #3f5a8a;">Linux OS Installation</a>
-* **<span style="color:#24376b">Must-Have Software</span>**
-  * <a href="" style="color: #3f5a8a;">Basic Office Software</a>
-  * <a href="" style="color: #3f5a8a;">Basic Developer Tools</a>
-  * <a href="" style="color: #3f5a8a;">Basic Developer Libraries</a>
-* **<span style="color:#24376b">Various Methods of Software Installation</span>**
-  * <a href="" style="color: #3f5a8a;">Tutorial: Installations on MacBook Pro</a>
-  * <a href="" style="color: #3f5a8a;">Tutorial: Installations on Windows</a>
-  * <a href="" style="color: #3f5a8a;">Tutorial: Installations on Linux</a>
+* **<a href="03-SetUpComputingMachine/01-operating-system-installation" style="color: #24376b;">Operating System Installation</a>**
+  * <a href="03-SetUpComputingMachine/01A-windows-installation" style="color: #3f5a8a;">Windows OS Installation</a>
+  * <a href="03-SetUpComputingMachine/01B-linux-installation" style="color: #3f5a8a;">Linux OS Installation</a>
+* **<a href="03-SetUpComputingMachine/02-must-have-software" style="color: #24376b;">Must-Have Software</a>**
+  * <a href="03-SetUpComputingMachine/02A-basic-office-software" style="color: #3f5a8a;">Basic Office Software</a>
+  * <a href="03-SetUpComputingMachine/02B-basic-developer-tools" style="color: #3f5a8a;">Basic Developer Tools</a>
+  * <a href="03-SetUpComputingMachine/02C-basic-developer-libraries" style="color: #3f5a8a;">Basic Developer Libraries</a>
+* **<a href="03-SetUpComputingMachine/03-various-methods-of-software-installation" style="color: #24376b;">Various Methods of Software Installation</a>**
+  * <a href="03-SetUpComputingMachine/03A-tutorial-installations-on-mac" style="color: #3f5a8a;">Tutorial: Installations on MacBook Pro</a>
+  * <a href="03-SetUpComputingMachine/03B-tutorial-installations-on-windows" style="color: #3f5a8a;">Tutorial: Installations on Windows</a>
+  * <a href="03-SetUpComputingMachine/03C-tutorial-installations-on-linux" style="color: #3f5a8a;">Tutorial: Installations on Linux</a>
 <br>
 
 # <a href="04-DevelopmentEnvironment/00-DevelopmentEnvironment-LandingPage" style="color: #8997c1;">04. Development Environment</a>
