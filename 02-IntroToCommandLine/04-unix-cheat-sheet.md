@@ -211,11 +211,11 @@ PS: An A-Z Index of the Bash command line for Linux can be found at found [Here]
 
 ___
 # Further Reading
-* [SECTION 3. Setting Up Computing Machine](/03-SetUpComputingMachine/00-SetUpComputingMachine-LandingPage.md)
+* [SECTION 3. Setting Up Computing Machine](../03-SetUpComputingMachine/00-SetUpComputingMachine-LandingPage.md)
 
 ___
 
 [Homepage](../index.md){: .btn  .btn--primary}
 [Section Index](00-IntroToCommandLine-LandingPage.md){: .btn  .btn--primary}
 [Previous](03D-tutorial-unix-bioawk.md){: .btn  .btn--primary}
-[Next](/03-SetUpComputingMachine/00-SetUpComputingMachine-LandingPage.md){: .btn  .btn--primary}
+[Next](../03-SetUpComputingMachine/00-SetUpComputingMachine-LandingPage.md){: .btn  .btn--primary}
