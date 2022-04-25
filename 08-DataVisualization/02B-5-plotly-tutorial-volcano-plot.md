@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Creating 1D Volcano Plot"
+title: "Creating 1D Volcano Plot"
 layout: single
 author:
 author_profile: false

@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Creating Dendrogram"
+title: "Creating Dendrogram"
 layout: single
 author:
 author_profile: false

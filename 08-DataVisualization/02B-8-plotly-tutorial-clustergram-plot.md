@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Creating Clustergram "
+title: "Creating Clustergram "
 layout: single
 author:
 author_profile: false

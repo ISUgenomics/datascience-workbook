@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Creating Heatmaps in R"
+title: "Creating Heatmaps in R"
 layout: single
 author:
 author_profile: false

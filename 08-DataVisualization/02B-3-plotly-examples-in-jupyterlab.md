@@ -1,5 +1,5 @@
 ---
-title: "Plotly Graphing: Interactive Examples in the JupyterLab"
+title: "Plotly Graphing (JupyterLab examples)"
 layout: single
 author:
 author_profile: false

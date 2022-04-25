@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Creating Heatmap"
+title: "Creating Heatmap"
 layout: single
 author:
 author_profile: false

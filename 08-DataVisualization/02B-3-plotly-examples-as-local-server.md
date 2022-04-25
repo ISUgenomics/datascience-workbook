@@ -1,5 +1,5 @@
 ---
-title: "Interactive Graphing: Local Server with Web-Based Interface"
+title: "Interactive Graphing (local server)"
 layout: single
 author:
 author_profile: false

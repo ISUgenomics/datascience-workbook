@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Creating Boxplots in R"
+title: "Creating Boxplots in R"
 layout: single
 author:
 author_profile: false

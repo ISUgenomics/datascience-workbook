@@ -1,5 +1,5 @@
 ---
-title: "Plotly-Dash: Data Processing & Interactive Plotting with Python"
+title: "Plotly-Dash: Interactive Plotting with Python"
 layout: single
 author:
 author_profile: false

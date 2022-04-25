@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Creating XY Scatter Plot"
+title: "Creating XY Scatter Plot"
 layout: single
 author:
 author_profile: false
