@@ -11,18 +11,18 @@ header:
 
 ## Table of contents
 
-### **<a href="" style="color: red;">1. Introduction to Project Management</a>**     <!--- **[Introduction to Project Management]()** -->
+### **<a href="01-intro-to-project-management" style="color: #24376b;">1. Introduction to Project Management</a>**
 
-### **<a href="" style="color: red;">2. Project Management Tools</a>**               <!--- **[Project Management Tools]()** -->
-* <a href="" style="color: red;">2.1 Introduction to GitHub</a>                   <!--- [Introduction to GitHub]() -->
-* <a href="" style="color: red;">2.2 Introduction to BitBucket</a>                <!--- [Introduction to BitBucket]() -->
-* <a href="" style="color: red;">2.3 Introduction to ZenHub</a>                   <!--- [Introduction to ZenHub]() -->
+### **<a href="02-project-mamangement-tools" style="color: #24376b;">2. Project Management Tools</a>**
+* <a href="02A-intro-to-github" style="color: #3f5a8a;">2.1 Introduction to GitHub</a>
+* <a href="02B-intro-to-bitbucket" style="color: #3f5a8a;">2.2 Introduction to BitBucket</a>
+* <a href="02C-intro-to-zenhub" style="color: #3f5a8a;">2.3 Introduction to ZenHub</a>
 
-### **<a href="" style="color: red;">3. Documentation Improvement Tools</a>**        <!--- **[Documentation Improvement Tools]()** -->
-* <a href="" style="color: red;">3.1 Introduction to Markdown</a>                 <!--- [Introduction to Markdown]() -->
+### **<a href="03-documentation-improvement-tools" style="color: #24376b;">3. Documentation Improvement Tools</a>**
+* <a href="03A-intro-to-markdown" style="color: #3f5a8a;">3.1 Introduction to Markdown</a>
 
-### **<a href="" style="color: red;">4. Team Communication Tools</a>**               <!--- **[Team Communication Tools]()** -->
-* <a href="" style="color: red;">4.1 Introduction to Slack</a>                    <!--- [Introduction to Slack]() -->
+### **<a href="04-team-communication-tools" style="color: #24376b;">4. Team Communication Tools</a>**
+* <a href="04A-intro-to-slack" style="color: #3f5a8a;">4.1 Introduction to Slack</a>
 
 
 ---

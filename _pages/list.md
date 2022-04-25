@@ -163,12 +163,12 @@ header:
 <br>
 
 # <a href="09-ProjectManagement/00-ProjectManagement-LandingPage" style="color: #8997c1;">09. Project Management</a>
-* **<a href="" style="color: #24376b;">Introduction to Project Management</a>**
-* **<a href="" style="color: #24376b;">Project Management Tools</a>**
-  * <a href="" style="color: #3f5a8a;">Introduction to GitHub</a>
-  * <a href="" style="color: #3f5a8a;">Introduction to BitBucket</a>
-  * <a href="" style="color: #3f5a8a;">Introduction to ZenHub</a>
-* **<a href="" style="color: #24376b;">Documentation Improvement Tools</a>**
-  * <a href="" style="color: #3f5a8a;">Introduction to Markdown</a>
-* **<a href="" style="color: #24376b;">Team Communication Tools</a>**
-  * <a href="" style="color: #3f5a8a;">Introduction to Slack</a>
+* **<a href="09-ProjectManagement/01-intro-to-project-management" style="color: #24376b;">Introduction to Project Management</a>**
+* **<a href="09-ProjectManagement/02-project-mamangement-tools" style="color: #24376b;">Project Management Tools</a>**
+  * <a href="09-ProjectManagement/02A-intro-to-github" style="color: #3f5a8a;">Introduction to GitHub</a>
+  * <a href="09-ProjectManagement/02B-intro-to-bitbucket" style="color: #3f5a8a;">Introduction to BitBucket</a>
+  * <a href="09-ProjectManagement/02C-intro-to-zenhub" style="color: #3f5a8a;">Introduction to ZenHub</a>
+* **<a href="09-ProjectManagement/03-documentation-improvement-tools" style="color: #24376b;">Documentation Improvement Tools</a>**
+  * <a href="09-ProjectManagement/03A-intro-to-markdown" style="color: #3f5a8a;">Introduction to Markdown</a>
+* **<a href="09-ProjectManagement/04-team-communication-tools" style="color: #24376b;">Team Communication Tools</a>**
+  * <a href="09-ProjectManagement/04A-intro-to-slack" style="color: #3f5a8a;">Introduction to Slack</a>
