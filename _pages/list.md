@@ -51,15 +51,15 @@ header:
 <br>
 
 # <a href="04-DevelopmentEnvironment/00-DevelopmentEnvironment-LandingPage" style="color: #8997c1;">04. Development Environment</a>
-* **<a href="" style="color: #24376b;">Integrated Development Environment (IDE)</a>**
-  * <a href="" style="color: #3f5a8a;">Tutorial: Atom Editor</a>
-* **<a href="" style="color: #24376b;">Python programming environment</a>**
-  * <a href="" style="color: #3f5a8a;">Jupyter: Interactive Web-Based Multi-Kernel Programming Interface</a>
-    * <a href="" style="color: #3f5a8a;">Tutorial: Getting Started with JupyterLab </a>
-  * <a href="" style="color: #3f5a8a;">PyCharm: IDE for Professional Python Developers</a>
-* **<a href="" style="color: #24376b;">R programming environment</a>**
-  * <a href="" style="color: #3f5a8a;">RStudio: Integrated Environment for R Programming</a>
-    * <a href="" style="color: #3f5a8a;">Tutorial: Setting Up RStudio</a>
+* **<a href="04-DevelopmentEnvironment/01-integrated-development-environment" style="color: #24376b;">Integrated Development Environment (IDE)</a>**
+  * <a href="04-DevelopmentEnvironment/01A-tutorial-atom-editor" style="color: #3f5a8a;">Tutorial: Atom Editor</a>
+* **<a href="04-DevelopmentEnvironment/02-python-programming-environment" style="color: #24376b;">Python Programming Environment</a>**
+  * <a href="04-DevelopmentEnvironment/02A-jupyter-basics" style="color: #3f5a8a;">Jupyter: Interactive Web-Based Multi-Kernel Programming Interface</a>
+    * <a href="04-DevelopmentEnvironment/02B-tutorial-jupyter-lab" style="color: #3f5a8a;">Tutorial: Getting Started with JupyterLab </a>
+  * <a href="04-DevelopmentEnvironment/02C-pycharm-ide" style="color: #3f5a8a;">PyCharm: IDE for Professional Python Developers</a>
+* **<a href="04-DevelopmentEnvironment/03-r-programming-environment" style="color: #24376b;">R Programming Environment</a>**
+  * <a href="04-DevelopmentEnvironment/03A-rstudio-basics" style="color: #3f5a8a;">RStudio: Integrated Environment for R Programming</a>
+    * <a href="04-DevelopmentEnvironment/03B-tutorial-setting-up-rstudio" style="color: #3f5a8a;">Tutorial: Setting Up RStudio</a>
 <br>
 
 # <a href="05-IntroToProgramming/00-IntroToProgramming-LandingPage" style="color: #8997c1;">05. Introduction to Programming</a>

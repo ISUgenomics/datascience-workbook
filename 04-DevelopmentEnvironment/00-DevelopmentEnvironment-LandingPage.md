@@ -11,17 +11,16 @@ header:
 
 ## Table of contents
 
-### **<a href="" style="color: red;">1. Integrated Development Environment (IDE)</a>**  <!--- **[Integrated Development Environment (IDE)]()** -->
-* <a href="" style="color: red;">Tutorial: Atom Editor</a>                    <!--- [Atom Editor]() -->
+### **<a href="01-integrated-development-environment" style="color: #24376b;">1. Integrated Development Environment (IDE)</a>**
+* <a href="01A-tutorial-atom-editor" style="color: #3f5a8a;">Tutorial: Atom Editor</a>
+### **<a href="02-python-programming-environment" style="color: #24376b;">2. Python programming environment</a>**
+* <a href="02A-jupyter-basics" style="color: #3f5a8a;">2.1 Jupyter: Interactive Web-Based Multi-Kernel Programming Interface</a>
+  * <a href="02B-tutorial-jupyter-lab" style="color: #3f5a8a;">Tutorial: Getting Started with JupyterLab </a>
+* <a href="02C-pycharm-ide" style="color: #3f5a8a;">2.2 PyCharm: IDE for Professional Python Developers</a>
 
-### **<a href="" style="color: red;">2. Python programming environment</a>**         <!--- **[Python programming environment]()** -->
-* <a href="" style="color: red;">2.1 Jupyter: Interactive Web-Based Multi-Kernel Programming Interface</a>   <!--- [Jupyter: Interactive Web-Based Multi-Kernel Programming Interface]() -->
-  * <a href="" style="color: red;">Tutorial: Getting Started with JupyterLab </a>      <!--- [Getting Started with JupyterLab]() -->
-* <a href="" style="color: red;">2.2 PyCharm: IDE for Professional Python Developers</a>   <!--- [PyCharm: IDE for Professional Python Developers]() -->
-
-### **<a href="" style="color: red;">3. R programming environment</a>**              <!--- **[R programming environment]()** -->
-* <a href="" style="color: red;">3.1 RStudio: Integrated Environment for R Programming</a> <!--- [RStudio: Integrated Environment for R Programming]() -->
-  * <a href="" style="color: red;">Tutorial: Setting Up RStudio</a>           <!--- [Tutorial: Setting Up RStudio]() -->
+### **<a href="03-r-programming-environment" style="color: #24376b;">3. R programming environment</a>**
+* <a href="03A-rstudio-basics" style="color: #3f5a8a;">3.1 RStudio: Integrated Environment for R Programming</a>
+  * <a href="03B-tutorial-setting-up-rstudio" style="color: #3f5a8a;">Tutorial: Setting Up RStudio</a>
 
 
 ---
