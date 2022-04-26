@@ -2,6 +2,7 @@
 title: "Basic Unix Commands"
 layout: single
 author: Andrew Severin
+author1: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
@@ -89,6 +90,8 @@ ls ?.txt
 # 3. Command-line navigation in the file system
 
 ## 3.1 Paths
+
+You can use absolute path or abbreviated path.
 
 ### *Checking current path*
 
@@ -223,6 +226,15 @@ ls .
 ls DIRECTORY
 ```
 Everyone should currently be in their unixTutorial directory that they just created, which is empty so the `ls` command will return you to a new prompt without anything written to standard out. To exit nano you type this series of keys -- hit `ctr x` press `y` for yes to save and hit `enter`.  Nano tells you how to exit along with many of the following shortcuts at the bottom of your screen and will step you through how to exit and save.
+
+There are useful parameters for `ls` command that include:
+
+```
+ls –l #Lists all the files in lengthy or detailed view
+ls –t #Lists all the files, sorted based on creation time
+ls –S #Lists all the files, sorted based on size
+```
+
 
 
 # 5. Command-line file operations
