@@ -18,7 +18,7 @@ header:
     * <span style="color: #3f5a8a;">go to</span> <a href="https://geospatial.101workbook.org" style="color: #518cc2;">_Geospatial Workbook_</a>
   * <a href="01-IntroToDataScience/02C-machine-learning" style="color: #3f5a8a;">Machine Learning Outlook</a>
     * <span style="color: #3f5a8a;">go to</span> <a href="https://isugenomics.github.io/AI-workbook" style="color: #518cc2;">_AI Workbook_</a>
-<br>
+<br><br>
 
 # <a href="02-IntroToCommandLine/00-IntroToCommandLine-LandingPage" style="color: #8997c1;">02. Introduction to the Command Line</a>
 * **<a href="02-IntroToCommandLine/01-terminal-basics" style="color: #24376b;">Terminal: a text-based interface for command-line operations</a>**
@@ -34,7 +34,7 @@ header:
   * <a href="02-IntroToCommandLine/03C-tutorial-unix-awk" style="color: #3f5a8a;">Tutorial: AWK – advanced text processing</a>
   * <a href="02-IntroToCommandLine/03D-tutorial-unix-bioawk" style="color: #3f5a8a;">Tutorial: BIOAWK – biological data manipulation</a>
 * **<a href="02-IntroToCommandLine/04-unix-cheat-sheet" style="color: #24376b;">UNIX CheatSheet</a>**
-<br>
+<br><br>
 
 # <a href="03-SetUpComputingMachine/00-SetUpComputingMachine-LandingPage" style="color: #8997c1;">03. Setting Up Computing Machine</a>
 * **<a href="03-SetUpComputingMachine/01-operating-system-installation" style="color: #24376b;">Operating System Installation</a>**
@@ -48,7 +48,7 @@ header:
   * <a href="03-SetUpComputingMachine/03A-tutorial-installations-on-mac" style="color: #3f5a8a;">Tutorial: Installations on MacBook Pro</a>
   * <a href="03-SetUpComputingMachine/03B-tutorial-installations-on-windows" style="color: #3f5a8a;">Tutorial: Installations on Windows</a>
   * <a href="03-SetUpComputingMachine/03C-tutorial-installations-on-linux" style="color: #3f5a8a;">Tutorial: Installations on Linux</a>
-<br>
+<br><br>
 
 # <a href="04-DevelopmentEnvironment/00-DevelopmentEnvironment-LandingPage" style="color: #8997c1;">04. Development Environment</a>
 * **<a href="04-DevelopmentEnvironment/01-integrated-development-environment" style="color: #24376b;">Integrated Development Environment (IDE)</a>**
@@ -60,14 +60,14 @@ header:
 * **<a href="04-DevelopmentEnvironment/03-r-programming-environment" style="color: #24376b;">R Programming Environment</a>**
   * <a href="04-DevelopmentEnvironment/03A-rstudio-basics" style="color: #3f5a8a;">RStudio: Integrated Environment for R Programming</a>
     * <a href="04-DevelopmentEnvironment/03B-tutorial-setting-up-rstudio" style="color: #3f5a8a;">Tutorial: Setting Up RStudio</a>
-<br>
+<br><br>
 
 # <a href="05-IntroToProgramming/00-IntroToProgramming-LandingPage" style="color: #8997c1;">05. Introduction to Programming</a>
 * **<a href="05-IntroToProgramming/01-basics-of-algorithm-structure" style="color: #24376b;">Basics of Algorithm Structure</a>**
 * **<a href="05-IntroToProgramming/02-introduction-to-bash-scripting" style="color: #24376b;">Introduction to Bash Scripting</a>**
 * **<a href="05-IntroToProgramming/03-introduction-to-python" style="color: #24376b;">Introduction to Python programming</a>**
 * **<a href="05-IntroToProgramming/04-introduction-to-R" style="color: #24376b;">Introduction to R programming</a>**
-<br>
+<br><br>
 
 # <a href="06-IntroToHPC/00-IntroToHPC-LandingPage" style="color: #8997c1;">06. High-Performance Computing (HPC)</a>
 * **<a href="06-IntroToHPC/01-HPC-NETWORKS/01-introduction-to-hpc-infrastructure" style="color: #24376b;">Introduction to HPC infrastructure</a>**
@@ -106,7 +106,7 @@ header:
     * <a href="06-IntroToHPC/07-CONTAINERS/01-SINGULARITY/03-singularity-2-tutorial-modyfying-containers" style="color: #3f5a8a;">Tutorial: Modifying Existing Containers</a>
     * <a href="06-IntroToHPC/07-CONTAINERS/01-SINGULARITY/04-singularity-3-tutorial-vagrant" style="color: #3f5a8a;">Tutorial: Singularity on your Mac via Vagrant</a>
   * <a href="06-IntroToHPC/07-CONTAINERS/02-DOCKER/01-docker-basics" style="color: #3f5a8a;">Docker</a>
-<br>
+<br><br>
 
 # <a href="07-DataParsing/00-DataParsing-LandingPage" style="color: #8997c1;">07. Data Acquisition and Wrangling</a>
 * **<a href="07-DataParsing/01-remote-data-access" style="color: #24376b;">Remote Data Access</a>**
@@ -136,7 +136,7 @@ header:
     * <a href="07-DataParsing/02B-4-tutorial-python-data-manipulation-pandas" style="color: #3f5a8a;">Tutorial: Pandas Library - Data Structure Manipulation Tool</a>
     * <a href="07-DataParsing/02B-5-tutorial-python-array-manipulation-numpy" style="color: #3f5a8a;">Tutorial: Numpy Library - Multi-Dimensional Arrays Parser</a>
     * <a href="07-DataParsing/02B-6-tutorial-python-apply-statistics-scipy" style="color: #3f5a8a;">Tutorial: SciPy Library - Algorithms for Scientific Computing</a>
-<br>
+<br><br>
 
 # <a href="08-DataVisualization/00-DataVisualization-LandingPage" style="color: #8997c1;">08. Data Visualization</a>
 * **<a href="08-DataVisualization/01-scientific-graphic-design-intro" style="color: #24376b;">Introduction to Scientific Graphic Design</a>**
@@ -161,7 +161,7 @@ header:
     * <a href="08-DataVisualization/02C-1-setting-up-rstudio" style="color: #3f5a8a;">Setting Up an RStudio Environment</a>
     * <a href="08-DataVisualization/02C-2-rstudio-tutorial-box-plot" style="color: #3f5a8a;">Tutorial: Creating Boxplots in R</a>
     * <a href="08-DataVisualization/02C-3-rstudio-tutorial-heatmap-plot" style="color: #3f5a8a;">Tutorial: Creating Heatmaps in R</a>
-<br>
+<br><br>
 
 # <a href="09-ProjectManagement/00-ProjectManagement-LandingPage" style="color: #8997c1;">09. Project Management</a>
 * **<a href="09-ProjectManagement/01-intro-to-project-management" style="color: #24376b;">Introduction to Project Management</a>**
