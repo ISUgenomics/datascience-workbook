@@ -27,9 +27,7 @@ header:
 * <a href="02-SSH/02-ssh-shortcuts" style="color: #3f5a8a;">2.1 SSH Shortcuts</a>
 * <a href="02-SSH/03-password-less-ssh" style="color: #3f5a8a;">2.2 Password-less SSH</a>
 
-### **<a href="03-FILE-ACCESS/01-remote-data-acces" style="color: #24376b;">3. Remote Data Access</a>** <span style="color: #a9bbd1;">_(see in section 7: Data Acquisition)_</span>
-* <a href="03-FILE-ACCESS/02-remote-data-transfer" style="color: #3f5a8a;">3.1 Remote Data Transfer</a> <span style="color: #86a5ad;">
-* <a href="03-FILE-ACCESS/03-remote-data-preview" style="color: #3f5a8a;">3.2 Remote Data Preview without Downloading</a> <span style="color: #86a5ad;">
+### **<a href="03-FILE-ACCESS/01-remote-data-acces" style="color: #24376b;">3. Remote Data Access</a>** <br><span style="color: #a9bbd1;">_(see more in section 7: Data Acquisition)_</span>
 
 ### **<a href="04-SOFTWARE/01-software-available-on-HPC" style="color: #24376b;">4. Available Software</a>**
 * <a href="04-SOFTWARE/02-accessing-preinstalled-modules" style="color: #3f5a8a;">4.1 Accessing pre-Installed Modules</a>
