@@ -10,7 +10,20 @@ header:
 
 {% include toc %}
 
+## Plotly Graphing Library
 
+### Plotly Express wrapper
+
+Explore *px_scatter_PCA.ipynb* notebook.
+
+0. If you have not already done so, download this repository <br>
+`git clone <>`
+1. Open Jupyter lab following the instructions in ***Start Jupyter via Terminal***. <br>
+`jupyter lab` then `http://localhost:8888/` in the browser
+2. Select `File`, then `Open from path` and provide yor local path to *`px_scatter_PCA.ipynb`*
+3. Follow the instructions in the notebook.
+
+### Plotly Graph Objects wrapper
 
 
 
