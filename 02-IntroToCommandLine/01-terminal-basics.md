@@ -72,6 +72,6 @@ ___
 
 ___
 
-[Homepage](../index.md){: .btn  .btn--primary} 〉
-[Section Index](00-IntroToCommandLine-LandingPage.md){: .btn  .btn--primary} 〉
+[Homepage](../index.md){: .btn  .btn--primary}
+[Section Index](00-IntroToCommandLine-LandingPage.md){: .btn  .btn--primary}
 [Next](02-intro-to-unix-shell.md){: .btn  .btn--primary}
