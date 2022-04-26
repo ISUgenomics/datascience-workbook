@@ -20,7 +20,7 @@ header:
 
 ___
 # Further Reading
-* [SECTION 2. Introduction to the Command Line](02-IntroToCommandLine/00-IntroToCommandLine-LandingPage)
+* [SECTION 2. Introduction to the Command Line](../02-IntroToCommandLine/00-IntroToCommandLine-LandingPage)
 
 ___
 
