@@ -23,7 +23,7 @@ Alex is a Research Scientist IV at the Genome Informatics Facility at Iowa State
 
 ### Jennifer Chang
 
-![Jennifer](../assets/images/people/Jennifer.jpg){: .align-left}
+![Jennifer](../assets/images/people/Jennifer.png){: .align-left}
 Jennifer has a PhD in Bioinformatics and Computational Biology. She is programmer since 2006 and have an interest in data visualization and software development. Her research focus has been on analyzing and merging networks, monitoring the evolution of influenza A viruses in swine, and writing cross-platform pipelines. In 2020, she joined the Genomics Informatics Facility in the hopes of developing interdisciplinary pipelines and tutorials.
 
 ### Arun S. Seetharam
