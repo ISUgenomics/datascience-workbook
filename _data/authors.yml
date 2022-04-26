@@ -6,6 +6,14 @@ Andrew Severin:
   email       : "mailto:severin@iastate.edu"
   website     : "https://gif.biotech.iastate.edu"
 
+Siva Chudalayandi:
+  name        : "Siva Chudalayandi"
+  bio         : "My expertise is in the field of molecular biology, genetics and computational biology, modern biological research routinely produce large scale data that aid in shedding light on a phenomena or point us in a newer research direction. As an Associate Scientist at the Genome Informatics Facility, I work as a bioinformatics liaison for the USDA community at large, I contribute to the community by way of tutorials, online discussions etc. I also collaborate with researchers in my capacity as computational biologist to perform data driven discovery."
+  avatar      : "/assets/images/people/Siva.jpg"
+  twitter     : "someone"
+  email       : "mailto:csiva@iastate.edu"
+  website     : "https://gif.biotech.iastate.edu"
+
 Aleksandra Badaczewska:
   name        : "Aleksandra Badaczewska"
   bio         : "Alex is a Research Scientist IV at the Genome Informatics Facility at Iowa State University. Her academic background is in Chemistry and Biotechnology, with a Ph.D. in Computational Biology and broad experience in programming and designing web applications. She develops a comprehensive collection of highly customizable visualization solutions for bioinformatics and geospatial analyses."
@@ -14,9 +22,10 @@ Aleksandra Badaczewska:
   email       : "mailto:abadacz@iastate.edu"
   website     : "https://gif.biotech.iastate.edu"
 
+
 Jennifer Chang:
   name        : "Jennifer Chang"
-  bio         : "Jennifer has a PhD in Bioinformatics and Computational Biology. She is programmer since 2006 and have an interest in data visualization and software development. Her research focus has been on analyzing and merging networks, monitoring the evolution of influenza A viruses in swine, and writing cross-platform pipelines. In 2020, she joined the Genomics Informatics Facility in the hopes of developing interdisciplinary pipelines and tutorials."
+  bio         : "I am an Iowa State University graduate, with a PhD in Bioinformatics and Computational Biology. I have been programming (in one language or another) since 2006 and have an interest in data visualization and software development. My research focus has been on analyzing and merging networks, monitoring the evolution of influenza A viruses in swine, and writing cross-platform pipelines. In 2020, I joined the Genomics Informatics Facility in the hopes of developing interdisciplinary pipelines and tutorials to meet the needs of the widespread research community."
   avatar      : "/assets/images/people/Jennifer.png"
   twitter     : "someone"
   email       : "mailto:someone@iastate.edu"
