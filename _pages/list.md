@@ -84,7 +84,7 @@ header:
 * **<a href="06-IntroToHPC/02-SSH/01-secure-shell-connection" style="color: #24376b;">Secure Shell Connection (SSH)</a>**
   * <a href="06-IntroToHPC/02-SSH/02-ssh-shortcuts" style="color: #3f5a8a;">SSH Shortcuts</a>
   * <a href="06-IntroToHPC/02-SSH/03-password-less-ssh" style="color: #3f5a8a;">Password-less SSH</a>
-* **<a href="06-IntroToHPC/03-FILE-ACCESS/01-remote-data-acces" style="color: #24376b;">Remote Data Access</a>** <br><span style="color: #a9bbd1;">_(see more in section 7: Data Acquisition)_</span>
+* **<a href="06-IntroToHPC/03-FILE-ACCESS/01-remote-data-access" style="color: #24376b;">Remote Data Access</a>** <br><span style="color: #a9bbd1;">_(see more in section 7: Data Acquisition)_</span>
 * **<a href="06-IntroToHPC/04-SOFTWARE/01-software-available-on-HPC" style="color: #24376b;">Software Available on HPC</a>**
   * <a href="06-IntroToHPC/04-SOFTWARE/02-accessing-preinstalled-modules" style="color: #3f5a8a;">Accessing pre-Installed Modules</a>
   * <a href="06-IntroToHPC/04-SOFTWARE/03-installing-custom-programs" style="color: #3f5a8a;">Installing Custom Programs in User Space</a>
