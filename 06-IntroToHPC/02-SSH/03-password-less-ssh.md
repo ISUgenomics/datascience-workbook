@@ -43,7 +43,7 @@ ssh userid@MACHINENAME
 
 ___
 # Further Reading
-* [Remote Data Access](../03-FILE-ACCESS/01-remote-data-acces)
+* [Remote Data Access](../03-FILE-ACCESS/01-remote-data-access)
 * [Software Available on HPC](../04-SOFTWARE/01-software-available-on-HPC)
 * [Introduction to Job Scheduling](../05-JOB-QUEUE/00-introduction-to-job-scheduling)
 * [Introduction to GNU Parallel](../06-PARALLEL/01-introduction-to-gnu-parallel)
@@ -54,4 +54,4 @@ ___
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
 [Previous](02-ssh-shortcuts){: .btn  .btn--primary}
-[Next](../03-FILE-ACCESS/01-remote-data-acces){: .btn  .btn--primary}
+[Next](../03-FILE-ACCESS/01-remote-data-access){: .btn  .btn--primary}
