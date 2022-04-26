@@ -61,7 +61,8 @@ When working in a terminal, it is helpful to know some basic terminology for whe
   |**Standard Error**| the error of a failed command |
 
 
-![](assets/TerminalWelcome_small.png)
+![](assets/images/TerminalWelcome_small.png)
+
 
 ___
 # Further Reading
