@@ -3,7 +3,7 @@ title: "Introduction to Data Science"
 layout: single
 header:
   overlay_color: "444444"
-  overlay_image: assets/images/01_data_science_banner.png
+  overlay_image: /01-IntroToDataScience/assets/images/01_data_science_banner.png
 ---
 
 

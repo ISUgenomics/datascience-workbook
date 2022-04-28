@@ -3,7 +3,7 @@ title: "Introduction to Command Line"
 layout: single
 header:
   overlay_color: "444444"
-  overlay_image: assets/images/02_command_line_banner.png
+  overlay_image: /02-IntroToCommandLine/assets/images/02_command_line_banner.png
 ---
 
 

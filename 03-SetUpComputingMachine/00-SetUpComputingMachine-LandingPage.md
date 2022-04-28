@@ -3,7 +3,7 @@ title: "Setting Up Computing Machine"
 layout: single
 header:
   overlay_color: "444444"
-  overlay_image: assets/images/03_computer_setup_banner.png
+  overlay_image: /03-SetUpComputingMachine/assets/images/03_computer_setup_banner.png
 ---
 
 

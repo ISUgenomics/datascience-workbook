@@ -3,7 +3,7 @@ title: "Introduction to Programming"
 layout: single
 header:
   overlay_color: "444444"
-  overlay_image: assets/images/05_programming_banner.png
+  overlay_image: /05-IntroToProgramming/assets/images/05_programming_banner.png
 ---
 
 
