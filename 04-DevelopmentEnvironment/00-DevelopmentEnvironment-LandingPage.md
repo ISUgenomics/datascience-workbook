@@ -3,7 +3,7 @@ title: "Development Environment"
 layout: single
 header:
   overlay_color: "444444"
-  overlay_image: /assets/images/pattern.png
+  overlay_image: assets/images/04_development_envir_banner.png
 ---
 
 

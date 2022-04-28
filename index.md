@@ -4,7 +4,7 @@ permalink: /
 header:
   overlay_color: "444444"
   overlay_image: /assets/images/data_science_workbook_banner.png
-excerpt: 'Learning command line and HPC through practical tutorials'
+excerpt: 'Introduction to large scale computing and data wrangling'
 feature_row:
 
   - title: "01: Data Science Brief"

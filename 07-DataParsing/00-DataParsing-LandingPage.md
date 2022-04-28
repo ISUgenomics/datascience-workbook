@@ -3,7 +3,7 @@ title: "Data Acquisition and Wrangling"
 layout: single
 header:
   overlay_color: "444444"
-  overlay_image: /assets/images/pattern.png
+  overlay_image: assets/images/07_data_acquisition_banner.png
 ---
 
 

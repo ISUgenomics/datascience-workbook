@@ -3,7 +3,7 @@ title: "Data Visualization"
 layout: single
 header:
   overlay_color: "444444"
-  overlay_image: /assets/images/pattern.png
+  overlay_image: assets/images/08_data_visualization_banner.png
 ---
 
 
