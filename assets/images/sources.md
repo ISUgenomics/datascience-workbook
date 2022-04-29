@@ -1,3 +1,13 @@
+---
+title: "Image sources"
+layout: single
+header:
+  overlay_color: "444444"
+  overlay_image: data_science_about_banner.png
+---
+
+
+
 # Image sources
 
 - *original* - designed solely by the author or used original assets
