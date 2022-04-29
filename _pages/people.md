@@ -14,7 +14,6 @@ header:
 
 ![Andrew](../assets/images/people/Andrew.png){: .align-left}
 Andrew manages the Genome Informatics Facility at Iowa State University. His academic background is in biochemistry with a Ph.D. in Biophysics/NMR spectroscopy. He is an interdisciplinary scientist working at the interface of Genetics and Bioinformatics, translating Big Data into informative data for interesting biological questions. He is passionate about evolution and the science behind the genome.
-<br><br>
 
 ### Siva Chudalayandi
 
@@ -25,6 +24,7 @@ My expertise is in the field of Molecular Biology, Genetics, and Computational B
 
 ![Alex](../assets/images/people/Alex.png){: .align-left}
 Alex is a Research Scientist IV at the Genome Informatics Facility at Iowa State University. Her academic background is in Chemistry and Biotechnology, with a Ph.D. in Computational Biology and broad experience in programming and designing web applications. She develops a comprehensive collection of highly customizable visualization solutions for Bioinformatics and supports software optimization for the USDA Geospatial analyses.
+<br>
 
 ### Jennifer Chang
 
