@@ -35,7 +35,7 @@ Data Science is a modern conception of efficient computational processing of lar
 
 Some of the funding to produce this Workbook was provided by a joint collaboration between Iowa State University and resources provided by the SCINet project of the USDA Agricultural Research Service [ARS project number: 0500-00093-001-00-D].
 
-[Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska) created graphics for the Workbook's layout using free and open-source software Inkscape (vector) and Gimp (raster). The original assets used for the graphic design come primarily from [Adobe Stock](https://stock.adobe.com/) granted to Iowa State University under an Educational License 2022. For a detailed list of images and source information, see the [sources file](/assets/images/sources.md). 
+Aleksandra Badaczewska [�](https://www.linkedin.com/in/aleksandra-badaczewska) created graphics for the Workbook's layout using free and open-source software Inkscape (*vector*) and Gimp (*raster*). The original assets used for the graphic design come primarily from [Adobe Stock](https://stock.adobe.com/) granted to Iowa State University under an Educational License 2022. For a detailed list of images and source information, see the [sources file](../assets/images/sources.md).
 
 ---
 
