@@ -10,16 +10,7 @@ header:
 It is undeniable that good project management leads to improved reproducibility and research productivity.  Project management becomes significantly more important as the size of the project and the amount of data increases. Project management is not just about how you organize your data, files and folders but also how you record the steps in data analysis that leads to the publication of your research.  
 
 
-## Learning Objectives
-
-We should strive for a project management process that would give the ability for a new person to join a project and be able to reproduce everything that has gone before and carry the project forward with minimal effort and maximal understanding of the project goals. This requires that all aspects of the project have the following properties recorded.
-
-* Reproducibility (version, hash, date of download)
-* Version Control
-* Extensive commentary
-
-
-## Table of contents
+## <span style="color: #8997c1;">Table of contents</span>
 
 ### **<a href="01-intro-to-project-management" style="color: #24376b;">1. Introduction to Project Management</a>**
 

@@ -9,7 +9,7 @@ header:
 
 
 
-## Table of contents
+## <span style="color: #8997c1;">Table of contents</span>
 
 ### **<a href="01-remote-data-access" style="color: #24376b;">1. Remote Data Access</a>**
 * <a href="01A-0-remote-data-transfer" style="color: #3f5a8a;">1.1 Remote Data Transfer</a>

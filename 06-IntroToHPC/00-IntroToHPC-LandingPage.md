@@ -9,7 +9,7 @@ header:
 
 
 
-## Table of contents
+## <span style="color: #8997c1;">Table of contents</span>
 
 ### **<a href="01-HPC-NETWORKS/01-introduction-to-hpc-infrastructure" style="color: #24376b;">1. Introduction to HPC infrastructure</a>**
 * <a href="01-HPC-NETWORKS/01-XSEDE/01-supercomputer-intro" style="color: #3f5a8a;">8.1 XSEDE Supercomputer</a>

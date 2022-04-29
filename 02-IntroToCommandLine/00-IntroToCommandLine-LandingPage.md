@@ -9,7 +9,7 @@ header:
 
 
 
-## Table of contents
+## <span style="color: #8997c1;">Table of contents</span>
 
 ### **<a href="01-terminal-basics" style="color: #24376b;">1. Terminal: a text-based interface for command-line operations</a>**
 

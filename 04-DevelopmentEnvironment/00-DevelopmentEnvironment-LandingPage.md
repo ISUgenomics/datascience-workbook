@@ -9,7 +9,7 @@ header:
 
 
 
-## Table of contents
+## <span style="color: #8997c1;">Table of contents</span>
 
 ### **<a href="01-integrated-development-environment" style="color: #24376b;">1. Integrated Development Environment (IDE)</a>**
 * <a href="01A-tutorial-atom-editor" style="color: #3f5a8a;">Tutorial: Atom Editor</a>

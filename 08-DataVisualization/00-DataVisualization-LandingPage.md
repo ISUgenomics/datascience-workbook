@@ -9,7 +9,7 @@ header:
 
 
 
-## Table of contents
+## <span style="color: #8997c1;">Table of contents</span>
 
 ### **<a href="01-scientific-graphic-design-intro" style="color: #24376b;">1. Introduction to Scientific Graphic Design</a>**
 * <a href="01A-raster-graphics-tools" style="color: #3f5a8a;">1.1 Raster Graphics Tools</a>

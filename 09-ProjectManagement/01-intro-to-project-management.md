@@ -10,7 +10,14 @@ header:
 
 {% include toc %}
 
-# Project Management
+
+# Learning Objectives
+
+We should strive for a project management process that would give the ability for a new person to join a project and be able to reproduce everything that has gone before and carry the project forward with minimal effort and maximal understanding of the project goals. This requires that all aspects of the project have the following properties recorded.
+
+* Reproducibility (version, hash, date of download)
+* Version Control
+* Extensive commentary
 
 
 # Introduction to Project Management
