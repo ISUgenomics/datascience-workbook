@@ -1,6 +1,8 @@
 ---
 title: "Introduction to Data Science"
 layout: single
+author: Aleksandra Badaczewska
+author_profile: false
 header:
   overlay_color: "444444"
   overlay_image: /01-IntroToDataScience/assets/images/01_data_science_banner.png

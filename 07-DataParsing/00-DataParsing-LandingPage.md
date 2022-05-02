@@ -1,6 +1,8 @@
 ---
 title: "Data Acquisition and Wrangling"
 layout: single
+author: Aleksandra Badaczewska
+author_profile: false
 header:
   overlay_color: "444444"
   overlay_image: /07-DataParsing/assets/images/07_data_acquisition_banner.png

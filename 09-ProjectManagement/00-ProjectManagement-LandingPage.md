@@ -1,6 +1,8 @@
 ---
 title: "Project Management"
 layout: single
+author: Andrew Severin
+author_profile: false
 header:
   overlay_color: "444444"
   overlay_image: /09-ProjectManagement/assets/images/09_project_management_banner.png
