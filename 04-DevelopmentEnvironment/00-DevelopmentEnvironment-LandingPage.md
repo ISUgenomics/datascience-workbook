@@ -2,7 +2,7 @@
 title: "Development Environment"
 layout: single
 author: Aleksandra Badaczewska
-author_profile: false
+author_profile: true
 header:
   overlay_color: "444444"
   overlay_image: /04-DevelopmentEnvironment/assets/images/04_development_envir_banner.png

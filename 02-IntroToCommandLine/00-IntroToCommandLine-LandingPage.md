@@ -2,7 +2,7 @@
 title: "Introduction to Command Line"
 layout: single
 author: Aleksandra Badaczewska
-author_profile: false
+author_profile: true
 header:
   overlay_color: "444444"
   overlay_image: /02-IntroToCommandLine/assets/images/02_command_line_banner.png
