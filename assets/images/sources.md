@@ -24,7 +24,7 @@ GitHub location: <span style="color: #8997c1;">datascience-workbook/assets/image
 
 **data_science_section_gallery.png** -- adjusted by [Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska) based on the original assets from the [Adobe Stock](https://stock.adobe.com/): [429998837](https://stock.adobe.com/429998837)
 
-**command_line_section_gallery.png** -- created by [Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska) based on the original assets from the [Adobe Stock](https://stock.adobe.com/): ß<br>[79314639](https://stock.adobe.com/79314639) - [314046170](https://stock.adobe.com/314046170)
+**command_line_section_gallery.png** -- created by [Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska) based on the original assets from the [Adobe Stock](https://stock.adobe.com/): <br>[79314639](https://stock.adobe.com/79314639) - [314046170](https://stock.adobe.com/314046170)
 
 **computer_setup_section_gallery.png** -- adjusted by [Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska) based on the original assets from the [Adobe Stock](https://stock.adobe.com/): [225829756](https://stock.adobe.com/225829756)
 
