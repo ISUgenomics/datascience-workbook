@@ -6,7 +6,7 @@ header:
   overlay_image: /02-IntroToCommandLine/assets/images/02_command_line_banner.png
 ---
 
-
+Command Line is a text interface for the computer's operating system that passes on-demand the predefined commands and triggers the execution of various processes. That gives the user powerful computing capabilities, great analytical flexibility, and significant time savings. With some knowledge of scripting and algorithm design, you can easily encapsulate a repetitive task in a loop that starts with a single command and runs in the background of your schedule. It makes a huge difference compared to manually renumbering 1000 files. The larger the data set, the greater the savings in researcher time, reduced human error and increased reproducibility and standardization.
 
 
 ## <span style="color: #8997c1;">Table of contents</span>
