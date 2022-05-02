@@ -18,7 +18,7 @@ header:
 <span style="color: #518cc2; font-weight:bold">Bash</span> -
 <span style="color: #24376b;">
 is command language in the Unix shell that allows users to execute various processes by writing text commands in the terminal window.
-<span><br>
+</span><br>
 <span style="color: #8997c1;"> _#unix-shell_ </span> &nbsp;|&nbsp;
 <span style="color: #8997c1;"> _#terminal_ </span> &nbsp;|&nbsp;
 <span style="color: #8997c1;"> _#command-line_ </span> &nbsp;|&nbsp;
@@ -31,7 +31,7 @@ is command language in the Unix shell that allows users to execute various proce
 <span style="color: #518cc2; font-weight:bold">Command Line</span> -
 <span style="color: #24376b;">
 is a text interface for the computer that passes the predefined commands to the operating system. Commands trigger the execution of various processes.
-<span><br>
+</span><br>
 <span style="color: #8997c1;"> _#unix-shell_ </span> &nbsp;|&nbsp;
 <span style="color: #8997c1;"> _#terminal_ </span> &nbsp;|&nbsp;
 <span style="color: #8997c1;"> _#bash_ </span> &nbsp;|&nbsp;
@@ -75,7 +75,7 @@ is a text interface for the computer that passes the predefined commands to the 
 <span style="color: #518cc2; font-weight:bold">Terminal</span> -
 <span style="color: #24376b;">
 is a program for accessing files on your computer using the command line.
-<span><br>
+</span><br>
 <span style="color: #8997c1;"> _#command-line_ </span> &nbsp;|&nbsp;
 <span style="color: #8997c1;"> _#unix-shell_ </span> &nbsp;|&nbsp;
 <span style="color: #8997c1;"> _#bash_ </span> &nbsp;|&nbsp;
@@ -88,7 +88,7 @@ is a program for accessing files on your computer using the command line.
 <span style="color: #518cc2; font-weight:bold">Unix Shell</span> -
 <span style="color: #24376b;">
 is a command-line interpreter that provides a command line user interface for computer's operating system (OS). The OS uses the shell scripts/commands to control the execution of the programs and procedures.
-<span><br>
+</span><br>
 <span style="color: #8997c1;"> _#command-line_ </span> &nbsp;|&nbsp;
 <span style="color: #8997c1;"> _#terminal_ </span> &nbsp;|&nbsp;
 <span style="color: #8997c1;"> _#bash_ </span> &nbsp;|&nbsp;
