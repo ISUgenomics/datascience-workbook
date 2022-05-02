@@ -24,7 +24,7 @@ GitHub location: <span style="color: #8997c1;">datascience-workbook/assets/image
 
 **data_science_section_gallery.png** -- adjusted by [Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska) based on the original assets from the [Adobe Stock](https://stock.adobe.com/): [429998837](https://stock.adobe.com/429998837)
 
-**command_line_section_gallery.png** -- created by [Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska) based on the original assets from the [Adobe Stock](https://stock.adobe.com/): <br>[79314639](https://stock.adobe.com/79314639) - [314046170](https://stock.adobe.com/314046170)
+**command_line_section_gallery.png** -- created by [Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska) based on the original assets from the [Adobe Stock](https://stock.adobe.com/): [79314639](https://stock.adobe.com/79314639) - [314046170](https://stock.adobe.com/314046170)
 
 **computer_setup_section_gallery.png** -- adjusted by [Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska) based on the original assets from the [Adobe Stock](https://stock.adobe.com/): [225829756](https://stock.adobe.com/225829756)
 
@@ -56,7 +56,7 @@ GitHub location: <span style="color: #8997c1;">datascience-workbook/01-IntroToDa
 
 ### <span style="color: #24376b;">Title Banners</span>
 
-**01_data_science_banner.png** -- created by [Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska) based on the original assets from the [Adobe Stock](https://stock.adobe.com/): <br>[262173764](https://stock.adobe.com/262173764) - [138575583](https://stock.adobe.com/138575583)
+**01_data_science_banner.png** -- created by [Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska) based on the original assets from the [Adobe Stock](https://stock.adobe.com/): [262173764](https://stock.adobe.com/262173764) - [138575583](https://stock.adobe.com/138575583)
 
 
 ### <span style="color: #24376b;">Tutorials</span>
@@ -68,7 +68,7 @@ GitHub location: <span style="color: #8997c1;">datascience-workbook/02-IntroToCo
 
 ### <span style="color: #24376b;">Title Banners</span>
 
-**02_command_line_banner.png** -- created by [Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska) based on the original assets from the [Adobe Stock](https://stock.adobe.com/): <br>[79314639](https://stock.adobe.com/79314639) - [314046170](https://stock.adobe.com/314046170) - [238240773](https://stock.adobe.com/238240773)
+**02_command_line_banner.png** -- created by [Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska) based on the original assets from the [Adobe Stock](https://stock.adobe.com/): [79314639](https://stock.adobe.com/79314639) - [314046170](https://stock.adobe.com/314046170) - [238240773](https://stock.adobe.com/238240773)
 
 
 ### <span style="color: #24376b;">Tutorials</span>
@@ -80,7 +80,7 @@ GitHub location: <span style="color: #8997c1;">datascience-workbook/03-SetUpComp
 
 ### <span style="color: #24376b;">Title Banners</span>
 
-**03_computer_setup_banner.png** -- created by [Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska) based on the original assets from the [Adobe Stock](https://stock.adobe.com/): <br>[402911738](https://stock.adobe.com/402911738) - [164562230](https://stock.adobe.com/164562230)
+**03_computer_setup_banner.png** -- created by [Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska) based on the original assets from the [Adobe Stock](https://stock.adobe.com/): [402911738](https://stock.adobe.com/402911738) - [164562230](https://stock.adobe.com/164562230)
 
 
 ### <span style="color: #24376b;">Tutorials</span>
@@ -92,7 +92,7 @@ GitHub location: <span style="color: #8997c1;">datascience-workbook/04-Developme
 
 ### <span style="color: #24376b;">Title Banners</span>
 
-**04_development_envir_banner.png** -- created by [Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska) based on the original assets from the [Adobe Stock](https://stock.adobe.com/): <br>[280198220](https://stock.adobe.com/280198220) - [348397404](https://stock.adobe.com/348397404)
+**04_development_envir_banner.png** -- created by [Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska) based on the original assets from the [Adobe Stock](https://stock.adobe.com/): [280198220](https://stock.adobe.com/280198220) - [348397404](https://stock.adobe.com/348397404)
 
 
 ### <span style="color: #24376b;">Tutorials</span>
@@ -104,7 +104,7 @@ GitHub location: <span style="color: #8997c1;">datascience-workbook/05-IntroToPr
 
 ### <span style="color: #24376b;">Title Banners</span>
 
-**05_programming_banner.png** -- created by [Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska) based on the original assets from the [Adobe Stock](https://stock.adobe.com/): <br>[183265735](https://stock.adobe.com/183265735) - [306184592](https://stock.adobe.com/306184592) - [186097438](https://stock.adobe.com/186097438)
+**05_programming_banner.png** -- created by [Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska) based on the original assets from the [Adobe Stock](https://stock.adobe.com/): [183265735](https://stock.adobe.com/183265735) - [306184592](https://stock.adobe.com/306184592) - [186097438](https://stock.adobe.com/186097438)
 
 
 ### <span style="color: #24376b;">Tutorials</span>
@@ -116,7 +116,7 @@ GitHub location: <span style="color: #8997c1;">datascience-workbook/06-IntroToHP
 
 ### <span style="color: #24376b;">Title Banners</span>
 
-**06_hpc_banner.png** -- created by [Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska) based on the original assets from the [Adobe Stock](https://stock.adobe.com/): <br>[470965870](https://stock.adobe.com/470965870) - [94353894](https://stock.adobe.com/94353894)
+**06_hpc_banner.png** -- created by [Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska) based on the original assets from the [Adobe Stock](https://stock.adobe.com/): [470965870](https://stock.adobe.com/470965870) - [94353894](https://stock.adobe.com/94353894)
 
 
 ### <span style="color: #24376b;">Tutorials</span>
@@ -128,7 +128,7 @@ GitHub location: <span style="color: #8997c1;">datascience-workbook/07-DataParsi
 
 ### <span style="color: #24376b;">Title Banners</span>
 
-**07_data_acquisition_banner.png** -- created by [Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska) based on the original assets from the [Adobe Stock](https://stock.adobe.com/): <br>[276394533](https://stock.adobe.com/276394533) - [303004081](https://stock.adobe.com/303004081)
+**07_data_acquisition_banner.png** -- created by [Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska) based on the original assets from the [Adobe Stock](https://stock.adobe.com/): [276394533](https://stock.adobe.com/276394533) - [303004081](https://stock.adobe.com/303004081)
 
 
 ### <span style="color: #24376b;">Tutorials</span>
