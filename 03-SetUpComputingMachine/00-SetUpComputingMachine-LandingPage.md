@@ -6,7 +6,7 @@ header:
   overlay_image: /03-SetUpComputingMachine/assets/images/03_computer_setup_banner.png
 ---
 
-
+A computer is an essential tool in modern digital reality. Using it, you can acquire, process, store, and visualize various types of information. It is worth knowing how to adapt its configuration to your research work. There is treasured software facilitating team communication, project management, presentation of results, and improving the developer experience. You won't be disappointed to learn about it!
 
 
 ## <span style="color: #8997c1;">Table of contents</span>
