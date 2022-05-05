@@ -20,7 +20,7 @@ header:
 
 ___
 # Further Reading
-* learn more about [Remote Data Access in section 7: Data Acquisition](../../07-DataParsing/01-remote-data-access)
+* learn more about [Remote Data Access in section 7: Data Acquisition](../../07-DataParsing/01-FILE-ACCESS/01-remote-data-access)
 
 * [Software Available on HPC](../04-SOFTWARE/01-software-available-on-HPC)
 * [Introduction to Job Scheduling](../05-JOB-QUEUE/00-introduction-to-job-scheduling)
