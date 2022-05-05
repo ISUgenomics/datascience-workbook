@@ -177,16 +177,16 @@ I like [SourceTree](https://www.sourcetreeapp.com/).
 
 ___
 # Further Reading
-* [Introduction to BitBucket](02B-intro-to-bitbucket)
-* [Introduction to ZenHub](02C-intro-to-zenhub)
+* [Introduction to BitBucket](03-intro-to-bitbucket)
+* [Introduction to ZenHub](04-intro-to-zenhub)
 
-* [Documentation Improvement Tools](03-documentation-improvement-tools)
-* [Team Communication Tools](04-team-communication-tools)
+* [Documentation Improvement Tools](../02-DOCUMENTATION/01-documentation-improvement-tools)
+* [Team Communication Tools](../03-COMMUNICATION/01-team-communication-tools)
 
 
 ___
 
-[Homepage](../index.md){: .btn  .btn--primary}
-[Section Index](00-ProjectManagement-LandingPage){: .btn  .btn--primary}
-[Previous](02-project-mamangement-tools){: .btn  .btn--primary}
-[Next](02B-intro-to-bitbucket){: .btn  .btn--primary}
+[Homepage](../../index.md){: .btn  .btn--primary}
+[Section Index](../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
+[Previous](01-code-mamangement-tools){: .btn  .btn--primary}
+[Next](03-intro-to-bitbucket){: .btn  .btn--primary}

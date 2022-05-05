@@ -45,12 +45,12 @@ Here are some of the top reason for using Markdown besides its format interchang
 
 ___
 # Further Reading
-* [Team Communication Tools](04-team-communication-tools)
+* [Team Communication Tools](../03-COMMUNICATION/01-team-communication-tools)
 
 
 ___
 
-[Homepage](../index.md){: .btn  .btn--primary}
-[Section Index](00-ProjectManagement-LandingPage){: .btn  .btn--primary}
-[Previous](03-documentation-improvement-tools){: .btn  .btn--primary}
-[Next](04-team-communication-tools){: .btn  .btn--primary}
+[Homepage](../../index.md){: .btn  .btn--primary}
+[Section Index](../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
+[Previous](01-documentation-improvement-tools){: .btn  .btn--primary}
+[Next](../03-COMMUNICATION/01-team-communication-tools){: .btn  .btn--primary}

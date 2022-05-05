@@ -77,7 +77,7 @@ ___
 
 ___
 
-[Homepage](../index.md){: .btn  .btn--primary}
-[Section Index](00-ProjectManagement-LandingPage){: .btn  .btn--primary}
-[Previous](04-team-communication-tools){: .btn  .btn--primary}
+[Homepage](../../index.md){: .btn  .btn--primary}
+[Section Index](../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
+[Previous](01-team-communication-tools){: .btn  .btn--primary}
 <!-- [Next](){: .btn  .btn--primary} -->

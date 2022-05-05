@@ -327,12 +327,12 @@ Here is an example of a [google sheet](https://docs.google.com/spreadsheets/d/1L
 
 ___
 # Further Reading
-* [Project Management Tools](02-project-mamangement-tools)
-* [Documentation Improvement Tools](03-documentation-improvement-tools)
-* [Team Communication Tools](04-team-communication-tools)
+* [Project Management Tools](01-SOURCE-CODE/01-code-mamangement-tools)
+* [Documentation Improvement Tools](02-DOCUMENTATION/01-documentation-improvement-tools)
+* [Team Communication Tools](03-COMMUNICATION/01-team-communication-tools)
 
 ___
 
 [Homepage](../index.md){: .btn  .btn--primary}
 [Section Index](00-ProjectManagement-LandingPage){: .btn  .btn--primary}
-[Next](02-project-mamangement-tools){: .btn  .btn--primary}
+[Next](01-SOURCE-CODE/01-code-mamangement-tools){: .btn  .btn--primary}
