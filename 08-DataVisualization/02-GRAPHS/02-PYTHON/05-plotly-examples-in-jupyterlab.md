@@ -71,13 +71,13 @@ or
 
 This will open a browser on a **localhost** to the URL of your Notebooks, by default [http://127.0.0.1:8888](http://127.0.0.1:8888).
 
-![Jupyter_files_menager](assets/images/files_menager.png)
+![Jupyter_files_menager](../../assets/images/files_menager.png)
 
 Browse file system to enter your workdir. Then, in the top right corner, click on `New` and select *`Python 3 (ipykernel)`* option.
 
 This will open an interactive notebook in a new tab in your browser where you can execute your first Python code.
 
-![Jupyter_first_notebok](assets/images/first_notebook.png)
+![Jupyter_first_notebok](../../assets/images/first_notebook.png)
 
 The detailed tutorial of using Plotly Graphing Library via Jupyter notebook you can explore [here](https://plotly.com/python/ipython-notebook-tutorial/). Below, you can learn basics, which allow you to run and customize with a success all pre-implemented examples available in the repository.
 

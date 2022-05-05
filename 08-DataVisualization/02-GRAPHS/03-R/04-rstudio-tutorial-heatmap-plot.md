@@ -114,7 +114,7 @@ scaleyellowred <- colorRampPalette(c("lightyellow", "red"), space = "rgb")(100)
 heatmap(as.matrix(data.prop), Rowv = NA, Colv = NA, col = scaleyellowred, margins = c(10, 2))
 ```
 
-![](assets/images/rvizheat_heatmap-1.png)
+![](../../assets/images/rvizheat_heatmap-1.png)
 
 Add clustering.
 
@@ -136,7 +136,7 @@ p <- heatmap(as.matrix(data.prop),
    main = "Title", pch=10)
 ```
 
-![](assets/images/rvizheat_heatmapclust-1.png)
+![](../../assets/images/rvizheat_heatmapclust-1.png)
 
 The image is stored as plot `p` and can be saved as a scalabe vector.
 

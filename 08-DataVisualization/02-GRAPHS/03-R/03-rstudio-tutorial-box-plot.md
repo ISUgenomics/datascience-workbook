@@ -193,7 +193,7 @@ For getting a simple boxplot, you can use the following command:
 ggplot(input, aes(x = Organism, y = length)) + geom_boxplot()
 ```
 
-![](assets/images/rvizbox_first_plot-1.png)<!-- -->
+![](../../assets/images/rvizbox_first_plot-1.png)<!-- -->
 
 <!--![image](assets/first_plot.png)-->
 
@@ -203,7 +203,7 @@ if you want to color the plots,
 ggplot(input, aes(x = Organism, y = length, fill = Organism)) + geom_boxplot()
 ```
 
-![](assets/images/rvizbox_second_plot-1.png)<!-- -->
+![](../../assets/images/rvizbox_second_plot-1.png)<!-- -->
 <!--![image](assets/second_plot.png)-->
 
 but wait, where are the gene families?
@@ -212,7 +212,7 @@ but wait, where are the gene families?
 ggplot(input, aes(x = Organism, y = length, fill = family)) + geom_boxplot()
 ```
 
-![](assets/images/rvizbox_third_plot-1.png)<!-- -->
+![](../../assets/images/rvizbox_third_plot-1.png)<!-- -->
 
 <!--![image](assets/third_plot.png)-->
 
@@ -224,7 +224,7 @@ ggplot(input, aes(x = Organism, y = length, fill = family)) +
    theme(axis.text.x = element_text(angle = 45, hjust=1))
 ```
 
-![](assets/images/rvizbox_fourth_plot-1.png)<!-- -->
+![](../../assets/images/rvizbox_fourth_plot-1.png)<!-- -->
 <!--![image](assets/fourth_plot.png)-->
 
 Well, it seems like it is difficult to compare as all gene families are
@@ -294,7 +294,7 @@ ggplot(input, aes(x = Organism, y = length, fill = Organism)) +
    facet_grid( family ~.)          # <= facet allows plots to be split by group
 ```
 
-![](assets/images/rvizbox_fifthA-1.png)<!-- -->
+![](../../assets/images/rvizbox_fifthA-1.png)<!-- -->
 
 <!--![image](assets/fifthA.png)-->
 
@@ -307,7 +307,7 @@ ggplot(input, aes(x = Organism, y = length, fill = Organism)) +
    facet_grid( . ~ family)          # <= swap the dot and family to arrange horizontally
 ```
 
-![](assets/images/rvizbox_fifthB-1.png)<!-- -->
+![](../../assets/images/rvizbox_fifthB-1.png)<!-- -->
 
 <!--
 ```python
@@ -349,7 +349,7 @@ ggplot(input, aes(x = Organism, y = length, fill = family, color = family)) +
    scale_color_manual(values = fam_palette2)
 ```
 
-![](assets/images/rvizbox_sixth-1.png)<!-- -->
+![](../../assets/images/rvizbox_sixth-1.png)<!-- -->
 
 <!--
 
