@@ -69,12 +69,12 @@ You should now have the complete table with both functions and gene names, now!
 
 ___
 # Further Reading
-* [Manipulating Text Files with Python](02B-0-manipulate-data-with-python)
+* [Manipulating Text Files with Python](../02-PYTHON/01-manipulate-data-with-python)
 
 
 ___
 
-[Homepage](../index.md){: .btn  .btn--primary}
-[Section Index](00-DataParsing-LandingPage){: .btn  .btn--primary}
-[Previous](02A-3-tutorial-create-index-for-all-worksheets){: .btn  .btn--primary}
-[Next](02B-0-manipulate-data-with-python){: .btn  .btn--primary}
+[Homepage](../../../index.md){: .btn  .btn--primary}
+[Section Index](../../00-DataParsing-LandingPage){: .btn  .btn--primary}
+[Previous](04-tutorial-create-index-for-all-worksheets){: .btn  .btn--primary}
+[Next](../02-PYTHON/01-manipulate-data-with-python){: .btn  .btn--primary}

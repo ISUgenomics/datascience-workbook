@@ -49,14 +49,14 @@ If you don't have this program installed, you can try the ```firefox``` method. 
 
 ___
 # Further Reading
-* [Tutorial: Mounting Remote Folder on Local Machine](01B-3-tutorial-mount-remote-folder)
+* [Tutorial: Mounting Remote Folder on Local Machine](03-3-tutorial-mount-remote-folder)
 
-* [Data Manipulation](02-data-manipulation)
+* [Data Manipulation](../02-DATA-MANIPULATION/01-data-manipulation)
 
 
 ___
 
-[Homepage](../index.md){: .btn  .btn--primary}
-[Section Index](00-DataParsing-LandingPage){: .btn  .btn--primary}
-[Previous](01B-1-tutorial-view-text-files-unix){: .btn  .btn--primary}
-[Next](01B-3-tutorial-mount-remote-folder){: .btn  .btn--primary}
+[Homepage](../../index.md){: .btn  .btn--primary}
+[Section Index](../00-DataParsing-LandingPage){: .btn  .btn--primary}
+[Previous](03-1-tutorial-view-text-files-unix){: .btn  .btn--primary}
+[Next](03-3-tutorial-mount-remote-folder){: .btn  .btn--primary}

@@ -36,15 +36,15 @@ The text files are the easiest. You can use any of the standard UNIX commands to
 
 ___
 # Further Reading
-* [Tutorial: Viewing PDF Files using X11 SSH connection](01B-2-tutorial-view-pdf-files-x11)
-* [Tutorial: Mounting Remote Folder on Local Machine](01B-3-tutorial-mount-remote-folder)
+* [Tutorial: Viewing PDF Files using X11 SSH connection](03-2-tutorial-view-pdf-files-x11)
+* [Tutorial: Mounting Remote Folder on Local Machine](03-3-tutorial-mount-remote-folder)
 
-* [Data Manipulation](02-data-manipulation)
+* [Data Manipulation](../02-DATA-MANIPULATION/01-data-manipulation)
 
 
 ___
 
-[Homepage](../index.md){: .btn  .btn--primary}
-[Section Index](00-DataParsing-LandingPage){: .btn  .btn--primary}
-[Previous](01B-0-remote-data-preview){: .btn  .btn--primary}
-[Next](01B-2-tutorial-view-pdf-files-x11){: .btn  .btn--primary}
+[Homepage](../../index.md){: .btn  .btn--primary}
+[Section Index](../00-DataParsing-LandingPage){: .btn  .btn--primary}
+[Previous](03-0-remote-data-preview){: .btn  .btn--primary}
+[Next](03-2-tutorial-view-pdf-files-x11){: .btn  .btn--primary}
