@@ -13,13 +13,13 @@ With some knowledge of scripting and algorithm design, you can easily encapsulat
 
 ## <span style="color: #8997c1;">Table of contents</span>
 
-### **<a href="01-basics-of-algorithm-structure" style="color: #24376b;">1. Basics of Algorithm Structure</a>**
+### **<a href="01-ALGORITHM/01-basics-of-algorithm-structure" style="color: #24376b;">1. Basics of Algorithm Structure</a>**
 
-### **<a href="02-introduction-to-bash-scripting" style="color: #24376b;">2. Introduction to Bash Scripting</a>**
+### **<a href="02-BASH/01-introduction-to-bash-scripting" style="color: #24376b;">2. Introduction to Bash Scripting</a>**
 
-### **<a href="03-introduction-to-python" style="color: #24376b;">3. Introduction to Python programming</a>**
+### **<a href="03-PYTHON/01-introduction-to-python" style="color: #24376b;">3. Introduction to Python programming</a>**
 
-### **<a href="04-introduction-to-R" style="color: #24376b;">4. Introduction to R programming</a>**
+### **<a href="04-R/01-introduction-to-R" style="color: #24376b;">4. Introduction to R programming</a>**
 
 
 ---
