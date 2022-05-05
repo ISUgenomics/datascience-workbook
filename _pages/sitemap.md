@@ -63,10 +63,10 @@ header:
 <br><br>
 
 # <a href="05-IntroToProgramming/00-IntroToProgramming-LandingPage" style="color: #8997c1;">05. Introduction to Programming</a>
-* **<a href="05-IntroToProgramming/01-basics-of-algorithm-structure" style="color: #24376b;">Basics of Algorithm Structure</a>**
-* **<a href="05-IntroToProgramming/02-introduction-to-bash-scripting" style="color: #24376b;">Introduction to Bash Scripting</a>**
-* **<a href="05-IntroToProgramming/03-introduction-to-python" style="color: #24376b;">Introduction to Python programming</a>**
-* **<a href="05-IntroToProgramming/04-introduction-to-R" style="color: #24376b;">Introduction to R programming</a>**
+* **<a href="05-IntroToProgramming/01-ALGORITHM/01-basics-of-algorithm-structure" style="color: #24376b;">Basics of Algorithm Structure</a>**
+* **<a href="05-IntroToProgramming/02-BASH/01-introduction-to-bash-scripting" style="color: #24376b;">Introduction to Bash Scripting</a>**
+* **<a href="05-IntroToProgramming/03-PYTHON/01-introduction-to-python" style="color: #24376b;">Introduction to Python programming</a>**
+* **<a href="05-IntroToProgramming/04-R/01-introduction-to-R" style="color: #24376b;">Introduction to R programming</a>**
 <br><br>
 
 # <a href="06-IntroToHPC/00-IntroToHPC-LandingPage" style="color: #8997c1;">06. High-Performance Computing (HPC)</a>
@@ -107,67 +107,69 @@ header:
 <br><br>
 
 # <a href="07-DataParsing/00-DataParsing-LandingPage" style="color: #8997c1;">07. Data Acquisition and Wrangling</a>
-* **<a href="07-DataParsing/01-remote-data-access" style="color: #24376b;">Remote Data Access</a>**
-  * <a href="07-DataParsing/01A-0-remote-data-transfer" style="color: #3f5a8a;">Remote Data Transfer</a>
-    * <a href="07-DataParsing/01A-1-tutorial-copy-ssh" style="color: #3f5a8a;">Tutorial: Copying Data using SSH</a>
-    * <a href="07-DataParsing/01A-2-tutorial-copy-globus" style="color: #3f5a8a;">Tutorial: Copying Data using Globus</a>
-    * <a href="07-DataParsing/01A-3-tutorial-transfer-irods" style="color: #3f5a8a;">Tutorial: File Transfer using irods</a>
-    * <a href="07-DataParsing/01A-4-tutorial-transfer-sra" style="color: #3f5a8a;">Tutorial: File Transfer using SRA Toolkit</a>
-    * <a href="07-DataParsing/01A-5-tutorial-download-wget" style="color: #3f5a8a;">Tutorial: Downloading Online Data using WGET</a>
-    * <a href="07-DataParsing/01A-6-tutorial-download-web-scraping" style="color: #3f5a8a;">Tutorial: Downloading Online Data using Web Scraping</a>
-    * <a href="07-DataParsing/01A-7-tutorial-download-github-repos-git" style="color: #3f5a8a;">Tutorial: Downloading Online GitHub Repos using GIT</a>
-    * <a href="07-DataParsing/01A-8-tutorial-download-github-folders-svn" style="color: #3f5a8a;">Tutorial: Downloading Online GitHub Folders using SVN</a>
-  * <a href="07-DataParsing/01B-0-remote-data-preview" style="color: #3f5a8a;">Remote Data Preview without Downloading</a>
-    * <a href="07-DataParsing/01B-1-tutorial-view-text-files-unix" style="color: #3f5a8a;">Tutorial: Viewing Text Files using UNIX commands</a>
-    * <a href="07-DataParsing/01B-2-tutorial-view-pdf-files-x11" style="color: #3f5a8a;">Tutorial: Viewing PDF Files using X11 SSH connection</a>
-    * <a href="07-DataParsing/01B-3-tutorial-mount-remote-folder" style="color: #3f5a8a;">Tutorial: Mounting Remote Folder on Local Machine</a>
-* **<a href="07-DataParsing/02-data-manipulation" style="color: #24376b;">Data Manipulation</a>**
-  * <a href="07-DataParsing/02A-0-manipulate-excel-sheets" style="color: #3f5a8a;">Manipulating Excel Data Sheets</a>
-    * <a href="07-DataParsing/02A-1-tutorial-create-workbook-from-multiple-files" style="color: #3f5a8a;">Create Workbook from Multiple Text Files</a>
-    * <a href="07-DataParsing/02A-2-tutorial-export-multiple-worksheets" style="color: #3f5a8a;">Export Multiple Worksheets as Separate Text Files</a>
-    * <a href="07-DataParsing/02A-3-tutorial-create-index-for-all-worksheets" style="color: #3f5a8a;">Create Index for All Worksheets</a>
-    * <a href="07-DataParsing/02A-4-tutorial-merge-spreadsheets-by-column" style="color: #3f5a8a;">Merge Two Spreadsheets using a Common Column</a>
-  * <a href="07-DataParsing/02B-0-manipulate-data-with-python" style="color: #3f5a8a;">Manipulating Text Files with Python</a>
-    * <a href="07-DataParsing/02B-1-tutorial-read-write-split-select-data" style="color: #3f5a8a;">Tutorial: Read, Write, Split, Select Data</a>
-    * <a href="07-DataParsing/02B-2-tutorial-python-manage-data-json-string" style="color: #3f5a8a;">Tutorial: JSON Module - Encoding & Decoding JSON Data</a>
-    * <a href="07-DataParsing/02B-3-tutorial-python-round-abs-data-math-module" style="color: #3f5a8a;">Tutorial: Math Module - Various Mathematical Functions</a>
-    * <a href="07-DataParsing/02B-4-tutorial-python-data-manipulation-pandas" style="color: #3f5a8a;">Tutorial: Pandas Library - Data Structure Manipulation Tool</a>
-    * <a href="07-DataParsing/02B-5-tutorial-python-array-manipulation-numpy" style="color: #3f5a8a;">Tutorial: Numpy Library - Multi-Dimensional Arrays Parser</a>
-    * <a href="07-DataParsing/02B-6-tutorial-python-apply-statistics-scipy" style="color: #3f5a8a;">Tutorial: SciPy Library - Algorithms for Scientific Computing</a>
+* **<a href="07-DataParsing/01-FILE-ACCESS/01-remote-data-access" style="color: #24376b;">Remote Data Access</a>**
+  * <a href="07-DataParsing/01-FILE-ACCESS/02-0-remote-data-transfer" style="color: #3f5a8a;">Remote Data Transfer</a>
+    * <a href="07-DataParsing/01-FILE-ACCESS/02-1-tutorial-copy-ssh" style="color: #3f5a8a;">Tutorial: Copying Data using SSH</a>
+    * <a href="07-DataParsing/01-FILE-ACCESS/02-2-tutorial-copy-globus" style="color: #3f5a8a;">Tutorial: Copying Data using Globus</a>
+    * <a href="07-DataParsing/01-FILE-ACCESS/02-3-tutorial-transfer-irods" style="color: #3f5a8a;">Tutorial: File Transfer using irods</a>
+    * <a href="07-DataParsing/01-FILE-ACCESS/02-4-tutorial-transfer-sra" style="color: #3f5a8a;">Tutorial: File Transfer using SRA Toolkit</a>
+    * <a href="07-DataParsing/01-FILE-ACCESS/02-5-tutorial-download-wget" style="color: #3f5a8a;">Tutorial: Downloading Online Data using WGET</a>
+    * <a href="07-DataParsing/01-FILE-ACCESS/02-6-tutorial-download-web-scraping" style="color: #3f5a8a;">Tutorial: Downloading Online Data using Web Scraping</a>
+    * <a href="07-DataParsing/01-FILE-ACCESS/02-7-tutorial-download-github-repos-git" style="color: #3f5a8a;">Tutorial: Downloading Online GitHub Repos using GIT</a>
+    * <a href="07-DataParsing/01-FILE-ACCESS/02-8-tutorial-download-github-folders-svn" style="color: #3f5a8a;">Tutorial: Downloading Online GitHub Folders using SVN</a>
+  * <a href="07-DataParsing/01-FILE-ACCESS/03-0-remote-data-preview" style="color: #3f5a8a;">Remote Data Preview without Downloading</a>
+    * <a href="07-DataParsing/01-FILE-ACCESS/03-1-tutorial-view-text-files-unix" style="color: #3f5a8a;">Tutorial: Viewing Text Files using UNIX commands</a>
+    * <a href="07-DataParsing/01-FILE-ACCESS/03-2-tutorial-view-pdf-files-x11" style="color: #3f5a8a;">Tutorial: Viewing PDF Files using X11 SSH connection</a>
+    * <a href="07-DataParsing/01-FILE-ACCESS/03-3-tutorial-mount-remote-folder" style="color: #3f5a8a;">Tutorial: Mounting Remote Folder on Local Machine</a>
+* **<a href="07-DataParsing/02-DATA-MANIPULATION/01-data-manipulation" style="color: #24376b;">Data Manipulation</a>**
+  * <a href="07-DataParsing/02-DATA-MANIPULATION/01-EXCEL/01-manipulate-excel-sheets" style="color: #3f5a8a;">Manipulating Excel Data Sheets</a>
+    * <a href="07-DataParsing/02-DATA-MANIPULATION/01-EXCEL/02-tutorial-create-workbook-from-multiple-files" style="color: #3f5a8a;">Create Workbook from Multiple Text Files</a>
+    * <a href="07-DataParsing/02-DATA-MANIPULATION/01-EXCEL/03-tutorial-export-multiple-worksheets" style="color: #3f5a8a;">Export Multiple Worksheets as Separate Text Files</a>
+    * <a href="07-DataParsing/02-DATA-MANIPULATION/01-EXCEL/04-tutorial-create-index-for-all-worksheets" style="color: #3f5a8a;">Create Index for All Worksheets</a>
+    * <a href="07-DataParsing/02-DATA-MANIPULATION/01-EXCEL/05-tutorial-merge-spreadsheets-by-column" style="color: #3f5a8a;">Merge Two Spreadsheets using a Common Column</a>
+  * <a href="07-DataParsing/02-DATA-MANIPULATION/02-PYTHON/01-manipulate-data-with-python" style="color: #3f5a8a;">Manipulating Text Files with Python</a>
+    * <a href="07-DataParsing/02-DATA-MANIPULATION/02-PYTHON/02-tutorial-read-write-split-select-data" style="color: #3f5a8a;">Tutorial: Read, Write, Split, Select Data</a>
+    * <a href="07-DataParsing/02-DATA-MANIPULATION/02-PYTHON/03-tutorial-python-manage-data-json-string" style="color: #3f5a8a;">Tutorial: JSON Module - Encoding & Decoding JSON Data</a>
+    * <a href="07-DataParsing/02-DATA-MANIPULATION/02-PYTHON/04-tutorial-python-round-abs-data-math-module" style="color: #3f5a8a;">Tutorial: Math Module - Various Mathematical Functions</a>
+    * <a href="07-DataParsing/02-DATA-MANIPULATION/02-PYTHON/05-tutorial-python-data-manipulation-pandas" style="color: #3f5a8a;">Tutorial: Pandas Library - Data Structure Manipulation Tool</a>
+    * <a href="07-DataParsing/02-DATA-MANIPULATION/02-PYTHON/06-tutorial-python-array-manipulation-numpy" style="color: #3f5a8a;">Tutorial: Numpy Library - Multi-Dimensional Arrays Parser</a>
+    * <a href="07-DataParsing/02-DATA-MANIPULATION/02-PYTHON/07-tutorial-python-apply-statistics-scipy" style="color: #3f5a8a;">Tutorial: SciPy Library - Algorithms for Scientific Computing</a>
 <br><br>
 
 # <a href="08-DataVisualization/00-DataVisualization-LandingPage" style="color: #8997c1;">08. Data Visualization</a>
-* **<a href="08-DataVisualization/01-scientific-graphic-design-intro" style="color: #24376b;">Introduction to Scientific Graphic Design</a>**
-  * <a href="08-DataVisualization/01A-raster-graphics-tools" style="color: #3f5a8a;">Raster Graphics Tools</a>
-  * <a href="08-DataVisualization/01B-vector-graphics-tools" style="color: #3f5a8a;">Vector Graphics Tools</a>
-  * <a href="08-DataVisualization/01C-adobe-creative-cloud" style="color: #3f5a8a;">Adobe Creative Cloud</a>
-  * <a href="08-DataVisualization/01D-template-based-web-tools" style="color: #3f5a8a;">Template-based Web Tools</a>
-* **<a href="08-DataVisualization/02-introduction-to-scientific-graphing" style="color: #24376b;">Introduction to Scientific Graphing</a>**
-  * <a href="08-DataVisualization/02A-0-gnuplot-basics" style="color: #3f5a8a;">Gnuplot: Creating Plots in the UNIX Shell</a>
-  * <a href="08-DataVisualization/02B-0-interactive-graphing-with-python" style="color: #3f5a8a;">Plotly-Dash: Data Processing & Interactive Plotting with Python</a>
-    * <a href="08-DataVisualization/02B-1-intro-to-plotly-graphs" style="color: #3f5a8a;">Introduction to Plotly (Python library)</a>
-    * <a href="08-DataVisualization/02B-2-intro-to-dash-widgets" style="color: #3f5a8a;">Introduction to Dash (Python library)</a>
-    * <a href="08-DataVisualization/02B-3-plotly-examples-as-local-server" style="color: #3f5a8a;">Interactive Graphing – Local Server with Web-Based Interface</a>
-    * <a href="08-DataVisualization/02B-3-plotly-examples-in-jupyterlab" style="color: #3f5a8a;">Plotly Graphing - Interactive Examples in the JupyterLab</a>
-      * <a href="08-DataVisualization/02B-4-plotly-tutorial-scatter-plot" style="color: #3f5a8a;">Tutorial: Creating XY Scatter Plot</a>
-      * <a href="08-DataVisualization/02B-5-plotly-tutorial-volcano-plot" style="color: #3f5a8a;">Tutorial: Creating 1D Volcano Plot</a>
-      * <a href="08-DataVisualization/02B-6-plotly-tutorial-heatmap-plot" style="color: #3f5a8a;">Tutorial: Creating Heatmap</a>
-      * <a href="08-DataVisualization/02B-7-plotly-tutorial-dendrogram-plot" style="color: #3f5a8a;">Tutorial: Creating Dendrogram</a>
-      * <a href="08-DataVisualization/02B-8-plotly-tutorial-clustergram-plot" style="color: #3f5a8a;">Tutorial: Creating Clustergram (Heatmap with Dendrograms)</a>
+* **<a href="08-DataVisualization/01-IMAGES/01-scientific-graphic-design-intro" style="color: #24376b;">Introduction to Scientific Graphic Design</a>**
+  * <a href="08-DataVisualization/01-IMAGES/02-raster-graphics-tools" style="color: #3f5a8a;">Raster Graphics Tools</a>
+  * <a href="08-DataVisualization/01-IMAGES/03-vector-graphics-tools" style="color: #3f5a8a;">Vector Graphics Tools</a>
+  * <a href="08-DataVisualization/01-IMAGES/04-adobe-creative-cloud" style="color: #3f5a8a;">Adobe Creative Cloud</a>
+  * <a href="08-DataVisualization/01-IMAGES/05-template-based-web-tools" style="color: #3f5a8a;">Template-based Web Tools</a>
 
-  * <a href="08-DataVisualization/02C-0-graphing-with-rstudio" style="color: #3f5a8a;">RStudio: Data Processing & Plotting with R</a>
-    * <a href="08-DataVisualization/02C-1-setting-up-rstudio" style="color: #3f5a8a;">Setting Up an RStudio Environment</a>
-    * <a href="08-DataVisualization/02C-2-rstudio-tutorial-box-plot" style="color: #3f5a8a;">Tutorial: Creating Boxplots in R</a>
-    * <a href="08-DataVisualization/02C-3-rstudio-tutorial-heatmap-plot" style="color: #3f5a8a;">Tutorial: Creating Heatmaps in R</a>
+* **<a href="08-DataVisualization/02-GRAPHS/01-introduction-to-scientific-graphing" style="color: #24376b;">Introduction to Scientific Graphing</a>**
+  * <a href="08-DataVisualization/02-GRAPHS/01-GNUPLOT/01-gnuplot-basics" style="color: #3f5a8a;">Gnuplot: Creating Plots in the UNIX Shell</a>
+  * <a href="08-DataVisualization/02-GRAPHS/02-PYTHON/01-interactive-graphing-with-python" style="color: #3f5a8a;">Plotly-Dash: Data Processing & Interactive Plotting with Python</a>
+    * <a href="08-DataVisualization/02-GRAPHS/02-PYTHON/02-intro-to-plotly-graphs" style="color: #3f5a8a;">Introduction to Plotly (Python library)</a>
+    * <a href="08-DataVisualization/02-GRAPHS/02-PYTHON/03-intro-to-dash-widgets" style="color: #3f5a8a;">Introduction to Dash (Python library)</a>
+    * <a href="08-DataVisualization/02-GRAPHS/02-PYTHON/04-plotly-examples-as-local-server" style="color: #3f5a8a;">Interactive Graphing – Local Server with Web-Based Interface</a>
+    * <a href="08-DataVisualization/02-GRAPHS/02-PYTHON/05-plotly-examples-in-jupyterlab" style="color: #3f5a8a;">Plotly Graphing - Interactive Examples in the JupyterLab</a>
+      * <a href="08-DataVisualization/02-GRAPHS/02-PYTHON/06-plotly-tutorial-scatter-plot" style="color: #3f5a8a;">Tutorial: Creating XY Scatter Plot</a>
+      * <a href="08-DataVisualization/02-GRAPHS/02-PYTHON/07-plotly-tutorial-volcano-plot" style="color: #3f5a8a;">Tutorial: Creating 1D Volcano Plot</a>
+      * <a href="08-DataVisualization/02-GRAPHS/02-PYTHON/08-plotly-tutorial-heatmap-plot" style="color: #3f5a8a;">Tutorial: Creating Heatmap</a>
+      * <a href="08-DataVisualization/02-GRAPHS/02-PYTHON/09-plotly-tutorial-dendrogram-plot" style="color: #3f5a8a;">Tutorial: Creating Dendrogram</a>
+      * <a href="08-DataVisualization/02-GRAPHS/02-PYTHON/10-plotly-tutorial-clustergram-plot" style="color: #3f5a8a;">Tutorial: Creating Clustergram (Heatmap with Dendrograms)</a>
+
+  * <a href="08-DataVisualization/02-GRAPHS/03-R/01-graphing-with-rstudio" style="color: #3f5a8a;">RStudio: Data Processing & Plotting with R</a>
+    * <a href="08-DataVisualization/02-GRAPHS/03-R/02-setting-up-rstudio" style="color: #3f5a8a;">Setting Up an RStudio Environment</a>
+    * <a href="08-DataVisualization/02-GRAPHS/03-R/03-rstudio-tutorial-box-plot" style="color: #3f5a8a;">Tutorial: Creating Boxplots in R</a>
+    * <a href="08-DataVisualization/02-GRAPHS/03-R/04-rstudio-tutorial-heatmap-plot" style="color: #3f5a8a;">Tutorial: Creating Heatmaps in R</a>
 <br><br>
 
 # <a href="09-ProjectManagement/00-ProjectManagement-LandingPage" style="color: #8997c1;">09. Project Management</a>
 * **<a href="09-ProjectManagement/01-intro-to-project-management" style="color: #24376b;">Introduction to Project Management</a>**
-* **<a href="09-ProjectManagement/02-project-mamangement-tools" style="color: #24376b;">Project Management Tools</a>**
-  * <a href="09-ProjectManagement/02A-intro-to-github" style="color: #3f5a8a;">Introduction to GitHub</a>
-  * <a href="09-ProjectManagement/02B-intro-to-bitbucket" style="color: #3f5a8a;">Introduction to BitBucket</a>
-  * <a href="09-ProjectManagement/02C-intro-to-zenhub" style="color: #3f5a8a;">Introduction to ZenHub</a>
-* **<a href="09-ProjectManagement/03-documentation-improvement-tools" style="color: #24376b;">Documentation Improvement Tools</a>**
-  * <a href="09-ProjectManagement/03A-intro-to-markdown" style="color: #3f5a8a;">Introduction to Markdown</a>
-* **<a href="09-ProjectManagement/04-team-communication-tools" style="color: #24376b;">Team Communication Tools</a>**
-  * <a href="09-ProjectManagement/04A-intro-to-slack" style="color: #3f5a8a;">Introduction to Slack</a>
+
+* **<a href="09-ProjectManagement/01-SOURCE-CODE/01-code-mamangement-tools" style="color: #24376b;">Project Management Tools</a>**
+  * <a href="09-ProjectManagement/01-SOURCE-CODE/02-intro-to-github" style="color: #3f5a8a;">Introduction to GitHub</a>
+  * <a href="09-ProjectManagement/01-SOURCE-CODE/03-intro-to-bitbucket" style="color: #3f5a8a;">Introduction to BitBucket</a>
+  * <a href="09-ProjectManagement/01-SOURCE-CODE/04-intro-to-zenhub" style="color: #3f5a8a;">Introduction to ZenHub</a>
+* **<a href="09-ProjectManagement/02-DOCUMENTATION/01-documentation-improvement-tools" style="color: #24376b;">Documentation Improvement Tools</a>**
+  * <a href="09-ProjectManagement/02-DOCUMENTATION/02-intro-to-markdown" style="color: #3f5a8a;">Introduction to Markdown</a>
+* **<a href="09-ProjectManagement/03-COMMUNICATION/01-team-communication-tools" style="color: #24376b;">Team Communication Tools</a>**
+  * <a href="09-ProjectManagement/03-COMMUNICATION/02-intro-to-slack" style="color: #3f5a8a;">Introduction to Slack</a>
