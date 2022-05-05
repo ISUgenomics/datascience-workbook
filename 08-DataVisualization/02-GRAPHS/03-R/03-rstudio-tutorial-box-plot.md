@@ -371,12 +371,12 @@ p4 <- p3 + geom_boxplot(data = fam4, colour = lines4, fill = fill4)
 
 ___
 # Further Reading
-* [Tutorial: Creating Heatmaps in R](02C-3-rstudio-tutorial-heatmap-plot)
+* [Tutorial: Creating Heatmaps in R](04-rstudio-tutorial-heatmap-plot)
 
 
 ___
 
-[Homepage](../index.md){: .btn  .btn--primary}
-[Section Index](00-DataVisualization-LandingPage){: .btn  .btn--primary}
-[Previous](02C-1-setting-up-rstudio){: .btn  .btn--primary}
-[Next](02C-3-rstudio-tutorial-heatmap-plot){: .btn  .btn--primary}
+[Homepage](../../../index.md){: .btn  .btn--primary}
+[Section Index](../../00-DataVisualization-LandingPage){: .btn  .btn--primary}
+[Previous](02-setting-up-rstudio){: .btn  .btn--primary}
+[Next](04-rstudio-tutorial-heatmap-plot){: .btn  .btn--primary}

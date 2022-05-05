@@ -174,12 +174,12 @@ above.
 
 ___
 # Further Reading
-* [SECTION 9. Project Management](../09-ProjectManagement/00-ProjectManagement-LandingPage)
+* [SECTION 9. Project Management](../../../09-ProjectManagement/00-ProjectManagement-LandingPage)
 
 
 ___
 
-[Homepage](../index.md){: .btn  .btn--primary}
-[Section Index](00-DataVisualization-LandingPage){: .btn  .btn--primary}
-[Previous](02C-2-rstudio-tutorial-box-plot){: .btn  .btn--primary}
-[Next](../09-ProjectManagement/00-ProjectManagement-LandingPage){: .btn  .btn--primary}
+[Homepage](../../../index.md){: .btn  .btn--primary}
+[Section Index](../../00-DataVisualization-LandingPage){: .btn  .btn--primary}
+[Previous](03-rstudio-tutorial-box-plot){: .btn  .btn--primary}
+[Next](../../../09-ProjectManagement/00-ProjectManagement-LandingPage){: .btn  .btn--primary}
