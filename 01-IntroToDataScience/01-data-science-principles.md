@@ -31,7 +31,7 @@ Learn more from:<br>
 A spreadsheet is a digital and much more advanced analog of the old paper accounting worksheets. It has a tabular form composed of the (usually) 2-dimensional grid of editable cells indexed by row number and column name. The cells store numerical or text data that can be transformed by various built-in or user-customized functions, filtrated, colored, or visualized on the graphs. Therefore, the computerized spreadsheet provides an all-in-one, organized storage, analysis, and visualization of the data. Typically, the single spreadsheet document can contain multiple named sheets between which certain variables and relations can be transferable. Although spreadsheets are rather single-user and severely limited in the allowed volume of data, they are still vital. The most popular spreadsheets are distributed by Microsoft Excel (multi-platform, including *Windows*), Apple Numbers (*MacOS*), LibreOffice (*Linux*), and Google Sheets (online). The more advanced users can use an option to create macros with VBA code [�](a "Virtual Basic for Applications") that automate the repetitive tasks.
 
 
-Get hands-on training in the **Data Manipulation:** [*Manipulating Excel Data Sheets*](../07-DataParsing/02A-0-manipulate-excel-sheets) section of the Workbook's Chapter [07 - Data Aquisition and Wrangling](../07-DataParsing/00-DataParsing-LandingPage).
+Get hands-on training in the **Data Manipulation:** [*Manipulating Excel Data Sheets*](../07-DataParsing/02-DATA-MANIPULATION/01-EXCEL/01-manipulate-excel-sheets) section of the Workbook's Chapter [07 - Data Aquisition and Wrangling](../07-DataParsing/00-DataParsing-LandingPage).
 
 Learn more from [Wikipedia: spreadsheet](https://en.wikipedia.org/wiki/Spreadsheet).
 
