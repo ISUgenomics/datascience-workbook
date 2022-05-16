@@ -104,7 +104,7 @@ GitHub location: <span style="color: #8997c1;">datascience-workbook/04-Developme
 
 | filename | status | author | original source | items |
 |----|----|-----|----|----|
-|**04_development_envir_banner.png**|created|[Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska)|[Adobe Stock](https://stock.adobe.com/)|[280198220](https://stock.adobe.com/280198220) - [348397404](https://stock.adobe.com/348397404)|
+|**04_development_envir_banner.png**|created|[Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska)|[Adobe Stock](https://stock.adobe.com/)|[280198220](https://stock.adobe.com/280198220) ; [348397404](https://stock.adobe.com/348397404)|
 
 ### <span style="color: #24376b;">Tutorials</span>
 
