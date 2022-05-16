@@ -19,65 +19,31 @@ Due to the source and size, data may have different structures. The technical co
 
 ### 1.1. Structured Data
 
-So, in a nutshell, structured data is **highly organized** in terms of easy digital deciphering rather than human readability. That includes a standardized format, enduring order, and categorization in a well-determined arrangement that facilitates managing and querying datasets in various combinations. Depending on the intent to use the data, the specific relations between elements are revealing.
+In a nutshell, structured data is **highly organized** in terms of easy digital deciphering rather than human readability. That includes a standardized format, enduring order, and categorization in a well-determined arrangement that facilitates managing and querying datasets in various combinations. Depending on the intent to use the data, the specific relations between elements are revealing. Structured data is easily serchable.<br>
+A typical example of an organized data structure is a **spreadsheet** or **database**, generally composed of a data series split into fields and assembled in a pre-defined manner, see table below. Information is categorized by fields that group items by a shared value or defined relation. Examples of well-structured data include transactions in financial systems (customers identities related with their account numbers), online stores (products tagged with the prices), genomic databases (genes linked with the corresponding sequenece), phonebook (names of residents matched with addresses and phone numbers), a hierarchical classification of species of organisms, as well as any data that can be stored in the predefined forms.
 
-A typical example of an organized data structure is a **spreadsheet** or **database**, generally composed of a data series split into fields and assembled in a pre-defined manner.
-
-Learn more from:<br>
-• [Oracle Cloud Learning: database](https://www.oracle.com/database/what-is-database/#relational)<br>
-
-### *Spreadsheet*
-
-A spreadsheet is a digital and much more advanced analog of the old paper accounting worksheets. It has a tabular form composed of the (usually) 2-dimensional grid of editable cells indexed by row number and column name. The cells store numerical or text data that can be transformed by various built-in or user-customized functions, filtrated, colored, or visualized on the graphs. Therefore, the computerized spreadsheet provides an all-in-one, organized storage, analysis, and visualization of the data. Typically, the single spreadsheet document can contain multiple named sheets between which certain variables and relations can be transferable. Although spreadsheets are rather single-user and severely limited in the allowed volume of data, they are still vital. The most popular spreadsheets are distributed by Microsoft Excel (multi-platform, including *Windows*), Apple Numbers (*MacOS*), LibreOffice (*Linux*), and Google Sheets (online). The more advanced users can use an option to create macros with VBA code [�](a "Virtual Basic for Applications") that automate the repetitive tasks.
-
-
-Get hands-on training in the **Data Manipulation:** [*Manipulating Excel Data Sheets*](../07-DataParsing/02-DATA-MANIPULATION/01-EXCEL/01-manipulate-excel-sheets) section of the Workbook's Chapter [07 - Data Aquisition and Wrangling](../07-DataParsing/00-DataParsing-LandingPage).
-
-Learn more from [Wikipedia: spreadsheet](https://en.wikipedia.org/wiki/Spreadsheet).
-
----
-
-### *Navigational Database*
-
-Navigational Databases refre to the very first attempts at organizing digital data in the 60s to 80s of the 20th century. Back then, both the data and computing power were much smaller, so simpler solutions were sufficient and the only possible. The essence of the navigational approach is to use the pre-defined path to access data entry. Practically, this means that the desired record can be found by following references or links from other objects. <br>
-In a **hierarchical database**, a one-to-many relationship is allowed, by analogy to a tree model, where a parent branch propagates to a number of branches at the next level of the structure.
-In a **network database**, a many-to-many relationship is allowed, by analogy to the graph, where nodes are linked directly by the edges that represents the network of relationships in the dataset.
-
-
-<!--
-- inflexible
-- records are processed iterativly, one at a time
-- application code needs to change whenever the data structure changes
--->
-
-Learn more from:<br>
-• [Wikipedia: navigational database](https://en.wikipedia.org/wiki/Spreadsheet)<br>
-• [Wikipedia: hierarchical model](https://en.wikipedia.org/wiki/Spreadsheet)<br>
-• [Wikipedia: network model](https://en.wikipedia.org/wiki/Network_model)<br>
-
----
-
-### *Relational Database*
-The relational databases provide the most efficient way to access the data organized in multidimensional arrays of predefined set of **rows and columns**. The data collected in the columns correspond to some categories, so the single entry in the row can have multiple corresponding values. When two datasets share the same field, it is possible to create a network of relations and derive meaningful insights by rearranging the tables. The Structured Query Language (**SQL**), originated by the IBM in 1970s, is a programmatical approach that enables performing the customized **joining of tables**, logical transformation on columns, **filtering entries**, and creating groupings by the **combination of multiple queries**. Reduced redundancy and flexibility in managing the content and organization of tables are among the pros of relational SQL databases.
-
-Learn more from:<br>
-• [IBM Cloud Education: relational database](https://www.ibm.com/cloud/learn/relational-databases)<br>
-
----
-
-### *NoSQL Database*
-
-key-value pairs
-
----
+|FIELDS:|common name|species|kingdom|region|vegetation|flower color|properties|
+|------|------|------|------|-------|-------|-------|-------|
+|ITEM 1|bitter aloe|Aloe ferox|plantae|South Africa|succulent|red-orange|healing|
+|ITEM 2|ribwort plantain|Plantago lanceolata|plantae|norther globe|perennial|brown|healing|
+|ITEM 3|elderberry|Sambucus nigra|plantae|Europe|shrub|white|healing|
+|ITEM 4|absinthium|Artemisia absinthium|plantae|norther globe|perennial|yellow|healing|
+|ITEM 5|field milk thistle|Sonchus arvensis|plantae|norther globe|perennial|yellow|toxic|
+|ITEM 6|yellow anemone|Anemone ranunculoides|plantae|norther globe|perennial|yellow|toxic|
 
 ### 1.2. Unstructured Data
 
+Unstructured data, as defined by itself, has **no regular structure** that can be easily detected, processed, and categorized by computer algorithms - even though it is easily understood by a human. A good example is the streams of highly varied text contained in emails, social media content, online blogs, newspapers, or books. The **descriptive nature** of this data is clear in meaning to humans, but semantic complexity and context are often a limitation for conventional computer programs. The concept of unstructured data also includes many other formats such as audio and video recording, images and photos, data from various sensors, medical records combining different forms of diagnostics, and annotated web traffic. This type of data seems as far more raw, massive, and descriptive than structured data. It also requires advanced **filtering, pattern searching, and data mining**.<br>
+Since the computer revolution and especially today, this is the dominant type of data generated and processed, which carries a high potential for the extraction and retention of knowledge. Technological innovations in machine learning and artificial intelligence enable efficient analysis of unstructured data opening new opportunities for science, business, and public health. It also brings many conveniences to everyday life in the 21st century.
+
+The following image shows examples of unstructured data, with content referring to items from the table in Section 1.1.
+
+![Data Science](assets/images/unstructured_data_plants.png)
 
 
 ### 1.3. Big Data
 
-
+The **Big Data** term emerged in the [1990s](a "Steve Lohr, The Origins of 'Big Data': An Etymological Detective Story. The New York Times. 28 September 2016.") with the rapid growth of digital data. The first two decades of the 21st century have dynamically ushered us into the Zettabyte Era [�](a "The Zettabyte Era started in the mid-2010s, when the amount of digital data in the world first exceeded a zettabyte, i.e., 10^21 bytes."). Thus, the essence of Big Data focuses on the **size of data**, the volume of which continually expands and becomes a bottleneck on existing computational approaches. You are not wrong guessing that Big Data input is mainly **unstructured data**. So in addition to size, the challenge is the **strong variety and noise** nature of the data, not fitting into the framework of conventional relational databases.
 
 ## 2. Data Lifecycle
 

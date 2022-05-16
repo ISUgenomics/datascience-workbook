@@ -59,7 +59,7 @@ GitHub location: <span style="color: #8997c1;">datascience-workbook/01-IntroToDa
 
 | filename | status | author | original source | items |
 |----|----|-----|----|----|
-| | | | | |
+|**unstructured_data_plants.png**|original|[Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska)| | |
 
 ---
 
