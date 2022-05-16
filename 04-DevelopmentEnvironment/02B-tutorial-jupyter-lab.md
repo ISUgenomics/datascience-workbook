@@ -10,7 +10,9 @@ header:
 
 {% include toc %}
 
-### Start Jupyter via Terminal
+## <span style="color: #ff3870;">New content coming soon!</span>
+
+<!-- ### Start Jupyter via Terminal
 
 `jupyter lab`
 
@@ -28,7 +30,7 @@ This will open an interactive notebook in a new tab in your browser where you ca
 
 ![Jupyter_first_notebok](assets/images/first_notebook.png)
 
-
+-->
 
 
 
