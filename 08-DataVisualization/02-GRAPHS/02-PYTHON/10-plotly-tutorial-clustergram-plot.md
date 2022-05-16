@@ -10,7 +10,7 @@ header:
 
 {% include toc %}
 
-
+## <span style="color: #ff3870;">New content coming soon!</span>
 
 
 
