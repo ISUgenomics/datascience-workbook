@@ -10,6 +10,8 @@ header:
 
 {% include toc %}
 
+## <span style="color: #ff3870;">New content coming soon!</span>
+
 ## Introduction
 
 
@@ -34,6 +36,10 @@ header:
 
 ___
 # Further Reading
+* [XSEDE Supercomputer](01-XSEDE/01-supercomputer-intro)
+* [SCINet Network](02-SCINET/01-scient-network-intro)
+* [ISU HPC](03-ISUHPC/01-isu-hpc-intro)
+
 * [SSH: Secure Shell Connection](../02-SSH/01-secure-shell-connection)
 * [Remote Data Access](../03-FILE-ACCESS/01-remote-data-acces)
 * [Software Available on HPC](../04-SOFTWARE/01-software-available-on-HPC)
@@ -46,4 +52,5 @@ ___
 
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
-[Next](../02-SSH/01-secure-shell-connection){: .btn  .btn--primary}
+[Previous](../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
+[Next](01-XSEDE/01-supercomputer-intro){: .btn  .btn--primary}
