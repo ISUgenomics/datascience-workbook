@@ -10,15 +10,16 @@ header:
 
 {% include toc %}
 
+## <span style="color: #ff3870;">New content coming soon!</span>
 
-## Loops and scripting
+<!-- ## Loops and scripting
 
 for Loop
 while Loop
 if statemets
 incrementing
 decrementing
-etc
+etc -->
 
 
 
