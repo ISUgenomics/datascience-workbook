@@ -59,7 +59,9 @@ GitHub location: <span style="color: #8997c1;">datascience-workbook/01-IntroToDa
 
 | filename | status | author | original source | items |
 |----|----|-----|----|----|
-|**unstructured_data_plants.png**|original|[Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska)| | |
+|**unstructured_data_plants.png**|original|[Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska)| created in Inkscape | - |
+|**data_lifecycle.png**|original|[Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska)| created in Inkscape | - |
+|**data_science.jpeg**|original|-|[Adobe Stock](https://stock.adobe.com/)|[209214808](https://stock.adobe.com/209214808)|
 
 ---
 
