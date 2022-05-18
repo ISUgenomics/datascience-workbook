@@ -13,7 +13,7 @@ feature_row:
     url: "01-IntroToDataScience/00-IntroToDataScience-LandingPage"
     btn_label: "Learn More"
 
-  - title: "02: Command Line Basics"
+  - title: "02: Command Line"
     image_path: /assets/images/command_line_section_gallery.png
     alt: "Introduction to the Command Line"
     url: "02-IntroToCommandLine/00-IntroToCommandLine-LandingPage"
