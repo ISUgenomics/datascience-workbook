@@ -32,4 +32,4 @@ ___
 [Homepage](../../../index.md){: .btn  .btn--primary}
 [Section Index](../../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
 [Previous](03-isu-hpc-nova-cluster){: .btn  .btn--primary}
-[Next](../02-SSH/01-secure-shell-connection){: .btn  .btn--primary}
+[Next](../../02-SSH/01-secure-shell-connection){: .btn  .btn--primary}
