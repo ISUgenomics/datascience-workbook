@@ -20,7 +20,7 @@ title                    : "Data Science Workbook"
 title_separator          : "-"
 name                     : ""
 description              : "Introduction to Data Science informatics"
-url                      : "https://isugenomics.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://data-science.101workbook.org" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "datascience-workbook" # the subpath of your site, e.g. "/blog"
 repository               : "isugenomics/datascience-workbook" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 permalink: none
