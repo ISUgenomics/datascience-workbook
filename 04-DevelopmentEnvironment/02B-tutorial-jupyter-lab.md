@@ -5,7 +5,7 @@ author:
 author_profile: false
 header:
   overlay_color: "444444"
-  overlay_image: /assets/images/pattern.png
+  overlay_image: /04-DevelopmentEnvironment/assets/images/04_development_envir_banner.png
 ---
 
 {% include toc %}

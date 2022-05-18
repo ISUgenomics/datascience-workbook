@@ -5,7 +5,7 @@ author:
 author_profile: false
 header:
   overlay_color: "444444"
-  overlay_image: /assets/images/pattern.png
+  overlay_image: /05-IntroToProgramming/assets/images/05_programming_banner.png
 ---
 
 {% include toc %}

@@ -5,7 +5,7 @@ author:
 author_profile: false
 header:
   overlay_color: "444444"
-  overlay_image: /assets/images/pattern.png
+  overlay_image: /08-DataVisualization/assets/images/08_data_visualization_banner.png
 ---
 
 {% include toc %}

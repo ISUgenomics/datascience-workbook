@@ -6,7 +6,7 @@ author1: Andrew Severin
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /assets/images/pattern.png
+  overlay_image: /06-IntroToHPC/assets/images/06_hpc_banner.png
 ---
 
 {% include toc %}

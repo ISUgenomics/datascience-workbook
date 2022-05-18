@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /assets/images/pattern.png
+  overlay_image: /01-IntroToDataScience/assets/images/01_data_science_banner.png
 ---
 
 {% include toc %}

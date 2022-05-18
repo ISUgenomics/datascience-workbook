@@ -6,7 +6,7 @@ author1:
 author_profile: false
 header:
   overlay_color: "444444"
-  overlay_image: /assets/images/pattern.png
+  overlay_image: /02-IntroToCommandLine/assets/images/02_command_line_banner.png
 ---
 
 

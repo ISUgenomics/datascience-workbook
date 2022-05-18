@@ -5,7 +5,7 @@ author:
 author_profile: false
 header:
   overlay_color: "444444"
-  overlay_image: /assets/images/pattern.png
+  overlay_image: /07-DataParsing/assets/images/07_data_acquisition_banner.png
 ---
 
 {% include toc %}
