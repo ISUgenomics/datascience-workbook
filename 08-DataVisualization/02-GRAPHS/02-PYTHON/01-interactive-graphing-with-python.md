@@ -1,8 +1,8 @@
 ---
 title: "Interactive Plotting with Python"
 layout: single
-author:
-author_profile: false
+author: Aleksandra Badaczewska
+author_profile: true
 header:
   overlay_color: "444444"
   overlay_image: /08-DataVisualization/assets/images/08_data_visualization_banner.png

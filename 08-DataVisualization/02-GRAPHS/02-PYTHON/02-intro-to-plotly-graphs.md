@@ -1,8 +1,8 @@
 ---
 title: "Introduction to Plotly (Python library)"
 layout: single
-author:
-author_profile: false
+author: Aleksandra Badaczewska
+author_profile: true
 header:
   overlay_color: "444444"
   overlay_image: /08-DataVisualization/assets/images/08_data_visualization_banner.png
@@ -99,7 +99,7 @@ If you don't have a Jupyter installed, start with the tutorial that will guide y
 </div>
 <br>
 
-Once you have launched the Jupiter Development Environment in a browser window, navigate to the desired location in the file system and open a new file under the Python kernel.
+Once you have launched the Jupyter Development Environment in a browser window, navigate to the desired location in the file system and open a new file under the Python kernel.
 
 **C. Import Plotly**
 and copy paste the folowing code snippet:
