@@ -13,6 +13,8 @@ header:
 
 ## Introduction to GNUPLOT
 
+Gnuplot is a command-line driven graphing utility available for Linux, Windows, and Mac. The tool provides full customization of the graph by specifying values for numerous parameters. When **run in a terminal**, it allows to change parameter values on the fly and immediately update the graph in the graphical interface, which automatically appears as an additional window. The optimized set of settings can then be copied into a **simple bash script** that can be run in a loop for multiple files or saved for future reuse. Gnuplot is a simple and robust terminal tool that allows you to quickly generate both **2D and 3D charts**.<br>
+I recommend this tool for everyday analytical work, where we need to preview analysis results, as well as for generating highly specialized charts of publication quality. Its important advantage is the ability to **automatically generate hundreds/thousands of charts** of a given type, if needed.
 
 ## Gnuplot Installation
 
@@ -122,6 +124,12 @@ Finally, there is a `gnuplot` section, where the `<<EOF ... EOF` syntax allows t
 variable --> '$variable'
 ```
 
+The `gnuplot` section contains two main blocks of commands:
+
+* layout **set**tings, where individual components are configured with the `set` command
+* **plot**ting command, where data or a selected function is plotted using `plot` (2D) or `splot` (3D) commands
+
+
 **Run the script**
 
 To run the script, execute the following command in the terminal window:
@@ -130,17 +138,78 @@ To run the script, execute the following command in the terminal window:
 . ./gnuplot_graphing.sh
 ```
 
-As a result, the `simple_graph.png` should appear in your working directory.
+As a result, the `simple_graph.png` should appear in your working directory.<br>
+With Gnuplot you can customize literally everything (!) on your chart, including chart title, axis labels, font type and size, margins, legend position, point type and color, background color, and add various additional objects and annotations. You will learn all this in the next section, **[Layout settings for gnuplotting](layout-settings-for-gnuplotting)**.
 
 ![Gnuplot siple graph](../../assets/images/gnuplot_simple_graph.png)
 
-<!-- ## Types of Gnuplot charts
+<span style="color: #ff3870; font-weight: 600;">Congratulations!</span> You have just successfully created your first graph in Gnuplot!
+
+In the following part of this tutorial, you will learn how to customize the 1) **chart layout** and 2) **plotting command** for your project.
+
+----
+
+## Types of Gnuplot charts
+
+Gnuplot offers graphing of **functions** (both built-in and user-defined) and custom **data** loaded from a text file organized into columns. Before we get into the syntax, it is worth mentioning that the program allows you to create **2D and 3D plots**, including drawing surfaces. It is also possible to plot **multiple traces** (data series) on a single chart or to organize multiple charts into **subplots**.
+
+![Gnuplot siple graph](../../assets/images/gnuplot_plots_types.png)
+
+### 2D Plots using **plot** command
+
+<div style="background: #dff5b3; padding: 15px;">
+  <span style="font-weight:800;">plot </span>
+  {ranges}
+  <span style="font-weight:800;">function </span>
+  <span style="font-weight:800;">title '</span>{string}
+  <span style="font-weight:800;">' with </span>
+  {style}
+</div>
+
+```
+plot [-pi:pi] sin(x) title 'Plot sin(x) function' with line linetype 2 linewidth 3
+
+plot [][0:100] 'input.txt' using 1:2 title 'Plot y=x using data columns' with points pointtype 2 pointsize 3
+```
+
+### 3D Plots using **splot** command
+
+<div style="background: #dff5b3; padding: 15px;">
+  <span style="font-weight:800;">splot </span>
+  {ranges}
+  <span style="font-weight:800;">function </span>
+  <span style="font-weight:800;">title '</span>{string}
+  <span style="font-weight:800;">' with </span>
+  {style}
+</div>
+
+```
+splot
+```
 
 ## Layout settings for gnuplotting
 
 `set` syntax
 
-### terminal
+### Terminal - set graphing format
+
+Gnuplots provides the opportunity to save graphs in numerous different formats, including popular raster graphics (**PNG, JPEG**), vector graphics (**SVG, PDF**), and many more (Latex, DXF, Excl, Corel, X11). More about available terminal types you can learn from [Gnuplot Docs](http://gnuplot.sourceforge.net/docs_4.2/node340.html) and explore some examples via [Gnuplotting tutorial](http://www.gnuplotting.org/output-terminals/).
+
+Use `set terminal` syntax to determine what kind of output to generate.
+
+<div style="background: #dff5b3; padding: 15px;">
+  <span style="font-weight:800;">set terminal </span>
+  {name}
+  <span style="font-weight:800;">size </span>
+  {x,y}
+  <span style="font-weight:800;">enhanced font '</span>{name, size}
+  <span style="font-weight:800;">'</span>
+</div>
+
+
+```
+set terminal pngcairo size 1200,800 enhanced font 'Arial,14'
+```
 
 ### input-related
 
@@ -171,7 +240,7 @@ As a result, the `simple_graph.png` should appear in your working directory.
 ### Use Bash variables
 
 ## Loops and conditionals in Gnuplot
--->
+
 
 ___
 # Further Reading

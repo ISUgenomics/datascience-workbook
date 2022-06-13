@@ -178,9 +178,16 @@ GitHub location: <span style="color: #8997c1;">datascience-workbook/08-DataVisua
 
 ### <span style="color: #24376b;">Tutorials</span>
 
+GitHub location: <span style="color: #8997c1;">datascience-workbook/08-DataVisualization/assets/images</span>
+
 | filename | status | author | original source | items |
 |----|----|-----|----|----|
-| | | | | |
+|**gnuplot_bash_commands.png** | original | [Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska)| - | - |
+|**gnuplot_in_terminal.png** | original | [Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska)| - | - |
+|**gnuplot_interactive_window.png** | original | [Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska)| - | - |
+|**gnuplot_listing_dir.png** | original | [Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska)| - | - |
+|**gnuplot_plots_types.png** | original | [Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska)| - | - |
+|**gnuplot_simple_graph.png** | original | [Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska)| - | - |
 
 ---
 
