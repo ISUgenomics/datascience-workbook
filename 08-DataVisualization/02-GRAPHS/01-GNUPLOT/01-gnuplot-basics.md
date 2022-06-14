@@ -224,7 +224,7 @@ The arguments for plotting command are provided in order starting from an option
 | {ranges}  | [][]<br>[0:][:10]<br>[pi:pi][0:10] | [x-from:x-to] [y-from:y-to] | optional; <br>first [] for X ranges and second [] for Y ranges; <br> any range or boundary can be empty; <br> empty means automatic adjustment to the data range|
 | **[function]** | 'input' using 1:2 <br> sin(x) <br> 0.5 * (x^2 - y^2) | 'filename' using col-x:col-y <br> or <br> function(x) | **required**; <br> plot x:y using columns from the input file; <br> plot built-in or customized function(x) |
 | **title** '{string}' | title '' or ti '' <br> ti 'data serie 1' | title 'string'| optional; <br> use keyword `title` or `ti` (shortcut) with custom name <br>for plotted trace in the single quotes |
-| **width** {style} | with points ps 3 <br> with lines lw 2<br> with linepoints <br> with dots| with {marks type} <br> &ensp;pointtype {int} pointsize {float} <br> &ensp;linetype {int} linewidth {float} <br> &ensp;dots| optional; <br> default: `with l lt 1`; <br> use full argument syntax or shortcuts; <br> *for details, see options described in Table 2.*
+| **with** {style} | with points ps 3 <br> with lines lw 2<br> with linepoints <br> with dots| with {marks type} <br> &ensp;pointtype {int} pointsize {float} <br> &ensp;linetype {int} linewidth {float} <br> &ensp;dots| optional; <br> default: `with l lt 1`; <br> use full argument syntax or shortcuts; <br> *for details, see options described in Table 2.*
 
 
 **Table 2A.** *The most popular styles for Gnuplot plotting **with** argument.*
