@@ -51,7 +51,8 @@ brew install gnuplot
 Please visit [http://www.gnuplot.info/download.html](http://www.gnuplot.info/download.html) to download the most recent release and follow the instructions provided by [RIP Tutorial: Gnuplot Installation or Setup](https://riptutorial.com/gnuplot/example/11275/installation-or-setup).
 
 
-## Interactive Graphing in the terminal <br>*(on the local machine)*
+## Interactive Graphing in the terminal
+<span style="font-weight:500; font-style: italic; font-size: 20px">(on the local machine)</span>
 
 To start a new Gnuplot session, type in the terminal window:
 
@@ -89,21 +90,25 @@ So, it is good practice to create a set of settings in a terminal with a live pr
 </div>
 
 
-## Generating static graphs using Bash scripts <br>*(on the local or remote machine)*
+## Generating static graphs using Bash scripts
+<span style="font-weight:500; font-style: italic; font-size: 20px">(on the local or remote machine)</span>
 
 In this case, you do NOT have to launch gnuplot session in the terminal. Instead, create an empty file for Bash script, e.g., ` touch gnuplot_graphing.sh`, open the file in any editor, and copy-pased the code snippet provided below. Then save changes.
 
 ```
 #!/bin/bash
 
+# BASH VARIABLES
 output="simple_graph"
 format=png
 
 gnuplot -persist <<- EOF
 
+# LAYOUT SETTINGS
     set terminal '$format'
     set output '$output.$format'
 
+# PLOTTING COMMAND
     plot sin(x) with points
 
 EOF
@@ -127,7 +132,20 @@ variable --> '$variable'
 The `gnuplot` section contains two main blocks of commands:
 
 * layout **set**tings, where individual components are configured with the `set` command
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">Learn more:</span>
+<br><span style="font-style:italic;">
+The cheatsheet of SET components is provided in the section: Layout settings for gnuplotting.
+</span>
+</div><br>
+
 * **plot**ting command, where data or a selected function is plotted using `plot` (2D) or `splot` (3D) commands
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">Learn more:</span>
+<br><span style="font-style:italic;">
+The cheatsheet of (s)plot command is provided in the section: Types of Gnuplot charts.
+</span>
+</div><br>
 
 
 **Run the script**
@@ -145,49 +163,161 @@ With Gnuplot you can customize literally everything (!) on your chart, including
 
 <span style="color: #ff3870; font-weight: 600;">Congratulations!</span> You have just successfully created your first graph in Gnuplot!
 
+<!--
+### Define Gnuplot variables
+
+### Use Bash variables
+
+### Loops and conditionals in Gnuplot
+-->
+
 In the following part of this tutorial, you will learn how to customize the 1) **chart layout** and 2) **plotting command** for your project.
 
 ----
 
-## Types of Gnuplot charts
+## Plotting Options
 
 Gnuplot offers graphing of **functions** (both built-in and user-defined) and custom **data** loaded from a text file organized into columns. Before we get into the syntax, it is worth mentioning that the program allows you to create **2D and 3D plots**, including drawing surfaces. It is also possible to plot **multiple traces** (data series) on a single chart or to organize multiple charts into **subplots**.
 
 ![Gnuplot siple graph](../../assets/images/gnuplot_plots_types.png)
 
-### 2D Plots using **plot** command
+
+**Example dataset**
+
+Let us create a simple dataset organized in the 3-column file which we will then use in hands-on exercises of gnuplotting.
+
+File: `input.txt`
+```
+0 0 0
+1 1 1
+2 2 2
+3 3 3
+4 4 4
+5 5 5
+6 6 6
+7 7 7
+8 8 8
+9 9 9
+```
+
+With Gnuplot you can either create graphs:
+* 2D using `plot` command: `plot <arguments>`
+* 3D using `splot` command: `splot <arguments>`
+
+Both commands can create graphs :
+* A. using data from an input file structured into columns, *e.g., space-separated file*: `plot 'input.txt' using 1:2`
+
+* B. using predefined functions, e.g., *sin(x), cos(x)*: `plot sin(x)`
+
+* C. using custom functions, also depending on certain parameters, e.g., *f(x) = 0.5 * (x^2 - y^2)*: `splot f(x)`
+
+
+### Arguments for Plotting Commands
+
+The syntax and list of arguments for both `plot` and `splot` commands are generally the same.
+The arguments for plotting command are provided in order starting from an optional **ranges** for X and Y axes defined as an empty square brackets or any of from-to boundary. A value that remains unspecified is automatically assumed from the data. Specifying a **graph function** is a mandatory argument that either is expressed as y=f(x) mathematical formula or using x:y values from input data. The optional use of the **title** keyword followed by a string in single quotes will name the given trace that will be visible in the legend. The last argument, **with**, specifies the style of the plotted curve. The user can choose between different data representations, including points with various marker symbols, diverse line types, dots, boxes, filled curves, and more.
+
+**Table 1.** *Arguments for Gnuplot plotting commands with examples.*
+
+| argument | examples | definition | notes |
+| --------- | -------- | ---------- | ----- |
+| {ranges}  | [][]<br>[0:][:10]<br>[pi:pi][0:10] | [x-from:x-to] [y-from:y-to] | optional; <br>first [] for X ranges and second [] for Y ranges; <br> any range or boundary can be empty; <br> empty means automatic adjustment to the data range|
+| **[function]** | 'input' using 1:2 <br> sin(x) <br> 0.5 * (x^2 - y^2) | 'filename' using col-x:col-y <br> or <br> function(x) | **required**; <br> plot x:y using columns from the input file; <br> plot built-in or customized function(x) |
+| **title** '{string}' | title '' or ti '' <br> ti 'data serie 1' | title 'string'| optional; <br> use keyword `title` or `ti` (shortcut) with custom name <br>for plotted trace in the single quotes |
+| **width** {style} | with points ps 3 <br> with lines lw 2<br> with linepoints <br> with dots| with {marks type} <br> &ensp;pointtype {int} pointsize {float} <br> &ensp;linetype {int} linewidth {float} <br> &ensp;dots| optional; <br> default: `with l lt 1`; <br> use full argument syntax or shortcuts; <br> *for details, see options described in Table 2.*
+
+
+**Table 2A.** *The most popular styles for Gnuplot plotting **with** argument.*
+
+| shape, shortcut | style | type | size | color | colorscale | 2D / 3D | fill |
+| -------- | -------- | -------- | -------- | -------- | -------- | -------- |-------- |
+|lines &emsp; **l** | linestyle VAL <br> **ls 1** | linetype VAL <br> **lt 1** | linewidth VAL <br> **lw 1** | linecolor VAL <br> **lc 1**| palette <br> `splot` only | T / T | - |
+|points &emsp; **p** | ls VAL | pointtype VAL <br> **pt 1** | pointsize VAL <br> **ps 1** | lc VAL |palette <br> `splot` only | T / T | - |
+|linespoints &emsp; **lp** | ls VAL | lt VAL &ensp; pt VAL | lw VAL &ensp; ps VAL | lc VAL | palette <br> `splot` only | T / T | - |
+|dots &emsp; **d** | ls VAL | lt VAL | lw VAL | lc VAL | palette <br> `splot` only | T / T | - |
+
+**Table 2B.** *The other styles for Gnuplot plotting **with** argument.*
+
+| shape, shortcut | style | type | size | color | colorscale | 2D / 3D | fill |
+| -------- | -------- | -------- | -------- | -------- | -------- | -------- |-------- |
+|impulses &emsp; **i** | ls VAL | lt VAL | lw VAL | lc VAL | palette <br> `splot` only | T / T | - |
+|filledcurve | ls VAL | lt VAL | - | lc VAL | - | T / F | - |
+|steps | ls VAL | lt VAL | lw VAL | lc VAL | - | T / F | - |
+|histeps | ls VAL | lt VAL | lw VAL | lc VAL | - | T / F | - |
+|labels  | - | - | font 'Arial, 14' |  textcolor VAL <br> **tc 'red'** | textcolor palette | T / T | - |
+|xyerrorbars | ls VAL | lt VAL | lw VAL | lc VAL | palette | T / T | - |
+|boxes |ls VAL | lt VAL | lw VAL | lc VAL | *see* **fill** | T / T | fillstyle VAL <br> **fs** *{empty, solid, <br>pattern, palette}* |
+|vectors | ls VAL | lt VAL | lw VAL | lc VAL | *see* **fill** | T / T | filled head <br>*{ , palette}*|
+
+...and [more](http://www.gnuplot.info/docs_4.2/node145.html).
+
+
+### 2D Plots using **plot**
+
+Below, you can learn the general syntax for 2D `plot` command and explore some practical examples.
 
 <div style="background: #dff5b3; padding: 15px;">
   <span style="font-weight:800;">plot </span>
   {ranges}
-  <span style="font-weight:800;">function </span>
-  <span style="font-weight:800;">title '</span>{string}
-  <span style="font-weight:800;">' with </span>
+  <span style="font-weight:800;">[function] </span>
+  <span style="font-weight:800;">title '</span>{string}<span style="font-weight:800;">' with </span>
   {style}
 </div>
 
 ```
-plot [-pi:pi] sin(x) title 'Plot sin(x) function' with line linetype 2 linewidth 3
+plot [-pi:pi][] sin(x) title 'Plot sin(x) function' with line linetype 2 linewidth 3
 
-plot [][0:100] 'input.txt' using 1:2 title 'Plot y=x using data columns' with points pointtype 2 pointsize 3
+plot [0:][:10] 'input.txt' using 1:2 title 'Plot y=x using data columns' with points pointtype 2 pointsize 3
 ```
 
-### 3D Plots using **splot** command
+### 3D Plots using **splot**
+
+Below, you can learn the general syntax for 3D `splot` command and explore some practical examples.
 
 <div style="background: #dff5b3; padding: 15px;">
   <span style="font-weight:800;">splot </span>
   {ranges}
-  <span style="font-weight:800;">function </span>
-  <span style="font-weight:800;">title '</span>{string}
-  <span style="font-weight:800;">' with </span>
+  <span style="font-weight:800;">[function] </span>
+  <span style="font-weight:800;">title '</span>{string}<span style="font-weight:800;">' with </span>
   {style}
 </div>
 
 ```
-splot
+splot [][][] x**2 - y**2 title '3D plot: x^2 - y^2' with points pointtype 6 pointsize 1
+
+splot [0:10][0:10][0:10] 'input.txt' using 1:2:3 title 'Plot x:y:z using data columns' with line linetype 2 linewidth 3
 ```
 
-## Layout settings for gnuplotting
+### Plot Functions vs. Data from a File
+
+**Plot Functions**
+
+A. Create graph using predefined functions:<br><br>
+<span style="background:#dff5b3; font-weight:600;"> &emsp;SYNTAX: &emsp;plot function(x)&emsp;</span>
+```
+plot sin(x)
+```
+B. Create grapgh using custom functions, also depending on certain parameters:<br><br>
+<span style="background:#dff5b3; font-weight:600;"> &emsp;SYNTAX: &emsp;plot function(x)&emsp;</span>
+```
+a = 0.9
+f(x) = a * (x**2 - y**2)
+plot f(x)
+```
+
+**Plot Custom Data**
+
+C. Create graph using data from an input file structured into columns, *e.g., space-separated TXT file*:<br><br>
+<span style="background:#dff5b3; font-weight:600;"> &emsp;SYNTAX: &emsp;plot 'filename' using col-x:col-y&emsp;</span>
+```
+plot 'input.txt' using 1:2
+```
+
+Specify in order `x:y` values providing indexes of corresponding columns in the input file. In Gnuplot numbering columns starts with **1**. You can provide any column index to feed x or y values. You can also use the same column for both, e.g., `using 2:2` or build a custom function using values from column for selected dimension, e.g., `using 1:($1**2)`.
+
+
+
+## Graph Layout Settings
 
 `set` syntax
 
@@ -232,14 +362,6 @@ set terminal pngcairo size 1200,800 enhanced font 'Arial,14'
 * **range**
 
 * **tics**
-
-## Vriables in Gnuplot
-
-### Define Gnuplot variables
-
-### Use Bash variables
-
-## Loops and conditionals in Gnuplot
 
 
 ___
