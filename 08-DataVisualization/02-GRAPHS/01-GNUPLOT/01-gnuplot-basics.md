@@ -135,7 +135,7 @@ The `gnuplot` section contains two main blocks of commands:
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">Learn more:</span>
 <br><span style="font-style:italic;">
-The cheatsheet of SET components is provided in the section: Layout settings for gnuplotting.
+The cheatsheet of SET components is provided in the section: Graph Layout Settings.
 </span>
 </div><br>
 
@@ -143,7 +143,7 @@ The cheatsheet of SET components is provided in the section: Layout settings for
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">Learn more:</span>
 <br><span style="font-style:italic;">
-The cheatsheet of (s)plot command is provided in the section: Types of Gnuplot charts.
+The cheatsheet of (s)plot command is provided in the section: Plotting Options.
 </span>
 </div><br>
 
@@ -157,7 +157,7 @@ To run the script, execute the following command in the terminal window:
 ```
 
 As a result, the `simple_graph.png` should appear in your working directory.<br>
-With Gnuplot you can customize literally everything (!) on your chart, including chart title, axis labels, font type and size, margins, legend position, point type and color, background color, and add various additional objects and annotations. You will learn all this in the next section, **[Layout settings for gnuplotting](layout-settings-for-gnuplotting)**.
+With Gnuplot you can customize literally everything (!) on your chart, including chart title, axis labels, font type and size, margins, legend position, point type and color, background color, and add various additional objects and annotations. You will learn all this in the next section, **[Layout settings for gnuplotting](graph-layout-settings)**.
 
 ![Gnuplot siple graph](../../assets/images/gnuplot_simple_graph.png)
 
