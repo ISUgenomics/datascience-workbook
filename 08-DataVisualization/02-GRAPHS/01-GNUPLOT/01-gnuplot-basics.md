@@ -59,15 +59,18 @@ To start a new Gnuplot session, type in the terminal window:
 ```
 gnuplot
 ```
-![Open Gnuplot in the Terminal](../../assets/images/gnuplot_in_terminal.png)
+![Open Gnuplot in the Terminal](../../assets/images/gnuplot_in_terminal.png)<br>
+**Figure 1.** *The image shows how to start Gnuplot session in the command-line terminal. When properly activated, Gnuplot displays a welcome message and the prompt changes to 'gnuplot>'.*
 
 Note that the **prompt** has changed to *gnuplot*. It means your gnuplot session is launched directly in your terminal window, and you should now enter only gnuplot-compatible syntax instead of Unix commands. For example, the listing directory with `ls` command is no longer possible.
 
-![Open Gnuplot in the Terminal](../../assets/images/gnuplot_bash_commands.png)
+![Open Gnuplot in the Terminal](../../assets/images/gnuplot_bash_commands.png)<br>
+**Figure 2.** *Bash commands are not allowed in the interactive gnuplot session.*
 
 However, once you press `tab` on your keyboard, the list of files available in the current directory will be displayed. This will be useful for copying the file name when graphing data from a file.
 
-![Open Gnuplot in the Terminal](../../assets/images/gnuplot_listing_dir.png)
+![Open Gnuplot in the Terminal](../../assets/images/gnuplot_listing_dir.png)<br>
+**Figure 3.** *Files in the working disrectory can be displayed by pressing `TAB` on the keyboard.*
 
 Now, let's plot a simple function, for example `sin(x)` using default points.<br>
 Please, copy-paste the command provided below in the gnuplot-terminal:
@@ -76,7 +79,8 @@ plot sin(x) with points
 ```
 As you noticed, executing the `plot` command starts the GUI window, which allows an on-the-fly preview of creating graphs and some interactivity with data. You can use the options in the graphical interface to **export the chart** to a static image in one of the available formats (PDF [*vector*], SVG [*vector*], PNG [*raster*]). In the top menu, there is also an option for **adding grid lines and zooming** (also possible by selecting the chart area with the mouse). Hovering over any point with the mouse **displays its coordinates** at the bottom of the GUI window.
 
-![Open Gnuplot in the Terminal](../../assets/images/gnuplot_interactive_window.png)
+![Open Gnuplot in the Terminal](../../assets/images/gnuplot_interactive_window.png)<br>
+**Figure 4.** *The interactive graph is launched in the separate GUI window which provides options to save image in the selected graphical format.*
 
 In the [Settings for gnuploting](settings-for-gnuploting) section you will learn the Gnuplot syntax for setting up details of the graph's layout and plotting commands.
 
@@ -93,7 +97,7 @@ So, it is good practice to create a set of settings in a terminal with a live pr
 ## Generating static graphs using Bash scripts
 <span style="font-weight:500; font-style: italic; font-size: 20px">(on the local or remote machine)</span>
 
-In this case, you do NOT have to launch gnuplot session in the terminal. Instead, create an empty file for Bash script, e.g., ` touch gnuplot_graphing.sh`, open the file in any editor, and copy-pased the code snippet provided below. Then save changes.
+In this case, you do NOT have to launch gnuplot session in the terminal. Instead, create an empty file for Bash script, e.g., `touch gnuplot_graphing.sh`, open the file in any editor, and copy-pased the code snippet provided below. Then save changes.
 
 ```
 #!/bin/bash
@@ -157,12 +161,14 @@ To run the script, execute the following command in the terminal window:
 ```
 
 As a result, the `simple_graph.png` should appear in your working directory.<br>
-With Gnuplot you can customize literally everything (!) on your chart, including chart title, axis labels, font type and size, margins, legend position, point type and color, background color, and add various additional objects and annotations. You will learn all this in the next section, **[Layout settings for gnuplotting](graph-layout-settings)**.
 
-![Gnuplot siple graph](../../assets/images/gnuplot_simple_graph.png)
+![Gnuplot siple graph](../../assets/images/gnuplot_simple_graph.png)<br>
+**Figure 5.** *The image shows sin(x) function generated using simple Bash script for gnuplotting.*
 
 <span style="color: #ff3870; font-weight: 600;">Congratulations!</span> You have just successfully created your first graph in Gnuplot!
 
+
+With Gnuplot you can customize literally everything (!) on your chart, including chart title, axis labels, font type and size, margins, legend position, point type and color, background color, and add various additional objects and annotations. You will learn all this in the next section, **[Graph Layout Settings](#graph-layout-settings)**.
 <!--
 ### Define Gnuplot variables
 
@@ -171,7 +177,8 @@ With Gnuplot you can customize literally everything (!) on your chart, including
 ### Loops and conditionals in Gnuplot
 -->
 
-In the following part of this tutorial, you will learn how to customize the 1) **chart layout** and 2) **plotting command** for your project.
+In the following part of this tutorial, you will learn how to customize **plotting command** and the **graph layout** for your project.
+
 
 ----
 
@@ -179,7 +186,8 @@ In the following part of this tutorial, you will learn how to customize the 1) *
 
 Gnuplot offers graphing of **functions** (both built-in and user-defined) and custom **data** loaded from a text file organized into columns. Before we get into the syntax, it is worth mentioning that the program allows you to create **2D and 3D plots**, including drawing surfaces. It is also possible to plot **multiple traces** (data series) on a single chart or to organize multiple charts into **subplots**.
 
-![Gnuplot siple graph](../../assets/images/gnuplot_plots_types.png)
+![Gnuplot siple graph](../../assets/images/gnuplot_plots_types.png)<br>
+**Figure 6.** *Gnuplot enables graphing in 2D and 3D, and organizing multiple traces within plotting area.*
 
 
 **Example dataset**
@@ -226,30 +234,51 @@ The arguments for plotting command are provided in order starting from an option
 | **title** '{string}' | title '' or ti '' <br> ti 'data serie 1' | title 'string'| optional; <br> use keyword `title` or `ti` (shortcut) with custom name <br>for plotted trace in the single quotes |
 | **with** {style} | with points ps 3 <br> with lines lw 2<br> with linepoints <br> with dots| with {marks type} <br> &ensp;pointtype {int} pointsize {float} <br> &ensp;linetype {int} linewidth {float} <br> &ensp;dots| optional; <br> default: `with l lt 1`; <br> use full argument syntax or shortcuts; <br> *for details, see options described in Table 2.*
 
+The **with** argument enables highly detailed customization of the visualization of the plotted data. There are many **styles** available that provide the most meaningful representation of your data. Most styles are available for both 2D and 3D graphs, and details are given in Tables 2A and 2B, where the corresponding labels T - true and F - false are given.
+
+In the first choice, you must decide on the type of curve plotted from your data. Among the most popular options are **lines**, **points**, **linespoints** *(lines with points)*, **dots**, and **impulses** *(see Table 2A and Figure)*. These styles have abbreviations from the first letter of the full name that perform the same action. This is hugely convenient for developing draft charts and saves a lot of coding.
 
 **Table 2A.** *The most popular styles for Gnuplot plotting **with** argument.*
 
-| shape, shortcut | style | type | size | color | colorscale | 2D / 3D | fill |
-| -------- | -------- | -------- | -------- | -------- | -------- | -------- |-------- |
-|lines &emsp; **l** | linestyle VAL <br> **ls 1** | linetype VAL <br> **lt 1** | linewidth VAL <br> **lw 1** | linecolor VAL <br> **lc 1**| palette <br> `splot` only | T / T | - |
-|points &emsp; **p** | ls VAL | pointtype VAL <br> **pt 1** | pointsize VAL <br> **ps 1** | lc VAL |palette <br> `splot` only | T / T | - |
-|linespoints &emsp; **lp** | ls VAL | lt VAL &ensp; pt VAL | lw VAL &ensp; ps VAL | lc VAL | palette <br> `splot` only | T / T | - |
-|dots &emsp; **d** | ls VAL | lt VAL | lw VAL | lc VAL | palette <br> `splot` only | T / T | - |
+| shape, shortcut | style | type | dash | size | color | colorscale | 2D / 3D |
+| -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
+|lines &emsp; **l** | linestyle VAL <br> **ls 1** | linetype VAL <br> **lt 1** | dashtype VAL <br> **dt 2** | linewidth VAL <br> **lw 1** | linecolor VAL <br> **lc 1**| palette <br> `splot` only | T / T |
+|points &emsp; **p** | ls VAL | pointtype VAL <br> **pt 1** | - | pointsize VAL <br> **ps 1** | lc VAL |palette <br> `splot` only | T / T |
+|linespoints &emsp; **lp** | ls VAL | lt VAL &ensp; pt VAL | dt VAL | lw VAL &ensp; ps VAL | lc VAL | palette <br> `splot` only | T / T |
+|dots &emsp; **d** | ls VAL | lt VAL | - | lw VAL | lc VAL | palette <br> `splot` only | T / T |
+|impulses &emsp; **i** | ls VAL | lt VAL | dt VAL | lw VAL | lc VAL | palette <br> `splot` only | T / T | - |
+
+Then, with a few additional keywords, you can customize the details of the selected style. In particular you can specify styling options with `VAL` provided as an intiger corresponding to a predefined style in a given **Gnuplot terminal type**:
+  * `linestyle VAL`, shortcut: `ls` , defines line type (solid or dotted line) and its color
+  * `linetype VAL`, shortcut: `lt`  , assigns a default color for a given *line_type*
+  * `dashtype VAL`, shortcut: `dt`  , defines the type of line dashing
+  * `linewidth VAL`, shortcut: `lw` , sets the line thickness
+  * `linecolor VAL`, shortcut: `lc` , changes the default color for a given *line_type* when the value is an intiger; can also use common color name, e.g., 'red' or additional `rgb '#4488bb'` syntax
+  * `pointtype VAL`, shortcut: `pt` , specifies the shape and color of used points; color encoded by intiger is the same for linetype and pointtype
+  * `pointsize VAL`, shortcut: `ps` , sets the size of used points, larger values make points more visible
+  * `fill VAL`, shortcut: `fs` , defines the filling style of filledcurves or boxes
+  * `palette`, shortcut: `pal` , enables coloring graphs with a colorscale
+
+![Gnuplot siple graph](../../assets/images/gnuplot_with_styles.png)<br>
+**Figure 7.** *The selected plotting style (lines, points, linespoints, dots, impulses) are adjustable by specifying values of additional params that change line dashing, point shape, color, and size/width. The example shows the y=x^2 function in 2D coordinate space.*
 
 **Table 2B.** *The other styles for Gnuplot plotting **with** argument.*
 
 | shape, shortcut | style | type | size | color | colorscale | 2D / 3D | fill |
 | -------- | -------- | -------- | -------- | -------- | -------- | -------- |-------- |
-|impulses &emsp; **i** | ls VAL | lt VAL | lw VAL | lc VAL | palette <br> `splot` only | T / T | - |
-|filledcurve | ls VAL | lt VAL | - | lc VAL | - | T / F | - |
 |steps | ls VAL | lt VAL | lw VAL | lc VAL | - | T / F | - |
-|histeps | ls VAL | lt VAL | lw VAL | lc VAL | - | T / F | - |
-|labels  | - | - | font 'Arial, 14' |  textcolor VAL <br> **tc 'red'** | textcolor palette | T / T | - |
-|xyerrorbars | ls VAL | lt VAL | lw VAL | lc VAL | palette | T / T | - |
-|boxes |ls VAL | lt VAL | lw VAL | lc VAL | *see* **fill** | T / T | fillstyle VAL <br> **fs** *{empty, solid, <br>pattern, palette}* |
-|vectors | ls VAL | lt VAL | lw VAL | lc VAL | *see* **fill** | T / T | filled head <br>*{ , palette}*|
+|histogram | ls VAL | lt VAL | lw VAL | lc VAL | - | T / F | - |
+|filledcurve | ls VAL | lt VAL | - | lc VAL | - | T / F | fillstyle VAL <br> **fs** *{empty, solid, <br>pattern, palette}* |
+|boxes |ls VAL | lt VAL | lw VAL | lc VAL | *see* **fill** | T / T | fs VAL |
+|labels &emsp; **#** | - | - | font 'Arial, 14' |  textcolor VAL <br> **tc 'red'** | textcolor palette | T / T | - |
+|xyerrorbars &emsp; **#** | ls VAL | lt VAL | lw VAL | lc VAL | palette | T / T | - |
+|vectors &emsp; **#** | ls VAL | lt VAL | lw VAL | lc VAL | *see* **fill** | T / T | filled head <br>*{ , palette}*|
+| ...and [more](http://www.gnuplot.info/docs_4.2/node145.html) | | | | | | | |
 
-...and [more](http://www.gnuplot.info/docs_4.2/node145.html).
+**#** Plot styles (shapes) marked with # are only for datafiles and requires specifying additional columns for labels (+1 col), xy errors (+2 cols), vectors coordinates (+2 or +3 cols).
+
+![Gnuplot siple graph](../../assets/images/gnuplot_with_styles_other.PNG)<br>
+**Figure 8.** *The selected plotting style (steps, histogram, boxes, filledcurves, labels, xyerrorbars, vectors) are adjustable by specifying values of additional params that change color, filling pattern, label font, and size/width. The example shows the y=x^2 function in 2D coordinate space and/or simple x:y input data.*
 
 
 ### 2D Plots using **plot**
