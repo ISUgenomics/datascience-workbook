@@ -246,7 +246,7 @@ In the first choice, you must decide on the type of curve plotted from your data
 |points &emsp; **p** | ls VAL | pointtype VAL <br> **pt 1** | - | pointsize VAL <br> **ps 1** | lc VAL |palette <br> `splot` only | T / T |
 |linespoints &emsp; **lp** | ls VAL | lt VAL &ensp; pt VAL | dt VAL | lw VAL &ensp; ps VAL | lc VAL | palette <br> `splot` only | T / T |
 |dots &emsp; **d** | ls VAL | lt VAL | - | lw VAL | lc VAL | palette <br> `splot` only | T / T |
-|impulses &emsp; **i** | ls VAL | lt VAL | dt VAL | lw VAL | lc VAL | palette <br> `splot` only | T / T | - |
+|impulses &emsp; **i** | ls VAL | lt VAL | dt VAL | lw VAL | lc VAL | palette <br> `splot` only | T / T |
 
 Then, with a few additional keywords, you can customize the details of the selected style. In particular you can specify styling options with `VAL` provided as an intiger corresponding to a predefined style in a given **Gnuplot terminal type**:
   * `linestyle VAL`, shortcut: `ls` , defines line type (solid or dotted line) and its color
@@ -277,7 +277,7 @@ Then, with a few additional keywords, you can customize the details of the selec
 
 **#** Plot styles (shapes) marked with # are only for datafiles and requires specifying additional columns for labels (+1 col), xy errors (+2 cols), vectors coordinates (+2 or +3 cols).
 
-![Gnuplot siple graph](../../assets/images/gnuplot_with_styles_other.PNG)<br>
+![Gnuplot siple graph](../../assets/images/gnuplot_with_styles_other.png)<br>
 **Figure 8.** *The selected plotting style (steps, histogram, boxes, filledcurves, labels, xyerrorbars, vectors) are adjustable by specifying values of additional params that change color, filling pattern, label font, and size/width. The example shows the y=x^2 function in 2D coordinate space and/or simple x:y input data.*
 
 
