@@ -13,9 +13,6 @@ header:
 # Introduction
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OAAdLMZvk1I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
 ## What is Unix?
 * Multiuser operating system
 * Linux: free version of this type of operating system
@@ -70,7 +67,10 @@ Some variables that are useful are:
 | `DISPLAY`  | where to route the display         |
 | `HISTFILE` | file where the history is saved    |
 
-## 1.3 Unix Shell Configuration
+
+## 1.3 HOME directory
+
+## 1.4 Unix Shell Configuration
 
 ### **.bashrc**
 

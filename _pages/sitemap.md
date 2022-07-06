@@ -22,12 +22,12 @@ header:
 
 # <a href="02-IntroToCommandLine/00-IntroToCommandLine-LandingPage" style="color: #8997c1;">02. Introduction to the Command Line</a>
 * **<a href="02-IntroToCommandLine/01-terminal-basics" style="color: #24376b;">Terminal: a text-based interface for command-line operations</a>**
-* **<a href="02-IntroToCommandLine/02-intro-to-unix-shell" style="color: #24376b;">Introduction to UNIX Shell</a>**
+* **<a href="02-IntroToCommandLine/02-intro-to-unix-shell" style="color: #24376b;">Introduction to UNIX Shell: shell variables, HOME dir, .bashrc</a>**
   * <a href="02-IntroToCommandLine/02A-basic-commands" style="color: #3f5a8a;">Basic Commands: Navigation, File Creation & Preview</a>
   * <a href="02-IntroToCommandLine/02B-text-files-editors" style="color: #3f5a8a;">Text Files Editors</a>
   * <a href="02-IntroToCommandLine/02C-unix-system-info-permissions" style="color: #3f5a8a;">System Info and Access Permissions</a>
   * <a href="02-IntroToCommandLine/02D-admin-commands" style="color: #3f5a8a;">Admin Commands</a>
-  * <a href="02-IntroToCommandLine/02E-tutorial-unix-getting-started" style="color: #3f5a8a;">Tutorial: Getting Started with UNIX</a>
+  * <a href="02-IntroToCommandLine/02E-tutorial-unix-getting-started" style="color: #3f5a8a;">Tutorial: Getting Started with UNIX + VIDEO</a>
 * **<a href="02-IntroToCommandLine/03-text-manipulation-programs" style="color: #24376b;">Useful Text Manipulation Programs</a>**
   * <a href="02-IntroToCommandLine/03A-tutorial-unix-grep" style="color: #3f5a8a;">Tutorial: GREP – simple search for regular expressions</a>
   * <a href="02-IntroToCommandLine/03B-tutorial-unix-sed" style="color: #3f5a8a;">Tutorial: SED – edit stream text</a>
