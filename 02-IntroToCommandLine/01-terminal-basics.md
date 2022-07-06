@@ -74,13 +74,14 @@ When working in a terminal, it is helpful to know some basic terminology. That m
   |**Standard Out**| text result of a command | use `> filename1` to redirect output into the file |
   |**Standard Error**| error message of a failed command | use `2> filename2` to redirect error message into the file|
 
-Once you open a terminal window on your local machine or login into the remote one, first, you will see a welcome message. It contains the date of the last login and some information from the admins. Usually, it also tells you about the architecture of available resources and users' rules.<br>
+Once you open a terminal window on your local machine or login into the remote one, first, you will see a **welcome message**. It contains the date of the last login and some information from the admins. Usually, it also tells you about the architecture of available resources and users' rules.<br>
 **Prompt** is a pre-defined field in the terminal emulator which tells you, by default, who is the current user on which host and what is the current location in the file system. The components available in the prompt are adjustable in the shell configuration file called .bashrc. To learn more about prompt and terminal coloring, see the tutorial [Configuration of .bashrc]() located in the **Introduction to UNIX Shell** section of the Workbook.<br>
 
 ![The structure of terminal window](assets/images/TerminalWelcome.png)
 
 **A command** is a name of a program, a built-in shell process called by a specific word, user-customized alias, or a script with executability rights. Typing such a pre-defined word in the terminal and approving with `enter` (`return` on MacOS) communicates to the operating system to launch the desired process. Thus, commands can be considered abbreviations of computer instructions, easy for humans, interpreted and translated by operating system or compiler.<br>
-Commands usually take one or more **arguments**, which condition how the ordered commands are executed. Usually, the arguments are inputs and various program-specific options or flags that modify the track or variant according to which the algorithm is executed.<br>
+Commands usually take one or more **arguments**, which condition how the ordered commands are executed. Usually, the arguments are inputs and various program-specific options or flags that modify the track or variant according to which the algorithm is executed.
+
 In most cases, operations are performed on text files (or numerical representations of other data, such as image files), so the most common result is text output. By default this information is returned in the **standard outputs** stream and printed on the screen. Error messages are passed in the **standard error** stream and also displayed on the screen. However, these two data flows can easily be separated and redirected to a shared or different file.
 
 ```
@@ -94,15 +95,19 @@ ls -l > output 2> error
 
 ## Command auto-completion
 
-The `tab` key is your great friend while working directly in the terminal window. It facilitates you entering both the commands and names of files stored in your directories system. <br>
-That is useful when you remember only a few first letters of a less common command or want to reuse an alias created far in the past. In such a case, type as many characters as you remember and press the `tab` once. If there is a unique program matching your query, it will be automatically completed. In case of more matching options, you will hear a beep, but nothing will change on the command line. That means you should press the `tab` one more time. If there are few possibilities, let's say less than 10, all of them will be displayed on the screen for you to use the hints. You just need to type enough letters to make your searched command unique among the others. Then auto-completion will work with the next pressing of a `tab`. However, if there are many more possible command choices, you will be asked if you want to show all possible options. Once you find the desired command, you can enter it manually or select it with the mouse, then copy and paste it into the command line.
+The `tab` key is your great friend while working directly in the terminal window. It facilitates you entering both the commands and names of files stored in your directories system.
+
+That is useful when you remember only a few first letters of a less common command or want to reuse an alias created far in the past. In such a case, type as many characters as you remember and press the `tab` once. <br>
+**(1)** If there is a unique program matching your query, it will be automatically completed. <br>
+**(2)** In case of more matching options, you will hear a beep, but nothing will change on the command line. That means you should press the `tab` one more time. If there are few possibilities, let's say less than 10, all of them will be displayed on the screen for you to use the hints. You just need to type enough letters to make your searched command unique among the others. Then auto-completion will work with the next pressing of a `tab`. <br>
+**(3)** However, if there are many more possible command choices, you will be asked if you want to show all possible options. Once you find the desired command, you can enter it manually or select it with the mouse, then copy and paste it into the command line.
 
 <p align="center"><img width="800" src="assets/images/terminal_autocompletion.gif"></p>
 
 
 ## Command history
 
-Another convenient feature of working in a terminal is the command history. Usually, the last 100 commands stay in the terminal memory, whether a single word command, a more complex sequence of processes, or even an inline script with nested loops. They all are always available after closing and reopening the terminal window. That behavior is adjustable in the `.bashrc` file configuration. The history can be browsed directly in the terminal window with an upper-arrow key following the direction of older commands.
+Another convenient feature of working in a terminal is the command history. Usually, the last 100 commands stay in the terminal memory, whether a single word command, a more complex sequence of processes, or even an inline script with nested loops. They all are always available after closing and reopening the terminal window. That behavior is adjustable in the `.bashrc` file configuration. The history can be browsed directly in the terminal window with an upper-arrow key ` ↑ ` following the direction of older commands.
 
 ___
 # Further Reading
