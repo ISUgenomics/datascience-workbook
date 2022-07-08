@@ -54,7 +54,7 @@ In Linux you can start a terminal session by clicking on the black square icon *
 <br><span style="font-style:italic;">
 The window can be resized with the mouse and the font text can be increased by pressing `cmd +` or `ctrl +` on Mac or Windows/Linux, respectively.
 </span>
-</div>
+</div><br>
 
 
 # Terminal Basics
