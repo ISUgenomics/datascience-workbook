@@ -142,7 +142,7 @@ ls -a ~
 <div style="background: mistyrose; padding: 15px;">
 <span style="font-weight:800;">WARNING:</span>
 <br><span style="font-style:italic;">
-Note that ~ refers to the $HOME of a given user and / refers to the root directory in the file system! <br>You can replace it with a path to any location.
+Note that <b>~</b> refers to the $HOME of a given user and <b>/</b> refers to the root directory in the file system! <br>You can replace it with a path to any location.
 </span>
 </div><br>
 
