@@ -71,8 +71,8 @@ When working in a terminal, it is helpful to know some basic terminology. That m
   |**Prompt**| the text next to where you type your commands | prompts can be modified to include addtional information like hostname or current folder location |
   |**Command**| the program or script you are trying to run | built-in commands and aliases are called by name, while custom Bash scripts stored in files can be executed with 'dot syntax' `. ~/path/your_script.sh` |
   |**Argument**| added to a Command to modify the output | there is always a space between a command and the argument |
-  |**Standard Out**| text result of a command | use `> filename1` to redirect output into the file |
-  |**Standard Error**| error message of a failed command | use `2> filename2` to redirect error message into the file|
+  |**Standard Out**| text result of a command | use `> filename1` to redirect output into the file <br> use `>> filename1` to append output to the end of a file |
+  |**Standard Error**| error message of a failed command | use `2> filename2` to redirect error message into the file <br> use `2>> filename2` to append error message to the end of a file |
 
 Once you open a terminal window on your local machine or login into the remote one, first, you will see a **welcome message**. It contains the date of the last login and some information from the admins. Usually, it also tells you about the architecture of available resources and users' rules.<br>
 **Prompt** is a pre-defined field in the terminal emulator which tells you, by default, who is the current user on which host and what is the current location in the file system. The components available in the prompt are adjustable in the shell configuration file called .bashrc. To learn more about prompt and terminal coloring, see the tutorial [Configuration of .bashrc]() located in the **Introduction to UNIX Shell** section of the Workbook.<br>
@@ -90,6 +90,9 @@ ls -l
 
 # save standard output into the 'output' file and standard errors into the 'error' file
 ls -l > output 2> error
+
+# append standard output to the end of an 'output' file and standard errors into the 'error' file
+ls -a >> output 2>> error
 ```
 
 
@@ -107,7 +110,29 @@ That is useful when you remember only a few first letters of a less common comma
 
 ## Command history
 
-Another convenient feature of working in a terminal is the command history. Usually, the last 100 commands stay in the terminal memory, whether a single word command, a more complex sequence of processes, or even an inline script with nested loops. They all are always available after closing and reopening the terminal window. That behavior is adjustable in the `.bashrc` file configuration. The history can be browsed directly in the terminal window with an upper-arrow key ` ↑ ` following the direction of older commands.
+Another convenient feature of working in a terminal is the command history. Usually, the last 100-500 commands stay in the terminal memory, whether a single word command, a more complex sequence of processes, or even an inline script with nested loops. They all are always available after closing and reopening the terminal window.
+
+To display all previously used commands, type `history` command on your terminal. Typically, that will print on your screen last 500 commands with indexing on the left-hand side.
+
+```
+history
+```
+
+<p align="center"><img width="800" src="assets/images/terminal_history.png"></p>
+
+The history can be browsed directly in the terminal window with an upper-arrow key `↑` following the direction of older commands and a down-arrow key `↓` to return to more recent ones. Also, you can effortlessly search in history by keyword after pressing `CTRL+R` on your keyboard. That facilitates getting quick a syntax used far in the past if only you know the unique fragment of it. When the filtrated batch of commands is more than one in size, you can again use arrow keys to select a desired one.
+
+<p align="center"><img width="800" src="assets/images/terminal_history.gif"></p>
+
+As you noticed, the `history` command returns the text output on the screen. Thus, you can further parse it to filtrate the required information. Since the history output is printed as a single command per line, it is easy to `grep` by keyword or limit the display to *n* last results with the `tail -n` command. The `uniq` allows you to remove redundant hits.
+
+```
+history | grep "for" | uniq | tail -5
+```
+
+<p align="center"><img width="800" src="assets/images/terminal_history_grep.png"></p>
+
+Finally, it is good to know that the command history is stored in the hidden file called by default `.bash_history` and stored in the $HOME for given user. You can use the `$HISTFILE` variable to change the name of the history file and `$HISTSIZE` variable to adjust the number of remembered commands. You can set up that in the `.bashrc` configuration file. To learn more, see section *3. Unix Shell Configuration* in the following [tutorial](02-intro-to-unix-shell.md).
 
 ___
 # Further Reading
