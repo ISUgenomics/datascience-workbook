@@ -157,6 +157,7 @@ less ~/.bash_history
 ```
 
 ... and browse the command history with arrow keys `↓` and `↑`. To close the preview, press `q`.
+
 ___
 # Further Reading
 * [Introduction to Unix Shell](02-intro-to-unix-shell.md)
