@@ -106,7 +106,7 @@ That is useful when you remember only a few first letters of a less common comma
 **(3)** However, if there are many more possible command choices, you will be asked if you want to show all possible options. Once you find the desired command, you can enter it manually or select it with the mouse, then copy and paste it into the command line.
 
 <p align="center"><img width="800" src="assets/images/terminal_autocompletion.gif"></p>
-
+<p align="center">^ <i>on macOS, use <b>return</b> instead of arrows keys to browse the preview of possibilities</i></p>
 
 ## Command history
 
@@ -130,10 +130,33 @@ As you noticed, the `history` command returns the text output on the screen. Thu
 history | grep "for" | uniq | tail -5
 ```
 
-<p align="center"><img width="800" src="assets/images/terminal_history_grep.png"></p>
+![grep from command history](assets/images/terminal_history_grep.png)
 
 Finally, it is good to know that the command history is stored in the hidden file called by default `.bash_history` and stored in the $HOME for given user. You can use the `$HISTFILE` variable to change the name of the history file and `$HISTSIZE` variable to adjust the number of remembered commands. You can set up that in the `.bashrc` configuration file. To learn more, see section *3. Unix Shell Configuration* in the following [tutorial](02-intro-to-unix-shell.md).
 
+To check if the hidden file exists, type in the terminal window:
+```
+ls -a ~
+```
+
+<div style="background: mistyrose; padding: 15px;">
+<span style="font-weight:800;">WARNING:</span>
+<br><span style="font-style:italic;">
+Note that ~ refers to the $HOME of a given user and / refers to the root directory in the file system! <br>You can replace it with a path to any location.
+</span>
+</div><br>
+
+Then, youb should find on your screen a bunch of files starting with a dot, such as `.bashrc`, `.bash_profile`, and `.bash_history`.
+
+![grep from command history](assets/images/terminal_bash_history.png)
+
+To preview the content of a `.bash_history`, from any location on the file system, type in the terminal window:
+
+```
+less ~/.bash_history
+```
+
+... and browse the command history with arrow keys `↓` and `↑`. To close the preview, press `q`.
 ___
 # Further Reading
 * [Introduction to Unix Shell](02-intro-to-unix-shell.md)
