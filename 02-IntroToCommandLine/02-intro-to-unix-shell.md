@@ -13,36 +13,59 @@ header:
 # Introduction
 
 
-<!-- ## What is Unix?
-* Multiuser operating system
-* Linux: free version of this type of operating system
-  * Red Hat Enterprise Linux, Ubuntu, and CentOS
-* Used on high-end workstations, database servers, web servers and managing shared resources
-* Standard features include: Security, reliability, scalability
-  * Can supports 100s of users at a time
+## What is Unix?
+UNIX is an operating system (OS) for computer devices providing the **command-line interface** (CLI) for convenient and efficient programming. The modern Unix OS variants are **multi-tasking** and **multi-user**, allowing for sharing computing resources among many users at the same time [�](https://en.wikipedia.org/wiki/Unix). They are also portable, supplying the operating system for personal computers, computing clusters, database & web servers, and high-end workstations. The **open-source Unix distributions** within the Linux family include **Ubuntu**, **Debian**, **RHEL** (*Red Hat Enterprise Linux*), Linux Mint, Fedora, CentOS, OpenSUSE, Manjaro, and Arch Linux. Besides GNU/Linux there are other varieties of UNIX such as Sun Solaris, macOS X, IBM AIX, Darwin OS, and FreeBSD OS (some of them are proprietary).
+
+![Linux Distributions](assets/images/linux_distributions.png)<br>
+**Figure 1.** *Logos of the most popular Linux distributions based on the Unix command-line interface.*
+
+Standard features of Unix-like OS include: **security**, **reliability**, and **scalability** with easy batch processing & time-sharing configuration that supports **hundreds of users at the same time** by means of multiprogramming and multi-tasking [�](https://en.wikipedia.org/wiki/Time-sharing).
 
 
 ## Can I learn Unix?
 
-* **Yes!** Absolutely. It is just another way of operating your computer
-* No more difficult than learning Word, Excel or Powerpoint
-* Biggest difference
-  * In Linux:  You type the command to execute
-  * In Windows and Mac: You use your mouse to execute a command
+**Yes!** <br>
+Absolutely. It is just another way of operating your computer.<br>
+The main difference between using **Linux** and Windows/Mac is that you use the **command-line interface (CLI) and keyboard** to execute programs instead of using a graphical user interface (GUI) and mouse. However, modern Unix variants of the Linux family provide a user-friendly graphical-like interface for personal computers with desktop.
 
-`Remember!` **In the Terminal, “Don’t use the mouse.”** -->
+![CLI vs GUI](assets/images/cli_vs_gui_enhanced.png)
+**Figure 2.** *In the graphical user interface (GUI, on the left), you use a mouse to navigate the file system and execute applications by clicking, while in the command-line interface (CLI, on the right), you type text-like commands on your keyboard to do the same (and much more!).*
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+In the terminal, get used to using only the keyboard and abandon the use of the mouse.
+</span>
+</div><br>
+
+<!-- ## Keyboard shortcuts -->
+
 
 ___
 
 # 1. Unix Shell
 
+A Unix shell is a **command-line interpreter** that translates the user-provided text-like commands to a form understandable by the **kernel** of a computer operating system. A kernel is a low-level program in the core of operating system that communicates with the hardware. The shell serves as both a language providing built-in commands and a scripting language giving the user more freedom to build custom pipelines. Thus, the shell is launched in the **terminal window**, right after the user opens it. In the most popular Linux distribution, such as Ubuntu, **Bash** (*Bourne-Again Shell*) is a default pre-installed Unix shell. However, on high-performance computing infrastructures (HPC) the **C-shell**, such as *csh* or *tcsh* may be preffered.
+
+<!-- TO DO: image terminal-shell-kernel -->
+
+<!-- TO DO section: Headers for different shells -->
+
+
 ## 1.1 Unix Shell Terminology
 
 |*TERM*|*DEFINITION*|*NOTES*|
 |-------|------|-------|
-|**filename**| the name of a file |  In Unix it is better to not include spaces in names for directories. <br>The underscore "_" can be used to replace any spaces you might want. |
+|**terminal**| program that provides the user interface for the Unix shell | |
+|**shell**| Linux command line interpreter | the most popular is *sh* (known as *Bash*) shell, but some power users prefer alternatives such as *csh* (*C shell*), *ksh* (*Korn shell*), *zsh*, (*Z shell*)|
+|**kernel**| the core of the computer oparating system ||
+|**user**| the name of a user currently logged in to the system| |
+|**root/sudo**| the super-user with admin privileges ||
 |**path**| location in the file system | |
+|**filename**| the name of a file |  In Unix it is better to not include spaces in names for directories. <br>The underscore "_" can be used to replace any spaces you might want. |
+|**command**|a buil-in word that is interpreted by a shell and triggers the execution of a specific process ||
 |**alias**| the shortcut for a more complex set of commands| aliases can be defined in the **.bashrc** file |
+|**script**| a more complex set of commands stored in the file; often encapsulated within a loop syntax and executed under the conditionalities of the algorithm | - to run a script saved to a file you need give it executable permissions using `chmod` command <br>- commands stored in a file can also always be run by preceding the file path with a dot-and-space syntax: `. path/script.sh` |
 
 
 ## 1.2 Unix Shell Variables
@@ -68,7 +91,7 @@ Some variables that are useful are:
 | `HISTFILE` | file where the history is saved    |
 
 
-## 1.3 HOME directory
+# 2. HOME directory
 
 The **HOME** directory is the default localization in the file system once you log in on the remote computing machine or open the terminal window on your local computer. Usually, it is called with the **{username}**, especially on a multiuser infrastructure. The parent directory gathers the home directories of all users present on a given operating system and is typically named `Users` or `home`. The latter is located in the ROOT, i.e., outer-most layer of the hierarchical file system. You can go there directly by prefixing the directory name with `/` (or `\` on Windows). <br>
 Thus, your `HOME` directory is accessible on the path:
@@ -100,7 +123,7 @@ Table 1. The structure of a file system for various operating systems. HOME corr
 |--------------|-------|-------|---------|
 |**ROOT/**<br>\|- home/**{username}/**<br>&emsp;\|- ***.bashrc***<br>\|- project *(working dir)*<br>\|- **bin/** (or apps)<br>\|- etc/<br>\|- lib/<br>\|- opt/<br>\|- tmp/<br><br><br><br><br><br><br><br><br>       |**ROOT/**<br>\|- home/**{username}/** <br> &emsp;\|- Desktop/<br>&emsp;\|- Documents/<br>&emsp;\|- Downloads/<br>&emsp;\|- .local/<br>&emsp;&emsp;\|- bin/<br>&emsp;\|- .ssh/<br>&emsp;\|- *.bash_profile*<br>&emsp;\|- ***.bashrc***<br>&emsp;\|- *.bash_history*<br>\|- **bin/**<br>\|- etc/<br>\|- lib/<br>\|- opt/<br>\|- tmp/<br><br>       |**ROOT/**<br>\|- /Users/**{username}/** <br>&emsp;\|-**Applications/**<br>&emsp;\|-Desktop/<br>&emsp;\|-Documents/<br>&emsp;\|-Downloads/<br>&emsp;\|-Library/<br>&emsp;\|- .bin/<br>&emsp;\|- .ssh/<br>&emsp;\|- *.bash_profile*<br>&emsp;\|- ***.bashrc***<br>&emsp;\|- *.bash_history*<br>\|- bin/<br>\|- etc/<br>\|- Library/<br>\|- opt/<br>\|- tmp/<br>      |**ROOT/**<br>\|- Desktop\\<br>\|- Documents\\<br>\|- Downloads\\<br>\|- **C:\\**<br>&emsp;\|- Windows\\<br>&emsp;\|- **Program Files\\**<br>&emsp;\|- Users\\**{username}\\**<br>&emsp;&emsp;\|- ***.bashrc***<br><br><br><br><br><br><br><br><br>|
 
-### What is the HOME folder used for?
+## 2.1 What is the HOME folder used for?
 
 A HOME directory is the **core of the user space**, where you can store all your files, especially configuration files should be placed there. The user assigned to a particular home directory has permission to create and delete files and directories. On multi-user systems, however, it is not allowed to view or modify another user's data unless it is granted access privileges.
 
@@ -109,16 +132,16 @@ As you can see in Table 1, the $HOME folder contains several built-in subdirecto
 
 
 
-### Is HOME a working directory?
+## 2.2 Is HOME a working directory?
 
 On a private computer, subdirectories with projects and data are usually created directly in $HOME. However, on shared computing infrastructures such as HPC clusters, the amount of memory allocated to a user in HOME is limited (e.g., 5GB quota). Thus, recommendation says to keep only configuration files and important installations there. The project data, virtual environments and specific software are stored in another location, referred to as a **working space**. Usually this is another directory located directly in ROOT, for example `/work` or `/project`. There, subdirectories are created for individual research groups or collaborative projects, to which specific user groups have access. Such organization on the computing infrastructure allows to keep order and optimize the use of resources, for example, by reducing the redundancy of files on which several users work concurrently.
 
-### Good practices for HOME organization
+## 2.3 Good practices for HOME organization
 
 (on local machine, on remote machine)
 
 
-## 1.4 Unix Shell Configuration
+# 3. Unix Shell Configuration
 
 Once you access the file system using terminal window or command prompt, the settings for the Unix shell will be stored in the `.bashrc` and/or `.bash_profile` files. As you noticed, those files are prefixed with a dot `.` what gives them a hidden property. That means they will NOT be listed in the result of `ls` command unless you use it with an **-a** flag, i.e., `ls -a`.
 
@@ -126,7 +149,7 @@ Once you access the file system using terminal window or command prompt, the set
 
 ### **.bash_profile**
 
-### Prompt
+## 3.1 Setting up prompt
 
 **Prompt** is a pre-defined field in the terminal emulator which tells you, by default, who is the current user on which host and what is the current location in the file system. It always appears on the left-hand side of the terminal window
 
@@ -154,7 +177,7 @@ fi
 ```
 
 
-### Terminal Coloring
+## 3.2 Terminal Coloring
 
 
 on Linux:
@@ -179,6 +202,9 @@ export LSCOLORS=Exgxcxdxcxegedabagacad
 alias ls='ls -Gh'
 ```
 
+## 3.3 Define aliases
+
+## 3.4 Load modules
 
 ___
 # Further Reading
