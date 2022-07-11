@@ -146,7 +146,7 @@ Note that ~ refers to the $HOME of a given user and / refers to the root directo
 </span>
 </div><br>
 
-Then, youb should find on your screen a bunch of files starting with a dot, such as `.bashrc`, `.bash_profile`, and `.bash_history`.
+Then, you should find on your screen a bunch of files starting with a dot, such as `.bashrc`, `.bash_profile`, and `.bash_history`.
 
 ![grep from command history](assets/images/terminal_bash_history.png)
 
