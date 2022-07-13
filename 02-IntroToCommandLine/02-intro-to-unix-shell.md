@@ -231,7 +231,8 @@ ls -a ~
 <br><span style="font-style:italic;">
 Note that <b>~</b> refers to the $HOME of a given user.
 </span>
-</div><br>
+</div>
+
 
 Then, you should find `.bashrc` and `.bash_profile`on your screen.
 
@@ -264,7 +265,7 @@ source ~/.bashrc
 source ~/.bash_profile
 ```
 
-By *activate*, I mean here applaying the changed values of the shell variables, loading new modules, adding new aliases to the list of known commands, etc.
+By *activate*, I mean applaying to the current environment the changed values of the shell variables, loading new modules, adding new aliases to the list of known commands, etc.
 
 <div style="background: mistyrose; padding: 15px;">
 <span style="font-weight:800;">WARNING:</span>
@@ -288,10 +289,20 @@ To learn more about this topic, I recommend following the discussion thread on t
 
 ## 3.2 Setting up prompt
 
-**Prompt** is a pre-defined field in the terminal emulator which tells you something about the current settings for the Unix shell. It always appears on the left-hand side of the terminal window. By default, the syntax includes who is the current user on which host and what is the current location in the file system. But this can vary on different operating systems. The default prompt is white, but everything can be customized to your needs, both the syntax elements and their colors. See the possible difference of customization in the image below.
+**Prompt** is a pre-defined field in the terminal emulator which tells you something about the current settings for the Unix shell. It always appears on the left-hand side of the command line in the terminal window. By default, the syntax includes who is the **current user** on **which host** and what is the **current location** in the file system. But this can vary on different operating systems. The default prompt is white, but everything can be customized to your needs, both the syntax elements and their colors. See the possible difference of customization in the image below.
 
 ![shell prompt](assets/images/shell_prompt.png)
 
+The definition of a prompt is stored in the $PS1 variable. You can display its value just as any other shell variable.
+
+```
+echo $PS1
+```
+![shell prompt](assets/images/shell_prompt_variable.png)
+
+At first glance, the syntax may seem complicated. However, everything becomes easier when you break it down into the individual components. In the image, the colors highlight five chunks in the syntax. Each contains one variable, such as `\u` or `\h` (see the table below for a complete list of available options), and an additional code. If you look closely, this other code is repetitive and can be reduced to two unique syntaxes: `\[\e[X;Ym\]` and `\[\e[m\]` for start coloring and stop coloring, respectively. `X` denotes the text decoration, such as bold, dim, or underlined, and `Y` is a number coding specific color. You can find the exact definitions for available options below. Note that if you change one color to another, then stopping the color is not necessary. On the other hand, if you want to return to the default (white) color, you must use the syntax for stop. That is especially important at the end of the definition so that text typed on the command line will be in the default color (unless you wish otherwise).
+
+The table below contains variables that can be used when defining a customized prompt.
 
 |syntax|DEFINITION                 |syntax|DEFINITION|
 |------|---------------------------|------|----------|
@@ -307,32 +318,61 @@ To learn more about this topic, I recommend following the discussion thread on t
 |`\e[m` | stop color syntax (non-printing characters) |
 |`${var}` | use shell variable |
 
-Terminal color codes:
-<span style="background-color: black; color: white;"> black: </span> `30`
-<span style="background-color: red; color: white;"> red: </span> `31`
-<span style="background-color: green; color: white;"> green: </span> `32`
-<span style="background-color: yellow; color: black;"> yellow: </span> `33`
-<span style="background-color: blue; color: white;"> blue: </span> `34`
-<span style="background-color: purple; color: white;"> purple: </span> `35`
-<span style="background-color: cyan; color: black;"> cyan: </span> `36`
-<span style="background-color: lightgray; color: black;"> light-gray: </span> `37`
+The table below contains the most popular text decorations and colors used to customize the Unix shell prompt. There are many more options that you can follow at [misc.flogisoft.com](https://misc.flogisoft.com/bash/tip_colors_and_formatting).
 
-Attributes:
-`0` - normal text
-`1` - **bold text**
-`2` - dim text
-`4` - <u>underlined text</u>
-`5` - blinking text
-`7` - reverse text color with a background
-`8` - hidden text
+| text decoration    | foreground text color | prompt background color |
+|--------------------|-----------------------|-------------------------|
+|`0` - normal text   |`30` - <span style="background-color: white; color: black;"> black </span> | `40` - <span style="background-color: black; color: white;"> black </span> |
+|`1` - **bold text** |`31` - <span style="background-color: white; color: red;"> red </span>     | `41` - <span style="background-color: red; color: white;"> red </span>     |
+|`2` - dim text      |`32` - <span style="background-color: white; color: green;"> green </span> | `42` - <span style="background-color: green; color: white;"> green </span> |
+|`3` - <i>italic</i>|`33` - <span style="background-color: black; color: yellow;"> yellow </span> | `43` - <span style="background-color: yellow; color: black;"> yellow </span> |
+|`4` - <u>underlined text</u> |`34` - <span style="background-color: white; color: blue;"> blue </span>   | `44` - <span style="background-color: blue; color: white;"> blue </span>   |
+|`5` - blinking text |`35` - <span style="background-color: white; color: purple;"> purple </span> | `45` - <span style="background-color: purple; color: white;"> purple </span> |
+|`7` - reverse text color with a background |`36` - <span style="background-color: black; color: cyan;"> cyan </span>   | `46` - <span style="background-color: cyan; color: black;"> cyan </span>   |
+|`9` - strikethrough   |`37` - <span style="background-color: black; color: lightgray;"> light-gray </span> | `47` - <span style="background-color: lightgray; color: black;"> light-gray </span> |
 
-Set colored Prompt syntax using variables from the table above:
+You can test the result of your prompt style during development stage witch `printf` command (and appending a newline character `\n` to the end of your syntax). For a single element, you can use any pair of foreground text & background color, and a combination of multiple text decorations, all separated by `;`. Note, however, that not all decorations (e.g., *italic* or blinking) work on all types of terminals.
+
+```
+# text decorations
+printf "\e[1mBOLD\e[0m\n"
+printf "\e[2mDIM\e[0m\n"
+printf "\e[3mITALIC\e[0m\n"
+printf "\e[4mUNDERLINE\e[0m\n"
+printf "\e[5mBLINK\e[0m\n"
+printf "\e[7mREVERSE\e[0m\n"
+printf "\e[8mHIDDEN\e[0m\n"
+printf "\e[9mSTRIKETHROUGH\e[0m\n"
+
+# text colors
+printf "\e[33mYELLOW\e[0m\n"
+printf "\e[36mCYAN\e[0m\n"
+
+# background colors
+printf "\e[41mRED\e[0m\n"
+printf "\e[45mPURPLE\e[0m\n"
+
+# combined effects
+printf "\e[4;31;43mUNDERLINE-RED-TEXT-ON-YELLOW-BACKGROUND\e[0m\n"
+printf "\e[1;5;36;45mBOLD-BLINK-CYAN-TEXT-ON-PURPLE-BACKGROUND\e[0m\n"
+```
+
+<p align="center"><img width="800" src="assets/images/prompt.gif"></p>
+<p align="center">^ Note that strikethrough option didn't work on my terminal. It should look like <b><del>STRIKETHROUGH</del></b>. </p>
+
+Set your colored Prompt syntax using variables and text decorations from the tables above and paste it into your `~/.bashrc` following the given example, in which you will get the <span style="background-color: white; color: red; font-weight:600;"> &ensp; user@host:path$ &ensp;</span> for a root-user and <span style="background-color: white; color: green; font-weight:600;"> &ensp; user@host:path$ &ensp;</span> for any other user.
 ```
 if [[ $USER = "root" ]]; then
-  PS1="\\[\e[1;31m\\]\u\\[\e[m\\]@\h\\[\e[0;37m\\](\s):\\[\e[0;32m\\]\W\\[\e[1;31m\\]$\\[\e[m\\] "
+  PS1="\[\e[1;31m\]\u@\h:\w\$\e[0m "
 else
-  PS1="\\[\e[1;36m\\]\u\\[\e[m\\]@\h\\[\e[0;37m\\](\s):\\[\e[0;32m\\]\W\\[\e[1;31m\\]$\\[\e[m\\] "
+  PS1="\[\e[1;32m\]\u@\h:\w\$\e[0m "
 fi
+```
+
+To get prompt like mine, <span style="background-color: black; color: cyan; font-weight:600;"> &ensp; user</span><span style="background-color: black; color: white; font-weight:300;">@host</span><span style="background-color: black; color: lightgray; font-weight:300;">(shell):</span><span style="background-color: black; color: lightgreen; font-weight:400;">path</span><span style="background-color: black; color: red; font-weight:600;">$ &nbsp;</span>, use the syntax below:
+
+```
+PS1="\[\e[1;36m\]\u\[\e[m\]@\h\[\e[0;37m\](${shell}):\[\e[0;32m\]\W\[\e[0;31m\]$\[\e[m\]"
 ```
 
 
