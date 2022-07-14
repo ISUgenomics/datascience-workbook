@@ -507,6 +507,13 @@ alias source_condaX86="source /Users/$USER/Library/Miniforge3_x86/bin/activate"
 alias source_conda="source /Users/$USER/Library/Miniforge3/bin/activate"
 ```
 
+<div style="background: mistyrose; padding: 15px;">
+<span style="font-weight:800;">WARNING:</span>
+<br><span style="font-style:italic;">
+While the temptation is high, you must <b>NOT create aliases to store passwords</b> in this way. Doing so would be a serious threat not only to your privacy, but also a significant security risk to the entire HPC infrastructure and all users.
+</span>
+</div><br>
+
 
 ## 3.5 Load modules
 
@@ -541,6 +548,17 @@ Keeping your <b>.bashrc</b> neatly organized will bring you convenience, especia
 </span>
 </div><br>
 
+<div style="background: mistyrose; padding: 15px;">
+<span style="font-weight:800;">WARNING:</span>
+<br><span style="font-style:italic;">
+Prudence lies in moderation. So do NOT add modules used infrequently or only in a specific pipeline to your ~/.bashrc. Watch out for this, especially on a computing cluster, where the resources allocated for your $HOME are often severely limited.<br><br>
+
+<b>So, how can you keep the organizations of the modules necessary for the various analyses?</b><br>
+The answer comes from virtual environments. You can create a new environment for a particular analysis and within it manage the list of necessary modules. <b>For python-based environments, Conda will provide you with assistance.</b> You can learn more by following the tutorial in section 3 of the workbook, Setting Up Computing Machine -> Must-Have Software -> <a href="https://datascience.101workbook.org/03-SetUpComputingMachine/02C-basic-developer-libraries">Basic Developer Libraries</a>.
+</span>
+</div><br>
+
+
 ## 3.6 Export $PATH and more
 
 Exporting a **$PATH** variable is probably the most commonly used example for the `export` command. It is also a common topic on programming forums, where novice bash users struggle with errors appearing when called programs don't work. $PATH is an environmental variable that tells the shell where to search in file system for executable files called by a user. To see what file system locations are added to the list of paths searched to run an executable of a program, display the contents of the $PATH variable:
@@ -570,7 +588,9 @@ That means you just added a new location in the file system at the beginning of 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
-With the <b>export</b> command you can overwrite or update the value of any environment variable in the Unix shell.
+With the <b>export</b> command you can overwrite or update the value of any environment variable in the Unix shell. <br>
+For example, directly from the command line you can change the number of commands saved in the Bash shell history: <br>-----------------------<br>
+export HISTSIZE=300
 </span>
 </div><br>
 
