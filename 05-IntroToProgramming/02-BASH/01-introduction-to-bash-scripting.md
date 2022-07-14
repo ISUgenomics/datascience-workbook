@@ -18,15 +18,15 @@ header:
 
 ## 1.1 Bash shortcuts
 
-### - TILDE (~) EXPANSION
+### - **~** EXPANSION
 
 ~ is a shortcut for the $HOME location in the file system
 
-### - ASTERISK & QUESTION-MARK (*?)
+### - **\*** and **?** EXPANSION
 
-? denotes single unknown characters in a string
+\*  -> denotes multiple unknown characters in a string
 
-\* denotes multiple unknown characters in a string
+? -> denotes single unknown characters in a string
 
 USAGE in regular expressions:
 
@@ -40,7 +40,7 @@ USAGE in regular expressions:
 
 -- to use/substitute the variable's value
 
-## 2.2 Logical operators
+## 1.2 Logical operators
 
 ### - FILE OPERATORS
 
@@ -54,7 +54,7 @@ USAGE in regular expressions:
 
 -eq, -ne, -lt, -le, -gt, -ge
 
-## 2.3 In-shell arithmetic
+## 1.3 In-shell arithmetic
 
 ### - OPERATORS
 
@@ -68,7 +68,7 @@ B. +, -, *, /, %, ^
 
 ^ floating-point arithmetic is not supported
 
-### - EXPANSION
+### - BRACE EXPANSION
 
 e.g,
 
@@ -82,19 +82,25 @@ e.g,
 
 e.g, `k=1; let k=$k + 2`
 
-### - bc command *(supports floating-point up to 20 decimal places)*
+### - bc command
+
+*(supports floating-point up to 20 decimal places)*
 
 e.g, `echo "1.5 + 2.0" | bc -l`
 
-### - awk command *(supports floating-point up to 6 decimal places)*
+### - awk command
+
+*(supports floating-point up to 6 decimal places)*
 
  e.g., `awk 'BEGIN { x = 1.5; y = 1.5; print "x + y = "(x+y) }'`
 
-### - pearl command *(supports floating-point up to 20 decimal places)*
+### - pearl command
+
+*(supports floating-point up to 20 decimal places)*
 
 e.g., perl -e 'print 1.5+2.0'
 
-## 2.4 In-line substitution
+## 1.4 In-line substitution
 
 ^ useful as in-line generators of arguments for **for** loop
 
@@ -155,16 +161,16 @@ D. OUTPUT
 
 # 4. In-file scripting
 
-## 4.1 Setting up the script file
+## 4.1 Setting up the script
 
 * link to the tutorial about text editors
 * link to the tutorial about Bash file management (touch, cat, head, tail, less, more, etc.)
 
-### HEADER
+### - HEADER
 
 `#!/bin/env bash` instead `#!/bin/bash` as a more robust solution
 
-### VARIABLES
+### - VARIABLES
 
 A. FROM ARGUMENT
 
@@ -190,7 +196,7 @@ D. LOCAL
 
 -- disappears after leaving the expression
 
-### ALGORITHM
+### - ALGORITHM
 
 A. PIPE-linked stream of Commands
 
@@ -208,7 +214,7 @@ D. GRAPHICAL OUTPUTS: generate graphs with gnuplot *(brief, then redirect to oth
 
 i.e., encapsulate gnuplot script in a bash **for** loop and return image files
 
-## 4.2 Executing the script file
+## 4.2 Executing the script
 
 ### - FILE PERMISSIONS - `chmod`
 
