@@ -553,7 +553,7 @@ Keeping your <b>.bashrc</b> neatly organized will bring you convenience, especia
 <br><span style="font-style:italic;">
 Prudence lies in moderation. So do NOT add modules used infrequently or only in a specific pipeline to your ~/.bashrc. Watch out for this, especially on a computing cluster, where the resources allocated for your $HOME are often severely limited.<br><br>
 
-<b>So, how can you keep the organizations of the modules necessary for the various analyses?</b><br>
+<b>So, how can you keep the organizations of the modules necessary for analyses?</b><br>
 The answer comes from virtual environments. You can create a new environment for a particular analysis and within it manage the list of necessary modules. <b>For python-based environments, Conda will provide you with assistance.</b> You can learn more by following the tutorial in section 3 of the workbook, Setting Up Computing Machine -> Must-Have Software -> <a href="https://datascience.101workbook.org/03-SetUpComputingMachine/02C-basic-developer-libraries">Basic Developer Libraries</a>.
 </span>
 </div><br>
