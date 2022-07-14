@@ -372,7 +372,7 @@ fi
 To get prompt like mine, <span style="background-color: black; color: cyan; font-weight:600;"> &ensp; user</span><span style="background-color: black; color: white; font-weight:300;">@host</span><span style="background-color: black; color: lightgray; font-weight:300;">(shell):</span><span style="background-color: black; color: lightgreen; font-weight:400;">path</span><span style="background-color: black; color: red; font-weight:600;">$ &nbsp;</span>, use the syntax below:
 
 ```
-PS1="\[\e[1;36m\]\u\[\e[m\]@\h\[\e[0;37m\](${shell}):\[\e[0;32m\]\W\[\e[0;31m\]$\[\e[m\]"
+PS1="\[\e[1;36m\]\u\[\e[m\]@\h\[\e[0;37m\](\s):\[\e[0;32m\]\W\[\e[0;31m\]$\[\e[m\]"
 ```
 
 
@@ -383,7 +383,7 @@ Prompt is not the only thing in the terminal that you can configure to your need
 
 **Linux**
 
-In the previous section (customizing the command line prompt) the standard color codes for Bash and possible text decorations were introduced. Exactly same definition applies to setting styles for listing the file system when using the ls command. To avoid page scrolling let's see these options again (find more at [misc.flogisoft.com](https://misc.flogisoft.com/bash/tip_colors_and_formatting)).
+In the previous section (customizing the command line prompt) the standard color codes for Bash and possible text decorations were introduced. Exactly same definition applies to setting styles for listing the file system when using the `ls` command. To avoid page scrolling let's see these options again (find more at [misc.flogisoft.com](https://misc.flogisoft.com/bash/tip_colors_and_formatting)).
 
 | text decoration    | foreground text color | prompt background color |
 |--------------------|-----------------------|-------------------------|
@@ -468,7 +468,7 @@ alias ls='ls -Gh'
 
 ## 3.4 Define aliases
 
-In the Unix shell, **alias** is a text-like shortcut for the more complex set of commands that can be called directly from the command line by a user-customized name. Traditionally, aliases are defined in the `~/.bashrc file`, so the predefined aliases are available for the user right after opening the terminal window.  The syntax is straightforward, use the `alias` keyword followed by the quniue name to which you assign a value using an equals sign. The value is a string containing the stream of commands, with syntax identical to that used directly on the command line.
+In the Unix shell, **alias** is a text-like shortcut for the more complex set of commands that can be called directly from the command line by a user-customized name. Traditionally, aliases are defined in the `~/.bashrc` file, so the predefined aliases are available for the user right after opening the terminal window.  The syntax is straightforward, use the `alias` keyword followed by the quniue name to which you assign a value using an equals sign. The value is a string containing the stream of commands, with syntax identical to that used directly on the command line.
 
 ```
 alias unique_name="command_1 | command 2 | command_3"
@@ -483,7 +483,7 @@ Adding aliases can be useful for:
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
-Keeping your <b>.bashrc</b> neatly organized will bring you convenience, especially when you want to change something after a long time. Therefore, it is suggested that you create a separate section in this file for all the aliases you will add over time. It is best to give this section a highly visible header. As a reminder, <b>#</b> is a comment character in the bash shell.
+Keeping your <b>.bashrc</b> neatly organized will bring you convenience, especially when you want to change something after a long time. Therefore, it is suggested that you create <b>a separate section in this file for all the ALIASES</b> you will add over time. It is best to give this section a highly visible header. As a reminder, <b>#</b> is a comment character in the bash shell.
 </span>
 </div><br>
 
@@ -525,6 +525,21 @@ module load python/3.9.2
 ```
 
 ![terminal colors](assets/images/shell_module_load.png)<br>
+
+In case you want to always start your Bash shell session with a specific module loaded, the best solution is to add the command to your `~/.bashrc`. This will simplify your working routine, especially if you have an entire list of necessary modules. So let's say you would like to always have `python/3.9.2` loaded by default into your environment. Thus, add the following snippet to your `~/.bashrc`:
+
+```
+### USER's MODULES LOADED ON STARTUP ###
+
+module load python/3.9.2
+```
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+Keeping your <b>.bashrc</b> neatly organized will bring you convenience, especially when you want to change something after a long time. Therefore, it is suggested that you create <b>a separate section in this file for all the MODULES</b> you will add over time. It is best to give this section a highly visible header. As a reminder, <b>#</b> is a comment character in the bash shell.
+</span>
+</div><br>
 
 ## 3.6 Export $PATH and more
 
