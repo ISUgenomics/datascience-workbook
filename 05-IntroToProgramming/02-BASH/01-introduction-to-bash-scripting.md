@@ -1,8 +1,8 @@
 ---
 title: "Introduction to Bash Scripting"
 layout: single
-author:
-author_profile: false
+author: Aleksandra Badaczewska
+author_profile: true
 header:
   overlay_color: "444444"
   overlay_image: /05-IntroToProgramming/assets/images/05_programming_banner.png
@@ -198,7 +198,7 @@ e.g., `cat file | grep "keyword" | tr '-' ' ' | awk '{print $2,$4,$6}' | sort -n
 
 B. Encapsulation in a loop
 
-e.g., `for i in {0..10}; do toch file-$i; done`
+e.g., `for i in {0..10}; do touch file-$i; done`
 
 C. TEXT OUTPUTS
 
