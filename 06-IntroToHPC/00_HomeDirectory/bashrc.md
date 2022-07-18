@@ -129,6 +129,7 @@ fi
   # HPC
   alias si="sinfo -o \"%20P %5D %14F %8z %10m %10d %11l %16f %N\""
   alias sq="squeue -o \"%8i %30j %4t %10u %20q %20a %10g %20P %10Q %5D %11l %11L %R %Z\""
+  alias sacct='sacct --format JobID,Partition,Timelimit,Start,Elapsed,NodeList%20,ExitCode,ReqMem,MaxRSS,MaxVMSize,AllocCPUS'
 
 ###############################
 ## Never ending history:  never lose a command due to a history limit.
