@@ -10,7 +10,6 @@ header:
 
 {% include toc %}
 
-## <span style="color: #ff3870;">New content coming soon!</span>
 
 # Introduction
 
@@ -164,7 +163,7 @@ compgen -k
 
 There are about twenty-some Bash statements, which can be further divided into several groups, including **loops**, **conditionals**, the **action operators**, and others. The table below contains the syntax, type, and definitions of the most common Bash statements. Explore additional columns of notes to gain an idea of when to use different syntaxes. In the following subsections, we will discuss the usage of Bash statements following real-life examples.
 
-|<div style="width:85px">statement</div>| type               | definition | notes |
+|statement      | type               | definition | notes |
 |---------------|--------------------|------------|-------|
 | for           | loop               | iterating over **each item** in the list            | use if you want to execute commands in order for all items in the list<br> YES, nested loops are allowed |
 | while         | loop               | iterating as long as the condition is **true**      | use if you want to perform a certain number of iterations, such as reading a file line by line|
