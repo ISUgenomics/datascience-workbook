@@ -104,7 +104,7 @@ echo "1.5 + 2.0" | bc -l
 awk 'BEGIN { x = 1.5; y = 1.5; print "x + y = "(x+y) }'
 ```
 
-### - pearl command
+### - perl command
 
 *(supports floating-point up to 20 decimal places)*
 
@@ -121,12 +121,12 @@ perl -e 'print 1.5+2.0'
 A. Use the array of strings<br>
 *(note that there are no spaces)*
 ```
-echo "Hello "{Universe,World,Contry,City,Friend}"!"
+echo "Hello "{Universe,World,Contry,City,Friend}
 ```
 
 B. Use the array of auto-generated integers
 ```
-echo "Count "{0..10}"!"
+echo "Count "{0..10}
 ```
 
 C. Use combinations of many arrays
@@ -166,14 +166,14 @@ There are about twenty-some Bash statements, which can be further divided into s
 |statement      | type               | definition | notes |
 |---------------|--------------------|------------|-------|
 | for           | loop               | iterating over **each item** in the list            | use if you want to execute commands in order for all items in the list<br> YES, nested loops are allowed |
-| while         | loop               | iterating as long as the condition is **true**      | use if you want to perform a certain number of iterations, such as reading a file line by line|
+| while         | loop               | iterating as long as the condition is **true**      | use if you want to perform a certain number of iterations, such as reading a file line by line<br>YES, infinite loop is possible, try `while :` |
 | until         | loop               | iterating as long as the condition is **false**     | use if you want to perform an infinite number of iterations terminated by meeting a condition<br> the frequency of execution of the condition is usually adjusted with the `sleep` command |
 | select        | loop               | selective iterating over options in the menu    | use to give the user the interactive option to select items from a menu (predefined list) |
 | if ... fi     | conditional        | considering the first condition                 | use `if` for the first condition and `fi` after the last condition |
 | elif          | conditional        | considering the next condition                  | use for the second and following conditions |
 | else          | conditional        | operation for all other scenarios               | if no condition was met then follow these commands |
 | case ... esac | conditional        | matching condition for query variable           | use when all of the conditions depend <br>on the value of the same variable<br> |
-| in            | iteration operator | iterating in the `for` and `select` loops       |for loop syntax:<br> `for item in {1..5}; do commands; done`<br> select llop syntax:<br> `select item in {1..5}; do commands; done`|
+| in            | iteration operator | iterating in the `for` and `select` loops       |for loop syntax:<br> `pearfor item in {1..5}; do commands; done`<br> select llop syntax:<br> `select item in {1..5}; do commands; done`|
 | do ... done   | action operator    | encapsulating the contents of the loop          | use the syntax: `do commands; done` in a loop syntax|
 | then          | action operator    | executing commands if condition is true         | use the syntax: `if condition; then commands; fi` |
 | break         | action operator    | terminating the current loop                    | use to terminate a loop at this point<br> and go straight to the commands that follows |
@@ -195,7 +195,7 @@ The syntax is made up of several keywords reserved for the bash shell and custom
 ```
 for item in {first,second,third,fourth,fifth}
 do
-    echo $i
+    echo $item
 done
 ```
 
@@ -401,6 +401,47 @@ The three most common usages of this loop are iterating for **as long as the spe
 
 
 ### - READ FILE LINE-BY-LINE
+
+Let's first create the simple file with several lines of content:
+
+```
+# script variant
+for i in {Welcome,Hello,Hi}; do
+  for j in {Ana,Eric,Bob}; do
+    for k in {London,NYC,Paris}; do
+      echo $i" "$j" in "$k"." >> file;
+    done;
+  done;
+done
+
+# one-liner variant
+for i in {Welcome,Hello,Hi}; do for j in {Ana,Eric,Bob}; do for k in {London,NYC,Paris}; do echo $i" "$j" in "$k"." >> file; done; done; done
+```
+
+You can previewthe results saved into a file using `less file` command:
+
+![terminal colors](../assets/images/02_bash_for_create_file_content.png)<br>
+
+Once we have a file with some content, we can read it line-by-line with a `while` loop and derive from each line the name and the city.
+
+```
+filename=./file
+
+while read -r line; do
+  echo $line | awk '{print $2,$4}'
+done < "$filename"
+```
+
+The `filename` variable stores the name of recently created file.
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+If you work by executing scripts rather than typing directly on the command line, it's a good practice to create a variable that stores the path to the file. Then running the same script for a different inupt only requires substituting the path or a filename at the top of the file.
+</span>
+</div><br>
+
+In this case, the condition for the `while` loop is replaced by the `read` command followed by the name of the variable in which the loaded content is stored.
 
 ## **UNTIL** false loop
 
