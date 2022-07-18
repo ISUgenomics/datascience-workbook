@@ -16,7 +16,7 @@ The `.bashrc` for bash shell is one of the most useful files for a unix user. It
 * Never ending history
 * Functions
 
-1. Make a backup of your original `.bashrc` file
+1\. Make a backup of your original `.bashrc` file
 
 ```
 cp .bashrc .bashrc.orig
