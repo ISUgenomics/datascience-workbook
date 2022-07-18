@@ -12,10 +12,9 @@ header:
 
 
 
+## Your home folder
 
-## Creating a working directory
-
-When a new users is added to an HPC resource, a home folder is assigned to you.  You are the only non-admin user that has permission to access this folder. It should be noted that admins don't have time or care to be looking in your home folder unless you are flagged for doing something you shouldn't be doing. Here are some home directory location examples:
+When a new users is added to an HPC resource, a home folder is assigned to you.  You are the only non-admin user that has permission to access this folder.  Here are some home directory location examples:
 
 * /home/first.lastname      #linux
 * /Users/loginname          #macOS
@@ -50,14 +49,38 @@ It may also contain empty files that admins set up to determine if the user has 
 * `.phone-collect-complete`
 
 
+## Your Project Folder
+
+A project folder or project space is where a user can perform data analysis. Your home folder is not a good location to do data analysis as it usually is capped to a small amount of storage (ie 5 Gigabytes). If you do not know or do not have a project folder, contact the admins for the HPC resource. Once you know your project folder you can create a softlink in your home folder to make it easy to get to.
+
+First let's create a PROJECTFOLDER variable where `/PATH/To/Working/Directory` is the path to your project folder you just identified. Then, we can make a folder that will act as your HPC notebook where you will perform all of your analyses. We make a new folder to separate your analyses from another user in the same group using the same project folder space.
+
+```
+export PROJECTFOLDER=/PATH/To/Working/Directory
+cd
+mkdir $PROJECTFOLDER/${USER}_notebook
+ln -s $PROJECTFOLDER/${USER}_notebook
+```
+
+Now if you list the contents of your home folder you should see a folder with the same name as your working directory
+
 ## .bashrc
 
 Copy the contents of [this file to your .bashrc](.bashrc)
+
+Be sure to update this line `export PROJECTFOLDER=/PATH/To/Working/Directory` with your project folder
 
 ```
 cp .bashrc .bashrc.orig
 nano .bashrc
 ```
+
+Next time you login it will use the new `.bashrc` file.  If you don't want to login again you can execute this command.
+
+```
+source .bashrc
+```
+
 
 ## Create softlinks for common folders
 
@@ -66,22 +89,22 @@ Home directories tend to be small in size, meaning they shouldn't be used for da
 Step1: export the path to your projectfolder so that we can softlink folders there
 ```
 export PROJECTFOLDER=/PATH/To/Working/Directory
-mkdir $PROJECTFOLDER/$USER
+mkdir $PROJECTFOLDER/${USER}_notebook
 ```
 
 
 ```
-mkdir $PROJECTFOLDER/$USER/.config
-mkdir $PROJECTFOLDER/$USER/.nextflow
-mkdir $PROJECTFOLDER/$USER/.singularity
-mkdir $PROJECTFOLDER/$USER/.irods
-mkdir $PROJECTFOLDER/$USER/.cache
-mkdir $PROJECTFOLDER/$USER/.spack
-mkdir $PROJECTFOLDER/$USER/.plotly
-mkdir $PROJECTFOLDER/$USER/.conda  
-mkdir $PROJECTFOLDER/$USER/.local
-mkdir $PROJECTFOLDER/$USER/.lmod.d
-mkdir $PROJECTFOLDER/$USER/.ncbi
-ls -d $PROJECTFOLDER/$USER/.* | sort | awk 'NR>2' | xargs -I xx ln -s xx
+mkdir $PROJECTFOLDER/${USER}_notebook/.config
+mkdir $PROJECTFOLDER/${USER}_notebook/.nextflow
+mkdir $PROJECTFOLDER/${USER}_notebook/.singularity
+mkdir $PROJECTFOLDER/${USER}_notebook/.irods
+mkdir $PROJECTFOLDER/${USER}_notebook/.cache
+mkdir $PROJECTFOLDER/${USER}_notebook/.spack
+mkdir $PROJECTFOLDER/${USER}_notebook/.plotly
+mkdir $PROJECTFOLDER/${USER}_notebook/.conda  
+mkdir $PROJECTFOLDER/${USER}_notebook/.local
+mkdir $PROJECTFOLDER/${USER}_notebook/.lmod.d
+mkdir $PROJECTFOLDER/${USER}_notebook/.ncbi
+ls -d $PROJECTFOLDER/${USER}_notebook/.* | sort | awk 'NR>2' | xargs -I xx ln -s xx
 
 ```

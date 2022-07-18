@@ -34,7 +34,7 @@ fi
 # corrects for Error:  E437: terminal capability "cm" required
 export TERM=xterm
 
-# Project Directory
+# Project Directory  Be sure to update this path
 export PROJECTFOLDER=/PATH/To/Working/Directory
 
 
