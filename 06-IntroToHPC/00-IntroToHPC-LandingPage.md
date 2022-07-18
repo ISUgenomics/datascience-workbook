@@ -13,7 +13,7 @@ Although today's handy laptops perform many advanced and computationally intensi
 
 ## <span style="color: #8997c1;">Table of contents</span>
 
-### **<a href="00-HomeDirectory/00_setting-up-home-directory" style="color: #24376b;">1. Introduction to HPC infrastructure</a>**
+### **<a href="00-HomeDirectory/00_setting-up-home-directory" style="color: #24376b;">0. Setting up your home directory</a>**
 * <a href="00-HomeDirectory/00_setting-up-home-directory" style="color: #3f5a8a;">Setting up your home directory for data analysis</a>
   * <a href="00-HomeDirectory/.bashrc" style="color: #3f5a8a;">.bashrc example file</a>
 
