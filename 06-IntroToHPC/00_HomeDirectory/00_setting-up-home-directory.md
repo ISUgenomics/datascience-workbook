@@ -14,7 +14,7 @@ header:
 
 ## Your home folder
 
-When a new users is added to an HPC resource, a home folder is assigned to you.  You are the only non-admin user that has permission to access this folder.  Here are some home directory location examples:
+When a new users are added to an HPC resource, a home folder is assigned to you.  You are the only non-admin user that has permission to access this folder.  Here are some home directory location examples:
 
 * /home/first.lastname      #linux
 * /Users/loginname          #macOS
