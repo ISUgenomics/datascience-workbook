@@ -137,16 +137,19 @@ echo {a,b}_{0..5}
 
 ### - COMMAND SUBSTITUTION
 
-Use \`command\` syntax to create the array of items on-the-fly
+Use ``` `command` ``` or an equivalent `$(command)` syntax to create the array of items on-the-fly
 
 ```
 for i in `seq 10`; do echo $i; done
 ```
 
-It works for any command enclosed in the \`\`. The most comman usages are generating array of integers with `seq` command or creating an array of strings read from the one-column file.
+It works for any command enclosed in the \`\` or $(). The most comman usages are generating array of integers with `seq` command or creating an array of strings `cat` from the one-column file.
 ```
 for i in `seq 1 2 10`; do echo $i; done
+for i in $(seq 1 2 10); do echo $i; done
+
 for i in `cat one-column-file`; do echo $i; done
+for i in $(cat one-column-file); do echo $i; done
 ```
 
 ---
@@ -382,7 +385,7 @@ do
 done
 ```
 
-Commands are executed as long as the user-provided condition evaluates to true. Note that the **condition is evaluated** at the beginning of each iteration, so **before executing** the block of commands. The conditional could involve operators on files, strings comparison, the numerical equivalence of integer iterator, or infinity condition. To learn more about Bash logical operators, revisit section 1.2 in this tutorial. Below you can find some handy tips for different conditionals:
+Commands are executed as long as the user-provided **condition evaluates to true**. Note that the **condition is evaluated** at the beginning of each iteration, so **before executing** the block of commands. The conditional could involve operators on files, strings comparison, the numerical equivalence of integer iterator, or infinity condition. To learn more about Bash logical operators, revisit section 1.2 in this tutorial. Below you can find some handy tips for different conditionals:
 
 
 |FILE OPERATORS            |definition|
@@ -406,7 +409,7 @@ Let's first create the simple file with several lines of content:
 
 ```
 # script variant
-for i in {Anna,Eric,Bob}; do
+for i in {Ana,Eric,Bob}; do
   for j in welcome; do
     for k in {London,NYC,Paris}; do
       echo $i", "$j" to "$k"." >> file;
@@ -446,7 +449,38 @@ In this case, the condition for the `while` loop is replaced by the `read` comma
 
 ## **UNTIL** false loop
 
+**UNTIL** loop iterates as long as the user-provided condition is **false**. So, use `until` loop statement if you want to perform a certain number of iterations, whether that number is known or not. Syntax is made up of `until ` keyword reserved for the bash shell and customized condition provided by the user in square brackets. Similarly to other Bash loops, the commands *(dependent on loop condition)* are encapsulated in the `do ... done` block of code.
+
+**Use a template for WHILE loop**
+```
+until [ <CONDITION> ]
+do
+    <COMMANDS>
+done
+```
+
+Commands are executed as long as the user-provided **condition evaluates to false**. Note that the **condition is evaluated** at the beginning of each iteration, so **before executing** the block of commands. The conditional could involve operators on files, strings comparison, the numerical equivalence of integer iterator, or infinity condition. To learn more about Bash logical operators, revisit section 1.2 in this tutorial.
+
+The most common uses of the until loop include **iterating until the iterator reaches a given value**, or **checking the status of a specific process**.
+
+
+
 ### - STOP ONCE SUCCESS
+
+Let's create a script that will notify you when your queued task on the cluster is finished. The `until` loop will be terminated when the JOBID of your task is no longer visible in the queue on the computing cluster. However, as long as the task is running, comparing the number of matching JOBID to zero will return false in the conditional and the loop will still be active.
+
+```
+JOBID=1689115
+
+until [ `squeue | awk '{print $1}' | grep $JOBID | wc -l` -eq 0 ]
+do
+    sleep 60
+done
+
+echo "Job $JOBID is completed."
+```
+
+![terminal colors](../assets/images/02_bash_until_loop.png)<br>
 
 ## **if-elif-else** conditional
 
