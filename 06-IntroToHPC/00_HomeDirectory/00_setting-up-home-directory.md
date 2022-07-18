@@ -66,9 +66,17 @@ Now if you list the contents of your home folder you should see a folder with th
 
 ## .bashrc
 
-Copy the contents of [this file to your .bashrc](bashrc)
+There is an [example](bashrc) of a `.bashrc` file that you can use as a starter file. Check out the bashrc tutorial and copy the contents of [this file to your .bashrc](bashrc)
 
-Be sure to update this line `export PROJECTFOLDER=/PATH/To/Working/Directory` with your project folder
+Be sure to update the following lines in the file.
+
+
+```
+export PROJECTFOLDER=/PATH/To/Working/Directory
+alias gclone='git clone git clone git@github.com:GITHUBID/$1'  # update your gitorganization or ID here
+```
+
+then replace your existing .bashrc with the new one.
 
 ```
 cp .bashrc .bashrc.orig
@@ -86,12 +94,14 @@ source .bashrc
 
 Home directories tend to be small in size, meaning they shouldn't be used for data analysis or for installing programs. Unfortunately, many programs use the home directory as a default location for installation.  To Avoid running into an issue where you exceed your home directory storage quota, it is strongly recommended to create softlinks for these folders in your main project folder.
 
-Step1: export the path to your projectfolder so that we can softlink folders there
+**Step 1:** export the path to your projectfolder so that we can softlink folders there
+
 ```
 export PROJECTFOLDER=/PATH/To/Working/Directory
 mkdir $PROJECTFOLDER/${USER}_notebook
 ```
 
+**Step 2:** Make new directories in your Project folder notebook and then softlink those folders in your home directory.
 
 ```
 mkdir $PROJECTFOLDER/${USER}_notebook/.config

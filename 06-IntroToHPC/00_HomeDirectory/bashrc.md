@@ -8,6 +8,13 @@ header:
   overlay_image: /06-IntroToHPC/assets/images/06_hpc_banner.png
 ---
 
+The `.bashrc` for bash shell is one of the most useful files for a unix user. It is read every time a new shell is created (for example when submitting jobs).  In many HPC systems, the `.bash_profile` will also contain a line that will source the `.bashrc` upon login.  Below is a `.bashrc` example that has examples of useful features you may want to include in your own `.bashrc` file.
+
+* Exports
+* Singularity
+* Aliases
+* Never ending history
+* Functions
 
 1. Make a backup of your original `.bashrc` file
 
@@ -34,6 +41,16 @@ fi
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
+
+
+###############################
+## Exports: When you need a variable every time you login.
+###############################
+# Extend your PATH to find locally installed programs or scripts
+export PATH="~/bin:$PATH"
+export PATH="$PATH:/home/$USER/.local/bin"
+
+
 
 # corrects for Error:  E437: terminal capability "cm" required
 export TERM=xterm
@@ -63,7 +80,7 @@ fi
 
 
 ###############################
-## Aliases
+## Aliases:  Make your most commonly used commands shorter!
 ###############################
   alias table='column  -t | less -S'  # this produces better columns for output cat file | table
   alias whitespace="sed 's/ /·/g;s/\t/￫/g;s/\r/§/g;s/$/¶/g'"  # show the whitespaces in a file
@@ -114,7 +131,7 @@ fi
   alias sq="squeue -o \"%8i %30j %4t %10u %20q %20a %10g %20P %10Q %5D %11l %11L %R %Z\""
 
 ###############################
-## Never ending history
+## Never ending history:  never lose a command due to a history limit.
 ###############################
 
 # Making never ending history!
@@ -131,16 +148,11 @@ fi
   export PROMPT_COMMAND='hpwd=$(history 1); hpwd="${hpwd# *[0-9]*  }"; if [[ ${hpwd%% *} == "cd" ]]; then cwd=$OLDPWD; else cwd=$PWD; fi; hpwd="${hpwd% ### *} ### $cwd"; history -s "$hpwd"; history -a; history -c; history -r'
   #export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
 
-###############################
-## Exports
-###############################
-# Extend your PATH to find locally installed programs or scripts
-export PATH="~/bin:$PATH"
-export PATH="$PATH:/home/$USER/.local/bin"
+
 
 
 ###############################
-## FUNCTIONS
+## FUNCTIONS: Scripts can be added as functions in this file so you don't have to add it to your path.
 ###############################
 
 pathadd()  # When you are in a hurry and want to add the current path to your PATH variable; not perminent
