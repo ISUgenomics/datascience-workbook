@@ -20,25 +20,23 @@ header:
 
 **~ EXPANSION**
 
-~ is a shortcut for the $HOME location in the file system
+`~` is a shortcut for the $HOME location in the file system
 
 **\* and ? EXPANSION**
 
-**\*** - denotes multiple unknown characters in a string
+`*` - denotes multiple unknown characters in a string
 
-**?** - denotes single unknown characters in a string
+`?` - denotes single unknown characters in a string
 
 USAGE in regular expressions:
 
--- in searching, e.g., with `grep` or `find`
-
--- in listing file system, i.e., `ls`
-
--- in filtering files processed in the **for** loop
+* in searching, e.g., with `grep` or `find`
+* in listing file system, i.e., `ls`
+* in filtering files processed in the **for** loop
 
 **$ for VARIABLES**
 
--- to use/substitute the variable's value
+`$variable` - to use/substitute the variable's value
 
 ## 1.2 Logical operators
 
@@ -62,68 +60,101 @@ A. increment (++n, n++), decrement (--n, n--)
 
 B. +, -, *, /, %, ^
 
-### - LIMITATIONS (intigers)
+### - LIMITATIONS (integers)
 
-^ division by 0 is prohibited
-
-^ floating-point arithmetic is not supported
+* division by 0 is prohibited
+* floating-point arithmetic is not supported
 
 ### - BRACE EXPANSION
 
-e.g,
 
-`echo $((1+2))`
 
-`echo $((x=1, y=1, x+y))`
+```
+echo $((1+2))
+```
 
-`n=1; echo $((++n))`
+```
+echo $((x=1, y=1, x+y))
+```
+
+```
+n=1;
+echo $((++n))
+```
 
 ### - let command
 
-e.g, `k=1; let k=$k + 2`
+```
+k=1;
+let k=$k + 2
+```
 
 ### - bc command
 
 *(supports floating-point up to 20 decimal places)*
 
-e.g, `echo "1.5 + 2.0" | bc -l`
+```
+echo "1.5 + 2.0" | bc -l
+```
 
 ### - awk command
 
 *(supports floating-point up to 6 decimal places)*
 
- e.g., `awk 'BEGIN { x = 1.5; y = 1.5; print "x + y = "(x+y) }'`
+```
+awk 'BEGIN { x = 1.5; y = 1.5; print "x + y = "(x+y) }'
+```
 
 ### - pearl command
 
 *(supports floating-point up to 20 decimal places)*
 
-e.g., perl -e 'print 1.5+2.0'
+```
+perl -e 'print 1.5+2.0'
+```
 
 ## 1.4 In-line substitution
 
-^ useful as in-line generators of arguments for **for** loop
+* useful as in-line generators of arguments for **for** loop
 
 ### - BRACE AUTOCOMPLETION
 
-A. echo "Hello "{Universe,World,Contry,City,Friend}"!" #(using strings)
+A. Use the array of strings<br>
+*(note that there are no spaces)*
+```
+echo "Hello "{Universe,World,Contry,City,Friend}"!"
+```
 
-B. echo "Count "{0..10}"!" #(using numbers)
+B. Use the array of auto-generated integers
+```
+echo "Count "{0..10}"!"
+```
 
-C. possible combinations of many: {a,b}_{0..5}
+C. Use combinations of many arrays
+
+```
+echo {a,b}_{0..5}
+```
 
 ### - COMMAND SUBSTITUTION
 
-A. \`command\` <br>
-*e.g., for i in \`seq 10\`; do echo $i; done*
+Use \`command\` syntax to create the array of items on-the-fly
 
-B. \`seq\`, \`range\`, \`cat one-column-file\`
+```
+for i in `seq 10`; do echo $i; done
+```
+
+It works for any command enclosed in the \`\`. The most comman usages are generating array of integers with `seq` command or creating an array of strings read from the one-column file.
+```
+for i in `seq 1 2 10`; do echo $i; done
+for i in `cat one-column-file`; do echo $i; done
+```
 
 ---
 
 # 2. Bash statements
 
-Bash is a Unix shell that allow you to call processes on the computing machine directly in the command line. In addition to a set of built-in commands *(check them with the `compgen -b` command)* that perform predefined tasks, you can **create your own algorithms in the Bash** shell. To give a structure to the algorithm, Bash uses several keywords and special characters that are interpreted by the Unix shell. The set of these expressions is referred to as **Bash statements** and can be understood as a set of universal **building blocks** that you can use to build your own customized algorithm.<br>
+Bash is a Unix shell that allows you to call processes on the computing machine directly in the command line. In addition to a set of built-in commands *(check them with the `compgen -b` command)* that perform predefined tasks, you can **create your own algorithms in the Bash** shell. To give a structure to the algorithm, Bash uses several keywords and special characters that are interpreted by the Unix shell. The set of these expressions is referred to as **Bash statements** and can be understood as a set of universal **building blocks** that you can use to build your own customized algorithm.<br>
 You can view the available Bash statements on the command line using the `compgen` command with the ***k*** flag:
 
 ```
@@ -131,9 +162,9 @@ compgen -k
 ```
 ![terminal colors](../assets/images/02_bash_keywords.png)<br>
 
-There are about twenty-some Bash statements, which can be further divided into several groups, including **loops**, **conditionals**, **action operators**, and others. The table below contains the syntax, type and definitions of the most common Bash statements. Explore additional column of notes to gain an idea of when to use different syntaxes. In the following subsections, we will discuss the usage of Bash statements following real-life examples.
+There are about twenty-some Bash statements, which can be further divided into several groups, including **loops**, **conditionals**, the **action operators**, and others. The table below contains the syntax, type, and definitions of the most common Bash statements. Explore additional columns of notes to gain an idea of when to use different syntaxes. In the following subsections, we will discuss the usage of Bash statements following real-life examples.
 
-| statement     | type               | definition | notes |
+|<div style="width:85px">statement</div>| type               | definition | notes |
 |---------------|--------------------|------------|-------|
 | for           | loop               | iterating over **each item** in the list            | use if you want to execute commands in order for all items in the list<br> YES, nested loops are allowed |
 | while         | loop               | iterating as long as the condition is **true**      | use if you want to perform a certain number of iterations, such as reading a file line by line|
@@ -153,21 +184,28 @@ There are about twenty-some Bash statements, which can be further divided into s
 | test          | shell command      | keyword that checks the logic of the condition  | e.g., `if test $x -gt $y`<br> returns true when x is greater than y |
 | [ ... ]       | logic construct    | syntax that checks the logic of the condition   | the equivalent to the *test* command<br> e.g., `if [ $x -gt $y ]` |
 | [[ ... ]]     | logic construct    | syntax that checks the logic of the condition   | helps to avoid logic errors in Bash;<br> `&&`, `\|\|`, `<` and `>` operators work |
-| { ... }       | array builder      | syntax that allows to build an array of items   | it can be a predefined list of strings or numbers<br> e.g., `{one, two three, four, five}`<br> it can be an automatically generated list of intigers<br> e.g., `{1..5}` , use two dots between the numbers |
+| { ... }       | array builder      | syntax that allows to build an array of items   | it can be a predefined list of strings or numbers<br> e.g., `{one, two three, four, five}`<br> it can be an automatically generated list of integers<br> e.g., `{1..5}` , use two dots between the numbers |
 
 
 ## **FOR** each item loop
 
-**FOR** loop provides the easiest way to **iterate over the ordered list** of items (strings or intigers) and execute the set of **commands for each**. <br>
+**FOR** loop provides the easiest way to **iterate over the ordered list** of items (strings or integers) and execute the set of **commands for each**. <br>
 
-Syntax is made up of several keywords reserved for the bash shell and customized arguments provided by the user. When a statement is defined in a script file, it usually has a block structure, where the contents encapsulated in `do ... done` syntax is indented by a fixed number of spaces, usually 4 or 2 for more nested algorithms.
+The syntax is made up of several keywords reserved for the bash shell and customized arguments provided by the user. When a statement is defined in a script file, it usually has a block structure, where the contents encapsulated in `do ... done` syntax is indented by a fixed number of spaces, usually 4 or 2 for more nested algorithms.
+
+```
+for item in {first,second,third,fourth,fifth}
+do
+    echo $i
+done
+```
 
 ![terminal colors](../assets/images/02_bash_for_loop_script.png)<br>
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
-In some of intra-terminal text editors such as <b>mcedit</b> (part of the midnight commander package), individual components of bash syntax are highlighted in different colors, making it easier to follow the correctness of the code.
+In some intra-terminal text editors such as <b>mcedit</b> (part of the midnight commander package), individual components of bash syntax are highlighted in different colors, making it easier to follow the correctness of the code.
 </span>
 </div><br>
 
@@ -176,12 +214,16 @@ The `for, in, do, done` are fixed bash statement elements, performing specific f
 <div style="background: mistyrose; padding: 15px;">
 <span style="font-weight:800;">WARNING:</span>
 <br><span style="font-style:italic;">
-Avoid naming iterators and other variables with a single character, since there are a finite number of letters. Overriding the iterator value inside the loop could result in algorithm failure.<br>
-<b>Note:</b> The more meaningful the iterator name reflecting the nature of items, the better readable the code for other programmers.
+Avoid naming iterators and other variables with a single character since there are a finite number of letters. Overriding the iterator value inside the loop could result in algorithm failure.<br>
+<b>Note:</b> The more meaningful the iterator name reflecting the type of items, the better readable the code for other programmers.
 </span>
 </div><br>
 
-You can also use **FOR** loop syntax directly in the command line as one-liner, to see the result immediately:
+You can also use **FOR** loop syntax directly in the command line as a one-liner, to see the result immediately:
+
+```
+for item in {first,second,third,fourth,fifth}; do echo $item; done
+```
 
 ![terminal colors](../assets/images/02_bash_for_loop_inline.png)<br>
 
@@ -196,28 +238,28 @@ Remember to always separate consecutive statement elements with a semicolon <b>;
 
 **VARIANTS OF A FOR-LOOP SYNTAX**
 
-*Iterate over strings given directly:*
+*A. Iterate over strings given directly:*
 ```
 for item in item1 item2 item3 item4 item5; do
     echo  $item
 done
 ```
 
-*Iterate over strings given in an array:*
+*B. Iterate over strings given in an array:*
 ```
 for item in {item1,item2,item3,item4,item5}; do
     echo  $item
 done
 ```
 
-*Iterate over intigers given in an array:*
+*C. Iterate over integers given in an array:*
 ```
 for item in {1,2,3,4,5}; do
     echo  $item
 done
 ```
 
-*Iterate over intigers generated automatically using an array:*
+*D. Iterate over integers generated automatically using an array:*
 ```
 for item in {1..5}; do
     echo  $item
@@ -227,11 +269,11 @@ done
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
 You can add a step as a third argument to the array syntax, e.g., <b>{1..10..2}</b> to iterate over odd numbers.<br>
-You can replace explicit intigers with variables, e.g., {$START..$END..$STEP}. Note, however, that you must define them in advance and assign them a value before the usage.
+You can replace explicit integers with variables, e.g., {$START..$END..$STEP}. Note, however, that you must define them in advance and assign them a value before usage.
 </span>
 </div><br>
 
-*Iterate over intigers generated automatically using sequence:*
+*E. Iterate over integers generated automatically using sequence:*
 ```
 for item in `seq 1 1 10`; do
     echo  $item
@@ -240,11 +282,11 @@ done
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
-The syntax for generating intigers in a sequenece is 'seq START STEP END' or $(seq START STEP END). If your step is equal to one, you can skip the middle argument.
+The syntax for generating integers in a sequence is 'seq START STEP END' or $(seq START STEP END). If your step is equal to one, you can skip the middle argument.
 </span>
 </div><br>
 
-*Iterate over intigers generated automatically using incrementation:*
+*F. Iterate over integers generated automatically using incrementation:*
 ```
 for ((item=1;item<=END;item++)); do
     echo $item
@@ -257,7 +299,7 @@ done
 You can start with a large intiger and count down using the decrementing ( item-- ).
 </div><br>
 
-*Iterate over any items stored in the one-column file:*
+*G. Iterate over any items stored in the one-column file:*
 ```
 for item in `cat file`; do
     echo $item
@@ -266,11 +308,11 @@ done
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
-That syntax is useful when iterating over a long list of strings that can be read directly from a file.
+That syntax `cat file` is useful when iterating over a long list of strings that can be read directly from a one-column file.
 </span>
 </div><br>
 
-*Iterate over items resulting from the command:*
+*H. Iterate over items resulting from the command:*
 ```
 for item in `ls | grep "txt"`; do
     echo $item
@@ -279,22 +321,14 @@ done
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
-That syntax is useful when iterating over a filtrated list of files stored in current directory (or any location in a file system).
+That syntax `custom command` is useful when iterating over a filtrated list of files stored in current directory (or any location in a file system).
 </span>
 </div><br>
 
 
 ### - NESTED LOOPS
 
-When you want to **iterate on a each-to-any** basis over two or more sets of features, such as creating a set of files with specific names in 3 different formats, use **nested FOR loops**.
-
-![terminal colors](../assets/images/02_bash_for_loop_nested.png)<br>
-
-The same algorithm can be executed as a one-liner directly in the command-line.
-
-![terminal colors](../assets/images/02_bash_for_loop_nested_inline.png)<br>
-
-Try it yourself:
+When you want to **iterate on an each-to-any** basis over two or more sets of features, such as creating a set of files with specific names in 3 different formats, use **nested FOR loops**.
 
 ```
 # script variant
@@ -303,16 +337,24 @@ for name in {dog,cat,fish,snake,bird}; do
     echo $name.$format                   # replacing 'echo' with 'touch' will create empty files
   done
 done
+```
 
+![terminal colors](../assets/images/02_bash_for_loop_nested.png)<br>
+
+The same algorithm can be executed as a one-liner directly in the command line.
+```
 # one-liner variant
 for name in {dog,cat,fish,snake,bird}; do for format in txt dat png; do echo $name.$format; done; done
 ```
 
+![terminal colors](../assets/images/02_bash_for_loop_nested_inline.png)<br>
+
+
 **Use a template for 2 nasted FOR loops**
 ```
-for item1 in {1..10}; do
-  for item2 in {a,b,c,d,e}; do
-    echo $item1 $item2
+for item1 in {ARRAY-OF-ITEMS}; do
+  for item2 in {ARRAY-OF-ITEMS}; do
+    <COMMANDS>
   done
 done
 ```
@@ -320,21 +362,47 @@ done
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
-As long as you are diligent in properly nesting consecutive 'for-in-do-done' statements you can make as many inner loops as you want.<br>
+As long as you are diligent in properly nesting consecutive 'for-in-do-done' statements, you can make as many inner loops as you want.<br>
 <b>Note: </b>Remember that the inner loop must always be closed with the <b>done</b> keyword before the more outer loop.
 </span>
 </div><br>
 
-To learn what **other iteration options** are available than using arrays, see the previous subsection in the tutorial.
+See the previous subsection in the tutorial to learn what **other iteration options** are available than using arrays.
 
 
-## **while** true loop
+## **WHILE** true loop
 
+**WHILE** loop iterates as long as the user-provided condition is **true**. So, use `while` loop statement if you want to perform a certain number of iterations, whether that number is known or not. Syntax is made up of `while ` keyword reserved for the bash shell and customized condition provided by the user in square brackets. Similarly to other Bash loops, the commands *(dependent on loop condition)* are encapsulated in the `do ... done` block of code.
+
+**Use a template for WHILE loop**
+```
+while [ <CONDITION> ]
+do
+    <COMMANDS>
+done
+```
+
+Commands are executed as long as the user-provided condition evaluates to true. Note that the **condition is evaluated** at the beginning of each iteration, so **before executing** the block of commands. The conditional could involve operators on files, strings comparison, the numerical equivalence of integer iterator, or infinity condition. To learn more about Bash logical operators, revisit section 1.2 in this tutorial. Below you can find some handy tips for different conditionals:
+
+
+|FILE OPERATORS            |definition|
+|-------------------|----------|
+| while [ -a file ] |execute if the file or directory exists |
+| while [ -d file ] |execute if the directory exists         |
+| while [ -f file ] |execute if the regular file exists      |
+| while [ -L file ] |execute if the file is symbolic link    |
+| while [ -w file ] |execute if the file is writable         |
+| while [ -x file ] |execute if the file is executable       |
+| while [ -s file ] |execute if the file has a size greater than zero |
+| while [file_1 -ot file_2] |execute if file_1 is older then file_2 or if only file_2 exists |
+
+
+The three most common usages of this loop are iterating for **as long as the specific iterator value is not reached**, **reading the file line-by-line to the end** of the file, and for creating an **infinite loop** that runs in the background and monitors any process.<br>
 
 
 ### - READ FILE LINE-BY-LINE
 
-## **until** false loop
+## **UNTIL** false loop
 
 ### - STOP ONCE SUCCESS
 
@@ -371,7 +439,7 @@ D. OUTPUT
 
 ### - HEADER
 
-`#!/bin/env bash` instead `#!/bin/bash` as a more robust solution
+Use `#!/bin/env bash` syntax at the top of your script file instead of `#!/bin/bash` as a more robust solution.
 
 ### - VARIABLES
 
@@ -403,19 +471,28 @@ D. LOCAL
 
 A. PIPE-linked stream of Commands
 
-e.g., `cat file | grep "keyword" | tr '-' ' ' | awk '{print $2,$4,$6}' | sort -nk1 | uniq`
+```
+cat file | grep "keyword" | tr '-' ' ' | awk '{print $2,$4,$6}' | sort -nk1 | uniq
+```
 
 B. Encapsulation in a loop
 
-e.g., `for i in {0..10}; do touch file-$i; done`
+```
+for i in {0..10}; do touch file-$i; done
+```
 
 C. TEXT OUTPUTS
 
-e.g., `k="Hello World!"; echo $k > file`
+```
+k="Hello World!"
+echo $k > file
+```
 
-D. GRAPHICAL OUTPUTS: generate graphs with gnuplot *(brief, then redirect to other tutorial)*
+D. GRAPHICAL OUTPUTS
 
-i.e., encapsulate gnuplot script in a bash **for** loop and return image files
+*(generate graphs with gnuplot)*
+
+Encapsulating Gnuplot script in a bash **for** loop allows for returning image files all at once for multiple inputs.
 
 ## 4.2 Executing the script
 
