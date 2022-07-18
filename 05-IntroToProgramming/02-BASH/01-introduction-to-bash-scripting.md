@@ -156,7 +156,7 @@ There are about twenty-some Bash statements, which can be further divided into s
 | { ... }       | array builder      | syntax that allows to build an array of items   | it can be a predefined list of strings or numbers<br> e.g., `{one, two three, four, five}`<br> it can be an automatically generated list of intigers<br> e.g., `{1..5}` , use two dots between the numbers |
 
 
-## **for** each item loop
+## **FOR** each item loop
 
 **FOR** loop provides the easiest way to **iterate over the ordered list** of items (strings or intigers) and execute the set of **commands for each**. <br>
 
@@ -181,7 +181,7 @@ Avoid naming iterators and other variables with a single character, since there 
 </span>
 </div><br>
 
-You can also use **FOR** loop syntax directly in the command line as single-liner, to see the result immediately:
+You can also use **FOR** loop syntax directly in the command line as one-liner, to see the result immediately:
 
 ![terminal colors](../assets/images/02_bash_for_loop_inline.png)<br>
 
@@ -254,8 +254,7 @@ done
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
-You can start with a large intiger and count down using the decrementing. Syntax then looks as follows:<br>
-<b>for ((item=10;item<=END;item--)); do echo $item; done</b>
+You can start with a large intiger and count down using the decrementing ( item-- ).
 </div><br>
 
 *Iterate over any items stored in the one-column file:*
@@ -330,6 +329,8 @@ To learn what **other iteration options** are available than using arrays, see t
 
 
 ## **while** true loop
+
+
 
 ### - READ FILE LINE-BY-LINE
 
