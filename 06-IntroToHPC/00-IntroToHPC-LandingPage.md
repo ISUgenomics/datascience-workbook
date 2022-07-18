@@ -15,7 +15,7 @@ Although today's handy laptops perform many advanced and computationally intensi
 
 ### **<a href="00-HomeDirectory/00_setting-up-home-directory" style="color: #24376b;">0. Setting up your home directory</a>**
 * <a href="00_HomeDirectory/00_setting-up-home-directory" style="color: #3f5a8a;">Setting up your home directory for data analysis</a>
-  * <a href="00_HomeDirectory/.bashrc" style="color: #3f5a8a;">.bashrc example file</a>
+  * <a href="00_HomeDirectory/bashrc.md" style="color: #3f5a8a;">.bashrc example file</a>
 
 ### **<a href="01-HPC-NETWORKS/01-introduction-to-hpc-infrastructure" style="color: #24376b;">1. Introduction to HPC infrastructure</a>**
 * <a href="01-HPC-NETWORKS/01-XSEDE/01-supercomputer-intro" style="color: #3f5a8a;">8.1 XSEDE Supercomputer</a>

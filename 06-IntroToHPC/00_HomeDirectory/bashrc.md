@@ -1,3 +1,26 @@
+
+---
+title: ".bashrc"
+layout: single
+author: Andrew Severin
+author_profile: true
+header:
+  overlay_color: "444444"
+  overlay_image: /06-IntroToHPC/assets/images/06_hpc_banner.png
+---
+
+
+1. Make a backup of your original `.bashrc` file
+
+```
+cp .bashrc .bashrc.orig
+```
+
+2. Copy the .bashrc file contained inside the code block below to a new `.bashrc` file
+
+
+
+```bash
 # /etc/skel/.bashrc
 # Source global definitions
 
@@ -165,3 +188,4 @@ function body()
       printf '%s\n' "$header"
       "$@"
   }
+```

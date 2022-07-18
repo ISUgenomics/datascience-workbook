@@ -15,15 +15,16 @@ header:
 
 ## Creating a working directory
 
-Every HPC resource you use should designate you a folder for you to perform data analysis. Some examples of locations of home directories include
+When a new users is added to an HPC resource, a home folder is assigned to you.  You are the only non-admin user that has permission to access this folder. It should be noted that admins don't have time or care to be looking in your home folder unless you are flagged for doing something you shouldn't be doing. Here are some home directory location examples:
 
 * /home/first.lastname      #linux
 * /Users/loginname          #macOS
 
-Let's make sure everyone is in their home directories.
+Let's make sure everyone is in their home directories and take a look at what is in there.
 
 ```
 cd
+ls -lha
 ```
 
 ## Example Default Home folder
@@ -77,8 +78,7 @@ mkdir $PROJECTFOLDER/$USER/.irods
 mkdir $PROJECTFOLDER/$USER/.cache
 mkdir $PROJECTFOLDER/$USER/.spack
 mkdir $PROJECTFOLDER/$USER/.plotly
-# mkdir $PROJECTFOLDER/$USER/.conda  # do not create if using a BeeGFS parallel file system
-mkdir $PROJECTFOLDER/$USER/.cpan
+mkdir $PROJECTFOLDER/$USER/.conda  
 mkdir $PROJECTFOLDER/$USER/.local
 mkdir $PROJECTFOLDER/$USER/.lmod.d
 mkdir $PROJECTFOLDER/$USER/.ncbi
