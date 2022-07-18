@@ -70,7 +70,7 @@ export PROJECTFOLDER=/PATH/To/Working/Directory
 ## Singularity
 ###############################
 ## Singularity Variables added to your path
-if ![ -d $PROJECTFOLDER/NXFContainers ]; then
+if !  [ -d $PROJECTFOLDER/NXFContainers ]; then
     mkdir $PROJECTFOLDER/NXFContainers
 fi
   export NXF_SINGULARITY_CACHEDIR=$PROJECTFOLDER/NXFContainers
