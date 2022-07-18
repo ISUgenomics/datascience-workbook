@@ -137,7 +137,7 @@ echo {a,b}_{0..5}
 
 ### - COMMAND SUBSTITUTION
 
-Use ``` `command` ``` or an equivalent `$(command)` syntax to create the array of items on-the-fly
+Use ``` `command` ``` or an equivalent `$(command)` syntax to create the array of items on-the-fly.
 
 ```
 for i in `seq 10`; do echo $i; done
@@ -403,6 +403,22 @@ Commands are executed as long as the user-provided **condition evaluates to true
 The three most common usages of this loop are iterating for **as long as the specific iterator value is not reached**, **reading the file line-by-line to the end** of the file, and for creating an **infinite loop** that runs in the background and monitors any process.<br>
 
 
+### - ITERATE WHILE THE VALUE
+
+Let's assume that you know the upper threshold of a certain parameter and you know that once this value is exceeded, the analysis makes no further sense, e.g. you know that the percentage of component X in the mixture cannot be higher than 50%. You can use a `while` loop to test the properties of your mixture, increasing the content of component X every 1% until you reach the limit value.
+
+```
+max_val=50
+val=0
+
+while [ $val -le $max_val ]
+do
+  echo Percentage: $val
+  # run your program: program -arg $val > output_$val
+  ((i++))
+done
+```
+
 ### - READ FILE LINE-BY-LINE
 
 Let's first create the simple file with several lines of content:
@@ -447,9 +463,29 @@ If you work by executing scripts rather than typing directly on the command line
 
 In this case, the condition for the `while` loop is replaced by the `read` command followed by the name of the variable in which the loaded content is stored. By default, the `read` command reads a single line from a bash shell or, as in this example, a single line from a text file. The text file is inserted into the loop using `<` stream redirection. Inside the `do ... done` syntax it is possible to parse a single line from a file.
 
+### - INFINITE LOOP
+
+Imagine that you never turn off your computer, and every day at the same time, you want to perform a certain process, such as checking the date. You can easily do this with a while loop and an infinity condition `while :` or `while true`. After executing the process once, you can manage to silence the loop activity for the next 24 hours with `sleep` command. Then the commands in the loop will be executed again.
+
+```
+while :
+do
+  echo "Today is: "$(date)
+  sleep 24h
+done
+```
+
+If you don't want to have the terminal blocked with a process running indefinitely, move that process to the background using `&` at the end of the command.
+
+```
+while true; do echo "Today is: "$(date); sleep 24h; done&
+```
+
+To restore this process to foreground, use the `fg` command. Then you can end the loop definitively using `CTRL+C` if it is no longer needed.
+
 ## **UNTIL** false loop
 
-**UNTIL** loop iterates as long as the user-provided condition is **false**. So, use `until` loop statement if you want to perform a certain number of iterations, whether that number is known or not. Syntax is made up of `until ` keyword reserved for the bash shell and customized condition provided by the user in square brackets. Similarly to other Bash loops, the commands *(dependent on loop condition)* are encapsulated in the `do ... done` block of code.
+**UNTIL** loop iterates as long as the user-provided condition is **false**. So, use `until` loop statement if you want to perform a given number of iterations. Syntax is made up of `until ` keyword reserved for the bash shell and customized condition provided by the user in square brackets. Similarly to other Bash loops, the commands *(dependent on loop condition)* are encapsulated in the `do ... done` block of code.
 
 **Use a template for WHILE loop**
 ```
@@ -463,11 +499,26 @@ Commands are executed as long as the user-provided **condition evaluates to fals
 
 The most common uses of the until loop include **iterating until the iterator reaches a given value**, or **checking the status of a specific process**.
 
+### - ITERATE UNTIL THE VALUE
 
+Suppose you want to perform an optimization using program X, which will use the results from the previous cycle for each subsequent iteration. You know that this program converges to the best results in 10 iterations and further calculations make no improvement. An effective solution, is to enclose this procedure in a loop `until`, where the loop will terminate when the iterator value reaches a predefined maximum value, `max_iter`.<br>
+If you do not know after how many cycles the optimization will be achieved, you can set to replace the *iter* variable with *score* and terminate when the expected threshold of improvement between iterations is reached.  
+
+```
+max_iter=10
+iter=0
+
+until [ $iter -gt $max_iter ]
+do
+  echo Iteration: $iter
+  # run your program and redirect output to a file: program -i file_$iter-1 -o file_$iter
+  ((iter++))
+done
+```
 
 ### - STOP ONCE SUCCESS
 
-Let's create a script that will notify you when your queued task on the cluster is finished. The `until` loop will be terminated when the JOBID of your task is no longer visible in the queue on the computing cluster. However, as long as the task is running, comparing the number of matching JOBID to zero will return false in the conditional and the loop will still be active.
+Let's create a script that  checks the status of running processes with the `squeue` command and will notify you when your queued task is finished. The `until` loop will be terminated when the JOBID of your task is no longer visible in the queue on the computing cluster. However, as long as the task is running, comparing the number of matching JOBID to zero will return false in the conditional and the loop will still be active.
 
 ```
 JOBID=1689115
