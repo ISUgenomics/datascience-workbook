@@ -22,9 +22,9 @@ The `.bashrc` for bash shell is one of the most useful files for a unix user. It
 cp .bashrc .bashrc.orig
 ```
 
-2. Copy the .bashrc file contained inside the code block below to a new `.bashrc` file
+2\. Copy the .bashrc file contained inside the code block below to a new `.bashrc` file
 
-3. Update the following lines with the correct information
+3\. Update the following lines with the correct information
 
 ```
 export PROJECTFOLDER=/PATH/To/Working/Directory
