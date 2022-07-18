@@ -406,19 +406,19 @@ Let's first create the simple file with several lines of content:
 
 ```
 # script variant
-for i in {Welcome,Hello,Hi}; do
-  for j in {Ana,Eric,Bob}; do
+for i in {Anna,Eric,Bob}; do
+  for j in welcome; do
     for k in {London,NYC,Paris}; do
-      echo $i" "$j" in "$k"." >> file;
+      echo $i", "$j" to "$k"." >> file;
     done;
   done;
 done
 
 # one-liner variant
-for i in {Welcome,Hello,Hi}; do for j in {Ana,Eric,Bob}; do for k in {London,NYC,Paris}; do echo $i" "$j" in "$k"." >> file; done; done; done
+for i in {Ana,Eric,Bob}; do for j in welcome; do for k in {London,NYC,Paris}; do echo $i", "$j" to "$k"." >> file; done; done; done
 ```
 
-You can previewthe results saved into a file using `less file` command:
+You can preview the results saved into a file using `less file` command:
 
 ![terminal colors](../assets/images/02_bash_for_create_file_content.png)<br>
 
@@ -428,9 +428,10 @@ Once we have a file with some content, we can read it line-by-line with a `while
 filename=./file
 
 while read -r line; do
-  echo $line | awk '{print $2,$4}'
+  echo $line | tr ',' ' ' | tr '.' ' ' | awk '{print $1,$4}'
 done < "$filename"
 ```
+![terminal colors](../assets/images/02_bash_for_create_file_content_inline.png)<br>
 
 The `filename` variable stores the name of recently created file.
 
@@ -441,7 +442,7 @@ If you work by executing scripts rather than typing directly on the command line
 </span>
 </div><br>
 
-In this case, the condition for the `while` loop is replaced by the `read` command followed by the name of the variable in which the loaded content is stored.
+In this case, the condition for the `while` loop is replaced by the `read` command followed by the name of the variable in which the loaded content is stored. By default, the `read` command reads a single line from a bash shell or, as in this example, a single line from a text file. The text file is inserted into the loop using `<` stream redirection. Inside the `do ... done` syntax it is possible to parse a single line from a file.
 
 ## **UNTIL** false loop
 
