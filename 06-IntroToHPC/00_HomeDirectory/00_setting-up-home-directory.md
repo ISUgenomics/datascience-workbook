@@ -1,13 +1,30 @@
-# Home Directory Setup
+---
+title: "Home Directory Setup"
+layout: single
+author: Andrew Severin
+author_profile: true
+header:
+  overlay_color: "444444"
+  overlay_image: /06-IntroToHPC/assets/images/06_hpc_banner.png
+---
+
+{% include toc %}
+
 
 
 
 ## Creating a working directory
 
-Every HPC resource you use should designate you a folder for you to perform data analysis.
+Every HPC resource you use should designate you a folder for you to perform data analysis. Some examples of locations of home directories include
 
+* /home/first.lastname      #linux
+* /Users/loginname          #macOS
+
+Let's make sure everyone is in their home directories.
+
+```
 cd
-
+```
 
 ## Example Default Home folder
 
@@ -37,15 +54,34 @@ It may also contain empty files that admins set up to determine if the user has 
 Copy the contents of [this file to your .bashrc](.bashrc)
 
 ```
-cp .bashrc .bashrc.orig 
+cp .bashrc .bashrc.orig
 nano .bashrc
 ```
 
-## softlinks
+## Create softlinks for common folders
 
-* .config
-* .singularity
-* .irods
-* .nextflow
-* .Xauthority
-* .
+Home directories tend to be small in size, meaning they shouldn't be used for data analysis or for installing programs. Unfortunately, many programs use the home directory as a default location for installation.  To Avoid running into an issue where you exceed your home directory storage quota, it is strongly recommended to create softlinks for these folders in your main project folder.
+
+Step1: export the path to your projectfolder so that we can softlink folders there
+```
+export PROJECTFOLDER=/PATH/To/Working/Directory
+mkdir $PROJECTFOLDER/$USER
+```
+
+
+```
+mkdir $PROJECTFOLDER/$USER/.config
+mkdir $PROJECTFOLDER/$USER/.nextflow
+mkdir $PROJECTFOLDER/$USER/.singularity
+mkdir $PROJECTFOLDER/$USER/.irods
+mkdir $PROJECTFOLDER/$USER/.cache
+mkdir $PROJECTFOLDER/$USER/.spack
+mkdir $PROJECTFOLDER/$USER/.plotly
+# mkdir $PROJECTFOLDER/$USER/.conda  # do not create if using a BeeGFS parallel file system
+mkdir $PROJECTFOLDER/$USER/.cpan
+mkdir $PROJECTFOLDER/$USER/.local
+mkdir $PROJECTFOLDER/$USER/.lmod.d
+mkdir $PROJECTFOLDER/$USER/.ncbi
+ls -d $PROJECTFOLDER/$USER/.* | sort | awk 'NR>2' | xargs -I xx ln -s xx
+
+```
