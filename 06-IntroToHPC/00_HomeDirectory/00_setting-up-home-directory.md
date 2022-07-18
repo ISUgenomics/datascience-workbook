@@ -66,7 +66,7 @@ Now if you list the contents of your home folder you should see a folder with th
 
 ## .bashrc
 
-Copy the contents of [this file to your .bashrc](.bashrc)
+Copy the contents of [this file to your .bashrc](bashrc)
 
 Be sure to update this line `export PROJECTFOLDER=/PATH/To/Working/Directory` with your project folder
 

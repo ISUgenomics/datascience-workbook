@@ -1,4 +1,3 @@
-
 ---
 title: ".bashrc"
 layout: single
