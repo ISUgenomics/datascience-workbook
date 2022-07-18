@@ -18,7 +18,12 @@ cp .bashrc .bashrc.orig
 
 2. Copy the .bashrc file contained inside the code block below to a new `.bashrc` file
 
+3. Update the following lines with the correct information
 
+```
+export PROJECTFOLDER=/PATH/To/Working/Directory
+alias gclone='git clone git clone git@github.com:GITHUBID/$1'  # update your gitorganization or ID here
+```
 
 ```bash
 # /etc/skel/.bashrc
@@ -102,7 +107,7 @@ fi
   alias gpomr='git push origin master'
   alias ga='git add'
   alias gpr='find . -type d -name .git -exec sh -c "cd \"{}\"/../ && pwd && git pull" \;'
-  alias gclone='git clone git clone git@github.com:ISUgenomics/$1'
+  alias gclone='git clone git clone git@github.com:GITHUBID/$1'  # update your gitorganization or ID here
   alias gittree="git log --all --decorate --oneline --graph"  # commandline push history
 
   # HPC
@@ -132,7 +137,7 @@ fi
 ###############################
 # Extend your PATH to find locally installed programs or scripts
 export PATH="~/bin:$PATH"
-export PATH="$PATH:/home/severin/.local/bin:~/isugif/utilities/utililities/:~/isugif/ProjectModules/:~/isugif/common_scripts/:~/isugif/common_analyses/:~/isugif/ascii_plots:~/isugif/oneliners/"
+export PATH="$PATH:/home/$USER/.local/bin"
 
 
 ###############################
