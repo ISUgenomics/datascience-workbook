@@ -296,7 +296,7 @@ done
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
-You can start with a large intiger and count down using the decrementing ( item-- ).
+You can start with a large intiger and count down using the decrementing.
 </div><br>
 
 *G. Iterate over any items stored in the one-column file:*
