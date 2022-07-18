@@ -11,6 +11,10 @@ fi
 # corrects for Error:  E437: terminal capability "cm" required
 export TERM=xterm
 
+# Project Directory
+export PROJECTFOLDER=/PATH/To/Working/Directory
+
+
 # User defined Modules
   # this is where you might put modules you always load or modules you have installed yourself
     # module load singularity
@@ -22,7 +26,10 @@ export TERM=xterm
 ## Singularity
 ###############################
 ## Singularity Variables added to your path
-  export NXF_SINGULARITY_CACHEDIR=/work/gif/NXFContainers
+if ![ -d $PROJECTFOLDER/NXFContainers ]; then
+    mkdir $PROJECTFOLDER/NXFContainers
+fi
+  export NXF_SINGULARITY_CACHEDIR=$PROJECTFOLDER/NXFContainers
 
 
 
