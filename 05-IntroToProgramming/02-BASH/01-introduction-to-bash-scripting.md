@@ -566,7 +566,7 @@ num = 20
 if [ $num -gt 5 ]; then echo $num; fi       # execute if $num is numerical and greather than 5
 ```
 
-The above examples prove that the `echo` command is executed when the condition is met. But what if we want to execute another command if the condition is not satisfied? In this case, the syntax should be expanded with additional keywords `elif` and/or `else.`. While `elif` can be used multiple times to define further specific conditions, `else` occurs at most once, always at the end of the syntax just before closing with `fi`. That is because `else` covers all cases not directly provided in condition variants, or in other words, executes a default set of commands in case all conditions are false.
+The above examples prove that the `echo` command is executed when the condition is met. But what if we want to execute another command if the condition is not satisfied? In this case, the syntax should be expanded with additional keywords `elif` and/or `else`. While `elif` can be used multiple times to define further specific conditions, `else` occurs at most once, always at the end of the syntax just before closing with `fi`. That is because `else` covers all cases not directly provided in condition variants, or in other words, executes a default set of commands in case all conditions are false.
 
 ```
 num = 2
@@ -601,6 +601,48 @@ fi
 ```
 
 ## **break** the loop
+
+The `break` statement terminates the loop at the current iteration, exactly in the place where the `break` keyword occurs in the block of code. It means that commands remaining in the loop will not be executed, and the loop will not continue to iterate. The execution mode will be moved just outside the loop. Thus, the commands following the `done` keyword will further execute.
+
+```
+for i in 1 2 3 4 5; do
+  if [ $i -gt 2 ]; then
+    break               #--------------- remaining code in the FOR loop and IF-ELSE-FI conditional will NOT be executed
+  else
+    echo $i
+  fi
+done                    #--------------- commands below the line will be executed after break statement
+
+echo "The last iterated value is $i"
+```
+
+![terminal colors](../assets/images/02_bash_break.png)<br>
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+Usually <b>break</b> is placed in the conditional if ... fi, but this statement is a universal terminator for all bash loops, including FOR, WHILE, UNTIL and SELECT.<br><br>
+In general, break terminates the loop in which it occurs. If it is an inner loop in a nested schema, by default it only terminates the inner loop. To terminate parent loops from within the inner loop, use the <b>break -n</b> command, where n is the index of the higher level loop counted from the loop in which the break resides. The default is n=1 and applies the termination to the current loop.
+</span>
+</div><br>
+
+Let's terminate the outer loop from the inner loop level:
+
+```
+for i in {1..3}; do
+  for j in a b c; do
+    if [ $j = "c" ]; then
+      break 2             #--------------- remaining code in both loops will NOT be executed
+    else
+      echo $i-$j
+    fi
+  done
+done                      #--------------- commands below the line will be executed after break statement
+
+echo "The last iterated values are $i-$j"
+```
+
+![terminal colors](../assets/images/02_bash_break.png)<br>
 
 ## **continue** to next iteration
 
