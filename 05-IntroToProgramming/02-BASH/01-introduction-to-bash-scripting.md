@@ -600,6 +600,22 @@ else
 fi
 ```
 
+## **continue** to next iteration
+
+The `continue` statement terminates the current iteration, skipping the remaining commands in the current loop (if nested), and passes the execution mode to the next iteration of a cutrrent loop. That means no more than **premature termination of the single iteration** in a given loop. Further iterations in this loop, as well as remaining commands in the other loops are not altered by this event.
+
+```
+for i in 1 2 3 4 5; do
+  if [ $i -eq 2 ]; then
+    continue            #--------------- remaining code in this iteration (i=2) will NOT be executed
+  else
+    echo $i
+  fi
+done
+```
+
+![terminal colors](../assets/images/02_bash_continue.png)<br>
+
 ## **break** the loop
 
 The `break` statement terminates the loop at the current iteration, exactly in the place where the `break` keyword occurs in the block of code. It means that commands remaining in the loop will not be executed, and the loop will not continue to iterate. The execution mode will be moved just outside the loop. Thus, the commands following the `done` keyword will further execute.
@@ -644,7 +660,6 @@ echo "The last iterated values are $i-$j"
 
 ![terminal colors](../assets/images/02_bash_break.png)<br>
 
-## **continue** to next iteration
 
 ---
 
