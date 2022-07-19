@@ -17,6 +17,9 @@ header:
 
 The complete Bash Reference Manual is available at official documentation provided by [www.gnu.org/](https://www.gnu.org/software/bash/manual/bash.html).
 
+<span style="color: #ff3870; font-weight: 600;">If you are a beginner at Linux, it may be beneficial for you to start with the tutorials provided in section</span>
+[02. Introduction to Command Line](https://datascience.101workbook.org/02-IntroToCommandLine/00-IntroToCommandLine-LandingPage). 
+
 ## 1.1 Bash shortcuts
 
 **~ EXPANSION**
