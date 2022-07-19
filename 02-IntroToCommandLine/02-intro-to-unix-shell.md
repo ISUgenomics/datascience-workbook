@@ -217,6 +217,8 @@ Note that on most HPC infrastructures, including HPC@ISU and SCINet, queuing job
 
 Whether you're working on a local machine or a remote shared infrastructure, keep your $HOME directory neatly organized.
 
+To configure your $HOME to work efficiently on a computing cluster, take a look at the tutorial [Home Directory Setup](https://datascience.101workbook.org/06-IntroToHPC/00-HOME-DIRECTORY/00-setting-up-home-directory) in the section 06. High-Performance Computing of this workbook. More specifically, follow the directions in the [.bashrc example file](https://datascience.101workbook.org/06-IntroToHPC/00-HOME-DIRECTORY/01-bashrc) tutorial to properly configure your `~/.bashrc`.
+
 
 # 3. Unix Shell Configuration
 
