@@ -15,6 +15,8 @@ header:
 
 # 1. Bash expressions
 
+The complete Bash Reference Manual is available at official documentation provided by [www.gnu.org/](https://www.gnu.org/software/bash/manual/bash.html).
+
 ## 1.1 Bash shortcuts
 
 **~ EXPANSION**
@@ -39,34 +41,86 @@ USAGE in regular expressions:
 
 ## 1.2 Logical operators
 
+The full list of Bash conditional expressions is provided in [section 6.4 of bash manual](https://www.gnu.org/software/bash/manual/bash.html#Bash-Conditional-Expressions) available at [www.gnu.org/](www.gnu.org/).
+
 ### - FILE OPERATORS
 
--a, -b, -c, -d, -e, -f, etc.
+Below you have a quick overview for the most commonly used variants of file conditionals.
+
+|FILE OPERATORS         |definition                            |
+|-----------------------|--------------------------------------|
+| [ -a file ]           | true if the file or directory exists |
+| [ -d file ]           | true if the directory exists         |
+| [ -f file ]           | true if the regular file exists      |
+| [ -L file ]           | true if the file is symbolic link    |
+| [ -w file ]           | true if the file is writable         |
+| [ -x file ]           | true if the file is executable       |
+| [ -s file ]           | true if the file has a size greater than zero |
+| [ file_1 -ot file_2 ] | true if file_1 is older then file_2 or if only file_2 exists |
 
 ### - STRING OPERATORS
 
--z, -n, = , !=, < , >
+Below you have a quick overview for the most commonly used variants of string conditionals.
 
-### - NUMERIC OPERATORS
+|STRING OPERATORS        |definition                                |
+|------------------------|------------------------------------------|
+| [ -z string ]          | true if the length of string is zero     |
+| [ -n string ]          | true if the length of string is non-zero |
+| [ string1 = string2 ]  | true if the strings are equal            |
+| [ string1 == string2 ] | true if the strings are equal            |
+| [ string1 != string2 ] | true if the strings are not equal        |
+| [ string1 < string2 ]  | true if string1 sorts before string2     |
+| [ string1 > string2 ]  | true if string1 sorts after string2      |
 
--eq, -ne, -lt, -le, -gt, -ge
+
+### - NUMERICAL OPERATORS
+
+Below you have a quick overview for the most commonly used variants of numerical conditionals.
+
+|NUMERICAL OPERATORS |definition                                     |
+|--------------------|-----------------------------------------------|
+| [ arg1 -eq arg2 ]  | true if arg1 is equal to arg2                 |
+| [ arg1 -ne arg2 ]  | true if arg1 is not equal to arg2             |
+| [ arg1 -lt arg2 ]  | true if arg1 is less than arg2                |
+| [ arg1 -le arg2 ]  | true if arg1 is less than or equal to arg2    |
+| [ arg1 -gt arg2 ]  | true if arg1 is greater than arg2             |
+| [ arg1 -ge arg2 ]  | true if arg1 is greater than or equal to arg2 |
+
+*^ **arg1** and **arg2** may be positive or negative integers*
 
 ## 1.3 In-shell arithmetic
 
+The full list of Bash shell arithmetic is provided in [section 6.5 of bash manual](https://www.gnu.org/software/bash/manual/bash.html#Shell-Arithmetic) available at [www.gnu.org/](www.gnu.org/).
+
 ### - OPERATORS
 
-A. increment (++n, n++), decrement (--n, n--)
+Below you have a quick overview for the most commonly used variants of arithmetic operators.
 
-B. +, -, *, /, %, ^
+| OPERATORS  |definition               | OPERATORS  |definition               |
+|------------|-------------------------|------------|-------------------------|
+| iter++     | variable post-increment | iter--     | variable post-decrement |
+| ++iter     | variable pre-increment  | --iter     | variable pre-decrement  |
+| !          | logical negation        | ~          | bitwise negation        |
+| **         | exponentiation          | %          | remainder               |
+| *          | multiplication          | /          | division                |
+| id++       | variable post-increment | id--       | variable post-decrement |
+| id++       | variable post-increment | id--       | variable post-decrement |
+| id++       | variable post-increment | id--       | variable post-decrement |
+| -          | substraction            | +          | addition                |
+| `<=` `>=` `<` `>`  | comparison              |            |                         |
+| &&         | logical AND             | \|\|       | logical OR              |
+
+*^ the operators are listed in order of decreasing precedence*
+
 
 ### - LIMITATIONS (integers)
 
 * division by 0 is prohibited
-* floating-point arithmetic is not supported
+* floating-point arithmetic is not directly supported
 
-### - BRACE EXPANSION
+### - ARITHMETIC EXPANSION
 
-
+The arithmetic expansion `$(( expression ))` substitutes the results of an evaluated expression into a variable. [[source: gnu.org](https://www.gnu.org/software/bash/manual/bash.html#Arithmetic-Expansion)]
 
 ```
 echo $((1+2))
@@ -482,6 +536,8 @@ while true; do echo "Today is: "$(date); sleep 24h; done&
 ```
 
 To restore this process to foreground, use the `fg` command. Then you can end the loop definitively using `CTRL+C` if it is no longer needed.
+
+![terminal colors](../assets/images/02_bash_while_infinite.png)<br>
 
 ## **UNTIL** false loop
 
