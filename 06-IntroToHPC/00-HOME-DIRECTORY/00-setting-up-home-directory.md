@@ -118,3 +118,25 @@ mkdir $PROJECTFOLDER/${USER}_notebook/.ncbi
 ls -d $PROJECTFOLDER/${USER}_notebook/.* | sort | awk 'NR>2' | xargs -I xx ln -s xx
 
 ```
+
+
+
+___
+# Further Reading
+* [XSEDE Supercomputer](01-bashrc)
+
+* [ISU HPC](../01-HPC-NETWORKS/01-introduction-to-hpc-infrastructure)
+* [SSH: Secure Shell Connection](../02-SSH/01-secure-shell-connection)
+* [Remote Data Access](../03-FILE-ACCESS/01-remote-data-acces)
+* [Software Available on HPC](../04-SOFTWARE/01-software-available-on-HPC)
+* [Introduction to Job Scheduling](../05-JOB-QUEUE/00-introduction-to-job-scheduling)
+* [Introduction to GNU Parallel](../06-PARALLEL/01-introduction-to-gnu-parallel)
+* [Introduction to Containers](../07-CONTAINERS/00-introduction-to-containers)
+
+
+___
+
+[Homepage](../../index.md){: .btn  .btn--primary}
+[Section Index](../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
+[Previous](../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
+[Next](01-bashrc){: .btn  .btn--primary}

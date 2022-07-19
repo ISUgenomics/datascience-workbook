@@ -52,5 +52,5 @@ ___
 
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
-[Previous](../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
+[Previous](../00-HOME-DIRECTORY/01-bashrc){: .btn  .btn--primary}
 [Next](01-XSEDE/01-supercomputer-intro){: .btn  .btn--primary}
