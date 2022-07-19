@@ -665,7 +665,7 @@ echo "The last iterated values are $i-$j"
 
 # 3. Bash scripting
 
-## 4.1 In-line scripting
+## 3.1 In-line scripting
 
 It is good to know that almost any bash script saved in a file can be copy-pasted into the command line and executed at the press of `enter`. The only limitation is the size of this script. The invaluable advantage of storing the script in a file is also the knowledge retention from the project and reusability. Nevertheless, even multi-nested loops can be effectively written and executed directly on the command line. This approach is useful in daily workflows and helps prevent easily reproducible code from cluttering up storage space. Note also that usually the last 500 commands are kept in the shell history, so it is easy to retrieve longer one-liners used a few days earlier.
 
@@ -676,7 +676,7 @@ Remember to separate the elements of bash statements with a semicolon <b>;</b> w
 </span>
 </div><br>
 
-## 4.2 Setting up the script
+## 3.2 Setting up the script
 
 If you don't know how to create a put file from the command line or redirect a command stream to a file, we recommend that you start with the [Introduction to Unix](https://datascience.101workbook.org/02-IntroToCommandLine/02-intro-to-unix-shell) and [Basic Unix Commands](https://datascience.101workbook.org/02-IntroToCommandLine/02A-basic-commands) tutorials.
 
