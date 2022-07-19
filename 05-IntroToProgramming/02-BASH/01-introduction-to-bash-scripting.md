@@ -164,7 +164,7 @@ compgen -k
 ```
 ![terminal colors](../assets/images/02_bash_keywords.png)<br>
 
-There are about twenty-some Bash statements, which can be further divided into several groups, including **loops**, **conditionals**, the **action operators**, and others. The table below contains the syntax, type, and definitions of the most common Bash statements. Explore additional columns of notes to gain an idea of when to use different syntaxes. In the following subsections, we will discuss the usage of Bash statements following real-life examples.
+There are about twenty-some Bash statements, which can be further divided into several groups, including **loops**, **conditionals**, the **action operators**, and others. The table below contains the syntax, type, and definitions of the most common Bash statements. Explore additional column with notes to gain an idea of when to use different syntaxes. In the following subsections, we will discuss the usage of Bash statements following real-life examples.
 
 |statement      | type               | definition | notes |
 |---------------|--------------------|------------|-------|
@@ -176,7 +176,7 @@ There are about twenty-some Bash statements, which can be further divided into s
 | elif          | conditional        | considering the next condition                  | use for the second and following conditions |
 | else          | conditional        | operation for all other scenarios               | if no condition was met then follow these commands |
 | case ... esac | conditional        | matching condition for query variable           | use when all of the conditions depend <br>on the value of the same variable<br> |
-| in            | iteration operator | iterating in the `for` and `select` loops       |for loop syntax:<br> `pearfor item in {1..5}; do commands; done`<br> select llop syntax:<br> `select item in {1..5}; do commands; done`|
+| in            | iteration operator | iterating in the `for` and `select` loops       |for loop syntax:<br> `for item in {1..5}; do commands; done`<br> select loop syntax:<br> `select item in {1..5}; do commands; done`|
 | do ... done   | action operator    | encapsulating the contents of the loop          | use the syntax: `do commands; done` in a loop syntax|
 | then          | action operator    | executing commands if condition is true         | use the syntax: `if condition; then commands; fi` |
 | break         | action operator    | terminating the current loop                    | use to terminate a loop at this point<br> and go straight to the commands that follows |
@@ -185,8 +185,8 @@ There are about twenty-some Bash statements, which can be further divided into s
 | time          | shell command      | keyword that estimates the execution time       | use the time keyword before executing the command<br> e.g., `time ls \| grep "PNG"` |
 | test          | shell command      | keyword that checks the logic of the condition  | e.g., `if test $x -gt $y`<br> returns true when x is greater than y |
 | [ ... ]       | logic construct    | syntax that checks the logic of the condition   | the equivalent to the *test* command<br> e.g., `if [ $x -gt $y ]` |
-| [[ ... ]]     | logic construct    | syntax that checks the logic of the condition   | helps to avoid logic errors in Bash;<br> `&&`, `\|\|`, `<` and `>` operators work |
-| { ... }       | array builder      | syntax that allows to build an array of items   | it can be a predefined list of strings or numbers<br> e.g., `{one, two three, four, five}`<br> it can be an automatically generated list of integers<br> e.g., `{1..5}` , use two dots between the numbers |
+| [[ ... ]]     | logic construct    | syntax that checks the logic of the condition   | helps to avoid logic errors in Bash;<br> `&&`, ```\|\|```, `<` and `>` operators work |
+| { ... }       | array builder      | syntax that allows to build an array of items   | it can be a predefined list of strings or numbers<br> e.g., `{one,two,three,four,five}`<br> it can be an automatically generated list of integers<br> e.g., `{1..5}` , *use two dots between the numbers* |
 
 
 ## **FOR** each item loop
@@ -240,21 +240,21 @@ Remember to always separate consecutive statement elements with a semicolon <b>;
 
 **VARIANTS OF A FOR-LOOP SYNTAX**
 
-*A. Iterate over strings given directly:*
+*A. Iterate over strings given directly (separated by spaces):*
 ```
 for item in item1 item2 item3 item4 item5; do
     echo  $item
 done
 ```
 
-*B. Iterate over strings given in an array:*
+*B. Iterate over strings given in an array (separated by commas without spaces):*
 ```
 for item in {item1,item2,item3,item4,item5}; do
     echo  $item
 done
 ```
 
-*C. Iterate over integers given in an array:*
+*C. Iterate over integers given in an array (separated by commas without spaces):*
 ```
 for item in {1,2,3,4,5}; do
     echo  $item
@@ -290,7 +290,7 @@ The syntax for generating integers in a sequence is 'seq START STEP END' or $(se
 
 *F. Iterate over integers generated automatically using incrementation:*
 ```
-for ((item=1;item<=END;item++)); do
+for ((item=1;item<=5;item++)); do
     echo $item
 done
 ```
@@ -405,7 +405,7 @@ The three most common usages of `while` loop are iterating for **as long as the 
 
 ### - ITERATE WHILE THE VALUE
 
-Let's assume that you know the upper threshold of a certain parameter and you know that once this value is exceeded, the analysis makes no further sense, e.g. you know that the percentage of component X in the mixture cannot be higher than 50%. You can use a `while` loop to test the properties of your mixture, increasing the content of component X every 1% until you reach the limit value.
+Let's assume that you know the upper threshold of a certain parameter and you know that once this value is exceeded, the analysis makes no further sense, e.g., you know that the percentage of component X in the mixture cannot be higher than 50%. You can use a `while` loop to test the properties of your mixture, increasing the content of component X every 1% until you reach the limit value.
 
 ```
 max_val=50
@@ -559,17 +559,17 @@ The following can be used as conditions: operators on files, strings comparison,
 touch file; file=file
 if [ -f $file ]; then echo $file; fi        # execute if $file is a regular file
 
-val = "word"
+val="word"
 if [ $val = "word" ]; then echo $val; fi    # execute if $val is a string "word"
 
-num = 20
+num=20
 if [ $num -gt 5 ]; then echo $num; fi       # execute if $num is numerical and greather than 5
 ```
 
-The above examples prove that the `echo` command is executed when the condition is met. But what if we want to execute another command if the condition is not satisfied? In this case, the syntax should be expanded with additional keywords `elif` and/or `else`. While `elif` can be used multiple times to define further specific conditions, `else` occurs at most once, always at the end of the syntax just before closing with `fi`. That is because `else` covers all cases not directly provided in condition variants, or in other words, executes a default set of commands in case all conditions are false.
+The above examples prove that the `echo` command is executed when the condition is met. But what if we want to execute another command if the condition is not satisfied? In this case, the syntax should be expanded with additional keywords `elif` and/or `else`. While `elif` can be used multiple times to define further specific conditions, `else` occurs once, always at the end of the syntax just before closing with `fi`. That is because `else` covers all cases not directly provided in condition variants, or in other words, executes a default set of commands in case all conditions are false.
 
 ```
-num = 2
+num=2
 if [ $num -gt 10 ]; then
   echo "The value "$num" is greater than 10"
 elif [[ $num -eq 4 || -gt 5 ]]; then
@@ -602,7 +602,7 @@ fi
 
 ## **continue** to next iteration
 
-The `continue` statement terminates the current iteration, skipping the remaining commands in the current loop (if nested), and passes the execution mode to the next iteration of a cutrrent loop. That means no more than **premature termination of the single iteration** in a given loop. Further iterations in this loop, as well as remaining commands in the other loops are not altered by this event.
+The `continue` statement **terminates the current iteration**, skipping the remaining commands in the current loop (if nested), and passes the execution mode to the next iteration of a current loop. That means no more than **premature termination of the single iteration** in a given loop. Further iterations in this loop, as well as remaining commands in the other loops are not altered by this event.
 
 ```
 for i in 1 2 3 4 5; do
@@ -618,7 +618,7 @@ done
 
 ## **break** the loop
 
-The `break` statement terminates the loop at the current iteration, exactly in the place where the `break` keyword occurs in the block of code. It means that commands remaining in the loop will not be executed, and the loop will not continue to iterate. The execution mode will be moved just outside the loop. Thus, the commands following the `done` keyword will further execute.
+The `break` statement **terminates the loop** at the current iteration, exactly in the place where the `break` keyword occurs in the block of code. It means that commands remaining in the loop will not be executed, and the **loop will not continue to iterate**. The execution mode will be moved just outside the loop. Thus, the commands following the `done` keyword will further execute.
 
 ```
 for i in 1 2 3 4 5; do
@@ -678,9 +678,9 @@ Remember to separate the elements of bash statements with a semicolon <b>;</b> w
 
 ## 3.2 Setting up the script
 
-If you don't know how to create a put file from the command line or redirect a command stream to a file, we recommend that you start with the [Introduction to Unix](https://datascience.101workbook.org/02-IntroToCommandLine/02-intro-to-unix-shell) and [Basic Unix Commands](https://datascience.101workbook.org/02-IntroToCommandLine/02A-basic-commands) tutorials.
+If you don't know how to create a file from the command line or redirect a command stream to a file, I recommend that you start with the [Introduction to Unix](https://datascience.101workbook.org/02-IntroToCommandLine/02-intro-to-unix-shell) and [Basic Unix Commands](https://datascience.101workbook.org/02-IntroToCommandLine/02A-basic-commands) tutorials.
 
-If you are not familiar with any of the basic text file editors in the terminal, such as nano, vim, or mcedit, take a look at the [Unix Text File Editors](https://datascience.101workbook.org/02-IntroToCommandLine/02B-text-files-editors) tutorials as well.
+If you are not familiar with any of the basic text file editors in the terminal, such as `nano`, `vim`, or `mcedit`, take a look at the [Unix Text File Editors](https://datascience.101workbook.org/02-IntroToCommandLine/02B-text-files-editors) tutorials as well.
 
 
 ### - HEADER
