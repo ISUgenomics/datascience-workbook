@@ -224,4 +224,4 @@ ___
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
 [Previous](00-setting-up-home-directory){: .btn  .btn--primary}
-[Next](./01-HPC-NETWORKS/01-introduction-to-hpc-infrastructure){: .btn  .btn--primary}
+[Next](../01-HPC-NETWORKS/01-introduction-to-hpc-infrastructure){: .btn  .btn--primary}
