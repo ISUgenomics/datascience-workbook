@@ -25,7 +25,7 @@ header:
 
 `*` - denotes multiple unknown characters in a string
 
-`?` - denotes single unknown characters in a string
+`?` - denotes single unknown character in a string
 
 USAGE in regular expressions:
 
@@ -353,7 +353,7 @@ for name in {dog,cat,fish,snake,bird}; do for format in txt dat png; do echo $na
 ![terminal colors](../assets/images/02_bash_for_loop_nested_inline.png)<br>
 
 
-**Use a template for 2 nasted FOR loops**
+**Use a template for 2 nested FOR loops**
 ```
 for item1 in {ARRAY-OF-ITEMS}; do
   for item2 in {ARRAY-OF-ITEMS}; do
@@ -533,7 +533,72 @@ echo "Job $JOBID is completed."
 
 ![terminal colors](../assets/images/02_bash_until_loop.png)<br>
 
-## **if-elif-else** conditional
+## **if-elif-else-fi** conditional
+
+In most cases, iterating through all the possibilities is computationally inefficient and time-consuming. With help comes **Bash conditionals**. This is a logical construction that allows you to consider different options and execute commands only when certain conditions are met. This applies when you want to process only files of a certain size or process further only significant values of loaded data. It could also be that for various categories in your dataset you want to use different parameter values. Other times you may want additional analysis for a certain subset of the data, while everything else is calculated in the default way. All these cases suggest using `if-elif-else-fi` conditional for Bash-based approaches.
+
+The most external and mandatory part of the syntax is the bracket `if ... fi`.
+
+The `if` takes as an argument a condition defined in square brackets (single or double) or must be preceded by the keyword `test`. The `test` can be considered equivalent to the `[ ]` syntax, while the double brackets [[ ]] are a more robust solution that allows defining multiple conditions connected by `&&` (and) or `||` (or) operators. The reserved word `then` in bash indicates where to trigger commands if the condition is met.
+
+```
+if [ <condition> ]; then
+    <COMMANDS>
+fi
+
+#-------------------
+
+if [[ <condition_1 && condition_2 > ]]; then
+    <COMMANDS>
+fi
+```
+
+The following can be used as conditions: operators on files, strings comparison, the numerical comparison of iterator to integer value. For more on the comparing conditions and available operators, see section 1.2 of this tutorial.
+
+```
+touch file; file=file
+if [ -f $file ]; then echo $file; fi        # execute if $file is a regular file
+
+val = "word"
+if [ $val = "word" ]; then echo $val; fi    # execute if $val is a string "word"
+
+num = 20
+if [ $num -gt 5 ]; then echo $num; fi       # execute if $num is numerical and greather than 5
+```
+
+The above examples prove that the `echo` command is executed when the condition is met. But what if we want to execute another command if the condition is not satisfied? In this case, the syntax should be expanded with additional keywords `elif` and/or `else.`. While `elif` can be used multiple times to define further specific conditions, `else` occurs at most once, always at the end of the syntax just before closing with `fi`. That is because `else` covers all cases not directly provided in condition variants, or in other words, executes a default set of commands in case all conditions are false.
+
+```
+num = 2
+if [ $num -gt 10 ]; then
+  echo "The value "$num" is greater than 10"
+elif [[ $num -eq 4 || -gt 5 ]]; then
+  echo "The value "$num" is equal to 4 or greter than 5 but lower than 10"
+else
+  echo "The value "$num" is lower than 4"
+fi
+
+```
+
+<div style="background: mistyrose; padding: 15px;">
+<span style="font-weight:800;">WARNING:</span>
+<br><span style="font-style:italic;">
+Be precise when you define conditions. In particular, take care of the order of the conditions being checked in the single syntax `if .... fi`. That is important because the <b>else</b> condition is executed only if all of the above return false.<br>
+Therefore, analyzing the above example: the elif variant will not return numbers greater than 10, even though they will be greater than 5, because they will already be returned in the if condition.<br>
+<b>Note: </b>Remember, in a given syntax <b>if ... fi</b> for the considered variable are <b>executed commands only from the first condition that is satisfied</b>.
+</span>
+</div><br>
+
+**Use the template of if-elif-else-fi conditional**
+```
+if [[ <condition(s)> ]]; then
+    <COMMANDS>
+elif [[ <condition(s)> ]]; then
+    <COMMANDS>
+else
+    <COMMANDS>
+fi
+```
 
 ## **break** the loop
 
