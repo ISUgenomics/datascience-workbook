@@ -400,7 +400,7 @@ Commands are executed as long as the user-provided **condition evaluates to true
 | while [file_1 -ot file_2] |execute if file_1 is older then file_2 or if only file_2 exists |
 
 
-The three most common usages of this loop are iterating for **as long as the specific iterator value is not reached**, **reading the file line-by-line to the end** of the file, and for creating an **infinite loop** that runs in the background and monitors any process.<br>
+The three most common usages of `while` loop are iterating for **as long as the specific iterator value is not reached**, **reading the file line-by-line to the end** of the file, and for creating an **infinite loop** that runs in the background and monitors any process.<br>
 
 
 ### - ITERATE WHILE THE VALUE
@@ -663,87 +663,120 @@ echo "The last iterated values are $i-$j"
 
 ---
 
-# 3. Command-line scripting
+# 3. Bash scripting
 
-A. INPUT
+## 4.1 In-line scripting
 
-B. STREAM
+It is good to know that almost any bash script saved in a file can be copy-pasted into the command line and executed at the press of `enter`. The only limitation is the size of this script. The invaluable advantage of storing the script in a file is also the knowledge retention from the project and reusability. Nevertheless, even multi-nested loops can be effectively written and executed directly on the command line. This approach is useful in daily workflows and helps prevent easily reproducible code from cluttering up storage space. Note also that usually the last 500 commands are kept in the shell history, so it is easy to retrieve longer one-liners used a few days earlier.
 
-D. OUTPUT
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+Remember to separate the elements of bash statements with a semicolon <b>;</b> when creating one-liners on the command line.
+</span>
+</div><br>
 
--- PRINT ON A SCREEN
+## 4.2 Setting up the script
 
--- REDIRECT BY A PIPE LINKER
+If you don't know how to create a put file from the command line or redirect a command stream to a file, we recommend that you start with the [Introduction to Unix](https://datascience.101workbook.org/02-IntroToCommandLine/02-intro-to-unix-shell) and [Basic Unix Commands](https://datascience.101workbook.org/02-IntroToCommandLine/02A-basic-commands) tutorials.
 
--- SAVE INTO A FILE
+If you are not familiar with any of the basic text file editors in the terminal, such as nano, vim, or mcedit, take a look at the [Unix Text File Editors](https://datascience.101workbook.org/02-IntroToCommandLine/02B-text-files-editors) tutorials as well.
 
----
-
-# 4. In-file scripting
-
-## 4.1 Setting up the script
-
-* link to the tutorial about text editors
-* link to the tutorial about Bash file management (touch, cat, head, tail, less, more, etc.)
 
 ### - HEADER
 
-Use `#!/bin/env bash` syntax at the top of your script file instead of `#!/bin/bash` as a more robust solution.
+Use `#!/bin/env bash` syntax at the top of your script file instead of `#!/bin/bash` as a more robust solution to keep a stable Bash environment. Applying the first statement will provide you with the default version of the program (e.g., bash or python) for your current environment.
+
+Follow the user's discussion at [unix.stackexchange.com](https://unix.stackexchange.com/questions/29608/why-is-it-better-to-use-usr-bin-env-name-instead-of-path-to-name-as-my/29620#29620) and [stackoverflow.com](https://stackoverflow.com/questions/16365130/what-is-the-difference-between-usr-bin-env-bash-and-usr-bin-bash) to learn more.
 
 ### - VARIABLES
 
-A. FROM ARGUMENT
+A. FROM ARGUMENT: Use `$1` variable to pass the value of the first argument provided after script name when executing.
 
--- e.g., $1 as a first value provided after script name when executing
+B. GLOBAL: The global variables are set **outside the loop** and **exist after the loop ends**.
 
-B. GLOBAL
+C. ITERATIVE: The iterative variables are those that store the current value of the loop iterator, regardless of whether they are strings read from a file or numbers incremented/decremented in successive loop cycles. The correct value usually disappears after leaving the loop and should not be further used.
 
--- outside the loop
+D. LOCAL: The local variables are temporary by design and they usually exist/are accessible only in the loop or conditional where they were created.
 
--- exists after the loop ends
-
-C. ITERATIVE
-
--- increment/decrement argument
-
--- list of processed files
-
--- disappears after leaving the loop
-
-D. LOCAL
-
--- in-loop or in-if variable
-
--- disappears after leaving the expression
 
 ### - ALGORITHM
 
-A. PIPE-linked stream of Commands
+A. PIPE-linked stream of commands
 
 ```
 cat file | grep "keyword" | tr '-' ' ' | awk '{print $2,$4,$6}' | sort -nk1 | uniq
 ```
 
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+Note that the result of the command stream can be redirected to:<br>
+- a file, e.g., command1 | command2 > file <br>
+- to a variable, variable=`command1 | command2`<br>
+- or displayed on the screen, e.g., command1 | command2
+</span>
+</div><br>
+
 B. Encapsulation in a loop
 
 ```
-for i in {0..10}; do touch file-$i; done
+for i in {0..10}; do
+    touch file-$i;
+done
 ```
 
-C. TEXT OUTPUTS
+C. Conditional execution of commands
+
+
+```
+if [ $variable -gt 5 ]; then
+    echo $variable
+else
+    break
+fi
+```
+
+D. Various types of outputs
+
+TEXT OUTPUTS
 
 ```
 k="Hello World!"
-echo $k > file
+echo $k
 ```
 
-D. GRAPHICAL OUTPUTS
-
-*(generate graphs with gnuplot)*
+GRAPHICAL OUTPUTS
 
 Encapsulating Gnuplot script in a bash **for** loop allows for returning image files all at once for multiple inputs.
 
-## 4.2 Executing the script
+```
+#!/bin/bash
+
+# BASH VARIABLES
+output="simple_graph"
+format=png
+
+for i in *.txt; do
+  k=`echo $i | tr '.' ' ' | awk '{print $1}'`
+
+gnuplot -persist <<- EOF
+
+# LAYOUT SETTINGS
+    set terminal '$format'
+    set output '$output-$k.$format'
+
+# PLOTTING COMMAND
+    plot '$i' u 1:2 with points
+
+EOF
+
+done
+```
+
+
+
+<!-- ## 4.2 Executing the script
 
 ### - FILE PERMISSIONS - `chmod`
 
@@ -769,7 +802,7 @@ e.g., row-col transpose
 
 ## FILE-SCRIPTS
 
-e.g., in-loop gnuploting template
+e.g., in-loop gnuploting template -->
 
 
 ___
