@@ -70,7 +70,7 @@ header:
 <br><br>
 
 # <a href="06-IntroToHPC/00-IntroToHPC-LandingPage" style="color: #8997c1;">06. High-Performance Computing (HPC)</a>
-* **<a href="06-IntroToHPC/00-HOME-DIRECTORY/00-setting-up-home-directory" style="color: #24376b;">Setting up your home directoryb for data analysis</a>**
+* **<a href="06-IntroToHPC/00-HOME-DIRECTORY/00-setting-up-home-directory" style="color: #24376b;">Setting up your home directory for data analysis</a>**
   * <a href="06-IntroToHPC/00-HOME-DIRECTORY/01-bashrc" style="color: #3f5a8a;">.bashrc example file</a>
 * **<a href="06-IntroToHPC/01-HPC-NETWORKS/01-introduction-to-hpc-infrastructure" style="color: #24376b;">Introduction to HPC infrastructure</a>**
   * <a href="06-IntroToHPC/01-HPC-NETWORKS/01-XSEDE/01-supercomputer-intro" style="color: #3f5a8a;">XSEDE Supercomputer</a>
