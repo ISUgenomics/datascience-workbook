@@ -96,7 +96,7 @@ jupyter lab
 jupyter notebook
 ```
 
-This will open a browser on a **localhost** to the URL of your Notebooks, by default [http://127.0.0.1:8888](http://127.0.0.1:8888).
+That will open your Jupyter session in a web browser on a **localhost** with a default URL: [http://127.0.0.1:8888](http://127.0.0.1:8888).
 
 <p align="center"><img width="800" src="assets/images/04_jupyter_launch.gif"></p>
 
