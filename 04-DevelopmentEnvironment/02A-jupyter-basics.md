@@ -91,6 +91,8 @@ jupyter lab
 
 That will open your Jupyter session in a web browser on **localhost** with a default URL: [http://localhost:8889/lab](http://localhost:8889/lab).
 
+<p align="center"><img width="800" src="assets/images/04_jupyter_launch.gif"></p>
+
 ### - Jupyter Notebook
 
 <br>Once installed, you can start it from the command line by typing:
@@ -100,7 +102,7 @@ jupyter notebook
 
 That will open your Jupyter session in a web browser on **localhost** with a default URL: [http://localhost:8888/tree](http://localhost:8888/tree).
 
-<p align="center"><img width="800" src="assets/images/04_jupyter_launch.gif"></p>
+<p align="center"><img width="800" src="assets/images/04_jupyter_notebook_launch.gif"></p>
 
 
 
