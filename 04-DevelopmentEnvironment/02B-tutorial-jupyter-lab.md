@@ -10,11 +10,11 @@ header:
 
 {% include toc %}
 
-<span style="color: #ff3870; font-weight: 600;">If you don't already have JupyterLab installed, follow the instructions in the tutorial:</span> [Jupyter: Web-Based Programming Interface](https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-jupyter-basics).
+<span style="color: #ff3870; font-weight: 600;">If you don't already have JupyterLab installed or you wish to use the SCINet OOD service, follow the instructions in the tutorial:</span> [Jupyter: Web-Based Programming Interface](https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-jupyter-basics). In this tutorial, you will learn about the practical aspects of using the Jupyter app, including the options available and various tips & tricks.
 
 ## Start JupyterLab via Terminal
 
-Once installed, you can start a web-based interface of `jupyter lab` from the command line by typing:
+Once installed locally, you can start a web-based interface of `jupyter lab` from the command line by typing:
 
 ```
 jupyter lab
