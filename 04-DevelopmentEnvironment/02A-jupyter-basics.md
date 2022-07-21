@@ -105,7 +105,7 @@ That will open your Jupyter session in a web browser on **localhost** with a def
 <p align="center"><img width="800" src="assets/images/04_jupyter_notebook_launch.gif"></p>
 
 
-## Jupyter via Open OnDemand
+# Jupyter via **O**pen **O**n**D**emand
 
 [Open OnDemand](https://openondemand.org) (OOD) is an **interactive interface to remote computing resources** such as [SCINet infrastructure](https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/01-scient-network-intro) or other [HPC clusters](https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/01-introduction-to-hpc-infrastructure). Figuratively speaking, OOD  creates a graphical user interface **using a web browser window** to provide the user interactive access to HPC infrastructure. In a nutshell, it serves a **desktop to a file system on a cluster**, visible to the user and managed in a web browser window. Actually, the desktop is one of the interactive applications available through the OOD service. In general, **programs available via the OOD service operate based on graphical visualization**, which is impossible directly in the terminal on a remote machine. These are, for example, programs for **geospatial analysis or RStudio and Jupyter**, which provide the opportunity to graphically present the analyses, managed commonly in R and Python.
 
@@ -117,9 +117,10 @@ The OOD service is managed by the admins of specific HPC infrastructure. Also, t
 </span>
 </div><br>
 
-### - Jupyter via SCINet OOD
 
+## Jupyter via SCINet OOD
 
+[SCINet](https://scinet.usda.gov) is a Scientific Computing Network combining high-performance computing ([HPC](https://datascience.101workbook.org/06-IntroToHPC/00-IntroToHPC-LandingPage)) infrastructure ([Atlas cluster](https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/02-scinet-atlas-cluster), [Ceres cluster](https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/03-scinet-ceres-cluster), [Juno storage](https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/04-scinet-juno-storage)), professional training, and improvement of collaborative network among USDA researchers. To access these resources you must be an ARS-related (or sponsored) scientist and apply for a **[SCINet account](https://scinet.usda.gov/about/signup)** in advance.
 
 **Jupyter on ATLAS**
 
