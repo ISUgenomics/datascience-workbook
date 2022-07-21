@@ -105,7 +105,33 @@ That will open your Jupyter session in a web browser on **localhost** with a def
 <p align="center"><img width="800" src="assets/images/04_jupyter_notebook_launch.gif"></p>
 
 
+## Jupyter via Open OnDemand
 
+[Open OnDemand](https://openondemand.org) (OOD) is an **interactive interface to remote computing resources** such as [SCINet infrastructure](https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/01-scient-network-intro) or other [HPC clusters](https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/01-introduction-to-hpc-infrastructure). Figuratively speaking, OOD  creates a graphical user interface **using a web browser window** to provide the user interactive access to HPC infrastructure. In a nutshell, it serves a **desktop to a file system on a cluster**, visible to the user and managed in a web browser window. Actually, the desktop is one of the interactive applications available through the OOD service. In general, **programs available via the OOD service operate based on graphical visualization**, which is impossible directly in the terminal on a remote machine. These are, for example, programs for **geospatial analysis or RStudio and Jupyter**, which provide the opportunity to graphically present the analyses, managed commonly in R and Python.
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+The good news is that <b>you do NOT have to install</b> anything yourself! <br>
+The OOD service is managed by the admins of specific HPC infrastructure. Also, the programs available through the OOD are installed and updated by them. You just need to log into the system in your browser and set up your interactive session.
+</span>
+</div><br>
+
+### - Jupyter via SCINet OOD
+
+
+
+**Jupyter on ATLAS**
+
+Access the **login** web page at: [https://atlas-ood.hpc.msstate.edu/](https://atlas-ood.hpc.msstate.edu/ )
+
+Follow the Ceres Open OnDemand **Guide** at [hpc.msstate.edu](https://www.hpc.msstate.edu/computing/atlas/#ondemand)
+
+**Jupyter on Ceres**
+
+Access the **login** web page at: [http://ceres-ood.scinet.usda.gov/](http://ceres-ood.scinet.usda.gov/)
+
+Follow the Ceres Open OnDemand **Guide** at [scinet.usda.gov](https://scinet.usda.gov/guide/ceres_ood/)
 
 ___
 # Further Reading
