@@ -82,14 +82,14 @@ pip install notebook
 
 Launching the jupyter web application is also effortless, you just simply type `jupyter lab` or `jupyter notebook` in the terminal (choose correctly for the installed variant). After approving the command with `enter` key (`return` on mac), a new window of your default web browser will automatically open along with the jupyter GUI.
 
-### JupyterLab
+### - JupyterLab
 
 <br>Once installed, you can start it from the command line by typing:
 ```
 jupyter lab
 ```
 
-### Jupyter Notebook
+### - Jupyter Notebook
 
 <br>Once installed, you can start it from the command line by typing:
 ```
