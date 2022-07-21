@@ -14,7 +14,7 @@ header:
 # Introduction
 
 <span style="color: #ff3870; font-weight: 600;">If you are a beginner at Linux, it may be beneficial for you to start with the tutorials provided in section</span>
-[02. Introduction to Command Line](https://datascience.101workbook.org/02-IntroToCommandLine/00-IntroToCommandLine-LandingPage). 
+[02. Introduction to Command Line](https://datascience.101workbook.org/02-IntroToCommandLine/00-IntroToCommandLine-LandingPage).
 
 # 1. Bash expressions
 
@@ -717,7 +717,7 @@ done                      #--------------- commands below the line will be execu
 echo "The last iterated values are $i-$j"
 ```
 
-![terminal colors](../assets/images/02_bash_break.png)<br>
+![terminal colors](../assets/images/02_bash_break_nested.png)<br>
 
 
 ---
