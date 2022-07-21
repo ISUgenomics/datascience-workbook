@@ -123,13 +123,13 @@ The OOD service is managed by the admins of specific HPC infrastructure. Also, t
 
 **Jupyter on ATLAS**
 
-Access the **login** web page at: [https://atlas-ood.hpc.msstate.edu/](https://atlas-ood.hpc.msstate.edu/ )
+Access the **Atlas OOD login** web page at: [https://atlas-ood.hpc.msstate.edu/](https://atlas-ood.hpc.msstate.edu/ )
 
 Follow the Atlas Open OnDemand **Guide** at [hpc.msstate.edu](https://www.hpc.msstate.edu/computing/atlas/#ondemand)
 
 **Jupyter on Ceres**
 
-Access the **login** web page at: [http://ceres-ood.scinet.usda.gov/](http://ceres-ood.scinet.usda.gov/)
+Access the **Ceres OOD login** web page at: [http://ceres-ood.scinet.usda.gov/](http://ceres-ood.scinet.usda.gov/)
 
 Follow the Ceres Open OnDemand **Guide** at [scinet.usda.gov](https://scinet.usda.gov/guide/ceres_ood/)
 
