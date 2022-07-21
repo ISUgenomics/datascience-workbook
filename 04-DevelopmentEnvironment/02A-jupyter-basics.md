@@ -29,7 +29,7 @@ can all be saved into a **single notebook** file. This file also **caches the ke
 **In a word, it is worth to start using Jupyter, especially at the stage of final parsing of results and data visualization, also interactive ones.**
 
 
-## JupyterLab vs. Jupyter Notebook
+## JupyterLab vs. Notebook
 
 There are several distributions of Jupyter interface:
 * Jupyter Notebook
@@ -89,6 +89,8 @@ Launching the jupyter web application is also effortless, you just simply type `
 jupyter lab
 ```
 
+That will open your Jupyter session in a web browser on **localhost** with a default URL: [http://localhost:8889/lab](http://localhost:8889/lab).
+
 ### - Jupyter Notebook
 
 <br>Once installed, you can start it from the command line by typing:
@@ -96,9 +98,12 @@ jupyter lab
 jupyter notebook
 ```
 
-That will open your Jupyter session in a web browser on **localhost** with a default URL: [http://127.0.0.1:8888](http://127.0.0.1:8888).
+That will open your Jupyter session in a web browser on **localhost** with a default URL: [http://localhost:8888/tree](http://localhost:8888/tree).
 
 <p align="center"><img width="800" src="assets/images/04_jupyter_launch.gif"></p>
+
+
+
 
 ___
 # Further Reading

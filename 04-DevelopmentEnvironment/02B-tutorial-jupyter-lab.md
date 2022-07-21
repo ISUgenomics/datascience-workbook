@@ -20,13 +20,17 @@ Once installed, you can start a web-based interface of `jupyter lab` from the co
 jupyter lab
 ```
 
-That will start a server on **localhost** and automatically open the Jupyter interface in your default browser, and by default, it will work on URL: [http://localhost:8889/lab](http://localhost:8889/lab).
+That will start a server on **localhost** and automatically open the Jupyter interface in your default browser. It will work on URL: [http://localhost:8889/lab](http://localhost:8889/lab).
+
+## JupyterLab GUI
+
+The JupyterLab interface is built up of two main panels: a **file system browser** on the left-hand side of the GUI window, and **developer space** on the right-hand side. By default, on start, you will see the **Launcher** mode in the developer's panel. There you will find several icons with shortcuts that open a new instance of one of several most popular applications, such as a **multifunctional notebook**, a **console** in the programming language of your choice, a **terminal** emulator, a **raw text** file, a rich text file (**markdown**), or a **script file**. Clicking on the icon converts the launcher to the selected app. Many applications can be opened at the same time, and each of them will be added in a separate tab in the same browser window.<br>
 
 <p align="center"><img width="800" src="assets/images/04_jupyter_launching.gif"></p>
 
-## JupyterLAB GUI
+### - Keep multiple apps open
 
-The JupyterLab interface is built up of two main panels: a **file system browser** on the left-hand side of the GUI window, and **developer space** on the right-hand side. By default, on start, you will see the **Launcher** mode in the developer's panel. There you will find several icons with shortcuts that open a new instance of one of several most popular applications, such as a **multifunctional notebook**, a **console** in the programming language of your choice, a **terminal** emulator, a **raw text** file, a rich text file (**markdown**), or a **script file**. Clicking on the icon converts the launcher to the selected app. Many applications can be opened at the same time, and each of them will be added in a separate tab in the same browser window.<br>
+In the top menu bar select `File →  New Launcher` to add a new tab with shortcuts for the apps. You can also select a particular type of application directly from the menu by following the options `File →  New  →  {Console, Notebook, Terminal, Text File, Markdown File, Python File}`. For `Console`, you can further customize the **kernel** by selecting options available in your environment *(see the animated image above)*. Selecting **Notebook** will open an interactive notebook in a new tab in your Jupyter web-based GUI where you can execute your code cells, create documentation in markdown cells, and visualize graphically your results.
 
 <p align="center"><img width="800" src="assets/images/04_jupyter_app_shortcuts.gif"></p>
 
@@ -45,9 +49,6 @@ A quick shortcut to <b>adding a new tab with Launcher</b> is that big blue butto
 </span>
 </div><br>
 
-### - Keep multiple apps open
-
-In the top menu bar select `File →  New Launcher` to add a new tab with shortcuts for the apps. You can also select a particular type of application directly from the menu by following the options `File →  New  →  {Console, Notebook, Terminal, Text File, Markdown File, Python File}`. For `Console`, you can further customize the **kernel** by selecting options available in your environment *(see the animated image above)*. Selecting **Notebook** will open an interactive notebook in a new tab in your Jupyter web-based GUI where you can execute your code cells, create documentation in markdown cells, and visualize graphically your results.
 
 ### - Rename a file
 
