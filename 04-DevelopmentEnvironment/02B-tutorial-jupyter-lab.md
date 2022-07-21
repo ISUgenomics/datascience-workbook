@@ -86,7 +86,7 @@ Browse file system to enter your workdir. By default, JupterLab will open a file
 
 ### - Save the progress
 
-JupyterLab has a built-in **auto-save** option. Just make sure you check it in the settings in the top menu bar `Settings  →  Autosave Documents`.
+JupyterLab has a built-in **auto-save** option. Just be sure you checked the box in the settings in the top menu bar `Settings  →  Autosave Documents`. *You will appreciate that canny move when the application closes unexpectedly one day, but your very important files will be saved (!)*
 
 ![Jupyter_files_menager](assets/images/04_jupyter_autosave.png)
 
