@@ -125,7 +125,7 @@ The OOD service is managed by the admins of specific HPC infrastructure. Also, t
 
 Access the **login** web page at: [https://atlas-ood.hpc.msstate.edu/](https://atlas-ood.hpc.msstate.edu/ )
 
-Follow the Ceres Open OnDemand **Guide** at [hpc.msstate.edu](https://www.hpc.msstate.edu/computing/atlas/#ondemand)
+Follow the Atlas Open OnDemand **Guide** at [hpc.msstate.edu](https://www.hpc.msstate.edu/computing/atlas/#ondemand)
 
 **Jupyter on Ceres**
 
