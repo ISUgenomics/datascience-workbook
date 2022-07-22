@@ -109,7 +109,101 @@ To terminate the Jupyter interface, first, save the changes with `File →  Save
 
 <p align="center"><img width="800" src="assets/images/04_jupyter_terminate.gif"></p>
 
+
+# Jupyter Apps
+
+Jupyter is much more than just another text editor for code development. It is a highly flexible, easily accessible, and portable integrated programming environment. Launched via [OOD service](https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-jupyter-basics#jupyter-via-open-ondemand), it  overcomes the limitations of the terminal working on a remote machine by supporting interactive visualization of the analytical output. In this section, you will find an introduction to several handy applications built into the Jypyter interface.
+
+## Notebook
+
+Notebook is a multifunctional type of file in `.ipynb` format. It allows the co-presence of cells with **executable source code and rendered text** *(e.g., documentation, comments, procedure description, instructions)* in a single document. In addition, it is able to render graphical output as the result of the executed code when using graphing library, such as `plotly` or `matplotlib`.
+
+![Jupyter notebook cell types](assets/images/04_jupyter_cell_types.png)<br>
+
+You can create a new file using a shortcut in the Launcher view *(blue arrow in the picture)* or open an existing one by double-clicking it in the file browser *(magenta arrow in the picture)*.
+
+![Jupyter notebook app](assets/images/04_jupyter_notebook_app.png)
+
+On the launching icon you can see with which kernel the new notebook will be opened by default. It depends on the modules installed in the environment in which you run jupyter. For example, if `python3` is available in your environment *(e.g., conda env)*, it will be in the `Start Preferred Kernel` list. You can also choose `No Kernel` option or `Use Kernel from Preferred Session` which will match the kernel to be compatible with the other notebook file. The selected kernel determines what programming language and which particular version will be interpreted when executing code cells. Note that the kernel is cashed for a given `.ipynb` file, and it's name is displayed in the upper right corner of the jupyter tab.
+
+![Jupyter select kernel](assets/images/04_jupyter_notebook_select_kernel.png)
+
+**Let's check how the *Notebook* works.**
+
+There are several keyboard shortcuts that make it easier to navigate between cells on the notebook. For a quick overview, see the table below.
+
+| shortcut     | on macOS        | operation |
+|--------------|-----------------|-----------|
+| ENTER        | RETURN          | new line in the cell  |
+| BACKSPACE    | DELETE          | remove character or new line in the cell |
+| CTRL + ENTER | CTRL + RETURN   | execute cell in place |
+| ALT + ENTER  | OPTION + RETURN | execute cell and create new one |
+
+<p align="center"><img width="800" src="assets/images/04_jupyter_cell_type.gif"></p>
+
+### **- CELL TYPES**
+
+* **MARKDOWN**
+
+1. Click on the selected cell. From the top menu, select `Markdown` option, and then enter text into the cell.<br>
+2. To render the contents of a MARKDOWN cell, you need to execute the cell by pressing `CTRL + ENTER`. If you use `ALT + ENTER`, it will additionally create the next empty cell.<br>
+3. You can customize the text style as you like using markdown or HTML syntax.<br>
+To learn more about **Markdown**, follow the [Introduction to Markdown](https://datascience.101workbook.org/09-ProjectManagement/02-DOCUMENTATION/02-intro-to-markdown) tutorial, available in this workbook.<br>
+To learn more about **HTML**, try an [HTML Styles tutorial provided by w3schools.com](https://www.w3schools.com/html/html_styles.asp).
+
+```
+# Simple <b><span style="color:#eb2a7b;">Markdown</span></b> and <b><span style="color:darkturquoise;">HTML</span></b> styling
+```
+
+![Jupyter select kernel](assets/images/04_jupyter_notebook_markdown.png)
+
+
+* **CODE**
+
+1. Click on the selected cell. From the top menu, select `Code` option, and then enter vsource code into the cell. Depending on your preferred programming language (i.e., the kernel of your choice) in the code type cell, you can define **variables**, apply available **arithmetic operators**, and **call functions** from inserted modules and libraries.<br>
+2. To render the contents of a CODE cell, you need to execute the cell by pressing `CTRL + ENTER`. If you use `ALT + ENTER`, it will additionally create the next empty cell.
+
+```
+x = 2
+y = 3
+z = x + y
+print(f"the sum is: {z}")
+```
+
+![Jupyter select kernel](assets/images/04_jupyter_notebook_code.png)
+
+### **- DEBUG MODE**
+On the right side in the top menu of the notebook is the bug icon that enables debugger mode. Using the options from the horizontal menu on the right, you can set breakpoints in your code to check its correctness and performance.
+
+![Jupyter select kernel](assets/images/04_jupyter_notebook_debug.png)
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+By clicking on the <b>blue vertical bar</b> on the left-hand side of each cell, you can <b>hide its contents</b> for a clearer view when needed.
+</span>
+</div><br>
+
+
+<!-- ## Console
+
+## Terminal
+
+## Text File
+
+## Markdown File
+
+## Python File
+
+## Contextual Help
+
+
+# Hands-on Tutorials -->
+
+
+
 ___
+
 # Further Reading
 * [PyCharm: IDE for Professional Python Developers](02C-pycharm-ide)
 * [R Programming Environment](03-r-programming-environment.md)
