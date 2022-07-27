@@ -35,3 +35,12 @@ I am a PhD in Bioinformatics and Computational Biology. I have been programming 
 
 ![Arun](../assets/images/people/Arun.jpg){: .align-left}
 My main interests are in the fields of Bioinformatics and evolutionary Genomics. Currently, I am working on various projects involving next-generation sequencing, including the first *de novo* assembly of a teosinte genome. I am also developing pipelines to streamline the assembly and annotation process for newly sequenced organisms. My long-term goal is to study genome organization and the evolution of grass species.
+
+### Kerrie Geil
+
+![Kerrie](../assets/images/people/KerrieGeil.png){: .align-left-profile }
+Kerrie is an ARS SCINet postdoc in the research group of Dr. Deb Peters in Las Cruces, NM. Her M.S. and Ph.D. degrees are in Atmospheric Sciences and her research background is in climate modeling.
+
+### Rowan Gaffney
+![Rowan](../assets/images/people/RowanGaffney.jpg){: .align-left-profile }
+Rowan is a physical scientist in the Rangeland Resource & Systems Research Unit in Fort Collins, CO. He specializes in analyzing large, multidimensional geospatial data using a variety of approaches from machine learning to numerical analysis. <br /> <br />
