@@ -56,6 +56,8 @@ header:
 * **<a href="04-DevelopmentEnvironment/02-python-programming-environment" style="color: #24376b;">Python Programming Environment</a>**
   * <a href="04-DevelopmentEnvironment/02A-jupyter-basics" style="color: #3f5a8a;">Jupyter: Interactive Web-Based Multi-Kernel Programming Interface</a>
     * <a href="04-DevelopmentEnvironment/02B-tutorial-jupyter-lab" style="color: #3f5a8a;">Tutorial: Getting Started with JupyterLab </a>
+    * <a href="04-DevelopmentEnvironment/02B-tutorial-jupyter-notebook" style="color: #3f5a8a;">Tutorial: Getting Started with Jupyter Notebook </a>
+    * <a href="04-DevelopmentEnvironment/02B-tutorial-jupyter-sharing-mybinder" style="color: #3f5a8a;">Tutorial: Sharing Jupyter Notebooks via MyBinder </a>
   * <a href="04-DevelopmentEnvironment/02C-pycharm-ide" style="color: #3f5a8a;">PyCharm: IDE for Professional Python Developers</a>
 * **<a href="04-DevelopmentEnvironment/03-r-programming-environment" style="color: #24376b;">R Programming Environment</a>**
   * <a href="04-DevelopmentEnvironment/03A-rstudio-basics" style="color: #3f5a8a;">RStudio: Integrated Environment for R Programming</a>
@@ -66,6 +68,7 @@ header:
 * **<a href="05-IntroToProgramming/01-ALGORITHM/01-basics-of-algorithm-structure" style="color: #24376b;">Basics of Algorithm Structure</a>**
 * **<a href="05-IntroToProgramming/02-BASH/01-introduction-to-bash-scripting" style="color: #24376b;">Introduction to Bash Scripting</a>**
 * **<a href="05-IntroToProgramming/03-PYTHON/01-introduction-to-python" style="color: #24376b;">Introduction to Python programming</a>**
+  * <a href="05-IntroToProgramming/03-PYTHON/02-Python-setup" style="color: #3f5a8a;">Tutorial: Python Setup</a>
 * **<a href="05-IntroToProgramming/04-R/01-introduction-to-R" style="color: #24376b;">Introduction to R programming</a>**
 <br><br>
 
@@ -92,6 +95,7 @@ header:
   * <a href="06-IntroToHPC/04-SOFTWARE/03-installing-custom-programs" style="color: #3f5a8a;">Installing Custom Programs in User Space</a>
 * **<a href="06-IntroToHPC/05-JOB-QUEUE/00-introduction-to-job-scheduling" style="color: #24376b;">Introduction to Job Scheduling</a>**
   * <a href="06-IntroToHPC/05-JOB-QUEUE/01-SLURM/01-slurm-basics" style="color: #3f5a8a;">SLURM</a>
+    * <a href="06-IntroToHPC/05-JOB-QUEUE/01-SLURM/01-slurm-introduction" style="color: #3f5a8a;">Introduction to SLURM</a>
     * <a href="06-IntroToHPC/05-JOB-QUEUE/01-SLURM/02-slurm-cheatsheet" style="color: #3f5a8a;">SLURM Cheatsheet</a>
     * <a href="06-IntroToHPC/05-JOB-QUEUE/01-SLURM/03-slurm-1-tutorial-job-submission" style="color: #3f5a8a;">Tutorial: Creating SLURM Job Submission Scripts</a>
     * <a href="06-IntroToHPC/05-JOB-QUEUE/01-SLURM/04-slurm-2-tutorial-submitting-dependency-jobs" style="color: #3f5a8a;">Tutorial: Submitting Dependency Jobs using SLURM</a>
@@ -169,8 +173,11 @@ header:
 
 * **<a href="09-ProjectManagement/01-SOURCE-CODE/01-code-mamangement-tools" style="color: #24376b;">Project Management Tools</a>**
   * <a href="09-ProjectManagement/01-SOURCE-CODE/02-intro-to-github" style="color: #3f5a8a;">Introduction to GitHub</a>
+    * <a href="09-ProjectManagement/01-SOURCE-CODE/02A-github-commands" style="color: #3f5a8a;">Tutorial: Git commands (part 1)</a>
+    * <a href="09-ProjectManagement/01-SOURCE-CODE/02B-github-commands" style="color: #3f5a8a;">Tutorial: Git commands (part 2)</a>
   * <a href="09-ProjectManagement/01-SOURCE-CODE/03-intro-to-bitbucket" style="color: #3f5a8a;">Introduction to BitBucket</a>
   * <a href="09-ProjectManagement/01-SOURCE-CODE/04-intro-to-zenhub" style="color: #3f5a8a;">Introduction to ZenHub</a>
+  * <b><a href="09-ProjectManagement/01-SOURCE-CODE/05-tutorial-research-reproducibility" style="color: #3f5a8a;">Tutorial: Research Reproducibility</a></b>
 * **<a href="09-ProjectManagement/02-DOCUMENTATION/01-documentation-improvement-tools" style="color: #24376b;">Documentation Improvement Tools</a>**
   * <a href="09-ProjectManagement/02-DOCUMENTATION/02-intro-to-markdown" style="color: #3f5a8a;">Introduction to Markdown</a>
 * **<a href="09-ProjectManagement/03-COMMUNICATION/01-team-communication-tools" style="color: #24376b;">Team Communication Tools</a>**
