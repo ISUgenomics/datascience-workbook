@@ -38,3 +38,19 @@ Arun Seetharam:
   twitter     : "someone"
   email       : "mailto:someone@iastate.edu"
   website     : "https://gif.biotech.iastate.edu"
+
+Kerrie Geil:
+  name        : "Kerrie Geil"
+  bio         : "Kerrie is an ARS SCINet postdoc in the research group of Dr. Deb Peters in Las Cruces, NM. Her M.S. and Ph.D. degrees are in Atmospheric Sciences and her research background is in climate modeling."
+  avatar      : "/assets/images/people/KerrieGeil.png"
+  twitter     : "someone"
+  email       : "mailto:someone@iastate.edu"
+  website     : "https://gif.biotech.iastate.edu"
+
+Rowan Gaffney:
+  name        : "Rowan Gaffney"
+  bio         : "Rowan is a physical scientist in the Rangeland Resource & Systems Research Unit in Fort Collins, CO. He specializes in analyzing large, multidimensional geospatial data using a variety of approaches from machine learning to numerical analysis."
+  avatar      : "/assets/images/people/RowanGaffney.jpg"
+  twitter     : "someone"
+  email       : "mailto:rowan.gaffney@usda.gov"
+  github      : "https://github.com/rmg55"

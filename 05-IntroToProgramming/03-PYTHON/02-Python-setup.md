@@ -2,7 +2,7 @@
 title: "Introduction to Python programming"
 layout: single
 author: Jennifer Chang
-author_profile: false
+author_profile: true
 header:
   overlay_color: "444444"
   overlay_image: /05-IntroToProgramming/assets/images/05_programming_banner.png
