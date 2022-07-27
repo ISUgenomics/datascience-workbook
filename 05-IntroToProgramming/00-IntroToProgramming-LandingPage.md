@@ -18,6 +18,7 @@ With some knowledge of scripting and algorithm design, you can easily encapsulat
 ### **<a href="02-BASH/01-introduction-to-bash-scripting" style="color: #24376b;">2. Introduction to Bash Scripting</a>**
 
 ### **<a href="03-PYTHON/01-introduction-to-python" style="color: #24376b;">3. Introduction to Python programming</a>**
+* <a href="03-PYTHON/02-Python-setup" style="color: #3f5a8a;">Tutorial: Python Setup</a>
 
 ### **<a href="04-R/01-introduction-to-R" style="color: #24376b;">4. Introduction to R programming</a>**
 

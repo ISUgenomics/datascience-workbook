@@ -20,6 +20,8 @@ header:
 
 ___
 # Further Reading
+* [Python setup](02-Python-setup)
+
 * [Introduction to R programming](../04-R/01-introduction-to-R)
 
 ___
@@ -27,4 +29,4 @@ ___
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-IntroToProgramming-LandingPage){: .btn  .btn--primary}
 [Previous](../02-BASH/01-introduction-to-bash-scripting){: .btn  .btn--primary}
-[Next](../04-R/01-introduction-to-R){: .btn  .btn--primary}
+[Next](02-Python-setup){: .btn  .btn--primary}
