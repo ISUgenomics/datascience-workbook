@@ -18,8 +18,11 @@ It is undeniable that good project management leads to improved reproducibility 
 
 ### **<a href="01-SOURCE-CODE/01-code-mamangement-tools" style="color: #24376b;">2. Project Management Tools</a>**
 * <a href="01-SOURCE-CODE/02-intro-to-github" style="color: #3f5a8a;">2.1 Introduction to GitHub</a>
+  * <a href="01-SOURCE-CODE/02A-github-commands" style="color: #3f5a8a;">Tutorial: Git commands (part 1)</a>
+  * <a href="01-SOURCE-CODE/02B-github-commands" style="color: #3f5a8a;">Tutorial: Git commands (part 2)</a>
 * <a href="01-SOURCE-CODE/03-intro-to-bitbucket" style="color: #3f5a8a;">2.2 Introduction to BitBucket</a>
 * <a href="01-SOURCE-CODE/04-intro-to-zenhub" style="color: #3f5a8a;">2.3 Introduction to ZenHub</a>
+* <b><a href="01-SOURCE-CODE/05-tutorial-research-reproducibility" style="color: #3f5a8a;">Tutorial: Research Reproducibility</a></b>
 
 ### **<a href="02-DOCUMENTATION/01-documentation-improvement-tools" style="color: #24376b;">3. Documentation Improvement Tools</a>**
 * <a href="02-DOCUMENTATION/02-intro-to-markdown" style="color: #3f5a8a;">3.1 Introduction to Markdown</a>
