@@ -147,6 +147,9 @@ Follow the Ceres Open OnDemand **Guide** at [scinet.usda.gov](https://scinet.usd
 ___
 # Further Reading
 * [Tutorial: Getting Started with JupyterLab](02B-tutorial-jupyter-lab)
+* [Tutorial: Getting Started with Jupyter Notebook](02B-tutorial-jupyter-notebook)
+* [Tutorial: Sharing Jupyter Notebooks via MyBinder](02B-tutorial-jupyter-sharing-mybinder)
+
 * [PyCharm: IDE for Professional Python Developers](02C-pycharm-ide)
 * [R Programming Environment](03-r-programming-environment.md)
 

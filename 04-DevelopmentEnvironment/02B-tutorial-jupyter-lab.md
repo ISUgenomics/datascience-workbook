@@ -205,6 +205,9 @@ By clicking on the <b>blue vertical bar</b> on the left-hand side of each cell, 
 ___
 
 # Further Reading
+* [Tutorial: Getting Started with Jupyter Notebook](02B-tutorial-jupyter-notebook)
+* [Tutorial: Sharing Jupyter Notebooks via MyBinder](02B-tutorial-jupyter-sharing-mybinder)
+
 * [PyCharm: IDE for Professional Python Developers](02C-pycharm-ide)
 * [R Programming Environment](03-r-programming-environment.md)
 
@@ -213,4 +216,4 @@ ___
 [Homepage](../index.md){: .btn  .btn--primary}
 [Section Index](00-DevelopmentEnvironment-LandingPage){: .btn  .btn--primary}
 [Previous](02A-jupyter-basics){: .btn  .btn--primary}
-[Next](02C-pycharm-ide){: .btn  .btn--primary}
+[Next](02B-tutorial-jupyter-notebook){: .btn  .btn--primary}
