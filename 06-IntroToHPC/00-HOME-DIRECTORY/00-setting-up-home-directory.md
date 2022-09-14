@@ -66,7 +66,7 @@ Now if you list the contents of your home folder you should see a folder with th
 
 ## .bashrc
 
-There is an [example](bashrc) of a `.bashrc` file that you can use as a starter file. Check out the bashrc tutorial and copy the contents of [this file to your .bashrc](bashrc)
+There is an [example](01-bashrc) of a `.bashrc` file that you can use as a starter file. Check out the bashrc tutorial and copy the contents of [this file to your .bashrc](01-bashrc)
 
 Be sure to update the following lines in the file.
 
