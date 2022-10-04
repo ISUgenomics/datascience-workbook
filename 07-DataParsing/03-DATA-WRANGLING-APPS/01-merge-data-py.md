@@ -14,7 +14,7 @@ header:
 
 The <a href="https://github.com/ISUgenomics/data_wrangling/tree/main/merge_data" target="_blank">merge_data.py ⤴</a> application is written in Python3 and employs an efficient pandas library for operating on a column-like data structure. The application enables the **merging of two files by matching columns** with filling in the **missing data by customized error values**. <br>
 
-Merging files by a common column facilitates:
+**Merging files by a common column facilitates:**
 - creating a robust dataset from different source files
 - complementing the features for observables
 - finding the common part of two data sets

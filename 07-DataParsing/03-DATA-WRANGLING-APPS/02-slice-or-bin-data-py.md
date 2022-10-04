@@ -14,7 +14,7 @@ header:
 
 The <a href="https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data" target="_blank">bin_data.py ⤴</a> application is written in Python3 and employs efficient libraries [pandas and numpy] for operating on a complex data structure. The application **aggregates observables** [by summing or averaging numerical values] over the data slices (rows grouped in a slice). The statistic (**STATS**) is calculated separately for each column of numerical values, while **R** = 'ranges-column' can be used to bin data based on the incrementation of values.
 
-Aggregating observables facilitates:
+**Aggregating observables facilitates:**
 - coarsening the patterns of observed feature
 - detecting regions/ranges enriched or depleted by the feature
 - assessing the significance threshold of measured feature
