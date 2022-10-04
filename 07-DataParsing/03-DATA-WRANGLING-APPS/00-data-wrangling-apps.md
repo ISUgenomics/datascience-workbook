@@ -14,10 +14,10 @@ This section provides a highly verbose guide for the contents of the [ISUgenomic
 <i>Most of the apps are <span style="color: #ff3870;"> developed in Python3</span> programming language.</i>
 
 In the <b>[data_wrangling](https://github.com/ISUgenomics/data_wrangling)</b> repo, each application is placed in a separate directory for tidy organization.<br>
-Each folder contains:
-<li> the python script (.py) of the application </li>
+<p style="margin-bottom:0px;">Each folder contains:</p>
+<ul><li> the python script (.py) of the application </li>
 <li> the example inputs </li>
-<li> the documentation in the README.md file, including some usage variations (*sample commands that run the program in different option configurations*) </li>
+<li> the documentation in the README.md file, including some usage variations (*sample commands that run the program in different option configurations*) </li></ul><br>
 
 All the applications have a **built-in set of options** provided as in-line arguments from the command line. Thanks to that, there is **no need to modify source code** by the user (*e.g., to replace input filename or tune params*). Also, it makes the apps more universal, comprehensive, and robust.
 
