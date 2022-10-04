@@ -1,5 +1,5 @@
 ---
-title: "Data Wrangling: examples of ready-made apps"
+title: "Data Wrangling: use ready-made apps"
 layout: single
 author: Aleksandra Badaczewska
 author_profile: true
@@ -13,10 +13,11 @@ header:
 This section provides a highly verbose guide for the contents of the [ISUgenomics](https://github.com/ISUgenomics)/<b>[data_wrangling](https://github.com/ISUgenomics/data_wrangling)</b> GitHub repository. The **data_wrangling** repo collects ready-made mini-apps for popular tasks in data processing.<br>
 <i>Most of the apps are <span style="color: #ff3870;"> developed in Python3</span> programming language.</i>
 
-In the <b>[data_wrangling](https://github.com/ISUgenomics/data_wrangling)</b> repo, each application is placed in a separate directory for tidy organization. Each folder contains:
-- the python script (.py) of the application
-- the example inputs
-- the documentation in the README.md file, including some usage variations (*sample commands that run the program in different option configurations*)
+In the <b>[data_wrangling](https://github.com/ISUgenomics/data_wrangling)</b> repo, each application is placed in a separate directory for tidy organization.<br>
+Each folder contains:
+<li> the python script (.py) of the application </li>
+<li> the example inputs </li>
+<li> the documentation in the README.md file, including some usage variations (*sample commands that run the program in different option configurations*) </li>
 
 All the applications have a **built-in set of options** provided as in-line arguments from the command line. Thanks to that, there is **no need to modify source code** by the user (*e.g., to replace input filename or tune params*). Also, it makes the apps more universal, comprehensive, and robust.
 
