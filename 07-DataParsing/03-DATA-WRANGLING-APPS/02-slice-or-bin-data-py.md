@@ -124,7 +124,7 @@ optional arguments:
 ```
 
 
-## Usage
+## Usage (generic)
 
 **syntax:**<br>
 *^ arguments provided in square brackets [] are optional*
