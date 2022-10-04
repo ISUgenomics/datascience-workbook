@@ -1,5 +1,5 @@
 ---
-title: "Merge files by common column (python app)"
+title: "Merge files by common column"
 layout: single
 author: Aleksandra Badaczewska
 author_profile: true

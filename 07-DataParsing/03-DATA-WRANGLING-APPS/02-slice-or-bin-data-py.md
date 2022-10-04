@@ -1,5 +1,5 @@
 ---
-title: "Aggregate data over slicing variations (python app)"
+title: "Aggregate data over slicing variations"
 layout: single
 author: Aleksandra Badaczewska
 author_profile: true
@@ -126,6 +126,8 @@ optional arguments:
 
 ## Usage
 
+**syntax:**<br>
+*^ arguments provided in square brackets [] are optional*
 ```
 python3 bin_data.py -i input -l label -r range [-ll labels_list] [-hd header_names]
                    [-ch chunks_size] [-s {true,false}]
@@ -136,7 +138,7 @@ python3 bin_data.py -i input -l label -r range [-ll labels_list] [-hd header_nam
 
 *^ arguments provided in square brackets [] are optional*
 
-* **example usage with minimal required options:**
+**example usage with minimal required options:**
 
 ```
 python3 bin_data.py -i input_file -l 0 -r 1
