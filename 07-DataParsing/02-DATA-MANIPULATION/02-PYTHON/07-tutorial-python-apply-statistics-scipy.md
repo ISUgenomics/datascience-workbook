@@ -20,7 +20,7 @@ header:
 
 ___
 # Further Reading
-* [SECTION 8. High-Performance Computing (HPC)](../../../08-DataVisualization/00-DataVisualization-LandingPage)
+* [03. Data Wrangling: ready-made apps](../03-DATA-WRANGLING-APPS/00-data-wrangling-apps)
 
 
 ___

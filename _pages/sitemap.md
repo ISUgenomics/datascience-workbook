@@ -140,6 +140,9 @@ header:
     * <a href="07-DataParsing/02-DATA-MANIPULATION/02-PYTHON/05-tutorial-python-data-manipulation-pandas" style="color: #3f5a8a;">Tutorial: Pandas Library - Data Structure Manipulation Tool</a>
     * <a href="07-DataParsing/02-DATA-MANIPULATION/02-PYTHON/06-tutorial-python-array-manipulation-numpy" style="color: #3f5a8a;">Tutorial: Numpy Library - Multi-Dimensional Arrays Parser</a>
     * <a href="07-DataParsing/02-DATA-MANIPULATION/02-PYTHON/07-tutorial-python-apply-statistics-scipy" style="color: #3f5a8a;">Tutorial: SciPy Library - Algorithms for Scientific Computing</a>
+* **<a href="07-DataParsing/03-DATA-WRANGLING-APPS/00-data-wrangling-apps" style="color: #24376b;">Data Wrangling: ready-made apps</a>**
+  * <a href="07-DataParsing/03-DATA-WRANGLING-APPS/01-merge-data-py" style="color: #3f5a8a;">Merge files by common column (python)</a>
+  * <a href="07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py" style="color: #3f5a8a;">Aggregate data over slicing variations (python)</a>
 <br><br>
 
 # <a href="08-DataVisualization/00-DataVisualization-LandingPage" style="color: #8997c1;">08. Data Visualization</a>

@@ -42,6 +42,10 @@ Information is the foundation of the learning process. Data acquisition and wran
   * <a href="02-DATA-MANIPULATION/02-PYTHON/06-tutorial-python-array-manipulation-numpy" style="color: #3f5a8a;">Tutorial: Math Module - Numpy Library - Multi-Dimensional Arrays Parser</a>
   * <a href="02-DATA-MANIPULATION/02-PYTHON/07-tutorial-python-apply-statistics-scipy" style="color: #3f5a8a;">Tutorial: SciPy Library - Algorithms for Scientific Computing</a>
 
+### **<a href="03-DATA-WRANGLING-APPS/00-data-wrangling-apps" style="color: #24376b;">3. Data Wrangling: ready-made apps</a>**
+  * <a href="03-DATA-WRANGLING-APPS/01-merge-data-py" style="color: #3f5a8a;">3.1 Merge files by common column (python)</a>
+  * <a href="03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py" style="color: #3f5a8a;">3.2 Aggregate data over slicing variations (python)</a>
+
 
 ---
 
