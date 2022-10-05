@@ -55,8 +55,8 @@ sudo apt-get install python3</pre>
 
 <li> Python3 - macOS<br>
 <i>if not yet, first install Homebrew:</i><br>
-<code style="background-color: #e4f0f0; width:100%; display: block; padding: 15px 0px; margin-top:5px;">
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew<wbr>/install/HEAD/install.sh)"
+<code style="background-color: #e4f0f0; width:100%; display: block; padding: 15px 0px; margin-top:5px; overflow-x:auto;">
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 </code><br>
 <code style="background-color: #e4f0f0;  width:100%; display: block; padding: 15px 0px;">
 brew install python3
