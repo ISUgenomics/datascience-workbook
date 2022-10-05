@@ -44,6 +44,7 @@ Requirements: python3, pandas, openpyxl
 
 <details><summary>Install Python3 on various operating systems <i>(if you don't have it yet)</i></summary>
 
+<div>
 * Python3 - Ubuntu
 
 ```
@@ -65,6 +66,7 @@ brew install python3
 * Python3 - Windows
 
 Please follow the instructions provided at [phoenixnap.com](https://phoenixnap.com/kb/how-to-install-python-3-windows) .
+</div>
 </details><br>
 
 **Install app requirements**
