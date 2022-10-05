@@ -23,7 +23,7 @@ The <a href="https://github.com/ISUgenomics/data_wrangling/tree/main/merge_data"
 ## Algorithm
 
 <table style="font-size: 1em;">
-  <tr> <th style="width:30%;">Schema</th> <th>Notes</th> </tr>
+  <tr> <th style="width:40%;">Schema</th> <th>Notes</th> </tr>
   <tr> <td>
         <img src="../assets/images/merge_data.png" alt="Merge data app" width="500"><br>
         <i>The figure shows the algorithm of merging two files by common column.</i>
