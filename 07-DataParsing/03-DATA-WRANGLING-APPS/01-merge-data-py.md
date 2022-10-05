@@ -22,7 +22,7 @@ The <a href="https://github.com/ISUgenomics/data_wrangling/tree/main/merge_data"
 
 ## Algorithm
 
-<table>
+<table style="font-size: 1em;">
   <tr> <th style="width:30%;">Schema</th> <th>Notes</th> </tr>
   <tr> <td>
         <img src="../assets/images/merge_data.png" alt="Merge data app" width="500"><br>
@@ -55,9 +55,9 @@ sudo apt-get install python3</pre>
 
 <li> Python3 - macOS<br>
 <i>if not yet, first install Homebrew:</i><br>
-<code style="background-color: #e4f0f0; width:100%; display: block; padding: 15px 0px; margin-top:5px;">
-<div style="overflow-x:scroll;">
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</div>
+<code style="background-color: #e4f0f0; width:100%; display: block; margin-top:5px;">
+<pre style="margin: 0px; padding-left: 15px; overflow-x:scroll;">
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</pre>
 </code><br>
 <code style="background-color: #e4f0f0;  width:100%; display: block; padding: 15px 0px;">
 brew install python3
