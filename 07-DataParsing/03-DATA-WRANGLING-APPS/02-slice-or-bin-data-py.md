@@ -154,7 +154,138 @@ python3 bin_data.py -i input_file -l 0 -r 1
 
 ## Environment setup
 
+The application is developed in Python programming language and requires importing several libraries providing useful ready-made functions and objects handling complex data structure. Thus, to have the app working on your (local or remote) machine, first you have to set up the environment.
+
+Considering you will be using various applications that require different dependencies, you need neat way to manage them. A good choice is <a href="https://docs.conda.io/en/latest/" target="_blank">Conda ⤴</a> environment management system that runs on all: Windows, macOS, and Linux.<br>
+If you are not already using Conda, go to the <a href="https://datascience.101workbook.org/03-SetUpComputingMachine/02C-basic-developer-libraries" target="_blank">Basic Developer Libraries ⤴</a> tutorial for a step-by-step guide on how to set up the environment manager on your target computing machine. <i>If you have a Mac with a dual processor (Arm64 and Intel's x86-64) you can find dedicated setup instructions in section <a href="https://datascience.101workbook.org/03-SetUpComputingMachine/03A-tutorial-installations-on-mac#install-developer-libraries" target="_blank">Install Basic Developer Tools ⤴</a> of the <a href="https://datascience.101workbook.org/03-SetUpComputingMachine/03A-tutorial-installations-on-mac" target="_blank">Installations on MacBook Pro ⤴</a> tutorial.</i>
+
+**Test Conda installation**
+
+To test your Conda configuration, in the terminal window, run the command provided below:
+```
+conda info
+```
+
+If the screen displays a message similar to the one in the image below, you are ready to create a new environment.
+
+![Conda info](../assets/images/03-conda_info.png)
+
+Otherwise, if a `command not found` error is thrown back, follow the instructions in the [previous paragraph](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/01-merge-data-py#environment-setup) to install Conda correctly.
+
+**Create new Conda environment**
+
+To create a Conda virtual environment, type `conda create` followed by the name [here: *data_wrangling*] of the new env along with the `-n` argument. Further you can provide a list of modules to install. In this case, let's initialize the environment for `python` version 3.9.
+
+```
+conda create -n data_wrangling python=3.9
+```
+
+**Activate existing Conda environment**
+
+You do NOT need to create the new environment each time you want to use it. Once created, the env is added to the list of all virtual instances managed by Conda. You can display them with the command:
+
+```
+conda info -e
+```
+
+![Conda envs](../assets/images/03-conda_envs.png)
+
+The selected environment can be activated with the `conda activate` command, followed by the name of the env:
+
+```
+conda activate data_wrangling
+```
+
+![Conda activate](../assets/images/03-conda_activate.png)
+
+**Install new dependencies within environment**
+
+Once environment of your choice is activated, you can install new dependencies required by the application. Generally, you can try to install modules with the `conda install {module=version}` command. However, since we initialized the **data_wrangling** environment with Python=3.9, we can also install modules using `pip install {module==version}`, as follows:
+
+```
+pip install pandas
+pip install numpy
+```
+
+<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">WARNING:</span>
+<br><span style="font-style:italic;">
+Note that if you do not indicate the version of the module you are installing, the latest stable release will usually be installed. <br><br>
+When you install by <code>conda</code>, assign the module's version using a single equals sign <code>=</code>. <br><br>
+When you install by <code>pip</code>, assign the module's version using a double equals sign <code>==</code>.
+</span>
+</div>
+
+
 ## Inputs
+
+Before using the application, make sure your inputs has been properly prepared. First of all, the **data** in the input file must be **organized into columns**.
+
+*data structure in the example `input.txt`*
+```
+HiC_scaffold_1  982     0       0       0       0       0       1       0       0
+HiC_scaffold_1  983     0       0       0       0       0       1       0       0
+HiC_scaffold_1  984     0       0       0       0       0       1       0       0
+HiC_scaffold_1  985     0       0       0       0       0       1       0       0
+HiC_scaffold_1  986     0       0       0       0       0       1       0       0
+HiC_scaffold_1  987     0       0       0       0       0       1       0       0
+...
+HiC_scaffold_10 547     3       1       0       0       1       0       0       0
+HiC_scaffold_10 548     3       1       0       0       1       0       0       0
+HiC_scaffold_10 549     3       1       0       0       1       0       0       0
+HiC_scaffold_10 550     3       1       0       0       1       0       0       0
+```
+
+**Input file format**
+
+The format of the input file does NOT matter as long as it is a columns-like text file. Text (.txt) files with columns separated by a uniform white character (single space, tabulator) or comma-delimited CSV files are preferred, though.
+
+**Input data delimiter**
+
+The data delimiter used does NOT matter, as it will be automatically detected by application. However, it is essential that the column separator is consistent, for example, that it is always a fixed number of spaces ` `&nbsp; only or always a tab, `\t`. If separator is a comma `,` remember NOT to use it inside a given data cell (e.g., if the values in the column are a list).
+
+![Column separator](../assets/images/03-input_separator.png)
+
+<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">WARNING:</span>
+<br><span style="font-style:italic;">
+Note that only data from numeric columns will be aggregated. So, if the values in a column are a list, so even if the values in the list are numeric, such a column will be treated as a string. <br>
+If you want to process such data, change the data structure of the input so that the values in the list split into separate columns.
+</span>
+</div><br>
+
+**Column names in the header**
+
+The **header** is usually the first line of the file and contains the column labels. Naming the columns brings great **informational value** to the analyzed data. However, the application does NOT require the input file to have a header. If it is in the file it will be detected automatically. Otherwise, the default set of column labels [ *[see options section](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#options)* ] will be assigned.
+
+![Columns header](../assets/images/03-input_header.png)
+
+**Content of the input file**
+
+Running the application requires that you specify the index of the `labels` and `ranges` columns.
+
+**Labels** column should contain labels or categories assigned to the observables. They are used to aggregate values over data chunks corresponding to the unique labels. The values in the `labels` column can be strings or numerical. <br>
+If all your data belong to the same or none category, you can add to your file a column with all identical values, e.g., *'label'* or *0*.
+
+* *input file without header*
+
+```
+sep='\t'
+sed "1,$ s/^/value$sep/" < file > input
+```
+*^ paste your separator within ' '*
+
+![Input label column](../assets/images/03-input_label-col.png)
+
+* *input file with header*
+
+```
+sep='\t'
+sed "1s/^/label$sep/; 2,$ s/^/value$sep/" < file > input
+```
+*^ paste your separator within ' '*
+
+![Input label column](../assets/images/03-input_label-col-header.png)
 
 ## Usage variations
 
