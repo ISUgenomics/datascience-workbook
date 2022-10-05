@@ -46,7 +46,7 @@ Requirements: python3, pandas, openpyxl
 
 <div style="margin-left: 20px; margin-top: 10px;">
 <li> Python3 - Ubuntu<br>
-<code style="background-color: #e4f0f0; width:100%; padding: 5px;">
+<code style="background-color: #e4f0f0; width:100%; display: block; padding: 15px 10px;">
 sudo apt-get update<br>
 sudo apt-get install python3
 </code>
@@ -54,19 +54,19 @@ sudo apt-get install python3
 
 <li> Python3 - macOS<br>
 <i>^ if not yet, install Homebrew</i><br>
-<code style="background-color: #e4f0f0; width:100%; padding: 5px;">
+<code style="background-color: #e4f0f0; width:100%; padding: 5px; padding: 15px 10px;">
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 </code><br>
-<code style="background-color: #e4f0f0;">
+<code style="background-color: #e4f0f0;  width:100%; padding: 5px; padding: 15px 10px;">
 brew install python3
 </code>
 </li><br>
 
 <li>Python3 - Windows<br>
-Please follow the instructions provided at [phoenixnap.com](https://phoenixnap.com/kb/how-to-install-python-3-windows) .
+Please follow the instructions provided at <a href="https://phoenixnap.com/kb/how-to-install-python-3-windows" target="_blank">phoenixnap.com</a> .
 </li>
 </div>
-</details>
+</details><br>
 
 **Install app requirements**
 
