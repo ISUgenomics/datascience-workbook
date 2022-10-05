@@ -51,27 +51,30 @@ Requirements: python3, pandas, numpy
 
 <details><summary>Install Python3 on various operating systems <i>(if you don't have it yet)</i></summary>
 
-* Python3 - Ubuntu
-
-```
+<div style="margin-left: 20px; margin-top: 10px;">
+<li> Python3 - Ubuntu<br>
+<code style="background-color: #e4f0f0; width:100%; display: block; margin-top:5px;">
+<pre style="margin: 0px; padding-left: 15px;">
 sudo apt-get update
-$ sudo apt-get install python3.
-```
+sudo apt-get install python3</pre>
+</code>
+</li><br>
 
-* Python3 - macOS
-
-^ if not yet, install Homebrew
-```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-```
+<li> Python3 - macOS<br>
+<i>if not yet, first install Homebrew:</i><br>
+<code style="background-color: #e4f0f0; width:100%; display: block; margin-top:5px;">
+<pre style="margin: 0px; padding-left: 15px; overflow-x:scroll;">
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</pre>
+</code><br>
+<code style="background-color: #e4f0f0;  width:100%; display: block; padding: 15px 0px;">
 brew install python3
-```
+</code>
+</li><br>
 
-* Python3 - Windows
-
-Please follow the instructions provided at [phoenixnap.com](https://phoenixnap.com/kb/how-to-install-python-3-windows) .
+<li>Python3 - Windows<br>
+Please follow the instructions provided at <a href="https://phoenixnap.com/kb/how-to-install-python-3-windows" target="_blank">phoenixnap.com</a> .
+</li>
+</div>
 </details><br>
 
 
