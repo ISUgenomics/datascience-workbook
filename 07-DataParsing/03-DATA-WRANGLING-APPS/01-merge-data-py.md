@@ -44,20 +44,20 @@ Requirements: python3, pandas, openpyxl
 
 <details><summary>Install Python3 on various operating systems <i>(if you don't have it yet)</i></summary>
 
-<div style="margin-left: 20px; margin-top: 10px;">
+<div style="margin-left: 20px; margin-top: 10px; word-wrap: break-word;">
 <li> Python3 - Ubuntu<br>
-<code style="background-color: #e4f0f0; width:100%; display: block; padding: 5px 12px; margin-top:5px;"><pre>
+<code style="background-color: #e4f0f0; width:100%; display: block; margin-top:5px;"><pre>
 sudo apt-get update<br>
 sudo apt-get install python3</pre>
 </code>
 </li><br>
 
 <li> Python3 - macOS<br>
-<i>^ if not yet, install Homebrew</i><br>
-<code style="background-color: #e4f0f0; width:100%; display: block; padding: 5px 12px; margin-top:5px; word-wrap: break-word;">
+<i>if not yet, first install Homebrew:</i><br>
+<code style="background-color: #e4f0f0; width:100%; display: block; padding: 12px 5px; margin-top:5px;">
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 </code><br>
-<code style="background-color: #e4f0f0;  width:100%; display: block; padding: 5px 12px;">
+<code style="background-color: #e4f0f0;  width:100%; display: block; padding: 12px 5px;">
 brew install python3
 </code>
 </li><br>
