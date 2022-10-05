@@ -44,9 +44,10 @@ Requirements: python3, pandas, openpyxl
 
 <details><summary>Install Python3 on various operating systems <i>(if you don't have it yet)</i></summary>
 
-<div style="margin-left: 20px; margin-top: 10px; overflow-wrap: break-word;">
+<div style="margin-left: 20px; margin-top: 10px;">
 <li> Python3 - Ubuntu<br>
-<code style="background-color: #e4f0f0; width:100%; display: block; margin-top:5px; padding-left: 5px;"><pre style="margin: 0px;">
+<code style="background-color: #e4f0f0; width:100%; display: block; margin-top:5px;">
+<pre style="margin: 0px; padding-left: 10px;">
 sudo apt-get update
 sudo apt-get install python3</pre>
 </code>
@@ -54,8 +55,8 @@ sudo apt-get install python3</pre>
 
 <li> Python3 - macOS<br>
 <i>if not yet, first install Homebrew:</i><br>
-<code style="background-color: #e4f0f0; width:100%; display: block; padding: 12px 5px; margin-top:5px;">
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+<code style="background-color: #e4f0f0; width:100%; display: block; padding: 12px 5px; margin-top:5px;"><pre style="white-space: pre-wrap; overflow-wrap: break-word;">
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</pre>
 </code><br>
 <code style="background-color: #e4f0f0;  width:100%; display: block; padding: 12px 5px;">
 brew install python3
