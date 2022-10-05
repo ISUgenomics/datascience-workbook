@@ -25,7 +25,7 @@ The <a href="https://github.com/ISUgenomics/data_wrangling/tree/main/merge_data"
 <table>
   <tr> <th>Schema</th> <th>Notes</th> </tr>
   <tr> <td>
-        <img src="../assets/images/merge_data.png" alt="Merge data app" width="400"><br>
+        <img src="../assets/images/merge_data.png" alt="Merge data app" width="500"><br>
         <i>The figure shows the algorithm of merging two files by common column.</i>
        </td> <td>
         <li> both files should be a column-like text file (including Excel .xlsx format and CSV separated with different delimiters) </li>
@@ -55,7 +55,7 @@ sudo apt-get install python3</pre>
 
 <li> Python3 - macOS<br>
 <i>if not yet, first install Homebrew:</i><br>
-<code style="background-color: #e4f0f0; width:100%; display: block; padding: 15px 0px; margin-top:5px; overflow-x:auto;">
+<code style="background-color: #e4f0f0; width:100%; display: block; padding: 15px 0px; margin-top:5px; overflow-x:scroll;">
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 </code><br>
 <code style="background-color: #e4f0f0;  width:100%; display: block; padding: 15px 0px;">
