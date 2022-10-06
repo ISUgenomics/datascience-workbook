@@ -154,31 +154,13 @@ python3 bin_data.py -i input_file -l 0 -r 1
 
 ## Environment setup
 
-The application is developed in Python programming language and requires importing several libraries providing useful ready-made functions and objects handling complex data structure. Thus, to have the app working on your (local or remote) machine, first you have to set up the environment.
+The application is developed in Python programming language and requires importing several useful  libraries. Thus, to manage dependencies, first you have to set up the Conda environment on your (local or remote) machine.<br>
 
-Considering you will be using various applications that require different dependencies, you need neat way to manage them. A good choice is <a href="https://docs.conda.io/en/latest/" target="_blank">Conda ⤴</a> environment management system that runs on all: Windows, macOS, and Linux.<br>
-If you are not already using Conda, go to the <a href="https://datascience.101workbook.org/03-SetUpComputingMachine/02C-basic-developer-libraries" target="_blank">Basic Developer Libraries ⤴</a> tutorial for a step-by-step guide on how to set up the environment manager on your target computing machine. <i>If you have a Mac with a dual processor (Arm64 and Intel's x86-64) you can find dedicated setup instructions in section <a href="https://datascience.101workbook.org/03-SetUpComputingMachine/03A-tutorial-installations-on-mac#install-developer-libraries" target="_blank">Install Basic Developer Tools ⤴</a> of the <a href="https://datascience.101workbook.org/03-SetUpComputingMachine/03A-tutorial-installations-on-mac" target="_blank">Installations on MacBook Pro ⤴</a> tutorial.</i>
+* **When you don't have Conda yet...**
 
-**Test Conda installation**
+To <b>install <a href="https://docs.conda.io/en/latest/" target="_blank">Conda ⤴</a></b> environment management system <b>and configure an instance for data wrangling applications</b>, follow a step-by-step instructions provided in the tutorial <a href="https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/00-data-wrangling-apps#environment-setup" target="_blank">Data Wrangling: <b>Environment setup ⤴</b></a>.
 
-To test your Conda configuration, in the terminal window, run the command provided below:
-```
-conda info
-```
-
-If the screen displays a message similar to the one in the image below, you are ready to create a new environment.
-
-![Conda info](../assets/images/03-conda_info.png)
-
-Otherwise, if a `command not found` error is thrown back, follow the instructions in the [previous paragraph](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/01-merge-data-py#environment-setup) to install Conda correctly.
-
-**Create new Conda environment**
-
-To create a Conda virtual environment, type `conda create` followed by the name [here: *data_wrangling*] of the new env along with the `-n` argument. Further you can provide a list of modules to install. In this case, let's initialize the environment for `python` version 3.9.
-
-```
-conda create -n data_wrangling python=3.9
-```
+* **Once you have Conda and the <i>data_wrangling</i> environment follow further steps below**
 
 **Activate existing Conda environment**
 
@@ -198,9 +180,17 @@ conda activate data_wrangling
 
 ![Conda activate](../assets/images/03-conda_activate.png)
 
+*Once the environment is active, you can see its name preceding the prompt.*
+
 **Install new dependencies within environment**
 
-Once environment of your choice is activated, you can install new dependencies required by the application. Generally, you can try to install modules with the `conda install {module=version}` command. However, since we initialized the **data_wrangling** environment with Python=3.9, we can also install modules using `pip install {module==version}`, as follows:
+Once environment of your choice is activated, you can install new dependencies required by the selected application.
+
+The <a href="https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data" target="_blank"><b>bin_data ⤴</b></a> application requires:
+* <a href="https://pandas.pydata.org" target="_blank">pandas ⤴</a>, to create and manage data structure
+* <a href="https://numpy.org" target="_blank">numpy ⤴</a>, to manipulate advanced numerical data structures
+
+Generally, you can try to install modules with the `conda install {module=version}` command. However, since we initialized the **data_wrangling** environment with Python=3.9, we can also install modules using `pip install {module==version}`, as follows:
 
 ```
 pip install pandas
@@ -211,15 +201,22 @@ pip install numpy
 <span style="font-weight:800;">WARNING:</span>
 <br><span style="font-style:italic;">
 Note that if you do not indicate the version of the module you are installing, the latest stable release will usually be installed. <br><br>
-When you install by <code>conda</code>, assign the module's version using a single equals sign <code>=</code>. <br><br>
-When you install by <code>pip</code>, assign the module's version using a double equals sign <code>==</code>.
+When you install by <code>conda</code>, assign the module's version using a single equals sign <b><code>=</code></b>. <br><br>
+When you install by <code>pip</code>, assign the module's version using a double equals sign <b><code>==</code></b>.
 </span>
 </div>
 
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;"> If you don't know whether a particular library is already installed in your Conda environment, you can check it using the <code>conda list</code> command. <br>
+Your terminal screen will display a list of installed software in the active environment. <br>
+<img src="../assets/images/03-conda_list.png" alt="conda list" width="100%">
+</span>
+</div><br>
 
 ## Inputs
 
-Before using the application, make sure your inputs has been properly prepared. First of all, the **data** in the input file must be **organized into columns**.
+Before using the application, make sure your inputs has been properly prepared. First of all, the **data** in the input file must be **organized into columns**. The number of columns and rows is arbitrary, including **Big Data support**.
 
 *data structure in the example `input.txt`*
 ```
@@ -265,7 +262,7 @@ The **header** is usually the first line of the file and contains the column lab
 Running the application requires that you specify the index of the `labels` and `ranges` columns.
 
 **Labels** column should contain labels or categories assigned to the observables. They are used to aggregate values over data chunks corresponding to the unique labels. The values in the `labels` column can be strings or numerical. <br>
-If all your data belong to the same or none category, you can add to your file a column with all identical values, e.g., *'label'* or *0*.
+If all your data belong to the same or none category, you can add to your file a fake-label column with all identical values, e.g., *'label'* or *0*.
 
 * *input file without header*
 
@@ -273,7 +270,7 @@ If all your data belong to the same or none category, you can add to your file a
 sep='\t'
 sed "1,$ s/^/value$sep/" < file > input
 ```
-*^ paste your separator within ' '*
+*^ paste your separator within ' ' of `$sep` variable*
 
 ![Input label column](../assets/images/03-input_label-col.png)
 
@@ -283,9 +280,52 @@ sed "1,$ s/^/value$sep/" < file > input
 sep='\t'
 sed "1s/^/label$sep/; 2,$ s/^/value$sep/" < file > input
 ```
-*^ paste your separator within ' '*
+*^ paste your separator within ' ' of `$sep` variable*
 
 ![Input label column](../assets/images/03-input_label-col-header.png)
+
+
+**Ranges** column, in general, should contain <u>numerical values</u> used to determine **ranges for data slicing**.<br>
+The application provides the ability to slice data by three different scenarios:
+* `step`, with constant number of rows in a slice
+* `bin`, with constant number of slices
+* `value`, with constant increment of values in ranges col
+
+After data aggregation over <u>each slice</u>, the numerical values from the `ranges-col` [<b>R</b>] will be concatenated to the <u>single value</u> defined as a range `from-to` [<b>R'</b>] (*see figure below*).
+
+<p align="center">
+<img src="../assets/images/03-bin_data-slice_range.png" alt="bin_data app: slice range" width="1000px"><br>
+<i>The figure shows the algorithm of data aggregation over the slice. The detailed description is provided in the next paragraph.</i></p>
+
+**Interpretation of ranges column [R]**
+
+* The input is grouped into the data chunks corresponding to unique categories/labels [<b>L</b>, <i>left panel</i>], here marked in <span style="background-color:#ffffb2">yellow</span>, <span style="background-color:#b2ffb2">green</span>, and <span style="background-color:#b2ffff">blue</span>. Each chunk is further split into slices based on user-selected slicing <code>type</code> and <code>range</code>. The figure shows sample slices of the <span style="background-color:#b2ffb2">green chunk</span>.
+* For each slice, the data from all numerical columns [<b>numDATA</b>, <i>left panel</i>] is aggregated to a single value per column and represents <code>sum</code> or <code>mean</code>. These values correspond to <b>STATS</b> columns on the right panel.
+* The first and the last value in the ranges column [<b>R</b>, <i>left panel</i>] for each slice creates a tuple saved in the ranges column [<b>R'</b>, <i>right panel</i>] of the aggregated data row in the output.
+
+**Contents of range column vs. type of slicing**
+
+* constant row counts per slice
+
+Generally, when you want to slice the data with an equal number of rows, you should use **step** (*user-provided number of rows per slice*) or **bin** (*user-provided number of slices*) `type` of slicing. In this case, only <u>first and last</u> value from the `ranges` column will be reported for the aggregated output row of a data slice. Thus, data in `labels`-based chunks will be initially sorted by values in the `ranges` column. <br>
+
+If you want **to keep the original ordering** of an input, add a column with generic indexing:
+
+```
+sep='\t'
+awk -F$sep -v OFS=$sep 'NR == 1 {print "position", $0; next} {print (NR-1), $0}' file > input
+```
+
+*^ paste your separator within ' ' of `$sep` variable*
+
+![Add indexing column](../assets/images/03-bin_data-add_indexing.png)
+
+
+* variable row counts per slice<br>
+<i>e.g., when the number of observations changes for a value increment of a selected feature</i>
+
+Generally, when you want to **slice the data based on the value increment of a selected feature** (*i.e., bin the observations due to the constant-length ranges of the feature values*), you should use a **value** `type` of slicing. Also, you should indicate the index of that feature column as the `ranges` column (*with the `-r` option*) and pass the value increment with option `-n`.
+In this case, the <u>first</u> value from the `ranges` column and the <u>first + increment</u> will be reported for the aggregated output row of a data slice.
 
 ## Usage variations
 
