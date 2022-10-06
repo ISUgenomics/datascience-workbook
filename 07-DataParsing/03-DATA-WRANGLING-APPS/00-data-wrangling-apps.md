@@ -73,6 +73,8 @@ conda activate data_wrangling
 
 ![Conda activate](../assets/images/03-conda_activate.png)
 
+*Once the environment is active, you can see its name preceding the prompt.*
+
 **Install new dependencies within environment**
 
 Once environment of your choice is activated, you can install new dependencies required by the selected application. Generally, you can try to install modules with the `conda install {module=version}` command. However, since we initialized the **data_wrangling** environment with Python=3.9, we can also install modules using `pip install {module==version}`, as follows:
@@ -92,7 +94,7 @@ When you install by <code>pip</code>, assign the module's version using a double
 </div>
 
 
-## Hands-on tutorials 
+## Hands-on tutorials
 
 Right here, in the [Data Science Workbook](https://datascience.101workbook.org): [07-DataParsing](https://datascience.101workbook.org/07-DataParsing/00-DataParsing-LandingPage)/<b>[03-DATA-WRANGLING-APPS](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/00-data-wrangling-apps)</b> section, you can follow the <span style="color: #ff3870;">hands-on tutorials</span> to learn how to run the ready-made applications <span style="color: #ff3870;">using example datasets</span> and further employ them to support your own research.
 
