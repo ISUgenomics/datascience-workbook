@@ -233,11 +233,11 @@ HiC_scaffold_10 549     3       1       0       0       1       0       0       
 HiC_scaffold_10 550     3       1       0       0       1       0       0       0
 ```
 
-**Input file format**
+### *File format*
 
 The format of the input file does NOT matter as long as it is a columns-like text file. Text (.txt) files with columns separated by a uniform white character (single space, tabulator) or comma-delimited CSV files are preferred, though.
 
-**Input data delimiter**
+### *Data delimiter*
 
 The data delimiter used does NOT matter, as it will be automatically detected by application. However, it is essential that the column separator is consistent, for example, that it is always a fixed number of spaces ` `&nbsp; only or always a tab, `\t`. If separator is a comma `,` remember NOT to use it inside a given data cell (e.g., if the values in the column are a list).
 
@@ -249,22 +249,22 @@ The data delimiter used does NOT matter, as it will be automatically detected by
 Note that only data from numeric columns will be aggregated. So, if the values in a column are a list, so even if the values in the list are numeric, such a column will be treated as a string. <br>
 If you want to process such data, change the data structure of the input so that the values in the list split into separate columns.
 </span>
-</div><br>
+</div>
 
-**Column names in the header**
+### *Column names*
 
 The **header** is usually the first line of the file and contains the column labels. Naming the columns brings great **informational value** to the analyzed data. However, the application does NOT require the input file to have a header. If it is in the file it will be detected automatically. Otherwise, the default set of column labels [ *[see options section](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#options)* ] will be assigned.
 
 ![Columns header](../assets/images/03-input_header.png)
 
-**Content of the input file**
+### *File content*
 
 Running the application requires that you specify the index of the `labels` and `ranges` columns.
 
 **Labels** column should contain labels or categories assigned to the observables. They are used to aggregate values over data chunks corresponding to the unique labels. The values in the `labels` column can be strings or numerical. <br>
 If all your data belong to the same or none category, you can add to your file a fake-label column with all identical values, e.g., *'label'* or *0*.
 
-* *input file without header*
+* ***input file without header***
 
 ```
 sep='\t'
@@ -274,7 +274,7 @@ sed "1,$ s/^/value$sep/" < file > input
 
 ![Input label column](../assets/images/03-input_label-col.png)
 
-* *input file with header*
+* ***input file with header***
 
 ```
 sep='\t'
@@ -305,11 +305,11 @@ After data aggregation over <u>each slice</u>, the numerical values from the `ra
 
 **Contents of range column vs. type of slicing**
 
-* constant row counts per slice
+* ***constant row counts per slice***
 
-Generally, when you want to slice the data with an equal number of rows, you should use **step** (*user-provided number of rows per slice*) or **bin** (*user-provided number of slices*) `type` of slicing. In this case, only <u>first and last</u> value from the `ranges` column will be reported for the aggregated output row of a data slice. Thus, data in `labels`-based chunks will be initially sorted by values in the `ranges` column. <br>
+Generally, when you want to **slice the data with an equal number of rows**, you should use **step** (*user-provided number of rows per slice*) or **bin** (*user-provided number of slices*) `type` of slicing. In this case, only <u>first and last</u> value from the `ranges` column will be reported for the aggregated output row of a data slice. Thus, data in `labels`-based chunks will be initially sorted by values in the `ranges` column. <br>
 
-If you want **to keep the original ordering** of an input, add a column with generic indexing:
+If you want **to keep the original ordering** of an input, add a column with generic indexing and pass this column index with the `-r` option:
 
 ```
 sep='\t'
@@ -321,7 +321,7 @@ awk -F$sep -v OFS=$sep 'NR == 1 {print "position", $0; next} {print (NR-1), $0}'
 ![Add indexing column](../assets/images/03-bin_data-add_indexing.png)
 
 
-* variable row counts per slice<br>
+* ***variable row counts per slice*** <br>
 <i>e.g., when the number of observations changes for a value increment of a selected feature</i>
 
 Generally, when you want to **slice the data based on the value increment of a selected feature** (*i.e., bin the observations due to the constant-length ranges of the feature values*), you should use a **value** `type` of slicing. Also, you should indicate the index of that feature column as the `ranges` column (*with the `-r` option*) and pass the value increment with option `-n`.
