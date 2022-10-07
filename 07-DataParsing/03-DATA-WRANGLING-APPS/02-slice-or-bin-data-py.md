@@ -152,7 +152,7 @@ python3 bin_data.py -i input_file -l 0 -r 1
 
 # Hands-on tutorial
 
-## Environment setup
+## **Environment setup**
 
 The application is developed in Python programming language and requires importing several useful  libraries. Thus, to manage dependencies, first you have to set up the Conda environment on your (local or remote) machine.<br>
 
@@ -214,7 +214,7 @@ Your terminal screen will display a list of installed software in the active env
 </span>
 </div><br>
 
-## Inputs
+## **Inputs**
 
 Before using the application, make sure your inputs has been properly prepared. First of all, the **data** in the input file must be **organized into columns**. The number of columns and rows is arbitrary, including **Big Data support**.
 
@@ -327,7 +327,73 @@ awk -F$sep -v OFS=$sep 'NR == 1 {print "position", $0; next} {print (NR-1), $0}'
 Generally, when you want to **slice the data based on the value increment of a selected feature** (*i.e., bin the observations due to the constant-length ranges of the feature values*), you should use a **value** `type` of slicing. Also, you should indicate the index of that feature column as the `ranges` column (*with the `-r` option*) and pass the value increment with option `-n`.
 In this case, the <u>first</u> value from the `ranges` column and the <u>first + increment</u> will be reported for the aggregated output row of a data slice.
 
-## Usage variations
+## **Usage variations**
+
+### *Create label-based data chunks*
+
+
+Download example input.txt <a id="raw-url" href="https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/input.txt">Download ⤵</a>
+
+*File Preview*
+
+```
+label_1     982     0    0    0    0    0    1    0    0
+label_1     983     0    0    0    0    0    1    0    0
+label_1     984     0    0    0    0    0    1    0    0
+label_1     985     0    0    0    0    0    1    0    0
+...
+label_10	2263	0	0	0	0	0	1	0	0
+label_10	2264	0	0	0	0	0	1	0	0
+label_10	2265	0	0	0	0	0	1	0	0
+```
+
+**App usage**
+
+```
+python3 bin_data.py -i input.txt -r '' -l 0
+```
+
+
+### *Create data chunks of N rows*
+
+```
+python3 bin_data.py -i input.txt -r '' -l '' -n 100 -t 'step'
+```
+
+### *Create N equal data chunks*
+
+```
+python3 bin_data.py -i input.txt -r '' -l '' -n 10 -t 'bin'
+```
+
+### *Input file vs. Input directory*
+
+```
+python3 bin_data.py -i hybrid.depth -l 0 -r 1 -t 'step' -n 1000 -s True -v 1
+```
+
+```
+python3 bin_data.py -i CHUNKS/ -l 0 -r 1 -t 'value' -n 0.15 -s 'false' -v 0
+```
+
+### *Aggregate data over every N rows*
+
+```
+python3 bin_data.py -i input.txt -l 0 -r 1 -t 'step' -n 100 -s True -v 1
+```
+
+### *Aggregate data over each of N slices*
+
+```
+python3 bin_data.py -i input.txt -l 0 -r 1 -t 'bin' -n 10 -s True -v 1
+```
+
+### *Aggregate data over value increment*
+
+```
+python3 bin_data.py -i input.txt -l 0 -r 1 -t 'value' -n 0.1 -d 3 -s True -v 1
+```
+
 
 <!--
 
