@@ -328,6 +328,8 @@ In this case, the <u>first</u> value from the `ranges` column and the <u>first +
 
 The application provides the option `-i` to load the **data from a single text file** or **multiple files** with names starting with "chunk_" **stored in the directory**. It is required to select `labels-col` and `ranges-col` from among columns in the inputs. The `labels-col` is used to split data into label-based chunks. If you want to process only a few labels, use `-ll 'label_X,label_Y,label_Z'` to define a list of kept labels. The `ranges-col` is defines value ranges for the slicing of data chunks.
 
+Before you start explore examples, please clone the data_wranglig repository on your local machine or download the bin_data folder.
+
 ### *E1: Load data from a single text file*
 
 This variant is dedicated to **read raw data organized into columns** and stored in a single file. The file can be very large (GBs of size). Such a large dataset usually can NOT be loaded in to the program all at once. Thus, by default, the data is loaded in the bundles of rows and merged into the data chunks corresponding to unique categories. The **label-based data chunks are sliced further and aggregated due to selected analysis schema**. Every data chunk is saved into the separate CSV file in the CHUNKS directory. Thanks to that, **in the next repetition of the analysis, ordered data bundles are loaded directly** without re-segregating the rows. With big data, **this speeds things up a lot**. You can also **use data chunks to parallel** your analysis.
@@ -337,7 +339,16 @@ This variant is dedicated to **read raw data organized into columns** and stored
 
 The input can be a text file with any number of data columns and of any type (strings or numerical). Note that <b>in Python, the numbering starts from 0</b>, so the <u>index of the first column is 0</u>.
 
-*File Preview* of example `input.txt` <a id="raw-url" href="data:text/plain,https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/input.txt" download="input.txt"><input type="button" value="Download ⤵" /></a>
+*File Preview* of example `input.txt`
+<a id="raw-url" href="data:text/plain,https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/input.txt" download="input.txt"><input type="button" value="Download1 ⤵" /></a>
+
+<a id="raw-url" href="https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/input.txt" download="input.txt"><input type="button" value="Download2 ⤵" /></a>
+
+<a id="raw-url" href="https://raw.githubusercontent.com/ISUgenomics/data_wrangling/main/bin_data/input.txt" download="input.txt"><input type="button" value="Download3 ⤵" /></a>
+
+<a id="raw-url" href="https://raw.githubusercontent.com/ISUgenomics/data_wrangling/trunk/bin_data/input.txt" download="input.txt"><input type="button" value="Download4 ⤵" /></a>
+
+<a id="raw-url" href="https://github.com/ISUgenomics/data_wrangling/blob/main/bin_data/input.txt" download="input.txt"><input type="button" value="Download5 ⤵" /></a>
 
 
 ```
