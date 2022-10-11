@@ -426,9 +426,8 @@ Note you can also provide as an input a custom directory with a set of files tha
 
 Typically the directory type of input will be `-i CHUNKS` as the default output of parsing the raw input file. However, you can provide a path to any custom directory of CSV files.
 
-*Directory Preview* of example `CHUNKS` <br>
-<a href="https://downgit.github.io/#/home?url=https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data/CHUNKS/" target="_blank"><input type="button" value="Download .zip ⤵" style="background-color: #e7e7e7; color: black;" /></a>
-<a href="https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/CHUNKS/" target="_blank"><input type="button" value="Open raw ⤴" style="background-color: #e7e7e7; color: black;" /></a>
+*Directory Preview* of example `CHUNKS` 
+<a href="https://downgit.github.io/#/home?url=https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data/CHUNKS" target="_blank"><input type="button" value="Download .zip ⤵" style="background-color: #e7e7e7; color: black;" /></a>
 <a id="raw-url" href="https://github.com/ISUgenomics/data_wrangling/blob/main/bin_data/CHUNKS/" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 
 ![Data chunks](../assets/images/03-bin_data-ex1_chunks.png)
