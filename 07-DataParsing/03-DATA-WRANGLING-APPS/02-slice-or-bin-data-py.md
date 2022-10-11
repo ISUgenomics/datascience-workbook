@@ -349,6 +349,13 @@ svn export https://github.com/ISUgenomics/data_wrangling/trunk/bin_data
 *download zipped folder*
 <a href="https://downgit.github.io/#/home?url=https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data" target="_blank"><input type="button" value="Download .zip ⤵" style="background-color: #e7e7e7; color: black;" /></a>
 
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+<i>If you downloaded the files here, ignore the download suggestions in the individual examples. You already have a set of the necessary files.</i></span>
+</div><br>
+
+
 ### *E1: Load data from a single text file*
 
 This variant is dedicated to **read raw data organized into columns** and stored in a single file. The file can be very large (GBs of size). Such a large dataset usually can NOT be loaded in to the program all at once. Thus, by default, the data is loaded in the bundles of rows and merged into the data chunks corresponding to unique categories. The **label-based data chunks are sliced further and aggregated due to selected analysis schema**. Every data chunk is saved into the separate CSV file in the CHUNKS directory. Thanks to that, **in the next repetition of the analysis, ordered data bundles are loaded directly** without re-segregating the rows. With big data, **this speeds things up a lot**. You can also **use data chunks to parallel** your analysis.
@@ -426,7 +433,7 @@ Note you can also provide as an input a custom directory with a set of files tha
 
 Typically the directory type of input will be `-i CHUNKS` as the default output of parsing the raw input file. However, you can provide a path to any custom directory of CSV files.
 
-*Directory Preview* of example `CHUNKS` 
+*Directory Preview* of example `CHUNKS`
 <a href="https://downgit.github.io/#/home?url=https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data/CHUNKS" target="_blank"><input type="button" value="Download .zip ⤵" style="background-color: #e7e7e7; color: black;" /></a>
 <a id="raw-url" href="https://github.com/ISUgenomics/data_wrangling/blob/main/bin_data/CHUNKS/" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 
@@ -461,8 +468,9 @@ The example is basically the same as [example E1](https://datascience.101workboo
 
 **Input**
 
-We will use label-based data chunks created in [example E1](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#e1-load-data-from-a-single-text-file) and stored in the `CHUNKS` directory.
-<a id="raw-url" href="data:text/plain,https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/CHUNKS/" download="input.txt"><input type="button" value="Download ⤵" /></a>
+We will use label-based data chunks created in [example E1](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#e1-load-data-from-a-single-text-file) and stored in the `CHUNKS` directory. <br>
+<a href="https://downgit.github.io/#/home?url=https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data/CHUNKS" target="_blank"><input type="button" value="Download .zip ⤵" style="background-color: #e7e7e7; color: black;" /></a>
+<a id="raw-url" href="https://github.com/ISUgenomics/data_wrangling/blob/main/bin_data/CHUNKS/" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 
 *File Preview* of example `chunk_*.csv`
 
@@ -506,8 +514,9 @@ The example shows another variant of slicing procedure. The example shows anothe
 
 **Input**
 
-We will use label-based data chunks created in [example E1](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#e1-load-data-from-a-single-text-file) and stored in the `CHUNKS` directory.
-<a id="raw-url" href="data:text/plain,https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/CHUNKS/" download="input.txt"><input type="button" value="Download ⤵" /></a>
+We will use label-based data chunks created in [example E1](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#e1-load-data-from-a-single-text-file) and stored in the `CHUNKS` directory. <br>
+<a href="https://downgit.github.io/#/home?url=https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data/CHUNKS" target="_blank"><input type="button" value="Download .zip ⤵" style="background-color: #e7e7e7; color: black;" /></a>
+<a id="raw-url" href="https://github.com/ISUgenomics/data_wrangling/blob/main/bin_data/CHUNKS/" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 
 *File Preview* of example `chunk_*.csv`
 
@@ -551,8 +560,9 @@ The example shows the third variant of the slicing procedure. Using the `-t 'val
 
 **Input**
 
-We will use label-based data chunks created in [example E1](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#e1-load-data-from-a-single-text-file) and stored in the `CHUNKS` directory.
-<a id="raw-url" href="data:text/plain,https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/CHUNKS/" download="input.txt"><input type="button" value="Download ⤵" /></a>
+We will use label-based data chunks created in [example E1](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#e1-load-data-from-a-single-text-file) and stored in the `CHUNKS` directory. <br>
+<a href="https://downgit.github.io/#/home?url=https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data/CHUNKS" target="_blank"><input type="button" value="Download .zip ⤵" style="background-color: #e7e7e7; color: black;" /></a>
+<a id="raw-url" href="https://github.com/ISUgenomics/data_wrangling/blob/main/bin_data/CHUNKS/" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 
 *File Preview* of example `chunk_*.csv`
 
@@ -603,8 +613,9 @@ The **verbosity** level defines how much information will be printed on your ter
 
 **Input**
 
-We will use label-based data chunks created in [example E1](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#e1-load-data-from-a-single-text-file) and stored in the `CHUNKS` directory.
-<a id="raw-url" href="data:text/plain,https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/CHUNKS/" download="input.txt"><input type="button" value="Download ⤵" /></a>
+We will use label-based data chunks created in [example E1](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#e1-load-data-from-a-single-text-file) and stored in the `CHUNKS` directory. <br>
+<a href="https://downgit.github.io/#/home?url=https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data/CHUNKS" target="_blank"><input type="button" value="Download .zip ⤵" style="background-color: #e7e7e7; color: black;" /></a>
+<a id="raw-url" href="https://github.com/ISUgenomics/data_wrangling/blob/main/bin_data/CHUNKS/" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 
 *File Preview* of example `chunk_*.csv`
 
