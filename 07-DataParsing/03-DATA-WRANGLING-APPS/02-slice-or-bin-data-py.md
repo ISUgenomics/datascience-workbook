@@ -258,6 +258,8 @@ The **header** is usually the first line of the file and contains the column lab
 
 Running the application requires that you specify the index of the `labels` and `ranges` columns.
 
+#### • Labels column
+
 **Labels** column should contain labels or categories assigned to the observables. They are used to aggregate values over data chunks corresponding to the unique labels. The values in the `labels` column can be strings or numerical. <br>
 If all your data belong to the same or none category, you can add to your file a fake-label column with all identical values, e.g., *'label'* or *0*.
 
@@ -281,6 +283,7 @@ sed "1s/^/label$sep/; 2,$ s/^/value$sep/" < file > input
 
 ![Input label column](../assets/images/03-input_label-col-header.png)
 
+#### • Ranges column
 
 **Ranges** column, in general, should contain <u>numerical values</u> used to determine **ranges for data slicing**.<br>
 The application provides the ability to slice data by three different scenarios:
@@ -305,6 +308,8 @@ After data aggregation over <u>each slice</u>, the numerical values from the `ra
 * ***constant row counts per slice***
 
 Generally, when you want to **slice the data with an equal number of rows**, you should use **step** (*user-provided number of rows per slice*) or **bin** (*user-provided number of slices*) `type` of slicing. In this case, only <u>first and last</u> value from the `ranges` column will be reported for the aggregated output row of a data slice. Thus, data in `labels`-based chunks will be initially sorted by values in the `ranges` column. <br>
+
+#### ••• Add Indexing
 
 If you want **to keep the original ordering** of an input, add a column with generic indexing and pass this column index with the `-r` option:
 
