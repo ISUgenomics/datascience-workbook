@@ -328,7 +328,26 @@ In this case, the <u>first</u> value from the `ranges` column and the <u>first +
 
 The application provides the option `-i` to load the **data from a single text file** or **multiple files** with names starting with "chunk_" **stored in the directory**. It is required to select `labels-col` and `ranges-col` from among columns in the inputs. The `labels-col` is used to split data into label-based chunks. If you want to process only a few labels, use `-ll 'label_X,label_Y,label_Z'` to define a list of kept labels. The `ranges-col` is defines value ranges for the slicing of data chunks.
 
-Before you start explore examples, please clone the data_wranglig repository on your local machine or download the bin_data folder.
+<span style="color: #ff3870;font-weight: 500;">
+Before exploring examples, please copy the source code and inputs to your computing machine.
+</span><br>
+
+**A.**  clone the entire <a href="https://github.com/ISUgenomics/data_wrangling" target="_blank"> data_wranglig </a> repository:
+
+```
+git clone https://github.com/ISUgenomics/data_wrangling.git
+```
+
+**B.** or download the data_wrangling/<a href="https://github.com/ISUgenomics/data_wrangling/bin_data" target="_blank">bin_data </a> folder:
+
+*download from the command line*
+
+```
+svn export https://github.com/ISUgenomics/data_wrangling/trunk/bin_data
+```
+
+*download zipped folder*
+<a href="https://downgit.github.io/#/home?url=https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data/" target="_blank"><input type="button" value="Download .zip ⤵" style="background-color: #e7e7e7; color: black;" /></a>
 
 ### *E1: Load data from a single text file*
 
@@ -340,8 +359,7 @@ This variant is dedicated to **read raw data organized into columns** and stored
 The input can be a text file with any number of data columns and of any type (strings or numerical). Note that <b>in Python, the numbering starts from 0</b>, so the <u>index of the first column is 0</u>.
 
 *File Preview* of example `input.txt`
-<a href="https://downgit.github.io/#/home?url=https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data/input.txt" target="_blank"><input type="button" value="Download ⤵" style="background-color: #e7e7e7; color: black;" /></a>
-<a href="https://downgit.github.io/#/home?url=https:%2F%2Fgithub.com%2FISUgenomics%2Fdata_wrangling%2Fblob%2Fmain%2Fbin_data%2Finput.txt" ><input type="button" value="Download ⤵" style="background-color: #e7e7e7; color: black;" /></a>
+<a href="https://downgit.github.io/#/home?url=https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data/input.txt" target="_blank"><input type="button" value="Download .zip ⤵" style="background-color: #e7e7e7; color: black;" /></a>
 <a href="https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/input.txt" target="_blank"><input type="button" value="Open raw ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 <a id="raw-url" href="https://github.com/ISUgenomics/data_wrangling/blob/main/bin_data/input.txt" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 
@@ -408,7 +426,10 @@ Note you can also provide as an input a custom directory with a set of files tha
 
 Typically the directory type of input will be `-i CHUNKS` as the default output of parsing the raw input file. However, you can provide a path to any custom directory of CSV files.
 
-*Directory Preview* of example `CHUNKS` <a id="raw-url" href="data:text/plain,https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/CHUNKS/" download="input.txt"><input type="button" value="Download ⤵" /></a>
+*Directory Preview* of example `CHUNKS` <br>
+<a href="https://downgit.github.io/#/home?url=https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data/CHUNKS/" target="_blank"><input type="button" value="Download .zip ⤵" style="background-color: #e7e7e7; color: black;" /></a>
+<a href="https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/CHUNKS/" target="_blank"><input type="button" value="Open raw ⤴" style="background-color: #e7e7e7; color: black;" /></a>
+<a id="raw-url" href="https://github.com/ISUgenomics/data_wrangling/blob/main/bin_data/CHUNKS/" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 
 ![Data chunks](../assets/images/03-bin_data-ex1_chunks.png)
 
