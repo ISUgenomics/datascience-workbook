@@ -117,7 +117,7 @@ optional arguments:
 ```
 -ll None                # means: all labels will be processed
 -hd None                # means: assigning 'label' for labels-col, 'position' for ranges-col, and 'val-X' for remaining columns, where X is an increasing int number
--ch None                # means: optimizing number of loaded input rows for 250MB memory usage
+-ch 0                   # means: optimizing number of loaded input rows for 250MB memory usage
 -s 'true'               # means: data chunked by unique labels will be saved in CSV format into the CHUNKS/ directory; disabled when input is a directory
 -c 'ave'                # means: average of each numerical column in the slice will be returned
 -t 'step'               # means: data will be sliced by the number of rows in a slice (each slice consists of the same number of rows)
@@ -216,7 +216,10 @@ Your terminal screen will display a list of installed software in the active env
 
 Before using the application, make sure your inputs has been properly prepared. First of all, the **data** in the input file must be **organized into columns**. The number of columns and rows is arbitrary, including **Big Data support** (text file size reaching GBs).
 
-*data structure in the example `input.txt`* <a id="raw-url" href="https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/input.txt"><input type="button" value="Download ⤵" /></a>
+*data structure in the example `input.txt`*
+<a href="https://downgit.github.io/#/home?url=https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data/input.txt" target="_blank"><input type="button" value="Download .zip ⤵" style="background-color: #e7e7e7; color: black;" /></a>
+<a href="https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/input.txt" target="_blank"><input type="button" value="Open raw ⤴" style="background-color: #e7e7e7; color: black;" /></a>
+<a id="raw-url" href="https://github.com/ISUgenomics/data_wrangling/blob/main/bin_data/input.txt" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 ```
 label_1  982     0       0       0       0       0       1       0       0
 label_1  983     0       0       0       0       0       1       0       0
@@ -258,7 +261,7 @@ The **header** is usually the first line of the file and contains the column lab
 
 Running the application requires that you specify the index of the `labels` and `ranges` columns.
 
-#### *• Labels column*
+### *• Labels column*
 
 **Labels** column should contain labels or categories assigned to the observables. They are used to aggregate values over data chunks corresponding to the unique labels. The values in the `labels` column can be strings or numerical. <br>
 If all your data belong to the same or none category, you can add to your file a fake-label column with all identical values, e.g., *'label'* or *0*.
@@ -283,7 +286,7 @@ sed "1s/^/label$sep/; 2,$ s/^/value$sep/" < file > input
 
 ![Input label column](../assets/images/03-input_label-col-header.png)
 
-#### *• Ranges column*
+### *• Ranges column*
 
 **Ranges** column, in general, should contain <u>numerical values</u> used to determine **ranges for data slicing**.<br>
 The application provides the ability to slice data by three different scenarios:
@@ -309,7 +312,7 @@ After data aggregation over <u>each slice</u>, the numerical values from the `ra
 
 Generally, when you want to **slice the data with an equal number of rows**, you should use **step** (*user-provided number of rows per slice*) or **bin** (*user-provided number of slices*) `type` of slicing. In this case, only <u>first and last</u> value from the `ranges` column will be reported for the aggregated output row of a data slice. Thus, data in `labels`-based chunks will be initially sorted by values in the `ranges` column. <br>
 
-#### *••• Add Indexing*
+### *••• Add Indexing*
 
 If you want **to keep the original ordering** of an input, add a column with generic indexing and pass this column index with the `-r` option:
 
