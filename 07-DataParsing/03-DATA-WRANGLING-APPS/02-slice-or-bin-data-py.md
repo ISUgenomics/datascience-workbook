@@ -216,19 +216,19 @@ Your terminal screen will display a list of installed software in the active env
 
 Before using the application, make sure your inputs has been properly prepared. First of all, the **data** in the input file must be **organized into columns**. The number of columns and rows is arbitrary, including **Big Data support** (text file size reaching GBs).
 
-*data structure in the example `input.txt`*
+*data structure in the example `input.txt`* <a id="raw-url" href="https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/input.txt"><input type="button" value="Download ⤵" /></a>
 ```
-HiC_scaffold_1  982     0       0       0       0       0       1       0       0
-HiC_scaffold_1  983     0       0       0       0       0       1       0       0
-HiC_scaffold_1  984     0       0       0       0       0       1       0       0
-HiC_scaffold_1  985     0       0       0       0       0       1       0       0
-HiC_scaffold_1  986     0       0       0       0       0       1       0       0
-HiC_scaffold_1  987     0       0       0       0       0       1       0       0
+label_1  982     0       0       0       0       0       1       0       0
+label_1  983     0       0       0       0       0       1       0       0
+label_1  984     0       0       0       0       0       1       0       0
+label_1  985     0       0       0       0       0       1       0       0
+label_1  986     0       0       0       0       0       1       0       0
+label_1  987     0       0       0       0       0       1       0       0
 ...
-HiC_scaffold_10 547     3       1       0       0       1       0       0       0
-HiC_scaffold_10 548     3       1       0       0       1       0       0       0
-HiC_scaffold_10 549     3       1       0       0       1       0       0       0
-HiC_scaffold_10 550     3       1       0       0       1       0       0       0
+label_10 547     3       1       0       0       1       0       0       0
+label_10 548     3       1       0       0       1       0       0       0
+label_10 549     3       1       0       0       1       0       0       0
+label_10 550     3       1       0       0       1       0       0       0
 ```
 
 ### *File format*
@@ -326,18 +326,19 @@ In this case, the <u>first</u> value from the `ranges` column and the <u>first +
 
 ## **Usage variations**
 
-The applications provides the option `-i` to load the data from a single text file or multiple files with names starting with "chunk_" stored in the directory.
+The application provides the option `-i` to load the **data from a single text file** or **multiple files** with names starting with "chunk_" **stored in the directory**. It is required to select `labels-col` and `ranges-col` from among columns in the inputs. The `labels-col` is used to split data into label-based chunks. If you want to process only a few labels, use `-ll 'label_X,label_Y,label_Z'` to define a list of kept labels. The `ranges-col` is defines value ranges for the slicing of data chunks.
 
 ### *E1: Load data from a single text file*
 
-This variant is dedicated to read raw data organized into columns and stored in a single file. The file can be very large (GBs of size). Such a large dataset usually can NOT be loaded in to the program all at once. Thus, by default the data is loaded in the bundles of rows and merged into the data chunks corresponding to unique categories. The label-based chunks are further sliced and aggregated due to selected analysis schema. Each data chunk can be also saved into the separate CSV file in the CHUNKS directory. Thanks to that, in the next repetition of the analysis, label-based data can be loaded directly without re-segregating the rows. With big data, this speeds things up a lot. You can also use such data chunks to parallel your analysis.
+This variant is dedicated to **read raw data organized into columns** and stored in a single file. The file can be very large (GBs of size). Such a large dataset usually can NOT be loaded in to the program all at once. Thus, by default, the data is loaded in the bundles of rows and merged into the data chunks corresponding to unique categories. The **label-based data chunks are sliced further and aggregated due to selected analysis schema**. Every data chunk is saved into the separate CSV file in the CHUNKS directory. Thanks to that, **in the next repetition of the analysis, ordered data bundles are loaded directly** without re-segregating the rows. With big data, **this speeds things up a lot**. You can also **use data chunks to parallel** your analysis.
 
 
 **Input**
 
-The input can be a text file with any number of data columns of any type (strings or numerical).
+The input can be a text file with any number of data columns and of any type (strings or numerical). Note that <b>in Python, the numbering starts from 0</b>, so the <u>index of the first column is 0</u>.
 
-*File Preview below* - Download full example input.txt <a id="raw-url" href="https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/input.txt">Download ⤵</a>
+*File Preview* of example `input.txt` <a id="raw-url" href="data:text/plain,https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/input.txt" download="input.txt"><input type="button" value="Download ⤵" /></a>
+
 
 ```
       0	1	2	3	4	5	6	7	8	9
@@ -355,168 +356,270 @@ label_10	2265	0	0	0	0	0	1	0	0
 **App usage**
 
 * To feed the application with the data from a single file, use option `-i` followed by the `path/file_name` of your input.
-* You need to select a column used to split data into the categories based on the set of unique values (labels). The `label-col` can be text or numerical.<br> *In this example we will use the first column with text-like labels to create data chunks. In Python numbering starts from <b>0</b>, so the <u>index of the first column is 0</u>. Index of the selected `label-col` is feed to the algorithm with the option `-l`.*
-* You also need to select a column used to cut data into slices. The `ranges-col` requires to be numerical, because the range of values in the slice will be reported in the output. If none column is relevant for that purpose, you can use the approach proposed in the [Contents of range column vs. type of slicing]() section to add a column with generic indexing.<br> *In this example we will use the second column (Python index: 1) with integers to derive reference value ranges of slices.*
-* The defaults of the other options will be used, so label-based data chunks will be cut for slices  of 100-rows in length (options: `-t 'step' -n 100`) and data will be aggregated by calculating mean value (option: `-c 'ave'`).
+* You need to select a column used to split data into the categories based on the set of unique values (labels). The `label-col` can be text or numerical.<br> *In this example we will use the first column with text-like labels to create data chunks. Index of the selected `label-col` is feed to the algorithm with the option `-l`.*
+* You also need to select a column used to cut data into slices. The `ranges-col` requires to be numerical, because the range of values in the slice will be reported in the output. If none column is relevant for that purpose, you can use the approach proposed in the [Contents of range column vs. slicing type]() section to add a column with generic indexing.<br> *In this example we will use the second column (Python index: 1) with integers to derive reference value ranges of slices.*
+* For the remaining options, the default values will be used. Thus, label-based data chunks split for slices of 100-rows in length (options: `-t 'step' -n 100`) and data is aggregated by calculating mean value (option: `-c 'ave'`).
 
 ```
-python3 bin_data.py -i input.txt -l 0 -r 1      # -t 'step' -n 100 -c 'ave'
+python3 bin_data.py -i input.txt -l 0 -r 1 -t 'step' -n 100 -c 'ave' -o 'output_data-step_ave'
 ```
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+The <b>labels-col</b> is used to split data into label-based chunks using <code>-l {col_index}</code> option. If you want to process only a few selected labels, use <code>-ll {to-keep_list_of_labels}</code> to define a list of kept labels. The argument of <code>-ll</code> option can be a path to a 1-column file with wanted labels or comma-separated & no-space string of those labels.<br><br>
+<b>For example,</b><br>
+<code style="background-color: #e4f0f0; width:100%; display: block; margin-top:5px;">
+python3 bin_data.py -i input.txt -l 0 -ll 'label_2,label_4,label_6,label_8,label_10' -r 1 -t 'step' -n 100 -c 'ave' -o 'output_data-step_ave-filtered'
+</code>
+<br>
+will process only the even-numbered labels.
+</span>
+</div><br>
 
 **RESULTS**
 
-The default outputs, when using `file` as an input, are:
-* `CHUNKS` directory with the label-based data chunks
-* `label_in_chunks.txt`, a file with the statistics from creation of data chunks
-* `output_data.csv`, a CSV file with the data aggregated over slices for all label-based data chunks
+The default outputs, when using a `file` as an input, are:
+* `CHUNKS`, a directory with the label-based data chunks
+* `label_in_chunks.txt`, a file with the statistics from the creation of data chunks
+* `output_data-step_ave.csv`, a CSV file with the data aggregated over slices for all label-based data chunks
 
-![Outputs](../assets/images/03-bin_data-ex2_outputs.png)
+![Outputs](../assets/images/03-bin_data-ex1_outputs.png)
 
-*The figure shows: Left panel - the file structure of the working directory with the analysis outputs, Right panel: the preview of the output file with data aggregated by averaging the data slices.*
+*The figure shows: The left panel is the file structure of the working directory with the analysis outputs. The right panel preview the output file with data aggregated by averaging the data slices.*
 
-Each row in the output corresponds to a slice composed of 100 rows. There is a 100 rows in the file, because the input file consisted of a 1000 rows per label, for 10 labels.<br> *[1000x10 = 10000 input rows / 100 rows in a slice = 100 slices]*
+Each row in the output corresponds to a slice composed of 100 rows. The 100 rows are in the file because 10 slices were created for each of 10 labels.<br> *[10000 input data rows / 10 labels = 1000 rows per label / 100 rows step = 10 slices per label]*
+
 
 ### *E2: Load data from all files in a directory*
 
-This variant **facilitates the repetitive analysis**, because reading the organized data chunks is much faster and more efficient than parsing the raw file from the scratch. This is especially relevant for big data. So, the assumption behind this setting is that you parse your raw file with the app only once, and by default the label-based chunks are saved into the CHUNKS directory. Next time you will provide the path to the CHUNKS folder instead of the raw input.
-Note, you can also provide as an input a custom directory with a set files that meets the requirements:
+This variant **facilitates repetitive analysis** because reading the organized data chunks is much faster and more efficient than parsing the raw file from scratch. That is especially **relevant for big data or optimization tasks with many attempts**. So, the assumption behind this setting is that you parse your raw file with the app only once, and by default, the **label-based chunks are saved into the CHUNKS directory**. Next time you will provide the path to the CHUNKS folder instead of the filename of the raw input.
+Note you can also provide as an input a custom directory with a set of files that meets the requirements:
 * filenames start with "chunk_"
 * files are provided in comma-separated CSV format
 
 **Input**
 
-Typically the directory type of input will be `-i CHUNKS`, as a default output of parsing raw input file. However, you can provide path to any custom directory of CSV files.
+Typically the directory type of input will be `-i CHUNKS` as the default output of parsing the raw input file. However, you can provide a path to any custom directory of CSV files.
 
-*Directory Preview below* - Download full example of CHUNKS directory <a id="raw-url" href="https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/input.txt">Download ⤵</a>
+*Directory Preview* of example `CHUNKS` <a id="raw-url" href="data:text/plain,https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/CHUNKS/" download="input.txt"><input type="button" value="Download ⤵" /></a>
 
 ![Data chunks](../assets/images/03-bin_data-ex1_chunks.png)
 
+*The Figure lists label-based data chunks derived from the raw input file. Every file collects data rows for a unique label from the first column.*
+
 **App usage**
 
-* To feed the application with the data from a directory, use option `-i` followed by the `path/dir_name` of your input directory.
-* The settings of `labels-col` and `ranges-col` are the same as in the previous example, so we are using labels from the column of index 0 (`-l 0`) and value ranges from the column of index 1 (`-r 1`).
-* This time label-based data chunks will be cut for 100 slices of X-rows in length (options: `-t 'bin' -n 100`).
+* To feed the application with the data from a directory, use the option `-i` followed by the `path/dir_name` of your input directory.
+* The settings of `labels-col` and `ranges-col` are the same as in the previous example. So, we are using labels from the column of index 0 (`-l 0`), and value ranges from the column of index 1 (`-r 1`).
+* This time label-based data chunks split for 100 slices of X-rows in length (options: `-t 'bin' -n 100`).
 
 ```
-python3 bin_data.py -i CHUNKS/ -l 0 -r 1 -t 'bin' -n 100
+python3 bin_data.py -i CHUNKS/ -l 0 -r 1 -t 'bin' -n 100 -o 'output_data-bin_ave'
 ```
 
 **Results**
 
 The default output, when using `dir` as an input, is:
-* `output_data.csv`, a CSV file with the data aggregated over slices for all label-based data chunks
+* `output_data-bin_ave.csv`, a CSV file with the data aggregated over slices for all label-based data chunks
 
-![Outputs](../assets/images/03-bin_data-ex3_outputs.png)
+![Outputs](../assets/images/03-bin_data-ex2_outputs.png)
 
-*The figure shows: Left panel - the file structure of the working directory with the analysis outputs, Right panel: the preview of the output file with data aggregated by averaging the data slices.*
+*The figure shows: The left panel is the file structure of the working directory with the analysis outputs. The right panel previews the output file with data aggregated by averaging the data slices.*
 
-Each row in the output corresponds to one of a 100 slices, every of X=100 rows. There were 10 input files (for unique labels) consisted of a 1000 rows per label.<br> *[10x1000 = 10000 input rows / 100 slices = 100 rows in a slice]*
+Each row in the output corresponds to one of 100 slices, every of X=10 rows. There were ten input files (for unique labels) consisting of 1000 rows per label.<br> *[1000 rows per label / 100 slices = 10 input data rows in a slice]*
 
 ### *E3: Aggregate data over every N rows*
 
-This example is basically the same as example E1 and uses the same input file. However, this time we will focus on slicing procedure instead of the type of input. Using the `-t 'step'` option you can request to aggregate data over the slices cut by every N rows.
+The example is basically the same as [example E1](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#e1-load-data-from-a-single-text-file) and uses the same input file. However, when analyzing the settings, this time, we will focus on the slicing procedure instead of the input type. Using the `-t 'step'` option, you can request to aggregate data over the slices cut by every N rows.
 
 **Input**
 
-Download full example input.txt <a id="raw-url" href="https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/input.txt">Download ⤵</a>
+We will use label-based data chunks created in [example E1](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#e1-load-data-from-a-single-text-file) and stored in the `CHUNKS` directory.
+<a id="raw-url" href="data:text/plain,https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/CHUNKS/" download="input.txt"><input type="button" value="Download ⤵" /></a>
+
+*File Preview* of example `chunk_*.csv`
+
+```
+    0        1     2     3     4     5     6     7     8     9
+---------------------------------------------------------
+label,position,val-2,val-3,val-4,val-5,val-6,val-7,val-8,val-9
+label_3,17,0,0,0,0,0,1,0,0
+label_3,18,0,0,0,0,0,1,0,0
+label_3,19,0,0,0,0,0,1,0,0
+...
+label_3,5379,1,0,2,0,1,1,0,0
+label_3,5380,1,0,2,0,1,1,0,0
+label_3,5381,1,0,2,0,1,1,0,0
+```
 
 **App usage**
 
-* In this case, we will slice the label-based data chunks by every 100 rows, which can be requested by using `-t 'step' -n 100` options.
-* By default, as in example E1, the values in a slice are aggregated by calculating the mean of each numerical column. Alternatively, we can request a summing over the slice using the `-c 'sum'` option. In this variant, the returned output for each slice is a row containing a sum of values for every numerical column.
-* The input is provided using the `-i` option followed by the filename, `input.txt`. As previously, we are using labels from the column of index 0 (`-l 0`) and value ranges from the column of index 1 (`-r 1`)
+* In this case, we will slice the label-based data chunks by every 100 rows, which can be requested using `-t 'step' -n 100` options.
+* By default of example E1, the values in a slice aggregate by calculating the mean of each numerical column. Alternatively, we can request a summing over the slice using the `-c 'sum'` option. In this variant, the returned output for each data slice is a row containing a sum of values for every numerical column.
+* The input is provided using the `-i` option followed by the `file_name` or `dir_name`, here we use a `CHUNKS` directory. As previously, we are using labels from the column of index 0 (`-l 0`), and value ranges from the column of index 1 (`-r 1`)
 
 ```
-python3 bin_data.py -i input.txt -l 0 -r 1 -t 'step' -n 100 -c 'sum'
+python3 bin_data.py -i ./CHUNKS -l 0 -r 1 -t 'step' -n 100 -c 'sum' -o 'output_data-step_sum'
 ```
 
 **Results**
 
+The default outputs include:
+* `output_data-step_sum.csv`, a CSV file with the data aggregated over slices for all label-based data chunks
 
+![Outputs](../assets/images/03-bin_data-ex3_outputs.png)
+
+*The figure shows: The left panel is the file structure of the working directory with the analysis outputs. The right panel preview the output file with data aggregated by summing over the data slice.*
+
+Each row in the output corresponds to a slice composed of 100 rows. The 100 rows are in the file because 10 slices were created for each of 10 labels.<br> *[10000 input data rows / 10 labels = 1000 rows per label / 100 rows step = 10 slices per label]*
 
 ### *E4: Aggregate data over each of N slices*
 
-This example shows another variant of slicing procedure. Using the `-t 'bin'` option you can request to aggregate data exactly over N slices. The algorithm will automatically calculate the number of rows needed to split data into the number of requested slices.
+The example shows another variant of slicing procedure. The example shows another variant of the slicing procedure. You can request data aggregation over exactly N slices using `-t 'bin'` option. The algorithm will automatically calculate the number of rows needed to split data into the number of requested slices.
 
 **Input**
 
-Download full example input.txt <a id="raw-url" href="https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/input.txt">Download ⤵</a>
+We will use label-based data chunks created in [example E1](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#e1-load-data-from-a-single-text-file) and stored in the `CHUNKS` directory.
+<a id="raw-url" href="data:text/plain,https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/CHUNKS/" download="input.txt"><input type="button" value="Download ⤵" /></a>
+
+*File Preview* of example `chunk_*.csv`
+
+```
+    0        1     2     3     4     5     6     7     8     9
+---------------------------------------------------------
+label,position,val-2,val-3,val-4,val-5,val-6,val-7,val-8,val-9
+label_3,17,0,0,0,0,0,1,0,0
+label_3,18,0,0,0,0,0,1,0,0
+label_3,19,0,0,0,0,0,1,0,0
+...
+label_3,5379,1,0,2,0,1,1,0,0
+label_3,5380,1,0,2,0,1,1,0,0
+label_3,5381,1,0,2,0,1,1,0,0
+```
 
 **App usage**
 
-* In this case, we will slice the label-based data chunks into 100 slices, which can be requested by using `-t 'bin' -n 100` options.
-* We will request a summing over the slice using the `-c 'sum'` option. In this variant, the returned output for each slice is a row containing a sum of values for every numerical column.
-* The input is provided using the `-i` option followed by the filename, `input.txt`. As previously, we are using labels from the column of index 0 (`-l 0`) and value ranges from the column of index 1 (`-r 1`).
+* In this case, we will slice the label-based data chunks into 100 slices, which can be requested using `-t 'bin' -n 100` options.
+* We will request a summing over the slice using the `-c 'sum'` option. In this variant, the returned output for each data slice is a row containing a sum of values for every numerical column.
+* The input is provided using the `-i` option followed by the filename, `input.txt`. As previously, we are using labels from the column of index 0 (`-l 0`), and value ranges from the column of index 1 (`-r 1`).
 
 ```
-python3 bin_data.py -i input.txt -l 0 -r 1 -t 'bin' -n 100
+python3 bin_data.py -i input.txt -l 0 -r 1 -t 'bin' -n 100 -c 'sum' -o 'output_data-bin_sum'
 ```
 
 **Results**
 
-### *Aggregate data over value increment*
+The default outputs include:
+* `output_data-bin_sum.csv`, a CSV file with the data aggregated over slices for all label-based data chunks
 
-The example shows the third variant of slicing procedure. Using the `-t 'value'` option you can request to aggregate data exactly over value increment of selected feature with numerical representation. In this case, the `-n` option does NOT correspond to the number or size of requested slices but it is a constant increment of a value in `ranges-col`. Slices are composed of variable number of rows depending on values falling into the incremented range. The algorithm will automatically calculate the number of slices and the number of rows in a given slice.
+![Outputs](../assets/images/03-bin_data-ex4_outputs.png)
+
+*The figure shows: The left panel is the file structure of the working directory with the analysis outputs. The right panel preview the output file with data aggregated by summing over the data slice.*
+
+Each row in the output corresponds to one of 100 slices, every of X=10 rows. There were ten input files (for unique labels) consisting of 1000 rows per label.<br> *[1000 rows per label / 100 slices = 10 rows in a slice]*
+
+### *E5: Aggregate data over value increment*
+
+The example shows the third variant of the slicing procedure. Using the `-t 'value'` option, you can request to aggregate data over the value increment of the selected feature with numerical representation. In this case, the `-n` option does NOT correspond to the number or size of requested slices, but it is a constant increment of a value in `ranges-col`. The data slices are composed of a variable number of rows depending on values falling into the incremented range. The algorithm will automatically calculate the number of data slices and the number of rows in a given slice.
 
 **Input**
 
-Download full example input.txt <a id="raw-url" href="https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/input.txt">Download ⤵</a>
+We will use label-based data chunks created in [example E1](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#e1-load-data-from-a-single-text-file) and stored in the `CHUNKS` directory.
+<a id="raw-url" href="data:text/plain,https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/CHUNKS/" download="input.txt"><input type="button" value="Download ⤵" /></a>
+
+*File Preview* of example `chunk_*.csv`
+
+```
+    0        1     2     3     4     5     6     7     8     9
+---------------------------------------------------------
+label,position,val-2,val-3,val-4,val-5,val-6,val-7,val-8,val-9
+label_3,17,0,0,0,0,0,1,0,0
+label_3,18,0,0,0,0,0,1,0,0
+label_3,19,0,0,0,0,0,1,0,0
+...
+label_3,5379,1,0,2,0,1,1,0,0
+label_3,5380,1,0,2,0,1,1,0,0
+label_3,5381,1,0,2,0,1,1,0,0
+```
 
 **App usage**
 
-* In this case, we will slice the label-based data chunks into 100 slices, which can be requested by using `-t 'value' -n 100` options.
-* We will request a summing over the slice using the `-c 'sum'` option. In this variant, the returned output for each slice is a row containing a sum of values for every numerical column.
-* The input is provided using the `-i` option followed by the filename, `input.txt`. As previously, we are using labels from the column of index 0 (`-l 0`) and value ranges from the column of index 1 (`-r 1`)
+* In this case, we will slice the label-based data chunks into unknown (*X*) number of slices using the value increment (`-t 'value' -n 100`) of the selected feature provided as `ranges-col`
+* We will request a summing over the slice using the `-c 'sum'` option. In this variant, the returned output for each data slice is a row containing a sum of values for every numerical column.
+* The input is provided using the `-i` option followed by the filename, `input.txt`. As previously, we are using labels from the column of index 0 (`-l 0`), and value ranges from the column of index 1 (`-r 1`)
 
 ```
-python3 bin_data.py -i input.txt -l 0 -r 1 -t 'value' -n 100
+python3 bin_data.py -i input.txt -l 0 -r 1 -t 'value' -n 100 -c 'sum' -o 'output_data-value_sum'
 ```
 
 **Results**
 
+The default outputs include:
+* `output_data-value_sum.csv`, a CSV file with the data aggregated over slices for all label-based data chunks
 
-<!--
+![Outputs](../assets/images/03-bin_data-ex5_outputs.png)
 
-* **example usage with large raw input file:**
+*The figure shows: The left panel is the file structure of the working directory with the analysis outputs. The right panel preview the output file with data aggregated by summing over the data slice.*
+
+Each row in the output corresponds to one of X slices per label, every of variable Y rows. There were ten input files (for unique labels) consisting of 1000 rows per label.<br>
+*[number of slices per label = number of rows with a label_X tag in the output]*
+*[number of input data rows in a slice = value in the `counts` column for a given output row (data slice)]*
+
+Note the **additional column `counts`** added to the output when slicing by `'value'` increment. The values in this column are the counts of rows in a given data slice. Having this number facilitates recognition of the **dense value ranges** as well as the **detection of empty bins**.
+
+### *E6: Customize output and verbosity*
+
+The example shows how to customize the output and the verbosity. <br>
+The **output** refers here to the file with the aggregated data. You can customize its name using `-o {output_filename}` option. Also, you can specify the **number of decimal places** kept for all numerical columns using `-d {int}` option, where the default is 2. This setting can be especially useful when aggregating with mean value (`-t 'ave'`). <br>
+The **verbosity** level defines how much information will be printed on your terminal screen when executing the Python application. The ***warning*** level `-v 0` is set as a default, so you will be notified about all warnings, errors, and critical events. If you want also to follow the algorithm progress, you can request ***info*** level of verbosity using the `-v 1` option.
+
+
+**Input**
+
+We will use label-based data chunks created in [example E1](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#e1-load-data-from-a-single-text-file) and stored in the `CHUNKS` directory.
+<a id="raw-url" href="data:text/plain,https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/CHUNKS/" download="input.txt"><input type="button" value="Download ⤵" /></a>
+
+*File Preview* of example `chunk_*.csv`
 
 ```
-python3 bin_data.py -i hybrid.depth -l 0 -r 1 -t 'step' -n 1000 -s True -v 1
+    0        1     2     3     4     5     6     7     8     9
+---------------------------------------------------------
+label,position,val-2,val-3,val-4,val-5,val-6,val-7,val-8,val-9
+label_3,17,0,0,0,0,0,1,0,0
+label_3,18,0,0,0,0,0,1,0,0
+label_3,19,0,0,0,0,0,1,0,0
+...
+label_3,5379,1,0,2,0,1,1,0,0
+label_3,5380,1,0,2,0,1,1,0,0
+label_3,5381,1,0,2,0,1,1,0,0
 ```
 
-*The example parses the single text-like hybrid.depth input file, where the <b>L</b> = 'label-column' has index 0, and <b>R</b> = 'ranges-column' has index 1. The 'step' is a selected <b>type</b> of rows grouping, and each slice will be composed of 1000 rows. For unique labels, data chunks will be saved as separate CSV files in the ./CHUNKS directory. The <b>v</b>erbosity level set to 1 means logging on the 'info' level.*
+**App usage**
 
-* **example usage with input directory of data chunks in CSV format:**
-
-```
-python3 bin_data.py -i CHUNKS/ -l 0 -r 1 -t 'value' -n 0.15 -s 'false' -v 0
-```
-
-*The example parses the label-based data chunks stored in the CHUNKS/ directory. All data chunks have the same data structure, where the <b>L</b> = 'label-column' has index 0, and <b>R</b> = 'ranges-column' has index 1. The 'value' is a selected <b>type</b> of rows grouping, so each bin (slice) will be created based on the increment of values in the <b>R</b> = 'ranges-column' by 0.15. The label-based data chunks will not be saved (default when the input is a directory). The <b>v</b>erbosity level set to 0 means that 'warnings' will be logged while progress 'info' will be skipped.*
-
-* **example usage with all default settings:**
+* In this case, we will slice the label-based data chunks into unknown (*X*) number of slices using the value increment (`-t 'value' -n 100`) of the selected feature provided as `ranges-col`
+* We will request an averaging over the slice using the `-c 'ave'` option. In this variant, the returned output for each data slice is a row containing a mean of values for every numerical column.
+* In addition, we expect to keep 3 decimal places in the aggregated data for all numerical columns using the `-d 3` option.
+* The input is provided using the `-i` option followed by the filename, `input.txt`. As previously, we are using labels from the column of index 0 (`-l 0`), and value ranges from the column of index 1 (`-r 1`)
 
 ```
-python3 bin_data.py -i {path} -l {int} -r {int} -ll None -hd None -ch None -s True -c 'ave' -t 'step' -n 100 -d 2 -o 'output_data' -v 0
+python3 bin_data.py -i input.txt -l 0 -r 1 -t 'value' -n 100 -c 'ave' -d 3 -o 'output_data-value_ave'
 ```
 
-*The example parses inputs stored on the custom <b>path</b>, where the <b>L</b> = 'label-column' has a given index specified as an integer number, and <b>R</b> = 'ranges-column' also has the integer index (in Python, an indexing starts from 0). The three first arguments are required and have to be user-provided.*<br>
-<i>
-By default:
-- all labels are parsed when option <code>-ll</code> is set to <b>None</b>,
-- if no header in the input file and <b>None</b> is provided with option <code>-hd</code>, then 'labels', 'position', and 'val-{int}' will be assigned for 'label-column', 'ranges-column', and all remaining data columns
-- with option <code>-ch None</code> data loading will be optimized to N-row bundles corresponding to 250MB memory of pandas data frame
-- automatically created label-based chunks will be saved into the ./<code>CHUNKS/</code> directory as separate CSV files; when the input is a directory with data chunks, the option is disabled
-- the data in columns is aggregated by calculating the mean (with <code>-c 'ave'</code> option) over the slice composed of 100 consecutive rows (with <code>-t 'step' -n 100</code> options)
-- the statistics are calculated for all numerical columns with the precision of 2 decimal places (with option <code>-d 2</code> and saved to the 'output_data.csv' file)
-- the verbosity level set to 0 means logging the warnings, errors, and critical messages, while skipping the info about the algorithm progress
-</i>
+**Results**
 
--->
+The default outputs include:
+* `output_data.csv`, a CSV file with the data aggregated over slices for all label-based data chunks
 
+![Outputs](../assets/images/03-bin_data-ex6_outputs.png)
 
+*The figure shows: The left panel is the file structure of the working directory with the analysis outputs. The right panel preview the output file with data aggregated by averaging the data slice.*
 
+Each row in the output corresponds to one of X slices per label, every of variable Y rows. There were ten input files (for unique labels) consisting of 1000 rows per label.<br>
+*[number of slices per label = number of rows with a label_X tag in the output]*
+*[number of input data rows in a slice = value in the `counts` column for a given output row (data slice)]*
 
-
+Note the **additional column `counts`** added to the output when slicing by `'value'` increment. The values in this column are the counts of rows in a given data slice. Having this number facilitates recognition of the **dense value ranges** as well as the **detection of empty bins**.
 
 ___
 # Further Reading
