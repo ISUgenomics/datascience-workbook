@@ -340,9 +340,10 @@ This variant is dedicated to **read raw data organized into columns** and stored
 The input can be a text file with any number of data columns and of any type (strings or numerical). Note that <b>in Python, the numbering starts from 0</b>, so the <u>index of the first column is 0</u>.
 
 *File Preview* of example `input.txt`
-<a href="https://downgit.github.io/#/home?url=https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data/input.txt" target="_blank"><input type="button" value="Download File ⤵" /></a>
-<a href="https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/input.txt" target="_blank"><input type="button" value="Open raw ⤵" /></a>
-<a id="raw-url" href="https://github.com/ISUgenomics/data_wrangling/blob/main/bin_data/input.txt" target="_blank"><input type="button" value="Open at GitHub ⤵" /></a>
+<a href="https://downgit.github.io/#/home?url=https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data/input.txt" target="_blank"><input type="button" value="Download ⤵" style="background-color: #e7e7e7; color: black;" /></a>
+<a href="https://downgit.github.io/#/home?url=https:%2F%2Fgithub.com%2FISUgenomics%2Fdata_wrangling%2Fblob%2Fmain%2Fbin_data%2Finput.txt" ><input type="button" value="Download ⤵" style="background-color: #e7e7e7; color: black;" /></a>
+<a href="https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/input.txt" target="_blank"><input type="button" value="Open raw ⤴" style="background-color: #e7e7e7; color: black;" /></a>
+<a id="raw-url" href="https://github.com/ISUgenomics/data_wrangling/blob/main/bin_data/input.txt" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 
 
 ```
