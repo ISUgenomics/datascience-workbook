@@ -347,7 +347,7 @@ svn export https://github.com/ISUgenomics/data_wrangling/trunk/bin_data
 ```
 
 *download zipped folder*
-<a href="https://downgit.github.io/#/home?url=https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data/" target="_blank"><input type="button" value="Download .zip ⤵" style="background-color: #e7e7e7; color: black;" /></a>
+<a href="https://downgit.github.io/#/home?url=https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data" target="_blank"><input type="button" value="Download .zip ⤵" style="background-color: #e7e7e7; color: black;" /></a>
 
 ### *E1: Load data from a single text file*
 
