@@ -30,7 +30,7 @@ The <a href="https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data" t
 <b>R</b> - <code>ranges-column</code>, numerical [int, float] column of data characteristic (index, position, increment, feature),<br>
 <b>numD</b> - <code>data-columns</code>, any number of numerical columns that will be aggregated.<br>
 
-<b>2)</b> First, data is split into chunks based on assigned category labels (<b>L</b>). Optionally, sing <code>-s 'true'</code> option, chunks can be saved into separate CSV files, which facilitates Big Data loading in the repetitive analyses.<br>
+<b>2)</b> First, data is split into chunks based on assigned category labels (<b>L</b>). Optionally, using <code>-s 'true'</code> option (*default*), chunks can be saved into separate CSV files, which facilitates Big Data loading in the repetitive analyses.<br>
 
 <b>3)</b> Next, each <b>L</b>-based data chunk is split into slices composed of a specific number of consecutive rows, typically based on the <b>R</b> column.<br>
 The type of slices can be requested using the `-t` option as:
@@ -139,8 +139,6 @@ python3 bin_data.py -i input -l label -r range [-ll labels_list] [-hd header_nam
                    [-v [VERBOSE]] [-h]
 ```
 
-*^ arguments provided in square brackets [] are optional*
-
 **example usage with minimal required options:**
 
 ```
@@ -216,7 +214,7 @@ Your terminal screen will display a list of installed software in the active env
 
 ## **Inputs**
 
-Before using the application, make sure your inputs has been properly prepared. First of all, the **data** in the input file must be **organized into columns**. The number of columns and rows is arbitrary, including **Big Data support**.
+Before using the application, make sure your inputs has been properly prepared. First of all, the **data** in the input file must be **organized into columns**. The number of columns and rows is arbitrary, including **Big Data support** (text file size reaching GBs).
 
 *data structure in the example `input.txt`*
 ```
@@ -239,15 +237,14 @@ The format of the input file does NOT matter as long as it is a columns-like tex
 
 ### *Data delimiter*
 
-The data delimiter used does NOT matter, as it will be automatically detected by application. However, it is essential that the column separator is consistent, for example, that it is always a fixed number of spaces ` `&nbsp; only or always a tab, `\t`. If separator is a comma `,` remember NOT to use it inside a given data cell (e.g., if the values in the column are a list).
+The data delimiter used does NOT matter, as it will be automatically detected by application. However, it is essential that the column separator is consistent, for example, that it is always a fixed number of spaces ` ` &nbsp; only or always a tab, `\t`. If separator is a comma `,` remember NOT to use it inside a given data cell (e.g., if the values in the column are a list).
 
 ![Column separator](../assets/images/03-input_separator.png)
 
 <div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">WARNING:</span>
 <br><span style="font-style:italic;">
-Note that only data from numeric columns will be aggregated. So, if the values in a column are a list, so even if the values in the list are numeric, such a column will be treated as a string. <br>
-If you want to process such data, change the data structure of the input so that the values in the list split into separate columns.
+Note that only data from numeric columns will be aggregated. So, if the values in a column are a list, so even if the values in the list are numeric, such a column will be treated as a string. If you want to process such data, change the data structure of the input so that the values in the list split into separate columns.
 </span>
 </div>
 
@@ -270,7 +267,7 @@ If all your data belong to the same or none category, you can add to your file a
 sep='\t'
 sed "1,$ s/^/value$sep/" < file > input
 ```
-*^ paste your separator within ' ' of `$sep` variable*
+*^ paste your separator within ' ' of the `$sep` variable*
 
 ![Input label column](../assets/images/03-input_label-col.png)
 
@@ -280,7 +277,7 @@ sed "1,$ s/^/value$sep/" < file > input
 sep='\t'
 sed "1s/^/label$sep/; 2,$ s/^/value$sep/" < file > input
 ```
-*^ paste your separator within ' ' of `$sep` variable*
+*^ paste your separator within ' ' of the `$sep` variable*
 
 ![Input label column](../assets/images/03-input_label-col-header.png)
 
@@ -316,7 +313,7 @@ sep='\t'
 awk -F$sep -v OFS=$sep 'NR == 1 {print "position", $0; next} {print (NR-1), $0}' file > input
 ```
 
-*^ paste your separator within ' ' of `$sep` variable*
+*^ paste your separator within ' ' of the `$sep` variable*
 
 ![Add indexing column](../assets/images/03-bin_data-add_indexing.png)
 
@@ -329,18 +326,26 @@ In this case, the <u>first</u> value from the `ranges` column and the <u>first +
 
 ## **Usage variations**
 
-### *Create label-based data chunks*
+The applications provides the option `-i` to load the data from a single text file or multiple files with names starting with "chunk_" stored in the directory.
+
+### *E1: Load data from a single text file*
+
+This variant is dedicated to read raw data organized into columns and stored in a single file. The file can be very large (GBs of size). Such a large dataset usually can NOT be loaded in to the program all at once. Thus, by default the data is loaded in the bundles of rows and merged into the data chunks corresponding to unique categories. The label-based chunks are further sliced and aggregated due to selected analysis schema. Each data chunk can be also saved into the separate CSV file in the CHUNKS directory. Thanks to that, in the next repetition of the analysis, label-based data can be loaded directly without re-segregating the rows. With big data, this speeds things up a lot. You can also use such data chunks to parallel your analysis.
 
 
-Download example input.txt <a id="raw-url" href="https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/input.txt">Download ⤵</a>
+**Input**
 
-*File Preview*
+The input can be a text file with any number of data columns of any type (strings or numerical).
+
+*File Preview below* - Download full example input.txt <a id="raw-url" href="https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/input.txt">Download ⤵</a>
 
 ```
-label_1     982     0    0    0    0    0    1    0    0
-label_1     983     0    0    0    0    0    1    0    0
-label_1     984     0    0    0    0    0    1    0    0
-label_1     985     0    0    0    0    0    1    0    0
+      0	1	2	3	4	5	6	7	8	9
+---------------------------------------------------------
+label_1	982	0	0	0	0	0	1	0	0
+label_1	983	0	0	0	0	0	1	0	0
+label_1	984	0	0	0	0	0	1	0	0
+label_1	985	0	0	0	0	0	1	0	0
 ...
 label_10	2263	0	0	0	0	0	1	0	0
 label_10	2264	0	0	0	0	0	1	0	0
@@ -349,50 +354,125 @@ label_10	2265	0	0	0	0	0	1	0	0
 
 **App usage**
 
-```
-python3 bin_data.py -i input.txt -r '' -l 0
-```
-
-
-### *Create data chunks of N rows*
+* To feed the application with the data from a single file, use option `-i` followed by the `path/file_name` of your input.
+* You need to select a column used to split data into the categories based on the set of unique values (labels). The `label-col` can be text or numerical.<br> *In this example we will use the first column with text-like labels to create data chunks. In Python numbering starts from <b>0</b>, so the <u>index of the first column is 0</u>. Index of the selected `label-col` is feed to the algorithm with the option `-l`.*
+* You also need to select a column used to cut data into slices. The `ranges-col` requires to be numerical, because the range of values in the slice will be reported in the output. If none column is relevant for that purpose, you can use the approach proposed in the [Contents of range column vs. type of slicing]() section to add a column with generic indexing.<br> *In this example we will use the second column (Python index: 1) with integers to derive reference value ranges of slices.*
+* The defaults of the other options will be used, so label-based data chunks will be cut for slices  of 100-rows in length (options: `-t 'step' -n 100`) and data will be aggregated by calculating mean value (option: `-c 'ave'`).
 
 ```
-python3 bin_data.py -i input.txt -r '' -l '' -n 100 -t 'step'
+python3 bin_data.py -i input.txt -l 0 -r 1      # -t 'step' -n 100 -c 'ave'
 ```
 
-### *Create N equal data chunks*
+**RESULTS**
+
+The default outputs, when using `file` as an input, are:
+* `CHUNKS` directory with the label-based data chunks
+* `label_in_chunks.txt`, a file with the statistics from creation of data chunks
+* `output_data.csv`, a CSV file with the data aggregated over slices for all label-based data chunks
+
+![Outputs](../assets/images/03-bin_data-ex2_outputs.png)
+
+*The figure shows: Left panel - the file structure of the working directory with the analysis outputs, Right panel: the preview of the output file with data aggregated by averaging the data slices.*
+
+Each row in the output corresponds to a slice composed of 100 rows. There is a 100 rows in the file, because the input file consisted of a 1000 rows per label, for 10 labels.<br> *[1000x10 = 10000 input rows / 100 rows in a slice = 100 slices]*
+
+### *E2: Load data from all files in a directory*
+
+This variant **facilitates the repetitive analysis**, because reading the organized data chunks is much faster and more efficient than parsing the raw file from the scratch. This is especially relevant for big data. So, the assumption behind this setting is that you parse your raw file with the app only once, and by default the label-based chunks are saved into the CHUNKS directory. Next time you will provide the path to the CHUNKS folder instead of the raw input.
+Note, you can also provide as an input a custom directory with a set files that meets the requirements:
+* filenames start with "chunk_"
+* files are provided in comma-separated CSV format
+
+**Input**
+
+Typically the directory type of input will be `-i CHUNKS`, as a default output of parsing raw input file. However, you can provide path to any custom directory of CSV files.
+
+*Directory Preview below* - Download full example of CHUNKS directory <a id="raw-url" href="https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/input.txt">Download ⤵</a>
+
+![Data chunks](../assets/images/03-bin_data-ex1_chunks.png)
+
+**App usage**
+
+* To feed the application with the data from a directory, use option `-i` followed by the `path/dir_name` of your input directory.
+* The settings of `labels-col` and `ranges-col` are the same as in the previous example, so we are using labels from the column of index 0 (`-l 0`) and value ranges from the column of index 1 (`-r 1`).
+* This time label-based data chunks will be cut for 100 slices of X-rows in length (options: `-t 'bin' -n 100`).
 
 ```
-python3 bin_data.py -i input.txt -r '' -l '' -n 10 -t 'bin'
+python3 bin_data.py -i CHUNKS/ -l 0 -r 1 -t 'bin' -n 100
 ```
 
-### *Input file vs. Input directory*
+**Results**
+
+The default output, when using `dir` as an input, is:
+* `output_data.csv`, a CSV file with the data aggregated over slices for all label-based data chunks
+
+![Outputs](../assets/images/03-bin_data-ex3_outputs.png)
+
+*The figure shows: Left panel - the file structure of the working directory with the analysis outputs, Right panel: the preview of the output file with data aggregated by averaging the data slices.*
+
+Each row in the output corresponds to one of a 100 slices, every of X=100 rows. There were 10 input files (for unique labels) consisted of a 1000 rows per label.<br> *[10x1000 = 10000 input rows / 100 slices = 100 rows in a slice]*
+
+### *E3: Aggregate data over every N rows*
+
+This example is basically the same as example E1 and uses the same input file. However, this time we will focus on slicing procedure instead of the type of input. Using the `-t 'step'` option you can request to aggregate data over the slices cut by every N rows.
+
+**Input**
+
+Download full example input.txt <a id="raw-url" href="https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/input.txt">Download ⤵</a>
+
+**App usage**
+
+* In this case, we will slice the label-based data chunks by every 100 rows, which can be requested by using `-t 'step' -n 100` options.
+* By default, as in example E1, the values in a slice are aggregated by calculating the mean of each numerical column. Alternatively, we can request a summing over the slice using the `-c 'sum'` option. In this variant, the returned output for each slice is a row containing a sum of values for every numerical column.
+* The input is provided using the `-i` option followed by the filename, `input.txt`. As previously, we are using labels from the column of index 0 (`-l 0`) and value ranges from the column of index 1 (`-r 1`)
 
 ```
-python3 bin_data.py -i hybrid.depth -l 0 -r 1 -t 'step' -n 1000 -s True -v 1
+python3 bin_data.py -i input.txt -l 0 -r 1 -t 'step' -n 100 -c 'sum'
 ```
 
+**Results**
+
+
+
+### *E4: Aggregate data over each of N slices*
+
+This example shows another variant of slicing procedure. Using the `-t 'bin'` option you can request to aggregate data exactly over N slices. The algorithm will automatically calculate the number of rows needed to split data into the number of requested slices.
+
+**Input**
+
+Download full example input.txt <a id="raw-url" href="https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/input.txt">Download ⤵</a>
+
+**App usage**
+
+* In this case, we will slice the label-based data chunks into 100 slices, which can be requested by using `-t 'bin' -n 100` options.
+* We will request a summing over the slice using the `-c 'sum'` option. In this variant, the returned output for each slice is a row containing a sum of values for every numerical column.
+* The input is provided using the `-i` option followed by the filename, `input.txt`. As previously, we are using labels from the column of index 0 (`-l 0`) and value ranges from the column of index 1 (`-r 1`).
+
 ```
-python3 bin_data.py -i CHUNKS/ -l 0 -r 1 -t 'value' -n 0.15 -s 'false' -v 0
+python3 bin_data.py -i input.txt -l 0 -r 1 -t 'bin' -n 100
 ```
 
-### *Aggregate data over every N rows*
-
-```
-python3 bin_data.py -i input.txt -l 0 -r 1 -t 'step' -n 100 -s True -v 1
-```
-
-### *Aggregate data over each of N slices*
-
-```
-python3 bin_data.py -i input.txt -l 0 -r 1 -t 'bin' -n 10 -s True -v 1
-```
+**Results**
 
 ### *Aggregate data over value increment*
 
+The example shows the third variant of slicing procedure. Using the `-t 'value'` option you can request to aggregate data exactly over value increment of selected feature with numerical representation. In this case, the `-n` option does NOT correspond to the number or size of requested slices but it is a constant increment of a value in `ranges-col`. Slices are composed of variable number of rows depending on values falling into the incremented range. The algorithm will automatically calculate the number of slices and the number of rows in a given slice.
+
+**Input**
+
+Download full example input.txt <a id="raw-url" href="https://raw.githubusercontent.com/ISUgenomics/data_wrangling/master/bin_data/input.txt">Download ⤵</a>
+
+**App usage**
+
+* In this case, we will slice the label-based data chunks into 100 slices, which can be requested by using `-t 'value' -n 100` options.
+* We will request a summing over the slice using the `-c 'sum'` option. In this variant, the returned output for each slice is a row containing a sum of values for every numerical column.
+* The input is provided using the `-i` option followed by the filename, `input.txt`. As previously, we are using labels from the column of index 0 (`-l 0`) and value ranges from the column of index 1 (`-r 1`)
+
 ```
-python3 bin_data.py -i input.txt -l 0 -r 1 -t 'value' -n 0.1 -d 3 -s True -v 1
+python3 bin_data.py -i input.txt -l 0 -r 1 -t 'value' -n 100
 ```
+
+**Results**
 
 
 <!--
