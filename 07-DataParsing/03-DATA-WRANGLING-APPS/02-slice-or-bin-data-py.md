@@ -302,7 +302,7 @@ After data aggregation over <u>each slice</u>, the numerical values from the `ra
 
 **Interpretation of ranges column [R]**
 
-* The input is grouped into the data chunks corresponding to unique categories/labels [<b>L</b>, <i>left panel</i>], here marked in <span style="background-color:#ffffb2">yellow</span>, <span style="background-color:#b2ffb2">green</span>, and <span style="background-color:#b2ffff">blue</span>. Each chunk is further split into slices based on user-selected slicing <code>type</code> and <code>range</code>. The figure shows sample slices of the <span style="background-color:#b2ffb2">green chunk</span>.
+* The input is grouped into the data chunks corresponding to unique categories/labels [<b>L</b>, <i>left panel</i>], here marked in <span style="background-color:#ffffb2">yellow</span>, <span style="background-color:#b2ffb2">green</span>, and <span style="background-color:#b2ffff">blue</span>. Each chunk is further split into slices based on user-selected slicing <code>type</code> and <code>range</code>. The figure shows sample slices of the <span style="background-color:#b2ffb2">green data chunk</span>.
 * For each slice, the data from all numerical columns [<b>numDATA</b>, <i>left panel</i>] is aggregated to a single value per column and represents <code>sum</code> or <code>mean</code>. These values correspond to <b>STATS</b> columns on the right panel.
 * The first and the last value in the ranges column [<b>R</b>, <i>left panel</i>] for each slice creates a tuple saved in the ranges column [<b>R'</b>, <i>right panel</i>] of the aggregated data row in the output.
 
@@ -334,7 +334,7 @@ In this case, the <u>first</u> value from the `ranges` column and the <u>first +
 
 ## **Usage variations**
 
-The application provides the option `-i` to load the **data from a single text file** or **multiple files** with names starting with "chunk_" **stored in the directory**. It is required to select `labels-col` and `ranges-col` from among columns in the inputs. The `labels-col` is used to split data into label-based chunks. If you want to process only a few labels, use `-ll 'label_X,label_Y,label_Z'` to define a list of kept labels. The `ranges-col` is defines value ranges for the slicing of data chunks.
+The application provides the option `-i` to load the **data from a single text file** or **multiple files** with names starting with "chunk_" **stored in the directory**. It is required to select `labels-col` and `ranges-col` from among columns in the inputs. The `labels-col` is used to split data into label-based chunks. If you want to process only a few labels, use `-ll` to define a list of kept labels `'label_X,label_Y,label_Z'`. The `ranges-col` defines value ranges for the slicing of data chunks.
 
 <span style="color: #ff3870;font-weight: 500;">
 Before exploring examples, please copy the source code and inputs to your computing machine.
@@ -348,13 +348,13 @@ git clone https://github.com/ISUgenomics/data_wrangling.git
 
 **B.** or download the data_wrangling/<a href="https://github.com/ISUgenomics/data_wrangling/bin_data" target="_blank">bin_data </a> folder:
 
-*download from the command line*
+* *download from the command line*
 
 ```
 svn export https://github.com/ISUgenomics/data_wrangling/trunk/bin_data
 ```
 
-*download zipped folder*
+* *download zipped folder*
 <a href="https://downgit.github.io/#/home?url=https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data" target="_blank"><input type="button" value="Download .zip ⤵" style="background-color: #e7e7e7; color: black;" /></a>
 
 <div style="background: #cff4fc; padding: 15px;">
@@ -380,23 +380,23 @@ The input can be a text file with any number of data columns and of any type (st
 
 
 ```
-      0	1	2	3	4	5	6	7	8	9
+0	1	2	3	4	5	6	7	8	9
 ---------------------------------------------------------
 label_1	982	0	0	0	0	0	1	0	0
 label_1	983	0	0	0	0	0	1	0	0
 label_1	984	0	0	0	0	0	1	0	0
 label_1	985	0	0	0	0	0	1	0	0
 ...
-label_10	2263	0	0	0	0	0	1	0	0
-label_10	2264	0	0	0	0	0	1	0	0
-label_10	2265	0	0	0	0	0	1	0	0
+label_10	2263	0	0	0	0	0	1	0
+label_10	2264	0	0	0	0	0	1	0
+label_10	2265	0	0	0	0	0	1	0
 ```
 
 **App usage**
 
 * To feed the application with the data from a single file, use option `-i` followed by the `path/file_name` of your input.
 * You need to select a column used to split data into the categories based on the set of unique values (labels). The `label-col` can be text or numerical.<br> *In this example we will use the first column with text-like labels to create data chunks. Index of the selected `label-col` is feed to the algorithm with the option `-l`.*
-* You also need to select a column used to cut data into slices. The `ranges-col` requires to be numerical, because the range of values in the slice will be reported in the output. If none column is relevant for that purpose, you can use the approach proposed in the [Contents of range column vs. slicing type]() section to add a column with generic indexing.<br> *In this example we will use the second column (Python index: 1) with integers to derive reference value ranges of slices.*
+* You also need to select a column used to cut data into slices. The `ranges-col` requires to be numerical, because the range of values in the slice will be reported in the output. If none column is relevant for that purpose, you can use the approach proposed in the [File Content](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#file-content)/[Ranges Column](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#-ranges-column)/<b>[Add Indexing](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#-add-indexing)</b> section to add a column with generic indexing.<br> *In this example we will use the second column (Python index: 1) with integers to derive reference value ranges of slices.*
 * For the remaining options, the default values will be used. Thus, label-based data chunks split for slices of 100-rows in length (options: `-t 'step' -n 100`) and data is aggregated by calculating mean value (option: `-c 'ave'`).
 
 ```
@@ -452,7 +452,7 @@ Typically the directory type of input will be `-i CHUNKS` as the default output 
 **App usage**
 
 * To feed the application with the data from a directory, use the option `-i` followed by the `path/dir_name` of your input directory.
-* The settings of `labels-col` and `ranges-col` are the same as in the previous example. So, we are using labels from the column of index 0 (`-l 0`), and value ranges from the column of index 1 (`-r 1`).
+* The settings of `labels-col` and `ranges-col` are the same as in the [previous example](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#e1-load-data-from-a-single-text-file). So, we are using labels from the column of index 0 (`-l 0`), and value ranges from the column of index 1 (`-r 1`).
 * This time label-based data chunks split for 100 slices of X-rows in length (options: `-t 'bin' -n 100`).
 
 ```
@@ -498,8 +498,8 @@ label_3,5381,1,0,2,0,1,1,0,0
 **App usage**
 
 * In this case, we will slice the label-based data chunks by every 100 rows, which can be requested using `-t 'step' -n 100` options.
-* By default of example E1, the values in a slice aggregate by calculating the mean of each numerical column. Alternatively, we can request a summing over the slice using the `-c 'sum'` option. In this variant, the returned output for each data slice is a row containing a sum of values for every numerical column.
-* The input is provided using the `-i` option followed by the `file_name` or `dir_name`, here we use a `CHUNKS` directory. As previously, we are using labels from the column of index 0 (`-l 0`), and value ranges from the column of index 1 (`-r 1`)
+* By default of [example E1](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#e1-load-data-from-a-single-text-file), the values in a slice aggregate by calculating the mean of each numerical column. Alternatively, we can request a summing over the slice using the `-c 'sum'` option. In this variant, the returned output for each data slice is a row containing a sum of values for every numerical column.
+* The input is provided using the `-i` option followed by the `file_name` or `dir_name`, here we use a `CHUNKS` directory. As previously, we are using labels from the column of index 0 (`-l 0`), and value ranges from the column of index 1 (`-r 1`).
 
 ```
 python3 bin_data.py -i ./CHUNKS -l 0 -r 1 -t 'step' -n 100 -c 'sum' -o 'output_data-step_sum'
@@ -654,7 +654,7 @@ python3 bin_data.py -i input.txt -l 0 -r 1 -t 'value' -n 100 -c 'ave' -d 3 -o 'o
 **Results**
 
 The default outputs include:
-* `output_data.csv`, a CSV file with the data aggregated over slices for all label-based data chunks
+* `output_data-value_ave.csv`, a CSV file with the data aggregated over slices for all label-based data chunks
 
 ![Outputs](../assets/images/03-bin_data-ex6_outputs.png)
 
