@@ -103,7 +103,7 @@ required arguments:
 optional arguments:
 ```
   -ll llist,  --label-list llist        # [path] or [comma-separated list] provide custom list of labels to be processed
-  -hd header, --header header           # [list]            provide custom ordered list of columns names (header)
+  -hd header, --header header           # [list]            provide custom, ordered, comma-separated list of columns names (header)
   -ch chunks, --chunk-size chunks       # [int]             provide custom size of chunks (number of rows loaded at once)
   -s save,    --chunk-save save         # {true,false}      saves data into chunked files
   -c calc,    --calc-stats calc         # {ave,sum}         select resizing operation: ave (mean) or sum
@@ -115,8 +115,8 @@ optional arguments:
 
 *defaults for optional arguments:*
 ```
--ll None                # means: all labels will be processed
--hd None                # means: assigning 'label' for labels-col, 'position' for ranges-col, and 'val-X' for remaining columns, where X is an increasing int number
+-ll ''                  # means: all labels will be processed
+-hd ''                  # means: assigning 'label' for labels-col, 'position' for ranges-col, and 'val-X' for remaining columns, where X is an increasing int number
 -ch 0                   # means: optimizing number of loaded input rows for 250MB memory usage
 -s 'true'               # means: data chunked by unique labels will be saved in CSV format into the CHUNKS/ directory; disabled when input is a directory
 -c 'ave'                # means: average of each numerical column in the slice will be returned
