@@ -40,9 +40,9 @@ Installing any software on Windows usually involves some common steps:
 Atom is a text editor with `git` version control integrated in it and is compatible with <a href="https://bioinformaticsworkbook.org/Appendix/Markdown.html#gsc.tab=0" target="_blank">Markdown</a> syntax. It makes working with Git and GitHub more efficient.
 
 <a href="https://atom.io/" target="_blank">Download</a> and install Atom following general guide to installation, and then install packages to improve function. To install packages on Atom, use the package manager in settings (File -> Settings -> Install).
-![Settings](Assets/01Atom.png)
+![Settings](assets/windows/01Atom.png)
 There are many options in settings, for installing new packages click on install option:
-![Install Packages](Assets/02Atom.png)
+![Install Packages](assets/windows/02Atom.png)
 
 Recommended packages:
 - markdown-folding
@@ -71,23 +71,23 @@ Request for package information failed: Application error
 <a href="https://git-scm.com/download/win" target="_blank">Install Git</a>
 
 - Click on the right version to download setup file, I selected 64-bit Git for Windows Setup
-![setup](Assets/01Git.png)
+![setup](assets/windows/01Git.png)
 - Open downloaded file and install Git (with default options)
 - To set up a GitHub account check the <a href="https://bioinformaticsworkbook.org/Appendix/github/introgithub.html#gsc.tab=0" target="_blank">GitHub tutorial</a>
 
 ## Linux on Windows
 Windows Subsystem for Linux (WSL) is a compatibility layer for running Linux binary executables natively on Windows.
 Run either PowerShell or Command Prompt as an administrator. For example, you can find Command Prompt from the start menu and click on Run as an administrator.
-![cmd](Assets/WSL-cmd-from-start-menu.png) \
+![cmd](assets/windows/WSL-cmd-from-start-menu.png) \
 or search it from the search box on lower left corner of screen on windows. The options also appear on right (without right click) if you use the search box. \
-![startmenu](Assets/WSL-Search-cmd.png) \
+![startmenu](assets/windows/WSL-Search-cmd.png) \
 Type the following command and press enter to install WSL.
 
 ```
 wsl --install
 ```
 
-![installwsl](Assets/WSL-install.png) \
+![installwsl](assets/windows/WSL-install.png) \
 Restart your computer to finish installation. This will install Ubuntu distribution by default but can be changed. It is possible to run multiple Linux distributions with WSL. For setting up the Linux system and more options, check Microsoft documentation <a href="https://docs.microsoft.com/en-us/windows/wsl/install" target="_blank">here</a>.
 
 # Programming Languages and IDE
@@ -116,10 +116,10 @@ Use RStudio and plot to test if R is working. Open RStudio, type following comma
 plot(1:50)
 ```
 
-![plot](Assets/01RStudio.png)
+![plot](assets/windows/01RStudio.png)
 
 On the right side, you should see a scatter plot like this: \
-![plot](Assets/02RStudio.png)
+![plot](assets/windows/02RStudio.png)
 
 
 ## Java
