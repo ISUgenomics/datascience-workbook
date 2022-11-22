@@ -10,11 +10,9 @@ header:
 
 {% include toc %}
 
-# Installations on Windows
-# Introduction
 This is a guide for setup of a windows machine for bioinformatics data analysis. I list here some important tools useful for most bioinformatics analyses and the process to install them. Check out the <a href="https://bioinformaticsworkbook.org/projectManagement/Intro_projectManagement#gsc.tab=0" target="_blank">Project Management</a> guide before you start a new project.
 
-## General guide to software installation
+### General guide to software installation
 Installing any software on Windows usually involves some common steps:
 - Download the installation file(s)
 - Open the downloaded setup file (usually an .exe file). The file will be located in downloads folder by default
@@ -25,24 +23,28 @@ Installing any software on Windows usually involves some common steps:
 <details>
 <summary>Reset an old laptop</summary>
 
-- Get password from previous account holder to login
-- Reset Windows
-  - Go to settings
-  - search: reset this PC
-  - Click 'Get started' or 'Reset' under 'Reset this PC'  
-  - You can choose to keep the files or delete all data
-- Log in with new account
-- Download a better internet browser
+* Get password from previous account holder to login
+* Reset Windows
+  * Go to settings
+  * search: reset this PC
+  * Click 'Get started' or 'Reset' under 'Reset this PC'  
+  * You can choose to keep the files or delete all data
+* Log in with new account
+* Download a better internet browser
 </details>
+<br>
 
 # Developer tools
 ## Atom editor
 Atom is a text editor with `git` version control integrated in it and is compatible with <a href="https://bioinformaticsworkbook.org/Appendix/Markdown.html#gsc.tab=0" target="_blank">Markdown</a> syntax. It makes working with Git and GitHub more efficient.
 
-<a href="https://atom.io/" target="_blank">Download</a> and install Atom following general guide to installation, and then install packages to improve function. To install packages on Atom, use the package manager in settings (File -> Settings -> Install).
-![Settings](assets/windows/01Atom.png)
-There are many options in settings, for installing new packages click on install option:
-![Install Packages](assets/windows/02Atom.png)
+<a href="https://atom.io/" target="_blank">Download</a> and install Atom following general guide to installation, and then install packages to improve function. To install packages on Atom, use the package manager in settings (File -> Settings -> Install). <br>
+
+![Settings](assets/windows/01Atom.png) <br>
+
+There are many options in settings, for installing new packages click on install option: <br>
+
+![Install Packages](assets/windows/02Atom.png) <br>
 
 Recommended packages:
 - markdown-folding
@@ -70,36 +72,45 @@ Request for package information failed: Application error
 
 <a href="https://git-scm.com/download/win" target="_blank">Install Git</a>
 
-- Click on the right version to download setup file, I selected 64-bit Git for Windows Setup
-![setup](assets/windows/01Git.png)
+- Click on the right version to download setup file, I selected 64-bit Git for Windows Setup <br>
+
+![setup](assets/windows/01Git.png) <br>
+<br>
 - Open downloaded file and install Git (with default options)
 - To set up a GitHub account check the <a href="https://bioinformaticsworkbook.org/Appendix/github/introgithub.html#gsc.tab=0" target="_blank">GitHub tutorial</a>
 
 ## Linux on Windows
 Windows Subsystem for Linux (WSL) is a compatibility layer for running Linux binary executables natively on Windows.
-Run either PowerShell or Command Prompt as an administrator. For example, you can find Command Prompt from the start menu and click on Run as an administrator.
-![cmd](assets/windows/WSL-cmd-from-start-menu.png) \
-or search it from the search box on lower left corner of screen on windows. The options also appear on right (without right click) if you use the search box. \
-![startmenu](assets/windows/WSL-Search-cmd.png) \
-Type the following command and press enter to install WSL.
+Run either PowerShell or Command Prompt as an administrator. For example, you can find Command Prompt from the start menu and click on Run as an administrator. <br>
+
+![cmd](assets/windows/WSL-cmd-from-start-menu.png) <br>
+<br>
+or search it from the search box on lower left corner of screen on windows. The options also appear on right (without right click) if you use the search box. <br>
+
+![startmenu](assets/windows/WSL-Search-cmd.png) <br>
+<br>
+Type the following command and press enter to install WSL:
 
 ```
 wsl --install
 ```
 
-![installwsl](assets/windows/WSL-install.png) \
+![installwsl](assets/windows/WSL-install.png) <br>
+<br>
 Restart your computer to finish installation. This will install Ubuntu distribution by default but can be changed. It is possible to run multiple Linux distributions with WSL. For setting up the Linux system and more options, check Microsoft documentation <a href="https://docs.microsoft.com/en-us/windows/wsl/install" target="_blank">here</a>.
+<br>
+<br>
 
 # Programming Languages and IDE
 
-### IDE
-An Integrated Development Environment (IDE) is a program developed for coding/programming with your language of choice. There are several good IDE options available:
+## IDE
+An Integrated Development Environment (IDE) is a program developed for coding/programming with your language of choice. There are several good IDE options available: <br>
 - <a href="https://www.spyder-ide.org/" target="_blank">Spyder</a> is used for scientific programming in python. It is a user friendly IDE.
 - RStudio is an IDE for programming in R. There are two options for using RStudio; <a href="https://www.rstudio.com/products/rstudio/#rstudio-server" target="_blank">RStudio Server</a> is online version and <a href="https://www.rstudio.com/products/rstudio/download/#download" target="_blank">RStudio Desktop</a> is a desktop application run locally.
 - <a href="https://jupyter.org/" target="_blank">Jupyter</a> supports multiple programming languages. Check out the <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-jupyter-basics" target="_blank">Jupyter tutorial</a> for more details.
 
 ## Python
-Python is a high-level, general-purpose programming language. It is one of the best languages to learn for a beginner in coding.
+Python is a high-level, general-purpose programming language. It is one of the best languages to learn for a beginner in coding. <br>
 
 - <a href="https://www.python.org/downloads/windows/" target="_blank">Install Python</a> locally
 - Follow general guidelines for installation
@@ -115,10 +126,12 @@ Use RStudio and plot to test if R is working. Open RStudio, type following comma
 ```
 plot(1:50)
 ```
+<br>
 
-![plot](assets/windows/01RStudio.png)
+![plot](assets/windows/01RStudio.png) <br>
 
-On the right side, you should see a scatter plot like this: \
+On the right side, you should see a scatter plot like this: <br>
+
 ![plot](assets/windows/02RStudio.png)
 
 
