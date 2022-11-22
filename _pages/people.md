@@ -44,3 +44,8 @@ Kerrie is an ARS SCINet postdoc in the research group of Dr. Deb Peters in Las C
 ### Rowan Gaffney
 ![Rowan](../assets/images/people/RowanGaffney.jpg){: .align-left-profile }
 Rowan is a physical scientist in the Rangeland Resource & Systems Research Unit in Fort Collins, CO. He specializes in analyzing large, multidimensional geospatial data using a variety of approaches from machine learning to numerical analysis. <br /> <br />
+
+### Sharu Paul
+
+![Sharu](../assets/images/people/Sharu.png){: .align-left}
+Sharu is a Visiting Scientist at the Genome Informatics Facility at Iowa State University. His background is in Biotechnology with a Ph.D. in Genetics and Genomics. He is using a diverse array of bioinformatic analyses to solve big data problems and contribute to developing workshops and tutorials for USDA scientists.
