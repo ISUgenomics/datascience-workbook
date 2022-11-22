@@ -15,16 +15,21 @@ header:
 ![Andrew](../assets/images/people/Andrew.png){: .align-left}
 Andrew manages the Genome Informatics Facility at Iowa State University. His academic background is in biochemistry with a Ph.D. in Biophysics/NMR Spectroscopy. He is an interdisciplinary scientist working at the interface of Genetics and Bioinformatics, translating Big Data into informative data for interesting biological questions. He is passionate about evolution and the science behind the genome.
 
+### Aleksandra Badaczewska
+
+![Alex](../assets/images/people/Alex.png){: .align-left}
+Alex is a Research Scientist IV at the Genome Informatics Facility at Iowa State University. Her academic background is in Chemistry and Biotechnology, with a Ph.D. in Computational Biology and broad experience in programming and designing web applications. She develops a comprehensive collection of highly customizable visualization solutions for Bioinformatics and supports software optimization for the USDA Geospatial analyses.
+<br>
+
 ### Siva Chudalayandi
 
 ![Siva](../assets/images/people/Siva.jpg){: .align-left}
 I am a Ph.D. in Molecular Biology and Biotechnology with broad expertise is in the field of Genetics and Computational Biology. As an Associate Scientist at the Genome Informatics Facility, I work as a bioinformatics liaison for the USDA community, contribute to tutorials & workshops, and manage online discussions. I also collaborate with researchers in my capacity as computational biologist to perform data-driven discovery.
 
-### Aleksandra Badaczewska
+### Sharu Paul
 
-![Alex](../assets/images/people/Alex.png){: .align-left}
-Alex is a Research Scientist IV at the Genome Informatics Facility at Iowa State University. Her academic background is in Chemistry and Biotechnology, with a Ph.D. in Computational Biology and broad experience in programming and designing web applications. She develops a comprehensive collection of highly customizable visualization solutions for Bioinformatics and supports software optimization for the USDA Geospatial analyses.
-<br><br>
+![Sharu](../assets/images/people/Sharu.jpg){: .align-left}
+Sharu is a Visiting Scientist at the Genome Informatics Facility at Iowa State University. His background is in Biotechnology with a Ph.D. in Genetics and Genomics. He is using a diverse array of bioinformatic analyses to solve big data problems and contribute to developing workshops and tutorials for USDA scientists.
 
 ### Jennifer Chang
 
@@ -44,8 +49,3 @@ Kerrie is an ARS SCINet postdoc in the research group of Dr. Deb Peters in Las C
 ### Rowan Gaffney
 ![Rowan](../assets/images/people/RowanGaffney.jpg){: .align-left-profile }
 Rowan is a physical scientist in the Rangeland Resource & Systems Research Unit in Fort Collins, CO. He specializes in analyzing large, multidimensional geospatial data using a variety of approaches from machine learning to numerical analysis. <br /> <br />
-
-### Sharu Paul
-
-![Sharu](../assets/images/people/Sharu.png){: .align-left}
-Sharu is a Visiting Scientist at the Genome Informatics Facility at Iowa State University. His background is in Biotechnology with a Ph.D. in Genetics and Genomics. He is using a diverse array of bioinformatic analyses to solve big data problems and contribute to developing workshops and tutorials for USDA scientists.
