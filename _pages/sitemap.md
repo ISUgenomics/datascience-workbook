@@ -169,6 +169,7 @@ header:
     * <a href="08-DataVisualization/02-GRAPHS/03-R/02-setting-up-rstudio" style="color: #3f5a8a;">Setting Up an RStudio Environment</a>
     * <a href="08-DataVisualization/02-GRAPHS/03-R/03-rstudio-tutorial-box-plot" style="color: #3f5a8a;">Tutorial: Creating Boxplots in R</a>
     * <a href="08-DataVisualization/02-GRAPHS/03-R/04-rstudio-tutorial-heatmap-plot" style="color: #3f5a8a;">Tutorial: Creating Heatmaps in R</a>
+    * <a href="08-DataVisualization/02-GRAPHS/03-R/05-rstudio-tutorial-ComplexHeatmap" style="color: #3f5a8a;">Tutorial: Creating Heatmaps in R using ComplexHeatmap</a>
 <br><br>
 
 # <a href="09-ProjectManagement/00-ProjectManagement-LandingPage" style="color: #8997c1;">09. Project Management</a>
