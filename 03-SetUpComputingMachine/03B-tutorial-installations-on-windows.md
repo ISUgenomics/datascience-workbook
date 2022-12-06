@@ -21,7 +21,7 @@ Installing any software on Windows usually involves some common steps:
 
 `Tip:` Just google *'[software name] for windows'* to find installation files. Works for most programs.
 <details>
-<summary>Reset an old laptop</summary>
+<summary>Reset an old laptop</summary> <br>
 
 * Get password from previous account holder to login
 * Reset Windows
@@ -102,6 +102,8 @@ Restart your computer to finish installation. This will install Ubuntu distribut
 <br>
 
 # Programming Languages and IDE
+If you are not familiar with command line, the best way to install and manage IDEs and programming languages like Python and R is through Anaconda Navigator. First, install Anaconda using <a href="https://docs.anaconda.com/anaconda/install/windows/" target="_blank">this link</a>. It will install Anaconda and Anaconda Navigator on your computer. You can now install and then use different IDEs through Anaconda Navigator (search anaconda navigator from search bar). <br>
+Alternatively, see following sections to download IDEs and programming languages independently (although not recommended if you don't know how to set path variables). <br>
 
 ## IDE
 An Integrated Development Environment (IDE) is a program developed for coding/programming with your language of choice. There are several good IDE options available: <br>
