@@ -35,7 +35,7 @@ Nowadays, data visualization is much more than just listing numbers in a table. 
   * <a href="02-GRAPHS/03-R/02-setting-up-rstudio" style="color: #3f5a8a;">Setting Up an RStudio Environment</a>
   * <a href="02-GRAPHS/03-R/03-rstudio-tutorial-box-plot" style="color: #3f5a8a;">Tutorial: Creating Boxplots in R</a>
   * <a href="02-GRAPHS/03-R/04-rstudio-tutorial-heatmap-plot" style="color: #3f5a8a;">Tutorial: Creating Heatmaps in R</a>
-
+  * <a href="02-GRAPHS/03-R/05-rstudio-tutorial-ComplexHeatmap" style="color: #3f5a8a;">Tutorial: Creating Heatmaps in R  using ComplexHeatmap</a>
 
 ---
 

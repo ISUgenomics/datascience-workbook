@@ -174,7 +174,7 @@ above.
 
 ___
 # Further Reading
-* [SECTION 9. Project Management](../../../09-ProjectManagement/00-ProjectManagement-LandingPage)
+* [Creating Heatmaps in R using ComplexHeatmap](05-rstudio-tutorial-ComplexHeatmap)
 
 
 ___
