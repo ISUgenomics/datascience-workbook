@@ -8,7 +8,7 @@ header:
   overlay_image: /04-DevelopmentEnvironment/assets/images/04_development_envir_banner.png
 ---
 
-In Data Science, everyone more-or-less is a developer. Whether you write simple scripts in Bash, submit jobs to a queuing system on an HPC infrastructure, or develop advanced software and web applications in any programming language, an integrated development environment (IDE) makes your daily work easier. Among useful features, there are built-in browsing of the file system, autocomplete of syntax, a preview of available attributes, error detection, customized formatting, and even source code rendering (e.g., markdown or HTML). Even if you're only using open-source pipelines, it's worth familiarizing yourself with common editors such as Atom or Jupyter to get the most out of them.
+In Data Science, it is common for everyone to be a developer. Whether you write simple scripts in Bash, submit jobs to a queuing system on an HPC infrastructure, or develop advanced software and web applications in any programming language, using an integrated development environment (IDE) can make your daily work easier. Some useful features of IDEs include built-in file system browsing, autocomplete of syntax, preview of available attributes, error detection, customized formatting, and even source code rendering (e.g. markdown or HTML). Even if you're only using open-source pipelines, it is beneficial to familiarize yourself with common editors such as Atom or Jupyter to maximize their potential. Don't miss out on this opportunity to enhance your developer experience!
 
 
 

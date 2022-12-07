@@ -8,7 +8,7 @@ header:
   overlay_image: /01-IntroToDataScience/assets/images/01_data_science_banner.png
 ---
 
-Data Science is an approach shaped in response to digital information whose size and unstructured nature are far beyond the capabilities of conventional tools. It is not just about how to process or store Big Data but also how to improve knowledge retention. Data Science emerges as the fourth paradigm besides empirical, theoretical, and computational, where modern computing techniques (e.g., machine learning) lead to discovering the insights from data-driven analyses.
+Data Science is a field that has developed in response to the challenges posed by the vast amount and unstructured nature of digital information. It focuses not only on how to manage and store large datasets (**Big Data**), but also on how to extract meaningful insights from them (**Knowledge Retention**). Data Science is considered the fourth paradigm of scientific inquiry, alongside empirical, theoretical, and computational approaches, and relies heavily on advanced computing techniques such as machine learning to analyze and interpret data.
 
 
 ## <span style="color: #8997c1;">Table of contents</span>

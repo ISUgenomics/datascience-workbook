@@ -8,7 +8,7 @@ header:
   overlay_image: /02-IntroToCommandLine/assets/images/02_command_line_banner.png
 ---
 
-Command Line is a text interface for the computer's operating system that passes on-demand the predefined commands and triggers the execution of various processes. That gives the user powerful computing capabilities, great analytical flexibility, and significant time savings from automating tasks. In this section, you become familiar with a terminal, including command-line navigation in the file system, and learn vitally important commands for parsing text files.
+The command line is a powerful tool that allows users to quickly and efficiently execute tasks and processes on their computer's operating system. By providing a text-based interface, the command line allows users to input predefined commands and navigate the file system with ease. In this section, you will learn how to use the terminal and important commands for parsing text files, providing you with enhanced analytical flexibility and time savings through automation.
 
 
 ## <span style="color: #8997c1;">Table of contents</span>

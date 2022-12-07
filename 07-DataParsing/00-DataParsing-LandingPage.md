@@ -8,7 +8,7 @@ header:
   overlay_image: /07-DataParsing/assets/images/07_data_acquisition_banner.png
 ---
 
-Information is the foundation of the learning process. Data acquisition and wrangling are crucial parts of Data Science that lead to extracting knowledge from the information. With large, difficult to transfer data, remote access is the rule, almost exclusively via a command-line interface. Luckily for you, knowing a few tricks make it easy to access and visualize data in a friendly way on a remote machine. As you explore this section, you will also learn how to manage Excel spreadsheets and efficiently manipulate massive data with Python.
+The acquisition and management of data is a crucial aspect of Data Science. Through proper data wrangling, we can extract valuable knowledge from the vast amounts of information available. In many cases, access to large, difficult-to-transfer data is only possible through a remote command-line interface. However, with the right techniques and tools, it is possible to easily access and visualize this data in a user-friendly manner. In this section, we will cover how to handle Excel spreadsheets and efficiently manipulate massive data sets using Python. Overall, a solid understanding of information and data management is the foundation of the learning process.
 
 
 ## <span style="color: #8997c1;">Table of contents</span>

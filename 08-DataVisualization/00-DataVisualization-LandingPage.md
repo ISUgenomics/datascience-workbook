@@ -8,7 +8,7 @@ header:
   overlay_image: /08-DataVisualization/assets/images/08_data_visualization_banner.png
 ---
 
-Nowadays, data visualization is much more than just listing numbers in a table. Infographics and interactive charts perhaps best describe the need for the modern presentation of results. Such visualization is meant to make findings intuitively intelligible and easily understandable at a glance, even to the non-expert. At the same time, it should give the resources to interactively dig deeper into the details for those interested or those evaluating the merits. Let the science-based graphic design kick in the artist in you!
+Data visualization has evolved beyond simple tables of numbers. Infographics and interactive charts allow for a modern and effective presentation of results. These visualizations make findings easily understandable and intuitive, even for non-experts. They also provide the opportunity for further exploration and evaluation of the data. Unleash your inner artist with science-based graphic design!
 
 
 ## <span style="color: #8997c1;">Table of contents</span>

@@ -8,7 +8,7 @@ header:
   overlay_image: /06-IntroToHPC/assets/images/06_hpc_banner.png
 ---
 
-Although today's handy laptops perform many advanced and computationally intensive tasks, projects involving Big Data require significantly more resources. That need is satisfied by the HPC infrastructure, built from a network of computing clusters combined with immense memory. Access to these resources is remote, so job submission and data preview occurs through an interface on any local computing machine from any (allowed) geolocation. The HPC infrastructure is a shared community space, so you might want to familiarize yourself with the usage policy to avoid disrupting peer work.
+Today's laptops may be able to handle many advanced tasks, but projects involving Big Data require significantly more resources. This is where the High-Performance Computing infrastructure comes in. It is a network of powerful computing clusters with a massive amount of memory, designed specifically to handle these types of projects.  The HPC infrastructure can be accessed remotely from any allowed location, allowing users to submit jobs and preview data from their own local computing machines. As a shared community resource, it is important to familiarize yourself with the usage policy to avoid disrupting the work of others.
 
 
 ## <span style="color: #8997c1;">Table of contents</span>

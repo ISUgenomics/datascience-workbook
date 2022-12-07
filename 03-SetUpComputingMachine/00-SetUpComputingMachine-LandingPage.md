@@ -8,7 +8,7 @@ header:
   overlay_image: /03-SetUpComputingMachine/assets/images/03_computer_setup_banner.png
 ---
 
-A computer is an essential tool in modern digital reality. Using it, you can acquire, process, store, and visualize various types of information. It is worth knowing how to adapt its configuration to your research work. There is treasured software facilitating team communication, project management, presentation of results, and improving the developer experience. You won't be disappointed to learn about it!
+In today's digital world, a computer is a crucial tool for acquiring, processing, storing, and visualizing information. By learning how to customize its settings for your research work, you can unlock valuable software that improves team communication, project management, and presentation of results. Don't miss out on the chance to learn  these valuable skills!
 
 
 ## <span style="color: #8997c1;">Table of contents</span>
