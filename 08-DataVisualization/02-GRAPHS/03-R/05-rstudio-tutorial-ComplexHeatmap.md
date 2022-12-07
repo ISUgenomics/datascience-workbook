@@ -1,5 +1,5 @@
 ---
-title: "Creating Heatmaps in R"
+title: "Creating Complex Heatmaps in R"
 layout: single
 author: Sharu Paul
 author_profile: TRUE
@@ -54,12 +54,28 @@ is.numeric(mat)
 which should return TRUE
 ```
 
+For this tutorial, I will use a random matrix to use as an example. <br>
+
+```
+# Generate random matrix
+mat <- matrix(rnorm(50, 20), nrow=10)
+is.numeric(mat) # check if numeric
+mat[1:5,1:3] # view selected rows and columns
+# The output is shown below
+```
+
+![Matrix](assets/01random_matrix.png)
+<br>
+
 ## Generate simple heatmap
-This command generates a heatmap with default settings without additional commands: <br>
+The commands in R are case sensitive, so heatmap and Heatmap are commands from two different packages. This command generates a heatmap with default settings without additional commands: <br>
 
 ```
 Heatmap(mat)  # mat is the dataset name loaded earlier as matrix
 ```
+
+![Heatmap1](assets/02Heatmap_1.png)
+<br>
 
 ## Customize your heatmap
 There are countless ways to customize your heatmap with R. Here are a few of the ways to make a great heatmap. <br>
@@ -74,86 +90,98 @@ library(circlize)
 
 display.brewer.all(colorblindFriendly=TRUE)
 
-col_fun <- colorRamp2(c(0, 50, 100), brewer.pal(3, "Blues"))
+# col_fun <- colorRamp2(c(18, 20, 23), brewer.pal(3, "Blues"))
 # OR
-col_fun <- colorRamp2(c(0, 50, 100), c("#FFFFB2", "#f4a582", "#BD0026"))
+col_fun <- colorRamp2(c(18, 20, 23), c("#FFFFB2", "#f4a582", "#BD0026"))
 # The `colorRamp2` function is used for color interpolation. 
 
 Heatmap(mat, name = "mat", col = col_fun)
 ```
+
+![Heatmap2](assets/03Heatmap_col.png)
+<br>
 
 ### Draw heatmap with custom labels on legend
 
 ```
 Heatmap(mat,
         heatmap_legend_param = list(
-          title = "Legend title", at = c(1,2,3,4),
-          labels = c("label1", "label2", "3", "four")
+          title = "Legend title", at = c(18, 20, 23),
+          labels = c("label1", "2", "three")
         )
 )
-# Numbers in parameter at=c() appear on legend unless labels=c() is included
-
+# Numbers in parameter at=c() appear on legend unless labels=c() is included.
 ```
+
+![Heatmap3](assets/04Heat_lgd.png)
+<br>
 
 ### Customize legend
 You can specify title, annotation, and position of legend. <br>
 
 ```
-Legend_details <- list(title = "Legend title",
-                       at = c(-10,-5,0,5,10)
-                       )
+Legend_details <- list(title = "Map Legend",
+                       at = c(18, 20, 23)
+)
 map1 <- Heatmap(mat, heatmap_legend_param = Legend_details)
 draw(map1, heatmap_legend_side = "left")   # Can be “right”, “left”, “bottom”, “top”
 ```
+
+![Legend](assets/05Legend.png)
 
 ### Draw independent legend for more flexibility
 Note that this legend is independent of the plot, so you need to select the same colors carefully for representing the corresponding plot. <br>
 
 ```
-col_fun <- colorRamp2(c(-10, 0, 10), c("#d1e5f0", "#f4a582", "#d6604d")
-# create a variable to represent color, which can be used for both legend and heatmap to avoid selecting different colors for both
+col_fun <- colorRamp2(c(18, 20, 23), 
+                      c("#d1e5f0", "#f4a582", "#d6604d"))
+# create a function to represent color, which can be used for both legend and heatmap to avoid selecting different colors for both
 
-map2 <- Heatmap(mat, show_heatmap_legend = FALSE, col=col_fun)
-map2
+grid.newpage()
 lgd = Legend(col_fun = col_fun, title = "Legend title")
 lgd1 = draw(lgd, x= unit(0.9, "npc"), y=unit(0.2, "npc")) 
 ```
 
+![Legend1](assets/06Legend1.png)
+<br>
 The numbers 0.9 and 0.2 in the last line of code represent the position of legend on x and y axis of the entire plot and can be changed according to your need. This gives you more flexibility with the positioning of the legend. <br>
-
+<br>
 ### Add more annotations to the plot
 ComplexHeatmap package allows you to modify the plot in lots of ways. Here is an example of a complex heatmap with additional annotations.
 
 ```
-### Load dataset
-mat <- as.matrix(input_data)
-names <- as.data.frame(names)
+mat <- matrix(rnorm(50, 20), nrow=10)
+rownames(mat) = paste0("R", 1:10)
+labels <- data.frame(Rowlabels = c("These", "are", "given", "row", "labels", "These", "are", "given", "row", "labels"))
 
 ### Define annotations
-ann_col <- colorRamp2(c(0, 50, 100), brewer.pal(3, "Blues"))
 
-ha_row = rowAnnotation(df = names,
-                      gp = gpar(col = "black"),
-                      annotation_legend_param = list(title = "Legend1 title", 
-                                                     ncol = 1,
-                                                     col = ann_col)
-)
+ha_row = rowAnnotation(df= labels,
+                       gp = gpar(col = "black"),
+                       annotation_legend_param = list(title = "Legend1 title", 
+                                                      ncol = 1)
+                       )
+
+col_fun <- colorRamp2(c(18, 20, 23), 
+                      c("Blue", "#f4a582", "#d6604d"))
 
 ### Make the heatmap
 map <- Heatmap(mat, show_heatmap_legend = TRUE, col=col_fun,
-                heatmap_legend_param = list(title = "Legend2 title", ncol = 1),
-                column_title = "Title",
-                left_annotation = ha_row,
-                column_title_gp = gpar(fontsize = 18, fontface = "bold"),
-                column_names_gp = grid::gpar(fontsize = 10),
-                row_names_gp = grid::gpar(fontsize = 10)
+               heatmap_legend_param = list(title = "Legend2 title", ncol = 1),
+               column_title = "Title",
+               left_annotation = ha_row,
+               column_title_gp = gpar(fontsize = 18, fontface = "bold"),
+               row_names_gp = grid::gpar(fontsize = 10)
 )
 
 
 draw(map, align_heatmap_legend = "heatmap_top", merge_legends = TRUE)
 ```
 
-There are lots of additional features in this package like drawing histograms, boxplots, and violin plots around the heatmap. Check out the complete reference <a href="https://jokergoo.github.io/ComplexHeatmap-reference/book/" target="_blank">documentation</a> for more information. <br>
+![ComplexHeatmap](assets/07ComplexHeatmap.png)
+<br>
+
+There are lots of additional features in this package like drawing histograms, boxplots, and violin plots around the heatmap. Check out the complete reference <a href="https://jokergoo.github.io/ComplexHeatmap-reference/book/" target="_blank">documentation</a> for more information. <br> <br>
 
 ___
 # Further Reading
