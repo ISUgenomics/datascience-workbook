@@ -10,6 +10,10 @@ header:
 
 {% include toc %}
 
+# SCATTER PLOT
+
+**The example uses the Plotly Express wrapper**
+
 
 Explore *px_scatter_PCA.ipynb* notebook.
 
