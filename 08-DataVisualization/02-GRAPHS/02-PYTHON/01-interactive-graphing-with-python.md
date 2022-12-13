@@ -11,9 +11,18 @@ header:
 {% include toc %}
 
 
+## Overview
+
+Python is a popular programming language that is widely used for data analysis and scientific computing. One of the key features of Python is the ability to create interactive graphs using libraries such as Plotly and Dash. These libraries can be used to create interactive graphs and web applications for data visualization. The Plotly library is built on top of Plotly.js, and allows users to create a range of interactive graphs. Dash is a web app framework that allows users to build interactive web apps using Python and Dash HTML Components.
+
+Using Plotly and Dash together, users can create engaging, informative, and highly interactive graphs and web applications that can be used to explore and analyze data on-the-fly. This can be useful for data scientists, researchers, and analysts who want to share their findings with others in a visually appealing and intuitive way.
+
 ## Plotly-Dash Graphing Library
 
-[Plotly](https://plotly.com) is a modern and extensively developing library for **interactive graphing**. It is an open-source project that provides compatibility with the most popular programming languages, such as **Python**, **R**, **Julia**, **Javascript**, **F#**, **ggplot2**, and **MATLAB**. All variants have detailed documentation and separate [GitHub repositories](https://github.com/orgs/plotly/repositories) with issues tracking and opportunity for contribution. More so, there is also an open-source analytical app framework, [Dash](https://plotly.com/dash/), which allows you to effortlessly add many different widgets such as [core](https://dash.plotly.com/dash-core-components), [HTML](https://dash.plotly.com/dash-html-components), and [bootstrap](https://dash-bootstrap-components.opensource.faculty.ai/docs/quickstart/) components. They support application management and user-triggered on-the-fly chart customization.
+[Plotly](https://plotly.com) is a modern and extensively developing library for **interactive graphing**. It is an open-source project that provides compatibility with the most popular programming languages, such as **Python**, **R**, **Julia**, **Javascript**, **F#**, **ggplot2**, and **MATLAB**. All variants have detailed documentation and separate [GitHub repositories](https://github.com/orgs/plotly/repositories) with issues tracking and opportunity for contribution.
+The **Plotly** library allows users to create a wide range of interactive graphs, including scatter plots, bar charts, heatmaps, and customized arrangements of them. The library is built on the JavaScript plotting library, Plotly.js, and is highly customizable, allowing users to specify the appearance and behavior of their graphs.
+
+More so, the Plotly team developed also an open-source analytical web app framework, [Dash](https://plotly.com/dash/), which allows users to build interactive web applications for data visualization. Dash apps are built using Python engine, and the app's user interface is defined using various Dash Components: [core](https://dash.plotly.com/dash-core-components), [HTML](https://dash.plotly.com/dash-html-components), and [bootstrap](https://dash-bootstrap-components.opensource.faculty.ai/docs/quickstart/). So, you can effortlessly add many different widgets such as dropdowns, buttons, sliders, and dialog boxes to support application management and user-triggered on-the-fly chart customization.
 
 <span style="color: #ff3870; font-weight: 600;">That is a total game-changer in developing interactive web applications and data visualization!</span>
 
