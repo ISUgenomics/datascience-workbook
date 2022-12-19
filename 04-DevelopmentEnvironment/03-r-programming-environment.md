@@ -34,20 +34,20 @@ In this example, the > symbol indicates that you are entering a command, and the
 In addition to basic arithmetic operations, R also has a variety of functions that can be used to perform more complex statistical analyses. For example, you can use the mean() function to calculate the mean of a set of numbers:
 
 ```
-> mean(1, 2, 3, 4, 5)
+> a1 <- c(1, 2, 3, 4, 5)
+> mean(a1)
 [1] 3
 ```
-In this example, the mean() function calculates the mean of the numbers 1, 2, 3, 4, and 5, which is 3.
+In this example, the mean() function calculates the mean of the a1 numeric vector which contains the numbers 1, 2, 3, 4, and 5. The mean of these values is 3.
 
-R also has powerful capabilities for visualizing data. For example, you can use the plot() function to create a scatterplot of two numeric variables:
+R also has powerful capabilities for visualizing data. For example, you can use the plot() function to create a scatterplot:
 
 ```
-> x <- c(1, 2, 3, 4, 5)
-> y <- c(1, 4, 9, 16, 25)
-> plot(x, y)
+> plot(1:20)
 ```
 
-In this example, the x and y variables are created and assigned the values 1, 2, 3, 4, and 5. These values are then used as the input to the plot() function, which creates a scatterplot of x and y. <br>
+![R_plot](assets/images/R_plot.png) <br>
+ <br>
 
 These are just a few simple examples of the many things that you can do with R. R is often used for data visualization, for example <a href="https://datascience.101workbook.org/08-DataVisualization/02-GRAPHS/03-R/05-rstudio-tutorial-ComplexHeatmap" target="_blank">creating heatmaps</a>. With its powerful statistical and data visualization capabilities, R is a valuable tool for anyone working with data. Whether you are a beginner just starting out with R or an experienced user looking to expand your knowledge, there is always more to learn about this versatile programming language. <br>
 <br>
