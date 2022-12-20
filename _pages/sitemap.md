@@ -52,7 +52,7 @@ header:
 
 # <a href="04-DevelopmentEnvironment/00-DevelopmentEnvironment-LandingPage" style="color: #8997c1;">04. Development Environment</a>
 * **<a href="04-DevelopmentEnvironment/01-integrated-development-environment" style="color: #24376b;">Integrated Development Environment (IDE)</a>**
-  * <a href="04-DevelopmentEnvironment/01A-tutorial-atom-editor" style="color: #3f5a8a;">Tutorial: Atom Editor</a>
+  * <a href="04-DevelopmentEnvironment/01A-tutorial-VSCode" style="color: #3f5a8a;">Tutorial: Visual Studio Code</a>
 * **<a href="04-DevelopmentEnvironment/02-python-programming-environment" style="color: #24376b;">Python Programming Environment</a>**
   * <a href="04-DevelopmentEnvironment/02A-jupyter-basics" style="color: #3f5a8a;">Jupyter: Interactive Web-Based Multi-Kernel Programming Interface</a>
     * <a href="04-DevelopmentEnvironment/02B-tutorial-jupyter-lab" style="color: #3f5a8a;">Tutorial: Getting Started with JupyterLab </a>
