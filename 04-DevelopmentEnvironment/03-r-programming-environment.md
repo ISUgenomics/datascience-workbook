@@ -20,13 +20,22 @@ To use R, you will need to install the R software on your computer. This can be 
 * <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03B-tutorial-setting-up-rstudio" target="_blank">Setting up RStudio</a>
 <br>
 
-Once you have installed R, you can start using it by opening the R console or RStudio. This is where you will enter your R commands and see the results of your code. <br>
+Once you have installed R, you can start using it by opening the R console or RStudio. This is where you will enter your R commands and see the results of your code. A few examples of the things that you can do with R: <br>
+* Data Manipulation: reading, cleaning, and manipulating data from different sources
+* Data Visualization through plots, charts, <a href="https://datascience.101workbook.org/08-DataVisualization/02-GRAPHS/03-R/03-rstudio-tutorial-box-plot" target="_blank">Boxplots</a> or <a href="https://datascience.101workbook.org/08-DataVisualization/02-GRAPHS/03-R/05-rstudio-tutorial-ComplexHeatmap" target="_blank">Complex Heatmaps</a>
+* Statistical Analysis
+* Data Modeling
+* Machine Learning
+
+
 
 ## Examples
 To perform a simple arithmetic calculation, you can enter the following into the console: 
 
 ```
 > 2 + 2
+
+##If you press enter you will get following output
 [1] 4
 ```
 In this example, the > symbol indicates that you are entering a command, and the [1] indicates the output of that command. In this case, the output is the result of the calculation 2 + 2, which is 4.
@@ -38,7 +47,7 @@ In addition to basic arithmetic operations, R also has a variety of functions th
 > mean(a1)
 [1] 3
 ```
-In this example, the mean() function calculates the mean of the a1 numeric vector which contains the numbers 1, 2, 3, 4, and 5. The mean of these values is 3.
+In this example, the mean() function calculates the mean of the `a1` numeric vector which contains the numbers 1, 2, 3, 4, and 5. The mean of these values is 3.
 
 R also has powerful capabilities for visualizing data. For example, you can use the plot() function to create a scatterplot:
 
@@ -49,7 +58,7 @@ R also has powerful capabilities for visualizing data. For example, you can use 
 ![R_plot](assets/images/R_plot.png) <br>
  <br>
 
-These are just a few simple examples of the many things that you can do with R. R is often used for data visualization, for example <a href="https://datascience.101workbook.org/08-DataVisualization/02-GRAPHS/03-R/05-rstudio-tutorial-ComplexHeatmap" target="_blank">creating heatmaps</a>. With its powerful statistical and data visualization capabilities, R is a valuable tool for anyone working with data. Whether you are a beginner just starting out with R or an experienced user looking to expand your knowledge, there is always more to learn about this versatile programming language. <br>
+ With its powerful statistical and data visualization capabilities, R is a valuable tool for anyone working with data. Whether you are a beginner just starting out with R or an experienced user looking to expand your knowledge, there is always more to learn about this versatile programming language. <br>
 <br>
 
 
