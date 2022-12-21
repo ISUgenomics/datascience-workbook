@@ -1,8 +1,8 @@
 ---
 title: "ISU HPC: LSS Storage"
 layout: single
-author:
-author_profile: false
+author: Sharu Paul
+author_profile: TRUE
 header:
   overlay_color: "444444"
   overlay_image: /06-IntroToHPC/assets/images/06_hpc_banner.png
@@ -10,9 +10,14 @@ header:
 
 {% include toc %}
 
-## <span style="color: #ff3870;">New content coming soon!</span>
 
+# Large Scale Storage (LSS)
+The LSS is a storage service for Iowa State faculty and staff. It is useful for research labs that need to store large amounts of data including sequencing data, images, and other large files. 
 
+## Access
+Space on LSS can be requested from https://lss.apps.it.iastate.edu/
+
+Once you have purchased space on LSS, folders can be mounted to your computer directly. Check out this guide on <a href="https://researchit.las.iastate.edu/guides/lss/mount_folders/" target="_blank">how to mount folders from LSS</a>.
 
 
 
