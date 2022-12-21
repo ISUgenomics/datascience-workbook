@@ -54,7 +54,7 @@ is.numeric(mat)
 which should return TRUE
 ```
 
-For this tutorial, I will use a random matrix to use as an example. <br>
+For this tutorial, I will make a random matrix to use as an example. <br>
 
 ```
 # Generate random matrix
