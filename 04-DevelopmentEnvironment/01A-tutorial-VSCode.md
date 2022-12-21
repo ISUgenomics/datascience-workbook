@@ -2,7 +2,7 @@
 title: "Introduction to Visual Studio Code"
 layout: single
 author: Sharu Paul
-author_profile: false
+author_profile: TRUE
 header:
   overlay_color: "444444"
   overlay_image: /04-DevelopmentEnvironment/assets/images/04_development_envir_banner.png
