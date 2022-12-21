@@ -15,7 +15,7 @@ In Data Science, everyone more-or-less is a developer. Whether you write simple 
 ## <span style="color: #8997c1;">Table of contents</span>
 
 ### **<a href="01-integrated-development-environment" style="color: #24376b;">1. Integrated Development Environment (IDE)</a>**
-* <a href="01A-tutorial-atom-editor" style="color: #3f5a8a;">Tutorial: Atom Editor</a>
+* <a href="01A-tutorial-VSCode" style="color: #3f5a8a;">Tutorial: Visual Studio Code</a>
 ### **<a href="02-python-programming-environment" style="color: #24376b;">2. Python programming environment</a>**
 * <a href="02A-jupyter-basics" style="color: #3f5a8a;">2.1 Jupyter: Interactive Web-Based Multi-Kernel Programming Interface</a>
   * <a href="02B-tutorial-jupyter-lab" style="color: #3f5a8a;">Tutorial: Getting Started with JupyterLab </a>
