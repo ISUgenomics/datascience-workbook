@@ -21,7 +21,7 @@ Installing any software on Windows usually involves some common steps:
 
 `Tip:` Just google *'[software name] for windows'* to find installation files. Works for most programs.
 <details>
-<summary>Reset an old laptop</summary> <br>
+<summary>Reset an old laptop</summary> <br> 
 
 * Get password from previous account holder to login
 * Reset Windows
@@ -31,11 +31,14 @@ Installing any software on Windows usually involves some common steps:
   * You can choose to keep the files or delete all data
 * Log in with new account
 * Download a better internet browser
+
 </details>
 <br>
 
 # Developer tools
-## Atom editor
+## Atom editor (now archived)
+Try <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01A-tutorial-VSCode" target="_blank">VSCode</a> instead. <br>
+
 Atom is a text editor with `git` version control integrated in it and is compatible with <a href="https://bioinformaticsworkbook.org/Appendix/Markdown.html#gsc.tab=0" target="_blank">Markdown</a> syntax. It makes working with Git and GitHub more efficient.
 
 <a href="https://atom.io/" target="_blank">Download</a> and install Atom following general guide to installation, and then install packages to improve function. To install packages on Atom, use the package manager in settings (File -> Settings -> Install). <br>
@@ -121,7 +124,7 @@ Python is a high-level, general-purpose programming language. It is one of the b
 ## R
 R is a programming language for statistical computing and graphics. It is one of the most popular tools used for data mining, data modeling and generating graphics.
 
-<a href="https://mirror.las.iastate.edu/CRAN/" target="_blank">Install R here</a> locally and check out the <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03B-tutorial-setting-up-rstudio" target="_blank">RStudio tutorial</a> for more details including installing R libraries.
+<a href="https://mirror.las.iastate.edu/CRAN/" target="_blank">Install R here</a> locally and check out the tutorials for <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03B-tutorial-setting-up-rstudio" target="_blank">setting up RStudio</a> and <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03A-rstudio-basics" target="_blank">RStudio basics</a>  for more details including installing R libraries.
 
 Use RStudio and plot to test if R is working. Open RStudio, type following command in console and press enter.
 
