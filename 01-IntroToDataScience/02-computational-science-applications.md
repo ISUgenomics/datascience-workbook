@@ -10,14 +10,13 @@ header:
 
 {% include toc %}
 
-Computational science is a field that involves **using computers and mathematical models to solve complex problems**. It plays a vital role in many areas of science, engineering, industry, and everyday life.
+Computational Science is a field that involves **using computers and mathematical models to solve complex problems**. It plays a vital role in many areas of science, engineering, industry, and everyday life.
 
 
-<br>
 <table>
   <tr>
-       <th>Computational science has a wide range of applications, including:</th>
-       <th><i>The figure shows the applications of the computational science.</i></th>
+       <th>Computational Science has a wide range of applications, including:</th>
+       <th><i>Applications of Computational Science.</i></th>
   </tr>
   <tr>
     <td>
@@ -60,9 +59,9 @@ Computational Science and Data Science are two fields that often intersect to pr
 
 The Data Science Workbook provides an overview of key concepts in Data Science and Computational Science, helping modern scientists to gain familiarity with effective practices and current tools and methods for tackling complex challenges in their research. The presented techniques can be applied in a variety of fields, including:
 
-* Computational Biology, for the details see <a href="https://datascience.101workbook.org/01-IntroToDataScience/02A-computational-biology" target="_blank">article  ⤴</a> and follow to the <a href="https://bioinformaticsworkbook.org/" target="_blank">Bioinformatics Workbook  ⤴</a>
-* Geospatial Analysis, for the details see <a href="https://datascience.101workbook.org/01-IntroToDataScience/02B-geospatial-analytics" target="_blank">article  ⤴</a> article and follow to the <a href="https://geospatial.101workbook.org" target="_blank">Geospatial Workbook  ⤴</a>
-* Artificial Intelligence, for the details see <a href="https://datascience.101workbook.org/01-IntroToDataScience/02C-machine-learning" target="_blank">article  ⤴</a> article and follow to the <a href="http://ai.101workbook.org" target="_blank">AI Workbook  ⤴</a>
+* Computational Biology, for the details see <a href="https://datascience.101workbook.org/01-IntroToDataScience/02A-computational-biology" target="_blank">article  ⤴</a> and follow to the <a href="https://bioinformaticsworkbook.org/" target="_blank">Bioinformatics Workbook ⤴</a>
+* Geospatial Analysis, for the details see <a href="https://datascience.101workbook.org/01-IntroToDataScience/02B-geospatial-analytics" target="_blank">article  ⤴</a> article and follow to the <a href="https://geospatial.101workbook.org" target="_blank">Geospatial Workbook ⤴</a>
+* Artificial Intelligence, for the details see <a href="https://datascience.101workbook.org/01-IntroToDataScience/02C-machine-learning" target="_blank">article ⤴</a> article and follow to the <a href="http://ai.101workbook.org" target="_blank">AI Workbook  ⤴</a>
 
 
 
