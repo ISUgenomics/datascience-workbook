@@ -12,6 +12,7 @@ header:
 
 Computational science is a field that involves **using computers and mathematical models to solve complex problems**. It plays a vital role in many areas of science, engineering, industry, and everyday life.
 
+
 <br>
 <table>
   <tr>
@@ -22,7 +23,7 @@ Computational science is a field that involves **using computers and mathematica
     <td>
         <li> <b>data analysis</b>, <i>used to analyze large datasets to extract meaningful insights and patterns</i> </li><br>
         <li> <b>modeling and simulation</b>, <i>used to develop and analyze mathematical models of complex systems</i> </li><br>
-        <li> <b>machine learning</b>, <i>used to develop and apply algorithms automatically learning from data and making predictions<i> </li><br>
+        <li> <b>machine learning</b>, <i>used to develop and apply algorithms automatically learning from data and making predictions</i> </li><br>
         <li> <b>optimization</b>, <i>used to find the best or the most efficient/robust solution to a problem</i> </li><br>
         <li> <b>visualization</b>, <i>used to create visual representations of data and models</i> </li>
     </td>
