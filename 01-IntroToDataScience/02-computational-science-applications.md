@@ -12,18 +12,24 @@ header:
 
 Computational science is a field that involves **using computers and mathematical models to solve complex problems**. It plays a vital role in many areas of science, engineering, industry, and everyday life.
 
+<br>
 <table>
-  <tr> <th>Computational science has a wide range of applications, including:</th> <th></th> </tr>
-  <tr> <td>
+  <tr>
+       <th>Computational science has a wide range of applications, including:</th>
+       <th><i>The figure shows the applications of the computational science.</i></th>
+  </tr>
+  <tr>
+    <td>
         <li> <b>data analysis</b>, <i>used to analyze large datasets to extract meaningful insights and patterns</i> </li><br>
         <li> <b>modeling and simulation</b>, <i>used to develop and analyze mathematical models of complex systems</i> </li><br>
         <li> <b>machine learning</b>, <i>used to develop and apply algorithms automatically learning from data and making predictions<i> </li><br>
         <li> <b>optimization</b>, <i>used to find the best or the most efficient/robust solution to a problem</i> </li><br>
         <li> <b>visualization</b>, <i>used to create visual representations of data and models</i> </li>
-    </td> <td>
-        <img src="assets/images/computational_science.png" alt="Computational Science" width="500"><br>
-          <i>The figure shows the applications of the computational science.</i>
-    </td> </tr>
+    </td>
+    <td>
+        <img src="assets/images/computational_science.png" alt="Computational Science" width="500">
+    </td>
+  </tr>
 </table>
 
 
@@ -34,15 +40,18 @@ Computational Science and Data Science are two fields that often intersect to pr
 
 <table>
   <tr> <th>Computational Science</th> <th>Data Science</th> </tr>
-  <tr> <td>
+  <tr>
+    <td>
         <li> uses computer simulations and modeling to study and solve scientific problems </li><br>
         <li> involves the development of new algorithms or the use of existing algorithms to analyze and understand data </li><br>
         <li> involves the use of high-performance computing systems and large datasets </li><br>
-    </td> <td>
+    </td>
+    <td>
         <li> uses statistical and machine learning techniques to extract insights and knowledge from data </li><br>
         <li> involves the development of predictive models or the discovery of patterns and trends in data </li><br>
-       <li> involves the use of large datasets and may involve the use of high-performance computing systems </li><br>
-    </td> </tr>
+        <li> involves the use of large datasets and may involve the use of high-performance computing systems </li><br>
+    </td>
+  </tr>
 </table>
 
 
