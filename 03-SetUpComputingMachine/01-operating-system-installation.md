@@ -107,6 +107,9 @@ The exact steps for installing an operating system may vary depending on the spe
 
 To dual-boot multiple operating systems on a single computer, you will **need to partition the hard drive** and install each operating system on a separate partition. During the boot process, you will be presented with a menu that allows you to choose which operating system you want to boot into.
 
+![Multi-booting](assets/images/multi-booting.png)<br>
+*To select an operating system restart your computer and wait for the boot menu to appear. The boot menu is usually displayed after the computer's BIOS or UEFI has completed its initial checks and is ready to boot the operating system. Then, use the arrow keys or the mouse to select the operating system you want to boot into. Press Enter or click the "Boot" button to boot into the selected operating system.*
+
 There are a few things to consider when multi-booting a few operating systems on a single computer. You will need to:
 
 * install the operating systems in a specific order, with the oldest operating system being installed first;
@@ -116,9 +119,6 @@ There are a few things to consider when multi-booting a few operating systems on
 
 
 Having **multiple operating systems** installed on a single computer can provide a number of benefits, including flexibility, compatibility, testing, and security. With multiple operating systems installed, you can **switch between them** as needed, depending on the task at hand. This can be useful if you need to use different operating systems **for work and personal use**, or if you need to use the operating system that is best suited for a particular task or application. Additionally, having multiple operating systems installed can **make it easier to test applications** or configurations on multiple operating systems, and can **provide an additional layer of security** by allowing you to use one operating system for sensitive tasks and another for less sensitive tasks.
-
-![Multi-booting](assets/images/multi-booting.png)<br>
-*To select an operating system restart your computer and wait for the boot menu to appear. The boot menu is usually displayed after the computer's BIOS or UEFI has completed its initial checks and is ready to boot the operating system. Then, use the arrow keys or the mouse to select the operating system you want to boot into. Press Enter or click the "Boot" button to boot into the selected operating system.*
 
 
 **Follow the specialized external resources to customize your boot options:**
