@@ -70,9 +70,23 @@ The root user has complete control over the system and can perform any action th
   *The superuser can modify kernel parameters, which are settings that control the behavior of the operating system kernel.*
 
 
-For you, as a regular *(non-admin)* user on the HPC infrastructure, these tasks are not available to perform.
-
+<div style="background: #cff4fc; padding: 15px;">
+  <span style="font-weight:800;">PRO TIP:</span>
+  <br><span style="font-style:italic;">
+For you, as a regular <i>(non-admin)</i> user on the HPC infrastructure, these tasks are not available to perform. <br><br>
 To perform these tasks on your personal computing machine when necessary, you need to activate superuser privileges.
+  </span>
+</div>
+
+### Permission denied error
+
+If you attempt to perform a task that requires superuser privileges without having the necessary permissions, you may see an error message similar to the following:
+
+```
+bash: command: Permission denied
+```
+
+This error message indicates that you do not have the necessary permissions to execute the command. In order to perform the task, you will need to activate superuser privileges *(see next section)*.
 
 
 ## How to become a superuser?
@@ -175,7 +189,7 @@ In this example, the apt-get update command is being run with superuser privileg
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;"> You should always update the system's package manager database before installing a new software or library. </span>
-</div><br>
+</div>
 
 **2. Installing a software package:**
 
@@ -271,7 +285,6 @@ sudo systemctl restart cron
 
 The `cron` service is the cron daemon, which is used to schedule tasks to run at specific times.
 
-<br>
 
 **These are just a few examples of using the sudo command.** <br>
 There are many other tasks that may require superuser privileges, and sudo can be used to execute any of these tasks.
@@ -280,7 +293,7 @@ There are many other tasks that may require superuser privileges, and sudo can b
 <div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">WARNING:</span>
 <br><span style="font-style:italic;"> It is important to use <b>sudo</b> sparingly, and only when absolutely necessary, as it has the potential to cause significant harm to the system if used improperly. </span>
-</div><br>
+</div>
 
 
 
