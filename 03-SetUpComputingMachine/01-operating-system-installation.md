@@ -12,7 +12,7 @@ header:
 
 ## What is an **O**perating **S**ystem?
 
-An operating system (OS) is the software that manages and controls the hardware and other software on a computer. It provides a platform for other programs to run on and performs tasks such as:
+An operating system (OS) is the software that manages and controls the hardware and other software on a computer. It provides a platform for programs to run on and performs tasks such as:
 * managing memory,
 * coordinating input and output (I/O) operations,
 * controlling the operation of the computer's hardware.
@@ -24,7 +24,7 @@ Some common examples of operating systems include:
 | Microsoft Windows | macOS | Linux | iOS |
 |-------------------|-------|-------|-----|
 |![](assets/images/microsoft_logo.png)| ![](assets/images/macOS_logo.png) | ![](assets/images/linux_logo.png) | ![](assets/images/iOS_logo.png) |
-| [Windows OS var](https://msofficestore.us/product-category/windows/) | [macOS Ventura](https://www.apple.com/macos/ventura/) | [free Linux OS variants](https://www.linux.org/pages/download/) | [update iOS](https://support.apple.com/en-us/HT204204) |
+| [Windows OS variants](https://msofficestore.us/product-category/windows/) | [macOS Ventura](https://www.apple.com/macos/ventura/) | [free Linux OS variants](https://www.linux.org/pages/download/) | [update iOS](https://support.apple.com/en-us/HT204204) |
 
 Each operating system has its own set of features and functions and is designed to work with specific types of hardware. For example, Windows and macOS are typically used on personal computers and laptops, Linux is used on high-performance computing clusters, while iOS is used on iPhones and iPads.
 
