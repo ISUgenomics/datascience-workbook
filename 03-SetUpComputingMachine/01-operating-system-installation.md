@@ -1,8 +1,8 @@
 ---
 title: "Operating System Installation"
 layout: single
-author:
-author_profile: false
+author: Aleksandra Badaczewska
+author_profile: true
 header:
   overlay_color: "444444"
   overlay_image: /03-SetUpComputingMachine/assets/images/03_computer_setup_banner.png
