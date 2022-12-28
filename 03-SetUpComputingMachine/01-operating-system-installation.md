@@ -42,13 +42,16 @@ Each operating system has its own set of features and functions and is designed 
 </span>
 </div><br>
 
-**Download any of 20 popular Linux distributions:**
+**Select any of 20 popular Linux distributions:**
 
 | [Ubuntu](https://www.ubuntu.com/download) | [Debian](https://www.debian.org/distrib/ftplist) | [Mint](https://www.linuxmint.com/download.php) | [Fedora](https://getfedora.org/) | [CentOS](https://wiki.centos.org/Download) |
 |------|------|------|------|------|
 | [Arch](https://www.archlinux.org/download/) | [Kali](https://www.kali.org/downloads/) | [OpenSUSE](https://get.opensuse.org/) | [PureOS](https://pureos.net/download/) | [Red Hat](https://access.redhat.com/downloads) |
 | [Manjaro](https://sourceforge.net/projects/manjarolinux/files/) | [Zorin](http://zorin-os.com/free.html) | [Kubuntu](https://www.kubuntu.org/getkubuntu/) | [Xubuntu](https://xubuntu.org/getxubuntu/) | [Lubuntu](https://lubuntu.me/downloads/) |
 | [Slackware](http://www.slackware.com/getslack/) | [Slackel](https://sourceforge.net/projects/slackel/files/) | [Solus](https://getsol.us/download/) | [Puppy](https://puppylinux-woof-ce.github.io/) | [PCLinuxOS](http://pclinuxos.com/?page_id=10) |
+
+![Linux distributions](../02-IntroToCommandLine/assets/images/linux_distributions.png)<br>
+*Figure shows logos of the most popular Linux distributions, all based on the Unix command-line interface.*
 
 
 ## When to reinstall the OS?
