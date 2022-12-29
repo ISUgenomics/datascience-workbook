@@ -20,15 +20,22 @@ VSCode can be downloaded from <a href="https://code.visualstudio.com/download" t
 
 
 ## Shortcuts
-The most useful shortcut you need to learn is `ctrl+shift+p` (or `cmd+shift+p` on mac) which opens the search bar for all commands. You can search for all available commands and their shortcuts. Below is a list of some useful shortcuts and the commands:
+The most useful shortcut you need to learn is `Ctrl+Shift+p` (or `Cmd+Shift+p` on mac) which opens the search bar for all commands. You can search for all available commands and their shortcuts. Below is a list of some useful shortcuts and the commands on windows (change Ctrl with Cmd on mac):
 <br>
 <table>
 <thead><tr><th>Shortcut</th><th>Command</th></tr></thead><tbody>
- <tr><td><blockcode>ctrl+k v</blockcode></td><td>open markdown preview to the side</td></tr>
-  <tr><td><blockcode>ctrl+shift+v</blockcode></td><td>open Markdown preview</td></tr>
- <tr><td><blockcode>shift+alt+c </blockcode></td><td>copy path of active file</td></tr>
- <tr><td><blockcode>ctrl+s</blockcode></td><td>file: save</td></tr>
- <tr><td><blockcode>ctrl+shift+s</blockcode></td><td>file: save as..</td></tr>
+ <tr><td><blockcode>Ctrl+k v</blockcode></td><td>Open markdown preview to the side</td></tr>
+  <tr><td><blockcode>Ctrl+Shift+v</blockcode></td><td>Open Markdown preview</td></tr>
+ <tr><td><blockcode>Shift+Alt+c </blockcode></td><td>Copy path of active file</td></tr>
+ <tr><td><blockcode>Ctrl+s</blockcode></td><td>File: Save</td></tr>
+ <tr><td><blockcode>Ctrl+Shift+s</blockcode></td><td>File: Save as..</td></tr>
+  <tr><td><blockcode>Ctrl+Shift+f</blockcode></td><td>Search</td></tr>
+ <tr><td><blockcode>Ctrl+Shift+g</blockcode></td><td>Source Control</td></tr>
+  <tr><td><blockcode>Ctrl+`</blockcode></td><td>Terminal</td></tr>  <tr><td><blockcode>Ctrl+Shift+`</blockcode></td><td>New Terminal</td></tr>
+ <tr><td><blockcode>Ctrl+Shift+y</blockcode></td><td>Debug Console</td></tr>
+  <tr><td><blockcode>Ctrl+Shift+u</blockcode></td><td>Output</td></tr>
+  <tr><td><blockcode>F5</blockcode></td><td>Start Debugging</td></tr>
+  <tr><td><blockcode>Ctrl+F5</blockcode></td><td>Run without Debugging</td></tr>
 </tbody></table>
 
 ## Open a project
