@@ -30,7 +30,7 @@ In computer science, an interpreted language is a type of programming language f
 
 There are several ways to set up a Python programming environment, depending on your needs and preferences. In the following subsections you can explore a few common options.
 
-## 1. Integrated Development Environment (IDE)
+## **1. Integrated Development Environment (IDE)**
 An Integrated Development Environment (IDE) is a software application that provides a comprehensive set of tools for software development. IDEs typically provide a range of tools and features for editing, debugging, and testing code, as well as integrations with other tools and services that are commonly used in software development (e.g., Git version control).
 
 ![Python](assets/images/04_02_ide_features.png)<br>
@@ -88,7 +88,7 @@ Overall, JupyterLab is a useful tool for interactive computing and data analysis
 ...about the <b>Jupyter Lab</b> from the tutorial <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-jupyter-basics" target="_blank">Jupyter: Interactive Web-Based Multi-Kernel Programming Interface  ⤴</a> in this <a href="https://datascience.101workbook.org" target="_blank">workbook  ⤴</a>
 
 
-## 2. Online coding platforms
+## **2. Online coding platforms**
 
 There are also online platforms that allow you to write and run Python code directly in your web browser, without the need to install anything on your local computer. Some examples include:
 * <a href="https://www.codecademy.com/" target="_blank">CodeAcademy  ⤴</a>, includes a code editor and interactive exercises to help you learn programming; offers interactive courses and tutorials on a variety of programming languages, including Python
@@ -96,7 +96,7 @@ There are also online platforms that allow you to write and run Python code dire
 * <a href="https://trinket.io/" target="_blank">Trinket  ⤴</a>, includes a code editor, debugger, and integrations with various tools and services; supports a number of programming languages, including Python
 * <a href="https://www.pythonanywhere.com/" target="_blank">PythonAnywhere  ⤴</a>, includes a code editor, debugger, and support for web development frameworks such as Django and Flask;  supports developing and hosting Python web applications
 
-## 3. Command Line (CL) code editors
+## **3. Command Line (CL) code editors**
 You can also use a plain text editor, such as <a href="https://www.nano-editor.org" target="_blank">nano  ⤴</a> [GNU], <a href="https://www.vim.org" target="_blank">Vim  ⤴</a> [Bram Moolenaar], or <a href="https://linuxcommand.org/lc3_adv_mc.php" target="_blank">mcedit  ⤴</a> [Midnight Commander] to write Python code and run it from the command line. To do this, you will need to install Python on your computer and then use the Python interpreter to execute your code.
 
 ![Python](assets/images/04_02_cli_editors.png)<br>
