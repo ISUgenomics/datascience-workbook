@@ -31,7 +31,9 @@ In computer science, an interpreted language is a type of programming language f
 There are several ways to set up a Python programming environment, depending on your needs and preferences. In the following subsections you can explore a few common options.
 
 ## 1. Integrated Development Environment (IDE)
-An IDE is a software application that provides a comprehensive set of tools for software development.
+An Integrated Development Environment (IDE) is a software application that provides a comprehensive set of tools for software development. IDEs typically provide a range of tools and features for editing, debugging, and testing code, as well as integrations with other tools and services that are commonly used in software development (e.g., Git version control).
+
+![Python](assets/images/04_02_ide_features.png)<br>
 
 ### *A. Multi-language IDE*
 There are many multi-language IDEs available, such as <a href="https://code.visualstudio.com" target="_blank">VSC  ⤴</a> [Microsoft], <a href="https://www.eclipse.org/ide/" target="_blank">Eclipse  ⤴</a>, <a href="https://netbeans.apache.org" target="_blank">NetBeans  ⤴</a>, and <a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ IDEA  ⤴</a> [JetBrains].
@@ -51,19 +53,16 @@ Some popular IDEs dedicated for programming in Python include <a href="https://r
 
 ![Python](assets/images/04_02_python_ide.png)<br>
 
-These IDEs typically provide a range of tools and features for editing, debugging, and testing code, as well as integrations with other tools and services that are commonly used in software development (e.g., Git version control).
-
-![Python](assets/images/04_02_ide_features.png)<br>
-
-<span style="color: #ff3870;font-weight: 500;">Learn more  !</span> <br>
-...about the <b>PyCharm IDE</b> from the tutorial <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02C-pycharm-ide" target="_blank">PyCharm: IDE for Professional Python Developers  ⤴</a> in this <a href="https://datascience.101workbook.org" target="_blank">workbook  ⤴</a>
-
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
 Using a Python-dedicated IDE can make it easier to work with Python code and take advantage of the language's features. These IDEs often include <b>advanced code completion</b> and <b>error highlighting</b>, as well as a range of <b>debugging and testing tools</b>. They may also include integrations with popular third-party libraries and frameworks, such as Django and Flask. Overall, using a Python-dedicated IDE can be a <b>good choice if you are primarily working with Python</b> and want a development environment that is optimized for the language.
 </span>
 </div><br>
+
+<span style="color: #ff3870;font-weight: 500;">Learn more  !</span> <br>
+...about the <b>PyCharm IDE</b> from the tutorial <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02C-pycharm-ide" target="_blank">PyCharm: IDE for Professional Python Developers  ⤴</a> in this <a href="https://datascience.101workbook.org" target="_blank">workbook  ⤴</a>
+
 
 ### *C. Web-based interactive DE*
 <a href="https://jupyter.org/install" target="_blank">JupyterLab  ⤴</a> is an open-source web-based interactive development environment (IDE) for working with Jupyter notebooks, code, and data. It is not a traditional IDE in the sense that it does not provide features such as a code editor or debugger, but it does offer a range of tools and features for working with notebooks and other interactive documents that combine code, text *(markdown)*, and visualizations.
