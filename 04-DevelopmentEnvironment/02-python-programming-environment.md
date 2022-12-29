@@ -33,7 +33,7 @@ There are several ways to set up a Python programming environment, depending on 
 ### 1. Integrated Development Environment (IDE)
 An IDE is a software application that provides a comprehensive set of tools for software development.
 
-**A. Multi-language IDEs** <br>
+#### ***A. Multi-language IDE***
 There are many multi-language IDEs available, such as <a href="https://code.visualstudio.com" target="_blank">VSC  ⤴</a> [Microsoft], <a href="https://www.eclipse.org/ide/" target="_blank">Eclipse  ⤴</a>, <a href="https://netbeans.apache.org" target="_blank">NetBeans  ⤴</a>, and <a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ IDEA  ⤴</a> [JetBrains].
 
 <div style="background: #cff4fc; padding: 15px;">
@@ -46,7 +46,7 @@ Multi-language IDEs can be useful <b>for developers who work on projects that in
 <span style="color: #ff3870;font-weight: 500;">Learn more  !</span> <br>
 ...about the <b>VSC IDE</b> from the <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01A-tutorial-VSCode" target="_blank">Tutorial: Visual Studio Code  ⤴</a> in this <a href="https://datascience.101workbook.org" target="_blank">workbook  ⤴</a>
 
-**B. Python dedicated IDEs** <br>
+#### ***B. Python-dedicated IDE***
 Some popular IDEs dedicated for programming in Python include <a href="https://realpython.com/python-idle/" target="_blank">IDLE  ⤴</a> *(included with the Python installation)*, <a href="https://www.jetbrains.com/pycharm/" target="_blank">PyCharm  ⤴</a>, and <a href="https://www.spyder-ide.org" target="_blank">Spyder  ⤴</a>.
 
 ![Python](assets/images/04_02_python_ide.png)<br>
@@ -65,7 +65,7 @@ Using a Python-dedicated IDE can make it easier to work with Python code and tak
 </span>
 </div><br>
 
-**C. Web-based interactive DEs** <br>
+#### ***C. Web-based interactive DE***
 <a href="https://jupyter.org/install" target="_blank">JupyterLab  ⤴</a> is an open-source web-based interactive development environment (IDE) for working with Jupyter notebooks, code, and data. It is not a traditional IDE in the sense that it does not provide features such as a code editor or debugger, but it does offer a range of tools and features for working with notebooks and other interactive documents that combine code, text *(markdown)*, and visualizations.
 
 |![](assets/images/04_jupyter_launch.gif)|![](assets/images/04_jupyter_cell_types.png)|
@@ -84,7 +84,7 @@ Overall, JupyterLab is a useful tool for interactive computing and data analysis
 ...about the <b>Jupyter Lab</b> from the tutorial <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-jupyter-basics" target="_blank">Jupyter: Interactive Web-Based Multi-Kernel Programming Interface  ⤴</a> in this <a href="https://datascience.101workbook.org" target="_blank">workbook  ⤴</a>
 
 
-### 2. Online IDE platforms
+### 2. Online coding platforms
 
 There are also online platforms that allow you to write and run Python code directly in your web browser, without the need to install anything on your local computer. Some examples include:
 * <a href="https://www.codecademy.com/" target="_blank">CodeAcademy  ⤴</a>, includes a code editor and interactive exercises to help you learn programming; offers interactive courses and tutorials on a variety of programming languages, including Python
@@ -104,6 +104,8 @@ This option is a good choice to develop quickly a simple script directly on the 
 </span>
 </div><br>
 
+<span style="color: #ff3870;font-weight: 500;">Learn more  !</span> <br>
+...about the <b>CL editors</b> from the tutorial <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02B-text-files-editors" target="_blank">Text Files Editors  ⤴</a> in this <a href="https://datascience.101workbook.org" target="_blank">workbook  ⤴</a>
 
 
 ___
