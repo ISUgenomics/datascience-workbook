@@ -11,7 +11,7 @@ header:
 {% include toc %}
 
 # Visual Studio Code
-VSCode is an editor made for coding and debugging. It supports multiple programming languages and includes features such as syntax highlighting, autocomplete, and debugging tools. In addition to its powerful editing capabilities, VSCode also offers integrated support for Git, the popular version control system. This allows user to manage code and collaborate with other team members. In this tutorial, we will get you started with using Visual Studio Code and using some of its useful features. <br>
+VSCode is an editor made for coding and debugging. It supports multiple programming languages and includes features such as syntax highlighting, autocomplete, and debugging tools. In addition to its powerful editing capabilities, VSCode also offers integrated support for Git, the popular version control system. This allows user to manage code and collaborate with other team members. In this tutorial, I will get you started with using Visual Studio Code and using some of its useful features. <br>
 
 ## Installation
 VSCode can be downloaded from <a href="https://code.visualstudio.com/download" target="_blank">VSCode website</a>. Once the download is complete, run the installer to install VSCode on your system. <br>
@@ -20,7 +20,7 @@ VSCode can be downloaded from <a href="https://code.visualstudio.com/download" t
 
 
 ## Shortcuts
-The most useful shortcut you need to learn is `Ctrl+Shift+p` (or `Cmd+Shift+p` on mac) which opens the search bar for all commands. You can search for all available commands and their shortcuts. Below is a list of some useful shortcuts and the commands on windows (change Ctrl with Cmd on mac):
+The most useful shortcut you need to learn is `Ctrl+Shift+p` (or `Cmd+Shift+p` on mac) which opens the search bar for all commands. You can search for all available commands and their shortcuts. Below is a list of some useful shortcuts and the commands on windows (change `Ctrl` with `Cmd` on mac):
 <br>
 <table>
 <thead><tr><th>Shortcut</th><th>Command</th></tr></thead><tbody>
@@ -70,11 +70,11 @@ VSCode has powerful tools to help you find and fix errors in your code. To start
 <br>
 
 ## Version Control
-If you are not familiar with Git, check out this tutorial about <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02-intro-to-github" target="_blank">Intro to GitHub</a>. It is possible to work with Git repositories directly from the VSC editor. You can clone a repo, or initialize a repo for your project from the terminal. `Source Control` pane on the left is used to manage your Git repositories. The common Git operations such as Pull, Push, Commit, and creating branches can be performed from here. <br>
+If you are not familiar with Git, check out this tutorial about <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02-intro-to-github" target="_blank">Intro to GitHub</a>. It is possible to work with Git repositories directly from the VSC editor. You can clone a repo, or initialize a repo for your project from the terminal. `Source Control` pane on the left is used to manage your Git repositories. The common Git operations such as Pull, Push, Clone, Commit, and Create Branch can be performed from here. <br>
 <br>
 ![VC](assets/images/VSC_sourcecontrol.png) <br>
 <br>
-If this is not already a git repo, VSC will ask you to initialize the repository. You will need to log in to your github account the first time you use git. <br>
+If this is not already a git repo, VSC will ask you to initialize the repository. You will need to log in to your GitHub account the first time you use Git. <br>
 <br>
 ![init](assets/images/VSC_initialize.png) <br>
 <br>

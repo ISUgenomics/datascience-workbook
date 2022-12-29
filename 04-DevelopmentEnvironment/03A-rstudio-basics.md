@@ -19,19 +19,29 @@ Some of the benefits of coding R using RStudio instead of a terminal are:
 
 ## Using RStudio
 Once you have <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03B-tutorial-setting-up-rstudio" target="_blank">set up RStudio</a> , you can open RStudio from start menu on your computer. When you first open RStudio, you will see a console window on the left and depending on your system, a few other windows on the right like environment, files or plots pane, etc. <br>
+<br>
 ![R1](assets/images/04_RStudio_1.png) <br>
+<br>
 If you do not see an empty editor window, you can open a new R Script file from the `File` menu: <br>
+<br>
 ![R2](assets/images/04_RStudio_2.png) <br>
+<br>
 An empty R Script file will open: <br>
+<br>
 ![R1](assets/images/04_RStudio_3.png) <br>
-
+<br>
 This is the code editor and you can write your code in this space. You can directly write code in the `Console` as well but editor allows you to run parts of code, save progress, make comments etc. Try writing the following code, and then run by selecting the lines you want to run and clicking the `Run` button: <br>
+<br>
 ![R1](assets/images/04_RStudio_4.png) <br>
+<br>
 If you select only the second line as shown and run, it will load the library `ggplot2` if it is installed on your system. If you have not installed the package, you will need to run the first line of code first. After the libarary is loaded, you can run the rest of the code shown below to create a plot using `ggplot2`: <br>
+<br>
 ![R1](assets/images/04_RStudio_5.png) <br>
+<br>
 The editor will create an indent in the second line when you write this code. When you select both the lines and run it successfully, the following plot will appear on the `Plots` window: <br>
+<br>
 ![R1](assets/images/04_RStudio_6.png) <br>
-
+<br>
 
 
 ___
