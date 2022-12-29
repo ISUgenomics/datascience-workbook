@@ -21,7 +21,7 @@ header:
 <br><span style="font-style:italic;">
 Python was created by <b>Guido van Rossum</b>, who is a Dutch computer programmer and software engineer. He based Python on several other programming languages, including ABC, Modula-3, and C. He released the first version of Python in December 1989, and has continued to develop and maintain the language ever since.
 </span>
-</div><br>
+</div>
 
 
 ## Python features
@@ -234,38 +234,41 @@ In this solution, we used a single line syntax for nested loops that returns a l
 <div style="background: #dff5b3; padding: 15px;">
 <span style="font-weight:800;">More about <code>range()</code> function</span><br>
 <br><span style="font-style:italic;">
-The <b>range()</b> function in Python is a built-in function that allows you to generate a sequence of integers. It takes three arguments: start, stop, and step, and returns a sequence of integers that starts at the start value, and ends at the stop value, incrementing by the step value. The range() function is often used in Python in conjunction with a for loop to iterate over a sequence of integers. It can also be used to create lists of integers, or to generate values for other purposes. <br><br>
-For example, the following code generates a sequence of integers from 0 to 9, incrementing by 1:<br>
-<pre style="margin: 0px; padding-left: 15px;"><code>
-for i in range(10):
-    print(i)              # Output: 0 1 2 3 4 5 6 7 8 9
-</code></pre>
-You can also specify different values for the start, stop, and step arguments to generate different sequences of integers. For example, the following code generates a sequence of integers from 10 to 15, incrementing by 2:
-<pre style="margin: 0px; padding-left: 15px;"><code>
-for i in range(10, 16, 2):
-    print(i)              # Output: 10 12 14
-</code></pre>
+The <b>range()</b> function in Python is a built-in function that allows you to generate a sequence of integers. It takes three arguments: start, stop, and step, and returns a sequence of integers that starts at the start value, and ends at the stop value, incrementing by the step value. The range() function is often used in Python in conjunction with a for loop to iterate over a sequence of integers. It can also be used to create lists of integers, or to generate values for other purposes.
 </span>
 </div><br>
+
+For example, the following code generates a sequence of integers from 0 to 9, incrementing by 1:
+```
+for i in range(10):
+    print(i)                      # Output: 0 1 2 3 4 5 6 7 8 9
+```
+You can also specify different values for the start, stop, and step arguments to generate different sequences of integers. For example, the following code generates a sequence of integers from 10 to 15, incrementing by 2:
+```
+for i in range(10, 16, 2):
+    print(i)                      # Output: 10 12 14
+```
 
 <div style="background: #dff5b3; padding: 15px;">
 <span style="font-weight:800;">More about <code>str()</code> function</span><br>
 <br><span style="font-style:italic;">
-The <b>str()</b> function in Python is a built-in function that converts a value to a string. It takes a single argument, which can be of any data type, and returns a string representation of that value. The str() function is often used to convert values to strings for display or printing purposes, or to convert values from one data type to another.<br><br>
+The <b>str()</b> function in Python is a built-in function that converts a value to a string. It takes a single argument, which can be of any data type, and returns a string representation of that value. The str() function is often used to convert values to strings for display or printing purposes, or to convert values from one data type to another.
+</span>
+</div><br>
+
 For example, the following code converts an integer to a string:<br>
-<pre style="margin: 0px; padding-left: 15px;"><code>
+```
 x = 123
 y = str(x)
 print(y)              # Output: "123"
-</code></pre>
-The str() function can be used to convert other data types to strings as well. For example, the following code converts a float to a string:
-<pre style="margin: 0px; padding-left: 15px;"><code>
+```
+The `str()` function can be used to convert other data types to strings as well. For example, the following code converts a float to a string:
+```
 x = 3.14159
 y = str(x)
 print(y)              # Output: "3.14159"
-</code></pre>
-</span>
-</div><br>
+```
+
 
 ### *B. Get Python locally and use interactive shell*
 In the simplest scenario, you need a command line interface, which can be opened in the terminal *(Linux, macOS)* or Command Prompt *(Windows)*.
@@ -277,20 +280,20 @@ If you are a beginner, it may be beneficial for you to start with the tutorials 
 </span>
 </div><br>
 
-## <span style="color: #ff3870;">New content coming soon!</span>
+<span style="color: #ff3870;">New content coming soon!</span>
 
 ### *C. Use simple text editor: nano, vim, mcedit*
 Once you familiarize yourself with Python basics, you can try to develop a simple Python script in any text editor.
 
-## <span style="color: #ff3870;">New content coming soon!</span>
+<span style="color: #ff3870;">New content coming soon!</span>
 
 ### *D. Use Interactive Development Environment: Jupyter Lab*
 
-## <span style="color: #ff3870;">New content coming soon!</span>
+<span style="color: #ff3870;">New content coming soon!</span>
 
 ### *E. Use Integrated Development Environment: VSC, pyCharm*
 
-## <span style="color: #ff3870;">New content coming soon!</span>
+<span style="color: #ff3870;">New content coming soon!</span>
 
 ___
 # Further Reading
