@@ -23,7 +23,7 @@ In computer science, an interpreted language is a type of programming language f
 </span>
 </div>
 
-<b><span style="color: #ff3870;font-weight: 500;"> To learn more about Python programming and its advantages, see section <a href="https://datascience.101workbook.org/05-IntroToProgramming/00-IntroToProgramming-LandingPage" target="_blank">05. Introduction to Programming</a> / <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/01-introduction-to-python" target="_blank">Introduction to Python programming  ⤴</a></span></b>
+<br><b><span style="color: #ff3870;font-weight: 500;"> To learn more about Python programming and its advantages, see section <a href="https://datascience.101workbook.org/05-IntroToProgramming/00-IntroToProgramming-LandingPage" target="_blank">05. Introduction to Programming</a> / <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/01-introduction-to-python" target="_blank">Introduction to Python programming  ⤴</a></span></b>
 
 
 # Python programming environment
@@ -43,9 +43,9 @@ There are many multi-language IDEs available, such as <a href="https://code.visu
 <br><span style="font-style:italic;">
 Multi-language IDEs can be useful <b>for developers who work on projects that involve more than one programming language</b>, as they provide a single platform for managing all of the code and related resources. They can also be a good choice for developers who want a more comprehensive development environment that includes a range of tools and features beyond just a code editor.
 </span>
-</div><br>
+</div>
 
-<span style="color: #ff3870;font-weight: 500;">Learn more  !</span> <br>
+<br><span style="color: #ff3870;font-weight: 500;">Learn more  !</span> <br>
 ...about the <b>VSC IDE</b> from the <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01A-tutorial-VSCode" target="_blank">Tutorial: Visual Studio Code  ⤴</a> in this <a href="https://datascience.101workbook.org" target="_blank">workbook  ⤴</a>
 
 ### *B. Python-dedicated IDE*
@@ -60,7 +60,7 @@ Using a Python-dedicated IDE can make it easier to work with Python code and tak
 </span>
 </div>
 
-<span style="color: #ff3870;font-weight: 500;">Learn more  !</span> <br>
+<br><span style="color: #ff3870;font-weight: 500;">Learn more  !</span> <br>
 ...about the <b>PyCharm IDE</b> from the tutorial <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02C-pycharm-ide" target="_blank">PyCharm: IDE for Professional Python Developers  ⤴</a> in this <a href="https://datascience.101workbook.org" target="_blank">workbook  ⤴</a>
 
 
@@ -84,7 +84,7 @@ Overall, JupyterLab is a useful tool for interactive computing and data analysis
 </span>
 </div>
 
-<span style="color: #ff3870;font-weight: 500;">Learn more  !</span> <br>
+<br><span style="color: #ff3870;font-weight: 500;">Learn more  !</span> <br>
 ...about the <b>Jupyter Lab</b> from the tutorial <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-jupyter-basics" target="_blank">Jupyter: Interactive Web-Based Multi-Kernel Programming Interface  ⤴</a> in this <a href="https://datascience.101workbook.org" target="_blank">workbook  ⤴</a>
 
 
@@ -108,7 +108,7 @@ This option is a good choice to develop quickly a simple script directly on the 
 </span>
 </div>
 
-<span style="color: #ff3870;font-weight: 500;">Learn more  !</span> <br>
+<br><span style="color: #ff3870;font-weight: 500;">Learn more  !</span> <br>
 ...about the <b>CL editors</b> from the tutorial <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02B-text-files-editors" target="_blank">Text Files Editors  ⤴</a> in this <a href="https://datascience.101workbook.org" target="_blank">workbook  ⤴</a>
 
 
