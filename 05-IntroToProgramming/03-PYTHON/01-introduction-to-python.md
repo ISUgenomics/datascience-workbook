@@ -236,7 +236,7 @@ In this solution, we used a single line syntax for nested loops that returns a l
 <br><span style="font-style:italic;">
 The <b>range()</b> function in Python is a built-in function that allows you to generate a sequence of integers. It takes three arguments: start, stop, and step, and returns a sequence of integers that starts at the start value, and ends at the stop value, incrementing by the step value. The range() function is often used in Python in conjunction with a for loop to iterate over a sequence of integers. It can also be used to create lists of integers, or to generate values for other purposes.
 </span>
-</div><br>
+</div>
 
 For example, the following code generates a sequence of integers from 0 to 9, incrementing by 1:
 ```
@@ -249,12 +249,13 @@ for i in range(10, 16, 2):
     print(i)                      # Output: 10 12 14
 ```
 
+<br>
 <div style="background: #dff5b3; padding: 15px;">
 <span style="font-weight:800;">More about <code>str()</code> function</span><br>
 <br><span style="font-style:italic;">
 The <b>str()</b> function in Python is a built-in function that converts a value to a string. It takes a single argument, which can be of any data type, and returns a string representation of that value. The str() function is often used to convert values to strings for display or printing purposes, or to convert values from one data type to another.
 </span>
-</div><br>
+</div>
 
 For example, the following code converts an integer to a string:<br>
 ```
