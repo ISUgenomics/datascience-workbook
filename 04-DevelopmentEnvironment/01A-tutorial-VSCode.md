@@ -24,6 +24,7 @@ The most useful shortcut you need to learn is `Ctrl+Shift+p` (or `Cmd+Shift+p` o
 <br>
 <table>
 <thead><tr><th>Shortcut</th><th>Command</th></tr></thead><tbody>
+ <tr><td><blockcode>Ctrl+k Ctrl+r</blockcode></td><td>Keyboard shortcuts reference</td></tr> 
  <tr><td><blockcode>Ctrl+k v</blockcode></td><td>Open markdown preview to the side</td></tr>
   <tr><td><blockcode>Ctrl+Shift+v</blockcode></td><td>Open Markdown preview</td></tr>
  <tr><td><blockcode>Shift+Alt+c </blockcode></td><td>Copy path of active file</td></tr>
