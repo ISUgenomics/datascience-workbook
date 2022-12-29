@@ -21,7 +21,7 @@ header:
 <br><span style="font-style:italic;">
 In computer science, an interpreted language is a type of programming language for which most of its implementations execute instructions directly, without previously compiling a program into machine-language instructions. This makes it easier to write and test code, however, Python programs may run slower than those written in a compiled language.
 </span>
-</div><br>
+</div>
 
 <b><span style="color: #ff3870;font-weight: 500;"> To learn more about Python programming and its advantages, see section <a href="https://datascience.101workbook.org/05-IntroToProgramming/00-IntroToProgramming-LandingPage" target="_blank">05. Introduction to Programming</a> / <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/01-introduction-to-python" target="_blank">Introduction to Python programming  ⤴</a></span></b>
 
@@ -58,7 +58,7 @@ Some popular IDEs dedicated for programming in Python include <a href="https://r
 <br><span style="font-style:italic;">
 Using a Python-dedicated IDE can make it easier to work with Python code and take advantage of the language's features. These IDEs often include <b>advanced code completion</b> and <b>error highlighting</b>, as well as a range of <b>debugging and testing tools</b>. They may also include integrations with popular third-party libraries and frameworks, such as Django and Flask. Overall, using a Python-dedicated IDE can be a <b>good choice if you are primarily working with Python</b> and want a development environment that is optimized for the language.
 </span>
-</div><br>
+</div>
 
 <span style="color: #ff3870;font-weight: 500;">Learn more  !</span> <br>
 ...about the <b>PyCharm IDE</b> from the tutorial <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02C-pycharm-ide" target="_blank">PyCharm: IDE for Professional Python Developers  ⤴</a> in this <a href="https://datascience.101workbook.org" target="_blank">workbook  ⤴</a>
@@ -82,7 +82,7 @@ Although, JupyterLab does not include a debugger in the traditional sense, it su
 <br><span style="font-style:italic;">
 Overall, JupyterLab is a useful tool for interactive computing and data analysis, particularly in the fields of scientific computing, data science, and machine learning. However, it is not a traditional IDE and may not be the best choice for all types of development projects.
 </span>
-</div><br>
+</div>
 
 <span style="color: #ff3870;font-weight: 500;">Learn more  !</span> <br>
 ...about the <b>Jupyter Lab</b> from the tutorial <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-jupyter-basics" target="_blank">Jupyter: Interactive Web-Based Multi-Kernel Programming Interface  ⤴</a> in this <a href="https://datascience.101workbook.org" target="_blank">workbook  ⤴</a>
@@ -106,7 +106,7 @@ You can also use a plain text editor, such as <a href="https://www.nano-editor.o
 <br><span style="font-style:italic;">
 This option is a good choice to develop quickly a simple script directly on the remote machine (such as high-performance computing cluster) where the graphical user interface (GUI) is not available.
 </span>
-</div><br>
+</div>
 
 <span style="color: #ff3870;font-weight: 500;">Learn more  !</span> <br>
 ...about the <b>CL editors</b> from the tutorial <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02B-text-files-editors" target="_blank">Text Files Editors  ⤴</a> in this <a href="https://datascience.101workbook.org" target="_blank">workbook  ⤴</a>
