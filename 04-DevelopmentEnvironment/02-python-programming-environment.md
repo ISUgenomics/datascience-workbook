@@ -68,8 +68,13 @@ Using a Python-dedicated IDE can make it easier to work with Python code and tak
 #### ***C. Web-based interactive DE***
 <a href="https://jupyter.org/install" target="_blank">JupyterLab  ⤴</a> is an open-source web-based interactive development environment (IDE) for working with Jupyter notebooks, code, and data. It is not a traditional IDE in the sense that it does not provide features such as a code editor or debugger, but it does offer a range of tools and features for working with notebooks and other interactive documents that combine code, text *(markdown)*, and visualizations.
 
-|![](assets/images/04_jupyter_launch.gif)|![](assets/images/04_jupyter_cell_types.png)|
-|---|---|
+<table>
+  <tr> <th>1. Launch Jupyter Lab</th> <th>2. Develop code, comment, and visualize results</th> </tr>
+  <tr>
+    <td><img src="assets/images/04_jupyter_launch.gif" alt="Merge data app" width="600"></td>
+    <td><img src="assets/images/04_jupyter_cell_types.png" alt="Merge data app" width="600"></td>
+  </tr>
+</table>
 
 Although, JupyterLab does not include a debugger in the traditional sense, it supports the use of **third-party debugging tools**, such as the Python debugger (<a href="https://docs.python.org/3/library/pdb.html" target="_blank">pdb  ⤴</a>) and the IPython debugger (<a href="https://ipython.org/ipython-doc/3/api/generated/IPython.core.debugger.html" target="_blank">ipdb  ⤴</a>). These tools allow you to set breakpoints and step through your code line by line, examining variables and other runtime information as you go.
 
