@@ -1,8 +1,8 @@
 ---
 title: "Introduction to HPC infrastructure"
 layout: single
-author:
-author_profile: false
+author: Aleksandra Badaczewska
+author_profile: true
 header:
   overlay_color: "444444"
   overlay_image: /06-IntroToHPC/assets/images/06_hpc_banner.png
@@ -67,15 +67,18 @@ HPC systems are also used extensively in artificial intelligence (AI) and machin
 
 ## Examples of HPC Infrastructure
 
-### XSEDE - The Extreme Science and Engineering Discovery Environment, NSF funded project
+### XSEDE
+**The Extreme Science and Engineering Discovery Environment, NSF funded project**
 
 * go to [XSEDE Supercomputer](01-XSEDE/01-supercomputer-intro)
 
-### SCINet - Scientific Computing Network, USDA ARS funded project
+### SCINet
+**Scientific Computing Network, USDA ARS funded project**
 
 * go to [SCINet Network](02-SCINET/01-scient-network-intro)
 
-### ISU HPC - HPC clusters at Iowa State University
+### ISU HPC
+**HPC clusters at Iowa State University**
 
 * go to [ISU HPC](03-ISUHPC/01-isu-hpc-intro)
 
