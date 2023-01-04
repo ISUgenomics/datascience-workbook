@@ -36,8 +36,14 @@ The most useful shortcut you need to learn is `Ctrl+Shift+p` (or `Cmd+Shift+p` o
  <tr><td><blockcode>Ctrl+Shift+y</blockcode></td><td>Debug Console</td></tr>
   <tr><td><blockcode>Ctrl+Shift+u</blockcode></td><td>Output</td></tr>
   <tr><td><blockcode>F5</blockcode></td><td>Start Debugging</td></tr>
-  <tr><td><blockcode>Ctrl+F5</blockcode></td><td>Run without Debugging</td></tr>
+  <tr><td><blockcode>Ctrl+F5</blockcode></td><td>Run without Debugging</td></tr>  
+  <tr><td><blockcode>Ctrl+k Ctrl+t</blockcode></td><td>Change Theme</td></tr>
 </tbody></table>
+
+## Select a theme
+VSCode has several inbuilt color themes (dark and light background) which can be selected by pressing `Ctrl+k Ctrl+t` shortcut keys or from the 'Manage' icon at lower left corner. <br>
+<br>
+![theme](assets/images/VSC_theme.png) 
 
 ## Open a project
 To open a project, go to `File` menu and select the `Open Folder` option. Select the folder containing your project files. <br>
