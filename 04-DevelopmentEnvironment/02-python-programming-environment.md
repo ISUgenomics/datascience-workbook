@@ -91,6 +91,7 @@ Overall, JupyterLab is a useful tool for interactive computing and data analysis
 ## **2. Online coding platforms**
 
 There are also online platforms that allow you to write and run Python code directly in your web browser, without the need to install anything on your local computer. Some examples include:
+* <a href="https://www.python.org/shell/" target="_blank">Python Shell  ⤴</a>, includes an online console from PythonAnywhere; use it right away without creating an account or signing-in
 * <a href="https://www.codecademy.com/" target="_blank">CodeAcademy  ⤴</a>, includes a code editor and interactive exercises to help you learn programming; offers interactive courses and tutorials on a variety of programming languages, including Python
 * <a href="https://repl.it/" target="_blank">Repl.it  ⤴</a>, includes a code editor, debugger, and integrations with various tools and services; supports a wide range of programming languages, including Python
 * <a href="https://trinket.io/" target="_blank">Trinket  ⤴</a>, includes a code editor, debugger, and integrations with various tools and services; supports a number of programming languages, including Python
