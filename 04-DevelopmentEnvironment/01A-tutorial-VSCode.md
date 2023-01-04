@@ -14,7 +14,7 @@ header:
 VSCode is an editor made for coding and debugging. It supports multiple programming languages and includes features such as syntax highlighting, autocomplete, and debugging tools. In addition to its powerful editing capabilities, VSCode also offers integrated support for Git, the popular version control system. This allows user to manage code and collaborate with other team members. In this tutorial, I will get you started with using Visual Studio Code and using some of its useful features. <br>
 
 ## Installation
-VSCode can be downloaded from <a href="https://code.visualstudio.com/download" target="_blank">VSCode website</a>. Once the download is complete, run the installer to install VSCode on your system. <br>
+VSCode can be downloaded from <a href="https://code.visualstudio.com/download" target="_blank">VSCode website</a>. Once the download is complete, run the installer to install VSCode on your system and run the application once installed. <br>
 <br>
 ![logo](assets/images/VSC_logo.png)
 
@@ -40,12 +40,13 @@ The most useful shortcut you need to learn is `Ctrl+Shift+p` (or `Cmd+Shift+p` o
   <tr><td><blockcode>Ctrl+k Ctrl+t</blockcode></td><td>Change Theme</td></tr>
 </tbody></table>
 
-## Select a theme
-VSCode has several inbuilt color themes (dark and light background) which can be selected by pressing `Ctrl+k Ctrl+t` shortcut keys or from the 'Manage' icon at lower left corner. <br>
+## Select a Theme
+VSCode has several inbuilt color themes (dark and light background) which can be selected by pressing `Ctrl+k Ctrl+t` shortcut keys or from the 'Manage' icon at lower left corner. A list of theme options will open up and you can select the one you like. I am using Dark High Contrast theme for pictures in this tutorial. <br>
 <br>
 ![theme](assets/images/VSC_theme.png) 
+<br>
 
-## Open a project
+## Open a Project
 To open a project, go to `File` menu and select the `Open Folder` option. Select the folder containing your project files. <br>
 <br>
 ![open](assets/images/VSC_open.png) <br>
