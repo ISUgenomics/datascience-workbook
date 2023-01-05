@@ -24,14 +24,14 @@ Installing any software on Windows usually involves some common steps:
 <summary>Reset an old laptop</summary> 
 
 
-* Get password from previous account holder to login
-* Reset Windows
++ Get password from previous account holder to login <br>
++ Reset Windows
   * Go to settings
   * search: reset this PC
   * Click 'Get started' or 'Reset' under 'Reset this PC'  
-  * You can choose to keep the files or delete all data
-* Log in with new account
-* Download a better internet browser
+  * You can choose to keep the files or delete all data <br>
++ Log in with new account <br>
++ Download a better internet browser
 </details>
 <br>
 
