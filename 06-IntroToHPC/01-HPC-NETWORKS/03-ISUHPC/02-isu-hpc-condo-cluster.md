@@ -34,7 +34,7 @@ cp /home/$USER/test.txt /myfiles/Users/$USER/
 * Check the <a href="https://www.hpc.iastate.edu/guides/introduction-to-hpc-clusters/getting-data-to-and-from-the-cluster" target="_blank">Data Transfer guide</a> for more information about data transfers
 * SLURM job <a href="https://www.hpc.iastate.edu/guides/condo-2017/slurm-job-script-generator-for-condo" target="_blank">script generator for Condo</a>
 * Check out the <a href="https://datascience.101workbook.org/06-IntroToHPC/05-JOB-QUEUE/01-SLURM/01-slurm-basics" target="_blank">SLURM Basics</a> to learn about running your job on Condo or any other HPC Cluster
-* The <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/03-isu-hpc-nova-cluster" target="_blank">Nova Cluster tutorial</a> page has more information that applies to Condo cluster as well
+* The <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/03-isu-hpc-nova-cluster" target="_blank">Nova Cluster tutorial</a> page has more information that applies to Condo cluster as well, such as submitting a job
 
 
 ___

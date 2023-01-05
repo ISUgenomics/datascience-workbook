@@ -29,6 +29,36 @@ The first time you use the <a href="https://datascience.101workbook.org/06-Intro
 
 You need to answer yes to continue. You will also need to use Google Authenticator for logging in to Nova. More device specific information about Google Authenticator can be found in the <a href="https://www.hpc.iastate.edu/guides/nova/access-and-login" target="_blank">access guide</a>. Once logged in you can start using Nova cluster and submit jobs using <a href="https://datascience.101workbook.org/06-IntroToHPC/05-JOB-QUEUE/01-SLURM/01-slurm-introduction" target="_blank">SLURM Workload Manager</a>. SLURM is used to allocate memory and processors to an input job on Nova. If not familiar with the script, use this <a href="https://www.hpc.iastate.edu/guides/nova/slurm-script-generator-for-nova" target="_blank">script generator for Nova.</a> Input your requirements and it will generate a text script. You can then copy this script in a text file, add your commands at the bottom and then submit the job. Check out the <a href="https://datascience.101workbook.org/06-IntroToHPC/05-JOB-QUEUE/01-SLURM/01-slurm-basics" target="_blank">SLURM Basics</a> to learn about running your job on Nova or any other HPC Cluster.
 
+### Example job script
+
+```
+#!/bin/bash
+
+#SBATCH --time=01:00:00   # walltime limit (HH:MM:SS)
+#SBATCH --nodes=1   # number of nodes
+#SBATCH --ntasks-per-node=36   # 36 processor core(s) per node 
+#SBATCH --mail-user=netid@iastate.edu
+#SBATCH --mail-type=begin
+#SBATCH --mail-type=end
+
+# LOAD MODULES, INSERT CODE, AND RUN YOUR PROGRAMS HERE
+module load modulename
+your code/commands
+```
+
+Copy/paste this job script into a text file and submit with the command:
+
+``` 
+sbatch filename 
+```
+
+Check your queued jobs:
+
+```
+squeue -u <your_netID> 
+```
+
+
 <br>
 
 ___
