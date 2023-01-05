@@ -46,7 +46,7 @@ module load modulename
 your code/commands
 ```
 
-Copy/paste this job script into a text file and submit with the command:
+Copy/paste the above job script into a text file, add your modules and commands, and submit with the following command:
 
 ``` 
 sbatch filename 
