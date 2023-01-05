@@ -207,7 +207,7 @@ The SCINet HPC System is three-component, including:
 
 To fully understand the user guides, first familiarize yourself with the <a href="https://scinet.usda.gov/guides/access/glossary#scinet-nomenclature" target="_blank">SCINet nomenclature  ⤴</a>.
 
-## Access Guides
+## **Access Guides**
 
 Explore comprehensive user guides in category: <a href="https://scinet.usda.gov/guides/#access-guides" target="_blank">Access Guides  ⤴</a>
 * <b><a href="https://scinet.usda.gov/guides/access/login#logging-in-to-scinet" target="_blank">Logging in to SCINet  ⤴</a></b>
@@ -232,7 +232,7 @@ Explore comprehensive user guides in category: <a href="https://scinet.usda.gov/
   * <a href="https://scinet.usda.gov/guides/access/vpn#openconnect-vpn" target="_blank">OpenConnect VPN  ⤴</a>
 
 
-## Ceres vs. Atlas clusters
+## **Ceres vs. Atlas clusters**
 
 <b><a href="https://scinet.usda.gov/guides/resources/ceresatlasdifferences#differences-between-ceres-and-atlas" target="_blank">Differences between Ceres and Atlas  ⤴</a></b>
 * <a href="https://scinet.usda.gov/guides/resources/ceresatlasdifferences#quotas" target="_blank">Quotas [project & home directories]  ⤴</a>
@@ -325,7 +325,7 @@ In the one-page documentation you will find the sections listed below. To naviga
     * <a href="https://scinet.usda.gov/guides/software/singularity#singularity-containers" target="_blank">Singularity Containers  ⤴</a>
 
 
-## SCINet Data Transfer & Storage
+# SCINet Data Transfer & Storage
 
 The SCINet HPC infrastructure contains data storage distributed among locations and intended for various purposes:
 * Tier 1 Storage on each HPC cluster (*Ceres, Atlas*), is a **local storage** for code, data, and intermediate results that are NOT backed up.
