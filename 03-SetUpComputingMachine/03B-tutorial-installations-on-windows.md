@@ -21,7 +21,8 @@ Installing any software on Windows usually involves some common steps:
 
 `Tip:` Just google *'[software name] for windows'* to find installation files. Works for most programs.
 <details>
-<summary>Reset an old laptop</summary> <br> 
+<summary>Reset an old laptop</summary> 
+
 
 * Get password from previous account holder to login
 * Reset Windows
@@ -31,7 +32,6 @@ Installing any software on Windows usually involves some common steps:
   * You can choose to keep the files or delete all data
 * Log in with new account
 * Download a better internet browser
-
 </details>
 <br>
 
