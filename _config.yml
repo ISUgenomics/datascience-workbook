@@ -101,7 +101,7 @@ social:
 
 # Analytics
 analytics:
-  provider               : google # false (default), "google", "google-universal", "custom"
+  provider               : "google-gtag" # false (default), "google", "google-universal", "custom"
   google:
     measurement_id       : G-E6BZVYF8ZY
     tracking_id          : # UA-152061762-1
