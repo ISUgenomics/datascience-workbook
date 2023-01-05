@@ -20,7 +20,7 @@ VSCode can be downloaded from <a href="https://code.visualstudio.com/download" t
 
 
 ## Shortcuts
-The most useful shortcut you need to learn is `Ctrl+Shift+p` (or `Cmd+Shift+p` on mac) which opens the search bar for all commands. You can search for all available commands and their shortcuts. Below is a list of some useful shortcuts and the commands on windows (change `Ctrl` with `Cmd` on mac):
+The most useful shortcut you need to learn is `Ctrl+Shift+p` (or `Cmd+Shift+p` on mac) which opens the search bar for all commands. You can search for all available commands and their shortcuts. Some commands do not have shortcuts but can still be selected from this search bar. Open Keyboard Shortcuts with `Ctrl+k Ctrl+s` to get the whole list and configure/add shortcut keys to commands you use. Below is a list of some useful default shortcuts and the commands on windows (change `Ctrl` with `Cmd` on mac):
 <br>
 <table>
 <thead><tr><th>Shortcut</th><th>Command</th></tr></thead><tbody>
@@ -95,11 +95,11 @@ Another option is to use the shortcut to find all commands mentioned earlier, `C
 git clone <Github Repo> <Local Directory>
 ```
 
-If you open a new file or folder from your local computer which is not a cloned Git repo, VSC will give you an option to initialize the repository. <br>
+If you open a new file or folder from your local computer which is not a cloned Git repo, VSC will give you an option to initialize the repository in Source Control. <br>
 <br>
 ![init](assets/images/VSC_initialize.png) <br>
 <br>
-Once you initialize or clone, the contents of the open project folder will appear. You can now stage changes by clicking on the plus sign next to your file. <br>
+Once you initialize or clone, the contents of the open project folder will appear. You can start working on your project now, `Ctrl+s` to save progress, and stage changes by clicking on the plus sign next to your file. <br>
 <br>
 ![stage](assets/images/VSC_stage.png) <br>
 <br>
