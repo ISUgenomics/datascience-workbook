@@ -372,6 +372,7 @@ p4 <- p3 + geom_boxplot(data = fam4, colour = lines4, fill = fill4)
 ___
 # Further Reading
 * [Tutorial: Creating Heatmaps in R](04-rstudio-tutorial-heatmap-plot)
+* [Creating Heatmaps in R using ComplexHeatmap](05-rstudio-tutorial-ComplexHeatmap)
 
 
 ___
