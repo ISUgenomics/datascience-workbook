@@ -30,7 +30,7 @@ Add the following sentence as an acknowledgment <b>for using CERES</b> as a reso
 </span>
 </div><br>
 
-## 0. Before you get started
+## **Before you get started**
 
 Before you get started actively using the SCINet resources, perform the A, B, and C steps to familiarize yourself with the SCINet initiative.
 
@@ -196,7 +196,7 @@ Finally, contact other SCINet users on the <b><a href="https://forum.scinet.usda
 
 *The forum is actively monitored by community members who are willing to help others, so you may be able to get an answer to your question in a short amount of time. Another benefit is that you can get a variety of perspectives on your question. By asking your question on a forum, you can get input from multiple people who may have different experiences and expertise. Finally, the SCINet forum can be a good resource for learning more about a particular topic. By reading through previous discussions and questions on the forum, you may be able to learn more about the issue and get ideas for your own questions.*
 
-## SCINet HPC Systems
+# SCINet HPC Systems
 
 The SCINet HPC System is three-component, including:
 * <a href="https://scinet.usda.gov/guides/resources/ceres#scinet-ceres" target="_blank">Ceres cluster  ⤴</a>, located in Ames (IA), with more than 9000 compute cores (18000 logical cores) with 110 terabytes (TB) of total RAM, 500TB of total local storage, and 3.7 petabyte (PB) of shared storage.
@@ -207,7 +207,7 @@ The SCINet HPC System is three-component, including:
 
 To fully understand the user guides, first familiarize yourself with the <a href="https://scinet.usda.gov/guides/access/glossary#scinet-nomenclature" target="_blank">SCINet nomenclature  ⤴</a>.
 
-### *Access Guides*
+## Access Guides
 
 Explore comprehensive user guides in category: <a href="https://scinet.usda.gov/guides/#access-guides" target="_blank">Access Guides  ⤴</a>
 * <b><a href="https://scinet.usda.gov/guides/access/login#logging-in-to-scinet" target="_blank">Logging in to SCINet  ⤴</a></b>
@@ -232,7 +232,7 @@ Explore comprehensive user guides in category: <a href="https://scinet.usda.gov/
   * <a href="https://scinet.usda.gov/guides/access/vpn#openconnect-vpn" target="_blank">OpenConnect VPN  ⤴</a>
 
 
-### *Ceres vs. Atlas clusters*
+## Ceres vs. Atlas clusters
 
 <b><a href="https://scinet.usda.gov/guides/resources/ceresatlasdifferences#differences-between-ceres-and-atlas" target="_blank">Differences between Ceres and Atlas  ⤴</a></b>
 * <a href="https://scinet.usda.gov/guides/resources/ceresatlasdifferences#quotas" target="_blank">Quotas [project & home directories]  ⤴</a>
@@ -245,7 +245,7 @@ Explore comprehensive user guides in category: <a href="https://scinet.usda.gov/
   * <a href="https://scinet.usda.gov/guides/resources/ceresatlasdifferences#salloc" target="_blank">salloc command ⤴</a>
 
 
-#### *Ceres Guides*
+### *Ceres Guides*
 Ceres login node: <b>@ceres.scinet.usda.gov</b> <br>
 Ceres transfer node: <b>@ceres-dtn.scinet.usda.gov</b>
 
@@ -280,7 +280,7 @@ Ceres transfer node: <b>@ceres-dtn.scinet.usda.gov</b>
     * <a href="https://scinet.usda.gov/guides/software/singularity#singularity-containers" target="_blank">Singularity Containers  ⤴</a>
 
 
-#### *Atlas Guides*
+### *Atlas Guides*
 Atlas login node: <b>@atlas-login.hpc.msstate.edu</b> <br>
 Atlas transfer node: <b>@atlas-dtn.hpc.msstate.edu</b>
 
