@@ -21,12 +21,12 @@ Installing any software on Windows usually involves some common steps:
 
 `Tip:` Just google *'[software name] for windows'* to find installation files. Works for most programs.
 
-#### Reset an old laptop 
+### Reset an old laptop 
 
 + Get password from previous account holder to login 
 + Reset Windows
   * Go to settings
-  * search: reset this PC
+  * Search: Reset this PC
   * Click 'Get started' or 'Reset' under 'Reset this PC'  
   * You can choose to keep the files or delete all data
 + Log in with new account 
