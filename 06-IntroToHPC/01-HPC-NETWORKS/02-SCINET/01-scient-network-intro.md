@@ -62,7 +62,7 @@ Reading the SCINet Policy before you get started using the SCINet resources is i
   </tr>
   <tr>
     <td><img src="../../assets/images/01_hpc_scinet_faq.png" width="600px" style="vertical-align: top;"></td>
-    <td><img src="../../assets/images/01_hpc_scinet_guides.png" width="580px" style="vertical-align: top;"></td>
+    <td><img src="../../assets/images/01_hpc_scinet_guides.png" width="600px" style="vertical-align: top;"></td>
   </tr>
   <tr>
     <th><a href="https://" target="_blank">3. contact VRSC  ⤴</a></th>
