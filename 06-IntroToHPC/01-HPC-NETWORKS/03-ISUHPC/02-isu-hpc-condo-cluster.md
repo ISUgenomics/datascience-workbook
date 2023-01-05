@@ -36,6 +36,7 @@ cp /home/$USER/test.txt /myfiles/Users/$USER/
 * Check out the <a href="https://datascience.101workbook.org/06-IntroToHPC/05-JOB-QUEUE/01-SLURM/01-slurm-basics" target="_blank">SLURM Basics</a> to learn about running your job on Condo or any other HPC Cluster
 * The <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/03-isu-hpc-nova-cluster" target="_blank">Nova Cluster tutorial</a> page has more information that applies to Condo cluster as well, such as submitting a job
 
+<br>
 
 ___
 # Further Reading
