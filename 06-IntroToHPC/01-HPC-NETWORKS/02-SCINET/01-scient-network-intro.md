@@ -264,7 +264,7 @@ Explore comprehensive user guides in category: <a href="https://scinet.usda.gov/
 |----------------------------|----------------------------|-------|
 |login node                  | @ceres.scinet.usda.gov     | @atlas-login.hpc.msstate.edu |
 |transfer node               | @ceres-dtn.scinet.usda.gov | @atlas-dtn.hpc.msstate.edu |
-|Open OnDemand               | http://ceres-ood.scinet.usda.gov | https://atlas-ood.hpc.msstate.edu |
+|Open OnDemand               | <a href="http://ceres-ood.scinet.usda.gov" target="_blank">http://ceres-ood.scinet.usda.gov</a> | <a href="https://atlas-ood.hpc.msstate.edu" target="_blank">https://atlas-ood.hpc.msstate.edu</a> |
 |**home** directory quota    | displayed at login ; <br>type `my_quotas` | type `quota -s` |
 |**project** directory quota | displayed at login ; <br>type `my_quotas` | default 1TB ; <br>type `/apps/bin/reportFSUsage -p proj1,proj2,proj3`|
 |preinstalled **software** <img width="160"/> | <a href="https://scinet.usda.gov/guides/software/preinstalled#software-preinstalled-on-ceres" target="_blank">Software preinstalled on Ceres  ⤴</a> <br><a href="https://scinet.usda.gov/guides/software/singularity#ceres-container-repository/" target="_blank">Ceres Container Repository  ⤴</a> <img width="300"/>| Singularity container image files in the Ceres Container Repository are synced to Atlas daily. <br>For more information about software on Atlas, see <a href="https://www.hpc.msstate.edu/computing/atlas/" target="_blank">Atlas Documentation  ⤴</a>. |
