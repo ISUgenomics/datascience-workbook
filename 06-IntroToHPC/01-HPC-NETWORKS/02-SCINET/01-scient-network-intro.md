@@ -260,7 +260,7 @@ Explore comprehensive user guides in category: <a href="https://scinet.usda.gov/
 
 **General settings**
 
-| feature                    | <div style="width:300px">Ceres</div> | Atlas |
+| feature                    | Ceres<img width=300/> | Atlas |
 |----------------------------|----------------------------|-------|
 |login node                  | @ceres.scinet.usda.gov     | @atlas-login.hpc.msstate.edu |
 |transfer node               | @ceres-dtn.scinet.usda.gov | @atlas-dtn.hpc.msstate.edu |
@@ -271,7 +271,7 @@ Explore comprehensive user guides in category: <a href="https://scinet.usda.gov/
 
 **Submitting jobs**
 
-| feature   | <div style="width:200px">Ceres</div> | <div style="width:200px">Atlas</div> | notes |
+| feature   | Ceres<img width=150/> | Atlas<img width=150/> | notes |
 |-----------|---------------------|---------------------|-------|
 |job scheduler | slurm | slurm | <a href="https://slurm.schedmd.com/quickstart.html" target="_blank">documentation  ⤴</a> ; <a href="https://scinet.usda.gov/guides/use/running-jobs#useful-slurm-commands" target="_blank">Useful SLURM Commands  ⤴</a> ; <br><a href="https://scinet.usda.gov/guides/use/running-jobs#interactive-mode" target="_blank">Interactive Mode (use node live) ⤴</a> ; <a href="https://scinet.usda.gov/guides/use/running-jobs#batch-mode" target="_blank">Batch Mode (submit job) ⤴</a> |
 |default walltime | partition’s max simulation time | 15 min | see *partitions* row in this table to learn about partition’s max simulation time on Ceres <br> on Atlas max walltime depends on the selected queues|
