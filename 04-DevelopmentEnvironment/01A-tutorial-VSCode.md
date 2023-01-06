@@ -44,8 +44,7 @@ The most useful shortcut you need to learn is `Ctrl+Shift+p` (or `Cmd+Shift+p` o
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span>
-Using a web browser, log in to your Github, go to your repository and press the period (.) key. You can now use VSCode in the browser (without installing VSCode).
-Exit by clicking 'Github' in lower left corner.
+Using a web browser, log in to your Github, go to your repository and press the period "." key. You can now use VSCode in the browser (without installing VSCode).
 </span>
 </div><br>
 
