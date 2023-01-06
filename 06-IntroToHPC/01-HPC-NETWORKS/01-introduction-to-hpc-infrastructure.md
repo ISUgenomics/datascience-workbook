@@ -42,7 +42,7 @@ Overall, familiarity with Unix can help users get the most out of their HPC syst
 </div><br>
 
 
-## HPC infrastructure
+# HPC infrastructure
 
 HPC infrastructure often consists of **clusters of computers** that are connected together and **work in parallel** to solve a problem, and they may also **use specialized hardware** such as graphics processing units (GPUs) or field-programmable gate arrays (FPGAs) **to accelerate performance**. Some HPC systems are **located in specialized facilities called "*data centers*"**, which are designed to house and maintain large numbers of computers and other equipment. These data centers may be owned and operated by research institutions, government agencies, or private companies. In some cases, HPC systems may be distributed across multiple locations (*e.g., SCINet HPC*), with each location contributing its own resources to the network (*e.g., computing nodes, large scale storage, high-speed network*).
 
