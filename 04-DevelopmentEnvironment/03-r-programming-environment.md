@@ -38,7 +38,7 @@ To perform a simple arithmetic calculation, you can enter the following into the
 ##If you press enter you will get following output
 [1] 4
 ```
-In this example, the > symbol indicates that you are entering a command, and the [1] indicates the output of that command. In this case, the output is the result of the calculation 2 + 2, which is 4.
+In this example, the `>` symbol indicates that you are entering a command, and the `[1]` indicates the output of that command. In this case, the output is the result of the calculation 2 + 2, which is 4.
 
 In addition to basic arithmetic operations, R also has a variety of functions that can be used to perform more complex statistical analyses. For example, you can use the mean() function to calculate the mean of a set of numbers:
 
@@ -58,7 +58,7 @@ R also has powerful capabilities for visualizing data. For example, you can use 
 ![R_plot](assets/images/R_plot.png) <br>
  <br>
 
- With its powerful statistical and data visualization capabilities, R is a valuable tool for anyone working with data. Whether you are a beginner just starting out with R or an experienced user looking to expand your knowledge, there is always more to learn about this versatile programming language. <br>
+ With its powerful statistical and data visualization capabilities, R is a valuable tool for anyone working with data.  <br>
 <br>
 
 

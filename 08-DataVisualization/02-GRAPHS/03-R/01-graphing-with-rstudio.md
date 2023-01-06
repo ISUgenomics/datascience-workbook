@@ -23,7 +23,7 @@ ___
 * [Setting Up an RStudio Environment](02-setting-up-rstudio)
 * [Tutorial: Creating Boxplots in R](03-rstudio-tutorial-box-plot)
 * [Tutorial: Creating Heatmaps in R](04-rstudio-tutorial-heatmap-plot)
-
+* [Creating Heatmaps in R using ComplexHeatmap](05-rstudio-tutorial-ComplexHeatmap)
 
 ___
 

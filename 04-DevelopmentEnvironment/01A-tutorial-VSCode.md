@@ -20,7 +20,7 @@ VSCode can be downloaded from <a href="https://code.visualstudio.com/download" t
 
 
 ## Shortcuts
-The most useful shortcut you need to learn is `Ctrl+Shift+p` (or `Cmd+Shift+p` on mac) which opens the search bar for all commands. You can search for all available commands and their shortcuts. Below is a list of some useful shortcuts and the commands on windows (change `Ctrl` with `Cmd` on mac):
+The most useful shortcut you need to learn is `Ctrl+Shift+p` (or `Cmd+Shift+p` on mac) which opens the search bar for all commands. You can search for all available commands and their shortcuts. Some commands do not have shortcuts but can still be selected from this search bar. Open Keyboard Shortcuts with `Ctrl+k Ctrl+s` to get the whole list and configure/add shortcut keys to commands you use. Below is a list of some useful default shortcuts and the commands on windows (change `Ctrl` with `Cmd` on mac):
 <br>
 <table>
 <thead><tr><th>Shortcut</th><th>Command</th></tr></thead><tbody>
@@ -77,19 +77,33 @@ VSCode has powerful tools to help you find and fix errors in your code. To start
 <br>
 
 ## Version Control
-If you are not familiar with Git, check out this tutorial about <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02-intro-to-github" target="_blank">Intro to GitHub</a>. It is possible to work with Git repositories directly from the VSC editor. You can clone a repo, or initialize a repo for your project from the terminal. `Source Control` pane on the left is used to manage your Git repositories. The common Git operations such as Pull, Push, Clone, Commit, and Create Branch can be performed from here. <br>
+If you are not familiar with Git, check out this tutorial about <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02-intro-to-github" target="_blank">Intro to GitHub</a>. It is possible to work with Git repositories directly from the VSC editor. You can clone a repo, or initialize a repo for your project from the terminal. `Source Control` pane on the left is used to manage your Git repositories. You will need to log in to your GitHub account the first time you use Git. The common Git operations such as Pull, Push, Clone, Commit, and Create Branch can be performed from here. <br>
 <br>
 ![VC](assets/images/VSC_sourcecontrol.png) <br>
 <br>
-If this is not already a git repo, VSC will ask you to initialize the repository. You will need to log in to your GitHub account the first time you use Git. <br>
+You can clone an existing repo after clicking Source Control, if you have no files/folders open the following option appears: <br>
+<br>
+![Clone1](assets/images/VSC_clone1.png) <br>
+<br>
+If you have something open already, you can still clone from `...` options drop down menu. <br>
+<br>
+![Clone2](assets/images/VSC_clone2.png) <br>
+<br>
+Another option is to use the shortcut to find all commands mentioned earlier, `Ctrl+Shift+p` and search for `Git Clone`. Alternatively, you can always use the Terminal within VSCode to perform functions like Clone.
+
+```
+git clone <Github Repo> <Local Directory>
+```
+
+If you open a new file or folder from your local computer which is not a cloned Git repo, VSC will give you an option to initialize the repository in Source Control. <br>
 <br>
 ![init](assets/images/VSC_initialize.png) <br>
 <br>
-Once you initialize, the contents of the open project folder will appear. You can now stage changes by clicking on the plus sign next to the file you are working with, <br>
+Once you initialize or clone, the contents of the open project folder will appear. You can start working on your project now, `Ctrl+s` to save progress, and stage changes by clicking on the plus sign next to your file. <br>
 <br>
 ![stage](assets/images/VSC_stage.png) <br>
 <br>
-or stage all changed files together by clicking on plus sign next to Changes. <br>
+You can also stage all changed files together by clicking on plus sign next to `Changes`. <br>
 <br>
 ![Allstage](assets/images/VSC_Allchanges.png) <br>
 <br>

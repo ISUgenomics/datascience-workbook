@@ -20,19 +20,18 @@ Installing any software on Windows usually involves some common steps:
 - Finish installation
 
 `Tip:` Just google *'[software name] for windows'* to find installation files. Works for most programs.
-<details>
-<summary>Reset an old laptop</summary> <br> 
 
-* Get password from previous account holder to login
-* Reset Windows
+### Reset an old laptop 
+
++ Get password from previous account holder to login 
++ Reset Windows
   * Go to settings
-  * search: reset this PC
+  * Search: Reset this PC
   * Click 'Get started' or 'Reset' under 'Reset this PC'  
   * You can choose to keep the files or delete all data
-* Log in with new account
-* Download a better internet browser
++ Log in with new account 
++ Download a better internet browser
 
-</details>
 <br>
 
 # Developer tools
