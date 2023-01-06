@@ -39,6 +39,15 @@ The most useful shortcut you need to learn is `Ctrl+Shift+p` (or `Cmd+Shift+p` o
   <tr><td><blockcode>Ctrl+F5</blockcode></td><td>Run without Debugging</td></tr>  
   <tr><td><blockcode>Ctrl+k Ctrl+t</blockcode></td><td>Change Theme</td></tr>
 </tbody></table>
+<br>
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span>
+Using a web browser, log in to your Github, go to your repository and press the period (.) key. You can now use VSCode in the browser (without installing VSCode).
+Exit by clicking 'Github' in lower left corner.
+</span>
+</div><br>
 
 ## Select a Theme
 VSCode has several inbuilt color themes (dark and light background) which can be selected by pressing `Ctrl+k Ctrl+t` shortcut keys or from the 'Manage' icon at lower left corner. A list of theme options will open up and you can select the one you like. I am using Dark High Contrast theme for pictures in this tutorial. <br>
