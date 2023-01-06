@@ -260,19 +260,19 @@ Explore comprehensive user guides in category: <a href="https://scinet.usda.gov/
 
 **General settings**
 
-| feature   | Ceres | Atlas |
-|-----------|-------|-------|
-|login node | @ceres.scinet.usda.gov | @atlas-login.hpc.msstate.edu |
-|transfer node | @ceres-dtn.scinet.usda.gov | @atlas-dtn.hpc.msstate.edu |
-|Open OnDemand | http://ceres-ood.scinet.usda.gov | https://atlas-ood.hpc.msstate.edu |
-|**home** directory quota | displayed at login ; type `my_quotas` | type `quota -s` |
-|**project** directory quota| displayed at login ; type `my_quotas` | default 1TB ; type `/apps/bin/reportFSUsage -p proj1,proj2,proj3`|
-|preinstalled **software** | <a href="https://scinet.usda.gov/guides/software/preinstalled#software-preinstalled-on-ceres" target="_blank">Software preinstalled on Ceres  ⤴</a> <br><a href="https://scinet.usda.gov/guides/software/singularity#ceres-container-repository/" target="_blank">Ceres Container Repository  ⤴</a> | Singularity container image files in the Ceres Container Repository are synced to Atlas daily. <br>For more information about software on Atlas, see <a href="https://www.hpc.msstate.edu/computing/atlas/" target="_blank">Atlas Documentation  ⤴</a>. |
+| feature                    | Ceres                      | Atlas |
+|----------------------------|----------------------------|-------|
+|login node                  | @ceres.scinet.usda.gov     | @atlas-login.hpc.msstate.edu |
+|transfer node               | @ceres-dtn.scinet.usda.gov | @atlas-dtn.hpc.msstate.edu |
+|Open OnDemand               | http://ceres-ood.scinet.usda.gov | https://atlas-ood.hpc.msstate.edu |
+|**home** directory quota    | displayed at login ; <br>type `my_quotas` | type `quota -s` |
+|**project** directory quota | displayed at login ; <br>type `my_quotas` | default 1TB ; type `/apps/bin/reportFSUsage -p proj1,proj2,proj3`|
+|preinstalled **software**   | <a href="https://scinet.usda.gov/guides/software/preinstalled#software-preinstalled-on-ceres" target="_blank">Software preinstalled on Ceres  ⤴</a> <br><a href="https://scinet.usda.gov/guides/software/singularity#ceres-container-repository/" target="_blank">Ceres Container Repository  ⤴</a> | Singularity container image files in the Ceres Container Repository are synced to Atlas daily. <br>For more information about software on Atlas, see <a href="https://www.hpc.msstate.edu/computing/atlas/" target="_blank">Atlas Documentation  ⤴</a>. |
 
 **Submitting jobs**
 
-| feature   | Ceres | Atlas | notes |
-|-----------|-------|-------|-------|
+| feature   | Ceres               | Atlas               | notes |
+|-----------|---------------------|---------------------|-------|
 |job scheduler | slurm | slurm | <a href="https://slurm.schedmd.com/quickstart.html" target="_blank">documentation  ⤴</a> ; <a href="https://scinet.usda.gov/guides/use/running-jobs#useful-slurm-commands" target="_blank">Useful SLURM Commands  ⤴</a> ; <br><a href="https://scinet.usda.gov/guides/use/running-jobs#interactive-mode" target="_blank">Interactive Mode (use node live) ⤴</a> ; <a href="https://scinet.usda.gov/guides/use/running-jobs#batch-mode" target="_blank">Batch Mode (submit job) ⤴</a> |
 |default walltime | partition’s max simulation time | 15 min | see *partitions* row in this table to learn about partition’s max simulation time on Ceres <br> on Atlas max walltime depends on the selected queues|
 |default allocation | 2 cores on 1 node | 1 core on 1 node | on Ceres hyper-threading is turned on (the smallest allocation is 2 logical cores) |
