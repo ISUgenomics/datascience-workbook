@@ -18,13 +18,24 @@ The SCINet initiative is an effort by the USDA Agricultural Research Service (<a
 3. training in scientific computing
 4. virtual research support
 
-An official **SCINet website** is hosted on the United States government domain at <a href="https://scinet.usda.gov" target="_blank">https://scinet.usda.gov  ⤴</a>
+An official **SCINet website** is hosted on the United States government domain at <b><a href="https://scinet.usda.gov" target="_blank">https://scinet.usda.gov  ⤴</a></b>
 
-![Scinet website](../../assets/images/01_hpc_scinet_web.png)
+*This introduction to SCINet features much of its material sourced from the SCINet website. <br>
+The SCINet homepage is shown on the screenshoot below.*
+
+![Scinet website](../../assets/images/01_hpc_scinet_web.png) <br>
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+Use the SCINet website to request SCINet accounts, access user guides, get technical support, and find out about upcoming and previous training events.
+</span>
+</div><br>
+
+### *Cite SCINet*
 
 <div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">Cite SCINet:</span>
-<br><span style="font-style:italic;">
+<span style="font-style:italic;">
 Add the following sentence as an acknowledgment <b>for using CERES</b> as a resource in your manuscripts meant for publication: <br><br>
 <i>“This research used resources provided by the SCINet project of the USDA Agricultural Research Service, ARS project number 0500-00093-001-00-D.”</i>
 </span>
@@ -33,6 +44,13 @@ Add the following sentence as an acknowledgment <b>for using CERES</b> as a reso
 ## **Before you get started**
 
 Before you get started actively using the SCINet resources, perform the A, B, and C steps to familiarize yourself with the SCINet initiative.
+
+**A.** [Sign up for a SCINet account](https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/01-scient-network-intro#a-sign-up-for-a-scinet-account)
+
+**B.** [Read the SCINet Policy](https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/01-scient-network-intro#b-read-the-scinet-policy)
+
+**C.** [Know where to find help](https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/01-scient-network-intro#c-know-where-to-find-help)
+
 
 ### *A. Sign up for a SCINet account*
 
@@ -198,10 +216,16 @@ Finally, contact other SCINet users on the <b><a href="https://forum.scinet.usda
 
 # SCINet HPC Systems
 
+A High Performance Computing (HPC) system offers a computational environment that can quickly process data and perform intricate computations at high speeds. To learn more, see the <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/01-introduction-to-hpc-infrastructure" target="_blank">Introduction to HPC infrastructure  ⤴</a>.
+
 The SCINet HPC System is three-component, including:
-* <a href="https://scinet.usda.gov/guides/resources/ceres#scinet-ceres" target="_blank">Ceres cluster  ⤴</a>, located in Ames (IA), with more than 9000 compute cores (18000 logical cores) with 110 terabytes (TB) of total RAM, 500TB of total local storage, and 3.7 petabyte (PB) of shared storage.
-* <a href="https://www.hpc.msstate.edu/computing/atlas/" target="_blank">Atlas cluster  ⤴</a>, located in Starkville (MS), with 8260 processor cores, 101 terabytes of RAM, 8 NVIDIA V100 GPUs, and a Mellanox HDR100 InfiniBand interconnect.
-* <a href="https://scinet.usda.gov/guides/data/data-management" target="_blank">Juno storage  ⤴</a>, located in Beltsville (MD), with a large, multi-petabyte ARS storage device, periodically backed up to tape device.
+* computing nodes that are connected together and configured to a consistent system environment:
+  * <a href="https://scinet.usda.gov/guides/resources/ceres#scinet-ceres" target="_blank">Ceres cluster  ⤴</a>, located in Ames (IA), with more than 9000 compute cores (18000 logical cores) with 110 terabytes (TB) of total RAM, 500TB of total local storage, and 3.7 petabyte (PB) of shared storage.
+  * <a href="https://www.hpc.msstate.edu/computing/atlas/" target="_blank">Atlas cluster  ⤴</a>, located in Starkville (MS), with 8260 processor cores, 101 terabytes of RAM, 8 NVIDIA V100 GPUs, and a Mellanox HDR100 InfiniBand interconnect.
+* data storage to manage and store the data and results:
+  * short-term storage on each computing cluster
+  * <a href="https://scinet.usda.gov/guides/data/data-management" target="_blank">Juno storage  ⤴</a>, located in Beltsville (MD), with a large, multi-petabyte ARS long-term storage, periodically backed up to tape device.
+* high-speed network that facilitates efficient data transfer across compute nodes and communication between network components
 
 > In addition to the Ceres and Atlas clusters, there are <a href="https://scinet.usda.gov/guides/resources/external-computing-resources#external-computing-resources" target="_blank">external computing resources  ⤴</a> available to the SCINet community, including <a href="https://scinet.usda.gov/guides/resources/external-computing-resources#amazon-web-services" target="_blank">Amazon Web Services  ⤴</a>, <a href="https://scinet.usda.gov/guides/resources/external-computing-resources#xsede/" target="_blank">XSEDE  ⤴</a>, and the <a href="https://scinet.usda.gov/guides/resources/external-computing-resources#open-science-grid" target="_blank">Open Science Grid  ⤴</a>.
 
