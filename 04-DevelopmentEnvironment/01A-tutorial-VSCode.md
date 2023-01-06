@@ -14,7 +14,7 @@ header:
 VSCode is an editor made for coding and debugging. It supports multiple programming languages and includes features such as syntax highlighting, autocomplete, and debugging tools. In addition to its powerful editing capabilities, VSCode also offers integrated support for Git, the popular version control system. This allows user to manage code and collaborate with other team members. In this tutorial, I will get you started with using Visual Studio Code and using some of its useful features. <br>
 
 ## Installation
-VSCode can be downloaded from <a href="https://code.visualstudio.com/download" target="_blank">VSCode website</a>. Once the download is complete, run the installer to install VSCode on your system and run the application once installed. <br>
+VSCode can be downloaded from <a href="https://code.visualstudio.com/download" target="_blank">VSCode website ⤴</a>. Once the download is complete, run the installer to install VSCode on your system and run the application once installed. <br>
 <br>
 ![logo](assets/images/VSC_logo.png)
 
@@ -43,7 +43,7 @@ The most useful shortcut you need to learn is `Ctrl+Shift+p` (or `Cmd+Shift+p` o
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
-<br><span>
+<br><span style="font-style:italic;">
 Using a web browser, log in to your Github, go to your repository and press the period "." key. You can now use VSCode in the browser (without installing VSCode).
 </span>
 </div><br>
@@ -67,7 +67,7 @@ You can select a file from the opened folder, or create a new file. <br>
 <br>
 ![newfile](assets/images/VSC_newfile.png) <br>
 <br>
-A new file opens up and you can start writing in it. VSCode is Markdown compatible. Check out the <a href="https://datascience.101workbook.org/09-ProjectManagement/02-DOCUMENTATION/02-intro-to-markdown" target="_blank">Intro to Markdown</a> page to learn more about Markdown. VSCode supports multiple programming languages such as Python, R, Java, C++, JavaScript etc. Check out the <a href="https://code.visualstudio.com/docs/languages/overview" target="_blank">official documentation</a> about programming language support and download the extensions for language(s) of your choice. When you open a file, VSCode detects the language used automatically, but you can also manually change the language mode from lower right corner or by using `Ctrl+k m` shortcut keys. <br>
+A new file opens up and you can start writing in it. VSCode is Markdown compatible. Check out the <a href="https://datascience.101workbook.org/09-ProjectManagement/02-DOCUMENTATION/02-intro-to-markdown" target="_blank">Intro to Markdown ⤴</a> page to learn more about Markdown. VSCode supports multiple programming languages such as Python, R, Java, C++, JavaScript etc. Check out the <a href="https://code.visualstudio.com/docs/languages/overview" target="_blank">official documentation ⤴</a> about programming language support and download the extensions for language(s) of your choice. When you open a file, VSCode detects the language used automatically, but you can also manually change the language mode from lower right corner or by using `Ctrl+k m` shortcut keys. <br>
 <br>
 ![text](assets/images/VSC_text.png)
 <br>
@@ -85,7 +85,7 @@ VSCode has powerful tools to help you find and fix errors in your code. To start
 <br>
 
 ## Version Control
-If you are not familiar with Git, check out this tutorial about <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02-intro-to-github" target="_blank">Intro to GitHub</a>. It is possible to work with Git repositories directly from the VSC editor. You can clone a repo, or initialize a repo for your project from the terminal. `Source Control` pane on the left is used to manage your Git repositories. You will need to log in to your GitHub account the first time you use Git. The common Git operations such as Pull, Push, Clone, Commit, and Create Branch can be performed from here. <br>
+If you are not familiar with Git, check out this tutorial about <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02-intro-to-github" target="_blank">Intro to GitHub ⤴</a>. It is possible to work with Git repositories directly from the VSC editor. You can clone a repo, or initialize a repo for your project from the terminal. `Source Control` pane on the left is used to manage your Git repositories. You will need to log in to your GitHub account the first time you use Git. The common Git operations such as Pull, Push, Clone, Commit, and Create Branch can be performed from here. <br>
 <br>
 ![VC](assets/images/VSC_sourcecontrol.png) <br>
 <br>
