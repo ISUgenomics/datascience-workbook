@@ -18,13 +18,24 @@ The SCINet initiative is an effort by the USDA Agricultural Research Service (<a
 3. training in scientific computing
 4. virtual research support
 
-An official **SCINet website** is hosted on the United States government domain at <a href="https://scinet.usda.gov" target="_blank">https://scinet.usda.gov  ⤴</a>
+An official **SCINet website** is hosted on the United States government domain at <b><a href="https://scinet.usda.gov" target="_blank">https://scinet.usda.gov  ⤴</a></b>
 
-![Scinet website](../../assets/images/01_hpc_scinet_web.png)
+*This introduction to SCINet features much of its material sourced from the SCINet website. <br>
+The SCINet homepage is shown on the screenshoot below.*
+
+![Scinet website](../../assets/images/01_hpc_scinet_web.png) <br>
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+Use the SCINet website to request SCINet accounts, access user guides, get technical support, and find out about upcoming and previous training events.
+</span>
+</div><br>
+
+### *Cite SCINet*
 
 <div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">Cite SCINet:</span>
-<br><span style="font-style:italic;">
+<span style="font-style:italic;">
 Add the following sentence as an acknowledgment <b>for using CERES</b> as a resource in your manuscripts meant for publication: <br><br>
 <i>“This research used resources provided by the SCINet project of the USDA Agricultural Research Service, ARS project number 0500-00093-001-00-D.”</i>
 </span>
@@ -33,6 +44,13 @@ Add the following sentence as an acknowledgment <b>for using CERES</b> as a reso
 ## **Before you get started**
 
 Before you get started actively using the SCINet resources, perform the A, B, and C steps to familiarize yourself with the SCINet initiative.
+
+**A.** [Sign up for a SCINet account](https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/01-scient-network-intro#a-sign-up-for-a-scinet-account)
+
+**B.** [Read the SCINet Policy](https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/01-scient-network-intro#b-read-the-scinet-policy)
+
+**C.** [Know where to find help](https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/01-scient-network-intro#c-know-where-to-find-help)
+
 
 ### *A. Sign up for a SCINet account*
 
@@ -196,12 +214,18 @@ Finally, contact other SCINet users on the <b><a href="https://forum.scinet.usda
 
 *The forum is actively monitored by community members who are willing to help others, so you may be able to get an answer to your question in a short amount of time. Another benefit is that you can get a variety of perspectives on your question. By asking your question on a forum, you can get input from multiple people who may have different experiences and expertise. Finally, the SCINet forum can be a good resource for learning more about a particular topic. By reading through previous discussions and questions on the forum, you may be able to learn more about the issue and get ideas for your own questions.*
 
-# SCINet HPC Systems
+# SCINet HPC System
+
+A High Performance Computing (HPC) system offers a computational environment that can quickly process data and perform intricate computations at high speeds. To learn more, see the <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/01-introduction-to-hpc-infrastructure" target="_blank">Introduction to HPC infrastructure  ⤴</a>.
 
 The SCINet HPC System is three-component, including:
-* <a href="https://scinet.usda.gov/guides/resources/ceres#scinet-ceres" target="_blank">Ceres cluster  ⤴</a>, located in Ames (IA), with more than 9000 compute cores (18000 logical cores) with 110 terabytes (TB) of total RAM, 500TB of total local storage, and 3.7 petabyte (PB) of shared storage.
-* <a href="https://www.hpc.msstate.edu/computing/atlas/" target="_blank">Atlas cluster  ⤴</a>, located in Starkville (MS), with 8260 processor cores, 101 terabytes of RAM, 8 NVIDIA V100 GPUs, and a Mellanox HDR100 InfiniBand interconnect.
-* <a href="https://scinet.usda.gov/guides/data/data-management" target="_blank">Juno storage  ⤴</a>, located in Beltsville (MD), with a large, multi-petabyte ARS storage device, periodically backed up to tape device.
+* **computing nodes** that are connected together and configured to a consistent system environment:
+  * <a href="https://scinet.usda.gov/guides/resources/ceres#scinet-ceres" target="_blank">Ceres cluster  ⤴</a>, located in Ames (IA), with more than 9000 compute cores (18000 logical cores) with 110 terabytes (TB) of total RAM, 500TB of total local storage, and 3.7 petabyte (PB) of shared storage.
+  * <a href="https://www.hpc.msstate.edu/computing/atlas/" target="_blank">Atlas cluster  ⤴</a>, located in Starkville (MS), with 8260 processor cores, 101 terabytes of RAM, 8 NVIDIA V100 GPUs, and a Mellanox HDR100 InfiniBand interconnect.
+* **data storage** to manage and store the data and results:
+  * short-term storage on each computing cluster
+  * <a href="https://scinet.usda.gov/guides/data/data-management" target="_blank">Juno storage  ⤴</a>, located in Beltsville (MD), with a large, multi-petabyte ARS long-term storage, periodically backed up to tape device.
+* **high-speed network** that facilitates efficient data transfer across compute nodes and communication between network components
 
 > In addition to the Ceres and Atlas clusters, there are <a href="https://scinet.usda.gov/guides/resources/external-computing-resources#external-computing-resources" target="_blank">external computing resources  ⤴</a> available to the SCINet community, including <a href="https://scinet.usda.gov/guides/resources/external-computing-resources#amazon-web-services" target="_blank">Amazon Web Services  ⤴</a>, <a href="https://scinet.usda.gov/guides/resources/external-computing-resources#xsede/" target="_blank">XSEDE  ⤴</a>, and the <a href="https://scinet.usda.gov/guides/resources/external-computing-resources#open-science-grid" target="_blank">Open Science Grid  ⤴</a>.
 
@@ -234,7 +258,32 @@ Explore comprehensive user guides in category: <a href="https://scinet.usda.gov/
 
 ## **Ceres vs. Atlas clusters**
 
-<b><a href="https://scinet.usda.gov/guides/resources/ceresatlasdifferences#differences-between-ceres-and-atlas" target="_blank">Differences between Ceres and Atlas  ⤴</a></b>
+**General settings**
+
+| feature   | Ceres | Atlas |
+|-----------|-------|-------|
+|login node | @ceres.scinet.usda.gov | @atlas-login.hpc.msstate.edu |
+|transfer node | @ceres-dtn.scinet.usda.gov | @atlas-dtn.hpc.msstate.edu |
+|Open OnDemand | http://ceres-ood.scinet.usda.gov | https://atlas-ood.hpc.msstate.edu |
+|**home** directory quota | displayed at login ; type `my_quotas` | type `quota -s` |
+|**project** directory quota| displayed at login ; type `my_quotas` | default 1TB ; type `/apps/bin/reportFSUsage -p proj1,proj2,proj3`|
+|preinstalled **software** | <a href="https://scinet.usda.gov/guides/software/preinstalled#software-preinstalled-on-ceres" target="_blank">Software preinstalled on Ceres  ⤴</a> <br><a href="https://scinet.usda.gov/guides/software/singularity#ceres-container-repository/" target="_blank">Ceres Container Repository  ⤴</a> | Singularity container image files in the Ceres Container Repository are synced to Atlas daily. <br>For more information about software on Atlas, see <a href="https://www.hpc.msstate.edu/computing/atlas/" target="_blank">Atlas Documentation  ⤴</a>. |
+
+**Submitting jobs**
+
+| feature   | Ceres | Atlas | notes |
+|-----------|-------|-------|-------|
+|job scheduler | slurm | slurm | <a href="https://slurm.schedmd.com/quickstart.html" target="_blank">documentation  ⤴</a> ; <a href="https://scinet.usda.gov/guides/use/running-jobs#useful-slurm-commands" target="_blank">Useful SLURM Commands  ⤴</a> ; <br><a href="https://scinet.usda.gov/guides/use/running-jobs#interactive-mode" target="_blank">Interactive Mode (use node live) ⤴</a> ; <a href="https://scinet.usda.gov/guides/use/running-jobs#batch-mode" target="_blank">Batch Mode (submit job) ⤴</a> |
+|default walltime | partition’s max simulation time | 15 min | see *partitions* row in this table to learn about partition’s max simulation time on Ceres <br> on Atlas max walltime depends on the selected queues|
+|default allocation | 2 cores on 1 node | 1 core on 1 node | on Ceres hyper-threading is turned on (the smallest allocation is 2 logical cores) |
+|valid account | required | required | To see which <a href="https://scinet.usda.gov/guides/use/running-jobs#interactive-mode" target="_blank">accounts  ⤴</a> you are on, along with valid QOS's for that account, use <br>on Atlas: <br><code>sacctmgr show associations where user=$USER format=account%20,qos%50</code> <br> on Ceres: <br><code>sacctmgr -Pns show user format=account,defaultaccount </code>|
+|queues <br> *[max_walltime]*| see *partitions* row | **normal** *[14d]* <br> **debug** *[30 min]* <br> **special** <br> **priority** | on Atlas, *special* and *priority* queues must be requested and approved <br> on Ceres queues are replaced by the functional groups of nodes called partitions |
+|cores per node | 72 or 80 or 96 | 48 | see <a href="https://scinet.usda.gov/guides/use/running-jobs#partitions-or-queues" target="_blank">Partitions or Queues  ⤴</a> and <a href="https://scinet.usda.gov/guides/resources/ceres#technical-overview" target="_blank">Ceres Technical Overview  ⤴</a> to learn details about logical cores per specific groups of nodes on Ceres <br>see <a href="https://scinet.usda.gov/guides/use/running-jobs#requesting-the-proper-number-of-nodes-and-cores" target="_blank">Requesting the Proper Number of Nodes and Cores  ⤴</a> |
+|partitions <br> *[nodes/mem GB/time]* | **short** *[41/384/48h]* <br> **medium** *[32/384/7d]* <br> **long** *[11/384/21d]* <br> **long60** *[2/384/60d]* <br> **mem** *[4/1250/7d]* <br> **longmem** *[1/1250/1000h]* <br> **mem768** *[1/768/7d]*  <br> **debug** *[2/384/1h]* <br><br> + priority nodes* | **atlas** *[228/384]* <br> **bigmem** *[8/1536]* <br> **gpu** *[4/384]* <br> **service** *[2/192]* <br> **development** *[2/768]* <br> **development-gpu** *[2/384]* | see <a href="https://scinet.usda.gov/guides/use/running-jobs#partitions-or-queues" target="_blank">Partitions or Queues  ⤴</a> to learn details about ***priority nodes on Ceres** |
+
+
+To learn more comprehensive description, see detailed SCINet guides about
+<b><a href="https://scinet.usda.gov/guides/resources/ceresatlasdifferences#differences-between-ceres-and-atlas" target="_blank">Differences between Ceres and Atlas  ⤴</a></b>, including sections:
 * <a href="https://scinet.usda.gov/guides/resources/ceresatlasdifferences#quotas" target="_blank">Quotas [project & home directories]  ⤴</a>
 * <a href="https://scinet.usda.gov/guides/resources/ceresatlasdifferences#software" target="_blank">Preinstalled software  ⤴</a>
 * <a href="https://scinet.usda.gov/guides/resources/ceresatlasdifferences#submitting-a-job" target="_blank">Submitting a Job  ⤴</a>
@@ -247,10 +296,12 @@ Explore comprehensive user guides in category: <a href="https://scinet.usda.gov/
 
 ### *Ceres Guides*
 Ceres login node: <b>@ceres.scinet.usda.gov</b> <br>
-Ceres transfer node: <b>@ceres-dtn.scinet.usda.gov</b>
+Ceres transfer node: <b>@ceres-dtn.scinet.usda.gov</b> <br>
+Ceres Open OnDemand: <b><a href="http://ceres-ood.scinet.usda.gov" target="_blank">http://ceres-ood.scinet.usda.gov  ⤴</a></b> <br>
+**Ceres Getting started tutorial**: <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/03-scinet-ceres-cluster" target="_blank">Ceres Computing Cluster  ⤴</a>
 
 
-<b><a href="https://scinet.usda.gov/guides/resources/ceres#scinet-ceres" target="_blank">Ceres computing cluster User Guides :</a></b>
+<b><a href="https://scinet.usda.gov/guides/resources/ceres#scinet-ceres" target="_blank">Ceres computing cluster User Guides</a></b> by SCINet :<br>
 * <a href="https://scinet.usda.gov/guides/resources/ceres#onboarding-videos" target="_blank">Onboarding Videos  ⤴</a>
 * <a href="https://scinet.usda.gov/guides/resources/ceres#technical-overview" target="_blank">Technical Overview  ⤴</a>
 * <a href="https://scinet.usda.gov/guides/resources/ceres#system-configuration" target="_blank">System Configuration  ⤴</a>
@@ -260,7 +311,7 @@ Ceres transfer node: <b>@ceres-dtn.scinet.usda.gov</b>
   * <b>Ceres login node:</b> @ceres.scinet.usda.gov
   * <a href="https://scinet.usda.gov/guides/access/cli#using-linux-command-line-interface" target="_blank">Using Linux Command Line Interface  ⤴</a>
   * <a href="https://scinet.usda.gov/guides/access/open-ondemand#open-ondemand-interface-guide" target="_blank">Using web-based Open OnDemand Interface  ⤴</a>
-    * <a href="https://scinet.usda.gov/guides/access/open-ondemand#access" target="_blank">Access Ceres OpenOnDemand  ⤴</a> at <a href="http://ceres-ood.scinet.usda.gov/" target="_blank">http://ceres-ood.scinet.usda.gov</a>
+    * Access **Ceres OpenOnDemand** at <a href="http://ceres-ood.scinet.usda.gov/" target="_blank">http://ceres-ood.scinet.usda.gov</a> and see the <a href="https://scinet.usda.gov/guides/access/open-ondemand#access" target="_blank">tutorial  ⤴</a>
     * <a href="https://scinet.usda.gov/guides/access/open-ondemand#using-ood" target="_blank">Explore OOD guides  ⤴</a>
       * <a href="https://scinet.usda.gov/guides/access/open-ondemand#shell-access" target="_blank">Open Shell  ⤴</a>
       * <a href="https://scinet.usda.gov/guides/access/open-ondemand#files" target="_blank">Open File Manager  ⤴</a>
@@ -282,10 +333,12 @@ Ceres transfer node: <b>@ceres-dtn.scinet.usda.gov</b>
 
 ### *Atlas Guides*
 Atlas login node: <b>@atlas-login.hpc.msstate.edu</b> <br>
-Atlas transfer node: <b>@atlas-dtn.hpc.msstate.edu</b>
+Atlas transfer node: <b>@atlas-dtn.hpc.msstate.edu</b> <br>
+Atlas Open OnDemand: <b><a href="https://atlas-ood.hpc.msstate.edu" target="_blank">https://atlas-ood.hpc.msstate.edu  ⤴</a></b> <br>
+**Atlas Getting started tutorial**: <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/02-scinet-atlas-cluster" target="_blank">Atlas Computing Cluster  ⤴</a>
 
 
-<b><a href="https://www.hpc.msstate.edu/computing/atlas/" target="_blank">Atlas computing cluster User Guide   ⤴</a></b> <br>
+<b><a href="https://www.hpc.msstate.edu/computing/atlas/" target="_blank">Atlas computing cluster User Guides   ⤴</a></b> by SCINet :<br>
 In the one-page documentation you will find the sections listed below. To navigate to the selected topic, press `CTRL + F` on your keyboard (on macOS use `COMMAND + F`), and copy-paste the name of the section.
 * Node Specifications
 * Accessing Atlas
@@ -311,7 +364,7 @@ In the one-page documentation you will find the sections listed below. To naviga
   * <b>Atlas login node:</b> @atlas-login.hpc.msstate.edu
   * <a href="https://scinet.usda.gov/guides/access/cli#using-linux-command-line-interface" target="_blank">Using Linux Command Line Interface  ⤴</a>
   * <a href="https://scinet.usda.gov/guides/access/open-ondemand#open-ondemand-interface-guide" target="_blank">Using web-based Open OnDemand Interface  ⤴</a>
-    * Access Atlas OpenOnDemand at <a href="https://atlas-ood.hpc.msstate.edu/" target="_blank">https://atlas-ood.hpc.msstate.edu</a>
+    * Access **Atlas OpenOnDemand** at <a href="https://atlas-ood.hpc.msstate.edu/" target="_blank">https://atlas-ood.hpc.msstate.edu</a>
     * <a href="https://scinet.usda.gov/guides/access/open-ondemand#using-ood" target="_blank">Explore OOD guides  ⤴</a>
       * <a href="https://scinet.usda.gov/guides/access/open-ondemand#shell-access" target="_blank">Open Shell  ⤴</a>
       * <a href="https://scinet.usda.gov/guides/access/open-ondemand#files" target="_blank">Open File Manager  ⤴</a>

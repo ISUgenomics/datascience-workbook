@@ -10,19 +10,50 @@ header:
 
 {% include toc %}
 
-## Introduction
+# Introduction
 
 High-performance computing (**HPC**) is a type of **computing infrastructure** that involves using specialized systems and software **to solve complex problems that require a lot of computing power**. The tasks are often too large or too complex to be solved on a single computer or with traditional computing methods. To tackle these problems, HPC systems use advanced techniques such as **parallel processing**, which involves dividing a computational task into smaller pieces and solving them simultaneously on different computers or processors.
 
-### HPC infrastructure
+### *HPC Terminology*
+
+Here are some terms commonly used in the field of high-performance computing (HPC):
+
+| term | definition |
+|------|------------|
+| terminal | an application that make it possible to execute programs using text-like commands |
+| shell    | a shell is what provides you an interface to the unix operating system |
+| SSH      | Secure Shell is a network protocol that allows remote access to the HPC system |
+| cluster  | a group of computers that are connected together and work in parallel to solve a problem |
+| node     | a single computer in a cluster; a set of nodes compose an HPC system <br> <li>login node is the node/server that users are sent to when they SSH to the system</li><li>compute nodes (typically the bulk of the HPC nodes) are designed for running the computationally intensive tasks</li><li>transfer nodes are designed for efficient data transmission</li>|
+| core / CPU | the computational processing unit; modern cores have hyperthreading, which allow a single core to process two tasks simultaneously (1 physical core = 2 logical cores) |
+| GPU      | graphics processing unit; a specialized type of processor that is designed to accelerate graphics rendering and certain types of computations |
+| job      | a computational task submitted to the batch; a unit of work that is submitted to an HPC system |
+| queue    | a list of jobs that are waiting to be processed by an HPC system |
+| batch    | workflows (in the queue) that require no user interaction once they are submitted to the computing node |
+| slurm    | a job scheduler used to allocate resources (nodes, cores, memory) on an HPC system; the scheduler determines & optimizes which jobs should be run on which nodes |
+| parallel processing | the use of multiple processors or computers to solve a problem simultaneously |
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+Taking tutorials from the section <a href="https://datascience.101workbook.org/02-IntroToCommandLine/00-IntroToCommandLine-LandingPage" target="_blank">02. Introduction to the Command Line  ⤴</a> is helpful before starting to use high-performance computing (HPC) systems because many HPC systems are based on Unix or a Unix-like operating system. Unix is a powerful and flexible operating system that is widely used in HPC and other technical fields. For more details, see <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02-intro-to-unix-shell" target="_blank">Introduction to UNIX Shell  ⤴</a> and <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02E-tutorial-unix-getting-started" target="_blank">Tutorial: Getting Started with UNIX + VIDEO  ⤴</a>.<br><br>
+Overall, familiarity with Unix can help users get the most out of their HPC systems and make it easier to use these systems effectively.
+</span>
+</div><br>
+
+
+# HPC infrastructure
 
 HPC infrastructure often consists of **clusters of computers** that are connected together and **work in parallel** to solve a problem, and they may also **use specialized hardware** such as graphics processing units (GPUs) or field-programmable gate arrays (FPGAs) **to accelerate performance**. Some HPC systems are **located in specialized facilities called "*data centers*"**, which are designed to house and maintain large numbers of computers and other equipment. These data centers may be owned and operated by research institutions, government agencies, or private companies. In some cases, HPC systems may be distributed across multiple locations (*e.g., SCINet HPC*), with each location contributing its own resources to the network (*e.g., computing nodes, large scale storage, high-speed network*).
 
 ![](../assets/images/01_hpc_system.png)<br>
 *The figure shows the data center of computing clusters, where thousands of computing processors are organized in properly cooled and secured cabinets. Many HPC systems are accessed via the internet with a web browser-based interface. The outsourced tasks are referred to as cloud computing which provides many benefits.*
 
+### *Why use an HPC System?*
+
 There are several benefits to using high-performance computing (HPC) systems:
 
+* **infrastructure** - provide the configured infrastructure that allow researchers to improve or make possible computationally intensive workflows;
 * **speed** - much faster than traditional computers, and they can solve complex problems much more quickly;
 * **accuracy**  - ability to perform calculations with greater accuracy and precision than traditional computers;
 * **capacity** - much larger capacity than traditional computers, which means they can handle larger datasets and more complex problems;
@@ -30,7 +61,17 @@ There are several benefits to using high-performance computing (HPC) systems:
 * **collaboration** - allow researchers and scientists from different locations to work together and share resources, which can facilitate collaboration and accelerate the pace of research and discovery;
 * **cost savings** - using an HPC system may be more cost-effective than buying and maintaining multiple traditional computers to solve a complex problem.
 
-### HPC system access
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+Using high-performance computing (HPC) systems can be challenging for beginners, especially those who never used the command line or Linux operating system. Before deciding to use HPC for your research, consider whether it is a suitable platform for your needs. Typically, analyses that are well-suited for HPC are:
+<li>CPU intensive workloads</li>
+<li>high memory workloads</li> <br>
+Additionally, consider whether your analyses are already <b>optimized</b>, and whether you will need to <b>parallelize</b> your analyses or require distributed computing with <b>multiple nodes</b>.
+</span>
+</div>
+
+## HPC system access
 
 To access an HPC system, users will typically need to **create an account** and authenticate themselves using a username and password. Then, there are a few different ways to access high-performance computing (HPC) systems:
 * **on-site access:** *Some HPC systems are located in facilities that are open to researchers and scientists, who can use the system in person. In these cases, users will typically need to apply for access and may need to meet certain eligibility requirements.*
@@ -41,8 +82,7 @@ There are some national or international research and education HPC networks tha
 ](https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/01-introduction-to-hpc-infrastructure#examples-of-hpc-infrastructure)*). Usually, researchers and scientists may be able to access it for free as part of a research project or grant. In commercial cases, users may need to pay a fee to use an HPC system.
 
 
-
-### HPC tasks
+## HPC tasks
 
 HPC systems are an essential tool for solving many of the most challenging computational problems facing society today. They are used in a variety of fields, including science, engineering, finance, and government, to analyze and model data and phenomena that are large and complex. Some examples include:
 
@@ -65,19 +105,19 @@ HPC systems are also used extensively in artificial intelligence (AI) and machin
 
 
 
-## Examples of HPC Infrastructure
+# Examples of HPC Infrastructure
 
-### XSEDE
+### *XSEDE*
 **The Extreme Science and Engineering Discovery Environment, NSF funded project**
 
 * go to [XSEDE Supercomputer](01-XSEDE/01-supercomputer-intro)
 
-### SCINet
+### *SCINet*
 **Scientific Computing Network, USDA ARS funded project**
 
 * go to [SCINet Network](02-SCINET/01-scient-network-intro)
 
-### ISU HPC
+### *ISU HPC*
 **HPC clusters at Iowa State University**
 
 * go to [ISU HPC](03-ISUHPC/01-isu-hpc-intro)
