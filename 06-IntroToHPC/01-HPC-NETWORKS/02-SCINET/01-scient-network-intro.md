@@ -279,7 +279,7 @@ Explore comprehensive user guides in category: <a href="https://scinet.usda.gov/
 |valid account  <img width="100"/> | required <img width="420"/> | required <img width="360"/> | To see which <a href="https://scinet.usda.gov/guides/use/running-jobs#interactive-mode" target="_blank">accounts  ⤴</a> you are on, along with valid QOS's for that account, use <br>on Atlas: <br><code>sacctmgr show associations where user=$USER format=account%20,qos%50</code> <br> on Ceres: <br><code>sacctmgr -Pns show user format=account,defaultaccount </code>|
 |queues <br> *[max_walltime]*| see *partitions* row | **normal** *[14d]* <br> **debug** *[30 min]* <br> **special** <br> **priority** | on Atlas, *special* and *priority* queues must be requested and approved <br> on Ceres queues are replaced by the functional groups of nodes called partitions |
 |cores <br>per node | 72 or 80 or 96 | 48 | see <a href="https://scinet.usda.gov/guides/use/running-jobs#partitions-or-queues" target="_blank">Partitions or Queues  ⤴</a> and <a href="https://scinet.usda.gov/guides/resources/ceres#technical-overview" target="_blank">Ceres Technical Overview  ⤴</a> to learn details about logical cores per specific groups of nodes on Ceres <br>see <a href="https://scinet.usda.gov/guides/use/running-jobs#requesting-the-proper-number-of-nodes-and-cores" target="_blank">Requesting the Proper Number of Nodes and Cores  ⤴</a> |
-|partitions <br> *[nodes/mem GB/time]* | **short** *[41/384/48h]* <br> **medium** *[32/384/7d]* <br> **long** *[11/384/21d]* <br> **long60** *[2/384/60d]* <br> **debug** *[2/384/1h]* <br> **mem** *[4/1250/7d]* <br> **longmem** *[1/1250/1000h]* <br> **mem768** *[1/768/7d]* <br><br> + priority nodes* | **atlas** *[228/384]* <br> **bigmem** *[8/1536]* <br> **gpu** *[4/384]* <br> **service** *[2/192]* <br> **development** *[2/768]* <br> **development-gpu** *[2/384]* <br><br> | see <a href="https://scinet.usda.gov/guides/use/running-jobs#partitions-or-queues" target="_blank">Partitions or Queues  ⤴</a> to learn details about ***priority nodes on Ceres** |
+|partitions <br> *[nodes/mem GB/time]* | **short** *[41/384/48h]* <br> **medium** *[32/384/7d]* <br> **long** *[11/384/21d]* <br> **long60** *[2/384/60d]* <br> **debug** *[2/384/1h]* <br> **mem** *[4/1250/7d]* <br> **mem768** *[1/768/7d]* <br> **longmem** *[1/1250/1000h]* <br><br> + priority nodes* | **atlas** *[228/384]* <br> **bigmem** *[8/1536]* <br> **gpu** *[4/384]* <br> **service** *[2/192]* <br> **development** *[2/768]* <br> **development-gpu** *[2/384]* <br><br> | see <a href="https://scinet.usda.gov/guides/use/running-jobs#partitions-or-queues" target="_blank">Partitions or Queues  ⤴</a> to learn details about ***priority nodes on Ceres** |
 
 
 To learn more comprehensive description, see detailed SCINet guides about
@@ -298,7 +298,7 @@ To learn more comprehensive description, see detailed SCINet guides about
 Ceres login node: <b>@ceres.scinet.usda.gov</b> <br>
 Ceres transfer node: <b>@ceres-dtn.scinet.usda.gov</b> <br>
 Ceres Open OnDemand: <b><a href="http://ceres-ood.scinet.usda.gov" target="_blank">http://ceres-ood.scinet.usda.gov  ⤴</a></b> <br>
-**Ceres Getting started tutorial**: <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/03-scinet-ceres-cluster" target="_blank">Ceres Computing Cluster  ⤴</a>
+**Ceres Getting started tutorial**: <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/03-scinet-ceres-cluster" target="_blank">Ceres Computing Cluster  ⤴</a> *(in this workbook)*
 
 
 <b><a href="https://scinet.usda.gov/guides/resources/ceres#scinet-ceres" target="_blank">Ceres computing cluster User Guides</a></b> by SCINet :<br>
@@ -335,7 +335,7 @@ Ceres Open OnDemand: <b><a href="http://ceres-ood.scinet.usda.gov" target="_blan
 Atlas login node: <b>@atlas-login.hpc.msstate.edu</b> <br>
 Atlas transfer node: <b>@atlas-dtn.hpc.msstate.edu</b> <br>
 Atlas Open OnDemand: <b><a href="https://atlas-ood.hpc.msstate.edu" target="_blank">https://atlas-ood.hpc.msstate.edu  ⤴</a></b> <br>
-**Atlas Getting started tutorial**: <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/02-scinet-atlas-cluster" target="_blank">Atlas Computing Cluster  ⤴</a>
+**Atlas Getting started tutorial**: <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/02-scinet-atlas-cluster" target="_blank">Atlas Computing Cluster  ⤴</a> *(in this workbook)*
 
 
 <b><a href="https://www.hpc.msstate.edu/computing/atlas/" target="_blank">Atlas computing cluster User Guides   ⤴</a></b> by SCINet :<br>
@@ -385,7 +385,7 @@ The SCINet HPC infrastructure contains data storage distributed among locations 
 * Juno storage, is a multi-petabyte ARS storage device used for **long-term storage** of data and results and periodically backed up to tape device.
 * Tape backup, is an off-site **backup** of Juno, NOT accessible directly by regular SCINet users.
 
-To learn on how to manage data on SCINet, explore comprehensive user guides in category: <a href="https://scinet.usda.gov/guides/#data-guides" target="_blank">Data Guides  ⤴</a>
+To learn on how to manage data on SCINet, explore comprehensive user guides *(by SCINet)* in category: <a href="https://scinet.usda.gov/guides/#data-guides" target="_blank">Data Guides  ⤴</a>
 
 * <a href="https://scinet.usda.gov/guides/data/storage#scinet-storage" target="_blank">SCINet Storage  ⤴</a>
   * <a href="https://scinet.usda.gov/guides/data/storage#quotas" target="_blank">Quotas  ⤴</a>
