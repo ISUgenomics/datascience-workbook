@@ -62,6 +62,10 @@ To obtain a SCINet account, a SCINet Account Request must be submitted:
 
 The approval process depends on the affiliation of the requester. To learn more, visit the official <a href="https://scinet.usda.gov/about/signup#sign-up-for-a-scinet-account" target="_blank">Sign up for a SCINet account  ⤴</a> guide.
 
+![SCINet account](../../assets/images/01_hpc_scinet_account.png)<br>
+
+<b>Once your request is approved you should get the <i>"Welcome to SCINet"</i> email with further instructions.</b>
+
 ### *B. Read the SCINet Policy*
 
 Reading the SCINet Policy before you get started using the SCINet resources is important for several reasons. The SCINet policy is concise and contain important information about how the resource may be used, including any restrictions or limitations on use. This can help you understand what you can and cannot do with the resource. In particular, you can learn about:
@@ -282,7 +286,7 @@ Explore comprehensive user guides in category: <a href="https://scinet.usda.gov/
 |partitions <br> *[nodes/mem GB/time]* | **short** *[41/384/48h]* <br> **medium** *[32/384/7d]* <br> **long** *[11/384/21d]* <br> **long60** *[2/384/60d]* <br> **debug** *[2/384/1h]* <br> **mem** *[4/1250/7d]* <br> **mem768** *[1/768/7d]* <br> **longmem** *[1/1250/1000h]* <br><br> + priority nodes* | **atlas** *[228/384]* <br> **bigmem** *[8/1536]* <br> **gpu** *[4/384]* <br> **service** *[2/192]* <br> **development** *[2/768]* <br> **development-gpu** *[2/384]* <br><br> | see <a href="https://scinet.usda.gov/guides/use/running-jobs#partitions-or-queues" target="_blank">Partitions or Queues  ⤴</a> to learn details about ***priority nodes on Ceres** |
 
 
-To learn more comprehensive description, see detailed SCINet guides about
+To dive in a more comprehensive description, see detailed SCINet guides about
 <b><a href="https://scinet.usda.gov/guides/resources/ceresatlasdifferences#differences-between-ceres-and-atlas" target="_blank">Differences between Ceres and Atlas  ⤴</a></b>, including sections:
 * <a href="https://scinet.usda.gov/guides/resources/ceresatlasdifferences#quotas" target="_blank">Quotas [project & home directories]  ⤴</a>
 * <a href="https://scinet.usda.gov/guides/resources/ceresatlasdifferences#software" target="_blank">Preinstalled software  ⤴</a>
