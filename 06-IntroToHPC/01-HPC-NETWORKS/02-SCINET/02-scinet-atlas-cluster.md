@@ -107,7 +107,7 @@ Multi-Factor Authentication (MFA) is a <b>security system that requires more tha
     <p><i>Technically, you will get an app on your device. It will generate unique 6-digit codes every 60 seconds. You need to use the code that is current at the time of logging in or transferring data.</i><br><br>
     If needed, learn more about <a href="https://scinet.usda.gov/guides/access/mfa#what-is-multifactor-authentication" target="_blank">What is Multifactor Authentication  ⤴</a>.</p>
   </td>
-  <td><img src="../../assets/images/01_hpc_GA.png" width="600"></td>
+  <td><img src="../../assets/images/01_hpc_GA.png" width="800"></td>
 </table>
 
 
