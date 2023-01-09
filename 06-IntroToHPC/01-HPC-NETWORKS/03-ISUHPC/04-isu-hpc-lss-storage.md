@@ -32,7 +32,7 @@ The /lss/research directory contains directories of different research groups/la
 scp /home/$USER/myfile /lss/research/your-lab/
 ```
 
-
+<br>
 
 ___
 # Further Reading

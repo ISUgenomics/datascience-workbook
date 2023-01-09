@@ -14,7 +14,7 @@ Nodes and storage can be purchased on the Nova cluster for use by the researcher
 
 
 ## Getting Started
-For logging in the first time, check the <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/01-isu-hpc-intro" target="_blank">Intro to ISU HPC ⤴</a> page for information about getting started. Once connected to ISU network, use any Terminal (Terminal on Linux/Mac and Powershell on Windows) and input following command to log in to Nova:
+For logging in the first time, check the <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/01-isu-hpc-intro" target="_blank">Intro to ISU HPC ⤴</a> page for information about getting started. Install Google Authenticator on <a href="https://www.hpc.iastate.edu/guides/nova/access-and-login/google-auth-on-android" target="_blank">Android ⤴</a>, <a href="https://www.hpc.iastate.edu/guides/nova/access-and-login/google-auth-on-iphone-ipad-ipod" target="_blank">iPhone ⤴</a> or <a href="https://www.hpc.iastate.edu/guides/nova/access-and-login/google-auth-on-windows" target="_blank">Windows ⤴</a> devices for authentication. Once connected to ISU network, use any Terminal (Terminal on Linux/Mac and Powershell on Windows) and input following command to log in to Nova:
 
 ```
  ssh <ISU NetID>@nova.its.iastate.edu

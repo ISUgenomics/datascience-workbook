@@ -16,6 +16,8 @@ The condo cluster is out of support since July 1, 2021. It is now under Free Tie
 ## Getting Started
 The <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/01-isu-hpc-intro" target="_blank">Intro to ISU HPC ⤴</a> page has more information about logging in the first time and getting started. Using Condo cluster has same requirements as the <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/03-isu-hpc-nova-cluster" target="_blank">Nova Cluster ⤴</a> except Condo is free. Faculty can fill out <a href="https://iastate.service-now.com/it?id=sc_cat_item&sys_id=4c36cbaedb65a8546870467239961913&sysparm_category=7e68285cdb0b77406870467239961980" target="_blank">this form ⤴</a> to request access for their group.
 
+Use Google Authenticator on <a href="https://www.hpc.iastate.edu/guides/condo-2017/access-and-login/google-auth-on-android" target="_blank">Android ⤴</a>, <a href="https://www.hpc.iastate.edu/guides/condo-2017/access-and-login/google-auth-on-iphone-ipad-ipod" target="_blank">iPhone ⤴</a> or <a href="https://www.hpc.iastate.edu/guides/condo-2017/access-and-login/google-auth-on-windows" target="_blank">Windows ⤴</a> devices for authentication. 
+
 
 To log in to Condo, use any Terminal (Terminal on Linux/Mac and Powershell on Windows) to ssh with the login hostname:
 
