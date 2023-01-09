@@ -110,7 +110,7 @@ Alternatively, see following sections to download IDEs and programming languages
 ## IDE
 An Integrated Development Environment (IDE) is a program developed for coding/programming with your language of choice. There are several good IDE options available: <br>
 - <a href="https://www.spyder-ide.org/" target="_blank">Spyder</a> is used for scientific programming in python. It is a user friendly IDE.
-- RStudio is an IDE for programming in R. There are two options for using RStudio; <a href="https://www.rstudio.com/products/rstudio/#rstudio-server" target="_blank">RStudio Server</a> is online version and <a href="https://www.rstudio.com/products/rstudio/download/#download" target="_blank">RStudio Desktop</a> is a desktop application run locally.
+- RStudio is an IDE for programming in R. There are two options for using RStudio; <a href="https://www.rstudio.com/products/rstudio/#rstudio-server" target="_blank">RStudio Server</a> is online version and <a href="https://www.rstudio.com/products/rstudio/download/#download" target="_blank">RStudio Desktop</a> is a desktop application run locally. Check out the <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03A-rstudio-basics" target="_blank">RStudio tutorial</a> for more details.
 - <a href="https://jupyter.org/" target="_blank">Jupyter</a> supports multiple programming languages. Check out the <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-jupyter-basics" target="_blank">Jupyter tutorial</a> for more details.
 
 ## Python
@@ -123,7 +123,7 @@ Python is a high-level, general-purpose programming language. It is one of the b
 ## R
 R is a programming language for statistical computing and graphics. It is one of the most popular tools used for data mining, data modeling and generating graphics.
 
-<a href="https://mirror.las.iastate.edu/CRAN/" target="_blank">Install R here</a> locally and check out the tutorials for <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03B-tutorial-setting-up-rstudio" target="_blank">setting up RStudio</a> and <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03A-rstudio-basics" target="_blank">RStudio basics</a>  for more details including installing R libraries.
+<a href="https://mirror.las.iastate.edu/CRAN/" target="_blank">Install R here</a> locally and check out the tutorials for <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03B-tutorial-setting-up-rstudio" target="_blank">setting up RStudio</a> and <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03-r-programming-environment" target="_blank">R Programming Environment</a> for more details including installing R libraries.
 
 Use RStudio and plot to test if R is working. Open RStudio, type following command in console and press enter.
 
