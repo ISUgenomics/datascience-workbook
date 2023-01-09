@@ -54,7 +54,7 @@ To log in to Nova/Condo Clusters, you need to be connected to ISU network on-cam
 You need to answer yes to continue.
 
 
-## Condo vs Nova
+## Condo vs Nova Clusters
 
 | Feature | Condo | Nova |
 |--- | --- | ---- |
