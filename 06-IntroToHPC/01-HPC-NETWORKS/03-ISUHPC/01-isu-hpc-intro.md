@@ -20,12 +20,12 @@ The HPC Clusters at ISU have:
 * **Infiniband switch** - connects all nodes
 
 
-### Research Clusters
+## Research Clusters
 * **Condo Computing Cluster** - Free access cluster
 * **Nova Computing Cluster** - Faculty can purchase nodes and storage on this cluster
 
 
-### Education Cluster
+## Education Cluster
 * **HPC Class** - These are partitions on Nova cluster dedicated to class use
   * Check the <a href="https://www.hpc.iastate.edu/guides/nova/hpc-class" target="_blank">Guide to HPC Class ⤴</a> from ISU for more details
 
@@ -63,7 +63,7 @@ Cores per node | 16/20/32/40 | 36/48/64/96
 
 
 
-## Best Practices: Tips
+# Best Practices: Tips
 
 * Test your code/job on a small scale before submitting it to the cluster, if possible. This can help save time and resources as submitting a job often takes longer due to queue times and uses more resources. For example, you can use interactive nodes to find and fix errors before submitting a job.
 * Make sure your script is optimized for the cluster such that it uses the available resources efficiently.
@@ -72,7 +72,7 @@ Cores per node | 16/20/32/40 | 36/48/64/96
 
 Also check out the <a href="https://datascience.101workbook.org/09-ProjectManagement/01-intro-to-project-management" target="_blank">Project Management ⤴</a> guide for additional tips. <br>
 
-## Where to find help
+## Where to find help?
 * <a href="https://www.hpc.iastate.edu/faq" target="_blank">FAQs ⤴</a> 
 * Contact: hpc-help@iastate.edu
 
