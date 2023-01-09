@@ -10,7 +10,7 @@ header:
 
 {% include toc %}
 
-# HPC
+# HPC Clusters at ISU
 **High Performance Computing** (HPC) refers to a cluster of interconnected computers or servers used to perform complex computational tasks. HPC clusters can process large amounts of data in a short time and can handle large computationally intensive jobs. General information about HPC clusters available at Iowa State University can be found at the <a href="https://www.hpc.iastate.edu/" target="_blank">ISU HPC Website ⤴</a>. <br>
 
 The HPC Clusters at ISU have:
@@ -32,7 +32,7 @@ The HPC Clusters at ISU have:
 
 ## Storage
 * **Large Scale Storage** - Storage service for ISU researchers
-
+<br>
 
 # Logging in
 To log in to Nova/Condo Clusters, you need to be connected to ISU network on-campus or use <a href="https://vpn.iastate.edu/+CSCOE+/logon.html#form_title_text" target="_blank">ISU VPN ⤴</a> if you are off-campus. The first time you try to log in to Nova or Condo, a new Google Authenticator (GA) account is created. You will need to use GA for login. The first time you use the <a href="https://datascience.101workbook.org/06-IntroToHPC/02-SSH/01-secure-shell-connection" target="_blank">Secure Shell ⤴</a> connection to Nova/Condo, it will respond with:
@@ -51,16 +51,6 @@ Tutorials to get you started on different HPC Clusters are available in this wor
 * <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/04-isu-hpc-lss-storage" target="_blank">Large Scale Storage ⤴</a>
 * Check out the <a href="https://datascience.101workbook.org/06-IntroToHPC/05-JOB-QUEUE/01-SLURM/01-slurm-basics" target="_blank">SLURM Basics ⤴</a> and <a href="https://datascience.101workbook.org/06-IntroToHPC/05-JOB-QUEUE/01-SLURM/03-slurm-1-tutorial-job-submission" target="_blank">Creating SLURM Job Submission Scripts ⤴</a> for running your jobs on any HPC cluster.
 * It is useful to have some basic knowledge about command line before using HPC. Check this <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02E-tutorial-unix-getting-started" target="_blank">Unix tutorial ⤴</a> to learn some basics.
-
-
-## Table of comparison
-
-| Feature | Condo | Nova |
-|--- | --- | ---- |
-Login node | @condo2017.its.iastate.edu | @nova.its.iastate.edu
-Data Transfer node | @condodtn.its.iastate.edu | @novadtn.its.iastate.edu 
-Cores per node | 16/20/32/40 | 36/48/64/96
-
 
 
 # Best Practices: Tips
