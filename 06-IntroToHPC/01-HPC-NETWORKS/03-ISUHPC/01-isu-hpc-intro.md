@@ -34,6 +34,16 @@ The HPC Clusters at ISU have:
 * **Large Scale Storage** - Storage service for ISU researchers
 <br>
 
+
+# Tutorials
+Tutorials to get you started on different HPC Clusters are available in this workbook. 
+* <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/02-isu-hpc-condo-cluster" target="_blank">Condo Computing Cluster ⤴</a>
+* <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/03-isu-hpc-nova-cluster" target="_blank">Nova Computing Cluster ⤴</a>
+* <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/04-isu-hpc-lss-storage" target="_blank">Large Scale Storage ⤴</a>
+* Check out the <a href="https://datascience.101workbook.org/06-IntroToHPC/05-JOB-QUEUE/01-SLURM/01-slurm-basics" target="_blank">SLURM Basics ⤴</a> and <a href="https://datascience.101workbook.org/06-IntroToHPC/05-JOB-QUEUE/01-SLURM/03-slurm-1-tutorial-job-submission" target="_blank">Creating SLURM Job Submission Scripts ⤴</a> for running your jobs on any HPC cluster.
+* It is useful to have some basic knowledge about command line before using HPC. Check this <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02E-tutorial-unix-getting-started" target="_blank">Unix tutorial ⤴</a> to learn some basics.
+
+
 # Logging in
 To log in to Nova/Condo Clusters, you need to be connected to ISU network on-campus or use <a href="https://vpn.iastate.edu/+CSCOE+/logon.html#form_title_text" target="_blank">ISU VPN ⤴</a> if you are off-campus. The first time you try to log in to Nova or Condo, a new Google Authenticator (GA) account is created. You will need to use GA for login. The first time you use the <a href="https://datascience.101workbook.org/06-IntroToHPC/02-SSH/01-secure-shell-connection" target="_blank">Secure Shell ⤴</a> connection to Nova/Condo, it will respond with:
 
@@ -44,13 +54,17 @@ To log in to Nova/Condo Clusters, you need to be connected to ISU network on-cam
 You need to answer yes to continue.
 
 
-# Tutorials
-Tutorials to get you started on different HPC Clusters are available in this workbook. 
-* <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/02-isu-hpc-condo-cluster" target="_blank">Condo Computing Cluster ⤴</a>
-* <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/03-isu-hpc-nova-cluster" target="_blank">Nova Computing Cluster ⤴</a>
-* <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/04-isu-hpc-lss-storage" target="_blank">Large Scale Storage ⤴</a>
-* Check out the <a href="https://datascience.101workbook.org/06-IntroToHPC/05-JOB-QUEUE/01-SLURM/01-slurm-basics" target="_blank">SLURM Basics ⤴</a> and <a href="https://datascience.101workbook.org/06-IntroToHPC/05-JOB-QUEUE/01-SLURM/03-slurm-1-tutorial-job-submission" target="_blank">Creating SLURM Job Submission Scripts ⤴</a> for running your jobs on any HPC cluster.
-* It is useful to have some basic knowledge about command line before using HPC. Check this <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02E-tutorial-unix-getting-started" target="_blank">Unix tutorial ⤴</a> to learn some basics.
+## Condo vs Nova
+
+| Feature | Condo | Nova |
+|--- | --- | ---- |
+Login node | @condo2017.its.iastate.edu | @nova.its.iastate.edu
+Data Transfer node | @condodtn.its.iastate.edu | @novadtn.its.iastate.edu 
+Cores per node | 16/20/32/40 | 36/48/64/96
+Home directory space | 5 GB | 5 GB
+Workload Manager | SLURM | SLURM
+Partitions | <a href="https://www.hpc.iastate.edu/guides/condo-2017/queue-configuration" target="_blank">Partitions List ⤴</a> | <a href="https://www.hpc.iastate.edu/guides/nova/partition-configuration" target="_blank">Partitions List ⤴</a> 
+
 
 
 # Best Practices: Tips

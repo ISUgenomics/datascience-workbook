@@ -10,12 +10,12 @@ header:
 
 {% include toc %}
 
-The condo cluster is out of support since July 1, 2021. It is now under Free Tier model and available to all ISU researchers for free. A detailed guide is available from ISU: <br>
-* <a href="https://www.hpc.iastate.edu/guides/condo-2017" target="_blank">ISU Condo Cluster ⤴</a> <br>
+The condo cluster is out of support since July 1, 2021. It is now under Free Tier model and available to all ISU researchers for free. A detailed guide is available from ISU: * <a href="https://www.hpc.iastate.edu/guides/condo-2017" target="_blank">ISU Condo Cluster ⤴</a> 
+<br>
 
 # Getting Started
 ## Access and Login
-The <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/01-isu-hpc-intro" target="_blank">Intro to ISU HPC ⤴</a> page has more information about logging in the first time and getting started. Using Condo cluster has same requirements as the <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/03-isu-hpc-nova-cluster" target="_blank">Nova Cluster ⤴</a> except Condo is free. Faculty can fill out <a href="https://iastate.service-now.com/it?id=sc_cat_item&sys_id=4c36cbaedb65a8546870467239961913&sysparm_category=7e68285cdb0b77406870467239961980" target="_blank">this form ⤴</a> to request access for their group. Use Google Authenticator on <a href="https://www.hpc.iastate.edu/guides/condo-2017/access-and-login/google-auth-on-android" target="_blank">Android ⤴</a>, <a href="https://www.hpc.iastate.edu/guides/condo-2017/access-and-login/google-auth-on-iphone-ipad-ipod" target="_blank">iPhone ⤴</a> or <a href="https://www.hpc.iastate.edu/guides/condo-2017/access-and-login/google-auth-on-windows" target="_blank">Windows ⤴</a> devices for authentication. 
+If logging in the first time, check the <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/01-isu-hpc-intro#logging-in" target="_blank">Logging in ⤴</a> section of intro to HPC page. Using Condo cluster has same requirements as the <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/03-isu-hpc-nova-cluster" target="_blank">Nova Cluster ⤴</a> except Condo is free. Faculty can fill out <a href="https://iastate.service-now.com/it?id=sc_cat_item&sys_id=4c36cbaedb65a8546870467239961913&sysparm_category=7e68285cdb0b77406870467239961980" target="_blank">this form ⤴</a> to request access for their group. Use Google Authenticator on <a href="https://www.hpc.iastate.edu/guides/condo-2017/access-and-login/google-auth-on-android" target="_blank">Android ⤴</a>, <a href="https://www.hpc.iastate.edu/guides/condo-2017/access-and-login/google-auth-on-iphone-ipad-ipod" target="_blank">iPhone ⤴</a> or <a href="https://www.hpc.iastate.edu/guides/condo-2017/access-and-login/google-auth-on-windows" target="_blank">Windows ⤴</a> devices for authentication. 
 
 
 To log in to Condo, use any Terminal (Terminal on Linux/Mac and Powershell on Windows) to ssh with the login hostname:
@@ -40,6 +40,7 @@ cp /home/$USER/test.txt /myfiles/Users/$USER/
 * SLURM job <a href="https://www.hpc.iastate.edu/guides/condo-2017/slurm-job-script-generator-for-condo" target="_blank">script generator for Condo ⤴</a>
 * Check out the <a href="https://datascience.101workbook.org/06-IntroToHPC/05-JOB-QUEUE/01-SLURM/01-slurm-basics" target="_blank">SLURM Basics ⤴</a> to learn about running your job on Condo or any other HPC Cluster
 <br>
+
 
 ## Example job script
 
