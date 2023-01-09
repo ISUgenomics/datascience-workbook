@@ -69,8 +69,6 @@ squeue -u your_netID
 ```
 
 
-<br>
-
 ___
 # Further Reading
 * [LSS Storage](04-isu-hpc-lss-storage)

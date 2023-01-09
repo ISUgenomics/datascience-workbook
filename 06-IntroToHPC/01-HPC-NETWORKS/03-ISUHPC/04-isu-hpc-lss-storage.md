@@ -20,19 +20,21 @@ Space on LSS can be requested from <a href="https://lss.apps.it.iastate.edu/" ta
 Once you have purchased space on LSS, folders can be mounted to your computer directly. Check out this guide on <a href="https://researchit.las.iastate.edu/guides/lss/mount_folders/" target="_blank">how to mount folders from LSS ⤴</a>.
 
 ## Data Transfer
-LSS is mounted on data transfer nodes of all clusters meaning you can use data transfer node of the cluster you are using to transfer data from that cluster to LSS. Other options can be found on the <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/01-isu-hpc-intro" target="_blank">ISU HPC ⤴</a> intro page under Data Transfers.
+LSS is mounted on data transfer nodes of each cluster meaning you can use data transfer node of the cluster you are using to transfer data from that cluster to LSS. Other options can be found on the data transfers section of the <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/01-isu-hpc-intro#data-transfers" target="_blank">ISU HPC ⤴</a> intro page.
+
+### How to copy data from Nova to LSS
 
 ```
-# How to copy data from Nova to LSS
 # Login to novadtn:
-ssh <ISU NetID>@novadtn.its.iastate.edu
+ssh <ISU-NetID>@novadtn.its.iastate.edu
 The /lss/research directory contains directories of different research groups/labs. Store files in your lab directory. 
 
 # Copy your files to LSS:
 scp /home/$USER/myfile /lss/research/your-lab/
 ```
 
-<br>
+The same method applies to other clusters as well, move data to LSS using data transfer node of the cluster in use.
+
 
 ___
 # Further Reading

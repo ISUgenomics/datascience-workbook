@@ -72,7 +72,7 @@ squeue -u your_netID
 ```
 
 
-<br>
+
 ___
 # Further Reading
 * [Nova Computing Cluster](03-isu-hpc-nova-cluster)

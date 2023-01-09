@@ -13,7 +13,7 @@ header:
 # HPC Clusters at ISU
 **High Performance Computing** (HPC) refers to a cluster of interconnected computers or servers used to perform complex computational tasks. HPC clusters can process large amounts of data in a short time and can handle large computationally intensive jobs. General information about HPC clusters available at Iowa State University can be found at the <a href="https://www.hpc.iastate.edu/" target="_blank">ISU HPC Website ⤴</a>. <br>
 
-The HPC Clusters at ISU have:
+**Components of HPC Clusters at ISU**
 * **headnode** or **login node** - used to log in, submit jobs, and view output
 * **data transfer node** - used for data transfers
 * **compute nodes** - different types including regular, fat, GPU, etc. are used for computations
@@ -54,7 +54,7 @@ To log in to Nova/Condo Clusters, you need to be connected to ISU network on-cam
 You need to answer yes to continue.
 
 
-## Condo vs Nova Clusters
+## Condo vs Nova Cluster
 
 | Feature | Condo | Nova |
 |--- | --- | ---- |
@@ -77,7 +77,10 @@ Partitions | <a href="https://www.hpc.iastate.edu/guides/condo-2017/queue-config
 Also check out the <a href="https://datascience.101workbook.org/09-ProjectManagement/01-intro-to-project-management" target="_blank">Project Management ⤴</a> guide for additional tips. <br>
 
 ## Where to find help?
-* <a href="https://www.hpc.iastate.edu/faq" target="_blank">FAQs ⤴</a> 
+* <a href="https://www.hpc.iastate.edu/faq" target="_blank">FAQs ⤴</a> - List of Frequently asked questions such as:
+  * <a href="https://www.hpc.iastate.edu/faq#R" target="_blank">How to use R on a cluster? ⤴</a>
+  * <a href="https://www.hpc.iastate.edu/faq#python" target="_blank">How to use Python on a cluster? ⤴</a>
+  * <a href="https://www.hpc.iastate.edu/faq#compile" target="_blank">How to compile a software for use on a cluster? ⤴</a>
 * Contact: hpc-help@iastate.edu
 
 
@@ -108,9 +111,6 @@ Also check out the <a href="https://datascience.101workbook.org/09-ProjectManage
 * <a href="https://www.hpc.iastate.edu/guides/using-ansys-rsm" target="_blank">ANSYS RSM ⤴</a>
 * <a href="https://www.hpc.iastate.edu/guides/containers" target="_blank">Containers ⤴</a>
 * <a href="https://researchit.las.iastate.edu/guides/pronto/machine_learning/" target="_blank">Machine Learning Container ⤴</a>
-<br>
-
-
 
 
 ___
