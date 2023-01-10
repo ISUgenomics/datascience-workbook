@@ -24,7 +24,7 @@ Here are some terms commonly used in the field of high-performance computing (HP
 | shell    | a shell is what provides you an interface to the unix operating system |
 | SSH      | Secure Shell is a network protocol that allows remote access to the HPC system |
 | cluster  | a group of computers that are connected together and work in parallel to solve a problem |
-| node     | a single computer in a cluster; a set of nodes compose an HPC system <br> <li>login node is the node/server that users are sent to when they SSH to the system</li><li>compute nodes (typically the bulk of the HPC nodes) are designed for running the computationally intensive tasks</li><li>transfer nodes are designed for efficient data transmission</li>|
+| node     | a single computer in a cluster; a set of nodes compose an HPC system <br> • login node is the node/server that users are sent to when they SSH to the system<br> • compute nodes (typically the bulk of the HPC nodes) are designed for running the computationally intensive tasks<br> • transfer nodes are designed for efficient data transmission|
 | core / CPU | the computational processing unit; modern cores have hyperthreading, which allow a single core to process two tasks simultaneously (1 physical core = 2 logical cores) |
 | GPU      | graphics processing unit; a specialized type of processor that is designed to accelerate graphics rendering and certain types of computations |
 | job      | a computational task submitted to the batch; a unit of work that is submitted to an HPC system |
