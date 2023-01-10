@@ -69,7 +69,7 @@ Check your queued jobs:
 squeue -u your_netID
 ```
 
-
+<br>
 
 # Available Software
 Check out the following:

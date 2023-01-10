@@ -71,6 +71,8 @@ Check your queued jobs:
 squeue -u your_netID 
 ```
 
+<br>
+
 # Available Software
 Check out the following:
 * <a href="https://www.hpc.iastate.edu/guides/condo-2017/software" target="_blank">System and Application Software ⤴</a> guide for Condo from ISU
