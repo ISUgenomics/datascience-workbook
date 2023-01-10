@@ -22,6 +22,14 @@ Siva Chudalayandi:
   email       : "mailto:csiva@iastate.edu"
   website     : "https://gif.biotech.iastate.edu"
 
+Viswa Satheesh:
+  name        : "Viswa Satheesh"
+  bio         : "Satheesh is a Research Scientist III at the Genome Informatics Facility at Iowa State University. With a Ph.D. in Molecular Biology and Biotechnology, his expertise lies in the field of plant stress biology and epigenetics, where he has made significant contributions by utilizing large-scale biological data. Currently, apart from analyzing NGS data, he creates data analysis tutorials and workshops for scientists in the USDA."
+  avatar      : "/assets/images/people/satheesh.jpeg"
+  twitter     : "someone"
+  email       : "mailto:satheesh@iastate.edu"
+  website     : "https://gif.biotech.iastate.edu"
+
 Sharu Paul:
   name        : "Sharu Paul"
   bio         : "Sharu is a Visiting Scientist at the Genome Informatics Facility at Iowa State University. His background is in Biotechnology with a Ph.D. in Genetics and Genomics. He is using a diverse array of bioinformatic analyses to solve big data problems and contribute to developing workshops and tutorials for USDA scientists."

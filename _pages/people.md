@@ -26,6 +26,11 @@ Alex is a Research Scientist IV at the Genome Informatics Facility at Iowa State
 ![Siva](../assets/images/people/Siva.jpg){: .align-left}
 I am a Ph.D. in Molecular Biology and Biotechnology with broad expertise is in the field of Genetics and Computational Biology. As an Associate Scientist at the Genome Informatics Facility, I work as a bioinformatics liaison for the USDA community, contribute to tutorials & workshops, and manage online discussions. I also collaborate with researchers in my capacity as computational biologist to perform data-driven discovery.
 
+### Viswa Satheesh
+
+![Viswa](../assets/images/people/satheesh.jpeg){: .align-left}
+Satheesh is a Research Scientist III at the Genome Informatics Facility at Iowa State University. With a Ph.D. in Molecular Biology and Biotechnology, his expertise lies in the field of plant stress biology and epigenetics, where he has made significant contributions by utilizing large-scale biological data. Currently, apart from analyzing NGS data, he creates data analysis tutorials and workshops for scientists in the USDA.
+
 ### Sharu Paul
 
 ![Sharu](../assets/images/people/Sharu.jpg){: .align-left}
