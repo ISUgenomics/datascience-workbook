@@ -10,8 +10,9 @@ header:
 
 {% include toc %}
 
-Nodes and storage can be purchased on the Nova cluster for use by the researchers at ISU. For details about the Nova cluster, <a href="https://www.hpc.iastate.edu/guides/nova" target="_blank">click here.</a> <br>
-
+Nodes and storage can be purchased on the Nova cluster for use by the researchers at ISU. For details about the Nova cluster, <a href="https://www.hpc.iastate.edu/guides/nova" target="_blank">click here.</a> 
+<br>
+<br>
 
 # Getting Started
 ## Access and Login
@@ -68,6 +69,14 @@ Check your queued jobs:
 squeue -u your_netID
 ```
 
+
+
+# Available Software
+Check out the following:
+* <a href="https://www.hpc.iastate.edu/guides/nova/software" target="_blank">System and Application Software ⤴</a> guide for Nova from ISU
+* <a href="https://datascience.101workbook.org/06-IntroToHPC/04-SOFTWARE/01-software-available-on-HPC" target="_blank">Software Available on HPC ⤴</a> in this workbook
+<br>
+<br>
 
 ___
 # Further Reading

@@ -40,7 +40,7 @@ cp /home/$USER/test.txt /myfiles/Users/$USER/
 * SLURM job <a href="https://www.hpc.iastate.edu/guides/condo-2017/slurm-job-script-generator-for-condo" target="_blank">script generator for Condo ⤴</a>
 * Check out the <a href="https://datascience.101workbook.org/06-IntroToHPC/05-JOB-QUEUE/01-SLURM/01-slurm-basics" target="_blank">SLURM Basics ⤴</a> to learn about running your job on Condo or any other HPC Cluster
 <br>
-
+<br>
 
 ## Example job script
 
@@ -71,7 +71,12 @@ Check your queued jobs:
 squeue -u your_netID 
 ```
 
-
+# Available Software
+Check out the following:
+* <a href="https://www.hpc.iastate.edu/guides/condo-2017/software" target="_blank">System and Application Software ⤴</a> guide for Condo from ISU
+* <a href="https://datascience.101workbook.org/06-IntroToHPC/04-SOFTWARE/01-software-available-on-HPC" target="_blank">Software Available on HPC ⤴</a> in this workbook
+<br>
+<br>
 
 ___
 # Further Reading
