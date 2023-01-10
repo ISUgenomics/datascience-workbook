@@ -1,8 +1,8 @@
 ---
 title: "Software Available on HPC"
 layout: single
-author:
-author_profile: false
+author: Aleksandra Badaczewska
+author_profile: true
 header:
   overlay_color: "444444"
   overlay_image: /06-IntroToHPC/assets/images/06_hpc_banner.png
@@ -136,11 +136,9 @@ There are also a built-in command-line text editors with basic graphical interfa
 ### *3.  Compression and archiving tools*
 Tools like `gzip`, `tar` and `zip` are often available, which allow users to compress and archive large files and directories.
 
-<details><summary><b><i>Quick cheatsheet</i></b></summary>
+<details><summary>Quick cheatsheet</summary>
 
-<br>
-
-*Compress a single file:*
+<br>*Compress a single file:*
 ```
 gzip -c filename > filename.gz
 ```
