@@ -144,8 +144,9 @@ Tools like `gzip`, `tar` and `zip` are often available, which allow users to com
 <details><summary><i>Quick cheatsheet</i></summary>
 
 ```
-gzip -c filename filename.gz
+gzip -c filename > filename.gz
 ```
+
 </details>
 
 <!--
