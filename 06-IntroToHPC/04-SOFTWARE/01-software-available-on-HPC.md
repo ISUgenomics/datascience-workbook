@@ -143,43 +143,25 @@ Tools like `gzip`, `tar` and `zip` are often available, which allow users to com
 
 <details><summary><i>Quick cheatsheet</i></summary>
 
-<div><br>
-<i>Compress a single file:</i>
+<br>
+<i>Compress a single file:</i><br>
+<code>gzip -c filename  filename.gz</code><br><br>
 
-```
-gzip -c filename  filename.gz
-```
+<i>Compress all files in a directory:</i><br>
+<code>gzip -r directory</code><br><br>
 
-<i>Compress all files in a directory:</i>
+<i>Decompress a single file:</i><br>
+<code>gzip -d filename.gz</code><br><br>
 
-```
-gzip -r directory
-```
+<i>Decompress all files in a directory:</i><br>
+<code>gzip -dr directory.gz</code><br><br>
 
-<i>Decompress a single file:</i>
+<i>Compress an entire directory or a single file to `.tar.gz` archive:</i><br>
+<code>tar -czvf archive_name.tar.gz /path/to/directory-or-file</code><br><br>
 
-```
-gzip -d filename.gz
-```
+<i>Extract the `.tar.gz` archive:</i><br>
+<code>tar -xzvf archive.tar.gz</code><br><br>
 
-<i>Decompress all files in a directory:</i>
-
-```
-gzip -dr directory.gz
-```
-
-<i>Compress an entire directory or a single file to `.tar.gz` archive:</i>
-
-```
-tar -czvf archive_name.tar.gz /path/to/directory-or-file
-```
-
-<i>Extract the `.tar.gz` archive:</i>
-
-```
-tar -xzvf archive.tar.gz
-```
-</div>
 </details><br>
 
 
