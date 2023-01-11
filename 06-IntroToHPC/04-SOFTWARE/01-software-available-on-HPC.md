@@ -14,43 +14,48 @@ header:
 
 The software available on a high-performance computing (HPC) system can vary depending on the specific system and its intended use. However, some common types of software that are typically available on HPC systems include:
 
-**1. compilers** *[ a special program that translates a programming language's source code into machine code ]*<br>
+**1. compilers** <br>
+<i><span style="color: #3f5a8a;">[ a special program that translates a programming language's source code into machine code ]</span></i><br>
 *HPC systems often have a variety of compilers installed, such as <a href="https://gcc.gnu.org" target="_blank">GCC  ⤴</a> and <a href="https://www.intel.com/content/www/us/en/developer/tools/oneapi/fortran-compiler.html#gs.m93oa8" target="_blank">Intel Fortran  ⤴</a>, that can be used to compile and optimize code for the system's architecture.*
 
-**2. programming languages** *[ a system of notation, syntax, and semantics for writing instructions that can be executed by a computer ]* <br>
+**2. programming languages** <br>
+<i><span style="color: #3f5a8a;">[ a system of notation, syntax, and semantics for writing instructions that can be executed by a computer ]</span></i><br>
 *HPC systems often have a wide range of programming languages installed, such as <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank">C  ⤴</a>, <a href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank">C++  ⤴</a>, <a href="https://en.wikipedia.org/wiki/Fortran" target="_blank">Fortran  ⤴</a>, <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank">Python  ⤴</a>, and <a href="https://en.wikipedia.org/wiki/R_(programming_language)" target="_blank">R  ⤴</a>, which can be used to write and run code on the system.*
 
-**3. libraries and frameworks** *[ ready-made code (functions and classes) to solve common tasks and boost development process ]* <br>
+**3. libraries and frameworks** <br>
+<i><span style="color: #3f5a8a;">[ ready-made code (functions and classes) to solve common tasks and boost development process ]</span></i><br>
 *HPC systems often have a variety of libraries and frameworks available, such as the <a href="https://www.open-mpi.org" target="_blank">MPI library  ⤴</a> for parallel programming and the <a href="https://developer.nvidia.com/gpu-accelerated-libraries" target="_blank">CUDA library  ⤴</a> for GPU programming.*
 
-**4. basic visualization software** *[ remote visualization to display data and derive meaningful insights ]*<br>
+**4. basic visualization software** <br>
+<i><span style="color: #3f5a8a;">[ remote visualization to display data and derive meaningful insights  ]</span></i><br>
 *HPC systems often have software for visualizing and analyzing data, such as <a href="https://hpc.llnl.gov/software/visualization-software/paraview" target="_blank">ParaView  ⤴</a>, <a href="https://hpc.llnl.gov/software/visualization-software/visit" target="_blank">VisIt  ⤴</a>, <a href="https://hpc.llnl.gov/software/visualization-software/gnuplot" target="_blank">gnuplot  ⤴</a>, <a href="https://hpc.llnl.gov/software/visualization-software/vmd" target="_blank">VMD  ⤴</a>, and <a href="https://hpc.llnl.gov/software/visualization-software" target="_blank">other  ⤴</a>.*
 
-**5. job schedulers** *[ a computer application for controlling resources and execution of jobs ]* <br>
+**5. job schedulers** <br>
+<i><span style="color: #3f5a8a;">[ a computer application for controlling resources and execution of jobs ]</span></i><br>
 *HPC systems often have a job scheduler installed, such as <a href="https://slurm.schedmd.com/documentation.html" target="_blank">Slurm  ⤴</a>, <a href="https://en.wikipedia.org/wiki/Portable_Batch_System" target="_blank">PBS  ⤴</a> or <a href="https://www.ibm.com/docs/en/spectrum-lsf/10.1.0?topic=lsf-session-scheduler" target="_blank">LSF  ⤴</a>, which is responsible for managing the allocation of resources and scheduling jobs to run on the system.*
 
 **6. data management** <br>
 *HPC systems have data management software, including:*
-* <b>distributed file systems</b> <i>(e.g., Lustre, GlusterFS, and GPFS) that enable efficient data sharing and collaboration among multiple users</i>
+* <b>distributed file systems</b> <i>(e.g., <a href="https://www.lustre.org" target="_blank">Lustre  ⤴</a>, <a href="https://www.gluster.org" target="_blank">GlusterFS  ⤴</a>, and <a href="https://www.ibm.com/docs/en/gpfs/4.1.0.4?topic=guide-introducing-general-parallel-file-system" target="_blank">GPFS  ⤴</a>) that enable efficient data sharing and collaboration among multiple users</i>
 
-* <b>backup and archiving software</b> <i>(e.g., Amanda, Bacula, and Tivoli Storage Manager) that protect data by creating regular backups and archiving older data to long-term storage</i>
+* <b>backup and archiving software</b> <i>(e.g., <a href="http://www.amanda.org" target="_blank">Amanda  ⤴</a>, <a href="https://www.baculasystems.com" target="_blank">Bacula  ⤴</a>, and <a href="https://www.ibm.com/docs/en/tsm/7.1.0?topic=servers-tivoli-storage-manager-overview" target="_blank">Tivoli Storage Manager  ⤴</a>) that protect data by creating regular backups and archiving older data to long-term storage</i>
 
-* <b>data transfer software</b> <i>(e.g., Globus, GridFTP, and Aspera) that transfer large amounts of data quickly and efficiently between HPC systems and other storage or computing machines</i>
+* <b>data transfer software</b> <i>(e.g., <a href="https://www.globus.org/data-transfer" target="_blank">Globus  ⤴</a>, <a href="https://docs.nersc.gov/services/gridftp/" target="_blank">GridFTP  ⤴</a>, and <a href="https://www.ibm.com/products/aspera" target="_blank">Aspera  ⤴</a>) that transfer large amounts of data quickly and efficiently between HPC systems and other storage or computing machines</i>
 
-* <b>data cataloging and metadata management software</b> <i>(e.g., iRODS, Dataverse, and XNAT) that manage and organize large amounts of data, and provide search and discovery capabilities</i>
+* <b>data cataloging and metadata management software</b> <i>(e.g., <a href="https://irods.org" target="_blank">iRODS  ⤴</a>, <a href="https://dataverse.org" target="_blank">Dataverse  ⤴</a>, and <a href="https://www.xnat.org" target="_blank">XNAT  ⤴</a>) that manage and organize large amounts of data, and provide search and discovery capabilities</i>
 
-* <b>database management software</b> <i>(e.g., MySQL and MongoDB) that store, manage, and analyze large amounts of structured data</i>
+* <b>database management software</b> <i>(e.g., <a href="https://www.mysql.com" target="_blank">MySQL  ⤴</a> and <a href="https://www.mongodb.com" target="_blank">MongoDB  ⤴</a>) that store, manage, and analyze large amounts of structured data</i>
 
 
 # How to find available software?
 
 There are several ways to **find available software** on a high-performance computing (HPC) system. For some of them you can find the hands-on mini tutorials in the following subsections:
 
-* A. [Software as built-in commands]()
-* B. [Software as built-in modules]()
-* C. [Software via package manager]()
-* D. [Check the documentation]()
-* E. [Ask the system administrator]()
+* A. [Software as built-in commands](#software-as-built-in-commands)
+* B. [Software as built-in modules](#software-as-built-in-modules)
+* C. [Software via package manager](#software-via-package-manager)
+* D. [Check the documentation](#check-the-documentation)
+* E. [Ask the system administrator](#ask-the-system-administrator)
 
 <div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">WARNING:</span>
@@ -63,14 +68,14 @@ Additionally, in some cases a software is not publicly available and may require
 
 ## **Software as built-in commands**
 There are many different types of software that may be available as built-in commands on a high-performance computing (HPC) system. Some examples include:
-1. System utilities, [see more]()
-2. Text processing and manipulation tools, [see more]()
-3. Compression and archiving tools, [see more]()
-4. Job management tools, [see more]()
-5. Remote access tools, [see more]()
-6. File transfer tools, [see more]()
+1. System utilities, [see more](#1-system-utilities)
+2. Text processing and manipulation tools, [see more](#2--text-processing-and-manipulation-tools)
+3. Compression and archiving tools, [see more](#3--compression-and-archiving-tools)
+4. Job management tools, [see more](#4--job-management-tools)
+5. Remote access tools, [see more](#5--remote-access-tools)
+6. File transfer tools, [see more](#6--file-transfer-tools)
 
-### ***How to check built-in commands?***
+### • *How to check built-in commands?*
 There are a few ways to check the list of available built-in commands on a high-performance computing (HPC) system:
 
 * **Using the `help` command** <br>
@@ -138,33 +143,42 @@ Tools like `gzip`, `tar` and `zip` are often available, which allow users to com
 
 <details><summary>Quick cheatsheet</summary>
 
-<br>*Compress a single file:*
+<br><i>Compress a single file:</i>
+
 ```
 gzip -c filename > filename.gz
 ```
-*Compress all files in a directory:*
+
+<i>Compress all files in a directory:</i>
+
 ```
 gzip -r directory
 ```
 
-*Decompress a single file:*
+<i>Decompress a single file:</i>
+
 ```
 gzip -d filename.gz
 ```
-*Decompress all files in a directory:*
+
+<i>Decompress all files in a directory:</i>
+
 ```
 gzip -dr directory.gz
 ```
 
-*Compress an entire directory or a single file to `.tar.gz` archive:*
+<i>Compress an entire directory or a single file to `.tar.gz` archive:</i>
+
 ```
 tar -czvf archive_name.tar.gz /path/to/directory-or-file
 ```
 
-*Extract the `.tar.gz` archive:*
+<i>Extract the `.tar.gz` archive:</i>
+
 ```
 tar -xzvf archive.tar.gz
 ```
+
 </details><br>
 
 
@@ -286,23 +300,23 @@ Software available on the **ISU HPC systems**:
 ## **Ask the system administrator**
 The HPC administrator have access to the information on all the software installed, thus in case of any doubts, it's best to reach out to them for assistance.
 
-* regarding SCINet HPC, contact Virtual Research Support Core (VRSC) team: <b>scinet_vrsc@usda.gov</b>
+* regarding SCINet HPC, contact VRSC team: <b>scinet_vrsc@usda.gov</b>
 * regarding ISU HPC, contact administrators: <b>hpc-help@iastate.edu</b>
 
-### ***How to get new software installed?***
+### • *How to get new software installed?*
 
 1. Check that the software is not already installed *(follow the guide in this tutorial)*
 2. Consider the following criteria:
   * if you think that the new software will be useful to many more users <br>
-or
+<i>or</i>
   * the software is licensed <br>
-or
+<i>or</i>
   * installation requires superuser privileges <br><br>
 If the answer to any is yes, contact the HPC administrator and submit a request for software installation. <br>
 Otherwise, go to step 3.
 
 
-3. Go to tutorial <a href="https://datascience.101workbook.org/06-IntroToHPC/04-SOFTWARE/03-installing-custom-programs" target="_blank">Installing Custom Programs in User Space  ⤴</a> to learn how to install the required software.
+3. Go to tutorial <a href="https://datascience.101workbook.org/06-IntroToHPC/04-SOFTWARE/03-installing-custom-programs" target="_blank">Installing Custom Programs in User Space  ⤴</a> to learn how to install the necessary software yourself.
 
 
 
