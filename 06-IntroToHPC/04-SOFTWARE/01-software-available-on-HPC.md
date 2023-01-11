@@ -19,11 +19,11 @@ The software available on a high-performance computing (HPC) system can vary dep
 *HPC systems often have a variety of compilers installed, such as <a href="https://gcc.gnu.org" target="_blank">GCC  ⤴</a> and <a href="https://www.intel.com/content/www/us/en/developer/tools/oneapi/fortran-compiler.html#gs.m93oa8" target="_blank">Intel Fortran  ⤴</a>, that can be used to compile and optimize code for the system's architecture.*
 
 **2. programming languages** <br>
-<i><span style="color: #3f5a8a;">[ a system of notation, syntax, and semantics for writing instructions that can be executed by a computer ]</span></i><br>
+<i><span style="color: #3f5a8a;">[ a system of syntax and semantics for writing instructions that can be executed by a computer ]</span></i><br>
 *HPC systems often have a wide range of programming languages installed, such as <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank">C  ⤴</a>, <a href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank">C++  ⤴</a>, <a href="https://en.wikipedia.org/wiki/Fortran" target="_blank">Fortran  ⤴</a>, <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank">Python  ⤴</a>, and <a href="https://en.wikipedia.org/wiki/R_(programming_language)" target="_blank">R  ⤴</a>, which can be used to write and run code on the system.*
 
 **3. libraries and frameworks** <br>
-<i><span style="color: #3f5a8a;">[ ready-made code (functions and classes) to solve common tasks and boost development process ]</span></i><br>
+<i><span style="color: #3f5a8a;">[ ready-made code (functions and classes) to solve common tasks and boost development ]</span></i><br>
 *HPC systems often have a variety of libraries and frameworks available, such as the <a href="https://www.open-mpi.org" target="_blank">MPI library  ⤴</a> for parallel programming and the <a href="https://developer.nvidia.com/gpu-accelerated-libraries" target="_blank">CUDA library  ⤴</a> for GPU programming.*
 
 **4. basic visualization software** <br>
@@ -42,7 +42,7 @@ The software available on a high-performance computing (HPC) system can vary dep
 
 * <b>data transfer software</b> <i>(e.g., <a href="https://www.globus.org/data-transfer" target="_blank">Globus  ⤴</a>, <a href="https://docs.nersc.gov/services/gridftp/" target="_blank">GridFTP  ⤴</a>, and <a href="https://www.ibm.com/products/aspera" target="_blank">Aspera  ⤴</a>) that transfer large amounts of data quickly and efficiently between HPC systems and other storage or computing machines</i>
 
-* <b>data cataloging and metadata management software</b> <i>(e.g., <a href="https://irods.org" target="_blank">iRODS  ⤴</a>, <a href="https://dataverse.org" target="_blank">Dataverse  ⤴</a>, and <a href="https://www.xnat.org" target="_blank">XNAT  ⤴</a>) that manage and organize large amounts of data, and provide search and discovery capabilities</i>
+* <b>data cataloging and metadata management software</b> <i>(e.g., <a href="https://irods.org" target="_blank">iRODS  ⤴</a>, <a href="https://dataverse.org" target="_blank">Dataverse  ⤴</a>, and <a href="https://www.xnat.org" target="_blank">XNAT  ⤴</a>) that manage and organize large amounts of data, and provide search capabilities</i>
 
 * <b>database management software</b> <i>(e.g., <a href="https://www.mysql.com" target="_blank">MySQL  ⤴</a> and <a href="https://www.mongodb.com" target="_blank">MongoDB  ⤴</a>) that store, manage, and analyze large amounts of structured data</i>
 
@@ -146,7 +146,7 @@ Tools like `gzip`, `tar` and `zip` are often available, which allow users to com
 <br><i>Compress a single file:</i>
 
 ```
-gzip -c filename > filename.gz
+gzip -c filename  filename.gz
 ```
 
 <i>Compress all files in a directory:</i>
