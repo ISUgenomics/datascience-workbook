@@ -143,14 +143,8 @@ Tools like `gzip`, `tar` and `zip` are often available, which allow users to com
 
 <details><summary><i>Quick cheatsheet</i></summary>
 
-```
-gzip -c filename > filename.gz
-```
-
-</details>
-
-<!--
-<br><i>Compress a single file:</i>
+<div><br>
+<i>Compress a single file:</i>
 
 ```
 gzip -c filename  filename.gz
@@ -185,8 +179,8 @@ tar -czvf archive_name.tar.gz /path/to/directory-or-file
 ```
 tar -xzvf archive.tar.gz
 ```
-
-</details><br>-->
+</dividing>
+</details><br>
 
 
 ### *4.  Job management tools*
