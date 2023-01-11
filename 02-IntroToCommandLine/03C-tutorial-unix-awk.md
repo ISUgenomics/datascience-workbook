@@ -134,6 +134,7 @@ awk '{sum+=$3} END {print sum/NR}' marksheet2.txt
 65
 ```
 
+<<<<<<< HEAD
 Sometimes the field separator could be a tab character. So, when we do
 
 ```
@@ -180,6 +181,8 @@ RS: RS command stores the current record separator character. Since, by default,
 OFS: OFS command stores the output field separator, which separates the fields when Awk prints them. The default is a blank space. Whenever print has several parameters separated with commas, it will print the value of OFS in between each parameter.
 
 ORS: ORS command stores the output record separator, which separates the output lines when Awk prints them. The default is a newline character. print automatically outputs the contents of ORS at the end of whatever it is given to print.
+=======
+>>>>>>> 410a27a06aa8647aef2d5d8891e64ceaad767061
 ___
 
 # Further Reading
