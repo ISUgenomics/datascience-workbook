@@ -145,22 +145,22 @@ Tools like `gzip`, `tar` and `zip` are often available, which allow users to com
 
 <br>
 <i>Compress a single file:</i><br>
-<code>gzip -c filename  filename.gz</code><br><br>
+<code style="background-color: #e4f0f0; width:100%;">gzip -c filename > filename.gz</code><br><br>
 
 <i>Compress all files in a directory:</i><br>
-<code>gzip -r directory</code><br><br>
+<code style="background-color: #e4f0f0; width:100%;">gzip -r directory</code><br><br>
 
 <i>Decompress a single file:</i><br>
-<code>gzip -d filename.gz</code><br><br>
+<code style="background-color: #e4f0f0; width:100%;">gzip -d filename.gz</code><br><br>
 
 <i>Decompress all files in a directory:</i><br>
-<code>gzip -dr directory.gz</code><br><br>
+<code style="background-color: #e4f0f0; width:100%;">gzip -dr directory.gz</code><br><br>
 
 <i>Compress an entire directory or a single file to `.tar.gz` archive:</i><br>
-<code>tar -czvf archive_name.tar.gz /path/to/directory-or-file</code><br><br>
+<code style="background-color: #e4f0f0; width:100%;">tar -czvf archive_name.tar.gz /path/to/directory-or-file</code><br><br>
 
 <i>Extract the `.tar.gz` archive:</i><br>
-<code>tar -xzvf archive.tar.gz</code><br><br>
+<code style="background-color: #e4f0f0; width:100%;">tar -xzvf archive.tar.gz</code><br><br>
 
 </details><br>
 
@@ -300,7 +300,6 @@ Otherwise, go to step 3.
 
 
 3. Go to tutorial <a href="https://datascience.101workbook.org/06-IntroToHPC/04-SOFTWARE/03-installing-custom-programs" target="_blank">Installing Custom Programs in User Space  ⤴</a> to learn how to install the necessary software yourself.
-
 
 
 ___
