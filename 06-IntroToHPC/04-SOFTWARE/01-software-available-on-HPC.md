@@ -179,7 +179,7 @@ tar -czvf archive_name.tar.gz /path/to/directory-or-file
 ```
 tar -xzvf archive.tar.gz
 ```
-</dividing>
+</div>
 </details><br>
 
 
