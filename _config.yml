@@ -124,7 +124,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : https://github.com/isugenomics
+  github           : isugenomics #https://github.com/isugenomics
   gitlab           :
   google_plus      :
   keybase          :
@@ -140,7 +140,7 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  youtube          : https://www.youtube.com/@bioinformaticsworkbook7578 # "https://youtube.com/c/MichaelRoseDesign"
 
 # Reading Files
 include:
