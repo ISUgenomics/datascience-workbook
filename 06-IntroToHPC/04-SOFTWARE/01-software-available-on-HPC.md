@@ -141,8 +141,14 @@ There are also a built-in command-line text editors with basic graphical interfa
 ### *3.  Compression and archiving tools*
 Tools like `gzip`, `tar` and `zip` are often available, which allow users to compress and archive large files and directories.
 
-<details><summary>Quick cheatsheet</summary>
+<details><summary><i>Quick cheatsheet</i></summary>
 
+```
+gzip -c filename > filename.gz
+```
+</details>
+
+<!--
 <br><i>Compress a single file:</i>
 
 ```
@@ -179,7 +185,7 @@ tar -czvf archive_name.tar.gz /path/to/directory-or-file
 tar -xzvf archive.tar.gz
 ```
 
-</details><br>
+</details><br>-->
 
 
 ### *4.  Job management tools*
@@ -261,7 +267,7 @@ apt list
 # Search apt list for a given package:
 apt search <software_name>
 ```
-* for RHEL / Fedora / Rocky: *.rpm* packages managed by `yum` *(yum has been supplanted by `dnf`)* <br>
+* for RHEL / Fedora / Rocky: *.rpm* packages managed by `yum` <br>*(yum has been supplanted by `dnf`)* <br>
 ```
 # List installed and available packages:
 yum list all
