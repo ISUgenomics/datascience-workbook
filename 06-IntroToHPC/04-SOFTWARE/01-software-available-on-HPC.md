@@ -216,7 +216,10 @@ To synchronize the content in both locations, recursively transfer the data usin
 </span>
 </div><br>
 
-Learn more from the practical tutorials about <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/02-0-remote-data-transfer" target="_blank">Remote Data Transfer  ⤴</a>, available in section <a href="https://datascience.101workbook.org/07-DataParsing/00-DataParsing-LandingPage" target="_blank">07. Data Acquisition and Wrangling  ⤴</a> of this workbook. If you seek for a guide about transfering data to <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/01-scient-network-intro" target="_blank">SCINet HPC system  ⤴</a>, see tutorials: <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/02-scinet-atlas-cluster#command-line-data-transfer" target="_blank">Command line data transfer to Atlas  ⤴</a> and <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/04-scinet-juno-storage#copy-your-data-to-juno" target="_blank">Copy your data to Juno  ⤴</a>.
+Learn more from the practical tutorials about <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/02-0-remote-data-transfer" target="_blank">Remote Data Transfer  ⤴</a>, available in section <a href="https://datascience.101workbook.org/07-DataParsing/00-DataParsing-LandingPage" target="_blank">07. Data Acquisition and Wrangling  ⤴</a> of this workbook. <br>
+If you seek for a guide about transferring data to <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/01-scient-network-intro" target="_blank">SCINet HPC system  ⤴</a>, see tutorials: <br>
+•  <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/02-scinet-atlas-cluster#command-line-data-transfer" target="_blank">Command line data transfer to Atlas  ⤴</a> and <br>
+• <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/04-scinet-juno-storage#copy-your-data-to-juno" target="_blank">Copy your data to Juno  ⤴</a>.
 
 
 ## **Software as built-in modules**
@@ -299,7 +302,7 @@ If the answer to any is yes, contact the HPC administrator and submit a request 
 Otherwise, go to step 3.
 
 
-3. Go to tutorial <a href="https://datascience.101workbook.org/06-IntroToHPC/04-SOFTWARE/03-installing-custom-programs" target="_blank">Installing Custom Programs in User Space  ⤴</a> to learn how to install the necessary software yourself.
+3. Go to the <a href="https://datascience.101workbook.org/06-IntroToHPC/04-SOFTWARE/03-installing-custom-programs" target="_blank">Installing Custom Programs in User Space  ⤴</a> tutorial to learn how to install the necessary software yourself.
 
 
 ___
