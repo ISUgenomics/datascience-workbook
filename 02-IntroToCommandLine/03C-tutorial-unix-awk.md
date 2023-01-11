@@ -12,6 +12,11 @@ header:
 
 ## <span style="color: #ff3870;">New content coming soon!</span>
 
+Awk can be a powerful general-purpose scripting language to perform advanced text processing. 
+
+
+It is mostly used as a reporting and analysis tool.
+
 ```
 $ cat > marksheet.txt
 Allan Lamb 78
@@ -100,7 +105,7 @@ awk '{sum+=$3} END {print sum/NR}' marksheet.txt
 ```
 52
 ```
-There are a couple of things to notice. One, the introduction of a new variable NR; and two, the output is incorrect. The average should be 65 and not 52. The NR command stores the number of current records, which is our example is five, including the empty and thus explains the error in the output. To remove the empty line:
+There are a couple of things to notice. One, the introduction of a new variable NR; and two, the output is incorrect. The average should be 65 and not 52. The NR command stores the number of current records, which in our example is five, including the empty line and thus explains the error in the output. To remove the empty line:
 
 ```
 awk NF marksheet.txt > marksheet2.txt
@@ -129,15 +134,44 @@ awk '{sum+=$3} END {print sum/NR}' marksheet2.txt
 65
 ```
 
+Sometimes the field separator could be a tab character. So, when we do
 
+```
+awk 'OFS="," {print $1, $2, $3}' marksheet2.txt > marksheet3.csv
+```
+we use OFS to set the output field separator to be a tab character. Looking at marksheet3.tsv, where tsv is tab separated value,
+
+```
+cat marksheet3.csv
+```
+### output
+```
+Allan,Lamb,78
+Graeme,Hick,56
+David,Gower,83
+Graham,Gooch,43
+```
+So, doing
+
+```
+awk '{print $1}' marksheet3.csv
+```
+returns no output. That is because the default separator is a blank space. To set the field separator on the command line,
+
+```
+awk -F ',' '{print $1}' marksheet3.csv
+```
+returns
+
+### output
+```
+Allan
+Graeme
+David
+Graham
+```
 
 ### Built-In Variables In Awk
-
-Awk’s built-in variables include the field variables—$1, $2, $3, and so on ($0 is the entire line) — that break a line of text into individual words or pieces called fields.
-
-NR: NR command keeps a current count of the number of input records. Remember that records are usually lines. Awk command performs the pattern/action statements once for each record in a file.
-
-NF: NF command keeps a count of the number of fields within the current input record.
 
 FS: FS command contains the field separator character which is used to divide fields on the input line. The default is “white space”, meaning space and tab characters. FS can be reassigned to another character (typically in BEGIN) to change the field separator.
 
@@ -146,22 +180,6 @@ RS: RS command stores the current record separator character. Since, by default,
 OFS: OFS command stores the output field separator, which separates the fields when Awk prints them. The default is a blank space. Whenever print has several parameters separated with commas, it will print the value of OFS in between each parameter.
 
 ORS: ORS command stores the output record separator, which separates the output lines when Awk prints them. The default is a newline character. print automatically outputs the contents of ORS at the end of whatever it is given to print.
-
-Use of NR built-in variables (Display Line Number)  
-$ awk '{print NR,$0}' employee.txt
-
-Use of NF built-in variables (Display Last Field)  
-$ awk '{print $1,$NF}' employee.txt
-
-Another use of NR built-in variables (Display Line From 3 to 6)  
-
-$ awk 'NR==3, NR==6 {print NR,$0}' employee.txt
-
-3) To print any non empty line if present  
-
-$ awk 'NF < 0' geeksforgeeks.txt
-
-
 ___
 
 # Further Reading
