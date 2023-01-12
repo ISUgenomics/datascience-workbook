@@ -223,7 +223,7 @@ If you seek for a guide about transferring data to <a href="https://datascience.
 
 
 ## **Software as built-in modules**
-Many HPC systems use a **system of software modules** to manage and organize the software that is available.
+Many HPC systems use a **system of software modules** to manage and organize the software that is available. The <a href="https://modules.sourceforge.net" target="_blank">Environment Modules  ⤴</a> package can help to make an HPC system more user-friendly, efficient, and accessible for a wide range of users. It allows users to manage and access software in a more flexible way, and can help to make the system more efficient.
 
 The `module` command can be used to list the available modules, and to see which modules are currently loaded.
 ```
