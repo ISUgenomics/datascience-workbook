@@ -81,7 +81,7 @@ System administrators and the module documentation will provide information on t
 </span>
 </div><br>
 
-## How to **find** a module?
+## How to **find a module**?
 Here are some common `module` commands that can be used to **list and search for available software** on an HPC system:
 
 ### • *list all modules*
@@ -112,7 +112,7 @@ module show <name>
 *It will show the version, the dependencies, and the environment variables that the module sets.*
 
 
-## How to **load** a module?
+## How to **load a module**?
 Here are some common `module` commands that can be used to **load and unload the module** on an HPC system:
 
 ### • *load a specific module*
@@ -136,15 +136,15 @@ module swap <name1> <name2>
 ```
 *This command will swap one module that is currently loaded in the user's environment with another module.*
 
-## Examples of software modules
+## **Examples of software modules**
 A wide range of software can be made available as modules on an HPC system. Some examples of the types of software that are commonly made available as modules include:
 
-* [1. Compilers and interpreters]()
-* [2. Scientific libraries]()
-* [3. Applications]() : *numerical simulations, data analysis*
-* [4. Deep learning framework]()
-* [5. Visualization tool]()
-* [6. Interoperability packages]()
+* [1. Compilers and interpreters](#1-compilers-and-interpreters)
+* [2. Scientific libraries](#2-scientific-libraries)
+* [3. Applications](#3-applications) : *numerical simulations, data analysis*
+* [4. Deep learning framework](#4-deep-learning-framework)
+* [5. Visualization tool](#5-visualization-tools)
+* [6. Interoperability packages](#6-interoperability-packages)
 
 <div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">WARNING:</span>
@@ -216,12 +216,12 @@ Environment Modules can be used to set environment variable or path for some spe
 module load openmpi/4.1.3
 ```
 
-## SCINet HPC modules
+## **SCINet HPC modules**
 Both <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/01-scient-network-intro" target="_blank">SCINet HPC  ⤴</a> clusters, <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/02-scinet-atlas-cluster" target="_blank">Atlas  ⤴</a> and <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/03-scinet-ceres-cluster" target="_blank">Ceres  ⤴</a> use the Environment Modules package. <br>Learn more from SCINet resources:
 * <a href="https://scinet.usda.gov/guides/software/modules#environment-modules" target="_blank">Environment Modules on SCINet HPC  ⤴</a>
 * <a href="https://scinet.usda.gov/guides/software/preinstalled#ceres-command-line-software-managed-by-the-module-system" target="_blank">Ceres Command-line Software Managed by the Module System  ⤴</a>
 
-## ISU HPC modules
+## **ISU HPC modules**
 Both <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/01-isu-hpc-intro" target="_blank">ISU HPC  ⤴</a> clusters, <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/03-isu-hpc-nova-cluster" target="_blank">Nova  ⤴</a> and <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/02-isu-hpc-condo-cluster" target="_blank">Condo  ⤴</a> use the Environment Modules package. <br>Learn more from ISU resources:
 * <a href="https://www.hpc.iastate.edu/guides/nova/software" target="_blank">Environment Modules on Nova  ⤴</a>
 * <a href="https://www.hpc.iastate.edu/guides/condo-2017/software" target="_blank">Environment Modules on Condo  ⤴</a>
