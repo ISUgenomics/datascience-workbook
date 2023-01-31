@@ -27,8 +27,8 @@ Most HPC systems run on Linux-based operating system, so **installing custom pro
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;"> If you would like to learn more about the command line interface and Linux-based operating systems start with the tutorials:<br>
-<li><a href="https://datascience.101workbook.org/02-IntroToCommandLine/01-terminal-basics" target="_blank">Terminal: a text-based interface for command-line operations  ⤴</a>
-<li><a href="https://datascience.101workbook.org/02-IntroToCommandLine/02-intro-to-unix-shell" target="_blank">Introduction to UNIX Shell  ⤴</a> </span>
+<li><a href="https://datascience.101workbook.org/02-IntroToCommandLine/01-terminal-basics" target="_blank">Terminal: a text-based interface for command-line operations  ⤴</a></li>
+<li><a href="https://datascience.101workbook.org/02-IntroToCommandLine/02-intro-to-unix-shell" target="_blank">Introduction to UNIX Shell  ⤴</a></li></span>
 </div><br>
 
 <b>What you can NOT do as a regular user on HPC:</b>
