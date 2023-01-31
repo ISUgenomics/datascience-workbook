@@ -92,7 +92,8 @@ header:
 * **<a href="06-IntroToHPC/03-FILE-ACCESS/01-remote-data-access" style="color: #24376b;">Remote Data Access</a>** <br><span style="color: #a9bbd1;">_(see more in section <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/01-remote-data-access" target="_blank">7: Data Acquisition: Remote Data Access  ⤴</a>)_</span>
 * **<a href="06-IntroToHPC/04-SOFTWARE/01-software-available-on-HPC" style="color: #24376b;">Software Available on HPC</a>**
   * <a href="06-IntroToHPC/04-SOFTWARE/02-accessing-preinstalled-modules" style="color: #3f5a8a;">Accessing pre-Installed Modules</a>
-  * <a href="06-IntroToHPC/04-SOFTWARE/03-installing-custom-programs" style="color: #3f5a8a;">Installing Custom Programs in User Space</a>
+  * <a href="06-IntroToHPC/04-SOFTWARE/03-accessing-package-manager" style="color: #3f5a8a;">Accessing software via package manager</a>
+  * <a href="06-IntroToHPC/04-SOFTWARE/04-installing-custom-programs" style="color: #3f5a8a;">Installing Custom Programs in User Space</a>
 * **<a href="06-IntroToHPC/05-JOB-QUEUE/00-introduction-to-job-scheduling" style="color: #24376b;">Introduction to Job Scheduling</a>**
   * <a href="06-IntroToHPC/05-JOB-QUEUE/01-SLURM/01-slurm-basics" style="color: #3f5a8a;">SLURM</a>
     * <a href="06-IntroToHPC/05-JOB-QUEUE/01-SLURM/01-slurm-introduction" style="color: #3f5a8a;">Introduction to SLURM</a>

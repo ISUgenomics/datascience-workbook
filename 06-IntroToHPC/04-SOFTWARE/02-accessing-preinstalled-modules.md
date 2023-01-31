@@ -136,6 +136,13 @@ module swap <name1> <name2>
 ```
 *This command will swap one module that is currently loaded in the user's environment with another module.*
 
+### • *unload all modules*
+To unload all modules from your environment, use:
+```
+module purge
+```
+
+
 ## **Examples of software modules**
 A wide range of software can be made available as modules on an HPC system. Some examples of the types of software that are commonly made available as modules include:
 
@@ -229,7 +236,8 @@ Both <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/
 
 ___
 # Further Reading
-* [Installing Custom Programs in User Space](03-installing-custom-programs)
+* [Accessing Software using Package Manager](03-accessing-package-manager)
+* [Installing Custom Programs in User Space](04-installing-custom-programs)
 
 * [Introduction to Job Scheduling](../05-JOB-QUEUE/00-introduction-to-job-scheduling)
 * [Introduction to GNU Parallel](../06-PARALLEL/01-introduction-to-gnu-parallel)
@@ -240,4 +248,4 @@ ___
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
 [Previous](01-software-available-on-HPC){: .btn  .btn--primary}
-[Next](03-installing-custom-programs){: .btn  .btn--primary}
+[Next](03-accessing-package-manager){: .btn  .btn--primary}

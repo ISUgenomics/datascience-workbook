@@ -235,9 +235,8 @@ module list             # List currently loaded modules
 Learn more from the practical tutorial  <a href="https://datascience.101workbook.org/06-IntroToHPC/04-SOFTWARE/02-accessing-preinstalled-modules" target="_blank">Accessing pre-Installed Modules  ⤴</a>, available in section <a href="https://datascience.101workbook.org/06-IntroToHPC/00-IntroToHPC-LandingPage" target="_blank">06. High-Performance Computing (HPC)  ⤴</a> of this workbook.
 
 ## **Software via package manager**
-Some HPC systems may use a centralized package manager to manage the software that is available. The package manager tools can be used to search for and list the available software packages.
+The centralized package manager enables searching for and listing the available software packages on HPC systems. Different package managers match various operating systems. So first, check the operating system (OS) on your HPC infrastructure and identify the package manager in use. Then follow the cheatsheet below to search for the software needed. Learn more from the practical tutorial  <a href="https://datascience.101workbook.org/06-IntroToHPC/04-SOFTWARE/03-accessing-package-manager" target="_blank">Accessing Software via Package Manager  ⤴</a>, available in section <a href="https://datascience.101workbook.org/06-IntroToHPC/00-IntroToHPC-LandingPage" target="_blank">06. High-Performance Computing (HPC)  ⤴</a> of this workbook.
 
-First, check the operating system (OS) on your HPC system, because the packaging formats and tools vary by platform:
 * for Ubuntu / Debian: *.deb* packages managed by `apt` and `dpkg` <br>
 ```
 # List installed and available packages:
