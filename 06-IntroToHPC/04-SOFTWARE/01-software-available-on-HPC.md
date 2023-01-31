@@ -64,7 +64,7 @@ It's worth noting that <b>each HPC system can have a different way of managing a
 <br><br>
 Additionally, in some cases a software is not publicly available and may require to go through a software request process, so it's best to <b>clarify the availability and access rights of the software</b>.
 </span>
-</div><br>
+</div>
 
 ## **Software as built-in commands**
 There are many different types of software that may be available as built-in commands on a high-performance computing (HPC) system. Some examples include:
@@ -307,7 +307,8 @@ Otherwise, go to step 3.
 ___
 # Further Reading
 * [Accessing pre-Installed Modules](02-accessing-preinstalled-modules)
-* [Installing Custom Programs in User Space](03-installing-custom-programs)
+* [Accessing Software using Package Manager](03-accessing-package-manager)
+* [Installing Custom Programs in User Space](04-installing-custom-programs)
 
 * [Introduction to Job Scheduling](../05-JOB-QUEUE/00-introduction-to-job-scheduling)
 * [Introduction to GNU Parallel](../06-PARALLEL/01-introduction-to-gnu-parallel)
