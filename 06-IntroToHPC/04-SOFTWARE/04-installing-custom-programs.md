@@ -63,24 +63,35 @@ Explore section <a href="https://datascience.101workbook.org/02-IntroToCommandLi
 Follow the guide in the tutorial <a href="https://datascience.101workbook.org/06-IntroToHPC/00-HOME-DIRECTORY/00-setting-up-home-directory" target="_blank">Setting up your home directory for data analysis  ⤴</a> to learn about the file system organization on the HPC, including the principles for <a href="https://datascience.101workbook.org/06-IntroToHPC/00-HOME-DIRECTORY/00-setting-up-home-directory#your-home-folder" target="_blank">home directory  ⤴</a>, <a href="https://datascience.101workbook.org/06-IntroToHPC/00-HOME-DIRECTORY/00-setting-up-home-directory#your-project-folder" target="_blank">working directory  ⤴</a>, and storage space.
 
 **Quick Guide**
+
 **0.** Avoid installing anything in your **home directory**. This is your default location when you log in, accesed with a shortcut `cd ~`.
+
 **1.** The **working directory** *(or workdir)* is usually on a path directly inherited from root, `/`. Typically it is called `/work` or `/project` or similar. Further on, there are directories of particular groups or projects, and subdirectories of individual users or tasks. <br><i>You can list directories on a path using the `ls` command: </i>
+
 ```
 ls /project/<group-wide folder>
 ```
+
 If you are a new user, your subdirectory may not yet exist. Create it in a group/project you have access to:
+
 ```
 mkdir /project/<group-wide folder>/user_name
 ```
+
 **2.** Export the path to your folder in the working space as the environmental variable:
+
 ```
 export PROJECTFOLDER=/project/<group-wide folder>/user_name
 ```
+
 **3.** Create a subfolder to store all installation settings:
+
 ```
 mkdir $PROJECTFOLDER/${USER}_software
 ```
+
 Then, create subfolders for most common configuration types and soft-link them to the home directory:
+
 ```
 for i in .config .nextflow .singularity .cache .spack .conda .local .lmod.d
 do
@@ -88,6 +99,7 @@ do
 done
 ls -d $PROJECTFOLDER/${USER}_software/.* | sort | awk 'NR>2' | xargs -I xx ln -s xx
 ```
+
 From now on, all installation processes attempting to save files in the home directory will be redirected to the corresponding subdirectories in the working directory. At the same time, all processes looking for software in the home directory will find it via symbolic links.
 
 **4.** If you want to **download the source code to install it manually**, you should also go to the working directory, create a subdirectory, and do the installation there. To follow a practical guide, go to the section [How to install regular packages?](#how-to-install-regular-packages)
@@ -97,9 +109,11 @@ From now on, all installation processes attempting to save files in the home dir
 It is recommended to install only once all programs commonly used in your group/lab. In this case, it is necessary to have the **group's working directory** available to all lab members. Such a shared location is a good place for a group-wide installation, **making software accessible by all qualifying users**.
 
 **1.** Create a `SOFTWARE` folder in your group's working directory on the cluster:
+
 ```
 mkdir /project/<group-wide folder>/SOFTWARE
 ```
+
 **2.** For any future software, create a subdirectory there, where you download the source code and perform the installation.
 
 
@@ -157,6 +171,7 @@ The `.rpm` package files are a type of software distribution format used by some
 The `YUM` package manager extracts the contents of the `.rpm` archive, verifies that all dependencies are satisfied, and installs the software in the appropriate location on the system. The package manager also keeps track of the installed packages, so that they can be easily updated or removed as needed.
 
 **Follow the steps to extract and install software from `.rpm` file:**
+
 **1.** Find the RPM package correct for your system. <i>The <a href="http://pkgs.org" target="_blank">http://pkgs.org  ⤴</a> website lists all RPMs available, and they are free to download.</i><br>
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
@@ -220,32 +235,39 @@ ln -s project/{group-wide folder}/SOFTWARE/
 Many programs are distributed as a compressed archive (.tar.gz) that contains the source code of the software package. To install software packaged in this form, you will typically need to extract the files and compile the source code manually on the HPC system. Such software distributions usualy comes with a standard set of files that lets you install programs with ease. After unpacking, if you see the `.configure` file in decompressed directory, use the following approach.
 
 **0.** Enter the desired location on HPC (e.g., preferred subdirectory in the working directory).
+
 **1.** Download the source code for "myprogram", e.g., using the `wget` command followed by the link:
 ```
 wget [download-link]
 ```
+
 **2.** Extract the source code, if needed. See more options for decompressing archive in section: [How to decompress the archive?](#how-to-decompress-the-archive)
 ```
 tar xvf myprogram-1.0.tar.gz
 ```
+
 **3.** Change to the directory containing the source code:
 ```
 cd myprogram-1.0
 ```
+
 **4.** Compile the program [*configure the buid, build the software, install the software*]:
 ```
 ./configure --prefix=$HOME/myprogram
 make
 make install
 ```
+
 **5.** Add the following line to your shell startup file (e.g., ~/.bashrc or ~/.bash_profile):
 ```
 export PATH=$HOME/myprogram/bin:$PATH
 ```
+
 **6.** Reload the `.bashrc` to update the changes in the environment:
 ```
 source ~/.bashrc
 ```
+
 **7.** Now you should be able to run `myprogram` from the terminal.
 ```
 myprogram -help
@@ -260,6 +282,7 @@ Follow the aletrantive steps 5-8, if you want to create a custom module for a ne
 setenv MYPROGRAM_HOME $HOME/myprogram
 prepend-path PATH $MYPROGRAM_HOME/bin
 ```
+
 **6'.** Add *(only once)* the following line to your shell startup file (e.g., ~/.bashrc):
 ```
 module use ~/custom_modules
@@ -268,6 +291,7 @@ module use ~/custom_modules
 ```
 source ~/.bashrc
 ```
+
 **8'.** Now you should be able to load the "myprogram" module using the following command:
 ```
 module load myprogram
@@ -293,7 +317,6 @@ It is good idea to run all the above commands in a <b>build</b> directory inside
 </div><br>
 
 
-
 ### • *use Makefile file*
 
 Some programs don't have `.configure` but they already have a `Makefile`. These programs do not need the first step *(i.e., executing `.configure`)*, and you can simply install them by typing:
@@ -301,6 +324,7 @@ Some programs don't have `.configure` but they already have a `Makefile`. These 
 make
 make install
 ```
+
 The executables are generally created either in the same directory or in the `bin` directory, within the package directory. Sometimes these packages will allow you to install other locations as well. Consult the `README` or `INSTALL` files that came with the program or edit the `Makefile` to hard code the installation directory. In some cases, setting `PREFIX` variable to the desired installation location will also do the trick.
 
 ```
@@ -331,10 +355,12 @@ You can install software packages in your **home directory** or in the **group's
 ```
 mkdir /path/to/custom_modules
 ```
+
 **2.** In the *custom_modules* directory, make a directory for each software:
 ```
 mkdir /path/to/custom_modules/app_name
 ```
+
 **3.** In the *app_name* directory, create a text file, i.e., custom *module file*: <br>
 ^<i>file name should indicate version number and, if applicable, the compiler version</i>
 
@@ -363,6 +389,7 @@ alias myapp='$MY_APP_DIR/bin/my_app.sh'
 module use /path/to/custom_modules
 module load app_name
 ```
+
 <i>By using the `module use` command, you can temporarily modify the `module search` path for your current shell session without affecting the module search path for other users.</i>
 
 <div style="background: #dff5b3; padding: 15px;">
