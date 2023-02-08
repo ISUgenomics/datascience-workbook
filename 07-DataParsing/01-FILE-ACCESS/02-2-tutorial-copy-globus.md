@@ -1,8 +1,8 @@
 ---
 title: "Copying Data using Globus"
 layout: single
-author:
-author_profile: false
+author: Arun Seetharam
+author_profile: true
 header:
   overlay_color: "444444"
   overlay_image: /07-DataParsing/assets/images/07_data_acquisition_banner.png

@@ -1,8 +1,8 @@
 ---
 title: "Introduction to Slack"
 layout: single
-author:
-author_profile: false
+author: Andrew Severin
+author_profile: true
 header:
   overlay_color: "444444"
   overlay_image: /09-ProjectManagement/assets/images/09_project_management_banner.png

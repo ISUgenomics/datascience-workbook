@@ -1,8 +1,8 @@
 ---
 title: "Merge Two Spreadsheets using a Common Column"
 layout: single
-author:
-author_profile: false
+author: Andrew Severin
+author_profile: true
 header:
   overlay_color: "444444"
   overlay_image: /07-DataParsing/assets/images/07_data_acquisition_banner.png
