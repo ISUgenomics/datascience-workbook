@@ -51,8 +51,3 @@ My main interests are in the fields of Bioinformatics and evolutionary Genomics.
 ![Kerrie](../assets/images/people/KerrieGeil.png){: .align-left }
 Kerrie is an ARS SCINet postdoc in the research group of Dr. Deb Peters in Las Cruces, NM. Her M.S. and Ph.D. degrees are in Atmospheric Sciences and her research background is in climate modeling.
 <br><br><br>
-
-### Rowan Gaffney
-![Rowan](../assets/images/people/RowanGaffney.jpg){: .align-left }
-Rowan is a physical scientist in the Rangeland Resource & Systems Research Unit in Fort Collins, CO. He specializes in analyzing large, multidimensional geospatial data using a variety of approaches from machine learning to numerical analysis.
-<br><br>
