@@ -65,8 +65,12 @@ Manipulating text files in the command line is a powerful and efficient method f
 
 ## **GREP** - search pattern
 
-| **SYNTAX:** |`text_stream \| grep <OPTIONS> <PATTERN>` | or | `grep <OPTIONS> <PATTERN> <FILE>`|
-|-------------|---|---|---|
+<table><tr>
+    <td><b>SYNTAX:</b></td>
+    <td><code>text_stream | grep OPTIONS PATTERN</code></td>
+    <td>or</td>
+    <td><code>grep OPTIONS PATTERN FILE</code></td>
+</tr></table>
 
 | COMMAND SYNTAX | EXAMPLE | TASK |
 |----------------|---------|-------------|
@@ -80,8 +84,12 @@ To learn more, see the comprehensive tutorial in this workbook: <a href="https:/
 
 ## **SED** - replace pattern
 
-| **SYNTAX:** |`text_stream \| sed <OPTIONS> /<PATTERN>/<REPLACEMENT>/` | or | `sed <OPTIONS> /<PATTERN>/<REPLACEMENT>/ <FILE>`|
-|-------------|---|---|---|
+<table><tr>
+    <td><b>SYNTAX:</b></td>
+    <td><code>text_stream | sed OPTIONS /PATTERN/REPLACEMENT/</code></td>
+    <td>or</td>
+    <td><code>sed OPTIONS /PATTERN/REPLACEMENT/ FILE</code></td>
+</tr></table>
 
 | COMMAND SYNTAX | EXAMPLE | TASK |
 |----------------|---------|-------------|
@@ -93,8 +101,12 @@ To learn more, see the comprehensive tutorial in this workbook: <a href="https:/
 
 ## **AWK** - manage order
 
-| **SYNTAX:** |`text_stream \| awk <OPTIONS> '{}'` | or | `awk <OPTIONS> '{}' <FILE>`|
-|-------------|---|---|---|
+<table><tr>
+    <td><b>SYNTAX:</b></td>
+    <td><code>text_stream | awk OPTIONS '{}'</code></td>
+    <td>or</td>
+    <td><code>awk OPTIONS '{}' FILE</code></td>
+</tr></table>
 
 | COMMAND SYNTAX | EXAMPLE | TASK |
 |----------------|---------|-------------|
@@ -108,8 +120,12 @@ To learn more about **BIOAWK**, see the comprehensive tutorial in this workbook:
 
 ## **CUT** - cut characters
 
-| **SYNTAX:** |`text_stream \| cut <OPTIONS>` | or | `cut <OPTIONS> <FILE>`|
-|-------------|---|---|---|
+<table><tr>
+    <td><b>SYNTAX:</b></td>
+    <td><code>text_stream | cut OPTIONS</code></td>
+    <td>or</td>
+    <td><code>cut OPTIONS FILE</code></td>
+</tr></table>
 
 | COMMAND SYNTAX | EXAMPLE | TASK |
 |----------------|---------|-------------|
@@ -119,8 +135,12 @@ To learn more about **BIOAWK**, see the comprehensive tutorial in this workbook:
 
 ## **SORT** - sort lines
 
-| **SYNTAX:** |`text_stream \| sort <OPTIONS>` | or | `sort <OPTIONS> <FILE>`|
-|-------------|---|---|---|
+<table><tr>
+    <td><b>SYNTAX:</b></td>
+    <td><code>text_stream | sort OPTIONS</code></td>
+    <td>or</td>
+    <td><code>sort OPTIONS FILE</code></td>
+</tr></table>
 
 | COMMAND SYNTAX | EXAMPLE | TASK |
 |----------------|---------|-------------|
@@ -133,8 +153,12 @@ To learn more, explore the **Unix Getting Started** tutorial in the section: <a 
 
 ## **UNIQ** - unique lines
 
-| **SYNTAX:** |`text_stream \| uniq <OPTIONS>` | or | `uniq <OPTIONS> <FILE>`|
-|-------------|---|---|---|
+<table><tr>
+    <td><b>SYNTAX:</b></td>
+    <td><code>text_stream | uniq OPTIONS</code></td>
+    <td>or</td>
+    <td><code>uniq OPTIONS FILE</code></td>
+</tr></table>
 
 | COMMAND SYNTAX | EXAMPLE | TASK |
 |----------------|---------|-------------|
@@ -146,8 +170,12 @@ To learn more, explore the **Unix Getting Started** tutorial in the section: <a 
 
 ## **TR** - swap characters
 
-| **SYNTAX:** |`text_stream \| tr <OPTIONS>` | or | `tr <OPTIONS> < <FILE>`|
-|-------------|---|---|---|
+<table><tr>
+    <td><b>SYNTAX:</b></td>
+    <td><code>text_stream | tr OPTIONS</code></td>
+    <td>or</td>
+    <td><code>tr OPTIONS &#60; FILE</code></td>
+</tr></table>
 
 | COMMAND SYNTAX | EXAMPLE | TASK |
 |----------------|---------|-------------|
@@ -159,8 +187,12 @@ To learn more, explore the **Unix Getting Started** tutorial in the section: <a 
 
 ## **WC** - count lines, words
 
-| **SYNTAX:** |`text_stream \| wc <OPTIONS>` | or | `wc <OPTIONS> <FILE>`|
-|-------------|---|---|---|
+<table><tr>
+    <td><b>SYNTAX:</b></td>
+    <td><code>text_stream | wc OPTIONS</code></td>
+    <td>or</td>
+    <td><code>wc OPTIONS FILE</code></td>
+</tr></table>
 
 | COMMAND SYNTAX | EXAMPLE | TASK |
 |----------------|---------|-------------|
@@ -173,8 +205,12 @@ To learn more, explore the **Unix Getting Started** tutorial in the section: <a 
 
 ## **HEAD** and **TAIL**
 
-| **SYNTAX:** |`text_stream \| head <OPTIONS>` | or | `head <OPTIONS> <FILE>`|
-|-------------|---|---|---|
+<table><tr>
+    <td><b>SYNTAX:</b></td>
+    <td><code>text_stream | head <OPTIONS</code></td>
+    <td>or</td>
+    <td><code>head OPTIONS FILE</code></td>
+</tr></table>
 
 These tools are very useful for quickly inspecting the contents of a file and can be used to get an overview of the data before processing it with more complex text manipulation tools.
 
