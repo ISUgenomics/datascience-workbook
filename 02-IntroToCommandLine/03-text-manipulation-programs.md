@@ -19,14 +19,14 @@ In this section, we will discuss some of the most popular and useful command lin
 
 | TOOL | DESCRIPTION | NOTES |
 |------|-------------|-------|
-| [grep](#grep) | *searches for a specific pattern in text files and outputs matching lines* | <a href="https://datascience.101workbook.org/02-IntroToCommandLine/03A-tutorial-unix-grep" target="_blank">Tutorial: GREP  ⤴</a> |
-| [sed](#sed) | *stream editor for filtering and transforming text* | <a href="https://datascience.101workbook.org/02-IntroToCommandLine/03B-tutorial-unix-sed" target="_blank">Tutorial: SED  ⤴</a> |
-| [awk](#awk) | *a programming language for processing text data, often used for text manipulation tasks* | <a href="https://datascience.101workbook.org/02-IntroToCommandLine/03C-tutorial-unix-awk" target="_blank">Tutorial: AWK  ⤴</a> |
-| [cut](#cut) | *cuts out specific columns or fields from a file* ||
-| [sort](#sort) | *sorts lines of text alphabetically or numerically* ||
-| [uniq](#uniq) | *removes duplicate lines from a file* ||
-| [tr](#tr) | *translates or deletes characters from a file* ||
-| [wc](#wc) | *counts the number of lines, words, and characters in a file* ||
+| [grep](#grep---search-pattern) | *searches for a specific pattern in text files and outputs matching lines* | <a href="https://datascience.101workbook.org/02-IntroToCommandLine/03A-tutorial-unix-grep" target="_blank">Tutorial: GREP  ⤴</a> |
+| [sed](#sed---replace-pattern) | *stream editor for filtering and transforming text* | <a href="https://datascience.101workbook.org/02-IntroToCommandLine/03B-tutorial-unix-sed" target="_blank">Tutorial: SED  ⤴</a> |
+| [awk](#awk---manage-order) | *a programming language for processing text data, often used for text manipulation tasks* | <a href="https://datascience.101workbook.org/02-IntroToCommandLine/03C-tutorial-unix-awk" target="_blank">Tutorial: AWK  ⤴</a> |
+| [cut](#cut---cut-characters) | *cuts out specific columns or fields from a file* ||
+| [sort](#sort---sort-lines) | *sorts lines of text alphabetically or numerically* ||
+| [uniq](#uniq---unique-lines) | *removes duplicate lines from a file* ||
+| [tr](#tr---swap-characters) | *translates or deletes characters from a file* ||
+| [wc](#wc---count-lines-words) | *counts the number of lines, words, and characters in a file* ||
 | [head and tail](#head-and-tail) | *output the first or last part of a file, respectively* ||
 
 *^Click on the tool name (in the first column) to jump to the cheat sheet.*
@@ -34,7 +34,7 @@ In this section, we will discuss some of the most popular and useful command lin
 These tools are often used together in pipelines to perform more complex text manipulations.
 Understanding **text manipulation programs** can greatly improve a user's productivity and efficiency when working with text files, without the need for graphical user interfaces.
 
-## Why manipulate text files from the command line?
+## *Why manipulate text files from the command line?*
 
 Manipulating text files in the command line is a powerful and efficient method for processing large amounts of text data. It is useful because of:
 
@@ -48,9 +48,9 @@ Manipulating text files in the command line is a powerful and efficient method f
 
 * **ACCESSABILITY** <br>*Command line tools allow users to manipulate text files stored on the remote machine without downloading them.*
 
-## When to manipulate text files in the command line?
+## *When to manipulate text files in the command line?*
 
-* **DATA PROCESSING** <br>*Command line tools are particularly useful when working with large text files, as they can process the data much faster than a graphical user interface (GUI) based text editor.*
+* **DATA PROCESSING** <br>*Command line tools are particularly useful when working with large text data or multiple files, as they can process the data much faster than a graphical user interface (GUI) based text editor.*
 
   * **TEXT MANIPULATION** <br>*The command line tools provide a powerful way to change the order or structure in the text file.*
 
@@ -61,11 +61,14 @@ Manipulating text files in the command line is a powerful and efficient method f
 
 # CheatSheet
 
-Below, you can find a cheat sheet for some of the most popular command line text manipulation tools.
+*Below, you can find a cheat sheet for some of the most popular command line text manipulation tools.*
 
-## GREP - search pattern
+## **GREP** - search pattern
 
-**SYNTAX:** `text_stream | grep <OPTIONS> <PATTERN>` or `grep <OPTIONS> <PATTERN> <FILE>`
+**SYNTAX:** <br>
+`text_stream | grep <OPTIONS> <PATTERN>` <br>
+or <br>
+`grep <OPTIONS> <PATTERN> <FILE>`
 
 | COMMAND SYNTAX | EXAMPLE | TASK |
 |----------------|---------|-------------|
@@ -77,9 +80,12 @@ Below, you can find a cheat sheet for some of the most popular command line text
 
 To learn more, see the comprehensive tutorial in this workbook: <a href="https://datascience.101workbook.org/02-IntroToCommandLine/03A-tutorial-unix-grep" target="_blank">Tutorial: GREP – simple search for regular expressions  ⤴</a> .
 
-## SED - replace pattern
+## **SED** - replace pattern
 
-**SYNTAX:** `text_stream | sed <OPTIONS> /<PATTERN>/<REPLACEMENT>/` or `sed <OPTIONS> /<PATTERN>/<REPLACEMENT>/ <FILE>`
+**SYNTAX:**  <br>
+`text_stream | sed <OPTIONS> /<PATTERN>/<REPLACEMENT>/`  <br>
+or  <br>
+`sed <OPTIONS> /<PATTERN>/<REPLACEMENT>/ <FILE>`
 
 | COMMAND SYNTAX | EXAMPLE | TASK |
 |----------------|---------|-------------|
@@ -89,9 +95,12 @@ To learn more, see the comprehensive tutorial in this workbook: <a href="https:/
 
 To learn more, see the comprehensive tutorial in this workbook: <a href="https://datascience.101workbook.org/02-IntroToCommandLine/03B-tutorial-unix-sed" target="_blank">Tutorial: Tutorial: SED – edit stream text  ⤴</a> .
 
-## AWK - manage order
+## **AWK** - manage order
 
-**SYNTAX:** `text_stream | awk <OPTIONS> '{}'` or `awk <OPTIONS> '{}' <FILE>`
+**SYNTAX:**  <br>
+`text_stream | awk <OPTIONS> '{}'`  <br>
+or  <br>
+`awk <OPTIONS> '{}' <FILE>`
 
 | COMMAND SYNTAX | EXAMPLE | TASK |
 |----------------|---------|-------------|
@@ -103,9 +112,12 @@ To learn more, see the comprehensive tutorial in this workbook: <a href="https:/
 To learn more, see the comprehensive tutorial in this workbook: <a href="https://datascience.101workbook.org/02-IntroToCommandLine/03C-tutorial-unix-awk" target="_blank">Tutorial: AWK – advanced text processing  ⤴</a> . <br>
 To learn more about **BIOAWK**, see the comprehensive tutorial in this workbook: <a href="https://datascience.101workbook.org/02-IntroToCommandLine/03D-tutorial-unix-bioawk" target="_blank">Tutorial: BIOAWK – biological data manipulation  ⤴</a> .
 
-## CUT - cut characters
+## **CUT** - cut characters
 
-**SYNTAX:** `text_stream | cut <OPTIONS>` or `cut <OPTIONS> <FILE>`
+**SYNTAX:**  <br>
+`text_stream | cut <OPTIONS>`  <br>
+or  <br>
+`cut <OPTIONS> <FILE>`
 
 | COMMAND SYNTAX | EXAMPLE | TASK |
 |----------------|---------|-------------|
@@ -113,9 +125,12 @@ To learn more about **BIOAWK**, see the comprehensive tutorial in this workbook:
 | `cut -c 1-3 <FILE>` | `cut -c 1-3 file.txt` | Cut out the first three characters from each line. |
 
 
-## SORT - sort lines
+## **SORT** - sort lines
 
-**SYNTAX:** `text_stream | sort <OPTIONS>` or `sort <OPTIONS> <FILE>`
+**SYNTAX:**  <br>
+`text_stream | sort <OPTIONS>`  <br>
+or  <br>
+`sort <OPTIONS> <FILE>`
 
 | COMMAND SYNTAX | EXAMPLE | TASK |
 |----------------|---------|-------------|
@@ -126,9 +141,12 @@ To learn more about **BIOAWK**, see the comprehensive tutorial in this workbook:
 
 To learn more, explore the **Unix Getting Started** tutorial in the section: <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02E-tutorial-unix-getting-started#sort--sort-a-file-by-lines-alpha-numerically" target="_blank">SORT a file by lines  ⤴</a> . <br>
 
-## UNIQ - unique lines
+## **UNIQ** - unique lines
 
-**SYNTAX:** `text_stream | uniq <OPTIONS>` or `uniq <OPTIONS> <FILE>`
+**SYNTAX:**  <br>
+`text_stream | uniq <OPTIONS>`  <br>
+or  <br>
+`uniq <OPTIONS> <FILE>`
 
 | COMMAND SYNTAX | EXAMPLE | TASK |
 |----------------|---------|-------------|
@@ -138,9 +156,12 @@ To learn more, explore the **Unix Getting Started** tutorial in the section: <a 
 
 To learn more, explore the **Unix Getting Started** tutorial in the section: <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02E-tutorial-unix-getting-started#uniq--unique-command-to-remove-duplicates-of-adjacent-presorted-lines" target="_blank">UNIQ - command to remove duplicates  ⤴</a> . <br>
 
-## TR - swap characters
+## **TR** - swap characters
 
-**SYNTAX:** `text_stream | tr <OPTIONS>` or `tr <OPTIONS> < <FILE>`
+**SYNTAX:**  <br>
+`text_stream | tr <OPTIONS>`  <br>
+or  <br>
+`tr <OPTIONS> < <FILE>`
 
 | COMMAND SYNTAX | EXAMPLE | TASK |
 |----------------|---------|-------------|
@@ -150,9 +171,12 @@ To learn more, explore the **Unix Getting Started** tutorial in the section: <a 
 
 To learn more, explore the **Unix Getting Started** tutorial in the section: <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02E-tutorial-unix-getting-started#tr--translate" target="_blank">TR - translate  ⤴</a> . <br>
 
-## WC - count lines, words, chr
+## **WC** - count lines, words
 
-**SYNTAX:** `text_stream | wc <OPTIONS>` or `wc <OPTIONS> <FILE>`
+**SYNTAX:**  <br>
+`text_stream | wc <OPTIONS>`  <br>
+or  <br>
+`wc <OPTIONS> <FILE>`
 
 | COMMAND SYNTAX | EXAMPLE | TASK |
 |----------------|---------|-------------|
@@ -163,9 +187,12 @@ To learn more, explore the **Unix Getting Started** tutorial in the section: <a 
 
 To learn more, explore the **Unix Getting Started** tutorial in the section: <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02E-tutorial-unix-getting-started#wc--word-count" target="_blank">WC - word count  ⤴</a> . <br>
 
-## HEAD and TAIL
+## **HEAD** and **TAIL**
 
-**SYNTAX:** `text_stream | head <OPTIONS>` or `head <OPTIONS> <FILE>`
+**SYNTAX:**  <br>
+`text_stream | head <OPTIONS>`  <br>
+or  <br>
+`head <OPTIONS> <FILE>`
 
 These tools are very useful for quickly inspecting the contents of a file and can be used to get an overview of the data before processing it with more complex text manipulation tools.
 
