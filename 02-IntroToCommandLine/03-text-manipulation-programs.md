@@ -65,10 +65,8 @@ Manipulating text files in the command line is a powerful and efficient method f
 
 ## **GREP** - search pattern
 
-**SYNTAX:** <br>
-`text_stream | grep <OPTIONS> <PATTERN>` <br>
-or <br>
-`grep <OPTIONS> <PATTERN> <FILE>`
+| **SYNTAX:** |`text_stream \| grep <OPTIONS> <PATTERN>` | or | `grep <OPTIONS> <PATTERN> <FILE>`|
+|-------------|---|---|---|
 
 | COMMAND SYNTAX | EXAMPLE | TASK |
 |----------------|---------|-------------|
@@ -82,10 +80,8 @@ To learn more, see the comprehensive tutorial in this workbook: <a href="https:/
 
 ## **SED** - replace pattern
 
-**SYNTAX:**  <br>
-`text_stream | sed <OPTIONS> /<PATTERN>/<REPLACEMENT>/`  <br>
-or  <br>
-`sed <OPTIONS> /<PATTERN>/<REPLACEMENT>/ <FILE>`
+| **SYNTAX:** |`text_stream \| sed <OPTIONS> /<PATTERN>/<REPLACEMENT>/` | or | `sed <OPTIONS> /<PATTERN>/<REPLACEMENT>/ <FILE>`|
+|-------------|---|---|---|
 
 | COMMAND SYNTAX | EXAMPLE | TASK |
 |----------------|---------|-------------|
@@ -97,10 +93,8 @@ To learn more, see the comprehensive tutorial in this workbook: <a href="https:/
 
 ## **AWK** - manage order
 
-**SYNTAX:**  <br>
-`text_stream | awk <OPTIONS> '{}'`  <br>
-or  <br>
-`awk <OPTIONS> '{}' <FILE>`
+| **SYNTAX:** |`text_stream \| awk <OPTIONS> '{}'` | or | `awk <OPTIONS> '{}' <FILE>`|
+|-------------|---|---|---|
 
 | COMMAND SYNTAX | EXAMPLE | TASK |
 |----------------|---------|-------------|
@@ -114,10 +108,8 @@ To learn more about **BIOAWK**, see the comprehensive tutorial in this workbook:
 
 ## **CUT** - cut characters
 
-**SYNTAX:**  <br>
-`text_stream | cut <OPTIONS>`  <br>
-or  <br>
-`cut <OPTIONS> <FILE>`
+| **SYNTAX:** |`text_stream \| cut <OPTIONS>` | or | `cut <OPTIONS> <FILE>`|
+|-------------|---|---|---|
 
 | COMMAND SYNTAX | EXAMPLE | TASK |
 |----------------|---------|-------------|
@@ -127,10 +119,8 @@ or  <br>
 
 ## **SORT** - sort lines
 
-**SYNTAX:**  <br>
-`text_stream | sort <OPTIONS>`  <br>
-or  <br>
-`sort <OPTIONS> <FILE>`
+| **SYNTAX:** |`text_stream \| sort <OPTIONS>` | or | `sort <OPTIONS> <FILE>`|
+|-------------|---|---|---|
 
 | COMMAND SYNTAX | EXAMPLE | TASK |
 |----------------|---------|-------------|
@@ -143,10 +133,8 @@ To learn more, explore the **Unix Getting Started** tutorial in the section: <a 
 
 ## **UNIQ** - unique lines
 
-**SYNTAX:**  <br>
-`text_stream | uniq <OPTIONS>`  <br>
-or  <br>
-`uniq <OPTIONS> <FILE>`
+| **SYNTAX:** |`text_stream \| uniq <OPTIONS>` | or | `uniq <OPTIONS> <FILE>`|
+|-------------|---|---|---|
 
 | COMMAND SYNTAX | EXAMPLE | TASK |
 |----------------|---------|-------------|
@@ -158,10 +146,8 @@ To learn more, explore the **Unix Getting Started** tutorial in the section: <a 
 
 ## **TR** - swap characters
 
-**SYNTAX:**  <br>
-`text_stream | tr <OPTIONS>`  <br>
-or  <br>
-`tr <OPTIONS> < <FILE>`
+| **SYNTAX:** |`text_stream \| tr <OPTIONS>` | or | `tr <OPTIONS> < <FILE>`|
+|-------------|---|---|---|
 
 | COMMAND SYNTAX | EXAMPLE | TASK |
 |----------------|---------|-------------|
@@ -173,10 +159,8 @@ To learn more, explore the **Unix Getting Started** tutorial in the section: <a 
 
 ## **WC** - count lines, words
 
-**SYNTAX:**  <br>
-`text_stream | wc <OPTIONS>`  <br>
-or  <br>
-`wc <OPTIONS> <FILE>`
+| **SYNTAX:** |`text_stream \| wc <OPTIONS>` | or | `wc <OPTIONS> <FILE>`|
+|-------------|---|---|---|
 
 | COMMAND SYNTAX | EXAMPLE | TASK |
 |----------------|---------|-------------|
@@ -189,10 +173,8 @@ To learn more, explore the **Unix Getting Started** tutorial in the section: <a 
 
 ## **HEAD** and **TAIL**
 
-**SYNTAX:**  <br>
-`text_stream | head <OPTIONS>`  <br>
-or  <br>
-`head <OPTIONS> <FILE>`
+| **SYNTAX:** |`text_stream \| head <OPTIONS>` | or | `head <OPTIONS> <FILE>`|
+|-------------|---|---|---|
 
 These tools are very useful for quickly inspecting the contents of a file and can be used to get an overview of the data before processing it with more complex text manipulation tools.
 
