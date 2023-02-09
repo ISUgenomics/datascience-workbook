@@ -257,10 +257,14 @@ cut -d DELIMITER -f COLUMN FILE
 ```
 or
 ```
-awk -F DELIMITER {print COLUMN} FILE
+awk -F DELIMITER '{print COLUMN}' FILE
 ```
 
+### Creating columns by translating a char to a delimiter
 
+```
+text_stream | grep WORD | tr '-' ' ' | awk '{print $2,$4,$6}' | sort -nk1 | uniq
+```
 
 ___
 # Further Reading
