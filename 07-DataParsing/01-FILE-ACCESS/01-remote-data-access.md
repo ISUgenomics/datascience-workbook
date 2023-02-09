@@ -56,10 +56,11 @@ You can then use standard file system commands, such as `ls`, `cd`, and `pwd`, t
 ### • *preview & edit data*
 <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/03-0-remote-data-preview" target="_blank">Preview and edit remote data without downloading  ⤴</a>
 
-## **2. Log in to a web-based interface**
+## **2. Log in to the HPC web-based interface**
 Some HPC systems may also provide web-based graphical interfaces for remotely accessing and managing data. One of the most commonly practiced solutions is:
 
-*  **OOD (Open On Demand)**, *learn more about the <a href="https://openondemand.org" target="_blank">OOD approach  ⤴</a>*<br>
+###  *OOD (Open On Demand)*
+*learn more about the <a href="https://openondemand.org" target="_blank">OOD approach  ⤴</a>*<br>
 
 <div style="background: #dff5b3; padding: 15px;">
 <span style="font-weight:800;">NOTE:</span>
@@ -95,7 +96,7 @@ You can then use web-based graphical interface to use remotely the available res
 
 Open On-Demand is designed to be scalable, secure, and flexible. By providing web-based access to these resources, OOD makes it easy for a wider range of users to take advantage of the power of HPC, without the need for the user to know the command line.
 
-## **3. Web Services**
+## **3. Access data via web services**
 
 Web services are another way for users to access different applications or data available on
 some HPC systems. They provide a standard set of protocols and standards for exchanging data, allowing different systems to communicate with each other over the World Wide Web (www).
