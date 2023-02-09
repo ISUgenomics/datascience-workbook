@@ -46,15 +46,13 @@ You will be prompted to **enter your password** for the remote machine, and if t
 
 You can then use standard file system commands, such as `ls`, `cd`, and `pwd`, to navigate the remote file system and manipulate (move `mv`, preview `cat`, edit `nano`, transfer `cp`) selected files.
 
-### Command line access to
+### Command line approach for:
 
-<b>From the hands-on tutorials in this section you can learn how to:</b>
+### • *data transfer*
+Follow the hands-on tutorial: <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/02-0-remote-data-transfer" target="_blank">Transfer data from and to the remote machine  ⤴</a>
 
-### • *transfer data*
-<a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/02-0-remote-data-transfer" target="_blank">Transfer data from and to the remote machine  ⤴</a>
-
-### • *preview & edit data*
-<a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/03-0-remote-data-preview" target="_blank">Preview and edit remote data without downloading  ⤴</a>
+### • *data preview & edit*
+Follow the hands-on tutorial: <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/03-0-remote-data-preview" target="_blank">Preview and edit remote data without downloading  ⤴</a>
 
 ## **2. Log in to the HPC web-based interface**
 Some HPC systems may also provide web-based graphical interfaces for remotely accessing and managing data. One of the most commonly practiced solutions is:
