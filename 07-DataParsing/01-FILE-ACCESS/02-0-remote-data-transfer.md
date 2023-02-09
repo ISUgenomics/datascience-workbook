@@ -54,7 +54,7 @@ Here are some of the key reasons why secure data transfer is important in resear
 <i>Secure data transfer allows researchers to collaborate and share data in real-time, regardless of their location. This can greatly increase the speed and efficiency of research projects and can facilitate collaboration between researchers across multiple institutions.
 </i>
 
-### Good Practices
+### • *Good Practices*
 
 When transferring any research data, there are several practices and techniques that **should be avoided** in order to ensure the security and confidentiality of the data:
 
@@ -127,7 +127,7 @@ The safety and security of web-based free file transfer services can vary greatl
 
 High-Performance Computing (HPC) environments typically have a number of secure options for remote data transfer, including:
 
-### GLOBUS (recommended)
+### • GLOBUS (recommended)
 
 <b><a href="https://www.globus.org/data-transfer" target="_blank">Globus  ⤴</a> is a web-based service</b> for transferring large amounts of data between HPC systems, cloud storage systems, and other data repositories. Globus provides a secure and reliable means of transferring data, and it can be integrated with other tools and systems used in HPC environments.
 
@@ -136,19 +136,19 @@ High-Performance Computing (HPC) environments typically have a number of secure 
 <span style="color: #ff3870;font-weight: 500;">Globus is a recommended tool for transferring data on the SCINet infrastructure.</span> <br>
 Learn more about <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/02-scinet-atlas-cluster#data-transfer-using-globus" target="_blank">Data transfer on Atlas using Globus  ⤴</a> from the tutorial <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/02-scinet-atlas-cluster" target="_blank">SCINet: Atlas Computing Cluster  ⤴</a>.
 
-### GridFTP
+### • GridFTP
 
 <b><a href="https://docs.nersc.gov/services/gridftp/" target="_blank">GridFTP  ⤴</a> is a command line service</b> for parallel movement of data. It is a high-performance, parallel-data transfer protocol designed for large-scale data transfers, especially for HPC and scientific computing. GridFTP uses multiple parallel streams to transfer data, which can significantly speed up data transfer times for large files.
 
-### rsync
+### • rsync
 
 <b>`rsync` is a command line tool for fast and efficient file transfer</b>. It is often used in HPC environments. `rsync` transfers only the differences between two sets of files, making it well-suited for transferring large amounts of data, especially when only small changes have been made to the data.
 
-### scp
+### • scp
 
 <b>`scp` (secure copy) is a command-line tool for securely copying files between computers</b>. `scp` uses the same authentication and security as the SSH (secure shell) protocol, which is widely used for secure remote login and other secure network services.
 
-### Data Movers
+### • Data Movers
 
 Some HPC systems include data movers, which are specialized hardware or software components that are designed to handle the high-speed transfer of large amounts of data. Data movers can be integrated with other HPC tools and systems to provide a seamless means of transferring data between HPC resources.
 
