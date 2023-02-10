@@ -21,7 +21,7 @@ or
 
 * **`rsync` (secure synchronization)**, recommended to update the differences between the corresponding directories
 
-## What you need?
+## *What you need to start?*
 
 All you need is a terminal window providing the **command line interface and your access credentials** to the remote machine. Typically, these include:
 
@@ -72,6 +72,7 @@ For example, <code>./documents/file.txt</code> is a relative path to a file in a
 </span>
 </div>
 
+
 # SCP (secure copy)
 
 **`scp` (secure copy) is a command line tool** for copying files between computers using SSH (Secure Shell) protocol for data transfer. It works by establishing an encrypted `ssh` connection between two computers and copying the data over this connection.
@@ -81,19 +82,19 @@ For example, <code>./documents/file.txt</code> is a relative path to a file in a
 **Getting started:** <br>
 Open terminal window on your local machine and copy-paste the command example (provided below), while adjusting paths and credentials to your needs *(according to directions from the [Command SYNTAX](#command-syntax) section)*.
 
-### <i>Copying a file from <b>local to remote</b></i>
+### <i>Copy file: <b>local to remote</b></i>
 
 ```
 scp /local/directory/file.txt username@remote-hostname:/remote/directory/
 ```
 
-### <i>Copying a file from <b>remote to local</b></i>
+### <i>Copy file: <b>remote to local</b></i>
 
 ```
 scp username@remote-hostname:/remote/directory/file.txt /local/directory/
 ```
 
-### <i>Copying a directory</i>
+### <i>Copy a directory</i>
 
 If you want to copy the entire directory, use the `scp -r` command, where the `-r` flag tells copy the directory and its contents recursively.
 
@@ -133,38 +134,38 @@ Here are some options most commonly used with the `scp` command:
 
 <details><summary><b>Example 1:</b> Recursively copy a directory and its contents</summary>
 
-```
+<code>
 scp -r ~/data user@example-hostname:~/backup
-```
+</code><br><br>
 </details>
 
 <details><summary><b>Example 2:</b> Display verbose output during the transfer</summary>
 
-```
+<code>
 scp -v ~/data user@example-hostname:~/backup
-```
+</code><br><br>
 </details>
 
 <details><summary><b>Example 3:</b> Specify the port to use for the connection</summary>
 
-```
+<code>
 scp -p 8080 ~/data user@example-hostname:~/backup
-```
+</code><br><br>
 </details>
 
 <details><summary><b>Example 4:</b> Enable data compression during transfer</summary>
 
-```
+<code>
 scp -C ~/data user@example-hostname:~/backup
-```
+</code><br><br>
 </details>
 
 <details><summary><b>Example 5:</b> Suppress output, including error messages</summary>
 
-```
+<code>
 scp -q ~/data user@example-hostname:~/backup
-```
-</details>
+</code><br><br>
+</details><br>
 
 
 # RSYNC (secure synchro)
@@ -244,51 +245,51 @@ Here are some options most commonly used with the `rsync` command:
 
 <details><summary><b>Example 1:</b> Transfer files in archive mode</summary>
 
-```
+<code>
 rsync -a ~/data user@example-hostname:~/backup
-```
+</code><br><br>
 </details>
 
 <details><summary><b>Example 2:</b> Display verbose output during the transfer</summary>
 
-```
+<code>
 rsync -v ~/data user@example-hostname:~/backup
-```
+</code><br><br>
 </details>
 
 <details><summary><b>Example 3:</b> Compress the data during transfer</summary>
 
-```
+<code>
 rsync -z ~/data user@example-hostname:~/backup
-```
+</code><br><br>
 </details>
 
 <details><summary><b>Example 4:</b> Recursively copy a directory and its contents</summary>
 
-```
+<code>
 rsync -r ~/data user@example-hostname:~/backup
-```
+</code><br><br>
 </details>
 
 <details><summary><b>Example 5:</b> Perform a dry run without transferring any files</summary>
 
-```
+<code>
 rsync -n ~/data user@example-hostname:~/backup
-```
+</code><br><br>
 </details>
 
 <details><summary><b>Example 6:</b> Update only files that are newer on the source than on the destination</summary>
 
-```
+<code>
 rsync -u ~/data user@example-hostname:~/backup
-```
+</code><br><br>
 </details>
 
 <details><summary><b>Example 6:</b> Exclude files or directories based on a pattern</summary>
 
-```
+<code>
 rsync --exclude='*.log' ~/data user@example-hostname:~/backup
-```
+</code><br><br>
 </details>
 
 ___
