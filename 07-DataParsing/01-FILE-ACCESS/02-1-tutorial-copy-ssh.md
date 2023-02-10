@@ -134,37 +134,37 @@ Here are some options most commonly used with the `scp` command:
 
 <details><summary><b>Example 1:</b> Recursively copy a directory and its contents</summary>
 
-<code style="background-color: #e4f0f0; padding: 10px 5px; width:100%; display: block; margin-top: 10px;">
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
 scp -r ~/data user@example-hostname:~/backup
-</code><br><br>
+</code><br>
 </details>
 
 <details><summary><b>Example 2:</b> Display verbose output during the transfer</summary>
 
-<code>
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
 scp -v ~/data user@example-hostname:~/backup
-</code><br><br>
+</code><br>
 </details>
 
 <details><summary><b>Example 3:</b> Specify the port to use for the connection</summary>
 
-<code>
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
 scp -p 8080 ~/data user@example-hostname:~/backup
-</code><br><br>
+</code><br>
 </details>
 
 <details><summary><b>Example 4:</b> Enable data compression during transfer</summary>
 
-<code>
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
 scp -C ~/data user@example-hostname:~/backup
-</code><br><br>
+</code><br>
 </details>
 
 <details><summary><b>Example 5:</b> Suppress output, including error messages</summary>
 
-<code>
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
 scp -q ~/data user@example-hostname:~/backup
-</code><br><br>
+</code><br>
 </details><br>
 
 
@@ -245,51 +245,51 @@ Here are some options most commonly used with the `rsync` command:
 
 <details><summary><b>Example 1:</b> Transfer files in archive mode</summary>
 
-<code>
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
 rsync -a ~/data user@example-hostname:~/backup
-</code><br><br>
+</code><br>
 </details>
 
 <details><summary><b>Example 2:</b> Display verbose output during the transfer</summary>
 
-<code>
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
 rsync -v ~/data user@example-hostname:~/backup
-</code><br><br>
+</code><br>
 </details>
 
 <details><summary><b>Example 3:</b> Compress the data during transfer</summary>
 
-<code>
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
 rsync -z ~/data user@example-hostname:~/backup
-</code><br><br>
+</code><br>
 </details>
 
 <details><summary><b>Example 4:</b> Recursively copy a directory and its contents</summary>
 
-<code>
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
 rsync -r ~/data user@example-hostname:~/backup
-</code><br><br>
+</code><br>
 </details>
 
 <details><summary><b>Example 5:</b> Perform a dry run without transferring any files</summary>
 
-<code>
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
 rsync -n ~/data user@example-hostname:~/backup
-</code><br><br>
+</code><br>
 </details>
 
 <details><summary><b>Example 6:</b> Update only files that are newer on the source than on the destination</summary>
 
-<code>
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
 rsync -u ~/data user@example-hostname:~/backup
-</code><br><br>
+</code><br>
 </details>
 
 <details><summary><b>Example 6:</b> Exclude files or directories based on a pattern</summary>
 
-<code>
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
 rsync --exclude='*.log' ~/data user@example-hostname:~/backup
-</code><br><br>
+</code><br>
 </details>
 
 ___
