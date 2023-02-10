@@ -134,7 +134,7 @@ Here are some options most commonly used with the `scp` command:
 
 <details><summary><b>Example 1:</b> Recursively copy a directory and its contents</summary>
 
-<code>
+<code style="background-color: #e4f0f0; padding: 10px 5px; width:100%; display: block; margin-top: 10px;">
 scp -r ~/data user@example-hostname:~/backup
 </code><br><br>
 </details>
