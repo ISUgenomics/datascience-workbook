@@ -23,40 +23,43 @@ header:
 <table>
   <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center; width: 130px;">INTRO</td>
     <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b>
-    <a href="01-IntroToDataScience/01-data-science-principles" style="color: #24376b;">
+    <a href="01-IntroToDataScience/01-data-science-principles" style="color: #24376b; text-decoration: none;">
     Data Science Principles</a></b></td></tr>
 
   <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
     <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b>
-    <a href="01-IntroToDataScience/02-computational-science-applications" style="color: #24376b;">
+    <a href="01-IntroToDataScience/02-computational-science-applications" style="color: #24376b; text-decoration: none;">
     Applications of Computational Science</a></b></td></tr>
 
   <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
-    <a href="01-IntroToDataScience/02A-computational-biology" style="color: #3f5a8a;">
+    <a href="01-IntroToDataScience/02A-computational-biology" style="color: #3f5a8a; text-decoration: none;">
     Computational Biology</a></td></tr>
 
   <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;  
-    <span style="color: #3f5a8a;">go to</span> <a href="https://bioinformaticsworkbook.org" style="color: #518cc2;"><i>Bioinformatics Workbook</i></a></td></tr>
+    <span style="color: #3f5a8a;">go to</span> <a href="https://bioinformaticsworkbook.org" style="color: #518cc2; text-decoration: none;">
+    <i>Bioinformatics Workbook</i></a></td></tr>
 
   <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
-    <a href="01-IntroToDataScience/02B-geospatial-analytics" style="color: #3f5a8a;">
+    <a href="01-IntroToDataScience/02B-geospatial-analytics" style="color: #3f5a8a; text-decoration: none;">
     Geospatial Analytics</a></td></tr>
 
   <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;  
-    <span style="color: #3f5a8a;">go to</span> <a href="https://geospatial.101workbook.org" style="color: #518cc2;"><i>Geospatial Workbook</i></a></td></tr>
+    <span style="color: #3f5a8a;">go to</span> <a href="https://geospatial.101workbook.org" style="color: #518cc2; text-decoration: none;">
+    <i>Geospatial Workbook</i></a></td></tr>
 
   <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
-    <a href="01-IntroToDataScience/02C-machine-learning" style="color: #3f5a8a;">
+    <a href="01-IntroToDataScience/02C-machine-learning" style="color: #3f5a8a; text-decoration: none;">
     Machine Learning Outlook</a></td></tr>
 
   <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;  
-    <span style="color: #3f5a8a;">go to</span> <a href="https://isugenomics.github.io/AI-workbook" style="color: #518cc2;"><i>AI Workbook</i></a></td></tr>
+    <span style="color: #3f5a8a;">go to</span> <a href="https://isugenomics.github.io/AI-workbook" style="color: #518cc2; text-decoration: none;">
+    <i>AI Workbook</i></a></td></tr>
 
 </table><br>
 
@@ -139,56 +142,57 @@ header:
 <table>
   <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center; width: 130px;">INTRO</td>
     <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b>
-    <a href="03-SetUpComputingMachine/01-operating-system-installation" style="color: #24376b;">
+    <a href="03-SetUpComputingMachine/01-operating-system-installation" style="color: #24376b; text-decoration: none;">
     Operating System Installation</a></b></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
-    <a href="03-SetUpComputingMachine/01A-windows-installation" style="color: #3f5a8a;">Windows OS Installation</a></td></tr>
+    <a href="03-SetUpComputingMachine/01A-windows-installation" style="color: #3f5a8a; text-decoration: none;">
+    Windows OS Installation</a></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
-    <a href="03-SetUpComputingMachine/01B-linux-installation" style="color: #3f5a8a;">
+    <a href="03-SetUpComputingMachine/01B-linux-installation" style="color: #3f5a8a; text-decoration: none;">
     Linux OS Installation</a></td></tr>
 
   <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
     <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b>
-    <a href="03-SetUpComputingMachine/02-must-have-software" style="color: #24376b;">
+    <a href="03-SetUpComputingMachine/02-must-have-software" style="color: #24376b; text-decoration: none;">
     Must-Have Software</a></b></td></tr>
 
   <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
-    <a href="03-SetUpComputingMachine/02A-basic-office-software" style="color: #3f5a8a;">
+    <a href="03-SetUpComputingMachine/02A-basic-office-software" style="color: #3f5a8a; text-decoration: none;">
     Basic Office Software</a></td></tr>
 
   <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
-    <a href="03-SetUpComputingMachine/02B-basic-developer-tools" style="color: #3f5a8a;">
+    <a href="03-SetUpComputingMachine/02B-basic-developer-tools" style="color: #3f5a8a; text-decoration: none;">
     Basic Developer Tools</a></td></tr>
 
   <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
-    <a href="03-SetUpComputingMachine/02C-basic-developer-libraries" style="color: #3f5a8a;">
+    <a href="03-SetUpComputingMachine/02C-basic-developer-libraries" style="color: #3f5a8a; text-decoration: none;">
     Basic Developer Libraries</a></td></tr>
 
   <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
     <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b>
-    <a href="03-SetUpComputingMachine/03-various-methods-of-software-installation" style="color: #24376b;">
+    <a href="03-SetUpComputingMachine/03-various-methods-of-software-installation" style="color: #24376b; text-decoration: none;">
     Various Methods of Software Installation</a></b></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
-    <a href="03-SetUpComputingMachine/03A-tutorial-installations-on-mac" style="color: #3f5a8a;">
+    <a href="03-SetUpComputingMachine/03A-tutorial-installations-on-mac" style="color: #3f5a8a; text-decoration: none;">
     Installations on MacBook Pro</a></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
-    <a href="03-SetUpComputingMachine/03B-tutorial-installations-on-windows" style="color: #3f5a8a;">
+    <a href="03-SetUpComputingMachine/03B-tutorial-installations-on-windows" style="color: #3f5a8a; text-decoration: none;">
     Installations on Windows</a></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
-    <a href="03-SetUpComputingMachine/03C-tutorial-installations-on-linux" style="color: #3f5a8a;">
+    <a href="03-SetUpComputingMachine/03C-tutorial-installations-on-linux" style="color: #3f5a8a; text-decoration: none;">
     Installations on Linux</a></td></tr>
 
 </table><br>
