@@ -19,22 +19,53 @@ header:
 
 <!-- 01. Introduction to Data Science -->
 # <a href="01-IntroToDataScience/00-IntroToDataScience-LandingPage" style="color: #8997c1;">01. Introduction to Data Science</a>
-* <span style="color:#19272f; background-color:#cff4fc; font-weight: 600;">&ensp; INTRO: &nbsp;</span> **<a href="01-IntroToDataScience/01-data-science-principles" style="color: #24376b;">Data Science Principles</a>**
-* <span style="color:#19272f; background-color:#cff4fc; font-weight: 600;">&ensp; INTRO: &nbsp;</span> **<a href="01-IntroToDataScience/02-computational-science-applications" style="color: #24376b;">Applications of Computational Science</a>**
-  * <a href="01-IntroToDataScience/02A-computational-biology" style="color: #3f5a8a;">Computational Biology</a>
-    * <span style="color: #3f5a8a;">go to</span> <a href="https://bioinformaticsworkbook.org" style="color: #518cc2;">_Bioinformatics Workbook_</a>
-  * <a href="01-IntroToDataScience/02B-geospatial-analytics" style="color: #3f5a8a;">Geospatial Analytics</a>
-    * <span style="color: #3f5a8a;">go to</span> <a href="https://geospatial.101workbook.org" style="color: #518cc2;">_Geospatial Workbook_</a>
-  * <a href="01-IntroToDataScience/02C-machine-learning" style="color: #3f5a8a;">Machine Learning Outlook</a>
-    * <span style="color: #3f5a8a;">go to</span> <a href="https://isugenomics.github.io/AI-workbook" style="color: #518cc2;">_AI Workbook_</a>
-<br><br>
+
+<table>
+  <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center; width: 130px;">INTRO</td>
+    <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b>
+    <a href="01-IntroToDataScience/01-data-science-principles" style="color: #24376b;">
+    Data Science Principles</a></b></td></tr>
+
+  <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
+    <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b>
+    <a href="01-IntroToDataScience/02-computational-science-applications" style="color: #24376b;">
+    Applications of Computational Science</a></b></td></tr>
+
+  <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <a href="01-IntroToDataScience/02A-computational-biology" style="color: #3f5a8a;">
+    Computational Biology</a></td></tr>
+
+  <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;  
+    <span style="color: #3f5a8a;">go to</span> <a href="https://bioinformaticsworkbook.org" style="color: #518cc2;"><i>Bioinformatics Workbook</i></a></td></tr>
+
+  <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <a href="01-IntroToDataScience/02B-geospatial-analytics" style="color: #3f5a8a;">
+    Geospatial Analytics</a></td></tr>
+
+  <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;  
+    <span style="color: #3f5a8a;">go to</span> <a href="https://geospatial.101workbook.org" style="color: #518cc2;"><i>Geospatial Workbook</i></a></td></tr>
+
+  <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <a href="01-IntroToDataScience/02C-machine-learning" style="color: #3f5a8a;">
+    Machine Learning Outlook</a></td></tr>
+
+  <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;  
+    <span style="color: #3f5a8a;">go to</span> <a href="https://isugenomics.github.io/AI-workbook" style="color: #518cc2;"><i>AI Workbook</i></a></td></tr>
+
+</table><br>
 
 
 <!-- 02. Introduction to the Command Line -->
 # <a href="02-IntroToCommandLine/00-IntroToCommandLine-LandingPage" style="color: #8997c1;">02. Introduction to the Command Line</a>
 
 <table>
-  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center; width: 130px;">TUTORIAL</td>
     <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b>
     <a href="02-IntroToCommandLine/01-terminal-basics" style="color: #24376b; text-decoration: none;">
     Terminal, a text-based interface for command-line operations</a></b></td></tr>
@@ -106,7 +137,7 @@ header:
 # <a href="03-SetUpComputingMachine/00-SetUpComputingMachine-LandingPage" style="color: #8997c1;">03. Setting Up Computing Machine</a>
 
 <table>
-  <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
+  <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center; width: 130px;">INTRO</td>
     <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b>
     <a href="03-SetUpComputingMachine/01-operating-system-installation" style="color: #24376b;">
     Operating System Installation</a></b></td></tr>
