@@ -8,10 +8,18 @@ header:
   overlay_image: /assets/images/data_science_about_banner.png
 ---
 
+{% include toc %}
 
+<!-- TEMPLATES:
+<span style="color:#19272f; background-color:#cff4fc; font-weight: 600;">&ensp; INTRO: &ensp;</span>
+<span style="color:#19272f; background-color:#dff5b3; font-weight: 600;">&ensp; TUTORIAL: &ensp;</span>
+<span style="color:#19272f; background-color:mistyrose; font-weight: 600;">&ensp; CheatSheet: &nbsp;</span>
+-->
+
+<!-- 01. Introduction to Data Science -->
 # <a href="01-IntroToDataScience/00-IntroToDataScience-LandingPage" style="color: #8997c1;">01. Introduction to Data Science</a>
-* **<a href="01-IntroToDataScience/01-data-science-principles" style="color: #24376b;">Data Science Principles</a>**
-* **<a href="01-IntroToDataScience/02-computational-science-applications" style="color: #24376b;">Applications of Computational Science</a>**
+* <span style="color:#19272f; background-color:#cff4fc; font-weight: 600;">&ensp; INTRO: &nbsp;</span> **<a href="01-IntroToDataScience/01-data-science-principles" style="color: #24376b;">Data Science Principles</a>**
+* <span style="color:#19272f; background-color:#cff4fc; font-weight: 600;">&ensp; INTRO: &nbsp;</span> **<a href="01-IntroToDataScience/02-computational-science-applications" style="color: #24376b;">Applications of Computational Science</a>**
   * <a href="01-IntroToDataScience/02A-computational-biology" style="color: #3f5a8a;">Computational Biology</a>
     * <span style="color: #3f5a8a;">go to</span> <a href="https://bioinformaticsworkbook.org" style="color: #518cc2;">_Bioinformatics Workbook_</a>
   * <a href="01-IntroToDataScience/02B-geospatial-analytics" style="color: #3f5a8a;">Geospatial Analytics</a>
@@ -20,22 +28,70 @@ header:
     * <span style="color: #3f5a8a;">go to</span> <a href="https://isugenomics.github.io/AI-workbook" style="color: #518cc2;">_AI Workbook_</a>
 <br><br>
 
-# <a href="02-IntroToCommandLine/00-IntroToCommandLine-LandingPage" style="color: #8997c1;">02. Introduction to the Command Line</a>
-* **<a href="02-IntroToCommandLine/01-terminal-basics" style="color: #24376b;">Terminal: a text-based interface for command-line operations</a>**
-* **<a href="02-IntroToCommandLine/02-intro-to-unix-shell" style="color: #24376b;">Introduction to UNIX Shell: shell variables, HOME dir, .bashrc</a>**
-  * <a href="02-IntroToCommandLine/02A-basic-commands" style="color: #3f5a8a;">Basic Commands: Navigation, File Creation & Preview</a>
-  * <a href="02-IntroToCommandLine/02B-text-files-editors" style="color: #3f5a8a;">Text Files Editors</a>
-  * <a href="02-IntroToCommandLine/02C-unix-system-info-permissions" style="color: #3f5a8a;">System Info and Access Permissions</a>
-  * <a href="02-IntroToCommandLine/02D-admin-commands" style="color: #3f5a8a;">Admin Commands</a>
-  * <a href="02-IntroToCommandLine/02E-tutorial-unix-getting-started" style="color: #3f5a8a;">Tutorial: Getting Started with UNIX + VIDEO</a>
-* **<a href="02-IntroToCommandLine/03-text-manipulation-programs" style="color: #24376b;">Useful Text Manipulation Programs</a>**
-  * <a href="02-IntroToCommandLine/03A-tutorial-unix-grep" style="color: #3f5a8a;">Tutorial: GREP – simple search for regular expressions</a>
-  * <a href="02-IntroToCommandLine/03B-tutorial-unix-sed" style="color: #3f5a8a;">Tutorial: SED – edit stream text</a>
-  * <a href="02-IntroToCommandLine/03C-tutorial-unix-awk" style="color: #3f5a8a;">Tutorial: AWK – advanced text processing</a>
-  * <a href="02-IntroToCommandLine/03D-tutorial-unix-bioawk" style="color: #3f5a8a;">Tutorial: BIOAWK – biological data manipulation</a>
-* **<a href="02-IntroToCommandLine/04-unix-cheat-sheet" style="color: #24376b;">UNIX CheatSheet</a>**
-<br><br>
 
+<!-- 02. Introduction to the Command Line -->
+# <a href="02-IntroToCommandLine/00-IntroToCommandLine-LandingPage" style="color: #8997c1;">02. Introduction to the Command Line</a>
+
+<table>
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600;">TUTORIAL</td>
+    <td style="border: none;"><b><a href="02-IntroToCommandLine/01-terminal-basics" style="color: #24376b;">Terminal, a text-based interface for command-line operations</a></b></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600;">TUTORIAL</td>
+    <td style="border: none;"><b><a href="02-IntroToCommandLine/02-intro-to-unix-shell" style="color: #24376b;">Introduction to UNIX Shell: shell variables, HOME dir, .bashrc</a></b></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600;">TUTORIAL</td>
+    <td style="border: none;">&#10687;&emsp;  <a href="02-IntroToCommandLine/02A-basic-commands" style="color: #3f5a8a;">Basic Commands: Navigation, File Creation & Preview</a></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600;">TUTORIAL</td>
+    <td style="border: none;">&#10687;&emsp;  <a href="02-IntroToCommandLine/02B-text-files-editors" style="color: #3f5a8a;">Command Line Text Files Editors: <i><b>nano, vim</b></i></a></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600;">TUTORIAL</td>
+    <td style="border: none;">&#10687;&emsp;  <a href="02-IntroToCommandLine/02C-unix-system-info-permissions" style="color: #3f5a8a;">System Info and Access Permissions</a></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600;">TUTORIAL</td>
+    <td style="border: none;">&#10687;&emsp;  <a href="02-IntroToCommandLine/02D-admin-commands" style="color: #3f5a8a;">Superuser Command: <i><b>sudo</b></i></a></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600;">TUTORIAL</td>
+    <td style="border: none;">&#10687;&emsp;  <a href="02-IntroToCommandLine/02E-tutorial-unix-getting-started" style="color: #3f5a8a;">Getting Started with UNIX + VIDEO + exercises</a></td></tr>
+
+  <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: right;">INTRO</td>
+    <td style="border: none;"><b><a href="02-IntroToCommandLine/03-text-manipulation-programs" style="color: #24376b;">Useful Text Manipulation Programs</a></b></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600;">TUTORIAL</td>
+    <td style="border: none;">&#10687;&emsp;  <a href="02-IntroToCommandLine/03A-tutorial-unix-grep" style="color: #3f5a8a;">GREP – simple search for regular expressions</a></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600;">TUTORIAL</td>
+    <td style="border: none;">&#10687;&emsp;  <a href="02-IntroToCommandLine/03B-tutorial-unix-sed" style="color: #3f5a8a;">SED – edit stream text</a></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600;">TUTORIAL</td>
+    <td style="border: none;">&#10687;&emsp;  <a href="02-IntroToCommandLine/03C-tutorial-unix-awk" style="color: #3f5a8a;">AWK – advanced text processing</a></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600;">TUTORIAL</td>
+    <td style="border: none;">&#10687;&emsp;  <a href="02-IntroToCommandLine/03D-tutorial-unix-bioawk" style="color: #3f5a8a;">BIOAWK – biological data manipulation</a></td></tr>
+
+  <tr><td style="background-color:mistyrose; color:#19272f; font-weight: 600; text-align: right;">CheatSheet</td>
+    <td style="border: none;"><b><a href="02-IntroToCommandLine/04-unix-cheat-sheet" style="color: #24376b;">UNIX Commands</a></b></td></tr>
+
+</table>
+
+<!--
+* <span style="color:#19272f; background-color:#dff5b3; font-weight: 600;">&ensp; TUTORIAL: &nbsp;</span> **<a href="02-IntroToCommandLine/01-terminal-basics" style="color: #24376b;">Terminal, a text-based interface for command-line operations</a>**
+* <span style="color:#19272f; background-color:#dff5b3; font-weight: 600;">&ensp; TUTORIAL: &nbsp;</span> **<a href="02-IntroToCommandLine/02-intro-to-unix-shell" style="color: #24376b;">Introduction to UNIX Shell: shell variables, HOME dir, .bashrc</a>**
+  * <span style="color:#19272f; background-color:#dff5b3; font-weight: 600;">&ensp; TUTORIAL: &nbsp;</span> <a href="02-IntroToCommandLine/02A-basic-commands" style="color: #3f5a8a;">Basic Commands: Navigation, File Creation & Preview</a>
+  * <span style="color:#19272f; background-color:#dff5b3; font-weight: 600;">&ensp; TUTORIAL: &nbsp;</span> <a href="02-IntroToCommandLine/02B-text-files-editors" style="color: #3f5a8a;">Command Line Text Files Editors: <i><b>nano, vim</b></i></a>
+  * <span style="color:#19272f; background-color:#dff5b3; font-weight: 600;">&ensp; TUTORIAL: &nbsp;</span> <a href="02-IntroToCommandLine/02C-unix-system-info-permissions" style="color: #3f5a8a;">System Info and Access Permissions</a>
+  * <span style="color:#19272f; background-color:#dff5b3; font-weight: 600;">&ensp; TUTORIAL: &nbsp;</span> <a href="02-IntroToCommandLine/02D-admin-commands" style="color: #3f5a8a;">Superuser Command: <i><b>sudo</b></i></a>
+  * <span style="color:#19272f; background-color:#dff5b3; font-weight: 600;">&ensp; TUTORIAL: &nbsp;</span> <a href="02-IntroToCommandLine/02E-tutorial-unix-getting-started" style="color: #3f5a8a;">Getting Started with UNIX + VIDEO + exercises</a>
+* <span style="color:#19272f; background-color:#cff4fc; font-weight: 600;">&ensp; INTRO: &nbsp;</span> **<a href="02-IntroToCommandLine/03-text-manipulation-programs" style="color: #24376b;">Useful Text Manipulation Programs</a>**
+  * <span style="color:#19272f; background-color:#dff5b3; font-weight: 600;">&ensp; TUTORIAL: &nbsp;</span> <a href="02-IntroToCommandLine/03A-tutorial-unix-grep" style="color: #3f5a8a;">Tutorial: GREP – simple search for regular expressions</a>
+  * <span style="color:#19272f; background-color:#dff5b3; font-weight: 600;">&ensp; TUTORIAL: &nbsp;</span> <a href="02-IntroToCommandLine/03B-tutorial-unix-sed" style="color: #3f5a8a;">Tutorial: SED – edit stream text</a>
+  * <span style="color:#19272f; background-color:#dff5b3; font-weight: 600;">&ensp; TUTORIAL: &nbsp;</span> <a href="02-IntroToCommandLine/03C-tutorial-unix-awk" style="color: #3f5a8a;">Tutorial: AWK – advanced text processing</a>
+  * <span style="color:#19272f; background-color:#dff5b3; font-weight: 600;">&ensp; TUTORIAL: &nbsp;</span> <a href="02-IntroToCommandLine/03D-tutorial-unix-bioawk" style="color: #3f5a8a;">Tutorial: BIOAWK – biological data manipulation</a>
+* <span style="color:#19272f; background-color:mistyrose; font-weight: 600;">&ensp; CheatSheet: &nbsp;</span> **<a href="02-IntroToCommandLine/04-unix-cheat-sheet" style="color: #24376b;">UNIX CheatSheet</a>**
+<br><br>
+->
+
+<!-- 03. Setting Up Computing Machine -->
 # <a href="03-SetUpComputingMachine/00-SetUpComputingMachine-LandingPage" style="color: #8997c1;">03. Setting Up Computing Machine</a>
 * **<a href="03-SetUpComputingMachine/01-operating-system-installation" style="color: #24376b;">Operating System Installation</a>**
   * <a href="03-SetUpComputingMachine/01A-windows-installation" style="color: #3f5a8a;">Windows OS Installation</a>
@@ -50,6 +106,8 @@ header:
   * <a href="03-SetUpComputingMachine/03C-tutorial-installations-on-linux" style="color: #3f5a8a;">Tutorial: Installations on Linux</a>
 <br><br>
 
+
+<!-- 04. Development Environment -->
 # <a href="04-DevelopmentEnvironment/00-DevelopmentEnvironment-LandingPage" style="color: #8997c1;">04. Development Environment</a>
 * **<a href="04-DevelopmentEnvironment/01-integrated-development-environment" style="color: #24376b;">Integrated Development Environment (IDE)</a>**
   * <a href="04-DevelopmentEnvironment/01A-tutorial-VSCode" style="color: #3f5a8a;">Tutorial: Visual Studio Code</a>
@@ -64,6 +122,8 @@ header:
     * <a href="04-DevelopmentEnvironment/03B-tutorial-setting-up-rstudio" style="color: #3f5a8a;">Tutorial: Setting Up RStudio</a>
 <br><br>
 
+
+<!-- 05. Introduction to Programming -->
 # <a href="05-IntroToProgramming/00-IntroToProgramming-LandingPage" style="color: #8997c1;">05. Introduction to Programming</a>
 * **<a href="05-IntroToProgramming/01-ALGORITHM/01-basics-of-algorithm-structure" style="color: #24376b;">Basics of Algorithm Structure</a>**
 * **<a href="05-IntroToProgramming/02-BASH/01-introduction-to-bash-scripting" style="color: #24376b;">Introduction to Bash Scripting</a>**
@@ -72,6 +132,8 @@ header:
 * **<a href="05-IntroToProgramming/04-R/01-introduction-to-R" style="color: #24376b;">Introduction to R programming</a>**
 <br><br>
 
+
+<!-- 06. High-Performance Computing (HPC) -->
 # <a href="06-IntroToHPC/00-IntroToHPC-LandingPage" style="color: #8997c1;">06. High-Performance Computing (HPC)</a>
 * **<a href="06-IntroToHPC/00-HOME-DIRECTORY/00-setting-up-home-directory" style="color: #24376b;">Setting up your home directory for data analysis</a>**
   * <a href="06-IntroToHPC/00-HOME-DIRECTORY/01-bashrc" style="color: #3f5a8a;">.bashrc example file</a>
@@ -113,6 +175,8 @@ header:
   * <a href="06-IntroToHPC/07-CONTAINERS/02-DOCKER/01-docker-basics" style="color: #3f5a8a;">Docker</a>
 <br><br>
 
+
+<!-- 07. Data Acquisition and Wrangling -->
 # <a href="07-DataParsing/00-DataParsing-LandingPage" style="color: #8997c1;">07. Data Acquisition and Wrangling</a>
 * **<a href="07-DataParsing/01-FILE-ACCESS/01-remote-data-access" style="color: #24376b;">Remote Data Access</a>**
   * <a href="07-DataParsing/01-FILE-ACCESS/02-0-remote-data-transfer" style="color: #3f5a8a;">Remote Data Transfer</a>
@@ -146,6 +210,8 @@ header:
   * <a href="07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py" style="color: #3f5a8a;">Aggregate data over slicing variations (python)</a>
 <br><br>
 
+
+<!-- 08. Data Visualization -->
 # <a href="08-DataVisualization/00-DataVisualization-LandingPage" style="color: #8997c1;">08. Data Visualization</a>
 * **<a href="08-DataVisualization/01-IMAGES/01-scientific-graphic-design-intro" style="color: #24376b;">Introduction to Scientific Graphic Design</a>**
   * <a href="08-DataVisualization/01-IMAGES/02-raster-graphics-tools" style="color: #3f5a8a;">Raster Graphics Tools</a>
@@ -173,6 +239,8 @@ header:
     * <a href="08-DataVisualization/02-GRAPHS/03-R/05-rstudio-tutorial-ComplexHeatmap" style="color: #3f5a8a;">Tutorial: Creating Heatmaps in R using ComplexHeatmap</a>
 <br><br>
 
+
+<!-- 09. Project Management -->
 # <a href="09-ProjectManagement/00-ProjectManagement-LandingPage" style="color: #8997c1;">09. Project Management</a>
 * **<a href="09-ProjectManagement/01-intro-to-project-management" style="color: #24376b;">Introduction to Project Management</a>**
 
