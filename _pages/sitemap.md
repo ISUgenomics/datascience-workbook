@@ -35,77 +35,132 @@ header:
 
 <table>
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
-    <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b><a href="02-IntroToCommandLine/01-terminal-basics" style="color: #24376b; text-decoration: none;">Terminal, a text-based interface for command-line operations</a></b></td></tr>
+    <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b>
+    <a href="02-IntroToCommandLine/01-terminal-basics" style="color: #24376b; text-decoration: none;">
+    Terminal, a text-based interface for command-line operations</a></b></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
-    <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b><a href="02-IntroToCommandLine/02-intro-to-unix-shell" style="color: #24376b; text-decoration: none;">Introduction to UNIX Shell: <i>shell variables, HOME dir, .bashrc</i></a></b></td></tr>
+    <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b>
+    <a href="02-IntroToCommandLine/02-intro-to-unix-shell" style="color: #24376b; text-decoration: none;">
+    Introduction to UNIX Shell: <i>shell variables, HOME dir, .bashrc</i></a></b></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
-    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  <a href="02-IntroToCommandLine/02A-basic-commands" style="color: #3f5a8a; text-decoration: none;">Basic Commands: Navigation, File Creation & Preview</a></td></tr>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <a href="02-IntroToCommandLine/02A-basic-commands" style="color: #3f5a8a; text-decoration: none;">
+    Basic Commands: Navigation, File Creation & Preview</a></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
-    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  <a href="02-IntroToCommandLine/02B-text-files-editors" style="color: #3f5a8a; text-decoration: none;">Command Line Text Files Editors: <i><b>nano, vim</b></i></a></td></tr>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <a href="02-IntroToCommandLine/02B-text-files-editors" style="color: #3f5a8a; text-decoration: none;">
+    Command Line Text Files Editors: <i><b>nano, vim</b></i></a></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
-    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  <a href="02-IntroToCommandLine/02C-unix-system-info-permissions" style="color: #3f5a8a; text-decoration: none;">System Info and Access Permissions</a></td></tr>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <a href="02-IntroToCommandLine/02C-unix-system-info-permissions" style="color: #3f5a8a; text-decoration: none;">
+    System Info and Access Permissions</a></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
-    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  <a href="02-IntroToCommandLine/02D-admin-commands" style="color: #3f5a8a; text-decoration: none;">Superuser Command: <i><b>sudo</b></i></a></td></tr>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <a href="02-IntroToCommandLine/02D-admin-commands" style="color: #3f5a8a; text-decoration: none;">
+    Superuser Command: <i><b>sudo</b></i></a></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
-    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  <a href="02-IntroToCommandLine/02E-tutorial-unix-getting-started" style="color: #3f5a8a; text-decoration: none;">Getting Started with UNIX + VIDEO + exercises</a></td></tr>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <a href="02-IntroToCommandLine/02E-tutorial-unix-getting-started" style="color: #3f5a8a; text-decoration: none;">
+    Getting Started with UNIX + VIDEO + exercises</a></td></tr>
 
   <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
-    <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b><a href="02-IntroToCommandLine/03-text-manipulation-programs" style="color: #24376b; text-decoration: none;">Useful Text Manipulation Programs</a></b></td></tr>
+    <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b>
+    <a href="02-IntroToCommandLine/03-text-manipulation-programs" style="color: #24376b; text-decoration: none;">
+    Useful Text Manipulation Programs</a></b></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
-    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  <a href="02-IntroToCommandLine/03A-tutorial-unix-grep" style="color: #3f5a8a; text-decoration: none;">GREP – simple search for regular expressions</a></td></tr>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <a href="02-IntroToCommandLine/03A-tutorial-unix-grep" style="color: #3f5a8a; text-decoration: none;">
+    GREP – simple search for regular expressions</a></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
-    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  <a href="02-IntroToCommandLine/03B-tutorial-unix-sed" style="color: #3f5a8a; text-decoration: none;">SED – edit stream text</a></td></tr>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <a href="02-IntroToCommandLine/03B-tutorial-unix-sed" style="color: #3f5a8a; text-decoration: none;">
+    SED – replace pattern in stream text</a></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
-    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  <a href="02-IntroToCommandLine/03C-tutorial-unix-awk" style="color: #3f5a8a; text-decoration: none;">AWK – advanced text processing</a></td></tr>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <a href="02-IntroToCommandLine/03C-tutorial-unix-awk" style="color: #3f5a8a; text-decoration: none;">
+    AWK – advanced text processing</a></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
-    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  <a href="02-IntroToCommandLine/03D-tutorial-unix-bioawk" style="color: #3f5a8a; text-decoration: none;">BIOAWK – biological data manipulation</a></td></tr>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <a href="02-IntroToCommandLine/03D-tutorial-unix-bioawk" style="color: #3f5a8a; text-decoration: none;">
+    BIOAWK – biological data manipulation</a></td></tr>
 
   <tr><td style="background-color:mistyrose; color:#19272f; font-weight: 600; text-align: center;">CheatSheet</td>
-    <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b><a href="02-IntroToCommandLine/04-unix-cheat-sheet" style="color: #24376b; text-decoration: none;">UNIX Commands</a></b></td></tr>
+    <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b>
+    <a href="02-IntroToCommandLine/04-unix-cheat-sheet" style="color: #24376b; text-decoration: none;">
+    UNIX Commands</a></b></td></tr>
 
-</table>
+</table><br>
 
-<!--
-* <span style="color:#19272f; background-color:#dff5b3; font-weight: 600;">&ensp; TUTORIAL: &nbsp;</span> **<a href="02-IntroToCommandLine/01-terminal-basics" style="color: #24376b;">Terminal, a text-based interface for command-line operations</a>**
-* <span style="color:#19272f; background-color:#dff5b3; font-weight: 600;">&ensp; TUTORIAL: &nbsp;</span> **<a href="02-IntroToCommandLine/02-intro-to-unix-shell" style="color: #24376b;">Introduction to UNIX Shell: shell variables, HOME dir, .bashrc</a>**
-  * <span style="color:#19272f; background-color:#dff5b3; font-weight: 600;">&ensp; TUTORIAL: &nbsp;</span> <a href="02-IntroToCommandLine/02A-basic-commands" style="color: #3f5a8a;">Basic Commands: Navigation, File Creation & Preview</a>
-  * <span style="color:#19272f; background-color:#dff5b3; font-weight: 600;">&ensp; TUTORIAL: &nbsp;</span> <a href="02-IntroToCommandLine/02B-text-files-editors" style="color: #3f5a8a;">Command Line Text Files Editors: <i><b>nano, vim</b></i></a>
-  * <span style="color:#19272f; background-color:#dff5b3; font-weight: 600;">&ensp; TUTORIAL: &nbsp;</span> <a href="02-IntroToCommandLine/02C-unix-system-info-permissions" style="color: #3f5a8a;">System Info and Access Permissions</a>
-  * <span style="color:#19272f; background-color:#dff5b3; font-weight: 600;">&ensp; TUTORIAL: &nbsp;</span> <a href="02-IntroToCommandLine/02D-admin-commands" style="color: #3f5a8a;">Superuser Command: <i><b>sudo</b></i></a>
-  * <span style="color:#19272f; background-color:#dff5b3; font-weight: 600;">&ensp; TUTORIAL: &nbsp;</span> <a href="02-IntroToCommandLine/02E-tutorial-unix-getting-started" style="color: #3f5a8a;">Getting Started with UNIX + VIDEO + exercises</a>
-* <span style="color:#19272f; background-color:#cff4fc; font-weight: 600;">&ensp; INTRO: &nbsp;</span> **<a href="02-IntroToCommandLine/03-text-manipulation-programs" style="color: #24376b;">Useful Text Manipulation Programs</a>**
-  * <span style="color:#19272f; background-color:#dff5b3; font-weight: 600;">&ensp; TUTORIAL: &nbsp;</span> <a href="02-IntroToCommandLine/03A-tutorial-unix-grep" style="color: #3f5a8a;">Tutorial: GREP – simple search for regular expressions</a>
-  * <span style="color:#19272f; background-color:#dff5b3; font-weight: 600;">&ensp; TUTORIAL: &nbsp;</span> <a href="02-IntroToCommandLine/03B-tutorial-unix-sed" style="color: #3f5a8a;">Tutorial: SED – edit stream text</a>
-  * <span style="color:#19272f; background-color:#dff5b3; font-weight: 600;">&ensp; TUTORIAL: &nbsp;</span> <a href="02-IntroToCommandLine/03C-tutorial-unix-awk" style="color: #3f5a8a;">Tutorial: AWK – advanced text processing</a>
-  * <span style="color:#19272f; background-color:#dff5b3; font-weight: 600;">&ensp; TUTORIAL: &nbsp;</span> <a href="02-IntroToCommandLine/03D-tutorial-unix-bioawk" style="color: #3f5a8a;">Tutorial: BIOAWK – biological data manipulation</a>
-* <span style="color:#19272f; background-color:mistyrose; font-weight: 600;">&ensp; CheatSheet: &nbsp;</span> **<a href="02-IntroToCommandLine/04-unix-cheat-sheet" style="color: #24376b;">UNIX CheatSheet</a>**
-<br><br>
-->
 
 <!-- 03. Setting Up Computing Machine -->
 # <a href="03-SetUpComputingMachine/00-SetUpComputingMachine-LandingPage" style="color: #8997c1;">03. Setting Up Computing Machine</a>
-* **<a href="03-SetUpComputingMachine/01-operating-system-installation" style="color: #24376b;">Operating System Installation</a>**
-  * <a href="03-SetUpComputingMachine/01A-windows-installation" style="color: #3f5a8a;">Windows OS Installation</a>
-  * <a href="03-SetUpComputingMachine/01B-linux-installation" style="color: #3f5a8a;">Linux OS Installation</a>
-* **<a href="03-SetUpComputingMachine/02-must-have-software" style="color: #24376b;">Must-Have Software</a>**
-  * <a href="03-SetUpComputingMachine/02A-basic-office-software" style="color: #3f5a8a;">Basic Office Software</a>
-  * <a href="03-SetUpComputingMachine/02B-basic-developer-tools" style="color: #3f5a8a;">Basic Developer Tools</a>
-  * <a href="03-SetUpComputingMachine/02C-basic-developer-libraries" style="color: #3f5a8a;">Basic Developer Libraries</a>
-* **<a href="03-SetUpComputingMachine/03-various-methods-of-software-installation" style="color: #24376b;">Various Methods of Software Installation</a>**
-  * <a href="03-SetUpComputingMachine/03A-tutorial-installations-on-mac" style="color: #3f5a8a;">Tutorial: Installations on MacBook Pro</a>
-  * <a href="03-SetUpComputingMachine/03B-tutorial-installations-on-windows" style="color: #3f5a8a;">Tutorial: Installations on Windows</a>
-  * <a href="03-SetUpComputingMachine/03C-tutorial-installations-on-linux" style="color: #3f5a8a;">Tutorial: Installations on Linux</a>
-<br><br>
+
+<table>
+  <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
+    <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b>
+    <a href="03-SetUpComputingMachine/01-operating-system-installation" style="color: #24376b;">
+    Operating System Installation</a></b></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <a href="03-SetUpComputingMachine/01A-windows-installation" style="color: #3f5a8a;">Windows OS Installation</a></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <a href="03-SetUpComputingMachine/01B-linux-installation" style="color: #3f5a8a;">
+    Linux OS Installation</a></td></tr>
+
+  <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
+    <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b>
+    <a href="03-SetUpComputingMachine/02-must-have-software" style="color: #24376b;">
+    Must-Have Software</a></b></td></tr>
+
+  <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <a href="03-SetUpComputingMachine/02A-basic-office-software" style="color: #3f5a8a;">
+    Basic Office Software</a></td></tr>
+
+  <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <a href="03-SetUpComputingMachine/02B-basic-developer-tools" style="color: #3f5a8a;">
+    Basic Developer Tools</a></td></tr>
+
+  <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <a href="03-SetUpComputingMachine/02C-basic-developer-libraries" style="color: #3f5a8a;">
+    Basic Developer Libraries</a></td></tr>
+
+  <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
+    <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b>
+    <a href="03-SetUpComputingMachine/03-various-methods-of-software-installation" style="color: #24376b;">
+    Various Methods of Software Installation</a></b></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <a href="03-SetUpComputingMachine/03A-tutorial-installations-on-mac" style="color: #3f5a8a;">
+    Installations on MacBook Pro</a></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <a href="03-SetUpComputingMachine/03B-tutorial-installations-on-windows" style="color: #3f5a8a;">
+    Installations on Windows</a></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <a href="03-SetUpComputingMachine/03C-tutorial-installations-on-linux" style="color: #3f5a8a;">
+    Installations on Linux</a></td></tr>
+
+</table><br>
 
 
 <!-- 04. Development Environment -->
