@@ -35,7 +35,7 @@ header:
 
 <table>
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
-    <td style="border: none; font-size: 1.5em; padding: 0 0.4em;"><b><a href="02-IntroToCommandLine/01-terminal-basics" style="color: #24376b;">Terminal, a text-based interface for command-line operations</a></b></td></tr>
+    <td style="border: none; font-size: 1.5em; padding: 0 0.4em;"><b><a href="02-IntroToCommandLine/01-terminal-basics" style="color: #24376b; text-decoration: none;">Terminal, a text-based interface for command-line operations</a></b></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
     <td style="border: none; font-size: 1.5em; padding: 0 0.4em;"><b><a href="02-IntroToCommandLine/02-intro-to-unix-shell" style="color: #24376b;">Introduction to UNIX Shell: shell variables, HOME dir, .bashrc</a></b></td></tr>
