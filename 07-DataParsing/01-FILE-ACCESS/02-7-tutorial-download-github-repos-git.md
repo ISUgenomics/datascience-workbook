@@ -46,7 +46,8 @@ Whether you are a seasoned developer or just starting out with Git, this tutoria
 <a href="https://git-scm.com" target="_blank">Git  ⤴</a> is a popular and powerful version control system that is widely used for managing software development projects and other types of data. You can use command-line git to download the repository hosted on any remote server, including: <br>
 <a href="https://github.com" target="_blank">GitHub  ⤴</a>, <a href="https://bitbucket.org" target="_blank">Bitbucket  ⤴</a>, <a href="https://gitlab.com" target="_blank">GitLab  ⤴</a>, <a href="https://sourceforge.net" target="_blank">SourceForge  ⤴</a>, <a href="https://www.gitkraken.com" target="_blank">GitKraken  ⤴</a>.
 </span>
-</div><br>
+</div>
+
 
 ## 1. Install Git
 
@@ -115,7 +116,7 @@ sudo port install git
 </details><br>
 
 
-For more information, please see the official Git documentation: <a href="https://git-scm.com/download/mac" target="_blank">https://git-scm.com/download/mac ⤴</a>
+For more information, please see the official Git documentation: <a href="https://git-scm.com/download/mac" target="_blank">https://git-scm.com/download/mac</a>
 
 
 **Windows** <br>
@@ -203,7 +204,7 @@ When cloning a repository, Git automatically creates a remote named 'origin' tha
 <li><b>git commit</b> - to create a new commit in the Git repository, which is a snapshot of the current state of the code,</li>
 <li><b>git push</b> - to upload changes from your local machine to a remote Git repository</li>
 </span>
-</div><br>
+</div>
 
 If you are planning to contribute to any GIT-based repository, it is worthwhile for you to learn more about the useful options offered by git. In this case, use the hands-on tutorials that provide **instructions for more advanced git commands**:
 
