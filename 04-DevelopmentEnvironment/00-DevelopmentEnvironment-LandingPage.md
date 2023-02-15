@@ -1,5 +1,5 @@
 ---
-title: "04  Development Environment"
+title: "04:  Development Environment"
 layout: single
 author: Aleksandra Badaczewska
 author_profile: true

@@ -1,5 +1,5 @@
 ---
-title: "03  Setting Up Computing Machine"
+title: "03:  Setting Up Computing Machine"
 layout: single
 author: Aleksandra Badaczewska
 author_profile: true
