@@ -10,7 +10,12 @@ header:
 
 {% include toc %}
 
-# Python overview
+[DataScience Workbook](https://datascience.101workbook.org/) / [04. Development Environment](00-DevelopmentEnvironment-LandingPage.md) / **2. Python programming environment(s)**
+
+---
+
+
+# Introduction
 
 <a href="https://www.python.org" target="_blank">Python  ⤴</a> is a high-level, **interpreted programming language** that is widely used for scientific computing, data analysis, artificial intelligence algorithms implementation, web development, and visualization. It has a simple and **easy-to-learn syntax**, a large standard library, and a wide community making it a popular choice for beginners and experienced programmers alike.
 
@@ -115,14 +120,15 @@ This option is a good choice to develop quickly a simple script directly on the 
 
 ___
 # Further Reading
-* [Jupyter: Interactive Web-Based Multi-Kernel Programming Interface](02A-jupyter-basics)
-* [Tutorial: Getting Started with JupyterLab](02B-tutorial-jupyter-lab)
-* [PyCharm: IDE for Professional Python Developers](02C-pycharm-ide)
-* [R Programming Environment](03-r-programming-environment.md)
+* [2.1 Create a Python Notebook using Jupyter Lab](02A-python-jupyter-notebook.md)
+* [2.2 PyCharm: IDE for Professional Python Developers](02B-pycharm-ide.md)
+
+* [3. R programming environment(s)](03-r-programming-environment.md)
 
 ___
 
 [Homepage](../index.md){: .btn  .btn--primary}
 [Section Index](00-DevelopmentEnvironment-LandingPage){: .btn  .btn--primary}
-[Previous](01A-tutorial-atom-editor){: .btn  .btn--primary}
-[Next](02A-jupyter-basics){: .btn  .btn--primary}
+[Previous](01B-tutorial-jupyter-sharing-mybinder){: .btn  .btn--primary}
+[Next](02A-python-jupyter-notebook){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

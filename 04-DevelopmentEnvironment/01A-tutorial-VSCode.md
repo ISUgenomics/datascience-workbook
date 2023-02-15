@@ -10,7 +10,13 @@ header:
 
 {% include toc %}
 
-# Visual Studio Code
+[DataScience Workbook](https://datascience.101workbook.org/) / [04. Development Environment](00-DevelopmentEnvironment-LandingPage.md) / [1. Integrated & Interactive Development Environment (IDE)](01-integrated-development-environment.md) / **1.1 Visual Studio Code: Multi-language Integrated DE**
+
+---
+
+
+# Introduction
+
 VSCode is an editor made for coding and debugging. It supports multiple programming languages and includes features such as syntax highlighting, autocomplete, and debugging tools. In addition to its powerful editing capabilities, VSCode also offers integrated support for Git, the popular version control system. This allows user to manage code and collaborate with other team members. In this tutorial, I will get you started with using Visual Studio Code and using some of its useful features. <br>
 
 ## Installation
@@ -24,7 +30,7 @@ The most useful shortcut you need to learn is `Ctrl+Shift+p` (or `Cmd+Shift+p` o
 <br>
 <table>
 <thead><tr><th>Shortcut</th><th>Command</th></tr></thead><tbody>
- <tr><td><blockcode>Ctrl+k Ctrl+r</blockcode></td><td>Keyboard shortcuts reference</td></tr> 
+ <tr><td><blockcode>Ctrl+k Ctrl+r</blockcode></td><td>Keyboard shortcuts reference</td></tr>
  <tr><td><blockcode>Ctrl+k v</blockcode></td><td>Open markdown preview to the side</td></tr>
   <tr><td><blockcode>Ctrl+Shift+v</blockcode></td><td>Open Markdown preview</td></tr>
  <tr><td><blockcode>Shift+Alt+c </blockcode></td><td>Copy path of active file</td></tr>
@@ -51,7 +57,7 @@ Using a web browser, log in to your Github, go to your repository and press the 
 ## Select a Theme
 VSCode has several inbuilt color themes (dark and light background) which can be selected by pressing `Ctrl+k Ctrl+t` shortcut keys or from the 'Manage' icon at lower left corner. A list of theme options will open up and you can select the one you like. I am using Dark High Contrast theme for pictures in this tutorial. <br>
 <br>
-![theme](assets/images/VSC_theme.png) 
+![theme](assets/images/VSC_theme.png)
 <br>
 
 ## Open a Project
@@ -122,12 +128,14 @@ You can now either first Commit and then Push the staged changes or do both step
 
 ___
 # Further Reading
-* [Python Programming Environment](02-python-programming-environment)
-* [R Programming Environment](03-r-programming-environment.md)
+* [1.2 Jupyter: Interactive Web-Based Multi-Kernel DE](01B-jupyter-basics.md)
 
+* [2. Python programming environment(s)](02-python-programming-environment)
+* [3. R programming environment(s)](03-r-programming-environment.md)
 ___
 
 [Homepage](../index.md){: .btn  .btn--primary}
 [Section Index](00-DevelopmentEnvironment-LandingPage){: .btn  .btn--primary}
 [Previous](01-integrated-development-environment){: .btn  .btn--primary}
-[Next](02-python-programming-environment){: .btn  .btn--primary}
+[Next](01B-jupyter-basics){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

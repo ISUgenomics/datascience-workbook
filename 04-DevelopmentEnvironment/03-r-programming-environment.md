@@ -10,7 +10,13 @@ header:
 
 {% include toc %}
 
-## Overview
+[DataScience Workbook](https://datascience.101workbook.org/) / [04. Development Environment](00-DevelopmentEnvironment-LandingPage.md) / **3. R programming environment(s)**
+
+---
+
+
+# Introduction
+
 R is a programming language and software environment for statistical computing and graphics. It is widely used among statisticians and data scientists for developing statistical software, data analysis, and data visualization. Statisticians Ross Ihaka and Robert Gentleman created it in the early 1990s at the University of Auckland, New Zealand. It is an open-source language, meaning that anyone can contribute to its development and use it for free. <br>
 
 One of the strengths of R is its large and active community of users who have developed a vast collection of packages. These packages are pre-written R code that can be easily downloaded and extend the functionality of R and make it possible to perform a wide variety of statistical analyses and data visualization tasks. <br>
@@ -28,7 +34,7 @@ An Integrated Development Environment (IDE) is software designed to make coding 
 Universal or multi-language IDEs are highly customizable, multi-platform text editors that can be used for coding in multiple programming languages. A universal IDE can be a good choice if you work with multiple programming languages and prefer a single development environment for your projects. Some popular universal IDEs are:
 
 * <b>Visual Studio Code (VSCode)</b>: VSCode is an open-source code editor that can be used for R programming by installing the R extension. It provides features such as code highlighting, code completion, and debugging. Learn more about <b>VSCode</b> from the <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01A-tutorial-VSCode" target="_blank">Tutorial: Visual Studio Code  ⤴</a> in this <a href="https://datascience.101workbook.org" target="_blank">workbook ⤴</a>.
-* <b>Microsoft R Open</b>: This is a distribution of R that includes a development environment from Microsoft. 
+* <b>Microsoft R Open</b>: This is a distribution of R that includes a development environment from Microsoft.
 * <b>Atom</b>: Now archived, <a href="https://github.blog/2022-06-08-sunsetting-atom/" target="_blank">Atom ⤴</a> is one of the most liked IDEs out there. Plenty of packages are available to extend the functionality, including support of programming languages such as R.
 * <b>Eclipse</b>: Eclipse is a popular open-source Java-based IDE that can be used for R programming through the StatET plugin. It provides features such as code highlighting, debugging, and visualization tools.
 * <b>Architect</b>: is an IDE designed for data scientists. It has an R console integrated within it and supports multiple languages as it is based on Eclipse.
@@ -54,7 +60,7 @@ Several online platforms provide an easy way to start coding in R without having
 
 
 ## **3. Text Editors**
-Text editors are limited in terms of functionality and user-friendliness compared to IDEs. You can use text editors to write your code and then use a console/R environment to run the code. 
+Text editors are limited in terms of functionality and user-friendliness compared to IDEs. You can use text editors to write your code and then use a console/R environment to run the code.
 Text editors that can be used for R programming:
 * Nano
 * Vim
@@ -86,7 +92,7 @@ Here are a few examples of the things that you can do with R: <br>
 
 
 ### A simple example
-To perform a simple arithmetic calculation, you can enter the following into the console: 
+To perform a simple arithmetic calculation, you can enter the following into the console:
 
 ```
 > 2 + 2
@@ -120,12 +126,13 @@ R also has powerful capabilities for visualizing data. For example, you can use 
 
 ___
 # Further Reading
-* [RStudio: Integrated Environment for R Programming](03A-rstudio-basics)
-* [Tutorial: Setting Up RStudio](03B-tutorial-setting-up-rstudio)
+* [3.1 RStudio: Integrated Environment for R Programming](03A-rstudio-basics)
+* [3.1.1 Setting Up RStudio](03A-tutorial-setting-up-rstudio)
 
 ___
 
 [Homepage](../index.md){: .btn  .btn--primary}
 [Section Index](00-DevelopmentEnvironment-LandingPage){: .btn  .btn--primary}
-[Previous](02C-pycharm-ide){: .btn  .btn--primary}
+[Previous](02B-pycharm-ide){: .btn  .btn--primary}
 [Next](03A-rstudio-basics){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}
