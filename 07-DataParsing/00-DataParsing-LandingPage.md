@@ -1,5 +1,5 @@
 ---
-title: "07. Data Acquisition and Wrangling"
+title: "07 |  Data Acquisition and Wrangling"
 layout: single
 author: Aleksandra Badaczewska
 author_profile: true

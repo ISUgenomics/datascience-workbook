@@ -1,5 +1,5 @@
 ---
-title: "06. High-Performance Computing (HPC)"
+title: "06 |  High-Performance Computing (HPC)"
 layout: single
 author: Aleksandra Badaczewska
 author_profile: true

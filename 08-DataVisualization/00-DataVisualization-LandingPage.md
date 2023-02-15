@@ -1,5 +1,5 @@
 ---
-title: "08. Data Visualization"
+title: "08 |  Data Visualization"
 layout: single
 author: Aleksandra Badaczewska
 author_profile: true

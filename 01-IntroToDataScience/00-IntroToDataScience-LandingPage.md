@@ -1,5 +1,5 @@
 ---
-title: "01. Introduction to Data Science"
+title: "01 |  Introduction to Data Science"
 layout: single
 author: Aleksandra Badaczewska
 author_profile: true
