@@ -466,7 +466,7 @@ header:
     Submitting Dependency Jobs using SLURM</a></td></tr>
 
   <tr><td style="background-color:mistyrose; color:#19272f; font-weight: 600; text-align: center;">CheatSheet</td>
-    <td style="border: none; font-size: 1.4em; padding: 0 0.4em;">&emsp;&emsp;&#10686;&emsp;
+    <td style="border: none; font-size: 1.4em; padding: 0 0.4em;">&emsp;&emsp;&#10686;&emsp;  
     <a href="06-IntroToHPC/05-JOB-QUEUE/01-SLURM/02-slurm-cheatsheet" style="color: #3f5a8a;">
     SLURM Commands</a></td></tr>
 
@@ -486,7 +486,7 @@ header:
     Submitting Dependency Jobs using PBS</a></td></tr>
 
   <tr><td style="background-color:mistyrose; color:#19272f; font-weight: 600; text-align: center;">CheatSheet</td>
-    <td style="border: none; font-size: 1.4em; padding: 0 0.4em;">&emsp;&emsp;&#10686;&emsp;
+    <td style="border: none; font-size: 1.4em; padding: 0 0.4em;">&emsp;&emsp;&#10686;&emsp;  
     <a href="06-IntroToHPC/05-JOB-QUEUE/02-PBS/02-pbs-cheatsheet" style="color: #3f5a8a;">
     PBS Commands</a></td></tr>
 
