@@ -10,7 +10,12 @@ header:
 
 {% include toc %}
 
-# Tools overview
+[DataScience Workbook](https://datascience.101workbook.org/) / [02. Introduction to the Command Line](00-IntroToCommandLine-LandingPage.md) / **3. Useful Text Manipulation Programs**
+
+---
+
+
+# Introduction
 
 **The command line interface (CLI) is a powerful environment for text manipulation tasks.** <br>
 There are a variety of text manipulation programs available in the <a href="https://datascience.101workbook.org/02-IntroToCommandLine/01-terminal-basics" target="_blank">terminal  ⤴</a> that allow users to quickly and efficiently process large amounts of text data. These programs offer a wide range of capabilities, including searching for patterns, transforming text, sorting lines, removing duplicates, and counting characters, words, and lines.
@@ -268,11 +273,12 @@ text_stream | grep WORD | tr '-' ' ' | awk '{print $2,$4,$6}' | sort -nk1 | uniq
 
 ___
 # Further Reading
-* [Tutorial: GREP – simple search for regular expressions](03A-tutorial-unix-grep.md)
-* [Tutorial: SED – edit stream text](03B-tutorial-unix-sed.md)
-* [Tutorial: AWK – advanced text processing](03C-tutorial-unix-awk.md)
-* [Tutorial: BIOAWK – biological data manipulation](03D-tutorial-unix-bioawk.md)
-* [Summary of Unix Commands: UNIX CheatSheet](04-unix-cheat-sheet.md)
+* [GREP – simple search for regular expressions](03A-tutorial-unix-grep.md)
+* [SED – edit stream text](03B-tutorial-unix-sed.md)
+* [AWK – advanced text processing](03C-tutorial-unix-awk.md)
+* [BIOAWK – biological data manipulation](03D-tutorial-unix-bioawk.md)
+
+* [Unix Commands CheatSheet](04-unix-cheat-sheet.md)
 
 ___
 
@@ -280,3 +286,4 @@ ___
 [Section Index](00-IntroToCommandLine-LandingPage.md){: .btn  .btn--primary}
 [Previous](02E-tutorial-unix-getting-started.md){: .btn  .btn--primary}
 [Next](03A-tutorial-unix-grep.md){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

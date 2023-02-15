@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Unix Getting Started"
+title: "Getting Started with Unix"
 layout: single
 author: Andrew Severin
 author_profile: true
@@ -10,8 +10,12 @@ header:
 
 {% include toc %}
 
-# Introduction
+[DataScience Workbook](https://datascience.101workbook.org/) / [02. Introduction to the Command Line](00-IntroToCommandLine-LandingPage.md) / [2. Introduction to UNIX Shell](02-intro-to-unix-shell.md) / **2.5 Getting Started with UNIX**
+
 ---
+
+
+# Introduction
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OAAdLMZvk1I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -971,8 +975,9 @@ This will not affect the file in unixTutorial but will remove it from the subfol
 
 ___
 # Further Reading
-* [Summary of Unix Commands](04-unix-cheat-sheet.md)
-* [Text Files Manipulation Programs](03-text-manipulation-programs.md)
+* [Unix Commands CheatSheet](04-unix-cheat-sheet.md)
+
+* [3. Useful Text Manipulation Programs](03-text-manipulation-programs.md)
 
 ___
 
@@ -980,3 +985,4 @@ ___
 [Section Index](00-IntroToCommandLine-LandingPage.md){: .btn  .btn--primary}
 [Previous](02D-admin-commands.md){: .btn  .btn--primary}
 [Next](03-text-manipulation-programs.md){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

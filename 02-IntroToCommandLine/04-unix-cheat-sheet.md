@@ -9,6 +9,13 @@ header:
   overlay_image: /02-IntroToCommandLine/assets/images/02_command_line_banner.png
 ---
 
+{% include toc %}
+
+[DataScience Workbook](https://datascience.101workbook.org/) / [02. Introduction to the Command Line](00-IntroToCommandLine-LandingPage.md) / **Unix Commands CheatSheet**
+
+---
+
+
 ## Navigation
 
 |Navigation| ||
@@ -219,3 +226,4 @@ ___
 [Section Index](00-IntroToCommandLine-LandingPage.md){: .btn  .btn--primary}
 [Previous](03D-tutorial-unix-bioawk.md){: .btn  .btn--primary}
 [Next](../03-SetUpComputingMachine/00-SetUpComputingMachine-LandingPage.md){: .btn  .btn--primary}
+[top of page](#navigation){: .btn  .btn--primary}

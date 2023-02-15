@@ -8,7 +8,13 @@ header:
   overlay_image: /02-IntroToCommandLine/assets/images/02_command_line_banner.png
 ---
 
-## `grep`
+{% include toc %}
+
+[DataScience Workbook](https://datascience.101workbook.org/) / [02. Introduction to the Command Line](00-IntroToCommandLine-LandingPage.md) / [3. Useful Text Manipulation Programs](03-text-manipulation-programs.md) / **3.1 GREP – simple search for regular expressions**
+
+---
+
+# Introduction
 
 `grep` (`g`lobally search a `r`egular `e`xpression and `p`rint) is one of the most useful commands in UNIX and it is commonly used to filter a file/input, line by line, against a pattern eg., to print each line of a file which contains a match for pattern.
 
@@ -210,10 +216,11 @@ grep -B 10 -A 10 "PATTERN" FILENAME
 
 ___
 # Further Reading
-* [Tutorial: SED – edit stream text](03B-tutorial-unix-sed.md)
-* [Tutorial: AWK – advanced text processing](03C-tutorial-unix-awk.md)
-* [Tutorial: BIOAWK – biological data manipulation](03D-tutorial-unix-bioawk.md)
-* [Summary of Unix Commands](04-unix-cheat-sheet.md)
+* [SED – edit stream text](03B-tutorial-unix-sed.md)
+* [AWK – advanced text processing](03C-tutorial-unix-awk.md)
+* [BIOAWK – biological data manipulation](03D-tutorial-unix-bioawk.md)
+
+* [Unix Commands CheatSheet](04-unix-cheat-sheet.md)
 
 ___
 
@@ -221,3 +228,4 @@ ___
 [Section Index](00-IntroToCommandLine-LandingPage.md){: .btn  .btn--primary}
 [Previous](03-text-manipulation-programs.md){: .btn  .btn--primary}
 [Next](03B-tutorial-unix-sed.md){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

@@ -8,7 +8,14 @@ header:
   overlay_image: /02-IntroToCommandLine/assets/images/02_command_line_banner.png
 ---
 
-## All about SED command
+{% include toc %}
+
+[DataScience Workbook](https://datascience.101workbook.org/) / [02. Introduction to the Command Line](00-IntroToCommandLine-LandingPage.md) / [3. Useful Text Manipulation Programs](03-text-manipulation-programs.md) / **3.2 Tutorial: SED – replace pattern in stream text**
+
+---
+
+
+# Introduction
 
 The  `s`treamline `ed`itor  or `sed` command is a stream editor that reads one or more text files, makes changes or edits according to editing script, and writes the results to standard output. First, we will discuss `sed` command with respect to search and replace function. Other uses for the `sed` can also be found in [this](http://www.grymoire.com/Unix/Sed.html#uh-47) official guide, but we will discuss them briefly in this chapter as well.
 
@@ -132,9 +139,10 @@ still to come!
 
 ___
 # Further Reading
-* [Tutorial: AWK – advanced text processing](03C-tutorial-unix-awk.md)
-* [Tutorial: BIOAWK – biological data manipulation](03D-tutorial-unix-bioawk.md)
-* [Summary of Unix Commands](04-unix-cheat-sheet.md)
+* [AWK – advanced text processing](03C-tutorial-unix-awk.md)
+* [BIOAWK – biological data manipulation](03D-tutorial-unix-bioawk.md)
+
+* [Unix Commands CheatSheet](04-unix-cheat-sheet.md)
 
 ___
 
@@ -142,3 +150,4 @@ ___
 [Section Index](00-IntroToCommandLine-LandingPage.md){: .btn  .btn--primary}
 [Previous](03A-tutorial-unix-grep.md){: .btn  .btn--primary}
 [Next](03C-tutorial-unix-awk.md){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

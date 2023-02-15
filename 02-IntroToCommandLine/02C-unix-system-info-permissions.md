@@ -1,5 +1,5 @@
 ---
-title: "Administrative Commands"
+title: "Unix File System Administration"
 layout: single
 author: Andrew Severin
 author_profile: true
@@ -8,7 +8,13 @@ header:
   overlay_image: /02-IntroToCommandLine/assets/images/02_command_line_banner.png
 ---
 
-# Unix File System Administration
+{% include toc %}
+
+[DataScience Workbook](https://datascience.101workbook.org/) / [02. Introduction to the Command Line](00-IntroToCommandLine-LandingPage.md) / [2. Introduction to UNIX Shell](02-intro-to-unix-shell.md) / **2.3 System Info and Access Permissions**
+
+---
+
+# Introduction
 This exercise will provide you details about some administrative commands with examples. Here, you can learn how to change permissions for files and folders to modify its accessibility and commands to obtain information about the system you are using.
 
 ## Changing permissions
@@ -276,13 +282,14 @@ ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}
 
 ___
 # Further Reading
-* [Unix Admin Commands](02D-admin-commands.md)
-* [Tutorial: Unix Getting Started](02E-tutorial-unix-getting-started.md)
-* [Summary of Unix Commands](04-unix-cheat-sheet.md)
+* [Superuser Command: sudo](02D-admin-commands.md)
+* [Getting Started with UNIX + VIDEO + exercises](02E-tutorial-unix-getting-started.md)
+* [Unix Commands CheatSheet](04-unix-cheat-sheet.md)
 
 ___
 
 [Homepage](../index.md){: .btn  .btn--primary}
 [Section Index](00-IntroToCommandLine-LandingPage.md){: .btn  .btn--primary}
-[Previous](02C-text-files-editors.md){: .btn  .btn--primary}
+[Previous](02B-text-files-editors.md){: .btn  .btn--primary}
 [Next](02D-admin-commands.md){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

@@ -1,5 +1,5 @@
 ---
-title: "Unix Admin Commands"
+title: "Superuser Commands"
 layout: single
 author: Aleksandra Badaczewska
 author_profile: true
@@ -10,7 +10,12 @@ header:
 
 {% include toc %}
 
-## Superuser
+[DataScience Workbook](https://datascience.101workbook.org/) / [02. Introduction to the Command Line](00-IntroToCommandLine-LandingPage.md) / [2. Introduction to UNIX Shell](02-intro-to-unix-shell.md) / **2.4 Superuser Command: sudo**
+
+---
+
+
+# Superuser
 
 The superuser, also known as the **"root" user**, is a special user account in Unix and Linux systems that has complete control over the system, including unrestricted access to all files and commands on the system. In most Unix-like systems, the superuser is the only user that can perform certain tasks, such as changing the system's hostname, modifying system-wide files and configuration settings, installing software, and creating and deleting user accounts.
 
@@ -299,9 +304,8 @@ There are many other tasks that may require superuser privileges, and sudo can b
 
 ___
 # Further Reading
-* [Tutorial: Unix Getting Started](02E-tutorial-unix-getting-started.md)
-* [Summary of Unix Commands](04-unix-cheat-sheet.md)
-* [Text Files Manipulation Programs](03-text-manipulation-programs.md)
+* [Getting Started with UNIX + VIDEO + exercises](02E-tutorial-unix-getting-started.md)
+* [Unix Commands CheatSheet](04-unix-cheat-sheet.md)
 
 ___
 
@@ -309,3 +313,4 @@ ___
 [Section Index](00-IntroToCommandLine-LandingPage.md){: .btn  .btn--primary}
 [Previous](02C-unix-system-info-permissions.md){: .btn  .btn--primary}
 [Next](02E-tutorial-unix-getting-started.md){: .btn  .btn--primary}
+[top of page](#superuser){: .btn  .btn--primary}

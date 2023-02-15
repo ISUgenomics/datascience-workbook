@@ -10,6 +10,10 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [02. Introduction to the Command Line](00-IntroToCommandLine-LandingPage.md) / **1. Terminal, a text-based interface for command-line operations**
+
+---
+
 # What is a terminal?
 
 The command-line interface (**CLI**) is a more efficient alternative for accessing the file system than through the graphical user interface (**GUI**). A **terminal** is an application that make it possible to browse files and execute programs on your laptop or another computing machine using text-like commands. So, to preview the contents of a folder, instead of clicking on the folder you have to type in the terminal the text command `ls` and confirm with `enter`. Then you will see a list of file names instead of graphical icons corresponding to the files (*see Figure 1*).
@@ -160,12 +164,13 @@ less ~/.bash_history
 
 ___
 # Further Reading
-* [Introduction to Unix Shell](02-intro-to-unix-shell.md)
-* [Text Manipulation Programs](03-text-manipulation-programs.md)
-* [Summary of Unix Commands](04-unix-cheat-sheet.md)
+* [Introduction to UNIX Shell: shell variables, home dir, .bashrc](02-intro-to-unix-shell.md)
+* [Useful Text Manipulation Programs](03-text-manipulation-programs.md)
+* [Unix Commands CheatSheet](04-unix-cheat-sheet.md)
 
 ___
 
 [Homepage](../index.md){: .btn  .btn--primary}
 [Section Index](00-IntroToCommandLine-LandingPage.md){: .btn  .btn--primary}
 [Next](02-intro-to-unix-shell.md){: .btn  .btn--primary}
+[top of page](#what-is-a-terminal){: .btn  .btn--primary}

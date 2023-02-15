@@ -8,7 +8,15 @@ header:
   overlay_image: /02-IntroToCommandLine/assets/images/02_command_line_banner.png
 ---
 
-# BioAWK basics
+{% include toc %}
+
+[DataScience Workbook](https://datascience.101workbook.org/) / [02. Introduction to the Command Line](00-IntroToCommandLine-LandingPage.md) / [3. Useful Text Manipulation Programs](03-text-manipulation-programs.md) / **3.4 BIOAWK – biological data manipulation**
+
+---
+
+
+# Introduction
+
 Bioawk is an extension of the UNIX core utility command `awk`. It provides several features for biological data manipulation in a similar way as that of awk. This tutorial will give a brief introduction and examples for some common tasks that can be done with this command.
 
 Bioawk is developed by [Heng Li](http://lh3lh3.users.sourceforge.net). You can download and install it from the [Git repository](https://github.com/lh3). On Lightning3/Condo, it has already been installed, just load the `bioawk` module to start using it.
@@ -166,7 +174,7 @@ bioawk -t -c header '$age < "25" {print $0}' input.txt
 
 ___
 # Further Reading
-* [Summary of Unix Commands](04-unix-cheat-sheet.md)
+* [Unix Commands CheatSheet](04-unix-cheat-sheet.md)
 
 ___
 
@@ -174,3 +182,4 @@ ___
 [Section Index](00-IntroToCommandLine-LandingPage.md){: .btn  .btn--primary}
 [Previous](03C-tutorial-unix-awk.md){: .btn  .btn--primary}
 [Next](04-unix-cheat-sheet.md){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

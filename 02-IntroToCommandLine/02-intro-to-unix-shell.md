@@ -10,10 +10,11 @@ header:
 
 {% include toc %}
 
-# Introduction
+[DataScience Workbook](https://datascience.101workbook.org/) / [02. Introduction to the Command Line](00-IntroToCommandLine-LandingPage.md) / **2. Introduction to UNIX Shell: shell variables, home dir, .bashrc**
 
+---
 
-## What is Unix?
+# What is Unix?
 UNIX is an operating system (OS) for computer devices providing the **command-line interface** (CLI) for convenient and efficient programming. The modern Unix OS variants are **multi-tasking** and **multi-user**, allowing for sharing computing resources among many users at the same time [�](https://en.wikipedia.org/wiki/Unix). They are also portable, supplying the operating system for personal computers, computing clusters, database & web servers, and high-end workstations. The **open-source Unix distributions** within the Linux family include **[Ubuntu](https://ubuntu.com)**, **[Debian](https://www.debian.org)**, **[RHEL](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux)** (*Red Hat Enterprise Linux*), [Linux Mint](https://linuxmint.com), [Fedora](https://getfedora.org), [CentOS](https://www.centos.org), [OpenSUSE](https://www.opensuse.org), [Manjaro](https://manjaro.org), and [Arch Linux](https://archlinux.org). Besides GNU/Linux there are other varieties of UNIX such as [Sun Solaris](https://www.oracle.com/solaris/solaris11/), [macOS X](https://images.apple.com/media/us/osx/2012/docs/OSX_for_UNIX_Users_TB_July2011.pdf), [IBM AIX](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwi144qCzvj4AhVQwMgKHYDtBCkYABAAGgJxdQ&ohost=www.google.com&cid=CAESaeD259NbszXFpY64pFLk0_wXfZMwH6h3-QetYgjSrkgLaYJer_xeWfqY3aJfObXO8-Q9BWaatvrumS88eGFBNG5kdHFZBMr7p2y9bomOVQPmd68v2krdfBR4P1JnZLgaY0qkZYrg9kjruQ&sig=AOD64_0996jnSZxbrGQCM_wKGL9v9QiLPA&q&adurl&ved=2ahUKEwibm_-Bzvj4AhW-kokEHWwQAtcQ0Qx6BAgDEAE&nis=8), [Darwin OS](http://www.puredarwin.org), and [FreeBSD OS](https://www.freebsd.org) (some of them are not free).
 
 ![Linux Distributions](assets/images/linux_distributions.png)<br>
@@ -598,12 +599,12 @@ export HISTSIZE=300
 
 ___
 # Further Reading
-* [Unix Basic Commands](02A-basic-commands.md)
-* [System Info and Access Parmisions](02B-unix-system-info-permissions.md)
-* [Text Files Editors](02C-text-files-editors.md)
-* [Unix Admin Commands](02D-admin-commands.md)
-* [Tutorial: Unix Getting Started](02E-tutorial-unix-getting-started.md)
-* [Summary of Unix Commands](04-unix-cheat-sheet.md)
+* [Unix Basic Commands: Navigation, File Creation & Preview](02A-basic-commands.md)
+* [Command Line Text Files Editors: nano, vim](02B-text-files-editors.md)
+* [System Info and Access Parmisions](02C-unix-system-info-permissions.md)
+* [Superuser Command: sudo](02D-admin-commands.md)
+* [Getting Started with UNIX + VIDEO + exercises](02E-tutorial-unix-getting-started.md)
+* [Unix Commands CheatSheet](04-unix-cheat-sheet.md)
 
 ___
 
@@ -611,3 +612,4 @@ ___
 [Section Index](00-IntroToCommandLine-LandingPage.md){: .btn  .btn--primary}
 [Previous](01-terminal-basics.md){: .btn  .btn--primary}
 [Next](02A-basic-commands.md){: .btn  .btn--primary}
+[top of page](#what-is-Unix){: .btn  .btn--primary}
