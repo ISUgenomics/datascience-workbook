@@ -10,8 +10,13 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [03. Setting Up Computing Machine](00-SetUpComputingMachine-LandingPage.md) / [3. Various Methods of Software Installation](03-various-methods-of-software-installation.md) / **3.1 Installations on MacBook Pro**
 
-## Introduction
+---
+
+
+# Introduction
+
 This guide is meant for the installation and setup of an M1 MacBook Pro for bioinformatics data analysis. I assume that this is a brand new MacBook and that no software has been installed beyond what is installed with IOS Monterey. A new MacBook is not required for the installation of this software but a clean installation of `conda` and `brew` is recommended.
 
 Setting up your new Mac computing machine is an investment of time that you will quickly appreciate in your daily work. With the help of this tutorial, the process will be straightforward and successful.
@@ -368,8 +373,8 @@ Install R from the package from R cran site.
 
 ___
 # Further Reading
-* [Tutorial: Installations on Windows](03B-tutorial-installations-on-windows.md)
-* [Tutorial: Installations on Linux](03C-tutorial-installations-on-linux.md)
+* [3.2 Installations on Windows](03B-tutorial-installations-on-windows.md)
+* [3.3 Installations on Linux](03C-tutorial-installations-on-linux.md)
 
 ___
 
@@ -377,3 +382,4 @@ ___
 [Section Index](00-SetUpComputingMachine-LandingPage.md){: .btn  .btn--primary}
 [Previous](03-various-methods-of-software-installation.md){: .btn  .btn--primary}
 [Next](03B-tutorial-installations-on-windows.md){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

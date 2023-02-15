@@ -10,6 +10,13 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [03. Setting Up Computing Machine](00-SetUpComputingMachine-LandingPage.md) / [3. Various Methods of Software Installation](03-various-methods-of-software-installation.md) / **3.2 Installations on Windows**
+
+---
+
+
+# Introduction
+
 This is a guide for setup of a windows machine for bioinformatics data analysis. I list here some important tools useful for most bioinformatics analyses and the process to install them. Check out the <a href="https://bioinformaticsworkbook.org/projectManagement/Intro_projectManagement#gsc.tab=0" target="_blank">Project Management</a> guide before you start a new project.
 
 ### General guide to software installation
@@ -21,15 +28,15 @@ Installing any software on Windows usually involves some common steps:
 
 `Tip:` Just google *'[software name] for windows'* to find installation files. Works for most programs.
 
-### Reset an old laptop 
+### Reset an old laptop
 
-+ Get password from previous account holder to login 
++ Get password from previous account holder to login
 + Reset Windows
   * Go to settings
   * Search: Reset this PC
   * Click 'Get started' or 'Reset' under 'Reset this PC'  
   * You can choose to keep the files or delete all data
-+ Log in with new account 
++ Log in with new account
 + Download a better internet browser
 
 <br>
@@ -193,7 +200,7 @@ move nextflow in a directory into $PATH or use `./nextflow` if it is in your cur
 
 ___
 # Further Reading
-* [Tutorial: Installations on Linux](03C-tutorial-installations-on-linux.md)
+* [3.3 Installations on Linux](03C-tutorial-installations-on-linux.md)
 
 ___
 
@@ -201,3 +208,4 @@ ___
 [Section Index](00-SetUpComputingMachine-LandingPage.md){: .btn  .btn--primary}
 [Previous](03A-tutorial-installations-on-mac.md){: .btn  .btn--primary}
 [Next](03C-tutorial-installations-on-linux.md){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

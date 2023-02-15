@@ -10,8 +10,12 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [03. Setting Up Computing Machine](00-SetUpComputingMachine-LandingPage.md) / [2. Must-Have Software](02-must-have-software.md) / **2.2 Basic Developer Tools**
 
-# Basic Developer Tools
+---
+
+
+# Introduction
 
 Developer tools are a set of software and applications that are used by programmers and developers to **create, debug, and optimize the application's code**. Some of the most basic developer tools include:
 
@@ -117,8 +121,9 @@ File transfer is the translocation or transport of data, usually stored in the f
 
 ___
 # Further Reading
-* [Basic Developer Libraries](02C-basic-developer-libraries.md)
-* [Various Methods of Software Installation](03-various-methods-of-software-installation.md)
+* [2.3 Basic Developer Libraries](02C-basic-developer-libraries.md)
+
+* [3. Various Methods of Software Installation](03-various-methods-of-software-installation.md)
 
 ___
 
@@ -126,3 +131,4 @@ ___
 [Section Index](00-SetUpComputingMachine-LandingPage.md){: .btn  .btn--primary}
 [Previous](02A-basic-office-software.md){: .btn  .btn--primary}
 [Next](02C-basic-developer-libraries.md){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

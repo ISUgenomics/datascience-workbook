@@ -10,7 +10,12 @@ header:
 
 {% include toc %}
 
-## Intro
+[DataScience Workbook](https://datascience.101workbook.org/) / [03. Setting Up Computing Machine](00-SetUpComputingMachine-LandingPage.md) / **2. Must-Have Software**
+
+---
+
+
+# Introduction
 
 In this section, we will explore the must-have software for modern scientists. With so many options available, it is not easy to determine **which tools are professional** for conducting research. From equipment for the easy office, to data analysis & visualization and project management, digital utilities in your computer are sure to be valuable assets to any researcher. Whether you're a bioinformatician, chemist, physicist, biologist, or engineer, these programs will **help you to efficiently and effectively do your work**. Thus, we will discuss applications of some essential software that every modern scientist should have in their toolbox.
 
@@ -42,10 +47,11 @@ The use of digital software and applications in scientific research has become i
 
 ___
 # Further Reading
-* [Basic Office Software](02A-basic-office-software.md)
-* [Basic Developer Tools](02B-basic-developer-tools.md)
-* [Basic Developer Libraries](02C-basic-developer-libraries.md)
-* [Various Methods of Software Installation](03-various-methods-of-software-installation.md)
+* [2.1 Basic Office Software](02A-basic-office-software.md)
+* [2.2 Basic Developer Tools](02B-basic-developer-tools.md)
+* [2.3 Basic Developer Libraries](02C-basic-developer-libraries.md)
+
+* [3. Various Methods of Software Installation](03-various-methods-of-software-installation.md)
 
 ___
 
@@ -53,3 +59,4 @@ ___
 [Section Index](00-SetUpComputingMachine-LandingPage.md){: .btn  .btn--primary}
 [Previous](01B-linux-installation.md){: .btn  .btn--primary}
 [Next](02A-basic-office-software.md){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

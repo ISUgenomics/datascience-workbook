@@ -10,6 +10,13 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [03. Setting Up Computing Machine](00-SetUpComputingMachine-LandingPage.md) / [3. Various Methods of Software Installation](03-various-methods-of-software-installation.md) / **3.3 Installations on Linux**
+
+---
+
+
+# Introduction
+
 # Guide for installing various types of programs in Linux
 
 This handy guide is for installing programs in `UNIX` environment. Most of these steps assume that you are installing package in a group accessible location, without root access and utilizing the environment module systems for package management. However, you can easily modify these steps for other cases as well.
@@ -281,3 +288,4 @@ ___
 [Section Index](00-SetUpComputingMachine-LandingPage.md){: .btn  .btn--primary}
 [Previous](03B-tutorial-installations-on-windows.md){: .btn  .btn--primary}
 [Next](../04-DevelopmentEnvironment/00-DevelopmentEnvironment-LandingPage.md){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

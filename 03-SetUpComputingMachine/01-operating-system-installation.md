@@ -10,6 +10,13 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [03. Setting Up Computing Machine](00-SetUpComputingMachine-LandingPage.md) / **1. Operating System Installation**
+
+---
+
+
+# Introduction
+
 ## What is an **O**perating **S**ystem?
 
 An operating system (OS) is the software that manages and controls the hardware and other software on a computer. It provides a platform for programs to run on and performs tasks such as:
@@ -130,10 +137,11 @@ Having **multiple operating systems** installed on a single computer can provide
 
 ___
 # Further Reading
-* [Windows OS Installation](01A-windows-installation.md)
-* [Linux OS Installation](01B-linux-installation.md)
-* [Must-Have Software](02-must-have-software.md)
-* [Various Methods of Software Installation](03-various-methods-of-software-installation.md)
+* [1.1 Windows OS Installation](01A-windows-installation.md)
+* [1.2 Linux OS Installation](01B-linux-installation.md)
+
+* [2. Must-Have Software](02-must-have-software.md)
+* [3. Various Methods of Software Installation](03-various-methods-of-software-installation.md)
 
 
 ___
@@ -141,3 +149,4 @@ ___
 [Homepage](../index.md){: .btn  .btn--primary}
 [Section Index](00-SetUpComputingMachine-LandingPage.md){: .btn  .btn--primary}
 [Next](01A-windows-installation.md){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

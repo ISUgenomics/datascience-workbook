@@ -10,6 +10,13 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [03. Setting Up Computing Machine](00-SetUpComputingMachine-LandingPage.md) / **3. Various Methods of Software Installation**
+
+---
+
+
+# Introduction
+
 ## Various Methods of Installation
 
 Depending on how the software is distributed and how popular it is different installation methods are suitable. This guidebook will teach you how to install applications to MacBook Pro that are available in the Apple store or downloaded directly from the distributor's website from the Internet. You will also learn how to install various packages using commands in the terminal. For those who are part of the academic community, in particular Iowa State University, we will also show you how to take advantage of an academic license for software that usually requires a paid license.
@@ -35,9 +42,9 @@ Once you get familiar with a coding terminal, you can easily install development
 
 ___
 # Further Reading
-* [Tutorial: Installations on MacBook Pro](03A-tutorial-installations-on-mac.md)
-* [Tutorial: Installations on Windows](03B-tutorial-installations-on-windows.md)
-* [Tutorial: Installations on Linux](03C-tutorial-installations-on-linux.md)
+* [3.1 Installations on MacBook Pro](03A-tutorial-installations-on-mac.md)
+* [3.2 Installations on Windows](03B-tutorial-installations-on-windows.md)
+* [3.3 Installations on Linux](03C-tutorial-installations-on-linux.md)
 
 ___
 
@@ -45,3 +52,4 @@ ___
 [Section Index](00-SetUpComputingMachine-LandingPage.md){: .btn  .btn--primary}
 [Previous](02C-basic-developer-libraries.md){: .btn  .btn--primary}
 [Next](03A-tutorial-installations-on-mac.md){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

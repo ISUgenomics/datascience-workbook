@@ -10,6 +10,13 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [03. Setting Up Computing Machine](00-SetUpComputingMachine-LandingPage.md) / [2. Must-Have Software](02-must-have-software.md) / **2.1 Basic Office Software**
+
+---
+
+
+# Introduction
+
 ## Basic Software for Easy Daily Work
 
 ### Office Productivity Software
@@ -102,9 +109,10 @@ For Safari it is useful to add a few extensions:
 
 ___
 # Further Reading
-* [Basic Developer Tools](02B-basic-developer-tools.md)
-* [Basic Developer Libraries](02C-basic-developer-libraries.md)
-* [Various Methods of Software Installation](03-various-methods-of-software-installation.md)
+* [2.2 Basic Developer Tools](02B-basic-developer-tools.md)
+* [2.3 Basic Developer Libraries](02C-basic-developer-libraries.md)
+
+* [3. Various Methods of Software Installation](03-various-methods-of-software-installation.md)
 
 ___
 
@@ -112,3 +120,4 @@ ___
 [Section Index](00-SetUpComputingMachine-LandingPage.md){: .btn  .btn--primary}
 [Previous](02-must-have-software.md){: .btn  .btn--primary}
 [Next](02B-basic-developer-tools.md){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}
