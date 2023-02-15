@@ -24,8 +24,8 @@ Command Line is a text interface for the computer's operating system that passes
 
 ### **<a href="03-text-manipulation-programs" style="color: #24376b;">3. Useful Text Manipulation Programs</a>**
   * <a href="03A-tutorial-unix-grep" style="color: #3f5a8a;">3.1 GREP – simple search for regular expressions</a>
-  * <a href="03B-tutorial-unix-sed" style="color: #3f5a8a;">3.2 Tutorial: SED – replace pattern in stream text</a>
-  * <a href="3C-tutorial-unix-awk" style="color: #3f5a8a;">3.3 AWK – advanced text processing</a>
+  * <a href="03B-tutorial-unix-sed" style="color: #3f5a8a;">3.2 SED – replace pattern in stream text</a>
+  * <a href="03C-tutorial-unix-awk" style="color: #3f5a8a;">3.3 AWK – advanced text processing</a>
   * <a href="03D-tutorial-unix-bioawk" style="color: #3f5a8a;">3.4 BIOAWK – biological data manipulation</a>
 
 ### <a href="04-unix-cheat-sheet" style="color: #518cc2;">* UNIX CheatSheet</a>
