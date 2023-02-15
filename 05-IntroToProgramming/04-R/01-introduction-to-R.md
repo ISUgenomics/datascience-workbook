@@ -10,9 +10,14 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [05. Introduction to Programming](../00-IntroToProgramming-LandingPage.md) / **4. Introduction to R programming**
+
+---
+
+
 ## <span style="color: #ff3870;">New content coming soon!</span>
 
-
+# Introduction
 
 
 
@@ -26,5 +31,6 @@ ___
 
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-IntroToProgramming-LandingPage){: .btn  .btn--primary}
-[Previous](../03-PYTHON/01-introduction-to-python){: .btn  .btn--primary}
+[Previous](../03-PYTHON/08-tutorial-python-apply-statistics-scipy){: .btn  .btn--primary}
 [Next](../../06-IntroToHPC/00-IntroToHPC-LandingPage){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

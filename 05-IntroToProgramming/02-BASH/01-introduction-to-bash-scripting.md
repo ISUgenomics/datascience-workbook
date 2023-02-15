@@ -10,6 +10,10 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [05. Introduction to Programming](../00-IntroToProgramming-LandingPage.md) / **2. Introduction to Bash Scripting**
+
+---
+
 
 # Introduction
 
@@ -866,8 +870,13 @@ e.g., in-loop gnuploting template -->
 
 ___
 # Further Reading
-* [Introduction to Python programming](../03-PYTHON/01-introduction-to-python)
-* [Introduction to R programming](../04-R/01-introduction-to-R)
+<!--
+* [2.1 Process multiple files in Unix](02-unix-work-on-multiple-files.md)
+* [2.2 Introduction to regular expressions in Unix](03-unix-intro-to-regex.md)
+-->
+
+* [3. Introduction to Python Programming](../03-PYTHON/01-introduction-to-python.md)
+* [4. Introduction to R programming](../04-R/01-introduction-to-R.md)
 
 ___
 
@@ -875,3 +884,5 @@ ___
 [Section Index](../00-IntroToProgramming-LandingPage){: .btn  .btn--primary}
 [Previous](../01-ALGORITHM/01-basics-of-algorithm-structure){: .btn  .btn--primary}
 [Next](../03-PYTHON/01-introduction-to-python){: .btn  .btn--primary}
+<!-- [Next](02-unix-work-on-multiple-files){: .btn  .btn--primary} -->
+[top of page](#introduction){: .btn  .btn--primary}

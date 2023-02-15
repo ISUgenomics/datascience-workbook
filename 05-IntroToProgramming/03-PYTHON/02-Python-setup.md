@@ -10,6 +10,11 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [05. Introduction to Programming](../00-IntroToProgramming-LandingPage.md) / [3. Introduction to Python Programming](01-introduction-to-python.md) / **3.1 Python Setup**
+
+---
+
+
 # Introduction
 
 Python is a dynamically typed, object-oriented scripting language developed by Guido van Rossum and released in 1991. Many important machine learning packages are available in python.
@@ -145,11 +150,19 @@ Recently, Ceres HPC was configured to run JupyterLab. This allows you to run an 
 
 ___
 # Further Reading
-* [Introduction to R programming](../04-R/01-introduction-to-R)
+* [3.2 Read and Write Data Files](03-tutorial-read-write-files.md)
+* [3.3 JSON Module - Encoding & Decoding JSON Data](04-tutorial-python-manage-data-json-string.md)
+* [3.4 Math Module - Various Mathematical Functions](05-tutorial-python-round-abs-data-math-module.md)
+* [3.5 Pandas Library - Data Structure Manipulation Tool](06-tutorial-python-data-manipulation-pandas.md)
+* [3.6 Numpy Library - Multi-Dimensional Arrays Parser](07-tutorial-python-array-manipulation-numpy.md)
+* [3.7 SciPy Library - Algorithms for Scientific Computing](08-tutorial-python-apply-statistics-scipy.md)
+
+* [4. Introduction to R programming](../04-R/01-introduction-to-R)
 
 ___
 
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-IntroToProgramming-LandingPage){: .btn  .btn--primary}
 [Previous](01-introduction-to-python){: .btn  .btn--primary}
-[Next](../04-R/01-introduction-to-R){: .btn  .btn--primary}
+[Next](03-tutorial-read-write-files){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

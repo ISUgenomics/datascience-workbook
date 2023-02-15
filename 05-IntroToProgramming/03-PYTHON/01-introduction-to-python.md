@@ -10,7 +10,12 @@ header:
 
 {% include toc %}
 
-# Python overview
+[DataScience Workbook](https://datascience.101workbook.org/) / [05. Introduction to Programming](../00-IntroToProgramming-LandingPage.md) / **3. Introduction to Python Programming**
+
+---
+
+
+# Introduction
 
 <a href="https://www.python.org" target="_blank">Python  ⤴</a> is a **high-level programming language** that is widely used for scientific computing, data analysis, artificial intelligence algorithms implementation, web development, and visualization. It has a **simple and easy-to-learn syntax**, a large standard library, and a wide community making it a popular choice for beginners and experienced programmers alike.
 
@@ -299,13 +304,21 @@ Once you familiarize yourself with Python basics, you can try to develop a simpl
 
 ___
 # Further Reading
-* [Python setup](02-Python-setup)
+* [3.1 Python Setup](02-Python-setup.md)
+* [3.2 Read and Write Data Files](03-tutorial-read-write-files.md)
+* [3.3 JSON Module - Encoding & Decoding JSON Data](04-tutorial-python-manage-data-json-string.md)
+* [3.4 Math Module - Various Mathematical Functions](05-tutorial-python-round-abs-data-math-module.md)
+* [3.5 Pandas Library - Data Structure Manipulation Tool](06-tutorial-python-data-manipulation-pandas.md)
+* [3.6 Numpy Library - Multi-Dimensional Arrays Parser](07-tutorial-python-array-manipulation-numpy.md)
+* [3.7 SciPy Library - Algorithms for Scientific Computing](08-tutorial-python-apply-statistics-scipy.md)
 
-* [Introduction to R programming](../04-R/01-introduction-to-R)
+* [4. Introduction to R programming](../04-R/01-introduction-to-R)
 
 ___
 
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-IntroToProgramming-LandingPage){: .btn  .btn--primary}
 [Previous](../02-BASH/01-introduction-to-bash-scripting){: .btn  .btn--primary}
+<!-- [Previous](../02-BASH/03-unix-intro-to-regex){: .btn  .btn--primary} -->
 [Next](02-Python-setup){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}
