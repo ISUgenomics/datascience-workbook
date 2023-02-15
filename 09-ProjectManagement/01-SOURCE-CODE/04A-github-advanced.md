@@ -10,7 +10,7 @@ header:
 
 {% include toc %}
 
-[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / [2. Storage & Version Control](01-storage-version-control.md)) / [2.2 Online Hosting Platforms for GIT Repositories](03-repo-hosting-platforms.md) / [2.2.1 Introduction to GitHub](04-intro-to-github.md) / **2.2.1# GitHub for advanced users**
+[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / [2. Storage & Version Control](01-storage-version-control.md) / [2.2 Online Hosting Platforms for GIT Repositories](03-repo-hosting-platforms.md) / [2.2.1 Introduction to GitHub](04-intro-to-github.md) / **2.2.1# GitHub for advanced users**
 
 ---
 
