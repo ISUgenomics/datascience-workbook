@@ -10,8 +10,12 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [08. Data Visualization](../../00-DataVisualization-LandingPage.md) / [2. Introduction to Scientific Graphing](../01-introduction-to-scientific-graphing.md) / **2.2 Plotly-Dash – Data Processing & Interactive Plotting with Python**
 
-## Overview
+---
+
+
+## Introduction
 
 Python is a popular programming language that is widely used for data analysis and scientific computing. One of the key features of Python is the ability to create interactive graphs using libraries such as Plotly and Dash. These libraries can be used to create interactive graphs and web applications for data visualization. The Plotly library is built on top of Plotly.js, and allows users to create a range of interactive graphs. Dash is a web app framework that allows users to build interactive web apps using Python and Dash HTML Components.
 
@@ -41,13 +45,11 @@ The **Dash** library offers many templates for components that facilitate buildi
 **Figure 2.** *Examples of Dash widgets for interactive web applications, including Core, HTM, and Bootstrap components.*
 ___
 # Further Reading
-* [Introduction to Plotly (Python library)](02-intro-to-plotly-graphs)
-* [Introduction to Dash (Python library)](03-intro-to-dash-widgets)
-* [Interactive Graphing – Local Server with Web-Based Interface](04-plotly-examples-as-local-server)
-* [Plotly Graphing - Interactive Examples in the JupyterLab](05-plotly-examples-in-jupyterlab)
+* [2.2.1 Introduction to Plotly (Python library)](02-intro-to-plotly-graphs)
+* [2.2.2 Introduction to Dash (Python library)](03-intro-to-dash-widgets)
+* [2.2.3 Plotly Graphing - Interactive Examples in the JupyterLab](04-plotly-examples-in-jupyterlab)
 
-* [RStudio: Data Processing & Plotting with R](../03-R/01-graphing-with-rstudio)
-
+* [2.3 RStudio – Data Processing & Plotting with R](../03-R/01-graphing-with-rstudio)
 
 ___
 
@@ -55,3 +57,4 @@ ___
 [Section Index](../../00-DataVisualization-LandingPage){: .btn  .btn--primary}
 [Previous](../01-GNUPLOT/01-gnuplot-basics){: .btn  .btn--primary}
 [Next](02-intro-to-plotly-graphs){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

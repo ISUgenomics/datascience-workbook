@@ -10,9 +10,14 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [08. Data Visualization](../00-DataVisualization-LandingPage.md) / **2. Introduction to Scientific Graphing**
+
+---
+
+
 ## <span style="color: #ff3870;">New content coming soon!</span>
 
-
+# Introduction
 
 
 
@@ -20,9 +25,9 @@ header:
 
 ___
 # Further Reading
-* [Gnuplot: Creating Plots in the UNIX Shell](01-GNUPLOT/01-gnuplot-basics)
-* [Plotly-Dash: Data Processing & Interactive Plotting with Python](02-PYTHON/01-interactive-graphing-with-python)
-* [RStudio: Data Processing & Plotting with R](03-R/01-graphing-with-rstudio)
+* [2.1 Gnuplot – Creating Plots in the UNIX Shell](01-GNUPLOT/01-gnuplot-basics)
+* [2.2 Plotly-Dash – Data Processing & Interactive Plotting with Python](02-PYTHON/01-interactive-graphing-with-python)
+* [2.3 RStudio – Data Processing & Plotting with R](03-R/01-graphing-with-rstudio)
 
 ___
 
@@ -30,3 +35,4 @@ ___
 [Section Index](../00-DataVisualization-LandingPage){: .btn  .btn--primary}
 [Previous](../01-IMAGES/05-template-based-web-tools){: .btn  .btn--primary}
 [Next](01-GNUPLOT/01-gnuplot-basics){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

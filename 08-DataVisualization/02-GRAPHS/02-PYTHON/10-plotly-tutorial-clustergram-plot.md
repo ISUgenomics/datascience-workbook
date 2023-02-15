@@ -10,9 +10,14 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [08. Data Visualization](../../00-DataVisualization-LandingPage.md) / [2. Introduction to Scientific Graphing](../01-introduction-to-scientific-graphing.md) / [2.2 Plotly-Dash – Data Processing & Interactive Plotting with Python](01-interactive-graphing-with-python.md) / [2.2.3 Plotly Graphing - Interactive Examples in the JupyterLab](04-plotly-examples-in-jupyterlab.md) / **Creating Clustergram (Heatmap with Dendrograms)**
+
+---
+
+
 ## <span style="color: #ff3870;">New content coming soon!</span>
 
-
+# Introduction
 
 
 
@@ -29,3 +34,4 @@ ___
 [Section Index](../../00-DataVisualization-LandingPage){: .btn  .btn--primary}
 [Previous](09-plotly-tutorial-dendrogram-plot){: .btn  .btn--primary}
 [Next](../03-R/01-graphing-with-rstudio){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

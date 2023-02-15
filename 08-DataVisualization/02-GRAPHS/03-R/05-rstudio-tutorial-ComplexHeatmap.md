@@ -10,6 +10,13 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [08. Data Visualization](../../00-DataVisualization-LandingPage.md) / [2. Introduction to Scientific Graphing](../01-introduction-to-scientific-graphing.md) / [2.3 RStudio – Data Processing & Plotting with R](01-graphing-with-rstudio.md) / **Creating Heatmaps in R using ComplexHeatmap**
+
+---
+
+
+# Introduction
+
 # ComplexHeatmap in R
 To check the github repo for the ComplexHeatmap package <a href="https://github.com/jokergoo/ComplexHeatmap" target="_blank">click here</a>.  <br>
 Complete reference is available <a href="https://jokergoo.github.io/ComplexHeatmap-reference/book/" target="_blank">here</a>. <br>
@@ -40,7 +47,7 @@ mat <- as.matrix(read.csv ("PATH/TO/file.csv", sep = ',', row.names = 1, header=
 <span style="font-weight:800;">WARNING:</span>
 <br><span style="font-style:italic;"> If the dataset has non-numeric entries, the matrix might be loaded as character type and can lead to heatmap not displaying properly. If this is a problem, get rid of the non-numeric characters and convert the matrix type to numeric (see below).<br>
 According to the complete reference documentation: "NA is allowed in the matrix. You can control the color of NA by na_col argument (by default it is grey for NA). A matrix that contains NA can be clustered by Heatmap() as long as there is no NA distances between any of the rows or columns respectively." </span>
-</div><br> 
+</div><br>
 
 ```
 # after loading the data as.matrix, check matrix type in the environment panel in RStudio or by using:
@@ -102,7 +109,7 @@ display.brewer.all(colorblindFriendly=TRUE)
 # col_fun <- colorRamp2(c(18, 20, 23), brewer.pal(3, "Blues"))
 # OR
 col_fun <- colorRamp2(c(18, 20, 23), c("#FFFFB2", "#f4a582", "#BD0026"))
-# The `colorRamp2` function is used for color interpolation. 
+# The `colorRamp2` function is used for color interpolation.
 
 Heatmap(mat, name = "mat", col = col_fun)
 ```
@@ -142,13 +149,13 @@ draw(map1, heatmap_legend_side = "left")   # Can be “right”, “left”, “
 Note that this legend is independent of the plot, so you need to select the same colors carefully for representing the corresponding plot. <br>
 
 ```
-col_fun <- colorRamp2(c(18, 20, 23), 
+col_fun <- colorRamp2(c(18, 20, 23),
                       c("#d1e5f0", "#f4a582", "#d6604d"))
 # create a function to represent color, which can be used for both legend and heatmap to avoid selecting different colors for both
 
 grid.newpage()
 lgd = Legend(col_fun = col_fun, title = "Legend title")
-lgd1 = draw(lgd, x= unit(0.9, "npc"), y=unit(0.2, "npc")) 
+lgd1 = draw(lgd, x= unit(0.9, "npc"), y=unit(0.2, "npc"))
 ```
 
 ![Legend1](assets/06Legend1.png)
@@ -167,11 +174,11 @@ labels <- data.frame(Rowlabels = c("These", "are", "given", "row", "labels", "Th
 
 ha_row = rowAnnotation(df= labels,
                        gp = gpar(col = "black"),
-                       annotation_legend_param = list(title = "Legend1 title", 
+                       annotation_legend_param = list(title = "Legend1 title",
                                                       ncol = 1)
                        )
 
-col_fun <- colorRamp2(c(18, 20, 23), 
+col_fun <- colorRamp2(c(18, 20, 23),
                       c("Blue", "#f4a582", "#d6604d"))
 
 ### Make the heatmap
@@ -203,3 +210,4 @@ ___
 [Section Index](../../00-DataVisualization-LandingPage){: .btn  .btn--primary}
 [Previous](04-rstudio-tutorial-heatmap-plot){: .btn  .btn--primary}
 [Next](../../../09-ProjectManagement/00-ProjectManagement-LandingPage){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

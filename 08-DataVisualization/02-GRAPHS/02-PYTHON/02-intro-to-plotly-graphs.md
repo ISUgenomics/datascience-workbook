@@ -10,6 +10,12 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [08. Data Visualization](../../00-DataVisualization-LandingPage.md) / [2. Introduction to Scientific Graphing](../01-introduction-to-scientific-graphing.md) / [2.2 Plotly-Dash – Data Processing & Interactive Plotting with Python](01-interactive-graphing-with-python.md) / **2.2.1 Introduction to Plotly (Python library)**
+
+---
+
+
+# Introduction
 
 ## Plotly Graphing Library for Python
 
@@ -331,12 +337,10 @@ Explore *go_heatmap_FQC.ipynb* notebook.
 
 ___
 # Further Reading
-* [Introduction to Dash (Python library)](03-intro-to-dash-widgets)
-* [Interactive Graphing – Local Server with Web-Based Interface](04-plotly-examples-as-local-server)
-* [Plotly Graphing - Interactive Examples in the JupyterLab](05-plotly-examples-in-jupyterlab)
+* [2.2.2 Introduction to Dash (Python library)](03-intro-to-dash-widgets)
+* [2.2.3 Plotly Graphing - Interactive Examples in the JupyterLab](04-plotly-examples-in-jupyterlab)
 
-* [RStudio: Data Processing & Plotting with R](../03-R/01-graphing-with-rstudio)
-
+* [2.3 RStudio – Data Processing & Plotting with R](../03-R/01-graphing-with-rstudio)
 
 ___
 
@@ -344,3 +348,4 @@ ___
 [Section Index](../../00-DataVisualization-LandingPage){: .btn  .btn--primary}
 [Previous](01-interactive-graphing-with-python){: .btn  .btn--primary}
 [Next](03-intro-to-dash-widgets){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

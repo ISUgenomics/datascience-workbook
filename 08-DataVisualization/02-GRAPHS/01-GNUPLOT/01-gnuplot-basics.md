@@ -10,8 +10,12 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [08. Data Visualization](../../00-DataVisualization-LandingPage.md) / [2. Introduction to Scientific Graphing](../01-introduction-to-scientific-graphing.md) / **2.1 Gnuplot – Creating Plots in the UNIX Shell**
 
-## Introduction to GNUPLOT
+---
+
+
+# Introduction
 
 Gnuplot is a command-line driven graphing utility available for Linux, Windows, and Mac. The tool provides full customization of the graph by specifying values for numerous parameters. When **run in a terminal**, it allows to change parameter values on the fly and immediately update the graph in the graphical interface, which automatically appears as an additional window. The optimized set of settings can then be copied into a **simple bash script** that can be run in a loop for multiple files or saved for future reuse. Gnuplot is a simple and robust terminal tool that allows you to quickly generate both **2D and 3D charts**.<br>
 I recommend this tool for everyday analytical work, where we need to preview analysis results, as well as for generating highly specialized charts of publication quality. Its important advantage is the ability to **automatically generate hundreds/thousands of charts** of a given type, if needed.
@@ -415,13 +419,18 @@ set terminal pngcairo size 1200,800 enhanced font 'Arial,14'
 
 ___
 # Further Reading
-* [Plotly-Dash: Data Processing & Interactive Plotting with Python](../02-PYTHON/01-interactive-graphing-with-python)
-* [RStudio: Data Processing & Plotting with R](../03-R/01-graphing-with-rstudio)
-
+<!--
+* [2.1.1 Gnuplot: Variables, Loops, Conditionals](02-gnuplot-variables-loops_conditionals)
+* [2.1.2 Gnuplot: Create Filled Curves](03-gnuplot-examples-filled_curves)
+-->
+* [2.2 Plotly-Dash – Data Processing & Interactive Plotting with Python](../02-PYTHON/01-interactive-graphing-with-python)
+* [2.3 RStudio – Data Processing & Plotting with R](../03-R/01-graphing-with-rstudio)
 
 ___
 
 [Homepage](../../../index.md){: .btn  .btn--primary}
 [Section Index](../../00-DataVisualization-LandingPage){: .btn  .btn--primary}
 [Previous](../01-introduction-to-scientific-graphing){: .btn  .btn--primary}
-[Next](02-gnuplot-examples-filled-curves){: .btn  .btn--primary}
+<!-- [Next](02-gnuplot-variables-loops_conditionals){: .btn  .btn--primary} -->
+[Next](../02-PYTHON/01-interactive-graphing-with-python){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}
