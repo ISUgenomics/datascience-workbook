@@ -584,7 +584,7 @@ header:
   <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
     <a href="07-DataParsing/01-FILE-ACCESS/04-0-remote-data-preview" style="color: #3f5a8a;">
-    Remote Data Preview without Downloading</a></td></tr>
+    Remote Data Preview <i style="color: #a9bbd1;">(without Downloading)</i></a></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;  
