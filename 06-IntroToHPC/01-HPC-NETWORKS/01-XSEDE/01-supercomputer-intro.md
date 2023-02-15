@@ -10,7 +10,12 @@ header:
 
 {% include toc %}
 
-# Introduction to XSEDE
+[DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../../00-IntroToHPC-LandingPage.md) / [1. Introduction to HPC infrastructure](../01-introduction-to-hpc-infrastructure.md) / **1.1 XSEDE Supercomputer**
+
+---
+
+
+# Introduction
 
 ## What is XSEDE?
 
@@ -71,3 +76,4 @@ ___
 [Section Index](../../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
 [Previous](../01-introduction-to-hpc-infrastructure){: .btn  .btn--primary}
 [Next](02-supercell-storage){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

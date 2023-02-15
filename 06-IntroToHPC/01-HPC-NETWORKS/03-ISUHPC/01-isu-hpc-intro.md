@@ -10,6 +10,13 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../../00-IntroToHPC-LandingPage.md) / [1. Introduction to HPC infrastructure](../01-introduction-to-hpc-infrastructure.md) / **1.3 ISU HPC**
+
+---
+
+
+# Introduction
+
 # HPC Clusters at ISU
 **High Performance Computing** (HPC) refers to a cluster of interconnected computers or servers used to perform complex computational tasks. HPC clusters can process large amounts of data in a short time and can handle large computationally intensive jobs. General information about HPC clusters available at Iowa State University can be found at the <a href="https://www.hpc.iastate.edu/" target="_blank">ISU HPC Website ⤴</a>. <br>
 
@@ -51,11 +58,11 @@ You need to answer yes to continue.
 | Feature | Condo | Nova |
 |--- | --- | ---- |
 Login node | @condo2017.its.iastate.edu | @nova.its.iastate.edu
-Data Transfer node | @condodtn.its.iastate.edu | @novadtn.its.iastate.edu 
+Data Transfer node | @condodtn.its.iastate.edu | @novadtn.its.iastate.edu
 Cores per node | 16/20/32/40 | 36/48/64/96
 Home directory space | 5 GB | 5 GB
 Workload Manager | SLURM | SLURM
-Partitions | <a href="https://www.hpc.iastate.edu/guides/condo-2017/queue-configuration" target="_blank">Partitions List ⤴</a> | <a href="https://www.hpc.iastate.edu/guides/nova/partition-configuration" target="_blank">Partitions List ⤴</a> 
+Partitions | <a href="https://www.hpc.iastate.edu/guides/condo-2017/queue-configuration" target="_blank">Partitions List ⤴</a> | <a href="https://www.hpc.iastate.edu/guides/nova/partition-configuration" target="_blank">Partitions List ⤴</a>
 
 <br>
 
@@ -63,10 +70,10 @@ Partitions | <a href="https://www.hpc.iastate.edu/guides/condo-2017/queue-config
 
 * Test your code/job on a small scale before submitting it to the cluster, if possible. This can help save time and resources as submitting a job often takes longer due to queue times and uses more resources. For example, you can use interactive nodes to find and fix errors before submitting a job.
 * Make sure your script is optimized for the cluster such that it uses the available resources efficiently.
-* Use proper documentation and version control such as Git to track changes and ease of reproducibility. 
+* Use proper documentation and version control such as Git to track changes and ease of reproducibility.
 * Manage your files appropriately on the cluster. Cleaning up unnecessary files and organising data/files is important.
 
-Also check out the <a href="https://datascience.101workbook.org/09-ProjectManagement/01-intro-to-project-management" target="_blank">Project Management ⤴</a> guide for additional tips. 
+Also check out the <a href="https://datascience.101workbook.org/09-ProjectManagement/01-intro-to-project-management" target="_blank">Project Management ⤴</a> guide for additional tips.
 <br>
 <br>
 
@@ -80,7 +87,7 @@ Also check out the <a href="https://datascience.101workbook.org/09-ProjectManage
 <br>
 
 # Explore hands-on tutorials
-Tutorials to get you started on different HPC Clusters are available in this workbook. 
+Tutorials to get you started on different HPC Clusters are available in this workbook.
 * <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/02-isu-hpc-condo-cluster" target="_blank">Condo Computing Cluster ⤴</a>
 * <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/03-isu-hpc-nova-cluster" target="_blank">Nova Computing Cluster ⤴</a>
 * <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/04-isu-hpc-lss-storage" target="_blank">Large Scale Storage ⤴</a>
@@ -93,9 +100,9 @@ Tutorials to get you started on different HPC Clusters are available in this wor
 # Guides provided by ISU
 ## General guides
 
-* <a href="https://www.hpc.iastate.edu/guides/introduction-to-hpc-clusters" target="_blank">Intro to HPC clusters ⤴</a> 
-* <a href="https://www.hpc.iastate.edu/guides/introduction-to-hpc-clusters" target="_blank">Intro to Condo cluster ⤴</a> 
-* <a href="https://www.hpc.iastate.edu/guides/nova" target="_blank">Intro to Nova cluster ⤴</a> 
+* <a href="https://www.hpc.iastate.edu/guides/introduction-to-hpc-clusters" target="_blank">Intro to HPC clusters ⤴</a>
+* <a href="https://www.hpc.iastate.edu/guides/introduction-to-hpc-clusters" target="_blank">Intro to Condo cluster ⤴</a>
+* <a href="https://www.hpc.iastate.edu/guides/nova" target="_blank">Intro to Nova cluster ⤴</a>
 * <a href="https://www.hpc.iastate.edu/guides/open-ondemand" target="_blank">Nova OnDemand ⤴</a>
 * <a href="https://www.hpc.iastate.edu/guides/virtual-environments" target="_blank">Virtual Environments ⤴</a>
 * <a href="https://www.hpc.iastate.edu/guides/sample-job-scripts" target="_blank">Sample Job Scripts ⤴</a>
@@ -110,7 +117,7 @@ Tutorials to get you started on different HPC Clusters are available in this wor
 
 ## Additional guides
 
-* <a href="https://www.hpc.iastate.edu/guides/unix-introduction" target="_blank">Unix Introduction ⤴</a> 
+* <a href="https://www.hpc.iastate.edu/guides/unix-introduction" target="_blank">Unix Introduction ⤴</a>
 * <a href="https://www.hpc.iastate.edu/guides/scslab" target="_blank">SCSLab ⤴</a>
 * <a href="https://www.hpc.iastate.edu/guides/using-matlab-parallel-server" target="_blank">Matlab Parallel Server ⤴</a>
 * <a href="https://www.hpc.iastate.edu/guides/using-ddt-parallel-debugger--map-profiler-and-performance-reports" target="_blank">ARM DDT Parallel Debugger, MAP profiler and Performance Reports ⤴</a>
@@ -122,9 +129,16 @@ Tutorials to get you started on different HPC Clusters are available in this wor
 
 ___
 # Further Reading
-* [Condo Computing Cluster](02-isu-hpc-condo-cluster)
-* [Nova Computing Cluster](03-isu-hpc-nova-cluster)
-* [LSS Storage](04-isu-hpc-lss-storage)
+* [1.3.1 Condo Computing Cluster](02-isu-hpc-condo-cluster)
+* [1.3.2 Nova Computing Cluster](03-isu-hpc-nova-cluster)
+* [1.3.3 LSS Storage](04-isu-hpc-lss-storage)
+
+* [2. Remote Access to HPC Resources](../02-FILE-ACCESS/01-remote-data-access)
+* [3. Setting up Your Home Directory for Data Analysis](../03-HOME-DIRECTORY/00-setting-up-home-directory)
+* [4. Software Available on HPC](../04-SOFTWARE/01-software-available-on-HPC)
+* [5. Introduction to Job Scheduling](../05-JOB-QUEUE/00-introduction-to-job-scheduling)
+* [6. Introduction to GNU Parallel](../06-PARALLEL/01-introduction-to-gnu-parallel)
+* [7. Introduction to Containers](../07-CONTAINERS/00-introduction-to-containers)
 
 ___
 
@@ -132,3 +146,4 @@ ___
 [Section Index](../../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
 [Previous](../02-SCINET/04-scinet-juno-storage){: .btn  .btn--primary}
 [Next](02-isu-hpc-condo-cluster){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

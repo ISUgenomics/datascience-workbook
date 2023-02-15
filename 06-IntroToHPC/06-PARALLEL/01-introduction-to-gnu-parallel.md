@@ -11,6 +11,10 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../00-IntroToHPC-LandingPage.md) / **6. Introduction to GNU Parallel**
+
+---
+
 
 # Introduction
 
@@ -427,11 +431,12 @@ See [Running NCBI-BLAST jobs in parallel](https://bioinformaticsworkbook.org/dat
 
 ___
 # Further Reading
-* [Introduction to Containers](../07-CONTAINERS/00-introduction-to-containers)
+* [7. Introduction to Containers](../07-CONTAINERS/00-introduction-to-containers)
 
 ___
 
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
-[Previous](../05-JOB-QUEUE/02-PBS/04-pbs-2-tutorial-submitting-dependency){: .btn  .btn--primary}
+[Previous](../05-JOB-QUEUE/02-PBS/02-pbs-cheatsheet){: .btn  .btn--primary}
 [Next](../07-CONTAINERS/00-introduction-to-containers){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

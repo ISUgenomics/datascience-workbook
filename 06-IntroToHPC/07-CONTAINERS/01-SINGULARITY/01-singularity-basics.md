@@ -10,7 +10,12 @@ header:
 
 {% include toc %}
 
-# Introduction to Singularity Containers
+[DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../../00-IntroToHPC-LandingPage.md) / [7. Introduction to Containers](../00-introduction-to-containers.md) / **7.1 Singularity**
+
+---
+
+
+# Introduction
 
 ## What are Containers?
 
@@ -59,8 +64,10 @@ The uri is the important bit of information you will need to download this image
 ```
 singularity pull shub://ISUGIFsingularity/utilities:1.0.1
 ```
+
 If you get a **CERTIFICATE_VERIFY_FAILED:** error then you can set your python certificate verification to off.
-```export PYTHONHTTPSVERIFY=0```
+
+`export PYTHONHTTPSVERIFY=0`
 
 #### Direct execution of Singularity containers
 Containers often have runscripts that will provide you with useful information on how to use the container. The run scripts get initiated by executing the image as follows:
@@ -116,9 +123,9 @@ If you want to explore containers on your local Mac you canfFollow the direction
 
 Note: You may need to issue the following command if you update your operating system or get a new computer.
 
-```
+
 Note you may need to allow Oracle permission via your security settings if you are on a mac.  See [this website](https://apple.stackexchange.com/questions/301303/virtualbox-5-1-28-fails-to-install-on-macos-10-13-due-to-kext-security)
-```
+
 
 #### Starting a singularity Virtual Machine (VM) instance on the Mac
 
@@ -195,11 +202,11 @@ to execute the script via the singularity container.
 
 ___
 # Further Reading
-* [Tutorial: Creating Containers using Singularity](02-singularity-1-tutorial-creating-containers)
-* [Tutorial: Modifying Existing Containers](03-singularity-2-tutorial-modyfying-containers)
-* [Tutorial: Singularity on your Mac via Vagrant](04-singularity-3-tutorial-vagrant)
+* [7.1.1 Creating Containers using Singularity](02-singularity-1-tutorial-creating-containers)
+* [7.1.2 Modifying Existing Containers](03-singularity-2-tutorial-modyfying-containers)
+* [7.1.3 Singularity on your Mac via Vagrant](04-singularity-3-tutorial-vagrant)
 
-* [Docker](../02-DOCKER/01-docker-basics)
+* [7.2 Docker](../02-DOCKER/01-docker-basics)
 
 ___
 
@@ -207,3 +214,4 @@ ___
 [Section Index](../../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
 [Previous](../00-introduction-to-containers){: .btn  .btn--primary}
 [Next](02-singularity-1-tutorial-creating-containers){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

@@ -10,8 +10,12 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../00-IntroToHPC-LandingPage.md) / [4. Software Available on HPC](01-software-available-on-HPC.md) / **4.3 Installing Custom Programs in User Space**
 
-# Overview
+---
+
+
+# Introduction
 
 Installing programs on a high-performance computing (HPC) system can be different from installing software on a personal computer due to the complex nature of HPC systems and limited privileges for regular users. <br>
 If you need a **specific software package**, first check whether this software is already pre-installed on HPC. Typically, compilers, programming languages, libraries and frameworks, basic visualization software, text editors, and job schedulers are all available. What's more, popular software for specialized analysis (*such as `blast` for bioinformatics*) is often not only available but also regularly upgraded to the latest release. See tutorial <a href="https://datascience.101workbook.org/06-IntroToHPC/04-SOFTWARE/01-software-available-on-HPC#how-to-find-available-software" target="_blank">How to find available software?  ⤴</a> to learn more about:
@@ -557,9 +561,9 @@ Now the `.jar` files can be simply called as `'programname` (once module is load
 
 ___
 # Further Reading
-* [Introduction to Job Scheduling](../05-JOB-QUEUE/00-introduction-to-job-scheduling)
-* [Introduction to GNU Parallel](../06-PARALLEL/01-introduction-to-gnu-parallel)
-* [Introduction to Containers](../07-CONTAINERS/00-introduction-to-containers)
+* [5. Introduction to Job Scheduling](../05-JOB-QUEUE/00-introduction-to-job-scheduling)
+* [6. Introduction to GNU Parallel](../06-PARALLEL/01-introduction-to-gnu-parallel)
+* [7. Introduction to Containers](../07-CONTAINERS/00-introduction-to-containers)
 
 ___
 
@@ -567,3 +571,4 @@ ___
 [Section Index](../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
 [Previous](03-accessing-package-manager){: .btn  .btn--primary}
 [Next](../05-JOB-QUEUE/00-introduction-to-job-scheduling){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

@@ -11,7 +11,14 @@ header:
 
 {% include toc %}
 
-# Introduction to SLURM: Simple Linux Utility for Resource Management
+[DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../../00-IntroToHPC-LandingPage.md) / [5. Introduction to Job Scheduling](../00-introduction-to-job-scheduling.md) / [5.1 SLURM: Basics of Workload Manager](01-slurm-basics.md) / **5.1.1 Introduction to SLURM**
+
+---
+
+
+# Introduction
+
+**Introduction to SLURM: Simple Linux Utility for Resource Management**
 
 * Open source fault-tolerant, and highly scalable cluster management and job scheduling system for large and small Linux clusters.
 * HPC systems admins use this system for smooth resource distribution among various users. A user can submit jobs with specific resources to the centralized manager.
@@ -495,17 +502,19 @@ alias sacct='sacct --format JobID,Partition,Timelimit,Start,Elapsed,NodeList%20,
 
 ___
 # Further Reading
-* [SLURM Cheatsheet](02-slurm-cheatsheet)
-* [Tutorial: Creating SLURM Job Submission Scripts](03-slurm-1-tutorial-job-submission)
-* [Tutorial: Submitting Dependency Jobs using SLURM](04-slurm-2-tutorial-submitting-dependency-jobs)
+* [5.1.2 Creating SLURM Job Submission Scripts](03-slurm-1-tutorial-job-submission)
+* [5.1.3 Submitting Dependency Jobs using SLURM](04-slurm-2-tutorial-submitting-dependency-jobs)
+* [SLURM Commands CheatSheet](02-slurm-cheatsheet)
 
-* [PBS: Portable Batch System](../02-PBS/01-pbs-basics)
-* [Introduction to GNU Parallel](../../06-PARALLEL/01-introduction-to-gnu-parallel)
-* [Introduction to Containers](../../07-CONTAINERS/00-introduction-to-containers)
+* [5.2 PBS: Portable Batch System](../02-PBS/01-pbs-basics)
+
+* [6. Introduction to GNU Parallel](../../06-PARALLEL/01-introduction-to-gnu-parallel)
+* [7. Introduction to Containers](../../07-CONTAINERS/00-introduction-to-containers)
 
 ___
 
 [Homepage](../../../index.md){: .btn  .btn--primary}
 [Section Index](../../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
-[Previous](01-slurm-introduction){: .btn  .btn--primary}
-[Next](02-slurm-cheatsheet){: .btn  .btn--primary}
+[Previous](01-slurm-basics){: .btn  .btn--primary}
+[Next](03-slurm-1-tutorial-job-submission){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

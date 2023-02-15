@@ -10,7 +10,12 @@ header:
 
 {% include toc %}
 
-# SLURM Basics
+[DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../../00-IntroToHPC-LandingPage.md) / [5. Introduction to Job Scheduling](../00-introduction-to-job-scheduling.md) / **5.1 SLURM: Basics of Workload Manager**
+
+---
+
+
+# Introduction
 
 
 ### SLURM: Simple Linux Utility for Resource Management
@@ -125,14 +130,15 @@ Interactive sessions are very helpful when you need more computing power than yo
 
 ___
 # Further Reading
-* [SLURM Introduction](01-slurm-introduction)
-* [SLURM Cheatsheet](02-slurm-cheatsheet)
-* [Tutorial: Creating SLURM Job Submission Scripts](03-slurm-1-tutorial-job-submission)
-* [Tutorial: Submitting Dependency Jobs using SLURM](04-slurm-2-tutorial-submitting-dependency-jobs)
+* [5.1.1 Introduction to SLURM](01-slurm-introduction)
+* [5.1.2 Creating SLURM Job Submission Scripts](03-slurm-1-tutorial-job-submission)
+* [5.1.3 Submitting Dependency Jobs using SLURM](04-slurm-2-tutorial-submitting-dependency-jobs)
+* [SLURM Commands CheatSheet](02-slurm-cheatsheet)
 
-* [PBS: Portable Batch System](../02-PBS/01-pbs-basics)
-* [Introduction to GNU Parallel](../../06-PARALLEL/01-introduction-to-gnu-parallel)
-* [Introduction to Containers](../../07-CONTAINERS/00-introduction-to-containers)
+* [5.2 PBS: Portable Batch System](../02-PBS/01-pbs-basics)
+
+* [6. Introduction to GNU Parallel](../../06-PARALLEL/01-introduction-to-gnu-parallel)
+* [7. Introduction to Containers](../../07-CONTAINERS/00-introduction-to-containers)
 
 ___
 
@@ -140,3 +146,4 @@ ___
 [Section Index](../../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
 [Previous](../00-introduction-to-job-scheduling){: .btn  .btn--primary}
 [Next](01-slurm-introduction){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

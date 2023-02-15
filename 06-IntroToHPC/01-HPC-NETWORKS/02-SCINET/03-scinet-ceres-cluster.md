@@ -11,7 +11,14 @@ header:
 
 {% include toc %}
 
-# Introduction to the Ceres High-Performance Computing System Environment
+[DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../../00-IntroToHPC-LandingPage.md) / [1. Introduction to HPC infrastructure](../01-introduction-to-hpc-infrastructure.md) / [1.2 SCINet Network](01-scinet-network-intro.md) / **1.2.2 Ceres Computing Cluster**
+
+---
+
+
+# Introduction
+
+**Introduction to the Ceres High-Performance Computing System Environment**
 
 This page was modified from Session 2 of the SCINet Geospatial Workshop 2020. Ceres HPC Resources have been used to publish scientific papers:
 
@@ -1088,9 +1095,9 @@ You should see a stdout and stderr file for each job in the array of jobs that w
 
 ___
 # Further Reading
-* [Juno Storage](04-scinet-juno-storage)
+* [1.2.3 Juno Storage](04-scinet-juno-storage)
 
-* [ISU HPC](../03-ISUHPC/01-isu-hpc-intro)
+* [1.3 ISU HPC](../03-ISUHPC/01-isu-hpc-intro)
 
 
 ___
@@ -1099,3 +1106,4 @@ ___
 [Section Index](../../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
 [Previous](02-scinet-atlas-cluster){: .btn  .btn--primary}
 [Next](04-scinet-juno-storage){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

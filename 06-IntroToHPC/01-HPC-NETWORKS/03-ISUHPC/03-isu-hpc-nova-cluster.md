@@ -10,7 +10,14 @@ header:
 
 {% include toc %}
 
-Nodes and storage can be purchased on the Nova cluster for use by the researchers at ISU. For details about the Nova cluster, <a href="https://www.hpc.iastate.edu/guides/nova" target="_blank">click here.</a> 
+[DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../../00-IntroToHPC-LandingPage.md) / [1. Introduction to HPC infrastructure](../01-introduction-to-hpc-infrastructure.md) / [1.3 ISU HPC](01-isu-hpc-intro.md) / **1.3.2 Nova Computing Cluster**
+
+---
+
+
+# Introduction
+
+Nodes and storage can be purchased on the Nova cluster for use by the researchers at ISU. For details about the Nova cluster, <a href="https://www.hpc.iastate.edu/guides/nova" target="_blank">click here.</a>
 <br>
 <br>
 
@@ -47,7 +54,7 @@ Once logged in you can start using Nova cluster and submit jobs using <a href="h
 
 #SBATCH --time=01:00:00   # walltime limit (HH:MM:SS)
 #SBATCH --nodes=1   # number of nodes
-#SBATCH --ntasks-per-node=36   # 36 processor core(s) per node 
+#SBATCH --ntasks-per-node=36   # 36 processor core(s) per node
 #SBATCH --mail-user=netid@iastate.edu
 #SBATCH --mail-type=begin
 #SBATCH --mail-type=end
@@ -59,8 +66,8 @@ your code/commands
 
 Copy/paste the above job script into a text file, add your modules and commands, and submit with the following command:
 
-``` 
-sbatch filename 
+```
+sbatch filename
 ```
 
 Check your queued jobs:
@@ -80,7 +87,14 @@ Check out the following:
 
 ___
 # Further Reading
-* [LSS Storage](04-isu-hpc-lss-storage)
+* [1.3.3 LSS Storage](04-isu-hpc-lss-storage)
+
+* [2. Remote Access to HPC Resources](../02-FILE-ACCESS/01-remote-data-access)
+* [3. Setting up Your Home Directory for Data Analysis](../03-HOME-DIRECTORY/00-setting-up-home-directory)
+* [4. Software Available on HPC](../04-SOFTWARE/01-software-available-on-HPC)
+* [5. Introduction to Job Scheduling](../05-JOB-QUEUE/00-introduction-to-job-scheduling)
+* [6. Introduction to GNU Parallel](../06-PARALLEL/01-introduction-to-gnu-parallel)
+* [7. Introduction to Containers](../07-CONTAINERS/00-introduction-to-containers)
 
 ___
 
@@ -88,3 +102,4 @@ ___
 [Section Index](../../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
 [Previous](02-isu-hpc-condo-cluster){: .btn  .btn--primary}
 [Next](04-isu-hpc-lss-storage){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

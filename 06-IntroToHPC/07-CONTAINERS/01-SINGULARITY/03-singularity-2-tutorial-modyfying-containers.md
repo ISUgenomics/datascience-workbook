@@ -10,6 +10,13 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../../00-IntroToHPC-LandingPage.md) / [7. Introduction to Containers](../00-introduction-to-containers.md) / [7.1 Singularity](01-singularity-basics.md) / **7.1.2 Modifying Existing Containers**
+
+---
+
+
+# Introduction
+
 # Modifying Existing Containers
 
 First off, it is important that modifying existing containers should only be done to avoid having to rebuild a container from scratch while optimizing the recipe file.  The ultimate goal is for the container to be fully reproducible from the recipe file.  However, there are some containers that can take 2 hours to build and if you forgot to add a folder to the PATH directory or other similarly simple mistakes, 2 hours is a long time to wait to verify the container is working properly.
@@ -80,9 +87,9 @@ Once you have made all the changes and your image is working the way you want th
 
 ___
 # Further Reading
-* [Tutorial: Singularity on your Mac via Vagrant](04-singularity-3-tutorial-vagrant)
+* [7.1.3 Singularity on your Mac via Vagrant](04-singularity-3-tutorial-vagrant)
 
-* [Docker](../02-DOCKER/01-docker-basics)
+* [7.2 Docker](../02-DOCKER/01-docker-basics)
 
 ___
 
@@ -90,3 +97,4 @@ ___
 [Section Index](../../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
 [Previous](02-singularity-1-tutorial-creating-containers){: .btn  .btn--primary}
 [Next](04-singularity-3-tutorial-vagrant){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

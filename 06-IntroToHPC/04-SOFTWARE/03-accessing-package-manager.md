@@ -10,8 +10,12 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../00-IntroToHPC-LandingPage.md) / [4. Software Available on HPC](01-software-available-on-HPC.md) / **4.2 Accessing Software via Package Manager**
 
-# Overview
+---
+
+
+# Introduction
 
 A package manager is a tool for managing software packages and their dependencies on a computer system. On HPC systems, package managers are commonly used to install, update, and remove software packages, as well as manage dependencies between packages.
 
@@ -123,11 +127,11 @@ If you don't know how to use the program, you can always preview the available o
 
 ___
 # Further Reading
-* [Installing Custom Programs in User Space](04-installing-custom-programs)
+* [4.3 Installing Custom Programs in User Space](04-installing-custom-programs)
 
-* [Introduction to Job Scheduling](../05-JOB-QUEUE/00-introduction-to-job-scheduling)
-* [Introduction to GNU Parallel](../06-PARALLEL/01-introduction-to-gnu-parallel)
-* [Introduction to Containers](../07-CONTAINERS/00-introduction-to-containers)
+* [5. Introduction to Job Scheduling](../05-JOB-QUEUE/00-introduction-to-job-scheduling)
+* [6. Introduction to GNU Parallel](../06-PARALLEL/01-introduction-to-gnu-parallel)
+* [7. Introduction to Containers](../07-CONTAINERS/00-introduction-to-containers)
 
 ___
 
@@ -135,3 +139,4 @@ ___
 [Section Index](../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
 [Previous](02-accessing-preinstalled-modules){: .btn  .btn--primary}
 [Next](04-installing-custom-programs){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

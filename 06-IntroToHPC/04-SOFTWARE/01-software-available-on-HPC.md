@@ -10,6 +10,13 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../00-IntroToHPC-LandingPage.md) / **4. Software Available on HPC**
+
+---
+
+
+# Introduction
+
 # Software on HPC - overview
 
 The software available on a high-performance computing (HPC) system can vary depending on the specific system and its intended use. However, some common types of software that are typically available on HPC systems include:
@@ -306,17 +313,18 @@ Otherwise, go to step 3.
 
 ___
 # Further Reading
-* [Accessing pre-Installed Modules](02-accessing-preinstalled-modules)
-* [Accessing Software using Package Manager](03-accessing-package-manager)
-* [Installing Custom Programs in User Space](04-installing-custom-programs)
+* [4.1 Accessing pre-Installed Modules](02-accessing-preinstalled-modules)
+* [4.2 Accessing Software using Package Manager](03-accessing-package-manager)
+* [4.3 Installing Custom Programs in User Space](04-installing-custom-programs)
 
-* [Introduction to Job Scheduling](../05-JOB-QUEUE/00-introduction-to-job-scheduling)
-* [Introduction to GNU Parallel](../06-PARALLEL/01-introduction-to-gnu-parallel)
-* [Introduction to Containers](../07-CONTAINERS/00-introduction-to-containers)
+* [5. Introduction to Job Scheduling](../05-JOB-QUEUE/00-introduction-to-job-scheduling)
+* [6. Introduction to GNU Parallel](../06-PARALLEL/01-introduction-to-gnu-parallel)
+* [7. Introduction to Containers](../07-CONTAINERS/00-introduction-to-containers)
 
 ___
 
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
-[Previous](../03-FILE-ACCESS/01-remote-data-access){: .btn  .btn--primary}
+[Previous](../03-HOME-DIRECTORY/01-bashrc){: .btn  .btn--primary}
 [Next](02-accessing-preinstalled-modules){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

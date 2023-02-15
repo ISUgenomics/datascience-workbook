@@ -10,6 +10,11 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../00-IntroToHPC-LandingPage.md) / **1. Introduction to HPC infrastructure**
+
+---
+
+
 # Introduction
 
 High-performance computing (**HPC**) is a type of **computing infrastructure** that involves using specialized systems and software **to solve complex problems that require a lot of computing power**. The tasks are often too large or too complex to be solved on a single computer or with traditional computing methods. To tackle these problems, HPC systems use advanced techniques such as **parallel processing**, which involves dividing a computational task into smaller pieces and solving them simultaneously on different computers or processors.
@@ -129,21 +134,21 @@ HPC systems are also used extensively in artificial intelligence (AI) and machin
 
 ___
 # Further Reading
-* [XSEDE Supercomputer](01-XSEDE/01-supercomputer-intro)
-* [SCINet Network](02-SCINET/01-scient-network-intro)
-* [ISU HPC](03-ISUHPC/01-isu-hpc-intro)
+* [1.1 XSEDE Supercomputer](01-XSEDE/01-supercomputer-intro)
+* [1.2 SCINet Network](02-SCINET/01-scient-network-intro)
+* [1.3 ISU HPC](03-ISUHPC/01-isu-hpc-intro)
 
-* [SSH: Secure Shell Connection](../02-SSH/01-secure-shell-connection)
-* [Remote Data Access](../03-FILE-ACCESS/01-remote-data-acces)
-* [Software Available on HPC](../04-SOFTWARE/01-software-available-on-HPC)
-* [Introduction to Job Scheduling](../05-JOB-QUEUE/00-introduction-to-job-scheduling)
-* [Introduction to GNU Parallel](../06-PARALLEL/01-introduction-to-gnu-parallel)
-* [Introduction to Containers](../07-CONTAINERS/00-introduction-to-containers)
+* [2. Remote Access to HPC Resources](../02-FILE-ACCESS/01-remote-data-access)
+* [3. Setting up Your Home Directory for Data Analysis](../03-HOME-DIRECTORY/00-setting-up-home-directory)
+* [4. Software Available on HPC](../04-SOFTWARE/01-software-available-on-HPC)
+* [5. Introduction to Job Scheduling](../05-JOB-QUEUE/00-introduction-to-job-scheduling)
+* [6. Introduction to GNU Parallel](../06-PARALLEL/01-introduction-to-gnu-parallel)
+* [7. Introduction to Containers](../07-CONTAINERS/00-introduction-to-containers)
 
 
 ___
 
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
-[Previous](../00-HOME-DIRECTORY/01-bashrc){: .btn  .btn--primary}
 [Next](01-XSEDE/01-supercomputer-intro){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

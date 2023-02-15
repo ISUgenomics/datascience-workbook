@@ -10,6 +10,12 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../../00-IntroToHPC-LandingPage.md) / [1. Introduction to HPC infrastructure](../01-introduction-to-hpc-infrastructure.md) / [1.2 SCINet Network](01-scinet-network-intro.md) / **1.2.1 Atlas Computing Cluster**
+
+---
+
+
+# Introduction
 
 # Atlas computing cluster
 
@@ -359,10 +365,10 @@ Follow the step-by-step <a href="https://scinet.usda.gov/guides/data/datatransfe
 
 ___
 # Further Reading
-* [Ceres Computing Cluster](03-scinet-ceres-cluster)
-* [Juno Storage](04-scinet-juno-storage)
+* [1.2.2 Ceres Computing Cluster](03-scinet-ceres-cluster)
+* [1.2.3 Juno Storage](04-scinet-juno-storage)
 
-* [ISU HPC](../03-ISUHPC/01-isu-hpc-intro)
+* [1.3 ISU HPC](../03-ISUHPC/01-isu-hpc-intro)
 
 
 ___
@@ -371,3 +377,4 @@ ___
 [Section Index](../../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
 [Previous](01-scient-network-intro){: .btn  .btn--primary}
 [Next](03-scinet-ceres-cluster){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}
