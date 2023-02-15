@@ -1,5 +1,5 @@
 ---
-title: "09 |  Project Management"
+title: "09  Project Management"
 layout: single
 author: Andrew Severin
 author_profile: true

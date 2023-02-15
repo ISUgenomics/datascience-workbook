@@ -1,5 +1,5 @@
 ---
-title: "05 |  Introduction to Programming"
+title: "05  Introduction to Programming"
 layout: single
 author: Aleksandra Badaczewska
 author_profile: true

@@ -1,5 +1,5 @@
 ---
-title: "02 |  Introduction to Command Line"
+title: "02  Introduction to Command Line"
 layout: single
 author: Aleksandra Badaczewska
 author_profile: true
