@@ -781,7 +781,7 @@ header:
 
   <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center; width: 130px;">INTRO</td>
     <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b>
-    <a href="09-ProjectManagement/01-SOURCE-CODE/01-storage-version-control" style="color: #3f5a8a;">
+    <a href="09-ProjectManagement/01-SOURCE-CODE/01-storage-version-control" style="color: #24376b;">
     Storage & Version Control</a></b></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
@@ -826,7 +826,7 @@ header:
 
   <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center; width: 130px;">INTRO</td>
     <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b>
-    <a href="09-ProjectManagement/03-COMMUNICATION/00-collaboration-communication" style="color: #3f5a8a;">
+    <a href="09-ProjectManagement/03-COMMUNICATION/00-collaboration-communication" style="color: #24376b;">
     Collaboration & Communication</a></b></td></tr>
 
   <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
@@ -841,7 +841,7 @@ header:
 
   <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center; width: 130px;">INTRO</td>
     <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b>
-    <a href="09-ProjectManagement/04-PRODUCTIVITY/00-resources-productivity" style="color: #3f5a8a;">
+    <a href="09-ProjectManagement/04-PRODUCTIVITY/00-resources-productivity" style="color: #24376b;">
     Resource Management & Productivity</a></b></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
