@@ -1,5 +1,5 @@
 ---
-title: "File Transfer using SRA Toolkit"
+title: "Remote Data Download"
 layout: single
 author:
 author_profile: false
@@ -14,6 +14,7 @@ header:
 
 ---
 
+## <span style="color: #ff3870;">New content coming soon!</span>
 
 # Introduction
 
