@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Programming"
+title: "05. Introduction to Programming"
 layout: single
 author: Aleksandra Badaczewska
 author_profile: true
@@ -16,9 +16,19 @@ With some knowledge of scripting and algorithm design, you can easily encapsulat
 ### **<a href="01-ALGORITHM/01-basics-of-algorithm-structure" style="color: #24376b;">1. Basics of Algorithm Structure</a>**
 
 ### **<a href="02-BASH/01-introduction-to-bash-scripting" style="color: #24376b;">2. Introduction to Bash Scripting</a>**
+<!--
+* <a href="02-BASH/02-unix-work-on-multiple-files" style="color: #3f5a8a;">2.1 Process multiple files in Unix</a>
+* <a href="02-BASH/03-unix-intro-to-regex" style="color: #3f5a8a;">2.2 Introduction to regular expressions in Unix</a>
+-->
 
-### **<a href="03-PYTHON/01-introduction-to-python" style="color: #24376b;">3. Introduction to Python programming</a>**
-* <a href="03-PYTHON/02-Python-setup" style="color: #3f5a8a;">Tutorial: Python Setup</a>
+### **<a href="03-PYTHON/01-introduction-to-python" style="color: #24376b;">3. Introduction to Python Programming</a>**
+* <a href="03-PYTHON/02-Python-setup" style="color: #3f5a8a;">3.1 Python Setup</a>
+* <a href="03-PYTHON/03-tutorial-read-write-files" style="color: #3f5a8a;">3.2 Read and Write Data Files</a>
+* <a href="03-PYTHON/04-tutorial-python-manage-data-json-string" style="color: #3f5a8a;">3.3 JSON Module - Encoding & Decoding JSON Data</a>
+* <a href="03-PYTHON/05-tutorial-python-round-abs-data-math-module" style="color: #3f5a8a;">3.4 Math Module - Various Mathematical Functions</a>
+* <a href="03-PYTHON/06-tutorial-python-data-manipulation-pandas" style="color: #3f5a8a;">3.5 Pandas Library - Data Structure Manipulation Tool</a>
+* <a href="03-PYTHON/07-tutorial-python-array-manipulation-numpy" style="color: #3f5a8a;">3.6 Numpy Library - Multi-Dimensional Arrays Parser</a>
+* <a href="03-PYTHON/08-tutorial-python-apply-statistics-scipy" style="color: #3f5a8a;">3.7 SciPy Library - Algorithms for Scientific Computing</a>
 
 ### **<a href="04-R/01-introduction-to-R" style="color: #24376b;">4. Introduction to R programming</a>**
 
