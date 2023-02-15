@@ -1,5 +1,5 @@
 ---
-title: "Storage & Version Control of the Project"
+title: "Online Hosting Platforms for GIT Repositories"
 layout: single
 author:
 author_profile: false
