@@ -10,6 +10,13 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [01. Introduction to Data Science](00-IntroToDataScience-LandingPage.md) / [2. Applications of Computational Science](02-computational-science-applications.md) / **2.1 Computational Biology**
+
+---
+
+
+# Introduction
+
 Computational biology, also known as **bioinformatics**, is the intersection of biology, computer science, and information technology. It involves the use of computational tools and techniques to analyze and interpret large amounts of biological data quickly and accurately. Types of the processed data include DNA sequences, protein structures, and gene expression patterns. However, this data is often too complex and voluminous to be analyzed by hand, and this is where computational biology comes in. It enables developing algorithms and software tools that can handle biological data at a scale that would be impossible for humans to do manually.
 
 
@@ -56,8 +63,8 @@ One effective way to learn about sequencing bioinformatics is to study examples 
 
 ___
 # Further Reading
-* [Geospatial Analytics](02B-geospatial-analytics)
-* [Machine Learning Outlook](02C-machine-learning)
+* [2.2 Geospatial Analytics](02B-geospatial-analytics)
+* [2.3 Machine Learning Outlook](02C-machine-learning)
 
 ___
 
@@ -65,3 +72,4 @@ ___
 [Section Index](00-IntroToDataScience-LandingPage){: .btn  .btn--primary}
 [Previous](02-computational-science-applications){: .btn  .btn--primary}
 [Next](02B-geospatial-analytics){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

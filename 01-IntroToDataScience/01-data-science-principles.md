@@ -10,6 +10,12 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [01. Introduction to Data Science](00-IntroToDataScience-LandingPage.md) / **1. Data Science Principles**
+
+---
+
+
+# Introduction
 
 ## 1. What is Data?
 
@@ -128,13 +134,14 @@ Learn more details from [Wikipedia: Data in Use](https://en.wikipedia.org/wiki/D
 
 ___
 # Further Reading
-* [Applications of Computational Science](02-computational-science-applications)
-  * [Computational Biology](02A-computational-biology)
-  * [Geospatial Analytics](02B-geospatial-analytics)
-  * [Machine Learning Outlook](02C-machine-learning)
+* [2. Applications of Computational Science](02-computational-science-applications)
+  * [2.1 Computational Biology](02A-computational-biology)
+  * [2.2 Geospatial Analytics](02B-geospatial-analytics)
+  * [2.3 Machine Learning Outlook](02C-machine-learning)
 
 ___
 
 [Homepage](../index.md){: .btn  .btn--primary}
 [Section Index](00-IntroToDataScience-LandingPage){: .btn  .btn--primary}
 [Next](02-computational-science-applications){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

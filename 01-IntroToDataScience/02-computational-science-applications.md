@@ -10,6 +10,13 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [01. Introduction to Data Science](00-IntroToDataScience-LandingPage.md) / **2. Applications of Computational Science**
+
+---
+
+
+# Introduction
+
 Computational Science is a field that involves **using computers and mathematical models to solve complex problems**. It plays a vital role in many areas of science, engineering, industry, and everyday life.
 
 
@@ -69,9 +76,9 @@ The Data Science Workbook provides an overview of key concepts in Data Science a
 
 ___
 # Further Reading
-* [Computational Biology](02A-computational-biology)
-* [Geospatial Analytics](02B-geospatial-analytics)
-* [Machine Learning Outlook](02C-machine-learning)
+* [2.1 Computational Biology](02A-computational-biology)
+* [2.2 Geospatial Analytics](02B-geospatial-analytics)
+* [2.3 Machine Learning Outlook](02C-machine-learning)
 
 ___
 
@@ -79,3 +86,4 @@ ___
 [Section Index](00-IntroToDataScience-LandingPage){: .btn  .btn--primary}
 [Previous](01-data-science-principles){: .btn  .btn--primary}
 [Next](02A-computational-biology){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

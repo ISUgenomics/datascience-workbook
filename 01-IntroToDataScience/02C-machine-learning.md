@@ -10,6 +10,13 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [01. Introduction to Data Science](00-IntroToDataScience-LandingPage.md) / [2. Applications of Computational Science](02-computational-science-applications.md) / **2.3 Machine Learning Outlook**
+
+---
+
+
+# Introduction
+
 **Machine learning** is a subfield of artificial intelligence that involves the use of **algorithms to automatically learn patterns in data** and make decisions or predictions based on that data. In other words, machine learning algorithms are designed to improve their performance on a specific task as they are exposed to more data.
 
 
@@ -80,3 +87,5 @@ ___
 [Homepage](../index.md){: .btn  .btn--primary}
 [Section Index](00-IntroToDataScience-LandingPage){: .btn  .btn--primary}
 [Previous](02B-geospatial-analytics){: .btn  .btn--primary}
+[Next](../02-IntroToCommandLine/00-IntroToCommandLine-LandingPage){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

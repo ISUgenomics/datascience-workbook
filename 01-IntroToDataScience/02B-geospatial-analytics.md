@@ -10,6 +10,13 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [01. Introduction to Data Science](00-IntroToDataScience-LandingPage.md) / [2. Applications of Computational Science](02-computational-science-applications.md) / **2.2 Geospatial Analytics**
+
+---
+
+
+# Introduction
+
 Geospatial analysis is the process of analyzing, manipulating, and visualizing geographic data in order to better understand patterns, trends, and relationships within a given area on the earth. It **uses geographic information**, such as satellite imagery, GPS (location) data, census data, and reference maps. This data is then used **to create maps, visualizations, and photogrammetry**. It is a powerful technique for understanding and solving complex problems related to spatial data in geography, agriculture, and population studies.
 
 
@@ -46,7 +53,7 @@ One effective way to learn about geospatial analysis is to study examples of rea
 
 ___
 # Further Reading
-* [Machine Learning Outlook](02C-machine-learning)
+* [2.3 Machine Learning Outlook](02C-machine-learning)
 
 ___
 
@@ -54,3 +61,4 @@ ___
 [Section Index](00-IntroToDataScience-LandingPage){: .btn  .btn--primary}
 [Previous](02A-computational-biology){: .btn  .btn--primary}
 [Next](02C-machine-learning){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}
