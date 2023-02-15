@@ -388,7 +388,7 @@ header:
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
-    <a href="06-IntroToHPC/02-FILE-ACCESS/02-virtual-private-network.md" style="color: #24376b;">
+    <a href="06-IntroToHPC/02-FILE-ACCESS/02-virtual-private-network" style="color: #24376b;">
     Virtual Private Network (VPN) Connection <i style="color: #a9bbd1;">(command line)</i></a></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
@@ -403,7 +403,7 @@ header:
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
-    <a href="06-IntroToHPC/02-FILE-ACCESS/04-open-on-demand.md" style="color: #24376b;">
+    <a href="06-IntroToHPC/02-FILE-ACCESS/04-open-on-demand" style="color: #24376b;">
     Open On Demand (OOD) Connection <i style="color: #a9bbd1;"> (web-based GUI)</i></a></td></tr>
 
   <tr><td style="background-color:white; color:white; font-weight: 600; text-align: center; width: 130px;">MORE</td>
