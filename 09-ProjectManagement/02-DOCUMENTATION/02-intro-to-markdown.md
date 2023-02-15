@@ -10,7 +10,12 @@ header:
 
 {% include toc %}
 
-# Markdown
+[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / [3. Documentation Improvement Tools](01-documentation-improvement-tools.md) / **3.1 Introduction to Markdown**
+
+---
+
+
+# Introduction
 
 [Markdown](https://daringfireball.net/projects/markdown/) is a text-based mark-up language that is easily rendered into HTML and PDF.
 
@@ -45,12 +50,13 @@ Here are some of the top reason for using Markdown besides its format interchang
 
 ___
 # Further Reading
-* [Team Communication Tools](../03-COMMUNICATION/01-team-communication-tools)
-
+* [4. Collaboration & Communication](../03-COMMUNICATION/00-collaboration-communication)
+* [5. Resource Management & Productivity](../04-PRODUCTIVITY/00-resources-productivity)
 
 ___
 
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
 [Previous](01-documentation-improvement-tools){: .btn  .btn--primary}
-[Next](../03-COMMUNICATION/01-team-communication-tools){: .btn  .btn--primary}
+[Next](../03-COMMUNICATION/00-collaboration-communication){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Slack"
+title: "Collaboration & Communication"
 layout: single
 author: Andrew Severin
 author_profile: true
@@ -10,7 +10,7 @@ header:
 
 {% include toc %}
 
-[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / [4. Collaboration & Communication](00-collaboration-communication.md) / [4.1 Team Communication Tools](01-team-communication-tools.md) / **4.1.1 Introduction to Slack**
+[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / **4. Collaboration & Communication**
 
 ---
 
@@ -76,12 +76,14 @@ In Example 2 above, Person B will hate slack as this individual will not be able
 
 ___
 # Further Reading
+* [4.1 Team Communication Tools](01-team-communication-tools)
+
 * [5. Resource Management & Productivity](../04-PRODUCTIVITY/00-resources-productivity)
 
 ___
 
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
-[Previous](01-team-communication-tools){: .btn  .btn--primary}
-[Next](../04-PRODUCTIVITY/00-resources-productivity){: .btn  .btn--primary}
+[Previous](../02-DOCUMENTATION/02-intro-to-markdown){: .btn  .btn--primary}
+[Next](01-team-communication-tools){: .btn  .btn--primary}
 [top of page](#introduction){: .btn  .btn--primary}
