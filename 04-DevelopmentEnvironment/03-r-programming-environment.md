@@ -34,29 +34,28 @@ An Integrated Development Environment (IDE) is software designed to make coding 
 Universal or multi-language IDEs are highly customizable, multi-platform text editors that can be used for coding in multiple programming languages. A universal IDE can be a good choice if you work with multiple programming languages and prefer a single development environment for your projects. Some popular universal IDEs are:
 
 * <b>Visual Studio Code (VSCode)</b>: VSCode is an open-source code editor that can be used for R programming by installing the R extension. It provides features such as code highlighting, code completion, and debugging. Learn more about <b>VSCode</b> from the <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01A-tutorial-VSCode" target="_blank">Tutorial: Visual Studio Code  ⤴</a> in this <a href="https://datascience.101workbook.org" target="_blank">workbook ⤴</a>.
-* <b>Microsoft R Open</b>: This is a distribution of R that includes a development environment from Microsoft.
+* <b>Microsoft R Open</b>: This is a distribution of R that includes a development environment from Microsoft. <a href="https://mran.microsoft.com/download" target="_blank">Download ⤴</a> Microsoft R Open.
 * <b>Atom</b>: Now archived, <a href="https://github.blog/2022-06-08-sunsetting-atom/" target="_blank">Atom ⤴</a> is one of the most liked IDEs out there. Plenty of packages are available to extend the functionality, including support of programming languages such as R.
-* <b>Eclipse</b>: Eclipse is a popular open-source Java-based IDE that can be used for R programming through the StatET plugin. It provides features such as code highlighting, debugging, and visualization tools.
-* <b>Architect</b>: is an IDE designed for data scientists. It has an R console integrated within it and supports multiple languages as it is based on Eclipse.
+* <b>Eclipse</b>: Eclipse is a popular open-source Java-based IDE that can be used for R programming through the StatET plugin. It provides features such as code highlighting, debugging, and visualization tools. Check out the <a href="https://www.eclipse.org/ide/" target="_blank">Eclipse website ⤴</a> for information about Eclipse and related IDEs.
+* <b>Architect</b>: is an IDE designed for data scientists. It has an R console integrated within it and supports multiple languages as it is based on Eclipse. Get Architect from the <a href="https://www.getarchitect.io/" target="_blank">website ⤴</a>.
 
 
 ### *B. R-Dedicated IDEs*
 * <b>RStudio</b>: is a popular open-source IDE specifically designed for R programming. It has a user-friendly interface with features such as code highlighting, code completion, debugging, and visualization tools. Both new and experienced R users widely use RStudio. Learn more about <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03A-rstudio-basics" target="_blank">RStudio Basics ⤴</a> and <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03B-tutorial-setting-up-rstudio" target="_blank">Setting up RStudio ⤴</a> in this <a href="https://datascience.101workbook.org" target="_blank">workbook ⤴</a>.
 <br>
-* <b>Tinn-R</b>: is an open-source IDE with GUI for R programming and environment that provides a customizable interface for editing, running, and debugging R code. Check the <a href="https://tinn-r.org/en/" target="_blank">Tinn-R website ⤴</a> to download and more info.
-
+* <b>Tinn-R</b>: is an open-source IDE with GUI for R programming and environment that provides a customizable interface for editing, running, and debugging R code. Check the <a href="https://tinn-r.org/en/" target="_blank">Tinn-R website ⤴</a> to download and for more information.
 
 
 ### *C. Web-based IDEs*
 * <b>Jupyter Notebook</b>: is a web-based IDE that allows users to create and share documents that contain live code, equations, visualizations, and narrative text. Learn more about the <b>Jupyter Lab</b> from the tutorial <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-jupyter-basics" target="_blank">Jupyter: Web-Based Programming Interface ⤴</a> in this <a href="https://datascience.101workbook.org" target="_blank">workbook ⤴</a>.
-* <b>RStudio Cloud</b>: RStudio Cloud is a free, web-based version of the RStudio IDE that provides a complete environment for coding in R. You can write, run, and share your R code from anywhere with an internet connection.
+* <b>RStudio Cloud</b>: RStudio Cloud is a free, web-based version of the RStudio IDE that provides a complete environment for coding in R. You can write, run, and share your R code from anywhere with an internet connection. RStudio Cloud is now known as <a href="https://posit.cloud/" target="_blank">Posit Cloud ⤴</a>.
 
 
 ## **2. Online Coding Platforms**
 Several online platforms provide an easy way to start coding in R without having to install anything on your local computer. They are especially useful for collaborating with others and as an alternative to installing software on your machine. However, they may have processing power, storage, and memory limitations. Some online platforms for R are:
 
-* <b>Google Colab</b>: is a free Jupyter Notebook environment that allows you to code in R and other programming languages. You can write, run, share R code with others, and have access to powerful GPUs and TPUs.
-* <b>Kaggle Kernels</b>: Formally Scripts, Kaggle Kernels is a free, web-based multi-language platform. It provides a Jupyter Notebook-style environment and is well-suited for data science and machine learning projects.
+* <a href="https://colab.research.google.com/" target="_blank"><b>Google Colab</b> ⤴</a>: is a free Jupyter Notebook environment that allows you to code in R and other programming languages. You can write, run, share R code with others, and have access to powerful GPUs and TPUs.
+* <a href="https://www.kaggle.com/code" target="_blank"><b>Kaggle Kernels</b> ⤴</a>: Formally Scripts, Kaggle Kernels is a free, web-based multi-language platform. It provides a Jupyter Notebook-style environment and is well-suited for data science and machine learning projects.
 
 
 ## **3. Text Editors**
@@ -91,7 +90,7 @@ Here are a few examples of the things that you can do with R: <br>
 * Machine Learning
 
 
-### A simple example
+### Simple examples
 To perform a simple arithmetic calculation, you can enter the following into the console:
 
 ```
