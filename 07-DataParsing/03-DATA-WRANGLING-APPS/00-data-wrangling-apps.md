@@ -10,6 +10,13 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [07. Data Acquisition and Wrangling](../00-DataParsing-LandingPage.md) / **3. Data Wrangling: ready-made apps**
+
+---
+
+
+# Introduction
+
 This section provides a highly verbose guide for the contents of the [ISUgenomics](https://github.com/ISUgenomics)/<b>[data_wrangling ⤴](https://github.com/ISUgenomics/data_wrangling)</b> GitHub repository.
 
 ## data_wrangling repo
@@ -102,13 +109,13 @@ Browse available tutorials in the **Further Reading** paragraph (*just below*).
 
 ___
 # Further Reading
-* [Merge files by common column (python)](01-merge-data-py)
-* [Aggregate data over slicing variations (python)](02-slice-or-bin-data-py)
-
+* [3.1 Merge files by common column (python))](01-merge-data-py)
+* [3.2 Aggregate data over slicing variations (python)](02-slice-or-bin-data-py)
 
 ___
 
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-DataParsing-LandingPage){: .btn  .btn--primary}
-[Previous](../02-DATA-MANIPULATION/02-PYTHON/07-tutorial-python-apply-statistics-scipy){: .btn  .btn--primary}
+[Previous](../02-DATA-MANIPULATION/02-PYTHON/02-tutorial-read-write-split-select-data){: .btn  .btn--primary}
 [Next](01-merge-data-py){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

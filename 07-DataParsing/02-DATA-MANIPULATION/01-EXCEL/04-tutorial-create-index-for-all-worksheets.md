@@ -10,6 +10,13 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [07. Data Acquisition and Wrangling](../../00-DataParsing-LandingPage.md) / [2. Data Manipulation](../01-data-manipulation.md) / [2.1 Manipulating Excel Data Sheets](01-manipulate-excel-sheets.md) / **2.1.3 Create Index for All Worksheets**
+
+---
+
+
+# Introduction
+
 # Generate index sheet linking all spreadsheets in Excel
 
 Before proceeding, check if you have enabled the macros, i.e., if you don't see `DEVELOPER` tab in you empty spreadsheet,  click on `FILE`, `OPTIONS` and `Customize Ribbon`. You should see a check box on the right hand side, for the `DEVELOPER` tab, check it and click `OK`.
@@ -39,10 +46,11 @@ Once done, click on  `Macros` again, and then `Run`. This action will automatica
 
 ___
 # Further Reading
-* [Merge Two Spreadsheets using a Common Column](05-tutorial-merge-spreadsheets-by-column)
+* [2.1.4 Merge Two Spreadsheets using a Common Column](05-tutorial-merge-spreadsheets-by-column)
 
-* [Manipulating Text Files with Python](../02-PYTHON/01-manipulate-data-with-python)
+* [2.2 Manipulating Text Files with Python](../02-PYTHON/01-manipulate-data-with-python)
 
+* [3. Data Wrangling: ready-made apps](../../03-DATA-WRANGLING-APPS/00-data-wrangling-apps)
 
 ___
 
@@ -50,3 +58,4 @@ ___
 [Section Index](../../00-DataParsing-LandingPage){: .btn  .btn--primary}
 [Previous](03-tutorial-export-multiple-worksheets){: .btn  .btn--primary}
 [Next](05-tutorial-merge-spreadsheets-by-column){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

@@ -10,6 +10,13 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [07. Data Acquisition and Wrangling](../00-DataParsing-LandingPage.md) / [1. Remote Data Access](01-remote-data-access.md) / [1.1 Remote Data Transfer](02-0-remote-data-transfer.md) / **1.1.3 File Transfer using irods**
+
+---
+
+
+# Introduction
+
 # Getting Data from iPlant/CyVerse
 
 This is the quick tutorial to download data from [CyVerse](https://en.wikipedia.org/wiki/IPlant_Collaborative) (previously known as iPlant) on HPC clusters using [iRODS](https://irods.org/). iRODS may or may not be available as module on your cluster, and if available as a module load the module to use `irods` commands.
@@ -118,19 +125,16 @@ For more information, follow these links:
 
 ___
 # Further Reading
-* [Tutorial: File Transfer using SRA Toolkit](02-4-tutorial-transfer-sra)
-* [Tutorial: Downloading Online Data using WGET](02-5-tutorial-download-wget)
-* [Tutorial: Downloading Online Data using Web Scraping](02-6-tutorial-download-web-scraping)
-* [Tutorial: Downloading Online GitHub Repos using GIT](02-7-tutorial-download-github-repos-git)
-* [Tutorial: Downloading Online GitHub Folders using SVN](02-8-tutorial-download-github-folders-svn)
+* [1.2 Remote Data Download](03-0-remote-data-download)
+* [1.3 Remote Data Preview without Downloading](04-0-remote-data-preview)
 
-* [Remote Data Preview without Downloading](03-0-remote-data-preview)
-* [Data Manipulation](../02-DATA-MANIPULATION/01-data-manipulation)
-
+* [2. Data Manipulation](../02-DATA-MANIPULATION/01-data-manipulation)
+* [3. Data Wrangling: ready-made apps](../03-DATA-WRANGLING-APPS/00-data-wrangling-apps)
 
 ___
 
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-DataParsing-LandingPage){: .btn  .btn--primary}
-[Previous](02-2-tutorial-copy-globus){: .btn  .btn--primary}
-[Next](02-4-tutorial-transfer-sra){: .btn  .btn--primary}
+[Previous](02-2-tutorial-copy-ssh){: .btn  .btn--primary}
+[Next](03-0-remote-data-download){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

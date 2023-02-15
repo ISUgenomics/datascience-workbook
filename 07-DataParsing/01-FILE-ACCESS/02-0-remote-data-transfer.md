@@ -10,7 +10,12 @@ header:
 
 {% include toc %}
 
-# Overview
+[DataScience Workbook](https://datascience.101workbook.org/) / [07. Data Acquisition and Wrangling](../00-DataParsing-LandingPage.md) / [1. Remote Data Access](01-remote-data-access.md) / **1.1 Remote Data Transfer**
+
+---
+
+
+# Introduction
 
 Remote data transfer refers to the transfer of data from one location to another. It requires a network, such as the Internet, that provides the means of **transmitting the data between the source and destination devices**. It allows individuals and organizations to share and exchange information, **regardless of their physical location**.
 
@@ -154,22 +159,20 @@ Some HPC systems include data movers, which are specialized hardware or software
 
 ___
 # Further Reading
-* [Tutorial: Copying Data using SSH](02-1-tutorial-copy-ssh)
-* [Tutorial: Copying Data using Globus](02-2-tutorial-copy-globus)
-* [Tutorial: File Transfer using irods](02-3-tutorial-transfer-irods)
-* [Tutorial: File Transfer using SRA Toolkit](02-4-tutorial-transfer-sra)
-* [Tutorial: Downloading Online Data using WGET](02-5-tutorial-download-wget)
-* [Tutorial: Downloading Online Data using Web Scraping](02-6-tutorial-download-web-scraping)
-* [Tutorial: Downloading Online GitHub Repos using GIT](02-7-tutorial-download-github-repos-git)
-* [Tutorial: Downloading Online GitHub Folders using SVN](02-8-tutorial-download-github-folders-svn)
+* [1.1.1 Copying Data using Graphical Interface: Globus](02-1-tutorial-copy-globus)
+* [1.1.2 Copying Data via SSH using Command Line: scp, rsync](02-2-tutorial-copy-ssh)
+* [1.1.3 File Transfer using irods](02-3-tutorial-transfer-irods)
 
-* [Remote Data Preview without Downloading](03-0-remote-data-preview)
-* [Data Manipulation](../02-DATA-MANIPULATION/01-data-manipulation)
+* [1.2 Remote Data Download](03-0-remote-data-download)
+* [1.3 Remote Data Preview without Downloading](04-0-remote-data-preview)
 
+* [2. Data Manipulation](../02-DATA-MANIPULATION/01-data-manipulation)
+* [3. Data Wrangling: ready-made apps](../03-DATA-WRANGLING-APPS/00-data-wrangling-apps)
 
 ___
 
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-DataParsing-LandingPage){: .btn  .btn--primary}
 [Previous](01-remote-data-access){: .btn  .btn--primary}
-[Next](02-1-tutorial-copy-ssh){: .btn  .btn--primary}
+[Next](02-1-tutorial-copy-globus){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

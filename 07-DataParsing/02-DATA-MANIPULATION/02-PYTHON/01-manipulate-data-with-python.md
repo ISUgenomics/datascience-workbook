@@ -10,9 +10,14 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [07. Data Acquisition and Wrangling](../../00-DataParsing-LandingPage.md) / [2. Data Manipulation](../01-data-manipulation.md) / **2.2 Manipulating Text Files with Python**
+
+---
+
+
 ## <span style="color: #ff3870;">New content coming soon!</span>
 
-
+# Introduction
 
 
 
@@ -20,12 +25,9 @@ header:
 
 ___
 # Further Reading
-* [Tutorial: Read, Write, Split, Select Data](02-tutorial-read-write-split-select-data)
-* [Tutorial: Encoding & Decoding JSON Data](03-tutorial-python-manage-data-json-string)
-* [Tutorial: Math Module - Various Mathematical Functions](04-tutorial-python-round-abs-data-math-module)
-* [Tutorial: Pandas Library - Data Structure Manipulation Tool](05-tutorial-python-data-manipulation-pandas)
-* [Tutorial: Numpy Library - Multi-Dimensional Arrays Parser](06-tutorial-python-array-manipulation-numpy)
-* [Tutorial: SciPy Library - Algorithms for Scientific Computing](07-tutorial-python-apply-statistics-scipy)
+* [2.2.1 Read, Write, Split, Select Data](02-tutorial-read-write-split-select-data)
+
+* [3. Data Wrangling: ready-made apps](../../03-DATA-WRANGLING-APPS/00-data-wrangling-apps)
 
 
 ___
@@ -34,3 +36,4 @@ ___
 [Section Index](../../00-DataParsing-LandingPage){: .btn  .btn--primary}
 [Previous](../01-EXCEL/05-tutorial-merge-spreadsheets-by-column){: .btn  .btn--primary}
 [Next](02-tutorial-read-write-split-select-data){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

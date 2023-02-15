@@ -10,7 +10,12 @@ header:
 
 {% include toc %}
 
-# Overview
+[DataScience Workbook](https://datascience.101workbook.org/) / [07. Data Acquisition and Wrangling](../00-DataParsing-LandingPage.md) / **1. Remote Data Access**
+
+---
+
+
+# Introduction
 
 Remote data access refers to the ability to **access data that is stored on a remote machine**, such as a server, database, or HPC system rather than on a local machine. This allows users to access and **manipulate data from anywhere with an internet connection**. In particular, there are several ways to access data stored on high-performance computing (HPC) clusters remotely.
 
@@ -214,13 +219,16 @@ Microservices are small, independent, and modular applications that can be combi
 
 ___
 # Further Reading
-* [Remote Data Transfer](02-0-remote-data-transfer)
-* [Remote Data Preview without Downloading](03-0-remote-data-preview)
+* [1.1 Remote Data Transfer](02-0-remote-data-transfer)
+* [1.2 Remote Data Download](03-0-remote-data-download)
+* [1.3 Remote Data Preview without Downloading](04-0-remote-data-preview)
 
-* [Data Manipulation](../02-DATA-MANIPULATION/01-data-manipulation)
+* [2. Data Manipulation](../02-DATA-MANIPULATION/01-data-manipulation)
+* [3. Data Wrangling: ready-made apps](../03-DATA-WRANGLING-APPS/00-data-wrangling-apps)
 
 ___
 
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-DataParsing-LandingPage){: .btn  .btn--primary}
 [Next](02-0-remote-data-transfer){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

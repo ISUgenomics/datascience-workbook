@@ -10,6 +10,13 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [07. Data Acquisition and Wrangling](../../00-DataParsing-LandingPage.md) / [2. Data Manipulation](../01-data-manipulation.md) / [2.1 Manipulating Excel Data Sheets](01-manipulate-excel-sheets.md) / **2.1.4 Merge Two Spreadsheets using a Common Column**
+
+---
+
+
+# Introduction
+
 Excel is most popular among researchers because of its ease of use and tons of useful features. In most cases scripting is the most efficient way to do these simple operations, but practicality of Excel for researchers and the cryptic scripting commands will always make excel a better choice. Most common case of merging 2 spreadsheets is when users have a list of gene ids and another list of geneids with function. To merge these 2 sheets using the gene-ids, we can use the `VLOOKUP` function.
 
 ### Data ###
@@ -69,8 +76,9 @@ You should now have the complete table with both functions and gene names, now!
 
 ___
 # Further Reading
-* [Manipulating Text Files with Python](../02-PYTHON/01-manipulate-data-with-python)
+* [2.2 Manipulating Text Files with Python](../02-PYTHON/01-manipulate-data-with-python)
 
+* [3. Data Wrangling: ready-made apps](../../03-DATA-WRANGLING-APPS/00-data-wrangling-apps)
 
 ___
 
@@ -78,3 +86,4 @@ ___
 [Section Index](../../00-DataParsing-LandingPage){: .btn  .btn--primary}
 [Previous](04-tutorial-create-index-for-all-worksheets){: .btn  .btn--primary}
 [Next](../02-PYTHON/01-manipulate-data-with-python){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

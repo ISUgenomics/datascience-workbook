@@ -10,7 +10,12 @@ header:
 
 {% include toc %}
 
-# App overview
+[DataScience Workbook](https://datascience.101workbook.org/) / [07. Data Acquisition and Wrangling](../00-DataParsing-LandingPage.md) / [3. Data Wrangling: ready-made apps](00-data-wrangling-apps.md) / **3.2 Aggregate data over slicing variations (python)**
+
+---
+
+
+# Introduction
 
 The <a href="https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data" target="_blank">bin_data.py ⤴</a> application is written in Python3 and employs efficient libraries [pandas and numpy] for operating on a complex data structure. The application **aggregates observables** [by summing or averaging numerical values] over the data slices (rows grouped in a slice). The statistic (**STATS**) is calculated separately for each column of numerical values, while **R** = 'ranges-column' can be used to bin data based on the incrementation of values.
 
@@ -677,3 +682,4 @@ ___
 [Section Index](../00-DataParsing-LandingPage){: .btn  .btn--primary}
 [Previous](01-merge-data-py){: .btn  .btn--primary}
 [Next](../../08-DataVisualization/00-DataVisualization-LandingPage){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

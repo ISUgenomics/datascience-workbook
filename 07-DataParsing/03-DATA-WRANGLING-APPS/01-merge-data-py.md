@@ -10,7 +10,12 @@ header:
 
 {% include toc %}
 
-# App overview
+[DataScience Workbook](https://datascience.101workbook.org/) / [07. Data Acquisition and Wrangling](../00-DataParsing-LandingPage.md) / [3. Data Wrangling: ready-made apps](00-data-wrangling-apps.md) / **3.1 Merge files by common column (python)**
+
+---
+
+
+# Introduction
 
 The <a href="https://github.com/ISUgenomics/data_wrangling/tree/main/merge_data" target="_blank">merge_data.py ⤴</a> application is written in Python3 and employs an efficient pandas library for operating on a column-like data structure. The application enables the **merging of two files by matching columns** with filling in the **missing data by customized error values**. <br>
 
@@ -182,7 +187,7 @@ python3 merge_data.py -i input_file -m merge_file -c 1,5 -e missing -o my_merged
 
 ___
 # Further Reading
-* [Aggregate data over slicing variations (python)](02-slice-or-bin-data-py)
+* [3.2 Aggregate data over slicing variations (python)](02-slice-or-bin-data-py)
 
 
 ___
@@ -191,3 +196,4 @@ ___
 [Section Index](../00-DataParsing-LandingPage){: .btn  .btn--primary}
 [Previous](00-data-wrangling-apps){: .btn  .btn--primary}
 [Next](02-slice-or-bin-data-py){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}
