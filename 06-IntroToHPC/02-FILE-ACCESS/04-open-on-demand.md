@@ -1,8 +1,8 @@
 ---
 title: "Open On Demand (OOD) Connection using web-based interface"
 layout: single
-author:
-author_profile: false
+author: Aleksandra Badaczewska
+author_profile: true
 header:
   overlay_color: "444444"
   overlay_image: /06-IntroToHPC/assets/images/06_hpc_banner.png
@@ -78,11 +78,7 @@ With Open on Demand, **users can log into a remote cluster** and access its comp
 | - automation of computational tasks       | - access to Jupyter notebooks and RStudio                 |
 | - selecting software version/module       | - visualization and data analysis tools |
 
-
-
-
 ^ *Command Line Features in the OOD web-based interface are available once you launch `Shell Access` as an interactive session or open a terminal window available in the interactive Desktop.*
-
 
 
 # Atlas Open OnDemand
