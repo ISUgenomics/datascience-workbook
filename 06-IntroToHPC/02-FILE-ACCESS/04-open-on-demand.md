@@ -80,10 +80,13 @@ With Open on Demand, **users can log into a remote cluster** and access its comp
 
 ^ *Command Line Features in the OOD web-based interface are available once you launch `Shell Access` as an interactive session or open a terminal window available in the interactive Desktop.*
 
+---
 
 # Atlas Open OnDemand
 
 Follow the intrutions in the section: <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/02-scinet-atlas-cluster#open-ondemand-login" target="_blank">The web-browser access: Open OnDEmand login  ⤴</a> in the <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/02-scinet-atlas-cluster" target="_blank">SCINet: Atlas Computing Cluster  ⤴</a> tutorial in this workbook.
+
+---
 
 # Ceres Open OnDemand
 
