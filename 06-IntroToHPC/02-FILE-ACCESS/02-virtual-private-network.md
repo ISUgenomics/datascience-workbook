@@ -131,7 +131,7 @@ So, all you need is to open the terminal window and log in to the HPC resources 
 *Accessing data using Secure Shell (SSH) typically involves using a terminal or command-line interface, rather than a graphical user interface (GUI).*
 
 **Start by opening a terminal window** on your local machine. <br>
-*If you do NOt know what the terminal is, start with this tutorial: <a href="https://datascience.101workbook.org/02-IntroToCommandLine/01-terminal-basics" target="_blank">Terminal, a text-based interface for command-line operations  ⤴</a>*.
+*If you do NOT know what the terminal is, start with this tutorial: <a href="https://datascience.101workbook.org/02-IntroToCommandLine/01-terminal-basics" target="_blank">Terminal, a text-based interface for command-line operations  ⤴</a>*.
 
 Then, **enter the following command** to log into the remote machine:
 
@@ -139,12 +139,16 @@ Then, **enter the following command** to log into the remote machine:
 ssh username@remote-hostname
 ```
 
+
 *where `username` is your username on the remote machine and `remote-hostname` is the hostname or IP address of the remote machine,* <br>
 *e.g., `abadacz@nova.its.iastate.edu`*
 
 You will be prompted to **enter your password** for the remote machine, and if the login is successful, you will be logged into the remote resources and have access to its file system.
 
-**Learn more about the Secure Shell (SSH) Protocol** from the following tutorial in this section: <a href="https://datascience.101workbook.org/06-IntroToHPC/02-FILE-ACCESS/03-secure-shell-connection" target="_blank">2.2 Secure Shell Connection (SSH)  ⤴</a>. Also, get the advantage of **useful SSH shortcuts and set up password-less access** to your remote computing systems with this step-by-step guide <a href="https://datascience.101workbook.org/06-IntroToHPC/02-FILE-ACCESS/03A-ssh-shortcuts" target="_blank">2.2.1 SSH shortcuts and password-less login  ⤴</a>.
+**Learn more about the Secure Shell (SSH) Protocol** from the following tutorial in this section: <br>
+<a href="https://datascience.101workbook.org/06-IntroToHPC/02-FILE-ACCESS/03-secure-shell-connection" target="_blank">2.2 Secure Shell Connection (SSH)  ⤴</a>. <br>
+Also, get the advantage of **useful SSH shortcuts and set up password-less access** to your remote computing systems with this step-by-step guide: <br>
+<a href="https://datascience.101workbook.org/06-IntroToHPC/02-FILE-ACCESS/03A-ssh-shortcuts" target="_blank">2.2.1 SSH shortcuts and password-less login  ⤴</a>.
 
 
 
