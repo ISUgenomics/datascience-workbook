@@ -136,7 +136,7 @@ High-Performance Computing (HPC) environments typically have a number of secure 
 
 <b><a href="https://www.globus.org/data-transfer" target="_blank">Globus  ⤴</a> is a web-based service</b> for transferring large amounts of data between HPC systems, cloud storage systems, and other data repositories. Globus provides a secure and reliable means of transferring data, and it can be integrated with other tools and systems used in HPC environments.
 
-**`Tutorial:`** Follow hands-on tutorial <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/02-2-tutorial-copy-globus" target="_blank">Copying Data using Globus  ⤴</a> in this workbook, to acquire the practical skill of transferring data to and from the HPC system.
+**`Tutorial:`** Follow hands-on tutorial <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/02-1-tutorial-copy-globus" target="_blank">Copying Data using Graphical Interface: Globus  ⤴</a> in this workbook, to acquire the practical skill of transferring data to and from the HPC system.
 
 <span style="color: #ff3870;font-weight: 500;">Globus is a recommended tool for transferring data on the SCINet infrastructure.</span> <br>
 Learn more about <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/02-scinet-atlas-cluster#data-transfer-using-globus" target="_blank">Data transfer on Atlas using Globus  ⤴</a> from the tutorial <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/02-scinet-atlas-cluster" target="_blank">SCINet: Atlas Computing Cluster  ⤴</a>.
@@ -149,9 +149,13 @@ Learn more about <a href="https://datascience.101workbook.org/06-IntroToHPC/01-H
 
 <b>`rsync` is a command line tool for fast and efficient file transfer</b>. It is often used in HPC environments. `rsync` transfers only the differences between two sets of files, making it well-suited for transferring large amounts of data, especially when only small changes have been made to the data.
 
+**`Tutorial:`** Follow hands-on tutorial <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/02-2-tutorial-copy-ssh" target="_blank">Copying Data via SSH using Command Line: scp, rsync  ⤴</a> in this workbook, to acquire the practical skill of transferring data to and from the HPC system.
+
 ### • scp
 
 <b>`scp` (secure copy) is a command-line tool for securely copying files between computers</b>. `scp` uses the same authentication and security as the SSH (secure shell) protocol, which is widely used for secure remote login and other secure network services.
+
+**`Tutorial:`** Follow hands-on tutorial <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/02-2-tutorial-copy-ssh" target="_blank">Copying Data via SSH using Command Line: scp, rsync  ⤴</a> in this workbook, to acquire the practical skill of transferring data to and from the HPC system.
 
 ### • Data Movers
 

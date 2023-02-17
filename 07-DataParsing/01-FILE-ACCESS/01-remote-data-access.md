@@ -19,14 +19,18 @@ header:
 
 Remote data access refers to the ability to **access data that is stored on a remote machine**, such as a server, database, or HPC system rather than on a local machine. This allows users to access and **manipulate data from anywhere with an internet connection**. In particular, there are several ways to access data stored on high-performance computing (HPC) clusters remotely.
 
-## **1. Log in to a remote machine**
-To access remotely data stored on a HPC cluster, you need to log into a node within the cluster that has access to the data. There are several ways to log into an HPC system, including:
-
-* **SSH (Secure Shell connection)** <br>
-<i>Learn more from the hands-on tutorials in the <a href="https://datascience.101workbook.org/06-IntroToHPC/02-SSH/01-secure-shell-connection" target="_blank">Secure Shell Connection (SSH)  ⤴</a> section of this workbook.</i>
+## **1. Log in to a remote machine using CLI**
+To access remotely data stored on a HPC cluster, you need to log into a node within the cluster that has access to the data. You may need one or both tools (listed below) to log in to HPC system, depending on your location and your organization's network settings.
 
 * **VPN (Virtual Private Network)** <br>
-<i>Learn more from the  <a href="https://datascience.101workbook.org/06-IntroToHPC/02-SSH/01-secure-shell-connection" target="_blank">Remote Access to HPC resources  ⤴</a> section of this workbook.</i>
+It could be required when you are in an **off-campus location**. <br>
+<i>Learn more from the hands-on tutorial <a href="https://datascience.101workbook.org/06-IntroToHPC/02-FILE-ACCESS/02-virtual-private-network" target="_blank">Virtual Private Network (VPN) Connection  ⤴</a>, provided in the <a href="https://datascience.101workbook.org/06-IntroToHPC/02-FILE-ACCESS/01-remote-data-access" target="_blank">06. HPC: Remote Access to HPC Resources  ⤴</a> section of this workbook.</i>
+
+* **SSH (Secure Shell connection)** <br>
+It can be used **when you are already in the internal network**, i.e., when you are on campus or have a VPN connection to the organization's network. <br>
+<i>Learn more from the hands-on tutorials available in the <a href="https://datascience.101workbook.org/06-IntroToHPC/02-FILE-ACCESS/01-remote-data-access" target="_blank">06. HPC: Remote Access to HPC Resources  ⤴</a> section of this workbook:</i>
+  * <a href="https://datascience.101workbook.org/06-IntroToHPC/02-FILE-ACCESS/03-secure-shell-connection" target="_blank">Secure Shell Connection (SSH)  ⤴</a>
+  * <a href="https://datascience.101workbook.org/06-IntroToHPC/02-FILE-ACCESS/03A-ssh-shortcuts" target="_blank">SSH shortcuts and password-less login  ⤴</a>
 
 <div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">WARNING:</span>
@@ -56,21 +60,29 @@ You can then use standard file system commands, such as `ls`, `cd`, and `pwd`, t
 ### • *data transfer*
 Follow the hands-on tutorial: <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/02-0-remote-data-transfer" target="_blank">Transfer data from and to the remote machine  ⤴</a>
 
+### • *data download*
+Follow the hands-on tutorial: <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/03-0-remote-data-download" target="_blank">Download data from online resources  ⤴</a>
+
 ### • *data preview & edit*
-Follow the hands-on tutorial: <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/03-0-remote-data-preview" target="_blank">Preview and edit remote data without downloading  ⤴</a>
+Follow the hands-on tutorial: <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/04-0-remote-data-preview" target="_blank">Preview and edit remote data without downloading  ⤴</a>
 
 ## **2. Log in to the HPC web-based interface**
 Some HPC systems may also provide web-based graphical interfaces for remotely accessing and managing data. One of the most commonly practiced solutions is:
 
+
 ###  *OOD (Open On Demand)*
-*learn more about the <a href="https://openondemand.org" target="_blank">OOD approach  ⤴</a>*<br>
 
 <div style="background: #dff5b3; padding: 15px;">
 <span style="font-weight:800;">NOTE:</span>
 <br><span style="font-style:italic;">
-Open On-Demand is a web-based platform that provides <b>remote access to high-performance computing (HPC) resources</b>, such as supercomputers and large-scale clusters. It provides a <b>user-friendly interface</b> for accessing these resources <b>from a web browser</b>, without the need for complex software installations or command-line interfaces.
+<a href="https://openondemand.org" target="_blank">Open On-Demand  ⤴</a> is a web-based platform that provides <b>remote access to high-performance computing (HPC) resources</b>, such as supercomputers and large-scale clusters. It provides a <b>user-friendly interface</b> for accessing these resources <b>from a web browser</b>, without the need for complex software installations or command-line interfaces.
 </span>
 </div><br>
+
+<span style="color: #ff3870;font-weight: 500;">Follow the hands-on tutorial <a href="https://datascience.101workbook.org/06-IntroToHPC/02-FILE-ACCESS/04-open-on-demand" target="_blank">Open On Demand (OOD) Connection using web-based interface  ⤴</a> to learn how to use different tools and features available in the OOD web interface of HPC systems.</span>
+
+
+**QUICK GUIDE to OOD**
 
 You start by opening a web browser on your local machine and entering the URL to the website that hosts the OOD interface for a given HPC system, e.g.,
 
