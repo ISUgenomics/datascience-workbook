@@ -37,7 +37,7 @@ Remote data transfer can be used for a wide range of purposes, such as:
 
 # Remote data transfer options
 
-## 0. Secure Data Transfer in Science
+## Secure Data Transfer in Science
 
 The **need for secure data transfer in research** is paramount due to the sensitive nature of the data being transmitted. Research often involves the collection and analysis of sensitive and confidential information, such as personal information, intellectual property, trade secrets, and medical records. If this information were to fall into the wrong hands, it could have serious consequences, such as identity theft, unauthorized access to sensitive information, or loss of confidential information.
 
@@ -81,7 +81,7 @@ When transferring any research data, there are several practices and techniques 
 * **Avoid using removable media:** <br>
 <i>Removable media, such as USB drives, can be easily lost or stolen, putting the data at risk. Instead, **use secure file transfer services (e.g., Globus) or encrypted cloud storage services (e.g., your organization Box)** that are specifically designed for secure data transfer.</i>
 
-## 1. Online **File Sharing** Services
+# 1. Online **File Sharing** Services
 
 There are several online file sharing services, which allow users to upload, store, and share files with others. These services offer the convenience of being accessible from anywhere with an Internet connection, and they often include advanced collaboration features such as the ability to share files with others and work on them together in real-time.
 
@@ -103,7 +103,7 @@ There are several online file sharing services, which allow users to upload, sto
   * If you work at Iowa State University check it here: <a href="https://iastate.account.box.com/login" target="_blank">https://iastate.account.box.com/login  ⤴</a>
 
 
-## 2. Cloud **Storage** Services
+# 2. Cloud **Storage** Services
 
 Cloud storage services provide scalable and highly available data storage services that can be accessed over the Internet. These services are often used for backup, disaster recovery, and archiving. They are dedicated for business and large-scale needs. <i>Typically, there are no free pricing plans, check your options with your organization.</i>
 
@@ -111,7 +111,7 @@ Cloud storage services provide scalable and highly available data storage servic
 * <b><a href="https://azure.microsoft.com/en-us/products/storage/blobs" target="_blank">Microsoft Azure Blob Storage  ⤴</a></b><br><i>Azure Blob Storage provides long-term storage to build powerful cloud-native and mobile apps. It can flexibly scale up for high-performance computing and machine learning workloads.</i>
 * <b><a href="https://aws.amazon.com/pm/serv-s3/" target="_blank">Amazon S3  ⤴</a></b><br><i>Amazon S3 is an object storage service that offers industry-leading scalability, data availability, security, and performance.</i>
 
-## 3. Web-based **File Transfer**
+# 3. Web-based **File Transfer**
 
 Some web-based file transfer services allow you to send large files over the Internet without the need to install any software. These services typically use a web browser as the client, and the recipient simply needs to follow a link to download the file. While web-based free file transfer services can be convenient, **they may not provide the level of security and reliability** required for sensitive or confidential data.
 
@@ -128,36 +128,118 @@ The safety and security of web-based free file transfer services can vary greatl
 </span>
 </div>
 
-## 4. **Data transfer** to and from HPC
+# 4. **Data transfer** to and from HPC
 
 High-Performance Computing (HPC) environments typically have a number of secure options for remote data transfer, including:
 
-### • GLOBUS (recommended)
+## • GLOBUS (recommended)
 
 <b><a href="https://www.globus.org/data-transfer" target="_blank">Globus  ⤴</a> is a web-based service</b> for transferring large amounts of data between HPC systems, cloud storage systems, and other data repositories. Globus provides a secure and reliable means of transferring data, and it can be integrated with other tools and systems used in HPC environments.
 
-**`Tutorial:`** Follow hands-on tutorial <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/02-1-tutorial-copy-globus" target="_blank">Copying Data using Graphical Interface: Globus  ⤴</a> in this workbook, to acquire the practical skill of transferring data to and from the HPC system.
+**Tutorial:** <span style="color: #ff3870;font-weight: 500;">Follow hands-on tutorial <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/02-1-tutorial-copy-globus" target="_blank">Copying Data using Graphical Interface: Globus  ⤴</a> in this workbook, to acquire the practical skill of transferring data to and from the HPC system.</span>
 
-<span style="color: #ff3870;font-weight: 500;">Globus is a recommended tool for transferring data on the SCINet infrastructure.</span> <br>
+**Globus is a recommended tool for transferring data on the SCINet infrastructure.**<br>
 Learn more about <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/02-scinet-atlas-cluster#data-transfer-using-globus" target="_blank">Data transfer on Atlas using Globus  ⤴</a> from the tutorial <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/02-scinet-atlas-cluster" target="_blank">SCINet: Atlas Computing Cluster  ⤴</a>.
 
-### • GridFTP
+## • GridFTP
 
 <b><a href="https://docs.nersc.gov/services/gridftp/" target="_blank">GridFTP  ⤴</a> is a command line service</b> for parallel movement of data. It is a high-performance, parallel-data transfer protocol designed for large-scale data transfers, especially for HPC and scientific computing. GridFTP uses multiple parallel streams to transfer data, which can significantly speed up data transfer times for large files.
 
-### • rsync
+## • FTP client
+
+FTP (File Transfer Protocol) is a standard network protocol used for transferring files between computers over the internet. The protocol was designed to be simple and efficient, allowing for the easy transfer of large files between hosts. Many websites and online resources offer FTP access, which allows users to download files directly to their local machine using an FTP client.
+
+<div style="background: #dff5b3; padding: 15px;">
+<span style="font-weight:800;">NOTE:</span>
+<br><span style="font-style:italic;">
+FTP works by establishing a connection between a client and a server. The client is typically an FTP software application, also known as an <b>FTP client</b>, while the server is a remote computer that stores the files to be transferred. The FTP client uses the protocol to send commands to the server to download or upload files. <br><br>
+<b>FTP is not a secure protocol</b>, as data is transferred in plain text and can be intercepted by third parties. As such, it is recommended to <b>use a secure file transfer protocol</b>, such as <b>SFTP</b> (Secure File Transfer Protocol) or <b>FTPS</b> (FTP over SSL), for transferring sensitive data.
+</span>
+</div><br>
+
+**QUICK GUIDE**
+
+**1. To download data from an online resource using FTP, you first need to have an FTP client installed on your local machine.** <br>
+There are several popular FTP clients available, including:
+* <a href="https://filezilla-project.org" target="_blank">FileZilla  ⤴</a>, a **cross platform open-source** FTP solution supporting FTP, FTPS, SFTP, and some cloud-based file transfer protocols
+* <a href="https://" target="_blank">Cyberduck  ⤴</a>, a libre server and cloud storage browser for **Mac and Windows** with support for FTP, SFTP, and some cloud-based file transfer protocols
+* <a href="https://" target="_blank">WinSCP  ⤴</a>, a popular FTP client for **Microsoft Windows** supporting FTP, FTPS, SFTP, and some cloud-based file transfer protocols
+
+![01-download_ftp_client.png](../assets/images/01-download_ftp_client.png)
+
+**2.** Once you have an FTP client installed, you can use it to **connect to the server hosting the files** you want to download. <br>
+<i>To establish a connection, you will need to <b>enter the hostname or IP address of the server, as well as your login credentials</b>, such as your username and password.</i>
+
+**3.** Once you have established a connection, you can browse the files and directories stored on the server, and select the files you want to download. <br>
+<i>You can then use the FTP client to initiate the file transfer and monitor its progress.</i>
+
+<span style="color: #ff3870;font-weight: 500;">Some FTP clients provide both a graphical user interface (GUI) and a command-line interface (CLI) for transferring files.</span> *Note that the exact syntax may differ depending on your operating system and the version of the tool you are using.*
+
+<details><summary><b>FileZilla</b></summary>
+
+In FileZilla, you can use the command-line interface by launching the application with the `--cli` command-line option. <br>
+Once in the CLI, you can use commands like:
+* `open` to connect to an FTP server,
+* `put` and get to transfer files,
+* `exit` to close the connection.
+
+To display a list of available commands use the `--help` option:
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
+filezilla --help
+</code>
+
+To display help for a specific command, use the `-h` or `--help` option followed by the command name:
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
+filezilla -h open
+</code><br>
+</details>
+
+<details><summary><b>Cyberduck</b></summary>
+
+In Cyberduck, you can use the `duck` command-line tool to transfer files via FTP. <br>
+The duck command-line tool provides a variety of options to configure the FTP connection and transfer settings.
+
+To display a list of available commands use the `--help` option:
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
+duck help
+</code>
+
+To display help for a specific command, use the `duck help` command followed by the command name:
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
+duck help put
+</code><br>
+</details>
+
+<details><summary><b>WinSCP</b></summary>
+
+In WinSCP, you can use the `winscp.com` command-line tool to automate file transfer tasks. <br>
+The winscp.com tool provides a variety of options to configure the FTP connection and transfer settings.
+
+To display a list of available commands, use the `/?` or `/h` option:
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
+winscp.com /?
+</code>
+
+To display help for a specific command, use the `/h` or `/help` option followed by the command name:
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
+winscp.com /help put
+</code><br>
+</details>
+
+
+## • rsync (command)
 
 <b>`rsync` is a command line tool for fast and efficient file transfer</b>. It is often used in HPC environments. `rsync` transfers only the differences between two sets of files, making it well-suited for transferring large amounts of data, especially when only small changes have been made to the data.
 
-**`Tutorial:`** Follow hands-on tutorial <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/02-2-tutorial-copy-ssh" target="_blank">Copying Data via SSH using Command Line: scp, rsync  ⤴</a> in this workbook, to acquire the practical skill of transferring data to and from the HPC system.
+**Tutorial:** <span style="color: #ff3870;font-weight: 500;">Follow hands-on tutorial <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/02-2-tutorial-copy-ssh" target="_blank">Copying Data via SSH using Command Line: scp, rsync  ⤴</a> in this workbook, to acquire the practical skill of transferring data to and from the HPC system.</span>
 
-### • scp
+## • scp (command)
 
 <b>`scp` (secure copy) is a command-line tool for securely copying files between computers</b>. `scp` uses the same authentication and security as the SSH (secure shell) protocol, which is widely used for secure remote login and other secure network services.
 
-**`Tutorial:`** Follow hands-on tutorial <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/02-2-tutorial-copy-ssh" target="_blank">Copying Data via SSH using Command Line: scp, rsync  ⤴</a> in this workbook, to acquire the practical skill of transferring data to and from the HPC system.
+**Tutorial:** <span style="color: #ff3870;font-weight: 500;">Follow hands-on tutorial <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/02-2-tutorial-copy-ssh" target="_blank">Copying Data via SSH using Command Line: scp, rsync  ⤴</a> in this workbook, to acquire the practical skill of transferring data to and from the HPC system. </span>
 
-### • Data Movers
+## • Data Movers
 
 Some HPC systems include data movers, which are specialized hardware or software components that are designed to handle the high-speed transfer of large amounts of data. Data movers can be integrated with other HPC tools and systems to provide a seamless means of transferring data between HPC resources.
 
