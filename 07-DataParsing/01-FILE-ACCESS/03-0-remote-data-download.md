@@ -90,11 +90,11 @@ There are several types of online resources that provide access points to data.
 
 There are various options for downloading data from online resources apart from manual selection and copying. In this section, you can review the available options and then go to a hands-on tutorial for your choice that will make your practical skills stronger.
 
-* [Web browser extensions](#web-browser-extensions), Manual using of download buttons
-* [HTTP(S) interface](#https-interface-for-file-transfer), Downloading files from websites using the HTTP(S) protocol
-* [Command-line tools](#command-line-tools), Downloading files using commands in the terminal window
-* [API](#api), Interacting with remote resources using HTTP requests
-* [Web scraping](#web-scraping), Extracting data from websites using automated scripts
+* [Web browser extensions](#web-browser-extensions), manual using of download buttons
+* [HTTP(S) interface](#https-interface-for-file-transfer), downloading files from websites using the HTTP(S) protocol
+* [Command-line tools](#command-line-tools), downloading files using commands in the terminal window
+* [API](#api), interacting with remote resources using HTTP requests
+* [Web scraping](#web-scraping), extracting data from websites using automated scripts
 
 To help you compare and contrast available methods, please explore the table provided below, which categorize them based on factors such as ease of use, flexibility, and reliability.
 
@@ -139,7 +139,7 @@ Think of it like sending a letter in the mail. With a regular HTTP request, your
 </div><br>
 
 
-## Web browser extensions
+## 1. Web browser extensions
 <span style="color: #ff3870;font-weight: 500;">(manually in the GUI)</span>
 
 Web browser extensions and built-in buttons can be used to download data directly from websites. These extensions typically add a `Download` button to the website, which users can click to download the data.
@@ -165,7 +165,7 @@ Batch download tools are software or command-line programs that automate the pro
 </div><br>
 
 
-## HTTP interface for file transfer
+## 2. HTTP interface for file transfer
 <span style="color: #ff3870;font-weight: 500;">(manually in the GUI or command line)</span>
 
 The HTTPS interface for file transfer can be accessed through a web browser and allows users to download files from a website securely using the HTTP protocol. Typically, it is a website with a **simplified browser of a file system**. Each file in the file system has an assigned URL link. When a **user clicks on a download link** or button, their browser sends a request to the server over an HTTPS connection, which encrypts the data being transferred. The user can then save the downloaded file to their local device.
@@ -190,7 +190,7 @@ wget https://ftp.uniprot.org/pub/databases/uniprot/README
 <span style="color: #ff3870;font-weight: 500;">Learn more about command-line tools for online downloading in the [next section](#command-line-tools)</span>.
 
 
-## Command-line tools
+## 3. Command-line tools
 <span style="color: #ff3870;font-weight: 500;">(command line)</span>
 
 Command-line tools are powerful and flexible, allowing users to download data with a few simple commands. The tools include `curl` and `wget` commands that can be used to download data directly from online resources by sending requests to the resource's URL. These commands use both [HTTP and HTTPS requests](#what-is-an-HTTP-request). By default, they use HTTP requests, but you can specify the use of HTTPS requests by adding the "s" to the end of the "http" in the URL.
@@ -234,7 +234,7 @@ wget -i download_list.txt
 <b>Follow more practical examples of batch download in the section <span style="color: #ff3870;font-weight: 500;">wget for multiple files and directories</span> in the hands-on tutorial: <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/03-1-tutorial-download-wget#wget-for-multiple-files-and-directories" target="_blank">Downloading Online Data using WGET  ⤴</a></b>.
 
 
-## API
+## 4. API
 <span style="color: #ff3870;font-weight: 500;">(command line or programming)</span>
 
 API (Application Programming Interface) is a set of protocols, tools, and standards for building software applications. APIs allow professional developers to **access data from websites and online resources programmatically** in a standardized way to enable different web applications to interact with each other and share data. This approach can be used for the extraction of data from various sources, such as social media platforms, financial data providers, and weather services.
@@ -258,7 +258,7 @@ However, **using a programming language to interact with an API** provides more 
 Whether you are a beginner or an experienced researcher, **learning how to use APIs can help you save time and improve the efficiency and reproducibility of your research**. <span style="color: #ff3870;font-weight: 500;">So, I highly recommend diving into the tutorial X (coming soon) and exploring the practical examples of API usage!</span>
 
 
-## Web scraping
+## 5. Web scraping
 <span style="color: #ff3870;font-weight: 500;">(programming)</span>
 
 Web scraping involves extracting data from websites by analyzing the website's HTML (source code) and identifying specific elements that contain the desired information. Web scraping can be done using **Python programming** language and dedicated libraries such as <a href="https://pypi.org/project/beautifulsoup4/" target="_blank">Beautiful Soup  ⤴</a>, <a href="https://pypi.org/project/Scrapy3/" target="_blank">Scrapy  ⤴</a>, or <a href="https://pypi.org/project/selenium/" target="_blank">Selenium  ⤴</a>. **Web scraping can be more complex and less reliable than using an API** [see section above](#api).

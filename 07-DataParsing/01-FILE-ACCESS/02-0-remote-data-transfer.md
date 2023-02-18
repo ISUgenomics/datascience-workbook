@@ -179,9 +179,9 @@ There are several popular FTP clients available, including:
 
 In FileZilla, you can use the command-line interface by launching the application with the `--cli` command-line option. <br>
 Once in the CLI, you can use commands like:
-* `open` to connect to an FTP server,
-* `put` and get to transfer files,
-* `exit` to close the connection.
+<li> `open` to connect to an FTP server, </li>
+<li> `put` and get to transfer files, </li>
+<li> `exit` to close the connection. </li>
 
 To display a list of available commands use the `--help` option:
 <code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
