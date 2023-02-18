@@ -574,7 +574,7 @@ header:
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;  
     <a href="07-DataParsing/01-FILE-ACCESS/03-3-tutorial-download-github-repos-git" style="color: #3f5a8a;">
-    Downloading Online Repository using GIT [<i>GitHub, Bitbucket, SourceForge</i>]</a></td></tr>
+    Downloading Online Repo using GIT [<i>GitHub, Bitbucket, SourceForge</i>]</a></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;  
