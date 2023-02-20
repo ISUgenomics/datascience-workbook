@@ -118,7 +118,7 @@ This output has been truncated
 
 
 
-## How to install and use Singularity on your locall machine (Mac)
+## How to install and use Singularity on your local machine (Mac)
 If you want to explore containers on your local Mac you canfFollow the directions on this website [http://singularity.lbl.gov/install-mac](http://singularity.lbl.gov/install-mac)
 
 Note: You may need to issue the following command if you update your operating system or get a new computer.
