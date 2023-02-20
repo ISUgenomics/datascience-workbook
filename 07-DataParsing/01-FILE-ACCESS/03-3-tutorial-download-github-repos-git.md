@@ -28,16 +28,17 @@ header:
 
 In general, online repositories can be used for any type of project that involves multiple files that change over time. Git is a powerful tool that facilitates management and version control of these repositories. In particular, **you can use `git` to download the repository you need**. That's what you will learn in this practical tutorial [ *go to the [hands-on section](#hands-on-tutorial)* ].
 
-To learn more about project management, explore the <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/01-code-mamangement-tools" target="_blank">Project Management Tools  ⤴</a> section in this workbook. Specifically, you can **get started with a few popular online platforms** that allow you to version control using Git:
+To learn more about project storage and version control, explore the <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/01-storage-version-control" target="_blank">09. Project Management: Storage & Version Control  ⤴</a> section in this workbook. Specifically, you can **get started with a few popular online hosting platforms** that allow you to version control using Git:
 
-* <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02-intro-to-github" target="_blank">Introduction to GitHub  ⤴</a>
-* <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/03-intro-to-bitbucket" target="_blank">Introduction to BitBucket  ⤴</a>
+* <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/03-repo-hosting-platforms" target="_blank">Online Hosting Platforms for GIT Repositories  ⤴</a>
+  * <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/04-intro-to-github" target="_blank">Introduction to GitHub  ⤴</a>
+  * <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/05-intro-to-bitbucket" target="_blank">Introduction to BitBucket  ⤴</a>
 
 <span style="color: #ff3870;font-weight: 500;">If you are planning to contribute to any repository</span>, it is worthwhile for you to learn more about the useful options offered by `Git`. In this case, use the hands-on tutorials that provide **instructions for more advanced git commands**:
 
-* <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02A-github-commands" target="_blank">Tutorial: Git commands (part 1)  ⤴</a>
-* <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02B-github-commands" target="_blank">Tutorial: Git commands (part 2)  ⤴</a>
-
+* <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02A-github-commands" target="_blank">GIT - a distributed version control system  ⤴</a>
+  * <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02B-github-commands" target="_blank">GIT Commands CheatSheet  ⤴</a>
+* <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/04A-github-advanced" target="_blank">GitHub for advanced users  ⤴</a>
 
 # Hands-on tutorial
 
@@ -213,8 +214,8 @@ When cloning a repository, Git automatically creates a remote named 'origin' tha
 
 If you are planning to contribute to any GIT-based repository, it is worthwhile for you to learn more about the useful options offered by git. In this case, use the hands-on tutorials that provide **instructions for more advanced git commands**:
 
-* <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02A-github-commands" target="_blank">Tutorial: Git commands (part 1)  ⤴</a>
-* <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02B-github-commands" target="_blank">Tutorial: Git commands (part 2)  ⤴</a>
+* <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02-intro-to-git" target="_blank">GIT - a distributed version control system  ⤴</a>
+  * <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02A-git-cheatsheet" target="_blank">GIT Commands CheatSheet  ⤴</a>
 
 ___
 # Further Reading

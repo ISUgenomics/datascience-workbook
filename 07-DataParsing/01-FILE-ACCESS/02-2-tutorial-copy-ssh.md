@@ -20,11 +20,11 @@ header:
 Copying data using SSH (Secure Shell connection) provides a **secure way to transfer data between two computers**. The **data is encrypted while it is being transmitted**, providing protection against eavesdropping and tampering. By establishing an encrypted connection and verifying the identity of the user, SSH protocol ensures that the data is transmitted securely.
 
 **The data can be copied or synchronized between two computers** using a command line tools such as:
-* **`scp` (secure copy)**, recommended for transferring individual files
+* **`scp` (secure copy)**, recommended for transferring individual files [[go to the section](#scp-secure-copy)]
 
 or
 
-* **`rsync` (secure synchronization)**, recommended to update the differences between the corresponding directories
+* **`rsync` (secure synchronization)**, recommended to update the differences between the corresponding directories [[go to the section](#rsync-secure-synchro)]
 
 ## *What you need to start?*
 
@@ -50,7 +50,15 @@ A <b>hostname</b> is a label that is assigned to a computer on a network, and it
 
 ## Command SYNTAX
 
-The command syntax for both command line tools, `scp` and `rsync`, are very similar and use similar components,
+The command syntax for both command line tools, `scp` and `rsync`, are very similar and use similar components:
+
+`scp <source> <destination>`  or  `rsync <source> <destination>`
+
+*e.g.,* <br>
+
+```
+scp /local/directory/file.txt username@remote-hostname:/remote/directory/
+```
 
 *where:* <br>
 * `file.txt` - is a data file you want to transfer
@@ -75,7 +83,7 @@ For example, <code>./documents/file.txt</code> is a relative path to a file in a
 - two directories above: <b> ../../ </b><br>
 ...and so on
 </span>
-</div>
+</div><br>
 
 
 # SCP (secure copy)
