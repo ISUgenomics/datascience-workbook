@@ -19,9 +19,11 @@ header:
 
 # Introduction
 
-Docker has established itself as a leading open-source platform for automating the deployment of applications within containers. The platform provides a comprehensive packaging solution, deploying and running applications in isolated environments, thus ensuring that applications are executed consistently across diverse computing environments. Docker's architecture promotes a convenient and efficient approach to application development and deployment, enabling developers to build, ship, and run applications easily, regardless of the underlying infrastructure.
-The lightweight and fast nature of Docker containers have further streamlined the process of building, deploying, and scaling applications. The platform also offers a centralized repository for sharing and storing containers, fostering collaboration among developers and enabling them to share applications more easily.
-The wide-ranging applications of Docker in multiple fields, such as software development, cloud computing, big data and analytics, and IoT, highlight its significance as a tool for modern application development and deployment. Its popularity and adoption have been growing rapidly, and it continues to be at the forefront of the containerization movement, leading the way in providing flexible and efficient solutions for application deployment.
+Docker is a lightweight platform for automating the deployment of applications within containers. The platform also offers a centralized repository for sharing and storing containers. Download Docker Desktop from the <a href="https://www.docker.com/" target="_blank">Docker Website ⤴</a>. Singularity is commonly used for HPC cluster environments whereas Docker is usually run locally as it needs admin privileges. Good thing about containers is the cross compatibility, so you can use either Singularity or Docker depending on the system available, and still use containers from both of the following:
+
+* https://singularity-hub.org/
+* https://hub.docker.com/search?q=
+
 
 
 
