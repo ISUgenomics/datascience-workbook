@@ -38,7 +38,7 @@ Subversion (SVN) is a popular **open-source centralized version control** system
 <span style="color: #ff3870;font-weight: 500;">To learn more about version control systems such as SVN or Git, follow the tutorials provided in section <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/01-storage-version-control" target="_blank">09. Project Management: Storage & Version Control  ⤴</a>.</span>
 
 
-## Get started with SVN
+## *Get started with SVN*
 
 To get started with SVN, check if it pre-installed on your computing machine, either local one or remote HPC system. In the terminal window type the following command:
 ```
@@ -162,7 +162,7 @@ get_folder.sh https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data
 
 If you need to download a single file from the GitHub repository you can use `svn export` or `wget`command in the terminal. This solution can be useful if you want to have the file downloaded directly to the remote machine such as HPC cluster.
 
-## *`wget` command*
+## • *use `wget` command*
 
 If you need to download a single file from the GitHub repository, the simplest solution is to use `wget` command.
 
@@ -189,7 +189,7 @@ You can use the <b>wget</b> command to download any type of file from online rep
 </div><br>
 
 
-## *`svn export` command*
+## • *use `svn export` command*
 
 <span style="color: #ff3870;font-weight: 500;">To get started with the SVN tool (e.g., to check if you have it installed) see section [Get started with SVN](#get-started-with-svn) in this tutorial.</span> To learn more about version control systems, including SVN and Git, explore tutorials in section <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/01-storage-version-control" target="_blank">09. Project Management: Storage & Version Control  ⤴</a> of this workbook.
 
@@ -260,7 +260,7 @@ If you want <b>to download a single folder from a GitHub repository to a remote 
 
 ## GitHub Folder
 
-## *Edge | Opera | Chrome | Chromium*
+## • *Edge | Opera | Chrome | Chromium*
 
 If you have one of the browsers: Edge, Opera, Chrome, or Chromium...
 
@@ -276,7 +276,7 @@ If you have one of the browsers: Edge, Opera, Chrome, or Chromium...
 <p align="center"><img width="800" src="../assets/images/01-github_in-browser_editor.gif"></p>
 
 
-## *Any browser: Safari and Firefox*
+## • *Any browser: Safari, Firefox*
 
 So far, the most robust and easiest way to download a single folder from a GitHub repository is to do it through an online editor such as codesandbox, which works reliably regardless of browser.
 
