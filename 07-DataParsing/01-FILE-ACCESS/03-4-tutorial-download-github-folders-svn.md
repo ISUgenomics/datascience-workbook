@@ -29,16 +29,15 @@ Downloading a single folder can be particularly useful if the repository is larg
 This can save time and resources and allow the developer to work more efficiently.
 
 
-# Download using SVN
+# Download using CLI
 
 <span style="color: #ff3870;font-weight: 500;">(command line on a local or remote machine)</span>
+
+## *Get started with SVN*
 
 Subversion (SVN) is a popular **open-source centralized version control** system that allows developers to manage and track changes to their codebase. SVN is widely used in software development, as it allows teams to collaborate and maintain a single, up-to-date version of their codebase. SVN can be considered as an **alternative for Git** *(distributed version control tool)* and may be a better choice for smaller teams or for organizations with a more centralized development structure.
 
 <span style="color: #ff3870;font-weight: 500;">To learn more about version control systems such as SVN or Git, follow the tutorials provided in section <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/01-storage-version-control" target="_blank">09. Project Management: Storage & Version Control  ⤴</a>.</span>
-
-
-## *Get started with SVN*
 
 To get started with SVN, check if it pre-installed on your computing machine, either local one or remote HPC system. In the terminal window type the following command:
 ```
@@ -85,7 +84,7 @@ brew install svn
 
 **Once you have installed SVN, you can start using it!**
 
-## GitHub Folder
+## **GitHub Folder**
 
 One common use case is to download a single folder from a GitHub repository or other remote repository using the `svn export` command.
 
@@ -158,7 +157,7 @@ get_folder.sh https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data
 </div><br>
 
 
-## GitHub File
+## **GitHub File**
 
 If you need to download a single file from the GitHub repository you can use `svn export` or `wget`command in the terminal. This solution can be useful if you want to have the file downloaded directly to the remote machine such as HPC cluster.
 
@@ -258,7 +257,7 @@ If you want <b>to download a single folder from a GitHub repository to a remote 
 </span>
 </div><br>
 
-## GitHub Folder
+## **GitHub Folder**
 
 ## • *Edge | Opera | Chrome | Chromium*
 
@@ -294,7 +293,7 @@ So far, the most robust and easiest way to download a single folder from a GitHu
 unzip isugenomics-data-wrangling-bin-data.zip
 ```
 
-## GitHub File
+## **GitHub File**
 
 If you need to download a single file from the GitHub repository to your local machine, you can do that directly from a web browser.
 
