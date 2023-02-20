@@ -1,8 +1,8 @@
 ---
 title: "Docker"
 layout: single
-author:
-author_profile: false
+author: Sharu Paul
+author_profile: TRUE
 header:
   overlay_color: "444444"
   overlay_image: /06-IntroToHPC/assets/images/06_hpc_banner.png
@@ -19,7 +19,9 @@ header:
 
 # Introduction
 
-
+Docker has established itself as a leading open-source platform for automating the deployment of applications within containers. The platform provides a comprehensive packaging solution, deploying and running applications in isolated environments, thus ensuring that applications are executed consistently across diverse computing environments. Docker's architecture promotes a convenient and efficient approach to application development and deployment, enabling developers to build, ship, and run applications easily, regardless of the underlying infrastructure.
+The lightweight and fast nature of Docker containers have further streamlined the process of building, deploying, and scaling applications. The platform also offers a centralized repository for sharing and storing containers, fostering collaboration among developers and enabling them to share applications more easily.
+The wide-ranging applications of Docker in multiple fields, such as software development, cloud computing, big data and analytics, and IoT, highlight its significance as a tool for modern application development and deployment. Its popularity and adoption have been growing rapidly, and it continues to be at the forefront of the containerization movement, leading the way in providing flexible and efficient solutions for application deployment.
 
 
 
