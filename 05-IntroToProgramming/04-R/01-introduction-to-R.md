@@ -10,7 +10,6 @@ header:
 
 {% include toc %}
 
-## <span style="color: #ff3870;">New content coming soon!</span>
 # Installation of R and RStudio, and packages
 https://datascience.101workbook.org/04-DevelopmentEnvironment/03B-tutorial-setting-up-rstudio
 
@@ -729,7 +728,7 @@ Reading data in:
 
 
 ```r
-gene_nums_mirror <- read.csv( "up_down_gene_numbers.csv" )
+gene_nums_mirror <- read.csv( "../assets/data/up_down_gene_numbers.csv" )
 gene_nums_mirror
 ```
 
