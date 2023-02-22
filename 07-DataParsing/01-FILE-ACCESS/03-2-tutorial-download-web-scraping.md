@@ -520,7 +520,7 @@ Statistics of local complexity in amino acid sequence and sequence database.</a>
 <code style="background-color: #e6f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size: 0.8em;">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for tag in to_remove: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; elem = elem.replace(tag, '')
-</code><br>
+</code>
 
 <br>You should get something like this:
 
@@ -530,7 +530,7 @@ Statistics of local complexity in amino acid sequence and sequence database.</a>
     Comput. Chem. 17149–163, 1993.
 </code>
 
-<br>3. In the next step, we replace multiple white characters with a single space and split by **'\<br>'** publications for a single tool to create a separate record for each. Now, the **elem** becomes a list of individual publication records.
+<br>3. In the next step, we replace multiple white characters with a single space and split by <b>'&lt;br&gt;'</b> publications for a single tool to create a separate record for each. Now, the <b>elem</b> becomes a list of individual publication records.
 
 <code style="background-color: #e6f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size: 0.8em;">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; elem = ' '.join(elem.split()).split('&lt;br&gt;')
@@ -538,11 +538,11 @@ Statistics of local complexity in amino acid sequence and sequence database.</a>
 
 Finally, once we make sure the publication record contains an HTML attribute *href* storing the URL, we append such a record to the citation list, which will be used later to match publication records with a tool.
 <br><hr>
-</details><br>
+</details>
 
 <code style="background-color: #d9d9e3; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
-DATA = {} <br>
-tool = '' <br>
+<br>DATA = {}
+<br>tool = '' <br>
 for i in content.find_elements(By.TAG_NAME, 'a'): <br>
  &emsp; &emsp; if len(i.get_attribute("textContent").split()) < 2: <br>
  &emsp; &emsp; &emsp; &emsp; tool = i.get_attribute("textContent") <br>
@@ -561,10 +561,10 @@ for i in content.find_elements(By.TAG_NAME, 'a'): <br>
 
 <details><summary>An explanation of what the script does...</summary>
 
-<br>While iterating over all links in the page content, once the <i>textContent</i> does not correspond to the tool, it is considered a publication record, parsed in the **elif** statement. First, we take the <i>textContent</i> and create the cleansed string stored in the <b>cite</b> variable to use as a search query in the <b>citation</b> list. Once found, the matching item from the citation list is added as a second field in the value of the tool key in the DATA dictionary.
+<br>While iterating over all links in the page content, once the <i>textContent</i> does not correspond to the tool, it is considered a publication record, parsed in the <b>elif</b> statement. First, we take the <i>textContent</i> and create the cleansed string stored in the <b>cite</b> variable to use as a search query in the <b>citation</b> list. Once found, the matching item from the citation list is added as a second field in the value of the tool key in the DATA dictionary.
 <br>
-<br>Now you are ready to print on the screen all data retrieved in the new format TOOL : URL : PUBLICATIONS.
-<br>
+<br>Now you are ready to print on the screen all data retrieved in the new format <br>TOOL : URL : PUBLICATIONS.
+<br><hr>
 </details>
 
 ```
