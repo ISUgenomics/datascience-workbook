@@ -397,36 +397,35 @@ python scrap_biapps_web_service.py
 
 **Expected OUTPUT:**
 
-```
-TOOL : URL
-
-PSPredictor : http://www.pkumdl.cn:8000/PSPredictor
-SEG : ftp://ftp.ncbi.nih.gov/pub/seg/seg/
-fLPS : http://biology.mcgill.ca/faculty/harrison/flps.html
-CAST2 : http://structure.biol.ucy.ac.cy/CAST2/help.html
-SIMPLE : https://github.com/john-hancock/SIMPLE-V6
-HMMER3.3 : http://hmmer.org/
-PSIPRED : http://bioinf.cs.ucl.ac.uk/psipred/
-RAPTOR-X : http://raptorx.uchicago.edu/
-PORTER-5 : http://distilldeep.ucd.ie/porter/
-SPIDER-3 : https://sparks-lab.org/server/spider3/
-FESS : http://protein.bio.unipd.it/fells/
-PaleAle5.0 : http://distilldeep.ucd.ie/paleale/quickhelp.html
-SPOT-1D : https://sparks-lab.org/server/spot-1d/
-IUPred2A : https://iupred2a.elte.hu/
-DISOPRED3 : http://bioinf.cs.ucl.ac.uk/web_servers/psipred_server/disopred_overview/
-SPOT-Disorder2 : https://sparks-lab.org/server/spot-disorder/
-VSL2 : http://www.dabi.temple.edu/disprot/readmeVSL2.htm
-PONDR : http://www.pondr.com/
-PONDR-FIT : http://original.disprot.org/pondr-fit.php
-RAPTORX-Contact : http://raptorx.uchicago.edu/
-ResPRE : https://zhanglab.ccmb.med.umich.edu/ResPRE/
-SPOT-Contact : https://sparks-lab.org/server/spot-contact/
-ELM : http://elm.eu.org/elms
-LARKS : https://science.sciencemag.org/content/359/6376/698
-GAR : https://doi.org/10.1016/j.jmb.2018.06.014
-phosphosites : https://doi.org/10.3390/ijms20215501
-```
+<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size: 0.8em;">
+<br>TOOL : URL
+<br>PSPredictor : http://www.pkumdl.cn:8000/PSPredictor
+<br>SEG : ftp://ftp.ncbi.nih.gov/pub/seg/seg/
+<br>fLPS : http://biology.mcgill.ca/faculty/harrison/flps.html
+<br>CAST2 : http://structure.biol.ucy.ac.cy/CAST2/help.html
+<br>SIMPLE : https://github.com/john-hancock/SIMPLE-V6
+<br>HMMER3.3 : http://hmmer.org/
+<br>PSIPRED : http://bioinf.cs.ucl.ac.uk/psipred/
+<br>RAPTOR-X : http://raptorx.uchicago.edu/
+<br>PORTER-5 : http://distilldeep.ucd.ie/porter/
+<br>SPIDER-3 : https://sparks-lab.org/server/spider3/
+<br>FESS : http://protein.bio.unipd.it/fells/
+<br>PaleAle5.0 : http://distilldeep.ucd.ie/paleale/quickhelp.html
+<br>SPOT-1D : https://sparks-lab.org/server/spot-1d/
+<br>IUPred2A : https://iupred2a.elte.hu/
+<br>DISOPRED3 : http://bioinf.cs.ucl.ac.uk/web_servers/psipred_server/disopred_overview/
+<br>SPOT-Disorder2 : https://sparks-lab.org/server/spot-disorder/
+<br>VSL2 : http://www.dabi.temple.edu/disprot/readmeVSL2.htm
+<br>PONDR : http://www.pondr.com/
+<br>PONDR-FIT : http://original.disprot.org/pondr-fit.php
+<br>RAPTORX-Contact : http://raptorx.uchicago.edu/
+<br>ResPRE : https://zhanglab.ccmb.med.umich.edu/ResPRE/
+<br>SPOT-Contact : https://sparks-lab.org/server/spot-contact/
+<br>ELM : http://elm.eu.org/elms
+<br>LARKS : https://science.sciencemag.org/content/359/6376/698
+<br>GAR : https://doi.org/10.1016/j.jmb.2018.06.014
+<br>phosphosites : https://doi.org/10.3390/ijms20215501
+</code><br>
 
 **STEP B:** Retrieve publications with URLs and match them with the tools
 
@@ -583,23 +582,22 @@ python scrap_biapps_web_service.py
 
 **Expected OUTPUT:**
 
-```
-TOOL : URL : PUBLICATIONS
-
-PSPredictor : http://www.pkumdl.cn:8000/PSPredictor
-  -  "https://doi.org/10.1101/842336" :  Prediction of liquid-liquid phase separation proteins using machine learning. T. Sun, Q. Li, Y. Xu, Z. Zhang, L. Lai, J. Pei., in press, 2019.
-
-SEG : ftp://ftp.ncbi.nih.gov/pub/seg/seg/
-  -  "https://www.sciencedirect.com/science/article/pii/009784859385006X" :  Statistics of local complexity in amino acid sequence and sequence database. Wootton, J.C. and Federhen, S., Comput. Chem. 17149–163, 1993.
-
-fLPS : http://biology.mcgill.ca/faculty/harrison/flps.html
-  -  "https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-017-1906-3" :  fLPS: Fast discovery of compositional biases for the protein universe. Harrison, P.M., BMC Bioinformatics, 18(1):476, 2017.
-
-CAST2 : http://structure.biol.ucy.ac.cy/CAST2/help.html
-  -  "https://academic.oup.com/bioinformatics/article/16/10/915/223582" :  CAST: an iterative algorithm for the complexity analysis of sequence tracts. Promponas, V.J. et al., Bioinformatics, 16(10), 915–922, 2000.
-
-[...]
-```
+<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size: 0.8em;">
+<br>TOOL : URL : PUBLICATIONS
+<br>PSPredictor : http://www.pkumdl.cn:8000/PSPredictor
+<br>  -  "https://doi.org/10.1101/842336" :  Prediction of liquid-liquid phase separation proteins using machine learning. T. Sun, Q. Li, Y. Xu, Z. Zhang, L. Lai, J. Pei., in press, 2019.
+<br>
+<br>SEG : ftp://ftp.ncbi.nih.gov/pub/seg/seg/
+<br>  -  "https://www.sciencedirect.com/science/article/pii/009784859385006X" :  Statistics of local complexity in amino acid sequence and sequence database. Wootton, J.C. and Federhen, S., Comput. Chem. 17149–163, 1993.
+<br>
+<br>fLPS : http://biology.mcgill.ca/faculty/harrison/flps.html
+<br>  -  "https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-017-1906-3" :  fLPS: Fast discovery of compositional biases for the protein universe. Harrison, P.M., BMC Bioinformatics, 18(1):476, 2017.
+<br>
+<br>CAST2 : http://structure.biol.ucy.ac.cy/CAST2/help.html
+<br>  -  "https://academic.oup.com/bioinformatics/article/16/10/915/223582" :  CAST: an iterative algorithm for the complexity analysis of sequence tracts. Promponas, V.J. et al., Bioinformatics, 16(10), 915–922, 2000.
+<br>
+<br>[...]
+</code><br>
 
 
 ___
