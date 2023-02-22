@@ -386,7 +386,7 @@ DATA = {}
 print("\n\nTOOL : URL\n")
 <br>&emsp; for i in DATA:
 <br>&emsp; &emsp; print(i, ":", DATA[i])
-</code><br>
+</code><hr>
 </details><br>
 
 **Run script in the terminal:**
