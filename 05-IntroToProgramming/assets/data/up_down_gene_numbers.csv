@@ -1,0 +1,11 @@
+stress,responsiveness,num_genes
+cold,up,1743
+cold,down,2303
+osmotic,up,1013
+osmotic,down,1013
+heat,up,713
+heat,down,505
+salt,up,785
+salt,down,726
+drought,up,826
+drought,down,913
