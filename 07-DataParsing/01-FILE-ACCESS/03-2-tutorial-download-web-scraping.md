@@ -91,7 +91,7 @@ In this example we will use Beautiful Soup library in Python to scrape data from
 3. Identify the specific elements containing the data you want to extract using Beautiful Soup's *tag*, *attribute*, and *text filters*.
 4. Extract the data and save it to a local file using Python's built-in input-output functions.
 
-## Install requirements
+## **Install requirements**
 
 Below you can find some of the essential libraries and components you need for web scraping in Python. There are many other libraries and tools that you might find useful depending on the specific requirements of your project.
 
@@ -225,11 +225,11 @@ pip install pandas
 
 ---
 
-## Create web scraping script
+## **Create web scraping script**
 
 Web scraping has become an increasingly important tool for researchers and data scientists looking to extract valuable information from online resources. In this practical tutorial, we will explore the process of web scraping by using a real-life example.
 
-## *Template Code*
+## *Simple Template Code*
 
 Here is a basic template of the Python web scraping script that demonstrates how to retrive data from a webpage using Beautiful Soup and save it to a local file:
 
