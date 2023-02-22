@@ -100,7 +100,7 @@ Below you can find some of the essential libraries and components you need for w
 <br><span style="font-style:italic;">
 <b>If you're using a Python virtual environment</b>, make sure to activate it before installing any packages to ensure that the packages are installed in the virtual environment and not globally.
 </span>
-</div><br>
+</div>
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
@@ -116,7 +116,7 @@ Once Jupyter Lab is installed, you can launch it directly from the command line 
 <code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
 jupyter lab
 </code>
-</div><br>
+</div>
 
 
 ##  • *Python*
@@ -134,7 +134,7 @@ Python is a popular high-level **programming language** that is good for web scr
 If you run into trouble, go to the practical tutorials of this workbook in section <a href="https://datascience.101workbook.org/03-SetUpComputingMachine/03-various-methods-of-software-installation" target="_blank">03. Setting Up Computing Machine: Various Methods of Software Installation  ⤴</a>, which will show you step-by-step how to install Python on a given operating system.
 </span>
 </div>
-</details><br>
+</details>
 
 
 ##  • *urllib*
@@ -159,7 +159,7 @@ This library is used to **send HTTP requests** and handle responses in Python. I
 <code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
 pip install requests
 </code>
-</details><br>
+</details>
 
 
 ##  • *BeautifulSoup*
@@ -173,7 +173,7 @@ This library is used to **extract data from HTML and XML documents**. It provide
 <code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
 pip install beautifulsoup4
 </code>
-</details><br>
+</details>
 
 
 ##  • *selenium*
@@ -187,14 +187,14 @@ This library is used to automate web browsers and simulate user interactions wit
 <code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
 pip install selenium
 </code>
-</details><br>
+</details>
 
 <div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">WARNING:</span>
 <br><span style="font-style:italic;">
 In order to use Selenium for web scraping, the user will also need to download and <b>install a Webdriver, which will act as a virtual user</b>, interacting with the website and triggering the rendering of the specific parts of the page that the user wants to scrape.
 </span>
-</div><br>
+</div>
 
 <details><summary><b>Webdriver Installation:</b></summary>
 
@@ -203,7 +203,7 @@ In order to use Selenium for web scraping, the user will also need to download a
 <code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
 pip install webdriver_manager
 </code>
-</details><br>
+</details>
 
 
 ##  • *pandas*
@@ -307,7 +307,8 @@ Once you assessed the website is feasible to scrape, you can start developing a 
 <br><span style="font-style:italic;">
 It's important to note that this <b>script is likely not to be transferable</b> to other websites or pages, as the structure of the HTML and the location of the relevant data will likely differ from site to site. Additionally, the <b>website may be updated or changed by its developers</b>, causing the web scraping script to become outdated and ineffective.
 </span>
-</div><br>
+</div>
+
 
 <span style="color: #ff3870;font-weight: 500;">This step assumes you have the web scraping software installed!</span> <br>
 <b>For this example, you need: python3, selenium, webdriver_manager </b><br>
@@ -384,13 +385,12 @@ phosphosites : https://doi.org/10.3390/ijms20215501
 * Match Publications with a corresponding tool
 
 
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
+<code style="background-color: #d9d9e3; padding: 10px 10px; width:100%; display: block; margin-top: 10px;"><br>
 from selenium import webdriver <br>
 from selenium.webdriver.chrome.service import Service <br
 from webdriver_manager.chrome import ChromeDriverManager <br>
 from selenium.webdriver.common.by import By <br>
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install())) <br>
-
 driver.get('https://biapss.chem.iastate.edu/documentation.html') <br>
 content = driver.find_elements(By.ID, 'tab17')[0] <br>
 </code>
@@ -414,7 +414,7 @@ for e in elements:
         citations.append(clean_record)
 ```
 
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
+<code style="background-color: #d9d9e3; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
 DATA = {} <br>
 tool = '' <br>
 for i in content.find_elements(By.TAG_NAME, 'a'): <br>
