@@ -344,21 +344,21 @@ print("\n\nTOOL : URL\n")
 
 <br>0. Create a Python script file, e.g., <i>scrap_biapps_web_service.py</i>
 <br>1. Import all necessary libraries
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size: 0.8em;">
 from selenium import webdriver
 <br>from selenium.webdriver.common.by import By
 <br>from selenium.webdriver.chrome.service import Service
 <br>from webdriver_manager.chrome import ChromeDriverManager
 </code>
 <br>2. Activate the webdriver for your web browser. In this example, we use the Chrome browser, but you can adjust the script for other supported browsers, including Edge, Firefox, IE, and Safari. <br>[<a href="https://www.selenium.dev/documentation/webdriver/browsers/" target="_blank"> learn more at selenium.dev  ⤴</a> ]
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size: 0.8em;">
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 </code>
 <br>3. Send a request to the website and get the WebElement with the text content you want to retrieve.
 <br><i>In this example we want to find an HTML element with an ID='tab17'. We know which ID it is because we have identified this element in the developer's tool 'Inspect Element' as an external container where descriptions of all software are stored (see steps 2 and 3 above).
 <br>This step returns a list of WebElements that match the query. Since only one 'tab17' exists, the first element [0] on the list (in Python, indexing starts from 0) is what we want.</i>
 
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size: 0.8em;">
 driver.get('https://biapss.chem.iastate.edu/documentation.html')
 <br>content = driver.find_elements(By.ID, 'tab17')[0]
 </code><br>
@@ -372,7 +372,7 @@ You can <b>find elements</b> on the website <b>by</b> several HTML attributes, i
 
 <br>4. From the content, select all WebElements that are a link using <b>(By.TAG_NAME, 'a')</b> query and parse these elements to extract the <b>textContent</b> <i>(tool name)</i> and <b>href</b> attribute <i>(tool link)</i> of all the software with the one-word tool name.
 <br><i>Since the page text contains many more links, not only for tools' source code (single orange words) but also for related publications (pale yellow publication titles), we first filter out all links that have "textContent" of the link longer than a single word. Then for every record, we add an entry to the DATA dictionary where the key is the tool name, and the value is the URL (i.e., href attribute).</i>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size: 0.8em;">
 DATA = {}
 <br>tool = ''
 <br>for i in content.find_elements(By.TAG_NAME, 'a'):
@@ -382,7 +382,7 @@ DATA = {}
 </code>
 
 <br>5. Finally, we print the DATA dictionary to display the retrieved information on the screen in the format TOOL : URL.
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size: 0.8em;">
 print("\n\nTOOL : URL\n")
 <br>&emsp; for i in DATA:
 <br>&emsp; &emsp; print(i, ":", DATA[i])
@@ -477,7 +477,7 @@ for e in elements:
 <code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size: 0.8em;">
   "https://www.sciencedirect.com/science/article/pii/009784859385006X" : Statistics of local complexity in amino acid sequence and sequence database.</a> Wootton, J.C. and Federhen, S., Comput. Chem. 17149–163, 1993.
 </code>
-<br>
+
 <br>1. First, transform the WebElement object to plain HTML code (i.e., get website textContent while keeping all innerHTML tags). We need this form of content to extract URLs <i>(HTML href attribute)</i> to the publications which are not visible in the website interface (i.e., textContent). However, this means we must remove all unnecessary HTML tags stored in the <b>to_remove</b> list, to get cleansed publication records.
 
 <code style="background-color: #e6f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size: 0.8em;">
@@ -538,7 +538,7 @@ Statistics of local complexity in amino acid sequence and sequence database.</a>
 
 Finally, once we make sure the publication record contains an HTML attribute *href* storing the URL, we append such a record to the citation list, which will be used later to match publication records with a tool.
 <br><hr>
-</details>
+</details><br>
 
 <code style="background-color: #d9d9e3; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
 <br>DATA = {}
@@ -565,7 +565,7 @@ for i in content.find_elements(By.TAG_NAME, 'a'): <br>
 <br>
 <br>Now you are ready to print on the screen all data retrieved in the new format <br>TOOL : URL : PUBLICATIONS.
 <br><hr>
-</details>
+</details><br>
 
 ```
 print("\n\nTOOL : URL : PUBLICATIONS\n")
