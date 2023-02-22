@@ -722,7 +722,7 @@ write.csv(field_data, "field_data.csv", quote = F, row.names = F)
 
 In this section we will see how to make the plot shown below.
 
-![](../assets/images/04_introR_degs.png)
+![](../assets/images/04_intro_R_degs.png)
 
 Reading data in:
 
