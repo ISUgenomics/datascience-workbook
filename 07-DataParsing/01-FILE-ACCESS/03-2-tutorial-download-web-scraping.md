@@ -465,7 +465,8 @@ for e in elements:
 <details><summary>An explanation of what the script does...</summary>
 
 <br>As you notice, we add the block of code just below the <b>content</b> that stores the contents of the right panel of the documentation tab of the BIAPSS website once the "Tools & References" button (in the menu of the left panel) is clicked. The task is to retrieve publication records with corresponding links and keep them on the list as clean records (i.e., with all HTML tags removed). <br>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
+
+<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size: 0.8em;">
   &lt;br&gt;&lt;b&gt;CITE: &lt;/b&gt; &lt;a href="https://www.sciencedirect.com/science/article/pii/009784859385006X" target="_blank"  style="color:#F3E0BE;"&gt; <br>
   &nbsp;&nbsp;&nbsp;Statistics of local complexity in amino acid sequence and sequence database.</a> Wootton, J.C. and Federhen, S., <br>
   &nbsp;&nbsp;&nbsp;&lt;i&gt;Comput. Chem. 17149–163&lt;/i&gt;, 1993.
