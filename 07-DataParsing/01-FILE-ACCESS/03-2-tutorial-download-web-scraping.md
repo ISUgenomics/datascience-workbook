@@ -472,70 +472,72 @@ for e in elements:
   &nbsp;&nbsp;&nbsp;&lt;i&gt;Comput. Chem. 17149–163&lt;/i&gt;, 1993.
 </code>
 
-<br>transform the above to get the below:
+<br>transform the above to get the below:<br>
 
-
- "https://www.sciencedirect.com/science/article/pii/009784859385006X" : Statistics of local complexity in amino acid sequence and sequence database.</a> Wootton, J.C. and Federhen, S., Comput. Chem. 17149–163, 1993.
-
+<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size: 0.8em;">
+  "https://www.sciencedirect.com/science/article/pii/009784859385006X" : Statistics of local complexity in amino acid sequence and sequence database.</a> Wootton, J.C. and Federhen, S., Comput. Chem. 17149–163, 1993.
+</code>
 <br>
 <br>1. First, transform the WebElement object to plain HTML code (i.e., get website textContent while keeping all innerHTML tags). We need this form of content to extract URLs <i>(HTML href attribute)</i> to the publications which are not visible in the website interface (i.e., textContent). However, this means we must remove all unnecessary HTML tags stored in the <b>to_remove</b> list, to get cleansed publication records.
 
-
-elements = content.get_attribute("innerHTML").split('\<br>\<br>') <br>
-to_remove = ['\<b>', '\</b>', '\<i>', '\</i>', '\<p>', '\</p>', '\t', '\</a>', 'target="_blank"', 'style="color:#F3
+<code style="background-color: #e6f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size: 0.8em;">
+elements = content.get_attribute("innerHTML").split('&lt;br&gt;&lt;br&gt;') <br>
+to_remove = ['&lt;b&gt;', '&lt;/b&gt;', '&lt;i&gt;', '&lt;/i&gt;', '&lt;p&gt;', '&lt;/p&gt;', '\t', '&lt;/a&gt;', 'target="_blank"', 'style="color:#F3
 E0BE;"']
-
+</code>
 
 <br>Now, <b>elements</b> is a list of text strings full of various HTML tags <i>(see to_remove list)</i>. Each string on the list corresponds to the single tool and may look like this:
 
-
-\<br>\<a href="ftp://ftp.ncbi.nih.gov/pub/seg/seg/" target="_blank"\>SEG\</a> is a sequence-based tool for detecting LCRs within protein sequences. <br>
-    SEG identifies the LCR, and then performs local optimization by masking with Xs the low-complexity regions within the protein sequence. <br>
-    \<br>SEG is available as a \<a href="ftp://ftp.ncbi.nih.gov/pub/seg/seg/" target="_blank">command-line tool\</a>. <br>
-    \<br>\<b>CITE: \</b> \<a href="https://www.sciencedirect.com/science/article/pii/009784859385006X" target="_blank" style="color:#F3E0BE;"\> <br
-    Statistics of local complexity in amino acid sequence and sequence database.\</a> Wootton, J.C. and Federhen, S.,
-    \<i>Comput. Chem. 17149–163\</i>, 1993.
-
+<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size: 0.8em;">
+&lt;br&gt;&lt;a href="ftp://ftp.ncbi.nih.gov/pub/seg/seg/" target="_blank"&gt;SEG&lt;/a&gt; is a sequence-based tool for detecting LCRs within protein sequences. <br>
+&nbsp;&nbsp;&nbsp; SEG identifies the LCR, and then performs local optimization by masking with Xs the low-complexity regions within the protein sequence. <br>
+&nbsp;&nbsp;&nbsp; &lt;br&gt;SEG is available as a &lt;a href="ftp://ftp.ncbi.nih.gov/pub/seg/seg/" target="_blank">command-line tool&lt;/a&gt;. <br>
+&nbsp;&nbsp;&nbsp; &lt;br&gt;&lt;b&gt;CITE: &lt;/b&gt; &lt;a href="https://www.sciencedirect.com/science/article/pii/009784859385006X" target="_blank" style="color:#F3E0BE;"&gt; <br>
+&nbsp;&nbsp;&nbsp; Statistics of local complexity in amino acid sequence and sequence database.\</a> Wootton, J.C. and Federhen, S., <br>
+&nbsp;&nbsp;&nbsp; &lt;i&gt;Comput. Chem. 17149–163&lt;/i&gt;, 1993.
+</code>
 
 <br>2. We will use Python to parse these text strings to extract clear URL : PUBLICATION records.
 
-
-for e in elements:
-    if "CITE:" in e:
-        elem = e.split("CITE:")[-1]
-
+<code style="background-color: #e6f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size: 0.8em;">
+for e in elements: <br>
+&nbsp;&nbsp;&nbsp; if "CITE:" in e: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; elem = e.split("CITE:")[-1] <br>
+</code>
 
 While iterating elements:
 <li>first, select only those that contain the "CITE:" keyword</li>
 <li>then split the string by this keyword and keep only the last [-1] part of the string, i.e., the part corresponding to publications</li>
 
-
-</b> <a href="https://www.sciencedirect.com/science/article/pii/009784859385006X" target="_blank" style="color:#F3E0BE;">
+<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size: 0.8em;">
+&lt;/b&gt; &lt;a href="https://www.sciencedirect.com/science/article/pii/009784859385006X" target="_blank" style="color:#F3E0BE;"&gt;
 Statistics of local complexity in amino acid sequence and sequence database.</a> Wootton, J.C. and Federhen, S.,
-<i>Comput. Chem. 17149–163</i>, 1993.
-
-
+&lt;i&gt;Comput. Chem. 17149–163&lt;/i&gt;, 1993.
+</code>
+<br>
 <li>This part of the string is stored in the <b>elem</b> variable now. Remove all HTML tags from it by iterating the <i>to_remove</i> list:</li>
 
+<code style="background-color: #e6f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size: 0.8em;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for tag in to_remove: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; elem = elem.replace(tag, '')
+</code><br>
 
-        for tag in to_remove:
-            elem = elem.replace(tag, '')
+<br>You should get something like this:
 
-You should get something like this:
-
-<a href="https://www.sciencedirect.com/science/article/pii/009784859385006X"  >
+<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size: 0.8em;">
+&lt;a href="https://www.sciencedirect.com/science/article/pii/009784859385006X"  &gt;
     Statistics of local complexity in amino acid sequence and sequence database. Wootton, J.C. and Federhen, S.,
     Comput. Chem. 17149–163, 1993.
-
+</code>
 
 <br>3. In the next step, we replace multiple white characters with a single space and split by **'\<br>'** publications for a single tool to create a separate record for each. Now, the **elem** becomes a list of individual publication records.
 
-
-        elem = ' '.join(elem.split()).split('<br>')
-
+<code style="background-color: #e6f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size: 0.8em;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; elem = ' '.join(elem.split()).split('&lt;br&gt;')
+</code><br>
 
 Finally, once we make sure the publication record contains an HTML attribute *href* storing the URL, we append such a record to the citation list, which will be used later to match publication records with a tool.
-<br>
+<br><hr>
 </details><br>
 
 <code style="background-color: #d9d9e3; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
