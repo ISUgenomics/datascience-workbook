@@ -350,7 +350,7 @@ from selenium import webdriver
 <br>from selenium.webdriver.chrome.service import Service
 <br>from webdriver_manager.chrome import ChromeDriverManager
 </code>
-<br>2. Activate the webdriver for your web browser. In this example, we use the Chrome browser, but you can adjust the script for other supported browsers, including Edge, Firefox, IE, and Safari. [<a href="https://www.selenium.dev/documentation/webdriver/browsers/" target="_blank"> learn more at selenium.dev  ⤴</a> ]
+<br>2. Activate the webdriver for your web browser. In this example, we use the Chrome browser, but you can adjust the script for other supported browsers, including Edge, Firefox, IE, and Safari. <br>[<a href="https://www.selenium.dev/documentation/webdriver/browsers/" target="_blank"> learn more at selenium.dev  ⤴</a> ]
 <code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 </code>
@@ -465,39 +465,44 @@ for e in elements:
 <details><summary>An explanation of what the script does...</summary>
 
 <br>As you notice, we add the block of code just below the <b>content</b> that stores the contents of the right panel of the documentation tab of the BIAPSS website once the "Tools & References" button (in the menu of the left panel) is clicked. The task is to retrieve publication records with corresponding links and keep them on the list as clean records (i.e., with all HTML tags removed). <br>
-```
-<br><b>CITE: </b> <a href="https://www.sciencedirect.com/science/article/pii/009784859385006X" target="_blank" style="color:#F3E0BE;">
-Statistics of local complexity in amino acid sequence and sequence database.</a> Wootton, J.C. and Federhen, S.,
-<i>Comput. Chem. 17149–163</i>, 1993.
-```
-transform the above to get the below:
-```
-"https://www.sciencedirect.com/science/article/pii/009784859385006X" : Statistics of local complexity in amino acid sequence and sequence database.</a> Wootton, J.C. and Federhen, S., Comput. Chem. 17149–163, 1993.
-```
+>
+> \<br>\<b>CITE: \</b> \<a href="https://www.sciencedirect.com/science/article/pii/009784859385006X" target="_blank"  style="color:#F3E0BE;"\>
+> Statistics of local complexity in amino acid sequence and sequence database.</a> Wootton, J.C. and Federhen, S.,
+> \<i>Comput. Chem. 17149–163\</i>, 1993.
 
+<br>transform the above to get the below:
+
+>
+> "https://www.sciencedirect.com/science/article/pii/009784859385006X" : Statistics of local complexity in amino acid sequence and sequence database.</a> Wootton, J.C. and Federhen, S., Comput. Chem. 17149–163, 1993.
+
+<br>
 <br>1. First, transform the WebElement object to plain HTML code (i.e., get website textContent while keeping all innerHTML tags). We need this form of content to extract URLs <i>(HTML href attribute)</i> to the publications which are not visible in the website interface (i.e., textContent). However, this means we must remove all unnecessary HTML tags stored in the <b>to_remove</b> list, to get cleansed publication records.
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
-elements = content.get_attribute("innerHTML").split('\<br>\<br>')
-<br>to_remove = ['\<b>', '\</b>', '\<i>', '\</i>', '\<p>', '\</p>', '\t', '\</a>', 'target="_blank"', 'style="color:#F3
+
+>
+> elements = content.get_attribute("innerHTML").split('\<br>\<br>') <br>
+> to_remove = ['\<b>', '\</b>', '\<i>', '\</i>', '\<p>', '\</p>', '\t', '\</a>', 'target="_blank"', 'style="color:#F3
 E0BE;"']
-</code>
+
 
 <br>Now, <b>elements</b> is a list of text strings full of various HTML tags <i>(see to_remove list)</i>. Each string on the list corresponds to the single tool and may look like this:
-```
-<br><a href="ftp://ftp.ncbi.nih.gov/pub/seg/seg/" target="_blank">SEG</a> is a sequence-based tool for detecting LCRs within protein sequences.
-    SEG identifies the LCR, and then performs local optimization by masking with Xs the low-complexity regions within the protein sequence.
-    <br>SEG is available as a <a href="ftp://ftp.ncbi.nih.gov/pub/seg/seg/" target="_blank">command-line tool</a>.
-    <br><b>CITE: </b> <a href="https://www.sciencedirect.com/science/article/pii/009784859385006X" target="_blank" style="color:#F3E0BE;">
-    Statistics of local complexity in amino acid sequence and sequence database.</a> Wootton, J.C. and Federhen, S.,
-    <i>Comput. Chem. 17149–163</i>, 1993.
-```
+
+>
+> \<br>\<a href="ftp://ftp.ncbi.nih.gov/pub/seg/seg/" target="_blank"\>SEG\</a> is a sequence-based tool for detecting LCRs within protein sequences. <br>
+>    SEG identifies the LCR, and then performs local optimization by masking with Xs the low-complexity regions within the protein sequence. <br>
+>    \<br>SEG is available as a \<a href="ftp://ftp.ncbi.nih.gov/pub/seg/seg/" target="_blank">command-line tool\</a>. <br>
+>    \<br>\<b>CITE: \</b> \<a href="https://www.sciencedirect.com/science/article/pii/009784859385006X" target="_blank" style="color:#F3E0BE;"\> <br
+>    Statistics of local complexity in amino acid sequence and sequence database.\</a> Wootton, J.C. and Federhen, S.,
+    \<i>Comput. Chem. 17149–163\</i>, 1993.
+
 
 <br>2. We will use Python to parse these text strings to extract clear URL : PUBLICATION records.
+
 ```
 for e in elements:
     if "CITE:" in e:
         elem = e.split("CITE:")[-1]
 ```
+
 While iterating elements:
 <li>first, select only those that contain the "CITE:" keyword</li>
 <li>then split the string by this keyword and keep only the last [-1] part of the string, i.e., the part corresponding to publications</li>
