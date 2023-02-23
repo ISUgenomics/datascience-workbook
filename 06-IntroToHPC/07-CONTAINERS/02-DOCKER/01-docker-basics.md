@@ -18,21 +18,21 @@ header:
 
 ## What are Containers?
 Containers are executable units of software containing anything from a small process to a larger application, along with its libraries and dependencies. Start with the <a href="https://datascience.101workbook.org/06-IntroToHPC/07-CONTAINERS/01-SINGULARITY/01-singularity-basics" target="_blank">Singularity ⤴</a> tutorial to get to know about using containers. <br>
-<br>
+
 
 ## Docker setup
-Docker is a lightweight platform for automating the deployment of applications within containers. The platform also offers a centralized repository for sharing and storing containers. Download Docker Desktop from the <a href="https://www.docker.com/" target="_blank">Docker Website ⤴</a>. Follow the default installation process and open the Docker Desktop app after finishing installation. <br>
-<br>
+Docker is a lightweight platform for automating the deployment of applications within containers. The platform also offers a centralized repository for sharing and storing containers. Download Docker Desktop from the <a href="https://www.docker.com/" target="_blank">Docker Website ⤴</a>. Follow the default installation process and open the Docker Desktop app after finishing installation. 
+
 
 ## Finding Containers
 Singularity is commonly used for High-Performance Computing (HPC) clusters environments whereas Docker is usually run locally as it needs admin privileges. Docker container images can be searched from the <a href="https://hub.docker.com/search?q=" target="_blank">Docker Hub ⤴</a> or directly from the Docker Desktop app. <br>
-<br>
+
 
 <div style="background: #dff5b3; padding: 15px;">
 <span style="font-weight:800;">NOTE:</span>
 <br><span style="font-style:italic;"> Singularity is able to support Docker containers, which means that you can run Docker containers using Singularity. But, Docker does not natively support Singularity containers. However, there are some workarounds that allow you to run Singularity containers inside a Docker container, such as using Singularity as an entry point for the Docker container. </span>
-</div><br>
-<br>
+</div> <br>
+
 
 ## Pulling a container image
 The simplest way to pull (download) a container image is using the Docker Desktop app. 
@@ -59,7 +59,7 @@ Now copy the pull command by clicking on it. <br>
 <br>
 ![d5](../../assets/images/06_Docker_Hub_pull.png) <br>
 <br>
-Open a terminal and paste the command, press enter. The image will be downloaded in the current directory. The image becomes container at runtime and can now be used in your workflow.
+Open a terminal and paste the command, press enter. The image will be downloaded.
 <br>
 <br>
 
@@ -85,8 +85,47 @@ singularity pull docker://user/image:tag
 
 Check out the <a href="https://docs.sylabs.io/guides/3.2/user-guide/cli/singularity_pull.html" target="blank">official guide ⤴</a> to Singularity for more details. 
 <br>
-<br>
 
+
+## Working Example
+Let's test the blast-plus container image we pulled by doing a simple blast between two fasta files. I put my fasta files in a folder named `blast` on my desktop. First we need to `run` the image to convert it into a container. This can be done via the Docker Desktop app. <br>  
+<br>
+![d6](../../assets/images/06_run_image.png) <br>
+<br>
+A dialogue box will open; click on the optional settings and add path to your data in `host path` and type `\data` in `container path` under `Volumes`. Click `Run` to initiate a new container. <br>
+<br>
+![d7](../../assets/images/06_new_container.png) <br>
+<br>
+Go to the containers and find the running container. Click on it to open details about the container. <br>
+<br>
+![d8](../../assets/images/06_run_container.png) <br>
+<br>
+Make sure the container is running, you should see a stop button, if not click on the run button. Then go to the terminal to use the blast and all its functions <br>
+<br>
+![d9](../../assets/images/06_container_terminal.png) <br>
+<br>
+I had trouble at container `run` step as it would not run and exit immediately. This could happen due to a number of reasons including memory problems or problems with path. There is an easy fix for this problem. Make the container i.e. run the image via a terminal. You will need the image ID for this, copy it from images section. <br>
+<br>
+![d10](../../assets/images/06_imageID.png) <br> 
+<br>
+Open a terminal (for example, PowerShell on windows) and enter:
+
+```
+docker run -v path-to-your-blast-files:/data -it imageID bash
+```
+
+it might look something like:
+
+```
+docker run -v C:\Users\abc\Desktop\blast:/data -it eaeed4320e5as0b1d136533f02 bash
+```
+
+The `:/data` after your path is the default container path (keep it as is) and the imageID is usually a long string of numbers and alphabets. This will initiate an interactive run of the docker container. Ypu can now use the blast programs in this terminal directly. <br>
+<br>
+![d11](../../assets/images/06_Blastn.png) <br>
+<br>
+You should now see the container running in the Docker Desktop as well, and you can use the terminal within the app as well for running blast now. <br>
+<br>
 
 ___
 # Further Reading

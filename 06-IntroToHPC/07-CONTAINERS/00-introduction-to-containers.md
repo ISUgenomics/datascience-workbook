@@ -21,7 +21,7 @@ At its core, container is a technology that enables you to package and run appli
 
 Containers are a powerful tool that are widely used in various fields including Genomics, High-performance Computing, and Machine Learning. For example, a researcher might use containers for doing a simple blast locally, or for running an entire genome assembly pipeline. This page provides an introduction to container technology and you can refer to the <a href="https://datascience.101workbook.org/06-IntroToHPC/07-CONTAINERS/01-SINGULARITY/01-singularity-basics" target="_blank">Singularity ⤴</a> and <a href="https://datascience.101workbook.org/06-IntroToHPC/07-CONTAINERS/02-DOCKER/01-docker-basics" target="_blank">Docker ⤴</a> tutorial pages in this <a href="https://datascience.101workbook.org" target="_blank">workbook  ⤴</a> to get started with using containers with these platforms.
 <br>
-<br>
+
 
 ## Benefits of Containers
 * <b>Platform independent</b>: The best benefit of using containers is the portability between different systems. Containers can be used on any system that supports the container runtime without making changes to the container.
@@ -30,22 +30,18 @@ Containers are a powerful tool that are widely used in various fields including 
 * <b>Isolation</b>: Provide isolation between applications, ensuring that they do not interfere with each other and do not have access to each other's resources. If one container fails, it does not affect others running on the same system.
 * <b>Scalability</b>: Containers are easily scalable, making them ideal for application development.
 <br>
-<br>
+
 
 ## Container Platforms
 A container platform is a software platform that provides an environment for running and managing containerized applications. Some of these are also workflow management tools that are used to automate tasks, improve efficiency, and ensure consistency in processes.
 
 * <a href="https://datascience.101workbook.org/06-IntroToHPC/07-CONTAINERS/01-SINGULARITY/01-singularity-basics" target="_blank"><b>Singularity</b> ⤴</a>: is an open-source platform for high-performance computing clusters. It is designed to meet the specific needs of HPC, providing improved performance, security, and compatibility with HPC environments.
-
 * <a href="https://datascience.101workbook.org/06-IntroToHPC/07-CONTAINERS/02-DOCKER/01-docker-basics" target="_blank"><b>Docker</b> ⤴</a>: is an open-source platform that automates the deployment of applications inside containers. It provides a way to package, deploy, and run applications in isolated environments using containers.
-
 *  <a href="https://bioinformaticsworkbook.org/dataAnalysis/nextflow/01_introductionToNextFlow.html#gsc.tab=0" target="_blank"><b>Nextflow</b> ⤴</a>: is a workflow platform for automating data-driven pipelines. It provides a way to define and execute pipelines using a simple, high-level language, and provides built-in support for containers and cloud computing.
-
 * <a href="https://kubernetes.io/" target="_blank"><b>Kubernetes</b> ⤴</a>: is an open-source platform for automating the deployment, scaling, and management of containerized applications. It provides a unified platform for deploying, scaling, and managing containers, and provides a way to orchestrate and manage the entire container lifecycle.
-
 * Other tools used for containers include <a href="https://linuxcontainers.org/lxd/" target="_blank">LXD ⤴</a>, <a href="https://github.com/rkt/rkt" target="_blank">rkt ⤴</a>, <a href="https://podman.io/" target="_blank">Podman ⤴</a>, etc.
 <br>
-<br>
+
 
 ## Virtual Machines vs Containers
 Virtual Machines (VMs) and Containers are software technologies that can be used to run software in isolated environments and manage applications. Container sofware examples like Docker were discussed above, some examples of VM software include VMWare, VirtualBox, Parallels Desktop, Citrix, and Hyper-V. VMs and containers differ in several key ways:
