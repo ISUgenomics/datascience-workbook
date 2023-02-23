@@ -26,13 +26,13 @@ Docker is a lightweight platform for automating the deployment of applications w
 
 ## Finding Containers
 Singularity is commonly used for High-Performance Computing (HPC) clusters environments whereas Docker is usually run locally as it needs admin privileges. Docker container images can be searched from the <a href="https://hub.docker.com/search?q=" target="_blank">Docker Hub ⤴</a> or directly from the Docker Desktop app. <br>
-
+<br>
 
 <div style="background: #dff5b3; padding: 15px;">
 <span style="font-weight:800;">NOTE:</span>
 <br><span style="font-style:italic;"> Singularity is able to support Docker containers, which means that you can run Docker containers using Singularity. But, Docker does not natively support Singularity containers. However, there are some workarounds that allow you to run Singularity containers inside a Docker container, such as using Singularity as an entry point for the Docker container. </span>
 </div> <br>
-
+<br>
 
 ## Pulling a container image
 The simplest way to pull (download) a container image is using the Docker Desktop app. 
@@ -84,11 +84,11 @@ singularity pull docker://user/image:tag
 ```
 
 Check out the <a href="https://docs.sylabs.io/guides/3.2/user-guide/cli/singularity_pull.html" target="blank">official guide ⤴</a> to Singularity for more details. 
-<br>
+<br> 
 
 
 ## Working Example
-Let's test the blast-plus container image we pulled by doing a simple blast between two fasta files. I put my fasta files in a folder named `blast` on my desktop. First we need to `run` the image to convert it into a container. This can be done via the Docker Desktop app. <br>  
+Let's test the blast-plus container image we pulled by doing a simple blast between two fasta files. I put my fasta files in a folder named `blast` on my desktop. First we need to `run` the image to convert it into a container. This can be done via the Docker Desktop app. <br>
 <br>
 ![d6](../../assets/images/06_run_image.png) <br>
 <br>
@@ -104,27 +104,27 @@ Make sure the container is running, you should see a stop button, if not click o
 <br>
 ![d9](../../assets/images/06_container_terminal.png) <br>
 <br>
-I had trouble at container `run` step as it would not run and exit immediately. This could happen due to a number of reasons including memory problems or problems with path. There is an easy fix for this problem. Make the container i.e. run the image via a terminal. You will need the image ID for this, copy it from images section. <br>
+I had trouble at container `run` step as it would not run and exit immediately. This could happen due to a number of reasons including memory problems or problems with path. There is an easy fix for this problem, make the container i.e. run the image via a terminal. You will need the image ID for this, copy it from images section. <br>
 <br>
 ![d10](../../assets/images/06_imageID.png) <br> 
 <br>
-Open a terminal (for example, PowerShell on windows) and enter:
+You can also find images and their details including image ID from the terminal. Open a terminal (for example, PowerShell on windows) and enter `docker images` to list all images. To initiate a container enter following:
 
 ```
-docker run -v path-to-your-blast-files:/data -it imageID bash
+docker run -v path-to-your-blast-files:/data -it image-ID bash
 ```
 
-it might look something like:
+Add path to your input files and the image-ID, it might look something like:
 
 ```
 docker run -v C:\Users\abc\Desktop\blast:/data -it eaeed4320e5as0b1d136533f02 bash
 ```
 
-The `:/data` after your path is the default container path (keep it as is) and the imageID is usually a long string of numbers and alphabets. This will initiate an interactive run of the docker container. Ypu can now use the blast programs in this terminal directly. <br>
+The `:/data` after your path is the default container path (keep it as is) and the image-ID is usually a long string of numbers and alphabets. This will initiate an interactive run of the docker container. You can now use the blast programs in this terminal directly. <br>
 <br>
 ![d11](../../assets/images/06_Blastn.png) <br>
 <br>
-You should now see the container running in the Docker Desktop as well, and you can use the terminal within the app as well for running blast now. <br>
+Running this command generated the desired output file I named Blast_out. You should now see the container running in the Docker Desktop as well, and you can use the terminal within the app as well for running blast now. <br>
 <br>
 
 ___
