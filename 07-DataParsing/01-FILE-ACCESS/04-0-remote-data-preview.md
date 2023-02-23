@@ -1,8 +1,8 @@
 ---
 title: "Remote Data Preview without Downloading"
 layout: single
-author:
-author_profile: false
+author: Aleksandra Badaczewska
+author_profile: true
 header:
   overlay_color: "444444"
   overlay_image: /07-DataParsing/assets/images/07_data_acquisition_banner.png
@@ -21,7 +21,7 @@ Remote data preview refers to the ability to **view data that is stored in a rem
 * **using graphical interfaces**, including:
 
   * **web-based interfaces:** <br>
-  <i>Many cloud-based platforms and data storage systems offer web-based interfaces that allow users to preview data stored remotely through a web browser. These interfaces may include visualizations, charts, or other tools that allow users to explore the data in real-time.</i> <br> <span style="color: #ff3870;font-weight: 500;">To learn more visit the tutorial <a href="https://datascience.101workbook.org/06-IntroToHPC/02-FILE-ACCESS/04-open-on-demand" target="_blank">web-based Open OnDemand (OOD) Connection to HPC  ⤴</a></span>
+  <i>Many cloud-based platforms and data storage systems offer web-based interfaces that allow users to preview data stored remotely through a web browser. These interfaces may include visualizations, charts, or other tools that allow users to explore the data in real-time.</i> <br> <span style="color: #ff3870;font-weight: 500;">To learn more visit the tutorial <a href="https://datascience.101workbook.org/06-IntroToHPC/02-FILE-ACCESS/04-open-on-demand" target="_blank">web-based Open OnDemand (OOD) Connection to HPC</a></span>
 
   * **remote desktop** <br>
   <i>Users can remotely access a desktop or computer that is physically located where the data is stored, allowing them to work with the data as if it were stored locally. This requires a stable internet connection and may require additional software or configurations.</i>
@@ -36,7 +36,7 @@ Remote data preview refers to the ability to **view data that is stored in a rem
   * **[Mounting Remote Folder](04-3-tutorial-mount-remote-folder) on local machine using SSH connection**
 
 
-This section will concentrate on command line approaches for previewing remote data, as they are universally applicable and reliable for accessing data stored across a variety of High-Performance Computing (HPC) systems. We encourage readers to explore these command line approaches by participating in hands-on tutorials listed in the [Further Reading](#further-reading) section.
+<span style="color: #ff3870;font-weight: 500;">This section will concentrate on command line approaches for previewing remote data</span>, as they are universally applicable and reliable for accessing data stored across a variety of High-Performance Computing (HPC) systems. We encourage readers to explore these command line approaches by participating in hands-on tutorials listed in the [Further Reading](#further-reading) section.
 
 ## *Why it's good to preview remotely?*
 
