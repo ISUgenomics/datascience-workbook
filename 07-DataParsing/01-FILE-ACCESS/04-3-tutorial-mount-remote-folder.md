@@ -57,7 +57,7 @@ SSH (Secure Shell) is a secure network protocol that allows users to securely ac
 
 **SSHFS is a command-line tool** that allows you to mount a remote file system using SSH. It uses the SSH protocol to securely connect to the remote server and mount the remote file system on your local machine, allowing you to view and access files as if they were stored locally.
 
-## Hands-on tutorial
+## **Hands-on tutorial**
 
 ##  • mount folder
 
@@ -84,11 +84,15 @@ sudo apt-get install sshfs
 <details><summary>Windows:</summary>
 
 <i>To install SSHFS on Windows, you will need to follow these steps: <br>
-1. Download the latest version of WinFsp from the following website: <a href="https://github.com/billziss-gh/winfsp/releases" target="_blank">https://github.com/billziss-gh/winfsp/releases  ⤴</a>
+1. Download the latest version of WinFsp from the following website: <a href="https://github.com/billziss-gh/winfsp/releases" target="_blank">https://github.com/billziss-gh/winfsp/releases  ⤴</a> <br>
+
 * Click on the latest release and download the appropriate package for your version of Windows (32-bit or 64-bit).
 * Make sure to download both the "WinFsp" and "WinFsp SSHFS" packages.
+
 2. Install WinFsp by running the downloaded executable file and following the installation wizard.
+
 3. Once WinFsp is installed, install the SSHFS package by running the downloaded executable file and following the installation wizard.
+
 4. After installation, you should be able to mount a remote folder using SSHFS by opening a Command Prompt window and running the <b>sshfs</b> command.
 </i><br>
 </details>
