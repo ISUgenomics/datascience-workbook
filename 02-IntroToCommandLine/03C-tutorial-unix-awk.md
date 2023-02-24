@@ -10,12 +10,11 @@ header:
 
 {% include toc %}
 
-## <span style="color: #ff3870;">New content coming soon!</span>
+Awk can be a powerful general-purpose scripting language to perform advanced text processing. It is a command-line tool and is particularly useful for working with structured data, such as tables or files with columns of data separated by delimiters. To understand `awk` more, let us create a file `marksheet.txt`.
 
-Awk can be a powerful general-purpose scripting language to perform advanced text processing. 
+In the command below, we are creating a new file named `marksheet.txt` and entering some data into it using the cat command.
 
-
-It is mostly used as a reporting and analysis tool.
+The command `cat > marksheet.txt` below is used to create a file named marksheet.txt. When this command is executed, the shell waits for input from the user. Here, we can then enter the data line by line, pressing `Enter/return` key after each line. In this example, we are entering four lines of data along with one empty line. The fourth line is empty.
 
 ```
 $ cat > marksheet.txt
@@ -25,7 +24,7 @@ David Gower 83
 
 Graham Gooch 43
 ```
-Enter Ctrl-C to return to the `$` terminal prompt.
+After entering `Graham Gooch 43`, press the `Enter/return` key and then enter Ctrl-C to return to the `$` terminal prompt. We can now see what the `marksheet.txt` file holds:
 ```
 $ cat marksheet.txt
 Allan Lamb 78
@@ -44,7 +43,7 @@ David Gower 83
 Graham Gooch 43
 ```
 
-The file marksheet.txt has five lines including and empty line. Each line is a __record__. Each __record__ is split into fields (separated by whitespace character, which is the default behavior). Each field can be accessed by the __$__ sign followed by a number denoting the field. In the example below, each __record__ has three words separated by a single space character. We can access the first and third fields of the file by,
+The file marksheet.txt has five lines including an empty line. Each line is a __record__. Each __record__ is split into fields (separated by whitespace character, which is the default behavior). Each field can be accessed by the __$__ sign followed by a number denoting the field. In the example below, each __record__ has three words separated by a single space character. We can access the first and third fields of the file by,
 ```
 $ awk '{print $1,$3}' marksheet.txt
 Allan 78
@@ -84,17 +83,12 @@ $ awk '{sum+=$3} END {print sum/NR}' marksheet.txt
 There are a couple of things to notice. One, the introduction of a new variable NR; and two, the output is incorrect. The average should be 65 and not 52. The NR command stores the number of current records, which in our example is five, including the empty line and thus explains the error in the output. To remove the empty line:
 
 ```
-awk NF marksheet.txt > marksheet2.txt
+$ awk NF marksheet.txt > marksheet2.txt
 ```
 The NF variable contains the number of fields in a line and is positive when the line is non-empty and prints it. Awk does nothing when the line is empty.
 
-
 ```
-cat marksheet2.txt
-```
-
-### output
-```
+$ cat marksheet2.txt
 Allan Lamb 78
 Graeme Hick 56
 David Gower 83
@@ -102,11 +96,7 @@ Graham Gooch 43
 ```
 Now,
 ```
-awk '{sum+=$3} END {print sum/NR}' marksheet2.txt
-```
-
-### output
-```
+$ awk '{sum+=$3} END {print sum/NR}' marksheet2.txt
 65
 ```
 
@@ -118,7 +108,7 @@ $ awk 'OFS="," {print $1, $2, $3}' marksheet2.txt > marksheet3.csv
 we use OFS to set the output field separator to be a tab character. Looking at marksheet3.tsv, where tsv is tab separated value,
 
 ```
-cat marksheet3.csv
+$ cat marksheet3.csv
 Allan,Lamb,78
 Graeme,Hick,56
 David,Gower,83
@@ -130,7 +120,7 @@ So, doing
 $ awk '{print $1}' marksheet3.csv
 $ 
 ```
-returns no output. That is because the default separator is a blank space. To set the field separator on the command line,
+returns no output. That is because the default separator is a blank space. To set the field separator on the command line, we do
 
 ```
 $ awk -F ',' '{print $1}' marksheet3.csv
