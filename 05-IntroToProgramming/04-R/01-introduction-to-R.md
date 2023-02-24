@@ -10,8 +10,12 @@ header:
 
 {% include toc %}
 
-# Installation of R and RStudio, and packages
-https://datascience.101workbook.org/04-DevelopmentEnvironment/03B-tutorial-setting-up-rstudio
+## Installation of R and RStudio, and packages
+<a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03A-tutorial-setting-up-rstudio" target="_blank">R and RStudio set up  ⤴</a>
+
+<a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03-r-programming-environment.html" target="_blank">Simple introduction to R ⤴</a>
+
+<a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03A-rstudio-basics" target="_blank">RStudio basics ⤴</a>
 
 ## Basic operations
 Some very basic operations you can can carry out in R. 
