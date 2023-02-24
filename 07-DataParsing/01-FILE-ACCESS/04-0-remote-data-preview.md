@@ -36,7 +36,7 @@ Remote data preview refers to the ability to **view data that is stored in a rem
   * **[Mounting Remote Folder](04-3-tutorial-mount-remote-folder) on local machine using SSH connection**
 
 
-<span style="color: #ff3870;font-weight: 500;">This section will concentrate on command line approaches for previewing remote data</span>, as they are universally applicable and reliable for accessing data stored across a variety of High-Performance Computing (HPC) systems. We encourage readers to explore these command line approaches by participating in hands-on tutorials listed in the [Further Reading](#further-reading) section.
+<span style="color: #ff3870;font-weight: 500;">This section will focus on command line approaches for previewing remote data</span>, as they are universally applicable and reliable for accessing data stored across a variety of High-Performance Computing (HPC) systems. We encourage readers to explore these command line approaches by participating in hands-on tutorials listed in the [Further Reading](#further-reading) section.
 
 ## *Why it's good to preview remotely?*
 
