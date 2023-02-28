@@ -1,8 +1,8 @@
 ---
 title: "Introduction to R programming"
 layout: single
-author:
-author_profile: false
+author: Viswa Satheesh
+author_profile: true
 header:
   overlay_color: "444444"
   overlay_image: /05-IntroToProgramming/assets/images/05_programming_banner.png
@@ -26,7 +26,7 @@ header:
 
 
 ## Basic operations
-Some very basic operations you can can carry out in R. 
+Some very basic operations you can can carry out in R.
 
 
 ```r
@@ -76,7 +76,7 @@ Some very basic operations you can can carry out in R.
 ```
 [1] 9
 ```
-Here R works like a calculator. Apart from numbers, R can also help us print letters or a string of letters. 
+Here R works like a calculator. Apart from numbers, R can also help us print letters or a string of letters.
 
 
 ```r
@@ -111,7 +111,7 @@ Here R works like a calculator. Apart from numbers, R can also help us print let
 [1] "R is my favourite programming language"
 ```
 
-When working with large numbers such as **1934929292** and **23992343**, we cannot keep them in mind, or for that matter, remember complex computations. So, we have the concept of object or variable. 
+When working with large numbers such as **1934929292** and **23992343**, we cannot keep them in mind, or for that matter, remember complex computations. So, we have the concept of object or variable.
 
 
 ```r
@@ -165,7 +165,7 @@ a ^ b
 ```
 [1] Inf
 ```
-We can do something similar with strings too. 
+We can do something similar with strings too.
 
 ```r
 x <- "language"
@@ -243,7 +243,7 @@ x * y
  [1]  11  24  39  56  75  96 119 144 171 200
 ```
 The elements are added element-wise. The operations in R are element-wise. As an exercise you can try doing the other mathematical
-operations on the two vectors. 
+operations on the two vectors.
 
 ## Indexing
 The elements in the vectors are indexed. So, to extract an element you need only know its position. To extract the first element in x and in y:
@@ -256,7 +256,7 @@ x[1]
 ```
 [1] 1
 ```
-This returns **1**. Try the following and see what you get. 
+This returns **1**. Try the following and see what you get.
 
 
 ```r
@@ -341,7 +341,7 @@ length(c)
 ```
 [1] 1
 ```
-You can see that all objects created are of length one. 
+You can see that all objects created are of length one.
 
 Now let us check these vectors using the *class()* function:
 
@@ -434,7 +434,7 @@ class(char_vr); length(char_vr)
 [1] 3
 ```
 We learnt to make vectors before, and now we have learnt to understand them a bit more. We now move on to matrices.
-First, let us create some vectors. 
+First, let us create some vectors.
 
 ```r
 v1 <- 1:5
@@ -477,9 +477,9 @@ class(my_mat)
 ```
 
 ```
-[1] "matrix" "array" 
+[1] "matrix" "array"
 ```
-my_matrix is a matrix. It has three columns, v1, v2, and v3. And, as it should be clear now, we used three vectors to create a matrix. Let us now see an alternate method for creating a matrix. 
+my_matrix is a matrix. It has three columns, v1, v2, and v3. And, as it should be clear now, we used three vectors to create a matrix. Let us now see an alternate method for creating a matrix.
 
 ```r
 trial_mat <- matrix(1:20, nrow=5, ncol=4, byrow = TRUE)
@@ -495,9 +495,9 @@ trial_mat
 [5,]   17   18   19   20
 ```
 
-This creates a matrix with 4 rows and 5 columns. The [1,] refers to the first row. The [,1] refers to the first column. 
+This creates a matrix with 4 rows and 5 columns. The [1,] refers to the first row. The [,1] refers to the first column.
 
-Let us now talk about another kind of data structure, data frame. So, a data frame is similar to a matrix, but it can hold vectors of different classes. Let us create the same vectors we created previously even though they are still in memory. 
+Let us now talk about another kind of data structure, data frame. So, a data frame is similar to a matrix, but it can hold vectors of different classes. Let us create the same vectors we created previously even though they are still in memory.
 
 
 ```r
@@ -526,13 +526,13 @@ class(new_mat)
 ```
 
 ```
-[1] "matrix" "array" 
+[1] "matrix" "array"
 ```
-The class of the object new_mat is "matrix". A matrix can hold data belonging to a particular class. In this case, every data point is converted into a character. This is called coercion. Here we need a different kind of data structure that can hold different classes of data. To demostrate this point, let us create some vectors that we will make use of in creating this structure. 
+The class of the object new_mat is "matrix". A matrix can hold data belonging to a particular class. In this case, every data point is converted into a character. This is called coercion. Here we need a different kind of data structure that can hold different classes of data. To demostrate this point, let us create some vectors that we will make use of in creating this structure.
 
 
 ```r
-set.seed(1234) # since the numbers are random, this will make sure we always 
+set.seed(1234) # since the numbers are random, this will make sure we always
               # get the same set of random numbers
 plant_height <- rnorm(100, 110, 10)
 head(plant_height)
@@ -618,10 +618,10 @@ class(my_data)
 ```
 
 ```
-[1] "matrix" "array" 
+[1] "matrix" "array"
 ```
 
-Let us now create some numbers that we will use as genotype ids. We have 100 observations and that makes it 100 genotypes. We will name the genotypes from "001" to "100". Let us use the paste() function to create these ids. 
+Let us now create some numbers that we will use as genotype ids. We have 100 observations and that makes it 100 genotypes. We will name the genotypes from "001" to "100". Let us use the paste() function to create these ids.
 
 
 ```r
@@ -669,7 +669,7 @@ head(newdat)
 [6,] "20.1"              
 ```
 
-We have seen this problem before; the entire data getting converted into a character class. To overcome this problem we use the data.frame() function. 
+We have seen this problem before; the entire data getting converted into a character class. To overcome this problem we use the data.frame() function.
 
 
 ```r
@@ -721,7 +721,7 @@ str(field_data)
  $ thousand_seed_weight: num  19.6 21.2 21.5 21.1 21.8 ...
 ```
 
-The "field" object is a data frame with 100 observations and 4 variables. Except for a, which is a factor, plant_height, flowering_50, and spikelet_fertility are numeric. Remember that 'a' is a vector containing the genotype ids. Therefore, "a" is recognised as a factor here. 
+The "field" object is a data frame with 100 observations and 4 variables. Except for a, which is a factor, plant_height, flowering_50, and spikelet_fertility are numeric. Remember that 'a' is a vector containing the genotype ids. Therefore, "a" is recognised as a factor here.
 
 ### Writing data to file
 
@@ -812,7 +812,7 @@ Re-ordering the levels: "up" first followed by "down".
 
 ```r
 gene_nums_mirror <- dplyr::mutate(
-  gene_nums_mirror, 
+  gene_nums_mirror,
   responsiveness = forcats::fct_relevel(responsiveness, "up", "down")
   )
 ```
@@ -823,7 +823,7 @@ The final code snippet:
 ```r
 library( wesanderson )
 
-ggplot(data = gene_nums_mirror, 
+ggplot(data = gene_nums_mirror,
        aes(x = stress, y = num_genes, fill = factor(responsiveness, labels = c("Up-regulated", "Down-regulated")))) +
   labs(fill = "responsiveness") +
   geom_bar( stat = "identity", position = "identity", width = 0.65 ) +

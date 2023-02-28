@@ -1,8 +1,8 @@
 ---
 title: "AWK Command"
 layout: single
-author:
-author_profile: false
+author: Viswa Satheesh
+author_profile: true
 header:
   overlay_color: "444444"
   overlay_image: /02-IntroToCommandLine/assets/images/02_command_line_banner.png
@@ -124,7 +124,7 @@ So, doing
 
 ```
 $ awk '{print $1}' marksheet3.csv
-$ 
+$
 ```
 returns no output. That is because the default separator is a blank space. To set the field separator on the command line, we do
 
