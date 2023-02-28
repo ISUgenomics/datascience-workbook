@@ -1,8 +1,8 @@
 ---
 title: "XSEDE Supercell Storage"
 layout: single
-author:
-author_profile: false
+author: Andrew Severin
+author_profile: true
 header:
   overlay_color: "444444"
   overlay_image: /06-IntroToHPC/assets/images/06_hpc_banner.png
@@ -10,6 +10,12 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../../00-IntroToHPC-LandingPage.md) / [1. Introduction to HPC infrastructure](../01-introduction-to-hpc-infrastructure.md) / [1.1 XSEDE Supercomputer](01-supercomputer-intro) / **1.1.1 XSEDE Supercell Storage**
+
+---
+
+
+# Introduction
 
 # Using Supercell-Storage server for backing up and restoring data from PSC servers
 
@@ -43,8 +49,8 @@ That's it! You can retrieve the data anytime by reversing the  `rsync` command.
 
 ___
 # Further Reading
-* [SCINet Network](../02-SCINET/01-scient-network-intro)
-* [ISU HPC](../03-ISUHPC/01-isu-hpc-intro)
+* [1.2 SCINet Network](../02-SCINET/01-scient-network-intro)
+* [1.3 ISU HPC](../03-ISUHPC/01-isu-hpc-intro)
 
 ___
 
@@ -52,3 +58,4 @@ ___
 [Section Index](../../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
 [Previous](01-supercomputer-intro){: .btn  .btn--primary}
 [Next](../02-SCINET/01-scient-network-intro){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

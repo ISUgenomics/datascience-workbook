@@ -1,14 +1,21 @@
 ---
 title: "Creating SLURM Job Submission Scripts"
 layout: single
-author:
-author_profile: false
+author: Arun Seetharam
+author_profile: true
 header:
   overlay_color: "444444"
   overlay_image: /06-IntroToHPC/assets/images/06_hpc_banner.png
 ---
 
 {% include toc %}
+
+[DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../../00-IntroToHPC-LandingPage.md) / [5. Introduction to Job Scheduling](../00-introduction-to-job-scheduling.md) / [5.1 SLURM: Basics of Workload Manager](01-slurm-basics.md) / **5.1.2 Creating SLURM Job Submission Scripts**
+
+---
+
+
+# Introduction
 
 # Creating SLURM job submission scripts
 
@@ -76,15 +83,18 @@ All commands will be submitted and will start to run as per the availability of 
 
 ___
 # Further Reading
-* [Tutorial: Submitting Dependency Jobs using SLURM](04-slurm-2-tutorial-submitting-dependency-jobs)
+* [5.1.3 Submitting Dependency Jobs using SLURM](04-slurm-2-tutorial-submitting-dependency-jobs)
+* [SLURM Commands CheatSheet](02-slurm-cheatsheet)
 
-* [PBS: Portable Batch System](../02-PBS/01-pbs-basics)
-* [Introduction to GNU Parallel](../../06-PARALLEL/01-introduction-to-gnu-parallel)
-* [Introduction to Containers](../../07-CONTAINERS/00-introduction-to-containers)
+* [5.2 PBS: Portable Batch System](../02-PBS/01-pbs-basics)
+
+* [6. Introduction to GNU Parallel](../../06-PARALLEL/01-introduction-to-gnu-parallel)
+* [7. Introduction to Containers](../../07-CONTAINERS/00-introduction-to-containers)
 
 ___
 
 [Homepage](../../../index.md){: .btn  .btn--primary}
 [Section Index](../../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
-[Previous](02-slurm-cheatsheet){: .btn  .btn--primary}
+[Previous](01-slurm-introduction){: .btn  .btn--primary}
 [Next](04-slurm-2-tutorial-submitting-dependency-jobs){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

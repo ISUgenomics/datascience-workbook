@@ -1,8 +1,8 @@
 ---
 title: "SLURM Cheatsheet"
 layout: single
-author:
-author_profile: false
+author: Andrew Severin
+author_profile: true
 header:
   overlay_color: "444444"
   overlay_image: /06-IntroToHPC/assets/images/06_hpc_banner.png
@@ -10,7 +10,14 @@ header:
 
 {% include toc %}
 
-# Quick reference sheet for SLURM resource manager
+[DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../../00-IntroToHPC-LandingPage.md) / [5. Introduction to Job Scheduling](../00-introduction-to-job-scheduling.md) / [5.1 SLURM: Basics of Workload Manager](01-slurm-basics.md) / **SLURM Commands CheatSheet**
+
+---
+
+
+# Introduction
+
+**Quick reference sheet for SLURM resource manager**
 
 ### Job scheduling commands
 <table>
@@ -107,16 +114,15 @@ More information about Slurm can be found here:
 
 ___
 # Further Reading
-* [Tutorial: Creating SLURM Job Submission Scripts](03-slurm-1-tutorial-job-submission)
-* [Tutorial: Submitting Dependency Jobs using SLURM](04-slurm-2-tutorial-submitting-dependency-jobs)
+* [5.2 PBS: Portable Batch System](../02-PBS/01-pbs-basics)
 
-* [PBS: Portable Batch System](../02-PBS/01-pbs-basics)
-* [Introduction to GNU Parallel](../../06-PARALLEL/01-introduction-to-gnu-parallel)
-* [Introduction to Containers](../../07-CONTAINERS/00-introduction-to-containers)
+* [6. Introduction to GNU Parallel](../../06-PARALLEL/01-introduction-to-gnu-parallel)
+* [7. Introduction to Containers](../../07-CONTAINERS/00-introduction-to-containers)
 
 ___
 
 [Homepage](../../../index.md){: .btn  .btn--primary}
 [Section Index](../../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
-[Previous](01-slurm-basics){: .btn  .btn--primary}
-[Next](03-slurm-1-tutorial-job-submission){: .btn  .btn--primary}
+[Previous](04-slurm-2-tutorial-submitting-dependency-jobs){: .btn  .btn--primary}
+[Next](../02-PBS/01-pbs-basics){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

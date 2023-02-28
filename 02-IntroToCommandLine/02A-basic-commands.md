@@ -11,6 +11,9 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [02. Introduction to the Command Line](00-IntroToCommandLine-LandingPage.md) / [2. Introduction to UNIX Shell](02-intro-to-unix-shell.md) / **2.1 Basic Commands: Navigation, File Creation & Preview**
+
+---
 
 # Introduction
 
@@ -389,17 +392,17 @@ tail -n 5 numSeq.txt
 
 ### *Modifying file in the text editor*
 
-To learn about Terminal Text Editors see another tutorial: [Text Files Editors](02C-text-files-editors.md).
+To learn about Terminal Text Editors see another tutorial: [Text Files Editors](02B-text-files-editors.md).
 
 
 
 ___
 # Further Reading
-* [Text Files Editors](02B-text-files-editors.md)
+* [Command Line Text Files Editors: nano, vim](02B-text-files-editors.md)
 * [System Info and Access Parmisions](02C-unix-system-info-permissions.md)
-* [Unix Admin Commands](02D-admin-commands.md)
-* [Tutorial: Unix Getting Started](02E-tutorial-unix-getting-started.md)
-* [Summary of Unix Commands](04-unix-cheat-sheet.md)
+* [Superuser Command: sudo](02D-admin-commands.md)
+* [Getting Started with UNIX + VIDEO + exercises](02E-tutorial-unix-getting-started.md)
+* [Unix Commands CheatSheet](04-unix-cheat-sheet.md)
 
 ___
 
@@ -407,3 +410,4 @@ ___
 [Section Index](00-IntroToCommandLine-LandingPage.md){: .btn  .btn--primary}
 [Previous](02-intro-to-unix-shell.md){: .btn  .btn--primary}
 [Next](02B-text-files-editors.md){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

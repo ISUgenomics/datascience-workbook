@@ -8,6 +8,10 @@ main:
     url: /glossary.html
   - title: "People"
     url: /people.html
+  - title: "Contribute"
+    url: /contributing.html
+  - title: "Donate"
+    url: /donate.html
 
 
 

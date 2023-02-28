@@ -6,22 +6,37 @@ Andrew Severin:
   email       : "mailto:severin@iastate.edu"
   website     : "https://gif.biotech.iastate.edu"
 
-Siva Chudalayandi:
-  name        : "Siva Chudalayandi"
-  bio         : "I am a Ph.D. in Molecular Biology and Biotechnology with broad expertise is in the field of Genetics and Computational Biology. As an Associate Scientist at the Genome Informatics Facility, I work as a bioinformatics liaison for the USDA community, contribute to tutorials & workshops, and manage online discussions. I also collaborate with researchers in my capacity as computational biologist to perform data-driven discovery."
-  avatar      : "/assets/images/people/Siva.jpg"
-  twitter     : "someone"
-  email       : "mailto:csiva@iastate.edu"
-  website     : "https://gif.biotech.iastate.edu"
-
 Aleksandra Badaczewska:
   name        : "Aleksandra Badaczewska"
   bio         : "Alex is a Research Scientist IV at the Genome Informatics Facility at Iowa State University. Her academic background is in Chemistry and Biotechnology, with a Ph.D. in Computational Biology and broad experience in programming and designing web applications. She develops a comprehensive collection of highly customizable visualization solutions for Bioinformatics and supports software optimization for the USDA Geospatial analyses."
   avatar      : "/assets/images/people/Alex.png"
-  twitter     : "someone"
+  twitter     : "AlexBadacz"
   email       : "mailto:abadacz@iastate.edu"
   website     : "https://gif.biotech.iastate.edu"
 
+Siva Chudalayandi:
+  name        : "Siva Chudalayandi"
+  bio         : "I am a Ph.D. in Molecular Biology and Biotechnology with broad expertise is in the field of Genetics and Computational Biology. As an Associate Scientist at the Genome Informatics Facility, I work as a bioinformatics liaison for the USDA community, contribute to tutorials & workshops, and manage online discussions. I also collaborate with researchers in my capacity as computational biologist to perform data-driven discovery."
+  avatar      : "/assets/images/people/Siva.jpg"
+  twitter     : "csivabioinfo"
+  email       : "mailto:csiva@iastate.edu"
+  website     : "https://gif.biotech.iastate.edu"
+
+Viswa Satheesh:
+  name        : "Viswa Satheesh"
+  bio         : "Satheesh is a Research Scientist III at the Genome Informatics Facility at Iowa State University. With a Ph.D. in Molecular Biology and Biotechnology, his expertise lies in the field of plant stress biology and epigenetics, where he has made significant contributions by utilizing large-scale biological data. Currently, apart from analyzing NGS data, he creates data analysis tutorials and workshops for scientists in the USDA."
+  avatar      : "/assets/images/people/satheesh.jpeg"
+  twitter     : "someone"
+  email       : "mailto:satheesh@iastate.edu"
+  website     : "https://gif.biotech.iastate.edu"
+
+Sharu Paul:
+  name        : "Sharu Paul"
+  bio         : "Sharu is a Visiting Scientist at the Genome Informatics Facility at Iowa State University. His background is in Biotechnology with a Ph.D. in Genetics and Genomics. He is using a diverse array of bioinformatic analyses to solve big data problems and contribute to developing workshops and tutorials for USDA scientists."
+  avatar      : "/assets/images/people/Sharu.jpg"
+  twitter     : "PaulSharu"
+  email       : "mailto:sharu@iastate.edu"
+  website     : "https://gif.biotech.iastate.edu"
 
 Jennifer Chang:
   name        : "Jennifer Chang"
@@ -35,6 +50,14 @@ Arun Seetharam:
   name        : "Arun Seetharam"
   bio         : "My main interests are in the fields of Bioinformatics and evolutionary Genomics. Currently, I am working on various projects involving next-generation sequencing, including the first *de novo* assembly of a teosinte genome. I am also developing pipelines to streamline the assembly and annotation process for newly sequenced organisms. My long-term goal is to study genome organization and the evolution of grass species."
   avatar      : "/assets/images/people/Arun.jpg"
+  twitter     : "someone"
+  email       : "mailto:someone@iastate.edu"
+  website     : "https://gif.biotech.iastate.edu"
+
+Kerrie Geil:
+  name        : "Kerrie Geil"
+  bio         : "Kerrie is an ARS SCINet postdoc in the research group of Dr. Deb Peters in Las Cruces, NM. Her M.S. and Ph.D. degrees are in Atmospheric Sciences and her research background is in climate modeling."
+  avatar      : "/assets/images/people/KerrieGeil.png"
   twitter     : "someone"
   email       : "mailto:someone@iastate.edu"
   website     : "https://gif.biotech.iastate.edu"

@@ -1,8 +1,8 @@
 ---
 title: "Introduction to Slack"
 layout: single
-author:
-author_profile: false
+author: Andrew Severin
+author_profile: true
 header:
   overlay_color: "444444"
   overlay_image: /09-ProjectManagement/assets/images/09_project_management_banner.png
@@ -10,7 +10,12 @@ header:
 
 {% include toc %}
 
-# Introduction to Slack
+[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / [4. Collaboration & Communication](00-collaboration-communication.md) / [4.1 Team Communication Tools](01-team-communication-tools.md) / **4.1.1 Introduction to Slack**
+
+---
+
+
+# Introduction
 
 Slack is a communication platform that is based around group chat channels.  It is a transcript of conversations about projects that you can go back and reread.  Slack permits, text, images and files to be attached during conversation.
 
@@ -70,14 +75,13 @@ In Example 2 above, Person B will hate slack as this individual will not be able
 
 
 ___
-<!-- # Further Reading
-* []()
-* []()
-* []() -->
+# Further Reading
+* [5. Resource Management & Productivity](../04-PRODUCTIVITY/00-resources-productivity)
 
 ___
 
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
 [Previous](01-team-communication-tools){: .btn  .btn--primary}
-<!-- [Next](){: .btn  .btn--primary} -->
+[Next](../04-PRODUCTIVITY/00-resources-productivity){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

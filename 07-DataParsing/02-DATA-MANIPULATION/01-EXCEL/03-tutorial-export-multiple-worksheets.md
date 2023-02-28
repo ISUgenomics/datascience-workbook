@@ -1,8 +1,8 @@
 ---
 title: "Export Multiple Worksheets as Separate Text Files"
 layout: single
-author:
-author_profile: false
+author: Arun Seetharam
+author_profile: true
 header:
   overlay_color: "444444"
   overlay_image: /07-DataParsing/assets/images/07_data_acquisition_banner.png
@@ -10,6 +10,12 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [07. Data Acquisition and Wrangling](../../00-DataParsing-LandingPage.md) / [2. Data Manipulation](../01-data-manipulation.md) / [2.1 Manipulating Excel Data Sheets](01-manipulate-excel-sheets.md) / **2.1.2 Export Multiple Worksheets as Separate Text Files**
+
+---
+
+
+# Introduction
 
 # Export multiple worksheets as separate text files in Excel
 
@@ -154,11 +160,12 @@ Run the macro, but clicking on `Developer` tab, and `Run Macro`
 
 ___
 # Further Reading
-* [Create Index for All Worksheets](04-tutorial-create-index-for-all-worksheets)
-* [Merge Two Spreadsheets using a Common Column](05-tutorial-merge-spreadsheets-by-column)
+* [2.1.3 Create Index for All Worksheets](04-tutorial-create-index-for-all-worksheets)
+* [2.1.4 Merge Two Spreadsheets using a Common Column](05-tutorial-merge-spreadsheets-by-column)
 
-* [Manipulating Text Files with Python](../02-PYTHON/01-manipulate-data-with-python)
+* [2.2 Manipulating Text Files with Python](../02-PYTHON/01-manipulate-data-with-python)
 
+* [3. Data Wrangling: ready-made apps](../../03-DATA-WRANGLING-APPS/00-data-wrangling-apps)
 
 ___
 
@@ -166,3 +173,4 @@ ___
 [Section Index](../../00-DataParsing-LandingPage){: .btn  .btn--primary}
 [Previous](02-tutorial-create-workbook-from-multiple-files){: .btn  .btn--primary}
 [Next](04-tutorial-create-index-for-all-worksheets){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

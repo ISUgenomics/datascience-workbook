@@ -10,9 +10,9 @@ header:
 
 {% include toc %}
 
+## <span style="color: #ff3870;">New content coming soon!</span>
 
-
-
+# Introduction
 
 
 
@@ -30,3 +30,4 @@ ___
 [Section Index](){: .btn  .btn--primary}  <!-- link to Landing Page -->
 [Previous](){: .btn  .btn--primary}  <!-- link to previous article in the section -->
 [Next](){: .btn  .btn--primary}  <!-- link to next article in the section -->
+[Next](#introduction){: .btn  .btn--primary}

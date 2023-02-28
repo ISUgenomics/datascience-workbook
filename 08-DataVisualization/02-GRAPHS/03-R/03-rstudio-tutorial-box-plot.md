@@ -1,8 +1,8 @@
 ---
 title: "Creating Boxplots in R"
 layout: single
-author:
-author_profile: false
+author: Arun Seetharam
+author_profile: true
 header:
   overlay_color: "444444"
   overlay_image: /08-DataVisualization/assets/images/08_data_visualization_banner.png
@@ -10,8 +10,15 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [08. Data Visualization](../../00-DataVisualization-LandingPage.md) / [2. Introduction to Scientific Graphing](../01-introduction-to-scientific-graphing.md) / [2.3 RStudio – Data Processing & Plotting with R](01-graphing-with-rstudio.md) / **Creating Boxplots in R**
+
 **Last Update**: 7 Dec 2018 <br/> **RMarkdown**:
 [generate-boxplots.Rmd](https://bioinformaticsworkbook.org/tutorials/generate-boxplots.Rmd)
+
+---
+
+
+# Introduction
 
 ## Using R to create boxplots
 
@@ -371,7 +378,8 @@ p4 <- p3 + geom_boxplot(data = fam4, colour = lines4, fill = fill4)
 
 ___
 # Further Reading
-* [Tutorial: Creating Heatmaps in R](04-rstudio-tutorial-heatmap-plot)
+* [Creating Heatmaps in R](04-rstudio-tutorial-heatmap-plot)
+* [Creating Heatmaps in R using ComplexHeatmap](05-rstudio-tutorial-ComplexHeatmap)
 
 
 ___
@@ -380,3 +388,4 @@ ___
 [Section Index](../../00-DataVisualization-LandingPage){: .btn  .btn--primary}
 [Previous](02-setting-up-rstudio){: .btn  .btn--primary}
 [Next](04-rstudio-tutorial-heatmap-plot){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

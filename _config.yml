@@ -11,7 +11,7 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
+remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -101,10 +101,12 @@ social:
 
 # Analytics
 analytics:
-  provider               : google # false (default), "google", "google-universal", "custom"
+  provider               : "google-gtag" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : UA-152061762-1
+    measurement_id       : G-E6BZVYF8ZY
+    tracking_id          : # UA-152061762-1
     anonymize_ip         : # true, false (default)
+
 
 
 # Site Author
@@ -122,7 +124,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : https://github.com/isugenomics
+  github           : isugenomics #https://github.com/isugenomics
   gitlab           :
   google_plus      :
   keybase          :
@@ -138,7 +140,7 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  youtube          : https://www.youtube.com/@bioinformaticsworkbook7578 # "https://youtube.com/c/MichaelRoseDesign"
 
 # Reading Files
 include:

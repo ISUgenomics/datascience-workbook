@@ -10,12 +10,20 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [05. Introduction to Programming](../00-IntroToProgramming-LandingPage.md) / **4. Introduction to R programming**
+
+---
+
+# Introduction
+
 ## Installation of R and RStudio, and packages
+
 <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03A-tutorial-setting-up-rstudio" target="_blank">R and RStudio set up  ⤴</a>
 
 <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03-r-programming-environment.html" target="_blank">Simple introduction to R ⤴</a>
 
 <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03A-rstudio-basics" target="_blank">RStudio basics ⤴</a>
+
 
 ## Basic operations
 Some very basic operations you can can carry out in R. 
@@ -837,5 +845,6 @@ ___
 
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-IntroToProgramming-LandingPage){: .btn  .btn--primary}
-[Previous](../03-PYTHON/01-introduction-to-python){: .btn  .btn--primary}
+[Previous](../03-PYTHON/08-tutorial-python-apply-statistics-scipy){: .btn  .btn--primary}
 [Next](../../06-IntroToHPC/00-IntroToHPC-LandingPage){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

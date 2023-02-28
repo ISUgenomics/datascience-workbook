@@ -10,6 +10,13 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [03. Setting Up Computing Machine](00-SetUpComputingMachine-LandingPage.md) / [2. Must-Have Software](02-must-have-software.md) / **2.3 Basic Developer Libraries**
+
+---
+
+
+# Introduction
+
 ## Developer Libraries
 
 ### Conda
@@ -38,7 +45,7 @@ Most python libraries can be easily installed using `pip`.
 
 ___
 # Further Reading
-* [Various Methods of Software Installation](03-various-methods-of-software-installation.md)
+* [3. Various Methods of Software Installation](03-various-methods-of-software-installation.md)
 
 ___
 
@@ -46,3 +53,4 @@ ___
 [Section Index](00-SetUpComputingMachine-LandingPage.md){: .btn  .btn--primary}
 [Previous](02B-basic-developer-tools.md){: .btn  .btn--primary}
 [Next](03-various-methods-of-software-installation.md){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

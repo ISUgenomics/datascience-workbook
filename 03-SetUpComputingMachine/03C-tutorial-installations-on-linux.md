@@ -1,14 +1,21 @@
 ---
 title: "Installations on Linux"
 layout: single
-author:
-author_profile: false
+author: Arun Seetharam
+author_profile: true
 header:
   overlay_color: "444444"
   overlay_image: /03-SetUpComputingMachine/assets/images/03_computer_setup_banner.png
 ---
 
 {% include toc %}
+
+[DataScience Workbook](https://datascience.101workbook.org/) / [03. Setting Up Computing Machine](00-SetUpComputingMachine-LandingPage.md) / [3. Various Methods of Software Installation](03-various-methods-of-software-installation.md) / **3.3 Installations on Linux**
+
+---
+
+
+# Introduction
 
 # Guide for installing various types of programs in Linux
 
@@ -281,3 +288,4 @@ ___
 [Section Index](00-SetUpComputingMachine-LandingPage.md){: .btn  .btn--primary}
 [Previous](03B-tutorial-installations-on-windows.md){: .btn  .btn--primary}
 [Next](../04-DevelopmentEnvironment/00-DevelopmentEnvironment-LandingPage.md){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

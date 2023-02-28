@@ -10,11 +10,12 @@ header:
 
 {% include toc %}
 
-# Introduction
+[DataScience Workbook](https://datascience.101workbook.org/) / [02. Introduction to the Command Line](00-IntroToCommandLine-LandingPage.md) / **2. Introduction to UNIX Shell: shell variables, home dir, .bashrc**
 
+---
 
-## What is Unix?
-UNIX is an operating system (OS) for computer devices providing the **command-line interface** (CLI) for convenient and efficient programming. The modern Unix OS variants are **multi-tasking** and **multi-user**, allowing for sharing computing resources among many users at the same time [�](https://en.wikipedia.org/wiki/Unix). They are also portable, supplying the operating system for personal computers, computing clusters, database & web servers, and high-end workstations. The **open-source Unix distributions** within the Linux family include **Ubuntu**, **Debian**, **RHEL** (*Red Hat Enterprise Linux*), Linux Mint, Fedora, CentOS, OpenSUSE, Manjaro, and Arch Linux. Besides GNU/Linux there are other varieties of UNIX such as Sun Solaris, macOS X, IBM AIX, Darwin OS, and FreeBSD OS (some of them are not free).
+# What is Unix?
+UNIX is an operating system (OS) for computer devices providing the **command-line interface** (CLI) for convenient and efficient programming. The modern Unix OS variants are **multi-tasking** and **multi-user**, allowing for sharing computing resources among many users at the same time [�](https://en.wikipedia.org/wiki/Unix). They are also portable, supplying the operating system for personal computers, computing clusters, database & web servers, and high-end workstations. The **open-source Unix distributions** within the Linux family include **[Ubuntu](https://ubuntu.com)**, **[Debian](https://www.debian.org)**, **[RHEL](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux)** (*Red Hat Enterprise Linux*), [Linux Mint](https://linuxmint.com), [Fedora](https://getfedora.org), [CentOS](https://www.centos.org), [OpenSUSE](https://www.opensuse.org), [Manjaro](https://manjaro.org), and [Arch Linux](https://archlinux.org). Besides GNU/Linux there are other varieties of UNIX such as [Sun Solaris](https://www.oracle.com/solaris/solaris11/), [macOS X](https://images.apple.com/media/us/osx/2012/docs/OSX_for_UNIX_Users_TB_July2011.pdf), [IBM AIX](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwi144qCzvj4AhVQwMgKHYDtBCkYABAAGgJxdQ&ohost=www.google.com&cid=CAESaeD259NbszXFpY64pFLk0_wXfZMwH6h3-QetYgjSrkgLaYJer_xeWfqY3aJfObXO8-Q9BWaatvrumS88eGFBNG5kdHFZBMr7p2y9bomOVQPmd68v2krdfBR4P1JnZLgaY0qkZYrg9kjruQ&sig=AOD64_0996jnSZxbrGQCM_wKGL9v9QiLPA&q&adurl&ved=2ahUKEwibm_-Bzvj4AhW-kokEHWwQAtcQ0Qx6BAgDEAE&nis=8), [Darwin OS](http://www.puredarwin.org), and [FreeBSD OS](https://www.freebsd.org) (some of them are not free).
 
 ![Linux Distributions](assets/images/linux_distributions.png)<br>
 **Figure 1.** *Logos of the most popular Linux distributions, all based on the Unix command-line interface.*
@@ -217,6 +218,8 @@ Note that on most HPC infrastructures, including HPC@ISU and SCINet, queuing job
 
 Whether you're working on a local machine or a remote shared infrastructure, keep your $HOME directory neatly organized.
 
+To configure your $HOME to work efficiently on a computing cluster, take a look at the tutorial [Home Directory Setup](https://datascience.101workbook.org/06-IntroToHPC/00-HOME-DIRECTORY/00-setting-up-home-directory) in the section 06. High-Performance Computing of this workbook. More specifically, follow the directions in the [.bashrc example file](https://datascience.101workbook.org/06-IntroToHPC/00-HOME-DIRECTORY/01-bashrc) tutorial to properly configure your `~/.bashrc`.
+
 
 # 3. Unix Shell Configuration
 
@@ -231,8 +234,7 @@ ls -a ~
 <br><span style="font-style:italic;">
 Note that <b>~</b> refers to the $HOME of a given user.
 </span>
-</div>
-
+</div><br>
 
 Then, you should find `.bashrc` and `.bash_profile`on your screen.
 
@@ -255,7 +257,7 @@ nano ~/.bashrc
 </span>
 </div><br>
 
-## 3.1 What makes **.bashrc** different from **.bash_profile**?
+## 3.1 ***.bashrc*** & ***.bash_profile***
 
 At first glance, the contents of these files may seem interchangeable. Whichever one you have, you can always 'activate' its **updated contents** with the `source` command:
 
@@ -274,7 +276,7 @@ So remember, changes made to <b>.bashrc</b> and <b>.bash_profile</b> files will 
 </span>
 </div><br>
 
-**So what really is the difference between these files?**
+So what really makes **.bashrc** different from **.bash_profile**?
 
 Well, the **~/.bash_profile is loaded once**, just after opening the terminal on the local machine or logging into the remote infrastructure. Whereas **~/.bashrc** is read each time you start bash as an interactive shell (e.g., open new tab in the terminal). Thus, it is responsible for **the default settings** of your shell at the start. So, **if you want to always** have a certain prompt appearance or always load a bunch of modules at startup or be able to effortlessly call executable programs from a given path, **specify these rules in .bashrc**. Then, append the syntax provided below to your ~/.bash_profile. It will force the execution of ~/.bashrc in the scenario when ~/.bash_profile is called.
 
@@ -318,6 +320,7 @@ The table below contains variables that can be used when defining a customized p
 |`\e[m` | stop color syntax (non-printing characters) |
 |`${var}` | use shell variable |
 
+
 The table below contains the most popular text decorations and colors used to customize the Unix shell prompt. There are many more options that you can follow at [misc.flogisoft.com](https://misc.flogisoft.com/bash/tip_colors_and_formatting).
 
 | text decoration    | foreground text color | prompt background color |
@@ -329,9 +332,9 @@ The table below contains the most popular text decorations and colors used to cu
 |`4` - <u>underlined text</u> |`34` - <span style="background-color: white; color: blue;"> blue </span>   | `44` - <span style="background-color: blue; color: white;"> blue </span>   |
 |`5` - blinking text |`35` - <span style="background-color: white; color: purple;"> purple </span> | `45` - <span style="background-color: purple; color: white;"> purple </span> |
 |`7` - reverse text color with a background |`36` - <span style="background-color: black; color: cyan;"> cyan </span>   | `46` - <span style="background-color: cyan; color: black;"> cyan </span>   |
-|`9` - strikethrough   |`37` - <span style="background-color: black; color: lightgray;"> light-gray </span> | `47` - <span style="background-color: lightgray; color: black;"> light-gray </span> |
+|`9` - <del>strikethrough</del>   |`37` - <span style="background-color: black; color: lightgray;"> light-gray </span> | `47` - <span style="background-color: lightgray; color: black;"> light-gray </span> |
 
-You can test the result of your prompt style during development stage witch `printf` command (and appending a newline character `\n` to the end of your syntax). For a single element, you can use any pair of foreground text & background color, and a combination of multiple text decorations, all separated by `;`. Note, however, that not all decorations (e.g., *italic* or blinking) work on all types of terminals.
+You can test the result of your prompt style during development stage witch `printf` command (temporarily append a newline character `\n` to the end of your syntax when using *printf*). For a single element, you can use any pair of foreground text & background color, and a combination of multiple text decorations, all separated by `;`. Note, however, that not all decorations (e.g., *italic* or blinking) work on all types of terminals.
 
 ```
 # text decorations
@@ -372,42 +375,196 @@ fi
 To get prompt like mine, <span style="background-color: black; color: cyan; font-weight:600;"> &ensp; user</span><span style="background-color: black; color: white; font-weight:300;">@host</span><span style="background-color: black; color: lightgray; font-weight:300;">(shell):</span><span style="background-color: black; color: lightgreen; font-weight:400;">path</span><span style="background-color: black; color: red; font-weight:600;">$ &nbsp;</span>, use the syntax below:
 
 ```
-PS1="\[\e[1;36m\]\u\[\e[m\]@\h\[\e[0;37m\](${shell}):\[\e[0;32m\]\W\[\e[0;31m\]$\[\e[m\]"
+PS1="\[\e[1;36m\]\u\[\e[m\]@\h\[\e[0;37m\](\s):\[\e[0;32m\]\W\[\e[0;31m\]$\[\e[m\]"
 ```
 
 
 ## 3.3 Terminal Coloring
 
+Prompt is not the only thing in the terminal that you can configure to your needs. Customization also applies to the background color in the terminal window, adjusting the styles of displayed file types, or highlighting a search expression in the results. Changing settings may work differently depending on the operating system or terminal type. Here, I will introduce settings that work on macOS and standard Linux (which also works on HPC).
 
-on Linux:
+
+**Linux**
+
+In the previous section (customizing the command line prompt) the standard color codes for Bash and possible text decorations were introduced. Exactly same definition applies to setting styles for listing the file system when using the `ls` command. To avoid page scrolling let's see these options again (find more at [misc.flogisoft.com](https://misc.flogisoft.com/bash/tip_colors_and_formatting)).
+
+| text decoration    | foreground text color | prompt background color |
+|--------------------|-----------------------|-------------------------|
+|`0` - normal text   |`30` - <span style="background-color: white; color: black;"> black </span> | `40` - <span style="background-color: black; color: white;"> black </span> |
+|`1` - **bold text** |`31` - <span style="background-color: white; color: red;"> red </span>     | `41` - <span style="background-color: red; color: white;"> red </span>     |
+|`2` - dim text      |`32` - <span style="background-color: white; color: green;"> green </span> | `42` - <span style="background-color: green; color: white;"> green </span> |
+|`3` - <i>italic</i>|`33` - <span style="background-color: black; color: yellow;"> yellow </span> | `43` - <span style="background-color: yellow; color: black;"> yellow </span> |
+|`4` - <u>underlined text</u> |`34` - <span style="background-color: white; color: blue;"> blue </span>   | `44` - <span style="background-color: blue; color: white;"> blue </span>   |
+|`5` - blinking text |`35` - <span style="background-color: white; color: purple;"> purple </span> | `45` - <span style="background-color: purple; color: white;"> purple </span> |
+|`7` - reverse text color with a background |`36` - <span style="background-color: black; color: cyan;"> cyan </span>   | `46` - <span style="background-color: cyan; color: black;"> cyan </span>   |
+|`9` - <del>strikethrough</del>   |`37` - <span style="background-color: black; color: lightgray;"> light-gray </span> | `47` - <span style="background-color: lightgray; color: black;"> light-gray </span> |
+
+In Linux, the variable responsible for storing settings for coloring files and directories is called **$LS_COLORS**. It takes a string of elements separated by a colon `:` as a value. A given item consists of a file type with assigned styles using an equals sign, `type=styles:`. The names of a few types are predefined (see the list below), and the user can add as a type any format, such as `*.png`, where all files with PNG extension will have the assigned style applied. The styling is defined the same as for the prompt, i.e., any combination of numeric codes assigned to the colors and decorations of the text, all separated by a semicolon, e.g., `di=2;36` for coloring directories in <span style="background-color: black; color: cyan; font-weight:700;">&nbsp; bold-cyan </span> &nbsp;.
+
+**Important predefined types:** <br>
+^ the complete list can be expolred at [bigsoft.co.uk](http://www.bigsoft.co.uk/blog/2008/04/11/configuring-ls_colors)<br>
+
+|`di` - directory     |`fi` - file      |`ex` - executable file    |`ln` - symbolic link       |
+|---------------------|-----------------|--------------------------|---------------------------|
+|**`pi` - named pipe**|**`so` - socket**|**`bd` - block device**   |**`cd` - character device**|
+
+Thus, applying colors for listing the file system is as simple as copy-paste the following snippet into your ~/.bashrc file:
 
 ```
 LS_COLORS='rs=0:di=1;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:';
 
-export LS_COLORS
-
 alias ls='ls --color=auto'
 ```
 
-on macOS:
+^ *the `alias` line will apply autocoloring when calling the default `ls` command. More about aliases you can learn in the next section of this tutorial.*
+
+<div style="background: mistyrose; padding: 15px;">
+<span style="font-weight:800;">WARNING:</span>
+<br><span style="font-style:italic;">
+Do NOT forget to apply the changes to the current environemnt! Type on the command line:<br>
+-----------------<br>
+source ~/.bashrc
+</span>
+</div><br>
+
+
+Let's see the differences between a machine with default settings (top) and one with color customization for the user (bottom). The comfort of working in a customized terminal is much greater!
+
+![terminal colors](assets/images/shell_terminal_colors.png)<br><br>
+
+
+**macOS**
+
+Linux configuration of terminal coloring may not have the desired effect on a macOS machine. In particular, the **$LSCOLORS** variable corresponds to the $LS_COLORS in the Linux variant. However, its definition is quite different. The syntax is a string of 22 letters combined in pairs to provide the styling for 11 predefined types of file system objects. The first character in a duo refers to the foreground text color and the second to the background color. Using capital letters will add bold decoration to the text.
+
+The table below lists ordered objects with the default text and background (BG) colors.
+
+|object|dir|symlink|socket|pipe|exe|block|char|exe-uid|exe-gid|dir-sticky|dir-other|
+|------|---|-------|------|----|---|-----|----|-------|-------|----------|---------|
+| text | e | f     | c    | d  | b | e   | e  | a     | a     | a        | a       |
+| BG   | x | x     | x    | x  | x | g   | d  | b     | g     | c        | d       |
+| ix   | 1 | 2     | 3    | 4  | 5 | 6   | 7  | 8     | 9     | 10       | 11      |
+
+`a` - <span style="background-color: black; color: white;">&nbsp; black &nbsp;</span> &emsp;
+`b` - <span style="background-color: red; color: white;">&nbsp; red &nbsp;</span> &emsp;
+`c` - <span style="background-color: green; color: white;">&nbsp; green &nbsp;</span> &emsp;
+`d` - <span style="background-color: brown; color: white;">&nbsp; brown &nbsp;</span> &emsp;
+`e` - <span style="background-color: blue; color: white;">&nbsp; blue &nbsp;</span> &emsp;
+`f` - <span style="background-color: magenta; color: white;">&nbsp; magenta &nbsp;</span> &emsp;
+`g` - <span style="background-color: cyan; color: black;">&nbsp; cyan &nbsp;</span> &emsp;
+`h` - <span style="background-color: lightgray; color: black;">&nbsp; light-gray &nbsp;</span> &emsp;
+`x` - <span style="background-color: white; color: black;">&nbsp; default &nbsp;</span> &emsp;<br>
+^ *capital letters add **bold** text decoration*
+
+
+Further, the **$CLICOLOR** variable forces using ANSI color sequences to distinguish file types. Also, make sure that selected terminal type for $TERM variable is an *xterm-color*. The setup is straightforward, simply copy-paste into your `~/.bashrc` the snippet provided below:
 
 ```
-export LSCOLORS
-export TERM=xterm-color
-export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
-export CLICOLOR=1
-export LSCOLORS=Exgxcxdxcxegedabagacad
+TERM=xterm-color
+CLICOLOR=1
+LSCOLORS=Exgxcxdxcxegedabagacad
 
 alias ls='ls -Gh'
 ```
 
+![terminal colors](assets/images/shell_terminal_colors_mac.png)<br>
+
 ## 3.4 Define aliases
+
+In the Unix shell, **alias** is a text-like shortcut for the more complex set of commands that can be called directly from the command line by a user-customized name. Traditionally, aliases are defined in the `~/.bashrc` file, so the predefined aliases are available for the user right after opening the terminal window.  The syntax is straightforward, use the `alias` keyword followed by the quniue name to which you assign a value using an equals sign. The value is a string containing the stream of commands, with syntax identical to that used directly on the command line.
+
+```
+alias unique_name="command_1 | command 2 | command_3"
+```
+
+Adding aliases can be useful for:
+* redefining the default bash commands to customized ones, as we did with the `ls` command, which when called without arguments actually uses those defined in an alias
+* simplifying frequently called commands with hard-to-remember arguments, for example, you can create an alias to log in to a remote machine and not bother to memorize the host's name or IP
+* maintaining a complex syntax of commands combined in a stream, for example, to routinely parse a certain type of text files from your analysis
+* changing the development environment, such as switching the Conda distribution between Intel's x86 and the M1's ARM architecture on MacBook Pro
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+Keeping your <b>.bashrc</b> neatly organized will bring you convenience, especially when you want to change something after a long time. Therefore, it is suggested that you create <b>a separate section in this file for all the ALIASES</b> you will add over time. It is best to give this section a highly visible header. As a reminder, <b>#</b> is a comment character in the bash shell.
+</span>
+</div><br>
+
+Below, you can find examples of some useful aliases that should be copy-paste into your `~/.bashrc` file.
+
+```
+### USER's ALIASES ###
+
+# redefine default flags for ls command
+alias ls='ls --color=auto'             # on Linux
+alias ls='ls -Gh'                      # on MacOS
+
+# simplify login process (replace $USER with your {username} on a remote machine)
+alias login_nova='ssh $USER@nova.its.iastate.edu'              # HPC@ISU
+alias login_atlas='ssh $USER @atlas-login.hpc.msstate.edu'     # SCINet Atlas
+alias login_ceres='ssh $USER@ceres.scinet.usda.gov'            # SCINet Ceres
+
+# switch Conda distributions on your MacBook Pro
+### (for details see tutorial in section 3 of the workbook: Setting Up Computing Mashine -> Installations on MacBook Pro)
+alias source_condaX86="source /Users/$USER/Library/Miniforge3_x86/bin/activate"
+alias source_conda="source /Users/$USER/Library/Miniforge3/bin/activate"
+```
+
+<div style="background: mistyrose; padding: 15px;">
+<span style="font-weight:800;">WARNING:</span>
+<br><span style="font-style:italic;">
+While the temptation is high, you must <b>NOT create aliases to store passwords</b> in this way. Doing so would be a serious threat not only to your privacy, but also a significant security risk to the entire HPC infrastructure and all users.
+</span>
+</div><br>
+
 
 ## 3.5 Load modules
 
-## 3.6 Export $PATH
+Module loading is more applicable to work on remote machines like computing clusters, where to avoid redundancy of software installed by each user individually, certain universal **libraries are installed once** from the admin level. Then each infrastructure **user can load selected modules** into their environment from among the available. Specifically, the user can select the versions of a given module that are appropriate for their analysis. To check the available variants of a particular module, use the `module avail` command then type the name of the library or software.
 
-To see what file system locations are added to the list of paths searched to run an executable of a program, display the contents of the $PATH variable:
+```
+module avail python
+```
+
+![terminal colors](assets/images/shell_module_avail.png)<br>
+
+The command returns a list of available variants along with the annotation `(D)` for the default suggested ones and `(L)` for the currently loaded ones (if applicable). To load or change a module variant use the `module load` command and the copy-paste the name of the library variant (select the name with mouse and then use the combination of keys `CTRL+C` and `CTRL+V`).
+
+```
+module load python/3.9.2
+```
+
+![terminal colors](assets/images/shell_module_load.png)<br>
+
+In case you want to always start your Bash shell session with a specific module loaded, the best solution is to add the command to your `~/.bashrc`. This will simplify your working routine, especially if you have an entire list of necessary modules. So let's say you would like to always have `python/3.9.2` loaded by default into your environment. Thus, add the following snippet to your `~/.bashrc`:
+
+```
+### USER's MODULES LOADED ON STARTUP ###
+
+module load python/3.9.2
+```
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+Keeping your <b>.bashrc</b> neatly organized will bring you convenience, especially when you want to change something after a long time. Therefore, it is suggested that you create <b>a separate section in this file for all the MODULES</b> you will add over time. It is best to give this section a highly visible header. As a reminder, <b>#</b> is a comment character in the bash shell.
+</span>
+</div><br>
+
+<div style="background: mistyrose; padding: 15px;">
+<span style="font-weight:800;">WARNING:</span>
+<br><span style="font-style:italic;">
+Prudence lies in moderation. So do NOT add modules used infrequently or only in a specific pipeline to your ~/.bashrc. Watch out for this, especially on a computing cluster, where the resources allocated for your $HOME are often severely limited.<br><br>
+
+<b>So, how can you keep the organizations of the modules necessary for analyses?</b><br>
+The answer comes from virtual environments. You can create a new environment for a particular analysis and within it manage the list of necessary modules. <b>For python-based environments, Conda will provide you with assistance.</b> You can learn more by following the tutorial in section 3 of the workbook, Setting Up Computing Machine -> Must-Have Software -> <a href="https://datascience.101workbook.org/03-SetUpComputingMachine/02C-basic-developer-libraries">Basic Developer Libraries</a>.
+</span>
+</div><br>
+
+
+## 3.6 Export $PATH and more
+
+Exporting a **$PATH** variable is probably the most commonly used example for the `export` command. It is also a common topic on programming forums, where novice bash users struggle with errors appearing when called programs don't work. $PATH is an environmental variable that tells the shell where to search in file system for executable files called by a user. To see what file system locations are added to the list of paths searched to run an executable of a program, display the contents of the $PATH variable:
 
 ```
 echo $PATH
@@ -415,14 +572,39 @@ echo $PATH
 
 ![Path variable](assets/images/shell_path_variable.png)<br>
 
+The syntax of the $PATH variable consists of absolute paths to directories in the file system separated by a colon `:` (without spaces). The value of this variable is stored in the `~/.bashrc` file. To add a new path, edit the `~/.bashrc` file in any text editor *(e.g., nano, vim, mcedit)* and paste the new path after a colon. If this variable is not in your `~/.bashrc`, you can copy the current value displayed with the `echo $PATH` command and paste it into the file following the example:
+
+```
+PATH="/usr/bin:/usr/local/bin:/bin:/sbin:/opt/X11/bin:"
+```
+
+You can also add a new path to the $PATH variable directly from the command line using the `export` command. Considering that your path of interest is a directory *bin* located in your $HOME directory (*i.e., $HOME/bin*), you can update the $PATH variable as follows:
+
+```
+export PATH="$HOME/bin:$PATH"
+```
+
+That means you just added a new location in the file system at the beginning of a previous state of the string being a value of the $PATH variable.
+
+
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+With the <b>export</b> command you can overwrite or update the value of any environment variable in the Unix shell. <br>
+For example, directly from the command line you can change the number of commands saved in the Bash shell history: <br>-----------------------<br>
+export HISTSIZE=300
+</span>
+</div><br>
+
 ___
 # Further Reading
-* [Unix Basic Commands](02A-basic-commands.md)
-* [System Info and Access Parmisions](02B-unix-system-info-permissions.md)
-* [Text Files Editors](02C-text-files-editors.md)
-* [Unix Admin Commands](02D-admin-commands.md)
-* [Tutorial: Unix Getting Started](02E-tutorial-unix-getting-started.md)
-* [Summary of Unix Commands](04-unix-cheat-sheet.md)
+* [Unix Basic Commands: Navigation, File Creation & Preview](02A-basic-commands.md)
+* [Command Line Text Files Editors: nano, vim](02B-text-files-editors.md)
+* [System Info and Access Parmisions](02C-unix-system-info-permissions.md)
+* [Superuser Command: sudo](02D-admin-commands.md)
+* [Getting Started with UNIX + VIDEO + exercises](02E-tutorial-unix-getting-started.md)
+* [Unix Commands CheatSheet](04-unix-cheat-sheet.md)
 
 ___
 
@@ -430,3 +612,4 @@ ___
 [Section Index](00-IntroToCommandLine-LandingPage.md){: .btn  .btn--primary}
 [Previous](01-terminal-basics.md){: .btn  .btn--primary}
 [Next](02A-basic-commands.md){: .btn  .btn--primary}
+[top of page](#what-is-Unix){: .btn  .btn--primary}

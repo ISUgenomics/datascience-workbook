@@ -1,8 +1,8 @@
 ---
 title: "Submitting Dependency Jobs using SLURM"
 layout: single
-author:
-author_profile: false
+author: Arun Seetharam
+author_profile: true
 header:
   overlay_color: "444444"
   overlay_image: /06-IntroToHPC/assets/images/06_hpc_banner.png
@@ -10,6 +10,12 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../../00-IntroToHPC-LandingPage.md) / [5. Introduction to Job Scheduling](../00-introduction-to-job-scheduling.md) / [5.1 SLURM: Basics of Workload Manager](01-slurm-basics.md) / **5.1.3 Submitting Dependency Jobs using SLURM**
+
+---
+
+
+# Introduction
 
 # Submitting dependency jobs using SLURM
 
@@ -64,14 +70,17 @@ The other dependencies that can be used for`<type:job_id>` are as follows:
 
 ___
 # Further Reading
-* [PBS: Portable Batch System](../02-PBS/01-pbs-basics)
+* [SLURM Commands CheatSheet](02-slurm-cheatsheet)
 
-* [Introduction to GNU Parallel](../../06-PARALLEL/01-introduction-to-gnu-parallel)
-* [Introduction to Containers](../../07-CONTAINERS/00-introduction-to-containers)
+* [5.2 PBS: Portable Batch System](../02-PBS/01-pbs-basics)
+
+* [6. Introduction to GNU Parallel](../../06-PARALLEL/01-introduction-to-gnu-parallel)
+* [7. Introduction to Containers](../../07-CONTAINERS/00-introduction-to-containers)
 
 ___
 
 [Homepage](../../../index.md){: .btn  .btn--primary}
 [Section Index](../../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
 [Previous](03-slurm-1-tutorial-job-submission){: .btn  .btn--primary}
-[Next](../02-PBS/01-pbs-basics){: .btn  .btn--primary}
+[Next](02-slurm-cheatsheet){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

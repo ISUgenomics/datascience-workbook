@@ -1,8 +1,8 @@
 ---
 title: "Creating Containers using Singularity"
 layout: single
-author:
-author_profile: false
+author: Andrew Severin
+author_profile: true
 header:
   overlay_color: "444444"
   overlay_image: /06-IntroToHPC/assets/images/06_hpc_banner.png
@@ -10,8 +10,14 @@ header:
 
 {% include toc %}
 
-## Creating your own Singularity containers.  What you need to know.
+[DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../../00-IntroToHPC-LandingPage.md) / [7. Introduction to Containers](../00-introduction-to-containers.md) / [7.1 Singularity](01-singularity-basics.md) / **7.1.1 Creating Containers using Singularity**
 
+---
+
+
+# Introduction
+
+**Creating your own Singularity containers.  What you need to know.**
 
 This tutorial will help you create your own Singularity container using a github, a recipe file and Singularity Hub.  It will also suggest a GitHub repo organization that will maximize a researcher's ability to utilize your scripts and pipelines in your repo.
 
@@ -182,10 +188,10 @@ singularity exec ISUGIFsingularity-utilities-master.simg ../utilities/new_Assemb
 
 ___
 # Further Reading
-* [Tutorial: Modifying Existing Containers](03-singularity-2-tutorial-modyfying-containers)
-* [Tutorial: Singularity on your Mac via Vagrant](04-singularity-3-tutorial-vagrant)
+* [7.1.2 Modifying Existing Containers](03-singularity-2-tutorial-modyfying-containers)
+* [7.1.3 Singularity on your Mac via Vagrant](04-singularity-3-tutorial-vagrant)
 
-* [Docker](../02-DOCKER/01-docker-basics)
+* [7.2 Docker](../02-DOCKER/01-docker-basics)
 
 ___
 
@@ -193,3 +199,4 @@ ___
 [Section Index](../../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
 [Previous](01-singularity-basics){: .btn  .btn--primary}
 [Next](03-singularity-2-tutorial-modyfying-containers){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

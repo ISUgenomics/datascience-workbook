@@ -1,14 +1,21 @@
 ---
 title: "Create Workbook from Multiple Text Files"
 layout: single
-author:
-author_profile: false
+author: Arun Seetharam
+author_profile: true
 header:
   overlay_color: "444444"
   overlay_image: /07-DataParsing/assets/images/07_data_acquisition_banner.png
 ---
 
 {% include toc %}
+
+[DataScience Workbook](https://datascience.101workbook.org/) / [07. Data Acquisition and Wrangling](../../00-DataParsing-LandingPage.md) / [2. Data Manipulation](../01-data-manipulation.md) / [2.1 Manipulating Excel Data Sheets](01-manipulate-excel-sheets.md) / **2.1.1 Create Workbook from Multiple Text Files**
+
+---
+
+
+# Introduction
 
 # Import multiple text files as separate worksheets in Excel #
 If there are large number of text files that you need to import as a separate worksheet, follow these guidelines. Note that the file name of the text file will be used to label the worksheet (tab), without the `.txt` extension.
@@ -85,12 +92,13 @@ Now you are all set to import files. Click on `Macros` again, and then `Run`. A 
 
 ___
 # Further Reading
-* [Export Multiple Worksheets as Separate Text Files](03-tutorial-export-multiple-worksheets)
-* [Create Index for All Worksheets](04-tutorial-create-index-for-all-worksheets)
-* [Merge Two Spreadsheets using a Common Column](05-tutorial-merge-spreadsheets-by-column)
+* [2.1.2 Export Multiple Worksheets as Separate Text Files](03-tutorial-export-multiple-worksheets)
+* [2.1.3 Create Index for All Worksheets](04-tutorial-create-index-for-all-worksheets)
+* [2.1.4 Merge Two Spreadsheets using a Common Column](05-tutorial-merge-spreadsheets-by-column)
 
-* [Manipulating Text Files with Python](../02-PYTHON/01-manipulate-data-with-python)
+* [2.2 Manipulating Text Files with Python](../02-PYTHON/01-manipulate-data-with-python)
 
+* [3. Data Wrangling: ready-made apps](../../03-DATA-WRANGLING-APPS/00-data-wrangling-apps)
 
 ___
 
@@ -98,3 +106,4 @@ ___
 [Section Index](../../00-DataParsing-LandingPage){: .btn  .btn--primary}
 [Previous](01-manipulate-excel-sheets){: .btn  .btn--primary}
 [Next](03-tutorial-export-multiple-worksheets){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

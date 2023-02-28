@@ -10,6 +10,14 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [02. Introduction to the Command Line](00-IntroToCommandLine-LandingPage.md) / [2. Introduction to UNIX Shell](02-intro-to-unix-shell.md) / **2.2 Text Files Editors: nano, vim**
+
+---
+
+# Introduction
+
+
+
 # *Text Files editors in the Terminal*
 
 || ||
@@ -215,11 +223,11 @@ restart the terminal and you're all set to use the bioSyntax!
 
 ___
 # Further Reading
-* [System Info and Access Permissions](02C-unix-system-info-permissions.md)
-* [Unix Admin Commands](02D-admin-commands.md)
-* [Tutorial: Unix Getting Started](02E-tutorial-unix-getting-started.md)
-* [Summary of Unix Commands](04-unix-cheat-sheet.md)
-* [Text Files Manipulation Programs](03-text-manipulation-programs.md)
+* [System Info and Access Parmisions](02C-unix-system-info-permissions.md)
+* [Superuser Command: sudo](02D-admin-commands.md)
+* [Getting Started with UNIX + VIDEO + exercises](02E-tutorial-unix-getting-started.md)
+* [Unix Commands CheatSheet](04-unix-cheat-sheet.md)
+
 
 ___
 
@@ -227,3 +235,4 @@ ___
 [Section Index](00-IntroToCommandLine-LandingPage.md){: .btn  .btn--primary}
 [Previous](02A-basic-commands.md){: .btn  .btn--primary}
 [Next](02C-unix-system-info-permissions.md){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

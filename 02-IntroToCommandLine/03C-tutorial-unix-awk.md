@@ -1,14 +1,20 @@
 ---
 title: "AWK Command"
 layout: single
-author: Aleksandra Badaczewska
-author_profile: true
+author:
+author_profile: false
 header:
   overlay_color: "444444"
   overlay_image: /02-IntroToCommandLine/assets/images/02_command_line_banner.png
 ---
 
 {% include toc %}
+
+[DataScience Workbook](https://datascience.101workbook.org/) / [02. Introduction to the Command Line](00-IntroToCommandLine-LandingPage.md) / [3. Useful Text Manipulation Programs](03-text-manipulation-programs.md) / **3.3 AWK – advanced text processing**
+
+---
+
+# Introduction
 
 Awk can be a powerful general-purpose scripting language to perform advanced text processing. It is a command-line tool and is particularly useful for working with structured data, such as tables or files with columns of data separated by delimiters. To understand `awk` more, let us create a file `marksheet.txt`.
 
@@ -142,8 +148,9 @@ ORS: ORS command stores the output record separator, which separates the output 
 ___
 
 # Further Reading
-* [Tutorial: BIOAWK – biological data manipulation](03D-tutorial-unix-bioawk.md)
-* [Summary of Unix Commands](04-unix-cheat-sheet.md)
+* [BIOAWK – biological data manipulation](03D-tutorial-unix-bioawk.md)
+
+* [Unix Commands CheatSheet](04-unix-cheat-sheet.md)
 
 ___
 
@@ -151,3 +158,4 @@ ___
 [Section Index](00-IntroToCommandLine-LandingPage.md){: .btn  .btn--primary}
 [Previous](03B-tutorial-unix-sed.md){: .btn  .btn--primary}
 [Next](03D-tutorial-unix-bioawk.md){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

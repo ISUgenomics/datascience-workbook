@@ -10,9 +10,14 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / **3. Documentation Improvement Tools**
+
+---
+
+
 ## <span style="color: #ff3870;">New content coming soon!</span>
 
-
+# Introduction
 
 
 
@@ -20,14 +25,16 @@ header:
 
 ___
 # Further Reading
-* [Introduction to Markdown](02-intro-to-markdown)
+* [3.1 Introduction to Markdown](02-intro-to-markdown)
 
-* [Team Communication Tools](../03-COMMUNICATION/01-team-communication-tools)
+* [4. Collaboration & Communication](../03-COMMUNICATION/00-collaboration-communication)
+* [5. Resource Management & Productivity](../04-PRODUCTIVITY/00-resources-productivity)
 
 
 ___
 
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
-[Previous](../01-SOURCE-CODE/04-intro-to-zenhub){: .btn  .btn--primary}
+[Previous](../01-SOURCE-CODE/05-intro-to-bitbucket){: .btn  .btn--primary}
 [Next](02-intro-to-markdown){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}

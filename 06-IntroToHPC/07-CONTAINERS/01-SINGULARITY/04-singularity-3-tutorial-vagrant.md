@@ -1,14 +1,21 @@
 ---
 title: "Singularity on your Mac via Vagrant"
 layout: single
-author:
-author_profile: false
+author: Andrew Severin
+author_profile: true
 header:
   overlay_color: "444444"
   overlay_image: /06-IntroToHPC/assets/images/06_hpc_banner.png
 ---
 
 {% include toc %}
+
+[DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../../00-IntroToHPC-LandingPage.md) / [7. Introduction to Containers](../00-introduction-to-containers.md) / [7.1 Singularity](01-singularity-basics.md) / **7.1.3 Singularity on your Mac via Vagrant**
+
+---
+
+
+# Introduction
 
 # Singularity on your Mac via Vagrant
 
@@ -66,7 +73,7 @@ vagrant@vagrant:~$ ./growl-llo-world.simg
 RaawwWWWWWRRRR!!
 ```
 Note that when you do vagrant up you can also select the provider, if you use vagrant for multiple providers. For example:
-``````
+```
 vagrant up --provider virtualbox
 although this isn’t entirely necessary if you only have it configured for virtualbox.
 ```
@@ -107,7 +114,7 @@ Remember that the VM is running in the background because we started it via the 
 
 ___
 # Further Reading
-* [Docker](../02-DOCKER/01-docker-basics)
+* [7.2 Docker](../02-DOCKER/01-docker-basics)
 
 ___
 
@@ -115,3 +122,4 @@ ___
 [Section Index](../../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
 [Previous](03-singularity-2-tutorial-modyfying-containers){: .btn  .btn--primary}
 [Next](../02-DOCKER/01-docker-basics){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}
