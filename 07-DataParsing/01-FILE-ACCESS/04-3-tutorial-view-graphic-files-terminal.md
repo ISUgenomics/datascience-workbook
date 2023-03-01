@@ -112,7 +112,7 @@ When working on an HPC system, it can be challenging to install custom software 
 
 | TOOL | LICENSE | AUTHOR | GitHub | DOCS |
 |------|---------|--------|--------|------|
-| [jp2a](#https://github.com/TheZoraiz/ascii-image-converter#cli-usage) | GNU General | C.S. Larsen | <a href="https://github.com/cslarsen/jp2a" target="_blank">https://github.com/cslarsen/jp2a</a> | <a href="https://manpages.ubuntu.com/manpages/xenial/man1/jp2a.1.html#author" target="_blank">ubuntu manuals: jp2a</a> |
+| [jp2a](#jp2a) | GNU General | C.S. Larsen | <a href="https://github.com/cslarsen/jp2a" target="_blank">https://github.com/cslarsen/jp2a</a> | <a href="https://manpages.ubuntu.com/manpages/xenial/man1/jp2a.1.html#author" target="_blank">ubuntu manuals: jp2a</a> |
 | [asciiview](#asciiview-or-aview) | GNU General | J. Hubicka | | <a href="https://manpages.ubuntu.com/manpages/kinetic/en/man1/aview.1.html" target="_blank">ubuntu manuals: aview</a>|
 | [img2txt](#img2txt)  | <a href="http://www.wtfpl.net" target="_blank">WTFPL</a> | S. Hocevar <br>J.-Y. Lamoureux | <a href="https://github.com/cacalabs/libcaca" target="_blank">https://github.com/cacalabs/libcaca</a> | <a href="https://manpages.ubuntu.com/manpages/jammy/en/man1/img2txt.1.html" target="_blank">ubuntu manuals: img2txt</a> |
 | [ascii-image-converter](#ascii-image-converter-recommended) | Apache-2.0 | Z. Hassan | <a href="https://github.com/TheZoraiz/ascii-image-converter" target="_blank">https://github.com/TheZoraiz/ascii-image-converter</a> | <a href="https://github.com/TheZoraiz/ascii-image-converter#cli-usage" target="_blank">CLI usage & flags</a> |
@@ -134,7 +134,7 @@ cat /etc/os-release
 ```
 The first few rows of the output displayed on the terminal screen should looks something like:
 
-<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;"><br>
 NAME="AlmaLinux" <br>
 VERSION="9.1 (Lime Lynx)" <br>
 ID="almalinux" <br>
@@ -227,11 +227,11 @@ automake --add-missing --copy --no-force <br>
 
 3. Run configure script while adjusting value for arguments: <br>
 <b>--with-jpeg-prefix=</b>, <i>provide custom path to which you have writing permission</i><br>
-<b>--prefix=</b>, <i>provide custom path to which you have writing permission</i><br>
+<b>--prefix=</b>, <i>provide custom path to which you have writing permission</i><br><br>
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">You can use the current directory or create a directory a level up from where the script is executed. It is best to specify an absolute path.</span>
-</div><br>
+</div>
 <code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
 ./configure --with-jpeg-prefix=/work/gif/Alex/software/jp2a --with-curl-config=`which curl-config` --prefix=/work/gif/Alex/software/jp2a
 </code><br>
@@ -266,14 +266,16 @@ Here's an example command to view an image using asciiview:
 ```
 jp2a fancy-cat.jpeg --colors
 ```
-![01-remote_view_jp2a.png](../assets/images/01-remote_view_jp2a.png)
+<p align="center"><img width="800" src="../assets/images/01-remote_view_jp2a.png"></p>
 
 If you have <b>imagemagick</b> suite available on your system you can convert other formats to JPEG and stream it for jp2a. You first need to load `imagemagick` module and then use `convert` tool:
 ```
 module load imagemagick
 convert linux-logo.png jpg:- | jp2a -
 ```
-![01-remote_view_jp2a_2.png](../assets/images/01-remote_view_jp2a_2.png)
+
+<p align="center"><img width="800" src="../assets/images/01-remote_view_jp2a_2.png"></p>
+
 
 ## asciiview or aview
 
@@ -300,7 +302,7 @@ make <br>
 make install
 </code>
 This will create a bin directory on the custom path that will contain software executables: <br>
-aafire  aaflip  aainfo  aalib-config  aasavefont  aatest  asciiview.<br>
+aafire  aaflip  aainfo  aalib-config  aasavefont  aatest  asciiview.<br><br>
 <b>Remember to add the aalib to the $PATH variable:</b><br>
 <code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
 export PATH=/work/gif/Alex/software/aview/bin:$PATH
@@ -315,10 +317,10 @@ rm aview.spec  aview-1.3.0rc1.tar.gz  aview-1.3.0rc1-1.1.src.rpm <br
 ./configure --prefix=/work/gif/Alex/software/aview <br>
 make <br>
 make install
-</code>
-This will create a bin directory on the custom path that will contain software executables: <br>
+</code><br>
+<i>This will create a bin directory on the custom path that will contain software executables:</i> <br>
 <b>asciiview</b>, <b>aview</b>.
-<br>
+<br><br>
 </details>
 
 <details><summary>Ubuntu/Debian:</summary>
@@ -347,7 +349,7 @@ asciiview fancy-cat.jpeg
 ```
 *In this example, fancy-cat.jpeg is the input file. Once you run the command, the image will be displayed in the terminal window as ASCII art that you can adjust in real-time using controls on the keyboard.*
 
-![01-remote_view_asciiview.gif](../assets/images/01-remote_view_asciiview.gif)
+<p align="center"><img width="800" src="../assets/images/01-remote_view_asciiview.gif"></p>
 
 ## img2txt
 
@@ -383,14 +385,12 @@ make <br>
 make install
 </code><br>
 This will create a bin directory on the custom path that will contain software executables: <br>
-<b>img2txt</b>, cacaview, cacaclock  cacademo  cacafire  cacaplay  cacaserver.<br>
+<b>img2txt</b>, cacaview, cacaclock  cacademo  cacafire  cacaplay  cacaserver.<br><br>
 <div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">WARNING:</span>
 <br><span style="font-style:italic;">
-In my case, the program has NOT been built with Imlib2 support, since this graphics library was not natively pre-installed on my HPC system. This results in only BMP loading is supported. So, note that when you face the same issue and try to convert JPEG or PNG you will get the <b>error message</b>: <i>"unable to load image-filename"</i>.
-</span>
+In my case, the program has NOT been built with Imlib2 support, since this graphics library was not natively pre-installed on my HPC system. This results in only BMP loading is supported. So, note that when you face the same issue and try to convert JPEG or PNG you will get the <b>error message</b>: <i>"unable to load image-filename"</i>.</span>
 </div><br>
-<br>
 </details>
 
 
@@ -441,7 +441,7 @@ I recommend this software because it is easy to install on any local or remote m
 
 <details><summary>HPC system:</summary>
 
-The <b>ascii-image-converter</b> is not available at <a href="https://pkgs.org/search/?q=ascii-image-converter" target="_blank">pkgs.org  ⤴</a> for any OS other than Arch. However, you can browse the available pre-compiled releases for various operating systems and architectures at <a href="https://github.com/TheZoraiz/ascii-image-converter/releases" target="_blank">GitHub releases  ⤴</a>.
+The <b>ascii-image-converter</b> is not available at <a href="https://pkgs.org/search/?q=ascii-image-converter" target="_blank">pkgs.org  ⤴</a> for any OS other than Arch. However, you can browse the available pre-compiled releases for various operating systems and architectures at <a href="https://github.com/TheZoraiz/ascii-image-converter/releases" target="_blank">GitHub releases  ⤴</a>.<br><br>
 1. Select and download the release that matches best the configuration of your HPC system. In my case, there were no <b>x86_64</b> version, so I tried with <b>i386_32</b> and it worked.<br>
 <i>*If your HPC uses Enterprise Linux OS with x86_64 architecture, you can use these commands directly:</i>
 <code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
@@ -458,7 +458,7 @@ ascii-image-converter
 <code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
 ./ascii-image-converter -h
 </code><br>
-You should see the help message on your screen <i>"This tool converts images into ascii art and prints them on the terminal."</i><br>
+You should see the help message on your screen <i>"This tool converts images into ascii art and prints them on the terminal."</i><br><br>
 <div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">WARNING:</span>
 <br><span style="font-style:italic;">
@@ -469,14 +469,13 @@ export PATH="abolute/path/to-ascii-image:$PATH"
 Otherwise, you must always precede the file name with the exact path:
 <code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
 ./ascii-image-converter
-</code><br>
+</code>
 or
 <code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
 /absolute/path/ascii-image-converter
-</code><br>
+</code>
 </span>
 </div><br>
-<br>
 </details>
 
 
