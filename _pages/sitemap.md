@@ -598,8 +598,13 @@ header:
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;  
-    <a href="07-DataParsing/01-FILE-ACCESS/04-3-tutorial-mount-remote-folder" style="color: #3f5a8a;">
-    Mounting Remote Folder on Local Machine</a></td></tr>
+    <a href="07-DataParsing/01-FILE-ACCESS/04-3-tutorial-view-graphic-files-terminal" style="color: #3f5a8a;">
+    Viewing PDF Files using X11 SSH connection</a></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;  
+    <a href="07-DataParsing/01-FILE-ACCESS/04-4-tutorial-mount-remote-folder" style="color: #3f5a8a;">
+    Viewing graphics in a terminal as the text-based ASCII art</a></td></tr>
 
   <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center; width: 130px;">INTRO</td>
     <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b>

@@ -33,7 +33,8 @@ Remote data preview refers to the ability to **view data that is stored in a rem
 
   * **[Viewing Text Files](04-1-tutorial-view-text-files-unix) using UNIX commands on a remote machine**
   * **[Viewing PDF Files](04-2-tutorial-view-pdf-files-x11) using X11 SSH connection**
-  * **[Mounting Remote Folder](04-3-tutorial-mount-remote-folder) on local machine using SSH connection**
+  * **[Viewing Graphic Files](04-3-tutorial-view-graphic-files-terminal) on remote machine as the ASCII art in the terminal**
+  * **[Mounting Remote Folder](04-4-tutorial-mount-remote-folder) on local machine using SSH connection**
 
 
 <span style="color: #ff3870;font-weight: 500;">This section will focus on command line approaches for previewing remote data</span>, as they are universally applicable and reliable for accessing data stored across a variety of High-Performance Computing (HPC) systems. We encourage readers to explore these command line approaches by participating in hands-on tutorials listed in the [Further Reading](#further-reading) section.
@@ -46,7 +47,9 @@ Command line approaches for **previewing remote data can be especially useful** 
 <i>In scientific research, it's common to generate reports, publications, and other documents in PDF format. Command line approaches like X11 SSH connection allow users to preview PDF files remotely without downloading or transferring them to a local machine.</i> <br> <span style="color: #ff3870;font-weight: 500;">To learn more visit the tutorial <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/04-2-tutorial-view-pdf-files-x11" target="_blank">Viewing PDF Files using X11 SSH connection  ⤴</a></span>
 
 * **Previewing graphic files** <br>
-<i>Graphics are often used in scientific research, including charts, graphs, and images. Command line approaches like mounting a remote folder using sshfs allow users to view graphic files remotely without downloading or transferring them to a local machine.</i> <br> <span style="color: #ff3870;font-weight: 500;">To learn more visit the tutorial <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/04-3-tutorial-mount-remote-folder" target="_blank">Mounting Remote Folder on Local Machine  ⤴</a></span>
+<i>Graphics are often used in scientific research, including charts, graphs, and images. Command line approaches like mounting a remote folder using sshfs allow users to view graphic files remotely without downloading or transferring them to a local machine.</i> <br> <span style="color: #ff3870;font-weight: 500;">To learn more visit the tutorials:
+* <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/04-3-tutorial-view-graphic-files-terminal" target="_blank">Viewing Graphic Files on remote machine as the ASCII art in the terminal  ⤴</a></span>
+* <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/04-4-tutorial-mount-remote-folder" target="_blank">Mounting Remote Folder on Local Machine  ⤴</a></span>
 
 * **Quick view to find information needed** <br>
 <i>When working on remote HPC systems, it can be challenging to find the specific information needed quickly. Command line approaches allow users to preview the data and code, and use text processing tools to quickly search and extract relevant information.</i>
@@ -68,7 +71,8 @@ ___
 # Further Reading
 * [1.3.1 Viewing Text Files using UNIX commands](04-1-tutorial-view-text-files-unix)
 * [1.3.2 Viewing PDF Files using X11 SSH connection](04-2-tutorial-view-pdf-files-x11)
-* [1.3.3 Mounting Remote Folder on Local Machine](04-3-tutorial-mount-remote-folder)
+* [1.3.3 Viewing Graphic Files using ASCII art in the termianl](04-3-tutorial-view-graphic-files-terminal)
+* [1.3.4 Mounting Remote Folder on Local Machine](04-4-tutorial-mount-remote-folder)
 
 * [2. Data Manipulation](../02-DATA-MANIPULATION/01-data-manipulation)
 * [3. Data Wrangling: ready-made apps](../03-DATA-WRANGLING-APPS/00-data-wrangling-apps)

@@ -35,6 +35,6 @@ ___
 
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-DataParsing-LandingPage){: .btn  .btn--primary}
-[Previous](../01-FILE-ACCESS/04-3-tutorial-mount-remote-folder){: .btn  .btn--primary}
+[Previous](../01-FILE-ACCESS/04-4-tutorial-mount-remote-folder){: .btn  .btn--primary}
 [Next](01-EXCEL/01-manipulate-excel-sheets){: .btn  .btn--primary}
 [top of page](#introduction){: .btn  .btn--primary}
