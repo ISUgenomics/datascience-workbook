@@ -10,7 +10,7 @@ header:
 
 {% include toc %}
 
-[DataScience Workbook](https://datascience.101workbook.org/) / [07. Data Acquisition and Wrangling](../00-DataParsing-LandingPage.md) / [1. Remote Data Access](01-remote-data-access.md) / [1.3 Remote Data Preview without Downloading](04-0-remote-data-preview.md) / **1.3.3 Mounting Remote Folder on Local Machine**
+[DataScience Workbook](https://datascience.101workbook.org/) / [07. Data Acquisition and Wrangling](../00-DataParsing-LandingPage.md) / [1. Remote Data Access](01-remote-data-access.md) / [1.3 Remote Data Preview without Downloading](04-0-remote-data-preview.md) / **1.3.4 Mounting Remote Folder on Local Machine**
 
 ---
 
@@ -222,6 +222,6 @@ ___
 
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-DataParsing-LandingPage){: .btn  .btn--primary}
-[Previous](04-2-tutorial-view-pdf-files-x11){: .btn  .btn--primary}
+[Previous](04-3-tutorial-view-graphic-files-terminal){: .btn  .btn--primary}
 [Next](../02-DATA-MANIPULATION/01-data-manipulation){: .btn  .btn--primary}
 [top of page](#introduction){: .btn  .btn--primary}
