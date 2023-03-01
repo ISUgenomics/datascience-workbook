@@ -41,13 +41,13 @@ Universal or multi-language IDEs are highly customizable, multi-platform text ed
 
 
 ### *B. R-Dedicated IDEs*
-* <b>RStudio</b>: is a popular open-source IDE specifically designed for R programming. It has a user-friendly interface with features such as code highlighting, code completion, debugging, and visualization tools. Both new and experienced R users widely use RStudio. Learn more about <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03A-rstudio-basics" target="_blank">RStudio Basics ⤴</a> and <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03B-tutorial-setting-up-rstudio" target="_blank">Setting up RStudio ⤴</a> in this <a href="https://datascience.101workbook.org" target="_blank">workbook ⤴</a>.
+* <b>RStudio</b>: is a popular open-source IDE specifically designed for R programming. It has a user-friendly interface with features such as code highlighting, code completion, debugging, and visualization tools. Both new and experienced R users widely use RStudio. Learn more about <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03A-rstudio-basics" target="_blank">RStudio Basics ⤴</a> and <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03A-tutorial-setting-up-rstudio" target="_blank">Setting up RStudio ⤴</a> in this <a href="https://datascience.101workbook.org" target="_blank">workbook ⤴</a>.
 <br>
 * <b>Tinn-R</b>: is an open-source IDE with GUI for R programming and environment that provides a customizable interface for editing, running, and debugging R code. Check the <a href="https://tinn-r.org/en/" target="_blank">Tinn-R website ⤴</a> to download and for more information.
 
 
 ### *C. Web-based IDEs*
-* <b>Jupyter Notebook</b>: is a web-based IDE that allows users to create and share documents that contain live code, equations, visualizations, and narrative text. Learn more about the <b>Jupyter Lab</b> from the tutorial <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-jupyter-basics" target="_blank">Jupyter: Web-Based Programming Interface ⤴</a> in this <a href="https://datascience.101workbook.org" target="_blank">workbook ⤴</a>.
+* <b>Jupyter Notebook</b>: is a web-based IDE that allows users to create and share documents that contain live code, equations, visualizations, and narrative text. Learn more about the <b>Jupyter Lab</b> from the tutorial <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-jupyter-basics" target="_blank">Jupyter: Web-Based Programming Interface ⤴</a> in this <a href="https://datascience.101workbook.org" target="_blank">workbook ⤴</a>.
 * <b>RStudio Cloud</b>: RStudio Cloud is a free, web-based version of the RStudio IDE that provides a complete environment for coding in R. You can write, run, and share your R code from anywhere with an internet connection. RStudio Cloud is now known as <a href="https://posit.cloud/" target="_blank">Posit Cloud ⤴</a>.
 
 
@@ -77,7 +77,7 @@ Some basic development environments for programming in R along with the text edi
 
 
 ## Using R
-You will need to install the R software on your computer to use R. This can be done easily by downloading it from the Comprehensive R Archive Network (CRAN), the official repository for R packages and software. You will also need a text editor or an IDE of your choice to write and edit code. I recommend using RStudio or RStudio Cloud. Check out <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03B-tutorial-setting-up-rstudio" target="_blank">Setting up RStudio ⤴</a> for more details about getting started in R and installing R libraries. Also, check the <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03A-rstudio-basics" target="_blank">RStudio Basics ⤴</a> tutorial if you are not familiar with RStudio interface.
+You will need to install the R software on your computer to use R. This can be done easily by downloading it from the Comprehensive R Archive Network (CRAN), the official repository for R packages and software. You will also need a text editor or an IDE of your choice to write and edit code. I recommend using RStudio or RStudio Cloud. Check out <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03A-tutorial-setting-up-rstudio" target="_blank">Setting up RStudio ⤴</a> for more details about getting started in R and installing R libraries. Also, check the <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03A-rstudio-basics" target="_blank">RStudio Basics ⤴</a> tutorial if you are not familiar with RStudio interface.
 <br>
 
 
