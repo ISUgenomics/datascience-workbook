@@ -26,7 +26,8 @@ Information is the foundation of the learning process. Data acquisition and wran
 * <a href="01-FILE-ACCESS/04-0-remote-data-preview" style="color: #3f5a8a;">1.3 Remote Data Preview without Downloading</a>
   * <a href="01-FILE-ACCESS/04-1-tutorial-view-text-files-unix" style="color: #3f5a8a;">1.3.1 Viewing Text Files using UNIX commands</a>
   * <a href="01-FILE-ACCESS/04-2-tutorial-view-pdf-files-x11" style="color: #3f5a8a;">1.3.2 Viewing PDF Files using X11 SSH connection </a>
-  * <a href="01-FILE-ACCESS/04-3-tutorial-mount-remote-folder" style="color: #3f5a8a;">1.3.3 Mounting Remote Folder on Local Machine</a>
+  * <a href="01-FILE-ACCESS/04-3-tutorial-view-graphic-files-terminal" style="color: #3f5a8a;">1.3.3 Viewing graphics in a terminal as the text-based ASCII art </a>
+  * <a href="01-FILE-ACCESS/04-4-tutorial-mount-remote-folder" style="color: #3f5a8a;">1.3.4 Mounting Remote Folder on Local Machine</a>
 
 ### **<a href="02-DATA-MANIPULATION/01-data-manipulation" style="color: #24376b;">2. Data Manipulation</a>**
 * <a href="02-DATA-MANIPULATION/01-EXCEL/01-manipulate-excel-sheets" style="color: #3f5a8a;">2.1 Manipulating Excel Data Sheets</a>
