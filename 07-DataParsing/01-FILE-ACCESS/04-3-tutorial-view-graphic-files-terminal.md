@@ -209,7 +209,7 @@ You can use an ImageMagick built-in <b>convert</b> tool to convert other formats
 
 <details><summary>HPC system:</summary>
 
-1. Perform STEPS 1-5 provided in section [Getting started](#getting-started) using the <b>jp2a</b> keyword for software searching at <a href="https://pkgs.org/" target="_blank">pkgs.org  ⤴</a>
+1. Perform STEPS 1-5 provided in section <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/04-3-tutorial-view-graphic-files-terminal#getting-started">Getting started</a> using the <b>jp2a</b> keyword for software searching at <a href="https://pkgs.org/" target="_blank">pkgs.org  ⤴</a>
 or try this link: <a href="https://pkgs.org/download/jp2a" target="_blank">https://pkgs.org/download/jp2a  ⤴</a><br>
 <i>*If your HPC uses Enterprise Linux OS with x86_64 architecture, you can use these commands directly:</i>
 <code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
@@ -289,7 +289,7 @@ This is a tool for viewing images in the terminal as ASCII art. `aview` can only
 
 <details><summary>HPC system:</summary>
 
-The <b>asciiview</b> requires the <b>aalib</b>, so we need to install the dependency first. On the <a href="https://pkgs.org/" target="_blank">pkgs.org  ⤴</a> find and download both packages. For each, perform STEPS 1-5 provided in section [Getting started](#getting-started). <br>
+The <b>asciiview</b> requires the <b>aalib</b>, so we need to install the dependency first. On the <a href="https://pkgs.org/" target="_blank">pkgs.org  ⤴</a> find and download both packages. For each, perform STEPS 1-5 provided in section <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/04-3-tutorial-view-graphic-files-terminal#getting-started">Getting started</a>. <br>
 <i>*If your HPC uses Enterprise Linux OS with x86_64 architecture, you can use these commands directly:</i><br>
 <b>aalib:</b> <a href="https://pkgs.org/download/aalib" target="_blank">https://pkgs.org/download/aalib</a><br>
 <code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
@@ -365,7 +365,7 @@ This is a tool for converting various image formats to ASCII art. It supports fo
 <details><summary>HPC system:</summary>
 
 The <b>img2txt</b> tool is a part of the <b>libcaca</b> package.
-1. Perform STEPS 1-5 provided in section [Getting started](#getting-started) using the <b>libcaca</b> keyword for software searching at <a href="https://pkgs.org/" target="_blank">pkgs.org</a>
+1. Perform STEPS 1-5 provided in section <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/04-3-tutorial-view-graphic-files-terminal#getting-started">Getting started</a> using the <b>libcaca</b> keyword for software searching at <a href="https://pkgs.org/" target="_blank">pkgs.org</a>
 or try this link: <a href="https://pkgs.org/download/libcaca" target="_blank">https://pkgs.org/download/libcaca</a><br>
 <i>*If your HPC uses Enterprise Linux OS with x86_64 architecture, you can use these commands directly:</i>
 <code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
