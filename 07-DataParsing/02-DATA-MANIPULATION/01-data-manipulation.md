@@ -21,22 +21,35 @@ Data manipulation refers to the process of **transforming and organizing data** 
 <span style="color: #ff3870;font-weight: 500;">This process often involves cleaning, merging, restructuring, or summarizing data, among other tasks.</span> <br>
 There are many tools and techniques available to help researchers effectively manipulate and analyze their data. Whether working with Excel, Python, R, SQL, or other specialized tools, researchers should carefully consider their data manipulation needs and **choose the tools and techniques that best suit the research goals**.
 
-<b><p align="center" style="width:100%; display:inline-block;">Try out any of the tools quickly online!</p></b><br>
-<p align="center" style="width:23%; display:inline-block;">EXCEL</p>
-<p align="center" style="width:24%; display:inline-block;">PYTHON</p>
-<p align="center" style="width:26%; display:inline-block;">R</p>
-<p align="center" style="width:25%; display:inline-block;">SQL</p><br>
-<p align="center" style="width:23%; display:inline-block;"><a href="https://www.google.com/sheets/about/" target="_blank">Google Sheets online  ⤴</a></p>
-<p align="center" style="width:24%; display:inline-block;"><a href="https://www.python.org/shell/" target="_blank">www.python.org/shell/  ⤴</a></p>
-<p align="center" style="width:26%; display:inline-block;"><a href="https://rdrr.io/snippets/" target="_blank">https://rdrr.io/snippets/  ⤴</a></p>
-<p align="center" style="width:25%; display:inline-block;"><a href="https://www.programiz.com/sql/online-compiler/" target="_blank">www.programiz.com/sql  ⤴</a></p><br>
+<p align="center" style="width:100%; display:inline-block; font-weight:600">Try out any of the tools quickly online!</p><br>
+<p align="center" style="width:49%; display:inline-block;">
+  EXCEL<br>
+  <a href="https://www.google.com/sheets/about/" target="_blank">Google Sheets online  ⤴</a><br>
+  Microsoft Excel GUI
+</p>
+<p align="center" style="width:49%; display:inline-block;">
+  SQL <br>
+  <a href="https://www.programiz.com/sql/online-compiler/" target="_blank">www.programiz.com/sql  ⤴</a><br>
+  SQL programming language
+</p>
 
-![02_data_manipulation_tools.png](../assets/images/02_data_manipulation_tools.png)
+![02_data_manipulation_tools1.png](../assets/images/02_data_manipulation_tools1.png)<br>
 
-<p align="center" style="width:23%; display:inline-block;">Microsoft Excel GUI</p>
-<p align="center" style="width:24%; display:inline-block;">Python programming language</p>
-<p align="center" style="width:26%; display:inline-block;">R programming language</p>
-<p align="center" style="width:25%; display:inline-block;">SQL programming language</p><br>
+
+<p align="center" style="width:49%; display:inline-block;">
+  PYTHON <br>
+  <a href="https://www.python.org/shell/" target="_blank">www.python.org/shell/  ⤴</a><br>
+  Python programming language
+</p>
+<p align="center" style="width:49%; display:inline-block;">
+  R <br>
+  <a href="https://rdrr.io/snippets/" target="_blank">https://rdrr.io/snippets/  ⤴</a><br>
+  R programming language
+</p>
+
+![02_data_manipulation_tools2.png](../assets/images/02_data_manipulation_tools2.png)<br>
+
+
 
 
 ## Excel
@@ -63,8 +76,8 @@ To learn more about manipulating Excel data sheets, you can visit the following 
 
 <a href="https://www.python.org/shell/" target="_blank">Python  ⤴</a> is a powerful programming language widely used for **advanced data analysis, statistics, and interactive visualization**, particularly for working with large text files. Python offers a rich set of libraries and modules that can be used to manipulate text files, including:
 * <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/06-tutorial-python-data-manipulation-pandas" target="_blank"><input type="button" value="Tutorial ⤴" style="background-color: #e7e7e7; color: black;" /></a> <a href="https://pandas.pydata.org/" target="_blank">Pandas  ⤴</a>, a Python library for efficient data structure manipulation and analysis
-* <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/07-tutorial-python-array-manipulation-numpy" target="_blank"><input type="button" value="Tutorial ⤴" style="background-color: #e7e7e7; color: black;" /></a> <a href="https://numpy.org/" target="_blank">NumPy  ⤴</a>, a Python library for scientific computing and data structure transformation
-* <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/08-tutorial-python-apply-statistics-scipy" target="_blank"><input type="button" value="Tutorial ⤴" style="background-color: #e7e7e7; color: black;" /></a> <a href="https://www.scipy.org/" target="_blank">SciPy  ⤴</a>, a Python library for scientific computing and advanced mathematics and statistics
+* <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/07-tutorial-python-array-manipulation-numpy" target="_blank"><input type="button" value="Tutorial ⤴" style="background-color: #e7e7e7; color: black;" /></a> <a href="https://numpy.org/" target="_blank">NumPy  ⤴</a>, a Python library for computing and data structure transformation
+* <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/08-tutorial-python-apply-statistics-scipy" target="_blank"><input type="button" value="Tutorial ⤴" style="background-color: #e7e7e7; color: black;" /></a> <a href="https://www.scipy.org/" target="_blank">SciPy  ⤴</a>, a Python library for scientific computing and statistics
 * <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/05-tutorial-python-round-abs-data-math-module" target="_blank"><input type="button" value="Tutorial ⤴" style="background-color: #e7e7e7; color: black;" /></a> <a href="https://docs.python.org/3/library/math.html" target="_blank">Math  ⤴</a>, a Python module for mathematical operations
 * <a href="https://" target="_blank"><input type="button" value="Tutorial ⤴" style="background-color: #e7e7e7; color: black;" /></a> <a href="https://docs.python.org/3/library/re.html" target="_blank">Regex  ⤴</a>, a Python module for working with regular expressions
 * <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/04-tutorial-python-manage-data-json-string" target="_blank"><input type="button" value="Tutorial ⤴" style="background-color: #e7e7e7; color: black;" /></a> <a href="https://docs.python.org/3/library/json.html" target="_blank">JSON  ⤴</a>, a Python module for working with data in JSON format
@@ -86,10 +99,9 @@ With these libraries, you can manipulate large text files, clean and transform d
 ## R
 
 <a href="https://www.r-project.org" target="_blank">R  ⤴</a> is another popular programming language used for **statistical analysis and simple data visualization**. It provides several libraries and functions for data manipulation, including:
-* <a href="https://dplyr.tidyverse.org/" target="_blank">dplyr  ⤴</a>, an R package for data manipulation, including filtering, selecting, arranging, and summarizing data
-* <a href="https://tidyr.tidyverse.org/" target="_blank">tidyr  ⤴</a>, an R package for data manipulation and cleaning, including reshaping and tidying data
+* <a href="https://dplyr.tidyverse.org/" target="_blank">dplyr  ⤴</a>, an R package for data filtering, selecting, arranging, and summarizing
+* <a href="https://tidyr.tidyverse.org/" target="_blank">tidyr  ⤴</a>, an R package for data cleaning, reshaping and tidying
 * <a href="https://cran.r-project.org/web/packages/reshape2/index.html" target="_blank">reshape2  ⤴</a>, an R package for data manipulation and reshaping
-* <a href="https://ggplot2.tidyverse.org/" target="_blank">ggplot2  ⤴</a>, an R package for data visualization, including creating customized graphics and plots
 
 With these libraries, you can manipulate and transform data, filter, select, and summarize data.
 
@@ -107,7 +119,7 @@ With these libraries, you can manipulate and transform data, filter, select, and
 
 <a href="https://www.w3schools.com/sql/sql_intro.asp" target="_blank">SQL  ⤴</a> (Structured Query Language) is a powerful language used for **managing and manipulating relational databases**. It provides several functions and commands for data manipulation, including `SELECT`, `INSERT`, `UPDATE`, and `DELETE`. With SQL, you can manipulate data stored in a database, extract data, and perform statistical analysis.
 
-To learn more about SQL, you can visit the website <a href="https://www.w3schools.com/sql/default.asp" target="_blank">https://www.w3schools.com/sql/default.asp  ⤴</a>
+To learn more about SQL, you can visit the website <a href="https://www.w3schools.com/sql/default.asp" target="_blank">https://www.w3schools.com/sql/default.asp</a>
 
 
 ## Other tools for data manipulation in research projects
