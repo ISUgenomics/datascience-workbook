@@ -1,5 +1,5 @@
 ---
-title: "Create a Python Notebook using Jupyter Lab"
+title: "Jupyter Lab: create an interactive Python notebook"
 layout: single
 author: Aleksandra Badaczewska
 author_profile: true
@@ -10,7 +10,7 @@ header:
 
 {% include toc %}
 
-[DataScience Workbook](https://datascience.101workbook.org/) / [04. Development Environment](00-DevelopmentEnvironment-LandingPage.md) / [2. Python programming environment(s)](02-python-programming-environment.md) / **2.4 Create a Python Notebook using Jupyter Lab**
+[DataScience Workbook](https://datascience.101workbook.org/) / [04. Development Environment](00-DevelopmentEnvironment-LandingPage.md) / [2. Python programming environment(s)](02-python-programming-environment.md) / **2.2.3 Jupyter Lab: create an interactive Python notebook**
 
 ---
 
@@ -25,7 +25,7 @@ header:
 
 ___
 # Further Reading
-* [2.5 PyCharm: IDE for Professional Python Developers](02E-python-pycharm-ide.md)
+* [2.2.4 PyCharm: IDE for Professional Python Developers](02E-python-pycharm-ide.md)
 
 * [3. R programming environment(s)](03-r-programming-environment.md)
 

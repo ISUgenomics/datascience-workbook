@@ -237,27 +237,32 @@ header:
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
     <a href="04-DevelopmentEnvironment/02A-python-online-console" style="color: #3f5a8a;">
-    Create Python code using online console</a></td></tr>
+    Online Console: create Python code in a browser</a> <i style="color: #a9bbd1;">(without installation)</i></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <a href="04-DevelopmentEnvironment/02A-python-setup-locally" style="color: #3f5a8a;">
+    Python Setup on your computing machine</a> <i style="color: #a9bbd1;">(installation needed)</i></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;  
     <a href="04-DevelopmentEnvironment/02B-python-terminal-shell" style="color: #3f5a8a;">
-    Create Python code in a terminal using built-in shell or IDLE</a></td></tr>
+    Shell & IDLE: create Python code in a terminal or simple IDE</a> <i style="color: #a9bbd1;">(beginner)</i></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
-    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;  
     <a href="04-DevelopmentEnvironment/02C-python-text-editor" style="color: #3f5a8a;">
-    Create Python code using simple text editors</a></td></tr>
+    Text editors: create Python code in terminal text files</a> <i style="color: #a9bbd1;">(intermediate)</i></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
-    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;  
     <a href="04-DevelopmentEnvironment/02D-python-jupyter-notebook" style="color: #3f5a8a;">
-    Create a Python Notebook using Jupyter Lab</a></td></tr>
+    Jupyter Lab: create an interactive Python notebook</a> <i style="color: #a9bbd1;">(advanced)</i></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
-    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;  
     <a href="04-DevelopmentEnvironment/02E-python-pycharm-ide" style="color: #3f5a8a;">
-    PyCharm: IDE for Professional Python Developers</a></td></tr>
+    PyCharm: IDE for Professional Python Developers</a> <i style="color: #a9bbd1;">(professional)</i></td></tr>
 
   <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center; width: 130px;">INTRO</td>
     <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b>
@@ -294,11 +299,6 @@ header:
     <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b>
     <a href="05-IntroToProgramming/03-PYTHON/01-introduction-to-python" style="color: #24376b;">
     Introduction to Python Programming</a></b></td></tr>
-
-  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
-    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
-    <a href="05-IntroToProgramming/03-PYTHON/02-Python-setup" style="color: #3f5a8a;">
-    Python Setup</a></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  

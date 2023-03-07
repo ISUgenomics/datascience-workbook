@@ -304,7 +304,6 @@ Once you familiarize yourself with Python basics, you can try to develop a simpl
 
 ___
 # Further Reading
-* [3.1 Python Setup](02-Python-setup.md)
 * [3.2 Read and Write Data Files](03-tutorial-read-write-files.md)
 * [3.3 JSON Module - Encoding & Decoding JSON Data](04-tutorial-python-manage-data-json-string.md)
 * [3.4 Math Module - Various Mathematical Functions](05-tutorial-python-round-abs-data-math-module.md)
@@ -320,5 +319,5 @@ ___
 [Section Index](../00-IntroToProgramming-LandingPage){: .btn  .btn--primary}
 [Previous](../02-BASH/01-introduction-to-bash-scripting){: .btn  .btn--primary}
 <!-- [Previous](../02-BASH/03-unix-intro-to-regex){: .btn  .btn--primary} -->
-[Next](02-Python-setup){: .btn  .btn--primary}
+[Next](03-tutorial-read-write-files){: .btn  .btn--primary}
 [top of page](#introduction){: .btn  .btn--primary}

@@ -1,5 +1,5 @@
 ---
-title: "Create Python code in a terminal using built-in shell or IDLE"
+title: "Shell & IDLE: create Python code in a terminal or simple IDE"
 layout: single
 author: Aleksandra Badaczewska
 author_profile: true
@@ -10,7 +10,7 @@ header:
 
 {% include toc %}
 
-[DataScience Workbook](https://datascience.101workbook.org/) / [04. Development Environment](00-DevelopmentEnvironment-LandingPage.md) / [2. Python programming environment(s)](02-python-programming-environment.md) / **2.2 Create Python code in a terminal using built-in shell or IDLE**
+[DataScience Workbook](https://datascience.101workbook.org/) / [04. Development Environment](00-DevelopmentEnvironment-LandingPage.md) / [2. Python programming environment(s)](02-python-programming-environment.md) / **2.2.1 Shell & IDLE: create Python code in a terminal or simple IDE**
 
 ---
 
@@ -226,9 +226,10 @@ It is highly recommended to learn more about the basics of programming in Python
 
 ___
 # Further Reading
-* [2.3 Create Python code using simple text editors](02C-python-text-editor.md)
-* [2.4 Create a Python Notebook using Jupyter Lab](02D-python-jupyter-notebook.md)
-* [2.5 PyCharm: IDE for Professional Python Developers](02E-python-pycharm-ide.md)
+* [2.2.2 Text editors: create Python code in terminal text files](02C-python-text-editor.md)
+* [2.2.3 Jupyter Lab: create an interactive Python notebook](02D-python-jupyter-notebook.md)
+* [2.2.4 PyCharm: IDE for Professional Python Developers](02E-python-pycharm-ide.md)
+
 
 * [3. R programming environment(s)](03-r-programming-environment.md)
 
@@ -236,6 +237,6 @@ ___
 
 [Homepage](../index.md){: .btn  .btn--primary}
 [Section Index](00-DevelopmentEnvironment-LandingPage){: .btn  .btn--primary}
-[Previous](02A-python-online-console){: .btn  .btn--primary}
+[Previous](02A-python-setup-locally){: .btn  .btn--primary}
 [Next](02C-python-text-editor.md){: .btn  .btn--primary}
 [top of page](#introduction){: .btn  .btn--primary}
