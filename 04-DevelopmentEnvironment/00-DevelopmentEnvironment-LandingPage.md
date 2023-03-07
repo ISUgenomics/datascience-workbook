@@ -22,8 +22,11 @@ In Data Science, everyone more-or-less is a developer. Whether you write simple 
   * <a href="01B-tutorial-jupyter-sharing-mybinder" style="color: #3f5a8a;">1.2.3 Sharing Jupyter-based reproducible pipline via MyBinder</a>
 
 ### **<a href="02-python-programming-environment" style="color: #24376b;">2. Python programming environment(s)</a>**
-* <a href="02A-python-jupyter-notebook" style="color: #3f5a8a;">2.1 Create a Python Notebook using Jupyter Lab</a>
-* <a href="02B-pycharm-ide" style="color: #3f5a8a;">2.2 PyCharm: IDE for Professional Python Developers</a>
+* <a href="02A-python-online-console" style="color: #3f5a8a;">2.1 Create Python code using online console</a>
+* <a href="02B-python-terminal-shell" style="color: #3f5a8a;">2.2 Create Python code in a terminal using built-in shell or IDLE</a>
+* <a href="02C-python-text-editor" style="color: #3f5a8a;">2.3 Create Python code using simple text editors</a>
+* <a href="02D-python-jupyter-notebook" style="color: #3f5a8a;">2.4 Create a Python Notebook using Jupyter Lab</a>
+* <a href="02E-python-pycharm-ide" style="color: #3f5a8a;">2.5 PyCharm: IDE for Professional Python Developers</a>
 
 ### **<a href="03-r-programming-environment" style="color: #24376b;">3. R programming environment(s)</a>**
 * <a href="03A-rstudio-basics" style="color: #3f5a8a;">3.1 RStudio: Integrated Environment for R Programming</a>
