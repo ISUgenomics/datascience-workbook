@@ -33,6 +33,6 @@ ___
 
 [Homepage](../index.md){: .btn  .btn--primary}
 [Section Index](00-DevelopmentEnvironment-LandingPage){: .btn  .btn--primary}
-[Previous](02A-python-jupyter-notebook){: .btn  .btn--primary}
+[Previous](02D-python-jupyter-notebook){: .btn  .btn--primary}
 [Next](03-r-programming-environment){: .btn  .btn--primary}
 [top of page](#introduction){: .btn  .btn--primary}
