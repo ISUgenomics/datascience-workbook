@@ -236,12 +236,27 @@ header:
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
-    <a href="04-DevelopmentEnvironment/02A-python-jupyter-notebook" style="color: #3f5a8a;">
+    <a href="04-DevelopmentEnvironment/02A-python-online-console" style="color: #3f5a8a;">
+    Create Python code using online console</a></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <a href="04-DevelopmentEnvironment/02B-python-terminal-shell" style="color: #3f5a8a;">
+    Create Python code in a terminal using built-in shell or IDLE</a></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <a href="04-DevelopmentEnvironment/02C-python-text-editor" style="color: #3f5a8a;">
+    Create Python code using simple text editors</a></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <a href="04-DevelopmentEnvironment/02D-python-jupyter-notebook" style="color: #3f5a8a;">
     Create a Python Notebook using Jupyter Lab</a></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
-    <a href="04-DevelopmentEnvironment/02B-pycharm-ide" style="color: #3f5a8a;">
+    <a href="04-DevelopmentEnvironment/02E-python-pycharm-ide" style="color: #3f5a8a;">
     PyCharm: IDE for Professional Python Developers</a></td></tr>
 
   <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center; width: 130px;">INTRO</td>
