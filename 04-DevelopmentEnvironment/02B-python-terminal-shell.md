@@ -58,14 +58,14 @@ To use Python Shell or IDLE, you first need to have Python installed on your com
 
 <details><summary>macOS:</summary>
 
-**A. MANUALLY** <br>
+<b>A. MANUALLY</b> <br>
 1. Go to the official Python website at <a href="https://www.python.org/downloads/mac-osx/" target="_blank">https://www.python.org/downloads/mac-osx/  ⤴</a>.<br>
 2. Scroll down to the "Download Python" section and click on the latest version of Python. <br>
 <p align="left"><img width="800" src="assets/images/02_python-macos.png"></p><br>
 3. Download the macOS installer package. <br>
 4. Run the installer package and follow the on-screen prompts to complete the installation. <br><br>
 
-**B. IN a TERMINAL** <br>
+<b>B. IN a TERMINAL</b> <br>
 1. Open the Terminal app on your Mac. <br>
 2. First, check if you have Homebrew installed using the <b>brew -h</b> command. If you received an error message "Command not found", then type the following command to install Homebrew (a package manager for macOS): <br>
 <code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
@@ -95,7 +95,7 @@ sudo apt-get install python3
 <details><summary>HPC system:</summary>
 
 On a high-performance computing (HPC) system, it's common to have <b>multiple versions of Python pre-installed</b>. This is because different software packages and applications may require different versions of Python or specific Python packages. <br>
-To switch between different versions of Python on an HPC system, you can use the <b>module</b> command. The module command allows you to load and unload software modules, including different versions of Python.<br>
+To switch between different versions of Python on an HPC system, you can use the <b>module</b> command. The module command allows you to load and unload software modules, including different versions of Python.<br><br>
 0. Log in to the HPC system. <br
 1. Type the following command to see a list of available Python modules:
 <code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
@@ -119,6 +119,7 @@ python --version
 
 **See the following sections [Python Shell](#python-shell) and [Python IDLE](#python-idle) to get started with Python on your machine.**
 
+---
 
 # Python Shell
 
@@ -152,7 +153,7 @@ Let's start with using the `print()` function to display the <i>"Hello, world!"<
 
 Now, you can try using the Python shell to perform a simple calculation:
 
-```Python
+```
 a = 10
 b = 5
 c = a + b
@@ -160,6 +161,8 @@ print(c)
 ```
 
 *In this example, we created three variables (a, b, c) in the Python shell and assigned the values using the `=` operator. We then used the `+` operator to add a and b together and assigned the result to the variable c. Finally, we printed the value of c to the console using the `print()` function.*
+
+---
 
 # Python IDLE
 
@@ -193,13 +196,13 @@ To launch the Python IDLE from the terminal window, you can follow these steps:
 
 **1.** Open the terminal or command prompt on your computer.
 
-**2.** Type `idle` or `idle3`, depending on your system's configuration, and press `Enter` on your keyboard. <br>
+**2.** Type `idle` or `idle3`, depending on your system's configuration, and press `Enter` on your keyboard.
 *Start typing `idle`, then press the `TAB` key twice to display available IDLE variants.* <br>
 
 <p align="center"><img width="800" src="assets/images/02_python-idle.gif"></p>
 
-**3.** The Python IDLE will open in a separate window, providing you graphical user interface (GUI) with a menu bar on the top. <br>
-By default, the first view in the IDLE is a Python Shell, which works the same as the interactive Python shell started directly in the terminal.
+**3.** The Python IDLE will open in a separate window, providing you graphical user interface (GUI) with a `menu bar` on the top.
+*By default, the first view in the IDLE is a Python Shell, which works the same as the interactive Python shell started directly in the terminal.*
 
 **4.** You can use the Python IDLE to create, edit, and run Python code.
 
@@ -208,10 +211,10 @@ By default, the first view in the IDLE is a Python Shell, which works the same a
 ![02_python-idle.png](assets/images/02_python-idle.png)
 
 * To save your code, you can click `File > Save`, or press `Ctrl+S` on Windows or `Command+S` on Mac. <br>
-<i>In the pop-up dialog box, you can customize the file name and saving location.</i>
+<i>You can customize the file name and saving location in the pop-up dialog box.</i>
 
 * You can run your code in IDLE by clicking `Run > Run Module`, or pressing `F5` on your keyboard. <br>
-<i>You can customize the file name and saving location in the pop-up dialog box.</i>
+<i>The output will be displayed in the Python shell at the bottom of the IDLE window.</i>
 
 ![02_python-idle2.png](assets/images/02_python-idle2.png)
 
