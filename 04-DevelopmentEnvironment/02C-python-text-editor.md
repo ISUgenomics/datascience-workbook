@@ -20,11 +20,12 @@ header:
 Once a beginner Python user has familiarized themselves with the <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02B-python-terminal-shell" target="_blank">Python shell and IDLE <i>(see the tutorial  ⤴)</i></a> and has explored the <a href="https://" target="_blank">Python syntax and simple operations <i>(see the tutorial  ⤴)</i></a>, they may realize they want to **save the code in a text file for future reuse**. These text files, which contain relatively simple code, are called scripts and are saved with the `.py` extension. Saving code in a script is useful for:
 * easy editing &emsp;&emsp; &emsp; &emsp; &emsp;  *(make changes and updates to your code in one place)*
 * portability &emsp; &emsp; &emsp; &emsp;&emsp;&emsp; *(transfer between machines)*
-* reusability &emsp;&emsp;&emsp; &emsp; &emsp; &emsp;  *(you can reuse the same code repeatedly)*
-* reproducibility &emsp; &emsp; &emsp; &emsp;  *(keep the record of the exact steps you took to generate a particular result)*
+* reusability &emsp;&emsp;&emsp;&emsp; &emsp; &emsp;  *(you can reuse the same code repeatedly)*
+* reproducibility &emsp; &emsp; &emsp; &emsp;  *(keep the record of the exact steps in your analysis)*
 * project documentation &emsp; *(make it easier for others to understand your analytic pipeline)*
 
-For simple programming tasks, it is good to **use text editors available directly in the terminal**. This way, users can create, edit and reuse Python scripts on a computing machine, **including HPC**. Text editors such as `nano`, `vim`, `emacs`, and `mcedit` are common options for creating and editing scripts in the terminal. <br>
+For simple programming tasks, it is good to **use text editors available directly in the terminal**. This way, users can create, edit and reuse Python scripts on a computing machine, **including HPC**. Text editors such as `nano`, `vim`, `emacs`, and `mcedit` are common options for creating and editing scripts in the terminal.
+
 Once the script is saved, it can be **run from the terminal** using the `python` command followed by the name of the script.
 ```
 python my_script.py
@@ -74,11 +75,11 @@ Creating Python code in text files *(scripts)* is a common way to write and save
 To create a Python script in a terminal, you can use a text editor such as:
 * `nano` &emsp; &emsp; &emsp; *(easy)*
 * `vim` &emsp;&emsp;&emsp;&emsp; *(moderate)*
-* `mcedit` &emsp; &emsp; *(advanced)*
+* `mcedit` &emsp;&emsp;&emsp;*(advanced)*
 
 <span style="color: #ff3870;font-weight: 500;">To learn more about text editors available in the terminal (command-line interface) and their options, see tutorials in section <a href="https://datascience.101workbook.org/02-IntroToCommandLine/00-IntroToCommandLine-LandingPage" target="_blank">02. Introduction to the Command Line  ⤴</a>, for example <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02B-text-files-editors" target="_blank">Command Line Text Files Editors: nano, vim  ⤴</a>.</span>
 
-## Example 1: <b>nano</b> <br> *script to calculate the average*
+## Script Example 1 in <b>nano</b> <br> *calculate the average*
 
 Here's how you can create a new Python script using `nano`, a simple text editor that is typically available in the command line without installation.
 
@@ -104,7 +105,7 @@ nano calc_average.py
 <br><span style="font-style:italic;">
 Note that lines starting with the <b>#</b> sign are not executed.  It is how we <b>introduce commenting into the code</b>, which contains a description of individual code fragments. From the comments in the following code snippet, you will learn the role of the code in the next line.
 </span>
-</div>
+</div><br>
 
 ```
 #1 Get a list of numbers from user (typed in a terminal)
@@ -167,7 +168,7 @@ Finally, we use a Python built-in function <b>print()</b> to display the message
 **4.** Save and exit the file by pressing `Ctrl+X`, then `Y`, and then `Enter`. <br>
 <i>This will save your changes and exit the nano text editor.</i>
 
-<p align="center"><img width="800" src="assets/images/02_python-nano.gif"></p>
+<p align="left"><img width="800" src="assets/images/02_python-nano.gif"></p>
 
 **5.** You can now run your Python script from the terminal by typing:
 ```
@@ -179,9 +180,9 @@ python calc_average.py
 
 ---
 
-## Example 2: <b>vim</b> <br> *script for word counts*
+## Script Example 2 in <b>vim</b> <br> *script for word counts*
 
-*In this example, we create a script to count the number of occurrences of each word in a text file.*
+*In this example, we create a script to count the number of occurrences of each word in a text.*
 
 Here's how you can create a new Python script using `vim`, an advanced text editor that is typically available on the HPC systems.
 
@@ -191,8 +192,8 @@ In this example, we use input data loaded from a text file instead of inputs int
 <pre><code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; font-size:0.8em;">
 This is a sample text file.
 It contains some text for counting the number of occurrences of each word.
-This is just a sample, but it can be used for testing the script.
-</code></pre><br>
+This is just a sample, but it can be used for testing the script.<br>
+</code></pre>
 
 **2.** Type the following command to open a new file in `vim`:
 
@@ -205,7 +206,7 @@ vim count_words.py
 
 **3.** Once the `vim` editor is activated, press the `i` key to enter insert mode and start typing your code or copy-paste it from the snippet below. <br>
 
-<p align="center"><img width="800" src="assets/images/02_python-vim1.gif"></p>
+<p align="left"><img width="800" src="assets/images/02_python-vim1.gif"></p>
 
 <i>Select the text below, right-click on your mouse abd select `Copy` from the pop-up menu. Go to the `vim` editor in your terminal and use the right-click again, this time select the `Paste` option.</i>
 
@@ -233,7 +234,7 @@ for word, count in word_count.items():
 <br><span style="font-style:italic;">
 It is a good practice to separate blocks of code for different tasks in the script and provide comments for better readability and understanding of the code. This can be done by using comments <b>#</b> at the top of each code block to explain its general purpose. Additionally, comments <b>##</b> can be added to the end of specific lines that may not be immediately obvious what their purpose is.
 </span>
-</div><br>
+</div>
 
 <details><summary><i><b>What the script does?</b></i></summary>
 
@@ -279,10 +280,10 @@ The dictionary is filled with key:value pairs by the script's algorithm and stor
 Note that in this case, we used a different syntax for the built-in print() function:</span>
 <code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
 print(f"{variable} text {variable}")
-</code><br>
+</code>
 <span style="font-style:italic;">It allows for easier way of merging text-like with non-text {variables}.</span>
 </div>
-</details><br>
+</details>
 
 <span style="color: #ff3870;font-weight: 500;">Learn more about Python built-in functions such as </span><b>open(), strip(), split(), items(), len(), print(f""), Python loops and built-in objects </b> <span style="color: #ff3870;font-weight: 500;">from tutorials provided in section <a href="https://datascience.101workbook.org/05-IntroToProgramming/00-IntroToProgramming-LandingPage" target="_blank">05. Introduction to Programming  ⤴</a> :</span>
 * <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/01-introduction-to-python" target="_blank">Introduction to Python Programming  ⤴</a>
@@ -294,7 +295,7 @@ print(f"{variable} text {variable}")
 * To exit Vim, type `:q` and press `Enter`. <br>
 <i>If you have unsaved changes, Vim will warn you and you can type `:q!` to force quit without saving, or `:wq` to save and quit.</i>
 
-<p align="center"><img width="800" src="assets/images/02_python-vim2.gif"></p>
+<p align="left"><img width="800" src="assets/images/02_python-vim2.gif"></p>
 
 **5.** Once you're done editing and saving the file, you can run it in the terminal by typing:
 
@@ -318,7 +319,7 @@ Remember that the script configuration (in this case) requires the input file (c
 
 ---
 
-## Example 3: <b>mcedit</b> <br> *password generator script*
+## Script Example 3 in <b>mcedit</b> <br> *password generator*
 
 *This script can be used to generate strong and random passwords for users. It uses the `string` and `random` modules to generate the text strings that can serve as passwords.*
 
@@ -329,7 +330,7 @@ Here's how you can create a new Python script using `mcedit`, an advanced text e
 <br><span style="font-style:italic;">
 <b>MCedit</b> has a graphical user interface in the terminal and a <b>built-in file manager</b>. This means that `mcedit` is generally easier to use for beginners (for basic tasks) since it provides a familiar <b>point-and-click interface</b> besides the keyboard navigation.  
 </span>
-</div><br>
+</div>
 
 ![02_python-mcedit.png](assets/images/02_python-mcedit.png)
 
@@ -339,7 +340,7 @@ Here's how you can create a new Python script using `mcedit`, an advanced text e
 
 1. To install MC on Windows, you need to download the Windows version of MC from the official website <a href="https://midnight-commander.org/downloads/" target="_blank">https://midnight-commander.org/downloads/  ⤴</a>. <br>
 2. Once downloaded, run the executable file and follow the installation instructions to complete the installation. <br>
-3. You may need to add the path to the MC executable to your system's environment variables to use it from the command line.
+3. You may need to add the path to the MC executable to your system's environment variables to use it from the command line. <br>
 </details>
 
 <details><summary>macOS:</summary>
@@ -349,8 +350,9 @@ If you haven't done this already, install Homebrew by following the instructions
 1. Once Homebrew is installed, open Terminal and run the following command:
 <code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
 brew install midnight-commander
-</code><br>
-<i>This will download and install MC and all its dependencies.</i><br>
+</code>
+<i>This will download and install MC and all its dependencies.</i>
+<br><br>
 </details>
 
 <details><summary>LINUX: Ubuntu/Debian:</summary>
@@ -360,14 +362,14 @@ Open Terminal and run the following command:
 sudo apt-get update <br>
 sudo apt-get install mc
 </code><br>
-</details><br>
+</details>
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
 If MC is not available in your distribution's official repositories, you can download the source code from the official website and compile it yourself. The instructions for doing so are provided on the website <a href="https://midnight-commander.org/     " target="_blank">https://midnight-commander.org/  ⤴</a>.
 </span>
-</div><br>
+</div>
 
 **1.** Open the terminal and navigate to the directory where you want to create the script. <br>
 
@@ -409,7 +411,7 @@ def function_name(argument1, argument2): <br>
 &emsp;&emsp;&emsp; # function body <br>
 &emsp;&emsp;&emsp; return "result"
 </code>
-</div><br>
+</div>
 
 <details><summary><i><b>What the script does?</b></i></summary>
 
@@ -438,17 +440,17 @@ Finally, the function uses the special keyword <b>return</b> followed by a varia
 <br><br>
 <b>#2 Call the function to generate a password</b><br>
 In this code block, you can decide with what argument value to call the function. In particular, you can pass the value of an argument directly or as the result of another operation, or use the input() function to take a value entered interactively by the final user of the code.
-</details><br>
+</details>
 
-<span style="color: #ff3870;font-weight: 500;">Learn more about Python built-in functions such as </span><b>join(), range(), input(), Python imports, and a function definition</b> <span style="color: #ff3870;font-weight: 500;">from tutorials provided in section <a href="https://datascience.101workbook.org/05-IntroToProgramming/00-IntroToProgramming-LandingPage" target="_blank">05. Introduction to Programming  ⤴</a> :</span>
+<span style="color: #ff3870;font-weight: 500;">Learn more about Python built-in functions such as </span><b>join(), range(), input(), Python imports, and a function definition</b> <span style="color: #ff3870;font-weight: 500;">from tutorials provided in section <a href="https://datascience.101workbook.org/05-IntroToProgramming/00-IntroToProgramming-LandingPage" target="_blank">05. Introduction to Programming</a>:</span>
 * <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/01-introduction-to-python" target="_blank">Introduction to Python Programming  ⤴</a>
 * <a href="https://" target="_blank"> Python syntax and simple operations  ⤴</a>
 * <a href="https://" target="_blank">Python built-in functions  ⤴</a>
 
-**4.** Once you are done editing, press the `F2` key (`fn` and `F2` together on macOS) to save changes. <br>
+**4.** Once you are done editing, press the `F2` key to save changes. (*Note:* `fn` and `F2` *together on macOS*)<br>
 * To exit MCedit, press `Esc`, then `0`. <br>
 
-<p align="center"><img width="800" src="assets/images/02_python-mcedit.gif"></p>
+<p align="left"><img width="800" src="assets/images/02_python-mcedit.gif"></p>
 
 <i>If you have unsaved changes, MCedit will pop-up the "Close file" dialog menu with options to save changes (Yes), discard changes (No), or abandon file closing (Cancel).</i>
 
@@ -462,7 +464,7 @@ python generate_password.py
 
 <i>This will execute your script, prompt user to select password length, and print the generated random string of characters.</i>
 
-<p align="center"><img width="800" src="assets/images/02_python-run-input.gif"></p>
+<p align="left"><img width="800" src="assets/images/02_python-run-input.gif"></p>
 
 
 
