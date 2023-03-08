@@ -229,13 +229,6 @@ for word, count in word_count.items():
         print(f"{word}: {count}")
 ```
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-It is a good practice to separate blocks of code for different tasks in the script and provide comments for better readability and understanding of the code. This can be done by using comments <b>#</b> at the top of each code block to explain its general purpose. Additionally, comments <b>##</b> can be added to the end of specific lines that may not be immediately obvious what their purpose is.
-</span>
-</div>
-
 <details><summary><i><b>What the script does?</b></i></summary>
 
 <b>#1 Open the input file</b>
@@ -285,6 +278,14 @@ print(f"{variable} text {variable}")
 </div>
 </details>
 
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+It is a good practice to separate blocks of code for different tasks in the script and provide comments for better readability and understanding of the code. This can be done by using comments <b>#</b> at the top of each code block to explain its general purpose. Additionally, comments <b>##</b> can be added to the end of specific lines that may not be immediately obvious what their purpose is.
+</span>
+</div>
+
 <span style="color: #ff3870;font-weight: 500;">Learn more about Python built-in functions such as </span><b>open(), strip(), split(), items(), len(), print(f""), Python loops and built-in objects </b> <span style="color: #ff3870;font-weight: 500;">from tutorials provided in section <a href="https://datascience.101workbook.org/05-IntroToProgramming/00-IntroToProgramming-LandingPage" target="_blank">05. Introduction to Programming  ⤴</a> :</span>
 * <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/01-introduction-to-python" target="_blank">Introduction to Python Programming  ⤴</a>
 * <a href="https://" target="_blank"> Python syntax and simple operations  ⤴</a>
@@ -330,7 +331,7 @@ Here's how you can create a new Python script using `mcedit`, an advanced text e
 <br><span style="font-style:italic;">
 <b>MCedit</b> has a graphical user interface in the terminal and a <b>built-in file manager</b>. This means that `mcedit` is generally easier to use for beginners (for basic tasks) since it provides a familiar <b>point-and-click interface</b> besides the keyboard navigation.  
 </span>
-</div>
+</div><br>
 
 ![02_python-mcedit.png](assets/images/02_python-mcedit.png)
 
@@ -362,14 +363,14 @@ Open Terminal and run the following command:
 sudo apt-get update <br>
 sudo apt-get install mc
 </code><br>
-</details>
+</details><br>
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
 If MC is not available in your distribution's official repositories, you can download the source code from the official website and compile it yourself. The instructions for doing so are provided on the website <a href="https://midnight-commander.org/     " target="_blank">https://midnight-commander.org/  ⤴</a>.
 </span>
-</div>
+</div><br>
 
 **1.** Open the terminal and navigate to the directory where you want to create the script. <br>
 
@@ -402,17 +403,6 @@ generate_password(input("Enter a lenth of the password:"))               ## pass
 print(password)
 ```
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Defining a function for a repetitive task can save you time and effort. If you have a task that needs to be done several times with only the input parameters changing, consider <b>defining a function</b> that can take those parameters as arguments. This will not only make your code more readable and maintainable, but it will also save you from writing the same code multiple times.</span> <br>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-def function_name(argument1, argument2): <br>
-&emsp;&emsp;&emsp; # function body <br>
-&emsp;&emsp;&emsp; return "result"
-</code>
-</div>
-
 <details><summary><i><b>What the script does?</b></i></summary>
 
 <b>#0 Import external modules</b><br>
@@ -441,6 +431,18 @@ Finally, the function uses the special keyword <b>return</b> followed by a varia
 <b>#2 Call the function to generate a password</b><br>
 In this code block, you can decide with what argument value to call the function. In particular, you can pass the value of an argument directly or as the result of another operation, or use the input() function to take a value entered interactively by the final user of the code.
 </details>
+
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+Defining a function for a repetitive task can save you time and effort. If you have a task that needs to be done several times with only the input parameters changing, consider <b>defining a function</b> that can take those parameters as arguments. This will not only make your code more readable and maintainable, but it will also save you from writing the same code multiple times.</span> <br>
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+def function_name(argument1, argument2): <br>
+&emsp;&emsp;&emsp; # function body <br>
+&emsp;&emsp;&emsp; return "result"
+</code>
+</div>
 
 <span style="color: #ff3870;font-weight: 500;">Learn more about Python built-in functions such as </span><b>join(), range(), input(), Python imports, and a function definition</b> <span style="color: #ff3870;font-weight: 500;">from tutorials provided in section <a href="https://datascience.101workbook.org/05-IntroToProgramming/00-IntroToProgramming-LandingPage" target="_blank">05. Introduction to Programming</a>:</span>
 * <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/01-introduction-to-python" target="_blank">Introduction to Python Programming  ⤴</a>
