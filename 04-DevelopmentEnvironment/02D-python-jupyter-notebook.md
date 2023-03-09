@@ -55,7 +55,7 @@ However, while Python coding in Jupyter offers many advantages, **it may not alw
 
 ---
 
-# Python in *try-jupyter* **online** <br> *image manipulation using PIL*
+# Python in *try-jupyter* **online** <br> *scatterplot using matplotlib*
 
 The Jupyter Project offers an **online training platform** called <i>"Try Jupyter"</i> that allows users to **get started with Python projects in Jupyter** without having to install any software on their own computer.
 
@@ -129,9 +129,9 @@ In this project, we will explore the use of: <br>
 *Through this exercise, we aim to showcase the potential of these powerful tools in effectively representing and visualizing complex data sets. By leveraging the capabilities of Matplotlib and Numpy, we hope to provide insights into the relationships and patterns that can be inferred from the given dataset.*
 </div><br>
 
-![02_python-jupyter-try-notebook-cell.png](assets/images/02_python-jupyter-try-notebook-cell.png)
-
 Now, change the cell type from `code` to `markdown` in the top menu bar in the notebook section.
+
+![02_python-jupyter-try-notebook-cell.png](assets/images/02_python-jupyter-try-notebook-cell.png)
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
