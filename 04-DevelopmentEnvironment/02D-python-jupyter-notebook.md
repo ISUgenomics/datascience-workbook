@@ -55,7 +55,7 @@ However, while Python coding in Jupyter offers many advantages, **it may not alw
 
 ---
 
-# Python in *try-jupyter* **online** <br> *scatterplot using matplotlib*
+# *try-jupyter* **online** <br> *scatterplot of matplotlib*
 
 The Jupyter Project offers an **online training platform** called <i>"Try Jupyter"</i> that allows users to **get started with Python projects in Jupyter** without having to install any software on their own computer.
 
@@ -100,7 +100,7 @@ or
 
 ![02_python-jupyter-try-notebook-file.png](assets/images/02_python-jupyter-try-notebook-file.png)
 
-You can now start writing Python code in the notebook cells and running them by clicking on the `Run` button in the top menu bar or pressing `Shift + Enter`.
+You can now start writing Python code in the notebook cells and running them by clicking on the `Run` button in the top menu bar or pressing `Shift + Enter` to run the current cell and select the cell below it.
 
 **5. Example Python-based notebook for creating scatterplot using matplotlib.**
 
@@ -158,33 +158,113 @@ To execute the code cell, again press `Alt + Enter` ( use `option + return` for 
 In the next `code cell` add Python code for generating the dataset and creating the scatterplot.
 
 ```
-# Generate 100 random data points along 3 dimensions
+#1 Generate 100 random data points along 3 dimensions
 x, y, scale = np.random.randn(3, 100)
 
-# Create a scatter plot
+#2 Create a scatter plot
 fig, ax = plt.subplots()
 
-# Add dataset to the scatterplot
+#3 Add dataset to the scatterplot
 ax.scatter(x=x, y=y, c=scale, s=np.abs(scale)*500)
 
-# Add labels and title
+#4 Add labels and title
 ax.set_xlabel('X Label')
 ax.set_ylabel('Y Label')
 ax.set(title="Some random data, created with JupyterLab!")
 
-# Show the scatterplot
+#5 Show the scatterplot
 plt.show()
 ```
+
+<details><summary><i><b>What the script does?</b></i></summary>
+
+<b>#1 Generate 100 random data points along 3 dimensions</b><br>
+The numpy libarary includes a random module. One of the functions provided by <b>numpy.random</b> is <i>randn()</i>. This function generates an array of random numbers that are drawn from a standard normal distribution. The arguments of the function determine the the shape of the generated array.
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+x, y, scale = np.random.randn(3, 100)
+</code><br>
+<i>In this example we create a 2D array with 3 rows ('x', 'y', 'scale') and 100 columns containing random numbers. We split the array by row dimension into three separate objects. By organizing the data in this way, we can easily manipulate the points coordinates ('x' and 'y') and scale their size. </i>
+<br><br>
+<b>#2 Create a scatter plot</b><br>
+Matplotlib library creates a figure that can contain one or more subplots within it.
+<div style="background: #dff5b3; padding: 15px;">
+<span style="font-weight:800;">NOTE:</span>
+<br><span style="font-style:italic;">Subplots are essentially smaller plots within a larger plot, which can be useful for visualizing multiple sets of data or for creating more complex visualizations.</span>
+</div><br>
+The plt.subplots() function returns two values: a figure object (fig) and an array of axes objects (ax).
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+fig, ax = plt.subplots()
+</code><br>
+The figure object represents the entire plot, while the axes objects represent the individual subplots within the plot. When no arguments are provided, a single subplot is created by applying the default settings <b>plt.subplots(nrows=1, ncols=1)</b>.
+<br><br>
+<b>#3 Add dataset to the scatterplot</b><br>
+<b>ax.scatter()</b> is a function in the Matplotlib library that is used to create a scatter plot. It takes in a set of x and y coordinates, along with some optional arguments, and plots them as individual points on a 2D plane. The basic syntax for ax.scatter() is as follows: <br>
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+ax.scatter(x, y, s=None, c=None, marker=None, cmap=None, alpha=None)
+</code>
+<i>where:</i>
+<li><b>x</b> is a sequence of x coordinates for the points to be plotted</li>
+<li><b>y</b> is a sequence of y coordinates for the points to be plotted</li>
+<li><b>c</b> is the color of the markers</li>
+    <i>&emsp;This can be a single color, or a sequence of colors that correspond to each point in the plot.</i>
+<li><b>s</b> is the size of the markers (points) in the scatter plot</li>
+    <i>&emsp;This can be a scalar value, or a sequence of values that correspond to each point in the plot.</i>
+<li><b>marker</b> is the shape of the markers</li>
+    <i>&emsp;This can be a string specifying a built-in marker shape (e.g., 'o' for circles), or a custom marker object.</i>
+<li><b>cmap</b> is a colormap object that maps the "c" values to a range of colors</li>
+<li><b>alpha</b> is the transparency of the markers</li> <br>
+<i>In this example, we use arrays of random values to set XY coordinates of the points and determine numerical range mapped to the default colorscale. The size of the points is the scale array transformed to absolute values using np.abs() function and multiplied by 500 to provide intiger sizes in range from 1 to 500.</i>
+<br><br>
+<b>#4 Add labels and title</b><br>
+In Matplotlib, the <b>ax</b> object is a reference to the axis of a plot. It provides various functions that can be used to customize the scatterplot and other types of plots.<br><br>
+For a scatterplot created using the ax.scatter() function, some of the common functions that can be used to customize the plot include:
+<li><b>ax.set_xlabel()</b> sets the x-axis label for the scatterplot</li>
+<li><b>ax.set_ylabel()</b> sets the y-axis label for the scatterplot</li>
+<li><b>ax.set_title()</b> sets the title of the scatterplot</li>
+<li><b>ax.set_xlim()</b> sets the limits of the x-axis for the scatterplot</li>
+<li><b>ax.set_ylim()</b> sets the limits of the y-axis for the scatterplot.</li>
+<br>
+<b>#5 Show the scatterplot</b><br>
+In Matplotlib, <b>plt.show()</b> is a function that displays all currently active figures. When you call plt.show(), Matplotlib will display any previously created plots that have not yet been shown.<br>
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+The <b>plt.show() function should typically be called at the end of the code block</b> that creates a plot. This is because, until the plt.show() function is called, Matplotlib will hold the plot in memory, but won't display it. This allows you to create multiple plots in a single script or code block and display them all at once.
+</span>
+</div>
+</details><br>
 
 To execute the code cell, again press `Alt + Enter` ( use `option + return` for macOS ).
 
 ![02_python-jupyter-try-notebook-graph.png](assets/images/02_python-jupyter-try-notebook-graph.png)
 
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+When you execute a code cell, the output generated by that cell is displayed below the code. If you want to modify the code, you can simply click on the cell and make changes to the code. Once you've made the desired changes, you can execute the cell again by clicking on the "Run" button, or by using the keyboard shortcut <i>Shift + Enter</i> or <i>Alt + Enter</i>.
+</span>
+</div><br>
+
+<p align="center"><img width="800" src="assets/images/02_python-matplotlib.gif"></p>
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+By editing and re-running cells, you can quickly test different variations of your code and see how they affect the output. This can be particularly useful if you want to explore different parameters or settings for your code. <br><br>
+In addition to editing and re-running cells, you can also add new cells to your notebook to test out different options. This way, you can easily compare the results of different versions of your code side-by-side.
+</span>
+</div><br>
+
+After completing your work in the <b>try-jupyter</b> notebook, you may wish to download it for either personal reference or to share with others. To do this, simply select `File` from the top menu, and then choose `Download` to obtain a local copy of the notebook.
+
+![02_python-jupyter-try-notebook-download.png](assets/images/02_python-jupyter-try-notebook-download.png)
+
+# *GoogleColab* **online** <br>
+
+
+
 <!--
-# Python in *GoogleColab* **online**
-
-
-# Python in *JupyterLab* **locally**
+# *JupyterLab* **locally**
 -->
 
 
