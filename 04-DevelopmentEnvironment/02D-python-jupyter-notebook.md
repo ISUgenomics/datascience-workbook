@@ -55,7 +55,7 @@ However, while Python coding in Jupyter offers many advantages, **it may not alw
 
 ---
 
-# *try-jupyter* **online** <br> *scatterplot by matplotlib*
+# *try-jupyter* **online**
 
 The Jupyter Project offers an **online training platform** called <i>"Try Jupyter"</i> that allows users to **get started with Python projects in Jupyter** without having to install any software on their own computer.
 
@@ -68,7 +68,7 @@ The <a href="https://jupyter.org/try-jupyter/lab/" target="_blank">Try Jupyter �
 </span>
 </div><br>
 
-## **PROS & CONS**
+## *PROS & CONS*
 
 <span style="font-size: 24px; font-weight: 600; color: #66cb5e; ">✓</span> A good option to quickly see if working in JupyterLab is for you. <br>
 <span style="font-size: 24px; font-weight: 600; color: #66cb5e; ">✓</span> You don't even need to install Jupyter Lab, all you need is an Internet connection. <br>
@@ -106,7 +106,7 @@ or
 
 You can now start writing Python code in the notebook cells and running them by clicking on the `Run` button in the top menu bar or pressing `Shift + Enter` to run the current cell and select the cell below it.
 
-## Python coding example
+## Python coding example <br> <i>- scatterplot by <b>matplotlib</b></i>
 
 **5. Example Python-based notebook for creating scatterplot using matplotlib.**
 
@@ -271,7 +271,7 @@ After completing your work in the <b>try-jupyter</b> notebook, you may wish to d
 
 ---
 
-# *GoogleColab* **online** <br> *scatterplot by seaborn*
+# *Google Colab* **online**
 
 <a href="https://colab.research.google.com" target="_blank">Google Colab  ⤴</a> (short for <i>research colaboratory</i>) is a **cloud-based service** provided by Google that allows users **to create, run, and share interactive Jupyter notebooks without the need to install** any software on their computer.
 
@@ -286,7 +286,7 @@ Colab provides access to a <b>high-powered cloud-based computing environment</b>
 </span>
 </div><br>
 
-## **PROS & CONS**
+## *PROS & CONS*
 
 <span style="font-size: 24px; font-weight: 600; color: #66cb5e; ">✓</span> You can create Jupyter notebooks in a web browser without any installation on your computer. <br>
 <span style="font-size: 24px; font-weight: 600; color: #66cb5e; ">✓</span> You can use the Google's high-powered cloud-based computing resources. <i>(limited per user)</i> <br>
@@ -344,7 +344,7 @@ Colab provides many other features. Here's the quick look on the **options avail
 
 You can now start writing Python code in the notebook cells. Run your code by clicking on the `Run` button next to the cell or pressing `Ctrl + Enter` *(while having cursor within a cell)*.
 
-## Python coding example
+## Python coding example <br> <i>- scatterplot by <b>seaborn</b></i>
 
 **4. Example Python-based notebook for creating scatterplot using seaborn.**
 
