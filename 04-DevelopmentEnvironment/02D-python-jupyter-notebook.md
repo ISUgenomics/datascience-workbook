@@ -136,6 +136,7 @@ It's important to note that <b>installing libraries system-wide can also lead to
 <br><span style="font-style:italic;">
 Make sure that you have <b>pip</b> installed on your machine before running installation commands. <br>
 You can check if pip is installed by running <b>pip --version</b> in your terminal. If pip is not installed, you can download and install it from the official Python website: <a href="https://www.python.org/downloads/" target="_blank">https://www.python.org/downloads/  ⤴</a>.
+</span>
 </div><br>
 
 
