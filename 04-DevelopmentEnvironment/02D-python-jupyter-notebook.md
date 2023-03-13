@@ -419,7 +419,7 @@ from sklearn.datasets import load_wine    # to load the ready-made dataset
 
 ![02_python-colab-add-code.png](assets/images/02_python-colab-edit-code.png)
 
-To execute the code cell, press `Ctrl + Enter` or click the `Run` button.
+To execute the code cell, press `Shift + Enter` or click the `Run` button.
 
 **STEP C: Add a code cell to create the python code for loading the dataset.**
 
@@ -441,7 +441,42 @@ df['target'] = wine_data.target
 print(f'DATAFRAME:\n{df.head()}')                   # optional
 ```
 
-To execute the code cell, press `Ctrl + Enter` or click the `Run` button.
+<details><summary><i><b>What the script does?</b></i></summary>
+
+<b>#1 Load the Wine dataset</b><br>
+First, we call <b>load_wine()</b> function imported from the sklearn.datasets module.
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+wine_data = load_wine()
+</code>
+This loads the wine dataset as a Python object of a <i>dictionary</i> type.
+<br><br>
+<b>#2 Preview dataset structured</b><br>
+Then, using a <b>print()</b> function, we can preview, what is the structure of the dataset and how to extract the information we need. The dictionary object in Python has a built-in method <b>dict.keys()</b> that returns the list of the keys available in the dictionary.
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+print(f'KEYS: {list(wine_data.keys())}\n')
+</code>
+In this case, we receive the following keys:
+<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+['data', 'target', 'frame', 'target_names', 'DESCR', 'feature_names']
+</code>
+The value corresponding to each key can be previewed as an attribute of the dictionary object, i.e., dict.attribute:
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+wine_data.DESCR &emsp; &emsp; &emsp; &emsp; &emsp; # returns decription of the dataset<br>
+wine_data.feature_names &emsp; # returns names of the measured features
+</code><br>
+<b>#3 Convert the dataset to a Pandas DataFrame</b><br>
+Once you know what is in the dataset, you can create a well-structured Pandas DataFrame object containing the information you need. In this case, we build the DataFrame using information from the "data" field with column headers from the "feature_names" field.
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+df = pd.DataFrame(wine_data.data, columns=wine_data.feature_names)
+</code>
+We also want to know to which target class the observations belong so we add an additional column to the DataFrame we created in a previous step:
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+df['target'] = wine_data.target
+</code>
+Now, we can use a structured form of the dataset to create plots.
+</details><br>
+
+To execute the code cell, press `Shift + Enter` or click the `Run` button.
 
 <div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">WARNING:</span>
@@ -469,10 +504,44 @@ Add next `code cell`, and copy-paste Python code to create a scatter plot compar
 ```
 # Plot a scatterplot of alcohol vs. color_intensity
 sns.set(rc={'figure.figsize':(6,3), 'figure.dpi': 200})         # set the graph size and resolution
-sns.scatterplot(data=df, x="alcohol", y="color_intensity", hue="target", s=80)
+sns.scatterplot(data=df, x="alcohol", y="color_intensity", hue="target", size=80)
 ```
 
-To execute the code cell, press `Ctrl + Enter` or click the `Run` button.
+<details><summary><i><b>What the script does?</b></i></summary>
+
+<b># Configure a graph settings</b><br>
+Seaborn's <b>sns.set()</b> function is used to customize the appearance of plots created using Seaborn. It can be used to change the default settings for font size, color palettes, plot styles, and more. The <b>rc</b> parameter in Seaborn's sns.set() function allows you to specify values for Matplotlib's runtime configuration parameters. These parameters control a wide variety of aspects of the plot, including the figure size (<i>'figure.figsize'</i>), resolution (<i>'figure.dpi'</i>), font size (<i>'font.size'</i>), axes (<i>'axes.labelsize'</i>, <i>'axes.titlesize'</i>), line styles (<i>'lines.linewidth'</i>, <i>'lines.linestyle'</i>), and more.
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+sns.set(rc={'figure.figsize':(6,3), 'figure.dpi': 200})
+</code><br>
+Here are some of the available options for sns.set():
+<li><b>palette='deep'</b> sets the color palette for the plot; options: <i>'deep', 'muted', 'pastel', 'bright', 'dark', and 'colorblind'</i></li>
+<li><b>style='darkgrid'</b> sets the overall style of the plot; options: <i>'ticks', 'darkgrid', 'whitegrid', 'dark', and 'white'</i></li>
+<li><b>font='sans-serif'</b> a dictionary specifying the font properties</li>
+<li><b>context='poster'</b> a string specifying the context in which the plot will be displayed; options: <i>'paper', 'notebook', 'talk', 'poster'</i></li>
+<br>
+<b># Plot using seaborn graphs</b><br>
+Seaborn provides a wide range of plot types for visualizing statistical data, including:<br> <i>'scatterplot', 'lineplot', 'histplot', 'kdeplot', 'rugplot', 'jointplot', 'pairplot', 'heatmap', 'clustermap', 'boxplot', 'violinplot', 'barplot', 'countplot', 'relplot'</i>.<br>
+These plot types are similar to those available in Matplotlib, but Seaborn provides several additional types of plots and additional functionality for customizing the visual style of the plots.
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+sns.scatterplot(data=df, x="alcohol", y="color_intensity", hue="target", size=80)
+</code><br>
+The <b>scatterplot() function</b> in Seaborn is used to draw a scatter plot of two variables with possible semantic grouping. Here are some of the options available for customizing the scatter plot in Seaborn:
+<li><b>x, y</b> : variables to be plotted on the x and y axes</li>
+<li><b>data</b> : DataFrame or array containing the data to be plotted</li>
+<li><b>hue</b> : variable used to group the data by color; <i>this can be a categorical or numeric variable</i></li>
+<li><b>markers</b> : set of marker styles to use for the style variable</li>
+<li><b>size</b> : variable used to set the size of the markers; <i>this can be a numeric variable or a categorical variable with a specified mapping of size values</i></li>
+<li><b>sizes</b> : minimum and maximum sizes to use for the markers</li>
+<li><b>style</b> : ariable used to set the marker style; <i>this can be a categorical variable with a specified mapping of marker styles</i></li>
+<li><b>palette</b> : color palette to use for coloring the markers based on the hue variable</li>
+<li><b>alpha</b> : transparency of the markers</li>
+<li><b>edgecolor</b> : color of the marker edges</li>
+<li><b>linewidth</b> : width of the marker edges</li>
+<li><b>ax</b> : the matplotlib Axes object to draw the plot onto</li>
+</details><br>
+
+To execute the code cell, press `Shift + Enter` or click the `Run` button.
 
 ![02_python-colab-graph.png](assets/images/02_python-colab-graph.png)
 
