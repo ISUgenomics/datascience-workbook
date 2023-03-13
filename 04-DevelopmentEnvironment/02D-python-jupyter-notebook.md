@@ -149,14 +149,14 @@ Installing Pandas and Plotly using `conda` is a better choice in many cases beca
 <br><span style="font-style:italic;">
 With <b>Conda</b>, you can <b>create isolated environments</b> for each of your projects, each with its own set of dependencies, which helps to avoid version conflicts and compatibility issues between different libraries. Additionally, conda allows you to install both Python packages and non-Python packages (such as compilers and scientific libraries) from the same command-line interface, making it easier to manage your entire development environment.
 </span>
-</div><br>
+</div>
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
 Conda can automatically resolve package dependencies and install compatible versions of all required packages, which saves you time and effort in setting up your development environment.
 </span>
-</div><br>
+</div>
 
 <div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">WARNING:</span>
@@ -164,7 +164,8 @@ Conda can automatically resolve package dependencies and install compatible vers
 When you install packages using conda, <b>they are installed in the "base" environment by default</b>, which is activated when you start a new terminal session. This means that any packages you install using conda will be available globally, and can potentially lead to version conflicts or compatibility issues with other packages that are already installed on your system.
 </span><br>
 <b>To avoid these issues, it's recommended that you create a new conda environment for each of your projects, and install the required packages into that environment. </b>
-</div><br>
+</div>
+
 
 To create a new conda environment, you can use the following command:
 ```
@@ -185,7 +186,7 @@ conda install plotly
 ```
 *This way, your new project has its own isolated environment with its own set of dependencies.*
 
-Now, you are ready to launch Jupyter Lab interface in the activated Conda environment. [**see STEP 2**]
+Now, you are ready to launch Jupyter Lab interface in the activated Conda environment. <br>[**see STEP 2**]
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
@@ -311,7 +312,7 @@ Let's assume we have a CSV file called `gene_expression.csv` that contains our g
 23,Gene_D,Sample_4,0.185386 <br>
 24,Gene_E,Sample_4,0.716791 <br>
 </code>
-<i>This file contains 10 samples and 5 genes, where each cell contains a random value between 0 and 1.</i>
+<i>This file contains 5 samples and 5 genes. Expression level is a random value between 0 and 1.</i>
 <br>
 </details><br>
 
@@ -358,7 +359,7 @@ df.columns.name = "Sample" <br><br>
 #4 Reset the index to make the gene names a column <br>
 df = df.reset_index().melt(id_vars=["Gene"], var_name="Sample", value_name="Expression")
 </code><br>
-<i>This will create a Pandas DataFrame with 5 samples and 5 genes, where each cell contains a random value between 0 and 1.</i>
+<i>This will create a Pandas DataFrame with 10 samples and 10 genes, where each cell contains a random value between 0 and 1.</i>
 </details>
 </div><br>
 
