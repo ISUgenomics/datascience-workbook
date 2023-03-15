@@ -247,7 +247,7 @@ header:
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
     <a href="04-DevelopmentEnvironment/02A-python-setup-locally" style="color: #3f5a8a;">
-    Python Setup on your computing machine</a> <i style="color: #a9bbd1;">(installation needed)</i></td></tr>
+    Local Python setup on your computing machine</a> <i style="color: #a9bbd1;">(installation needed)</i></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;  
