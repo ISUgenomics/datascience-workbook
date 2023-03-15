@@ -55,6 +55,7 @@ Due to incompatabilities between certain python libraries, it is highly recommen
 </span>
 </div>
 
+---
 
 # 1. Get Python on your local machine
 
@@ -291,6 +292,7 @@ conda activate myenv
 Anaconda provides a **graphical user interface (GUI) called Anaconda Navigator**, which makes it easier to manage environments and packages using a point-and-click interface.
 ![Anaconda Dashboard](assets/images/03-Anaconda.png)
 
+---
 
 # 2. Select Development Environment
 
@@ -336,6 +338,7 @@ Choosing the **development environment for Python** projects depends on personal
 **All of them can be used in Windows, macOS, and Linux.** <br>
 Follow a discussion on Python IDE - <a href="https://realpython.com/python-ides-code-editors-guide/" target="_blank">https://realpython.com/python-ides-code-editors-guide/  ⤴</a>
 
+---
 
 # 3. Manage Python environments
 
@@ -573,7 +576,6 @@ By convention, the file is always named <b>Dockerfile</b> (with a capital "D" an
 </span>
 </div><br>
 
-
 You can create a Dockerfile using a text editor like a command-line `nano` or `Visual Studio Code` with a graphical user interface. *For example, here's a* `Dockerfile` *template:*
 ```
 # Use a base image (in this case, Python 3.9)
@@ -620,8 +622,9 @@ docker build -t myimage:latest -f MyDockerfile .
 <i>This command specifies that the Dockerfile is named "MyDockerfile" and is located in the current directory (.), and it sets the name of the resulting image to "myimage" with the latest tag.</i>
 </div><br>
 
-
 <span style="color: #ff3870;font-weight: 500;">Learn more about Docker containers and Docker graphical user interface (GUI) from the practical tutorial <a href="https://datascience.101workbook.org/06-IntroToHPC/07-CONTAINERS/02-DOCKER/01-docker-basics" target="_blank">Docker basics  ⤴</a> available in the <a href="https://datascience.101workbook.org/06-IntroToHPC/07-CONTAINERS/00-introduction-to-containers" target="_blank">Introduction to Containers  ⤴</a> section of this workbook.</span>  
+
+---
 
 ### *Manage Project Dependencies*
 
@@ -632,12 +635,14 @@ Managing dependencies is an important part of working with Python projects, and 
 <br><span style="font-style:italic;">
 It is highly recommended to create a <b>requirements file</b> that is a common way to manage dependencies for Python projects, regardless of the tool you use. The file should list all of the packages required for the project, along with their version numbers, so that others can easily <b>install the same dependencies on another machine</b>.
 </span>
-</div><br>
+</div>
 
-The **requirements file** can be created: with
+<br>The **requirements file** can be created: with
 * the `conda env export` command for conda environments,
 * the `pip freeze` command for venv environments,
 * or by manually creating a `requirements.txt` file for Docker environments.
+
+<br>
 
 **CONDA** <br>
 When working with `conda`, you can create a **YAML file** that lists all of the packages in your environment, including the version numbers. This file can then be used to recreate the environment on another machine or to share with others who need to use the same dependencies.
@@ -648,6 +653,8 @@ conda env export > environment.yml
 ```
 *This will create a file named "environment.yml" in the current directory that contains the environment's name, a list of channels used to install packages, and a list of packages with their versions.*
 
+<br>
+
 **VENV** <br>
 When working with `venv`, you can create a **requirements.txt** file that lists all of the packages installed in the virtual environment, including their version numbers.
 
@@ -656,6 +663,8 @@ To create the file, activate the environment you want to export and run the foll
 pip freeze > requirements.txt
 ```
 *This will create a file named "requirements.txt" in the current directory that contains a list of packages with their versions.*
+
+<br
 
 **DOCKER** <br>
 When working with `Docker`, you can include a **requirements.txt** file in your project directory and copy it to the Docker container during the build process. To do this, **include the following lines in your Dockerfile**:
@@ -676,9 +685,9 @@ flask==2.1.0 <br>
 pandas==1.3.4 <br>
 numpy==1.21.3 <br>
 matplotlib==3.4.3
-</code><br>
+</code>
 <i>In this example, the file lists four Python packages (Flask, Pandas, NumPy, and Matplotlib) along with their version numbers. These are just example packages, but you would list the packages that your project requires in the file.</i>
-</div>
+</div><br>
 
 
 # 4. Instal Python Libraries
@@ -692,6 +701,8 @@ This is the default package repository for Python packages. You can use the `pip
 pip install requests
 ```
 
+<br>
+
 **2.** **Conda** <br>
 Conda is a package manager that is commonly used for scientific computing in Python. You can use the `conda` command to install packages from the Anaconda distribution or the default Conda package repository. <i>For example, you can install the <b>numpy</b> package by running:</i>
 ```
@@ -701,13 +712,15 @@ With `conda` you can also install packages from a specific channels *(repository
 ```
 conda install -c bioconda biopython
 ```
-The popular Conda channels for Python packages include:
+**The popular Conda channels for Python packages include:**
 * <a href="https://anaconda.org/anaconda" target="_blank">Anaconda  ⤴</a> &emsp; &emsp; `conda install -c anaconda <package>`
 * <a href="https://bioconda.github.io/" target="_blank">bioconda  ⤴</a> &emsp;&emsp; &nbsp; `conda install -c bioconda <package>`
 * <a href="https://conda-forge.org/" target="_blank">Conda Forge  ⤴</a> &emsp; `conda install -c conda-forge <package>`
 * <a href="https://anaconda.org/pytorch" target="_blank">pytorch  ⤴</a> &emsp;&emsp; &emsp; `conda install -c pytorch <package>`
 * <a href="https://anaconda.org/nvidia" target="_blank">NVIDIA  ⤴</a> &emsp; &emsp; &emsp; `conda install -c nvidia <package>`
 * <a href="https://anaconda.org/intel" target="_blank">Intel  ⤴</a> &emsp; &emsp; &emsp; &emsp; `conda install -c intel <package>`
+
+<br>
 
 **3.** **GitHub python libraries** <br>
 Many Python packages are available on GitHub, which is a platform for code hosting and collaboration. To install a Python package from GitHub, you can use the `pip` or `conda` package managers.
@@ -743,7 +756,7 @@ conda install --use-local <package>
 <div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">WARNING:</span>
 <br><span style="font-style:italic;">Note that the package name may be different from the repository name. You can check the <b>"setup.py"</b> file to see the package name.</span>
-</div>
+</div><br>
 
 
 ___
