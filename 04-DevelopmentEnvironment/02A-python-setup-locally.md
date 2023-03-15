@@ -18,20 +18,27 @@ header:
 
 # Introduction
 
-Python is a dynamically typed, object-oriented scripting language developed by Guido van Rossum and released in 1991. Many important machine learning packages are available in python.
+In this section, we will cover the process of setting up Python on a local machine. Python is a popular programming language used for various purposes such as data analysis, machine learning, web development, and more. Setting up Python on your local machine is an essential step for getting started with Python programming, and we will provide a step-by-step guide to help you through the process.
 
-**More Information**
+**More information from external sources**
 
-* [https://www.python.org](https://www.python.org)
-* [Wikipedia - Python (programming language)](https://en.wikipedia.org/wiki/Python_(programming_language))
-* [List of Python projects on GitHub](https://github.com/topics/python)
-* Medium Article: [Best Python Libraries for Machine Learning and Deep Learning](https://medium.com/dataprophet/best-python-libraries-for-machine-learning-and-deep-learning-646936aa01af) - June 2, 2020
+* Python official website: <a href="https://www.python.org" target="_blank">https://www.python.org  ⤴</a>
+* Wikipedia: <a href="https://en.wikipedia.org/wiki/Python_(programming_language" target="_blank">Python (programming language  ⤴</a>
+* <a href="https://github.com/topics/python" target="_blank">List of Python projects on GitHub  ⤴</a>
 
+**Python-related sections in this workbook:**
 
-1. Get Python on your local machine
-2. Pick an IDE (Integrated Development Environment)
-3. Pick a Python Virtual Envirnoment Manager
-4. Instal Python Libraries
+* <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02-python-programming-environment" target="_blank">Python Programming Environment(s)  ⤴</a>
+* <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/01-introduction-to-python" target="_blank">Introduction to Python Programming  ⤴</a>
+* <a href="https://datascience.101workbook.org/07-DataParsing/02-DATA-MANIPULATION/02-PYTHON/01-manipulate-data-with-python" target="_blank">Manipulating Text Files with Python  ⤴</a>
+* <a href="https://datascience.101workbook.org/08-DataVisualization/02-GRAPHS/02-PYTHON/01-interactive-graphing-with-python" target="_blank">Plotly-Dash: Data Processing & Interactive Plotting with Python  ⤴</a>
+
+**Sections in this tutorial:**
+
+1. [Get Python on your local machine](#)
+2. [Pick an Integrated Development Environment](#)
+3. [Pick a Python Virtual Environment Manager](#)
+4. [Instal Python Libraries](#)
 
 
 # 1. Get Python on your local machine
@@ -48,7 +55,7 @@ This option allows you to download and install the latest version of Python dire
 Many Linux distributions come with Python pre-installed, but if you need a different version or want to install Python on a different operating system, you can use a package manager. For example, on macOS, you can use `brew`, and on Ubuntu, you can use `apt-get`. <br>
 **Best for:** Linux, macOS
 
-**C. Using an Integrated DEVELOPMENT ENVIRONMENT (IDE)**
+**C. Using an Integrated Development Environment (IDE)**
 
 Some integrated development environments (IDEs) and text editors come with Python pre-installed or have built-in support for Python. For example, Anaconda and PyCharm are popular Python IDEs that come with Python pre-installed. <br>
 **Best for:** Windows, macOS, Linux
@@ -78,64 +85,63 @@ Some integrated development environments (IDEs) and text editors come with Pytho
 | **recommended:** Anaconda | **recommended:** package manager | **recommended:** package manager |
 
 
-
-
 ## **A.** Official Python Installer
 
 If you prefer a pure python install (**only command line and without IDE**), install the latest version of Python from their website - <a href="https://www.python.org/downloads/" target="_blank">https://www.python.org/downloads/  ⤴</a>. The development environment can be selected and installed separately later.
 
 *Follow the instructions for your operating system to install Python using an official installer.*
 
-**WINDOWS** *(via GUI, recommended)*
+<details><summary><b>WINDOWS</b> <i>(via GUI, recommended)</i></summary>
 
-1. Go to the official Python website at <a href="https://www.python.org/downloads/windows/" target="_blank">https://www.python.org/downloads/windows/  ⤴</a>.
-2. Scroll down to the ***Stable Releases*** section and click on the: <br>
- • <i>"Download Windows installer (64-bit)"</i> link if you have a 64-bit version of Windows, or <br>
- • <i>"Download Windows installer (32-bit)"</i> link if you have a 32-bit version of Windows.
-3. Run the downloaded executable (`EXE`) file and follow the instructions in the installation wizard.
+<br>
+<b>1.</b> Go to the official Python website at <a href="https://www.python.org/downloads/windows/" target="_blank">https://www.python.org/downloads/windows/  ⤴</a>. <br><br>
+<b>2.</b> Scroll down to the <b><i>Stable Releases</i></b> section and click on the: <br>
+<li><i>"Download Windows installer (64-bit)"</i> link if you have a 64-bit version of Windows, or</li>
+<li><i>"Download Windows installer (32-bit)"</i> link if you have a 32-bit version of Windows.</li> <br>
+<b>3.</b> Run the downloaded executable (`EXE`) file and follow the instructions in the installation wizard.
+<br>
+</details>
 
+<details><summary><b>macOS</b> <i>(via GUI, recommended)</i></summary>
 
-**macOS** *(via GUI, recommended)*
+<br>
+<b>1.</b> Go to the official Python website at <a href="https://www.python.org/downloads/macos/" target="_blank">https://www.python.org/downloads/macos/  ⤴</a>. <br><br>
+<b>2.</b> Scroll down to the <b><i>Stable Releases</i></b> section and click on the <i>"Download macOS 64-bit installer"</i> link. <br><br>
+<b>3.</b> Run the downloaded `PKG` file and follow the instructions in the installation wizard. <br>
+</details>
 
-1. Go to the official Python website at <a href="https://www.python.org/downloads/macos/" target="_blank">https://www.python.org/downloads/macos/  ⤴</a>.
-2. Scroll down to the ***Stable Releases*** section and click on the <i>"Download macOS 64-bit installer"</i> link.
-3. Run the downloaded `PKG` file and follow the instructions in the installation wizard.
-
-
-**Linux** *(via CLI, not recommended)*
+<details><summary><b>Linux</b> <i>(via CLI, not recommended)</i></summary>
 
 <div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">WARNING:</span>
 <br><span style="font-style:italic;"> The installation process on Linux can vary depending on the distribution you're using. </span>
 </div>
-
-
-Here are some general steps for Ubuntu:
-
-1. Open the terminal.
-2. Update your package list:
-```
+<b>Here are some general steps for Ubuntu:</b><br>
+<b>1.</b> Open the terminal.
+<b>2.</b> Update your package list:
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
 sudo apt-get update
-```
-3. Install the required packages for Python:
-```
+</code><br>
+<b>3.</b> Install the required packages for Python:
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
 sudo apt-get install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev
-```
-4. Download the Python source code from the official website at <a href="https://www.python.org/downloads/source/" target="_blank">https://www.python.org/downloads/source/  ⤴</a>.
-5. Extract the downloaded archive. *Replace "x.x.x" with the version number you downloaded.*
-```
-tar -xf Python-x.x.x.tgz
+</code><br>
+<b>4.</b> Download the Python source code from the official website at <a href="https://www.python.org/downloads/source/" target="_blank">https://www.python.org/downloads/source/  ⤴</a>.<br><br>
+<b>5.</b> Extract the downloaded archive. <i>Replace "x.x.x" with the version number you downloaded.</i>
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+tar -xf Python-x.x.x.tgz <br>
 cd Python-x.x.x
-```
-6. Configure the build options. *This will build a version of Python with optimizations enabled.*
-```
+</code><br>
+<b>6.</b> Configure the build options. <i>This will build a version of Python with optimizations enabled.</i>
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
 ./configure --enable-optimizations
-```
-7. Build and install Python. *Replace "N" with the number of cores in your CPU to speed up the build process.*
-```
-make -j N
-sudo make altinstall
-```
+</code><br>
+<b>7.</b> Build and install Python. <i>Replace "N" with the number of cores in your CPU to speed up the build process.</i>
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+make -j N <br>
+sudo make install
+</code><br>
+</details>
 
 
 ## **B.** Install Python via Package Manager
@@ -147,28 +153,25 @@ When you install Python using a package manager, you are getting the core Python
 <br><span style="font-style:italic;">Using a package manager from the command line allows you to easily install, update, and remove packages, including Python and its dependencies. </span>
 </div><br>
 
-**WINDOWS** *(not available)*
+<b>WINDOWS</b> <i>(not available)</i>
 
-**macOS** *(via CLI, recommended)*
+<details><summary><b>macOS</b> <i>(via CLI, recommended)</i></summary>
 
-Homebrew is a popular package manager for MacOS that can be used to install Python.
-
-<details><summary><b>0. <i>Install Homebrew, if needed:</i></b></summary>
-
-Install Homebrew by opening the Terminal app and running the following command:
+<br>
+<b>Homebrew is a popular package manager for MacOS that can be used to install Python.</b><br><br>
+<b>0.</b> Install Homebrew, if needed: <br>
+<i>Install Homebrew by opening a terminal and running the following command:</i>
 <code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 </code><br>
-</details><br>
-
-1. Once Homebrew is installed, run the following command to update the package list:
-```
+<b>1.</b> Once Homebrew is installed, run the following command to update the package list:
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
 brew update
-```
-2. To install the latest version of Python available in Homebrew use the following command:
-```
+</code><br>
+<b>2.</b> To install the latest version of Python available in Homebrew use the following command:
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
 brew install python
-```
+</code><br>
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
@@ -180,27 +183,28 @@ brew install python@3.9
 <i>Replace "3.9" with the version number you want to install.</i>
 <br>
 </div><br>
+</details>
 
 
-**Linux** *(via CLI, recommended)*
+<details><summary><b>Linux</b> <i>(via CLI, recommended)</i></summary>
 
-`Ubuntu` and `Debian` both use the apt package manager, which can be used to install Python.
-
-Here's how to install Python using apt:
-
-1. Open the terminal and run the following command to update the package list:
-```
+<br>
+<b>Ubuntu</b> and <b>Debian</b> both use the apt package manager, which can be used to install Python. <br><br>
+<b>Here's how to install Python using apt:</b> <br><br>
+<b>1.</b> Open the terminal and run the following command to update the package list:
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
 sudo apt update
-```
-2. Install Python using the following command:
-```
+</code><br>
+<b>2.</b> Install Python using the following command:
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
 sudo apt install python3
-```
-*This will install the latest version of Python 3 available in the Ubuntu/Debian repositories.* <br>
+</code>
+<i>This will install the latest version of Python 3 available in the Ubuntu/Debian repositories.</i> <br><br>
 If you want to install a specific version of Python, you can use the following command instead:
-```
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
 sudo apt install python3.9
-```
+</code><br>
+</details>
 
 
 ## **C.** Anaconda Python Install
@@ -213,9 +217,6 @@ Anaconda is an open-source distribution of Python that includes the Conda packag
 Anaconda is a popular choice for data scientists, researchers, and developers who work with large datasets and complex computations. It provides a streamlined and consistent way to set up and manage Python environments and packages, making it easier to get started with data analysis and scientific computing.
 </span>
 </div><br>
-
-Anaconda provides a **graphical user interface (GUI) called Anaconda Navigator**, which makes it easier to manage environments and packages using a point-and-click interface.
-![Anaconda Dashboard](assets/images/03-Anaconda.png)
 
 **INSTALL ANACONDA** <a href="https://www.anaconda.com/products/distribution#Downloads" target="_blank">https://www.anaconda.com/products/distribution#Downloads  ⤴</a>
 
@@ -273,6 +274,9 @@ conda activate myenv
 ![02_python-anaconda.png](assets/images/02_python-anaconda.png)
 
 
+Anaconda provides a **graphical user interface (GUI) called Anaconda Navigator**, which makes it easier to manage environments and packages using a point-and-click interface.
+![Anaconda Dashboard](assets/images/03-Anaconda.png)
+
 
 ## *Tips & Warnings*
 
@@ -303,44 +307,36 @@ An Integrated Development Environment (<b>IDE</b>) is a software tool that provi
 
 Here are some of the reasons **why choosing the right development environment is important**:
 
-* **code editing** <br>
-<i>A good development environment should provide a code editor that supports syntax highlighting, auto-completion, and code formatting. This can help to write clean, readable, and error-free code.</i>
 
-* **debugging** <br>
-<i>Debugging is an essential part of the development process. A development environment should have a built-in debugger that allows you to step through the code and identify errors and bugs.</i>
+| FEATURE | EXPLANATION |
+|---------|-------------|
+|**code editing**|<i>A good development environment should provide a code editor that supports syntax highlighting, auto-completion, and code formatting. This can help to write clean, readable, and error-free code.</i>|
+|**debugging**|<i>Debugging is an essential part of the development process. A development environment should have a built-in debugger that allows you to step through the code and identify errors and bugs.</i>|
+|**testing**|<i>A development environment should have tools for unit testing, integration testing, and performance testing. This helps to ensure that the code is working as expected and meets the requirements.</i>|
+|**version control**|<i>Having built-in version control (like Git) in a development environment provides benefits such as tracking changes, enabling collaboration, documenting changes, managing dependencies, and aiding project management.</i>|
+|**collaboration**|<i>A development environment should support collaboration with other developers. This includes features like version control, code review, and collaboration tools.</i>|
 
-* **testing** <br>
-<i>A development environment should have tools for unit testing, integration testing, and performance testing. This helps to ensure that the code is working as expected and meets the requirements.</i>
-
-* **version control** <br>
-<i></i>
-
-* **collaboration** <br>
-<i>A development environment should support collaboration with other developers. This includes features like version control, code review, and collaboration tools.</i>
-
-Choosing the right development environment for Python developmentdepends on personal preferences, operating systems, and the specific requirements of the project. Some of the best choices include:
-* <a href="https://www.jetbrains.com/pycharm/" target="_blank">PyCharm  ⤴</a> is a powerful and popular development environment for Python <br>
+Choosing the **development environment for Python** projects depends on personal preferences, operating systems, and the specific requirements of the project. Some of the best choices include:
+* <a href="https://www.jetbrains.com/pycharm/" target="_blank"><b>PyCharm</b>  ⤴</a> is a powerful and popular development environment for Python <br>
 <span style="color: #ff3870;font-weight: 500;">Learn more from the hands-on tutorial: <i><a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02E-python-pycharm-ide" target="_blank">PyCharm: IDE for Professional Python Developers  ⤴</a></i></span>
 
-* <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code (VSC)  ⤴</a> is a lightweight and versatile code editor that can be used for Python development <br>
+* <a href="https://code.visualstudio.com/" target="_blank"><b>Visual Studio Code</b> (VSC)  ⤴</a> is a lightweight and versatile code editor that can be used for Python development <br>
 <span style="color: #ff3870;font-weight: 500;">Learn more from the hands-on tutorial: <i><a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01A-tutorial-VSCode" target="_blank">Visual Studio Code: Multi-language Integrated DE  ⤴</a></i></span>
 
-* <a href="https://jupyter.org/" target="_blank">Jupyter Notebook  ⤴</a> is a web-based development environment that is ideal for Python-based data science <br>
+* <a href="https://jupyter.org/" target="_blank"><b>Jupyter Notebook</b>  ⤴</a> is a web-based development environment that is ideal for Python-based data science <br>
 <span style="color: #ff3870;font-weight: 500;">Learn more from the hands-on tutorial: <i><a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-jupyter-basics" target="_blank">Jupyter: Interactive Web-Based Multi-Kernel DE  ⤴</a></i></span><br>
   * <i><a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-tutorial-jupyter-lab" target="_blank">Getting Started with JupyterLab on a local machine  ⤴</a></i><br>
   * <i><a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-tutorial-jupyter-notebook" target="_blank">Getting Started with Jupyter Notebook on HPC systems  ⤴</a></i><br>
   * <i><a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02D-python-jupyter-notebook" target="_blank">Jupyter Lab: create an interactive Python notebook  ⤴</a></i>
 
 
-* <a href="https://replit.com/" target="_blank">Repl.it  ⤴</a> is an online development environment that supports multiple programming languages, including Python
+* <a href="https://replit.com/" target="_blank"><b>Repl.it</b>  ⤴</a> is an online development environment that supports multiple programming languages, including Python. **Note:** *It requires to sign up, a free plan includes 0.5 GB of account storage.*
 
-* <a href="https://www.vim.org/" target="_blank">Vim  ⤴</a> is a highly customizable and powerful in-terminal code editor <br>
+* <a href="https://www.vim.org/" target="_blank"><b>Vim</b>  ⤴</a> is a highly customizable and powerful in-terminal code editor <br>
 <span style="color: #ff3870;font-weight: 500;">Learn more from the hands-on tutorial: <i><a href="https://datascience.101workbook.org/02-IntroToCommandLine/02B-text-files-editors" target="_blank">Command Line Text Files Editors: nano, vim  ⤴</a></i></span>
 
-**All of them can be used in Windows, macOS and Linux.**
-
+**All of them can be used in Windows, macOS, and Linux.** <br>
 Follow a discussion on Python IDE - <a href="https://realpython.com/python-ides-code-editors-guide/" target="_blank">https://realpython.com/python-ides-code-editors-guide/  ⤴</a>
-
 
 
 # 3. Manage Python environments
