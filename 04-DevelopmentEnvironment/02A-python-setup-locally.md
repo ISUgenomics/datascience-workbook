@@ -252,7 +252,7 @@ chmod +x Anaconda*.sh
 </code><br>
 4. Run the Anaconda installer by running the following command, replacing <i>{version}</i> with the version number of the Anaconda installer:
 <code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-./Anaconda<version>.sh
+./Anaconda{version}.sh
 </code><br>
 5. Follow the prompts in the installer to choose the installation location, select any additional options or packages you would like to install, and complete the installation. <br>
 6. After the installation is complete, open a new terminal window to activate the base environment by running the command:
