@@ -372,14 +372,14 @@ Now let's create a scatterplot of the gene expression levels using Plotly:
 ```
 #1 Create scatterplot using Plotly library
 fig = px.scatter(
-        df,
-        x="Gene",
-        y="Expression",
-        color='Sample',
+        df,                                     # DataFrame object storing the data
+        x="Gene",                               # column header for the X-axis variable
+        y="Expression",                         # column header for the Y-axis values
+        color='Sample',                         # column header for the color grouping
         title="Gene Expression Levels"
 )
 
-#2 Update graph layout
+#2 Update graph layout                          # optional section, if you want to customize the plot
 fig.update_layout(
     xaxis_title="Genes",
     yaxis_title="Expression",
@@ -390,7 +390,9 @@ fig.update_layout(
 fig.show()
 ```
 
-*This will create a scatterplot with the gene names on the x-axis, the expression levels on the y-axis, and each sample represented by a different color.*
+*This will create a scatterplot with the gene names on the x-axis, the expression levels on the y-axis, and each sample represented by a different color. Note that Plotly-based graphs are interactive by default. The details about each data point are displayed on the dynamic labels. You can customize their contents, if needed.*
+
+![02_python-jupyter-cell-output.png](assets/images/02_python-jupyter-cell-output.png)
 
 
 ___
