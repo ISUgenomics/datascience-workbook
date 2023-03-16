@@ -57,7 +57,7 @@ Due to incompatabilities between certain python libraries, it is highly recommen
 
 ---
 
-# 1. Get Python on your local machine
+# 1. Get Python locally
 
 There are several ways to install Python on a local machine, depending on the operating system and the specific version of Python you want to use. Here are some of the most common options:
 
@@ -642,7 +642,7 @@ It is highly recommended to create a <b>requirements file</b> that is a common w
 * the `pip freeze` command for venv environments,
 * or by manually creating a `requirements.txt` file for Docker environments.
 
-<br>
+---
 
 **CONDA** <br>
 When working with `conda`, you can create a **YAML file** that lists all of the packages in your environment, including the version numbers. This file can then be used to recreate the environment on another machine or to share with others who need to use the same dependencies.
@@ -653,7 +653,7 @@ conda env export > environment.yml
 ```
 *This will create a file named "environment.yml" in the current directory that contains the environment's name, a list of channels used to install packages, and a list of packages with their versions.*
 
-<br>
+---
 
 **VENV** <br>
 When working with `venv`, you can create a **requirements.txt** file that lists all of the packages installed in the virtual environment, including their version numbers.
@@ -664,7 +664,7 @@ pip freeze > requirements.txt
 ```
 *This will create a file named "requirements.txt" in the current directory that contains a list of packages with their versions.*
 
-<br
+---
 
 **DOCKER** <br>
 When working with `Docker`, you can include a **requirements.txt** file in your project directory and copy it to the Docker container during the build process. To do this, **include the following lines in your Dockerfile**:
@@ -689,6 +689,7 @@ matplotlib==3.4.3
 <i>In this example, the file lists four Python packages (Flask, Pandas, NumPy, and Matplotlib) along with their version numbers. These are just example packages, but you would list the packages that your project requires in the file.</i>
 </div><br>
 
+---
 
 # 4. Instal Python Libraries
 
