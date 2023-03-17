@@ -44,16 +44,8 @@ PyCharm is a powerful tool for Python developers, providing a wide range of feat
 * **Customizable User Interface** <br>
 <i>PyCharm's user interface is highly customizable, allowing developers to choose from different color schemes, themes, and editor layouts. This can help make the development environment more comfortable and efficient for individual developers.</i>
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-PyCharm is available in two editions: the <b><a href="https://www.jetbrains.com/pycharm/download/" target="_blank">Community Edition  ⤴</a></b>, which is free and open-source, and the <b><a href="https://www.jetbrains.com/pycharm/download/" target="_blank">Professional Edition  ⤴</a></b>, which is a paid version with additional features like support for web development, database integration, and remote development.
-</span>
-</div><br>
 
-![02_python-pycharm-download.png](assets/images/02_python-pycharm-download.png)
-
-# Getting started with PyCharm
+## *Getting started with PyCharm*
 
 If you're new to PyCharm and want to get started with this powerful Python IDE, this section will guide you through the basics. Whether you're a beginner or an experienced Python developer, PyCharm can help you write, debug, and test your code more efficiently.
 
@@ -72,7 +64,16 @@ If you're new to PyCharm and want to get started with this powerful Python IDE, 
 <i>We'll explore some of PyCharm's powerful features, such as code completion, syntax highlighting, code navigation, and more.</i>
 
 
-## 1. Installing PyCharm
+# 1. Installing PyCharm
+
+<div style="background: #dff5b3; padding: 15px;">
+<span style="font-weight:800;">NOTE:</span>
+<br><span style="font-style:italic;">
+PyCharm is available in two editions: the <b><a href="https://www.jetbrains.com/pycharm/download/" target="_blank">Community Edition  ⤴</a></b>, which is free and open-source, and the <b><a href="https://www.jetbrains.com/pycharm/download/" target="_blank">Professional Edition  ⤴</a></b>, which is a paid version with additional features like support for web development, database integration, and remote development.
+</span>
+</div><br>
+
+![02_python-pycharm-download.png](assets/images/02_python-pycharm-download.png)
 
 **You have two options to choose from when installing PyCharm:** <br>
 &emsp; **A.** the Toolbox App, <a href="https://www.jetbrains.com/help/pycharm/installation-guide.html#toolbox" target="_blank">https://www.jetbrains.com/help/pycharm/installation-guide.html#toolbox  ⤴</a> <br>
@@ -216,7 +217,7 @@ PyCharm offers a collection of code examples for various programming languages a
 PyCharm offers a collection of video tutorials and webinars covering a wide range of topics related to programming and software development. These videos can be a useful resource for users who prefer to learn through visual demonstrations. <br><br>
 <a href="https://www.youtube.com/playlist?list=PLCTHcU1KoD99eyuXqUJHZy90-9jU2H2Y2" target="_blank">PyCharm by JetBrains: Quick Tips & Tricks  ⤴</a>
 
-## 2. Creating Project
+# 2. Creating Project
 
 When you use PyCharm for the first time, the "Projects" section in the general options will be fairly basic. The main options that you will see include **creating** a new project, **opening** an existing project or **downloading a project** from a version control system (VCS) repository such as Git, Subversion, or Mercurial.
 
@@ -262,6 +263,8 @@ Console Panel *(5, blue box)* The console pane is typically located at the botto
 **Status bar**
 
 Status bar *(6, yellow arrow)* is located at the bottom of the PyCharm window. It displays information about your project and the current state of PyCharm. You can customize the information that is displayed in the status bar by right-clicking on it and selecting displayed parameters.
+
+
 
 ___
 # Further Reading
