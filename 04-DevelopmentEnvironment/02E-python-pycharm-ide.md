@@ -59,10 +59,10 @@ If you're new to PyCharm and want to get started with this powerful Python IDE, 
 
 <span style="color: #ff3870;font-weight: 500;"> In this section, we'll cover the following topics:</span>
 
-1. **[Installing PyCharm](#installing-pycharm)** <br>
+1. **[Installing PyCharm](#1-installing-pycharm)** <br>
 <i>We'll show you how to download and install PyCharm on your machine, whether you're using Windows, macOS, or Linux.</i>
 
-2. **[Creating Project](#creating-project)** <br>
+2. **[Creating Project](#2-creating-project)** <br>
 <i>We'll walk you through the process of creating a new PyCharm project, choosing a project interpreter, and configuring project settings.</i>
 
 3. **[Writing and Running Code]()** <br>
@@ -131,7 +131,7 @@ Once you have opened PyCharm, you will be presented with the PyCharm welcome scr
 ![02_python-pycharm-welcome.png](assets/images/02_python-pycharm-welcome.png)
 
 
-### *CUSTOMIZE IDE*
+###  • *CUSTOMIZE IDE*
 
 **The PyCharm GUI provides a rich and customizable environment for working with Python code.**
 
@@ -163,7 +163,7 @@ For more **advanced customization options**, PyCharm offers an <b>"All Settings"
 ![02_python-pycharm-settings.png](assets/images/02_python-pycharm-settings.png)
 
 
-### *ADD PLUGINS*
+###  • *ADD PLUGINS*
 
 The `Plugins` section in the general options of PyCharm provides users with a way to manage the various plugins and add-ons that are available for the IDE.
 
@@ -198,7 +198,7 @@ Once a plugin is installed, it may require to `Restart IDE` to apply changes in 
 | **CodeGPT**      | Introduces chatGPT functionality into PyCharm to improve your code by custom prompts, finding bugs, adding tests, optimizing and explaining when needed. |
 
 
-### *LEARN MORE*
+###  • *LEARN MORE*
 
 The `Learn` section in PyCharm provides a variety of resources and tools to help users learn and improve their coding skills.
 
@@ -216,7 +216,7 @@ PyCharm offers a collection of code examples for various programming languages a
 PyCharm offers a collection of video tutorials and webinars covering a wide range of topics related to programming and software development. These videos can be a useful resource for users who prefer to learn through visual demonstrations. <br><br>
 <a href="https://www.youtube.com/playlist?list=PLCTHcU1KoD99eyuXqUJHZy90-9jU2H2Y2" target="_blank">PyCharm by JetBrains: Quick Tips & Tricks  ⤴</a>
 
-## Creating Project
+## 2. Creating Project
 
 When you use PyCharm for the first time, the "Projects" section in the general options will be fairly basic. The main options that you will see include **creating** a new project, **opening** an existing project or **downloading a project** from a version control system (VCS) repository such as Git, Subversion, or Mercurial.
 
