@@ -249,7 +249,7 @@ When you use PyCharm for the first time, the "Projects" section in the general o
 4. Click the `Create` button located in the bottom right corner of the dialog window.
 
 
-### *Panels in the project interface*
+###  • *Panels in the project interface*
 
 Once you create a new project in PyCharm, you will be taken to the project interface, which includes several key components:
 
@@ -323,14 +323,14 @@ If you have enabled version control for your project, you can use the "Get from 
 </div><br>
 
 
-### *Add a new file*
+###  • *Add a new file*
 
 In the `Project` panel *(left side)* you can display the **Project tools** options using the right-click on your mouse. From the menu window, select (1) `New`, followed by (2) `Python File` and in (3) the <i>"New Python file"</i> dialog box enter the name of a new file. This will add a new empty file to your project *(visible in the project panel)* and open it automatically as a new tab in the editor panel.
 
 ![02_python-pycharm-project-file.png](assets/images/02_python-pycharm-project-file.png)
 
 
-### *Tip of the day*
+###  • *Tip of the day*
 
 The ***Tip of the Day*** is a feature in PyCharm that displays a useful tip or trick about the IDE or Python development in general every time you start a project in the IDE. By default, only one tip is displayed at a time. However, you can click the `Next` button to explore as many tips as you wish. The `Tips` dialog window is enabled by default, but once you are done with learning you can choose to turn it off by checking the <i>"Don't show tips on startup"</i> box. *This will prevent the tips from appearing every time you start PyCharm.*
 
