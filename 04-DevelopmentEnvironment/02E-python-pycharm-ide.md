@@ -57,12 +57,13 @@ If you're new to PyCharm and want to get started with this powerful Python IDE, 
 2. **[Creating Project](#2-creating-project)** <br>
 <i>We'll walk you through the process of creating a new PyCharm project, choosing a project interpreter, and configuring project settings.</i>
 
-3. **[Writing and Running Code]()** <br>
-<i>We'll show you how to write Python code in PyCharm, run and debug your code, and use PyCharm's built-in test runner to test your code.</i>
+3. **[Writing Python Code with PyCharm's Features](#writing-python-code-with-pycharms-features)** <br>
+<i>We'll explore some of PyCharm's powerful features while coding in Python, including code completion, syntax highlighting, code navigation, and more.</i>
 
-4. **[Using PyCharm's Features]()** <br>
-<i>We'll explore some of PyCharm's powerful features, such as code completion, syntax highlighting, code navigation, and more.</i>
+4. **[Running & Debugging Your Code]()** <br>
+<i>We'll show you how to run and debug your code, and use PyCharm's built-in test runner to test your code.</i>
 
+---
 
 # 1. Installing PyCharm
 
@@ -134,7 +135,7 @@ Once you have opened PyCharm, you will be presented with the PyCharm welcome scr
 
 ###  • *CUSTOMIZE IDE*
 
-**The PyCharm GUI provides a rich and customizable environment for working with Python code.**
+**The PyCharm GUI provides a rich and customizable environment for working with Python.**
 
 The PyCharm interface is highly customizable, allowing you to adjust the layout and appearance of the various panels and windows to suit your personal preferences and workflow. You can rearrange panels, change the color scheme, adjust font sizes, and more. Additionally, PyCharm supports multiple tabs and split views, allowing you to work with multiple files and projects at the same time.
 
@@ -223,9 +224,32 @@ When you use PyCharm for the first time, the "Projects" section in the general o
 
 ![02_python-pycharm-project.png](assets/images/02_python-pycharm-project.png)
 
-**If you choose to create a new project**, you will be able to specify a Python the project name and location, select virtual environment, and automatically create the `main.py` Python script file.
+
+## First project
+
+**If you choose to create a new project**, you will be able to specify a Python version, provide the project name and location, select virtual environment, and automatically create the `main.py` Python script file.
 
 ![02_python-pycharm-project.png](assets/images/02_python-pycharm-project-create.png)
+
+1. Choose the project location and name your project to create a new directory for it.
+
+2. If collapsed, expand the `Python Interpreter` section and select the method to create a new environment. The most commonj options include:
+* virtualenv
+* pipenv
+* conda
+* poetry  <br><br>
+<span style="color: #ff3870;font-weight: 500;">You can learn more about creating and managing Python environments from the practical tutorial <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-python-setup-locally" target="_blank">Python Setup on your computing machine  ⤴</a> ( see section <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-python-setup-locally#3-manage-python-environments" target="_blank">3. Manage Python environments  ⤴</a> ).</span> <br><br>
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">Python best practice is to create a virtualenv for each project. In most cases, PyCharm create a new virtual environment automatically and you don't need to configure anything. </span>
+</div><br>
+
+3. You can choose to select or deselect the checkbox for the automatic creation of a `main.py` file. Typically this file is intended to contain the code that launches your multi-file application. For a simple project, all your code can exist within this single file. You can keep the name `main.py` or change it for something more meaningful.
+
+4. Click the `Create` button located in the bottom right corner of the dialog window.
+
+
+### *Panels in the project interface*
 
 Once you create a new project in PyCharm, you will be taken to the project interface, which includes several key components:
 
@@ -233,7 +257,7 @@ Once you create a new project in PyCharm, you will be taken to the project inter
 * Project panel (2)
 * Editor panel (3)
 * Navigator Bar (4)
-* Console Panel (5)
+* Panel Manager (5)
 * Status bar (6)
 
 
@@ -256,14 +280,111 @@ Editor panel *(3, pink box)* is typically located in the center of the PyCharm w
 
 Navigator Bar *(4, blue box)* is located at the top of the editor pane, and displays the path to the currently open file. Using the dropdown menu *(folded under three vertically-stacked dots in the top-right corner)*, you can quickly navigate to different files in your project or bookmark open tabs. Above, there is an additional menu bar, allowing you to quickly `run` or `debug` the currently opened file or `search` for classes, files, tools, actions, and settings.
 
-**Console Panel**
+**Panel Manager**
 
-Console Panel *(5, blue box)* The console pane is typically located at the bottom of the PyCharm window, directly below the editor pane. When you run your code, the output will be displayed in the console pane. If you can NOT see the console section in your project view, it is probably collapsed and you can expand it by clicking the "Console" button in the bottom toolbar. There are also other options available such as *Terminal*, *Problems* detected, *Services*, or *Version Control* that can be showed as separate panels in the project view.
+Panel Manager *(5, blue box)* is typically located at the bottom of the PyCharm window, directly below the editor pane. There are many additional panels available such as *Terminal*, *Python Console*, *Problems* detected, *Services*, or *Version Control* that can be showed as separate horizonatl subsection in the project view. If all of them are collapsed try to click on any button to expand its content.
 
 **Status bar**
 
 Status bar *(6, yellow arrow)* is located at the bottom of the PyCharm window. It displays information about your project and the current state of PyCharm. You can customize the information that is displayed in the status bar by right-clicking on it and selecting displayed parameters.
 
+<span style="color: #ff3870;font-weight: 500;">Customize your Project Interface</span>
+
+By default, all additional panel-like features (except *project* and *editor*) are collapsed in the `Panel Manager` bar at the bottom of the window. Once you click on the selected button, for example `Console`, its content will expand as a horizontal panel just below the editor. If you click on the next button, for example `Terminal`, it will switch on the corresponding features.
+
+You can customize the layout of the Project view to your needs.
+* For example, you can `drag & drop` the buttons in the **Panel Manager** to adjust the order.
+* When you `right-click` the selected button, the dialog box will pop up showing you the available options.
+* Each button has a `Move to` option that will help you to pin the corresponding panel in the selected part of the Project window. *This way, you can have more panels opened at once.*
+* You can further `split panels` according to your needs, for example to have two Terminal instances to be in two locations of the file system in the same time.
+* With rhight-click options you can also customize the information displayed on the **Status bar** *(marked with blue)*.
+
+![02_python-pycharm-project-panels.png](assets/images/02_python-pycharm-project-panels.png)
+
+
+## Next or continuing project
+
+PyCharm IDE registers all your projects that you worked on through the IDE interface, so you can quickly jump into your continuing developments in the `Projects` tab. In this section, you can see all the projects that you have created or opened in PyCharm. You can easily switch between projects by clicking on the project name in the list.
+
+![02_python-pycharm-project-reopen.png](assets/images/02_python-pycharm-project-reopen.png)
+
+The `Project` view also allows you to:
+* create a new project,
+* open an existing project, *or*
+* clone a project from a version control system.
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+<b>To create a new project</b>, click the "New Project" button in the toolbar. This will open the New Project dialog, where you can specify the name, location, and other settings for your new project. <br><br>
+<b>To open an existing project</b> off the PyCharm list, click the "Open" button in the toolbar. This will open a file browser where you can select the project you want to open. <br><br>
+If you have enabled version control for your project, you can use the "Get from VCS" button to <b>clone the project from your version control system</b>.
+</span>
+</div><br>
+
+
+### *Add a new file*
+
+In the `Project` panel *(left side)* you can display the **Project tools** options using the right-click on your mouse. From the menu window, select (1) `New`, followed by (2) `Python File` and in (3) the <i>"New Python file"</i> dialog box enter the name of a new file. This will add a new empty file to your project *(visible in the project panel)* and open it automatically as a new tab in the editor panel.
+
+![02_python-pycharm-project-file.png](assets/images/02_python-pycharm-project-file.png)
+
+
+### *Tip of the day*
+
+The ***Tip of the Day*** is a feature in PyCharm that displays a useful tip or trick about the IDE or Python development in general every time you start a project in the IDE. By default, only one tip is displayed at a time. However, you can click the `Next` button to explore as many tips as you wish. The `Tips` dialog window is enabled by default, but once you are done with learning you can choose to turn it off by checking the <i>"Don't show tips on startup"</i> box. *This will prevent the tips from appearing every time you start PyCharm.*
+
+![02_python-pycharm-project-tips.png](assets/images/02_python-pycharm-project-tips.png)
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+The tips presented in the <b>"Tip of the Day"</b> feature are meant to help users become more proficient in using PyCharm and developing in Python. It is smart to spend a few minutes exploring these tips every day to enhance your fluency with the IDE features. <br><br>
+You can <b>access the tips at any time</b> by going to the "Tip of the Day" section in the PyCharm Help menu.
+</span>
+</div><br>
+
+---
+
+# 3. Writing Python Code with PyCharm's Features
+
+In this section we will focus on features available in the **Editor Panel** of the Project view in PyCharm. It offers a wide range of built-in features to make coding easier and more efficient.
+
+<div style="background: #dff5b3; padding: 15px;">
+<span style="font-weight:800;">NOTE:</span>
+<br><span style="font-style:italic;">The file editor area in PyCharm is where you can view and edit the contents of your project files. It includes a variety of features to help you write and maintain high-quality code.</span>
+</div><br>
+
+![02_python-pycharm-project-editor.png](assets/images/02_python-pycharm-project-editor.png)
+
+Here are some of the most useful options in the PyCharm editor:
+
+1. **SYNTAX HIGHLIGHTING** <br>
+PyCharm automatically highlights different parts of your code with different colors, making it easier to read and understand. <i>For example, statement keywords *(e.g., if, else, and while)*, strings, and comments are all highlighted in different colors.</i>
+
+2. **CODE FOLDING** <br>
+PyCharm lets you fold sections of your code to hide them and make it easier to focus on the parts you're working on. <i>This can be especially helpful for large files or complex code.</i>
+
+3. **LINE NUMBERS** <br>
+PyCharm displays line numbers in the left-hand margin of the editor area. <i>This makes it easy to refer to specific lines of code when debugging or collaborating with others.</i>
+
+4. **CODE FORAMTTING** <br>
+PyCharm provides a variety of options for formatting your code, such as indenting, line wrapping, and spacing. <i>This can help you ensure that your code is consistent and easy to read.</i>
+
+5. **CODE COMPLETION** <br>
+PyCharm provides intelligent code completion suggestions as you type, based on the context of your code. <i>This can save you time and reduce errors by suggesting method names, variable names, and more.</i>
+
+6. **FIND & REPLACE** <br>
+PyCharm includes a powerful search and replace feature that allows you to quickly find and replace text within the current file or across the entire project.
+
+7. **CODE ANALYSIS** <br>
+PyCharm includes a variety of code analysis tools that can help you identify and fix errors, optimize your code, and improve its readability. <**>These tools can highlight syntax errors, unused code, and other issues in your code.</i>
+
+8. **REFACTORING** <br>
+PyCharm provides tools for refactoring your code, such as renaming variables and functions, extracting code into separate functions or classes, and more. <i>This can help you keep your code organized and maintainable.</i>
+
+8. **VERSION CONTROL** <br>
+PyCharm integrates with popular version control systems like Git, allowing you to easily manage your code changes and collaborate with others directly from the editor area.
 
 
 ___
