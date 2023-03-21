@@ -355,37 +355,49 @@ In this section we will focus on features available in the **Editor Panel** of t
 <br><span style="font-style:italic;">The file editor area in PyCharm is where you can view and edit the contents of your project files. It includes a variety of features to help you write and maintain high-quality code.</span>
 </div><br>
 
-![02_python-pycharm-project-editor.png](assets/images/02_python-pycharm-project-editor.png)
-
+![02_python-pycharm-project-editor.png](assets/images/02_python-pycharm-project-editor.png)<br>
 Here are some of the most useful options in the PyCharm editor:
 
 1. **SYNTAX HIGHLIGHTING** <br>
-PyCharm automatically highlights different parts of your code with different colors, making it easier to read and understand. <i>For example, statement keywords *(e.g., if, else, and while)*, strings, and comments are all highlighted in different colors.</i>
+PyCharm automatically highlights different parts of your code with different colors, making it easier to read and understand. <i>For example, statement keywords *(e.g., def, if, else, while)*, strings *('text')*, and comments *(#)* are all highlighted in different colors (See Figure below).</i>
 
 2. **CODE FOLDING** <br>
-PyCharm lets you fold sections of your code to hide them and make it easier to focus on the parts you're working on. <i>This can be especially helpful for large files or complex code.</i>
+PyCharm lets you fold sections of your code to hide them and make it easier to focus on the parts you're working on. <i>This can be especially helpful for large files or complex code.</i> <br>
+![02_python-pycharm-folding-code.gif](assets/images/02_python-pycharm-folding-code.gif)
 
 3. **LINE NUMBERS** <br>
-PyCharm displays line numbers in the left-hand margin of the editor area. <i>This makes it easy to refer to specific lines of code when debugging or collaborating with others.</i>
+PyCharm displays line numbers in the left-hand margin of the editor area (see the Figure above). <i>This makes it easy to refer to specific lines of code when debugging or collaborating with others.</i>
 
 4. **CODE FORAMTTING** <br>
-PyCharm provides a variety of options for formatting your code, such as indenting, line wrapping, and spacing. <i>This can help you ensure that your code is consistent and easy to read.</i>
+PyCharm provides a variety of options for formatting your code, such as indenting, line wrapping, and spacing. <i>This can help you ensure that your code is consistent and easy to read.</i> <br><br>
+In `PyCharm` top menu, you can find the "Editor" configuration window by selecting the `Settings` or `Preferences` option, depending on your operating system. <br>
+![02_python-pycharm-project-formatting.png](assets/images/02_python-pycharm-project-formatting.png) <br>
+You can customize formatting preferences to match your coding style and improve the readability of your code. These are just a few of the many formatting options available in PyCharm:
+* **Indentation**, choose between tabs and spaces for indentation
+* **Line wrapping**, automatically wrap long lines of code to make them more readable (set the preffered line length)
+* **Code alignment**, align code elements such as assignment operators or function parameters to make the code more consistent and readable
+* **Code spacing**, add or remove spaces around operators, parentheses, and other code elements
+* **Code commenting**, select options for commenting out code, including single-line and multi-line comments
 
 5. **CODE COMPLETION** <br>
-PyCharm provides intelligent code completion suggestions as you type, based on the context of your code. <i>This can save you time and reduce errors by suggesting method names, variable names, and more.</i>
+PyCharm provides intelligent code completion suggestions as you type, based on the context of your code. <i>This can save you time and reduce errors by suggesting method names, variable names, and more.</i> <br>
+![02_python-pycharm-project-completion.png](assets/images/02_python-pycharm-project-completion.png)
 
 6. **FIND & REPLACE** <br>
-PyCharm includes a powerful search and replace feature that allows you to quickly find and replace text within the current file or across the entire project.
+PyCharm includes a powerful search and replace feature that allows you to quickly find and replace text within the current file or across the entire project. *To display the "find-replace" menu bar, use* `ctrl+R` or `cmd+R` *keys.* <br>
+![02_python-pycharm-project-replace.png](assets/images/02_python-pycharm-project-replace.png)
 
 7. **CODE ANALYSIS** <br>
-PyCharm includes a variety of code analysis tools that can help you identify and fix errors, optimize your code, and improve its readability. <**>These tools can highlight syntax errors, unused code, and other issues in your code.</i>
+PyCharm includes a variety of code analysis tools that can help you identify and fix errors, optimize your code, and improve its readability. <i>These tools can highlight syntax errors, unused code, and other issues in your code.</i> <br>
+![02_python-pycharm-project-inspection.png](assets/images/02_python-pycharm-project-inspection.png)
 
 8. **REFACTORING** <br>
-PyCharm provides tools for refactoring your code, such as renaming variables and functions, extracting code into separate functions or classes, and more. <i>This can help you keep your code organized and maintainable.</i>
+PyCharm provides tools for refactoring your code, such as renaming variables and functions, extracting code into separate functions or classes, and more. <i>This can help you keep your code organized and maintainable.</i> <br>
+![02_python-pycharm-project-refactor.png](assets/images/02_python-pycharm-project-refactor.png)
 
 8. **VERSION CONTROL** <br>
-PyCharm integrates with popular version control systems like Git, allowing you to easily manage your code changes and collaborate with others directly from the editor area.
-
+PyCharm integrates with popular version control systems like Git, allowing you to easily manage your code changes and collaborate with others directly from the editor area. <br>
+![02_python-pycharm-project-vcs.png](assets/images/02_python-pycharm-project-vcs.png)
 
 ___
 # Further Reading
