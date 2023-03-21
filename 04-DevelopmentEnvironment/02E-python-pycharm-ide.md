@@ -399,6 +399,66 @@ PyCharm provides tools for refactoring your code, such as renaming variables and
 PyCharm integrates with popular version control systems like Git, allowing you to easily manage your code changes and collaborate with others directly from the editor area. <br>
 ![02_python-pycharm-project-vcs.png](assets/images/02_python-pycharm-project-vcs.png)
 
+
+<span style="color: #ff3870;font-weight: 500;">To learn more about programming in Python, see tutorials in section <a href="https://datascience.101workbook.org/05-IntroToProgramming/00-IntroToProgramming-LandingPage" target="_blank">05. Introduction to Programming / 3. Introduction to Python Programming  ⤴</a></span>
+* <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/01-introduction-to-python" target="_blank">Introduction to Python Programming  ⤴</a>
+* <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/03-tutorial-read-write-files" target="_blank">Read and Write Data Files  ⤴</a>
+* <a href="https://datascience.101workbook.org/07-DataParsing/02-DATA-MANIPULATION/02-PYTHON/01-manipulate-data-with-python" target="_blank">Manipulating Text Files with Python  ⤴</a>
+* <a href="https://datascience.101workbook.org/08-DataVisualization/02-GRAPHS/02-PYTHON/01-interactive-graphing-with-python" target="_blank">Plotly-Dash: Data Processing & Interactive Plotting with Python  ⤴</a>
+
+---
+
+# 4. Running & Debugging Your Code
+
+PyCharm provides powerful tools and features that help streamline the development process and make coding in Python easier and more efficient. One of the most important aspects of any IDE is the ability to run and debug code, and PyCharm is no exception. **In this tutorial section, we will walk you through the process of running and debugging Python code in PyCharm.**
+
+## Run the code
+
+There are several ways to run Python code in PyCharm, including (1) using the Run button, (2) the context menu, (3) the Run menu, and (4) custom run configurations. All of these options are easy to use and provide a lot of flexibility for running your Python code in PyCharm.
+
+**1. Running code using the Run button:**
+
+The simplest way to run Python code in PyCharm is to `click on the Run button`, which is located in the top-right corner of the editor window.
+
+![02_python-pycharm-project-run.png](assets/images/02_python-pycharm-project-run.png)
+
+When you click on this button, PyCharm will automatically run your code and display the output in the **Run tool window**, which is located at the bottom of the IDE.
+
+![02_python-pycharm-project-run-window.png](assets/images/02_python-pycharm-project-run-window.png)
+
+*To use this option, simply open the Python file you want to run in the editor, and click on the Run button. If you prefer using keyboard shortcuts, you can press* `Shift + F10` or `ctrl + R` *(on mac) to run the current file.*
+
+**2. Running code from the context menu:**
+
+Another way to run Python code in PyCharm is to use the context menu. To do this, `right-click on the Python file` you want to run in the project explorer, and select "Run filename.py" from the context menu. PyCharm will then run the file and display the output in the Run tool window.
+
+![02_python-pycharm-project-run-context.png](assets/images/02_python-pycharm-project-run-context.png)
+
+**3. Running code from the Run menu:**
+
+PyCharm also provides a `Run menu`, which you can use to run Python code. To access this menu, go to **"Run"** in the main menu bar and select `Run filename.py`. This will run your code and display the output in the **Run tool window**.
+
+![02_python-pycharm-project-run-menu.png](assets/images/02_python-pycharm-project-run-menu.png)
+
+
+**4. Running code within built-in Terminal or Python Console:**
+
+Finally, PyCharm has a built-in terminal and Python console that you can use to run Python code.
+
+When you run Python code using the Run button, the context menu, or the Run menu, PyCharm executes the code in the built-in `Python console` by default. This console is a full-featured interactive interpreter that allows you to execute Python code and see the results in real-time. You can access the console by clicking on the "Python Console" tab in the bottom panel of the IDE.
+
+![02_python-pycharm-project-console.png](assets/images/02_python-pycharm-project-console.png)
+
+If you want to run Python code in a terminal instead of the Python console, you can do so. You can access the built-in terminal by clicking on the `Terminal` tab in the bottom panel of the IDE. By default you will be located in the current project directory with the same environment loaded.
+
+![02_python-pycharm-project-terminal.png](assets/images/02_python-pycharm-project-terminal.png)
+
+You can run your Python code the same way you do it in the separate Terminal window:
+```
+python main.py
+```
+
+
 ___
 # Further Reading
 * [R Programming Environment](03-r-programming-environment.md)
