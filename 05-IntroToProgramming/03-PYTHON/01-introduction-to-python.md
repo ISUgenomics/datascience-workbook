@@ -89,41 +89,488 @@ These are just a few examples of the many online resources that are available fo
 
 <span style="color: #ff3870;font-weight: 500;">If you are starting your Python adventure from scratch, it is worthwhile to develop your skills gradually strengthening them over time. In that case, it's best to follow this tutorial in order.</span>
 
-## **1. Set up Development Environment (DE)**
-To start programming in Python you need the development environment, where you will create and test your code.
-There are several ways to set up a Python programming environment, depending on your needs and preferences. You can learn the details from the comprehensive introduction to <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02-python-programming-environment" target="_blank">Python programming environment  ⤴</a>, provided in the section <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/00-DevelopmentEnvironment-LandingPage" target="_blank">04. Development Environment  ⤴</a> of this <a href="https://datascience.101workbook.org/" target="_blank">workbook  ⤴</a>. You can also stay here and enhance your experience by following the step-by-step guide.
+1. [Learn Python basics using online platform](#1-learn-python-basics-using-online-platform)
+2. [Get Python locally and start coding in the IDE](#2-get-python-locally-and-start-coding-in-the-ide)
+
+## 1. Learn Python basics using online platform
+
+Using an online platform for Python programming can be a convenient and accessible way to write and run Python code, especially if you are just starting out with the language or don't want to install anything on your local computer.
 
 
-### *A. First, try the online platform*
-
-Overall, using an online platform for Python programming can be a convenient and accessible way to write and run Python code, especially if you are just starting out with the language or don't want to install anything on your local computer. This choice provides you with:
+Starting your Python learning journey with online platform provides you with:
 * <b>convenience & accessibility</b>, *write and run Python code from any device with an internet connection, without the need to install any software (including Python)*
 * <b>no setup required</b>, *you can start writing and running code right away; this can be especially useful if you are just starting out with Python and don't want to spend time setting up a development environment.*
 * <b>collaboration</b>, *useful even for advanced users, e.g., if you are working on a team or sharing your code with others*
 
-There are many online platforms that allow you to write and run Python code directly in your web browser. Several examples are described in the section <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02-python-programming-environment#2-online-coding-platforms" target="_blank">2. Online coding platforms  ⤴</a> of the <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02-python-programming-environment" target="_blank">Python programming environment  ⤴</a> tutorial. For our hands-on exercise we select the <a href="https://www.pythonanywhere.com/" target="_blank">PythonAnywhere  ⤴</a> web platform [by Anaconda], using its basic plan to get started with Python coding for free. <br>
-*If you want to start right away without creating any free account, open the Python console online at <a href="https://www.python.org/shell/" target="_blank">https://www.python.org/shell/  ⤴</a> and go straight to **example 1**.*
+There are many online platforms that allow you to write and run Python code directly in your web browser. Several examples are described in the section <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02-python-programming-environment#2-online-coding-platforms" target="_blank">2. Online coding platforms  ⤴</a> of the <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02-python-programming-environment" target="_blank">Python programming environment  ⤴</a> tutorial. For this hands-on exercise I select the <a href="https://www.python.org/shell/" target="_blank">Python Console  ⤴</a> web platform [by Python], to start right away without creating any account.
 
-**1. Open a new tab in your browser and paste the URL: <a href="https://www.pythonanywhere.com" target="_blank">https://www.pythonanywhere.com  ⤴</a>** *(or simply click-on the link)*
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+If you want to keep your projects online for future reuse, open the <a href="https://www.pythonanywhere.com/" target="_blank">PythonAnywhere  ⤴</a> online platform and create the account (using its basic plan) to get started with Python coding for free. <br><br>
+Follow the step-by-step guide in the tutorial <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-python-online-console" target="_blank">Online Console: simple Python code in a browser  ⤴</a> to create the free account and get started with Python.
+</span>
+</div><br>
+
+You can also stay here and enhance your experience by following the step-by-step guide while coding in the default online Python Console.
+
+**Open a new tab in your browser and paste the URL: <a href="https://www.python.org/shell/" target="_blank">https://www.python.org/shell/  ⤴</a>** *(or simply click-on the link)*
 
 * You will see the webpage interface, shown on the screenshoot below
-* You can watch the one-minute video to learn about the features
+* You can start typing directly in this online console to try your Python skills
 
-![PythonAnywhere](../assets/images/03_python-anywhere.png) <br><br>
+![Python Console Online](../../05-IntroToProgramming/assets/images/03_python-online-console.png) <br><br>
 
-**2. Click-on the green button:** <span style="background-color: green; color: white;">Start running Python online</span> **and then** <span style="background-color: #5bc0de; color: white;">Create a Beginner account</span> **for free** <br>
+## **Basic Concepts**
 
-![PythonAnywhere](../assets/images/03_python-anywhere-account.png) <br><br>
+1. [Variables](#variables) and [Data Types](#data-types) <br>
+<i>In Python, you can assign values to variables using the <b>=</b> operator. <br>Python has several data types, including integers, floats, strings, and booleans.</i>
+2. [Operators](#operators) <br>
+<i>Python has several operators, including: <br> - arithmetic operators (+, -, *, /), <br> - comparison operators (>, <, ==), and <br> - logical operators (and, or, not).</i>
+3. [Control Flow](#control-flow) <br>
+<i>Control flow statements allow you to control the flow of your program. Some common control flow statements in Python include: <b>if/else</b> statements, <b>for</b> and <b>while</b> loops.</i>
+4. [Functions](#functions) <br>
+<i>Functions are reusable blocks of code that perform a specific task. You can define your own functions in Python using the <b>def</b> keyword.</i>
+5. [Classes](#classes) <br>
+<i>A class is a blueprint for creating objects of specific type. Classes are defined using the <b>class</b> keyword.</i>
 
-**3. Once registered, take a tour to get a quick overview**
 
-![PythonAnywhere](../assets/images/03_python-anywhere-guide.png) <br><br>
+## *Variables*
 
-**4. Click-on the `New console: >>> Python` and select version `3.9`** <br>
+Variables are used to store data in memory so that it can be accessed and manipulated later. In Python, you can create a variable by simply assigning a value to a name:
+```
+x = 42
+```
+*In this example, we create a variable called "x" and assign it the value 42. The value of this variable is stored in the memory of the program so you can ask for this value anytime.*
 
-**5. Follow hands-on examples to create your first Python code** <br>
+You can create variables of various [data types](#data-types).
+* Regardless of the type of data, always assign the value of a variable with the use of the `=` character.
+* In Python, you don't have to declare the type of a variable when you create it
 
-<p align="center"><img width="800" src="../assets/images/03_python-anywhere.gif"></p>
+## *Data Types*
+
+Python has several built-in data types, including:
+* **integers**, e.g., *42*
+* **floating-point numbers**, e.g., *3.14*
+* **strings**, e.g., <i>"Hello, world!"</i>
+* **booleans**, e.g., *True* or *False*
+
+You can check the data type of a variable using the `type()` function:
+```
+x = 42
+print(type(x))           # Output: <class 'int'>
+```
+
+## *Operators*
+
+Python has several built-in operators that you can use to perform operations on variables.
+
+<details><summary><b>Arithmetic</b></summary>
+
+<table>
+  <tr><th>Operator</th><th>Description</th></tr>
+  <tr><td>+</td><td>Adds two numbers together</td></tr>
+  <tr><td>-</td><td>Subtracts the second number from the first</td></tr>
+  <tr><td>*</td><td>Multiplies two numbers together</td></tr>
+  <tr><td>/</td><td>Divides the first number by the second</td></tr>
+  <tr><td>//</td><td>Performs integer division</td></tr>
+  <tr><td>%</td><td>Returns the remainder of the division</td></tr>
+  <tr><td>**</td><td>Raises the first number to the power of the second</td></tr>
+</table>
+</details>
+
+<details><summary><b>Comparison</b></summary>
+
+<table>
+  <tr><th>Operator</th><th>Description</th></tr>
+  <tr><td>==</td><td>Checks if two values are equal</td></tr>
+  <tr><td>!=</td><td>Checks if two values are not equal</td></tr>
+  <tr><td>&lt;</td><td>Checks if the first value is less than the second</td></tr>
+  <tr><td>&gt;</td><td>Checks if the first value is greater than the second</td></tr>
+  <tr><td>&lt;=</td><td>Checks if the first value is less than or equal to the second</td></tr>
+  <tr><td>&gt;=</td><td>Checks if the first value is greater than or equal to the second</td></tr>
+</table>
+</details>
+
+<details><summary><b>Logical</b></summary>
+
+<table>
+  <tr><th>Operator</th><th>Description</th></tr>
+  <tr><td>and</td><td>Returns True if both conditions are True</td></tr>
+  <tr><td>or</td><td>Returns True if at least one condition is True</td></tr>
+  <tr><td>not</td><td>Returns the opposite boolean value</td></tr>
+</table>
+</details>
+
+<details><summary><b>Membership</b></summary>
+
+<table>
+  <tr><th>Operator</th><th>Description</th></tr>
+  <tr><td>in</td><td>Checks if a value exists in a sequence</td></tr>
+  <tr><td>not in</td><td>Checks if a value does not exist in a sequence</td></tr>
+</table>
+</details>
+
+<details><summary><b>Identity</b></summary>
+
+<table>
+  <tr><th>Operator</th><th>Description</th></tr>
+  <tr><td>is</td><td>Checks if two variables refer to the same object</td></tr>
+  <tr><td>is not</td><td>Checks if two variables do not refer to the same object</td></tr>
+</table>
+</details>
+
+<details><summary><b>Bitwise</b></summary>
+
+Bitwise operators are used to manipulate the individual bits of binary numbers. In computing, binary numbers are numbers expressed in the base-2 numeral system, which uses only two digits (0 and 1) to represent all values. <br>
+<div style="background: #dff5b3; padding: 15px;">
+<span style="font-weight:800;">NOTE:</span>
+<br><span style="font-style:italic;">
+Bitwise operators operate on these binary representations of numbers at the bit level, which means they manipulate the individual bits that make up the binary representation of a number.
+</span>
+</div>
+<table>
+  <tr><th>Operator</th><th>Description</th></tr>
+  <tr><td>&</td><td>Performs a bitwise AND operation</td></tr>
+  <tr><td>^</td><td>Performs a bitwise XOR operation</td></tr>
+  <tr><td>~</td><td>Performs a bitwise NOT operation</td></tr>
+  <tr><td>&lt;&lt;</td><td>Shifts bits to the left</td></tr>
+  <tr><td>&gt;&gt;</td><td>Shifts bits to the right</td></tr>
+</table>
+</details><br>
+
+
+For example, you can use the `+` operator to add two numbers together:
+```
+x = 1
+y = 2
+z = x + y
+print(z)                 # Output: 3
+```
+
+## *Control Flow*
+
+Python has several control flow statements, including:
+* `if`, `elif`, `else` statements
+* `for`, `while`, and `while not` loops
+* `try` - `except` - `finally` error handling
+* `pass`, `continue`, `break` change the flow
+
+
+###  •  *IF-ELIF-ELSE conditional*
+Here's an example of a simple if/else statement:
+```
+x = 42
+if x < 10:
+    print("x is lower than 10")
+elif x > 10 and x < 50:
+    print("x is greater than 10")                 # x is > 10, so this will be printed
+else:
+    print("x is less than or equal to 10")
+```
+
+
+###  •  *FOR-WHILE loop*
+In Python, the `for`, `while`, and `until` loops are used to execute a block of code repeatedly based on a specified condition.
+
+* The `for` loop is used to iterate over a sequence, such as a list or a string.
+* The `while` loop is used to execute a block of code repeatedly as long as a specified **condition is true**.
+* The `while not` loop is used to execute a block of code repeatedly as long as a specified **condition is false**.
+
+<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">WARNING:</span>
+<br><span style="font-style:italic;">
+The <b>until loop</b> is NOT a built-in loop in Python. Instead, it is often used in other programming languages such as Ruby. In Python, a similar behavior can be achieved using a while loop with a negated condition (<b>while not</b>).
+</span>
+</div><br>
+
+**FOR** <br>
+Here's an example of using a for loop to iterate over a list of numbers and print each number:
+```
+numbers = [1, 2, 3, 4, 5]
+
+for num in numbers:
+    print(num)
+```
+*In this example, we create a list of numbers and use a for loop to iterate over each number in the list. The num variable takes on the value of each number in the list in turn, and the print() function is called to output each number to the console.*
+
+**WHILE** <br>
+Here's an example of using a while loop to print the numbers from 1 to 5:
+```
+num = 1
+
+while num <= 5:
+    print(num)
+    num += 1
+```
+*In this example, we use a while loop to execute the block of code as long as the value of the num variable is less than or equal to 5. Inside the loop, we print the value of num to the console and then increment its value by 1.*
+
+**WHILE NOT** *(equivalent to until loop)* <br>
+Here's an example of using a while loop to print the numbers from 1 to 5 using a negated condition:
+```
+num = 1
+
+while not (num > 5):
+    print(num)
+    num += 1
+```
+*In this example, we use a while loop with a negated condition to execute the block of code as long as the value of the num variable is not greater than 5. Inside the loop, we print the value of num to the console and then increment its value by 1.*
+
+
+###  •  *TRY-EXCEPT-FINALLY for errors*
+
+In Python, `try-except-finally` is a powerful mechanism for handling errors and exceptions in Python code that may occur during program execution. By catching and handling errors gracefully, you can ensure that your program does not crash or behave unpredictably in the face of unexpected errors.
+* The `try` block contains the code that may raise an exception.
+* The `except` block contains the code to handle the exception if it occurs.
+* The `finally` is an optional block hat is executed regardless of whether an exception is raised or not.
+
+**EXAMPLE 1:** Here's an example of using try-except to handle a division by zero error:
+```
+numerator = 10
+denominator = 0
+
+try:
+    result = numerator / denominator
+except ZeroDivisionError:
+    print("Error: division by zero")
+```
+*In this example, we attempt to divide the 'numerator' variable by the 'denominator' variable inside a try block. However, since denominator is zero, this will raise a 'ZeroDivisionError'. To handle this error, we use an except block that specifies the type of exception to catch (ZeroDivisionError) and the code to execute when the exception is caught (print("Error: division by zero")).*
+
+**EXAMPLE 2:** Here's an example of using try-except-finally to handle a file I/O error:
+```
+try:
+    file = open("myfile.txt", "r")
+    # do something with the file
+except IOError:
+    print("Error: file not found or could not be read")
+finally:
+    file.close()
+```
+*In this example, we attempt to open a file named "myfile.txt" in read mode inside a try block. However, if the file is not found or could not be read, this will raise an 'IOError'. To handle this error, we use an except block that prints an error message. We also include a finally block that closes the file, regardless of whether an error occurred or not.*
+
+
+###  •  *PASS-CONTINUE-BREAK*
+
+In Python, `pass`, `continue`, and `break` are control statements used to change the flow of a program's execution in a loop or conditional statement.
+
+**PASS** <br>
+The `pass` keyword is used as a placeholder for an empty block of code. It **does nothing** and can be used when you need to have a statement syntactically but do not want to execute any code. <br>
+<i>For example:</i>
+```
+for i in range(5):
+    if i == 2:
+        pass
+    print(i)           # output: 0 1 2 3 4
+```
+<i>Here, when i is equal to 2, the pass statement is executed, but it doesn't do anything. The loop continues to execute, and the output shows that the value 2 was still printed.</i>
+
+<details><summary style="color: #ff3870;""><b>See a tip for <i>pass</i> in try-except block</b></summary>
+
+In Python, <b>pass</b> is often used in <b>try-except</b> error handlers as a placeholder for an empty block of code when no action is required in the event of an exception. <br><br>
+When an error occurs in a try block, Python searches for an appropriate <b>except</b> block to handle the error. In some cases, you may want to catch the error but not take any action when it occurs. In such situations, you can use <b>pass</b> as a placeholder in the except block. This will tell Python to do nothing when the exception occurs, allowing the program to continue executing without interruption. <br><br>
+Here is an example that demonstrates the use of pass in a try-except block:
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+try: <br>
+    &emsp; &emsp; x = int(input("Enter a number: ")) <br>
+    &emsp; &emsp; result = 10 / x <br>
+    &emsp; &emsp; print("The result is:", result) <br>
+except ValueError: <br>
+    &emsp; &emsp; print("Invalid input. Please enter a valid number.") <br>
+    &emsp; &emsp; pass <br>
+except ZeroDivisionError: <br>
+    &emsp; &emsp; print("Cannot divide by zero.") <br>
+    &emsp; &emsp; pass <br>
+</code><br>
+<i>In this example, the <b>try</b> block attempts to get user input and perform a division operation. If the user enters an invalid input or a zero, a "ValueError" or "ZeroDivisionError" will occur, respectively. In each case, the corresponding except block handles the error by printing a message and using pass as a placeholder for an empty block of code.</i>
+</details><br>
+
+
+**CONTINUE** <br>
+The `continue` keyword is used to skip the current iteration of a loop and move on to the next one. <br>
+<i>For example:</i>
+```
+for i in range(5):
+    if i == 2:
+        continue
+    print(i)           # output: 0 1 3 4  ; 2 is skipped
+```
+<i>Here, when i is equal to 2, the continue statement is executed, and the loop skips the rest of the code in that iteration and moves on to the next one. So, the value 2 is not printed.</i>
+
+
+**BREAK** <br>
+The `break` keyword is used to exit a loop prematurely. When break is executed, the loop terminates immediately, and the program continues executing the code that comes after the loop.  <br>
+<i>For example:</i>
+```
+for i in range(5):
+    if i == 2:
+        break
+    print(i)           # output: 0 1  ; all iterations since i = 2 are skipped
+```
+<i>Here, when i is equal to 2, the break statement is executed, and the loop terminates immediately. The program moves on to execute the code that comes after the loop. So, the value 2, as well as 3 and 4, are not printed.</i>
+
+
+## *Functions*
+
+Functions are a way to encapsulate a piece of code so that it can be reused later by calling just a function name and customized arguments. Functions help to make code more modular, easier to read, and reusable.
+
+### *A. Built-in Python functions*
+
+Python comes with a number of built-in functions that can be used directly without the need for any import statements. A comprehensive list of built-in Python functions can be found in the official Python documentation at the following URL: <a href="https://docs.python.org/3/library/functions.html" target="_blank">https://docs.python.org/3/library/functions.html  ⤴</a> *(This page lists all the built-in functions available in Python 3, along with their descriptions and examples of how to use them.)*
+
+Examples of built-in functions include:
+
+| function |  example    | description |
+|----------|-------------|-------------|
+| print()  | `print("Hello, world!")` <br><br> *# output: Hello, world!* | used to output text and variables to the console |
+| input()  | `input("Provide a number:")` <br><br> *# output: Provide a number:* | used to accept user input from the console |
+| len()    | `my_string = "Hello, world!"` <br> `print(len(my_string))` <br><br> *# output: 13* | used to return the length of an object *(e.g. string, list, etc.)* |
+| type()   | `my_list = [1, 2, 3]` <br> `print(type(my_list))` <br><br> *# output: <class 'list'>* | used to return the type of an object *(e.g. int, str, list, etc.)* |
+| range()  | `for i in range(1, 6):` <br>&emsp;  `print(i)` <br><br> *# output: 1 2 3 4 5* | used to generate a sequence of numbers within a specified range |
+| sum()    | `my_list = [1, 2, 3, 4, 5]` <br> `print(sum(my_list))` <br><br> *# output: 15* | used to return the sum of a sequence of numbers |
+| sorted() | `my_list = [3, 1, 4, 2, 5]` <br> `print(sorted(my_list))` <br><br> *# output: [1, 2, 3, 4, 5]* | used to sort the elements of an iterable in ascending or descending order|
+
+
+
+### *B. User-defined functions*
+
+In addition to built-in functions, Python also allows for the definition of custom functions using the `def` keyword.
+
+Here's an example of a custom function that takes two arguments and returns their sum:
+```
+# Define a function that calculates the sum of two numbers
+def add_numbers(x, y):
+    return x + y
+
+# Call the function and print the result
+result = add_numbers(1, 2)
+print(result)                 # Output: 3
+```
+*In this program, we define a function called "add_numbers" that takes two parameters (x and y) and returns their sum. We then call the function with the parameter values 3 and 5, and print the result to the console.*
+
+**Custom functions can also have default parameter values, variable-length argument lists, and keyword arguments.**
+
+Here's an example of a custom function that takes a default parameter value and a variable-length argument list:
+```
+def print_numbers(num1, num2=0, *args):
+    print(num1)
+    print(num2)
+    for num in args:
+        print(num)
+
+print_numbers(1)                           # output: 1 0        ; the second number has a default value
+print_numbers(1, 2, 3, 4, 5)               # output: 1 2 3 4 5  ; the default value of the second parameter is overwritten
+```
+*In this example, we define a function "print_numbers()" that takes two parameters num1 and num2, with num2 having a default value of 0. The function also takes a variable-length argument list *args, which allows for an arbitrary number of additional arguments to be passed to the function. Inside the function, we print the values of num1, num2, and all the additional arguments in args.* <br>
+<i>We then call the print_numbers function with two different sets of arguments: <br>
+ • with the value 1 only - in this call, num1 is 1, num2 is 2, and args contains the values 3, 4, and 5 <br>
+ • with the values 1, 2, 3, 4, and 5 - in this call, num1 is 1 and num2 is default so equal 0, and list of args is empty
+</i>
+
+
+### *C. Imported functions*
+
+In addition to built-in functions and user-defined functions, Python also allows the importation of functions from external modules or libraries. These imported functions can be used in the same way as built-in or user-defined functions.
+
+Python provides several ways to import functions from external modules. The most common way is to use the `import` statement, which allows you to **import an entire module or just specific functions** from that module.
+
+<div style="background: #dff5b3; padding: 15px;">
+<span style="font-weight:800;">NOTE:</span>
+<br><span style="font-style:italic;">
+A <b>module</b> is a file containing Python definitions and statements that can be used in other Python code. <br><br>
+A <b>package</b> is a collection of related modules that can be organized hierarchically.
+</span>
+</div><br>
+
+To use multiple functions from a package, you can **import the entire package** using the `import` statement and then call the functions using the dot `.` notation.
+
+**Example 1:** Let's say we want to use the `sqrt()` function from the **math module** to calculate the square root of a number:
+```
+import math
+
+result = math.sqrt(25)
+print(result)                             # output: 5.0
+```
+*In this example, we import the math module using the import statement and then call the sqrt() function from the math module using the syntax math.sqrt(). This allows us to calculate the square root of the number 25 and store the result in a variable result.*
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+If the name of the package is long or inconvenient you can use a cutomized shortcut with the <b>as</b> keyword:
+</span>
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+import pandas as pd
+</code><br>
+Then, use a shortcut instead of the full name in your code:
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+my_dataframe = pd.DataFrame({'col1': [1, 2], 'col2': [3, 4]}) <br>
+print(my_dataframe)
+</code><br>
+<i># output:</i> <br>
+ &emsp; &emsp; col1 &emsp;  col2 <br>
+0 &emsp; &emsp; 1 &emsp; &emsp; 3 <br>
+1 &emsp; &emsp; 2 &emsp; &emsp; 4
+</div><br>
+
+Instead of importing an entire module, you can **import only a specific function** from the module using the from keyword.
+
+**Example 2:** Let's say we only want to use the sqrt() function from the math module:
+```
+from math import sqrt
+
+result = sqrt(25)
+print(result)                             # output: 5.0
+```
+*In this example, we use the from keyword to import only the sqrt() function from the math module. This allows us to call the sqrt() function directly without having to use the math prefix.*
+
+
+## *Classes*
+
+In Python, a class is a blueprint for creating objects, which are instances of the class. Classes are defined using the `class` keyword, followed by the *class name* and a colon, and then the body of the class, which contains its **attributes** (variables) and **methods** (functions).
+
+Here's an example of creating a simple Person class in Python:
+```
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def get_name(self):
+        return self.name
+
+    def get_age(self):
+        return self.age
+
+    def set_age(self, new_age):
+        self.age = new_age
+```
+In this example, we define a **Person class** with four methods:
+* `__init__`, a special method that is called when a new instance of the class is created <br>
+<i>It takes two parameters, "name" and "age", and initializes the instance attributes <b>self.name</b> and </b>self.age</b> with these values.</i>
+* `get_name`, a simple getter method that return the value of the "name"
+* `get_age`, a simple getter method that return the value of the "age"
+* `set_age`, a setter method that takes a new age value and sets the <b>self.age</b> instance attribute to this new value.
+
+With this `Person class` defined, we can **create instances of it (objects), like so:
+```
+person1 = Person("Alice", 25)
+person2 = Person("Bob", 30)
+```
+*We just created two instances of the Person class, person1 and person2, with different name and age values.*
+
+We can now call the methods of these instances to get and set their attributes:
+```
+print(person1.get_name())                 # output: Alice
+print(person1.get_age())                  # output: 25
+
+person1.set_age(30)
+print(person1.get_age())                  # output: 30
+```
+
+## Writing Your First Python Program
+
+Now that you have a basic understanding of Python, it's time to try your Python skills!
+
+### **Examples**
 
 Here are a few simple examples of Python code that you can try out:
 
@@ -137,7 +584,7 @@ print("Hello, world!")
 
 ![](../assets/images/03_python-anywhere_ex1.png)<br>
 
-***Example 2A:*** *Storing and manipulating data in variables:*
+***Example 2:*** *Storing and manipulating data in variables:*
 
 ```
 x = 10
@@ -150,7 +597,7 @@ print(x, y)
 
 ![](../assets/images/03_python-anywhere_ex2A.png)<br>
 
-***Example 2B:*** *Perform some basic arithmetic operations:*
+***Example 3:*** *Perform some basic arithmetic operations:*
 
 ```
 z = x + y
@@ -164,7 +611,17 @@ print(z)
 
 ![](../assets/images/03_python-anywhere_ex2B.png)<br>
 
-***Example 3:*** *Defining and calling a function:*
+***Example 4:*** *Calling a built-in function:*
+
+```
+name = input("What is your name? ")
+print("Hello, " + name + "!")
+```
+
+*This code prompts the user for their name using a built-in input() function and then greets them. The input() function prints the message on the console and wait antil user type the input data.*
+
+
+***Example 5:*** *Defining and calling a custom function:*
 
 ```
 def greet(name):
@@ -183,7 +640,7 @@ greet("Bob")
 
 ![](../assets/images/03_python-anywhere_ex3.png)<br>
 
-***Example 4:*** *Call function in a loop:*
+***Example 6:*** *Call function in a loop:*
 
 ```
 names = ["Alice", "Bob", "Kathy", "Tim", "Hannah", "Adam", "Tina", "Eric", "Anna", "Sam"]
@@ -196,7 +653,7 @@ for name in names:
 
 ![](../assets/images/03_python-anywhere_ex4.png)<br>
 
-***Example 5:*** *Task for you!*
+***Example 7:*** *Task for you!*
 
 1. Using a for loop, create a list of 100 names by adding a digit from 0 to 9 to each name.
 2. Using a for loop, print greeting for each name.
@@ -218,7 +675,7 @@ for name in names100:
 
 ![](../assets/images/03_python-anywhere_ex5.png)<br>
 
-***PRO solution for example 5***
+***PRO solution for example 7***
 
 Python definitely has more built-in functions than `print()`. Knowing that others exist can make code development very easy. *Why reinvent the wheel?*
 
@@ -276,31 +733,54 @@ y = str(x)
 print(y)              # Output: "3.14159"
 ```
 
+<span style="color: #ff3870;font-weight: 500;">If you have completed all the examples provided and successfully solved the assignment task, you should now be ready to start coding in Python on your own computer, which means you will need to download and set up Python locally.</span>
 
-### *B. Get Python locally and use interactive shell*
+
+## 2. Get Python locally and start coding in the IDE
+
+Before you start programming in Python, you need to install Python and set up the development environment on your computing machine. Expolore sections provided below to select the best option for you!
+
+## Get Python locally
+
+First, you need to download and install Python on your computer. You can download the latest version of Python from the official website: <a href="https://www.python.org/downloads/" target="_blank">https://www.python.org/downloads/  ⤴</a>
+
+<span style="color: #ff3870;font-weight: 500;">Follow the practical guide in the tutorial <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-python-setup-locally" target="_blank">Local Python setup on your computing machine (installation needed)  ⤴</a> to get and set up Python.</span>
+
+## Set up Development Environment (DE)
+
+**To start programming in Python on your local machine, you need the development environment, where you will create and test your code.** There are several ways to set up a Python programming environment, depending on your needs and preferences.
+
+<span style="color: #ff3870;font-weight: 500;"> You can learn the details from the comprehensive introduction to <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02-python-programming-environment" target="_blank">Python programming environment  ⤴</a>, provided in the section <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/00-DevelopmentEnvironment-LandingPage" target="_blank">04. Development Environment  ⤴</a> of this <a href="https://datascience.101workbook.org/" target="_blank">workbook  ⤴</a>.</span>
+
+### *A. Use Python interactive shell* - beginner
 In the simplest scenario, you need a command line interface, which can be opened in the terminal *(Linux, macOS)* or Command Prompt *(Windows)*.
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
-If you are a beginner, it may be beneficial for you to start with the tutorials provided in section <a href="https://datascience.101workbook.org/02-IntroToCommandLine/00-IntroToCommandLine-LandingPage" target="_blank">02. Introduction to Command Line  ⤴</a>. This tutorial will guide you through the process of setting up your command line and familiarizing yourself with the fundamental concepts of Unix.
+If you are a beginner in command line, it may be beneficial for you to start with the tutorials provided in section <a href="https://datascience.101workbook.org/02-IntroToCommandLine/00-IntroToCommandLine-LandingPage" target="_blank">02. Introduction to Command Line  ⤴</a>. This tutorial will guide you through the process of setting up your command line and familiarizing yourself with the fundamental concepts of Unix.
 </span>
 </div><br>
 
-<span style="color: #ff3870;">New content coming soon!</span>
+<span style="color: #ff3870;font-weight: 500;"> You can learn the details from the comprehensive introduction to <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02B-python-terminal-shell" target="_blank">Shell & IDLE: create Python code in a terminal or simple IDE (beginner)  ⤴</a>, provided in the section <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/00-DevelopmentEnvironment-LandingPage" target="_blank">04. Development Environment  ⤴</a> of this <a href="https://datascience.101workbook.org/" target="_blank">workbook  ⤴</a>.</span>
 
-### *C. Use simple text editor: nano, vim, mcedit*
-Once you familiarize yourself with Python basics, you can try to develop a simple Python script in any text editor.
+### *B. Use simple text editor: nano, vim, mcedit* - intermediate
+Once you familiarize yourself with Python basics in the interactive shell, you can try to develop a simple Python script in any text editor. When working on a remote machine, it may not always be convenient or feasible to use a graphical user interface (GUI) text editor (e.g., PyCharm). In such cases, using a built-in text editor in the terminal can be a quick and easy way to make changes to a Python script.
 
-<span style="color: #ff3870;">New content coming soon!</span>
+<span style="color: #ff3870;font-weight: 500;"> You can learn the details from the comprehensive introduction to <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02C-python-text-editor" target="_blank">Text editors: create Python code in terminal text files (intermediate)  ⤴</a>, provided in the section <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/00-DevelopmentEnvironment-LandingPage" target="_blank">04. Development Environment  ⤴</a> of this <a href="https://datascience.101workbook.org/" target="_blank">workbook  ⤴</a>.</span>
 
-### *D. Use Interactive Development Environment: Jupyter Lab*
+### *C. Use Interactive Development Environment: Jupyter Lab* - advanced
 
-<span style="color: #ff3870;">New content coming soon!</span>
+Using Jupyter Notebook and Jupyter Lab, you can perform interactive data analysis with visualization by creating Python notebooks that combine code, visualizations, and narrative text. You can use popular Python libraries such as NumPy, Pandas, Matplotlib, and Seaborn to import, manipulate, analyze, and visualize data.
 
-### *E. Use Integrated Development Environment: VSC, pyCharm*
+<span style="color: #ff3870;font-weight: 500;"> You can learn the details from the comprehensive introduction to <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02D-python-jupyter-notebook" target="_blank">Jupyter Lab: create an interactive Python notebook (advanced)  ⤴</a>, provided in the section <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/00-DevelopmentEnvironment-LandingPage" target="_blank">04. Development Environment  ⤴</a> of this <a href="https://datascience.101workbook.org/" target="_blank">workbook  ⤴</a>.</span>
 
-<span style="color: #ff3870;">New content coming soon!</span>
+### *D. Use Integrated Development Environment: VSC or PyCharm* - professional
+
+If you're developing a more complex Python project that includes multiple modules or a web application, then using a professional Integrated Development Environment (IDE) such as PyCharm can be the best choice. PyCharm is a powerful IDE that provides a range of advanced features and tools for Python development, including code analysis, debugging, testing, and refactoring. <br>
+*Beginners may want to start with a simpler text editor until they feel comfortable with the basics of Python programming.*
+
+<span style="color: #ff3870;font-weight: 500;"> You can learn the details from the comprehensive introduction to <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02E-python-pycharm-ide" target="_blank">PyCharm: IDE for Professional Python Developers (professional)  ⤴</a>, provided in the section <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/00-DevelopmentEnvironment-LandingPage" target="_blank">04. Development Environment  ⤴</a> of this <a href="https://datascience.101workbook.org/" target="_blank">workbook  ⤴</a>.</span>
 
 ___
 # Further Reading
