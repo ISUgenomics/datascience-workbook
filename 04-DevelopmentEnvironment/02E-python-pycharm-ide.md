@@ -506,7 +506,7 @@ A breakpoint is a tool that allows you to pause the execution of your Python cod
 
 When you run the program and it reaches that line, it will pause execution and display the current state of the program. You can then use various tools to inspect the program's state and diagnose any issues, including the Debug Console, Watches, and Variables panels.
 
-<details><summary><b><i><span style="color: #ff3870;"">See the steps to set a breakpoint</span></i></b></summary>
+<details><summary><b><i><span style="color: #ff3870;">See the steps to set a breakpoint</span></i></b></summary>
 
 <b>1.</b> Open the Python file you want to debug in PyCharm. <br>
 <b>2.</b> Navigate to the line of code where you want to set the breakpoint. <br>
