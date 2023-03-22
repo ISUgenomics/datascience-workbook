@@ -57,10 +57,10 @@ If you're new to PyCharm and want to get started with this powerful Python IDE, 
 2. **[Creating Project](#2-creating-project)** <br>
 <i>We'll walk you through the process of creating a new PyCharm project, choosing a project interpreter, and configuring project settings.</i>
 
-3. **[Writing Python Code with PyCharm's Features](#writing-python-code-with-pycharms-features)** <br>
+3. **[Writing Python Code with PyCharm's Features](#3-writing-python-code-with-pycharms-features)** <br>
 <i>We'll explore some of PyCharm's powerful features while coding in Python, including code completion, syntax highlighting, code navigation, and more.</i>
 
-4. **[Running & Debugging Your Code]()** <br>
+4. **[Running & Debugging Code](#4-running--debugging-code)** <br>
 <i>We'll show you how to run and debug your code, and use PyCharm's built-in test runner to test your code.</i>
 
 ---
@@ -206,17 +206,42 @@ The `Learn` section in PyCharm provides a variety of resources and tools to help
 
 Here are some of the features that are included in this section:
 
-1. **Educational Tools** <br>
+**1. Educational Tools** <br>
 PyCharm provides built-in **support for the Python programming** language *("Learn to program")* and offers an educational tool called "PyCharm Edu" which is aimed at beginners. This tool offers interactive courses, lessons, and exercises to help users learn Python in a structured and interactive way. <br><br>
 ![02_python-pycharm-learn.png](assets/images/02_python-pycharm-learn.png)
 
-2. **Code Examples** <br>
+**2. Code Examples** <br>
 PyCharm offers a collection of code examples for various programming languages and frameworks. These examples are intended to provide users with practical examples of **how to use PyCharm's features** to solve common coding problems. <br><br>
 ![02_python-pycharm-learn.png](assets/images/02_python-pycharm-learn2.png)
 
-3. **Videos** <br>
+**3. Educational Videos** <br>
 PyCharm offers a collection of video tutorials and webinars covering a wide range of topics related to programming and software development. These videos can be a useful resource for users who prefer to learn through visual demonstrations. <br><br>
 <a href="https://www.youtube.com/playlist?list=PLCTHcU1KoD99eyuXqUJHZy90-9jU2H2Y2" target="_blank">PyCharm by JetBrains: Quick Tips & Tricks  ⤴</a>
+
+**4. Shortcuts** <br>
+One of the resources available in the `Learn` tab is a **Keyboard Shortcuts** cheat sheet in PDF format.
+
+<div style="background: #dff5b3; padding: 15px;">
+<span style="font-weight:800;">NOTE:</span>
+<br><span style="font-style:italic;">
+Keyboard shortcuts are combinations of keys that perform certain functions in PyCharm, such as opening a file, running a program, or debugging code. Knowing and using keyboard shortcuts can save time and make coding more efficient.
+</span>
+</div><br>
+
+The Keyboard Shortcuts cheat sheet in PyCharm provides a comprehensive list of keyboard shortcuts that are available in PyCharm, along with a brief description of each shortcut's function.
+
+*This cheat sheet can be opened on demand anytime you need it, by clicking on the "Keyboard Shortcuts" link in the "Learn" tab.*
+
+![02_python-pycharm-project-shortcuts.png](assets/images/02_python-pycharm-project-shortcuts.png)
+
+<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">WARNING:</span>
+<br><span style="font-style:italic;">
+The keyboard shortcuts may differ depending on the operating system and PyCharm configuration being used. Consult the Keyboard Shortcuts cheat sheet in your PyCharm instance to find the right shortcuts for your specific setup.
+</span>
+</div>
+
+---
 
 # 2. Creating Project
 
@@ -408,7 +433,7 @@ PyCharm integrates with popular version control systems like Git, allowing you t
 
 ---
 
-# 4. Running & Debugging Your Code
+# 4. Running & Debugging Code
 
 PyCharm provides powerful tools and features that help streamline the development process and make coding in Python easier and more efficient. One of the most important aspects of any IDE is the ability to run and debug code, and PyCharm is no exception. **In this tutorial section, we will walk you through the process of running and debugging Python code in PyCharm.**
 
@@ -458,6 +483,75 @@ You can run your Python code the same way you do it in the separate Terminal win
 python main.py
 ```
 
+## Debug the code
+
+PyCharm provides a comprehensive set of tools for debugging Python code, and it can greatly improve your development workflow by helping you diagnose issues quickly and efficiently.
+
+Here are some of the options you can use to debug Python code in PyCharm:
+
+**1. Setting Breakpoints**
+
+You can set breakpoints at specific lines of code in your Python program, which will pause the program's execution when it reaches that line.
+
+<div style="background: #dff5b3; padding: 15px;">
+<span style="font-weight:800;">NOTE:</span>
+<br><span style="font-style:italic;">
+A breakpoint is a tool that allows you to pause the execution of your Python code at a specific line or point in the code, allowing you to examine the state of your program at that moment.
+</span>
+</div><br>
+
+*To set a breakpoint in PyCharm, you can click on the line number in the editor where you want to pause execution. This will add a red dot to the line, indicating that a breakpoint has been set. You can also the key shortcut or use the `Run` menu on the top and select "Toggle Breakpoint".*
+
+![02_pycharm_breakpoint.gif](assets/images/02_pycharm_breakpoint.gif)
+
+When you run the program and it reaches that line, it will pause execution and display the current state of the program. You can then use various tools to inspect the program's state and diagnose any issues, including the Debug Console, Watches, and Variables panels.
+
+<details><summary><b><i><span style="color: #ff3870;"">See the steps to set a breakpoint</span></i></b></summary>
+
+<b>1.</b> Open the Python file you want to debug in PyCharm. <br>
+<b>2.</b> Navigate to the line of code where you want to set the breakpoint. <br>
+<b>3.</b> Click on the left-hand margin of the line to set a breakpoint. You will see a red dot appear on the line, indicating that a breakpoint has been set. <br>
+<b>4.</b> Run the program in debug mode by clicking the Debug button on the toolbar or using the keyboard shortcut. <br>
+<p align="center"><img width="1200" src="assets/images/02_python-pycharm-project-breakpoint.png"></p>
+<b>5.</b> The program will now run in debug mode, and when it reaches the breakpoint, it will pause execution and switch to the Debugging perspective. <br>
+<p align="center"><img width="1200" src="assets/images/02_python-pycharm-project-debugger.png"></p>
+<b>6.</b> You can now examine the state of the program by using various tools provided by PyCharm, such as the <i>Debug Console, Watches, and Variables panels</i>. <br>
+<b>7.</b> You can continue program execution by clicking the Resume button on the toolbar or using the keyboard shortcut.
+</details><br>
+
+
+**2. Debugging Console**
+
+PyCharm provides a debugging console that allows you to evaluate expressions and commands while the program is paused at a breakpoint. This can be useful for inspecting variables or testing out fixes.
+
+*Once the program is paused at a breakpoint, you can open the debugging console by clicking on the "Console" tab in the "Debug" panel at the bottom of the PyCharm window. The console will display a prompt where you can enter commands and evaluate expressions (for example, print the current value of the variable).*
+
+<p align="center"><img width="1000" src="assets/images/02_pycharm_debug_console.gif"></p>
+
+
+**3. Debugging Toolbar**
+
+The debugging toolbar in PyCharm provides a set of buttons that allow you to step through the program's execution, pause and resume the program, and inspect the program's state. The toolbar also provides useful information such as the current line of code and the value of the current variable.
+
+*The debugging toolbar is located at the top of the PyCharm window, and it contains a set of buttons for controlling the debugging process. The set of buttons with a blue arrow on the top, from left to right, include: "Step Over", "Step Into", "Step into my code", "Step Out", "Run to cursor". The other set of buttons is located verically on the left and includes, from top to bottom: "Rerun", "Modify Run Configuration",  "Resume Program", "Pause Program", "Stop", "View Breakpoints", "Mute Breakpoints", and "Settings". Hovering over each button will display a tooltip explaining its function.*
+
+![02_python-pycharm-project-debugger.png](assets/images/02_python-pycharm-project-debugger.png)
+
+**4. Watch Expressions**
+
+You can set watch expressions in PyCharm, which will evaluate and display the value of an expression each time the program stops at a breakpoint. This can be useful for tracking the value of a variable or checking if a condition is met.
+
+*You can add a watch expression by right-clicking on a variable in the code editor window and selecting "Add to Watches" from the context menu. If you have the debugger panel opened, you can select the same option by right-clicking on a line with selected variable. The watch expression will appear in the "Debugger" panel.*
+
+![02_python-pycharm-project-watches.png](assets/images/02_python-pycharm-project-watches.png)
+
+**5. Debugging Configuration**
+
+PyCharm allows you to configure the debugging process by setting various options such as the Python interpreter to use, the arguments to pass to the program, and the environment variables. This can be useful for debugging complex programs with multiple dependencies.
+
+*You can configure the debugging process by selecting "Edit Configurations" from the dropdown menu expanded from the "Run" option in the top toolbar. This will open the "Run/Debug Configurations" dialog window, where you can set various options for the debugging process, including logs.*
+
+![02_python-pycharm-project-debug-config.png](assets/images/02_python-pycharm-project-debug-config.png)
 
 ___
 # Further Reading
