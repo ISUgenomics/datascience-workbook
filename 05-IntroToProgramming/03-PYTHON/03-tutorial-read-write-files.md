@@ -69,7 +69,7 @@ Before we can start working with text files in Python, we first need to understa
 
 
 
-## Opening a file
+## **Opening a file**
 
 Before we can read or write to a text file, we must first open the file. To open a file, we use the `open()` function, which takes two arguments: the file name and the mode. *The mode specifies the purpose of the file, whether it's for reading, writing, or both.*
 ```
@@ -99,7 +99,7 @@ file = open('example.txt', 'r')
 **The open() function returns a file object that we can use to access the contents of the file.**
 
 
-## Closing a file
+## **Closing a file**
 
 It is important to close the file once we are finished using it. This ensures that any changes we have made to the file are saved and that we free up system resources. To close a file, we use the `close()` method with no parameters:
 
@@ -116,7 +116,7 @@ file.close()
 </code>
 </div><br>
 
-## Open-Close using `with`
+## Open-Close using `with` <br> ***(recommended)***
 
 In Python, the `with` statement is used to wrap the execution of a block of code with methods defined by a context manager. The with statement ensures that the resources are properly managed and cleaned up even if an exception occurs. This is particularly useful when working with files or other resources that need to be **opened and closed properly** to avoid resource leaks.
 
@@ -141,7 +141,7 @@ The `with` statement is a convenient way to **manage file objects in Python** be
 * **improved performance**, you can avoid the overhead of opening and closing files repeatedly & manually
 * **better error handling**, any exceptions that occur while the file is being used will be handled automatically
 
-**`with open()` to read from a file** <br>
+**`with open()` &ensp; to read from a file** <br>
 Here's an example of how to use the with statement to open a file and read its contents:
 ```
 with open('input_file.txt', 'r') as f:
@@ -149,7 +149,7 @@ with open('input_file.txt', 'r') as f:
 ```
 <i>In this example, the open() function is used to open the file "input_file.txt" in read mode. The <b>with</b> statement ensures that the file is properly closed after the block of code is executed, even if an exception occurs. Inside the with block, the read() method is called to read the contents of the file into the data variable.</i>
 
-**`with open` to write to a file**<br>
+**`with open` &ensp; to write to a file**<br>
 Here's an example of how to use the with statement to open a file and write to it:
 ```
 with open('output_file.txt', 'w') as f:
@@ -163,7 +163,7 @@ with open('output_file.txt', 'w') as f:
 </div><br>
 
 
-## Reading a file
+## **Reading a file**
 
 To read from a text file in Python, we can use the `open()` function to open the file in *read* mode. We can then use the `read()` method to read the contents of the file.
 
@@ -190,7 +190,7 @@ with open('example.txt', 'r') as file:     # Open the file in read mode
 *In this example, we are opening a file called "example.txt" in read mode and then using a for loop to iterate over each line in the file. The print() function is used to print each line to the console.*
 
 
-## Writing to a file
+## **Writing to a file**
 
 In Python, writing to a text file is a simple process that involves opening the file in write mode, writing the desired content to the file, and then closing the file. <br>
 Once the file is open in write mode, you can write content to the file using the `write()` method of the file object. The `write()` method takes a string as input and writes it to the file.
@@ -443,6 +443,7 @@ with open('example.txt', 'w') as f:
     print(f"{name:<10} {age:>5}", file=f)
 ```
 
+---
 
 # Handling errors
 
