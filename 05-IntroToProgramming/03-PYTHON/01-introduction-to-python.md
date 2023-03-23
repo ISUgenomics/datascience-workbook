@@ -85,14 +85,14 @@ Python is known for its simplicity, readability, and versatility. It has a numbe
 These are just a few examples of the many online resources that are available for Python developers. You can also find many other resources by searching online for terms such as <i>"Python community forums"</i> or <i>"Python support"</i>.
 
 
-# Getting started with Python programming
+## Getting started with Python programming
 
 <span style="color: #ff3870;font-weight: 500;">If you are starting your Python adventure from scratch, it is worthwhile to develop your skills gradually strengthening them over time. In that case, it's best to follow this tutorial in order.</span>
 
 1. [Learn Python basics using online platform](#1-learn-python-basics-using-online-platform)
 2. [Get Python locally and start coding in the IDE](#2-get-python-locally-and-start-coding-in-the-ide)
 
-## 1. Learn Python basics using online platform
+# 1. Learn Python basics using online platform
 
 Using an online platform for Python programming can be a convenient and accessible way to write and run Python code, especially if you are just starting out with the language or don't want to install anything on your local computer.
 
@@ -121,7 +121,7 @@ You can also stay here and enhance your experience by following the step-by-step
 
 ![Python Console Online](../../05-IntroToProgramming/assets/images/03_python-online-console.png) <br><br>
 
-## **Basic Concepts**
+## Basic Concepts
 
 1. [Variables](#variables) and [Data Types](#data-types) <br>
 <i>In Python, you can assign values to variables using the <b>=</b> operator. <br>Python has several data types, including integers, floats, strings, and booleans.</i>
@@ -135,7 +135,7 @@ You can also stay here and enhance your experience by following the step-by-step
 <i>A class is a blueprint for creating objects of specific type. Classes are defined using the <b>class</b> keyword.</i>
 
 
-## *Variables*
+## **Variables**
 
 Variables are used to store data in memory so that it can be accessed and manipulated later. In Python, you can create a variable by simply assigning a value to a name:
 ```
@@ -147,7 +147,7 @@ You can create variables of various [data types](#data-types).
 * Regardless of the type of data, always assign the value of a variable with the use of the `=` character.
 * In Python, you don't have to declare the type of a variable when you create it
 
-## *Data Types*
+## **Data Types**
 
 Python has several built-in data types, including:
 * **integers**, e.g., *42*
@@ -161,7 +161,7 @@ x = 42
 print(type(x))           # Output: <class 'int'>
 ```
 
-## *Operators*
+## **Operators**
 
 Python has several built-in operators that you can use to perform operations on variables.
 
@@ -248,7 +248,7 @@ z = x + y
 print(z)                 # Output: 3
 ```
 
-## *Control Flow*
+## **Control Flow**
 
 Python has several control flow statements, including:
 * `if`, `elif`, `else` statements
@@ -317,7 +317,7 @@ while not (num > 5):
 *In this example, we use a while loop with a negated condition to execute the block of code as long as the value of the num variable is not greater than 5. Inside the loop, we print the value of num to the console and then increment its value by 1.*
 
 
-###  •  *TRY-EXCEPT-FINALLY for errors*
+###  •  *TRY-EXCEPT-FINALLY*
 
 In Python, `try-except-finally` is a powerful mechanism for handling errors and exceptions in Python code that may occur during program execution. By catching and handling errors gracefully, you can ensure that your program does not crash or behave unpredictably in the face of unexpected errors.
 * The `try` block contains the code that may raise an exception.
@@ -409,11 +409,11 @@ for i in range(5):
 <i>Here, when i is equal to 2, the break statement is executed, and the loop terminates immediately. The program moves on to execute the code that comes after the loop. So, the value 2, as well as 3 and 4, are not printed.</i>
 
 
-## *Functions*
+## **Functions**
 
 Functions are a way to encapsulate a piece of code so that it can be reused later by calling just a function name and customized arguments. Functions help to make code more modular, easier to read, and reusable.
 
-### *A. Built-in Python functions*
+### *A. Built-in functions*
 
 Python comes with a number of built-in functions that can be used directly without the need for any import statements. A comprehensive list of built-in Python functions can be found in the official Python documentation at the following URL: <a href="https://docs.python.org/3/library/functions.html" target="_blank">https://docs.python.org/3/library/functions.html  ⤴</a> *(This page lists all the built-in functions available in Python 3, along with their descriptions and examples of how to use them.)*
 
@@ -523,7 +523,7 @@ print(result)                             # output: 5.0
 *In this example, we use the from keyword to import only the sqrt() function from the math module. This allows us to call the sqrt() function directly without having to use the math prefix.*
 
 
-## *Classes*
+## **Classes**
 
 In Python, a class is a blueprint for creating objects, which are instances of the class. Classes are defined using the `class` keyword, followed by the *class name* and a colon, and then the body of the class, which contains its **attributes** (variables) and **methods** (functions).
 
@@ -566,11 +566,11 @@ person1.set_age(30)
 print(person1.get_age())                  # output: 30
 ```
 
-## Writing Your First Python Program
+## ***Writing Your First Python Program***
 
 Now that you have a basic understanding of Python, it's time to try your Python skills!
 
-### **Examples**
+### *Explore Examples*
 
 Here are a few simple examples of Python code that you can try out:
 
@@ -736,7 +736,7 @@ print(y)              # Output: "3.14159"
 <span style="color: #ff3870;font-weight: 500;">If you have completed all the examples provided and successfully solved the assignment task, you should now be ready to start coding in Python on your own computer, which means you will need to download and set up Python locally.</span>
 
 
-## 2. Get Python locally and start coding in the IDE
+# 2. Get Python locally and start coding in the IDE
 
 Before you start programming in Python, you need to install Python and set up the development environment on your computing machine. Expolore sections provided below to select the best option for you!
 
