@@ -308,7 +308,7 @@ header:
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
     <a href="05-IntroToProgramming/03-PYTHON/03-tutorial-read-write-files" style="color: #3f5a8a;">
-    Read and Write Data Files</a></td></tr>
+    Open-Close & Read-Write of Data Files</a></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
