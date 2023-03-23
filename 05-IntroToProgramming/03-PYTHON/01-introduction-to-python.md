@@ -107,7 +107,7 @@ There are many online platforms that allow you to write and run Python code dire
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
-If you want to keep your projects online for future reuse, open the <a href="https://www.pythonanywhere.com/" target="_blank">PythonAnywhere  ⤴</a> online platform and create the account (using its basic plan) to get started with Python coding for free. <br><br>
+If you want to keep your projects online for future reuse, open the <a href="https://www.pythonanywhere.com/" target="_blank">PythonAnywhere  ⤴</a> online platform and create the account (using its basic plan) to get started with Python coding for free. <br>
 Follow the step-by-step guide in the tutorial <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-python-online-console" target="_blank">Online Console: simple Python code in a browser  ⤴</a> to create the free account and get started with Python.
 </span>
 </div><br>
@@ -132,7 +132,7 @@ You can also stay here and enhance your experience by following the step-by-step
 4. [Functions](#functions) <br>
 <i>Functions are reusable blocks of code that perform a specific task. You can define your own functions in Python using the <b>def</b> keyword.</i>
 5. [Classes](#classes) <br>
-<i>A class is a blueprint for creating objects of specific type. Classes are defined using the <b>class</b> keyword.</i>
+<i>A class is a blueprint for creating objects of specific type defined using the <b>class</b> keyword.</i>
 
 
 ## **Variables**
@@ -364,7 +364,7 @@ for i in range(5):
 ```
 <i>Here, when i is equal to 2, the pass statement is executed, but it doesn't do anything. The loop continues to execute, and the output shows that the value 2 was still printed.</i>
 
-<details><summary style="color: #ff3870;""><b>See a tip for <i>pass</i> in try-except block</b></summary>
+<details><summary style="color: #ff3870;"><b>See a tip for <i>pass</i> in try-except block</b></summary>
 
 In Python, <b>pass</b> is often used in <b>try-except</b> error handlers as a placeholder for an empty block of code when no action is required in the event of an exception. <br><br>
 When an error occurs in a try block, Python searches for an appropriate <b>except</b> block to handle the error. In some cases, you may want to catch the error but not take any action when it occurs. In such situations, you can use <b>pass</b> as a placeholder in the except block. This will tell Python to do nothing when the exception occurs, allowing the program to continue executing without interruption. <br><br>
@@ -566,12 +566,9 @@ person1.set_age(30)
 print(person1.get_age())                  # output: 30
 ```
 
-## ***Writing Your First Python Program***
+## *Writing Your First Python Program* **(EXAMPLES)**
 
-Now that you have a basic understanding of Python, it's time to try your Python skills!
-
-### *Explore Examples*
-
+Now that you have a basic understanding of Python, it's time to try your Python skills! <br>
 Here are a few simple examples of Python code that you can try out:
 
 ***Example 1:*** *Printing a message to the console:*
