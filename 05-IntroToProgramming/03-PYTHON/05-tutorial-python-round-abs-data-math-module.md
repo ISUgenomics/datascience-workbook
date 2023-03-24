@@ -141,6 +141,8 @@ z = x % y
 print(z)                        # Output: 3
 ```
 
+---
+
 # built-in functions
 
 Python also has many built-in functions for performing mathematical operations.
@@ -156,6 +158,8 @@ Python also has many built-in functions for performing mathematical operations.
 
 The math module provides a range of additional mathematical functions, including trigonometric functions, logarithmic functions, statistical functions, and more.
 
+---
+
 # `math` module
 
 **MATH is a built-in module** *(no installation required)* that contains various mathematical constants and more advanced mathematical operations such as trigonometric functions, logarithmic functions, and statistical functions, among others.
@@ -165,7 +169,7 @@ The math module provides a range of additional mathematical functions, including
 <br><span style="font-style:italic;">
 The <b>math module</b> does not contain functions for basic arithmetic operations such as addition, subtraction, multiplication, and division. These are basic mathematical operations that can be performed using the standard arithmetic operators in Python, such as <b>+, -, *, /</b>.
 </span>
-</div><br>
+</div>
 
 
 ## `math` **CheatSheet**
@@ -197,7 +201,7 @@ In the tabs below you can find the corresponding tables with `math` module funct
 <details><summary><b>Constants:</b></summary>
 
 <table>
-  <tr><th>Function</th><th>Example</th><th>Description</th></tr
+  <tr><th>Function</th><th>Example</th><th>Description</th></tr>
   <tr><td><b>math.e</b></td><td>math.e</td><td><i>A mathematical constant that represents the value of e.</i></td></tr>
   <tr><td><b>math.inf</b></td><td>math.inf</td><td><i>Represents positive infinity, which is a value greater than any finite number.</i></td></tr>
   <tr><td><b>math.nan</b></td><td>math.nan</td><td><i>Represents a value that is not a number (NaN).</i></td></tr>
