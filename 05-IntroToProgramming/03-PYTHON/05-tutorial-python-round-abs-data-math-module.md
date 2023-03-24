@@ -30,7 +30,7 @@ header:
 
 
 
-## Math in Python
+# Math in Python
 
 Mathematics is a fundamental aspect of programming, and Python provides a range of tools and resources for working with math. Python provides a robust set of tools for working with math, including:
 * built-in operators, *for example:* `+`, `-`, `*`, `/`, `%`, `//`, `**`
@@ -66,7 +66,7 @@ For example, you can **use online Python shell** immediately available at <a hre
 
 ---
 
-# built-in operators
+# Built-in Operators
 
 Python has several built-in operators for basic arithmetic operations, such as:
 * addition: `+`
@@ -104,7 +104,7 @@ print(z)                        # Output: 3.3333333333333335
 
 ## ADVANCED OPERATIONS
 
-### *Exponentiation*
+### • *Exponentiation*
 
 <i>Python has an exponentiation operator `**` that raises a number to a power.</i>
 
@@ -117,7 +117,7 @@ z = x ** y
 print(z)                        # Output: 8
 ```
 
-### *Integer Division*
+### • *Integer Division*
 <i>In Python, integer division is performed using the double slash `//` operator</i>
 
 ```
@@ -129,7 +129,7 @@ z = x // y
 print(z)                        # Output: 4
 ```
 
-### *Modulus*
+### • *Modulus*
 <i>In Python, the modulus operation is performed using the percent `%` operator.</i>
 
 ```
@@ -143,7 +143,7 @@ print(z)                        # Output: 3
 
 ---
 
-# built-in functions
+# Built-in Functions
 
 Python also has many built-in functions for performing mathematical operations.
 
@@ -160,7 +160,7 @@ The math module provides a range of additional mathematical functions, including
 
 ---
 
-# `math` module
+# Built-in Module: `math`
 
 **MATH is a built-in module** *(no installation required)* that contains various mathematical constants and more advanced mathematical operations such as trigonometric functions, logarithmic functions, and statistical functions, among others.
 
@@ -172,7 +172,7 @@ The <b>math module</b> does not contain functions for basic arithmetic operation
 </div>
 
 
-## `math` **CheatSheet**
+## **CheatSheet:** `math` 
 
 In the tabs below you can find the corresponding tables with `math` module functions along with function description and usage examples.
 
