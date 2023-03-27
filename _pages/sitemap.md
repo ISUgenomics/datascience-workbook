@@ -339,6 +339,22 @@ header:
     <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b>
     <a href="05-IntroToProgramming/04-R/01-introduction-to-R" style="color: #24376b;">
     Introduction to R programming</a></b></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <a href="05-IntroToProgramming/04-R/02-dplyr-R-data-manipulation" style="color: #3f5a8a;">
+    Dplyr - R package for data manipulation and transformation</a></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <a href="05-IntroToProgramming/04-R/03-ggplot-R-plotting" style="color: #3f5a8a;">
+    Ggplot2 - R package for customizable graphs and charts</a></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <a href="05-IntroToProgramming/04-R/04-tidyverse-R-advanced-data-analysis" style="color: #3f5a8a;">
+    Tidyverse - R packages set for advanced exploratory data analysis</a></td></tr>
+
 </table><br>
 
 

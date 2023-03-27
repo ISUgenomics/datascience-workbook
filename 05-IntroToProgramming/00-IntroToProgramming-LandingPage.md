@@ -30,7 +30,9 @@ With some knowledge of scripting and algorithm design, you can easily encapsulat
 * <a href="03-PYTHON/08-tutorial-python-apply-statistics-scipy" style="color: #3f5a8a;">3.7 SciPy Library - Algorithms for Scientific Computing</a>
 
 ### **<a href="04-R/01-introduction-to-R" style="color: #24376b;">4. Introduction to R programming</a>**
-
+* <a href="04-R/02-dplyr-R-data-manipulation" style="color: #3f5a8a;">4.1 Dplyr - R package for data manipulation and transformation</a>
+* <a href="04-R/03-ggplot-R-plotting" style="color: #3f5a8a;">4.2 Ggplot2 - R package for customizable graphs and charts</a>
+* <a href="04-R/04-tidyverse-R-advanced-data-analysis" style="color: #3f5a8a;">4.3 Tidyverse - R packages set for advanced exploratory data analysis</a>
 
 ---
 
