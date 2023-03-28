@@ -87,14 +87,14 @@ conda install pandas
 This command will install Pandas and any necessary dependencies in your current Conda environment. <br><br>
 If you don't have Conda installed yet, you can follow the guide provided in the tutorial <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-python-setup-locally" target="_blank">Local Python setup on your computing machine  ⤴</a>.
 </span>
-</div><br>
+</div>
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
 Conda provides additional benefits over pip, such as the ability to create and manage multiple environments for different projects with different dependencies, and the ability to install packages from both the Conda and PyPI (Python Package Index) repositories.
 </span>
-</div><br>
+</div>
 
 
 ## Import `pandas` library
@@ -107,6 +107,7 @@ This will import the Pandas library and give it an alias of `pd`, which is a com
 
 You can then use the Pandas functions and classes in your code by prefixing them with **pd**, such as `pd.DataFrame` or `pd.read_csv`.
 
+---
 
 # Data manipulation with `pandas`
 
@@ -114,12 +115,12 @@ Pandas is a powerful Python library for data manipulation and analysis that prov
 
 Here is an index of data manipulation tasks with Pandas:
 
-0. [Creating Pandas objects]()
-1. [Loading data from a file]()
-2. [Exploring data]()
-3. [Cleaning data]()
-4. [Filtering data]()
-5. [Aggregating data]()
+0. [Creating Pandas objects](#create-pandas-objects)
+1. [Loading data from a file](#load-data-from-a-file)
+2. [Exploring data](#explore-data)
+3. [Cleaning data](#clean-data)
+4. [Filtering data](#filter-data)
+5. [Aggregating data](#aggregate-data)
 
 
 ## Create Pandas objects
@@ -146,7 +147,6 @@ Here's an example of a simple Series:
 Name: Name, dtype: object
 ```
 *In this example, we have a Series with four values, which are strings representing names. The index labels each value with a number from 0 to 3. The label "Name" at the end of the Series specifies the name of the Series.*
-
 
 
 ### `DataFrame` object
@@ -190,7 +190,7 @@ print(s)
 ```
 *In this example, we use the* `pd.Series()` *constructor function to create a Series. We pass a list of four values and a list of four index labels. The resulting Series has the values and index labels specified:*
 
-<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;"><br>
 John    25 <br>
 Jane    30 <br>
 Jack    35 <br>
@@ -213,18 +213,18 @@ print(df)
 ```
 This will create an empty `DataFrame` with no rows or columns:
 
-<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;"><br>
 Empty DataFrame <br>
 Columns: [] <br>
 Index: [] <br>
-</code><br>
+</code>
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
 You can create an empty <b>DataFrame</b> in Pandas and add data to it later using the <code>df.append()</code> method.
 </span>
-</div><br>
+</div>
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
@@ -256,7 +256,7 @@ The resulting DataFrame has the specified column names and data types, but no ro
 Empty DataFrame <br>
 Columns: [name, age, city] <br>
 Index: [] <br>
-</code><br>
+</code>
 
 You can then add data to this DataFrame using the `df.append()` method.
 
@@ -321,7 +321,7 @@ The values in each column correspond to the values in the corresponding dictiona
 0 &emsp; Alice &emsp;&emsp; 25 &emsp; New York <br>
 1 &emsp; &emsp; Bob &emsp;&emsp; 30 &emsp; Los Angeles <br>
 2  Charlie &emsp;&emsp; 35 &emsp; Chicago <br>
-</code><br>
+</code>
 
 
 ## Add data
@@ -342,7 +342,7 @@ Let's assume we have an empty DataFrame:
 import pandas as pd <br><br>
 &#9839; create an empty DataFrame <br>
 df = pd.DataFrame() <br>
-</code><br>
+</code>
 
 We can add some data to the DataFrame using `df.append()` method:
 ```
@@ -360,7 +360,7 @@ print(df)
 <br><span style="font-style:italic;">
 The <b>ignore_index=True</b> argument tells Pandas to ignore any existing index labels on the DataFrame, and instead generate new integer index labels starting from 0.
 </span>
-</div><br>
+</div>
 
 The `print()` function displays the DataFrame with the added data:
 
@@ -496,7 +496,7 @@ Let's assume we have a Pandas Series:
 import pandas as pd <br><br>
 &#9839; create a Pandas Series with four values <br>
 s = pd.Series([25, 30, 35, 40], index=['John', 'Jane', 'Jack', 'Jill'])
-</code><br>
+</code>
 
 We can access the values and index labels of the Series using indexing:
 ```
@@ -536,7 +536,7 @@ Let's assume we have a Pandas DataFrame:
 import pandas as pd <br><br>
 &#9839; create the DataFrame <br>
 df = pd.DataFrame({'name': ['Alice', 'Bob', 'Charlie'], 'age': [25, 30, 35], 'city': ['New York', 'Los Angeles', 'Chicago']})
-</code><br>
+</code>
 
 The `print()` function displays the DataFrame:
 
@@ -569,7 +569,7 @@ new_df_col = df[['name', 'age']]
 ```
 series_row = df.loc[0]
 ```
-*This returns a Pandas Series object containing the values in the first row of the DataFrame (index 0).*
+*This returns a Series object containing the values in the first row of the DataFrame (index 0).*
 
 **D. Access multiple rows by index:**
 
@@ -600,7 +600,7 @@ Note that there are many other ways to access data in a DataFrame in Pandas, suc
 <li> using advanced indexing techniques like <b>.loc[]</b> and <b>.iloc[]</b>.</li><br>
 The best method to use depends on the specific task at hand.
 </span>
-</div><br>
+</div>
 
 <span style="color: #ff3870;font-weight: 500;">Learn more about Pandas indexing and selecting data from the official documentation:</span>
 * <a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html" target="_blank">Indexing and selecting data  ⤴</a>
