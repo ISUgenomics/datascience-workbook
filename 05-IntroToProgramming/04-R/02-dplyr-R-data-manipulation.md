@@ -10,7 +10,7 @@ header:
 
 {% include toc %}
 
-[DataScience Workbook](https://datascience.101workbook.org/) / [05. Introduction to Programming](../00-IntroToProgramming-LandingPage.md) / [4. Introduction to R programming](01-introduction-to-R) / **4.1 Dplyr - R package for data manipulation and transformation**
+[DataScience Workbook](https://datascience.101workbook.org/) / [05. Introduction to Programming](../00-IntroToProgramming-LandingPage.md) / [4. Introduction to R programming](01-introduction-to-R) / **4.1 dplyr - R package for data manipulation and transformation**
 
 ---
 
