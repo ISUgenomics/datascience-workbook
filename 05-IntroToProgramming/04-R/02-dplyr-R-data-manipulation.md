@@ -1,5 +1,5 @@
 ---
-title: "Dplyr - R package for data manipulation and transformation"
+title: "dplyr - R package for data manipulation and transformation"
 layout: single
 author: Viswa Satheesh
 author_profile: true
