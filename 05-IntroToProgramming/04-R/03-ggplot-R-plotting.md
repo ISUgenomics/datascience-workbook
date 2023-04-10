@@ -16,35 +16,39 @@ header:
 
 # Introduction
 
-<span style="color: #ff3870;font-weight: 500;"> New content coming soon! </span>
-
-ggplot2 is "A system for 'declaratively' creating graphics, based on 
-`The Grammar of Graphics`. You provide the data, tell 'ggplot2' how to map 
-variables to aesthetics, what graphical primitives to use, and it takes care of 
+ggplot2 is "A system for 'declaratively' creating graphics, based on
+`The Grammar of Graphics`. You provide the data, tell 'ggplot2' how to map
+variables to aesthetics, what graphical primitives to use, and it takes care of
 the details."
 
-`The Grammar of Graphics`, written by Leland Wilkinson, presents a theoretical 
+`The Grammar of Graphics`, written by Leland Wilkinson, presents a theoretical
 foundation for producing quantitative graphics. [The Book](https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448/ref=as_li_ss_tl)
 
 This book is the foundation for ggplot2 created by Hadley Wickham.
 
-We are going to use the `faithful` and `iris` data sets to explore ggplot2. The data sets are 
+We are going to use the `faithful` and `iris` data sets to explore ggplot2. The data sets are
 part of the R package.
 
 The following are important while using ggplot2.
-1) Data 
-  - Most important aspect
-  - Data representation holds the key to what can be done with the data
-  
-2) Mapping 
-  - Aesthetic mapping 
-  Variables in the data linked to graphical properties 
-  - Facet mapping
+
+1. Data
+
+- Most important aspect
+- Data representation holds the key to what can be done with the data
+
+2. Mapping
+
+- Aesthetic mapping
+  Variables in the data linked to graphical properties
+- Facet mapping
   Variables are linked to panels
-3) Geometries
-  - geom_*()
-4) Themes
-5) Scale
+
+3. Geometries
+
+- geom\_\*()
+
+4. Themes
+5. Scale
 
 Installing and loading the package.
 
@@ -52,11 +56,10 @@ Installing and loading the package.
 # install.packages("ggplot2")
 library(ggplot2)
 ```
+
 Within the code chunk the first line is a comment and it tells the user to install the ggplot2 package. This line is commented out because the package `ggplot2` is already installed. The second line loads the ggplot2 package into the current R session. The various functions in the package are now available for use.
 
-
-
-The `faithful` data set contains information on the eruption pattern of the 
+The `faithful` data set contains information on the eruption pattern of the
 Old Faithful geyser in Yellowstone National Park.
 
 ```r
@@ -86,7 +89,7 @@ head(faithful)
 ## 6     2.883      55
 ```
 
-* Data
+- Data
 
 ```r
 #data("faithful")
@@ -95,7 +98,7 @@ ggplot(data = faithful)
 
 ![plot of chunk unnamed-chunk-4](../assets/images/04_ggplot2_4.png)
 
-* Mapping
+- Mapping
 
 ```r
 # Adding the mapping
@@ -104,12 +107,11 @@ ggplot(data = faithful, mapping = aes(x = eruptions))
 
 ![plot of chunk unnamed-chunk-5](../assets/images/04_ggplot2_5.png)
 
-* Geometry
-
+- Geometry
 
 ```r
 # Basic histogram
-ggplot(data = faithful, mapping = aes(x = eruptions)) + 
+ggplot(data = faithful, mapping = aes(x = eruptions)) +
   geom_histogram()
 ```
 
@@ -119,11 +121,10 @@ ggplot(data = faithful, mapping = aes(x = eruptions)) +
 
 ![plot of chunk unnamed-chunk-6](../assets/images/04_ggplot2_6.png)
 
-The data and the aesthetics can be specified within the layer as well. 
-
+The data and the aesthetics can be specified within the layer as well.
 
 ```r
-ggplot() + 
+ggplot() +
   geom_histogram(data = faithful, aes(x = eruptions))
 ```
 
@@ -133,11 +134,10 @@ ggplot() +
 
 ![plot of chunk unnamed-chunk-7](../assets/images/04_ggplot2_7.png)
 
-* Theme
-
+- Theme
 
 ```r
-ggplot(faithful, aes(x = eruptions)) + 
+ggplot(faithful, aes(x = eruptions)) +
   geom_histogram(colour = "black", fill = "white") +
   # theme_classic()
   # theme_bw()
@@ -152,9 +152,8 @@ ggplot(faithful, aes(x = eruptions)) +
 
 Colour based on mapping
 
-
 ```r
-ggplot(faithful, aes(x = eruptions)) + 
+ggplot(faithful, aes(x = eruptions)) +
   geom_histogram(aes(colour = eruptions < 3.1), fill = "white") +
   theme_classic()
 ```
@@ -167,9 +166,8 @@ ggplot(faithful, aes(x = eruptions)) +
 
 Fill based on mapping
 
-
 ```r
-ggplot(faithful, aes(x = eruptions)) + 
+ggplot(faithful, aes(x = eruptions)) +
   geom_histogram(aes(fill = eruptions < 3.1), colour = "black") +
   theme_classic()
 ```
@@ -180,7 +178,6 @@ ggplot(faithful, aes(x = eruptions)) +
 
 ![plot of chunk unnamed-chunk-10](../assets/images/04_ggplot2_10.png)
 Let us now use the `iris` data set for futher exploration of the ggplot2 package.
-
 
 ```r
 str(iris)
@@ -203,7 +200,6 @@ unique(levels(iris$Species))
 ## [1] "setosa"     "versicolor" "virginica"
 ```
 
-
 ```r
 head(iris)
 ```
@@ -218,20 +214,17 @@ head(iris)
 ## 6          5.4         3.9          1.7         0.4  setosa
 ```
 
-
-
 ```r
 # Basic scatterplot
-ggplot(data = iris, mapping = aes(x = Petal.Width, y = Petal.Length)) + 
+ggplot(data = iris, mapping = aes(x = Petal.Width, y = Petal.Length)) +
   geom_point(aes(colour = Species))+
   theme_classic()
 ```
 
 ![plot of chunk unnamed-chunk-13](../assets/images/04_ggplot2_13.png)
 
-* Scale
-Adding a different colour scheme
-
+- Scale
+  Adding a different colour scheme
 
 ```r
 RColorBrewer::display.brewer.all()
@@ -239,10 +232,8 @@ RColorBrewer::display.brewer.all()
 
 ![plot of chunk unnamed-chunk-14](../assets/images/04_ggplot2_14.png)
 
-
-
 ```r
-ggplot(data = iris, mapping = aes(x = Petal.Width, y = Petal.Length)) + 
+ggplot(data = iris, mapping = aes(x = Petal.Width, y = Petal.Length)) +
   geom_point(aes(colour = Species), size = 3) +
   theme_classic() +
   scale_colour_brewer(palette = "Set1")
@@ -250,22 +241,19 @@ ggplot(data = iris, mapping = aes(x = Petal.Width, y = Petal.Length)) +
 
 ![plot of chunk unnamed-chunk-15](../assets/images/04_ggplot2_15.png)
 
-* Facets
-
+- Facets
 
 ```r
-ggplot(data = iris, mapping = aes(x = Petal.Width, y = Petal.Length)) + 
-  geom_point(aes(colour = Species), size = 3) + 
+ggplot(data = iris, mapping = aes(x = Petal.Width, y = Petal.Length)) +
+  geom_point(aes(colour = Species), size = 3) +
   facet_wrap(~ Species) +
   scale_colour_brewer(palette = "Set2")
 ```
 
 ![plot of chunk unnamed-chunk-16](../assets/images/04_ggplot2_16.png)
 
-
-
 ```r
-ggplot(data = iris, mapping = aes(x = Petal.Width, y = Petal.Length)) + 
+ggplot(data = iris, mapping = aes(x = Petal.Width, y = Petal.Length)) +
   geom_point(aes(colour = Species), size = 3) +
   facet_grid(Species ~ .) +
   scale_colour_brewer(palette = "Set2")
@@ -273,16 +261,14 @@ ggplot(data = iris, mapping = aes(x = Petal.Width, y = Petal.Length)) +
 
 ![plot of chunk unnamed-chunk-17](../assets/images/04_ggplot2_17.png)
 
-
-
 ```r
 ggplot(iris, aes(x = Petal.Width, y = Petal.Length)) +
   stat_summary(geom = "line", fun = mean, aes(group = Species, colour = Species),
                size = 1) +
-  stat_summary(geom = "ribbon", fun.data = mean_se, aes(group = Species, fill = Species), 
+  stat_summary(geom = "ribbon", fun.data = mean_se, aes(group = Species, fill = Species),
                alpha = 0.5) +
   # geom_point(aes(fill = Species), size = 3)
-  geom_point(aes(fill = Species), position = position_jitter(0.2, seed = 123), 
+  geom_point(aes(fill = Species), position = position_jitter(0.2, seed = 123),
              alpha = 0.8, shape = 21, colour = "black", size = 3) +
   scale_fill_brewer(palette = "Set2") +
   labs( x = "Petal Width", y = "Petal Length") +
@@ -290,7 +276,6 @@ ggplot(iris, aes(x = Petal.Width, y = Petal.Length)) +
 ```
 
 ![plot of chunk unnamed-chunk-18](../assets/images/04_ggplot2_18.png)
-
 
 ```r
 sessionInfo()
@@ -300,44 +285,45 @@ sessionInfo()
 ## R version 4.2.1 (2022-06-23)
 ## Platform: x86_64-apple-darwin17.0 (64-bit)
 ## Running under: macOS Big Sur 11.6.7
-## 
+##
 ## Matrix products: default
 ## LAPACK: /Library/Frameworks/R.framework/Versions/4.2/Resources/lib/libRlapack.dylib
-## 
+##
 ## locale:
 ## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
-## 
+##
 ## attached base packages:
-## [1] stats     graphics  grDevices utils     datasets  methods   base     
-## 
+## [1] stats     graphics  grDevices utils     datasets  methods   base
+##
 ## other attached packages:
 ## [1] ggplot2_3.3.6
-## 
+##
 ## loaded via a namespace (and not attached):
 ##  [1] highr_0.9          pillar_1.8.0       compiler_4.2.1     RColorBrewer_1.1-3
-##  [5] tools_4.2.1        digest_0.6.29      evaluate_0.15      lifecycle_1.0.1   
-##  [9] tibble_3.1.8       gtable_0.3.0       pkgconfig_2.0.3    rlang_1.0.4       
-## [13] cli_3.3.0          DBI_1.1.3          rstudioapi_0.13    yaml_2.3.5        
-## [17] xfun_0.31          fastmap_1.1.0      withr_2.5.0        stringr_1.4.0     
-## [21] dplyr_1.0.9        knitr_1.39         generics_0.1.3     vctrs_0.4.1       
-## [25] grid_4.2.1         tidyselect_1.1.2   glue_1.6.2         R6_2.5.1          
-## [29] fansi_1.0.3        rmarkdown_2.14     farver_2.1.1       purrr_0.3.4       
-## [33] magrittr_2.0.3     scales_1.2.0       htmltools_0.5.3    assertthat_0.2.1  
-## [37] colorspace_2.0-3   labeling_0.4.2     utf8_1.2.2         stringi_1.7.8     
+##  [5] tools_4.2.1        digest_0.6.29      evaluate_0.15      lifecycle_1.0.1
+##  [9] tibble_3.1.8       gtable_0.3.0       pkgconfig_2.0.3    rlang_1.0.4
+## [13] cli_3.3.0          DBI_1.1.3          rstudioapi_0.13    yaml_2.3.5
+## [17] xfun_0.31          fastmap_1.1.0      withr_2.5.0        stringr_1.4.0
+## [21] dplyr_1.0.9        knitr_1.39         generics_0.1.3     vctrs_0.4.1
+## [25] grid_4.2.1         tidyselect_1.1.2   glue_1.6.2         R6_2.5.1
+## [29] fansi_1.0.3        rmarkdown_2.14     farver_2.1.1       purrr_0.3.4
+## [33] magrittr_2.0.3     scales_1.2.0       htmltools_0.5.3    assertthat_0.2.1
+## [37] colorspace_2.0-3   labeling_0.4.2     utf8_1.2.2         stringi_1.7.8
 ## [41] munsell_0.5.0
 ```
 
+---
 
-___
 # Further Reading
-* [4.3 tidyverse - R packages set for advanced exploratory data analysis](04-tidyverse-R-advanced-data-analysis.md)
 
-* [SECTION 6. High-Performance Computing (HPC)](../../06-IntroToHPC/00-IntroToHPC-LandingPage)
+- [4.3 tidyverse - R packages set for advanced exploratory data analysis](04-tidyverse-R-advanced-data-analysis.md)
 
-___
+- [SECTION 6. High-Performance Computing (HPC)](../../06-IntroToHPC/00-IntroToHPC-LandingPage)
 
-[Homepage](../../index.md){: .btn  .btn--primary}
-[Section Index](../00-IntroToProgramming-LandingPage){: .btn  .btn--primary}
-[Previous](02-dplyr-R-data-manipulation){: .btn  .btn--primary}
-[Next](04-tidyverse-R-advanced-data-analysis){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}
+---
+
+[Homepage](../../index.md){: .btn .btn--primary}
+[Section Index](../00-IntroToProgramming-LandingPage){: .btn .btn--primary}
+[Previous](02-dplyr-R-data-manipulation){: .btn .btn--primary}
+[Next](04-tidyverse-R-advanced-data-analysis){: .btn .btn--primary}
+[top of page](#introduction){: .btn .btn--primary}
