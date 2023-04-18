@@ -31,15 +31,15 @@ It is built around a powerful and efficient data structure called an `ndarray`, 
 |<i># Create a 1-dimensional array of integers from 0 to 9<br></i> <br>`arr = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])`| <i># Create a 2-dimensional array of floats with shape (3, 4)</i><br><br>`arr2d = np.array([`<br>&emsp;&nbsp;&emsp;&nbsp;`[1.0, 2.0, 3.0, 4.0],`<br>&emsp;&nbsp;&emsp;&nbsp;`[5.0, 6.0, 7.0, 8.0],`<br>&emsp;&nbsp;&emsp;&nbsp;`[9.0, 10.0, 11.0, 12.0]`<br>`])` |
 |<i># Printing the 1D array</i><br>`print(arr)`<br><br># Output: [0 1 2 3 4 5 6 7 8 9]|<i># Printing the 2D array</i><br>`print(arr2d)`<br><br># Output: <br>[[ 1.  2.  3.  4.]<br>&ensp;[ 5.  6.  7.  8.]<br>&ensp;[ 9. 10. 11. 12.]]|
 
+<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">WARNING:</span>
+<br><span style="font-style:italic;"> <b>ndarrays are homogeneous</b>, meaning all elements in the array must be of the same data type, and they support element-wise operations and mathematical functions. </span>
+</div><br>
 
 Some of the key features of the NumPy library include:
 
 * **ndarrays objects** <br>
 <i>NumPy's main feature is its ndarray, a powerful data structure for representing and manipulating large <b>arrays of numerical data</b>.</i>
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;"> <b>ndarrays are homogeneous</b>, meaning all elements in the array must be of the same data type, and they support element-wise operations and mathematical functions. </span>
-</div>
 
 * **Input-Output (IO) operations** <br>
 <i>NumPy includes tools for reading and writing data to and from disk, including support for a wide variety of file formats and data types.</i>
@@ -71,7 +71,6 @@ Some of the key features of the NumPy library include:
 <i>NumPy is widely used in the scientific Python ecosystem, and it can be easily integrated with other libraries for data analysis, visualization, and machine learning, such as Pandas, Matplotlib, and scikit-learn.</i>
 
 
-
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
@@ -94,8 +93,8 @@ NumPy is NOT a built-in Python module, meaning it is not included with the stand
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;"> However, NumPy is widely used in scientific computing and data analysis in Python, and it is included in many popular scientific Python distributions, such as Anaconda and Enthought Canopy. It can also be installed using package managers like pip or conda (see instructions below).</span>
-</div><br>
+<br><span style="font-style:italic;"> NumPy is widely used in scientific computing and data analysis in Python, and it is included in many popular scientific Python distributions, such as Anaconda and Enthought Canopy. It can also be installed using package managers like pip or conda (see instructions below).</span>
+</div>
 
 ## Install `numpy` library
 
@@ -132,7 +131,7 @@ Conda provides additional benefits over pip, such as the ability to create and m
 <div style="background: #dff5b3; padding: 15px;">
 <span style="font-weight:800;">NOTE:</span>
 <br><span style="font-style:italic;"> If you are working in a virtual environment, you can install packages without administrative privileges by activating the virtual environment before running the installation command. </span>
-</div><br>
+</div>
 
 
 ## Import `numpy` library
@@ -153,7 +152,7 @@ NumPy is primarily designed for **numerical computing** and is optimized for ope
 <div style="background: #dff5b3; padding: 15px;">
 <span style="font-weight:800;">NOTE:</span>
 <br><span style="font-style:italic;"> While NumPy is primarily used for numerical data, it can also be used for other types of data, such as images and sound signals, which can be represented as numerical arrays. NumPy is also commonly used in combination with other Python libraries for scientific computing and data analysis, such as Pandas, SciPy, and Matplotlib. </span>
-</div><br>
+</div>
 
 ## NumPy objects
 
@@ -177,11 +176,12 @@ In addition to the `numpy.ndarray` class, NumPy has several other subclasses of 
 <details><summary><b>numpy.matrix()</b></summary>
 
 This is a subclass of ndarray that has additional methods for matrix operations, such as matrix multiplication, matrix inversion, and transposition.
-```
-import numpy as np
 
+<code style="background-color: #e6f0f0;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+import numpy as np <br><br>
 mat = np.matrix([[1, 2], [3, 4]])
-```
+</code><br>
+
 Output:
 <code style="background-color: #d9d9e3;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
 [[1 2] <br>
@@ -194,12 +194,13 @@ Output:
 <details><summary><b>numpy.chararray()</b></summary>
 
 This is a subclass of ndarray that is designed for working with strings. It provides additional methods for string operations, such as string concatenation, string splitting, and string comparison.
-```
-import numpy as np
 
-char_arr = np.chararray((2, 2))
+<code style="background-color: #e6f0f0;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+import numpy as np <br><br>
+char_arr = np.chararray((2, 2)) <br>
 char_arr[:] = 'a'
-```
+</code><br>
+
 Output:
 <code style="background-color: #d9d9e3;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
 [['a' 'a'] <br>
@@ -212,11 +213,12 @@ Output:
 <details><summary><b>numpy.ma.MaskedArray()</b></summary>
 
 This is a subclass of ndarray that allows you to specify a mask to indicate missing or invalid data. It provides additional methods for working with masked arrays, such as filling missing values, calculating statistics, and applying mathematical operations.
-```
-import numpy as np
 
+<code style="background-color: #e6f0f0;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+import numpy as np <br><br>
 arr = np.ma.MaskedArray([1, 2, 3], mask=[False, True, False])
-```
+</code><br>
+
 Output:
 <code style="background-color: #d9d9e3;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
 [1 -- 3]
@@ -228,11 +230,12 @@ Output:
 <details><summary><b>numpy.recarray()</b></summary>
 
 This is a subclass of ndarray that allows you to specify a named data type for each column of the array. It provides additional methods for working with structured arrays, such as accessing fields by name, sorting by field, and grouping by field.
-```
-import numpy as np
 
+<code style="background-color: #e6f0f0;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+import numpy as np <br><br>
 rec_arr = np.rec.array([(1, 'John'), (2, 'Doe')], dtype=[('id', int), ('name', 'U10')])
-```
+</code><br>
+
 Output:
 <code style="background-color: #d9d9e3;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
 [(1, 'John') (2, 'Doe')]
@@ -246,11 +249,12 @@ Output:
 <details><summary><b>numpy.datetime64()</b></summary>
 
 This is a subclass of ndarray that is designed for working with dates and times. It provides additional methods for working with dates and times, such as converting between time zones, parsing date strings, and formatting dates for display.
-```
-import numpy as np
 
+<code style="background-color: #e6f0f0;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+import numpy as np <br><br>
 dt = np.datetime64('2022-12-25')
-```
+</code><br>
+
 Output:
 <code style="background-color: #d9d9e3;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
 2022-12-25
@@ -338,7 +342,7 @@ For example, `arr[arr > 2]` selects all the elements of the array arr that are g
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;"> Numpy arrays can also be indexed using multi-dimensional indices. For example, arr[0, 2] selects the element at row 0 and column 2 of a 2D array. You can also use slicing and Boolean indexing along each dimension of a multi-dimensional array to select specific subsets of the array. </span>
-</div>
+</div><br>
 
 Let's assume we have a simple 1D array:
 ```
@@ -378,7 +382,8 @@ For example, the following code creates a new ndarray object using the `numpy.ar
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;"> It is generally recommended to use <b>numpy.array</b> to create new ndarray objects, as it provides additional options and features, such as dtype, copy, order, and subok. </span>
-</div><br>
+</div>
+
 
 ## *Create 1D array*
 
@@ -414,9 +419,10 @@ print(a)                        # OUTPUT: array([[1, 2], [3, 4], [5, 6]])
 <li>n is the number of inner lists in the nested list, and </li>
 <li>m is the length of each inner list. </li>
 In this example, n = 3 and m = 2, so the shape of the resulting array is (3, 2), i.e. 3 rows and 2 columns. </span>
-</div><br>
+</div>
 
-## *Create multi dimensional array*
+
+## *Create multidimensional array*
 
 To create an n-dimensional array in NumPy, you can simply **pass a nested list of n dimensions** to the `numpy.array()` function. The shape of the resulting array will be determined by the number of elements in each dimension of the nested list.
 
@@ -527,7 +533,7 @@ mat = np.matrix(arr)                    # matrix
 <div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">WARNING:</span>
 <br><span style="font-style:italic;"> Note that these methods are NOT available for NumPy arrays. However, some of them can be emulated using NumPy array methods. For example, the transpose of an array can be calculated using the <b>np.transpose</b> function, and the inverse of a matrix can be calculated using the <b>np.linalg.inv</b> function. </span>
-</div><br>
+</div>
 
 
 # Functions for Array operations
@@ -536,23 +542,23 @@ mat = np.matrix(arr)                    # matrix
 
 NumPy provides a wide range of built-in functions to perform various operations on NumPy arrays. Some of the commonly used functions for NumPy array operations are:
 
-| method               | description |
-|----------------------|-------------|
-| [np.zeros()]()       | Returns an array of zeros with the specified shape and data type. |
-| [np.ones()]()        | Returns an array of ones with the specified shape and data type. |
-| [np.arange()]()      | Returns an array with evenly spaced values within a given interval. |
-| [np.linspace()]()    | Returns an array of evenly spaced numbers over a specified interval. |
-| [np.reshape()]()     | Reshapes an array to the specified shape. |
-| [np.transpose()]()   | Transposes an array (rows become columns and columns become rows). |
-| [np.concatenate()]() | Joins two or more arrays along a specified axis. |
-| [np.split()]()       | Splits an array into multiple sub-arrays along a specified axis. |
-| [np.sort()]()        | Sorts the elements of an array in ascending or descending order. |
-| [np.max()]()         | Returns the maximum value of an array. |
-| [np.min()]()         | Returns the minimum value of an array. |
-| [np.mean()]()        | Returns the mean of an array. |
-| [np.std()]()         | Returns the standard deviation of an array. |
-| [np.sum()]()         | Returns the sum of the elements in an array. |
-| [np.dot()]()         | Computes the dot product of two arrays. |
+| method                     | description |
+|----------------------------|-------------|
+| [np.zeros()](#npzeros)             | Returns an array of zeros with the specified shape and data type. |
+| [np.ones()](#npones)               | Returns an array of ones with the specified shape and data type. |
+| [np.arange()](#nparrange)          | Returns an array with evenly spaced values within a given interval. |
+| [np.linspace()](#nplinspace)       | Returns an array of evenly spaced numbers over a specified interval. |
+| [np.reshape()](#npreshape)         | Reshapes an array to the specified shape. |
+| [np.transpose()](#nptranspose)     | Transposes an array (rows become columns and columns become rows). |
+| [np.concatenate()](#npconcatenate) | Joins two or more arrays along a specified axis. |
+| [np.split()](#npsplit)             | Splits an array into multiple sub-arrays along a specified axis. |
+| [np.sort()](#npsort)        | Sorts the elements of an array in ascending or descending order. |
+| [np.max()](#npmax)          | Returns the maximum value of an array. |
+| [np.min()](#npmin)          | Returns the minimum value of an array. |
+| [np.mean()](#npmean)        | Returns the mean of an array. |
+| [np.std()](#npstd)          | Returns the standard deviation of an array. |
+| [np.sum()](#npsum)          | Returns the sum of the elements in an array. |
+| [np.dot()](#npdot)          | Computes the dot product of two arrays. |
 
 
 ## np.zeros()
@@ -568,10 +574,10 @@ arr = np.zeros((3, 4))
 ```
 <code style="background-color: #d9d9e3;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
 print(arr) <br><br>
-# Output: <br>
-# [[0. 0. 0. 0.] <br>
-# &nbsp;[0. 0. 0. 0.] <br>
-# &nbsp;[0. 0. 0. 0.]]
+$ Output: <br>
+$ [[0. 0. 0. 0.] <br>
+$ &nbsp;[0. 0. 0. 0.] <br>
+$ &nbsp;[0. 0. 0. 0.]]
 </code>
 
 ## np.ones()
@@ -587,8 +593,8 @@ arr = np.ones(5)
 ```
 <code style="background-color: #d9d9e3;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
 print(arr) <br><br>
-# Output: <br>
-# [1. 1. 1. 1. 1.]
+$ Output: <br>
+$ [1. 1. 1. 1. 1.]
 </code>
 
 ## np.arange()
@@ -604,8 +610,8 @@ arr = np.arange(10)
 ```
 <code style="background-color: #d9d9e3;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
 print(arr) <br><br>
-# Output: <br>
-# [0 1 2 3 4 5 6 7 8 9]
+$ Output: <br>
+$ [0 1 2 3 4 5 6 7 8 9]
 </code>
 
 ## np.linspace()
@@ -621,8 +627,8 @@ arr = np.linspace(0, 1, 5)
 ```
 <code style="background-color: #d9d9e3;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
 print(arr) <br><br>
-# Output: <br>
-# [0.   0.25 0.5  0.75 1.  ]
+$ Output: <br>
+$ [0.   0.25 0.5  0.75 1.  ]
 </code>
 
 ## np.reshape()
@@ -641,9 +647,9 @@ arr_reshaped = np.reshape(arr, (2, 5))
 ```
 <code style="background-color: #d9d9e3;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
 print(arr_reshaped) <br><br>
-# Output: <br>
-# [[0 1 2 3 4] <br>
-# &nbsp;[5 6 7 8 9]]
+$ Output: <br>
+$ [[0 1 2 3 4] <br>
+$ &nbsp;[5 6 7 8 9]]
 </code>
 
 ## np.transpose()
@@ -661,10 +667,10 @@ arr_transposed = np.transpose(arr)
 ```
 <code style="background-color: #d9d9e3;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
 print(arr_transposed) <br><br>
-# Output: <br>
-# [[1 4] <br>
-# &nbsp;[2 5] <br>
-# &nbsp;[3 6]]
+$ Output: <br>
+$ [[1 4] <br>
+$ &nbsp;[2 5] <br>
+$ &nbsp;[3 6]]
 </code>
 
 ## np.concatenate()
@@ -689,17 +695,17 @@ result_a = np.concatenate((arr1, arr2), axis=0)
 ```
 <code style="background-color: #d9d9e3;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
 print(result_h) <br><br>
-# Output: <br>
-# [1 2 3 4 5 6] <br><br>
+$ Output: <br>
+$ [1 2 3 4 5 6] <br><br>
 ------ <br>
 print(result_v) <br><br>
-# Output: <br>
-# [[1 2 3] <br>
-# &nbsp;[4 5 6]] <br><br>
+$ Output: <br>
+$ [[1 2 3] <br>
+$ &nbsp;[4 5 6]] <br><br>
 ------ <br>
 print(result_a) <br><br>
-# Output: <br>
-# [1 2 3 4 5 6]
+$ Output: <br>
+$ [1 2 3 4 5 6]
 </code><br>
 
 <div style="background: #cff4fc; padding: 15px;">
@@ -719,9 +725,9 @@ sub_arrays = np.split(arr, 2, axis=0)
 ```
 <code style="background-color: #d9d9e3;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
 print(sub_arrays) <br><br>
-# Output: <br>
-# [array([[0, 1, 2, 3], [4, 5, 6, 7]]),  <br>
-# &nbsp;array([[ 8,  9, 10, 11], [12, 13, 14, 15]])]
+$ Output: <br>
+$ [array([[0, 1, 2, 3], [4, 5, 6, 7]]),  <br>
+$ &nbsp;array([[ 8,  9, 10, 11], [12, 13, 14, 15]])]
 </code>
 
 ## np.sort()
