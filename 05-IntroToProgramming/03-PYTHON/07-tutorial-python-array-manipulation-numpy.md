@@ -533,8 +533,82 @@ mat = np.matrix(arr)                    # matrix
 <div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">WARNING:</span>
 <br><span style="font-style:italic;"> Note that these methods are NOT available for NumPy arrays. However, some of them can be emulated using NumPy array methods. For example, the transpose of an array can be calculated using the <b>np.transpose</b> function, and the inverse of a matrix can be calculated using the <b>np.linalg.inv</b> function. </span>
+</div>
+
+
+## Read and Write to a file
+
+NumPy provides several options for Input/Output (I/O) operations for reading and writing data from and to various file formats. The complete list of available options can be explored in the official NumPy documentation at <a href="https://numpy.org/doc/stable/reference/routines.io.html" target="_blank">https://numpy.org/doc/stable/reference/routines.io.html  ⤴</a>
+
+Some of the popular I/O options are:
+* `np.save()` and `np.load()`
+* `np.savetxt()` and `np.loadtxt()`
+* `np.genfromtxt()`
+
+### *np.save() & np.load()*
+
+These are the most basic functions provided by NumPy for **saving and loading arrays in the binary `.npy` format**.
+
+<div style="background: #dff5b3; padding: 15px;">
+<span style="font-weight:800;">NOTE:</span>
+<br><span style="font-style:italic;"> The .npy format is a binary format that stores the data in a raw binary format.  </span>
 </div><br>
 
+The `np.save()` function saves an array to a binary file in `.npy` format, while the `np.load()` function loads the data from the binary file into an array.
+
+**Example usage:**
+```
+import numpy as np
+
+# Creating a sample array
+arr = np.array([1, 2, 3, 4, 5])
+
+# Saving the array to a binary file
+np.save('sample.npy', arr)
+
+# Loading the data from the binary file
+loaded_arr = np.load('sample.npy')
+
+print(loaded_arr)
+```
+
+### *np.savetxt() & np.loadtxt()*
+
+These functions are used for **reading and writing arrays in text format**. The `np.savetxt()` function saves an array to a text file in a specified format, while the `np.loadtxt()` function loads the data from a text file into an array.
+
+**Example usage:**
+```
+import numpy as np
+
+# Creating a sample array
+arr = np.array([1, 2, 3, 4, 5])
+
+# Saving the array to a text file
+np.savetxt('sample.txt', arr)
+
+# Loading the data from the text file
+loaded_arr = np.loadtxt('sample.txt')
+
+print(loaded_arr)
+```
+
+### *np.genfromtxt()*
+
+This function is used to **load data from a text file with missing values**. It returns an array with the missing values replaced with a default value or a specified value.
+
+**Example usage:**
+```
+import numpy as np
+
+# Creating a sample text file with missing values
+with open('sample.txt', 'w') as f:
+    f.write('1,2,3\n4,5,\n7,,9\n')
+
+# Loading the data from the text file with missing values
+loaded_arr = np.genfromtxt('sample.txt', delimiter=',', filling_values=0)
+
+print(loaded_arr)
+```
 
 # Functions for Array operations
 
