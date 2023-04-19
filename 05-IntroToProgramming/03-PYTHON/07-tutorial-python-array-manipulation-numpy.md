@@ -169,7 +169,7 @@ The `ndarray` class provides many built-in methods and functions for working wit
 * slicing and indexing,
 * reshaping,
 * concatenation, and
-*stacking.
+* stacking.
 
 In addition to the `numpy.ndarray` class, NumPy has several other subclasses of arrays that have additional methods and properties for specific use cases:
 
@@ -207,7 +207,7 @@ Output:
 &nbsp;['a' 'a']]
 </code>
 
-*Here we created a 2x2 character array using np.chararray() function. The values are initialized with 'a'.*
+<i>Here we created a 2x2 character array using np.chararray() function. The values are initialized with 'a'.</i>
 </details>
 
 <details><summary><b>numpy.ma.MaskedArray()</b></summary>
@@ -224,7 +224,7 @@ Output:
 [1 -- 3]
 </code>
 
-*The numpy.ma.MaskedArray class is a subclass of numpy.ndarray that represents arrays with some masked values, which are treated as missing values. In this example, we create a 1D masked array with values 1, 2, and 3, but mask the value at index 1.*
+<i>The numpy.ma.MaskedArray class is a subclass of numpy.ndarray that represents arrays with some masked values, which are treated as missing values. In this example, we create a 1D masked array with values 1, 2, and 3, but mask the value at index 1.</i>
 </details>
 
 <details><summary><b>numpy.recarray()</b></summary>
@@ -241,9 +241,9 @@ Output:
 [(1, 'John') (2, 'Doe')]
 </code>
 
-*The numpy.recarray class is a subclass of numpy.ndarray that represents arrays with named fields, where each field has a different data type.  In this case, the record array has two fields: 'id' which is of integer data type and 'name' which is of Unicode string data type with a maximum length of 10 characters ('U10').*
-
-*The data of the record array is passed as a list of tuples, where each tuple represents a record with values for each field in the order they are specified in the dtype parameter. In this case, the list contains two tuples representing two records, each with an 'id' and 'name' field.*
+<i>The numpy.recarray class is a subclass of numpy.ndarray that represents arrays with named fields, where each field has a different data type.  In this case, the record array has two fields: 'id' which is of integer data type and 'name' which is of Unicode string data type with a maximum length of 10 characters ('U10').</i>
+<br><br>
+<i>The data of the record array is passed as a list of tuples, where each tuple represents a record with values for each field in the order they are specified in the dtype parameter. In this case, the list contains two tuples representing two records, each with an 'id' and 'name' field.</i>
 </details>
 
 <details><summary><b>numpy.datetime64()</b></summary>
@@ -260,7 +260,7 @@ Output:
 2022-12-25
 </code>
 
-*This code creates a scalar datetime object of the numpy.datetime64 class. The date "2022-12-25" is passed as a string to the np.datetime64() function, which returns a datetime object representing the specified date. The numpy.datetime64 class is used to represent dates and times in NumPy with nanosecond precision.*
+<i>This code creates a scalar datetime object of the numpy.datetime64 class. The date "2022-12-25" is passed as a string to the np.datetime64() function, which returns a datetime object representing the specified date. The numpy.datetime64 class is used to represent dates and times in NumPy with nanosecond precision.</i>
 </details>
 
 
@@ -533,7 +533,7 @@ mat = np.matrix(arr)                    # matrix
 <div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">WARNING:</span>
 <br><span style="font-style:italic;"> Note that these methods are NOT available for NumPy arrays. However, some of them can be emulated using NumPy array methods. For example, the transpose of an array can be calculated using the <b>np.transpose</b> function, and the inverse of a matrix can be calculated using the <b>np.linalg.inv</b> function. </span>
-</div>
+</div><br>
 
 
 # Functions for Array operations
