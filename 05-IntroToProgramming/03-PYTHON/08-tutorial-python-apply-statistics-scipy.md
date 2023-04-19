@@ -430,6 +430,7 @@ Assigns each data point to the nearest cluster centroid using vector quantizatio
 from scipy.cluster.vq import vq
 
 labels, _ = vq(data, centroids)
+print(labels)                           # output: [0 0 1 0 0]
 ```
 
 
