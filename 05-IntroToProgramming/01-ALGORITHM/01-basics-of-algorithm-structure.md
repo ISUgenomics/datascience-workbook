@@ -155,7 +155,7 @@ When you're creating algorithms, it's important to remember that <b>different pr
 
 *These resources can help you gain a deeper understanding of topics like conditional statements, loops, and other elements of algorithm structure, and how to use them effectively in your scripts or programs.*
 
-### Conditional Statements
+### *Conditional Statements*
 
 Conditional statements allow an algorithm to **perform different actions based on whether a certain condition is *true* or *false***. In programming, conditional statements are often written using the keywords `if`, `else if`, and `else`.
 
@@ -217,7 +217,7 @@ In Python, the syntax for conditional statements is <b>if</b> followed by the co
 </div>
 </details><br>
 
-### Loops
+### *Loops*
 
 **Loops allow an algorithm to repeat a certain action multiple times**, either for a fixed number of iterations or until a certain condition is met. In programming, there are two main types of loops: `for` loops and `while` loops.
 
