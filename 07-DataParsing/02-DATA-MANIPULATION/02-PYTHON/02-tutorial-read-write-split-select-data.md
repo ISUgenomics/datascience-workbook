@@ -147,7 +147,7 @@ Year,Location,American Goldfinch,Eastern Bluebird,Northern Cardinal,Ruby-throate
 ***Note that the first line contains the column names and the subsequent lines contain the data.***
 
 *You can download the complete `input.txt` file using one of the following buttons:* <br>
-<a href="https://downgit.github.io/#/home?url=https://github.com/ISUgenomics/datascience-workbook/blob/main/07-DataParsing/assets/data/bird_species/input.csv" target="_blank"><input type="button" value="Download .zip ⤵" style="background-color: #e7e7e7; color: black;" /></a>
+
 <a href="https://raw.githubusercontent.com/ISUgenomics/datascience-workbook/main/07-DataParsing/assets/data/bird_species/input.csv" target="_blank"><input type="button" value="Open raw ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 <a id="raw-url" href="https://github.com/ISUgenomics/datascience-workbook/blob/main/07-DataParsing/assets/data/bird_species/input.csv" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 
