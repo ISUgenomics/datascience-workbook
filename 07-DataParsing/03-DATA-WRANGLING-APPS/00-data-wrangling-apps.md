@@ -41,6 +41,46 @@ The applications are developed in Python programming language and requires impor
 Considering you will be using various applications that require different dependencies, you need neat way to manage them. A good choice is <a href="https://docs.conda.io/en/latest/" target="_blank">Conda ⤴</a> environment management system that runs on all: Windows, macOS, and Linux.<br>
 If you are not already using Conda, go to the <a href="https://datascience.101workbook.org/03-SetUpComputingMachine/02C-basic-developer-libraries" target="_blank">Basic Developer Libraries ⤴</a> tutorial for a step-by-step guide on how to set up the environment manager on your target computing machine. <i>If you have a Mac with a dual processor (Arm64 and Intel's x86-64) you can find dedicated setup instructions in section <a href="https://datascience.101workbook.org/03-SetUpComputingMachine/03A-tutorial-installations-on-mac#install-developer-libraries" target="_blank">Install Basic Developer Tools ⤴</a> of the <a href="https://datascience.101workbook.org/03-SetUpComputingMachine/03A-tutorial-installations-on-mac" target="_blank">Installations on MacBook Pro ⤴</a> tutorial.</i>
 
+
+## *Python Setup*
+
+To run the applications collected in the <a href="https://github.com/ISUgenomics/data_wrangling" target="_blank">data_wrangling ⤴</a> repo, you will need a computing machine with Python installed.
+
+**on the HPC cluster** <br>
+If you want to use the HPC infrastructure, then usually various versions of Python are pre-installed and available to load using `module` system. <br>
+Use the following command to display Python versions:
+```
+module avail python
+```
+Then, load the selected variant:
+```
+module load python/python-3.9
+```
+**on your local machine** <br>
+The simplest way to check if you have Python already pre-installed on your local machine is to run in the terminal window the following command:
+```
+python --version
+```
+or
+```
+python3 --version
+```
+If the returned value will be something like `Python 3.8.9`, you are good to **getting started with data_wrangling** apps. *Note that python in version 3.x is required.*<br>
+Otherwise, if you receive an error message `command not found`, **you will need to install Python**. You can make up for this step by following the hands-on tutorial provided in section <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02-python-programming-environment" target="_blank">Python Programming Environment(s)  ⤴</a>: <b><a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-python-setup-locally" target="_blank">Local Python setup on your computing machine  ⤴</a></b>.
+
+
+## *Conda Setup*
+
+<div style="background: #dff5b3; padding: 15px;">
+<span style="font-weight:800;">NOTE:</span>
+<br><span style="font-style:italic;">
+Conda is an open-source package management system and environment management system for installing and managing packages and dependencies in Python and other programming languages. Conda allows users to create and <b>manage isolated environments for different projects or workflows</b>, each with its own set of packages and dependencies.
+</span>
+</div><br>
+
+<span style="color: #ff3870;font-weight: 500;">Learn more about Conda basics in section <b><a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-python-setup-locally#3-manage-python-environments" target="_blank">3. Manage Python environments  ⤴</a></b> of the tutorial <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-python-setup-locally" target="_blank">Local Python setup on your computing machine  ⤴</a>.</span>
+
+
 **Test Conda installation**
 
 To test your Conda configuration, in the terminal window, run the command provided below:
@@ -89,6 +129,7 @@ Once environment of your choice is activated, you can install new dependencies r
 ```
 pip install pandas
 pip install numpy
+pip install openpyxl
 ```
 
 <div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
@@ -97,6 +138,13 @@ pip install numpy
 Note that if you do not indicate the version of the module you are installing, the latest stable release will usually be installed. <br><br>
 When you install by <code>conda</code>, assign the module's version using a single equals sign <b><code>=</code></b>. <br><br>
 When you install by <code>pip</code>, assign the module's version using a double equals sign <b><code>==</code></b>.
+</span>
+</div>
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+Some applications may have <b>additional requirements</b> listed in the corresponding tutorial. When necessary, you can install them in the conda environment using the <b>pip</b> command.
 </span>
 </div>
 
