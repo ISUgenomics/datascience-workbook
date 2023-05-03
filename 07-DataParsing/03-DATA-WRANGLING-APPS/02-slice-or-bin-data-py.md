@@ -52,43 +52,10 @@ In the output, the **R** = 'ranges-column' (with the default *'position'* header
 
 ## Requirements
 
-Requirements: python3, pandas, numpy
+* `python3`
+* `pandas`
+* `numpy`
 
-<details><summary>Install Python3 on various operating systems <i>(if you don't have it yet)</i></summary>
-
-<div style="margin-left: 20px; margin-top: 10px;">
-<li> Python3 - Ubuntu<br>
-<code style="background-color: #e4f0f0; width:100%; display: block; margin-top:5px;">
-<pre style="margin: 0px; padding-left: 15px;">
-sudo apt-get update
-sudo apt-get install python3</pre>
-</code>
-</li><br>
-
-<li> Python3 - macOS<br>
-<i>if not yet, first install Homebrew:</i><br>
-<code style="background-color: #e4f0f0; width:100%; display: block; margin-top:5px;">
-<pre style="margin: 0px; padding-left: 15px; overflow-x:scroll;">
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</pre>
-</code><br>
-<code style="background-color: #e4f0f0;  width:100%; display: block; padding: 15px 0px;">
-brew install python3
-</code>
-</li><br>
-
-<li>Python3 - Windows<br>
-Please follow the instructions provided at <a href="https://phoenixnap.com/kb/how-to-install-python-3-windows" target="_blank">phoenixnap.com</a> .
-</li>
-</div>
-</details><br>
-
-
-**Install app requirements**
-
-```
-pip3 install pandas
-pip3 install numpy
-```
 
 ## Options
 
@@ -152,18 +119,15 @@ python3 bin_data.py -i input_file -l 0 -r 1
 
 *The example parses the single text-like input_file, where the <b>L</b> = 'label-column' has index 0, and <b>R</b> = 'ranges-column' has index 1.*
 
+<span style="color: #ff3870;font-weight: 500;">Explore more usage examples in the documentation of this app in the `data_wranglig` repo: <a href="https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data#example-usage" target="_blank">bin_data: Example usage  ⤴</a>.</span>
 
 # Hands-on tutorial
 
 ## **Environment setup**
 
-The application is developed in Python programming language and requires importing several useful  libraries. Thus, to manage dependencies, first you have to set up the Conda environment on your (local or remote) machine.<br>
+The application is developed in Python3 programming language and requires importing several useful  libraries. Thus, to manage dependencies, first you have to set up the Conda environment on your (local or remote) machine. Follow the instructions provided in section <a href="https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/00-data-wrangling-apps#environment-setup" target="_blank">Environment setup  ⤴</a> in the introduction to <a href="https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/00-data-wrangling-apps" target="_blank">Data Wrangling: use ready-made apps  ⤴</a> to get Python installed and create `data_wrangling` virtual environment using <b>install <a href="https://docs.conda.io/en/latest/" target="_blank">Conda ⤴</a></b>.
 
-* **When you don't have Conda yet...**
-
-To <b>install <a href="https://docs.conda.io/en/latest/" target="_blank">Conda ⤴</a></b> environment management system <b>and configure an instance for data wrangling applications</b>, follow a step-by-step instructions provided in the tutorial <a href="https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/00-data-wrangling-apps#environment-setup" target="_blank">Data Wrangling: <b>Environment setup ⤴</b></a>.
-
-* **Once you have Conda and the <i>data_wrangling</i> environment follow further steps below**
+<span style="color: #ff3870;font-weight: 500;">Once you have Conda and the <i>data_wrangling</i> environment follow further steps below.</span>
 
 **Activate existing Conda environment**
 
@@ -193,36 +157,21 @@ The <a href="https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data" t
 * <a href="https://pandas.pydata.org" target="_blank">pandas ⤴</a>, to create and manage data structure
 * <a href="https://numpy.org" target="_blank">numpy ⤴</a>, to manipulate advanced numerical data structures
 
-Generally, you can try to install modules with the `conda install {module=version}` command. However, since we initialized the **data_wrangling** environment with Python=3.9, we can also install modules using `pip install {module==version}`, as follows:
+If you use Conda environment management system and followed the instructions provided above in section [Environment setup](#environment-setup) then you are ready to get started with `Data Wrangling Apps` *(because the requirements were installed as basic dependencies in this virtual environment)*.
+
+Alternatively, if you want to use this app in system-wide mode *(without creating a virtual environment)*, then install the neccessary requirements using the commands:
 
 ```
-pip install pandas
-pip install numpy
+pip3 install pandas
+pip3 install numpy
 ```
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Note that if you do not indicate the version of the module you are installing, the latest stable release will usually be installed. <br><br>
-When you install by <code>conda</code>, assign the module's version using a single equals sign <b><code>=</code></b>. <br><br>
-When you install by <code>pip</code>, assign the module's version using a double equals sign <b><code>==</code></b>.
-</span>
-</div>
-
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;"> If you don't know whether a particular library is already installed in your Conda environment, you can check it using the <code>conda list</code> command. <br>
-Your terminal screen will display a list of installed software in the active environment. <br>
-<img src="../assets/images/03-conda_list.png" alt="conda list" width="100%">
-</span>
-</div><br>
 
 ## **Inputs**
 
 Before using the application, make sure your inputs has been properly prepared. First of all, the **data** in the input file must be **organized into columns**. The number of columns and rows is arbitrary, including **Big Data support** (text file size reaching GBs).
 
-*data structure in the example `input.txt`*
-<a href="https://downgit.github.io/#/home?url=https://github.com/ISUgenomics/data_wrangling/blob/main/bin_data/data/input.txt" target="_blank"><input type="button" value="Download .zip ⤵" style="background-color: #e7e7e7; color: black;" /></a>
+*data structure in the example `input.txt` :*
 <a href="https://raw.githubusercontent.com/ISUgenomics/data_wrangling/main/bin_data/data/input.txt" target="_blank"><input type="button" value="Open raw ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 <a id="raw-url" href="https://github.com/ISUgenomics/data_wrangling/blob/main/bin_data/data/input.txt" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 ```
@@ -359,8 +308,6 @@ git clone https://github.com/ISUgenomics/data_wrangling.git
 svn export https://github.com/ISUgenomics/data_wrangling/trunk/bin_data
 ```
 
-* *download zipped folder*
-<a href="https://downgit.github.io/#/home?url=https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data" target="_blank"><input type="button" value="Download .zip ⤵" style="background-color: #e7e7e7; color: black;" /></a>
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
@@ -378,8 +325,7 @@ This variant is dedicated to **read raw data organized into columns** and stored
 
 The input can be a text file with any number of data columns and of any type (strings or numerical). Note that <b>in Python, the numbering starts from 0</b>, so the <u>index of the first column is 0</u>.
 
-*File Preview* of example `input.txt`
-<a href="https://downgit.github.io/#/home?url=https://github.com/ISUgenomics/data_wrangling/blob/main/bin_data/data/input.txt" target="_blank"><input type="button" value="Download .zip ⤵" style="background-color: #e7e7e7; color: black;" /></a>
+*File Preview* of example `input.txt` :
 <a href="https://raw.githubusercontent.com/ISUgenomics/data_wrangling/main/bin_data/data/input.txt" target="_blank"><input type="button" value="Open raw ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 <a id="raw-url" href="https://github.com/ISUgenomics/data_wrangling/blob/main/bin_data/data/input.txt" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 
@@ -446,8 +392,7 @@ Note you can also provide as an input a custom directory with a set of files tha
 
 Typically the directory type of input will be `-i CHUNKS` as the default output of parsing the raw input file. However, you can provide a path to any custom directory of CSV files.
 
-*Directory Preview* of example `CHUNKS`
-<a href="https://downgit.github.io/#/home?url=https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data/data/CHUNKS" target="_blank"><input type="button" value="Download .zip ⤵" style="background-color: #e7e7e7; color: black;" /></a>
+*Directory Preview* of example `CHUNKS` :
 <a id="raw-url" href="https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data/data/CHUNKS" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 
 ![Data chunks](../assets/images/03-bin_data-ex1_chunks.png)
@@ -482,7 +427,6 @@ The example is basically the same as [example E1](https://datascience.101workboo
 **Input**
 
 We will use label-based data chunks created in [example E1](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#e1-load-data-from-a-single-text-file) and stored in the `CHUNKS` directory. <br>
-<a href="https://downgit.github.io/#/home?url=https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data/data/CHUNKS" target="_blank"><input type="button" value="Download .zip ⤵" style="background-color: #e7e7e7; color: black;" /></a>
 <a id="raw-url" href="https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data/data/CHUNKS" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 
 *File Preview* of example `chunk_*.csv`
@@ -528,7 +472,6 @@ The example shows another variant of slicing procedure. The example shows anothe
 **Input**
 
 We will use label-based data chunks created in [example E1](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#e1-load-data-from-a-single-text-file) and stored in the `CHUNKS` directory. <br>
-<a href="https://downgit.github.io/#/home?url=https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data/data/CHUNKS" target="_blank"><input type="button" value="Download .zip ⤵" style="background-color: #e7e7e7; color: black;" /></a>
 <a id="raw-url" href="https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data/data/CHUNKS" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 
 *File Preview* of example `chunk_*.csv`
@@ -574,7 +517,6 @@ The example shows the third variant of the slicing procedure. Using the `-t 'val
 **Input**
 
 We will use label-based data chunks created in [example E1](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#e1-load-data-from-a-single-text-file) and stored in the `CHUNKS` directory. <br>
-<a href="https://downgit.github.io/#/home?url=https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data/data/CHUNKS" target="_blank"><input type="button" value="Download .zip ⤵" style="background-color: #e7e7e7; color: black;" /></a>
 <a id="raw-url" href="https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data/data/CHUNKS" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 
 *File Preview* of example `chunk_*.csv`
@@ -627,7 +569,6 @@ The **verbosity** level defines how much information will be printed on your ter
 **Input**
 
 We will use label-based data chunks created in [example E1](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#e1-load-data-from-a-single-text-file) and stored in the `CHUNKS` directory. <br>
-<a href="https://downgit.github.io/#/home?url=https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data/data/CHUNKS" target="_blank"><input type="button" value="Download .zip ⤵" style="background-color: #e7e7e7; color: black;" /></a>
 <a id="raw-url" href="https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data/data/CHUNKS" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 
 *File Preview* of example `chunk_*.csv`
