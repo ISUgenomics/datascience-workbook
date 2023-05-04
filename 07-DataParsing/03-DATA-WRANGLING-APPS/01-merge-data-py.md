@@ -170,8 +170,8 @@ strawberry,3/8,0.4
 ```
 
 *data structure in the example Excel input: `data_CN.xlsx`*
-<a href="https://raw.githubusercontent.com/ISUgenomics/data_wrangling/main/merge_data/data/input0.txt" target="_blank"><input type="button" value="Open raw ⤴" style="background-color: #e7e7e7; color: black;" /></a>
-<a id="raw-url" href="https://github.com/ISUgenomics/data_wrangling/blob/main/merge_data/data/input0.txt" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
+<a href="https://github.com/ISUgenomics/datascience-workbook/raw/main/07-DataParsing/assets/data/grain_quality/data_CN.xlsx" target="_blank"><input type="button" value="Download ⤵" style="background-color: #e7e7e7; color: black;" /></a>
+<a id="raw-url" href="https://github.com/ISUgenomics/datascience-workbook/blob/main/07-DataParsing/assets/data/grain_quality/data_CN.xlsx" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 
 ![02_data_wrangling_merge_1.png](../assets/images/02_data_wrangling_merge_1.png)
 
@@ -292,15 +292,15 @@ Two labs, Lab A and Lab B, were collaborating on a research project regarding qu
 Below is the preview of the required `data` and `labels` input files.
 
 * The *data_CN.xlsx* and *labels.xlsx* share the same column with **ARS labels**, even though in both files this column has a different name *(i.e., USDA# and ARS_Label, marked with the green frames)*. <br>
-<a href="https://raw.githubusercontent.com/ISUgenomics/datascience-workbook/main/07-DataParsing/assets/data/data_CN.xlsx" target="_blank"><input type="button" value="Open raw ⤴" style="background-color: #e7e7e7; color: black;" /></a>
+<a href="https://github.com/ISUgenomics/datascience-workbook/raw/main/07-DataParsing/assets/data/grain_quality/data_CN.xlsx" target="_blank"><input type="button" value="Download ⤵" style="background-color: #e7e7e7; color: black;" /></a>
 <a id="raw-url" href="https://github.com/ISUgenomics/datascience-workbook/blob/main/07-DataParsing/assets/data/grain_quality/data_CN.xlsx" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 
 * The *labels* file contains an additional column with `Sample Num` paired with the `ARS labels` and together they provide a set of matching pairs of labels for the experimental samples. <br>
-<a href="https://raw.githubusercontent.com/ISUgenomics/datascience-workbook/main/07-DataParsing/assets/data/grain_quality/labels.xlsx" target="_blank"><input type="button" value="Open raw ⤴" style="background-color: #e7e7e7; color: black;" /></a>
+<a href="https://github.com/ISUgenomics/datascience-workbook/raw/main/07-DataParsing/assets/data/grain_quality/labels.xlsx" target="_blank"><input type="button" value="Download ⤵" style="background-color: #e7e7e7; color: black;" /></a>
 <a id="raw-url" href="https://github.com/ISUgenomics/datascience-workbook/blob/main/07-DataParsing/assets/data/grain_quality/labels.xlsx" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 
 * The other `data` file, *data_NN.xlsx* contains measurements collected by the second lab and labeled with the `Sample Num` identifiers *(marked with the blue frames)*. <br>
-<a href="https://raw.githubusercontent.com/ISUgenomics/datascience-workbook/main/07-DataParsing/assets/data/grain_quality/data_NN.xlsx" target="_blank"><input type="button" value="Open raw ⤴" style="background-color: #e7e7e7; color: black;" /></a>
+<a href="https://github.com/ISUgenomics/datascience-workbook/raw/main/07-DataParsing/assets/data/grain_quality/data_NN.xlsx" target="_blank"><input type="button" value="Download ⤵" style="background-color: #e7e7e7; color: black;" /></a>
 <a id="raw-url" href="https://github.com/ISUgenomics/datascience-workbook/blob/main/07-DataParsing/assets/data/grain_quality/data_NN.xlsx" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 
 As you can see, the number of rows in the `labels` file is significantly higher than in the `data` files *(marked with the red frames)*.
