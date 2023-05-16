@@ -15,39 +15,38 @@ header:
 ---
 
 
-This is a list of the most commonly used Git commands and their functions.
+This is a list of the most commonly used Git commands in command line and VSCode with their functions.
 
-<br>
 
 # Git Commands for Command Line 
 
-| Category    | Command |  Function    |
+| Category  | Command |  Function  |
 |------------|-----------|-----------|
 | Creation    | `git init`  | Creates a new local repository  |
 |   | `git clone [url]`  | Clones a repository into a newly created directory  |
 |   | `git remote add origin [url]` | Sets the origin remote for the repository  |
 | Branching  | `git branch`  | Lists all branches in the repository  |
 |      | `git branch [branch-name]`   | Creates a new branch  |
-|      | `git checkout [branch-name]`                     | Switches to the specified branch |
+|      | `git checkout [branch-name]`     | Switches to the specified branch |
 |      | `git merge [branch]`   | Merges the specified branch into the current branch  |
 | Updating   | `git push origin [branch]`   | Pushes the branch to the remote repository  |
 |     | `git pull` | Fetches and merges changes from the remote repository |
 |     | `git fetch` | Retrieves the latest changes from the remote repository without merging |
 |    | `git remote -v`   | Lists all the remote repositories  |
 | Snapshotting     | `git add [file]` | Adds a file to the staging area    |
-|            | `git commit -m "[message]"`  | Commits the staged changes with a descriptive message    |
-|         | `git status` | Shows the status of files in the working directory |
+|  | `git commit -m "[message]"` | Commits the staged changes with a descriptive message |
+|  | `git status` | Shows the status of files in the working directory |
 | Configuration  | `git config --global user.name "[name]"`   | Sets the name you want attached to your commit transactions  |
-|     | `git config --global user.email "[email address]"` | Sets the email you want attached to your commit transactions   |
+|   | `git config --global user.email "[email address]"` | Sets the email you want attached to your commit transactions   |
 | Tagging | `git tag`  | Lists all tags in the repository  |
-|       | `git tag [tag-name]`  | Creates a new tag at the current commit  |
-|    | `git push --tags`   | Pushes all tags to the remote repository |
+|   | `git tag [tag-name]`  | Creates a new tag at the current commit  |
+|   | `git push --tags`   | Pushes all tags to the remote repository |
 | Working with Changes  | `git diff`   | Shows the differences between the working directory and the staging area  |
-|    | `git diff --staged`   | Shows the differences between the staging area and the last commit  |
-|    | `git restore [file]` | Discards changes in the working directory and restores the file to the last commit    |
+|   | `git diff --staged`  | Shows the differences between the staging area and the last commit  |
+|  | `git restore [file]` | Discards changes in the working directory and restores the file to the last commit    |
 |   | `git rm [file]`  | Removes a file from both the working directory and the staging area |
 |   | `git mv [old-path] [new-path]`  | Renames or moves a file  |
-| Commit History        | `git log`   | Displays the commit history in chronological order    |
+| Commit History        | `git log`   | Displays the commit history in chronological order   |
 |   | `git log --oneline` | Displays the simplified one-line commit history   |
 |   | `git show [commit]`   | Shows the details of a specific commit      |
 |   | `git blame [file]`  | Displays the commit and author information for each line of a file  |
