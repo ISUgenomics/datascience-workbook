@@ -15,9 +15,6 @@ header:
 ---
 
 
-## <span style="color: #ff3870;">New content coming soon!</span>
-
-
 # Introduction
 
 Version control is a system for **managing changes to software projects, documents, or any other set of files**. It provides a history of changes, so you can track who made changes and when, and it allows multiple people to collaborate on a project while ensuring that changes are properly managed and coordinated.

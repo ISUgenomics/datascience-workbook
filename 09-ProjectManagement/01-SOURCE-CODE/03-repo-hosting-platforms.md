@@ -15,8 +15,6 @@ header:
 ---
 
 
-## <span style="color: #ff3870;">New content coming soon!</span>
-
 # Introduction
 
 ## Online hosting of Git repos
