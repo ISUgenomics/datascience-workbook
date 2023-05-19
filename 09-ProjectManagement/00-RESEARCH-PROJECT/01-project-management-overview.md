@@ -24,16 +24,16 @@ There are a few key sections of project management:
 * **PROJECT PLANNING** <br>
 This involves defining the project scope, goals, and objectives, creating a project timeline, and determining the resources required to complete the project. This helps to ensure that the project stays on track, that resources are allocated effectively, and that the project is completed on time and within budget.
 
-* **RESOURCE MANAGEMENT** <br>
+* **<a href="https://datascience.101workbook.org/09-ProjectManagement/04-PRODUCTIVITY/00-resources-productivity" target="_blank">RESOURCE MANAGEMENT</a>** <br>
 This involves allocating the people, materials, and equipment needed to complete the project, as well as managing and tracking the use of these resources.
 
 * **DATA MANAGEMENT** <br>
 This involves organizing and storing the data collected during a scientific project, and ensuring that the data is accessible, secure, and well-documented. This is essential for ensuring the reproducibility of scientific results and for maintaining the credibility of the research.
 
-* **[VERSION CONTROL](https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/01-storage-version-control)** <br>
+* **<a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/01-storage-version-control" target="_blank">VERSION CONTROL</a>** <br>
 This is a critical aspect of scientific project management, as it allows scientists to keep track of the changes made to their code or data over time. It helps to ensure that scientists can collaborate effectively, keep their work organized, and maintain the integrity of their research.
 
-* **COLLABORATION & COMMUNICATION** <br>
+* **<a href="https://datascience.101workbook.org/09-ProjectManagement/03-COMMUNICATION/00-collaboration-communication" target="_blank">COLLABORATION & COMMUNICATION</a>** <br>
 Scientific projects often involve multiple researchers and institutions, and effective collaboration and communication are key to ensuring the success of the project. This includes using tools such as shared data repositories, wikis, and project management software to keep everyone informed and up-to-date on the project's progress.
 
 * **QUALITY ASSURANCE** <br>
