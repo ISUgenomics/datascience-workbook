@@ -28,12 +28,12 @@ In general, <a href="https://git-scm.com" target="_blank">Git  ⤴</a> is consid
 
 <a href="https://git-scm.com" target="_blank">Git  ⤴</a> is a **distributed version control system**, which means that each user has a full copy of the code repository on their own computer, rather than relying on a central repository. **Git is widely used by software developers and organizations.** This makes it ideal for teams working on large projects or for individuals who need to work offline. It was created by Linus Torvalds in 2005, and it has since become one of the most popular version control systems in use today. Git is known for its speed, reliability, and flexibility, and it is used by organizations of all sizes, from small open-source projects to large multinational corporations.
 
-If you are planning to contribute to any GIT-based repository, it is worthwhile for you to learn more about the useful options offered by git. In this case, use the hands-on tutorials that provide **instructions for more advanced git commands**:
+If you are planning to contribute to any GIT-based repository, it is worthwhile for you to learn more about the useful options offered by git. In this case, follow the hands-on tutorials:
 
-* <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02A-github-commands" target="_blank">Tutorial: Git commands (part 1)  ⤴</a>
-* <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02B-github-commands" target="_blank">Tutorial: Git commands (part 2)  ⤴</a>
+* <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02-intro-to-git" target="_blank">Tutorial: GIT - a distributed version control system  ⤴</a>
+* <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02A-git-cheatsheet" target="_blank">CheatSheet: GIT Commands  ⤴</a>
 
-In the next [section: Types of GIT-based repositories](#types-of-GIT-based-repositories), you will learn which popular **online platforms hosting repositories** use Git-based version control.
+In the next [section: Types of GIT-based repositories](#types-of-git-based-repositories), you will learn which popular **online platforms hosting repositories** use Git-based version control.
 
 
 ### • *Subversion (SVN)*
@@ -50,7 +50,7 @@ Subversion is also known for its **stability, scalability, and compatibility** w
 <a href="https://www.mercurial-scm.org/" target="_blank">Mercurial  ⤴</a> s a **distributed version control system** that is similar to Git. It was created in 2005, and it is widely used by software developers and organizations, especially those who host their projects at <a href="https://bitbucket.org" target="_blank">Bitbucket  ⤴</a>. Mercurial is designed to be **fast and lightweight**, and provides a number of **features for managing complex development workflows**, such as branching, merging, and issue tracking. It is also highly customizable and can be extended through the use of plugins and extensions. **Mercurial is known for its simplicity, performance, and ease of use.**
 
 
-## Types of GIT-based repositories
+## Types of `GIT`-based repositories
 
 <a href="https://git-scm.com" target="_blank">Git  ⤴</a> can be used to manage and version control any type of resource that is stored in a file and changes over time, whether it's code, data, documentation, or something else. The key benefit of using Git is that it allows you to **keep track of changes over time & revert back to previous versions** if needed, and collaborate with others on a project.
 
