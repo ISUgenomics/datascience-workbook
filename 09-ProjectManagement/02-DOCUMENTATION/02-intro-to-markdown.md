@@ -1,8 +1,7 @@
 ---
 title: "Introduction to Markdown"
 layout: single
-author: Andrew Severin
-author: Sharu Paul
+author: Andrew Severin, Sharu Paul
 author_profile: true
 header:
   overlay_color: "444444"
