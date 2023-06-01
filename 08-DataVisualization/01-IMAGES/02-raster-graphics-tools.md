@@ -178,27 +178,27 @@ After installing GIMP on different operating systems, you can find and launch th
 
 **WINDOWS**
 
-1. `Start Menu:` Click on the `Start` button located in the lower-left corner of the screen. In the search bar, type "GIMP" and press `Enter`. The GIMP application should appear in the search results. Click on it to launch the program.
+**1.** `Start Menu:` Click on the `Start` button located in the lower-left corner of the screen. In the search bar, type "GIMP" and press `Enter`. The GIMP application should appear in the search results. Click on it to launch the program.
 
 or
 
-2. `Desktop Shortcut`: If you selected the option to create a desktop shortcut during the installation process, you can find the GIMP icon on your desktop. Double-click on the icon to open GIMP.
+**2.** `Desktop Shortcut`: If you selected the option to create a desktop shortcut during the installation process, you can find the GIMP icon on your desktop. Double-click on the icon to open GIMP.
 
 **macOS**
 
-1. `Launchpad`: Click on the Launchpad icon in the Dock *(the rocket ship icon)*. Use the search bar at the top and type "GIMP." As you start typing, the search results will narrow down, and you should see the GIMP icon. Click on it to launch GIMP.
+**1.** `Launchpad`: Click on the Launchpad icon in the Dock *(the rocket ship icon)*. Use the search bar at the top and type "GIMP." As you start typing, the search results will narrow down, and you should see the GIMP icon. Click on it to launch GIMP.
 
 or
 
-2. `Applications Folder`: Open a Finder window and navigate to the **Applications** folder. Scroll through the list of applications until you find GIMP. Double-click on the GIMP icon to open the program.
+**2.** `Applications Folder`: Open a Finder window and navigate to the **Applications** folder. Scroll through the list of applications until you find GIMP. Double-click on the GIMP icon to open the program.
 
 **Linux: Ubuntu**
 
-1. `Dash/Search`: Click on the "Show Applications" button *(usually located at the bottom left or top left corner of the screen)*. In the search bar, type "GIMP" and press Enter. The GIMP application should appear in the search results. Click on it to launch GIMP.
+**1.** `Dash/Search`: Click on the "Show Applications" button *(usually located at the bottom left or top left corner of the screen)*. In the search bar, type "GIMP" and press Enter. The GIMP application should appear in the search results. Click on it to launch GIMP.
 
 or
 
-2. `Terminal`: Open a terminal window and type "gimp" *(without quotes)* and press Enter. GIMP should start running in the terminal. You can also create a desktop shortcut or add GIMP to your application launcher for easier access.
+**2.** `Terminal`: Open a terminal window and type "gimp" *(without quotes)* and press Enter. GIMP should start running in the terminal. You can also create a desktop shortcut or add GIMP to your application launcher for easier access.
 
 
 ## Opening an Image
@@ -207,27 +207,61 @@ or
 2. Navigate to the location where your image is saved and select it.
 3. Click on the `Open` button to load the image into GIMP.
 
+![01-raster_gimp_open.png](../assets/images/01-raster_gimp_open.png)
+
 ## Image Manipulation
 
 ### Adding Text
 
-Select the **Text Tool** from the toolbox or press `Shift+T`. Click on the image and start typing to add text. Customize font, size, color, and alignment using the tool options.
+Select the **Text Tool** from the toolbox or press `T`. Click on the image and start typing to add text. Customize font, size, color, and alignment using the tool options.
+
+![01-raster_gimp_text.png](../assets/images/01-raster_gimp_text.png)
+
+When adding text in GIMP, it automatically creates a new layer on the image, allowing the text to be moved or edited later if needed.
 
 ### Cropping
 
-Select the **Crop Tool** from the toolbox on the left or press `Shift+C`. Click and drag to define the area you want to keep, and press Enter to crop the image.
+Select the **Crop Tool** from the toolbox on the left or press `Shift+C`. Click and drag to define the area you want to keep, and press `Enter` to crop the image.
+
+![01-raster_gimp_crop.png](../assets/images/01-raster_gimp_crop.png)
 
 ### Resizing
 
-Go to `Image` in the menu bar, select `Scale Image` or use the shortcut `Ctrl+Shift+I`. Specify the desired width and height or adjust the percentage. Click `Scale` to resize the image.
+Go to **Image** tab in the menu bar, select `Scale Image` or right-click on the image to display the context menu, then select `Image -> Scale Image`. Specify the desired width and height in selected units *(e.g., pixels, inches, percentage)* and decide to keep proportion of the dimensions. Click `Scale` to resize the image.
+
+![01-raster_gimp_resize1.png](../assets/images/01-raster_gimp_resize1.png)
+
+![01-raster_gimp_resize2.png](../assets/images/01-raster_gimp_resize2.png)
 
 ### Rotating
 
-Select the **Rotate Tool** from the toolbox or press `Shift+R`. Click and drag to rotate the image. Use the `Angle` input in the tool options to set the desired rotation angle.
+Select the **Rotate Tool** from the toolbox or press `Shift+R`. Click and drag to rotate the image. Use the `Angle` input in the tool options to set the desired rotation angle. Click `Rotate` to approve the rotation.
+
+![01-raster_gimp_rotate.png](../assets/images/01-raster_gimp_rotate.png)
 
 ### Adjusting Colors
 
-Go to `Colors` in the menu bar and explore options like `Brightness-Contrast`, `Levels`, or `Hue-Saturation` to make adjustments to the image's color and tone.
+Go to **Colors** tab in the menu bar and explore options like:
+* `Color Balance` - adjust color distribution
+* `Color Temperature`
+* `Hue-Saturation` - adjust hue, saturation, and lightness
+* `Brightness-Contrast`
+* `Levels` - adjust color levels
+
+to make adjustments to the image's color and tone.
+
+<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">WARNING:</span>
+<br><span style="font-style:italic;">
+Keep caution when editing layers in GIMP and ensure the correct layer is selected to avoid unintended modifications. To change the active layer in GIMP, go to the <b>Layers</b> dialog panel (typically on the bottom-right) and click on the layer intended for edition. The currently active layer is highlighted. See <a href="https://datascience.101workbook.org/08-DataVisualization/01-IMAGES/02-raster-graphics-tools#layers">Layers section</a> for more details.
+</span>
+</div><br>
+
+![01-raster_gimp_colors1.png](../assets/images/01-raster_gimp_colors1.png)
+
+In the pop-up window adjust values of the parameters and click `OK` to approve.
+
+![01-raster_gimp_colors2.png](../assets/images/01-raster_gimp_colors2.png)
 
 
 ## Layers and Effects
