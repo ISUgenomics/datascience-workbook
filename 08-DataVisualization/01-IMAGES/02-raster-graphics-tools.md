@@ -75,6 +75,35 @@ The scientific community relies on transparent and unbiased reporting of results
 It is crucial to maintain the integrity and credibility of scientific research by presenting accurate and unaltered data. Altering or manipulating research results using raster graphic editing tools can lead to misrepresentation, distortion of findings, and a breach of scientific ethics.</span>
 </div>
 
+## Common file formats: PNG, JPEG, TIFF
+
+<div style="background: #dff5b3; padding: 15px;">
+<span style="font-weight:800;">NOTE:</span>
+<br><span style="font-style:italic;">
+Raster graphics formats are image file formats that store and represent images as a grid of pixels, where each pixel contains color and intensity information. These formats are widely used for various applications, including digital photography, graphic design, and web graphics.
+</span>
+</div><br>
+
+Each raster graphics format offers unique features and characteristics, catering to different needs and use cases. The choice of format depends on factors such as image complexity, desired image quality, transparency requirements, file size considerations, and compatibility with specific software or platforms.
+
+**PNG** *(Portable Network Graphics)* <br>
+PNG is a versatile format that **supports lossless compression**, preserving image quality without any loss of information. It also **supports alpha channel transparency**, allowing for the creation of images with irregular or non-rectangular shapes.
+
+**JPEG** *(Joint Photographic Experts Group)* <br>
+JPEG is a widely used format for storing digital photographs and complex images. It **uses lossy compression**, which reduces file size by selectively discarding image data. This can result in a **smaller file size** but may lead to a slight loss of image quality.
+
+**TIFF** *(Tagged Image File Format)* <br>
+TIFF is a versatile format used for storing high-quality images with **support for lossless compression**. It allows for multiple layers, color depths, and embedded metadata. TIFF files are commonly used in professional environments, such as printing and archiving. It also supports a **flexible metadata storage**.
+
+**GIF** *(Graphics Interchange Format)* <br>
+GIF **supports animation**, allowing multiple frames to be combined into a single file. It also **supports indexed color**, where a limited palette of colors is used **to reduce file size**. This makes GIF a popular choice for simple animations and graphics with solid colors.
+
+**BMP** *(Bitmap)* <br>
+BMP is a straightforward format that **stores images pixel by pixel without any compression**. It supports both color and grayscale images and is widely supported on various operating systems. However, the lack of compression results in **larger file sizes** compared to other formats.
+
+**PSD** *(Photoshop Document)* <br>
+PSD is **Adobe Photoshop's native file format**, supporting layers, masks, and other advanced features. It allows for **non-destructive editing** and retains all the information, making it suitable for complex graphic designs and professional workflows.
+
 
 ## Raster Graphics Tools
 
@@ -268,12 +297,23 @@ In the pop-up window adjust values of the parameters and click `OK` to approve.
 
 ### Layers
 
-Go to `Windows` in the menu bar and select `Dockable Dialogs` followed by `Layers`. The Layers dialog will appear. Click on the `New Layer` button at the bottom to add a new layer. Experiment with different blending modes, opacity settings, and layer arrangements to achieve desired effects.
+Go to `Windows` in the menu bar and select `Dockable Dialogs` followed by `Layers`. The Layers dialog will appear. Click on the `New Layer` button at the bottom to add a new layer.
+
+![01-raster_gimp_layer.png](../assets/images/01-raster_gimp_layer.png)
+
+Experiment with different `New Layer` options, including blending modes and opacity settings. You can also modify a new layer with using various toolbox options, e.g., you can use the `Bucket fill tool` to change a color of the background. Finally, arrange the stack of all layers to achieve desired transparency effects.
+
+![01-raster_gimp_layer2.png](../assets/images/01-raster_gimp_layer2.png)
 
 ### Filters
 
-Go to `Filters` in the menu bar and explore various filter categories like `Blur`, `Sharpen`, or `Artistic` to apply effects to your image. Experiment with different filters and adjust their settings to achieve desired results.
+Go to `Filters` in the top menu bar and explore various filter categories like `Blur`, `Light and Shadow`, or `Artistic` to apply effects to your image.
 
+![01-raster_gimp_filers.png](../assets/images/01-raster_gimp_filters.png)
+
+For example, experiment with different `Light and Shadow` filters such as `Lighting Effects` or `Long Shadow` and adjust their settings to achieve desired results.
+
+![01-raster_gimp_shadow.png](../assets/images/01-raster_gimp_shadow.png)
 
 ## Saving and Exporting
 
