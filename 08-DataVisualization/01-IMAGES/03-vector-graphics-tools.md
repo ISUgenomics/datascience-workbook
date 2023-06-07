@@ -25,7 +25,7 @@ Vector graphics offer scalability, easy editing, and small file sizes, making th
 
 | PROS | CONS |
 |------|------|
-|`Photo Editing and Manipulation` <br>Vector graphics are **resolution-independent**, meaning they can be scaled up or down without any loss of quality. This makes them ideal for projects that require artwork in various sizes, such as logos, illustrations, and print materials.    |`Complexity for Photorealistic Images` <br>Vector graphics are not well-suited for highly detailed and photorealistic images. Since they are based on mathematical equations, creating intricate textures, gradients, and realistic effects can be challenging. |
+|`Scalability` <br>Vector graphics are **resolution-independent**, meaning they can be scaled up or down without any loss of quality. This makes them ideal for projects that require artwork in various sizes, such as logos, illustrations, and print materials.    |`Complexity for Photorealistic Images` <br>Vector graphics are not well-suited for highly detailed and photorealistic images. Since they are based on mathematical equations, creating intricate textures, gradients, and realistic effects can be challenging. |
 |`Editability` <br>Vector graphics are composed of individual objects and mathematical equations that define their properties. This allows for **easy editing and modification of shapes, colors, and other attributes**. It also enables efficient workflow and flexibility when making changes to the artwork.    |`Limited Representation of Continuous Tones` <br>Vector graphics are inherently composed of solid colors and well-defined shapes. They struggle to represent continuous tonal variations found in photographs or highly detailed images.|
 |`Small File Sizes` <br>Vector graphics typically have smaller file sizes compared to raster graphics. Since vector graphics store information mathematically, they only need to record the equations and properties of the objects, resulting in **compact file sizes**. This makes them easier to store, share, and load on various devices and platforms.                     |`Performance Limitations` <br>While vector graphics are efficient in terms of file size, rendering complex vector artwork can sometimes require significant processing power. This can be a disadvantage when working with large and intricate vector graphics, as it may slow down performance or require powerful hardware.|
 
@@ -37,7 +37,7 @@ Here are some notable applications of vector graphics in science:
 
 | Graphics example | Scope of Applications |
 |------------------|-------------------------|
-|![](../assets/images/01-vector_illustration.png)|**Scientific Illustration** <br>Vector graphics are widely used in scientific illustration to create accurate and visually appealing representations of biological organisms, anatomical structures, geological formations, and more. The scalability and precise editing capabilities of vector graphics make them ideal for illustrating complex scientific concepts.|
+|<img width="800" src="../assets/images/01-vector_illustration.png">|**Scientific Illustration** <br>Vector graphics are widely used in scientific illustration to create accurate and visually appealing representations of biological organisms, anatomical structures, geological formations, and more. The scalability and precise editing capabilities of vector graphics make them ideal for illustrating complex scientific concepts.|
 |![](../assets/images/01-vector_diagram.png)|**Data Visualization** <br>Vector graphics are employed in data visualization to present scientific data in a visually engaging and informative manner. Charts, graphs, and diagrams created with vector graphics tools help researchers and scientists communicate their findings effectively, allowing for easy understanding and analysis of complex datasets.|
 |![](../assets/images/01-vector_molecular.png)|**Molecular Modeling** <br>Vector graphics find applications in molecular modeling by creating 3D representations of molecules and protein structures. Vector-based software allows scientists to manipulate and study these structures, highlighting specific regions and interactions, aiding in drug discovery, and understanding molecular behavior.|
 |![](../assets/images/01-vector_physics.png)|**Physics Simulations** <br>Vector graphics play a role in visualizing and simulating physical phenomena. Using vector graphics, scientists can create interactive simulations and models of particle interactions, gravitational forces, electromagnetic fields, and more.|
@@ -49,7 +49,7 @@ Here are some notable applications of vector graphics in science:
 
 Creating vector graphics offers greater potential for future modification and reuse compared to raster graphics due to their scalability, non-destructive editing, and ability to store object properties as mathematical equations, allowing for easy adjustments, modifications, and repurposing of the artwork. Overall, modifying vector graphics offers great flexibility, precision, and efficiency. Also, it is generally considered easier and more user-friendly than raster editing approaches.
 
-<span style="color: #ff3870;font-weight: 500;"> Knowing editing techniques of vector graphics can be highly beneficial for scientists in various ways.</span><br>
+<span style="color: #ff3870;font-weight: 500;"> Knowing editing techniques of vector graphics can be highly beneficial for scientists!</span><br>
 
 Editing vector graphics involves manipulating and modifying the various elements within the artwork. Here are several examples of common editing techniques used in vector graphics:
 * **Shape Modification** <br>*Vector graphics tools allow for precise editing of shapes. Users can adjust the size, position, and proportions of shapes, as well as modify their curves and corners. For instance, a circle can be transformed into an ellipse or a square can be rounded to create a softer shape.*
@@ -82,7 +82,7 @@ to ensure accurate representation and responsible use of visual materials.
 It is crucial to maintain the integrity and credibility of scientific research by presenting accurate and unaltered data. Altering or manipulating research results using vector graphic editing tools can lead to misrepresentation, distortion of findings, and a breach of scientific ethics.</span>
 </div>
 
-## Common file formats: SVG, AI, EPS
+## Common file formats: <br>SVG, AI, EPS
 
 <div style="background: #dff5b3; padding: 15px;">
 <span style="font-weight:800;">NOTE:</span>

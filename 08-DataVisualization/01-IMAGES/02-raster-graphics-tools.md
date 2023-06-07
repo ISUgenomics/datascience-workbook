@@ -40,7 +40,7 @@ Here are some notable applications of raster graphics in science:
 
 | Graphics example | Discipline Applications |
 |------------------|-------------------------|
-|![](../assets/images/01-raster_astronomical.jpeg)|**Astronomical Imaging** <br>Raster graphics are extensively used in astronomical imaging to capture and analyze images of celestial objects and phenomena. Raster images help scientists study distant galaxies, star formations, cosmic radiation, and other astronomical events, contributing to our understanding of the universe.|
+|<img width="800" src="../assets/images/01-raster_astronomical.jpeg">|**Astronomical Imaging** <br>Raster graphics are extensively used in astronomical imaging to capture and analyze images of celestial objects and phenomena. Raster images help scientists study distant galaxies, star formations, cosmic radiation, and other astronomical events, contributing to our understanding of the universe.|
 |![](../assets/images/01-raster_satelite.png)|**Remote Sensing and GIS** <br>Raster graphics play a crucial role in remote sensing and geographic information systems (GIS). Satellite imagery, aerial photographs, and sensor data are often represented as raster images to analyze land cover, monitor environmental changes, study ecosystems, and aid in urban planning.|
 |![](../assets/images/01-raster_microscopy.jpeg)|**Imaging and Microscopy** <br>Raster graphics are widely employed in medical imaging, microscopy, and other imaging techniques. They are used to represent and analyze detailed images of cells, tissues, and structures, allowing scientists to study biological processes, detect abnormalities, and aid in diagnoses.|
 |![](../assets/images/01-raster_nanomaterials.jpeg)|**Electron Microscopy** <br>In materials science and nanotechnology, raster graphics are utilized in electron microscopy to capture and analyze high-resolution images of materials at the atomic scale. Raster images enable scientists to examine the structural properties, surface morphology, and composition of various materials.|
@@ -51,7 +51,7 @@ Here are some notable applications of raster graphics in science:
 
 ### Applications of editing raster graphics
 
-<span style="color: #ff3870;font-weight: 500;"> Knowing editing techniques of raster graphics can be highly beneficial for scientists in various ways.</span><br>
+<span style="color: #ff3870;font-weight: 500;"> Knowing editing techniques of raster graphics can be highly beneficial for scientists!</span><br>
 Here are several examples of how proficiency in raster graphic editing can assist you in visualizing scientific results:
 * **Annotation and Labeling** <br>*Adding annotations and labels to images is a common practice in scientific research. Scientists can use raster graphic tools to annotate images with text, arrows, and other graphical elements to provide context, highlight specific regions, or explain key findings. This helps in clearly communicating important information to peers or when publishing research.*
 
@@ -75,7 +75,7 @@ The scientific community relies on transparent and unbiased reporting of results
 It is crucial to maintain the integrity and credibility of scientific research by presenting accurate and unaltered data. Altering or manipulating research results using raster graphic editing tools can lead to misrepresentation, distortion of findings, and a breach of scientific ethics.</span>
 </div>
 
-## Common file formats: PNG, JPEG, TIFF
+## Common file formats: <br>PNG, JPEG, TIFF
 
 <div style="background: #dff5b3; padding: 15px;">
 <span style="font-weight:800;">NOTE:</span>
