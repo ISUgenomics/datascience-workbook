@@ -160,51 +160,414 @@ Each of these vector graphics tools offers unique features and strengths, cateri
 ## <span style="color: #ff3870;">New content coming soon!</span>
 
 
-<!--
 ## Features summary
+
+**Cross-platform availability** <br>
+Inkscape is available for Windows, macOS, and Linux, ensuring broad compatibility across different operating systems.
+
+**User-friendly interface** <br>
+Inkscape provides an intuitive and user-friendly interface, with customizable toolbars, panels, and keyboard shortcuts, allowing users to personalize their workspace for optimal productivity.
+
+**Support for many formats** <br>
+Inkscape supports a wide range of vector and image formats, including SVG (its native format), EPS, PDF, AI, DXF, PNG, JPEG, and more. This allows for seamless import and export of files with other software and platforms.
+
+**Plethora of features for image manipulation and editing** <br>
+* `Editing Tools`: Inkscape offers a comprehensive set of editing tools, including selection, drawing, shaping, transforming, aligning, and path editing tools. Users can manipulate objects, apply transformations, adjust colors, and create complex shapes with precision and ease.
+
+* `Text Support`: Inkscape supports text editing, including options for font selection, text manipulation, text-on-path, and text flow control. Users can create and edit text elements to complement their designs.
+
+* `Filters and Effects`: Inkscape provides a range of filters and effects to enhance the appearance of vector graphics. Users can apply blur, drop shadow, bevel, emboss, and other effects to create visually appealing designs.
+
+* `Live Preview`: Inkscape offers live preview for various operations, allowing users to see the changes in real-time as they modify paths, apply effects, adjust gradients, or manipulate objects.
+
+* `Non-Destructive Editing`: Inkscape supports non-destructive editing, enabling users to make changes to objects without permanently altering the original artwork. This preserves the flexibility and editability of the design.
+
+**Scripting and automation** <br>
+Inkscape supports scripting with Python, allowing users to automate repetitive tasks, create custom extensions, and enhance the functionality of the software.
+
+**Community support** <br>
+Inkscape benefits from an active and dedicated community of users, developers, and contributors. The community provides extensive documentation, tutorials, forums, and user support, making it easier for users to learn, troubleshoot, and share their knowledge.
+
 
 ## **Tutorial: Basics of INKSCAPE**
 
+<span style="color: #ff3870;font-weight: 500;">In this tutorial, we will cover the fundamental concepts and tools in Inkscape, helping you get started on your creative journey.</span><br> As you become more familiar with the software, you can now unleash your creativity and explore the endless possibilities of Inkscape to bring your artistic visions to life.
+
+Additionally, there are numerous online tutorials, forums, and resources available to further enhance your graphical skills using Inkscape:
+* **Inkscape Tutorials** *(Official Inkscape website)*
+  * <a href="https://inkscape.org/learn/tutorials/" target="_blank">Tutorials packaged with Inkscape  ⤴</a> *(you can find them also in the `Help` menu > `Tutorials`)*
+    * <a href="https://inkscape.org/doc/tutorials/basic/tutorial-basic.html" target="_blank">Basic tutorial  ⤴</a>
+    * <a href="https://inkscape.org/doc/tutorials/shapes/tutorial-shapes.html" target="_blank">Shapes tutorial  ⤴</a>
+    * <a href="https://inkscape.org/doc/tutorials/advanced/tutorial-advanced.html" target="_blank">Advanced tutorial  ⤴</a>
+    * <a href="https://inkscape.org/doc/tutorials/tips/tutorial-tips.html" target="_blank">Tips and Tricks tutorial  ⤴</a>
+    * and more
+* **Inkscape Forum:** <a href="https://inkscape.org/forums/" target="_blank">https://inkscape.org/forums/</a> <br>
+<i>InkscapeForum.com is a dedicated community forum where users can ask questions, seek advice, and share their knowledge and experiences related to Inkscape. It's a great platform for connecting with other Inkscape enthusiasts and getting help with specific issues or challenges.</i>
+
 ## Installation and Setup
 
+Download INKSCAPE from the <a href="https://inkscape.org/release/" target="_blank">official website  ⤴</a> based on your operating system.
+1. Select the appropriate version for your operating system (Windows, macOS, or Linux)
+2. Select the correct architecture of your OS *(if needed)*
+3. Click on the `Download` button
+
+![01-vector_inkscape_download.png](../assets/images/01-vector_inkscape_download.png)
+
+**Run the installer:**
+1. Locate the downloaded Inkscape installer file (usually a .exe file on Windows and .dmg file on MacOS) and `double-click` on it to run the installer.
+2. If prompted, grant necessary permissions to the installer to make changes to your system.
+3. The installer may present some installation options. Review the options and choose the desired settings, such as the installation location and whether to create shortcuts.
+4. Follow the prompts and proceed with the installation process.
+5. Wait for the installer to complete the installation process. This may take a few moments.
+
+*Once the installation is finished, you may be presented with an option to launch Inkscape immediately. You can choose to launch it or exit the installer.*
 
 ## Launch INKSCAPE to start the GUI
 
-## Creating a new document
+After installing Inkscape on different operating systems, you can find and launch the software using the following methods:
 
-## Importing an Image
+**WINDOWS**
+
+**1.** `Start Menu:` Click on the `Start` button located in the lower-left corner of the screen. In the search bar, type "Inkscape" and press `Enter`. The GIMP application should appear in the search results. Click on it to launch the program.
+
+or
+
+**2.** `Desktop Shortcut`: If you selected the option to create a desktop shortcut during the installation process, you can find the Inkscape icon on your desktop. Double-click on the icon to open Inkscape.
+
+**macOS**
+
+**1.** `Launchpad`: Click on the Launchpad icon in the Dock *(the rocket ship icon)*. Use the search bar at the top and type "Inkscape." As you start typing, the search results will narrow down, and you should see the GIMP icon. Click on it to launch Inkscape.
+
+or
+
+**2.** `Applications Folder`: Open a Finder window and navigate to the **Applications** folder. Scroll through the list of applications until you find Inkscape. Double-click on the Inkscape icon to open the program.
+
+**Linux: Ubuntu**
+
+**1.** `Dash/Search`: Click on the "Show Applications" button *(usually located at the bottom left or top left corner of the screen)*. In the search bar, type "Inkscape" and press Enter. The Inkscape application should appear in the search results. Click on it to launch Inkscape.
+
+or
+
+**2.** `Terminal`: Open a terminal window and type "inkscape" *(without quotes)* and press Enter. Inkscape should start running in the terminal. You can also create a desktop shortcut or add Inkscape to your application launcher for easier access.
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+When you launch Inkscape for the first time, you may be prompted to configure some initial settings. These settings may include language preferences, default units, and document properties. Adjust these settings according to your preferences.
+</span>
+</div><br>
+
+**Congratulations!** <br>
+You can now begin exploring its features and creating vector graphics with this powerful design tool.
+
+## First-time user basics
+
+In this section, we will cover the basic steps to get started with Inkscape, including creating a new document, familiarizing yourself with the interface and layout, understanding the panels, toolbars, and menus, and learning how to navigate the canvas using zooming and panning controls.
+
+### Creating a new document
+
+**1. [Launch Inkscape](#launch-inkscape-to-start-the-gui) on your computer** <br>
+<i>When you launch Inkscape, a new document is automatically created and ready for you to start working on it. This default behavior ensures that you can dive right into your creative process without any additional steps.</i>
+
+![01-vector_inkscape_doc.png](../assets/images/01-vector_inkscape_doc.png)
+
+The new document comes with a blank canvas where you can draw, design, and create your vector graphics. From the moment you open Inkscape, you have a fresh workspace to unleash your creativity and bring your ideas to life.
+
+**2. Create a New Document** <br>
+If you have existing artwork in your default Inkscape document and you want to start something new from scratch, you have the option to create a `New Inkscape document`. Creating a new document allows you to have a clean canvas without affecting or modifying your existing artwork.
+
+* Click on `File` in the menu bar and select `New` or use the keyboard shortcut `Ctrl+N` *(`Cmd+N` on macOS)* to create a new document.
+
+![01-vector_inkscape_new_doc.png](../assets/images/01-vector_inkscape_new_doc.png)
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+You can easily switch between different documents or work on multiple projects simultaneously. This flexibility enables you to explore new ideas, experiment with different designs, or keep your work organized by separating projects into individual documents.
+</span>
+</div><br>
+
+**3. Set the document properties** <br>
+In Inkscape, you have the flexibility to change document properties at any time to adjust various aspects of your artwork. These properties include the **size, orientation, units, and resolution** of the document. By modifying these properties, you can tailor the document to meet your specific needs and requirements.
+
+To change the document properties in Inkscape, you can follow these steps:
+
+**1.** Go to the `File` menu in the menu bar and select `Document Properties`. <br>
+**2.** The `Document Properties` dialog box will open, displaying several tabs with different settings.
+
+![01-vector_inkscape_doc_properties.png](../assets/images/01-vector_inkscape_doc_properties.png)
+
+`Page tab` <br>
+In the **Page** tab, you can adjust the **width and height** of the document by entering new values. In the `Custom Size` section, you can set a **custom size for the document** by entering your desired dimensions. You can also choose a different measurement unit *(e.g., pixels, inches, millimeters)* from the dropdown menu. If needed, you can change the **document orientation** from portrait to landscape or vice versa using the "Orientation" option.
+
+`Grids & Guides` <br>
+The **Grids** and **Guides** tabs allow you to configure grid and guide settings for precise alignment and positioning of objects.
+
+`Scripting tab` <br>
+The **Scripting** tab provides a way to automate tasks and perform advanced operations using scripts in Inkscape. nkscape supports scripting through various languages such as **Python, Perl, and Ruby**, allowing you to write custom scripts to manipulate objects, apply effects, or perform complex operations.
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;"> Within the "Scripting" tab, you can enable or disable scripting support and specify the scripting language you want to use. </span>
+</div><br>
+
+`Metadata tab` <br>
+The **Metadata** tab allows you to add descriptive information and metadata to your Inkscape document. Metadata provides additional context about the document, such as the **author, title, description, copyright information, and keywords**.
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">In the "Metadata" tab, you can enter and edit various metadata fields, ensuring that your document is properly identified and documented. By adding metadata, you can organize and categorize your documents, making them more searchable and providing relevant information to others who access your artwork.</span>
+</div><br>
+
+<div style="background: #dff5b3; padding: 15px;">
+<span style="font-weight:800;">NOTE:</span>
+<br><span style="font-style:italic;">
+"Scripting" and "Metadata," provide advanced features that allow you to <b>extend the functionality of Inkscape</b> through scripting and add important metadata to your documents. While they may not be utilized by all users, they offer powerful capabilities for automation, customization, and documentation purposes.
+</span>
+</div><br>
+
+### Interface and Layout
+
+Once you have created a new document, you will see the Inkscape interface. The main window consists of the canvas where you create and edit your artwork. Surrounding the canvas, you will find various panels, toolbars, and menus that provide access to different functions and tools.
+
+![01-vector_inkscape_interface.png](../assets/images/01-vector_inkscape_interface.png)
+
+Within the Canvas layout you can distinguish the `Page` and `Drawing` sections:
+* the **Drawing mode** represents the entire canvas or document properties, it scales up when you zoom out and gives you more working space *(e.g., to store temporary objects)*
+* the **Page mode** allows you to create and modify individual objects within the bordered fragment of canvas, its size remain the same and represents the `Document Properties` settings
+* the **Selection mode** focuses on selecting and manipulating objects within the Drawing
+
+Understanding these modes helps you navigate and work effectively in Inkscape, enabling you to create and edit your vector graphics with precision and control.
+
+### Different Panels, Toolbars, and Menus
+
+Inkscape's interface surrounds the canvas with a range of panels, toolbars, and menus, offering a comprehensive array of functions and tools at your fingertips. These elements provide seamless access to a wide range of features, enabling you to efficiently navigate through different tasks and workflows while working on your vector graphics projects.
+
+![01-vector_inkscape_panels.png](../assets/images/01-vector_inkscape_panels.png)
+
+**PANELS** <br>
+Inkscape offers several panels that provide access to tools, settings, and information. Common panels include:
+* `Align and Distribute` panel (to align and distribute objects),
+* `Fill and Stroke` panel (to control object colors and strokes),
+* `Transform` panel (to move, scale, rotate, skew, and matrix objects),
+* `Layers` panel (to manage layers),
+* and `Export PNG Image` panel.
+
+**TOOLBARS** <br>
+Inkscape has several toolbars that contain various drawing and editing tools. These toolbars are **located at the top, left, and right sides of the interface**.
+
+* **Top toolbars:** <br>
+<i>The top toolbar is located at the top of the Inkscape interface, just below the menu bar, and contains options for working with selections.</i>
+  * `Select all` or `Toogle selection box` for multi-object selection
+  * `Rotation` buttons
+  * `Distribute` to rise or lower selection in the stack
+  * `Position and Size` of the selection
+  * `Padlock` to freeze the proportion
+  * `Scaling` options
+
+* **Top toolbars:** <br>
+<i>The left toolbar is positioned vertically along the left side of the Inkscape interface. It provides quick access to various **drawing and editing tools.**</i>
+  * `Select` for selecting and manipulating objects,
+  * `Edit paths` of shapes by moving nodes,
+  * `Shape` for drawing basic shapes,
+  * `Draw` for drawing straight and freehand lines and
+  * `Text` toolbar for working with text
+
+* **Top toolbars:** <br>
+<i>The right toolbar is located vertically along the right side of the Inkscape interface. It offers additional tools and options for working with objects, layers, and transformations.</i>
+  * additional tools for managing layers, adjusting the transparency and blending modes of objects, grouping objects, applying filters and effects, working with clones and symbols, editing gradients and patterns, and more.
+
+* **Color Toolbar** <br>
+is a horizontal toolbar **located at the bottom** of the interface. It provides convenient access to color-related options and controls for working with fills, strokes, gradients, patterns, and more. It allows you to quickly customize and modify the appearance of your vector graphics by choosing and manipulating colors directly from the toolbar.
+
+**TOP MENUS** <br>
+Inkscape provides a menu bar at the top of the interface with various menus, such as **File, Edit, View, Layer, Object, Path, Text, Filers**, and more. These menus contain additional commands and options for working with your artwork. The top menu bar also includes more advanced options for working with paths, text, filters, extensions, and exporting your artwork in various formats, giving you comprehensive control over your design process.
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+Take some time to explore the interface, panels, toolbars, and menus to familiarize yourself with the layout of Inkscape. Understanding the different elements will help you navigate the software efficiently and access the tools and functions you need to create your vector artwork.
+</span>
+</div><br>
+
+### Navigating & Zooming the Canvas
+
+Practice navigating the canvas using the scrollbars, zoom in and out using the zoom controls, and pan the canvas by holding down the spacebar and dragging the canvas. These basic operations will form the foundation for your work in Inkscape.
+
+**Navigating** <br>
+To navigate the canvas, you can use the scrollbars located at the right and bottom edges of the interface. Click and drag (or scroll over) the scrollbars to move around the canvas.
+
+**Zooming In and Out** <br>
+You can zoom in and out on the canvas using several methods:
+1. The easiest way is to use the zoom controls in the **bottom-right corner** of the interface. Click the plus (+) button to zoom in and the minus (-) button to zoom out.
+
+2. You can also use the `Ctrl+Mouse Wheel` shortcut to zoom in and out.
+
 
 ## Working with shapes
 
+In this section, we will explore the various shape tools available in Inkscape, learn how to create basic geometric shapes, and discover ways to modify them using the selection and node editing tools.
+
+### Creating shapes and objects
+
+**Exploring the Shape Tools and Creating Basic Geometric Shapes**
+
+Inkscape provides a variety of **shape tools** located in the left toolbar. These include the `Rectangle`, `Ellipse`, `Star`, `Polygon`, and `Spiral` tools.
+
+* Select the desired shape tool and `click and drag` on the canvas to create the shape. Holding the `Ctrl` key while dragging helps maintain proportions.
+
+<p align="center"><img width="850" src="../assets/images/01-vector_inkscape_shapes.gif"></p>
+
+**Modifying Shapes using the Selection and Color Tools**
+
+The `Selection` tool (arrow icon) allows you to select and manipulate individual shapes.
+
+* Click on a shape to select it and use the handles to resize the object.
+* Customize the shape's position by moving the selected object (while left-mouse is clicked-and-holded).
+* Click on the selected shape again to change handles to rotation mode and rotate the object.
+* Apply selected fill color by using the color palette available in the `Color Toolbar` at the bottom.
+
+<p align="center"><img width="850" src="../assets/images/01-vector_inkscape_colors.gif"></p>
+
 ### Editing paths and anchor points
+
+The `Node` tool (icon just below the Selection) lets you edit the shape's nodes and control points. Clicking on a node allows you to modify its position, shape, or curvature.
+
+* Experiment with selecting multiple shapes and editing the shape's path by using the `Nodes` tool:
+  * to refine the shape's outline, e.g., to round the corners of the rectangle
+  * to change the shape's size
+
+<p align="center"><img width="850" src="../assets/images/01-vector_inkscape_edit_path.gif"></p>
+
+
+### Distributing objects
+
+In Inkscape, aligning, distributing, and adjusting the stacking order of objects are essential techniques for precise positioning and organizing your artwork.
+
+In the `Align and Distribute` panel, you can align objects horizontally or vertically, distribute them evenly, or align them to the page or to the selection.
+
+Adjusting the stacking order through `raising` and `lowering` objects allows you to control which objects appear in front or behind others, providing depth and visual hierarchy to your designs.
+
+![01-vector_inkscape_distribute.png](../assets/images/01-vector_inkscape_distribute.png)
+
+**Aligning Objects:** <br>
+Aligning objects allows you to position them relative to each other with precision.
+* To align objects, select multiple objects by holding `Shift` and clicking on them, then go to **Object** tab in the top menu bar and choose `Align and Distribute`.
+  * Click the corresponding alignment buttons to align the selected objects based on your chosen settings.
+
+**Distributing Objects:** <br>
+Distributing objects ensures equal spacing between multiple objects.
+* With the objects selected, go to **Object** tab in the top menu bar, choose `Align and Distribute`, and navigate to the "Distribute" tsection in the Align and Distribute panel.
+  * Here, you can distribute the objects evenly either horizontally or vertically, or specify a specific spacing value. Click the appropriate distribution button to distribute the selected objects according to the chosen distribution method.
+
+**Adjusting the Stacking Order** <br>
+The stacking order of objects determines which objects appear in front or behind others.
+* To adjust the stacking order, select the object you want to move and go to **Object** tab in the top menu bar, then navigate to `Raise` or `Lower` options. **Raise** moves the selected object one level higher in the stacking order, while **Lower** moves it one level lower.
+* Alternatively, you can `right-click` on an object, hover over `Stack` toolbar buttons (at the top), and choose options to raise, lower, bring to front, or send to back.
+
+<p align="center"><img width="850" src="../assets/images/01-vector_inkscape_distribute.gif"></p>
+
 
 ### Applying colors and gradients
 
+In Inkscape, there are various coloring options available to customize the appearance of your artwork. Two key features for controlling colors are the `Color palette` in the bottom toolbar and the `Fill and Stroke` panel.
+
+**Color Palette in the Bottom Toolbar** <br>
+The `Color palette` is located in the bottom toolbar of the Inkscape interface. It provides quick access to a set of colors that you can apply to the fill and stroke of objects in your artwork.
+* By clicking on a color swatch in the palette, you can instantly apply that color to the selected object(s) or set it as the active color for future use.
+
+**Fill and Stroke Panel** <br>
+The `Fill and Stroke` panel in Inkscape offers comprehensive control over the coloring properties of objects. It also includes advanced features like blur, opacity, and the ability to apply multiple strokes and fills to an object.
+* To access the panel, go to **Object** tab in the top menu bar, select `Fill and Stroke` or press `Shift+Ctrl+F`.
+  * In the **Fill** tab, you can choose the fill color, apply gradients or patterns, adjust opacity, and enable or disable the fill altogether.
+  * In the **Stroke** tab, you can set the stroke color, modify stroke width, apply different stroke styles, such as dashes, and control stroke opacity.
+  * The `Stroke Style` tab provides additional options to customize the appearance and behavior of the stroke applied to objects, such as stroke width, line style, join (corner style), cap (stroke endings style), and more.
+
+<p align="center"><img width="850" src="../assets/images/01-vector_inkscape_fill_colors.gif"></p>
+
+
+## Working with Text
+
+By utilizing the various text tools and options in Inkscape, you can easily add, edit, format, and enhance text within your artwork, allowing for creative typography and effective communication of your design concepts.
+
 ### Adding Text
 
-### Cropping
+1. To add text, select the `Text` tool from the left toolbar (A icon) or press "T" letter on your keyboard.
+2. Click on the canvas where you want to place the text, and a text cursor will appear.
+3. Start typing or paste (using `Ctrl + V` shortcut) your desired text, and it will be inserted as a text object.
 
-### Resizing
+### Editing Text
 
-### Rotating
+1. To edit existing text, select the text object using the `Select` tool (arrow icon) or by clicking on the text.
+2. You can then modify the text content by typing directly into the text object or using the `Text` tool.
+3. Adjust the font, size, alignment, and other formatting options using the options in the top toolbar.
 
-### Adjusting Colors
+### Formatting Text
 
+Inkscape provides several options for formatting text. With the text object selected, you can:
+* **Change the font:** face, size, and style using the Font Family, Font Size, and Font Style options in the top toolbar.
 
+* **Apply text decoration:** bold, italic, underline, or strikethrough styles using the corresponding buttons in the top toolbar.
+
+* **Adjust the text alignment:** left, center, right using the alignment buttons in the top toolbar.
+
+* **Change the color** of the text by selecting the text object and applying a fill color using the `Fill and Stroke` panel *(just like on other shapes)*.
+
+### Text Effects
+
+Inkscape offers additional text effects to enhance the appearance of text. With the text object selected, you can:
+* Apply various text effects such as drop shadows, outlines, and blur using the filters in the `Filters` tab in the top menu bar.
+
+* Warp and transform the text by selecting the text object and using the `Path > Object to Path` or `Path > Path Effect` options.
+
+* Convert the text to a path by selecting the text object and choosing `Path > Object to Path`, allowing for more advanced editing and manipulation.
+
+### Text on a Path
+
+Inkscape allows you to place text along a path or shape.
+
+1. Draw a path or select an existing shape.
+2. Then, select the `Text` tool and click on the path or shape to insert text that flows along it.
+3. Adjust the position and orientation of the text on the path using the `Select` tool and the handles that appear when the text object is selected.
+
+<!--
 ## Layers and Effects
 
 ### Layers
 
 ### Filters
-
+-->
 
 ## Saving and Exporting
 
+In Inkscape, you have different options for saving and exporting your artwork. Choose the option that best suits your needs based on the desired output format and purpose of your artwork.
+
 ### Saving
 
-### Exporting
+The `File > Save` option allows you to save your Inkscape document in its native **SVG format**. Saving your work as an SVG file preserves the vector data, layers, and other editing capabilities.
 
--->
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;"> Use this option when you want to save your work to continue editing it in Inkscape later. </span>
+</div><br>
+
+The `File > Save As` option lets you save your Inkscape document in various file formats, including SVG, PNG, PDF, EPS, and more.
+* Choose the desired file format from the dropdown menu, specify the file name and location, and click Save.
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;"> Use this option when you want to export your artwork in a specific format for sharing or use in other applications. </span>
+</div><br>
+
+### Exporting PNG
+
+The `File > Export PNG Image` option allows you to export your artwork **as a raster image in the PNG format**.
+* Specify the desired image size, resolution, and other options in the Export PNG Image dialog box, and click Export.
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;"> This option is useful when you want to share your artwork as a high-quality image or when you need a raster image format for web or print purposes. </span>
+</div><br>
 
 ___
 # Further Reading
