@@ -157,9 +157,6 @@ Each of these vector graphics tools offers unique features and strengths, cateri
 ![01-vector_inkscape_start.png](../assets/images/01-vector_inkscape_start.png)
 
 
-## <span style="color: #ff3870;">New content coming soon!</span>
-
-
 ## Features summary
 
 **Cross-platform availability** <br>
