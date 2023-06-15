@@ -267,7 +267,7 @@ In this section, we'll delve deeper into some of the major applications offered 
 <a href="https://www.adobe.com/products/acrobat.html" target="_blank">Adobe Acrobat DC  ⤴</a> is a PDF management tool that allows you to create, edit, sign, and review documents in PDF format. <span style="color: #ff3870;font-weight: 500;"> Learning Acrobat DC can improve your PDF management and document workflow. </span>
 
 <table>
-<tr><th width=40%>With Acrobat DC, you can:</th><th>Core Features and Tools:</th></tr>
+<tr><th style="width: 400px;">With Acrobat DC, you can:</th><th>Core Features and Tools:</th></tr>
 <tr><td>
 - Create and convert documents to PDF. <br>
 - Edit text and images in PDF documents. <br>
@@ -286,7 +286,7 @@ In this section, we'll delve deeper into some of the major applications offered 
 <a href="https://www.adobe.com/products/photoshop.html" target="_blank">Adobe Photoshop  ⤴</a> is a powerful imaging and graphic design software. Used worldwide by photographers and designers, it allows you to enhance and edit images, create artwork, design websites, and much more. <span style="color: #ff3870;font-weight: 500;"> Learning Photoshop can significantly enhance your abilities in photo editing, graphic design, and digital art. </span>
 
 <table>
-<tr><th width=40%>With Acrobat DC, you can:</th><th>Core Features and Tools:</th></tr>
+<tr><th style="width: 400px;">With Acrobat DC, you can:</th><th>Core Features and Tools:</th></tr>
 <tr><td>
 - Correct and retouch photos. <br>
 - Create digital paintings and drawings. <br>
@@ -305,7 +305,7 @@ In this section, we'll delve deeper into some of the major applications offered 
 <a href="https://www.adobe.com/products/illustrator.html" target="_blank">Adobe Illustrator  ⤴</a> is a vector graphics software used for creating illustrations, logos, icons, and graphic designs. Unlike pixel-based images created in Photoshop, vector graphics can be scaled to any size without losing quality. <span style="color: #ff3870;font-weight: 500;"> Learning Illustrator can expand your capabilities in (vector) graphic design and illustration. </span>
 
 <table>
-<tr><th width=40%>With Acrobat DC, you can:</th><th>Core Features and Tools:</th></tr>
+<tr><th style="width: 400px;">With Acrobat DC, you can:</th><th>Core Features and Tools:</th></tr>
 <tr><td>
 - Create and design logos and branding elements. <br>
 - Design graphics for web, print, and social media. <br>
@@ -324,7 +324,7 @@ In this section, we'll delve deeper into some of the major applications offered 
 <a href="https://www.adobe.com/products/indesign.html" target="_blank">Adobe InDesign  ⤴</a> is a layout and page design software for print and digital media. It's used to create beautiful graphic designs for posters, flyers, brochures, magazines, newspapers, presentations, books, and ebooks. <span style="color: #ff3870;font-weight: 500;"> Learning InDesign is beneficial for anyone interested in interactive digital designs. </span>
 
 <table>
-<tr><th width=50%>With Acrobat DC, you can:</th><th>Core Features and Tools:</th></tr>
+<tr><th style="width: 400px;">With Acrobat DC, you can:</th><th>Core Features and Tools:</th></tr>
 <tr><td>
 - Design layout for print and digital publications. <br>
 - Create interactive PDFs. <br>
@@ -343,7 +343,7 @@ In this section, we'll delve deeper into some of the major applications offered 
 <a href="https://www.adobe.com/products/aftereffects.html" target="_blank">Adobe After Effects  ⤴</a> is a visual effects and motion graphics software used in the post-production process of filmmaking and television production. It's also used for creating motion graphics and visual effects for web videos. <span style="color: #ff3870;font-weight: 500;"> Learning After Effects can take your motion graphics and visual effects skills to the next level. </span>
 
 <table>
-<tr><th width=40%>With Acrobat DC, you can:</th><th>Core Features and Tools:</th></tr>
+<tr><th style="width: 400px;">With Acrobat DC, you can:</th><th>Core Features and Tools:</th></tr>
 <tr><td>
 - Create and animate text and graphics. <br>
 - Apply and customize visual effects. <br>
@@ -362,7 +362,7 @@ In this section, we'll delve deeper into some of the major applications offered 
 <a href="https://www.adobe.com/products/xd.html" target="_blank">Adobe XD  ⤴</a> is a user experience (UX) and user interface (UI) design software. It allows you to create interactive prototypes for web and mobile applications. <span style="color: #ff3870;font-weight: 500;"> Learning Adobe XD can enhance your UX/UI web design capabilities. </span>
 
 <table>
-<tr><th width=50%>With Acrobat DC, you can:</th><th>Core Features and Tools:</th></tr>
+<tr><th style="width: 400px;">With Acrobat DC, you can:</th><th>Core Features and Tools:</th></tr>
 <tr><td>
 - Design and prototype interfaces for web and mobile. <br>
 - Create interactive prototypes with ease. <br>
@@ -381,7 +381,7 @@ In this section, we'll delve deeper into some of the major applications offered 
 <a href="https://www.adobe.com/products/premiere-rush.html" target="_blank">Adobe Premiere Rush  ⤴</a> and <a href="https://www.adobe.com/products/premiere.html" target="_blank">Adobe Premiere Pro  ⤴</a> are video editing software applications. Premiere Rush is designed for quick video editing and sharing on social platforms, while Premiere Pro provides professional tools for film, TV, and web video production. <span style="color: #ff3870;font-weight: 500;"> Learning Premiere Rush and Premiere Pro can elevate your video editing and production skills. </span>
 
 <table>
-<tr><th width=40%>With Acrobat DC, you can:</th><th>Core Features and Tools:</th></tr>
+<tr><th style="width: 400px;">With Acrobat DC, you can:</th><th>Core Features and Tools:</th></tr>
 <tr><td>
 - Edit and trim videos. <br>
 - Add titles, transitions, and effects. <br>
@@ -401,7 +401,7 @@ In this section, we'll delve deeper into some of the major applications offered 
 <a href="https://www.adobe.com/products/media-encoder.html" target="_blank">Adobe Media Encoder  ⤴</a> is a media processing application that lets you export/convert your video and audio projects in the format that best suits your needs. <span style="color: #ff3870;font-weight: 500;"> Learning Media Encoder can streamline your video and audio workflow. </span>
 
 <table>
-<tr><th width=56%>With Acrobat DC, you can:</th><th>Core Features and Tools:</th></tr>
+<tr><th style="width: 400px;">With Acrobat DC, you can:</th><th>Core Features and Tools:</th></tr>
 <tr><td>
 - Export your projects in the proper format for any screen. <br>
 - Apply presets to ensure the correct format and settings. <br>
