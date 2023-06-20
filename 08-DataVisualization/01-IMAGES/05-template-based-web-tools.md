@@ -1,8 +1,8 @@
 ---
 title: "Web-based Graphic Tools with Ready-Made Templates"
 layout: single
-author:
-author_profile: false
+author: Aleksandra Badaczewska
+author_profile: true
 header:
   overlay_color: "444444"
   overlay_image: /08-DataVisualization/assets/images/08_data_visualization_banner.png
@@ -60,7 +60,7 @@ Here's a summary of several **online graphics platforms**, categorized by their 
 <br><span style="font-style:italic;"> Please note that while most of these tools offer free versions or trials, some features may require a paid subscription. </span>
 </div>
 
-## Online tools with scientific templates
+## **Online tools with scientific templates**
 
 Several online tools offer extensive scientific templates and pre-made elements specifically designed for scientific and academic applications. This greatly reduces the time and effort needed to create custom graphics from scratch and also ensures a level of accuracy and consistency in the visuals.
 
@@ -68,7 +68,7 @@ Three notable examples of these online tools include `BioRender`, `SmartDraw`, a
 
 <span style="color: #ff3870;font-weight: 500;"> Whether you're illustrating a complex biological process, mapping a lab protocol, or summarizing research findings in a graphical abstract, these tools can be invaluable resources. </span>
 
-### BioRender
+###  • BioRender
 
 <a href="https://biorender.com/" target="_blank">BioRender  ⤴</a> is a popular tool among life scientists. It has an extensive library of scientifically accurate components to create diagrams of cellular processes, molecular pathways, and much more. It provides a library of icons and graphics templates in multiple biology disciplines. The platform is easy to use and designed specifically for biologists.
 
@@ -88,7 +88,7 @@ BioRender's unique feature lies in its comprehensive library of **over 20,000 li
 `Plants & Ecology` `Anatomy & Clinical` `Chemistry`
 `Immunology` `Neuroscience` `Genetics` `Cancer` `COVID-19` `CRISPR`
 
-### SmartDraw
+###  • SmartDraw
 
 <a href="https://cloud.smartdraw.com/" target="_blank">SmartDraw  ⤴</a> While not specifically focused on scientific diagrams, SmartDraw is a versatile online diagram tool with a wide variety of templates, some of which are relevant to scientific and biological contexts. It's known for its intuitive interface and wide range of diagram types.
 
@@ -106,7 +106,7 @@ SmartDraw's strength lies in its **versatility**. Apart from scientific diagrams
 `Science & Math` `Astronomy` `Biology Symbols` `Biology` `Cells` `Chemistry Symbols` `Amino Acids` `Fertilization` `Greek Alphabet` `Moon Phases` `Physics Shapes`
 
 
-### Mind the Graph
+###  • Mind the Graph
 
 <a href="https://mindthegraph.com/" target="_blank">Mind the Graph  ⤴</a> is a web-based tool specifically designed for scientists. It offers a range of infographic elements, library of illustrations, presentation templates, report templates, and poster templates, with a focus on science and health. It's free to use with a watermark, and additional features are available in the paid version.
 
@@ -123,7 +123,7 @@ Mind the Graph provides numerous **science-specific infographic elements across 
 *An overview of the categories of templates is shown in the animation above.*
 
 
-## Online platforms for universal graphic design
+## **Online platforms for universal graphic design**
 
 Tools introduced in this section are universal in their application, providing a broad range of templates and design elements that can be utilized across various fields and disciplines, including scientific research. Whether you need to design an infographic, create an engaging presentation, visualize complex data, or collaborate on a visual project, these tools provide the resources to do so in a convenient online format.
 
@@ -134,7 +134,7 @@ Please note that while these tools offer some level of free access, some feature
 </span>
 </div><br>
 
-### Adobe (Spark) Express
+###  • Adobe (Spark) Express
 
 <a href="https://www.adobe.com/express/" target="_blank">Adobe Express  ⤴</a> is a suite of design tools from **Adobe** that allows users to create visual content for social media, web stories, and animated videos. It's user-friendly, even for those without any design experience.
 
@@ -143,7 +143,7 @@ Please note that while these tools offer some level of free access, some feature
 **Research Applications Examples:**
 * A researcher can use Adobe Spark to create impactful presentations, design appealing posters for conferences, or create graphics for social media to promote their research findings.
 
-### Google Drawings
+###  • Google Drawings
 
 <a href="https://docs.google.com/drawings/" target="_blank">Google Drawings  ⤴</a> is a free, web-based diagramming software developed by Google. It allows users to collaborate and create diagrams and flowcharts.
 
@@ -153,7 +153,7 @@ Please note that while these tools offer some level of free access, some feature
 * Researchers can use Google Drawings to create simple diagrams to illustrate a concept, design flowcharts for research processes, or collaborate with colleagues on creating visual content.
 
 
-### Canva
+###  • Canva
 
 <a href="https://www.canva.com/" target="_blank">Canva  ⤴</a> is an online user-friendly design platform with many templates, which include some scientific representations. They provide thousands of free icons and images, along with premium ones. However, keep in mind that this is not a scientific-focused tool, so some specific scientific graphics may not be available.
 
@@ -163,7 +163,7 @@ Please note that while these tools offer some level of free access, some feature
 * A researcher can use Canva to create figures for papers, design infographics for presentations, or create visually appealing reports.
 
 
-### Visme
+###  • Visme
 
 <a href="https://www.visme.co/" target="_blank">Visme  ⤴</a> is a cloud-based visual content creation and collaboration platform, empowering anyone to create professional, branded content no matter their design background.
 
@@ -173,7 +173,7 @@ Please note that while these tools offer some level of free access, some feature
 * A researcher can use Visme to create interactive presentations, design engaging infographics, or create reports with embedded audio and video.
 
 
-### Venngage
+###  • Venngage
 
 <a href="https://venngage.com/" target="_blank">Venngage  ⤴</a> is an infographic design tool that allows you to create a variety of infographics with plenty of templates to choose from.
 
@@ -182,7 +182,7 @@ Please note that while these tools offer some level of free access, some feature
 **Research Applications Examples:**
 * Researchers can use Venngage to visualize complex data sets, design eye-catching posters for conferences, or create infographics for presentations.
 
-### Piktochart
+###  • Piktochart
 
 <a href="https://piktochart.com/" target="_blank">Piktochart  ⤴</a> is a web-based infographic application which allows users to create infographics, presentations, and printable posters.
 
@@ -191,7 +191,7 @@ Please note that while these tools offer some level of free access, some feature
 **Research Applications Examples:**
 * A researcher can use Piktochart to create compelling infographics to illustrate research findings, design engaging presentations, or create posters for academic conferences.
 
-### Infogram
+###  • Infogram
 
 <a href="https://infogram.com/" target="_blank">Infogram  ⤴</a> is a data visualization tool that allows users to create infographics, charts, and reports.
 
