@@ -161,6 +161,33 @@ Learn how to link your local repository to a remote one using `git remote add`, 
 12. **Share your project** <br>
 With your local repository now pushed to GitHub, you can share the URL of your GitHub repository with others so they can view, clone, or contribute to your project.
 
+## REPO: Local vs Remote
+
+**The local and remote repositories** *(in short: repos)* **are interconnected in a Git workflow**, where:
+* the `local repository` serves as your personal workspace for making changes,
+* and the `remote repository` acts as a centralized location for storing the project's history and facilitating collaboration among multiple contributors.
+
+<div style="background: #dff5b3; padding: 15px;">
+<span style="font-weight:800;">NOTE:</span>
+<br><span style="font-style:italic;">
+Git is a powerful tool that can be utilized as a <b>standalone version control system</b> for managing changes to a project within your local machine. This is <b>known as a local repository</b>, and it's a fantastic way to track changes and manage versions of your project, even if you're the sole contributor.
+</span>
+</div><br>
+
+<span style="color: #ff3870;font-weight: 500;"> When you're ready to start your own project, head over to the [Creating a new Local Repository](#creating-a-new-local-repository) section of this guide to learn how to initialize and manage your own Git repository. </span>
+
+Before diving into creating and managing your own repositories, **it's common to first get your feet wet by using or contributing to existing projects**. These projects are **typically stored in centralized remote repositories hosted on platforms like <a href="https://github.com/" target="_blank">GitHub  ⤴</a>**, Bitbucket, or GitLab. Engaging with these shared projects allows you to learn from the work others have done, contribute to the open-source community, and gain experience with version control workflows.
+
+<div style="background: #dff5b3; padding: 15px;">
+<span style="font-weight:800;">NOTE:</span>
+<br><span style="font-style:italic;">
+When it comes to <b>collaborating on projects with multiple contributors</b> or accessing your project across different machines, a local repository is not sufficient. In these cases, you would use what is known as a remote repository. A <b>remote repository</b> is a version of your project that is <b>hosted on the internet or some other network</b>. This allows you to share your project with others, fetch updates from other contributors, and push your updates for others to access.
+</span>
+</div><br>
+
+<span style="color: #ff3870;font-weight: 500;"> For a deeper understanding of how remote repositories work and how to interact with them, please navigate to the section [Working with Remote Repositories](#working-with-remote-repositories) in this tutorial. </span>
+
+Whether it's making a small bug fix, adding a new feature, or simply using the project as a base for your own work, **interacting with remote repositories is a key part of the Git experience.** That is why beginners are encouraged to start their journey with Git version control in the following order, by exploring and contributing to existing projects before venturing into managing their own repositories.
 
 ---
 
@@ -339,39 +366,8 @@ Remember, Git is a very powerful tool with a plethora of commands. This was just
 </span>
 </div><br>
 
----
 
-# REPO: Local vs Remote
-
-**The local and remote repositories** *(in short: repos)* **are interconnected in a Git workflow**, where:
-* the `local repository` serves as your personal workspace for making changes,
-* and the `remote repository` acts as a centralized location for storing the project's history and facilitating collaboration among multiple contributors.
-
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-Git is a powerful tool that can be utilized as a <b>standalone version control system</b> for managing changes to a project within your local machine. This is <b>known as a local repository</b>, and it's a fantastic way to track changes and manage versions of your project, even if you're the sole contributor.
-</span>
-</div><br>
-
-<span style="color: #ff3870;font-weight: 500;"> When you're ready to start your own project, head over to the [Creating a new Local Repository](#creating-a-new-local-repository) section of this guide to learn how to initialize and manage your own Git repository. </span>
-
-Before diving into creating and managing your own repositories, **it's common to first get your feet wet by using or contributing to existing projects**. These projects are **typically stored in centralized remote repositories hosted on platforms like <a href="https://github.com/" target="_blank">GitHub  ⤴</a>**, Bitbucket, or GitLab. Engaging with these shared projects allows you to learn from the work others have done, contribute to the open-source community, and gain experience with version control workflows.
-
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-When it comes to <b>collaborating on projects with multiple contributors</b> or accessing your project across different machines, a local repository is not sufficient. In these cases, you would use what is known as a remote repository. A <b>remote repository</b> is a version of your project that is <b>hosted on the internet or some other network</b>. This allows you to share your project with others, fetch updates from other contributors, and push your updates for others to access.
-</span>
-</div><br>
-
-<span style="color: #ff3870;font-weight: 500;"> For a deeper understanding of how remote repositories work and how to interact with them, please navigate to the section [Working with Remote Repositories](#working-with-remote-repositories) in this tutorial. </span>
-
-Whether it's making a small bug fix, adding a new feature, or simply using the project as a base for your own work, **interacting with remote repositories is a key part of the Git experience.** That is why beginners are encouraged to start their journey with Git version control in the following order, by exploring and contributing to existing projects before venturing into managing their own repositories.
-
----
-
-# Working with Remote Repositories
+## **Working with Remote Repositories**
 
 There are several online platforms, like <a href="https://github.com/" target="_blank">GitHub  ⤴</a>, Bitbucket, and GitLab, that provide hosting services for remote repositories. These platforms come with features that make collaboration easier, such as issue tracking, code reviews, and team management tools.
 
@@ -424,7 +420,7 @@ Keep in mind, if the repository is private and not publicly accessible, you'll n
 Once you have cloned a repository to your local machine using the `git clone` command, <br> **you now have a complete local copy of that project and all of its history**.
 
 
-### Navigate through the Files
+### • *Navigate through the Files*
 
 Use your preferred file explorer or terminal commands to navigate through the files in your local repository.
 * If you're using a terminal, try commands like:
@@ -448,7 +444,7 @@ Remember, this is a complete copy of the project - so you'll see every file that
 </span>
 </div><br>
 
-### See the Commit History
+### • *See the Commit History*
 
 <div style="background: #dff5b3; padding: 15px;">
 <span style="font-weight:800;">NOTE:</span>
@@ -474,7 +470,7 @@ Date:   Thu Jun 22 11:49:30 2023 -0700
     Initial commit
 ```
 
-### Show Changes Between Commits
+### • *Show Changes Between Commits*
 
 The `git diff` command is used to see the differences between commits, between a commit and the working tree, etc.
 
