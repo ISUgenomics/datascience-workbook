@@ -1,8 +1,8 @@
 ---
 title: "GIT - a distributed version control system"
 layout: single
-author:
-author_profile: false
+author: Aleksandra Badaczewska
+author_profile: true
 header:
   overlay_color: "444444"
   overlay_image: /09-ProjectManagement/assets/images/09_project_management_banner.png
@@ -119,47 +119,6 @@ To get started with Git, it's essential to understand a few basic concepts:
 | **Commit**     | This is the magic of version control. Every time you make a change and want Git to remember it, you create a "commit", which is like a snapshot of your project at a given moment. |
 | **Branch**     | Branches allow you to work on different features or experiments in isolation, without affecting the main project. |
 
-## Learning outline for beginners
-
-Here is an ordered guide of steps a beginner should take to get started with Git *(version control system)* and GitHub *(remote repository hosting platform)*. By following these steps, beginners can go from having no knowledge of Git or GitHub to being able to use these tools to collaborate on projects, keep track of changes, and share their work with others.
-
-1. **Install Git** <br>
-Download and install Git on your local machine. Git is the fundamental tool you'll be using to track changes in your projects.
-
-2. **Learn basic Git commands** <br>
-Understand the fundamentals of working with git.
-
-3. **Create a GitHub account** <br>
-Sign up for a free account on GitHub's website. GitHub is a platform where you'll host your remote repositories.
-
-4. **Clone an existing remote repository** <br>
-Choose an existing project on GitHub and clone it to your local machine using the `git clone` command. This will help you understand the process of copying a project and setting up the link between local and remote repositories.
-
-5. **Explore the cloned repository** <br>
-Navigate through the files and commits of the cloned repository. Use the `git log` command to see the commit history.
-
-6. **Make changes to the cloned repository** <br>
-Modify some files or add new ones, then track and commit these changes using `git add` and `git commit`. This will help you understand how changes are tracked and recorded in Git.
-
-7. **Pull from and push to the remote repository** <br>
-Learn how to download updates from the remote repository with `git pull` and upload your own changes with `git push`.
-  * Please note that you might not have permission to push to the repository you cloned, so you may need to `fork` it first, which creates your own copy of the repository on GitHub.
-
-
-8. **Create a new branch in the repository to experiment new ideas** <br>
-Creating a new branch in the repository allows you to experiment with new ideas or features independently without altering the main project code, ensuring the stability of your project while still fostering innovation.
-
-9. **Create a new local repository for your own project** <br>
-Initialize a new local repository using `git init` and make some commits. This will help you understand how to start a new project with Git from scratch.
-
-10. **Create a new remote repository on GitHub** <br>
-Through the GitHub interface, create a new remote repository. *Don't initialize it with any files if you're planning to connect it with your existing local repository.*
-
-11. **Connect your local repository to the new remote repository** <br>
-Learn how to link your local repository to a remote one using `git remote add`, and then push your local commits to the remote repository with `git push -u origin main`.
-
-12. **Share your project** <br>
-With your local repository now pushed to GitHub, you can share the URL of your GitHub repository with others so they can view, clone, or contribute to your project.
 
 ## REPO: Local vs Remote
 
@@ -187,7 +146,88 @@ When it comes to <b>collaborating on projects with multiple contributors</b> or 
 
 <span style="color: #ff3870;font-weight: 500;"> For a deeper understanding of how remote repositories work and how to interact with them, please navigate to the section [Working with Remote Repositories](#working-with-remote-repositories) in this tutorial. </span>
 
-Whether it's making a small bug fix, adding a new feature, or simply using the project as a base for your own work, **interacting with remote repositories is a key part of the Git experience.** That is why beginners are encouraged to start their journey with Git version control in the following order, by exploring and contributing to existing projects before venturing into managing their own repositories.
+Whether it's making a small bug fix, adding a new feature, or simply using the project as a base for your own work, **interacting with version-controlled repositories is a key part of the Git experience.** That is why beginners are encouraged to start their journey with Git version control in the following order, by creating and managing their own local repositories before venturing into exploring and contributing to collaborated remotely projects.
+
+
+## Learning outline for beginners
+
+I'll provide you with a list of steps a beginner should take to get started with `Git` *(version control system)* and `GitHub` *(remote repository hosting platform)*. By following these steps, beginners can go from having no knowledge of Git or GitHub to being able to use these tools to collaborate on projects, keep track of changes, and share their work with others.
+
+<span style="color: #ff3870;font-weight: 500;">
+This revised outline covers the essential steps in a logical order, guiding beginners through: <br>setting up Git -> working with local repositories -> <br> -> exploring remote repositories -> collaborating on existing projects -> and ultimately sharing their own developments.
+</span><br><br>
+
+1. **Install Git** <br>
+Download and install Git on your local machine. <br>
+Set up Git on your local machine to start using its version control capabilities.
+`git help`  `git config`
+
+2. **Learn basic Git commands** <br>
+Understand the fundamentals of working with Git. <br>
+Familiarize yourself with general commands.
+
+  > *Working with Local Repository*
+
+3. **Create a new local repository** <br>
+Initialize a new repository on your local machine for testing or starting a new project. <br>
+This will help you understand how to start a new project with Git from scratch. <br>
+`git init`
+
+4. **Commit changes to the repository** <br>
+Modify some files or add new ones. <br>
+Then, track and record your changes to create meaningful project snapshots. <br>
+This will help you understand how changes are stored and managed in Git. <br>
+`git status`  `git add`  `git commit`
+
+5. **Inspect & Compare versions from history** <br>
+Explore the commit history and compare different versions of your project. <br>
+`git log`  `git diff`
+
+  > *Working with Remote Repository*
+
+6. **Create a GitHub account** <br>
+Sign up for a free account on GitHub's website. <br>
+GitHub is a platform where you'll host your remote repositories and collaborate with others. <br>
+`https://github.com/`
+
+7. **Create a new remote repository on GitHub** <br>
+Through the GitHub interface, create a new repository to host your project remotely. <br> *Don't initialize the new remote repo with any files if you're planning to connect it with your existing local repository.*
+
+8. **Make a Remote for your Local Repo** <br>
+Establish the link between your local repository and the newly created remote repository on GitHub. <br>
+This will help you understand the process of copying a project and setting up the link between local and remote repositories. <br>
+<i>Learn how to link your local repository to a remote one using</i> `git remote add`, <br>
+<i>and then push your local commits to the remote repository with</i> `git push -u origin main`. <br>
+
+9. **Pull from and push to the remote repository** <br>
+Fetch updates from the remote repository into your local copy and upload your local changes into remote codebase. <br>
+This will help you understand how changes between local & remote repo are tracked and recorded in Git. <br>
+<i>With your local repository now pushed to GitHub, you can</i> `share the URL` *of your GitHub repository with others so they can view, clone, or contribute to your project.* <br>
+`git pull`  `git push`  `URL`
+
+  > *Working on Collaborated Projects*
+
+10. **Clone an existing remote repository** <br>
+Choose an existing project on GitHub and obtain a copy to your local machine using the `git clone` command. <br>
+Use this codebase or collaborative work or personal use.
+
+11. **Explore the cloned repository** <br>
+Navigate through the files, view commit history, and examine differences between versions. <br><i>You have learned this already in step 5.</i>
+
+12. **Create a new branch or fork repository to experiment with new ideas** <br>
+Create separate development branches or forks of the repository to isolate and test new features. <br>
+Creating a `new branch` in the repository allows you to experiment with new ideas or features independently without altering the main project code, ensuring the stability of your project while still fostering innovation.<br>
+<i>Please note that you might not have permission to push to the repository you cloned, so you may need to `fork` it first, which creates your own copy of the repository on GitHub.</i>
+
+13. **Make changes and share your developments** <br>
+Modify files, add new features, or fix issues in the cloned repository. <br>
+Edit some files or add new ones, then track and commit these changes, and finally push your commits to the remote collaborative project. <br>
+<i>You have learned this already in step 4 and practiced in step 9.</i> <br>
+`git pull`  `git status`  `git add`  `git commit`  `git push`
+
+14. **Submit pull request as external contributor** <br>
+Contribute your changes to the original repository by submitting `pull request` when you don't have permissions to pushing your commits directly. <br>
+
 
 ---
 
@@ -195,6 +235,7 @@ Whether it's making a small bug fix, adding a new feature, or simply using the p
 
 ## 1. Install Git
 
+*Git is the fundamental tool you'll be using to track changes in your projects.* <br>
 Before we start working in the repository, you need to have `Git` installed on your machine. Here are the steps for installation on various operating systems:
 
 **Windows** <br>
@@ -367,6 +408,199 @@ Remember, Git is a very powerful tool with a plethora of commands. This was just
 </div><br>
 
 
+## 3. Creating a new Local Repository
+
+***Now let's initialize your first Git repository.*** *Exciting times, right?*
+
+Choose a directory where you want to start a project (or navigate to an existing project directory) and run the following command:
+```
+git init
+```
+That's it! You now have a brand new Git repository.
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">This command creates a hidden <b>.git</b> directory which stores all the necessary metadata for your new repo.</span>
+</div><br>
+
+When you run `git init` in your local directory, you're creating a local Git repository, which is great **for tracking changes and managing versions of your project on your local machine**.
+
+<div style="background: #dff5b3; padding: 15px;">
+<span style="font-weight:800;">NOTE:</span>
+<br><span style="font-style:italic;">
+After initializing a repository in your selected project directory, Git will automatically start tracking changes made to the files within that repository. <b>Even a single space added or modified in a file will be detected by Git.</b>
+</span>
+</div><br>
+
+You can verify Git tracking feature by editing any file in your new local repository and running the `git status` command, which will list the modified files ready to be staged and committed.
+
+
+## 4. Commit changes to the repo
+
+**Now it's time to commit your changes and create meaningful snapshots of your project's progress.** *Let's dive in!*
+
+By committing your changes, you're creating a record of the project's history, allowing you to easily track progress, revert changes if needed, and collaborate with others. Committing changes is a vital part of the Git workflow, providing a structured and organized approach to managing your project's evolution.
+
+<span style="color: #ff3870;font-weight: 500;">
+First, have a look at <b>Good Practices</b> when commiting:
+</span><br><br>
+
+* **Creating separate commits for each modified file** allows for a granular history of changes, providing a clear record of which files were modified and when. This level of granularity makes it easier to pinpoint specific changes and understand their impact on the overall project.
+
+* **Making commits often**, even for changes within the same file, ensures that progress is captured regularly and can be easily rolled back if needed. This approach allows for a more fine-grained view of the development process and helps identify which specific modifications introduced issues or caused code to break.
+
+* By embracing this practice, developers can **maintain a reliable and detailed history** of their project, making it easier to understand, collaborate, and recover from any unexpected problems that may arise during the development process.
+
+
+So, after making modifications or adding new files to your project, you can track and record those changes using the following steps.
+* using `git status` to list modified files,
+* followed by `git add` to select files to be included in the commit,
+* and finally `git commit` to attach a descriptive message summarizing the changes being committed.
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+Importantly, you can <b>check git status once and then create multiple commits</b>, each for a separate group of files, allowing for a more organized and focused commit history.
+</span>
+</div>
+
+
+### • *Check the status of the repo*
+
+This functionality allows you to keep a close eye on the changes happening in your project and easily manage them using Git.
+
+To see the current state of your repository and the files with modifications, use the command:
+```
+git status
+```
+This will provide an overview of which files are modified, untracked, or staged for commit.
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+When working with Git, it is important for users <b>NOT to hesitate in creating separate commits for each modified file</b> and to make frequent commits while developing new changes. By doing so, it becomes easier to track and revert modifications if any issues arise.
+</span>
+</div>
+
+
+### • *Stage changes for commit*
+
+Staging files prepares them for inclusion in the next commit.
+
+* to stage specific files use:
+```
+git add <file_name1> <file_name2>
+```
+
+* to stage all modified files use:
+```
+git add .
+```
+
+### • *Commit your changes*
+
+When you're satisfied with the modifications and additions, create a commit to save a snapshot of your project using the command:
+```
+git commit -m "Your commit message here"
+```
+
+The `commit message` should provide a concise and descriptive summary of the changes you made.
+
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">Make sure to create small, focused commits that encapsulate a logical set of changes. This promotes clarity and facilitates easier review and collaboration.</span>
+</div>
+
+## 5. Compare & Checkout versions from history
+
+**Let's dive into inspecting and comparing different versions of your project's history.** *See your coding diary!*
+
+Inspecting and comparing different versions of your project is a valuable aspect of Git that enables you to understand the evolution of your code, investigate changes, and make informed decisions about your development process.
+
+To explore the commit history and compare different versions of your project, we'll be using two essential Git commands:
+
+### • *chronological list of commits*
+
+```
+git log
+```
+This command displays a chronological list of commits, providing information about the `commit hash`, `author`, `date`, and `commit message`. This allows you to examine the history of your project and understand the sequence of changes made over time.
+
+### • *compare different versions of the repo*
+
+```
+git diff
+```
+This command allows you to compare different versions of your project. By specifying `commit hashes`, `branches`, or `tags`, you can see the differences in the content of files between those versions. This is particularly useful for understanding what has changed and identifying specific modifications introduced at different points in your project's history.
+
+---
+
+**Now, let's revert repo to the state from specific commit.** *Trip to the past, huh?*
+
+| There are several reasons why you may want to switch your repository to the state of a specific commit: | While in the state of a specific commit, you can perform various actions, such as: |
+|-----------------|------------------|
+|**Inspecting past code** <br>Switching to a specific commit allows you to view the code exactly as it was at that point in time. This can be useful for reviewing or understanding how certain features or functionalities were implemented in the past.|**Viewing and inspecting the code** <br>You can examine the files, check their content, and review the changes made in that commit using tools like text editors, IDEs, or Git diff commands.|
+|**Debugging or troubleshooting** <br>If you encounter a bug or issue in your current project, switching to a specific commit in the past can help you isolate and analyze the code at that particular state. This can assist in identifying the source of the problem and potentially finding a solution.|**Running tests or simulations** <br>You can test the functionality or behavior of your project using the code at that specific commit. This can help assess how changes have impacted the project's behavior or performance.|
+|**Testing different code versions** <br>You may want to test how your project behaves at a specific point in time, comparing it to the current version. Switching to a specific commit allows you to run tests or perform experiments on that specific codebase.|**Making temporary modifications** <br>While in the "detached HEAD" state, you can make changes, experiment, or test specific code in the context of that commit. <br>*However, keep in mind that any changes made in this state will not be part of any branch and will be lost if you switch to a different commit or branch.* <br><br>**Branching or creating new branches** <br>While in the state of a specific commit, you can create new branches to experiment or develop new features independently from the main development line.|
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+It's important to note that while you can perform actions in the state of a specific commit, <b>it's generally recommended to create new branches for any significant changes</b> to keep your project organized and avoid potential loss of work or confusion.
+</span>
+</div>
+
+
+### • *switch repo to the state of selected commit*
+
+To illustrate how you can switch between different versions of your repository, <br>
+let's consider the practical example of **reverting to a specific commit**.
+
+<div style="background: #dff5b3; padding: 15px;">
+<span style="font-weight:800;">NOTE:</span>
+<br><span style="font-style:italic;">
+When you switch to a specific commit, <b>Git puts your repository in a "detached HEAD" state</b>, meaning you're no longer on a branch but directly at a specific commit. You can make modifications or view the project in this state, but <b>any new commits made will not be part of any branch and could potentially be lost</b> if you switch to a different branch or commit.
+</span>
+</div><br>
+
+1. First, use `git log` to **identify the commit hash** of the version you want to revert to.
+2. Once you have the *commit hash*, run:
+```
+git checkout {commit-hash}
+```
+replacing `{commit-hash}` with the actual *commit hash*. <br>
+This will switch your repository to the state of that specific commit, effectively rewinding your project to that point in time.
+
+<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">WARNING:</span>
+<br><span style="font-style:italic;">
+It's important to understand that <b>this operation is not permanent</b> and you don't lose the newer changes. You are temporarily switching to a specific commit to inspect or work with that version.
+</span>
+</div>
+
+### • *return repo to the latest commit*
+
+To return your repo to the latest commit and leave the "detached HEAD" state, you can simply run:
+```
+git checkout {branch-name}
+```
+replacing `{branch-name}` with the branch you want to switch to. <br>
+This brings you back to the latest state of your project and allows you to continue working from there.
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+When you want to return to the most recent state of the repository from a past commit state and you <b>have only one branch</b>, i.e., main development line, you can <b>use the branch name "main"</b> to switch back to the latest commit. The "main" branch is commonly used as the primary branch for development, especially in the context of Git's default naming conventions.
+</span>
+</div><br>
+
+Use the following command to **switch back to the main development line**:
+```
+git checkout main
+```
+By executing this command, you will return to the latest commit on the main branch. This will bring your repository back to the current state and allow you to continue working on the main development line.
+
 ## **Working with Remote Repositories**
 
 There are several online platforms, like <a href="https://github.com/" target="_blank">GitHub  ⤴</a>, Bitbucket, and GitLab, that provide hosting services for remote repositories. These platforms come with features that make collaboration easier, such as issue tracking, code reviews, and team management tools.
@@ -374,7 +608,7 @@ There are several online platforms, like <a href="https://github.com/" target="_
 In this section of the tutorial, we will be focusing on working with remote repositories. Specifically, we will **use GitHub as our example online hosting platform**. We'll cover how to clone remote repositories, push updates to them, and fetch updates from them, among other topics.
 
 
-## 3. Create a GitHub account
+## 6. Create a GitHub account
 
 If you don't already have one, you'll need a GitHub account to create and manage remote repositories. <br>
 **You can sign up for a free account on the <a href="https://github.com/" target="_blank">GitHub homepage  ⤴</a>.** <br>
@@ -382,9 +616,107 @@ If you don't already have one, you'll need a GitHub account to create and manage
 
 ![01-github_website.png](../../07-DataParsing/assets/images/01-github_website.png)
 
-## 4. Clone an existing Remote Repository
 
-*Ever wanted to work on an exciting open-source project, or maybe a colleague's project?* <br>*That's where cloning comes into play.*
+## 7. Create a new remote repository on GitHub
+
+<span style="color: #ff3870;">New content coming soon!</span>
+
+<!--
+Through the GitHub interface, create a new repository to host your project remotely.
+Don't initialize the new remote repo with any files if you're planning to connect it with your existing local repository.
+-->
+
+## 8. Make a Remote for your Local Repo
+<!--
+Establish the link between your local repository and the newly created remote repository on GitHub.
+This will help you understand the process of copying a project and setting up the link between local and remote repositories.
+Learn how to link your local repository to a remote one using git remote add,
+and then push your local commits to the remote repository with git push -u origin main.
+-->
+
+**If you want to share your local project with others or want to access it from different machines**, you'll need a `remote repository`, typically hosted on platforms like <a href="https://github.com/" target="_blank">GitHub  ⤴</a>, GitLab, or Bitbucket.
+
+Let's use <a href="https://github.com/" target="_blank">GitHub  ⤴</a> as an example.
+
+<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">WARNING:</span>
+<br><span style="font-style:italic;">
+If you have followed this tutorial from the beginning, you can skip to step 3, as you have already completed the equivalent steps provided below as steps 1 and 2 (which correspond to steps 6 and 7 in the general outline).
+</span>
+</div>
+
+>**1. Create an account on GitHub** <br>
+If you don't already have one, you'll need a GitHub account to create and manage remote repositories. <br>You can sign up for a free account on the <a href="https://github.com/" target="_blank">GitHub homepage  ⤴</a>.
+
+>**2. Create a new repository on GitHub** <br>
+After you log into GitHub, you can create a new repository by clicking on the `+` icon in the top right corner and selecting `New repository`.
+  * You'll need to give your repository a name,
+  * and you can also provide a description,
+  * decide whether the repository should be public or private,
+  * and optionally initialize it with a `README` file.
+
+**3. Connect your local repository to the new remote repository on GitHub** <br>
+Once the repository is created on GitHub, it will take you to a quick setup page where you can find the URL of your new remote repository. You should copy it.
+
+Now, you go back to the terminal on your local machine, navigate to your local repository and run the following command to add the remote repository:
+```
+git remote add origin <your-remote-repository-url>
+```
+*Replace <your-remote-repository-url> with the URL of your new GitHub repository. The term "origin" is a standard shorthand name for the repository that your project originated from.*
+
+**4. Push your local repository to GitHub** <br>
+Finally, you can push your local repository (and all its history) to the remote repository on GitHub using the following command:
+```
+git push -u origin master
+```
+*Here, origin is the name you gave to your remote repository (as a shorthand), and master is the branch you're pushing up to GitHub (the main branch is often called "master" or "main").*
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+Don't be frightened that you don't know what the <b>push</b> is yet, it was added here for the sake of order. Learn more about the <b>push command</b> in section <a href="https://" target="_blank">Pushing to and Pulling from Remote Repositories  ⤴</a>, where everything is explained step by step.
+</span>
+</div><br>
+
+Now, your local repository is connected to a remote repository on GitHub. You and others can clone the project from anywhere, make changes, and then push those changes back to the repository on GitHub.
+
+<!--
+### • *Connecting to a Remote Repository*
+
+When you `git clone` an existing repository *(as in section [Cloning a Remote Repository](#cloning-a-remote-repository))*, Git automatically adds the original repository as a remote, so you can fetch from and push to it.
+<span style="color: #ff3870;font-weight: 500;"> See [Work with Remote Repositories](#work-with-remote-repositories) section for next guide. </span>
+
+But what if you've created a local repository *(as in section [Creating Your First Repository](#creating-your-first-repository))* and now you want to connect it to a remote repository? *Don't fret, Git's got your back!*
+
+First, navigate to your project directory and use the `git remote` add command. Here, "origin" is a common name for the default remote repository:
+```
+git remote add origin https://github.com/username/repository.git
+```
+
+To check your remote repositories, use the `git remote -v` command:
+```
+git remote -v
+```
+This will list the URLs of the remote repositories you've connected to your local repository.
+
+-->
+
+## 9. Pull from and push to the remote repository
+
+<span style="color: #ff3870;">New content coming soon!</span>
+
+<!--
+Fetch updates from the remote repository into your local copy and upload your local changes into remote codebase.
+This will help you understand how changes between local & remote repo are tracked and recorded in Git.
+With your local repository now pushed to GitHub, you can share the URL of your GitHub repository with others so they can view, clone, or contribute to your project.
+git pull git push URL
+-->
+
+## **Working on Collaborated Projects**
+
+## 10. Clone an existing Remote Repository
+
+***Ever wanted to work on an exciting open-source project, or maybe a colleague's project?*** <br>*That's where cloning comes into play.*
 
 Git allows you to **create a local copy of a remote repository on your machine**. This way, you can work on the project as if it were your own!
 
@@ -415,7 +747,7 @@ Keep in mind, if the repository is private and not publicly accessible, you'll n
 </span>
 </div><br>
 
-## 5. Explore the cloned repository
+## 11. Explore the cloned repository
 
 Once you have cloned a repository to your local machine using the `git clone` command, <br> **you now have a complete local copy of that project and all of its history**.
 
@@ -499,96 +831,40 @@ Exploring a cloned repository in this manner can <b>give you a good understandin
 </span>
 </div><br>
 
+
+## 12. Create a new branch or fork repository to experiment with new ideas
+
+<span style="color: #ff3870;">New content coming soon!</span>
+
 <!--
-## 9. Creating a new Local Repository
+Create separate development branches or forks of the repository to isolate and test new features.
+Creating a new branch in the repository allows you to experiment with new ideas or features independently without altering the main project code, ensuring the stability of your project while still fostering innovation.
+Please note that you might not have permission to push to the repository you cloned, so you may need to fork it first, which creates your own copy of the repository on GitHub.
 
-***Now let's initialize your first Git repository.*** *Exciting times, right?*
-
-Choose a directory where you want to start a project (or navigate to an existing project directory) and run the following command:
-```
-git init
-```
-That's it! You now have a brand new Git repository.
-
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">This command creates a hidden <b>.git</b> directory which stores all the necessary metadata for your new repo.</span>
-</div><br>
-
-When you run `git init` in your local directory, you're creating a local Git repository, which is great **for tracking changes and managing versions of your project on your local machine**.
-
-### 10. Making a Remote for your Local Repo
-
-However, **if you want to share your local project with others or want to access it from different machines**, you'll need a `remote repository`, typically hosted on platforms like <a href="https://github.com/" target="_blank">GitHub  ⤴</a>, GitLab, or Bitbucket.
-
-Let's use <a href="https://github.com/" target="_blank">GitHub  ⤴</a> as an example:
-
-1. **Create an account on GitHub** <br>
-If you don't already have one, you'll need a GitHub account to create and manage remote repositories. You can sign up for a free account on the <a href="https://github.com/" target="_blank">GitHub homepage  ⤴</a>.
-
-2. **Create a new repository on GitHub** <br>
-After you log into GitHub, you can create a new repository by clicking on the `+` icon in the top right corner and selecting `New repository`.
-  * You'll need to give your repository a name,
-  * and you can also provide a description,
-  * decide whether the repository should be public or private,
-  * and optionally initialize it with a `README` file.
-
-3. **Connect your local repository to the new remote repository on GitHub** <br>
-Once the repository is created on GitHub, it will take you to a quick setup page where you can find the URL of your new remote repository. You should copy it.
-
-
-Now, you go back to the terminal on your local machine, navigate to your local repository and run the following command to add the remote repository:
-```
-git remote add origin <your-remote-repository-url>
-```
-*Replace <your-remote-repository-url> with the URL of your new GitHub repository. The term "origin" is a standard shorthand name for the repository that your project originated from.*
-
-**Push your local repository to GitHub** <br>
-Finally, you can push your local repository (and all its history) to the remote repository on GitHub using the following command:
-```
-git push -u origin master
-```
-*Here, origin is the name you gave to your remote repository (as a shorthand), and master is the branch you're pushing up to GitHub (the main branch is often called "master" or "main").*
-
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Don't be frightened that you don't know what the <b>push</b> is yet, it was added here for the sake of order. Learn more about the <b>push command</b> in section <a href="https://" target="_blank">Pushing to and Pulling from Remote Repositories  ⤴</a>, where everything is explained step by step.
-</span>
-</div><br>
-
-Now, your local repository is connected to a remote repository on GitHub. You and others can clone the project from anywhere, make changes, and then push those changes back to the repository on GitHub.
-
-### Connecting to a Remote Repository
-
-When you `git clone` an existing repository *(as in section [Cloning a Remote Repository](#cloning-a-remote-repository))*, Git automatically adds the original repository as a remote, so you can fetch from and push to it.
-<span style="color: #ff3870;font-weight: 500;"> See [Work with Remote Repositories](#work-with-remote-repositories) section for next guide. </span>
-
-But what if you've created a local repository *(as in section [Creating Your First Repository](#creating-your-first-repository))* and now you want to connect it to a remote repository? *Don't fret, Git's got your back!*
-
-First, navigate to your project directory and use the `git remote` add command. Here, "origin" is a common name for the default remote repository:
-```
-git remote add origin https://github.com/username/repository.git
-```
-
-To check your remote repositories, use the `git remote -v` command:
-```
-git remote -v
-```
-This will list the URLs of the remote repositories you've connected to your local repository.
-
-
-
-## Branching
+### Branching
 
 you'll eventually encounter situations that require you to manage multiple versions of your project simultaneously. This is when you'll want to come back to the Branching category.
 
 Branching allows you to create independent lines of development within your project, making it easier to experiment with new features or ideas and merge them back into the main project when they're ready.
 
+-->
 
+## 13. Make changes and share your developments
 
+<span style="color: #ff3870;">New content coming soon!</span>
 
+<!--
+Modify files, add new features, or fix issues in the cloned repository.
+Edit some files or add new ones, then track and commit these changes, and finally push your commits to the remote collaborative project.
+You have learned this already in step 4 and practiced in step 9.
+git pull git status git add git commit git push
+-->
 
+## 14. Submit pull request as external contributor
+
+<span style="color: #ff3870;">New content coming soon!</span>
+
+<!--
 <span style="color: #ff3870;font-weight: 500;">
 Up next, we'll discuss the typical Git workflow and how to save versions of your project. Keep going, you're doing great!</span>
 
