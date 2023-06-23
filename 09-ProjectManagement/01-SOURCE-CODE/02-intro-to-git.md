@@ -65,7 +65,7 @@ Moreover, Git's architecture provides **support for divergent, simultaneous work
 
 ---
 
-# Summary of Git features
+## Summary of Git features
 
 **Distributed Version Control System** <br>
 Every user gets a full-fledged copy of the entire codebase and its history on their local machine, enabling offline work and providing a safety net in case the central server fails.
@@ -272,7 +272,7 @@ git --version
 to verify the installation.
 
 
-### Configure Git
+### • *Configure Git*
 
 *With Git installed, you're now ready to tell Git who you are.*
 
