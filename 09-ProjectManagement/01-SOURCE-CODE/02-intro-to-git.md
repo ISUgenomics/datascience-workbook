@@ -154,7 +154,7 @@ Whether it's making a small bug fix, adding a new feature, or simply using the p
 I'll provide you with a list of steps a beginner should take to get started with `Git` *(version control system)* and `GitHub` *(remote repository hosting platform)*. By following these steps, beginners can go from having no knowledge of Git or GitHub to being able to use these tools to collaborate on projects, keep track of changes, and share their work with others.
 
 <span style="color: #ff3870;font-weight: 500;">
-This revised outline covers the essential steps in a logical order, guiding beginners through: <br>setting up Git -> working with local repositories -> <br> -> exploring remote repositories -> collaborating on existing projects -> and ultimately sharing their own developments.
+This revised outline covers the essential steps in a logical order, guiding beginners through: <br>setting up Git -> working with local repositories -> exploring remote repositories -> <br> ->  collaborating on existing projects -> and ultimately sharing their own developments.
 </span><br><br>
 
 1. **Install Git** <br>
@@ -538,11 +538,26 @@ This command allows you to compare different versions of your project. By specif
 
 **Now, let's revert repo to the state from specific commit.** *Trip to the past, huh?*
 
-| There are several reasons why you may want to switch your repository to the state of a specific commit: | While in the state of a specific commit, you can perform various actions, such as: |
-|-----------------|------------------|
-|**Inspecting past code** <br>Switching to a specific commit allows you to view the code exactly as it was at that point in time. This can be useful for reviewing or understanding how certain features or functionalities were implemented in the past.|**Viewing and inspecting the code** <br>You can examine the files, check their content, and review the changes made in that commit using tools like text editors, IDEs, or Git diff commands.|
-|**Debugging or troubleshooting** <br>If you encounter a bug or issue in your current project, switching to a specific commit in the past can help you isolate and analyze the code at that particular state. This can assist in identifying the source of the problem and potentially finding a solution.|**Running tests or simulations** <br>You can test the functionality or behavior of your project using the code at that specific commit. This can help assess how changes have impacted the project's behavior or performance.|
-|**Testing different code versions** <br>You may want to test how your project behaves at a specific point in time, comparing it to the current version. Switching to a specific commit allows you to run tests or perform experiments on that specific codebase.|**Making temporary modifications** <br>While in the "detached HEAD" state, you can make changes, experiment, or test specific code in the context of that commit. <br>*However, keep in mind that any changes made in this state will not be part of any branch and will be lost if you switch to a different commit or branch.* <br><br>**Branching or creating new branches** <br>While in the state of a specific commit, you can create new branches to experiment or develop new features independently from the main development line.|
+<table style="width:100%">
+<tr>
+  <th style="width:43%">Why you may want to switch your repository <br>to the state of a specific commit?</th>
+  <th style="width:57%">While in the state of a specific commit, <br>you can perform various actions:</th>
+</tr>
+<tr>
+  <td><b>Inspecting past code</b> <br>Switching to a specific commit allows you to view the code exactly as it was at that point in time. This can be useful for reviewing or understanding how certain features or functionalities were implemented in the past.</td>
+  <td><b>Viewing and inspecting the code</b> <br>You can examine the files, check their content, and review the changes made in that commit using tools like text editors, IDEs, or Git diff commands.</td>
+</tr>
+<tr>
+  <td><b>Debugging or troubleshooting</b> <br>If you encounter a bug or issue in your current project, switching to a specific commit in the past can help you isolate and analyze the code at that particular state. This can assist in identifying the source of the problem and potentially finding a solution.</td>
+  <td><b>Running tests or simulations</b> <br>You can test the functionality or behavior of your project using the code at that specific commit. This can help assess how changes have impacted the project's behavior or performance.</td>
+</tr>
+<tr>
+  <td><b>Testing different code versions</b> <br>You may want to test how your project behaves at a specific point in time, comparing it to the current version. Switching to a specific commit allows you to run tests or perform experiments on that specific codebase.</td>
+  <td><b>Making temporary modifications</b> <br>While in the "detached HEAD" state, you can make changes, experiment, or test specific code in the context of that commit. <br><i>However, keep in mind that any changes made in this state will not be part of any branch and will be lost if you switch to a different commit or branch.</i> <br><br><b>Branching or creating new branches</b> <br>While in the state of a specific commit, you can create new branches to experiment or develop new features independently from the main development line.</td>
+</tr>
+
+</table>
+
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
@@ -619,29 +634,31 @@ If you don't already have one, you'll need a GitHub account to create and manage
 
 ## 7. Create a new remote repository on GitHub
 
-<span style="color: #ff3870;">New content coming soon!</span>
+*Through the GitHub interface, create a new repository to host your project remotely.*
 
-<!--
-Through the GitHub interface, create a new repository to host your project remotely.
-Don't initialize the new remote repo with any files if you're planning to connect it with your existing local repository.
--->
+After you log into GitHub, you can create a new repository by clicking on the `+` icon in the top right corner and selecting `New repository`.
 
-## 8. Make a Remote for your Local Repo
-<!--
-Establish the link between your local repository and the newly created remote repository on GitHub.
-This will help you understand the process of copying a project and setting up the link between local and remote repositories.
-Learn how to link your local repository to a remote one using git remote add,
-and then push your local commits to the remote repository with git push -u origin main.
--->
+![01-github_new_repo.png](../assets/images/01-github_new_repo.png)
 
-**If you want to share your local project with others or want to access it from different machines**, you'll need a `remote repository`, typically hosted on platforms like <a href="https://github.com/" target="_blank">GitHub  ⤴</a>, GitLab, or Bitbucket.
+  * You'll need to give your repository a name,
+  * and you can also provide a description,
+  * decide whether the repository should be public or private,
+  * and optionally initialize it with a `README` file.
+    * <i><span style="color: #ff3870;font-weight: 500;">Don't initialize the new remote repo with any files created online if you're planning to connect it with your existing local repository.</span></i>
+
+<p align="center"><img width="800" src="../assets/images/01-github_new_repo_setup.png"></p>
+
+
+## 8. Connect a remote to your local repo
+
+**If you want to share your local project with others or want to access it from different machines**, you'll need a `remote repository`, typically hosted on platforms like <a href="https://github.com/" target="_blank">GitHub  ⤴</a>, GitLab, or Bitbucket. Learn how to establish the link between your local repository and the newly created remote repository on a hosting online platform.
 
 Let's use <a href="https://github.com/" target="_blank">GitHub  ⤴</a> as an example.
 
 <div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">WARNING:</span>
 <br><span style="font-style:italic;">
-If you have followed this tutorial from the beginning, you can skip to step 3, as you have already completed the equivalent steps provided below as steps 1 and 2 (which correspond to steps 6 and 7 in the general outline).
+If you have followed this tutorial from the beginning, you can skip to step 3 in this section, as you have already completed the equivalent steps provided below as steps 1 and 2 (which correspond to steps 6 and 7 in the general outline).
 </span>
 </div>
 
@@ -651,18 +668,24 @@ If you don't already have one, you'll need a GitHub account to create and manage
 >**2. Create a new repository on GitHub** <br>
 After you log into GitHub, you can create a new repository by clicking on the `+` icon in the top right corner and selecting `New repository`.
   * You'll need to give your repository a name,
-  * and you can also provide a description,
-  * decide whether the repository should be public or private,
-  * and optionally initialize it with a `README` file.
+  * you can also provide a description,
+  * and decide whether the repository should be public or private.
 
 **3. Connect your local repository to the new remote repository on GitHub** <br>
 Once the repository is created on GitHub, it will take you to a quick setup page where you can find the URL of your new remote repository. You should copy it.
 
-Now, you go back to the terminal on your local machine, navigate to your local repository and run the following command to add the remote repository:
+<p align="center"><img width="800" src="../assets/images/01-git_repo_url.png"></p>
+
+Now, **you go back to the terminal on your local machine**, navigate to your local repository and run the following command to add the remote repository:
 ```
-git remote add origin <your-remote-repository-url>
+git remote add origin {your-remote-repository-url}
 ```
-*Replace <your-remote-repository-url> with the URL of your new GitHub repository. The term "origin" is a standard shorthand name for the repository that your project originated from.*
+*Replace {your-remote-repository-url} with the URL of your new GitHub repository, something similar to:*
+```
+git remote add origin https://github.com/username/repository.git
+```
+
+The term `origin` is a common name for the default remote repository.
 
 **4. Push your local repository to GitHub** <br>
 Finally, you can push your local repository (and all its history) to the remote repository on GitHub using the following command:
@@ -674,49 +697,118 @@ git push -u origin master
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
-Don't be frightened that you don't know what the <b>push</b> is yet, it was added here for the sake of order. Learn more about the <b>push command</b> in section <a href="https://" target="_blank">Pushing to and Pulling from Remote Repositories  ⤴</a>, where everything is explained step by step.
+Don't be frightened that you don't know what the <b>push</b> is yet, it was added here for the sake of order. Learn more about the <b>push command</b> in section [9. Pull from and push to the remote repository](#9-pull-from-and-push-to-the-remote-repo), where everything is explained step by step.
 </span>
 </div><br>
 
 Now, your local repository is connected to a remote repository on GitHub. You and others can clone the project from anywhere, make changes, and then push those changes back to the repository on GitHub.
 
-<!--
-### • *Connecting to a Remote Repository*
-
-When you `git clone` an existing repository *(as in section [Cloning a Remote Repository](#cloning-a-remote-repository))*, Git automatically adds the original repository as a remote, so you can fetch from and push to it.
-<span style="color: #ff3870;font-weight: 500;"> See [Work with Remote Repositories](#work-with-remote-repositories) section for next guide. </span>
-
-But what if you've created a local repository *(as in section [Creating Your First Repository](#creating-your-first-repository))* and now you want to connect it to a remote repository? *Don't fret, Git's got your back!*
-
-First, navigate to your project directory and use the `git remote` add command. Here, "origin" is a common name for the default remote repository:
-```
-git remote add origin https://github.com/username/repository.git
-```
+### • *List your remote(s)*
 
 To check your remote repositories, use the `git remote -v` command:
 ```
 git remote -v
 ```
-This will list the URLs of the remote repositories you've connected to your local repository.
+This will list the URLs of the remote repositories you've connected to your local repository, for example:
 
--->
+<div style="margin-top: 10px;">
+<code style="background-color: #d9d9e3; width:100%; display: block;padding: 10px;">
+origin	https://github.com/ISUgenomics/datascience-workbook.git (fetch) <br>
+origin	https://github.com/ISUgenomics/datascience-workbook.git (push)
+</code></div>
 
-## 9. Pull from and push to the remote repository
 
-<span style="color: #ff3870;">New content coming soon!</span>
+## 9. Pull from and push to the remote repo
 
-<!--
-Fetch updates from the remote repository into your local copy and upload your local changes into remote codebase.
-This will help you understand how changes between local & remote repo are tracked and recorded in Git.
-With your local repository now pushed to GitHub, you can share the URL of your GitHub repository with others so they can view, clone, or contribute to your project.
-git pull git push URL
--->
+In this section, we will explore **how to synchronize your local repository with the remote repository** by pulling updates from the remote repository into your local copy and pushing your local changes to the remote codebase.
+
+
+### Pulling updates from the remote repo
+
+<div style="background: #dff5b3; padding: 15px;">
+<span style="font-weight:800;">NOTE:</span>
+<br><span style="font-style:italic;">
+By pulling updates, you ensure that your local copy is up to date with the latest changes made by others. This is particularly important when working collaboratively to avoid conflicts and stay in sync with the shared codebase.
+</span>
+</div><br>
+
+To fetch and merge the latest changes from the remote repository into your local copy, navigate to your local repo directory and use the following command:
+```
+git pull
+```
+This command combines the actions of:
+* `git fetch` - retrieving changes from the remote repository, and
+* `git merge` - integrating those changes into your local branch.
+
+### Pushing local changes to the remote repo
+
+To upload your local changes to the remote repository and make them accessible to others, navigate to your local repo directory and perform the following steps:
+
+**1. Commit changes to the repository** <br>
+Before pushing your changes to the remote repository, it is crucial to first commit your changes locally. This ensures that your modifications are tracked and recorded in Git's version history. <br>
+<span style="color: #ff3870;font-weight: 500;">
+You have already learned how to make commits in the previous section (Section [4. Commit changes to the repository](#4-commit-changes-to-the-repository)), you can revisit that section if you need a refresher on committing changes.
+</span>
+
+Here are the practical steps to follow, given in brief:
+* stage the changes you want to include in the commit using commands:
+```
+git add .                       # to add all modified files
+```
+or
+```
+git add {file1} {file2}         # to add selected files only
+```
+* create a commit with a descriptive message summarizing your changes:
+```
+git commit -m "Your commit message here"
+```
+
+**2. Send committed changes to the remote codebase** <br>
+After committing your changes locally, you can push them to the remote repository using the `git push` command.
+```
+git push
+```
+This command sends your committed changes from the local branch to the corresponding branch on the remote repository.
+
+<div style="background: #dff5b3; padding: 15px;">
+<span style="font-weight:800;">NOTE:</span>
+<br><span style="font-style:italic;">
+By executing <b>git push</b>, you contribute your work to the shared codebase, making it available for collaboration and integration. This allows others to view your changes, provide feedback, and incorporate them into the project.
+</span>
+</div><br>
+
 
 ## **Working on Collaborated Projects**
 
-## 10. Clone an existing Remote Repository
+***Ever wanted to work on an exciting open-source project, or maybe a colleague's project?*** <br>*That's where cloning repos comes into play.*
 
-***Ever wanted to work on an exciting open-source project, or maybe a colleague's project?*** <br>*That's where cloning comes into play.*
+### *Best practices*
+To ensure a smooth code integration between multiple contributors, it is important to follow best practices such as:
+
+**Branching and Pull Requests** <br>
+Create a `new branch` for your changes, allowing you to work on features or fixes independently. When ready, submit a `pull request`, which provides an opportunity for code review and discussion before merging into the main branch.
+
+**Testing and Validation** <br>
+Before merging your changes, ensure that they have been thoroughly tested and validated. This includes running `tests`, performing `quality checks`, and verifying that your code does not introduce regressions or `conflicts` with existing functionality.
+
+**Communication and Collaboration** <br>
+Engage in `open communication` with other contributors. Discuss your proposed changes, address concerns, and provide context to facilitate a smooth integration process. Collaboration ensures that all team members are aligned and promotes a shared understanding of the codebase.
+
+**Review and Feedback** <br>
+Embrace the `code review` process by actively seeking `feedback from peers`. This helps identify potential issues, improve the quality of your code, and maintain codebase consistency. Be open to `constructive criticism` and iterate on your changes based on the feedback received.
+
+**Merge with Main Branch** <br>
+Once your changes have been reviewed, tested, and approved, `merge` them into the main branch. This ensures that your developments become part of the project's `official codebase` and are accessible to other collaborators.
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+By following these practices, you can <b>contribute</b> to the collaborative project in a safe and effective manner, <b>minimizing the risk of introducing bugs, conflicts, or disruptions to the existing codebase</b>. It promotes a healthy collaborative environment and ensures that the project maintains a high standard of quality and stability.
+</span>
+</div>
+
+## 10. Clone an existing Remote Repository
 
 Git allows you to **create a local copy of a remote repository on your machine**. This way, you can work on the project as if it were your own!
 
@@ -731,10 +823,10 @@ Find and copy the URL address of the repo, and then use it in your command:
 ```
 git clone https://github.com/ISUgenomics/data_graphing.git
 ```
-**This will create a new directory on your local machine with the same name as the repository**, where you'll find all the repository's files, and a `.git` directory that contains all the Git-related information for the project.
+**This will create a new directory on your local machine with the same name as the remote repository**, where you'll find all the repository's files, and a `.git` directory that contains all the Git-related information for the project.
 
 <span style="color: #ff3870;font-weight: 500;">So as you can see:</span><br>
-When you clone a repository, **Git automatically adds the original repository as a remote**, so you can fetch from and push to it.
+When you clone a repository, **Git automatically adds the original repository as a remote**, so you can fetch from and push to it right away without further setup.
 
 
 <div style="background: #cff4fc; padding: 15px;">
@@ -746,6 +838,7 @@ When you're aiming to clone a remote repository, <b>it's crucial to have the cor
 Keep in mind, if the repository is private and not publicly accessible, you'll need the appropriate access permissions (such as being added as a collaborator by the repository owner) to clone or interact with it.
 </span>
 </div><br>
+
 
 ## 11. Explore the cloned repository
 
@@ -831,44 +924,347 @@ Exploring a cloned repository in this manner can <b>give you a good understandin
 </span>
 </div><br>
 
+<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">WARNING:</span>
+<br><span style="font-style:italic;">
+Please note that you might not have permission to push directly to the repository you cloned, so you may need to <a href="https://">Fork the repo</a> first, which creates your own copy of the repository on GitHub.
+</span>
+</div>
 
-## 12. Create a new branch or fork repository to experiment with new ideas
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+You'll eventually encounter situations that require you to manage multiple versions of your project simultaneously. This is when you'll want to learn more about <a href="https://">Git branching</a>.
+</span>
+</div>
 
-<span style="color: #ff3870;">New content coming soon!</span>
+## 12. Experiment with devel ideas
+<span style="color: #ff3870;font-weight: 500;">Experimenting with new development ideas often involves creating new branches or repository forks.</span> <br>
+These approaches allow you to <b>work on isolated changes without affecting the main development</b> branch or the original repository.
 
-<!--
-Create separate development branches or forks of the repository to isolate and test new features.
-Creating a new branch in the repository allows you to experiment with new ideas or features independently without altering the main project code, ensuring the stability of your project while still fostering innovation.
-Please note that you might not have permission to push to the repository you cloned, so you may need to fork it first, which creates your own copy of the repository on GitHub.
 
-### Branching
+### • *Create & Switch to a new branch*
 
-you'll eventually encounter situations that require you to manage multiple versions of your project simultaneously. This is when you'll want to come back to the Branching category.
+Create separate `development branches` of the repository to isolate and test new features, and once they are ready, merge them back to the main development line.
 
-Branching allows you to create independent lines of development within your project, making it easier to experiment with new features or ideas and merge them back into the main project when they're ready.
+<div style="background: #dff5b3; padding: 15px;">
+<span style="font-weight:800;">NOTE:</span>
+<br><span style="font-style:italic;">
+Branching allows you to create independent lines of development within your project, making it easier to experiment with new features or ideas and merge them back into the main project when they're ready. Creating a new branch in the repository allows you to experiment with new ideas or features independently: <br>
+<li> without altering the main project code, </li>
+<li> ensuring the stability of your project </li>
+<li> while still fostering innovation. </li>
+</span>
+</div><br>
 
--->
 
-## 13. Make changes and share your developments
+**To create a new branch**, use the command:
+```
+git branch <branch-name>
+```
+*For example:*
+```
+git branch new-feature
+```
+creates a new branch named "new-feature."
 
-<span style="color: #ff3870;">New content coming soon!</span>
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+Give your branches <b>descriptive names</b> that reflect the purpose or feature you're working on to maintain clarity and organization.
+</span>
+</div><br>
 
-<!--
-Modify files, add new features, or fix issues in the cloned repository.
-Edit some files or add new ones, then track and commit these changes, and finally push your commits to the remote collaborative project.
-You have learned this already in step 4 and practiced in step 9.
-git pull git status git add git commit git push
--->
+**Switch to the newly created branch using:**
+```
+git checkout <branch-name>
+```
+*For example:*
+```
+git checkout new-feature
+```
+switches to the "new-feature" branch.
+
+**You can now work on your new ideas within the branch**, making commits, testing, and iterating without affecting the main branch.
+
+
+### • *Fork the entire repo*
+
+`Fork` the original repository to use it as a `base for a new project`. Now, you can manage it independently providing a new direction of its main development line.
+
+<div style="background: #dff5b3; padding: 15px;">
+<span style="font-weight:800;">NOTE:</span>
+<br><span style="font-style:italic;">
+Forking a repository enables you to <b>create a separate copy of the original repository</b> under your own GitHub account. This allows you to freely experiment with the entire new repository, provide changes to its main development line, and <b>mange it as a new project without directly affecting the original repository</b>.
+</span>
+</div><br>
+
+**To create a fork of selected repo:**
+* Navigate to the original repository on GitHub online.
+* Click the `Fork` button, located on the top-right.
+  * This creates a duplicate repository under your GitHub account.
+* Clone the forked repository to your local machine using:
+```
+git clone <forked-repo-url>
+```
+* Enjoy working on your local forked repository, separate from the original repository.
+  * In your forked repository, you have the freedom to:
+    * experiment with new ideas, implement changes, or add new features;
+    * create branches to work on different features or experiments independently;
+    * commit and push your changes to your forked repository;
+    * tracking your progress and keeping your work separate from the original project.
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+When using repository forks, it's good practice to periodically sync your fork with the original repository to incorporate any updates or changes. This can be done using Git commands like: <br>
+<code>git remote</code> and <code>git pull</code>.
+</span>
+</div>
+
+
+## 13. Safely integrate your new developments
+
+Integrating your new developments safely refers to the process of incorporating your local changes and contributions into the collaborative project's remote repository in a reliable and controlled manner. It is essential for maintaining a stable and coherent codebase.
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+<b>By following <a href="#best-practices" target="_blank">Best Practices  ⤴</a>, you can contribute</b> to the collaborative project in a safe and effective manner, <b>minimizing the risk of introducing bugs, conflicts, or disruptions to the existing codebase</b>. It promotes a healthy collaborative environment and ensures that the project maintains a high standard of quality and stability.
+</span>
+</div><br>
+
+When working on a collaborative project, it is important to follow recommended steps to minimize conflicts and maintain a smooth code integration:
+
+**Regularly Commit and Push** <br>
+Make frequent and `atomic commits` to record your changes locally, and push them to the remote repository regularly. This ensures that your changes are shared with the team and reduces the chances of conflicts accumulating over time.
+
+**Pull Before Push** <br>
+Always `git pull` the latest changes from the remote repository `before pushing` your own changes. This ensures that you have the most recent version of the code and reduces the chance of conflicts arising from divergent changes made by other contributors.
+
+**Frequently Pull Changes** <br>
+Regularly `fetch` and `merge` the latest changes from the remote repository into your local branch using `git pull`. This keeps your local copy up to date with the shared codebase, reducing the likelihood of conflicts when pushing your changes.
+
+**Stash Before Pull** <br>
+If you have local changes that are not ready to be committed, but you want to pull the latest changes, use `git stash` to temporarily save your changes. This allows you to revert your working directory to a clean state, perform the pull, and then apply your changes back with git stash apply or git stash pop.
+
+### • *Merge your changes*
+
+Modify files, add new features, or fix issues in the cloned, forked or branched repository.
+* Edit some files or add new ones,
+* then track and commit these changes,
+* and finally push your commits to the remote collaborative project.
+
+<span style="color: #ff3870;font-weight: 500;">
+You have learned this already in step <a href="#4-commit-changes-to-the-repo">4. Commit changes to the repo</a> and practiced in step <a href="#9-pull-from-and-push-to-the-remote-repo">9. Pull from and push to the remote repo</a>.
+</span><br><br>
+
+Once you're satisfied with the **experiments in your branch or fork**, you can **merge the changes back into the main development branch**.
+
+* To merge changes, switch back to the main branch using:
+```
+git checkout <main-branch>
+```
+* Then, merge the changes from the experimental branch into the current main branch:
+```
+git merge <branch-name>
+```
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+Before merging, it's important to review and test your changes thoroughly to ensure they align with the project's requirements and quality standards.
+</span>
+</div><br>
+
+<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">WARNING:</span>
+<br><span style="font-style:italic;">
+Please note that you might not have permission to push directly to the original repository, so you may need to: <br>
+<li><a href="https://">Fork the repo</a> first, which creates your own copy of the repository on GitHub.</li>
+<li><a href="https://">Submit Pull Request</a>, which
+</span>
+</div>
+
+
+### • *Manage conflicts*
+
+<div style="background: #dff5b3; padding: 15px;">
+<span style="font-weight:800;">NOTE:</span>
+<br><span style="font-style:italic;">
+In collaborative environments, <b>conflicts can occur when multiple contributors make changes to the same file or lines of code</b>. Git provides mechanisms to resolve conflicts, allowing you to merge divergent changes and maintain a coherent codebase. Remember, <b>frequent pulling and pushing are integral parts of the Git workflow</b>, enabling seamless collaboration and the sharing of code changes across multiple contributors.
+</span>
+</div><br>
+
+When pulling from the remote repository or pushing to it, conflicts may arise if there are conflicting changes between your local repo and the remote codebase. <b>Git will notify you of these conflicts, and you will need to manually resolve them by editing the affected files</b>.
+
+`git push` conflict message:
+
+![01-github_push_conflict.png](../assets/images/01-github_push_conflict.png)
+
+`git pull` conflict message:
+
+![01-github_pull_conflict.png](../assets/images/01-github_pull_conflict.png)
+
+#### *Manually edit conflicted file* <br>
+
+**To resolve the conflict, you'll need to manually edit the file and choose which changes to keep.**
+
+<div style="background: #dff5b3; padding: 15px;">
+<span style="font-weight:800;">NOTE:</span>
+<br><span style="font-style:italic;">
+It's important to <b>carefully review and understand the conflicting changes</b> to ensure that the final resolution preserves the intended functionality and consistency of the code.
+</span>
+</div><br>
+
+Here's an example of a file with a conflict:
+
+<div style="margin-bottom: 10px;">
+<code style="background-color: #d9d9e3; width:100%; display: block;padding: 10px;">
+<<<<<<< HEAD <br>
+This is the current content of the file. <br>
+======= <br>
+This is the incoming change from the remote repository. <br>
+>>>>>>> branch-name
+</code></div>
+
+In this example, the file contains a conflict between two different versions.
+* The section between `<<<<<<< HEAD` and `=======` represents the content of the file as it exists in your local branch (HEAD).
+* The section between `=======` and `>>>>>>> branch-name` represents the incoming change from remote branch (identified by specific branch-name).
+
+**To resolve the conflict, you'll need to manually edit the file** and choose which changes to keep.
+* You can remove the conflict markers (`<<<<<<< HEAD`, `=======`, and `>>>>>>> branch-name`)
+* and make the necessary modifications to resolve the conflict.
+  * for example, decide to keep your local changes over incoming from remote codbase:
+
+    <div style="margin-bottom: 10px;">
+    <code style="background-color: #d9d9e3; width:100%; display: block;padding: 10px;">
+    This is the current content of the file. <br>
+    </code></div>
+
+**Once you've resolved the conflict**, you can:
+* save the file
+* and proceed with the regular Git workflow:
+  * such as staging the changes (`git add .`) and committing them (`git commit -m "conflict resolved by keeping version created by X"`).
+
+**Finally, you can proceed with interrupted process of `git merge` or `git push`.**
+
+
+<div style="background: #cff4fc; padding: 15px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+It's essential to communicate and coordinate with other contributors to minimize conflicts and ensure smooth collaboration. Regularly pulling and pushing changes keeps everyone in sync and helps maintain a consistent and up-to-date project history.
+</span>
+</div>
+
 
 ## 14. Submit pull request as external contributor
 
-<span style="color: #ff3870;">New content coming soon!</span>
+<div style="background: #dff5b3; padding: 15px;">
+<span style="font-weight:800;">NOTE:</span>
+<br><span style="font-style:italic;">
+A <b>pull request</b> is a feature provided by platforms like GitHub that <b>facilitates collaborative development and code integration</b>. Pull requests serve as a mechanism for proposing and reviewing changes before they are incorporated into the main branch. They foster collaboration, maintain code quality, and provide an opportunity for open discussions and feedback in the development process.
+</span>
+</div><br>
 
-<!--
-<span style="color: #ff3870;font-weight: 500;">
-Up next, we'll discuss the typical Git workflow and how to save versions of your project. Keep going, you're doing great!</span>
+**Submitting a pull request** involves providing a detailed description of:<br>
+- the changes made, <br>
+- the purpose of the pull request, <br>
+- and any additional information that helps the reviewer understand the context of the changes. <br> <b>Reviewers can comment, suggest modifications, or approve the changes</b>, and once the pull request is accepted, the changes are merged into the target branch.
 
--->
+Here are some situations where submitting a pull request may be required:
+
+**Contributing to Open Source Projects** <br>
+When you want to contribute to an open-source project, you typically fork the project's repository, make changes in your fork, and then submit a pull request to the original repository. This allows the project maintainers to review your changes and consider merging them into the main project.
+
+**Collaborative Development** <br>
+In team collaborations, pull requests serve as a way to share your changes with other team members and seek their feedback. By creating a pull request, you provide an opportunity for code review, discussions, and collaboration before incorporating the changes into the main branch.
+
+**Requesting Code Reviews** <br>
+Pull requests are an effective way to request code reviews from peers. They provide a clear overview of the changes made, allowing reviewers to provide feedback, suggestions, and catch potential issues or improvements.
+
+**Implementing New Features or Fixes** <br>
+If you're working on a new feature or bug fix in a separate branch, submitting a pull request allows you to propose merging those changes into the main branch once they are ready. This ensures that the new code undergoes review and validation before being integrated into the main project.
+
+**Maintaining Code Quality** <br>
+Pull requests help maintain code quality by introducing a step where changes are reviewed and discussed. This process promotes best practices, catches potential bugs or vulnerabilities, and ensures that code adheres to the project's standards and guidelines.
+
+**Initiating a Pull Request via the GitHub Online Interface:**
+
+The GitHub online interface allows for pull requests not only `from forked repositories` but also `from branches` within the original repository itself.
+
+Let's explore the differences and who can use each option:
+
+### • *Pull Requests from Forked Repo*
+
+|Feature      |Pull requests are commonly used when contributing to open-source projects or collaborating on repositories where you do NOT have direct write access.|
+|-------------|-------------------------|
+|When to use? |In this case, to contribute you typically fork the original repository, which creates a separate copy under your own GitHub account.|
+|How to use?  |Forked repositories allow you to freely experiment, make changes, and **propose your changes back to the original repository via pull requests**.|
+|Who can use? |Any GitHub user can fork a repository and initiate pull requests from their forked copy.|
+
+1. Fork the repository via the GitHub online interface:
+  * Navigate to the original repository on GitHub.
+  * Click on the `Fork` button at the top-right corner to create a forked copy under your GitHub account.
+
+
+2. Make local changes in the command line:
+  * Clone the forked repository to your local machine using the `git clone <URL>` command.
+  * Create a new branch using `git checkout -b <branch-name>`.
+  * Make the desired changes in your local repository.
+
+
+3. Push changes to your forked repository:
+  * Commit your changes using `git add` & `git commit` and then push them to your forked repository using `git push origin <branch-name>`.
+
+
+4. **Initiate the Pull Request via the GitHub online interface:**
+  * Go to your forked repository on GitHub.
+  * Click on the `Pull request` button near the top-left corner.
+  * Select the appropriate branches for:
+    * the base *(the branch you want to merge your changes into)* and
+    * the compare *(the branch containing your changes)*.
+  * Provide a clear title and description explaining the purpose and details of your changes.
+  * Review the changes made in the pull request and, if satisfied, click on the `Create pull request` button to submit it.
+
+
+<span style="color: #ff3870;font-weight: 500;"> Congratulations! You have successfully initiated a pull request. </span> <br>
+Now, the project maintainers or collaborators can review your changes, provide feedback, and decide whether to merge them into the target branch.
+
+### • *Pull Requests from Branch*
+
+|Feature      |GitHub also allows you to **create pull requests from branches within the original repository itself.|
+|-------------|-------------------------|
+|When to use? |This feature is particularly **useful for collaborative development** within a single repository where contributors **have direct write access**.|
+|How to use?  |By creating branches within the original repository, you can work on separate features, bug fixes, or experiments independently and propose those changes via pull requests for review and merging.|
+|Who can use? |Collaborators with write access to the repository can create branches and initiate pull requests from those branches.|
+
+1. Make local changes in the command line:
+  * Clone the original repository to your local machine using the `git clone <URL>` command.
+  * Use the command `git checkout -b <branch-name>` to create and switch to a new branch.
+  * Make the desired changes to the files in your local repository using your preferred code editor or IDE.
+
+
+2. Commit & Push changes:
+  * Stage the changes using `git add <file>` and commit them using `git commit -m "Your commit message here"`
+  * Push your branch to the remote repository using `git push origin <branch-name>`.
+
+
+3. **Initiate the Pull Request via the GitHub online interface:**
+  * Visit the repository on the GitHub website using your web browser.
+  * On the repository page, you will see a notification banner for the newly pushed branch. Click on the `Compare & pull request` button.
+  * Review the changes made in the pull request.
+  * Ensure that you use appropriate branches for:
+    * the base *(the branch you want to merge your changes into)* and
+    * the compare *(the branch containing your changes)*.
+  * Customize the pull request title and description to provide a clear overview of your changes and their purpose.
+  * Once you're satisfied with the changes and the information provided, click on the `Create pull request` button to submit the pull request.
+
+
+<span style="color: #ff3870;font-weight: 500;"> Congratulations! You have successfully initiated a pull request. </span> <br>
+Now, the project maintainers or collaborators can review your changes, provide feedback, and decide whether to merge them into the target branch.
+
+
 
 ___
 # Further Reading
