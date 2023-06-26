@@ -1082,7 +1082,7 @@ Before merging, it's important to review and test your changes thoroughly to ens
 <br><span style="font-style:italic;">
 Please note that you might not have permission to push directly to the original repository, so you may need to: <br>
 <li><a href="https://">Fork the repo</a> first, which creates your own copy of the repository on GitHub.</li>
-<li><a href="https://">Submit Pull Request</a>, which
+<li><a href="https://">Submit Pull Request</a>, that allows you to propose changes to the administrators of the original repo.</li>
 </span>
 </div>
 
