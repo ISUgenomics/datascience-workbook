@@ -17,7 +17,7 @@ header:
 
 # <span style="color: #8896c1;">Introduction</span>
 
-**<a href="https://git-scm.com/" target="_blank">Git  ⤴</a> is a Version Control System** (VCS) that tracks changes to a file or set of files over time so that you can recall specific versions later. It’s like a time machine for your code (and docs or notes), allowing you to travel back and see what your project looked like yesterday, last week, or even last year.
+**<a href="https://git-scm.com/" target="_blank">Git  ⤴</a> is a Version Control System** (VCS) that tracks changes to files over time so that you can recall specific versions later. It’s like a time machine for your code (and docs or notes), allowing you to travel back and see what your project looked like yesterday, last week, or even last year.
 
 First, let's clarify what these **Version Control Systems** (VCS) are.
 
@@ -63,7 +63,6 @@ Well, Git is what we call a **distributed VCS**. Unlike centralized VCS, where t
 
 Moreover, Git's architecture provides **support for divergent, simultaneous work** — thus enabling experimentation, simultaneous efforts, and flexibility for multiple collaborators. With other VCS, there's a linear approach to version control, which tends to be more restrictive.
 
----
 
 ## Summary of Git features
 
@@ -265,11 +264,10 @@ sudo apt-get install git
 sudo dnf install git
 ```
 
-Once you've installed Git, open a new terminal (or command prompt) and type:
+Once you've installed Git, to verify the installation open a new terminal and type:
 ```
 git --version
 ```
-to verify the installation.
 
 
 ### *Configure Git*
@@ -302,27 +300,28 @@ Here, I provide you with a carefully curated list of essential `Git commands` th
 * **As you continue to use Git** aand find yourself facing more advanced tasks in your version-controlled projects, such as dealing with multiple parallel development streams, you can revisit this collection of Git commands.
   * branching: At that point, the commands under the Branching category will become particularly relevant, allowing you to create, switch between, merge, and delete branches.
 
-<div style="background: #cff4fc; padding: 15px;">
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
 <b>Git's power and flexibility grows with your needs</b>, so don't worry about mastering everything at once. <br>You can always learn more commands as your projects demand.
 </span>
-</div><br>
+</div>
 
-<div style="background: #dff5b3; padding: 15px;">
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">"git"  is a keyword that starts all Git commands</span>
 <br><span style="font-style:italic;">
 In the context of Git commands, <b>git</b> is a command-line keyword that signals to your computer's terminal or command prompt that the following instructions should be executed in the context of Git. So, whenever you're executing a Git command, you'll start the command with the "git" keyword.
 </span>
-</div><br>
+</div>
 
 From initializing your first repository to making commits, managing remote repositories, and navigating branches, these commands form the backbone of typical Git workflows. As you grow in your journey of using Git, you'll find these commands invaluable for version control and collaborative coding endeavors.
 
 ### • *General*
 
-<div style="background: #dff5b3; padding: 15px;">
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
 Git commands from the General category are used for setting up your Git environment and obtaining help on different commands; these commands are essential when you're just starting with Git or when you need further information on a specific command.
 </div>
+
 
 | command | description |
 |---------|-------------|
@@ -332,9 +331,9 @@ Git commands from the General category are used for setting up your Git environm
 
 ### • *Local Repo*
 
-<div style="background: #dff5b3; padding: 15px;">
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 30px;">
 Commands in this category are utilized when you are working on a project on your local machine, such as initializing a new repository, making changes to files, staging these changes, and recording them with commits.
-</div></br>
+</div>
 
 **Initialize Local Repo & Track changes:**
 
@@ -356,9 +355,9 @@ Commands in this category are utilized when you are working on a project on your
 
 ### • *Remote Repo*
 
-<div style="background: #dff5b3; padding: 15px;">
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 30px;">
 These commands come into play when you need to interact with a repository that is hosted on an external server or online platform (like GitHub), such as when cloning an existing project to your local machine, connecting your local repo to a remote one, or sharing changes between local and remote repositories.
-</div><br>
+</div>
 
 **Clone & Create projects:**
 
@@ -378,9 +377,9 @@ These commands come into play when you need to interact with a repository that i
 
 ### • *Branching*
 
-<div style="background: #dff5b3; padding: 15px;">
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
 Branching commands are essential when you want to experiment with new features or changes without affecting the main line of development. These commands allow you to create, switch between, merge, and delete branches in your repository.
-</div><br>
+</div>
 
 **Create & Switch branches:**
 
@@ -400,13 +399,14 @@ Branching commands are essential when you want to experiment with new features o
 
 ### • *More advanced*
 
-<div style="background: #cff4fc; padding: 15px;">
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
 Remember, Git is a very powerful tool with a plethora of commands. This was just a basic list for beginners, and there are many more commands and options to explore as you become more comfortable with using Git. Then it may be helpful for you to visit a <b>more comprehensive list of <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02A-git-cheatsheet" target="_blank">Git commands  ⤴</a> CheatSheet</b>, also provided in this workbook.
 </span>
-</div><br>
+</div>
 
+---
 
 # <span style="color: #8896c1;">Working with Local Repositories</spam>
 
@@ -420,19 +420,19 @@ git init
 ```
 That's it! You now have a brand new Git repository.
 
-<div style="background: #cff4fc; padding: 15px;">
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">This command creates a hidden <b>.git</b> directory which stores all the necessary metadata for your new repo.</span>
-</div><br>
+</div>
 
 When you run `git init` in your local directory, you're creating a local Git repository, which is great **for tracking changes and managing versions of your project on your local machine**.
 
-<div style="background: #dff5b3; padding: 15px;">
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">NOTE:</span>
 <br><span style="font-style:italic;">
 After initializing a repository in your selected project directory, Git will automatically start tracking changes made to the files within that repository. <b>Even a single space added or modified in a file will be detected by Git.</b>
 </span>
-</div><br>
+</div>
 
 You can verify Git tracking feature by editing any file in your new local repository and running the `git status` command, which will list the modified files ready to be staged and committed.
 
@@ -445,7 +445,7 @@ By committing your changes, you're creating a record of the project's history, a
 
 <span style="color: #ff3870;font-weight: 500;">
 First, have a look at <b>Good Practices</b> when commiting:
-</span><br><br>
+</span><br>
 
 * **Creating separate commits for each modified file** allows for a granular history of changes, providing a clear record of which files were modified and when. This level of granularity makes it easier to pinpoint specific changes and understand their impact on the overall project.
 
@@ -454,7 +454,7 @@ First, have a look at <b>Good Practices</b> when commiting:
 * By embracing this practice, developers can **maintain a reliable and detailed history** of their project, making it easier to understand, collaborate, and recover from any unexpected problems that may arise during the development process.
 
 
-So, after making modifications or adding new files to your project, you can track and record those changes using the following steps.
+So, after making modifications or adding new files to your project, **you can track and record all changes using the following steps:**
 * using `git status` to list modified files,
 * followed by `git add` to select files to be included in the commit,
 * and finally `git commit` to attach a descriptive message summarizing the changes being committed.
@@ -540,10 +540,12 @@ This command allows you to compare different versions of your project. By specif
 
 **Now, let's revert repo to the state from specific commit.** *Trip to the past, huh?*
 
+---
+
 <table style="width:100%">
 <tr>
-  <th style="width:43%">Why you may want to switch your repository <br>to the state of a specific commit?</th>
-  <th style="width:57%">While in the state of a specific commit, <br>you can perform various actions:</th>
+  <td style="width:43%; color:#5790c4;"><b>Why you may want to switch your repository <br>to the state of a specific commit?</b></td>
+  <td style="width:57%; color:#5790c4;"><b>While in the state of a specific commit, <br>you can perform various actions:</b></td>
 </tr>
 <tr>
   <td><b>Inspecting past code</b> <br>Switching to a specific commit allows you to view the code exactly as it was at that point in time. This can be useful for reviewing or understanding how certain features or functionalities were implemented in the past.</td>
@@ -574,12 +576,12 @@ It's important to note that while you can perform actions in the state of a spec
 To illustrate how you can switch between different versions of your repository, <br>
 let's consider the practical example of **reverting to a specific commit**.
 
-<div style="background: #dff5b3; padding: 15px;">
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">NOTE:</span>
 <br><span style="font-style:italic;">
 When you switch to a specific commit, <b>Git puts your repository in a "detached HEAD" state</b>, meaning you're no longer on a branch but directly at a specific commit. You can make modifications or view the project in this state, but <b>any new commits made will not be part of any branch and could potentially be lost</b> if you switch to a different branch or commit.
 </span>
-</div><br>
+</div>
 
 1. First, use `git log` to **identify the commit hash** of the version you want to revert to.
 2. Once you have the *commit hash*, run:
@@ -605,18 +607,20 @@ git checkout {branch-name}
 replacing `{branch-name}` with the branch you want to switch to. <br>
 This brings you back to the latest state of your project and allows you to continue working from there.
 
-<div style="background: #cff4fc; padding: 15px;">
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
 When you want to return to the most recent state of the repository from a past commit state and you <b>have only one branch</b>, i.e., main development line, you can <b>use the branch name "main"</b> to switch back to the latest commit. The "main" branch is commonly used as the primary branch for development, especially in the context of Git's default naming conventions.
 </span>
-</div><br>
+</div>
 
 Use the following command to **switch back to the main development line**:
 ```
 git checkout main
 ```
 By executing this command, you will return to the latest commit on the main branch. This will bring your repository back to the current state and allow you to continue working on the main development line.
+
+---
 
 # <span style="color: #8896c1;">Working with Remote Repositories</span>
 
@@ -651,7 +655,7 @@ After you log into GitHub, you can create a new repository by clicking on the `+
 <p align="center"><img width="800" src="../assets/images/01-github_new_repo_setup.png"></p>
 
 
-## 8. Connect a remote to your local repo
+## **8. Connect a remote to your local repo**
 
 **If you want to share your local project with others or want to access it from different machines**, you'll need a `remote repository`, typically hosted on platforms like <a href="https://github.com/" target="_blank">GitHub  ⤴</a>, GitLab, or Bitbucket. Learn how to establish the link between your local repository and the newly created remote repository on a hosting online platform.
 
@@ -664,14 +668,16 @@ If you have followed this tutorial from the beginning, you can skip to step 3 in
 </span>
 </div>
 
->**1. Create an account on GitHub** <br>
-If you don't already have one, you'll need a GitHub account to create and manage remote repositories. <br>You can sign up for a free account on the <a href="https://github.com/" target="_blank">GitHub homepage  ⤴</a>.
 
->**2. Create a new repository on GitHub** <br>
-After you log into GitHub, you can create a new repository by clicking on the `+` icon in the top right corner and selecting `New repository`.
+><span style="color:#c2c6d3;"><b>1. Create an account on GitHub</b> <br>
+If you don't already have one, you'll need a GitHub account to create and manage remote repositories. <br>You can sign up for a free account on the <a href="https://github.com/" target="_blank">GitHub homepage  ⤴</a>. </span>
+
+><span style="color:#c2c6d3;"><b>2. Create a new repository on GitHub</b> <br>
+After you log into GitHub, you can create a new repository by clicking on the '+' icon in the top right corner and selecting <i>'New repository'</i>.
   * You'll need to give your repository a name,
   * you can also provide a description,
-  * and decide whether the repository should be public or private.
+  * and decide whether the repository should be public or private. </span>
+
 
 **3. Connect your local repository to the new remote repository on GitHub** <br>
 Once the repository is created on GitHub, it will take you to a quick setup page where you can find the URL of your new remote repository. You should copy it.
@@ -682,7 +688,7 @@ Now, **you go back to the terminal on your local machine**, navigate to your loc
 ```
 git remote add origin {your-remote-repository-url}
 ```
-*Replace {your-remote-repository-url} with the URL of your new GitHub repository, something similar to:*
+*Replace* `{your-remote-repository-url}` *with the URL of your new GitHub repository, similar to:*
 ```
 git remote add origin https://github.com/username/repository.git
 ```
@@ -696,12 +702,12 @@ git push -u origin master
 ```
 *Here, origin is the name you gave to your remote repository (as a shorthand), and master is the branch you're pushing up to GitHub (the main branch is often called "master" or "main").*
 
-<div style="background: #cff4fc; padding: 15px;">
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
 Don't be frightened that you don't know what the <b>push</b> is yet, it was added here for the sake of order. Learn more about the <b>push command</b> in section [9. Pull from and push to the remote repository](#9-pull-from-and-push-to-the-remote-repo), where everything is explained step by step.
 </span>
-</div><br>
+</div>
 
 Now, your local repository is connected to a remote repository on GitHub. You and others can clone the project from anywhere, make changes, and then push those changes back to the repository on GitHub.
 
@@ -711,10 +717,10 @@ To check your remote repositories, use the `git remote -v` command:
 ```
 git remote -v
 ```
-This will list the URLs of the remote repositories you've connected to your local repository, for example:
+This will list the URLs of the remote repositories you've connected to your local repository, e.g.:
 
 <div style="margin-top: 10px;">
-<code style="background-color: #d9d9e3; width:100%; display: block;padding: 10px;">
+<code style="background-color: #d9d9e3; width:100%; display: block; padding: 10px; font-size: 14px;">
 origin	https://github.com/ISUgenomics/datascience-workbook.git (fetch) <br>
 origin	https://github.com/ISUgenomics/datascience-workbook.git (push)
 </code></div>
@@ -727,12 +733,12 @@ In this section, we will explore **how to synchronize your local repository with
 
 ### *Pulling updates from the remote repo*
 
-<div style="background: #dff5b3; padding: 15px;">
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">NOTE:</span>
 <br><span style="font-style:italic;">
 By pulling updates, you ensure that your local copy is up to date with the latest changes made by others. This is particularly important when working collaboratively to avoid conflicts and stay in sync with the shared codebase.
 </span>
-</div><br>
+</div>
 
 To fetch and merge the latest changes from the remote repository into your local copy, navigate to your local repo directory and use the following command:
 ```
@@ -780,6 +786,7 @@ By executing <b>git push</b>, you contribute your work to the shared codebase, m
 </span>
 </div><br>
 
+---
 
 # <span style="color: #8896c1;">Working on Collaborated Projects</span>
 
@@ -839,7 +846,7 @@ When you're aiming to clone a remote repository, <b>it's crucial to have the cor
 <b>Make sure you have the necessary rights before you start your cloning adventure!</b><br>
 Keep in mind, if the repository is private and not publicly accessible, you'll need the appropriate access permissions (such as being added as a collaborator by the repository owner) to clone or interact with it.
 </span>
-</div><br>
+</div>
 
 
 ## **11. Explore the cloned repository**
@@ -864,22 +871,22 @@ cat <filename>
 ```
 to print the contents of a file.
 
-<div style="background: #cff4fc; padding: 15px;">
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
 Remember, this is a complete copy of the project - so you'll see every file that exists in the current state of the project. <br>You can open any file you wish to view or edit.
 </span>
-</div><br>
+</div>
 
 ### *See the commit history*
 
-<div style="background: #dff5b3; padding: 15px;">
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">NOTE:</span>
 <br><span style="font-style:italic;">
 Git keeps track of the history of your project through a series of commits. <br>
 <b>Each commit is a snapshot of your project at a specific point in time.</b>
 </span>
-</div><br>
+</div>
 
 You can view this history with the `git log` command. This command will display a list of all the commits in the repository, from most recent to oldest. <br>
 **Each commit includes:**
@@ -915,16 +922,16 @@ If you want to see the differences between two specific commits, you can use:
 ```
 git diff <commitHash1>..<commitHash2>
 ```
-*Replace `<commitHash1>` and `<commitHash2>` with the actual commit hashes from your git log.*
+*Replace* `<commitHash1>` *and* `<commitHash2>` *with the actual commit hashes from your git log.*
 
 This command will show you a line-by-line breakdown of what was removed *(indicated with a -)* and what was added *(indicated with a +)* from one commit to another. **It provides a useful way of understanding the evolution of the project over time.**
 
-<div style="background: #cff4fc; padding: 15px;">
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
 Exploring a cloned repository in this manner can <b>give you a good understanding of the project's history</b> and the changes that have occurred over time. It also sets the stage for you to make your own contributions to the project.
 </span>
-</div><br>
+</div>
 
 <div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">WARNING:</span>
@@ -941,7 +948,7 @@ You'll eventually encounter situations that require you to manage multiple versi
 </div>
 
 ## **12. Experiment with devel ideas**
-<span style="color: #ff3870;font-weight: 500;">Experimenting with new development ideas often involves creating new branches or repository forks.</span> <br>
+<span style="color: #ff3870;font-weight: 500;">Experimenting with new development ideas often involves creating new branches or forks.</span> <br>
 These approaches allow you to <b>work on isolated changes without affecting the main development</b> branch or the original repository.
 
 
@@ -949,7 +956,7 @@ These approaches allow you to <b>work on isolated changes without affecting the 
 
 Create separate `development branches` of the repository to isolate and test new features, and once they are ready, merge them back to the main development line.
 
-<div style="background: #dff5b3; padding: 15px;">
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 40px;">
 <span style="font-weight:800;">NOTE:</span>
 <br><span style="font-style:italic;">
 Branching allows you to create independent lines of development within your project, making it easier to experiment with new features or ideas and merge them back into the main project when they're ready. Creating a new branch in the repository allows you to experiment with new ideas or features independently: <br>
@@ -957,7 +964,7 @@ Branching allows you to create independent lines of development within your proj
 <li> ensuring the stability of your project </li>
 <li> while still fostering innovation. </li>
 </span>
-</div><br>
+</div>
 
 
 **To create a new branch**, use the command:
@@ -970,12 +977,12 @@ git branch new-feature
 ```
 creates a new branch named "new-feature."
 
-<div style="background: #cff4fc; padding: 15px;">
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 40px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
 Give your branches <b>descriptive names</b> that reflect the purpose or feature you're working on to maintain clarity and organization.
 </span>
-</div><br>
+</div>
 
 **Switch to the newly created branch using:**
 ```
@@ -994,12 +1001,12 @@ switches to the "new-feature" branch.
 
 `Fork` the original repository to use it as a `base for a new project`. Now, you can manage it independently providing a new direction of its main development line.
 
-<div style="background: #dff5b3; padding: 15px;">
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 40px;">
 <span style="font-weight:800;">NOTE:</span>
 <br><span style="font-style:italic;">
 Forking a repository enables you to <b>create a separate copy of the original repository</b> under your own GitHub account. This allows you to freely experiment with the entire new repository, provide changes to its main development line, and <b>mange it as a new project without directly affecting the original repository</b>.
 </span>
-</div><br>
+</div>
 
 **To create a fork of selected repo:**
 * Navigate to the original repository on GitHub online.
@@ -1029,12 +1036,12 @@ When using repository forks, it's good practice to periodically sync your fork w
 
 Integrating your new developments safely refers to the process of incorporating your local changes and contributions into the collaborative project's remote repository in a reliable and controlled manner. It is essential for maintaining a stable and coherent codebase.
 
-<div style="background: #cff4fc; padding: 15px;">
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
 <b>By following <a href="#best-practices" target="_blank">Best Practices  ⤴</a>, you can contribute</b> to the collaborative project in a safe and effective manner, <b>minimizing the risk of introducing bugs, conflicts, or disruptions to the existing codebase</b>. It promotes a healthy collaborative environment and ensures that the project maintains a high standard of quality and stability.
 </span>
-</div><br>
+</div>
 
 When working on a collaborative project, it is important to follow recommended steps to minimize conflicts and maintain a smooth code integration:
 
@@ -1059,7 +1066,7 @@ Modify files, add new features, or fix issues in the cloned, forked or branched 
 
 <span style="color: #ff3870;font-weight: 500;">
 You have learned this already in step <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02-intro-to-git#4-commit-changes-to-the-repo">4. Commit changes to the repo</a> and practiced in step <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02-intro-to-git#9-pull-from-and-push-to-the-remote-repo">9. Pull from and push to the remote repo</a>.
-</span><br><br>
+</span><br>
 
 Once you're satisfied with the **experiments in your branch or fork**, you can **merge the changes back into the main development branch**.
 
@@ -1072,12 +1079,12 @@ git checkout <main-branch>
 git merge <branch-name>
 ```
 
-<div style="background: #cff4fc; padding: 15px;">
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
 Before merging, it's important to review and test your changes thoroughly to ensure they align with the project's requirements and quality standards.
 </span>
-</div><br>
+</div>
 
 <div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">WARNING:</span>
@@ -1091,12 +1098,12 @@ Please note that you might not have permission to push directly to the original 
 
 ### *Manage conflicts*
 
-<div style="background: #dff5b3; padding: 15px;">
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">NOTE:</span>
 <br><span style="font-style:italic;">
 In collaborative environments, <b>conflicts can occur when multiple contributors make changes to the same file or lines of code</b>. Git provides mechanisms to resolve conflicts, allowing you to merge divergent changes and maintain a coherent codebase. Remember, <b>frequent pulling and pushing are integral parts of the Git workflow</b>, enabling seamless collaboration and the sharing of code changes across multiple contributors.
 </span>
-</div><br>
+</div>
 
 When pulling from the remote repository or pushing to it, conflicts may arise if there are conflicting changes between your local repo and the remote codebase. <b>Git will notify you of these conflicts, and you will need to manually resolve them by editing the affected files</b>.
 
@@ -1110,19 +1117,19 @@ When pulling from the remote repository or pushing to it, conflicts may arise if
 
 ### • *Edit conflicted file*
 
-**To resolve the conflict, you'll need to manually edit the file and choose which changes to keep.**
+**To resolve the conflict, you need to manually edit file(s) and choose which changes to keep.**
 
-<div style="background: #dff5b3; padding: 15px;">
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">NOTE:</span>
 <br><span style="font-style:italic;">
 It's important to <b>carefully review and understand the conflicting changes</b> to ensure that the final resolution preserves the intended functionality and consistency of the code.
 </span>
-</div><br>
+</div>
 
 Here's an example of a file with a conflict:
 
 <div style="margin-bottom: 10px;">
-<code style="background-color: #d9d9e3; width:100%; display: block;padding: 10px;">
+<code style="background-color: #d9d9e3; width:100%; display: block; padding: 10px; font-size: 14px;">
 <<<<<<< HEAD <br>
 This is the current content of the file. <br>
 ======= <br>
@@ -1140,7 +1147,7 @@ In this example, the file contains a conflict between two different versions.
   * for example, decide to keep your local changes over incoming from remote codbase:
 
     <div style="margin-bottom: 10px;">
-    <code style="background-color: #d9d9e3; width:100%; display: block;padding: 10px;">
+    <code style="background-color: #d9d9e3; width:100%; display: block; padding: 10px; font-size: 14px;">
     This is the current content of the file. <br>
     </code></div>
 
@@ -1162,12 +1169,12 @@ It's essential to communicate and coordinate with other contributors to minimize
 
 ## **14. Submit pull request**
 
-<div style="background: #dff5b3; padding: 15px;">
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">NOTE:</span>
 <br><span style="font-style:italic;">
 A <b>pull request</b> is a feature provided by platforms like GitHub that <b>facilitates collaborative development and code integration</b>. Pull requests serve as a mechanism for proposing and reviewing changes before they are incorporated into the main branch. They foster collaboration, maintain code quality, and provide an opportunity for open discussions and feedback in the development process.
 </span>
-</div><br>
+</div>
 
 **Submitting a pull request** involves providing a detailed description of:<br>
 - the changes made, <br>
