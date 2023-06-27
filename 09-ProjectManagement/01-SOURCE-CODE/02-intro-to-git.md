@@ -420,9 +420,12 @@ git init
 ```
 That's it! You now have a brand new Git repository.
 
+![01-git_init_repo.png](../assets/images/01-git_init_repo.png)
+
 <div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">This command creates a hidden <b>.git</b> directory which stores all the necessary metadata for your new repo.</span>
+<br><span style="font-style:italic;">The <b>git init</b> command creates a hidden <b>.git</b> directory which stores all the necessary metadata for your new repo.</span> <br><br>
+<p align="left"><img width="800" src="../assets/images/01-git_repo_tracking.png"></p>
 </div>
 
 When you run `git init` in your local directory, you're creating a local Git repository, which is great **for tracking changes and managing versions of your project on your local machine**.
@@ -430,11 +433,13 @@ When you run `git init` in your local directory, you're creating a local Git rep
 <div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">NOTE:</span>
 <br><span style="font-style:italic;">
-After initializing a repository in your selected project directory, Git will automatically start tracking changes made to the files within that repository. <b>Even a single space added or modified in a file will be detected by Git.</b>
+After initializing a repository in your selected project directory, Git will automatically start tracking changes made to the files within that repository. <br> <b>Even a single space added or modified in a file will be detected by Git.</b>
 </span>
 </div>
 
 You can verify Git tracking feature by editing any file in your new local repository and running the `git status` command, which will list the modified files ready to be staged and committed.
+
+![01-git_status_untracked.png](../assets/images/01-git_status_untracked.png)
 
 
 ## **4. Commit changes**
@@ -478,6 +483,8 @@ git status
 ```
 This will provide an overview of which files are modified, untracked, or staged for commit.
 
+![01-git_status_untracked.png](../assets/images/01-git_status_untracked.png)
+
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
@@ -494,11 +501,18 @@ Staging files prepares them for inclusion in the next commit.
 ```
 git add <file_name1> <file_name2>
 ```
+  ![01-git_add_file.png](../assets/images/01-git_add_file.png)
+
+  This results in adding to stage selected file(s) only while other remain untracked.
+
+  ![01-git_add_file_status.png](../assets/images/01-git_add_file_status.png)
 
 * to stage all modified files use:
 ```
 git add .
 ```
+
+  ![01-git_add_all_status.png](../assets/images/01-git_add_all_status.png)
 
 ### *Commit your changes*
 
@@ -509,11 +523,25 @@ git commit -m "Your commit message here"
 
 The `commit message` should provide a concise and descriptive summary of the changes you made.
 
+![01-git_commit.png](../assets/images/01-git_commit.png)
+
+This will assign a message to particular changes made in files added to stage. Once `git commit` is applied, stage is cleared.
+
+![01-git_cleared_stage.png](../assets/images/01-git_cleared_stage.png)
+
+Now, new file(s) can be added & committed with separate message about changes.
+
+![01-git_add_all_commit.png](../assets/images/01-git_add_all_commit.png)
+
+You can continue this process until you commit all your recent changes *(you can keep some files if they are not ready yet)*.
+
+![01-git_cleared_tree.png](../assets/images/01-git_cleared_tree.png)
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">Make sure to create small, focused commits that encapsulate a logical set of changes. This promotes clarity and facilitates easier review and collaboration.</span>
 </div>
+
 
 ## **5. Compare & Checkout versions from history**
 
@@ -528,14 +556,18 @@ To explore the commit history and compare different versions of your project, we
 ```
 git log
 ```
-This command displays a chronological list of commits, providing information about the `commit hash`, `author`, `date`, and `commit message`. This allows you to examine the history of your project and understand the sequence of changes made over time.
+This command displays a chronological list of commits, providing information about: <br> the `commit hash`, `author`, `date`, and `commit message`. This allows you to examine the history of your project and understand the sequence of changes made over time.
+
+![01-git_commit_history.png](../assets/images/01-git_commit_history.png)
 
 ### *Compare different versions of the repo*
 
 ```
-git diff
+git diff {commit hash 1} {commit hash 2}
 ```
 This command allows you to compare different versions of your project. By specifying `commit hashes`, `branches`, or `tags`, you can see the differences in the content of files between those versions. This is particularly useful for understanding what has changed and identifying specific modifications introduced at different points in your project's history.
+
+![01-git_diff_commits.png](../assets/images/01-git_diff_commits.png)
 
 ---
 
@@ -590,10 +622,16 @@ git checkout {commit-hash}
 replacing `{commit-hash}` with the actual *commit hash*. <br>
 This will switch your repository to the state of that specific commit, effectively rewinding your project to that point in time.
 
+  ![01-git_checkout_commit.png](../assets/images/01-git_checkout_commit.png)
+
 <div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">WARNING:</span>
 <br><span style="font-style:italic;">
-It's important to understand that <b>this operation is not permanent</b> and you don't lose the newer changes. You are temporarily switching to a specific commit to inspect or work with that version.
+It's important to understand that <b>this operation is not permanent</b> and you don't lose the newer changes. You are temporarily switching to a specific commit to inspect or work with that version. <br><br>
+If you want to create a new branch to retain commits you create:
+<code>git switch -c {new-branch-name}</code> <br><br>
+To undo this operation and switch back to 'HEAD' state:
+<code>git switch -</code>
 </span>
 </div>
 
@@ -601,21 +639,27 @@ It's important to understand that <b>this operation is not permanent</b> and you
 
 To return your repo to the latest commit and leave the "detached HEAD" state, you can simply run:
 ```
+git switch -
+```
+or
+```
 git checkout {branch-name}
 ```
 replacing `{branch-name}` with the branch you want to switch to. <br>
 This brings you back to the latest state of your project and allows you to continue working from there.
 
+![01-git_switch_head.png](../assets/images/01-git_switch_head.png)
+
 <div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
-When you want to return to the most recent state of the repository from a past commit state and you <b>have only one branch</b>, i.e., main development line, you can <b>use the branch name "main"</b> to switch back to the latest commit. The "main" branch is commonly used as the primary branch for development, especially in the context of Git's default naming conventions.
+When you want to return to the most recent state of the repository from a past commit state and you <b>have only one branch</b>, i.e., main development line, you can <b>use the branch name "master"</b> to switch back to the latest commit. The "master" (or "main") branch is commonly used as the primary branch for development, especially in the context of Git's default naming conventions.
 </span>
 </div>
 
 Use the following command to **switch back to the main development line**:
 ```
-git checkout main
+git checkout master
 ```
 By executing this command, you will return to the latest commit on the main branch. This will bring your repository back to the current state and allow you to continue working on the main development line.
 
@@ -747,6 +791,15 @@ This command combines the actions of:
 * `git fetch` - retrieving changes from the remote repository, and
 * `git merge` - integrating those changes into your local branch.
 
+When there are no new changes on the remote repository, the output of `git pull` will show a message like <i>"Already up to date"</i> or <i>"Everything up to date"</i>. This indicates that your local branch is already synchronized with the remote branch, and there are no additional changes to download.
+
+![01-git_pull_current.png](../assets/images/01-git_pull_current.png)
+
+If there are new changes on the remote repository, the output of `git pull` will show messages indicating that it is downloading and merging the changes. The output will also display details about the files that were modified or added as part of the update.
+
+![01-git_pull_changes.png](../assets/images/01-git_pull_changes.png)
+
+
 ### *Pushing local changes to the remote repo*
 
 To upload your local changes to the remote repository and make them accessible to others, navigate to your local repo directory and perform the following steps:
@@ -778,12 +831,14 @@ git push
 ```
 This command sends your committed changes from the local branch to the corresponding branch on the remote repository.
 
+![01-git_push.png](../assets/images/01-git_push.png)
+
 <div style="background: #dff5b3; padding: 15px;">
 <span style="font-weight:800;">NOTE:</span>
 <br><span style="font-style:italic;">
 By executing <b>git push</b>, you contribute your work to the shared codebase, making it available for collaboration and integration. This allows others to view your changes, provide feedback, and incorporate them into the project.
 </span>
-</div><br>
+</div>
 
 ---
 
@@ -831,7 +886,12 @@ Find and copy the URL address of the repo, and then use it in your command:
 ```
 git clone https://github.com/ISUgenomics/data_graphing.git
 ```
+
+![01-git_clone_repo.png](../assets/images/01-git_clone_repo.png)
+
 **This will create a new directory on your local machine with the same name as the remote repository**, where you'll find all the repository's files, and a `.git` directory that contains all the Git-related information for the project.
+
+![01-git_clone_local.png](../assets/images/01-git_clone_local.png)
 
 <span style="color: #ff3870;font-weight: 500;">So as you can see:</span><br>
 When you clone a repository, **Git automatically adds the original repository as a remote**, so you can fetch from and push to it right away without further setup.
@@ -887,7 +947,7 @@ Git keeps track of the history of your project through a series of commits. <br>
 </span>
 </div>
 
-You can view this history with the `git log` command. This command will display a list of all the commits in the repository, from most recent to oldest.
+You can view commits history with the `git log` command. This command will display a list of all the commits in the repository, from most recent to oldest. <br> *You can see the example output in step [Chronological list of commits](#chronological-list-of-commits) of section [5. Compare & Checkout versions from history](#5-compare--checkout-versions-from-history) in this tutorial.*
 
 **Each commit includes:**
 * the `commit hash` (a unique identifier),
@@ -901,12 +961,12 @@ commit a8adf13dc8f5f88cbbf345b13126a9253cf8a7a4 (HEAD -> main, origin/main, orig
 Author: Author Name <author@email.com>
 Date:   Thu Jun 22 11:49:30 2023 -0700
 
-    Initial commit
+    Some commit message here
 ```
 
 ### *Compare commits*
 
-The `git diff` command is used to see the differences between commits, between a commit and the working tree, etc.
+The `git diff` command is used to see the differences between commits, between a commit and the working tree, etc. *You can see the example output in step [Compare different versions of the repo](#compare-different-versions-of-the-repo) of section [5. Compare & Checkout versions from history](#5-compare--checkout-versions-from-history) in this tutorial.*
 
 **Current State vs Last Commit:** <br>
 If you want to see what has changed between your current state and the last commit, you can simply run:
@@ -920,7 +980,7 @@ git diff
 **Differences Between Two Specific Commits:** <br>
 If you want to see the differences between two specific commits, you can use:
 ```
-git diff <commitHash1>..<commitHash2>
+git diff <commitHash1> <commitHash2>
 ```
 *Replace* `<commitHash1>` *and* `<commitHash2>` *with the actual commit hashes from your git log.*
 
@@ -975,7 +1035,10 @@ git branch <branch-name>
 ```
 git branch new-feature
 ```
-creates a new branch named "new-feature."
+creates a new branch named "new-feature." <br>
+You can list all available branches using `git branch` command *(without any arguments)*. The highlighted branch (with asterisk) is the currently loaded and developed branch.
+
+![01-git_branch_new.png](../assets/images/01-git_branch_new.png)
 
 <div style="background: #cff4fc; padding: 15px; margin-bottom: 40px;">
 <span style="font-weight:800;">PRO TIP:</span>
@@ -994,6 +1057,8 @@ git checkout new-feature
 ```
 switches to the "new-feature" branch.
 
+![01-git_branch_checkout.png](../assets/images/01-git_branch_checkout.png)
+
 **You can now work on your new ideas within the branch**, making commits, testing, and iterating without affecting the main branch.
 
 
@@ -1010,8 +1075,13 @@ Forking a repository enables you to <b>create a separate copy of the original re
 
 **To create a fork of selected repo:**
 * Navigate to the original repository on GitHub online.
+
 * Click the `Fork` button, located on the top-right.
   * This creates a duplicate repository under your GitHub account.
+
+    ![01-github_fork_repo.png](../assets/images/01-github_fork_repo.png)
+
+
 * Clone the forked repository to your local machine using:
 ```
 git clone <forked-repo-url>
@@ -1201,6 +1271,8 @@ Pull requests help maintain code quality by introducing a step where changes are
 **Initiating a Pull Request via the GitHub Online Interface:**
 
 The GitHub online interface allows for pull requests not only `from forked repositories` but also `from branches` within the original repository itself.
+
+![01-github_pull_request.png](../assets/images/01-github_pull_request.png)
 
 Let's explore the differences and who can use each option:
 
