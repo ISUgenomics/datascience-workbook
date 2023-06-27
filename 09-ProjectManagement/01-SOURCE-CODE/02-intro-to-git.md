@@ -143,7 +143,7 @@ When it comes to <b>collaborating on projects with multiple contributors</b> or 
 </span>
 </div>
 
-<span style="color: #ff3870;font-weight: 500;"> For a deeper understanding of how remote repositories work and how to interact with them, please navigate to the section [Working with Remote Repositories](#working-with-remote-repositories) in this tutorial. </span>
+<span style="color: #ff3870;font-weight: 500;"> For a deeper understanding of how remote repositories work and how to interact with them, please navigate to the section [Working with Remote Repositories](#working-with-remote-repos) in this tutorial. </span>
 
 Whether it's making a small bug fix, adding a new feature, or simply using the project as a base for your own work, **interacting with version-controlled repositories is a key part of the Git experience.** That is why beginners are encouraged to start their journey with Git version control in the following order, by creating and managing their own local repositories before venturing into exploring and contributing to collaborated remotely projects.
 
@@ -329,7 +329,7 @@ Git commands from the General category are used for setting up your Git environm
 | `git config --global user.name "{name}"` | Set the `name` you want attached to your commit transactions. |
 | `git config --global user.email "{email address}"` | Set the `email` you want attached to your commit transactions. |
 
-### • *Local Repo*
+### • *Local Repository*
 
 <div style="background: #dff5b3; padding: 15px; margin-bottom: 30px;">
 Commands in this category are utilized when you are working on a project on your local machine, such as initializing a new repository, making changes to files, staging these changes, and recording them with commits.
@@ -353,7 +353,7 @@ Commands in this category are utilized when you are working on a project on your
 | `git diff` | Show changes between commits, commit and working tree, etc. |
 
 
-### • *Remote Repo*
+### • *Remote Repository*
 
 <div style="background: #dff5b3; padding: 15px; margin-bottom: 30px;">
 These commands come into play when you need to interact with a repository that is hosted on an external server or online platform (like GitHub), such as when cloning an existing project to your local machine, connecting your local repo to a remote one, or sharing changes between local and remote repositories.
@@ -408,7 +408,7 @@ Remember, Git is a very powerful tool with a plethora of commands. This was just
 
 ---
 
-# <span style="color: #8896c1;">Working with Local Repositories</span>
+# <span style="color: #8896c1;">Working with Local Repos</span>
 
 ## **3. Create a new Local Repo**
 
@@ -621,7 +621,7 @@ By executing this command, you will return to the latest commit on the main bran
 
 ---
 
-# <span style="color: #8896c1;">Working with Remote Repositories</span>
+# <span style="color: #8896c1;">Working with Remote Repos</span>
 
 There are several online platforms, like <a href="https://github.com/" target="_blank">GitHub  ⤴</a>, Bitbucket, and GitLab, that provide hosting services for remote repositories. These platforms come with features that make collaboration easier, such as issue tracking, code reviews, and team management tools.
 
@@ -754,7 +754,7 @@ To upload your local changes to the remote repository and make them accessible t
 **1. Commit changes to the repository** <br>
 Before pushing your changes to the remote repository, it is crucial to first commit your changes locally. This ensures that your modifications are tracked and recorded in Git's version history. <br>
 <span style="color: #ff3870;font-weight: 500;">
-You have already learned how to make commits in the previous section (Section [4. Commit changes to the repository](#4-commit-changes-to-the-repo)), you can revisit that section if you need a refresher on committing changes.
+You have already learned how to make commits in the previous section (Section [4. Commit changes to the repository](#4-commit-changes)), you can revisit that section if you need a refresher on committing changes.
 </span>
 
 Here are the practical steps to follow, given in brief:
@@ -787,7 +787,7 @@ By executing <b>git push</b>, you contribute your work to the shared codebase, m
 
 ---
 
-# <span style="color: #8896c1;">Working on Collaborated Projects</span>
+# <span style="color: #8896c1;">Collaborating on Projects</span>
 
 ***Ever wanted to work on an exciting open-source project, or maybe a colleague's project?*** <br>*That's where cloning repos comes into play.*
 
@@ -904,7 +904,7 @@ Date:   Thu Jun 22 11:49:30 2023 -0700
     Initial commit
 ```
 
-### *Show changes between commits*
+### *Compare commits*
 
 The `git diff` command is used to see the differences between commits, between a commit and the working tree, etc.
 
@@ -947,7 +947,7 @@ You'll eventually encounter situations that require you to manage multiple versi
 </span>
 </div>
 
-## **12. Experiment with devel ideas**
+## **12. Experiment with devel**
 <span style="color: #ff3870;font-weight: 500;">Experimenting with new development ideas often involves creating new branches or forks.</span> <br>
 These approaches allow you to <b>work on isolated changes without affecting the main development</b> branch or the original repository.
 
@@ -1065,7 +1065,7 @@ Modify files, add new features, or fix issues in the cloned, forked or branched 
 * and finally push your commits to the remote collaborative project.
 
 <span style="color: #ff3870;font-weight: 500;">
-You have learned this already in step <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02-intro-to-git#4-commit-changes-to-the-repo">4. Commit changes to the repo</a> and practiced in step <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02-intro-to-git#9-pull-from-and-push-to-the-remote-repo">9. Pull from and push to the remote repo</a>.
+You have learned this already in step <a href="#4-commit-changes">4. Commit changes to the repo</a> and practiced in step <a href="#9-pull-from-and-push-to-the-remote-repo">9. Pull from and push to the remote repo</a>.
 </span><br>
 
 Once you're satisfied with the **experiments in your branch or fork**, you can **merge the changes back into the main development branch**.
@@ -1240,7 +1240,7 @@ Let's explore the differences and who can use each option:
 <span style="color: #ff3870;font-weight: 500;"> Congratulations! You have successfully initiated a pull request. </span> <br>
 Now, the project maintainers or collaborators can review your changes, provide feedback, <br>and decide whether to merge them into the target branch.
 
-### *Pull Request from a Branch*
+### *Pull Request from Branch*
 
 |Feature      |GitHub allows you to create pull requests from branches within the original repository itself.|
 |-------------|-------------------------|
