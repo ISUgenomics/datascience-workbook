@@ -133,7 +133,7 @@ Git is a powerful tool that can be utilized as a <b>standalone version control s
 </span>
 </div><br>
 
-<span style="color: #ff3870;font-weight: 500;"> When you're ready to start your own project, head over to the [Creating a new Local Repository](#creating-a-new-local-repository) section of this guide to learn how to initialize and manage your own Git repository. </span>
+<span style="color: #ff3870;font-weight: 500;"> When you're ready to start your own project, head over to the [Creating a new Local Repository](#3-creating-a-new-local-repository) section of this guide to learn how to initialize and manage your own Git repository. </span>
 
 Before diving into creating and managing your own repositories, **it's common to first get your feet wet by using or contributing to existing projects**. These projects are **typically stored in centralized remote repositories hosted on platforms like <a href="https://github.com/" target="_blank">GitHub  ⤴</a>**, Bitbucket, or GitLab. Engaging with these shared projects allows you to learn from the work others have done, contribute to the open-source community, and gain experience with version control workflows.
 
@@ -747,7 +747,7 @@ To upload your local changes to the remote repository and make them accessible t
 **1. Commit changes to the repository** <br>
 Before pushing your changes to the remote repository, it is crucial to first commit your changes locally. This ensures that your modifications are tracked and recorded in Git's version history. <br>
 <span style="color: #ff3870;font-weight: 500;">
-You have already learned how to make commits in the previous section (Section [4. Commit changes to the repository](#4-commit-changes-to-the-repository)), you can revisit that section if you need a refresher on committing changes.
+You have already learned how to make commits in the previous section (Section [4. Commit changes to the repository](#4-commit-changes-to-the-repo)), you can revisit that section if you need a refresher on committing changes.
 </span>
 
 Here are the practical steps to follow, given in brief:
@@ -1056,7 +1056,7 @@ Modify files, add new features, or fix issues in the cloned, forked or branched 
 * and finally push your commits to the remote collaborative project.
 
 <span style="color: #ff3870;font-weight: 500;">
-You have learned this already in step <a href="#4-commit-changes-to-the-repo">4. Commit changes to the repo</a> and practiced in step <a href="#9-pull-from-and-push-to-the-remote-repo">9. Pull from and push to the remote repo</a>.
+You have learned this already in step <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02-intro-to-git#4-commit-changes-to-the-repo">4. Commit changes to the repo</a> and practiced in step <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02-intro-to-git#9-pull-from-and-push-to-the-remote-repo">9. Pull from and push to the remote repo</a>.
 </span><br><br>
 
 Once you're satisfied with the **experiments in your branch or fork**, you can **merge the changes back into the main development branch**.
@@ -1081,8 +1081,8 @@ Before merging, it's important to review and test your changes thoroughly to ens
 <span style="font-weight:800;">WARNING:</span>
 <br><span style="font-style:italic;">
 Please note that you might not have permission to push directly to the original repository, so you may need to: <br>
-<li><a href="https://">Fork the repo</a> first, which creates your own copy of the repository on GitHub.</li>
-<li><a href="https://">Submit Pull Request</a>, that allows you to propose changes to the administrators of the original repo.</li>
+<li><a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02-intro-to-git#-fork-the-entire-repo">Fork the repo</a> first, which creates your own copy of the repository on GitHub.</li>
+<li><a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02-intro-to-git#14-submit-pull-request">Submit Pull Request</a>, that allows you to propose changes to the administrators of the original repo.</li>
 </span>
 </div>
 
@@ -1158,7 +1158,7 @@ It's essential to communicate and coordinate with other contributors to minimize
 </div>
 
 
-## 14. Submit pull request as external contributor
+## 14. Submit pull request
 
 <div style="background: #dff5b3; padding: 15px;">
 <span style="font-weight:800;">NOTE:</span>
@@ -1233,7 +1233,7 @@ Now, the project maintainers or collaborators can review your changes, provide f
 
 ### • *Pull Requests from Branch*
 
-|Feature      |GitHub also allows you to **create pull requests from branches within the original repository itself.|
+|Feature      |GitHub allows you to create pull requests from branches within the original repository itself.|
 |-------------|-------------------------|
 |When to use? |This feature is particularly **useful for collaborative development** within a single repository where contributors **have direct write access**.|
 |How to use?  |By creating branches within the original repository, you can work on separate features, bug fixes, or experiments independently and propose those changes via pull requests for review and merging.|
