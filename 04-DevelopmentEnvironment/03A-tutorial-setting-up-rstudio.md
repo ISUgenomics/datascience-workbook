@@ -129,11 +129,11 @@ However since this will load base R without the R libraries, you may need to ins
 
 Since the home directory may have restricted space, see the SCINet documentation on linking libraries on the HPC.
 
-* SCINet Package Install - [https://scinet.usda.gov/guide/packageinstall/](https://scinet.usda.gov/guide/packageinstall/)
+* Installing R Packages on SCINet - [https://scinet.usda.gov/guides/analysis/r-perl-python#installing-r-packages](https://scinet.usda.gov/guides/analysis/r-perl-python#installing-r-packages)
 
 ## Using RStudio Server on SCINet
 
-Recently, Ceres HPC was configured to run RStudio Server. This allows you to run an RStudio like interface to the Ceres HPC. See full instructions on the SCINet website: [https://scinet.usda.gov/guide/rstudio/](https://scinet.usda.gov/guide/rstudio/)
+Recently, Ceres HPC was configured to run RStudio Server. This allows you to run an RStudio like interface to the Ceres HPC. See full instructions on the SCINet website: [https://scinet.usda.gov/guides/analysis/r-studio](https://scinet.usda.gov/guides/analysis/r-studio)
 
 <!--
 ## Testing Equations
