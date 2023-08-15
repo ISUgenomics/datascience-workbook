@@ -29,6 +29,8 @@ Once you have <a href="https://datascience.101workbook.org/04-DevelopmentEnviron
 <br>
 ![R1](assets/images/04_RStudio_1.png) <br>
 <br>
+
+### New R Script
 If you do not see an empty editor window, you can open a new R Script file from the `File` menu: <br>
 <br>
 ![R2](assets/images/04_RStudio_2.png) <br>
@@ -38,19 +40,86 @@ An empty R Script file will open: <br>
 ![R1](assets/images/04_RStudio_3.png) <br>
 <br>
 This is the code editor and you can write your code in this space. You can directly write code in the `Console` as well but editor allows you to run parts of code, save progress, make comments etc. Try writing the following code, and then run by selecting the lines you want to run and clicking the `Run` button: <br>
+
+```R
+install.packages("ggplot2")
+library(ggplot2)
+```
+
 <br>
 ![R1](assets/images/04_RStudio_4.png) <br>
 <br>
-If you select only the second line as shown and run, it will load the library `ggplot2` if it is installed on your system. If you have not installed the package, you will need to run the first line of code first. After the libarary is loaded, you can run the rest of the code shown below to create a plot using `ggplot2`: <br>
-<br>
+
+If you select only the second line as shown and run, it will load the library `ggplot2` if it is installed on your system. If you have not installed the package, you will need to run the first line of code first. After the libarary is loaded, you can run the rest of the code shown below to create a plot using `ggplot2`. The following code uses sample dataset called `mpg` already included within the `ggplot2` library. <br>
+
+```R
+# this is a comment
+# An example
+ggplot(mpg, aes(displ, hwy, colour = class)) +
+  geom_point()
+```
+
+
 ![R1](assets/images/04_RStudio_5.png) <br>
 <br>
+
 The editor will create an indent in the second line when you write this code. When you select both the lines and run it successfully, the following plot will appear on the `Plots` window: <br>
 <br>
 ![R1](assets/images/04_RStudio_6.png) <br>
 <br>
+That's how simple it can be to make a plot using RStudio!
 
+To save your work, you can use `Ctrl+S` or `Save` option in `File` menu. <br>
+<br>
+![R1](assets/images/04_RStudio_7.png) <br>
+<br>
 
+Other options within the `File` menu include: 
+* `New Project` : creates a new directory/folder for your project
+* `Open File` : to open a previously saved file
+* `Open Project` : similar to opening a directory/folder containing all files related to a project
+* `Save All` : to save all the open files
+
+## Additional Useful options
+
+### Importing data
+Data from a file can be imported into your RScript. There are several ways and exact method will depend on the format of your data. Let's say you have your data in a csv file (text file with comma separated values) that you want to use in your R Script. You can use the `read.csv()` method to read the file. This command takes a few arguments as input: <br>
+* `path` : The path to the file containing your data
+* `header` : Optional, to indicate if you want to import column headings. (TRUE by default)
+* `sep` : The separator for the values in each row of your data
+
+It is a good practice to define the `path` first separately and then use the desired method to read files as the path can then be reused in other commands.
+
+```R
+path <- "path/to/your/data"
+data <- read.csv(path, header = TRUE, sep = “,”)
+```
+
+Once data is imported and stored in the variable "data", it can then be accessed and used.
+
+```R
+print(data)
+```
+
+### Environment panel
+Usually on top right, the environment panel contains list of any loaded data, values, and functions. As you can see below, the liat will have object/dataset name "data" in this case, and what is within that object ("234 obs. of 11 variables in this example). Clicking on the dataset will open it. You can also import data using `Import Dataset` option in this panel. <br>
+The whole list of loaded environment variables/data (objects) can be cleared using the broom button. It will wipe all variables from memory of the session and variables will need to be loaded again to use. <br>
+
+![R1](assets/images/04_RStudio_8.png) <br>
+<br>
+
+### Plots panel
+The plots tab on the panel on lower right shows the plots generated. There are a few options highlighted below, including the arrows to go through different plots generated during this session, `export` option to export and save the plot, and the broom to clear all plots from memory. <br>
+
+![R1](assets/images/04_RStudio_9.png) <br>
+<br>
+
+Some other useful tabs within this panel are:
+* `Files` : lists files in current working directory
+* `Packages` : lists all available packages in the user library and system library
+* `Help` : Documentation for different packages. Can be used to search for specific packages and instructions to use them
+
+<br>
 ___
 # Further Reading
 * [3.1.1 Setting Up RStudio](03A-tutorial-setting-up-rstudio)
