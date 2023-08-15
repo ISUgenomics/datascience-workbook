@@ -69,7 +69,7 @@ The editor will create an indent in the second line when you write this code. Wh
 <br>
 That's how simple it can be to make a plot using RStudio!
 
-To save your work, you can use `Ctrl+S` or `Save` option in `File` menu. <br>
+To save your work, you can use `Ctrl+S` keyboard shortcut or `Save` option in `File` menu. <br>
 <br>
 ![R1](assets/images/04_RStudio_7.png) <br>
 <br>
@@ -102,14 +102,14 @@ print(data)
 ```
 
 ### Environment panel
-Usually on top right, the environment panel contains list of any loaded data, values, and functions. As you can see below, the liat will have object/dataset name "data" in this case, and what is within that object ("234 obs. of 11 variables in this example). Clicking on the dataset will open it. You can also import data using `Import Dataset` option in this panel. <br>
+Usually on top right, the environment panel contains list of any loaded data, values, and functions. As you can see below, the liat will have object/dataset name "data" in this case, and what is within that object "234 obs. of 11 variables" in this example. Clicking on the dataset will open it. You can also import data using `Import Dataset` option in this panel. <br>
 The whole list of loaded environment variables/data (objects) can be cleared using the broom button. It will wipe all variables from memory of the session and variables will need to be loaded again to use. <br>
 
 ![R1](assets/images/04_RStudio_8.png) <br>
 <br>
 
 ### Plots panel
-The plots tab on the panel on lower right shows the plots generated. There are a few options highlighted below, including the arrows to go through different plots generated during this session, `export` option to export and save the plot, and the broom to clear all plots from memory. <br>
+The plots tab on the panel on lower right shows the plots generated. There are a few options highlighted below, including the arrows to go through different plots generated during this session, `Export` option to export and save the plot, and the broom to clear all plots from memory. <br>
 
 ![R1](assets/images/04_RStudio_9.png) <br>
 <br>
