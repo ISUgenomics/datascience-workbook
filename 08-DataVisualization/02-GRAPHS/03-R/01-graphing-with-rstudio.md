@@ -14,7 +14,6 @@ header:
 
 ---
 
-
 # Introduction
 
 Predicting the age of abalone from physical measurements.  
@@ -481,7 +480,7 @@ p <- ggplotly(p)
 p
 ```
 
-<img src="plot1.png" width="992" />
+<img src="assets/images/01_scatterPlot_01.png" width="992" />
 
 ```r
 # Create a histogram with the default bin range
@@ -518,7 +517,7 @@ p4 <- subplot( p1, p2, p3, nrows = 2 )
 p4
 ```
 
-<img src="plot2.png" width="992" />
+<img src="assets/images/01_histogram_02.png" width="992" />
 
 ```r
 # Compute the correlation matrix
@@ -545,7 +544,7 @@ heatmap <- ggplotly(heatmap)
 heatmap
 ```
 
-<img src="plot3.png" width="992" />
+<img src="assets/images/01_heatmap_03.png" width="992" />
 
 The attributes that are most correlated to `Rings` are `Shell_weight`
 and `Height`.
