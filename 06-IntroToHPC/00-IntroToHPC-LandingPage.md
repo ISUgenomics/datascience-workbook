@@ -55,7 +55,8 @@ Although today's handy laptops perform many advanced and computationally intensi
 ### **<a href="06-PARALLEL/01-introduction-to-gnu-parallel" style="color: #24376b;">6. Introduction to GNU Parallel</a>**
 
 ### **<a href="07-CONTAINERS/00-introduction-to-containers" style="color: #24376b;">7. Introduction to Containers</a>**
-* <a href="07-CONTAINERS/01-SINGULARITY/01-singularity-basics" style="color: #3f5a8a;">7.1 Singularity</a>
+* <a href="07-CONTAINERS/01-SINGULARITY/00-apptainer-introduction" style="color: #3f5a8a;">7.1 Apptainer</a>
+  * <a href="07-CONTAINERS/01-SINGULARITY/01-singularity-basics" style="color: #3f5a8a;">7.1 Singularity (archival)</a>
   * <a href="07-CONTAINERS/01-SINGULARITY/02-singularity-1-tutorial-creating-containers" style="color: #3f5a8a;">7.1.1 Creating Containers using Singularity</a>
   * <a href="07-CONTAINERS/01-SINGULARITY/03-singularity-2-tutorial-modyfying-containers" style="color: #3f5a8a;">7.1.2 Modifying Existing Containers</a>
   * <a href="07-CONTAINERS/01-SINGULARITY/04-singularity-3-tutorial-vagrant" style="color: #3f5a8a;">7.1.3 Singularity on your Mac via Vagrant</a>

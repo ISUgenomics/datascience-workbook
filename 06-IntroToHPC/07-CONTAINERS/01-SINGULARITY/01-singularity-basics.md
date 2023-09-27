@@ -212,6 +212,6 @@ ___
 
 [Homepage](../../../index.md){: .btn  .btn--primary}
 [Section Index](../../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
-[Previous](../00-introduction-to-containers){: .btn  .btn--primary}
+[Previous](00-apptainer-introduction){: .btn  .btn--primary}
 [Next](02-singularity-1-tutorial-creating-containers){: .btn  .btn--primary}
 [top of page](#introduction){: .btn  .btn--primary}

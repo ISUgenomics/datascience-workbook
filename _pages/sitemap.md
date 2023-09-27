@@ -538,21 +538,26 @@ header:
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
-    <a href="06-IntroToHPC/07-CONTAINERS/01-SINGULARITY/01-singularity-basics" style="color: #3f5a8a;">
-    Singularity</a></td></tr>
+    <a href="06-IntroToHPC/07-CONTAINERS/01-SINGULARITY/00-apptainer-introduction" style="color: #3f5a8a;">
+    Apptainer <i>(singularity rebranding)</i></a></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;  
+    <a href="06-IntroToHPC/07-CONTAINERS/01-SINGULARITY/01-singularity-basics" style="color: #3f5a8a;">
+    Singularity <i>(archival)</i></a></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&emsp;&emsp;⊙&emsp;  
     <a href="06-IntroToHPC/07-CONTAINERS/01-SINGULARITY/02-singularity-1-tutorial-creating-containers" style="color: #3f5a8a;">
     Creating Containers using Singularity</a></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
-    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;  
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&emsp;&emsp;⊙&emsp;  
     <a href="06-IntroToHPC/07-CONTAINERS/01-SINGULARITY/03-singularity-2-tutorial-modyfying-containers" style="color: #3f5a8a;">
     Modifying Existing Containers</a></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
-    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;  
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&emsp;&emsp;⊙&emsp;  
     <a href="06-IntroToHPC/07-CONTAINERS/01-SINGULARITY/04-singularity-3-tutorial-vagrant" style="color: #3f5a8a;">
     Singularity on your Mac via Vagrant</a></td></tr>
 

@@ -17,7 +17,7 @@ header:
 # Introduction
 
 ## What are Containers?
-At its core, container is a technology that enables you to package and run applications in isolated environments. A container image is a file that contains the application code, libraries, and dependencies required to run an application. It can be used directly via a container platform to run an application without installation. Containers are a form of operating system virtualization that allows multiple applications to run on a single host system. 
+At its core, container is a technology that enables you to package and run applications in isolated environments. A container image is a file that contains the application code, libraries, and dependencies required to run an application. It can be used directly via a container platform to run an application without installation. Containers are a form of operating system virtualization that allows multiple applications to run on a single host system.
 
 Containers are a powerful tool that are widely used in various fields including Genomics, High-performance Computing, and Machine Learning. For example, a researcher might use containers for doing a simple blast locally, or for running an entire genome assembly pipeline. This page provides an introduction to container technology and you can refer to the <a href="https://datascience.101workbook.org/06-IntroToHPC/07-CONTAINERS/01-SINGULARITY/01-singularity-basics" target="_blank">Singularity ⤴</a> and <a href="https://datascience.101workbook.org/06-IntroToHPC/07-CONTAINERS/02-DOCKER/01-docker-basics" target="_blank">Docker ⤴</a> tutorial pages in this <a href="https://datascience.101workbook.org" target="_blank">workbook  ⤴</a> to get started with using containers with these platforms.
 <br>
@@ -58,7 +58,8 @@ In summary, containers offer a more resource-efficient and portable solution, wi
 
 ___
 # Further Reading
-* [7.1 Singularity](01-SINGULARITY/01-singularity-basics)
+* [7.1 Singularity](01-SINGULARITY/00-apptainer-introduction)
+  * [7.1 Singularity (archival)](01-SINGULARITY/01-singularity-basics)
 * [7.2 Docker](02-DOCKER/01-docker-basics)
 
 
@@ -67,5 +68,5 @@ ___
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
 [Previous](../06-PARALLEL/01-introduction-to-gnu-parallel){: .btn  .btn--primary}
-[Next](01-SINGULARITY/01-singularity-basics){: .btn  .btn--primary}
+[Next](01-SINGULARITY/00-apptainer-introduction){: .btn  .btn--primary}
 [top of page](#introduction){: .btn  .btn--primary}
