@@ -58,7 +58,7 @@ In summary, containers offer a more resource-efficient and portable solution, wi
 
 ___
 # Further Reading
-* [7.1 Singularity](01-SINGULARITY/00-apptainer-introduction)
+* [7.1 Apptainer](01-SINGULARITY/00-apptainer-introduction)
   * [7.1 Singularity (archival)](01-SINGULARITY/01-singularity-basics)
 * [7.2 Docker](02-DOCKER/01-docker-basics)
 
