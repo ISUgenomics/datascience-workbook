@@ -1,5 +1,5 @@
 ---
-title: "Singularity"
+title: "Apptainer: the container system for secure HPC"
 layout: single
 author: Aleksandra Badaczewska
 author_profile: true
