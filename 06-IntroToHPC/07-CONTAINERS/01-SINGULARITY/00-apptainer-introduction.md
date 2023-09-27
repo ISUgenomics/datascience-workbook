@@ -69,17 +69,17 @@ Apptainer <i>(previously Singularity)</i> offers some features that make it dist
 * focus on security, reproducibility, and portability
 * open-source project
 
-## Apptainer on a local machine
+## **Apptainer on a local machine**
 
 Follow the guide provided in section <a href="https://apptainer.org/docs/user/latest/quick_start.html#quick-start" target="_blank">Quick Start</a> in the official Apptainer Documenattion, which is intended for running Apptainer on a computer where you will install Apptainer yourself.
 
 If you want to use the Apptainer on the HPC infrastructure, see [next section](#apptainer-on-the-HPC-clusters).
 
-## Apptainer on the HPC clusters
+## **Apptainer on the HPC clusters**
 
 Apptainer provides a streamlined solution for running containers in high-performance computing (HPC) clusters, offering compatibility, security, and efficiency. Regular users can easily deploy, manage, and execute applications encapsulated in custom containers, ensuring consistency and reproducibility across complex computational environments.
 
-### Load Apptainer module
+### *Load Apptainer module*
 Apptainer is usually preconfigured by HPC administrators, allowing regular users to activate and utilize it simply by loading the corresponding module. To check if the Apptainer module is available on an HPC system, users can typically use the command:
 ```
 module avail apptainer
@@ -95,7 +95,7 @@ module load apptainer/<version>         # e.g., module load apptainer/1.1.9-py31
 
 Once the desired Apptainer module version is loaded, users can then directly execute `apptainer` commands and manage their containers within the HPC environment.
 
-### Apptainer temporary files
+### *Apptainer temporary files*
 In the context of jobs in HPC environments, **controlling the cache location** can be crucial to ensure that jobs do not run out of space or hit quotas during execution. By setting the cache directory paths, users can:
 * optimize performance by placing the cache on a fast filesystem
 * and manage storage by avoiding directories with space constraints (such as `home`).
@@ -160,7 +160,7 @@ Remember that setting these variables will direct Apptainer or Singularity to us
 </span>
 </div>
 
-## Apptainer Commands
+## **Apptainer Commands**
 
 Apptainer *(formerly Singularity)* provides a variety of commands to manage and interact with containers.
 
@@ -169,7 +169,7 @@ Apptainer *(formerly Singularity)* provides a variety of commands to manage and 
 <br><span style="font-style:italic;">
 <b>With the rebranding from Singularity to Apptainer</b>, the command-line keyword changed from "singularity" to "apptainer." However, the structure and many of the <b>options and arguments for the commands remained consistent</b>, allowing for a familiar experience for those who had previously used Singularity.
 </span>
-</div><br>
+</div>
 
 Apptainer commands follow the structure of:
 ```
