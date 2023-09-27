@@ -14,6 +14,22 @@ header:
 
 ---
 
+<span style="color: #ff3870;font-weight: 800;">NOTE:</span>
+In late 2021, **Singularity underwent a rebranding to Apptainer**, changing the command keyword from`singularity` to `apptainer`, though the majority of subsequent commands and options retained their functionality.
+
+Before diving into container tasks on HPC infrastructure:
+* ensure you ascertain the available module using the commands:
+```
+module avail apptainer
+module avail singularity
+```
+* load a module of your choice:
+```
+module load apptainer/<version>       # e.g., module load apptainer/1.1.9-py310-wsbt4ge
+```
+* and consistently use the appropriate keyword for your commands *(in this example: apptainer)*.
+
+<span style="color: #ff3870;font-weight: 500;"><b>Apptainer is the recommended module</b> for container management, and users are advised to transition to it for enhanced functionality and support.</span>
 
 # Introduction
 
