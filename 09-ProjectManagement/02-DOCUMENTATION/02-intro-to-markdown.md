@@ -55,7 +55,7 @@ Content that can be practically useful:
 
 * **Blogging**: Many platforms and content management systems support Markdown for writing blog posts. With Markdown, you can quickly draft and publish articles without dealing with the complexities of HTML formatting.
 
-* **Note-taking**: Markdown's lightweight nature and portability make it an ideal format for taking notes. You can use Markdown in note-taking apps or plain text editors to create organized and easily searchable notes. 
+* **Note-taking**: Markdown's lightweight nature and portability make it an ideal format for taking notes. You can use Markdown in note-taking apps or plain text editors to create organized and easily searchable notes.
 
 <br>
 
@@ -149,11 +149,11 @@ In this tutorial, you will learn how to use Markdown in different environments, 
 
 Open a new Jupyter notebook and follow these steps to use Markdown in Jupyter Notebook:
 
-1. Create a new Markdown cell by selecting "Markdown" from the cell type dropdown menu. 
+1. Create a new Markdown cell by selecting "Markdown" from the cell type dropdown menu.
 <br>
 ![J1](../assets/images/02_Markdown_Jupyter1.png) <br>
 
-2. Use the Markdown syntax to format your text. You can include headers, emphasis, lists, links, images, code blocks, and more. Markdown cells support both plain Markdown and HTML tags, providing flexibility in styling and presentation. 
+2. Use the Markdown syntax to format your text. You can include headers, emphasis, lists, links, images, code blocks, and more. Markdown cells support both plain Markdown and HTML tags, providing flexibility in styling and presentation.
 
 3. Preview the Markdown cell by running it. The Markdown content will be rendered as formatted text.
 <br>
@@ -188,6 +188,9 @@ By following these steps, you can effectively use Markdown to create well-format
 
 ___
 # Further Reading
+* [3.2 Tools for Research Documentation](03-project_documentation)
+* [3.3 Tools for Code Documentation](04-code_documentation)
+
 * [4. Collaboration & Communication](../03-COMMUNICATION/00-collaboration-communication)
 * [5. Resource Management & Productivity](../04-PRODUCTIVITY/00-resources-productivity)
 
@@ -196,5 +199,5 @@ ___
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
 [Previous](01-documentation-improvement-tools){: .btn  .btn--primary}
-[Next](../03-COMMUNICATION/00-collaboration-communication){: .btn  .btn--primary}
+[Next](03-project_documentation){: .btn  .btn--primary}
 [top of page](#introduction){: .btn  .btn--primary}

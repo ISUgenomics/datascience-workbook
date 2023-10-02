@@ -870,6 +870,16 @@ header:
     <a href="09-ProjectManagement/02-DOCUMENTATION/02-intro-to-markdown" style="color: #3f5a8a;">
     Introduction to Markdown</a></td></tr>
 
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;   
+    <a href="09-ProjectManagement/02-DOCUMENTATION/03-project_documentation" style="color: #3f5a8a;">
+    Tools for Research Documentation</a></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;   
+    <a href="09-ProjectManagement/02-DOCUMENTATION/04-code_documentation" style="color: #3f5a8a;">
+    Tools for Code Documentation</a></td></tr>
+
   <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center; width: 130px;">INTRO</td>
     <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b>
     <a href="09-ProjectManagement/03-COMMUNICATION/00-collaboration-communication" style="color: #24376b;">
