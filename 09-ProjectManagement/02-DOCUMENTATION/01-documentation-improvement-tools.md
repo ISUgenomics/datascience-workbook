@@ -153,45 +153,66 @@ By adhering to these best practices, you not only facilitate understanding but a
 
 ---
 
-# Tools for Research Documentation
+# Markdown
 
-**Documentation** extends beyond just code, serving as a cornerstone for all research endeavors. An intricately documented project **illuminates the path to success** by enhancing understanding, interpretation, repeatability, and drawing increased attention to the presented study. Additionally, it serves as a time capsule, enabling researchers to efficiently revisit and extract valuable methodologies and insights for integration in future projects, saving time and **enhancing productivity**.
-
-## Markdown
-
-Markdown is a lightweight markup language that simplifies the formatting of text. Its simplicity and ease of use have made it a popular choice for creating documentation, READMEs, and even content for websites, making it a must-know tool for many professionals in the field.
+Markdown is a lightweight markup language that simplifies the formatting of text. Its simplicity and ease of use have made it a popular choice for creating digital documentation, READMEs, and even content for websites.
 
 <span style="color: #ff3870;font-weight: 500;">Learn more about Markdown following the practical tutorial <a href="https://datascience.101workbook.org/09-ProjectManagement/02-DOCUMENTATION/02-intro-to-markdown" target="_blank">Introduction to Markdown.</a></span>
 
 
+# Tools for Research Documentation
+
+**Documentation** extends beyond just code, serving as a cornerstone for all research endeavors. An intricately documented project **illuminates the path to success** by enhancing understanding, interpretation, repeatability, and drawing increased attention to the presented study. Additionally, it serves as a time capsule, enabling researchers to efficiently revisit and extract valuable methodologies and insights for integration in future projects, saving time and **enhancing productivity**.
+
+<span style="color: #ff3870;font-weight: 500;">Explore the practical tutorial <a href="https://datascience.101workbook.org/09-ProjectManagement/02-DOCUMENTATION/02-intro-to-markdown" target="_blank">Tools for Research Documentation</a> to learn about Digital Laboratory Notebooks, Note-taking and Writing Tools, Collaborative Writing Platforms, Reference Managers, and Data Visualization Tools.</span>
+
 ## Digital Laboratory Notebooks
+
+Digital Laboratory Notebooks (DLNs) are specialized software tools designed for the scientific community to **digitally document experiments, observations, and results**. They replace traditional paper lab notebooks, offering features like data integrity assurance, traceability, compliance with research standards, and enhanced collaboration. DLNs streamline research documentation and often integrate with other laboratory instruments or software for seamless data transfer and management.
+
+## Note-taking Tools
+
+Note-taking and writing tools are versatile software applications designed to **capture, organize, and store diverse information**, from lectures and readings to brainstorming sessions and meetings. They support various formats, **including text, images, and voice recordings**, and offer organizational features like folders, tags, or notebooks. These tools are essential for scientists to efficiently document ideas, insights, and information across various contexts.
 
 ## Collaborative Writing Platforms
 
+Collaborative writing platforms facilitate **real-time co-authoring, editing, and reviewing of documents by multiple users**, streamlining the writing process in team-based settings. They offer features like commenting, version control, and live editing, making them integral for projects requiring collective input and feedback.
+
 ## Reference Managers
+
+Reference managers are software tools designed to **collect, organize, and cite scholarly materials**, aiding researchers and writers in creating bibliographies seamlessly. They allow users to store, categorize, and annotate articles, books, and other sources, ensuring proper citation and reducing manual errors.
 
 ## Data Visualization Tools
 
+Data visualization tools help researchers and analysts transform complex datasets into intuitive, interactive, and comprehensible visuals. They enable the creation of a variety of visual representations, such as graphs, charts, and maps, facilitating the interpretation and communication of data insights.
+
+---
 
 # Tools for Code Documentation
 
 **Code documentation serves as the blueprint of software**, illuminating the architecture, functionalities, and nuances embedded within the lines of code. It acts as a beacon for developers, offering insights that expedite debugging, modification, and enhancement processes, ensuring the software’s resilience and adaptability. Moreover, well-crafted code documentation is akin to a **knowledge repository**, empowering developers to swiftly extract and **reapply coding solutions**, algorithms, or logic in new programming endeavors, **optimizing efficiency and innovation**.
 
+<span style="color: #ff3870;font-weight: 500;">Explore the practical tutorial <a href="https://datascience.101workbook.org/09-ProjectManagement/02-DOCUMENTATION/02-intro-to-markdown" target="_blank">Tools for Code Documentation</a> to learn about Digital Laboratory Notebooks, Note-taking and Writing Tools, Collaborative Writing Platforms, Reference Managers, and Data Visualization Tools.</span>
+
 ## Interactive Notebooks
 
-## Inline Documentation Tools
+Interactive notebooks serve as **dynamic platforms for project code documentation**, allowing researchers and developers to **combine live code execution with narrative text, equations, and visualizations**. They promote clarity and reproducibility by illustrating code behavior alongside explanatory content.
 
-## Version Control Platforms with Documentation
 
 ## Documentation Generators
 
+Inline code documentation tools assist developers in adding explanatory comments directly within the source code, enhancing readability and maintainability. These tools **automatically generate well-structured and navigable documentation from the comments**, making it easier for team members to understand the code's functionality and purpose. By embedding the documentation within the codebase, these tools ensure that explanations remain closely tied to the relevant code segments, promoting clarity and ease of reference.
 
+## Version Control Platforms with Documentation
 
+Version control platforms with documentation offer tools to **track, manage, and collaborate on code changes** while simultaneously providing features for detailed documentation. They enable users to maintain a history of code modifications, branch and merge projects, and integrate wikis or readme files to guide collaborators.
 
 
 ___
 # Further Reading
 * [3.1 Introduction to Markdown](02-intro-to-markdown)
+* [3.2 Tools for Research Documentation](03-project_documentation)
+* [3.3 Tools for Code Documentation](04-code_documentation)
 
 * [4. Collaboration & Communication](../03-COMMUNICATION/00-collaboration-communication)
 * [5. Resource Management & Productivity](../04-PRODUCTIVITY/00-resources-productivity)
