@@ -25,6 +25,7 @@ header:
 
 Documentation is a multifaceted pillar that supports more than just code — it's integral to the entire spectrum of research activities. A well-documented project **sheds light on the intricacies of the research process**, paving the way for success. It amplifies clarity, ensures repeatability, and garners increased credibility for the research undertaken. Beyond its immediate benefits, documentation acts as a reservoir of knowledge, allowing researchers to effortlessly revisit previous works, retrieve pivotal methodologies, and draw insights for subsequent projects. This archival quality not only conserves precious time but also acts as a catalyst for **elevating productivity and innovation in future endeavors**.
 
+---
 
 # Tools for Research Documentation
 
@@ -124,7 +125,7 @@ Reference managers, such as the popular and free-to-use <a href="https://www.zot
 
 *This table provides a quick glance at which word processors each reference manager can integrate with.*
 
-| tool          | key features | compatible word processor |
+| tool          | key features | compatible word_processor |
 |---------------|--------------|---------------------------|
 |<a href="https://www.zotero.org/" target="_blank">Zotero</a> | Zotero stands out for being both `free and open-source`, offering capabilities for easy source annotation, categorization, and consistent formatting. Its browser integration makes source capture straightforward, while its diverse citation styles cater to a myriad of academic requirements. | Microsoft Word, LibreOffice, Google Docs |
 |<a href="https://www.mendeley.com/" target="_blank">Mendeley</a> | Mendeley is renowned for its integrated academic social network and cloud-based approach, ensuring researchers not only manage references but also collaborate and discover new research. Its functionality extends to PDF annotations, public and private groups, and consistent citation styles.| Microsoft Word, LibreOffice (`linux`) |
