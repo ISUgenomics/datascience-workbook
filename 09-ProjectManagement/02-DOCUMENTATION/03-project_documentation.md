@@ -73,7 +73,7 @@ Commercial tools:
 |Collaboration Tools                   |Yes | Yes | Yes | Yes| Yes | Yes | Yes |
 |Integration with Lab Instruments      |Limited | Limited | Yes | Limited| Yes | Yes | Yes |
 |Data Storage Limit                    |Varies by Hosting | Varies by Hosting/Plan | Varies by Hosting | Depends on Hosting| Varies by Plan | Varies (Unlimited for Academics) | Varies by Plan |
-|Customizable Workflows & Templates    |Yes | Yes | Yes | Yes| Yes | Yes | Limited | Not Specific| Yes | Yes | Limited |
+|Customizable Workflows & Templates    |Yes | Yes | Limited | Not Specific | Yes | Yes | Limited |
 |API & Integration with Other Software |Yes | Yes | Yes | No (but has version control)| Yes | Yes | Yes |
 
 
@@ -106,7 +106,7 @@ Collaborative writing platforms, like the open-source tool <a href="https://ethe
 |<a href="https://www.overleaf.com/" target="_blank">Overleaf</a>|real-time LaTeX collaboration, error highlighting, publisher templates|technical & `academic papers`, theses, LaTeX projects|free & subscription tiers, account required |
 |<a href="https://www.authorea.com/" target="_blank">Authorea</a>|supports LaTeX and rich text, integration with data repositories, commenting|scientific writing, academic papers, data visualization|free & subscription tiers, account required |
 |<a href="https://papeeria.com/" target="_blank">Papeeria</a>|LaTeX editing, real-time collaboration, version control|LaTeX document creation, academic writing, theses|free & subscription tiers, account required |
-|<a href="https://www.penflip.com/" target="_blank">Penflip</a>|collaborative writing, version control, `markdown support`|collaborative writing, technical documentation, books|free & subscription tiers, account required |
+|<a href="https://www.gitbook.com" target="_blank">GitBook</a>|collaborative writing, version control and Git integration, `markdown support`|technical documentation, `educational guides & tutorials`, handbooks|free & subscription tiers, account required, public & private visibility |
 
 <div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">PRO TIP:</span>
@@ -141,10 +141,10 @@ It's worth noting that while some integrations come built-in, others might requi
 
 ## Data Visualization Tools
 
-Data visualization tools adeptly convert intricate datasets into clear and `interactive visuals`, offering diverse representations like `graphs`, `charts`, and `maps` to **aid in data interpretation and presentation**. These tools bridge the gap between raw data and comprehensible insights, making communication more effective. 
+Data visualization tools adeptly convert intricate datasets into clear and `interactive visuals`, offering diverse representations like `graphs`, `charts`, and `maps` to **aid in data interpretation and presentation**. These tools bridge the gap between raw data and comprehensible insights, making communication more effective.
 
 For detailed tutorials on **Data Visualization Tools** and methodologies, refer to section
-<b><a href="https://datascience.101workbook.org/08-DataVisualization/00-DataVisualization-LandingPage" target="_blank">08. Data Visualization</a></b>, which includes topics such as <a href="https://datascience.101workbook.org/08-DataVisualization/01-IMAGES/01-scientific-graphic-design-intro" target="_blank">Introduction to Scientific Graphic Design</a> and <a href="https://datascience.101workbook.org/08-DataVisualization/02-GRAPHS/01-introduction-to-scientific-graphing" target="_blank">Introduction to Scientific Graphing</a>, providing hands-on examples with tools like <a href="https://datascience.101workbook.org/08-DataVisualization/01-IMAGES/04-adobe-creative-cloud" target="_blank">Adobe Creative Cloud</a>, <a href="https://datascience.101workbook.org/08-DataVisualization/02-GRAPHS/01-GNUPLOT/01-gnuplot-basics" target="_blank">Gnuplot</a> (creating plots in the UNIX shell), <a href="https://datascience.101workbook.org/08-DataVisualization/02-GRAPHS/02-PYTHON/01-interactive-graphing-with-python" target="_blank">Plotly-Dash</a> (data processing & interactive plotting with Python), and <a href="https://datascience.101workbook.org/08-DataVisualization/02-GRAPHS/03-R/01-graphing-with-rstudio" target="_blank">RStudio</a>RStudio (data processing & plotting with R).
+<b><a href="https://datascience.101workbook.org/08-DataVisualization/00-DataVisualization-LandingPage" target="_blank">08. Data Visualization</a></b>, which includes topics such as <a href="https://datascience.101workbook.org/08-DataVisualization/01-IMAGES/01-scientific-graphic-design-intro" target="_blank">Introduction to Scientific Graphic Design</a> and <a href="https://datascience.101workbook.org/08-DataVisualization/02-GRAPHS/01-introduction-to-scientific-graphing" target="_blank">Introduction to Scientific Graphing</a>, providing hands-on examples with tools like <a href="https://datascience.101workbook.org/08-DataVisualization/01-IMAGES/04-adobe-creative-cloud" target="_blank">Adobe Creative Cloud</a>, <a href="https://datascience.101workbook.org/08-DataVisualization/02-GRAPHS/01-GNUPLOT/01-gnuplot-basics" target="_blank">Gnuplot</a> (creating plots in the UNIX shell), <a href="https://datascience.101workbook.org/08-DataVisualization/02-GRAPHS/02-PYTHON/01-interactive-graphing-with-python" target="_blank">Plotly-Dash</a> (data processing & interactive plotting with Python), and <a href="https://datascience.101workbook.org/08-DataVisualization/02-GRAPHS/03-R/01-graphing-with-rstudio" target="_blank">RStudio</a> (data processing & plotting with R).
 
 
 
