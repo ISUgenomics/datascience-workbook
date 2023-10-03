@@ -155,7 +155,7 @@ By adhering to these best practices, you not only facilitate understanding but a
 
 # Markdown
 
-Markdown is a lightweight markup language that simplifies the formatting of text. Its simplicity and ease of use have made it a popular choice for creating digital documentation, READMEs, and even content for websites.
+Markdown is a lightweight markup language that simplifies the formatting of text. Its simplicity and ease of use have made it a popular choice for creating digital documentation, READMEs, and even content for websites. Markdown is an ideal choice for both project documentation and inline code documentation, seamlessly blending human-readable text and technical details.
 
 <span style="color: #ff3870;font-weight: 500;">Learn more about Markdown following the practical tutorial <a href="https://datascience.101workbook.org/09-ProjectManagement/02-DOCUMENTATION/02-intro-to-markdown" target="_blank">Introduction to Markdown.</a></span>
 
