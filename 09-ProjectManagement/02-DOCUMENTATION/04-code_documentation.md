@@ -102,14 +102,26 @@ Tools for code documentation are crucial in **ensuring the readability, maintain
 
 | tool type | when to use? |
 |-----------|--------------|
-|`inline comments`         |Manually annotate code blocks, functions, and classes in your developments.|
+|`in-code comments`        |Manually annotate code blocks, functions, and classes in your developments.|
 |`documentation generators`|Use tools like JavaDoc, Doxygen, or Sphinx to generate documentation automatically.|
 |`version control`         |Use platforms like Git and provide meaningful commit messages.|
 |`code reviews`            |They can help in identifying areas of the code that are not clear and need better documentation.|
 
 ## **In-code documentation**
 
+**In-code documentation is the practice of embedding explanations and clarifications directly within the source code.** <br>
+In-code documentation serves as a roadmap for developers, detailing the structure, purpose, behavior, and nuances of the codebase. It ensures that code remains understandable, maintainable, and approachable for current and future developers. While the exact components of in-code documentation might vary depending on the language, platform, or project, the below elements give a broader perspective of what it might encompass:
+
+| comment type | description | examples |
+|--------------|-------------|----------|
+|[inline comments](#inline-comments) | Brief annotations within the code that explain specific lines or sections, making the logic or purpose clearer. | headers, setup instructions or code comments |
+|[block comments](#block-comments)  | Descriptions placed above or alongside blocks of code to describe functionality or important details. | docstrings or TODO lists |
+|[error logs](#error-logs)      | Error logs are messages printed when an error occurs during the program’s execution. They help in diagnosing and tracing the issue. | runtime progress or location of error |
+|[usage message](#usage-message)   | A brief guide, usually outputted to the console, that describes how to use a program or command, including its available options and arguments. | explanations of options or parameters |
+
 **Tools for creating in-code documentation**
+
+All forms of in-code documentation can be crafted using the same tools as those for code development, ranging from basic text editors to sophisticated integrated development environments (IDEs).
 
 | tool | type | supported languages | tutorial |
 |------|------|---------------------|----------|
