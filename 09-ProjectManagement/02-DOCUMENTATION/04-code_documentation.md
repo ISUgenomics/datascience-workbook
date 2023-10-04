@@ -150,7 +150,7 @@ On a cluster (HPC), text-based editors like <b>nano</b> and <b>vim</b> often com
 
 ## Inline comments
 
-Inline comments are essential tools in the developer's arsenal, serving as in-the-moment annotations that provide context to the codebase.
+Inline comments are essential tools in the developer's arsenal, serving as **in-the-moment annotations that provide context to the codebase**.
 
 <div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">What are Inline Comments?</span>
@@ -163,12 +163,12 @@ Inline comments are annotations placed directly within the source code. They are
 
 In practice, an **inline comment** is text that follows a special character, typically `#` or `//`, which distinguishes the comment from procedural code, making it **non-executable and solely for human reading**.
  Inline comments can be added:
-* directly above a code block to serve as a header or description
+* directly above a code block to serve as a `header` providing brief description
 ```
 # This is an inline comment in Bash
 echo "Hello, World!"
 ```
-* immediately after specific lines of code on the same line to elucidate that particular instruction.
+* immediately after specific lines of code on the same line to elucidate that particular instruction/operation
 ```
 echo "Hello, World!"  # This comment is after the command
 ```
@@ -176,6 +176,7 @@ echo "Hello, World!"  # This comment is after the command
 **Examples of inline comments**
 
 * **BASH**, use `#` for inline comments
+
 ```
 # Display the results for all items in a loop
 for item in world universe
@@ -184,14 +185,8 @@ do
 done
 ```
 
-* **PYTHON**, use `#` for inline comments
-```
-# Define a function to sum numbers
-def add(a, b):
-    return a + b                                     # add two numbers and returns the result
-```
-
 * **R**, use `#` for inline comments
+
 ```
 # Define a function to sum numbers
 sum_values <- function(a, b) {
@@ -199,9 +194,19 @@ sum_values <- function(a, b) {
 }
 ```
 
-* **C++**, use `//` for inline comments, and `/* */` for multi-line or block comments
+* **PYTHON**, use `#` for inline comments
+
 ```
-#include<iostream>                                 // include the iostream library for input/output operations
+# Define a function to sum numbers
+def add(a, b):
+    return a + b                                     # add two numbers and returns the result
+```
+
+* **C++**, use `//` for inline comments
+
+```
+#include<iostream>                                   // include the iostream library for input/output operations
+
 // Define a function that returns integer
 int main() {
     std::cout << "Hello, World!" << std::endl;       // print greeting to the console
@@ -241,6 +246,178 @@ While the examples above are simplistic for illustrative purposes, it's crucial 
 <i>If you're working in a team, it helps if everyone follows a similar comment style.</i>
 
 ![02_inline_comments.png](../assets/images/02_inline_comments.png)
+
+
+## Block comments
+
+Block comments are another indispensable tool in a developer's toolkit, acting as **extended annotations that can span multiple lines** and provide more comprehensive explanations compared to inline comments.
+
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">What are Block Comments?</span>
+<br><span style="font-style:italic;">
+Block comments, unlike inline comments, are designed to <b>describe larger sections of code</b>, potentially spanning multiple lines. They offer a <b>detailed context, often used for top-level documentation</b> like function or module descriptions, or to annotate longer sections of code where a brief inline comment might be insufficient.
+</span>
+</div>
+
+**How to add block comment?**
+
+Block comments usually **begin and end with specific delimiters** that distinguish them from inline comments and the procedural code. They're typically placed:
+
+* **at the beginning of a file or module** to describe its overall purpose *(see Bash example below)*
+* **before a function or class definition** to explain its functionality *(see Python example below)*
+* **anywhere within the codebase as TODOs** to highlight areas that need future attention *(see R example below)*
+
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+TODOs are block comments in the codebase flagged with the keyword "TODO" to mark specific sections for further development. TODOs can be strategically placed anywhere in the code to provide developers with guidance on areas requiring attention, enhancement, or the addition of new features.
+</span>
+</div>
+
+**Examples of inline comments**
+
+* **BASH**, use `#` at the beginning of each line in a block comment
+
+```
+#!/bin/bash
+
+# INFO:
+# This script prints a greeting message followed by the current date.
+# It supports both a default greeting and user-specified greeting.
+
+GREETING="Hello, World!"                # default greeting message
+
+# Check if a custom greeting is provided
+if [ "$#" -ne 0 ]; then
+    GREETING="$@"
+fi
+
+echo "$GREETING"
+echo "Today is: $(date)"
+```
+
+* **R**, use `#` at the beginning of each line in a block comment
+
+```
+# This script performs a linear regression on a dataset
+# TODO:
+# - Add data cleaning steps to handle missing values
+# - Include code for data visualization (histograms, scatter plots)
+# - Implement cross-validation for better model evaluation
+
+# Load the necessary libraries
+library(lm)
+
+# Sample data
+data <- data.frame(
+  x = c(1, 2, 3, 4, 5),
+  y = c(2, 4, 5, 4, 5)
+)
+
+# Perform linear regression
+model <- lm(y ~ x, data=data)
+summary(model)
+```
+
+* **PYTHON**, docstrings and block comments use `'''text'''` or `"""text"""`
+
+```
+# Below you can see a docstring for a function
+
+def add(a, b):
+    """
+    Adds two numbers together.
+
+    Args:
+        a (int or float): The first number.
+        b (int or float): The second number.
+
+    Returns:
+        int or float: The sum of a and b.
+    """
+    return a + b
+```
+
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">NOTE:</span>
+<br><span style="font-style:italic;">In Python, a <b>docstring</b> is a special string literal that occurs as <b>the first statement in a module, function, class, or method definition</b>, used for providing a concise explanation or documentation for that code segment. The tools like <b>sphinx</b> or <b>pydoc</b> <u>can process this convention to automatically generate documentation</u>. </span>
+</div>
+
+
+* **JAVA**, use `/** text */` syntax for (multi-line) block comments
+
+```
+/** Represents a basic calculator. */
+
+public class Calculator {
+
+    /**
+     * Sums two integers.
+     *
+     * @param a the first integer
+     * @param b the second integer
+     * @return the sum of a and b
+     */
+    public int add(int a, int b) {
+        return a + b;
+    }
+}
+```
+
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">NOTE:</span>
+<br><span style="font-style:italic;">
+In Java, <b>JavaDoc</b> is a tool and documentation standard used to generate API documentation in HTML format from Java source code. The source code is annotated with special JavaDoc comments, which are distinct from regular comments. These JavaDoc comments start with <code>/**</code> and end with <code>*/</code>.
+</span>
+</div>
+
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+In Java, single-line comments are preceded by <code>//</code> and are not processed by <b>javadoc tool</b>. Only comments starting with <code>/**</code> and ending with <code>*/</code> are recognized and processed by <i>javadoc</i> as JavaDoc comments. Even when the syntax <code>/** text */</code> is on a single line, it is still a valid JavaDoc comment.
+</span>
+</div>
+
+* **C++**, use `/* text */` syntax for (multi-line) block comments
+
+```
+/*
+This function computes the product of two numbers.
+Takes in two integers and returns their multiplication.
+*/
+int multiply(int a, int b) {
+    return a * b;
+}
+```
+
+<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">WARNING:</span>
+<br><span style="font-style:italic;">
+Just like with inline comments, avoid the temptation to overuse block comments. While they're useful for providing context, excessive or redundant comments can make code harder to read.
+</span>
+</div>
+
+**When to use inline comments?**
+
+* Providing documentation at the beginning of a file or module.
+* Describing the purpose and usage of functions, methods, classes, or modules (often in the form of docstrings).
+* Explaining complex algorithms or logic spanning multiple lines.
+* Notating developer's TODOs or areas needing further attention.
+
+**Tips for good inline comments**
+
+* **follow conventions** <br>
+<i> If a language or framework has a standard for block comments (e.g., JavaDoc or Python's docstrings), use it to ensure consistency and potential tool integration.</i>
+
+* **be thorough but concise** <br>
+<i>Block comments allow for more detail, but avoid excessive verbosity.</i>
+
+* **group related comments** <br>
+<i> If commenting on a sequence of code lines, keep them together in a single block comment rather than multiple inline comments.</i>
+
+* **stay updated** <br>
+<i>Ensure that block comments reflect code changes to prevent confusion.</i>
+
 
 
 ## Documentation for pipelines
