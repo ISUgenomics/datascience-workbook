@@ -436,7 +436,7 @@ Verbosity refers to the level of detail included in messages or logs, especially
 
 **How are error logs generated?**
 
-Log messages, strategically placed by developers at critical points in the code, communicate various events — be it issues, progress, or the completion of specific steps during runtime. The depth and detail of these messages are governed by `verbosity levels` set by developers, categorizing the significance and granularity of each event. When a user specifies a verbosity level during program execution and the code reaches a relevant logging point, the appropriate `log message` is displayed, offering insights into the ongoing process or potential issues.
+Log messages, strategically placed by developers at critical points in the code, communicate various events — be it issues, progress, or the completion of specific steps during runtime. The depth and detail of these messages are governed by `verbosity levels` set by developers, categorizing the significance and granularity of each event. When a user selects a verbosity level during program execution and the code reaches a relevant logging point, the appropriate `log message` is displayed, offering insights into the ongoing process or potential issues.
 
 <div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">PRO TIP:</span>
@@ -602,6 +602,312 @@ It's important to choose a logging approach based on the requirements of the pro
 <i>Like comments, maintain a uniform logging style, especially when working in teams.</i>
 
 
+## Usage message
+
+Usage messages or `help messages` are important elements in the <u>developer and user toolkit</u>, acting as real-time guidance that <b>outline how to use a specific tool, command, or software effectively</b>. They are vital part in code documentation, especially for command-line interfaces or APIs.
+
+
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">What is a usage message?</span>
+<br><span style="font-style:italic;">
+Usage messages, also known as help messages, are concise, structured text descriptions displayed to the user, typically upon invoking a command with specific flags like <b>-h</b> or <b>--help</b>. They <b>describe how to use a program</b>, what arguments it accepts, and provide a brief explanation of each option.
+</span>
+</div>
+
+Depending on the situation or tool, one's role can shift between being a user *(seeking guidance on software features)*, developer *(responsible for creating it)*, or both *(enhancing it based on personal experiences)* when interacting with a usage (help) message. This dual perspective can be advantageous, as understanding the user experience can lead to the creation of more intuitive and effective help messages.
+
+**When to display a usage message?** *(being a software user)*
+
+* Display a usage message when first encountering a new software or tool to understand its basic functions.
+* Pull up the usage message when uncertain about specific commands, syntax or options to preview usage examples.
+* Seek the usage message when confronting unexpected software behavior to verify command correctness.
+* Refer to the help message when wishing to delve into advanced features or lesser-known options.
+
+**How to display help message?** *(being a software user)*
+
+Usually, usage messages are displayed:
+
+* when the user specifically requests help using flags like `-h` or `--help`
+
+```
+$ myprogram --help
+
+Usage: myprogram [OPTION]... [FILE]...
+Description: Briefly explains what the program does.
+
+Options:
+  -h, --help          Display this help message and exit.
+  -v, --version       Display the program's version.
+  -f, --file <file>   Specify a file to operate on.
+  -o, --output <dir>  Specify the output directory.
+```
+* when the user provides invalid input or arguments
+
+```
+$ myprogram --help
+
+myprogram: unrecognized option `--man'
+
+usage: myprogram [-f file] [-o file]
+```
+
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+Most bash commands, standalone tools, and applications from GitHub repos typically offer a standardized approach, and you can view their usage syntax and options using '--help', provided the developer has set up a usage message.
+</span>
+</div>
+
+**Examples of usage message** *(being a software user)*
+
+In Bash, you can use `command --help` for a brief usage overview, while `man command` offers more comprehensive information and details about each command. Try these commands for commonly used Bash commands such as `ls` `grep` `awk` `wget` `tar` `ssh` `git` to see examples of well-crafted usage message.
+```
+grep --help
+
+man  grep
+```
+
+Many standalone CLI tools and applications cloned from GitHub repositories often support the `--help` option *(\*if developers have included it)* to provide usage syntax and options, so it's beneficial to use it as a starting point for understanding the tool's functionality.
+
+*Examples of useful standalone tools and GitHub-hosted applications for researchers:*
+
+|CLI_tool_|description|tool_type_ |usage_message_|
+|---------|-----------|-----------|--------------|
+|<a href="https://www.python.org/downloads/" target="_blank">Python</a>|Python language is an essential tool for data science. Python can be run as an interpreter or invoked from the command line to execute scripts.|programming language|`python --help`|
+|<a href="https://cran.r-project.org/" target="_blank">R</a>|R language is an essential tool for statistics. You can run R scripts directly from the CLI.|programming language|`Rscript --help`|
+|<a href="https://www.sqlite.org/download.html" target="_blank">SQLite</a>|A C-language library that implements an SQL database engine.|precompiled binary|`sqlite3 --help`|
+|<a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi" target="_blank">BLAST</a>|BLAST is a standalone software suite *(written in C and C++)* including several binary tools used for comparing an input sequence against a reference database of sequences.|precompiled binary|`blastn --help` <br>`blastp --help`|
+|<a href="https://gatk.broadinstitute.org/hc/en-us/" target="_blank">GATK</a> |Genome Analysis Toolkit is used for variant discovery in high-throughput sequencing data.|Java archive (JAR file)|`gatk --help`|
+|<a href="https://github.com/csf-ngs/fastqc/tree/master" target="_blank">FastQC</a>|FastQC is a tool for assessing the quality of raw sequence data from high-throughput sequencing experiments. `[GitHub]`|Java archive (JAR file)|`fastqc --help`|
+|<a href="https://github.com/zsiki/Find-GCP" target="_blank">Find-GCP</a>|The small python utility dedicated to geospatial analysis. It automatically finds ArUco markers (ground control points) in digital photos. `[GitHub]` |python script|`python gcp_find.py --help`|
+
+*As you cane see in this table, regardless of the programming language, implementation, or distribution type, many tools are designed to provide a standardized usage message with* `--help` *option for user guidance.*
+
+
+**When to include a usage message in your code?** *(being a software developer)*
+
+* For every command-line tool or script, a usage message is essential to guide users on the arguments and options.
+* For functions or APIs that have multiple configurable parameters.
+* When the intended usage of the software isn't immediately evident from the context.
+
+**When to trigger printing a usage message?** *(being a software developer)*
+
+* When the user explicitly requests it using flags like `-h` or `--help`.
+* When the user provides invalid input, unrecognized option or incorrect number of arguments.
+* When the application starts up for the first time, to guide a new user on the usage syntax.
+* If the software requires some configuration before it can run correctly (e.g., API keys, configuration files).
+* If there's a major change or update to the software, you might consider displaying a "what's new" guide.
+
+
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+A well-crafted usage message is invaluable to users of your software, providing them with concise information about how to interact with the program and its available options. <br><br>
+Many CLI libraries/frameworks (e.g., <b>argparse</b> in Python) <b>automatically generate usage messages</b> based on the defined options/commands. Leverage these to maintain consistency and accuracy.
+</span>
+</div>
+
+
+**Examples of crafting a usage message** *(being a software developer)*
+
+Different programming languages and platforms have varying libraries or mechanisms to handle and display usage messages. Create a concise, informative, and clear usage message that outlines the program’s purpose, input parameters, options, and examples, ensuring future you can quickly understand and utilize its functionality without revisiting the code or documentation.
+
+<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">WARNING:</span>
+<br><span style="font-style:italic;">
+Ensure that your usage message stays updated with the software's functionalities. An outdated or incorrect usage message can confuse or mislead users.
+</span>
+</div>
+
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+Overloading the usage message with too much information or presenting it in a non-structured manner can overwhelm users. Ensure the message is succinct and comprehensible.
+</span>
+</div>
+
+* **BASH**
+
+Even in simple Bash scripts, incorporating a usage message can be invaluable, aiding memory when revisiting the script in the future. In Bash, crafting the usage message involves creating a string of "echoed" text that clearly informs the user how to use the script. This message can be displayed conditionally when the user requests help (e.g., using a `-h` or `--help` flag as the first argument). You can also add different conditions for missing inputs or an incorrect command syntax.
+
+```
+if [ "$1" == "--help" ] || [ "$1" == "-h" ]; then
+    echo "Usage: myscript [OPTIONS]..."
+    echo "A script to demonstrate something."
+    echo ""
+    echo "Options:"
+    echo "-h, --help    Show this help message"
+    echo "-v, --verbose Enable verbose mode"
+    exit 0
+fi
+
+# rest of the script...
+```
+Assuming your code was saved in `my_script.sh` script file, you can test a new *help message* feature like this:
+```
+. ./my_script.sh --help
+```
+
+* **R**
+
+In an R script, a usage message can be crafted using the cat() function to display a descriptive message that informs the user about the correct way to utilize the script.
+
+```
+if(length(commandArgs(trailingOnly = TRUE)) < 1) {
+    cat("Usage: Rscript myscript.R <input_file>\n")
+    quit(save="no", status=1)
+}
+input_file <- commandArgs(trailingOnly = TRUE)[1]
+
+# rest of the script...
+```
+*In this example, the script expects at least one argument, for example an argument for input_file. If it's not provided, the usage message will be displayed and the script will exit.*
+
+* **PYTHON**
+
+In a simple Python script *(with not many options)*, a usage message can be crafted using the `print()` function and the `sys` module to display a message that informs the user about the correct way to use the script.
+
+```
+import sys
+
+if len(sys.argv) < 2:
+    print("Usage: python myscript.py <input_file>")
+    sys.exit(1)
+
+input_file = sys.argv[1]
+
+# rest of the script...
+```
+*In this example, the script expects at least one argument, in this case an argument for input_file. If it's not provided, the usage message will be displayed and the script will exit.*
+
+In Python, the `argparse` module provides a convenient way to define and handle command-line arguments, and it automatically generates a usage message based on the defined arguments.
+
+Here's a practical example to craft a usage message for a script that takes multiple arguments:
+
+```
+import argparse
+
+# Initialize the parser
+parser = argparse.ArgumentParser(description="A tool to demonstrate something.")
+
+# Define arguments
+parser.add_argument('-i', '--input', required=True, help='Input file path')
+parser.add_argument('-o', '--output', required=True, help='Output file path')
+
+# Parse the arguments
+args = parser.parse_args()
+
+# rest of the script...
+```
+
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">NOTE:</span>
+<br><span style="font-style:italic;">
+In the <b>parser.add_argument()</b> method, apart from required and help, you can set several other parameters, including but not limited to:
+
+<li><b>type:</b> Specifies the type of the argument, like int, float, or any callable function.</li>
+<li><b>default:</b> Specifies a default value if the argument is not provided.</li>
+<li><b>choices:</b> A container of the allowable values for the argument.</li>
+<li><b>action:</b> The basic type of action to be taken when the argument is encountered, e.g., 'store', 'append', 'store_true', etc.</li>
+<li><b>nargs:</b> Specifies the number of command-line arguments that should be consumed, e.g., '?', '*', +, or an integer.</li>
+<li><b>const:</b> A constant value required by some action and nargs selections.</li>
+<li><b>metavar:</b> A name for the argument in usage messages.</li>
+</span>
+</div>
+
+Assuming your code was saved in `my_script.py` script file, when you run:
+```
+python script.py --help
+```
+the `argparse` module will automatically generate a usage message for your script. The message will be based on the arguments and descriptions you've added to your parser. <br>
+*For the provided code, the usage message would look something like:*
+```
+usage: script.py [-h] -i INPUT -o OUTPUT
+
+Process some files.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -i INPUT, --input INPUT
+                        Input file path
+  -o OUTPUT, --output OUTPUT
+                        Output file path
+```
+**NOTE:** *The* `-h` *or* `--help` *option is added by default by* `argparse`, *and it displays the help message for the script.*
+
+
+
+* **C++**
+
+Here's how you can craft and display a usage message: <br>
+**- Identify the Tool's Requirements:** Clearly understand what arguments your tool requires. *For instance, let's say your program requires two arguments: a filename and an operation (either "read" or "write").* <br>
+**- Craft the Usage Message:** Based on the requirements, create a concise yet descriptive usage message. <br>
+**- Check the Input Arguments:** When your program starts *(see the main(){} function)*, check the passed arguments to see if they fit the requirements. If not, display the usage message and exit.
+
+```
+#include <iostream>
+#include <cstring>
+
+void displayUsage(const char* programName) {
+    std::cerr << "Usage: " << programName << " <filename> <operation>\n";
+    std::cerr << "  <filename>: The name of the file to be processed.\n";
+    std::cerr << "  <operation>: Either 'read' or 'write'.\n";
+}
+
+int main(int argc, char* argv[]) {
+    if (argc != 3) {
+        displayUsage(argv[0]);
+        return 1;
+    }
+
+    // rest of your code...
+
+    return 0;
+}
+```
+*In this example, if the number of arguments is not 3, then the condition if (argc != 3) will be true and the usage message is displayed. The* `argv[0]` *value (the first argument) is the program name, in this case, "my_program". The* `displayUsage()` *function provides the general format of the command as well as detailed explanations for each argument.*
+
+Assuming the program is compiled and named `my_program`, you can run in by calling its name followed by the arguments. Here's what the output will look like when run without arguments:
+
+```
+Usage: my_program <filename> <operation>
+  <filename>: The name of the file to be processed.
+  <operation>: Either 'read' or 'write'.
+```
+
+
+**Tips for creating effective help messages**
+
+* **be clear but comprehensive** <br>
+<i>Detail all necessary options and parameters without overloading the user.</i>
+
+* **organize systematically** <br>
+<i>If there are many options, group them logically to improve readability.</i>
+
+* **use consistent terminology** <br>
+<i>If you refer to them as "options" in one place, avoid switching to "flags" elsewhere.</i>
+
+* **provide defaults, differentiate optional and mandatory params** <br>
+<i>If some options have default values, clearly mention them. <br>Commonly, square brackets ([]) indicate optional elements, and angle brackets (<>) denote required elements.</i>
+
+* **give examples** <br>
+<i>A practical example can clarify a tool's functionality faster than a descriptive paragraph.</i>
+
+* **update as necessary** <br>
+<i>Whenever the software's functionality changes, update the usage message accordingly.</i>
+
+* **consistency is key** <br>
+<i>If you're creating multiple tools or utilities, maintain a consistent structure and style across all usage messages.</i>
+
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+Remember, the key of usage message is to make it as easy as possible for a user, whether they're a newbie or an expert, to understand and use your software effectively.
+When crafting a usage message for your program, design it as if you're leaving instructions for your future self, detailing both its purpose and usage instructions.
+</span>
+</div>
+
+
 ## **Documentation for pipelines**
 
 <div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
@@ -628,7 +934,7 @@ Pipelines and workflows represent automated sequences of tasks in software and d
 | <a href="https://observablehq.com/" target="_blank">Observable</a> | Focused on interactive visualizations with D3.js and other JS libraries; allows real-time collaboration. | Partially Free (with paid features) | JavaScript |
 
 
-## *Interactive Notebooks*
+## Interactive Notebooks
 
 <div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">NOTE:</span>
@@ -650,7 +956,7 @@ For large-scale software documentation, where comprehensive architectural detail
 For a comprehensive understanding and hands-on experience with <b>interactive notebooks</b>, I highly encourage you to delve into the tutorials presented in section <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/00-DevelopmentEnvironment-LandingPage" target="_blank">04. Development Environment</a> / <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-jupyter-basics" target="_blank">Jupyter: Interactive Web-Based Multi-Kernel DE</a>, specifically tailored for the <a href="https://jupyter.org/" target="_blank">Jupyter</a> interface.
 </span>
 
-## *Nextflow workflows*
+## Nextflow workflows
 
 Combining tools or steps into a workflow, especially using platforms like <a href="https://www.nextflow.io" target="_blank">Nextflow</a>, is a form of **documentation for the computing process**. In essence, while traditional documentation (like `README` files, user manuals, or online guides) is critical for understanding and using a software or pipeline, the structured, explicit nature of workflow scripts, especially in platforms like Nextflow, provides a form of `executable documentation`. This not only describes the computing process but also enables and ensures its reproducibility across different scenarios and platforms.
 
