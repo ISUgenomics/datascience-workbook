@@ -1172,7 +1172,7 @@ The <b>INSTALL</b> file is an essential component of your software's documentati
 </div>
 
 
-## User-Centric Documentation
+## User-centric documentation
 
 User-centric documentation is primarily aimed at end-users. This code-external documentation helps users navigate, utilize, and troubleshoot the software effectively.
 
@@ -1222,6 +1222,61 @@ FAQs provide **quick answers to commonly encountered issues or questions** users
 <i><span style="color: #ff3870;font-weight: 500;">
 See the real-tool example here: <a href="https://keras.io/getting_started/faq/" target="_blank">Keras FAQ  ⤴</a></span><br></i>
 *Keras is an open-source software library that provides a Python interface for artificial neural networks. The Keras FAQ is a part of their documentation, providing a useful categories of questions such as General questions, Training-related questions, and Modeling-related questions.*
+
+
+## Developer-centric documentation
+
+Developer-centric documentation is primarily aimed at individuals who wish to delve deeper into the software's architecture, perhaps to make modifications, contribute with new features, or understand its inner workings more intimately.
+
+## *Developer guides*
+
+Developer guides provide a deep dive into the software's architecture, including its internal structures, modules, and interaction patterns.  can help onboard new team members and offer a detailed view of how various components of the software interact and operate.
+
+<i><span style="color: #ff3870;font-weight: 500;">
+See the real-tool example here: <a href="https://docs.djangoproject.com/en/3.2/internals/" target="_blank">Django internals (Developer Guide)  ⤴</a></span><br></i>
+<i>"Documentation for people hacking on Django itself. This is the place to go if you’d like to help improve Django or learn about how Django is managed."</i>
+
+## *Contribution guidelines*
+
+Contribution guidelines are essential for open-source projects. They specify how external developers can contribute to the project, detailing processes for submitting pull requests, the coding standards to adhere to, and how to report bugs or suggest enhancements.
+
+<i><span style="color: #ff3870;font-weight: 500;">
+See the real-tool example here: <a href="https://www.kernel.org/doc/html/latest/process/submitting-patches.html" target="_blank">Linux Kernel Contribution Guidelines  ⤴</a></span><br></i>
+<i>"For a person or company who wishes to submit a change to the Linux kernel." Given the size and importance of the Linux kernel, its contribution guidelines are exhaustive, providing clear instructions and best practices.</i>
+
+<i><span style="color: #ff3870;font-weight: 500;">
+You can help improve this workbook: <a href="https://github.com/ISUgenomics/datascience-workbook/blob/main/_pages/contributing.md" target="_blank">Data Science Workbook Contribution Guidelines  ⤴</a></span><br></i>
+<i>"We are really glad you're reading this! We need volunteer contributors to make our DataScience workbook a success!" It's an open-source educational resource designed for professional researchers and science enthusiasts alike.</i>
+
+
+## *Reference materials*
+
+Reference Materials serve as the backbone of technical information for complex or multi-layer software, offering deep insights into its structure and functionalities. This includes `API documentation` which elucidates how software components interact, `Testing documentation` detailing test strategies and results, and `Architecture diagrams` visually representing the system's overarching design. Together, these materials empower developers and users with a comprehensive understanding of the software's inner workings.
+
+
+###  • *API Documentation*
+
+While it can also be useful for end-users, API (Application Programming Interface) documentation is crucial for developers. It details how different functions, methods, or classes of the software can be used, what inputs they expect, what outputs they return, and any side effects they might have.
+
+<i><span style="color: #ff3870;font-weight: 500;">
+See the real-tool example here: <a href="https://www.tensorflow.org/api_docs" target="_blank">TensorFlow API Documentation  ⤴</a></span><br></i>
+*TensorFlow is one of the leading libraries for deep learning. Its API documentation, available in several languages, provides in-depth details about its classes, methods, and functions.*
+
+###  • *Testing Documentation*
+
+This focuses on how developers can run tests, what the tests cover, and how to interpret test results. It ensures that quality and functionality are maintained as changes are made.
+
+<i><span style="color: #ff3870;font-weight: 500;">
+See the real-tool example here: <a href="https://docs.djangoproject.com/en/3.2/topics/testing/" target="_blank">Django Testing Documentation  ⤴</a></span><br></i>
+*Django is a high-level Python web framework. Its testing documentation covers how to write and run tests for Django applications.*
+
+###  • *Architecture Diagrams*
+
+These provide visual and textual representations of the software's overarching structure and design. They can be crucial for understanding how different parts of the system interrelate, especially in complex projects.
+
+<i><span style="color: #ff3870;font-weight: 500;">
+See the real-tool example here: <a href="https://docs.gitlab.com/ee/development/architecture.html#simplified-component-overview" target="_blank">GitLab Architecture Diagram  ⤴</a></span><br></i>
+*GitLab is an open-source platform that provides a range of tools for software development and collaboration, including version control, continuous integration, and issue tracking. Its architecture diagrams and associated documentation give insight into its components and how they interact.*
 
 ## Documentation Generators
 
