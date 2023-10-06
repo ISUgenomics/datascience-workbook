@@ -1226,7 +1226,14 @@ See the real-tool example here: <a href="https://keras.io/getting_started/faq/" 
 
 ## Developer-centric documentation
 
-Developer-centric documentation is primarily aimed at individuals who wish to delve deeper into the software's architecture, perhaps to make modifications, contribute with new features, or understand its inner workings more intimately.
+Developer-centric documentation is primarily aimed at individuals who wish to delve deeper into the software's architecture, perhaps to make modifications, contribute with new features, or understand its inner workings more intimately. As a project expands, encompassing multiple modules, dependencies, and contributors, a detailed developer guide becomes pivotal in ensuring consistent understanding, development practices, and smooth collaboration among team members.
+
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+The significance of developer-centric documentation grows proportionally with the complexity and scale of a software project. <b>For smaller modu</b>les or simple collections of scripts, such in-depth documentation might be superfluous. It's often more beneficial to <b>prioritize thorough in-code documentat</b>ion, ensuring that the code itself is self-explanatory and easily understandable to anyone who might use or modify it.
+</span>
+</div>
 
 ## *Developer guides*
 
