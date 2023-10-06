@@ -1069,7 +1069,7 @@ For any queries or feedback, reach out to us at: datacleanmaster@example.com
 * Update regularly as the project evolves.
 
 
-## INSTALL file
+## *INSTALL or configure file*
 
 In many software projects, especially those with more complex installation procedures, you might find a dedicated file named `INSTALL` or `INSTALLATION` in the main folder of the source code, which could be a plaintext (INSTALL.txt or just INSTALL). This file typically provides comprehensive instructions on installing and configuring the tool for your system. Depending on the software, it might contain **distinct installation directions for various operating systems**.
 
@@ -1171,6 +1171,57 @@ The <b>INSTALL</b> file is an essential component of your software's documentati
 </span>
 </div>
 
+
+## User-Centric Documentation
+
+User-centric documentation is primarily aimed at end-users. This code-external documentation helps users navigate, utilize, and troubleshoot the software effectively.
+
+## *User Guides*
+
+User guides provide **comprehensive information on how the software operates, its features, and its functionalities**. They often come with step-by-step instructions, ensuring users can get started quickly and utilize the tool's full potential. User guides can be viewed as the most detailed form of software documentation, delving not only into how features function but also elucidating the methodologies or phenomena underpinning them.
+
+**Key elements might include:**
+
+* overview of the software
+* meaningful table of contents
+* detailed walkthroughs of core functionalities with usage examples
+* descriptions of settings or configuration options
+* glossary of terms specific to the software
+
+<i><span style="color: #ff3870;font-weight: 500;">
+See the real-tool example here: <a href="https://pandas.pydata.org/docs/user_guide/index.html" target="_blank">Pandas User Guide  ⤴</a></span><br></i>
+*One of the most widely recognized tools related to data processing in the Python ecosystem is* `pandas`. *It's a powerful tool for data manipulation and analysis.*
+
+## *Tutorials*
+
+Tutorials focus on specific tasks, assembled pipelines or workflows and are usually **more hands-on than user guides**. They frequently detail data preprocessing steps or describe necessary inputs to ensure users have a comprehensive guide, leading them from stage A to stage Z. This encompasses starting with specific inputs and navigating through to the expected outputs. Sometimes, these tutorials necessitate the sequential use of various features offered by a tool, the values of optimized parameters, or even the integration of external tools or data, to accomplish a complete task or project.
+
+**Important aspects include:**
+
+* clear objectives outlining what the user will achieve by the end of the tutorial
+* brief intro to the topic and meaningful table of contents
+* step-by-step instructions with supporting visuals, like screenshots or diagrams
+* practical examples that users can replicate to understand the tool's functionality
+
+<i><span style="color: #ff3870;font-weight: 500;">
+See the real-tool example here: <a href="https://geospatial.101workbook.org/IntroPhotogrammetry/OpenDroneMap/03-ODM-georeferencing" target="_blank">Georeferencing approaches for the ODM workflow  ⤴</a></span><br></i>
+*ODM (OpenDroneMap) is an open-source project that processes aerial drone imagery to create 3D models, georeferenced maps, and geospatial data. It requires imagery georeferencing as the separate pre-processing step. This tutorial offers a systematic approach that encompasses creating ground control point markers, land surveying techniques, georeferencing the imagery, and then integrating this as input for the ODM workflow.*
+
+
+## *FAQs*
+*(Frequently Asked Questions)*
+
+FAQs provide **quick answers to commonly encountered issues or questions** users might have about the software. They might address questions like `How do I perform task X?` or `How to set up Y feature?`. Including FAQ can save both users and support teams time.
+
+**Key features of an FAQ section might be:**
+
+* grouping of questions by themes or categories
+* concise answers with links to more detailed resources when necessary
+* regular updates based on user feedback and emerging common issues
+
+<i><span style="color: #ff3870;font-weight: 500;">
+See the real-tool example here: <a href="https://keras.io/getting_started/faq/" target="_blank">Keras FAQ  ⤴</a></span><br></i>
+*Keras is an open-source software library that provides a Python interface for artificial neural networks. The Keras FAQ is a part of their documentation, providing a useful categories of questions such as General questions, Training-related questions, and Modeling-related questions.*
 
 ## Documentation Generators
 
