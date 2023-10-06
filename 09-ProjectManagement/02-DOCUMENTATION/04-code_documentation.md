@@ -1069,7 +1069,107 @@ For any queries or feedback, reach out to us at: datacleanmaster@example.com
 * Update regularly as the project evolves.
 
 
+## INSTALL file
 
+In many software projects, especially those with more complex installation procedures, you might find a dedicated file named `INSTALL` or `INSTALLATION` in the main folder of the source code, which could be a plaintext (INSTALL.txt or just INSTALL). This file typically provides comprehensive instructions on installing and configuring the tool for your system. Depending on the software, it might contain **distinct installation directions for various operating systems**.
+
+***Example of read-only or copy-paste INSTALLATION file*** <br>
+This version provides straightforward, step-by-step instructions that users can directly copy and execute to install the software.
+
+```
+INSTALLATION GUIDE for DataProcessorTool
+----------------------------------------
+
+1. Prerequisites:
+   - Ensure you have Python (version 3.7 or higher) installed.
+
+2. Installation via pip:
+   - Simply run the following command in your terminal or command prompt:
+     ```
+     pip install dataprocessortool
+     ```
+
+3. From Source:
+   - Clone the repository from GitHub:
+     ```
+     git clone https://github.com/user/dataprocessortool.git
+     ```
+   - Navigate to the directory and install:
+     ```
+     cd dataprocessortool
+     pip install .
+     ```
+
+Thank you for choosing DataProcessorTool!
+```
+
+<i><span style="color: #ff3870;font-weight: 500;">
+See the real-tool example here: <a href="https://github.com/csf-ngs/fastqc/blob/master/INSTALL.txt" target="_blank">fastqc/INSTALL.txt  ⤴</a></span><br></i>
+
+
+In some cases, this isn't just a read-only file but might **require users to modify specific lines** with `environment variables`, such as paths to dependencies or datasets like databases the tool relies on. This manual intervention ensures the software seamlessly integrates with existing system configurations and resources.
+
+***Example of executable INSTALL.py*** <br>
+In this version, users adjust paths directly within the script. Comments guide them, but the actual commands are executed by the script itself. If users don't adjust the path, the script provides an error prompt.
+
+```
+"""
+INSTALLATION SCRIPT for AdvancedDataProcessor
+----------------------------------------------
+
+This script automates the installation process for AdvancedDataProcessor.
+
+INSTRUCTIONS:
+1. Prerequisites:
+   - Ensure you have Python (version 3.8 or higher) installed.
+
+2. Dependencies:
+   - This tool requires an external database. Please download and set up MySampleDB from [https://link_here].
+   - Adjust the database path below by replacing 'YOUR_PATH_HERE' with the actual path to your MySampleDB.
+
+3. Save the adjustments and execute this script: python INSTALL.py
+
+This will install AdvancedDataProcessor and configure it with the provided path.
+"""
+
+# Replace the path below with the appropriate path on your system.
+DATABASE_PATH = "YOUR_PATH_HERE"
+
+def main():
+  if DATABASE_PATH == "YOUR_PATH_HERE":
+    print("ERROR: Please set the DATABASE_PATH before executing.")
+    return
+
+  import os
+
+  # Clone the repository
+  os.system("git clone https://github.com/user/advanceddataprocessor.git")
+
+  # Navigate to directory and install
+  os.chdir("advanceddataprocessor")
+  os.system("pip install .")
+
+  # Update configuration with the set DATABASE_PATH
+  with open("config.txt", "w") as config_file:
+    config_file.write(f"DATABASE_PATH = {DATABASE_PATH}")
+
+  print("AdvancedDataProcessor installed and configured!")
+
+if __name__ == "__main__":
+ main()
+```
+
+<i><span style="color: #ff3870;font-weight: 500;">
+See the real-tool example here: <a href="https://github.com/tensorflow/tensorflow/blob/master/configure.py" target="_blank">tensorflow/configure.py  ⤴</a></span> [<a href="https://www.tensorflow.org/install/source#configure_the_build" target="_blank">detailed "Configure the build" guide  ⤴</a>]<br></i>
+*TensorFlow has configure scripts in its root directory. This script is meant to be run before building TensorFlow from source. When executed, it will ask users a series of questions regarding their build (like which version of Python to use, whether to build with CUDA support, etc.) and generate a .tf_configure.bazelrc configuration file based on the responses.*
+
+
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+The <b>INSTALL</b> file is an essential component of your software's documentation, serving as the foundational guide to ensure your tool is operable and accessible to others.
+</span>
+</div>
 
 
 ## Documentation Generators
