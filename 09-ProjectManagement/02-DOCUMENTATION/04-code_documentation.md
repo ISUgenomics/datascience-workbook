@@ -60,7 +60,7 @@ Different types of code necessitate varying documentation approaches to clarify 
 
 **3. Types of documentation**
 
-Types of documentation encompass different solutions to provide varying levels of detail and guidance for code comprehension and usage. While all developments mandate in-code documentation to elucidate the purpose of specific code blocks, more complex projects further benefit from dedicated, comprehensive guides that shed light on the broader usage and applications.
+Types of documentation encompass different solutions to provide varying levels of detail and guidance for code comprehension and usage. While all developments mandate [in-code documentation](#in-code-documentation) to elucidate the purpose of specific code blocks, more complex projects further benefit from dedicated [external documentation](#external-documentation) such as readme files or comprehensive guides that shed light on the broader usage and applications.
 
 | type | description |
 |------|-------------|
@@ -881,7 +881,7 @@ Usage: my_program <filename> <operation>
   <filename>: The name of the file to be processed.
   <operation>: Either 'read' or 'write'.
 ```
-<br><br>
+<br>
 
 **Tips for creating effective help messages**
 
@@ -913,6 +913,168 @@ Remember, the key of usage message is to make it as easy as possible for a user,
 When crafting a usage message for your program, design it as if you're leaving instructions for your future self, detailing both its purpose and usage instructions.
 </span>
 </div>
+
+
+## **External documenattion**
+
+**External documentation refers to all documentation that isn't embedded directly within the source code.** <br>This documentation helps both developers and users understand and utilize the software. Proper external documentation can greatly reduce the learning curve and provide clear instructions on how to get the most out of a software product.
+
+While the specific types of external documentation can differ based on the software's audience, purpose, or development phase, the categories below offer a structured overview of the various forms it might encompass:
+
+| documentation category          | description | examples  |
+|---------------------------------|-------------|-----------|
+| Introductory Documentation      | Initial info for getting acquainted with the software. | `Readme`  `Installation` files |
+| User-Centric Documentation      | Documentation aimed primarily at end-users. | User Guides, Tutorials, `FAQs` |
+| Developer-Centric Documentation | Info for developers who want to contribute or understand the code. | Developer Guides, Contribution Guidelines|
+| Reference Materials             | Detailed technical info  that provides specific insights or clarifications. | API Documentation, Architecture Diagrams, Glossaries|
+| Meta Documentation              | Information about the documentation or process itself. | Release Notes, License Documentation |
+
+<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">WARNING:</span>
+<br><span style="font-style:italic;">
+Maintaining external documentation can be challenging. As software evolves, documentation needs to be updated to reflect those changes. Outdated or incorrect documentation can sometimes be worse than no documentation.
+</span>
+</div>
+
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+Using tools and practices like continuous integration to check documentation, or treating documentation as code (where changes to software and its documentation are done simultaneously) can help address these challenges.
+</span>
+</div>
+
+**Benefits of External Documentation:**
+
+* **Maintainability** <br>
+<i>Over time, original developers might leave, and new ones join. Documentation ensures continuity in understanding.</i>
+  * **Onboarding** <br>
+  <i>New team members can quickly become productive if good documentation is available.</i>
+
+
+* **User satisfaction** <br>
+<i>External users or developers can get the most out of your software if they know how to use it effectively.</i>
+  * **Productivity** <br>
+  <i>Reduces the time spent on figuring out "how something works?" or "how to do something?".</i>
+
+
+
+## README file
+
+README files offer a concise overview of the software, its purpose & functionality, and provide essential details about the installation steps, any dependencies required, and often, instructions for a preliminary test run. These files are typically the first point of contact for users or developers who've just accessed online, downloaded or cloned the software repository. While GitHub *(a popular platform in today's coding landscape)* has popularized the use of README files, they are also prevalent in other version control and software sharing platforms, making them a universal tool for preliminary software documentation.
+
+**When to use README as a software user?**
+
+As a user, refer to the README when initially accessing a project to understand its purpose, installation steps, and basic usage.
+
+**How is README generated?**
+
+README files are typically hand-written by developers, though tools like `readme-md-generator` can assist in creating a structured document. For GitHub repositories, the README file is typically written in Markdown, a lightweight and easy-to-use syntax designed for formatting plain text. When you upload or commit a Markdown-based README to GitHub, the platform automatically renders it, displaying the formatted text and any embedded media on the repository's main page. *See real-life examples: <a href="https://github.com/ISUgenomics/data_wrangling" target="_blank">data_wrangling  ⤴</a>, <a href="https://github.com/ISUgenomics/geo_utils" target="_blank">geo_utils  ⤴</a>, <a href="https://github.com/zsiki/Find-GCP" target="_blank">Find-GCP  ⤴</a>*
+
+<span style="color: #ff3870;font-weight: 500;">For a deeper dive into Markdown syntax and its various capabilities, I'd recommend checking out the dedicated tutorial on <a href="https://datascience.101workbook.org/09-ProjectManagement/02-DOCUMENTATION/02-intro-to-markdown" target="_blank">Introduction to Markdown</a> in this workbook.</span>
+
+**What to include in the README as a developer?**
+
+<i>^Note the README example showed below is artificial. It provides a concise overview and guidance for the fictional DataCleanMaster tool.</i>
+
+**1. Project's overview** <br>
+<i>Introduces the tool or project, providing a high-level understanding of its purpose and primary functionality.</i>
+
+```
+# DataCleanMaster: Automated Data Cleaning
+
+## 1. Project's Overview
+**DataCleanMaster** is an innovative tool designed for data scientists and analysts.
+It automatically detects missing or inconsistent data in datasets and offers
+rectification methods, ensuring your data is clean and ready for analysis.
+```
+
+**2. Dependencies** <br>
+<i>Lists external software or libraries that need to be installed or available for the tool to function correctly.</i>
+
+```
+## 2. Dependencies
+
+* Python >= 3.7
+* pandas >= 1.2.0
+* numpy >= 1.19.0
+```
+
+**3. Installation instructions** <br>
+<i>Provides step-by-step guidance on how to get the tool or software up and running on one's system.</i>
+
+```
+## 3. Installation Instructions
+
+### Clone from GitHub
+If you wish to obtain the source code and work directly with it,
+you can clone the datacleanmaster repository from GitHub:
+
+`git clone https://github.com/username/datacleanmaster.git`
+`cd datacleanmaster`
+
+### Installation in a Conda Environment
+If you're using a Conda environment, you can install `datacleanmaster` with `pip` by activating your environment and following the pip command:
+
+`conda activate your_environment_name`
+`pip install datacleanmaster`
+```
+
+**4. Usage details** <br>
+<i>Explains how to effectively utilize the tool, often through examples or sample code snippets.</i>
+
+```
+## 4. Usage Details
+To clean your dataset using DataCleanMaster, simply run:
+
+from datacleanmaster import clean
+
+# Load your data
+data = pd.read_csv('your_dataset.csv')
+
+# Use DataCleanMaster
+cleaned_data = clean(data)
+```
+
+**5. Contribution guidelines** <br>
+<i>Outlines the process and best practices for developers or users who wish to enhance or fix parts of the project.</i>
+
+```
+## 5. Contribution Guidelines
+We welcome contributions! If you find any issues or have suggestions:
+
+1. Fork the repository.
+2. Create a new branch with a meaningful name.
+3. Make your changes.
+4. Open a pull request.
+
+For major changes, please open an issue first to discuss.
+```
+
+**6. Contact information** <br>
+<i>Gives users and contributors a way to reach out for further assistance, feedback, or inquiries about the tool or project.</i>
+
+```
+## 6. Contact Information
+For any queries or feedback, reach out to us at: datacleanmaster@example.com
+```
+
+**Tips for effective README contents**
+* Start with a concise project description/overview.
+* Use clear headings and subheadings.
+* Incorporate visuals, like screenshots or GIFs, where helpful.
+* Detail setup and installation steps.
+* Provide examples of the software in use.
+* List any dependencies or prerequisites.
+* Highlight contribution guidelines for open-source projects.
+* Update regularly as the project evolves.
+
+
+
+
+
+## Documentation Generators
+
+Inline code documentation tools assist developers in adding explanatory comments directly within the source code, enhancing readability and maintainability. These tools **automatically generate well-structured and navigable documentation from the comments**, making it easier for team members to understand the code's functionality and purpose. By embedding the documentation within the codebase, these tools ensure that explanations remain closely tied to the relevant code segments, promoting clarity and ease of reference.
 
 
 ## **Documentation for pipelines**
@@ -984,11 +1146,8 @@ Nextflow is a workflow management system designed for <b>scalable and reproducib
 </div>
 
 
-## Documentation Generators
 
-Inline code documentation tools assist developers in adding explanatory comments directly within the source code, enhancing readability and maintainability. These tools **automatically generate well-structured and navigable documentation from the comments**, making it easier for team members to understand the code's functionality and purpose. By embedding the documentation within the codebase, these tools ensure that explanations remain closely tied to the relevant code segments, promoting clarity and ease of reference.
-
-## Version Control Platforms with Documentation
+## **Version control platforms with documentation**
 
 Version control platforms with documentation offer tools to **track, manage, and collaborate on code changes** while simultaneously providing features for detailed documentation. They enable users to maintain a history of code modifications, branch and merge projects, and integrate wikis or readme files to guide collaborators.
 
