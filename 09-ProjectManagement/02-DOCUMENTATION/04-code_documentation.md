@@ -1285,10 +1285,6 @@ These provide visual and textual representations of the software's overarching s
 See the real-tool example here: <a href="https://docs.gitlab.com/ee/development/architecture.html#simplified-component-overview" target="_blank">GitLab Architecture Diagram  ⤴</a></span><br></i>
 *GitLab is an open-source platform that provides a range of tools for software development and collaboration, including version control, continuous integration, and issue tracking. Its architecture diagrams and associated documentation give insight into its components and how they interact.*
 
-## Documentation Generators
-
-Inline code documentation tools assist developers in adding explanatory comments directly within the source code, enhancing readability and maintainability. These tools **automatically generate well-structured and navigable documentation from the comments**, making it easier for team members to understand the code's functionality and purpose. By embedding the documentation within the codebase, these tools ensure that explanations remain closely tied to the relevant code segments, promoting clarity and ease of reference.
-
 
 ## **Documentation for pipelines**
 
@@ -1358,13 +1354,140 @@ Nextflow is a workflow management system designed for <b>scalable and reproducib
 </span>
 </div>
 
+## Documentation Generators
+
+Documentation generators are specialized tools designed to **automate the process of creating documentation for software**. They alleviate the burden of manual documentation, ensuring that the documentation remains in sync with the codebase while fostering consistency and accuracy. Overall, documentation generators are vital tools in the modern software development ecosystem, ensuring that as codebases evolve, their accompanying documentation remains accurate, comprehensive, and up-to-date.
+
+**Languages, Features, Output formats**
+
+Most popular programming languages have associated documentation generators. It's essential to choose a documentation generator tailored to the specific language and needs of the project. Different generators can produce various **output formats, including HTML, PDF, or even man pages for Unix systems**. This versatility ensures the documentation is accessible in the most suitable medium for the target audience. Many documentation generators support plugins or extensions, allowing developers to customize the output or **add features like automatic diagram generation** or integration with continuous integration tools. Some documentation generators can **integrate with version control systems**, ensuring that the documentation updates with each commit or release.
+
+| docs generator | programming language(s) | output format | features |
+|----------------|-------------------------|---------------|----------|
+|<a href="https://www.doxygen.nl/index.html" target="_blank">Doxygen</a>| C++, C, Java, and other languages | HTML, LaTeX (PDF), RTF, Man pages, XML, and more|class and collaboration diagrams, cross-referencing, automatic linking|
+|<a href="https://docs.oracle.com/javase/8/docs/technotes/tools/windows/javadoc.html" target="_blank">Javadoc</a>|  Java | HTML |class hierarchy visualization, index generation, external linking|
+|<a href="https://jsdoc.app/" target="_blank">JSDoc</a>|  JavaScript | HTML |symbol tagging, tutorials, custom templating, cross-referencing|
+|<a href="https://www.sphinx-doc.org/en/master/" target="_blank">Sphinx</a>| Python | HTML, LaTeX (PDF), ePub, Texinfo, manual pages |auto-generating code documentation, cross-referencing, extensible (with plugins), internationalization|
+
+**You can host generated documentation on various online platforms.**
+
+Most documentation generators produce **static content**, which means the output consists of static HTML files, stylesheets, and possibly some client-side JavaScript. Static documentation can be served by any web server and doesn't require any server-side processing. Due to its simplicity, there are numerous hosting platforms tailored for static content, such as `GitHub Pages`.
+
+On the other hand, "dynamic" documentation might involve server-side processing, database interactions, or other dynamic elements. This type of documentation is less common and would typically be hosted on platforms or services that support server-side scripting.
+
+Here's a table with documentation platforms, starting with the most popular ones:
+
+| hosting platform | description | matching generators |
+|------------------|-------------|---------------------|
+| <a href="https://readthedocs.org/" target="_blank">Read the Docs  ⤴</a>   | Open-source platform, offers automatic building, versioning, and hosting of docs; integrates well with Sphinx and GitHub. | Sphinx, MkDocs, Doxygen (with some configurations) |
+| <a href="https://pages.github.com/" target="_blank">GitHub Page</a>     | Versatile hosting from GitHub repositories; supports any static content. | Sphinx, MkDocs, Jekyll, Docusaurus, VuePress, Doxygen, Javadoc |
+| <a href="https://www.gitbook.com/" target="_blank">GitBook</a>          | Modern interface with its own editor; integrates Markdown files from GitHub. | Markdown-based generators |
+| <a href="https://www.atlassian.com/software/confluence" target="_blank">Confluence</a>       | Collaborative wiki platform primarily for manual documentation with support for embedding static content. | Manual, Markdown import, Doxygen, Javadoc (via plugins or embedding) |
+| <a href="https://docusaurus.io/" target="_blank">Docusaurus</a>       | Open-source generator developed by Facebook for open-source documentation websites. | Docusaurus (itself) |
+| <a href="https://vuepress.vuejs.org/" target="_blank">VuePress</a>         | Vue-powered static site generator optimized for technical documentation. | VuePress (itself) |
+| <a href="https://www.mkdocs.org/" target="_blank">MkDocs</a>           | Simple static site generator designed specifically for project documentation. | MkDocs (itself) |
+| <a href="https://www.dozuki.com/" target="_blank">Dozuki</a>           | Designed for step-by-step technical guides with visual breakdowns. | Specific to its own format |
+| <a href="DocuWare" target="_blank">DocuWare</a>         | Enterprise document management system, more for storage than technical doc display. | Not optimized for doc generators |
+
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+Platforms like GitHub Pages, Netlify, Vercel, and even Read the Docs (with some configuration) can easily host documentation generated by Doxygen and Javadoc, as these tools produce static HTML files that these platforms are designed to serve.
+</span>
+</div>
+
+
+**How documentation generators work?**
+
+Documentation generators **primarily rely on in-code comments and docstrings** to produce documentation. The tool parses these non-executable text from files with the source code, extracting relevant information to create structured documentation. In some cases, they can also generate documentation directly from the code itself, especially for aspects like function signatures, classes, and module structures.
+
+<span style="color: #ff3870;font-weight: 500;">Jump to section <a href="https://datascience.101workbook.org/09-ProjectManagement/02-DOCUMENTATION/04-code_documentation#in-code-documentation" target="_blank">In-code documenattion  ⤴</a> to learn how to add in-code comments and docstrings.
+</span>
+
+###  • SPHINX for Python docs
+
+**Getting Started with Sphinx for Python Documentation**
+
+1. **Installation:** <br>
+Start by installing <a href="https://www.sphinx-doc.org/en/master/" target="_blank">Sphinx</a>. It's typically done via `pip`:
+```
+pip install sphinx
+```
+
+2. **Set Up a New Sphinx Project:** <br>
+Create a directory where you want your documentation to reside, navigate to it, and run:
+```
+sphinx-quickstart
+```
+<i>This command will guide you through the initial configuration. <br>Answer the questions as prompted. For most users, the default values will be sufficient.</i> <br>
+![02_sphinx_docs_for_python.png](../assets/images/02_sphinx_docs_for_python.png)
+
+3. **Choose a Theme:** <br>
+Sphinx uses themes to style the documentation. The default is called `alabaster`, but there are many others available. One popular choice is `Read the Docs`. To use it, first install the theme:
+```
+pip install sphinx_rtd_theme
+```
+Then, in your `conf.py` file *(created during the sphinx-quickstart step)*, find the `html_theme` setting and change its value to:
+```
+html_theme = "sphinx_rtd_theme"
+```
+
+4. **Writing Documentation:** <br>
+Sphinx uses `reStructuredText` as its markup language, which is similar to `Markdown` but more powerful. You can start by editing the `index.rst` **file, which is the root of your documentation.**
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; margin-left: 20px;">
+<span style="font-weight:800;">NOTE:</span>
+<br><span style="font-style:italic;">
+The i<b>ndex.rst file acts as the homepage or table of contents for your documentation</b>.<br><br>
+The <b>.. toctree::</b> directive in this file is crucial. It defines the "table of contents tree", which is a hierarchical listing of the other "reStructuredText" files that should be included in the generated documentation.<br><br>
+The <b>.. automodule::</b> directive is used to <b>automatically pull in the docstrings from a Python module</b> and include them in the documentation. The <b>:members:</b> option tells Sphinx to generate documentation for each of the public members (functions, classes, etc.) of the module. Without this option, Sphinx would only include the module's docstring.
+</span>
+</div>
+
+  * To document a Python module, use the `automodule` directive within `index.rst`. **Specify the module you want to include.**
+  ```
+Welcome to ex_sphinx_docs's documentation!
+==========================================
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+   ### add automodule syntax below:
+  .. automodule:: your_module_name
+   :members:
+  ```
+  <i><b>NOTE:</b> In Python terminology, a module is essentially a script with a .py extension. It's a file containing Python definitions, functions, and classes that you can use in another Python script by importing it.</i>
+
+
+5. **Generate the Documentation:** <br>
+Once you've written your documentation, you can generate the HTML files with:
+```
+make html
+```
+<i>This will produce the documentation in the</i> `_build/html` *directory.*
+
+6. **View the Documentation:** <br>
+Navigate to the `_build/html` directory and open the `index.html` file in your web browser.
+
+
+7. **Keeping Documentation Updated:** <br>
+As you update your Python code and its docstrings, **re-run the** `make html` **command to regenerate the documentation**. <br>**Sphinx is highly customizable and extensible.** You can use <a href="https://www.sphinx-doc.org/en/master/usage/extensions/index.html" target="_blank">extensions  ⤴</a> to add functionalities like automatic function/method signature inclusion, link code references, etc.
+
+8. **Publishing Documentation:** <br>
+If you want to share your documentation with others, consider using a platform like <a href="https://readthedocs.org/" target="_blank">Read the Docs  ⤴</a>. <br>It can automatically build and host your Sphinx documentation.
+
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+Remember to <b>write comprehensive docstrings in your Python code using the reStructuredText format</b>, so Sphinx can pick up and format them appropriately. As long as your code is well-documented with meaningful docstrings, you can automatically create detailed and accurate <b>documentation without excessive manual effort</b>. Refer to the <a href="https://www.sphinx-doc.org/en/master/" target="_blank">Sphinx documentation  ⤴</a> for advanced topics and configurations.
+</span>
+</div>
 
 
 ## **Version control platforms with documentation**
 
-Version control platforms with documentation offer tools to **track, manage, and collaborate on code changes** while simultaneously providing features for detailed documentation. They enable users to maintain a history of code modifications, branch and merge projects, and integrate wikis or readme files to guide collaborators.
+Version control platforms, such as Git and Mercurial, enable developers to track and manage changes to software projects over time while simultaneously providing features for detailed documentation. These platforms enable users to maintain a history of code modifications, branch and merge projects. They also often come integrated with documentation tools that facilitate the creation, management, and sharing of documentation related to the project in the form of **internal wikis or README files to guide users and collaborators**. As a result, they provide a unified environment where both the code and its accompanying documentation evolve in tandem, ensuring consistency and clarity for all contributors.
 
-
+<span style="color: #ff3870;font-weight: 500;"> I highly recommend checking out the section in the workbook dedicated to <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/01-storage-version-control" target="_blank">Storage & Version Control  ⤴</a>.</span><br>
+*It offers practical tutorials that will equip you with hands-on skills, ensuring you can effectively utilize version control in your projects. This knowledge is invaluable for any modern software development endeavor.*
 
 ___
 # Further Reading
