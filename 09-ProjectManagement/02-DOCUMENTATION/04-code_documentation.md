@@ -644,7 +644,7 @@ Options:
 * when the user provides invalid input or arguments
 
 ```
-$ myprogram --help
+$ myprogram --man
 
 myprogram: unrecognized option `--man'
 
@@ -681,7 +681,7 @@ Many standalone CLI tools and applications cloned from GitHub repositories often
 |<a href="https://github.com/csf-ngs/fastqc/tree/master" target="_blank">FastQC</a>|FastQC is a tool for assessing the quality of raw sequence data from high-throughput sequencing experiments. `[GitHub]`|Java archive (JAR file)|`fastqc --help`|
 |<a href="https://github.com/zsiki/Find-GCP" target="_blank">Find-GCP</a>|The small python utility dedicated to geospatial analysis. It automatically finds ArUco markers (ground control points) in digital photos. `[GitHub]` |python script|`python gcp_find.py --help`|
 
-*As you cane see in this table, regardless of the programming language, implementation, or distribution type, many tools are designed to provide a standardized usage message with* `--help` *option for user guidance.*
+*As you cane see in this table, regardless of the programming language, implementation, or distribution type, many tools are designed to provide a standardized usage message with* `--help` *option for user guidance.* ***Note that you typically need to install these tools first.***
 
 
 **When to include a usage message in your code?** *(being a software developer)*
@@ -750,7 +750,7 @@ Assuming your code was saved in `my_script.sh` script file, you can test a new *
 
 * **R**
 
-In an R script, a usage message can be crafted using the cat() function to display a descriptive message that informs the user about the correct way to utilize the script.
+In an R script, a usage message can be crafted using the `cat()` function to display a descriptive message that informs the user about the correct way to utilize the script.
 
 ```
 if(length(commandArgs(trailingOnly = TRUE)) < 1) {
@@ -780,7 +780,14 @@ input_file = sys.argv[1]
 ```
 *In this example, the script expects at least one argument, in this case an argument for input_file. If it's not provided, the usage message will be displayed and the script will exit.*
 
-In Python, the `argparse` module provides a convenient way to define and handle command-line arguments, and it automatically generates a usage message based on the defined arguments.
+<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">WARNING:</span>
+<br><span style="font-style:italic;">
+In most programming languages, <b>the first argument</b> <i>(sometimes indexed as 0, e.g., in Python)</i> <b>is the name of the program itself</b>; therefore, if you're checking the number of arguments to display a usage message when only the program name is executed, <b>the condition should typically be set to <2</b>, as the first user-provided option is always the second argument.
+</span>
+</div>
+
+In Python, the `argparse` module provides a convenient way to define and handle command-line arguments, and it automatically generates a usage message based on the defined arguments. It is a recommended approach <b>when your code expects numerous arguments or offers multiple options</b>, ensuring clarity and efficient parsing.
 
 Here's a practical example to craft a usage message for a script that takes multiple arguments:
 
@@ -840,9 +847,9 @@ optional arguments:
 * **C++**
 
 Here's how you can craft and display a usage message: <br>
-**- Identify the Tool's Requirements:** Clearly understand what arguments your tool requires. *For instance, let's say your program requires two arguments: a filename and an operation (either "read" or "write").* <br>
-**- Craft the Usage Message:** Based on the requirements, create a concise yet descriptive usage message. <br>
-**- Check the Input Arguments:** When your program starts *(see the main(){} function)*, check the passed arguments to see if they fit the requirements. If not, display the usage message and exit.
+**- Identify the tool's requirements:** Clearly understand what arguments your tool requires. <br> *For instance, let's say your program requires two arguments: a filename and an operation.* <br>
+**- Craft the usage message:** Based on the requirements, create a concise yet descriptive usage message. <br>
+**- Check the input arguments:** When your program starts *(see the main(){} function)*, check the passed arguments to see if they fit the requirements. If not, display the usage message and exit.
 
 ```
 #include <iostream>
@@ -865,7 +872,7 @@ int main(int argc, char* argv[]) {
     return 0;
 }
 ```
-*In this example, if the number of arguments is not 3, then the condition if (argc != 3) will be true and the usage message is displayed. The* `argv[0]` *value (the first argument) is the program name, in this case, "my_program". The* `displayUsage()` *function provides the general format of the command as well as detailed explanations for each argument.*
+*In this example, if the number of arguments is not 3, then the condition if (argc != 3) will be true and the usage message is displayed. The* `argv[0]` *value (the first argument) is the program name, in this case, "my_program". The* `displayUsage()` *function provides the general format of the syntax (usage) as well as detailed explanations for each argument.*
 
 Assuming the program is compiled and named `my_program`, you can run in by calling its name followed by the arguments. Here's what the output will look like when run without arguments:
 
@@ -874,7 +881,7 @@ Usage: my_program <filename> <operation>
   <filename>: The name of the file to be processed.
   <operation>: Either 'read' or 'write'.
 ```
-
+<br><br>
 
 **Tips for creating effective help messages**
 
