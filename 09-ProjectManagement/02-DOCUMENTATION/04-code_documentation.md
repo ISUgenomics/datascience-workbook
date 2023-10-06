@@ -1160,7 +1160,7 @@ if __name__ == "__main__":
 ```
 
 <i><span style="color: #ff3870;font-weight: 500;">
-See the real-tool example here: <a href="https://github.com/tensorflow/tensorflow/blob/master/configure.py" target="_blank">tensorflow/configure.py  ⤴</a></span> [<a href="https://www.tensorflow.org/install/source#configure_the_build" target="_blank">detailed "Configure the build" guide  ⤴</a>]<br></i>
+See the real-tool example here: <a href="https://github.com/tensorflow/tensorflow/blob/master/configure.py" target="_blank">tensorflow/configure.py </a></span> [<a href="https://www.tensorflow.org/install/source#configure_the_build" target="_blank">detailed "Configure the build" guide </a>]<br></i>
 *TensorFlow has configure scripts in its root directory. This script is meant to be run before building TensorFlow from source. When executed, it will ask users a series of questions regarding their build (like which version of Python to use, whether to build with CUDA support, etc.) and generate a .tf_configure.bazelrc configuration file based on the responses.*
 
 
@@ -1172,7 +1172,7 @@ The <b>INSTALL</b> file is an essential component of your software's documentati
 </div>
 
 
-## User-centric documentation
+## **User-centric documentation**
 
 User-centric documentation is primarily aimed at end-users. This code-external documentation helps users navigate, utilize, and troubleshoot the software effectively.
 
@@ -1224,7 +1224,7 @@ See the real-tool example here: <a href="https://keras.io/getting_started/faq/" 
 *Keras is an open-source software library that provides a Python interface for artificial neural networks. The Keras FAQ is a part of their documentation, providing a useful categories of questions such as General questions, Training-related questions, and Modeling-related questions.*
 
 
-## Developer-centric documentation
+## **Developer-centric documentation**
 
 Developer-centric documentation is primarily aimed at individuals who wish to delve deeper into the software's architecture, perhaps to make modifications, contribute with new features, or understand its inner workings more intimately. As a project expands, encompassing multiple modules, dependencies, and contributors, a detailed developer guide becomes pivotal in ensuring consistent understanding, development practices, and smooth collaboration among team members.
 
@@ -1354,7 +1354,7 @@ Nextflow is a workflow management system designed for <b>scalable and reproducib
 </span>
 </div>
 
-## Documentation Generators
+## **Documentation Generators**
 
 Documentation generators are specialized tools designed to **automate the process of creating documentation for software**. They alleviate the burden of manual documentation, ensuring that the documentation remains in sync with the codebase while fostering consistency and accuracy. Overall, documentation generators are vital tools in the modern software development ecosystem, ensuring that as codebases evolve, their accompanying documentation remains accurate, comprehensive, and up-to-date.
 
@@ -1404,17 +1404,17 @@ Documentation generators **primarily rely on in-code comments and docstrings** t
 <span style="color: #ff3870;font-weight: 500;">Jump to section <a href="https://datascience.101workbook.org/09-ProjectManagement/02-DOCUMENTATION/04-code_documentation#in-code-documentation" target="_blank">In-code documenattion  ⤴</a> to learn how to add in-code comments and docstrings.
 </span>
 
-###  • SPHINX for Python docs
+###  • *SPHINX for Python docs*
 
 **Getting Started with Sphinx for Python Documentation**
 
-1. **Installation:** <br>
+**1. Installation:** <br>
 Start by installing <a href="https://www.sphinx-doc.org/en/master/" target="_blank">Sphinx</a>. It's typically done via `pip`:
 ```
 pip install sphinx
 ```
 
-2. **Set Up a New Sphinx Project:** <br>
+**2. Set Up a New Sphinx Project:** <br>
 Create a directory where you want your documentation to reside, navigate to it, and run:
 ```
 sphinx-quickstart
@@ -1422,7 +1422,7 @@ sphinx-quickstart
 <i>This command will guide you through the initial configuration. <br>Answer the questions as prompted. For most users, the default values will be sufficient.</i> <br>
 ![02_sphinx_docs_for_python.png](../assets/images/02_sphinx_docs_for_python.png)
 
-3. **Choose a Theme:** <br>
+**3.Choose a Theme:** <br>
 Sphinx uses themes to style the documentation. The default is called `alabaster`, but there are many others available. One popular choice is `Read the Docs`. To use it, first install the theme:
 ```
 pip install sphinx_rtd_theme
@@ -1432,7 +1432,7 @@ Then, in your `conf.py` file *(created during the sphinx-quickstart step)*, find
 html_theme = "sphinx_rtd_theme"
 ```
 
-4. **Writing Documentation:** <br>
+**4. Writing Documentation:** <br>
 Sphinx uses `reStructuredText` as its markup language, which is similar to `Markdown` but more powerful. You can start by editing the `index.rst` **file, which is the root of your documentation.**
 <div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; margin-left: 20px;">
 <span style="font-weight:800;">NOTE:</span>
@@ -1457,21 +1457,21 @@ Welcome to ex_sphinx_docs's documentation!
   <i><b>NOTE:</b> In Python terminology, a module is essentially a script with a .py extension. It's a file containing Python definitions, functions, and classes that you can use in another Python script by importing it.</i>
 
 
-5. **Generate the Documentation:** <br>
+**5. Generate the Documentation:** <br>
 Once you've written your documentation, you can generate the HTML files with:
 ```
 make html
 ```
 <i>This will produce the documentation in the</i> `_build/html` *directory.*
 
-6. **View the Documentation:** <br>
+**6. View the Documentation:** <br>
 Navigate to the `_build/html` directory and open the `index.html` file in your web browser.
 
 
-7. **Keeping Documentation Updated:** <br>
+**7. Keeping Documentation Updated:** <br>
 As you update your Python code and its docstrings, **re-run the** `make html` **command to regenerate the documentation**. <br>**Sphinx is highly customizable and extensible.** You can use <a href="https://www.sphinx-doc.org/en/master/usage/extensions/index.html" target="_blank">extensions  ⤴</a> to add functionalities like automatic function/method signature inclusion, link code references, etc.
 
-8. **Publishing Documentation:** <br>
+**8. Publishing Documentation:** <br>
 If you want to share your documentation with others, consider using a platform like <a href="https://readthedocs.org/" target="_blank">Read the Docs  ⤴</a>. <br>It can automatically build and host your Sphinx documentation.
 
 <div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
