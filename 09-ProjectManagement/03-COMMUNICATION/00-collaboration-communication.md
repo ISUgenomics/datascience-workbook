@@ -109,11 +109,11 @@ The role of remote communication tools becomes indispensable. They ensure that c
 
 | category of tools | description | examples |
 |-------------------|-------------|----------|
-|**Video Conferencing Platforms**|Tools that enable face-to-face interactions, facilitating meetings, webinars, and seminars.|Zoom, Microsoft Teams, and Google Meet|
-|**Collaborative Suites/Chats**  |Platforms that provide organized channels for communication, integrating chats, file sharing, and third-party apps.|Slack or Discord |
-|**Project Management Tools**    |Tools that allow teams to track tasks, set deadlines, and monitor project progress.|Trello, Asana, and Monday.com|
-|**Shared Documentation**        |Platforms that offer cloud-based applications where documents, spreadsheets, and presentations can be co-authored in real-time.|Google Workspace and Microsoft Office 365|
-|**Specialized Tools for Researchers**|Platforms that cater to specific research needs.|GitHub (for code sharing) or Overleaf (for collaborative LaTeX editing) |
+|**Video Conferencing Platforms**|Tools that enable face-to-face interactions, facilitating meetings, webinars, and seminars.|<a href="https://www.zoom.us/" target="_blank">Zoom</a>, <a href="https://www.microsoft.com/en-us/microsoft-teams/group-chat-software" target="_blank">Microsoft Teams</a>, <a href="https://meet.google.com/" target="_blank">Google Meet</a>|
+|**Collaborative Suites/Chats**  |Platforms that provide organized channels for communication, integrating chats, file sharing, and third-party apps.|<a href="https://slack.com/" target="_blank">Slack</a> or <a href="https://discord.com/" target="_blank">Discord</a> |
+|**Project Management Tools**    |Tools that allow teams to track tasks, set deadlines, and monitor project progress.|<a href="https://trello.com/" target="_blank">Trello</a>, <a href="https://asana.com/" target="_blank">Asana</a>, <a href="https://www.monday.com/" target="_blank">Monday.com</a>, <a href="https://www.atlassian.com/software/jira" target="_blank">Jira</a>|
+|**Shared Documentation**        |Platforms that offer cloud-based applications where documents, spreadsheets, and presentations can be co-authored in real-time.|<a href="https://workspace.google.com/" target="_blank">Google Workspace</a> <br><a href="https://www.microsoft.com/en-us/microsoft-365" target="_blank">Microsoft Office 365</a>|
+|**Specialized Tools for Researchers**|Platforms that cater to specific research needs.|<a href="https://github.com/" target="_blank">GitHub</a> (for code sharing) <br><a href="https://www.overleaf.com" target="_blank">Overleaf</a> (for collaborative LaTeX editing) |
 
 <span style="color: #ff3870;font-weight: 500;">
 A combination of platforms like Slack, Zoom, GitHub and Microsoft Office 365 can facilitate day-to-day communication and task management. </span> Learn more about selected tools from dedicated hands-on tutorials:
