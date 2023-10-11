@@ -10,7 +10,7 @@ header:
 ---
 ## How to contribute
 
-We are really glad you're reading this! We need volunteer contributors for making the bioinformatics workbook successful! Please do not hesitate to contact us via email or issues. We want you working on the stuff that you're excited about.
+We are really glad you're reading this! We need volunteer contributors for making the DataScience Workbook successful! Please do not hesitate to contact us via email or issues. We want you working on the stuff that you're excited about.
 {: style="text-align: justify"}
 
 Making contribution is simple:
