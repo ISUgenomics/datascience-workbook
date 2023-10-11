@@ -11,7 +11,7 @@ header:
 
 {% include toc %}
 
-[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / **3. Documentation Improvement Tools**
+[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../../00-ProjectManagement-LandingPage.md) / [3. Resource Management](../00-intro-resource-management) / [3.4 Documentation Improvement Tools](01-documentation-improvement-tools) / **3.4.3 Tools for Code Documentation**
 
 ---
 
@@ -1491,14 +1491,14 @@ Version control platforms, such as Git and Mercurial, enable developers to track
 
 ___
 # Further Reading
-* [4. Collaboration & Communication](../03-COMMUNICATION/00-collaboration-communication)
-* [5. Resource Management & Productivity](../04-PRODUCTIVITY/00-resources-productivity)
+* [4. Quality Assurance](../../03-PRODUCTIVITY/00-quality-assurance)
+* [5. Project Closing](../../04-PUBLICATION/01-project-closing)
 
 
 ___
 
-[Homepage](../../index.md){: .btn  .btn--primary}
-[Section Index](../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
+[Homepage](../../../index.md){: .btn  .btn--primary}
+[Section Index](../../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
 [Previous](03-project_documentation){: .btn  .btn--primary}
-[Next](../03-COMMUNICATION/00-collaboration-communication){: .btn  .btn--primary}
+[Next](../../03-PRODUCTIVITY/00-quality-assurance){: .btn  .btn--primary}
 [top of page](#introduction){: .btn  .btn--primary}

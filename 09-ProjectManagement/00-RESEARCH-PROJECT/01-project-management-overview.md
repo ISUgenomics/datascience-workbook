@@ -46,11 +46,13 @@ This involves finalizing the project and making the data and results accessible 
 ___
 # Further Reading
 * [1.1 A Practical Guide to Managing a Research Project](02-intro-to-project-management)
+* [1.2 Project Strategy & Design](03-project-strategy-design)
+  * [1.2.1 Project Framework](04-project-framework)
 
-* [2. Storage & Version Control](../01-SOURCE-CODE/01-storage-version-control)
-* [3. Documentation Improvement Tools](../02-DOCUMENTATION/01-documentation-improvement-tools)
-* [4. Collaboration & Communication](../03-COMMUNICATION/00-collaboration-communication)
-* [5. Resource Management & Productivity](../04-PRODUCTIVITY/00-resources-productivity)
+* [2. Collaboration & Communication](../01-COMMUNICATION/00-collaboration-communication)
+* [3. Resource Management](../02-MANAGEMENT/00-intro-resource-management)
+* [4. Quality Assurance](../03-PRODUCTIVITY/00-quality-assurance)
+* [5. Project Closing](../04-PUBLICATION/01-project-closing)
 
 ___
 

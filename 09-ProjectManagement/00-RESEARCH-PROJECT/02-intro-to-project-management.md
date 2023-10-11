@@ -333,15 +333,17 @@ Here is an example of a [google sheet](https://docs.google.com/spreadsheets/d/1L
 
 ___
 # Further Reading
-* [2. Storage & Version Control](../01-SOURCE-CODE/01-storage-version-control)
-* [3. Documentation Improvement Tools](../02-DOCUMENTATION/01-documentation-improvement-tools)
-* [4. Collaboration & Communication](../03-COMMUNICATION/00-collaboration-communication)
-* [5. Resource Management & Productivity](../04-PRODUCTIVITY/00-resources-productivity)
+* [1.2 Project Strategy & Design](03-project-strategy-design)
+  * [1.2.1 Project Framework](04-project-framework)
+
+* [2. Collaboration & Communication](../01-COMMUNICATION/00-collaboration-communication)
+* [3. Resource Management](../02-MANAGEMENT/00-intro-resource-management)
+* [4. Quality Assurance](../03-PRODUCTIVITY/00-quality-assurance)
+* [5. Project Closing](../04-PUBLICATION/01-project-closing)
 
 ___
 
-[Homepage](../index.md){: .btn  .btn--primary}
-[Section Index](00-ProjectManagement-LandingPage){: .btn  .btn--primary}
-[Previous](../01-intro-to-project-management){: .btn  .btn--primary}
-[Next](../01-SOURCE-CODE/01-storage-version-control){: .btn  .btn--primary}
+[Homepage](../../index.md){: .btn  .btn--primary}
+[Section Index](../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
+[Next](03-project-strategy-design){: .btn  .btn--primary}
 [top of page](#introduction){: .btn  .btn--primary}

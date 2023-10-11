@@ -10,7 +10,7 @@ header:
 
 {% include toc %}
 
-[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / [2. Storage & Version Control](01-storage-version-control.md) / [2.1 GIT - a distributed version control system](02-intro-to-git.md) / **GIT Commands CheatSheet**
+[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../../00-ProjectManagement-LandingPage.md) / [3. Resource Management](../00-intro-resource-management) / [3.3. Storage & Version Control](01-storage-version-control.md) / [3.3.1 GIT - a distributed version control system](02-intro-to-git.md) / **GIT Commands CheatSheet**
 
 ---
 
@@ -18,7 +18,7 @@ header:
 This is a list of the most commonly used Git commands in command line and VSCode with their functions.
 
 
-# Git Commands for Command Line 
+# Git Commands for Command Line
 
 | Category  | Command |  Function  |
 |------------|-----------|-----------|
@@ -67,7 +67,7 @@ This is a list of the most commonly used Git commands in command line and VSCode
 
 <br>
 
-# VS Code Git Commands 
+# VS Code Git Commands
 
 <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01A-tutorial-VSCode" target="_blank">VSCode ⤴</a> has its internal terminal where you can use the command line Git commands. In addition, VSCode also has a command palette `Ctrl+Shift+P` which can be used for Git and other commands. Following is a list of most common commands in that palette, additional commands can be searched for within the palette.
 
@@ -101,17 +101,21 @@ This is a list of the most commonly used Git commands in command line and VSCode
 
 ___
 # Further Reading
-* [2.2 Online Hosting Platforms for GIT Repositories](03-repo-hosting-platforms)
+* [3.3.2 Online Hosting Platforms for GIT Repositories](03-repo-hosting-platforms)
+  * [Introduction to GitHub](04-intro-to-github)
+  * [GitHub for advanced users](04A-github-advanced)
+  * [Introduction to BitBucket](05-intro-to-bitbucket)
 
-* [3. Documentation Improvement Tools](../02-DOCUMENTATION/01-documentation-improvement-tools)
-* [4. Collaboration & Communication](../03-COMMUNICATION/00-collaboration-communication)
-* [5. Resource Management & Productivity](../04-PRODUCTIVITY/00-resources-productivity)
+* [3.4 Documentation Improvement Tools](../02-DOCUMENTATION/01-documentation-improvement-tools)
+
+* [4. Quality Assurance](../../03-PRODUCTIVITY/00-quality-assurance)
+* [5. Project Closing](../../04-PUBLICATION/01-project-closing)
 
 
 ___
 
-[Homepage](../../index.md){: .btn  .btn--primary}
-[Section Index](../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
+[Homepage](../../../index.md){: .btn  .btn--primary}
+[Section Index](../../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
 [Previous](02-intro-to-git){: .btn  .btn--primary}
 [Next](03-repo-hosting-platforms){: .btn  .btn--primary}
 [top of page](#introduction){: .btn  .btn--primary}

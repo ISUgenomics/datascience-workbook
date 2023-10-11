@@ -1,16 +1,17 @@
 ---
-title: "Resource Management & Productivity"
+title: "Productivity"
 layout: single
-author: Aleksandra Badaczewska
-author_profile: true
+author:
+author_profile: false
 header:
   overlay_color: "444444"
   overlay_image: /09-ProjectManagement/assets/images/09_project_management_banner.png
 ---
 
+
 {% include toc %}
 
-[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / **5. Resource Management & Productivity**
+[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / [4. Quality Assurance](00-quality-assurance) / **4.2 Productivity**
 
 ---
 
@@ -461,13 +462,17 @@ Always have backups of critical data and assets. Data loss can be a massive setb
 
 ___
 # Further Reading
-* [5.1 Introduction to ZenHub](01-intro-to-zenhub)
-* [5.2 Research Reproducibility Guideline](02-tutorial-research-reproducibility)
+* [4.3 Research Reproducibility](03-reproducibility)
+  * [4.3.1 Research Reproducibility Guideline](03-tutorial-research-reproducibility)
+
+
+* [5. Project Closing](../04-PUBLICATION/01-project-closing)
+
 
 ___
 
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
-[Previous](../03-COMMUNICATION/02-intro-to-slack){: .btn  .btn--primary}
-[Next](01-intro-to-zenhub){: .btn  .btn--primary}
+[Previous](01-monitoring-evaluation){: .btn  .btn--primary}
+[Next](03-reproducibility){: .btn  .btn--primary}
 [top of page](#introduction){: .btn  .btn--primary}

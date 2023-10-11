@@ -10,6 +10,13 @@ header:
 
 {% include toc %}
 
+[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../../00-ProjectManagement-LandingPage.md) / [3. Resource Management](../00-intro-resource-management) / [3.3. Storage & Version Control](01-storage-version-control.md) / [3.3.2 Online Hosting Platforms for GIT Repositories](03-repo-hosting-platforms.md) / **Introduction to GitHub**
+
+---
+
+# Introduction
+
+
 ### Some helpful commands for your new repository
 
 --
@@ -177,16 +184,18 @@ I like [SourceTree](https://www.sourcetreeapp.com/).
 
 ___
 # Further Reading
-* [Introduction to BitBucket](03-intro-to-bitbucket)
-* [Introduction to ZenHub](04-intro-to-zenhub)
+* [3.4 Documentation Improvement Tools](../02-DOCUMENTATION/01-documentation-improvement-tools)
+  * [3.4.1 Introduction to Markdown](../02-DOCUMENTATION/02-intro-to-markdown)
+  * [3.4.2 Tools for Research Documentation](../02-DOCUMENTATION/03-project_documentation)
+  * [3.4.3 Tools for Code Documentation](../02-DOCUMENTATION/04-code_documentation)
 
-* [Documentation Improvement Tools](../02-DOCUMENTATION/01-documentation-improvement-tools)
-* [Team Communication Tools](../03-COMMUNICATION/01-team-communication-tools)
+* [4. Quality Assurance](../../03-PRODUCTIVITY/00-quality-assurance)
+* [5. Project Closing](../../04-PUBLICATION/01-project-closing)
 
 
 ___
 
-[Homepage](../../index.md){: .btn  .btn--primary}
-[Section Index](../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
+[Homepage](../../../index.md){: .btn  .btn--primary}
+[Section Index](../../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
 [Previous](01-code-mamangement-tools){: .btn  .btn--primary}
 [Next](03-intro-to-bitbucket){: .btn  .btn--primary}

@@ -1,5 +1,5 @@
 ---
-title: "Research Reproducibility"
+title: "Research Reproducibility Guideline"
 layout: single
 author: Kerrie Geil
 author1: Rowan Gaffney
@@ -11,7 +11,7 @@ header:
 
 {% include toc %}
 
-[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / [5. Resource Management & Productivity](00-resources-productivity.md) / **5.2 Research Reproducibility Guideline**
+[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / [4. Quality Assurance](00-quality-assurance) / [4.3 Research Reproducibility](03-reproducibility) / **4.3.1 Research Reproducibility Guideline**
 
 ---
 
@@ -920,16 +920,14 @@ The above setup (with the addition of [Zenodo](https://zenodo.org/) linked to th
 
 
 ___
-<!--
 # Further Reading
-* []()
-* []()
--->
+* [5. Project Closing](../04-PUBLICATION/01-project-closing)
+  * [5.1 Publication](../04-PUBLICATION/02-publication)
 
 ___
 
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
-[Previous](01-intro-to-zenhub){: .btn  .btn--primary}
-<!-- [Next](){: .btn  .btn--primary} -->
+[Previous](03-reproducibility){: .btn  .btn--primary}
+[Next](../04-PUBLICATION/01-project-closing){: .btn  .btn--primary}
 [top of page](#introduction){: .btn  .btn--primary}

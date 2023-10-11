@@ -10,7 +10,7 @@ header:
 
 {% include toc %}
 
-[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / [4. Collaboration & Communication](00-collaboration-communication.md) / **4.1 Team Communication Tools**
+[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / [2. Collaboration & Communication](00-collaboration-communication.md) / **2.1 Team Communication Tools**
 
 ---
 
@@ -72,9 +72,11 @@ For modern research teams, collaborative messaging streamlines communication, ac
 
 ___
 # Further Reading
-* [4.1.1 Introduction to Slack](02-intro-to-slack)
+* [2.1.1 Introduction to Slack](02-intro-to-slack)
 
-* [5. Resource Management & Productivity](../04-PRODUCTIVITY/00-resources-productivity)
+* [3. Resource Management](../02-MANAGEMENT/00-intro-resource-management)
+* [4. Quality Assurance](../03-PRODUCTIVITY/00-quality-assurance)
+* [5. Project Closing](../04-PUBLICATION/01-project-closing)
 
 ___
 

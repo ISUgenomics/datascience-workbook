@@ -11,7 +11,7 @@ header:
 
 {% include toc %}
 
-[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / [2. Storage & Version Control](01-storage-version-control.md) / [2.2 Online Hosting Platforms for GIT Repositories](03-repo-hosting-platforms.md) / **2.2.1 Introduction to GitHub**
+[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../../00-ProjectManagement-LandingPage.md) / [3. Resource Management](../00-intro-resource-management) / [3.3. Storage & Version Control](01-storage-version-control.md) / [3.3.2 Online Hosting Platforms for GIT Repositories](03-repo-hosting-platforms.md) / **Introduction to GitHub**
 
 ---
 
@@ -208,19 +208,19 @@ Contibutions for this markdown document came from Matt Hufford and was modified 
 
 ___
 # Further Reading
-* [2.2.1# GitHub for advanced users](04A-github-advanced)
+* [GitHub for advanced users](04A-github-advanced)
+* [Introduction to BitBucket](05-intro-to-bitbucket)
 
-* [2.2.2 Introduction to BitBucket](05-intro-to-bitbucket)
+* [3.4 Documentation Improvement Tools](../02-DOCUMENTATION/01-documentation-improvement-tools)
 
-* [3. Documentation Improvement Tools](../02-DOCUMENTATION/01-documentation-improvement-tools)
-* [4. Collaboration & Communication](../03-COMMUNICATION/00-collaboration-communication)
-* [5. Resource Management & Productivity](../04-PRODUCTIVITY/00-resources-productivity)
+* [4. Quality Assurance](../../03-PRODUCTIVITY/00-quality-assurance)
+* [5. Project Closing](../../04-PUBLICATION/01-project-closing)
 
 
 ___
 
-[Homepage](../../index.md){: .btn  .btn--primary}
-[Section Index](../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
+[Homepage](../../../index.md){: .btn  .btn--primary}
+[Section Index](../../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
 [Previous](03-repo-hosting-platforms){: .btn  .btn--primary}
 [Next](04A-github-advanced){: .btn  .btn--primary}
 [top of page](#introduction){: .btn  .btn--primary}

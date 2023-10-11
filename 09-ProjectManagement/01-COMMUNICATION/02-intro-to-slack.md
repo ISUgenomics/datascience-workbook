@@ -10,7 +10,7 @@ header:
 
 {% include toc %}
 
-[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / [4. Collaboration & Communication](00-collaboration-communication.md) / [4.1 Team Communication Tools](01-team-communication-tools.md) / **4.1.1 Introduction to Slack**
+[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / [2. Collaboration & Communication](00-collaboration-communication.md) / [2.1 Team Communication Tools](01-team-communication-tools.md) / **2.1.1 Introduction to Slack**
 
 ---
 
@@ -76,12 +76,19 @@ In Example 2 above, Person B will hate slack as this individual will not be able
 
 ___
 # Further Reading
-* [5. Resource Management & Productivity](../04-PRODUCTIVITY/00-resources-productivity)
+* [3. Resource Management](../02-MANAGEMENT/00-intro-resource-management)
+  * [3.1 Data Management](../02-MANAGEMENT/03-DATA/01-data-management)
+  * [3.2 Code Management](../02-MANAGEMENT/01-SOURCE-CODE/00-code-developments)
+  * [3.3 Storage & Version Control](../02-MANAGEMENT/01-SOURCE-CODE/01-storage-version-control)
+  * [3.4 Documentation Improvement Tools](../02-MANAGEMENT/02-DOCUMENTATION/01-documentation-improvement-tools)
+
+* [4. Quality Assurance](../03-PRODUCTIVITY/00-quality-assurance)
+* [5. Project Closing](../04-PUBLICATION/01-project-closing)
 
 ___
 
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
 [Previous](01-team-communication-tools){: .btn  .btn--primary}
-[Next](../04-PRODUCTIVITY/00-resources-productivity){: .btn  .btn--primary}
+[Next](../02-MANAGEMENT/00-intro-resource-management){: .btn  .btn--primary}
 [top of page](#introduction){: .btn  .btn--primary}

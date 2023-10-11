@@ -11,7 +11,7 @@ header:
 
 {% include toc %}
 
-[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / **3. Documentation Improvement Tools**
+[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../../00-ProjectManagement-LandingPage.md) / [3. Resource Management](../00-intro-resource-management) / **3.4 Documentation Improvement Tools**
 
 ---
 
@@ -210,18 +210,18 @@ Version control platforms with documentation offer tools to **track, manage, and
 
 ___
 # Further Reading
-* [3.1 Introduction to Markdown](02-intro-to-markdown)
-* [3.2 Tools for Research Documentation](03-project_documentation)
-* [3.3 Tools for Code Documentation](04-code_documentation)
+* [3.4.1 Introduction to Markdown](../02-DOCUMENTATION/02-intro-to-markdown)
+* [3.4.2 Tools for Research Documentation](../02-DOCUMENTATION/03-project_documentation)
+* [3.4.3 Tools for Code Documentation](../02-DOCUMENTATION/04-code_documentation)
 
-* [4. Collaboration & Communication](../03-COMMUNICATION/00-collaboration-communication)
-* [5. Resource Management & Productivity](../04-PRODUCTIVITY/00-resources-productivity)
+* [4. Quality Assurance](../../03-PRODUCTIVITY/00-quality-assurance)
+* [5. Project Closing](../../04-PUBLICATION/01-project-closing)
 
 
 ___
 
-[Homepage](../../index.md){: .btn  .btn--primary}
-[Section Index](../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
+[Homepage](../../../index.md){: .btn  .btn--primary}
+[Section Index](../../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
 [Previous](../01-SOURCE-CODE/05-intro-to-bitbucket){: .btn  .btn--primary}
 [Next](02-intro-to-markdown){: .btn  .btn--primary}
 [top of page](#introduction){: .btn  .btn--primary}

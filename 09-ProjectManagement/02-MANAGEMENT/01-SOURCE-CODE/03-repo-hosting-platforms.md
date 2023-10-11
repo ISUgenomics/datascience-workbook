@@ -10,7 +10,7 @@ header:
 
 {% include toc %}
 
-[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / [2. Storage & Version Control](01-storage-version-control.md) / **2.2 Online Hosting Platforms for GIT Repositories**
+[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../../00-ProjectManagement-LandingPage.md) / [[3. Resource Management](../00-intro-resource-management) / [3.3. Storage & Version Control](01-storage-version-control.md) / **3.3.2 Online Hosting Platforms for GIT Repositories**
 
 ---
 
@@ -76,7 +76,7 @@ The table provides a general overview of a few major online hosting platforms fo
 `GitHub` and `Bitbucket` are two of the most popular online hosting platforms for research projects. Both platforms offer robust version control systems, collaborative features, and integration options that make them ideal for hosting and managing code related to research. Researchers can easily share, collaborate, and track changes in their code repositories, enabling seamless collaboration within research teams.
 *  **[GitHub ⤵](#github)**, known for its extensive user base and vast open-source community, provides a wide range of features such as issue tracking and code reviews.
 
-* **[Bitbucket ⤵](#bitbucket)** offers similar functionality with the added flexibility of self-hosting options, making it suitable for research projects with specific security or privacy requirements. 
+* **[Bitbucket ⤵](#bitbucket)** offers similar functionality with the added flexibility of self-hosting options, making it suitable for research projects with specific security or privacy requirements.
 
 
 ### ***GitHub***
@@ -130,18 +130,20 @@ Learn more from the <b>hands-on tutorial</b> <a href="https://datascience.101wor
 
 ___
 # Further Reading
-* [2.2.1 Introduction to GitHub](04-intro-to-github)
-* [2.2.2 Introduction to BitBucket](05-intro-to-bitbucket)
+* [Introduction to GitHub](04-intro-to-github)
+* [GitHub for advanced users](04A-github-advanced)
+* [Introduction to BitBucket](05-intro-to-bitbucket)
 
-* [3. Documentation Improvement Tools](../02-DOCUMENTATION/01-documentation-improvement-tools)
-* [4. Collaboration & Communication](../03-COMMUNICATION/00-collaboration-communication)
-* [5. Resource Management & Productivity](../04-PRODUCTIVITY/00-resources-productivity)
+* [3.4 Documentation Improvement Tools](../02-DOCUMENTATION/01-documentation-improvement-tools)
+
+* [4. Quality Assurance](../../03-PRODUCTIVITY/00-quality-assurance)
+* [5. Project Closing](../../04-PUBLICATION/01-project-closing)
 
 
 ___
 
-[Homepage](../../index.md){: .btn  .btn--primary}
-[Section Index](../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
+[Homepage](../../../index.md){: .btn  .btn--primary}
+[Section Index](../../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
 [Previous](02A-git-cheatsheet){: .btn  .btn--primary}
 [Next](04-intro-to-github){: .btn  .btn--primary}
 [top of page](#introduction){: .btn  .btn--primary}
