@@ -5,7 +5,7 @@ author:
 author_profile: false
 header:
   overlay_color: "444444"
-  overlay_image: /03-SetUpComputingMachine/assets/images/09_project_management_banner.png
+  overlay_image: /09-ProjectManagement/assets/images/09_project_management_banner.png
 ---
 
 {% include toc %}
