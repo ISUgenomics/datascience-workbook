@@ -33,7 +33,7 @@ It is undeniable that good project management leads to improved reproducibility 
 * <b><a href="02-MANAGEMENT/01-SOURCE-CODE/00-code-developments" style="color: #24376b;">3.2 Code Management</a></b>
 * <b><a href="02-MANAGEMENT/01-SOURCE-CODE/01-storage-version-control" style="color: #24376b;">3.3 Storage & Version Control</a></b>
   * <a href="02-MANAGEMENT/01-SOURCE-CODE/02-intro-to-git" style="color: #3f5a8a;">3.3.1 GIT - a distributed version control system</a>
-    * <a href="02-MANAGEMENT/01-SOURCE-CODE/02A-git-cheatsheet" style="color: #3f5a8a;">GIT Commands Cheatsheet</a><br><br>
+    * <a href="02-MANAGEMENT/01-SOURCE-CODE/02A-git-cheatsheet" style="color: #3f5a8a;">GIT Commands Cheatsheet</a>
   * <a href="02-MANAGEMENT/01-SOURCE-CODE/03-repo-hosting-platforms" style="color: #3f5a8a;">3.3.2 Online Hosting Platforms for GIT Repositories</a>
     * <a href="02-MANAGEMENT/01-SOURCE-CODE/04-intro-to-github" style="color: #3f5a8a;">Introduction to GitHub</a>
     * <a href="02-MANAGEMENT/01-SOURCE-CODE/04A-github-advanced" style="color: #3f5a8a;">GitHub for advanced users</a>
