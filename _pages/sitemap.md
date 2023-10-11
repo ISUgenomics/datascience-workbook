@@ -826,12 +826,12 @@ header:
     A Practical Guide to Managing a Research Project</a></td></tr>
 
   <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center; width: 130px;">INTRO</td>
-    <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b>
-    <a href="09-ProjectManagement/00-RESEARCH-PROJECT/03-project-strategy-design" style="color: #24376b;">
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;
+    <b><a href="09-ProjectManagement/00-RESEARCH-PROJECT/03-project-strategy-design" style="color: #24376b;">
     Project Strategy & Design</a></b></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
-    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;
     <a href="09-ProjectManagement/00-RESEARCH-PROJECT/04-project-framework" style="color: #24376b;">
     Project Framework</a></td></tr>
 
