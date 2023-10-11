@@ -827,86 +827,144 @@ header:
 
   <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center; width: 130px;">INTRO</td>
     <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b>
-    <a href="09-ProjectManagement/01-SOURCE-CODE/01-storage-version-control" style="color: #24376b;">
-    Storage & Version Control</a></b></td></tr>
+    <a href="09-ProjectManagement/00-RESEARCH-PROJECT/03-project-strategy-design" style="color: #24376b;">
+    Project Strategy & Design</a></b></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
-    <a href="09-ProjectManagement/01-SOURCE-CODE/02-intro-to-git" style="color: #3f5a8a;">
-    GIT - a distributed version control system</a></td></tr>
-
-  <tr><td style="background-color:mistyrose; color:#19272f; font-weight: 600; text-align: center;">CheatSheet</td>
-    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;
-    <a href="09-ProjectManagement/01-SOURCE-CODE/02A-git-cheatsheet" style="color: #3f5a8a;">
-    GIT Commands</a></td></tr>
-
-  <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
-    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
-    <a href="09-ProjectManagement/01-SOURCE-CODE/03-repo-hosting-platforms" style="color: #3f5a8a;">
-    Online Hosting Platforms for GIT Repositories</a></td></tr>
-
-  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
-    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;  
-    <a href="09-ProjectManagement/01-SOURCE-CODE/04-intro-to-github" style="color: #3f5a8a;">
-    Introduction to GitHub</a></td></tr>
-
-  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
-    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&emsp;&emsp;⊙&emsp;  
-    <a href="09-ProjectManagement/01-SOURCE-CODE/04A-github-advanced" style="color: #3f5a8a;">
-    GitHub for advanced users</a></td></tr>
-
-  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
-    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;  
-    <a href="09-ProjectManagement/01-SOURCE-CODE/05-intro-to-bitbucket" style="color: #3f5a8a;">
-    Introduction to BitBucket</a></td></tr>
+    <a href="09-ProjectManagement/00-RESEARCH-PROJECT/04-project-framework" style="color: #24376b;">
+    Project Framework</a></td></tr>
 
   <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center; width: 130px;">INTRO</td>
     <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b>
-    <a href="09-ProjectManagement/02-DOCUMENTATION/01-documentation-improvement-tools" style="color: #24376b;">
-    Documentation Improvement Tools</a></b></td></tr>
-
-  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
-    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;   
-    <a href="09-ProjectManagement/02-DOCUMENTATION/02-intro-to-markdown" style="color: #3f5a8a;">
-    Introduction to Markdown</a></td></tr>
-
-  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
-    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;   
-    <a href="09-ProjectManagement/02-DOCUMENTATION/03-project_documentation" style="color: #3f5a8a;">
-    Tools for Research Documentation</a></td></tr>
-
-  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
-    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;   
-    <a href="09-ProjectManagement/02-DOCUMENTATION/04-code_documentation" style="color: #3f5a8a;">
-    Tools for Code Documentation</a></td></tr>
-
-  <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center; width: 130px;">INTRO</td>
-    <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b>
-    <a href="09-ProjectManagement/03-COMMUNICATION/00-collaboration-communication" style="color: #24376b;">
+    <a href="09-ProjectManagement/01-COMMUNICATION/00-collaboration-communication" style="color: #24376b;">
     Collaboration & Communication</a></b></td></tr>
 
   <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
-    <a href="09-ProjectManagement/03-COMMUNICATION/01-team-communication-tools" style="color: #24376b;">
+    <a href="09-ProjectManagement/01-COMMUNICATION/01-team-communication-tools" style="color: #24376b;">
     Team Communication Tools</a></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;  
-    <a href="09-ProjectManagement/03-COMMUNICATION/02-intro-to-slack" style="color: #3f5a8a;">
+    <a href="09-ProjectManagement/01-COMMUNICATION/02-intro-to-slack" style="color: #3f5a8a;">
     Introduction to Slack</a></td></tr>
 
   <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center; width: 130px;">INTRO</td>
     <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b>
-    <a href="09-ProjectManagement/04-PRODUCTIVITY/00-resources-productivity" style="color: #24376b;">
-    Resource Management & Productivity</a></b></td></tr>
+    <a href="09-ProjectManagement/02-MANAGEMENT/00-intro-resource-management" style="color: #24376b;">
+    Resource Management</a></b></td></tr>
+
+
+  <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <b><a href="09-ProjectManagement/02-MANAGEMENT/03-DATA/01-data-management" style="color: #24376b;">
+    Data Management</a></b></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;  
+    <a href="09-ProjectManagement/02-MANAGEMENT/03-DATA/02-care-principles" style="color: #3f5a8a;">
+    CARE Principles</a></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;  
+    <a href="09-ProjectManagement/02-MANAGEMENT/03-DATA/03-fair-principles" style="color: #3f5a8a;">
+    FAIR Principles</a></td></tr>
+
+  <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <b><a href="09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/00-code-developments" style="color: #24376b;">
+    Code Management</a></b></td></tr>
+
+  <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <b><a href="09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/01-storage-version-control" style="color: #24376b;">
+    Storage & Version Control</a></b></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;
+    <a href="09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/02-intro-to-git" style="color: #3f5a8a;">
+    GIT - a distributed version control system</a></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&emsp;&emsp;⊙&emsp;
+    <a href="09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/02A-git-cheatsheet" style="color: #3f5a8a;">
+    GIT Commands</a></td></tr>
+
+  <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;
+    <a href="09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/03-repo-hosting-platforms" style="color: #3f5a8a;">
+    Online Hosting Platforms for GIT Repositories</a></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&emsp;&emsp;⊙&emsp;
+    <a href="09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/04-intro-to-github" style="color: #3f5a8a;">
+    Introduction to GitHub</a></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&emsp;&emsp;⊙&emsp;  
+    <a href="09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/04A-github-advanced" style="color: #3f5a8a;">
+    GitHub for advanced users</a></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&emsp;&emsp;⊙&emsp;
+    <a href="09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/05-intro-to-bitbucket" style="color: #3f5a8a;">
+    Introduction to BitBucket</a></td></tr>
+
+
+  <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
+    <b><a href="09-ProjectManagement/02-MANAGEMENT/02-DOCUMENTATION/01-documentation-improvement-tools" style="color: #24376b;">
+    Documentation Improvement Tools</a></b></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;
+    <a href="09-ProjectManagement/02-MANAGEMENT/02-DOCUMENTATION/02-intro-to-markdown" style="color: #3f5a8a;">
+    Introduction to Markdown</a></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;  
+    <a href="09-ProjectManagement/02-MANAGEMENT/02-DOCUMENTATION/03-project_documentation" style="color: #3f5a8a;">
+    Tools for Research Documentation</a></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;
+    <a href="09-ProjectManagement/02-MANAGEMENT/02-DOCUMENTATION/04-code_documentation" style="color: #3f5a8a;">
+    Tools for Code Documentation</a></td></tr>
+
+  <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center; width: 130px;">INTRO</td>
+    <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b>
+    <a href="09-ProjectManagement/03-PRODUCTIVITY/00-quality-assurance" style="color: #24376b;">
+    Quality Assurance</a></b></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;   
-    <a href="09-ProjectManagement/04-PRODUCTIVITY/01-intro-to-zenhub" style="color: #3f5a8a;">
-    Introduction to ZenHub</a></td></tr>
+    <a href="09-ProjectManagement/03-PRODUCTIVITY/01-monitoring-evaluation" style="color: #3f5a8a;">
+    Monitoring & Evaluation</a></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;   
-    <a href="09-ProjectManagement/04-PRODUCTIVITY/02-tutorial-research-reproducibility" style="color: #3f5a8a;">
+    <a href="09-ProjectManagement/03-PRODUCTIVITY/02-productivity" style="color: #3f5a8a;">
     Research Reproducibility Guideline</a></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;   
+    <a href="09-ProjectManagement/03-PRODUCTIVITY/03-reproducibility" style="color: #3f5a8a;">
+    Research Reproducibility Guideline</a></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;  
+    <a href="09-ProjectManagement/03-PRODUCTIVITY/03-tutorial-research-reproducibility" style="color: #3f5a8a;">
+    Research Reproducibility Guideline</a></td></tr>
+
+  <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center; width: 130px;">INTRO</td>
+    <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b>
+    <a href="09-ProjectManagement/04-PUBLICATION/01-project-closing" style="color: #24376b;">
+    Project Closing</a></b></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;   
+    <a href="09-ProjectManagement/04-PUBLICATION/02-publication" style="color: #3f5a8a;">
+    Publication</a></td></tr>
+
 </table><br>
