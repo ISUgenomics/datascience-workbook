@@ -34,6 +34,11 @@ With some knowledge of scripting and algorithm design, you can easily encapsulat
 * <a href="04-R/03-ggplot-R-plotting" style="color: #3f5a8a;">4.2 Ggplot2 - R package for customizable graphs and charts</a>
 * <a href="04-R/04-tidyverse-R-advanced-data-analysis" style="color: #3f5a8a;">4.3 Tidyverse - R packages set for advanced exploratory data analysis</a>
 
+### **<a href="05-JULIA/01-introduction-to-julia" style="color: #24376b;">5. Introduction to Julia programming</a>**
+* <a href="05-JULIA/02-tutorial-setup-julia" style="color: #3f5a8a;">5.1 Julia setup: installation, environments and Jupyter integration</a>
+
+
+
 ---
 
 [Homepage](../index.md){: .btn  .btn--primary}
