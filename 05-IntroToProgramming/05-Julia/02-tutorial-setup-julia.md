@@ -18,7 +18,49 @@ header:
 # Introduction
 
 
-## Julia installation
+## Load Julia as module on HPC
+
+
+Julia, like Python or R, is often preinstalled on High Performance Computing (HPC) clusters to facilitate computational tasks. To check the available versions of Julia on the cluster, you can use the command:
+```
+module avail Julia
+```
+If multiple versions are listed, you can select and load a specific version using:
+```
+module load julia/version
+```
+Confirm the successful Julia activation with command:
+```
+julia --version
+```
+
+Then you can use Julia in your current session on the cluster.
+
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">PRO TIP for SCINet users:</span>
+<br><span style="font-style:italic;">
+On <b>Atlas cluster</b>, Julia is available as a module in <b>version 1.5</b>, and <br>on <b>Ceres cluster</b>, it's available in <b>version 1.7</b> <i>(October 2023)</i>. <br>Depending on the version compatibility with your project dependencies, you can choose the cluster that best suits your needs. If neither of these versions aligns with your project, <b>you have the option to install a different Julia version in your user space</b>. For detailed instructions on how to do this, refer to the section <a href="https://" target="_blank">Install Julia in selected version</a> in this tutorial.
+</span>
+</div>
+
+<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">WARNING:</span>
+<br><span style="font-style:italic;">
+When you <b>set up Julia on the HPC</b> infrastructure for the first time, remember to relocate the <b>.julia</b> hidden folder from your home to the storage space without limited memory quota (e.g., on SCINET clusters it can be the <b>/project/</b> path). Then soft link them back to the /home/user.name directory to make them accessible from this default location.
+</span>
+</div>
+
+```
+cd ~
+mkdir /project/<your_project_dir>/<account_name>
+mv .julia* /project/<your_project_dir>/<account_name>/
+chmod -R g+s /project/<your_project_dir>/<account_name>/.julia*
+ln -s /project/<your_project_dir>/<account_name>/.julia* ./
+```
+
+![05_julia_move_files.png](../assets/images/05_julia_move_files.png)
+
+## Install Julia in selected version
 
 * explore options for installing Julia at [https://julialang.org/downloads/](https://julialang.org/downloads/)
 
@@ -28,7 +70,7 @@ header:
 curl -fsSL https://install.julialang.org | sh -s -- --yes --default-channel release
 ```
 
-![]()
+![05_julia_juliaup.png](../assets/images/05_julia_juliaup.png)
 
 Depending on which shell you are using, run one of the following
 commands to reload the PATH environment variable:
@@ -51,20 +93,12 @@ julia --help
 ```
 which display the `usage message` for each tool. You can learn about available options and usage examples. Explore the [Using Juliaup](https://github.com/JuliaLang/juliaup#using-juliaup) section in the official documentation of the GitHub repo, to learn what you can do with `juliaup`.
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-If you <b>set up Julia on the HPC</b> infrastructure, remember to relocate the <b>.julia</b> and <b>.juliaup</b> hidden folder from your home to the storage space without limited memory quota (e.g., on SCINET clusters it can be the <b>/project/</b> path). Then soft link them back to the /home/user.name directory to make them accessible from this default location.
-</span>
-</div>
 
-```
-cd ~
-mkdir /project/<your_project_dir>/<account_name>
-mv .julia* /project/<your_project_dir>/<account_name>/
-chmod -R g+s /project/<your_project_dir>/<account_name>/.julia*
-ln -s /project/<your_project_dir>/<account_name>/.julia* ./
-```
+**Julia via Juliaup on HPC**
+
+You can utilize the [Using Juliaup](https://github.com/JuliaLang/juliaup#using-juliaup) version manager to install Julia in your user space on the HPC, and it's advisable to relocate and create symbolic links for the corresponding hidden directories for `.julia` and `.juliaup` **from your home directory to your project location** to prevent exceeding memory quota in your home directory.
+
+![05_juliaup_on_hpc.png](../assets/images/05_juliaup_on_hpc.png)
 
 
 ### Launch interactive Julia interpreter
@@ -84,19 +118,26 @@ or to launch a specific Julia version, say in channel `release`, run:
 ```
 julia +release
 ```
-![]()
+![05_julia_launch.png](../assets/images/05_julia_launch.png)
 
-Close Julia interpreter by typing `exit()`. 
+When needed, **close Julia interpreter** by typing `exit()`.
 
-### Get besic inline help
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">NOTE:</span>
+<br><span style="font-style:italic;">
+The <b>Julia interpreter is called REPL</b>, Read-Eval-Print Loop. It is an interactive environment where you can enter Julia expressions for evaluation, see the results, and repeat this process to explore Julia code in a live, iterative manner.
+</span>
+</div>
 
-* Once in the interactive Julia interpreter, type `?` and press `enter`. This will automatically change your `julia` prompt into `help?` and print on the screen the info about the documentation and basic instructions about the syntax and detailed help for options.
+
+### Get basic inline help
+
+Once in the interactive Julia interpreter, type `?` and press `enter`. This will automatically change your `julia` prompt into `help?` and print on the screen the info about the documentation and basic instructions about the syntax and detailed help for options.
 ```
 julia> ?
 ```
-![]()
-
-**NOTE:** *For help on a specific function or macro, type* `?` *followed by its name, e.g.* `?cos`, *or* `?@time`, *and press enter.*
+![05_julia_help.png](../assets/images/05_julia_help.png) <br><br>
+<b>NOTE:</b> *For help on a specific function or macro, type* `?` *followed by its name, e.g.* `?cos`, *or* `?@time`, *and press enter.*
 
 
 ## Julia package manager
@@ -109,18 +150,19 @@ julia> ]
 
 * To return to `julia>` prompt, press `backspace`, `delete` or `ctrl C`.
 
+![05_julia_manager.png](../assets/images/05_julia_manager.png)
 
 Then you can learn more about the built-in **Julia package manager** using the `?` followed by pressing `enter`:
 ```
 (@v1.9) pkg> ?
 ```
-![]()
+
 
 Further, you can get more detailed help on various commands, for example:
 ```
 (@v1.9) pkg> ?generate
 ```
-![]()
+![05_julia_manager_help.png](../assets/images/05_julia_manager_help.png)
 
 <details> <summary>See the full list of commands</summary>
 
@@ -192,7 +234,7 @@ Commands
 
 ### Install Packages system-wide
 
-Once you launch REPL with a `julia` keyword you will enter the default Julia environment. The default environment is typically the `@v#.#` environment, where `#.#` corresponds to the version of Julia that you are using. For example, for Julia version 1.9, the default environment would be @v1.9. <br>
+Once you launch REPL with a `julia` keyword you will enter the default Julia environment. The default environment is typically the `@v#.#` environment, where `#.#` corresponds to the version of Julia that you are using. For example, for Julia version 1.9, the default environment would be `@v1.9`. <br>
 
 <div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">PRO TIP:</span>
@@ -212,12 +254,12 @@ For example, to install the package "CSV", you would type:
 ```
 or to install a specific version of a package:
 ```
-(julia_geo) pkg> add CSV@v0.10.11
+(@v1.9) pkg> add CSV@v0.10.11
 ```
 ![]()
 You can also add (install) multiple packages with a single add command in Julia:
 ```
-(julia_geo) pkg> add DataFrames@v1.6.1 DelimitedFiles@v1.9.1 ProgressBars@v1.5.1
+(@v1.9) pkg> add DataFrames@v1.6.1 DelimitedFiles@v1.9.1 ProgressBars@v1.5.1
 ```
 
 ### Create isolated environment
@@ -287,21 +329,42 @@ julia
 using Pkg
 Pkg.add("IJulia")
 ```
-![]()
+![05_julia_jupyter_kernel.png](../assets/images/05_julia_jupyter_kernel.png)
 
-Once `IJulia` is installed, you can launch Jupyter Lab *(assuming you have it installed)*.
+
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; margin-left: 37px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+If you <b>install IJulia in the base environment</b>, you'll obtain a universal Julia kernel in Jupyter Lab, which can be paired with any custom environment created later. To utilize a custom environment with this universal kernel, simply activate the desired environment within a notebook (follow the steps provided below).
+</span>
+</div>
+
+Once `IJulia` is installed, you can launch Jupyter Lab *(assuming you <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-jupyter-basics#installing-jupyter" target="_blank">have it installed</a>)*.
 
 ### Access Julia in Jupyter Lab
 
-In the separate terminal tab, navigate to the desired location in your file system and launch the Jupyter Lab:
+**A. Launch Jupyter Lab installed on HPC via OOD**
+
+JupyterLab is accessible on SCINet clusters via the Open On Demand service, allowing users to launch it directly in a web browser on any device with a graphical interface. <br>
+Navigate to the specified URL:
+* Atlas: <a href="https://atlas-ood.hpc.msstate.edu" target="_blank">https://atlas-ood.hpc.msstate.edu</a>
+* Ceres: <a href="https://ceres-ood.scinet.usda.gov" target="_blank">https://ceres-ood.scinet.usda.gov/pun/sys/dashboard </a>
+
+enter your login credentials, and select **JupyterLab** from the `Interactive Apps` menu bar, you can seamlessly access and work in a JupyterLab environment on the SCINet clusters.
+
+**B. Launch Jupyter Lab installed on your local machine**
+
+In the separate terminal tab, navigate to the desired location in your file system and launch the Jupyter Lab: <br>*(assuming you <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-jupyter-basics#installing-jupyter" target="_blank">have it installed</a>)*
 ```
 jupyter lab
 ```
 The Jupyter Lab session should start automatically in your default web browser. If not, just do it manually navigating to the URL `http://localhost:8888/`.
 
-![]()
+![05_julia_apps_in_jupyter.png](../assets/images/05_julia_apps_in_jupyter.png)
 
 In Jupyter Lab, you should now see Julia as an available kernel, which allows you to run Julia code within `Jupyter notebooks​`, `Julia console` and create `Julia Files​`.
+
+To open a new instance of a selected app, such as a Julia-based notebook, navigate to the Launcher in JupyterLab and click on the Julia kernel.
 
 ### Activate an Isolated Environment
 
@@ -313,6 +376,19 @@ using Pkg
 Pkg.activate("/path/to/your/environment")
 ```
 
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+If you decided to create a unified storage location for your Julia environments, e.g. <b>JULIA_ENVS</b>, the path should look like <br>
+/project/account/user.name/JULIA_ENVS/env_name. <br>
+In the JupyterLab interface, you can check the location of your notebook using the file browser on the top left, and specify the relative or absolute path to the custom Julia environment.
+</span>
+</div>
+
+Press `alt + enter` or `option + return` (on Mac) to activate your custom project (env). <br>In the following cells in the notebook, you can test your Julia code.
+
+![05_julia_activate_env_in_notebook.png](../assets/images/05_julia_activate_env_in_notebook.png)
+
 <div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">WARNING:</span>
 <br><span style="font-style:italic;">
@@ -320,6 +396,12 @@ To create a new kernel for each environment, you would typically create a new IJ
 </span>
 </div>
 
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+It is recommended to <b>create a single Julia kernel in the base environment</b> with system-wide installed libraries, and then activate more specific environments as needed within individual Jupyter notebooks.
+</span>
+</div>
 
 
 ___
