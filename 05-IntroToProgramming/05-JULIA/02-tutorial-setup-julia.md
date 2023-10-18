@@ -172,65 +172,39 @@ Further, you can get more detailed help on various commands, for example:
 
 <div style="background: #e6f0f0; padding: 15px; margin-bottom: 20px;">
 Welcome to the Pkg REPL-mode. To return to the julia> prompt, either press backspace when the input line is empty or press
-Ctrl+C.
-
+Ctrl+C. <br><br>
 Full documentation available at https://pkgdocs.julialang.org/
-
-Synopsis
-
+<br><br>
+Synopsis<br>
 pkg> cmd [opts] [args]
-
+<br><br>
 Multiple commands can be given on the same line by interleaving a ; between the commands. Some commands have an alias,
 indicated below.
-
-Commands
-
-<b>activate:</b> set the primary environment the package manager manipulates
-
-<b>add:</b> add packages to project
-
-<b>build:</b> run the build script for packages
-
-<b>compat:</b> edit compat entries in the current Project and re-resolve
-
-<b>develop, dev:</b> clone the full package repo locally for development
-
-<b>free:</b> undoes a pin, develop, or stops tracking a repo
-
-<b>gc:</b> garbage collect packages not used for a significant time
-
-<b>generate:</b> generate files for a new project
-
-<b>help, ?:</b> show this message
-
-<b>instantiate:</b> downloads all the dependencies for the project
-
-<b>pin:</b> pins the version of packages
-
-<b>precompile:</b> precompile all the project dependencies
-
-<b>redo:</b> redo the latest change to the active project
-
-<b>remove, rm:</b> remove packages from project or manifest
-
-<b>resolve:</b> resolves to update the manifest from changes in dependencies of developed packages
-
-<b>status, st:</b> summarize contents of and changes to environment
-
-<b>test:</b> run tests for packages
-
-<b>undo:</b> undo the latest change to the active project
-
-<b>update, up:</b> update packages in manifest
-
-<b>why:</b> shows why a package is in the manifest
-
-<b>registry add:</b> add package registries
-
-<b>registry remove, rm:</b> remove package registries
-
-<b>registry status, st:</b> information about installed registries
-
+<br><br>
+Commands: <br>
+<b>activate:</b> set the primary environment the package manager manipulates<br>
+<b>add:</b> add packages to project<br>
+<b>build:</b> run the build script for packages<br>
+<b>compat:</b> edit compat entries in the current Project and re-resolve<br>
+<b>develop, dev:</b> clone the full package repo locally for development<br>
+<b>free:</b> undoes a pin, develop, or stops tracking a repo<br
+<b>gc:</b> garbage collect packages not used for a significant time<br>
+<b>generate:</b> generate files for a new project<br>
+<b>help, ?:</b> show this message<br>
+<b>instantiate:</b> downloads all the dependencies for the project<br>
+<b>pin:</b> pins the version of packages<br>
+<b>precompile:</b> precompile all the project dependencies<br>
+<b>redo:</b> redo the latest change to the active project<br>
+<b>remove, rm:</b> remove packages from project or manifest<br>
+<b>resolve:</b> resolves to update the manifest from changes in dependencies of developed packages<br>
+<b>status, st:</b> summarize contents of and changes to environment<br>
+<b>test:</b> run tests for packages<br>
+<b>undo:</b> undo the latest change to the active project<br>
+<b>update, up:</b> update packages in manifest<br>
+<b>why:</b> shows why a package is in the manifest<br>
+<b>registry add:</b> add package registries<br>
+<b>registry remove, rm:</b> remove package registries<br>
+<b>registry status, st:</b> information about installed registries<br>
 <b>registry update, up:</b> update package registries
 </div>
 </details>
