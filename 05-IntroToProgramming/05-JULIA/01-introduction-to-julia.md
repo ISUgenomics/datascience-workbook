@@ -31,7 +31,7 @@ header:
 
 ___
 # Further Reading
-* [5.1 Julia setup: installation, environments and Jupyter integration](02-must-have-software.md)
+* [5.1 Julia setup: installation, environments and Jupyter integration](/02-tutorial-setup-julia)
 
 * [SECTION 6. High-Performance Computing (HPC)](../../06-IntroToHPC/00-IntroToHPC-LandingPage)
 
