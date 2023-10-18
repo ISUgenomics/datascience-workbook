@@ -18,7 +18,7 @@ header:
 # Introduction
 
 
-## Load Julia as module on HPC
+## **Load Julia as module on HPC**
 
 
 Julia, like Python or R, is often preinstalled on High Performance Computing (HPC) clusters to facilitate computational tasks. To check the available versions of Julia on the cluster, you can use the command:
@@ -60,7 +60,7 @@ ln -s /project/<your_project_dir>/<account_name>/.julia* ./
 
 ![05_julia_move_files.png](../assets/images/05_julia_move_files.png)
 
-## Install Julia in selected version
+## **Install Julia in selected version**
 
 * explore options for installing Julia at [https://julialang.org/downloads/](https://julialang.org/downloads/)
 
@@ -130,7 +130,7 @@ The <b>Julia interpreter is called REPL</b>, Read-Eval-Print Loop. It is an inte
 </div>
 
 
-### Get basic inline help
+### *Get basic inline help*
 
 Once in the interactive Julia interpreter, type `?` and press `enter`. This will automatically change your `julia` prompt into `help?` and print on the screen the info about the documentation and basic instructions about the syntax and detailed help for options.
 ```
@@ -140,7 +140,7 @@ julia> ?
 <b>NOTE:</b> *For help on a specific function or macro, type* `?` *followed by its name, e.g.* `?cos`, *or* `?@time`, *and press enter.*
 
 
-## Julia package manager
+## **Julia package manager**
 
 In the Julia REPL, type `]` to enter the package manager mode. This will automatically switch the `julia>` prompt into the `(@v1.9) pkg>` built-in package manager mode.
 ```
@@ -313,7 +313,7 @@ You can also add (install) multiple packages with a single add command in Julia:
 ```
 *Now you are back in the default environment (@v1.9 in this example) and can access all the packages installed there.*
 
-## Julia in Jupyter Lab
+## **Julia in Jupyter Lab**
 
 Julia is not natively available in Jupyter Lab upon a fresh installation. However, you can easily add Julia to Jupyter Lab through the `IJulia` package, which serves as a Julia-language backend for the Jupyter interactive environment.
 
