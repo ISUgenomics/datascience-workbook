@@ -67,7 +67,8 @@ ln -s /project/<your_project_dir>/<account_name>/.julia* ./
 
 * explore options for installing Julia at [https://julialang.org/downloads/](https://julialang.org/downloads/)
 
-**RECOMMENDED:** install Julia with [Juliaup](https://github.com/JuliaLang/juliaup) - a Rust-based cross-platform Julia installer & version manager:
+**RECOMMENDED ON YOUR LOCAL MACHINE** <br>
+Install Julia with [Juliaup](https://github.com/JuliaLang/juliaup) - a Rust-based cross-platform Julia installer & version manager:
 
 ```
 curl -fsSL https://install.julialang.org | sh -s -- --yes --default-channel release
@@ -99,7 +100,7 @@ which display the `usage message` for each tool. You can learn about available o
 
 **Julia via Juliaup on HPC**
 
-You can utilize the [Using Juliaup](https://github.com/JuliaLang/juliaup#using-juliaup) version manager to install Julia in your user space on the HPC, and it's advisable to relocate and create symbolic links for the corresponding hidden directories for `.julia` and `.juliaup` **from your home directory to your project location** to prevent exceeding memory quota in your home directory.
+You can utilize the [Juliaup](https://github.com/JuliaLang/juliaup#using-juliaup) version manager to install Julia in your user space on the HPC, and it's advisable to relocate and create symbolic links for the corresponding hidden directories for `.julia` and `.juliaup` **from your home directory to your project location** to prevent exceeding memory quota in your home directory.
 
 ![05_juliaup_on_hpc.png](../assets/images/05_juliaup_on_hpc.png)
 
