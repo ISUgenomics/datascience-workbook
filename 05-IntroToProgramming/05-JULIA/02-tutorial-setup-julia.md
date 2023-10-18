@@ -25,9 +25,12 @@ Julia, like Python or R, is often preinstalled on High Performance Computing (HP
 ```
 module avail Julia
 ```
+
+![05_julia_module.png](../assets/images/05_julia_module.png)
+
 If multiple versions are listed, you can select and load a specific version using:
 ```
-module load julia/version
+module load julia/version              # e.g., module load julia/1.5.1
 ```
 Confirm the successful Julia activation with command:
 ```
@@ -292,6 +295,7 @@ julia
 ```
 (@v1.9) pkg> activate ./julia_geo
 ```
+![05_julia_create_env.png](../assets/images/05_julia_create_env.png)
 
 6. **Install Packages** in the new environment. With your new environment activated, you can now install packages using the `add` command:
 ```
