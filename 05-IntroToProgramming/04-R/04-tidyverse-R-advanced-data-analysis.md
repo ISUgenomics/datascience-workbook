@@ -77,7 +77,7 @@ purrr, for functional programming.
 tibble, for tibbles, a modern re-imagining of data frames.  
 stringr, for strings.  
 forcats, for factors.  
-[source](https://tidyverse.tidyverse.org). 
+[source](https://tidyverse.tidyverse.org).
 
 From the gapminder project, we obtain data for "GDP per capita", "Life expectancy", "Population", and "Country codes".
 
@@ -94,7 +94,7 @@ gdp_per_capita <- read_csv( paste0(url, file1) )
 ## Delimiter: ","
 ## chr (1): country
 ## dbl (2): time, gdp_per_capita
-## 
+##
 ## ℹ Use `spec()` to retrieve the full column specification for this data.
 ## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 ```
@@ -133,7 +133,7 @@ life_expectancy <- read_csv(paste0(url, file2))
 ## Delimiter: ","
 ## chr (1): country
 ## dbl (2): time, life_expectancy
-## 
+##
 ## ℹ Use `spec()` to retrieve the full column specification for this data.
 ## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 ```
@@ -171,7 +171,7 @@ population <- read_csv( paste0(url, file3) )
 ## Delimiter: ","
 ## chr (1): country
 ## dbl (2): time, population
-## 
+##
 ## ℹ Use `spec()` to retrieve the full column specification for this data.
 ## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 ```
@@ -197,7 +197,7 @@ population
 ## # … with 54,777 more rows
 ```
 
-After reading the `country_code` in, the function "str_to_title" is used to convert all the values in the "world_4region" column to title case. In other words, it capitalizes the first letter of each word in the column. 
+After reading the `country_code` in, the function "str_to_title" is used to convert all the values in the "world_4region" column to title case. In other words, it capitalizes the first letter of each word in the column.
 
 
 ```r
@@ -211,7 +211,7 @@ country_code <- read_csv( paste0(url, file4) )
 ## Delimiter: ","
 ## chr (3): country, name, world_4region
 ## dbl (2): latitude, longitude
-## 
+##
 ## ℹ Use `spec()` to retrieve the full column specification for this data.
 ## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 ```
@@ -233,8 +233,8 @@ country_code
 ##  6 dza       Algeria               Africa            28        3   
 ##  7 asm       American Samoa        Asia             -11.1   -171.  
 ##  8 and       Andorra               Europe            42.5      1.52
-##  9 ago       Angola                Africa           -12.5     18.5 
-## 10 aia       Anguilla              Americas          18.2    -63.0 
+##  9 ago       Angola                Africa           -12.5     18.5
+## 10 aia       Anguilla              Americas          18.2    -63.0
 ## # … with 263 more rows
 ```
 
@@ -242,13 +242,13 @@ Combining the different tibbles and removing missing data.
 
 
 ```r
-country_code %>% 
-  left_join( life_expectancy ) %>% 
-  left_join( gdp_per_capita ) %>% 
-  left_join( population ) %>% 
-  select( name:population ) %>% 
-  rename_at( vars(name, world_4region, time), ~ c("country", "continent", "year") ) %>% 
-  drop_na() %>% 
+country_code %>%
+  left_join( life_expectancy ) %>%
+  left_join( gdp_per_capita ) %>%
+  left_join( population ) %>%
+  select( name:population ) %>%
+  rename_at( vars(name, world_4region, time), ~ c("country", "continent", "year") ) %>%
+  drop_na() %>%
   mutate( year = as.Date(paste(year, "-01-01", sep = "", format = "%Y-%b-%d"))) -> gapminder_df
 ```
 
@@ -295,7 +295,7 @@ Checking data for the different continents. Here, Australia is categorised under
 
 
 ```r
-gapminder_df %>% 
+gapminder_df %>%
   distinct( continent )
 ```
 
@@ -397,7 +397,7 @@ gapminder_df %>% filter( grepl("[aA]ustralia", country) )
 
 
 ```r
-gapminder_df %>% 
+gapminder_df %>%
   distinct( continent )
 ```
 
@@ -408,15 +408,15 @@ gapminder_df %>%
 ## 1 Asia     
 ## 2 Europe   
 ## 3 Africa   
-## 4 Americas 
+## 4 Americas
 ## 5 Oceania
 ```
 
 
 ```r
-gapminder_df %>% 
-  filter( country == "New Zealand" | country == "Australia" ) %>% 
-  # filter( continent == "Oceania" ) %>% 
+gapminder_df %>%
+  filter( country == "New Zealand" | country == "Australia" ) %>%
+  # filter( continent == "Oceania" ) %>%
   ggplot( aes(x = year, y = gdp_per_capita) ) +
   geom_point() +
   facet_wrap( . ~ country )
@@ -428,8 +428,8 @@ Life expectancy vs GDP Per Capita plot
 
 
 ```r
-gapminder_df %>% 
-  filter( year == "2015-01-01" ) %>% 
+gapminder_df %>%
+  filter( year == "2015-01-01" ) %>%
   ggplot( aes(x = gdp_per_capita, y = life_expectancy) ) +
   scale_x_log10(labels = scales::dollar) +
   geom_point(aes(size = population, fill = continent), shape = 21, colour = "blue", alpha = 0.6) +
@@ -438,7 +438,7 @@ gapminder_df %>%
   guides(size = "none") +
   theme_classic( base_size = 18 ) +
   theme(panel.grid.major.x = element_blank(),
-        legend.position = "right", 
+        legend.position = "right",
         legend.title = element_blank())
 ```
 
@@ -448,19 +448,19 @@ Difference in GDP per Capita for Countries in the Americas in 2015
 
 
 ```r
-gapminder_df %>% 
+gapminder_df %>%
   filter(year == "2010-01-01" & continent == "Americas") %>%
   mutate(median = median(gdp_per_capita),
          diff = gdp_per_capita - median,
-         type = ifelse(gdp_per_capita < median, "Lower", "Higher")) %>% 
-  arrange(diff) %>% 
-  mutate(country = factor(country, levels = country)) %>% 
-  ggplot( aes(x = country, y = diff, label = country) ) + 
+         type = ifelse(gdp_per_capita < median, "Lower", "Higher")) %>%
+  arrange(diff) %>%
+  mutate(country = factor(country, levels = country)) %>%
+  ggplot( aes(x = country, y = diff, label = country) ) +
   geom_col(aes(fill = type), width = 0.5, alpha = 0.8 )  +
-  scale_y_continuous(expand = c(0, 0), 
+  scale_y_continuous(expand = c(0, 0),
                      labels = scales::dollar) +
   scale_fill_manual(labels = c("> median", "< median"),
-                    values = c("Higher" = "Turquoise", "Lower" = "black")) + 
+                    values = c("Higher" = "Turquoise", "Lower" = "black")) +
   coord_flip() +
   theme_bw( base_size = 12 )
 ```
@@ -477,22 +477,22 @@ sessionInfo()
 ## R version 4.2.1 (2022-06-23)
 ## Platform: x86_64-apple-darwin17.0 (64-bit)
 ## Running under: macOS Big Sur 11.7.3
-## 
+##
 ## Matrix products: default
 ## LAPACK: /Library/Frameworks/R.framework/Versions/4.2/Resources/lib/libRlapack.dylib
-## 
+##
 ## locale:
 ## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
-## 
+##
 ## attached base packages:
 ## [1] stats     graphics  grDevices utils     datasets  methods  
 ## [7] base     
-## 
+##
 ## other attached packages:
 ## [1] forcats_1.0.0   stringr_1.5.0   dplyr_1.1.0     purrr_1.0.1    
 ## [5] readr_2.1.4     tidyr_1.3.0     tibble_3.1.8    ggplot2_3.4.1  
 ## [9] tidyverse_1.3.2
-## 
+##
 ## loaded via a namespace (and not attached):
 ##  [1] lubridate_1.9.2     assertthat_0.2.1    digest_0.6.31      
 ##  [4] utf8_1.2.3          R6_2.5.1            cellranger_1.1.0   
@@ -523,12 +523,13 @@ sessionInfo()
 ___
 # Further Reading
 
-* [SECTION 6. High-Performance Computing (HPC)](../../06-IntroToHPC/00-IntroToHPC-LandingPage)
+* [5. Introduction to Julia programming language](../05-JULIA/01-introduction-to-julia)
+* [5.1 Julia setup: installation, environments and Jupyter integration](../05-JULIA/02-must-have-software)
 
 ___
 
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-IntroToProgramming-LandingPage){: .btn  .btn--primary}
 [Previous](03-ggplot-R-plotting){: .btn  .btn--primary}
-[Next](../../06-IntroToHPC/00-IntroToHPC-LandingPage){: .btn  .btn--primary}
+[Next](../05-JULIA/01-introduction-to-julia){: .btn  .btn--primary}
 [top of page](#introduction){: .btn  .btn--primary}

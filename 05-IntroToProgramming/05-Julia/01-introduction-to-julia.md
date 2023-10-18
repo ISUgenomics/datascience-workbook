@@ -14,9 +14,11 @@ header:
 
 ---
 
+## <span style="color: #ff3870;">New content coming soon!</span>
+
 
 # Introduction
-
+<!--
 
 ## Julia features
 
@@ -25,18 +27,18 @@ header:
 
 
 ## Getting started with Julia programming
-
+-->
 
 ___
 # Further Reading
 * [5.1 Julia setup: installation, environments and Jupyter integration](02-must-have-software.md)
 
-* [3. next section](03-various-methods-of-software-installation.md)
+* [SECTION 6. High-Performance Computing (HPC)](../../06-IntroToHPC/00-IntroToHPC-LandingPage)
 
 ___
 
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-IntroToProgramming-LandingPage){: .btn  .btn--primary}
-[Previous](){: .btn  .btn--primary}
+[Previous](../04-R/ 04-tidyverse-R-advanced-data-analysis){: .btn  .btn--primary}
 [Next](02-tutorial-setup-julia){: .btn  .btn--primary}
 [top of page](#introduction){: .btn  .btn--primary}

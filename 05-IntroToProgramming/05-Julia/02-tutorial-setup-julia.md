@@ -406,14 +406,12 @@ It is recommended to <b>create a single Julia kernel in the base environment</b>
 
 ___
 # Further Reading
-* [2.Other tutorials from this section](02-must-have-software.md)
-
-* [3. next section](03-various-methods-of-software-installation.md)
+* [SECTION 6. High-Performance Computing (HPC)](../../06-IntroToHPC/00-IntroToHPC-LandingPage)
 
 ___
 
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-IntroToProgramming-LandingPage){: .btn  .btn--primary}
 [Previous](01-introduction-to-julia){: .btn  .btn--primary}
-[Next](){: .btn  .btn--primary}
+[Next](../../06-IntroToHPC/00-IntroToHPC-LandingPage){: .btn  .btn--primary}
 [top of page](#introduction){: .btn  .btn--primary}
