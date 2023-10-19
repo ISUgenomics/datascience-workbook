@@ -244,15 +244,15 @@ You can also add (install) multiple packages with a single add command in Julia:
 
 Creating a virtual environment in Julia is slightly different compared to languages like Python. In Julia, the term for a virtual environment is a "project". Each project has its own set of dependencies, which are managed through a `Project.toml` file, and optionally a `Manifest.toml` file.
 
-1. **Open terminal** and navigate to the location where you want to store your isolated environments for Julia. <br><br>
-You can create a **JULIA_ENVS** directory in your `/project/` working space on a cluster and house all your Julia environments there with meaningful names. When a particular environment is needed, you can easily activate it from this centralized path, or create symbolic links (softlinks) to the corresponding project location if you prefer to keep them together with your data and scripts.
-
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; margin-left: 37px;">
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; ">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
 It's beneficial to <b>have a centralized location for all your Julia Projects</b>, i.e., isolated environments, instead of creating each environment in a different location alongside specific projects. Centralizing your Julia environments facilitates easier management, backup, and sharing of environments, while also ensuring a consistent and organized structure, which simplifies the process of finding and activating environments as you switch between different projects.
 </span>
 </div>
+
+1. **Open terminal** and navigate to the location where you want to store your isolated environments for Julia. <br><br>
+You can create a **JULIA_ENVS** directory in your `/project/` working space on a cluster and house all your Julia environments there with meaningful names. When a particular environment is needed, you can easily activate it from this centralized path, or create symbolic links (softlinks) to the corresponding project location if you prefer to keep them together with your data and scripts.
 
 2. **Launch a Julia** interactive interpreter in a terminal:
 ```
@@ -271,7 +271,8 @@ julia
 ```
 (@v1.9) pkg> activate ./julia_geo
 ```
-![05_julia_create_env.png](../assets/images/05_julia_create_env.png)
+![05_julia_create_env.png](../assets/images/05_julia_create_env.png) <br>
+<i>Once you activate the environment, the prompt will change to display the name of the active environment (e.g., julia_geo), indicating that you are now working within this specific environment.</i>
 
 6. **Install Packages** in the new environment. With your new environment activated, you can now install packages using the `add` command:
 ```
