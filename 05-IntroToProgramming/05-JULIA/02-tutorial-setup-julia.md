@@ -1,5 +1,5 @@
 ---
-title: "Julia setup: installation, environments and Jupyter integration"
+title: "Julia setup: installation, environments, kernels"
 layout: single
 author: Aleksandra Badaczewska
 author_profile: true
@@ -42,7 +42,7 @@ Then you can use Julia in your current session on the cluster.
 <div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">PRO TIP for SCINet users:</span>
 <br><span style="font-style:italic;">
-On <b>Atlas cluster</b>, Julia is available as a module in <b>version 1.5</b>, and <br>on <b>Ceres cluster</b>, it's available in <b>version 1.7</b> <i>(October 2023)</i>. <br>Depending on the version compatibility with your project dependencies, you can choose the cluster that best suits your needs. If neither of these versions aligns with your project, <b>you have the option to install a different Julia version in your user space</b>. For detailed instructions on how to do this, refer to the section <a href="https://" target="_blank">Install Julia in selected version</a> in this tutorial.
+On <b>Atlas cluster</b>, Julia is available as a module in <b>version 1.5</b>, and <br>on <b>Ceres cluster</b>, it's available in <b>version 1.7</b> <i>(October 2023)</i>. <br>Depending on the version compatibility with your project dependencies, you can choose the cluster that best suits your needs. If neither of these versions aligns with your project, <b>you have the option to install a different Julia version in your user space</b>. For detailed instructions on how to do this, refer to the section <a href="https://datascience.101workbook.org/05-IntroToProgramming/05-JULIA/02-tutorial-setup-julia#install-julia-in-selected-version" >Install Julia in selected version</a> in this tutorial.
 </span>
 </div>
 
@@ -244,12 +244,13 @@ You can also add (install) multiple packages with a single add command in Julia:
 
 Creating a virtual environment in Julia is slightly different compared to languages like Python. In Julia, the term for a virtual environment is a "project". Each project has its own set of dependencies, which are managed through a `Project.toml` file, and optionally a `Manifest.toml` file.
 
-1. **Open terminal** and navigate to the location where you want to store your isolated environments for Julia.
+1. **Open terminal** and navigate to the location where you want to store your isolated environments for Julia. <br><br>
+You can create a **JULIA_ENVS** directory in your `/project/` working space on a cluster and house all your Julia environments there with meaningful names. When a particular environment is needed, you can easily activate it from this centralized path, or create symbolic links (softlinks) to the corresponding project location if you prefer to keep them together with your data and scripts.
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; margin-left: 37px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
-best if you have a centralized location for all your Julia Projects i.e., isolated environments
+It's beneficial to <b>have a centralized location for all your Julia Projects</b>, i.e., isolated environments, instead of creating each environment in a different location alongside specific projects. Centralizing your Julia environments facilitates easier management, backup, and sharing of environments, while also ensuring a consistent and organized structure, which simplifies the process of finding and activating environments as you switch between different projects.
 </span>
 </div>
 
