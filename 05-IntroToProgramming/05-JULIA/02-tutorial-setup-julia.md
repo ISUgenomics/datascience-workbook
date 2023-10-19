@@ -46,22 +46,6 @@ On <b>Atlas cluster</b>, Julia is available as a module in <b>version 1.5</b>, a
 </span>
 </div>
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-When you <b>set up Julia on the HPC</b> infrastructure for the first time, remember to relocate the <b>.julia</b> hidden folder from your home to the storage space without limited memory quota (e.g., on SCINET clusters it can be the <b>/project/</b> path). Then soft link them back to the /home/user.name directory to make them accessible from this default location.
-</span>
-</div>
-
-```
-cd ~
-mkdir /project/<your_project_dir>/<account_name>
-mv .julia* /project/<your_project_dir>/<account_name>/
-chmod -R g+s /project/<your_project_dir>/<account_name>/.julia*
-ln -s /project/<your_project_dir>/<account_name>/.julia* ./
-```
-
-![05_julia_move_files.png](../assets/images/05_julia_move_files.png)
 
 ## **Install Julia in selected version**
 
@@ -293,6 +277,27 @@ You can also add (install) multiple packages with a single add command in Julia:
 (julia_geo) pkg> activate
 ```
 *Now you are back in the default environment (@v1.9 in this example) and can access all the packages installed there.*
+
+### Move `.julia` from home to project on HPC
+
+<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">WARNING:</span>
+<br><span style="font-style:italic;">
+When you <b>set up Julia on the HPC</b> infrastructure for the first time, remember to relocate the <b>.julia</b> hidden folder from your home to the storage space without limited memory quota (e.g., on SCINET clusters it can be the <b>/project/</b> path). Then soft link them back to the /home/user.name directory to make them accessible from this default location. <br><br>
+<b>NOTE:</b> The .julia hidden folder may not appear immediately after loading a Julia module, but it will definitely be created once you install some Julia libraries. To verify the presence of the .julia directory in your home, utilize the command: <br> <b>ls -lha ~</b>
+</span>
+</div>
+
+```
+cd ~
+mkdir /project/<your_project_dir>/<account_name>
+mv .julia* /project/<your_project_dir>/<account_name>/
+chmod -R g+s /project/<your_project_dir>/<account_name>/.julia*
+ln -s /project/<your_project_dir>/<account_name>/.julia* ./
+```
+
+![05_julia_move_files.png](../assets/images/05_julia_move_files.png)
+
 
 ## **Julia in Jupyter Lab**
 
