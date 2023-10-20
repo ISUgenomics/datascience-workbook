@@ -212,11 +212,10 @@ mat = [1 2; 3 4]                    # 2D array: matrix
 tensor = reshape(1:8, (2, 2, 2))    # 3D array: tensor
 ```
 
-<i>
-Creating a vector, a matrix, and a 3D tensor (a multidimensional array) using Julia's array syntax.
-<li><b>vec</b> is a 1-dimensional array, commonly referred to as a vector, containing three elements: 1, 2, and 3.</li>
-<li><b>mat</b> is a 2-dimensional array, or matrix, where elements are organized in rows and columns, with the semicolon ; indicating the start of a new row.</li>
-<li><b>tensor</b> is a 3-dimensional array, or tensor, created by reshaping a range of values from 1 to 8 into a 2x2x2 grid using the reshape function.</li>
+<i>Creating a vector, a matrix, and a 3D tensor (a multidimensional array) using Julia's array syntax. <br>
+<b>- vec</b> is a 1-dimensional array, commonly referred to as a vector, containing three elements: 1, 2, and 3.<br>
+<b>- mat</b> is a 2-dimensional array, or matrix, where elements are organized in rows and columns, with the semicolon ; indicating the start of a new row.<br>
+<b>- tensor</b> is a 3-dimensional array, or tensor, created by reshaping a range of values from 1 to 8 into a 2x2x2 grid using the reshape function.
 </i>
 
 ### *1-Based Indexing*
