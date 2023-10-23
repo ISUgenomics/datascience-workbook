@@ -23,7 +23,7 @@ header:
 
 Julia, like Python or R, is often preinstalled on High Performance Computing (HPC) clusters to facilitate computational tasks. To check the available versions of Julia on the cluster, you can use the command:
 ```
-module avail Julia
+module avail julia
 ```
 
 ![05_julia_module.png](../assets/images/05_julia_module.png)

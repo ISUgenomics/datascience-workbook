@@ -249,7 +249,7 @@ end                                   |
 
 <div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">PRO TIP:</span><br>
-<i>In Julia, you can write the entire <b>if-else</b> block in a single line in Julia as follows:</i> <br>
+<i>In Julia, you can write the entire <b>if-else</b> block in a single line as follows:</i> <br>
 <div style="background: #e6f0f0; padding: 5px; margin: 10px 0;">
 if x > y println("x is greater") else println("y is greater or equal") end
 </div>
