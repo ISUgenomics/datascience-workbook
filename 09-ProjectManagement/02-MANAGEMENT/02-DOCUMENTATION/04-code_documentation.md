@@ -245,7 +245,7 @@ While the examples above are simplistic for illustrative purposes, it's crucial 
 * **use a consistent style** <br>
 <i>If you're working in a team, it helps if everyone follows a similar comment style.</i>
 
-![02_inline_comments.png](../assets/images/02_inline_comments.png)
+![02_inline_comments.png](../../assets/images/02_inline_comments.png)
 
 
 ## Block comments
@@ -1420,7 +1420,7 @@ Create a directory where you want your documentation to reside, navigate to it, 
 sphinx-quickstart
 ```
 <i>This command will guide you through the initial configuration. <br>Answer the questions as prompted. For most users, the default values will be sufficient.</i> <br>
-![02_sphinx_docs_for_python.png](../assets/images/02_sphinx_docs_for_python.png)
+![02_sphinx_docs_for_python.png](../../assets/images/02_sphinx_docs_for_python.png)
 
 **3.Choose a Theme:** <br>
 Sphinx uses themes to style the documentation. The default is called `alabaster`, but there are many others available. One popular choice is `Read the Docs`. To use it, first install the theme:
