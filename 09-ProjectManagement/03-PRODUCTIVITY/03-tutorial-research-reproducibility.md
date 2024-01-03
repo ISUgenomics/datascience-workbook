@@ -911,7 +911,7 @@ The tutorials for this workshop (SCINet Geospatial Workshop 2020) use an image t
 
 The above setup (with the addition of [Zenodo](https://zenodo.org/) linked to the GitHub repository) would support the workflow outlined in the below figure. The container images are archived/stored on Docker Hub while the code used to define and build the images is archived on GitHub and citable via a Zenodo DOI. This workflow allows for a consistent and reproducible computational environment from laptop/desktop to HPC to cloud computing systems.
 
-![alt text](../images/containers.png "Logo Title Text 1")
+<!-- ![alt text](../../assets/images/containers.png) -->
 
 <br>
 [return to contents](#contents)
