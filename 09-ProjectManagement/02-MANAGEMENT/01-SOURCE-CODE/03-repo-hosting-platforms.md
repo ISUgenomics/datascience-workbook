@@ -87,7 +87,7 @@ The table provides a general overview of a few major online hosting platforms fo
 Learn more from the <b>hands-on tutorial</b> <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/04-intro-to-github" target="_blank">Introduction to GitHub  ⤴</a>, provided in this section of the workbook.
 </span><br><br>
 
-![01-github_website.png](../../07-DataParsing/assets/images/01-github_website.png)
+![01-github_website.png](../../../07-DataParsing/assets/images/01-github_website.png)
 
 ### ***Bitbucket***
 
@@ -97,7 +97,7 @@ Learn more from the <b>hands-on tutorial</b> <a href="https://datascience.101wor
 Learn more from the <b>hands-on tutorial</b> <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/05-intro-to-bitbucket" target="_blank">Introduction to BitBucket  ⤴</a>, provided in this section of the workbook.
 </span><br><br>
 
-![01-version_control_bitbucket.png](../assets/images/01-version_control_bitbucket.png)
+![01-version_control_bitbucket.png](../../assets/images/01-version_control_bitbucket.png)
 
 ### *GitLab*
 
@@ -109,13 +109,13 @@ Learn more from the <b>hands-on tutorial</b> <a href="https://datascience.101wor
 
 <a href="https://sourceforge.net" target="_blank">SourceForge  ⤴</a> is a web-based platform that provides hosting for Git and other types of version control systems. It is **popular among open-source projects** and provides a variety of tools for project management and collaboration, with a focus on community support. SourceForge **supports a wide range of programming languages**, including C/C++, Java, Python, and more.
 
-![01-version_control_sourceforge.png](../assets/images/01-version_control_sourceforge.png)
+![01-version_control_sourceforge.png](../../assets/images/01-version_control_sourceforge.png)
 
 ### *GitKraken*
 
 <a href="https://www.gitkraken.com" target="_blank">GitKraken  ⤴</a> is a Git client that **provides a graphical user interface** for working with Git repositories. It integrates with a variety of Git hosting services and provides features for collaboration, code review, and project management.
 
-![01-version_control_gitkraken.png](../assets/images/01-version_control_gitkraken.png)
+![01-version_control_gitkraken.png](../../assets/images/01-version_control_gitkraken.png)
 
 ### *Visual Studio Team Services*
 
