@@ -74,7 +74,7 @@ A few inspiring examples of tools supporting documentation *(including some AI-p
 
 # Documentation Basics
 
-![documentation_wordcloud.png](../assets/images/documentation_wordcloud.png)
+![documentation_wordcloud.png](../../assets/images/documentation_wordcloud.png)
 
 ## Why clear and organized documentation matters?
 
