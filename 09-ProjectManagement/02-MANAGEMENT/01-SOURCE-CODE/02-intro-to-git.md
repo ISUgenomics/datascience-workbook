@@ -240,7 +240,7 @@ Before we start working in the repository, you need to have `Git` installed on y
 **Windows** <br>
 Download the **Git** installer from the <a href="https://git-scm.com/download/win" target="_blank">official Git website  ⤴</a> and follow the instructions provided by the installation wizard.
 
-![01-git_download_windows.png](../assets/images/01-git_download_windows.png)
+![01-git_download_windows.png](../../assets/images/01-git_download_windows.png)
 
 **MacOS** <br>
 If you have <a href="https://brew.sh" target="_blank">Homebrew  ⤴</a> installed, simply type in your terminal window:
@@ -249,7 +249,7 @@ brew install git
 ```
 Alternatively, you can download the **Git** installer from the <a href="https://git-scm.com/download/mac" target="_blank">official Git website  ⤴</a> and follow the prompts.
 
-![01-git_download_mac.png](../assets/images/01-git_download_mac.png)
+![01-git_download_mac.png](../../assets/images/01-git_download_mac.png)
 
 **Linux** <br>
 You can install **Git** using your distribution's package manager.
@@ -420,12 +420,12 @@ git init
 ```
 That's it! You now have a brand new Git repository.
 
-![01-git_init_repo.png](../assets/images/01-git_init_repo.png)
+![01-git_init_repo.png](../../assets/images/01-git_init_repo.png)
 
 <div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">The <b>git init</b> command creates a hidden <b>.git</b> directory which stores all the necessary metadata for your new repo.</span> <br><br>
-<p align="left"><img width="800" src="../assets/images/01-git_repo_tracking.png"></p>
+<p align="left"><img width="800" src="../../assets/images/01-git_repo_tracking.png"></p>
 </div>
 
 When you run `git init` in your local directory, you're creating a local Git repository, which is great **for tracking changes and managing versions of your project on your local machine**.
@@ -439,7 +439,7 @@ After initializing a repository in your selected project directory, Git will aut
 
 You can verify Git tracking feature by editing any file in your new local repository and running the `git status` command, which will list the modified files ready to be staged and committed.
 
-![01-git_status_untracked.png](../assets/images/01-git_status_untracked.png)
+![01-git_status_untracked.png](../../assets/images/01-git_status_untracked.png)
 
 
 ## **4. Commit changes**
@@ -483,7 +483,7 @@ git status
 ```
 This will provide an overview of which files are modified, untracked, or staged for commit.
 
-![01-git_status_untracked.png](../assets/images/01-git_status_untracked.png)
+![01-git_status_untracked.png](../../assets/images/01-git_status_untracked.png)
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
@@ -501,18 +501,18 @@ Staging files prepares them for inclusion in the next commit.
 ```
 git add <file_name1> <file_name2>
 ```
-  ![01-git_add_file.png](../assets/images/01-git_add_file.png)
+  ![01-git_add_file.png](../../assets/images/01-git_add_file.png)
 
   This results in adding to stage selected file(s) only while other remain untracked.
 
-  ![01-git_add_file_status.png](../assets/images/01-git_add_file_status.png)
+  ![01-git_add_file_status.png](../../assets/images/01-git_add_file_status.png)
 
 * to stage all modified files use:
 ```
 git add .
 ```
 
-  ![01-git_add_all_status.png](../assets/images/01-git_add_all_status.png)
+  ![01-git_add_all_status.png](../../assets/images/01-git_add_all_status.png)
 
 ### *Commit your changes*
 
@@ -523,19 +523,19 @@ git commit -m "Your commit message here"
 
 The `commit message` should provide a concise and descriptive summary of the changes you made.
 
-![01-git_commit.png](../assets/images/01-git_commit.png)
+![01-git_commit.png](../../assets/images/01-git_commit.png)
 
 This will assign a message to particular changes made in files added to stage. Once `git commit` is applied, stage is cleared.
 
-![01-git_cleared_stage.png](../assets/images/01-git_cleared_stage.png)
+![01-git_cleared_stage.png](../../assets/images/01-git_cleared_stage.png)
 
 Now, new file(s) can be added & committed with separate message about changes.
 
-![01-git_add_all_commit.png](../assets/images/01-git_add_all_commit.png)
+![01-git_add_all_commit.png](../../assets/images/01-git_add_all_commit.png)
 
 You can continue this process until you commit all your recent changes *(you can keep some files if they are not ready yet)*.
 
-![01-git_cleared_tree.png](../assets/images/01-git_cleared_tree.png)
+![01-git_cleared_tree.png](../../assets/images/01-git_cleared_tree.png)
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
@@ -558,7 +558,7 @@ git log
 ```
 This command displays a chronological list of commits, providing information about: <br> the `commit hash`, `author`, `date`, and `commit message`. This allows you to examine the history of your project and understand the sequence of changes made over time.
 
-![01-git_commit_history.png](../assets/images/01-git_commit_history.png)
+![01-git_commit_history.png](../../assets/images/01-git_commit_history.png)
 
 ### *Compare different versions of the repo*
 
@@ -567,7 +567,7 @@ git diff {commit hash 1} {commit hash 2}
 ```
 This command allows you to compare different versions of your project. By specifying `commit hashes`, `branches`, or `tags`, you can see the differences in the content of files between those versions. This is particularly useful for understanding what has changed and identifying specific modifications introduced at different points in your project's history.
 
-![01-git_diff_commits.png](../assets/images/01-git_diff_commits.png)
+![01-git_diff_commits.png](../../assets/images/01-git_diff_commits.png)
 
 ---
 
@@ -622,7 +622,7 @@ git checkout {commit-hash}
 replacing `{commit-hash}` with the actual *commit hash*. <br>
 This will switch your repository to the state of that specific commit, effectively rewinding your project to that point in time.
 
-  ![01-git_checkout_commit.png](../assets/images/01-git_checkout_commit.png)
+  ![01-git_checkout_commit.png](../../assets/images/01-git_checkout_commit.png)
 
 <div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">WARNING:</span>
@@ -648,7 +648,7 @@ git checkout {branch-name}
 replacing `{branch-name}` with the branch you want to switch to. <br>
 This brings you back to the latest state of your project and allows you to continue working from there.
 
-![01-git_switch_head.png](../assets/images/01-git_switch_head.png)
+![01-git_switch_head.png](../../assets/images/01-git_switch_head.png)
 
 <div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">PRO TIP:</span>
@@ -678,7 +678,7 @@ If you don't already have one, you'll need a GitHub account to create and manage
 **You can sign up for a free account on the <a href="https://github.com/" target="_blank">GitHub homepage  ⤴</a>.** <br>
 <span style="color: #ff3870;font-weight: 500;"> If you need a detailed guide for this step,</span> please see section <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/04-intro-to-github#how-to-get-a-github-account" target="_blank">How to get a Github account  ⤴</a> in the tutorial <i><b>"Introduction to GitHub"</b></i>, available in this workbook.
 
-![01-github_website.png](../../07-DataParsing/assets/images/01-github_website.png)
+![01-github_website.png](../../../07-DataParsing/assets/images/01-github_website.png)
 
 
 ## **7. Create a new remote repository on GitHub**
@@ -687,7 +687,7 @@ If you don't already have one, you'll need a GitHub account to create and manage
 
 After you log into GitHub, you can create a new repository by clicking on the `+` icon in the top right corner and selecting `New repository`.
 
-![01-github_new_repo.png](../assets/images/01-github_new_repo.png)
+![01-github_new_repo.png](../../assets/images/01-github_new_repo.png)
 
   * You'll need to give your repository a name,
   * and you can also provide a description,
@@ -695,7 +695,7 @@ After you log into GitHub, you can create a new repository by clicking on the `+
   * and optionally initialize it with a `README` file.
     * <i><span style="color: #ff3870;font-weight: 500;">Don't initialize the new remote repo with any files created online <br> if you're planning to connect it with your existing local repository.</span></i>
 
-<p align="center"><img width="800" src="../assets/images/01-github_new_repo_setup.png"></p>
+<p align="center"><img width="800" src="../../assets/images/01-github_new_repo_setup.png"></p>
 
 
 ## **8. Connect a remote to your local repo**
@@ -725,7 +725,7 @@ After you log into GitHub, you can create a new repository by clicking on the '+
 **3. Connect your local repository to the new remote repository on GitHub** <br>
 Once the repository is created on GitHub, it will take you to a quick setup page where you can find the URL of your new remote repository. You should copy it.
 
-<p align="center"><img width="800" src="../assets/images/01-git_repo_url.png"></p>
+<p align="center"><img width="800" src="../../assets/images/01-git_repo_url.png"></p>
 
 Now, **you go back to the terminal on your local machine**, navigate to your local repository and run the following command to add the remote repository:
 ```
@@ -793,11 +793,11 @@ This command combines the actions of:
 
 When there are no new changes on the remote repository, the output of `git pull` will show a message like <i>"Already up to date"</i> or <i>"Everything up to date"</i>. This indicates that your local branch is already synchronized with the remote branch, and there are no additional changes to download.
 
-![01-git_pull_current.png](../assets/images/01-git_pull_current.png)
+![01-git_pull_current.png](../../assets/images/01-git_pull_current.png)
 
 If there are new changes on the remote repository, the output of `git pull` will show messages indicating that it is downloading and merging the changes. The output will also display details about the files that were modified or added as part of the update.
 
-![01-git_pull_changes.png](../assets/images/01-git_pull_changes.png)
+![01-git_pull_changes.png](../../assets/images/01-git_pull_changes.png)
 
 
 ### *Pushing local changes to the remote repo*
@@ -831,7 +831,7 @@ git push
 ```
 This command sends your committed changes from the local branch to the corresponding branch on the remote repository.
 
-![01-git_push.png](../assets/images/01-git_push.png)
+![01-git_push.png](../../assets/images/01-git_push.png)
 
 <div style="background: #dff5b3; padding: 15px;">
 <span style="font-weight:800;">NOTE:</span>
@@ -879,7 +879,7 @@ To clone a repository, navigate to the directory where you want the repository t
 
 Let's use a public <a href="https://github.com/ISUgenomics/data_graphing" target="_blank">data_graphing  ⤴</a> repository hosted on GitHub:
 
-![01-git_repo_clone.png](../assets/images/01-git_repo_clone.png)
+![01-git_repo_clone.png](../../assets/images/01-git_repo_clone.png)
 
 Find and copy the URL address of the repo, and then use it in your command:
 
@@ -887,11 +887,11 @@ Find and copy the URL address of the repo, and then use it in your command:
 git clone https://github.com/ISUgenomics/data_graphing.git
 ```
 
-![01-git_clone_repo.png](../assets/images/01-git_clone_repo.png)
+![01-git_clone_repo.png](../../assets/images/01-git_clone_repo.png)
 
 **This will create a new directory on your local machine with the same name as the remote repository**, where you'll find all the repository's files, and a `.git` directory that contains all the Git-related information for the project.
 
-![01-git_clone_local.png](../assets/images/01-git_clone_local.png)
+![01-git_clone_local.png](../../assets/images/01-git_clone_local.png)
 
 <span style="color: #ff3870;font-weight: 500;">So as you can see:</span><br>
 When you clone a repository, **Git automatically adds the original repository as a remote**, so you can fetch from and push to it right away without further setup.
@@ -1038,7 +1038,7 @@ git branch new-feature
 creates a new branch named "new-feature." <br>
 You can list all available branches using `git branch` command *(without any arguments)*. The highlighted branch (with asterisk) is the currently loaded and developed branch.
 
-![01-git_branch_new.png](../assets/images/01-git_branch_new.png)
+![01-git_branch_new.png](../../assets/images/01-git_branch_new.png)
 
 <div style="background: #cff4fc; padding: 15px; margin-bottom: 40px;">
 <span style="font-weight:800;">PRO TIP:</span>
@@ -1057,7 +1057,7 @@ git checkout new-feature
 ```
 switches to the "new-feature" branch.
 
-![01-git_branch_checkout.png](../assets/images/01-git_branch_checkout.png)
+![01-git_branch_checkout.png](../../assets/images/01-git_branch_checkout.png)
 
 **You can now work on your new ideas within the branch**, making commits, testing, and iterating without affecting the main branch.
 
@@ -1079,7 +1079,7 @@ Forking a repository enables you to <b>create a separate copy of the original re
 * Click the `Fork` button, located on the top-right.
   * This creates a duplicate repository under your GitHub account.
 
-    ![01-github_fork_repo.png](../assets/images/01-github_fork_repo.png)
+    ![01-github_fork_repo.png](../../assets/images/01-github_fork_repo.png)
 
 
 * Clone the forked repository to your local machine using:
@@ -1179,11 +1179,11 @@ When pulling from the remote repository or pushing to it, conflicts may arise if
 
 `git push` conflict message:
 
-![01-github_push_conflict.png](../assets/images/01-github_push_conflict.png)
+![01-github_push_conflict.png](../../assets/images/01-github_push_conflict.png)
 
 `git pull` conflict message:
 
-![01-github_pull_conflict.png](../assets/images/01-github_pull_conflict.png)
+![01-github_pull_conflict.png](../../assets/images/01-github_pull_conflict.png)
 
 ### • *Edit conflicted file*
 
@@ -1272,7 +1272,7 @@ Pull requests help maintain code quality by introducing a step where changes are
 
 The GitHub online interface allows for pull requests not only `from forked repositories` but also `from branches` within the original repository itself.
 
-![01-github_pull_request.png](../assets/images/01-github_pull_request.png)
+![01-github_pull_request.png](../../assets/images/01-github_pull_request.png)
 
 Let's explore the differences and who can use each option:
 
