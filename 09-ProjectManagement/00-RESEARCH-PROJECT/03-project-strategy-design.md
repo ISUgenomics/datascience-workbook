@@ -65,7 +65,12 @@ The **strategic planning and thoughtful design** of research projects are crucia
 <table><tr>
 <td style="border: transparent; vertical-align: top; font-size: 16px;">
 Project strategy is essentially about crafting a roadmap for your research journey, outlining where you want to go and how you plan to get there. It involves <b>identifying clear goals</b> and objectives, ensuring they align with the broader research agenda, and determining the best route to achieve them. Think of it as a mix of vision and practicality, where you <b>balance ambitious scientific aspirations with realistic steps</b>, resource management, and anticipating potential hiccups along the way. It's about making smart, informed decisions to <b>steer your research project towards success</b>.
-<br><br>
+</td>
+<td width=500 style="border: transparent;"><img width="800" src="../assets/images/01-project_strategy.png"></td>
+</tr></table>
+
+**STEPS IN PROJECT STRATEGY**
+
 1. Define Clear Objectives: <i>specific, measurable goals for the research</i> <br>
 2. Determine Scope Analysis: <i>the breadth and depth of the project</i> <br>
 3. Recognize Audience: <i>all parties involved or affected by the project</i> <br>
@@ -76,9 +81,6 @@ Project strategy is essentially about crafting a roadmap for your research journ
 8. Execution Plan: <i>detailed plan for carrying out research activities</i> <br>
 9. Monitoring and Control: <i>track progress and make adjustments</i> <br>
 10. Review and Publication: <i>review findings and prepare for publication</i>
-</td>
-<td width=500 style="border: transparent;"><img width="800" src="../assets/images/01-project_strategy.png"></td>
-</tr></table>
 
 ## Defining Goals and Objectives
 
