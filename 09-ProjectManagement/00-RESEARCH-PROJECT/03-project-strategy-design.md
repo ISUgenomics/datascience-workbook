@@ -60,10 +60,12 @@ The **strategic planning and thoughtful design** of research projects are crucia
 <span style="font-style:italic;">In the absence of a well-defined strategy and risk assessment, a photogrammetry project for crop analysis might suffer from inadequate data collection due to poorly planned drone flight paths, resulting in inaccurate crop health assessments and potentially leading to misguided agricultural decisions.</span>
 </div>
 
+---
+
 # Project Strategy
 
 <table><tr>
-<td style="border: transparent; vertical-align: top; font-size: 16px;">
+<td style="border: transparent; vertical-align: top; font-size: 22px;">
 Project strategy is essentially about crafting a roadmap for your research journey, outlining where you want to go and how you plan to get there. It involves <b>identifying clear goals</b> and objectives, ensuring they align with the broader research agenda, and determining the best route to achieve them. Think of it as a mix of vision and practicality, where you <b>balance ambitious scientific aspirations with realistic steps</b>, resource management, and anticipating potential hiccups along the way. It's about making smart, informed decisions to <b>steer your research project towards success</b>.
 </td>
 <td width=500 style="border: transparent;"><img width="800" src="../assets/images/01-project_strategy.png"></td>
