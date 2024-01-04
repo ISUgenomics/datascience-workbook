@@ -21,7 +21,7 @@ Project management involves a variety of tasks, that help to plan, organize, and
 
 ![research project management](../assets/images/01-project_management_overview.png)
 
-There are a few key sections of project management:
+There are a few key sections of Project Management, each with its unique importance, and in this guide, we will delve into them in a less formal manner to highlight the aspects that are particularly crucial for managing small-scale research projects effectively.
 
 * **<a href="https://datascience.101workbook.org/09-ProjectManagement/00-RESEARCH-PROJECT/03-project-strategy-design" target="_blank">PROJECT PLANNING</a>** <br>
 This involves defining the project scope, goals, and objectives, creating a project timeline, and determining the resources required to complete the project. This helps to ensure that the project stays on track, that resources are allocated effectively, and that the project is completed on time and within budget.
@@ -50,6 +50,48 @@ This involves ensuring that the data, code, and methods used in a scientific pro
 * **<a href="https://datascience.101workbook.org/09-ProjectManagement/04-PUBLICATION/01-project-closing" target="_blank">PROJECT CLOSING</a>** <br>
 This involves finalizing the project and making the data and results accessible to the wider scientific community. This includes publishing the results in peer-reviewed journals or online repositories, ensuring that the data is properly documented, and making it available for long-term access and use. This helps to promote transparency, encourage collaboration, and ensure that the results of the project are accessible to future generations of scientists.
 
+
+## Professional Project Management
+
+There are several official guides, schools, and knowledge bases on topics related to Project Management. For formal education, <a href="https://degreesandcareers.info/resources/us-project-management/" target="_blank">many universities</a> offer courses and degrees in project management with a focus on research projects. Some <a href="https://blog.masterofproject.com/best-project-management-universities/" target="_blank">notable universities</a> in the United States include:
+
+| Institution | offered program |
+|-------------|-----------------|
+| <a href="https://executive.mit.edu/search?q=project%20management/" target="_blank">MIT Sloan School of Management</a> | Project management is integrated into the undergraduate curriculum as part of the Management Science discipline. |
+| <a href="https://extension.berkeley.edu/subjects/project-management/" target="_blank">UC Berkeley</a> | UC Berkeley offers a comprehensive Certificate Program in Project Management, accessible to students regardless of prior educational background. |
+| <a href="https://www.ucla.edu/search?q=project+management" target="_blank">University of California, Los Angeles</a> | UCLA Extension offers a 24-unit Project Management Certificate, which includes a course on the Fundamentals of Project Management. |
+| <a href="https://search.stevens.edu/s/search.html?query=project+management&collection=21772%7Esp-search&sort=" target="_blank">Stevens Institute of Technology</a> | They offer a Graduate Certificate in Project Management `accredited by the Project Management Institute` (PMI) and the Global Accreditation Center for Project Management.|
+| <a href="https://search.bu.edu/?site=https%3A%2F%2Fwww.bu.edu&context=site&q=project+management&do_search=" target="_blank">Boston University</a> | Offers a Master’s in Project Management, available in a regular format as well as with an IT focus; offers `industry-rooted knowledge of business`. |
+| <a href="https://www.snhu.edu/online-degrees/certificates/graduate-project-management" target="_blank">Southern New Hampshire University</a> | Provides project management education at the undergraduate level, both on-campus and online. The program encompasses a comprehensive curriculum in project management, including `management science`, alongside other key business areas. |
+| <a href="https://www.gwu.edu/search/project%2Bmanagement" target="_blank">George Washington University</a> | Offers an MS in Project Management and a Master of Business Administration with a focus on Project Management. |
+| <a href="https://www.northeastern.edu/search/?query=project+management" target="_blank">Northeastern University</a> | The Master of Science in Project Management equips students with technical, professional, and strategic expertise for `managing projects focused on innovation`. |
+| <a href="https://search.uis.georgetown.edu/?sitesearch=&q=project+management&button=" target="_blank">Georgetown University</a> | Their Master of Professional Studies in Project Management program focuses on practical, `hands-on experience` in managing complex projects and a deeper understanding of the `project management lifecycle`. |
+| <a href="https://search.asu.edu/?q=project%20management&url_host=&site=default_collection&sort=date%3AD%3AL%3Ad1&output=xml_no_dtd&ie=UTF-8&oe=UTF-8&client=asu_frontend&proxystylesheet=asu_frontend#gsc.tab=0&gsc.q=project%20management&gsc.page=1" target="_blank">Arizona State University</a> | The Bachelor of `Applied Science` in Project Management offers interdisciplinary program designed to equip current, new, and aspiring project managers to become leaders in various organizational settings. |
+
+Professional bodies like the <a href="https://www.pmi.org" target="_blank">Project Management Institute</a> (PMI) provide guidelines and best practices, as seen in their <a href="https://www.pmi.org/pmbok-guide-standards/foundational/pmbok" target="_blank">PMBOK</a> (Project Management Body of Knowledge) Guide. Additionally, the <a href="https://www.prince2.com/usa/prince2" target="_blank">PRINCE2</a> (Projects IN Controlled Environments) methodology offers a structured approach to project management. Online platforms like <a href="https://www.coursera.org/search?query=project%20management" target="_blank">Coursera</a> or <a href="https://www.linkedin.com/learning/subscription/project-management-cert-prep-ceu?src" target="_blank">LinkedIn Learning</a> also host courses and resources in these areas.  I would say that consulting these educational resources and methodologies can be beneficial for detailed and specific guidance.
+
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">PMBOK:</span>
+<br><span style="font-style:italic;">The Project Management Body of Knowledge (PMBOK) Guide, published by the Project Management Institute (PMI), is a comprehensive set of standards and guidelines for project management. It outlines a framework of best practices and terminologies that are universally accepted in the field of project management. The guide covers key processes and knowledge areas areas necessary for effective project management, providing a foundational reference for professionals to manage projects efficiently and effectively. This guide is widely recognized and used as a primary resource for project management training and certification.</span>
+</div>
+
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">PRINCE2:</span>
+<br><span style="font-style:italic;">
+ChatGPT
+PRINCE2 (Projects IN Controlled Environments) is a structured project management methodology widely recognized internationally. It is particularly known for its focus on process-driven project management, which divides projects into manageable and controllable stages. PRINCE2 emphasizes a high level of organization and control over all aspects of the project, from initiation to closure, and is adaptable to a wide range of project types and sizes. Its widespread recognition and use, particularly in the UK and Europe, make it a valuable skill set for project managers seeking a formal, process-oriented approach to project management.</span>
+</div>
+
+
+### for Research Team Members
+
+There are also specific courses and programs dedicated to managing research projects. These courses and tools are specifically designed to help researchers effectively manage their projects, ensuring successful outcomes in their scientific endeavors.
+
+* Harvard Catalyst offers a course titled <a href="https://catalyst.harvard.edu/courses/pm-strategies/" target="_blank">"Project Management Strategies for Research Team Members"</a>. This webinar series covers the foundational principles of project management and explores how these principles can be applied in various research contexts.
+
+* UC San Diego Extension provides a course called <a href="https://extendedstudies.ucsd.edu/courses-and-programs/project-management-within-a-scientific-research-environment" target="_blank">"Project Management within a Scientific/Research Environment"</a>. This course focuses on the application of project management and leadership principles specifically in the biotech/pharma sector. It includes real-life examples of leadership best practices and management strategies.
+
+* The Center for Clinical and Translational Science (CCTS) at Ohio State University offers a toolkit titled <a href="https://ccts.osu.edu/content/project-management-research" target="_blank">"Project Management for Research"</a>. This toolkit provides various tools for managing research projects, including recommendations for general project management software and tools to help manage activities from grant writing to project closeout
 
 ___
 # Further Reading
