@@ -99,7 +99,6 @@ There are also specific courses and programs dedicated to managing research proj
 <table><tr>
 <td style="border: transparent; vertical-align: top; font-size: 21px;">
 Several general trends are shaping the future of project management, particularly in the context of research and development. These trends reflect a broader shift towards more dynamic, flexible, and responsive project management practices due to evolving technologies, methodologies, and cultural shifts in the workplace.
-
 </td>
 <td width=400 style="border: transparent;"><img width="800" src="../assets/images/01-project_management_trends.png"></td>
 </tr></table>
@@ -136,6 +135,11 @@ The use of artificial intelligence and automation in project management is on th
 Big data and analytics are being increasingly integrated into project management to provide deeper insights into performance, trends, and risks.
 
 
+\* sources:
+<br>- <a href="https://www.pmi.org/learning/thought-leadership/pulse" target="_blank">Pulse of the Profession by PMI  ⤴</a>
+<br>- <a href="https://www.gartner.com/en/insights" target="_blank">Business Insights & Trends by Gartner  ⤴</a>
+<br>- <a href="https://www.sciencedirect.com/journal/international-journal-of-project-management" target="_blank">International Journal of Project Management  ⤴</a>
+
 ### The role of Data Science
 
 Current and future trends in research project management suggest a growing role for data science, especially in decision-making processes. Data science is not only enhancing the efficiency and effectiveness of research project management but is also paving the way for more predictive, proactive, and personalized management approaches. This trend is likely to continue and evolve, as more sophisticated data analysis tools and techniques become available.
@@ -156,6 +160,13 @@ Data science can optimize the allocation and utilization of resources in researc
 
 * **Personalization and Customization** <br>
 In future, data science could enable more personalized project management approaches, where `strategies and tools are tailored to the specific characteristics` of each project and team.
+
+
+\* sources:
+<br>- <a href="https://www.pmi.org/learning/thought-leadership/pulse" target="_blank">Pulse of the Profession by PMI  ⤴</a>
+<br>- <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=data%20science%20in%20project%20management" target="_blank">IEEE Xplore  ⤴</a>
+<br>- <a href="https://jds-online.org/journal/JDS" target="_blank">Journal of Data Science  ⤴</a>
+
 
 ___
 # Further Reading
