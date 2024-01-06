@@ -834,7 +834,7 @@ Diversify funding sources and maintain a reserve fund.
 </details>
 <br>
 <b>3. RISK: Unforeseen Technological Obsolescence</b><br>
-- <b>Adaptability Challenge:</b> ow would you handle this scenario, considering no initial strategy was in place for such a rapid technological change?
+- <b>Adaptability Challenge:</b> How would you handle this scenario, considering no initial strategy was in place for such a rapid technological change?
 <details><summary>solution</summary>
 
 - Quickly evaluate the new technology to understand its capabilities, benefits, and learning curve. Determine if and how it can enhance the project's outcomes.<br>
