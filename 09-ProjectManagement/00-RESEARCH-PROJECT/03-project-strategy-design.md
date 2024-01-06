@@ -682,7 +682,7 @@ Develop a predictive model for chemotherapy effectiveness based on patients' gen
 
 <div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px;">
 <span style="color: #ff3870; font-weight: 400; font-size: 22px;">Excercise</span>
-<br><span style="font-style:italic;">Recall that inventive list of potential risks you identified for our bioinformatics project? Your next challenge is to come up with robust mitigation and contingency strategies for each of those risks. <b>Try your problem-solving skills!</b></b><br>
+<br><span style="font-style:italic;">Recall that inventive list of potential risks you identified for our bioinformatics project? Your next challenge is to come up with robust mitigation and contingency strategies for each of those risks. <b>Try your problem-solving skills!</b><br>
 <b>PRO TIP: </b>Think about how you can prevent these scenarios from turning into disasters. Ask yourself: What steps can be taken now to reduce the likelihood or impact of these risks? And for those "just in case" moments, what are your backup plans?  </span>
 </div>
 
@@ -692,7 +692,6 @@ Develop a predictive model for chemotherapy effectiveness based on patients' gen
 *Schedule consistent check-ins to evaluate the project's progress against your plans, and meticulously document these reviews to track changes and decisions made along the way. Emphasize adaptability in your approach, being ready to modify your strategy and risk plans as new information and circumstances arise, ensuring your project remains agile and responsive to change.*
 
 ### 5.1 Regular Reviews & Documentation
-<br>
 
 **Monthly progress reviews and risk assessments**
 
@@ -729,6 +728,7 @@ Develop a predictive model for chemotherapy effectiveness based on patients' gen
 *For maintaining detailed records of project decisions and risk management actions in the bioinformatics project, an example documentation approach could look like this:*
 
 <details style="margin-bottom: 20px;"><summary><b>Project Documentation Example</b></summary>
+
 <div style="background-color: #e4f0f0; padding: 10px 10px;"">
 <b>1. Project Decisions Log:</b> <br>
 Date: January 15th <br>
@@ -853,7 +853,7 @@ Diversify funding sources and maintain a reserve fund.
 <br><span style="font-style:italic;">Engaging actively with funders, institutional partners, and the broader scientific community offers significant benefits for your project adaptability. Ongoing communication fosters transparency, builds trust, and facilitates the exchange of ideas and feedback, which can lead to improved project outcomes and potential collaborations. Moreover, this engagement keeps funding bodies informed, enhancing the visibility and impact of your research within the scientific ecosystem and beyond.</span>
 </div>
 
-<span style="color: #ff3870;font-weight: 500;">As a final note...</span><br>
+<br><span style="color: #ff3870;font-weight: 500;">As a final note...</span><br>
 ...remember to periodically cycle through these five steps of project strategy and risk management to keep your project on the path to success. Regular revisits will ensure that your project adapts to new developments and stays aligned with your goals.
 
 *Best of luck to all small-scale research project managers – your strategic planning and risk management efforts are key to turning your innovative ideas into successful outcomes! ~Alex*
