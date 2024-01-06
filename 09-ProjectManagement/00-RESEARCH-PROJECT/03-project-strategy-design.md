@@ -383,19 +383,480 @@ Exploring failed projects in real-life due to poor risk management can provide v
 [<a href="https://scholarworks.lib.csusb.edu/cgi/viewcontent.cgi?referer=&httpsredir=1&article=1132&context=ciima" target="_blank">source: International Information Management Association  ⤴</a>]
 </div>
 
-<!--
-# Additional Resources
 
-## Future Trends in Research Project Management
+<br>
+---
 
-### Legal & Compliance
+# Hands-on Case Study: Project Strategy and Risk Management
 
-### Ethical Considerations
+We'll walk through a realistic example of a research project in bioinformatics to demonstrate the practical applicability and benefits of having a robust project strategy and risk management plan. This example will highlight how these critical components guide a research project's successful execution and help navigate potential challenges in the scientific endeavors.
 
-## Networking Opportunities
+## 1. Project Overview
 
-## Recommended Readings
--->
+**PROJECT TITLE:** Genomic Analysis for Breast Cancer Treatment Personalization <br>
+**FIELD:** Bioinformatics / Personalized Medicine
+
+**BACKGROUND:** <br>
+The project involves analyzing genomic data to **identify genetic markers associated with breast cancer**, particularly aiming to **understand the variability in response to chemotherapy**. The goal is to contribute to the field of personalized medicine, where treatments are tailored to the individual's genetic makeup. The bioinformatics team will use large datasets from public genomic databases [X, Y, Z] and collaborate with medical institutions [X, Y, Z] for clinical data.
+
+
+## 2. Project Strategy
+
+*Once you have established the general idea and background of your research project, the next crucial step is to develop a comprehensive project strategy. This strategy should dissect your project into distinct components, allowing you to thoroughly assess its strengths and weaknesses, as well as accurately determine the resources required for successful execution. This strategic planning forms the foundation for guiding your project towards its objectives efficiently and effectively.*
+
+
+<details>
+<summary><b>Example Project Strategy</b></summary>
+
+<table>
+<tr> <td>1.</td> <td><b>Define Clear Objectives</b></td> <td>Notes</td> </tr>
+<tr> <td>A</td> <td>Identify genetic markers linked to breast cancer and chemotherapy response.</td> <td></td> </tr>
+<tr> <td>B</td> <td>
+Develop a predictive model for chemotherapy effectiveness based on patients' genetic profiles.</td> <td></td> </tr>
+<tr> <td>2.</td> <td><b>Scope Analysis</b></td> <td>Notes</td> </tr>
+<tr> <td>Data:</td> <td>Utilize public genomic databases such as the Genome Aggregation Database (gnomAD) and The Cancer Genome Atlas (TCGA).</td> <td></td> </tr>
+<tr> <td>Expertise:</td> <td>Collaborate with oncology departments to integrate findings into treatment plans.</td> <td></td> </tr>
+<tr> <td>3.</td> <td><b>Methodology Selection</b></td> <td>Notes</td> </tr>
+<tr> <td>Tools:</td> <td>Employ well-established bioinformatics tools for genomic data analysis.</td> <td></td> </tr>
+<tr> <td>Models:</td> <td>Employ machine learning algorithms for predictive modeling.</td> <td></td> </tr>
+<tr> <td>Validation:</td> <td>Validate models with real-world clinical data.</td> <td></td> </tr>
+<tr> <td>4.</td> <td><b>Resource Allocation</b></td> <td>Notes</td> </tr>
+<tr> <td>Workforce:</td> <td>Allocate tasks to bioinformatics experts, then pass on to data scientists and software developers.</td> <td></td> </tr>
+<tr> <td>Funding:</td> <td>Budget for software, database access, HPC computing and potential travel for collaborations.</td> <td></td> </tr>
+<tr> <td>Computing Power:</td> <td>Schedule computing and request storage on university HPC.</td> <td></td> </tr>
+<tr> <td>5.</td> <td><b>Timeline Development</b></td> <td>Notes</td> </tr>
+<tr> <td></td> <td>Set milestones for data collection, analysis, model development, and validation phases.</td> <td></td> </tr>
+<tr> <td></td> <td>Plan for publication submission within two years.</td> <td></td> </tr>
+<tr> <td>6.</td> <td><b>Execution Plan</b></td> <td>Notes</td> </tr>
+<tr> <td></td> <td>Systematic data analysis followed by model development.</td> <td></td> </tr>
+<tr> <td></td> <td>Regular meetings with clinical partners for model validation.</td> <td></td> </tr>
+<tr> <td>7.</td> <td><b>Identifying Bottlenecks</b></td> <td>Notes</td> </tr>
+<tr> <td></td> <td>Anticipate delays in data access or processing.</td> <td></td> </tr>
+<tr> <td></td> <td>Prepare for potential hold-ups in collaboration or ethical approvals.</td> <td></td> </tr>
+<tr> <td>8.</td> <td><b>Monitoring and Control</b></td> <td>Notes</td> </tr>
+<tr> <td></td> <td>Regular progress reviews against milestones.</td> <td></td> </tr>
+<tr> <td></td> <td>Adapt project plans based on ongoing risk assessments.</td> <td></td> </tr>
+<tr> <td>9.</td> <td><b>Collaboration</b></td> <td>Notes</td> </tr>
+<tr> <td></td> <td>Partner with the oncology departments of institutions like Johns Hopkins University and the Mayo Clinic for clinical insights and validation.</td> <td>- Engage with clinical partners for data validation and model integration. <br>- Foster communication between research and clinical teams.</td> </tr>
+<tr> <td>10.</td> <td><b>Compliance and Ethics</b></td> <td>Notes</td> </tr>
+<tr> <td></td> <td>Ensure adherence to data privacy laws.</td> <td>TODO by Feb 2024</td> </tr>
+<tr> <td></td> <td>Obtain necessary ethical approvals for data usage.</td> <td>DONE (Dec 2023)</td> </tr>
+<tr> <td>11.</td> <td><b>Review and Publication</b></td> <td>Notes</td> </tr>
+<tr> <td></td> <td>Peer review of findings by team and external experts.</td> <td></td> </tr>
+<tr> <td></td> <td>Prepare and submit findings to a relevant scientific journal.</td> <td>options include: <br>- Nature Genetics <br>- The Lancet Oncology, <br>- Cancer Research</td> </tr>
+</table>
+</details>
+
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; margin-top: 20px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">1. Filling in all relevant sections of your project strategy plan offers a holistic view of your project, ensuring that every critical aspect is considered and addressed. <br>
+2. Remember, this plan is subjective and flexible; don't hesitate to add more sections tailored to the unique needs of your project. <br>
+3. Having a well-thought-out strategy plan can be especially beneficial when writing grant proposals, as it demonstrates a clear well-organized vision of your project.</span>
+</div>
+
+
+## 3. Aligning Project with Research Agenda
+
+*With your Strategy Plan in hand, you can effectively align your project with the broader research agenda by following these five steps:*
+* *systematically review relevant literature,*
+* *adhere to funding body guidelines,*
+* *consult with domain experts and collaborators,*
+* *stay responsive to new findings and software releases,*
+* *adapt changes in your project, ensuring your strategy remains dynamic and up-to-date*
+
+***This proactive approach ensures your project's relevance and adaptability with the evolving landscape of your field.***
+
+* *Dive into current scientific literature to ensure your project addresses existing knowledge gaps and aligns with the latest research trends.*
+
+|1. |Conduct a thorough literature review| Notes|
+|-|-|-|
+||*In aligning the Genomic Analysis for Breast Cancer Treatment Personalization project with existing literature, a thorough review of current research in genomic data analysis, breast cancer genetics, and personalized medicine is conducted. This review ensures the project's objectives and methodologies are in line with the latest scientific advancements and gaps identified in the field. By referencing and building upon established studies, the project positions itself to contribute meaningful and novel insights to the evolving landscape of cancer treatment and genomic medicine.*||
+
+* *Review and align your project objectives with the guidelines and priorities of potential funding bodies, ensuring that your project meets their criteria and interests.*
+
+|2. |Align project goals with funding body guidelines| Notes |
+|-|-|-|
+||To align the project goals with funding body guidelines, we specifically tailored our objectives to meet the criteria of the National Institutes of Health (NIH) Genomic Data Science grant. The NIH emphasizes innovative approaches to genomic data analysis and its application in personalized medicine, a key focus of our project. ||
+
+* *Engage with experts and collaborators in your field for valuable insights and validation of your project's direction and methodologies.*
+
+|3. |Seek consultation from experienced peers| Notes |
+|-|-|-|
+||Consultation with experienced peers in the fields of genomics and oncology has yielded valuable advice for the project: Incorporating a multi-disciplinary approach by `involving experts in pharmacogenomics` could significantly enhance the predictive model's accuracy for chemotherapy effectiveness. Additionally, peers emphasized the `importance of considering the ethical implications` of genomic data usage, suggesting collaboration with bioethicists to navigate this complex area.|TODO: find pharmacogenomics collaborator|
+
+* *Stay attuned to new developments such as the release of groundbreaking studies, innovative software, or the availability of new data sources, and adjust your project strategy accordingly.*
+
+|4. |Explore collaborative opportunities| Notes |
+|-|-|-|
+||In response to the advice from experienced peers, we found new partnership with a renowned team at the Stanford University School of Medicine, known for their cutting-edge work in pharmacogenomics, to refine and elevate the accuracy of our chemotherapy effectiveness model. Simultaneously, we established a collaboration with bioethics experts from Harvard Medical School, leveraging their expertise to meticulously address and navigate the ethical dimensions of genomic data utilization in our research.||
+
+* *Regularly update your strategy to reflect the latest research findings, ensuring that your project remains relevant and cutting-edge.*
+
+|5. |Maintain adaptability due to changes along the route | Notes |
+|-|-|-|
+||The initiation of a new collaboration with pharmacogenomics experts led to a `significant shift in our research focus`. Guided by their specialized knowledge, we honed in on exploring the interaction between genetic markers and specific chemotherapeutic agents, aiming to develop more targeted treatment protocols.||
+
+<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px;">
+<span style="color: #ff3870; font-weight: 400; font-size: 22px;">Excercise</span>
+<br><span style="font-style:italic;">Time to put on your project manager hat! <br>
+<b>Your task:</b> Tweak the background story and project strategy to reflect these new dimensions discussed in "Aligning Project with Research Agenda" steps. <br>
+<b>PRO TIP:</b> Think about new research findings, the latest tech in bioinformatics, or fresh insights from new project collaborations. Flex your creative muscles and reshape the strategy to reflect these changes! </span>
+</div>
+
+## 4. Risk Management
+
+*Now is the time to identify, assess, and mitigate risks to your project. This crucial step not only allows for strategic adjustments to preemptively address potential issues but also prepares you with ready solutions, ensuring smooth project progress even when unforeseen challenges arise in the future.*
+
+### 4.1 Identifying Potential Risks
+
+*Considering the subject matter of our example bioinformatics project, we can identify at least a few risks, such as:*
+- Data Privacy and Security Risks with genomic data.
+- Potential issues with access to data or data loss.
+- Funding Risks from reliance on research grants.
+- Technological Risks due to rapid changes in bioinformatics software.
+- Collaboration Risks with external healthcare institutions.
+
+*Coming up with all the potential risks can indeed be a daunting task. To ease this process, utilizing a template with examples across various categories can be immensely helpful. This not only gives you a starting point but also allows you to add your specific risks or draw inspiration from other templates.*
+
+<details style="margin-left: 37px; margin-bottom: 20px;">
+<summary><b>Example Risks Checklist</b></summary>
+
+<table>
+    <tr>
+        <td></td>
+        <td><b>Risk Category</b></td>
+        <td width=400><b>Your Notes</b></td>
+    </tr>
+    <tr><td>1.</td><td><b>Funding and Budget Risks</b></td><td></td></tr>
+    <tr><td></td><td>Unexpected budget cuts</td><td>Funding Risks from reliance on research grants.</td></tr>
+    <tr><td></td><td>Inadequate funding</td><td></td></tr>
+    <tr><td></td><td>Fluctuations in currency</td><td>NO, all grant applications are in US $</td></tr>
+    <tr><td></td><td>Misalignment in budget allocation</td><td></td></tr>
+    <tr><td>2.</td><td><b>Resource and Personnel Risks</b></td><td></td></tr>
+    <tr><td></td><td>Shortages of skilled personnel</td><td>software developer's tight schedule</td></tr>
+    <tr><td></td><td>High turnover</td><td></td></tr>
+    <tr><td></td><td>Inadequate training</td><td></td></tr>
+    <tr><td></td><td>Team conflicts</td><td>Collaboration risks with external healthcare institutions.</td></tr>
+    <tr><td>3.</td><td><b>Technical and Technology Risks</b></td><td></td></tr>
+    <tr><td></td><td>Equipment malfunction</td><td>NO</td></tr>
+    <tr><td></td><td>Software failure</td><td>YES</td></tr>
+    <tr><td></td><td>Lack of technical support</td><td></td></tr>
+    <tr><td></td><td>Technology obsolescence</td><td>Rapid changes in bioinformatics software.</td></tr>
+    <tr><td>4.</td><td><b>Regulatory and Compliance Risks</b></td><td></td></tr>
+    <tr><td></td><td>Changes in regulations</td><td>YES</td></tr>
+    <tr><td></td><td>Non-compliance with ethics</td><td>YES</td></tr>
+    <tr><td></td><td>Intellectual property disputes</td><td>YES</td></tr>
+    <tr><td></td><td>Data breaches</td><td>YES</td></tr>
+    <tr><td>5.</td><td><b>Project Management and Operational Risks</b></td><td></td></tr>
+    <tr><td></td><td>Inadequate planning</td><td></td></tr>
+    <tr><td></td><td>Scope creep</td><td></td></tr>
+    <tr><td></td><td>Inefficient communication</td><td>Collaboration risks with external healthcare institutions.</td></tr>
+    <tr><td></td><td>Poor risk management</td><td></td></tr>
+    <tr><td>6.</td><td><b>External Risks</b></td><td></td></tr>
+    <tr><td></td><td>Political/economic changes</td><td></td></tr>
+    <tr><td></td><td>Natural disasters</td><td></td></tr>
+    <tr><td></td><td>Market changes</td><td></td></tr>
+    <tr><td></td><td>Shifting stakeholder expectations</td><td></td></tr>
+    <tr><td>7.</td><td><b>Data and Research-Specific Risks</b></td><td></td></tr>
+    <tr><td></td><td>Data collection issues</td><td>data quality, data loss</td></tr>
+    <tr><td></td><td>Access to data/materials</td><td>Data Privacy and Security Risks with genomic data.</td></tr>
+    <tr><td></td><td>Non-replicable results</td><td></td></tr>
+    <tr><td></td><td>Delays in research approvals</td><td></td></tr>
+</table>
+</details>
+
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">1. Note that the additional "Notes" column in your strategy plan and risks checklist can be particularly useful for adding comments and observations over time. <br>2. I suggest maintaining both documents in an electronic format, such as a Word document or Excel spreadsheet. This approach enables seamless updates and documentation of changes, making it easier to track the evolution of your strategy and risk management efforts throughout the project's lifecycle.</span>
+</div>
+
+<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px;">
+<span style="color: #ff3870; font-weight: 400; font-size: 22px;">Excercise</span>
+<br><span style="font-style:italic;">Now, your mission is to brainstorm and propose additional potential risks that our bioinformatics project might face – ones that weren’t listed in the template checklist. <b> This exercise will sharpen your risk identification skills!</b><br>
+<b>PRO TIP: </b>Think outside the box: what other challenges could pop up? Consider everything from sudden changes in research regulations to unexpected shifts in technological trends, or even collaboration hiccups. Jot down these new risks and ponder how they might impact the project.  </span>
+</div>
+
+
+### 4.2 Risk Assessment
+
+*Indeed, merely listing the risks is not enough; it's akin to being aware of impending rain but not having an umbrella. Just as rain can vary in intensity, risks too can range from mild inconveniences to major threats. Therefore, conducting a thorough risk assessment is crucial to understand the severity and likelihood of each risk.*
+
+*This process will equip you with the necessary insights to develop tailored strategies for handling specific scenarios, ensuring you're well-prepared for any eventuality in your project.*
+
+
+<b>Let's assess two risks:</b>
+1. Data Privacy and Security Concerns
+2. Project Delays Due to Technological Challenges
+
+*We'll conduct a `qualitative assessment` for the first risk to leverage expert insights and team perspectives for a deeper understanding, and a `quantitative assessment` for the second risk to numerically evaluate its potential impact on the project timeline.*
+
+**1. Hands-On Qualitative Assessment of Data Privacy and Security Concerns**
+
+* **Brainstorm with Team** *(a session where team members discuss potential data breach scenarios)*
+  * The team identifies the risk of unauthorized access during data transfer as a high-impact concern.
+
+
+* **Expert Consultation** *(consult with a data security expert to gauge the risk severity )*
+  * The security expert emphasizes the need for encrypted data transfer protocols.
+
+<br>
+
+**2. Hands-On Quantitative Assessment of Project Delays Due to Technological Challenges**
+
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">Gantt Chart</span>
+<br><span style="font-style:italic;">A Gantt chart is a visual project management tool that outlines a project schedule, depicting the start and end dates of various elements of a project, such as tasks, milestones, and dependencies, in a clear, horizontal bar chart format.</span>
+</div>
+
+* **Gantt Chart Analysis**
+  * Develop a Gantt chart to visually map the project timeline, including data analysis phases, software usage, and milestone reviews.
+  * **timeline specifications:**
+    * the "Major Data Analysis Phase" is scheduled from the start date for a duration of three months
+    * the "Bioinformatics Tool Release" is predicted between March and May
+    * the risk of software malfunction could lead to a two-month delay in project milestones with the probability of 30% estimated based on past experiences.
+
+
+*To create a Gantt chart that illustrates this scenario, we need to include:* <br>
+*-The time frame for implementing the new bioinformatics tool.* <br>
+*-The time frame for the major data analysis phase.* <br>
+*-An indication of the potential delay due to software malfunction, along with its probability.*
+
+<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">WARNING:</span>
+<br><span style="font-style:italic;">Since Gantt charts typically don't include probabilities directly, I will represent the potential delay as a separate, conditional phase in the project timeline, highlighting its uncertain nature.</span>
+</div>
+
+![Gantt Chart](../assets/images/01-project_gantt_chart.png)
+
+*The Gantt chart shows that implementing a new bioinformatics tool is scheduled concurrently with a major data analysis phase. The risk of software malfunction could lead to a two-month delay in project milestones.*
+
+<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px;">
+<span style="color: #ff3870; font-weight: 400; font-size: 22px;">Excercise</span>
+<br><span style="font-style:italic;">Take a close look at the Gantt chart we've developed, focusing on the overlap between the implementation of the new bioinformatics tool and the major data analysis phase. Your task is to interpret this chart and assess the severity of the risk. Based on your assessment, propose solutions to either mitigate this risk or adjust the project timeline. <b>This exercise will help you enhance your skills in risk analysis and strategic planning.</b><br>
+<b>PRO TIP: </b>Consider factors like the duration of overlap and the dependencies of subsequent tasks. Think creatively about backup plans, resource reallocation, or alternative methodologies that could safeguard the project against potential delays. </span>
+
+<details><summary>solution</summary>
+
+- Having both risks – software malfunction and the implementation of a new tool – overlapping with the major data analysis phase elevates the seriousness of this risk in our assessment. This scenario necessitates prioritizing the mitigation strategy for these risks to prevent significant project delays. <br>
+- Alternatively, if mitigating the risk isn't feasible, it may be necessary to reassess and set a new, more realistic deadline for this phase of the project to accommodate potential setbacks. <br>
+</details>
+</div>
+
+
+### 4.3 Risk Mitigation/Contingency Plan
+
+*The next vital step is to create a Risk Mitigation/Contingency Plan. For each identified risk, develop immediate action plans to mitigate them, and for potential risks, establish "if-then" contingency strategies. This proactive approach ensures you're not just prepared for current challenges, but also equipped with pre-planned solutions for potential future obstacles, keeping your project on track regardless of the circumstances.*
+
+**IDENTIFIED RISKS**
+
+| risk | mitigation strategy | project stage | status | notes |
+|------|---------------------|---------------|--------|-------|
+|Data Privacy and Security Risks with genomic data| Enforce data encryption and access controls.| from beginning | TODO | Jan 2024: delegated implementation to Joe Walker |
+|Funding risks from reliance on research grants   | Apply for grants from multiple sources and maintain a reserve fund | from beginning | DONE | Jun 2023 applied for X, Y, Z |
+|Technological Risks due to rapid changes in bioinformatics software| Regularly update team training on new bioinformatics software: <br>- databases: John Smith <br>- software: Amy Brown | all time | in progress | quarterly workshops (Jan, Apr, Jul, Oct) |
+|Collaboration Risks with external healthcare institutions | Establish clear data sharing and publication agreements with collaborators | from beginning | OPEN | - Oct 2023: data sharing established using Globus endpoints; <br>- Oct 2023: publication agreement with Mayo Clinic |
+|Potential data loss | Schedule automatic weekly data backup: <br>1) external hard drive <br>2) HPC long-term storage | from beginning | implemented | NOTE: check logs after each backup |
+|Potential software failure | Create separate containers for each software update. | all time | implemented | Jan 2024: set weekly remainder for all team members |
+
+**POTENTIAL RISKS**
+
+| risk | contingency strategy | project stage | status | notes |
+|------|----------------------|---------------|--------|-------|
+|Funding risks from reliance on research grants | In case of funding cuts, focus on key objectives and explore alternative funding. |  |  |  |
+|Potential software limitations | - contact directly software developers <br>- move tasks to free Joe's schedule who will implement a missing feature| | | |
+|Potential hardware failure     | - quick contact to the IT department: xxx@it-miracle <br>- agreed emergency use a collaborator's HPC |
+
+**UNFORSEEN RISKS**
+
+*Tackling unforeseen obstacles in real-time is key, and it's important to acknowledge and be proud of the many risks you've already mitigated through your strategic planning and contingency solutions.*
+
+<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">WARNING:</span>
+<br><span style="font-style:italic;">Even the best plans can encounter unexpected challenges. If something major arises that wasn't predicted as a risk, remember that it's a natural part of project management.</span>
+</div>
+
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">Each unexpected challenge is a learning opportunity, and the insights gained from these experiences become the bedrock of success in your future projects. Embrace these moments as valuable steps in your journey towards mastery in project management.</span>
+</div>
+
+<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px;">
+<span style="color: #ff3870; font-weight: 400; font-size: 22px;">Excercise</span>
+<br><span style="font-style:italic;">Recall that inventive list of potential risks you identified for our bioinformatics project? Your next challenge is to come up with robust mitigation and contingency strategies for each of those risks. <b>Try your problem-solving skills!</b></b><br>
+<b>PRO TIP: </b>Think about how you can prevent these scenarios from turning into disasters. Ask yourself: What steps can be taken now to reduce the likelihood or impact of these risks? And for those "just in case" moments, what are your backup plans?  </span>
+</div>
+
+
+## 5. Monitoring and Adjustment
+
+*Schedule consistent check-ins to evaluate the project's progress against your plans, and meticulously document these reviews to track changes and decisions made along the way. Emphasize adaptability in your approach, being ready to modify your strategy and risk plans as new information and circumstances arise, ensuring your project remains agile and responsive to change.*
+
+### 5.1 Regular Reviews & Documentation
+<br>
+
+**Monthly progress reviews and risk assessments**
+
+*This table provides a structured format for tracking the project's monthly progress and assessing associated risks, ensuring continuous monitoring and proactive management of the project.*
+
+<table>
+    <tr><th>Month</th><th>Progress Review</th><th>Risk Assessment</th></tr>
+    <tr><td>January</td>
+        <td>Initiated data collection from TCGA; Team training on latest bioinformatics software.</td>
+        <td>Data privacy protocols established; Funding sources confirmed.</td>
+    </tr>
+    <tr><td>February</td>
+        <td>Completed preliminary data analysis; First collaboration meeting with pharmacogenomics experts.</td>
+        <td>Reviewed potential technological risks; Initiated backup plans for data storage.</td>
+    </tr>
+    <tr><td>March</td>
+        <td>Developed initial predictive model; Prepared for data validation with clinical partners.</td>
+        <td>Assessed risks in model accuracy; Planned for additional expert consultations.</td>
+    </tr>
+    <tr><td>April</td>
+        <td>Conducted validation tests; Refined predictive model based on initial feedback.</td>
+        <td>Monitored for any collaboration challenges; Ensured alignment with ethical standards.</td>
+    </tr>
+    <tr><td>May</td>
+        <td>Integration of model with clinical data underway; Preparing for mid-project review.</td>
+        <td>Reassessed funding stability; Checked on resource allocation efficiency.</td>
+    </tr>
+    <tr><td>June</td><td></td><td></td></tr>
+</table>
+
+
+**Maintain detailed records of project decisions and risk management actions**
+
+*For maintaining detailed records of project decisions and risk management actions in the bioinformatics project, an example documentation approach could look like this:*
+
+<details style="margin-bottom: 20px;"><summary><b>Project Documentation Example</b></summary>
+<div style="background-color: #e4f0f0; padding: 10px 10px;"">
+<b>1. Project Decisions Log:</b> <br>
+Date: January 15th <br>
+Decision: To commence data collection from TCGA. <br>
+Rationale: TCGA offers comprehensive genomic data which is crucial for our analysis. <br>
+Impact: Sets the foundation for the project's data analysis phase. <br> <br>
+<b>2. Risk Management Actions Log:</b> <br>
+Date: February 10th <br>
+Risk Identified: Potential technological challenges with bioinformatics software [X]. <br>
+Action Taken: Initiated a backup plan with alternative software options [Y or Z]. <br>
+Outcome: Reduced the risk of project delays due to software issues. <br> <br>
+<b>3. Monthly Progress Review Record:</b> <br>
+Month: March <br>
+Key Achievements: Developed the initial predictive model. <br>
+Challenges Faced: Needed more expert consultations to refine the model. <br>
+Next Steps: Schedule additional meetings with pharmacogenomics experts. <br> <br>
+<b>4. Collaboration Log:</b> <br>
+Date: April 8th <br>
+Collaboration Established: With Stanford University School of Medicine for pharmacogenomic expertise. <br>
+Purpose: To enhance the accuracy of the predictive model. <br>
+Expected Contribution: Expert advice on drug-gene interactions. <br> <br>
+<b>5. Ethical Compliance Record:</b> <br>
+Date: May 22nd <br>
+Compliance Check: Reviewed data privacy protocols and ethical standards. <br>
+Status: All protocols meet the current legal and ethical guidelines.
+</div>
+</details>
+
+*These records provide a detailed and chronological account of the key decisions, actions, and progress of the project. This approach not only ensures transparency and accountability but also serves as a valuable reference for future projects, audits, or evaluations.*
+
+**Capture lessons learned for future projects**
+
+*These examples provide insightful reflections on the project's challenges and successes, offering valuable guidelines for improving practices and decision-making in future research projects.*
+
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">Importance of Data Security and Compliance</span><br>
+<br><b>Lesson Learned: </b><span style="font-style:italic;">Rigorous data privacy protocols are essential when handling sensitive genomic data. This project highlighted the importance of establishing strong data encryption and access control measures from the outset.</span><br>
+<br><b>Application for Future Projects: </b><span style="font-style:italic;">In future projects, allocate sufficient resources and time for setting up comprehensive data security measures, and consider involving a data security specialist during the planning phase.</span>
+</div>
+
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">Effective Collaboration with External Experts</span><br>
+<br><b>Lesson Learned: </b><span style="font-style:italic;">Collaborating with pharmacogenomics experts and bioethicists significantly enhanced the project's scope and quality. However, coordinating schedules and aligning objectives required more effort than anticipated.</span><br>
+<br><b>Application for Future Projects: </b><span style="font-style:italic;">Future projects should include a detailed collaboration plan with clear communication channels, defined roles, and regular update meetings. Building in extra time for collaboration-related activities is also advisable.</span>
+</div>
+
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">Adaptability in Research Methodology</span><br>
+<br><b>Lesson Learned: </b><span style="font-style:italic;">The project's shift to focus on a specific subset of breast cancer types due to new findings and expert advice proved valuable. It emphasized the need for adaptability in research objectives and methodologies.</span><br>
+<br><b>Application for Future Projects: </b><span style="font-style:italic;">Remain flexible and open to changing research directions based on emerging data and expert consultations. Regularly scheduled reviews should include reassessments of the project's direction and methodology.</span>
+</div>
+
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">1. The best approach to collecting and organizing lessons learned for easy retrieval and searchability is to maintain a structured digital document, such as a spreadsheet or a database, where each entry follows a consistent format. <br><br>2. Include fields such as "Project Name", "Date", "Lesson Learned", "Impact", and "Keywords". This structure allows you to categorize and search lessons by specific themes or keywords. For instance, an entry might have a keyword like "data security" or "collaboration". <br><br>* Regularly updating this document and reviewing it at the start of each new project can provide invaluable insights. By maintaining this disciplined approach, you create a personalized and evolving knowledge base.</span>
+</div>
+
+### 5.2 Adaptability
+
+*For our example "Genomic Analysis for Breast Cancer Treatment Personalization" project, here are examples of how adaptability was applied to address two identified risks:*
+
+**1. RISK: Potential Data Loss**
+
+* **Original Mitigation Strategy:** <br>
+Schedule automatic weekly data backups to an external hard drive and High-Performance Computing (HPC) long-term storage.
+
+* **Adaptability in Action:** <br>
+Midway through the project, cloud-based storage solutions advanced significantly, offering enhanced security features. The project team adapted by integrating an additional layer of data backup using a secure cloud service.
+
+* **Benefit** <br>
+This not only provided an extra safety net for data but also facilitated easier access for remote team members.
+
+<br>
+
+**2. RISK: Potential Hardware Failure**
+
+* **Original Contingency Strategy:** <br>
+Established quick contact with the IT department (xxx@it-miracle) and agreed upon emergency use of a collaborator's HPC.
+
+* **Adaptability in Action:** <br>
+When a major hardware failure occurred, the team swiftly contacted the IT department. However, due to the extensive nature of the failure, the repair timeline was longer than expected. Utilizing the pre-established agreement, the team promptly shifted their computational workload to the collaborator's HPC, ensuring minimal downtime.
+
+* **Benefit** <br>
+The incident led to a review of hardware dependencies, resulting in an investment in additional computational resources to diversify the risk in the future.
+
+*These examples demonstrate how the project team's ability to adapt to new solutions and unforeseen circumstances helped in effectively managing risks, ensuring the project's continuity and success.*
+
+<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px;">
+<span style="color: #ff3870; font-weight: 400; font-size: 22px;">Excercise</span>
+<br><span style="font-style:italic;">Here are three example risks for the bioinformatics project that serve as an exercise for you to come up with "Adaptability in Action" responses. These scenarios are designed to encourage critical thinking and strategic adaptability in response to evolving challenges within the project.</span><br><br>
+<b>1. RISK: Delay in Data Acquisition</b><br>
+- <b>Adaptability Challenge:</b> What would be your adaptive response if your data providers face delays due to a new international data regulation?
+<details><summary>solution</summary>
+
+Establish agreements with multiple data providers to ensure timely data acquisition.
+</details>
+<br>
+<b>2. RISK: Inadequate Funding Mid-Project</b><br>
+- <b>Adaptability Challenge:</b> How would you adapt if the reserve fund is depleted and additional funding sources become unavailable due to an economic downturn?
+<details><summary>solution</summary>
+
+Diversify funding sources and maintain a reserve fund.
+</details>
+<br>
+<b>3. RISK: Unforeseen Technological Obsolescence</b><br>
+- <b>Adaptability Challenge:</b> ow would you handle this scenario, considering no initial strategy was in place for such a rapid technological change?
+<details><summary>solution</summary>
+
+- Quickly evaluate the new technology to understand its capabilities, benefits, and learning curve. Determine if and how it can enhance the project's outcomes.<br>
+- Implement the new technology in phases. Start by integrating it into a small part of the project to test its efficacy and compatibility with existing data and methodologies. <br>
+- Incorporate the time required for training and transition into the project timeline, ensuring that deadlines are realistic given the technological shift.
+</details>
+</div>
+
+
+### 5.3 Engagement
+
+**Ongoing communication with funders, institutional partners, and the scientific community**
+
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">Engaging actively with funders, institutional partners, and the broader scientific community offers significant benefits for your project adaptability. Ongoing communication fosters transparency, builds trust, and facilitates the exchange of ideas and feedback, which can lead to improved project outcomes and potential collaborations. Moreover, this engagement keeps funding bodies informed, enhancing the visibility and impact of your research within the scientific ecosystem and beyond.</span>
+</div>
+
+<span style="color: #ff3870;font-weight: 500;">As a final note...</span><br>
+...remember to periodically cycle through these five steps of project strategy and risk management to keep your project on the path to success. Regular revisits will ensure that your project adapts to new developments and stays aligned with your goals.
+
+*Best of luck to all small-scale research project managers – your strategic planning and risk management efforts are key to turning your innovative ideas into successful outcomes! ~Alex*
 
 ___
 # Further Reading
