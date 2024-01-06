@@ -729,7 +729,7 @@ Develop a predictive model for chemotherapy effectiveness based on patients' gen
 
 <details style="margin-bottom: 20px;"><summary><b>Project Documentation Example</b></summary>
 
-<div style="background-color: #e4f0f0; padding: 10px 10px;"">
+<div style="background-color: #e4f0f0; padding: 10px 10px;">
 <b>1. Project Decisions Log:</b> <br>
 Date: January 15th <br>
 Decision: To commence data collection from TCGA. <br>
