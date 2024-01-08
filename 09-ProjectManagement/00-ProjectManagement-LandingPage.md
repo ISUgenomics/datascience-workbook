@@ -17,8 +17,8 @@ It is undeniable that good project management leads to improved reproducibility 
 
 ### **<a href="00-RESEARCH-PROJECT/01-project-management-overview" style="color: #24376b;">1. Introduction to Project Management</a>**
 * <a href="00-RESEARCH-PROJECT/02-intro-to-project-management" style="color: #24376b;">1.1 A Practical Guide to Managing a Research Project</a>
-* <b><a href="00-RESEARCH-PROJECT/03-project-strategy-design" style="color: #24376b;">1.2 Project Strategy & Design</a></b>
-  * <a href="00-RESEARCH-PROJECT/04-project-framework" style="color: #24376b;">1.2.1 Project Framework</a>
+* <b><a href="00-RESEARCH-PROJECT/03-project-strategy-design" style="color: #24376b;">1.2 Project Strategy & Risk Management</a></b>
+  * <a href="00-RESEARCH-PROJECT/04-project-framework" style="color: #24376b;">1.2.1 Project Design vs Project Framework</a>
 
 
 ### **<a href="01-COMMUNICATION/00-collaboration-communication" style="color: #24376b;">2. Collaboration & Communication</a>**
