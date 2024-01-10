@@ -169,7 +169,7 @@ In the intricate nature of research, the Project Framework acts as the essential
 | Agile Methodology | Waterfall Methodology |
 |-------------------|-----------------------|
 |Agile is all about flexibility and iterative progress. | Waterfall is a more linear and structured approach. |
-|<img width="500" src="../assets/images/01-project_framework_agile.png"> |<img width="500" src="../assets/images/01-project_framework_waterfall.png"> |
+|<img width="500" src="../assets/images/01-project_framework_agile.png"> |<img width="460" src="../assets/images/01-project_framework_waterfall.png"> |
 |Agile methodology is an `iterative` project management approach that emphasizes `continuous iteration and improvement`. It originated in software development but has since been applied to various types of projects. | Waterfall methodology is a `sequential` project management approach that emphasizes a linear progression through a set of `predefined phases`. It originated in manufacturing and construction and has been traditionally used in software development.|
 |Agile focuses on delivering small, workable segments of the project in an iterative manner, allowing for `regular reassessment` and adaptation. | This approach relies on detailed upfront planning, clear documentation, and a stable project scope, which allows for `minimal changes` once the project is underway.|
 | **AGILE STEPS** *(Scrum)* | **WATERFALL STEPS** |
