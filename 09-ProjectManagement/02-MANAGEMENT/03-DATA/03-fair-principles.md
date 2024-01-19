@@ -174,7 +174,7 @@ Leverage [tools](#resources-and-tools) like F-UJI or ARDC's FAIR Data Self Asses
 ___
 # Further Reading
 * [3.1.2 CARE Principles](02-care-principles)
-* [3.1.2 TRUST Principles](04-trust-principles)
+* [3.1.3 TRUST Principles](04-trust-principles)
 
 * [3.2 Code Management](../01-SOURCE-CODE/00-code-developments)
 * [3.3 Storage & Version Control](../01-SOURCE-CODE/01-storage-version-control)
