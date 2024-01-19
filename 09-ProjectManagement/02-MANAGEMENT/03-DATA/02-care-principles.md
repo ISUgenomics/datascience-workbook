@@ -1,8 +1,8 @@
 ---
 title: "CARE Principles"
 layout: single
-author:
-author_profile: false
+author: Aleksandra Badaczewska
+author_profile: true
 header:
   overlay_color: "444444"
   overlay_image: /09-ProjectManagement/assets/images/09_project_management_banner.png
@@ -106,7 +106,7 @@ When working on a project involving Indigenous communities' data, researchers sh
 
 ___
 # Further Reading
-* [3.1.2 FAIR Principles](03-fair-principles)
+* [3.1.2 TRUST Principles](04-trust-principles)
 
 * [3.2 Code Management](../01-SOURCE-CODE/00-code-developments)
 * [3.3 Storage & Version Control](../01-SOURCE-CODE/01-storage-version-control)
@@ -119,6 +119,6 @@ ___
 
 [Homepage](../../../index.md){: .btn  .btn--primary}
 [Section Index](../../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
-[Previous](01-data-management){: .btn  .btn--primary}
-[Next](03-fair-principles){: .btn  .btn--primary}
+[Previous](03-fair-principles){: .btn  .btn--primary}
+[Next](04-trust-principles){: .btn  .btn--primary}
 [top of page](#introduction){: .btn  .btn--primary}
