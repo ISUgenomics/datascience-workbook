@@ -31,6 +31,7 @@ It is undeniable that good project management leads to improved reproducibility 
   * <a href="02-MANAGEMENT/03-DATA/03-fair-principles" style="color: #3f5a8a;">3.1.1 FAIR Principles</a>
   * <a href="02-MANAGEMENT/03-DATA/02-care-principles" style="color: #3f5a8a;">3.1.2 CARE Principles</a>
   * <a href="02-MANAGEMENT/03-DATA/04-trust-principles" style="color: #3f5a8a;">3.1.3 TRUST Principles</a>
+  * <a href="02-MANAGEMENT/03-DATA/05-data-management-plan" style="color: #3f5a8a;">3.1.4 Data Management Plan <i>(hands-on)</i></a>
 * <b><a href="02-MANAGEMENT/01-SOURCE-CODE/00-code-developments" style="color: #24376b;">3.2 Code Management</a></b>
 * <b><a href="02-MANAGEMENT/01-SOURCE-CODE/01-storage-version-control" style="color: #24376b;">3.3 Storage & Version Control</a></b>
   * <a href="02-MANAGEMENT/01-SOURCE-CODE/02-intro-to-git" style="color: #3f5a8a;">3.3.1 GIT - a distributed version control system</a>

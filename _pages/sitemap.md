@@ -888,6 +888,11 @@ header:
     <a href="09-ProjectManagement/02-MANAGEMENT/03-DATA/04-trust-principles" style="color: #3f5a8a;">
     TRUST Principles</a></td></tr>
 
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;  
+    <a href="09-ProjectManagement/02-MANAGEMENT/03-DATA/05-data-management-plan" style="color: #3f5a8a;">
+    Data Management Plan <i>(hands-on)</i></a></td></tr>
+
   <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center;">INTRO</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
     <b><a href="09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/00-code-developments" style="color: #24376b;">

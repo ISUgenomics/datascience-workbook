@@ -10,10 +10,11 @@ header:
 
 {% include toc %}
 
-[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../../00-ProjectManagement-LandingPage.md) / [3. Resource Management](../00-intro-resource-management) / [3.1 Data Management](01-data-management) / **3.1.1 CARE Principles**
+[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../../00-ProjectManagement-LandingPage.md) / [3. Resource Management](../00-intro-resource-management) / [3.1 Data Management](01-data-management) / **3.1.2 CARE Principles**
 
 ---
 
+<span style="color: #ff3870;">Principles to ensure data management is centered on <b>C</b>ollective benefit, <b>A</b>uthority to control, <b>R</b>esponsibility, and <b>E</b>thics, especially in the context of Indigenous data sovereignty.</span>
 
 # Introduction
 
@@ -107,6 +108,7 @@ When working on a project involving Indigenous communities' data, researchers sh
 ___
 # Further Reading
 * [3.1.3 TRUST Principles](04-trust-principles)
+* [3.1.4 Data Management Plan (hands-on)](05-data-management-plan)
 
 * [3.2 Code Management](../01-SOURCE-CODE/00-code-developments)
 * [3.3 Storage & Version Control](../01-SOURCE-CODE/01-storage-version-control)

@@ -10,11 +10,11 @@ header:
 
 {% include toc %}
 
-[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../../00-ProjectManagement-LandingPage.md) / [3. Resource Management](../00-intro-resource-management) / [3.1 Data Management](01-data-management) / **3.1.2 FARE Principles**
+[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../../00-ProjectManagement-LandingPage.md) / [3. Resource Management](../00-intro-resource-management) / [3.1 Data Management](01-data-management) / **3.1.1 FAIR Principles**
 
 ---
 
-<span style="color: #ff3870;font-weight: 500;">Strategies to ensure data is Findable, Accessible, Interoperable, and Reusable.</span>
+<span style="color: #ff3870;font-weight: 500;">Strategies to ensure research data is <b>F</b>indable, <b>A</b>ccessible, <b>I</b>nteroperable, and <b>R</b>eusable.</span>
 
 # Introduction
 
@@ -139,7 +139,7 @@ The table below provides a quick overview of the key aspects of each tool, helpi
 
 ## Best Practices for FAIR Data Management
 
-Getting your data to play nice with the FAIR principles isn't just good science—it's smart science. Here’s how you can make your data more Findable, Accessible, Interoperable, and Reusable, and why it really pays off in the long run.
+Getting your data to play nice with the FAIR principles isn't just good science — it's smart science. Here’s how you can make your data more Findable, Accessible, Interoperable, and Reusable, and why it really pays off in the long run.
 
 ### Practical Steps to FAIRify Your Data
 
@@ -175,6 +175,7 @@ ___
 # Further Reading
 * [3.1.2 CARE Principles](02-care-principles)
 * [3.1.3 TRUST Principles](04-trust-principles)
+* [3.1.4 Data Management Plan (hands-on)](05-data-management-plan)
 
 * [3.2 Code Management](../01-SOURCE-CODE/00-code-developments)
 * [3.3 Storage & Version Control](../01-SOURCE-CODE/01-storage-version-control)
