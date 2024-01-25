@@ -17,6 +17,21 @@ header:
 
 <span style="color: #ff3870; font-weight: 600;">If you don't already have JupyterLab installed or you wish to use the SCINet OOD service, follow the instructions in the tutorial:</span> [Jupyter: Web-Based Programming Interface](https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-jupyter-basics). In this tutorial, you will learn about the practical aspects of using the Jupyter app, including the options available and various tips & tricks.
 
+
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">NOTE:</span>
+<br><span style="font-style:italic;">
+A <b>digital notebook</b> is a transformative tool in contemporary research, revolutionizing how data is analyzed, visualized, and shared. It offers an all-in-one document format that seamlessly combines <b>executable code with rich text</b> elements like project objectives, documentation, comments, and result interpretations. It supports multiple programming languages and file formats. The built-in capability to incorporate graphical visualizations, <b>including interactive plots and images</b>, further enhances its utility in diverse research scenarios.
+</span>
+</div>
+
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">NOTE:</span>
+<br><span style="font-style:italic;">
+JupyterLab elevates the concept of a development environment to an <b>Interactive DE accessible anytime, anywhere in the form of a web application hosted directly in your preferred web browser</b>. It’s versatile, offering various modes of access – offline, online in the cloud, and on HPC systems through Open On Demand service. These features, combined with its user-friendly graphical interface, create a comfortable daily working environment that significantly <b>facilitates sharing and real-time collaboration</b>.
+</span>
+</div>
+
 # Introduction
 
 
