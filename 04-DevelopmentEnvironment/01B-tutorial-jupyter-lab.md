@@ -15,8 +15,7 @@ header:
 ---
 
 
-<span style="color: #ff3870; font-weight: 600;">If you don't already have JupyterLab installed or you wish to use the SCINet OOD service, follow the instructions in the tutorial:</span> [Jupyter: Web-Based Programming Interface](https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-jupyter-basics). In this tutorial, you will learn about the practical aspects of using the Jupyter app, including the options available and various tips & tricks.
-
+# Introduction
 
 <div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">NOTE:</span>
@@ -32,10 +31,9 @@ JupyterLab elevates the concept of a development environment to an <b>Interactiv
 </span>
 </div>
 
-# Introduction
-
-
 ## Start JupyterLab via Terminal
+
+<span style="color: #ff3870; font-weight: 600;">If you don't already have JupyterLab installed or you wish to use the SCINet OOD service, follow the instructions in the tutorial:</span> [Jupyter: Web-Based Programming Interface](https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-jupyter-basics). In this tutorial, you will learn about the practical aspects of using the Jupyter app, including the options available and various tips & tricks.
 
 Once installed locally, you can start a web-based interface of `jupyter lab` from the command line by typing:
 
