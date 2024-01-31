@@ -27,7 +27,7 @@ Know your stuff but need a quick fix or a deep dive into something specific? DSW
 ## Become a Contributor
 
 Eager to share your expertise and enrich the platform? <br>
-Our DSW community welcomes you with open arms! Swing by our [Contributors' corner](CODE_OF_CONDUCT.md), where your unique insights and content can make a real impact. Dive in, <a href="https://github.com/ISUgenomics/datascience-workbook/discussions" target="_blank">discuss</a>, collaborate, and let's together shape the future of data science learning!
+Our DSW community welcomes you with open arms! Swing by our [Contributors' corner](CONTRIBUTING.md), where your unique insights and content can make a real impact. Dive in, <a href="https://github.com/ISUgenomics/datascience-workbook/discussions" target="_blank">discuss</a>, collaborate, and let's together shape the future of data science learning!
 
 ### Contact us
 
