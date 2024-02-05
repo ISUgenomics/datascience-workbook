@@ -17,14 +17,22 @@ header:
 
 # Introduction
 
-Collaboration and communication are fundamental elements in research projects. Effective collaboration and communication can significantly enhance the quality, scope, and impact of research, because it harnesses diverse expertise, facilitates the sharing of resources and knowledge, broadens the reach of findings, and fosters innovative approaches that may not be achievable in isolation.
+<table><tr>
+<td style="border: transparent; vertical-align: top; font-size: 21px;">
+Collaboration and communication are fundamental elements in research projects. Effective collaboration and communication can significantly enhance the quality, scope, and impact of research, because it harnesses diverse expertise, facilitates the sharing of resources and knowledge, broadens the reach of findings, and fosters innovative approaches that may not be achievable in isolation. <br><br>
+<b>When diverse minds converge with a shared purpose, the boundaries of what's possible expand, unlocking untapped potential and creating avenues never before imagined.</b>
+</td>
+<td width=500 style="border: transparent;"><img width="800" src="../assets/images/02_collaboration_communication.png"></td>
+</tr></table>
+
+
+
 
 <div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">A tale of collaboration:</span>
 <br><span style="font-style:italic;">
 In the bustling corridors of a research institution during open days, Dr. Mira, a marine biologist, unexpectedly bumped into Dr. Patel, an AI specialist. Over a casual coffee conversation, they discovered a mutual interest: understanding whale communication. Mira provided recordings of mysterious whale songs, while Patel used machine learning to decode their patterns. Together, they unveiled a complex language system, paving the way for groundbreaking research into interspecies communication. Their serendipitous collaboration demonstrated the profound potential of merging two seemingly unrelated fields.
-</span><br><br>
-<b>When diverse minds converge with a shared purpose, the boundaries of what's possible expand, unlocking untapped potential and creating avenues never before imagined.</b>
+</span>
 </div>
 
 ---
@@ -39,6 +47,7 @@ In the heart of a crowded research lab, Dr. Adams had an epiphany that could cha
 </span>
 </div>
 
+Effective communication supports:
 
 1. **Coordination** <br>
 Efficient communication helps coordinate tasks, timelines, and responsibilities, ensuring seamless project progression.
@@ -64,7 +73,7 @@ Having a communication strategy, when implemented effectively, can foster a coll
 </div>
 
 1. **Plan Regular Centralized Meetings** <br>
-Establish a rhythm of regular check-ins and progress meetings. These can be hosted in-person, or virtually, adapting to the team's dynamics and current circumstances. Adopt tools like `Slack`, `Microsoft Teams`, or `Discor`d, which allow for organized channels, direct messaging, and integration with other software tools, keeping team communication centralized and searchable.
+Establish a rhythm of regular check-ins and progress meetings. These can be hosted in-person, or virtually, adapting to the team's dynamics and current circumstances. Adopt tools like `Slack`, `Microsoft Teams`, or `Discord`, which allow for organized channels, direct messaging, and integration with other software tools, keeping team communication centralized and searchable.
   * **Have Open Door Policies** <br>
   Encourage to have an 'open door' policy, where team members can approach them with ideas, concerns, or questions. This fosters a culture of openness and mutual trust.
 
