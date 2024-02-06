@@ -104,8 +104,32 @@ Informational resources, such as data, research papers, and software tools, are 
 |-|-|
 |**Data Management**|Implement robust systems for data storage, backup, and recovery to ensure data integrity and availability.|
 |**Access Control**|Establish clear policies for data access, sharing, and confidentiality to protect sensitive information.|
-|**Literature Organization**|Utilize reference management software to organize research articles and sources, making it easy to retrieve and cite information.|
 |**Software Licensing**|Keep track of software licenses and subscriptions to ensure that all tools are up-to-date and available for use by the research team.|
+|**Code Management**|Implement consistent coding standards and version control systems to ensure code quality, manage changes effectively, and facilitate team collaboration.|
+|**Storage and Version Control**|Utilize reliable storage solutions and robust version control practices to safeguard data and documents, ensuring their integrity and accessibility over time.|
+|**Documentation**|Maintain thorough and organized documentation practices, using standardized templates and collaborative tools for easy access and knowledge sharing within the research team.|
+|**Literature Organization**|Utilize reference management software to organize research articles and sources, making it easy to retrieve and cite information.|
+
+
+In a research project, Informational Resources encompass crucial components such as:
+1. <b><a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/03-DATA/01-data-management/" target="_blank">Data Management</a></b> <br>
+<i>Data Management ensures the integrity, accessibility, and security of data, forming the backbone of research analysis and insights. </i>
+
+2. <b><a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/00-code-developments" target="_blank">Code Management</a></b> <br>
+<i>Code Management, through practices like version control, maintains the consistency and trackability of software code, a critical element in reproducible and collaborative research. </i>
+
+3. <b><a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/01-storage-version-control" target="_blank">Storage and Version Control</a></b> <br>
+<i>Storage and Version Control systems safeguard information, provide historical tracking of project progress, and facilitate efficient resource sharing.</i>
+
+4. <b><a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/02-DOCUMENTATION/01-documentation-improvement-tools" target="_blank">Documentation</a></b> <br>
+<i>Documentation acts as the repository of knowledge, capturing the nuances of research methodologies, findings, and intellectual property, ensuring that every aspect of the research is recorded, understandable, and accessible for future reference.</i>
+
+
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+Please utilize the links provided above to navigate to the corresponding detailed sections within this workbook.  These sections are designed to offer in-depth insights, practical tips, and structured guidelines to assist you in effectively managing informational resources in your research project.</span>
+</div>
 
 
 ## **Time Resources**
