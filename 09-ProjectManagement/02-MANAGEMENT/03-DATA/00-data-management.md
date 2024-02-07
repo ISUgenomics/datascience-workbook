@@ -17,17 +17,22 @@ header:
 
 # Introduction
 
+<table><tr>
+<td style="border: transparent; vertical-align: top; font-size: 21px;">
 Data Management is a critical aspect of research, ensuring that data collected, analyzed, and generated throughout a project is organized, stored, protected, and preserved effectively. This process enhances the integrity, reproducibility, and validity of research outcomes.
-
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; margin-top: 20px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">  In small and moderate-scale projects, efficient data management is crucial for maximizing resource utilization, maintaining data quality, and ensuring compliance with ethical and legal standards. </span>
 </div>
+</td>
+<td width=500 style="border: transparent;"><img width="800" src="../../assets/images/02_data_management.png"></td>
+</tr></table>
 
 Data Management serves as the backbone of project. It encompasses a series of structured practices and principles, aiming to ensure that data, a valuable and sensitive asset, is handled with utmost care. From the initial stages of collection to the final steps of preservation, every facet of Data Management is designed to uphold the quality, accessibility, and security of data. The systematic approach not only amplifies the credibility and reproducibility of research findings but also supports compliance with evolving ethical and legal standards.
 
+---
 
-## Data Management Lifecycle
+# Data Management Lifecycle
 
 Embarking on the Data Management Lifecycle journey, we recognize the critical role each component plays in sculpting a robust and reliable research framework.  Whether it's choosing the right data collection methods, ensuring data is stored securely and efficiently, or establishing clear policies for data sharing and accessibility, every step is a building block towards a comprehensive and coherent Data Management strategy. In this subsection, we will navigate through these integral phases, illustrating each with practical examples.
 
@@ -42,8 +47,7 @@ Embarking on the Data Management Lifecycle journey, we recognize the critical ro
 | [Roles and Responsibilities](#roles-and-responsibilities) | Clear delineation of data management tasks assigned to project team members. |
 
 
-
-### Data Collection Methods
+## Data Collection Methods
 
 Data Collection Methods refer to the structured and strategic approaches employed to gather information and insights pertinent to research objectives. These methods are meticulously designed to ensure the comprehensiveness, relevance, and reliability of the data, thereby forming the foundation upon which meaningful analysis and conclusions are built.
 
@@ -70,7 +74,7 @@ The rigor and appropriateness of data collection methods directly influence the 
 |sensor data in IoT projects|<a href="https://www.arduino.cc/" target="_blank">Arduino</a>|open-source electronics platform for building digital devices|
 
 
-<span style="background-color: #e8e9e8; color: #ff3870; font-weight: 500; padding: 5px 7px;">checklist</span>&nbsp; **A few universal tips for Data Collection:**
+<br><span style="background-color: #e8e9e8; color: #ff3870; font-weight: 500; padding: 5px 7px;">checklist</span>&nbsp; **A few universal tips for Data Collection:**
 
 1. **Define Clear Objectives** <br>
 Ensure your data collection methods align precisely with your research goals.
@@ -91,7 +95,7 @@ Ensure everyone involved understands the tools and methods to avoid inconsistenc
 Implement measures for data validation and verification to maintain the accuracy and reliability of the collected data.
 
 
-### Data Storage Solutions
+## Data Storage Solutions
 
 Data Storage Solutions encompass a range of systems and services meticulously designed to save, organize, and manage data effectively. These solutions provide a structured environment where data can be stored securely, accessed efficiently, and managed conveniently, thus serving as a critical component in maintaining the integrity and usability of research data.
 
@@ -129,7 +133,7 @@ Effective and well-planned data storage significantly enhances the reliability, 
 |object storage for massive datasets|<a href="https://min.io/" target="_blank">MinIO</a>|high performance, Kubernetes-native object storage|
 
 
-<span style="background-color: #e8e9e8; color: #ff3870; font-weight: 500; padding: 5px 7px;">checklist</span>&nbsp; **A few universal tips for Data Storage:**
+<br><span style="background-color: #e8e9e8; color: #ff3870; font-weight: 500; padding: 5px 7px;">checklist</span>&nbsp; **A few universal tips for Data Storage:**
 
 1. **Assess Storage Needs** <br>
 Evaluate the volume, variety, and velocity of data to choose the most suitable storage solution. Opt for storage solutions that comply with industry standards and possess certifications like TRUST, ensuring data reliability and sustainability.
@@ -153,7 +157,7 @@ Implement regular backup protocols to prevent data loss and ensure data recovery
 Maintain comprehensive documentation of data storage structures, policies, and access controls to facilitate data management and compliance.
 
 
-### Data Privacy and Security Measures
+## Data Privacy and Security Measures
 
 Data Privacy and Security Measures refer to a comprehensive set of strategies, protocols, and technologies specifically designed to protect data from unauthorized access, breaches, and other security threats. These measures are essential for safeguarding sensitive information, ensuring the confidentiality of participant data, and maintaining the overall integrity and trustworthiness of research data.
 
@@ -180,7 +184,7 @@ Robust privacy and security practices are foundational to any research project, 
 |data masking and anonymization|<a href="https://arx.deidentifier.org" target="_blank">ARX Data Anonymization Tool </a>|a software for anonymizing sensitive datasets while preserving data utility|
 |web application security|<a href="https://www.zaproxy.org/" target="_blank">OWASP ZAP</a>|open-source tool for finding vulnerabilities in web applications|
 
-<span style="background-color: #e8e9e8; color: #ff3870; font-weight: 500; padding: 5px 7px;">checklist</span>&nbsp; **A few universal tips for Data Privacy and Security:**
+<br><span style="background-color: #e8e9e8; color: #ff3870; font-weight: 500; padding: 5px 7px;">checklist</span>&nbsp; **A few universal tips for Data Privacy and Security:**
 
 1. **Educate Your Team** <br>
 Ensure that all team members are aware of the importance of data privacy and security and are trained in the proper handling of sensitive data.
@@ -201,7 +205,7 @@ Regularly review and update security measures to address evolving threats and vu
 Have a clear plan in place for responding to data breaches or security incidents, including steps for containment, investigation, and notification.
 
 
-### Data Sharing and Accessibility Policies
+## Data Sharing and Accessibility Policies
 
 Data Sharing and Accessibility Policies encompass a set of structured guidelines and ethical practices aimed at making research data available to other researchers, the public, or both. These policies dictate how data should be shared, the extent of data accessibility, and under what conditions, ensuring that data sharing is conducted transparently, responsibly, and in a manner that respects privacy and intellectual property rights.
 
@@ -217,7 +221,7 @@ Implementing clear data sharing and accessibility policies is pivotal in promoti
 By adhering to these policies, researchers contribute to a culture of openness, allowing for the validation of research findings, the replication of studies, and the advancement of knowledge. </span>
 </div>
 
-<i><span style="color: #ff3870;font-weight: 500;"> For an in-depth exploration of how these and other open-type policies foster a culture of openness and collaboration in research, refer to our detailed article on open-type policies. </span></i>
+<i><span style="color: #ff3870;font-weight: 500;"> For an in-depth exploration of how these and other open-type policies foster a culture of openness and collaboration in research, refer to our detailed <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/03-DATA/01-open-principles" target="_blank">article on open-type policies  ⤴</a>. </span></i>
 
 
 **Examples of Data Sharing Platforms:**
@@ -233,7 +237,7 @@ By adhering to these policies, researchers contribute to a culture of openness, 
 |domain-specific data sharing|<a href="https://www.ncbi.nlm.nih.gov/genbank" target="_blank">GenBank</a>|repository for genetic sequence data, widely used in the life sciences|
 |geospatial data sharing|<a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a>|collaborative project to create a free editable map of the world|
 
-<span style="background-color: #e8e9e8; color: #ff3870; font-weight: 500; padding: 5px 7px;">checklist</span>&nbsp; **A few universal tips for Data Privacy and Security:**
+<br><span style="background-color: #e8e9e8; color: #ff3870; font-weight: 500; padding: 5px 7px;">checklist</span>&nbsp; **A few universal tips for Data Privacy and Security:**
 
 1. **Understand Data Sensitivity** <br>
 Assess the sensitivity of your data and determine what can be shared openly while respecting privacy, confidentiality, and intellectual property. Ensure that your team is aware of the importance of data sharing and accessibility and understands how to comply with relevant policies and best practices.
@@ -254,7 +258,7 @@ Keep track of how your data is being accessed and used, which can provide insigh
 Keep up-to-date with institutional, national, and international policies regarding data sharing and accessibility to ensure compliance.
 
 
-### Data Archiving and Preservation
+## Data Archiving and Preservation
 
 Data Archiving and Preservation refer to the strategic processes of storing and maintaining data over the long term, ensuring its continued accessibility, usability, and integrity. This involves selecting appropriate storage mediums, maintaining data formats, and managing metadata, all structured to ensure that data can withstand the test of time and technological changes.
 
@@ -278,7 +282,7 @@ Archiving and preserving data is crucial for sustaining the life cycle of resear
 |web page archiving|<a href="https://archive.org/" target="_blank">Internet Archive</a>|digital library known for archiving and providing public access to collections of digitized materials, including websites|
 |High-Performance Computing (HPC) storage|your institution's HPC facility|secure and long-term storage, public access may be limited|
 
-<span style="background-color: #e8e9e8; color: #ff3870; font-weight: 500; padding: 5px 7px;">checklist</span>&nbsp; **A few universal tips for Data Archiving and Preservation:**
+<br><span style="background-color: #e8e9e8; color: #ff3870; font-weight: 500; padding: 5px 7px;">checklist</span>&nbsp; **A few universal tips for Data Archiving and Preservation:**
 
 1. **Develop a Preservation Plan** <br>
 Outline strategies for how and where data will be preserved, including file formats, storage media, and backup schedules. Follow established standards and best practices for data archiving and preservation to ensure data remains retrievable and understandable.
@@ -296,7 +300,7 @@ Implement appropriate security measures to protect archived data and monitor acc
 Consider depositing data in community-recognized repositories that offer long-term preservation services and wider accessibility to the research community.
 
 
-### Data Documentation
+## Data Documentation
 
 Documentation involves creating comprehensive records that encompass methodologies of data collection, data processing procedures, and metadata details. It serves as a meticulous account of the research process, cataloging every aspect of the data lifecycle to ensure that every dataset is accompanied by contextual information and a clear narrative of its origin, purpose, and structure.
 
@@ -319,7 +323,7 @@ Data Documentation is fundamental to the integrity and utility of research data.
 |documentation for code and datasets|<a href="https://readthedocs.org/" target="_blank">Read the Docs</a>|free and open-source documentation platform for software projects and datasets|
 |structured data documentation|<a href="https://ddialliance.org/" target="_blank">DDI</a>|an international standard for describing data from the social, behavioral, and economic sciences|
 
-<span style="background-color: #e8e9e8; color: #ff3870; font-weight: 500; padding: 5px 7px;">checklist</span>&nbsp; **A few universal tips for Data Documentation:**
+<br><span style="background-color: #e8e9e8; color: #ff3870; font-weight: 500; padding: 5px 7px;">checklist</span>&nbsp; **A few universal tips for Data Documentation:**
 
 1. **Start Early** <br>
 Begin documenting at the start of the research process to ensure no details are overlooked or forgotten.
@@ -343,7 +347,7 @@ Make documentation accessible to all team members and stakeholders, and, where p
 Continuously update documentation to reflect changes in the research process or data.
 
 
-### Roles and Responsibilities
+## Roles and Responsibilities
 
 Roles and Responsibilities in Data Management involve the explicit allocation and delineation of data-related tasks and duties among project team members. This clear structuring ensures that each aspect of data management is overseen by an individual or a team with the appropriate expertise and authority, thus fostering a systematic and accountable approach to managing the project's data assets.
 
@@ -368,7 +372,7 @@ Establishing well-defined roles and responsibilities is crucial for ensuring a c
 | Data Quality Manager |Ensures the accuracy, completeness, and reliability of data throughout its lifecycle.|
 | Data Architect |Designs and manages the data infrastructure, sets data standards, and ensures alignment with business goals.|
 
-<span style="background-color: #e8e9e8; color: #ff3870; font-weight: 500; padding: 5px 7px;">checklist</span>&nbsp; **Practical Tips for Managing Roles and Responsibilities:**
+<br><span style="background-color: #e8e9e8; color: #ff3870; font-weight: 500; padding: 5px 7px;">checklist</span>&nbsp; **Practical Tips for Managing Roles and Responsibilities:**
 
 1. **Align Roles with Expertise** <br>
 Assign tasks based on individuals' expertise and experience to ensure tasks are executed efficiently and effectively. Be prepared to adjust roles and responsibilities as the project progresses and as team members' strengths and project needs evolve.
@@ -388,8 +392,13 @@ Establish clear accountability mechanisms, such as regular updates and performan
 
 ___
 # Further Reading
-* [3.1.1 CARE Principles](02-care-principles)
-* [3.1.2 FAIR Principles](03-fair-principles)
+* [3.1.1 Open Science Policy](01-open-principles)
+  * [3.1.2 CARE Principles](02-care-principles)
+  * [3.1.3 FAIR Principles](03-fair-principles)
+  * [3.1.4 TRUST Principles](04-trust-principles)
+
+
+* [3.1.5 Data Management Plan](05-data-management-plan)
 
 * [3.2 Code Management](../01-SOURCE-CODE/00-code-developments)
 * [3.3 Storage & Version Control](../01-SOURCE-CODE/01-storage-version-control)
@@ -403,5 +412,5 @@ ___
 [Homepage](../../../index.md){: .btn  .btn--primary}
 [Section Index](../../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
 [Previous](../00-intro-resource-management){: .btn  .btn--primary}
-[Next](02-care-principles){: .btn  .btn--primary}
+[Next](01-open-principles){: .btn  .btn--primary}
 [top of page](#introduction){: .btn  .btn--primary}
