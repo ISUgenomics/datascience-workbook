@@ -22,7 +22,7 @@ header:
 Data Management is a critical aspect of research, ensuring that data collected, analyzed, and generated throughout a project is organized, stored, protected, and preserved effectively. This process enhances the integrity, reproducibility, and validity of research outcomes.
 <div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; margin-top: 20px;">
 <span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">  In small and moderate-scale projects, efficient data management is crucial for maximizing resource utilization, maintaining data quality, and ensuring compliance with ethical and legal standards. </span>
+<br><span style="font-style:italic;">  In small and moderate scale projects, efficient data management is crucial for maximizing resource utilization, maintaining data quality, and ensuring compliance with ethical and legal standards. </span>
 </div>
 </td>
 <td width=500 style="border: transparent;"><img width="800" src="../../assets/images/02_data_management.png"></td>
@@ -32,9 +32,9 @@ Data Management serves as the backbone of project. It encompasses a series of st
 
 ---
 
-# Data Management Lifecycle
+# Data Lifecycle Management
 
-Embarking on the Data Management Lifecycle journey, we recognize the critical role each component plays in sculpting a robust and reliable research framework.  Whether it's choosing the right data collection methods, ensuring data is stored securely and efficiently, or establishing clear policies for data sharing and accessibility, every step is a building block towards a comprehensive and coherent Data Management strategy. In this subsection, we will navigate through these integral phases, illustrating each with practical examples.
+Embarking on the Data Lifecycle Management journey, we recognize the critical role each component plays in sculpting a robust and reliable research framework.  Whether it's choosing the right data collection methods, ensuring data is stored securely and efficiently, or establishing clear policies for data sharing and accessibility, every step is a building block towards a comprehensive and coherent Data Management strategy. In this subsection, we will navigate through these integral phases, illustrating each with practical examples.
 
 | section shortcut | brief |
 |------------------|-------|
@@ -46,6 +46,15 @@ Embarking on the Data Management Lifecycle journey, we recognize the critical ro
 | [Data Documentation](#data-documentation) | Detailed records of data collection methodologies, processing and metadata. |
 | [Roles and Responsibilities](#roles-and-responsibilities) | Clear delineation of data management tasks assigned to project team members. |
 
+<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">WARNING:</span>
+<br><span style="font-style:italic;"> Please be aware that the information provided in this section is concise and intended to serve as an introduction to various aspects of Data Management in research. The examples of practices and tools mentioned are selected to illustrate a cross-section of the wide array of options available but do not represent an exhaustive list. Our goal is to familiarize you with the terminology and basic concepts, encouraging further exploration of the tools and methodologies that best meet your specific needs. </span>
+</div>
+
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;"> Some widely-applicable tools and practices are covered in more detail in hands-on tutorials within this workbook. These tutorials are designed to provide practical insights and guidance on implementing key aspects of Data Management in your research projects. <br>We encourage you to delve deeper into each topic and explore additional resources!</span>
+</div>
 
 ## Data Collection Methods
 
