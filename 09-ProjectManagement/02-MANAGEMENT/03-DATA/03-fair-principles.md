@@ -173,9 +173,9 @@ Leverage [tools](#resources-and-tools) like F-UJI or ARDC's FAIR Data Self Asses
 
 ___
 # Further Reading
-* [3.1.2 CARE Principles](02-care-principles)
-* [3.1.3 TRUST Principles](04-trust-principles)
-* [3.1.4 Data Management Plan (hands-on)](05-data-management-plan)
+* [3.1.3 CARE Principles](02-care-principles)
+* [3.1.4 TRUST Principles](04-trust-principles)
+* [3.1.5 Data Management Plan (hands-on)](05-data-management-plan)
 
 * [3.2 Code Management](../01-SOURCE-CODE/00-code-developments)
 * [3.3 Storage & Version Control](../01-SOURCE-CODE/01-storage-version-control)
@@ -188,6 +188,6 @@ ___
 
 [Homepage](../../../index.md){: .btn  .btn--primary}
 [Section Index](../../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
-[Previous](01-data-management){: .btn  .btn--primary}
+[Previous](01-open-principles){: .btn  .btn--primary}
 [Next](02-care-principles){: .btn  .btn--primary}
 [top of page](#introduction){: .btn  .btn--primary}
