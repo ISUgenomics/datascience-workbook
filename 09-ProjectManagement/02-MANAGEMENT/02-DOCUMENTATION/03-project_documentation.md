@@ -163,6 +163,6 @@ ___
 
 [Homepage](../../../index.md){: .btn  .btn--primary}
 [Section Index](../../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
-[Previous](02-intro-to-markdown){: .btn  .btn--primary}
+[Previous](02-manage-project-documentation){: .btn  .btn--primary}
 [Next](04-code_documentation){: .btn  .btn--primary}
 [top of page](#introduction){: .btn  .btn--primary}
