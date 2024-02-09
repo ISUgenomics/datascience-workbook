@@ -832,15 +832,15 @@ header:
     <a href="09-ProjectManagement/00-RESEARCH-PROJECT/01-project-management-overview" style="color: #24376b;">
     Introduction to Project Management</a></b></td></tr>
 
-  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
-    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;  
-    <a href="09-ProjectManagement/00-RESEARCH-PROJECT/02-intro-to-project-management" style="color: #24376b;">
-    A Practical Guide to Managing a Research Project</a></td></tr>
+  <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center; width: 130px;">INTRO</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;
+    <a href="09-ProjectManagement/00-RESEARCH-PROJECT/02-project-management-tools" style="color: #24376b;">
+    Overview of Essential Tools for Modern Research Projects</a></td></tr>
 
   <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center; width: 130px;">INTRO</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&#10687;&emsp;
-    <b><a href="09-ProjectManagement/00-RESEARCH-PROJECT/03-project-strategy-design" style="color: #24376b;">
-    Project Strategy & Risk Management</a></b></td></tr>
+    <a href="09-ProjectManagement/00-RESEARCH-PROJECT/03-project-strategy-design" style="color: #24376b;">
+    Project Strategy & Risk Management</a></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;
@@ -945,9 +945,9 @@ header:
     Documentation Improvement Tools</a></b></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
-    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;
-    <a href="09-ProjectManagement/02-MANAGEMENT/02-DOCUMENTATION/02-intro-to-markdown" style="color: #3f5a8a;">
-    Introduction to Markdown</a></td></tr>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;  
+    <a href="09-ProjectManagement/02-MANAGEMENT/02-DOCUMENTATION/02-manage-project-documentation" style="color: #24376b;">
+    A Practical Guide to Managing Research Documentation</a></td></tr>
 
   <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;  
@@ -958,6 +958,11 @@ header:
     <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;
     <a href="09-ProjectManagement/02-MANAGEMENT/02-DOCUMENTATION/04-code_documentation" style="color: #3f5a8a;">
     Tools for Code Documentation</a></td></tr>
+
+  <tr><td style="background-color:#dff5b3; color:#19272f; font-weight: 600; text-align: center;">TUTORIAL</td>
+    <td style="border: none; font-size: 1.3em; padding: 0 0.5em;">&emsp;&emsp;&#10686;&emsp;
+    <a href="09-ProjectManagement/02-MANAGEMENT/02-DOCUMENTATION/05-intro-to-markdown" style="color: #3f5a8a;">
+    Introduction to Markdown</a></td></tr>
 
   <tr><td style="background-color:#cff4fc; color:#19272f; font-weight: 600; text-align: center; width: 130px;">INTRO</td>
     <td style="border: none; font-size: 1.4em; padding: 0 0.4em;"><b>

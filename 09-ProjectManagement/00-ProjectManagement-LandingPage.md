@@ -16,8 +16,8 @@ It is undeniable that good project management leads to improved reproducibility 
 
 
 ### **<a href="00-RESEARCH-PROJECT/01-project-management-overview" style="color: #24376b;">1. Introduction to Project Management</a>**
-* <a href="00-RESEARCH-PROJECT/02-intro-to-project-management" style="color: #24376b;">1.1 A Practical Guide to Managing a Research Project</a>
-* <b><a href="00-RESEARCH-PROJECT/03-project-strategy-design" style="color: #24376b;">1.2 Project Strategy & Risk Management</a></b>
+* <a href="00-RESEARCH-PROJECT/02-project-management-tools" style="color: #24376b;">1.1 Overview of Essential Tools for Modern Research Projects</a>
+* <a href="00-RESEARCH-PROJECT/03-project-strategy-design" style="color: #24376b;">1.2 Project Strategy & Risk Management</a>
   * <a href="00-RESEARCH-PROJECT/04-project-framework" style="color: #24376b;">1.2.1 Project Design vs Project Framework</a>
 
 
@@ -42,9 +42,10 @@ It is undeniable that good project management leads to improved reproducibility 
     * <a href="02-MANAGEMENT/01-SOURCE-CODE/04A-github-advanced" style="color: #3f5a8a;">GitHub for advanced users</a>
     * <a href="02-MANAGEMENT/01-SOURCE-CODE/05-intro-to-bitbucket" style="color: #3f5a8a;">Introduction to BitBucket</a>
 * <b><a href="02-MANAGEMENT/02-DOCUMENTATION/01-documentation-improvement-tools" style="color: #24376b;">3.4 Documentation Improvement Tools</a></b>
-  * <a href="02-MANAGEMENT/02-DOCUMENTATION/02-intro-to-markdown" style="color: #3f5a8a;">3.4.1 Introduction to Markdown</a>
+  * <a href="02-MANAGEMENT/02-DOCUMENTATION/02-manage-project-documentation" style="color: #24376b;">3.4.1 A Practical Guide to Managing Research Documentation</a>
   * <a href="02-MANAGEMENT/02-DOCUMENTATION/03-project_documentation" style="color: #3f5a8a;">3.4.2 Tools for Research Documentation</a>
   * <a href="02-MANAGEMENT/02-DOCUMENTATION/04-code_documentation" style="color: #3f5a8a;">3.4.3 Tools for Code Documentation</a>
+  * <a href="02-MANAGEMENT/02-DOCUMENTATION/05-intro-to-markdown" style="color: #3f5a8a;">3.4.4 Introduction to Markdown</a>
 
 
 ### **<a href="03-PRODUCTIVITY/00-quality-assurance" style="color: #24376b;">4. Quality Assurance</a>**
