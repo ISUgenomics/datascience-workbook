@@ -20,7 +20,7 @@ header:
 <table><tr>
 <td style="border: transparent; vertical-align: top; font-size: 21px;">
 Data Management is a critical aspect of research, ensuring that data collected, analyzed, and generated throughout a project is organized, stored, protected, and preserved effectively. This process enhances the integrity, reproducibility, and validity of research outcomes.
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; margin-top: 20px;">
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; margin-top: 25px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">  In small and moderate scale projects, efficient data management is crucial for maximizing resource utilization, maintaining data quality, and ensuring compliance with ethical and legal standards. </span>
 </div>

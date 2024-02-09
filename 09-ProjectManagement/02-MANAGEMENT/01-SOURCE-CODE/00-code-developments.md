@@ -17,12 +17,18 @@ header:
 
 # Introduction
 
-Code management is a critical aspect of research, especially in projects that involve computational methods, data analysis, and software development. Effective code management practices ensure that code is not only reusable and maintainable but also that it contributes to the **reproducibility and transparency of research outcomes**.
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<table><tr>
+<td style="border: transparent; vertical-align: top; font-size: 21px;">
+Code management is a critical aspect of research, especially in projects that involve computational methods, data analysis, and software development. Effective code management practices ensure that code is not only reusable and maintainable but also that it contributes to the <b>reproducibility and transparency of research outcomes</b>.
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; margin-top: 20px;">
 <span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;"> The efficient Code Management ensures that code, whether part of small-scale pipelines utilizing existing tools or complex development projects, remains robust, well-organized, accessible and usable. </span>
+<br><span style="font-style:italic;">The efficient Code Management ensures that code, whether part of small-scale pipelines utilizing existing tools or complex development projects, remains robust, well-organized, accessible and usable.</span>
 </div>
+</td>
+<td width=500 style="border: transparent;"><img width="800" src="../../assets/images/03_code_management.png"></td>
+</tr></table>
+
 
 ---
 
