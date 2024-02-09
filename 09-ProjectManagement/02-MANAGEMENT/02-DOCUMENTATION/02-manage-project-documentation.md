@@ -1,5 +1,5 @@
 ---
-title: "A Practical Guide to Managing a Research Project"
+title: "A Practical Guide to Managing Research Documentation"
 layout: single
 author: Andrew Severin
 author_profile: true
@@ -10,7 +10,7 @@ header:
 
 {% include toc %}
 
-[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / [1. Introduction to Project Management](01-project-management-overview.md) / **1.1 A Practical Guide to Managing a Research Project**
+[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / [1. Introduction to Project Management](01-project-management-overview.md) / **1.1 A Practical Guide to Managing Research Documentation**
 
 ---
 
@@ -333,17 +333,17 @@ Here is an example of a [google sheet](https://docs.google.com/spreadsheets/d/1L
 
 ___
 # Further Reading
-* [1.2 Project Strategy & Design](03-project-strategy-design)
-  * [1.2.1 Project Framework](04-project-framework)
+* [3.4.2 Tools for Research Documentation](../02-DOCUMENTATION/03-project_documentation)
+* [3.4.3 Tools for Code Documentation](../02-DOCUMENTATION/04-code_documentation)
+* [3.4.4 Introduction to Markdown](../02-DOCUMENTATION/02-intro-to-markdown)
 
-* [2. Collaboration & Communication](../01-COMMUNICATION/00-collaboration-communication)
-* [3. Resource Management](../02-MANAGEMENT/00-intro-resource-management)
-* [4. Quality Assurance](../03-PRODUCTIVITY/00-quality-assurance)
-* [5. Project Closing](../04-PUBLICATION/01-project-closing)
+* [4. Quality Assurance](../../03-PRODUCTIVITY/00-quality-assurance)
+* [5. Project Closing](../../04-PUBLICATION/01-project-closing)
 
 ___
 
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
-[Next](03-project-strategy-design){: .btn  .btn--primary}
+[Previous](01-documentation-improvement-tools){: .btn  .btn--primary}
+[Next](03-project_documentation){: .btn  .btn--primary}
 [top of page](#introduction){: .btn  .btn--primary}
