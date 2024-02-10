@@ -130,7 +130,7 @@ Monitoring & Evaluation within the context of a research project serves as a cri
 The components of Monitoring & Evaluation, namely `Planning`, `Monitoring`, and `Evaluation`, form the backbone of a strategic approach designed to optimize the project's success and impact.
 
 <table>
-  <tr><th width=33%>Planning</th><th width=33% style="background-color:#e6f0f0; color: #0ba37f;">Good Example</th><th style="background-color:#fae7e7; color: red;">Bad Practices</th></tr>
+  <tr><th style="width:33%;">Planning</th><th style="background-color:#e6f0f0; color: #0ba37f; width:33%;">Good Example</th><th style="background-color:#fae7e7; color: red;">Bad Practices</th></tr>
   <tr>
     <td>Establishing clear objectives, benchmarks, and indicators for success early in the research process.</td>
     <td>Setting SMART (Specific, Measurable, Achievable, Relevant, Time-bound) objectives.</td>
@@ -139,7 +139,7 @@ The components of Monitoring & Evaluation, namely `Planning`, `Monitoring`, and 
 </table>
 
 <table>
-  <tr><th width=33%>Monitoring</th><th width=33% style="background-color:#e6f0f0; color: #0ba37f;">Good Example</th><th style="background-color:#fae7e7; color: red;">Bad Practices</th></tr>
+  <tr><th style="width:33%;">Monitoring</th><th style="background-color:#e6f0f0; color: #0ba37f; width:33%;">Good Example</th><th style="background-color:#fae7e7; color: red;">Bad Practices</th></tr>
   <tr>
     <td>Regularly tracking progress against plans and objectives, including the use of interim reviews and real-time data collection.</td>
     <td>Using project management tools to visually track milestones and adjust timelines as needed.</td>
@@ -148,7 +148,7 @@ The components of Monitoring & Evaluation, namely `Planning`, `Monitoring`, and 
 </table>
 
 <table>
-  <tr><th width=33%>Evaluation</th><th width=33% style="background-color:#e6f0f0; color: #0ba37f;">Good Example</th><th style="background-color:#fae7e7; color: red;">Bad Practices</th></tr>
+  <tr><th style="width:33%;">Evaluation</th><th style="background-color:#e6f0f0; color: #0ba37f; width:33%;">Good Example</th><th style="background-color:#fae7e7; color: red;">Bad Practices</th></tr>
   <tr>
     <td>Systematically assessing the research outcomes and processes against the established benchmarks and objectives to identify achievements, challenges, and areas for improvement.</td>
     <td>Conducting a post-project review session with the team to discuss what worked and what could be improved.</td>
@@ -171,29 +171,32 @@ For a deep dive into real-life solutions and tools that can elevate the Monitori
 Research Productivity is about maximizing the efficiency and outcomes of your research efforts. It's the art of doing more and better with less, ensuring that every resource contributes towards impactful results. In the context of small to moderate scale research projects, focusing on key strategies like `Resource Management`, `Prioritization and Planning`, and `Collaboration and Networking` can significantly boost productivity.
 
 <table>
-  <tr><th width=33%>Resource Management</th><th width=33% style="background-color:#e6f0f0; color: #0ba37f;">Good Example</th><th style="background-color:#fae7e7; color: red;">Bad Practices</th></tr>
+  <tr><th style="width:33%;">Resource Management</th><th style="background-color:#e6f0f0; color: #0ba37f; width:33%;">Good Example</th><th style="background-color:#fae7e7; color: red;">Bad Practices</th></tr>
   <tr>
     <td>Effective allocation and management of resources, including time, funding, and human resources.</td>
     <td>Using digital tools for budget tracking and time management to ensure resources are optimally utilized.</td>
     <td>Overlooking resource allocation until it becomes a bottleneck, leading to project delays and budget overruns.</td>
   </tr>
 </table>
+
 <table>
-  <tr><th width=33%>Prioritization and Planning</th><th width=33% style="background-color:#e6f0f0; color: #0ba37f;">Good Example</th><th style="background-color:#fae7e7; color: red;">Bad Practices</th></tr>
+  <tr><th style="width:33%;">Prioritization and Planning</th><th style="background-color:#e6f0f0; color: #0ba37f; width:33%;">Good Example</th><th style="background-color:#fae7e7; color: red;">Bad Practices</th></tr>
   <tr>
     <td>Setting clear priorities and realistic timelines to focus efforts on high-impact research activities.</td>
     <td>Implementing a project management framework to identify critical tasks and allocate time accordingly.</td>
     <td>Failing to prioritize tasks, resulting in wasted efforts on low-impact activities and missed deadlines.</td>
   </tr>
 </table>
+
 <table>
-  <tr><th width=33%>Collaboration and Networking</th><th width=33% style="background-color:#e6f0f0; color: #0ba37f;">Good Example</th><th style="background-color:#fae7e7; color: red;">Bad Practices</th></tr>
+  <tr><th style="width:33%;">Collaboration and Networking</th><th style="background-color:#e6f0f0; color: #0ba37f; width:33%;">Good Example</th><th style="background-color:#fae7e7; color: red;">Bad Practices</th></tr>
   <tr>
     <td>Encouraging collaborations and networking to leverage diverse expertise and resources.</td>
     <td>Forming partnerships with other research groups and industry experts to share insights and resources.</td>
     <td>Working in isolation, missing out on the benefits of collaborative insights and shared resource opportunities.</td>
   </tr>
 </table>
+
 <div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">Boost your research productivity by embracing a culture of continuous improvement and openness to change. Regularly review your strategies for Resource Management, Prioritization, and Collaboration to find new ways to enhance efficiency and impact. Remember, the most productive researchers are those who adapt swiftly and leverage their networks effectively.</span>
@@ -208,29 +211,32 @@ Dive deeper into strategies for maximizing Research Productivity in small to mod
 Research Reproducibility is the cornerstone of credible science. It ensures that findings can be consistently duplicated by other researchers under similar conditions, reinforcing the reliability and trustworthiness of research outcomes. In small to moderate scale research projects, emphasizing `methodological transparency`, `data accessibility`, and `adherence to standards` plays a critical role in enhancing reproducibility.
 
 <table>
-  <tr><th width=33%>Methodological Transparency</th><th width=33% style="background-color:#e6f0f0; color: #0ba37f;">Good Example</th><th style="background-color:#fae7e7; color: red;">Bad Practices</th></tr>
+  <tr><th style="width:33%;">Methodological Transparency</th><th style="background-color:#e6f0f0; color: #0ba37f; width:33%;">Good Example</th><th style="background-color:#fae7e7; color: red;">Bad Practices</th></tr>
   <tr>
     <td>Providing detailed documentation of research methods, data collection, and analysis procedures.</td>
     <td>Sharing detailed protocols and code repositories publicly for others to review and replicate.</td>
     <td>Providing insufficient details on methodologies, making it impossible for others to replicate the study.</td>
   </tr>
 </table>
+
 <table>
-  <tr><th width=33%>Data Sharing and Accessibility</th><th width=33% style="background-color:#e6f0f0; color: #0ba37f;">Good Example</th><th style="background-color:#fae7e7; color: red;">Bad Practices</th></tr>
+  <tr><th style="width:33%;">Data Sharing and Accessibility</th><th style="background-color:#e6f0f0; color: #0ba37f; width:33%;">Good Example</th><th style="background-color:#fae7e7; color: red;">Bad Practices</th></tr>
   <tr>
     <td>Promoting Open Access to research data and materials, subject to ethical and legal constraints.</td>
     <td>Using established data repositories to share datasets with clear, permissive licensing.</td>
     <td>Keeping data private or sharing it in formats that are not widely accessible or usable.</td>
   </tr>
 </table>
+
 <table>
-  <tr><th width=33%>Standards and Protocols</th><th width=33% style="background-color:#e6f0f0; color: #0ba37f;">Good Example</th><th style="background-color:#fae7e7; color: red;">Bad Practices</th></tr>
+  <tr><th style="width:33%;">Standards and Protocols</th><th style="background-color:#e6f0f0; color: #0ba37f; width:33%;">Good Example</th><th style="background-color:#fae7e7; color: red;">Bad Practices</th></tr>
   <tr>
     <td>Adhering to established standards and protocols for research practices and reporting.</td>
     <td>Following guidelines from leading journals and scientific communities in your field.</td>
     <td>Ignoring industry standards, leading to inconsistencies and difficulties in validating findings.</td>
   </tr>
 </table>
+
 <div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">Make Research Reproducibility a priority from day one of your project. Document everything with the mindset that someone else will need to follow in your footsteps. This not only aids in reproducibility but also enhances your own understanding and organization of the research process. The more transparent and accessible your work, the more it contributes to the collective knowledge of your field.</span>
