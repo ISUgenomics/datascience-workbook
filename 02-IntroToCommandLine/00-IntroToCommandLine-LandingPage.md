@@ -27,6 +27,7 @@ Command Line is a text interface for the computer's operating system that passes
   * <a href="03B-tutorial-unix-sed" style="color: #3f5a8a;">3.2 SED – replace pattern in stream text</a>
   * <a href="03C-tutorial-unix-awk" style="color: #3f5a8a;">3.3 AWK – advanced text processing</a>
   * <a href="03D-tutorial-unix-bioawk" style="color: #3f5a8a;">3.4 BIOAWK – biological data manipulation</a>
+  * <a href="05-comparing-two-files" style="color: #3f5a8a; text-decoration: none;">3.5 DIFF, COMM, CMP – Comparing and Collating Two Files with Unix</a>
 
 ### <a href="04-unix-cheat-sheet" style="color: #518cc2;">* UNIX CheatSheet</a>
 ---
