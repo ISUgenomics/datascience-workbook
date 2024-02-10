@@ -5,3 +5,4 @@ __pycache__/
 .env
 _site
 Gemfile.lock
+run_locally.sh
