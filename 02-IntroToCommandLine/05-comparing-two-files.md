@@ -1,9 +1,33 @@
+---
+title: "Comparing and Collating Two Files with Unix"
+layout: single
+author: Rick Masonbrink
+author_profile: true
+header:
+  overlay_color: "444444"
+  overlay_image: /02-IntroToCommandLine/assets/images/02_command_line_banner.png
+---
+
+
+{% include toc %}
+
+[DataScience Workbook](https://datascience.101workbook.org/) / [02. Introduction to the Command Line](00-IntroToCommandLine-LandingPage.md) / [3. Useful Text Manipulation Programs](03-text-manipulation-programs.md) / **3.5 Comparing and Collating Two Files with Unix**
+
+---
+
+
+# Introduction
+
+<!-- Intro section is required for page navigation
+you can use it somehow
+-->
+
 # Comparing and Collating Two Files with Unix
 
-The diff, comm, and cmp commands are powerful utilities in Unix systems for comparing and analyzing differences between multiple files. diff highlights discrepancies line by line, making it ideal for pinpointing changes between two text files. It provides a detailed output, showing added, removed, and modified lines. Conversely, comm is perfect for comparing sorted files, displaying lines unique to each file and those common to both. Its structured output simplifies identifying differences and similarities between files, particularly in sorted datasets. Meanwhile, cmp offers a byte-level comparison, efficiently highlighting differences in binary files. It displays the first differing bytes and their offsets, making it invaluable for verifying the integrity of binary data or identifying discrepancies in large files. These commands collectively provide versatile solutions for comparing files, catering to various use cases from text to binary comparisons in Unix environments.
+The `diff`, `comm`, and `cmp` commands are powerful utilities in Unix systems for comparing and analyzing differences between multiple files. `diff` highlights discrepancies line by line, making it ideal for pinpointing changes between two text files. It provides a detailed output, showing added, removed, and modified lines. Conversely, `comm` is perfect for comparing sorted files, displaying lines unique to each file and those common to both. Its structured output simplifies identifying differences and similarities between files, particularly in sorted datasets. Meanwhile, `cmp` offers a byte-level comparison, efficiently highlighting differences in binary files. It displays the first differing bytes and their offsets, making it invaluable for verifying the integrity of binary data or identifying discrepancies in large files. These commands collectively provide versatile solutions for comparing files, catering to various use cases from text to binary comparisons in Unix environments.
 
 ### The two input files used to demonstrate the tutorial, note: they are tab separated.
-Sample files to demonstrate the usefullness of the below commands 
+Sample files to demonstrate the usefullness of the below commands
 
 <details>
 <summary>File1.txt</summary>
@@ -115,7 +139,7 @@ Chromosome_9    Mikado_loci     exon    10846885        10846912        .       
 </details>
 
 # The diff command
-diff is a command that will immediately tell you the differences and commonalities in each line between two sorted files. 
+diff is a command that will immediately tell you the differences and commonalities in each line between two sorted files.
 ```
 diff File1.txt File2.txt
 
@@ -212,7 +236,7 @@ Print only lines that are common between the two files
 comm -1 -2  <(sort File1.txt) <(sort File2.txt) |less
 
 Using process substitutions we can sort them in place if needed
-comm <(sort File1.txt) <(sort File2.txt) 
+comm <(sort File1.txt) <(sort File2.txt)
 ```
 <details>
 <summary>Output</summary>
@@ -240,7 +264,7 @@ cmp File1.txt File2.txt
 <summary>Output</summary>
 ```
 /dev/fd/63 /dev/fd/62 differ: byte 1, line 1
-#These files are different at the first byte and line. 
+#These files are different at the first byte and line.
 ```
 
 </details>
@@ -356,7 +380,7 @@ Parent=mRNA1 Chromosome_4 Mikado_loci exon 10617973 10618026 . - . Chromosome_4 
 
 # Using Awk to compare two files
 
-Awk stands out as a robust utility for comparing two files in Unix environments due to its text-processing prowess and simplicity. Its primary strength lies in its ability to handle structured data efficiently. Awk processes input line by line, making it ideal for comparing files containing records or lines with similar structures. By specifying field delimiters and comparison criteria, users can precisely identify differences or similarities between corresponding fields in the two files. 
+Awk stands out as a robust utility for comparing two files in Unix environments due to its text-processing prowess and simplicity. Its primary strength lies in its ability to handle structured data efficiently. Awk processes input line by line, making it ideal for comparing files containing records or lines with similar structures. By specifying field delimiters and comparison criteria, users can precisely identify differences or similarities between corresponding fields in the two files.
 
 
 ### This command compares the combinations of the first and second fields in both files. It outputs lines from File2.txt where these combinations are unique, meaning they do not occur in File1.txt.
@@ -366,14 +390,14 @@ awk  'NR==FNR { c[$1$2]++; next} c[$1$2]++ == 0' File1.txt File2.txt
 
 <details>
 <summary>Output</summary>
-This command prints the first occurence of a line from file2 if file2's column1 and 2 match column 1 and 2 from file 1 
+This command prints the first occurence of a line from file2 if file2's column1 and 2 match column 1 and 2 from file 1
 ```
 Chromosome_9    Mikado_loci     exon    10818058        10818082        .       -       .       Parent=Hetgly20664.t1
 Chromosome_9    gffcl   gene    10818169        10823373        .       +       .       ID=Hetgly20665;Alias=RLOC_00024670
 ```
 </details>
 
-### this command outputs lines from File2.txt where the value of the ninth field is not present in File1.txt, effectively showing differences or unique values between the two files based on the ninth field. 
+### this command outputs lines from File2.txt where the value of the ninth field is not present in File1.txt, effectively showing differences or unique values between the two files based on the ninth field.
 ```
 awk 'FNR==NR{a[$9];next}!($9 in a)' File1.txt File2.txt
 ```
@@ -457,7 +481,7 @@ Chromosome_4    .       intron  10616191        10616666        .       -       
 ```
 </details>
 
-### attach column1 and 2 to an array and match these with column 1 and 2 from file 2.  If there is a difference (true), print line from File2.txt that maches. 
+### attach column1 and 2 to an array and match these with column 1 and 2 from file 2.  If there is a difference (true), print line from File2.txt that maches.
 ```
 awk  'NR==FNR{c[$1$2];next};c[$1$2] > 0' File1.txt File2.txt
 ```
@@ -543,7 +567,7 @@ Chromosome_9    Mikado_loci     exon    10846885        10846912        .       
 ```
 </details>
 
-### Like above, if column 9 from file 1 does match column 9 from file2, print the column 9 from file 1 and the matching line from file 2.  Note that this time I am naming the array's key $9 and making the key value $9 as well. 
+### Like above, if column 9 from file 1 does match column 9 from file2, print the column 9 from file 1 and the matching line from file 2.  Note that this time I am naming the array's key $9 and making the key value $9 as well.
 ```
 awk 'NR==FNR { a[$9]=$9; next } ($9 in a) { print a[$9],$0 }' File1.txt File2.txt
 ```
@@ -565,3 +589,15 @@ Parent=mRNA1 Chromosome_4       .       intron  10616191        10616666        
 ```
 </details>
 
+
+___
+# Further Reading
+* [Unix Commands CheatSheet](04-unix-cheat-sheet.md)
+
+___
+
+[Homepage](../index.md){: .btn  .btn--primary}
+[Section Index](00-IntroToCommandLine-LandingPage.md){: .btn  .btn--primary}
+[Previous](03D-tutorial-unix-bioawk.md){: .btn  .btn--primary}
+[Next](04-unix-cheat-sheet.md){: .btn  .btn--primary}
+[top of page](#introduction){: .btn  .btn--primary}
