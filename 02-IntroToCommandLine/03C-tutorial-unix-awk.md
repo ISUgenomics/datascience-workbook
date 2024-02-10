@@ -58,7 +58,7 @@ In the context of Awk, it's vital to understand two core concepts: records and f
 
 In Awk, a record is typically a line of input. The default record separator in Awk is the newline character, meaning that by default, Awk considers each line it reads from a file or from its standard input as a separate record.
 
-Think of a record like a row in a spreadsheet or a database. Each record can contain multiple pieces of data. 
+Think of a record like a row in a spreadsheet or a database. Each record can contain multiple pieces of data.
 
 Why is this concept significant? Awk is often used to process structured data, such as tables or comma-separated value (CSV) files. Each line in such a file typically represents a separate entity (like a user, a transaction, a product, etc.) Thus, each line is a record that Awk will process individually.
 
@@ -178,6 +178,7 @@ ___
 
 # Further Reading
 * [BIOAWK – biological data manipulation](03D-tutorial-unix-bioawk.md)
+* [Comparing and Collating Two Files with Unix](05-comparing-two-files.md)
 
 * [Unix Commands CheatSheet](04-unix-cheat-sheet.md)
 

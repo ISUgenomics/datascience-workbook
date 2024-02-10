@@ -174,6 +174,7 @@ bioawk -t -c header '$age < "25" {print $0}' input.txt
 
 ___
 # Further Reading
+* [Comparing and Collating Two Files with Unix](05-comparing-two-files.md)
 * [Unix Commands CheatSheet](04-unix-cheat-sheet.md)
 
 ___
@@ -181,5 +182,5 @@ ___
 [Homepage](../index.md){: .btn  .btn--primary}
 [Section Index](00-IntroToCommandLine-LandingPage.md){: .btn  .btn--primary}
 [Previous](03C-tutorial-unix-awk.md){: .btn  .btn--primary}
-[Next](04-unix-cheat-sheet.md){: .btn  .btn--primary}
+[Next](05-comparing-two-files.md){: .btn  .btn--primary}
 [top of page](#introduction){: .btn  .btn--primary}
