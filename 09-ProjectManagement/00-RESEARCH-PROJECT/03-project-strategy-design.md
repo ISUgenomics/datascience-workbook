@@ -871,5 +871,6 @@ ___
 
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
+[Previous](02-project-management-tools){: .btn  .btn--primary}
 [Next](04-project-framework){: .btn  .btn--primary}
 [top of page](#introduction){: .btn  .btn--primary}

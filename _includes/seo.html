@@ -18,7 +18,7 @@
 
 {%- assign canonical_url = page.url | replace: "index.html", "" | absolute_url %}
 
-{%- assign seo_description = page.description | default: page.excerpt | default: site.description -%}
+{%- assign seo_description = page.description | default: page.subtitle | default: site.description -%}
 {%- if seo_description -%}
   {%- assign seo_description = seo_description | markdownify | strip_html | strip_newlines | escape_once -%}
 {%- endif -%}
@@ -67,7 +67,7 @@
 <meta property="og:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
 <meta property="og:url" content="{{ canonical_url }}">
 
-{% if page.excerpt %}
+{% if page.subtitle %}
   <meta property="og:description" content="{{ seo_description }}">
 {% endif %}
 

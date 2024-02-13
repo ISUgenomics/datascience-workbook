@@ -201,6 +201,6 @@ ___
 
 [Homepage](../../../index.md){: .btn  .btn--primary}
 [Section Index](../../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
-[Previous](01-documentation-improvement-tools){: .btn  .btn--primary}
-[Next](03-project_documentation){: .btn  .btn--primary}
+[Previous]( 04-code_documentation){: .btn  .btn--primary}
+[Next](../../03-PRODUCTIVITY/00-quality-assurance){: .btn  .btn--primary}
 [top of page](#introduction){: .btn  .btn--primary}

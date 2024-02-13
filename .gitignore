@@ -3,3 +3,6 @@ __pycache__/
 *.pyc
 .DS_Store
 .env
+_site
+Gemfile.lock
+run_locally.sh

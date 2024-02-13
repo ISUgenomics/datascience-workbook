@@ -210,9 +210,10 @@ Version control platforms with documentation offer tools to **track, manage, and
 
 ___
 # Further Reading
-* [3.4.1 Introduction to Markdown](../02-DOCUMENTATION/02-intro-to-markdown)
+* [3.4.1 A Practical Guide to Managing Research Documentation](../02-DOCUMENTATION/02-manage-project-documentation)
 * [3.4.2 Tools for Research Documentation](../02-DOCUMENTATION/03-project_documentation)
 * [3.4.3 Tools for Code Documentation](../02-DOCUMENTATION/04-code_documentation)
+* [3.4.4 Introduction to Markdown](../02-DOCUMENTATION/02-intro-to-markdown)
 
 * [4. Quality Assurance](../../03-PRODUCTIVITY/00-quality-assurance)
 * [5. Project Closing](../../04-PUBLICATION/01-project-closing)
@@ -223,5 +224,5 @@ ___
 [Homepage](../../../index.md){: .btn  .btn--primary}
 [Section Index](../../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
 [Previous](../01-SOURCE-CODE/05-intro-to-bitbucket){: .btn  .btn--primary}
-[Next](02-intro-to-markdown){: .btn  .btn--primary}
+[Next](02-manage-project-documentation){: .btn  .btn--primary}
 [top of page](#introduction){: .btn  .btn--primary}

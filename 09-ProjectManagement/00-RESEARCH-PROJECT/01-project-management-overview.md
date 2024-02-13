@@ -170,7 +170,7 @@ In future, data science could enable more personalized project management approa
 
 ___
 # Further Reading
-* [1.1 A Practical Guide to Managing a Research Project](02-intro-to-project-management)
+* [1.1 Overview of Essential Tools for Modern Research](02-project-management-tools)
 * [1.2 Project Strategy & Design](03-project-strategy-design)
   * [1.2.1 Project Framework](04-project-framework)
 
@@ -183,5 +183,5 @@ ___
 
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
-[Next](02-intro-to-project-management){: .btn  .btn--primary}
+[Next](02-project-management-tools){: .btn  .btn--primary}
 [top of page](#introduction){: .btn  .btn--primary}
