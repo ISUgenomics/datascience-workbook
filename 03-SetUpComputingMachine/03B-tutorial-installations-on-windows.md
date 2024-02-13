@@ -17,7 +17,7 @@ header:
 
 # Introduction
 
-This is a guide for setup of a windows machine for bioinformatics data analysis. I list here some important tools useful for most bioinformatics analyses and the process to install them. Check out the <a href="https://bioinformaticsworkbook.org/projectManagement/Intro_projectManagement#gsc.tab=0" target="_blank">Project Management</a> guide before you start a new project.
+This is a guide for setup of a windows machine for bioinformatics data analysis. I list here some important tools useful for most bioinformatics analyses and the process to install them. Check out the <a href="https://datascience.101workbook.org/09-ProjectManagement/00-ProjectManagement-LandingPage.html" target="_blank">Project Management ⤴</a> guide before you start a new project.
 
 ### General guide to software installation
 Installing any software on Windows usually involves some common steps:
@@ -43,11 +43,11 @@ Installing any software on Windows usually involves some common steps:
 
 # Developer tools
 ## Atom editor (now archived)
-Try <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01A-tutorial-VSCode" target="_blank">VSCode</a> instead. <br>
+Try <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01A-tutorial-VSCode" target="_blank">VSCode ⤴</a> instead. <br>
 
-Atom is a text editor with `git` version control integrated in it and is compatible with <a href="https://bioinformaticsworkbook.org/Appendix/Markdown.html#gsc.tab=0" target="_blank">Markdown</a> syntax. It makes working with Git and GitHub more efficient.
+Atom is a text editor with `git` version control integrated in it and is compatible with <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/02-DOCUMENTATION/02-intro-to-markdown" target="_blank">Markdown ⤴</a> syntax. It makes working with Git and GitHub more efficient.
 
-<a href="https://atom.io/" target="_blank">Download</a> and install Atom following general guide to installation, and then install packages to improve function. To install packages on Atom, use the package manager in settings (File -> Settings -> Install). <br>
+<a href="https://atom.io/" target="_blank">Download ⤴</a> and install Atom following general guide to installation, and then install packages to improve function. To install packages on Atom, use the package manager in settings (File -> Settings -> Install). <br>
 
 ![Settings](assets/windows/01Atom.png) <br>
 
@@ -67,7 +67,7 @@ Recommended packages:
 - autocomplete-swift
 - autocomplete-R
 
-When installing a package, if you get the following error, just try installing the package again. Click <a href="https://github.com/atom/atom/issues/3841" target="_blank">here</a> for more info.
+When installing a package, if you get the following error, just try installing the package again. Click <a href="https://github.com/atom/atom/issues/3841" target="_blank">here ⤴</a> for more info.
 
 ```
 Request for package information failed: Application error
@@ -79,14 +79,14 @@ Request for package information failed: Application error
 
 ## Git for Windows
 
-<a href="https://git-scm.com/download/win" target="_blank">Install Git</a>
+<a href="https://git-scm.com/download/win" target="_blank">Install Git ⤴</a>
 
 - Click on the right version to download setup file, I selected 64-bit Git for Windows Setup <br>
 
 ![setup](assets/windows/01Git.png) <br>
 <br>
 - Open downloaded file and install Git (with default options)
-- To set up a GitHub account check the <a href="https://bioinformaticsworkbook.org/Appendix/github/introgithub.html#gsc.tab=0" target="_blank">GitHub tutorial</a>
+- To set up a GitHub account check the <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/04-intro-to-github" target="_blank">GitHub tutorial ⤴</a>
 
 ## Linux on Windows
 Windows Subsystem for Linux (WSL) is a compatibility layer for running Linux binary executables natively on Windows.
@@ -106,31 +106,31 @@ wsl --install
 
 ![installwsl](assets/windows/WSL-install.png) <br>
 <br>
-Restart your computer to finish installation. This will install Ubuntu distribution by default but can be changed. It is possible to run multiple Linux distributions with WSL. For setting up the Linux system and more options, check Microsoft documentation <a href="https://docs.microsoft.com/en-us/windows/wsl/install" target="_blank">here</a>.
+Restart your computer to finish installation. This will install Ubuntu distribution by default but can be changed. It is possible to run multiple Linux distributions with WSL. For setting up the Linux system and more options, check Microsoft documentation <a href="https://docs.microsoft.com/en-us/windows/wsl/install" target="_blank">here ⤴</a>.
 <br>
 <br>
 
 # Programming Languages and IDE
-If you are not familiar with command line, the best way to install and manage IDEs and programming languages like Python and R is through Anaconda Navigator. First, install Anaconda using <a href="https://docs.anaconda.com/anaconda/install/windows/" target="_blank">this link</a>. It will install Anaconda and Anaconda Navigator on your computer. You can now install and then use different IDEs through Anaconda Navigator (search anaconda navigator from search bar). <br>
-Alternatively, see following sections to download IDEs and programming languages independently (although not recommended if you don't know how to set path variables). <br>
+If you are not familiar with command line, the best way to install and manage IDEs and programming languages like Python and R is through Anaconda Navigator. First, <a href="https://docs.anaconda.com/anaconda/install/windows/" target="_blank">install Anaconda and Anaconda Navigator ⤴</a> on your computer. You can now install and then use different IDEs through Anaconda Navigator (search anaconda navigator from search bar). <br>
+Alternatively, see following sections to download IDEs and programming languages independently (you may need to set path variables). <br>
 
 ## IDE
 An Integrated Development Environment (IDE) is a program developed for coding/programming with your language of choice. There are several good IDE options available: <br>
-- <a href="https://www.spyder-ide.org/" target="_blank">Spyder</a> is used for scientific programming in python. It is a user friendly IDE.
-- RStudio is an IDE for programming in R. There are two options for using RStudio; <a href="https://www.rstudio.com/products/rstudio/#rstudio-server" target="_blank">RStudio Server</a> is online version and <a href="https://www.rstudio.com/products/rstudio/download/#download" target="_blank">RStudio Desktop</a> is a desktop application run locally. Check out the <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03A-rstudio-basics" target="_blank">RStudio tutorial</a> for more details.
-- <a href="https://jupyter.org/" target="_blank">Jupyter</a> supports multiple programming languages. Check out the <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-jupyter-basics" target="_blank">Jupyter tutorial</a> for more details.
+- <a href="https://www.spyder-ide.org/" target="_blank">Spyder ⤴</a> is used for scientific programming in python. It is a user friendly IDE.
+- RStudio is an IDE for programming in R. There are two options for using RStudio; <a href="https://www.rstudio.com/products/rstudio/#rstudio-server" target="_blank">RStudio Server ⤴</a> is online version and <a href="https://www.rstudio.com/products/rstudio/download/#download" target="_blank">RStudio Desktop ⤴</a> is a desktop application run locally. Check out the <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03A-rstudio-basics" target="_blank">RStudio tutorial ⤴</a> for more details.
+- <a href="https://jupyter.org/" target="_blank">Jupyter ⤴</a> supports multiple programming languages. Check out the <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-jupyter-basics" target="_blank">Jupyter tutorial ⤴</a> for more details.
 
 ## Python
 Python is a high-level, general-purpose programming language. It is one of the best languages to learn for a beginner in coding. <br>
 
-- <a href="https://www.python.org/downloads/windows/" target="_blank">Install Python</a> locally
-- Follow general guidelines for installation
-- Check out the <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/02-Python-setup" target="_blank">Python tutorial</a> for more options
+- <a href="https://www.python.org/downloads/windows/" target="_blank">Install Python ⤴</a> locally.
+- Follow general guidelines for installation.
+- Check out the <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02-python-programming-environment" target="_blank">Python programming environment ⤴</a> and <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/01-introduction-to-python" target="_blank">Intro to Python ⤴</a> pages of this workbook for more details. 
 
 ## R
 R is a programming language for statistical computing and graphics. It is one of the most popular tools used for data mining, data modeling and generating graphics.
 
-<a href="https://mirror.las.iastate.edu/CRAN/" target="_blank">Install R here</a> locally and check out the tutorials for <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03-r-programming-environment" target="_blank">R Programming Environment</a> for more details including installing R libraries.
+<a href="https://mirror.las.iastate.edu/CRAN/" target="_blank">Install R here ⤴</a> locally and check out the tutorials for <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03-r-programming-environment" target="_blank">R Programming Environment ⤴</a> in this workbook for more details including installing R libraries.
 
 Use RStudio and plot to test if R is working. Open RStudio, type following command in console and press enter.
 
@@ -148,7 +148,7 @@ On the right side, you should see a scatter plot like this: <br>
 
 ## Java
 Java is also a High-level programming language. \
-<a href="https://www.java.com/download/ie_manual.jsp" target="_blank">Install Java</a>
+<a href="https://www.java.com/download/ie_manual.jsp" target="_blank">Download Java ⤴</a>
 
 `Note:` If you are using Windows Subsystem for Linux (WSL), java installation on the Linux system will be different.\
 Type `java` in command line (Linux) to get installation commands such as following:
@@ -161,18 +161,16 @@ sudo apt install openjdk-8-jre-headless   # version 8u252-b09-1ubuntu1
 
 ## Perl
 Perl is a High-level programming language. \
-<a href="https://www.perl.org/get.html" target="_blank">Install Perl</a>
+<a href="https://www.perl.org/get.html" target="_blank">Install Perl ⤴</a>
 
 ### Conda
-Conda is an open-source package and environment manager. Miniforge is a minimalistic installer for conda.
-- <a href="https://github.com/conda-forge/miniforge" target="_blank">Miniforge</a>
-  - <a href="https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Windows-x86_64.exe" target="_blank">Miniforge3 for windows</a>[]()
+Conda is an open-source package and environment manager. <a href="https://github.com/conda-forge/miniforge" target="_blank">Miniforge ⤴</a> is a minimalistic installer for conda.
 
 ### Docker
-Docker is a platform used to deliver software in packages called containers. Check out the tutorials <a href="https://datascience.101workbook.org/06-IntroToHPC/07-CONTAINERS/02-DOCKER/01-docker-basics" target="_blank">Docker basics</a> and <a href="https://datascience.101workbook.org/06-IntroToHPC/07-CONTAINERS/00-introduction-to-containers" target="_blank">Intro to Containers</a> for more details.
+Docker is a platform used to deliver software in packages called containers. Check out the tutorials <a href="https://datascience.101workbook.org/06-IntroToHPC/07-CONTAINERS/02-DOCKER/01-docker-basics" target="_blank">Docker basics ⤴</a> and <a href="https://datascience.101workbook.org/06-IntroToHPC/07-CONTAINERS/00-introduction-to-containers" target="_blank">Intro to Containers ⤴</a> for more details.
 
 ### NextFlow
-Check out the <a href="https://bioinformaticsworkbook.org/dataAnalysis/nextflow/01_introductionToNextFlow.html" target="_blank">NextFlow Workbook</a> for detailed information.
+Check out the <a href="https://bioinformaticsworkbook.org/dataAnalysis/nextflow/01_introductionToNextFlow.html" target="_blank">Intro to NextFlow ⤴</a> in our Bioinformatics Workbook for detailed information.
 
 When using `nextflow` if you get following error:
 ```
@@ -183,18 +181,18 @@ move nextflow in a directory into $PATH or use `./nextflow` if it is in your cur
 
 ## More useful tools
 
-- <a href="https://jbrowse.org/jb2/download/" target="_blank">Jbrowse</a> genome browser
-- Connect to campus network from off-campus location: <a href="https://iastate.service-now.com/it?id=kb_article&sysparm_article=KB0011105&sys_kb_id=b45109171ba8d590ecc3fe6e034bcba0" target="_blank">VPN instructions</a> from Iowa State University
-- For transferring data between HPC clusters and your laptop: <a href="https://www.hpc.iastate.edu/guides/globus-online" target="_blank">Globus instructions</a> from ISU
-- <a href="https://slack.com/downloads/windows" target="_blank">Slack</a> messaging app for groups
-- <a href="https://support.zoom.us/hc/en-us/articles/207373866-Zoom-Installers" target="_blank">Zoom</a> video platform for meetings, webinars, and online events
-- <a href="https://www.webex.com/downloads.html" target="_blank">Webex</a> another video platform
+- <a href="https://jbrowse.org/jb2/download/" target="_blank">Jbrowse ⤴</a> genome browser
+- Connect to campus network from off-campus location: <a href="https://iastate.service-now.com/it?id=kb_article&sysparm_article=KB0011105&sys_kb_id=b45109171ba8d590ecc3fe6e034bcba0" target="_blank">VPN instructions ⤴</a> from Iowa State University
+- For transferring data between HPC clusters and your laptop: <a href="https://www.hpc.iastate.edu/guides/globus-online" target="_blank">Globus instructions ⤴</a> from ISU
+- <a href="https://slack.com/downloads/windows" target="_blank">Slack ⤴</a> messaging app for groups
+- <a href="https://support.zoom.us/hc/en-us/articles/207373866-Zoom-Installers" target="_blank">Zoom ⤴</a> video platform for meetings, webinars, and online events
+- <a href="https://www.webex.com/downloads.html" target="_blank">Webex ⤴</a> another video platform
 
 ## Great tools to have on a computer
 
-- <a href="https://notepad-plus-plus.org/downloads/" target="_blank">Notepad++</a> is a text and source code editor for Windows
-- <a href="http://windowgrid.net/" target="_blank">Windowgrid</a> allows the user to quickly and easily layout their windows on screen
-- <a href="https://getgreenshot.org/downloads/" target="_blank">Greenshot</a> is a screenshot tool with useful features
+- <a href="https://notepad-plus-plus.org/downloads/" target="_blank">Notepad++ ⤴</a> is a text and source code editor for Windows
+- <a href="http://windowgrid.net/" target="_blank">Windowgrid ⤴</a> allows the user to quickly and easily layout their windows on screen
+- <a href="https://getgreenshot.org/downloads/" target="_blank">Greenshot ⤴</a> is a screenshot tool with useful features
 
 
 ___

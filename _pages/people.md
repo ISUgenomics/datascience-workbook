@@ -39,7 +39,7 @@ Satheesh is a Research Scientist III at the Genome Informatics Facility at Iowa 
 ### Sharu Paul
 
 ![Sharu](../assets/images/people/Sharu.jpg){: .align-left}
-Sharu is a Visiting Scientist at the Genome Informatics Facility at Iowa State University. His background is in Biotechnology with a Ph.D. in Genetics and Genomics. He is using a diverse array of bioinformatic analyses to solve big data problems and contribute to developing workshops and tutorials for USDA scientists.
+Sharu is a Research Scientist at the Genome Informatics Facility at Iowa State University. His background is in Biotechnology with a Ph.D. in Genetics and Genomics. His research focus is on Single-Cell Analyses and Deep Neural Networks. He is using a diverse array of bioinformatic analyses to solve big data problems and contribute to developing workshops and tutorials for USDA scientists.
 
 
 ### Arun S. Seetharam
