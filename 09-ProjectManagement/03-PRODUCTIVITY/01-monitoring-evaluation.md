@@ -86,58 +86,58 @@ Here are additional activities under Monitoring and Evaluation that can help ens
 
 ### **MONITORING**
 
-<table style="margin: 0 0 5px 0;"><tr>
-  <th style="width: 25%;">1. Effective Use of Tools</th><td>Select tools that match the project’s requirements. Proper tools simplify tracking progress and analyzing data, making the M&E process more manageable. Tools should enhance, not complicate the process.</td>
+<table style="margin: 0;"><tr>
+  <th style="width: 25%;">1. Effective Use of Tools</th><td style="border: none;">Select tools that match the project’s requirements. Proper tools simplify tracking progress and analyzing data, making the M&E process more manageable. Tools should enhance, not complicate the process.</td>
 </tr></table>
 
-<details style="margin: 0 0 20px 0;"><summary style="background-color: #FFFACD; width: 25%;"><span style="font-weight:800;">EXAMPLE:</span></summary>
+<details style="margin: 0 0 20px 0;"><summary style="background-color: #FFFACD; width: 25%;"><span style="font-weight:800; font-size: 16px;">EXAMPLE:</span></summary>
 
-<div style="background: #FFFACD; padding: 15px; margin-bottom: 20px;">
+<div style="background: #FFFACD; padding: 15px; margin-bottom: 20px; font-size: 16px;">
 <span style="font-style:italic;">The project team uses a cloud-based bioinformatics platform (Galaxy) to streamline data analysis. This platform allows for <b>scalable computing resources</b> to handle large genomic datasets efficiently and <b>includes built-in tools</b> for data visualization, which simplifies the monitoring of analysis progress and outcomes. </span>
 </div>
 </details>
 
-<table style="margin: 0 0 5px 0;"><tr>
-  <th style="width: 25%;">2. Project Progress Checks</th><td>Conduct regular team meetings to review progress, discuss any issues encountered and ensure that data collection & processing tasks follow the predefined protocols. This communication helps identify and solve issues quickly, ensuring the project stays on course.</td>
+<table style="margin: 0;"><tr>
+  <th style="width: 25%;">2. Project Progress Checks</th><td style="border: none;">Conduct regular team meetings to review progress, discuss any issues encountered and ensure that data collection & processing tasks follow the predefined protocols. This communication helps identify and solve issues quickly, ensuring the project stays on course.</td>
 </tr></table>
 
-<details style="margin: 0 0 20px 0;"><summary style="background-color: #FFFACD; width: 25%;"><span style="font-weight:800;">EXAMPLE:</span></summary>
+<details style="margin: 0 0 20px 0;"><summary style="background-color: #FFFACD; width: 25%;"><span style="font-weight:800; font-size: 16px;">EXAMPLE:</span></summary>
 
-<div style="background: #FFFACD; padding: 15px; margin-bottom: 20px;">
+<div style="background: #FFFACD; padding: 15px; margin-bottom: 20px; font-size: 16px;">
 <span style="font-style:italic;">A checklist of key tasks and current status is reviewed periodically, and a chart visualizing trends in quality metrics over time is updated. Additionally, new achievements are marked on a Progress Tracking Board in the lab, providing a clear, visual representation of progress and immediately highlighting any deviations from expected outcomes. </span>
 </div>
 </details>
 
-<table style="margin: 0 0 5px 0;"><tr>
-  <th style="width: 25%;">3. Efficient Use of Resources</th><td>Monitor resource allocation, resource usage and work hours spent on each project activity. Keeping a record helps in assessing whether resources are being used efficiently and aids in planning for future needs.</td>
+<table style="margin: 0;"><tr>
+  <th style="width: 25%;">3. Efficient Use of Resources</th><td style="border: none;">Monitor resource allocation, resource usage and work hours spent on each project activity. Keeping a record helps in assessing whether resources are being used efficiently and aids in planning for future needs.</td>
 </tr></table>
 
-<details style="margin: 0 0 20px 0;"><summary style="background-color: #FFFACD; width: 25%;"><span style="font-weight:800;">EXAMPLE:</span></summary>
+<details style="margin: 0 0 20px 0;"><summary style="background-color: #FFFACD; width: 25%;"><span style="font-weight:800; font-size: 16px;">EXAMPLE:</span></summary>
 
-<div style="background: #FFFACD; padding: 15px; margin-bottom: 20px;">
+<div style="background: #FFFACD; padding: 15px; margin-bottom: 20px; font-size: 16px;">
 <span style="font-style:italic;">The team uses a digital tracking system to log hours spent on data analysis and computational resource usage for each phase. Regular reviews of this log help identify areas where resources can be optimized, such as reallocating computational power during off-peak hours to reduce costs, ensuring that the project remains within budget while maximizing productivity. </span>
 </div>
 </details>
 
-<table style="margin: 0 0 5px 0;"><tr>
-  <th style="width: 25%;">4. Culture of Accountability</th><td>Assign specific team members the responsibility of performing the accuracy measurements and validating data at each step. This step helps catch mistakes and improves the overall quality of data and methods.</td>
+<table style="margin: 0;"><tr>
+  <th style="width: 25%;">4. Culture of Accountability</th><td style="border: none;">Assign specific team members the responsibility of performing the accuracy measurements and validating data at each step. This step helps catch mistakes and improves the overall quality of data and methods.</td>
 </tr></table>
 
-<details style="margin: 0 0 20px 0;"><summary style="background-color: #FFFACD; width: 25%;"><span style="font-weight:800;">EXAMPLE:</span></summary>
+<details style="margin: 0 0 20px 0;"><summary style="background-color: #FFFACD; width: 25%;"><span style="font-weight:800; font-size: 16px;">EXAMPLE:</span></summary>
 
-<div style="background: #FFFACD; padding: 15px; margin-bottom: 20px;">
+<div style="background: #FFFACD; padding: 15px; margin-bottom: 20px; font-size: 16px;">
 <span style="font-style:italic;">
 One team member is tasked with tracking the computational efficiency of the analysis software, while another is responsible for ensuring data integrity after analysis. They both update their findings in an online-accessible spreadsheet, ensuring a continuous performance overview. This method fosters a culture of accountability and provides real-time access to monitoring outcomes.</span>
 </div>
 </details>
 
-<table style="margin: 0 0 5px 0;"><tr>
-  <th style="width: 25%;">5. Transparency <br>in Mid-Project Reporting</th><td>Ensure all aspects of your research, including methodologies, data collection, and findings, are regularly documented and accessible. This fosters trust, supports decision-making and facilitates peer review. It also prepares the ground for future project replication.</td>
+<table style="margin: 0;"><tr>
+  <th style="width: 25%;">5. Transparency <br>in Mid-Project Reporting</th><td style="border: none;">Ensure all aspects of your research, including methodologies, data collection, and findings, are regularly documented and accessible. This fosters trust, supports decision-making and facilitates peer review. It also prepares the ground for future project replication.</td>
 </tr></table>
 
-<details style="margin: 0 0 20px 0;"><summary style="background-color: #FFFACD; width: 25%;"><span style="font-weight:800;">EXAMPLE:</span></summary>
+<details style="margin: 0 0 20px 0;"><summary style="background-color: #FFFACD; width: 25%;"><span style="font-weight:800; font-size: 16px;">EXAMPLE:</span></summary>
 
-<div style="background: #FFFACD; padding: 15px; margin-bottom: 20px;">
+<div style="background: #FFFACD; padding: 15px; margin-bottom: 20px; font-size: 16px;">
 <span style="font-style:italic;">The team sets up a weekly newsletter that details recent activities, <b>preliminary findings, challenges encountered, and strategies employed</b> to overcome them in the ongoing bioinformatics project. This newsletter is shared not only within the team but also with collaborators. It serves as a <b>living documentation</b>, growing with the project, and ensures that when results are ready for publication, the team has a comprehensive and detailed record of the journey, <b>facilitating replication</b> and further research.</span>
 </div>
 </details>
@@ -146,57 +146,57 @@ One team member is tasked with tracking the computational efficiency of the anal
 
 ### **EVALUATION**
 
-<table style="margin: 0 0 5px 0;"><tr>
-  <th style="width: 25%;">1. Data-Driven Decision Making</th><td>Base decisions on analyzed data rather than assumptions. Making informed decisions ensures project adjustments are grounded in real evidence.</td>
+<table style="margin: 0;"><tr>
+  <th style="width: 25%;">1. Data-Driven Decision Making</th><td style="border: none;">Base decisions on analyzed data rather than assumptions. Making informed decisions ensures project adjustments are grounded in real evidence.</td>
 </tr></table>
 
-<details style="margin: 0 0 20px 0;"><summary style="background-color: #FFFACD; width: 25%;"><span style="font-weight:800;">EXAMPLE:</span></summary>
+<details style="margin: 0 0 20px 0;"><summary style="background-color: #FFFACD; width: 25%;"><span style="font-weight:800; font-size: 16px;">EXAMPLE:</span></summary>
 
-<div style="background: #FFFACD; padding: 15px; margin-bottom: 20px;">
+<div style="background: #FFFACD; padding: 15px; margin-bottom: 20px; font-size: 16px;">
 <span style="font-style:italic;">The project team uses a cloud-based bioinformatics platform (Galaxy) to streamline data analysis. This platform allows for <b>scalable computing resources</b> to handle large genomic datasets efficiently and <b>includes built-in tools</b> for data visualization, which simplifies the monitoring of analysis progress and outcomes. </span>
 </div>
 </details>
 
-<table style="margin: 0 0 5px 0;"><tr>
-  <th style="width: 25%;">2. Inclusive  Approaches</th><td>Engage project team and collaborators in the evaluation process to ensure their experiences shape project adaptation. Keep collaborators informed about progress and challenges. This approach enhances project transparency.</td>
+<table style="margin: 0;"><tr>
+  <th style="width: 25%;">2. Inclusive  Approaches</th><td style="border: none;">Engage project team and collaborators in the evaluation process to ensure their experiences shape project adaptation. Keep collaborators informed about progress and challenges. This approach enhances project transparency.</td>
 </tr></table>
 
-<details style="margin: 0 0 20px 0;"><summary style="background-color: #FFFACD; width: 25%;"><span style="font-weight:800;">EXAMPLE:</span></summary>
+<details style="margin: 0 0 20px 0;"><summary style="background-color: #FFFACD; width: 25%;"><span style="font-weight:800; font-size: 16px;">EXAMPLE:</span></summary>
 
-<div style="background: #FFFACD; padding: 15px; margin-bottom: 20px;">
+<div style="background: #FFFACD; padding: 15px; margin-bottom: 20px; font-size: 16px;">
 <span style="font-style:italic;"><b>Monthly virtual meetings</b> are held with all project collaborators, including bioinformatics team, microbiology experts, and funding agency representatives, to review progress, <b>discuss preliminary data</b>, and make collective decisions on any project adjustments, <b>ensuring all voices are heard</b> and considered in steering the project forward. </span>
 </div>
 </details>
 
-<table style="margin: 0 0 5px 0;"><tr>
-  <th style="width: 25%;">3. Qualitative Feedback from the Team</th><td>Collect and consider the team's qualitative feedback alongside quantitative data. This feedback ensures diverse perspectives and provides deeper insights into the project's areas for improvement.</td>
+<table style="margin: 0;"><tr>
+  <th style="width: 25%;">3. Qualitative Feedback from the Team</th><td style="border: none;">Collect and consider the team's qualitative feedback alongside quantitative data. This feedback ensures diverse perspectives and provides deeper insights into the project's areas for improvement.</td>
 </tr></table>
 
-<details style="margin: 0 0 20px 0;"><summary style="background-color: #FFFACD; width: 25%;"><span style="font-weight:800;">EXAMPLE:</span></summary>
+<details style="margin: 0 0 20px 0;"><summary style="background-color: #FFFACD; width: 25%;"><span style="font-weight:800; font-size: 16px;">EXAMPLE:</span></summary>
 
-<div style="background: #FFFACD; padding: 15px; margin-bottom: 20px;">
+<div style="background: #FFFACD; padding: 15px; margin-bottom: 20px; font-size: 16px;">
 <span style="font-style:italic;">After each analysis phase, feedback sessions <b>gather team observations</b> on software usability, data interpretation, and challenges. These insights are then used to <b>refine analysis protocols</b> and enhance the team's effectiveness, ensuring a more inclusive and comprehensive evaluation of the project's progress.</span>
 </div>
 </details>
 
-<table style="margin: 0 0 5px 0;"><tr>
-  <th style="width: 25%;">4. Double-Check and <br>Cross-Validation Mechanisms</th><td>Verify the accuracy of data and tasks by having them reviewed by another team member. The double-check ensures the reliability and accuracy of evaluation results, safeguarding the project's integrity. The peer-review practice ensures high standards are maintained and errors are minimized.</td>
+<table style="margin: 0;"><tr>
+  <th style="width: 25%;">4. Double-Check and <br>Cross-Validation Mechanisms</th><td style="border: none;">Verify the accuracy of data and tasks by having them reviewed by another team member. The double-check ensures the reliability and accuracy of evaluation results, safeguarding the project's integrity. The peer-review practice ensures high standards are maintained and errors are minimized.</td>
 </tr></table>
 
-<details style="margin: 0 0 20px 0;"><summary style="background-color: #FFFACD; width: 25%;"><span style="font-weight:800;">EXAMPLE:</span></summary>
+<details style="margin: 0 0 20px 0;"><summary style="background-color: #FFFACD; width: 25%;"><span style="font-weight:800; font-size: 16px;">EXAMPLE:</span></summary>
 
-<div style="background: #FFFACD; padding: 15px; margin-bottom: 20px;">
+<div style="background: #FFFACD; padding: 15px; margin-bottom: 20px; font-size: 16px;">
 <span style="font-style:italic;">Each stage of the data analysis process, from raw data processing to final marker identification, is <b>independently reviewed by two team members</b>. For instance, one member performs the initial genomic data alignment, while another independently verifies the alignment accuracy using a subset of the data. This <b>cross-validation approach</b> ensures that computational analyses are robust, <b>reducing the likelihood of errors</b> and increasing confidence in the findings.</span>
 </div>
 </details>
 
-<table style="margin: 0 0 5px 0;"><tr>
-  <th style="width: 25%;">5. Continuous Improvement</th><td>Use findings from the evaluation to iteratively enhance project methods and outcomes.  Feedback loops  are crucial for integrating new insights and lessons learned into current and future projects.</td>
+<table style="margin: 0;"><tr>
+  <th style="width: 25%;">5. Continuous Improvement</th><td style="border: none;">Use findings from the evaluation to iteratively enhance project methods and outcomes.  Feedback loops  are crucial for integrating new insights and lessons learned into current and future projects.</td>
 </tr></table>
 
-<details style="margin: 0 0 20px 0;"><summary style="background-color: #FFFACD; width: 25%;"><span style="font-weight:800;">EXAMPLE:</span></summary>
+<details style="margin: 0 0 20px 0;"><summary style="background-color: #FFFACD; width: 25%;"><span style="font-weight:800; font-size: 16px;">EXAMPLE:</span></summary>
 
-<div style="background: #FFFACD; padding: 15px; margin-bottom: 20px;">
+<div style="background: #FFFACD; padding: 15px; margin-bottom: 20px; font-size: 16px;">
 <span style="font-style:italic;">After each phase of genetic marker identification, the team conducted a <b>performance review</b> of the computational models used, comparing predicted resistance patterns with actual laboratory results. This <b>iterative evaluation</b> allowed them to refine their algorithms, improving the accuracy of marker identification in subsequent analyses. </span>
 </div>
 </details>
