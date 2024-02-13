@@ -1,5 +1,5 @@
 ---
-title: "XSEDE Supercomputer"
+title: "ACCESS Program"
 layout: single
 author: Sharu Paul
 author_profile: true
@@ -10,7 +10,7 @@ header:
 
 {% include toc %}
 
-[DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../../00-IntroToHPC-LandingPage.md) / [1. Introduction to HPC infrastructure](../01-introduction-to-hpc-infrastructure.md) / **1.1 XSEDE Supercomputer**
+[DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../../00-IntroToHPC-LandingPage.md) / [1. Introduction to HPC infrastructure](../01-introduction-to-hpc-infrastructure.md) / **1.1 ACCESS Program**
 
 ---
 
@@ -29,6 +29,7 @@ header:
 Researchers or educators at a U.S.-based institution, including federal research labs or commercial organizations are eligible to apply to be a PI for an allocation of compute time and storage. This includes postdoctoral researchers. PIs can share their allocation with graduate or undergraduate students as well as colleagues based outside of the U.S. in accordance with NSF and ACCESS policies. Check out the <a href="https://allocations.access-ci.org/allocations-policy#eligibility" target="_blank">eligibility ⤴</a> part of the allocation policy for more details.
 
 
+# Using ACCESS
 ## How do I get an Account?
 
 You can <a href="https://operations.access-ci.org/identity/new-user" target="_blank">Create an Account ⤴</a> using the link if you are a new user. If you already have an XSEDE account, you can use that to log in to ACCESS. The first step is to apply for a specific project type depending on your needs.
@@ -49,7 +50,7 @@ There is a whole catalog of resources available to use through ACCESS. Explore t
 Once you have created your account, log in and <a href="https://allocations.access-ci.org/get-your-first-project" target="_blank">Get your first project ⤴</a> by submitting a request. If this is your first time using ACCESS, it is recommended to start with the "Explore ACCESS" request. The requests are short and have a quick turn around time to get you started with a small but decent allocation to get started. For the Explore ACCESS request you need Project title, abstract, and a CV. For details, check the <a href="https://allocations.access-ci.org/get-your-first-project" target="_blank">Get your first project ⤴</a> page. For more information about how to prepare the request for different project types, check the <a href="https://allocations.access-ci.org/prepare-requests" target="_blank">Prepare Requests ⤴</a> page.
 
 
-## More information
+# More information
 
 * <a href="https://allocations.access-ci.org/how-to" target="_blank">How-To: Guide to ACCESS ⤴</a>
 * <a href="https://allocations.access-ci.org/project-types" target="_blank">Project types ⤴</a>

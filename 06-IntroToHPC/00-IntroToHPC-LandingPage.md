@@ -14,7 +14,7 @@ Although today's handy laptops perform many advanced and computationally intensi
 ## <span style="color: #8997c1;">Table of contents</span>
 
 ### **<a href="01-HPC-NETWORKS/01-introduction-to-hpc-infrastructure" style="color: #24376b;">1. Introduction to HPC infrastructure</a>**
-* <a href="01-HPC-NETWORKS/01-XSEDE/01-supercomputer-intro" style="color: #3f5a8a;">1.1 XSEDE Supercomputer</a>
+* <a href="01-HPC-NETWORKS/01-XSEDE/01-supercomputer-intro" style="color: #3f5a8a;">1.1 ACCESS Program</a>
   * <a href="01-HPC-NETWORKS/01-XSEDE/02-supercell-storage" style="color: #3f5a8a;">1.1.1 XSEDE Supercell Storage</a>
 * <a href="01-HPC-NETWORKS/02-SCINET/01-scient-network-intro" style="color: #3f5a8a;">1.2 SCINet Network</a>
   * <a href="01-HPC-NETWORKS/02-SCINET/02-scinet-atlas-cluster" style="color: #3f5a8a;">1.2.1 Atlas Computing Cluster</a>
