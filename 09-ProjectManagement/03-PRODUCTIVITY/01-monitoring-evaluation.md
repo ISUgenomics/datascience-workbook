@@ -18,21 +18,12 @@ header:
 
 # Introduction
 
-In this tutorial, let's dive into the world of Monitoring & Evaluation (M&E) and unpack why it's such a game-changer for your research projects. M&E isn't just fancy jargon; **it's a critical toolkit that helps you keep your project on track**, ensuring that you're not just doing work, but you're doing the right work. It's all about making sure that your project hits its marks, delivers on its promises, and, most importantly, contributes to knowledge and practice in meaningful ways. By integrating M&E from the get-go, you're setting up your project for success and ensuring that every effort counts towards making a tangible impact.
+In this tutorial, let's dive into the world of Monitoring & Evaluation (M&E) and unpack why it's such a game-changer for your research projects. M&E isn't just fancy jargon; **it's a critical toolkit that helps you keep your project on track**, ensuring that you're not just doing work, but you're doing the right work. It's all about making sure that your project hits its marks, delivers on its promises and, most importantly, contributes to knowledge and practice in meaningful ways. By integrating M&E from the get-go, you're setting up your project for success and ensuring that every effort counts towards making a tangible impact.
 
-
-Now, you might be thinking:
-> <i>"That sounds great, but my project isn't flush with resources."</i>
-
-***No worries!*** <br>
-M&E is totally scalable and can be tailored to fit the size and scope of your project, even if you're running on a shoestring budget. It's about being smart with what you've got:
-- leveraging free or low-cost digital tools,
-- simplifying data collection methods, and
-- focusing on key indicators that really matter.
 
 <div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;"> With a little creativity and strategic thinking, M&E can become your project's best friend, guiding you through the research journey and helping you <b>make informed decisions every step of the way</b>. </span>
+<br><span style="font-style:italic;"> With a little creativity and strategic thinking, Monitoring and Evaluation techniques can reinforce your research and help you <b>make informed decisions every step of the way</b>. </span>
 </div>
 
 *Let's explore how you can apply M&E principles effectively, ensuring your project is not just a drop in the ocean but a wave of change in your field.*
@@ -47,95 +38,174 @@ In small to moderate size research projects, M&E plays a crucial role by providi
 <br><span style="font-style:italic;"> Monitoring & Evaluation (M&E) is a systematic framework designed to assess the progress and effectiveness of a research project's activities, ensuring objectives are efficiently met. </span>
 </div>
 
-M&E activities are structured around three pivotal components: `Planning`, `Monitoring`, and `Evaluation`. Each serves a unique purpose:
-- **Planning setting the stage for what you aim to achieve.** <br>
-<i>Establishing clear objectives and benchmarks for the project. This stage sets the direction and goals to be achieved.</i>
+M&E activities are structured around four pivotal components: `Planning`, `Monitoring`, `Evaluation` and `Adaptation`. Each serves a unique purpose:
+- **Planning charting the course for quality oversight.** <br>
+<i>This involves outlining specific aspects of the project that will be monitored to ensure standards are met throughout and guarantee the quality of data, methods, and results.</i>
 
 - **Monitoring keeping tabs on your progress.** <br>
 <i>Continuously tracking progress against the project plan to ensure activities align with the objectives. It helps in identifying any deviations early on.</i>
 
-- **Evaluation providing the reflective lens to assess how well you've hit your targets.** <br>
+- **Evaluation gauging success at key milestones.** <br>
 <i>Assessing the project's outcomes against the initial benchmarks and objectives to determine its success and areas for improvement.</i>
 
+- **Adaptation fine-tuning for excellence.** <br>
+<i>Implementing changes based on evaluation insights to refine and improve project processes and outcomes. This step involves adjusting strategies, methods, or practices in response to identified challenges and opportunities for enhancement.</i>
+
 <div style="background: #FFFACD; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">EXAMPLE:</span>
-<br><span style="font-style:italic;"> Consider a small-scale environmental study aimed at reducing plastic use in a community.
-<li>Through <b>planning</b>, clear targets for plastic reduction are set,  such as reducing plastic bag usage in local grocery stores by 50% within one year. </li>
-<li><b>Monitoring</b> involves regular check-ins on community engagement activities and plastic use metrics. For example, tracking the number of workshops conducted on sustainable living practices and measuring the monthly distribution of plastic bags by local retailers to gauge any decrease in usage. </li>
-<li> Finally, <b>evaluation</b> assesses the overall impact of the project on reducing plastic use, comparing pre and post-intervention data, and offering insights for future initiatives, such as identifying the most effective communication channels for promoting sustainable practices.</li></span>
-</div>
-
-**Diving into M&E practices brings a bounty of benefits to the table.**
-
-<table>
-  <tr><th width="30%">advanatage</th><th>significance</th></tr>
-  <tr><td><b>Clear Project Management</b></td><td>Integrating M&E into your research project sharpens project management skills by providing a clear blueprint to follow, much like having a GPS for your project to stay on course.</td></tr>
-  <tr><td><b>Culture of Accountability</b></td><td>M&E fosters accountability, making it easier to stand by your work and its outcomes through consistent checks and alignment with initial goals.</td></tr>
-  <tr><td><b>Ability to Adapt</b></td><td>The capability to pivot based on solid evidence is empowered by M&E, allowing for strategy adjustments to overcome obstacles and seize opportunities. This adaptability is crucial in research, where the path to outcomes is rarely straight and often full of unexpected twists and turns.</td></tr>
-  <tr><td><b>Efficient Use of Resources</b></td><td>Ensures resources are used effectively and outcomes are achieved as planned, directing the project towards its defined goals.</td></tr>
+<span style="font-weight:800;">EXAMPLE 1:</span>
+<br><i> Consider a moderate-scale agricultural study aimed at improving tomato plant yield using two different organic fertilizers.
+<li><b>Planning:</b> The team decides to monitor plant growth rates and fruit yield as key metrics to assess the effectiveness of each fertilizer. </li>
+<li><b>Monitoring:</b> Every two weeks, the team measures the height of tomato plants and records the number of tomatoes produced per plant, comparing these figures against expected growth milestones and yield targets. </li>
+<li><b>Evaluation:</b> After two months, the team evaluates the collected data and discovers that while plants with Fertilizer A are taller, those with Fertilizer B produce more fruit.</li>
+<li><b>Adaptation:</b> Based on these insights, the team adapts their approach by deciding to combine both fertilizers in a new ratio, aiming to optimize both plant height and fruit yield in the next planting cycle.</li></i>
+------------- <br>
+<span style="font-weight:800;">EXAMPLE 2:</span>
+<br><i> Consider a small-scale bioinformatics project focused on identifying genetic markers associated with resistance to a specific antibiotic in bacteria.</i>
+<table style="margin-bottom: 0px; margin-top: 10px;">
+  <tr><th>Project</th><th>Planning</th><th>Monitoring</th><th>Evaluation</th><th>Adaptation</th></tr>
+  <tr>
+    <td>Bioinformatics project on antibiotic resistance</td>
+    <td>Goal to identify resistance markers via sequence analysis. Key metrics: identification accuracy and computational efficiency.</td>
+    <td>Weekly genome analysis to track resistance marker identification against benchmarks.</td>
+    <td>Noticed overlooked resistance markers and slower computational processes than expected.</td>
+    <td>Refined data algorithms to include more genetic variations and optimized computational methods for speed.</td>
+  </tr>
 </table>
-
-
-## Best Practices:
-
-Best practices in M&E emphasize a structured, transparent, and participatory approach to research, ensuring that projects are not only accountable and effective but also adaptable and impactful based on solid evidence and academic community engagement.
-
-<div style="background: #FFFACD; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">EXAMPLE:</span>
-<br><span style="font-style:italic;">In our exploration of practical actions within Monitoring & Evaluation, we will use an example bioinformatics project focused on identifying genetic markers associated with resistance to a specific antibiotic in bacteria, showcasing how these principles are applied in a real-world research scenario. </span>
 </div>
 
-**1. Effective Use of M&E Tools** <br>
-Adopt and customize M&E tools that fit the project's size, complexity, and goals. Tools should enhance, not complicate, the M&E process.
+## Best Practices
 
-<div style="background: #FFFACD; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">EXAMPLE:</span>
-<br><span style="font-style:italic;">The project team uses a cloud-based bioinformatics platform (Galaxy) to streamline data analysis. This platform allows for <b>scalable computing resources</b> to handle large genomic datasets efficiently and <b>includes built-in tools</b> for data visualization, which simplifies the monitoring of analysis progress and outcomes. </span>
+Boosting the quality of research requires a balanced approach that merges quantitative assessments of specific targets in your project, such as measuring data accuracy or computational efficiency, with qualitative actions and a strong commitment to best practices. This holistic approach ensures that while statistics on data provides objective insights into progress and performance, some good habits enrich the research's depth, integrity, and relevance.
+
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">NOTE:</span>
+<br><span style="font-style:italic;">Best practices in M&E emphasize a structured, transparent, and participatory approach to research, ensuring that projects are not only accountable and effective but also adaptable and impactful based on solid evidence and academic community engagement. </span>
 </div>
 
-**2. Data-Driven Decision Making** <br>
-Base decisions on analyzed data rather than assumptions. This ensures that changes to the project are grounded in evidence.
+Here are additional activities under Monitoring and Evaluation that can help ensure quality assurance.
+
+### **MONITORING**
+
+<table style="margin: 0 0 5px 0;"><tr>
+  <th style="width: 25%;">1. Effective Use of Tools</th><td>Select tools that match the project’s requirements. Proper tools simplify tracking progress and analyzing data, making the M&E process more manageable. Tools should enhance, not complicate the process.</td>
+</tr></table>
+
+<details style="margin: 0 0 20px 0;"><summary style="background-color: #FFFACD; width: 25%;"><span style="font-weight:800;">EXAMPLE:</span></summary>
 
 <div style="background: #FFFACD; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">EXAMPLE:</span>
-<br><span style="font-style:italic;">After initial data analysis indicates lower than expected accuracy in marker identification, the team decides to <b>refine their computational model</b> based on a deeper dive into the data. This involves <b>adjusting the parameters</b> for genetic sequence alignment based on the specificity and sensitivity analysis of the initial outcomes. </span>
+<span style="font-style:italic;">The project team uses a cloud-based bioinformatics platform (Galaxy) to streamline data analysis. This platform allows for <b>scalable computing resources</b> to handle large genomic datasets efficiently and <b>includes built-in tools</b> for data visualization, which simplifies the monitoring of analysis progress and outcomes. </span>
 </div>
+</details>
 
-**3. Continuous Improvement** <br>
-Use M&E findings to iteratively improve project processes and outcomes. Feedback loops should be established for incorporating lessons learned into current and future projects.
+<table style="margin: 0 0 5px 0;"><tr>
+  <th style="width: 25%;">2. Project Progress Checks</th><td>Conduct regular team meetings to review progress, discuss any issues encountered and ensure that data collection & processing tasks follow the predefined protocols. This communication helps identify and solve issues quickly, ensuring the project stays on course.</td>
+</tr></table>
+
+<details style="margin: 0 0 20px 0;"><summary style="background-color: #FFFACD; width: 25%;"><span style="font-weight:800;">EXAMPLE:</span></summary>
 
 <div style="background: #FFFACD; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">EXAMPLE:</span>
-<br><span style="font-style:italic;">After each phase of genetic marker identification, the team conducted a <b>performance review</b> of the computational models used, comparing predicted resistance patterns with actual laboratory results. This <b>iterative evaluation</b> allowed them to refine their algorithms, improving the accuracy of marker identification in subsequent analyses. </span>
+<span style="font-style:italic;">A checklist of key tasks and current status is reviewed periodically, and a chart visualizing trends in quality metrics over time is updated. Additionally, new achievements are marked on a Progress Tracking Board in the lab, providing a clear, visual representation of progress and immediately highlighting any deviations from expected outcomes. </span>
 </div>
+</details>
 
-**4. Inclusive  Approaches and Accountability** <br>
-Engage project team and collaborators in the M&E process to ensure their perspectives and experiences shape project evaluation and adaptation. Keep collaborators informed about progress and challenges. This includes clear communication of goals, methodologies, and changes in the project.
+<table style="margin: 0 0 5px 0;"><tr>
+  <th style="width: 25%;">3. Efficient Use of Resources</th><td>Monitor resource allocation, resource usage and work hours spent on each project activity. Keeping a record helps in assessing whether resources are being used efficiently and aids in planning for future needs.</td>
+</tr></table>
+
+<details style="margin: 0 0 20px 0;"><summary style="background-color: #FFFACD; width: 25%;"><span style="font-weight:800;">EXAMPLE:</span></summary>
 
 <div style="background: #FFFACD; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">EXAMPLE:</span>
-<br><span style="font-style:italic;"><b>Monthly virtual meetings</b> are held with all project collaborators, including bioinformatics team, microbiology experts, and funding agency representatives, to review progress, <b>discuss preliminary data</b>, and make collective decisions on any project adjustments, <b>ensuring all voices are heard</b> and considered in steering the project forward. </span>
+<span style="font-style:italic;">The team uses a digital tracking system to log hours spent on data analysis and computational resource usage for each phase. Regular reviews of this log help identify areas where resources can be optimized, such as reallocating computational power during off-peak hours to reduce costs, ensuring that the project remains within budget while maximizing productivity. </span>
 </div>
+</details>
 
-**5. Cross-validation of Tasks** <br>
-Implement a system for cross-validation of tasks completed by various team members to reduce human errors and enhance the quality of methods and data.
+<table style="margin: 0 0 5px 0;"><tr>
+  <th style="width: 25%;">4. Culture of Accountability</th><td>Assign specific team members the responsibility of performing the accuracy measurements and validating data at each step. This step helps catch mistakes and improves the overall quality of data and methods.</td>
+</tr></table>
+
+<details style="margin: 0 0 20px 0;"><summary style="background-color: #FFFACD; width: 25%;"><span style="font-weight:800;">EXAMPLE:</span></summary>
 
 <div style="background: #FFFACD; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">EXAMPLE:</span>
-<br><span style="font-style:italic;">Each stage of the data analysis process, from raw data processing to final marker identification, is <b>independently reviewed by two team members</b>. For instance, one member performs the initial genomic data alignment, while another independently verifies the alignment accuracy using a subset of the data. This <b>cross-validation approach</b> ensures that computational analyses are robust, <b>reducing the likelihood of errors</b> and increasing confidence in the findings.</span>
+<span style="font-style:italic;">
+One team member is tasked with tracking the computational efficiency of the analysis software, while another is responsible for ensuring data integrity after analysis. They both update their findings in an online-accessible spreadsheet, ensuring a continuous performance overview. This method fosters a culture of accountability and provides real-time access to monitoring outcomes.</span>
 </div>
+</details>
 
-**6. Transparency in Mid-Project Reporting** <br>
-Ensure all aspects of your research, including methodologies, data collection, and findings, are regularly documented and accessible. This fosters trust and facilitates peer review and replication. It also aids in current decision-making and supports future Open Science publishing.
+<table style="margin: 0 0 5px 0;"><tr>
+  <th style="width: 25%;">5. Transparency <br>in Mid-Project Reporting</th><td>Ensure all aspects of your research, including methodologies, data collection, and findings, are regularly documented and accessible. This fosters trust, supports decision-making and facilitates peer review. It also prepares the ground for future project replication.</td>
+</tr></table>
+
+<details style="margin: 0 0 20px 0;"><summary style="background-color: #FFFACD; width: 25%;"><span style="font-weight:800;">EXAMPLE:</span></summary>
 
 <div style="background: #FFFACD; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">EXAMPLE:</span>
-<br><span style="font-style:italic;">The team sets up a weekly newsletter that details recent activities, <b>preliminary findings, challenges encountered, and strategies employed</b> to overcome them in the ongoing bioinformatics project. This newsletter is shared not only within the team but also with collaborators. It serves as a <b>living documentation</b>, growing with the project, and ensures that when results are ready for publication, the team has a comprehensive and detailed record of the journey, <b>facilitating replication</b> and further research.</span>
+<span style="font-style:italic;">The team sets up a weekly newsletter that details recent activities, <b>preliminary findings, challenges encountered, and strategies employed</b> to overcome them in the ongoing bioinformatics project. This newsletter is shared not only within the team but also with collaborators. It serves as a <b>living documentation</b>, growing with the project, and ensures that when results are ready for publication, the team has a comprehensive and detailed record of the journey, <b>facilitating replication</b> and further research.</span>
 </div>
+</details>
 
+
+
+### **EVALUATION**
+
+<table style="margin: 0 0 5px 0;"><tr>
+  <th style="width: 25%;">1. Data-Driven Decision Making</th><td>Base decisions on analyzed data rather than assumptions. Making informed decisions ensures project adjustments are grounded in real evidence.</td>
+</tr></table>
+
+<details style="margin: 0 0 20px 0;"><summary style="background-color: #FFFACD; width: 25%;"><span style="font-weight:800;">EXAMPLE:</span></summary>
+
+<div style="background: #FFFACD; padding: 15px; margin-bottom: 20px;">
+<span style="font-style:italic;">The project team uses a cloud-based bioinformatics platform (Galaxy) to streamline data analysis. This platform allows for <b>scalable computing resources</b> to handle large genomic datasets efficiently and <b>includes built-in tools</b> for data visualization, which simplifies the monitoring of analysis progress and outcomes. </span>
+</div>
+</details>
+
+<table style="margin: 0 0 5px 0;"><tr>
+  <th style="width: 25%;">2. Inclusive  Approaches</th><td>Engage project team and collaborators in the evaluation process to ensure their experiences shape project adaptation. Keep collaborators informed about progress and challenges. This approach enhances project transparency.</td>
+</tr></table>
+
+<details style="margin: 0 0 20px 0;"><summary style="background-color: #FFFACD; width: 25%;"><span style="font-weight:800;">EXAMPLE:</span></summary>
+
+<div style="background: #FFFACD; padding: 15px; margin-bottom: 20px;">
+<span style="font-style:italic;"><b>Monthly virtual meetings</b> are held with all project collaborators, including bioinformatics team, microbiology experts, and funding agency representatives, to review progress, <b>discuss preliminary data</b>, and make collective decisions on any project adjustments, <b>ensuring all voices are heard</b> and considered in steering the project forward. </span>
+</div>
+</details>
+
+<table style="margin: 0 0 5px 0;"><tr>
+  <th style="width: 25%;">3. Qualitative Feedback from the Team</th><td>Collect and consider the team's qualitative feedback alongside quantitative data. This feedback ensures diverse perspectives and provides deeper insights into the project's areas for improvement.</td>
+</tr></table>
+
+<details style="margin: 0 0 20px 0;"><summary style="background-color: #FFFACD; width: 25%;"><span style="font-weight:800;">EXAMPLE:</span></summary>
+
+<div style="background: #FFFACD; padding: 15px; margin-bottom: 20px;">
+<span style="font-style:italic;">After each analysis phase, feedback sessions <b>gather team observations</b> on software usability, data interpretation, and challenges. These insights are then used to <b>refine analysis protocols</b> and enhance the team's effectiveness, ensuring a more inclusive and comprehensive evaluation of the project's progress.</span>
+</div>
+</details>
+
+<table style="margin: 0 0 5px 0;"><tr>
+  <th style="width: 25%;">4. Double-Check and <br>Cross-Validation Mechanisms</th><td>Verify the accuracy of data and tasks by having them reviewed by another team member. The double-check ensures the reliability and accuracy of evaluation results, safeguarding the project's integrity. The peer-review practice ensures high standards are maintained and errors are minimized.</td>
+</tr></table>
+
+<details style="margin: 0 0 20px 0;"><summary style="background-color: #FFFACD; width: 25%;"><span style="font-weight:800;">EXAMPLE:</span></summary>
+
+<div style="background: #FFFACD; padding: 15px; margin-bottom: 20px;">
+<span style="font-style:italic;">Each stage of the data analysis process, from raw data processing to final marker identification, is <b>independently reviewed by two team members</b>. For instance, one member performs the initial genomic data alignment, while another independently verifies the alignment accuracy using a subset of the data. This <b>cross-validation approach</b> ensures that computational analyses are robust, <b>reducing the likelihood of errors</b> and increasing confidence in the findings.</span>
+</div>
+</details>
+
+<table style="margin: 0 0 5px 0;"><tr>
+  <th style="width: 25%;">5. Continuous Improvement</th><td>Use findings from the evaluation to iteratively enhance project methods and outcomes.  Feedback loops  are crucial for integrating new insights and lessons learned into current and future projects.</td>
+</tr></table>
+
+<details style="margin: 0 0 20px 0;"><summary style="background-color: #FFFACD; width: 25%;"><span style="font-weight:800;">EXAMPLE:</span></summary>
+
+<div style="background: #FFFACD; padding: 15px; margin-bottom: 20px;">
+<span style="font-style:italic;">After each phase of genetic marker identification, the team conducted a <b>performance review</b> of the computational models used, comparing predicted resistance patterns with actual laboratory results. This <b>iterative evaluation</b> allowed them to refine their algorithms, improving the accuracy of marker identification in subsequent analyses. </span>
+</div>
+</details>
+
+
+### EXCERCISE
 
 <div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">EXCERCISE: <i>Planning M&E actions in your research</i></span><br>
+<span style="font-weight:800;"><i>Planning M&E actions in your research</i></span><br>
 <br><span style="font-style:italic;">Choose any current or upcoming project you're involved in. Based on the best practice recommendations provided, draft a brief outline of the Monitoring & Evaluation (M&E) actions you plan to implement. Include specific tools, methods, and frequency of evaluations.<br>
 <b> TIP:</b> Ensure your plan addresses each of the key M&E components: Planning, Monitoring, and Evaluation.<br><br>
 <b>Additional Questions to Guide Your Task:</b>
@@ -149,6 +219,7 @@ Ensure all aspects of your research, including methodologies, data collection, a
 </div>
 </span>
 </div>
+
 
 ---
 
@@ -201,7 +272,7 @@ It's smart to recognize the significance and utility of manual methods and low-t
 
 ## Digital Tools
 
-Digital tools for Monitoring & Evaluation in Quality Assurance have become indispensable in the contemporary research. These tools not only streamline the M&E process but also enhance the accuracy and reliability of data collected, offering insights that drive informed decision-making. Below is a selection of digital tools that are particularly useful for M&E tasks in research projects, with a focus on their applicability and ease of use.
+Digital tools for Monitoring & Evaluation in Quality Assurance have become indispensable in the contemporary research. These tools not only streamline the M&E process but also enhance the accuracy and reliability of your research, offering insights that drive informed decision-making. Below is a selection of digital tools that are particularly useful for M&E tasks in research projects, with a focus on their applicability and ease of use.
 
 **Tools for Evaluating Data and Methods**
 
