@@ -41,7 +41,7 @@ header:
 <br>
 
 # Logging in
-To log in to Nova/Condo Clusters, you need to be connected to ISU network on-campus or use <a href="https://vpn.iastate.edu/+CSCOE+/logon.html#form_title_text" target="_blank">ISU VPN ⤴</a> if you are off-campus. The first time you try to log in to Nova or Condo, a new Google Authenticator (GA) account is created. You will need to use GA for login. The first time you use the <a href="https://datascience.101workbook.org/06-IntroToHPC/02-SSH/01-secure-shell-connection" target="_blank">Secure Shell ⤴</a> connection to Nova/Condo, it will respond with:
+To log in to Nova/Condo Clusters, you need to be connected to ISU network on-campus or use <a href="https://vpn.iastate.edu/+CSCOE+/logon.html#form_title_text" target="_blank">ISU VPN ⤴</a> if you are off-campus. The first time you try to log in to Nova or Condo, a new Google Authenticator (GA) account is created. You will need to use GA for login. The first time you use the <a href="https://datascience.101workbook.org/06-IntroToHPC/02-FILE-ACCESS/03-secure-shell-connection" target="_blank">Secure Shell ⤴</a> connection to Nova/Condo, it will respond with:
 
 ```
 "host key not found, generate hostkey?(yes/no)"
@@ -71,7 +71,7 @@ Partitions | <a href="https://www.hpc.iastate.edu/guides/condo-2017/queue-config
 * Use proper documentation and version control such as Git to track changes and ease of reproducibility.
 * Manage your files appropriately on the cluster. Cleaning up unnecessary files and organising data/files is important.
 
-Also check out the <a href="https://datascience.101workbook.org/09-ProjectManagement/01-intro-to-project-management" target="_blank">Project Management ⤴</a> guide for additional tips.
+Also check out the <a href="https://datascience.101workbook.org/09-ProjectManagement/00-RESEARCH-PROJECT/01-project-management-overview" target="_blank">Project Management overview⤴</a> and <a href="https://datascience.101workbook.org/09-ProjectManagement/00-RESEARCH-PROJECT/02-intro-to-project-management" target="_blank">Project Management guide ⤴</a> for additional tips.
 <br>
 <br>
 
@@ -80,7 +80,7 @@ Also check out the <a href="https://datascience.101workbook.org/09-ProjectManage
   * <a href="https://www.hpc.iastate.edu/faq#R" target="_blank">How to use R on a cluster? ⤴</a>
   * <a href="https://www.hpc.iastate.edu/faq#python" target="_blank">How to use Python on a cluster? ⤴</a>
   * <a href="https://www.hpc.iastate.edu/faq#compile" target="_blank">How to compile a software for use on a cluster? ⤴</a>
-* Contact: hpc-help@iastate.edu
+* <b>Contact</b>: hpc-help@iastate.edu
 <br>
 <br>
 
@@ -91,7 +91,7 @@ Tutorials to get you started on different HPC Clusters are available in this wor
 * <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/04-isu-hpc-lss-storage" target="_blank">Large Scale Storage ⤴</a>
 * <a href="https://datascience.101workbook.org/06-IntroToHPC/04-SOFTWARE/01-software-available-on-HPC" target="_blank">Software Available on HPC ⤴</a>
 * Check out the <a href="https://datascience.101workbook.org/06-IntroToHPC/05-JOB-QUEUE/01-SLURM/01-slurm-basics" target="_blank">SLURM Basics ⤴</a> and <a href="https://datascience.101workbook.org/06-IntroToHPC/05-JOB-QUEUE/01-SLURM/03-slurm-1-tutorial-job-submission" target="_blank">Creating SLURM Job Submission Scripts ⤴</a> for running your jobs on any HPC cluster.
-* It is useful to have some basic knowledge about command line before using HPC. Check this <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02E-tutorial-unix-getting-started" target="_blank">Unix tutorial ⤴</a> to learn some basics.
+* It is useful to have some basic knowledge about command line before using HPC. Check this <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02E-tutorial-unix-getting-started" target="_blank">Unix tutorial ⤴</a> to learn the basics.
 <br>
 <br>
 
@@ -99,7 +99,6 @@ Tutorials to get you started on different HPC Clusters are available in this wor
 ## General guides
 
 * <a href="https://www.hpc.iastate.edu/guides/introduction-to-hpc-clusters" target="_blank">Intro to HPC clusters ⤴</a>
-* <a href="https://www.hpc.iastate.edu/guides/introduction-to-hpc-clusters" target="_blank">Intro to Condo cluster ⤴</a>
 * <a href="https://www.hpc.iastate.edu/guides/nova" target="_blank">Intro to Nova cluster ⤴</a>
 * <a href="https://www.hpc.iastate.edu/guides/open-ondemand" target="_blank">Nova OnDemand ⤴</a>
 * <a href="https://www.hpc.iastate.edu/guides/virtual-environments" target="_blank">Virtual Environments ⤴</a>
@@ -108,9 +107,9 @@ Tutorials to get you started on different HPC Clusters are available in this wor
 
 ## Data Transfers
 
-* For transferring data, use the <a href="https://www.hpc.iastate.edu/guides/file-transfers" target="_blank">File Transfers ⤴</a> guide. This uses Condo Data Transfer Node as an example (condodtn). Each cluster has its own data transfer node, for example, Nova cluster has novadtn.
-* Use <a href="https://www.hpc.iastate.edu/guides/rclone" target="_blank">Rclone ⤴</a> guide to sync data between HPC Clusters and Google Drive
-* <a href="https://www.hpc.iastate.edu/guides/globus-online" target="_blank">Globus Connect ⤴</a> online data transfer system. Use Globus Connect Personal to copy data between a cluster and your personal computer
+* For transferring data, use the <a href="https://www.hpc.iastate.edu/guides/file-transfers" target="_blank">File Transfers ⤴</a> guide. Each cluster has its own data transfer node, for example, Nova cluster has novadtn.
+* Use <a href="https://www.hpc.iastate.edu/guides/rclone" target="_blank">Rclone ⤴</a> guide to sync data between HPC Clusters and Google Drive.
+* <a href="https://www.hpc.iastate.edu/guides/globus-online" target="_blank">Globus Connect ⤴</a> online data transfer system. Use Globus Connect Personal to copy data between a cluster and your personal computer.
 <br>
 
 ## Additional guides
@@ -131,12 +130,12 @@ ___
 * [1.3.2 Nova Computing Cluster](03-isu-hpc-nova-cluster)
 * [1.3.3 LSS Storage](04-isu-hpc-lss-storage)
 
-* [2. Remote Access to HPC Resources](../02-FILE-ACCESS/01-remote-data-access)
-* [3. Setting up Your Home Directory for Data Analysis](../03-HOME-DIRECTORY/00-setting-up-home-directory)
-* [4. Software Available on HPC](../04-SOFTWARE/01-software-available-on-HPC)
-* [5. Introduction to Job Scheduling](../05-JOB-QUEUE/00-introduction-to-job-scheduling)
-* [6. Introduction to GNU Parallel](../06-PARALLEL/01-introduction-to-gnu-parallel)
-* [7. Introduction to Containers](../07-CONTAINERS/00-introduction-to-containers)
+* [2. Remote Access to HPC Resources](../../02-FILE-ACCESS/01-remote-data-access.md)
+* [3. Setting up Your Home Directory for Data Analysis](../../03-HOME-DIRECTORY/00-setting-up-home-directory.md)
+* [4. Software Available on HPC](../../04-SOFTWARE/01-software-available-on-HPC.md)
+* [5. Introduction to Job Scheduling](../../05-JOB-QUEUE/00-introduction-to-job-scheduling.md)
+* [6. Introduction to GNU Parallel](../../06-PARALLEL/01-introduction-to-gnu-parallel.md)
+* [7. Introduction to Containers](../../07-CONTAINERS/00-introduction-to-containers.md)
 
 ___
 

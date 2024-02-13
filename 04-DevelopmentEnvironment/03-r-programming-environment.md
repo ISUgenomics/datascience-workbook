@@ -33,8 +33,8 @@ An Integrated Development Environment (IDE) is software designed to make coding 
 ### *A. Universal IDEs*
 Universal or multi-language IDEs are highly customizable, multi-platform text editors that can be used for coding in multiple programming languages. A universal IDE can be a good choice if you work with multiple programming languages and prefer a single development environment for your projects. Some popular universal IDEs are:
 
-* <b>Visual Studio Code (VSCode)</b>: VSCode is an open-source code editor that can be used for R programming by installing the R extension. It provides features such as code highlighting, code completion, and debugging. Learn more about <b>VSCode</b> from the <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01A-tutorial-VSCode" target="_blank">Tutorial: Visual Studio Code  ⤴</a> in this <a href="https://datascience.101workbook.org" target="_blank">workbook ⤴</a>.
-* <b>Microsoft R Open</b>: This is a distribution of R that includes a development environment from Microsoft. <a href="https://mran.microsoft.com/download" target="_blank">Download ⤴</a> Microsoft R Open.
+* <b>Visual Studio Code (VSCode)</b>: VSCode is an open-source code editor that can be used for R programming by installing the R extension. It provides features such as code highlighting, code completion, and debugging. Learn more about <b>VSCode</b> from the <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01A-tutorial-VSCode" target="_blank">Tutorial: Visual Studio Code ⤴</a> in this <a href="https://datascience.101workbook.org" target="_blank">workbook ⤴</a>.
+* <b>Microsoft R Open</b>: This is a distribution of R that includes a development environment from Microsoft. <a href="https://learn.microsoft.com/en-us/answers/questions/1335739/link-to-download-r-open-4-0-2" target="_blank">Microsoft R Open ⤴</a> is now retired.
 * <b>Atom</b>: Now archived, <a href="https://github.blog/2022-06-08-sunsetting-atom/" target="_blank">Atom ⤴</a> is one of the most liked IDEs out there. Plenty of packages are available to extend the functionality, including support of programming languages such as R.
 * <b>Eclipse</b>: Eclipse is a popular open-source Java-based IDE that can be used for R programming through the StatET plugin. It provides features such as code highlighting, debugging, and visualization tools. Check out the <a href="https://www.eclipse.org/ide/" target="_blank">Eclipse website ⤴</a> for information about Eclipse and related IDEs.
 * <b>Architect</b>: is an IDE designed for data scientists. It has an R console integrated within it and supports multiple languages as it is based on Eclipse. Get Architect from the <a href="https://www.getarchitect.io/" target="_blank">website ⤴</a>.
@@ -68,7 +68,7 @@ Text editors that can be used for R programming:
 * Kate
 * Sublime Text
 
-Nano and Vim are Unix text editors and are good options if you are working on an HPC cluster. Learn more about `nano` and `vim` from the tutorial <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02B-text-files-editors" target="_blank">Text Files Editors  ⤴</a> in this <a href="https://datascience.101workbook.org" target="_blank">workbook  ⤴</a>.
+Nano and Vim are Unix text editors and are good options if you are working on an HPC cluster. Learn more about `nano` and `vim` from the tutorial <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02B-text-files-editors" target="_blank">Text Files Editors ⤴</a> in this <a href="https://datascience.101workbook.org" target="_blank">workbook ⤴</a>.
 
 Some basic development environments for programming in R along with the text editors:
 

@@ -17,7 +17,7 @@ header:
 
 # Introduction
 
-Nodes and storage can be purchased on the Nova cluster for use by the researchers at ISU. For details about the Nova cluster, <a href="https://www.hpc.iastate.edu/guides/nova" target="_blank">click here.</a>
+Nodes and storage can be purchased on the Nova cluster for use by the researchers at ISU. For details about the Nova cluster, check out the <a href="https://www.hpc.iastate.edu/guides/nova" target="_blank">ISU HPC webpage</a>.
 <br>
 <br>
 
@@ -89,12 +89,13 @@ ___
 # Further Reading
 * [1.3.3 LSS Storage](04-isu-hpc-lss-storage)
 
-* [2. Remote Access to HPC Resources](../02-FILE-ACCESS/01-remote-data-access)
-* [3. Setting up Your Home Directory for Data Analysis](../03-HOME-DIRECTORY/00-setting-up-home-directory)
-* [4. Software Available on HPC](../04-SOFTWARE/01-software-available-on-HPC)
-* [5. Introduction to Job Scheduling](../05-JOB-QUEUE/00-introduction-to-job-scheduling)
-* [6. Introduction to GNU Parallel](../06-PARALLEL/01-introduction-to-gnu-parallel)
-* [7. Introduction to Containers](../07-CONTAINERS/00-introduction-to-containers)
+* [2. Remote Access to HPC Resources](../../02-FILE-ACCESS/01-remote-data-access.md)
+* [3. Setting up Your Home Directory for Data Analysis](../../03-HOME-DIRECTORY/00-setting-up-home-directory.md)
+* [4. Software Available on HPC](../../04-SOFTWARE/01-software-available-on-HPC.md)
+* [5. Introduction to Job Scheduling](../../05-JOB-QUEUE/00-introduction-to-job-scheduling.md)
+* [6. Introduction to GNU Parallel](../../06-PARALLEL/01-introduction-to-gnu-parallel.md)
+* [7. Introduction to Containers](../../07-CONTAINERS/00-introduction-to-containers.md)
+
 
 ___
 

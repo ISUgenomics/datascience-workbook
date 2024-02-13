@@ -109,7 +109,7 @@ This table illustrates how QA principles are integral at every stage, ensuring t
 | **Review and Revision**              | - incorporating feedback to refine quality<br>- improving research practices based on evaluations|
 
 
-<span style="color: #ff3870;font-weight: 500;">  Quality Assurance in research projects is essential for ensuring the integrity, reliability, and efficiency of research outcomes. </span><br>
+<span style="color: #ff3870;font-weight: 500;">  Quality Assurance in research projects is essential for ensuring the integrity, reliability, and efficiency of research outcomes. </span>
 A comprehensive QA framework for research projects can be structured around three key subsections:
 
 |||
