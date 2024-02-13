@@ -73,7 +73,7 @@ You can select a file from the opened folder, or create a new file. <br>
 <br>
 ![newfile](assets/images/VSC_newfile.png) <br>
 <br>
-A new file opens up and you can start writing in it. VSCode is Markdown compatible. Check out the <a href="https://datascience.101workbook.org/09-ProjectManagement/02-DOCUMENTATION/02-intro-to-markdown" target="_blank">Intro to Markdown ⤴</a> page to learn more about Markdown. VSCode supports multiple programming languages such as Python, R, Java, C++, JavaScript etc. Check out the <a href="https://code.visualstudio.com/docs/languages/overview" target="_blank">official documentation ⤴</a> about programming language support and download the extensions for language(s) of your choice. When you open a file, VSCode detects the language used automatically, but you can also manually change the language mode from lower right corner or by using `Ctrl+k m` shortcut keys. <br>
+A new file opens up and you can start writing in it. VSCode is Markdown compatible. Check out the <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/02-DOCUMENTATION/02-intro-to-markdown" target="_blank">Intro to Markdown ⤴</a> page to learn more about Markdown. VSCode supports multiple programming languages such as Python, R, Java, C++, JavaScript etc. Check out the <a href="https://code.visualstudio.com/docs/languages/overview" target="_blank">official documentation ⤴</a> about programming language support and download the extensions for language(s) of your choice. When you open a file, VSCode detects the language used automatically, but you can also manually change the language mode from lower right corner or by using `Ctrl+k m` shortcut keys. <br>
 <br>
 ![text](assets/images/VSC_text.png)
 <br>
@@ -91,7 +91,7 @@ VSCode has powerful tools to help you find and fix errors in your code. To start
 <br>
 
 ## Version Control
-If you are not familiar with Git, check out this tutorial about <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02-intro-to-github" target="_blank">Intro to GitHub ⤴</a>. It is possible to work with Git repositories directly from the VSC editor. You can clone a repo, or initialize a repo for your project from the terminal. `Source Control` pane on the left is used to manage your Git repositories. You will need to log in to your GitHub account the first time you use Git. The common Git operations such as Pull, Push, Clone, Commit, and Create Branch can be performed from here. <br>
+If you are not familiar with Git, check out these tutorials about <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/02-intro-to-git" target="_blank">Intro to Git ⤴</a> and <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/04-intro-to-github" target="_blank">Intro to GitHub ⤴</a>. It is possible to work with Git repositories directly from the VSC editor. You can clone a repo, or initialize a repo for your project from the terminal. `Source Control` pane on the left is used to manage your Git repositories. You will need to log in to your GitHub account the first time you use Git. The common Git operations such as Pull, Push, Clone, Commit, and Create Branch can be performed from here. Check this page for a list of <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/02A-git-cheatsheet#vs-code-git-commands" target="_blank">Git commands ⤴</a> on VSCode. <br>
 <br>
 ![VC](assets/images/VSC_sourcecontrol.png) <br>
 <br>
@@ -132,6 +132,8 @@ ___
 
 * [2. Python programming environment(s)](02-python-programming-environment)
 * [3. R programming environment(s)](03-r-programming-environment.md)
+
+
 ___
 
 [Homepage](../index.md){: .btn  .btn--primary}

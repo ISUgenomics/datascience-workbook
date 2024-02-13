@@ -18,9 +18,8 @@ header:
 # Introduction
 
 # ComplexHeatmap in R
-To check the github repo for the ComplexHeatmap package <a href="https://github.com/jokergoo/ComplexHeatmap" target="_blank">click here</a>.  <br>
-Complete reference is available <a href="https://jokergoo.github.io/ComplexHeatmap-reference/book/" target="_blank">here</a>. <br>
-The complete reference book contains all the details about this package but can be overwhelming due to the amount of information. I write this tutorial to get you started on using ComplexHeatmap by making simple heatmap and adding some features to it. <br>
+The <a href="https://github.com/jokergoo/ComplexHeatmap" target="_blank">GitHub repo ⤴</a> and the <a href="https://jokergoo.github.io/ComplexHeatmap-reference/book/" target="_blank">complete reference guide ⤴</a> for the ComplexHeatmap package is available. <br>
+The complete reference document contains all the details about this package but can be overwhelming due to the amount of information. The following tutorial should get you started on using ComplexHeatmap by making simple heatmap and adding some features to it. Check out the [Intro to R ⤴](../../../05-IntroToProgramming/04-R/01-introduction-to-R.md) page to get started in learning R programming.<br>
 
 ## Installation
 ComplexHeatmap package needs to be installed and loaded: <br>
@@ -197,7 +196,7 @@ draw(map, align_heatmap_legend = "heatmap_top", merge_legends = TRUE)
 ![ComplexHeatmap](assets/07ComplexHeatmap.png)
 <br>
 
-There are lots of additional features in this package like drawing histograms, boxplots, and violin plots around the heatmap. Check out the complete reference <a href="https://jokergoo.github.io/ComplexHeatmap-reference/book/" target="_blank">documentation</a> for more information. <br> <br>
+There are lots of additional features in this package like drawing histograms, boxplots, and violin plots around the heatmap. Check out the complete reference <a href="https://jokergoo.github.io/ComplexHeatmap-reference/book/" target="_blank">documentation ⤴</a> for more information. <br> <br>
 
 ___
 # Further Reading
