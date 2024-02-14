@@ -1,7 +1,7 @@
 ---
-title: "XSEDE Supercomputer"
+title: "ACCESS Program"
 layout: single
-author: Andrew Severin
+author: Sharu Paul
 author_profile: true
 header:
   overlay_color: "444444"
@@ -10,56 +10,51 @@ header:
 
 {% include toc %}
 
-[DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../../00-IntroToHPC-LandingPage.md) / [1. Introduction to HPC infrastructure](../01-introduction-to-hpc-infrastructure.md) / **1.1 XSEDE Supercomputer**
+[DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../../00-IntroToHPC-LandingPage.md) / [1. Introduction to HPC infrastructure](../01-introduction-to-hpc-infrastructure.md) / **1.1 ACCESS Program**
 
 ---
 
 
-# Introduction
+# Introduction to ACCESS
 
-## What is XSEDE?
+## What is ACCESS?
 
-The Extreme Science and Engineering Discovery Environment (XSEDE) is a National Science Foundation (NSF) funded collection of supercomputers and high-end visualization and data analysis resources. XSEDE resources are an order of magnitude more powerful than most University's local super computer.
-
-For more information about XSEDE this [XSEDE Pamphlet](https://www.xsede.org/documents/10157/169907/what-is-XSEDE.pdf) provides an excellent overview.
+<b>Advanced Cyberinfrastructure Coordination Ecosystem: Services & Support (ACCESS)</b> is a program funded by the National Science Foundation (NSF) to provide researchers and educators access to advanced computing systems and services at <b>no cost</b>. This program aims to support advanced computational research and education by offering outstanding cyberinfrastructure resources. 
 
 
-## Who is Eligible.
-Researchers or educators at a U.S.-based institution, including federal research labs or commercial organizations are eligible to apply to be a PI for an allocation of compute time and storage.  This includes postdoctoral researchers. PIs can give students accounts to use the allocation.
+<span style="color: #ff3870;font-weight: 500;"> ACCESS has now replaced a similar service called the Extreme Science and Engineering Discovery Environment (XSEDE). Similar to ACCESS, XSEDE was a NSF funded collection of supercomputers and high-end visualization and data analysis resources. XSEDE ended on August 31, 2022. Links to archives with more information about XSEDE are available <a href="https://portal.xsede.org/#/guest" target="_blank">here ⤴</a>. </span>
 
-## How do I get an account?
 
-There is a ```Create an Account``` button on the [XSEDE User Portal (XUP)](https://portal.xsede.org/#/guest) or you can go directly to this page through this link: [Create an Account](https://portal.xsede.org/?p_p_id=58&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&saveLastPath=0&_58_struts_action=%2Flogin%2Fcreate_account)
+## Who is Eligible?
+Researchers or educators at a U.S.-based institution, including federal research labs or commercial organizations are eligible to apply to be a PI for an allocation of compute time and storage. This includes postdoctoral researchers. PIs can share their allocation with graduate or undergraduate students as well as colleagues based outside of the U.S. in accordance with NSF and ACCESS policies. Check out the <a href="https://allocations.access-ci.org/allocations-policy#eligibility" target="_blank">eligibility ⤴</a> part of the allocation policy for more details.
+
+
+# Using ACCESS
+## How do I get an Account?
+
+You can <a href="https://operations.access-ci.org/identity/new-user" target="_blank">Create an Account ⤴</a> using the link if you are a new user. If you already have an XSEDE account, you can use that to log in to ACCESS. The first step is to apply for a specific project type depending on your needs.
+
+
+## What are different Project Types?
+
+There are four different project types available: Explore, Discover, Accelerate, and Maximize. The project types differ in terms of how much ACCESS credit they allocate to you. The "Explore" project type is a good starting point for a project to get familiar with the ACCESS resources. Check out the <a href="https://allocations.access-ci.org/project-types" target="_blank">Project types ⤴</a> page for comparison and details. ACCESS credits are like a currency that can be exchanged for different resources.
+
+
+## What are the Available Resources?
+
+There is a whole catalog of resources available to use through ACCESS. Explore the <a href="https://allocations.access-ci.org/resources" target="_blank">Resource Catalog ⤴</a> for details. You can filter the list to find the resources you are interested in using. The catalog also lists the recommended uses and user guides for each resource. Once you have selected the resources you want to use, you can ask for allocation on those resources. Use the <a href="https://allocations.access-ci.org/exchange_calculator" target="_blank">Exchange Calculator ⤴</a> to estimate the conversion cost for the resources of your choice.
+
 
 ## How do I get an Allocation?
 
-Once you have created your account, log in and go to the allocations tab and click on the ```Submit/review Request``` sub-tab.
-
-![](/Appendix/assets/XSEDE-Allocations.png)
-
-If this is your first time using XSEDE, I would recommend a Startup Allocation request.  The requests are short and have a quick turn around time to get you started with a small but decent allocation to get started.  Startup Allocations are very useful to get performance and coding information that will be needed in a full research allocatoin request.
-
-#### Examples
+Once you have created your account, log in and <a href="https://allocations.access-ci.org/get-your-first-project" target="_blank">Get your first project ⤴</a> by submitting a request. If this is your first time using ACCESS, it is recommended to start with the "Explore ACCESS" request. The requests are short and have a quick turn around time to get you started with a small but decent allocation to get started. For the Explore ACCESS request you need Project title, abstract, and a CV. For details, check the <a href="https://allocations.access-ci.org/get-your-first-project" target="_blank">Get your first project ⤴</a> page. For more information about how to prepare the request for different project types, check the <a href="https://allocations.access-ci.org/prepare-requests" target="_blank">Prepare Requests ⤴</a> page.
 
 
-* [XSEDE Example 1](https://portal.xsede.org/documents/10308/29438/Successful+Startup+Request1.pdf)
-* [XSEDE Example 2](https://portal.xsede.org/documents/10308/29438/Successful+Startup+Request2.pdf)
+# More information
 
-## Research Allocation
-
-Once you are more familiar with XSEDE through your Startup allocation and have some performance and coding metrics you can apply for a Research Allocation to meet your computing needs. This is also done in the XUP ``` allocations tab/ Submit/review Request``` sub-tab.  More information on the requirements for the allocation request including formatting and required documentation can be found in their [Research Allocation Documentation](https://portal.xsede.org/allocations/research)
-
-## Getting started on Bridges
-
-If you decide to use bridges resources then you will need to create a separate login and password. See the following documentation for more information
-
-* [Getting started on Bridges](https://portal.xsede.org/psc-bridges)
-
-## More information
-
-* [XSEDE Getting Started Guide](https://www.xsede.org/web/site/for-users/getting-started)
-* [XSEDE Documentation](https://portal.xsede.org/group/xup/documentation-overview)
-
+* <a href="https://allocations.access-ci.org/how-to" target="_blank">How-To: Guide to ACCESS ⤴</a>
+* <a href="https://allocations.access-ci.org/project-types" target="_blank">Project types ⤴</a>
+* <a href="https://allocations.access-ci.org/allocations-policy" target="_blank">Allocations policy ⤴</a> 
 
 
 ___

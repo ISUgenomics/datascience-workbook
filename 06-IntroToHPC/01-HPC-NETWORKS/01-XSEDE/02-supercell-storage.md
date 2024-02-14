@@ -17,7 +17,9 @@ header:
 
 # Introduction
 
-# Using Supercell-Storage server for backing up and restoring data from PSC servers
+<span style="color: #ff3870;font-weight: 500;"> XSEDE has been replaced by ACCESS. Check the [ACCESS guide ⤴](01-supercomputer-intro.md) for more information. </span>
+
+## Using Supercell-Storage server for backing up and restoring data from PSC servers
 
  This guide will help you getting started and using the Supercell. If you haven't already gotten a username/password for PSC systems (eg., Blacklight), you need to do it now. Use the [password reset link](http://psc.edu/index.php/resources-for-users/allocations "password reset link").
 
