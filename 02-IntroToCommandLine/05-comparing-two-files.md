@@ -569,7 +569,7 @@ Chromosome_9    Mikado_loci     exon    10846885        10846912        .       
 ```
 </details>
 
-**Like the above example, if column 9 from file 1 does match column 9 from file2, print the column 9 from file 1 and the matching line from file 2. Note that this time I am naming the array's key $9 and making the key value $9 as well.
+**Like the above example, if column 9 from file 1 does match column 9 from file2, print the column 9 from file 1 and the matching line from file 2. Note that this time I am naming the array's key $9 and making the key value $9 as well.**
 ```
 awk 'NR==FNR { a[$9]=$9; next } ($9 in a) { print a[$9],$0 }' File1.txt File2.txt
 ```
