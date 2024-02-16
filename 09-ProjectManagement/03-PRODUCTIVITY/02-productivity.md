@@ -376,8 +376,6 @@ To ensure your project's documentation serves as a valuable resource rather than
 | **Utilize Visuals** <br> Incorporate charts, diagrams, and screenshots to complement text and enhance understanding. | **Ignoring Feedback** <br> Not incorporating feedback from users of the documentation to improve its usefulness and readability. |
 
 
-
-
 ### <i><span style="color: #EC8000; ">EXERCISE</span></i>
 This exercise aims to reflect on your current practices in managing and organizing project-related data and information. Consider the following open questions and compare your answers with the provided guidelines to understand what constitutes good and bad practices.
 
@@ -386,7 +384,7 @@ This exercise aims to reflect on your current practices in managing and organizi
 <br><br><span style="font-style:italic;"><b>Where do you currently store your project's data and documentation?</b><br>
 <details><summary>See the recommendations</summary>
 
-<span style="color: #005920;">Storing data and documentation in a centralized, accessible platform (e.g., GitHub, Bitbucket, centralized HPC storage or a dedicated project management tool) is recommended for easy access and collaboration.</span> <span style="color: #AF0000;">Storing files across disparate, unconnected locations such as local machines, various online repositories, or physical notes is a bad practice due to the risk of data loss, inefficiency, and security vulnerabilities.</span>
+<span style="color: #005920;">Storing data and documentation in a centralized, accessible platform (e.g., GitHub, Bitbucket, long-term HPC storage or a dedicated project management tool) is recommended for easy access and collaboration.</span> <span style="color: #AF0000;">Storing files across disparate, unconnected locations such as local machines, various online repositories, or physical notes is a bad practice due to the risk of data loss, inefficiency, and security vulnerabilities.</span>
 </details>
 <br><b>How do you ensure that all team members have access to the latest version of a document or dataset?</b><br>
 <details><summary>See the recommendations</summary>
@@ -442,17 +440,108 @@ Setting deadlines is a powerful tool in the arsenal of time management strategie
 <span style="font-style:italic;">Deadlines serve as mini-milestones, offering clear targets to aim for and opportunities to celebrate progress, significantly enhancing motivation and productivity. </span>
 </div>
 
+**Here are some practical solutions to effectively set deadlines, due dates, and mini-milestones:**
+
+<table>
+  <tr>
+    <td width=250 style="border: transparent;"><img width="800" src="../assets/images/04_project_maping.png"></td>
+    <td><b>Create Visual Project Mapping</b><br>Utilize a whiteboard or digital graphing tool to create a visual representation of your tasks and projects for this year. Start by outlining the "big picture" of projects at the top of the pyramid, then break them down into smaller tasks or milestones below. Use a color scale to highlight the time order or urgency of each task, with more immediate deadlines or higher priority tasks in bold or brighter colors. Consider removing completed tasks periodically to declutter the visualization and make space for new commitments.</td>
+  </tr>
+  <tr>
+    <td width=250 style="border: transparent;"><img width="800" src="../assets/images/04_digital_calendar.png"></td>
+    <td><b>Use a Digital Calendar</b><br>Utilize digital calendar apps like Google Calendar or Microsoft Outlook to schedule deadlines and due dates for tasks and projects.  These tools allow you to set reminders for upcoming tasks and events, ensuring that you stay organized and on top of your commitments. With the ability to customize reminder notifications, you can receive alerts via email, pop-up notifications, or mobile notifications, keeping you informed and accountable. Occasionally browsing your calendar ahead of time allows you to anticipate upcoming deadlines, enabling you to prepare accordingly and maintain a clear overview of your schedule.</td>
+  </tr>
+  <tr>
+    <td width=250 style="border: transparent;"><img width="800" src="../assets/images/04_gantt_chart.png"></td>
+    <td><b>Create a Gantt Chart</b><br>Construct a Gantt chart using tools like Microsoft Excel, Google Sheets, or specialized project management software such as Microsoft Project or Smartsheet. These tools offer more than just a visual representation of tasks, deadlines, and dependencies. Gantt charts provide a visual representation of tasks, deadlines, and dependencies, helping you to plan and track progress effectively. Specifically, they allow you to see how your upcoming tasks overlap in time. This insight enables you to plan for busy periods more effectively or redistribute tasks for a better balance of workload. Additionally, Gantt charts highlight bottlenecks in the project timeline, enabling you to anticipate and address potential delays proactively. </td>
+  </tr>
+  <tr>
+    <td width=250 style="border: transparent;"><img width="800" src="../assets/images/04_task_management.png"></td>
+    <td><b>Use Task Management Tools</b><br>Employ task management tools such as Trello, Asana, or Todoist to create task lists and set deadlines for each task. These tools often allow you to break down larger projects into smaller, manageable tasks and assign due dates accordingly. These tools allow you to create detailed checklists for each task, breaking down complex projects into actionable steps. Once a task or checklist item is completed, you can mark it as done within the task management tool. This visual indicator not only provides a sense of accomplishment but also helps you track your progress and stay motivated. Additionally, completed tasks can be archived or moved to a separate "Completed" section, keeping your task lists organized and clutter-free.</td>
+  </tr>
+  <tr>
+    <td width=250 style="border: transparent;"><img width="800" src="../assets/images/04_accountability_partner.png"></td>
+    <td><b>Establish Accountability Partnerships</b><br>Partner with a colleague or friend who can help hold you accountable for meeting your deadlines. Occasional check-ins and mutual support can motivate you to stay on track and meet your milestones. For example, try mixing it up with some fun accountability tricks. Grab a buddy for coffee breaks, shoot quick updates on your progress through messaging apps, or spice things up with a friendly competition for small prizes. These low-pressure, self-initiated strategies keep you motivated and connected without feeling like a chore.</td>
+  </tr>
+</table>
+
+
+### <i><span style="color: #EC8000; ">EXERCISE</span></i>
+This exercise is designed to help you prioritize tasks, set realistic deadlines, and manage your workload more efficiently. Enjoy the process and use it as an opportunity to gain clarity and focus in your research.
+
+<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px;">
+<span style="font-weight:800;">Data and Information Management Practices</span>
+<br><br><span style="font-style:italic;"><b>Part 1: Visual Mapping of Your Projects</b><br>
+This will provide a clear overview of your projects and tasks, aiding in better understanding of your workload.<br>
+<details><summary>See instructions</summary>
+
+<li>Take a large sheet of paper or use a digital drawing tool.</li>
+<li>Draw a schema with your current projects at the top layer.</li>
+<li>Beneath each project, sketch out the main tasks or milestones involved.</li>
+<li>For each task, add a second layer detailing specific details or subtasks.</li>
+<li>Analyze the connections between projects and identify any overlapping tasks or similarities.</li>
+<li>Determine the priority of each task based on importance and urgency.</li>
+</details>
+<br><b>Part 2: Setting Deadlines using Gantt Chart</b><br>
+This will provide a structured timeline for your tasks, ensuring no overload periods and special attention around bottlenecks.<br>
+<details><summary>See instructions</summary>
+
+<li>Transfer your visual mapping onto a Gantt chart, either on paper or using software like Microsoft Excel.</li>
+<li>Assign deadlines to each task based on their priority and dependencies.</li>
+<li>Ensure that tasks with higher priority are allocated appropriate time slots.</li>
+<li>Use different colors or shading to represent different projects or task categories.</li>
+</details>
+<br><b>Part 3: Setting Reminders in the Digital Calendar</b> <br>
+This will help you stay organized and ensure you're aware of upcoming deadlines well in advance.
+<details><summary>See instructions</summary>
+
+<li>Once you've finalized your Gantt chart, add key deadlines as events to your digital calendar (e.g., Google Calendar, Microsoft Outlook).</li>
+<li>Set reminders for each deadline, scheduling alerts one month and one week before the task is due.</li>
+</details>
+<br><b>REFLECTION</b><br>
+Take a moment to reflect on these questions and gain valuable insights into your project management process.<br><br>
+<b><li>Did creating the visual mapping and Gantt chart help clarify the scope of your current projects?</li>
+<li>Have you discovered any new insights or connections between tasks during the exercise?</li>
+<li>Did the exercise assist in assessing priorities and adjusting deadlines effectively?</li>
+<li>How much did your initial assumptions about project timelines differ from the reality revealed by the Gantt chart?</li>
+<li>Did the Gantt chart highlight any overload periods or bottleneck phases that could potentially delay the project?</li></b>
+<br>When you come back here after a month or so...<br>
+<b><li>Reflecting on your use of calendar reminders, how effective were they in completing tasks before deadlines without last-minute rush and stress?</li></b>
+</span>
+</div>
+
+
 ### Review & Reflect
 
 <div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
 <span style="font-style:italic;">At the end of the week or month, review your accomplishments and reflect on what could be improved. <br>This practice not only helps you appreciate your progress but also sharpens your focus on where you need to go next. </span>
 </div>
 
-Taking time to review and reflect on your work isn't just about patting yourself on the back for jobs well done; it's a crucial strategy for continuous improvement and effective time management. By periodically assessing your progress, you can identify what's working well and pinpoint areas needing a tweak or a complete overhaul. This process ensures that your efforts remain aligned with your objectives, and you can adjust your strategies as needed to stay on course.
+Taking time to review and reflect on your work isn't just about patting yourself on the back for jobs well done. It's a crucial strategy for continuous improvement and effective time management. By periodically assessing your progress, you can identify what's working well and pinpoint areas needing a tweak or a complete overhaul. This process ensures that your efforts remain aligned with your objectives, and you can adjust your strategies as needed to stay on course.
 
 <div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
 <span style="font-style:italic;">Reflection allows you to recognize patterns in your work habits that could be optimized, leading to smarter work, not just harder work. Celebrating milestones along the way boosts morale and reinvigorates your commitment to the project. </span>
 </div>
+
+**Reflective Questions for Better Productivity**<br>
+Take a moment to reflect on these key questions to enhance your research productivity and efficiency.
+
+1. What were the key accomplishments or milestones achieved during this period? <br>
+How did they contribute to overall project productivity?
+
+2. Did the research progress align with the original timeline and objectives?
+
+3. What aspects of the process worked particularly well in terms of enhancing productivity? <br>
+How can these successes be leveraged in future work?
+
+4. Were there any unexpected challenges or obstacles encountered? <br>
+What strategies were implemented to overcome them?
+
+5. How did task prioritization and time/resource allocation influence productivity outcomes?<br>
+What adjustments can be made to optimize efficiency in future projects?
+
+The topics listed below can serve as starting points for deeper reflection on specific aspects:<br>
+`Time Management` `Task Prioritization` `Team Communication` `Collaboration` `Progress Tracking` `Meeting Deadlines` `Project Organization` `Problem-solving Strategies` `Self-Improvement` `Stress Management` `Work-Life Balance`
 
 
 ### Continue Learning
@@ -461,11 +550,12 @@ Taking time to review and reflect on your work isn't just about patting yourself
 <span style="font-style:italic;">Invest time in learning new productivity techniques, tools, or software that can help you streamline your tasks. <br>Making this a habit can significantly boost your efficiency and overall workflow. </span>
 </div>
 
-Continuously seeking out new knowledge and skills is not just about personal growth. It's a strategic approach to staying ahead in the fast-paced world of research. By investing time in learning new productivity techniques and tools, you not only enhance your current workflow but also prepare yourself for future challenges. This ongoing quest for improvement ensures you're always working at your best, equipped with the latest strategies to manage your time and resources effectively.
+Continuously seeking out new knowledge and skills is not just about personal growth. It's a strategic approach to staying ahead in the fast-paced world of research. By investing time in learning new techniques and tools, you not only enhance your productivity in a current workflow but also prepare yourself for future challenges. This ongoing quest for improvement ensures you're always working at your best, equipped with the latest strategies to manage your time and resources effectively.
 
 <div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
 <span style="font-style:italic;">Embracing new learning opportunities can lead to innovative solutions for your research challenges, fostering a more dynamic and adaptable work environment. </span>
 </div>
+
 
 ### Train Your Team
 
@@ -569,7 +659,7 @@ Research projects can often be accompanied by high levels of stress, but adoptin
 </div>
 
 Achieving a healthy work-life balance is essential for sustained productivity and well-being in the research field. It is important for your well-being to:
-- establish clear boundaries between work and personal life, 
+- establish clear boundaries between work and personal life,
 - prioritize self-care and
 - schedule regular breaks and downtime dedicated for relaxation and activities outside of work that bring joy and fulfillment.
 
