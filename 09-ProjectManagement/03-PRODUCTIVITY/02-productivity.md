@@ -811,12 +811,12 @@ This step will guide you through the initial setup process, from registering for
 <b>1. Register for an Account</b><br>
 &emsp; Visit the <a href="https://slack.com" target="_blank">Slack  ⤴</a> website and sign up for an account using your email address. <a href="https://slack.com/demo" target="_blank">Watch a demo of Slack.  ⤴</a><br>
 <b>2. Download the Desktop App</b><br>
-&emsp; After registering, download the <a href="https://slack.com/downloads/" target="_blank">Slack desktop app  ⤴</a> for your operating system (Windows, macOS, or Linux) from the Slack website. Install the app following the on-screen instructions.</br>
+&emsp; After registering, download the <a href="https://slack.com/downloads/" target="_blank">Slack desktop app  ⤴</a> for your operating system (Windows, macOS, or Linux) from the Slack website. Install the app following the on-screen instructions.<br>
 <b>3. Sign In</b><br>
 &emsp; Once installed, open the Slack app and sign in using the credentials you provided during registration.</br>
 <b>4. Explore Slack</b><br>
-&emsp; Take some time to explore the features of Slack. Familiarize yourself with the layout, channels, direct messages, and other functionalities.</br>
-<b>5. Customize Your Profile</b></br>
+&emsp; Take some time to explore the features of Slack. Familiarize yourself with the layout, channels, direct messages, and other functionalities.<br>
+<b>5. Customize Your Profile</b><br>
 &emsp; Click on your profile picture at the bottom left corner of the app to access <a href="https://slack.com/help/categories/360000047906" target="_blank">your profile settings  ⤴</a>. <br>
 &emsp; Add a profile picture and update your display name to make it easier for team members to recognize you.
 </details>
@@ -879,7 +879,7 @@ Here's a list of practices and approaches to help manage stress. By incorporatin
 
 * **Time Management Techniques** <br>
 Implement effective time management techniques such as prioritizing tasks, breaking them down into smaller steps, and using tools like the <a href="https://todoist.com/productivity-methods/pomodoro-technique" target="_blank">Pomodoro Technique  ⤴</a> or <a href="https://todoist.com/productivity-methods/getting-things-done" target="_blank">Getting Things Done (GTD)  ⤴</a> method to work in focused bursts with regular breaks.
-<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px;">
+<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px; margin-left: 37px; font-size: 20px;">
 <span style="font-style:italic;"><b>Challenge:</b> Take a short quiz to find out <a href="https://todoist.com/productivity-methods" target="_blank">Which productivity method is right for you?</a>
 </span>
 </div>
@@ -887,37 +887,37 @@ Implement effective time management techniques such as prioritizing tasks, break
 
 * **Setting Boundaries** <br>
 Establish clear boundaries between work and personal life to prevent burnout. Schedule dedicated time for relaxation, hobbies, and social activities to recharge and rejuvenate. Keep your focus on work during work hours and fully engage in your personal life once the workday ends.
-<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px;">
+<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px; margin-left: 37px; font-size: 20px;">
 <span style="font-style:italic;"><b>Challenge:</b> Set clear boundaries by establishing your designated work hours and resisting the temptation to work outside of those times, ensuring a healthy work-life balance. </span>
 </div>
 
 * **Deep Breathing Exercises** <br>
 Practice deep breathing exercises to calm your mind and body. Take slow, deep breaths, focusing on filling your lungs with air and then exhaling slowly. This can help activate your body's relaxation response and reduce stress.
-<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px;">
+<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px; margin-left: 37px; font-size: 20px;">
 <span style="font-style:italic;"><b>Challenge:</b> Take a 2-minute break every hour to practice deep breathing: inhale slowly for 4 counts, hold for 4 counts, exhale for 4 counts, and repeat. </span>
 </div>
 
 * **Mindfulness Meditation** <br>
 Take short breaks throughout the day to practice mindfulness meditation. Focus on your breath allowing yourself to relax and refocus. During these breaks, you can also take a moment to relax your eyes, especially if you spend many hours working with a computer screen.
-<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px;">
+<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px; margin-left: 37px; font-size: 20px;">
 <span style="font-style:italic;"><b>Challenge:</b> Try the 20-20-20 rule: every 20 minutes, look at something 20 feet away for 20 seconds to reduce eye strain and prevent fatigue. </span>
 </div>
 
 * **Physical Activity** <br>
 Incorporate regular physical activity into your routine, whether it's going for a walk, practicing yoga, or engaging in your favorite form of exercise. Physical activity can help reduce stress levels and improve overall well-being.
-<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px;">
+<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px; margin-left: 37px; font-size: 20px;">
 <span style="font-style:italic;"><b>Challenge:</b> Incorporate a 10-minute stretching into your morning routine or take a 15-minute walk after lunch to boost circulation and alleviate physical tension. </span>
 </div>
 
 * **Seeking Social Support** <br>
 Reach out to friends, family members, or colleagues for support and encouragement. Sharing your feelings and experiences with others can help alleviate stress and provide perspective.
-<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px;">
+<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px; margin-left: 37px; font-size: 20px;">
 <span style="font-style:italic;"><b>Challenge:</b> Send a quick message to a friend to check in and share a positive moment from your day, fostering social connections and providing mutual support. </span>
 </div>
 
 * **Professional Support** <br>
 Don't hesitate to seek professional support from a counselor, therapist, or mental health professional if you're feeling overwhelmed or unable to cope with stress on your own. Therapy can provide valuable tools and strategies for managing stress effectively.
-<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px;">
+<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px; margin-left: 37px; font-size: 20px;">
 <span style="font-style:italic;"><b>Challenge:</b> You've got this! Reaching out for support is a brave and positive step. We're all in this together. </span>
 </div>
 
@@ -942,7 +942,7 @@ These practices can `prevent your burnout` and maintain a sense of equilibrium a
 ### <i><span style="color: #EC8000; ">EXERCISE</span></i>
 This exercise is designed to help you reconnect with your passions and interests, prioritizing time for activities that bring you joy and fulfillment outside of work. This fosters a sense of fulfillment and helps maintain a healthy work-life balance, ultimately contributing to your overall well-being, creativity and productivity.
 
-<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px;">
+<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-style:italic;"><b>Passion Pursuit Challenge</b> <br>
 Take a moment to reflect on what activities or topics truly spark your interest and passion. This could be anything from a hobby you enjoy, a skill you've always wanted to learn, or a cause you're passionate about. <br><br>
 Consider the following questions to help you identify your passion:
