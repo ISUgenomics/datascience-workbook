@@ -28,7 +28,7 @@ Productivity in research isn't merely about speeding through tasks or ticking of
 And just as a ship is only as strong as its crew, **effective collaboration** and delegation are paramount. Sharing the workload not only lightens your burden but also empowers your team, fostering a spirit of unity and shared purpose. Yet, amidst the hustle of navigating through research tasks, remember the importance of **maintaining well-being** as it's crucial for sustaining your work over the long term.
 
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-style:italic;">
 Productivity is the efficiency with which a researcher or research team transforms resources, including time, funding, and equipment, into valuable outcomes, insights, or innovations, often measured by the quality and impact of publications, breakthroughs, and real-world applications achieved within a given timeframe.
 </span>
@@ -42,7 +42,7 @@ Boosting productivity in your research is akin to building a strong, resilient s
 
 ## 1. Set Clear Goals
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-style:italic;">Define what you aim to achieve, both in the short term and long term. This will guide your daily tasks and motivate you. </span>
 </div>
 
@@ -72,7 +72,7 @@ Make sure to leverage the SMART criteria that transform your goals from vague as
 
 **EXAMPLE:** The table below outlines a concise example of setting and achieving SMART goals for a research project in agriculture.
 
-<div style="background: #FFFACD; padding: 15px; margin-bottom: 20px;">
+<div style="background: #FFFACD; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <table style="margin: 0;"><tr><th>step</th><th>Short-Term Goal (Next 3 Months)</th><th>Long-Term Goal (Next 3 Years)</th></tr>
   <tr>
     <td><b>Reflection</b></td>
@@ -105,7 +105,7 @@ Make sure to leverage the SMART criteria that transform your goals from vague as
 
 ### <i><span style="color: #EC8000; ">EXERCISE</span></i>
 
-<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px;">
+<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-weight:800;">How Do I Effectively Set SMART Goals?</span>
 <br><br><span style="font-style:italic;"><b>Step 1: Reflection</b><br>
 Start with a broad reflection on what you want to achieve in both the immediate future and down the line. <br>Consider your values, interests, and the impact you wish to have.
@@ -120,13 +120,13 @@ Start with a broad reflection on what you want to achieve in both the immediate 
 
 ### Celebrate Small Wins
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-style:italic;">Recognizing and celebrating small accomplishments can boost morale and motivation.  Whether through team meetings, informal gatherings, or even digital shout-outs, find ways to shine a light on the small victories.</span>
 </div>
 
 The journey of research is often long and strewn with challenges, making it easy to lose sight of progress. This is where the power of celebrating small wins becomes evident. Small wins are the milestones that mark your journey toward larger goals. They serve as evidence of progress, however incremental, keeping the flame of motivation alive. Celebrating these achievements fosters a culture of recognition and appreciation within the team, highlighting the value of every team member's contributions.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-weight:800;">NOTE:</span>
 <br><span style="font-style:italic;">Incorporating the habit of <b>celebrating your own small wins</b> requires intentional effort. You might start a journal to track and reflect on daily or weekly achievements, set aside time for a small reward when you reach a milestone, or simply pause to acknowledge the completion of a task before moving on to the next.  </span>
 </div>
@@ -159,7 +159,7 @@ Acknowledging small wins helps to:
 
 ### <i><span style="color: #EC8000; ">EXERCISE</span></i>
 
-<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px;">
+<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-weight:800;">Reflecting on Your Most Recent Small Achievement</span>
 <br><br><span style="font-style:italic;"><b>Step 1: Identify Your Achievement</b><br>
 Think about the most recent small achievement in your research work or personal life, especially something you've worked hard on or for a long time.
@@ -178,7 +178,7 @@ Efficiently organizing your research activities is not merely a procedural task.
 
 ### Break Tasks into Manageable Steps
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-style:italic;">Divide larger tasks into smaller, actionable steps to make them less daunting. <br>Resist the urge to be a multitasking hero - being a single-tasking legend is where it's at. You’ll get things done faster and better that way.</span>
 </div>
 
@@ -213,7 +213,7 @@ Here's why multitasking can trip you up:
 
 This exercise is designed to give you hands-on experience with organizing a project and focusing your efforts. By actively engaging in these strategies, you'll develop a better understanding of how to apply them to larger, more complex research projects.
 
-<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px;">
+<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-weight:800;">Plan Manageable Steps in Your Project</span>
 <br><br><span style="font-style:italic;"><b>Part 1: Break Tasks into Manageable Steps</b><br>
 Pick a topic you're interested in, example: "The impact of daily walks on mental health". <br>
@@ -221,7 +221,7 @@ Write down the main components of your project. Then, take each main component a
 Decide which steps need to happen first and assign a rough timeline to each. This helps you see how tasks overlap and what needs immediate attention.
 <br><br><b>Part 2: Avoid Multitasking and Focus on One Step at a Time</b><br>
  Using the steps you've outlined, dedicate a set amount of time to work on just one step. <br>Start with 25 minutes of focused work, followed by a 5-minute break. (Pomodoro Technique)
-<div style="background: #cff4fc; padding: 15px; margin: 10px 0;">
+<div style="background: #cff4fc; padding: 15px; margin: 10px 0; font-size: 20px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;"> Before starting, remove potential distractions. This could mean turning off phone notifications, closing unrelated browser tabs, or finding a quiet place to work. </span>
 </div>
@@ -236,7 +236,7 @@ Decide which steps need to happen first and assign a rough timeline to each. Thi
 
 ### Centralize Information
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-style:italic;">Use a central platform where all team members can access necessary information. This reduces the friction of searching for data, references, or resources. </span>
 </div>
 
@@ -258,7 +258,7 @@ Here's a table comparing the pros and cons of a well-organized and well-document
 | *example* | <b><span style="color: green;">Good Central Repo Example</span></b>| <b><span style="color: red;">Bad Randomized Data Storage Example</span></b> |
 ||*A research team used GitHub to centralize their code, documentation, and results for a multi-year data science project. This setup allowed for seamless collaboration across institutions, easy onboarding of new team members, and efficient project tracking, significantly accelerating their research publication timeline.* | *In a hastily organized study, one team stored datasets on various local machines, shared files via email, and kept crucial documentation in paper notes. This disorganization led to lost data when a team member left, delayed analysis due to inaccessible information, and ultimately, a significant setback in their research project's progress.* |
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-weight:800;">NOTE:</span>
 <br><span style="font-style:italic;">Using a central platform to store all your project information, including data, documentation, and resources, practically ensures that everyone on the team can find what they need without sifting through emails, chat histories, or multiple versions of documents. For instance, <a href="https://github.com" target="_blank">GitHub  ⤴</a> is fantastic for version control and collaboration on code, while High-Performance Computing <b>(HPC) storage</b> solutions offer robust options for storing large datasets securely.  </span>
 </div>
@@ -271,7 +271,7 @@ For a deep dive into setting up and using these platforms effectively, **check o
 
 ### Stay Organized
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-style:italic;">Keep your workspace tidy, and use tools or apps to manage your tasks and projects. By keeping both your physical and digital spaces organized, you’re setting yourself up for success. </span>
 </div>
 
@@ -313,14 +313,14 @@ Create a structured folder system on your computer or cloud storage service (lik
 
 ### Regular Backup
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-style:italic;">Always have backups of critical data and assets. Data loss can be a massive setback for research projects. </span>
 </div>
 
 Imagine spending months on your research, only to lose everything because of a computer crash or a misplaced flash drive. *Ouch, right?* <br>
 That's why backing up your data isn’t just a good idea - it’s a non-negotiable part of your workflow. Think of it as an insurance policy for your research work.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-style:italic;">Backing up your data regularly ensures that even if you face hardware failure, theft, or accidental deletion, your hard work won’t be lost in the void.<br> It’s about peace of mind, knowing your research can withstand almost anything life throws at it. </span>
 </div>
 
@@ -334,7 +334,7 @@ Here's how to make sure your data stays safe and sound:
 | version control | If you’re working with code or documents, version control systems like Git can track changes and back up your work. |
 | regular intervals  | Set a schedule for your backups: daily, weekly, or after any major update to your work. |
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">Follow a golden standard: 3-2-1 backup rule. <br>
 Have at least three total copies of your data, two of which are local but on different devices, and one copy off-site (like cloud storage). <br>
@@ -344,7 +344,7 @@ This way, you’re covered from all angles. </span>
 
 ### Good Documentation
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-style:italic;">When crafting documentation, lay out a roadmap so that your future self, or anyone else who picks up your work, <br>can understand <b>the what, why, and how of the project.</b> It’s a lifesaver when you need to revisit a project after some time. </span>
 </div>
 
@@ -379,7 +379,7 @@ To ensure your project's documentation serves as a valuable resource rather than
 ### <i><span style="color: #EC8000; ">EXERCISE</span></i>
 This exercise aims to reflect on your current practices in managing and organizing project-related data and information. Consider the following open questions and compare your answers with the provided guidelines to understand what constitutes good and bad practices.
 
-<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px;">
+<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-weight:800;">Data and Information Management Practices</span>
 <br><br><span style="font-style:italic;"><b>Where do you currently store your project's data and documentation?</b><br>
 <details><summary>See the recommendations</summary>
@@ -430,13 +430,13 @@ By adopting key strategies for organizing your tasks, meet deadlines more comfor
 
 ### Set Deadlines
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-style:italic;">Add deadlines to all tasks, even those without set due dates. Having a deadline can create a sense of purpose and urgency to complete tasks. </span>
 </div>
 
 Setting deadlines is a powerful tool in the arsenal of time management strategies, transforming endless tasks into upcoming events. By assigning specific end dates to every task, including those inherently without deadlines, you create a structured roadmap of your project. This not only instills a sense of urgency and commitment but also facilitates better planning and prioritization.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-style:italic;">Deadlines serve as mini-milestones, offering clear targets to aim for and opportunities to celebrate progress, significantly enhancing motivation and productivity. </span>
 </div>
 
@@ -469,7 +469,7 @@ Setting deadlines is a powerful tool in the arsenal of time management strategie
 ### <i><span style="color: #EC8000; ">EXERCISE</span></i>
 This exercise is designed to help you prioritize tasks, set realistic deadlines, and manage your workload more efficiently. Enjoy the process and use it as an opportunity to gain clarity and focus in your research.
 
-<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px;">
+<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-weight:800;">Unlock the Strategic Time Management: <i>It's Easier Than You Think!</i></span>
 <br><br><span style="font-style:italic;"><b>Part 1: Visual Mapping of Your Projects</b><br>
 This will provide a clear overview of your projects and tasks, aiding in better understanding of your workload.<br>
@@ -513,13 +513,13 @@ Take a moment to reflect on these questions and gain valuable insights into your
 
 ### Review & Reflect
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-style:italic;">At the end of the week or month, review your accomplishments and reflect on what could be improved. <br>This practice not only helps you appreciate your progress but also sharpens your focus on where you need to go next. </span>
 </div>
 
 Taking time to review and reflect on your work isn't just about patting yourself on the back for jobs well done. It's a crucial strategy for continuous improvement and effective time management. By periodically assessing your progress, you can identify what's working well and pinpoint areas needing a tweak or a complete overhaul. This process ensures that your efforts remain aligned with your objectives, and you can adjust your strategies as needed to stay on course.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-style:italic;">Reflection allows you to recognize patterns in your work habits that could be optimized, leading to smarter work, not just harder work. Celebrating milestones along the way boosts morale and reinvigorates your commitment to the project. </span>
 </div>
 
@@ -546,13 +546,13 @@ The topics listed below can serve as starting points for deeper reflection on sp
 
 ### Continue Learning
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-style:italic;">Invest time in learning new productivity techniques, tools, or software that can help you streamline your tasks. <br>Making this a habit can significantly boost your efficiency and overall workflow. </span>
 </div>
 
 Continuously seeking out new knowledge and skills is not just about personal growth. It's a strategic approach to staying ahead in the fast-paced world of research. By investing time in learning new techniques and tools, you not only enhance your productivity in a current workflow but also prepare yourself for future challenges. This ongoing quest for improvement ensures you're always working at your best, equipped with the latest strategies to manage your time and resources effectively.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-style:italic;">Embracing new learning opportunities can lead to innovative solutions for your research challenges, fostering a more dynamic and adaptable work environment. </span>
 </div>
 
@@ -575,14 +575,14 @@ Take advantage of `online courses`, `tutorials`, `webinars` and `articles` avail
 ### <i><span style="color: #EC8000; ">EXERCISE</span></i>
 This exercise is designed to kickstart your day with clarity and purpose. The recommended proactive approach involves spending just 5-10 minutes revising your plan for the day, allowing you to schedule your tasks in a manageable order. By planning ahead, you can optimize your time for productivity and leave room for enjoyable activities or learning opportunities, taking a daily step toward your self-development. This practice also helps reduce the stress of the unknown and prevents feeling overwhelmed. *Whether it's for work or just tackling your personal to-dos, trust me, this approach really works.*
 
-<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px;">
+<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-weight:800;">Crafting Your To-Do List for a Productive and Fulfilling Day</span>
 <br><br><b>Step 1: Select a digital note-taking app</b><br>
 Grab a pen and paper or open a digital note-taking app. Opting for a single digital note-taking app for your daily to-do list is not only convenient but also offers the advantage of keeping a comprehensive history of your tasks, serving as valuable documentation. <br>
 For Mac users, the built-in <a href="https://support.apple.com/guide/notes/welcome/mac" target="_blank">Notes app  ⤴</a> provides a simple and convenient tool for jotting down notes and creating lists. On Windows, <a href="https://www.microsoft.com/en-us/microsoft-365/onenote/digital-note-taking-app" target="_blank">OneNote  ⤴</a> offers similar functionality, while Linux users can utilize applications like <a href="https://simplenote.com" target="_blank">Simplenote  ⤴</a> for easy note-taking and list management.
 <details><summary><b>PRO TIP</b></summary>
 
-<div style="background: #cff4fc; padding: 15px; margin: 10px 0;">
+<div style="background: #cff4fc; padding: 15px; margin: 10px 0; font-size: 20px;">
 <span style="font-style:italic;">You can also leverage spreadsheet tools like Excel or LibreOffice to organize your tasks. Create monthly sheets within a single file for the entire year, with each day represented in columns and your to-do tasks listed in rows. This method allows for easy tracking and organization of your daily agenda in a structured format. </span>
 <table border="1" style="margin: 0 0;">
   <tr><th>Date</th><th>Feb 1</th><th>Feb 2 - today</th><th>Feb 3</th><th>Feb 4</th><th>Feb 5</th><th>Feb 6</th><th>...</th></tr>
@@ -655,7 +655,7 @@ Break down larger tasks into smaller, actionable steps to make them more managea
 Remain flexible throughout the day and be prepared to adjust your schedule if unexpected tasks or opportunities arise. <br>
 <br><b>Step 7: Reflect and Celebrate</b><br>
 At the end of the day, take a moment to reflect on your accomplishments and learning experiences. Review your to-do list and celebrate the tasks you completed and progress you made toward your goals.
-<div style="background: #cff4fc; padding: 15px; margin: 0 0;">
+<div style="background: #cff4fc; padding: 15px; margin: 0 0; font-size: 20px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">If you didn't finish some tasks, don't stress! Simply move them to tomorrow's list. With time, you'll learn more about how much you can handle each day and get better at managing your tasks. </span>
 </div>
@@ -664,7 +664,7 @@ At the end of the day, take a moment to reflect on your accomplishments and lear
 
 ### Train Your Team
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-style:italic;">Dedicate time not only to familiarize your team with essential tools and platforms but also to support their personal development in areas they're passionate about. This balanced approach can significantly reduce mistakes and enhance overall productivity, fostering a culture of growth and innovation. </span>
 </div>
 
@@ -674,7 +674,7 @@ Empowering your team through training is a critical step towards enhancing produ
 
 This investment in your team’s skills leads to a more cohesive and capable group, ready to tackle challenges with confidence and efficiency. This tailored approach ensures that each member's unique talents and aspirations are recognized and developed, contributing to a more dynamic and resourceful team environment.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-style:italic;">Effective team training also promotes a culture of continuous learning and improvement, encouraging members to share knowledge and support each other’s development. A true leader embraces the expansion of each individual's skill set within the team without hesitation.</span>
 </div>
 
@@ -682,7 +682,7 @@ By implementing these strategies, leaders and managers can create an environment
 
 * **Facilitate Access to Learning Platforms** <br>
 Offer access to online learning platforms such as <a href="https://www.linkedin.com/learning/" target="_blank">LinkedIn Learning  ⤴</a>, <a href="https://www.coursera.org/" target="_blank">Coursera  ⤴</a>, <a href="https://www.udemy.com/" target="_blank">Udemy  ⤴</a>, or <a href="https://www.skillshare.com/" target="_blank">Skillshare  ⤴</a>. These platforms offer a wide range of courses covering various topics and skills. Consider investing in subscriptions to relevant learning platforms.
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">As a USDA ARS scientist, take advantage of your free access to <b>Coursera</b> which offers a variety of certification options through the <a href="https://www.coursera.org/programs/scinet-program-of-study-a6nd3?currentTab=CATALOG" target="_blank">SCINet Program of Study ⤴</a> or <a href="https://www.coursera.org/programs/ai-center-of-excellence-program-of-study-yunri?currentTab=CATALOG" target="_blank">AI Center of Excellence Program of Study  ⤴</a>. Consider enrolling in programs like <a href="https://www.coursera.org/programs/ai-center-of-excellence-program-of-study-yunri/professional-certificates/ibm-data-science" target="_blank">"IBM Data Science Specialization"</a> or <a href="https://www.coursera.org/programs/ai-center-of-excellence-program-of-study-yunri/learn/practical-machine-learning?collectionId=9izGL" target="_blank">"Practical Machine Learning"</a> to enhance your skills and expertise in relevant areas.  </span>
 </div>
@@ -707,7 +707,7 @@ Acknowledge and celebrate team members' learning achievements and milestones. Th
 * **Support Work-Life Balance** <br>
 Encourage a healthy work-life balance by promoting flexibility and offering support for personal development activities outside of work hours. Respect boundaries and encourage time off to recharge and pursue personal interests, which can contribute to overall well-being and motivation.
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px; margin-left: 37px;">
+<div style="background: mistyrose; padding: 15px; margin-bottom: 20px; margin-left: 37px; font-size: 20px;">
 <span style="font-weight:800;">WARNING:</span>
 <br><span style="font-style:italic;">It's essential to foster an inclusive environment where professional development is encouraged but not mandatory, recognizing that team members have diverse life situations and commitments. There should be no pressure or negative consequences for those who are unable to engage in such activities due to personal or professional reasons. </span>
 </div>
@@ -715,7 +715,7 @@ Encourage a healthy work-life balance by promoting flexibility and offering supp
 
 ### Delegate When Possible
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">Don't try to do everything yourself. Delegate tasks that others can do so you can focus on what's most important. The goal is to make your research project a hit, and that means getting the best out of everyone involved.</span>
 </div>
@@ -743,13 +743,13 @@ Explore the examples in the table to master effective delegation techniques that
 
 ### Limit Meetings
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-style:italic;">Too many meetings can disrupt your day. Ensure every meeting has a clear purpose, and avoid them if they're not necessary. </span>
 </div>
 
 Inefficient meeting practices, such as excessive routine meetings or unnecessary reporting requirements, can drain valuable time and hinder productivity in research projects. Instead, prioritize merit-only meetings that add tangible value to the project's progress. Strategic time management involves discerning between essential collaborations and time-consuming rituals, ensuring every meeting contributes meaningfully to the research objectives.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-style:italic;">Implementing strategies like setting agendas, defining objectives, and keeping meetings concise can help optimize their effectiveness and minimize their impact on your schedule. Organizing daily routine or control meetings with no clear purpose leads to a waste of time, resources and hampers the efficiency of the team. </span>
 </div>
 
@@ -771,12 +771,12 @@ The following table delineates between good and bad reasons for scheduling meeti
 | Reviewing and refining project strategies after a milestone. | Using meetings as a substitute for individual work. |
 | Seeking feedback from team members on project closing. | Gathering for the sake of tradition or habit. |
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
+<div style="background: mistyrose; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-weight:800;">WARNING:</span>
 <br><span style="font-style:italic;"><a href="https://en.wikipedia.org/wiki/Micromanagement/" target="_blank"><b>Micromanagement</b>  ⤴</a> is a management style where a supervisor closely observes or controls the work of their subordinates, often to an excessive degree. This can involve scrutinizing small details, such as closely monitoring work processes or nitpicking minor errors. It may also include requiring frequent progress reports through various means such as meetings, messages or spreadsheets, to ensure constant oversight. Additionally, not trusting employees to work autonomously is also a sign of micromanagement through behaviors like checking email drafts or requiring to be cc'd or taking back delegated work. This can lead to decreased morale, reduced productivity, increased stress levels and hindered creativity among team members. </span>
 </div>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">If you work with experienced, conscientious and professional people consider blending the Results-Only Work Environment (<a href="https://www.mindtools.com/agx0aqn/managing-in-a-results-only-work-environment" target="_blank">ROWE  ⤴</a>) approach with a <a href="https://blog.idonethis.com/trust-verify-management-tool/" target="_blank">"trust but verify"  ⤴</a> mindset. Provide employees with autonomy to manage their schedules and tasks while maintaining open channels for feedback and support when needed. This allows for a balance between autonomy and accountability, ensuring alignment with goals while promoting trust and a supportive work environment. </span>
 </div>
@@ -784,7 +784,7 @@ The following table delineates between good and bad reasons for scheduling meeti
 
 ### Effective Collaboration
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-style:italic;">Foster effective collaboration by establishing clear communication channels and encouraging open dialogue among team members. </span>
 </div>
 
@@ -795,14 +795,14 @@ In research projects, effective collaboration is essential for breakthrough and 
 
 Embrace collaboration as a cornerstone of your research process, allowing for diverse perspectives and innovative solutions to emerge.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-style:italic;">Keeping in touch through communication platforms and respecting defined roles and responsibilities are key elements in fostering a collaborative research environment that promotes productivity and innovation.</span>
 </div>
 
 ### <i><span style="color: #EC8000; ">EXERCISE</span></i>
 This exercise is designed to promote seamless communication and collaboration within your team by utilizing <a href="https://slack.com" target="_blank">Slack  ⤴</a> as a centralized platform. By establishing communication channels and encouraging daily engagement, you'll foster a culture of teamwork and mutual support. This approach enhances productivity and efficiency, facilitating effective project management and decision-making processes.
 
-<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px;">
+<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-weight:800;">Building Effective Collaboration with Slack</span>
 <br><br><b>Part 0: Get Started with Slack</b><br>
 This step will guide you through the initial setup process, from registering for a Slack account to customizing your profile and exploring the platform's features.<br>
@@ -865,13 +865,13 @@ In the fast-paced world of the XXI century, it's easy to get caught up in the de
 
 ### Stress Management
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-style:italic;">Incorporate short mindfulness breaks into your daily routine to recharge and refocus. Pausing for a few minutes to breathe deeply, center your thoughts, and reconnect with the present moment can help alleviate stress and enhance clarity and productivity. </span>
 </div>
 
 Research projects can often be accompanied by high levels of stress, but adopting effective stress management strategies can help mitigate its impact on your well-being. By incorporating mindfulness practices, regular physical activity, and efficient time management techniques into your routine, you can better cope with stressors and maintain clarity and resilience in the face of challenges.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-style:italic;">Prioritizing self-care and seeking support from peers or professionals when needed are essential components of effective stress management, ensuring that you can navigate the demands of research with resilience and vitality.</span>
 </div>
 
@@ -924,7 +924,7 @@ Don't hesitate to seek professional support from a counselor, therapist, or ment
 
 ### Work-Life Balance
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-style:italic;">Decide on a specific time to stop working each day and make it a ritual to shut down your computer then. <br>Save exceptions for truly urgent situations, and prioritize relaxation and personal time to recharge for the next day.</span>
 </div>
 
@@ -935,7 +935,7 @@ Achieving a healthy work-life balance is essential for sustained productivity an
 
 These practices can `prevent your burnout` and maintain a sense of equilibrium amidst your professional responsibilities.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
+<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; font-size: 20px;">
 <span style="font-style:italic;">Taking care of yourself isn't a luxury - it's a necessity. Embracing work-life balance not only enhances your quality of life but also improves your effectiveness and creativity as a researcher.</span>
 </div>
 
