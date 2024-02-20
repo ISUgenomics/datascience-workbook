@@ -27,8 +27,8 @@ It is undeniable that good project management leads to improved reproducibility 
 
 
 ### **<a href="02-MANAGEMENT/00-intro-resource-management" style="color: #24376b;">3. Resource Management</a>**
-* <b><a href="02-MANAGEMENT/03-DATA/01-data-management" style="color: #24376b;">3.1 Data Management</a></b>
-  * <a href="02-MANAGEMENT/03-DATA/03-fair-principles" style="color: #3f5a8a;">3.1.1 Open Science Policy</a>
+* <b><a href="02-MANAGEMENT/03-DATA/00-data-management" style="color: #24376b;">3.1 Data Management</a></b>
+  * <a href="02-MANAGEMENT/03-DATA/01-open-principles" style="color: #3f5a8a;">3.1.1 Open Science Policy</a>
     * <a href="02-MANAGEMENT/03-DATA/03-fair-principles" style="color: #3f5a8a;">3.1.2 FAIR Principles</a>
     * <a href="02-MANAGEMENT/03-DATA/02-care-principles" style="color: #3f5a8a;">3.1.3 CARE Principles</a>
     * <a href="02-MANAGEMENT/03-DATA/04-trust-principles" style="color: #3f5a8a;">3.1.4 TRUST Principles</a>

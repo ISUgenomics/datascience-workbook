@@ -170,7 +170,7 @@ Efficient resource management contributes to a smooth project closure by ensurin
 
 ___
 # Further Reading
-* [3.1 Data Management](03-DATA/01-data-management)
+* [3.1 Data Management](03-DATA/00-data-management)
 * [3.2 Code Management](01-SOURCE-CODE/00-code-developments)
 * [3.3 Storage & Version Control](01-SOURCE-CODE/01-storage-version-control)
 * [3.4 Documentation Improvement Tools](02-DOCUMENTATION/01-documentation-improvement-tools)
@@ -183,5 +183,5 @@ ___
 [Homepage](../../index.md){: .btn  .btn--primary}
 [Section Index](../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
 [Previous](../01-COMMUNICATION/02-intro-to-slack){: .btn  .btn--primary}
-[Next](03-DATA/01-data-management){: .btn  .btn--primary}
+[Next](03-DATA/00-data-management){: .btn  .btn--primary}
 [top of page](#introduction){: .btn  .btn--primary}
