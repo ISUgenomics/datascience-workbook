@@ -41,7 +41,7 @@ Reproducibility is not just a technical requirement. It's a commitment to scient
 </div>
 
 
-### Common Challenges
+## Common Challenges
 
 Despite its importance, achieving reproducibility is not without its hurdles. Some of the common challenges include:
 
@@ -65,6 +65,48 @@ From a researcher's perspective, meeting reproducibility standards is challengin
 </span>
 </div>
 
+
+## Lessons Learned from Real-Life Examples
+
+The path toward reproducible research is illuminated by the lessons gleaned from both its triumphs and tribulations. From groundbreaking collaborations to eye-opening challenges, the real-life examples offer invaluable lessons on the critical importance of transparency, meticulous documentation, and community standards in ensuring research integrity and impact.
+
+*Let's explore a few research stories to distill the wisdom gained from their experiences.*
+
+<table>
+  <tr><th style="background-color:#e6f0f0; color: #0ba37f; width:50%;">Successful Examples of Reproducible Research</th><th style="background-color:#fae7e7; color: red; width:50%;">Challenges Due to Lack of Reproducibility</th></tr>
+  <tr>
+    <td><b>The Polymath Project</b> [<a href="https://en.wikipedia.org/wiki/Polymath_Project" target="_blank">source  ⤴</a>]<br>An open collaboration among mathematicians to solve complex problems, the Polymath Project exemplifies reproducibility in action. By documenting every hypothesis, computation, and discussion in real time on a public blog and wiki, the project has not only solved significant problems but also set a standard for openness and reproducibility in mathematical research.<br><i>see also <a href="https://www.nature.com/articles/461879a" target="_blank">Massively collaborative mathematics, Nature volume 461, pages 879–881 (2009)</a></i></td>
+    <td><b>Psychology</b> [<a href="https://osf.io/ezcuj/wiki/home/" target="_blank">source  ⤴</a>]<br>Spearheaded by the Center for Open Science, this project aimed to replicate 100 psychological studies. The findings, published in 2015, showed that less than half (~39%) of the original findings were replicated based on predefined criteria. This initiative revealed the complexity of reproducibility issues in psychological, prompting a widespread reevaluation of research practices in the field.<br><i>see also <a href="https://www.nature.com/articles/nature.2015.18248" target="_blank">Over half of psychology studies fail reproducibility test, Nature (2015)</a></i></td>
+  </tr>
+  <tr>
+    <td><b>Human Microbiome Project (HMP)</b> [<a href="https://commonfund.nih.gov/hmp" target="_blank">source  ⤴</a>]<br>This project, aimed at understanding the microbial components of the human genetic and metabolic landscape, has been a model of reproducibility. By making all data and methodologies publicly available through the HMP DACC (Data Analysis and Coordination Center), researchers worldwide have been able to validate findings and further investigate the human microbiome, accelerating scientific discovery.<br><i>see also <a href="https://www.nature.com/articles/s41586-019-1238-8" target="_blank">The Integrative Human Microbiome Project, Nature volume 569, pages 641–648 (2019)</a></i></td>
+    <td><b>Cancer Research</b> [<a href="https://elifesciences.org/collections/9b1e83d1/reproducibility-project-cancer-biology" target="_blank">source  ⤴</a>]<br>A notable study by researchers at Amgen attempted to replicate 53 landmark studies in cancer biology, only to find a reproducibility rate of about 6%. This stark revelation shed light on the reproducibility challenges within biomedical research, emphasizing the need for more stringent documentation, sharing practices and validation of experimental methods and findings. This initiative prompts calls for improved standards and transparency in research.<br><i>see also <a href="https://www.nature.com/articles/s41586-019-1238-8" target="_blank">Half of top cancer studies fail high-profile reproducibility effort, Nature (2021)</a></i></td>
+  </tr>
+</table>
+
+<div style="background: mistyrose; padding: 15px; margin-bottom: 20px; font-size: 20px;">
+<span style="font-weight:800;">WARNING:</span>
+<br><span style="font-style:italic;">Recent publications continue to highlight the challenge of reproducibility in research, underscoring the ongoing need for a shift in our [reserchers] approach to embrace more transparent and rigorous practices. </span>
+</div>
+
+**Lessons Learned** <br>
+The lessons learned from both successes in reproducibility and the challenges faced due to its absence highlight the essential practices and mindset shifts needed to advance the reliability and validity of scientific findings.
+
+* **Importance of Open Data and Methodologies**<br>
+The successes and failures in reproducibility underscore the importance of open access to data and detailed documentation of methodologies. *Projects like HMP demonstrate how shared data can catalyze progress, while cases like the Reproducibility Project in Psychology reveal the pitfalls of insufficient transparency.*
+
+* **Need for Robust Statistical Analysis** <br>
+Many reproducibility issues arise from statistical misinterpretation or the use of inappropriate analysis methods. A critical lesson is the need for rigorous statistical scrutiny and the adoption of practices like pre-registration of studies to ensure clarity and integrity in research design.
+
+* **Collaboration and Community Standards** <br>
+Both successful and challenging examples highlight the role of community engagement and the establishment of standards in fostering reproducibility. *Collaborative efforts, such as the Polymath Project, illustrate how collective wisdom and open dialogue can lead to breakthroughs, while initiatives like the Reproducibility Project help set benchmarks for research practices.*
+
+<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">By reflecting on these real-life examples, you can better navigate the complexities of reproducibility, adopting practices that enhance the reliability, integrity, and impact of your work. </span>
+</div>
+
+---
 
 # Key Principles and Best Practices
 
@@ -184,7 +226,7 @@ Accessibility is the second key principle, focusing on the ease with which data 
 
 This table aims to guide you toward best practices in making your data and materials accessible, while also highlighting common pitfalls. It also offers actionable advice to improve accessibility and long-term preservation to ensure that data remains usable for future research endeavors.
 
-<table border="1">
+<table>
   <tr><th style="width:15%;">Category</th><th style="background-color:#e6f0f0; color: #0ba37f; width:30%;">Good Practices</th><th style="background-color:#fae7e7; color: red;width:25%;">Bad Practices</th><th style="background-color:#e6f0f0; color: #0ba37f;">Recommendations</th></tr>
   <tr>
     <td>Data Sharing</td>
@@ -281,7 +323,7 @@ The third principle, adherence to standards and protocols, serves as a shared la
 
 This table highlights the importance of adhering to standards and developing robust protocols to enhance the reproducibility of research.
 
-<table border="1">
+<table>
   <tr><th style="width:15%;">Category</th><th style="background-color:#e6f0f0; color: #0ba37f; width:30%;">Good Practices</th><th style="background-color:#fae7e7; color: red;width:25%;">Bad Practices</th><th style="background-color:#e6f0f0; color: #0ba37f;">Recommendations</th></tr>
   <tr>
     <td>Adherence to Standards</td>
@@ -369,7 +411,7 @@ Central to these principles is the need for comprehensive documentation. It's no
 <span style="font-style:italic;">Documentation acts as the blueprint of your research, detailing every choice made and every step taken. </span>
 </div>
 
-<table border="1">
+<table>
   <tr><th style="width:15%;">Category</th><th style="background-color:#e6f0f0; color: #0ba37f; width:30%;">Good Practices</th><th style="background-color:#fae7e7; color: red;width:25%;">Bad Practices</th><th style="background-color:#e6f0f0; color: #0ba37f;">Recommendations</th></tr>
   <tr>
     <td>Research Process Documentation</td>
@@ -468,15 +510,9 @@ Logging any deviations from the planned methodology, such as:
 </details>
 </div>
 
-<!--
-# Tools and Technologies
+---
 
 
-# Real-life Examples
-
-
-# Practical Exercises
--->
 
 ___
 # Further Reading
