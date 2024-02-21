@@ -512,6 +512,51 @@ Logging any deviations from the planned methodology, such as:
 
 ---
 
+# Tools and Technologies
+
+Digital tools are invaluable for ensuring that research is transparent, accessible, and collaborative. They help create a seamless workflow from data collection to analysis, enabling researchers to document each step of their process in a manner that is clear and reproducible.
+* By leveraging [version control systems](#version-control-systems), researchers can track and manage changes over time, ensuring that every iteration of their work is preserved and accessible.
+* [Repositories for sharing datasets and code](#shared-repositories) break down barriers to access, making it possible for scientists to build on each other's work and collaborate in ways previously unimaginable.
+* [Open-source statistical and computational tools](#open-source-tools) democratize the process of data analysis, allowing researchers from around the globe to use, modify, and improve upon existing methods.
+
+Together, these digital tools form a critical infrastructure for advancing reproducible research, ensuring that findings are robust, verifiable, and ready to contribute to the collective knowledge of the scientific community.
+
+*Below, you can find tables summarizing essential tools for reproducible research, complete with quick links to practical tutorials to help you get started with each of them.*
+
+## Version Control Systems
+
+<a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/01-storage-version-control" target="_blank">Version control systems  ⤴</a> are essential for tracking changes in research projects, facilitating collaboration, and ensuring the integrity of research data and code over time.
+
+| tool      | tutorial                | applications                  |
+|-----------|-------------------------|-------------------------------|
+| <a href="https://git-scm.com " target="_blank">Git</a> | <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/02-intro-to-git" target="_blank">GIT - a distributed version control system</a><br> <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/02A-git-cheatsheet" target="_blank">GIT Commands</a> | Distributed version control system widely used for source code management.  |
+| <a href="https://subversion.apache.org" target="_blank">SVN</a> | <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/01-storage-version-control#-subversion-svn" target="_blank">Subversion (SVN)</a> | Centralized version control system designed to keep track of changes in files and directories. |
+
+
+## Shared Repositories
+
+<a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/03-repo-hosting-platforms" target="_blank">Repositories for sharing datasets and code  ⤴</a> are crucial for reproducibility, enabling researchers to access, use, and cite the exact datasets and software versions used in research studies.
+
+| tool      | tutorial                | applications                  |
+|-----------|-------------------------|-------------------------------|
+| <a href="https://github.com" target="_blank">GitHub</a> | <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/04-intro-to-github" target="_blank">Introduction_to_GitHub</a><br> <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/04A-github-advanced" target="_blank">GitHub for advanced users</a> | Hosting for software development and version control using Git, with features for collaboration, issue tracking, and code review. *GitHub is the most commonly used platform for hosting and collaborating on open-source projects.* |
+| <a href="https://zenodo.org" target="_blank">Zenodo</a> | <a href="https://" target="_blank"> </a> | General-purpose open-access repository developed under the European OpenAIRE program, for research data and software. |
+| <a href="https://osf.io" target="_blank">OSF</a> | <a href="https://" target="_blank"> </a> | Open Science Framework supports the entire research lifecycle: planning, execution, reporting, archiving, and discovery. |
+
+
+## Open-source Tools
+
+Open-source statistical and computational tools offer powerful, transparent, and community-validated methods for data analysis, contributing significantly to reproducible research practices.
+
+| tool      | tutorial                | applications                  |
+|-----------|-------------------------|-------------------------------|
+| <a href="https://www.r-project.org" target="_blank">R</a> | <a href="https://datascience.101workbook.org/05-IntroToProgramming/04-R/01-introduction-to-R" target="_blank">Introduction to R programming</a><br> *and <a href="https://datascience.101workbook.org/sitemap.html" target="_blank">more  ⤴</a>* | Statistical computing and graphics, with a wide range of packages for various data analysis tasks. |
+| <a href="https://www.python.org" target="_blank">Python</a> | <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/01-introduction-to-python" target="_blank">Introduction to Python Programming</a><br> *and <a href="https://datascience.101workbook.org/sitemap.html" target="_blank">more  ⤴</a>* | General-purpose programming language with extensive libraries for data analysis, machine learning, and scientific computing. |
+| <a href="https://julialang.org" target="_blank">Julia</a> | <a href="https://datascience.101workbook.org/05-IntroToProgramming/05-JULIA/01-introduction-to-julia" target="_blank">Introduction to Julia Programming</a><br> *and <a href="https://datascience.101workbook.org/sitemap.html" target="_blank">more  ⤴</a>* | High-level, high-performance dynamic programming language for technical computing, with syntax that is familiar to users of other technical computing environments. |
+| <a href="https://jupyter.org" target="_blank">Jupyter Notebooks</a> | <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-jupyter-basics" target="_blank">Jupyter: Interactive Web-Based Multi-Kernel DE</a><br> *and <a href="https://datascience.101workbook.org/sitemap.html" target="_blank">more  ⤴</a>* | Open-source web application that allows you to create and share documents that contain live code, equations, visualizations, and narrative text. |
+
+---
+
 
 
 ___
