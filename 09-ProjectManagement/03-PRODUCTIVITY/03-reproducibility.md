@@ -82,7 +82,7 @@ The first cornerstone of reproducible research is transparency in methodology. T
 This table provides clear examples of practices that promote transparency in the methodology versus those that hinder it, helping to guide you toward more reproducible research practices.
 
 <table>
-  <tr><th style="width:15%;">Methodology</th><th style="background-color:#e6f0f0; color: #0ba37f; width:30%;">Good Practices</th><th style="background-color:#fae7e7; color: red;width:25%;">Bad Practices</th><th style="background-color:#e6f0f0; color: #0ba37f;"">Recommendations</th></tr>
+  <tr><th style="width:15%;">Methodology</th><th style="background-color:#e6f0f0; color: #0ba37f; width:30%;">Good Practices</th><th style="background-color:#fae7e7; color: red;width:25%;">Bad Practices</th><th style="background-color:#e6f0f0; color: #0ba37f;">Recommendations</th></tr>
   <tr>
     <td>Documentation</td>
     <td>Creating comprehensive, step-by-step documentation of the research process, including hypothesis formulation, experimental design, and data analysis, in a publicly accessible format.</td>
@@ -185,7 +185,7 @@ Accessibility is the second key principle, focusing on the ease with which data 
 This table aims to guide you toward best practices in making your data and materials accessible, while also highlighting common pitfalls. It also offers actionable advice to improve accessibility and long-term preservation to ensure that data remains usable for future research endeavors.
 
 <table border="1">
-  <tr><th style="width:15%;">Category</th><th style="background-color:#e6f0f0; color: #0ba37f; width:30%;">Good Practices</th><th style="background-color:#fae7e7; color: red;width:25%;">Bad Practices</th><th style="background-color:#e6f0f0; color: #0ba37f;"">Recommendations</th></tr>
+  <tr><th style="width:15%;">Category</th><th style="background-color:#e6f0f0; color: #0ba37f; width:30%;">Good Practices</th><th style="background-color:#fae7e7; color: red;width:25%;">Bad Practices</th><th style="background-color:#e6f0f0; color: #0ba37f;">Recommendations</th></tr>
   <tr>
     <td>Data Sharing</td>
     <td>Making datasets publicly available in accessible, well-documented formats on platforms like Figshare or Dryad.</td>
@@ -282,7 +282,7 @@ The third principle, adherence to standards and protocols, serves as a shared la
 This table highlights the importance of adhering to standards and developing robust protocols to enhance the reproducibility of research.
 
 <table border="1">
-  <tr><th style="width:15%;">Category</th><th style="background-color:#e6f0f0; color: #0ba37f; width:30%;">Good Practices</th><th style="background-color:#fae7e7; color: red;width:25%;">Bad Practices</th><th style="background-color:#e6f0f0; color: #0ba37f;"">Recommendations</th></tr>
+  <tr><th style="width:15%;">Category</th><th style="background-color:#e6f0f0; color: #0ba37f; width:30%;">Good Practices</th><th style="background-color:#fae7e7; color: red;width:25%;">Bad Practices</th><th style="background-color:#e6f0f0; color: #0ba37f;">Recommendations</th></tr>
   <tr>
     <td>Adherence to Standards</td>
     <td>Following established international or discipline-specific standards for data formatting, analysis, and reporting.</td>
@@ -370,7 +370,7 @@ Central to these principles is the need for comprehensive documentation. It's no
 </div>
 
 <table border="1">
-  <tr><th style="width:15%;">Category</th><th style="background-color:#e6f0f0; color: #0ba37f; width:30%;">Good Practices</th><th style="background-color:#fae7e7; color: red;width:25%;">Bad Practices</th><th style="background-color:#e6f0f0; color: #0ba37f;"">Recommendations</th></tr>
+  <tr><th style="width:15%;">Category</th><th style="background-color:#e6f0f0; color: #0ba37f; width:30%;">Good Practices</th><th style="background-color:#fae7e7; color: red;width:25%;">Bad Practices</th><th style="background-color:#e6f0f0; color: #0ba37f;">Recommendations</th></tr>
   <tr>
     <td>Research Process Documentation</td>
     <td>Meticulously documenting each step of the research process, from hypothesis formation to data analysis and interpretation, in a clear and accessible manner.</td>
