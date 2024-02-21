@@ -557,6 +557,210 @@ Open-source statistical and computational tools offer powerful, transparent, and
 
 ---
 
+# Practice Your Skills
+
+These exercises are crafted to provide you with practical skills and hands-on experience necessary for conducting reproducible research. By engaging with these tasks, you'll not only learn to use essential tools but also understand how each contributes to the overall reproducibility of your research projects.
+
+### <i><span style="color: #EC8000; ">E1: Version Control Basics</span></i>
+
+This exercise is designed to illustrate the critical role of version control in tracking and managing changes in research projects, promoting collaboration, and ensuring that all project versions are accessible and reproducible.
+
+<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px; font-size: 20px;">
+<span style="font-weight:800;">Version Control Basics with Git</span>
+<br><br><b>Objective:</b><br>
+Familiarize yourself with Git for version control to manage changes in your research project efficiently.
+<br><br><b>Instructions:</b><br>
+<b>1. Install Git:</b> Download and install Git from <a href="https://git-scm.com/" target="_blank">https://git-scm.com/</a>.<br>
+<b>2. Create a Repository:</b>
+<li>Open Terminal (Mac/Linux) or Git Bash (Windows).</li>
+<li>Navigate to your project folder and run <code>git init</code> to initialize a new Git repository on your local machine.</li>
+<b>3. Make Your First Commit:</b>
+<li>Create a file in the repository (e.g., <b>README.md</b>) and edit it.</li>
+<li>Run <code>git add README.md</code> to stage the file for committing.</li>
+<li>Then, commit it using <code>git commit -m "Initial commit"</code>.</li>
+<b>4. Explore History:</b>
+<li>Make further changes to your file and commit them.</li>
+<li>Then, use <code>git log</code> to view the history of changes.</li>
+<div style="background: #cff4fc; padding: 15px; margin-top: 10px; font-size: 18px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+To see a more detailed step-by-step guide with graphical aids to complete this exercise, navigate to tutorial <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/02-intro-to-git#gsc.tab=0" target="_blank">GIT - a distributed version control system  ⤴</a> and follow the steps in the hands-on sections:
+<li><a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/02-intro-to-git#1-install-git" target="_blank">Install Git  ⤴</a></li>
+<li><a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/02-intro-to-git#working-with-local-repos" target="_blank">Working with Local Repos  ⤴</a></li></span>
+</div>
+</div>
+
+
+### <i><span style="color: #EC8000; ">E2: Documenting with Jupyter Notebooks</span></i>
+
+This exercise is designed to underscore the importance of using open-source tools for data analysis, emphasizing clear, well-commented scripts that can be easily shared and replicated.
+
+<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px; font-size: 20px;">
+<span style="font-weight:800;">Documenting Research with Jupyter Notebooks</span>
+<br><br><b>Objective:</b><br>
+Create a Jupyter Notebook that integrates code, outputs, and narrative, showcasing how this tool can enhance research documentation.
+<br><br><b>Instructions:</b><br>
+<b>1. Install Jupyter:</b> Follow the instructions at <a href="https://jupyter.org/install" target="_blank">https://jupyter.org/install</a>.<br>
+<b>2. Create a New Notebook:</b>
+<li>Navigate to your project folder.</li>
+<li>Launch Jupyter Notebook ausing command <code>jupyter lab</code>.</li>
+<li>Create a new notebook file using File option in the top menu bar. It will be saved in your File System.</li>
+<b>3. Document Your Process:</b>
+<li>Write a brief introduction in a <b>markdown cell</b> explaining what the notebook will achieve.</li>
+<li>Add separate <b>markdown cells</b> to explain each step, including your thought process and interpretation of results.</li>
+<li>Below each markdown cell include <b>code cells</b> to load a dataset and perform simple analyses (you will use them in Exercise 3).
+<div style="background: #cff4fc; padding: 15px; margin-top: 10px; font-size: 18px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+To see a more detailed step-by-step guide with graphical aids to complete this exercise, navigate to tutorial <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-jupyter-basics" target="_blank">Jupyter: Web-Based Programming Interface  ⤴</a> and follow the installation steps in the <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-jupyter-basics#installing-jupyter" target="_blank">Installing Jupyter  ⤴</a> hands-on section. Then jump to <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-tutorial-jupyter-lab" target="_blank">Getting Started with JupyterLab  ⤴</a> tutorial to launch Jupyter interface, learn about components in the GUI, create new notebook and add cells of various types. To start using rich text markup in your documentation, check out the <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/02-DOCUMENTATION/05-intro-to-markdown" target="_blank">Introduction to Markdown  ⤴</a> tutorial.  </span>
+</div>
+</div>
+
+
+### <i><span style="color: #EC8000; ">E3: Data Analysis in R or Python</span></i>
+
+This exercise is designed to underscore the importance of using open-source tools for data analysis, emphasizing clear, well-commented scripts that can be easily shared and replicated.
+
+<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px; font-size: 20px;">
+<span style="font-weight:800;">Data Analysis in R or Python</span>
+<br><br><b>Objective:</b><br>
+Perform a basic data analysis using R or Python, focusing on making the script reproducible.
+<br><br><b>Instructions:</b><br>
+<b>1. Choose Your Tool</b>
+<li>Install <b>R</b> (programming language) and <b>RStudio</b> (develpment environment, DE)</li>
+&emsp; and/or
+<li>Insytall <b>Python</b> (programming language) and use <b>Jupyter Notebook</b> (develpment environment, DE)</li>
+<b>2. Analysis Task:</b>
+<li>Choose a simple dataset <i>(e.g., <b>Iris dataset</b> is available in both R and Python).</i></li>
+<li>Load the dataset.</li>
+<details style="margin: 5px 0;"><summary style="background: #FFFACD; width:250px;">See Code Example</summary>
+
+<div style="background: #FFFACD; padding: 15px; font-size: 18px;">
+<b>#1 Loading the Iris Dataset in R</b><br>
+<i>The Iris dataset is available in R by default through the datasets package, which is part of the standard R distribution. No additional installation is required for this exercise.</i><br>
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:16px; white-space: pre;"><i style="color: #8896c1;"># Load the Iris dataset</i>
+data(iris)
+<i style="color: #8896c1;"># View the first few rows of the dataset</i>
+head(iris)
+</code><br>
+<b>#2 Loading the Iris Dataset in Python</b><br>
+<i>The Iris dataset can be loaded using Pandas. While Pandas is not in the Python Standard Library, it is widely used for data manipulation and analysis tasks. If you don't have Pandas installed, you can install it using the following command in the terminal: </i><code>pip install pandas seaborn</code><br>
+<i>Then, you can load the  the Iris dataset in a Jupyter Notebook or script file:</i>
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:16px;  white-space: pre;"><i style="color: #8896c1;"># Import pandas and seaborn</i>
+import pandas as pd
+import seaborn as sns
+<i style="color: #8896c1;"># Load the iris dataset</i>
+iris = sns.load_dataset('iris')
+<i style="color: #8896c1;"># View the first few rows of the dataset</i>
+iris.head()
+</code>
+</div>
+</details>
+<b>3. Perform Basic Analysis:</b>
+<li>Perform simple statistical summaries (mean, median, standard deviation).</li>
+<li>Create a basic plot (e.g., scatter plot or histogram).</li>
+<details style="margin: 5px 0;"><summary style="background: #FFFACD; width:265px;">See Code Example <i>(step 1)</i></summary>
+
+<div style="background: #FFFACD; padding: 15px; font-size: 18px;">
+<b>#1 Exploring the Iris Dataset in R</b><br>
+<i>Using R's built-in functions, we can quickly generate summary statistics and species counts, providing insights into the dataset's composition without the need for additional packages.</i><br>
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:16px; white-space: pre;"><i style="color: #8896c1;"># Summary statistics</i>
+summary(iris)
+<i style="color: #8896c1;"># Count of species</i>
+table(iris$Species)
+</code><br>
+<b>#2 Exploring the Iris Dataset in Python</b><br>
+<i>Exploring the Iris dataset in Python requires the use of Pandas for data manipulation and analysis. Pandas' functions, such as <code>describe()</code> for summary statistics and <code>value_counts()</code> for species counts, allow for an in-depth exploration of the dataset. (This step assumes Pandas is installed and imported.)</i><br>
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;font-size:16px;  white-space: pre;"><i style="color: #8896c1;"># Summary statistics</i>
+iris.describe()
+<i style="color: #8896c1;"># Count of species</i>
+iris['species'].value_counts()
+</code>
+</div>
+</details>
+<details style="margin: 5px 0;"><summary style="background: #FFFACD; width:265px;">See Code Example <i>(step 2)</i></summary>
+
+<div style="background: #FFFACD; padding: 15px; font-size: 18px;">
+<i>This step enhances our exploratory data analysis by allowing us to observe the distribution of sepal lengths and widths across different species.</i><br><br>
+<b>#1 Ploting the Iris Dataset in R</b><br>
+<i>To visualize the Iris dataset in R, we utilize the <b>ggplot2</b> package, a powerful tool for creating complex plots from data in a dataframe. If ggplot2 is not already installed, it can be easily added.</i><br>
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:16px; white-space: pre;"><i style="color: #8896c1;"># Install ggplot2 if not already installed</i>
+if(!require(ggplot2)) install.packages("ggplot2")
+library(ggplot2)
+<i style="color: #8896c1;"># Scatter plot of Sepal.Length vs Sepal.Width colored by Species</i>
+ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) + geom_point() +
+    theme_minimal() + ggtitle("Sepal Length vs. Sepal Width")
+</code><br>
+<b>#2 Ploting the Iris Dataset in Python</b><br>
+<i>To plot the Iris dataset in Python, both <b>matplotlib</b> and <b>seaborn</b> libraries are essential. These libraries are not part of the Python Standard Library but can be installed via pip. Together, they provide a comprehensive toolkit for creating a variety of visualizations, including scatter plots. If needed, use the following command in your terminal: </i><code>pip install matplotlib seaborn</code><br>
+<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:16px;  white-space: pre;"><i style="color: #8896c1;"># Import matplotlib for plotting</i>
+import matplotlib.pyplot as plt
+import seaborn as sns             <i style="color: #8896c1;"># optional here, if loaded earlier along with pandas</i>
+<i style="color: #8896c1;"># Scatter plot of Sepal.Length vs Sepal.Width colored by Species</i>
+sns.scatterplot(data=iris, x="sepal_length", y="sepal_width", hue="species")
+plt.title("Sepal Length vs. Sepal Width")
+plt.show()
+</code>
+</div>
+</details>
+<b>4. Ensure Reproducibility:</b>
+<li>Comment your code thoroughly.</li>
+<li>Include instructions for installing any required packages. Include info about used versions.</li>
+ &emsp; <i>(You can draw inspiration from the code block instructions provided in the earlier steps of this exercise.)</i>
+<li>Save your script or notebook file.</li>
+<div style="background: #cff4fc; padding: 15px; margin-top: 10px; font-size: 18px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+To see a more detailed step-by-step guide with graphical aids to complete this exercise, explore the following tutorials:
+<li><a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-tutorial-jupyter-lab" target="_blank">Getting Started with JupyterLab on a local machine  ⤴</a></li>
+<li><a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02-python-programming-environment" target="_blank">Python Programming Environment(s)  ⤴</a></li>
+<li><a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/01-introduction-to-python" target="_blank">Introduction to Python Programming  ⤴</a></li>
+<li><a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/06-tutorial-python-data-manipulation-pandas" target="_blank">Pandas Library - Data Structure Manipulation Tool  ⤴</a></li><br>
+<li><a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03A-rstudio-basics" target="_blank">RStudio: Integrated Environment for R Programming  ⤴</a></li>
+<li><a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03-r-programming-environment" target="_blank">R Programming Environment(s)  ⤴</a></li>
+<li><a href="https://datascience.101workbook.org/05-IntroToProgramming/04-R/01-introduction-to-R" target="_blank">Introduction to R programming  ⤴</a></li>
+<li><a href="https://datascience.101workbook.org/05-IntroToProgramming/04-R/03-ggplot-R-plotting" target="_blank">Ggplot2 - R package for customizable graphs and charts  ⤴</a></li>
+</span>
+</div>
+</div>
+
+
+### <i><span style="color: #EC8000; ">E4: Share Your Work with Collaboartors</span></i>
+
+This exercise is designed to highlight the importance of collaboration and community engagement in ensuring reproducibility and quality in research.
+
+<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px; font-size: 20px;">
+<span style="font-weight:800;">Community Standards and Collaboration using GitHub</span>
+<br><br><b>Objective:</b><br>
+Explore collaborative features of GitHub, such as issues and pull requests, to understand community standards in code development.
+<br><br><b>Instructions:</b><br>
+<b>1. Create a GitHub Account online:</b> Sign up at <a href="https://github.com/" target="_blank">https://github.com/</a> if you haven't already. (It is free.)<br>
+<b>2. Ceate Your Own Empty Repository:</b>
+<li>Navigate to the Repositories tab and click the "New" button.</li>
+<li>Name your repository and add a brief description. Ensure the repository is set to public.</li>
+<li>Initialize the repository without a README, .gitignore, or license (because you initialized your repo locally in the previous exercise).</li>
+<li>Navigate to your GitHub repository page, click the "Code" button, and then copy the URL of your repo to the clipboard. (You will use it in the next step.)</li>
+<b>3. Push Changes from Your Locally Created Git Repository:</b>
+<li>Open terminal or Git Bash on your computing machine.</li>
+<li>Navigate to the folder containing your Jupyter Notebook.</li>
+<li>Link your local repository to the GitHub repository you created using </li>
+ &emsp; <code>git remote add origin [repository-URL]</code>
+<li>Push your changes to GitHub using </li>
+ &emsp; <code>git push -u origin master</code> or <code>git push -u origin main</code><br>
+ &emsp; depending on your default branch name.<br>
+<b>4. Share Your Notebook via GitHub:</b>
+<li>Ensure your Jupyter Notebook is clearly named and includes comments or markdown cells that explain the analysis steps.</li>
+<li>After pushing, navigate to your GitHub repository online to verify that your notebook is visible and accessible.</li>
+<li>Once your Jupyter Notebook is on GitHub, you can preview it directly in the browser and copy the URL to share it with your collaborators. For broader context, you can also send the link to the entire repository if needed, allowing others to access not only the notebook but any associated data and documentation.</li><br>
+<b>Optional Steps for Further Engagement:</b> <br>
+<b>5. Fork a Repository:</b> Explore other users' repositories related to your research interests, fork one, and consider contributing by adding improvements or additional analysis.<br>
+<b>6. Engage with the Community:</b> Participate in discussions, open issues for any bugs you find, or offer solutions to existing issues. Collaboration is key to advancing reproducible research.
+<div style="background: #cff4fc; padding: 15px; margin-top: 10px; font-size: 18px;">
+<span style="font-weight:800;">PRO TIP:</span>
+<br><span style="font-style:italic;">
+To see a more detailed step-by-step guide with graphical aids to complete this exercise, navigate to tutorial <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/02-intro-to-git#gsc.tab=0" target="_blank">GIT - a distributed version control system  ⤴</a> and follow the steps in the <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/02-intro-to-git#working-with-remote-repos" target="_blank">Working with Remote Repos  ⤴</a> hands-on section. You can engage further by exploring the <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/02-intro-to-git#collaborating-on-projects" target="_blank">Collaborating on Projects  ⤴</a> section.</span>
+</div>
+</div>
 
 
 ___
