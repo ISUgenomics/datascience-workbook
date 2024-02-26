@@ -5,7 +5,7 @@ author: Kerrie Geil
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /04-DevelopmentEnvironment/assets/images/04_development_envir_banner.png
+  overlay_image: 04-devel-environment/assets/images/04_development_envir_banner.png
 type: "tutorial"
 level: 3
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [04. Development Environment](00-DevelopmentEnvironment-LandingPage.md) / [1. Integrated & Interactive Development Environment (IDE)](01-integrated-development-environment.md) / [1.2 Jupyter: Interactive Web-Based Multi-Kernel DE](01B-jupyter-basics.md) / **1.2.2 Getting Started with Jupyter Notebook on HPC systems**
 

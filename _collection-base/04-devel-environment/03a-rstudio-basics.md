@@ -5,7 +5,7 @@ author: Sharu Paul
 author_profile: TRUE
 header:
   overlay_color: "444444"
-  overlay_image: /04-DevelopmentEnvironment/assets/images/04_development_envir_banner.png
+  overlay_image: 04-devel-environment/assets/images/04_development_envir_banner.png
 type: "tutorial"
 level: 2
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [04. Development Environment](00-DevelopmentEnvironment-LandingPage.md) / [3. R programming environment(s)](03-r-programming-environment.md) / **3.1 RStudio: Integrated Environment for R Programming**
 
@@ -31,17 +32,17 @@ Some of the benefits of coding R using RStudio instead of a terminal are:
 ## Using RStudio
 Once you have <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03A-tutorial-setting-up-rstudio" target="_blank">set up RStudio ⤴</a> , you can open RStudio from start menu on your computer. When you first open RStudio, you will see a console window on the left and depending on your system, a few other windows on the right like environment, files or plots pane, etc. <br>
 <br>
-![R1](assets/images/04_RStudio_1.png) <br>
+![R1]({{ images_path }}/04_RStudio_1.png) <br>
 <br>
 
 ### New R Script
 If you do not see an empty editor window, you can open a new R Script file from the `File` menu: <br>
 <br>
-![R2](assets/images/04_RStudio_2.png) <br>
+![R2]({{ images_path }}/04_RStudio_2.png) <br>
 <br>
 An empty R Script file will open: <br>
 <br>
-![R1](assets/images/04_RStudio_3.png) <br>
+![R1]({{ images_path }}/04_RStudio_3.png) <br>
 <br>
 This is the code editor and you can write your code in this space. You can directly write code in the `Console` as well but editor allows you to run parts of code, save progress, make comments etc. Try writing the following code, and then run by selecting the lines you want to run and clicking the `Run` button: <br>
 
@@ -51,7 +52,7 @@ library(ggplot2)
 ```
 
 <br>
-![R1](assets/images/04_RStudio_4.png) <br>
+![R1]({{ images_path }}/04_RStudio_4.png) <br>
 <br>
 
 If you select only the second line as shown and run, it will load the library `ggplot2` if it is installed on your system. If you have not installed the package, you will need to run the first line of code first. After the libarary is loaded, you can run the rest of the code shown below to create a plot using `ggplot2`. The following code uses sample dataset called `mpg` already included within the `ggplot2` library. <br>
@@ -64,18 +65,18 @@ ggplot(mpg, aes(displ, hwy, colour = class)) +
 ```
 
 
-![R1](assets/images/04_RStudio_5.png) <br>
+![R1]({{ images_path }}/04_RStudio_5.png) <br>
 <br>
 
 The editor will create an indent in the second line when you write this code. When you select both the lines and run it successfully, the following plot will appear on the `Plots` window: <br>
 <br>
-![R1](assets/images/04_RStudio_6.png) <br>
+![R1]({{ images_path }}/04_RStudio_6.png) <br>
 <br>
 That's how simple it can be to make a plot using RStudio!
 
 To save your work, you can use `Ctrl+S` keyboard shortcut or `Save` option in `File` menu. <br>
 <br>
-![R1](assets/images/04_RStudio_7.png) <br>
+![R1]({{ images_path }}/04_RStudio_7.png) <br>
 <br>
 
 Other options within the `File` menu include:
@@ -109,13 +110,13 @@ print(data)
 Usually on top right, the environment panel contains list of any loaded data, values, and functions. As you can see below, the liat will have object/dataset name "data" in this case, and what is within that object "234 obs. of 11 variables" in this example. Clicking on the dataset will open it. You can also import data using `Import Dataset` option in this panel. <br>
 The whole list of loaded environment variables/data (objects) can be cleared using the broom button. It will wipe all variables from memory of the session and variables will need to be loaded again to use. <br>
 
-![R1](assets/images/04_RStudio_8.png) <br>
+![R1]({{ images_path }}/04_RStudio_8.png) <br>
 <br>
 
 ### Plots panel
 The plots tab on the panel on lower right shows the plots generated. There are a few options highlighted below, including the arrows to go through different plots generated during this session, `Export` option to export and save the plot, and the broom to clear all plots from memory. <br>
 
-![R1](assets/images/04_RStudio_9.png) <br>
+![R1]({{ images_path }}/04_RStudio_9.png) <br>
 <br>
 
 Some other useful tabs within this panel are:

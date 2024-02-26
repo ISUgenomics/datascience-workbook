@@ -5,7 +5,7 @@ author: Jennifer Chang
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /04-DevelopmentEnvironment/assets/images/04_development_envir_banner.png
+  overlay_image: 04-devel-environment/assets/images/04_development_envir_banner.png
 type: "tutorial"
 level: 3
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [04. Development Environment](00-DevelopmentEnvironment-LandingPage.md) / [1. Integrated & Interactive Development Environment (IDE)](01-integrated-development-environment.md) / [1.2 Jupyter: Interactive Web-Based Multi-Kernel DE](01B-jupyter-basics.md) / **1.2.3 Sharing Jupyter-based reproducible pipline via MyBinder**
 
@@ -36,7 +37,7 @@ Analysis pipelines written in Python can be shared in an interactive document ca
 * **Markdown** - text/documentation of your analysis
 * **Code** - Python code chunks that run the analysis
 
-![JupyterNotebook](assets/images/04_jupyterNtbk.png)
+![JupyterNotebook]({{ images_path }}/04_jupyterNtbk.png)
 
 Providing one document (notebook) of executable code and documentation eases reproducible research, where other scientists can verify, understand, and possibly extend your analysis.
 
@@ -60,11 +61,11 @@ We will assume you have a GitHub account. If not, please register a free account
 1. Sign in to Github - [https://github.com/](https://github.com/)
 2. Create a `jupyter_binder` repository
 
-  ![Jupyter Repo](assets/images/04_jupyter_repo.png)
+  ![Jupyter Repo]({{ images_path }}/04_jupyter_repo.png)
 
 3. Clone the repo, to create a copy on your local compuer.
 
-  ![git clone](assets/images/04_jupyter_clone_from_git.png)
+  ![git clone]({{ images_path }}/04_jupyter_clone_from_git.png)
 
   Click on `Code` and the clipboard icon, to copy the git repo path. That way you can type `git clone` and paste the git repo path.
 
@@ -126,11 +127,11 @@ Creating and hosting a local Jupyter Notebook requires the `jupyter` package.
 
 * Create a Jupyter Notebook via `New/Python 3`
 
-  ![Jupyter Local](assets/images/04_jupyter_start_notebook.png)
+  ![Jupyter Local]({{ images_path }}/04_jupyter_start_notebook.png)
 
 * We will try to recreate the Jupyter Notebook shown in the figure.
 
-  ![JupyterNotebook](assets/images/04_jupyterNtbk.png)
+  ![JupyterNotebook]({{ images_path }}/04_jupyterNtbk.png)
 
   For the moment, create one Markdown section and paste the following. It doesn't matter what it says right now since we are testing the system out.
 
@@ -179,7 +180,7 @@ Creating and hosting a local Jupyter Notebook requires the `jupyter` package.
 * Visit [https://mybinder.org/](https://mybinder.org/)
 * Input the github name and any subfolder if ipynb files are in a subfolder. Note: Instead of `test_binder`, your repo will be called `jupyter_binder`.
 
-![My Binder](assets/images/04_jupyter_MyBinder.png)
+![My Binder]({{ images_path }}/04_jupyter_MyBinder.png)
 
   Click `Launch` and you should see your jupyter notebook in the browser. Congratulations, your binder is published!
 

@@ -6,7 +6,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /05-IntroToProgramming/assets/images/05_programming_banner.png
+  overlay_image: 04-devel-environment/assets/images/04_development_envir_banner.png
 type: "tutorial"
 level: 2
 categories: []
@@ -14,6 +14,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [04. Development Environment](00-DevelopmentEnvironment-LandingPage.md) / [2. Python programming environment(s)](02-python-programming-environment.md) / **2.3 Python Setup on your computing machine**
 
@@ -292,10 +293,10 @@ conda activate myenv
 9. You can now install any additional packages or libraries you need using the <code>conda</code> install command.
 </details><br>
 
-![02_python-anaconda.png](assets/images/02_python-anaconda.png)
+![02_python-anaconda.png]({{ images_path }}/02_python-anaconda.png)
 
 Anaconda provides a **graphical user interface (GUI) called Anaconda Navigator**, which makes it easier to manage environments and packages using a point-and-click interface.
-![Anaconda Dashboard](assets/images/03-Anaconda.png)
+![Anaconda Dashboard]({{ images_path }}/03-Anaconda.png)
 
 ---
 

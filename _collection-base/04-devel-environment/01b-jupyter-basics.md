@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /04-DevelopmentEnvironment/assets/images/04_development_envir_banner.png
+  overlay_image: 04-devel-environment/assets/images/04_development_envir_banner.png
 type: "tutorial"
 level: 2
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [04. Development Environment](00-DevelopmentEnvironment-LandingPage.md) / [1. Integrated & Interactive Development Environment (IDE)](01-integrated-development-environment.md) / **1.2 Jupyter: Interactive Web-Based Multi-Kernel DE**
 
@@ -23,7 +24,7 @@ tags: []
 
 # **JupyterLab** Development Environment <br>*interactive web-based computing interface*
 
-![terminal colors](assets/images/04_jupyter_logo.png)<br>
+![terminal colors]({{ images_path }}/04_jupyter_logo.png)<br>
 
 ## Introduction to Project Jupyter
 
@@ -35,7 +36,7 @@ Jupyter (*[https://jupyter.org](https://jupyter.org)*) is an **open-source** pro
 
 can all be saved into a **single notebook** file. This file also **caches the kernel** for the selected programming language and other settings. That makes the development environment **easily transferable** among various computing machines and contributors. Note that the Jupyter notebook format is recognized and **rendered by GitHub**, making it human-readable and thus greatly benefiting day-to-day usability.
 
-![terminal colors](assets/images/04_jupyter_cell_types.png)<br>
+![terminal colors]({{ images_path }}/04_jupyter_cell_types.png)<br>
 
 **In a word, it is worth to start using Jupyter, especially at the stage of final parsing of results and data visualization, also interactive ones.**
 
@@ -51,11 +52,11 @@ The first two are mainly dedicated for individual usage, while [JupyterHub](http
 
 **Jupyter Notebook** is a simple interface intended for editing <u>a single document</u>. All other files (e.g., for input previews) will open in separate web browser tabs. This variant of the interface has limited capabilities to render certain data types (e.g., CSV) as human-readable. Still, it is a good starting point for beginners or users who occasionally review notebooks received from others.
 
-![terminal colors](assets/images/04_jupyter_notebook.png)<br>
+![terminal colors]({{ images_path }}/04_jupyter_notebook.png)<br>
 
 **JupyterLab** is a more advanced interface providing some functionality of the integrated development environment (IDE). That includes the convenience of a built-in file system viewer and wide developer section, where the selected files open as separate sub-tabs or customized compartments, all in the same browser tab. The display of various file types (HTML, Markdown, CSV, etc.) is clearly improved. This distribution is well suited for developers and daily-based users, especially those working with analysis summaries and visualizations.
 
-![terminal colors](assets/images/04_jupyter_lab.png)<br>
+![terminal colors]({{ images_path }}/04_jupyter_lab.png)<br>
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
@@ -100,7 +101,7 @@ jupyter lab
 
 That will open your Jupyter session in a web browser on **localhost** with a default URL: [http://localhost:8889/lab](http://localhost:8889/lab).
 
-<p align="center"><img width="800" src="assets/images/04_jupyter_launch.gif"></p>
+<p align="center"><img width="800" src="{{ images_path }}/04_jupyter_launch.gif"></p>
 
 ### - Jupyter Notebook
 
@@ -111,7 +112,7 @@ jupyter notebook
 
 That will open your Jupyter session in a web browser on **localhost** with a default URL: [http://localhost:8888/tree](http://localhost:8888/tree).
 
-<p align="center"><img width="800" src="assets/images/04_jupyter_notebook_launch.gif"></p><br>
+<p align="center"><img width="800" src="{{ images_path }}/04_jupyter_notebook_launch.gif"></p><br>
 
 
 <div style="background: #cff4fc; padding: 15px;">
@@ -121,7 +122,7 @@ If you accidentally close a browser window with the active Jupyter interface to 
 </span>
 </div><br>
 
-![terminal colors](assets/images/04_jupyter_reopen.png)<br>
+![terminal colors]({{ images_path }}/04_jupyter_reopen.png)<br>
 
 
 # Jupyter via Open OnDemand

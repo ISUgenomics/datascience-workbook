@@ -6,7 +6,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /04-DevelopmentEnvironment/assets/images/04_development_envir_banner.png
+  overlay_image: 04-devel-environment/assets/images/04_development_envir_banner.png
 type: "tutorial"
 level: 3
 categories: []
@@ -14,6 +14,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [04. Development Environment](00-DevelopmentEnvironment-LandingPage.md) / [2. Python programming environment(s)](02-python-programming-environment.md) / **2.3.2 Text editors: create Python code in terminal text files**
 
@@ -101,7 +102,7 @@ nano calc_average.py
 ```
 <i>This will create a new file called "calc_average.py"  and open it in the `nano` text editor.</i>
 
-![02_python-nano1.png](assets/images/02_python-nano1.png)
+![02_python-nano1.png]({{ images_path }}/02_python-nano1.png)
 
 **3.** Type or paste Python code from the snippet below into the file.
 
@@ -173,7 +174,7 @@ Finally, we use a Python built-in function <b>print()</b> to display the message
 **4.** Save and exit the file by pressing `Ctrl+X`, then `Y`, and then `Enter`. <br>
 <i>This will save your changes and exit the nano text editor.</i>
 
-<p align="left"><img width="800" src="assets/images/02_python-nano.gif"></p>
+<p align="left"><img width="800" src="{{ images_path }}/02_python-nano.gif"></p>
 
 **5.** You can now run your Python script from the terminal by typing:
 ```
@@ -181,7 +182,7 @@ python calc_average.py
 ```
 <i>This will execute your script and print  to the console the average of user-provided numbers.</i>
 
-![02_python-nano2.png](assets/images/02_python-nano2.png)
+![02_python-nano2.png]({{ images_path }}/02_python-nano2.png)
 
 ---
 
@@ -207,11 +208,11 @@ vim count_words.py
 ```
 <i>This will create a new file called "count_words.py" and open it in the `vim` text editor.</i>
 
-![02_python-vim1.png](assets/images/02_python-vim1.png)
+![02_python-vim1.png]({{ images_path }}/02_python-vim1.png)
 
 **3.** Once the `vim` editor is activated, press the `i` key to enter insert mode and start typing your code or copy-paste it from the snippet below. <br>
 
-<p align="left"><img width="800" src="assets/images/02_python-vim1.gif"></p>
+<p align="left"><img width="800" src="{{ images_path }}/02_python-vim1.gif"></p>
 
 <i>Select the text below, right-click on your mouse abd select `Copy` from the pop-up menu. Go to the `vim` editor in your terminal and use the right-click again, this time select the `Paste` option.</i>
 
@@ -301,7 +302,7 @@ It is a good practice to separate blocks of code for different tasks in the scri
 * To exit Vim, type `:q` and press `Enter`. <br>
 <i>If you have unsaved changes, Vim will warn you and you can type `:q!` to force quit without saving, or `:wq` to save and quit.</i>
 
-<p align="left"><img width="800" src="assets/images/02_python-vim2.gif"></p>
+<p align="left"><img width="800" src="{{ images_path }}/02_python-vim2.gif"></p>
 
 **5.** Once you're done editing and saving the file, you can run it in the terminal by typing:
 
@@ -320,7 +321,7 @@ Remember that the script configuration (in this case) requires the input file (c
 
 <i>This will execute your script and print to the console the words with at least 2 counts and at least 2-letter long.</i>
 
-![02_python-vim2.png](assets/images/02_python-vim2.png)
+![02_python-vim2.png]({{ images_path }}/02_python-vim2.png)
 
 
 ---
@@ -338,7 +339,7 @@ Here's how you can create a new Python script using `mcedit`, an advanced text e
 </span>
 </div><br>
 
-![02_python-mcedit.png](assets/images/02_python-mcedit.png)
+![02_python-mcedit.png]({{ images_path }}/02_python-mcedit.png)
 
 **0.** If you haven't already done so, install the midnight commander package that provides you with the editor `mcedit`.
 
@@ -386,7 +387,7 @@ mcedit generate_password.py
 ```
 <i>This will create a new file called "generate_password.py" and open it in the `mcedit` text editor.</i>
 
-![02_python-mcedit1.png](assets/images/02_python-mcedit1.png)
+![02_python-mcedit1.png]({{ images_path }}/02_python-mcedit1.png)
 
 **3.** Type or paste Python code from the snippet below into the file.
 
@@ -457,11 +458,11 @@ def function_name(argument1, argument2): <br>
 **4.** Once you are done editing, press the `F2` key to save changes. (*Note:* `fn` and `F2` *together on macOS*)<br>
 * To exit MCedit, press `Esc`, then `0`. <br>
 
-<p align="left"><img width="800" src="assets/images/02_python-mcedit.gif"></p>
+<p align="left"><img width="800" src="{{ images_path }}/02_python-mcedit.gif"></p>
 
 <i>If you have unsaved changes, MCedit will pop-up the "Close file" dialog menu with options to save changes (Yes), discard changes (No), or abandon file closing (Cancel).</i>
 
-![02_python-mcedit-close.png](assets/images/02_python-mcedit-close.png)
+![02_python-mcedit-close.png]({{ images_path }}/02_python-mcedit-close.png)
 
 **5.** Once you're done editing and saving the file, you can run it in the terminal by typing:
 
@@ -471,7 +472,7 @@ python generate_password.py
 
 <i>This will execute your script, prompt user to select password length, and print the generated random string of characters.</i>
 
-<p align="left"><img width="800" src="assets/images/02_python-run-input.gif"></p>
+<p align="left"><img width="800" src="{{ images_path }}/02_python-run-input.gif"></p>
 
 
 

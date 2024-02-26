@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /04-DevelopmentEnvironment/assets/images/04_development_envir_banner.png
+  overlay_image: 04-devel-environment/assets/images/04_development_envir_banner.png
 type: "tutorial"
 level: 3
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [04. Development Environment](00-DevelopmentEnvironment-LandingPage.md) / [1. Integrated & Interactive Development Environment (IDE)](01-integrated-development-environment.md) / [1.2 Jupyter: Interactive Web-Based Multi-Kernel DE](01B-jupyter-basics.md) / **1.2.1 Getting Started with JupyterLab on a local machine**
 
@@ -51,13 +52,13 @@ That will start a server on **localhost** and automatically open the Jupyter int
 
 The JupyterLab interface is built up of two main panels: a **file system browser** on the left-hand side of the GUI window, and **developer space** on the right-hand side. By default, on start, you will see the **Launcher** mode in the developer's panel. There you will find several icons with shortcuts that open a new instance of one of several most popular applications, such as a **multifunctional notebook**, a **console** in the programming language of your choice, a **terminal** emulator, a **raw text** file, a rich text file (**markdown**), or a **script file**. Clicking on the icon converts the launcher to the selected app. Many applications can be opened at the same time, and each of them will be added in a separate tab in the same browser window.<br>
 
-<p align="center"><img width="800" src="assets/images/04_jupyter_launching.gif"></p>
+<p align="center"><img width="800" src="{{ images_path }}/04_jupyter_launching.gif"></p>
 
 ### - Keep multiple apps open
 
 In the top menu bar select `File →  New Launcher` to add a new tab with shortcuts for the apps. You can also select a particular type of application directly from the menu by following the options `File →  New  →  {Console, Notebook, Terminal, Text File, Markdown File, Python File}`. For `Console`, you can further customize the **kernel** by selecting options available in your environment *(see the animated image above)*. Selecting **Notebook** will open an interactive notebook in a new tab in your Jupyter web-based GUI where you can execute your code cells, create documentation in markdown cells, and visualize graphically your results.
 
-<p align="center"><img width="800" src="assets/images/04_jupyter_app_shortcuts.gif"></p>
+<p align="center"><img width="800" src="{{ images_path }}/04_jupyter_app_shortcuts.gif"></p>
 
 <div style="background: mistyrose; padding: 15px;">
 <span style="font-weight:800;">WARNING:</span>
@@ -70,7 +71,7 @@ Note that the terminal window in which the local server was started must remain 
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
 A quick shortcut to <b>adding a new tab with Launcher</b> is that big blue button with the plus sign on the top left in the GUI.<br><br>
-<img width="400" src="assets/images/04_jupyter_launcher_shortcut.png">
+<img width="400" src="{{ images_path }}/04_jupyter_launcher_shortcut.png">
 </span>
 </div><br>
 
@@ -87,7 +88,7 @@ When a new file is created, it is automatically named *untitled* with a consecut
 
 **C.** If the file is open in one of the tabs, `right-click on the filename` and then select from the menu that appears the option `Rename {type} File...` *(marked in blue in the picture)*.
 
-![Jupyter_files_menager](assets/images/04_jupyter_rename.png)
+![Jupyter_files_menager]({{ images_path }}/04_jupyter_rename.png)
 
 
 ### - Open a file
@@ -106,14 +107,14 @@ Browse file system to enter your workdir. By default, JupterLab will open a file
 
 6. **Open a file** selected from the file system by double-clicking on it. A new tab in the developers panel will appear where you will be able to further edit your file.
 
-<p align="center"><img width="800" src="assets/images/04_jupyter_file_browser.gif"></p>
+<p align="center"><img width="800" src="{{ images_path }}/04_jupyter_file_browser.gif"></p>
 
 
 ### - Save the progress
 
 JupyterLab has a built-in **auto-save** option. Just be sure you checked the box in the settings in the top menu bar `Settings  →  Autosave Documents`. *You will appreciate that canny move when the application closes unexpectedly one day, but your very important files will be saved (!)*
 
-![Jupyter_files_menager](assets/images/04_jupyter_autosave.png)
+![Jupyter_files_menager]({{ images_path }}/04_jupyter_autosave.png)
 
 You can also save changes to a file at any time by selecting  from the top menu bar:
 
@@ -123,7 +124,7 @@ B. `File →  Save {type} File As`, if you want to overwrite the file with a new
 
 C. `File →  Save and Export Notebook As`, if you want to convert the current content into a Notebook (.ipynb file type) and export it
 
-![Jupyter_files_menager](assets/images/04_jupyter_save.png)
+![Jupyter_files_menager]({{ images_path }}/04_jupyter_save.png)
 
 <p align="center"><i>^ Note that the available saving options may differ slightly for different file formats.</i></p>
 
@@ -132,7 +133,7 @@ C. `File →  Save and Export Notebook As`, if you want to convert the current c
 
 To terminate the Jupyter interface, first, save the changes with `File →  Save File`, then close the tab in the browser `⤬`, to finally terminate the server with `CTRL+C` in the terminal.
 
-<p align="center"><img width="800" src="assets/images/04_jupyter_terminate.gif"></p>
+<p align="center"><img width="800" src="{{ images_path }}/04_jupyter_terminate.gif"></p>
 
 
 # Jupyter Apps
@@ -143,15 +144,15 @@ Jupyter is much more than just another text editor for code development. It is a
 
 Notebook is a multifunctional type of file in `.ipynb` format. It allows the co-presence of cells with **executable source code and rendered text** *(e.g., documentation, comments, procedure description, instructions)* in a single document. In addition, it is able to render graphical output as the result of the executed code when using graphing library, such as `plotly` or `matplotlib`.
 
-![Jupyter notebook cell types](assets/images/04_jupyter_cell_types.png)<br>
+![Jupyter notebook cell types]({{ images_path }}/04_jupyter_cell_types.png)<br>
 
 You can create a new file using a shortcut in the Launcher view *(blue arrow in the picture)* or open an existing one by double-clicking it in the file browser *(magenta arrow in the picture)*.
 
-![Jupyter notebook app](assets/images/04_jupyter_notebook_app.png)
+![Jupyter notebook app]({{ images_path }}/04_jupyter_notebook_app.png)
 
 On the launching icon you can see with which kernel the new notebook will be opened by default. It depends on the modules installed in the environment in which you run jupyter. For example, if `python3` is available in your environment *(e.g., conda env)*, it will be in the `Start Preferred Kernel` list. You can also choose `No Kernel` option or `Use Kernel from Preferred Session` which will match the kernel to be compatible with the other notebook file. The selected kernel determines what programming language and which particular version will be interpreted when executing code cells. Note that the kernel is cashed for a given `.ipynb` file, and it's name is displayed in the upper right corner of the jupyter tab.
 
-![Jupyter select kernel](assets/images/04_jupyter_notebook_select_kernel.png)
+![Jupyter select kernel]({{ images_path }}/04_jupyter_notebook_select_kernel.png)
 
 **Let's check how the *Notebook* works.**
 
@@ -164,7 +165,7 @@ There are several keyboard shortcuts that make it easier to navigate between cel
 | CTRL + ENTER | CTRL + RETURN   | execute cell in place |
 | ALT + ENTER  | OPTION + RETURN | execute cell and create new one |
 
-<p align="center"><img width="800" src="assets/images/04_jupyter_cell_type.gif"></p>
+<p align="center"><img width="800" src="{{ images_path }}/04_jupyter_cell_type.gif"></p>
 
 ### **- CELL TYPES**
 
@@ -180,7 +181,7 @@ To learn more about **HTML**, try an [HTML Styles tutorial provided by w3schools
 # Simple <b><span style="color:#eb2a7b;">Markdown</span></b> and <b><span style="color:darkturquoise;">HTML</span></b> styling
 ```
 
-![Jupyter select kernel](assets/images/04_jupyter_notebook_markdown.png)
+![Jupyter select kernel]({{ images_path }}/04_jupyter_notebook_markdown.png)
 
 
 * **CODE**
@@ -195,12 +196,12 @@ z = x + y
 print(f"the sum is: {z}")
 ```
 
-![Jupyter select kernel](assets/images/04_jupyter_notebook_code.png)
+![Jupyter select kernel]({{ images_path }}/04_jupyter_notebook_code.png)
 
 ### **- DEBUG MODE**
 On the right side in the top menu of the notebook is the bug icon that enables debugger mode. Using the options from the horizontal menu on the right, you can set breakpoints in your code to check its correctness and performance.
 
-![Jupyter select kernel](assets/images/04_jupyter_notebook_debug.png)
+![Jupyter select kernel]({{ images_path }}/04_jupyter_notebook_debug.png)
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>

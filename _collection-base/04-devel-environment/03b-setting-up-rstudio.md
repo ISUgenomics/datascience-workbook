@@ -5,7 +5,7 @@ author: Jennifer Chang
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /04-DevelopmentEnvironment/assets/images/04_development_envir_banner.png
+  overlay_image: 04-devel-environment/assets/images/04_development_envir_banner.png
 type: "tutorial"
 level: 3
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [04. Development Environment](00-DevelopmentEnvironment-LandingPage.md) / [3. R programming environment(s)](03-r-programming-environment.md) / [3.1 RStudio: Integrated Environment for R Programming](03A-rstudio-basics.md) / **3.1.1 Setting Up RStudio**
 
@@ -37,7 +38,7 @@ First you will need to install R or have access to an R environment. It is highl
 1. Install the latest version of R from CRAN - [https://www.r-project.org/](https://www.r-project.org/)
 2. Install the free version of RStudio IDE - [https://rstudio.com/products/rstudio/download/](https://rstudio.com/products/rstudio/download/)
 
-![RStudio Quad Chart](assets/images/RStudio_quad.png)
+![RStudio Quad Chart]({{ images_path }}/RStudio_quad.png)
 
 When you first open RStudio, you'll notice several panes. Note: To see the Code Editor, you may need to go to Rstudio's  `File/New File/R Script`.
 
@@ -96,7 +97,7 @@ R functions are made available as libraries (also referred to as packages) which
 
 In order of preference, first attempt to install from CRAN. If the library is not available on CRAN, check Bioconductor, then the GitHub repo.
 
-![R Libraries](assets/images/R_libraries.png)
+![R Libraries]({{ images_path }}/R_libraries.png)
 
 **Warning:** Have a regular schedule (maybe once every 6 months) to keep your R libraries up to date. Some libraries depend on other libraries and will not install until you have the latest version.
 
@@ -116,7 +117,7 @@ remove.packages()      # <= uninstalls an R package, will need to provide packag
 
 To get the latest version of R libraries, RStudio has a "Packages" pane in the bottom right. Some libraries depend on other libraries and will not install until you have the latest version.
 
-![RStudio Quad Chart](assets/images/R_updatepkgs.png)
+![RStudio Quad Chart]({{ images_path }}/R_updatepkgs.png)
 
 This may take several minutes since we are updating multiple packages. If the "Install Updates" hangs or errors out, install the packages one by one.
 

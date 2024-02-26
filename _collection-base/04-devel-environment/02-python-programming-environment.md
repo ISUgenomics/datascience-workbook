@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /04-DevelopmentEnvironment/assets/images/04_development_envir_banner.png
+  overlay_image: 04-devel-environment/assets/images/04_development_envir_banner.png
 type: "intro"
 level: 1
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [04. Development Environment](00-DevelopmentEnvironment-LandingPage.md) / **2. Python programming environment(s)**
 
@@ -23,7 +24,7 @@ tags: []
 
 <a href="https://www.python.org" target="_blank">Python  ⤴</a> is a high-level, **interpreted programming language** that is widely used for scientific computing, data analysis, artificial intelligence algorithms implementation, web development, and visualization. It has a simple and **easy-to-learn syntax**, a large standard library, and a wide community making it a popular choice for beginners and experienced programmers alike.
 
-![Python](assets/images/04_02_python.png)
+![Python]({{ images_path }}/04_02_python.png)
 
 <div style="background: #dff5b3; padding: 15px;">
 <span style="font-weight:800;">NOTE:</span>
@@ -50,12 +51,12 @@ There are also online platforms that allow you to write and run Python code dire
 
 Typically, these online platform provide interface for the Python built-in shell, i.e., the Integrated Development and Learning Environment (**Python IDLE**) that comes with the standard installation of Python.
 
-![03_python-online-console.png](../05-IntroToProgramming/assets/images/03_python-online-console.png)
+![03_python-online-console.png]({{ images_path }}/03_python-online-console.png)
 
 ## **2. Command Line (CL) code editors** *(intermediate)*
 You can also use a plain text editor, such as <a href="https://www.nano-editor.org" target="_blank">nano  ⤴</a> [GNU], <a href="https://www.vim.org" target="_blank">Vim  ⤴</a> [Bram Moolenaar], or <a href="https://linuxcommand.org/lc3_adv_mc.php" target="_blank">mcedit  ⤴</a> [Midnight Commander] to write Python code and run it from the command line. To do this, **you will need to install Python on your computer** and then use the Python interpreter to execute your code.
 
-![Python](assets/images/04_02_cli_editors.png)<br>
+![Python]({{ images_path }}/04_02_cli_editors.png)<br>
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
@@ -71,7 +72,7 @@ This option is a good choice to develop quickly a simple script directly on the 
 ## **3. Integrated Development Environment (IDE)** *(advanced)*
 An Integrated Development Environment (IDE) is a software application that provides a comprehensive set of tools for software development. IDEs typically provide a range of tools and features for editing, debugging, and testing code, as well as integrations with other tools and services that are commonly used in software development (e.g., Git version control).
 
-![Python](assets/images/04_02_ide_features.png)<br>
+![Python]({{ images_path }}/04_02_ide_features.png)<br>
 
 ### *A. Multi-language IDE*
 There are many multi-language IDEs available, such as <a href="https://code.visualstudio.com" target="_blank">VSC  ⤴</a> [Microsoft], <a href="https://www.eclipse.org/ide/" target="_blank">Eclipse  ⤴</a>, <a href="https://netbeans.apache.org" target="_blank">NetBeans  ⤴</a>, and <a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ IDEA  ⤴</a> [JetBrains].
@@ -89,7 +90,7 @@ Multi-language IDEs can be useful <b>for developers who work on projects that in
 ### *B. Python-dedicated IDE*
 Some popular IDEs dedicated for programming in Python include <a href="https://realpython.com/python-idle/" target="_blank">IDLE  ⤴</a> *(included with the Python installation)*, <a href="https://www.jetbrains.com/pycharm/" target="_blank">PyCharm  ⤴</a>, and <a href="https://www.spyder-ide.org" target="_blank">Spyder  ⤴</a>.
 
-![Python](assets/images/04_02_python_ide.png)<br>
+![Python]({{ images_path }}/04_02_python_ide.png)<br>
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
@@ -108,8 +109,8 @@ Using a Python-dedicated IDE can make it easier to work with Python code and tak
 <table>
   <tr> <th>1. Launch Jupyter Lab</th> <th>2. Develop code, comment, and visualize results</th> </tr>
   <tr>
-    <td><img src="assets/images/04_jupyter_launch.gif" alt="Merge data app" width="600"></td>
-    <td><img src="assets/images/04_jupyter_cell_types.png" alt="Merge data app" width="600"></td>
+    <td><img src="{{ images_path }}/04_jupyter_launch.gif" alt="Merge data app" width="600"></td>
+    <td><img src="{{ images_path }}/04_jupyter_cell_types.png" alt="Merge data app" width="600"></td>
   </tr>
 </table>
 

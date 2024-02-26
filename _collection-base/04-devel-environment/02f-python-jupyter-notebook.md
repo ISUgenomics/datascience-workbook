@@ -6,7 +6,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /04-DevelopmentEnvironment/assets/images/04_development_envir_banner.png
+  overlay_image: 04-devel-environment/assets/images/04_development_envir_banner.png
 type: "tutorial"
 level: 3
 categories: []
@@ -14,6 +14,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [04. Development Environment](00-DevelopmentEnvironment-LandingPage.md) / [2. Python programming environment(s)](02-python-programming-environment.md) / **2.3.3 Jupyter Lab: create an interactive Python notebook**
 
@@ -32,7 +33,7 @@ Jupyter Lab is an **interactive web-based tool** that allows users to create and
 
 In Jupyter notebook, users can leverage various Python libraries, including graphical ones, to analyze and visualize data **all in one document**, providing a powerful and efficient environment for Python-based developments. It offers a convenient way to organize and document a project, making it easier to share and collaborate with others.
 
-![02_python-jupyter-general.png](assets/images/02_python-jupyter-general.png)
+![02_python-jupyter-general.png]({{ images_path }}/02_python-jupyter-general.png)
 
 Notebooks can be easily shared as a `.ipynb` file or hosted on online platforms (e.g., <a href="https://colab.research.google.com/" target="_blank">Google Colab  ⤴</a>), **allowing collaborators to access and modify the same document in real-time**, which streamlines collaboration and helps to reduce errors and redundancies.
 
@@ -97,7 +98,7 @@ When you create a new notebook in JupyterLab interface, you can select the kerne
 
 To check which Python kernel is currently selected, you can click on the kernel name in the top right corner of the notebook interface. This will display a dropdown menu with the currently available kernels. The name of the selected kernel will be highlighted in bold. You can also change the version of Python from the `Kernel` option in the top menu bar, as shown in the figure below.
 
-<p align="center"><img src="assets/images/04_jupyter_notebook_select_kernel.png" alt="Jupyter select kernel"></p>
+<p align="center"><img src="{{ images_path }}/04_jupyter_notebook_select_kernel.png" alt="Jupyter select kernel"></p>
 
 
 # Python coding example <br> <i>- scatterplot by <b>plotly</b></i>
@@ -213,7 +214,7 @@ Once you have all dependencies installed (python=3.9, pandas, plotly) (and activ
 jupyter Lab
 ```
 
-<p align="center"><img width="800" src="assets/images/04_jupyter_launch.gif"></p>
+<p align="center"><img width="800" src="{{ images_path }}/04_jupyter_launch.gif"></p>
 
 *That will open your Jupyter session in a web browser on localhost with a default URL: <a href="http://localhost:8889/lab" target="_blank">http://localhost:8889/lab  ⤴</a>.*
 
@@ -227,13 +228,13 @@ or
 * using the top menu bar: File : New : Notebook and selecting Python (Pyodide) from the drop-down menu.
 
 
-![02_python-jupyter-try-notebook.png](assets/images/02_python-jupyter-try-notebook.png)
+![02_python-jupyter-try-notebook.png]({{ images_path }}/02_python-jupyter-try-notebook.png)
 
 *The new notebook should appear as a new tab in your JupyterLab interface.*
 
 You can rename the notebook file by double clicking on the filename in the `File browser` panel on the left-hand side. *My notebook is called `scatterplot.ipynb`.*
 
-![02_python-jupyter-try-notebook-file.png](assets/images/02_python-jupyter-try-notebook-file.png)
+![02_python-jupyter-try-notebook-file.png]({{ images_path }}/02_python-jupyter-try-notebook-file.png)
 
 You can now start writing Python code in the notebook cells and running them by clicking on the `Run` button in the top menu bar or pressing `Shift + Enter` to run the current cell and select the cell below it.
 
@@ -254,7 +255,7 @@ In this project, we will explore the use of: <br>
 
 Now, change the cell type from `code` to `markdown` in the top menu bar in the notebook section.
 
-![02_python-jupyter-cell-markdown.png](assets/images/02_python-jupyter-cell-markdown.png)
+![02_python-jupyter-cell-markdown.png]({{ images_path }}/02_python-jupyter-cell-markdown.png)
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
@@ -276,7 +277,7 @@ import pandas as pd                        # to create a well-structured DataFra
 import plotly.express as px                # to create scatterplot
 ```
 
-![02_python-jupyter-cell-code.png](assets/images/02_python-jupyter-cell-code.png)
+![02_python-jupyter-cell-code.png]({{ images_path }}/02_python-jupyter-cell-code.png)
 
 To execute the code cell, again press `Alt + Enter` ( use `option + return` for macOS ).
 
@@ -397,7 +398,7 @@ fig.show()
 
 *This will create a scatterplot with the gene names on the x-axis, the expression levels on the y-axis, and each sample represented by a different color. Note that Plotly-based graphs are interactive by default. The details about each data point are displayed on the dynamic labels. You can customize their contents, if needed.*
 
-![02_python-jupyter-cell-output.png](assets/images/02_python-jupyter-cell-output.png)
+![02_python-jupyter-cell-output.png]({{ images_path }}/02_python-jupyter-cell-output.png)
 
 
 ___

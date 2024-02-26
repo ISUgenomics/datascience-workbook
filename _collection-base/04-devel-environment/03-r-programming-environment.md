@@ -5,7 +5,7 @@ author: Sharu Paul
 author_profile: TRUE
 header:
   overlay_color: "444444"
-  overlay_image: /04-DevelopmentEnvironment/assets/images/04_development_envir_banner.png
+  overlay_image: 04-devel-environment/assets/images/04_development_envir_banner.png
 type: "intro"
 level: 1
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [04. Development Environment](00-DevelopmentEnvironment-LandingPage.md) / **3. R programming environment(s)**
 
@@ -120,7 +121,7 @@ R also has powerful capabilities for visualizing data. For example, you can use 
 > plot(1:20)
 ```
 
-![R_plot](assets/images/R_plot.png) <br>
+![R_plot]({{ images_path }}/R_plot.png) <br>
  <br>
 
  With its powerful statistical and data visualization capabilities, R is a valuable tool for anyone working with data.  <br>

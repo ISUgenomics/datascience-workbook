@@ -6,7 +6,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /04-DevelopmentEnvironment/assets/images/04_development_envir_banner.png
+  overlay_image: 04-devel-environment/assets/images/04_development_envir_banner.png
 type: "tutorial"
 level: 3
 categories: []
@@ -14,6 +14,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [04. Development Environment](00-DevelopmentEnvironment-LandingPage.md) / [2. Python programming environment(s)](02-python-programming-environment.md) / **2.3.1 Shell & IDLE: create Python code in a terminal or simple IDE**
 
@@ -56,7 +57,7 @@ To use Python Shell or IDLE, you first need to have Python installed on your com
 1. Go to the official Python website at <a href="https://www.python.org/downloads/windows/" target="_blank">https://www.python.org/downloads/windows/  ⤴</a>.<br>
 2. Scroll down to the "Download Python" section and click on the "Windows" button. <br>
 3. Scroll down to the "Stable Releases" section and click on the latest version of Python. <br>
-<p align="left"><img width="800" src="assets/images/02_python-windows.png"></p><br>
+<p align="left"><img width="800" src="{{ images_path }}/02_python-windows.png"></p><br>
 4. Download the "Windows x86-64 executable installer" for 64-bit Windows or the "Windows x86 executable installer" for 32-bit Windows. <br>
 5. Run the installer and follow the on-screen prompts to complete the installation.
 </details>
@@ -66,7 +67,7 @@ To use Python Shell or IDLE, you first need to have Python installed on your com
 <b>A. MANUALLY</b> <br>
 1. Go to the official Python website at <a href="https://www.python.org/downloads/mac-osx/" target="_blank">https://www.python.org/downloads/mac-osx/  ⤴</a>.<br>
 2. Scroll down to the "Download Python" section and click on the latest version of Python. <br>
-<p align="left"><img width="800" src="assets/images/02_python-macos.png"></p><br>
+<p align="left"><img width="800" src="{{ images_path }}/02_python-macos.png"></p><br>
 3. Download the macOS installer package. <br>
 4. Run the installer package and follow the on-screen prompts to complete the installation. <br><br>
 
@@ -145,7 +146,7 @@ python3
 
 **3.** The Python Shell will start and display a prompt (`>>>`) where you can start entering Python commands.
 
-<p align="center"><img width="800" src="assets/images/02_python-shell.gif"></p>
+<p align="center"><img width="800" src="{{ images_path }}/02_python-shell.gif"></p>
 
 **4.** To terminate the Python shell press `CTRL + D` or type `exit()` or `quit()` at the prompt and press Enter. <br>
 *You will automatically return to your basic shell (e.g., Bash).*
@@ -154,7 +155,7 @@ python3
 
 Let's start with using the `print()` function to display the <i>"Hello, world!"</i> welcome messeage on the screen:
 
-![02_python-shell.png](assets/images/02_python-shell.png)
+![02_python-shell.png]({{ images_path }}/02_python-shell.png)
 
 Now, you can try using the Python shell to perform a simple calculation:
 
@@ -204,7 +205,7 @@ To launch the Python IDLE from the terminal window, you can follow these steps:
 **2.** Type `idle` or `idle3`, depending on your system's configuration, and press `Enter` on your keyboard.
 *Start typing `idle`, then press the `TAB` key twice to display available IDLE variants.* <br>
 
-<p align="center"><img width="800" src="assets/images/02_python-idle.gif"></p>
+<p align="center"><img width="800" src="{{ images_path }}/02_python-idle.gif"></p>
 
 **3.** The Python IDLE will open in a separate window, providing you graphical user interface (GUI) with a `menu bar` on the top.
 *By default, the first view in the IDLE is a Python Shell, which works the same as the interactive Python shell started directly in the terminal.*
@@ -213,7 +214,7 @@ To launch the Python IDLE from the terminal window, you can follow these steps:
 
 * To create a new Python file in IDLE, you can click `File > New File`, or press `Ctrl+N` on Windows or `Command+N` on Mac.
 
-![02_python-idle.png](assets/images/02_python-idle.png)
+![02_python-idle.png]({{ images_path }}/02_python-idle.png)
 
 * To save your code, you can click `File > Save`, or press `Ctrl+S` on Windows or `Command+S` on Mac. <br>
 <i>You can customize the file name and saving location in the pop-up dialog box.</i>
@@ -221,7 +222,7 @@ To launch the Python IDLE from the terminal window, you can follow these steps:
 * You can run your code in IDLE by clicking `Run > Run Module`, or pressing `F5` on your keyboard. <br>
 <i>The output will be displayed in the Python shell at the bottom of the IDLE window.</i>
 
-![02_python-idle2.png](assets/images/02_python-idle2.png)
+![02_python-idle2.png]({{ images_path }}/02_python-idle2.png)
 
 ---
 
