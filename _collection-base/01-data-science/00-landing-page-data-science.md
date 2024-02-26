@@ -12,6 +12,9 @@ categories: ["analysis", "computing", "machine-learning"]
 tags: []
 ---
 
+{% include toc %}
+{% include images_path %}
+
 Data Science is an approach shaped in response to digital information whose size and unstructured nature are far beyond the capabilities of conventional tools. It is not just about how to process or store Big Data but also how to improve knowledge retention. Data Science emerges as the fourth paradigm besides empirical, theoretical, and computational, where modern computing techniques (e.g., machine learning) lead to discovering the insights from data-driven analyses.
 
 
