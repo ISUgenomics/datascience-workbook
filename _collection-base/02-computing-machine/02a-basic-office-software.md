@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /03-SetUpComputingMachine/assets/images/03_computer_setup_banner.png
+  overlay_image: 02-computing-machine/assets/images/03_computer_setup_banner.png
 type: "article"
 level: 2
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [03. Setting Up Computing Machine](00-SetUpComputingMachine-LandingPage.md) / [2. Must-Have Software](02-must-have-software.md) / **2.1 Basic Office Software**
 

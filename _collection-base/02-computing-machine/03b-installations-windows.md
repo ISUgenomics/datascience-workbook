@@ -5,7 +5,7 @@ author: Sharu Paul
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /03-SetUpComputingMachine/assets/images/03_computer_setup_banner.png
+  overlay_image: 02-computing-machine/assets/images/03_computer_setup_banner.png
 module: "03. Computing Machine Setup"
 type: "tutorial"
 level: 2
@@ -14,6 +14,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [03. Setting Up Computing Machine](00-SetUpComputingMachine-LandingPage.md) / [3. Various Methods of Software Installation](03-various-methods-of-software-installation.md) / **3.2 Installations on Windows**
 
@@ -54,11 +55,11 @@ Atom is a text editor with `git` version control integrated in it and is compati
 
 <a href="https://atom.io/" target="_blank">Download ⤴</a> and install Atom following general guide to installation, and then install packages to improve function. To install packages on Atom, use the package manager in settings (File -> Settings -> Install). <br>
 
-![Settings](assets/windows/01Atom.png) <br>
+![Settings]({{ images_path }}/01Atom.png) <br>
 
 There are many options in settings, for installing new packages click on install option: <br>
 
-![Install Packages](assets/windows/02Atom.png) <br>
+![Install Packages]({{ images_path }}/02Atom.png) <br>
 
 Recommended packages:
 - markdown-folding
@@ -88,7 +89,7 @@ Request for package information failed: Application error
 
 - Click on the right version to download setup file, I selected 64-bit Git for Windows Setup <br>
 
-![setup](assets/windows/01Git.png) <br>
+![setup]({{ images_path }}/01Git.png) <br>
 <br>
 - Open downloaded file and install Git (with default options)
 - To set up a GitHub account check the <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/04-intro-to-github" target="_blank">GitHub tutorial ⤴</a>
@@ -97,11 +98,11 @@ Request for package information failed: Application error
 Windows Subsystem for Linux (WSL) is a compatibility layer for running Linux binary executables natively on Windows.
 Run either PowerShell or Command Prompt as an administrator. For example, you can find Command Prompt from the start menu and click on Run as an administrator. <br>
 
-![cmd](assets/windows/WSL-cmd-from-start-menu.png) <br>
+![cmd]({{ images_path }}/WSL-cmd-from-start-menu.png) <br>
 <br>
 or search it from the search box on lower left corner of screen on windows. The options also appear on right (without right click) if you use the search box. <br>
 
-![startmenu](assets/windows/WSL-Search-cmd.png) <br>
+![startmenu]({{ images_path }}/WSL-Search-cmd.png) <br>
 <br>
 Type the following command and press enter to install WSL:
 
@@ -109,7 +110,7 @@ Type the following command and press enter to install WSL:
 wsl --install
 ```
 
-![installwsl](assets/windows/WSL-install.png) <br>
+![installwsl]({{ images_path }}/WSL-install.png) <br>
 <br>
 Restart your computer to finish installation. This will install Ubuntu distribution by default but can be changed. It is possible to run multiple Linux distributions with WSL. For setting up the Linux system and more options, check Microsoft documentation <a href="https://docs.microsoft.com/en-us/windows/wsl/install" target="_blank">here ⤴</a>.
 <br>
@@ -144,11 +145,11 @@ plot(1:50)
 ```
 <br>
 
-![plot](assets/windows/01RStudio.png) <br>
+![plot]({{ images_path }}/01RStudio.png) <br>
 
 On the right side, you should see a scatter plot like this: <br>
 
-![plot](assets/windows/02RStudio.png)
+![plot]({{ images_path }}/02RStudio.png)
 
 
 ## Java

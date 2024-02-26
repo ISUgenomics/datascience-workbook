@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /03-SetUpComputingMachine/assets/images/03_computer_setup_banner.png
+  overlay_image: 02-computing-machine/assets/images/03_computer_setup_banner.png
 type: "article"
 level: 1
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [03. Setting Up Computing Machine](00-SetUpComputingMachine-LandingPage.md) / **1. Operating System Installation**
 
@@ -34,7 +35,7 @@ Some common examples of operating systems include:
 
 | Microsoft Windows | macOS | Linux | iOS |
 |-------------------|-------|-------|-----|
-|![](assets/images/microsoft_logo.png)| ![](assets/images/macOS_logo.png) | ![](assets/images/linux_logo.png) | ![](assets/images/iOS_logo.png) |
+|![]({{ images_path }}/microsoft_logo.png)| ![]({{ images_path }}/macOS_logo.png) | ![]({{ images_path }}/linux_logo.png) | ![]({{ images_path }}/iOS_logo.png) |
 | [Windows OS variants](https://msofficestore.us/product-category/windows/) | [macOS Ventura](https://www.apple.com/macos/ventura/) | [free Linux OS variants](https://www.linux.org/pages/download/) | [update iOS](https://support.apple.com/en-us/HT204204) |
 
 Each operating system has its own set of features and functions and is designed to work with specific types of hardware. For example, Windows and macOS are typically used on personal computers and laptops, Linux is used on high-performance computing clusters, while iOS is used on iPhones and iPads.
@@ -61,7 +62,7 @@ Each operating system has its own set of features and functions and is designed 
 | [Manjaro](https://sourceforge.net/projects/manjarolinux/files/) | [Zorin](http://zorin-os.com/free.html) | [Kubuntu](https://www.kubuntu.org/getkubuntu/) | [Xubuntu](https://xubuntu.org/getxubuntu/) | [Lubuntu](https://lubuntu.me/downloads/) |
 | [Slackware](http://www.slackware.com/getslack/) | [Slackel](https://sourceforge.net/projects/slackel/files/) | [Solus](https://getsol.us/download/) | [Puppy](https://puppylinux-woof-ce.github.io/) | [PCLinuxOS](http://pclinuxos.com/?page_id=10) |
 
-![Linux distributions](../02-IntroToCommandLine/assets/images/linux_distributions.png)<br>
+![Linux distributions]({{ images_path }}/linux_distributions.png)<br>
 *Figure shows logos of the most popular Linux distributions, all based on the Unix command-line interface.*
 
 
@@ -118,7 +119,7 @@ The exact steps for installing an operating system may vary depending on the spe
 
 To dual-boot multiple operating systems on a single computer, you will **need to partition the hard drive** and install each operating system on a separate partition. During the boot process, you will be presented with a menu that allows you to choose which operating system you want to boot into.
 
-![Multi-booting](assets/images/multi-booting.png)<br>
+![Multi-booting]({{ images_path }}/multi-booting.png)<br>
 *To select an operating system restart your computer and wait for the boot menu to appear. The boot menu is usually displayed after the computer's BIOS or UEFI has completed its initial checks and is ready to boot the operating system. Then, use the arrow keys or the mouse to select the operating system you want to boot into. Press Enter or click the "Boot" button to boot into the selected operating system.*
 
 There are a few things to consider when multi-booting a few operating systems on a single computer. You will need to:

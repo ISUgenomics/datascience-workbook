@@ -5,7 +5,7 @@ author:
 author_profile: false
 header:
   overlay_color: "444444"
-  overlay_image: /03-SetUpComputingMachine/assets/images/03_computer_setup_banner.png
+  overlay_image: 02-computing-machine/assets/images/03_computer_setup_banner.png
 type: "tutorial"
 level: 2
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [03. Setting Up Computing Machine](00-SetUpComputingMachine-LandingPage.md) / [1. Operating System Installation](01-operating-system-installation.md) / **1.1 Windows OS Installation**
 
