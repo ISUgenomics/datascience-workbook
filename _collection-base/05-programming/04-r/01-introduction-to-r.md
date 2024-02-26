@@ -5,7 +5,7 @@ author: Viswa Satheesh
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /05-IntroToProgramming/assets/images/05_programming_banner.png
+  overlay_image: 05-programming/assets/images/05_programming_banner.png
 type: "tutorial"
 level: 1
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [05. Introduction to Programming](../00-IntroToProgramming-LandingPage.md) / **4. Introduction to R programming**
 
@@ -738,7 +739,7 @@ write.csv(field_data, "field_data.csv", quote = F, row.names = F)
 
 In this section we will see how to make the plot shown below.
 
-![](../assets/images/04_intro_R_4.png)
+![]({{ images_path }}/04_intro_R_4.png)
 
 Reading data in:
 
@@ -773,7 +774,7 @@ ggplot(data = gene_nums_mirror, aes(x = stress, y = num_genes)) +
   geom_bar( stat = "identity", position = "stack", width = 0.65 )
 ```
 
-![plot of chunk example-knitr-knit-61](../assets/images/04_intro_R_1.png)
+![plot of chunk example-knitr-knit-61]({{ images_path }}/04_intro_R_1.png)
 
 ```r
 gene_nums_mirror$num_genes[gene_nums_mirror$responsiveness=="down"] <-
@@ -801,7 +802,7 @@ ggplot(data = gene_nums_mirror, aes(x = stress, y = num_genes)) +
   geom_bar(stat = "identity", width = 0.65)
 ```
 
-![plot of chunk example-knitr-knit-63](../assets/images/04_intro_R_2.png)
+![plot of chunk example-knitr-knit-63]({{ images_path }}/04_intro_R_2.png)
 
 ```r
 ggplot(data = gene_nums_mirror, aes(x = stress, y = num_genes, fill = responsiveness)) +
@@ -811,7 +812,7 @@ ggplot(data = gene_nums_mirror, aes(x = stress, y = num_genes, fill = responsive
   ggtitle("Differential expression of genes")
 ```
 
-![plot of chunk example-knitr-knit-64](../assets/images/04_intro_R_3.png)
+![plot of chunk example-knitr-knit-64]({{ images_path }}/04_intro_R_3.png)
 Re-ordering the levels: "up" first followed by "down".
 
 ```r
@@ -839,7 +840,7 @@ ggplot(data = gene_nums_mirror,
   scale_fill_manual(values = wes_palette(n=2, name = "GrandBudapest2"))
 ```
 
-![plot of chunk example-knitr-knit-66](../assets/images/04_intro_R_4.png)
+![plot of chunk example-knitr-knit-66]({{ images_path }}/04_intro_R_4.png)
 
 ___
 # Further Reading

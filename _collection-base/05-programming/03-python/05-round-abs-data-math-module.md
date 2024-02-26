@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /07-DataParsing/assets/images/07_data_acquisition_banner.png
+  overlay_image: 05-programming/assets/images/05_programming_banner.png
 type: "tutorial"
 level: 2
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [05. Introduction to Programming](../00-IntroToProgramming-LandingPage.md) / [3. Introduction to Python Programming](01-introduction-to-python.md) / **3.4 Math Module - Various Mathematical Functions**
 
@@ -66,7 +67,7 @@ Alternatively, if you prefer to **work online**, you can use various online Pyth
 
 For example, you can **use online Python shell** immediately available at <a href="https://www.python.org/shell/" target="_blank">https://www.python.org/shell/  ⤴</a> to experiment with the `math` module. <br> *Simply type in your Python code in the shell and hit enter to see the output.*
 
-<img src="../assets/images/03_python-online-console.png" alt="03_python-online-console.png">
+<img src="{{ images_path }}/03_python-online-console.png" alt="03_python-online-console.png">
 
 ---
 

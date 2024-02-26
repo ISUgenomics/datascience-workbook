@@ -5,7 +5,7 @@ author: Viswa Satheesh
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /05-IntroToProgramming/assets/images/05_programming_banner.png
+  overlay_image: 05-programming/assets/images/05_programming_banner.png
 type: "tutorial"
 level: 2
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [05. Introduction to Programming](../00-IntroToProgramming-LandingPage.md) / [4. Introduction to R programming](01-introduction-to-R) / **4.1 dplyr - R package for data manipulation and transformation**
 
@@ -717,7 +718,7 @@ gapminder |>
   scale_fill_manual(values= wes_palette("FantasticFox1", n = 5)) # wesanderson package
 ```
 
-![plot of chunk unnamed-chunk-24](../assets/images/04_dplyr_1.png)
+![plot of chunk unnamed-chunk-24]({{ images_path }}/04_dplyr_1.png)
 
 More on dplyr:
 [R for Data Science](https://r4ds.had.co.nz/transform.html)

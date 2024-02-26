@@ -5,7 +5,7 @@ author: Viswa Satheesh
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /05-IntroToProgramming/assets/images/05_programming_banner.png
+  overlay_image: 05-programming/assets/images/05_programming_banner.png
 type: "tutorial"
 level: 2
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [05. Introduction to Programming](../00-IntroToProgramming-LandingPage.md) / [4. Introduction to R programming](01-introduction-to-R) / **4.2 ggplot2 - R package for customizable graphs and charts**
 
@@ -100,7 +101,7 @@ head(faithful)
 ggplot(data = faithful)
 ```
 
-![plot of chunk unnamed-chunk-4](../assets/images/04_ggplot2_4.png)
+![plot of chunk unnamed-chunk-4]({{ images_path }}/04_ggplot2_4.png)
 
 - Mapping
 
@@ -109,7 +110,7 @@ ggplot(data = faithful)
 ggplot(data = faithful, mapping = aes(x = eruptions))
 ```
 
-![plot of chunk unnamed-chunk-5](../assets/images/04_ggplot2_5.png)
+![plot of chunk unnamed-chunk-5]({{ images_path }}/04_ggplot2_5.png)
 
 - Geometry
 
@@ -123,7 +124,7 @@ ggplot(data = faithful, mapping = aes(x = eruptions)) +
 ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 ```
 
-![plot of chunk unnamed-chunk-6](../assets/images/04_ggplot2_6.png)
+![plot of chunk unnamed-chunk-6]({{ images_path }}/04_ggplot2_6.png)
 
 The data and the aesthetics can be specified within the layer as well.
 
@@ -136,7 +137,7 @@ ggplot() +
 ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 ```
 
-![plot of chunk unnamed-chunk-7](../assets/images/04_ggplot2_7.png)
+![plot of chunk unnamed-chunk-7]({{ images_path }}/04_ggplot2_7.png)
 
 - Theme
 
@@ -152,7 +153,7 @@ ggplot(faithful, aes(x = eruptions)) +
 ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 ```
 
-![plot of chunk unnamed-chunk-8](../assets/images/04_ggplot2_8.png)
+![plot of chunk unnamed-chunk-8]({{ images_path }}/04_ggplot2_8.png)
 
 Colour based on mapping
 
@@ -166,7 +167,7 @@ ggplot(faithful, aes(x = eruptions)) +
 ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 ```
 
-![plot of chunk unnamed-chunk-9](../assets/images/04_ggplot2_9.png)
+![plot of chunk unnamed-chunk-9]({{ images_path }}/04_ggplot2_9.png)
 
 Fill based on mapping
 
@@ -180,7 +181,7 @@ ggplot(faithful, aes(x = eruptions)) +
 ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 ```
 
-![plot of chunk unnamed-chunk-10](../assets/images/04_ggplot2_10.png)
+![plot of chunk unnamed-chunk-10]({{ images_path }}/04_ggplot2_10.png)
 Let us now use the `iris` data set for futher exploration of the ggplot2 package.
 
 ```r
@@ -225,7 +226,7 @@ ggplot(data = iris, mapping = aes(x = Petal.Width, y = Petal.Length)) +
   theme_classic()
 ```
 
-![plot of chunk unnamed-chunk-13](../assets/images/04_ggplot2_13.png)
+![plot of chunk unnamed-chunk-13]({{ images_path }}/04_ggplot2_13.png)
 
 - Scale
   Adding a different colour scheme
@@ -234,7 +235,7 @@ ggplot(data = iris, mapping = aes(x = Petal.Width, y = Petal.Length)) +
 RColorBrewer::display.brewer.all()
 ```
 
-![plot of chunk unnamed-chunk-14](../assets/images/04_ggplot2_14.png)
+![plot of chunk unnamed-chunk-14]({{ images_path }}/04_ggplot2_14.png)
 
 ```r
 ggplot(data = iris, mapping = aes(x = Petal.Width, y = Petal.Length)) +
@@ -243,7 +244,7 @@ ggplot(data = iris, mapping = aes(x = Petal.Width, y = Petal.Length)) +
   scale_colour_brewer(palette = "Set1")
 ```
 
-![plot of chunk unnamed-chunk-15](../assets/images/04_ggplot2_15.png)
+![plot of chunk unnamed-chunk-15]({{ images_path }}/04_ggplot2_15.png)
 
 - Facets
 
@@ -254,7 +255,7 @@ ggplot(data = iris, mapping = aes(x = Petal.Width, y = Petal.Length)) +
   scale_colour_brewer(palette = "Set2")
 ```
 
-![plot of chunk unnamed-chunk-16](../assets/images/04_ggplot2_16.png)
+![plot of chunk unnamed-chunk-16]({{ images_path }}/04_ggplot2_16.png)
 
 ```r
 ggplot(data = iris, mapping = aes(x = Petal.Width, y = Petal.Length)) +
@@ -263,7 +264,7 @@ ggplot(data = iris, mapping = aes(x = Petal.Width, y = Petal.Length)) +
   scale_colour_brewer(palette = "Set2")
 ```
 
-![plot of chunk unnamed-chunk-17](../assets/images/04_ggplot2_17.png)
+![plot of chunk unnamed-chunk-17]({{ images_path }}/04_ggplot2_17.png)
 
 ```r
 ggplot(iris, aes(x = Petal.Width, y = Petal.Length)) +
@@ -279,7 +280,7 @@ ggplot(iris, aes(x = Petal.Width, y = Petal.Length)) +
   theme_classic(base_size = 12)
 ```
 
-![plot of chunk unnamed-chunk-18](../assets/images/04_ggplot2_18.png)
+![plot of chunk unnamed-chunk-18]({{ images_path }}/04_ggplot2_18.png)
 
 ```r
 sessionInfo()

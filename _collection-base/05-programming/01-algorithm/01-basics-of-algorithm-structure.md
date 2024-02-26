@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /05-IntroToProgramming/assets/images/05_programming_banner.png
+  overlay_image: 05-programming/assets/images/05_programming_banner.png
 type: "intro"
 level: 1
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [05. Introduction to Programming](../00-IntroToProgramming-LandingPage.md) / **1. Basics of Algorithm Structure**
 
@@ -69,7 +70,7 @@ Let's take a look at how these three parts fit together in a simple algorithm.
       <b>Output:</b> The area of the rectangle <br><br><br>
       <i>In this example, the input is the length and width of the rectangle, the processing involves multiplying the length by the width, and the output is the area of the rectangle.</i>
     </td>
-    <td><p align="center"><img width="400" src="../assets/images/01_algorithm_flowchart_example.png"></p></td>
+    <td><p align="center"><img width="400" src="{{ images_path }}/01_algorithm_flowchart_example.png"></p></td>
   </tr>
 </table>
 
@@ -80,7 +81,7 @@ Let's take a look at how these three parts fit together in a simple algorithm.
 
 One common tool used to represent algorithms is a flowchart. **A flowchart is a diagram that shows the flow of an algorithm**, including its inputs, outputs, and steps.
 
-<p align="center"><img width="600" src="../assets/images/01_algorithm_flowchart.png"></p>
+<p align="center"><img width="600" src="{{ images_path }}/01_algorithm_flowchart.png"></p>
 
 Flowcharts use specific symbols to represent different elements of the algorithm:
 * a rectangle is used to represent a process or step,
@@ -140,7 +141,7 @@ Note that the specific <b>syntax of pseudocode can vary</b> depending on the con
 In addition to the basic `input`-`processing`-`output` structure, algorithms often include control structures. **Control structures are statements that control the flow of the algorithm**, allowing it to make decisions and perform different actions based on different conditions.
 
 
-![01_algorithm_flowchart_variants.png](../assets/images/01_algorithm_flowchart_variants.png) <br>
+![01_algorithm_flowchart_variants.png]({{ images_path }}/01_algorithm_flowchart_variants.png) <br>
 *The figure shows a few flowcharts of algorithms that use various control structures, such as conditional statements (if) or loops (until, while).*
 
 `Conditional statements` and `loops` are two examples of control structures that are commonly used in algorithms.

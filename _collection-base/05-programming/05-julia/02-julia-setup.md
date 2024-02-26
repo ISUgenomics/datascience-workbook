@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /05-IntroToProgramming/assets/images/05_programming_banner.png
+  overlay_image: 05-programming/assets/images/05_programming_banner.png
 type: "tutorial"
 level: 2
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [05. Introduction to Programming](../00-IntroToProgramming-LandingPage.md) / [5. Introduction to Julia programming language](01-introduction-to-julia) / **5.1 Julia setup: installation, environments and Jupyter integration**
 
@@ -30,7 +31,7 @@ Julia, like Python or R, is often preinstalled on High Performance Computing (HP
 module avail julia
 ```
 
-![05_julia_module.png](../assets/images/05_julia_module.png)
+![05_julia_module.png]({{ images_path }}/05_julia_module.png)
 
 If multiple versions are listed, you can select and load a specific version using:
 ```
@@ -62,7 +63,7 @@ Install Julia with [Juliaup](https://github.com/JuliaLang/juliaup) - a Rust-base
 curl -fsSL https://install.julialang.org | sh -s -- --yes --default-channel release
 ```
 
-![05_julia_juliaup.png](../assets/images/05_julia_juliaup.png)
+![05_julia_juliaup.png]({{ images_path }}/05_julia_juliaup.png)
 
 Depending on which shell you are using, run one of the following
 commands to reload the PATH environment variable:
@@ -90,7 +91,7 @@ which display the `usage message` for each tool. You can learn about available o
 
 You can utilize the [Juliaup](https://github.com/JuliaLang/juliaup#using-juliaup) version manager to install Julia in your user space on the HPC, and it's advisable to relocate and create symbolic links for the corresponding hidden directories for `.julia` and `.juliaup` **from your home directory to your project location** to prevent exceeding memory quota in your home directory.
 
-![05_juliaup_on_hpc.png](../assets/images/05_juliaup_on_hpc.png)
+![05_juliaup_on_hpc.png]({{ images_path }}/05_juliaup_on_hpc.png)
 
 
 ### Launch interactive Julia interpreter
@@ -110,7 +111,7 @@ or to launch a specific Julia version, say in channel `release`, run:
 ```
 julia +release
 ```
-![05_julia_launch.png](../assets/images/05_julia_launch.png)
+![05_julia_launch.png]({{ images_path }}/05_julia_launch.png)
 
 When needed, **close Julia interpreter** by typing `exit()`.
 
@@ -128,7 +129,7 @@ Once in the interactive Julia interpreter, type `?` and press `enter`. This will
 ```
 julia> ?
 ```
-![05_julia_help.png](../assets/images/05_julia_help.png) <br><br>
+![05_julia_help.png]({{ images_path }}/05_julia_help.png) <br><br>
 <b>NOTE:</b> *For help on a specific function or macro, type* `?` *followed by its name, e.g.* `?cos`, *or* `?@time`, *and press enter.*
 
 
@@ -142,7 +143,7 @@ julia> ]
 
 * To return to `julia>` prompt, press `backspace`, `delete` or `ctrl C`.
 
-![05_julia_manager.png](../assets/images/05_julia_manager.png)
+![05_julia_manager.png]({{ images_path }}/05_julia_manager.png)
 
 Then you can learn more about the built-in **Julia package manager** using the `?` followed by pressing `enter`:
 ```
@@ -154,7 +155,7 @@ Further, you can get more detailed help on various commands, for example:
 ```
 (@v1.9) pkg> ?generate
 ```
-![05_julia_manager_help.png](../assets/images/05_julia_manager_help.png)
+![05_julia_manager_help.png]({{ images_path }}/05_julia_manager_help.png)
 
 <details> <summary>See the full list of commands</summary>
 
@@ -259,7 +260,7 @@ julia
 ```
 (@v1.9) pkg> activate ./julia_geo
 ```
-![05_julia_create_env.png](../assets/images/05_julia_create_env.png) <br>
+![05_julia_create_env.png]({{ images_path }}/05_julia_create_env.png) <br>
 <i>Once you activate the environment, the prompt will change to display the name of the active environment (e.g., julia_geo), indicating that you are now working within this specific environment.</i>
 
 6. **Install Packages** in the new environment. With your new environment activated, you can now install packages using the `add` command:
@@ -300,7 +301,7 @@ chmod -R g+s /project/<your_project_dir>/<account_name>/.julia*
 ln -s /project/<your_project_dir>/<account_name>/.julia* ./
 ```
 
-![05_julia_move_files.png](../assets/images/05_julia_move_files.png)
+![05_julia_move_files.png]({{ images_path }}/05_julia_move_files.png)
 
 
 ## **Julia in Jupyter Lab**
@@ -319,7 +320,7 @@ julia
 using Pkg
 Pkg.add("IJulia")
 ```
-![05_julia_jupyter_kernel.png](../assets/images/05_julia_jupyter_kernel.png)
+![05_julia_jupyter_kernel.png]({{ images_path }}/05_julia_jupyter_kernel.png)
 
 
 <div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; margin-left: 37px;">
@@ -350,7 +351,7 @@ jupyter lab
 ```
 The Jupyter Lab session should start automatically in your default web browser. If not, just do it manually navigating to the URL `http://localhost:8888/`.
 
-![05_julia_apps_in_jupyter.png](../assets/images/05_julia_apps_in_jupyter.png)
+![05_julia_apps_in_jupyter.png]({{ images_path }}/05_julia_apps_in_jupyter.png)
 
 In Jupyter Lab, you should now see Julia as an available kernel, which allows you to run Julia code within `Jupyter notebooks​`, `Julia console` and create `Julia Files​`.
 
@@ -377,7 +378,7 @@ In the JupyterLab interface, you can check the location of your notebook using t
 
 Press `alt + enter` or `option + return` (on Mac) to activate your custom project (env). <br>In the following cells in the notebook, you can test your Julia code.
 
-![05_julia_activate_env_in_notebook.png](../assets/images/05_julia_activate_env_in_notebook.png)
+![05_julia_activate_env_in_notebook.png]({{ images_path }}/05_julia_activate_env_in_notebook.png)
 
 <div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">WARNING:</span>

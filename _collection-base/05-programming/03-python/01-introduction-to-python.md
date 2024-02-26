@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /05-IntroToProgramming/assets/images/05_programming_banner.png
+  overlay_image: 05-programming/assets/images/05_programming_banner.png
 type: "tutorial"
 level: 1
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [05. Introduction to Programming](../00-IntroToProgramming-LandingPage.md) / **3. Introduction to Python Programming**
 
@@ -23,7 +24,7 @@ tags: []
 
 <a href="https://www.python.org" target="_blank">Python  ⤴</a> is a **high-level programming language** that is widely used for scientific computing, data analysis, artificial intelligence algorithms implementation, web development, and visualization. It has a **simple and easy-to-learn syntax**, a large standard library, and a wide community making it a popular choice for beginners and experienced programmers alike.
 
-![Python](../../04-DevelopmentEnvironment/assets/images/04_02_python.png)
+![Python]({{ images_path }}/03_python.png)
 
 <div style="background: #dff5b3; padding: 15px;">
 <span style="font-weight:800;">NOTE:</span>
@@ -123,7 +124,7 @@ You can also stay here and enhance your experience by following the step-by-step
 * You will see the webpage interface, shown on the screenshoot below
 * You can start typing directly in this online console to try your Python skills
 
-![Python Console Online](../../05-IntroToProgramming/assets/images/03_python-online-console.png) <br><br>
+![Python Console Online]({{ images_path }}/03_python-online-console.png) <br><br>
 
 ## Basic Concepts
 
@@ -583,7 +584,7 @@ print("Hello, world!")
 
 *This code will print the message "Hello, world!" to the console. It uses a built-in Python function `print()`. The argument of this function is a text string enclosed in the single or double quotation marks, `""` or `''`.*
 
-![](../assets/images/03_python-anywhere_ex1.png)<br>
+![]({{ images_path }}/03_python-anywhere_ex1.png)<br>
 
 ***Example 2:*** *Storing and manipulating data in variables:*
 
@@ -596,7 +597,7 @@ print(x, y)
 
 *This code defines two variables, `x` and `y`, and assigns them the values 10 and 5, respectively. The current value assigned to the variable can be displayed on the console screen using `print()` function with a variable as an argument (e.g., `print(x)`).*
 
-![](../assets/images/03_python-anywhere_ex2A.png)<br>
+![]({{ images_path }}/03_python-anywhere_ex2A.png)<br>
 
 ***Example 3:*** *Perform some basic arithmetic operations:*
 
@@ -610,7 +611,7 @@ print(z)
 
 *This code uses previously defined variables `x` and `y` to perform some basic arithmetic operations like summing or multiplying. The result of the calculations is assigned to a new variable `z`. It stores the most recent assigned value, which can be previewed using a built-in `print()` function.*
 
-![](../assets/images/03_python-anywhere_ex2B.png)<br>
+![]({{ images_path }}/03_python-anywhere_ex2B.png)<br>
 
 ***Example 4:*** *Calling a built-in function:*
 
@@ -639,7 +640,7 @@ greet("Bob")
 
 *The function is called with two different names, "Alice" and "Bob", to demonstrate how it can be used.*
 
-![](../assets/images/03_python-anywhere_ex3.png)<br>
+![]({{ images_path }}/03_python-anywhere_ex3.png)<br>
 
 ***Example 6:*** *Call function in a loop:*
 
@@ -652,7 +653,7 @@ for name in names:
 
 *This code defines a list composed of 10 names and call a `greet()` function in a loop for each name in the list. Note that such a solution is much more concise than calling the function for each name separately. The code snippet iterating through the list of names will look the same regardless of the length of the list.*
 
-![](../assets/images/03_python-anywhere_ex4.png)<br>
+![]({{ images_path }}/03_python-anywhere_ex4.png)<br>
 
 ***Example 7:*** *Task for you!*
 
@@ -674,7 +675,7 @@ for name in names100:
 
 *First, we defined the empty list for a hundred new names, `names100`. Then, we used a nested loop composed of external loop over 10 digits, and internal loop over 10 names. In this case, it's an everyone-with-everyone loop, which means that the number of iterations is equal to the multiply of the lengths of both lists (i.e., digits x names = 100). For each pair name-digit we assigned a new value for the `new_name` variable and added it to the end of the list `names100`. Once the new list of names is created, we could use the same code snippet to call a greet() function for every name on the list.*
 
-![](../assets/images/03_python-anywhere_ex5.png)<br>
+![]({{ images_path }}/03_python-anywhere_ex5.png)<br>
 
 ***PRO solution for example 7***
 

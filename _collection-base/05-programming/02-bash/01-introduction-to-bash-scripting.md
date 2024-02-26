@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /05-IntroToProgramming/assets/images/05_programming_banner.png
+  overlay_image: 05-programming/assets/images/05_programming_banner.png
 type: "tutorial"
 level: 1
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [05. Introduction to Programming](../00-IntroToProgramming-LandingPage.md) / **2. Introduction to Bash Scripting**
 
@@ -227,7 +228,7 @@ You can view the available Bash statements on the command line using the `compge
 ```
 compgen -k
 ```
-![terminal colors](../assets/images/02_bash_keywords.png)<br>
+![terminal colors]({{ images_path }}/02_bash_keywords.png)<br>
 
 There are about twenty-some Bash statements, which can be further divided into several groups, including **loops**, **conditionals**, the **action operators**, and others. The table below contains the syntax, type, and definitions of the most common Bash statements. Explore additional column with notes to gain an idea of when to use different syntaxes. In the following subsections, we will discuss the usage of Bash statements following real-life examples.
 
@@ -267,7 +268,7 @@ do
 done
 ```
 
-![terminal colors](../assets/images/02_bash_for_loop_script.png)<br>
+![terminal colors]({{ images_path }}/02_bash_for_loop_script.png)<br>
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
@@ -292,7 +293,7 @@ You can also use **FOR** loop syntax directly in the command line as a one-liner
 for item in {first,second,third,fourth,fifth}; do echo $item; done
 ```
 
-![terminal colors](../assets/images/02_bash_for_loop_inline.png)<br>
+![terminal colors]({{ images_path }}/02_bash_for_loop_inline.png)<br>
 
 <div style="background: mistyrose; padding: 15px;">
 <span style="font-weight:800;">WARNING:</span>
@@ -407,7 +408,7 @@ for name in {dog,cat,fish,snake,bird}; do
 done
 ```
 
-![terminal colors](../assets/images/02_bash_for_loop_nested.png)<br>
+![terminal colors]({{ images_path }}/02_bash_for_loop_nested.png)<br>
 
 The same algorithm can be executed as a one-liner directly in the command line.
 ```
@@ -415,7 +416,7 @@ The same algorithm can be executed as a one-liner directly in the command line.
 for name in {dog,cat,fish,snake,bird}; do for format in txt dat png; do echo $name.$format; done; done
 ```
 
-![terminal colors](../assets/images/02_bash_for_loop_nested_inline.png)<br>
+![terminal colors]({{ images_path }}/02_bash_for_loop_nested_inline.png)<br>
 
 
 **Use a template for 2 nested FOR loops**
@@ -504,7 +505,7 @@ for i in {Ana,Eric,Bob}; do for j in welcome; do for k in {London,NYC,Paris}; do
 
 You can preview the results saved into a file using `less file` command:
 
-![terminal colors](../assets/images/02_bash_for_create_file_content.png)<br>
+![terminal colors]({{ images_path }}/02_bash_for_create_file_content.png)<br>
 
 Once we have a file with some content, we can read it line-by-line with a `while` loop and derive from each line the name and the city.
 
@@ -515,7 +516,7 @@ while read -r line; do
   echo $line | tr ',' ' ' | tr '.' ' ' | awk '{print $1,$4}'
 done < "$filename"
 ```
-![terminal colors](../assets/images/02_bash_for_create_file_content_inline.png)<br>
+![terminal colors]({{ images_path }}/02_bash_for_create_file_content_inline.png)<br>
 
 The `filename` variable stores the name of recently created file.
 
@@ -548,7 +549,7 @@ while true; do echo "Today is: "$(date); sleep 24h; done&
 
 To restore this process to foreground, use the `fg` command. Then you can end the loop definitively using `CTRL+C` if it is no longer needed.
 
-![terminal colors](../assets/images/02_bash_while_infinite.png)<br>
+![terminal colors]({{ images_path }}/02_bash_while_infinite.png)<br>
 
 ## **UNTIL** false loop
 
@@ -598,7 +599,7 @@ done
 echo "Job $JOBID is completed."
 ```
 
-![terminal colors](../assets/images/02_bash_until_loop.png)<br>
+![terminal colors]({{ images_path }}/02_bash_until_loop.png)<br>
 
 ## **if-elif-else-fi** conditional
 
@@ -681,7 +682,7 @@ for i in 1 2 3 4 5; do
 done
 ```
 
-![terminal colors](../assets/images/02_bash_continue.png)<br>
+![terminal colors]({{ images_path }}/02_bash_continue.png)<br>
 
 ## **break** the loop
 
@@ -699,7 +700,7 @@ done                    #--------------- commands below the line will be execute
 echo "The last iterated value is $i"
 ```
 
-![terminal colors](../assets/images/02_bash_break.png)<br>
+![terminal colors]({{ images_path }}/02_bash_break.png)<br>
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
@@ -725,7 +726,7 @@ done                      #--------------- commands below the line will be execu
 echo "The last iterated values are $i-$j"
 ```
 
-![terminal colors](../assets/images/02_bash_break_nested.png)<br>
+![terminal colors]({{ images_path }}/02_bash_break_nested.png)<br>
 
 
 ---

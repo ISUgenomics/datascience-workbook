@@ -5,7 +5,7 @@ author: Viswa Satheesh
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /05-IntroToProgramming/assets/images/05_programming_banner.png
+  overlay_image: 05-programming/assets/images/05_programming_banner.png
 type: "tutorial"
 level: 2
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [05. Introduction to Programming](../00-IntroToProgramming-LandingPage.md) / [4. Introduction to R programming](01-introduction-to-R) / **4.3 tidyverse - R packages set for advanced exploratory data analysis**
 
@@ -426,7 +427,7 @@ gapminder_df %>%
   facet_wrap( . ~ country )
 ```
 
-![plot of chunk unnamed-chunk-11](../assets/images/04_tidyverse_1.png)
+![plot of chunk unnamed-chunk-11]({{ images_path }}/04_tidyverse_1.png)
 
 Life expectancy vs GDP Per Capita plot
 
@@ -446,7 +447,7 @@ gapminder_df %>%
         legend.title = element_blank())
 ```
 
-![plot of chunk unnamed-chunk-12](../assets/images/04_tidyverse_2.png)
+![plot of chunk unnamed-chunk-12]({{ images_path }}/04_tidyverse_2.png)
 
 Difference in GDP per Capita for Countries in the Americas in 2015
 
@@ -469,7 +470,7 @@ gapminder_df %>%
   theme_bw( base_size = 12 )
 ```
 
-![plot of chunk unnamed-chunk-13](../assets/images/04_tidyverse_3.png)
+![plot of chunk unnamed-chunk-13]({{ images_path }}/04_tidyverse_3.png)
 
 
 

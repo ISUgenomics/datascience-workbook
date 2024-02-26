@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /07-DataParsing/assets/images/07_data_acquisition_banner.png
+  overlay_image: 05-programming/assets/images/05_programming_banner.png
 type: "tutorial"
 level: 2
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [05. Introduction to Programming](../00-IntroToProgramming-LandingPage.md) / [3. Introduction to Python Programming](01-introduction-to-python.md) / **3.3 JSON Module - Encoding & Decoding JSON Data**
 
@@ -202,7 +203,7 @@ Alternatively, if you prefer to **work online**, you can use various online Pyth
 
 For example, you can **use online Python shell** immediately available at <a href="https://www.python.org/shell/" target="_blank">https://www.python.org/shell/  ⤴</a> to experiment with the `json` module. <br> *Simply type in your Python code in the shell and hit enter to see the output.*
 
-<img src="../assets/images/03_python-online-console.png" alt="03_python-online-console.png">
+<img src="{{ images_path }}/03_python-online-console.png" alt="03_python-online-console.png">
 
 
 ## Import JSON module
@@ -233,7 +234,7 @@ print(cities_json)
 print(type(cities_json))
 ```
 **OUTPUT:** *string*
-![03_python-module-json-o0.png](../assets/images/03_python-module-json-o0.png)
+![03_python-module-json-o0.png]({{ images_path }}/03_python-module-json-o0.png)
 
 
 ## JSON string from Dictionary
@@ -254,7 +255,7 @@ print(person_json)
 print(type(person_json))
 ```
 **OUTPUT:** *string*
-![03_python-module-json-o1.png](../assets/images/03_python-module-json-o1.png)
+![03_python-module-json-o1.png]({{ images_path }}/03_python-module-json-o1.png)
 
 
 ## Python object from JSON string
@@ -271,7 +272,7 @@ print(person_object)
 print(type(person_object))
 ```
 **OUTPUT:** *dictionary*
-![03_python-module-json-o2.png](../assets/images/03_python-module-json-o2.png)
+![03_python-module-json-o2.png]({{ images_path }}/03_python-module-json-o2.png)
 
 
 ## Accessing JSON Data
@@ -288,7 +289,7 @@ person = json.loads(person_json)          # object from JSON string
 print(person["name"])                     # take the element from object
 ```
 **OUTPUT:** *string*
-![03_python-module-json-o3.png](../assets/images/03_python-module-json-o3.png)
+![03_python-module-json-o3.png]({{ images_path }}/03_python-module-json-o3.png)
 
 ## Reading JSON Data from a File
 
@@ -346,7 +347,7 @@ except json.JSONDecodeError as e:
     print("Error decoding JSON:", e)
 ```
 **OUTPUT:** *error message*
-![03_python-module-json-o4.png](../assets/images/03_python-module-json-o4.png)
+![03_python-module-json-o4.png]({{ images_path }}/03_python-module-json-o4.png)
 
 
 # Advanced JSON tasks
@@ -396,7 +397,7 @@ In this example, (<b>#1</b>) we define a custom `Person class` with a <i>name</i
 </details><br>
 
 **OUTPUT:**
-![03_python-module-json-o5.png](../assets/images/03_python-module-json-o5.png)
+![03_python-module-json-o5.png]({{ images_path }}/03_python-module-json-o5.png)
 
 
 ## Pretty-printing JSON data
@@ -422,7 +423,7 @@ In this example, we create a Python <i>dictionary</i> with "name", "age", and "c
 </details><br>
 
 **OUTPUT:**
-![03_python-module-json-o6.png](../assets/images/03_python-module-json-o6.png)
+![03_python-module-json-o6.png]({{ images_path }}/03_python-module-json-o6.png)
 
 
 ## More controlling options
@@ -458,7 +459,7 @@ In this example, we create a Python <i>dictionary</i> with "name", "age", and "c
 </details><br>
 
 **OUTPUT:**
-![03_python-module-json-o7.png](../assets/images/03_python-module-json-o7.png)
+![03_python-module-json-o7.png]({{ images_path }}/03_python-module-json-o7.png)
 
 
 
