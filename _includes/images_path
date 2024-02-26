@@ -1,0 +1,2 @@
+{% assign module_path = page.url | split: '/' | slice: 1 | join: "" %}
+{% assign images_path = module_path | append: '/assets/images/' | relative_url %}
