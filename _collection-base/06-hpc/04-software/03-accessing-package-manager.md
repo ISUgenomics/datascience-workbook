@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /06-IntroToHPC/assets/images/06_hpc_banner.png
+  overlay_image: 06-hpc/assets/images/06_hpc_banner.png
 type: "tutorial"
 level: 2
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../00-IntroToHPC-LandingPage.md) / [4. Software Available on HPC](01-software-available-on-HPC.md) / **4.2 Accessing Software via Package Manager**
 
@@ -52,7 +53,7 @@ These operating systems have been optimized and tested for performance and relia
 
 **To find out what package manager is in use**, first check what the operating sytem is on the HPC. Usually such information is displayed automatically as a welcome note when you log in to HPC.
 
-![Operating System](../assets/images/04_hpc_software_os.png)
+![Operating System]({{ images_path }}/04_hpc_software_os.png)
 
 
 A. You can check at any time, which operating system (OS) is running on an HPC system using the commands:
@@ -60,7 +61,7 @@ A. You can check at any time, which operating system (OS) is running on an HPC s
 ```
 lsb_release -a
 ```
-![Operating System](../assets/images/04_hpc_software_os_version.png)<br>
+![Operating System]({{ images_path }}/04_hpc_software_os_version.png)<br>
 *In this example, the HPC system is running CentOS 7.8.2003.*
 
 B. If the `lsb_release` command is not available on your HPC system, you can also check the OS by looking at the contents of the `/etc/os-release` file:
@@ -68,7 +69,7 @@ B. If the `lsb_release` command is not available on your HPC system, you can als
 ```
 cat /etc/os-release
 ```
-![Operating System](../assets/images/04_hpc_software_os_version2.png)<br>
+![Operating System]({{ images_path }}/04_hpc_software_os_version2.png)<br>
 *In this example, the HPC system is running CentOS 7.*
 
 Once you know what operating system you are working on, find the corresponding package manager in the table above. You can use the command line to confirm which package manager is installed on the HPC system. For example, you can use `which` command followed by the name of the package manager:
@@ -77,7 +78,7 @@ Once you know what operating system you are working on, find the corresponding p
 |-----|-----|-----|--------|------|
 |`which apt`|`which yum`|`which dnf`|`which pacman`|`which zypper`|
 
-![Package Manager](../assets/images/04_hpc_software_package_manager.png)<br>
+![Package Manager]({{ images_path }}/04_hpc_software_package_manager.png)<br>
 *If the package manager is not installed, you will receive an error message indicating that the command is not found. If the package manager is installed, you will receive the path to the executable file for the package manager.*
 
 ### *Search for packages*

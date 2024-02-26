@@ -5,14 +5,14 @@ author: Andrew Severin
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /06-IntroToHPC/assets/images/06_hpc_banner.png
-type: "cheatsheet"
+  overlay_image: 06-hpc/assets/images/06_hpc_banner.png
 level: 3
 categories: []
 tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../../00-IntroToHPC-LandingPage.md) / [5. Introduction to Job Scheduling](../00-introduction-to-job-scheduling.md) / [5.1 SLURM: Basics of Workload Manager](01-slurm-basics.md) / **SLURM Commands CheatSheet**
 

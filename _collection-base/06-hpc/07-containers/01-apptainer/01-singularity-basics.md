@@ -6,7 +6,7 @@ author: Andrew Severin
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /06-IntroToHPC/assets/images/06_hpc_banner.png
+  overlay_image: 06-hpc/assets/images/06_hpc_banner.png
 type: "tutorial"
 level: 3
 categories: []
@@ -14,6 +14,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../../00-IntroToHPC-LandingPage.md) / [7. Introduction to Containers](../00-introduction-to-containers.md) / **7.1 Singularity**
 
@@ -72,12 +73,12 @@ singularity exec --bind $PWD ./maker.img maker --help
 
 First go to [Singularity Hub](https://www.singularity-hub.org/) and locate the container you want through the search box located on the left side just below the ```ADD A COLLECTION``` button and above the list of containers.
 
-![](assets/images/SingularityHubcollectionsPage.png)
+![]({{ images_path }}/SingularityHubcollectionsPage.png)
 
 
  For this example searched for ISUGIF and will download one called utilities. First you click on the utilities part of the link which will bring you to a page that looks like this:
 
-![](assets/images/singularity_utilities.png)
+![]({{ images_path }}/singularity_utilities.png)
 
 
 The uri is the important bit of information you will need to download this image using the singularity pull command. Unfortunately, there is no easy way to copy this so I typically just copy the header and then manually type in the container name (:utilities.1.0.0) in the command below.

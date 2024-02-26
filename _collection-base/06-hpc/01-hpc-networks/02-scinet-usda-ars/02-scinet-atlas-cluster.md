@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /06-IntroToHPC/assets/images/06_hpc_banner.png
+  overlay_image: 06-hpc/assets/images/06_hpc_banner.png
 type: "tutorial"
 level: 3
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../../00-IntroToHPC-LandingPage.md) / [1. Introduction to HPC infrastructure](../01-introduction-to-hpc-infrastructure.md) / [1.2 SCINet Network](01-scient-network-intro.md) / **1.2.1 Atlas Computing Cluster**
 
@@ -91,7 +92,7 @@ Use links provided below to request account for: <br>
 • &ensp; ARS-affiliated users: <a href="https://scinet.usda.gov/about/signup#ars-employees" target="_blank">SCINet Account Request  ⤴</a> <br>
 • &ensp; non-ARS users: <a href="https://scinet.usda.gov/about/signup#non-ars-employees" target="_blank">Non-ARS SCINet Account Request  ⤴</a>
 
-![SCINet account](../../assets/images/01_hpc_scinet_account.png)<br>
+![SCINet account]({{ images_path }}/01_hpc_scinet_account.png)<br>
 
 Once your request is approved you should get the <b><i>"Welcome to SCINet"</i></b> email with further instructions.
 
@@ -117,7 +118,7 @@ Multi-Factor Authentication (MFA) is a <b>security system that requires more tha
     <p><i>Technically, you will get an app on your device. It will generate unique 6-digit codes every 60 seconds. You need to use the code that is current at the time of logging in or transferring data.</i><br><br>
     If needed, learn more about <a href="https://scinet.usda.gov/guides/access/mfa#what-is-multifactor-authentication" target="_blank">What is Multifactor Authentication  ⤴</a>.</p>
   </td>
-  <td><img src="../../assets/images/01_hpc_GA.png" width="800"></td>
+  <td><img src="{{ images_path }}/01_hpc_GA.png" width="800"></td>
 </table>
 
 
@@ -182,7 +183,7 @@ If system accepts the code it will prompt you for ***Current Password***. When l
 see <a href="https://scinet.usda.gov/guides/access/login#password-requirements" target="_blank">[ Password Requirements  ⤴ ]</a>
 
 For the next password update the ssh connection to Atlas will be straightforward.
-<p align="center"><img width="800" src="../../assets/images/01_hpc_scinet_atlas_login.gif"></p>
+<p align="center"><img width="800" src="{{ images_path }}/01_hpc_scinet_atlas_login.gif"></p>
 
 If you need a more detailed guide for a specific operating system, follow the step-by-step instructions provided by SCINet support team:
 * <a href="https://scinet.usda.gov/guides/access/login#from-windows-10" target="_blank">Using ssh to Connect From Windows 10  ⤴</a>
@@ -305,7 +306,7 @@ One example of a service that provides web-browser access to HPC systems is <a h
 
 Open your favorite web-browser *(e.g., Chrome, Firefox, Safari)* and visit the URL: <a href="https://atlas-ood.hpc.msstate.edu/" target="_blank">https://atlas-ood.hpc.msstate.edu/</a> <br>or simply click-on the link <a href="https://atlas-ood.hpc.msstate.edu/" target="_blank">Atlas Open OnDemand  ⤴</a>.
 
-![Atlas OOD](../../assets/images/01_hpc_scinet_atlas_ood.png)
+![Atlas OOD]({{ images_path }}/01_hpc_scinet_atlas_ood.png)
 
 Then, follow the instructions provided by <i><a href="https://www.hpc.msstate.edu/computing/overview.php" target="_blank">HPC² at Mississippi State University ⤴</a></i>:
 
@@ -319,7 +320,7 @@ Your SciNet credentials includes:
 
 When sucessfully logged in, you will see the <i>"Message of the Day"</i> in the Atlas OnDemand welcome interface.
 
-![Atlas OOD](../../assets/images/01_hpc_scinet_atlas_ood_home.png)
+![Atlas OOD]({{ images_path }}/01_hpc_scinet_atlas_ood_home.png)
 
 Using the options in the top menu bar, you can:
 
@@ -328,7 +329,7 @@ Using the options in the top menu bar, you can:
 3. [**Clusters:**] Open the shell in the command line interface (terminal)
 4. [**Interactive Apps:**] Launch software that require graphical interface, such as *Desktop, ENVI, JupyterLab, or RStudio*.
 
-<p align="center"><img width="10000" src="../../assets/images/01_hpc_scinet_atlas_ood_options.png"></p>
+<p align="center"><img width="10000" src="{{ images_path }}/01_hpc_scinet_atlas_ood_options.png"></p>
 
 *Note that each application when clicked will open in a separate browser tab, and all your active applications are listed in the last tab "My Interactive Sessions".*
 

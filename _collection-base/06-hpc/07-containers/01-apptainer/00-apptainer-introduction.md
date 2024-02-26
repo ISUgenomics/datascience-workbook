@@ -6,7 +6,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /06-IntroToHPC/assets/images/06_hpc_banner.png
+  overlay_image: 06-hpc/assets/images/06_hpc_banner.png
 type: "tutorial"
 level: 2
 categories: []
@@ -14,6 +14,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../../00-IntroToHPC-LandingPage.md) / [7. Introduction to Containers](../00-introduction-to-containers.md) / **7.1 Apptainer**
 
@@ -24,7 +25,7 @@ tags: []
 
 <b><a href="https://apptainer.org" target="_blank">Apptainer  ⤴</a></b> is, in fact, the evolution and rebranding of <a href="https://en.wikipedia.org/wiki/Singularity_(software)" target="_blank">Singularity  ⤴</a>. In late 2021, the decision was made to reflect a broader mission and vision for the project. While <b>Singularity originated as a container solution for HPC</b>, it has since grown to serve more use cases beyond just HPC, including Edge and IoT (Internet of Things) Computing, Enterprise IT and Cloud, Data Mobility and Reproducibility. So now, <b>Apptainer aims to serve a broader audience by addressing the needs of various computing environments and scenarios beyond just HPC.</b>
 
-![06_apptainer_announcement.png](../../assets/images/06_apptainer_announcement.png)
+![06_apptainer_announcement.png]({{ images_path }}/06_apptainer_announcement.png)
 
 Explore the journey from Singularity to Apptainer and uncover the expanded features and capabilities by visiting the official <a href="https://apptainer.org/news/community-announcement-20211130/" target="_blank">Apptainer website  ⤴</a>.
 
@@ -91,7 +92,7 @@ module avail apptainer
 ```
 to list available modules and search for Apptainer in the output:
 
-![06_apptainer_module.png](../../assets/images/06_apptainer_module.png)
+![06_apptainer_module.png]({{ images_path }}/06_apptainer_module.png)
 
 Users should choose the specific version of the Apptainer module they wish to work with, and activate it by loading the module using the command:
 ```

@@ -6,7 +6,7 @@ author: Andrew Severin
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /06-IntroToHPC/assets/images/06_hpc_banner.png
+  overlay_image: 06-hpc/assets/images/06_hpc_banner.png
 type: "tutorial"
 level: 2
 categories: []
@@ -14,6 +14,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../00-IntroToHPC-LandingPage.md) / [2. Remote Access to HPC Resources](01-remote-data-access.md) / **2.2 Secure Shell Connection (SSH)**
 
@@ -36,7 +37,7 @@ ssh (SSH client) is a program for logging into a remote machine and for
 
 ### On a Mac (OS)
 
-1. Use the Finder ![](assets/MagnifyingGlass.png) and search for and open the Terminal program ![](assets/terminal.png).
+1. Use the Finder ![]({{ images_path }}/MagnifyingGlass.png) and search for and open the Terminal program ![]({{ images_path }}/Terminal.png).
 2. Type ```ssh username@hostname```
   * Example1:  ```ssh andrew.severin@login.scinet.science```
   * Example2: ```ssh severin@bridges.psc.edu```
@@ -49,7 +50,7 @@ On Windows, it will be easier for you to login first to a linux based system for
 
 1. Press windows key + r, type cmd and enter
 
-  ![](assets/WindowsRun.png)
+  ![]({{ images_path }}/WindowsRun.png)
 
 * Type ssh usename@hostname
   * Example1:  ```ssh andrew.severin@login.scinet.science```
@@ -59,7 +60,7 @@ On Windows, it will be easier for you to login first to a linux based system for
 
 2. Search for ```cmd``` using Window's search.
 
-  ![](assets/WindowsSearch.png)
+  ![]({{ images_path }}/WindowsSearch.png)
 
 **Note:** The window can be resized with the mouse and the font text can be increased by pressing `cmd +` or `control +` on Mac or Windows, respectively.
 

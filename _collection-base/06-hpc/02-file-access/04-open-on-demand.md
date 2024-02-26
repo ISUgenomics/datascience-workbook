@@ -6,7 +6,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /06-IntroToHPC/assets/images/06_hpc_banner.png
+  overlay_image: 06-hpc/assets/images/06_hpc_banner.png
 type: "tutorial"
 level: 2
 categories: []
@@ -14,6 +14,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../00-IntroToHPC-LandingPage.md) / [2. Remote Access to HPC Resources](01-remote-data-access.md) / **2.3 Open On Demand (OOD) Connection**
 
@@ -48,7 +49,7 @@ For example, you can open the OOD interface for: <br>
 Most resources probably require a login and allow access only to authorized users. Yet the good news is that logging into the OOD interface will require the same user credentials (`username` & `password`) as command-line access. To add an extra layer of security to the user authentication process, you may be asked for a **multi-factor authentication** (MFA). <br>
 <i>Typically, it is a several-digit code generated in time intervals in the application (e.g., <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=en_US&gl=US&pli=1" target="_blank">Google Authenticator  ⤴</a>, <b>GA</b>) on your mobile device. <br>* You need to install the required app on one of your own devices.</i>
 
-![02_remote_ood_login_ceres.png](../assets/images/02_remote_ood_login_ceres.png)
+![02_remote_ood_login_ceres.png]({{ images_path }}/02_remote_ood_login_ceres.png)
 
 <div style="background: #dff5b3; padding: 15px;">
 <span style="font-weight:800;">NOTE:</span>
@@ -61,7 +62,7 @@ Multi-factor authentication is a security mechanism that requires users to provi
 
 When you **log in to the OnDemand website for a given HPC system**, you'll see a graphical interface with different options to choose from, such as launching software applications or accessing data. You can select the tool or application you need by clicking on the corresponding icon or link. Once you've selected an option, OnDemand will launch the requested service in the new tab in your web browser window. You can monitor the list and staus of all your active applications in the `My Interactive Sessions` section of the OOD interface.
 
-![01_hpc_scinet_atlas_ood_options.png](../assets/images/01_hpc_scinet_atlas_ood_options.png)
+![01_hpc_scinet_atlas_ood_options.png]({{ images_path }}/01_hpc_scinet_atlas_ood_options.png)
 
 ## What you get with OOD?
 

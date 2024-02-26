@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /06-IntroToHPC/assets/images/06_hpc_banner.png
+  overlay_image: 06-hpc/assets/images/06_hpc_banner.png
 type: "tutorial"
 level: 1
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../00-IntroToHPC-LandingPage.md) / **4. Software Available on HPC**
 
@@ -125,12 +126,12 @@ If you know what the command corresponding to the program could be called, you c
 ```
 chmod -h
 ```
-![Check if command exists](../assets/images/04_hpc_check_command_true.png) <br><br>
+![Check if command exists]({{ images_path }}/04_hpc_check_command_true.png) <br><br>
 If such a command does not exist then an error message will be printed.
 ```
 random_command
 ```
-![Check if command exists](../assets/images/04_hpc_check_command_false.png) <br>
+![Check if command exists]({{ images_path }}/04_hpc_check_command_false.png) <br>
 
 ---
 

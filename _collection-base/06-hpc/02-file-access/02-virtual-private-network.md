@@ -6,7 +6,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /06-IntroToHPC/assets/images/06_hpc_banner.png
+  overlay_image: 06-hpc/assets/images/06_hpc_banner.png
 type: "tutorial"
 level: 2
 categories: []
@@ -14,6 +14,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../00-IntroToHPC-LandingPage.md) / [2. Remote Access to HPC Resources](01-remote-data-access.md) / **2.1 Virtual Private Network (VPN) Connection**
 
@@ -87,11 +88,11 @@ When accessing remote HPC system using VPN, you first need to **establish a VPN 
 **1.** First, download the VPN client software. <i>Here,it is the <a href="https://software.cisco.com/download/home" target="_blank">AnyConnect Secure Mobility Client  ⤴</a></i>. <br>
 Select a version that is compatible with your operating system.
 
-![02_remote_vpn_cisco_download.png](../assets/images/02_remote_vpn_cisco_download.png)
+![02_remote_vpn_cisco_download.png]({{ images_path }}/02_remote_vpn_cisco_download.png)
 
 Note that your organization may provide a custom link to download the specific versions of the VPN client software. *For example, if you are an employee of Iowa State University, you should download the Cisco Secure Client from <a href="http://vpn.iastate.edu/" target="_blank">http://vpn.iastate.edu/  ⤴</a>*
 
-![02_remote_vpn_cisco_download_isu.png](../assets/images/02_remote_vpn_cisco_download_isu.png)
+![02_remote_vpn_cisco_download_isu.png]({{ images_path }}/02_remote_vpn_cisco_download_isu.png)
 
 ## Installation of Cisco AnyConnect
 
@@ -106,14 +107,14 @@ You can use the `Instructions` button in bottom-right corner of the page to unfo
 7. Enter your device's password to approve the installation. *It is needed because Cisco Secure Client requires administrative privileges.*
 8. You have successfully installed the Cisco Secure Client and it is now ready for use.
 
-![02_remote_vpn_cisco_install.png](../assets/images/02_remote_vpn_cisco_install.png)
+![02_remote_vpn_cisco_install.png]({{ images_path }}/02_remote_vpn_cisco_install.png)
 
 ## Launch VPN connection
 
 To open the Cisco Secure Client, browse your File System *(`Application` folder on MacOS)* and double click. <br>
 *You can drag the icon to your Dock/Menu Bar to have a Cisco Client shortcut and speed up the use next time.*
 
-![02_remote_vpn_cisco_connection.png](../assets/images/02_remote_vpn_cisco_connection.png)
+![02_remote_vpn_cisco_connection.png]({{ images_path }}/02_remote_vpn_cisco_connection.png)
 
 Running the VPN client software initiates your connection with the VPN server. The client *(your local machine)* and server exchange encryption keys and authenticate each other, and then establish an encrypted tunnel for data transfer.
 

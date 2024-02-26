@@ -5,7 +5,7 @@ author: Sharu Paul
 author_profile: TRUE
 header:
   overlay_color: "444444"
-  overlay_image: /06-IntroToHPC/assets/images/06_hpc_banner.png
+  overlay_image: 06-hpc/assets/images/06_hpc_banner.png
 type: "tutorial"
 level: 2
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../../00-IntroToHPC-LandingPage) / [7. Introduction to Containers](../00-introduction-to-containers.md) / **7.1 Docker**
 
@@ -42,26 +43,26 @@ Singularity is commonly used for High-Performance Computing (HPC) clusters envir
 The simplest way to pull (download) a container image is using the Docker Desktop app.
 Open the app: <br>
 <br>
-![d1](../../assets/images/06_docker_start.png) <br>
+![d1]({{ images_path }}/06_docker_start.png) <br>
 <br>
 
 Let's try pulling image of the `ncbi-blast-plus` container through the app. The app is connected to docker hub and you can directly search for images from the search bar at the top. Click on `images` to see the list of search results. <br>
 <br>
-![d2](../../assets/images/06_search.png) <br>
+![d2]({{ images_path }}/06_search.png) <br>
 <br>
 
 Pull the image by clicking on the desired container and then `Pull` button. Alternatively, you can copy the pull command by clicking on the copy button and run it in a terminal. You need to do any one of the two. <br>
 <br>
-![d3](../../assets/images/06_pull1.png) <br>
+![d3]({{ images_path }}/06_pull1.png) <br>
 <br>
 
 You can also search for the Docker containers online from the <a href="https://www.docker.com/" target="_blank">Docker Website ⤴</a>. Use the search bar at the top to search and then click on the desired container. <br>
 <br>
-![d4](../../assets/images/06_Docker_Hub.png) <br>
+![d4]({{ images_path }}/06_Docker_Hub.png) <br>
 <br>
 Now copy the pull command by clicking on it. <br>
 <br>
-![d5](../../assets/images/06_Docker_Hub_pull.png) <br>
+![d5]({{ images_path }}/06_Docker_Hub_pull.png) <br>
 <br>
 Open a terminal and paste the command, press enter. The image will be downloaded.
 <br>
@@ -94,23 +95,23 @@ Check out the <a href="https://docs.sylabs.io/guides/3.2/user-guide/cli/singular
 ## Working Example
 Let's test the blast-plus container image we pulled by doing a simple blast between two fasta files. I put my fasta files in a folder named `blast` on my desktop. First we need to `run` the image to convert it into a container. This can be done via the Docker Desktop app. <br>
 <br>
-![d6](../../assets/images/06_run_image.png) <br>
+![d6]({{ images_path }}/06_run_image.png) <br>
 <br>
 A dialogue box will open; click on the optional settings and add path to your data in `host path` and type `\data` in `container path` under `Volumes`. Click `Run` to initiate a new container. <br>
 <br>
-![d7](../../assets/images/06_new_container.png) <br>
+![d7]({{ images_path }}/06_new_container.png) <br>
 <br>
 Go to the containers and find the running container. Click on it to open details about the container. <br>
 <br>
-![d8](../../assets/images/06_run_container.png) <br>
+![d8]({{ images_path }}/06_run_container.png) <br>
 <br>
 Make sure the container is running, you should see a stop button, if not click on the run button. Then go to the terminal to use the blast and all its functions <br>
 <br>
-![d9](../../assets/images/06_container_terminal.png) <br>
+![d9]({{ images_path }}/06_container_terminal.png) <br>
 <br>
 I had trouble at container `run` step as it would not run and exit immediately. This could happen due to a number of reasons including memory problems or problems with path. There is an easy fix for this problem, make the container i.e. run the image via a terminal. You will need the image ID for this, copy it from images section. <br>
 <br>
-![d10](../../assets/images/06_imageID.png) <br>
+![d10]({{ images_path }}/06_imageID.png) <br>
 <br>
 You can also find images and their details including image ID from the terminal. Open a terminal (for example, PowerShell on windows) and enter `docker images` to list all images. To initiate a container enter following:
 
@@ -126,7 +127,7 @@ docker run -v C:\Users\abc\Desktop\blast:/data -it eaeed4320e5as0b1d136533f02 ba
 
 The `:/data` after your path is the default container path (keep it as is) and the image-ID is usually a long string of numbers and alphabets. This will initiate an interactive run of the docker container. You can now use the blast programs in this terminal directly. <br>
 <br>
-![d11](../../assets/images/06_Blastn.png) <br>
+![d11]({{ images_path }}/06_Blastn.png) <br>
 <br>
 Running this command generated the desired output file I named Blast_out. You should now see the container running in the Docker Desktop as well, and you can use the terminal within the app as well for running blast now. <br>
 <br>

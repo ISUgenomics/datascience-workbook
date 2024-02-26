@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /06-IntroToHPC/assets/images/06_hpc_banner.png
+  overlay_image: 06-hpc/assets/images/06_hpc_banner.png
 type: "intro"
 level: 2
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../../00-IntroToHPC-LandingPage.md) / [1. Introduction to HPC infrastructure](../01-introduction-to-hpc-infrastructure.md) / **1.2 SCINet Network**
 
@@ -34,7 +35,7 @@ An official **SCINet website** is hosted on the United States government domain 
 *This introduction to SCINet features much of its material sourced from the SCINet website. <br>
 The SCINet homepage is shown on the screenshoot below.*
 
-![Scinet website](../../assets/images/01_hpc_scinet_web.png) <br>
+![Scinet website]({{ images_path }}/01_hpc_scinet_web.png) <br>
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
@@ -73,7 +74,7 @@ To obtain a SCINet account, a SCINet Account Request must be submitted:
 
 The approval process depends on the affiliation of the requester. To learn more, visit the official <a href="https://scinet.usda.gov/about/signup#sign-up-for-a-scinet-account" target="_blank">Sign up for a SCINet account  ⤴</a> guide.
 
-![SCINet account](../../assets/images/01_hpc_scinet_account.png)<br>
+![SCINet account]({{ images_path }}/01_hpc_scinet_account.png)<br>
 
 <b>Once your request is approved you should get the <i>"Welcome to SCINet"</i> email with further instructions.</b>
 
@@ -94,16 +95,16 @@ Reading the SCINet Policy before you get started using the SCINet resources is i
     <th><a href="https://scinet.usda.gov/guides/#scinet-guides-list" target="_blank">2. read GUIDEs  ⤴</a></th>
   </tr>
   <tr>
-    <td><img src="../../assets/images/01_hpc_scinet_faq.png" width="600px" style="vertical-align: top;"></td>
-    <td><img src="../../assets/images/01_hpc_scinet_guides.png" width="600px" style="vertical-align: top;"></td>
+    <td><img src="{{ images_path }}/01_hpc_scinet_faq.png" width="600px" style="vertical-align: top;"></td>
+    <td><img src="{{ images_path }}/01_hpc_scinet_guides.png" width="600px" style="vertical-align: top;"></td>
   </tr>
   <tr>
     <th><a href="https://" target="_blank">3. contact VRSC  ⤴</a></th>
     <th><a href="https://" target="_blank">4. use FORUM  ⤴</a></th>
   </tr>
   <tr>
-    <td><img src="../../assets/images/01_hpc_scinet_contact.png" width="600px" style="vertical-align: top;"></td>
-    <td><img src="../../assets/images/01_hpc_scinet_forum2.png" width="600px" style="vertical-align: top;"></td>
+    <td><img src="{{ images_path }}/01_hpc_scinet_contact.png" width="600px" style="vertical-align: top;"></td>
+    <td><img src="{{ images_path }}/01_hpc_scinet_forum2.png" width="600px" style="vertical-align: top;"></td>
   </tr>
 </table>
 
@@ -194,7 +195,7 @@ By browsing the FAQ section, you may be able to <b>quickly find the answer to yo
 
 Reading **user guides** can be a good starting point to get an overview on how to use the SCINet services. You can easily find the links to the User Guides in the top dropdown menu on the <a href="https://scinet.usda.gov" target="_blank">SCINet website  ⤴</a>.
 
-![Scinet website](../../assets/images/01_hpc_scinet_guides_menu.png)
+![Scinet website]({{ images_path }}/01_hpc_scinet_guides_menu.png)
 
 Select:
 * <a href="https://scinet.usda.gov/guides/start" target="_blank">Quick Start  ⤴</a>, to getting started with SCINet
@@ -225,7 +226,7 @@ Email is a good way to contact SCINet support team for information or direct hel
 
 Finally, contact other SCINet users on the <b><a href="https://forum.scinet.usda.gov/login" target="_blank">SCINet Forum  ⤴</a></b> to get a quick response to your question.
 
-![Scinet forum](../../assets/images/01_hpc_scinet_forum.png)
+![Scinet forum]({{ images_path }}/01_hpc_scinet_forum.png)
 
 *The forum is actively monitored by community members who are willing to help others, so you may be able to get an answer to your question in a short amount of time. Another benefit is that you can get a variety of perspectives on your question. By asking your question on a forum, you can get input from multiple people who may have different experiences and expertise. Finally, the SCINet forum can be a good resource for learning more about a particular topic. By reading through previous discussions and questions on the forum, you may be able to learn more about the issue and get ideas for your own questions.*
 
