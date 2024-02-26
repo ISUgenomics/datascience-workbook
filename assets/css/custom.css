@@ -1,0 +1,88 @@
+.no-decoration {
+  text-decoration: none !important;
+}
+
+.toc-type {
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+  background-color: #dff5b3;
+  color: #19272f;
+  font-size: 0.8em;
+  font-weight: 600;
+  text-align: center;
+  width: 130px;
+  padding: 5px;
+  margin-right: 10px;
+  border-bottom: 1px solid rgb(137, 151, 193);
+  display: inline-block;
+}
+
+toc-note {
+  color: #a9bbd1;
+  text-decoration: italic;
+}
+
+.intro {background-color: #cff4fc;}
+.article {background-color: #cff4fc;}
+.exercise {background-color: #ffd7b5;}
+.tutorial {background-color: #dff5b3;}
+.cheatsheet {background-color: #FFFACD;}
+
+
+.prefix-0 {
+  font-weight: 750;
+  font-size: 1.5em;
+  color: #8997c1;
+}
+.prefix-1::before {content: "";}
+.prefix-1 {
+  font-weight: 750;
+  color: #24376b;
+}
+.prefix-2::before {content: "⦿ \00a0\00a0\00a0";}
+.prefix-2 {
+  color: #3f5a8a;
+}
+.prefix-3::before {content: "⦾ \00a0\00a0\00a0";}
+.prefix-3 {
+  margin-left: 20px;
+  color: #3f5a8a;
+}
+.prefix-4::before {content: "⊙ \00a0\00a0\00a0";}
+.prefix-4 {
+  margin-left: 40px;
+  color: #3f5a8a;
+}
+
+
+.collapsible {
+  background-color: #e8e9e8;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  margin-top: 3px;
+}
+
+.active, .collapsible:hover {
+  background-color: #f1f1f1;
+  color: #52adc8;
+}
+
+.content {
+  padding: 0;
+  display: none;
+  overflow: hidden;
+  background-color: white;
+}
+
+.collapsible a:visited {
+    color: #52adc8;
+}
+.content a:visited {
+    color: #52adc8;
+}
