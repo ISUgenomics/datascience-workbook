@@ -2,8 +2,10 @@
 main:
   - title: "About"
     url: /about.html
-  - title: "Index"
+  - title: "TOC"
     url: /sitemap.html
+  - title: "SiteMap"
+    url: /list.html
   - title: "Glossary"
     url: /glossary.html
   - title: "People"
