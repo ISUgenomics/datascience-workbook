@@ -5,7 +5,7 @@ author: Andrew Severin
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /02-IntroToCommandLine/assets/images/02_command_line_banner.png
+  overlay_image: 03-command-line/assets/images/02_command_line_banner.png
 module: "02. Command Line"
 type: "tutorial"
 level: 2
@@ -14,6 +14,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [02. Introduction to the Command Line](00-IntroToCommandLine-LandingPage.md) / [2. Introduction to UNIX Shell](02-intro-to-unix-shell.md) / **2.2 Text Files Editors: nano, vim**
 
@@ -175,7 +176,7 @@ color green "[ST]"
 
 The screenshot for the above format:
 
-![clustalw alignment format](assets/nanorc_alignment.png)
+![clustalw alignment format]({{ images_path }}/nanorc_alignment.png)
 
 
 

@@ -5,7 +5,7 @@ author: Andrew Severin
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /02-IntroToCommandLine/assets/images/02_command_line_banner.png
+  overlay_image: 03-command-line/assets/images/02_command_line_banner.png
 type: "tutorial"
 level: 2
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [02. Introduction to the Command Line](00-IntroToCommandLine-LandingPage.md) / [2. Introduction to UNIX Shell](02-intro-to-unix-shell.md) / **2.5 Getting Started with UNIX**
 
@@ -61,7 +62,7 @@ ssh (SSH client) is a program for logging into a remote machine and for
 
 ### On a Mac (OS)
 
-1. Use the Finder ![](assets/images/finder_magnifier.png) and search for and open the Terminal program ![](assets/images/terminal.png).
+1. Use the Finder ![]({{ images_path }}/finder_magnifier.png) and search for and open the Terminal program ![]({{ images_path }}/terminal.png).
 2. Type ```ssh username@hostname```
   * Example1:  ```ssh andrew.severin@login.scinet.science```
   * Example2: ```ssh severin@bridges.psc.edu```
@@ -74,7 +75,7 @@ On Windows, it will be easier for you to login first to a linux based system for
 
 1. Press windows key + r, type cmd and enter
 
-  ![](assets/images/WindowsRun.png)
+  ![]({{ images_path }}/WindowsRun.png)
 
 * Type ssh usename@hostname
   * Example1:  ```ssh andrew.severin@login.scinet.science```
@@ -84,7 +85,7 @@ On Windows, it will be easier for you to login first to a linux based system for
 
 2. Search for ```cmd``` using Window's search.
 
-  ![](assets/images/WindowsSearch.png)
+  ![]({{ images_path }}/WindowsSearch.png)
 
 **Note:** The window can be resized with the mouse and the font text can be increased by pressing `cmd +` or `control +` on Mac or Windows, respectively.
 
@@ -101,7 +102,7 @@ When working in a terminal, it is helpful to know some basic terminology for whe
   * **Standard Out:** the result of a command
   * **Standard Error:** the error of a failed command
 
-![](assets/images/TerminalWelcome_small.png)
+![]({{ images_path }}/TerminalWelcome_small.png)
 
 
 # Getting started
@@ -656,7 +657,7 @@ cat numSeq.txt | tr '\n' ','
 ```
 The above command first uses `cat` to put the contents of the file to standard out and then pipe's `|` it to the translate `tr` command.  If you are having trouble finding the `|` on the keyboard see the yellow highlighted keys below.
 
-![](assets/images/PipeIOS.png)
+![]({{ images_path }}/PipeIOS.png)
 
 ## `shuf` -- <span style="color:Blue">shuf</span>fle
 

@@ -5,7 +5,7 @@ author: Rick Masonbrink
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /02-IntroToCommandLine/assets/images/02_command_line_banner.png
+  overlay_image: 03-command-line/assets/images/02_command_line_banner.png
 type: "tutorial"
 level: 2
 categories: []
@@ -14,6 +14,7 @@ tags: []
 
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [02. Introduction to the Command Line](00-IntroToCommandLine-LandingPage.md) / [3. Useful Text Manipulation Programs](03-text-manipulation-programs.md) / **3.5 Comparing and Collating Two Files with Unix**
 

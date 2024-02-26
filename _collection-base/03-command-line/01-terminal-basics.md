@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /02-IntroToCommandLine/assets/images/02_command_line_banner.png
+  overlay_image: 03-command-line/assets/images/02_command_line_banner.png
 type: "tutorial"
 level: 1
 categories: ["command-line"]
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [02. Introduction to the Command Line](00-IntroToCommandLine-LandingPage.md) / **1. Terminal, a text-based interface for command-line operations**
 
@@ -22,7 +23,7 @@ tags: []
 
 The command-line interface (**CLI**) is a more efficient alternative for accessing the file system than through the graphical user interface (**GUI**). A **terminal** is an application that make it possible to browse files and execute programs on your laptop or another computing machine using text-like commands. So, to preview the contents of a folder, instead of clicking on the folder you have to type in the terminal the text command `ls` and confirm with `enter`. Then you will see a list of file names instead of graphical icons corresponding to the files (*see Figure 1*).
 
-![CLI vs GUI](assets/images/cli_vs_gui.png)
+![CLI vs GUI]({{ images_path }}/cli_vs_gui.png)
 **Figure 1.** *Alternative display of folder contents on the computing machine using the graphical interface (left) and the command line (right).*
 
 ## Why terminal is useful?
@@ -40,21 +41,21 @@ Follow these steps to display the terminal window:
 1. Press `windows key + r` or go to Start Menu (Windows icon available on the left corner of your desktop) and type *'cmd'* or *'powershell'*.<br> The search results should display a dark square icon.
 2. Click on the icon to open the terminal window.
 
-![Windows Terminal](assets/images/terminalWin.png)
+![Windows Terminal]({{ images_path }}/terminalWin.png)
 
 ### **macOS**
 
 In macOS you can start a terminal session by clicking on the black square icon present in the Dock bar. If the shortcut is not there by default, you can search for *'Terminal'* or '*iTerm'* in the Finder.
 
-1. Use the Finder ![](assets/images/finder_magnifier.png) and search for and open the Terminal program ![](assets/images/terminal.png).
+1. Use the Finder ![]({{ images_path }}/finder_magnifier.png) and search for and open the Terminal program ![]({{ images_path }}/terminal.png).
 
-![macOS Terminal](assets/images/terminalMac.png)
+![macOS Terminal]({{ images_path }}/terminalMac.png)
 
 ### **Linux**
 
 In Linux you can start a terminal session by clicking on the black square icon *'Terminal'* present in the Menu bar.
 
-![Linux Terminal](assets/images/terminalLin.png)
+![Linux Terminal]({{ images_path }}/terminalLin.png)
 
 
 <div style="background: #cff4fc; padding: 15px;">
@@ -85,7 +86,7 @@ When working in a terminal, it is helpful to know some basic terminology. That m
 Once you open a terminal window on your local machine or login into the remote one, first, you will see a **welcome message**. It contains the date of the last login and some information from the admins. Usually, it also tells you about the architecture of available resources and users' rules.<br>
 **Prompt** is a pre-defined field in the terminal emulator which tells you, by default, who is the current user on which host and what is the current location in the file system. The components available in the prompt are adjustable in the shell configuration file called .bashrc. To learn more about prompt and terminal coloring, see the tutorial [Configuration of .bashrc]() located in the **Introduction to UNIX Shell** section of the Workbook.<br>
 
-![The structure of terminal window](assets/images/TerminalWelcome.png)
+![The structure of terminal window]({{ images_path }}/TerminalWelcome.png)
 
 **A command** is a name of a program, a built-in shell process called by a specific word, user-customized alias, or a script with executability rights. Typing such a pre-defined word in the terminal and approving with `enter` (`return` on MacOS) communicates to the operating system to launch the desired process. Thus, commands can be considered abbreviations of computer instructions, easy for humans, interpreted and translated by operating system or compiler.<br>
 Commands usually take one or more **arguments**, which condition how the ordered commands are executed. Usually, the arguments are inputs and various program-specific options or flags that modify the track or variant according to which the algorithm is executed.
@@ -113,7 +114,7 @@ That is useful when you remember only a few first letters of a less common comma
 **(2)** In case of more matching options, you will hear a beep, but nothing will change on the command line. That means you should press the `tab` one more time. If there are few possibilities, let's say less than 10, all of them will be displayed on the screen for you to use the hints. You just need to type enough letters to make your searched command unique among the others. Then auto-completion will work with the next pressing of a `tab`. <br>
 **(3)** However, if there are many more possible command choices, you will be asked if you want to show all possible options. Once you find the desired command, you can enter it manually or select it with the mouse, then copy and paste it into the command line.
 
-<p align="center"><img width="800" src="assets/images/terminal_autocompletion.gif"></p>
+<p align="center"><img width="800" src="{{ images_path }}/terminal_autocompletion.gif"></p>
 <p align="center">^ <i>on macOS, use <b>return</b> instead of arrows keys to browse the preview of possibilities</i></p>
 
 ## Command history
@@ -126,11 +127,11 @@ To display all previously used commands, type `history` command on your terminal
 history
 ```
 
-<p align="center"><img width="800" src="assets/images/terminal_history.png"></p>
+<p align="center"><img width="800" src="{{ images_path }}/terminal_history.png"></p>
 
 The history can be browsed directly in the terminal window with an upper-arrow key `↑` following the direction of older commands and a down-arrow key `↓` to return to more recent ones. Also, you can effortlessly search in history by keyword after pressing `CTRL+R` on your keyboard. That facilitates getting quick a syntax used far in the past if only you know the unique fragment of it. When the filtrated batch of commands is more than one in size, you can again use arrow keys to select a desired one.
 
-<p align="center"><img width="800" src="assets/images/terminal_history.gif"></p>
+<p align="center"><img width="800" src="{{ images_path }}/terminal_history.gif"></p>
 
 As you noticed, the `history` command returns the text output on the screen. Thus, you can further parse it to filtrate the required information. Since the history output is printed as a single command per line, it is easy to `grep` by keyword or limit the display to *n* last results with the `tail -n` command. The `uniq` allows you to remove redundant hits.
 
@@ -138,7 +139,7 @@ As you noticed, the `history` command returns the text output on the screen. Thu
 history | grep "for" | uniq | tail -5
 ```
 
-![grep from command history](assets/images/terminal_history_grep.png)
+![grep from command history]({{ images_path }}/terminal_history_grep.png)
 
 Finally, it is good to know that the command history is stored in the hidden file called by default `.bash_history` and stored in the $HOME for given user. You can use the `$HISTFILE` variable to change the name of the history file and `$HISTSIZE` variable to adjust the number of remembered commands. You can set up that in the `.bashrc` configuration file. To learn more, see section *3. Unix Shell Configuration* in the following [tutorial](02-intro-to-unix-shell.md).
 
@@ -156,7 +157,7 @@ Note that <b>~</b> refers to the $HOME of a given user and <b>/</b> refers to th
 
 Then, you should find on your screen a bunch of files starting with a dot, such as `.bashrc`, `.bash_profile`, and `.bash_history`.
 
-![grep from command history](assets/images/terminal_bash_history.png)
+![grep from command history]({{ images_path }}/terminal_bash_history.png)
 
 To preview the content of a `.bash_history`, from any location on the file system, type in the terminal window:
 

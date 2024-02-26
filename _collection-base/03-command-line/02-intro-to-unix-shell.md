@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /02-IntroToCommandLine/assets/images/02_command_line_banner.png
+  overlay_image: 03-command-line/assets/images/02_command_line_banner.png
 type: "tutorial"
 level: 1
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [02. Introduction to the Command Line](00-IntroToCommandLine-LandingPage.md) / **2. Introduction to UNIX Shell: shell variables, home dir, .bashrc**
 
@@ -21,7 +22,7 @@ tags: []
 # What is Unix?
 UNIX is an operating system (OS) for computer devices providing the **command-line interface** (CLI) for convenient and efficient programming. The modern Unix OS variants are **multi-tasking** and **multi-user**, allowing for sharing computing resources among many users at the same time [�](https://en.wikipedia.org/wiki/Unix). They are also portable, supplying the operating system for personal computers, computing clusters, database & web servers, and high-end workstations. The **open-source Unix distributions** within the Linux family include **[Ubuntu](https://ubuntu.com)**, **[Debian](https://www.debian.org)**, **[RHEL](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux)** (*Red Hat Enterprise Linux*), [Linux Mint](https://linuxmint.com), [Fedora](https://getfedora.org), [CentOS](https://www.centos.org), [OpenSUSE](https://www.opensuse.org), [Manjaro](https://manjaro.org), and [Arch Linux](https://archlinux.org). Besides GNU/Linux there are other varieties of UNIX such as [Sun Solaris](https://www.oracle.com/solaris/solaris11/), [macOS X](https://images.apple.com/media/us/osx/2012/docs/OSX_for_UNIX_Users_TB_July2011.pdf), [IBM AIX](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwi144qCzvj4AhVQwMgKHYDtBCkYABAAGgJxdQ&ohost=www.google.com&cid=CAESaeD259NbszXFpY64pFLk0_wXfZMwH6h3-QetYgjSrkgLaYJer_xeWfqY3aJfObXO8-Q9BWaatvrumS88eGFBNG5kdHFZBMr7p2y9bomOVQPmd68v2krdfBR4P1JnZLgaY0qkZYrg9kjruQ&sig=AOD64_0996jnSZxbrGQCM_wKGL9v9QiLPA&q&adurl&ved=2ahUKEwibm_-Bzvj4AhW-kokEHWwQAtcQ0Qx6BAgDEAE&nis=8), [Darwin OS](http://www.puredarwin.org), and [FreeBSD OS](https://www.freebsd.org) (some of them are not free).
 
-![Linux Distributions](assets/images/linux_distributions.png)<br>
+![Linux Distributions]({{ images_path }}/linux_distributions.png)<br>
 **Figure 1.** *Logos of the most popular Linux distributions, all based on the Unix command-line interface.*
 
 Standard features of Unix-like OS include: **security**, **reliability**, and **scalability** with easy batch processing & time-sharing configuration that supports **hundreds of users at the same time** by means of multiprogramming and multi-tasking [�](https://en.wikipedia.org/wiki/Time-sharing).
@@ -33,7 +34,7 @@ Standard features of Unix-like OS include: **security**, **reliability**, and **
 Absolutely. It is just another way of operating your computer.<br>
 The main difference between using **Linux** and Windows/Mac is that you use the **command-line interface (CLI) and keyboard** to execute programs instead of using a graphical user interface (GUI) and mouse. However, modern Unix variants of the Linux family provide a user-friendly graphical-like interface for personal computers with desktop.
 
-![CLI vs GUI](assets/images/cli_vs_gui_enhanced.png)
+![CLI vs GUI]({{ images_path }}/cli_vs_gui_enhanced.png)
 **Figure 2.** *In the graphical user interface (GUI, on the left), you use a mouse to navigate the file system and execute applications by clicking, while in the command-line interface (CLI, on the right), you type text-like commands on your keyboard to do the same (and much more!).*
 
 <div style="background: #cff4fc; padding: 15px;">
@@ -104,7 +105,7 @@ A Unix shell is a **command-line interpreter** that translates the user-provided
 
 
 
-![Terminal-Shell-Kernel](assets/images/terminal_shell_kernel.png)<br>
+![Terminal-Shell-Kernel]({{ images_path }}/terminal_shell_kernel.png)<br>
 **Figure 3.** *The layered structure of user-computer communication using a command-line interface (CLI). The user uses a terminal app to enter text-like commands into the Bash shell that interprets them into the binary language understandable by the operating system kernel, which triggers the execution of processes on the computer hardware.*
 
 <!-- TO DO section: Headers for different shells -->
@@ -138,7 +139,7 @@ The Unix shell has a default configuration which can be further adjusted by a us
 env
 ```
 
-![Shell Variables](assets/images/shell_environment.png)<br>
+![Shell Variables]({{ images_path }}/shell_environment.png)<br>
 **Figure 4.** *The environment in the Unix shell is determined by the configuration of built-in variables such as $HOME or $USER, and user-provided variables that adapt the environment to its needs (e.g., $LSCOLORS sets colors for listing files in a directory).*
 
 If you want to know specifically about a variable, you can get the value by typing in the command line `echo ${VARIABLE}`, for example:
@@ -242,7 +243,7 @@ Note that <b>~</b> refers to the $HOME of a given user.
 
 Then, you should find `.bashrc` and `.bash_profile`on your screen.
 
-![grep from command history](assets/images/terminal_bash_history.png)
+![grep from command history]({{ images_path }}/terminal_bash_history.png)
 
 To preview the content of these files type in the terminal window (from any location on the file system):
 
@@ -297,14 +298,14 @@ To learn more about this topic, I recommend following the discussion thread on t
 
 **Prompt** is a pre-defined field in the terminal emulator which tells you something about the current settings for the Unix shell. It always appears on the left-hand side of the command line in the terminal window. By default, the syntax includes who is the **current user** on **which host** and what is the **current location** in the file system. But this can vary on different operating systems. The default prompt is white, but everything can be customized to your needs, both the syntax elements and their colors. See the possible difference of customization in the image below.
 
-![shell prompt](assets/images/shell_prompt.png)
+![shell prompt]({{ images_path }}/shell_prompt.png)
 
 The definition of a prompt is stored in the $PS1 variable. You can display its value just as any other shell variable.
 
 ```
 echo $PS1
 ```
-![shell prompt](assets/images/shell_prompt_variable.png)
+![shell prompt]({{ images_path }}/shell_prompt_variable.png)
 
 At first glance, the syntax may seem complicated. However, everything becomes easier when you break it down into the individual components. In the image, the colors highlight five chunks in the syntax. Each contains one variable, such as `\u` or `\h` (see the table below for a complete list of available options), and an additional code. If you look closely, this other code is repetitive and can be reduced to two unique syntaxes: `\[\e[X;Ym\]` and `\[\e[m\]` for start coloring and stop coloring, respectively. `X` denotes the text decoration, such as bold, dim, or underlined, and `Y` is a number coding specific color. You can find the exact definitions for available options below. Note that if you change one color to another, then stopping the color is not necessary. On the other hand, if you want to return to the default (white) color, you must use the syntax for stop. That is especially important at the end of the definition so that text typed on the command line will be in the default color (unless you wish otherwise).
 
@@ -364,7 +365,7 @@ printf "\e[4;31;43mUNDERLINE-RED-TEXT-ON-YELLOW-BACKGROUND\e[0m\n"
 printf "\e[1;5;36;45mBOLD-BLINK-CYAN-TEXT-ON-PURPLE-BACKGROUND\e[0m\n"
 ```
 
-<p align="center"><img width="800" src="assets/images/prompt.gif"></p>
+<p align="center"><img width="800" src="{{ images_path }}/prompt.gif"></p>
 <p align="center">^ Note that strikethrough option didn't work on my terminal. It should look like <b><del>STRIKETHROUGH</del></b>. </p>
 
 Set your colored Prompt syntax using variables and text decorations from the tables above and paste it into your `~/.bashrc` following the given example, in which you will get the <span style="background-color: white; color: red; font-weight:600;"> &ensp; user@host:path$ &ensp;</span> for a root-user and <span style="background-color: white; color: green; font-weight:600;"> &ensp; user@host:path$ &ensp;</span> for any other user.
@@ -434,7 +435,7 @@ source ~/.bashrc
 
 Let's see the differences between a machine with default settings (top) and one with color customization for the user (bottom). The comfort of working in a customized terminal is much greater!
 
-![terminal colors](assets/images/shell_terminal_colors.png)<br><br>
+![terminal colors]({{ images_path }}/shell_terminal_colors.png)<br><br>
 
 
 **macOS**
@@ -471,7 +472,7 @@ LSCOLORS=Exgxcxdxcxegedabagacad
 alias ls='ls -Gh'
 ```
 
-![terminal colors](assets/images/shell_terminal_colors_mac.png)<br>
+![terminal colors]({{ images_path }}/shell_terminal_colors_mac.png)<br>
 
 ## 3.4 Define aliases
 
@@ -530,7 +531,7 @@ Module loading is more applicable to work on remote machines like computing clus
 module avail python
 ```
 
-![terminal colors](assets/images/shell_module_avail.png)<br>
+![terminal colors]({{ images_path }}/shell_module_avail.png)<br>
 
 The command returns a list of available variants along with the annotation `(D)` for the default suggested ones and `(L)` for the currently loaded ones (if applicable). To load or change a module variant use the `module load` command and the copy-paste the name of the library variant (select the name with mouse and then use the combination of keys `CTRL+C` and `CTRL+V`).
 
@@ -538,7 +539,7 @@ The command returns a list of available variants along with the annotation `(D)`
 module load python/3.9.2
 ```
 
-![terminal colors](assets/images/shell_module_load.png)<br>
+![terminal colors]({{ images_path }}/shell_module_load.png)<br>
 
 In case you want to always start your Bash shell session with a specific module loaded, the best solution is to add the command to your `~/.bashrc`. This will simplify your working routine, especially if you have an entire list of necessary modules. So let's say you would like to always have `python/3.9.2` loaded by default into your environment. Thus, add the following snippet to your `~/.bashrc`:
 
@@ -574,7 +575,7 @@ Exporting a **$PATH** variable is probably the most commonly used example for th
 echo $PATH
 ```
 
-![Path variable](assets/images/shell_path_variable.png)<br>
+![Path variable]({{ images_path }}/shell_path_variable.png)<br>
 
 The syntax of the $PATH variable consists of absolute paths to directories in the file system separated by a colon `:` (without spaces). The value of this variable is stored in the `~/.bashrc` file. To add a new path, edit the `~/.bashrc` file in any text editor *(e.g., nano, vim, mcedit)* and paste the new path after a colon. If this variable is not in your `~/.bashrc`, you can copy the current value displayed with the `echo $PATH` command and paste it into the file following the example:
 
