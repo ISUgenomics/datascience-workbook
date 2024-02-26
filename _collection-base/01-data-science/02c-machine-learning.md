@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /01-IntroToDataScience/assets/images/01_data_science_banner.png
+  overlay_image: 01-data-science/assets/images/01_data_science_banner.png
 type: "intro"
 level: 2
 categories: ["knowledge"]
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [01. Introduction to Data Science](00-IntroToDataScience-LandingPage.md) / [2. Applications of Computational Science](02-computational-science-applications.md) / **2.3 Machine Learning Outlook**
 
@@ -68,7 +69,7 @@ Machine learning methods are increasingly being used in scientific research acro
 
 3. Machine learning algorithms can be also used in geospatial analysis analyze and interpret data from satellite imagery and other geospatial data sources. Once trained, they make predictions about things like land use, crop yields, and environmental changes. *For example, machine learning algorithms can be used to analyze satellite imagery of forests to identify areas that are at risk of deforestation or to predict the potential yield of a crop field based on its location and other factors.*
 
-![AI WB](assets/images/ai_workbook.png)
+![AI WB]({{ images_path }}/ai_workbook.png)
 
 One effective way to learn about AI applications is to study examples of real-world problems that are solved using computational tools and machine learning algorithms. The <a href="https://ai.101workbook.org" target="_blank">AI Workbook  ⤴</a>, available at <a href="https://ai.101workbook.org" target="_blank">https://ai.101workbook.org  ⤴</a>, is a useful resource for this purpose, as it provides a comprehensive overview of various aspects of **applying machine learning methods** in challenging tasks of scientific research. By working through these practical examples, readers can gain a deeper understanding of how AI techniques are used to for tasks that involve analyzing large amounts of data, identifying patterns and relationships in the data, and making predictions based on those patterns.
 

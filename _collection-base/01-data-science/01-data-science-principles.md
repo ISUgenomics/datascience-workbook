@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /01-IntroToDataScience/assets/images/01_data_science_banner.png
+  overlay_image: 01-data-science/assets/images/01_data_science_banner.png
 type: "article"
 level: 1
 categories: ["data-types", "knowledge"]
@@ -13,6 +13,8 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
+
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [01. Introduction to Data Science](00-IntroToDataScience-LandingPage.md) / **1. Data Science Principles**
 
@@ -59,7 +61,7 @@ The concept of unstructured data also includes many other formats such as audio 
 
 Since the computer revolution and especially today, this is the dominant type of data generated and processed, which carries a high potential for the extraction and retention of knowledge. Technological innovations in machine learning and artificial intelligence enable efficient analysis of unstructured data opening new opportunities for science, business, and public health. It also brings many conveniences to everyday life in the 21st century.
 
-![Data Science](assets/images/unstructured_data_plant_species.png)<br>
+![Data Science]({{ images_path }}/unstructured_data_plant_species.png)<br>
 *Figure 1. The image shows examples of unstructured data, with content referring to items from the Table 1. <span style="color: #8997c1;">[track image sources in the [FILE](../assets/images/sources)]</span>*
 
 Learn more details from [Wikipedia: Unstructured Data](https://en.wikipedia.org/wiki/Unstructured_data) and corresponding references.<br>
@@ -77,7 +79,7 @@ The ultimate goal of the conducted analysis is the **veracity and value** of the
 
 Thus, Big Data goes beyond the simple concept of the data type or volume used. It also integrates (i) analytical techniques *(e.g., machine learning)*, (ii) technologies that make it possible *(e.g., parallel and cloud computing)*, and (iii) modern visualization solutions *(e.g., interactive graphing and infographics)*. Big Data processing by applying a specialized combination of scientific approaches (e.g., statistics, mathematics, informatics, and background knowledge in a specific area) has become a significant part of Data Science.
 
-![Data Science](assets/images/data_science.jpeg)<br>
+![Data Science]({{ images_path }}/data_science.jpeg)<br>
 *Figure 2. The image shows steps for generating and processing Big Data in the Data Science framework. <span style="color: #8997c1;">[track image sources in the [FILE](../assets/images/sources)]</span>*
 
 Learn more details from [Wikipedia: Big Data](https://en.wikipedia.org/wiki/Big_data) and corresponding references.<br>
@@ -89,7 +91,7 @@ Explore also:<br>
 
 |The life cycle of Big Data <br>goes through 5 major phases:|*Figure 3. The Life Cycle of Data <br><span style="color: #8997c1;">[track image sources in the [FILE](../assets/images/sources)]</span>*|
 |--|--|
-|• **Capturing** - Raw Data Acquisition<br><br>• **Maintaining** - Data Cleansing & Warehousing<br><br>• **Processing** - Data Mining and Information Classification<br><br>• **Analyzing** -  Statistical Analysis and Knowledge Extraction<br><br>• **Communicating** - Knowledge Reporting & Visualization|![](assets/images/data_lifecycle.png)|
+|• **Capturing** - Raw Data Acquisition<br><br>• **Maintaining** - Data Cleansing & Warehousing<br><br>• **Processing** - Data Mining and Information Classification<br><br>• **Analyzing** -  Statistical Analysis and Knowledge Extraction<br><br>• **Communicating** - Knowledge Reporting & Visualization|![]({{ images_path }}/data_lifecycle.png)|
 
 During the cycle, the amount of data is reduced by much in favor of **densification of value** and relevance. Large amounts of raw, usually highly variable data, are first cleansed by filtering. Then the relevant data is mined through **pattern search and machine learning**. Initial data clustering reveals some relations that are feasible to **classify information**. At this stage, volumetric data is transformed into valuable information, defined as processed, organized, and structured data. Statistical analysis and combinatorial querying of categorized information enable the discovery of deeply coupled correlations and formulate non-trivial conclusions. That means **extracting knowledge**. Insights are advantageous when applied successfully, so meaningful communication is critical for **knowledge retention** and steady development.
 

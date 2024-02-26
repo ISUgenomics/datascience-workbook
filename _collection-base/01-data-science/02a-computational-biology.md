@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /01-IntroToDataScience/assets/images/01_data_science_banner.png
+  overlay_image: 01-data-science/assets/images/01_data_science_banner.png
 type: "intro"
 level: 2
 categories: ["knowledge"]
@@ -14,6 +14,8 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
+
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [01. Introduction to Data Science](00-IntroToDataScience-LandingPage.md) / [2. Applications of Computational Science](02-computational-science-applications.md) / **2.1 Computational Biology**
 
@@ -43,7 +45,7 @@ Computational biology plays a vital role in many areas of modern biology, includ
 
 3. [<span style="color: #eb9a9a;">NETWORKS BIOINFORMATICS</span>] In **systems biology**, computational biology is used to model and simulate complex biological systems, such as cellular networks and entire organisms. This helps scientists understand how different components of a biological system interact and how they contribute to the overall function of the system.
 
-![Bioinformatics](assets/images/bioinformatics_types.png)
+![Bioinformatics]({{ images_path }}/bioinformatics_types.png)
 
 
 ## Bioinformatics Workbook
@@ -54,7 +56,7 @@ Computational biology plays a vital role in many areas of modern biology, includ
 
 2. Another important task of sequencing bioinformatics is to **identify genetic variations** and **measure gene expression** that may be associated with certain diseases. *For example, scientists can use DNA sequencing data to identify single nucleotide polymorphisms (SNPs) that are present in the genomes of people with a particular disease*
 
-![Bioinformatics WB](assets/images/bioinformatics_workbook.png)
+![Bioinformatics WB]({{ images_path }}/bioinformatics_workbook.png)
 
 One effective way to learn about sequencing bioinformatics is to study examples of real-world problems that are solved using computational tools and techniques. The <a href="https://bioinformaticsworkbook.org" target="_blank">Bioinformatics Workbook  ⤴</a>, available at <a href="https://bioinformaticsworkbook.org" target="_blank">https://bioinformaticsworkbook.org  ⤴</a>, is a useful resource for this purpose, as it provides a comprehensive overview of various aspects of **generating & processing sequencing data**, including experimental design, data acquisition, data wrangling, data analysis, and visualization. By working through these practical examples, readers can gain a deeper understanding of how bioinformatics is used to analyze and interpret biological data and how it can help us to better understand the underlying biological mechanisms of living systems.
 

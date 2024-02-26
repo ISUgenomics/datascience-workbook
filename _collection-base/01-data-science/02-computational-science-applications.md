@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /01-IntroToDataScience/assets/images/01_data_science_banner.png
+  overlay_image: 01-data-science/assets/images/01_data_science_banner.png
 type: "article"
 level: 1
 categories: ["knowledge"]
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [01. Introduction to Data Science](00-IntroToDataScience-LandingPage.md) / **2. Applications of Computational Science**
 
@@ -38,7 +39,7 @@ Computational Science is a field that involves **using computers and mathematica
         <li> <b>visualization</b>, <i>used to create visual representations of data and models</i> </li>
     </td>
     <td>
-        <img src="assets/images/computational_science.png" alt="Computational Science" width="500">
+        <img src="{{ images_path }}/computational_science.png" alt="Computational Science" width="500">
     </td>
   </tr>
 </table>

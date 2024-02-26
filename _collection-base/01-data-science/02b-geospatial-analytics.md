@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /01-IntroToDataScience/assets/images/01_data_science_banner.png
+  overlay_image: 01-data-science/assets/images/01_data_science_banner.png
 type: "intro"
 level: 2
 categories: ["knowledge"]
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [01. Introduction to Data Science](00-IntroToDataScience-LandingPage.md) / [2. Applications of Computational Science](02-computational-science-applications.md) / **2.2 Geospatial Analytics**
 
@@ -33,7 +34,7 @@ Some common applications of geospatial analysis include:
 * identifying population demographics,
 * and predicting patterns in disease outbreaks.
 
-![Geospatial Analysis](assets/images/geospatial_analysis.png)
+![Geospatial Analysis]({{ images_path }}/geospatial_analysis.png)
 
 Some common tools and techniques used in geospatial analysis include geographic information systems (GIS), spatial analysis software, and statistical analysis. These tools allow analysts to analyze and interpret data in a variety of ways, including mapping data points, extracting accurate measurements *(size, shape, and location of objects and features on the earth's surface)*, creating heat maps, and performing spatial statistical analysis.
 
@@ -42,7 +43,7 @@ Some common tools and techniques used in geospatial analysis include geographic 
 
 Geospatial analysis constantly improves a wide range of fields and industries, including land use planning, environmental monitoring, disaster response, transportation, and healthcare. It has allowed for the creation of detailed maps and 3D models, the tracking and analysis of changes and trends over time, the optimization of routing and logistics, and the identification of potential risk factors and bottlenecks.
 
-![Geospatial WB](assets/images/geospatial_workbook.png)
+![Geospatial WB]({{ images_path }}/geospatial_workbook.png)
 
 One effective way to learn about geospatial analysis is to study examples of real-world problems that are solved using computational tools and techniques. The <a href="https://geospatial.101workbook.org" target="_blank">Geospatial Workbook  ⤴</a>, available at <a href="https://geospatial.101workbook.org" target="_blank">https://geospatial.101workbook.org  ⤴</a>, is a useful resource for this purpose, as it provides a comprehensive overview of various aspects of **generating & processing geospatial data**, including importing earth observation data, image processing essentials, deep learning for images, photogrammetry, and visualization. By working through these practical examples, readers can gain a deeper understanding of how geospatial analysis is used to collect, measure, and interpret spatial/satelite data.
 
