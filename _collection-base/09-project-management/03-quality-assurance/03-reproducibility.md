@@ -613,7 +613,7 @@ Create a Jupyter Notebook that integrates code, outputs, and narrative, showcasi
 <b>3. Document Your Process:</b>
 <li>Write a brief introduction in a <b>markdown cell</b> explaining what the notebook will achieve.</li>
 <li>Add separate <b>markdown cells</b> to explain each step, including your thought process and interpretation of results.</li>
-<li>Below each markdown cell include <b>code cells</b> to load a dataset and perform simple analyses (you will use them in Exercise 3).
+<li>Below each markdown cell include <b>code cells</b> to load a dataset and perform simple analyses (you will use them in Exercise 3).</li>
 <div style="background: #cff4fc; padding: 15px; margin-top: 10px; font-size: 18px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
@@ -769,6 +769,7 @@ To see a more detailed step-by-step guide with graphical aids to complete this e
 
 
 ___
+
 # Further Reading
 * [4.3.1 Research Reproducibility Guideline](03-tutorial-research-reproducibility)
 
