@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /09-ProjectManagement/assets/images/09_project_management_banner.png
+  overlay_image: 09-project-management/assets/images/09_project_management_banner.png
 type: "intro"
 level: 2
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../../00-ProjectManagement-LandingPage.md) / [3. Resource Management](../00-intro-resource-management) / **3.1 Data Management**
 
@@ -29,7 +30,7 @@ Data Management is a critical aspect of research, ensuring that data collected, 
 <br><span style="font-style:italic;">  In small and moderate scale projects, efficient data management is crucial for maximizing resource utilization, maintaining data quality, and ensuring compliance with ethical and legal standards. </span>
 </div>
 </td>
-<td width=500 style="border: transparent;"><img width="800" src="../../assets/images/02_data_management.png"></td>
+<td width=500 style="border: transparent;"><img width="800" src="{{ images_path }}/02_data_management.png"></td>
 </tr></table>
 
 Data Management serves as the backbone of project. It encompasses a series of structured practices and principles, aiming to ensure that data, a valuable and sensitive asset, is handled with utmost care. From the initial stages of collection to the final steps of preservation, every facet of Data Management is designed to uphold the quality, accessibility, and security of data. The systematic approach not only amplifies the credibility and reproducibility of research findings but also supports compliance with evolving ethical and legal standards.

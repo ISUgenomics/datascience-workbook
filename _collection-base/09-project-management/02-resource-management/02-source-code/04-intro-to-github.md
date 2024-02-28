@@ -6,7 +6,7 @@ author2: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /09-ProjectManagement/assets/images/09_project_management_banner.png
+  overlay_image: 09-project-management/assets/images/09_project_management_banner.png
 type: "tutorial"
 level: 4
 categories: []
@@ -14,6 +14,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../../00-ProjectManagement-LandingPage.md) / [3. Resource Management](../00-intro-resource-management) / [3.3. Storage & Version Control](01-storage-version-control.md) / [3.3.2 Online Hosting Platforms for GIT Repositories](03-repo-hosting-platforms.md) / **Introduction to GitHub**
 
@@ -103,7 +104,7 @@ Signing up for an account is very easy.  Just go to the  [signup webpage](https:
 <br><span style="font-style:italic;">Most choose the free Unlimited public repositories option and don't set up an organization right away.</span>
 </div><br>
 
-![01-github_website.png](../../07-DataParsing/assets/images/01-github_website.png)
+![01-github_website.png]({{ images_path }}/01-github_website.png)
 
 After you have an account, and if you are a researcher or educator you can request a free upgrade at [about-github-education-for-educators-and-researchers/](https://help.github.com/articles/about-github-education-for-educators-and-researchers/).
 

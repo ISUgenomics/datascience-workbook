@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /09-ProjectManagement/assets/images/09_project_management_banner.png
+  overlay_image: 09-project-management/assets/images/09_project_management_banner.png
 type: "article"
 level: 2
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / **1.2 Project Strategy & Risk Management**
 
@@ -73,7 +74,7 @@ The **strategic planning and thoughtful design** of research projects are crucia
 <td style="border: transparent; vertical-align: top; font-size: 21px;">
 Project strategy is essentially about crafting a roadmap for your research journey, outlining where you want to go and how you plan to get there. It involves <b>identifying clear goals</b> and objectives, ensuring they align with the broader research agenda, and determining the best route to achieve them. Think of it as a mix of vision and practicality, where you <b>balance ambitious scientific aspirations with realistic steps</b>, resource management, and anticipating potential hiccups along the way. It's about making smart, informed decisions to <b>steer your research project towards success</b>.
 </td>
-<td width=500 style="border: transparent;"><img width="800" src="../assets/images/01-project_strategy.png"></td>
+<td width=500 style="border: transparent;"><img width="800" src="{{ images_path }}/01-project_strategy.png"></td>
 </tr></table>
 
 **ELEMENTS of PROJECT STRATEGY**
@@ -174,7 +175,7 @@ In practice, aligning your project with the broader research agenda involves sev
 <td style="border: transparent; vertical-align: top; font-size: 21px;">
 In the world of small-scale research projects, risk management is like navigating a boat on a dynamic river – it's all about foreseeing and handling possible bumps and twists along the way. Essentially, risk management in this context involves <b>identifying what could go wrong</b> (like budget cuts, data loss, or equipment failure), assessing how likely these issues are and what impact they'd have, and then figuring out how to either <b>prevent these problems</b> or deal with them if they happen.
 </td>
-<td width=500 style="border: transparent;"><img width="800" src="../assets/images/01-project_risks.png"></td>
+<td width=500 style="border: transparent;"><img width="800" src="{{ images_path }}/01-project_risks.png"></td>
 </tr></table>
 
 <div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
@@ -630,7 +631,7 @@ Develop a predictive model for chemotherapy effectiveness based on patients' gen
 <br><span style="font-style:italic;">Since Gantt charts typically don't include probabilities directly, I will represent the potential delay as a separate, conditional phase in the project timeline, highlighting its uncertain nature.</span>
 </div>
 
-![Gantt Chart](../assets/images/01-project_gantt_chart.png)
+![Gantt Chart]({{ images_path }}/01-project_gantt_chart.png)
 
 *The Gantt chart shows that implementing a new bioinformatics tool is scheduled concurrently with a major data analysis phase. The risk of software malfunction could lead to a two-month delay in project milestones.*
 

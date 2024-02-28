@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /09-ProjectManagement/assets/images/09_project_management_banner.png
+  overlay_image: 09-project-management/assets/images/09_project_management_banner.png
 type: "intro"
 level: 1
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / **3. Resource Management**
 
@@ -34,23 +35,23 @@ In the context of research, effective **resource management** is crucial as it d
 In research projects, resources are typically categorized into five main types:
 
 <table>
-<tr><td width=200 style="border: transparent;"><img width="200" src="../assets/images/02_human_resources.png"></td>
+<tr><td width=200 style="border: transparent;"><img width="200" src="{{ images_path }}/02_human_resources.png"></td>
 <td style="border: transparent; vertical-align: top; font-size: 21px;">
 <b>Human Resources</b><br>This includes the researchers, technicians, data analysts, and all personnel involved in the project. Their skills, expertise, and time are vital assets that drive the research forward.
 </td></tr>
-<tr><td width=200 style="border: transparent;"><img width="200" src="../assets/images/02_financial_resources.png"></td>
+<tr><td width=200 style="border: transparent;"><img width="200" src="{{ images_path }}/02_financial_resources.png"></td>
 <td style="border: transparent; vertical-align: top; font-size: 21px;">
 <b>Financial Resources</b><br>These are the funds allocated for the project. Financial resources cover salaries, equipment purchases, software subscriptions, travel expenses, and any other costs associated with conducting the research.
 </td></tr>
-<tr><td width=200 style="border: transparent;"><img width="200" src="../assets/images/02_material_resources.png"></td>
+<tr><td width=200 style="border: transparent;"><img width="200" src="{{ images_path }}/02_material_resources.png"></td>
 <td style="border: transparent; vertical-align: top; font-size: 21px;">
 <b>Material Resources</b><br>This category encompasses all physical assets required for the research, such as laboratory equipment, chemicals, computer hardware, and other tangible items necessary to conduct experiments or gather data.
 </td></tr>
-<tr><td width=200 style="border: transparent;"><img width="200" src="../assets/images/02_informational_resources.png"></td>
+<tr><td width=200 style="border: transparent;"><img width="200" src="{{ images_path }}/02_informational_resources.png"></td>
 <td style="border: transparent; vertical-align: top; font-size: 21px;">
 <b>Informational Resources</b><br>These are the data, research literature, databases, and software tools that provide the necessary information and analytical capabilities for the research. Proper management ensures data integrity, accessibility, and security.
 </td></tr>
-<tr><td width=200 style="border: transparent;"><img width="200" src="../assets/images/02_time_resources.png"></td>
+<tr><td width=200 style="border: transparent;"><img width="200" src="{{ images_path }}/02_time_resources.png"></td>
 <td style="border: transparent; vertical-align: top; font-size: 21px;">
 <b>Time Resources</b><br>This encompasses the scheduling and allocation of time for each task in a project, ensuring that research milestones and deadlines are met efficiently. Effective time resource management involves careful planning, scheduling, and monitoring of project activities.
 </td></tr>

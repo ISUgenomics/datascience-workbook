@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /09-ProjectManagement/assets/images/09_project_management_banner.png
+  overlay_image: 09-project-management/assets/images/09_project_management_banner.png
 type: "tutorial"
 level: 2
 categories: []
@@ -14,6 +14,7 @@ tags: []
 
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / [4. Quality Assurance](00-quality-assurance) / **4.1 Monitoring & Evaluation**
 
@@ -256,19 +257,19 @@ It's smart to recognize the significance and utility of manual methods and low-t
 
 <table>
   <tr>
-    <td width=200 style="border: transparent;"><img width="800" src="../assets/images/04_tracking_board.png"></td>
+    <td width=200 style="border: transparent;"><img width="800" src="{{ images_path }}/04_tracking_board.png"></td>
     <td><b>Physical Progress Tracking Boards</b><br>Utilize whiteboards or cork boards to monitor quality assurance milestones and evaluation checkpoints. <br>This visual tool allows teams to mark critical stages in the project's lifecycle, from initial quality benchmarks to subsequent evaluations, facilitating a clear view of progress and areas needing attention.</td>
   </tr>
   <tr>
-    <td width=200 style="border: transparent;"><img width="800" src="../assets/images/04_evaluation_form.png"></td>
+    <td width=200 style="border: transparent;"><img width="800" src="{{ images_path }}/04_evaluation_form.png"></td>
     <td><b>Paper-based Evaluation Forms</b><br>Design paper forms specifically for evaluation purposes, allowing evaluators to assess project components against predefined quality criteria. <br>These forms can be structured to capture both quantitative data (e.g., ratings on a scale) and qualitative feedback (e.g., open-ended responses), offering a comprehensive view of project performance.</td>
   </tr>
   <tr>
-    <td width=200 style="border: transparent;"><img width="800" src="../assets/images/04_quality_metrics.png"></td>
+    <td width=200 style="border: transparent;"><img width="800" src="{{ images_path }}/04_quality_metrics.png"></td>
     <td><b>Hand-drawn Charts for Quality Trends</b><br>Manually create charts to visualize trends in quality metrics over time. <br>Drawing these charts can help project teams and collaborators to visually grasp improvements or declines in project quality, enabling targeted discussions on maintaining or enhancing standards.</td>
   </tr>
   <tr>
-    <td width=200 style="border: transparent;"><img width="800" src="../assets/images/04_checklist.png"></td>
+    <td width=200 style="border: transparent;"><img width="800" src="{{ images_path }}/04_checklist.png"></td>
     <td><b>Checklists for Quality Control Audits</b><br>Develop detailed checklists tailored to the project’s Quality Assurance standards, to be used during periodic audits or reviews. <br>These checklists ensure that every aspect of the project is evaluated consistently, helping to identify deviations from quality benchmarks and necessary corrective actions.</td>
   </tr>
 </table>

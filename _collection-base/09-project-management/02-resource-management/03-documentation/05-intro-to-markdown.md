@@ -6,7 +6,7 @@ author: Andrew Severin
 author2: Sharu Paul
 header:
   overlay_color: "444444"
-  overlay_image: /09-ProjectManagement/assets/images/09_project_management_banner.png
+  overlay_image: 09-project-management/assets/images/09_project_management_banner.png
 type: "tutorial"
 level: 3
 categories: []
@@ -14,6 +14,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../../00-ProjectManagement-LandingPage.md) / [3. Resource Management](../00-intro-resource-management) / [3.4 Documentation Improvement Tools](01-documentation-improvement-tools) / **3.4.1 Introduction to Markdown**
 
@@ -80,7 +81,7 @@ Headers are used to create different levels of headings in your document. You ca
 
 Generates: <br>
 
-![Headings](../../assets/images/02_Markdown_headings.png) <br>
+![Headings]({{ images_path }}/02_Markdown_headings.png) <br>
 
 <br>
 
@@ -154,17 +155,17 @@ Open a new Jupyter notebook and follow these steps to use Markdown in Jupyter No
 
 1. Create a new Markdown cell by selecting "Markdown" from the cell type dropdown menu.
 
-![J1](../../assets/images/02_Markdown_Jupyter1.png) <br>
+![J1]({{ images_path }}/02_Markdown_Jupyter1.png) <br>
 
 2. Use the Markdown syntax to format your text. You can include headers, emphasis, lists, links, images, code blocks, and more. Markdown cells support both plain Markdown and HTML tags, providing flexibility in styling and presentation.
 
 3. Preview the Markdown cell by running it. The Markdown content will be rendered as formatted text.
 
-![J2](../../assets/images/02_Markdown_Jupyter2.png) <br>
+![J2]({{ images_path }}/02_Markdown_Jupyter2.png) <br>
 
 Note that the next cell type will switch to Code by default after you run the Markdown cell. <br>
 
-![J3](../../assets/images/02_Markdown_Jupyter3.png) <br>
+![J3]({{ images_path }}/02_Markdown_Jupyter3.png) <br>
 
 4. Continue adding Markdown cells to document your code and analysis steps. You can intersperse Markdown cells with code cells to provide explanations and insights throughout your Jupyter Notebook.
 <br>

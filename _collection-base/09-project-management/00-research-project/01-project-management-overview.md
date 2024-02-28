@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /09-ProjectManagement/assets/images/09_project_management_banner.png
+  overlay_image: 09-project-management/assets/images/09_project_management_banner.png
 type: "article"
 level: 1
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / **1. Introduction to Project Management**
 
@@ -23,7 +24,7 @@ tags: []
 
 Project management involves a variety of tasks, that help to plan, organize, and manage the resources needed to successfully complete a project. The specific activities involved will vary depending on the nature of the project, the size and complexity of the organization, and other factors. By informed and targeted managing different aspects of a project, organizations can increase the likelihood of project success and minimize the risk of delays, cost overruns, or other problems.
 
-![research project management](../assets/images/01-project_management_overview.png)
+![research project management]({{ images_path }}/01-project_management_overview.png)
 
 There are a few key sections of Project Management, each with its unique importance, and in this guide, we will delve into them in a less formal manner to highlight the aspects that are particularly crucial for managing small-scale research projects effectively.
 
@@ -104,7 +105,7 @@ There are also specific courses and programs dedicated to managing research proj
 <td style="border: transparent; vertical-align: top; font-size: 21px;">
 Several general trends are shaping the future of project management, particularly in the context of research and development. These trends reflect a broader shift towards more dynamic, flexible, and responsive project management practices due to evolving technologies, methodologies, and cultural shifts in the workplace.
 </td>
-<td width=400 style="border: transparent;"><img width="800" src="../assets/images/01-project_management_trends.png"></td>
+<td width=400 style="border: transparent;"><img width="800" src="{{ images_path }}/01-project_management_trends.png"></td>
 </tr></table>
 
 

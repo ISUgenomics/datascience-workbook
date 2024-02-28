@@ -6,7 +6,7 @@ author1: Rowan Gaffney
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /09-ProjectManagement/assets/images/09_project_management_banner.png
+  overlay_image: 09-project-management/assets/images/09_project_management_banner.png
 type: "tutorial"
 level: 3
 categories: []
@@ -14,6 +14,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / [4. Quality Assurance](00-quality-assurance) / [4.3 Research Reproducibility](03-reproducibility) / **4.3.1 Research Reproducibility Guideline**
 
@@ -915,7 +916,7 @@ The tutorials for this workshop (SCINet Geospatial Workshop 2020) use an image t
 
 The above setup (with the addition of [Zenodo](https://zenodo.org/) linked to the GitHub repository) would support the workflow outlined in the below figure. The container images are archived/stored on Docker Hub while the code used to define and build the images is archived on GitHub and citable via a Zenodo DOI. This workflow allows for a consistent and reproducible computational environment from laptop/desktop to HPC to cloud computing systems.
 
-<!-- ![alt text](../../assets/images/containers.png) -->
+<!-- ![alt text]({{ images_path }}/containers.png) -->
 
 <br>
 [return to contents](#contents)

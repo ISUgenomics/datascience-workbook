@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /09-ProjectManagement/assets/images/09_project_management_banner.png
+  overlay_image: 09-project-management/assets/images/09_project_management_banner.png
 type: "intro"
 level: 2
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../../00-ProjectManagement-LandingPage.md) / [3. Resource Management](../00-intro-resource-management) / **3.2 Code Management**
 
@@ -30,7 +31,7 @@ Code management is a critical aspect of research, especially in projects that in
 <br><span style="font-style:italic;">The efficient Code Management ensures that code, whether part of small-scale pipelines utilizing existing tools or complex development projects, remains robust, well-organized, accessible and usable.</span>
 </div>
 </td>
-<td width=500 style="border: transparent;"><img width="800" src="../../assets/images/03_code_management.png"></td>
+<td width=500 style="border: transparent;"><img width="800" src="{{ images_path }}/03_code_management.png"></td>
 </tr></table>
 
 

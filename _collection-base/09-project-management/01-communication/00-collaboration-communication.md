@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /09-ProjectManagement/assets/images/09_project_management_banner.png
+  overlay_image: 09-project-management/assets/images/09_project_management_banner.png
 type: "article"
 level: 1
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / **2. Collaboration & Communication**
 
@@ -26,7 +27,7 @@ tags: []
 Collaboration and communication are fundamental elements in research projects. Effective collaboration and communication can significantly enhance the quality, scope, and impact of research, because it harnesses diverse expertise, facilitates the sharing of resources and knowledge, broadens the reach of findings, and fosters innovative approaches that may not be achievable in isolation. <br><br>
 <b>When diverse minds converge with a shared purpose, the boundaries of what's possible expand, unlocking untapped potential and creating avenues never before imagined.</b>
 </td>
-<td width=500 style="border: transparent;"><img width="800" src="../assets/images/02_collaboration_communication.png"></td>
+<td width=500 style="border: transparent;"><img width="800" src="{{ images_path }}/02_collaboration_communication.png"></td>
 </tr></table>
 
 

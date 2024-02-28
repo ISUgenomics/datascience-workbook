@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /09-ProjectManagement/assets/images/09_project_management_banner.png
+  overlay_image: 09-project-management/assets/images/09_project_management_banner.png
 type: "tutorial"
 level: 2
 categories: []
@@ -14,6 +14,7 @@ tags: []
 
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / [4. Quality Assurance](00-quality-assurance) / **4.2 Productivity**
 
@@ -448,23 +449,23 @@ Setting deadlines is a powerful tool in the arsenal of time management strategie
 
 <table>
   <tr>
-    <td width=250 style="border: transparent;"><img width="800" src="../assets/images/04_project_maping.png"></td>
+    <td width=250 style="border: transparent;"><img width="800" src="{{ images_path }}/04_project_maping.png"></td>
     <td><b>Create Visual Project Mapping</b><br>Utilize a whiteboard or digital graphing tool to create a visual representation of your tasks and projects for this year. Start by outlining the "big picture" of projects at the top of the pyramid, then break them down into smaller tasks or milestones below. Use a color scale to highlight the time order or urgency of each task, with more immediate deadlines or higher priority tasks in bold or brighter colors. Consider removing completed tasks periodically to declutter the visualization and make space for new commitments.</td>
   </tr>
   <tr>
-    <td width=250 style="border: transparent;"><img width="800" src="../assets/images/04_digital_calendar.png"></td>
+    <td width=250 style="border: transparent;"><img width="800" src="{{ images_path }}/04_digital_calendar.png"></td>
     <td><b>Use a Digital Calendar</b><br>Utilize digital calendar apps like Google Calendar or Microsoft Outlook to schedule deadlines and due dates for tasks and projects.  These tools allow you to set reminders for upcoming tasks and events, ensuring that you stay organized and on top of your commitments. With the ability to customize reminder notifications, you can receive alerts via email, pop-up notifications, or mobile notifications, keeping you informed and accountable. Occasionally browsing your calendar ahead of time allows you to anticipate upcoming deadlines, enabling you to prepare accordingly and maintain a clear overview of your schedule.</td>
   </tr>
   <tr>
-    <td width=250 style="border: transparent;"><img width="800" src="../assets/images/04_gantt_chart.png"></td>
+    <td width=250 style="border: transparent;"><img width="800" src="{{ images_path }}/04_gantt_chart.png"></td>
     <td><b>Create a Gantt Chart</b><br>Construct a Gantt chart using tools like Microsoft Excel, Google Sheets, or specialized project management software such as Microsoft Project or Smartsheet. These tools offer more than just a visual representation of tasks, deadlines, and dependencies. Gantt charts provide a visual representation of tasks, deadlines, and dependencies, helping you to plan and track progress effectively. Specifically, they allow you to see how your upcoming tasks overlap in time. This insight enables you to plan for busy periods more effectively or redistribute tasks for a better balance of workload. Additionally, Gantt charts highlight bottlenecks in the project timeline, enabling you to anticipate and address potential delays proactively. </td>
   </tr>
   <tr>
-    <td width=250 style="border: transparent;"><img width="800" src="../assets/images/04_task_management.png"></td>
+    <td width=250 style="border: transparent;"><img width="800" src="{{ images_path }}/04_task_management.png"></td>
     <td><b>Use Task Management Tools</b><br>Employ task management tools such as Trello, Asana, or Todoist to create task lists and set deadlines for each task. These tools often allow you to break down larger projects into smaller, manageable tasks and assign due dates accordingly. These tools allow you to create detailed checklists for each task, breaking down complex projects into actionable steps. Once a task or checklist item is completed, you can mark it as done within the task management tool. This visual indicator not only provides a sense of accomplishment but also helps you track your progress and stay motivated. Additionally, completed tasks can be archived or moved to a separate "Completed" section, keeping your task lists organized and clutter-free.</td>
   </tr>
   <tr>
-    <td width=250 style="border: transparent;"><img width="800" src="../assets/images/04_accountability_partner.png"></td>
+    <td width=250 style="border: transparent;"><img width="800" src="{{ images_path }}/04_accountability_partner.png"></td>
     <td><b>Establish Accountability Partnerships</b><br>Partner with a colleague or friend who can help hold you accountable for meeting your deadlines. Occasional check-ins and mutual support can motivate you to stay on track and meet your milestones. For example, try mixing it up with some fun accountability tricks. Grab a buddy for coffee breaks, shoot quick updates on your progress through messaging apps, or spice things up with a friendly competition for small prizes. These low-pressure, self-initiated strategies keep you motivated and connected without feeling like a chore.</td>
   </tr>
 </table>

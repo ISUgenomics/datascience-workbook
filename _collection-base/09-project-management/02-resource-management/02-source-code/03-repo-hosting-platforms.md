@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /09-ProjectManagement/assets/images/09_project_management_banner.png
+  overlay_image: 09-project-management/assets/images/09_project_management_banner.png
 type: "intro"
 level: 3
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../../00-ProjectManagement-LandingPage.md) / [[3. Resource Management](../00-intro-resource-management) / [3.3. Storage & Version Control](01-storage-version-control.md) / **3.3.2 Online Hosting Platforms for GIT Repositories**
 
@@ -91,7 +92,7 @@ The table provides a general overview of a few major online hosting platforms fo
 Learn more from the <b>hands-on tutorial</b> <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/04-intro-to-github" target="_blank">Introduction to GitHub  ⤴</a>, provided in this section of the workbook.
 </span><br><br>
 
-![01-github_website.png](../../../07-DataParsing/assets/images/01-github_website.png)
+![01-github_website.png]({{ images_path }}/01-github_website.png)
 
 ### ***Bitbucket***
 
@@ -101,25 +102,25 @@ Learn more from the <b>hands-on tutorial</b> <a href="https://datascience.101wor
 Learn more from the <b>hands-on tutorial</b> <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/05-intro-to-bitbucket" target="_blank">Introduction to BitBucket  ⤴</a>, provided in this section of the workbook.
 </span><br><br>
 
-![01-version_control_bitbucket.png](../../assets/images/01-version_control_bitbucket.png)
+![01-version_control_bitbucket.png]({{ images_path }}/01-version_control_bitbucket.png)
 
 ### *GitLab*
 
 <a href="https://gitlab.com" target="_blank">GitLab  ⤴</a> is another web-based platform for hosting Git repositories. It provides similar features to GitHub and is popular for its integration with Continuous Integration/Continuous Deployment (CI/CD) pipelines.
 
-![01-version_control_gitlab.png](../assets/images/01-version_control_gitlab.png)
+![01-version_control_gitlab.png]({{ images_path }}/01-version_control_gitlab.png)
 
 ### *SourceForge*
 
 <a href="https://sourceforge.net" target="_blank">SourceForge  ⤴</a> is a web-based platform that provides hosting for Git and other types of version control systems. It is **popular among open-source projects** and provides a variety of tools for project management and collaboration, with a focus on community support. SourceForge **supports a wide range of programming languages**, including C/C++, Java, Python, and more.
 
-![01-version_control_sourceforge.png](../../assets/images/01-version_control_sourceforge.png)
+![01-version_control_sourceforge.png]({{ images_path }}/01-version_control_sourceforge.png)
 
 ### *GitKraken*
 
 <a href="https://www.gitkraken.com" target="_blank">GitKraken  ⤴</a> is a Git client that **provides a graphical user interface** for working with Git repositories. It integrates with a variety of Git hosting services and provides features for collaboration, code review, and project management.
 
-![01-version_control_gitkraken.png](../../assets/images/01-version_control_gitkraken.png)
+![01-version_control_gitkraken.png]({{ images_path }}/01-version_control_gitkraken.png)
 
 ### *Visual Studio Team Services*
 

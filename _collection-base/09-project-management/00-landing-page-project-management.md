@@ -5,13 +5,16 @@ author: Andrew Severin
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /09-ProjectManagement/assets/images/09_project_management_banner.png
+  overlay_image: 09-project-management/assets/images/09_project_management_banner.png
 type: "landing-page"
 level: 0
 categories: []
 tags: []
 ---
 
+
+{% include toc %}
+{% include images_path %}
 
 It is undeniable that good project management leads to improved reproducibility and research productivity.  Project management becomes significantly more important as the size of the project and the amount of data increases. Project management is not just about how you organize your data, files and folders but also how you record the steps in data analysis that leads to the publication of your research.  
 

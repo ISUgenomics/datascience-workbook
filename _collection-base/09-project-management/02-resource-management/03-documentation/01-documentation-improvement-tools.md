@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /09-ProjectManagement/assets/images/09_project_management_banner.png
+  overlay_image: 09-project-management/assets/images/09_project_management_banner.png
 type: "intro"
 level: 2
 categories: []
@@ -14,6 +14,7 @@ tags: []
 
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../../00-ProjectManagement-LandingPage.md) / [3. Resource Management](../00-intro-resource-management) / **3.4 Documentation Improvement Tools**
 
@@ -78,7 +79,7 @@ A few inspiring examples of tools supporting documentation *(including some AI-p
 
 # Documentation Basics
 
-![documentation_wordcloud.png](../../assets/images/documentation_wordcloud.png)
+![documentation_wordcloud.png]({{ images_path }}/documentation_wordcloud.png)
 
 ## Why clear and organized documentation matters?
 

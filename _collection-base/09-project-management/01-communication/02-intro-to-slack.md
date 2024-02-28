@@ -5,7 +5,7 @@ author: Andrew Severin
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /09-ProjectManagement/assets/images/09_project_management_banner.png
+  overlay_image: 09-project-management/assets/images/09_project_management_banner.png
 type: "tutorial"
 level: 3
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / [2. Collaboration & Communication](00-collaboration-communication.md) / [2.1 Team Communication Tools](01-team-communication-tools.md) / **2.1.1 Introduction to Slack**
 
@@ -34,7 +35,7 @@ Slack is a communication platform that is based around group chat channels.  It 
 ---
 ## Understanding the GUI interface
 
-![](https://raw.githubusercontent.com/ISUgenomics/bioinformatics-workbook/Andrew6/Appendix/assets/SlackOverview.png)
+![]({{ images_path }}/SlackOverview.png)
 
 The thin left panel has the teams that you have joined.  The thick left panel contains the channels that you can select and chat in.  The central panel contains your messages, allows you to upload files and make posts.  The right panel contains highlights, pinned items, members in the channel, and shared files.  It will also display search results if you search using the search box at the top of the right panel.
 

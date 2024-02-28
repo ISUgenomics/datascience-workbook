@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /09-ProjectManagement/assets/images/09_project_management_banner.png
+  overlay_image: 09-project-management/assets/images/09_project_management_banner.png
 type: "tutorial"
 level: 3
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / [1.2 Project Strategy & Design](03-project-strategy-design) / **1.2.1 Project Design vs Project Framework**
 
@@ -44,7 +45,7 @@ In professional project management, these elements work together to ensure that 
   <td>Consider it the <b>rulebook</b> and scaffolding of your project. It establishes the <b>rules, roles, and structures</b> that guide and support the entire project's execution.</td>
 </tr>
 </table>
-<img width="1200" src="../assets/images/01-project_strategy_design_framework.png"><br><br>
+<img width="1200" src="{{ images_path }}/01-project_strategy_design_framework.png"><br><br>
 
 * **key elements**
 
@@ -65,7 +66,7 @@ and <br>- the guidelines for decision-making.</td>
 
 * **Why it matters?**
 
-<img width="1200" src="../assets/images/01-project_goals_plan_rules.png">
+<img width="1200" src="{{ images_path }}/01-project_goals_plan_rules.png">
 <table style="text-align: left;">
 <tr ><th  style="background: #e8e9e8; color: #3e5a89; width: 312px; text-align: center;">Project Startegy</th> <th style="background: #fae7e7; color: red; width: 312px; text-align: center;">Project Design</th><th style="background: #e6f0f0; color: #0ba37f; width: 312px; text-align: center;">Project Framework</th></tr>
 <tr>
@@ -99,14 +100,14 @@ In the dynamic landscape of research, the art of project design lies in **balanc
 
 ## Core Aspects of Project Design
 
-|| <span style="color: red;">PROJECT DESIGN</span> |<img width="100" src="../assets/images/01-project_design_icon.png">| `HOW of the project` , `detailed plan or roadmap` |
+|| <span style="color: red;">PROJECT DESIGN</span> |<img width="100" src="{{ images_path }}/01-project_design_icon.png">| `HOW of the project` , `detailed plan or roadmap` |
 |-|----------------|--|--|
-|1.|**Goals and Objectives**|<img width="100" src="../assets/images/01-project_design_goals.png">|Clearly define what the research aims to achieve, with a focus on specificity and flexibility.|
-|2.|**Deliverables**|<img width="100" src="../assets/images/01-project_design_deliverables.png">|Identify expected outcomes such as reports, papers, new hypotheses, or other forms of knowledge dissemination.|
-|3.|**Methodology Selection and Development**|<img width="100" src="../assets/images/01-project_design_methodology.png">|Tailor methodologies to best fit the research question or hypothesis, adaptable as new insights arise.|
-|4.|**Resource Allocation**|<img width="100" src="../assets/images/01-project_design_resources.png">|Efficiently manage resources, including funding, materials, knowledge, expertise, and technology.|
-|5.|**Timeline and Milestone Planning**|<img width="100" src="../assets/images/01-project_design_milestones.png">|Create a realistic, yet flexible timeline with key milestones, acknowledging the exploratory nature of research.|
-|6.|**Decision-Making Processes**|<img width="100" src="../assets/images/01-project_design_decisions.png">|Establish clear, adaptable processes for making decisions in response to evolving project needs.|
+|1.|**Goals and Objectives**|<img width="100" src="{{ images_path }}/01-project_design_goals.png">|Clearly define what the research aims to achieve, with a focus on specificity and flexibility.|
+|2.|**Deliverables**|<img width="100" src="{{ images_path }}/01-project_design_deliverables.png">|Identify expected outcomes such as reports, papers, new hypotheses, or other forms of knowledge dissemination.|
+|3.|**Methodology Selection and Development**|<img width="100" src="{{ images_path }}/01-project_design_methodology.png">|Tailor methodologies to best fit the research question or hypothesis, adaptable as new insights arise.|
+|4.|**Resource Allocation**|<img width="100" src="{{ images_path }}/01-project_design_resources.png">|Efficiently manage resources, including funding, materials, knowledge, expertise, and technology.|
+|5.|**Timeline and Milestone Planning**|<img width="100" src="{{ images_path }}/01-project_design_milestones.png">|Create a realistic, yet flexible timeline with key milestones, acknowledging the exploratory nature of research.|
+|6.|**Decision-Making Processes**|<img width="100" src="{{ images_path }}/01-project_design_decisions.png">|Establish clear, adaptable processes for making decisions in response to evolving project needs.|
 
 
 ## Methodologies in Project Design
@@ -155,13 +156,13 @@ In the intricate nature of research, the Project Framework acts as the essential
 
 ## Core Aspects of Project Framework
 
-|| <span style="color: #0ba37f;">PROJECT FRAMEWORK</span> |<img width="100" src="../assets/images/01-project_framework_icon.png">| `WHO & WHEN` , `rules of the game` , `roles & procedures` |
+|| <span style="color: #0ba37f;">PROJECT FRAMEWORK</span> |<img width="100" src="{{ images_path }}/01-project_framework_icon.png">| `WHO & WHEN` , `rules of the game` , `roles & procedures` |
 |-|----------------|--|--|
-|1.|**Roles and Responsibilities**|<img width="100" src="../assets/images/01-project_framework_roles.png">|Clearly define and distribute roles and responsibilities within the research team, ensuring everyone knows their part in the project.|
-|2.|**Communication and Reporting**|<img width="100" src="../assets/images/01-project_framework_communication.png">|Establish effective communication channels and reporting mechanisms to maintain clarity and continuity throughout the project.|
-|3.|**Monitoring and Quality Control**|<img width="100" src="../assets/images/01-project_framework_monitoring.png">|Implement processes for regular monitoring of progress and maintaining quality standards in line with research objectives.|
-|4.|**Risk Management and Mitigation**|<img width="100" src="../assets/images/01-project_framework_risks.png">|Identify potential risks and develop strategies to mitigate them, ensuring the project remains on track.|
-|5.|**Governance and Decision-Making Structure**|<img width="100" src="../assets/images/01-project_framework_decisions.png">|Create a governance structure that outlines decision-making processes and authority, providing clear guidance for project progression.|
+|1.|**Roles and Responsibilities**|<img width="100" src="{{ images_path }}/01-project_framework_roles.png">|Clearly define and distribute roles and responsibilities within the research team, ensuring everyone knows their part in the project.|
+|2.|**Communication and Reporting**|<img width="100" src="{{ images_path }}/01-project_framework_communication.png">|Establish effective communication channels and reporting mechanisms to maintain clarity and continuity throughout the project.|
+|3.|**Monitoring and Quality Control**|<img width="100" src="{{ images_path }}/01-project_framework_monitoring.png">|Implement processes for regular monitoring of progress and maintaining quality standards in line with research objectives.|
+|4.|**Risk Management and Mitigation**|<img width="100" src="{{ images_path }}/01-project_framework_risks.png">|Identify potential risks and develop strategies to mitigate them, ensuring the project remains on track.|
+|5.|**Governance and Decision-Making Structure**|<img width="100" src="{{ images_path }}/01-project_framework_decisions.png">|Create a governance structure that outlines decision-making processes and authority, providing clear guidance for project progression.|
 
 
 
@@ -173,7 +174,7 @@ In the intricate nature of research, the Project Framework acts as the essential
 | Agile Methodology | Waterfall Methodology |
 |-------------------|-----------------------|
 |Agile is all about flexibility and iterative progress. | Waterfall is a more linear and structured approach. |
-|<img width="500" src="../assets/images/01-project_framework_agile.png"> |<img width="460" src="../assets/images/01-project_framework_waterfall.png"> |
+|<img width="500" src="{{ images_path }}/01-project_framework_agile.png"> |<img width="460" src="{{ images_path }}/01-project_framework_waterfall.png"> |
 |Agile methodology is an `iterative` project management approach that emphasizes `continuous iteration and improvement`. It originated in software development but has since been applied to various types of projects. | Waterfall methodology is a `sequential` project management approach that emphasizes a linear progression through a set of `predefined phases`. It originated in manufacturing and construction and has been traditionally used in software development.|
 |Agile focuses on delivering small, workable segments of the project in an iterative manner, allowing for `regular reassessment` and adaptation. | This approach relies on detailed upfront planning, clear documentation, and a stable project scope, which allows for `minimal changes` once the project is underway.|
 | **AGILE STEPS** *(Scrum)* | **WATERFALL STEPS** |
