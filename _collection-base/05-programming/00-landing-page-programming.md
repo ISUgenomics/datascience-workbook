@@ -7,6 +7,7 @@ header:
   overlay_color: "444444"
   overlay_image: 05-programming/assets/images/05_programming_banner.png
 type: "landing-page"
+order: 500
 level: 0
 categories: []
 tags: []

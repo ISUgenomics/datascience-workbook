@@ -7,6 +7,7 @@ header:
   overlay_color: "444444"
   overlay_image: 01-data-science/assets/images/01_data_science_banner.png
 type: "landing-page"
+order: 100
 level: 0
 categories: ["analysis", "computing", "machine-learning"]
 tags: []

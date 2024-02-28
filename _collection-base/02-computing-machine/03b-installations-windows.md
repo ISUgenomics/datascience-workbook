@@ -8,6 +8,7 @@ header:
   overlay_image: 02-computing-machine/assets/images/03_computer_setup_banner.png
 module: "03. Computing Machine Setup"
 type: "tutorial"
+order: 232
 level: 2
 categories: []
 tags: []

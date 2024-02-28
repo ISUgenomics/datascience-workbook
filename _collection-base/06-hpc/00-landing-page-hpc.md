@@ -7,6 +7,7 @@ header:
   overlay_color: "444444"
   overlay_image: 06-hpc/assets/images/06_hpc_banner.png
 type: "landing-page"
+order: 600
 level: 0
 categories: []
 tags: []

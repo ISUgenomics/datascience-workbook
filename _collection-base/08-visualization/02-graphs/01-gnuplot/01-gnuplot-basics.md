@@ -7,6 +7,7 @@ header:
   overlay_color: "444444"
   overlay_image: 08-visualization/assets/images/08_data_visualization_banner.png
 type: "tutorial"
+order: 821.1
 level: 2
 categories: []
 tags: []

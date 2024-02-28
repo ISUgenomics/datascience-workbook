@@ -7,6 +7,7 @@ header:
   overlay_color: "444444"
   overlay_image: 03-command-line/assets/images/02_command_line_banner.png
 type: "landing-page"
+order: 300
 level: 0
 categories: ["computing", "text-manipulation"]
 tags: ["commands", "linux", "bash-scripting"]

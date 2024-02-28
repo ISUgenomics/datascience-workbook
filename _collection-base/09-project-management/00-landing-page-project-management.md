@@ -7,6 +7,7 @@ header:
   overlay_color: "444444"
   overlay_image: 09-project-management/assets/images/09_project_management_banner.png
 type: "landing-page"
+order: 900
 level: 0
 categories: []
 tags: []

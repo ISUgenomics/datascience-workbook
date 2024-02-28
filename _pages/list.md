@@ -16,7 +16,7 @@ Collection size: {{ site['collection-base'] | size }}
 <button onclick="showList('index')">Site Index</button>
 <button onclick="showList('categories')">By Category</button>
 
-{% assign content = site['collection-base'] %}
+{% assign content = site['collection-base'] | sort: 'order' %}
 
 <!-- Structured List -->
 {% assign tutorials_by_module = content | group_by_exp: "tutorial", "tutorial.path | remove: '_collection-base/' | split: '/' | first" %}

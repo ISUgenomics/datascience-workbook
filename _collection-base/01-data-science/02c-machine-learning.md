@@ -7,6 +7,7 @@ header:
   overlay_color: "444444"
   overlay_image: 01-data-science/assets/images/01_data_science_banner.png
 type: "intro"
+order: 123
 level: 2
 categories: ["knowledge"]
 tags: []

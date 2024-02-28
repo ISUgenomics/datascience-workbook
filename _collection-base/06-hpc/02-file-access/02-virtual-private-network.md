@@ -8,6 +8,7 @@ header:
   overlay_color: "444444"
   overlay_image: 06-hpc/assets/images/06_hpc_banner.png
 type: "tutorial"
+order: 622
 level: 2
 categories: []
 tags: []

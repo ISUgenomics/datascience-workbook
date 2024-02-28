@@ -7,6 +7,7 @@ header:
   overlay_color: "444444"
   overlay_image: 07-wrangling/assets/images/07_data_acquisition_banner.png
 type: "landing-page"
+order: 700
 level: 0
 categories: []
 tags: []

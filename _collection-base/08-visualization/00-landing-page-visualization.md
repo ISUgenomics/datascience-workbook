@@ -7,6 +7,7 @@ header:
   overlay_color: "444444"
   overlay_image: 08-visualization/assets/images/08_data_visualization_banner.png
 type: "landing-page"
+order: 800
 level: 0
 categories: []
 tags: []

@@ -6,8 +6,8 @@ author_profile: true
 header:
   overlay_color: "444444"
   overlay_image: 03-command-line/assets/images/02_command_line_banner.png
-module: "02. Command Line"
 type: "tutorial"
+order: 322
 level: 2
 categories: []
 tags: []
