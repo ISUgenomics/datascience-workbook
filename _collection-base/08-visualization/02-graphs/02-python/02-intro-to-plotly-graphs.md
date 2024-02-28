@@ -6,7 +6,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /08-DataVisualization/assets/images/08_data_visualization_banner.png
+  overlay_image: 08-visualization/assets/images/08_data_visualization_banner.png
 type: "tutorial"
 level: 3
 categories: []
@@ -14,6 +14,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [08. Data Visualization](../../00-DataVisualization-LandingPage.md) / [2. Introduction to Scientific Graphing](../01-introduction-to-scientific-graphing.md) / [2.2 Plotly-Dash – Data Processing & Interactive Plotting with Python](01-interactive-graphing-with-python.md) / **2.2.1 Introduction to Plotly (Python library)**
 
@@ -311,7 +312,7 @@ Select one of the following named colorscales for coloring the Heatmap section:
 
 ***Appending '_r' to a named colorscale reverses it.***
 
-![built-in Plotly Colorscales](../../assets/images/plotly-colorscales.png)
+![built-in Plotly Colorscales]({{ images_path }}/plotly-colorscales.png)
 
 You can also create your own colorscale as an array of lists, each composed of two elements. The first refers to the percentile rank, and the second to the applied color. Color can be provided in any string format among hex, hsl, rgb, or common name.
 <br>e.g.,

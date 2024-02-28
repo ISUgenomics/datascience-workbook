@@ -1,5 +1,6 @@
 ---
 title: "Template-based web tools"
+layout: single
 author: Aleksandra Badaczewska
 author_profile: true
 header:
@@ -10,6 +11,7 @@ level: 2
 categories: []
 tags: []
 ---
+
 
 {% include toc %}
 {% include images_path %}
