@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /08-DataVisualization/assets/images/08_data_visualization_banner.png
+  overlay_image: 08-visualization/assets/images/08_data_visualization_banner.png
 type: "intro"
 level: 1
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [08. Data Visualization](../00-DataVisualization-LandingPage.md) / **2. Introduction to Scientific Graphing**
 
@@ -23,7 +24,7 @@ tags: []
 
 **Graphs and charts are powerful tools that allow scientists to present experimental and numerical data.** Additionally, data visualization enables researchers to **identify patterns and trends** in their data that might not be immediately apparent in raw data, leading to deeper insights and better decision-making. It also allows them **communicate complex findings** to a wider audience in a clear and concise manner.
 
-![01_graphic_design_charts.png](../assets/images/01_graphic_design_charts.png)
+![01_graphic_design_charts.png]({{ images_path }}/01_graphic_design_charts.png)
 
 <span style="color: #ff3870;font-weight: 500;"> The goal of scientific graphing is to create visually appealing and informative graphs and charts that accurately represent the research data.</span> It involves selecting the appropriate type of chart or graph that accurately represents the data being presented and the research question being addressed.
 
@@ -36,7 +37,7 @@ There are two main categories of scientific graphics:
 * creating data visualizations: charts, graphs
 * designing infographics: diagrams, schemas
 
-![01_graphic_design_elements.png](../assets/images/01_graphic_design_elements.png)
+![01_graphic_design_elements.png]({{ images_path }}/01_graphic_design_elements.png)
 
 Both data visualizations and infographics are used to present information visually. **Data visualizations are primarily focused on representing data**, while infographics are designed to communicate complex ideas and concepts.
 <span style="color: #ff3870;font-weight: 500;">Understanding the differences between these two types of scientific graphics can help researchers choose the right type of visualization for their specific needs.
@@ -66,15 +67,15 @@ Data visualizations are particularly useful for presenting large amounts of data
 A wide range of data can be visualized using graphs and charts, including:
 * **Quantitative**, which includes numerical data such as measurements or counts <br>*e.g.,* `bar charts` `line charts` `scatter plots` `histograms`
 
-![01_graphic_design_data_vis.png](../assets/images/01_graphic_design_data_vis.png)
+![01_graphic_design_data_vis.png]({{ images_path }}/01_graphic_design_data_vis.png)
 
 * **Categorical**, which includes non-numerical data such as names or categories <br>*e.g.,* `pie charts` `stacked bar charts` `bubble charts`
 
-![01_graphic_design_data_vis2.png](../assets/images/01_graphic_design_data_vis2.png)
+![01_graphic_design_data_vis2.png]({{ images_path }}/01_graphic_design_data_vis2.png)
 
 * **Temporal**, which includes data that changes over time <br>*e.g.,* `line charts` `area charts` `heatmaps`
 
-![01_graphic_design_data_vis3.png](../assets/images/01_graphic_design_data_vis3.png)
+![01_graphic_design_data_vis3.png]({{ images_path }}/01_graphic_design_data_vis3.png)
 
 
 ### Tools

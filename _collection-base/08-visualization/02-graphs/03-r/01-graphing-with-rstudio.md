@@ -5,7 +5,7 @@ author:
 author_profile: false
 header:
   overlay_color: "444444"
-  overlay_image: /08-DataVisualization/assets/images/08_data_visualization_banner.png
+  overlay_image: 08-visualization/assets/images/08_data_visualization_banner.png
 type: "tutorial"
 level: 2
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [08. Data Visualization](../../00-DataVisualization-LandingPage.md) / [2. Introduction to Scientific Graphing](../01-introduction-to-scientific-graphing.md) / **2.3 RStudio – Data Processing & Plotting with R**
 
@@ -484,7 +485,7 @@ p <- ggplotly(p)
 p
 ```
 
-<img src="assets/images/01_scatterPlot_01.png" width="992" />
+<img src="{{ images_path }}/01_scatterPlot_01.png" width="992" />
 
 ```r
 # Create a histogram with the default bin range
@@ -521,7 +522,7 @@ p4 <- subplot( p1, p2, p3, nrows = 2 )
 p4
 ```
 
-<img src="assets/images/01_histogram_02.png" width="992" />
+<img src="{{ images_path }}/01_histogram_02.png" width="992" />
 
 ```r
 # Compute the correlation matrix
@@ -548,7 +549,7 @@ heatmap <- ggplotly(heatmap)
 heatmap
 ```
 
-<img src="assets/images/01_heatmap_03.png" width="992" />
+<img src="{{ images_path }}/01_heatmap_03.png" width="992" />
 
 The attributes that are most correlated to `Rings` are `Shell_weight`
 and `Height`.

@@ -4,7 +4,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /08-DataVisualization/assets/images/08_data_visualization_banner.png
+  overlay_image: 08-visualization/assets/images/08_data_visualization_banner.png
 type: "tutorial"
 level: 2
 categories: []
@@ -12,6 +12,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [08. Data Visualization](../00-DataVisualization-LandingPage.md) / [1. Introduction to Scientific Graphic Design](01-scientific-graphic-design-intro.md) / **1.4 Template-based Web Tools**
 
@@ -78,7 +79,7 @@ Three notable examples of these online tools include `BioRender`, `SmartDraw`, a
 **Unique Features:** <br>
 BioRender's unique feature lies in its comprehensive library of **over 20,000 life science icons categorized across various fields** like cell biology, microbiology, immunology, and more. These icons follow a **standardized color palette**, ensuring consistency in your diagrams. You can also **animate your diagrams** to create more dynamic presentations.
 
-<p align="center"><img width="1000" src="../assets/images/01-template_biorender.gif"></p>
+<p align="center"><img width="1000" src="{{ images_path }}/01-template_biorender.gif"></p>
 
 
 **Research Applications Examples:**
@@ -98,7 +99,7 @@ BioRender's unique feature lies in its comprehensive library of **over 20,000 li
 **Unique Features:** <br>
 SmartDraw's strength lies in its **versatility**. Apart from scientific diagrams, it can **create flowcharts, organizational charts, mind maps, electrical diagrams**, and more. It also integrates well with other platforms like Microsoft Office, G Suite, and Trello.
 
-<p align="center"><img width="1000" src="../assets/images/01-template_smartdraw.gif"></p>
+<p align="center"><img width="1000" src="{{ images_path }}/01-template_smartdraw.gif"></p>
 
 **Research Applications Examples:**
 * A researcher can use SmartDraw to create a flowchart of a lab process, an organizational chart of a research team, or a mind map of a research topic.
@@ -116,7 +117,7 @@ SmartDraw's strength lies in its **versatility**. Apart from scientific diagrams
 **Unique Features:** <br>
 Mind the Graph provides numerous **science-specific infographic elements across various disciplines like biology, chemistry, and medicine**. It also offers features to create **graphical abstracts**, a powerful tool to summarize research findings visually.
 
-<p align="center"><img width="1000" src="../assets/images/01-template_mindgraph.gif"></p>
+<p align="center"><img width="1000" src="{{ images_path }}/01-template_mindgraph.gif"></p>
 
 **Research Applications Examples:**
 * A biologist can use Mind the Graph to create a graphical abstract for a research paper or a visual representation of a complex biological process.

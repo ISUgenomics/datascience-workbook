@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /08-DataVisualization/assets/images/08_data_visualization_banner.png
+  overlay_image: 08-visualization/assets/images/08_data_visualization_banner.png
 type: "intro"
 level: 1
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [08. Data Visualization](../00-DataVisualization-LandingPage.md) / **1. Introduction to Scientific Graphic Design**
 
@@ -23,7 +24,7 @@ tags: []
 
 Scientific graphic design is the art of **visually communicating complex scientific concepts, ideas, and information** through various forms of visual representation. It involves the use of design principles, typography, color theory, and graphic elements to create effective visual **infographics**.
 
-![01_graphic_design_infographics.png](../assets/images/01_graphic_design_infographics.png)
+![01_graphic_design_infographics.png]({{ images_path }}/01_graphic_design_infographics.png)
 
 <span style="color: #ff3870;font-weight: 500;"> The main goal of scientific graphic design is to make scientific information easily understandable and visually appealing to a wide range of audiences.</span> This involves selecting the right design elements, such as fonts, colors, and images, to enhance the message and convey the information accurately.
 
@@ -35,7 +36,7 @@ There are two main categories of scientific graphics:
 * creating data visualizations: charts, graphs
 * designing infographics: diagrams, schemas
 
-![01_graphic_design_elements.png](../assets/images/01_graphic_design_elements.png)
+![01_graphic_design_elements.png]({{ images_path }}/01_graphic_design_elements.png)
 
 Both data visualizations and infographics are used to present information visually. **Infographics are primarily designed to communicate complex ideas and concepts**, while data visualizations are focused on representing data.
 <span style="color: #ff3870;font-weight: 500;">Understanding the differences between these two types of scientific graphics can help researchers choose the right type of visualization for their specific needs.
@@ -64,27 +65,27 @@ One unique advantage of using infographics is their ability to **condense comple
 **1. Flowcharts** <br>
 Flowcharts are a type of infographic that can be used to illustrate a series of steps or a process. They are particularly helpful in research when visualizing the steps involved in a study design, data collection, or analysis.
 
-![01_graphic_design_flowcharts.png](../assets/images/01_graphic_design_flowcharts.png)
+![01_graphic_design_flowcharts.png]({{ images_path }}/01_graphic_design_flowcharts.png)
 
 **2. Comparison Infographics** <br>
 Comparison infographics can be used to compare different hypotheses or pipelines. They can be helpful in research when comparing different study approaches, outcomes, or treatment options.
 
-![01_graphic_design_comparison.png](../assets/images/01_graphic_design_comparison.png)
+![01_graphic_design_comparison.png]({{ images_path }}/01_graphic_design_comparison.png)
 
 **3. Timeline Infographics** <br>
 Timeline infographics can be used to illustrate the sequence of events or a historical context of a study. They can be helpful in research when visualizing the progression of a study over time or the historical context of a research topic.
 
-![01_graphic_design_timeline.png](../assets/images/01_graphic_design_timeline.png)
+![01_graphic_design_timeline.png]({{ images_path }}/01_graphic_design_timeline.png)
 
 **4. Statistical Infographics** <br>
 Statistical infographics can be used to display statistical outcome in a visually appealing and easy-to-understand way. They can be helpful in research when visualizing study results, trends, or relationships between variables.
 
-![01_graphic_design_statistics.png](../assets/images/01_graphic_design_statistics.png)
+![01_graphic_design_statistics.png]({{ images_path }}/01_graphic_design_statistics.png)
 
 **5. Geographic Infographics** <br>
 Geographic infographics can be used to display information that is location-specific. They can be helpful in research when visualizing study results by location, or when comparing different geographic regions.
 
-![01_graphic_design_geographic.png](../assets/images/01_graphic_design_geographic.png)
+![01_graphic_design_geographic.png]({{ images_path }}/01_graphic_design_geographic.png)
 
 
 ### Tools

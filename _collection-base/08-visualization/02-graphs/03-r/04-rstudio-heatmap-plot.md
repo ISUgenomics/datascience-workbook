@@ -5,7 +5,7 @@ author: Arun Seetharam
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /08-DataVisualization/assets/images/08_data_visualization_banner.png
+  overlay_image: 08-visualization/assets/images/08_data_visualization_banner.png
 type: "tutorial"
 level: 4
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [08. Data Visualization](../../00-DataVisualization-LandingPage.md) / [2. Introduction to Scientific Graphing](../01-introduction-to-scientific-graphing.md) / [2.3 RStudio – Data Processing & Plotting with R](01-graphing-with-rstudio.md) / **Creating Heatmaps in R**
 
@@ -124,7 +125,7 @@ scaleyellowred <- colorRampPalette(c("lightyellow", "red"), space = "rgb")(100)
 heatmap(as.matrix(data.prop), Rowv = NA, Colv = NA, col = scaleyellowred, margins = c(10, 2))
 ```
 
-![](../../assets/images/rvizheat_heatmap-1.png)
+![]({{ images_path }}/rvizheat_heatmap-1.png)
 
 Add clustering.
 
@@ -146,7 +147,7 @@ p <- heatmap(as.matrix(data.prop),
    main = "Title", pch=10)
 ```
 
-![](../../assets/images/rvizheat_heatmapclust-1.png)
+![]({{ images_path }}/rvizheat_heatmapclust-1.png)
 
 The image is stored as plot `p` and can be saved as a scalabe vector.
 
@@ -174,7 +175,7 @@ dev.off()
 An example for how your heatmap will look is shown below:
 
 
-![Example Heatmap](assets/images/example_heatmap.png)
+![Example Heatmap]({{ images_path }}/example_heatmap.png)
 -->
 
 You can customize the axis titles, chart title by modifying the commands

@@ -5,7 +5,7 @@ author: Arun Seetharam
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /08-DataVisualization/assets/images/08_data_visualization_banner.png
+  overlay_image: 08-visualization/assets/images/08_data_visualization_banner.png
 type: "tutorial"
 level: 4
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [08. Data Visualization](../../00-DataVisualization-LandingPage.md) / [2. Introduction to Scientific Graphing](../01-introduction-to-scientific-graphing.md) / [2.3 RStudio – Data Processing & Plotting with R](01-graphing-with-rstudio.md) / **Creating Boxplots in R**
 
@@ -204,9 +205,9 @@ For getting a simple boxplot, you can use the following command:
 ggplot(input, aes(x = Organism, y = length)) + geom_boxplot()
 ```
 
-![](../../assets/images/rvizbox_first_plot-1.png)<!-- -->
+![]({{ images_path }}/rvizbox_first_plot-1.png)<!-- -->
 
-<!--![image](assets/first_plot.png)-->
+<!--![image]({{ images_path }}/first_plot.png)-->
 
 if you want to color the plots,
 
@@ -214,8 +215,8 @@ if you want to color the plots,
 ggplot(input, aes(x = Organism, y = length, fill = Organism)) + geom_boxplot()
 ```
 
-![](../../assets/images/rvizbox_second_plot-1.png)<!-- -->
-<!--![image](assets/second_plot.png)-->
+![]({{ images_path }}/rvizbox_second_plot-1.png)<!-- -->
+<!--![image]({{ images_path }}/second_plot.png)-->
 
 but wait, where are the gene families?
 
@@ -223,9 +224,9 @@ but wait, where are the gene families?
 ggplot(input, aes(x = Organism, y = length, fill = family)) + geom_boxplot()
 ```
 
-![](../../assets/images/rvizbox_third_plot-1.png)<!-- -->
+![]({{ images_path }}/rvizbox_third_plot-1.png)<!-- -->
 
-<!--![image](assets/third_plot.png)-->
+<!--![image]({{ images_path }}/third_plot.png)-->
 
 That names are all overlapping though?
 
@@ -235,8 +236,8 @@ ggplot(input, aes(x = Organism, y = length, fill = family)) +
    theme(axis.text.x = element_text(angle = 45, hjust=1))
 ```
 
-![](../../assets/images/rvizbox_fourth_plot-1.png)<!-- -->
-<!--![image](assets/fourth_plot.png)-->
+![]({{ images_path }}/rvizbox_fourth_plot-1.png)<!-- -->
+<!--![image]({{ images_path }}/fourth_plot.png)-->
 
 Well, it seems like it is difficult to compare as all gene families are
 together, can we spread them out in to separate plots?
@@ -305,9 +306,9 @@ ggplot(input, aes(x = Organism, y = length, fill = Organism)) +
    facet_grid( family ~.)          # <= facet allows plots to be split by group
 ```
 
-![](../../assets/images/rvizbox_fifthA-1.png)<!-- -->
+![]({{ images_path }}/rvizbox_fifthA-1.png)<!-- -->
 
-<!--![image](assets/fifthA.png)-->
+<!--![image]({{ images_path }}/fifthA.png)-->
 
 Horizontally
 
@@ -318,7 +319,7 @@ ggplot(input, aes(x = Organism, y = length, fill = Organism)) +
    facet_grid( . ~ family)          # <= swap the dot and family to arrange horizontally
 ```
 
-![](../../assets/images/rvizbox_fifthB-1.png)<!-- -->
+![]({{ images_path }}/rvizbox_fifthB-1.png)<!-- -->
 
 <!--
 ```python
@@ -334,7 +335,7 @@ ggplot(input, aes(x=Organism,y=length)) +
    facet_grid( .~ family) +
    theme(axis.text.x = element_text(angle = 90))
 ```
-![image](assets/fifthB.png)
+![image]({{ images_path }}/fifthB.png)
 -->
 
 To color these gene families, create a color palette:
@@ -360,7 +361,7 @@ ggplot(input, aes(x = Organism, y = length, fill = family, color = family)) +
    scale_color_manual(values = fam_palette2)
 ```
 
-![](../../assets/images/rvizbox_sixth-1.png)<!-- -->
+![]({{ images_path }}/rvizbox_sixth-1.png)<!-- -->
 
 <!--
 
@@ -375,7 +376,7 @@ p3 <- p2 + geom_boxplot(data = fam3, colour = lines3, fill = fill3)
 p4 <- p3 + geom_boxplot(data = fam4, colour = lines4, fill = fill4)
 ```
 
-![image](assets/sixth.png)
+![image]({{ images_path }}/sixth.png)
 -->
 
 

@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /08-DataVisualization/assets/images/08_data_visualization_banner.png
+  overlay_image: 08-visualization/assets/images/08_data_visualization_banner.png
 type: "tutorial"
 level: 2
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [08. Data Visualization](../00-DataVisualization-LandingPage.md) / [1. Introduction to Scientific Graphic Design](01-scientific-graphic-design-intro.md) / **1.3 Adobe Creative Cloud**
 
@@ -25,7 +26,7 @@ The <a href="https://www.adobe.com/creativecloud.html" target="_blank">Adobe Cre
 
 **Having access to Adobe Creative Cloud allows you to leverage the suite's powerful tools in your studies or research.**
 
-![01-adobe_creative_website.png](../assets/images/01-adobe_creative_website.png)
+![01-adobe_creative_website.png]({{ images_path }}/01-adobe_creative_website.png)
 
 ## Pricing: You can have it free!
 
@@ -117,7 +118,7 @@ Adobe Creative Cloud, often simply referred to as **Adobe CC*, is a collection o
 
 * The power of Adobe Creative Cloud comes from more than just its individual apps; it's the integration, the cloud-based storage and sharing capabilities, the continuous updates and improvements, and the extensive learning resources.
 
-![01-adobe_creative_cloud.png](../assets/images/01-adobe_creative_cloud.png)
+![01-adobe_creative_cloud.png]({{ images_path }}/01-adobe_creative_cloud.png)
 
 ## Tools overview
 
@@ -171,7 +172,7 @@ After completing the sign-up process, you'll receive a confirmation email. Open 
 
 **Congratulations!** You are now signed up for Adobe Creative Cloud.
 
-![01-adobe_creative_account.png](../assets/images/01-adobe_creative_account.png)
+![01-adobe_creative_account.png]({{ images_path }}/01-adobe_creative_account.png)
 
 Once you have an Adobe Creative Cloud subscription, you'll use the **Creative Cloud Desktop app** to access, download, and update your Adobe applications.
 
@@ -202,7 +203,7 @@ After following these steps, you should have the Adobe Creative Cloud Desktop Ap
 
 The Adobe Creative Cloud Desktop App is your central hub for managing all your Adobe Creative Cloud activities. It's a free application that lets you **download, install, update, and manage your Adobe Creative Cloud apps** *(see a pink frame)*. In addition, it provides **access to Adobe's online services** such as `Adobe Fonts`, `Adobe Stock`, and `Behance` *(see a blue frame)*, and enables you to manage your account settings and cloud storage.
 
-![01-adobe_creative_desktop.png](../assets/images/01-adobe_creative_desktop.png)
+![01-adobe_creative_desktop.png]({{ images_path }}/01-adobe_creative_desktop.png)
 
 ### Using the Interface
 
@@ -242,7 +243,7 @@ The `Apps` tab *(in the [Creative Cloud Desktop app](#creative-cloud-desktop-app
 2. **Navigate to the "Available in your plan" section.** *In the `Apps` tab, scroll down to the "Available in your plan" section.*
 3. **Choose your app.** <br>*Scroll through the list of available apps. Click "Install" next to the app you want to install.*
 
-![01-adobe_install_app.png](../assets/images/01-adobe_install_app.png)
+![01-adobe_install_app.png]({{ images_path }}/01-adobe_install_app.png)
 
 **To update applications:**
 
@@ -252,7 +253,7 @@ The `Apps` tab *(in the [Creative Cloud Desktop app](#creative-cloud-desktop-app
 
 Alternatively, click **Updates** button located at the top of the left panel under the "APPS" section. This will shows you all apps that have updates available. Click `Update` next to each app you wish to update.  If you want to update all your apps, you can click `Update All` at the top-right of the Updates tab.
 
-![01-adobe_update_app.png](../assets/images/01-adobe_update_app.png)
+![01-adobe_update_app.png]({{ images_path }}/01-adobe_update_app.png)
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
@@ -281,7 +282,7 @@ In this section, we'll delve deeper into some of the major applications offered 
 <td>Acrobat provides tools for creating, editing, and commenting on PDFs. Key features include the Text Edit tool, Comment tools, and Forms and Signature tools.</td></tr>
 </table>
 
-![01-adobe_acrobat_app.png](../assets/images/01-adobe_acrobat_app.png)
+![01-adobe_acrobat_app.png]({{ images_path }}/01-adobe_acrobat_app.png)
 
 <span style="color: #009800;font-weight: 600;"> Practical Exercise: </span> **Open a PDF, add comments, and save the annotated PDF.**
 
@@ -300,7 +301,7 @@ In this section, we'll delve deeper into some of the major applications offered 
 <td>Photoshop offers tools for: image editing, retouching, painting, and drawing. Key features include layers, which let you work on different elements of an image separately; adjustment layers for non-destructive edits; filters for special effects; and a variety of selection tools.</td></tr>
 </table>
 
-![01-adobe_photoshop_app.png](../assets/images/01-adobe_photoshop_app.png)
+![01-adobe_photoshop_app.png]({{ images_path }}/01-adobe_photoshop_app.png)
 
 <span style="color: #009800;font-weight: 600;"> Practical Exercise: </span> **Open an image, duplicate the background layer (to work non-destructively), and try adjusting its brightness and contrast using an Adjustment Layer.** *(Layer > New Adjustment Layer > Brightness/Contrast)*
 
@@ -319,7 +320,7 @@ In this section, we'll delve deeper into some of the major applications offered 
 <td>Illustrator provides tools for creating and manipulating vector graphics. Key features include the Pen Tool for creating paths, the Type Tool for working with text, and the Shape Tools for creating geometric shapes. Illustrator also uses layers and has powerful color and gradient capabilities.</td></tr>
 </table>
 
-![01-adobe_illustrator_app.png](../assets/images/01-adobe_illustrator_app.png)
+![01-adobe_illustrator_app.png]({{ images_path }}/01-adobe_illustrator_app.png)
 
 <span style="color: #009800;font-weight: 600;"> Practical Exercise: </span> **Create a new document and use the shape tools to create a simple logo. Experiment with fills, strokes, and gradients.**
 
@@ -338,7 +339,7 @@ In this section, we'll delve deeper into some of the major applications offered 
 <td>InDesign offers tools for creating and formatting text, inserting and manipulating graphics, and setting up page layouts. Key features include Master Pages, Text and Graphic Frames, and the Swatches panel.</td></tr>
 </table>
 
-![01-adobe_indesign_app.png](../assets/images/01-adobe_indesign_app.png)
+![01-adobe_indesign_app.png]({{ images_path }}/01-adobe_indesign_app.png)
 
 <span style="color: #009800;font-weight: 600;"> Practical Exercise: </span> **Create a new document and set up a simple two-page spread with text and images.**
 
@@ -357,7 +358,7 @@ In this section, we'll delve deeper into some of the major applications offered 
 <td>After Effects provides tools for creating and animating visual elements. Key features include layers, keyframes, masks, effects, and 3D capabilities.</td></tr>
 </table>
 
-![01-adobe_aftereffects_app.png](../assets/images/01-adobe_aftereffects_app.png)
+![01-adobe_aftereffects_app.png]({{ images_path }}/01-adobe_aftereffects_app.png)
 
 <span style="color: #009800;font-weight: 600;"> Practical Exercise: </span> **Create a new composition, add a text layer, and animate the text to fade in and out.**
 
@@ -376,7 +377,7 @@ In this section, we'll delve deeper into some of the major applications offered 
 <td>XD offers tools for designing and prototyping user interfaces. Key features include Artboards, Repeat Grid, Assets panel, and Prototyping.</td></tr>
 </table>
 
-![01-adobe_XD_app.png](../assets/images/01-adobe_XD_app.png)
+![01-adobe_XD_app.png]({{ images_path }}/01-adobe_XD_app.png)
 
 <span style="color: #009800;font-weight: 600;"> Practical Exercise: </span> **Create a new artboard and design a simple mobile app screen.**
 
@@ -395,8 +396,8 @@ In this section, we'll delve deeper into some of the major applications offered 
 <td>Premiere Rush offers tools for cutting clips, adding titles and transitions, and exporting videos. Premiere Pro offers more advanced tools like multi-cam editing, color correction, and audio mixing.</td></tr>
 </table>
 
-![01-adobe_premiererush_app.png](../assets/images/01-adobe_premiererush_app.png)
-![01-adobe_premierepro_app.png](../assets/images/01-adobe_premierepro_app.png)
+![01-adobe_premiererush_app.png]({{ images_path }}/01-adobe_premiererush_app.png)
+![01-adobe_premierepro_app.png]({{ images_path }}/01-adobe_premierepro_app.png)
 
 <span style="color: #009800;font-weight: 600;"> Practical Exercise: </span> **Import a video clip, cut it into sections, rearrange the sections, and add transitions between them.**
 
@@ -415,7 +416,7 @@ In this section, we'll delve deeper into some of the major applications offered 
 <td>Media Encoder provides tools for exporting video projects in different formats. Key features include encoding presets, the ability to queue multiple projects, and integration with Premiere Pro and After Effects.</td></tr>
 </table>
 
-![01-adobe_mediaencoder_app.png](../assets/images/01-adobe_mediaencoder_app.png)
+![01-adobe_mediaencoder_app.png]({{ images_path }}/01-adobe_mediaencoder_app.png)
 
 <span style="color: #009800;font-weight: 600;"> Practical Exercise: </span> **Export a simple video clip in a different format.**
 
@@ -426,7 +427,7 @@ Beyond its robust suite of creative applications, Adobe Creative Cloud also offe
 
 *You can find "Resource links" section in the left panel of the "APPS" tab in your **Creative Cloud Desktop** app.*
 
-![01-adobe_additional_features.png](../assets/images/01-adobe_additional_features.png)
+![01-adobe_additional_features.png]({{ images_path }}/01-adobe_additional_features.png)
 
 ### Cloud Storage and Collaboration
 
@@ -439,22 +440,22 @@ You get up to 100GB of storage with your subscription, and can upgrade to 1TB or
 </span>
 </div><br>
 
-![01-adobe_cloud_storage.png](../assets/images/01-adobe_cloud_storage.png)
+![01-adobe_cloud_storage.png]({{ images_path }}/01-adobe_cloud_storage.png)
 
 Additionally, Adobe Creative Cloud offers powerful <a href="https://www.adobe.com/creativecloud/collaboration.html" target="_blank">Collaboration  ⤴</a> features. You can share files and folders, collaborate on projects, and even comment and annotate directly on shared documents. This facilitates seamless team collaboration, whether your team is in the same office or spread across the globe.
 
-![01-adobe_cloud_collaboration.png](../assets/images/01-adobe_cloud_collaboration.png)
+![01-adobe_cloud_collaboration.png]({{ images_path }}/01-adobe_cloud_collaboration.png)
 
 
 ### Adobe Fonts
 
 <a href="https://fonts.adobe.com/" target="_blank">Adobe Fonts  ⤴</a> is a library of thousands of fonts that Creative Cloud subscribers can access and use in their projects.
 
-![01-adobe_fonts_button.png](../assets/images/01-adobe_fonts_button.png)
+![01-adobe_fonts_button.png]({{ images_path }}/01-adobe_fonts_button.png)
 
 The fonts are easy to browse and can be activated and used in any application with just a click. This eliminates the traditional hassle of font licensing and provides you with a vast range of typefaces to use in your designs.
 
-![01-adobe_fonts_menu.png](../assets/images/01-adobe_fonts_menu.png)
+![01-adobe_fonts_menu.png]({{ images_path }}/01-adobe_fonts_menu.png)
 
 
 ### Adobe Stock
@@ -473,7 +474,7 @@ This includes a vast collection of photos, vectors, illustrations, and more. You
 
 At the top of the Adobe Stock homepage, you'll see a search bar. Here, you can enter keywords related to what you're looking for. These could be specific terms like   `mountain sunset` or more conceptual like `happiness` or `innovation`. Press enter or click on the magnifying glass icon to perform the search.
 
-![01-adobe_stock.png](../assets/images/01-adobe_stock.png)
+![01-adobe_stock.png]({{ images_path }}/01-adobe_stock.png)
 
 **Use filters to refine your results**
 
@@ -484,7 +485,7 @@ After you've entered your search term, you can refine your results using the var
 * **sort by:** *This allows you to sort the search results by relevance, newest, or popularity.*
 * **advanced filters** *Clicking on "View filters" lets you access additional filters, such as color, depth of field, and number of people in an image, among others.*
 
-![01-adobe_stock_filters.png](../assets/images/01-adobe_stock_filters.png)
+![01-adobe_stock_filters.png]({{ images_path }}/01-adobe_stock_filters.png)
 
 When you find an asset you like, click on it for a larger preview. If it fits your needs, click on the `License & Save to` button to license the asset and save it directly to your Creative Cloud Libraries. If the asset is free, it will be downloaded without deducting from your Adobe Stock credits.
 
@@ -500,14 +501,14 @@ Remember, the assets you license are royalty-free, which means you can use them 
 
 <a href="https://www.adobe.com/express/" target="_blank">Adobe Express or Adobe Spark  ⤴</a> is a suite of design tools **for creating social media posts, web pages, and short videos**. Spark Post lets you create stunning graphics, Spark Page helps you craft engaging web stories, and Spark Video enables you to produce compelling animated videos. All in all, Adobe Spark is a powerful tool for quickly creating visually appealing content, no design experience necessary.
 
-![01-adobe_express_spark.png](../assets/images/01-adobe_express_spark.png)
+![01-adobe_express_spark.png]({{ images_path }}/01-adobe_express_spark.png)
 
 
 ### Adobe Portfolio
 
 <a href="https://portfolio.adobe.com/" target="_blank">Adobe Portfolio  ⤴</a> allows you to create a customized online portfolio to showcase your work. You can choose from a range of themes, customize the layout and design, and even use your own domain name. And best of all, it's included in your Creative Cloud subscription. Adobe Portfolio is a great way to showcase your work professionally and attract potential clients or employers.
 
-![01-adobe_portfolio.png](../assets/images/01-adobe_portfolio.png)
+![01-adobe_portfolio.png]({{ images_path }}s/01-adobe_portfolio.png)
 
 
 ### Adobe Behance
@@ -516,7 +517,7 @@ Remember, the assets you license are royalty-free, which means you can use them 
 
 You can access Behance directly from the Creative Cloud Desktop App or by visiting the Behance website.
 
-![01-adobe_behance.png](../assets/images/01-adobe_behance.png)
+![01-adobe_behance.png]({{ images_path }}/01-adobe_behance.png)
 
 
 ## Adobe Tutorials
@@ -539,7 +540,7 @@ When you click on the `Tutorials` link, the Creative Cloud Desktop app will open
 * **App Tab: Learn more** *(click the triple dots icon next to the selected tool)* <br>
 The "Learn more" option in the Creative Cloud Desktop app provides a direct route to learning resources for each Adobe application. By selecting `Learn more` from the "More actions" dropdown, you will be taken to a dedicated page for that application within the Creative Cloud Desktop app. This page provides an overview of the application and offers a variety of educational content, including tutorials and additional resources.
 
-![01-adobe_creative_tutorials.png](../assets/images/01-adobe_creative_tutorials.png)
+![01-adobe_creative_tutorials.png]({{ images_path }}/01-adobe_creative_tutorials.png)
 
 
 **Individual Tool**

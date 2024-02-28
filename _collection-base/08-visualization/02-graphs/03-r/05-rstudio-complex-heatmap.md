@@ -5,7 +5,7 @@ author: Sharu Paul
 author_profile: TRUE
 header:
   overlay_color: "444444"
-  overlay_image: /08-DataVisualization/assets/images/08_data_visualization_banner.png
+  overlay_image: 08-visualization/assets/images/08_data_visualization_banner.png
 type: "tutorial"
 level: 4
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [08. Data Visualization](../../00-DataVisualization-LandingPage.md) / [2. Introduction to Scientific Graphing](../01-introduction-to-scientific-graphing.md) / [2.3 RStudio – Data Processing & Plotting with R](01-graphing-with-rstudio.md) / **Creating Heatmaps in R using ComplexHeatmap**
 
@@ -77,7 +78,7 @@ mat[1:5,1:3] # view selected rows and columns
 # The output is shown below
 ```
 
-![Matrix](assets/01random_matrix.png)
+![Matrix]({{ images_path }}/01random_matrix.png)
 <br>
 
 ## Generate simple heatmap
@@ -87,7 +88,7 @@ This command generates a heatmap with default settings without additional comman
 Heatmap(mat)  # mat is the dataset name loaded earlier as matrix
 ```
 
-![Heatmap1](assets/02Heatmap_1.png)
+![Heatmap1]({{ images_path }}/02Heatmap_1.png)
 <br>
 
 <div style="background: #cff4fc; padding: 15px;">
@@ -117,7 +118,7 @@ col_fun <- colorRamp2(c(18, 20, 23), c("#FFFFB2", "#f4a582", "#BD0026"))
 Heatmap(mat, name = "mat", col = col_fun)
 ```
 
-![Heatmap2](assets/03Heatmap_col.png)
+![Heatmap2]({{ images_path }}/03Heatmap_col.png)
 <br>
 
 ### Draw heatmap with custom labels on legend
@@ -132,7 +133,7 @@ Heatmap(mat,
 # Numbers in parameter at=c() appear on legend unless labels=c() is included.
 ```
 
-![Heatmap3](assets/04Heat_lgd.png)
+![Heatmap3]({{ images_path }}/04Heat_lgd.png)
 <br>
 
 ### Customize legend
@@ -146,7 +147,7 @@ map1 <- Heatmap(mat, heatmap_legend_param = Legend_details)
 draw(map1, heatmap_legend_side = "left")   # Can be “right”, “left”, “bottom”, “top”
 ```
 
-![Legend](assets/05Legend.png)
+![Legend]({{ images_path }}/05Legend.png)
 
 ### Draw independent legend for more flexibility
 Note that this legend is independent of the plot, so you need to select the same colors carefully for representing the corresponding plot. <br>
@@ -161,7 +162,7 @@ lgd = Legend(col_fun = col_fun, title = "Legend title")
 lgd1 = draw(lgd, x= unit(0.9, "npc"), y=unit(0.2, "npc"))
 ```
 
-![Legend1](assets/06Legend1.png)
+![Legend1]({{ images_path }}/06Legend1.png)
 <br>
 The numbers 0.9 and 0.2 in the last line of code represent the position of legend on x and y axis of the entire plot and can be changed according to your need. This gives you more flexibility with the positioning of the legend. <br>
 <br>
@@ -197,7 +198,7 @@ map <- Heatmap(mat, show_heatmap_legend = TRUE, col=col_fun,
 draw(map, align_heatmap_legend = "heatmap_top", merge_legends = TRUE)
 ```
 
-![ComplexHeatmap](assets/07ComplexHeatmap.png)
+![ComplexHeatmap{{ images_path }}/07ComplexHeatmap.png)
 <br>
 
 There are lots of additional features in this package like drawing histograms, boxplots, and violin plots around the heatmap. Check out the complete reference <a href="https://jokergoo.github.io/ComplexHeatmap-reference/book/" target="_blank">documentation ⤴</a> for more information. <br> <br>

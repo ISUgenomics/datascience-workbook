@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /08-DataVisualization/assets/images/08_data_visualization_banner.png
+  overlay_image: 08-visualization/assets/images/08_data_visualization_banner.png
 type: "tutorial"
 level: 2
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [08. Data Visualization](../00-DataVisualization-LandingPage.md) / [1. Introduction to Scientific Graphic Design](01-scientific-graphic-design-intro.md) / **1.1 Raster Graphics Tools**
 
@@ -44,13 +45,13 @@ Here are some notable applications of raster graphics in science:
 
 | Graphics example | Discipline Applications |
 |------------------|-------------------------|
-|<img width="800" src="../assets/images/01-raster_astronomical.jpeg">|**Astronomical Imaging** <br>Raster graphics are extensively used in astronomical imaging to capture and analyze images of celestial objects and phenomena. Raster images help scientists study distant galaxies, star formations, cosmic radiation, and other astronomical events, contributing to our understanding of the universe.|
-|![](../assets/images/01-raster_satelite.png)|**Remote Sensing and GIS** <br>Raster graphics play a crucial role in remote sensing and geographic information systems (GIS). Satellite imagery, aerial photographs, and sensor data are often represented as raster images to analyze land cover, monitor environmental changes, study ecosystems, and aid in urban planning.|
-|![](../assets/images/01-raster_microscopy.jpeg)|**Imaging and Microscopy** <br>Raster graphics are widely employed in medical imaging, microscopy, and other imaging techniques. They are used to represent and analyze detailed images of cells, tissues, and structures, allowing scientists to study biological processes, detect abnormalities, and aid in diagnoses.|
-|![](../assets/images/01-raster_nanomaterials.jpeg)|**Electron Microscopy** <br>In materials science and nanotechnology, raster graphics are utilized in electron microscopy to capture and analyze high-resolution images of materials at the atomic scale. Raster images enable scientists to examine the structural properties, surface morphology, and composition of various materials.|
-|![](../assets/images/01-raster_brain_mri.jpeg)|**Neuroscience Imaging** <br>Raster graphics are instrumental in brain imaging techniques such as functional magnetic resonance imaging (fMRI) and positron emission tomography (PET). Raster images derived from these techniques help scientists map brain activity, study brain connectivity, and investigate neurological disorders.|
-|![](../assets/images/01-raster_molecular.jpeg)|**Computational Simulations** <br>Raster graphics are used to visualize the results of computational simulations and modeling in various scientific fields. Whether it's fluid dynamics, climate modeling, or molecular dynamics, raster images help scientists observe and analyze complex data, facilitating a better understanding of complex systems and phenomena.|
-|![](../assets/images/01-raster_heatmap.jpeg)|**Data Visualization** <br>Raster graphics are essential for visualizing scientific data, particularly when dealing with multidimensional or continuous datasets. Heatmaps, contour plots, and color-coded representations are some common visualization techniques used to represent data in raster format, enabling scientists to identify patterns, trends, and relationships in the data.|
+|<img width="800" src="{{ images_path }}/01-raster_astronomical.jpeg">|**Astronomical Imaging** <br>Raster graphics are extensively used in astronomical imaging to capture and analyze images of celestial objects and phenomena. Raster images help scientists study distant galaxies, star formations, cosmic radiation, and other astronomical events, contributing to our understanding of the universe.|
+|![]({{ images_path }}/01-raster_satelite.png)|**Remote Sensing and GIS** <br>Raster graphics play a crucial role in remote sensing and geographic information systems (GIS). Satellite imagery, aerial photographs, and sensor data are often represented as raster images to analyze land cover, monitor environmental changes, study ecosystems, and aid in urban planning.|
+|![]({{ images_path }}/01-raster_microscopy.jpeg)|**Imaging and Microscopy** <br>Raster graphics are widely employed in medical imaging, microscopy, and other imaging techniques. They are used to represent and analyze detailed images of cells, tissues, and structures, allowing scientists to study biological processes, detect abnormalities, and aid in diagnoses.|
+|![]({{ images_path }}/01-raster_nanomaterials.jpeg)|**Electron Microscopy** <br>In materials science and nanotechnology, raster graphics are utilized in electron microscopy to capture and analyze high-resolution images of materials at the atomic scale. Raster images enable scientists to examine the structural properties, surface morphology, and composition of various materials.|
+|![]({{ images_path }}/01-raster_brain_mri.jpeg)|**Neuroscience Imaging** <br>Raster graphics are instrumental in brain imaging techniques such as functional magnetic resonance imaging (fMRI) and positron emission tomography (PET). Raster images derived from these techniques help scientists map brain activity, study brain connectivity, and investigate neurological disorders.|
+|![]({{ images_path }}/01-raster_molecular.jpeg)|**Computational Simulations** <br>Raster graphics are used to visualize the results of computational simulations and modeling in various scientific fields. Whether it's fluid dynamics, climate modeling, or molecular dynamics, raster images help scientists observe and analyze complex data, facilitating a better understanding of complex systems and phenomena.|
+|![]({{ images_path }}/01-raster_heatmap.jpeg)|**Data Visualization** <br>Raster graphics are essential for visualizing scientific data, particularly when dealing with multidimensional or continuous datasets. Heatmaps, contour plots, and color-coded representations are some common visualization techniques used to represent data in raster format, enabling scientists to identify patterns, trends, and relationships in the data.|
 
 
 ### Applications of editing raster graphics
@@ -150,7 +151,7 @@ Here's a table summarizing the features of selected raster graphics tools:
 
 <a href="https://www.gimp.org/" target="_blank">GIMP  ⤴</a> is a powerful and versatile raster graphic editing software. GIMP is widely recognized as a popular **free and open-source** alternative to commercial software like Adobe Photoshop, providing a comprehensive set of tools for both casual users and professionals.
 
-![01-raster_gimp_start.png](../assets/images/01-raster_gimp_start.png)
+![01-raster_gimp_start.png]({{ images_path }}/01-raster_gimp_start.png)
 
 ## Features summary
 
@@ -201,7 +202,7 @@ Additionally, there are numerous online tutorials, forums, and resources availab
 
 Download GIMP from the <a href="https://www.gimp.org/downloads/" target="_blank">official website  ⤴</a> based on your operating system.
 
-![01-raster_gimp_download.png](../assets/images/01-raster_gimp_download.png)
+![01-raster_gimp_download.png]({{ images_path }}/01-raster_gimp_download.png)
 
 On the same page, below the download buttons, are the detailed installation instructions - follow them to get GIMP on your local computing machine.
 
@@ -240,7 +241,7 @@ or
 2. Navigate to the location where your image is saved and select it.
 3. Click on the `Open` button to load the image into GIMP.
 
-![01-raster_gimp_open.png](../assets/images/01-raster_gimp_open.png)
+![01-raster_gimp_open.png]({{ images_path }}/01-raster_gimp_open.png)
 
 ## Image Manipulation
 
@@ -248,7 +249,7 @@ or
 
 Select the **Text Tool** from the toolbox or press `T`. Click on the image and start typing to add text. Customize font, size, color, and alignment using the tool options.
 
-![01-raster_gimp_text.png](../assets/images/01-raster_gimp_text.png)
+![01-raster_gimp_text.png]({{ images_path }}/01-raster_gimp_text.png)
 
 When adding text in GIMP, it automatically creates a new layer on the image, allowing the text to be moved or edited later if needed.
 
@@ -256,21 +257,21 @@ When adding text in GIMP, it automatically creates a new layer on the image, all
 
 Select the **Crop Tool** from the toolbox on the left or press `Shift+C`. Click and drag to define the area you want to keep, and press `Enter` to crop the image.
 
-![01-raster_gimp_crop.png](../assets/images/01-raster_gimp_crop.png)
+![01-raster_gimp_crop.png]({{ images_path }}/01-raster_gimp_crop.png)
 
 ### Resizing
 
 Go to **Image** tab in the menu bar, select `Scale Image` or right-click on the image to display the context menu, then select `Image -> Scale Image`. Specify the desired width and height in selected units *(e.g., pixels, inches, percentage)* and decide to keep proportion of the dimensions. Click `Scale` to resize the image.
 
-![01-raster_gimp_resize1.png](../assets/images/01-raster_gimp_resize1.png)
+![01-raster_gimp_resize1.png]({{ images_path }}/01-raster_gimp_resize1.png)
 
-![01-raster_gimp_resize2.png](../assets/images/01-raster_gimp_resize2.png)
+![01-raster_gimp_resize2.png]({{ images_path }}s/01-raster_gimp_resize2.png)
 
 ### Rotating
 
 Select the **Rotate Tool** from the toolbox or press `Shift+R`. Click and drag to rotate the image. Use the `Angle` input in the tool options to set the desired rotation angle. Click `Rotate` to approve the rotation.
 
-![01-raster_gimp_rotate.png](../assets/images/01-raster_gimp_rotate.png)
+![01-raster_gimp_rotate.png]({{ images_path }}/01-raster_gimp_rotate.png)
 
 ### Adjusting Colors
 
@@ -290,11 +291,11 @@ Keep caution when editing layers in GIMP and ensure the correct layer is selecte
 </span>
 </div><br>
 
-![01-raster_gimp_colors1.png](../assets/images/01-raster_gimp_colors1.png)
+![01-raster_gimp_colors1.png]({{ images_path }}/01-raster_gimp_colors1.png)
 
 In the pop-up window adjust values of the parameters and click `OK` to approve.
 
-![01-raster_gimp_colors2.png](../assets/images/01-raster_gimp_colors2.png)
+![01-raster_gimp_colors2.png]({{ images_path }}/01-raster_gimp_colors2.png)
 
 
 ## Layers and Effects
@@ -303,21 +304,21 @@ In the pop-up window adjust values of the parameters and click `OK` to approve.
 
 Go to `Windows` in the menu bar and select `Dockable Dialogs` followed by `Layers`. The Layers dialog will appear. Click on the `New Layer` button at the bottom to add a new layer.
 
-![01-raster_gimp_layer.png](../assets/images/01-raster_gimp_layer.png)
+![01-raster_gimp_layer.png]({{ images_path }}/01-raster_gimp_layer.png)
 
 Experiment with different `New Layer` options, including blending modes and opacity settings. You can also modify a new layer with using various toolbox options, e.g., you can use the `Bucket fill tool` to change a color of the background. Finally, arrange the stack of all layers to achieve desired transparency effects.
 
-![01-raster_gimp_layer2.png](../assets/images/01-raster_gimp_layer2.png)
+![01-raster_gimp_layer2.png]({{ images_path }}/01-raster_gimp_layer2.png)
 
 ### Filters
 
 Go to `Filters` in the top menu bar and explore various filter categories like `Blur`, `Light and Shadow`, or `Artistic` to apply effects to your image.
 
-![01-raster_gimp_filers.png](../assets/images/01-raster_gimp_filters.png)
+![01-raster_gimp_filers.png]({{ images_path }}/01-raster_gimp_filters.png)
 
 For example, experiment with different `Light and Shadow` filters such as `Lighting Effects` or `Long Shadow` and adjust their settings to achieve desired results.
 
-![01-raster_gimp_shadow.png](../assets/images/01-raster_gimp_shadow.png)
+![01-raster_gimp_shadow.png]({{ images_path }}/01-raster_gimp_shadow.png)
 
 ## Saving and Exporting
 

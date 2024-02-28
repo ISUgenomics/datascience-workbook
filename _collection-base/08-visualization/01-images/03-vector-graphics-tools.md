@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /08-DataVisualization/assets/images/08_data_visualization_banner.png
+  overlay_image: 08-visualization/assets/images/08_data_visualization_banner.png
 type: "tutorial"
 level: 2
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [08. Data Visualization](../00-DataVisualization-LandingPage.md) / [1. Introduction to Scientific Graphic Design](01-scientific-graphic-design-intro.md) / **1.2 Vector Graphics Tools**
 
@@ -41,12 +42,12 @@ Here are some notable applications of vector graphics in science:
 
 | Graphics example | Scope of Applications |
 |------------------|-------------------------|
-|<img width="800" src="../assets/images/01-vector_illustration.png">|**Scientific Illustration** <br>Vector graphics are widely used in scientific illustration to create accurate and visually appealing representations of biological organisms, anatomical structures, geological formations, and more. The scalability and precise editing capabilities of vector graphics make them ideal for illustrating complex scientific concepts.|
-|![](../assets/images/01-vector_diagram.png)|**Data Visualization** <br>Vector graphics are employed in data visualization to present scientific data in a visually engaging and informative manner. Charts, graphs, and diagrams created with vector graphics tools help researchers and scientists communicate their findings effectively, allowing for easy understanding and analysis of complex datasets.|
-|![](../assets/images/01-vector_molecular.png)|**Molecular Modeling** <br>Vector graphics find applications in molecular modeling by creating 3D representations of molecules and protein structures. Vector-based software allows scientists to manipulate and study these structures, highlighting specific regions and interactions, aiding in drug discovery, and understanding molecular behavior.|
-|![](../assets/images/01-vector_physics.png)|**Physics Simulations** <br>Vector graphics play a role in visualizing and simulating physical phenomena. Using vector graphics, scientists can create interactive simulations and models of particle interactions, gravitational forces, electromagnetic fields, and more.|
-|![](../assets/images/01-vector_maps.png)|**Geographic Information Systems (GIS)** <br>GIS platforms utilize vector graphics to represent geographic features such as maps, roads, boundaries, and terrain. The scalability and editability of vector graphics are valuable in GIS applications, allowing for precise rendering and analysis of spatial data, supporting environmental research, urban planning, and geological studies.|
-|![](../assets/images/01-vector_blueprint.png)|**Engineering Design** <br>Vector graphics tools are utilized in engineering design for creating technical drawings, schematics, and blueprints. Engineers can accurately represent intricate mechanical components, architectural structures, circuit diagrams, and other engineering designs. The scalability and precision of vector graphics support effective communication and collaboration within the engineering field.|
+|<img width="800" src="{{ images_path }}/01-vector_illustration.png">|**Scientific Illustration** <br>Vector graphics are widely used in scientific illustration to create accurate and visually appealing representations of biological organisms, anatomical structures, geological formations, and more. The scalability and precise editing capabilities of vector graphics make them ideal for illustrating complex scientific concepts.|
+|![]({{ images_path }}/01-vector_diagram.png)|**Data Visualization** <br>Vector graphics are employed in data visualization to present scientific data in a visually engaging and informative manner. Charts, graphs, and diagrams created with vector graphics tools help researchers and scientists communicate their findings effectively, allowing for easy understanding and analysis of complex datasets.|
+|![]({{ images_path }}/01-vector_molecular.png)|**Molecular Modeling** <br>Vector graphics find applications in molecular modeling by creating 3D representations of molecules and protein structures. Vector-based software allows scientists to manipulate and study these structures, highlighting specific regions and interactions, aiding in drug discovery, and understanding molecular behavior.|
+|![]({{ images_path }}/01-vector_physics.png)|**Physics Simulations** <br>Vector graphics play a role in visualizing and simulating physical phenomena. Using vector graphics, scientists can create interactive simulations and models of particle interactions, gravitational forces, electromagnetic fields, and more.|
+|![]({{ images_path }}/01-vector_maps.png)|**Geographic Information Systems (GIS)** <br>GIS platforms utilize vector graphics to represent geographic features such as maps, roads, boundaries, and terrain. The scalability and editability of vector graphics are valuable in GIS applications, allowing for precise rendering and analysis of spatial data, supporting environmental research, urban planning, and geological studies.|
+|![]({{ images_path }}/01-vector_blueprint.png)|**Engineering Design** <br>Vector graphics tools are utilized in engineering design for creating technical drawings, schematics, and blueprints. Engineers can accurately represent intricate mechanical components, architectural structures, circuit diagrams, and other engineering designs. The scalability and precision of vector graphics support effective communication and collaboration within the engineering field.|
 
 
 ### Applications of editing vector graphics
@@ -158,7 +159,7 @@ Each of these vector graphics tools offers unique features and strengths, cateri
 
 <a href="https://inkscape.org/" target="_blank">Inkscape  ⤴</a> is a powerful vector graphics tool that offers a **wide range of features for creating scalable and precise artwork**. Its advantages lie in its ability to produce high-quality vector graphics, support for a variety of file formats, and its **free and open-source** nature, allowing for a vibrant community and continuous development.
 
-![01-vector_inkscape_start.png](../assets/images/01-vector_inkscape_start.png)
+![01-vector_inkscape_start.png]({{ images_path }}/01-vector_inkscape_start.png)
 
 
 ## Features summary
@@ -212,7 +213,7 @@ Download INKSCAPE from the <a href="https://inkscape.org/release/" target="_blan
 2. Select the correct architecture of your OS *(if needed)*
 3. Click on the `Download` button
 
-![01-vector_inkscape_download.png](../assets/images/01-vector_inkscape_download.png)
+![01-vector_inkscape_download.png]({{ images_path }}/01-vector_inkscape_download.png)
 
 **Run the installer:**
 1. Locate the downloaded Inkscape installer file (usually a .exe file on Windows and .dmg file on MacOS) and `double-click` on it to run the installer.
@@ -270,7 +271,7 @@ In this section, we will cover the basic steps to get started with Inkscape, inc
 **1. [Launch Inkscape](#launch-inkscape-to-start-the-gui) on your computer** <br>
 <i>When you launch Inkscape, a new document is automatically created and ready for you to start working on it. This default behavior ensures that you can dive right into your creative process without any additional steps.</i>
 
-![01-vector_inkscape_doc.png](../assets/images/01-vector_inkscape_doc.png)
+![01-vector_inkscape_doc.png]({{ images_path }}/01-vector_inkscape_doc.png)
 
 The new document comes with a blank canvas where you can draw, design, and create your vector graphics. From the moment you open Inkscape, you have a fresh workspace to unleash your creativity and bring your ideas to life.
 
@@ -279,7 +280,7 @@ If you have existing artwork in your default Inkscape document and you want to s
 
 * Click on `File` in the menu bar and select `New` or use the keyboard shortcut `Ctrl+N` *(`Cmd+N` on macOS)* to create a new document.
 
-![01-vector_inkscape_new_doc.png](../assets/images/01-vector_inkscape_new_doc.png)
+![01-vector_inkscape_new_doc.png]({{ images_path }}/01-vector_inkscape_new_doc.png)
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
@@ -296,7 +297,7 @@ To change the document properties in Inkscape, you can follow these steps:
 **1.** Go to the `File` menu in the menu bar and select `Document Properties`. <br>
 **2.** The `Document Properties` dialog box will open, displaying several tabs with different settings.
 
-![01-vector_inkscape_doc_properties.png](../assets/images/01-vector_inkscape_doc_properties.png)
+![01-vector_inkscape_doc_properties.png]({{ images_path }}/01-vector_inkscape_doc_properties.png)
 
 `Page tab` <br>
 In the **Page** tab, you can adjust the **width and height** of the document by entering new values. In the `Custom Size` section, you can set a **custom size for the document** by entering your desired dimensions. You can also choose a different measurement unit *(e.g., pixels, inches, millimeters)* from the dropdown menu. If needed, you can change the **document orientation** from portrait to landscape or vice versa using the "Orientation" option.
@@ -331,7 +332,7 @@ The **Metadata** tab allows you to add descriptive information and metadata to y
 
 Once you have created a new document, you will see the Inkscape interface. The main window consists of the canvas where you create and edit your artwork. Surrounding the canvas, you will find various panels, toolbars, and menus that provide access to different functions and tools.
 
-![01-vector_inkscape_interface.png](../assets/images/01-vector_inkscape_interface.png)
+![01-vector_inkscape_interface.png]({{ images_path }}/01-vector_inkscape_interface.png)
 
 Within the Canvas layout you can distinguish the `Page` and `Drawing` sections:
 * the **Drawing mode** represents the entire canvas or document properties, it scales up when you zoom out and gives you more working space *(e.g., to store temporary objects)*
@@ -344,7 +345,7 @@ Understanding these modes helps you navigate and work effectively in Inkscape, e
 
 Inkscape's interface surrounds the canvas with a range of panels, toolbars, and menus, offering a comprehensive array of functions and tools at your fingertips. These elements provide seamless access to a wide range of features, enabling you to efficiently navigate through different tasks and workflows while working on your vector graphics projects.
 
-![01-vector_inkscape_panels.png](../assets/images/01-vector_inkscape_panels.png)
+![01-vector_inkscape_panels.png]({{ images_path }}/01-vector_inkscape_panels.png)
 
 **PANELS** <br>
 Inkscape offers several panels that provide access to tools, settings, and information. Common panels include:
@@ -417,7 +418,7 @@ Inkscape provides a variety of **shape tools** located in the left toolbar. Thes
 
 * Select the desired shape tool and `click and drag` on the canvas to create the shape. Holding the `Ctrl` key while dragging helps maintain proportions.
 
-<p align="center"><img width="850" src="../assets/images/01-vector_inkscape_shapes.gif"></p>
+<p align="center"><img width="850" src="{{ images_path }}/01-vector_inkscape_shapes.gif"></p>
 
 **Modifying Shapes using the Selection and Color Tools**
 
@@ -428,7 +429,7 @@ The `Selection` tool (arrow icon) allows you to select and manipulate individual
 * Click on the selected shape again to change handles to rotation mode and rotate the object.
 * Apply selected fill color by using the color palette available in the `Color Toolbar` at the bottom.
 
-<p align="center"><img width="850" src="../assets/images/01-vector_inkscape_colors.gif"></p>
+<p align="center"><img width="850" src="{{ images_path }}/01-vector_inkscape_colors.gif"></p>
 
 ### Editing paths and anchor points
 
@@ -438,7 +439,7 @@ The `Node` tool (icon just below the Selection) lets you edit the shape's nodes 
   * to refine the shape's outline, e.g., to round the corners of the rectangle
   * to change the shape's size
 
-<p align="center"><img width="850" src="../assets/images/01-vector_inkscape_edit_path.gif"></p>
+<p align="center"><img width="850" src="{{ images_path }}s/01-vector_inkscape_edit_path.gif"></p>
 
 
 ### Distributing objects
@@ -449,7 +450,7 @@ In the `Align and Distribute` panel, you can align objects horizontally or verti
 
 Adjusting the stacking order through `raising` and `lowering` objects allows you to control which objects appear in front or behind others, providing depth and visual hierarchy to your designs.
 
-![01-vector_inkscape_distribute.png](../assets/images/01-vector_inkscape_distribute.png)
+![01-vector_inkscape_distribute.png]({{ images_path }}/01-vector_inkscape_distribute.png)
 
 **Aligning Objects:** <br>
 Aligning objects allows you to position them relative to each other with precision.
@@ -466,7 +467,7 @@ The stacking order of objects determines which objects appear in front or behind
 * To adjust the stacking order, select the object you want to move and go to **Object** tab in the top menu bar, then navigate to `Raise` or `Lower` options. **Raise** moves the selected object one level higher in the stacking order, while **Lower** moves it one level lower.
 * Alternatively, you can `right-click` on an object, hover over `Stack` toolbar buttons (at the top), and choose options to raise, lower, bring to front, or send to back.
 
-<p align="center"><img width="850" src="../assets/images/01-vector_inkscape_distribute.gif"></p>
+<p align="center"><img width="850" src="{{ images_path }}/01-vector_inkscape_distribute.gif"></p>
 
 
 ### Applying colors and gradients
@@ -484,7 +485,7 @@ The `Fill and Stroke` panel in Inkscape offers comprehensive control over the co
   * In the **Stroke** tab, you can set the stroke color, modify stroke width, apply different stroke styles, such as dashes, and control stroke opacity.
   * The `Stroke Style` tab provides additional options to customize the appearance and behavior of the stroke applied to objects, such as stroke width, line style, join (corner style), cap (stroke endings style), and more.
 
-<p align="center"><img width="850" src="../assets/images/01-vector_inkscape_fill_colors.gif"></p>
+<p align="center"><img width="850" src="{{ images_path }}/01-vector_inkscape_fill_colors.gif"></p>
 
 
 ## Working with Text
