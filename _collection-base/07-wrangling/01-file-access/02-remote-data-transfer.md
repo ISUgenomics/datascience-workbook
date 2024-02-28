@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /07-DataParsing/assets/images/07_data_acquisition_banner.png
+  overlay_image: 07-wrangling/assets/images/07_data_acquisition_banner.png
 type: "intro"
 level: 2
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [07. Data Acquisition and Wrangling](../00-DataParsing-LandingPage.md) / [1. Remote Data Access](01-remote-data-access.md) / **1.1 Remote Data Transfer**
 
@@ -169,7 +170,7 @@ There are several popular FTP clients available, including:
 * <a href="https://" target="_blank">Cyberduck  ⤴</a>, a libre server and cloud storage browser for **Mac and Windows** with support for FTP, SFTP, and some cloud-based file transfer protocols
 * <a href="https://" target="_blank">WinSCP  ⤴</a>, a popular FTP client for **Microsoft Windows** supporting FTP, FTPS, SFTP, and some cloud-based file transfer protocols
 
-![01-download_ftp_client.png](../assets/images/01-download_ftp_client.png)
+![01-download_ftp_client.png]({{ images_path }}/01-download_ftp_client.png)
 
 **2.** Once you have an FTP client installed, you can use it to **connect to the server hosting the files** you want to download. <br>
 <i>To establish a connection, you will need to <b>enter the hostname or IP address of the server, as well as your login credentials</b>, such as your username and password.</i>

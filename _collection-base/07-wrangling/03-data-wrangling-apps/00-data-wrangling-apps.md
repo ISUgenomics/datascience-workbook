@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /07-DataParsing/assets/images/07_data_acquisition_banner.png
+  overlay_image: 07-wrangling/assets/images/07_data_acquisition_banner.png
 type: "tutorial"
 level: 1
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [07. Data Acquisition and Wrangling](../00-DataParsing-LandingPage.md) / **3. Data Wrangling: ready-made apps**
 
@@ -94,7 +95,7 @@ conda info
 
 If the screen displays a message similar to the one in the image below, you are ready to create a new environment.
 
-![Conda info](../assets/images/03-conda_info.png)
+![Conda info]({{ images_path }}/03-conda_info.png)
 
 Otherwise, if a `command not found` error is thrown back, follow the instructions in the [previous paragraph](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/00-data-wrangling-apps#environment-setup) to install Conda correctly.
 
@@ -114,7 +115,7 @@ You do NOT need to create the new environment each time you want to use it with 
 conda info -e
 ```
 
-![Conda envs](../assets/images/03-conda_envs.png)
+![Conda envs]({{ images_path }}/03-conda_envs.png)
 
 The selected environment can be activated when you need it with the `conda activate` command, followed by the name of the env:
 
@@ -122,7 +123,7 @@ The selected environment can be activated when you need it with the `conda activ
 conda activate data_wrangling
 ```
 
-![Conda activate](../assets/images/03-conda_activate.png)
+![Conda activate]({{ images_path }}/03-conda_activate.png)
 
 *Once the environment is active, you can see its name preceding the prompt.*
 

@@ -5,7 +5,7 @@ author: Andrew Severin
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /07-DataParsing/assets/images/07_data_acquisition_banner.png
+  overlay_image: 07-wrangling/assets/images/07_data_acquisition_banner.png
 type: "tutorial"
 level: 3
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [07. Data Acquisition and Wrangling](../../00-DataParsing-LandingPage.md) / [2. Data Manipulation](../01-data-manipulation.md) / [2.1 Manipulating Excel Data Sheets](01-manipulate-excel-sheets.md) / **2.1.4 Merge Two Spreadsheets using a Common Column**
 
@@ -29,12 +30,12 @@ Typically, users will have something like this:
 
  __Sheet1__ : _list of gene ids with differential gene expression results_
 
-<img src="../../assets/images/Fig1_sheet1.png" width="1030" height="426" alt="Sheet1"  />
+<img src="{{ images_path }}/Fig1_sheet1.png" width="1030" height="426" alt="Sheet1"  />
 
 
  __Sheet2__: _list of gene ids with its annotation information_
 
-<img src="../../assets/images/Fig2_sheet2.png" width="981" height="467" alt="Sheet2"  />
+<img src="{{ images_path }}/Fig2_sheet2.png" width="981" height="467" alt="Sheet2"  />
 
 Now, to add `GeneID` and `GeneName` information for the __Sheet1__ using the information from __Sheet2__ using `Ensembl Gene ID` as the common field/column, we can use the `VLOOKUP` function.
 
@@ -54,13 +55,13 @@ The compelte formula looks like this:
 =VLOOKUP(A2,Sheet2!$A$2:$C$49672,2,FALSE)
 ```
 
-<img src="../../assets/images/Fig3_Formula.png" width="1030" height="166" alt="formula for geneid"  />
+<img src="{{ images_path }}/Fig3_Formula.png" width="1030" height="166" alt="formula for geneid"  />
 
 Note the `$` for both rows and columns of the table array, this prevetns the excel from incrementing when the formula is dragged to other cells. This is because we want to keep out `table_array` fixed, regardless where we use the formula in the __Sheet1__
 
 Next, we need to drag this formula down using the `+` sign that appears on the lower right of the cell containing formula. You can also double click on it to automatically fill the formula for you. It should correctly fill in the GeneID column for you.
 
-<img src="../../assets/images/Fig4_drag1.png" width="902" height="466" alt="click and drag"  />
+<img src="{{ images_path }}/Fig4_drag1.png" width="902" height="466" alt="click and drag"  />
 
 For filling out the `GeneName` follow the same steps, but instead of using `col_index_num` value of `2`, we will use `3` which is for `Description` in the __Sheet2__
 
@@ -68,11 +69,11 @@ For filling out the `GeneName` follow the same steps, but instead of using `col_
 =VLOOKUP(A2,Sheet2!$A$2:$C$49672,3,FALSE)
 ```
 
-<img src="../../assets/images/Fig5_formla2.png" width="1158" height="167" alt="formula for function"  />
+<img src="{{ images_path }}/Fig5_formla2.png" width="1158" height="167" alt="formula for function"  />
 
 Again, click and drag or double click the `+` sign that appears on the lower right of the cell to fill all other cells in that column.
 
-<img src="../../assets/images/Fig7_merged.png" width="1286" height="467" alt="merged spreadsheet"  />
+<img src="{{ images_path }}/Fig7_merged.png" width="1286" height="467" alt="merged spreadsheet"  />
 
 You should now have the complete table with both functions and gene names, now!
 

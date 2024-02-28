@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /07-DataParsing/assets/images/07_data_acquisition_banner.png
+  overlay_image: 07-wrangling/assets/images/07_data_acquisition_banner.png
 type: "tutorial"
 level: 3
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [07. Data Acquisition and Wrangling](../00-DataParsing-LandingPage.md) / [1. Remote Data Access](01-remote-data-access.md) / [1.2 Remote Data Download](03-0-remote-data-download.md) / **1.2.3 Downloading Online GitHub Repos using GIT**
 
@@ -67,7 +68,7 @@ First, make sure you have Git installed on your computer. The easiest way is to 
 git --version
 ```
 
-![01-git_download_version.png](../assets/images/01-git_download_version.png)
+![01-git_download_version.png]({{ images_path }}/01-git_download_version.png)
 
 **If you see a similar output on the screen, you have already everything you need. Skip to step [2. Clone the repository](#2-clone-the-repository).**
 
@@ -166,18 +167,18 @@ For example, let's clone the Git repository hosted at <a href="https://github.co
 
 Open any web browser and navigate to <a href="https://github.com" target="_blank">https://github.com  ⤴</a>.
 
-![01-github_website.png](../assets/images/01-github_website.png)
+![01-github_website.png]({{ images_path }}/01-github_website.png)
 
 Use the searching key `ISUgenomics/data_wrangling` in the upper right corner to find a **data_wrangling** repository.
 
-![01-github_website.png](../assets/images/01-github_website_search.png)
+![01-github_website.png]({{ images_path }}/01-github_website_search.png)
 
 When you land on the target repository page, you can:
 * copy the URL from the browser address box on the top of the page
 or
 * click on the green `code` button. This will display the dialog box from which you can also copy the correct URL for the repo.
 
-![01-github_website.png](../assets/images/01-github_website_clone.png)
+![01-github_website.png]({{ images_path }}/01-github_website_clone.png)
 
 Open your terminal or command prompt and navigate to the directory where you want to store the repository. Then, run the `git clone` command followed by the copied URL:
 
@@ -185,7 +186,7 @@ Open your terminal or command prompt and navigate to the directory where you wan
 git clone https://github.com/ISUgenomics/data_wrangling.git
 ```
 
-![01-git_download_repo.png](../assets/images/01-git_download_repo.png)
+![01-git_download_repo.png]({{ images_path }}/01-git_download_repo.png)
 
 After the repository is cloned, check it. Navigate into the repository's directory using `cd` command:
 
@@ -193,7 +194,7 @@ After the repository is cloned, check it. Navigate into the repository's directo
 cd data_wrangling
 ```
 
-![01-git_download_repo_content.png](../assets/images/01-git_download_repo_content.png)
+![01-git_download_repo_content.png]({{ images_path }}/01-git_download_repo_content.png)
 
 **That's it!** You now have a local copy of the remote repository and can start using it (e.g., analyzing data, running software, reading docs). If you are planning to become a contributor to the repository, start making changes, committing your work, and pushing your changes back to the remote server.
 
@@ -201,7 +202,7 @@ For example, you can run:
 * `git log` to see a list of all the commits made to the repository
 * `git status` to see a list of local changes which are not yet sent to the online repository
 
-![01-git_download_repo_status.png](../assets/images/01-git_download_repo_status.png)
+![01-git_download_repo_status.png]({{ images_path }}/01-git_download_repo_status.png)
 
 Also, you can also use the `git status` command to check the current branch, as it will show you the branch you are currently on in the output.
 

@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /07-DataParsing/assets/images/07_data_acquisition_banner.png
+  overlay_image: 07-wrangling/assets/images/07_data_acquisition_banner.png
 type: "tutorial"
 level: 3
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [07. Data Acquisition and Wrangling](../00-DataParsing-LandingPage.md) / [1. Remote Data Access](01-remote-data-access.md) / [1.3 Remote Data Preview without Downloading](04-0-remote-data-preview.md) / **1.3.3 Viewing graphics in a terminal as the text-based ASCII art**
 
@@ -72,7 +73,7 @@ Another approach is to use command line tools to **convert the graphic files int
 
 One technique is **converting graphics to ASCII art** displayed directly in the terminal. Converting graphics to ASCII art in the terminal can be a useful technique when working on a remote machine, as it allows you to view images without requiring a graphical user interface or transferring the file to your local machine.
 
-![01-remote_preview_ascii_art.png](../assets/images/01-remote_preview_ascii_art.png)<br>
+![01-remote_preview_ascii_art.png]({{ images_path }}/01-remote_preview_ascii_art.png)<br>
 *The figure shows the Linux logo in PNG format (left panel) and two variants of its conversion to ASCII art displayed directly in the terminal window (middle and right panels). The tool used was an ascii-image-converter.*
 
 <div style="background: #dff5b3; padding: 15px;">
@@ -85,7 +86,7 @@ ASCII stands for American Standard Code for Information Interchange, which is a 
 ***How it works?*** <br>
 When <b>converting graphics to text-based ASCII art in the terminal</b>, the image is first divided into small sections called "tiles". Each tile corresponds to a block of text characters in the output ASCII art. The brightness or color of the pixels in each tile is then analyzed, and a character is selected from a predefined set of ASCII characters based on how closely it matches the brightness or color of the tile. This process is repeated for each tile in the image, resulting in a text-based representation of the original image.
 
-![01-remote_preview_ascii_art2.png](../assets/images/01-remote_preview_ascii_art2.png)<br>
+![01-remote_preview_ascii_art2.png]({{ images_path }}/01-remote_preview_ascii_art2.png)<br>
 
 <div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">WARNING:</span>
@@ -148,7 +149,7 @@ ID_LIKE="rhel centos fedora" <br>
 
 You will use this name to find the appropriate category of operating systems at <a href="https://pkgs.org/" target="_blank">pkgs.org  ⤴</a>.
 
-![01-install_custom_software_pkgs.png](../assets/images/01-install_custom_software_pkgs.png)
+![01-install_custom_software_pkgs.png]({{ images_path }}/01-install_custom_software_pkgs.png)
 
 **3.** Check also the operating system architecture for the HPC system:
 ```
@@ -158,13 +159,13 @@ The result should look like `x86_64` *(this case)* or `arch64` or `amd64` or `ar
 
 You will use this info to select the correct variant of the software package.
 
-![01-install_custom_software_pkgs2.png](../assets/images/01-install_custom_software_pkgs2.png)
+![01-install_custom_software_pkgs2.png]({{ images_path }}/01-install_custom_software_pkgs2.png)
 
 **4.** Use the search box located in the top-right corner of the website to find the software package you need, for example `jp2a`.
 
 This will take you to the subpage for the software package in the dedicated configuration. Scroll down to the **Download** section and copy the URL in the `Source Package` category. *As a regular user on the HPC system you can NOT install software using package manager but you can build executables from the source code.*
 
-![01-install_custom_software_pkgs3.png](../assets/images/01-install_custom_software_pkgs3.png)
+![01-install_custom_software_pkgs3.png]({{ images_path }}/01-install_custom_software_pkgs3.png)
 
 **5.** In the command line on the HPC system navigate to the location dedicated to your custom software storage (e.g., `/work/SOFTWARE`) and use the `wget command` to download the source package archive:
 
@@ -270,7 +271,7 @@ Here's an example command to view an image using asciiview:
 ```
 jp2a fancy-cat.jpeg --colors
 ```
-<p align="center"><img width="800" src="../assets/images/01-remote_view_jp2a.png"></p>
+<p align="center"><img width="800" src="{{ images_path }}/01-remote_view_jp2a.png"></p>
 
 If you have <b>imagemagick</b> suite available on your system you can convert other formats to JPEG and stream it for jp2a. You first need to load `imagemagick` module and then use `convert` tool:
 ```
@@ -278,7 +279,7 @@ module load imagemagick
 convert linux-logo.png jpg:- | jp2a -
 ```
 
-<p align="center"><img width="800" src="../assets/images/01-remote_view_jp2a_2.png"></p>
+<p align="center"><img width="800" src="{{ images_path }}/01-remote_view_jp2a_2.png"></p>
 
 
 ## asciiview or aview
@@ -353,7 +354,7 @@ asciiview fancy-cat.jpeg
 ```
 *In this example, fancy-cat.jpeg is the input file. Once you run the command, the image will be displayed in the terminal window as ASCII art that you can adjust in real-time using controls on the keyboard.*
 
-<p align="center"><img width="800" src="../assets/images/01-remote_view_asciiview.gif"></p>
+<p align="center"><img width="800" src="{{ images_path }}/01-remote_view_asciiview.gif"></p>
 
 ## img2txt
 
@@ -423,7 +424,7 @@ img2txt linux-logo.png
 
 *In this example, linux-logo.png and fancy-cat.jpeg are the input files. Once you run the command, the images will be displayed in the terminal window.*
 
-<p align="center"><img width="1200" src="../assets/images/01-remote-view-img2txt.gif"></p>
+<p align="center"><img width="1200" src="{{ images_path }}/01-remote-view-img2txt.gif"></p>
 
 
 ## ascii-image-converter (*recommended*)
@@ -511,7 +512,7 @@ ascii-image-converter linux-logo.png
 
 *In this example, `linux-logo.png` is the input file. The `-C` flag enables colors in the output. There are multiple built-in flags and options to cutomize your ASCII art (see table below).*
 
-![01-remote_view_ascii_std.png](../assets/images/01-remote_view_ascii_std.png)
+![01-remote_view_ascii_std.png]({{ images_path }}/01-remote_view_ascii_std.png)
 
 Commands corresponding to ASCII arts from top-left to right-bottom *(in the figure above)*:
 ```
@@ -572,7 +573,7 @@ print(asciiImg)
 python my_script.py
 ```
 
-<p align="center"><img width="800" src="../assets/images/01-remote_view_ascii_py.png"></p>
+<p align="center"><img width="800" src="{{ images_path }}/01-remote_view_ascii_py.png"></p>
 
 
 The default characters used to create the ASCII art are: `["@", "#", "S", "%", "?", "*", "+", ";", ":", ",", "."]` *(see left panel)*. You can customize the settings by providing the adjusted list in the `chars` variable *(see right panel)*:

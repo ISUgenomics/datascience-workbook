@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /07-DataParsing/assets/images/07_data_acquisition_banner.png
+  overlay_image: 07-wrangling/assets/images/07_data_acquisition_banner.png
 type: "intro"
 level: 2
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [07. Data Acquisition and Wrangling](../../00-DataParsing-LandingPage.md) / [2. Data Manipulation](../01-data-manipulation.md) / **2.1 Manipulating Excel Data Sheets**
 
@@ -36,7 +37,7 @@ A spreadsheet is a software program used to organize and manipulate data in a ta
 
 Spreadsheet software such as **Excel**, **Google Sheets**, and **LibreOffice Calc** offer a graphical interface that allows users to easily work with data and manipulate it using a range of tools and functions. This interface typically includes a grid of cells where data can be entered and edited, as well as menus and toolbars that provide access to various functions and features.
 
-![02_data_manipulation_excel_sheet.png](../../assets/images/02_data_manipulation_excel_sheet.png)
+![02_data_manipulation_excel_sheet.png]({{ images_path }}/02_data_manipulation_excel_sheet.png)
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>

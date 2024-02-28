@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /07-DataParsing/assets/images/07_data_acquisition_banner.png
+  overlay_image: 07-wrangling/assets/images/07_data_acquisition_banner.png
 type: "tutorial"
 level: 3
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [07. Data Acquisition and Wrangling](../00-DataParsing-LandingPage.md) / [1. Remote Data Access](01-remote-data-access.md) / [1.2 Remote Data Download](03-0-remote-data-download.md) / **1.2.2 Downloading Online Data using Web Scraping**
 
@@ -284,7 +285,7 @@ Before starting the web scraping process, the first step is to navigate to the w
 <i>In this case, we first open the BIAPSS web service and navigate to the **Docs** tab available at <a href="https://biapss.chem.iastate.edu/documentation.html" target="_blank">https://biapss.chem.iastate.edu/documentation.html  ⤴</a>. From the menu panel on the left-hand side select **Tools & References** section. Its content appears in the right-hand panel on the page.<br>
 The backend bioinformatics analysis of the web service employed over 20 third-party tools to provide a high-level insights of the phase separation process. Each tool has a short description with a URL to the source page linked to the software name. We can also easily obtain software-related publications in one go.</i>
 
-![01-python_web_scraping.png](../assets/images/01-python_web_scraping.png)
+![01-python_web_scraping.png]({{ images_path }}/01-python_web_scraping.png)
 
 **STEP 2. Use developers tools in your browser to find the HTML component that stores the data**
 
@@ -292,7 +293,7 @@ It's important to carefully browse the website and identify the relevant subpage
 
 <i>In this case, right-click on the link for the example tool (e.g., "PSPredictor") and select <b>Inspect Element</b> from the pop-up dialog box. This will open a separate browser window with the HTML source code of the web page. By default, the code corresponding to the selected text will be highlighted.</i>
 
-![01-python_web_scraping_inspect.png](../assets/images/01-python_web_scraping_inspect.png)
+![01-python_web_scraping_inspect.png]({{ images_path }}/01-python_web_scraping_inspect.png)
 
 **STEP 3. Look for an attribute that is the same for all data elements you want to extract**
 
@@ -300,7 +301,7 @@ You will be lucky if the data you want to retrieve is located in regular HTML el
 
 *In this case, the data we want to derive is located in a regular HTML components `<a>Tool Name</a>` used to hyperlink the text. You can notice several more links tags in between but only software links are preceded by a single `<br>` tag. Such a seemingly small element but distributed regularly increases the technical structure of the code and its identification can significantly facilitate data retrieval. However, it would be even simpler if this group of links had a specific HTML `class` attribute assigned to it.*
 
-![01-python_web_scraping_html.png](../assets/images/01-python_web_scraping_html.png)
+![01-python_web_scraping_html.png]({{ images_path }}/01-python_web_scraping_html.png)
 
 **STEP 4. Since the site can be scraped, create a dedicated script**
 

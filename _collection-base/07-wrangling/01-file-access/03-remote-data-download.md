@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /07-DataParsing/assets/images/07_data_acquisition_banner.png
+  overlay_image: 07-wrangling/assets/images/07_data_acquisition_banner.png
 type: "intro"
 level: 2
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [07. Data Acquisition and Wrangling](../00-DataParsing-LandingPage.md) / [1. Remote Data Access](01-remote-data-access.md) / **1.2 Remote Data Download**
 
@@ -149,7 +150,7 @@ Think of it like sending a letter in the mail. With a regular HTTP request, your
 Web browser extensions and built-in buttons can be used to download data directly from websites. These extensions typically add a `Download` button to the website, which users can click to download the data.
 
 
-![01-download_web_button.png](../assets/images/01-download_web_button.png) <br>
+![01-download_web_button.png]({{ images_path }}/01-download_web_button.png) <br>
 *The figure shows the online interface of the Uniptot Database, accessible at <a href="https://www.uniprot.org" target="_blank">https://www.uniprot.org  ⤴</a>.*
 
 <div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
@@ -174,7 +175,7 @@ Batch download tools are software or command-line programs that automate the pro
 
 The HTTPS interface for file transfer can be accessed through a web browser and allows users to download files from a website securely using the HTTP protocol. Typically, it is a website with a **simplified browser of a file system**. Each file in the file system has an assigned URL link. When a **user clicks on a download link** or button, their browser sends a request to the server over an HTTPS connection, which encrypts the data being transferred. The user can then save the downloaded file to their local device.
 
-![01-download_https.png](../assets/images/01-download_https.png) <br>
+![01-download_https.png]({{ images_path }}/01-download_https.png) <br>
 *The figure shows a simple HTTPS interface of the shareable file system (ftp) of the Uniprot Database, accessible at <a href="https://ftp.uniprot.org/pub/databases/uniprot/" target="_blank">https://ftp.uniprot.org/pub/databases/uniprot/  ⤴</a>.*
 
 This interface is typically used for **downloading voluminous files** that are too large to be sent as email attachments or for **distributing files to a large number of users**. The HTTP(S) protocols are widely supported by web browsers and other HTTP clients, making it an easy and accessible way to distribute files. <br>

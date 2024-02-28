@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /07-DataParsing/assets/images/07_data_acquisition_banner.png
+  overlay_image: 07-wrangling/assets/images/07_data_acquisition_banner.png
 type: "tutorial"
 level: 3
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [07. Data Acquisition and Wrangling](../00-DataParsing-LandingPage.md) / [1. Remote Data Access](01-remote-data-access.md) / [1.2 Remote Data Download](03-0-remote-data-download.md) / **1.2.4 Downloading Single Folder from GitHub using SVN**
 
@@ -100,7 +101,7 @@ cd path/to/destination/location
 **2.** Go to the online repository and find a folder you want to download. Copy the URL from the address bar in the web browser. <br>
 *Let's use the **bin_data** folder in the <a href="https://github.com/ISUgenomics/data_wrangling" target="_blank">https://github.com/ISUgenomics/data_wrangling  ⤴</a>* GitHub repo as an example:
 
-![01-svn_download_repo_folder.png](../assets/images/01-svn_download_repo_folder.png)
+![01-svn_download_repo_folder.png]({{ images_path }}/01-svn_download_repo_folder.png)
 
 **3.** Now, go back to the terminal window to download only the selected folder. First, type `svn export` and paste the copied URL.
 
@@ -173,7 +174,7 @@ If you need to download a single file from the GitHub repository, the simplest s
 
 **2.** Click the file name to open the preview of the GitHub rendering. Then, click the `Raw` button *(top-right corner)* to open the source code of the file.
 
-![01-svn_download_repo_file2.png](../assets/images/01-svn_download_repo_file2.png)
+![01-svn_download_repo_file2.png]({{ images_path }}/01-svn_download_repo_file2.png)
 
 **3.** Copy the URL address of the raw file.
 
@@ -206,7 +207,7 @@ cd path/to/destination/location
 **2.** Go to the online repository, find a file you want to download and click on it to open its preview. Copy the URL from the address bar in the web browser. <br>
 <i>As an example, let's use the **bin_data.py** file located in the <a href="https://github.com/ISUgenomics/data_wrangling/bin_data/app" target="_blank">bin_data/app  ⤴</a> folder of the **data_wrangling** GitHub repo:</i>
 
-![01-svn_download_repo_file.png](../assets/images/01-svn_download_repo_file.png)
+![01-svn_download_repo_file.png]({{ images_path }}/01-svn_download_repo_file.png)
 
 **3.** Now, go back to the terminal window to download only the selected file. First, type `svn export` and paste the copied URL.
 
@@ -276,7 +277,7 @@ If you have one of the browsers: Edge, Opera, Chrome, or Chromium...
 
 **4.** On the left-hand side, you can see the `Explorer` menu. Find the folder and `right-click` on it to display the dialog box. Then click on the `Download` option and select the directory on your file system as a location to save the content.
 
-<p align="center"><img width="800" src="../assets/images/01-github_in-browser_editor.gif"></p>
+<p align="center"><img width="800" src="{{ images_path }}/01-github_in-browser_editor.gif"></p>
 
 
 ## • *Any browser: Safari, Firefox*
@@ -290,7 +291,7 @@ So far, the most robust and easiest way to download a single folder from a GitHu
 
 **3.** On the left-hand side, you can see the **File System** browser. Find the folder and `click` on the **Export to ZIP** option &darr;. This will download the zipped folder automatically and save it in your default location.
 
-<p align="center"><img width="800" src="../assets/images/github_in-browser_editor2.gif"></p>
+<p align="center"><img width="800" src="{{ images_path }}/github_in-browser_editor2.gif"></p>
 
 *To decompress the archive, use `unzip` or `tar -xf` command followed by the name of the downloaded file:*
 ```
@@ -314,7 +315,7 @@ or
 <i>You can then paste the copied contents into any text file.</i>
 
 
-![01-svn_download_repo_file3.png](../assets/images/01-svn_download_repo_file3.png)
+![01-svn_download_repo_file3.png]({{ images_path }}/01-svn_download_repo_file3.png)
 
 ___
 # Further Reading

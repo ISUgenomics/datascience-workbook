@@ -6,7 +6,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /07-DataParsing/assets/images/07_data_acquisition_banner.png
+  overlay_image: 07-wrangling/assets/images/07_data_acquisition_banner.png
 type: "tutorial"
 level: 2
 categories: []
@@ -14,6 +14,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [07. Data Acquisition and Wrangling](../00-DataParsing-LandingPage.md) / [3. Data Wrangling: ready-made apps](00-data-wrangling-apps.md) / **3.1 Merge files by common column (python)**
 
@@ -42,7 +43,7 @@ The <a href="https://github.com/ISUgenomics/data_wrangling/tree/main/merge_data"
 <table style="font-size: 1em;">
   <tr> <th style="width:40%;">Schema</th> <th>Notes</th> </tr>
   <tr> <td>
-        <img src="../assets/images/merge_data.png" alt="Merge data app" width="500"><br>
+        <img src="{{ images_path }}/merge_data.png" alt="Merge data app" width="500"><br>
         <i>The figure shows the algorithm of merging two files by common column.</i>
        </td> <td>
         <li> both files should be a column-like text file (including Excel .xlsx format and CSV separated with different delimiters) </li>
@@ -126,7 +127,7 @@ You do NOT need to create the new environment each time you want to use it. Once
 conda info -e
 ```
 
-![Conda envs](../assets/images/03-conda_envs.png)
+![Conda envs]({{ images_path }}/03-conda_envs.png)
 
 The selected environment can be activated with the `conda activate` command, followed by the name of the env:
 
@@ -134,7 +135,7 @@ The selected environment can be activated with the `conda activate` command, fol
 conda activate data_wrangling
 ```
 
-![Conda activate](../assets/images/03-conda_activate.png)
+![Conda activate]({{ images_path }}/03-conda_activate.png)
 
 *Once the environment is active, you can see its name preceding the prompt.*
 
@@ -178,7 +179,7 @@ strawberry,3/8,0.4
 <a href="https://github.com/ISUgenomics/datascience-workbook/raw/main/07-DataParsing/assets/data/grain_quality/data_CN.xlsx" target="_blank"><input type="button" value="Download ⤵" style="background-color: #e7e7e7; color: black;" /></a>
 <a id="raw-url" href="https://github.com/ISUgenomics/datascience-workbook/blob/main/07-DataParsing/assets/data/grain_quality/data_CN.xlsx" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 
-![02_data_wrangling_merge_1.png](../assets/images/02_data_wrangling_merge_1.png)
+![02_data_wrangling_merge_1.png]({{ images_path }}/02_data_wrangling_merge_1.png)
 
 
 
@@ -190,13 +191,13 @@ The format of the input file does NOT matter as long as it is a columns-like tex
 
 The data delimiter used does NOT matter, as it will be automatically detected by application. However, it is essential that the column separator is consistent, for example, that it is always a fixed number of spaces ` ` &nbsp; only or always a tab, `\t`. If separator is a comma `,` remember NOT to use it inside a given data cell (e.g., if the values in the column are a list).
 
-![Column separator](../assets/images/03-input_separator.png)
+![Column separator]({{ images_path }}/03-input_separator.png)
 
 ## *Column names*
 
 The **header** is usually the first line of the file and contains the column labels. Naming the columns brings great **informational value** to the analyzed data. However, the application does NOT require the input file to have a header. If it is in the file it will be detected automatically. Otherwise, you should use the column indexes to indicate the matching columns and columns to be kept. <span style="color: #ff3870;font-weight: 500;">Remeber that in Python, indexing starts from 0.</span>
 
-![Columns header](../assets/images/03-input_header.png)
+![Columns header]({{ images_path }}/03-input_header.png)
 
 ## *File content*
 
@@ -234,7 +235,7 @@ The `mereg_data` app provides `-c mcols` option which is the required argument f
 -c 0                    # it means that in all inputs, the matching column has index 0 (i.e., it's the first column in the file)
 ```
 
-![02_data_wrangling_merge_2.png](../assets/images/02_data_wrangling_merge_2.png)
+![02_data_wrangling_merge_2.png]({{ images_path }}/02_data_wrangling_merge_2.png)
 
 * if merging files have different data structure, i.e., the matching column has different index, you can specify it as follows:
 
@@ -245,7 +246,7 @@ or
 ```
 -c USDA#,ARS_Label      # specify column labels (headers) of matching columns
 ```
-![02_data_wrangling_merge_3.png](../assets/images/02_data_wrangling_merge_3.png)
+![02_data_wrangling_merge_3.png]({{ images_path }}/02_data_wrangling_merge_3.png)
 
 ## Usage variations
 
@@ -310,7 +311,7 @@ Below is the preview of the required `data` and `labels` input files.
 
 As you can see, the number of rows in the `labels` file is significantly higher than in the `data` files *(marked with the red frames)*.
 
-![02_data_wrangling_merge_4.png](../assets/images/02_data_wrangling_merge_4.png)
+![02_data_wrangling_merge_4.png]({{ images_path }}/02_data_wrangling_merge_4.png)
 
 
 ### *Approach*
@@ -334,7 +335,7 @@ python3 merge_data.py -i data_CN.xlsx,labels.xlsx -c 0,1 -o output_step1 -f 2 -v
 
 OUTPUT: `output_step1.xlsx`
 
-![02_data_wrangling_merge_5.png](../assets/images/02_data_wrangling_merge_5.png)
+![02_data_wrangling_merge_5.png]({{ images_path }}/02_data_wrangling_merge_5.png)
 
 **STEP 2** <br>
 Transfering data from the *data_NN.xlsx* file into the *data_CN.xlsx* file using matching `Sample Num` column (now available in both files).
@@ -345,7 +346,7 @@ python3 merge_data.py -i output_step1.xlsx,data_NN.xlsx -c 11,0 -o output_step2 
 
 OUTPUT: `output_step2.xlsx`
 
-![02_data_wrangling_merge_6.png](../assets/images/02_data_wrangling_merge_6.png)
+![02_data_wrangling_merge_6.png]({{ images_path }}/02_data_wrangling_merge_6.png)
 
 ___
 # Further Reading

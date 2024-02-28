@@ -6,7 +6,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /07-DataParsing/assets/images/07_data_acquisition_banner.png
+  overlay_image: 07-wrangling/assets/images/07_data_acquisition_banner.png
 type: "tutorial"
 level: 2
 categories: []
@@ -14,6 +14,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [07. Data Acquisition and Wrangling](../00-DataParsing-LandingPage.md) / [3. Data Wrangling: ready-made apps](00-data-wrangling-apps.md) / **3.2 Aggregate data over slicing variations (python)**
 
@@ -32,7 +33,7 @@ The <a href="https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data" t
 
 ## Algorithm
 
-![Bin data app](../assets/images/bin_data.png)<br>
+![Bin data app]({{ images_path }}/bin_data.png)<br>
 <i>The figure shows the main steps of the <code>bin_data</code> algorithm.</i><br>
 
 <b>1)</b> The optimal data structure requires:<br>
@@ -142,7 +143,7 @@ You do NOT need to create the new environment each time you want to use it. Once
 conda info -e
 ```
 
-![Conda envs](../assets/images/03-conda_envs.png)
+![Conda envs]({{ images_path }}/03-conda_envs.png)
 
 The selected environment can be activated with the `conda activate` command, followed by the name of the env:
 
@@ -150,7 +151,7 @@ The selected environment can be activated with the `conda activate` command, fol
 conda activate data_wrangling
 ```
 
-![Conda activate](../assets/images/03-conda_activate.png)
+![Conda activate]({{ images_path }}/03-conda_activate.png)
 
 *Once the environment is active, you can see its name preceding the prompt.*
 
@@ -201,7 +202,7 @@ The format of the input file does NOT matter as long as it is a columns-like tex
 
 The data delimiter used does NOT matter, as it will be automatically detected by application. However, it is essential that the column separator is consistent, for example, that it is always a fixed number of spaces ` ` &nbsp; only or always a tab, `\t`. If separator is a comma `,` remember NOT to use it inside a given data cell (e.g., if the values in the column are a list).
 
-![Column separator](../assets/images/03-input_separator.png)
+![Column separator]({{ images_path }}/03-input_separator.png)
 
 <div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">WARNING:</span>
@@ -214,7 +215,7 @@ Note that only data from numeric columns will be aggregated. So, if the values i
 
 The **header** is usually the first line of the file and contains the column labels. Naming the columns brings great **informational value** to the analyzed data. However, the application does NOT require the input file to have a header. If it is in the file it will be detected automatically. Otherwise, the default set of column labels [ *[see options section](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#options)* ] will be assigned.
 
-![Columns header](../assets/images/03-input_header.png)
+![Columns header]({{ images_path }}/03-input_header.png)
 
 ### *File content*
 
@@ -233,7 +234,7 @@ sed "1,$ s/^/value$sep/" < file > input
 ```
 *^ paste your separator within ' ' of the `$sep` variable*
 
-![Input label column](../assets/images/03-input_label-col.png)
+![Input label column]({{ images_path }}/03-input_label-col.png)
 
 * ***input file with header***
 
@@ -243,7 +244,7 @@ sed "1s/^/label$sep/; 2,$ s/^/value$sep/" < file > input
 ```
 *^ paste your separator within ' ' of the `$sep` variable*
 
-![Input label column](../assets/images/03-input_label-col-header.png)
+![Input label column]({{ images_path }}/03-input_label-col-header.png)
 
 ### *• Ranges column*
 
@@ -256,7 +257,7 @@ The application provides the ability to slice data by three different scenarios:
 After data aggregation over <u>each slice</u>, the numerical values from the `ranges-col` [<b>R</b>] will be concatenated to the <u>single value</u> defined as a range `from-to` [<b>R'</b>] (*see figure below*).
 
 <p align="center">
-<img src="../assets/images/03-bin_data-slice_range.png" alt="bin_data app: slice range" width="1000px"><br>
+<img src="{{ images_path }}/03-bin_data-slice_range.png" alt="bin_data app: slice range" width="1000px"><br>
 <i>The figure shows the algorithm of data aggregation over the slice. The detailed description is provided in the next paragraph.</i></p>
 
 **Interpretation of ranges column [R]**
@@ -282,7 +283,7 @@ awk -F$sep -v OFS=$sep 'NR == 1 {print "position", $0; next} {print (NR-1), $0}'
 
 *^ paste your separator within ' ' of the `$sep` variable*
 
-![Add indexing column](../assets/images/03-bin_data-add_indexing.png)
+![Add indexing column]({{ images_path }}/03-bin_data-add_indexing.png)
 
 
 * ***variable row counts per slice*** <br>
@@ -379,7 +380,7 @@ The default outputs, when using a `file` as an input, are:
 * `label_in_chunks.txt`, a file with the statistics from the creation of data chunks
 * `output_data-step_ave.csv`, a CSV file with the data aggregated over slices for all label-based data chunks
 
-![Outputs](../assets/images/03-bin_data-ex1_outputs.png)
+![Outputs]({{ images_path }}/03-bin_data-ex1_outputs.png)
 
 *The figure shows: The left panel is the file structure of the working directory with the analysis outputs. The right panel preview the output file with data aggregated by averaging the data slices.*
 
@@ -400,7 +401,7 @@ Typically the directory type of input will be `-i CHUNKS` as the default output 
 *Directory Preview* of example `CHUNKS` :
 <a id="raw-url" href="https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data/data/CHUNKS" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 
-![Data chunks](../assets/images/03-bin_data-ex1_chunks.png)
+![Data chunks]({{ images_path }}/03-bin_data-ex1_chunks.png)
 
 *The Figure lists label-based data chunks derived from the raw input file. Every file collects data rows for a unique label from the first column.*
 
@@ -419,7 +420,7 @@ python3 bin_data.py -i CHUNKS/ -l 0 -r 1 -t 'bin' -n 100 -o 'output_data-bin_ave
 The default output, when using `dir` as an input, is:
 * `output_data-bin_ave.csv`, a CSV file with the data aggregated over slices for all label-based data chunks
 
-![Outputs](../assets/images/03-bin_data-ex2_outputs.png)
+![Outputs]({{ images_path }}/03-bin_data-ex2_outputs.png)
 
 *The figure shows: The left panel is the file structure of the working directory with the analysis outputs. The right panel previews the output file with data aggregated by averaging the data slices.*
 
@@ -464,7 +465,7 @@ python3 bin_data.py -i ./CHUNKS -l 0 -r 1 -t 'step' -n 100 -c 'sum' -o 'output_d
 The default outputs include:
 * `output_data-step_sum.csv`, a CSV file with the data aggregated over slices for all label-based data chunks
 
-![Outputs](../assets/images/03-bin_data-ex3_outputs.png)
+![Outputs]({{ images_path }}/03-bin_data-ex3_outputs.png)
 
 *The figure shows: The left panel is the file structure of the working directory with the analysis outputs. The right panel preview the output file with data aggregated by summing over the data slice.*
 
@@ -509,7 +510,7 @@ python3 bin_data.py -i input.txt -l 0 -r 1 -t 'bin' -n 100 -c 'sum' -o 'output_d
 The default outputs include:
 * `output_data-bin_sum.csv`, a CSV file with the data aggregated over slices for all label-based data chunks
 
-![Outputs](../assets/images/03-bin_data-ex4_outputs.png)
+![Outputs]({{ images_path }}/03-bin_data-ex4_outputs.png)
 
 *The figure shows: The left panel is the file structure of the working directory with the analysis outputs. The right panel preview the output file with data aggregated by summing over the data slice.*
 
@@ -554,7 +555,7 @@ python3 bin_data.py -i input.txt -l 0 -r 1 -t 'value' -n 100 -c 'sum' -o 'output
 The default outputs include:
 * `output_data-value_sum.csv`, a CSV file with the data aggregated over slices for all label-based data chunks
 
-![Outputs](../assets/images/03-bin_data-ex5_outputs.png)
+![Outputs]({{ images_path }}/03-bin_data-ex5_outputs.png)
 
 *The figure shows: The left panel is the file structure of the working directory with the analysis outputs. The right panel preview the output file with data aggregated by summing over the data slice.*
 
@@ -607,7 +608,7 @@ python3 bin_data.py -i input.txt -l 0 -r 1 -t 'value' -n 100 -c 'ave' -d 3 -o 'o
 The default outputs include:
 * `output_data-value_ave.csv`, a CSV file with the data aggregated over slices for all label-based data chunks
 
-![Outputs](../assets/images/03-bin_data-ex6_outputs.png)
+![Outputs]({{ images_path }}/03-bin_data-ex6_outputs.png)
 
 *The figure shows: The left panel is the file structure of the working directory with the analysis outputs. The right panel preview the output file with data aggregated by averaging the data slice.*
 

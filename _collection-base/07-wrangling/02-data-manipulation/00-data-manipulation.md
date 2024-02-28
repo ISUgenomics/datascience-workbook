@@ -5,7 +5,7 @@ author: Aleksandra Badaczewska
 author_profile: true
 header:
   overlay_color: "444444"
-  overlay_image: /07-DataParsing/assets/images/07_data_acquisition_banner.png
+  overlay_image: 07-wrangling/assets/images/07_data_acquisition_banner.png
 type: "intro"
 level: 1
 categories: []
@@ -13,6 +13,7 @@ tags: []
 ---
 
 {% include toc %}
+{% include images_path %}
 
 [DataScience Workbook](https://datascience.101workbook.org/) / [07. Data Acquisition and Wrangling](../00-DataParsing-LandingPage.md) / **2. Data Manipulation**
 
@@ -37,7 +38,7 @@ There are many tools and techniques available to help researchers effectively ma
   SQL programming language
 </p>
 
-![02_data_manipulation_tools1.png](../assets/images/02_data_manipulation_tools1.png)<br>
+![02_data_manipulation_tools1.png]({{ images_path }}/02_data_manipulation_tools1.png)<br>
 
 
 <p align="center" style="width:49%; display:inline-block;">
@@ -51,7 +52,7 @@ There are many tools and techniques available to help researchers effectively ma
   R programming language
 </p>
 
-![02_data_manipulation_tools2.png](../assets/images/02_data_manipulation_tools2.png)<br>
+![02_data_manipulation_tools2.png]({{ images_path }}/02_data_manipulation_tools2.png)<br>
 
 
 
