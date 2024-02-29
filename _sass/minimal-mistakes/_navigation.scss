@@ -125,9 +125,11 @@
   /* next/previous buttons */
   &--pager {
     display: block;
-    padding: 1em 2em;
+    padding: 1em 1em;
+    margin-right: 5px;
+    font-size: 12px;
     float: left;
-    width: 50%;
+    width: 18%;
     font-family: $sans-serif;
     font-size: $type-size-5;
     font-weight: bold;
@@ -140,7 +142,7 @@
     &:hover {
       @include yiq-contrasted($muted-text-color);
     }
-
+/*
     &:first-child {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
@@ -151,7 +153,7 @@
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
     }
-
+*/
     &.disabled {
       color: rgba($muted-text-color, 0.5);
       pointer-events: none;
