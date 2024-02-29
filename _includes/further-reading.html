@@ -1,0 +1,39 @@
+{% assign content = site['collection-base'] | sort: 'order' %}
+
+<!--- Find the Current Page's Index -->
+{% assign currentIndex = -1 %}
+{% for item in content %}
+  {% if item.url == page.url %}
+    {% assign currentIndex = forloop.index0 | plus: 1 %}
+    {% continue %}
+  {% endif %}
+  {% if currentIndex != -1 and item.url contains 'landing-page' %}
+    {% assign nextIndex = forloop.index0 %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% assign range = nextIndex | minus: currentIndex %}
+{% assign counter = 0 %}
+
+<!--- Create the Links -->
+<div id="further-reading">
+<h2>Further Reading</h2>
+{% for i in (currentIndex..nextIndex) %}
+  {% assign tutorial = content[i] %}
+  {% if tutorial.url contains 'landing-page' %}
+    <br><a href="{{ tutorial.url | relative_url }}" class="no-decoration prefix-{{ tutorial.level }}" style="font-size: 0.8em;">MODULE {{ tutorial.title | default: 'Untitled' }}</a> <i><span style="color: #a9bbd1; font-size: 0.8em;">{{ tutorial.note | default: '' }}</span></i><br>
+  {% elsif range > 10 %}
+    {% if tutorial.level == 1 %}
+      <a href="{{ tutorial.url | relative_url }}" class="no-decoration prefix-{{ tutorial.level }}" style="font-size: 0.8em;">{{ tutorial.title | default: 'Untitled' }}</a> <i><span style="color: #a9bbd1; font-size: 0.8em;">{{ tutorial.note | default: '' }}</span></i><br>
+      {% if forloop.index0 != 0 %}
+        {% assign counter = 1 %}
+      {% endif %}
+    {% elsif counter == 0 %}
+      <a href="{{ tutorial.url | relative_url }}" class="no-decoration prefix-{{ tutorial.level }}" style="font-size: 0.8em;">{{ tutorial.title | default: 'Untitled' }}</a> <i><span style="color: #a9bbd1; font-size: 0.8em;">{{ tutorial.note | default: '' }}</span></i><br>
+    {% endif %}
+  {% else %}
+    <a href="{{ tutorial.url | relative_url }}" class="no-decoration prefix-{{ tutorial.level }}" style="font-size: 0.8em;">{{ tutorial.title | default: 'Untitled' }}</a> <i><span style="color: #a9bbd1; font-size: 0.8em;">{{ tutorial.note | default: '' }}</span></i><br>
+  {% endif %}
+{% endfor %}
+</div>
