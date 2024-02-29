@@ -45,12 +45,12 @@ toc-note {
 }
 .prefix-3::before {content: "⦾ \00a0\00a0\00a0";}
 .prefix-3 {
-  margin-left: 20px;
+  margin-left: 32px;
   color: #3f5a8a;
 }
 .prefix-4::before {content: "⊙ \00a0\00a0\00a0";}
 .prefix-4 {
-  margin-left: 40px;
+  margin-left: 64px;
   color: #3f5a8a;
 }
 
