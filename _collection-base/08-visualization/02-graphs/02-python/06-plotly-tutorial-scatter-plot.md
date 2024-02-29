@@ -36,15 +36,3 @@ Explore *px_scatter_PCA.ipynb* notebook.
 `jupyter lab` then `http://localhost:8888/` in the browser
 2. Select `File`, then `Open from path` and provide yor local path to *`px_scatter_PCA.ipynb`*
 3. Follow the instructions in the notebook.
-
-
-
-
-___
-# Further Reading
-* [Creating 1D Volcano Plot](07-plotly-tutorial-volcano-plot)
-* [Creating Heatmap](08-plotly-tutorial-heatmap-plot)
-* [Creating Dendrogram](09-plotly-tutorial-dendrogram-plot)
-* [Creating Clustergram (Heatmap with Dendrograms)](10-plotly-tutorial-clustergram-plot)
-
-* [2.3 RStudio – Data Processing & Plotting with R](../03-R/01-graphing-with-rstudio)

@@ -498,21 +498,3 @@ alias si='sinfo -o "%20P %5D %14F %10m %11l %N"'
 alias sq='squeue -o "%8i %12j %4t %10u %20q %20a %10g %20P %10Q %5D %11l %11L %R"'
 alias sacct='sacct --format JobID,Partition,Timelimit,Start,Elapsed,NodeList%20,ExitCode,ReqMem,MaxRSS,MaxVMSize,AllocCPUS'
 ```
-
-
-
-
-
-
-
-
-___
-# Further Reading
-* [5.1.2 Creating SLURM Job Submission Scripts](03-slurm-1-tutorial-job-submission)
-* [5.1.3 Submitting Dependency Jobs using SLURM](04-slurm-2-tutorial-submitting-dependency-jobs)
-* [SLURM Commands CheatSheet](02-slurm-cheatsheet)
-
-* [5.2 PBS: Portable Batch System](../02-PBS/01-pbs-basics)
-
-* [6. Introduction to GNU Parallel](../../06-PARALLEL/01-introduction-to-gnu-parallel)
-* [7. Introduction to Containers](../../07-CONTAINERS/00-introduction-to-containers)

@@ -206,11 +206,3 @@ Please note that while these tools offer some level of free access, some feature
 
 **Research Applications Examples:**
 * A researcher can use Infogram to visualize data in a research paper, create interactive reports, or design engaging infographics for presentations.
-
-
-
-
-
-___
-# Further Reading
-* [2. Introduction to Scientific Graphing](../02-GRAPHS/01-introduction-to-scientific-graphing)

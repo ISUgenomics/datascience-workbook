@@ -1350,15 +1350,3 @@ Now, the project maintainers or collaborators can review your changes, provide f
 
 <span style="color: #ff3870;font-weight: 500;"> Congratulations! You have successfully initiated a pull request. </span> <br>
 Now, the project maintainers or collaborators can review your changes, provide feedback, <br>and decide whether to merge them into the target branch.
-
-
-
-___
-# Further Reading
-* [GIT Commands Cheatsheet](02A-git-cheatsheet)
-
-* [3.3.2 Online Hosting Platforms for GIT Repositories](03-repo-hosting-platforms)
-* [3.4 Documentation Improvement Tools](../02-DOCUMENTATION/01-documentation-improvement-tools)
-
-* [4. Quality Assurance](../../03-PRODUCTIVITY/00-quality-assurance)
-* [5. Project Closing](../../04-PUBLICATION/01-project-closing)

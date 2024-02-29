@@ -68,17 +68,3 @@ The other dependencies that can be used for`<type:job_id>` are as follows:
 | afternotok | This job can begin execution after the specified jobs have terminated in some failed state |
 | afterok | This job can begin execution after the specified jobs have successfully executed |
 | singleton | This job can begin execution after any previously launched jobs sharing the same job name and user have terminated |
-
-
-
-
-
-
-___
-# Further Reading
-* [SLURM Commands CheatSheet](02-slurm-cheatsheet)
-
-* [5.2 PBS: Portable Batch System](../02-PBS/01-pbs-basics)
-
-* [6. Introduction to GNU Parallel](../../06-PARALLEL/01-introduction-to-gnu-parallel)
-* [7. Introduction to Containers](../../07-CONTAINERS/00-introduction-to-containers)

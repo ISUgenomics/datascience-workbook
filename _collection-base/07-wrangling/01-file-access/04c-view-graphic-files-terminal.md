@@ -583,11 +583,3 @@ The default characters used to create the ASCII art are: `["@", "#", "S", "%", "
 chars = ascii_py.asciiImage(["*", ":", ".", " "])
 ```
 The last provided character is used as a background. There are no color options available.
-
-
-___
-# Further Reading
-* [1.3.4 Mounting Remote Folder on Local Machine](04-4-tutorial-mount-remote-folder)
-
-* [2. Data Manipulation](../02-DATA-MANIPULATION/01-data-manipulation)
-* [3. Data Wrangling: ready-made apps](../03-DATA-WRANGLING-APPS/00-data-wrangling-apps)

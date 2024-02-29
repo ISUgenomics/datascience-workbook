@@ -148,15 +148,3 @@ If you are looking to **improve your skills in manipulating data in Excel data s
 These tutorials can provide you with step-by-step guidance on how to perform specific tasks and functions in Excel, which can help you gain a deeper understanding of the software and improve your overall proficiency.
 
 So, whether you are a beginner or an advanced user, **exploring hands-on tutorials can be a great way to improve your Excel skills** and become more proficient in manipulating data in spreadsheets.
-
-
-___
-# Further Reading
-* [2.1.1 Create Workbook from Multiple Text Files](02-tutorial-create-workbook-from-multiple-files)
-* [2.1.2 Export Multiple Worksheets as Separate Text Files](03-tutorial-export-multiple-worksheets)
-* [2.1.3 Create Index for All Worksheets](04-tutorial-create-index-for-all-worksheets)
-* [2.1.4 Merge Two Spreadsheets using a Common Column](05-tutorial-merge-spreadsheets-by-column)
-
-* [2.2 Manipulating Text Files with Python](../02-PYTHON/01-manipulate-data-with-python)
-
-* [3. Data Wrangling: ready-made apps](../../03-DATA-WRANGLING-APPS/00-data-wrangling-apps)

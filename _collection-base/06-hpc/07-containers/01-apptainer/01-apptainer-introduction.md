@@ -247,12 +247,3 @@ Learn more about example commands and options fronm the official docs: <a href="
 ---
 
 **Dive into tutorials focused on specific tasks related to creating and managing containers;** even if they were crafted for Singularity, you can seamlessly adapt them by simply replacing the `singularity` keyword with `apptainer`. *The list of tutorials is provided below.*
-
-___
-# Further Reading
-* [7.1 Singularity (archival)](01-singularity-basics)
-* [7.1.1 Creating Containers using Singularity](02-singularity-1-tutorial-creating-containers)
-* [7.1.2 Modifying Existing Containers](03-singularity-2-tutorial-modyfying-containers)
-* [7.1.3 Singularity on your Mac via Vagrant](04-singularity-3-tutorial-vagrant)
-
-* [7.2 Docker](../02-DOCKER/01-docker-basics)

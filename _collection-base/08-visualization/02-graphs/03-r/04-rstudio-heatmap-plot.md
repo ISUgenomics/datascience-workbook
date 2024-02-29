@@ -181,9 +181,3 @@ An example for how your heatmap will look is shown below:
 
 You can customize the axis titles, chart title by modifying the commands
 above.
-
-
-
-___
-# Further Reading
-* [Creating Heatmaps in R using ComplexHeatmap](05-rstudio-tutorial-ComplexHeatmap)

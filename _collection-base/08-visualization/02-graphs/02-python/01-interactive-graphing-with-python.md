@@ -49,10 +49,3 @@ The **Dash** library offers many templates for components that facilitate buildi
 
 ![types of plotly charts]({{ images_path }}/plotly-dash-components.png)<br>
 **Figure 2.** *Examples of Dash widgets for interactive web applications, including Core, HTM, and Bootstrap components.*
-___
-# Further Reading
-* [2.2.1 Introduction to Plotly (Python library)](02-intro-to-plotly-graphs)
-* [2.2.2 Introduction to Dash (Python library)](03-intro-to-dash-widgets)
-* [2.2.3 Plotly Graphing - Interactive Examples in the JupyterLab](04-plotly-examples-in-jupyterlab)
-
-* [2.3 RStudio – Data Processing & Plotting with R](../03-R/01-graphing-with-rstudio)

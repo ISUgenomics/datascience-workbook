@@ -767,11 +767,3 @@ Explore collaborative features of GitHub, such as issues and pull requests, to u
 To see a more detailed step-by-step guide with graphical aids to complete this exercise, navigate to tutorial <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/02-intro-to-git#gsc.tab=0" target="_blank">GIT - a distributed version control system  ⤴</a> and follow the steps in the <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/02-intro-to-git#working-with-remote-repos" target="_blank">Working with Remote Repos  ⤴</a> hands-on section. You can engage further by exploring the <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/02-intro-to-git#collaborating-on-projects" target="_blank">Collaborating on Projects  ⤴</a> section.</span>
 </div>
 </div>
-
-
-___
-
-# Further Reading
-* [4.3.1 Research Reproducibility Guideline](03-tutorial-research-reproducibility)
-
-* [5. Project Closing](../04-PUBLICATION/01-project-closing)

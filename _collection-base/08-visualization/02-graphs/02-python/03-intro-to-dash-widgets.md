@@ -25,13 +25,3 @@ tags: []
 ## <span style="color: #ff3870;">New content coming soon!</span>
 
 # Introduction
-
-
-
-
-
-___
-# Further Reading
-* [2.2.3 Plotly Graphing - Interactive Examples in the JupyterLab](04-plotly-examples-in-jupyterlab)
-
-* [2.3 RStudio – Data Processing & Plotting with R](../03-R/01-graphing-with-rstudio)

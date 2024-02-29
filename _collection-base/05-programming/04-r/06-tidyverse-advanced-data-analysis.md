@@ -523,11 +523,3 @@ sessionInfo()
 ## [61] timechange_0.2.0    colorspace_2.1-0    gargle_1.3.0       
 ## [64] rvest_1.0.3         knitr_1.42          haven_2.5.1
 ```
-
-
-
-___
-# Further Reading
-
-* [5. Introduction to Julia programming language](../05-JULIA/01-introduction-to-julia)
-* [5.1 Julia setup: installation, environments and Jupyter integration](../05-JULIA/02-must-have-software)

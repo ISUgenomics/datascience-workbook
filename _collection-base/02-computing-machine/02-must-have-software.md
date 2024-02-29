@@ -49,12 +49,3 @@ The use of digital software and applications in scientific research has become i
 ![Notes]({{ images_path }}/hand_notes_to_digital.png)
 
 <span style="color: #ff3870; font-weight: 500; font-size: 20;">Explore the featured software groups in the [Further Reading](#further-reading) section.</span>
-
-
-___
-# Further Reading
-* [2.1 Basic Office Software](02A-basic-office-software.md)
-* [2.2 Basic Developer Tools](02B-basic-developer-tools.md)
-* [2.3 Basic Developer Libraries](02C-basic-developer-libraries.md)
-
-* [3. Various Methods of Software Installation](03-various-methods-of-software-installation.md)

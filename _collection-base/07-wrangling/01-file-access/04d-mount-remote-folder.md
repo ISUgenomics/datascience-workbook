@@ -215,11 +215,3 @@ sshfs -o IdentityFile=mykey.pem -o compression -o allow_other user@hostname:/pat
 ```
 
 *In this example, we specify the SSH private key file to use for authentication, enable compression, and allow other users on the system to access the mounted directory.*
-
-
-
-
-___
-# Further Reading
-* [2. Data Manipulation](../02-DATA-MANIPULATION/01-data-manipulation)
-* [3. Data Wrangling: ready-made apps](../03-DATA-WRANGLING-APPS/00-data-wrangling-apps)

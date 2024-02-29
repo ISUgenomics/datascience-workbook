@@ -561,12 +561,3 @@ In your module file, you need to add this line:
 prepend-path PATH /programname/version/bin
 ```
 Now the `.jar` files can be simply called as `'programname` (once module is loaded). No need to add `java` in front.
-
-
-
-
-___
-# Further Reading
-* [5. Introduction to Job Scheduling](../05-JOB-QUEUE/00-introduction-to-job-scheduling)
-* [6. Introduction to GNU Parallel](../06-PARALLEL/01-introduction-to-gnu-parallel)
-* [7. Introduction to Containers](../07-CONTAINERS/00-introduction-to-containers)

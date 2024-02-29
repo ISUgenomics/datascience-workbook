@@ -281,9 +281,3 @@ In your module file, you need to add this line:
 prepend-path PATH /programname/version/bin
 ```
 Now the `.jar` files can be simply called as `'programname` (once module is loaded). No need to add `java` in front.
-
-
-
-___
-# Further Reading
-* [SECTION 4. Development Environment](../04-DevelopmentEnvironment/00-DevelopmentEnvironment-LandingPage.md)

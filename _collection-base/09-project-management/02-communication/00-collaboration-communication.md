@@ -227,19 +227,3 @@ Collaborators from different backgrounds or institutions may have varying perspe
 
 6. **Ethical Considerations** <br>
 Especially in research, upholding ethical standards in data collection, analysis, and reporting is non-negotiable. Collaborators must be vigilant to ensure all steps align with the highest ethical guidelines.
-
-___
-# Further Reading
-* [2.1 Team Communication Tools](01-team-communication-tools)
-  * [2.1.1 Introduction to Slack](02-intro-to-slack)
-
-* [3. Resource Management](../02-MANAGEMENT/00-intro-resource-management)
-* [4. Quality Assurance](../03-PRODUCTIVITY/00-quality-assurance)
-* [5. Project Closing](../04-PUBLICATION/01-project-closing)
-
-___
-
-[Homepage](../../index.md){: .btn  .btn--primary}
-[Section Index](../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
-[Next](01-team-communication-tools){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

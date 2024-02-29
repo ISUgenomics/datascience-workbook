@@ -46,14 +46,3 @@ End Sub
 ```
 
 Once done, click on  `Macros` again, and then `Run`. This action will automatically populate all cells below the selected cell with sheet name and link to that sheet.
-
-
-
-
-___
-# Further Reading
-* [2.1.4 Merge Two Spreadsheets using a Common Column](05-tutorial-merge-spreadsheets-by-column)
-
-* [2.2 Manipulating Text Files with Python](../02-PYTHON/01-manipulate-data-with-python)
-
-* [3. Data Wrangling: ready-made apps](../../03-DATA-WRANGLING-APPS/00-data-wrangling-apps)

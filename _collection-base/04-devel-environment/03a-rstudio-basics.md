@@ -124,8 +124,3 @@ Some other useful tabs within this panel are:
 * `Files` : lists files in current working directory
 * `Packages` : lists all available packages in the user library and system library
 * `Help` : Documentation for different packages. Can be used to search for specific packages and instructions to use them
-
-<br>
-___
-# Further Reading
-* [3.1.1 Setting Up RStudio](03A-tutorial-setting-up-rstudio)

@@ -221,10 +221,3 @@ function body()
       "$@"
   }
 ```
-
-___
-# Further Reading
-* [4. Software Available on HPC](../04-SOFTWARE/01-software-available-on-HPC)
-* [5. Introduction to Job Scheduling](../05-JOB-QUEUE/00-introduction-to-job-scheduling)
-* [6. Introduction to GNU Parallel](../06-PARALLEL/01-introduction-to-gnu-parallel)
-* [7. Introduction to Containers](../07-CONTAINERS/00-introduction-to-containers)

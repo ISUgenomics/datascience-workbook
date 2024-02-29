@@ -177,8 +177,3 @@ Say, if your input file is as follows:
 ```
 bioawk -t -c header '$age < "25" {print $0}' input.txt
 ```
-
-___
-# Further Reading
-* [Comparing and Collating Two Files with Unix](05-comparing-two-files.md)
-* [Unix Commands CheatSheet](04-unix-cheat-sheet.md)

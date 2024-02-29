@@ -91,20 +91,3 @@ You will see a confirmation saying that the request has been submitted. It might
 ![]({{ images_path }}/16.png)
 
 Once you get the email, you can shut down the computer or exit the Globus application running in the background.
-
-
-
-
-
-
-
-___
-# Further Reading
-* [1.1.2 Copying Data via SSH using Command Line: scp, rsync](02-2-tutorial-copy-ssh)
-* [1.1.3 File Transfer using irods](02-3-tutorial-transfer-irods)
-
-* [1.2 Remote Data Download](03-0-remote-data-download)
-* [1.3 Remote Data Preview without Downloading](04-0-remote-data-preview)
-
-* [2. Data Manipulation](../02-DATA-MANIPULATION/01-data-manipulation)
-* [3. Data Wrangling: ready-made apps](../03-DATA-WRANGLING-APPS/00-data-wrangling-apps)

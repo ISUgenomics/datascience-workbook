@@ -423,12 +423,3 @@ To learn on how to manage data on SCINet, explore comprehensive user guides *(by
   * <a href="https://scinet.usda.gov/guides/data/datatransfer#other-ways-to-transfer-data" target="_blank">Other Ways to Transfer Data  ⤴</a>
   * <a href="https://scinet.usda.gov/guides/data/datatransfer#data-transfer-to-ncbi" target="_blank">Data Transfer to NCBI  ⤴</a>
   * <a href="https://scinet.usda.gov/guides/data/rclone#rclone-moving-data-to-and-from-cloud-resources" target="_blank">Rclone: Moving Data To and From Cloud Resources  ⤴</a>
-
-
-___
-# Further Reading
-* [1.2.1 Atlas Computing Cluster](02-scinet-atlas-cluster)
-* [1.2.2 Ceres Computing Cluster](03-scinet-ceres-cluster)
-* [1.2.3 Juno Storage](04-scinet-juno-storage)
-
-* [1.3 ISU HPC](../03-ISUHPC/01-isu-hpc-intro)

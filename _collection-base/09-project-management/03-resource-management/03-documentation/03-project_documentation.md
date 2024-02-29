@@ -152,14 +152,3 @@ Data visualization tools adeptly convert intricate datasets into clear and `inte
 
 For detailed tutorials on **Data Visualization Tools** and methodologies, refer to section
 <b><a href="https://datascience.101workbook.org/08-DataVisualization/00-DataVisualization-LandingPage" target="_blank">08. Data Visualization</a></b>, which includes topics such as <a href="https://datascience.101workbook.org/08-DataVisualization/01-IMAGES/01-scientific-graphic-design-intro" target="_blank">Introduction to Scientific Graphic Design</a> and <a href="https://datascience.101workbook.org/08-DataVisualization/02-GRAPHS/01-introduction-to-scientific-graphing" target="_blank">Introduction to Scientific Graphing</a>, providing hands-on examples with tools like <a href="https://datascience.101workbook.org/08-DataVisualization/01-IMAGES/04-adobe-creative-cloud" target="_blank">Adobe Creative Cloud</a>, <a href="https://datascience.101workbook.org/08-DataVisualization/02-GRAPHS/01-GNUPLOT/01-gnuplot-basics" target="_blank">Gnuplot</a> (creating plots in the UNIX shell), <a href="https://datascience.101workbook.org/08-DataVisualization/02-GRAPHS/02-PYTHON/01-interactive-graphing-with-python" target="_blank">Plotly-Dash</a> (data processing & interactive plotting with Python), and <a href="https://datascience.101workbook.org/08-DataVisualization/02-GRAPHS/03-R/01-graphing-with-rstudio" target="_blank">RStudio</a> (data processing & plotting with R).
-
-
-
-
-
-___
-# Further Reading
-* [3.4.3 Tools for Code Documentation](../02-DOCUMENTATION/04-code_documentation)
-
-* [4. Quality Assurance](../../03-PRODUCTIVITY/00-quality-assurance)
-* [5. Project Closing](../../04-PUBLICATION/01-project-closing)

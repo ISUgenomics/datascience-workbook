@@ -276,13 +276,3 @@ awk -F DELIMITER '{print COLUMN}' FILE
 ```
 text_stream | grep WORD | tr '-' ' ' | awk '{print $2,$4,$6}' | sort -nk1 | uniq
 ```
-
-___
-# Further Reading
-* [GREP – simple search for regular expressions](03A-tutorial-unix-grep.md)
-* [SED – edit stream text](03B-tutorial-unix-sed.md)
-* [AWK – advanced text processing](03C-tutorial-unix-awk.md)
-* [BIOAWK – biological data manipulation](03D-tutorial-unix-bioawk.md)
-* [Comparing and Collating Two Files with Unix](05-comparing-two-files.md)
-
-* [Unix Commands CheatSheet](04-unix-cheat-sheet.md)

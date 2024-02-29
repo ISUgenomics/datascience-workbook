@@ -219,12 +219,3 @@ You can also combine to get both before and after lines
 ```
 grep -B 10 -A 10 "PATTERN" FILENAME
 ```
-
-___
-# Further Reading
-* [SED – edit stream text](03B-tutorial-unix-sed.md)
-* [AWK – advanced text processing](03C-tutorial-unix-awk.md)
-* [BIOAWK – biological data manipulation](03D-tutorial-unix-bioawk.md)
-* [Comparing and Collating Two Files with Unix](05-comparing-two-files.md)
-
-* [Unix Commands CheatSheet](04-unix-cheat-sheet.md)

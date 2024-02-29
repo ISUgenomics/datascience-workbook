@@ -784,14 +784,3 @@ If you're developing a more complex Python project that includes multiple module
 *Beginners may want to start with a simpler text editor until they feel comfortable with the basics of Python programming.*
 
 <span style="color: #ff3870;font-weight: 500;"> You can learn the details from the comprehensive introduction to <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02E-python-pycharm-ide" target="_blank">PyCharm: IDE for Professional Python Developers (professional)  ⤴</a>, provided in the section <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/00-DevelopmentEnvironment-LandingPage" target="_blank">04. Development Environment  ⤴</a> of this <a href="https://datascience.101workbook.org/" target="_blank">workbook  ⤴</a>.</span>
-
-___
-# Further Reading
-* [3.2 Read and Write Data Files](03-tutorial-read-write-files.md)
-* [3.3 JSON Module - Encoding & Decoding JSON Data](04-tutorial-python-manage-data-json-string.md)
-* [3.4 Math Module - Various Mathematical Functions](05-tutorial-python-round-abs-data-math-module.md)
-* [3.5 Pandas Library - Data Structure Manipulation Tool](06-tutorial-python-data-manipulation-pandas.md)
-* [3.6 Numpy Library - Multi-Dimensional Arrays Parser](07-tutorial-python-array-manipulation-numpy.md)
-* [3.7 SciPy Library - Algorithms for Scientific Computing](08-tutorial-python-apply-statistics-scipy.md)
-
-* [4. Introduction to R programming](../04-R/01-introduction-to-R)

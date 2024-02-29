@@ -75,13 +75,3 @@ The Data Science Workbook provides an overview of key concepts in Data Science a
 * Computational Biology, for the details see <a href="https://datascience.101workbook.org/01-IntroToDataScience/02A-computational-biology" target="_blank">article  ⤴</a> and follow to the <a href="https://bioinformaticsworkbook.org/" target="_blank">Bioinformatics Workbook ⤴</a>
 * Geospatial Analysis, for the details see <a href="https://datascience.101workbook.org/01-IntroToDataScience/02B-geospatial-analytics" target="_blank">article  ⤴</a> article and follow to the <a href="https://geospatial.101workbook.org" target="_blank">Geospatial Workbook ⤴</a>
 * Artificial Intelligence, for the details see <a href="https://datascience.101workbook.org/01-IntroToDataScience/02C-machine-learning" target="_blank">article ⤴</a> article and follow to the <a href="http://ai.101workbook.org" target="_blank">AI Workbook  ⤴</a>
-
-
-
-
-
-___
-# Further Reading
-* [2.1 Computational Biology](02A-computational-biology)
-* [2.2 Geospatial Analytics](02B-geospatial-analytics)
-* [2.3 Machine Learning Outlook](02C-machine-learning)

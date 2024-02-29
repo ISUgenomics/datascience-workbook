@@ -132,16 +132,3 @@ salloc -N 1 -n 1 -p brief-low -t 00:01:00
 ```
 
 Interactive sessions are very helpful when you need more computing power than your laptop or desktop to wrangle the data or to test new software prior to submitting a full batch script.
-
-
-___
-# Further Reading
-* [5.1.1 Introduction to SLURM](01-slurm-introduction)
-* [5.1.2 Creating SLURM Job Submission Scripts](03-slurm-1-tutorial-job-submission)
-* [5.1.3 Submitting Dependency Jobs using SLURM](04-slurm-2-tutorial-submitting-dependency-jobs)
-* [SLURM Commands CheatSheet](02-slurm-cheatsheet)
-
-* [5.2 PBS: Portable Batch System](../02-PBS/01-pbs-basics)
-
-* [6. Introduction to GNU Parallel](../../06-PARALLEL/01-introduction-to-gnu-parallel)
-* [7. Introduction to Containers](../../07-CONTAINERS/00-introduction-to-containers)

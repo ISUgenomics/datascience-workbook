@@ -105,20 +105,5 @@ When working on a project involving Indigenous communities' data, researchers sh
 8. Aim to establish long-term relationships with the community beyond the lifespan of a single project. <br>
 9. Ensure the research project complies with institutional ethical requirements and any specific guidelines or policies related to research involving Indigenous communities. <br>
 10. Be open to learning from the community and continuously reflect on your practices as a researcher.
-
-
 </span>
 </div>
-
-
-___
-# Further Reading
-* [3.1.4 TRUST Principles](04-trust-principles)
-* [3.1.5 Data Management Plan (hands-on)](05-data-management-plan)
-
-* [3.2 Code Management](../01-SOURCE-CODE/00-code-developments)
-* [3.3 Storage & Version Control](../01-SOURCE-CODE/01-storage-version-control)
-* [3.4 Documentation Improvement Tools](../02-DOCUMENTATION/01-documentation-improvement-tools)
-
-* [4. Quality Assurance](../../03-PRODUCTIVITY/00-quality-assurance)
-* [5. Project Closing](../../04-PUBLICATION/01-project-closing)

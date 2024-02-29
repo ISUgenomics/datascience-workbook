@@ -131,10 +131,3 @@ You can now either first Commit and then Push the staged changes or do both step
 <br>
 ![commit]({{ images_path }}/VSC_commit.png)
 <br>
-
-___
-# Further Reading
-* [1.2 Jupyter: Interactive Web-Based Multi-Kernel DE](01B-jupyter-basics.md)
-
-* [2. Python programming environment(s)](02-python-programming-environment)
-* [3. R programming environment(s)](03-r-programming-environment.md)

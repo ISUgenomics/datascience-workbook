@@ -571,10 +571,3 @@ The `File > Export PNG Image` option allows you to export your artwork **as a ra
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;"> This option is useful when you want to share your artwork as a high-quality image or when you need a raster image format for web or print purposes. </span>
 </div><br>
-
-___
-# Further Reading
-* [1.3 Adobe Creative Cloud](04-adobe-creative-cloud)
-* [1.4 Template-based Web Tools](05-template-based-web-tools)
-
-* [2. Introduction to Scientific Graphing](../02-GRAPHS/01-introduction-to-scientific-graphing)

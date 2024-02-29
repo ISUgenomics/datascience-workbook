@@ -136,17 +136,3 @@ In Python, you can use variables to assign the result of <b>basic mathematical o
 
 <span style="color: #ff3870;font-weight: 500;">
 It is highly recommended to learn more about the basics of programming in Python</span> <b>by working through the hands-on tutorials provided in Section <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/01-introduction-to-python" target="_blank">05. Introduction to Programming: Introduction to Python Programming  ⤴</a> of this workbook.</b> These tutorials cover topics such as variables, data types, operators, control flow statements, functions, and more.
-
-
-___
-# Further Reading
-* [2.2 Online Notebook: interactive Python code on Try-jupyter and Colab](02A-python-online-jupyter-colab.md) <i style="color: #a9bbd1;">(without installation)</i>
-
-* [2.3 Python Setup on your computing machine](02A-python-setup-locally.md) <i style="color: #a9bbd1;">(installation needed)</i>
-  * [2.3.1 Shell & IDLE: create Python code in a terminal or simple IDE](02B-python-terminal-shell.md)
-  * [2.3.2 Text editors: create Python code in terminal text files](02C-python-text-editor.md)
-  * [2.3.3 Jupyter Lab: create an interactive Python notebook](02D-python-jupyter-notebook.md)
-  * [2.3.4 PyCharm: IDE for Professional Python Developers](02E-python-pycharm-ide.md)
-
-
-  * [3. R programming environment(s)](03-r-programming-environment.md)

@@ -160,8 +160,3 @@ Some applications may have <b>additional requirements</b> listed in the correspo
 Right here, in the [Data Science Workbook](https://datascience.101workbook.org): [07-DataParsing](https://datascience.101workbook.org/07-DataParsing/00-DataParsing-LandingPage)/<b>[03-DATA-WRANGLING-APPS](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/00-data-wrangling-apps)</b> section, you can follow the <span style="color: #ff3870;">hands-on tutorials</span> to learn how to run the ready-made applications <span style="color: #ff3870;">using example datasets</span> and further employ them to support your own research.
 
 Browse available tutorials in the **Further Reading** paragraph (*just below*).
-
-___
-# Further Reading
-* [3.1 Merge files by common column (python))](01-merge-data-py)
-* [3.2 Aggregate data over slicing variations (python)](02-slice-or-bin-data-py)

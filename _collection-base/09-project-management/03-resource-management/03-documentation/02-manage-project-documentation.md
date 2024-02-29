@@ -335,13 +335,3 @@ Cool idea right?  But a real-life whiteboard and post-it notes would be very tim
 Bioinformatics projects can be time consuming and frustrating with a lot of trial and error.  It often happens that at the end of a week, it doesn't feel like anything was accomplished.  Keeping track of your time spent on a daily basis can bring peace of mind.  This can be easily accomplished using a Google spreadsheet with days of the month at the top as columns and project names as rows on the left. For each project there should be two rows; hours spent and description of what you did.  The column widths can be relatively short since hours spent in a day is not more than 2 digits and the description can just flow into adjacent cells.  It is also helpful to see where your time is being spent and better manage your work/life balance and provide a tool for those in your group to manage their work/life balance.
 
 Here is an example of a [google sheet](https://docs.google.com/spreadsheets/d/1Lj2xXjnWkx8ww7l23OjRET77J3_jq6Cj61Iu6bebMxw/edit#gid=0) used for keep track of time.
-
-
-___
-# Further Reading
-* [3.4.2 Tools for Research Documentation](../02-DOCUMENTATION/03-project_documentation)
-* [3.4.3 Tools for Code Documentation](../02-DOCUMENTATION/04-code_documentation)
-* [3.4.4 Introduction to Markdown](../02-DOCUMENTATION/02-intro-to-markdown)
-
-* [4. Quality Assurance](../../03-PRODUCTIVITY/00-quality-assurance)
-* [5. Project Closing](../../04-PUBLICATION/01-project-closing)

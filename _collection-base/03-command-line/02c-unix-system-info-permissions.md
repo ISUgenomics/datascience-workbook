@@ -284,10 +284,3 @@ you can use the combination of commands to just display the IP address as follow
 ```
 ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'
 ```
-
-
-___
-# Further Reading
-* [Superuser Command: sudo](02D-admin-commands.md)
-* [Getting Started with UNIX + VIDEO + exercises](02E-tutorial-unix-getting-started.md)
-* [Unix Commands CheatSheet](04-unix-cheat-sheet.md)

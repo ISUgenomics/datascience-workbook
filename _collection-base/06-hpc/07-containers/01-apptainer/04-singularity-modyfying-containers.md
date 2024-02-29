@@ -105,10 +105,3 @@ sudo singularity build container.simg recipe
 ```
 
 Once you have made all the changes and your image is working the way you want then you can make those changes in your original recipe file and recreate it from scratch for full reproducibility.
-
-
-___
-# Further Reading
-* [7.1.3 Singularity on your Mac via Vagrant](04-singularity-3-tutorial-vagrant)
-
-* [7.2 Docker](../02-DOCKER/01-docker-basics)

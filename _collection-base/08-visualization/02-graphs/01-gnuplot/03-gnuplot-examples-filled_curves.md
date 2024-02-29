@@ -24,10 +24,3 @@ tags: []
 # Introduction
 
 ## Gnuplot: Filled Curves for multiple data series
-
-
-
-___
-# Further Reading
-* [2.2 Plotly-Dash – Data Processing & Interactive Plotting with Python](../02-PYTHON/01-interactive-graphing-with-python)
-* [2.3 RStudio – Data Processing & Plotting with R](../03-R/01-graphing-with-rstudio)

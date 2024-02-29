@@ -135,13 +135,3 @@ Data in use is digital **data being actively processed by computer applications*
 Learn more details from [Wikipedia: Data in Use](https://en.wikipedia.org/wiki/Data_in_use) and corresponding references.<br>
 
 <!-- ## 3. Technologies and Techniques -->
-
-
-
-
-___
-# Further Reading
-* [2. Applications of Computational Science](02-computational-science-applications)
-  * [2.1 Computational Biology](02A-computational-biology)
-  * [2.2 Geospatial Analytics](02B-geospatial-analytics)
-  * [2.3 Machine Learning Outlook](02C-machine-learning)

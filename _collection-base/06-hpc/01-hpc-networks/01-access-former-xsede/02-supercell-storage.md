@@ -52,10 +52,3 @@ rsync -e 'ssh -c aes128-ctr' -avP source_dir username@data.psc.xsede.org:target_
 ```
 
 That's it! You can retrieve the data anytime by reversing the  `rsync` command.
-
-
-
-___
-# Further Reading
-* [1.2 SCINet Network](../02-SCINET/01-scient-network-intro)
-* [1.3 ISU HPC](../03-ISUHPC/01-isu-hpc-intro)

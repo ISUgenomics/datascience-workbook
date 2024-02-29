@@ -61,9 +61,3 @@ Virtual Machines (VMs) and Containers are software technologies that can be used
 In summary, containers offer a more resource-efficient and portable solution, with faster start-up times and easier scalability than virtual machines. However, virtual machines provide a higher level of isolation, as they run a complete operating system for each application. The choice between containers and virtual machines depends on the specific requirements of the application and the deployment environment.
 <br>
 <br>
-
-___
-# Further Reading
-* [7.1 Apptainer](01-SINGULARITY/00-apptainer-introduction)
-  * [7.1 Singularity (archival)](01-SINGULARITY/01-singularity-basics)
-* [7.2 Docker](02-DOCKER/01-docker-basics)

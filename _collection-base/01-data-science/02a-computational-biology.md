@@ -68,8 +68,3 @@ One effective way to learn about sequencing bioinformatics is to study examples 
 2. <a href="https://bioinformaticsworkbook.org/list.html" target="_blank">Detailed Table of Content  ⤴</a>
 3. <a href="https://bioinformaticsworkbook.org/glossary.html" target="_blank">Bioinformatics Glossary  ⤴</a>
 4. <a href="https://bioinformaticsworkbook.org/Contributing.html" target="_blank">How to contribute?  ⤴</a>
-
-___
-# Further Reading
-* [2.2 Geospatial Analytics](02B-geospatial-analytics)
-* [2.3 Machine Learning Outlook](02C-machine-learning)

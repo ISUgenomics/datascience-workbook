@@ -157,14 +157,3 @@ Block Equations
 \\[f(a) = \frac{1}{10 \times 11}\\]
 ```
 -->
-
-
-
-
-
-
-
-
-___
-# Further Reading
-* [SECTION 5. Introduction to Programming](../05-IntroToProgramming/00-IntroToProgramming-LandingPage)

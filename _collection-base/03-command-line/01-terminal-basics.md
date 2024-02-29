@@ -167,9 +167,3 @@ less ~/.bash_history
 ```
 
 ... and browse the command history with arrow keys `↓` and `↑`. To close the preview, press `q`.
-
-___
-# Further Reading
-* [Introduction to UNIX Shell: shell variables, home dir, .bashrc](02-intro-to-unix-shell.md)
-* [Useful Text Manipulation Programs](03-text-manipulation-programs.md)
-* [Unix Commands CheatSheet](04-unix-cheat-sheet.md)

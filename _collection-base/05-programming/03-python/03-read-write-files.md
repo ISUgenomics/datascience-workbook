@@ -489,14 +489,3 @@ There are several common types of exceptions that may occur when working with fi
 It's important to handle exceptions when working with files in Python, as failure to do so can result in unexpected program crashes or data loss. By using exception handling, you can gracefully handle errors and provide useful error messages to the user.
 </span>
 </div><br>
-
-
-___
-# Further Reading
-* [3.3 JSON Module - Encoding & Decoding JSON Data](04-tutorial-python-manage-data-json-string.md)
-* [3.4 Math Module - Various Mathematical Functions](05-tutorial-python-round-abs-data-math-module.md)
-* [3.5 Pandas Library - Data Structure Manipulation Tool](06-tutorial-python-data-manipulation-pandas.md)
-* [3.6 Numpy Library - Multi-Dimensional Arrays Parser](07-tutorial-python-array-manipulation-numpy.md)
-* [3.7 SciPy Library - Algorithms for Scientific Computing](08-tutorial-python-apply-statistics-scipy.md)
-
-* [4. Introduction to R programming](../04-R/01-introduction-to-R)

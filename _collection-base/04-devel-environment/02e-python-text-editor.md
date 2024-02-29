@@ -474,12 +474,3 @@ python generate_password.py
 <i>This will execute your script, prompt user to select password length, and print the generated random string of characters.</i>
 
 <p align="left"><img width="800" src="{{ images_path }}/02_python-run-input.gif"></p>
-
-
-
-___
-# Further Reading
-* [2.3.3 Jupyter Lab: create an interactive Python notebook](02D-python-jupyter-notebook.md)
-* [2.3.4 PyCharm: IDE for Professional Python Developers](02E-python-pycharm-ide.md)
-
-* [3. R programming environment(s)](03-r-programming-environment.md)

@@ -52,17 +52,3 @@ display filename.png
 ```
 
 If you don't have this program installed, you can try the ```firefox``` method. Although, to view ```png``` files, you may have to install the addon before you open the file. Addons are easy to add, once the firefox is opened, press ```ctrl``` + ```shift``` + ```A```, that will open ```add-ons``` page (you can also just type ```about:addons``` to open this). Search for [_Perfect View_](https://addons.thunderbird.net/en-us/firefox/addon/perfect-view/?src=dp-dl-othersby) add-on, and add it to your ```firefox```. Now you can open the file normally as you opened the ```pdf``` files.
-
-
-
-
-
-
-
-___
-# Further Reading
-* [1.3.3 Viewing Graphic Files using ASCII art in the termianl](04-3-tutorial-view-graphic-files-terminal)
-* [1.3.4 Mounting Remote Folder on Local Machine](04-4-tutorial-mount-remote-folder)
-
-* [2. Data Manipulation](../02-DATA-MANIPULATION/01-data-manipulation)
-* [3. Data Wrangling: ready-made apps](../03-DATA-WRANGLING-APPS/00-data-wrangling-apps)

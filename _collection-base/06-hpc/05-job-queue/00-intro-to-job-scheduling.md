@@ -130,12 +130,3 @@ lsb_release -a
 If the above commands do not work, you can also check with the system administrator or refer to the cluster documentation to find out which workload manager is being used.
 </span>
 </div><br>
-
-
-___
-# Further Reading
-* [5.1 SLURM: Slurm Workload Manager](01-SLURM/01-slurm-basics)
-* [5.2 PBS: Portable Batch System](02-PBS/01-pbs-basics)
-
-* [6. Introduction to GNU Parallel](../06-PARALLEL/01-introduction-to-gnu-parallel)
-* [7. Introduction to Containers](../07-CONTAINERS/00-introduction-to-containers)

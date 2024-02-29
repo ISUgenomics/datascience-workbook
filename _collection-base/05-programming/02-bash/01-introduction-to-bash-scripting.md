@@ -872,14 +872,3 @@ e.g., row-col transpose
 ## FILE-SCRIPTS
 
 e.g., in-loop gnuploting template -->
-
-
-___
-# Further Reading
-<!--
-* [2.1 Process multiple files in Unix](02-unix-work-on-multiple-files.md)
-* [2.2 Introduction to regular expressions in Unix](03-unix-intro-to-regex.md)
--->
-
-* [3. Introduction to Python Programming](../03-PYTHON/01-introduction-to-python.md)
-* [4. Introduction to R programming](../04-R/01-introduction-to-R.md)

@@ -127,9 +127,3 @@ R also has powerful capabilities for visualizing data. For example, you can use 
 
  With its powerful statistical and data visualization capabilities, R is a valuable tool for anyone working with data.  <br>
 <br>
-
-
-___
-# Further Reading
-* [3.1 RStudio: Integrated Environment for R Programming](03A-rstudio-basics)
-* [3.1.1 Setting Up RStudio](03A-tutorial-setting-up-rstudio)

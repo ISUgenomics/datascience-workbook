@@ -178,15 +178,3 @@ Utilize tools and services that adhere to TRUST principles. This could include u
 <span style="font-weight:800;">Impact on Funding and Publication</span>
 <br><span style="font-style:italic;">More funding agencies and scientific journals are recognizing the importance of trustworthy data management. Complying with TRUST principles can therefore be crucial for securing funding and getting research published.</span>
 </div>
-
-
-___
-# Further Reading
-* [3.1.5 Data Management Plan (hands-on)](05-data-management-plan)
-
-* [3.2 Code Management](../01-SOURCE-CODE/00-code-developments)
-* [3.3 Storage & Version Control](../01-SOURCE-CODE/01-storage-version-control)
-* [3.4 Documentation Improvement Tools](../02-DOCUMENTATION/01-documentation-improvement-tools)
-
-* [4. Quality Assurance](../../03-PRODUCTIVITY/00-quality-assurance)
-* [5. Project Closing](../../04-PUBLICATION/01-project-closing)

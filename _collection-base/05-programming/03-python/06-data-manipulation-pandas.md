@@ -772,11 +772,3 @@ grouped_df = df.groupby('group_column')['value_column'].mean()
 # Group data by multiple columns and calculate the sum of another column
 grouped_df = df.groupby(['group_column_1', 'group_column_2'])['value_column'].sum()
 ```
-
-
-___
-# Further Reading
-* [3.6 Numpy Library - Multi-Dimensional Arrays Parser](07-tutorial-python-array-manipulation-numpy.md)
-* [3.7 SciPy Library - Algorithms for Scientific Computing](08-tutorial-python-apply-statistics-scipy.md)
-
-* [4. Introduction to R programming](../04-R/01-introduction-to-R)

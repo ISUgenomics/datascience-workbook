@@ -130,17 +130,3 @@ Learn more from the <b>hands-on tutorial</b> <a href="https://datascience.101wor
 ### *AWS CodeCommit*
 
 <a href="https://docs.aws.amazon.com/codecommit/latest/userguide/welcome.html" target="_blank">AWS CodeCommit  ⤴</a> is a Git-based source control service that is **part of the Amazon Web Services** (AWS) cloud platform. It provides a secure, scalable, and managed solution for version control that integrates with other AWS services.
-
-
-
-
-___
-# Further Reading
-* [Introduction to GitHub](04-intro-to-github)
-* [GitHub for advanced users](04A-github-advanced)
-* [Introduction to BitBucket](05-intro-to-bitbucket)
-
-* [3.4 Documentation Improvement Tools](../02-DOCUMENTATION/01-documentation-improvement-tools)
-
-* [4. Quality Assurance](../../03-PRODUCTIVITY/00-quality-assurance)
-* [5. Project Closing](../../04-PUBLICATION/01-project-closing)

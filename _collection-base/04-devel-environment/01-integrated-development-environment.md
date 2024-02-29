@@ -34,15 +34,3 @@ IDEs include many different tools that help developers code efficiently:
 <br>
 
 IDEs are essential tools for software development, provide one place to work on all aspects of a project, and have a wide range of features to streamline the development process. Some popular IDEs are [Visual Studio Code ⤴](01A-tutorial-VSCode.md), Eclipse, [PyCharm ⤴](02E-pycharm-ide.md), [Jupyter ⤴](01B-jupyter-basics), [RStudio ⤴](03A-rstudio-basics.md), Atom, and Spyder.
-
-
-
-
-
-___
-# Further Reading
-* [1.1 Visual Studio Code: Multi-language Integrated DE](01A-tutorial-VSCode.md)
-* [1.2 Jupyter: Interactive Web-Based Multi-Kernel DE](01B-jupyter-basics.md)
-
-* [2. Python programming environment(s)](02-python-programming-environment)
-* [3. R programming environment(s)](03-r-programming-environment.md)

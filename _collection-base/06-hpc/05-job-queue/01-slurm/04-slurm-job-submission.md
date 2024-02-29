@@ -80,19 +80,3 @@ sbatch $f;
 done
 ```
 All commands will be submitted and will start to run as per the availability of nodes.
-
-
-
-
-
-
-
-___
-# Further Reading
-* [5.1.3 Submitting Dependency Jobs using SLURM](04-slurm-2-tutorial-submitting-dependency-jobs)
-* [SLURM Commands CheatSheet](02-slurm-cheatsheet)
-
-* [5.2 PBS: Portable Batch System](../02-PBS/01-pbs-basics)
-
-* [6. Introduction to GNU Parallel](../../06-PARALLEL/01-introduction-to-gnu-parallel)
-* [7. Introduction to Containers](../../07-CONTAINERS/00-introduction-to-containers)

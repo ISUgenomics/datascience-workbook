@@ -39,15 +39,3 @@ Some programs are available for download on the distributor's website as an inst
 
 The vast majority of packages and development modules are available for installation using the command line in the terminal. Stable versions of various programs can be automatically downloaded and installed using helper programs such as `brew`.
 Once you get familiar with a coding terminal, you can easily install development packages. Many research groups release their software on code hosting platforms such as [GitHub](https://github.com) or [BitBucket](https://bitbucket.org/). Such repositories can be downloaded and versioned using [Git](https://git-scm.com).
-
-
-
-
-
-
-
-___
-# Further Reading
-* [3.1 Installations on MacBook Pro](03A-tutorial-installations-on-mac.md)
-* [3.2 Installations on Windows](03B-tutorial-installations-on-windows.md)
-* [3.3 Installations on Linux](03C-tutorial-installations-on-linux.md)

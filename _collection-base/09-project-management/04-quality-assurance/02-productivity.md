@@ -960,11 +960,3 @@ Consider the following questions to help you identify your passion:
 <b>CONTINUE: </b>Mark a specific time in your calendar for the upcoming weekend to fully engage in this activity for at least 2 hours. Treat it as you would any other important appointment or commitment, and prioritize giving yourself dedicated time to explore and indulge in your passion. <b>Enjoy yourself!</b>
 </span>
 </div>
-
-___
-# Further Reading
-* [4.3 Research Reproducibility](03-reproducibility)
-  * [4.3.1 Research Reproducibility Guideline](03-tutorial-research-reproducibility)
-
-
-* [5. Project Closing](../04-PUBLICATION/01-project-closing)

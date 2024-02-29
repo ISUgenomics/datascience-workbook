@@ -44,11 +44,3 @@ Most python libraries can be easily installed using `pip`.
 
 
 ### R modules
-
-
-
-
-
-___
-# Further Reading
-* [3. Various Methods of Software Installation](03-various-methods-of-software-installation.md)

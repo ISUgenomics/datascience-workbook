@@ -449,9 +449,3 @@ Pseudocode is a high-level description of a computer program that uses a mix of 
 
 <span style="color: #ff3870;font-weight: 500;">Transforming the descriptive pseudocode from this example to code-like pseudocode can be a great exercise to help you understand how to translate an algorithm's logic into actual code.</span> <br>
 *So, I encourage you to take the descriptive pseudocode from the example and try to transform it into code-like pseudocode. This will not only help you understand the algorithm's logic better but also give you practice in translating that logic into actual code.*
-
-___
-# Further Reading
-* [2. Introduction to Bash Scripting](../02-BASH/01-introduction-to-bash-scripting)
-* [3. Introduction to Python Programming](../03-PYTHON/01-introduction-to-python)
-* [4. Introduction to R programming](../04-R/01-introduction-to-R)

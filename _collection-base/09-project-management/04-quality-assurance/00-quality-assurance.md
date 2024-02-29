@@ -255,15 +255,3 @@ Research Reproducibility is the cornerstone of credible science. It ensures that
 
 <br><span style="background-color: #e8e9e8; color: #0ba37f; font-weight: 500; padding: 5px 7px;">TUTORIAL</span>
 To further explore how to ensure your research is reproducible, especially in small to moderate scale projects, check out our in-depth tutorial on <a href="https://datascience.101workbook.org/09-ProjectManagement/03-PRODUCTIVITY/03-reproducibility" target="_blank">Research Reproducibility ⤴</a>.
-
-
-
-___
-# Further Reading
-* [4.1 Monitoring & Evaluation](01-monitoring-evaluation)
-* [4.2 Productivity](02-productivity)
-* [4.3 Research Reproducibility](03-reproducibility)
-  * [4.3.1 Research Reproducibility Guideline](03-tutorial-research-reproducibility)
-
-
-* [5. Project Closing](../04-PUBLICATION/01-project-closing)

@@ -81,9 +81,3 @@ One effective way to learn about AI applications is to study examples of real-wo
 2. <a href="https://ai.101workbook.org/list.html" target="_blank">Detailed Table of Content  ⤴</a>
 3. <a href="https://ai.101workbook.org/glossary.html" target="_blank">AI Glossary  ⤴</a>
 4. <a href="https://ai.101workbook.org/Contributing.html" target="_blank">How to contribute?  ⤴</a>
-
-
-
-___
-# Further Reading
-* [SECTION 2. Introduction to the Command Line](../02-IntroToCommandLine/00-IntroToCommandLine-LandingPage)

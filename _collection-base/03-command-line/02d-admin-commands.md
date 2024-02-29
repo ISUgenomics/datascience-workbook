@@ -305,10 +305,3 @@ There are many other tasks that may require superuser privileges, and sudo can b
 <span style="font-weight:800;">WARNING:</span>
 <br><span style="font-style:italic;"> It is important to use <b>sudo</b> sparingly, and only when absolutely necessary, as it has the potential to cause significant harm to the system if used improperly. </span>
 </div>
-
-
-
-___
-# Further Reading
-* [Getting Started with UNIX + VIDEO + exercises](02E-tutorial-unix-getting-started.md)
-* [Unix Commands CheatSheet](04-unix-cheat-sheet.md)

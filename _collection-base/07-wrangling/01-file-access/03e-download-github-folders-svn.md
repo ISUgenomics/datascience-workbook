@@ -317,10 +317,3 @@ or
 
 
 ![01-svn_download_repo_file3.png]({{ images_path }}/01-svn_download_repo_file3.png)
-
-___
-# Further Reading
-* [1.3 Remote Data Preview without Downloading](04-0-remote-data-preview)
-
-* [2. Data Manipulation](../02-DATA-MANIPULATION/01-data-manipulation)
-* [3. Data Wrangling: ready-made apps](../03-DATA-WRANGLING-APPS/00-data-wrangling-apps)

@@ -596,15 +596,3 @@ The <b>scatterplot() function</b> in Seaborn is used to draw a scatter plot of t
 To execute the code cell, press `Shift + Enter` or click the `Run` button.
 
 ![02_python-colab-graph.png]({{ images_path }}/02_python-colab-graph.png)
-
-
-___
-# Further Reading
-* [2.3 Python Setup on your computing machine](02A-python-setup-locally.md) <i style="color: #a9bbd1;">(installation needed)</i>
-  * [2.3.1 Shell & IDLE: create Python code in a terminal or simple IDE](02B-python-terminal-shell.md)
-  * [2.3.2 Text editors: create Python code in terminal text files](02C-python-text-editor.md)
-  * [2.3.3 Jupyter Lab: create an interactive Python notebook](02D-python-jupyter-notebook.md)
-  * [2.3.4 PyCharm: IDE for Professional Python Developers](02E-python-pycharm-ide.md)
-
-
-  * [3. R programming environment(s)](03-r-programming-environment.md)

@@ -88,15 +88,3 @@ Git can also be used to manage and version control binary files, such as images,
 
 * **BOOKS** <br>
 <i><b>Example:</b> <a href="https://github.com/christophM/christophm.github.io" target="_blank">christophM/christophm.github.io  ⤴</a> repo hosted on GitHub, contains a book "Interpretable Machine Learning" rendered via <a href="https://christophm.github.io/interpretable-ml-book/" target="_blank">GitHub Pages  ⤴</a></i>
-
-
-___
-# Further Reading
-* [3.3.1 GIT - a distributed version control system](02-intro-to-git)
-  * [GIT Commands Cheatsheet](02A-git-cheatsheet)
-* [3.3.2 Online Hosting Platforms for GIT Repositories](03-repo-hosting-platforms)
-
-* [3.4 Documentation Improvement Tools](../02-DOCUMENTATION/01-documentation-improvement-tools)
-
-* [4. Quality Assurance](../../03-PRODUCTIVITY/00-quality-assurance)
-* [5. Project Closing](../../04-PUBLICATION/01-project-closing)

@@ -604,14 +604,3 @@ python scrap_biapps_web_service.py
 <br>
 <br>[...]
 </code><br>
-
-
-___
-# Further Reading
-* [1.2.3 Downloading Online GitHub Repos using GIT](03-3-tutorial-download-github-repos-git)
-* [1.2.4 Downloading Single Folder from GitHub using SVN](03-4-tutorial-download-github-folders-svn)
-
-* [1.3 Remote Data Preview without Downloading](04-0-remote-data-preview)
-
-* [2. Data Manipulation](../02-DATA-MANIPULATION/01-data-manipulation)
-* [3. Data Wrangling: ready-made apps](../03-DATA-WRANGLING-APPS/00-data-wrangling-apps)

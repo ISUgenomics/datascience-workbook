@@ -348,7 +348,3 @@ python3 merge_data.py -i output_step1.xlsx,data_NN.xlsx -c 11,0 -o output_step2 
 OUTPUT: `output_step2.xlsx`
 
 ![02_data_wrangling_merge_6.png]({{ images_path }}/02_data_wrangling_merge_6.png)
-
-___
-# Further Reading
-* [3.2 Aggregate data over slicing variations (python)](02-slice-or-bin-data-py)

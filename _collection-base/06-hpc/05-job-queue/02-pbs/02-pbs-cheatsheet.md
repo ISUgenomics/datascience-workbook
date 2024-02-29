@@ -135,9 +135,3 @@ The table provides a brief explanation of the commonly used `#PBS` directives in
 | `#PBS -M user_email@domain.com` | specifies the email address to which notifications should be sent |
 | `#PBS -m abe` | specifies the types of notifications to be sent. <br>The **a** option sends email when the job is aborted, <br>**b** sends email when the job begins, <br>and **e** sends email when the job ends. |
 | `#PBS -d /path/to/working/directory` | specify the working directory where the job will be executed |
-
-
-___
-# Further Reading
-* [6. Introduction to GNU Parallel](../../06-PARALLEL/01-introduction-to-gnu-parallel)
-* [7. Introduction to Containers](../../07-CONTAINERS/00-introduction-to-containers)

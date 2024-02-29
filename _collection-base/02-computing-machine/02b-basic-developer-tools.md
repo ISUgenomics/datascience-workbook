@@ -121,12 +121,3 @@ File transfer is the translocation or transport of data, usually stored in the f
   * Move, sync, and share large amounts of data between GridFTP server and a user's computer.
 * **sshfs**
   * Mount a remote filesystem from another server locally on your machine using SFTP. This is very useful for viewing files held on the cluster with your local graphics programs (e.g., charts, text files both *.docx* and *.pdf*).
-
-
-
-
-___
-# Further Reading
-* [2.3 Basic Developer Libraries](02C-basic-developer-libraries.md)
-
-* [3. Various Methods of Software Installation](03-various-methods-of-software-installation.md)

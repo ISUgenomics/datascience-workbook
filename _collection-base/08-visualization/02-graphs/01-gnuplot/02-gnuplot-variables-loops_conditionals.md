@@ -36,13 +36,3 @@ tags: []
 ### **[Filter Data]** Conditional Gnuplotting
 
 ### **[Update Params]** Bash Conditionals for changing on-the-fly plotting params
-
-
-
-___
-# Further Reading
-<!--
-* [2.1.2 Gnuplot: Create Filled Curves](03-gnuplot-examples-filled_curves)
--->
-* [2.2 Plotly-Dash – Data Processing & Interactive Plotting with Python](../02-PYTHON/01-interactive-graphing-with-python)
-* [2.3 RStudio – Data Processing & Plotting with R](../03-R/01-graphing-with-rstudio)

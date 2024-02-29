@@ -286,17 +286,3 @@ Before attempting to scrape a website for data, it is often a good idea to <b>ex
 </div><br>
 
 If you have exhausted all other options for obtaining the data you need or if web scraping is a topic that interests you, <span style="color: #ff3870;font-weight: 500;">exploring the hands-on tutorial <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/03-2-tutorial-download-web-scraping" target="_blank">Downloading Online Data using Python Web Scraping  ⤴</a>, provided in this workbook, may be a good next step.</span>
-
-
-
-___
-# Further Reading
-* [1.2.1 Downloading Online Data using WGET](03-1-tutorial-download-wget)
-* [1.2.2 Downloading Online Data using Web Scraping](03-2-tutorial-download-web-scraping)
-* [1.2.3 Downloading Online GitHub Repos using GIT](03-3-tutorial-download-github-repos-git)
-* [1.2.4 Downloading Single Folder from GitHub using SVN](03-4-tutorial-download-github-folders-svn)
-
-* [1.3 Remote Data Preview without Downloading](04-0-remote-data-preview)
-
-* [2. Data Manipulation](../02-DATA-MANIPULATION/01-data-manipulation)
-* [3. Data Wrangling: ready-made apps](../03-DATA-WRANGLING-APPS/00-data-wrangling-apps)

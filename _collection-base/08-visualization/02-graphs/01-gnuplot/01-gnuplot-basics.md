@@ -420,14 +420,3 @@ set terminal pngcairo size 1200,800 enhanced font 'Arial,14'
 
 ![Gnuplot siple graph]({{ images_path }}/gnuplot_terminals.png)<br>
 **Figure 9.** *Pre-defined styles for selected Gnuplot terminals (raster: PNG, JPEG, GIF; vector: PDF, SVG). There are many more terminals available in Gnuplot.*
-
-
-
-___
-# Further Reading
-<!--
-* [2.1.1 Gnuplot: Variables, Loops, Conditionals](02-gnuplot-variables-loops_conditionals)
-* [2.1.2 Gnuplot: Create Filled Curves](03-gnuplot-examples-filled_curves)
--->
-* [2.2 Plotly-Dash – Data Processing & Interactive Plotting with Python](../02-PYTHON/01-interactive-graphing-with-python)
-* [2.3 RStudio – Data Processing & Plotting with R](../03-R/01-graphing-with-rstudio)

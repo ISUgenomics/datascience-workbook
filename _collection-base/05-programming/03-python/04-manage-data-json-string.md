@@ -461,15 +461,3 @@ In this example, we create a Python <i>dictionary</i> with "name", "age", and "c
 
 **OUTPUT:**
 ![03_python-module-json-o7.png]({{ images_path }}/03_python-module-json-o7.png)
-
-
-
-
-___
-# Further Reading
-* [3.4 Math Module - Various Mathematical Functions](05-tutorial-python-round-abs-data-math-module.md)
-* [3.5 Pandas Library - Data Structure Manipulation Tool](06-tutorial-python-data-manipulation-pandas.md)
-* [3.6 Numpy Library - Multi-Dimensional Arrays Parser](07-tutorial-python-array-manipulation-numpy.md)
-* [3.7 SciPy Library - Algorithms for Scientific Computing](08-tutorial-python-apply-statistics-scipy.md)
-
-* [4. Introduction to R programming](../04-R/01-introduction-to-R)

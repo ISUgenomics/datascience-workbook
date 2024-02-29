@@ -490,12 +490,3 @@ By default:
 </i>
 
 -->
-
-
-
-
-
-
-___
-# Further Reading
-* [SECTION 8: Data Visualization](../../08-DataVisualization/00-DataVisualization-LandingPage)

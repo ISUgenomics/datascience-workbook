@@ -35,10 +35,3 @@ Comparing Files:			diff, comm
 Dividing files:			cut, split
 Merging Files:			cat, paste, join
 -->
-
-___
-# Further Reading
-* [2.2 Introduction to regular expressions in Unix](03-unix-intro-to-regex.md)
-
-* [3. Introduction to Python Programming](../03-PYTHON/01-introduction-to-python)
-* [4. Introduction to R programming](../04-R/01-introduction-to-R)

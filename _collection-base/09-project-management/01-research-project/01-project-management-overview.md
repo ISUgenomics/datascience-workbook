@@ -172,15 +172,3 @@ In future, data science could enable more personalized project management approa
 <br>- <a href="https://www.pmi.org/learning/thought-leadership/pulse" target="_blank">Pulse of the Profession by PMI  ⤴</a>
 <br>- <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=data%20science%20in%20project%20management" target="_blank">IEEE Xplore  ⤴</a>
 <br>- <a href="https://jds-online.org/journal/JDS" target="_blank">Journal of Data Science  ⤴</a>
-
-
-___
-# Further Reading
-* [1.1 Overview of Essential Tools for Modern Research](02-project-management-tools)
-* [1.2 Project Strategy & Design](03-project-strategy-design)
-  * [1.2.1 Project Framework](04-project-framework)
-
-* [2. Collaboration & Communication](../01-COMMUNICATION/00-collaboration-communication)
-* [3. Resource Management](../02-MANAGEMENT/00-intro-resource-management)
-* [4. Quality Assurance](../03-PRODUCTIVITY/00-quality-assurance)
-* [5. Project Closing](../04-PUBLICATION/01-project-closing)

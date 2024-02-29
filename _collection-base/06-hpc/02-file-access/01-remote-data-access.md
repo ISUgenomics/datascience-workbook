@@ -88,16 +88,3 @@ If the HPC system already has RFS pre-configured, the user may simply need to fo
 * <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/01-remote-data-access" target="_blank">1. Remote Data Access  ⤴</a>
 * <a href="https://datascience.101workbook.org/07-DataParsing/02-DATA-MANIPULATION/01-data-manipulation" target="_blank">2. Data Manipulation  ⤴</a>
 * <a href="https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/00-data-wrangling-apps" target="_blank">3. Data Wrangling: ready-made apps  ⤴</a>
-
-___
-# Further Reading
-* [2.1 Virtual Private Network (VPN) Connection](02-virtual-private-network.md)
-* [2.2 Secure Shell Connection (SSH)](03-secure-shell-connection.md)
-* [2.3 Open On Demand (OOD) Connection](04-open-on-demand.md)
-* <i>learn more about [Remote Data Access in section 7: Data Acquisition and Wrangling](../../07-DataParsing/01-FILE-ACCESS/01-remote-data-access)</i>
-
-* [3. Setting up Your Home Directory for Data Analysis](../03-HOME-DIRECTORY/00-setting-up-home-directory)
-* [4. Software Available on HPC](../04-SOFTWARE/01-software-available-on-HPC)
-* [5. Introduction to Job Scheduling](../05-JOB-QUEUE/00-introduction-to-job-scheduling)
-* [6. Introduction to GNU Parallel](../06-PARALLEL/01-introduction-to-gnu-parallel)
-* [7. Introduction to Containers](../07-CONTAINERS/00-introduction-to-containers)

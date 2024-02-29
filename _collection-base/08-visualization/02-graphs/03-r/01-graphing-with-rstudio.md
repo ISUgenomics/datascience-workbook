@@ -554,14 +554,3 @@ heatmap
 
 The attributes that are most correlated to `Rings` are `Shell_weight`
 and `Height`.
-
-
-
-
-___
-# Further Reading
-* <span style="color: #a9bbd1;"><i>(start with section <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03B-tutorial-setting-up-rstudio" target="_blank">4. Development Environment: R Programming Environment: <b>Setting Up RStudio</b>   ⤴</a>)</i></span>
-
-* [Creating Boxplots in R](03-rstudio-tutorial-box-plot)
-* [Creating Heatmaps in R](04-rstudio-tutorial-heatmap-plot)
-* [Heatmaps in R using ComplexHeatmap](05-rstudio-tutorial-ComplexHeatmap)

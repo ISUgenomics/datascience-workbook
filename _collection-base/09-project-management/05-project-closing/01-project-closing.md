@@ -24,11 +24,3 @@ tags: []
 ## <span style="color: #ff3870;">New content coming soon!</span>
 
 # Introduction
-
-
-
-
-
-___
-# Further Reading
-* [5.1 Publication](02-publication)

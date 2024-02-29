@@ -306,19 +306,3 @@ While digital tools can significantly aid in detecting errors, filling in missin
 | Tasks Management     | [Trello](https://trello.com) | High | online GUI | Useful for adapting project plans and tasks based on new decisions, with a visual interface for tracking changes and updates. |
 | Collaborative Communication | [Slack](https://slack.com/) | High | desktop app | Facilitates real-time communication and decision-making among project team members, ensuring adaptability and responsiveness to project needs. |
 | Survey and Feedback | [Google Forms](https://forms.google.com) | Medium | online GUI | A user-friendly tool for creating surveys, forms, and collecting documents in an organized manner. |
-
-
-
-
-
-
-
-
-___
-# Further Reading
-* [4.2 Productivity](02-productivity)
-* [4.3 Research Reproducibility](03-reproducibility)
-  * [4.3.1 Research Reproducibility Guideline](03-tutorial-research-reproducibility)
-
-
-* [5. Project Closing](../04-PUBLICATION/01-project-closing)

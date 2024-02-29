@@ -24,11 +24,3 @@ tags: []
 ## <span style="color: #ff3870;">New content coming soon!</span>
 
 # Introduction
-
-
-
-
-
-___
-# Further Reading
-* [RStudio: Data Processing & Plotting with R](../03-R/01-graphing-with-rstudio)

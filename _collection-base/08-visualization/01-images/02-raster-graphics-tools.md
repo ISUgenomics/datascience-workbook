@@ -330,12 +330,3 @@ Go to `File` in the menu bar and select `Save` or use the shortcut `Ctrl+S` to s
 ### Exporting
 
 To save the image in a widely supported format, go to `File` and select `Export As` or use the shortcut `Shift+Ctrl+E`. Choose a format like JPEG or PNG, specify the file name and location, and click `Export`.
-
-
-___
-# Further Reading
-* [1.2 Vector Graphics Tools](03-vector-graphics-tools)
-* [1.3 Adobe Creative Cloud](04-adobe-creative-cloud)
-* [1.4 Template-based Web Tools](05-template-based-web-tools)
-
-* [2. Introduction to Scientific Graphing](../02-GRAPHS/01-introduction-to-scientific-graphing)

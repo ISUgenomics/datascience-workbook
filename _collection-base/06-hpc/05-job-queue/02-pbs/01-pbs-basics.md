@@ -242,13 +242,3 @@ qrls 123456
 *This will release the job with ID 1234 from hold.*
 
 <span style="color: #ff3870;font-weight: 500;">If you want to learn more about PBS commands, a useful resource to explore is the <a href="https://datascience.101workbook.org/06-IntroToHPC/05-JOB-QUEUE/02-PBS/02-pbs-cheatsheet" target="_blank">PBS cheatsheet  ⤴</a>.</span>
-
-
-___
-# Further Reading
-* [5.2.1 Creating PBS Job Submission Scripts](03-pbs-1-tutorial-job-submission)
-* [5.2.2 Submitting Dependency Jobs using PBS](04-pbs-2-tutorial-submitting-dependency)
-* [PBS Commands CheatSheet](02-pbs-cheatsheet)
-
-* [6. Introduction to GNU Parallel](../../06-PARALLEL/01-introduction-to-gnu-parallel)
-* [7. Introduction to Containers](../../07-CONTAINERS/00-introduction-to-containers)

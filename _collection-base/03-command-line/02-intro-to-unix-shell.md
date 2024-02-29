@@ -602,12 +602,3 @@ For example, directly from the command line you can change the number of command
 export HISTSIZE=300
 </span>
 </div><br>
-
-___
-# Further Reading
-* [Unix Basic Commands: Navigation, File Creation & Preview](02A-basic-commands.md)
-* [Command Line Text Files Editors: nano, vim](02B-text-files-editors.md)
-* [System Info and Access Parmisions](02C-unix-system-info-permissions.md)
-* [Superuser Command: sudo](02D-admin-commands.md)
-* [Getting Started with UNIX + VIDEO + exercises](02E-tutorial-unix-getting-started.md)
-* [Unix Commands CheatSheet](04-unix-cheat-sheet.md)

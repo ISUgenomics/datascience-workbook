@@ -317,11 +317,3 @@ sessionInfo()
 ## [37] colorspace_2.0-3   labeling_0.4.2     utf8_1.2.2         stringi_1.7.8
 ## [41] munsell_0.5.0
 ```
-
----
-
-# Further Reading
-
-- [4.3 tidyverse - R packages set for advanced exploratory data analysis](04-tidyverse-R-advanced-data-analysis.md)
-
-- [SECTION 6. High-Performance Computing (HPC)](../../06-IntroToHPC/00-IntroToHPC-LandingPage)

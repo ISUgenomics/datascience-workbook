@@ -863,12 +863,3 @@ Diversify funding sources and maintain a reserve fund.
 ...remember to periodically cycle through these five steps of project strategy and risk management to keep your project on the path to success. Regular revisits will ensure that your project adapts to new developments and stays aligned with your goals.
 
 *Best of luck to all small-scale research project managers – your strategic planning and risk management efforts are key to turning your innovative ideas into successful outcomes! ~Alex*
-
-___
-# Further Reading
-* [1.2.1 Project Framework](04-project-framework)
-
-* [2. Collaboration & Communication](../01-COMMUNICATION/00-collaboration-communication)
-* [3. Resource Management](../02-MANAGEMENT/00-intro-resource-management)
-* [4. Quality Assurance](../03-PRODUCTIVITY/00-quality-assurance)
-* [5. Project Closing](../04-PUBLICATION/01-project-closing)

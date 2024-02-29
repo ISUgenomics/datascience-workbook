@@ -111,10 +111,3 @@ To get started with creating high-quality and meaningful data visualizations usi
 By following these steps and paying attention to best practices, you can create effective and engaging data visualizations that communicate the research findings to a wider audience.
 
 By exploring the hands-on tutorials in this Workbook, you can gain a great starting point to learn how to create data visualizations. See the [Further Reading](#further-reading) section below to find a list of covered topics.
-
-
-___
-# Further Reading
-* [2.1 Gnuplot – Creating Plots in the UNIX Shell](01-GNUPLOT/01-gnuplot-basics)
-* [2.2 Plotly-Dash – Data Processing & Interactive Plotting with Python](02-PYTHON/01-interactive-graphing-with-python)
-* [2.3 RStudio – Data Processing & Plotting with R](03-R/01-graphing-with-rstudio)

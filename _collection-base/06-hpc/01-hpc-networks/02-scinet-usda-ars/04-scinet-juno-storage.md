@@ -97,14 +97,3 @@ rsync -avz --no-p --no-g ttt nal-dtn.scinet.usda.gov:/LTS/project/<project_name>
 <span style="font-weight:800;">WARNING:</span>
 <br><span style="font-style:italic;"> Note, the organization of the file system is slightly different on computing clusters: <b>/project/project_name</b> and Juno storage: <b>/LTS/project/project_name</b> .</span>
 </div><br>
-
-___
-# Further Reading
-* [1.3 ISU HPC](../03-ISUHPC/01-isu-hpc-intro)
-
-* [2. Remote Access to HPC Resources](../02-FILE-ACCESS/01-remote-data-access)
-* [3. Setting up Your Home Directory for Data Analysis](../03-HOME-DIRECTORY/00-setting-up-home-directory)
-* [4. Software Available on HPC](../04-SOFTWARE/01-software-available-on-HPC)
-* [5. Introduction to Job Scheduling](../05-JOB-QUEUE/00-introduction-to-job-scheduling)
-* [6. Introduction to GNU Parallel](../06-PARALLEL/01-introduction-to-gnu-parallel)
-* [7. Introduction to Containers](../07-CONTAINERS/00-introduction-to-containers)

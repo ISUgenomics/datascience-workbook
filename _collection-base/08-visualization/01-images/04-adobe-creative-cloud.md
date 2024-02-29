@@ -557,9 +557,3 @@ You can also find tutorials and helpful resources by navigating to the applicati
 
 * **Contextual Tutorials** <br>
 Some Adobe applications, like `Premiere Pro` and `After Effects`, feature contextual, interactive tutorials. These tutorials guide you through the actual software interface, allowing you to learn by doing. They can often be found in the "Help" or "Window" menu.
-
-___
-# Further Reading
-* [1.4 Template-based Web Tools](05-template-based-web-tools)
-
-* [2. Introduction to Scientific Graphing](../02-GRAPHS/01-introduction-to-scientific-graphing)

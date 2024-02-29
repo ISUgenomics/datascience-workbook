@@ -596,10 +596,3 @@ Parent=mRNA1 Chromosome_4       Mikado_loci     exon    10616130        10616190
 Parent=mRNA1 Chromosome_4       .       intron  10616191        10616666        .       -       .       Parent=mRNA1
 ```
 </details>
-
-
-
-
-___
-# Further Reading
-* [Unix Commands CheatSheet](04-unix-cheat-sheet.md)

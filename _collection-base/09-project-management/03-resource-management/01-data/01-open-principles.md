@@ -116,24 +116,3 @@ This movement aims to make the peer review process more transparent by disclosin
 |**When Defined:**|Various models have been explored since the early 2000s.|
 |**Why?**|To increase transparency, accountability, and inclusivity in the peer review process.|
 |**Sources:**| An overview and discussion of open peer review can often be found in scholarly communications literature and on the websites of journals implementing such practices.|
-
-
-
-
-
-
-___
-# Further Reading
-* [3.1.1 CARE Principles](02-care-principles)
-* [3.1.2 FAIR Principles](03-fair-principles)
-* [3.1.4 TRUST Principles](04-trust-principles)
-
-
-* [3.1.5 Data Management Plan](05-data-management-plan)
-
-* [3.2 Code Management](../01-SOURCE-CODE/00-code-developments)
-* [3.3 Storage & Version Control](../01-SOURCE-CODE/01-storage-version-control)
-* [3.4 Documentation Improvement Tools](../02-DOCUMENTATION/01-documentation-improvement-tools)
-
-* [4. Quality Assurance](../../03-PRODUCTIVITY/00-quality-assurance)
-* [5. Project Closing](../../04-PUBLICATION/01-project-closing)

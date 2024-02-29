@@ -113,10 +113,3 @@ Finally, you need to practice what you have learned by working on hands-on tutor
 
 
 * SECTION: <a href="https://datascience.101workbook.org/08-DataVisualization/02-GRAPHS/02-PYTHON/04-plotly-examples-in-jupyterlab" target="_blank">Plotly Graphing - Interactive Examples in the JupyterLab  ⤴</a>
-
-
-___
-# Further Reading
-* [2.2.1 Read, Write, Split, Select Data](02-tutorial-read-write-split-select-data)
-
-* [3. Data Wrangling: ready-made apps](../../03-DATA-WRANGLING-APPS/00-data-wrangling-apps)

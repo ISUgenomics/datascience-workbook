@@ -315,14 +315,3 @@ Otherwise, go to step 3.
 
 
 3. Go to the <a href="https://datascience.101workbook.org/06-IntroToHPC/04-SOFTWARE/03-installing-custom-programs" target="_blank">Installing Custom Programs in User Space  ⤴</a> tutorial to learn how to install the necessary software yourself.
-
-
-___
-# Further Reading
-* [4.1 Accessing pre-Installed Modules](02-accessing-preinstalled-modules)
-* [4.2 Accessing Software using Package Manager](03-accessing-package-manager)
-* [4.3 Installing Custom Programs in User Space](04-installing-custom-programs)
-
-* [5. Introduction to Job Scheduling](../05-JOB-QUEUE/00-introduction-to-job-scheduling)
-* [6. Introduction to GNU Parallel](../06-PARALLEL/01-introduction-to-gnu-parallel)
-* [7. Introduction to Containers](../07-CONTAINERS/00-introduction-to-containers)

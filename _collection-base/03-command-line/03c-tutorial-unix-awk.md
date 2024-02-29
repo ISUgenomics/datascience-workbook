@@ -189,10 +189,3 @@ RS: RS command stores the current record separator character. Since, by default,
 OFS: OFS command stores the output field separator, which separates the fields when Awk prints them. The default is a blank space. Whenever print has several parameters separated with commas, it will print the value of OFS in between each parameter.
 
 ORS: ORS command stores the output record separator, which separates the output lines when Awk prints them. The default is a newline character. print automatically outputs the contents of ORS at the end of whatever it is given to print.
-___
-
-# Further Reading
-* [BIOAWK – biological data manipulation](03D-tutorial-unix-bioawk.md)
-* [Comparing and Collating Two Files with Unix](05-comparing-two-files.md)
-
-* [Unix Commands CheatSheet](04-unix-cheat-sheet.md)

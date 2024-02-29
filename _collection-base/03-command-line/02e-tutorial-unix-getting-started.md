@@ -977,10 +977,3 @@ You can see that you now have a new "file" which is really a pointer that is lin
 rm myFirstFile.txt
 ```
 This will not affect the file in unixTutorial but will remove it from the subfolder Numbers.
-
-
-___
-# Further Reading
-* [Unix Commands CheatSheet](04-unix-cheat-sheet.md)
-
-* [3. Useful Text Manipulation Programs](03-text-manipulation-programs.md)

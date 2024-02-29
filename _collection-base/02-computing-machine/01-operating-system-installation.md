@@ -140,11 +140,3 @@ Having **multiple operating systems** installed on a single computer can provide
 * <a href="https://www.oreilly.com/library/view/windows-xp-hacks/0596005113/ch01s02.html" target="_blank">Customize Multiboot Startup Options if you have only Windows XP installed [by O'reilly] ⤴</a>
 * <a href="https://www.freecodecamp.org/news/how-to-dual-boot-any-linux-distribution-with-windows/" target="_blank">How to Dual Boot Any Linux Distribution With Windows [by freeCodeCamp] ⤴</a>
 * <a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/performing_an_advanced_rhel_8_installation/kickstart-and-advanced-boot-options_installing-rhel-as-an-experienced-user" target="_blank">Customize boot options in Red Hat [by Red Hat]  ⤴</a>
-
-___
-# Further Reading
-* [1.1 Windows OS Installation](01A-windows-installation.md)
-* [1.2 Linux OS Installation](01B-linux-installation.md)
-
-* [2. Must-Have Software](02-must-have-software.md)
-* [3. Various Methods of Software Installation](03-various-methods-of-software-installation.md)

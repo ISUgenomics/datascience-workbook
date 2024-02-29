@@ -38,20 +38,3 @@ The text files are the easiest. You can use any of the standard UNIX commands to
 |```head```|view first few lines of a file|```head``` _filename_|use ```-n``` option to change the number of lines displayed. ```-n 20``` displays 20 lines|
 |```tail```|view last few lines of a file|```tail``` _filename_|use ``` -n``` option to change the number of lines displayed. ```-n 20``` displays 20 lines|
 |```od```|octal dump of a file|```od``` _filename_|use``` -c``` options and pipe it through less. You can see non printable characters with this option (like tab, whitespace, newline etc)|
-
-
-
-
-
-
-
-
-
-___
-# Further Reading
-* [1.3.2 Viewing PDF Files using X11 SSH connection](04-2-tutorial-view-pdf-files-x11)
-* [1.3.3 Viewing Graphic Files using ASCII art in the termianl](04-3-tutorial-view-graphic-files-terminal)
-* [1.3.4 Mounting Remote Folder on Local Machine](04-4-tutorial-mount-remote-folder)
-
-* [2. Data Manipulation](../02-DATA-MANIPULATION/01-data-manipulation)
-* [3. Data Wrangling: ready-made apps](../03-DATA-WRANGLING-APPS/00-data-wrangling-apps)

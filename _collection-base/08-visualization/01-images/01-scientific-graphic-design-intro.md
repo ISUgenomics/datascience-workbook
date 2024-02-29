@@ -124,13 +124,3 @@ Learning to create scientific graphics can be very beneficial for researchers, a
 Researchers can create good quality scientific graphics by themselves once they learn a few tools. By learning how to use these tools, researchers can create a variety of scientific graphics, diagrams, and infographics, which can enhance the quality of their work and improve their ability to communicate their findings effectively.
 
 By exploring the hands-on tutorials in this Workbook, you can gain a great starting point to learn how to design infographics. See the [Further Reading](#further-reading) section below to find a list of covered topics.
-
-
-___
-# Further Reading
-* [1.1 Raster Graphics Tools](02-raster-graphics-tools)
-* [1.2 Vector Graphics Tools](03-vector-graphics-tools)
-* [1.3 Adobe Creative Cloud](04-adobe-creative-cloud)
-* [1.4 Template-based Web Tools](05-template-based-web-tools)
-
-* [2. Introduction to Scientific Graphing](../02-GRAPHS/01-introduction-to-scientific-graphing)

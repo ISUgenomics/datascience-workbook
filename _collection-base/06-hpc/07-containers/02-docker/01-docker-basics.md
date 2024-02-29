@@ -132,7 +132,3 @@ The `:/data` after your path is the default container path (keep it as is) and t
 <br>
 Running this command generated the desired output file I named Blast_out. You should now see the container running in the Docker Desktop as well, and you can use the terminal within the app as well for running blast now. <br>
 <br>
-
-___
-# Further Reading
-* [SECTION 7. Data Acquisition and Wrangling](../../../07-DataParsing/00-DataParsing-LandingPage)

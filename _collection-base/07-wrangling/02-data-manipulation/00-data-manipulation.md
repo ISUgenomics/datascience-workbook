@@ -138,12 +138,3 @@ In addition to the above tools and languages, there are several other specialize
 |<a href="https://www.sas.com/en_us/software.html" target="_blank">SAS  ⤴</a> |statistical software suite for data management, analysis, and visualization|
 |<a href="https://openrefine.org/" target="_blank">OpenRefine  ⤴</a> |tool for cleaning and transforming messy data|
 |<a href="https://www.tableau.com/" target="_blank">Tableau  ⤴</a> |tool for data visualization and manipulation|
-
-
-
-___
-# Further Reading
-* [2.1 Manipulating Excel Data Sheets](01-EXCEL/01-manipulate-excel-sheets)
-* [2.2 Manipulating Text Files with Python](02-PYTHON/01-manipulate-data-with-python)
-
-* [3. Data Wrangling: ready-made apps](../03-DATA-WRANGLING-APPS/00-data-wrangling-apps)

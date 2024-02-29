@@ -64,22 +64,3 @@ On Windows, it will be easier for you to login first to a linux based system for
   ![]({{ images_path }}/WindowsSearch.png)
 
 **Note:** The window can be resized with the mouse and the font text can be increased by pressing `cmd +` or `control +` on Mac or Windows, respectively.
-
-
-
-
-
-
-
-___
-# Further Reading
-* [2.2.1 SSH shortcuts and password-less login](03A-ssh-shortcuts.md)
-
-* [2.3 Open On Demand (OOD) Connection](04-open-on-demand.md)
-* learn more about [Remote Data Access in section 7: Data Acquisition](../../07-DataParsing/01-FILE-ACCESS/01-remote-data-access)
-
-* [3. Setting up Your Home Directory for Data Analysis](../03-HOME-DIRECTORY/00-setting-up-home-directory)
-* [4. Software Available on HPC](../04-SOFTWARE/01-software-available-on-HPC)
-* [5. Introduction to Job Scheduling](../05-JOB-QUEUE/00-introduction-to-job-scheduling)
-* [6. Introduction to GNU Parallel](../06-PARALLEL/01-introduction-to-gnu-parallel)
-* [7. Introduction to Containers](../07-CONTAINERS/00-introduction-to-containers)

@@ -231,11 +231,3 @@ import numpy as np
 ```
 
 Together, the Jupyter Notebook + MyBinder + environment.yml provides a way to sharing a reproducible Python analysis pipeline.
-
-
-
-___
-
-# Further Reading
-* [2. Python programming environment(s)](02-python-programming-environment.md)
-* [3. R programming environment(s)](03-r-programming-environment.md)

@@ -34,8 +34,3 @@ Imagine, rather than typing all the file names, you could represent them with a 
   * ? to represent a single letter: eg. ?????.txt matches all files with exactly 5 letters, with txt extension.
   * ^ beginning and $ for the end of the word:  eg  ^text* forces the match for the beginning letters only.
 -->
-
-___
-# Further Reading
-* [3. Introduction to Python Programming](../03-PYTHON/01-introduction-to-python)
-* [4. Introduction to R programming](../04-R/01-introduction-to-R)

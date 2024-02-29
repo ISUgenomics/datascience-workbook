@@ -761,12 +761,3 @@ sessionInfo()
 ## [45] labeling_0.4.2     utf8_1.2.2         stringi_1.7.8      munsell_0.5.0     
 ## [49] crayon_1.5.1
 ```
-
-
-
-___
-# Further Reading
-* [4.2 ggplot2 - R package for customizable graphs and charts](03-ggplot-R-plotting.md)
-* [4.3 tidyverse - R packages set for advanced exploratory data analysis](04-tidyverse-R-advanced-data-analysis.md)
-
-* [SECTION 6. High-Performance Computing (HPC)](../../06-IntroToHPC/00-IntroToHPC-LandingPage)

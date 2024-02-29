@@ -338,13 +338,3 @@ import plotly.graph_objects as go
 ```
 
 Explore *go_heatmap_FQC.ipynb* notebook.
-
-
-
-
-___
-# Further Reading
-* [2.2.2 Introduction to Dash (Python library)](03-intro-to-dash-widgets)
-* [2.2.3 Plotly Graphing - Interactive Examples in the JupyterLab](04-plotly-examples-in-jupyterlab)
-
-* [2.3 RStudio – Data Processing & Plotting with R](../03-R/01-graphing-with-rstudio)

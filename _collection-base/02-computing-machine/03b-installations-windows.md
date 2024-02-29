@@ -200,8 +200,3 @@ move nextflow in a directory into $PATH or use `./nextflow` if it is in your cur
 - <a href="https://notepad-plus-plus.org/downloads/" target="_blank">Notepad++ ⤴</a> is a text and source code editor for Windows
 - <a href="http://windowgrid.net/" target="_blank">Windowgrid ⤴</a> allows the user to quickly and easily layout their windows on screen
 - <a href="https://getgreenshot.org/downloads/" target="_blank">Greenshot ⤴</a> is a screenshot tool with useful features
-
-
-___
-# Further Reading
-* [3.3 Installations on Linux](03C-tutorial-installations-on-linux.md)

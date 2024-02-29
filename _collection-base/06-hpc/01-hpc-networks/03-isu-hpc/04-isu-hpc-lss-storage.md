@@ -50,12 +50,3 @@ scp /home/$USER/myfile /lss/research/your-lab/
 The same method applies to other clusters as well, move data to LSS using data transfer node of the cluster in use.
 <br>
 <br>
-
-___
-# Further Reading
-* [2. Remote Access to HPC Resources](../../02-FILE-ACCESS/01-remote-data-access.md)
-* [3. Setting up Your Home Directory for Data Analysis](../../03-HOME-DIRECTORY/00-setting-up-home-directory.md)
-* [4. Software Available on HPC](../../04-SOFTWARE/01-software-available-on-HPC.md)
-* [5. Introduction to Job Scheduling](../../05-JOB-QUEUE/00-introduction-to-job-scheduling.md)
-* [6. Introduction to GNU Parallel](../../06-PARALLEL/01-introduction-to-gnu-parallel.md)
-* [7. Introduction to Containers](../../07-CONTAINERS/00-introduction-to-containers.md)

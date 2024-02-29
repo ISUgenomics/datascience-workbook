@@ -456,9 +456,3 @@ To replace any missing values in the dataset with the average value for that col
 ```
 no_missing_data = df.fillna(df.mean())
 ```
-
-
-
-___
-# Further Reading
-* [3. Data Wrangling: ready-made apps](../../03-DATA-WRANGLING-APPS/00-data-wrangling-apps)

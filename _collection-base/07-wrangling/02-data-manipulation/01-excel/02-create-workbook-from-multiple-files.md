@@ -93,15 +93,3 @@ End Sub
 ```
 
 Now you are all set to import files. Click on `Macros` again, and then `Run`. A window should pop up asking location of the text files. Navigate to the files location and select all text files. Click `OK`. All text files will be imported to a new spreadsheet. It might take a while to complete, if there are large number of files, so be patient.
-
-
-
-___
-# Further Reading
-* [2.1.2 Export Multiple Worksheets as Separate Text Files](03-tutorial-export-multiple-worksheets)
-* [2.1.3 Create Index for All Worksheets](04-tutorial-create-index-for-all-worksheets)
-* [2.1.4 Merge Two Spreadsheets using a Common Column](05-tutorial-merge-spreadsheets-by-column)
-
-* [2.2 Manipulating Text Files with Python](../02-PYTHON/01-manipulate-data-with-python)
-
-* [3. Data Wrangling: ready-made apps](../../03-DATA-WRANGLING-APPS/00-data-wrangling-apps)

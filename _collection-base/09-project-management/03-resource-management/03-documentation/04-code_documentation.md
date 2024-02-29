@@ -1494,8 +1494,3 @@ Version control platforms, such as Git and Mercurial, enable developers to track
 
 <span style="color: #ff3870;font-weight: 500;"> I highly recommend checking out the section in the workbook dedicated to <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/01-storage-version-control" target="_blank">Storage & Version Control  ⤴</a>.</span><br>
 *It offers practical tutorials that will equip you with hands-on skills, ensuring you can effectively utilize version control in your projects. This knowledge is invaluable for any modern software development endeavor.*
-
-___
-# Further Reading
-* [4. Quality Assurance](../../03-PRODUCTIVITY/00-quality-assurance)
-* [5. Project Closing](../../04-PUBLICATION/01-project-closing)

@@ -765,14 +765,3 @@ conda install --use-local <package>
 <span style="font-weight:800;">WARNING:</span>
 <br><span style="font-style:italic;">Note that the package name may be different from the repository name. You can check the <b>"setup.py"</b> file to see the package name.</span>
 </div><br>
-
-
-___
-# Further Reading
-* [2.3.1 Shell & IDLE: create Python code in a terminal or simple IDE](02B-python-terminal-shell.md)
-* [2.3.2 Text editors: create Python code in terminal text files](02C-python-text-editor.md)
-* [2.3.3 Jupyter Lab: create an interactive Python notebook](02D-python-jupyter-notebook.md)
-* [2.3.4 PyCharm: IDE for Professional Python Developers](02E-python-pycharm-ide.md)
-
-
-* [3. R programming environment(s)](03-r-programming-environment.md)

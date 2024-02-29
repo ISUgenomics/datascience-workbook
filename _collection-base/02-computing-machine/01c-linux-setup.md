@@ -24,13 +24,3 @@ tags: []
 ## <span style="color: #ff3870;">New content coming soon!</span>
 
 # Introduction
-
-
-
-
-
-___
-# Further Reading
-* [2. Must-Have Software](02-must-have-software.md)
-
-* [3. Various Methods of Software Installation](03-various-methods-of-software-installation.md)

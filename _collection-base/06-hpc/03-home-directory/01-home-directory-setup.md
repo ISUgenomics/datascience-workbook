@@ -127,16 +127,4 @@ mkdir $PROJECTFOLDER/${USER}_notebook/.local
 mkdir $PROJECTFOLDER/${USER}_notebook/.lmod.d
 mkdir $PROJECTFOLDER/${USER}_notebook/.ncbi
 ls -d $PROJECTFOLDER/${USER}_notebook/.* | sort | awk 'NR>2' | xargs -I xx ln -s xx
-
 ```
-
-
-
-___
-# Further Reading
-* [3.1 .bashrc example file](01-bashrc.md)
-
-* [4. Software Available on HPC](../04-SOFTWARE/01-software-available-on-HPC)
-* [5. Introduction to Job Scheduling](../05-JOB-QUEUE/00-introduction-to-job-scheduling)
-* [6. Introduction to GNU Parallel](../06-PARALLEL/01-introduction-to-gnu-parallel)
-* [7. Introduction to Containers](../07-CONTAINERS/00-introduction-to-containers)

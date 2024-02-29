@@ -559,7 +559,3 @@ PyCharm allows you to configure the debugging process by setting various options
 *You can configure the debugging process by selecting "Edit Configurations" from the dropdown menu expanded from the "Run" option in the top toolbar. This will open the "Run/Debug Configurations" dialog window, where you can set various options for the debugging process, including logs.*
 
 ![02_python-pycharm-project-debug-config.png]({{ images_path }}/02_python-pycharm-project-debug-config.png)
-
-___
-# Further Reading
-* [R Programming Environment](03-r-programming-environment.md)

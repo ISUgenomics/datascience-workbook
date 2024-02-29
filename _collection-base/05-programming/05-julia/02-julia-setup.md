@@ -394,8 +394,3 @@ To create a new kernel for each environment, you would typically create a new IJ
 It is recommended to <b>create a single Julia kernel in the base environment</b> with system-wide installed libraries, and then activate more specific environments as needed within individual Jupyter notebooks.
 </span>
 </div>
-
-
-___
-# Further Reading
-* [SECTION 6. High-Performance Computing (HPC)](../../06-IntroToHPC/00-IntroToHPC-LandingPage)

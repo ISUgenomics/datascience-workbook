@@ -659,11 +659,3 @@ hello_cpp = CxxWrap.CxxPtr{Cvoid}(CxxWrap.@cxx_str "say_hello")
 hello_cpp()                      # Output: Hello from C++!
 ```
 <i>Here, the CxxWrap package enables calling a C++ function from Julia. A simple C++ function say_hello is defined within a cxx string block, and then called from Julia, demonstrating interoperability with C++ code.</i>
-
-
-
-___
-# Further Reading
-* [5.1 Julia setup: installation, environments and Jupyter integration](/02-tutorial-setup-julia)
-
-* [SECTION 6. High-Performance Computing (HPC)](../../06-IntroToHPC/00-IntroToHPC-LandingPage)

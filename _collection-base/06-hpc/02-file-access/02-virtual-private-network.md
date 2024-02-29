@@ -156,17 +156,3 @@ You will be prompted to **enter your password** for the remote machine, and if t
 <a href="https://datascience.101workbook.org/06-IntroToHPC/02-FILE-ACCESS/03-secure-shell-connection" target="_blank">2.2 Secure Shell Connection (SSH)  ⤴</a>. <br>
 Also, get the advantage of **useful SSH shortcuts and set up password-less access** to your remote computing systems with this step-by-step guide: <br>
 <a href="https://datascience.101workbook.org/06-IntroToHPC/02-FILE-ACCESS/03A-ssh-shortcuts" target="_blank">2.2.1 SSH shortcuts and password-less login  ⤴</a>.
-
-
-
-___
-# Further Reading
-* [2.2 Secure Shell Connection (SSH)](03-secure-shell-connection.md)
-* [2.3 Open On Demand (OOD) Connection](04-open-on-demand.md)
-* learn more about [Remote Data Access in section 7: Data Acquisition](../../07-DataParsing/01-FILE-ACCESS/01-remote-data-access)
-
-* [3. Setting up Your Home Directory for Data Analysis](../03-HOME-DIRECTORY/00-setting-up-home-directory)
-* [4. Software Available on HPC](../04-SOFTWARE/01-software-available-on-HPC)
-* [5. Introduction to Job Scheduling](../05-JOB-QUEUE/00-introduction-to-job-scheduling)
-* [6. Introduction to GNU Parallel](../06-PARALLEL/01-introduction-to-gnu-parallel)
-* [7. Introduction to Containers](../07-CONTAINERS/00-introduction-to-containers)

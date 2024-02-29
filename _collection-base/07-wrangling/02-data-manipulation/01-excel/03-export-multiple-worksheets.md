@@ -161,14 +161,3 @@ Application.ScreenUpdating = True
 End Sub
 ```
 Run the macro, but clicking on `Developer` tab, and `Run Macro`
-
-
-
-___
-# Further Reading
-* [2.1.3 Create Index for All Worksheets](04-tutorial-create-index-for-all-worksheets)
-* [2.1.4 Merge Two Spreadsheets using a Common Column](05-tutorial-merge-spreadsheets-by-column)
-
-* [2.2 Manipulating Text Files with Python](../02-PYTHON/01-manipulate-data-with-python)
-
-* [3. Data Wrangling: ready-made apps](../../03-DATA-WRANGLING-APPS/00-data-wrangling-apps)

@@ -225,11 +225,3 @@ bash bioSyntax_INSTALL.sh vim
 ```
 
 restart the terminal and you're all set to use the bioSyntax!
-
-
-___
-# Further Reading
-* [System Info and Access Parmisions](02C-unix-system-info-permissions.md)
-* [Superuser Command: sudo](02D-admin-commands.md)
-* [Getting Started with UNIX + VIDEO + exercises](02E-tutorial-unix-getting-started.md)
-* [Unix Commands CheatSheet](04-unix-cheat-sheet.md)

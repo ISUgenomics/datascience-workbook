@@ -210,14 +210,3 @@ Learn details from the most recent docs provided at the GitHub official website:
 ---
 
 Contibutions for this markdown document came from Matt Hufford and was modified with permission from his [BCB546](https://github.com/EEOB-BioData/BCB546X-Fall2017/tree/master/Week_03/) course.  Check out his amazing power point he created at the above link.
-
-
-___
-# Further Reading
-* [GitHub for advanced users](04A-github-advanced)
-* [Introduction to BitBucket](05-intro-to-bitbucket)
-
-* [3.4 Documentation Improvement Tools](../02-DOCUMENTATION/01-documentation-improvement-tools)
-
-* [4. Quality Assurance](../../03-PRODUCTIVITY/00-quality-assurance)
-* [5. Project Closing](../../04-PUBLICATION/01-project-closing)

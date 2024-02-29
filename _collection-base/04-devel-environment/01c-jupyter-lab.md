@@ -226,14 +226,3 @@ By clicking on the <b>blue vertical bar</b> on the left-hand side of each cell, 
 
 
 # Hands-on Tutorials -->
-
-
-
-___
-
-# Further Reading
-* [1.2.2 Getting Started with Jupyter Notebook on HPC systems](01B-tutorial-jupyter-notebook.md)
-* [1.2.3 Sharing Jupyter-based reproducible pipline via MyBinder](01B-tutorial-jupyter-sharing-mybinder.md)
-
-* [2. Python programming environment(s)](02-python-programming-environment.md)
-* [3. R programming environment(s)](03-r-programming-environment.md)

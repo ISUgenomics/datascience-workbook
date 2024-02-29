@@ -55,8 +55,3 @@ One effective way to learn about geospatial analysis is to study examples of rea
 2. <a href="https://geospatial.101workbook.org/list.html" target="_blank">Detailed Table of Content  ⤴</a>
 3. <a href="https://geospatial.101workbook.org/glossary.html" target="_blank">Geospatial Glossary  ⤴</a>
 4. <a href="https://geospatial.101workbook.org/Contributing.html" target="_blank">How to contribute?  ⤴</a>
-
-
-___
-# Further Reading
-* [2.3 Machine Learning Outlook](02C-machine-learning)

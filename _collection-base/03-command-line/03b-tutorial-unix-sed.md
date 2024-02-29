@@ -142,11 +142,3 @@ sed '2 i line to insert' FILENAME
 
 ### 5. Extract portions of the lines
 still to come!
-
-___
-# Further Reading
-* [AWK – advanced text processing](03C-tutorial-unix-awk.md)
-* [BIOAWK – biological data manipulation](03D-tutorial-unix-bioawk.md)
-* [Comparing and Collating Two Files with Unix](05-comparing-two-files.md)
-
-* [Unix Commands CheatSheet](04-unix-cheat-sheet.md)

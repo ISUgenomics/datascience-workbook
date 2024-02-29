@@ -71,12 +71,3 @@ SECOND=`qsub -W depend=afterok:$FIRST second_job.sub`
 THIRD=`qsub -W depend=afterok:$SECOND third_job.sub`
 FOURTH=`qsub -W depend=afterok:$THIRD fourth_job.sub`
 ```
-
-
-
-___
-# Further Reading
-* [PBS Commands CheatSheet](02-pbs-cheatsheet)
-
-* [6. Introduction to GNU Parallel](../../06-PARALLEL/01-introduction-to-gnu-parallel)
-* [7. Introduction to Containers](../../07-CONTAINERS/00-introduction-to-containers)

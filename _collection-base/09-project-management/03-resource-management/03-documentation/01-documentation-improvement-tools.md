@@ -212,14 +212,3 @@ Inline code documentation tools assist developers in adding explanatory comments
 ## Version Control Platforms with Documentation
 
 Version control platforms with documentation offer tools to **track, manage, and collaborate on code changes** while simultaneously providing features for detailed documentation. They enable users to maintain a history of code modifications, branch and merge projects, and integrate wikis or readme files to guide collaborators.
-
-
-___
-# Further Reading
-* [3.4.1 A Practical Guide to Managing Research Documentation](../02-DOCUMENTATION/02-manage-project-documentation)
-* [3.4.2 Tools for Research Documentation](../02-DOCUMENTATION/03-project_documentation)
-* [3.4.3 Tools for Code Documentation](../02-DOCUMENTATION/04-code_documentation)
-* [3.4.4 Introduction to Markdown](../02-DOCUMENTATION/02-intro-to-markdown)
-
-* [4. Quality Assurance](../../03-PRODUCTIVITY/00-quality-assurance)
-* [5. Project Closing](../../04-PUBLICATION/01-project-closing)

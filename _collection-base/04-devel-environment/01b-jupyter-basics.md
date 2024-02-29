@@ -156,12 +156,3 @@ Follow the Atlas Open OnDemand **Guide** at [hpc.msstate.edu](https://www.hpc.ms
 Access the **Ceres OOD login** web page at: [http://ceres-ood.scinet.usda.gov/](http://ceres-ood.scinet.usda.gov/)
 
 Follow the Ceres Open OnDemand **Guide** at [scinet.usda.gov](https://scinet.usda.gov/guide/ceres_ood/)
-
-___
-# Further Reading
-* [1.2.1 Getting Started with JupyterLab on a local machine](01B-tutorial-jupyter-lab.md)
-* [1.2.2 Getting Started with Jupyter Notebook on HPC systems](01B-tutorial-jupyter-notebook.md)
-* [1.2.3 Sharing Jupyter-based reproducible pipline via MyBinder](01B-tutorial-jupyter-sharing-mybinder.md)
-
-* [2. Python programming environment(s)](02-python-programming-environment.md)
-* [3. R programming environment(s)](03-r-programming-environment.md)

@@ -1096,11 +1096,3 @@ You should see a stdout and stderr file for each job in the array of jobs that w
 <br>
 
 [return to top of page](#session-2-tutorial)
-
-
-
-___
-# Further Reading
-* [1.2.3 Juno Storage](04-scinet-juno-storage)
-
-* [1.3 ISU HPC](../03-ISUHPC/01-isu-hpc-intro)

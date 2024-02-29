@@ -125,12 +125,3 @@ Right click on "Untitled.ipynb" either on the notebook tab or in the file browse
 <br>
 
 [return to top of page](#session-2-tutorial)
-
-
-___
-
-# Further Reading
-* [1.2.3 Sharing Jupyter-based reproducible pipline via MyBinder](01B-tutorial-jupyter-sharing-mybinder.md)
-
-* [2. Python programming environment(s)](02-python-programming-environment.md)
-* [3. R programming environment(s)](03-r-programming-environment.md)

@@ -410,14 +410,3 @@ Figma and Adobe XD cater to the collaborative design process, **allowing teams t
 <i>Examples: <a href="https://www.researchgate.net/" target="_blank">ResearchGate</a>, <a href="https://www.academia.edu/" target="_blank">Academia.edu</a>, <a href="https://arxiv.org/" target="_blank">ArXiv</a></i>
 
 Sites like ResearchGate, Academia.edu, and ArXiv **allow researchers to share their findings with the broader academic community** even before publication in a journal. These platforms not only facilitate dissemination but also offer analytics, peer reviews, and networking opportunities. They play a crucial role in increasing the visibility and impact of the research.
-
-___
-# Further Reading
-* [1.2 Project Strategy & Design](03-project-strategy-design)
-  * [1.2.1 Project Framework](04-project-framework)
-
-
-* [2. Collaboration & Communication](../01-COMMUNICATION/00-collaboration-communication)
-* [3. Resource Management](../02-MANAGEMENT/00-intro-resource-management)
-* [4. Quality Assurance](../03-PRODUCTIVITY/00-quality-assurance)
-* [5. Project Closing](../04-PUBLICATION/01-project-closing)

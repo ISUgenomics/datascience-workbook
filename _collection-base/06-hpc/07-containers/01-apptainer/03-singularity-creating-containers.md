@@ -206,11 +206,3 @@ singularity exec ISUGIFsingularity-utilities-master.simg ../utilities/new_Assemb
 
 * [Apps within containers](http://singularity.lbl.gov/docs-scif-apps)
 * [Recipe sections](http://singularity.lbl.gov/docs-recipes#environment)
-
-
-___
-# Further Reading
-* [7.1.2 Modifying Existing Containers](03-singularity-2-tutorial-modyfying-containers)
-* [7.1.3 Singularity on your Mac via Vagrant](04-singularity-3-tutorial-vagrant)
-
-* [7.2 Docker](../02-DOCKER/01-docker-basics)

@@ -23,16 +23,3 @@ tags: []
 ## <span style="color: #ff3870;">New content coming soon!</span>
 
 # Introduction
-
-
-
-
-
-
-___
-# Further Reading
-* [4.1 Dplyr - R package for data manipulation and transformation](02-dplyr-R-data-manipulation.md)
-* [4.2 Ggplot2 - R package for customizable graphs and charts](03-ggplot-R-plotting.md)
-* [4.3 Tidyverse - R packages set for advanced exploratory data analysis](04-tidyverse-R-advanced-data-analysis.md)
-
-* [SECTION 6. High-Performance Computing (HPC)](../../06-IntroToHPC/00-IntroToHPC-LandingPage)

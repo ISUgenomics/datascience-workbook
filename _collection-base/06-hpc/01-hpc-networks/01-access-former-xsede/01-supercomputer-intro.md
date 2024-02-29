@@ -61,11 +61,3 @@ Once you have created your account, log in and <a href="https://allocations.acce
 * <a href="https://allocations.access-ci.org/how-to" target="_blank">How-To: Guide to ACCESS ⤴</a>
 * <a href="https://allocations.access-ci.org/project-types" target="_blank">Project types ⤴</a>
 * <a href="https://allocations.access-ci.org/allocations-policy" target="_blank">Allocations policy ⤴</a>
-
-
-___
-# Further Reading
-* [XSEDE Supercell Storage](02-supercell-storage)
-
-* [SCINet Network](../02-SCINET/01-scient-network-intro)
-* [ISU HPC](../03-ISUHPC/01-isu-hpc-intro)

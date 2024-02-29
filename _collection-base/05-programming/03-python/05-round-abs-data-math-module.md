@@ -254,13 +254,3 @@ import math
 ```
 Once the math module is imported, you can access all its functions by prefixing them with math, followed by a dot and the function name, `math.function_name()`. <br>
 *For example, to find the square root of a number, you can use the `math.sqrt()` function.*
-
-
-
-___
-# Further Reading
-* [3.5 Pandas Library - Data Structure Manipulation Tool](06-tutorial-python-data-manipulation-pandas.md)
-* [3.6 Numpy Library - Multi-Dimensional Arrays Parser](07-tutorial-python-array-manipulation-numpy.md)
-* [3.7 SciPy Library - Algorithms for Scientific Computing](08-tutorial-python-apply-statistics-scipy.md)
-
-* [4. Introduction to R programming](../04-R/01-introduction-to-R)

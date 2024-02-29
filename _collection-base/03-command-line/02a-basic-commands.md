@@ -399,13 +399,3 @@ tail -n 5 numSeq.txt
 ### *Modifying file in the text editor*
 
 To learn about Terminal Text Editors see another tutorial: [Text Files Editors](02B-text-files-editors.md).
-
-
-
-___
-# Further Reading
-* [Command Line Text Files Editors: nano, vim](02B-text-files-editors.md)
-* [System Info and Access Parmisions](02C-unix-system-info-permissions.md)
-* [Superuser Command: sudo](02D-admin-commands.md)
-* [Getting Started with UNIX + VIDEO + exercises](02E-tutorial-unix-getting-started.md)
-* [Unix Commands CheatSheet](04-unix-cheat-sheet.md)

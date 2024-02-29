@@ -203,7 +203,3 @@ draw(map, align_heatmap_legend = "heatmap_top", merge_legends = TRUE)
 <br>
 
 There are lots of additional features in this package like drawing histograms, boxplots, and violin plots around the heatmap. Check out the complete reference <a href="https://jokergoo.github.io/ComplexHeatmap-reference/book/" target="_blank">documentation ⤴</a> for more information. <br> <br>
-
-___
-# Further Reading
-* [SECTION 9. Project Management](../../../09-ProjectManagement/00-ProjectManagement-LandingPage)

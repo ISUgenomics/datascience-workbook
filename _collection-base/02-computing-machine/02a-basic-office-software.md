@@ -108,14 +108,3 @@ For Safari it is useful to add a few extensions:
    * software to customize different input devices like your mouse and trackpad and window snapping.
  * [Alfred](https://www.alfredapp.com) - freely available in the App Store
    *  hotkeys, keywords, text expansion and more
-
-
-
-
-
-___
-# Further Reading
-* [2.2 Basic Developer Tools](02B-basic-developer-tools.md)
-* [2.3 Basic Developer Libraries](02C-basic-developer-libraries.md)
-
-* [3. Various Methods of Software Installation](03-various-methods-of-software-installation.md)

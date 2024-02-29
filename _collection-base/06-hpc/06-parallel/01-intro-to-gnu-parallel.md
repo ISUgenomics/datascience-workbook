@@ -432,9 +432,3 @@ Notice we use less time with each block being counted by each cpu. The longest t
 ## Example 4: Parallel Blast
 
 See [Running NCBI-BLAST jobs in parallel](https://bioinformaticsworkbook.org/dataAnalysis/blast/running-blast-jobs-in-parallel.html)
-
-
-
-___
-# Further Reading
-* [7. Introduction to Containers](../07-CONTAINERS/00-introduction-to-containers)

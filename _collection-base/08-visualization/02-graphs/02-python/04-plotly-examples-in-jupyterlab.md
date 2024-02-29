@@ -97,21 +97,3 @@ This will open a browser on a **localhost**, by default [http://127.0.0.1:8888](
 On the left-hand side you can browse your local file system to enter the desired working directory. Then, click twice on the selected notebook (*any .ipynb file*) to open it in the right-hand side panel.
 
 Below, you can learn basics, which allow you to run and customize with a success all pre-implemented examples available in the repository.
-
-
-
-
-
-
-
-
-
-___
-# Further Reading
-* [Creating XY Scatter Plot](06-plotly-tutorial-scatter-plot)
-* [Creating 1D Volcano Plot](07-plotly-tutorial-volcano-plot)
-* [Creating Heatmap](08-plotly-tutorial-heatmap-plot)
-* [Creating Dendrogram](09-plotly-tutorial-dendrogram-plot)
-* [Creating Clustergram (Heatmap with Dendrograms)](10-plotly-tutorial-clustergram-plot)
-
-* [2.3 RStudio – Data Processing & Plotting with R](../03-R/01-graphing-with-rstudio)

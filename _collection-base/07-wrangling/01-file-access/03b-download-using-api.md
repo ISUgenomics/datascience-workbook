@@ -32,13 +32,3 @@ tags: []
 * and knowledge of rate limits and usage policies.
 
 Some APIs are relatively straightforward and provide simple HTTP endpoints that can be **accessed using a web browser or basic command-line tools**. In these cases, a user may not need much programming experience beyond basic web skills such as making HTTP requests and parsing data formats like JSON or XML.
-
-___
-# Further Reading
-* [1.2.3 Downloading Online GitHub Repos using GIT](03-3-tutorial-download-github-repos-git)
-* [1.2.4 Downloading Single Folder from GitHub using SVN](03-4-tutorial-download-github-folders-svn)
-
-* [1.3 Remote Data Preview without Downloading](04-0-remote-data-preview)
-
-* [2. Data Manipulation](../02-DATA-MANIPULATION/01-data-manipulation)
-* [3. Data Wrangling: ready-made apps](../03-DATA-WRANGLING-APPS/00-data-wrangling-apps)

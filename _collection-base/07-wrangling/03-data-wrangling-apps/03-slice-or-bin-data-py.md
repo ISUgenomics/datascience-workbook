@@ -618,7 +618,3 @@ Each row in the output corresponds to one of X slices per label, every of variab
 *[number of input data rows in a slice = value in the `counts` column for a given output row (data slice)]*
 
 Note the **additional column `counts`** added to the output when slicing by `'value'` increment. The values in this column are the counts of rows in a given data slice. Having this number facilitates recognition of the **dense value ranges** as well as the **detection of empty bins**.
-
-___
-# Further Reading
-* [SECTION 8: Data Visualization](../../08-DataVisualization/00-DataVisualization-LandingPage)

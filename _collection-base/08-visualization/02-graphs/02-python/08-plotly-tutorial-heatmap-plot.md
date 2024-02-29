@@ -24,14 +24,3 @@ tags: []
 ## <span style="color: #ff3870;">New content coming soon!</span>
 
 # Introduction
-
-
-
-
-
-___
-# Further Reading
-* [Creating Dendrogram](09-plotly-tutorial-dendrogram-plot)
-* [Creating Clustergram (Heatmap with Dendrograms)](10-plotly-tutorial-clustergram-plot)
-
-* [2.3 RStudio – Data Processing & Plotting with R](../03-R/01-graphing-with-rstudio)

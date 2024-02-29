@@ -24,19 +24,3 @@ tags: []
 ## <span style="color: #ff3870;">New content coming soon!</span>
 
 # Introduction
-
-
-
-
-<!--
-___
-# Further Reading
-* [2. Other tutorials from this section]()
-
-* [3. next section]()
--->
-___
-
-<!--
-update navigation links below
--->

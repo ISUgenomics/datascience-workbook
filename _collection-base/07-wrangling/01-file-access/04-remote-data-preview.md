@@ -72,14 +72,3 @@ Command line approaches for **previewing remote data can be especially useful** 
 
 * **Viewing remote logs or error messages** <br>
 <i>When running jobs on HPC systems, you may want to review job status, issues, or error messages remotely to troubleshoot issues or resubmit the task.</i>
-
-
-___
-# Further Reading
-* [1.3.1 Viewing Text Files using UNIX commands](04-1-tutorial-view-text-files-unix)
-* [1.3.2 Viewing PDF Files using X11 SSH connection](04-2-tutorial-view-pdf-files-x11)
-* [1.3.3 Viewing Graphic Files using ASCII art in the termianl](04-3-tutorial-view-graphic-files-terminal)
-* [1.3.4 Mounting Remote Folder on Local Machine](04-4-tutorial-mount-remote-folder)
-
-* [2. Data Manipulation](../02-DATA-MANIPULATION/01-data-manipulation)
-* [3. Data Wrangling: ready-made apps](../03-DATA-WRANGLING-APPS/00-data-wrangling-apps)

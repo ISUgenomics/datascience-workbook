@@ -363,15 +363,3 @@ Follow the step-by-step <a href="https://scinet.usda.gov/guides/data/datatransfe
 * learn more from the universal <a href="https://scinet.usda.gov/guides/#software-guides" target="_blank">Software guides  ⤴</a> section:
   * <a href="https://scinet.usda.gov/guides/software/modules#environment-modules" target="_blank">Environment Modules  ⤴</a>
   * <a href="https://scinet.usda.gov/guides/software/singularity#singularity-containers" target="_blank">Singularity Containers  ⤴</a>
-
-
-
-
-
-
-___
-# Further Reading
-* [1.2.2 Ceres Computing Cluster](03-scinet-ceres-cluster)
-* [1.2.3 Juno Storage](04-scinet-juno-storage)
-
-* [1.3 ISU HPC](../03-ISUHPC/01-isu-hpc-intro)

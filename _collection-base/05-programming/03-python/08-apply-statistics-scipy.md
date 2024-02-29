@@ -438,8 +438,3 @@ from scipy.cluster.vq import vq
 labels, _ = vq(data, centroids)
 print(labels)                           # output: [0 0 1 0 0]
 ```
-
-
-___
-# Further Reading
-* [4. Introduction to R programming](../04-R/01-introduction-to-R)

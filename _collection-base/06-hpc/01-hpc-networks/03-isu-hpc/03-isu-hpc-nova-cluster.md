@@ -90,14 +90,3 @@ Check out the following:
 * <a href="https://datascience.101workbook.org/06-IntroToHPC/04-SOFTWARE/01-software-available-on-HPC" target="_blank">Software Available on HPC ⤴</a> in this workbook
 <br>
 <br>
-
-___
-# Further Reading
-* [1.3.3 LSS Storage](04-isu-hpc-lss-storage)
-
-* [2. Remote Access to HPC Resources](../../02-FILE-ACCESS/01-remote-data-access.md)
-* [3. Setting up Your Home Directory for Data Analysis](../../03-HOME-DIRECTORY/00-setting-up-home-directory.md)
-* [4. Software Available on HPC](../../04-SOFTWARE/01-software-available-on-HPC.md)
-* [5. Introduction to Job Scheduling](../../05-JOB-QUEUE/00-introduction-to-job-scheduling.md)
-* [6. Introduction to GNU Parallel](../../06-PARALLEL/01-introduction-to-gnu-parallel.md)
-* [7. Introduction to Containers](../../07-CONTAINERS/00-introduction-to-containers.md)

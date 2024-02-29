@@ -131,9 +131,3 @@ vagrant ssh
 ```
 
 Remember that the VM is running in the background because we started it via the command vagrant up. You can shut the VM down using the command vagrant halt when you no longer need it.
-
-
-
-___
-# Further Reading
-* [7.2 Docker](../02-DOCKER/01-docker-basics)

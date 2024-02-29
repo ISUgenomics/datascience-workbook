@@ -220,8 +220,3 @@ tags: []
 |||`module unload` <span style="color:Red">PROGRAM</span>	# unloads module|
 
 PS: An A-Z Index of the Bash command line for Linux can be found at found [Here](http://ss64.com/bash/index.html)
-
-
-___
-# Further Reading
-* [SECTION 3. Setting Up Computing Machine](../03-SetUpComputingMachine/00-SetUpComputingMachine-LandingPage.md)

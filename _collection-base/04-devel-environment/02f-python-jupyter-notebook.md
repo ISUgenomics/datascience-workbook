@@ -400,10 +400,3 @@ fig.show()
 *This will create a scatterplot with the gene names on the x-axis, the expression levels on the y-axis, and each sample represented by a different color. Note that Plotly-based graphs are interactive by default. The details about each data point are displayed on the dynamic labels. You can customize their contents, if needed.*
 
 ![02_python-jupyter-cell-output.png]({{ images_path }}/02_python-jupyter-cell-output.png)
-
-
-___
-# Further Reading
-* [2.3.4 PyCharm: IDE for Professional Python Developers](02E-python-pycharm-ide.md)
-
-* [3. R programming environment(s)](03-r-programming-environment.md)

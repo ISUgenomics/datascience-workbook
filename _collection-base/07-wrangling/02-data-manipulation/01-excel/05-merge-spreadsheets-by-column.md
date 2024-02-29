@@ -77,11 +77,3 @@ Again, click and drag or double click the `+` sign that appears on the lower rig
 <img src="{{ images_path }}/Fig7_merged.png" width="1286" height="467" alt="merged spreadsheet"  />
 
 You should now have the complete table with both functions and gene names, now!
-
-
-
-___
-# Further Reading
-* [2.2 Manipulating Text Files with Python](../02-PYTHON/01-manipulate-data-with-python)
-
-* [3. Data Wrangling: ready-made apps](../../03-DATA-WRANGLING-APPS/00-data-wrangling-apps)

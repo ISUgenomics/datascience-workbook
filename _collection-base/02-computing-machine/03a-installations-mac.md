@@ -373,11 +373,3 @@ Install R from the package from R cran site.
 
   * https://cran.r-project.org/web/packages/renv/
   * https://6chaoran.wordpress.com/2020/07/20/introduction-of-renv-package/
-
-
-
-
-___
-# Further Reading
-* [3.2 Installations on Windows](03B-tutorial-installations-on-windows.md)
-* [3.3 Installations on Linux](03C-tutorial-installations-on-linux.md)

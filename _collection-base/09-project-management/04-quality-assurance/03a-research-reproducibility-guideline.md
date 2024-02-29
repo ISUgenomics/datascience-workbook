@@ -921,11 +921,3 @@ The above setup (with the addition of [Zenodo](https://zenodo.org/) linked to th
 
 <br>
 [return to contents](#contents)
-
-<br><br>
-
-
-___
-# Further Reading
-* [5. Project Closing](../04-PUBLICATION/01-project-closing)
-  * [5.1 Publication](../04-PUBLICATION/02-publication)

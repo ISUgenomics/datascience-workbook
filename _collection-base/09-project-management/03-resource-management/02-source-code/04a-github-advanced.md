@@ -517,14 +517,3 @@ Push your snapshot to the remote
 ```
 $ git push -u origin master
 ```
-
-
-
-___
-# Further Reading
-* [Introduction to BitBucket](05-intro-to-bitbucket)
-
-* [3.4 Documentation Improvement Tools](../02-DOCUMENTATION/01-documentation-improvement-tools)
-
-* [4. Quality Assurance](../../03-PRODUCTIVITY/00-quality-assurance)
-* [5. Project Closing](../../04-PUBLICATION/01-project-closing)

@@ -248,15 +248,3 @@ winscp.com /help put
 ## • Data Movers
 
 Some HPC systems include data movers, which are specialized hardware or software components that are designed to handle the high-speed transfer of large amounts of data. Data movers can be integrated with other HPC tools and systems to provide a seamless means of transferring data between HPC resources.
-
-___
-# Further Reading
-* [1.1.1 Copying Data using Graphical Interface: Globus](02-1-tutorial-copy-globus)
-* [1.1.2 Copying Data via SSH using Command Line: scp, rsync](02-2-tutorial-copy-ssh)
-* [1.1.3 File Transfer using irods](02-3-tutorial-transfer-irods)
-
-* [1.2 Remote Data Download](03-0-remote-data-download)
-* [1.3 Remote Data Preview without Downloading](04-0-remote-data-preview)
-
-* [2. Data Manipulation](../02-DATA-MANIPULATION/01-data-manipulation)
-* [3. Data Wrangling: ready-made apps](../03-DATA-WRANGLING-APPS/00-data-wrangling-apps)
