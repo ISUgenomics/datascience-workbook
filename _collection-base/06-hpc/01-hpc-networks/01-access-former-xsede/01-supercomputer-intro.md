@@ -69,12 +69,3 @@ ___
 
 * [SCINet Network](../02-SCINET/01-scient-network-intro)
 * [ISU HPC](../03-ISUHPC/01-isu-hpc-intro)
-
-
-___
-
-[Homepage](../../../index.md){: .btn  .btn--primary}
-[Section Index](../../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
-[Previous](../01-introduction-to-hpc-infrastructure){: .btn  .btn--primary}
-[Next](02-supercell-storage){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

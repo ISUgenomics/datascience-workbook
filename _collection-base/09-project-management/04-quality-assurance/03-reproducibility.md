@@ -775,12 +775,3 @@ ___
 * [4.3.1 Research Reproducibility Guideline](03-tutorial-research-reproducibility)
 
 * [5. Project Closing](../04-PUBLICATION/01-project-closing)
-
-
-___
-
-[Homepage](../../index.md){: .btn  .btn--primary}
-[Section Index](../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
-[Previous](02-productivity){: .btn  .btn--primary}
-[Next](03-tutorial-research-reproducibility){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

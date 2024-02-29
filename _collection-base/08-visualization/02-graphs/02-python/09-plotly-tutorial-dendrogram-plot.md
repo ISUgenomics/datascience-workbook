@@ -34,11 +34,3 @@ ___
 * [Creating Clustergram (Heatmap with Dendrograms)](10-plotly-tutorial-clustergram-plot)
 
 * [2.3 RStudio – Data Processing & Plotting with R](../03-R/01-graphing-with-rstudio)
-
-___
-
-[Homepage](../../../index.md){: .btn  .btn--primary}
-[Section Index](../../00-DataVisualization-LandingPage){: .btn  .btn--primary}
-[Previous](08-plotly-tutorial-heatmap-plot){: .btn  .btn--primary}
-[Next](10-plotly-tutorial-clustergram-plot){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

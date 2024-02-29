@@ -38,8 +38,3 @@ Command Line is a text interface for the computer's operating system that passes
   * <a href="05-comparing-two-files" style="color: #3f5a8a; text-decoration: none;">3.5 DIFF, COMM, CMP – Comparing and Collating Two Files with Unix</a>
 
 ### <a href="04-unix-cheat-sheet" style="color: #518cc2;">* UNIX CheatSheet</a>
----
-
-[Homepage](../index.md){: .btn  .btn--primary}
-[Prior Section](../01-IntroToDataScience/00-IntroToDataScience-LandingPage){: .btn  .btn--primary}
-[Next Section](../03-SetUpComputingMachine/00-SetUpComputingMachine-LandingPage){: .btn  .btn--primary}

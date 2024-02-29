@@ -431,12 +431,3 @@ ___
 -->
 * [2.2 Plotly-Dash – Data Processing & Interactive Plotting with Python](../02-PYTHON/01-interactive-graphing-with-python)
 * [2.3 RStudio – Data Processing & Plotting with R](../03-R/01-graphing-with-rstudio)
-
-___
-
-[Homepage](../../../index.md){: .btn  .btn--primary}
-[Section Index](../../00-DataVisualization-LandingPage){: .btn  .btn--primary}
-[Previous](../01-introduction-to-scientific-graphing){: .btn  .btn--primary}
-<!-- [Next](02-gnuplot-variables-loops_conditionals){: .btn  .btn--primary} -->
-[Next](../02-PYTHON/01-interactive-graphing-with-python){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

@@ -531,11 +531,3 @@ ___
 
 * [5. Introduction to Julia programming language](../05-JULIA/01-introduction-to-julia)
 * [5.1 Julia setup: installation, environments and Jupyter integration](../05-JULIA/02-must-have-software)
-
-___
-
-[Homepage](../../index.md){: .btn  .btn--primary}
-[Section Index](../00-IntroToProgramming-LandingPage){: .btn  .btn--primary}
-[Previous](03-ggplot-R-plotting){: .btn  .btn--primary}
-[Next](../05-JULIA/01-introduction-to-julia){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

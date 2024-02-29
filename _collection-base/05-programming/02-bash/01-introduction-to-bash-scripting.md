@@ -883,12 +883,3 @@ ___
 
 * [3. Introduction to Python Programming](../03-PYTHON/01-introduction-to-python.md)
 * [4. Introduction to R programming](../04-R/01-introduction-to-R.md)
-
-___
-
-[Homepage](../../index.md){: .btn  .btn--primary}
-[Section Index](../00-IntroToProgramming-LandingPage){: .btn  .btn--primary}
-[Previous](../01-ALGORITHM/01-basics-of-algorithm-structure){: .btn  .btn--primary}
-[Next](../03-PYTHON/01-introduction-to-python){: .btn  .btn--primary}
-<!-- [Next](02-unix-work-on-multiple-files){: .btn  .btn--primary} -->
-[top of page](#introduction){: .btn  .btn--primary}

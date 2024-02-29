@@ -207,12 +207,3 @@ There are lots of additional features in this package like drawing histograms, b
 ___
 # Further Reading
 * [SECTION 9. Project Management](../../../09-ProjectManagement/00-ProjectManagement-LandingPage)
-
-
-___
-
-[Homepage](../../../index.md){: .btn  .btn--primary}
-[Section Index](../../00-DataVisualization-LandingPage){: .btn  .btn--primary}
-[Previous](04-rstudio-tutorial-heatmap-plot){: .btn  .btn--primary}
-[Next](../../../09-ProjectManagement/00-ProjectManagement-LandingPage){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

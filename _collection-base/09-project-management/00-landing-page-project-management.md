@@ -65,10 +65,3 @@ It is undeniable that good project management leads to improved reproducibility 
 
 ### **<a href="04-PUBLICATION/01-project-closing" style="color: #24376b;">5. Project Closing</a>**
 * <b><a href="04-PUBLICATION/02-publication" style="color: #3f5a8a;">Publication</a></b>
-
-
----
-
-[Homepage](../index.md){: .btn  .btn--primary}
-[Prior Section](../08-DataVisualization/00-DataVisualization-LandingPage){: .btn  .btn--primary}
-<!-- [Next Section](04-DevelopmentEnvironment/00-DevelopmentEnvironment-LandingPage){: .btn  .btn--primary} -->

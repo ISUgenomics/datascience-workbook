@@ -438,11 +438,3 @@ See [Running NCBI-BLAST jobs in parallel](https://bioinformaticsworkbook.org/dat
 ___
 # Further Reading
 * [7. Introduction to Containers](../07-CONTAINERS/00-introduction-to-containers)
-
-___
-
-[Homepage](../../index.md){: .btn  .btn--primary}
-[Section Index](../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
-[Previous](../05-JOB-QUEUE/02-PBS/02-pbs-cheatsheet){: .btn  .btn--primary}
-[Next](../07-CONTAINERS/00-introduction-to-containers){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

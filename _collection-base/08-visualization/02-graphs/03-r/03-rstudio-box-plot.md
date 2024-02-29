@@ -386,12 +386,3 @@ ___
 # Further Reading
 * [Creating Heatmaps in R](04-rstudio-tutorial-heatmap-plot)
 * [Creating Heatmaps in R using ComplexHeatmap](05-rstudio-tutorial-ComplexHeatmap)
-
-
-___
-
-[Homepage](../../../index.md){: .btn  .btn--primary}
-[Section Index](../../00-DataVisualization-LandingPage){: .btn  .btn--primary}
-[Previous](02-setting-up-rstudio){: .btn  .btn--primary}
-[Next](04-rstudio-tutorial-heatmap-plot){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

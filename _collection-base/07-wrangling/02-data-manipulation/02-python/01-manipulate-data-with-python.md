@@ -120,12 +120,3 @@ ___
 * [2.2.1 Read, Write, Split, Select Data](02-tutorial-read-write-split-select-data)
 
 * [3. Data Wrangling: ready-made apps](../../03-DATA-WRANGLING-APPS/00-data-wrangling-apps)
-
-
-___
-
-[Homepage](../../../index.md){: .btn  .btn--primary}
-[Section Index](../../00-DataParsing-LandingPage){: .btn  .btn--primary}
-[Previous](../01-EXCEL/05-tutorial-merge-spreadsheets-by-column){: .btn  .btn--primary}
-[Next](02-tutorial-read-write-split-select-data){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

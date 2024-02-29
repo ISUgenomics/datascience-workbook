@@ -300,12 +300,3 @@ ___
 
 * [2. Data Manipulation](../02-DATA-MANIPULATION/01-data-manipulation)
 * [3. Data Wrangling: ready-made apps](../03-DATA-WRANGLING-APPS/00-data-wrangling-apps)
-
-
-___
-
-[Homepage](../../index.md){: .btn  .btn--primary}
-[Section Index](../00-DataParsing-LandingPage){: .btn  .btn--primary}
-[Previous](02-3-tutorial-transfer-irods){: .btn  .btn--primary}
-[Next](03-1-tutorial-download-wget){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

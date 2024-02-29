@@ -622,12 +622,3 @@ Note the **additional column `counts`** added to the output when slicing by `'va
 ___
 # Further Reading
 * [SECTION 8: Data Visualization](../../08-DataVisualization/00-DataVisualization-LandingPage)
-
-
-___
-
-[Homepage](../../index.md){: .btn  .btn--primary}
-[Section Index](../00-DataParsing-LandingPage){: .btn  .btn--primary}
-[Previous](01-merge-data-py){: .btn  .btn--primary}
-[Next](../../08-DataVisualization/00-DataVisualization-LandingPage){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

@@ -60,11 +60,3 @@ One effective way to learn about geospatial analysis is to study examples of rea
 ___
 # Further Reading
 * [2.3 Machine Learning Outlook](02C-machine-learning)
-
-___
-
-[Homepage](../index.md){: .btn  .btn--primary}
-[Section Index](00-IntroToDataScience-LandingPage){: .btn  .btn--primary}
-[Previous](02A-computational-biology){: .btn  .btn--primary}
-[Next](02C-machine-learning){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

@@ -667,11 +667,3 @@ ___
 * [5.1 Julia setup: installation, environments and Jupyter integration](/02-tutorial-setup-julia)
 
 * [SECTION 6. High-Performance Computing (HPC)](../../06-IntroToHPC/00-IntroToHPC-LandingPage)
-
-___
-
-[Homepage](../../index.md){: .btn  .btn--primary}
-[Section Index](../00-IntroToProgramming-LandingPage){: .btn  .btn--primary}
-[Previous](../04-R/ 04-tidyverse-R-advanced-data-analysis){: .btn  .btn--primary}
-[Next](02-tutorial-setup-julia){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

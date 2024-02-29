@@ -221,12 +221,3 @@ ___
 
 * [4. Quality Assurance](../../03-PRODUCTIVITY/00-quality-assurance)
 * [5. Project Closing](../../04-PUBLICATION/01-project-closing)
-
-
-___
-
-[Homepage](../../../index.md){: .btn  .btn--primary}
-[Section Index](../../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
-[Previous](03-repo-hosting-platforms){: .btn  .btn--primary}
-[Next](04A-github-advanced){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

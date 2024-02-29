@@ -968,12 +968,3 @@ ___
 
 
 * [5. Project Closing](../04-PUBLICATION/01-project-closing)
-
-
-___
-
-[Homepage](../../index.md){: .btn  .btn--primary}
-[Section Index](../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
-[Previous](01-monitoring-evaluation){: .btn  .btn--primary}
-[Next](03-reproducibility){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

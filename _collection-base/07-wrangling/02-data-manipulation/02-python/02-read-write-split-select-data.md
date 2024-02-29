@@ -462,11 +462,3 @@ no_missing_data = df.fillna(df.mean())
 ___
 # Further Reading
 * [3. Data Wrangling: ready-made apps](../../03-DATA-WRANGLING-APPS/00-data-wrangling-apps)
-
-___
-
-[Homepage](../../../index.md){: .btn  .btn--primary}
-[Section Index](../../00-DataParsing-LandingPage){: .btn  .btn--primary}
-[Previous](01-manipulate-data-with-python){: .btn  .btn--primary}
-[Next](../../03-DATA-WRANGLING-APPS/00-data-wrangling-apps){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

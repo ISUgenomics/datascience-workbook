@@ -108,11 +108,3 @@ ___
 
 * [2. Data Manipulation](../02-DATA-MANIPULATION/01-data-manipulation)
 * [3. Data Wrangling: ready-made apps](../03-DATA-WRANGLING-APPS/00-data-wrangling-apps)
-
-___
-
-[Homepage](../../index.md){: .btn  .btn--primary}
-[Section Index](../00-DataParsing-LandingPage){: .btn  .btn--primary}
-[Previous](02-0-remote-data-transfer){: .btn  .btn--primary}
-[Next](02-2-tutorial-copy-ssh){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

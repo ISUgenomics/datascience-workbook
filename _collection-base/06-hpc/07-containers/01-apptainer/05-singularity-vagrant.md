@@ -137,11 +137,3 @@ Remember that the VM is running in the background because we started it via the 
 ___
 # Further Reading
 * [7.2 Docker](../02-DOCKER/01-docker-basics)
-
-___
-
-[Homepage](../../../index.md){: .btn  .btn--primary}
-[Section Index](../../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
-[Previous](03-singularity-2-tutorial-modyfying-containers){: .btn  .btn--primary}
-[Next](../02-DOCKER/01-docker-basics){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

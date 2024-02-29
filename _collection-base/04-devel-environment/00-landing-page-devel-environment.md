@@ -42,10 +42,3 @@ In Data Science, everyone more-or-less is a developer. Whether you write simple 
 ### **<a href="03-r-programming-environment" style="color: #24376b;">3. R programming environment(s)</a>**
 * <a href="03A-rstudio-basics" style="color: #3f5a8a;">3.1 RStudio: Integrated Environment for R Programming</a>
   * <a href="03A-tutorial-setting-up-rstudio" style="color: #3f5a8a;">3.1.1 Setting Up RStudio</a>
-
-
----
-
-[Homepage](../index.md){: .btn  .btn--primary}
-[Prior Section](../03-SetUpComputingMachine/00-SetUpComputingMachine-LandingPage){: .btn  .btn--primary}
-[Next Section](../05-IntroToProgramming/00-IntroToProgramming-LandingPage){: .btn  .btn--primary}

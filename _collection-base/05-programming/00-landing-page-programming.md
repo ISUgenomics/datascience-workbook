@@ -45,11 +45,3 @@ With some knowledge of scripting and algorithm design, you can easily encapsulat
 
 ### **<a href="05-JULIA/01-introduction-to-julia" style="color: #24376b;">5. Introduction to Julia programming</a>**
 * <a href="05-JULIA/02-tutorial-setup-julia" style="color: #3f5a8a;">5.1 Julia setup: installation, environments and Jupyter integration</a>
-
-
-
----
-
-[Homepage](../index.md){: .btn  .btn--primary}
-[Prior Section](../04-DevelopmentEnvironment/00-DevelopmentEnvironment-LandingPage){: .btn  .btn--primary}
-[Next Section](../06-IntroToHPC/00-IntroToHPC-LandingPage){: .btn  .btn--primary}

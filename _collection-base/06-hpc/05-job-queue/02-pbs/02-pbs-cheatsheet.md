@@ -141,12 +141,3 @@ ___
 # Further Reading
 * [6. Introduction to GNU Parallel](../../06-PARALLEL/01-introduction-to-gnu-parallel)
 * [7. Introduction to Containers](../../07-CONTAINERS/00-introduction-to-containers)
-
-
-___
-
-[Homepage](../../../index.md){: .btn  .btn--primary}
-[Section Index](../../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
-[Previous](04-pbs-2-tutorial-submitting-dependency){: .btn  .btn--primary}
-[Next](../../06-PARALLEL/01-introduction-to-gnu-parallel){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

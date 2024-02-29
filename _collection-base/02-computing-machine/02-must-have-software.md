@@ -58,11 +58,3 @@ ___
 * [2.3 Basic Developer Libraries](02C-basic-developer-libraries.md)
 
 * [3. Various Methods of Software Installation](03-various-methods-of-software-installation.md)
-
-___
-
-[Homepage](../index.md){: .btn  .btn--primary}
-[Section Index](00-SetUpComputingMachine-LandingPage.md){: .btn  .btn--primary}
-[Previous](01B-linux-installation.md){: .btn  .btn--primary}
-[Next](02A-basic-office-software.md){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

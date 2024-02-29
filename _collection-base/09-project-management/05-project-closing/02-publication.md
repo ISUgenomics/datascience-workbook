@@ -40,8 +40,3 @@ ___
 <!--
 update navigation links below
 -->
-
-[Homepage](../../index.md){: .btn  .btn--primary}
-[Section Index](../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
-[Previous](01-project-closing){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

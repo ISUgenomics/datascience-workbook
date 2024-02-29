@@ -205,11 +205,3 @@ move nextflow in a directory into $PATH or use `./nextflow` if it is in your cur
 ___
 # Further Reading
 * [3.3 Installations on Linux](03C-tutorial-installations-on-linux.md)
-
-___
-
-[Homepage](../index.md){: .btn  .btn--primary}
-[Section Index](00-SetUpComputingMachine-LandingPage.md){: .btn  .btn--primary}
-[Previous](03A-tutorial-installations-on-mac.md){: .btn  .btn--primary}
-[Next](03C-tutorial-installations-on-linux.md){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

@@ -230,11 +230,3 @@ ___
 * [7.1.3 Singularity on your Mac via Vagrant](04-singularity-3-tutorial-vagrant)
 
 * [7.2 Docker](../02-DOCKER/01-docker-basics)
-
-___
-
-[Homepage](../../../index.md){: .btn  .btn--primary}
-[Section Index](../../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
-[Previous](00-apptainer-introduction){: .btn  .btn--primary}
-[Next](02-singularity-1-tutorial-creating-containers){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

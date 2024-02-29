@@ -483,11 +483,3 @@ ___
 * [2.3.4 PyCharm: IDE for Professional Python Developers](02E-python-pycharm-ide.md)
 
 * [3. R programming environment(s)](03-r-programming-environment.md)
-
-___
-
-[Homepage](../index.md){: .btn  .btn--primary}
-[Section Index](00-DevelopmentEnvironment-LandingPage){: .btn  .btn--primary}
-[Previous](02B-python-terminal-shell){: .btn  .btn--primary}
-[Next](02D-python-jupyter-notebook.md){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

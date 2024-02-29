@@ -381,11 +381,3 @@ ___
 # Further Reading
 * [3.2 Installations on Windows](03B-tutorial-installations-on-windows.md)
 * [3.3 Installations on Linux](03C-tutorial-installations-on-linux.md)
-
-___
-
-[Homepage](../index.md){: .btn  .btn--primary}
-[Section Index](00-SetUpComputingMachine-LandingPage.md){: .btn  .btn--primary}
-[Previous](03-various-methods-of-software-installation.md){: .btn  .btn--primary}
-[Next](03B-tutorial-installations-on-windows.md){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

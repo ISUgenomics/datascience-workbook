@@ -165,11 +165,3 @@ ___
 # Further Reading
 * [3.1 Merge files by common column (python))](01-merge-data-py)
 * [3.2 Aggregate data over slicing variations (python)](02-slice-or-bin-data-py)
-
-___
-
-[Homepage](../../index.md){: .btn  .btn--primary}
-[Section Index](../00-DataParsing-LandingPage){: .btn  .btn--primary}
-[Previous](../02-DATA-MANIPULATION/02-PYTHON/02-tutorial-read-write-split-select-data){: .btn  .btn--primary}
-[Next](01-merge-data-py){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

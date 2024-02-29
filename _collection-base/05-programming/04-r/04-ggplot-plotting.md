@@ -325,11 +325,3 @@ sessionInfo()
 - [4.3 tidyverse - R packages set for advanced exploratory data analysis](04-tidyverse-R-advanced-data-analysis.md)
 
 - [SECTION 6. High-Performance Computing (HPC)](../../06-IntroToHPC/00-IntroToHPC-LandingPage)
-
----
-
-[Homepage](../../index.md){: .btn .btn--primary}
-[Section Index](../00-IntroToProgramming-LandingPage){: .btn .btn--primary}
-[Previous](02-dplyr-R-data-manipulation){: .btn .btn--primary}
-[Next](04-tidyverse-R-advanced-data-analysis){: .btn .btn--primary}
-[top of page](#introduction){: .btn .btn--primary}

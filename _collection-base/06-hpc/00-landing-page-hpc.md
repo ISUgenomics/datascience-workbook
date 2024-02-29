@@ -70,10 +70,3 @@ Although today's handy laptops perform many advanced and computationally intensi
   * <a href="07-CONTAINERS/01-SINGULARITY/03-singularity-2-tutorial-modyfying-containers" style="color: #3f5a8a;">7.1.2 Modifying Existing Containers</a>
   * <a href="07-CONTAINERS/01-SINGULARITY/04-singularity-3-tutorial-vagrant" style="color: #3f5a8a;">7.1.3 Singularity on your Mac via Vagrant</a>
 * <a href="07-CONTAINERS/02-DOCKER/01-docker-basics" style="color: #3f5a8a;">7.2 Docker</a>
-
-
----
-
-[Homepage](../index.md){: .btn  .btn--primary}
-[Prior Section](../05-IntroToProgramming/00-IntroToProgramming-LandingPage){: .btn  .btn--primary}
-[Next Section](../07-DataParsing/00-DataParsing-LandingPage){: .btn  .btn--primary}

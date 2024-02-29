@@ -42,11 +42,3 @@ ___
 
 * [3. Introduction to Python Programming](../03-PYTHON/01-introduction-to-python)
 * [4. Introduction to R programming](../04-R/01-introduction-to-R)
-
-___
-
-[Homepage](../index.md){: .btn  .btn--primary}
-[Section Index](../00-IntroToProgramming-LandingPage){: .btn  .btn--primary}
-[Previous](01-introduction-to-bash-scripting){: .btn  .btn--primary}
-[Next](03-unix-intro-to-regex){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

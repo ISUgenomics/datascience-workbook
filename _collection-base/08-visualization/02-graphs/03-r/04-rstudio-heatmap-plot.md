@@ -187,12 +187,3 @@ above.
 ___
 # Further Reading
 * [Creating Heatmaps in R using ComplexHeatmap](05-rstudio-tutorial-ComplexHeatmap)
-
-
-___
-
-[Homepage](../../../index.md){: .btn  .btn--primary}
-[Section Index](../../00-DataVisualization-LandingPage){: .btn  .btn--primary}
-[Previous](03-rstudio-tutorial-box-plot){: .btn  .btn--primary}
-[Next](05-rstudio-tutorial-ComplexHeatmap){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

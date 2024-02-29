@@ -139,12 +139,3 @@ ___
 
 * [6. Introduction to GNU Parallel](../06-PARALLEL/01-introduction-to-gnu-parallel)
 * [7. Introduction to Containers](../07-CONTAINERS/00-introduction-to-containers)
-
-
-___
-
-[Homepage](../../index.md){: .btn  .btn--primary}
-[Section Index](../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
-[Previous](../04-SOFTWARE/03-installing-custom-programs){: .btn  .btn--primary}
-[Next](01-SLURM/01-slurm-basics){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

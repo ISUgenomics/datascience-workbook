@@ -138,12 +138,3 @@ ___
 
 * [2. Python programming environment(s)](02-python-programming-environment)
 * [3. R programming environment(s)](03-r-programming-environment.md)
-
-
-___
-
-[Homepage](../index.md){: .btn  .btn--primary}
-[Section Index](00-DevelopmentEnvironment-LandingPage){: .btn  .btn--primary}
-[Previous](01-integrated-development-environment){: .btn  .btn--primary}
-[Next](01B-jupyter-basics){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

@@ -142,11 +142,3 @@ ___
 
 
 * [3. R programming environment(s)](03-r-programming-environment.md)
-
-___
-
-[Homepage](../index.md){: .btn  .btn--primary}
-[Section Index](00-DevelopmentEnvironment-LandingPage){: .btn  .btn--primary}
-[Previous](01B-tutorial-jupyter-sharing-mybinder){: .btn  .btn--primary}
-[Next](02A-python-online-console){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

@@ -107,11 +107,3 @@ ___
 * [5. Introduction to Job Scheduling](../05-JOB-QUEUE/00-introduction-to-job-scheduling)
 * [6. Introduction to GNU Parallel](../06-PARALLEL/01-introduction-to-gnu-parallel)
 * [7. Introduction to Containers](../07-CONTAINERS/00-introduction-to-containers)
-
-___
-
-[Homepage](../../index.md){: .btn  .btn--primary}
-[Section Index](../00-DataParsing-LandingPage){: .btn  .btn--primary}
-[Previous](03A-ssh-shortcuts){: .btn  .btn--primary}
-[Next](../03-HOME-DIRECTORY/00-setting-up-home-directory){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

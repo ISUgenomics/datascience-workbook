@@ -409,11 +409,3 @@ ___
 * [Superuser Command: sudo](02D-admin-commands.md)
 * [Getting Started with UNIX + VIDEO + exercises](02E-tutorial-unix-getting-started.md)
 * [Unix Commands CheatSheet](04-unix-cheat-sheet.md)
-
-___
-
-[Homepage](../index.md){: .btn  .btn--primary}
-[Section Index](00-IntroToCommandLine-LandingPage.md){: .btn  .btn--primary}
-[Previous](02-intro-to-unix-shell.md){: .btn  .btn--primary}
-[Next](02B-text-files-editors.md){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

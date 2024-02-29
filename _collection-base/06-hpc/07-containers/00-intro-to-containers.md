@@ -67,12 +67,3 @@ ___
 * [7.1 Apptainer](01-SINGULARITY/00-apptainer-introduction)
   * [7.1 Singularity (archival)](01-SINGULARITY/01-singularity-basics)
 * [7.2 Docker](02-DOCKER/01-docker-basics)
-
-
-___
-
-[Homepage](../../index.md){: .btn  .btn--primary}
-[Section Index](../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
-[Previous](../06-PARALLEL/01-introduction-to-gnu-parallel){: .btn  .btn--primary}
-[Next](01-SINGULARITY/00-apptainer-introduction){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

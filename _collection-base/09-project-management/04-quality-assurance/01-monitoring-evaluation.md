@@ -322,12 +322,3 @@ ___
 
 
 * [5. Project Closing](../04-PUBLICATION/01-project-closing)
-
-
-___
-
-[Homepage](../../index.md){: .btn  .btn--primary}
-[Section Index](../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
-[Previous](00-quality-assurance){: .btn  .btn--primary}
-[Next](02-productivity){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

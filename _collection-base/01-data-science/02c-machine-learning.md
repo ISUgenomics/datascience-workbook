@@ -87,11 +87,3 @@ One effective way to learn about AI applications is to study examples of real-wo
 ___
 # Further Reading
 * [SECTION 2. Introduction to the Command Line](../02-IntroToCommandLine/00-IntroToCommandLine-LandingPage)
-
-___
-
-[Homepage](../index.md){: .btn  .btn--primary}
-[Section Index](00-IntroToDataScience-LandingPage){: .btn  .btn--primary}
-[Previous](02B-geospatial-analytics){: .btn  .btn--primary}
-[Next](../02-IntroToCommandLine/00-IntroToCommandLine-LandingPage){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

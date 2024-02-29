@@ -352,12 +352,3 @@ OUTPUT: `output_step2.xlsx`
 ___
 # Further Reading
 * [3.2 Aggregate data over slicing variations (python)](02-slice-or-bin-data-py)
-
-
-___
-
-[Homepage](../../index.md){: .btn  .btn--primary}
-[Section Index](../00-DataParsing-LandingPage){: .btn  .btn--primary}
-[Previous](00-data-wrangling-apps){: .btn  .btn--primary}
-[Next](02-slice-or-bin-data-py){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

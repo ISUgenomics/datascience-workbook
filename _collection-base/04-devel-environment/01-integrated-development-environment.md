@@ -46,11 +46,3 @@ ___
 
 * [2. Python programming environment(s)](02-python-programming-environment)
 * [3. R programming environment(s)](03-r-programming-environment.md)
-
-
-___
-
-[Homepage](../index.md){: .btn  .btn--primary}
-[Section Index](00-DevelopmentEnvironment-LandingPage){: .btn  .btn--primary}
-[Next](01A-tutorial-VSCode){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

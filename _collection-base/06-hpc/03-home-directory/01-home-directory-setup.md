@@ -140,11 +140,3 @@ ___
 * [5. Introduction to Job Scheduling](../05-JOB-QUEUE/00-introduction-to-job-scheduling)
 * [6. Introduction to GNU Parallel](../06-PARALLEL/01-introduction-to-gnu-parallel)
 * [7. Introduction to Containers](../07-CONTAINERS/00-introduction-to-containers)
-
-___
-
-[Homepage](../../index.md){: .btn  .btn--primary}
-[Section Index](../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
-[Previous](../02-FILE-ACCESS/04-open-on-demand){: .btn  .btn--primary}
-[Next](01-bashrc){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

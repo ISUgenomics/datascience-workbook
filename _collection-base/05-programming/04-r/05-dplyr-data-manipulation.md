@@ -770,11 +770,3 @@ ___
 * [4.3 tidyverse - R packages set for advanced exploratory data analysis](04-tidyverse-R-advanced-data-analysis.md)
 
 * [SECTION 6. High-Performance Computing (HPC)](../../06-IntroToHPC/00-IntroToHPC-LandingPage)
-
-___
-
-[Homepage](../../index.md){: .btn  .btn--primary}
-[Section Index](../00-IntroToProgramming-LandingPage){: .btn  .btn--primary}
-[Previous](01-introduction-to-R){: .btn  .btn--primary}
-[Next](03-ggplot-R-plotting){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

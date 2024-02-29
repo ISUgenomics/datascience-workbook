@@ -52,11 +52,3 @@ Most python libraries can be easily installed using `pip`.
 ___
 # Further Reading
 * [3. Various Methods of Software Installation](03-various-methods-of-software-installation.md)
-
-___
-
-[Homepage](../index.md){: .btn  .btn--primary}
-[Section Index](00-SetUpComputingMachine-LandingPage.md){: .btn  .btn--primary}
-[Previous](02B-basic-developer-tools.md){: .btn  .btn--primary}
-[Next](03-various-methods-of-software-installation.md){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

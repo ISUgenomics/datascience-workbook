@@ -872,11 +872,3 @@ ___
 * [3. Resource Management](../02-MANAGEMENT/00-intro-resource-management)
 * [4. Quality Assurance](../03-PRODUCTIVITY/00-quality-assurance)
 * [5. Project Closing](../04-PUBLICATION/01-project-closing)
-
-___
-
-[Homepage](../../index.md){: .btn  .btn--primary}
-[Section Index](../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
-[Previous](02-project-management-tools){: .btn  .btn--primary}
-[Next](04-project-framework){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

@@ -35,10 +35,3 @@ A computer is an essential tool in modern digital reality. Using it, you can acq
 * <a href="03A-tutorial-installations-on-mac" style="color: #3f5a8a;">3.1 Installations on MacBook Pro</a>
 * <a href="03B-tutorial-installations-on-windows" style="color: #3f5a8a;">3.2 Installations on Windows</a>
 * <a href="03C-tutorial-installations-on-linux" style="color: #3f5a8a;">3.3 Installations on Linux</a>
-
-
----
-
-[Homepage](../index.md){: .btn  .btn--primary}
-[Prior Section](../02-IntroToCommandLine/00-IntroToCommandLine-LandingPage){: .btn  .btn--primary}
-[Next Section](../04-DevelopmentEnvironment/00-DevelopmentEnvironment-LandingPage){: .btn  .btn--primary}

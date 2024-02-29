@@ -133,11 +133,3 @@ ___
 # Further Reading
 * [3.1 RStudio: Integrated Environment for R Programming](03A-rstudio-basics)
 * [3.1.1 Setting Up RStudio](03A-tutorial-setting-up-rstudio)
-
-___
-
-[Homepage](../index.md){: .btn  .btn--primary}
-[Section Index](00-DevelopmentEnvironment-LandingPage){: .btn  .btn--primary}
-[Previous](02B-pycharm-ide){: .btn  .btn--primary}
-[Next](03A-rstudio-basics){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

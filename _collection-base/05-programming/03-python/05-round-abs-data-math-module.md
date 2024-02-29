@@ -264,12 +264,3 @@ ___
 * [3.7 SciPy Library - Algorithms for Scientific Computing](08-tutorial-python-apply-statistics-scipy.md)
 
 * [4. Introduction to R programming](../04-R/01-introduction-to-R)
-
-
-___
-
-[Homepage](../../../index.md){: .btn  .btn--primary}
-[Section Index](../../00-DataParsing-LandingPage){: .btn  .btn--primary}
-[Previous](04-tutorial-python-manage-data-json-strin){: .btn  .btn--primary}
-[Next](06-tutorial-python-data-manipulation-pandas){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

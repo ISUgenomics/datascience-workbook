@@ -795,12 +795,3 @@ ___
 * [3.7 SciPy Library - Algorithms for Scientific Computing](08-tutorial-python-apply-statistics-scipy.md)
 
 * [4. Introduction to R programming](../04-R/01-introduction-to-R)
-
-___
-
-[Homepage](../../index.md){: .btn  .btn--primary}
-[Section Index](../00-IntroToProgramming-LandingPage){: .btn  .btn--primary}
-[Previous](../02-BASH/01-introduction-to-bash-scripting){: .btn  .btn--primary}
-<!-- [Previous](../02-BASH/03-unix-intro-to-regex){: .btn  .btn--primary} -->
-[Next](03-tutorial-read-write-files){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

@@ -984,11 +984,3 @@ ___
 * [Unix Commands CheatSheet](04-unix-cheat-sheet.md)
 
 * [3. Useful Text Manipulation Programs](03-text-manipulation-programs.md)
-
-___
-
-[Homepage](../index.md){: .btn  .btn--primary}
-[Section Index](00-IntroToCommandLine-LandingPage.md){: .btn  .btn--primary}
-[Previous](02D-admin-commands.md){: .btn  .btn--primary}
-[Next](03-text-manipulation-programs.md){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

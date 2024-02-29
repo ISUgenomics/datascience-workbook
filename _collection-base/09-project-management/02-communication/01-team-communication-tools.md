@@ -83,11 +83,3 @@ ___
 * [3. Resource Management](../02-MANAGEMENT/00-intro-resource-management)
 * [4. Quality Assurance](../03-PRODUCTIVITY/00-quality-assurance)
 * [5. Project Closing](../04-PUBLICATION/01-project-closing)
-
-___
-
-[Homepage](../../index.md){: .btn  .btn--primary}
-[Section Index](../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
-[Previous](00-collaboration-communication){: .btn  .btn--primary}
-[Next](02-intro-to-slack){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

@@ -929,11 +929,3 @@ ___
 # Further Reading
 * [5. Project Closing](../04-PUBLICATION/01-project-closing)
   * [5.1 Publication](../04-PUBLICATION/02-publication)
-
-___
-
-[Homepage](../../index.md){: .btn  .btn--primary}
-[Section Index](../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
-[Previous](03-reproducibility){: .btn  .btn--primary}
-[Next](../04-PUBLICATION/01-project-closing){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

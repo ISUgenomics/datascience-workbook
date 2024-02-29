@@ -399,11 +399,3 @@ It is recommended to <b>create a single Julia kernel in the base environment</b>
 ___
 # Further Reading
 * [SECTION 6. High-Performance Computing (HPC)](../../06-IntroToHPC/00-IntroToHPC-LandingPage)
-
-___
-
-[Homepage](../../index.md){: .btn  .btn--primary}
-[Section Index](../00-IntroToProgramming-LandingPage){: .btn  .btn--primary}
-[Previous](01-introduction-to-julia){: .btn  .btn--primary}
-[Next](../../06-IntroToHPC/00-IntroToHPC-LandingPage){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

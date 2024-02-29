@@ -30,9 +30,3 @@ Data Science is an approach shaped in response to digital information whose size
   * <span style="color: #3f5a8a;">go to</span> <a href="https://geospatial.101workbook.org" style="color: #518cc2;">_Geospatial Workbook_</a>
 * <a href="02C-machine-learning" style="color: #3f5a8a;">2.3 Machine Learning Outlook</a>
   * <span style="color: #3f5a8a;">go to</span> <a href="https://isugenomics.github.io/AI-workbook" style="color: #518cc2;">_AI Workbook_</a>
-
-
----
-
-[Homepage](../index.md){: .btn  .btn--primary}
-[Next Section](../02-IntroToCommandLine/00-IntroToCommandLine-LandingPage){: .btn  .btn--primary}

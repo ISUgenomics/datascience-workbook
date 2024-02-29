@@ -565,11 +565,3 @@ ___
 * [Creating Boxplots in R](03-rstudio-tutorial-box-plot)
 * [Creating Heatmaps in R](04-rstudio-tutorial-heatmap-plot)
 * [Heatmaps in R using ComplexHeatmap](05-rstudio-tutorial-ComplexHeatmap)
-
-___
-
-[Homepage](../../../index.md){: .btn  .btn--primary}
-[Section Index](../../00-DataVisualization-LandingPage){: .btn  .btn--primary}
-[Previous](../02-PYTHON/10-plotly-tutorial-clustergram-plot){: .btn  .btn--primary}
-[Next](02-setting-up-rstudio){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

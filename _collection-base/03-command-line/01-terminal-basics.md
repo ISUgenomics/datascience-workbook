@@ -173,10 +173,3 @@ ___
 * [Introduction to UNIX Shell: shell variables, home dir, .bashrc](02-intro-to-unix-shell.md)
 * [Useful Text Manipulation Programs](03-text-manipulation-programs.md)
 * [Unix Commands CheatSheet](04-unix-cheat-sheet.md)
-
-___
-
-[Homepage](../index.md){: .btn  .btn--primary}
-[Section Index](00-IntroToCommandLine-LandingPage.md){: .btn  .btn--primary}
-[Next](02-intro-to-unix-shell.md){: .btn  .btn--primary}
-[top of page](#what-is-a-terminal){: .btn  .btn--primary}

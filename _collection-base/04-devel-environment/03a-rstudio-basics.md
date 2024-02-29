@@ -129,11 +129,3 @@ Some other useful tabs within this panel are:
 ___
 # Further Reading
 * [3.1.1 Setting Up RStudio](03A-tutorial-setting-up-rstudio)
-
-___
-
-[Homepage](../index.md){: .btn  .btn--primary}
-[Section Index](00-DevelopmentEnvironment-LandingPage){: .btn  .btn--primary}
-[Previous](03-r-programming-environment){: .btn  .btn--primary}
-[Next](03A-tutorial-setting-up-rstudio){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

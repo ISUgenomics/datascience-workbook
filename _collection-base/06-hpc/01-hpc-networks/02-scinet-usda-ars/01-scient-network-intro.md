@@ -432,12 +432,3 @@ ___
 * [1.2.3 Juno Storage](04-scinet-juno-storage)
 
 * [1.3 ISU HPC](../03-ISUHPC/01-isu-hpc-intro)
-
-
-___
-
-[Homepage](../../../index.md){: .btn  .btn--primary}
-[Section Index](../../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
-[Previous](../01-XSEDE/02-supercell-storage){: .btn  .btn--primary}
-[Next](02-scinet-atlas-cluster){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

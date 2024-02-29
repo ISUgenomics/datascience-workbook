@@ -239,11 +239,3 @@ ___
 # Further Reading
 * [2. Python programming environment(s)](02-python-programming-environment.md)
 * [3. R programming environment(s)](03-r-programming-environment.md)
-
-___
-
-[Homepage](../index.md){: .btn  .btn--primary}
-[Section Index](00-DevelopmentEnvironment-LandingPage){: .btn  .btn--primary}
-[Previous](01B-tutorial-jupyter-notebook){: .btn  .btn--primary}
-[Next](02-python-programming-environment){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

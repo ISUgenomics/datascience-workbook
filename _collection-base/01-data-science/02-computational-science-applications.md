@@ -85,11 +85,3 @@ ___
 * [2.1 Computational Biology](02A-computational-biology)
 * [2.2 Geospatial Analytics](02B-geospatial-analytics)
 * [2.3 Machine Learning Outlook](02C-machine-learning)
-
-___
-
-[Homepage](../index.md){: .btn  .btn--primary}
-[Section Index](00-IntroToDataScience-LandingPage){: .btn  .btn--primary}
-[Previous](01-data-science-principles){: .btn  .btn--primary}
-[Next](02A-computational-biology){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

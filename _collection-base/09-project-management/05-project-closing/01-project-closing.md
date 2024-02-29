@@ -32,11 +32,3 @@ tags: []
 ___
 # Further Reading
 * [5.1 Publication](02-publication)
-
-___
-
-[Homepage](../../index.md){: .btn  .btn--primary}
-[Section Index](../00-ProjectManagement-LandingPage){: .btn  .btn--primary}
-[Previous](../03-PRODUCTIVITY/03-tutorial-research-reproducibilit){: .btn  .btn--primary}
-[Next](02-publication){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

@@ -196,11 +196,3 @@ ___
 * [Comparing and Collating Two Files with Unix](05-comparing-two-files.md)
 
 * [Unix Commands CheatSheet](04-unix-cheat-sheet.md)
-
-___
-
-[Homepage](../index.md){: .btn  .btn--primary}
-[Section Index](00-IntroToCommandLine-LandingPage.md){: .btn  .btn--primary}
-[Previous](03B-tutorial-unix-sed.md){: .btn  .btn--primary}
-[Next](03D-tutorial-unix-bioawk.md){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

@@ -339,11 +339,3 @@ ___
 * [1.4 Template-based Web Tools](05-template-based-web-tools)
 
 * [2. Introduction to Scientific Graphing](../02-GRAPHS/01-introduction-to-scientific-graphing)
-
-___
-
-[Homepage](../../index.md){: .btn  .btn--primary}
-[Section Index](../00-DataVisualization-LandingPage){: .btn  .btn--primary}
-[Previous](01-scientific-graphic-design-intro){: .btn  .btn--primary}
-[Next](03-vector-graphics-tools){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}

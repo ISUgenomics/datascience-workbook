@@ -104,12 +104,3 @@ ___
 * [5. Introduction to Job Scheduling](../../05-JOB-QUEUE/00-introduction-to-job-scheduling.md)
 * [6. Introduction to GNU Parallel](../../06-PARALLEL/01-introduction-to-gnu-parallel.md)
 * [7. Introduction to Containers](../../07-CONTAINERS/00-introduction-to-containers.md)
-
-
-___
-
-[Homepage](../../../index.md){: .btn  .btn--primary}
-[Section Index](../../00-IntroToHPC-LandingPage){: .btn  .btn--primary}
-[Previous](01-isu-hpc-intro){: .btn  .btn--primary}
-[Next](03-isu-hpc-nova-cluster){: .btn  .btn--primary}
-[top of page](#introduction){: .btn  .btn--primary}
