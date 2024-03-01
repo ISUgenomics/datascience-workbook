@@ -1,0 +1,58 @@
+
+{% assign section = page.path | remove: '_collection-base/' | split: '/' | first %}
+{% capture workbook %}
+<a href="https://datascience.101workbook.org/" class="no-decoration">DataScience Workbook</a>
+{% endcapture %}
+
+{% assign content = site['collection-base'] | sort: 'order' %}
+{% assign tutorials_by_module = content | group_by_exp: "tutorial", "tutorial.path | remove: '_collection-base/' | split: '/' | first" %}
+
+<div class="page-sourcing">
+{% assign counter = 0 %}
+{% for module in tutorials_by_module %}
+  {% if module.name == section %}
+    {% for tutorial in module.items %}
+      {% capture current_link %}
+      <a href="{{ tutorial.url | relative_url }}" class="no-decoration">{{ tutorial.title | default: 'Untitled' }}</a>
+      {% endcapture %}
+
+      {% if tutorial.level == 0 %}
+        {% assign landing_page = current_link %}
+
+      {% elsif tutorial.level == 1 %}
+        {% assign counter = counter | plus: 1 %}
+        {% if tutorial.path == page.path %}
+          {{ workbook }} / {{ landing_page }} / <b>{{ counter }}. {{ tutorial.title }}</b>
+          {% break %}
+        {% endif %}
+        {% assign level_1 = counter | append: '. ' | append: current_link %}
+        {% assign decimal = 0 %}
+
+      {% elsif tutorial.level == 2 %}
+        {% assign decimal = decimal | plus: 1 %}
+        {% if tutorial.path == page.path %}
+          {{ workbook }} / {{ landing_page }} / {{ level_1 }} / <b>{{ counter }}.{{ decimal }}. {{ tutorial.title }}</b>
+          {% break %}
+        {% endif %}
+        {% assign level_2 = counter | append: '.' | append: decimal | append: '. ' | append: current_link %}
+        {% assign subdecimal = 0 %}
+
+      {% elsif tutorial.level == 3 %}
+        {% assign subdecimal = subdecimal | plus: 1 %}
+        {% if tutorial.path == page.path %}
+          {{ workbook }} / {{ landing_page }} / {{ level_1 }} / {{ level_2 }} / <b>{{ counter }}.{{ decimal }}.{{ subdecimal }}. {{ tutorial.title }}</b>
+          {% break %}
+        {% endif %}
+        {% assign level_3 = counter | append: '.' | append: decimal | append: '.' | append: subdecimal | append: '. ' | append: current_link %}
+
+      {% else %}
+        {% if tutorial.path == page.path %}
+          {{ workbook }} / {{ landing_page }} / {{ level_1 }} / {{ level_2 }} / {{ level_3 }} / <b>{{ tutorial.title }}</b>
+          {% break %}
+        {% endif %}
+      {% endif %}
+
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+</div>
