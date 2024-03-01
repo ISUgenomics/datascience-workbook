@@ -10,6 +10,8 @@
   {% if currentIndex != -1 and item.url contains 'landing-page' %}
     {% assign nextIndex = forloop.index0 %}
     {% break %}
+  {% elsif forloop.last %}
+    {% assign nextIndex = forloop.index0 %}
   {% endif %}
 {% endfor %}
 
