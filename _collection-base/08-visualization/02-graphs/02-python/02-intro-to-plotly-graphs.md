@@ -16,8 +16,7 @@ tags: []
 
 {% include toc %}
 {% include images_path %}
-
-[DataScience Workbook](https://datascience.101workbook.org/) / [08. Data Visualization](../../00-DataVisualization-LandingPage.md) / [2. Introduction to Scientific Graphing](../01-introduction-to-scientific-graphing.md) / [2.2 Plotly-Dash – Data Processing & Interactive Plotting with Python](01-interactive-graphing-with-python.md) / **2.2.1 Introduction to Plotly (Python library)**
+{% include page-sourcing.html %}
 
 ---
 

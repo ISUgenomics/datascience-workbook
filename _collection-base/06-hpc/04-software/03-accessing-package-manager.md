@@ -15,8 +15,7 @@ tags: []
 
 {% include toc %}
 {% include images_path %}
-
-[DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../00-IntroToHPC-LandingPage.md) / [4. Software Available on HPC](01-software-available-on-HPC.md) / **4.2 Accessing Software via Package Manager**
+{% include page-sourcing.html %}
 
 ---
 

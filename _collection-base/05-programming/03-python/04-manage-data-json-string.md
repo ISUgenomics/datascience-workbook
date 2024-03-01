@@ -15,8 +15,7 @@ tags: []
 
 {% include toc %}
 {% include images_path %}
-
-[DataScience Workbook](https://datascience.101workbook.org/) / [05. Introduction to Programming](../00-IntroToProgramming-LandingPage.md) / [3. Introduction to Python Programming](01-introduction-to-python.md) / **3.3 JSON Module - Encoding & Decoding JSON Data**
+{% include page-sourcing.html %}
 
 ---
 

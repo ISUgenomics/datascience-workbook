@@ -15,8 +15,7 @@ tags: []
 
 {% include toc %}
 {% include images_path %}
-
-[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / [2. Collaboration & Communication](00-collaboration-communication.md) / **2.1 Team Communication Tools**
+{% include page-sourcing.html %}
 
 ---
 

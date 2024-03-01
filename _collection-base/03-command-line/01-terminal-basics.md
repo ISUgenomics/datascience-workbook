@@ -15,8 +15,7 @@ tags: []
 
 {% include toc %}
 {% include images_path %}
-
-[DataScience Workbook](https://datascience.101workbook.org/) / [02. Introduction to the Command Line](00-IntroToCommandLine-LandingPage.md) / **1. Terminal, a text-based interface for command-line operations**
+{% include page-sourcing.html %}
 
 ---
 

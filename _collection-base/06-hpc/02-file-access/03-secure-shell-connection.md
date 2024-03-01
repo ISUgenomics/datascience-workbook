@@ -16,8 +16,7 @@ tags: []
 
 {% include toc %}
 {% include images_path %}
-
-[DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../00-IntroToHPC-LandingPage.md) / [2. Remote Access to HPC Resources](01-remote-data-access.md) / **2.2 Secure Shell Connection (SSH)**
+{% include page-sourcing.html %}
 
 ---
 

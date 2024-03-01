@@ -15,11 +15,7 @@ tags: []
 
 {% include toc %}
 {% include images_path %}
-
-[DataScience Workbook](https://datascience.101workbook.org/) / [08. Data Visualization](../../00-DataVisualization-LandingPage.md) / [2. Introduction to Scientific Graphing](../01-introduction-to-scientific-graphing.md) / [2.3 RStudio – Data Processing & Plotting with R](01-graphing-with-rstudio.md) / **Creating Boxplots in R**
-
-**Last Update**: 7 Dec 2018 <br/> **RMarkdown**:
-[generate-boxplots.Rmd](https://bioinformaticsworkbook.org/tutorials/generate-boxplots.Rmd)
+{% include page-sourcing.html %}
 
 ---
 

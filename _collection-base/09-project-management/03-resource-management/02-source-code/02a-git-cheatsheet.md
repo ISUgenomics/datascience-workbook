@@ -15,8 +15,7 @@ tags: []
 
 {% include toc %}
 {% include images_path %}
-
-[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../../00-ProjectManagement-LandingPage.md) / [3. Resource Management](../00-intro-resource-management) / [3.3. Storage & Version Control](01-storage-version-control.md) / [3.3.1 GIT - a distributed version control system](02-intro-to-git.md) / **GIT Commands CheatSheet**
+{% include page-sourcing.html %}
 
 ---
 

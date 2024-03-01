@@ -15,8 +15,7 @@ tags: []
 
 {% include toc %}
 {% include images_path %}
-
-[DataScience Workbook](https://datascience.101workbook.org/) / [08. Data Visualization](../00-DataVisualization-LandingPage.md) / **1. Introduction to Scientific Graphic Design**
+{% include page-sourcing.html %}
 
 ---
 

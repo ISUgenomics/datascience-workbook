@@ -15,8 +15,7 @@ tags: []
 
 {% include toc %}
 {% include images_path %}
-
-[DataScience Workbook](https://datascience.101workbook.org/) / [07. Data Acquisition and Wrangling](../../00-DataParsing-LandingPage.md) / [2. Data Manipulation](../01-data-manipulation.md) / [2.2 Manipulating Text Files with Python](01-manipulate-data-with-python.md) / **2.2.1 Read, Write, Split, Select Data**
+{% include page-sourcing.html %}
 
 ---
 

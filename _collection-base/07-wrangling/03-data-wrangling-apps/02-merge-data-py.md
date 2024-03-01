@@ -16,8 +16,7 @@ tags: []
 
 {% include toc %}
 {% include images_path %}
-
-[DataScience Workbook](https://datascience.101workbook.org/) / [07. Data Acquisition and Wrangling](../00-DataParsing-LandingPage.md) / [3. Data Wrangling: ready-made apps](00-data-wrangling-apps.md) / **3.1 Merge files by common column (python)**
+{% include page-sourcing.html %}
 
 ---
 

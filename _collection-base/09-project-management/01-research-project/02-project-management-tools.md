@@ -16,8 +16,7 @@ tags: []
 
 {% include toc %}
 {% include images_path %}
-
-[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / **1.1 Overview of Essential Tools for Modern Research Projects**
+{% include page-sourcing.html %}
 
 ---
 

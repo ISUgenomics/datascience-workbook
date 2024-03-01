@@ -15,8 +15,7 @@ tags: []
 
 {% include toc %}
 {% include images_path %}
-
-[DataScience Workbook](https://datascience.101workbook.org/) / [06. High-Performance Computing (HPC)](../../00-IntroToHPC-LandingPage.md) / [5. Introduction to Job Scheduling](../00-introduction-to-job-scheduling.md) / [5.2 PBS: Portable Batch System](01-pbs-basics.md) / **PBS Commands CheatSheet**
+{% include page-sourcing.html %}
 
 ---
 

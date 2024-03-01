@@ -16,8 +16,7 @@ tags: []
 
 {% include toc %}
 {% include images_path %}
-
-[DataScience Workbook](https://datascience.101workbook.org/) / [03. Setting Up Computing Machine](00-SetUpComputingMachine-LandingPage.md) / [3. Various Methods of Software Installation](03-various-methods-of-software-installation.md) / **3.2 Installations on Windows**
+{% include page-sourcing.html %}
 
 ---
 

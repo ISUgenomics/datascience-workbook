@@ -15,9 +15,7 @@ tags: []
 
 {% include toc %}
 {% include images_path %}
-
-
-[DataScience Workbook](https://datascience.101workbook.org/) / [01. Introduction to Data Science](00-IntroToDataScience-LandingPage.md) / **1. Data Science Principles**
+{% include page-sourcing.html %}
 
 ---
 

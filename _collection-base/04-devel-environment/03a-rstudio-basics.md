@@ -15,8 +15,7 @@ tags: []
 
 {% include toc %}
 {% include images_path %}
-
-[DataScience Workbook](https://datascience.101workbook.org/) / [04. Development Environment](00-DevelopmentEnvironment-LandingPage.md) / [3. R programming environment(s)](03-r-programming-environment.md) / **3.1 RStudio: Integrated Environment for R Programming**
+{% include page-sourcing.html %}
 
 ---
 

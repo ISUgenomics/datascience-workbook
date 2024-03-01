@@ -15,8 +15,7 @@ tags: []
 
 {% include toc %}
 {% include images_path %}
-
-[DataScience Workbook](https://datascience.101workbook.org/) / [04. Development Environment](00-DevelopmentEnvironment-LandingPage.md) / [1. Integrated & Interactive Development Environment (IDE)](01-integrated-development-environment.md) / [1.2 Jupyter: Interactive Web-Based Multi-Kernel DE](01B-jupyter-basics.md) / **1.2.1 Getting Started with JupyterLab on a local machine**
+{% include page-sourcing.html %}
 
 ---
 

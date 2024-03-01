@@ -15,8 +15,7 @@ tags: []
 
 {% include toc %}
 {% include images_path %}
-
-[DataScience Workbook](https://datascience.101workbook.org/) / [03. Setting Up Computing Machine](00-SetUpComputingMachine-LandingPage.md) / [2. Must-Have Software](02-must-have-software.md) / **2.2 Basic Developer Tools**
+{% include page-sourcing.html %}
 
 ---
 

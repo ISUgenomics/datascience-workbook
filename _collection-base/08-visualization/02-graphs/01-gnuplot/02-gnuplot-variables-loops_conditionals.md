@@ -15,8 +15,7 @@ tags: []
 
 {% include toc %}
 {% include images_path %}
-
-[DataScience Workbook](https://datascience.101workbook.org/) / [08. Data Visualization](../../00-DataVisualization-LandingPage.md) / [2. Introduction to Scientific Graphing](../01-introduction-to-scientific-graphing.md) / [2.1 Gnuplot – Creating Plots in the UNIX Shell](01-gnuplot-basics.md) / **2.1.1 Gnuplot: Variables, Loops, Conditionals**
+{% include page-sourcing.html %}
 
 ---
 

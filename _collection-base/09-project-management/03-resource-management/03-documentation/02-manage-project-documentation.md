@@ -15,8 +15,7 @@ tags: []
 
 {% include toc %}
 {% include images_path %}
-
-[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../00-ProjectManagement-LandingPage.md) / [1. Introduction to Project Management](01-project-management-overview.md) / **1.1 A Practical Guide to Managing Research Documentation**
+{% include page-sourcing.html %}
 
 ---
 

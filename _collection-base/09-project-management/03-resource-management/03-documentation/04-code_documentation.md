@@ -16,8 +16,7 @@ tags: []
 
 {% include toc %}
 {% include images_path %}
-
-[DataScience Workbook](https://datascience.101workbook.org/) / [09. Project Management](../../00-ProjectManagement-LandingPage.md) / [3. Resource Management](../00-intro-resource-management) / [3.4 Documentation Improvement Tools](01-documentation-improvement-tools) / **3.4.3 Tools for Code Documentation**
+{% include page-sourcing.html %}
 
 ---
 

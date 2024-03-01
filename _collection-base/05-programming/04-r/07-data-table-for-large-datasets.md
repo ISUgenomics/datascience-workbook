@@ -15,8 +15,7 @@ tags: []
 
 {% include toc %}
 {% include images_path %}
-
-[DataScience Workbook](https://datascience.101workbook.org/) / [05. Introduction to Programming](../00-IntroToProgramming-LandingPage.md) / **4. data.table - aggregation and manipulation of large data sets**
+{% include page-sourcing.html %}
 
 ---
 

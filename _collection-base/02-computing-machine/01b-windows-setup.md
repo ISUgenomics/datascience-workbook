@@ -15,8 +15,7 @@ tags: []
 
 {% include toc %}
 {% include images_path %}
-
-[DataScience Workbook](https://datascience.101workbook.org/) / [03. Setting Up Computing Machine](00-SetUpComputingMachine-LandingPage.md) / [1. Operating System Installation](01-operating-system-installation.md) / **1.1 Windows OS Installation**
+{% include page-sourcing.html %}
 
 ---
 

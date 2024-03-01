@@ -16,9 +16,7 @@ tags: []
 
 {% include toc %}
 {% include images_path %}
-
-
-[DataScience Workbook](https://datascience.101workbook.org/) / [01. Introduction to Data Science](00-IntroToDataScience-LandingPage.md) / [2. Applications of Computational Science](02-computational-science-applications.md) / **2.1 Computational Biology**
+{% include page-sourcing.html %}
 
 ---
 

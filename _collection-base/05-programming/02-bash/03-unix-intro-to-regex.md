@@ -17,8 +17,7 @@ tags: []
 
 {% include toc %}
 {% include images_path %}
-
-[DataScience Workbook](https://datascience.101workbook.org/) / [05. Introduction to Programming](../00-IntroToProgramming-LandingPage.md) / [2. Introduction to Bash Scripting](01-introduction-to-bash-scripting.md) / **2.2 Introduction to regular expressions in Unix**
+{% include page-sourcing.html %}
 
 ---
 

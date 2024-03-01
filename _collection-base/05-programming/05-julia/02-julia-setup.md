@@ -15,8 +15,7 @@ tags: []
 
 {% include toc %}
 {% include images_path %}
-
-[DataScience Workbook](https://datascience.101workbook.org/) / [05. Introduction to Programming](../00-IntroToProgramming-LandingPage.md) / [5. Introduction to Julia programming language](01-introduction-to-julia) / **5.1 Julia setup: installation, environments and Jupyter integration**
+{% include page-sourcing.html %}
 
 ---
 

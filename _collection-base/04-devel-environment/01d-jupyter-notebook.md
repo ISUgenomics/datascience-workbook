@@ -15,11 +15,11 @@ tags: []
 
 {% include toc %}
 {% include images_path %}
+{% include page-sourcing.html %}
 
-[DataScience Workbook](https://datascience.101workbook.org/) / [04. Development Environment](00-DevelopmentEnvironment-LandingPage.md) / [1. Integrated & Interactive Development Environment (IDE)](01-integrated-development-environment.md) / [1.2 Jupyter: Interactive Web-Based Multi-Kernel DE](01B-jupyter-basics.md) / **1.2.2 Getting Started with Jupyter Notebook on HPC systems**
+---
 
 * This page was modified from Session 2 of the SCINet Geospatial Workshop 2020.
----
 
 
 # Introduction
