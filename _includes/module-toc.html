@@ -1,0 +1,36 @@
+
+{% assign landing_page = page.path | remove: '_collection-base/' | split: '/' | first %}
+{% assign content = site['collection-base'] | sort: 'order' %}
+{% assign counter = 0 %}
+
+{% assign tutorials_by_module = content | group_by_exp: "tutorial", "tutorial.path | remove: '_collection-base/' | split: '/' | first" %}
+
+<div id="toc">
+<h2 style="color: #8997c1;">Table of Contents</h2>
+{% for module in tutorials_by_module %}
+  {% if module.name == landing_page %}
+    {% for tutorial in module.items offset:1 %}
+      {% if tutorial.level == 1 %}
+        {% assign counter = counter | plus: 1 %}
+        {% assign index = counter | append: '.' %}
+        {% assign decimal = 0 %}
+        {% assign style = "font-size: 1.3em; line-height: 65px;" %}
+      {% elsif tutorial.level == 2 %}
+        {% assign decimal = decimal | plus: 1 %}
+        {% assign index = counter | append: '.' | append: decimal %}
+        {% assign subdecimal = 0 %}
+        {% assign style = "font-size: 1.1em; line-height: 45px;" %}
+      {% elsif tutorial.level == 3 %}
+        {% assign subdecimal = subdecimal | plus: 1 %}
+        {% assign index = counter | append: '.' | append: decimal | append: '.' | append: subdecimal %}
+        {% assign style = "font-size: 1.1em; line-height: 45px;" %}
+      {% else %}
+        {% assign index = '' %}
+        {% assign style = "font-size: 1.1em; line-height: 45px; text-decoration: italic;" %}
+      {% endif %}
+      <a href="{{ tutorial.url | relative_url }}" class="no-decoration prefix-{{ tutorial.level }}" style="{{ style }}">{{ index }} {{ tutorial.title | default: 'Untitled' }}</a> <i><span style="color: #a9bbd1; font-size: 0.8em;">{{ tutorial.note | default: '' }}</span></i><br>
+    {% endfor %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+</div>
