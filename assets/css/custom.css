@@ -81,8 +81,12 @@ toc-note {
 }
 
 .collapsible a:visited {
-    color: #52adc8;
+  color: #52adc8;
 }
 .content a:visited {
-    color: #52adc8;
+  color: #52adc8;
+}
+
+.page-sourcing {
+  font-size: 0.8em !important;
 }
