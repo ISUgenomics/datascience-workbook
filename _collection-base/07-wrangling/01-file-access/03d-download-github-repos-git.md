@@ -1,5 +1,5 @@
 ---
-title: "Downloading online repos <i>[GitHub, Bitbucket, SourceForge]</i> using GIT"
+title: "Downloading online repos using GIT: <i>[GitHub, Bitbucket, SourceForge]</i>"
 layout: single
 author: Aleksandra Badaczewska
 author_profile: true

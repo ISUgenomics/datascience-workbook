@@ -1,5 +1,5 @@
 ---
-title: "Copying data using SSH"
+title: "Copying Data via SSH using Command Line: <b>scp, rsync</b>"
 layout: single
 author: Aleksandra Badaczewska
 author_profile: true

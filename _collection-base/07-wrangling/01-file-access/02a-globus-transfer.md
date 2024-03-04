@@ -1,5 +1,5 @@
 ---
-title: "Copying data using Globus"
+title: "Copying Data using Graphical Interface: <b>Globus</b>"
 layout: single
 author: Arun Seetharam
 author_profile: true
