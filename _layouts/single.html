@@ -16,6 +16,7 @@ layout: default
   {% endunless %}
 {% endif %}
 
+
 <div id="main" role="main">
   {% include sidebar.html %}
 
@@ -46,9 +47,11 @@ layout: default
         {% endif %}
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
-        {% unless page.url contains 'landing-page' %}
-          {% include further-reading.html %}
-        {% endunless %}
+        {% if page.path contains '_collection-base' %}
+          {% unless page.path contains 'landing-page' %}
+            {% include further-reading.html %}
+          {% endunless %}
+        {% endif %}
       </section>
 
       <footer class="page__meta">
@@ -64,8 +67,9 @@ layout: default
       </footer>
 
       {% if page.share %}{% include social-share.html %}{% endif %}
-
-      {% include collection_pagination.html %}
+      {% if page.path contains '_collection-base' %}
+        {% include collection_pagination.html %}
+      {% endif %}
     </div>
 
     {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
