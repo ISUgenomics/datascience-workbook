@@ -1,5 +1,5 @@
 ---
-title: "Tutorials Index"
+title: "Browse the workbook contents"
 
 permalink: /list.html
 layout: single
@@ -12,16 +12,16 @@ header:
 Collection size: {{ site['collection-base'] | size }}
 
 <!-- Buttons to switch views -->
-<button onclick="showList('toc')">Table of Contents</button>
-<button onclick="showList('index')">Site Index</button>
-<button onclick="showList('categories')">By Category</button>
+<button onclick="showDiv('toc')">Table of Contents</button>
+<button onclick="showDiv('index')">Site Index</button>
+<button onclick="showDiv('categories')">By Category</button>
 
 {% assign content = site['collection-base'] | sort: 'order' %}
 
 <!-- Structured List -->
 {% assign tutorials_by_module = content | group_by_exp: "tutorial", "tutorial.path | remove: '_collection-base/' | split: '/' | first" %}
 
-<div id="toc">
+<div id="toc" style="display: none;">
 <h2>Structured List</h2>
 {% for module in tutorials_by_module %}
   {% unless module.name == '' %}
@@ -44,43 +44,37 @@ Collection size: {{ site['collection-base'] | size }}
 
 
 <!-- Alphabetical List -->
-<div id="index">
+<div id="index" style="display: none;">
   <h2>Alphabetical List</h2>
   <ul>
     {% assign tutorials = content | sort: 'title' %}
     {% for tutorial in tutorials %}
-      <li><a href="{{ tutorial.url | relative_url }}">{{ tutorial.title | default: "Untitled" }}</a></li>
+      <li><a href="{{ tutorial.url | relative_url }}" class="no-decoration">{{ tutorial.title | default: "Untitled" }}</a></li>
     {% endfor %}
   </ul>
 </div>
 
 
 <!-- Category List -->
-<div id="categories">
+<div id="categories" style="display: none;">
   <h2>Filtered by Category</h2>
   {% assign categories = content | map: 'categories' | flatten | uniq | sort %}
   {% for category in categories %}
-    <button class="collapsible">{{ category }}</button>
-    <div class="content">
-      <ul>
-        {% for tutorial in site['collection-base'] %}
-          {% if tutorial.categories contains category %}
-            <li>
-              <a href="{{ tutorial.url | relative_url }}">{{ tutorial.title }}</a>
-            </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
+    <button class="category" onclick="showDiv('{{ category }}')">{{ category }}</button>
   {% endfor %}
+  <div class="selected-content">
+    {% for category in categories %}
+      <div id="{{ category }}" class="category-content" style="display: none;">
+        <ul>
+          {% for tutorial in site['collection-base'] %}
+            {% if tutorial.categories contains category %}
+              <li>
+                <a href="{{ tutorial.url | relative_url }}" class="no-decoration">{{ tutorial.title }}</a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
 </div>
-
-
-<script>
-function showList(listId) {
-  document.getElementById('toc').style.display = 'none';
-  document.getElementById('index').style.display = 'none';
-  document.getElementById('categories').style.display = 'none';
-  document.getElementById(listId).style.display = 'block';
-}
-</script>
