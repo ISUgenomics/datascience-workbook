@@ -1,7 +1,7 @@
 ---
 title: "Browse the workbook contents"
 
-permalink: /list.html
+permalink: /sitemap.html
 layout: single
 header:
   overlay_color: "444444"

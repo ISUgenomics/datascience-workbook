@@ -33,6 +33,6 @@
     {% endif %}
     <a href="#top-of-page" class="pagination--pager" title="Go to top">Go to Top</a>
     <a href="{{ sectionTOC.url | relative_url }}" class="pagination--pager" title="{{ sectionTOC.title | markdownify | strip_html }}">Module Index</a>
-    <a href="{% link _pages/list.md %}" class="pagination--pager" title="Site Map">Site Map</a>
+    <a href="{% link _pages/sitemap.md %}" class="pagination--pager" title="Site Map">Site Map</a>
   </nav>
 {% endif %}

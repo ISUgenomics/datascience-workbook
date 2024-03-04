@@ -3,7 +3,7 @@ main:
   - title: "About"
     url: /about.html
   - title: "SiteMap"
-    url: /list.html
+    url: /sitemap.html
   - title: "Glossary"
     url: /glossary.html
   - title: "People"
