@@ -38,6 +38,3 @@ Some of the funding to produce this Workbook was provided by a joint collaborati
 Aleksandra Badaczewska [�](https://www.linkedin.com/in/aleksandra-badaczewska) created graphics for the Workbook's layout using free and open-source software Inkscape (*vector*) and Gimp (*raster*). The original assets used for the graphic design come primarily from [Adobe Stock](https://stock.adobe.com/) granted to Iowa State University under an Educational License 2022. For a detailed list of images and source information, see the [sources file](../assets/images/sources.md).
 
 ---
-
-[Homepage](../index.md){: .btn  .btn--primary}
-[Table of contents](list.md){: .btn  .btn--primary}
