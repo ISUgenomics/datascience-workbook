@@ -47,7 +47,7 @@ A typical example of an organized data structure is a **spreadsheet** or **datab
 
 Examples of well-structured data include transactions in financial systems (customers identities related with their account numbers), online stores (products tagged with the prices), genomic databases (genes linked with the corresponding sequenece), phonebook (names of residents matched with addresses and phone numbers), a hierarchical classification of species of organisms, as well as any data that can be stored in the predefined forms.
 
-Learn more details from [Wikipedia: Data model](https://en.wikipedia.org/wiki/Data_model) and corresponding references.<br>
+Learn more details from {% include target_link href="https://en.wikipedia.org/wiki/Data_model" text="Wikipedia: Data model" %} and corresponding references.<br>
 Explore also:<br>
 ★ [IBM Cloud Education: Structured vs. Unstructured Data: What’s the Difference?](https://www.ibm.com/cloud/blog/structured-vs-unstructured-data)<br>
 ★ [Datamation Education: Structured vs. Unstructured Data](https://www.datamation.com/big-data/structured-vs-unstructured-data/)
