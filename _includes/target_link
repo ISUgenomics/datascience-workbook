@@ -1,0 +1,43 @@
+
+{% comment %}
+  target_link.html
+  Usage:
+    - href: A numeric value matching 'order' variable in a linked tutorial or a direct URL.
+    - text: The text for the link.
+{% endcomment %}
+
+
+{% if include.href contains 'http' %}
+  {% assign href = include.href %}
+{% else %}
+  {% assign content = site['collection-base'] | sort: 'order' %}
+  {% for item in content %}
+    {% if item.order == include.href %}
+      {% assign href = item.url %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+
+<p class="target-link"><a href="{{ href }}" target="_blank">{{ include.text }}</a></p>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var targetLinks = document.querySelectorAll('p.target-link');                  // Find the specific <p class="target-link">
+
+  targetLinks.forEach(function(targetLink) {
+    var previous = targetLink.previousElementSibling;                            // Get the immediately preceding sibling element
+    if (previous && previous.tagName === 'P') {
+      previous.style.display = 'inline';
+    }
+
+    var next = targetLink.nextElementSibling;                                    // Get the immediately preceding sibling element
+    console.log('Next element for:', targetLink, next);
+    if (next && next.tagName === 'P') {
+      next.style.display = 'inline !important';
+      console.log('Styled next <p> for:', targetLink);
+    }
+  });
+});
+</script>

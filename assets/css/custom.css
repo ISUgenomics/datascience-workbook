@@ -90,3 +90,9 @@ toc-note {
 .page-sourcing {
   font-size: 0.8em !important;
 }
+
+.target-link {
+    display: inline !important;
+    margin: 0;
+    padding: 0;
+}
