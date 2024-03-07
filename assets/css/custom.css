@@ -100,10 +100,10 @@ toc-note {
   text-decoration: none !important;
 }
 .target-link::before {
-  content: "\00a0\00a0";
+  content: "\00a0";
 }
 .target-link::after {
-  content: "\00a0\00a0";
+  content: "\00a0";
 }
 
 /* collection-wide: semi-transparent button in the right corner of the footer with tutorial order number */
