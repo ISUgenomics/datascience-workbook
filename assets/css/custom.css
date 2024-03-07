@@ -93,6 +93,7 @@ toc-note {
 }
 
 /* resource-wide: styles for custom target links */
+.wrapper {margin-bottom: 0 !important;}
 .wrapper-link {
   display: inline !important;
 }
