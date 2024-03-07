@@ -27,7 +27,29 @@ function adjustWrapperLinks() {
 }
 
 
+// A function to copy order to clipboard
+function copyOrderToClipboard(orderValue) {
+    var tempInput = document.createElement('input');
+    tempInput.value = orderValue;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand('copy');
+    document.body.removeChild(tempInput);
+
+    // Feedback to the user
+    alert('Order ' + orderValue + ' copied to clipboard!');
+}
+
+
 // Event listener for custom.js functions
 document.addEventListener('DOMContentLoaded', function() {
   adjustWrapperLinks();                                                         // reformatting target-links
+
+  var copyButton = document.getElementById('copyOrderBtn');                     // Find and setup the button for copying order
+  if (copyButton) {
+    copyButton.addEventListener('click', function() {
+        var orderValue = this.getAttribute('data-order');
+        copyOrderToClipboard(orderValue);
+    });
+  }
 });
