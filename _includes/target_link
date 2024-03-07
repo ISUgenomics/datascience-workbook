@@ -4,6 +4,7 @@
   Usage:
     - href: A numeric value matching 'order' variable in a linked tutorial or a direct URL.
     - text: The text for the link.
+    - section: (Optional) A subsection on the page to link to, preceded by '#'.
 {% endcomment %}
 
 
@@ -17,6 +18,10 @@
       {% break %}
     {% endif %}
   {% endfor %}
+{% endif %}
+
+{% if include.section %}
+  {% assign href = href | append: include.section %}
 {% endif %}
 
 
