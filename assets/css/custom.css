@@ -105,3 +105,17 @@ toc-note {
 .target-link::after {
   content: "\00a0\00a0";
 }
+
+/* collection-wide: semi-transparent button in the right corner of the footer with tutorial order number */
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+#copyOrderBtn {
+  font-size: 0.6em;
+  color: #e8e9e8;
+  border: 1px solid #e8e9e8;
+  background-color: transparent;
+  padding: 0 10px;
+}
