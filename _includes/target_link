@@ -20,24 +20,4 @@
 {% endif %}
 
 
-<p class="target-link"><a href="{{ href }}" target="_blank">{{ include.text }}</a></p>
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  var targetLinks = document.querySelectorAll('p.target-link');                  // Find the specific <p class="target-link">
-
-  targetLinks.forEach(function(targetLink) {
-    var previous = targetLink.previousElementSibling;                            // Get the immediately preceding sibling element
-    if (previous && previous.tagName === 'P') {
-      previous.style.display = 'inline';
-    }
-
-    var next = targetLink.nextElementSibling;                                    // Get the immediately preceding sibling element
-    console.log('Next element for:', targetLink, next);
-    if (next && next.tagName === 'P') {
-      next.style.display = 'inline !important';
-      console.log('Styled next <p> for:', targetLink);
-    }
-  });
-});
-</script>
+<p class="wrapper"> <a href="{{ href }}" target="_blank" class="target-link">{{ include.text }}</a></p>

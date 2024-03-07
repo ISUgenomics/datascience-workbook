@@ -87,12 +87,21 @@ toc-note {
   color: #52adc8;
 }
 
+/* collection-wide: linked path to the root of the section (at the top of each tutorial) */
 .page-sourcing {
   font-size: 0.8em !important;
 }
 
+/* resource-wide: styles for custom target links */
+.wrapper-link {
+  display: inline !important;
+}
 .target-link {
-    display: inline !important;
-    margin: 0;
-    padding: 0;
+  text-decoration: none !important;
+}
+.target-link::before {
+  content: "\00a0\00a0";
+}
+.target-link::after {
+  content: "\00a0\00a0";
 }

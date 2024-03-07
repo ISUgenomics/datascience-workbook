@@ -64,6 +64,7 @@ layout: default
         {% elsif page.date %}
           <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
         {% endif %}
+        <script src="/assets/js/custom.js"></script>                            // needed for reformatting target-links
       </footer>
 
       {% if page.share %}{% include social-share.html %}{% endif %}
