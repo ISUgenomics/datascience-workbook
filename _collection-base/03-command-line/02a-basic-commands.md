@@ -397,4 +397,4 @@ tail -n 5 numSeq.txt
 
 ### *Modifying file in the text editor*
 
-To learn about Terminal Text Editors see another tutorial: [Text Files Editors](02B-text-files-editors.md).
+To learn about Terminal Text Editors see another tutorial: {% include target_link href=322 text="Command Line text files editors." %}

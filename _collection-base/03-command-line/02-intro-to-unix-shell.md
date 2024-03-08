@@ -202,7 +202,7 @@ The table below shows the structure of a file system for various operating syste
 
 ## 2.1 What is the HOME folder used for?
 
-A HOME directory is the **core of the user space**, where you can store all your files, especially configuration files should be placed there. The user assigned to a particular home directory has permission to create and delete files and directories. On multi-user systems, however, it is not allowed to view or modify another user's data unless it is granted **access privileges**. To learn more about access permissions and also rights to read, write, and execute operations on files check out the [System Info and Access Permissions](02C-unix-system-info-permissions) tutorial.
+A HOME directory is the **core of the user space**, where you can store all your files, especially configuration files should be placed there. The user assigned to a particular home directory has permission to create and delete files and directories. On multi-user systems, however, it is not allowed to view or modify another user's data unless it is granted **access privileges**. To learn more about access permissions and also rights to read, write, and execute operations on files check out the {% include target_link href=323 text="System Info and Access Permissions" %} tutorial.
 
 As you can see in Table above, the $HOME folder contains several built-in subdirectories on machines intended for personal use, regardless of the operating system. That includes folders corresponding to the contents of the Desktop, Documents, and Downloads. Installed programs are available in `Applications` on macOS, this corresponds to `C:\Program Files` on Windows, and in general, it is the `bin` directory on Linux.
 
@@ -223,7 +223,7 @@ Note that on most HPC infrastructures, including HPC@ISU and SCINet, queuing job
 
 Whether you're working on a local machine or a remote shared infrastructure, keep your $HOME directory neatly organized.
 
-To configure your $HOME to work efficiently on a computing cluster, take a look at the tutorial [Home Directory Setup](https://datascience.101workbook.org/06-IntroToHPC/00-HOME-DIRECTORY/00-setting-up-home-directory) in the section 06. High-Performance Computing of this workbook. More specifically, follow the directions in the [.bashrc example file](https://datascience.101workbook.org/06-IntroToHPC/00-HOME-DIRECTORY/01-bashrc) tutorial to properly configure your `~/.bashrc`.
+To configure your $HOME to work efficiently on a computing cluster, take a look at the tutorial {% include target_link href=631 text="Home Directory Setup" %} in the section 06. High-Performance Computing of this workbook. More specifically, follow the directions in the {% include target_link href=632 text="Example .bashrc file configuration" %} tutorial to properly configure your `~/.bashrc`.
 
 
 # 3. Unix Shell Configuration
@@ -562,7 +562,7 @@ Keeping your <b>.bashrc</b> neatly organized will bring you convenience, especia
 Prudence lies in moderation. So do NOT add modules used infrequently or only in a specific pipeline to your ~/.bashrc. Watch out for this, especially on a computing cluster, where the resources allocated for your $HOME are often severely limited.<br><br>
 
 <b>So, how can you keep the organizations of the modules necessary for analyses?</b><br>
-The answer comes from virtual environments. You can create a new environment for a particular analysis and within it manage the list of necessary modules. <b>For python-based environments, Conda will provide you with assistance.</b> You can learn more by following the tutorial in section 3 of the workbook, Setting Up Computing Machine -> Must-Have Software -> <a href="https://datascience.101workbook.org/03-SetUpComputingMachine/02C-basic-developer-libraries">Basic Developer Libraries</a>.
+The answer comes from virtual environments. You can create a new environment for a particular analysis and within it manage the list of necessary modules. <b>For python-based environments, Conda will provide you with assistance.</b> You can learn more by following the tutorial in section 3 of the workbook, Setting Up Computing Machine -> Must-Have Software -> {% include target_link href=223 text="Basic Developer Libraries." %}
 </span>
 </div><br>
 

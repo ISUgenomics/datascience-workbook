@@ -23,21 +23,22 @@ tags: []
 # Introduction
 
 **The command line interface (CLI) is a powerful environment for text manipulation tasks.** <br>
-There are a variety of text manipulation programs available in the <a href="https://datascience.101workbook.org/02-IntroToCommandLine/01-terminal-basics" target="_blank">terminal  ⤴</a> that allow users to quickly and efficiently process large amounts of text data. These programs offer a wide range of capabilities, including searching for patterns, transforming text, sorting lines, removing duplicates, and counting characters, words, and lines.
+There are a variety of text manipulation programs available in the {% include target_link href=310 text="terminal" %} that allow users to quickly and efficiently process large amounts of text data. These programs offer a wide range of capabilities, including searching for patterns, transforming text, sorting lines, removing duplicates, and counting characters, words, and lines.
 
 In this section, we will discuss some of the most popular and useful command line text manipulation programs, such as:
 
-| TOOL | DESCRIPTION | NOTES |
-|------|-------------|-------|
-| [grep](#grep---search-pattern) | *searches for a specific pattern in text files and outputs matching lines* | <a href="https://datascience.101workbook.org/02-IntroToCommandLine/03A-tutorial-unix-grep" target="_blank">Tutorial: GREP  ⤴</a> |
-| [sed](#sed---replace-pattern) | *stream editor for filtering and transforming text* | <a href="https://datascience.101workbook.org/02-IntroToCommandLine/03B-tutorial-unix-sed" target="_blank">Tutorial: SED  ⤴</a> |
-| [awk](#awk---manage-order) | *a programming language for processing text data, often used for text manipulation tasks* | <a href="https://datascience.101workbook.org/02-IntroToCommandLine/03C-tutorial-unix-awk" target="_blank">Tutorial: AWK  ⤴</a> |
-| [cut](#cut---cut-characters) | *cuts out specific columns or fields from a file* ||
-| [sort](#sort---sort-lines) | *sorts lines of text alphabetically or numerically* ||
-| [uniq](#uniq---unique-lines) | *removes duplicate lines from a file* ||
-| [tr](#tr---swap-characters) | *translates or deletes characters from a file* ||
-| [wc](#wc---count-lines-words) | *counts the number of lines, words, and characters in a file* ||
-| [head and tail](#head-and-tail) | *output the first or last part of a file, respectively* ||
+<table>
+  <tr><th>TOOL</th><th>TDESCRIPTION</th><th>NOTES</th></tr>
+  <tr><td>{% include target_link href=330 section="#grep---search-pattern" text="grep" %}</td> <td><i>searches for a specific pattern in text files and outputs matching lines</i></td> <td>{% include target_link href=331 text="Tutorial: GREP" %}</td></tr>
+  <tr><td>{% include target_link href=330 section="#sed---replace-pattern" text="sed" %}</td> <td><i>stream editor for filtering and transforming text</i></td> <td>{% include target_link href=332 text="Tutorial: SED" %}</td></tr>
+  <tr><td>{% include target_link href=330 section="#awk---manage-order" text="awk" %}</td> <td><i>a programming language for processing text data, often used for text manipulation tasks</i></td> <td>{% include target_link href=333 text="Tutorial: AWK" %}</td></tr>
+  <tr><td>{% include target_link href=330 section="#cut---cut-characters" text="cut" %}</td> <td><i>cuts out specific columns or fields from a file</i></td> <td></td></tr>
+  <tr><td>{% include target_link href=330 section="#sort---sort-lines" text="sort" %}</td> <td><i>sorts lines of text alphabetically or numerically</i></td> <td></td></tr>
+  <tr><td>{% include target_link href=330 section="#uniq---unique-lines" text="uniq" %}</td> <td><i>removes duplicate lines from a file</i></td> <td></td></tr>
+  <tr><td>{% include target_link href=330 section="#tr---swap-characters" text="tr" %}</td> <td><i>translates or deletes characters from a file</i></td> <td></td></tr>
+  <tr><td>{% include target_link href=330 section="#wc---count-lines-words" text="wc" %}</td> <td><i>counts the number of lines, words, and characters in a file</i></td> <td></td></tr>
+  <tr><td>{% include target_link href=330 section="#head-and-tail" text="head and tail" %}</td> <td><i>output the first or last part of a file, respectively</i></td> <td></td></tr>
+</table>
 
 *^Click on the tool name (in the first column) to jump to the cheat sheet.*
 
@@ -90,7 +91,7 @@ Manipulating text files in the command line is a powerful and efficient method f
 | `grep -n <PATTERN> <FILE>` | `grep -n 'version' file.txt` | Show line numbers for matches. |
 | `grep -o <PATTERN> <FILE>` | `grep -o 'version' file.txt` | Show only the matching portion of the line. |
 
-To learn more, see the comprehensive tutorial in this workbook: <a href="https://datascience.101workbook.org/02-IntroToCommandLine/03A-tutorial-unix-grep" target="_blank">Tutorial: GREP – simple search for regular expressions  ⤴</a> .
+To learn more, see the comprehensive tutorial in this workbook: {% include target_link href=331 text="Tutorial: GREP – simple search for regular expressions." %}
 
 ## **SED** - replace pattern
 
@@ -107,7 +108,7 @@ To learn more, see the comprehensive tutorial in this workbook: <a href="https:/
 | `sed 's/<PATTERN>//g' FILE` | `sed 's/version//g'` | Delete all occurrences of a pattern in a file. |
 | `sed 's/<PATTERN>/<REPLACEMENT>/N' FILE` | `sed 's/version/V/2'` | Replace the *n*th occurrence of a pattern in a line. |
 
-To learn more, see the comprehensive tutorial in this workbook: <a href="https://datascience.101workbook.org/02-IntroToCommandLine/03B-tutorial-unix-sed" target="_blank">Tutorial: Tutorial: SED – edit stream text  ⤴</a> .
+To learn more, see the comprehensive tutorial in this workbook: {% include target_link href=332 text="Tutorial: SED – replace pattern in stream text." %}
 
 ## **AWK** - manage order
 
@@ -125,8 +126,8 @@ To learn more, see the comprehensive tutorial in this workbook: <a href="https:/
 | `awk '{sum+=$2} END {print sum}' <FILE>` | `awk '{sum+=$2} END {print sum}' file.txt` | Print the sum of all numbers in the second column. |
 | `awk '{printf "%-10s %s\n", $1, $2}' <FILE>` | `awk '{printf "%-10s %s\n", $1, $2}' file.txt` | Format the output. |
 
-To learn more, see the comprehensive tutorial in this workbook: <a href="https://datascience.101workbook.org/02-IntroToCommandLine/03C-tutorial-unix-awk" target="_blank">Tutorial: AWK – advanced text processing  ⤴</a> . <br>
-To learn more about **BIOAWK**, see the comprehensive tutorial in this workbook: <a href="https://datascience.101workbook.org/02-IntroToCommandLine/03D-tutorial-unix-bioawk" target="_blank">Tutorial: BIOAWK – biological data manipulation  ⤴</a> .
+To learn more, see the comprehensive tutorial in this workbook: {% include target_link href=333 text="Tutorial: AWK – advanced text processing." %} <br>
+To learn more about **BIOAWK**, see the comprehensive tutorial in this workbook: {% include target_link href=334 text="Tutorial: BIOAWK – biological data manipulation." %}
 
 ## **CUT** - cut characters
 
@@ -159,7 +160,7 @@ To learn more about **BIOAWK**, see the comprehensive tutorial in this workbook:
 | `sort -k 2 <FILE>` | `sort -k 2 file.txt` | Sort the lines of a file based on the second field (column). |
 | `sort -n <FILE>` | `sort -n file.txt` | Sort the lines of a file numerically. |
 
-To learn more, explore the **Unix Getting Started** tutorial in the section: <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02E-tutorial-unix-getting-started#sort--sort-a-file-by-lines-alpha-numerically" target="_blank">SORT a file by lines  ⤴</a> . <br>
+To learn more, explore the **Unix Getting Started** tutorial in the section: {% include target_link href=325 section="#sort--sort-a-file-by-lines-alpha-numerically" text="SORT a file by lines." %}
 
 ## **UNIQ** - unique lines
 
@@ -176,7 +177,7 @@ To learn more, explore the **Unix Getting Started** tutorial in the section: <a 
 | `uniq -d <FILE>` | uniq -d file.txt | Show only the duplicates in a file. |
 | `uniq -u <FILE>` | `uniq -u file.txt` | Show only the unique lines in a file. |
 
-To learn more, explore the **Unix Getting Started** tutorial in the section: <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02E-tutorial-unix-getting-started#uniq--unique-command-to-remove-duplicates-of-adjacent-presorted-lines" target="_blank">UNIQ - command to remove duplicates  ⤴</a> . <br>
+To learn more, explore the **Unix Getting Started** tutorial in the section: {% include target_link href=325 section="#uniq--unique-command-to-remove-duplicates-of-adjacent-presorted-lines" text="UNIQ - command to remove duplicates." %}
 
 ## **TR** - swap characters
 
@@ -193,7 +194,7 @@ To learn more, explore the **Unix Getting Started** tutorial in the section: <a 
 | `tr ' ' '\t' < <FILE>` | `tr ' ' '\t' < file.txt` | Translate all spaces to tabs. |
 | `tr -d '[AEIOUaeiou]' < <FILE>` | `tr -d '[AEIOUaeiou]' < file.txt` | Delete all vowels from a file. |
 
-To learn more, explore the **Unix Getting Started** tutorial in the section: <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02E-tutorial-unix-getting-started#tr--translate" target="_blank">TR - translate  ⤴</a> . <br>
+To learn more, explore the **Unix Getting Started** tutorial in the section: {% include target_link href=330 section="#tr---swap-characters" text="TR - translate." %}
 
 ## **WC** - count lines, words
 
@@ -211,7 +212,7 @@ To learn more, explore the **Unix Getting Started** tutorial in the section: <a 
 | `wc -w <FILE>` | `wc -w file.txt` | Count the number of words in a file. |
 | `wc -m <FILE>` | `wc -m file.txt` | Count the number of characters in a file. |
 
-To learn more, explore the **Unix Getting Started** tutorial in the section: <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02E-tutorial-unix-getting-started#wc--word-count" target="_blank">WC - word count  ⤴</a> . <br>
+To learn more, explore the **Unix Getting Started** tutorial in the section: {% include target_link href=330 section="#wc---count-lines-words" text="WC - word count." %}
 
 ## **HEAD** and **TAIL**
 
@@ -232,7 +233,7 @@ These tools are very useful for quickly inspecting the contents of a file and ca
 | `head -n N <FILE>` | head -n 5 file.txt | Print the first N lines of a file. |
 | `head -c N <FILE>` | head -c 10 file.txt | Print the first N bytes of a file. |
 
-To learn more, explore the **Unix Getting Started** tutorial in the section: <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02E-tutorial-unix-getting-started#head--head-of-the-file" target="_blank">HEAD of the file  ⤴</a> . <br>
+To learn more, explore the **Unix Getting Started** tutorial in the section: {% include target_link href=330 section="#head-and-tail" text="HEAD of the file." %}<br><br>
 
 **TAIL**
 
@@ -243,8 +244,9 @@ To learn more, explore the **Unix Getting Started** tutorial in the section: <a 
 | `tail -c N <FILE>` | `tail -c N file.txt` | Print the last N bytes of a file. |
 | `tail -f <FILE>` | `tail -f file.txt` | Continuously monitor the end of a file. |
 
-To learn more, explore the **Unix Getting Started** tutorial in the section: <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02E-tutorial-unix-getting-started#tail--tail-of-the-file" target="_blank">TAIL of the file  ⤴</a> . <br>
+To learn more, explore the **Unix Getting Started** tutorial in the section: {% include target_link href=330 section="#head-and-tail" text="TAIL of the file. " %}
 
+---
 
 # Jump to solution examples
 

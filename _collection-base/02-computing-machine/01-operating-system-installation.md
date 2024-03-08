@@ -36,7 +36,7 @@ Some common examples of operating systems include:
 | Microsoft Windows | macOS | Linux | iOS |
 |-------------------|-------|-------|-----|
 |![]({{ images_path }}/microsoft_logo.png)| ![]({{ images_path }}/macOS_logo.png) | ![]({{ images_path }}/linux_logo.png) | ![]({{ images_path }}/iOS_logo.png) |
-| [Windows OS variants](https://msofficestore.us/product-category/windows/) | [macOS Ventura](https://www.apple.com/macos/ventura/) | [free Linux OS variants](https://www.linux.org/pages/download/) | [update iOS](https://support.apple.com/en-us/HT204204) |
+| <a href="https://msofficestore.us/product-category/windows/" target="_blank">Windows OS variants</a> | <a href="https://www.apple.com/macos/ventura/" target="_blank">macOS Ventura</a> | <a href="https://www.linux.org/pages/download/" target="_blank">free Linux OS variants</a>[]() | <a href="https://support.apple.com/en-us/HT204204" target="_blank">update iOS</a> |
 
 Each operating system has its own set of features and functions and is designed to work with specific types of hardware. For example, Windows and macOS are typically used on personal computers and laptops, Linux is used on high-performance computing clusters, while iOS is used on iPhones and iPads.
 

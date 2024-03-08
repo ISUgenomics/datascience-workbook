@@ -42,7 +42,7 @@ Integrated development environments (IDEs) provide many benefits to programmers 
 
 ### VSC editor
 
-With its powerful tools and flexibility, **V**isual **S**tudio **C**ode (<a href="https://code.visualstudio.com/download" target="_blank">VSC website  ⤴</a>) is a widely used and well-regarded IDE for programmers and developers of all skill levels. It offers an intuitive and user-friendly interface that allows for easy code editing, debugging, and project management. VSC supports multiple programming languages, including C++, C#, Python, and JavaScript, and has built-in libraries and frameworks that can be easily integrated into projects. Additionally, VSC offers a wide range of extensions and plugins that can be used to customize and enhance the development experience. Get started with the VSC by following the hands-on tutorial <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01A-tutorial-VSCode" target="_blank">Introduction to Visual Studio Code  ⤴</a>.
+With its powerful tools and flexibility, **V**isual **S**tudio **C**ode (<a href="https://code.visualstudio.com/download" target="_blank">VSC website  ⤴</a>) is a widely used and well-regarded IDE for programmers and developers of all skill levels. It offers an intuitive and user-friendly interface that allows for easy code editing, debugging, and project management. VSC supports multiple programming languages, including `C++`, `C#`, `Python`, and `JavaScript`, and has built-in libraries and frameworks that can be easily integrated into projects. Additionally, VSC offers a wide range of extensions and plugins that can be used to customize and enhance the development experience. Get started with the VSC by following the hands-on tutorial {% include target_link href=411 text="Introduction to Visual Studio Code." %}
 
 
 ## 2. Text editor
@@ -79,7 +79,7 @@ The Visual Studio Debugger is a powerful and feature-rich debugging tool that is
 * **reverse debugging:** allows developers to step backwards through the execution of a program, which can be useful for identifying the root cause of a problem;
 * **data visualizers:** allows developers to view data in a variety of formats such as text, hexadecimal, and graphic, to make it easier to understand the values of variables;
 
-Get started with the Visual Studio Debugger by following the hands-on tutorial <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01A-tutorial-VSCode" target="_blank">Introduction to Visual Studio Code  ⤴</a>.
+Get started with the Visual Studio Debugger by following the hands-on tutorial {% include target_link href=411 text="Introduction to Visual Studio Code." %}
 
 ## 5. Version control
 
@@ -109,14 +109,14 @@ Midnight Commander (**mc**) is a free cross-platform visual file manager that ca
 
 Virtual Private Network (VPN) is a technology that encrypts your internet traffic improve your online privacy. This means the data you transfer between your MacBook Pro and the HPC infrastructure is protected. Many computing networks, including SCINet and ISU HPC, require a secure connection via VPN to access resources and schedule your computations.
 
-If you need a VPN to access your HPC you will need to download the software suggested by the administrator of the resource you wish to access. For us at Iowa State University, we use the [Cisco AnyConnect client](https://www.cisco.com/). The details of the installation and your first connection can be found at [https://it.engineering.iastate.edu/how-to/install-and-connect-to-vpn-pc](https://it.engineering.iastate.edu/how-to/install-and-connect-to-vpn-pc).
+If you need a VPN to access your HPC you will need to download the software suggested by the administrator of the resource you wish to access. For us at Iowa State University, we use the <a href="https://www.cisco.com/" target="_blank">Cisco AnyConnect client</a>. The details of the installation and your first connection can be found at <a href="https://it.engineering.iastate.edu/how-to/install-and-connect-to-vpn-pc" target="_blank">https://it.engineering.iastate.edu/how-to/install-and-connect-to-vpn-pc</a>.
 
 ### File Transfer software
 
 File transfer is the translocation or transport of data, usually stored in the file, through a communication channel from one computer system to another. Every time you connect via VPN to a computing infrastructure and want to put your input there, you will be transferring files. If your data is large, it's worth equipping yourself with a tool that will make file transfer easier, faster, and more secure. Consider the following options for your new MacBook Pro:
-* [filezilla](https://filezilla-project.org/download.php)
+* <a href="https://filezilla-project.org/download.php" target="_blank">filezilla</a>
   * Copy over any site information you need before formatting your old computer.
-* [Globus](https://www.globus.org/data-transfer)
+* <a href="https://www.globus.org/data-transfer" target="_blank">Globus</a>
   * Move, sync, and share large amounts of data between GridFTP server and a user's computer.
 * **sshfs**
   * Mount a remote filesystem from another server locally on your machine using SFTP. This is very useful for viewing files held on the cluster with your local graphics programs (e.g., charts, text files both *.docx* and *.pdf*).

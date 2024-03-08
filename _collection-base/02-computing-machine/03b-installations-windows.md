@@ -23,7 +23,7 @@ tags: []
 
 # Introduction
 
-This is a guide for setup of a windows machine for bioinformatics data analysis. I list here some important tools useful for most bioinformatics analyses and the process to install them. Check out the <a href="https://datascience.101workbook.org/09-ProjectManagement/00-ProjectManagement-LandingPage.html" target="_blank">Project Management ⤴</a> guide before you start a new project.
+This is a guide for setup of a windows machine for bioinformatics data analysis. I list here some important tools useful for most bioinformatics analyses and the process to install them. Check out the {% include target_link href=900 text="Project Management" %} section before you start a new project.
 
 ### General guide to software installation
 Installing any software on Windows usually involves some common steps:
@@ -49,11 +49,11 @@ Installing any software on Windows usually involves some common steps:
 
 # Developer tools
 ## Atom editor (now archived)
-Try <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01A-tutorial-VSCode" target="_blank">VSCode ⤴</a> instead. <br>
+Try {% include target_link href=411 text="VSCode" %} instead. <br>
 
-Atom is a text editor with `git` version control integrated in it and is compatible with <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/02-DOCUMENTATION/02-intro-to-markdown" target="_blank">Markdown ⤴</a> syntax. It makes working with Git and GitHub more efficient.
+Atom is a text editor with `git` version control integrated in it and is compatible with {% include target_link href=933.5 text="Markdown" %} syntax. It makes working with Git and GitHub more efficient.
 
-<a href="https://atom.io/" target="_blank">Download ⤴</a> and install Atom following general guide to installation, and then install packages to improve function. To install packages on Atom, use the package manager in settings (File -> Settings -> Install). <br>
+<a href="https://atom.io/" target="_blank">Download ⤴</a> and install Atom following general guide to installation, and then install packages to improve function. To install packages on Atom, use the package manager in settings (`File` -> `Settings` -> `Install`). <br>
 
 ![Settings]({{ images_path }}/01Atom.png) <br>
 
@@ -92,7 +92,7 @@ Request for package information failed: Application error
 ![setup]({{ images_path }}/01Git.png) <br>
 <br>
 - Open downloaded file and install Git (with default options)
-- To set up a GitHub account check the <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/04-intro-to-github" target="_blank">GitHub tutorial ⤴</a>
+- To set up a GitHub account check the {% include target_link href=932.4 text="GitHub tutorial" %}
 
 ## Linux on Windows
 Windows Subsystem for Linux (WSL) is a compatibility layer for running Linux binary executables natively on Windows.
@@ -123,20 +123,20 @@ Alternatively, see following sections to download IDEs and programming languages
 ## IDE
 An Integrated Development Environment (IDE) is a program developed for coding/programming with your language of choice. There are several good IDE options available: <br>
 - <a href="https://www.spyder-ide.org/" target="_blank">Spyder ⤴</a> is used for scientific programming in python. It is a user friendly IDE.
-- RStudio is an IDE for programming in R. There are two options for using RStudio; <a href="https://www.rstudio.com/products/rstudio/#rstudio-server" target="_blank">RStudio Server ⤴</a> is online version and <a href="https://www.rstudio.com/products/rstudio/download/#download" target="_blank">RStudio Desktop ⤴</a> is a desktop application run locally. Check out the <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03A-rstudio-basics" target="_blank">RStudio tutorial ⤴</a> for more details.
-- <a href="https://jupyter.org/" target="_blank">Jupyter ⤴</a> supports multiple programming languages. Check out the <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-jupyter-basics" target="_blank">Jupyter tutorial ⤴</a> for more details.
+- RStudio is an IDE for programming in R. There are two options for using RStudio; <a href="https://www.rstudio.com/products/rstudio/#rstudio-server" target="_blank">RStudio Server ⤴</a> is online version and <a href="https://www.rstudio.com/products/rstudio/download/#download" target="_blank">RStudio Desktop ⤴</a> is a desktop application run locally. Check out the {% include target_link href=431 text="RStudio tutorial" %} for more details.
+- <a href="https://jupyter.org/" target="_blank">Jupyter ⤴</a> supports multiple programming languages. Check out the {% include target_link href=412 text="Jupyter tutorial" %} for more details.
 
 ## Python
 Python is a high-level, general-purpose programming language. It is one of the best languages to learn for a beginner in coding. <br>
 
 - <a href="https://www.python.org/downloads/windows/" target="_blank">Install Python ⤴</a> locally.
 - Follow general guidelines for installation.
-- Check out the <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02-python-programming-environment" target="_blank">Python programming environment ⤴</a> and <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/01-introduction-to-python" target="_blank">Intro to Python ⤴</a> pages of this workbook for more details.
+- Check out the {% include target_link href=420 text="Python programming environment" %} and {% include target_link href=531 text="Intro to Python" %} pages of this workbook for more details.
 
 ## R
 R is a programming language for statistical computing and graphics. It is one of the most popular tools used for data mining, data modeling and generating graphics.
 
-<a href="https://mirror.las.iastate.edu/CRAN/" target="_blank">Install R here ⤴</a> locally and check out the tutorials for <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03-r-programming-environment" target="_blank">R Programming Environment ⤴</a> in this workbook for more details including installing R libraries.
+<a href="https://mirror.las.iastate.edu/CRAN/" target="_blank">Install R here ⤴</a> locally and check out the tutorials for {% include target_link href=430 text="R Programming Environment" %} in this workbook for more details including installing R libraries.
 
 Use RStudio and plot to test if R is working. Open RStudio, type following command in console and press enter.
 
@@ -173,7 +173,7 @@ Perl is a High-level programming language. \
 Conda is an open-source package and environment manager. <a href="https://github.com/conda-forge/miniforge" target="_blank">Miniforge ⤴</a> is a minimalistic installer for conda.
 
 ### Docker
-Docker is a platform used to deliver software in packages called containers. Check out the tutorials <a href="https://datascience.101workbook.org/06-IntroToHPC/07-CONTAINERS/02-DOCKER/01-docker-basics" target="_blank">Docker basics ⤴</a> and <a href="https://datascience.101workbook.org/06-IntroToHPC/07-CONTAINERS/00-introduction-to-containers" target="_blank">Intro to Containers ⤴</a> for more details.
+Docker is a platform used to deliver software in packages called containers. Check out the tutorials {% include target_link href=672.1 text="Docker basics" %} and {% include target_link href=670 text="Intro to Containers" %} for more details.
 
 ### NextFlow
 Check out the <a href="https://bioinformaticsworkbook.org/dataAnalysis/nextflow/01_introductionToNextFlow.html" target="_blank">Intro to NextFlow ⤴</a> in our Bioinformatics Workbook for detailed information.

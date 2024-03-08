@@ -84,7 +84,7 @@ When working in a terminal, it is helpful to know some basic terminology. That m
   |**Standard Error**| error message of a failed command | use `2> filename2` to redirect error message into the file <br> use `2>> filename2` to append error message to the end of a file |
 
 Once you open a terminal window on your local machine or login into the remote one, first, you will see a **welcome message**. It contains the date of the last login and some information from the admins. Usually, it also tells you about the architecture of available resources and users' rules.<br>
-**Prompt** is a pre-defined field in the terminal emulator which tells you, by default, who is the current user on which host and what is the current location in the file system. The components available in the prompt are adjustable in the shell configuration file called .bashrc. To learn more about prompt and terminal coloring, see the tutorial [Configuration of .bashrc]() located in the **Introduction to UNIX Shell** section of the Workbook.<br>
+**Prompt** is a pre-defined field in the terminal emulator which tells you, by default, who is the current user on which host and what is the current location in the file system. The components available in the prompt are adjustable in the shell configuration file called .bashrc. To learn more about prompt and terminal coloring, see the tutorial [Configuration of .bashrc]() located in the {% include target_link href=320 text="Introduction to UNIX Shell" %} section of the Workbook.<br>
 
 ![The structure of terminal window]({{ images_path }}/TerminalWelcome.png)
 

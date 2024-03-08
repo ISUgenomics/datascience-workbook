@@ -71,6 +71,6 @@ Computational Science and Data Science are two fields that often intersect to pr
 
 The Data Science Workbook provides an overview of key concepts in Data Science and Computational Science, helping modern scientists to gain familiarity with effective practices and current tools and methods for tackling complex challenges in their research. The presented techniques can be applied in a variety of fields, including:
 
-* Computational Biology, for the details see <a href="https://datascience.101workbook.org/01-IntroToDataScience/02A-computational-biology" target="_blank">article  ⤴</a> and follow to the <a href="https://bioinformaticsworkbook.org/" target="_blank">Bioinformatics Workbook ⤴</a>
-* Geospatial Analysis, for the details see <a href="https://datascience.101workbook.org/01-IntroToDataScience/02B-geospatial-analytics" target="_blank">article  ⤴</a> article and follow to the <a href="https://geospatial.101workbook.org" target="_blank">Geospatial Workbook ⤴</a>
-* Artificial Intelligence, for the details see <a href="https://datascience.101workbook.org/01-IntroToDataScience/02C-machine-learning" target="_blank">article ⤴</a> article and follow to the <a href="http://ai.101workbook.org" target="_blank">AI Workbook  ⤴</a>
+* Computational Biology, for the details see {% include target_link href=121 text="article" %} and follow to the <a href="https://bioinformaticsworkbook.org/" target="_blank">Bioinformatics Workbook ⤴</a>
+* Geospatial Analysis, for the details see {% include target_link href=122 text="article" %} article and follow to the <a href="https://geospatial.101workbook.org" target="_blank">Geospatial Workbook ⤴</a>
+* Artificial Intelligence, for the details see {% include target_link href=123 text="article" %} article and follow to the <a href="http://ai.101workbook.org" target="_blank">AI Workbook  ⤴</a>

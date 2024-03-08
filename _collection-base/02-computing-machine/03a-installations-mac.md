@@ -216,7 +216,7 @@ Then, find the files in your Downloads folder and run the executable files in th
 ***Miniforge3 for both ARM and Intel chips.***
 
 
-* https://github.com/conda-forge/miniforge
+* [https://github.com/conda-forge/miniforge](https://github.com/conda-forge/miniforge)
   * [Miniforge3](https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh)
   * [Miniforge3_x86](https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-x86_64.sh)
 

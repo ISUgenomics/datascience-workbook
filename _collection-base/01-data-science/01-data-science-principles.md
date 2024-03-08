@@ -47,10 +47,10 @@ A typical example of an organized data structure is a **spreadsheet** or **datab
 
 Examples of well-structured data include transactions in financial systems (customers identities related with their account numbers), online stores (products tagged with the prices), genomic databases (genes linked with the corresponding sequenece), phonebook (names of residents matched with addresses and phone numbers), a hierarchical classification of species of organisms, as well as any data that can be stored in the predefined forms.
 
-Learn more details from {% include target_link href="https://en.wikipedia.org/wiki/Data_model" text="Wikipedia: Data model" %} and corresponding references.<br>
+Learn more details from <a href="https://en.wikipedia.org/wiki/Data_model" target="_blank">Wikipedia: Data model</a> and corresponding references.<br>
 Explore also:<br>
-★ [IBM Cloud Education: Structured vs. Unstructured Data: What’s the Difference?](https://www.ibm.com/cloud/blog/structured-vs-unstructured-data)<br>
-★ [Datamation Education: Structured vs. Unstructured Data](https://www.datamation.com/big-data/structured-vs-unstructured-data/)
+* <a href="https://www.ibm.com/cloud/blog/structured-vs-unstructured-data" target="_blank">IBM Cloud Education: Structured vs. Unstructured Data: What’s the Difference?</a>
+* <a href="https://www.datamation.com/big-data/structured-vs-unstructured-data/" target="_blank">Datamation Education: Structured vs. Unstructured Data</a>
 
 ### 1.2. Unstructured Data
 
@@ -61,12 +61,12 @@ The concept of unstructured data also includes many other formats such as audio 
 Since the computer revolution and especially today, this is the dominant type of data generated and processed, which carries a high potential for the extraction and retention of knowledge. Technological innovations in machine learning and artificial intelligence enable efficient analysis of unstructured data opening new opportunities for science, business, and public health. It also brings many conveniences to everyday life in the 21st century.
 
 ![Data Science]({{ images_path }}/unstructured_data_plant_species.png)<br>
-*Figure 1. The image shows examples of unstructured data, with content referring to items from the Table 1. <span style="color: #8997c1;">[track image sources in the [FILE](../assets/images/sources)]</span>*
+*Figure 1. The image shows examples of unstructured data, with content referring to items from the Table 1. <span style="color: #8997c1;">[track image sources in the [FILE](../../assets/images/sources)]</span>*
 
-Learn more details from [Wikipedia: Unstructured Data](https://en.wikipedia.org/wiki/Unstructured_data) and corresponding references.<br>
-Explore also:<br>
-★ [IBM Cloud Education: Structured vs. Unstructured Data: What’s the Difference?](https://www.ibm.com/cloud/blog/structured-vs-unstructured-data)<br>
-★ [Datamation Education: Structured vs. Unstructured Data](https://www.datamation.com/big-data/structured-vs-unstructured-data/)
+Learn more details from <a href="https://en.wikipedia.org/wiki/Unstructured_data" target="_blank">Wikipedia: Unstructured Data</a><br>
+Explore also:
+* <a href="https://www.ibm.com/cloud/blog/structured-vs-unstructured-data" target="_blank">IBM Cloud Education: Structured vs. Unstructured Data: What’s the Difference?</a> []()<br>
+* <a href="https://www.datamation.com/big-data/structured-vs-unstructured-data/" target="_blank">Datamation Education: Structured vs. Unstructured Data</a>
 
 ### 1.3. Big Data
 
@@ -81,9 +81,9 @@ Thus, Big Data goes beyond the simple concept of the data type or volume used. I
 ![Data Science]({{ images_path }}/data_science.jpeg)<br>
 *Figure 2. The image shows steps for generating and processing Big Data in the Data Science framework. <span style="color: #8997c1;">[track image sources in the [FILE](../assets/images/sources)]</span>*
 
-Learn more details from [Wikipedia: Big Data](https://en.wikipedia.org/wiki/Big_data) and corresponding references.<br>
-Explore also:<br>
-★ [eduCBA Education: Big Data vs Data Science](https://www.educba.com/big-data-vs-data-science/)
+Learn more details from <a href="https://en.wikipedia.org/wiki/Big_data/" target="_blank">Wikipedia: Big Data</a> and corresponding references.<br>
+Explore also:
+* <a href="https://www.educba.com/big-data-vs-data-science/" target="_blank">eduCBA Education: Big Data vs Data Science</a>
 
 
 ## 2. The Life Cycle of Data
@@ -116,20 +116,20 @@ Knowledge is an extracted **non-trivial insight** from the data classification a
 
 Data at rest is digital **data physically retained on computer storage** in various forms, including data warehouses and file hosting services, databases and spreadsheets, cloud storage, the hard drive in your local computer or smartphone, and any portable devices. Data at rest is vulnerable to unauthorized access, so special care should be taken to maintain security protocols.
 
-Learn more details from [Wikipedia: Data at Rest](https://en.wikipedia.org/wiki/Data_at_rest) and corresponding references.<br>
+Learn more details from <a href="https://en.wikipedia.org/wiki/Data_at_rest" target="_blank">Wikipedia: Data at Rest</a> and corresponding references.<br>
 
 ### *Transfer - Data in Transit*
 
 Data in transit is digital **data which is exchanged between the computing machines** at the exact moment of the transfer. The source and destination locations may be on a local network or communicate over a public network (e.g., internet). There are various methods to secure data in motion, such as Secure File Transfer Protocol (SFTP), Secure HyperText Transfer Protocol (HTTP), Off the Record Messaging (OTR), Peer to Peer Communication (P2P), and Secure Sockets Layer (SSL) for data encryption. You use most of these security protocols in your daily life by browsing websites, logging into banking systems, etc. However, when communicating computing machines in scientific projects, especially when using HPC infrastructure, it is popular to use **Secure Shell Protocol (SSH)**. It is a method for **secure remote login** from local computing machine to another computer or network. When connected, also the transmission of data is available. You can learn more about data transferring in section [Remote Data Access](../07-DataParsing/01-FILE-ACCESS/01-remote-data-access).
 
-Learn more details from [Wikipedia: Data in Transit](https://en.wikipedia.org/wiki/Data_in_transit) and corresponding references.<br>
+Learn more details from <a href="https://en.wikipedia.org/wiki/Data_in_transit" target="_blank">Wikipedia: Data in Transit</a> and corresponding references.<br>
 Explore also:<br>
-★ [PentaSecurity Blog: What Are The Top Secure Data Transmission Methods?](https://www.pentasecurity.com/blog/top-secure-data-transmission-methods/)
+* <a href="https://www.pentasecurity.com/blog/top-secure-data-transmission-methods/" target="_blank">PentaSecurity Blog: What Are The Top Secure Data Transmission Methods?</a>
 
 ### *Process - Data in Use*
 
 Data in use is digital **data being actively processed by computer applications** at the exact moment. That data is temporarily stored in random-access memory (RAM), processor registers, or hardware cache.
 
-Learn more details from [Wikipedia: Data in Use](https://en.wikipedia.org/wiki/Data_in_use) and corresponding references.<br>
+Learn more details from <a href="https://en.wikipedia.org/wiki/Data_in_use" target="_blank">Wikipedia: Data in Use</a> and corresponding references.<br>
 
 <!-- ## 3. Technologies and Techniques -->
