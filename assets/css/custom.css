@@ -93,17 +93,18 @@ toc-note {
 }
 
 /* resource-wide: styles for custom target links */
-.wrapper {margin-bottom: 0 !important;}
+.wrapper {
+  margin-bottom: 0 !important;
+  display: inline !important;;
+}
 .wrapper-link {
   display: inline !important;
 }
+
 .target-link {
   text-decoration: none !important;
 }
 .target-link::before {
-  content: "\00a0";
-}
-.target-link::after {
   content: "\00a0";
 }
 
@@ -119,4 +120,30 @@ toc-note {
   border: 1px solid #e8e9e8;
   background-color: transparent;
   padding: 0 10px;
+}
+
+.code-inline {
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  padding: 0.1rem 0.3rem;
+  font-size: .75em;
+  background: #fafafa;
+  border-radius: 4px;
+}
+
+.code-block {
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  font-size: .75em;
+  margin: 0;
+  padding: 1em 1em;
+  background-color: #f8f8f8;
+}
+
+.li-level-1 {
+  margin-left: 2.8em;
+  padding: 1em 1em;
+}
+
+.li-level-2 {
+  margin-left: 2.8em;
+  padding: 1em 0;
 }

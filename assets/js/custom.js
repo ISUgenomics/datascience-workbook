@@ -12,6 +12,7 @@ function adjustWrapperLinks() {
     }
 
     if (previous) {
+      console.log(previous, aTag.text);
       if (previous.tagName === 'P' && aTag) {
         previous.classList.add('wrapper-link');
         previous.appendChild(aTag);
@@ -19,7 +20,13 @@ function adjustWrapperLinks() {
       else if (previous.tagName === 'UL') {
         var lastLi = previous.querySelector('li:last-child');
         if (lastLi) {
-          lastLi.appendChild(aTag); // Append the targetLink to the last <li>
+          while (lastLi.querySelector('li')) {
+            lastLi = lastLi.querySelector('li:last-child');
+          }
+          lastLi.appendChild(aTag);
+          if (next && next.tagName === 'P') {
+            lastLi.appendChild(next);
+          }
         }
       }
     }
@@ -49,7 +56,7 @@ function copyOrderToClipboard(orderValue) {
 document.addEventListener('DOMContentLoaded', function() {
   adjustWrapperLinks();                                                         // reformatting target-links
 
-  var copyButton = document.getElementById('copyOrderBtn');                     // Find and setup the button for copying order
+  var copyButton = document.getElementById('copyOrderBtn');                     // find and setup the button for copying order
   if (copyButton) {
     copyButton.addEventListener('click', function() {
         var orderValue = this.getAttribute('data-order');
