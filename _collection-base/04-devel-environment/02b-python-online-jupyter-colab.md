@@ -21,10 +21,10 @@ tags: []
 ---
 
 
-<span style="color: #ff3870;font-weight: 500;">NOTE:</span> <i>Please note that this tutorial requires the user to have a basic understanding of the options available in Jupyter. If you are not familiar with Jupyter, we recommend exploring other tutorials in section <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/00-DevelopmentEnvironment-LandingPage" target="_blank">04. Development Environment  ⤴</a> to get started:</i>
-* <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-jupyter-basics" target="_blank">Jupyter: Interactive Web-Based Multi-Kernel DE  ⤴</a>
-* <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-tutorial-jupyter-lab" target="_blank">Getting Started with JupyterLab on a local machine  ⤴</a>
-* <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-tutorial-jupyter-notebook" target="_blank">Getting Started with Jupyter Notebook on HPC systems  ⤴</a>
+<span style="color: #ff3870;font-weight: 500;">NOTE:</span> <i>Please note that this tutorial requires the user to have a basic understanding of the options available in Jupyter. If you are not familiar with Jupyter, we recommend exploring other tutorials in section {% include target_link href=400 text="04. Development Environment" %} to get started:</i>
+* {% include target_link href=412 text="Jupyter: interactive web-based multi-kernel DE" %}
+* {% include target_link href=413 text="Getting started with JupyterLab" %}
+* {% include target_link href=414 text="Getting started with Jupyter Notebook on HPC systems" %}
 
 
 # Introduction
@@ -92,8 +92,8 @@ While online notebooks can be a convenient and accessible way to work with Pytho
 <span style="font-size: 24px; font-weight: 600; color: #df0010; ">✗</span> For **small Python scripts** or **large modular Python developments** a plain text file script `.py` or IDEs such as Visual Studio Code (VSC) or PyCharm are often a better choice than Jupyter, since they offer more advanced features, like debugging, refactoring, and testing, that are essential for professional development.
 
 <span style="color: #ff3870;font-weight: 500;">Learn more from the practical tutorials: <br>
-- <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02C-python-text-editor" target="_blank">Text editors: create Python code in terminal text files   ⤴</a> <br>
-- <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02E-python-pycharm-ide" target="_blank">PyCharm: IDE for Professional Python Developers  ⤴</a></span>
+- {% include target_link href=425 text="Text editors: create Python code in terminal text files" %} <br>
+- {% include target_link href=427 text="PyCharm: IDE for professional Python developers" %} </span>
 
 <span style="font-size: 24px; font-weight: 600; color: #df0010; ">✗</span> Online notebooks may not provide as much flexibility and customization as locally-installed versions of Jupyter. This can be a **limitation if you need to install specific libraries** or modify the environment in other ways.
 
@@ -193,7 +193,7 @@ Now, change the cell type from `code` to `markdown` in the top menu bar in the n
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
-To learn more about Markdown syntax and benefits, check out the practical tutorial <a href="https://datascience.101workbook.org/09-ProjectManagement/02-DOCUMENTATION/02-intro-to-markdown" target="_blank">Introduction to Markdown  ⤴</a> in Section <a href="https://datascience.101workbook.org/09-ProjectManagement/02-DOCUMENTATION/01-documentation-improvement-tools" target="_blank">09. Project Management : Documentation Improvement Tools  ⤴</a>. It will provide you with a hands-on experience of using Markdown to format text, add images, create lists, and more. Don't miss out on this opportunity to enhance your skills!
+To learn more about Markdown syntax and benefits, check out the practical tutorial {% include target_link href=933.5 text="Introduction to Markdown" %} in Section {% include target_link href=933.1 text="09. Project Management / Documentation Improvement Tool." %} It will provide you with a hands-on experience of using Markdown to format text, add images, create lists, and more. Don't miss out on this opportunity to enhance your skills!
 </span>
 </div><br>
 
@@ -450,7 +450,7 @@ This project demonstrates how to load and explore the ***Wine dataset*** from Sc
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
-To learn more about Markdown syntax and benefits, check out the practical tutorial <a href="https://datascience.101workbook.org/09-ProjectManagement/02-DOCUMENTATION/02-intro-to-markdown" target="_blank">Introduction to Markdown  ⤴</a> in Section <a href="https://datascience.101workbook.org/09-ProjectManagement/02-DOCUMENTATION/01-documentation-improvement-tools" target="_blank">09. Project Management : Documentation Improvement Tools  ⤴</a>. It will provide you with a hands-on experience of using Markdown to format text, add images, create lists, and more. Don't miss out on this opportunity to enhance your skills!
+To learn more about Markdown syntax and benefits, check out the practical tutorial {% include target_link href=933.5 text="Introduction to Markdown" %} in Section {% include target_link href=933.1 text="09. Project Management / Documentation improvement tools." %} It will provide you with a hands-on experience of using Markdown to format text, add images, create lists, and more. Don't miss out on this opportunity to enhance your skills!
 </span>
 </div><br>
 

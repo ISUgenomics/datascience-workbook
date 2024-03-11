@@ -33,7 +33,7 @@ Once you have purchased space on LSS, folders can be mounted to your computer di
 <br>
 
 ## Data Transfer
-LSS is mounted on data transfer nodes of each cluster meaning you can use data transfer node of the cluster you are using to transfer data from that cluster to LSS. Other options can be found on the data transfers section of the <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/01-isu-hpc-intro#data-transfers" target="_blank">ISU HPC ⤴</a> intro page.
+LSS is mounted on data transfer nodes of each cluster meaning you can use data transfer node of the cluster you are using to transfer data from that cluster to LSS. Other options can be found on the data transfers section of the {% include target_link href=613.1 section="#data-transfers" text="ISU HPC Network" %} intro page.
 
 ### *How to copy data from Nova to LSS?*
 

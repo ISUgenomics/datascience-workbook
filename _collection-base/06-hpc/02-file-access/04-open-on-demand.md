@@ -36,13 +36,9 @@ So, first open your favorite web-browser (e.g., Chrome, Firefox, Safari) and **v
 <br><span style="font-style:italic;">
 This URL address for the OOD interface should be available in the documentation or on your organization's website. <br>
 For example, you can open the OOD interface for: <br>
-<li><a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/02-scinet-atlas-cluster" target="_blank">Atlas  ⤴</a>
- cluster (part of <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/01-scient-network-intro" target="_blank">SCINet HPC  ⤴</a>
-) at <a href="https://atlas-ood.hpc.msstate.edu/" target="_blank">https://atlas-ood.hpc.msstate.edu/  ⤴</a></li>
-<li><a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/03-scinet-ceres-cluster" target="_blank">Ceres  ⤴</a>
- cluster (part of <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/01-scient-network-intro" target="_blank">SCINet HPC  ⤴</a>
-) at <a href="http://ceres-ood.scinet.usda.gov" target="_blank">http://ceres-ood.scinet.usda.gov  ⤴</a></li>
-<li><a href="https://www.hpc.iastate.edu/guides/open-ondemand" target="_blank">Nova  ⤴</a> cluster (part of <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/01-isu-hpc-intro" target="_blank">Iowa State University HPC  ⤴</a>) at <a href="http://nova-ondemand.its.iastate.edu/" target="_blank">http://nova-ondemand.its.iastate.edu/  ⤴</a></li>
+<p> - {% include target_link href=612.2 text="Atlas" %} <p>cluster (part of {% include target_link href=612.1 text="SCINet Scientific Computing" %}) </p>at <a href="https://atlas-ood.hpc.msstate.edu/" target="_blank">https://atlas-ood.hpc.msstate.edu/  ⤴</a></p>
+<p> - {% include target_link href=612.3 text="Ceres" %} <p>cluster (part of {% include target_link href=612.1 text="SCINet Scientific Computing" %}) </p>at <a href="http://ceres-ood.scinet.usda.gov" target="_blank">http://ceres-ood.scinet.usda.gov  ⤴</a></p>
+<p> - {% include target_link href=613.3 text="Nova" %} <p>cluster (part of {% include target_link href=613.1 text="Iowa State University HPC" %}) </p>at <a href="http://nova-ondemand.its.iastate.edu/" target="_blank">http://nova-ondemand.its.iastate.edu/  ⤴</a></p>
 </span>
 </div><br>
 
@@ -90,7 +86,7 @@ With Open on Demand, **users can log into a remote cluster** and access its comp
 
 # Atlas Open OnDemand
 
-Follow the intrutions in the section: <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/02-scinet-atlas-cluster#open-ondemand-login" target="_blank">The web-browser access: Open OnDEmand login  ⤴</a> in the <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/02-scinet-atlas-cluster" target="_blank">SCINet: Atlas Computing Cluster  ⤴</a> tutorial in this workbook.
+Follow the intrutions in the section: {% include target_link href=612.2 section="#open-ondemand-login" text="The web-browser access: Open OnDemand login" %} in the {% include target_link href=612.2 text="SCINet: Atlas Computing Cluster" %} tutorial in this workbook.
 
 ---
 

@@ -21,10 +21,10 @@ tags: []
 ---
 
 
-<span style="color: #ff3870;font-weight: 500;">NOTE:</span> <i>Please note that this tutorial requires the user to have a basic understanding of the options available in Jupyter. If you are not familiar with Jupyter, we recommend exploring other tutorials in section <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/00-DevelopmentEnvironment-LandingPage" target="_blank">04. Development Environment  ⤴</a> to get started:</i>
-* <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-jupyter-basics" target="_blank">Jupyter: Interactive Web-Based Multi-Kernel DE  ⤴</a>
-* <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-tutorial-jupyter-lab" target="_blank">Getting Started with JupyterLab on a local machine  ⤴</a>
-* <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-tutorial-jupyter-notebook" target="_blank">Getting Started with Jupyter Notebook on HPC systems  ⤴</a>
+<span style="color: #ff3870;font-weight: 500;">NOTE:</span> <i>Please note that this tutorial requires the user to have a basic understanding of the options available in Jupyter. If you are not familiar with Jupyter, we recommend exploring other tutorials in section {% include target_link href=400 text="04. Development Environment" %} to get started:</i>
+* {% include target_link href=412 text="Jupyter: interactive web-based multi-kernel DE" %}
+* {% include target_link href=413 text="Getting started with JupyterLab on a local machine" %}
+* {% include target_link href=414 text="Getting Started with Jupyter Notebook on HPC systems" %}
 
 
 # Introduction
@@ -53,20 +53,20 @@ However, while Python coding in Jupyter offers many advantages, **it may not alw
 * Plain text files are lightweight, easy to read, and can be executed directly from the command line, which makes them a suitable choice for simple scripts.
 * Additionally, plain text files are easier to version control with tools like Git, which can be essential for collaborating and managing code changes.
 
-<span style="color: #ff3870;font-weight: 500;">Learn more from the practical tutorial <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02C-python-text-editor" target="_blank">Text editors: create Python code in terminal text files   ⤴</a>.</span>
+<span style="color: #ff3870;font-weight: 500;">Learn more from the practical tutorial {% include target_link href=425 text="Text editors: create Python code in terminal text files." %} </span>
 
 <span style="font-size: 24px; font-weight: 600; color: #df0010; ">✗</span> For **production-level Python code**, where performance, scalability, and maintainability are critical, other tools may be more suitable. Jupyter notebooks can be **challenging to manage with version control systems** like Git, which can make it difficult to track changes over time.
 
 <span style="font-size: 24px; font-weight: 600; color: #df0010; ">✗</span> For **large modular Python developments**, IDEs such as Visual Studio Code (VSC) or PyCharm are often a better choice than Jupyter, since they offer more advanced features, like debugging, refactoring, and testing, that are essential for professional development.
 
-<span style="color: #ff3870;font-weight: 500;">Learn more from the practical tutorial <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02E-python-pycharm-ide" target="_blank">PyCharm: IDE for Professional Python Developers  ⤴</a></span>
+<span style="color: #ff3870;font-weight: 500;">Learn more from the practical tutorial {% include target_link href=427 text="PyCharm: IDE for professional Python developers." %} </span>
 
 ---
 
 # Python in *JupyterLab* **locally**
 
-<span style="color: #ff3870;font-weight: 500;">If you don't already have Jupyter Lab installed on your local machine, make up for this step by following the instructions in the <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-jupyter-basics#installing-jupyter" target="_blank">Installing Jupyter  ⤴</a> section of the <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-jupyter-basics" target="_blank">Jupyter: Web-Based Programming Interface  ⤴</a> tutorial.<br>
-To learn more about Jupyter Lab interface <i>(cell types, opening and saving files, executing the code, and other options)</i> see <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-tutorial-jupyter-lab" target="_blank">Getting Started with JupyterLab  ⤴</a> tutorial.
+<span style="color: #ff3870;font-weight: 500;">If you don't already have Jupyter Lab installed on your local machine, make up for this step by following the instructions in the {% include target_link href=412 section="#installing-jupyter" text="Installing Jupyter" %} section of the {% include target_link href=412 text="Jupyter: interactive web-based multi-kernel DE" %} tutorial.<br>
+To learn more about Jupyter Lab interface <i>(cell types, opening and saving files, executing the code, and other options)</i> see {% include target_link href=413 text="Getting started with JupyterLab" %} tutorial.
 </span>
 
 
@@ -89,7 +89,7 @@ conda activate new_env_py3.9
 jupyter lab
 ```
 
-<span style="color: #ff3870;font-weight: 500;">You can learn more about creating virtual environments for Python using Conda in the tutorial <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-python-setup-locally" target="_blank">Python Setup on your computing machine   ⤴</a>.</span>
+<span style="color: #ff3870;font-weight: 500;">You can learn more about creating virtual environments for Python using Conda in the tutorial {% include target_link href=423 text="Local Python setup on your computing machine." %} </span>
 
 
 **C. Launch Jupyter and switch the Python kernel**
@@ -260,7 +260,7 @@ Now, change the cell type from `code` to `markdown` in the top menu bar in the n
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
-To learn more about Markdown syntax and benefits, check out the practical tutorial <a href="https://datascience.101workbook.org/09-ProjectManagement/02-DOCUMENTATION/02-intro-to-markdown" target="_blank">Introduction to Markdown  ⤴</a> in Section <a href="https://datascience.101workbook.org/09-ProjectManagement/02-DOCUMENTATION/01-documentation-improvement-tools" target="_blank">09. Project Management : Documentation Improvement Tools  ⤴</a>. It will provide you with a hands-on experience of using Markdown to format text, add images, create lists, and more. Don't miss out on this opportunity to enhance your skills!
+To learn more about Markdown syntax and benefits, check out the practical tutorial {% include target_link href=933.5 text="Introduction to Markdown" %} in Section {% include target_link href=933.1 text="09. Project Management / Documentation improvement tools." %} It will provide you with a hands-on experience of using Markdown to format text, add images, create lists, and more. Don't miss out on this opportunity to enhance your skills!
 </span>
 </div><br>
 

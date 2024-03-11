@@ -29,7 +29,7 @@ Explore the resources to learn more:
 * SCINet website: <a href="https://scinet.usda.gov" target="_blank">https://scinet.usda.gov  ⤴</a>
 * USDA-ARS website: <a href="https://www.ars.usda.gov/" target="_blank">https://www.ars.usda.gov/  ⤴</a>
 * Atlas documentation by Mississippi State University: <a href="https://www.hpc.msstate.edu/computing/atlas/" target="_blank">https://www.hpc.msstate.edu/computing/atlas/  ⤴</a>
-* Introduction to SCINet HPC in this workbook: <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/01-scient-network-intro" target="_blank">What is SCINet?  ⤴</a>
+* Introduction to SCINet HPC in this workbook: {% include target_link href=612.1 section="#what-is-scinet" text="What is SCINet?" %}
 
 ## Atlas access points
 
@@ -135,15 +135,15 @@ Follow the guide at <a href="https://scinet.usda.gov/guides/access/mfa#ga-accoun
 Terminal access to a high-performance computing (HPC) system using the ssh (Secure Shell) protocol allows users to **access the HPC system remotely from a command line interface**. To access an HPC system using ssh, users need to have:
 * an **ssh client installed** on their local computer <br>*(on Linux and macOS, the OpenSSH client package is usually pre-installed; for Windows follow the Microsoft's guide <a href="https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui#install-openssh-for-windows" target="_blank">Install OpenSSH for Windows  ⤴</a>)*
 
-* and the **login credentials** (login & password) for an account on the HPC system <br>*(you will get the initial SCINet credentials in the "Welcome to SCINet" email, see section <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/02-scinet-atlas-cluster#1-scinet-account-request" target="_blank">1. SCINet Account Request  ⤴</a>)*
+* and the **login credentials** (login & password) for an account on the HPC system <br><i.(you will get the initial SCINet credentials in the "Welcome to SCINet" email, see section {% include target_link href=612.2 section="#1-scinet-account-request" text="SCINet Account Request" %}</i>
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
 To get familiar with SSH connection, explore the hands-on tutorials in this workbook: <br>
-<li><a href="https://datascience.101workbook.org/06-IntroToHPC/02-SSH/01-secure-shell-connection" target="_blank">SSH: Secure Shell Connection - What is ssh?  ⤴</a></li>
-<li><a href="https://datascience.101workbook.org/06-IntroToHPC/02-SSH/02-ssh-shortcuts" target="_blank">Set up shortcuts for SSH hosts  ⤴</a></li>
-<li><a href="https://datascience.101workbook.org/06-IntroToHPC/02-SSH/03-password-less-ssh" target="_blank">Setup password-less SSH for HPC  ⤴</a></li>
+<li>{% include target_link href=623 section="#what-is-ssh" text="SSH: Secure Shell Connection - What is ssh?" %}</li>
+<li>{% include target_link href=623.1 section="#shortcuts-for-ssh-hosts" text="Set up shortcuts for SSH hosts" %}</li>
+<li>{% include target_link href=623.1 section="#setup-password-less-login-for-hpc" text="Setup password-less SSH for HPC" %}</li>
 </span>
 </div><br>
 
@@ -162,9 +162,9 @@ Overall, `ssh` is a convenient and secure way to access HPC systems remotely and
 ### *Command line login*
 
 Open terminal window. <br>
-*If you are a beginner at Linux, it may be beneficial for you to start with the tutorials provided in section <a href="https://datascience.101workbook.org/02-IntroToCommandLine/00-IntroToCommandLine-LandingPage" target="_blank">02. Introduction to Command Line  ⤴</a>:* <br>
-* <a href="https://datascience.101workbook.org/02-IntroToCommandLine/01-terminal-basics" target="_blank">Terminal: a text-based interface for command-line operations  ⤴</a>
-* <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02-intro-to-unix-shell" target="_blank">Introduction to UNIX Shell: shell variables, HOME dir, .bashrc  ⤴</a>
+<i>If you are a beginner at Linux, it may be beneficial for you to start with the tutorials provided in section {% include target_link href=300 text="03: Introduction to Command Line" %}:</i> <br>
+* {% include target_link href=310 text="Terminal - an interface for command-line operations" %}
+* {% include target_link href=320 text="Introduction to UNIX Shell: configuration, variables, home dir" %}
 
 To connect to the HPC system, enter the `ssh` command in the terminal on your local computer that looks like this `ssh username@hostname`, where:
 * `username` is your SCINet account, typically `name.surname`
@@ -195,7 +195,11 @@ If you need a more detailed guide for a specific operating system, follow the st
 
 ### *Command line data transfer*
 
-> [Globus Online](https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/02-scinet-atlas-cluster#data-transfer-using-globus) is the recommended method for transferring data to and from the SCINet clusters. It provides faster data transfer speeds compared to scp, has a graphical interface, and does not require a GA verification code for every file transfer.
+<div style="background: mistyrose; padding: 15px; margin-bottom: 20px; font-size: 20px;">
+<span style="font-weight:800;">WARNING:</span>
+<br><span style="font-style:italic;"> {% include target_link href=612.2 section="#data-transfer-using-globus" text="Globus Online" %} is the recommended method for transferring data to and from the SCINet clusters. It provides faster data transfer speeds compared to scp, has a graphical interface, and does not require a GA verification code for every file transfer. </span>
+</div>
+
 
 <span style="color: #ff3870;font-weight: 500;">Before you transfer data on Atlas, familiarize yourself with <a href="https://scinet.usda.gov/guides/data/datatransfer#best-practices" target="_blank">Best Practices  ⤴</a>.</span>
 
@@ -316,9 +320,9 @@ Your SciNet credentials includes:
 
 * **username**, usually in the form `name.surname`
 * **password**, the same password as used for ssh connection to Atlas
-* **Authenticator code**, if you don’t use it yet, find out more in section  <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/02-scinet-atlas-cluster#2-get-multi-factor-authentication-mfa" target="_blank">2. Get Multi-Factor Authentication (MFA)  ⤴</a>
+* **Authenticator code**, if you don’t use it yet, find out more in section  {% include target_link href=612.2 section="#2-get-multi-factor-authentication-mfa" text="Tutorial" %}
 
-When sucessfully logged in, you will see the <i>"Message of the Day"</i> in the Atlas OnDemand welcome interface.
+When successfully logged in, you will see the <i>"Message of the Day"</i> in the Atlas OnDemand welcome interface.
 
 ![Atlas OOD]({{ images_path }}/01_hpc_scinet_atlas_ood_home.png)
 

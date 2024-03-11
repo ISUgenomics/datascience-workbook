@@ -240,4 +240,4 @@ qrls 123456
 ```
 *This will release the job with ID 1234 from hold.*
 
-<span style="color: #ff3870;font-weight: 500;">If you want to learn more about PBS commands, a useful resource to explore is the <a href="https://datascience.101workbook.org/06-IntroToHPC/05-JOB-QUEUE/02-PBS/02-pbs-cheatsheet" target="_blank">PBS cheatsheet  ⤴</a>.</span>
+<span style="color: #ff3870;font-weight: 500;">If you want to learn more about PBS commands, a useful resource to explore is the {% include target_link href=652.2 text="PBS commands (cheatsheet)." %} </span>

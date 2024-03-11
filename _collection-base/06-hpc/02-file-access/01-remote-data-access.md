@@ -34,30 +34,30 @@ It is important to note that <b>accessing data on an HPC cluster remotely can be
 
 ## **1. VPN (Virtual Private Network)**
 
-<i>VPN is a technology that allows users to securely access a private network over the Internet. VPNs can be used to access remote files and data stored on remote computers within the same network. VPNs protect users data from being intercepted or monitored by unauthorized parties <b>while login from off-campus</b>. Learn more from the hands-on tutorial <a href="https://datascience.101workbook.org/06-IntroToHPC/02-FILE-ACCESS/02-virtual-private-network" target="_blank">Virtual Private Network (VPN) Connection  ⤴</a> in this workbook.</i>
+<i>VPN is a technology that allows users to securely access a private network over the Internet. VPNs can be used to access remote files and data stored on remote computers within the same network. VPNs protect users data from being intercepted or monitored by unauthorized parties <b>while login from off-campus</b>. Learn more from the hands-on tutorial {% include target_link href=622 text="Virtual Private Network (VPN) Connection" %} </i>
 
 **Jump to solution to get started with:**
-* <a href="https://scinet.usda.gov/guides/access/vpn#scinet-vpn" target="_blank">VPN access to Atlas and Ceres  ⤴</a> computing clusters of the <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/01-scient-network-intro" target="_blank">SCINet HPC system  ⤴</a>
-* <a href="http://vpn.iastate.edu/" target="_blank">VPN access to Nova and Condo  ⤴</a> computing clusters of the <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/01-isu-hpc-intro" target="_blank">ISU HPC system  ⤴</a>
+* <a href="https://scinet.usda.gov/guides/access/vpn#scinet-vpn" target="_blank">VPN access to Atlas and Ceres  ⤴</a> computing clusters of the {% include target_link href=612.1 text="SCINet Scientific Computing (HPC)" %}
+* <a href="http://vpn.iastate.edu/" target="_blank">VPN access to Nova and Condo  ⤴</a> computing clusters of the {% include target_link href=613.1 text="ISU HPC Network" %}
 
 ## **2. SSH (Secure Shell connection)**
 
-*With SSH, a cryptographic network protocol, users can connect to the cluster and then browse, manipulate, and execute files as if they were sitting at the terminal of a computer on the cluster. Learn more from the hands-on tutorials in the <a href="https://datascience.101workbook.org/06-IntroToHPC/02-FILE-ACCESS/03-secure-shell-connection" target="_blank">Secure Shell Connection (SSH)  ⤴</a> section of this workbook.*
+<i>With SSH, a cryptographic network protocol, users can connect to the cluster and then browse, manipulate, and execute files as if they were sitting at the terminal of a computer on the cluster. Learn more from the hands-on tutorials in the {% include target_link href=623 text="Secure Shell Connection (SSH)" %} </i>
 
 **Jump to solution to get started with:**
-  * <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/02-scinet-atlas-cluster#3-terminal-access" target="_blank">SSH access to Atlas  ⤴</a> computing cluster of the <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/01-scient-network-intro" target="_blank">SCINet HPC system  ⤴</a>
-  * <a href="https://scinet.usda.gov/guides/access/login#using-ssh-to-connect" target="_blank">SSH access to Ceres  ⤴</a> computing cluster of the <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/01-scient-network-intro" target="_blank">SCINet HPC system  ⤴</a>
-  * <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/03-isu-hpc-nova-cluster#access-and-login" target="_blank">SSH access to Nova  ⤴</a> computing cluster of the <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/01-isu-hpc-intro" target="_blank">ISU HPC system  ⤴</a>
+  * {% include target_link href=612.2 section="#3-terminal-access" text="SSH access to Atlas" %} computing cluster of the {% include target_link href=612.1 text="SCINet HPC system" %}
+  * <a href="https://scinet.usda.gov/guides/access/login#using-ssh-to-connect" target="_blank">SSH access to Ceres</a> computing cluster of the {% include target_link href=612.1 text="SCINet HPC system" %}
+  * {% include target_link href=613.3 section="#access-and-login" text="SSH access to Nova" %} computing cluster of the {% include target_link href=613.1 text="ISU HPC system" %}
 
 
 ## **3. Remote web-based access**
 
-*Some HPC clusters may also provide web-based interfaces (e.g., <a href="https://openondemand.org" target="_blank">Open OnDemand  ⤴</a>) for remotely accessing and managing data. It also allows users to submit computing jobs to the HPC queueing system through a web interface or API, without the need for command line login to the underlying infrastructure. Learn more from the hands-on tutorial <a href="https://datascience.101workbook.org/06-IntroToHPC/02-FILE-ACCESS/04-open-on-demand" target="_blank">Open On Demand (OOD) Connection  ⤴</a> in this workbook.*
+<i>Some HPC clusters may also provide web-based interfaces (e.g., <a href="https://openondemand.org" target="_blank">Open OnDemand  ⤴</a>) for remotely accessing and managing data. It also allows users to submit computing jobs to the HPC queueing system through a web interface or API, without the need for command line login to the underlying infrastructure. Learn more from the hands-on tutorial {% include target_link href=624 text="Open On Demand (OOD) Connection" %} </i>
 
 **Jump to solution to get started with:**
-  * <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/02-scinet-atlas-cluster#open-ondemand-login" target="_blank">OOD access to Atlas  ⤴</a> computing cluster of the <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/01-scient-network-intro" target="_blank">SCINet HPC system  ⤴</a>
-  * <a href="https://scinet.usda.gov/guides/access/open-ondemand#open-ondemand-interface-guide" target="_blank">OOD access to Ceres  ⤴</a> computing cluster of the <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/01-scient-network-intro" target="_blank">SCINet HPC system  ⤴</a>
-  * <a href="https://www.hpc.iastate.edu/guides/open-ondemand" target="_blank">OOD access to Nova  ⤴</a> computing cluster of the <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/01-isu-hpc-intro" target="_blank">ISU HPC system  ⤴</a>
+  * {% include target_link href=612.2 section="#open-ondemand-login" text="OOD access to Atlas" %} computing cluster of the {% include target_link href=612.1 text="SCINet HPC system" %}
+  * <a href="https://scinet.usda.gov/guides/access/open-ondemand#open-ondemand-interface-guide" target="_blank">OOD access to Ceres</a> computing cluster of the {% include target_link href=612.1 text="SCINet HPC system" %}
+  * <a href="https://www.hpc.iastate.edu/guides/open-ondemand" target="_blank">OOD access to Nova  ⤴</a> computing cluster of the {% include target_link href=613.1 text="ISU HPC system" %}
 
 ## **4. Remote desktop software**
 
@@ -69,10 +69,11 @@ It is important to note that <b>accessing data on an HPC cluster remotely can be
 
 <b>RFS protocol allows users to access files stored on a remote computer</b>, without having to physically transfer the files to their local machine. Users can remotely access, read, write, and modify files as if they were stored locally on their own computer. <b>Some HPC systems may have the Remote File System (RFS) pre-installed and configured, while others may not.</b>
 
-Learn more from the hands-on tutorials in the <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/04-0-remote-data-preview" target="_blank">07. Data Acquisition and Wrangling: Remote Data Access: <b>Remote Data Preview</b> (without Downloading)  ⤴</a> section of this workbook:
-* <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/04-1-tutorial-view-text-files-unix" target="_blank">Viewing Text Files using UNIX commands  ⤴</a>
-* <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/04-2-tutorial-view-pdf-files-x11" target="_blank">Viewing PDF Files using X11 SSH connection  ⤴</a>
-* <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/04-3-tutorial-mount-remote-folder" target="_blank">Mounting Remote Folder on Local Machine  ⤴</a>
+Learn more from the hands-on tutorials in the {% include target_link href=714 text="Remote data preview (without downloading)" %} section of this workbook:
+* {% include target_link href=714.1 text="Viewing text files using UNIX commands" %}
+* {% include target_link href=714.2 text="Viewing PDF files using X11 SSH connection" %}
+* {% include target_link href=714.3 text="Viewing graphics in a terminal as the text-based ASCII art" %}
+* {% include target_link href=714.4 text="Mounting remote folder on a local machine" %}
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
@@ -83,7 +84,7 @@ If the HPC system already has RFS pre-configured, the user may simply need to fo
 
 ---
 
-<span style="color: #ff3870;font-weight: 500;">To learn more about remote access and data manipulation, go to Section <a href="https://datascience.101workbook.org/07-DataParsing/00-DataParsing-LandingPage" target="_blank">07. Data Acquisition and Wrangling  ⤴</a> in this workbook:</span>
-* <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/01-remote-data-access" target="_blank">1. Remote Data Access  ⤴</a>
-* <a href="https://datascience.101workbook.org/07-DataParsing/02-DATA-MANIPULATION/01-data-manipulation" target="_blank">2. Data Manipulation  ⤴</a>
-* <a href="https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/00-data-wrangling-apps" target="_blank">3. Data Wrangling: ready-made apps  ⤴</a>
+<span style="color: #ff3870;font-weight: 500;">To learn more about remote access and data manipulation, go to Section {% include target_link href=700 text="07: Data Acquisition and Wrangling" %} in this workbook:</span>
+* {% include target_link href=711 text="1. Remote data access" %}
+* {% include target_link href=720 text="2. Data manipulation" %}
+* {% include target_link href=731 text="3. Data wrangling: use ready-made apps" %}

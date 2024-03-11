@@ -47,7 +47,7 @@ Then you can use Julia in your current session on the cluster.
 <div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">PRO TIP for SCINet users:</span>
 <br><span style="font-style:italic;">
-On <b>Atlas cluster</b>, Julia is available as a module in <b>version 1.5</b>, and <br>on <b>Ceres cluster</b>, it's available in <b>version 1.7</b> <i>(October 2023)</i>. <br>Depending on the version compatibility with your project dependencies, you can choose the cluster that best suits your needs. If neither of these versions aligns with your project, <b>you have the option to install a different Julia version in your user space</b>. For detailed instructions on how to do this, refer to the section <a href="https://datascience.101workbook.org/05-IntroToProgramming/05-JULIA/02-tutorial-setup-julia#install-julia-in-selected-version" >Install Julia in selected version</a> in this tutorial.
+On <b>Atlas cluster</b>, Julia is available as a module in <b>version 1.5</b>, and <br>on <b>Ceres cluster</b>, it's available in <b>version 1.7</b> <i>(October 2023)</i>. <br>Depending on the version compatibility with your project dependencies, you can choose the cluster that best suits your needs. If neither of these versions aligns with your project, <b>you have the option to install a different Julia version in your user space</b>. For detailed instructions on how to do this, refer to the section {% include target_link href=552 section="#install-julia-in-selected-version" text="Install Julia in selected version" %} in this tutorial.
 </span>
 </div>
 
@@ -330,7 +330,7 @@ If you <b>install IJulia in the base environment</b>, you'll obtain a universal 
 </span>
 </div>
 
-Once `IJulia` is installed, you can launch Jupyter Lab *(assuming you <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-jupyter-basics#installing-jupyter" target="_blank">have it installed</a>)*.
+Once `IJulia` is installed, you can launch Jupyter Lab <i>(assuming you {% include target_link href=412 section="#installing-jupyter" text="have it installed" %})</i>.
 
 ### Access Julia in Jupyter Lab
 
@@ -345,7 +345,8 @@ enter your login credentials, and select **JupyterLab** from the `Interactive Ap
 
 **B. Launch Jupyter Lab installed on your local machine**
 
-In the separate terminal tab, navigate to the desired location in your file system and launch the Jupyter Lab: <br>*(assuming you <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-jupyter-basics#installing-jupyter" target="_blank">have it installed</a>)*
+In the separate terminal tab, navigate to the desired location in your file system and launch the Jupyter Lab: <br>
+<i>(assuming you {% include target_link href=412 section="#installing-jupyter" text="have it installed" %})</i>
 ```
 jupyter lab
 ```

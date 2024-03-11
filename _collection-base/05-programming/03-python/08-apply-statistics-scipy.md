@@ -54,7 +54,7 @@ conda install scipy
 <span style="font-weight:800;">WARNING:</span>
 <br><span style="font-style:italic;">
 This command will install SciPy and any necessary dependencies in your current Conda environment. <br><br>
-If you don't have Conda installed yet, you can follow the guide provided in the tutorial <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-python-setup-locally" target="_blank">Local Python setup on your computing machine  ⤴</a>. If you are using the Anaconda distribution, conda is already installed by default.
+If you don't have Conda installed yet, you can follow the guide provided in the tutorial {% include target_link href=423 text="Local Python setup on your computing machine." %} If you are using the Anaconda distribution, conda is already installed by default.
 </span>
 </div>
 

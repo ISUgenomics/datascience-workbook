@@ -32,18 +32,17 @@ The software available on a High-Performance Computing system can vary depending
 * scientific libraries to accelerate computations
 * applications, including numerical simulations, data analysis, and visualization tools
 
-Explore the <a href="https://datascience.101workbook.org/06-IntroToHPC/04-SOFTWARE/01-software-available-on-HPC" target="_blank">Software Available on HPC  ⤴</a> tutorial in this workbook, to learn more about:
+Explore the {% include target_link href=641 text="Software available on HPC" %} tutorial in this workbook, to learn more about:
 
-* <a href="https://datascience.101workbook.org/06-IntroToHPC/04-SOFTWARE/01-software-available-on-HPC#how-to-find-available-software" target="_blank">How to find available software?  ⤴</a>
-  * <a href="https://datascience.101workbook.org/06-IntroToHPC/04-SOFTWARE/01-software-available-on-HPC#software-as-built-in-commands" target="_blank">Software as built-in commands  ⤴</a>
-  * <b>[Software as built-in modules](#software-as-built-in-modules)</b> *(see below)*
-  * <a href="https://datascience.101workbook.org/06-IntroToHPC/04-SOFTWARE/01-software-available-on-HPC#software-via-package-manager" target="_blank">Software via package manager  ⤴</a>
-  * <a href="https://datascience.101workbook.org/06-IntroToHPC/04-SOFTWARE/01-software-available-on-HPC#check-the-documentation" target="_blank">Check the documentation  ⤴</a>
-  * <a href="https://datascience.101workbook.org/06-IntroToHPC/04-SOFTWARE/01-software-available-on-HPC#ask-the-system-administrator" target="_blank">Ask the system administrator  ⤴</a>
+* {% include target_link href=641 section="#how-to-find-available-software" text="How to find available software?" %}
+  * {% include target_link href=641 section="#software-as-built-in-commands" text="Software as built-in commands" %}
+  * {% include target_link href=642 section="#software-as-built-in-modules" text="<b>Software as built-in modules</b> <i>(see below)</i>" %}
+  * {% include target_link href=641 section="#software-via-package-manager" text="Software via package manager" %}
+  * {% include target_link href=641 section="#check-the-documentation" text="Check the documentation" %}
+  * {% include target_link href=641 section="#ask-the-system-administrator" text="Ask the system administrator" %}
+* {% include target_link href=644 text="How to get new software installed?" %}
 
-
-* <a href="https://datascience.101workbook.org/06-IntroToHPC/04-SOFTWARE/03-installing-custom-programs" target="_blank">How to get new software installed?  ⤴</a>
-
+---
 
 # Software as built-in modules
 
@@ -236,11 +235,11 @@ module load openmpi/4.1.3
 ```
 
 ## **SCINet HPC modules**
-Both <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/01-scient-network-intro" target="_blank">SCINet HPC  ⤴</a> clusters, <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/02-scinet-atlas-cluster" target="_blank">Atlas  ⤴</a> and <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/03-scinet-ceres-cluster" target="_blank">Ceres  ⤴</a> use the Environment Modules package. <br>Learn more from SCINet resources:
+Both {% include target_link href=612.1 text="SCINet HPC" %} clusters, {% include target_link href=612.2 text="Atlas" %} and {% include target_link href=612.3 text="Ceres" %} use the Environment Modules package. <br>Learn more from SCINet resources:
 * <a href="https://scinet.usda.gov/guides/software/modules#environment-modules" target="_blank">Environment Modules on SCINet HPC  ⤴</a>
 * <a href="https://scinet.usda.gov/guides/software/preinstalled#ceres-command-line-software-managed-by-the-module-system" target="_blank">Ceres Command-line Software Managed by the Module System  ⤴</a>
 
 ## **ISU HPC modules**
-Both <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/01-isu-hpc-intro" target="_blank">ISU HPC  ⤴</a> clusters, <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/03-isu-hpc-nova-cluster" target="_blank">Nova  ⤴</a> and <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/02-isu-hpc-condo-cluster" target="_blank">Condo  ⤴</a> use the Environment Modules package. <br>Learn more from ISU resources:
-* <a href="https://www.hpc.iastate.edu/guides/nova/software" target="_blank">Environment Modules on Nova  ⤴</a>
-* <a href="https://www.hpc.iastate.edu/guides/condo-2017/software" target="_blank">Environment Modules on Condo  ⤴</a>
+Both {% include target_link href=613.1 text="ISU HPC" %} clusters, {% include target_link href=613.3 text="Nova" %} and {% include target_link href=613.2 text="Condo" %} use the Environment Modules package. <br>Learn more from ISU resources:
+* {% include target_link href=120 text="Tutorial" %} <a href="https://www.hpc.iastate.edu/guides/nova/software" target="_blank">Environment Modules on Nova  ⤴</a>
+* {% include target_link href=120 text="Tutorial" %} <a href="https://www.hpc.iastate.edu/guides/condo-2017/software" target="_blank">Environment Modules on Condo  ⤴</a>

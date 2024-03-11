@@ -46,7 +46,7 @@ tags: []
 <br>
 
 # Logging in
-To log in to Nova/Condo Clusters, you need to be connected to ISU network on-campus or use <a href="https://vpn.iastate.edu/+CSCOE+/logon.html#form_title_text" target="_blank">ISU VPN ⤴</a> if you are off-campus. The first time you try to log in to Nova or Condo, a new Google Authenticator (GA) account is created. You will need to use GA for login. The first time you use the <a href="https://datascience.101workbook.org/06-IntroToHPC/02-FILE-ACCESS/03-secure-shell-connection" target="_blank">Secure Shell ⤴</a> connection to Nova/Condo, it will respond with:
+To log in to Nova/Condo Clusters, you need to be connected to ISU network on-campus or use <a href="https://vpn.iastate.edu/+CSCOE+/logon.html#form_title_text" target="_blank">ISU VPN ⤴</a> if you are off-campus. The first time you try to log in to Nova or Condo, a new Google Authenticator (GA) account is created. You will need to use GA for login. The first time you use the {% include target_link href=623 text="Secure Shell Connection (SSH)" %} connection to Nova/Condo, it will respond with:
 
 ```
 "host key not found, generate hostkey?(yes/no)"
@@ -76,7 +76,7 @@ Partitions | <a href="https://www.hpc.iastate.edu/guides/condo-2017/queue-config
 * Use proper documentation and version control such as Git to track changes and ease of reproducibility.
 * Manage your files appropriately on the cluster. Cleaning up unnecessary files and organising data/files is important.
 
-Also check out the <a href="https://datascience.101workbook.org/09-ProjectManagement/00-RESEARCH-PROJECT/01-project-management-overview" target="_blank">Project Management overview⤴</a> and <a href="https://datascience.101workbook.org/09-ProjectManagement/00-RESEARCH-PROJECT/02-intro-to-project-management" target="_blank">Project Management guide ⤴</a> for additional tips.
+Also check out the {% include target_link href=911 text="Introduction to Project Management" %} and {% include target_link href=933.2 text="A Practical guide to managing research documentation" %} for additional tips.
 <br>
 <br>
 
@@ -91,12 +91,12 @@ Also check out the <a href="https://datascience.101workbook.org/09-ProjectManage
 
 # Explore hands-on tutorials
 Tutorials to get you started on different HPC Clusters are available in this workbook.
-* <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/02-isu-hpc-condo-cluster" target="_blank">Condo Computing Cluster ⤴</a>
-* <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/03-isu-hpc-nova-cluster" target="_blank">Nova Computing Cluster ⤴</a>
-* <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/04-isu-hpc-lss-storage" target="_blank">Large Scale Storage ⤴</a>
-* <a href="https://datascience.101workbook.org/06-IntroToHPC/04-SOFTWARE/01-software-available-on-HPC" target="_blank">Software Available on HPC ⤴</a>
-* Check out the <a href="https://datascience.101workbook.org/06-IntroToHPC/05-JOB-QUEUE/01-SLURM/01-slurm-basics" target="_blank">SLURM Basics ⤴</a> and <a href="https://datascience.101workbook.org/06-IntroToHPC/05-JOB-QUEUE/01-SLURM/03-slurm-1-tutorial-job-submission" target="_blank">Creating SLURM Job Submission Scripts ⤴</a> for running your jobs on any HPC cluster.
-* It is useful to have some basic knowledge about command line before using HPC. Check this <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02E-tutorial-unix-getting-started" target="_blank">Unix tutorial ⤴</a> to learn the basics.
+* {% include target_link href=613.2 text="Condo computing cluster" %}
+* {% include target_link href=613.3 text="Nova computing cluster" %}
+* {% include target_link href=613.4 text="Large Scale Storage (LLS) system" %}
+* {% include target_link href=641 text="Software available on HPC" %}
+* Check out the {% include target_link href=651.1 text="SLURM Basics" %} and {% include target_link href=651.4 text="Creating SLURM job submission scripts" %} for running your jobs on any HPC cluster.
+* It is useful to have some basic knowledge about command line before using HPC. Check this {% include target_link href=325 text="Getting started with UNIX (video + exercises)" %} to learn the basics.
 <br>
 <br>
 

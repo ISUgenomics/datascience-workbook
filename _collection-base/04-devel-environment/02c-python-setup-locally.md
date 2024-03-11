@@ -33,10 +33,10 @@ In this section, we will cover the process of setting up Python on a local machi
 
 **Python-related sections in this workbook:**
 
-* <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02-python-programming-environment" target="_blank">Python Programming Environment(s)  ⤴</a>
-* <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/01-introduction-to-python" target="_blank">Introduction to Python Programming  ⤴</a>
-* <a href="https://datascience.101workbook.org/07-DataParsing/02-DATA-MANIPULATION/02-PYTHON/01-manipulate-data-with-python" target="_blank">Manipulating Text Files with Python  ⤴</a>
-* <a href="https://datascience.101workbook.org/08-DataVisualization/02-GRAPHS/02-PYTHON/01-interactive-graphing-with-python" target="_blank">Plotly-Dash: Data Processing & Interactive Plotting with Python  ⤴</a>
+* {% include target_link href=420 text="Python programming environment(s)" %}
+* {% include target_link href=531 text="Introduction to Python programming" %}
+* {% include target_link href=722.1 text="Manipulating data files with Python" %}
+* {% include target_link href=822.01 text="Plotly-Dash: interactive plotting with Python" %}
 
 **Sections in this tutorial:**
 
@@ -324,22 +324,22 @@ Here are some of the reasons **why choosing the right development environment is
 
 Choosing the **development environment for Python** projects depends on personal preferences, operating systems, and the specific requirements of the project. Some of the best choices include:
 * <a href="https://www.jetbrains.com/pycharm/" target="_blank"><b>PyCharm</b>  ⤴</a> is a powerful and popular development environment for Python <br>
-<span style="color: #ff3870;font-weight: 500;">Learn more from the hands-on tutorial: <i><a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02E-python-pycharm-ide" target="_blank">PyCharm: IDE for Professional Python Developers  ⤴</a></i></span>
+<span style="color: #ff3870;font-weight: 500;">Learn more from the hands-on tutorial: {% include target_link href=427 text="PyCharm: IDE for professional Python developers" %} </span>
 
 * <a href="https://code.visualstudio.com/" target="_blank"><b>Visual Studio Code</b> (VSC)  ⤴</a> is a lightweight and versatile code editor that can be used for Python development <br>
-<span style="color: #ff3870;font-weight: 500;">Learn more from the hands-on tutorial: <i><a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01A-tutorial-VSCode" target="_blank">Visual Studio Code: Multi-language Integrated DE  ⤴</a></i></span>
+<span style="color: #ff3870;font-weight: 500;">Learn more from the hands-on tutorial: {% include target_link href=411 text="Visual Studio Code: multi-language integrated DE (VSC)" %} </span>
 
 * <a href="https://jupyter.org/" target="_blank"><b>Jupyter Notebook</b>  ⤴</a> is a web-based development environment that is ideal for Python-based data science <br>
-<span style="color: #ff3870;font-weight: 500;">Learn more from the hands-on tutorial: <i><a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-jupyter-basics" target="_blank">Jupyter: Interactive Web-Based Multi-Kernel DE  ⤴</a></i></span><br>
-  * <i><a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-tutorial-jupyter-lab" target="_blank">Getting Started with JupyterLab on a local machine  ⤴</a></i><br>
-  * <i><a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-tutorial-jupyter-notebook" target="_blank">Getting Started with Jupyter Notebook on HPC systems  ⤴</a></i><br>
-  * <i><a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02D-python-jupyter-notebook" target="_blank">Jupyter Lab: create an interactive Python notebook  ⤴</a></i>
+<span style="color: #ff3870;font-weight: 500;">Learn more from the hands-on tutorial: {% include target_link href=412 text="Jupyter: interactive web-based multi-kernel DE" %} </span><br>
+  * {% include target_link href=413 text="Getting started with JupyterLab on a local machine" %} <br>
+  * {% include target_link href=414 text="Getting started with Jupyter Notebook on HPC systems" %} <br>
+  * {% include target_link href=426 text="Jupyter Lab: create an interactive Python notebook" %}
 
 
 * <a href="https://replit.com/" target="_blank"><b>Repl.it</b>  ⤴</a> is an online development environment that supports multiple programming languages, including Python. **Note:** *It requires to sign up, a free plan includes 0.5 GB of account storage.*
 
 * <a href="https://www.vim.org/" target="_blank"><b>Vim</b>  ⤴</a> is a highly customizable and powerful in-terminal code editor <br>
-<span style="color: #ff3870;font-weight: 500;">Learn more from the hands-on tutorial: <i><a href="https://datascience.101workbook.org/02-IntroToCommandLine/02B-text-files-editors" target="_blank">Command Line Text Files Editors: nano, vim  ⤴</a></i></span>
+<span style="color: #ff3870;font-weight: 500;">Learn more from the hands-on tutorial: {% include target_link href=322 text="Command Line text files editors: nano, vim" %} </span>
 
 **All of them can be used in Windows, macOS, and Linux.** <br>
 Follow a discussion on Python IDE - <a href="https://realpython.com/python-ides-code-editors-guide/" target="_blank">https://realpython.com/python-ides-code-editors-guide/  ⤴</a>
@@ -414,7 +414,7 @@ The fastest way to obtain conda is to <b>install Miniconda</b>, a mini version o
 **Practical Guides**<br>
 Follow the up-to-date installation guide for **Miniconda** from the official documentation provided at <a href="https://conda.io/projects/conda/en/latest/user-guide/install/index.html#regular-installation" target="_blank">https://conda.io/projects/conda/en/latest/user-guide/install/index.html#regular-installation  ⤴</a>.
 
-You can also follow a step by step guide for installing **Conda Miniforge3 for both ARM and Intel chips** on your MacBook Pro in the tutorial <a href="https://datascience.101workbook.org/03-SetUpComputingMachine/03A-tutorial-installations-on-mac#-install-conda" target="_blank">Installations on MacBook Pro/Install Conda  ⤴</a>.
+You can also follow a step by step guide for installing **Conda Miniforge3 for both ARM and Intel chips** on your MacBook Pro in the tutorial {% include target_link href=231 section="#-install-conda" text="Installations on MacBook Pro / Install Conda" %}
 
 
 Once you have installed Conda, you can use it to create and manage Python environments, install packages, and more.
@@ -628,7 +628,7 @@ docker build -t myimage:latest -f MyDockerfile .
 <i>This command specifies that the Dockerfile is named "MyDockerfile" and is located in the current directory (.), and it sets the name of the resulting image to "myimage" with the latest tag.</i>
 </div><br>
 
-<span style="color: #ff3870;font-weight: 500;">Learn more about Docker containers and Docker graphical user interface (GUI) from the practical tutorial <a href="https://datascience.101workbook.org/06-IntroToHPC/07-CONTAINERS/02-DOCKER/01-docker-basics" target="_blank">Docker basics  ⤴</a> available in the <a href="https://datascience.101workbook.org/06-IntroToHPC/07-CONTAINERS/00-introduction-to-containers" target="_blank">Introduction to Containers  ⤴</a> section of this workbook.</span>  
+<span style="color: #ff3870;font-weight: 500;">Learn more about Docker containers and Docker graphical user interface (GUI) from the practical tutorial {% include target_link href=672.1 text="Docker - accelerated container application development" %} available in the {% include target_link href=670 text="Introduction to containers" %} section of this workbook.</span>  
 
 ---
 

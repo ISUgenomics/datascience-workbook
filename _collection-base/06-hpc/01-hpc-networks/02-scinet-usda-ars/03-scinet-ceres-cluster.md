@@ -879,7 +879,7 @@ module unload miniconda
 
 **There are also some SLURM-specific commands that are very useful**
 
-See the [bioinformatics workbook](https://bioinformaticsworkbook.org/Appendix/Unix/01_slurm-basics.html#gsc.tab=0) for more than what we cover here.
+See the {% include target_link href=651.1 text="SLURM: basics of workload manager" %} for more than what we cover here.
 
 **sinfo** - see the status of all the nodes
 

@@ -21,13 +21,13 @@ tags: []
 
 <span style="color: #ff3870;font-weight: 500;">Before starting this tutorial, there are a few requirements that you should have in place.</span>
 * Firstly, you should be familiar with using the **command line in terminal** on your computer. <br>
-<i>Learn more from the practical turtorials in section <a href="https://datascience.101workbook.org/02-IntroToCommandLine/00-IntroToCommandLine-LandingPage" target="_blank">02. Introduction to the Command Line  ⤴</a></i>
+<i>Learn more from the practical tutorials in section {% include target_link href=300 text="03: Introduction to Command Line" %} </i>
 * Secondly, you should **have Python installed** on your local machine.  <br>
-<i>Learn more from the practical turtorial <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-python-setup-locally" target="_blank">Local Python setup on your computing machine  ⤴</a></i>
+<i>Learn more from the practical tutorial {% include target_link href=423 text="Local Python setup on your computing machine" %} </i>
 * Thirdly, you should have a Python Integrated **Development Environment** (IDE) set up on your computer, e.g., PyCharm or JupyterLab or any text editor.  <br>
-<i>Learn more from the practical turtorial <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02-python-programming-environment" target="_blank">Python Programming Environment(s)  ⤴</a></i>
+<i>Learn more from the practical tutorial {% include target_link href=420 text="Python programming environment(s)" %} </i>
 * Finally, you should have a **basic understanding of Python** programming.  <br>
-<i>Learn more from the practical turtorial <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/01-introduction-to-python" target="_blank">Introduction to Python Programming  ⤴</a></i>
+<i>Learn more from the practical tutorial {% include target_link href=531 text="Introduction to Python programming" %} </i>
 
 
 # Introduction
@@ -59,10 +59,10 @@ Using the `math` module in Python can help you **perform complex mathematical op
 ## *Getting Started*
 
 You can try out the `math` module on your **local machine** if you have Python installed. <br>
-<span style="color: #ff3870;font-weight: 500;"> If you want to make up for the installation step, you can follow the installation guide provided in the tutorial <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-python-setup-locally" target="_blank">Local Python setup on your computing machine   ⤴</a>.</span>
+<span style="color: #ff3870;font-weight: 500;"> If you want to make up for the installation step, you can follow the installation guide provided in the tutorial {% include target_link href=423 text="Local Python setup on your computing machine." %} </span>
 
 
-Alternatively, if you prefer to **work online**, you can use various online Python interpreters such as <a href="https://repl.it/" target="_blank">Repl.it  ⤴</a>, <a href="https://www.pythonanywhere.com/" target="_blank">PythonAnywhere  ⤴</a>, or <a href="https://colab.research.google.com/" target="_blank">Colab  ⤴</a>. These online interpreters provide a Python shell and allow you to run Python code without installing Python on your local machine.
+Alternatively, if you prefer to **work online**, you can use various online Python interpreters such as <a href="https://repl.it/" target="_blank">Repl.it  ⤴</a>, {% include target_link href=120 text="Tutorial" %} <a href="https://www.pythonanywhere.com/" target="_blank">PythonAnywhere  ⤴</a>, or <a href="https://colab.research.google.com/" target="_blank">Colab  ⤴</a>. These online interpreters provide a Python shell and allow you to run Python code without installing Python on your local machine.
 
 
 For example, you can **use online Python shell** immediately available at <a href="https://www.python.org/shell/" target="_blank">https://www.python.org/shell/  ⤴</a> to experiment with the `math` module. <br> *Simply type in your Python code in the shell and hit enter to see the output.*

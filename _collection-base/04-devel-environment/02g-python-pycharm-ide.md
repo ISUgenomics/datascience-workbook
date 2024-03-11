@@ -269,7 +269,7 @@ When you use PyCharm for the first time, the "Projects" section in the general o
 * pipenv
 * conda
 * poetry  <br><br>
-<span style="color: #ff3870;font-weight: 500;">You can learn more about creating and managing Python environments from the practical tutorial <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-python-setup-locally" target="_blank">Python Setup on your computing machine  ⤴</a> ( see section <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-python-setup-locally#3-manage-python-environments" target="_blank">3. Manage Python environments  ⤴</a> ).</span> <br><br>
+<span style="color: #ff3870;font-weight: 500;">You can learn more about creating and managing Python environments from the practical tutorial {% include target_link href=423 text="Local Python setup on your computing machine" %} ( see section {% include target_link href=423 section="#3-manage-python-environments" text="3. Manage Python environments." %} </span> <br><br>
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">Python best practice is to create a virtualenv for each project. In most cases, PyCharm create a new virtual environment automatically and you don't need to configure anything. </span>
@@ -431,11 +431,11 @@ PyCharm integrates with popular version control systems like Git, allowing you t
 ![02_python-pycharm-project-vcs.png]({{ images_path }}/02_python-pycharm-project-vcs.png)
 
 
-<span style="color: #ff3870;font-weight: 500;">To learn more about programming in Python, see tutorials in section <a href="https://datascience.101workbook.org/05-IntroToProgramming/00-IntroToProgramming-LandingPage" target="_blank">05. Introduction to Programming / 3. Introduction to Python Programming  ⤴</a></span>
-* <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/01-introduction-to-python" target="_blank">Introduction to Python Programming  ⤴</a>
-* <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/03-tutorial-read-write-files" target="_blank">Read and Write Data Files  ⤴</a>
-* <a href="https://datascience.101workbook.org/07-DataParsing/02-DATA-MANIPULATION/02-PYTHON/01-manipulate-data-with-python" target="_blank">Manipulating Text Files with Python  ⤴</a>
-* <a href="https://datascience.101workbook.org/08-DataVisualization/02-GRAPHS/02-PYTHON/01-interactive-graphing-with-python" target="_blank">Plotly-Dash: Data Processing & Interactive Plotting with Python  ⤴</a>
+<span style="color: #ff3870;font-weight: 500;">To learn more about programming in Python, see tutorials in section {% include target_link href=500 text="05. Introduction to Programming / 3. Introduction to Python Programming" %} </span>
+* {% include target_link href=531 text="Introduction to Python Programming" %}
+* {% include target_link href=533 text="Open-Close & Read-Write of data files" %}
+* {% include target_link href=722.1 text="Manipulating text files with Python" %}
+* {% include target_link href=822.01 text="Plotly-Dash: interactive plotting with Python" %}
 
 ---
 

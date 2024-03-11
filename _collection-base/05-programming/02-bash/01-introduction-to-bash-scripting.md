@@ -23,7 +23,7 @@ tags: []
 # Introduction
 
 <span style="color: #ff3870; font-weight: 600;">If you are a beginner at Linux, it may be beneficial for you to start with the tutorials provided in section</span>
-[02. Introduction to Command Line](https://datascience.101workbook.org/02-IntroToCommandLine/00-IntroToCommandLine-LandingPage).
+{% include target_link href=300 text="03: Introduction to Command Line" %}
 
 # 1. Bash expressions
 
@@ -746,9 +746,9 @@ Remember to separate the elements of bash statements with a semicolon <b>;</b> w
 
 ## 3.2 Setting up the script
 
-If you don't know how to create a file from the command line or redirect a command stream to a file, I recommend that you start with the [Introduction to Unix](https://datascience.101workbook.org/02-IntroToCommandLine/02-intro-to-unix-shell) and [Basic Unix Commands](https://datascience.101workbook.org/02-IntroToCommandLine/02A-basic-commands) tutorials.
+If you don't know how to create a file from the command line or redirect a command stream to a file, I recommend that you start with the {% include target_link href=320 text="Introduction to UNIX Shell" %} and {% include target_link href=321 text="Basic Commands: navigation, file creation & preview." %}
 
-If you are not familiar with any of the basic text file editors in the terminal, such as `nano`, `vim`, or `mcedit`, take a look at the [Unix Text File Editors](https://datascience.101workbook.org/02-IntroToCommandLine/02B-text-files-editors) tutorials as well.
+If you are not familiar with any of the basic text file editors in the terminal, such as `nano`, `vim`, or `mcedit`, take a look at the {% include target_link href=322 text="Command Line text files editors: nano, vim." %}
 
 
 ### - HEADER

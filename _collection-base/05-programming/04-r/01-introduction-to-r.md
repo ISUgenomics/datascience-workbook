@@ -23,11 +23,11 @@ tags: []
 
 ## Installation of R and RStudio, and packages
 
-<a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03A-tutorial-setting-up-rstudio" target="_blank">R and RStudio set up  ⤴</a>
+* {% include target_link href=430 text="Simple introduction to R " %}
 
-<a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03-r-programming-environment.html" target="_blank">Simple introduction to R ⤴</a>
+* {% include target_link href=432 text="R and RStudio set up" %}
 
-<a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03A-rstudio-basics" target="_blank">RStudio basics ⤴</a>
+* {% include target_link href=431 text="RStudio basics" %}
 
 
 ## Basic operations

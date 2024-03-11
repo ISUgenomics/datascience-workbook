@@ -31,7 +31,7 @@ The package manager maintains a database of available packages and their version
 </span>
 </div><br>
 
-<b>Many package managers like APT and YUM require <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02D-admin-commands" target="_blank">superuser privileges  ⤴</a> to install new packages system-wide.</b> <span style="color: #ff3870;font-weight: 500;">In these cases, a regular users can NOT use a package manager to install new packages on HPC system.</span> <b>However, they can use all the packages already installed.</b>
+<b>Many package managers like APT and YUM require {% include target_link href=324 text="superuser privileges" %} to install new packages system-wide.</b> <span style="color: #ff3870; font-weight: 500;">In these cases, a regular users can NOT use a package manager to install new packages on HPC system.</span> <b>However, they can use all the packages already installed.</b>
 
 # Access software using package manager
 
@@ -40,14 +40,16 @@ The package manager maintains a database of available packages and their version
 
 Some of the most commonly used Linux-based operating systems in HPC include:
 
-| operating system | package manager | cluster example |
-|------------------|-----------------|---------|
-| Red Hat Enterprise Linux (RHEL) | **YUM** *(Yellowdog Updater, Modified)* | **<a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/03-isu-hpc-nova-cluster" target="_blank">Nova  ⤴</a>** [RHEL 7.6], **<a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/03-ISUHPC/02-isu-hpc-condo-cluster" target="_blank">Condo  ⤴</a>** [RHEL 7.5]|
-| CentOS | **YUM** *(Yellowdog Updater, Modified)* | **<a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/02-scinet-atlas-cluster" target="_blank">Atlas  ⤴</a>**, **<a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/03-scinet-ceres-cluster" target="_blank">Ceres  ⤴</a>** [CentOS 7.8] |
-| Fedora | **DNF** *(Dandified YUM)*; <br>- for older than Fedora22: **YUM** *(Yellowdog Updater, Modified)* ||
-| Ubuntu | **APT** *(Advanced Package Tool)* ||
-| OpenSUSE | **ZYpp** ||
-| Arch Linux | **Pacman** ||
+<table>
+  <tr> <th>operating system</th> <th>package manager</th> <th>cluster example</th> </tr>
+  <tr> <td>Red Hat Enterprise Linux (RHEL)</td> <td><b>YUM</b> <i>(Yellowdog Updater, Modified)</i></td> <td>{% include target_link href=613.3 text="Nova" %} [RHEL 7.6], {% include target_link href=613.2 text="Condo" %} [RHEL 7.5]</td> </tr>
+  <tr> <td>CentOS</td> <td><b>YUM</b> <i>(Yellowdog Updater, Modified)</i></td> <td>{% include target_link href=612.2 text="Atlas" %}, {% include target_link href=612.3 text="Ceres" %} [CentOS 7.8]</td> </tr>
+  <tr> <td>Fedora</td> <td><b>DNF</b> <i>(Dandified YUM)</i>; <br> for older than Fedora22: <b>YUM</b> <i>(Yellowdog Updater, Modified)</i></td> <td></td> </tr>
+  <tr> <td>Ubuntu</td> <td><b>APT</b> <i>(Advanced Package Tool)</i> </td> <td></td> </tr>
+  <tr> <td>OpenSUSE</td> <td><b>ZYpp</b></td> <td></td> </tr>
+  <tr> <td>Arch Linux</td> <td><b>Pacman</b></td> <td></td> </tr>
+</table>
+
 
 These operating systems have been optimized and tested for performance and reliability in HPC environments, and they typically include a wide range of tools and software packages that are commonly used in HPC. Different operating systems have different methods for installing software, for example, they may use different package managers (*see table above*). Some Linux distributions may use multiple package managers to support different use cases.
 
@@ -129,11 +131,3 @@ For example, if you searched for the `gcc` package, you can use the GCC compiler
 If you don't know how to use the program, you can always preview the available options and instructions for use by calling the name of the program along with the <code>--help</code> flag.
 </span>
 </div><br>
-
-___
-# Further Reading
-* [4.3 Installing Custom Programs in User Space](04-installing-custom-programs)
-
-* [5. Introduction to Job Scheduling](../05-JOB-QUEUE/00-introduction-to-job-scheduling)
-* [6. Introduction to GNU Parallel](../06-PARALLEL/01-introduction-to-gnu-parallel)
-* [7. Introduction to Containers](../07-CONTAINERS/00-introduction-to-containers)

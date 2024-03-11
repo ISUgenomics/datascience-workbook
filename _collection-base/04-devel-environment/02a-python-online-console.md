@@ -31,7 +31,7 @@ Overall, using an online platform for Python programming can be a convenient and
 
 ## Open online Python console
 
-There are many online platforms that allow you to write and run Python code directly in your web browser. Several examples are described in the section <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02-python-programming-environment#2-online-coding-platforms" target="_blank">2. Online coding platforms  ⤴</a> of the <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02-python-programming-environment" target="_blank">Python programming environment  ⤴</a> tutorial. For our hands-on exercise we select the <a href="https://www.pythonanywhere.com/" target="_blank">PythonAnywhere  ⤴</a> web platform [by Anaconda], using its basic plan to get started with Python coding for free. <br>
+There are many online platforms that allow you to write and run Python code directly in your web browser. Several examples are described in the section {% include target_link href=420 section="#1-online-coding-platforms-beginner" text="Tutorial" %} of the {% include target_link href=420 text="Python programming environment(s)" %} tutorial. For our hands-on exercise we select the <a href="https://www.pythonanywhere.com/" target="_blank">PythonAnywhere  ⤴</a> web platform [by Anaconda], using its basic plan to get started with Python coding for free. <br>
 
 ### • *python.org/shell*
 
@@ -134,4 +134,4 @@ In Python, you can use variables to assign the result of <b>basic mathematical o
 ---
 
 <span style="color: #ff3870;font-weight: 500;">
-It is highly recommended to learn more about the basics of programming in Python</span> <b>by working through the hands-on tutorials provided in Section <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/01-introduction-to-python" target="_blank">05. Introduction to Programming: Introduction to Python Programming  ⤴</a> of this workbook.</b> These tutorials cover topics such as variables, data types, operators, control flow statements, functions, and more.
+It is highly recommended to learn more about the basics of programming in Python</span> <b>by working through the hands-on tutorials provided in Section {% include target_link href=531 text="05. Introduction to Programming / Introduction to Python programming" %} of this workbook.</b> These tutorials cover topics such as variables, data types, operators, control flow statements, functions, and more.

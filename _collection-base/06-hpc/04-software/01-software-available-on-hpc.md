@@ -93,6 +93,7 @@ There are a few ways to check the list of available built-in commands on a high-
 * **Using the `help` command** <br>
 Many HPC systems have a `help` command that can be used to view a list of built-in commands. <br>
 <i>For example: `help` or `man` will give a list of all the commands.</i>
+
 ```
 help
 man
@@ -101,24 +102,27 @@ man
 * **Using the `builtin` command** <br>
 Some HPC systems have a `builtin` command that can be used to view a list of built-in commands. <br>
 <i>Try these commands on your HPC system:</i>
+
 ```
 builtin
 compgen -b
 ```
 
 * **Using the alias command** <br>
-The `alias` command can be used to view a list of all currently defined aliases, which are often used to create custom built-in commands. Learn more from subsection <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02-intro-to-unix-shell#34-define-aliases" target="_blank">3.4 Define aliases  ⤴</a> in the practical <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02-intro-to-unix-shell" target="_blank">Introduction to UNIX Shell  ⤴</a> tutorial in this workbook.
+The `alias` command can be used to view a list of all currently defined aliases, which are often used to create custom built-in commands. Learn more from subsection {% include target_link href=320 section="#34-define-aliases" text="Define aliases" %} in the practical {% include target_link href=320 text="Introduction to UNIX Shell" %} tutorial in this workbook.
+
 ```
 alias
 ```
 
-* **Examining shell initialization files** <br>
-Some HPC systems may define built-in commands in shell initialization files such as `.bashrc`, `.bash_profile`, `.bash_aliases` or similar. The user can check these files for custom built-in commands. Learn more from hands-on tutorials available in this workbook:
-  * section <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02-intro-to-unix-shell#3-unix-shell-configuration" target="_blank">3. Unix Shell Configuration: 3.1 .bashrc & .bash_profile
-  ⤴</a> in the tutorial <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02-intro-to-unix-shell" target="_blank">Introduction to UNIX Shell  ⤴</a>
-  * tutorial <a href="https://datascience.101workbook.org/06-IntroToHPC/00-HOME-DIRECTORY/00-setting-up-home-directory" target="_blank">Setting up your home directory for data analysis  ⤴</a>
-  * tutorial <a href="https://datascience.101workbook.org/06-IntroToHPC/00-HOME-DIRECTORY/01-bashrc" target="_blank">.bashrc example file  ⤴</a>
-
+<ul><li> <b>Examining shell initialization files</b> <br>
+Some HPC systems may define built-in commands in shell initialization files such as <span class="code-inline">.bashrc</span>, <span class="code-inline">.bash_profile</span>, <span class="code-inline">.bash_aliases</span> or similar. The user can check these files for custom built-in commands. Learn more from hands-on tutorials available in this workbook:
+  <ul>
+  <li> <p>section</p> {% include target_link href=320 section="#3-unix-shell-configuration" text="Unix Shell Configuration: .bashrc & .bash_profile" %} in the tutorial {% include target_link href=320 text="Introduction to UNIX Shel" %} </li>
+  <li> <p>tutorial</p> {% include target_link href=631 text="Setting up your home directory for data analysis" %} </li>
+  <li> <p>tutorial</p> {% include target_link href=632 text="Example .bashrc file configuration" %} </li>
+  </ul>
+</li></ul>
 
 * **Trying to use the desired command** <br>
 If you know what the command corresponding to the program could be called, you can always try calling it in the terminal window. If such a command exists then usually calling it with the `-h` flag will display the available options. <br>
@@ -143,12 +147,12 @@ Basic system utilities, such as `ls`, `cd`, and `mkdir`, are often available as 
 * manage files and directories,
 * and perform other basic tasks.
 
-Learn more from the practical tutorial <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02A-basic-commands" target="_blank">Basic Commands: Navigation, File Creation & Preview  ⤴</a>, available in section <a href="https://datascience.101workbook.org/02-IntroToCommandLine/00-IntroToCommandLine-LandingPage" target="_blank">02. Introduction to the Command Line  ⤴</a> of this workbook.
+Learn more from the practical tutorial {% include target_link href=321 text="Basic Commands: navigation, file creation & preview" %}, available in section {% include target_link href=300 text="03: Introduction to Command Line" %} of this workbook.
 
 ### *2.  Text processing and manipulation tools*
-Some common text processing and manipulation tools like `sed`, `awk`, `grep` and `cut` are often available, which allow users to manipulate and extract data from text files or command-line text streams. Learn more from the practical tutorial <a href="https://datascience.101workbook.org/02-IntroToCommandLine/03-text-manipulation-programs" target="_blank">Useful Text Manipulation Programs  ⤴</a>, available in section <a href="https://datascience.101workbook.org/02-IntroToCommandLine/00-IntroToCommandLine-LandingPage" target="_blank">02. Introduction to the Command Line  ⤴</a> of this workbook.
+Some common text processing and manipulation tools like `sed`, `awk`, `grep` and `cut` are often available, which allow users to manipulate and extract data from text files or command-line text streams. Learn more from the practical tutorial {% include target_link href=330 text="Useful text manipulation programs" %}, available in section {% include target_link href=300 text="03: Introduction to Command Line" %} of this workbook. <br><br>
 
-There are also a built-in command-line text editors with basic graphical interface, such as `nano` or `vim`, which allow to write a script, edit a configuration file, modify data file, or create a quick note or documentation. Learn more from the practical tutorial <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02B-text-files-editors" target="_blank">Text Files Editors  ⤴</a>, available in section <a href="https://datascience.101workbook.org/02-IntroToCommandLine/00-IntroToCommandLine-LandingPage" target="_blank">02. Introduction to the Command Line  ⤴</a> of this workbook.
+There are also a built-in command-line text editors with basic graphical interface, such as `nano` or `vim`, which allow to write a script, edit a configuration file, modify data file, or create a quick note or documentation. Learn more from the practical tutorial {% include target_link href=322 text="Command Line text files editors: nano, vim" %}, available in section {% include target_link href=300 text="03: Introduction to Command Line" %} of this workbook.
 
 ### *3.  Compression and archiving tools*
 Tools like `gzip`, `tar` and `zip` are often available, which allow users to compress and archive large files and directories.
@@ -157,7 +161,7 @@ Tools like `gzip`, `tar` and `zip` are often available, which allow users to com
 
 <br>
 <i>Compress a single file:</i><br>
-<code style="background-color: #e4f0f0; width:100%;">gzip -c filename > filename.gz</code><br><br>
+<pre class="code-block">gzip -c filename > filename.gz</pre><br><br>
 
 <i>Compress all files in a directory:</i><br>
 <code style="background-color: #e4f0f0; width:100%;">gzip -r directory</code><br><br>

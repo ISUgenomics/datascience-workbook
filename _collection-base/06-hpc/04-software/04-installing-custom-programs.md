@@ -23,10 +23,11 @@ tags: []
 # Introduction
 
 Installing programs on a high-performance computing (HPC) system can be different from installing software on a personal computer due to the complex nature of HPC systems and limited privileges for regular users. <br>
-If you need a **specific software package**, first check whether this software is already pre-installed on HPC. Typically, compilers, programming languages, libraries and frameworks, basic visualization software, text editors, and job schedulers are all available. What's more, popular software for specialized analysis (*such as `blast` for bioinformatics*) is often not only available but also regularly upgraded to the latest release. See tutorial <a href="https://datascience.101workbook.org/06-IntroToHPC/04-SOFTWARE/01-software-available-on-HPC#how-to-find-available-software" target="_blank">How to find available software?  ⤴</a> to learn more about:
-* <a href="https://datascience.101workbook.org/06-IntroToHPC/04-SOFTWARE/01-software-available-on-HPC#software-as-built-in-modules" target="_blank">software available as modules  ⤴</a>
-* <a href="https://datascience.101workbook.org/06-IntroToHPC/04-SOFTWARE/01-software-available-on-HPC#software-via-package-manager" target="_blank">software available via package manager  ⤴</a>
-* <a href="https://datascience.101workbook.org/06-IntroToHPC/04-SOFTWARE/01-software-available-on-HPC#check-the-documentation" target="_blank">other methods of accessing the software  ⤴</a>
+If you need a **specific software package**, first check whether this software is already pre-installed on HPC. Typically, compilers, programming languages, libraries and frameworks, basic visualization software, text editors, and job schedulers are all available. What's more, popular software for specialized analysis (*such as `blast` for bioinformatics*) is often not only available but also regularly upgraded to the latest release. See tutorial {% include target_link href=641 section="#how-to-find-available-software" text="How to find available software?" %} to learn more about:
+* {% include target_link href=642 text="software available as pre-installed modules" %}
+* {% include target_link href=643 text="software available via package manager" %}
+* {% include target_link href=644 text="installing custom programs in user space" %}
+* {% include target_link href=641 section="#check-the-documentation" text="other methods of accessing the software" %}
 
 
 # Installing custom programs on HPC
@@ -36,8 +37,8 @@ Most HPC systems run on Linux-based operating system, so **installing custom pro
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;"> If you would like to learn more about the command line interface and Linux-based operating systems start with the tutorials:<br>
-<li><a href="https://datascience.101workbook.org/02-IntroToCommandLine/01-terminal-basics" target="_blank">Terminal: a text-based interface for command-line operations  ⤴</a></li>
-<li><a href="https://datascience.101workbook.org/02-IntroToCommandLine/02-intro-to-unix-shell" target="_blank">Introduction to UNIX Shell  ⤴</a></li></span>
+<p>{% include target_link href=310 text="Terminal - an interface for command-line operations" %}</p>
+<p>{% include target_link href=320 text="Introduction to UNIX Shell" %}</p></span>
 </div><br>
 
 <b>What you can NOT do as a regular user on HPC:</b>
@@ -59,17 +60,17 @@ Most of these steps assume that you: <br>1) are installing package in a user or 
 ## Install custom software
 
 ### ***Where to install the software?***
-If you need to install software on a high-performance computing (HPC) system, there are several methods you can use, depending on the software and the HPC system. Note that global installations are not possible when you are not the superuser (root, administrator), and personal directory installations are only available to one person (see [user-only access](#-install-for-user-only-access)). If the software will be used by members of a particular group, it is a good idea to install one copy of the software available to all (see [group-wide access](#-install-for-group-wide-access)). Finally, if there is a chance that the software can serve a larger number of users from different groups, it is reasonable to ask the cluster administrators for system-wide installations (see <a href="https://datascience.101workbook.org/06-IntroToHPC/04-SOFTWARE/01-software-available-on-HPC#ask-the-system-administrator" target="_blank">How to get new software installed?  ⤴</a>).
+If you need to install software on a high-performance computing (HPC) system, there are several methods you can use, depending on the software and the HPC system. Note that global installations are not possible when you are not the superuser (root, administrator), and personal directory installations are only available to one person (see [user-only access](#-install-for-user-only-access)). If the software will be used by members of a particular group, it is a good idea to install one copy of the software available to all (see [group-wide access](#-install-for-group-wide-access)). Finally, if there is a chance that the software can serve a larger number of users from different groups, it is reasonable to ask the cluster administrators for system-wide installations (see {% include target_link href=641 section="#ask-the-system-administrator" text="How to get new software installed?" %}
 
 ### • *Install for user-only access*
 Some HPC systems allow users to install software in their home directory. This is typically done by downloading the software, compiling it from source code, and installing it in a directory within the user's home directory. This method is often used for small programs because of the **limited storage space in the home directory**. Installing all the software in the home directory will quickly fill the available space, and this will result in serious dysfunctions in the operation of user's account. The recommended solution is to install programms elsewhere (i.e., in the working directory) and soft-link the installation location to the home directory.
 
-Explore section <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02-intro-to-unix-shell#2-home-directory" target="_blank">Home Directory  ⤴</a> in the <a href="https://" target="_blank">Introduction to Unix  ⤴</a> tutorial, to find out:
-* <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02-intro-to-unix-shell#21-what-is-the-home-folder-used-for" target="_blank">What is the HOME folder used for?  ⤴</a>
-* <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02-intro-to-unix-shell#22-is-home-a-working-directory" target="_blank">Is HOME a working directory?  ⤴</a>
-* <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02-intro-to-unix-shell#23-good-practices-for-home-organization" target="_blank">Good practices for HOME organization.  ⤴</a>
+Explore section {% include target_link href=320 section="#2-home-directory" text="Home directory" %} tutorial, to find out:
+* {% include target_link href=320 section="#21-what-is-the-home-folder-used-for" text="What is the HOME folder used for?" %}
+* {% include target_link href=320 section="#22-is-home-a-working-directory" text="Is HOME a working directory?" %}
+* {% include target_link href=320 section="#23-good-practices-for-home-organization" text="Good practices for HOME organization." %}
 
-Follow the guide in the tutorial <a href="https://datascience.101workbook.org/06-IntroToHPC/00-HOME-DIRECTORY/00-setting-up-home-directory" target="_blank">Setting up your home directory for data analysis  ⤴</a> to learn about the file system organization on the HPC, including the principles for <a href="https://datascience.101workbook.org/06-IntroToHPC/00-HOME-DIRECTORY/00-setting-up-home-directory#your-home-folder" target="_blank">home directory  ⤴</a>, <a href="https://datascience.101workbook.org/06-IntroToHPC/00-HOME-DIRECTORY/00-setting-up-home-directory#your-project-folder" target="_blank">working directory  ⤴</a>, and storage space.
+Follow the guide in the tutorial {% include target_link href=631 text="Setting up your home directory for data analysis" %} to learn about the file system organization on the HPC, including the principles for {% include target_link href=631 section="#your-home-folder" text="home directory" %}, {% include target_link href=631 section="#your-project-folder" text="working directory" %}, and storage space.
 
 **Quick Guide**
 
@@ -391,7 +392,7 @@ prepend-path LD_LIBRARY_PATH $MY_APP_DIR/lib
 alias myapp='$MY_APP_DIR/bin/my_app.sh'
 ```
 
-<i>This custom module file sets an <b>environment variable MY_APP_DIR</b> to the location of your personal installation of the <b>software</b>. It also updates PATH and LD_LIBRARY_PATH to include the <b>bin</b> and <b>lib</b> directories in MY_APP_DIR. Finally, it sets an <a href="https://datascience.101workbook.org/02-IntroToCommandLine/02-intro-to-unix-shell#34-define-aliases" target="_blank">alias  ⤴</a> for running the my_app.sh script in the bin directory.</i>
+<i>This custom module file sets an <b>environment variable MY_APP_DIR</b> to the location of your personal installation of the <b>software</b>. It also updates PATH and LD_LIBRARY_PATH to include the <b>bin</b> and <b>lib</b> directories in MY_APP_DIR. Finally, it sets an {% include target_link href=320 section="#34-define-aliases" text="alias" %} for running the my_app.sh script in the bin directory.</i>
 
 **4.** Once you have your custom modules, you can add the directory containing the modules to your module search path using the `module use` command. Then use the `module load` command to load the module, which is the name of the directory for selected software in the *custom_modules* location.
 ```

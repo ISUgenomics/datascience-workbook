@@ -154,9 +154,10 @@ When you're creating algorithms, it's important to remember that <b>different pr
 </div><br>
 
 <span style="color: #ff3870;font-weight: 500;">To learn more about the syntax of various programming languages and the different elements of algorithm structure, consider visiting tutorials:</span>
-* <a href="https://datascience.101workbook.org/05-IntroToProgramming/02-BASH/01-introduction-to-bash-scripting" target="_blank">Introduction to Bash Scripting  ⤴</a>
-* <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/01-introduction-to-python" target="_blank">Introduction to Python Programming  ⤴</a>
-* <a href="https://datascience.101workbook.org/05-IntroToProgramming/04-R/01-introduction-to-R" target="_blank">Introduction to R programming  ⤴</a>
+* {% include target_link href=521 text="Introduction to Bash scripting" %}
+* {% include target_link href=531 text="Introduction to Python programming" %}
+* {% include target_link href=541 text="Introduction to R programming" %}
+* {% include target_link href=551 text="Introduction to Julia programming" %}
 
 *These resources can help you gain a deeper understanding of topics like conditional statements, loops, and other elements of algorithm structure, and how to use them effectively in your scripts or programs.*
 

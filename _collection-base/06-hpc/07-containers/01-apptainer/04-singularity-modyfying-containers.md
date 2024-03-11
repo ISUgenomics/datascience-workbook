@@ -20,7 +20,7 @@ tags: []
 ---
 
 <span style="color: #ff3870;font-weight: 800;">NOTE:</span>
-In late 2021, **Singularity underwent a rebranding to Apptainer**, changing the command keyword from`singularity` to `apptainer`, though the majority of subsequent commands and options retained their functionality. *(Learn more about the changes in the tutorial [Apptainer, the container system for secure HPC](00-apptainer-introduction).)*
+In late 2021, **Singularity underwent a rebranding to Apptainer**, changing the command keyword from`singularity` to `apptainer`, though the majority of subsequent commands and options retained their functionality. <i>Learn more about the changes in the tutorial {% include target_link href=671.1 text="Apptainer: the container system for secure HPC." %}</i>
 
 Before diving into container tasks on HPC infrastructure:
 * ensure you checked the available module using the commands:

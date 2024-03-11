@@ -38,7 +38,7 @@ JupyterLab elevates the concept of a development environment to an <b>Interactiv
 
 ## Start JupyterLab via Terminal
 
-<span style="color: #ff3870; font-weight: 600;">If you don't already have JupyterLab installed or you wish to use the SCINet OOD service, follow the instructions in the tutorial:</span> [Jupyter: Web-Based Programming Interface](https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-jupyter-basics). In this tutorial, you will learn about the practical aspects of using the Jupyter app, including the options available and various tips & tricks.
+<span style="color: #ff3870; font-weight: 600;">If you don't already have JupyterLab installed or you wish to use the SCINet OOD service, follow the instructions in the tutorial:</span> {% include target_link href=412 text="Jupyter: interactive web-based multi-kernel DE." %} In this tutorial, you will learn about the practical aspects of using the Jupyter app, including the options available and various tips & tricks.
 
 Once installed locally, you can start a web-based interface of `jupyter lab` from the command line by typing:
 
@@ -138,7 +138,7 @@ To terminate the Jupyter interface, first, save the changes with `File →  Save
 
 # Jupyter Apps
 
-Jupyter is much more than just another text editor for code development. It is a highly flexible, easily accessible, and portable integrated programming environment. Launched via [OOD service](https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-jupyter-basics#jupyter-via-open-ondemand), it  overcomes the limitations of the terminal working on a remote machine by supporting interactive visualization of the analytical output. In this section, you will find an introduction to several handy applications built into the Jypyter interface.
+Jupyter is much more than just another text editor for code development. It is a highly flexible, easily accessible, and portable integrated programming environment. Launched via {% include target_link href=412 section="#jupyter-via-open-ondemand" text="OOD service" %}, it  overcomes the limitations of the terminal working on a remote machine by supporting interactive visualization of the analytical output. In this section, you will find an introduction to several handy applications built into the Jypyter interface.
 
 ## Notebook
 
@@ -174,7 +174,7 @@ There are several keyboard shortcuts that make it easier to navigate between cel
 1. Click on the selected cell. From the top menu, select `Markdown` option, and then enter text into the cell.<br>
 2. To render the contents of a MARKDOWN cell, you need to execute the cell by pressing `CTRL + ENTER`. If you use `ALT + ENTER`, it will additionally create the next empty cell.<br>
 3. You can customize the text style as you like using markdown or HTML syntax.<br>
-To learn more about **Markdown**, follow the [Introduction to Markdown](https://datascience.101workbook.org/09-ProjectManagement/02-DOCUMENTATION/02-intro-to-markdown) tutorial, available in this workbook.<br>
+To learn more about **Markdown**, follow the {% include target_link href=933.5 text="Introduction to Markdown" %} tutorial, available in this workbook.<br>
 To learn more about **HTML**, try an [HTML Styles tutorial provided by w3schools.com](https://www.w3schools.com/html/html_styles.asp).
 
 ```

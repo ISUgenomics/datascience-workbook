@@ -227,4 +227,4 @@ To launch the Python IDLE from the terminal window, you can follow these steps:
 ---
 
 <span style="color: #ff3870;font-weight: 500;">
-It is highly recommended to learn more about the basics of programming in Python</span> <b>by working through the hands-on tutorials provided in Section <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/01-introduction-to-python" target="_blank">05. Introduction to Programming: Introduction to Python Programming  ⤴</a> of this workbook.</b> These tutorials cover topics such as variables, data types, operators, control flow statements, functions, and more.
+It is highly recommended to learn more about the basics of programming in Python</span> <b>by working through the hands-on tutorials provided in Section {% include target_link href=531 text="05. Introduction to Programming / Introduction to Python programming." %} </b> These tutorials cover topics such as variables, data types, operators, control flow statements, functions, and more.

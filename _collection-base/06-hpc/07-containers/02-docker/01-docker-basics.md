@@ -22,7 +22,7 @@ tags: []
 # Introduction
 
 ## What are Containers?
-Containers are executable units of software containing anything from a small process to a larger application, along with its libraries and dependencies. Start with the <a href="https://datascience.101workbook.org/06-IntroToHPC/07-CONTAINERS/01-SINGULARITY/01-singularity-basics" target="_blank">Singularity ⤴</a> tutorial to get to know about using containers. <br>
+Containers are executable units of software containing anything from a small process to a larger application, along with its libraries and dependencies. Start with the {% include target_link href=671.1 text="Apptainer: the container system for secure HPC" %} tutorial to get to know about using containers. <br>
 
 
 ## Docker setup
