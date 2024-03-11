@@ -44,8 +44,7 @@ More advanced (multi-purpose or multi-options) applications have a **built-in lo
 The applications are developed in Python programming language and requires importing several libraries providing useful ready-made functions and objects handling complex data structure. Thus, to have the apps working on your (local or remote) machine, first you have to set up the environment.
 
 Considering you will be using various applications that require different dependencies, you need neat way to manage them. A good choice is <a href="https://docs.conda.io/en/latest/" target="_blank">Conda ⤴</a> environment management system that runs on all: Windows, macOS, and Linux.<br>
-If you are not already using Conda, go to the <a href="https://datascience.101workbook.org/03-SetUpComputingMachine/02C-basic-developer-libraries" target="_blank">Basic Developer Libraries ⤴</a> tutorial for a step-by-step guide on how to set up the environment manager on your target computing machine. <i>If you have a Mac with a dual processor (Arm64 and Intel's x86-64) you can find dedicated setup instructions in section <a href="https://datascience.101workbook.org/03-SetUpComputingMachine/03A-tutorial-installations-on-mac#install-developer-libraries" target="_blank">Install Basic Developer Tools ⤴</a> of the <a href="https://datascience.101workbook.org/03-SetUpComputingMachine/03A-tutorial-installations-on-mac" target="_blank">Installations on MacBook Pro ⤴</a> tutorial.</i>
-
+If you are not already using Conda, go to the {% include target_link href=223 %} tutorial for a step-by-step guide on how to set up the environment manager on your target computing machine. If you have a Mac with a dual processor (Arm64 and Intel's x86-64) you can find dedicated setup instructions in section {% include target_link href=231 section="#install-developer-libraries" text=" Install basic developer tools" %} of the {% include target_link href=231 %} tutorial.
 
 ## *Python Setup*
 
@@ -71,7 +70,7 @@ or
 python3 --version
 ```
 If the returned value will be something like `Python 3.8.9`, you are good to **getting started with data_wrangling** apps. *Note that python in version 3.x is required.*<br>
-Otherwise, if you receive an error message `command not found`, **you will need to install Python**. You can make up for this step by following the hands-on tutorial provided in section <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02-python-programming-environment" target="_blank">Python Programming Environment(s)  ⤴</a>: <b><a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-python-setup-locally" target="_blank">Local Python setup on your computing machine  ⤴</a></b>.
+Otherwise, if you receive an error message `command not found`, **you will need to install Python**. You can make up for this step by following the hands-on tutorial provided in section {% include target_link href=420 %} / {% include target_link href=423 %}
 
 
 ## *Conda Setup*
@@ -83,7 +82,7 @@ Conda is an open-source package management system and environment management sys
 </span>
 </div><br>
 
-<span style="color: #ff3870;font-weight: 500;">Learn more about Conda basics in section <b><a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-python-setup-locally#3-manage-python-environments" target="_blank">3. Manage Python environments  ⤴</a></b> of the tutorial <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-python-setup-locally" target="_blank">Local Python setup on your computing machine  ⤴</a>.</span>
+<span style="color: #ff3870;font-weight: 500;">Learn more about Conda basics in section</span> {% include target_link href=423 section="#3-manage-python-environments" text="Manage Python environments" %} of the tutorial {% include target_link href=423 %}
 
 
 **Test Conda installation**
@@ -97,7 +96,7 @@ If the screen displays a message similar to the one in the image below, you are 
 
 ![Conda info]({{ images_path }}/03-conda_info.png)
 
-Otherwise, if a `command not found` error is thrown back, follow the instructions in the [previous paragraph](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/00-data-wrangling-apps#environment-setup) to install Conda correctly.
+Otherwise, if a `command not found` error is thrown back, follow the instructions in the [previous paragraph](#environment-setup) to install Conda correctly.
 
 **Create new Conda environment**
 
@@ -156,6 +155,6 @@ Some applications may have <b>additional requirements</b> listed in the correspo
 
 ## Hands-on tutorials
 
-Right here, in the [Data Science Workbook](https://datascience.101workbook.org): [07-DataParsing](https://datascience.101workbook.org/07-DataParsing/00-DataParsing-LandingPage)/<b>[03-DATA-WRANGLING-APPS](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/00-data-wrangling-apps)</b> section, you can follow the <span style="color: #ff3870;">hands-on tutorials</span> to learn how to run the ready-made applications <span style="color: #ff3870;">using example datasets</span> and further employ them to support your own research.
+Right here, in the [Data Science Workbook](https://datascience.101workbook.org): {% include target_link href=700 %} / {% include target_link href=731 %} section, you can follow the <span style="color: #ff3870;">hands-on tutorials</span> to learn how to run the ready-made applications <span style="color: #ff3870;">using example datasets</span> and further employ them to support your own research.
 
 Browse available tutorials in the **Further Reading** paragraph (*just below*).

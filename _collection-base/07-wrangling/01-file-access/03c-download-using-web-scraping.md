@@ -58,10 +58,11 @@ It is important to carefully consider the pros and cons of web scraping before a
 
 Before attempting to scrape a website for data, it is often a good idea to **explore other options for downloading the data first**. In many cases, there may be simpler and more efficient methods available:
 
-* <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/03-0-remote-data-download" target="_blank">Introduction to Downloading from Online Resources  ⤴</a>
-  * <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/03-1-tutorial-download-wget" target="_blank">Downloading Online Data using WGET  ⤴</a>
-  * <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/03-3-tutorial-download-github-repos-git" target="_blank">Downloading Online Repo using GIT  ⤴</a>
-  * <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/03-4-tutorial-download-github-folders-svn" target="_blank"> Downloading Single Folder from GitHub  ⤴</a>
+<ul><li> {% include target_link href=713 text="Introduction to downloading from online resources" %}</li>
+  <ul><li> {% include target_link href=713.1 text="Downloading online data using WGET" %}</li>
+  <li> {% include target_link href=713.4 text="Downloading online repos using GIT" %}</li>
+  <li> {% include target_link href=713.5 text="Downloading a single folder or file from GitHub" %}</li></ul>
+</ul>
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
@@ -112,15 +113,15 @@ Below you can find some of the essential libraries and components you need for w
 <br><span style="font-style:italic;">
 If you do NOT like developing scripts in the command line text editors and are not familiar with any IDE, <b>using a web-based development environment such as Jupyter Lab</b> can be a great alternative as it provides a user-friendly interface that allows for interactive development, documentation, and visualizations. <br><br>
 
-To install and launch Jupyter Lab, follow steps provided in the practical tutorials in section <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-jupyter-basics" target="_blank">04. Development Environment: Jupyter: Interactive Web-Based Multi-Kernel DE  ⤴</a>:
-<li><a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-tutorial-jupyter-lab" target="_blank">Getting Started with JupyterLab on a local machine  ⤴</a></li>
-<li><a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-tutorial-jupyter-notebook" target="_blank">Getting Started with Jupyter Notebook on HPC systems  ⤴</a></li><br>
+To install and launch Jupyter Lab, follow steps provided in the practical tutorials in section {% include target_link href=412 text="04. Development Environment / Jupyter: interactive web-based multi-kernel DE" %}:
+<li>{% include target_link href=413 text="Getting started with JupyterLab on a local machine" %} </li>
+<li>{% include target_link href=414 text="Getting started with Jupyter Notebook on HPC systems" %} </li><br>
 
 Once Jupyter Lab is installed, you can launch it directly from the command line by typing the following command:<br>
 </span>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
+<pre class="code-block">
 jupyter lab
-</code>
+</pre>
 </div>
 
 
@@ -136,7 +137,7 @@ Python is a popular high-level **programming language** that is good for web scr
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
-If you run into trouble, go to the practical tutorials of this workbook in section <a href="https://datascience.101workbook.org/03-SetUpComputingMachine/03-various-methods-of-software-installation" target="_blank">03. Setting Up Computing Machine: Various Methods of Software Installation  ⤴</a>, which will show you step-by-step how to install Python on a given operating system.
+If you run into trouble, go to the practical tutorials of this workbook in section {% include target_link href=230 text="03. Setting Up Computing Machine: Various methods of software installation" %} which will show you step-by-step how to install Python on a given operating system.
 </span>
 </div>
 </details>

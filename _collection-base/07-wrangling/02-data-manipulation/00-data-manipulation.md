@@ -67,38 +67,43 @@ One of the most common **tools with a graphical user interface** (GUI) used for 
 
 By using these features, researchers can quickly and easily manipulate data sheets to create summaries, charts, and reports.
 
-To learn more about manipulating Excel data sheets, you can visit the following website: <a href="https://support.microsoft.com/en-us/office/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca" target="_blank">Basic tasks in Excel  ⤴</a> *by Microsoft*. <br>
+To learn more about manipulating Excel data sheets, you can visit the following website: <a href="https://support.microsoft.com/en-us/office/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca" target="_blank">Basic tasks in Excel  ⤴</a> *by Microsoft*.
 <span style="color: #ff3870;font-weight: 500;">Explore practical examples in the hands-on tutorials available in this workbook:</span>
-* **INTRODUCTION:** <a href="https://datascience.101workbook.org/07-DataParsing/02-DATA-MANIPULATION/01-EXCEL/01-manipulate-excel-sheets" target="_blank">Manipulating Excel Data Sheets  ⤴</a>
-* **TUTORIALS:**
-  * <a href="https://datascience.101workbook.org/07-DataParsing/02-DATA-MANIPULATION/01-EXCEL/02-tutorial-create-workbook-from-multiple-files" target="_blank">Create Workbook from Multiple Text Files  ⤴</a>
-  * <a href="https://datascience.101workbook.org/07-DataParsing/02-DATA-MANIPULATION/01-EXCEL/03-tutorial-export-multiple-worksheets" target="_blank">Export Multiple Worksheets as Separate Text Files  ⤴</a>
-  * <a href="https://datascience.101workbook.org/07-DataParsing/02-DATA-MANIPULATION/01-EXCEL/04-tutorial-create-index-for-all-worksheets" target="_blank">Create Index for All Worksheets  ⤴</a>
-  * <a href="https://datascience.101workbook.org/07-DataParsing/02-DATA-MANIPULATION/01-EXCEL/05-tutorial-merge-spreadsheets-by-column" target="_blank">Merge Two Spreadsheets using a Common Column  ⤴</a>
+
+<ul><li><b>INTRODUCTION:</b> {% include target_link href=721.1 %} </li>
+<li><b>TUTORIALS:</b></li>
+  <ul><li> {% include target_link href=721.2 %}</li>
+  <li> {% include target_link href=721.3 %}</li>
+  <li> {% include target_link href=721.4 %}</li>
+  <li> {% include target_link href=721.5 %}</li></ul></ul>
 
 
 ## Python
 
 <a href="https://www.python.org/shell/" target="_blank">Python  ⤴</a> is a powerful programming language widely used for **advanced data analysis, statistics, and interactive visualization**, particularly for working with large text files. Python offers a rich set of libraries and modules that can be used to manipulate text files, including:
-* <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/06-tutorial-python-data-manipulation-pandas" target="_blank"><input type="button" value="Tutorial ⤴" style="background-color: #e7e7e7; color: black;" /></a> <a href="https://pandas.pydata.org/" target="_blank">Pandas</a>, a Python library for efficient data structure manipulation and analysis
-* <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/07-tutorial-python-array-manipulation-numpy" target="_blank"><input type="button" value="Tutorial ⤴" style="background-color: #e7e7e7; color: black;" /></a> <a href="https://numpy.org/" target="_blank">NumPy</a>, a Python library for computing and data structure transformation
-* <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/08-tutorial-python-apply-statistics-scipy" target="_blank"><input type="button" value="Tutorial ⤴" style="background-color: #e7e7e7; color: black;" /></a> <a href="https://www.scipy.org/" target="_blank">SciPy</a>, a Python library for scientific computing and statistics
-* <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/05-tutorial-python-round-abs-data-math-module" target="_blank"><input type="button" value="Tutorial ⤴" style="background-color: #e7e7e7; color: black;" /></a> <a href="https://docs.python.org/3/library/math.html" target="_blank">Math</a>, a Python module for mathematical operations
-* <a href="https://" target="_blank"><input type="button" value="Tutorial ⤴" style="background-color: #e7e7e7; color: black;" /></a> <a href="https://docs.python.org/3/library/re.html" target="_blank">Regex</a>, a Python module for working with regular expressions
-* <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/04-tutorial-python-manage-data-json-string" target="_blank"><input type="button" value="Tutorial ⤴" style="background-color: #e7e7e7; color: black;" /></a> <a href="https://docs.python.org/3/library/json.html" target="_blank">JSON</a>, a Python module for working with data in JSON format
+<ul>
+<li> {% include target_link href=536 text="Tutorial" button="Y" %} <a href="https://pandas.pydata.org/" target="_blank">Pandas</a>, a Python library for efficient data structure manipulation and analysis </li>
+<li> {% include target_link href=537 text="Tutorial" button="Y" %} <a href="https://numpy.org/" target="_blank">NumPy</a>, a Python library for computing and data structure transformation </li>
+<li> {% include target_link href=538 text="Tutorial" button="Y" %} <a href="https://www.scipy.org/" target="_blank">SciPy</a>, a Python library for scientific computing and statistics </li>
+<li> {% include target_link href=535 text="Tutorial" button="Y" %} <a href="https://docs.python.org/3/library/math.html" target="_blank">Math</a>, a Python module for mathematical operations </li>
+<li> {% include target_link href="" text="Tutorial" button="Y" %} <a href="https://docs.python.org/3/library/re.html" target="_blank">Regex</a>, a Python module for working with regular expressions </li>
+<li> {% include target_link href=534 text="Tutorial" button="Y" %} <a href="https://docs.python.org/3/library/json.html" target="_blank">JSON</a>, a Python module for working with data in JSON format </li>
+</ul>
 
 With these libraries, you can manipulate large text files, clean and transform data, perform statistical analysis, and format the the output.
 
 <span style="color: #ff3870;font-weight: 500;">To learn more about manipulating large text files with Python, you can visit the following tutorials in this workbook:</span>
-* **INTRODUCTION:**
-  * <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02-python-programming-environment" target="_blank">Python Programming Environment(s)  ⤴</a>
-  * <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/01-introduction-to-python" target="_blank">Introduction to Python Programming  ⤴</a>
-* **TUTORIALS:**
-  * <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/02-Python-setup" target="_blank">Python Setup  ⤴</a>
-  * <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/03-tutorial-read-write-files" target="_blank">Read and Write Data Files  ⤴</a>
-  * <a href="https://datascience.101workbook.org/07-DataParsing/02-DATA-MANIPULATION/02-PYTHON/01-manipulate-data-with-python" target="_blank">Manipulating Text Files with Python  ⤴</a>
-  * <a href="https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/00-data-wrangling-apps" target="_blank">Data Wrangling: ready-made apps  ⤴</a>
-  * <a href="https://datascience.101workbook.org/08-DataVisualization/02-GRAPHS/02-PYTHON/01-interactive-graphing-with-python" target="_blank">Plotly-Dash: Data Processing & Interactive Plotting with Python  ⤴</a>
+
+<ul><li><b>INTRODUCTION:</b></li><ul>
+  <li> {% include target_link href=420 %} </li>
+  <li> {% include target_link href=531 %} </li></ul>
+<li><b>TUTORIALS:</b></li><ul>
+  <li> {% include target_link href=423 %} </li>
+  <li> {% include target_link href=533 %} </li>
+  <li> {% include target_link href=722.1 %} </li>
+  <li> {% include target_link href=731 %} </li>
+  <li> {% include target_link href=822.01 %} </li>
+</ul></ul>
 
 
 ## R
@@ -111,13 +116,14 @@ With these libraries, you can manipulate large text files, clean and transform d
 With these libraries, you can manipulate and transform data, filter, select, and summarize data.
 
 <span style="color: #ff3870;font-weight: 500;">To learn more about manipulating data for a quick statistical analysis with R, you can visit the following tutorials in this workbook:</span>
-* **INTRODUCTION:**
-  * <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03-r-programming-environment" target="_blank">R Programming Environment(s)  ⤴</a>
-  * <a href="https://datascience.101workbook.org/05-IntroToProgramming/04-R/01-introduction-to-R" target="_blank">Introduction to R programming  ⤴</a>
-* **TUTORIALS:**
-  * <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03A-tutorial-setting-up-rstudio" target="_blank">Setting Up RStudio  ⤴</a>
-  * <a href="https://datascience.101workbook.org/08-DataVisualization/02-GRAPHS/03-R/01-graphing-with-rstudio" target="_blank">Data Processing & Plotting with R  ⤴</a>
 
+<ul><li><b>INTRODUCTION:</b></li><ul>
+  <li> {% include target_link href=430 %} </li>
+  <li> {% include target_link href=541 %} </li></ul>
+<li><b>TUTORIALS:</b></li><ul>
+  <li> {% include target_link href=432 %} </li>
+  <li> {% include target_link href=823.01 %} </li>
+</ul></ul>
 
 
 ## SQL

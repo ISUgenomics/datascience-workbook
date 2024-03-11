@@ -131,7 +131,7 @@ scp -r username@remote-hostname:/remote/directory/file.txt /local/directory/
 <div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">WARNING:</span>
 <br><span style="font-style:italic;">
-Admins of some HPC systems, e.g. <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/01-scient-network-intro" target="_blank">SCINet infrastructure  ⤴</a> recommend to use <b><code>csp</code> to transfer a single file only</b>.<br>
+Admins of some HPC systems, e.g. {% include target_link href=612.1 text="SCINet Scientific Computing" %} recommend to use <b><code>csp</code> to transfer a single file only</b>.<br>
 So please be aware of this note: <br>
 "It is not advised to use “scp -r” command to transfer directories to Ceres, since the setgid bit on directories at destination is not inherited. This is not a problem if directories are copied to /home/$USER but is a problem when copying to /project area and usually results in quota exceeded errors." <br>
 If you decide to use scp to transfer directories to <b>Ceres cluster</b> follow the instructions provided at <a href="https://scinet.usda.gov/guides/data/datatransfer#small-data-transfer-using-scp-and-rsync" target="_blank">SCINet website: Small Data Transfer Using scp  ⤴</a>.

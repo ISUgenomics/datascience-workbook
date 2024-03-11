@@ -24,7 +24,7 @@ tags: []
 
 Manipulating text files and research data is a common task in scientific research, and Python provides powerful tools to accomplish this. By using these tools, you can read, write, and manipulate text files, as well as read and manipulate structured research data stored in formats such as CSV, JSON, Excel files, and more.
 
-<span style="color: #ff3870;font-weight: 500;">If you are new in Python, get started with exploring the Introduction to <a href="https://datascience.101workbook.org/07-DataParsing/02-DATA-MANIPULATION/02-PYTHON/01-manipulate-data-with-python" target="_blank">Manipulating Text Files with Python  ⤴</a></span>. *You will find there a step-by-step guide from setting up a Python development environment to getting practical experience in basics of Python programming.*
+<span style="color: #ff3870;font-weight: 500;">If you are new in Python, get started with exploring the Introduction to</span> {% include target_link href=722.1 %} *You will find there a step-by-step guide from setting up a Python development environment to getting practical experience in basics of Python programming.* <br><br>
 
 In this practical tutorial we will explore data manipulation tasks related to:
 1. Reading from and writing to data files
@@ -51,7 +51,7 @@ print(contents)
 ```
 *This code opens the file 'input.txt' in read mode and assigns its contents to the variable 'contents'. The* `with` *statement ensures that the file is properly closed after it has been read.*
 
-<span style="color: #ff3870;font-weight: 500;">To learn more about other options to read files in Python see the comprehensive tutorial: <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/03-tutorial-read-write-files" target="_blank">Open-Close & Read-Write of Data Files  ⤴</a></span>
+<span style="color: #ff3870;font-weight: 500;">To learn more about other options to read files in Python see the comprehensive tutorial:</span><br> {% include target_link href=533 %}
 
 
 ## Writing text files
@@ -89,8 +89,9 @@ new_text = text.replace('sample', 'new')        # replace the word 'sample' with
 Research data is often stored in structured formats such as CSV, JSON string, or Excel files. Python provides powerful libraries such as `pandas` and `numpy` to read and manipulate such data, including selecting, spliting, and grouping by specific conditions.
 
 <span style="color: #ff3870;font-weight: 500;">To learn more about <b>pandas</b> and <b>numpy</b> libraries for Python see the corresponding tutorials: </span>
-* <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/06-tutorial-python-data-manipulation-pandas" target="_blank">Pandas Library - Data Structure Manipulation Tool  ⤴</a>
-* <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/07-tutorial-python-array-manipulation-numpy" target="_blank">Numpy Library - Multi-Dimensional Arrays Parser  ⤴</a>
+<ul><li> {% include target_link href=536 %} </li>
+<li> {% include target_link href=537 %} </li></ul>
+
 
 Here is an example of how to **read a CSV file into a pandas** `DataFrame` and manipulate the data:
 ```
@@ -132,7 +133,7 @@ The dataset consists of 100 records, each representing the number of individuals
 <div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">WARNING:</span>
 <br><span style="font-style:italic;">Note that the dataset is artificial and was prepared for the purpose of this tutorial.</span>
-</div><br>
+</div>
 
 Here's a sample of the first 10 records in the dataset, showing the data structure:
 ```
@@ -153,8 +154,8 @@ Year,Location,American Goldfinch,Eastern Bluebird,Northern Cardinal,Ruby-throate
 
 *You can download the complete `input.txt` file using one of the following buttons:* <br>
 
-<a href="https://raw.githubusercontent.com/ISUgenomics/datascience-workbook/main/07-DataParsing/assets/data/bird_species/input.csv" target="_blank"><input type="button" value="Open raw ⤴" style="background-color: #e7e7e7; color: black;" /></a>
-<a id="raw-url" href="https://github.com/ISUgenomics/datascience-workbook/blob/main/07-DataParsing/assets/data/bird_species/input.csv" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
+<a href="https://raw.githubusercontent.com/ISUgenomics/datascience-workbook/main/_collection-base/07-DataParsing/assets/data/bird_species/input.csv" target="_blank"><input type="button" value="Open raw ⤴" style="background-color: #e7e7e7; color: black;" /></a>
+<a id="raw-url" href="https://github.com/ISUgenomics/datascience-workbook/blob/main/_collection-base/07-DataParsing/assets/data/bird_species/input.csv" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 
 
 ## Data manipulation

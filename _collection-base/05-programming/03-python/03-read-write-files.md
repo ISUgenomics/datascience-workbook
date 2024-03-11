@@ -21,13 +21,13 @@ tags: []
 
 <span style="color: #ff3870;font-weight: 500;">Before starting this tutorial, there are a few requirements that you should have in place.</span>
 * Firstly, you should be familiar with using the **command line in terminal** on your computer. <br>
-<i>Learn more from the practical tutorials in section {% include target_link href=300 text="03: Introduction to Command Line" %} </i>
+<i>Learn more from the practical tutorials in section</i> {% include target_link href=300 %}
 * Secondly, you should **have Python installed** on your local machine.  <br>
-<i>Learn more from the practical tutorial {% include target_link href=423 text="Local Python setup on your computing machine" %} </i>
+<i>Learn more from the practical tutorial</i> {% include target_link href=423 %}
 * Thirdly, you should have a Python Integrated **Development Environment** (IDE) set up on your computer, e.g., PyCharm or JupyterLab or any text editor.  <br>
-<i>Learn more from the practical tutorial {% include target_link href=420 text="Python programming environment(s)" %} </i>
+<i>Learn more from the practical tutorial</i> {% include target_link href=420 %}
 * Finally, you should have a **basic understanding of Python** programming.  <br>
-<i>Learn more from the practical tutorial {% include target_link href=531 text="Introduction to Python programming" %} </i>
+<i>Learn more from the practical tutorial</i> {% include target_link href=531 %} 
 
 # Introduction
 

@@ -161,24 +161,23 @@ Tools like `gzip`, `tar` and `zip` are often available, which allow users to com
 
 <br>
 <i>Compress a single file:</i><br>
-<pre class="code-block">gzip -c filename > filename.gz</pre><br><br>
+<pre class="code-block">gzip -c filename > filename.gz</pre><br>
 
 <i>Compress all files in a directory:</i><br>
-<code style="background-color: #e4f0f0; width:100%;">gzip -r directory</code><br><br>
+<pre class="code-block">gzip -r directory</pre><br>
 
 <i>Decompress a single file:</i><br>
-<code style="background-color: #e4f0f0; width:100%;">gzip -d filename.gz</code><br><br>
+<pre class="code-block">gzip -d filename.gz</pre><br>
 
 <i>Decompress all files in a directory:</i><br>
-<code style="background-color: #e4f0f0; width:100%;">gzip -dr directory.gz</code><br><br>
+<pre class="code-block">gzip -dr directory.gz</pre><br>
 
 <i>Compress an entire directory or a single file to `.tar.gz` archive:</i><br>
-<code style="background-color: #e4f0f0; width:100%;">tar -czvf archive_name.tar.gz /path/to/directory-or-file</code><br><br>
+<pre class="code-block">tar -czvf archive_name.tar.gz /path/to/directory-or-file</pre><br>
 
 <i>Extract the `.tar.gz` archive:</i><br>
-<code style="background-color: #e4f0f0; width:100%;">tar -xzvf archive.tar.gz</code><br><br>
-
-</details><br>
+<pre class="code-block">tar -xzvf archive.tar.gz</pre>
+</details>
 
 
 ### *4.  Job management tools*
@@ -196,10 +195,10 @@ The <a href="https://en.wikipedia.org/wiki/Portable_Batch_System" target="_blank
 | seff {job_ID}       | qstat -fxw {job_ID}  | provides resource usage report for a finished job |
 | salloc              | qsub -I {job_script} | starts interactive session |
 
-Learn more from the practical <a href="https://datascience.101workbook.org/06-IntroToHPC/05-JOB-QUEUE/00-introduction-to-job-scheduling" target="_blank">Introduction to Job Scheduling  ⤴</a> tutorials (*including <a href="https://datascience.101workbook.org/06-IntroToHPC/05-JOB-QUEUE/01-SLURM/01-slurm-basics" target="_blank">SLURM  ⤴</a> and <a href="https://datascience.101workbook.org/06-IntroToHPC/05-JOB-QUEUE/02-PBS/01-pbs-basics" target="_blank">PBS  ⤴</a>*) in the section <a href="https://datascience.101workbook.org/06-IntroToHPC/00-IntroToHPC-LandingPage" target="_blank">06. High-Performance Computing (HPC)  ⤴</a> of this workbook. For more, see also <a href="https://www.msi.umn.edu/slurm/pbs-conversion" target="_blank">PBS to Slurm Conversion Cheat Sheet  ⤴</a>.
+Learn more from the practical {% include target_link href=650 text="Introduction to job scheduling" %} tutorials (<i>including {% include target_link href=651.1 text="SLURM" %} and {% include target_link href=652.1 text="PBS" %} </i>) in the section {% include target_link href=600 text="06: High-Performance Computing (HPC)" %} of this workbook. For more, see also <a href="https://www.msi.umn.edu/slurm/pbs-conversion" target="_blank">PBS to Slurm Conversion Cheat Sheet  ⤴</a>.
 
 ### *5.  Remote access tools*
-Tools like `ssh`, `telnet` and `rlogin` are often available, which allow users to remotely access and control other systems on the network. Learn more about SSH connection from the practical tutorial <a href="https://datascience.101workbook.org/06-IntroToHPC/02-SSH/01-secure-shell-connection" target="_blank">Secure Shell Connection (SSH)  ⤴</a>, available in section <a href="https://datascience.101workbook.org/06-IntroToHPC/00-IntroToHPC-LandingPage" target="_blank">06. High-Performance Computing (HPC)  ⤴</a> of this workbook.
+Tools like `ssh`, `telnet` and `rlogin` are often available, which allow users to remotely access and control other systems on the network. Learn more about SSH connection from the practical tutorial {% include target_link href=623 text="Secure Shell Connection (SSH)" %} available in section {% include target_link href=600 text="06: High-Performance Computing (HPC)" %} of this workbook.
 
 ### *6.  File transfer tools*
 Tools such as `scp` and `rsync` are often available as built-in commands, which allow users to securely transfer files to and from the HPC system.
@@ -232,10 +231,10 @@ To synchronize the content in both locations, recursively transfer the data usin
 </span>
 </div><br>
 
-Learn more from the practical tutorials about <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/02-0-remote-data-transfer" target="_blank">Remote Data Transfer  ⤴</a>, available in section <a href="https://datascience.101workbook.org/07-DataParsing/00-DataParsing-LandingPage" target="_blank">07. Data Acquisition and Wrangling  ⤴</a> of this workbook. <br>
-If you seek for a guide about transferring data to <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/01-scient-network-intro" target="_blank">SCINet HPC system  ⤴</a>, see tutorials: <br>
-•  <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/02-scinet-atlas-cluster#command-line-data-transfer" target="_blank">Command line data transfer to Atlas  ⤴</a> and <br>
-• <a href="https://datascience.101workbook.org/06-IntroToHPC/01-HPC-NETWORKS/02-SCINET/04-scinet-juno-storage#copy-your-data-to-juno" target="_blank">Copy your data to Juno  ⤴</a>.
+Learn more from the practical tutorials about {% include target_link href=712 text="Remote data transfer" %} available in section {% include target_link href=700 text="07: Data Acquisition and Wrangling" %} of this workbook. <br>
+If you seek for a guide about transferring data to {% include target_link href=612.1 text="SCINet Scientific Computing" %}, see tutorials:
+* {% include target_link href=612.2 section="#command-line-data-transfer" text="Command line data transfer to Atlas" %} and
+* {% include target_link href=612.4 section="#copy-your-data-to-juno" text="Copy your data to Juno" %}
 
 
 ## **Software as built-in modules**
@@ -248,10 +247,10 @@ module avail <name>     # List available variants of a given package
 module list             # List currently loaded modules
 ```
 
-Learn more from the practical tutorial  <a href="https://datascience.101workbook.org/06-IntroToHPC/04-SOFTWARE/02-accessing-preinstalled-modules" target="_blank">Accessing pre-Installed Modules  ⤴</a>, available in section <a href="https://datascience.101workbook.org/06-IntroToHPC/00-IntroToHPC-LandingPage" target="_blank">06. High-Performance Computing (HPC)  ⤴</a> of this workbook.
+Learn more from the practical tutorial {% include target_link href=642 text="Accessing pre-installed modules" %} available in section {% include target_link href=600 text="06. High-Performance Computing (HPC)" %} of this workbook.
 
 ## **Software via package manager**
-The centralized package manager enables searching for and listing the available software packages on HPC systems. Different package managers match various operating systems. So first, check the operating system (OS) on your HPC infrastructure and identify the package manager in use. Then follow the cheatsheet below to search for the software needed. Learn more from the practical tutorial  <a href="https://datascience.101workbook.org/06-IntroToHPC/04-SOFTWARE/03-accessing-package-manager" target="_blank">Accessing Software via Package Manager  ⤴</a>, available in section <a href="https://datascience.101workbook.org/06-IntroToHPC/00-IntroToHPC-LandingPage" target="_blank">06. High-Performance Computing (HPC)  ⤴</a> of this workbook.
+The centralized package manager enables searching for and listing the available software packages on HPC systems. Different package managers match various operating systems. So first, check the operating system (OS) on your HPC infrastructure and identify the package manager in use. Then follow the cheatsheet below to search for the software needed. Learn more from the practical tutorial  {% include target_link href=643 text="Accessing software via package manager" %} available in section {% include target_link href=600 text="06. High-Performance Computing (HPC)" %} of this workbook.
 
 * for Ubuntu / Debian: *.deb* packages managed by `apt` and `dpkg` <br>
 ```
@@ -317,4 +316,4 @@ If the answer to any is yes, contact the HPC administrator and submit a request 
 Otherwise, go to step 3.
 
 
-3. Go to the <a href="https://datascience.101workbook.org/06-IntroToHPC/04-SOFTWARE/03-installing-custom-programs" target="_blank">Installing Custom Programs in User Space  ⤴</a> tutorial to learn how to install the necessary software yourself.
+3. Go to the {% include target_link href=644 text="Installing custom programs in user space" %} tutorial to learn how to install the necessary software yourself.

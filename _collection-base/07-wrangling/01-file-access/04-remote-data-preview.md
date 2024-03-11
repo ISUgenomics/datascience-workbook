@@ -27,7 +27,7 @@ Remote data preview refers to the ability to **view data that is stored in a rem
 * **using graphical interfaces**, including:
 
   * **web-based interfaces:** <br>
-  <i>Many cloud-based platforms and data storage systems offer web-based interfaces that allow users to preview data stored remotely through a web browser. These interfaces may include visualizations, charts, or other tools that allow users to explore the data in real-time.</i> <br> <span style="color: #ff3870;font-weight: 500;">To learn more visit the tutorial <a href="https://datascience.101workbook.org/06-IntroToHPC/02-FILE-ACCESS/04-open-on-demand" target="_blank">web-based Open OnDemand (OOD) Connection to HPC</a></span>
+  <i>Many cloud-based platforms and data storage systems offer web-based interfaces that allow users to preview data stored remotely through a web browser. These interfaces may include visualizations, charts, or other tools that allow users to explore the data in real-time.</i> <br> <span style="color: #ff3870; font-weight: 500;">To learn more visit the tutorial</span> {% include target_link href=624 text="web-based Open OnDemand (OOD) connection to HPC" %}
 
   * **remote desktop** <br>
   <i>Users can remotely access a desktop or computer that is physically located where the data is stored, allowing them to work with the data as if it were stored locally. This requires a stable internet connection and may require additional software or configurations.</i>
@@ -35,27 +35,29 @@ Remote data preview refers to the ability to **view data that is stored in a rem
   * **virtual machines:** <br>
   <i>Some cloud-based platforms offer virtual machines that allow users to access and interact with data stored remotely through a virtual desktop. This can be especially useful for users who need to work with large datasets or complex analysis tools that require significant processing power.</i>
 
-* **using command line interfaces**, including:
+<ul><li><b>using command line interfaces</b>, including:</li>
+  <ul>
+  <li> {% include target_link href=714.1 text="<b>Viewing text files</b>" %} <b>using UNIX commands on a remote machine</b></li>
+  <li> {% include target_link href=714.2 text="<b>Viewing PDF files</b>" %} <b>using X11 SSH connection</b></li>
+  <li> {% include target_link href=714.3 text="<b>Viewing graphic files</b>" %} <b>on remote machine as the ASCII art in the terminal</b></li>
+  <li> {% include target_link href=714.4 text="<b>Mounting remote folder</b>" %} <b>on local machine using SSH connection</b></li>
+  </ul>
+</ul>
 
-  * **[Viewing Text Files](04-1-tutorial-view-text-files-unix) using UNIX commands on a remote machine**
-  * **[Viewing PDF Files](04-2-tutorial-view-pdf-files-x11) using X11 SSH connection**
-  * **[Viewing Graphic Files](04-3-tutorial-view-graphic-files-terminal) on remote machine as the ASCII art in the terminal**
-  * **[Mounting Remote Folder](04-4-tutorial-mount-remote-folder) on local machine using SSH connection**
 
-
-<span style="color: #ff3870;font-weight: 500;">This section will focus on command line approaches for previewing remote data</span>, as they are universally applicable and reliable for accessing data stored across a variety of High-Performance Computing (HPC) systems. We encourage readers to explore these command line approaches by participating in hands-on tutorials listed in the [Further Reading](#further-reading) section.
+<span style="color: #ff3870; font-weight: 500;">This section will focus on command line approaches for previewing remote data</span>, as they are universally applicable and reliable for accessing data stored across a variety of High-Performance Computing (HPC) systems. We encourage readers to explore these command line approaches by participating in hands-on tutorials listed in the [Further Reading](#further-reading) section.
 
 ## *Why it's good to preview remotely?*
 
 Command line approaches for **previewing remote data can be especially useful** for users in scientific fields, where large datasets are common, and access to High-Performance Computing (HPC) systems is necessary. Remote viewing offers significant advantages in terms of speed, efficiency, and security. Here are some examples of cases where using command line approaches for previewing data stored remotely can be practical:
 
 * **Previewing PDF files** <br>
-<i>In scientific research, it's common to generate reports, publications, and other documents in PDF format. Command line approaches like X11 SSH connection allow users to preview PDF files remotely without downloading or transferring them to a local machine.</i> <br> <span style="color: #ff3870;font-weight: 500;">To learn more visit the tutorial <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/04-2-tutorial-view-pdf-files-x11" target="_blank">Viewing PDF Files using X11 SSH connection  ⤴</a></span>
+<i>In scientific research, it's common to generate reports, publications, and other documents in PDF format. Command line approaches like X11 SSH connection allow users to preview PDF files remotely without downloading or transferring them to a local machine.</i> <br> <span style="color: #ff3870; font-weight: 500;">To learn more visit the tutorial {% include target_link href=714.2 text="Viewing PDF files using X11 SSH connection" %} </span>
 
 * **Previewing graphic files** <br>
-<i>Graphics are often used in scientific research, including charts, graphs, and images. Command line approaches like mounting a remote folder using sshfs allow users to view graphic files remotely without downloading or transferring them to a local machine.</i> <br> <span style="color: #ff3870;font-weight: 500;">To learn more visit the tutorials:
-* <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/04-3-tutorial-view-graphic-files-terminal" target="_blank">Viewing Graphic Files on remote machine as the ASCII art in the terminal  ⤴</a></span>
-* <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/04-4-tutorial-mount-remote-folder" target="_blank">Mounting Remote Folder on Local Machine  ⤴</a></span>
+*Graphics are often used in scientific research, including charts, graphs, and images. Command line approaches like mounting a remote folder using `sshfs` allow users to view graphic files remotely without downloading or transferring them to a local machine.* <br> <span style="color: #ff3870; font-weight: 500;">To learn more visit the tutorials:</span>
+* {% include target_link href=714.3 text="Viewing Graphic Files on remote machine as the ASCII art in the terminal" %}
+* {% include target_link href=714.4 text="Mounting remote folder on a local machine" %}
 
 * **Quick view to find information needed** <br>
 <i>When working on remote HPC systems, it can be challenging to find the specific information needed quickly. Command line approaches allow users to preview the data and code, and use text processing tools to quickly search and extract relevant information.</i>

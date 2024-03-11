@@ -115,7 +115,7 @@ python3 merge_data.py -i input_file -m merge_file -c 1,5
 
 ## Environment setup
 
-The application is developed in Python3 programming language and requires importing several useful  libraries. Thus, to manage dependencies, first you have to set up the Conda environment on your (local or remote) machine. Follow the instructions provided in section <a href="https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/00-data-wrangling-apps#environment-setup" target="_blank">Environment setup  ⤴</a> in the introduction to <a href="https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/00-data-wrangling-apps" target="_blank">Data Wrangling: use ready-made apps  ⤴</a> to get Python installed and create `data_wrangling` virtual environment using <b>install <a href="https://docs.conda.io/en/latest/" target="_blank">Conda ⤴</a></b>.
+The application is developed in Python3 programming language and requires importing several useful  libraries. Thus, to manage dependencies, first you have to set up the Conda environment on your (local or remote) machine. Follow the instructions provided in section {% include target_link href=731 section="#environment-setup" text="Environment setup" %} in the introduction to {% include target_link href=731 text="Data Wrangling: use ready-made apps" %} to get Python installed and create `data_wrangling` virtual environment using <b>install <a href="https://docs.conda.io/en/latest/" target="_blank">Conda ⤴</a></b>.
 
 <span style="color: #ff3870;font-weight: 500;">Once you have Conda and the <i>data_wrangling</i> environment follow further steps below.</span>
 
@@ -176,8 +176,8 @@ strawberry,3/8,0.4
 ```
 
 *data structure in the example Excel input: `data_CN.xlsx`*
-<a href="https://github.com/ISUgenomics/datascience-workbook/raw/main/07-DataParsing/assets/data/grain_quality/data_CN.xlsx" target="_blank"><input type="button" value="Download ⤵" style="background-color: #e7e7e7; color: black;" /></a>
-<a id="raw-url" href="https://github.com/ISUgenomics/datascience-workbook/blob/main/07-DataParsing/assets/data/grain_quality/data_CN.xlsx" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
+<a href="https://github.com/ISUgenomics/datascience-workbook/raw/main/_collection-base/07-DataParsing/assets/data/grain_quality/data_CN.xlsx" target="_blank"><input type="button" value="Download ⤵" style="background-color: #e7e7e7; color: black;" /></a>
+<a id="raw-url" href="https://github.com/ISUgenomics/datascience-workbook/blob/main/_collection-base/07-DataParsing/assets/data/grain_quality/data_CN.xlsx" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 
 ![02_data_wrangling_merge_1.png]({{ images_path }}/02_data_wrangling_merge_1.png)
 
@@ -298,16 +298,16 @@ Two labs, Lab A and Lab B, were collaborating on a research project regarding qu
 Below is the preview of the required `data` and `labels` input files.
 
 * The *data_CN.xlsx* and *labels.xlsx* share the same column with **ARS labels**, even though in both files this column has a different name *(i.e., USDA# and ARS_Label, marked with the green frames)*. <br>
-<a href="https://github.com/ISUgenomics/datascience-workbook/raw/main/07-DataParsing/assets/data/grain_quality/data_CN.xlsx" target="_blank"><input type="button" value="Download ⤵" style="background-color: #e7e7e7; color: black;" /></a>
-<a id="raw-url" href="https://github.com/ISUgenomics/datascience-workbook/blob/main/07-DataParsing/assets/data/grain_quality/data_CN.xlsx" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
+<a href="https://github.com/ISUgenomics/datascience-workbook/raw/main/_collection-base/07-DataParsing/assets/data/grain_quality/data_CN.xlsx" target="_blank"><input type="button" value="Download ⤵" style="background-color: #e7e7e7; color: black;" /></a>
+<a id="raw-url" href="https://github.com/ISUgenomics/datascience-workbook/blob/main/_collection-base/07-DataParsing/assets/data/grain_quality/data_CN.xlsx" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 
 * The *labels* file contains an additional column with `Sample Num` paired with the `ARS labels` and together they provide a set of matching pairs of labels for the experimental samples. <br>
-<a href="https://github.com/ISUgenomics/datascience-workbook/raw/main/07-DataParsing/assets/data/grain_quality/labels.xlsx" target="_blank"><input type="button" value="Download ⤵" style="background-color: #e7e7e7; color: black;" /></a>
-<a id="raw-url" href="https://github.com/ISUgenomics/datascience-workbook/blob/main/07-DataParsing/assets/data/grain_quality/labels.xlsx" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
+<a href="https://github.com/ISUgenomics/datascience-workbook/raw/main/_collection-base/07-DataParsing/assets/data/grain_quality/labels.xlsx" target="_blank"><input type="button" value="Download ⤵" style="background-color: #e7e7e7; color: black;" /></a>
+<a id="raw-url" href="https://github.com/ISUgenomics/datascience-workbook/blob/main/_collection-base/07-DataParsing/assets/data/grain_quality/labels.xlsx" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 
 * The other `data` file, *data_NN.xlsx* contains measurements collected by the second lab and labeled with the `Sample Num` identifiers *(marked with the blue frames)*. <br>
-<a href="https://github.com/ISUgenomics/datascience-workbook/raw/main/07-DataParsing/assets/data/grain_quality/data_NN.xlsx" target="_blank"><input type="button" value="Download ⤵" style="background-color: #e7e7e7; color: black;" /></a>
-<a id="raw-url" href="https://github.com/ISUgenomics/datascience-workbook/blob/main/07-DataParsing/assets/data/grain_quality/data_NN.xlsx" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
+<a href="https://github.com/ISUgenomics/datascience-workbook/raw/main/_collection-base/07-DataParsing/assets/data/grain_quality/data_NN.xlsx" target="_blank"><input type="button" value="Download ⤵" style="background-color: #e7e7e7; color: black;" /></a>
+<a id="raw-url" href="https://github.com/ISUgenomics/datascience-workbook/blob/main/_collection-base/07-DataParsing/assets/data/grain_quality/data_NN.xlsx" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 
 As you can see, the number of rows in the `labels` file is significantly higher than in the `data` files *(marked with the red frames)*.
 

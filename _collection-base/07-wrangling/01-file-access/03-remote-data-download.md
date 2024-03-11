@@ -24,7 +24,7 @@ tags: []
 
 Downloading data **from online and remote resources** can be a challenging task, particularly when dealing with large datasets or complex or dynamic web pages. However, many tools and techniques are available to simplify this process and allow users to download data with ease. In this section, we will focus on the **command-line approaches for downloading data** from online and remote resources. It will cover popular tools and provide practical examples of how to use them to download data from various online resources.
 
-If you rather are interested in <span style="color: #ff3870;font-weight: 500;">transferring files between remote computing machines</span> than downloading data from online resources, see the tutorials in section <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/02-0-remote-data-transfer" target="_blank">07. Data Acquisition and Wrangling / Remote Data Access / <b>Remote Data Transfer</b>  ⤴</a>.
+If you rather are interested in <span style="color: #ff3870; font-weight: 500;">transferring files between remote computing machines</span> than downloading data from online resources, see the tutorials in section {% include target_link href=712 text="07. Data Acquisition and Wrangling / Remote data access / <b>Remote data transfer</b>" %}
 
 
 ## *Why data is available online?*
@@ -213,7 +213,7 @@ For example, to download a file from a website, you can use the following comman
 wget https://ftp.uniprot.org/pub/databases/uniprot/README
 ```
 
-<span style="color: #ff3870;font-weight: 500;">Explore more practical examples in the hands-on tutorial: <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/03-1-tutorial-download-wget" target="_blank">Downloading Online Data using WGET  ⤴</a></span>.
+<span style="color: #ff3870; font-weight: 500;">Explore more practical examples in the hands-on tutorial: {% include target_link href=713.1 text="Downloading Online Data using WGET" %} </span>.
 
 
 
@@ -236,7 +236,7 @@ To use `wget` (or *curl*) for batch downloading, you can create a text file that
 wget -i download_list.txt
 ```
 
-<b>Follow more practical examples of batch download in the section <span style="color: #ff3870;font-weight: 500;">wget for multiple files and directories</span> in the hands-on tutorial: <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/03-1-tutorial-download-wget#wget-for-multiple-files-and-directories" target="_blank">Downloading Online Data using WGET  ⤴</a></b>.
+<b>Follow more practical examples of batch download in the section <span style="color: #ff3870; font-weight: 500;">wget for multiple files and directories</span> in the hands-on tutorial:</b> {% include target_link href=713.1 text="Downloading Online Data using WGETl" %}
 
 
 ## 4. API
@@ -273,7 +273,7 @@ Web scraping involves extracting data from websites by analyzing the website's H
 <br><span style="font-style:italic;">
 Web scraping is a more advanced task that <b>requires a higher level of technical knowledge and programming skills</b> than simple file transfers or API requests. In particular, it is recommended that those taking up the web scraping challenge have a basic understanding of Python before attempting to scrape websites.
 </span>
-</div><br>
+</div>
 
 **The challenges of web scraping** are primarily related to the fact that websites are designed for human consumption, and so the structure and format of the data on a website can be complex and inconsistent. As a result, web scraping often **requires the use of advanced techniques** like regular expressions and parsing algorithms to extract the desired data from a website.
 
@@ -282,6 +282,6 @@ Web scraping is a more advanced task that <b>requires a higher level of technica
 <br><span style="font-style:italic;">
 Before attempting to scrape a website for data, it is often a good idea to <b>explore other options for downloading the data first</b>. Many online resources provide APIs or other tools for accessing their data, and their developers may be willing to help you find the best method for accessing the data you need. In some cases, <b>reaching out to the website admins directly</b> may be the easiest and fastest way.
 </span>
-</div><br>
+</div>
 
-If you have exhausted all other options for obtaining the data you need or if web scraping is a topic that interests you, <span style="color: #ff3870;font-weight: 500;">exploring the hands-on tutorial <a href="https://datascience.101workbook.org/07-DataParsing/01-FILE-ACCESS/03-2-tutorial-download-web-scraping" target="_blank">Downloading Online Data using Python Web Scraping  ⤴</a>, provided in this workbook, may be a good next step.</span>
+If you have exhausted all other options for obtaining the data you need or if web scraping is a topic that interests you, <span style="color: #ff3870; font-weight: 500;">exploring the hands-on tutorial</span> {% include target_link href=713.3 text="Downloading online data using Python-based web scraping" %} provided in this workbook, may be a good next step.

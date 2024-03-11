@@ -131,7 +131,7 @@ python3 bin_data.py -i input_file -l 0 -r 1
 
 ## **Environment setup**
 
-The application is developed in Python3 programming language and requires importing several useful  libraries. Thus, to manage dependencies, first you have to set up the Conda environment on your (local or remote) machine. Follow the instructions provided in section <a href="https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/00-data-wrangling-apps#environment-setup" target="_blank">Environment setup  ⤴</a> in the introduction to <a href="https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/00-data-wrangling-apps" target="_blank">Data Wrangling: use ready-made apps  ⤴</a> to get Python installed and create `data_wrangling` virtual environment using <b>install <a href="https://docs.conda.io/en/latest/" target="_blank">Conda ⤴</a></b>.
+The application is developed in Python3 programming language and requires importing several useful  libraries. Thus, to manage dependencies, first you have to set up the Conda environment on your (local or remote) machine. Follow the instructions provided in section {% include target_link href=731 section="#environment-setup" text="Environment setup" %} in the introduction to {% include target_link href=731 text="Data Wrangling: use ready-made apps" %} to get Python installed and create `data_wrangling` virtual environment using <b>install <a href="https://docs.conda.io/en/latest/" target="_blank">Conda ⤴</a></b>.
 
 <span style="color: #ff3870;font-weight: 500;">Once you have Conda and the <i>data_wrangling</i> environment follow further steps below.</span>
 
@@ -213,7 +213,7 @@ Note that only data from numeric columns will be aggregated. So, if the values i
 
 ### *Column names*
 
-The **header** is usually the first line of the file and contains the column labels. Naming the columns brings great **informational value** to the analyzed data. However, the application does NOT require the input file to have a header. If it is in the file it will be detected automatically. Otherwise, the default set of column labels [ *[see options section](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#options)* ] will be assigned.
+The **header** is usually the first line of the file and contains the column labels. Naming the columns brings great **informational value** to the analyzed data. However, the application does NOT require the input file to have a header. If it is in the file it will be detected automatically. Otherwise, the default set of column labels [{% include target_link href=733 section="#options" text="<i>see options section</i>" %} ] will be assigned.
 
 ![Columns header]({{ images_path }}/03-input_header.png)
 
@@ -353,7 +353,7 @@ label_10	2265	0	0	0	0	0	1	0
 
 * To feed the application with the data from a single file, use option `-i` followed by the `path/file_name` of your input.
 * You need to select a column used to split data into the categories based on the set of unique values (labels). The `label-col` can be text or numerical.<br> *In this example we will use the first column with text-like labels to create data chunks. Index of the selected `label-col` is feed to the algorithm with the option `-l`.*
-* You also need to select a column used to cut data into slices. The `ranges-col` requires to be numerical, because the range of values in the slice will be reported in the output. If none column is relevant for that purpose, you can use the approach proposed in the [File Content](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#file-content)/[Ranges Column](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#-ranges-column)/<b>[Add Indexing](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#-add-indexing)</b> section to add a column with generic indexing.<br> *In this example we will use the second column (Python index: 1) with integers to derive reference value ranges of slices.*
+* You also need to select a column used to cut data into slices. The `ranges-col` requires to be numerical, because the range of values in the slice will be reported in the output. If none column is relevant for that purpose, you can use the approach proposed in the {% include target_link href=733 section="#file-content" text="File Content" %}/{% include target_link href=733 section="#-ranges-column" text="Ranges Column" %}/{% include target_link href=733 section="#-add-indexing" text="<b>Add Indexing</b>" %} section to add a column with generic indexing.<br> *In this example we will use the second column (Python index: 1) with integers to derive reference value ranges of slices.*
 * For the remaining options, the default values will be used. Thus, label-based data chunks split for slices of 100-rows in length (options: `-t 'step' -n 100`) and data is aggregated by calculating mean value (option: `-c 'ave'`).
 
 ```
@@ -408,7 +408,7 @@ Typically the directory type of input will be `-i CHUNKS` as the default output 
 **App usage**
 
 * To feed the application with the data from a directory, use the option `-i` followed by the `path/dir_name` of your input directory.
-* The settings of `labels-col` and `ranges-col` are the same as in the [previous example](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#e1-load-data-from-a-single-text-file). So, we are using labels from the column of index 0 (`-l 0`), and value ranges from the column of index 1 (`-r 1`).
+* The settings of `labels-col` and `ranges-col` are the same as in the {% include target_link href=733 section="#e1-load-data-from-a-single-text-file" text="previous example." %} So, we are using labels from the column of index 0 (`-l 0`), and value ranges from the column of index 1 (`-r 1`).
 * This time label-based data chunks split for 100 slices of X-rows in length (options: `-t 'bin' -n 100`).
 
 ```
@@ -428,11 +428,11 @@ Each row in the output corresponds to one of 100 slices, every of X=10 rows. The
 
 ### *E3: Aggregate data over every N rows*
 
-The example is basically the same as [example E1](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#e1-load-data-from-a-single-text-file) and uses the same input file. However, when analyzing the settings, this time, we will focus on the slicing procedure instead of the input type. Using the `-t 'step'` option, you can request to aggregate data over the slices cut by every N rows.
+The example is basically the same as [example E1](#e1-load-data-from-a-single-text-file) and uses the same input file. However, when analyzing the settings, this time, we will focus on the slicing procedure instead of the input type. Using the `-t 'step'` option, you can request to aggregate data over the slices cut by every N rows.
 
 **Input**
 
-We will use label-based data chunks created in [example E1](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#e1-load-data-from-a-single-text-file) and stored in the `CHUNKS` directory. <br>
+We will use label-based data chunks created in [example E1](#e1-load-data-from-a-single-text-file) and stored in the `CHUNKS` directory. <br>
 <a id="raw-url" href="https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data/data/CHUNKS" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 
 *File Preview* of example `chunk_*.csv`
@@ -453,7 +453,7 @@ label_3,5381,1,0,2,0,1,1,0,0
 **App usage**
 
 * In this case, we will slice the label-based data chunks by every 100 rows, which can be requested using `-t 'step' -n 100` options.
-* By default of [example E1](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#e1-load-data-from-a-single-text-file), the values in a slice aggregate by calculating the mean of each numerical column. Alternatively, we can request a summing over the slice using the `-c 'sum'` option. In this variant, the returned output for each data slice is a row containing a sum of values for every numerical column.
+* By default of [example E1](#e1-load-data-from-a-single-text-file), the values in a slice aggregate by calculating the mean of each numerical column. Alternatively, we can request a summing over the slice using the `-c 'sum'` option. In this variant, the returned output for each data slice is a row containing a sum of values for every numerical column.
 * The input is provided using the `-i` option followed by the `file_name` or `dir_name`, here we use a `CHUNKS` directory. As previously, we are using labels from the column of index 0 (`-l 0`), and value ranges from the column of index 1 (`-r 1`).
 
 ```
@@ -477,7 +477,7 @@ The example shows another variant of slicing procedure. The example shows anothe
 
 **Input**
 
-We will use label-based data chunks created in [example E1](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#e1-load-data-from-a-single-text-file) and stored in the `CHUNKS` directory. <br>
+We will use label-based data chunks created in [example E1](#e1-load-data-from-a-single-text-file) and stored in the `CHUNKS` directory. <br>
 <a id="raw-url" href="https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data/data/CHUNKS" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 
 *File Preview* of example `chunk_*.csv`
@@ -522,7 +522,7 @@ The example shows the third variant of the slicing procedure. Using the `-t 'val
 
 **Input**
 
-We will use label-based data chunks created in [example E1](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#e1-load-data-from-a-single-text-file) and stored in the `CHUNKS` directory. <br>
+We will use label-based data chunks created in [example E1](#e1-load-data-from-a-single-text-file) and stored in the `CHUNKS` directory. <br>
 <a id="raw-url" href="https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data/data/CHUNKS" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 
 *File Preview* of example `chunk_*.csv`
@@ -574,7 +574,7 @@ The **verbosity** level defines how much information will be printed on your ter
 
 **Input**
 
-We will use label-based data chunks created in [example E1](https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py#e1-load-data-from-a-single-text-file) and stored in the `CHUNKS` directory. <br>
+We will use label-based data chunks created in [example E1](#e1-load-data-from-a-single-text-file) and stored in the `CHUNKS` directory. <br>
 <a id="raw-url" href="https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data/data/CHUNKS" target="_blank"><input type="button" value="Open at GitHub ⤴" style="background-color: #e7e7e7; color: black;" /></a>
 
 *File Preview* of example `chunk_*.csv`
