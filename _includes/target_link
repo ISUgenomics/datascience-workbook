@@ -12,17 +12,21 @@
   {% assign href = include.href %}
 {% else %}
   {% assign content = site['collection-base'] | sort: 'order' %}
-  {% for item in content %}
-    {% if item.order == include.href %}
-      {% assign href = item.url %}
-      {% break %}
-    {% endif %}
-  {% endfor %}
+  {% assign item = content | where: "order", include.href | first %}
+  {% assign href = item.url %}
+  {% assign text = item.title %}
 {% endif %}
 
 {% if include.section %}
   {% assign href = href | append: include.section %}
 {% endif %}
 
+{% if include.text %}
+  {% assign text = include.text %}
+{% endif %}
 
-<p class="wrapper"> <a href="{{ href }}" target="_blank" class="target-link">{{ include.text }}</a></p>
+{% if include.button %}
+  <p class="wrapper"> <a href="{{ href }}" target="_blank" class="target-link"><input type="button" value={{ text }} class="target-link-btn" /></a></p>
+{% else %}
+  <p class="wrapper"> <a href="{{ href }}" target="_blank" class="target-link">{{ text }}</a></p>
+{% endif %}
