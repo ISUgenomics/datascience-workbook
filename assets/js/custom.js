@@ -5,34 +5,47 @@ function adjustWrapperLinks() {
   var targetLinks = document.querySelectorAll('p.wrapper');
   targetLinks.forEach(function(targetLink) {
     var aTag = targetLink.querySelector('a');
-    var next = targetLink.nextElementSibling;
-    var previous = targetLink.previousElementSibling;
-    if (next && next.tagName === 'P') {
-      next.classList.add('wrapper-link');
-    }
+    var parent = targetLink.parentNode;
+    console.log(parent.tagName, aTag.text);
 
-    if (previous) {
-      console.log(previous, aTag.text);
-      if (previous.tagName === 'P' && aTag) {
-        previous.classList.add('wrapper-link');
-        previous.appendChild(aTag);
-      }
-      else if (previous.tagName === 'UL') {
-        var lastLi = previous.querySelector('li:last-child');
-        if (lastLi) {
-          while (lastLi.querySelector('li')) {
-            lastLi = lastLi.querySelector('li:last-child');
+    var next = targetLink.nextElementSibling;
+    var prev = targetLink.previousElementSibling;
+    if (next) {console.log("Next: ", next.tagName)}
+    if (prev) {console.log("Prev: ", prev.tagName)}
+    if (parent) {
+      if (parent.tagName === 'SECTION') {
+        if (next && !(/^H[1-6]$/).test(next.tagName)) {next.classList.add('inline');}
+        if (prev) {
+          if (prev.tagName === 'P') {prev.classList.add('inline');}
+
+          else if (prev.tagName === 'UL') {
+            var lastLi = prev.querySelector('li:last-child');
+            lastLi.appendChild(targetLink);
+            var current = next;
+            var nextUlFound = false;
+            while (current && !nextUlFound) {
+              console.log("HERE: ", current.tagName, current);
+              if (current.textContent) {
+                if (/^[a-zA-Z]/.test(current.textContent)) {current.textContent = ' ' + current.textContent;}
+              }
+              lastLi.appendChild(current);
+              var next2 = current.nextSibling;
+              if (!next2 || next2.tagName === 'UL') {nextUlFound = true;}
+              else {current = next2;}
+            }
           }
-          lastLi.appendChild(aTag);
-          if (next && next.tagName === 'P') {
-            lastLi.appendChild(next);
-          }
+
         }
       }
-    }
+      else if (parent.tagName === 'LI') {
+        if (prev) {prev.classList.add('inline');}
+        tmp = parent.parentNode.nextElementSibling;
+        if (tmp && tmp.tagName === 'P') {
+          tmp.classList.add('inline');
+          parent.appendChild(tmp);
+        }
+      }
 
-    if (!targetLink.innerHTML.trim()) {
-      targetLink.parentNode.removeChild(targetLink);
     }
   });
 }
