@@ -287,7 +287,7 @@ to make adjustments to the image's color and tone.
 <div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">WARNING:</span>
 <br><span style="font-style:italic;">
-Keep caution when editing layers in GIMP and ensure the correct layer is selected to avoid unintended modifications. To change the active layer in GIMP, go to the <b>Layers</b> dialog panel (typically on the bottom-right) and click on the layer intended for edition. The currently active layer is highlighted. See <a href="https://datascience.101workbook.org/08-DataVisualization/01-IMAGES/02-raster-graphics-tools#layers">Layers section</a> for more details.
+Keep caution when editing layers in GIMP and ensure the correct layer is selected to avoid unintended modifications. To change the active layer in GIMP, go to the <b>Layers</b> dialog panel (typically on the bottom-right) and click on the layer intended for edition. The currently active layer is highlighted. See {% include target_link href=812 section="#layers" text="Layers section" %} for more details.
 </span>
 </div><br>
 

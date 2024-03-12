@@ -66,7 +66,7 @@ Embarking on the Data Lifecycle Management journey, we recognize the critical ro
 Data Collection Methods refer to the structured and strategic approaches employed to gather information and insights pertinent to research objectives. These methods are meticulously designed to ensure the comprehensiveness, relevance, and reliability of the data, thereby forming the foundation upon which meaningful analysis and conclusions are built.
 
 **IMPORTANCE** <br>
-The rigor and appropriateness of data collection methods directly influence the quality and interpretability of research outcomes. Accurate and ethically gathered data, adhering to <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/03-DATA/03-fair-principles" target="_blank">FAIR  ⤴</a> `(Findable, Accessible, Interoperable, Reusable)` and <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/03-DATA/02-care-principles" target="_blank">CARE  ⤴</a> `(Collective Benefit, Authority to Control, Responsibility, Ethics)` principles, not only bolster the credibility of the research but also ensure respect for community rights and compliance with legal standards.
+The rigor and appropriateness of data collection methods directly influence the quality and interpretability of research outcomes. Accurate and ethically gathered data, adhering to {% include target_link href=931.2 %} (Findable, Accessible, Interoperable, Reusable) and {% include target_link href=931.3 %} (Collective Benefit, Authority to Control, Responsibility, Ethics), not only bolster the credibility of the research but also ensure respect for community rights and compliance with legal standards.
 
 <div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">NOTE:</span>
@@ -114,7 +114,7 @@ Implement measures for data validation and verification to maintain the accuracy
 Data Storage Solutions encompass a range of systems and services meticulously designed to save, organize, and manage data effectively. These solutions provide a structured environment where data can be stored securely, accessed efficiently, and managed conveniently, thus serving as a critical component in maintaining the integrity and usability of research data.
 
 **IMPORTANCE** <br>
-The choice of appropriate and secure data storage solutions is paramount in safeguarding data integrity, ensuring data availability, and facilitating seamless data retrieval. Adherence to <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/03-DATA/04-trust-principles" target="_blank">TRUST  ⤴</a> (Transparent, Responsible, User Focus, Sustainable, Technology) principles further guarantees that data repositories meet high standards of reliability, sustainability, and security, providing researchers with the confidence that their data is preserved in a state-of-the-art environment.
+The choice of appropriate and secure data storage solutions is paramount in safeguarding data integrity, ensuring data availability, and facilitating seamless data retrieval. Adherence to {% include target_link href=931.4 %} (Transparent, Responsible, User Focus, Sustainable, Technology) further guarantees that data repositories meet high standards of reliability, sustainability, and security, providing researchers with the confidence that their data is preserved in a state-of-the-art environment.
 
 <div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">NOTE:</span>
@@ -224,7 +224,7 @@ Have a clear plan in place for responding to data breaches or security incidents
 Data Sharing and Accessibility Policies encompass a set of structured guidelines and ethical practices aimed at making research data available to other researchers, the public, or both. These policies dictate how data should be shared, the extent of data accessibility, and under what conditions, ensuring that data sharing is conducted transparently, responsibly, and in a manner that respects privacy and intellectual property rights.
 
 **IMPORTANCE** <br>
-Implementing clear data sharing and accessibility policies is pivotal in promoting scientific collaboration, enhancing the transparency of research processes, and fostering innovation.  Moreover, aligning with the <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/03-DATA/03-fair-principles" target="_blank"> FAIR  ⤴</a> principles (Findable, Accessible, Interoperable, Reusable) ensures that shared data is easily discoverable, accessible, and usable by others, thereby maximizing the research's impact and utility.
+Implementing clear data sharing and accessibility policies is pivotal in promoting scientific collaboration, enhancing the transparency of research processes, and fostering innovation.  Moreover, aligning with the {% include target_link href=120 %} <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/03-DATA/03-fair-principles" target="_blank"> FAIR  ⤴</a> principles (Findable, Accessible, Interoperable, Reusable) ensures that shared data is easily discoverable, accessible, and usable by others, thereby maximizing the research's impact and utility.
 
 <div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">NOTE:</span>
@@ -235,7 +235,7 @@ Implementing clear data sharing and accessibility policies is pivotal in promoti
 By adhering to these policies, researchers contribute to a culture of openness, allowing for the validation of research findings, the replication of studies, and the advancement of knowledge. </span>
 </div>
 
-<i><span style="color: #ff3870;font-weight: 500;"> For an in-depth exploration of how these and other open-type policies foster a culture of openness and collaboration in research, refer to our detailed <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/03-DATA/01-open-principles" target="_blank">article on open-type policies  ⤴</a>. </span></i>
+<p style="color: #ff3870;font-weight: 500;"> For an in-depth exploration of how these and other open-type policies foster a culture of openness and collaboration in research, refer to our detailed {% include target_link href=931.1 text="article on open-type policies" %} </p>
 
 
 **Examples of Data Sharing Platforms:**

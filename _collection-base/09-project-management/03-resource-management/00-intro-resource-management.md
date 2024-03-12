@@ -117,16 +117,16 @@ Informational resources, such as data, research papers, and software tools, are 
 
 
 In a research project, Informational Resources encompass crucial components such as:
-1. <b><a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/03-DATA/01-data-management/" target="_blank">Data Management</a></b> <br>
+1. {% include target_link href=931.0 %} <br>
 <i>Data Management ensures the integrity, accessibility, and security of data, forming the backbone of research analysis and insights. </i>
 
-2. <b><a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/00-code-developments" target="_blank">Code Management</a></b> <br>
+2. {% include target_link href=932.0 %} <br>
 <i>Code Management, through practices like version control, maintains the consistency and trackability of software code, a critical element in reproducible and collaborative research. </i>
 
-3. <b><a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/01-storage-version-control" target="_blank">Storage and Version Control</a></b> <br>
+3. {% include target_link href=932.1 %} <br>
 <i>Storage and Version Control systems safeguard information, provide historical tracking of project progress, and facilitate efficient resource sharing.</i>
 
-4. <b><a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/02-DOCUMENTATION/01-documentation-improvement-tools" target="_blank">Documentation</a></b> <br>
+4. {% include target_link href=933.1 %} <br>
 <i>Documentation acts as the repository of knowledge, capturing the nuances of research methodologies, findings, and intellectual property, ensuring that every aspect of the research is recorded, understandable, and accessible for future reference.</i>
 
 
@@ -170,15 +170,3 @@ Adequate resources are fundamental to maintaining high-quality standards in rese
 ### Project Closing
 
 Efficient resource management contributes to a smooth project closure by ensuring that resources are properly reallocated or decommissioned and that all financial and material accounts are settled appropriately.
-
-
-
-___
-# Further Reading
-* [3.1 Data Management](03-DATA/00-data-management)
-* [3.2 Code Management](01-SOURCE-CODE/00-code-developments)
-* [3.3 Storage & Version Control](01-SOURCE-CODE/01-storage-version-control)
-* [3.4 Documentation Improvement Tools](02-DOCUMENTATION/01-documentation-improvement-tools)
-
-* [4. Quality Assurance](../03-PRODUCTIVITY/00-quality-assurance)
-* [5. Project Closing](../04-PUBLICATION/01-project-closing)

@@ -1,5 +1,5 @@
 ---
-title: "Productivity in research"
+title: "Enhancing productivity in research"
 layout: single
 author: Aleksandra Badaczewska
 author_profile: true
@@ -269,9 +269,9 @@ Here's a table comparing the pros and cons of a well-organized and well-document
 </div>
 
 For a deep dive into setting up and using these platforms effectively, **check out the dedicated tutorials in the workbook**. They’ll walk you through everything from the basics to pro tips, ensuring your project's info is as accessible and organized as possible.
-* <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/03-DATA/00-data-management" target="_blank">Data Management  ⤴</a>
-* <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/00-code-developments" target="_blank">Code Management  ⤴</a>
-* <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/03-repo-hosting-platforms" target="_blank">Online Hosting Platforms for GIT Repositories  ⤴</a>
+* {% include target_link href=931.0 %}
+* {% include target_link href=932.0 %}
+* {% include target_link href=932.3 %}
 
 
 ### Stay Organized
@@ -284,18 +284,21 @@ Staying organized is more than just a clean desk. It’s about keeping your digi
 
 The table below lists some popular tools for organizing work. These tools can greatly enhance productivity and organization in your research, offering solutions for note-taking, data storage, reference management, team communication, and project management.
 
-| tool         | description |
-|--------------|-------------|
-| <a href="https://trello.com" target="_blank">Trello</a> | A project management tool that helps you organize tasks and projects into boards. |
-| <a href="https://asana.com" target="_blank">Asana</a> | A web and mobile application designed to help teams organize, track, and manage their work. |
-| <a href="https://slack.com" target="_blank">Slack</a> | A messaging app for teams that can help streamline communication and collaboration. [<a href="https://datascience.101workbook.org/09-ProjectManagement/01-COMMUNICATION/02-intro-to-slack" target="_blank">tutorial  ⤴</a>] |
-| <a href="https://www.microsoft.com/en-us/microsoft-teams/group-chat-software" target="_blank">Microsoft Teams</a> | A platform that combines workplace chat, meetings, notes, and attachments. |
-| <a href="https://www.zotero.org" target="_blank">Zotero</a> | A free tool to help you collect, organize, cite, and share research. |
-| <a href="https://www.mendeley.com" target="_blank">Mendeley</a> | A reference manager and academic social network that can help organize your research. |
-| <a href="https://scholar.google.com" target="_blank">Google Scholar</a> | A freely accessible web search engine that indexes the full text or metadata of scholarly literature across an array of publishing formats and disciplines. |
-| <a href="https://evernote.com" target="_blank">Evernote</a> | A note-taking app that lets you capture, organize, and share notes from anywhere. |
-| <a href="https://drive.google.com" target="_blank">Google Drive</a> | A cloud storage service that allows you to save files online and access them anywhere. |
-| <a href="https://www.dropbox.com" target="_blank">Dropbox</a> | A file hosting service that offers cloud storage, file synchronization, personal cloud, and client software. |
+
+<table>
+<tr> <th>tool </th> <th>description</th> </tr>
+<tr> <td><a href="https://trello.com" target="_blank">Trello</a></td> <td>A project management tool that helps you organize tasks and projects into boards.</td> </tr>
+<tr> <td><a href="https://asana.com" target="_blank">Asana</a></td> <td>A web and mobile application designed to help teams organize, track, and manage their work.</td> </tr>
+<tr> <td><a href="https://slack.com" target="_blank">Slack</a></td> <td>A messaging app for teams that can help streamline communication and collaboration. <br>See tutorial: {% include target_link href=922 %} </td> </tr>
+<tr> <td><a href="https://www.microsoft.com/en-us/microsoft-teams/group-chat-software" target="_blank">Microsoft Teams</a></td> <td>A platform that combines workplace chat, meetings, notes, and attachments.</td> </tr>
+<tr> <td><a href="https://www.zotero.org" target="_blank">Zotero</a></td> <td>A free tool to help you collect, organize, cite, and share research.</td> </tr>
+<tr> <td><a href="https://www.mendeley.com" target="_blank">Mendeley</a></td> <td>A reference manager and academic social network that can help organize your research.</td> </tr>
+<tr> <td><a href="https://scholar.google.com" target="_blank">Google Scholar</a></td> <td>A freely accessible web search engine that indexes the full text or metadata of scholarly literature across an array of publishing formats and disciplines.</td> </tr>
+<tr> <td><a href="https://evernote.com" target="_blank">Evernote</a></td> <td>A note-taking app that lets you capture, organize, and share notes from anywhere.</td> </tr>
+<tr> <td><a href="https://drive.google.com" target="_blank">Google Drive</a></td> <td>A cloud storage service that allows you to save files online and access them anywhere.</td> </tr>
+<tr> <td><a href="https://www.dropbox.com" target="_blank">Dropbox</a></td> <td>A file hosting service that offers cloud storage, file synchronization, personal cloud, and client software.</td> </tr>
+</table>
+
 
 By incorporating simple activities into your daily routine, you can significantly improve your organization and efficiency.<br> Here are a few practical and easily applicable tips that can help you focus on your tasks:
 

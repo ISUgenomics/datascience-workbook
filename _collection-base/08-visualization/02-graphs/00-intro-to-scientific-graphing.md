@@ -42,7 +42,7 @@ There are two main categories of scientific graphics:
 Both data visualizations and infographics are used to present information visually. **Data visualizations are primarily focused on representing data**, while infographics are designed to communicate complex ideas and concepts.
 <span style="color: #ff3870;font-weight: 500;">Understanding the differences between these two types of scientific graphics can help researchers choose the right type of visualization for their specific needs.
 </span><br>
-**In this section we provide introduction to the types of Data Visualization**. See section <a href="https://datascience.101workbook.org/08-DataVisualization/01-IMAGES/01-scientific-graphic-design-intro" target="_blank">Introduction to Scientific Graphic Design  ⤴</a> to learn more about visualizing ideas and concepts using infographics.
+**In this section we provide introduction to the types of Data Visualization**. See section {% include target_link href=811 %} to learn more about visualizing ideas and concepts using infographics.
 
 ## Creating Data Visualizations
 
@@ -82,15 +82,16 @@ A wide range of data can be visualized using graphs and charts, including:
 
 Data visualization tools can be categorized as either **online or standalone**. Online tools are typically accessed through a web browser and hosted on a remote server, while standalone tools are installed locally on a computer.
 
-| tool | description | type |
-|------|-------------|------|
-|<a href="https://public.tableau.com/app/discover" target="_blank">Tableau Public  ⤴</a>|Tableau Public is a free data visualization software that allows users to create and publicly share **interactive and dynamic charts, graphs, maps, and dashboards**. It is easy to use and offers a wide range of customization options.|online with GUI|
-|<a href="https://" target="_blank">Microsoft Excel  ⤴</a>|Microsoft Excel is a popular spreadsheet software that includes basic data visualization tools, such as charts and graphs. It is easy to use and widely available.|standalone with GUI|
-|<a href="https://datascience.101workbook.org/08-DataVisualization/02-GRAPHS/01-GNUPLOT/01-gnuplot-basics" target="_blank">Gnuplot  ⤴</a>|GNUPlot is a free and open-source command-line tool for creating 2D and 3D plots, graphs, and charts. It runs on various platforms, including Linux, macOS, and Windows. | command line *(shell scripting)* |
-|<a href="https://r-charts.com" target="_blank">R  ⤴</a>| R is a programming language and software environment for statistical computing and graphics. It offers a wide range of data visualization tools, including charts, graphs, and maps.| command line *(R programming)* |
-|<a href="https://plotly.com/dash/workspaces/" target="_blank">Plotly  ⤴</a>|Plotly is a free online data visualization tool that allows users to create **interactive charts, graphs, and other visualizations**. It offers various Data App Workspaces including online Data Science IDE or local Jupyter notebooks (web-based).| web-based, command-line *(python programming)* |
-|<a href="https://www.highcharts.com" target="_blank">Highcharts  ⤴</a>|Highcharts is a JavaScript charting library that allows users to create **interactive charts and graphs for web pages**.|for web developers |
-|<a href="https://developers.google.com/chart" target="_blank">Google Charts  ⤴</a>|Google Charts is a free data visualization tool that allows users to create a range of **interactive charts and graphs**, including scatter plots, pie charts, and line graphs. It is designed for developers but can be used by researchers with some programming experience.| for web developers |
+<table>
+<tr> <th>tool</th> <th>description</th> <th>type</th> </tr>
+<tr> <td><a href="https://public.tableau.com/app/discover" target="_blank">Tableau Public</a></td> <td>Tableau Public is a free data visualization software that allows users to create and publicly share <b>interactive and dynamic charts, graphs, maps, and dashboards</b>. It is easy to use and offers a wide range of customization options.</td> <td>online with GUI</td> </tr>
+<tr> <td><a href="https://" target="_blank">Microsoft Excel</a></td> <td>Microsoft Excel is a popular spreadsheet software that includes basic data visualization tools, such as charts and graphs. It is easy to use and widely available.</td> <td>standalone with GUI</td> </tr>
+<tr> <td>{% include target_link href=821.1 text="Gnuplot" %}</td> <td>GNUPlot is a free and open-source command-line tool for creating 2D and 3D plots, graphs, and charts. It runs on various platforms, including Linux, macOS, and Windows.</td> <td>command line <i>(shell scripting)</i></td> </tr>
+<tr> <td><a href="https://r-charts.com" target="_blank">R</a></td> <td>R is a programming language and software environment for statistical computing and graphics. It offers a wide range of data visualization tools, including charts, graphs, and maps.</td> <td>command line <i>(R programming)</i></td> </tr>
+<tr> <td><a href="https://plotly.com/dash/workspaces/" target="_blank">Plotly</a></td> <td>Plotly is a free online data visualization tool that allows users to create <b>interactive charts, graphs, and other visualizations</b>. It offers various Data App Workspaces including online Data Science IDE or local Jupyter notebooks (web-based).</td> <td>web-based, command-line <i>(python programming)</i></td> </tr>
+<tr> <td><a href="https://www.highcharts.com" target="_blank">Highcharts</a></td> <td>Highcharts is a JavaScript charting library that allows users to create <b>interactive charts and graphs for web pages</b>.</td> <td>for web developers</td> </tr>
+<tr> <td><a href="https://developers.google.com/chart" target="_blank">Google Charts</a></td> <td>Google Charts is a free data visualization tool that allows users to create a range of <b>interactive charts and graphs</b>, including scatter plots, pie charts, and line graphs. It is designed for developers but can be used by researchers with some programming experience.</td> <td>for web developers</td> </tr>
+</table>
 
 
 ## How to get started?

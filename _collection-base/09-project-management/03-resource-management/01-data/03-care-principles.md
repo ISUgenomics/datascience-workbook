@@ -28,7 +28,7 @@ The <a href="https://en.wikipedia.org/wiki/CARE_Principles_for_Indigenous_Data_G
 
 <div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">The <b>CARE</b> Principles were developed to complement the <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/03-DATA/03-fair-principles" target="_blank"><b>FAIR</b></a> Principles (<b>F</b>indable, <b>A</b>ccessible, <b>I</b>nteroperable, and <b>R</b>eusable), which are all about making data easy to find, access, share, and use in the scientific world. FAIR is widely recognized in the scientific community for data management.</span>
+<br><span style="font-style:italic;">The <b>CARE</b> Principles were developed to complement the {% include target_link href=931.2 %} (<b>F</b>indable, <b>A</b>ccessible, <b>I</b>nteroperable, and <b>R</b>eusable), which are all about making data easy to find, access, share, and use in the scientific world. FAIR is widely recognized in the scientific community for data management.</span>
 </div>
 
 <div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">

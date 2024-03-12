@@ -132,16 +132,13 @@ The role of remote communication tools becomes indispensable. They ensure that c
 <span style="color: #ff3870;font-weight: 500;">
 A combination of platforms like Slack, Zoom, GitHub and Microsoft Office 365 can facilitate day-to-day communication and task management. </span> Learn more about selected tools from dedicated hands-on tutorials:
 
-* <a href="https://datascience.101workbook.org/09-ProjectManagement/03-COMMUNICATION/01-team-communication-tools" target="_blank">Team communication Tools</a>
-  * <a href="https://datascience.101workbook.org/09-ProjectManagement/03-COMMUNICATION/02-intro-to-slack" target="_blank">Introduction to Slack</a>
-
-
-* <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/03-repo-hosting-platforms" target="_blank">Online Hosting Platforms for GIT Repositories</a>
-  * <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/04-intro-to-github" target="_blank">Introduction to GitHub</a>
-
-
-
-* <a href="https://datascience.101workbook.org/03-SetUpComputingMachine/02A-basic-office-software" target="_blank">Basic Office Software</a>
+<ul>
+<li> {% include target_link href=921 %} </li>
+  <ul><li> {% include target_link href=922 %} </li></ul>
+<li> {% include target_link href=932.3 %} </li>
+  <ul><li> {% include target_link href=932.4 %} </li></ul>
+<li> {% include target_link href=221 %}</li>
+</ul>
 
 ---
 # Benefits of Collaboration in Research Projects

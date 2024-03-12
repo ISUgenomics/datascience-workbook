@@ -74,7 +74,7 @@ This is a list of the most commonly used Git commands in command line and VSCode
 
 # VS Code Git Commands
 
-<a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01A-tutorial-VSCode" target="_blank">VSCode ⤴</a> has its internal terminal where you can use the command line Git commands. In addition, VSCode also has a command palette `Ctrl+Shift+P` which can be used for Git and other commands. Following is a list of most common commands in that palette, additional commands can be searched for within the palette.
+{% include target_link href=411 %} has its internal terminal where you can use the command line Git commands. In addition, VSCode also has a command palette `Ctrl+Shift+P` which can be used for Git and other commands. Following is a list of most common commands in that palette, additional commands can be searched for within the palette.
 
 | Category | Command        |  Function   |
 |------|----------------|-------------|

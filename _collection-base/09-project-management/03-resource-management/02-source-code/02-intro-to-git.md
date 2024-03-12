@@ -33,7 +33,7 @@ In the simplest of terms, VCS are the toolkits for programmers that keep track o
 <i>Imagine you're working on a big project, and suddenly something breaks. With VCS, you can hop back to the past version where things worked just fine! Intriguing, right?</i>
 </div>
 
-<span style="color: #ff3870;font-weight: 500;"> To better understand what a VCS is, you can refer back to our previous section in this workbook, <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/01-storage-version-control" target="_blank">Storage & Version Control  ⤴</a>, which comprehensively covers this topic.</span>
+<span style="color: #ff3870;font-weight: 500;"> To better understand what a VCS is, you can refer back to our previous section in this workbook, {% include target_link href=932.1 %} which comprehensively covers this topic.</span>
 
 <a href="https://git-scm.com/" target="_blank">Git  ⤴</a>, unlike other VCSs, is a distributed version control system. In a non-techie lingo, it means that **every person contributing to a project gets their copy of the entire project**. *(It's like having your cake and eating it too!)* This sets Git apart from other VCS, as it doesn't rely on a central server to store all the versions of a project. Instead, every developer's working copy of the code is also a repository that can contain the full history and version tracking capabilities. So, the beauty of Git is that **it allows you to work offline and work concurrently with other developers without interrupting each other's contributions**.
 
@@ -405,10 +405,8 @@ Branching commands are essential when you want to experiment with new features o
 ### • *More advanced*
 
 <div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Remember, Git is a very powerful tool with a plethora of commands. This was just a basic list for beginners, and there are many more commands and options to explore as you become more comfortable with using Git. Then it may be helpful for you to visit a <b>more comprehensive list of <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02A-git-cheatsheet" target="_blank">Git commands  ⤴</a> CheatSheet</b>, also provided in this workbook.
-</span>
+<span style="font-weight:800;">PRO TIP:</span><br>
+Remember, Git is a very powerful tool with a plethora of commands. This was just a basic list for beginners, and there are many more commands and options to explore as you become more comfortable with using Git. Then it may be helpful for you to visit a more comprehensive list of {% include target_link href=932.21 %} (cheatsheet) also provided in this workbook.
 </div>
 
 ---
@@ -681,7 +679,7 @@ In this section of the tutorial, we will be focusing on working with remote repo
 
 If you don't already have one, you'll need a GitHub account to create and manage remote repositories. <br>
 **You can sign up for a free account on the <a href="https://github.com/" target="_blank">GitHub homepage  ⤴</a>.** <br>
-<span style="color: #ff3870;font-weight: 500;"> If you need a detailed guide for this step,</span> please see section <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/04-intro-to-github#how-to-get-a-github-account" target="_blank">How to get a Github account  ⤴</a> in the tutorial <i><b>"Introduction to GitHub"</b></i>, available in this workbook.
+<span style="color: #ff3870;font-weight: 500;"> If you need a detailed guide for this step,</span> please see section {% include target_link href=932.4 section="#how-to-get-a-github-account" text="How to get a Github account?" %} in the tutorial <i><b>"Introduction to GitHub"</b></i>, available in this workbook.
 
 ![01-github_website.png]({{ images_path }}/01-github_website.png)
 
@@ -1165,8 +1163,8 @@ Before merging, it's important to review and test your changes thoroughly to ens
 <span style="font-weight:800;">WARNING:</span>
 <br><span style="font-style:italic;">
 Please note that you might not have permission to push directly to the original repository, so you may need to: <br>
-<li><a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02-intro-to-git#-fork-the-entire-repo">Fork the repo</a> first, which creates your own copy of the repository on GitHub.</li>
-<li><a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02-intro-to-git#14-submit-pull-request">Submit Pull Request</a>, that allows you to propose changes to the administrators of the original repo.</li>
+<li>{% include target_link href=932.2 section="#-fork-the-entire-repo" text="Fork the repo" %} first, which creates your own copy of the repository on GitHub.</li>
+<li>{% include target_link href=932.2 section="#14-submit-pull-request" text="Submit Pull Request" %} that allows you to propose changes to the administrators of the original repo.</li>
 </span>
 </div>
 

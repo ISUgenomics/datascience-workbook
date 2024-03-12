@@ -36,12 +36,8 @@ On Linux systems, **Gnuplot** is usually pre-installed. The other operating syst
 <br><span style="font-style:italic;">
 If you don't do NOT know what is terminal or command-line, start with the tutorial(s) that will give you a good introduction:
 </span>
-<br> •
-<span style="font-weight:800;">TERMINAL</span>,
-<a href="https://datascience.101workbook.org/02-IntroToCommandLine/01-terminal-basics">Terminal: the command-line interface</a>
-<br> •
-<span style="font-weight:800;">COMMAND-LINE</span>,
-<a href="https://datascience.101workbook.org/02-IntroToCommandLine/02-intro-to-unix-shell">Introduction to Unix Shell</a>
+<li> <span style="font-weight:800;">TERMINAL:</span> {% include target_link href=310 %} </li>
+<li> <span style="font-weight:800;">COMMAND-LINE:</span> {% include target_link href=320 %} </li>
 </div>
 
 ### on Linux (*Debian, Ubuntu*)

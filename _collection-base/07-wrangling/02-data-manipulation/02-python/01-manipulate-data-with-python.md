@@ -64,51 +64,52 @@ Before starting data manipulation with Python, there are several steps that need
 ### 1. Setting up a Python DE
 
 Before installing Python, you need to choose an Integrated Development Environment (IDE) to write and execute your code. Some popular Python IDEs include PyCharm, Jupyter Notebook, and Spyder. Choose an IDE that best fits your needs and install it on your computer. <br>
-<span style="color: #ff3870;font-weight: 500;"> Learn more about Python IDEs by following the hands-on tutorials in the <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02-python-programming-environment" target="_blank">Python Programming Environment(s)  ⤴</a> section of this workbook:</span>
-* <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-python-online-console" target="_blank"><b>Online Console</b>: simple Python code in a browser (without installation)  ⤴</a>
-* <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-python-online-jupyter-colab" target="_blank"><b>Online Notebook</b>: interactive Python on Try-jupyter and Colab (no installation)  ⤴</a>
-* <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-python-setup-locally" target="_blank">Local Python setup on your computing machine (installation needed)  ⤴</a>
-  * <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02B-python-terminal-shell" target="_blank"><b>Shell & IDLE</b>: create Python code in a terminal or simple IDE (beginner)  ⤴</a>
-  * <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02C-python-text-editor" target="_blank">Text editors: create Python code in terminal text files (intermediate)  ⤴</a>
-  * <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02D-python-jupyter-notebook" target="_blank"><b>Jupyter Lab</b>: create an interactive Python notebook (advanced)  ⤴</a>
-  * <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02E-python-pycharm-ide" target="_blank"><b>PyCharm</b>: IDE for Professional Python Developers (professional)  ⤴</a>
-
+<span style="color: #ff3870;font-weight: 500;"> Learn more about Python IDEs by following the hands-on tutorials in the</span> {% include target_link href=420 %} section of this workbook:
+<ul>
+<li> {% include target_link href=421 %} <i>(without installation)</i> </li>
+<li> {% include target_link href=422 %} <i>(no installation)</i> </li>
+<li> {% include target_link href=423 %} <i>(installation needed)</i> </li><ul>
+  <li> {% include target_link href=424 %} <i>(beginner)</i> </li>
+  <li> {% include target_link href=425 %} <i>(intermediate)</i> </li>
+  <li> {% include target_link href=426 %} <i>(advanced)</i> </li>
+  <li> {% include target_link href=427 %} <i>(professional)</i> </li></ul>
+</ul>
 
 ### 2. Python installation
 
 After setting up your IDE, you need to install Python on your computer. You can download the latest version of Python from the official website (https://www.python.org/downloads/). Choose the appropriate version for your operating system and follow the installation instructions. <br>
-<span style="color: #ff3870;font-weight: 500;"> Learn more about Python Iinstallation options by following the hands-on tutorial in this workbook:</span>
-* <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-python-setup-locally" target="_blank">Local Python setup on your computing machine (installation needed)  ⤴</a>
+<span style="color: #ff3870;font-weight: 500;"> Learn more about Python Installation options by following the hands-on tutorial in this workbook:</span>
+* {% include target_link href=423 %} <i>(installation needed)</i>
 
 ### 3. Intro to Python programming
 
 Once you have installed Python, you need to learn the basics of Python programming. This includes understanding the structure of algorithms, data types, control structures, functions, and modules. You can find many free online resources to learn Python, including courses, tutorials, and documentation. <br>
-<span style="color: #ff3870;font-weight: 500;"> Learn more about Python programming by following the hands-on tutorials in the <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/01-introduction-to-python" target="_blank">Introduction to Python Programming  ⤴</a> section of this workbook:</span>
-* <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/03-tutorial-read-write-files" target="_blank">Open-Close & Read-Write of Data Files  ⤴</a>
-* <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/04-tutorial-python-manage-data-json-string" target="_blank">JSON Module - Encoding & Decoding JSON Data  ⤴</a>
-* <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/05-tutorial-python-round-abs-data-math-module" target="_blank">Math Module - Various Mathematical Functions  ⤴</a>
+<span style="color: #ff3870;font-weight: 500;"> Learn more about Python programming by following the hands-on tutorials in the</span> {% include target_link href=531 %} section of this workbook:
+* {% include target_link href=533 %}
+* {% include target_link href=534 %}
+* {% include target_link href=535 %}
 
 
 ### 4. Learning about Python libraries
 
 Python has several libraries specifically designed for data manipulation, such as NumPy, Pandas, and Matplotlib. You need to learn about these libraries and their functions before you start data manipulation. You can find many tutorials and online courses that focus on these libraries. <br>
-<span style="color: #ff3870;font-weight: 500;"> Learn more about Python libraries for data manipulation by following the hands-on tutorials in the <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/01-introduction-to-python" target="_blank">Introduction to Python Programming  ⤴</a> section of this workbook:</span>
-* <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/06-tutorial-python-data-manipulation-pandas" target="_blank">Pandas Library - Data Structure Manipulation Tool  ⤴</a>
-* <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/07-tutorial-python-array-manipulation-numpy" target="_blank">Numpy Library - Multi-Dimensional Arrays Parser  ⤴</a>
-* <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/08-tutorial-python-apply-statistics-scipy" target="_blank">SciPy Library - Algorithms for Scientific Computing  ⤴</a>
+<span style="color: #ff3870; font-weight: 500;"> Learn more about Python libraries for data manipulation by following the hands-on tutorials in the</span> {% include target_link href=531 %} section of this workbook:
+* {% include target_link href=536 %}
+* {% include target_link href=537 %}
+* {% include target_link href=538 %}
 
 
 ### 5. Getting practical experience
 
 Finally, you need to practice what you have learned by working on hands-on tutorials. This will help you apply your knowledge of Python programming and data manipulation libraries to real-world problems. There are many hands-on tutorials in this workbook! <br>
-<span style="color: #ff3870;font-weight: 500;"> Start manipulating data files with Python by following the hands-on tutorials in this workbook:</span>
-* SECTION: <a href="https://datascience.101workbook.org/07-DataParsing/02-DATA-MANIPULATION/02-PYTHON/01-manipulate-data-with-python" target="_blank">Manipulating Text Files with Python  ⤴</a>
-  * <a href="https://datascience.101workbook.org/07-DataParsing/02-DATA-MANIPULATION/02-PYTHON/02-tutorial-read-write-split-select-data" target="_blank">Read, Write, Split, Select Data  ⤴</a>
+<span style="color: #ff3870; font-weight: 500;"> Start manipulating data files with Python by following the hands-on tutorials in this workbook:</span>
+* SECTION: {% include target_link href=722.1 %}
+  * {% include target_link href=722.2 %}
 
 
-* SECTION: <a href="https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/00-data-wrangling-apps" target="_blank">Data Wrangling: ready-made apps  ⤴</a>
-  * <a href="https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/01-merge-data-py" target="_blank">Merge files by common column (python)  ⤴</a>
-  * <a href="https://datascience.101workbook.org/07-DataParsing/03-DATA-WRANGLING-APPS/02-slice-or-bin-data-py" target="_blank">Aggregate data over slicing variations (python)  ⤴</a>
+* SECTION: {% include target_link href=731 %}
+  * {% include target_link href=732 %}
+  * {% include target_link href=733 %}
 
 
-* SECTION: <a href="https://datascience.101workbook.org/08-DataVisualization/02-GRAPHS/02-PYTHON/04-plotly-examples-in-jupyterlab" target="_blank">Plotly Graphing - Interactive Examples in the JupyterLab  ⤴</a>
+* SECTION: {% include target_link href=822.01 %}

@@ -530,37 +530,41 @@ Together, these digital tools form a critical infrastructure for advancing repro
 
 ## Version Control Systems
 
-<a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/01-storage-version-control" target="_blank">Version control systems  ⤴</a> are essential for tracking changes in research projects, facilitating collaboration, and ensuring the integrity of research data and code over time.
+{% include target_link href=932.1 text="Version control systems" %} are essential for tracking changes in research projects, facilitating collaboration, and ensuring the integrity of research data and code over time.
 
-| tool      | tutorial                | applications                  |
-|-----------|-------------------------|-------------------------------|
-| <a href="https://git-scm.com " target="_blank">Git</a> | <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/02-intro-to-git" target="_blank">GIT - a distributed version control system</a><br> <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/02A-git-cheatsheet" target="_blank">GIT Commands</a> | Distributed version control system widely used for source code management.  |
-| <a href="https://subversion.apache.org" target="_blank">SVN</a> | <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/01-storage-version-control#-subversion-svn" target="_blank">Subversion (SVN)</a> | Centralized version control system designed to keep track of changes in files and directories. |
+<table>
+<tr> <th>tool</th> <th>tutorial</th> <th>applications</th> </tr>
+<tr> <td><a href="https://git-scm.com " target="_blank">Git</a></td> <td>{% include target_link href=932.2 %} <br> {% include target_link href=932.21 %}</td> <td>Distributed version control system widely used for source code management.</td> </tr>
+<tr> <td><a href="https://subversion.apache.org" target="_blank">SVN</a></td> <td>{% include target_link href=932.1 section="#-subversion-svn" text="Subversion (SVN)" %}</td> <td>Centralized version control system designed to keep track of changes in files and directories.</td> </tr>
+</table>
+
 
 
 ## Shared Repositories
 
-<a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/03-repo-hosting-platforms" target="_blank">Repositories for sharing datasets and code  ⤴</a> are crucial for reproducibility, enabling researchers to access, use, and cite the exact datasets and software versions used in research studies.
+{% include target_link href=932.3 %} are crucial for reproducibility, enabling researchers to access, use, and cite the exact datasets and software versions used in research studies.
 
-| tool      | tutorial                | applications                  |
-|-----------|-------------------------|-------------------------------|
-| <a href="https://github.com" target="_blank">GitHub</a> | <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/04-intro-to-github" target="_blank">Introduction_to_GitHub</a><br> <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/04A-github-advanced" target="_blank">GitHub for advanced users</a> | Hosting for software development and version control using Git, with features for collaboration, issue tracking, and code review. *GitHub is the most commonly used platform for hosting and collaborating on open-source projects.* |
-| <a href="https://zenodo.org" target="_blank">Zenodo</a> | <a href="https://" target="_blank"> </a> | General-purpose open-access repository developed under the European OpenAIRE program, for research data and software. |
-| <a href="https://osf.io" target="_blank">OSF</a> | <a href="https://" target="_blank"> </a> | Open Science Framework supports the entire research lifecycle: planning, execution, reporting, archiving, and discovery. |
+<table>
+<tr> <th>tool</th> <th>tutorial</th> <th>applications</th> </tr>
+<tr> <td><a href="https://github.com" target="_blank">GitHub</a></td> <td>{% include target_link href=932.4 %} <br> {% include target_link href=932.41 %}</td> <td>Hosting for software development and version control using Git, with features for collaboration, issue tracking, and code review. <i>GitHub is the most commonly used platform for hosting and collaborating on open-source projects.</i></td> </tr>
+<tr> <td><a href="https://zenodo.org" target="_blank">Zenodo</a></td> <td> </td> <td>General-purpose open-access repository developed under the European OpenAIRE program, for research data and software.</td> </tr>
+<tr> <td><a href="https://osf.io" target="_blank">OSF</a></td> <td> </td> <td>Open Science Framework supports the entire research lifecycle: planning, execution, reporting, archiving, and discovery.</td> </tr>
+</table>
 
 
 ## Open-source Tools
 
 Open-source statistical and computational tools offer powerful, transparent, and community-validated methods for data analysis, contributing significantly to reproducible research practices.
 
-| tool      | tutorial                | applications                  |
-|-----------|-------------------------|-------------------------------|
-| <a href="https://www.r-project.org" target="_blank">R</a> | <a href="https://datascience.101workbook.org/05-IntroToProgramming/04-R/01-introduction-to-R" target="_blank">Introduction to R programming</a><br> *and <a href="https://datascience.101workbook.org/sitemap.html" target="_blank">more  ⤴</a>* | Statistical computing and graphics, with a wide range of packages for various data analysis tasks. |
-| <a href="https://www.python.org" target="_blank">Python</a> | <a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/01-introduction-to-python" target="_blank">Introduction to Python Programming</a><br> *and <a href="https://datascience.101workbook.org/sitemap.html" target="_blank">more  ⤴</a>* | General-purpose programming language with extensive libraries for data analysis, machine learning, and scientific computing. |
-| <a href="https://julialang.org" target="_blank">Julia</a> | <a href="https://datascience.101workbook.org/05-IntroToProgramming/05-JULIA/01-introduction-to-julia" target="_blank">Introduction to Julia Programming</a><br> *and <a href="https://datascience.101workbook.org/sitemap.html" target="_blank">more  ⤴</a>* | High-level, high-performance dynamic programming language for technical computing, with syntax that is familiar to users of other technical computing environments. |
-| <a href="https://jupyter.org" target="_blank">Jupyter Notebooks</a> | <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-jupyter-basics" target="_blank">Jupyter: Interactive Web-Based Multi-Kernel DE</a><br> *and <a href="https://datascience.101workbook.org/sitemap.html" target="_blank">more  ⤴</a>* | Open-source web application that allows you to create and share documents that contain live code, equations, visualizations, and narrative text. |
+<table>
+<tr> <th>tool</th> <th>tutorial</th> <th>applications</th> </tr>
+<tr> <td><a href="https://www.r-project.org" target="_blank">R</a></td> <td>{% include target_link href=541 %} and <a href="https://datascience.101workbook.org/sitemap.html" target="_blank">more  ⤴</a></td> <td>Statistical computing and graphics, with a wide range of packages for various data analysis tasks.</td> </tr>
+<tr> <td><a href="https://www.python.org" target="_blank">Python</a></td> <td>{% include target_link href=531 %} and <a href="https://datascience.101workbook.org/sitemap.html" target="_blank">more  ⤴</a></td> <td>General-purpose programming language with extensive libraries for data analysis, machine learning, and scientific computing.</td> </tr>
+<tr> <td><a href="https://julialang.org" target="_blank">Julia</a></td> <td>{% include target_link href=551 %} and <a href="https://datascience.101workbook.org/sitemap.html" target="_blank">more  ⤴</a></td> <td>High-level, high-performance dynamic programming language for technical computing, with syntax that is familiar to users of other technical computing environments.</td> </tr>
+<tr> <td><a href="https://jupyter.org" target="_blank">Jupyter Notebooks</a></td> <td>{% include target_link href=412 %} and <a href="https://datascience.101workbook.org/sitemap.html" target="_blank">more  ⤴</a></td> <td>Open-source web application that allows you to create and share documents that contain live code, equations, visualizations, and narrative text.</td> </tr>
+</table>
+<br>
 
----
 
 # Practice Your Skills
 
@@ -587,11 +591,10 @@ Familiarize yourself with Git for version control to manage changes in your rese
 <li>Make further changes to your file and commit them.</li>
 <li>Then, use <code>git log</code> to view the history of changes.</li>
 <div style="background: #cff4fc; padding: 15px; margin-top: 10px; font-size: 18px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-To see a more detailed step-by-step guide with graphical aids to complete this exercise, navigate to tutorial <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/02-intro-to-git#gsc.tab=0" target="_blank">GIT - a distributed version control system  ⤴</a> and follow the steps in the hands-on sections:
-<li><a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/02-intro-to-git#1-install-git" target="_blank">Install Git  ⤴</a></li>
-<li><a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/02-intro-to-git#working-with-local-repos" target="_blank">Working with Local Repos  ⤴</a></li></span>
+<span style="font-weight:800;">PRO TIP:</span><br>
+To see a more detailed step-by-step guide with graphical aids to complete this exercise, navigate to tutorial {% include target_link href=932.2 %} and follow the steps in the hands-on sections:
+<li>{% include target_link href=932.2 section="#1-install-git" text="Install Git" %} </li>
+<li>{% include target_link href=932.2 section="#working-with-local-repos" text="Working with local repos" %} </li>
 </div>
 </div>
 
@@ -615,9 +618,8 @@ Create a Jupyter Notebook that integrates code, outputs, and narrative, showcasi
 <li>Add separate <b>markdown cells</b> to explain each step, including your thought process and interpretation of results.</li>
 <li>Below each markdown cell include <b>code cells</b> to load a dataset and perform simple analyses (you will use them in Exercise 3).</li>
 <div style="background: #cff4fc; padding: 15px; margin-top: 10px; font-size: 18px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-To see a more detailed step-by-step guide with graphical aids to complete this exercise, navigate to tutorial <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-jupyter-basics" target="_blank">Jupyter: Web-Based Programming Interface  ⤴</a> and follow the installation steps in the <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-jupyter-basics#installing-jupyter" target="_blank">Installing Jupyter  ⤴</a> hands-on section. Then jump to <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-tutorial-jupyter-lab" target="_blank">Getting Started with JupyterLab  ⤴</a> tutorial to launch Jupyter interface, learn about components in the GUI, create new notebook and add cells of various types. To start using rich text markup in your documentation, check out the <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/02-DOCUMENTATION/05-intro-to-markdown" target="_blank">Introduction to Markdown  ⤴</a> tutorial.  </span>
+<span style="font-weight:800;">PRO TIP:</span><br>
+To see a more detailed step-by-step guide with graphical aids to complete this exercise, navigate to tutorial {% include target_link href=412 %} and follow the installation steps in the {% include target_link href=412 section="#installing-jupyter" text="Installing Jupyter" %} hands-on section. Then jump to {% include target_link href=413 %} tutorial to launch Jupyter interface, learn about components in the GUI, create new notebook and add cells of various types. To start using rich text markup in your documentation, check out the {% include target_link href=933.5 %} tutorial.
 </div>
 </div>
 
@@ -714,23 +716,21 @@ plt.show()
  &emsp; <i>(You can draw inspiration from the code block instructions provided in the earlier steps of this exercise.)</i>
 <li>Save your script or notebook file.</li>
 <div style="background: #cff4fc; padding: 15px; margin-top: 10px; font-size: 18px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+<span style="font-weight:800;">PRO TIP:</span><br>
 To see a more detailed step-by-step guide with graphical aids to complete this exercise, explore the following tutorials:
-<li><a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-tutorial-jupyter-lab" target="_blank">Getting Started with JupyterLab on a local machine  ⤴</a></li>
-<li><a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02-python-programming-environment" target="_blank">Python Programming Environment(s)  ⤴</a></li>
-<li><a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/01-introduction-to-python" target="_blank">Introduction to Python Programming  ⤴</a></li>
-<li><a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/06-tutorial-python-data-manipulation-pandas" target="_blank">Pandas Library - Data Structure Manipulation Tool  ⤴</a></li><br>
-<li><a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03A-rstudio-basics" target="_blank">RStudio: Integrated Environment for R Programming  ⤴</a></li>
-<li><a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03-r-programming-environment" target="_blank">R Programming Environment(s)  ⤴</a></li>
-<li><a href="https://datascience.101workbook.org/05-IntroToProgramming/04-R/01-introduction-to-R" target="_blank">Introduction to R programming  ⤴</a></li>
-<li><a href="https://datascience.101workbook.org/05-IntroToProgramming/04-R/03-ggplot-R-plotting" target="_blank">Ggplot2 - R package for customizable graphs and charts  ⤴</a></li>
-</span>
+<li>{% include target_link href=413 %} </li>
+<li>{% include target_link href=420 %} </li>
+<li>{% include target_link href=531 %} </li>
+<li>{% include target_link href=536 %} </li><br>
+<li>{% include target_link href=431 %} </li>
+<li>{% include target_link href=430 %} </li>
+<li>{% include target_link href=541 %} </li>
+<li>{% include target_link href=544 %} </li>
 </div>
 </div>
 
 
-### <i><span style="color: #EC8000; ">E4: Share Your Work with Collaboartors</span></i>
+### <i><span style="color: #EC8000; ">E4: Share Your Work with Collaborators</span></i>
 
 This exercise is designed to highlight the importance of collaboration and community engagement in ensuring reproducibility and quality in research.
 
@@ -761,8 +761,7 @@ Explore collaborative features of GitHub, such as issues and pull requests, to u
 <b>5. Fork a Repository:</b> Explore other users' repositories related to your research interests, fork one, and consider contributing by adding improvements or additional analysis.<br>
 <b>6. Engage with the Community:</b> Participate in discussions, open issues for any bugs you find, or offer solutions to existing issues. Collaboration is key to advancing reproducible research.
 <div style="background: #cff4fc; padding: 15px; margin-top: 10px; font-size: 18px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-To see a more detailed step-by-step guide with graphical aids to complete this exercise, navigate to tutorial <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/02-intro-to-git#gsc.tab=0" target="_blank">GIT - a distributed version control system  ⤴</a> and follow the steps in the <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/02-intro-to-git#working-with-remote-repos" target="_blank">Working with Remote Repos  ⤴</a> hands-on section. You can engage further by exploring the <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/01-SOURCE-CODE/02-intro-to-git#collaborating-on-projects" target="_blank">Collaborating on Projects  ⤴</a> section.</span>
+<span style="font-weight:800;">PRO TIP:</span><br>
+To see a more detailed step-by-step guide with graphical aids to complete this exercise, navigate to tutorial {% include target_link href=932.2 %} and follow the steps in the {% include target_link href=932.2 section="#working-with-remote-repos" text="Working with remote repos" %} hands-on section. You can engage further by exploring the {% include target_link href=932.2 section="#collaborating-on-projects" text="Collaborating on projects" %}.
 </div>
 </div>

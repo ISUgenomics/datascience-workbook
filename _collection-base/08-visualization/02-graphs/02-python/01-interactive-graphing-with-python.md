@@ -37,14 +37,14 @@ More so, the Plotly team developed also an open-source analytical web app framew
 
 ### Types of Plotly charts
 
-The **Plotly** library offers many types of interactive charts. The image below shows just a few examples from a vast set that is constantly growing. So if you've been inspired, you'll learn more about the Plotly library and get hands-on experience using it in the **Python** coding variant by exploring the following article, [Introduction to Plotly](02-intro-to-plotly-graphs).
+The **Plotly** library offers many types of interactive charts. The image below shows just a few examples from a vast set that is constantly growing. So if you've been inspired, you'll learn more about the Plotly library and get hands-on experience using it in the **Python** coding variant by exploring the following article, {% include target_link href=822.02 %}
 
 ![types of plotly charts]({{ images_path }}/plotly-graphs-types.png)<br>
 **Figure 1.** *The categorized examples of Plotly interactive graphs.*
 
 ### Types of Dash widgets
 
-The **Dash** library offers many templates for components that facilitate building an interactive web application and user-triggered changes in the Plotly graphs. Both libraries are fully compatible. Dash's main modules include **core components** that allow loading inputs and change chart parameters. There are also **HTML** and **Bootstrap components** that simplify the creation of the page layout and facilitate the implementation of navigation events. Learn more details in the hands-on tutorial on [Introduction to Dash](03-intro-to-dash-widgets).
+The **Dash** library offers many templates for components that facilitate building an interactive web application and user-triggered changes in the Plotly graphs. Both libraries are fully compatible. Dash's main modules include **core components** that allow loading inputs and change chart parameters. There are also **HTML** and **Bootstrap components** that simplify the creation of the page layout and facilitate the implementation of navigation events. Learn more details in the hands-on tutorial on {% include target_link href=822.03 %}
 
 ![types of plotly charts]({{ images_path }}/plotly-dash-components.png)<br>
 **Figure 2.** *Examples of Dash widgets for interactive web applications, including Core, HTM, and Bootstrap components.*

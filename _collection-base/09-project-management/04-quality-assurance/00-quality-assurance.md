@@ -167,7 +167,7 @@ The components of Monitoring & Evaluation, namely `Planning`, `Monitoring`, and 
 </div>
 
 <br><span style="background-color: #e8e9e8; color: #0ba37f; font-weight: 500; padding: 5px 7px;">TUTORIAL</span>&nbsp;
-For a deep dive into real-life solutions and tools that can elevate the Monitoring & Evaluation of small to moderate scale research projects, be sure to check out our detailed tutorial on <a href="https://datascience.101workbook.org/09-ProjectManagement/03-PRODUCTIVITY/01-monitoring-evaluation" target="_blank">Monitoring & Evaluation  ⤴</a>.
+For a deep dive into real-life solutions and tools that can elevate the Monitoring & Evaluation of small to moderate scale research projects, be sure to check out our detailed tutorial on {% include target_link href=941 %}
 
 ---
 
@@ -207,7 +207,7 @@ Research Productivity is about maximizing the efficiency and outcomes of your re
 <br><span style="font-style:italic;">Boost your research productivity by embracing a culture of continuous improvement and openness to change. Regularly review your strategies for Resource Management, Prioritization, and Collaboration to find new ways to enhance efficiency and impact. Remember, the most productive researchers are those who adapt swiftly and leverage their networks effectively.</span>
 </div>
 <br><span style="background-color: #e8e9e8; color: #0ba37f; font-weight: 500; padding: 5px 7px;">TUTORIAL</span>
-Dive deeper into strategies for maximizing Research Productivity in small to moderate scale projects with our comprehensive tutorial on <a href="https://datascience.101workbook.org/09-ProjectManagement/03-PRODUCTIVITY/02-productivity" target="_blank">Enhancing Research Productivity ⤴</a>.
+Dive deeper into strategies for maximizing Research Productivity in small to moderate scale projects with our comprehensive tutorial on {% include target_link href=942 %}
 
 ---
 
@@ -253,4 +253,4 @@ Research Reproducibility is the cornerstone of credible science. It ensures that
 </div>
 
 <br><span style="background-color: #e8e9e8; color: #0ba37f; font-weight: 500; padding: 5px 7px;">TUTORIAL</span>
-To further explore how to ensure your research is reproducible, especially in small to moderate scale projects, check out our in-depth tutorial on <a href="https://datascience.101workbook.org/09-ProjectManagement/03-PRODUCTIVITY/03-reproducibility" target="_blank">Research Reproducibility ⤴</a>.
+To further explore how to ensure your research is reproducible, especially in small to moderate scale projects, check out our in-depth tutorial on {% include target_link href=943 %}

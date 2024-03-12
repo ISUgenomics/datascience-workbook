@@ -65,7 +65,7 @@ Different types of code necessitate varying documentation approaches to clarify 
 
 **3. Types of documentation**
 
-Types of documentation encompass different solutions to provide varying levels of detail and guidance for code comprehension and usage. While all developments mandate [in-code documentation](#in-code-documentation) to elucidate the purpose of specific code blocks, more complex projects further benefit from dedicated [external documentation](#external-documentation) such as readme files or comprehensive guides that shed light on the broader usage and applications.
+Types of documentation encompass different solutions to provide varying levels of detail and guidance for code comprehension and usage. While all developments mandate [in-code documentation](#in-code-documentation) to elucidate the purpose of specific code blocks, more complex projects further benefit from dedicated [external documentation](#external-documenattion) such as readme files or comprehensive guides that shed light on the broader usage and applications.
 
 | type | description |
 |------|-------------|
@@ -128,15 +128,19 @@ In-code documentation serves as a roadmap for developers, detailing the structur
 
 All forms of in-code documentation can be crafted using the same tools as those for code development, ranging from basic text editors to sophisticated integrated development environments (IDEs).
 
-| tool | type | supported languages | tutorial |
-|------|------|---------------------|----------|
-|<a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>|development environment with GUI|universal|<a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01A-tutorial-VSCode" target="_blank">tutorial  ⤴</a>|
-|<a href="https://atom.io/" target="_blank">Atom</a>|development environment  with GUI|universal|*(obsolete)*|
-|<a href="https://www.sublimetext.com/" target="_blank">Sublime Text</a>|development environment with GUI|universal|
-|<a href="https://www.eclipse.org/" target="_blank">Eclipse</a>|development environment with GUI|universal|
-|<a href="https://www.jetbrains.com/pycharm/" target="_blank">PyCharm</a>|development environment with GUI|`Python`|<a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02E-python-pycharm-ide" target="_blank">tutorial  ⤴</a>|
-|<a href="https://www.rstudio.com/" target="_blank">RStudio</a>|development environment with GUI|`R`|<a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/03A-rstudio-basics" target="_blank">tutorial  ⤴</a>|
-|<a href="https://www.gnu.org/software/nano/" target="_blank">nano</a>, <a href="https://www.vim.org/" target="_blank">vim</a>, <a href="https://midnight-commander.org/" target="_blank">mc</a>|CLI text editor, use in terminal|universal|<a href="https://datascience.101workbook.org/02-IntroToCommandLine/02B-text-files-editors" target="_blank">tutorial  ⤴</a>|
+<table>
+<tr> <th>tool</th> <th>type</th> <th>supported languages</th> <th>tutorial</th> </tr>
+<tr> <td><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></td> <td>development environment with GUI</td> <td>universal</td> <td>{% include target_link href=411 text="tutorial" %}</td> </tr>
+<tr> <td><a href="https://atom.io/" target="_blank">Atom</a></td> <td>development environment  with GUI</td> <td>universal</td> <td><i>(obsolete)</i></td> </tr>
+<tr> <td><a href="https://www.sublimetext.com/" target="_blank">Sublime Text</a></td> <td>development environment with GUI</td> <td>universal</td> <td></td> </tr>
+<tr> <td><a href="https://www.eclipse.org/" target="_blank">Eclipse</a></td> <td></td> <td>development environment with GUI</td> <td>universal</td> </tr>
+<tr> <td><a href="https://www.jetbrains.com/pycharm/" target="_blank">PyCharm</a></td> <td>development environment with GUI</td> <td>Python</td> <td>{% include target_link href=427 text="tutorial" %}</td> </tr>
+<tr> <td><a href="https://www.rstudio.com/" target="_blank">RStudio</a></td> <td>development environment with GUI</td> <td>R</td> <td>{% include target_link href=431 text="tutorial" %}</td> </tr>
+<tr> <td><a href="https://www.gnu.org/software/nano/" target="_blank">nano</a></td> <td>CLI text editor, use in terminal</td> <td>universal</td> <td>{% include target_link href=322 section="#nano--text-editor-more-like-a-gui" text="tutorial" %}</td> </tr>
+<tr> <td><a href="https://www.vim.org/" target="_blank">vim</a></td> <td>CLI text editor, use in terminal</td> <td>universal</td> <td>{% include target_link href=322 section="#vim" text="tutorial" %}</td> </tr>
+<tr> <td><a href="https://midnight-commander.org/" target="_blank">mc</a></td> <td>CLI text editor, use in terminal</td> <td>universal</td> <td>{% include target_link href=322 text="tutorial" %}</td> </tr>
+</table>
+
 
 <div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">WARNING:</span>
@@ -975,7 +979,8 @@ As a user, refer to the README when initially accessing a project to understand 
 
 README files are typically hand-written by developers, though tools like `readme-md-generator` can assist in creating a structured document. For GitHub repositories, the README file is typically written in Markdown, a lightweight and easy-to-use syntax designed for formatting plain text. When you upload or commit a Markdown-based README to GitHub, the platform automatically renders it, displaying the formatted text and any embedded media on the repository's main page. *See real-life examples: <a href="https://github.com/ISUgenomics/data_wrangling" target="_blank">data_wrangling  ⤴</a>, <a href="https://github.com/ISUgenomics/geo_utils" target="_blank">geo_utils  ⤴</a>, <a href="https://github.com/zsiki/Find-GCP" target="_blank">Find-GCP  ⤴</a>*
 
-<span style="color: #ff3870;font-weight: 500;">For a deeper dive into Markdown syntax and its various capabilities, I'd recommend checking out the dedicated tutorial on <a href="https://datascience.101workbook.org/09-ProjectManagement/02-DOCUMENTATION/02-intro-to-markdown" target="_blank">Introduction to Markdown</a> in this workbook.</span>
+<span style="color: #ff3870;font-weight: 500;">For a deeper dive into Markdown syntax and its various capabilities, I'd recommend checking out the dedicated tutorial in this workbook:</span> {% include target_link href=933.5 %}
+<br><br>
 
 **What to include in the README as a developer?**
 
@@ -1335,9 +1340,9 @@ For large-scale software documentation, where comprehensive architectural detail
 </span>
 </div>
 
-<span style="color: #ff3870;font-weight: 500;">
-For a comprehensive understanding and hands-on experience with <b>interactive notebooks</b>, I highly encourage you to delve into the tutorials presented in section <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/00-DevelopmentEnvironment-LandingPage" target="_blank">04. Development Environment</a> / <a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/01B-jupyter-basics" target="_blank">Jupyter: Interactive Web-Based Multi-Kernel DE</a>, specifically tailored for the <a href="https://jupyter.org/" target="_blank">Jupyter</a> interface.
-</span>
+<p style="color: #ff3870; font-weight: 500;">
+For a comprehensive understanding and hands-on experience with <b>interactive notebooks</b>, I highly encourage you to delve into the tutorials presented in section {% include target_link href=400 %} / {% include target_link href=412 %}
+specifically tailored for the <a href="https://jupyter.org/" target="_blank">Jupyter</a> interface.</p>
 
 ## Nextflow workflows
 
@@ -1406,7 +1411,7 @@ Platforms like GitHub Pages, Netlify, Vercel, and even Read the Docs (with some 
 
 Documentation generators **primarily rely on in-code comments and docstrings** to produce documentation. The tool parses these non-executable text from files with the source code, extracting relevant information to create structured documentation. In some cases, they can also generate documentation directly from the code itself, especially for aspects like function signatures, classes, and module structures.
 
-<span style="color: #ff3870;font-weight: 500;">Jump to section <a href="https://datascience.101workbook.org/09-ProjectManagement/02-DOCUMENTATION/04-code_documentation#in-code-documentation" target="_blank">In-code documenattion  ⤴</a> to learn how to add in-code comments and docstrings.
+<span style="color: #ff3870;font-weight: 500;">Jump to section {% include target_link href=933.4 section="#in-code-documentation" text="In-code documenattion" %} to learn how to add in-code comments and docstrings.
 </span>
 
 ###  • *SPHINX for Python docs*
@@ -1491,5 +1496,5 @@ Remember to <b>write comprehensive docstrings in your Python code using the reSt
 
 Version control platforms, such as Git and Mercurial, enable developers to track and manage changes to software projects over time while simultaneously providing features for detailed documentation. These platforms enable users to maintain a history of code modifications, branch and merge projects. They also often come integrated with documentation tools that facilitate the creation, management, and sharing of documentation related to the project in the form of **internal wikis or README files to guide users and collaborators**. As a result, they provide a unified environment where both the code and its accompanying documentation evolve in tandem, ensuring consistency and clarity for all contributors.
 
-<span style="color: #ff3870;font-weight: 500;"> I highly recommend checking out the section in the workbook dedicated to <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/01-storage-version-control" target="_blank">Storage & Version Control  ⤴</a>.</span><br>
+<span style="color: #ff3870;font-weight: 500;"> I highly recommend checking out the section in the workbook dedicated to </span> {% include target_link href=932.1 %} <br>
 *It offers practical tutorials that will equip you with hands-on skills, ensuring you can effectively utilize version control in your projects. This knowledge is invaluable for any modern software development endeavor.*

@@ -32,7 +32,7 @@ The FAIR Principles are **key guidelines in data management**, widely acknowledg
 
 <div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
 <span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">In essence, the FAIR Principles are all about <b>making the most out of data in science</b>. They ensure that data is not only easy to find and access but also that it's set up in a way that others can use it both now and in the future. It's a framework that encourages scientists to manage data in a way that's open, clear, and beneficial for the entire scientific community, much like how the <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/03-DATA/02-care-principles" target="_blank"><b>CARE Principles</b></a> advocate for fairness and justice in data governance related to Indigenous communities.</span>
+<br><span style="font-style:italic;">In essence, the FAIR Principles are all about <b>making the most out of data in science</b>. They ensure that data is not only easy to find and access but also that it's set up in a way that others can use it both now and in the future. It's a framework that encourages scientists to manage data in a way that's open, clear, and beneficial for the entire scientific community, much like how the {% include target_link href=931.3 %} advocate for fairness and justice in data governance related to Indigenous communities.</span>
 </div>
 
 

@@ -38,12 +38,8 @@ Getting started with the **Plotly** library as a **Python** developer is straigh
 <br><span style="font-style:italic;">
 If you don't have pip or Conda installed, start with the tutorial(s) that will guide you through this necessary step:
 </span>
-<br> •
-<span style="font-weight:800;">PIP INSTALLATION</span>,
-<a href="https://datascience.101workbook.org/05-IntroToProgramming/03-PYTHON/01-introduction-to-python">Introduction to Python Programming</a>
-<br> •
-<span style="font-weight:800;">CONDA INSTALLATION</span>,
-<a href="https://datascience.101workbook.org/03-SetUpComputingMachine/03A-tutorial-installations-on-mac">Install Conda on Mac OS</a>
+<li> <span style="font-weight:800;">PIP INSTALLATION:</span> {% include target_link href=531 %} </li>
+<li> <span style="font-weight:800;">CONDA INSTALLATION:</span> {% include target_link href=231 %} </li>
 </div>
 
 
@@ -104,10 +100,7 @@ jupyter lab
 <br><span style="font-style:italic;">
 If you don't have a Jupyter installed, start with the tutorial that will guide you through this necessary step:
 </span>
-<br> •
-<span style="font-weight:800;">JUPYTER INSTALLATION</span>,
-<a href="https://datascience.101workbook.org/04-DevelopmentEnvironment/02A-jupyter-basics">JupyterLab Development Environment</a>
-
+<li> <span style="font-weight:800;">JUPYTER INSTALLATION:</span> {% include target_link href=412 %} </li>
 </div>
 <br>
 

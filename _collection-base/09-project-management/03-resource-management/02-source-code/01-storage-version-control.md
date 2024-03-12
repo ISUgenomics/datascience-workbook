@@ -35,8 +35,8 @@ In general, <a href="https://git-scm.com" target="_blank">Git  ⤴</a> is consid
 
 If you are planning to contribute to any GIT-based repository, it is worthwhile for you to learn more about the useful options offered by git. In this case, follow the hands-on tutorials:
 
-* <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02-intro-to-git" target="_blank">Tutorial: GIT - a distributed version control system  ⤴</a>
-* <a href="https://datascience.101workbook.org/09-ProjectManagement/01-SOURCE-CODE/02A-git-cheatsheet" target="_blank">CheatSheet: GIT Commands  ⤴</a>
+* Tutorial: {% include target_link href=932.2 %}
+* Cheatsheet: {% include target_link href=932.21 %}
 
 In the next [section: Types of GIT-based repositories](#types-of-git-based-repositories), you will learn which popular **online platforms hosting repositories** use Git-based version control.
 

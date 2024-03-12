@@ -57,7 +57,7 @@ jupyter-dash                    # to add widgets (sliders, buttons) to Plotly ch
 
 ### Set up Conda environment
 
-If you don't have a virtual environment manager for your Python programming, consider using Conda. Simply follow the installation instructions in the [Macbook Pro Installation &rarr; Install Developer Libraries](https://bioinformaticsworkbook.org/100days/MacbookProInstallation#install-conda) tutorial to get started. Once you have Conda installed, create a new virtual environment for interactive graphing.
+If you don't have a virtual environment manager for your Python programming, consider using Conda. Simply follow the installation instructions in the {% include target_link section="#-install-conda" href=231 text="Install developer libraries / Conda" %} tutorial to get started. Once you have Conda installed, create a new virtual environment for interactive graphing.
 
 * Create virtual environment
 ```

@@ -24,7 +24,7 @@ tags: []
 
 # ComplexHeatmap in R
 The <a href="https://github.com/jokergoo/ComplexHeatmap" target="_blank">GitHub repo ⤴</a> and the <a href="https://jokergoo.github.io/ComplexHeatmap-reference/book/" target="_blank">complete reference guide ⤴</a> for the ComplexHeatmap package is available. <br>
-The complete reference document contains all the details about this package but can be overwhelming due to the amount of information. The following tutorial should get you started on using ComplexHeatmap by making simple heatmap and adding some features to it. Check out the [Intro to R ⤴](../../../05-IntroToProgramming/04-R/01-introduction-to-R.md) page to get started in learning R programming.<br>
+The complete reference document contains all the details about this package but can be overwhelming due to the amount of information. The following tutorial should get you started on using ComplexHeatmap by making simple heatmap and adding some features to it. Check out the {% include target_link href=541 %} page to get started in learning R programming.<br>
 
 ## Installation
 ComplexHeatmap package needs to be installed and loaded: <br>
