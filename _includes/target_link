@@ -2,9 +2,11 @@
 {% comment %}
   target_link.html
   Usage:
-    - href: A numeric value matching 'order' variable in a linked tutorial or a direct URL.
-    - text: The text for the link.
-    - section: (Optional) A subsection on the page to link to, preceded by '#'.
+    - href:    (required) A numeric value matching 'order' variable in a linked tutorial or a direct URL.
+    - section: (optional) A subsection on the page to link to, preceded by '#'.
+    - text:    (optional) The text for the link. By default, the title of the page matched with the order.
+    - button:  (optional) Any text or value, when provided converts link to a button.
+    - level:   (optional) Integer number (0 by default) setting the indentation (useful for bullet lists).
 {% endcomment %}
 
 
@@ -25,8 +27,13 @@
   {% assign text = include.text %}
 {% endif %}
 
+{% assign level = "" %}
+{% if include.level %}
+  {% assign level = "level-" | append: include.level %}
+{% endif %}
+
 {% if include.button %}
-  <p class="wrapper"> <a href="{{ href }}" target="_blank" class="target-link"><input type="button" value={{ text }} class="target-link-btn" /></a></p>
+  <p class="wrapper {{ level }}"> <a href="{{ href }}" target="_blank" class="target-link"><input type="button" value={{ text }} class="target-link-btn" /></a></p>
 {% else %}
-  <p class="wrapper"> <a href="{{ href }}" target="_blank" class="target-link">{{ text }}</a></p>
+  <p class="wrapper {{ level }}"> <a href="{{ href }}" target="_blank" class="target-link">{{ text }}</a></p>
 {% endif %}
