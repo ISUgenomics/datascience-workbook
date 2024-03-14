@@ -36,9 +36,9 @@ Most HPC systems run on Linux-based operating system, so **installing custom pro
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;"> If you would like to learn more about the command line interface and Linux-based operating systems start with the tutorials:<br>
-<p>{% include target_link href=310 text="Terminal - an interface for command-line operations" %}</p>
-<p>{% include target_link href=320 text="Introduction to UNIX Shell" %}</p></span>
+<br><span style="font-style:italic;"> If you would like to learn more about the command line interface and Linux-based operating systems start with the tutorials:
+<li>{% include target_link href=310 text="Terminal - an interface for command-line operations" %}</li>
+<li>{% include target_link href=320 text="Introduction to UNIX Shell" %}</li></span>
 </div><br>
 
 <b>What you can NOT do as a regular user on HPC:</b>
@@ -60,7 +60,7 @@ Most of these steps assume that you: <br>1) are installing package in a user or 
 ## Install custom software
 
 ### ***Where to install the software?***
-If you need to install software on a high-performance computing (HPC) system, there are several methods you can use, depending on the software and the HPC system. Note that global installations are not possible when you are not the superuser (root, administrator), and personal directory installations are only available to one person (see [user-only access](#-install-for-user-only-access)). If the software will be used by members of a particular group, it is a good idea to install one copy of the software available to all (see [group-wide access](#-install-for-group-wide-access)). Finally, if there is a chance that the software can serve a larger number of users from different groups, it is reasonable to ask the cluster administrators for system-wide installations (see {% include target_link href=641 section="#ask-the-system-administrator" text="How to get new software installed?" %}
+If you need to install software on a high-performance computing (HPC) system, there are several methods you can use, depending on the software and the HPC system. Note that global installations are not possible when you are not the superuser (root, administrator), and personal directory installations are only available to one person (see [user-only access](#-install-for-user-only-access)). If the software will be used by members of a particular group, it is a good idea to install one copy of the software available to all (see [group-wide access](#-install-for-group-wide-access)). Finally, if there is a chance that the software can serve a larger number of users from different groups, it is reasonable to ask the cluster administrators for system-wide installations ( see {% include target_link href=641 section="#ask-the-system-administrator" text="How to get new software installed?" %})
 
 ### • *Install for user-only access*
 Some HPC systems allow users to install software in their home directory. This is typically done by downloading the software, compiling it from source code, and installing it in a directory within the user's home directory. This method is often used for small programs because of the **limited storage space in the home directory**. Installing all the software in the home directory will quickly fill the available space, and this will result in serious dysfunctions in the operation of user's account. The recommended solution is to install programms elsewhere (i.e., in the working directory) and soft-link the installation location to the home directory.
@@ -70,8 +70,10 @@ Explore section {% include target_link href=320 section="#2-home-directory" text
 * {% include target_link href=320 section="#22-is-home-a-working-directory" text="Is HOME a working directory?" %}
 * {% include target_link href=320 section="#23-good-practices-for-home-organization" text="Good practices for HOME organization." %}
 
+<br><br>
 Follow the guide in the tutorial {% include target_link href=631 text="Setting up your home directory for data analysis" %} to learn about the file system organization on the HPC, including the principles for {% include target_link href=631 section="#your-home-folder" text="home directory" %}, {% include target_link href=631 section="#your-project-folder" text="working directory" %}, and storage space.
 
+<br>
 **Quick Guide**
 
 **0.** Avoid installing anything in your **home directory**. This is your default location when you log in, accesed with a shortcut `cd ~`.

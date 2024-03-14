@@ -195,7 +195,7 @@ The <a href="https://en.wikipedia.org/wiki/Portable_Batch_System" target="_blank
 | seff {job_ID}       | qstat -fxw {job_ID}  | provides resource usage report for a finished job |
 | salloc              | qsub -I {job_script} | starts interactive session |
 
-Learn more from the practical {% include target_link href=650 text="Introduction to job scheduling" %} tutorials (<i>including {% include target_link href=651.1 text="SLURM" %} and {% include target_link href=652.1 text="PBS" %} </i>) in the section {% include target_link href=600 text="06: High-Performance Computing (HPC)" %} of this workbook. For more, see also <a href="https://www.msi.umn.edu/slurm/pbs-conversion" target="_blank">PBS to Slurm Conversion Cheat Sheet  ⤴</a>.
+Learn more from the practical {% include target_link href=650 text="Introduction to job scheduling" %} tutorials ( including {% include target_link href=651.1 text="SLURM" %} and {% include target_link href=652.1 text="PBS" %}) in the section {% include target_link href=600 text="06: High-Performance Computing (HPC)" %} of this workbook. For more, see also <a href="https://www.msi.umn.edu/slurm/pbs-conversion" target="_blank">PBS to Slurm Conversion Cheat Sheet  ⤴</a>.
 
 ### *5.  Remote access tools*
 Tools like `ssh`, `telnet` and `rlogin` are often available, which allow users to remotely access and control other systems on the network. Learn more about SSH connection from the practical tutorial {% include target_link href=623 text="Secure Shell Connection (SSH)" %} available in section {% include target_link href=600 text="06: High-Performance Computing (HPC)" %} of this workbook.
@@ -305,8 +305,9 @@ The HPC administrator have access to the information on all the software install
 
 ### • *How to get new software installed?*
 
-1. Check that the software is not already installed *(follow the guide in this tutorial)*
-2. Consider the following criteria:
+**1.** Check that the software is not already installed *(follow the guide in this tutorial)*
+
+**2.** Consider the following criteria:
   * if you think that the new software will be useful to many more users <br>
 <i>or</i>
   * the software is licensed <br>
@@ -315,5 +316,4 @@ The HPC administrator have access to the information on all the software install
 If the answer to any is yes, contact the HPC administrator and submit a request for software installation. <br>
 Otherwise, go to step 3.
 
-
-3. Go to the {% include target_link href=644 text="Installing custom programs in user space" %} tutorial to learn how to install the necessary software yourself.
+**3.** Go to the {% include target_link href=644 text="Installing custom programs in user space" %} tutorial to learn how to install the necessary software yourself.

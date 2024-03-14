@@ -38,6 +38,7 @@ In this section, we will cover the process of setting up Python on a local machi
 * {% include target_link href=722.1 text="Manipulating data files with Python" %}
 * {% include target_link href=822.01 text="Plotly-Dash: interactive plotting with Python" %}
 
+<br><br>
 **Sections in this tutorial:**
 
 1. [Get Python on your local machine](#1-get-python-on-your-local-machine)
@@ -324,22 +325,23 @@ Here are some of the reasons **why choosing the right development environment is
 
 Choosing the **development environment for Python** projects depends on personal preferences, operating systems, and the specific requirements of the project. Some of the best choices include:
 * <a href="https://www.jetbrains.com/pycharm/" target="_blank"><b>PyCharm</b>  ⤴</a> is a powerful and popular development environment for Python <br>
-<span style="color: #ff3870;font-weight: 500;">Learn more from the hands-on tutorial: {% include target_link href=427 text="PyCharm: IDE for professional Python developers" %} </span>
+<span style="color: #ff3870;font-weight: 500;">Learn more from the hands-on tutorial:</span> {% include target_link href=427 text="PyCharm: IDE for professional Python developers" %}
 
 * <a href="https://code.visualstudio.com/" target="_blank"><b>Visual Studio Code</b> (VSC)  ⤴</a> is a lightweight and versatile code editor that can be used for Python development <br>
-<span style="color: #ff3870;font-weight: 500;">Learn more from the hands-on tutorial: {% include target_link href=411 text="Visual Studio Code: multi-language integrated DE (VSC)" %} </span>
+<span style="color: #ff3870;font-weight: 500;">Learn more from the hands-on tutorial:</span> {% include target_link href=411 text="Visual Studio Code: multi-language integrated DE (VSC)" %}
 
-* <a href="https://jupyter.org/" target="_blank"><b>Jupyter Notebook</b>  ⤴</a> is a web-based development environment that is ideal for Python-based data science <br>
-<span style="color: #ff3870;font-weight: 500;">Learn more from the hands-on tutorial: {% include target_link href=412 text="Jupyter: interactive web-based multi-kernel DE" %} </span><br>
-  * {% include target_link href=413 text="Getting started with JupyterLab on a local machine" %} <br>
-  * {% include target_link href=414 text="Getting started with Jupyter Notebook on HPC systems" %} <br>
-  * {% include target_link href=426 text="Jupyter Lab: create an interactive Python notebook" %}
-
+<ul><li> <a href="https://jupyter.org/" target="_blank"><b>Jupyter Notebook</b>  ⤴</a> is a web-based development environment that is ideal for Python-based data science <br>
+<span style="color: #ff3870;font-weight: 500;">Learn more from the hands-on tutorial:</span> {% include target_link href=412 text="Jupyter: interactive web-based multi-kernel DE" %}</li>
+<ul>
+  <li> {% include target_link href=413 level=1 %} </li>
+  <li> {% include target_link href=414 %} </li>
+  <li> {% include target_link href=426 %} </li>
+</ul></ul>
 
 * <a href="https://replit.com/" target="_blank"><b>Repl.it</b>  ⤴</a> is an online development environment that supports multiple programming languages, including Python. **Note:** *It requires to sign up, a free plan includes 0.5 GB of account storage.*
 
 * <a href="https://www.vim.org/" target="_blank"><b>Vim</b>  ⤴</a> is a highly customizable and powerful in-terminal code editor <br>
-<span style="color: #ff3870;font-weight: 500;">Learn more from the hands-on tutorial: {% include target_link href=322 text="Command Line text files editors: nano, vim" %} </span>
+<span style="color: #ff3870;font-weight: 500;">Learn more from the hands-on tutorial:</span> {% include target_link href=322 text="Command Line text files editors: nano, vim" %}
 
 **All of them can be used in Windows, macOS, and Linux.** <br>
 Follow a discussion on Python IDE - <a href="https://realpython.com/python-ides-code-editors-guide/" target="_blank">https://realpython.com/python-ides-code-editors-guide/  ⤴</a>
@@ -628,7 +630,7 @@ docker build -t myimage:latest -f MyDockerfile .
 <i>This command specifies that the Dockerfile is named "MyDockerfile" and is located in the current directory (.), and it sets the name of the resulting image to "myimage" with the latest tag.</i>
 </div><br>
 
-<span style="color: #ff3870;font-weight: 500;">Learn more about Docker containers and Docker graphical user interface (GUI) from the practical tutorial {% include target_link href=672.1 text="Docker - accelerated container application development" %} available in the {% include target_link href=670 text="Introduction to containers" %} section of this workbook.</span>  
+<span style="color: #ff3870;font-weight: 500;">Learn more about Docker containers and Docker graphical user interface (GUI) from the practical tutorial</span> {% include target_link href=672.1 text="Docker - accelerated container application development" %} available in the {% include target_link href=670 text="Introduction to containers" %} section of this workbook.  
 
 ---
 

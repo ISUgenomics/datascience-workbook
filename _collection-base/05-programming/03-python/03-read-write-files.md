@@ -27,7 +27,7 @@ tags: []
 * Thirdly, you should have a Python Integrated **Development Environment** (IDE) set up on your computer, e.g., PyCharm or JupyterLab or any text editor.  <br>
 <i>Learn more from the practical tutorial</i> {% include target_link href=420 %}
 * Finally, you should have a **basic understanding of Python** programming.  <br>
-<i>Learn more from the practical tutorial</i> {% include target_link href=531 %} 
+<i>Learn more from the practical tutorial</i> {% include target_link href=531 %}
 
 # Introduction
 
@@ -455,7 +455,7 @@ with open('example.txt', 'w') as f:
 When working with text files, it is important to handle errors that may occur during the process. While manipulating data files in Python, errors can occur if the file **does not exist**, **cannot be opened**, or **cannot be read or written** to for any other reason. To handle these errors, you can **use Python's exception handling mechanism**.
 
 In Python, you can use the `try...except` statement to catch and handle exceptions that may occur when working with files. The `try` block contains the code that may raise an exception, while the `except` block contains the code to handle the exception if it occurs. <br>
-<span style="color: #ff3870;font-weight: 500;">Learn more about Python's exception handling mechanism in section {% include target_link href=531 section="#--try-except-finally" text="Control Flow: Try-Except-Finally" %} in the tutorial {% include target_link href=531 text="Introduction to Python programming" %} </span>
+<span style="color: #ff3870;font-weight: 500;">Learn more about Python's exception handling mechanism in section</span> {% include target_link href=531 section="#--try-except-finally" text="Control Flow: Try-Except-Finally" %} in the tutorial {% include target_link href=531 text="Introduction to Python programming" %} 
 
 ## EXAMPLE: *FileNotFoundError*
 To handle this error, we can use a try/except block:

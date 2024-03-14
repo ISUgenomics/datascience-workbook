@@ -42,8 +42,9 @@ This can save time and resources and allow the developer to work more efficientl
 
 Subversion (SVN) is a popular **open-source centralized version control** system that allows developers to manage and track changes to their codebase. SVN is widely used in software development, as it allows teams to collaborate and maintain a single, up-to-date version of their codebase. SVN can be considered as an **alternative for Git** *(distributed version control tool)* and may be a better choice for smaller teams or for organizations with a more centralized development structure.
 
-<span style="color: #ff3870; font-weight: 500;">To learn more about version control systems such as SVN or Git, follow the tutorials provided in section {% include target_link href=932.1 text="09. Project Management / Storage & Version Control" %} </span>
+<span style="color: #ff3870; font-weight: 500;">To learn more about version control systems such as SVN or Git, follow the tutorials provided in section </span> {% include target_link href=932.1 text="09. Project Management / Storage & Version Control" %}
 
+<br><br>
 To get started with SVN, check if it pre-installed on your computing machine, either local one or remote HPC system. In the terminal window type the following command:
 ```
 svn --version

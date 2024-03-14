@@ -213,7 +213,7 @@ For example, to download a file from a website, you can use the following comman
 wget https://ftp.uniprot.org/pub/databases/uniprot/README
 ```
 
-<span style="color: #ff3870; font-weight: 500;">Explore more practical examples in the hands-on tutorial: {% include target_link href=713.1 text="Downloading Online Data using WGET" %} </span>.
+<span style="color: #ff3870; font-weight: 500;">Explore more practical examples in the hands-on tutorial: </span>. {% include target_link href=713.1 text="Downloading Online Data using WGET" %}
 
 
 

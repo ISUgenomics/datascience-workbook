@@ -21,7 +21,7 @@ tags: []
 ---
 
 
-<span style="color: #ff3870;font-weight: 500;">NOTE:</span> <i>Please note that this tutorial requires the user to have a basic understanding of the options available in Jupyter. If you are not familiar with Jupyter, we recommend exploring other tutorials in section {% include target_link href=400 text="04. Development Environment" %} to get started:</i>
+<span style="color: #ff3870;font-weight: 500;">NOTE:</span> <i>Please note that this tutorial requires the user to have a basic understanding of the options available in Jupyter. If you are not familiar with Jupyter, we recommend exploring other tutorials in section</i> {% include target_link href=400 text="04. Development Environment" %} :
 * {% include target_link href=412 text="Jupyter: interactive web-based multi-kernel DE" %}
 * {% include target_link href=413 text="Getting started with JupyterLab on a local machine" %}
 * {% include target_link href=414 text="Getting Started with Jupyter Notebook on HPC systems" %}
@@ -89,9 +89,9 @@ conda activate new_env_py3.9
 jupyter lab
 ```
 
-<span style="color: #ff3870;font-weight: 500;">You can learn more about creating virtual environments for Python using Conda in the tutorial {% include target_link href=423 text="Local Python setup on your computing machine." %} </span>
+<span style="color: #ff3870;font-weight: 500;">You can learn more about creating virtual environments for Python using Conda in the tutorial</span> {% include target_link href=423 text="Local Python setup on your computing machine" %}.
 
-
+<br>
 **C. Launch Jupyter and switch the Python kernel**
 
 When you create a new notebook in JupyterLab interface, you can select the kernel you want to use for that notebook. If you have multiple kernels installed, you can choose the appropriate kernel for your project.

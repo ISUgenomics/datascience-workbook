@@ -137,8 +137,9 @@ So, all you need is to open the terminal window and log in to the HPC resources 
 *Accessing data using Secure Shell (SSH) typically involves using a terminal or command-line interface, rather than a graphical user interface (GUI).*
 
 **Start by opening a terminal window** on your local machine. <br>
-<i>If you do NOT know what the terminal is, start with this tutorial: {% include target_link href=310 text="Terminal - an interface for command-line operations" %} </i>
+<i>If you do NOT know what the terminal is, start with this tutorial:</i> {% include target_link href=310 text="Terminal - an interface for command-line operations" %}
 
+<br><br>
 Then, **enter the following command** to log into the remote machine:
 
 ```

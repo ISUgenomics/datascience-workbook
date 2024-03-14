@@ -25,6 +25,8 @@ tags: []
 <span style="color: #ff3870; font-weight: 600;">If you are a beginner at Linux, it may be beneficial for you to start with the tutorials provided in section</span>
 {% include target_link href=300 text="03: Introduction to Command Line" %}
 
+---
+
 # 1. Bash expressions
 
 The complete Bash Reference Manual is available at official documentation provided by [www.gnu.org/](https://www.gnu.org/software/bash/manual/bash.html).

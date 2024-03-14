@@ -262,22 +262,24 @@ When you use PyCharm for the first time, the "Projects" section in the general o
 
 ![02_python-pycharm-project.png]({{ images_path }}/02_python-pycharm-project-create.png)
 
-1. Choose the project location and name your project to create a new directory for it.
+**1.** Choose the project location and name your project to create a new directory for it.
 
-2. If collapsed, expand the `Python Interpreter` section and select the method to create a new environment. The most commonj options include:
+**2.** If collapsed, expand the `Python Interpreter` section and select the method to create a new environment. The most commonj options include:
 * virtualenv
 * pipenv
 * conda
-* poetry  <br><br>
-<span style="color: #ff3870;font-weight: 500;">You can learn more about creating and managing Python environments from the practical tutorial {% include target_link href=423 text="Local Python setup on your computing machine" %} ( see section {% include target_link href=423 section="#3-manage-python-environments" text="3. Manage Python environments." %} </span> <br><br>
+* poetry
+
+<span style="color: #ff3870;font-weight: 500;">You can learn more about creating and managing Python environments from the practical tutorial</span> {% include target_link href=423 text="Local Python setup on your computing machine" %} ( see section {% include target_link href=423 section="#3-manage-python-environments" text="3. Manage Python environments." %})
+
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">Python best practice is to create a virtualenv for each project. In most cases, PyCharm create a new virtual environment automatically and you don't need to configure anything. </span>
 </div><br>
 
-3. You can choose to select or deselect the checkbox for the automatic creation of a `main.py` file. Typically this file is intended to contain the code that launches your multi-file application. For a simple project, all your code can exist within this single file. You can keep the name `main.py` or change it for something more meaningful.
+**3.** You can choose to select or deselect the checkbox for the automatic creation of a `main.py` file. Typically this file is intended to contain the code that launches your multi-file application. For a simple project, all your code can exist within this single file. You can keep the name `main.py` or change it for something more meaningful.
 
-4. Click the `Create` button located in the bottom right corner of the dialog window.
+**4.** Click the `Create` button located in the bottom right corner of the dialog window.
 
 
 ###  • *Panels in the project interface*
@@ -431,11 +433,11 @@ PyCharm integrates with popular version control systems like Git, allowing you t
 ![02_python-pycharm-project-vcs.png]({{ images_path }}/02_python-pycharm-project-vcs.png)
 
 
-<span style="color: #ff3870;font-weight: 500;">To learn more about programming in Python, see tutorials in section {% include target_link href=500 text="05. Introduction to Programming / 3. Introduction to Python Programming" %} </span>
-* {% include target_link href=531 text="Introduction to Python Programming" %}
-* {% include target_link href=533 text="Open-Close & Read-Write of data files" %}
-* {% include target_link href=722.1 text="Manipulating text files with Python" %}
-* {% include target_link href=822.01 text="Plotly-Dash: interactive plotting with Python" %}
+<span style="color: #ff3870;font-weight: 500;">To learn more about programming in Python, see tutorials in section</span> {% include target_link href=500 %}
+* {% include target_link href=531 %}
+* {% include target_link href=533 %}
+* {% include target_link href=722.1 %}
+* {% include target_link href=822.01 %}
 
 ---
 

@@ -76,7 +76,7 @@ Jupyter's tools are available in the Python Package Index (PyPI, [https://pypi.o
 
 **Installation**
 
-You can easily install `jupyter` on your local computing machine in the variant of your choice (lab, notebook) or both. You can do a global installation in the default Unix environment or create a virtual environment with Conda <i>(see the {% include target_link href=223 text="Basic developer libraries" %} tutorial in section {% include target_link href=200 text="02: Setting Up Computing Machine" %})</i> to add more modules specific to your analysis later. Regardless of the chosen environment, the installation is straightforward when using `pip`.
+You can easily install `jupyter` on your local computing machine in the variant of your choice (lab, notebook) or both. You can do a global installation in the default Unix environment or create a virtual environment with Conda (see the {% include target_link href=223 text="Basic developer libraries" %} tutorial in section {% include target_link href=200 text="02: Setting Up Computing Machine" %}) to add more modules specific to your analysis later. Regardless of the chosen environment, the installation is straightforward when using `pip`.
 
 ```
 pip install jupyterlab

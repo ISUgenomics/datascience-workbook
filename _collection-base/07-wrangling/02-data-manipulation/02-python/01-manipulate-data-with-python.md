@@ -79,7 +79,7 @@ Before installing Python, you need to choose an Integrated Development Environme
 
 After setting up your IDE, you need to install Python on your computer. You can download the latest version of Python from the official website (https://www.python.org/downloads/). Choose the appropriate version for your operating system and follow the installation instructions. <br>
 <span style="color: #ff3870;font-weight: 500;"> Learn more about Python Installation options by following the hands-on tutorial in this workbook:</span>
-* {% include target_link href=423 %} <i>(installation needed)</i>
+* {% include target_link href=423 %} <i> (installation needed)</i>
 
 ### 3. Intro to Python programming
 
@@ -103,13 +103,11 @@ Python has several libraries specifically designed for data manipulation, such a
 
 Finally, you need to practice what you have learned by working on hands-on tutorials. This will help you apply your knowledge of Python programming and data manipulation libraries to real-world problems. There are many hands-on tutorials in this workbook! <br>
 <span style="color: #ff3870; font-weight: 500;"> Start manipulating data files with Python by following the hands-on tutorials in this workbook:</span>
-* SECTION: {% include target_link href=722.1 %}
-  * {% include target_link href=722.2 %}
-
-
-* SECTION: {% include target_link href=731 %}
-  * {% include target_link href=732 %}
-  * {% include target_link href=733 %}
-
-
-* SECTION: {% include target_link href=822.01 %}
+<ul>
+<li> SECTION: {% include target_link href=722.1 %} </li>
+  <ul><li> {% include target_link href=722.2 %} </li></ul>
+<li> SECTION: {% include target_link href=731 %} </li>
+  <ul><li> {% include target_link href=732 %} </li>
+  <li> {% include target_link href=733 %} </li></ul>
+<li> SECTION: {% include target_link href=822.01 %} </li>
+</ul>

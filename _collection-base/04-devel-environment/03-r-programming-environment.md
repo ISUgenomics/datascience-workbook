@@ -38,7 +38,7 @@ An Integrated Development Environment (IDE) is software designed to make coding 
 ### *A. Universal IDEs*
 Universal or multi-language IDEs are highly customizable, multi-platform text editors that can be used for coding in multiple programming languages. A universal IDE can be a good choice if you work with multiple programming languages and prefer a single development environment for your projects. Some popular universal IDEs are:
 
-* <b>Visual Studio Code (VSCode)</b>: VSCode is an open-source code editor that can be used for R programming by installing the R extension. It provides features such as code highlighting, code completion, and debugging. Learn more about <b>VSCode</b> from the {% include target_link href=411 text="Tutorial: Visual Studio Code" %} in this <a href="https://datascience.101workbook.org" target="_blank">workbook ⤴</a>.
+* <b>Visual Studio Code (VSCode)</b>: VSCode is an open-source code editor that can be used for R programming by installing the R extension. It provides features such as code highlighting, code completion, and debugging. Learn more about <b>VSCode</b> from the tutorial {% include target_link href=411 %}
 * <b>Microsoft R Open</b>: This is a distribution of R that includes a development environment from Microsoft. <a href="https://learn.microsoft.com/en-us/answers/questions/1335739/link-to-download-r-open-4-0-2" target="_blank">Microsoft R Open ⤴</a> is now retired.
 * <b>Atom</b>: Now archived, <a href="https://github.blog/2022-06-08-sunsetting-atom/" target="_blank">Atom ⤴</a> is one of the most liked IDEs out there. Plenty of packages are available to extend the functionality, including support of programming languages such as R.
 * <b>Eclipse</b>: Eclipse is a popular open-source Java-based IDE that can be used for R programming through the StatET plugin. It provides features such as code highlighting, debugging, and visualization tools. Check out the <a href="https://www.eclipse.org/ide/" target="_blank">Eclipse website ⤴</a> for information about Eclipse and related IDEs.
@@ -46,8 +46,8 @@ Universal or multi-language IDEs are highly customizable, multi-platform text ed
 
 
 ### *B. R-Dedicated IDEs*
-* <b>RStudio</b>: is a popular open-source IDE specifically designed for R programming. It has a user-friendly interface with features such as code highlighting, code completion, debugging, and visualization tools. Both new and experienced R users widely use RStudio. Learn more about {% include target_link href=431 text="RStudio Basics" %} and {% include target_link href=432 text="Setting up RStudio" %} in this <a href="https://datascience.101workbook.org" target="_blank">workbook ⤴</a>.
-<br>
+
+* <b>RStudio</b>: is a popular open-source IDE specifically designed for R programming. It has a user-friendly interface with features such as code highlighting, code completion, debugging, and visualization tools. Both new and experienced R users widely use RStudio. Learn more about {% include target_link href=431 text="RStudio Basics" %} and {% include target_link href=432 text="Setting up RStudio" %}.
 * <b>Tinn-R</b>: is an open-source IDE with GUI for R programming and environment that provides a customizable interface for editing, running, and debugging R code. Check the <a href="https://tinn-r.org/en/" target="_blank">Tinn-R website ⤴</a> to download and for more information.
 
 

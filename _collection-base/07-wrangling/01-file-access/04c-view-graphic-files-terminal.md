@@ -55,7 +55,7 @@ sshfs user@hostname:/remote/folder /local/folder
 ```
 to mount a remote folder on your local machine, and then browse and open files in that folder using your local graphical file explorer or command line.
 
-<span style="color: #ff3870; font-weight: 500;">To learn more visit the tutorial {% include target_link href=714.4 text="Mounting remote folder on a local machine" %} </span>
+<span style="color: #ff3870; font-weight: 500;">To learn more visit the tutorial </span> {% include target_link href=714.4 text="Mounting remote folder on a local machine" %}
 
 ##  • remote desktop or X11 forwarding
 
@@ -65,7 +65,7 @@ One approach is to use a remote desktop or X11 forwarding to display the graphic
 ssh -X user@hostname
 ```
 
-<span style="color: #ff3870; font-weight: 500;">To learn more visit the tutorial {% include target_link href=714.2 text="Viewing PDF files using X11 SSH connection" %} </span>
+<span style="color: #ff3870; font-weight: 500;">To learn more visit the tutorial </span> {% include target_link href=714.2 text="Viewing PDF files using X11 SSH connection" %}
 
 ##  • convert the graphic files into text-based formats (ASCII art)
 
@@ -112,8 +112,9 @@ When working on an HPC system, it can be challenging to install custom software 
 
 **In this tutorial, we will focus on providing a unified and robust way of custom software installation on HPC systems, primarily by using source code available from trusted repositories such as <a href="https://pkgs.org/" target="_blank">pkgs.org  ⤴</a>.** There will be also provided a quick guide for installing the required tools on Linux or macOS, in case the user want these tools also on a local machine.
 
-<span style="color: #ff3870;font-weight: 500;">To learn more about installations on HPC visit the tutorial {% include target_link href=644 text="Installing custom programs in user space" %} </span> available in section {% include target_link href=641 text="06. High-Performance Computing (HPC) / Software available on HPC" %} of this workbook.
+<span style="color: #ff3870;font-weight: 500;">To learn more about installations on HPC visit the tutorial </span> {% include target_link href=644 text="Installing custom programs in user space" %} available in section {% include target_link href=641 text="06. High-Performance Computing (HPC) / Software available on HPC" %} of this workbook.
 
+<br>
 
 | TOOL | LICENSE | AUTHOR | GitHub | DOCS |
 |------|---------|--------|--------|------|

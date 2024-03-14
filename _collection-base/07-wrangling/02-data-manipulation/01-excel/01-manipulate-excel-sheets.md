@@ -143,8 +143,8 @@ If you are looking to **improve your skills in manipulating data in Excel data s
 * {% include target_link href=721.3 %}
 * {% include target_link href=721.4 %}
 * {% include target_link href=721.5 %}
-<br>
 
+<br><br>
 These tutorials can provide you with step-by-step guidance on how to perform specific tasks and functions in Excel, which can help you gain a deeper understanding of the software and improve your overall proficiency.
 
 So, whether you are a beginner or an advanced user, **exploring hands-on tutorials can be a great way to improve your Excel skills** and become more proficient in manipulating data in spreadsheets.

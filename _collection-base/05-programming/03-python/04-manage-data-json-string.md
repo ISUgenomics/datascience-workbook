@@ -27,7 +27,7 @@ tags: []
 * Thirdly, you should have a Python Integrated **Development Environment** (IDE) set up on your computer, e.g., PyCharm or JupyterLab or any text editor.  <br>
 <i>Learn more from the practical tutorial</i> {% include target_link href=420 text="Python programming environment(s)" %}
 * Finally, you should have a **basic understanding of Python** programming.  <br>
-<i>Learn more from the practical tutorial</i> {% include target_link href=531 text="Introduction to Python programming" %} 
+<i>Learn more from the practical tutorial</i> {% include target_link href=531 text="Introduction to Python programming" %}
 
 # Introduction
 
@@ -195,7 +195,7 @@ The json module also provides other methods for more advanced use cases, such as
 ## *Getting Started*
 
 You can try out the `json` module on your **local machine** if you have Python installed. <br>
-<span style="color: #ff3870;font-weight: 500;"> If you want to make up for the installation step, you can follow the installation guide provided in the tutorial {% include target_link href=423 text="Local Python setup on your computing machine." %} </span>
+<span style="color: #ff3870;font-weight: 500;"> If you want to make up for the installation step, you can follow the installation guide provided in the tutorial</span> {% include target_link href=423 text="Local Python setup on your computing machine." %}
 
 
 Alternatively, if you prefer to **work online**, you can use various online Python interpreters such as <a href="https://repl.it/" target="_blank">Repl.it  ⤴</a>, <a href="https://www.pythonanywhere.com/" target="_blank">PythonAnywhere  ⤴</a>, or <a href="https://colab.research.google.com/" target="_blank">Colab  ⤴</a>. These online interpreters provide a Python shell and allow you to run Python code without installing Python on your local machine.
@@ -314,7 +314,7 @@ with open("data.json", "r") as file:
 print(data)
 ```
 
-<span style="color: #ff3870;font-weight: 500;">Learn more about File-Open-Close process from the practical tutorial {% include target_link href=533 text="Open-Close & Read-Write of data files." %} </span>.
+<span style="color: #ff3870;font-weight: 500;">Learn more about File-Open-Close process from the practical tutorial</span> {% include target_link href=533 text="Open-Close & Read-Write of data files." %}.
 
 ## Writing JSON Data to a File
 

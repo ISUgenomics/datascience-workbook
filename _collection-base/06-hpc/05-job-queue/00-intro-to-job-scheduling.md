@@ -44,13 +44,13 @@ There are several workload managers commonly used in high-performance computing 
 
 **SLURM is a workload manager used on the SCINet HPC (Atlas, Ceres) and ISU HPC clusters (Condo, Nova).**
 
-<span style="color: #ff3870;font-weight: 500;"> Learn more about SLURM workload manager and job scheduling from the hands-on tutorials available in section {% include target_link href=651.1 text="SLURM: basics of workload manager" %} </span>
+<span style="color: #ff3870;font-weight: 500;"> Learn more about SLURM workload manager and job scheduling from the hands-on tutorials available in section</span> {% include target_link href=651.1 text="SLURM: basics of workload manager" %}
 
 ### *PBS*
 
 <a href="https://www.openpbs.org" target="_blank">OpenPBS  ⤴</a> *(Portable Batch System)* is another popular **open-source workload manager** that is used to manage and schedule jobs on HPC clusters. It provides a set of commands and interfaces that allow users to submit, monitor, and control the execution of jobs, and administrators to manage the resources and configure the system.
 
-<span style="color: #ff3870;font-weight: 500;"> Learn more about PBS workload manager and job scheduling from the hands-on tutorials available in section {% include target_link href=652.1 text="PBS: Portable Batch System" %} </span>
+<span style="color: #ff3870;font-weight: 500;"> Learn more about PBS workload manager and job scheduling from the hands-on tutorials available in section</span> {% include target_link href=652.1 text="PBS: Portable Batch System" %} 
 
 ### *LSF*
 

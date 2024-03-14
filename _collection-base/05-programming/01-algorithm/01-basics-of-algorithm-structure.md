@@ -159,6 +159,7 @@ When you're creating algorithms, it's important to remember that <b>different pr
 * {% include target_link href=541 text="Introduction to R programming" %}
 * {% include target_link href=551 text="Introduction to Julia programming" %}
 
+<br><br>
 *These resources can help you gain a deeper understanding of topics like conditional statements, loops, and other elements of algorithm structure, and how to use them effectively in your scripts or programs.*
 
 ### *Conditional Statements*

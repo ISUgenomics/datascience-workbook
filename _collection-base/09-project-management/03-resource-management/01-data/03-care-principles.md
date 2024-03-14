@@ -55,7 +55,7 @@ They consist of four main components:
 
 * ***Who proposed CARE principles?***
 
-The <a href="https://www.gida-global.org/care" target="_blank">CARE Principles</b> for Indigenous Data Governance</a> were proposed by the <a href="https://www.gida-global.org/whoweare" target="_blank">Global Indigenous Data Alliance</a> (GIDA). GIDA is an organization that advocates for the rights of Indigenous peoples in the context of data collection and use. The principles were introduced in 2019 to address specific needs and concerns of Indigenous communities in relation to data governance.
+The <a href="https://www.gida-global.org/care" target="_blank"><b>CARE Principles</b> for Indigenous Data Governance</a> were proposed by the <a href="https://www.gida-global.org/whoweare" target="_blank">Global Indigenous Data Alliance</a> (GIDA). GIDA is an organization that advocates for the rights of Indigenous peoples in the context of data collection and use. The principles were introduced in 2019 to address specific needs and concerns of Indigenous communities in relation to data governance.
 
 * ***Why were these rules implemented?***
 

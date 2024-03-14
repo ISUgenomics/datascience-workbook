@@ -194,4 +194,4 @@ Once the job has been submitted, you can use various `qstat` commands to check t
 * `qstat -a` - to see all jobs in the queue, or
 * `qstat -u username` - to see all jobs submitted by a particular user.
 
-<span style="color: #ff3870;font-weight: 500;">If you want to learn more about PBS commands for monitoring submitted jobs, a useful resource to explore is the {% include target_link href=652.2 text="PBS commands (cheatsheet)." %}</span>
+<span style="color: #ff3870;font-weight: 500;">If you want to learn more about PBS commands for monitoring submitted jobs, a useful resource to explore is the</span> {% include target_link href=652.2 text="PBS commands (cheatsheet)." %}

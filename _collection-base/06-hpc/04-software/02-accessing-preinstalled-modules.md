@@ -35,11 +35,11 @@ The software available on a High-Performance Computing system can vary depending
 Explore the {% include target_link href=641 text="Software available on HPC" %} tutorial in this workbook, to learn more about:
 
 * {% include target_link href=641 section="#how-to-find-available-software" text="How to find available software?" %}
-  * {% include target_link href=641 section="#software-as-built-in-commands" text="Software as built-in commands" %}
-  * {% include target_link href=642 section="#software-as-built-in-modules" text="<b>Software as built-in modules</b> <i>(see below)</i>" %}
-  * {% include target_link href=641 section="#software-via-package-manager" text="Software via package manager" %}
-  * {% include target_link href=641 section="#check-the-documentation" text="Check the documentation" %}
-  * {% include target_link href=641 section="#ask-the-system-administrator" text="Ask the system administrator" %}
+  * {% include target_link href=641 section="#software-as-built-in-commands" text="Software as built-in commands" level=1 %}
+  * {% include target_link href=642 section="#software-as-built-in-modules" text="<b>Software as built-in modules</b> <i>(see below)</i>" level=1 %}
+  * {% include target_link href=641 section="#software-via-package-manager" text="Software via package manager" level=1 %}
+  * {% include target_link href=641 section="#check-the-documentation" text="Check the documentation" level=1 %}
+  * {% include target_link href=641 section="#ask-the-system-administrator" text="Ask the system administrator" level=1 %}
 * {% include target_link href=644 text="How to get new software installed?" %}
 
 ---

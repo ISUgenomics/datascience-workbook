@@ -135,7 +135,7 @@ Follow the guide at <a href="https://scinet.usda.gov/guides/access/mfa#ga-accoun
 Terminal access to a high-performance computing (HPC) system using the ssh (Secure Shell) protocol allows users to **access the HPC system remotely from a command line interface**. To access an HPC system using ssh, users need to have:
 * an **ssh client installed** on their local computer <br>*(on Linux and macOS, the OpenSSH client package is usually pre-installed; for Windows follow the Microsoft's guide <a href="https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui#install-openssh-for-windows" target="_blank">Install OpenSSH for Windows  ⤴</a>)*
 
-* and the **login credentials** (login & password) for an account on the HPC system <br><i.(you will get the initial SCINet credentials in the "Welcome to SCINet" email, see section {% include target_link href=612.2 section="#1-scinet-account-request" text="SCINet Account Request" %}</i>
+* and the **login credentials** (login & password) for an account on the HPC system <br>( you will get the initial SCINet credentials in the "Welcome to SCINet" email, see section {% include target_link href=612.2 section="#1-scinet-account-request" text="SCINet Account Request" %})
 
 <div style="background: #cff4fc; padding: 15px;">
 <span style="font-weight:800;">PRO TIP:</span>
@@ -162,10 +162,11 @@ Overall, `ssh` is a convenient and secure way to access HPC systems remotely and
 ### *Command line login*
 
 Open terminal window. <br>
-<i>If you are a beginner at Linux, it may be beneficial for you to start with the tutorials provided in section {% include target_link href=300 text="03: Introduction to Command Line" %}:</i> <br>
+If you are a beginner at Linux, it may be beneficial for you to start with the tutorials provided in section {% include target_link href=300 text="03: Introduction to Command Line" %}: <br>
 * {% include target_link href=310 text="Terminal - an interface for command-line operations" %}
 * {% include target_link href=320 text="Introduction to UNIX Shell: configuration, variables, home dir" %}
 
+<br><br>
 To connect to the HPC system, enter the `ssh` command in the terminal on your local computer that looks like this `ssh username@hostname`, where:
 * `username` is your SCINet account, typically `name.surname`
 * `hostname` for Atlas **login node** is `atlas-login.hpc.msstate.edu`

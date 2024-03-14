@@ -1411,8 +1411,8 @@ Platforms like GitHub Pages, Netlify, Vercel, and even Read the Docs (with some 
 
 Documentation generators **primarily rely on in-code comments and docstrings** to produce documentation. The tool parses these non-executable text from files with the source code, extracting relevant information to create structured documentation. In some cases, they can also generate documentation directly from the code itself, especially for aspects like function signatures, classes, and module structures.
 
-<span style="color: #ff3870;font-weight: 500;">Jump to section {% include target_link href=933.4 section="#in-code-documentation" text="In-code documenattion" %} to learn how to add in-code comments and docstrings.
-</span>
+<span style="color: #ff3870;font-weight: 500;">Jump to section</span> {% include target_link href=933.4 section="#in-code-documentation" text="In-code documenattion" %} to learn how to add in-code comments and docstrings.
+
 
 ###  • *SPHINX for Python docs*
 

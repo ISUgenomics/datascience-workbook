@@ -31,6 +31,8 @@ Git repositories do NOT have to be hosted on online platforms. Git is a distribu
 </span>
 </div>
 
+---
+
 # Online hosting of Git repos
 
 **Hosting Git repositories on an online platform provide accessibility, backup, and collaboration features**. Web services, such as <a href="https://github.com" target="_blank">GitHub  ⤴</a>, <a href="https://gitlab.com" target="_blank">GitLab  ⤴</a>, or <a href="https://bitbucket.org" target="_blank">Bitbucket  ⤴</a>, offer a web-based interface and server infrastructure to host GIT repositories and provide several benefits. For example, hosting your repository on an online platform makes it easier to collaborate with others, as you can give other people access to your repository and work on it together. Additionally, online platforms provide a backup of your repository in case your local machine fails, which helps to ensure that your content is safe and secure.

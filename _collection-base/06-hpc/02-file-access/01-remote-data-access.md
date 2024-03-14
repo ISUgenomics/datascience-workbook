@@ -34,16 +34,18 @@ It is important to note that <b>accessing data on an HPC cluster remotely can be
 
 ## **1. VPN (Virtual Private Network)**
 
-<i>VPN is a technology that allows users to securely access a private network over the Internet. VPNs can be used to access remote files and data stored on remote computers within the same network. VPNs protect users data from being intercepted or monitored by unauthorized parties <b>while login from off-campus</b>. Learn more from the hands-on tutorial {% include target_link href=622 text="Virtual Private Network (VPN) Connection" %} </i>
+<i>VPN is a technology that allows users to securely access a private network over the Internet. VPNs can be used to access remote files and data stored on remote computers within the same network. VPNs protect users data from being intercepted or monitored by unauthorized parties <b>while login from off-campus</b>. Learn more from the hands-on tutorial</i> {% include target_link href=622 text="Virtual Private Network (VPN) Connection" %}
 
+<br><br>
 **Jump to solution to get started with:**
 * <a href="https://scinet.usda.gov/guides/access/vpn#scinet-vpn" target="_blank">VPN access to Atlas and Ceres  ⤴</a> computing clusters of the {% include target_link href=612.1 text="SCINet Scientific Computing (HPC)" %}
 * <a href="http://vpn.iastate.edu/" target="_blank">VPN access to Nova and Condo  ⤴</a> computing clusters of the {% include target_link href=613.1 text="ISU HPC Network" %}
 
 ## **2. SSH (Secure Shell connection)**
 
-<i>With SSH, a cryptographic network protocol, users can connect to the cluster and then browse, manipulate, and execute files as if they were sitting at the terminal of a computer on the cluster. Learn more from the hands-on tutorials in the {% include target_link href=623 text="Secure Shell Connection (SSH)" %} </i>
+<i>With SSH, a cryptographic network protocol, users can connect to the cluster and then browse, manipulate, and execute files as if they were sitting at the terminal of a computer on the cluster. Learn more from the hands-on tutorials in the</i> {% include target_link href=623 text="Secure Shell Connection (SSH)" %}
 
+<br><br>
 **Jump to solution to get started with:**
   * {% include target_link href=612.2 section="#3-terminal-access" text="SSH access to Atlas" %} computing cluster of the {% include target_link href=612.1 text="SCINet HPC system" %}
   * <a href="https://scinet.usda.gov/guides/access/login#using-ssh-to-connect" target="_blank">SSH access to Ceres</a> computing cluster of the {% include target_link href=612.1 text="SCINet HPC system" %}
@@ -52,8 +54,9 @@ It is important to note that <b>accessing data on an HPC cluster remotely can be
 
 ## **3. Remote web-based access**
 
-<i>Some HPC clusters may also provide web-based interfaces (e.g., <a href="https://openondemand.org" target="_blank">Open OnDemand  ⤴</a>) for remotely accessing and managing data. It also allows users to submit computing jobs to the HPC queueing system through a web interface or API, without the need for command line login to the underlying infrastructure. Learn more from the hands-on tutorial {% include target_link href=624 text="Open On Demand (OOD) Connection" %} </i>
+<i>Some HPC clusters may also provide web-based interfaces (e.g., <a href="https://openondemand.org" target="_blank">Open OnDemand  ⤴</a>) for remotely accessing and managing data. It also allows users to submit computing jobs to the HPC queueing system through a web interface or API, without the need for command line login to the underlying infrastructure. Learn more from the hands-on tutorial</i> {% include target_link href=624 text="Open On Demand (OOD) Connection" %}
 
+<br><br>
 **Jump to solution to get started with:**
   * {% include target_link href=612.2 section="#open-ondemand-login" text="OOD access to Atlas" %} computing cluster of the {% include target_link href=612.1 text="SCINet HPC system" %}
   * <a href="https://scinet.usda.gov/guides/access/open-ondemand#open-ondemand-interface-guide" target="_blank">OOD access to Ceres</a> computing cluster of the {% include target_link href=612.1 text="SCINet HPC system" %}
@@ -84,7 +87,7 @@ If the HPC system already has RFS pre-configured, the user may simply need to fo
 
 ---
 
-<span style="color: #ff3870;font-weight: 500;">To learn more about remote access and data manipulation, go to Section {% include target_link href=700 text="07: Data Acquisition and Wrangling" %} in this workbook:</span>
+<span style="color: #ff3870;font-weight: 500;">To learn more about remote access and data manipulation, go to section</span> {% include target_link href=700 text="07: Data Acquisition and Wrangling" %} in this workbook:
 * {% include target_link href=711 text="1. Remote data access" %}
 * {% include target_link href=720 text="2. Data manipulation" %}
 * {% include target_link href=731 text="3. Data wrangling: use ready-made apps" %}

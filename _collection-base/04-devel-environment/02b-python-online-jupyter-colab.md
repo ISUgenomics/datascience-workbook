@@ -21,17 +21,20 @@ tags: []
 ---
 
 
-<span style="color: #ff3870;font-weight: 500;">NOTE:</span> <i>Please note that this tutorial requires the user to have a basic understanding of the options available in Jupyter. If you are not familiar with Jupyter, we recommend exploring other tutorials in section {% include target_link href=400 text="04. Development Environment" %} to get started:</i>
-* {% include target_link href=412 text="Jupyter: interactive web-based multi-kernel DE" %}
-* {% include target_link href=413 text="Getting started with JupyterLab" %}
-* {% include target_link href=414 text="Getting started with Jupyter Notebook on HPC systems" %}
+<span style="color: #ff3870;font-weight: 500;">NOTE:</span> Please note that this tutorial requires the user to have a basic understanding of the options available in Jupyter. If you are not familiar with Jupyter, we recommend exploring other tutorials in section {% include target_link href=400 text="04. Development Environment" %} to get started:
 
+* {% include target_link href=412 text="Jupyter: interactive web-based multi-kernel DE" %}
+  * {% include target_link href=413 text="Getting started with JupyterLab" level=1 %}
+  * {% include target_link href=414 text="Getting started with Jupyter Notebook on HPC systems" level=1 %}
+
+
+---
 
 # Introduction
 
 The `.ipynb` file format stands for ***IPython Notebook***, which was the original name of Jupyter Notebook. This file format allows users to create and share interactive documents that contain:
 * live code,
-* equations,
+  * equations,
 * visualizations, and
 * narrative text (*documentation, comments*).
 
@@ -91,10 +94,11 @@ While online notebooks can be a convenient and accessible way to work with Pytho
 
 <span style="font-size: 24px; font-weight: 600; color: #df0010; ">✗</span> For **small Python scripts** or **large modular Python developments** a plain text file script `.py` or IDEs such as Visual Studio Code (VSC) or PyCharm are often a better choice than Jupyter, since they offer more advanced features, like debugging, refactoring, and testing, that are essential for professional development.
 
-<span style="color: #ff3870;font-weight: 500;">Learn more from the practical tutorials: <br>
-- {% include target_link href=425 text="Text editors: create Python code in terminal text files" %} <br>
-- {% include target_link href=427 text="PyCharm: IDE for professional Python developers" %} </span>
+<span style="color: #ff3870;font-weight: 500;">Learn more from the practical tutorials:</span>
+* {% include target_link href=425 text="Text editors: create Python code in terminal text files" %}
+* {% include target_link href=427 text="PyCharm: IDE for professional Python developers" %}
 
+<br><br>
 <span style="font-size: 24px; font-weight: 600; color: #df0010; ">✗</span> Online notebooks may not provide as much flexibility and customization as locally-installed versions of Jupyter. This can be a **limitation if you need to install specific libraries** or modify the environment in other ways.
 
 <span style="font-size: 24px; font-weight: 600; color: #df0010; ">✗</span> Depending on the complexity of your code and the amount of data you're working with, online notebooks **may be slower to execute** than a local installation of Python.

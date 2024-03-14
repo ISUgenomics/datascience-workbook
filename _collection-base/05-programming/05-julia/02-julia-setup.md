@@ -330,7 +330,7 @@ If you <b>install IJulia in the base environment</b>, you'll obtain a universal 
 </span>
 </div>
 
-Once `IJulia` is installed, you can launch Jupyter Lab <i>(assuming you {% include target_link href=412 section="#installing-jupyter" text="have it installed" %})</i>.
+Once `IJulia` is installed, you can launch Jupyter Lab ( assuming you {% include target_link href=412 section="#installing-jupyter" text="have it installed" %}).
 
 ### Access Julia in Jupyter Lab
 
@@ -345,8 +345,7 @@ enter your login credentials, and select **JupyterLab** from the `Interactive Ap
 
 **B. Launch Jupyter Lab installed on your local machine**
 
-In the separate terminal tab, navigate to the desired location in your file system and launch the Jupyter Lab: <br>
-<i>(assuming you {% include target_link href=412 section="#installing-jupyter" text="have it installed" %})</i>
+In the separate terminal tab, navigate to the desired location in your file system and launch the Jupyter Lab ( assuming you {% include target_link href=412 section="#installing-jupyter" text="have it installed" %}):
 ```
 jupyter lab
 ```

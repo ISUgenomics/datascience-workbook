@@ -35,11 +35,10 @@ So, first open your favorite web-browser (e.g., Chrome, Firefox, Safari) and **v
 <span style="font-weight:800;">PRO TIP:</span>
 <br><span style="font-style:italic;">
 This URL address for the OOD interface should be available in the documentation or on your organization's website. <br>
-For example, you can open the OOD interface for: <br>
-<p> - {% include target_link href=612.2 text="Atlas" %} <p>cluster (part of {% include target_link href=612.1 text="SCINet Scientific Computing" %}) </p>at <a href="https://atlas-ood.hpc.msstate.edu/" target="_blank">https://atlas-ood.hpc.msstate.edu/  ⤴</a></p>
-<p> - {% include target_link href=612.3 text="Ceres" %} <p>cluster (part of {% include target_link href=612.1 text="SCINet Scientific Computing" %}) </p>at <a href="http://ceres-ood.scinet.usda.gov" target="_blank">http://ceres-ood.scinet.usda.gov  ⤴</a></p>
-<p> - {% include target_link href=613.3 text="Nova" %} <p>cluster (part of {% include target_link href=613.1 text="Iowa State University HPC" %}) </p>at <a href="http://nova-ondemand.its.iastate.edu/" target="_blank">http://nova-ondemand.its.iastate.edu/  ⤴</a></p>
-</span>
+For example, you can open the OOD interface for: </span>
+<ul><li> {% include target_link href=612.2 text="Atlas" %} cluster (part of {% include target_link href=612.1 text="SCINet Scientific Computing" %}) at <a href="https://atlas-ood.hpc.msstate.edu/" target="_blank">https://atlas-ood.hpc.msstate.edu/  ⤴</a></li>
+<li> {% include target_link href=612.3 text="Ceres" %} cluster (part of {% include target_link href=612.1 text="SCINet Scientific Computing" %}) at <a href="http://ceres-ood.scinet.usda.gov" target="_blank">http://ceres-ood.scinet.usda.gov  ⤴</a></li>
+<li> {% include target_link href=613.3 text="Nova" %} cluster (part of {% include target_link href=613.1 text="Iowa State University HPC" %}) at <a href="http://nova-ondemand.its.iastate.edu/" target="_blank">http://nova-ondemand.its.iastate.edu/  ⤴</a></li></ul>
 </div><br>
 
 Most resources probably require a login and allow access only to authorized users. Yet the good news is that logging into the OOD interface will require the same user credentials (`username` & `password`) as command-line access. To add an extra layer of security to the user authentication process, you may be asked for a **multi-factor authentication** (MFA). <br>
