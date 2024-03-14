@@ -5,6 +5,7 @@
   --bc-note: #dff5b3;
   --bc-example: #FFFACD;
   --bc-exercise: #ffd7b5;
+  --bc-code: #fafafa;
   --c-boxdark: #2a4960;
   --c-announce: #ff3870;
   --c-warning: #e84b4b;
@@ -19,7 +20,7 @@
 .no-decoration {text-decoration: none !important;}
 
 .warning, .protip, .note, .example, .exercise {
-  margin: 0.5em 0 1.8em 0;
+  margin: 0.5em 0 1.5em 0;
   padding: 0.8em 1em;
   font-size: 0.8em;
   color: var(--c-boxdark);
@@ -35,6 +36,7 @@
   font-size: 1.1em;
   display: block;
   margin-bottom: 0.2em;
+  margin-top: -0.2em;
 }
 .warning::before {content: "WARNING"; color: var(--c-warning);}
 .protip::before {content: "PRO TIP"; color: var(--c-protip);}
@@ -45,6 +47,13 @@
 .warning p, .protip p, .note p, .example p, .exercise p {margin-block-end: 0em !important;}
 .warning ul, .protip ul, .note ul, .example ul, .exercise ul {margin-block-start: 0.1em; margin-block-end: 0em !important;}
 
+.warning div.highlighter-rouge, .protip div.highlighter-rouge, .note div.highlighter-rouge,
+.example div.highlighter-rouge, .exercise div.highlighter-rouge {
+  margin-bottom: 0.2em !important;
+  margin-top: 0.4em !important;
+}
+.warning pre.highlight, .protip pre.highlight, .note pre.highlight,
+.example pre.highlight, .exercise pre.highlight {padding: 0.3em 0.8em !important; font-size: 1.1em !important;}
 
 
 .code-inline {
