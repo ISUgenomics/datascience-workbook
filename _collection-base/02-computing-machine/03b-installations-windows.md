@@ -106,7 +106,7 @@ or search it from the search box on lower left corner of screen on windows. The 
 <br>
 Type the following command and press enter to install WSL:
 
-```
+```bash
 wsl --install
 ```
 
@@ -140,16 +140,14 @@ R is a programming language for statistical computing and graphics. It is one of
 
 Use RStudio and plot to test if R is working. Open RStudio, type following command in console and press enter.
 
-```
+```r
 plot(1:50)
 ```
-<br>
 
-![plot]({{ images_path }}/01RStudio.png) <br>
-
-On the right side, you should see a scatter plot like this: <br>
-
-![plot]({{ images_path }}/02RStudio.png)
+<table>
+<tr> <td></td> <td>On the right side, you should see a scatter plot like this:</td> </tr>
+<tr> <td><img width="400" src="{{ images_path }}/01RStudio.png"></td> <td><img width="500" src="{{ images_path }}/02RStudio.png"></td> </tr>
+</table>
 
 
 ## Java
@@ -159,10 +157,10 @@ Java is also a High-level programming language. \
 `Note:` If you are using Windows Subsystem for Linux (WSL), java installation on the Linux system will be different.\
 Type `java` in command line (Linux) to get installation commands such as following:
 
-```
-sudo apt install default-jre              # version 2:1.11-72, or
-sudo apt install openjdk-11-jre-headless  # version 11.0.7+10-3ubuntu1
-sudo apt install openjdk-8-jre-headless   # version 8u252-b09-1ubuntu1
+```bash
+sudo apt install default-jre                 # version 2:1.11-72, or
+sudo apt install openjdk-11-jre-headless     # version 11.0.7+10-3ubuntu1
+sudo apt install openjdk-8-jre-headless      # version 8u252-b09-1ubuntu1
 ```
 
 ## Perl
@@ -179,7 +177,7 @@ Docker is a platform used to deliver software in packages called containers. Che
 Check out the <a href="https://bioinformaticsworkbook.org/dataAnalysis/nextflow/01_introductionToNextFlow.html" target="_blank">Intro to NextFlow ⤴</a> in our Bioinformatics Workbook for detailed information.
 
 When using `nextflow` if you get following error:
-```
+```bash
 nextflow: command not found
 ```
 move nextflow in a directory into $PATH or use `./nextflow` if it is in your current path.

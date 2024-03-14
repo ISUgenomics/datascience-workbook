@@ -135,7 +135,7 @@ In the table below, you can find a concise summary of terminology related to wor
 
 The Unix shell has a default configuration which can be further adjusted by a user. The settings together with available commands, loaded modules, and created aliases constitutes an **environment**. For getting more information about the current state of the shell's environment, you can type `env`, which lists all the variables currently set.
 
-```
+```bash
 env
 ```
 
@@ -144,7 +144,7 @@ env
 
 If you want to know specifically about a variable, you can get the value by typing in the command line `echo ${VARIABLE}`, for example:
 
-```
+```bash
 echo $SHELL
 echo $USER
 echo $HOME
@@ -230,7 +230,7 @@ To configure your $HOME to work efficiently on a computing cluster, take a look 
 
 Once you access the file system using terminal window or command prompt, the settings for the Unix shell will be stored in the `.bashrc` and/or `.bash_profile` files. As you noticed, those files are prefixed with a dot `.` what gives them a hidden property. That means they will NOT be listed in the result of `ls` command unless you use it with an **-a** flag, i.e., `ls -a`.
 
-```
+```bash
 ls -a ~
 ```
 
@@ -247,7 +247,7 @@ Then, you should find `.bashrc` and `.bash_profile`on your screen.
 
 To preview the content of these files type in the terminal window (from any location on the file system):
 
-```
+```bash
 less ~/.bashrc
 less ~/.bash_profile
 ```
@@ -266,7 +266,7 @@ nano ~/.bashrc
 
 At first glance, the contents of these files may seem interchangeable. Whichever one you have, you can always 'activate' its **updated contents** with the `source` command:
 
-```
+```bash
 source ~/.bashrc
 # or
 source ~/.bash_profile
@@ -285,7 +285,7 @@ So what really makes **.bashrc** different from **.bash_profile**?
 
 Well, the **~/.bash_profile is loaded once**, just after opening the terminal on the local machine or logging into the remote infrastructure. Whereas **~/.bashrc** is read each time you start bash as an interactive shell (e.g., open new tab in the terminal). Thus, it is responsible for **the default settings** of your shell at the start. So, **if you want to always** have a certain prompt appearance or always load a bunch of modules at startup or be able to effortlessly call executable programs from a given path, **specify these rules in .bashrc**. Then, append the syntax provided below to your ~/.bash_profile. It will force the execution of ~/.bashrc in the scenario when ~/.bash_profile is called.
 
-```
+```bash
 if [ -f ~/.bashrc ]; then
     source ~/.bashrc
 fi
@@ -302,7 +302,7 @@ To learn more about this topic, I recommend following the discussion thread on t
 
 The definition of a prompt is stored in the $PS1 variable. You can display its value just as any other shell variable.
 
-```
+```bash
 echo $PS1
 ```
 ![shell prompt]({{ images_path }}/shell_prompt_variable.png)
@@ -341,7 +341,7 @@ The table below contains the most popular text decorations and colors used to cu
 
 You can test the result of your prompt style during development stage witch `printf` command (temporarily append a newline character `\n` to the end of your syntax when using *printf*). For a single element, you can use any pair of foreground text & background color, and a combination of multiple text decorations, all separated by `;`. Note, however, that not all decorations (e.g., *italic* or blinking) work on all types of terminals.
 
-```
+```bash
 # text decorations
 printf "\e[1mBOLD\e[0m\n"
 printf "\e[2mDIM\e[0m\n"
@@ -369,7 +369,7 @@ printf "\e[1;5;36;45mBOLD-BLINK-CYAN-TEXT-ON-PURPLE-BACKGROUND\e[0m\n"
 <p align="center">^ Note that strikethrough option didn't work on my terminal. It should look like <b><del>STRIKETHROUGH</del></b>. </p>
 
 Set your colored Prompt syntax using variables and text decorations from the tables above and paste it into your `~/.bashrc` following the given example, in which you will get the <span style="background-color: white; color: red; font-weight:600;"> &ensp; user@host:path$ &ensp;</span> for a root-user and <span style="background-color: white; color: green; font-weight:600;"> &ensp; user@host:path$ &ensp;</span> for any other user.
-```
+```bash
 if [[ $USER = "root" ]]; then
   PS1="\[\e[1;31m\]\u@\h:\w\$\e[0m "
 else
@@ -379,7 +379,7 @@ fi
 
 To get prompt like mine, <span style="background-color: black; color: cyan; font-weight:600;"> &ensp; user</span><span style="background-color: black; color: white; font-weight:300;">@host</span><span style="background-color: black; color: lightgray; font-weight:300;">(shell):</span><span style="background-color: black; color: lightgreen; font-weight:400;">path</span><span style="background-color: black; color: red; font-weight:600;">$ &nbsp;</span>, use the syntax below:
 
-```
+```bash
 PS1="\[\e[1;36m\]\u\[\e[m\]@\h\[\e[0;37m\](\s):\[\e[0;32m\]\W\[\e[0;31m\]$\[\e[m\]"
 ```
 
@@ -415,7 +415,7 @@ In Linux, the variable responsible for storing settings for coloring files and d
 
 Thus, applying colors for listing the file system is as simple as copy-paste the following snippet into your ~/.bashrc file:
 
-```
+```bash
 LS_COLORS='rs=0:di=1;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:';
 
 alias ls='ls --color=auto'
@@ -464,7 +464,7 @@ The table below lists ordered objects with the default text and background (BG) 
 
 Further, the **$CLICOLOR** variable forces using ANSI color sequences to distinguish file types. Also, make sure that selected terminal type for $TERM variable is an *xterm-color*. The setup is straightforward, simply copy-paste into your `~/.bashrc` the snippet provided below:
 
-```
+```bash
 TERM=xterm-color
 CLICOLOR=1
 LSCOLORS=Exgxcxdxcxegedabagacad
@@ -478,7 +478,7 @@ alias ls='ls -Gh'
 
 In the Unix shell, **alias** is a text-like shortcut for the more complex set of commands that can be called directly from the command line by a user-customized name. Traditionally, aliases are defined in the `~/.bashrc` file, so the predefined aliases are available for the user right after opening the terminal window.  The syntax is straightforward, use the `alias` keyword followed by the quniue name to which you assign a value using an equals sign. The value is a string containing the stream of commands, with syntax identical to that used directly on the command line.
 
-```
+```bash
 alias unique_name="command_1 | command 2 | command_3"
 ```
 
@@ -497,7 +497,7 @@ Keeping your <b>.bashrc</b> neatly organized will bring you convenience, especia
 
 Below, you can find examples of some useful aliases that should be copy-paste into your `~/.bashrc` file.
 
-```
+```bash
 ### USER's ALIASES ###
 
 # redefine default flags for ls command
@@ -527,7 +527,7 @@ While the temptation is high, you must <b>NOT create aliases to store passwords<
 
 Module loading is more applicable to work on remote machines like computing clusters, where to avoid redundancy of software installed by each user individually, certain universal **libraries are installed once** from the admin level. Then each infrastructure **user can load selected modules** into their environment from among the available. Specifically, the user can select the versions of a given module that are appropriate for their analysis. To check the available variants of a particular module, use the `module avail` command then type the name of the library or software.
 
-```
+```bash
 module avail python
 ```
 
@@ -535,7 +535,7 @@ module avail python
 
 The command returns a list of available variants along with the annotation `(D)` for the default suggested ones and `(L)` for the currently loaded ones (if applicable). To load or change a module variant use the `module load` command and the copy-paste the name of the library variant (select the name with mouse and then use the combination of keys `CTRL+C` and `CTRL+V`).
 
-```
+```bash
 module load python/3.9.2
 ```
 
@@ -543,7 +543,7 @@ module load python/3.9.2
 
 In case you want to always start your Bash shell session with a specific module loaded, the best solution is to add the command to your `~/.bashrc`. This will simplify your working routine, especially if you have an entire list of necessary modules. So let's say you would like to always have `python/3.9.2` loaded by default into your environment. Thus, add the following snippet to your `~/.bashrc`:
 
-```
+```bash
 ### USER's MODULES LOADED ON STARTUP ###
 
 module load python/3.9.2
@@ -571,7 +571,7 @@ The answer comes from virtual environments. You can create a new environment for
 
 Exporting a **$PATH** variable is probably the most commonly used example for the `export` command. It is also a common topic on programming forums, where novice bash users struggle with errors appearing when called programs don't work. $PATH is an environmental variable that tells the shell where to search in file system for executable files called by a user. To see what file system locations are added to the list of paths searched to run an executable of a program, display the contents of the $PATH variable:
 
-```
+```bash
 echo $PATH
 ```
 
@@ -579,13 +579,13 @@ echo $PATH
 
 The syntax of the $PATH variable consists of absolute paths to directories in the file system separated by a colon `:` (without spaces). The value of this variable is stored in the `~/.bashrc` file. To add a new path, edit the `~/.bashrc` file in any text editor *(e.g., nano, vim, mcedit)* and paste the new path after a colon. If this variable is not in your `~/.bashrc`, you can copy the current value displayed with the `echo $PATH` command and paste it into the file following the example:
 
-```
+```bash
 PATH="/usr/bin:/usr/local/bin:/bin:/sbin:/opt/X11/bin:"
 ```
 
 You can also add a new path to the $PATH variable directly from the command line using the `export` command. Considering that your path of interest is a directory *bin* located in your $HOME directory (*i.e., $HOME/bin*), you can update the $PATH variable as follows:
 
-```
+```bash
 export PATH="$HOME/bin:$PATH"
 ```
 

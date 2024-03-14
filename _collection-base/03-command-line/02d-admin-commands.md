@@ -107,13 +107,13 @@ To activate superuser privileges, you can either switch to the superuser account
 
 Open the terminal window and type on the command line:
 
-```
+```bash
 su -
 ```
 
 This will prompt you to enter the superuser password, and then log you in as the superuser. Then, **all commands you provide will be executed as a root user**.
 
-```
+```bash
 apt-get update
 ```
 
@@ -123,7 +123,7 @@ In this example, the `apt-get update` command is being **run as a superuser**. T
 
 Alternatively, you can use the `sudo` command to **execute a single command with superuser privileges**.
 
-```
+```bash
 sudo apt-get update
 ```
 
@@ -136,13 +136,13 @@ In this example, the `apt-get update` command is being **run with superuser priv
 
 To preview all options available with the `sudo` command, type in the command line:
 
-```
+```bash
 sudo -h
 ```
 
 It will display the options and usage syntax:
 
-```
+```bash
 sudo - execute a command as another user
 
 usage: sudo -h | -K | -k | -V
@@ -151,7 +151,8 @@ usage: sudo -l [-AknS] [-g group] [-h host] [-p prompt] [-U user] [-u user] [com
 usage: sudo [-AbEHknPS] [-C num] [-D directory] [-g group] [-h host] [-p prompt] [-R directory] [-T timeout] [-u user] [VAR=value]
             [-i|-s] [<command>]
 usage: sudo -e [-AknS] [-C num] [-D directory] [-g group] [-h host] [-p prompt] [-R directory] [-T timeout] [-u user] file ...
-
+```
+```
 Options:
   -A, --askpass                 use a helper program for password prompting
   -b, --background              run command in the background
@@ -190,7 +191,7 @@ Here are a few practical examples of using the `sudo` command:
 
 **1. Updating the system's package manager database:**
 
-```
+```bash
 sudo apt-get update
 ```
 
@@ -203,7 +204,7 @@ In this example, the apt-get update command is being run with superuser privileg
 
 **2. Installing a software package:**
 
-```
+```bash
 sudo apt-get install python3
 sudo apt-get install git
 sudo apt-get install nodejs
@@ -216,7 +217,7 @@ In these examples, the apt-get install command is being run with superuser privi
 
 **3. Changing the ownership of a file:**
 
-```
+```bash
 sudo chown root:root /etc/nginx/nginx.conf
 ```
 
@@ -225,7 +226,7 @@ In this example, the `chown` command is being run with superuser privileges, whi
 
 **4. Changing the permissions of a file:**
 
-```
+```bash
 sudo chmod 644 /etc/nginx/nginx.conf
 ```
 
@@ -234,7 +235,7 @@ In this example, the `chmod` command is being run with superuser privileges, whi
 
 **5. Adding a user to the sudo group:**
 
-```
+```bash
 sudo usermod -aG sudo username
 ```
 
@@ -242,19 +243,19 @@ In this example, the `usermod` command is being run with superuser privileges, w
 
 **6. Modifying a system configuration file:**
 
-```
+```bash
 sudo nano /etc/hosts
 ```
 
 In this example, the `nano` text editor is being run with superuser privileges, which is necessary to modify the `/etc/hosts` file. The `/etc/hosts` file is used to map hostnames to IP addresses, and is often used to configure local domain names or block unwanted websites. The file can NOT be edited without superuser privileges.
 
-```
+```bash
 sudo vi /etc/ssh/sshd_config
 ```
 
 In this example, the `vi` text editor is being run with superuser privileges, which is necessary to modify the `/etc/ssh/sshd_config` file. The `/etc/ssh/sshd_config` file is used to configure the SSH daemon, which allows users to remotely access the system.
 
-```
+```bash
 sudo nano /etc/fstab
 ```
 
@@ -263,7 +264,7 @@ In this example, the `vi` text editor is being run with superuser privileges, wh
 
 **7. Displaying the system log:**
 
-```
+```bash
 sudo tail /var/log/syslog
 ```
 
@@ -271,25 +272,25 @@ In this example, the `tail` command is being run with superuser privileges, whic
 
 **8. Restarting a system service:**
 
-```
+```bash
 sudo systemctl restart nginx
 ```
 
 In this example, the systemctl restart command is being run with superuser privileges, which is necessary to restart the nginx service. NGINX is a web server that is often used to serve static content such as images and HTML files, and to reverse proxy HTTP and HTTPS traffic to backend servers. It is known for its high performance, stability, and low resource consumption. NGINX can be installed as a package on most operating systems using the `sudo apt-get install nginx` command.
 
-```
+```bash
 sudo systemctl restart mysql
 ```
 
 The `mysql` service is the MySQL database server, which is used to store and manage data. Restarting the service may be necessary to apply configuration changes or to troubleshoot problems.
 
-```
+```bash
 sudo systemctl restart ssh
 ```
 
 The `ssh` service is the SSH daemon, which allows users to remotely access the system.
 
-```
+```bash
 sudo systemctl restart cron
 ```
 

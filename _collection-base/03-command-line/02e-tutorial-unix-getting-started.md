@@ -52,7 +52,7 @@ A terminal is the program that is used to access files on your laptop/computer t
 
 * <span style="color:Blue">SSH</span> is short for **S**ecure <span style="color:Blue">SH</span>ell
 
-```
+```bash
 ssh (SSH client) is a program for logging into a remote machine and for
      executing commands on a remote machine.  It is intended to provide secure
      encrypted communications between two untrusted hosts over an insecure
@@ -111,7 +111,7 @@ Let us start by getting everyone logged in and to the same location in the file 
 
 **NOTE** When you are prompted for a password you won't see the typing.  Just keep typing.
 
-```
+```bash
 ssh usename@hostname
 ```
 * username is your username for the system
@@ -125,7 +125,7 @@ ssh usename@hostname
 
 Once you have logged in you will see a bunch of text fly by your screen.  That text is the welcome message on the remote machine. Now that everyone is logged in. Let us make sure everyone is in their home directory and set the behavior of the pwd command so there is no difference in the output of this command.  Type in the two following commands and hit the &#8629; (`Enter`) key
 
-```
+```bash
 cd
 alias pwd="pwd -P"
 alias ls='ls --color=auto -v'
@@ -150,7 +150,7 @@ This section will introduce you to some basic file/directory navigation
 ## mkdir -- <span style="color:Blue">M</span>a<span style="color:Blue">k</span>e <span style="color:Blue">Dir</span>ectory Command
 Let's make a new directory (folder) called unixTutorial.  To create a directory, the `mkdir` (`m`a`k`e `dir`ectory) command can be used. Type in the next command and hit the &#8629; (`Enter`) key. Notice there is a space between the mkdir command and the filename we supply to the mkdir command
 
-```
+```bash
 mkdir unixTutorial
 ```
 
@@ -158,7 +158,7 @@ mkdir unixTutorial
 
 Once you hit return, you will not see anything it will just give you a new prompt and if you try to type it again you will get an error message. Go ahead and try this if you want.
 
-```
+```bash
 mkdir unixTutorial
 mkdir: cannot create directory ‘unixTutorial’: File exists
 ```
@@ -168,7 +168,7 @@ mkdir: cannot create directory ‘unixTutorial’: File exists
 
 At this point you might be feeling like you are completely blind because you can't see the result of what you did.  So let me teach you a few more commands and change that.  This command will tell you where you are.
 
-```
+```bash
 pwd
 ```
 In my case this returns the following to standard out where severin is my username that I used to log in.
@@ -182,26 +182,26 @@ What this is telling me is that I am in a directory named severin which is in a 
 
 You will recall we made a directory called unixTutorial above. We can change to that directory using the `cd` command.
 
-```
+```bash
 cd unixTutorial
 ```
 Now if we type the path of working directory command `pwd` we get the following
-```
+```bash
 pwd
-/home/severin/unixTutorial
+# /home/severin/unixTutorial
 ```
 We are now in a directory called unixTutorial which is a subdirectory of severin which is a subdirectory of home.
 
 To change back to the previous directory we can type in the full path like so.
 
-```
+```bash
 cd /home/severin/
 ```
 
 or we can use `..` which refers to the directory above the one you are in and type this.
 
 
-```
+```bash
 cd ..
 ```
 
@@ -209,7 +209,7 @@ cd ..
 
 Try this out with the following commands
 
-```
+```bash
 cd
 cd unixTutorial
 pwd
@@ -284,7 +284,7 @@ between galaxies.
 
 Start by copying the text above using your mouse then in a terminal use nano to create a file named myFirstfile.txt
 
-```
+```bash
 nano myFirstfile.txt
 ```
 Paste your text and then hit `ctr x` press `y` for yes to save and hit `enter`, which will return you to the prompt.  This will save the file with the text in it.
@@ -326,8 +326,9 @@ A `cat` has a `head` and a `tail`, `more` or `less`
 
 To fully appreciate the commands for viewing the contents of a file let's create a file with the numbers from 1 to 100.  Execute the following command and put it into a file named `numSeq.txt`
 
-```
+```bash
 seq 1 1 100
+
 #copy the output then use nano
 nano numSeq.txt
 #make sure there is no extra empty lines at the end of the file.
@@ -341,7 +342,7 @@ This command will print out the entire file. Try it out with the numSeq.txt file
 
 This command will give you the first 10 lines of a file. Try it out with the numSeq.txt file.
 
-```
+```bash
 head numSeq.txt
 head -n 5 numSeq.txt
 ```
@@ -351,20 +352,20 @@ The `-n` parameter tells the `head` function to printout in this case 5 lines in
 
 This command will give you the last 10 lines of a file.  Try it out with the numSeq.txt file.
 
-```
+```bash
 tail numSeq.txt
 tail -n 5 numSeq.txt
 ```
 
 ## `more` -- command to step through a file one screen length at a time using the spacebar. hit `q` to quit the file before reaching the end.
 
-```
+```bash
 more numSeq.txt
 ```
 
 ## `less` -- similar to the more command but lets you scroll backwards as well.
 
-```
+```bash
 less numSeq.txt
 ```
 
@@ -396,7 +397,7 @@ less numSeq.txt
 
 This command is used to quickly create many empty files.
 
-```
+```bash
 touch AA.txt
 touch BB.txt
 touch CC.txt
@@ -411,7 +412,7 @@ Now if you use the `ls` command the standard output will be
 1.txt 2.txt 3.txt AA.txt BB.txt CC.txt
 ```
 You can also create multiple files using this command.
-```
+```bash
 touch DD.txt EE.txt GG.txt 4.txt 5.txt 6.txt
 ls
 ```
@@ -424,7 +425,7 @@ The standard output now returns
 ## `mkdir` -- <span style="color:Blue">M</span>a<span style="color:Blue">k</span>e <span style="color:Blue">Dir</span>ectory
 We have already discussed the mkdir command but here is a brief review.  For this section of the tutorial we are going to make four folders named Numbers, Letters, Deleteme and Deleteme2.
 
-```
+```bash
 mkdir Numbers
 mkdir Letters
 mkdir Deleteme
@@ -435,7 +436,7 @@ ls
 
 Let's also put a couple of files in the Deleteme and Deleteme2 folders.  We can accomplish this by using the touch command and a local path to where we want the file.  Up to this point we have put all the files into the same folder we are in.  In this example we will create an empty file named deleteme.txt and deleteme2 in the subfolders Deleteme and Deleteme2.
 
-```
+```bash
 touch Deleteme/deleteme.txt
 touch Deleteme/deleteme1.txt
 touch Deleteme2/deleteme2.txt
@@ -444,7 +445,7 @@ touch Deleteme2/deleteme3.txt
 
 You can verify its there by using the ls command
 
-```
+```bash
 #ls will show you the subfolder Deleteme and Deleteme2 exists
 ls
 
@@ -463,7 +464,7 @@ This command can remove an empty directory
 
 Let's remove the extra Deleteme2 directory using this command
 
-```
+```bash
 ls
 rmdir Deleteme3
 ls
@@ -472,11 +473,11 @@ The ls commands show the before and after usage of this command.
 
 Now try to delete the Deleteme folder
 
-```
+```bash
 rmdir Deletem2
 ```
 It will return
-```
+```bash
 rmdir: Deleteme2: Directory not empty
 ```
 In order to remove this directory with the rmdir command you would have to delete all the files and folders in the directory.  However, you can use the remove (`rm`) command instead.
@@ -485,7 +486,7 @@ In order to remove this directory with the rmdir command you would have to delet
 
 In this example, we will remove the file deleteme3.txt in the Deleteme2 directory.
 
-```
+```bash
 ls Deleteme
 ls Deleteme2
 rm Deleteme2/deleteme3.txt
@@ -497,13 +498,13 @@ ls Deleteme
 
 Now, having deleted both files from Deleteme2 directory we can use the rmdir command to delete the folder.
 
-```
+```bash
 rmdir Deleteme2
 ```
 
 If however, we do not want to go through and delete all the files we can also use the `rm` command to delete a folder without emptying it.
 
-```
+```bash
 ls
 rm -r Deleteme
 ls
@@ -524,7 +525,7 @@ If we look in our unixTutorial directory using the `ls` command There should onl
 
 Let's clean this up by moving all of the numbered txt files into Numbers and all the Letter txt files into Letters
 
-```
+```bash
 mv 1.txt Numbers
 mv 2.txt 3.txt Numbers
 mv 4.txt 5.txt 6.txt Numbers
@@ -535,14 +536,14 @@ As you can see you can move more than one file at a time into a folder by listin
 
 The second function for the mv command is to rename a file.  If you look inside the Letters directory, you will see that one of the letter.txt files is not in sequence.
 
-```
+```bash
 ls Letters
 AA.txt BB.txt CC.txt DD.txt EE.txt GG.txt
 ```
 
 If we wanted to rename GG.txt to FF.txt we would do the following.
 
-```
+```bash
 cd Letters
 ls
 mv GG.txt FF.txt
@@ -553,33 +554,33 @@ ls
 
 The `cp` command can be used to duplicate a file
 
-```
+```bash
 ls  
 cp myFirstFile.txt mySecondfile.txt
 ls
 ```
 You can verify it is a copy by `cat`ing the file, or you can use `more` or `less`
-```
+```bash
 cat myFirstfile.txt
 cat mySecondfile.txt
 ```
 
 You can also use the `-l` long format parameter that modifies the `ls` command to get more information about the files such size, date of creation, and ownership. As you can see with the following commands in the 5th column, the files are the same size (563 bytes).
 
-```
+```bash
 ls -l myFirstfile.txt mySecondfile.txt
 ```
 
 
 To copy a folder you have to add the `-r` parameter to copy recursively
 
-```
+```bash
 cp -r Letters Letters_copy
 ```
 
 Verify to yourself that the contents of the folder was copied correctly
 
-```
+```bash
 ls -l Letters
 ls -l Letters_copy
 ```
@@ -613,14 +614,14 @@ Up to this point we have learned individual commands that give you roughly the s
 This function will give you the number of lines, the number of words and the number of characters in a file.
 
 The file numSeq.txt for example we created earlier and we know there are 100 lines and 100 words (ie numbers).  Use the following command to confirm this and to also determine the number of characters this file has.
-```
+```bash
 wc  numSeq.txt
 ```
 
 
 The wordcount  (`wc`) output can be modified with parameters to give you just the line count (`-l`), just the word count (`-w`) or just the character count ('-c').
 
-```
+```bash
 wc -l numSeq.txt
 wc -c numSeq.txt
 wc -w numSeq.txt
@@ -635,7 +636,7 @@ This command can take any individual character and replace it with another chara
 
 For example, it can be useful to replace the output of the `seq` command with a comma separate list of numbers.  This command is a little different than other commands as it requires that the command requires standard output as the input rather than a filename.  To do this, we will use the `<` redirect symbol.
 
-```
+```bash
 tr '\n' ',' < numSeq.txt
 ```
 The above command means translate new line characters `\n` into commas take input `<` from file numSeq.txt
@@ -652,7 +653,7 @@ Pipe can be found on different keyboards as shown below by the yellow boxes.  Pi
 
 For example we could repeat the last `tr` command by using the pipe `|` as follows.
 
-```
+```bash
 cat numSeq.txt | tr '\n' ','
 ```
 The above command first uses `cat` to put the contents of the file to standard out and then pipe's `|` it to the translate `tr` command.  If you are having trouble finding the `|` on the keyboard see the yellow highlighted keys below.
@@ -669,13 +670,13 @@ Generate random permutations of lines of the file supplied.
 
 Let's use this command to shuffle our numSeq.txt file and then output into a new file using another redirect symbol `>`. Let's repeat this process but instead of overwriting the new file we append `>>` the standard output to the numSeqRandom.txt file.
 
-```
+```bash
 shuf numSeq.txt > numSeqRandom.txt
 shuf numSeq.txt >> numSeqRandom.txt
 ```
 The first command will shuffle the contents of numSeq.txt and then redirect `>` the standard output to a new file named numSeqRandom.txt.  The second command will append the same content to the file rather than over writing the file.  Let's confirm we have 200 randomly sorted lines.
 
-```
+```bash
 wc -l numSeqRandom.txt
 ```
 
@@ -686,7 +687,7 @@ wc -l numSeqRandom.txt
 
 We can use this command to sort the shuffled numSeqRandom.txt file
 
-```
+```bash
 sort numSeqRandom.txt | head
 1
 1
@@ -714,12 +715,11 @@ Unfortunately, this isn't sorted numerically as we expect.  To do that we use th
 3
 4
 4
-
 ```
 
 This is closer but the `-n` parameter doesn't handle the scientific notation in order to correctly sort this, we will need to use the `-g` general numerical sort parameter.
 
-```
+```bash
 sort -g numSeqRandom.txt | head
 1e-10
 1
@@ -739,13 +739,13 @@ That worked but how do we remove the duplicates.
 
 uniq will remove duplicate lines but only if the file is sorted first.
 
-```
+```bash
 wc numSeqRandom.txt
 uniq numSeqRandom.txt | wc -l
 ```
 The above comamnd fails with the same number or close to the same number of line as the original file.
 
-```
+```bash
 wc numSeqRandom.txt
 sort -g numSeqRandom.txt | uniq | wc -l
 ```
@@ -755,7 +755,7 @@ However, when we sort first we remove all the duplicate numbers and should have 
 
 If we wanted to know how many of each number there was in this file we could use the `-c` parameter for the `uniq` command.
 
-```
+```bash
 sort -g numSeqRandom.txt | uniq -c | head
 1 1e-10
    2 1
@@ -772,7 +772,7 @@ The first number represents the number of times the line was found (its frequenc
 
 #### <span style="color:Green">Exercise:</span> Identify the 5 most used words in myFirstfile.txt.  (Hint: cat,tr,sort, uniq, sort, tail, \|)
 
-```
+```bash
 cat myFirstfile.txt  | tr ' ' '\n' | sort | uniq -c | sort -n | tail -n 4
   4 is
   4 space
@@ -781,7 +781,7 @@ cat myFirstfile.txt  | tr ' ' '\n' | sort | uniq -c | sort -n | tail -n 4
 ```
 If that last line looks intimidating, build it up one command at a time and see what each output produces.
 
-```
+```bash
 cat myFirstfile.txt | head
 cat myFirstfile.txt | tr ' ' '\n' | head
 cat myFirstfile.txt | tr ' ' '\n' | sort | head
@@ -806,7 +806,7 @@ It is through this method that a long Unix 'one-liner' can be created. By lookin
 
 This command will replace your find command in a text document.
 
-```
+```bash
 grep "space" myFirstFile.txt
 grep "space" myFirstFile.txt | wc
 2
@@ -815,7 +815,7 @@ This will print the lines where it finds the word "space" in it.
 
 If you wanted to print every occurrence of the word then you can use the '-o' parameter.  You might want to use that to count the number of times a word occurred in a file.
 
-```
+```bash
 grep -o "space" myFirstFile.txt
 grep -o "space" myFirstFile.txt | wc
 ```
@@ -835,7 +835,7 @@ Browse all your previously used commands by typing `history` on your terminal (t
 
 It is often convenient to find a command or oneliner by searching your history. Try these oneliners.
 
-```
+```bash
 history | grep myFirstFile | tail -n 5
 history | grep -i myfirst | tail -n 5
 history | grep -i myfirst | grep -v space | grep uniq
@@ -847,7 +847,7 @@ You can also recall your previous commands by pressing &#8593; or &#8595; arrow 
 
 First, let's undo our sorting of numbers and letters by using the `*` variable that represents all letters repeated for as many times
 
-```
+```bash
 mv Numbers/*.txt .
 mv Letters/*.txt .
 ls
@@ -855,12 +855,12 @@ ls
 Here is an easier way using variables. You will notice that all the numbers have a single character and all the letters have two characters.  We can use the `?` variable to represent any single character.  Therefore, all the Number files will have this pattern: `?.txt` and all the Letter text files will have this pattern: `??.txt`
 
 First, verify this with the `ls` command
-```
+```bash
 ls ??.txt
 ls ?.txt
 ```
 Then repeat the sorting using the `mv` command
-```
+```bash
 mv ??.txt Letters
 mv ?.txt Numbers
 ```
@@ -871,22 +871,22 @@ And we are done.
 
 Most common use of `sed` is to substitute text, matching a pattern. The syntax for doing this in `sed` is as follows:
 
-```
+```bash
 sed 'OPERATION/REGEXP/REPLACEMENT/FLAGS' FILENAME
 ```
 Let's replace the word galaxies with the word universes in myFirstFile.txt
 
-```
+```bash
 sed 's/galaxies/universes/g' myFirstFile.txt
 ```
 We can either write it to a new file like this.
 
-```
+```bash
 sed 's/galaxies/universes/g' myFirstFile.txt > myFirstFilev2.txt
 ```
 
 or we can edit the file inplace using the `-i`, meaning the change will take effect in the file without the generation of a new file.
-```
+```bash
 sed -i 's/galaxies/universes/g' myFirstFile.txt
 ```
 
@@ -903,7 +903,7 @@ sed -i 's/galaxies/universes/g' myFirstFile.txt
 
 Here are some images you can download.  You can download anything on the web with this command as long as you have an https address. First let's make sure we are still in the unixTutorial folder.
 
-```
+```bash
 pwd
 cd
 cd unixTutorial
@@ -918,7 +918,7 @@ wget https://bioinformaticsworkbook.org/Appendix/Unix/assets/saltandpepper.jpg
 
 To transfer files from a remote machine to your local machine you can use `scp`.  Open up a new terminal on your local machine and change to your downloads folder.
 
-```
+```bash
 cd Downloads
 scp username@remotehostname:/home/andrew.severin/unixTutorial/Cat.jpg .
 
@@ -935,7 +935,7 @@ The above command does a secure copy from the remote server : in folder unixTuto
 
 Sometimes you want to download an entire folder.  This can be achieved using the `rsync` command. In your local machine in the Downloads folder execute the following command.
 
-```
+```bash
 rsync -avz -e ssh username@remotehostname:/home/andrew.severin/unixTutorial .
 ```
 
@@ -947,7 +947,7 @@ rsync -avz -e ssh username@remotehostname:/home/andrew.severin/unixTutorial .
 
 This command will provide a description of a unix command and list the parameters that can be used to modify its behavior.  To exit the manual for a command you press `q` like you do in the `less` command.
 
-```
+```bash
 man ls
 man cat
 man more
@@ -958,7 +958,7 @@ man less
 
 Creating a symbolic link can be very useful when you need the same file in multiple locations.  This command will create a link to the file without actually duplicating the file.  All the unix commands will still work on the symbolic link as if it were a copy of the file in the folder.
 
-```
+```bash
 cd Numbers
 ls
 ln -s ../myFirstFile.txt
@@ -972,7 +972,7 @@ You can see that you now have a new "file" which is really a pointer that is lin
 * The rm utility removes symbolic links, not the files referenced by the links.
 * Remote copying of files and folders may copy only the symbolic link and not the file it is linked to unless specified as a parameter.
 
-```
+```bash
 rm myFirstFile.txt
 ```
 This will not affect the file in unixTutorial but will remove it from the subfolder Numbers.

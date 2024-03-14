@@ -73,26 +73,26 @@ lrwxrwxrwx. 1 arnstrm domain users              12 Mar 20  2017 ncbi -> arnstrm/
 
 
 To set/modify a file's permissions you need to use the `chmod` command (`ch`ange `mod`e). Only the owner of a file can alter a file's permissions. The syntax:
-```
+```bash
 chmod [OPTIONS] RELATIONS[+ or -]PERMISSIONS FILE
 ```
 ### 1. Adding permissions
 
-```
+```bash
 chmod RELATIONS+PERMISSIONS FILENAME
 ```
 is the add permissions syntax, an example
-```
+```bash
 chmod g+rwx FILENAME
 ```
 which grants read, write and execute permissions for group
 
-```
+```bash
 chmod g+r FILENAME
 ```
 grants read permission for group
 
-```
+```bash
 chmod a+rwx FILENAME
 ```
 makes the file public (don’t do this to any file/directory unless you want to share)
@@ -100,24 +100,24 @@ makes the file public (don’t do this to any file/directory unless you want to 
 
 ### 2. Removing permissions:
 
-```
+```bash
 chmod RELATIONS-PERMISSIONS FILENAME
 ```
 is the syntax for removing permissions, examples:
 
-```
+```bash
 chmod g-wx FILENAME
 ```
 removes write and execute permissions for group
-```
+```bash
 chmod g-rwx FILENAME
 ```
 removes all permissions for group
-```
+```bash
 chmod a-rwx FILENAME
 ```
 removes all permissions for others
-```
+```bash
 chmod a-x FILENAME
 ```
 removes execution permissions for others
@@ -126,7 +126,7 @@ OPTIONS include `-R` recursively (the permissions are applied to all the files, 
 
 
 ***Task 1.12: Check the permissions for the files located in the tutorials directory.***
-```
+```bash
 ls -l
 ```
 *What permissions does the group have on these files? Which group does your account belong to?*
@@ -138,7 +138,7 @@ In this section, you will learn how to check system resources (space, memory, di
 ### 1. Directory size
 
 To get the size of the directory, you can use the `du` command (`d`isk `u`sage)
-```
+```bash
 du -sh DIRECTORY
 ```
 The options are to summarize (`s`) and human readable format (`h`). While the summarize will avoid printing size for every file in the directory, the human readable format will give the folder size in kilo/mega/giga bytes  (instead of bytes).
@@ -147,7 +147,7 @@ The options are to summarize (`s`) and human readable format (`h`). While the su
 
 If you are interested in knowing the size of a particular file, you can use the `ls` command with `l` and `h` options
 
-```
+```bash
 ls -lh FILENAME
 ```
 Check unix-basics-1 for more details about list command. The option `l` list in a long format and `h` in human readable file sizes.
@@ -156,7 +156,7 @@ Check unix-basics-1 for more details about list command. The option `l` list in 
 
 To display free disk space and mounted devices, you can use the `df` command. If no file name is given, the space available on all currently mounted file systems is shown
 
-```
+```bash
 df -h
 ```
 again, using the option `-h` will give you results in human readable format.
@@ -165,7 +165,7 @@ again, using the option `-h` will give you results in human readable format.
 ### 4. Available memory
 
 If you want to see how much memory is available on your machine, you can use the `free` command.
-```
+```bash
 free
 ```
 Output would be:
@@ -186,7 +186,7 @@ As you can see the numbers are in bytes and very difficult to understand. You ca
 | `-b`    | display numbers in bytes, (default). |
 
 Example:
-```
+```bash
 free -g
 ```
 output would be:
@@ -202,7 +202,7 @@ This is much easier to understand.
 
 
 Just to get the Operating system name:
-```
+```bash
 cat /etc/system-release
 ```
 Output would be:
@@ -211,7 +211,7 @@ Red Hat Enterprise Linux Server release 6.4 (Santiago)
 ```
 
 If no such file, they try:
-```
+```bash
 cat /etc/*release*
 ```
 you might get:
@@ -222,7 +222,7 @@ cpe:/o:redhat:enterprise_linux:6server:ga:server
 ```
 
 The other command is the `uname`
-```
+```bash
 uname -a
 ```
 output would be:
@@ -233,7 +233,7 @@ which is Kernel, node, kernel version, kernel release date, machine type, proces
 
 You can also ask for a specific thing by using these options:
 
-```
+```bash
 uname -s # kernel name
 uname -n # node
 uname -v # version
@@ -247,12 +247,12 @@ uname -o # OS type
 ### 7. Processor and Memory information:
 
 These information will be in the file. Just by cataloging the file, you can find read these information:
-```
+```bash
 cat /proc/meminfo
 ```
 for the memory information, and
 
-```
+```bash
 cat /proc/cpuinfo
 ```
 for the CPU information
@@ -261,7 +261,7 @@ for the CPU information
 
 To get the IP address for the machine you can use the `ifconfig` command.
 
-```
+```bash
 ifconfig
 ```
 it will lists all properties as follows:
@@ -280,6 +280,6 @@ eth2      Link encap:Ethernet  HWaddr 00:0N:00:00:N0:NN
 ```
 you can use the combination of commands to just display the IP address as follows:
 
-```
+```bash
 ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'
 ```

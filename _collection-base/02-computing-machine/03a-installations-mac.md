@@ -38,7 +38,7 @@ Xcode is Apple's integrated development environment for macOS, used to develop s
 
 Install the XCode Command line tools:
 
-```
+```bash
 xcode-select --install
 ```
 
@@ -47,7 +47,7 @@ For those applications that are still compiled for Intel processors, Apple has R
 
 Run the following command on the terminal:
 
-```
+```bash
 /usr/sbin/softwareupdate --install-rosetta --agree-to-license
 ```
 
@@ -59,15 +59,14 @@ Then, restart your computer.
 Homebrew is a package manager that makes installing many useful packages really easy. In short, it installs the software you need that Apple didn’t. The tool installs packages into their own directory and then symlinks their files into `path:/usr/local` on macOS.
 
 **Download HomeBrew:**
-```
+```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
 Be sure to change *'YourNAME'* to your local username.
-```
+```bash
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/YourNAME/.zprofile
-   eval "$(/opt/homebrew/bin/brew shellenv)"
-
+eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
 **Create a brew file:**
@@ -76,7 +75,7 @@ I update this brew file as I add more programs with brew. That way, I will alway
 
 Place the following text into a file called `brewfile`.
 
-```
+```bash
 tap "homebrew/bundle"
 tap "homebrew/core"
 tap "homebrew/cask"
@@ -88,35 +87,35 @@ brew "gawk"
 brew "gnu-which"
 brew "gzip"
 brew "unzip"
-brew "coreutils"  #Adds a few extra commands typically found in Unix systems
-brew "curl" #Updated curl
-brew "dos2unix" #For those pesky dos line endings
-brew "findutils" #find xargs locate updatedb
-#brew "git" #if you installed XCODE then this is already installed
-brew "go" #programming language
-brew "jq" #https://stedolan.github.io/jq/ #like sed for JSON
-brew "ruby", link: true #programming language
-brew "rust" #programming language
-brew "tree" #see your file structure
-brew "wget" #like curl but better
-cask "docker" #Not singularity but can be useful.
-cask "iterm2" #An advanced Terminal.
-cask "xquartz" #Required for some plotting programs like R
-cask "figtree" #Visualize phylogenic trees
-brew "tcl-tk" #Needed for some programs
+brew "coreutils"           # adds a few extra commands typically found in Unix systems
+brew "curl"                # updated curl
+brew "dos2unix"            # for those pesky dos line endings
+brew "findutils"           # find xargs locate updatedb
+#brew "git"                # if you installed XCODE then this is already installed
+brew "go"                  # programming language
+brew "jq"                  # https://stedolan.github.io/jq/ #like sed for JSON
+brew "ruby", link: true    # programming language
+brew "rust"                # programming language
+brew "tree"                # see your file structure
+brew "wget"                # like curl but better
+cask "docker"              # not singularity but can be useful.
+cask "iterm2"              # an advanced Terminal.
+cask "xquartz"             # required for some plotting programs like R
+cask "figtree"             # visualize phylogenic trees
+brew "tcl-tk"              # needed for some programs
 tap "brewsci/bio/"
-brew "brewsci/bio/pymol" #Visualize protein structures
-brew "igv"  #Genome browser
-cask "jbrowse" #A Better Genome browser
-brew "htop"  #A different type of top for your mac
-brew "pygments" #color syntax
+brew "brewsci/bio/pymol"   # visualize protein structures
+brew "igv"                 # genome browser
+cask "jbrowse"             # a Better Genome browser
+brew "htop"                # a different type of top for your mac
+brew "pygments"            # color syntax
 
 brew "fastqc"
 ```
 
 Execute the following command in the same folder as the `brew file` defined above and it will install all of the programs.
 
-```
+```bash
 brew bundle
 ```
 
@@ -146,24 +145,24 @@ Here are some recommended packages, which can be easily incorporated into the ed
 It is a powerful terminal. I haven't utilized its features fully. One option I felt was missing was 'skip by the word' on the command line, but apparently, that is a really-easy fix since iterm2 is fully configurable.  
 
 [How to skip by word in iterm2](https://coderwall.com/p/h6yfda/use-and-to-jump-forwards-backwards-words-in-iterm-2-on-os-x)
-  * esc + f  
-  * esc + b
+  * `esc + f`  
+  * `esc + b`
 
 ##### *Add Oh-My-ZSH to make the terminal more useful*
 
-```
+```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
 This generates a new .zshrc file.  Change the line with plugins to the following.  Include what is useful to you.  I don't use sublime or vscode but they are quite popular.
 
-```
+```bash
 plugins=(git z github history osx pip pyenv pylint python sublime vscode)
 ```
 
 ##### *Setting up .zshrc / .bashrc*
 
-```
+```bash
 # Aliases
 pcat='pygmentize -f terminal256 -O style=native -g'
 ```
@@ -180,17 +179,18 @@ If you start using Terminal, Mac will now ask you every time if you change direc
 ##### *Install midnight commander file menager*
 
 Install midnight-commander with `brew`:
-```
+```bash
 brew install midnight-commander
 ```
+
 And run it calling `mc` command in the terminal. Use [mc cheat sheet](https://gist.github.com/sgergely/3793166) for Mac to familiarize yourself with keyboard shortcuts.
 
 ### Git setup
 
 You will want to copy over the following files from your old machine to your new machine to make github and Atom work again with pushes and pulls.  Github does not allow username/password pushes/fetches anymore.
 
-* .gitconfig
-* .git-credentials
+* `.gitconfig`
+* `.git-credentials`
 
 I also had to create a new ssh key in my github account for my new laptop. If you need a refresher on how to do this see this [GitHub tutorial](https://bioinformaticsworkbook.org/Appendix/github/introgithub.html#gsc.tab=0).
 
@@ -202,7 +202,7 @@ I also had to create a new ssh key in my github account for my new laptop. If yo
 
 Download via terminal both `macfuse` and and `sshfs` from osxfuse GitHub repository.
 
-```
+```bash
 wget https://github.com/osxfuse/osxfuse/releases/download/macfuse-4.2.4/macfuse-4.2.4.dmg
 wget https://github.com/osxfuse/sshfs/releases/download/osxfuse-sshfs-2.5.0/sshfs-2.5.0.pkg
 ```
@@ -211,7 +211,7 @@ Then, find the files in your Downloads folder and run the executable files in th
 
 ## Install Developer Libraries
 
-### ### Install Conda
+### Install Conda
 
 ***Miniforge3 for both ARM and Intel chips.***
 
@@ -222,7 +222,7 @@ Then, find the files in your Downloads folder and run the executable files in th
 
 I installed the x86 version in a folder with `_x86` at the end of it. This will become important later.
 
-```
+```bash
                           ~/Software/miniforge3
 base                  *   ~/Software/miniforge3_x86
 ```
@@ -234,7 +234,7 @@ This now gives us two base conda environments.  One for installations native to 
 This website does a really good job explaining that we just need to change the code in the `.zshrc` file: [Changing base conda installs](https://stackoverflow.com/questions/58131555/how-to-change-the-path-of-conda-base).
 <br>I placed all of the next code at the very end of this file. Oh-My-ZSH has a lot of other text in this file.  Leave that alone.
 
-* .zshrc
+* `.zshrc`
 
 This file of course will look slightly different as you will have placed the miniforge3 folder in a different location then on my laptop.
 
@@ -262,7 +262,6 @@ The main point that the website above makes is that in order to change the base 
 
 
 ```bash
-
 if [[ $x86true -eq 1 ]]
 then
 x86="_x86"
@@ -292,17 +291,17 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(anaconda ...ENVS)
 As you can see I added an if statement that changes a variable `$x86` which I placed at the the end of the folder name to modify the conda location. With this modification, we can create two new functions that will permit us to very quickly change between base conda installations.
 
 
-* condaArm
+* **condaArm**
 
-```
+```bash
 x86true=0
 source ~/.zshrc
 conda info --envs
 ```
 
-* condaX86
+* **condaX86**
 
-```
+```bash
 x86true=1
 source ~/.zshrc
 conda info --envs
@@ -310,13 +309,13 @@ conda info --envs
 
 To change between them all you have to do is source the file
 
-```
+```bash
 source condaX86
 ```
 
 or
 
-```
+```bash
 source condaArm
 ```
 
@@ -325,19 +324,19 @@ source condaArm
 
 Most python libraries can be easily installed using `pip`.
 
-```
+```bash
 pip install <module_name>
-
 ```
+
 Key commonly used modules should be pre-installed on the HPC infrastructure. You can find and load them with the `module` command.
 
-```
+```bash
 module avail <module_name>
 module load <module_name>
 ```
 
 
-### Install R
+## Install R
 
 Install R from the package from R cran site.
 
@@ -349,26 +348,26 @@ Install R from the package from R cran site.
 **Error** "R can't be opened because Apple cannot check it for malicious software"
   * [Monterey Arm version 4.2](https://mac.r-project.org/monterey/R-devel/R-GUI-8008-4.2-monterey-arm64-Release.dmg)
 
-  ### Install R Studio
-  Up your R desktop game by installing R studio.
+### Install R Studio
+Up your R desktop game by installing R studio.
 
-  * [https://www.rstudio.com/products/rstudio/download/#download](https://www.rstudio.com/products/rstudio/download/#download)
-
-
-  ***Check to see R is working***
-
-  I use plot to quickly test the installation.
-
-  ```
-  plot(1:10)
-  ```
-
-  A window should pop up with a scatter plot along the diagonal.
+* [https://www.rstudio.com/products/rstudio/download/#download](https://www.rstudio.com/products/rstudio/download/#download)
 
 
-  ### Install R Manager [Renv](https://cran.r-project.org/web/packages/renv/)
+***Check to see R is working***
 
-  I haven't explored this enough yet, but it would make sense to have a good package manager for all the potential R packages you might install. Since some can conflict, it can also be good to have separate conda environments for R packages.
+I use plot to quickly test the installation.
 
-  * https://cran.r-project.org/web/packages/renv/
-  * https://6chaoran.wordpress.com/2020/07/20/introduction-of-renv-package/
+```r
+plot(1:10)
+```
+
+A window should pop up with a scatter plot along the diagonal.
+
+
+### Install R Manager [Renv](https://cran.r-project.org/web/packages/renv/)
+
+I haven't explored this enough yet, but it would make sense to have a good package manager for all the potential R packages you might install. Since some can conflict, it can also be good to have separate conda environments for R packages.
+
+* [https://cran.r-project.org/web/packages/renv/](https://cran.r-project.org/web/packages/renv/)
+* [https://6chaoran.wordpress.com/2020/07/20/introduction-of-renv-package/](https://6chaoran.wordpress.com/2020/07/20/introduction-of-renv-package/)

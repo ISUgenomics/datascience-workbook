@@ -93,7 +93,7 @@ Commands usually take one or more **arguments**, which condition how the ordered
 
 In most cases, operations are performed on text files (or numerical representations of other data, such as image files), so the most common result is text output. By default this information is returned in the **standard outputs** stream and printed on the screen. Error messages are passed in the **standard error** stream and also displayed on the screen. However, these two data flows can easily be separated and redirected to a shared or different file.
 
-```
+```bash
 # print standard output and standard error on the screen
 ls -l
 
@@ -123,7 +123,7 @@ Another convenient feature of working in a terminal is the command history. Usua
 
 To display all previously used commands, type `history` command on your terminal. Typically, that will print on your screen last 500 commands with indexing on the left-hand side.
 
-```
+```bash
 history
 ```
 
@@ -135,7 +135,7 @@ The history can be browsed directly in the terminal window with an upper-arrow k
 
 As you noticed, the `history` command returns the text output on the screen. Thus, you can further parse it to filtrate the required information. Since the history output is printed as a single command per line, it is easy to `grep` by keyword or limit the display to *n* last results with the `tail -n` command. The `uniq` allows you to remove redundant hits.
 
-```
+```bash
 history | grep "for" | uniq | tail -5
 ```
 
@@ -144,7 +144,7 @@ history | grep "for" | uniq | tail -5
 Finally, it is good to know that the command history is stored in the hidden file called by default `.bash_history` and stored in the $HOME for given user. You can use the `$HISTFILE` variable to change the name of the history file and `$HISTSIZE` variable to adjust the number of remembered commands. You can set up that in the `.bashrc` configuration file. To learn more, see section *3. Unix Shell Configuration* in the following [tutorial](02-intro-to-unix-shell.md).
 
 To check if the hidden file exists, type in the terminal window:
-```
+```bash
 ls -a ~
 ```
 
@@ -161,7 +161,7 @@ Then, you should find on your screen a bunch of files starting with a dot, such 
 
 To preview the content of a `.bash_history`, from any location on the file system, type in the terminal window:
 
-```
+```bash
 less ~/.bash_history
 ```
 

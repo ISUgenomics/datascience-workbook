@@ -147,7 +147,7 @@ Chromosome_9    Mikado_loci     exon    10846885        10846912        .       
 
 # The diff command
 diff is a command that will immediately tell you the differences and commonalities in each line between two sorted files.
-```
+```bash
 diff File1.txt File2.txt
 
 Using process substitutions we can sort them in place if needed
@@ -238,7 +238,7 @@ diff <(sort File1.txt) <(sort File2.txt)
 
 
 # The comm command
-```
+```bash
 Print only lines that are common between the two files
 comm -1 -2  <(sort File1.txt) <(sort File2.txt) |less
 
@@ -264,7 +264,7 @@ Chromosome_4    Mikado_loci     mRNA    10612335        10618026        19      
 
 # The cmp command
 What is the first difference between two files? cmp will print which byte and which line contains this first difference. Extremely useful when verifying the contents of binary or large files.
-```
+```bash
 cmp File1.txt File2.txt
 ```
 <details>
@@ -283,7 +283,7 @@ The join command in Unix is a versatile tool for combining lines from two differ
 
 
 This command sorts both files based on their ninth field, then performs a join operation on the sorted data using the ninth field as the key.
-```
+```bash
 join -1 9 -2 9  <(sort -k9,9 File1.txt) <(sort -k9,9 File2.txt) |less
 ```
 <details>
@@ -391,7 +391,7 @@ Awk stands out as a robust utility for comparing two files in Unix environments 
 
 
 **This command compares the combinations of the first and second fields in both files. It outputs lines from File2.txt where these combinations are unique, meaning they do not occur in File1.txt.**
-```
+```bash
 awk  'NR==FNR { c[$1$2]++; next} c[$1$2]++ == 0' File1.txt File2.txt
 ```
 
@@ -405,7 +405,7 @@ Chromosome_9    gffcl   gene    10818169        10823373        .       +       
 </details>
 
 **This command outputs lines from File2.txt where the value of the ninth field is not present in File1.txt, effectively showing differences or unique values between the two files based on the ninth field.**
-```
+```bash
 awk 'FNR==NR{a[$9];next}!($9 in a)' File1.txt File2.txt
 ```
 <details>
@@ -468,7 +468,7 @@ Chromosome_9    Mikado_loci     exon    10846885        10846912        .       
 </details>
 
 **Likewise, we can do the opposite of the above just by removing the "!".  If column 9 from file 1 is found in column 9 from file2, print the line**
-```
+```bash
 awk 'FNR==NR{a[$9];next}($9 in a)' File1.txt File2.txt
 ```
 <details>
@@ -489,7 +489,7 @@ Chromosome_4    .       intron  10616191        10616666        .       -       
 </details>
 
 **Attach column1 and 2 to an array and match these with column 1 and 2 from file 2.  If there is a difference (true), print line from File2.txt that maches.**
-```
+```bash
 awk  'NR==FNR{c[$1$2];next};c[$1$2] > 0' File1.txt File2.txt
 ```
 
@@ -513,7 +513,7 @@ Chromosome_4    .       intron  10616191        10616666        .       -       
 
 
 **If column 9 from file 1 does not match column 9 from file 2, print the line from file 2**
-```
+```bash
 awk 'NR==FNR { a[$9]; next } !($9 in a) { print $0 }' File1.txt File2.txt
 ```
 
@@ -575,7 +575,7 @@ Chromosome_9    Mikado_loci     exon    10846885        10846912        .       
 </details>
 
 **Like the above example, if column 9 from file 1 does match column 9 from file2, print the column 9 from file 1 and the matching line from file 2. Note that this time I am naming the array's key $9 and making the key value $9 as well.**
-```
+```bash
 awk 'NR==FNR { a[$9]=$9; next } ($9 in a) { print a[$9],$0 }' File1.txt File2.txt
 ```
 

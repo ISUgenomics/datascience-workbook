@@ -31,7 +31,7 @@ The Unix Shell has several built-in text commands, which once executed force the
 
 First, open Terminal window and download the working directory of this tutorial by copying and pasting the following commnands to your terminal:
 
-```
+```bash
 wget XXX
 ```
 
@@ -43,7 +43,7 @@ wget XXX
 
 The `man` command will provide a description of a unix command and list the parameters that can be used to modify its behavior. To exit the manual for a command you press `q` on your keyboard.
 
-```
+```bash
 man ls
 man less
 ```
@@ -54,7 +54,7 @@ Browse all your previously used commands by typing `history` on your terminal (t
 
 It is often convenient to find a command or oneliner by searching your history. Try these oneliners.
 
-```
+```bash
 history | grep man | tail -n 5
 ```
 
@@ -80,13 +80,13 @@ history | grep man | tail -n 5
 
 First, let's display all text files with the .txt extension located on current path.
 
-```
+```bash
 ls ./*.txt
 ```
 We can use the `?` variable to represent any single character.  Therefore, all the Number files will have this pattern: `?.txt` and all the Letter text files will have this pattern: `??.txt`
 
 First, verify this with the `ls` command
-```
+```bash
 ls ??.txt
 ls ?.txt
 ```
@@ -107,11 +107,11 @@ You can use absolute path or abbreviated path.
 
 At this point you might be feeling like you are completely blind because you can't see the result of what you did.  So let me teach you a few more commands and change that.  This command will tell you where you are.
 
-```
+```bash
 pwd
 ```
 In my case this returns the following to standard out where severin is my username that I used to log in.
-```
+```bash
 /home/severin
 ```
 
@@ -123,11 +123,11 @@ What this is telling me is that I am in a directory named severin which is in a 
 
 You will recall we made a directory called unixTutorial above. We can change to that directory using the `cd` command.
 
-```
+```bash
 cd unixTutorial
 ```
 Now if we type the path of working directory command `pwd` we get the following
-```
+```bash
 pwd
 /home/severin/unixTutorial
 ```
@@ -135,14 +135,14 @@ We are now in a directory called unixTutorial which is a subdirectory of severin
 
 To change back to the previous directory we can type in the full path like so.
 
-```
+```bash
 cd /home/severin/
 ```
 
 or we can use `..` which refers to the directory above the one you are in and type this.
 
 
-```
+```bash
 cd ..
 ```
 
@@ -150,7 +150,7 @@ cd ..
 
 Try this out with the following commands
 
-```
+```bash
 cd
 cd unixTutorial
 pwd
@@ -178,7 +178,7 @@ This section will introduce you to some basic file/directory navigation
 #### mkdir -- <span style="color:Blue">M</span>a<span style="color:Blue">k</span>e <span style="color:Blue">Dir</span>ectory Command
 Let's make a new directory (folder) called unixTutorial.  To create a directory, the `mkdir` (`m`a`k`e `dir`ectory) command can be used. Type in the next command and hit the &#8629; (`Enter`) key. Notice there is a space between the mkdir command and the filename we supply to the mkdir command
 
-```
+```bash
 mkdir unixTutorial
 ```
 
@@ -186,7 +186,7 @@ mkdir unixTutorial
 
 Once you hit return, you will not see anything it will just give you a new prompt and if you try to type it again you will get an error message. Go ahead and try this if you want.
 
-```
+```bash
 mkdir unixTutorial
 mkdir: cannot create directory ‘unixTutorial’: File exists
 ```
@@ -198,7 +198,7 @@ mkdir: cannot create directory ‘unixTutorial’: File exists
 
 The `cp` command can be used to duplicate a folder. To copy a folder you have to add the `-r` parameter to copy recursively
 
-```
+```bash
 cp -r Letters Letters_copy
 ```
 
@@ -210,7 +210,7 @@ This command can remove an empty directory
 
 Let's remove the extra Deleteme2 directory using this command
 
-```
+```bash
 rmdir Deleteme3
 ```
 
@@ -228,7 +228,7 @@ In Unix there is no undo command.  If you delete a file it is gone.  There is no
 |`ls` 	|list contents	|`ls` <span style="color:Red">[OPTIONS] DIRECTORY</span>|
 
 Now that we know how to move between directories, The contents of a directory can be viewed using `ls`. If no directory name is provided then `ls` will list all the contents of the present directory.
-```
+```bash
 ls
 ls .
 ls DIRECTORY
@@ -237,7 +237,7 @@ Everyone should currently be in their unixTutorial directory that they just crea
 
 There are useful parameters for `ls` command that include:
 
-```
+```bash
 ls –l #Lists all the files in lengthy or detailed view
 ls –t #Lists all the files, sorted based on creation time
 ls –S #Lists all the files, sorted based on size
@@ -263,7 +263,7 @@ ls –S #Lists all the files, sorted based on size
 
 This command is used to quickly create many empty files.
 
-```
+```bash
 touch AA.txt
 touch BB.txt
 touch CC.txt
@@ -278,7 +278,7 @@ Now if you use the `ls` command the standard output will be
 1.txt 2.txt 3.txt AA.txt BB.txt CC.txt
 ```
 You can also create multiple files using this command.
-```
+```bash
 touch DD.txt EE.txt GG.txt 4.txt 5.txt 6.txt
 ls
 ```
@@ -294,8 +294,8 @@ The standard output now returns
 
 The `cp` command can be used to duplicate a file
 
-```
-ls  
+```bash
+ls
 cp myFirstFile.txt mySecondfile.txt
 ls
 ```
@@ -306,13 +306,13 @@ ls
 
 In this example, we will remove the file deleteme3.txt in the Deleteme2 directory.
 
-```
+```bash
 rm Deleteme2/deleteme3.txt
 ```
 
 The `-r` is a parameter that attempts to remove directories as well as other types of files
 
-```
+```bash
 ls
 rm -r Deleteme Deleteme2/deleteme3.txt
 ls
@@ -322,14 +322,14 @@ ls
 
 Move is used to move files to a different location and to rename a file.
 
-```
+```bash
 mv 1.txt Numbers
 ```
 
 The second function for the mv command is to rename a file.  If you look inside the Letters directory, you will see that one of the letter.txt files is not in sequence.
 If we wanted to rename GG.txt to FF.txt we would do the following.
 
-```
+```bash
 mv GG.txt FF.txt
 ```
 
@@ -352,13 +352,13 @@ A `cat` has a `head` and a `tail`, `more` or `less`
 
 #### `more` -- command to step through a file one screen length at a time using the spacebar. hit `q` to quit the file before reaching the end.
 
-```
+```bash
 more numSeq.txt
 ```
 
 #### `less` -- similar to the more command but lets you scroll backwards as well.
 
-```
+```bash
 less numSeq.txt
 ```
 
@@ -380,7 +380,7 @@ This command will print out the entire file. Try it out with the numSeq.txt file
 
 This command will give you the first 10 lines of a file. Try it out with the numSeq.txt file.
 
-```
+```bash
 head numSeq.txt
 head -n 5 numSeq.txt
 ```
@@ -390,7 +390,7 @@ The `-n` parameter tells the `head` function to printout in this case 5 lines in
 
 This command will give you the last 10 lines of a file.  Try it out with the numSeq.txt file.
 
-```
+```bash
 tail numSeq.txt
 tail -n 5 numSeq.txt
 ```

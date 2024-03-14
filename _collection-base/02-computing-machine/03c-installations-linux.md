@@ -38,13 +38,13 @@ One of the easiest ways you can install you own software in your home or project
 Packages are usually compressed in many different ways for easy handling. Before proceeding to installation, it must be unpacked. Depending on the compression (looking at the extension) use any of the following commands to unpack.
 Although `tar` can auto detect the compression type and decompress the archive with the `-xf` options, you can also specify what type compressed files you're providing. For most cases `tar -xf` will do the trick:
 
-```
+```bash
 tar xf package.tar.gz
 ```
 
 But to be specific you can:
 
-```
+```bash
 # Pick a decompression command based on file extension:
 
 # === Use Tar
@@ -72,23 +72,24 @@ Once de-compressed, proceed with installation, depending on what type of package
 
 Many `Linux/UNIX` programs comes with a standard set of files that lets you install programs with ease. After unpacking, if you see `configure` file in unpacked directory, use this approach.
 
-```
+```bash
 ./configure --prefix=/group/accessible/location/packagename
+
 # once complete you'll see 'Makefile' in that directory
-make # reads instructions from 'Makefile' and builds executable programs
-make check # not needed, but helps in troubleshooting
-make install # installs program using 'Makefile' directions
+make              # reads instructions from 'Makefile' and builds executable programs
+make check        # not needed, but helps in troubleshooting
+make install      # installs program using 'Makefile' directions
 ```
 
 In case if something goes wrong or you get an error saying that you need `package x` before installing, then you can undo these steps before attempting installation again.
 
-```
+```bash
 make clean
 ```
 
 If the program doesn't work as intended or something goes wrong after installation, many programs can be safely uninstalled
 
-```
+```bash
 make uninstall
 ```
 
@@ -101,14 +102,14 @@ Note that all of these options are not supported by all makefiles so your mileag
 
 Some programs will already have a `Makefile`. These programs do not need the first step (running `configure`), you can simply install them by typing
 
-```
+```bash
 make
 make install
 ```
 
 The executables are generally created either in the same directory or in the `bin` directory, within the package directory. Sometime these packages will allow you to install other locations as well. Consult the `README` or `INSTALL` files that came with the program or edit the `Makefile` to hard code the installation directory. In some cases, setting `PREFIX` variable to the desired installation location will also do the trick.
 
-```
+```bash
 PREFIX=/your/installation/location  make
 ```
 
@@ -125,15 +126,17 @@ In some rare cases when you don't find a package for Red Hat Linux, but you have
 
 If the README file says that you need to use `camke` command, then use these steps to install:
 
-```
+```bash
 # after extraction, cd to the package
 cd package
 mkdir build
 cd build
 cmake ..
+
 # if you want it in a different directory, then
 cmake -DCMAKE_INSTALL_PREFIX:PATH=/location/for/installation ..
 make
+
 # if this completes successfully, you will see a bin folder above this current directory
 # that will have the executables
 ```
@@ -143,19 +146,20 @@ Rather than trying to install to root, it is useful to be able to install progra
 
 ### Python packages
 Using our own `python` will allow writing/installing modules to it as needed. After unpacking, `cd` to the package, and install it as follows:
-```
+```bash
 module load python
 python setup.py install # all executables will be stored in python/bin (not in package directory)
 ```
+
 If in case if you need to test out something and not install it as module, you can install in a personal location as well:
-```
+```bash
 python setup.py install --local=/home/username/mydir
 # or simply as
-python setup.py install --user # executable's will be in ~/.local/bin directory
+python setup.py install --user       # executable's will be in ~/.local/bin directory
 ```
 
 Any package available at [[https://pypi.python.org/pypi | PyPi ]] can be managed using these commands as well
-```
+```bash
 module load python
 pip install SomePackage # installs a python package
 pip show --files SomePackage # shows what files are installed for the particular package
@@ -167,18 +171,20 @@ pip freeze # lists all the packages that are currently installed and their versi
 
 ### Perl modules
 Once the module is loaded, use the following set of commands to install any `perl` modules.
-```
+```bash
 module load perl
 ```
+
 If there is a `Makefile.PL`
-```
+```bash
  perl Makefile.PL PREFIX=/home/users/dag   # makes the system specific makefile
  make          # builds all the libaries
  make test     # runs a short test
  make install  # installs the package correctly.
 ```
+
 If there is a `Build.PL`
-```
+```bash
 perl Buil.PL
 ./Build test
 ./Build install
@@ -188,7 +194,7 @@ The module will be installed in the group's perl folder (not in the package dire
 ### R or Bioconductor packages
 
 Installing `R` libraries for the group is really easy since you don't have to do anything different from the way you install packages to your home directory. GIF has its own `R` version installed as module and it is configured such that it will automatically install the package in the correct location, when you are using this module.
-```
+```bash
 module load R
 R
 # R command prompt will appear
@@ -197,21 +203,26 @@ R
 
 #### Installing CRAN R Packages
 CRAN packages are by far the easiest. From within R prompt, type:
-```
+```bash
 module load R
 R
 # R command prompt will appear
+>
+```
+```r
 > install.packages("some_package") # include quotes!
 # if it prompts to select the closest mirror, choose IA, which is `77`
 ```
+
 Once installed, you will be back at `R` prompt, load the installed package to see is everything is fine.
-```
+```r
 library(some_package)
 # this should load the package and return without any error message
 ```
+
 #### Install manually downloaded R Package
 Some packages that aren't in CRAN but are available from the author directly, can be installed for group as well. Download the the `package.tar.gz` from the author's website.
-```
+```r
 module load R
 R CMD INSTALL package.tar.gz
 # This will install the package for the group.
@@ -224,7 +235,7 @@ R
 
 #### Installing Bioconductor Modules
 For Bioconductor packages, follow these steps:
-```
+```r
 module load R
 R
 # R command prompt will appear
@@ -240,43 +251,43 @@ R
 *List available packages*
 
 To get a complete list of packages that are already installed, load the `R` module and enter the R prompt. From there, type the following command:
-```
+```r
 > library()
 ```
 To get all packages installed along with their version number, type
-```
+```r
 > installed.packages()[,c("Package","Version")]
 ```
 
 #### Upgrade packages
 For the R packages that you installed from `CRAN` can all be upgrades in single command
-```
+```r
 update.packages() # upgrades all packages
 package.status() # says if 'ok' (no updates), 'upgrade' (needs update) or 'unavailable' (package removed from repository)
 ```
 Other useful option to check the status of all packages currently installed is:
-```
+```r
 > inst <- packageStatus()$inst
 > inst[inst$Status != "ok", c("Package", "Version", "Status")]
 ```
 #### Uninstall package
 
 Packages can be uninstalled easily using `remove.packages` command
-```
+```r
 > remove.packages("package_name")
 ```
 
 ### Java programs
 Precompiled java programs that come as `.jar` files, can be placed in any directory and can be called from there. For using it with environment modulefile, you need to do these steps. First, create directory (program name) and sub-directory (version number). Place the `.jar` file in this sub-directory. Within this create another directory and call it as bin. For all `.jar` files in `/programname/version/` create a text file in `/programname/version/bin`. This text file will just have a single line, something like:
-```
+```java
 java program_name.jar
 ```
 Change permission for these text files so that they can be executed.
-```
+```bash
 chmod +x -R /programname/version/bin
 ```
 In your module file, you need to add this line:
-```
+```bash
 prepend-path PATH /programname/version/bin
 ```
-Now the `.jar` files can be simply called as `'programname` (once module is loaded). No need to add `java` in front.
+Now the `.jar` files can be simply called as `programname` (once module is loaded). No need to add `java` in front.

@@ -252,28 +252,28 @@ To learn more, explore the **Unix Getting Started** tutorial in the section: {% 
 
 ### Removing duplicate lines from a file
 
-```
+```bash
 sort FILE | uniq
 ```
 
 ### Counting the number of a 'WORD' in a file
 
-```
+```bash
 grep -o WORD FILE | wc -w
 ```
 
 ### Extracting columns of data from a file
 
-```
+```bash
 cut -d DELIMITER -f COLUMN FILE
 ```
 or
-```
+```bash
 awk -F DELIMITER '{print COLUMN}' FILE
 ```
 
 ### Creating columns by translating a char to a delimiter
 
-```
+```bash
 text_stream | grep WORD | tr '-' ' ' | awk '{print $2,$4,$6}' | sort -nk1 | uniq
 ```

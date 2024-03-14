@@ -65,7 +65,7 @@ between galaxies.
 
 Start by copying the text above using your mouse then in a terminal use nano to create a file named myFirstfile.txt
 
-```
+```bash
 nano myFirstfile.txt
 ```
 Paste your text and then hit `ctr x` press `y` for yes to save and hit `enter`, which will return you to the prompt.  This will save the file with the text in it.
@@ -107,7 +107,6 @@ color brightgreen "[Aa]"
 color brightred "[Tt]"
 color brightblue "[Cc]"
 color brightyellow "[Gg]"
-
 ```
 
 
@@ -187,7 +186,7 @@ The screenshot for the above format:
 ### Install
 
 Follow [these](biosyntax.org/install) guidelines from their official website. SInce you will most likely not have `sudo` access, you may have to install `source-highlight` program manually first before attempting BioSyntax installation. Follow these steps:
-```
+```bash
 wget ftp://ftp.gnu.org/gnu/src-highlite/source-highlight-3.1.8.tar.gz
 tar xf source-highlight-3.1.8.tar.gz
 mkdir /path/to/somedir/sourcehighlight/
@@ -196,10 +195,11 @@ cd source-highlight-3.1.8
 make
 make install
 ```
- Once installed, set the variables correctly so that the program can find the files it needs. Add these lines to your `.bashrc`
 
- ```
- PATH=PATH:/path/to/installationdir/bin
+Once installed, set the variables correctly so that the program can find the files it needs. Add these lines to your `.bashrc`
+
+```bash
+PATH=PATH:/path/to/installationdir/bin
 LD_LIBRARY_PATH=LD_LIBRARY_PATH:/path/to/installationdir/lib
 LIBRARY_PATH=LIBRARY_PATH:/path/to/installationdir/lib
 PKG_CONFIG_PATH=PKG_CONFIG_PATH:/path/to/installationdir/lib/pkgconfig
