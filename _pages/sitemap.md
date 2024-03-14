@@ -32,7 +32,7 @@ Collection size: {{ site['collection-base'] | size }}
           {% for tutorial in module.items offset:1 %}
             <div>
               <div class="toc-type {{ tutorial.type }}">{{ tutorial.type }}</div>
-              <a href="{{ tutorial.url | relative_url }}" class="no-decoration prefix-{{ tutorial.level }}">{{ tutorial.title | default: 'Untitled' }}</a> <i><span style="color: #a9bbd1;">{{ tutorial.note | default: '' }}</span></i>
+              <a href="{{ tutorial.url | relative_url }}" class="prefix-{{ tutorial.level }}">{{ tutorial.title | default: 'Untitled' }}</a> <i><span style="color: #a9bbd1;">{{ tutorial.note | default: '' }}</span></i>
             </div>
           {% endfor %}
       </div>
@@ -49,7 +49,7 @@ Collection size: {{ site['collection-base'] | size }}
   <ul>
     {% assign tutorials = content | sort: 'title' %}
     {% for tutorial in tutorials %}
-      <li><a href="{{ tutorial.url | relative_url }}" class="no-decoration">{{ tutorial.title | default: "Untitled" }}</a></li>
+      <li><a href="{{ tutorial.url | relative_url }}" class="">{{ tutorial.title | default: "Untitled" }}</a></li>
     {% endfor %}
   </ul>
 </div>
@@ -69,7 +69,7 @@ Collection size: {{ site['collection-base'] | size }}
           {% for tutorial in site['collection-base'] %}
             {% if tutorial.categories contains category %}
               <li>
-                <a href="{{ tutorial.url | relative_url }}" class="no-decoration">{{ tutorial.title }}</a>
+                <a href="{{ tutorial.url | relative_url }}" class="">{{ tutorial.title }}</a>
               </li>
             {% endif %}
           {% endfor %}

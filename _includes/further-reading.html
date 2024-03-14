@@ -24,18 +24,18 @@
 {% for i in (currentIndex..nextIndex) %}
   {% assign tutorial = content[i] %}
   {% if tutorial.url contains 'landing-page' %}
-    <br><a href="{{ tutorial.url | relative_url }}" class="no-decoration prefix-{{ tutorial.level }}" style="font-size: 0.8em;">MODULE {{ tutorial.title | default: 'Untitled' }}</a> <i><span style="color: #a9bbd1; font-size: 0.8em;">{{ tutorial.note | default: '' }}</span></i><br>
+    <br><a href="{{ tutorial.url | relative_url }}" class="prefix-{{ tutorial.level }}" style="font-size: 0.9em;">MODULE {{ tutorial.title | default: 'Untitled' }}</a> <i><span style="color: #a9bbd1; font-size: 0.8em;">{{ tutorial.note | default: '' }}</span></i><br>
   {% elsif range > 10 %}
     {% if tutorial.level == 1 %}
-      <a href="{{ tutorial.url | relative_url }}" class="no-decoration prefix-{{ tutorial.level }}" style="font-size: 0.8em;">{{ tutorial.title | default: 'Untitled' }}</a> <i><span style="color: #a9bbd1; font-size: 0.8em;">{{ tutorial.note | default: '' }}</span></i><br>
+      <a href="{{ tutorial.url | relative_url }}" class="prefix-{{ tutorial.level }}" style="font-size: 0.9em;">{{ tutorial.title | default: 'Untitled' }}</a> <i><span style="color: #a9bbd1; font-size: 0.8em;">{{ tutorial.note | default: '' }}</span></i><br>
       {% if forloop.index0 != 0 %}
         {% assign counter = 1 %}
       {% endif %}
     {% elsif counter == 0 %}
-      <a href="{{ tutorial.url | relative_url }}" class="no-decoration prefix-{{ tutorial.level }}" style="font-size: 0.8em;">{{ tutorial.title | default: 'Untitled' }}</a> <i><span style="color: #a9bbd1; font-size: 0.8em;">{{ tutorial.note | default: '' }}</span></i><br>
+      <a href="{{ tutorial.url | relative_url }}" class="prefix-{{ tutorial.level }}" style="font-size: 0.9em;">{{ tutorial.title | default: 'Untitled' }}</a> <i><span style="color: #a9bbd1; font-size: 0.8em;">{{ tutorial.note | default: '' }}</span></i><br>
     {% endif %}
   {% else %}
-    <a href="{{ tutorial.url | relative_url }}" class="no-decoration prefix-{{ tutorial.level }}" style="font-size: 0.8em;">{{ tutorial.title | default: 'Untitled' }}</a> <i><span style="color: #a9bbd1; font-size: 0.8em;">{{ tutorial.note | default: '' }}</span></i><br>
+    <a href="{{ tutorial.url | relative_url }}" class="prefix-{{ tutorial.level }}" style="font-size: 0.9em;">{{ tutorial.title | default: 'Untitled' }}</a> <i><span style="color: #a9bbd1; font-size: 0.8em;">{{ tutorial.note | default: '' }}</span></i><br>
   {% endif %}
 {% endfor %}
 </div>
