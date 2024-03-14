@@ -32,7 +32,7 @@ The `.bashrc` for bash shell is one of the most useful files for a unix user. It
 
 1\. Make a backup of your original `.bashrc` file
 
-```
+```bash
 cp .bashrc .bashrc.orig
 ```
 

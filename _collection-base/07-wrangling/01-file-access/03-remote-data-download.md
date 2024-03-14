@@ -188,7 +188,7 @@ One advantage of using an HTTP interface for file transfer is that it **does NOT
 
 Downloading via HTTP(S) interface for file transfer is **possible both manually** on the web interface **and from the command line** using command-line tools like `curl` or `wget` followed by the URL to the downloaded file. *After right-clicking on the selected file, select the "Copy Link" option from the pop-up dialog box.*
 
-```
+```bash
 wget https://ftp.uniprot.org/pub/databases/uniprot/README
 ```
 
@@ -209,7 +209,7 @@ Whether you are a data analyst, researcher, or developer, knowing how to use com
 To use `wget`, you simply need to specify the URL of the file you want to download.
 
 For example, to download a file from a website, you can use the following command in the terminal:
-```
+```bash
 wget https://ftp.uniprot.org/pub/databases/uniprot/README
 ```
 
@@ -223,7 +223,7 @@ wget https://ftp.uniprot.org/pub/databases/uniprot/README
 To use curl, you need to specify the URL of the file you want to download, and then save the file to a local location.
 
 For example, to download a file and save it to a local directory, you can use the following command in the terminal:
-```
+```bash
 curl -o local_README https://ftp.uniprot.org/pub/databases/uniprot/README
 ```
 
@@ -232,7 +232,7 @@ curl -o local_README https://ftp.uniprot.org/pub/databases/uniprot/README
 Both commands, `wget` and `curl` are popular free and open-source **command-line utility for batch downloading** files from the web. They support downloading files from FTP, HTTP, and HTTPS protocols. This is available for many operating systems, including Windows, Linux, and macOS.
 
 To use `wget` (or *curl*) for batch downloading, you can create a text file that contains a list of URLs to download, with each URL on a separate line. Then, you can use the `wget` command with the `-i` option to download all the files listed in your text file `download_list.txt`:
-```
+```bash
 wget -i download_list.txt
 ```
 

@@ -104,7 +104,7 @@ NumPy is NOT a built-in Python module, meaning it is not included with the stand
 ## Install `numpy` library
 
 To install NumPy, you can use `pip`, which is the standard package installer for Python. You can run the following command in your terminal or command prompt to install NumPy:
-```
+```bash
 pip install numpy
 ```
 
@@ -112,7 +112,7 @@ pip install numpy
 
 
 An alternative way to install NumPy is using Conda. This way you can install different variants of `numpy` library in separate virtual environments, depending on the requirements of your project. You can create and activate a new conda environment, and then install `numpy` libarary:
-```
+```bash
 conda install numpy
 ```
 
@@ -142,7 +142,7 @@ Conda provides additional benefits over pip, such as the ability to create and m
 ## Import `numpy` library
 
 Once installed, NumPy can be imported into Python scripts and used to perform numerical computations and data manipulation.
-```
+```python
 import numpy as np
 ```
 This will import the NumPy library and give it an alias of `np`, which is a commonly used abbreviation for NumPy.
@@ -163,7 +163,7 @@ NumPy is primarily designed for **numerical computing** and is optimized for ope
 
 There is only one basic class in NumPy, which is the `ndarray` (short for **n-dimensional array**). This is the fundamental data structure in NumPy, and it is used to represent arrays of numerical data in Python. It also provides efficient storage and manipulation of large arrays, as well as fast computation through optimized C code and parallel processing.
 
-```
+```python
 import numpy as np
 
 arr = np.array([1, 2, 3])
@@ -298,25 +298,25 @@ Indexing in Numpy arrays refers to **accessing specific elements or subsets of a
 Integer indexing is used to **select specific elements** of an array by specifying their position in the array.
 
 Let's assume we have a simple 1D array:
-```
+```python
 import numpy as np
 
 arr = np.array([1, 2, 3, 4, 5, 6])
 ```
 
 To **access a single element** in the array, you can use its index in square brackets:
-```
+```python
 print(arr[0])                                   # Output: 1
 ```
 
 You can also **select multiple elements** by passing in a list or an array of indices. <br>*For example:*
-```
+```python
 print(arr[[0, 2, 4]])                           # Output: 1, 3, 5
 ```
 *selects the 1st, 3rd, and 5th elements of the array arr.*
 
 You can also use negative indices to **count from the end of the array**:
-```
+```python
 print(arr[-1])                                  # Output: 6
 ```
 
@@ -325,7 +325,7 @@ print(arr[-1])                                  # Output: 6
 Slicing is used to **select a range of elements** from an array. You can slice an array using the `:` operator.
 
 To access a range of elements, you can use slicing with the **start:stop:step** syntax:
-```
+```python
 print(arr[1:4])                                 # Output: [2 3 4]
 ```
 
@@ -350,19 +350,19 @@ For example, `arr[arr > 2]` selects all the elements of the array arr that are g
 </div><br>
 
 Let's assume we have a simple 1D array:
-```
+```python
 import numpy as np
 
 arr = np.array([[1, 2], [3, 4], [5, 6]])
 ```
 
 To **access a single element** in the multidimensional array, you can use comma-separated indices:
-```
+```python
 print(arr[0, 1])                                # Output: 2
 ```
 
 You can also use slicing with multiple indices to **access subarrays**:
-```
+```python
 print(arr[:2, 1:])                              # Output: [[2], [4]]
 ```
 
@@ -394,7 +394,7 @@ For example, the following code creates a new ndarray object using the `numpy.ar
 
 To create a 1D array, you can use the `np.array` function and **pass a Python list** as an argument:
 
-```
+```python
 import numpy as np
 
 l = [1, 2, 3, 4, 5]             # python list
@@ -407,7 +407,7 @@ print(a)                        # OUTPUT: [1 2 3 4 5]
 
 To create a 2D array, you can use the `np.array` function and **pass a nested list** as an argument. The resulting array will have the same number of dimensions as the nested list, with each **inner list converted to a row** of the array.
 
-```
+```python
 import numpy as np
 
 l = [[1, 2], [3, 4], [5, 6]]    # nested list composed of 3 inner lists
@@ -432,7 +432,7 @@ In this example, n = 3 and m = 2, so the shape of the resulting array is (3, 2),
 To create an n-dimensional array in NumPy, you can simply **pass a nested list of n dimensions** to the `numpy.array()` function. The shape of the resulting array will be determined by the number of elements in each dimension of the nested list.
 
 Here is an example of a **3-dimensional** NumPy array with shape (2, 2, 3):
-```
+```python
 import numpy as np
 
 arr = np.array([
@@ -443,7 +443,7 @@ arr = np.array([
 *This creates a 3-dimensional array with shape (2, 2, 3), where the first dimension has length 2, the second dimension has length 2, and the third dimension has length 3. The array contains two "layers", each of which contains two "rows" of three elements each.*
 
 Here is an example of a **4-dimensional** NumPy array with shape (2, 3, 4, 5):
-```
+```python
 import numpy as np
 
 arr = np.array([
@@ -469,7 +469,7 @@ arr = np.array([
 
 A matrix is a special case of a multidimensional **array with two dimensions**. You can create a matrix using the `np.matrix` function, which takes a nested list or 2D array as an argument:
 
-```
+```python
 import numpy as np
 l = [[1, 2], [3, 4]]            # nested list composed of 2 inner lists
 a = np.matrix(l)                # numpy 2D array of 2 rows and 2 columns
@@ -478,7 +478,7 @@ print(a)                        # OUTPUT: array([[1, 2], [3, 4]])
 ```
 
 You can also create a matrix using the `np.array` function and passing a nested list or 2D array as an argument:
-```
+```python
 import numpy as np
 l = [[1, 2], [3, 4]]                    # nested list composed of 2 inner lists
 a = np.array(l, dtype=np.matrix)        # numpy 2D array of 2 rows and 2 columns
@@ -512,7 +512,7 @@ NumPy provides a range of functions for performing matrix operations, such as ma
 These functions are available in the `np.linalg` module.
 
 Let's assume we have a matrix:
-```
+```python
 import numpy as np
 
 arr = np.array([[1, 2], [3, 4]])        # 2D array
@@ -562,7 +562,7 @@ These are the most basic functions provided by NumPy for **saving and loading ar
 The `np.save()` function saves an array to a binary file in `.npy` format, while the `np.load()` function loads the data from the binary file into an array.
 
 **Example usage:**
-```
+```python
 import numpy as np
 
 # Creating a sample array
@@ -582,7 +582,7 @@ print(loaded_arr)
 These functions are used for **reading and writing arrays in text format**. The `np.savetxt()` function saves an array to a text file in a specified format, while the `np.loadtxt()` function loads the data from a text file into an array.
 
 **Example usage:**
-```
+```python
 import numpy as np
 
 # Creating a sample array
@@ -602,7 +602,7 @@ print(loaded_arr)
 This function is used to **load data from a text file with missing values**. It returns an array with the missing values replaced with a default value or a specified value.
 
 **Example usage:**
-```
+```python
 import numpy as np
 
 # Creating a sample text file with missing values
@@ -645,7 +645,7 @@ NumPy provides a wide range of built-in functions to perform various operations 
 This function returns an array of zeros with the specified shape and data type. <br>
 *This function also applies to NumPy matrices.*
 
-```
+```python
 import numpy as np
 
 # Create a 2D array of zeros with 3 rows and 4 columns
@@ -664,7 +664,7 @@ $ &nbsp;[0. 0. 0. 0.]]
 This function returns an array of ones with the specified shape and data type. <br>
 *This function also applies to NumPy matrices.*
 
-```
+```python
 import numpy as np
 
 # Create a 1D array of ones with 5 elements
@@ -681,7 +681,7 @@ $ [1. 1. 1. 1. 1.]
 This function returns an array with evenly spaced values within a given interval. <br>
 *This function also applies to NumPy matrices.*
 
-```
+```python
 import numpy as np
 
 # Create an array of integers from 0 to 9
@@ -698,7 +698,7 @@ $ [0 1 2 3 4 5 6 7 8 9]
 This function returns an array of evenly spaced numbers over a specified interval. <br>
 *This function also applies to NumPy matrices.*
 
-```
+```python
 import numpy as np
 
 # Create an array of 5 numbers from 0 to 1 (inclusive)
@@ -715,7 +715,7 @@ $ [0.   0.25 0.5  0.75 1.  ]
 This function reshapes an array to the specified shape. <br>
 *This function also applies to NumPy matrices.*
 
-```
+```python
 import numpy as np
 
 # Create a 1D array of integers from 0 to 9
@@ -735,7 +735,7 @@ $ &nbsp;[5 6 7 8 9]]
 
 This function transposes an array (rows become columns and columns become rows).
 
-```
+```python
 import numpy as np
 
 # Create a 2D array with 2 rows and 3 columns
@@ -756,7 +756,7 @@ $ &nbsp;[3 6]]
 
 This function joins two or more arrays along a specified axis.
 
-```
+```python
 import numpy as np
 
 # Create two 1D arrays
@@ -796,7 +796,7 @@ $ [1 2 3 4 5 6]
 
 This function splits an array into multiple sub-arrays along a given axis.
 
-```
+```python
 import numpy as np
 
 arr = np.arange(16).reshape((4,4))
@@ -813,7 +813,7 @@ $ &nbsp;array([[ 8,  9, 10, 11], [12, 13, 14, 15]])]
 
 This function returns a sorted copy of an array.
 
-```
+```python
 import numpy as np
 
 arr = np.array([3, 2, 1, 4])
@@ -825,7 +825,7 @@ print(np.sort(arr))                             # Output: [1 2 3 4]
 
 This function returns the maximum value of an array along a given axis.
 
-```
+```python
 import numpy as np
 
 arr = np.array([[1, 2, 3], [4, 5, 6]])
@@ -838,7 +838,7 @@ print(np.max(arr, axis=0))                      # Output: [4 5 6]
 
 This function returns the minimum value of an array along a given axis.
 
-```
+```python
 import numpy as np
 
 arr = np.array([[1, 2, 3], [4, 5, 6]])
@@ -850,7 +850,7 @@ print(np.min(arr, axis=0))                      # Output: [1 2 3]
 
 This function returns the mean value of an array along a given axis.
 
-```
+```python
 import numpy as np
 
 arr = np.array([[1, 2, 3], [4, 5, 6]])
@@ -863,7 +863,7 @@ print(np.mean(arr, axis=0))                     # Output: [2.5 3.5 4.5]
 
 This function returns the standard deviation of an array along a given axis.
 
-```
+```python
 import numpy as np
 
 arr = np.array([[1, 2, 3], [4, 5, 6]])
@@ -876,7 +876,7 @@ print(np.std(arr, axis=0))                      # Output: [1.5 1.5 1.5]
 
 This function returns the sum of all elements in an array along a given axis.
 
-```
+```python
 import numpy as np
 
 arr = np.array([[1, 2, 3], [4, 5, 6]])
@@ -889,7 +889,7 @@ print(np.sum(arr, axis=0))                      # Output: [5 7 9]
 
 This function returns the dot product of two arrays.
 
-```
+```python
 import numpy as np
 
 a = np.array([[1, 2], [3, 4]])
@@ -897,9 +897,3 @@ b = np.array([[5, 6], [7, 8]])
 
 print(np.dot(a, b))                             # Output: [[19 22], [43 50]]
 ```
-
-___
-# Further Reading
-* [3.7 SciPy Library - Algorithms for Scientific Computing](08-tutorial-python-apply-statistics-scipy.md)
-
-* [4. Introduction to R programming](../04-R/01-introduction-to-R)

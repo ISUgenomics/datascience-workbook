@@ -31,9 +31,9 @@ sample.
 
 -   [mythical\_creatures.txt](https://bioinformaticsworkbook.org/data/mythical_creatures.txt)
 
-<!-- -->
-
-    wget https://bioinformaticsworkbook.org/tutorials/data/mythical_creatures.txt
+```bash
+wget https://bioinformaticsworkbook.org/tutorials/data/mythical_creatures.txt
+```
 
 It is organized in this way:
 
@@ -92,7 +92,9 @@ and navigate to the directory the file is saved. If you are in Windows,
 you will need to run `dos2unix` to convert the line endings correctly.
 To format the above table to just 3 columns i.e,:
 
-    Organism  family  length
+```
+Organism  family  length
+```
 
 <!-- bash version
 
@@ -112,7 +114,7 @@ First, open the R prompt by typing `R` in the terminal, navigate the
 working directory, where the <!--`formatted.txt`-->
 `mythical_creatures.txt` file is saved.
 
-``` bash
+```bash
 R
 #then
 setwd("path/to/your/directory")
@@ -120,7 +122,7 @@ setwd("path/to/your/directory")
 
 Import data and examine contents, format it if necessary:
 
-``` r
+```r
 file <- "data/mythical_creatures.txt"                      # Path to input file or "formatted.txt"
 input <- read.csv(file,
                   sep = "\t",
@@ -176,7 +178,7 @@ head(input)
 
 If your data looks like this below, you’re all set:
 
-``` r
+```r
 > head(input)
   Organism family length
 1  Unicorn   fam1    263
@@ -191,14 +193,14 @@ If your data looks like this below, you’re all set:
 First, lets load all the required packages. We will need the `ggplot2`
 for plotting, `grid` package for making grids of plots/faceting.
 
-``` r
+```r
 library(ggplot2)
 library(grid)
 ```
 
 For getting a simple boxplot, you can use the following command:
 
-``` r
+```r
 ggplot(input, aes(x = Organism, y = length)) + geom_boxplot()
 ```
 
@@ -208,7 +210,7 @@ ggplot(input, aes(x = Organism, y = length)) + geom_boxplot()
 
 if you want to color the plots,
 
-``` r
+```r
 ggplot(input, aes(x = Organism, y = length, fill = Organism)) + geom_boxplot()
 ```
 
@@ -217,7 +219,7 @@ ggplot(input, aes(x = Organism, y = length, fill = Organism)) + geom_boxplot()
 
 but wait, where are the gene families?
 
-``` r
+```r
 ggplot(input, aes(x = Organism, y = length, fill = family)) + geom_boxplot()
 ```
 
@@ -227,7 +229,7 @@ ggplot(input, aes(x = Organism, y = length, fill = family)) + geom_boxplot()
 
 That names are all overlapping though?
 
-``` r
+```r
 ggplot(input, aes(x = Organism, y = length, fill = family)) +
    geom_boxplot() +
    theme(axis.text.x = element_text(angle = 45, hjust=1))
@@ -241,7 +243,7 @@ together, can we spread them out in to separate plots?
 
 Yes, but first we need to make different subsets that we want to plot
 
-``` r
+```r
 fam1 <- input[which(input$family == "fam1"),]
 fam2 <- input[which(input$family == "fam2"),]
 fam3 <- input[which(input$family == "fam3"),]
@@ -250,7 +252,7 @@ fam4 <- input[which(input$family == "fam4"),]
 
 Let’s also make colors to fill in for each family
 
-``` r
+```r
 fill1 <- "olivedrab1"
 lines1 <- "olivedrab4"
 fill2 <- "plum2"
@@ -264,7 +266,7 @@ lines4 <- "chartreuse4"
 plots for each family can be generated using dataframes for respective
 families:
 
-``` r
+```r
 ggplot(fam1, aes(x=Organism,y=length)) + geom_boxplot(colour = lines1, fill = fill1)
 ggplot(fam2, aes(x=Organism,y=length)) + geom_boxplot(colour = lines2, fill = fill2)
 ggplot(fam3, aes(x=Organism,y=length)) + geom_boxplot(colour = lines3, fill = fill3)
@@ -296,7 +298,7 @@ ggplot(input, aes(x=Organism,y=length, fill=Organism)) +
 ```
 -->
 
-``` r
+```r
 ggplot(input, aes(x = Organism, y = length, fill = Organism)) +
    geom_boxplot() +
    theme(axis.text.x = element_text(angle = 45, hjust=1)) +
@@ -309,7 +311,7 @@ ggplot(input, aes(x = Organism, y = length, fill = Organism)) +
 
 Horizontally
 
-``` r
+```r
 ggplot(input, aes(x = Organism, y = length, fill = Organism)) +
    geom_boxplot() +
    theme(axis.text.x = element_text(angle = 45, hjust=1)) +
@@ -337,7 +339,7 @@ ggplot(input, aes(x=Organism,y=length)) +
 
 To color these gene families, create a color palette:
 
-``` r
+```r
 # Fill Color
 fam_palette = c(fam1 = "olivedrab1",
                 fam2 = "plum2",

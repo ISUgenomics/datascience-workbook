@@ -44,7 +44,7 @@ You can specify the mode of the file as:
 depending on the task you want to perform.
 
 For example, to read a text file in read mode, use the following code:
-```
+```python
 with open('input.txt', 'r') as file:
     contents = file.read()
 print(contents)
@@ -59,7 +59,7 @@ print(contents)
 To write to a text file, you can use the `'w'` mode in the `open()` function.
 
 For example, to write some text to a file, use the following code:
-```
+```python
 with open('output.txt', 'w') as file:
     file.write('This is some text.')
 ```
@@ -76,7 +76,7 @@ For example: <br>
 **C.** to count the number of occurrences of a particular word in a string, you can use the `count()` method <br>
 **D.** to replace a substring with another string, you can use the `replace()` method
 
-```
+```python
 text = 'This is a sample text from a file.'     # data object of a string type
 words = text.split()                            # split the text string into a list of words
 num_words = len(words)                          # count the number of words in a list
@@ -94,7 +94,7 @@ Research data is often stored in structured formats such as CSV, JSON string, or
 
 
 Here is an example of how to **read a CSV file into a pandas** `DataFrame` and manipulate the data:
-```
+```python
 import pandas as pd
 
 # read the CSV file into a DataFrame
@@ -165,14 +165,14 @@ Let's use Python and the `pandas` library to manipulate this dataset and derive 
 ## 1. Load the dataset
 
 First, we need to import the `pandas` library and read the CSV file into a `DataFrame`:
-```
+```python
 import pandas as pd
 
 df = pd.read_csv('input.csv')
 ```
 
 To confirm that the dataset is loaded correctly, we can display the top few rows using the `head()` method applied to the `DataFrame` object:
-```
+```python
 df.head()
 ```
 This will display the output on the screen:
@@ -186,7 +186,7 @@ This will display the output on the screen:
 ```
 
 To print the complete dataset, we can simply use the `print()` function:
-```
+```python
 print(df)
 ```
 Output:
@@ -215,7 +215,7 @@ Pandas provides various methods for selecting specific data from a *DataFrame*, 
 
 ### Select a column
 Let's start by selecting a specific column:
-```
+```python
 # Select the column for American Goldfinch
 american_goldfinch = df['American Goldfinch']                   # a new Series object with a American Goldfinch column
 
@@ -235,7 +235,7 @@ Name: American Goldfinch, dtype: int64
 ### Select multiple columns
 
 Now, let's select multiple columns:
-```
+```python
 # Select the columns for American Goldfinch and Northern Cardinal
 
 selected_cols = ['Year', 'Location', 'American Goldfinch', 'Northern Cardinal']         # list of selected column names
@@ -256,7 +256,7 @@ This code will print the first few rows of the new `DataFrame` with only the col
 ### Select rows by value
 
 To select data with a specific value in a selected column, we can use the `.loc` method with the condition:
-```
+```python
 # Select all rows with data from the Location 'A'
 location_A = df.loc[df['Location'] == 'A']
 
@@ -277,7 +277,7 @@ This code will print the first few rows of the new `DataFrame` with only the row
 Pandas provides several methods for filtering data in a *DataFrame* based on certain conditions. The most common method is `.query()`, which allows you to filter rows based on a string expression that evaluates to a boolean.
 
 For example, use the following code to filter the data collected after 2014:
-```
+```python
 # Select all data collected after 2014
 after_2014 = df.query('Year > 2014')
 
@@ -305,7 +305,7 @@ Pandas provides many methods for aggregating data in a *DataFrame*, such as `.gr
 ### Group the data
 
 So, let's group the data by values in selected column, for example by 'Year':
-```
+```python
 # Group the data by year
 grouped = df.groupby('Year')
 
@@ -320,7 +320,7 @@ However, it contains the data splited by the specific condition to make it easy 
 ### Calculate statistics
 
 Let's calculate some statistics for each year using data grouped to subsets:
-```
+```python
 # Calculate the mean for each year
 means = grouped.mean()
 
@@ -365,7 +365,7 @@ Pandas provides various methods for joining and merging data from different *Dat
 ### Merge into one DataFrame
 
 Let's combine the two DataFrames: means and stds into one DataFrame:
-```
+```python
 # Combine the means and stds into one DataFrame
 stats = pd.concat([means, stds], axis=1, keys=['Mean', 'Std'])
 
@@ -392,7 +392,7 @@ Pandas provides many methods for reshaping data in a *DataFrame*, such as `.pivo
 Let's reshape the stats DataFrame to combine Mean and Std values in a way to keep only single column per species.
 
 In the first step, let's combine Mean and STD into a single column:
-```
+```python
 # create a new dataframe with 'Statistic' as a column cobining data for Mean and Std
 df_new = stats.reset_index().melt(id_vars=['Year'], var_name=['Statistic', 'Species'])
 
@@ -415,7 +415,7 @@ The output will be like that:
 ```
 
 In the second step, let's split Species column into the separate columns for each species:
-```
+```python
 # pivot the dataframe to get the desired format
 df_reshaped = df_new.pivot_table(index=['Year', 'Statistic'], columns='Species', values='value')
 
@@ -453,6 +453,6 @@ Year Statistic
 Pandas provides many methods for cleaning and preprocessing data, such as `.dropna()`, which allows you to remove missing values from a *DataFrame*, and `.replace()`, which allows you to replace specific values with new values.
 
 To replace any missing values in the dataset with the average value for that column, you can use the `.fillna()` method.
-```
+```python
 no_missing_data = df.fillna(df.mean())
 ```

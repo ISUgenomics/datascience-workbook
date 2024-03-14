@@ -31,7 +31,7 @@ tags: []
 ### Accessing Supercell ###
 
 SFTP is the best method to browse the files and create the directory structure you want.
-```
+```bash
 sftp username@data.psc.xsede.org
 Warning: Permanently added the RSA host key for IP address '128.182.112.126' to
 username@data.psc.xsede.org's password:
@@ -46,7 +46,7 @@ sftp> exit
 
 Use  `rsync` to sync the directories that you need to keep in sync
 
-```
+```bash
 rsync -e 'ssh -c aes128-ctr' -avP source_dir username@data.psc.xsede.org:target_dir
 ```
 

@@ -25,11 +25,11 @@ tags: []
 ### PDF files ###
 
 Most HPC's allows X11 forwarding. You can enable this when you are logging in to the remote host using the `-X` option. For eg.,
-```
+```bash
 ssh -X arnstrm@condodtn.its.iastate.edu
 ```
 Once logged in, you can now open any GUI interface programs on the remote-host and it appears as a new window in your local machine. Although, there are plenty of program options to open a `pdf` file, you can almost always find the `firefox` browser in every machine. This should be sufficient to open a `PDF` file. To get started, type:
-```
+```bash
 firefox
 ```
 
@@ -41,12 +41,12 @@ If you don't find the menu tab, pressing ```alt``` + ```f``` should bring up the
 
 Again, you need X11 forwarding enabled to do this. If your machine has ```imagemagick``` module installed, load it:
 
-```
+```bash
 module load imagemagick
 ```
 To open any picture files, you can just do:
 
-```
+```bash
 display filename.png
 ```
 

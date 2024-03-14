@@ -46,7 +46,7 @@ An empty R Script file will open: <br>
 <br>
 This is the code editor and you can write your code in this space. You can directly write code in the `Console` as well but editor allows you to run parts of code, save progress, make comments etc. Try writing the following code, and then run by selecting the lines you want to run and clicking the `Run` button: <br>
 
-```R
+```r
 install.packages("ggplot2")
 library(ggplot2)
 ```
@@ -57,7 +57,7 @@ library(ggplot2)
 
 If you select only the second line as shown and run, it will load the library `ggplot2` if it is installed on your system. If you have not installed the package, you will need to run the first line of code first. After the libarary is loaded, you can run the rest of the code shown below to create a plot using `ggplot2`. The following code uses sample dataset called `mpg` already included within the `ggplot2` library. <br>
 
-```R
+```r
 # this is a comment
 # An example
 ggplot(mpg, aes(displ, hwy, colour = class)) +
@@ -95,14 +95,14 @@ Data from a file can be imported into your RScript. There are several ways and e
 
 It is a good practice to define the `path` first separately and then use the desired method to read files as the path can then be reused in other commands.
 
-```R
+```r
 path <- "path/to/your/data"
 data <- read.csv(path, header = TRUE, sep = “,”)
 ```
 
 Once data is imported and stored in the variable "data", it can then be accessed and used.
 
-```R
+```r
 print(data)
 ```
 

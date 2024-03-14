@@ -88,7 +88,7 @@ For small datat transfers it is allowed to move data to Juno storage using comma
 
 1. Then, use `rsync` command to synchronize (move new content or update changes) in your `project_name` directory:
 
-```
+```bash
 rsync -avz --no-p --no-g ttt nal-dtn.scinet.usda.gov:/LTS/project/<project_name>/
 ```
 

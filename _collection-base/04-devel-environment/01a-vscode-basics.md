@@ -110,7 +110,7 @@ If you have something open already, you can still clone from `...` options drop 
 <br>
 Another option is to use the shortcut to find all commands mentioned earlier, `Ctrl+Shift+p` and search for `Git Clone`. Alternatively, you can always use the Terminal within VSCode to perform functions like Clone.
 
-```
+```bash
 git clone <Github Repo> <Local Directory>
 ```
 

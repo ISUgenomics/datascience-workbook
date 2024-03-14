@@ -33,7 +33,7 @@ Once a beginner Python user has familiarized themselves with the {% include targ
 For simple programming tasks, it is good to **use text editors available directly in the terminal**. This way, users can create, edit and reuse Python scripts on a computing machine, **including HPC**. Text editors such as `nano`, `vim`, `emacs`, and `mcedit` are common options for creating and editing scripts in the terminal.
 
 Once the script is saved, it can be **run from the terminal** using the `python` command followed by the name of the script.
-```
+```bash
 python my_script.py
 ```
 
@@ -91,13 +91,13 @@ Here's how you can create a new Python script using `nano`, a simple text editor
 
 **1.** Open the terminal and navigate to the directory where you want to create the script.
 
-```
+```bash
 cd </file_system/location>
 ```
 
 **2.** Type the following command to open a new file in `nano`:
 
-```
+```bash
 nano calc_average.py
 ```
 <i>This will create a new file called "calc_average.py"  and open it in the `nano` text editor.</i>
@@ -113,7 +113,7 @@ Note that lines starting with the <b>#</b> sign are not executed.  It is how we 
 </span>
 </div><br>
 
-```
+```python
 #1 Get a list of numbers from user (typed in a terminal)
 num_string = input("Enter a list of numbers separated by spaces: ")
 
@@ -178,7 +178,7 @@ Finally, we use a Python built-in function <b>print()</b> to display the message
 <p align="left"><img width="800" src="{{ images_path }}/02_python-nano.gif"></p>
 
 **5.** You can now run your Python script from the terminal by typing:
-```
+```bash
 python calc_average.py
 ```
 <i>This will execute your script and print  to the console the average of user-provided numbers.</i>
@@ -204,7 +204,7 @@ This is just a sample, but it can be used for testing the script.<br>
 
 **2.** Type the following command to open a new file in `vim`:
 
-```
+```bash
 vim count_words.py
 ```
 <i>This will create a new file called "count_words.py" and open it in the `vim` text editor.</i>
@@ -217,7 +217,7 @@ vim count_words.py
 
 <i>Select the text below, right-click on your mouse abd select `Copy` from the pop-up menu. Go to the `vim` editor in your terminal and use the right-click again, this time select the `Paste` option.</i>
 
-```
+```python
 #1 Open the input file
 with open("input.txt", "r") as f:
     word_count = {}                        ## Create an empty dictionary to hold the word counts
@@ -308,7 +308,7 @@ It is a good practice to separate blocks of code for different tasks in the scri
 
 **5.** Once you're done editing and saving the file, you can run it in the terminal by typing:
 
-```
+```bash
 python3 count_words.py
 ```
 
@@ -384,7 +384,7 @@ If MC is not available in your distribution's official repositories, you can dow
 
 **2.** Type the following command to open a new file in `mcedit`:
 
-```
+```bash
 mcedit generate_password.py
 ```
 <i>This will create a new file called "generate_password.py" and open it in the `mcedit` text editor.</i>
@@ -393,7 +393,7 @@ mcedit generate_password.py
 
 **3.** Type or paste Python code from the snippet below into the file.
 
-```
+```python
 #0 Import external modules to bring in their functionality into the script
 import string
 import random
@@ -469,7 +469,7 @@ def function_name(argument1, argument2): <br>
 
 **5.** Once you're done editing and saving the file, you can run it in the terminal by typing:
 
-```
+```bash
 python generate_password.py
 ```
 

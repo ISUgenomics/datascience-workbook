@@ -60,7 +60,7 @@ These operating systems have been optimized and tested for performance and relia
 
 A. You can check at any time, which operating system (OS) is running on an HPC system using the commands:
 
-```
+```bash
 lsb_release -a
 ```
 ![Operating System]({{ images_path }}/04_hpc_software_os_version.png)<br>
@@ -68,7 +68,7 @@ lsb_release -a
 
 B. If the `lsb_release` command is not available on your HPC system, you can also check the OS by looking at the contents of the `/etc/os-release` file:
 
-```
+```bash
 cat /etc/os-release
 ```
 ![Operating System]({{ images_path }}/04_hpc_software_os_version2.png)<br>
@@ -94,15 +94,15 @@ The centralized package manager can be used to search for and list the available
 for RHEL / Fedora / Rocky: *.rpm* packages managed by `yum` <br>*(yum has been supplanted by `dnf`)* <br>
 
 **# List installed and available packages:**
-```
+```bash
 yum list all
 ```
 **# List only available packages:**
-```
+```bash
 yum list available
 ```
 **# Search dnf list for a given package:**
-```
+```bash
 yum search <software_name>
 ```
 
@@ -111,11 +111,11 @@ yum search <software_name>
 for Ubuntu / Debian: *.deb* packages managed by `apt` and `dpkg` <br>
 
 **# List installed and available packages:**
-```
+```bash
 apt list
 ```
 **# Search apt list for a given package:**
-```
+```bash
 apt search <software_name>
 ```
 

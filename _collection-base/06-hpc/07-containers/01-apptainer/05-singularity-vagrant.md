@@ -24,12 +24,12 @@ In late 2021, **Singularity underwent a rebranding to Apptainer**, changing the 
 
 Before diving into container tasks on HPC infrastructure:
 * ensure you checked the available module using the commands:
-```
+```bash
 module avail apptainer
 module avail singularity
 ```
 * load a module of your choice:
-```
+```bash
 module load apptainer/<version>       # e.g., module load apptainer/1.1.9-py310-wsbt4ge
 ```
 * and consistently use the appropriate keyword for your commands *(in this example: apptainer)*.
@@ -46,13 +46,13 @@ Note: this content was taken directly from http://singularity.lbl.gov/install-ma
 ## Setup
 First, install brew if you do not have it already.
 
-```
+```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 Next, install Vagrant and the necessary bits.
 
-```
+```bash
 brew cask install virtualbox
 brew cask install vagrant
 brew cask install vagrant-manager
@@ -63,16 +63,16 @@ We are maintaining a set of Vagrant Boxes via Vagrant Cloud, one of Hashicorp ma
 
 singularityware/singularity-2.4
 For other versions of Singularity see our Vagrant Cloud repository.
-```
+```bash
 mkdir singularity-vm
 cd singularity-vm
 ```
 Note that if you have installed a previous version of the vm, you can either destroy it first, or create a new directory.
-```
+```bash
 vagrant destroy
 ```
 Then issue the following commands to bring up the Virtual Machine:
-```
+```bash
 vagrant init singularityware/singularity-2.4
 vagrant up
 vagrant ssh
@@ -94,7 +94,7 @@ vagrant@vagrant:~$ ./growl-llo-world.simg
 RaawwWWWWWRRRR!!
 ```
 Note that when you do vagrant up you can also select the provider, if you use vagrant for multiple providers. For example:
-```
+```bash
 vagrant up --provider virtualbox
 although this isn’t entirely necessary if you only have it configured for virtualbox.
 ```
@@ -107,7 +107,7 @@ vagrant init bento/ubuntu-16.04
 ```
 
 Next, build and start the vagrant hosted VM, and you will install Singularity by sending the entire install script as a command (with the -c argument). You could just as easily shell into the box first with vagrant ssh, and then run these commands on your own. To each bento, his own.
-```
+```bash
 vagrant up --provider virtualbox
 
 # Run the necessary commands within the VM to install Singularity
@@ -125,7 +125,7 @@ EOF
 
 At this point, Singularity is installed in your Vagrant Ubuntu VM! Now you can use Singularity as you would normally by logging into the VM directly
 
-```
+```bash
 vagrant ssh
 ```
 

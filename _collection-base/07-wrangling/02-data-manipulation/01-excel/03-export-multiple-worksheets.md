@@ -31,7 +31,7 @@ Before proceeding, check if you have enabled the macros, i.e., if you don't see 
 Click on `DEVELOPER` and then `Macros`, type in some name (eg. `import_text`), click `create`.
 
 Paste the below code on the popped window:
-```
+```vb
 ' ---------------------- Directory Choosing Helper Functions -----------------------
 ' Excel and VBA do not provide any convenient directory chooser or file chooser
 ' dialogs, but these functions will provide a reference to a system DLL

@@ -61,7 +61,7 @@ These two types of brackets are the building blocks of JSON data structures.
 Square brackets are used to **define an array in JSON**. An array is an **ordered list** of values, where each value can be any valid JSON data type (*strings, numbers, booleans, objects, or arrays*). The **values in an array are separated by commas** and enclosed in square brackets.
 
 Here's an example of a JSON array:
-```
+```json
 [
   "New York",
   "London",
@@ -75,7 +75,7 @@ Here's an example of a JSON array:
 Curly braces are used to **define an object in JSON**. An object is an **unordered collection** of key-value pairs, where the keys are *strings* and the values can be any valid JSON data type (*strings, numbers, booleans, objects, or arrays*). The **key:value pairs in an object are separated by commas** and enclosed in curly braces.
 
 Here's an example of a JSON object:
-```
+```json
 {
   "name": "John",
   "age": 30,
@@ -89,7 +89,7 @@ Here's an example of a JSON object:
 In practice, JSON data structures can be more complex and often contain both types of brackets, **[ ]** and **{ }**, in order to represent more sophisticated data structures. The **flexibility of JSON format** allows for the creation of customized data structures that can represent complex and nested data in a human-readable and machine-parseable format.
 
 For example, a JSON object may contain an array as one of its values:
-```
+```json
 {
   "name": "John",
   "age": 30,
@@ -100,7 +100,7 @@ For example, a JSON object may contain an array as one of its values:
 *In this example, the object has four key:value pairs, where "hobbies" is an array of strings, which are enclosed in square brackets.*
 
 Here's an example of a JSON array that contains objects as its elements:
-```
+```json
 [
   {
     "name": "John",
@@ -123,7 +123,7 @@ Here's an example of a JSON array that contains objects as its elements:
 
 
 Here's an example of a JSON object that contains array of objects for its "pets" property:
-```
+```json
 {
   "name": "John",
   "age": 30,
@@ -223,7 +223,7 @@ After importing the `json` module, you can use its various methods, such as:
 ## JSON string from Array
 
 To create a JSON array in Python, you can **use a list** and the `json.dumps()` method to convert it to a formatted **JSON string**:
-```
+```python
 import json
 
 cities_array = ["New York", "London", "Warsaw"]
@@ -240,7 +240,7 @@ print(type(cities_json))
 ## JSON string from Dictionary
 
 To create a JSON object in Python, you can **use a dictionary** and the `json.dumps()` method to convert it to a formatted **JSON string**:
-```
+```python
 import json
 
 person_object = {
@@ -261,7 +261,7 @@ print(type(person_json))
 ## Python object from JSON string
 
 To convert JSON string data to a Python object, you can use the `json.loads()` method:
-```
+```python
 import json
 
 person_json = '{"name": "John", "age": 30, "city": "New York"}'
@@ -279,7 +279,7 @@ print(type(person_object))
 
 To access data in a JSON-based object or array in Python, you can use the square bracket notation:
 
-```
+```python
 import json
 
 person_json = '{"name": "John", "age": 30, "city": "New York"}'
@@ -305,7 +305,7 @@ To read JSON data from a file in Python, you can use the `json.load()` method.
 </code><br>
 
 You can open the file and load its JSON string content directly to the Python object:
-```
+```python
 import json
 
 with open("data.json", "r") as file:
@@ -319,7 +319,7 @@ print(data)
 ## Writing JSON Data to a File
 
 To write JSON data to a file in Python, you can use the `json.dump()` method:
-```
+```python
 import json
 
 person = {
@@ -335,7 +335,7 @@ with open("person.json", "w") as file:
 ## Handling Errors
 
 When working with JSON in Python, you may encounter errors if the JSON data is invalid. To handle these errors, you can use the `json.JSONDecodeError` exception:
-```
+```python
 import json
 
 person_json = '{"name": "John", "age": 30, "city": "New York"'          # invalid JSON string (missing closing curly brace)
@@ -357,7 +357,7 @@ except json.JSONDecodeError as e:
 By default, the `json` module can only encode and decode certain basic Python data types such as *strings, numbers, lists,* and *dictionaries*. However, you can also **encode and decode custom objects** using the **"default"** argument of the `json.dumps()` and `json.dump()` methods.
 
 Here's an example:
-```
+```python
 import json
 
 #1 Declare a class for a custom Python object
@@ -405,7 +405,7 @@ In this example, (<b>#1</b>) we define a custom `Person class` with a <i>name</i
 The `json.dumps()` and `json.dump()` methods also allow you to **pretty-print JSON data using the "indent" parameter**. The `indent` parameter specifies the number of spaces to use for each level of indentation.
 
 Here's an example:
-```
+```python
 import json
 
 # Create a Python object (e.g., dictionary)
@@ -437,7 +437,7 @@ The `json.dumps()` and `json.dump()` methods also provide several optional param
 |`skipkeys`    | False | If **False**, a TypeError is raised if a key is not a basic Python type. <br>If **True**, keys that are not basic Python types (*str, int, float, bool, None*) are skipped.
 
 Here's an example:
-```
+```python
 import json
 
 # Create a Python object (e.g., dictionary)

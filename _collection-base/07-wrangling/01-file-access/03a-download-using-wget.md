@@ -38,7 +38,7 @@ Upon completion of this section the learner will be able to:
 Here is a generic example of how to use wget
 to download a file.
 
-```
+```bash
 wget http://link.edu/filename
 ```
 
@@ -47,7 +47,7 @@ A are a couple of specific Examples
 *  Photo of a kitten in Rizal Park
 *  Photo of Arabidopsis
 
-```
+```bash
 wget https://upload.wikimedia.org/wikipedia/commons/0/06/Kitten_in_Rizal_Park%2C_Manila.jpg
 wget https://upload.wikimedia.org/wikipedia/commons/6/6f/Arabidopsis_thaliana.jpg
 ```
@@ -59,13 +59,13 @@ Sometimes you may find a need to download an entire directory of files and downl
 There are 2 options. You can either specify a regular expression for a file or put a regular expression in the URL itself.
 First option is useful, when there are large number of files in a directory, but you want to get only specific format of files (eg., fasta)
 
-```
+```bash
 wget -r --no-parent -A 'bar.*.tar.gz' http://url/dir/
 ```
 
 The second option is useful if you have numerous files that have the same name, but are in different directory
 
-```
+```bash
 wget -r --no-parent accept-regex=/pub/current_fasta/*/dna/*dna.toplevel.fa.gz ftp://ftp.ensembl.org
 ```
 
@@ -73,7 +73,7 @@ The files won't be overwritten (as they all have same names), instead they are s
 
 Some times, if you have a series of files to download (and are numbered accordingly), you can use UNIX <blockcode> brace expansion</blockcode>
 
-```
+```bash
 wget http://localhost/file_{1..5}.txt
 # this will download
 # |_ file_1.txt
@@ -85,7 +85,7 @@ wget http://localhost/file_{1..5}.txt
 
 To archive the entire website (yes, every single file of that domain), you can use the mirror option.
 
-```
+```bash
 wget --mirror -p --convert-links -P ./LOCAL-DIR WEBSITE-URL
 ```
 

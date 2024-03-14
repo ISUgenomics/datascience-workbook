@@ -96,7 +96,7 @@ In the above example `$USER` is your username.
 
 If you submit a job and realize you need to cancel it for some reason, you will use the scancel command with the JOBID described above in <span style="color:Blue">squeue</span>
 
-```
+```bash
 scancel 2867457
 ```
 
@@ -184,12 +184,11 @@ cd $SLURM_SUBMIT_DIR  # this line changes you into the directory you submitted t
 
 In this example we will be taking advantage of the sleep command.
 
-```
+```bash
 ## The following lines are the commands that you want to run
-
-
 sleep 10 && echo "I slept for 10 seconds"
 sleep 20 && ech "I slept for 20 seconds"
+
 ## Note in the above line, I deliberately mis spelt `ech`; this would cause a std error to be output
 sleep 60 && echo "I slept for 1 min"
 
@@ -424,19 +423,19 @@ This command provides useful accounting information about submitted jobs.
 
 
 By itself this command will only give you information about your jobs
-```
+```bash
 sacct
 ```
 
 Adding the `-a` parameter will provide information about all accounts.
 
-```
+```bash
 sacct -a
 ```
 
 And there is a format option that can give more useful column information.
 
-```
+```bash
 sacct -a --format JobID,Partition,Timelimit,Start,Elapsed,NodeList%20,ExitCode,ReqMem,MaxRSS,MaxVMSize,AllocCPUS
 ```
 

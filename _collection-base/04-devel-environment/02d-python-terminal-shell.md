@@ -140,7 +140,7 @@ Once you have installed Python, you can start the Python shell by following thes
 **1.** Open the terminal or command prompt on your computer.
 
 **2.** Type `python` or `python3`, depending on your system's configuration, and press `Enter` on your keyboard.
-```
+```bash
 python3
 ```
 
@@ -159,7 +159,7 @@ Let's start with using the `print()` function to display the <i>"Hello, world!"<
 
 Now, you can try using the Python shell to perform a simple calculation:
 
-```
+```python
 a = 10
 b = 5
 c = a + b

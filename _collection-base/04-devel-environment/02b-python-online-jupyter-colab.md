@@ -208,7 +208,7 @@ To execute the cell press `Alt + Enter` ( use `option + return` for macOS ). <br
 
 In the next cell add Python code for all required imports, i.e., `numpy` and `matplotlib`.
 
-```
+```python
 # import modules
 import numpy as np                        # to generate random dataset
 from matplotlib import pyplot as plt      # to create scatterplot
@@ -222,7 +222,7 @@ To execute the code cell, again press `Alt + Enter` ( use `option + return` for 
 
 In the next `code cell` add Python code for generating the dataset and creating the scatterplot.
 
-```
+```python
 #1 Generate 100 random data points along 3 dimensions
 x, y, scale = np.random.randn(3, 100)
 
@@ -465,7 +465,7 @@ To render the **text cell** press `Shift + Enter`. <br>
 
 In the next **code cell** add Python code for all required imports, i.e., `pandas`, `seaborn`, and wine dataset from the `sklearn`.
 
-```
+```python
 # import libraries and load the dataset
 import pandas as pd                       # to manage data structure
 import seaborn as sns                     # to create scatterplot
@@ -480,7 +480,7 @@ To execute the code cell, press `Shift + Enter` or click the `Run` button.
 
 Add next `code cell`, and copy-paste Python code for loading the dataset and exploring its contents.
 
-```
+```python
 #1 Load the Wine dataset
 wine_data = load_wine()
 
@@ -556,7 +556,7 @@ Just below the code snippet in your notebook, you should see the output of the `
 
 Add next `code cell`, and copy-paste Python code to create a scatter plot comparing the <i>"alcohol"</i> and <i>"color_intensity"</i> features of the dataset.
 
-```
+```python
 # Plot a scatterplot of alcohol vs. color_intensity
 sns.set(rc={'figure.figsize':(6,3), 'figure.dpi': 200})         # set the graph size and resolution
 sns.scatterplot(data=df, x="alcohol", y="color_intensity", hue="target", size=80)

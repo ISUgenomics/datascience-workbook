@@ -26,12 +26,12 @@ In late 2021, **Singularity underwent a rebranding to Apptainer**, changing the 
 <br><br>
 Before diving into container tasks on HPC infrastructure:
 * ensure you checked the available module using the commands:
-```
+```bash
 module avail apptainer
 module avail singularity
 ```
 * load a module of your choice:
-```
+```bash
 module load apptainer/<version>       # e.g., module load apptainer/1.1.9-py310-wsbt4ge
 ```
 * and consistently use the appropriate keyword for your commands *(in this example: apptainer)*.
@@ -49,7 +49,7 @@ A container can be thought of as a light weight Virtual machine that are in itse
 
 In order to use the container you will need to load the Singularity module on your HPC resource or install it on your local machine. This will vary from HPC resource to HPC resource.  You can find what your HPC called the module by using the ```module avail``` command.  In many cases it will be as simple as the command below.
 
-```
+```bash
 module load singularity
 ```
 
@@ -65,7 +65,7 @@ The first time you use singularity it will by default put a .singularity folder 
 #### Example from Docker shub.
 
 
-```
+```bash
 singularity pull docker://sjackman/maker
 singularity exec --bind $PWD ./maker.img maker --help
 ```
@@ -84,7 +84,7 @@ First go to [Singularity Hub](https://www.singularity-hub.org/) and locate the c
 
 The uri is the important bit of information you will need to download this image using the singularity pull command. Unfortunately, there is no easy way to copy this so I typically just copy the header and then manually type in the container name (:utilities.1.0.0) in the command below.
 
-```
+```bash
 singularity pull shub://ISUGIFsingularity/utilities:1.0.1
 ```
 
@@ -94,17 +94,17 @@ If you get a **CERTIFICATE_VERIFY_FAILED:** error then you can set your python c
 
 #### Direct execution of Singularity containers
 Containers often have runscripts that will provide you with useful information on how to use the container. The run scripts get initiated by executing the image as follows:
-```
+```bash
 ./ISUGIFsingularity-utilities-master-1.0.1.simg
 ```
 Which in this case produces a list of files that can be called by the image.
-```
+```bash
 colsum  createhist.awk  intervalBins.awk  nb  nbsearch  new_Assemblathon.pl  readme  README.md  seqlen.awk  summary.sh
 ```
 
  As I mentioned above, these are useful scripts often used in our group.  One script borrowed from the Assemblathon paper, new_Assemblathon.pl, we use when evaluating genome assemblies and want to get a summary of the assembly statistics.  To use this script via the container we can execute it in the following manner.
 
-```
+```bash
 singularity exec ISUGIFsingularity-utilities-master-1.0.1.simg new_Assemblathon.pl Spirochaete.fasta
 ```
 
@@ -154,7 +154,7 @@ Note you may need to allow Oracle permission via your security settings if you a
 
 If you are using your local machine, this will allow you to not only execute containers but also build containers from recipes and test them out.
 
-```
+```bash
 mkdir singularity-vm
 cd singularity-vm
 vagrant destroy
@@ -166,7 +166,7 @@ vagrant ssh
 
 
 #### Running a command using a Singularity container.  (Same as above)
-```
+```bash
 singularity exec ISUGIFsingularity-utilities-master-1.0.1.simg new_Assemblathon.pl Spirochaete.fasta
 ```
 
@@ -177,7 +177,7 @@ You probably started your vm and realized that you can't access any of your file
 If you are running a VM locally to use singularity, you can transfer files to and from your VM using ```scp``` and the VM private key.
 
 Change into the folder you initiated your vagrant vm ```singularity-vm``` and run the vagrant ssh-config command to get the private key
-```
+```bash
 vagrant ssh-config
 ```
 OUTPUT
@@ -196,11 +196,11 @@ Host default
 
 Then using that key scp files off of the virtual box from a newly opened terminal that is not in the VM.
 
-```
+```bash
 scp -P 2222 -i /Users/severin/singularity-vm/.vagrant/machines/default/virtualbox/private_key vagrant@127.0.0.1:/home/vagrant/recipe .
 ```
 or transfer a file to the VM.
-```
+```bash
 scp -P 2222 -i /Users/severin/singularity-vm/.vagrant/machines/default/virtualbox/private_key  ~/Downloads/Spirochaete.fasta vagrant@127.0.0.1:/home/vagrant/
 ```
 
@@ -209,14 +209,14 @@ scp -P 2222 -i /Users/severin/singularity-vm/.vagrant/machines/default/virtualbo
 
 Here is an example bash script wrapper for a singularity execution of a command in a container.  
 
-```
+```bash
 new_assemblathon
 #!/bin/bash
 singularity exec ISUGIFsingularity-utilities-master.simg new_Assemblathon.pl
 ```
 
 This wrapper contains the singularity command and once put in your path you can just use
-```
+```bash
 new_Assemblathon
 ```
 to execute the script via the singularity container.

@@ -36,7 +36,7 @@ SciPy is NOT a built-in Python module, meaning it is not included with the stand
 ## Install `scipy` library
 
 To install SciPy, you can use `pip`, which is the standard package installer for Python. You can run the following command in your terminal or command prompt to install SciPy:
-```
+```bash
 pip install scipy
 ```
 
@@ -44,7 +44,7 @@ pip install scipy
 
 
 An alternative way to install SciPy is using Conda. This way you can install different variants of `scipy` library in separate virtual environments, depending on the requirements of your project. You can create and activate a new conda environment, and then install `scipy` libarary:
-```
+```bash
 conda install scipy
 ```
 
@@ -74,7 +74,7 @@ Conda provides additional benefits over pip, such as the ability to create and m
 ## Import `scipy` library
 
 Once installed, SciPy can be imported into Python scripts and used to perform numerical computations and data manipulation.
-```
+```python
 import scipy as sp
 ```
 This will import the SciPy library and give it an alias of `sp`, which is a commonly used abbreviation for SciPy.
@@ -87,11 +87,11 @@ You can then use the SciPy functions and classes in your code by prefixing them 
 To import selected methods from SciPy submodules, you can use the `from ... import ...` syntax.
 
 For example, to import the `linalg.solve` method from the `scipy.linalg` submodule, you can use the following code:
-```
+```python
 from scipy.linalg import solve
 ```
 After importing the method in this way, you can use it directly in your code without the need to prefix it with the submodule name, as shown below:
-```
+```python
 import numpy as np
 from scipy.linalg import solve
 
@@ -142,7 +142,7 @@ Other I/O functions refer to IDL files, Matrix Market files, Unformatted Fortran
 
 The `savemat()` function is used to save data to a MATLAB `.mat` file. It takes a dictionary of variables and their values as input. <br>
 The `loadmat()` function is used to load data from MATLAB `.mat` files. It returns a dictionary containing the variables and their values.
-```
+```python
 import scipy.io as sio
 import numpy as np
 
@@ -166,14 +166,14 @@ The `scipy.datasets` module provides a set of 3 datasets that can be used for te
 * `electrocardiogram()` - medical recordings of the heart’s electrical activity
 
 The module provides a set of built-in functions to load these datasets by their names.
-```
+```python
 import scipy
 
 data = scipy.datasets.ascent()
 ```
 
 If you want to download all datasets included in Scipy, you can use the `download_all()` function. This function will download all three datasets and save them to a selected location as .dat files.
-```
+```python
 from scipy.datasets import download_all
 
 download_all('.', subok=True)
@@ -191,14 +191,14 @@ Here are some of the most commonly used methods in this module along with their 
 
 scipy.constants.**value(constant_name)** <br>
 Returns the numerical value of a given physical constant.
-```
+```python
 from scipy import constants
 
 constants.value('Planck constant')               # output: 6.62607015e-34
 ```
 
 Some common constants, such as R *(molar gas constant)*, C *(speed of light in vacuum)*, g *(standard acceleration due to gravity)*, or atomic mass, can be called directly by their symbol or name:
-```
+```python
 from scipy import constants
 
 constants.C                                      # output: 299792458.0
@@ -209,7 +209,7 @@ constants.atomic_mass                            # output: 1.6605390666e-27
 
 scipy.constants.**find(substring)** <br>
 Returns a list of constants whose names contain the given substring.
-```
+```python
 from scipy import constants
 
 constants.find('Planck')                         # output: ['Planck constant', 'Planck length', 'Planck mass', 'Planck temperature']
@@ -217,7 +217,7 @@ constants.find('Planck')                         # output: ['Planck constant', '
 
 scipy.constants.**physical_constants[constant_name]** <br>
 Returns a tuple containing the value, unit, and uncertainty of a given physical constant.
-```
+```python
 from scipy import constants
 
 constants.physical_constants['proton mass']      # output: (1.67262192369e-27, 'kg', 5.1e-37)
@@ -225,7 +225,7 @@ constants.physical_constants['proton mass']      # output: (1.67262192369e-27, '
 
 scipy.constants.**unit(constant_name)** <br>
 Returns the unit of a given physical constant.
-```
+```python
 from scipy import constants
 
 constants.unit['proton mass']                    # output: 'kg'
@@ -233,7 +233,7 @@ constants.unit['proton mass']                    # output: 'kg'
 
 scipy.constants.**convert_temperature(temp, from_unit, to_unit)** <br>
 Returns the unit of a given physical constant.
-```
+```python
 from scipy import constants
 
 constants.convert_temperature(100, 'Celsius', 'Kelvin')        # output: 373.15
@@ -270,7 +270,7 @@ Here are a few common methods with usage examples:
 **A. Returns a normal continuous random variable:**
 `scipy.stats.norm` <br>
 Here's an example of generating 10 random samples from a normal distribution with a mean of 0 and a standard deviation of 1:
-```
+```python
 from scipy.stats import norm
 
 data = norm.rvs(size=10)                        # output: array([ 1.04477379,  0.38281021,  0.46577888, -0.83614266,  0.21376598, -0.49608913, -0.41941393,  1.31005358, -1.40978119,  0.10541643])
@@ -279,7 +279,7 @@ data = norm.rvs(size=10)                        # output: array([ 1.04477379,  0
 **B. Returns a binomial discrete random variable:**
 `scipy.stats.binom` <br>
 Here's an example of generating 10 random samples from a binomial distribution with 10 trials and a success probability of 0.5:
-```
+```python
 from scipy.stats import binom
 
 data = binom.rvs(n=10, p=0.5, size=10)         # output: array([5, 7, 4, 3, 7, 5, 7, 4, 7, 7])
@@ -288,7 +288,7 @@ data = binom.rvs(n=10, p=0.5, size=10)         # output: array([5, 7, 4, 3, 7, 5
 **C. Returns a chi-squared continuous random variable:**
 `scipy.stats.chi2` <br>
 Here's an example of generating 10 random samples from a chi-squared distribution with 2 degrees of freedom:
-```
+```python
 from scipy.stats import chi2
 
 data = chi2.rvs(df=2, size=10)                 # output: array([1.53630305, 3.7814804 , 0.4032692 , 1.43028812, 1.69657965, 3.43180981, 0.60332784, 0.44769606, 0.67045952, 1.54229542])
@@ -297,7 +297,7 @@ data = chi2.rvs(df=2, size=10)                 # output: array([1.53630305, 3.78
 **D. Returns a gamma continuous random variable:**
 `scipy.stats.gamma` <br>
 Here's an example of generating 10 random samples from a gamma distribution with a shape parameter of 2 and a scale parameter of 2:
-```
+```python
 from scipy.stats import gamma
 
 data = gamma.rvs(a=2, scale=2, size=10)        # output: array([ 4.15564664,  4.60700567,  1.16833357,  3.3120714 ,  2.74423165, 7.29029297, 11.97580958,  0.46736018,  3.91648843,  1.42816416])
@@ -307,7 +307,7 @@ data = gamma.rvs(a=2, scale=2, size=10)        # output: array([ 4.15564664,  4.
 
 `scipy.stats.ttest_1samp` <br>
 Calculates the T-test for the mean of one sample. <br>Here's an example of performing a one-sample T-test on a set of data:
-```
+```python
 from scipy.stats import ttest_1samp
 
 data = [1, 2, 3, 4, 5]
@@ -319,7 +319,7 @@ ttest_1samp(data, 3)                    # output: TtestResult(statistic=-8.44052
 
 `scipy.stats.f_oneway` <br>
 Performs a one-way ANOVA test for multiple samples. <br>Here's an example of performing an ANOVA test on three sets of data:
-```
+```python
 from scipy.stats import f_oneway
 
 data1 = [1, 2, 3, 4, 5]
@@ -333,7 +333,7 @@ f_oneway(data1, data2, data3)           # output: F_onewayResult(statistic=3.857
 
 `scipy.stats.pearsonr` <br>
 Calculates a Pearson correlation coefficient and the associated p-value. <br>Here's an example of calculating the correlation coefficient between two sets of data:
-```
+```python
 from scipy.stats import pearsonr
 
 x = [1, 2, 3, 4, 5]
@@ -346,7 +346,7 @@ pearsonr(x, y)                          # output: PearsonRResult(statistic=1.0, 
 
 `scipy.stats.linregress` <br>
 Calculates a linear least-squares regression for two sets of measurements. <br>Here's an example of performing a linear regression on two sets of data:
-```
+```python
 from scipy.stats import linregress
 
 x = [1, 2, 3, 4, 5]
@@ -366,7 +366,7 @@ Here are some of the most common methods in this module along with usage example
 
 `scipy.cluster.hierarchy.linkage` <br>
 Computes the hierarchical clustering of a dataset and returns a linkage matrix.
-```
+```python
 import numpy as np
 from scipy.cluster.hierarchy import linkage
 
@@ -379,7 +379,7 @@ linkage_matrix = linkage(data, method='single')
 
 `scipy.cluster.hierarchy.is_valid_linkage` <br>
 Here's an example of using this method:
-```
+```python
 from scipy.cluster.hierarchy import is_valid_linkage
 
 print(is_valid_linkage(linkage_matrix))                         # output: True
@@ -389,7 +389,7 @@ print(is_valid_linkage(linkage_matrix))                         # output: True
 
 `scipy.cluster.hierarchy.leaves_list` <br>
 Returns the leaf nodes of a hierarchical clustering.
-```
+```python
 from scipy.cluster.hierarchy import leaves_list
 
 leaves = leaves_list(linkage_matrix)
@@ -400,7 +400,7 @@ print(leaves)                                                   # output: [0 3 4
 
 `scipy.cluster.hierarchy.dendrogram` <br>
 Plots the hierarchical clustering as a dendrogram.
-```
+```python
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.cluster.hierarchy import linkage, dendrogram
@@ -417,7 +417,7 @@ plt.show()
 
 `scipy.cluster.vq.kmeans` <br>
 Performs k-means clustering on a dataset and returns the cluster centroids.
-```
+```python
 import numpy as np
 from scipy.cluster.vq import kmeans
 
@@ -431,7 +431,7 @@ print(centroids)                        # output: [[0.73481431 0.93805966 0.0423
 
 `scipy.cluster.vq.vq` <br>
 Assigns each data point to the nearest cluster centroid using vector quantization.
-```
+```python
 from scipy.cluster.vq import vq
 
 labels, _ = vq(data, centroids)

@@ -1070,7 +1070,7 @@ Go ahead and delete your stdout and stderr files again.
 
 Let's now run a script that will execute the same python code 10 times simulataneously. Modify your sbatch script to look like this:
 
-```
+```bash
 #!/bin/bash
 #SBATCH --job-name=HelloWorld
 #SBATCH -p short              #name of the partition (queue) you are submitting to

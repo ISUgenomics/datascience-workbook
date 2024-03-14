@@ -94,7 +94,7 @@ There are a few ways to check the list of available built-in commands on a high-
 Many HPC systems have a `help` command that can be used to view a list of built-in commands. <br>
 <i>For example: `help` or `man` will give a list of all the commands.</i>
 
-```
+```bash
 help
 man
 ```
@@ -103,7 +103,7 @@ man
 Some HPC systems have a `builtin` command that can be used to view a list of built-in commands. <br>
 <i>Try these commands on your HPC system:</i>
 
-```
+```bash
 builtin
 compgen -b
 ```
@@ -111,7 +111,7 @@ compgen -b
 * **Using the alias command** <br>
 The `alias` command can be used to view a list of all currently defined aliases, which are often used to create custom built-in commands. Learn more from subsection {% include target_link href=320 section="#34-define-aliases" text="Define aliases" %} in the practical {% include target_link href=320 text="Introduction to UNIX Shell" %} tutorial in this workbook.
 
-```
+```bash
 alias
 ```
 
@@ -127,12 +127,12 @@ Some HPC systems may define built-in commands in shell initialization files such
 * **Trying to use the desired command** <br>
 If you know what the command corresponding to the program could be called, you can always try calling it in the terminal window. If such a command exists then usually calling it with the `-h` flag will display the available options. <br>
 <i>For example:</i>
-```
+```bash
 chmod -h
 ```
 ![Check if command exists]({{ images_path }}/04_hpc_check_command_true.png) <br><br>
 If such a command does not exist then an error message will be printed.
-```
+```bash
 random_command
 ```
 ![Check if command exists]({{ images_path }}/04_hpc_check_command_false.png) <br>
@@ -204,7 +204,7 @@ Tools like `ssh`, `telnet` and `rlogin` are often available, which allow users t
 Tools such as `scp` and `rsync` are often available as built-in commands, which allow users to securely transfer files to and from the HPC system.
 
 *Copy data from local to remote machine (while being on a local machine):*
-```
+```bash
 # syntax:
 scp <path_on_local>/<transferred_file_name> <user>@<hostname_to_remote>:<path_on_remote>
 
@@ -213,7 +213,7 @@ scp ~/.bashrc alex.badacz@atlas-dtn.hpc.msstate.edu:/project/90daydata/
 ```
 
 *Copy data from remote to local machine (while being on a local machine):*
-```
+```bash
 # syntax:
 scp <user>@<hostname_to_remote>:<path_on_remote>/<transferred_file_name> <path_on_local>/
 
@@ -241,7 +241,7 @@ If you seek for a guide about transferring data to {% include target_link href=6
 Many HPC systems use a **system of software modules** to manage and organize the software that is available. The <a href="https://modules.sourceforge.net" target="_blank">Environment Modules  ⤴</a> package can help to make an HPC system more user-friendly, efficient, and accessible for a wide range of users. It allows users to manage and access software in a more flexible way, and can help to make the system more efficient.
 
 The `module` command can be used to list the available modules, and to see which modules are currently loaded.
-```
+```bash
 module avail            # List available packages
 module avail <name>     # List available variants of a given package
 module list             # List currently loaded modules
@@ -253,29 +253,29 @@ Learn more from the practical tutorial {% include target_link href=642 text="Acc
 The centralized package manager enables searching for and listing the available software packages on HPC systems. Different package managers match various operating systems. So first, check the operating system (OS) on your HPC infrastructure and identify the package manager in use. Then follow the cheatsheet below to search for the software needed. Learn more from the practical tutorial  {% include target_link href=643 text="Accessing software via package manager" %} available in section {% include target_link href=600 text="06. High-Performance Computing (HPC)" %} of this workbook.
 
 * for Ubuntu / Debian: *.deb* packages managed by `apt` and `dpkg` <br>
-```
+```bash
 # List installed and available packages:
 apt list
 ```
-```
+```bash
 # Search apt list for a given package:
 apt search <software_name>
 ```
 * for RHEL / Fedora / Rocky: *.rpm* packages managed by `yum` <br>*(yum has been supplanted by `dnf`)* <br>
-```
+```bash
 # List installed and available packages:
 yum list all
 ```
-```
+```bash
 # List only available packages:
 yum list available
 ```
-```
+```bash
 # Search dnf list for a given package:
 yum search <software_name>
 ```
 * for FreeBSD: *.txz* packages managed by `pkg` <br>
-```
+```bash
 # Search pkg list for a given package:
 pkg search <software_name>
 ```

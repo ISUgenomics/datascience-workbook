@@ -77,12 +77,12 @@ Pandas is NOT a built-in Python module, meaning it is not included with the stan
 ## Install `pandas` library
 
 To install Pandas, you can use `pip`, which is the standard package installer for Python. You can run the following command in your terminal or command prompt to install Pandas:
-```
+```bash
 pip install pandas
 ```
 
 An alternative way to install Pandas is using Conda. This way you can install different variants of `pandas` library in separate virtual environments, depending on the requirements of your project. You can create and activate a new conda environment, and then install `pandas` libarary:
-```
+```bash
 conda install pandas
 ```
 
@@ -105,7 +105,7 @@ Conda provides additional benefits over pip, such as the ability to create and m
 ## Import `pandas` library
 
 After installation, you need to import Pandas in your Python code using the following command:
-```
+```python
 import pandas as pd
 ```
 This will import the Pandas library and give it an alias of `pd`, which is a commonly used abbreviation for Pandas.
@@ -144,7 +144,7 @@ A Series consists of an <b>array of values and a set of labels, called the index
 </div><br>
 
 Here's an example of a simple Series:
-```
+```yml
 0      John
 1      Jane
 2      Jack
@@ -161,7 +161,7 @@ In Pandas, a `DataFrame` is a 2-dimensional labeled data structure with columns 
 **A DataFrame consists of rows and columns**, where each column can have a different data type *(e.g., numeric, string, boolean)*. Each row represents a record, and each column represents a different variable or feature.
 
 Here's an example of a simple DataFrame:
-```
+```yml
    Name   Age      City
 0  John    25    London
 1  Jane    30  New York
@@ -184,7 +184,7 @@ Pandas also provides Index objects such as Index, Numeric Index, CategoricalInde
 ### *Create a Series*
 
 Here's an example of creating a Pandas Series:
-```
+```python
 import pandas as pd
 
 # create a Pandas Series with four values
@@ -207,7 +207,7 @@ dtype: int64 <br>
 ### *Create an empty DataFrame*
 
 To create an empty `DataFrame`, you can call the `pd.DataFrame()` constructor function with no arguments, like this:
-```
+```python
 import pandas as pd
 
 # create an empty DataFrame
@@ -244,7 +244,7 @@ This is particularly <b>important if you're working with multiple DataFrames in 
 You can create an empty `DataFrame` **of a specific structure** by specifying the column names and data types when you create the DataFrame.
 
 To create an empty DataFrame with specific column names and data types, you can pass a dictionary where the keys are the column names, and the values are the data types you want for each column.
-```
+```python
 import pandas as pd
 
 # create an empty DataFrame with specific column names and data types
@@ -278,7 +278,7 @@ In general, Pandas makes it easy to convert data from a variety of different sou
 
 **DataFrame from a list** <br>
 To create a `DataFrame` from a list, you can simply pass the list to the `pd.DataFrame()` constructor function. By default, Pandas will create a one-dimensional DataFrame with a single column containing the list values.
-```
+```python
 import pandas as pd
 
 # create a list of values
@@ -303,7 +303,7 @@ print(df)
 
 **DataFrame from a dictionary** <br>
 To create a `DataFrame` from a dictionary, you can pass the dictionary to the `pd.DataFrame()` constructor function. By default, Pandas will create a DataFrame with one column for each key in the dictionary, with the column name corresponding to the key name.
-```
+```python
 import pandas as pd
 
 # create a dictionary with key-value pairs
@@ -350,7 +350,7 @@ df = pd.DataFrame() <br>
 </code>
 
 We can add some data to the DataFrame using `df.append()` method:
-```
+```python
 # add some data to the DataFrame
 df = df.append({'name': 'Alice', 'age': 25, 'city': 'New York'}, ignore_index=True)
 df = df.append({'name': 'Bob', 'age': 30, 'city': 'Los Angeles'}, ignore_index=True)
@@ -382,7 +382,7 @@ The `print()` function displays the DataFrame with the added data:
 **add a new row with data** <br>
 To add new data as a new row to an existing DataFrame in Pandas, you can use the `append()` method. <br>
 *(Let's use the **df** DataFrame object from previous example.)*
-```
+```python
 # add new data to the DataFrame
 df = df.append({'name': 'David', 'age': 28, 'city': 'Miami'}, ignore_index=True)
 df = df.append({'name': 'Emily', 'age': 27, 'city': 'San Francisco'}, ignore_index=True)
@@ -405,7 +405,7 @@ The output of this code will be a DataFrame with five rows of data, including th
 
 **add a new row with data** <br>
 In Pandas, you can add a new empty row to a DataFrame by appending a new empty dictionary to the DataFrame using the append method.
-```
+```python
 # add a new empty row to the DataFrame
 df = df.append({}, ignore_index=True)
 
@@ -438,7 +438,7 @@ Note that the values in the new empty row are represented as <b>NaN</b> (Not a N
 To add a new column to an existing DataFrame in Pandas, you can simply assign a new column with a name and values to the DataFrame.
 
 Here's an example of adding a new column called 'gender' to the DataFrame from the previous example:
-```
+```python
 # add a new column to the DataFrame
 df['gender'] = ['F', 'M', 'M', 'M', 'F']
 
@@ -463,7 +463,7 @@ The output of this code will be a DataFrame with four columns, including the new
 To add an empty column to an existing DataFrame in Pandas, you can simply assign an empty Series with a name to the DataFrame.
 
 Here's an example of adding an empty column called 'income' to the DataFrame from the previous example:
-```
+```python
 # add an empty column to the DataFrame
 df['income'] = pd.Series(dtype=float)
 
@@ -504,13 +504,13 @@ s = pd.Series([25, 30, 35, 40], index=['John', 'Jane', 'Jack', 'Jill'])
 </code>
 
 We can access the values and index labels of the Series using indexing:
-```
+```python
 # access the value for 'Jane'
 print(s['Jane'])
 ```
 **OUTPUT:** 30<br>
 
-```
+```python
 # access the values for 'Jane' and 'Jack'
 print(s[['Jane', 'Jack']])
 ```
@@ -521,7 +521,7 @@ Jack    35 <br>
 dtype: int64
 </code><br>
 
-```
+```python
 # access the values greater than 30
 print(s[s > 30])
 ```
@@ -557,42 +557,42 @@ In Pandas, you can **access data in a DataFrame using indexing and slicing.** He
 
 **A. Access a single column by name:**
 
-```
+```python
 series_col = df['name']
 ```
 *This returns a Pandas Series object containing the values in the 'name' column.*
 
 **B. Access multiple columns by name:**
 
-```
+```python
 new_df_col = df[['name', 'age']]
 ```
 *This returns a new DataFrame containing only the 'name' and 'age' columns.*
 
 **C. Access a single row by index:**
 
-```
+```python
 series_row = df.loc[0]
 ```
 *This returns a Series object containing the values in the first row of the DataFrame (index 0).*
 
 **D. Access multiple rows by index:**
 
-```
+```python
 new_df_row = df.loc[0:1]
 ```
 *This returns a new DataFrame containing the first two rows of the DataFrame (indexes 0 and 1).*
 
 **E. Access a single value by row and column index:**
 
-```
+```python
 this_value = df.loc[0, 'name']
 ```
 *This returns the value in the first row and 'name' column of the DataFrame (which is 'Alice' in this example).*
 
 **F. Access a subset of rows and columns using boolean indexing:**
 
-```
+```python
 new_df_subset = df[(df['age'] > 25) & (df['city'] == 'New York')][['name', 'age']]
 ```
 *This returns a new DataFrame containing only the 'name' and 'age' columns for the rows where the age is greater than 25 and the city is 'New York'.*
@@ -623,7 +623,7 @@ Pandas provides functions for reading data from a variety of sources, including:
 
 ### CSV: `read_csv()`
 You can use the `pd.read_csv()` function to read data from a CSV file, for example:
-```
+```python
 import pandas as pd
 
 # Load data from a CSV file
@@ -634,7 +634,7 @@ df = pd.read_csv('data.csv')
 
 ### EXCEL/XLSX: `read_excel()`
 To load data from an Excel file, you can use the `read_excel()` function in Pandas.
-```
+```v
 import pandas as pd
 
 # Load data from an Excel file
@@ -644,7 +644,7 @@ df = pd.read_excel('data.xlsx')
 
 ### SQL: `read_sql()`
 To load data from a SQL database, you can use the `read_sql()` function in Pandas.
-```
+```python
 import pandas as pd
 import sqlite3
 
@@ -661,7 +661,7 @@ conn.close()
 
 ### JSON: `read_json()`
 To load data from a JSON file, you can use the `read_json()` function in Pandas.
-```
+```python
 import pandas as pd
 
 # Load data from a JSON file
@@ -671,7 +671,7 @@ df = pd.read_json('data.json')
 
 ### HTML: `read_html()`
 To load data from an HTML file or webpage, you can use the `read_html()` function in Pandas.
-```
+```python
 import pandas as pd
 
 # Load data from an HTML table
@@ -715,7 +715,7 @@ Once you've loaded your data into a Pandas DataFrame, you can use various functi
 * `df.describe()` to get summary statistics for numerical columns,
 * `df.info()` to display column names and data types
 
-```
+```python
 # Display the first few rows of the DataFrame
 print(df.head())
 
@@ -733,7 +733,7 @@ Pandas provides functions for cleaning and transforming data, such as:
 * `df.fillna()` to handle missing values *(e.g., to fill in missing values with a specified value or method)*,
 * converting data types.
 
-```
+```python
 # Remove duplicate rows
 df = df.drop_duplicates()
 
@@ -749,7 +749,7 @@ df['date_column'] = pd.to_datetime(df['date_column'], format='%Y-%m-%d')
 You can use *Boolean indexing* and other functions to filter and subset data based on certain criteria.
 
 For example, you can use the `df[df['column'] > value]` syntax to filter rows based on a condition.
-```
+```python
 # Filter rows where a column value is greater than a certain value
 filtered_df = df[df['column_name'] > value]
 
@@ -764,7 +764,7 @@ Pandas provides functions for grouping and aggregating data, such as calculating
 
 For example, you can use the `df.groupby()` function to group data by one or more columns, and then use a aggregation function such as `mean()` or `sum()` to calculate summary statistics for each group.
 
-```
+```python
 # Group data by a column and calculate the mean of another column
 grouped_df = df.groupby('group_column')['value_column'].mean()
 

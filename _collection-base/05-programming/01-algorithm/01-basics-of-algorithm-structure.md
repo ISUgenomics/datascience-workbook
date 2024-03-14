@@ -110,7 +110,7 @@ The syntax of the pseudocode is designed to be easy to read and understand, with
 </div><br>
 
 Here's an example of pseudocode for the rectangle example algorithm:
-```
+```yml
 Start
    Input length, width
    Set area to 0
@@ -174,7 +174,7 @@ The <b>if</b> statement is followed by a block of code to be executed if the con
 </div><br>
 
 Here's an example of `pseudocode` for a conditional statement:
-```
+```yml
 if condition1 is true then
     perform action1
 else if condition2 is true then
@@ -189,7 +189,7 @@ end if
 Here's an example of a conditional statement that determines whether a number is even or odd:
 
 **1)** `code in Bash`
-```
+```bash
 num = 5
 if ((num % 2 == 0)); then
     echo "$num is even"
@@ -205,7 +205,7 @@ In this Bash script, we first initialize the variable <b>num</b> to be equal to 
 </details><br>
 
 **2)** `code in Python`
-```
+```python
 num = 5
 if num % 2 == 0:
     print(num, "is even")
@@ -232,7 +232,7 @@ In Python, the syntax for conditional statements is <b>if</b> followed by the co
 Here's an example of a `for` loop that prints the numbers 1 through 10:
 
 `pseudocode`
-```
+```yml
 For i = 1 to 10 with a step of 1, do the following:
    Print i
 End For
@@ -242,7 +242,7 @@ End For
 Below you can explore the executable code written in 1) Bash and 2) Python, based on the pseudocode of the algorithm.
 
 **1)** `code in Bash`
-```
+```bash
 #!/bin/bash
 
 for (( i=1; i<=10; i++ ))
@@ -257,7 +257,7 @@ In this Bash script, we use the <b>for</b> keyword to start a loop that will ite
 </details><br>
 
 **2)** `code in Python`
-```
+```python
 for i in range(1, 11):
     print(i)
 ```
@@ -271,7 +271,7 @@ In this Python script, we use the <b>for</b> keyword to start a loop that will i
 Suppose we want to write an algorithm that counts down from 10 to 1 and prints each number on a new line. We could use a while loop to do this as follows:
 
 `pseudocode`
-```
+```yml
 Start
    Set i to 10
    While i is greater than 0
@@ -292,7 +292,7 @@ The <b>while loop</b> in this example is useful because it <b>allows us to repea
 Below you can explore the executable code written in 1) Bash and 2) Python, based on the pseudocode of the algorithm.
 
 **1)** `code in Bash`
-```
+```bash
 #!/bin/bash
 
 i=10
@@ -309,7 +309,7 @@ In this Bash script, we first set the variable <b><i>i</i></b> to 10. Then, we e
 </details><br>
 
 **2)** `code in Python`
-```
+```python
 i = 10
 while i > 0:
     print(i)
@@ -329,7 +329,7 @@ In this section, we will provide several examples of simple algorithms and walk 
 ## Sum of two numbers
 
 `pseudocode`
-```
+```yml
 input: two numbers, num1 and num2
 output: sum of the two numbers, sum
 
@@ -342,7 +342,7 @@ This algorithm takes in two numbers as input and outputs their sum. There are no
 ## Factorial of a number
 
 `pseudocode`
-```
+```yml
 input: a number, num
 output: the factorial of num, fact
 
@@ -357,7 +357,7 @@ This algorithm takes in a number as input and outputs its factorial. A `for` **l
 ## Greatest common divisor
 
 `pseudocode`
-```
+```yml
 input: two numbers, num1 and num2
 output: the greatest common divisor of num1 and num2, gcd
 
@@ -373,7 +373,7 @@ This algorithm takes in two numbers as input and outputs their greatest common d
 ## Linear search
 
 `pseudocode`
-```
+```yml
 input: an array of numbers, arr, and a value to search for, val
 output: the index of val in arr, or -1 if val is not in arr
 
@@ -388,7 +388,7 @@ This algorithm searches for a value in an array using the linear search algorith
 ## Binary search
 
 `pseudocode`
-```
+```yml
 input: a sorted array, arr, and a value to search for, val
 output: the index of val in arr, or -1 if val is not in arr
 
@@ -410,7 +410,7 @@ This algorithm searches for a value in a sorted array using the binary search al
 ## Bubble sort
 
 `pseudocode`
-```
+```yml
 input: an array of numbers, arr
 output: the sorted array
 
@@ -427,7 +427,7 @@ This algorithm sorts an array of numbers using the bubble sort algorithm. **Two 
 ## Reverse a string
 
 `pseudocode`
-```
+```yml
 input: string s
 output: reversed string r
 

@@ -46,14 +46,14 @@ If you don't have pip or Conda installed, start with the tutorial(s) that will g
 #### Install with pip
 
 In terminal window, execute the command:
-```
+```bash
 pip install plotly==5.8.1
 ```
 
 #### Install with conda
 
 In terminal window, execute the command:
-```
+```bash
 conda install -c plotly plotly=5.8.1
 ```
 
@@ -81,7 +81,7 @@ For the efficient development of interactive Python applications, you will also 
 <br>
 In the terminal window navigate to the desired location and create the empty script file, e.g. `ex_plotly_graphing.py`
 
-```
+```bash
 touch ex_plotly_graphing.py
 ```
 
@@ -91,7 +91,7 @@ Open the file in the selected text editor (Atom, Nano, Vim, mcedit, etc.) and go
 <br>
 In the terminal window execute the command provided below to start a new JupyterLab session.
 
-```
+```bash
 jupyter lab
 ```
 
@@ -109,7 +109,7 @@ Once you have launched the Jupyter Development Environment in a browser window, 
 **C. Import Plotly**
 and copy paste the folowing code snippet:
 
-```
+```python
 # -*- coding: utf-8 -*-
 
 import plotly
@@ -120,7 +120,7 @@ import plotly
 
 [Plotly Express](https://plotly.com/python/plotly-express/) is a built-in module in the **Plotly** library and provides a high-level API for smart & efficient creation of interactive graphs.
 
-```
+```python
 import plotly.express as px
 ```
 
@@ -310,7 +310,7 @@ Select one of the following named colorscales for coloring the Heatmap section:
 You can also create your own colorscale as an array of lists, each composed of two elements. The first refers to the percentile rank, and the second to the applied color. Color can be provided in any string format among hex, hsl, rgb, or common name.
 <br>e.g.,
 
-```
+```python
 custom_colorscale = [
                       [0.00, '#636EFA'],
                       [0.25, '#AB63FA'],
@@ -325,7 +325,7 @@ Explore *px_scatter_PCA.ipynb* notebook.
 ### Plotly Graph Objects wrapper
 [Plotly Graph Objects](https://plotly.com/python/graph-objects/) is a built-in module in the **plotly** library and manages the Figure object that represent the entire plotting area.
 
-```
+```python
 import plotly.graph_objects as go
 ```
 

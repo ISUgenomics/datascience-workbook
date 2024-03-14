@@ -48,7 +48,7 @@ singularity> iinit
 
 Sometimes also referred as iRODS account, this is required to access private files from the CyVerse data store. This is done by logging in via `iinit` command. You only need this once per cluster. As it involves data transfer, the best practice recommends using the data transfer nodes on HPC.
 
-```
+```bash
 $ iinit
 One or more fields in your iRODS environment file (.irodsEnv) are
 missing; please enter them.
@@ -81,7 +81,7 @@ This will let you connect automatically each time you want to login by just typi
 
 Navigate to the desired location/directory and use `iget` command to download the desired file. You can also use any of the standard UNIX command by using `i` as prefix (eg., `icp` for copy, `imv` to move, `ipwd` to print working directory etc.,)
 
-```
+```bash
 iget path/to/filename
 ```
 
@@ -93,25 +93,25 @@ synchronize the data between a local copy (local file system) and the copy store
 
 To synchronize (recursively) the data from the local directory foo1 to the iRODS collection foo2
 
-```
+```bash
 irsync -r foo1 i:foo2
 ```
 
 To synchronize (recursively) the data from the iRODS collection foo1 to the local directory foo2
 
-```
+```bash
 irsync -r i:foo1 foo2
 ```
 
 To synchronize (recursively) the data from the iRODS collection foo1 to another iRODS collection foo2
 
-```
+```bash
 irsync -r i:foo1 i:foo2
 ```
 
 Finally, if you want to transfer a single file from local host to remote (iplant), you can do it using `iput` command.
 
-```
+```bash
 iput filename
 ```
 

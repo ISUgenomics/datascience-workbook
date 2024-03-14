@@ -101,7 +101,7 @@ Here's a template PBS script with commonly used `#PBS` directives:
 
 `template_script.pbs`
 
-```
+```bash
 #!/bin/bash
 #PBS -N job_name
 #PBS -o output_file

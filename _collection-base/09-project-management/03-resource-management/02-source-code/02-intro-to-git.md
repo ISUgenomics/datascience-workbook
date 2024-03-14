@@ -249,7 +249,7 @@ Download the **Git** installer from the <a href="https://git-scm.com/download/wi
 
 **MacOS** <br>
 If you have <a href="https://brew.sh" target="_blank">Homebrew  ⤴</a> installed, simply type in your terminal window:
-```
+```bash
 brew install git
 ```
 Alternatively, you can download the **Git** installer from the <a href="https://git-scm.com/download/mac" target="_blank">official Git website  ⤴</a> and follow the prompts.
@@ -260,17 +260,17 @@ Alternatively, you can download the **Git** installer from the <a href="https://
 You can install **Git** using your distribution's package manager.
 
 * For `Ubuntu` or other `Debian`-based distributions, use:
-```
+```bash
 sudo apt-get install git
 ```
 
 * For `Fedora`, use:
-```
+```bash
 sudo dnf install git
 ```
 
 Once you've installed Git, to verify the installation open a new terminal and type:
-```
+```bash
 git --version
 ```
 
@@ -282,7 +282,7 @@ git --version
 Git associates your authentication information with each commit you make.
 
 **Set your username and email** using the following commands:
-```
+```bash
 git config --global user.name "Your Name"
 git config --global user.email "youremail@example.com"
 ```
@@ -418,7 +418,7 @@ Remember, Git is a very powerful tool with a plethora of commands. This was just
 ***Now let's initialize your first Git repository.*** *Exciting times, right?*
 
 Choose a directory where you want to start a project (or navigate to an existing project directory) and run the following command:
-```
+```bash
 git init
 ```
 That's it! You now have a brand new Git repository.
@@ -481,7 +481,7 @@ Importantly, you can <b>check git status once and then create multiple commits</
 This functionality allows you to keep a close eye on the changes happening in your project and easily manage them using Git.
 
 To see the current state of your repository and the files with modifications, use the command:
-```
+```bash
 git status
 ```
 This will provide an overview of which files are modified, untracked, or staged for commit.
@@ -501,7 +501,7 @@ When working with Git, it is important for users <b>NOT to hesitate in creating 
 Staging files prepares them for inclusion in the next commit.
 
 * to stage specific files use:
-```
+```bash
 git add <file_name1> <file_name2>
 ```
   ![01-git_add_file.png]({{ images_path }}/01-git_add_file.png)
@@ -511,7 +511,7 @@ git add <file_name1> <file_name2>
   ![01-git_add_file_status.png]({{ images_path }}/01-git_add_file_status.png)
 
 * to stage all modified files use:
-```
+```bash
 git add .
 ```
 
@@ -520,7 +520,7 @@ git add .
 ### *Commit your changes*
 
 When you're satisfied with the modifications and additions, create a commit to save a snapshot of your project using the command:
-```
+```bash
 git commit -m "Your commit message here"
 ```
 
@@ -556,7 +556,7 @@ To explore the commit history and compare different versions of your project, we
 
 ### *Chronological list of commits*
 
-```
+```bash
 git log
 ```
 This command displays a chronological list of commits, providing information about: <br> the `commit hash`, `author`, `date`, and `commit message`. This allows you to examine the history of your project and understand the sequence of changes made over time.
@@ -565,7 +565,7 @@ This command displays a chronological list of commits, providing information abo
 
 ### *Compare different versions of the repo*
 
-```
+```bash
 git diff {commit hash 1} {commit hash 2}
 ```
 This command allows you to compare different versions of your project. By specifying `commit hashes`, `branches`, or `tags`, you can see the differences in the content of files between those versions. This is particularly useful for understanding what has changed and identifying specific modifications introduced at different points in your project's history.
@@ -619,7 +619,7 @@ When you switch to a specific commit, <b>Git puts your repository in a "detached
 
 1. First, use `git log` to **identify the commit hash** of the version you want to revert to.
 2. Once you have the *commit hash*, run:
-```
+```bash
 git checkout {commit-hash}
 ```
 replacing `{commit-hash}` with the actual *commit hash*. <br>
@@ -641,11 +641,11 @@ To undo this operation and switch back to 'HEAD' state:
 ### *Return repo to the latest commit*
 
 To return your repo to the latest commit and leave the "detached HEAD" state, you can simply run:
-```
+```bash
 git switch -
 ```
 or
-```
+```bash
 git checkout {branch-name}
 ```
 replacing `{branch-name}` with the branch you want to switch to. <br>
@@ -661,7 +661,7 @@ When you want to return to the most recent state of the repository from a past c
 </div>
 
 Use the following command to **switch back to the main development line**:
-```
+```bash
 git checkout master
 ```
 By executing this command, you will return to the latest commit on the main branch. This will bring your repository back to the current state and allow you to continue working on the main development line.
@@ -731,11 +731,11 @@ Once the repository is created on GitHub, it will take you to a quick setup page
 <p align="center"><img width="800" src="{{ images_path }}/01-git_repo_url.png"></p>
 
 Now, **you go back to the terminal on your local machine**, navigate to your local repository and run the following command to add the remote repository:
-```
+```bash
 git remote add origin {your-remote-repository-url}
 ```
 *Replace* `{your-remote-repository-url}` *with the URL of your new GitHub repository, similar to:*
-```
+```bash
 git remote add origin https://github.com/username/repository.git
 ```
 
@@ -743,7 +743,7 @@ The term `origin` is a common name for the default remote repository.
 
 **4. Push your local repository to GitHub** <br>
 Finally, you can push your local repository (and all its history) to the remote repository on GitHub using the following command:
-```
+```bash
 git push -u origin master
 ```
 *Here, origin is the name you gave to your remote repository (as a shorthand), and master is the branch you're pushing up to GitHub (the main branch is often called "master" or "main").*
@@ -760,7 +760,7 @@ Now, your local repository is connected to a remote repository on GitHub. You an
 ### *List your remote(s)*
 
 To check your remote repositories, use the `git remote -v` command:
-```
+```bash
 git remote -v
 ```
 This will list the URLs of the remote repositories you've connected to your local repository, e.g.:
@@ -787,7 +787,7 @@ By pulling updates, you ensure that your local copy is up to date with the lates
 </div>
 
 To fetch and merge the latest changes from the remote repository into your local copy, navigate to your local repo directory and use the following command:
-```
+```bash
 git pull
 ```
 This command combines the actions of:
@@ -815,21 +815,21 @@ You have already learned how to make commits in the previous section (Section [4
 
 Here are the practical steps to follow, given in brief:
 * stage the changes you want to include in the commit using commands:
-```
+```bash
 git add .                       # to add all modified files
 ```
 or
-```
+```bash
 git add {file1} {file2}         # to add selected files only
 ```
 * create a commit with a descriptive message summarizing your changes:
-```
+```bash
 git commit -m "Your commit message here"
 ```
 
 **2. Send committed changes to the remote codebase** <br>
 After committing your changes locally, you can push them to the remote repository using the `git push` command.
-```
+```bash
 git push
 ```
 This command sends your committed changes from the local branch to the corresponding branch on the remote repository.
@@ -886,7 +886,7 @@ Let's use a public <a href="https://github.com/ISUgenomics/data_graphing" target
 
 Find and copy the URL address of the repo, and then use it in your command:
 
-```
+```bash
 git clone https://github.com/ISUgenomics/data_graphing.git
 ```
 
@@ -920,15 +920,15 @@ Once you have cloned a repository to your local machine using the `git clone` co
 
 Use your preferred file explorer or terminal commands to navigate through the files in your local repository.
 * If you're using a terminal, try commands like:
-```
+```bash
 cd <directory>
 ```
 to change directories,
-```
+```bash
 ls
 ```
 to list files and directories,
-```
+```bash
 cat <filename>
 ```
 to print the contents of a file.
@@ -973,7 +973,7 @@ The `git diff` command is used to see the differences between commits, between a
 
 **Current State vs Last Commit:** <br>
 If you want to see what has changed between your current state and the last commit, you can simply run:
-```
+```bash
 git diff
 ```
 
@@ -982,7 +982,7 @@ git diff
 
 **Differences Between Two Specific Commits:** <br>
 If you want to see the differences between two specific commits, you can use:
-```
+```bash
 git diff <commitHash1> <commitHash2>
 ```
 *Replace* `<commitHash1>` *and* `<commitHash2>` *with the actual commit hashes from your git log.*
@@ -1031,11 +1031,11 @@ Branching allows you to create independent lines of development within your proj
 
 
 **To create a new branch**, use the command:
-```
+```bash
 git branch <branch-name>
 ```
 *For example:*
-```
+```bash
 git branch new-feature
 ```
 creates a new branch named "new-feature." <br>
@@ -1051,11 +1051,11 @@ Give your branches <b>descriptive names</b> that reflect the purpose or feature 
 </div>
 
 **Switch to the newly created branch using:**
-```
+```bash
 git checkout <branch-name>
 ```
 *For example:*
-```
+```bash
 git checkout new-feature
 ```
 switches to the "new-feature" branch.
@@ -1086,7 +1086,7 @@ Forking a repository enables you to <b>create a separate copy of the original re
 
 
 * Clone the forked repository to your local machine using:
-```
+```bash
 git clone <forked-repo-url>
 ```
 * Enjoy working on your local forked repository, separate from the original repository.
@@ -1144,11 +1144,11 @@ You have learned this already in step <a href="#4-commit-changes">4. Commit chan
 Once you're satisfied with the **experiments in your branch or fork**, you can **merge the changes back into the main development branch**.
 
 * To merge changes, switch back to the main branch using:
-```
+```bash
 git checkout <main-branch>
 ```
 * Then, merge the changes from the experimental branch into the current main branch:
-```
+```bash
 git merge <branch-name>
 ```
 

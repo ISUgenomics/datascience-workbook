@@ -28,7 +28,7 @@ tags: []
 
 Initialize a new Git repository
 
-```
+```bash
 $ git init
 ```
 
@@ -36,7 +36,7 @@ $ git init
 
 After a file has been added or modified, you can stage the file
 
-```
+```bash
 $ git add README.md
 ```
 
@@ -44,7 +44,7 @@ $ git add README.md
 
 Commit the file to your local repository and write a message
 
-```
+```bash
 $ git commit -m "initial commit (README.md)"
 ```
 
@@ -62,7 +62,7 @@ your local repo to the remote.
 
 Add the remote
 
-```
+```bash
 $ git remote add origin git@github.com:username/repo-name.git
 ```
 
@@ -70,7 +70,7 @@ $ git remote add origin git@github.com:username/repo-name.git
 
 Push your snapshot to the remote
 
-```
+```bash
 $ git push -u origin master
 ```
 

@@ -67,8 +67,7 @@ To execute the cell type Shift+Enter or click the run button at the top of the n
 
 Click inside the new cell that has appeared in your notebook, then at the top of the notebook click again on "Code" and change it to "Markdown". Click inside the Markdown cell and type:
 
-```
-bash
+```bash
 # Make Notes in Your Codes Prettier Using Markdown
 ## add a subtitle
 
@@ -83,8 +82,7 @@ Learn more about JupyterHub markdown syntax [here](https://jupyter-notebook.read
 
 If you executed the previous cell, a new code cell should have automagically appeared. Type:
 
-```
-bash
+```bash
 print('Hello, Jupyter world!')
 ```
 
@@ -101,8 +99,7 @@ Right click on the cell and choose "Delete Cells" or place your cursor in the ce
 
 Insert a cell under the markdown cell by clicking on the markdown cell and then clicking the plus button at the top of the notebook (next to the scissors). Type:
 
-```
-bash
+```bash
 print('How awesome is this?!')
 ```
 

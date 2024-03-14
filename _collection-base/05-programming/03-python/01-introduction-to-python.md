@@ -143,7 +143,7 @@ You can also stay here and enhance your experience by following the step-by-step
 ## **Variables**
 
 Variables are used to store data in memory so that it can be accessed and manipulated later. In Python, you can create a variable by simply assigning a value to a name:
-```
+```python
 x = 42
 ```
 *In this example, we create a variable called "x" and assign it the value 42. The value of this variable is stored in the memory of the program so you can ask for this value anytime.*
@@ -161,7 +161,7 @@ Python has several built-in data types, including:
 * **booleans**, e.g., *True* or *False*
 
 You can check the data type of a variable using the `type()` function:
-```
+```python
 x = 42
 print(type(x))           # Output: <class 'int'>
 ```
@@ -246,7 +246,7 @@ Bitwise operators operate on these binary representations of numbers at the bit 
 
 
 For example, you can use the `+` operator to add two numbers together:
-```
+```python
 x = 1
 y = 2
 z = x + y
@@ -264,7 +264,7 @@ Python has several control flow statements, including:
 
 ###  •  *IF-ELIF-ELSE conditional*
 Here's an example of a simple if/else statement:
-```
+```python
 x = 42
 if x < 10:
     print("x is lower than 10")
@@ -291,7 +291,7 @@ The <b>until loop</b> is NOT a built-in loop in Python. Instead, it is often use
 
 **FOR** <br>
 Here's an example of using a for loop to iterate over a list of numbers and print each number:
-```
+```python
 numbers = [1, 2, 3, 4, 5]
 
 for num in numbers:
@@ -301,7 +301,7 @@ for num in numbers:
 
 **WHILE** <br>
 Here's an example of using a while loop to print the numbers from 1 to 5:
-```
+```python
 num = 1
 
 while num <= 5:
@@ -312,7 +312,7 @@ while num <= 5:
 
 **WHILE NOT** *(equivalent to until loop)* <br>
 Here's an example of using a while loop to print the numbers from 1 to 5 using a negated condition:
-```
+```python
 num = 1
 
 while not (num > 5):
@@ -330,7 +330,7 @@ In Python, `try-except-finally` is a powerful mechanism for handling errors and 
 * The `finally` is an optional block hat is executed regardless of whether an exception is raised or not.
 
 **EXAMPLE 1:** Here's an example of using try-except to handle a division by zero error:
-```
+```python
 numerator = 10
 denominator = 0
 
@@ -342,7 +342,7 @@ except ZeroDivisionError:
 *In this example, we attempt to divide the 'numerator' variable by the 'denominator' variable inside a try block. However, since denominator is zero, this will raise a 'ZeroDivisionError'. To handle this error, we use an except block that specifies the type of exception to catch (ZeroDivisionError) and the code to execute when the exception is caught (print("Error: division by zero")).*
 
 **EXAMPLE 2:** Here's an example of using try-except-finally to handle a file I/O error:
-```
+```python
 try:
     file = open("myfile.txt", "r")
     # do something with the file
@@ -361,7 +361,7 @@ In Python, `pass`, `continue`, and `break` are control statements used to change
 **PASS** <br>
 The `pass` keyword is used as a placeholder for an empty block of code. It **does nothing** and can be used when you need to have a statement syntactically but do not want to execute any code. <br>
 <i>For example:</i>
-```
+```python
 for i in range(5):
     if i == 2:
         pass
@@ -393,7 +393,7 @@ except ZeroDivisionError: <br>
 **CONTINUE** <br>
 The `continue` keyword is used to skip the current iteration of a loop and move on to the next one. <br>
 <i>For example:</i>
-```
+```python
 for i in range(5):
     if i == 2:
         continue
@@ -405,7 +405,7 @@ for i in range(5):
 **BREAK** <br>
 The `break` keyword is used to exit a loop prematurely. When break is executed, the loop terminates immediately, and the program continues executing the code that comes after the loop.  <br>
 <i>For example:</i>
-```
+```python
 for i in range(5):
     if i == 2:
         break
@@ -441,7 +441,7 @@ Examples of built-in functions include:
 In addition to built-in functions, Python also allows for the definition of custom functions using the `def` keyword.
 
 Here's an example of a custom function that takes two arguments and returns their sum:
-```
+```python
 # Define a function that calculates the sum of two numbers
 def add_numbers(x, y):
     return x + y
@@ -455,7 +455,7 @@ print(result)                 # Output: 3
 **Custom functions can also have default parameter values, variable-length argument lists, and keyword arguments.**
 
 Here's an example of a custom function that takes a default parameter value and a variable-length argument list:
-```
+```python
 def print_numbers(num1, num2=0, *args):
     print(num1)
     print(num2)
@@ -489,7 +489,7 @@ A <b>package</b> is a collection of related modules that can be organized hierar
 To use multiple functions from a package, you can **import the entire package** using the `import` statement and then call the functions using the dot `.` notation.
 
 **Example 1:** Let's say we want to use the `sqrt()` function from the **math module** to calculate the square root of a number:
-```
+```python
 import math
 
 result = math.sqrt(25)
@@ -519,7 +519,7 @@ print(my_dataframe)
 Instead of importing an entire module, you can **import only a specific function** from the module using the from keyword.
 
 **Example 2:** Let's say we only want to use the sqrt() function from the math module:
-```
+```python
 from math import sqrt
 
 result = sqrt(25)
@@ -533,7 +533,7 @@ print(result)                             # output: 5.0
 In Python, a class is a blueprint for creating objects, which are instances of the class. Classes are defined using the `class` keyword, followed by the *class name* and a colon, and then the body of the class, which contains its **attributes** (variables) and **methods** (functions).
 
 Here's an example of creating a simple Person class in Python:
-```
+```python
 class Person:
     def __init__(self, name, age):
         self.name = name
@@ -556,14 +556,14 @@ In this example, we define a **Person class** with four methods:
 * `set_age`, a setter method that takes a new age value and sets the <b>self.age</b> instance attribute to this new value.
 
 With this `Person class` defined, we can **create instances of it (objects), like so:
-```
+```python
 person1 = Person("Alice", 25)
 person2 = Person("Bob", 30)
 ```
 *We just created two instances of the Person class, person1 and person2, with different name and age values.*
 
 We can now call the methods of these instances to get and set their attributes:
-```
+```python
 print(person1.get_name())                 # output: Alice
 print(person1.get_age())                  # output: 25
 
@@ -578,7 +578,7 @@ Here are a few simple examples of Python code that you can try out:
 
 ***Example 1:*** *Printing a message to the console:*
 
-```
+```python
 print("Hello, world!")
 ```
 
@@ -588,7 +588,7 @@ print("Hello, world!")
 
 ***Example 2:*** *Storing and manipulating data in variables:*
 
-```
+```python
 x = 10
 y = 5
 
@@ -601,7 +601,7 @@ print(x, y)
 
 ***Example 3:*** *Perform some basic arithmetic operations:*
 
-```
+```python
 z = x + y
 print(z)
 
@@ -615,7 +615,7 @@ print(z)
 
 ***Example 4:*** *Calling a built-in function:*
 
-```
+```python
 name = input("What is your name? ")
 print("Hello, " + name + "!")
 ```
@@ -625,7 +625,7 @@ print("Hello, " + name + "!")
 
 ***Example 5:*** *Defining and calling a custom function:*
 
-```
+```python
 def greet(name):
     """Prints a greeting to the given name."""
     print(f"Hello, {name}!")
@@ -633,7 +633,7 @@ def greet(name):
 
 *This code defines a function called `greet()` that takes a single argument, `name`, and prints a greeting to the console. You can substitute any text as a `name` argument to print a greeting for it. Let's try it!*
 
-```
+```python
 greet("Alice")
 greet("Bob")
 ```
@@ -644,7 +644,7 @@ greet("Bob")
 
 ***Example 6:*** *Call function in a loop:*
 
-```
+```python
 names = ["Alice", "Bob", "Kathy", "Tim", "Hannah", "Adam", "Tina", "Eric", "Anna", "Sam"]
 
 for name in names:
@@ -662,7 +662,7 @@ for name in names:
 
 Do it yourself! Then, check the solution below.
 
-```
+```python
 names100 = []
 for num in ['0','1','2','3','4','5','6','7','8','9']:
     for name in names:
@@ -687,7 +687,7 @@ So, let's learn about the availability of a few more built-in functions:
 
 Knowing these functions can significantly simplify the solution in example 5:
 
-```
+```python
 names100 = [name+str(num) for num in range(10) for name in names]
 
 for name in names100:
@@ -704,12 +704,12 @@ The <b>range()</b> function in Python is a built-in function that allows you to 
 </div>
 
 For example, the following code generates a sequence of integers from 0 to 9, incrementing by 1:
-```
+```python
 for i in range(10):
     print(i)                      # Output: 0 1 2 3 4 5 6 7 8 9
 ```
 You can also specify different values for the start, stop, and step arguments to generate different sequences of integers. For example, the following code generates a sequence of integers from 10 to 15, incrementing by 2:
-```
+```python
 for i in range(10, 16, 2):
     print(i)                      # Output: 10 12 14
 ```
@@ -723,13 +723,13 @@ The <b>str()</b> function in Python is a built-in function that converts a value
 </div>
 
 For example, the following code converts an integer to a string:<br>
-```
+```python
 x = 123
 y = str(x)
 print(y)              # Output: "123"
 ```
 The `str()` function can be used to convert other data types to strings as well. For example, the following code converts a float to a string:
-```
+```python
 x = 3.14159
 y = str(x)
 print(y)              # Output: "3.14159"

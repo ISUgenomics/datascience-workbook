@@ -59,7 +59,7 @@ Using the `math` module in Python can help you **perform complex mathematical op
 ## *Getting Started*
 
 You can try out the `math` module on your **local machine** if you have Python installed. <br>
-<span style="color: #ff3870;font-weight: 500;"> If you want to make up for the installation step, you can follow the installation guide provided in the tutorial</span> {% include target_link href=423 text="Local Python setup on your computing machine." %} 
+<span style="color: #ff3870;font-weight: 500;"> If you want to make up for the installation step, you can follow the installation guide provided in the tutorial</span> {% include target_link href=423 text="Local Python setup on your computing machine." %}
 
 
 Alternatively, if you prefer to **work online**, you can use various online Python interpreters such as <a href="https://repl.it/" target="_blank">Repl.it  ⤴</a>, {% include target_link href=120 text="Tutorial" %} <a href="https://www.pythonanywhere.com/" target="_blank">PythonAnywhere  ⤴</a>, or <a href="https://colab.research.google.com/" target="_blank">Colab  ⤴</a>. These online interpreters provide a Python shell and allow you to run Python code without installing Python on your local machine.
@@ -86,7 +86,7 @@ In addition to these, Python also provides operators for more advanced mathemati
 
 ## BASIC ARITHMETICS
 
-```
+```python
 x = 10
 y = 3
 
@@ -113,7 +113,7 @@ print(z)                        # Output: 3.3333333333333335
 
 <i>Python has an exponentiation operator `**` that raises a number to a power.</i>
 
-```
+```python
 x = 2
 y = 3
 
@@ -125,7 +125,7 @@ print(z)                        # Output: 8
 ### • *Integer Division*
 <i>In Python, integer division is performed using the double slash `//` operator</i>
 
-```
+```python
 x = 23
 y = 5
 
@@ -137,7 +137,7 @@ print(z)                        # Output: 4
 ### • *Modulus*
 <i>In Python, the modulus operation is performed using the percent `%` operator.</i>
 
-```
+```python
 x = 23
 y = 5
 
@@ -248,7 +248,7 @@ In the tabs below you can find the corresponding tables with `math` module funct
 The `math` module is built into Python and **does NOT require any installation**.
 
 To use the `math` module, you need to import it first using the `import` statement:
-```
+```python
 import math
 ```
 Once the math module is imported, you can access all its functions by prefixing them with math, followed by a dot and the function name, `math.function_name()`. <br>

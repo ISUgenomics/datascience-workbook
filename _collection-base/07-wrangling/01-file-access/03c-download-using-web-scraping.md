@@ -148,7 +148,7 @@ If you run into trouble, go to the practical tutorials of this workbook in secti
 The **urllib** is a Python library that provides a simple and powerful **interface for working with URLs**, allowing you to make HTTP requests and handle the response data, making it a useful tool for web scraping.
 
 `urllib` is included in the standard library of Python, which means it's available in the Python distribution and doesn't need to be installed separately. It simply requires to be included at the top of your Python script:
-```
+```python
 import urllib
 ```
 It provides several modules for working with URLs, including `urllib.request`, `urllib.parse`, and `urllib.error`.
@@ -239,7 +239,7 @@ Web scraping has become an increasingly important tool for researchers and data 
 
 Here is a basic template of the Python web scraping script that demonstrates how to retrive data from a webpage using Beautiful Soup and save it to a local file:
 
-```
+```python
 import requests
 from bs4 import BeautifulSoup
 
@@ -323,7 +323,7 @@ For the installation instructions see section [Install requirements](#install-re
 **STEP A:** Retrieve software names and corresponding URLs
 
 SCRIPT file: `scrap_biapps_web_service.py`
-```
+```python
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
@@ -397,7 +397,7 @@ print("\n\nTOOL : URL\n")
 
 **Run script in the terminal:**
 
-```
+```bash
 python scrap_biapps_web_service.py
 ```
 
@@ -450,7 +450,7 @@ driver.get('https://biapss.chem.iastate.edu/documentation.html') <br>
 content = driver.find_elements(By.ID, 'tab17')[0] <br>
 </code>
 
-```
+```python
 ## Create list of publications ##
 elements = content.get_attribute("innerHTML").split('<br><br>')
 to_remove = ['<b>', '</b>', '<i>', '</i>', '<p>', '</p>', '\t', '</a>', 'target="_blank"', 'style="color:#F3
@@ -554,7 +554,7 @@ for i in content.find_elements(By.TAG_NAME, 'a'): <br>
  &emsp; &emsp; &emsp; &emsp; DATA[tool] = [i.get_attribute("href"), []] <br>
 </code>
 
-```
+```python
     ## Match Publications with a tool ##
     elif tool != '':
         cite = ' '.join(i.get_attribute("textContent").split())
@@ -572,7 +572,7 @@ for i in content.find_elements(By.TAG_NAME, 'a'): <br>
 <br><hr>
 </details><br>
 
-```
+```python
 print("\n\nTOOL : URL : PUBLICATIONS\n")
     for i in DATA:
         print('\n', i, ":", DATA[i][0])
@@ -582,7 +582,7 @@ print("\n\nTOOL : URL : PUBLICATIONS\n")
 
 **Run in the terminal:**
 
-```
+```bash
 python scrap_biapps_web_service.py
 ```
 

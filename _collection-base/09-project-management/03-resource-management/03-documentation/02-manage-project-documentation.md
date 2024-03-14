@@ -154,28 +154,25 @@ Inside my notebook folder inside my computer folder in a markdown file called 01
   * Condo
     * 01_QC.md
 
-````
+```bash
 # Quality check on Unicorn RNASeq data             (What)
 
-* Jan 19, 2021                                     (When)
-* /work/GIF/severin/Unicorn_RNASeq/01_QC           (Where)
-                                                   (Why)
-I want to make sure that the quality of my reads obtained from the Illumina Novaseq look good before proceeding.   
-
+# * Jan 19, 2021                                   (When)
+# * /work/GIF/severin/Unicorn_RNASeq/01_QC         (Where)
+#                                                  (Why)
+# I want to make sure that the quality of my reads obtained from the Illumina Novaseq look good before proceeding.   
 
 ## FASTQC                                          (How)
 
-```
 module load fastqc/0.11.7-d5mgqc7
 module load parallel/20170322-36gxsog
 
 mkdir fastqcOutput
   parallel "fastqc {} -o fastqcOutput" ::: ../00_rawdata/*.fastq.gz
-```
+
 
 ## MultiQC                                         (How)
 
-```
 #load python 3.6
 module load python/3.6.3-u4oaxsb
 # multiqc wasn't working so I reinstalled it
@@ -184,11 +181,11 @@ pip install multiqc
 multiqc --version
 multiqc, version 1.8
 multiqc .
-```
-                                                    (Result)
-The output from FASTQC and multiqc look good!  Proceeding to differential expression analysis of unicorn horn between activated and unactivated samples.
 
+#                                                  (Result)
+# The output from FASTQC and multiqc look good!  Proceeding to differential expression analysis of unicorn horn between activated and unactivated samples.
 ````
+
 As you can see from the example above, when we implement the what, when, where, why, how and result note block, it increases comprehension for anyone including yourself 6 months from now or the new researcher taking over your project.  This note block should be repeated for every analysis, analysis attempt, Error trouble shooting, parameter changes.  For any (How) section that advanced the analysis or may be useful in the future, surround that how with the (What, When, Where,Why)(How)(Result/Discussion).
 
 **Note:** <span style="color:Blue">Always record the version of the software you are using.  All publications now require this information for reproducibility and it can be a pain to find after 6 months and several potential version updates of said software. </span>
@@ -222,7 +219,7 @@ Here are a few helpful commands for getting a folder in shape for saving to a se
 * filecount.sh
 
 This bash script will generate a count of the number of files in each subfolder.
-```
+```bash
 #!/bin/bash
 
 find . -maxdepth 1 -type d | while read -r dir; do printf "%s:\t" "$dir"; find "$dir" -type f | wc -l; done > fc.txt &  
@@ -265,7 +262,7 @@ It is often helpful to create a text file that contains all the files that are i
 
 These three commands are a great help for cleaning up directories
 
-```
+```bash
 filecount.sh
 du -hs * > fileSizes.txt
 find . > files.txt

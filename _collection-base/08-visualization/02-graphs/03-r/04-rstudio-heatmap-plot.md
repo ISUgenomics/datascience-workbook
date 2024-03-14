@@ -34,8 +34,10 @@ there are rows and columns of data, like this:
 
 -   [test\_dataset.txt](https://bioinformaticsworkbook.org/tutorials/data/test_dataset.txt)
 
-``` bash
+```bash
 $ cat test_dataset.txt
+```
+```
         A   B   C   D   E   F
 Row_1   97  14  99  65  57  29
 Row_2   56  18  50  8   58  98
@@ -51,13 +53,13 @@ Row_10  85  75  34  25  2   9
 
 This is a tab separated data, simply use the `tr` to make it csv file
 
-``` bash
+```bash
 cat test_dataset.txt | tr '\t' ',' > test_dataset.csv
 ```
 
 The new data file should look like this:
 
-``` bash
+```bash
 $ cat test_dataset.csv
 ,A,B,C,D,E,F
 Row_1,97,14,99,65,57,29
@@ -78,7 +80,7 @@ Open R in either Windows/Linux/Mac. You will need following packages for
 this tutorial. If you don’t have them, please install using the
 following commands:
 
-``` r
+```r
 install.packages(c("gplots", "vegan", "RColorBrewer", "Cairo"))
 install.packages("BiocManager")
 BiocManager::install("Heatplus")
@@ -87,7 +89,7 @@ BiocManager::install("Heatplus")
 Once done, load the necessary libraries to make sure they were installed
 correctly.
 
-``` r
+```r
 # load required packages
 library(gplots)
 library(Heatplus)
@@ -98,7 +100,7 @@ library(Cairo)
 
 Now we can load the data and generate the heatmap.
 
-``` r
+```r
 # import the data file as matrix
 INFILE = "data/test_dataset.csv"       # Path to CSV file
 all.data <- as.matrix(read.csv (INFILE, sep=",", row.names=1))
@@ -126,7 +128,7 @@ heatmap(as.matrix(data.prop), Rowv = NA, Colv = NA, col = scaleyellowred, margin
 
 Add clustering.
 
-``` r
+```r
 # Cluster the data, first rows
 data.dist <- vegdist(data.prop, method = "bray")
 row.clus <- hclust(data.dist, "aver")
@@ -148,7 +150,7 @@ p <- heatmap(as.matrix(data.prop),
 
 The image is stored as plot `p` and can be saved as a scalabe vector.
 
-``` r
+```r
 # to save it as scalable vector graphics (change svg to png, pdf etc if you need other formats)
 svg("heatmap.svg")
 p

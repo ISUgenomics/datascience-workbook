@@ -42,7 +42,7 @@ JupyterLab elevates the concept of a development environment to an <b>Interactiv
 
 Once installed locally, you can start a web-based interface of `jupyter lab` from the command line by typing:
 
-```
+```bash
 jupyter lab
 ```
 
@@ -171,13 +171,13 @@ There are several keyboard shortcuts that make it easier to navigate between cel
 
 * **MARKDOWN**
 
-1. Click on the selected cell. From the top menu, select `Markdown` option, and then enter text into the cell.<br>
-2. To render the contents of a MARKDOWN cell, you need to execute the cell by pressing `CTRL + ENTER`. If you use `ALT + ENTER`, it will additionally create the next empty cell.<br>
-3. You can customize the text style as you like using markdown or HTML syntax.<br>
+**1.** Click on the selected cell. From the top menu, select `Markdown` option, and then enter text into the cell.<br>
+**2.** To render the contents of a MARKDOWN cell, you need to execute the cell by pressing `CTRL + ENTER`. If you use `ALT + ENTER`, it will additionally create the next empty cell.<br>
+**3.** You can customize the text style as you like using markdown or HTML syntax.<br>
 To learn more about **Markdown**, follow the {% include target_link href=933.5 text="Introduction to Markdown" %} tutorial, available in this workbook.<br>
 To learn more about **HTML**, try an [HTML Styles tutorial provided by w3schools.com](https://www.w3schools.com/html/html_styles.asp).
 
-```
+```html
 # Simple <b><span style="color:#eb2a7b;">Markdown</span></b> and <b><span style="color:darkturquoise;">HTML</span></b> styling
 ```
 
@@ -189,7 +189,7 @@ To learn more about **HTML**, try an [HTML Styles tutorial provided by w3schools
 1. Click on the selected cell. From the top menu, select `Code` option, and then enter vsource code into the cell. Depending on your preferred programming language (i.e., the kernel of your choice) in the code type cell, you can define **variables**, apply available **arithmetic operators**, and **call functions** from inserted modules and libraries.<br>
 2. To render the contents of a CODE cell, you need to execute the cell by pressing `CTRL + ENTER`. If you use `ALT + ENTER`, it will additionally create the next empty cell.
 
-```
+```python
 x = 2
 y = 3
 z = x + y

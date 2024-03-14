@@ -53,20 +53,20 @@ To run the applications collected in the <a href="https://github.com/ISUgenomics
 **on the HPC cluster** <br>
 If you want to use the HPC infrastructure, then usually various versions of Python are pre-installed and available to load using `module` system. <br>
 Use the following command to display Python versions:
-```
+```bash
 module avail python
 ```
 Then, load the selected variant:
-```
+```bash
 module load python/python-3.9
 ```
 **on your local machine** <br>
 The simplest way to check if you have Python already pre-installed on your local machine is to run in the terminal window the following command:
-```
+```bash
 python --version
 ```
 or
-```
+```bash
 python3 --version
 ```
 If the returned value will be something like `Python 3.8.9`, you are good to **getting started with data_wrangling** apps. *Note that python in version 3.x is required.*<br>
@@ -88,7 +88,7 @@ Conda is an open-source package management system and environment management sys
 **Test Conda installation**
 
 To test your Conda configuration, in the terminal window, run the command provided below:
-```
+```bash
 conda info
 ```
 
@@ -102,7 +102,7 @@ Otherwise, if a `command not found` error is thrown back, follow the instruction
 
 To create a Conda virtual environment, type `conda create` followed by the name [here: *data_wrangling*] of the new env along with the `-n` argument. Further you can provide a list of modules to install. In this case, let's initialize the environment for `python` version 3.9.
 
-```
+```bash
 conda create -n data_wrangling python=3.9
 ```
 
@@ -110,7 +110,7 @@ conda create -n data_wrangling python=3.9
 
 You do NOT need to create the new environment each time you want to use it with another application from the <a href="https://github.com/ISUgenomics/data_wrangling" target="_blank">data_wrangling ⤴</a> repo. Once created, the env is added to the list of all virtual instances managed by Conda. You can display them with the command:
 
-```
+```bash
 conda info -e
 ```
 
@@ -118,7 +118,7 @@ conda info -e
 
 The selected environment can be activated when you need it with the `conda activate` command, followed by the name of the env:
 
-```
+```bash
 conda activate data_wrangling
 ```
 
@@ -130,7 +130,7 @@ conda activate data_wrangling
 
 Once environment of your choice is activated, you can install new dependencies required by the selected application. Generally, you can try to install modules with the `conda install {module=version}` command. However, since we initialized the **data_wrangling** environment with Python=3.9, we can also install modules using `pip install {module==version}`, as follows:
 
-```
+```bash
 pip install pandas
 pip install numpy
 pip install openpyxl

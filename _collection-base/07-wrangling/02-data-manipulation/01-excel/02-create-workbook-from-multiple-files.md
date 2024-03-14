@@ -28,7 +28,7 @@ Before proceeding, check if you have enabled the macros, i.e., if you don't see 
 Click on `DEVELOPER` and then `Macros`, type in some name (eg. `import_text`), click `create`.
 Paste the below code on the popped window:
 
-```
+```vb
 Sub CombineTextFiles()
     Dim FilesToOpen
     Dim x As Integer

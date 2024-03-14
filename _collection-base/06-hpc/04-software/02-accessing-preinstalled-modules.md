@@ -97,27 +97,27 @@ Here are some common `module` commands that can be used to **list and search for
 
 ### • *list all modules*
 To list all of the available modules on the system, use:
-```
+```bash
 module avail
 ```
 *The output will show the name of each module, as well as a short description of what the module does.*
 
 ### • *list loaded modules*
 To show the modules that are currently loaded in the user's environment, use:
-```
+```bash
 module list
 ```
 
 ### • *search for a specific module*
 To search for a specific module by name, use:
-```
+```bash
 module spider <name>
 ```
 *It will show all the versions of that module that are available on the system, along with information about the module, such as dependencies and conflicts.*
 
 ### • *details of a specific module*
 To display the details of a specific module, use:
-```
+```bash
 module show <name>
 ```
 *It will show the version, the dependencies, and the environment variables that the module sets.*
@@ -128,28 +128,28 @@ Here are some common `module` commands that can be used to **load and unload the
 
 ### • *load a specific module*
 To load a specific module into the user's environment, use:
-```
+```bash
 module load <name>
 ```
 *It will load the module, making the software that the module provides available to use.*
 
 ### • *unload a specific module*
 To unload a specific module from the user's environment, use:
-```
+```bash
 module unload <name>
 ```
 *This command will remove a module that has been loaded into user's environment.*
 
 ### • *swap one with another module*
 To easily switch between different versions of the same software, use:
-```
+```bash
 module swap <name1> <name2>
 ```
 *This command will swap one module that is currently loaded in the user's environment with another module.*
 
 ### • *unload all modules*
 To unload all modules from your environment, use:
-```
+```bash
 module purge
 ```
 
@@ -175,7 +175,7 @@ It's worth noting that the specific syntax and <b>names of the modules may vary 
 Compilers and interpreters for languages such as C, C++, Fortran, Python, and R can be made available as modules, along with libraries and tools for those languages.
 
 *Example: Loading a specific version of GCC compiler:*
-```
+```bash
 module load gcc/8.3.0
 ```
 
@@ -183,7 +183,7 @@ module load gcc/8.3.0
 Libraries such as <a href="http://www.netlib.org/blas/" target="_blank">BLAS  ⤴</a> (*Basic Linear Algebra Subprograms*), <a href="http://www.netlib.org/lapack/" target="_blank">LAPACK  ⤴</a> (*Linear Algebra PACKage*), and <a href="http://www.fftw.org/" target="_blank">FFTW  ⤴</a> (*Fastest Fourier Transform in the West*), which are commonly used in scientific computing, can be made available as modules.
 
 *Example: Loading a specific version of OpenBLAS library:*
-```
+```bash
 module load openblas/0.3.9
 ```
 
@@ -191,13 +191,13 @@ module load openblas/0.3.9
 A wide range of applications, such as numerical simulations [ <a href="http://www.gromacs.org/" target="_blank">GROMACS  ⤴</a>, <a href="http://www.ks.uiuc.edu/Research/namd/" target="_blank">NAMD  ⤴</a>, <a href="http://ambermd.org/" target="_blank">AMBER  ⤴</a>, <a href="http://www.gaussian.com/" target="_blank">Gaussian  ⤴</a>, <a href="https://www.ansys.com/" target="_blank">ANSYS  ⤴</a> ] and data analysis [ <a href="https://www.r-project.org/" target="_blank">R  ⤴</a>, <a href="https://www.scipy.org/" target="_blank">SciPy  ⤴</a>, <a href="https://www.mathworks.com/products/matlab.html" target="_blank">MATLAB  ⤴</a>, <a href="https://www.gnu.org/software/octave/" target="_blank">Octave  ⤴</a>, <a href="https://pypi.org" target="_blank">Python Data Science Libraries  ⤴</a> ] tools can be made available as modules.
 
 *Example: Loading a specific version of of the <a href="http://www.ks.uiuc.edu/Research/vmd/" target="_blank">VMD  ⤴</a> (Visual Molecular Dynamics) simulation application:*
-```
+```bash
 module load vmd/1.9.4
 ```
 Typical **module names** for other simulation tools: `gromacs`, `namd`, `amber`, `gaussian`, `ansys`.
 
 *Example: Loading a specific version of a data analysis application:*
-```
+```bash
 module load R/4.0.3-openblas-0.3.9
 ```
 *This will load the version 4.0.3 of R programming language along with OpenBLAS version 0.3.9.*
@@ -208,7 +208,7 @@ Typical **module names** for other data analysis tools: `scipy`, `matlab`, `octa
 Many popular deep learning frameworks can be made available as modules on an HPC system, including <a href="https://www.tensorflow.org/" target="_blank">TensorFlow  ⤴</a>, <a href="https://pytorch.org/" target="_blank">PyTorch  ⤴</a>, <a href="http://caffe.berkeleyvision.org/" target="_blank">Caffe  ⤴</a>, <a href="http://www.deeplearning.net/software/theano/" target="_blank">Theano  ⤴</a>, and <a href="https://keras.io/" target="_blank">Keras  ⤴</a>.
 
 *Example: Loading a specific version of a `pytorch` deep learning framework:*
-```
+```bash
 module load pytorch/1.6-cuda-11.0-python-3.8
 ```
 *This will load the version 1.6 of PyTorch deep learning framework that is built for CUDA 11.0 and python 3.8.*
@@ -219,7 +219,7 @@ Typical **module names** for other frameworks: `tensorflow`, `pytorch`, `caffe`,
 Many visualization tools can be made available as modules on an HPC system, including <a href="https://www.paraview.org/" target="_blank">ParaView  ⤴</a>, <a href="https://wci.llnl.gov/simulation/computer-codes/visit" target="_blank">VisIt  ⤴</a>, <a href="http://www.gnuplot.info/" target="_blank">Gnuplot  ⤴</a>, <a href="https://matplotlib.org/" target="_blank">matplotlib  ⤴</a>, and <a href="https://docs.enthought.com/mayavi/mayavi/" target="_blank">Mayavi  ⤴</a>.
 
 *Example: Loading a specific version of a `paraview` visualization tool:*
-```
+```bash
 module load paraview/5.9-mpi-4.0.3-python-3.8
 ```
 *This will load version 5.9 of ParaView visualization tool that is built with MPI 4.0.3 and python 3.8*
@@ -230,7 +230,7 @@ Typical **module names** for other tools: `paraview`, `visit`, `gnuplot`, `matpl
 Environment Modules can be used to set environment variable or path for some specialized software that require different version of libraries or have different dependencies, such as MPI libraries.
 
 *Example: Loading a specific version of of <a href="https://www.open-mpi.org/" target="_blank">OpenMPI  ⤴</a> library:*
-```
+```bash
 module load openmpi/4.1.3
 ```
 

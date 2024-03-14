@@ -50,7 +50,7 @@ There are several workload managers commonly used in high-performance computing 
 
 <a href="https://www.openpbs.org" target="_blank">OpenPBS  ⤴</a> *(Portable Batch System)* is another popular **open-source workload manager** that is used to manage and schedule jobs on HPC clusters. It provides a set of commands and interfaces that allow users to submit, monitor, and control the execution of jobs, and administrators to manage the resources and configure the system.
 
-<span style="color: #ff3870;font-weight: 500;"> Learn more about PBS workload manager and job scheduling from the hands-on tutorials available in section</span> {% include target_link href=652.1 text="PBS: Portable Batch System" %} 
+<span style="color: #ff3870;font-weight: 500;"> Learn more about PBS workload manager and job scheduling from the hands-on tutorials available in section</span> {% include target_link href=652.1 text="PBS: Portable Batch System" %}
 
 ### *LSF*
 
@@ -106,19 +106,19 @@ The scheduler continuously monitors the resources and the running jobs, and **if
 To check which workload manager is being used on a cluster, you can **use the command-line interface** to connect to the cluster and run a command **to query the system information**. The specific command may vary depending on the operating system and the workload manager used on the cluster.
 
 **1.** For the **Slurm** workload manager, you can use the following command:
-```
+```bash
 sinfo -V
 ```
 *This will display the version of Slurm installed on the cluster, along with other system information.*
 
 **2.** For the **PBS** workload manager, you can use the following command:
-```
+```bash
 qstat --version
 ```
 *This will display the version of PBS installed on the cluster, along with other system information.*
 
 **3.** For the **LSF** workload manager, you can use the following command:
-```
+```bash
 lsb_release -a
 ```
 *This will display the version of LSF installed on the cluster, along with other system information.*

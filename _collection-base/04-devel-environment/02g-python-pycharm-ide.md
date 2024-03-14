@@ -487,7 +487,7 @@ If you want to run Python code in a terminal instead of the Python console, you 
 ![02_python-pycharm-project-terminal.png]({{ images_path }}/02_python-pycharm-project-terminal.png)
 
 You can run your Python code the same way you do it in the separate Terminal window:
-```
+```bash
 python main.py
 ```
 

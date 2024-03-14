@@ -32,19 +32,20 @@ Before logging in the first time, check the Loging in section of the {% include 
 
 Once connected to ISU network, use any Terminal (Terminal on Linux/Mac and Powershell on Windows) and input following command to log in to Nova:
 
-```
+```bash
  ssh <ISU NetID>@nova.its.iastate.edu
 ```
 
 ## Data Transfer and Jobs
 Use the login hostname (@nova.its.iastate.edu) to log in to Nova and submit jobs, but use the data transfer node for data transfers (@novadtn.its.iastate.edu).
 
-```
-# Data transfer example
-Login:
+* Data transfer example
+
+```bash
+# Login:
 ssh Your-ISU-NetID@novadtn.its.iastate.edu
 
-Copy data:
+# Copy data:
 cp /home/$USER/test.txt /myfiles/Users/$USER/
 ```
 
@@ -54,7 +55,7 @@ Once logged in you can start using Nova cluster and submit jobs using {% include
 
 ## Example job script
 
-```
+```bash
 #!/bin/bash
 
 #SBATCH --time=01:00:00   # walltime limit (HH:MM:SS)
@@ -71,13 +72,13 @@ your code/commands
 
 Copy/paste the above job script into a text file, add your modules and commands, and submit with the following command:
 
-```
+```bash
 sbatch filename
 ```
 
 Check your queued jobs:
 
-```
+```bash
 squeue -u your_netID
 ```
 

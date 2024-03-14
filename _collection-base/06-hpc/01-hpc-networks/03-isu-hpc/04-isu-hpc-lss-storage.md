@@ -37,11 +37,13 @@ LSS is mounted on data transfer nodes of each cluster meaning you can use data t
 
 ### *How to copy data from Nova to LSS?*
 
-```
+```bash
 # Login to novadtn:
 ssh <ISU-NetID>@novadtn.its.iastate.edu
-The /lss/research directory contains directories of different research groups/labs. Store files in your lab directory.
+```
+*The /lss/research directory contains directories of different research groups/labs. Store files in your lab directory.*
 
+```bash
 # Copy your files to LSS:
 scp /home/$USER/myfile /lss/research/your-lab/
 ```

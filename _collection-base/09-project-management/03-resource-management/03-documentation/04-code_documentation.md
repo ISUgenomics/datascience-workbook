@@ -173,12 +173,12 @@ Inline comments are annotations placed directly within the source code. They are
 In practice, an **inline comment** is text that follows a special character, typically `#` or `//`, which distinguishes the comment from procedural code, making it **non-executable and solely for human reading**.
  Inline comments can be added:
 * directly above a code block to serve as a `header` providing brief description
-```
+```bash
 # This is an inline comment in Bash
 echo "Hello, World!"
 ```
 * immediately after specific lines of code on the same line to elucidate that particular instruction/operation
-```
+```bash
 echo "Hello, World!"  # This comment is after the command
 ```
 
@@ -186,7 +186,7 @@ echo "Hello, World!"  # This comment is after the command
 
 * **BASH**, use `#` for inline comments
 
-```
+```bash
 # Display the results for all items in a loop
 for item in world universe
 do
@@ -196,7 +196,7 @@ done
 
 * **R**, use `#` for inline comments
 
-```
+```r
 # Define a function to sum numbers
 sum_values <- function(a, b) {
     return(a + b)                                    # compute the sum of two values
@@ -205,7 +205,7 @@ sum_values <- function(a, b) {
 
 * **PYTHON**, use `#` for inline comments
 
-```
+```python
 # Define a function to sum numbers
 def add(a, b):
     return a + b                                     # add two numbers and returns the result
@@ -213,7 +213,7 @@ def add(a, b):
 
 * **C++**, use `//` for inline comments
 
-```
+```c
 #include<iostream>                                   // include the iostream library for input/output operations
 
 // Define a function that returns integer
@@ -287,7 +287,7 @@ TODOs are block comments in the codebase flagged with the keyword "TODO" to mark
 
 * **BASH**, use `#` at the beginning of each line in a block comment
 
-```
+```bash
 #!/bin/bash
 
 # INFO:
@@ -307,7 +307,7 @@ echo "Today is: $(date)"
 
 * **R**, use `#` at the beginning of each line in a block comment
 
-```
+```r
 # This script performs a linear regression on a dataset
 # TODO:
 # - Add data cleaning steps to handle missing values
@@ -330,7 +330,7 @@ summary(model)
 
 * **PYTHON**, docstrings and block comments use `'''text'''` or `"""text"""`
 
-```
+```python
 # Below you can see a docstring for a function
 
 def add(a, b):
@@ -355,7 +355,7 @@ def add(a, b):
 
 * **JAVA**, use `/** text */` syntax for (multi-line) block comments
 
-```
+```java
 /** Represents a basic calculator. */
 
 public class Calculator {
@@ -389,7 +389,7 @@ In Java, single-line comments are preceded by <code>//</code> and are not proces
 
 * **C++**, use `/* text */` syntax for (multi-line) block comments
 
-```
+```c
 /*
 This function computes the product of two numbers.
 Takes in two integers and returns their multiplication.
@@ -474,7 +474,7 @@ Several programming languages provide built-in mechanisms or libraries to manage
 
 In Bash, logging options primarily revolve around redirecting standard output (`stdout`) and standard error (`stderr`) to various destinations.
 
-```
+```bash
 # Redirecting stdout to a file:
 command > file.txt
 
@@ -523,7 +523,7 @@ R language *(commonly used for statistical computing and graphics)* provides sev
   * `futile.logger` : This package provides a flexible logging framework,. It allows setting logging levels (DEBUG, INFO, WARN, etc.) and directing output to different locations.
   * `log4r` : nother logging package for R.
 
-```
+```r
 # Example using futile.logger:
 
 library(futile.logger)
@@ -536,7 +536,7 @@ flog.info("This is an info message")
 
 Python provides a variety of logging options to assist developers in generating and managing messages related to the execution and potential issues of their applications. In particular, Python includes a powerful built-in `logging` module which offers a flexible framework to produce and manage log messages. The module allows for different logging levels: `DEBUG`, `INFO`, `WARNING`, `ERROR`, and `CRITICAL`. Logs can be directed to various outputs and formatted in different ways. It also supports more advanced features like logging to multiple destinations, custom log record formats, and filtering logs.
 
-```
+```python
 # Example using the logging module:
 
 import logging
@@ -561,7 +561,7 @@ logging.error("This error will be written to 'app.log'")
 
 In C++, logging doesn't have a standardized built-in solution. However, various tools and libraries have been developed over the years to fulfill the logging requirements. The simplest solution is to use Standard Output and Error Streams:
 
-```
+```c
 #include <iostream>
 
 std::cout << "Info: This is a log message." << std::endl;
@@ -638,7 +638,7 @@ Usually, usage messages are displayed:
 
 * when the user specifically requests help using flags like `-h` or `--help`
 
-```
+```bash
 $ myprogram --help
 
 Usage: myprogram [OPTION]... [FILE]...
@@ -652,7 +652,7 @@ Options:
 ```
 * when the user provides invalid input or arguments
 
-```
+```bash
 $ myprogram --man
 
 myprogram: unrecognized option `--man'
@@ -670,7 +670,7 @@ Most bash commands, standalone tools, and applications from GitHub repos typical
 **Examples of usage message** *(being a software user)*
 
 In Bash, you can use `command --help` for a brief usage overview, while `man command` offers more comprehensive information and details about each command. Try these commands for commonly used Bash commands such as `ls` `grep` `awk` `wget` `tar` `ssh` `git` to see examples of well-crafted usage message.
-```
+```bash
 grep --help
 
 man  grep
@@ -739,7 +739,7 @@ Overloading the usage message with too much information or presenting it in a no
 
 Even in simple Bash scripts, incorporating a usage message can be invaluable, aiding memory when revisiting the script in the future. In Bash, crafting the usage message involves creating a string of "echoed" text that clearly informs the user how to use the script. This message can be displayed conditionally when the user requests help (e.g., using a `-h` or `--help` flag as the first argument). You can also add different conditions for missing inputs or an incorrect command syntax.
 
-```
+```bash
 if [ "$1" == "--help" ] || [ "$1" == "-h" ]; then
     echo "Usage: myscript [OPTIONS]..."
     echo "A script to demonstrate something."
@@ -753,7 +753,7 @@ fi
 # rest of the script...
 ```
 Assuming your code was saved in `my_script.sh` script file, you can test a new *help message* feature like this:
-```
+```bash
 . ./my_script.sh --help
 ```
 
@@ -761,7 +761,7 @@ Assuming your code was saved in `my_script.sh` script file, you can test a new *
 
 In an R script, a usage message can be crafted using the `cat()` function to display a descriptive message that informs the user about the correct way to utilize the script.
 
-```
+```r
 if(length(commandArgs(trailingOnly = TRUE)) < 1) {
     cat("Usage: Rscript myscript.R <input_file>\n")
     quit(save="no", status=1)
@@ -776,7 +776,7 @@ input_file <- commandArgs(trailingOnly = TRUE)[1]
 
 In a simple Python script *(with not many options)*, a usage message can be crafted using the `print()` function and the `sys` module to display a message that informs the user about the correct way to use the script.
 
-```
+```python
 import sys
 
 if len(sys.argv) < 2:
@@ -800,7 +800,7 @@ In Python, the `argparse` module provides a convenient way to define and handle 
 
 Here's a practical example to craft a usage message for a script that takes multiple arguments:
 
-```
+```python
 import argparse
 
 # Initialize the parser
@@ -832,12 +832,12 @@ In the <b>parser.add_argument()</b> method, apart from required and help, you ca
 </div>
 
 Assuming your code was saved in `my_script.py` script file, when you run:
-```
+```bash
 python script.py --help
 ```
 the `argparse` module will automatically generate a usage message for your script. The message will be based on the arguments and descriptions you've added to your parser. <br>
 *For the provided code, the usage message would look something like:*
-```
+```bash
 usage: script.py [-h] -i INPUT -o OUTPUT
 
 Process some files.
@@ -860,7 +860,7 @@ Here's how you can craft and display a usage message: <br>
 **- Craft the usage message:** Based on the requirements, create a concise yet descriptive usage message. <br>
 **- Check the input arguments:** When your program starts *(see the main(){} function)*, check the passed arguments to see if they fit the requirements. If not, display the usage message and exit.
 
-```
+```c
 #include <iostream>
 #include <cstring>
 
@@ -885,7 +885,7 @@ int main(int argc, char* argv[]) {
 
 Assuming the program is compiled and named `my_program`, you can run in by calling its name followed by the arguments. Here's what the output will look like when run without arguments:
 
-```
+```bash
 Usage: my_program <filename> <operation>
   <filename>: The name of the file to be processed.
   <operation>: Either 'read' or 'write'.
@@ -1012,7 +1012,7 @@ rectification methods, ensuring your data is clean and ready for analysis.
 **3. Installation instructions** <br>
 <i>Provides step-by-step guidance on how to get the tool or software up and running on one's system.</i>
 
-```
+```bash
 ## 3. Installation Instructions
 
 ### Clone from GitHub
@@ -1023,7 +1023,7 @@ you can clone the datacleanmaster repository from GitHub:
 `cd datacleanmaster`
 
 ### Installation in a Conda Environment
-If you're using a Conda environment, you can install `datacleanmaster` with `pip` by activating your environment and following the pip command:
+If you are using a Conda environment, you can install `datacleanmaster` with `pip` by activating your environment and following the pip command:
 
 `conda activate your_environment_name`
 `pip install datacleanmaster`
@@ -1032,7 +1032,7 @@ If you're using a Conda environment, you can install `datacleanmaster` with `pip
 **4. Usage details** <br>
 <i>Explains how to effectively utilize the tool, often through examples or sample code snippets.</i>
 
-```
+```bash
 ## 4. Usage Details
 To clean your dataset using DataCleanMaster, simply run:
 
@@ -1048,7 +1048,7 @@ cleaned_data = clean(data)
 **5. Contribution guidelines** <br>
 <i>Outlines the process and best practices for developers or users who wish to enhance or fix parts of the project.</i>
 
-```
+```bash
 ## 5. Contribution Guidelines
 We welcome contributions! If you find any issues or have suggestions:
 
@@ -1063,7 +1063,7 @@ For major changes, please open an issue first to discuss.
 **6. Contact information** <br>
 <i>Gives users and contributors a way to reach out for further assistance, feedback, or inquiries about the tool or project.</i>
 
-```
+```bash
 ## 6. Contact Information
 For any queries or feedback, reach out to us at: datacleanmaster@example.com
 ```
@@ -1420,13 +1420,13 @@ Documentation generators **primarily rely on in-code comments and docstrings** t
 
 **1. Installation:** <br>
 Start by installing <a href="https://www.sphinx-doc.org/en/master/" target="_blank">Sphinx</a>. It's typically done via `pip`:
-```
+```bash
 pip install sphinx
 ```
 
 **2. Set Up a New Sphinx Project:** <br>
 Create a directory where you want your documentation to reside, navigate to it, and run:
-```
+```bash
 sphinx-quickstart
 ```
 <i>This command will guide you through the initial configuration. <br>Answer the questions as prompted. For most users, the default values will be sufficient.</i> <br>
@@ -1434,7 +1434,7 @@ sphinx-quickstart
 
 **3.Choose a Theme:** <br>
 Sphinx uses themes to style the documentation. The default is called `alabaster`, but there are many others available. One popular choice is `Read the Docs`. To use it, first install the theme:
-```
+```bash
 pip install sphinx_rtd_theme
 ```
 Then, in your `conf.py` file *(created during the sphinx-quickstart step)*, find the `html_theme` setting and change its value to:
@@ -1469,7 +1469,7 @@ Welcome to ex_sphinx_docs's documentation!
 
 **5. Generate the Documentation:** <br>
 Once you've written your documentation, you can generate the HTML files with:
-```
+```bash
 make html
 ```
 <i>This will produce the documentation in the</i> `_build/html` *directory.*

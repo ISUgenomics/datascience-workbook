@@ -73,7 +73,7 @@ To learn more about Jupyter Lab interface <i>(cell types, opening and saving fil
 **A. Launch Jupyter in the default Python version**
 
 The version of Python used in JupyterLab locally depends on the Python kernel that you have installed and selected for your JupyterLab session. So, once you have Jupyter Lab and Python installed on your local machine, you can simply type in the terminal:
-```
+```bash
 jupyter lab
 ```
 to autmoatically launch the Jupyter Lab interface in your default web browser.
@@ -82,7 +82,7 @@ to autmoatically launch the Jupyter Lab interface in your default web browser.
 
 If you want to use a specific version of Python or a specific set of packages, you should **create first a new environment with the desired version of Python** installed and then activate that environment before you  launch JupyterLab interface. *For example, to have a kernel with Python in version 3.9 create and activate the Conda environment like that:*
 
-```
+```bash
 conda create -n 'new_env_py3.9' python=3.9
 conda activate new_env_py3.9
 
@@ -125,7 +125,7 @@ To check which Python kernel is currently selected, you can click on the kernel 
 When you install Pandas and Plotly using `pip`, the libraries are installed system-wide, which means they are available to all Python environments on your machine. This can be beneficial if you want to use these libraries across multiple projects or if you have multiple Python environments that need to access these libraries.
 
 To install Pandas and Plotly using pip, you can run the following commands in your terminal:
-```
+```bash
 pip install pandas
 pip install plotly
 ```
@@ -174,19 +174,19 @@ When you install packages using conda, <b>they are installed in the "base" envir
 
 
 To create a new conda environment, you can use the following command:
-```
+```bash
 conda create --name graphic_env
 ```
 *This will create a new environment called "graphic_env".*
 
 You can then activate the environment using the following command:
-```
+```bash
 conda activate graphic_env
 ```
 *Once activated, any packages you install using conda will be installed only in this environment, and will not affect other environments or the base environment.*
 
 To install Pandas and Plotly using conda, you can run the following commands in your terminal:
-```
+```bash
 conda install pandas
 conda install plotly
 ```
@@ -210,7 +210,7 @@ conda activate graphic_env
 **2. Launch Jupyter Lab interface and create a notebook**
 
 Once you have all dependencies installed (python=3.9, pandas, plotly) (and activated) on your local machine, launch the Jupyter Lab interface by typing in your terminal:
-```
+```bash
 jupyter Lab
 ```
 
@@ -271,7 +271,7 @@ To execute the cell press `Alt + Enter` ( use `option + return` for macOS ). <br
 
 In the next cell add Python code for all required imports, i.e., `numpy` and `matplotlib`.
 
-```
+```python
 # import modules
 import pandas as pd                        # to create a well-structured DataFrame object
 import plotly.express as px                # to create scatterplot
@@ -324,7 +324,7 @@ Let's assume we have a CSV file called `gene_expression.csv` that contains our g
 
 We can load this file using Pandas function `read_csv()`. This assumes that the CSV file is in the same directory as the Jupyter notebook file.
 
-```
+```python
 # Load data from the input file in the CSV format
 df = pd.read_csv("gene_expression.csv", index_col=0)
 df.head()                     # optional: preview the DataFrame structure
@@ -375,7 +375,7 @@ df = df.reset_index().melt(id_vars=["Gene"], var_name="Sample", value_name="Expr
 
 Now let's create a scatterplot of the gene expression levels using Plotly:
 
-```
+```python
 #1 Create scatterplot using Plotly library
 fig = px.scatter(
         df,                                     # DataFrame object storing the data

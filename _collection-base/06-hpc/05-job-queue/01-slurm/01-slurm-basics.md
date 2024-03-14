@@ -39,7 +39,7 @@ tags: []
 
 A typical job script will look like this:
 
-```
+```bash
 #!/bin/bash
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=8
@@ -85,7 +85,7 @@ Lines starting with `#SBATCH` are for `SLURM` resource manager to request resour
 
 Let's go ahead and give these job management commands a try.
 
-```
+```bash
 sinfo -a
 squeue
 squeue -t R
@@ -95,7 +95,7 @@ squeue -u first.lastname
 
 There can be a lot of information using those two commands. I have created some useful alias' that change the output to something more informative.
 
-```
+```bash
 alias sq='squeue -o "%8i %12j %4t %10u %20q %20a %10g %20P %10Q %5D %11l %11L %R"'
 alias si='sinfo -o "%20P %5D %14F %8z %10m %10d %11l %16f %N"'
 ```
@@ -105,7 +105,7 @@ Where `(A/I/O/T)` = `available/idle/other/total`
 You can place those alias' into your `~/.bashrc` file and it will automatically load every time you log in.
 
 #### <span style="color:Green">Exercise:</span> Add these two alias' above to your `~/.bashrc` file
-```
+```bash
 nano ~/.bashrc
 ```
 
@@ -122,7 +122,7 @@ nano ~/.bashrc
 
 To start a interactive session execute the following:
 
-```
+```bash
 # this command will give 1 Node with 1 cpu in the brief-low queue for a time of 00 hours: 01 minutes: 00 seconds
 
 salloc -N 1 -n 1 -p brief-low -t 00:01:00

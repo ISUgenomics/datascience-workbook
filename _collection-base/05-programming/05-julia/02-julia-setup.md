@@ -27,14 +27,14 @@ tags: []
 
 
 Julia, like Python or R, is often preinstalled on High Performance Computing (HPC) clusters to facilitate computational tasks. To check the available versions of Julia on the cluster, you can use the command:
-```
+```bash
 module avail julia
 ```
 
 ![05_julia_module.png]({{ images_path }}/05_julia_module.png)
 
 If multiple versions are listed, you can select and load a specific version using:
-```
+```bash
 module load julia/version              # e.g., module load julia/1.5.1
 ```
 Confirm the successful Julia activation with command:
@@ -59,7 +59,7 @@ On <b>Atlas cluster</b>, Julia is available as a module in <b>version 1.5</b>, a
 **RECOMMENDED ON YOUR LOCAL MACHINE** <br>
 Install Julia with [Juliaup](https://github.com/JuliaLang/juliaup) - a Rust-based cross-platform Julia installer & version manager:
 
-```
+```bash
 curl -fsSL https://install.julialang.org | sh -s -- --yes --default-channel release
 ```
 
@@ -77,11 +77,11 @@ From now on both `juliaup` and `julia` are on the `PATH`. Also, the `VS Code` ex
 
 Confirm the successful installation with commands:
 
-```
+```bash
 juliaup --help
 ```
 and
-```
+```bash
 julia --help
 ```
 which display the `usage message` for each tool. You can learn about available options and usage examples. Explore the [Using Juliaup](https://github.com/JuliaLang/juliaup#using-juliaup) section in the official documentation of the GitHub repo, to learn what you can do with `juliaup`.
@@ -97,18 +97,18 @@ You can utilize the [Juliaup](https://github.com/JuliaLang/juliaup#using-juliaup
 ### Launch interactive Julia interpreter
 
 To check the default Julia version use command:
-```
+```bash
 julia --version
 ```
 `# julia version 1.9.3`
 
 To launch the default Julia version simply run `julia` in your terminal:
-```
+```bash
 julia
 ```
 
 or to launch a specific Julia version, say in channel `release`, run:
-```
+```bash
 julia +release
 ```
 ![05_julia_launch.png]({{ images_path }}/05_julia_launch.png)
@@ -126,7 +126,7 @@ The <b>Julia interpreter is called REPL</b>, Read-Eval-Print Loop. It is an inte
 ### *Get basic inline help*
 
 Once in the interactive Julia interpreter, type `?` and press `enter`. This will automatically change your `julia` prompt into `help?` and print on the screen the info about the documentation and basic instructions about the syntax and detailed help for options.
-```
+```julia
 julia> ?
 ```
 ![05_julia_help.png]({{ images_path }}/05_julia_help.png) <br><br>
@@ -136,7 +136,7 @@ julia> ?
 ## **Julia package manager**
 
 In the Julia REPL, type `]` to enter the package manager mode. This will automatically switch the `julia>` prompt into the `(@v1.9) pkg>` built-in package manager mode.
-```
+```julia
 julia> ]
 (@v1.9) pkg>
 ```
@@ -146,13 +146,13 @@ julia> ]
 ![05_julia_manager.png]({{ images_path }}/05_julia_manager.png)
 
 Then you can learn more about the built-in **Julia package manager** using the `?` followed by pressing `enter`:
-```
+```julia
 (@v1.9) pkg> ?
 ```
 
 
 Further, you can get more detailed help on various commands, for example:
-```
+```julia
 (@v1.9) pkg> ?generate
 ```
 ![05_julia_manager_help.png]({{ images_path }}/05_julia_manager_help.png)
@@ -211,21 +211,21 @@ In this default environment, you have access to all the <b>packages that have be
 </div>
 
 To install additional packages to your default Julia environment, enter the package manager mode with `]`:
-```
+```julia
 julia> ]
 ```
 and then use the `add` command to install packages. <br>
 For example, to install the package "CSV", you would type:
-```
+```julia
 (@v1.9) pkg> add CSV
 ```
 or to install a specific version of a package:
-```
+```julia
 (@v1.9) pkg> add CSV@v0.10.11
 ```
 ![]()
 You can also add (install) multiple packages with a single add command in Julia:
-```
+```julia
 (@v1.9) pkg> add DataFrames@v1.6.1 DelimitedFiles@v1.9.1 ProgressBars@v1.5.1
 ```
 
@@ -244,41 +244,41 @@ It's beneficial to <b>have a centralized location for all your Julia Projects</b
 You can create a **JULIA_ENVS** directory in your `/project/` working space on a cluster and house all your Julia environments there with meaningful names. When a particular environment is needed, you can easily activate it from this centralized path, or create symbolic links (softlinks) to the corresponding project location if you prefer to keep them together with your data and scripts.
 
 2. **Launch a Julia** interactive interpreter in a terminal:
-```
+```bash
 julia
 ```
 
 3. **Type** `]` to enter the package manager mode. <br>*Note that the prompt changed from julia> to something like (@v1.9) pkg>.*
 
 4. **Create a new project** by running the command `generate YourProjectName`, replacing "YourProjectName" with the name you want to give to your project.
-```
+```julia
 (@v1.9) pkg> generate julia_geo
 ```
 *This will create a new directory named julia_geo with a Project.toml file in it.*
 
 5. **Activate the Project** *(i.e. the environment)*. Still in the package manager mode, navigate to the project directory and activate the project by running the command:
-```
+```julia
 (@v1.9) pkg> activate ./julia_geo
 ```
 ![05_julia_create_env.png]({{ images_path }}/05_julia_create_env.png) <br>
 <i>Once you activate the environment, the prompt will change to display the name of the active environment (e.g., julia_geo), indicating that you are now working within this specific environment.</i>
 
 6. **Install Packages** in the new environment. With your new environment activated, you can now install packages using the `add` command:
-```
+```julia
 (julia_geo) pkg> add Geodesy
 ```
 or to install a specific version of a package:
-```
+```julia
 (julia_geo) pkg> add Geodesy@v1.1.0
 ```
 ![]()
 You can also add (install) multiple packages with a single add command in Julia:
-```
+```julia
 (julia_geo) pkg> add ImageMagick@v1.3.0 Images@v0.26.0 CairoMakie@v0.10.9
 ```
 
 7. **Deactivate the Project**, i.e. the specific environment, and return to the default environment:
-```
+```julia
 (julia_geo) pkg> activate
 ```
 *Now you are back in the default environment (@v1.9 in this example) and can access all the packages installed there.*
@@ -293,7 +293,7 @@ When you <b>set up Julia on the HPC</b> infrastructure for the first time, remem
 </span>
 </div>
 
-```
+```bash
 cd ~
 mkdir /project/<your_project_dir>/<account_name>
 mv .julia* /project/<your_project_dir>/<account_name>/
@@ -312,11 +312,11 @@ Julia is not natively available in Jupyter Lab upon a fresh installation. Howeve
 
 1. First, ensure you have Julia installed on your machine.
 2. In the terminal, launch the built-in interactive interpreter (REPL) for Julia:
-```
+```bash
 julia
 ```
 3. In the Julia REPL, run the following command to install the `IJulia` package:
-```
+```julia
 using Pkg
 Pkg.add("IJulia")
 ```
@@ -346,7 +346,7 @@ enter your login credentials, and select **JupyterLab** from the `Interactive Ap
 **B. Launch Jupyter Lab installed on your local machine**
 
 In the separate terminal tab, navigate to the desired location in your file system and launch the Jupyter Lab ( assuming you {% include target_link href=412 section="#installing-jupyter" text="have it installed" %}):
-```
+```bash
 jupyter lab
 ```
 The Jupyter Lab session should start automatically in your default web browser. If not, just do it manually navigating to the URL `http://localhost:8888/`.
@@ -362,7 +362,7 @@ To open a new instance of a selected app, such as a Julia-based notebook, naviga
 When it comes to working in isolated environments with specific dependencies, you can switch to any environment you want within a single notebook by running the `Pkg.activate()` command with the path to the desired environment. This method is quick and easy, and allows you to manage your environments directly within your Jupyter notebooks.
 
 In a Jupyter notebook with the basic Julia kernel, you can run the following Julia code to activate a specific environment:
-```
+```julia
 using Pkg
 Pkg.activate("/path/to/your/environment")
 ```

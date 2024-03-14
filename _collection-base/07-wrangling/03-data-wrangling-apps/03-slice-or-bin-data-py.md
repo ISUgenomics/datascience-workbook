@@ -109,7 +109,7 @@ optional arguments:
 
 **syntax:**<br>
 *^ arguments provided in square brackets [] are optional*
-```
+```bash
 python3 bin_data.py -i input -l label -r range [-ll labels_list] [-hd header_names]
                    [-ch chunks_size] [-s {true,false}]
                    [-c {ave,sum}] [-t {step,bin,value}] [-n slice]
@@ -119,7 +119,7 @@ python3 bin_data.py -i input -l label -r range [-ll labels_list] [-hd header_nam
 
 **example usage with minimal required options:**
 
-```
+```bash
 python3 bin_data.py -i input_file -l 0 -r 1
 ```
 
@@ -139,7 +139,7 @@ The application is developed in Python3 programming language and requires import
 
 You do NOT need to create the new environment each time you want to use it. Once created, the env is added to the list of all virtual instances managed by Conda. You can display them with the command:
 
-```
+```bash
 conda info -e
 ```
 
@@ -147,7 +147,7 @@ conda info -e
 
 The selected environment can be activated with the `conda activate` command, followed by the name of the env:
 
-```
+```bash
 conda activate data_wrangling
 ```
 
@@ -167,7 +167,7 @@ If you use Conda environment management system and followed the instructions pro
 
 Alternatively, if you want to use this app in system-wide mode *(without creating a virtual environment)*, then install the neccessary requirements using the commands:
 
-```
+```bash
 pip3 install pandas
 pip3 install numpy
 ```
@@ -228,7 +228,7 @@ If all your data belong to the same or none category, you can add to your file a
 
 * ***input file without header***
 
-```
+```bash
 sep='\t'
 sed "1,$ s/^/value$sep/" < file > input
 ```
@@ -238,7 +238,7 @@ sed "1,$ s/^/value$sep/" < file > input
 
 * ***input file with header***
 
-```
+```bash
 sep='\t'
 sed "1s/^/label$sep/; 2,$ s/^/value$sep/" < file > input
 ```
@@ -276,7 +276,7 @@ Generally, when you want to **slice the data with an equal number of rows**, you
 
 If you want **to keep the original ordering** of an input, add a column with generic indexing and pass this column index with the `-r` option:
 
-```
+```bash
 sep='\t'
 awk -F$sep -v OFS=$sep 'NR == 1 {print "position", $0; next} {print (NR-1), $0}' file > input
 ```
@@ -302,7 +302,7 @@ Before exploring examples, please copy the source code and inputs to your comput
 
 **A.**  clone the entire <a href="https://github.com/ISUgenomics/data_wrangling" target="_blank"> data_wranglig </a> repository:
 
-```
+```bash
 git clone https://github.com/ISUgenomics/data_wrangling.git
 ```
 
@@ -310,7 +310,7 @@ git clone https://github.com/ISUgenomics/data_wrangling.git
 
 * *download from the command line*
 
-```
+```bash
 svn export https://github.com/ISUgenomics/data_wrangling/trunk/bin_data
 ```
 
@@ -356,7 +356,7 @@ label_10	2265	0	0	0	0	0	1	0
 * You also need to select a column used to cut data into slices. The `ranges-col` requires to be numerical, because the range of values in the slice will be reported in the output. If none column is relevant for that purpose, you can use the approach proposed in the {% include target_link href=733 section="#file-content" text="File Content" %}/{% include target_link href=733 section="#-ranges-column" text="Ranges Column" %}/{% include target_link href=733 section="#-add-indexing" text="<b>Add Indexing</b>" %} section to add a column with generic indexing.<br> *In this example we will use the second column (Python index: 1) with integers to derive reference value ranges of slices.*
 * For the remaining options, the default values will be used. Thus, label-based data chunks split for slices of 100-rows in length (options: `-t 'step' -n 100`) and data is aggregated by calculating mean value (option: `-c 'ave'`).
 
-```
+```bash
 python3 bin_data.py -i input.txt -l 0 -r 1 -t 'step' -n 100 -c 'ave' -o 'output_data-step_ave'
 ```
 
@@ -411,7 +411,7 @@ Typically the directory type of input will be `-i CHUNKS` as the default output 
 * The settings of `labels-col` and `ranges-col` are the same as in the {% include target_link href=733 section="#e1-load-data-from-a-single-text-file" text="previous example." %} So, we are using labels from the column of index 0 (`-l 0`), and value ranges from the column of index 1 (`-r 1`).
 * This time label-based data chunks split for 100 slices of X-rows in length (options: `-t 'bin' -n 100`).
 
-```
+```bash
 python3 bin_data.py -i CHUNKS/ -l 0 -r 1 -t 'bin' -n 100 -o 'output_data-bin_ave'
 ```
 
@@ -456,7 +456,7 @@ label_3,5381,1,0,2,0,1,1,0,0
 * By default of [example E1](#e1-load-data-from-a-single-text-file), the values in a slice aggregate by calculating the mean of each numerical column. Alternatively, we can request a summing over the slice using the `-c 'sum'` option. In this variant, the returned output for each data slice is a row containing a sum of values for every numerical column.
 * The input is provided using the `-i` option followed by the `file_name` or `dir_name`, here we use a `CHUNKS` directory. As previously, we are using labels from the column of index 0 (`-l 0`), and value ranges from the column of index 1 (`-r 1`).
 
-```
+```bash
 python3 bin_data.py -i ./CHUNKS -l 0 -r 1 -t 'step' -n 100 -c 'sum' -o 'output_data-step_sum'
 ```
 
@@ -501,7 +501,7 @@ label_3,5381,1,0,2,0,1,1,0,0
 * We will request a summing over the slice using the `-c 'sum'` option. In this variant, the returned output for each data slice is a row containing a sum of values for every numerical column.
 * The input is provided using the `-i` option followed by the filename, `input.txt`. As previously, we are using labels from the column of index 0 (`-l 0`), and value ranges from the column of index 1 (`-r 1`).
 
-```
+```bash
 python3 bin_data.py -i input.txt -l 0 -r 1 -t 'bin' -n 100 -c 'sum' -o 'output_data-bin_sum'
 ```
 
@@ -546,7 +546,7 @@ label_3,5381,1,0,2,0,1,1,0,0
 * We will request a summing over the slice using the `-c 'sum'` option. In this variant, the returned output for each data slice is a row containing a sum of values for every numerical column.
 * The input is provided using the `-i` option followed by the filename, `input.txt`. As previously, we are using labels from the column of index 0 (`-l 0`), and value ranges from the column of index 1 (`-r 1`)
 
-```
+```bash
 python3 bin_data.py -i input.txt -l 0 -r 1 -t 'value' -n 100 -c 'sum' -o 'output_data-value_sum'
 ```
 
@@ -599,7 +599,7 @@ label_3,5381,1,0,2,0,1,1,0,0
 * In addition, we expect to keep 3 decimal places in the aggregated data for all numerical columns using the `-d 3` option.
 * The input is provided using the `-i` option followed by the filename, `input.txt`. As previously, we are using labels from the column of index 0 (`-l 0`), and value ranges from the column of index 1 (`-r 1`)
 
-```
+```bash
 python3 bin_data.py -i input.txt -l 0 -r 1 -t 'value' -n 100 -c 'ave' -d 3 -o 'output_data-value_ave'
 ```
 

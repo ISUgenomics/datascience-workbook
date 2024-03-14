@@ -28,7 +28,7 @@ The complete reference document contains all the details about this package but 
 
 ## Installation
 ComplexHeatmap package needs to be installed and loaded: <br>
-```
+```r
 install.packages("BiocManager")
 BiocManager::install("ComplexHeatmap")
 
@@ -40,7 +40,7 @@ library(ComplexHeatmap)  # directly load the package if it is installed already
 ## Load dataset
 Your dataset needs to be loaded in the form of a matrix.
 
-```
+```r
 # Loaded the dataset in matrix named mat
 mat <- as.matrix(read.csv ("PATH/TO/file.csv", sep = ',', row.names = 1, header=T))
 # Other file formats can also be loaded as matrix
@@ -53,7 +53,7 @@ mat <- as.matrix(read.csv ("PATH/TO/file.csv", sep = ',', row.names = 1, header=
 According to the complete reference documentation: "NA is allowed in the matrix. You can control the color of NA by na_col argument (by default it is grey for NA). A matrix that contains NA can be clustered by Heatmap() as long as there is no NA distances between any of the rows or columns respectively." </span>
 </div><br>
 
-```
+```r
 # after loading the data as.matrix, check matrix type in the environment panel in RStudio or by using:
 typeof(mat)
 # If matrix type is character,  it returns "character". You need to replace any characters with numbers.
@@ -70,7 +70,7 @@ which should return TRUE
 
 For this tutorial, I will make a random matrix to use as an example. <br>
 
-```
+```r
 # Generate random matrix
 mat <- matrix(rnorm(50, 20), nrow=10)
 is.numeric(mat) # check if numeric
@@ -84,8 +84,8 @@ mat[1:5,1:3] # view selected rows and columns
 ## Generate simple heatmap
 This command generates a heatmap with default settings without additional commands: <br>
 
-```
-Heatmap(mat)  # mat is the dataset name loaded earlier as matrix
+```r
+Heatmap(mat)              # mat is the dataset name loaded earlier as matrix
 ```
 
 ![Heatmap1]({{ images_path }}/02Heatmap_1.png)
@@ -104,7 +104,7 @@ There are countless ways to customize your heatmap with R. Here are a few of the
 
 Use `RColorBrewer` package to get a variety of color palettes. Always select colorblind accessible color combinations. You can input colors using palettes directly from `RColorBrewer` or using the hex codes to specify exact hues. <br>
 
-```
+```r
 library(RColorBrewer)
 library(circlize)
 
@@ -123,7 +123,7 @@ Heatmap(mat, name = "mat", col = col_fun)
 
 ### Draw heatmap with custom labels on legend
 
-```
+```r
 Heatmap(mat,
         heatmap_legend_param = list(
           title = "Legend title", at = c(18, 20, 23),
@@ -139,7 +139,7 @@ Heatmap(mat,
 ### Customize legend
 You can specify title, annotation, and position of legend. <br>
 
-```
+```r
 Legend_details <- list(title = "Map Legend",
                        at = c(18, 20, 23)
 )
@@ -152,7 +152,7 @@ draw(map1, heatmap_legend_side = "left")   # Can be “right”, “left”, “
 ### Draw independent legend for more flexibility
 Note that this legend is independent of the plot, so you need to select the same colors carefully for representing the corresponding plot. <br>
 
-```
+```r
 col_fun <- colorRamp2(c(18, 20, 23),
                       c("#d1e5f0", "#f4a582", "#d6604d"))
 # create a function to represent color, which can be used for both legend and heatmap to avoid selecting different colors for both
@@ -169,7 +169,7 @@ The numbers 0.9 and 0.2 in the last line of code represent the position of legen
 ### Add more annotations to the plot
 ComplexHeatmap package allows you to modify the plot in lots of ways. Here is an example of a complex heatmap with additional annotations.
 
-```
+```r
 mat <- matrix(rnorm(50, 20), nrow=10)
 rownames(mat) = paste0("R", 1:10)
 labels <- data.frame(Rowlabels = c("These", "are", "given", "row", "labels", "These", "are", "given", "row", "labels"))

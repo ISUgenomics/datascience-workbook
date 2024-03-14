@@ -118,12 +118,12 @@ In Julia, the <b>end</b> keyword is commonly used to close various syntax compon
 
 In Julia, variables are declared without needing a type specification, although it's possible to specify a type. In Julia, the name of a variable is custom, meaning you can choose it based on your preference, adhering to certain naming rules like starting with a letter and avoiding reserved words. . The value is assigned to the variable using the `=` sign.
 
-```
+```julia
 variable_name = value
 ```
 *For instance, in the expression above, variable_name is the custom name you choose for the variable, and value is the data you are assigning to it.*
 
-```
+```julia
 x = 10                          # Integer
 y = 20.5                        # Float
 z::Int = 30                     # Type-annotated declaration
@@ -146,7 +146,7 @@ In Julia, variable names should begin with a letter (uppercase or lowercase), un
 
 Julia supports a variety of core data types including integers, floating-point numbers, complex numbers, strings, and characters. It also supports more complex types like arrays, tuples, dictionaries, sets, and user-defined types.
 
-```
+```julia
 int_val = 10                   # integer
 float_val = 20.5               # float
 complex_val = 3 + 4im          # complex number
@@ -166,7 +166,7 @@ In the given example of <b>complex_val</b>, <b>im</b> is used to represent the i
 
 Julia has extensive Unicode support, allowing for the use of characters from many languages in identifiers, strings, and other parts of the program.
 
-```
+```julia
 α = 3.14                         # Unicode variable name
 println(α)                       # Output: 3.14
 ```
@@ -188,7 +188,7 @@ You would typically use or write functions to solve equations. You can use Julia
 In Julia, string interpolation is a handy feature that allows the **inclusion of variable values within strings** in a seamless manner. This is especially useful when you need to create strings that include dynamic values or when you want to format output in a readable way. <br>
 Values of variables can be inserted into strings using `$`.
 
-```
+```julia
 name = "Julia"                     # Define a variable
 println("Hello, $name!")           # Use string interpolation; output: Hello, Julia!
 ```
@@ -200,7 +200,7 @@ println("Hello, $name!")           # Use string interpolation; output: Hello, Ju
 In Julia, dictionaries are a type of **data structure that allows the storage of pairs of keys and values**, making it easy to look up a value by its corresponding key. This is particularly useful when you have a set of unique identifiers and associated values. <br>
 Dictionaries are declared using `Dict` and **key-value pairs** are specified using `=>`.
 
-```
+```julia
 d = Dict("a" => 1, "b" => 2)        # Create a dictionary 'd'
 ```
 
@@ -211,7 +211,7 @@ d = Dict("a" => 1, "b" => 2)        # Create a dictionary 'd'
 Arrays in Julia are mutable, ordered collections of elements that can be of any type, and they are used to store and manipulate data in a structured manner. They are used extensively for numerical computing tasks. <br>
 Arrays can have any number of dimensions, making it possible to create `vectors`, `matrices`, and higher-dimensional `tensors`. Arrays are declared using square brackets `[]`. Commas are used to separate elements, and semicolons or spaces can be used to separate rows in a 2D array.
 
-```
+```julia
 vec = [1, 2, 3]                     # 1D array: vector
 mat = [1 2; 3 4]                    # 2D array: matrix
 tensor = reshape(1:8, (2, 2, 2))    # 3D array: tensor
@@ -227,7 +227,7 @@ tensor = reshape(1:8, (2, 2, 2))    # 3D array: tensor
 
 **Julia uses 1-based indexing**, similar to MATLAB and R (different from Python and C++ that are 0-based), which can be more intuitive to those coming from mathematical backgrounds as mathematical notation often starts counting from 1.
 
-```
+```julia
 A = [1, 2, 3, 4, 5]
 A[1]                           # Output: 1  (indexing starts at 1)
 ```
@@ -267,7 +267,7 @@ Control flow statements in Julia, such as `if`, `else`, `for`, and `while`, are 
 
 * **for loop** <br>
 A `for` loop in Julia is used to **repeat a block of code for each value in a specified range or collection**. The syntax comprises the keyword `for`, a loop variable, the keyword `in`, a range or collection, followed by the block of code to be repeated, and the keyword `end` to signify the end of the loop block.
-```
+```julia
 for i in 1:5                # the loop will iterate over the range
     println(i)                # in each iteration...
 end                         # signifies the end of the loop
@@ -276,7 +276,7 @@ end                         # signifies the end of the loop
 
 * **while loop** <br>
 A `while` loop in Julia is used to **repeatedly execute a block of code as long as a specified condition is true**. The syntax comprises the keyword `while`, followed by the condition, the block of code to be repeated, and the keyword `end` to signify the end of the loop block.
-```
+```julia
 n = 1
 while n <= 5                # the loop will continue as long as 'n' is less than or equal to 5
     println(n)                # in each iteration...
@@ -287,7 +287,7 @@ end                         # signifies the end of the loop
 
 * **if-else Statement** <br>
 The `if-else` statement in Julia is used to **execute different blocks of code based on certain conditions**. The syntax comprises the keyword `if`, followed by the condition, the block of code to be executed if the condition is true, the keyword `else`, the block of code to be executed if the condition is false, and the keyword `end` to signify the end of the statement.
-```
+```julia
 x = 10
 y = 20
 if x > y                                 # checks if 'x' is greater than 'y'
@@ -306,7 +306,7 @@ In Julia, functions are fundamental building **blocks of reusable code**. They a
 
 * simple "print text" function:
 
-```
+```julia
 # Function definition
 function greet(name)
     println("Hello, $name!")
@@ -319,7 +319,7 @@ greet("Julia")                      # Output: Hello, Julia!
 
 * simple "calculate" function:
 
-```
+```julia
 function add(x, y)                  # declare a function named 'add'
     return x + y                    # the body of the function
 end                                 # signifies the end of the function body
@@ -333,7 +333,7 @@ add(3, 4)                           # Output: 7
 
 Julia supports anonymous functions (or lambda functions) which can be declared on a single line. They are defined using the -> symbol:
 
-```
+```julia
 square = x -> x * x                 # define an anonymous function to square a value
 square(5)                           # Output: 25
 ```
@@ -344,7 +344,7 @@ square(5)                           # Output: 25
 Function overloading allows you to define multiple functions with the same name but with different argument types. The ability to define function behavior across many combinations of argument types (multiple dispatch) is a key feature in Julia, allowing for both flexibility and performance optimization.
 
 * simple function overloading based on argument types:
-```
+```julia
 foo(x::Int) = x^2
 foo(x::Float64) = sqrt(x)
 foo(4)                             # Output: 16
@@ -353,7 +353,7 @@ foo(4.0)                           # Output: 2.0
 <i>The function foo is defined twice, each with a different method for different input types. Based on the type of the input, the appropriate method of foo is called.</i>
 
 * function with multiple arguments:
-```
+```julia
 # Function for integer arguments
 function multiply(a::Int, b::Int)
     return a * b
@@ -407,7 +407,7 @@ In Julia, instead of classes as seen in many other languages, **composite types 
 
 * **Struct Declaration** <br>
 Below is an example of how to declare a `struct` in Julia to represent a person, with fields for the person's name and age:
-```
+```julia
 struct Person                       # declare a struct named 'Person'
     name::String                      # field 'name' with type annotation 'String'
     age::Int                          # field 'age' with type annotation 'Int'
@@ -417,7 +417,7 @@ end                                 # signifies the end of the struct declaratio
 
 * **Creating Instances:** <br>
 Creating an `instance` of a struct involves providing values for all of its fields in the same order as they were declared:
-```
+```julia
 person = Person("Alice", 30)        # create an instance of 'Person' struct
 ```
 <i>An instance of the Person struct is created with the name "Alice" and age 30, and this instance is assigned to the variable person.</i>
@@ -433,7 +433,7 @@ Metaprogramming in Julia refers to the ability to treat code as data and data as
 
 Julia supports metaprogramming, which allows the creation of complex coding constructs and the **generation of code programmatically**.
 
-```
+```julia
 # Code generation
 for op in (:+, :-, :*, :/)
     @eval ($op)(x, y) = Base.$op(x, y)
@@ -467,7 +467,7 @@ Macros in Julia are a type of function that operates on the expression code pass
 
 Macros operate on the code itself before it's run, enabling powerful code-generation capabilities. Suppose you want to create a macro that automatically squares a given expression. You could define such a macro, `@square`, like so:
 
-```
+```julia
 macro square(expr)
     return :( $expr * $expr )         # the expression to square the input
 end
@@ -481,7 +481,7 @@ In this macro definition:
 
 Now, you can use the `@square` macro to square an expression easily:
 
-```
+```julia
 x = 5
 result = @square(x + 1)               # this will expand to (x + 1)*(x + 1) before evaluation
 
@@ -514,7 +514,7 @@ Here are some of the built-in macros in Julia and their use-cases:
 
 Julia uses modules for namespaces to **organize code into packages and projects**. This helps in structuring code in a clean and organized manner. Modules are declared using the `module` keyword, and packages can be imported using the `using` keyword.
 
-```
+```julia
 module MyModule
     export myfunc
     myfunc(x) = x^2
@@ -531,7 +531,7 @@ Modules in Julia can be used across different files, not just within the same fi
 
 Assuming your module "MyModule" was declared in a julia file `MyModule.jl`, in another file, say `main.jl`, you would do the following:
 
-```
+```julia
 include("MyModule.jl")            # this includes the file and makes MyModule available
 using .MyModule                   # this brings myfunc into scope
 
@@ -543,7 +543,7 @@ println(myfunc(5))                # Output: 25
 **Julia comes with a built-in package manager**, which simplifies the process of adding, removing, and managing packages. It also **supports environment management**, aiding in the creation of reproducible and well-organized project setups.
 
 To install a package, you can use the Pkg module in the Julia interactive interpreter mode called REPL *(i.e. when you see julia> as a prompt)*.
-```
+```julia
 julia                             # activate julia REPL in the command line
 julia> using Pkg
 julia> Pkg.add("DataFrames")      # installing the DataFrames package
@@ -552,7 +552,7 @@ julia> Pkg.add("DataFrames")      # installing the DataFrames package
 *In this example, the using Pkg statement is used to load the Pkg module, followed by Pkg.add("DataFrames") to install the DataFrames package.*
 
 Alternatively, you can activate the package manager mode by typing `]` at the Julia REPL *(the prompt will change from* `julia>` *to* `pkg>` *)*. Once in the package manager mode, you can add packages directly using the `add` command, as shown below:
-```
+```julia
 julia                             # activate julia REPL in the command line
 julia> ]                          # activate package manager mode
 (v1.0) pkg> add DataFrames        # installing the DataFrames package
@@ -570,7 +570,7 @@ Julia provides a robust error handling mechanism, with the ability to define, ca
 * `finally` : This keyword is used to execute code that should run irrespective of whether an exception occurred.
 
 Here's a simple example of throwing error within a function:
-```
+```julia
 function divide(x, y)
     y == 0 && throw(DivideError())
     return x / y
@@ -587,7 +587,7 @@ Here's an extended example illustrating how other keywords are used in practice:
 4. Any other types of exceptions are re-thrown using the `rethrow()` function, allowing them to propagate up the call stack. <br>
 5. A `finally` block is used to ensure that a message indicating the completion of execution is printed, regardless of whether an exception occurred.
 
-```
+```julia
 function safe_divide(x, y)
     try                                          # attempt to perform division
         result = x / y
@@ -614,7 +614,7 @@ safe_divide(10, 0)                               # Output: Error: Division by ze
 The Julia language is designed to easily interface with libraries from **C, Fortran, Python, R** and other languages, making it a versatile choice for diverse projects. Through packages like `PyCall`, `CxxWrap`, and `RCall`, Julia can invoke functions and access data types of these languages.
 
 * **PYTHON**
-```
+```julia
 # Using the PyCall package to call Python code
 using PyCall
 np = pyimport("numpy")
@@ -623,7 +623,7 @@ np.sin(np.pi / 4)                # Output: 0.7071067811865475
 <i>The PyCall package is used to call a Python function (numpy.sin) from Julia. This demonstrates how Julia can interoperate with Python code.</i>
 
 * **R**
-```
+```julia
 # Using the RCall package to call R code
 using RCall
 R"""
@@ -631,7 +631,7 @@ print(sqrt(16))
 """                              # Output: [1] 4
 ```
 <i>In this example, the RCall package is employed to execute R code from within Julia. A block of R code is defined using the R string macro, which is then executed to calculate and print the square root of 16, demonstrating interoperability with R code.</i>
-```
+```julia
 # Using the RCall package to call R code
 using RCall
 #
@@ -646,7 +646,7 @@ rbase.sqrt(16)                  # Output: [1] 4
 
 * **C++** <br>
 Interfacing with C++ in Julia typically requires a more involved setup compared to interfacing with R or Python. This setup often includes wrapping the C++ code in a way that Julia can understand, possibly compiling it into a shared library, and then loading this library into Julia using packages like `CxxWrap`.
-```
+```julia
 # Using the CxxWrap package to call C++ code
 using CxxWrap
 cxx""" #include <iostream>

@@ -61,7 +61,7 @@ The command syntax for both command line tools, `scp` and `rsync`, are very simi
 
 *e.g.,* <br>
 
-```
+```bash
 scp /local/directory/file.txt username@remote-hostname:/remote/directory/
 ```
 
@@ -102,13 +102,13 @@ Open terminal window on your local machine and copy-paste the command example (p
 
 ### <i>Copy file: <b>local to remote</b></i>
 
-```
+```bash
 scp /local/directory/file.txt username@remote-hostname:/remote/directory/
 ```
 
 ### <i>Copy file: <b>remote to local</b></i>
 
-```
+```bash
 scp username@remote-hostname:/remote/directory/file.txt /local/directory/
 ```
 
@@ -118,13 +118,13 @@ If you want to copy the entire directory, use the `scp -r` command, where the `-
 
 **- from local to remote**
 
-```
+```bash
 scp -r /local/directory/file.txt username@remote-hostname:/remote/directory/
 ```
 
 **- from remote to local**
 
-```
+```bash
 scp -r username@remote-hostname:/remote/directory/file.txt /local/directory/
 ```
 
@@ -208,7 +208,7 @@ In addition to its efficiency, rsync also <b>provides a number of features</b> t
 Open terminal window on your local machine and copy-paste the command example (provided below), while adjusting paths and credentials to your needs *(according to directions from the [Command SYNTAX](#command-syntax) section)*.
 
 The general syntax for synchronization requires to provide the source and destination locations. You can synchronize locations on a single machine or between different computers.
-```
+```bash
 rsync <source> <destination>
 ```
 
@@ -221,13 +221,13 @@ It can be practical to use the `rsync` command with `-avz` flags:
 
 ### <i>Synchronize <b>local to remote</b></i>
 
-```
+```bash
 rsync -avz /local/directory username@remote-hostname:/remote/directory
 ```
 
 ### <i>Synchronize <b>remote to local</b></i>
 
-```
+```bash
 rsync -avz username@remote-hostname:/remote/directory /local/directory
 ```
 
@@ -235,13 +235,13 @@ rsync -avz username@remote-hostname:/remote/directory /local/directory
 
 <b>Example 1:</b> if you wanted to **synchronize the file** `file.txt` stored in your home directory (`~/`) from your local computer to a remote computer with the hostname `example-hostname` and place it in the directory `~/backup`, you could run the following command:
 
-```
+```bash
 rsync ~/file.txt user@example-hostname:~/backup
 ```
 
 <b>Example 2:</b> if you wanted to **synchronize the directory** `~/data` from your local computer to a remote computer with the hostname `example-hostname` and place it in the directory `~/backup`, you could run the following command:
 
-```
+```bash
 rsync -avz ~/data user@example-hostname:~/backup
 ```
 *Using -avz* flags will also 1) preserve file attributes, 2) provide verbose output, and 3) compress the data during transfer.

@@ -57,7 +57,7 @@ There are many online platforms that allow you to write and run Python code dire
 
 ![PythonAnywhere]({{ images_path }}/03_python-anywhere-guide.png) <br><br>
 
-**4. Click-on the `New console: >>> Python` and select version `3.9`** <br>
+**4. Click-on the** `New console: >>> Python` **and select version** `3.9` <br>
 
 
 ## Start coding in Python
@@ -70,7 +70,7 @@ In this section are a few simple examples of Python code that you can try out.
 
 ***Example 1:*** *Printing a message to the console:*
 
-```
+```python
 print("Hello, world!")
 ```
 
@@ -87,7 +87,7 @@ The <b>print()</b> function in Python is used to output or display text or other
 
 ***Example 2:*** *Storing and manipulating data in variables:*
 
-```
+```python
 x = 10
 y = 5
 
@@ -108,7 +108,7 @@ To assign a value to a variable in Python, you simply use the assignment operato
 
 ***Example 3:*** *Perform some basic arithmetic operations:*
 
-```
+```python
 z = x + y
 print(z)
 

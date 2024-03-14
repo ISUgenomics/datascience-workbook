@@ -81,7 +81,7 @@ You can keep these files in your working directory without being tracked using t
 
 * Use aliases. You can add specific aliases for Git commands in the `.gitconfig` file that lives in your home directory.
 
-```
+```bash
 [alias]
 hist = log --graph --pretty=format:'%h %ad | %s%d [%an]' --date=short
 last = log -1 HEAD
@@ -318,7 +318,7 @@ Start by going to [https://github.com/dereneaton/ipyrad](https://github.com/dere
 
 --
 
-```
+```bash
 $ git clone git@github.com:dereneaton/ipyrad.git
 Cloning into 'ipyrad'...
 remote: Counting objects: 11341, done.
@@ -351,7 +351,7 @@ if you haven't configured your key yet, this may not work.
 
 **Always** `pull` from the repository before doing anything with the contents
 
-```
+```bash
 $ git pull origin master
 ```
 
@@ -359,7 +359,7 @@ $ git pull origin master
 
 Check the `status` of your local files
 
-```
+```bash
 $ git status
 ```
 
@@ -367,7 +367,7 @@ $ git status
 
 See the `log` of the snapshots and their commit messages
 
-```
+```bash
 $ git log
 ```
 
@@ -375,7 +375,7 @@ $ git log
 
 Compare the `diff`erences a file you have modified and the last commit
 
-```
+```bash
 $ git diff README.rst
 ```
 
@@ -387,7 +387,7 @@ $ git diff README.rst
 
 Replace a file you modified with the most recent commit using `checkout`
 
-```
+```bash
 $ git checkout README.rst
 ```
 
@@ -395,14 +395,14 @@ $ git checkout README.rst
 
 Find out which `branch` you're on
 
-```
+```bash
 $ git branch
 ```
 --
 
 Change to a different branch
 
-```
+```bash
 $ git checkout h5step7
 ```
 
@@ -410,7 +410,7 @@ $ git checkout h5step7
 
 Pull to update from `h5step7`
 
-```
+```bash
 $ git pull origin h5step7
 ```
 
@@ -455,7 +455,7 @@ so that everyone will have easy access to it).
 
 But first, let's tell Git who you are
 
-```
+```bash
 $ git config --global user.name "Ada Lovelace"
 $ git config --global user.email "adal@analyticalengine.com"
 ```
@@ -471,7 +471,7 @@ $ git config --global user.email "adal@analyticalengine.com"
 
 Initialize a new Git repository
 
-```
+```bash
 $ git init
 ```
 
@@ -479,7 +479,7 @@ $ git init
 
 After a file has been added or modified, you can stage the file
 
-```
+```bash
 $ git add README.md
 ```
 
@@ -487,7 +487,7 @@ $ git add README.md
 
 Commit the file to your local repository and write a message
 
-```
+```bash
 $ git commit -m "initial commit (README.md)"
 ```
 
@@ -505,7 +505,7 @@ your local repo to the remote.
 
 Add the remote
 
-```
+```bash
 $ git remote add origin git@github.com:username/repo-name.git
 ```
 
@@ -513,6 +513,6 @@ $ git remote add origin git@github.com:username/repo-name.git
 
 Push your snapshot to the remote
 
-```
+```bash
 $ git push -u origin master
 ```

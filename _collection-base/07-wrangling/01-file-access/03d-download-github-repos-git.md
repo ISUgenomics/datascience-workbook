@@ -67,7 +67,7 @@ Whether you are a seasoned developer or just starting out with Git, this tutoria
 
 First, make sure you have Git installed on your computer. The easiest way is to check the installed version of git:
 
-```
+```bash
 git --version
 ```
 
@@ -156,7 +156,7 @@ It's worth noting that while Git is a distributed version control system, and yo
 The `git clone` command is one of the most basic and essential Git commands. It allows you to download (or "clone") an entire Git repository from a remote server to your local computer. *This can be useful when you want to start working with an existing project or contribute to an open-source project.*
 
 The basic syntax of the git clone command is as follows:
-```
+```bash
 git clone <repository-url>
 ```
 
@@ -185,7 +185,7 @@ or
 
 Open your terminal or command prompt and navigate to the directory where you want to store the repository. Then, run the `git clone` command followed by the copied URL:
 
-```
+```bash
 git clone https://github.com/ISUgenomics/data_wrangling.git
 ```
 
@@ -193,7 +193,7 @@ git clone https://github.com/ISUgenomics/data_wrangling.git
 
 After the repository is cloned, check it. Navigate into the repository's directory using `cd` command:
 
-```
+```bash
 cd data_wrangling
 ```
 

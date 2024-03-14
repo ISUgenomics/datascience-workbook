@@ -32,7 +32,7 @@ We recommend using our run scripts. Run scripts are configured to run frequently
 
 We have 5 fasta files: `file1.fsa`, `file2.fsa`, `file3.fsa`, `file4.fsa` and `file5.fsa` (each with 1000 sequences) for which we need to run BLAST against `nr` database, we will generate the commands as follows:
 
-```
+```bash
 for file in file?.fsa; do
 echo "./runBLASTn.sh $file;
 done > blastn.cmds
@@ -41,11 +41,11 @@ done > blastn.cmds
 ## 2. Create submission files
 
 The `blastn.cmds` now contains 5 lines, each set to run blastn on each of the file. To create slurm script for each one of these lines, we run the [makeSLURMs.sh](https://github.com/ISUgenomics/common_scripts/blob/master/makeSLURMs.py "creating slurm scripts") script as follows:
-```
+```bash
 makeSLURMs.py 1 blastn.cmds
 ```
 Here 1 is to tell that put one job per submission file, and `blastn.cmds` is the commands file that looks like this:
-```
+```bash
 ./runBLASTn.sh file1.fsa
 ./runBLASTn.sh file2.fsa
 ./runBLASTn.sh file3.fsa
@@ -53,7 +53,7 @@ Here 1 is to tell that put one job per submission file, and `blastn.cmds` is the
 ./runBLASTn.sh file5.fsa
 ```
 Once the `makeSLURMs.py` command is run, you should see 5 `.slurm` files, each identified by numbers and the command file prefix. The content should look like this:
-```
+```bash
 #!/bin/bash
 #SBATCH -N 1
 #SBATCH --ntasks-per-node=16
@@ -73,7 +73,7 @@ scontrol show job $SLURM_JOB_ID
 ## 3. Submit the jobs
 
 The next step is to submit the jobs to the cluster. Using the for loop
-```
+```bash
 for f in blastn*.slurm; do
 sbatch $f;
 done

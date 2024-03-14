@@ -32,19 +32,20 @@ If logging in the first time, check the {% include target_link href=613.1 sectio
 
 To log in to Condo, use any Terminal (Terminal on Linux/Mac and Powershell on Windows) to ssh with the login hostname:
 
-```
+```bash
  ssh <ISU NetID>@condo2017.its.iastate.edu
 ```
 
 ## Data Transfer and Jobs
 Use the login hostname (@condo2017.its.iastate.edu) to log in to Condo and submit jobs, but use the data transfer node for data transfers (@condodtn.its.iastate.edu).
 
-```
-# Data transfer example
-Login:
+* Data transfer example
+
+```bash
+# Login:
 ssh <ISU NetID>@condodtn.its.iastate.edu
 
-Copy data:
+# Copy data:
 cp /home/$USER/test.txt /myfiles/Users/$USER/
 ```
 
@@ -56,7 +57,7 @@ cp /home/$USER/test.txt /myfiles/Users/$USER/
 
 ## Example job script
 
-```
+```bash
 #!/bin/bash
 
 #SBATCH --time=01:00:00   # walltime limit (HH:MM:SS)
@@ -73,13 +74,13 @@ your code/commands
 
 Copy/paste the above job script into a text file, add your modules and commands, and submit with the following command:
 
-```
+```bash
 sbatch filename
 ```
 
 Check your queued jobs:
 
-```
+```bash
 squeue -u your_netID
 ```
 

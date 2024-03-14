@@ -28,19 +28,19 @@ To submit jobs one after the other (i.e., run second job after the completion of
 
 First submit the firstjob, like normal
 
-```
+```bash
 qsub first_job.sub
 ```
 
 You will get the output (jobid#)
 
-```
+```bash
 1234567.computername
 ```
 
 Second submit the second job following way,
 
-```
+```bash
 qsub -W depend=afterok:1234567 second_job.sub
 ```
 
@@ -63,7 +63,7 @@ The other dependencies that can be used with `-W depend=dependency:jobid` are
 
 Simple way to automate this with a bash script:
 
-```
+```bash
 #!/bin/bash
 FIRST=`qsub first_job.sub`
 SECOND=`qsub -W depend=afterok:$FIRST second_job.sub`

@@ -214,7 +214,7 @@ RESTful web services can be accessed from the command line using tools like `cur
 <i>Let's say you want to retrieve information about a specific protein from the <b>UniProt database</b>. You can do this by sending a GET request to the UniProt RESTful web service API endpoint for the desired protein. For example, the endpoint for the protein with the accession number "P12345" would be "<a href="https://www.uniprot.org/uniprot/P12345.xml" target="_blank">https://www.uniprot.org/uniprot/P12345.xml</a>".</i>
 
 To access this information, you can use a tool like curl in the command line:
-```
+```bash
 curl https://www.uniprot.org/uniprot/P12345.xml
 ```
 This will return an XML file with information about the protein, such as its amino acid sequence, function, and references to related data in other databases.

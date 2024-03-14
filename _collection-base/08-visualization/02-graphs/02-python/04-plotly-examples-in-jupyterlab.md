@@ -65,7 +65,7 @@ conda create -n data_graphing python==3.9
 ```
 
 * Install Requirements
-```
+```bash
 pip install pandas==1.4.0
 pip install plotly==5.6.0
 pip install plotly_express==0.4.1
@@ -78,14 +78,14 @@ pip install jupyter-dash
 ```
 
 * Activate `data_graphing` environment
-```
+```bash
 conda activate data_graphing
 ```
 
 
 ### Launch Jupyter Lab in the terminal window
 
-```
+```bash
 jupyter lab
 ```
 

@@ -24,12 +24,12 @@ In late 2021, **Singularity underwent a rebranding to Apptainer**, changing the 
 
 Before diving into container tasks on HPC infrastructure:
 * ensure you checked the available module using the commands:
-```
+```bash
 module avail apptainer
 module avail singularity
 ```
 * load a module of your choice:
-```
+```bash
 module load apptainer/<version>       # e.g., module load apptainer/1.1.9-py310-wsbt4ge
 ```
 * and consistently use the appropriate keyword for your commands *(in this example: apptainer)*.
@@ -44,13 +44,13 @@ First off, it is important that modifying existing containers should only be don
 
 With that said, this is how you can take a squashed non-writable container and create a writable version that you can modify.  
 
-```
+```bash
 sudo singularity build --writable utilities2.simg utilities.simg
 ```
 
 In my case, I had installed many programs but they were not in the PATH so the container while had these programs installed didn't know where to find them!  The solution was to load modules in the shell or add the modules to the environment section of the recipe file.
 
-```
+```bash
 sudo singularity shell --writable utilities2.simg
 for d in /opt/spack/opt/spack/linux-centos7-x86_64/gcc-4.8.5/*/bin; do export PATH="$PATH:$d"; done
 ```
@@ -66,7 +66,7 @@ Going into a writable image and changing an environmental variable on the comman
 
 You can modify/update each section individually
 
-```
+```bash
 sudo singularity build --writable snpphylo3.simg snpphylo.simg
 sudo singularity build --section environment snpphylo3.simg ../recipe
 ```
@@ -76,11 +76,11 @@ More information can be found on the [singularity wiki](http://singularity.lbl.g
 ##### Method 2
 You can also modify/install/update from within a container.  For the environment, it is easier to do method 1 above.
 
-```
+```bash
 more /environment
 ```
 
-```
+```bash
 # Custom environment shell code should follow
 
 SPACK_ROOT=/opt/spack
@@ -99,7 +99,7 @@ More information about this can be found in this [singularity issue](https://git
 
 If you change something in a recipe you can just re-execute the build command and it will build only the changes you made in the recipe file.
 
-```
+```bash
 sudo singularity build container.simg recipe
 ```
 

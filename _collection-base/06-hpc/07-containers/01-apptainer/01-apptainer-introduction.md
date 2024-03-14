@@ -87,7 +87,7 @@ Apptainer provides a streamlined solution for running containers in high-perform
 
 ### *Load Apptainer module*
 Apptainer is usually preconfigured by HPC administrators, allowing regular users to activate and utilize it simply by loading the corresponding module. To check if the Apptainer module is available on an HPC system, users can typically use the command:
-```
+```bash
 module avail apptainer
 ```
 to list available modules and search for Apptainer in the output:
@@ -95,7 +95,7 @@ to list available modules and search for Apptainer in the output:
 ![06_apptainer_module.png]({{ images_path }}/06_apptainer_module.png)
 
 Users should choose the specific version of the Apptainer module they wish to work with, and activate it by loading the module using the command:
-```
+```bash
 module load apptainer/<version>         # e.g., module load apptainer/1.1.9-py310-wsbt4ge
 ```
 
@@ -119,7 +119,7 @@ If a user doesn't manually set these variables and there's no default set by the
 You can relocate the `.apptainer` directory from your `home` to a location without storage limits *(e.g., /project path on SCINet clusters)*, and then create a symbolic link in your `home` pointing to the new location, ensuring that the cache remains accessible from the `home` directory without additional modifications.
 
 <i>For example, at Atlas or Ceres (SCINet clusters), you can do:</i>
-```
+```bash
 cd ~
 mkdir /project/<your_project_dir>/<account_name>
 mv .apptainer /project/<your_project_dir>/<account_name>/
@@ -138,7 +138,7 @@ In practice, it's always a good idea for users to check whether these variables 
 
 **Check the current value** <br>
 To see what is currently set for these environment variables, you can use the `echo` command:
-```
+```bash
 echo $APPTAINER_CACHEDIR
 ```
 
@@ -153,7 +153,7 @@ If you've set `$APPTAINER_CACHEDIR` to a custom location, that directory will be
 
 **Set the value in a current session** <br>
 Before running any Apptainer or Singularity command, you can export the desired cache directory by setting the environment variable in your shell or within a job script. *For example:*
-```
+```bash
 export APPTAINER_CACHEDIR=/path/to/custom/cache
 ```
 **Permanent Setting** <br>
@@ -178,7 +178,7 @@ Apptainer *(formerly Singularity)* provides a variety of commands to manage and 
 </div>
 
 Apptainer commands follow the structure of:
-```
+```bash
 apptainer [command] [options] [arguments]
 ```
 where:

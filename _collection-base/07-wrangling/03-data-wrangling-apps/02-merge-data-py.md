@@ -96,7 +96,7 @@ optional arguments:
 
 **syntax:**<br>
 *^ arguments provided in square brackets [] are optional*
-```
+```bash
 python3 merge_data.py -i file1 -m file2 -c cols
                      [-e missing] [-o outfile] [-f format]
                      [-h]
@@ -123,7 +123,7 @@ The application is developed in Python3 programming language and requires import
 
 You do NOT need to create the new environment each time you want to use it. Once created, the env is added to the list of all virtual instances managed by Conda. You can display them with the command:
 
-```
+```bash
 conda info -e
 ```
 
@@ -131,7 +131,7 @@ conda info -e
 
 The selected environment can be activated with the `conda activate` command, followed by the name of the env:
 
-```
+```bash
 conda activate data_wrangling
 ```
 
@@ -152,7 +152,7 @@ If you use Conda environment management system and followed the instructions pro
 
 Alternatively, if you want to use this app in system-wide mode *(without creating a virtual environment)*, then install the neccessary requirements using the commands:
 
-```
+```bash
 pip3 install pandas
 pip3 install openpyxl
 ```
@@ -329,7 +329,7 @@ Both tasks can be realized using the same `data_merge` app but in two separate s
 **STEP 1** <br>
 Adding matching `Sample Num` from the *labels.xlsx* file into the *data_CN.xlsx* file using matching `ARS_Label`-`USDA#` columns.
 
-```
+```bash
 python3 merge_data.py -i data_CN.xlsx,labels.xlsx -c 0,1 -o output_step1 -f 2 -v 1
 ```
 
@@ -340,7 +340,7 @@ OUTPUT: `output_step1.xlsx`
 **STEP 2** <br>
 Transfering data from the *data_NN.xlsx* file into the *data_CN.xlsx* file using matching `Sample Num` column (now available in both files).
 
-```
+```bash
 python3 merge_data.py -i output_step1.xlsx,data_NN.xlsx -c 11,0 -o output_step2 -f 2 -v 1
 ```
 

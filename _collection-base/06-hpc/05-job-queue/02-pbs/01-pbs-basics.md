@@ -74,26 +74,26 @@ By following the steps 1-7, users can create a PBS script and submit their jobs 
 2. Start with the shebang line, which specifies the interpreter to be used. For PBS, this is usually `#!/bin/bash` or `#!/bin/sh`.
 
 3. Specify the PBS directives, which are special comments that begin with `#PBS`. These directives specify the resources required for the job, such as the number of nodes, CPUs, memory, and walltime. <br> *For example:*
-```
+```bash
 #PBS -l nodes=1:ppn=8
 #PBS -l mem=16gb
 #PBS -l walltime=1:00:00
 ```
 
 4. Specify the working directory where the job will be executed:
-```
+```bash
 #PBS -d /path/to/working/directory
 ```
 
 5. Specify the commands to be executed:
-```
+```bash
 echo "Hello, world!"
 ```
 
 6. Save the script with a `.pbs` extension.
 
 7. Submit the job using the `qsub` command:
-```
+```bash
 qsub myjob.pbs
 ```
 
@@ -103,7 +103,7 @@ Here's a template PBS script with commonly used `#PBS` directives:
 
 `template_script.pbs`
 
-```
+```bash
 #!/bin/bash
 #PBS -N job_name
 #PBS -o output_file
@@ -159,35 +159,35 @@ Here are some common PBS commands with examples:
 ## `qsub` - submit a job
 
 The `qsub` command is used to submit a job to the queue.
-```
+```bash
 qsub myjob.pbs
 ```
 *This will submit the job script "myjob.pbs" to the queue.*
 
 **- add job requirements** <br>
 The `-l` flag is used with the `qsub` command to specify job requirements such as the number of nodes, CPUs, memory, and walltime.
-```
+```bash
 qsub -l nodes=2:ppn=4,mem=16gb,walltime=1:00:00 myjob.pbs
 ```
 *This will submit a job requesting 2 nodes with 4 CPUs each, 16GB of memory, and a walltime of 1 hour.*
 
 **- specify a name for the job** <br>
 The `-N` flag is used with the `qsub` command to specify a name for the job.
-```
+```bash
 qsub -N myjob myjob.pbs
 ```
 *This will submit the job script "myjob.pbs" with the name "myjob".*
 
 **- redirect the output and error** <br>
 The `-o` and `-e` flags are used with the `qsub` command to redirect the output and error messages of the job to a file.
-```
+```bash
 qsub -o myjob.out -e myjob.err myjob.pbs
 ```
 *This will submit the job script "myjob.pbs" and redirect the output to "myjob.out" and errors to "myjob.err".*
 
 **- specify the queue** <br>
 The `-q` flag is used with the `qsub` command to specify the queue where the job should be submitted.
-```
+```bash
 qsub -q myqueue myjob.pbs
 ```
 *This will submit the job script "myjob.pbs" to the queue named "myqueue".*
@@ -196,14 +196,14 @@ qsub -q myqueue myjob.pbs
 ## `qstat` - status of a job
 
 The `qstat` command is used to check the status of a job.
-```
+```bash
 qstat -u myuser
 ```
 *This will show the status of all jobs submitted by the user "myuser".*
 
 **- display job info** <br>
 The `-f` flag is used used with the `qstat` command to display detailed information about a job, including its resource requirements, priority, and status.
-```
+```bash
 qstat -f 123456
 ```
 *This will show the detailed information for job ID 123456.*
@@ -212,7 +212,7 @@ qstat -f 123456
 ## `qdel` - delete a job
 
 The `qdel` command is used to delete a job from the queue.
-```
+```bash
 qdel 123456
 ```
 *This will delete the job with ID 1234 from the queue.*
@@ -220,14 +220,14 @@ qdel 123456
 ## `qhold` - hold a job
 
 The `qhold` command is used to put a job on hold.
-```
+```bash
 qhold 123456
 ```
 *This will put the job with ID 1234 on hold.*
 
 **- set of jobs on hold** <br>
 The `-j` flag is used with the `qhold` command to put a set of jobs on hold.
-```
+```bash
 qhold -j 1234,5678,9101
 ```
 *This will put the jobs with IDs 1234, 5678, and 9101 on hold.*
@@ -235,9 +235,9 @@ qhold -j 1234,5678,9101
 ## `qrls` - release a job
 
 The `qrls` command is used to release a job from hold.
-```
+```bash
 qrls 123456
 ```
 *This will release the job with ID 1234 from hold.*
 
-<span style="color: #ff3870;font-weight: 500;">If you want to learn more about PBS commands, a useful resource to explore is the</span> {% include target_link href=652.2 text="PBS commands (cheatsheet)." %} 
+<span style="color: #ff3870;font-weight: 500;">If you want to learn more about PBS commands, a useful resource to explore is the</span> {% include target_link href=652.2 text="PBS commands (cheatsheet)." %}

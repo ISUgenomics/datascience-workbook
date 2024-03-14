@@ -69,7 +69,7 @@ We will assume you have a GitHub account. If not, please register a free account
 
   Click on `Code` and the clipboard icon, to copy the git repo path. That way you can type `git clone` and paste the git repo path.
 
-  ```
+  ```bash
   git clone https://github.com/YOUR_USER_NAME/jupyter_binder.git
   cd jupyter_binder
   ```
@@ -135,7 +135,7 @@ Creating and hosting a local Jupyter Notebook requires the `jupyter` package.
 
   For the moment, create one Markdown section and paste the following. It doesn't matter what it says right now since we are testing the system out.
 
-  ```Markdown
+  ```
   ## Hello Jupyter Notebook
 
   This is a quick introduction to Jupyter Notebooks.
@@ -186,13 +186,13 @@ Creating and hosting a local Jupyter Notebook requires the `jupyter` package.
 
 ## Add the "Launch Binder" badge
 
-  The last thing is to add a badge that launches the binder. Notice in the above image, before you hit launch, there's a "Copy the text, then paste into your README...", expand that section and copy the badge code...which will look similar to:
+The last thing is to add a badge that launches the binder. Notice in the above image, before you hit launch, there's a "Copy the text, then paste into your README...", expand that section and copy the badge code...which will look similar to:
 
-  ```Markdown
-  [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/j23414/test_binder.git/HEAD?filepath=tutorials)
-  ```
+```
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/j23414/test_binder.git/HEAD?filepath=tutorials)
+```
 
-  Replace `j23414` with your GitHub username, and `test_binder` with `jupyter_binder`. Then when you add it to the README.md, you should have a working binder launch badge.
+Replace `j23414` with your GitHub username, and `test_binder` with `jupyter_binder`. Then when you add it to the README.md, you should have a working binder launch badge.
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/j23414/test_binder.git/HEAD?filepath=tutorials)
 
@@ -225,7 +225,7 @@ For example, if you want to use the Python package `numpy` then the `environment
 
 This installs `numpy` into the docker container, and you'll be able to load the `numpy` package in a Code section:
 
-```{python}
+```python
 import numpy as np
 ```
 

@@ -49,12 +49,12 @@ The program that we use to parallelize a bioinformatics problem is **GNU paralle
 
 Here, we load the module and look at the version
 
-```
+```bash
 module load parallel
 parallel --version
 ```
 
-```
+```bash
 GNU parallel 20181222
 Copyright (C) 2007-2018 Ole Tange and Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
@@ -69,7 +69,7 @@ Web site: http://www.gnu.org/software/parallel
 
 We will be using COVID-19 data collated by [New York Times github repository](https://github.com/nytimes/covid-19-data)
 
-```
+```bash
 mkdir GNU-parallel
 cd GNU-parallel
 wget https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv
@@ -77,13 +77,13 @@ wget https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.
 
 This is a comma separated file so let's convert that to a tab delimitated file
 
-```
+```bash
 more us-counties.csv  | tr ',' '\t' > us-counties.tab
 ```
 
 As you can see, this data contains the county and state information about the pandemic over time.
 
-```
+```bash
 head us-counties.tab
 
 date    county  state   fips    cases   deaths
@@ -102,13 +102,13 @@ Instead of one large file let's separate this data by county-state
 
 Using sort and awk we can first sort the file by county/state and then using awk to print each line ($0) to a file named county-state.tab.
 
-```
+```bash
 sort -k 2,3 us-counties.tab | awk '{print $0 > $2"-"$3".tab"}'
 ```
 
 This will generate 2578 files + the original 2 files we downloaded
 
-```
+```bash
 ls | wc
    2580    2580   50550
 ```
@@ -124,7 +124,7 @@ ls | wc
 
 Let's make a copy of the data and compare how long it takes to run gzip using a for loop vs using parallel
 
-```
+```bash
 mkdir -p gzip/parallel
 mkdir -p gzip/forloop
 cp *.tab gzip/parallel
@@ -135,7 +135,7 @@ cp *.tab gzip/forloop
 We can do this using a for loop as follows.
 
 * GNU-parallel/gzip/forloop
-```
+```bash
 cd gzip/forloop
 time for f in *.tab; do gzip $f; done
 real    0m15.801s
@@ -155,7 +155,7 @@ However, we can make better use of all the available CPUs by using GNU parallel.
 
 * GNU-parallel/gzip/parallel
 
-```
+```bash
 cd ../parallel
 time parallel -j10 "gzip {}" ::: *.tab
 
@@ -167,7 +167,7 @@ sys     0m11.623s
 As you can see this sped up the gziping command by a factor of 2.3.  This may vary depending on the number of cpus you have and their speed.
 
 Here is how you can unzip all the files in parallel It takes about the same amount of time.
-```
+```bash
 parallel -j10 "gunzip {}" ::: *.tab.gz
 
 real    0m5.519s
@@ -176,7 +176,7 @@ sys     0m1.367s
 
 ```
 If you want to unzip them you can run this command
-```
+```bash
 time parallel -j10 "gunzip {}" ::: *.tab.gz
 ```
 
@@ -189,7 +189,7 @@ Interestingly, this is about the same amount of time it takes to run a simple ls
 
 * GNU-parallel
 
-```
+```bash
 cd ../..
 time parallel -j10 "ls {}" ::: *.tab > /dev/null
 
@@ -202,7 +202,7 @@ Above, I am redirecting the output to the null device so It doesn't print it to 
 
 However, if we add the `-X` parameter it finishes in a fraction of the time.
 
-```
+```bash
 time parallel -X -j10 "ls {}" ::: *.tab > /dev/null
 
 real    0m0.333s
@@ -214,7 +214,7 @@ This is because there is some overhead from the parallel command starting a new 
 
 This is actually slower than just typing `ls *.gz` So parallel is great when you have lots of data and lots of files in the data or if a task is taking a really long time using a single processor but overhead of the command will make it slower if the dataset is too small.
 
-```
+```bash
 time ls *.gz > /dev/null
 
 real    0m0.277s
@@ -225,7 +225,7 @@ sys     0m0.079s
 
 Unfortunately, Repeating the gzipping example from above using this parameter does not give as significant of an improvement as the `ls` example.
 
-```
+```bash
 time parallel -X -j10 "gzip {}" ::: *.tab
 
 real    0m5.438s
@@ -251,7 +251,7 @@ Let's download a toy example from Arabidopsis.  I grabbed the first 250 sequence
 
 ****Download the example raw data****
 
-```
+```bash
 mkdir bowtie
 cd bowtie
 wget www.bioinformaticsworkbook.org/Appendix/GNUparallel/fastqfiles.tar.gz
@@ -277,12 +277,12 @@ fastqfiles/SRR4420295_2.fastq.gz
 
 ****Download Arabidopsis genome****
 
-```
+```bash
 wget https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_chromosome_files/TAIR10_chr_all.fas
 ```
 
 ****Create the bowtie2 alignment database for the Arabidopsis genome****
-```
+```bash
 module load bowtie2
 
 # this next command will build a bowtie2 database named tair
@@ -323,15 +323,16 @@ You can download this example trinity file like this.
 
 * GNU-parallel
 
-```
+```bash
 mkdir trinity
 cd trinity
 wget www.bioinformaticsworkbook.org/Appendix/GNUparallel/test.fa
 ```
 
-```
+```bash
 head test.fa
-
+```
+```
 >TRINITY_DN22368_c0_g1_i1 len=236 path=[427:0-235] [-1, 427, -2]
 ATTGGTTTTCTACGGAGAGAGAGAAAATGGAGACGGCGAGTGTCTAAAGCTAGAGCTTGT
 GTTGGAGAAGGAAACGGAGATTTGCGTAGTAGTGGAAGCTTTAGGTATTTGTTGTGGTTA
@@ -346,7 +347,7 @@ AGCATGATTTCCTTCCCCATTCTCAGTTCCGGGAGTGCAGTGAAAGCAACAATCATTATT
 
 We have reserved a node and are making use of 10 cpus on Ceres and we decide to run the `wc -l` command to find the number of lines. We can also use the unix command `time` to see how much time it takes to run the command.
 
-```
+```bash
 time wc -l test.fa
 1082567 test.fa
 
@@ -358,7 +359,7 @@ sys	0m0.057s
 
 Now using parallel we can take advantage of the 10 cpus and spread this job over all the cpus;
 
-```
+```bash
 parallel -a test.fa --pipepart --block -1  time wc -l
 ```
 ****Note:
@@ -424,8 +425,8 @@ Notice we use less time with each block being counted by each cpu. The longest t
 
 ## other parameters of interest
 
-```
---joblog  A logfile of the jobs completed so far
+```bash
+--joblog        # A logfile of the jobs completed so far
 ```
 
 ## Example 4: Parallel Blast

@@ -91,7 +91,7 @@ Please follow the instructions provided at <a href="https://phoenixnap.com/kb/ho
 
 **Install app requirements**
 
-```
+```bash
 pip3 install pandas
 pip3 install numpy
 ```
@@ -142,7 +142,7 @@ optional arguments:
 
 **syntax:**<br>
 *^ arguments provided in square brackets [] are optional*
-```
+```bash
 python3 bin_data.py -i input -l label -r range [-ll labels_list] [-hd header_names]
                    [-ch chunks_size] [-s {true,false}]
                    [-c {ave,sum}] [-t {step,bin,value}] [-n slice]
@@ -154,7 +154,7 @@ python3 bin_data.py -i input -l label -r range [-ll labels_list] [-hd header_nam
 
 **example usage with minimal required options:**
 
-```
+```bash
 python3 bin_data.py -i input_file -l 0 -r 1
 ```
 
@@ -177,7 +177,7 @@ To <b>install <a href="https://docs.conda.io/en/latest/" target="_blank">Conda â
 
 You do NOT need to create the new environment each time you want to use it. Once created, the env is added to the list of all virtual instances managed by Conda. You can display them with the command:
 
-```
+```bash
 conda info -e
 ```
 
@@ -185,7 +185,7 @@ conda info -e
 
 The selected environment can be activated with the `conda activate` command, followed by the name of the env:
 
-```
+```bash
 conda activate data_wrangling
 ```
 
@@ -203,7 +203,7 @@ The <a href="https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data" t
 
 Generally, you can try to install modules with the `conda install {module=version}` command. However, since we initialized the **data_wrangling** environment with Python=3.9, we can also install modules using `pip install {module==version}`, as follows:
 
-```
+```bash
 pip install pandas
 pip install numpy
 ```
@@ -277,7 +277,7 @@ If all your data belong to the same or none category, you can add to your file a
 
 * ***input file without header***
 
-```
+```bash
 sep='\t'
 sed "1,$ s/^/value$sep/" < file > input
 ```
@@ -287,7 +287,7 @@ sed "1,$ s/^/value$sep/" < file > input
 
 * ***input file with header***
 
-```
+```bash
 sep='\t'
 sed "1s/^/label$sep/; 2,$ s/^/value$sep/" < file > input
 ```
@@ -322,7 +322,7 @@ Generally, when you want to **slice the data with an equal number of rows**, you
 
 If you want **to keep the original ordering** of an input, add a column with generic indexing and pass this column index with the `-r` option:
 
-```
+```bash
 sep='\t'
 awk -F$sep -v OFS=$sep 'NR == 1 {print "position", $0; next} {print (NR-1), $0}' file > input
 ```
@@ -371,7 +371,7 @@ In this example we will use the first column with text-like labels to create dat
 
 To exit the algorithm just after splitting the data and saving the chunks, set the `ranges-col` argument to 'off' with the option `-r`.
 
-```
+```bash
 python3 bin_data.py -i input.txt -r 'off' -l 0
 ```
 
@@ -409,7 +409,7 @@ In this example we will split data by every 100 rows that requires using the `-n
 
 To exit the algorithm just after splitting the data and saving the chunks, set the `ranges-col` argument to 'off' with the option `-r`.
 
-```
+```bash
 python3 bin_data.py -i input.txt -r 'off' -l 'off' -n 100 -t 'step'
 ```
 
@@ -419,35 +419,35 @@ In result, the `CHUNKS` directory will be crated and within it the number of 100
 
 ### *Create N equal data chunks*
 
-```
+```bash
 python3 bin_data.py -i input.txt -r '' -l '' -n 10 -t 'bin'
 ```
 
 ### *Input file vs. Input directory*
 
-```
+```bash
 python3 bin_data.py -i hybrid.depth -l 0 -r 1 -t 'step' -n 1000 -s True -v 1
 ```
 
-```
+```bash
 python3 bin_data.py -i CHUNKS/ -l 0 -r 1 -t 'value' -n 0.15 -s 'false' -v 0
 ```
 
 ### *Aggregate data over every N rows*
 
-```
+```bash
 python3 bin_data.py -i input.txt -l 0 -r 1 -t 'step' -n 100 -s True -v 1
 ```
 
 ### *Aggregate data over each of N slices*
 
-```
+```bash
 python3 bin_data.py -i input.txt -l 0 -r 1 -t 'bin' -n 10 -s True -v 1
 ```
 
 ### *Aggregate data over value increment*
 
-```
+```bash
 python3 bin_data.py -i input.txt -l 0 -r 1 -t 'value' -n 0.1 -d 3 -s True -v 1
 ```
 
@@ -456,7 +456,7 @@ python3 bin_data.py -i input.txt -l 0 -r 1 -t 'value' -n 0.1 -d 3 -s True -v 1
 
 * **example usage with large raw input file:**
 
-```
+```bash
 python3 bin_data.py -i hybrid.depth -l 0 -r 1 -t 'step' -n 1000 -s True -v 1
 ```
 
@@ -464,7 +464,7 @@ python3 bin_data.py -i hybrid.depth -l 0 -r 1 -t 'step' -n 1000 -s True -v 1
 
 * **example usage with input directory of data chunks in CSV format:**
 
-```
+```bash
 python3 bin_data.py -i CHUNKS/ -l 0 -r 1 -t 'value' -n 0.15 -s 'false' -v 0
 ```
 
@@ -472,7 +472,7 @@ python3 bin_data.py -i CHUNKS/ -l 0 -r 1 -t 'value' -n 0.15 -s 'false' -v 0
 
 * **example usage with all default settings:**
 
-```
+```bash
 python3 bin_data.py -i {path} -l {int} -r {int} -ll None -hd None -ch None -s True -c 'ave' -t 'step' -n 100 -d 2 -o 'output_data' -v 0
 ```
 

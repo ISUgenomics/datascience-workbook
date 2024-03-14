@@ -63,7 +63,7 @@ effecting others' work.
 
 <a href="https://github.com/" target="_blank">GitHub  ⤴</a> utilizes <b><a href="https://git-scm.com/" target="_blank">Git  ⤴</a></b>, a distributed version control system that tracks changes in files over time, perfect for facilitating collaboration among multiple contributors. As a cloud-based hosting platform, GitHub provides a space for developers to store their `Git-initialized projects` and manage versions of their code. Thus, the combination of **GitHub** and **Git** forms a robust infrastructure for effective code management, team collaboration, and open-source contributions.
 
-<pstyle="color: #ff3870;font-weight: 500;"> To learn more about <b>GIT</b>, see the practical tutorial {% include target_link href=932.2 %} in the {% include target_link href=900 %} / {% include target_link href=932.1 %} section of this workbook.</p>
+<p style="color: #ff3870;font-weight: 500;"> To learn more about <b>GIT</b>, see the practical tutorial {% include target_link href=932.2 %} in the {% include target_link href=900 %} / {% include target_link href=932.1 %} section of this workbook.</p>
 
 Before we delve into the specifics of [getting started with GitHub](#how-to-get-a-github-account), it's crucial to **first revisit a few fundamental concepts of Git**, the version control system used for synchronizing your local changes with the remote GitHub repository.
 
@@ -128,14 +128,14 @@ Passwords are not always secure and can be annoying to type.
 
 Log in to the `Remotemachine`
 
-```
+```bash
 ssh <yourID>@remoteMachine
 ```
 or open a terminal on your local machine.
 
 Create the key pair in your home directory:
 
-```
+```bash
 $ ssh-keygen -t rsa
 ```
 
@@ -156,7 +156,7 @@ Enter passphrase (empty for no passphrase):
 ---
 ## Create the SSH key
 
-```
+```bash
 $ ssh-keygen -t rsa
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/userid/.ssh/id_rsa):
@@ -186,7 +186,7 @@ The key's randomart image is:
 
 You now have a file called `id_rsa.pub` in your `.ssh` folder.
 
-```
+```bash
 cat id_rsa.pub
 ```
 

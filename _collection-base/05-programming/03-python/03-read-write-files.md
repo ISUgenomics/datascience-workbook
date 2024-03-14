@@ -77,7 +77,7 @@ Before we can start working with text files in Python, we first need to understa
 ## **Opening a file**
 
 Before we can read or write to a text file, we must first open the file. To open a file, we use the `open()` function, which takes two arguments: the file name and the mode. *The mode specifies the purpose of the file, whether it's for reading, writing, or both.*
-```
+```python
 open(filename, mode)
 ```
 
@@ -96,7 +96,7 @@ To open a text file in Python, we use the built-in `open()` function. With this 
 
 Here is an example of how to open a file in read mode:
 
-```
+```python
 file = open('example.txt', 'r')
 ```
 *In this example, we are opening a file called "example.txt" in read mode ('r').*
@@ -108,7 +108,7 @@ file = open('example.txt', 'r')
 
 It is important to close the file once we are finished using it. This ensures that any changes we have made to the file are saved and that we free up system resources. To close a file, we use the `close()` method with no parameters:
 
-```
+```python
 file.close()
 ```
 <div style="background: #cff4fc; padding: 15px;">
@@ -148,7 +148,7 @@ The `with` statement is a convenient way to **manage file objects in Python** be
 
 **`with open()` &ensp; to read from a file** <br>
 Here's an example of how to use the with statement to open a file and read its contents:
-```
+```python
 with open('input_file.txt', 'r') as f:
     data = f.read()
 ```
@@ -156,7 +156,7 @@ with open('input_file.txt', 'r') as f:
 
 **`with open` &ensp; to write to a file**<br>
 Here's an example of how to use the with statement to open a file and write to it:
-```
+```python
 with open('output_file.txt', 'w') as f:
     f.write("some text \n")
 ```
@@ -174,7 +174,7 @@ To read from a text file in Python, we can use the `open()` function to open the
 
 Here is an example:
 
-```
+```python
 with open('example.txt', 'r') as file:     # Open the file in read mode
     content = file.read()                  # Read the contents of the entire file and close it
 
@@ -187,7 +187,7 @@ print(content)                             # Print the contents of the file usin
 
 Sometimes it is more efficient to read or write text files line by line. To read a text file line by line, we can use a for loop:
 
-```
+```python
 with open('example.txt', 'r') as file:     # Open the file in read mode
     for line in file:                      # Read the contents of the file line by line
         print(line)                        # Print each line of the file
@@ -199,13 +199,13 @@ with open('example.txt', 'r') as file:     # Open the file in read mode
 
 In Python, writing to a text file is a simple process that involves opening the file in write mode, writing the desired content to the file, and then closing the file. <br>
 Once the file is open in write mode, you can write content to the file using the `write()` method of the file object. The `write()` method takes a string as input and writes it to the file.
-```
+```python
 write('string')
 ```
 
 For example, to write the string <i>"Hello, World!"</i> to the file, you can use the following code:
 
-```
+```python
 file = open("output.txt", "w")          # Open the file in write mode
 file.write("Hello, World!")             # Write content to the file
 file.close()                            # Close the file
@@ -217,7 +217,7 @@ file.close()                            # Close the file
 
 To write to a text file line by line, we can use the write() method multiple times:
 
-```
+```python
 with open('example.txt', 'w') as file:      # Open the file in write mode and close automatically when the block code ends
     file.write('This is line 1\n')          # Write first string to the file
     file.write('This is line 2\n')          # Write second string to the file
@@ -230,7 +230,7 @@ In addition to the `write()` method, Python provides the built-in `writelines()`
 **writelines()** <br>
 The `writelines()` method is used to write multiple lines of text to a file. This method takes a sequence of strings as an argument and writes each string as a separate line to the file.
 
-```
+```python
 lines = ["Line 1\n", "Line 2\n", "Line 3\n"]    # Create list of strings
 
 with open('example.txt', 'w') as file:          # Open the file in write mode and close automatically when the block code ends
@@ -261,12 +261,12 @@ It is recommended to <b>use the <code>with</code> statement to manage the open-c
 You can use spaces to align output by adding padding to the left or right of a string.
 
 For example, to right-align a string with a fixed width of 10 characters, you can use the string format operator **%** like this:
-```
+```python
 x = "hello"
 print("%10s" % x)
 ```
 and to write it to the file use:
-```
+```python
 x = "hello"
 with open('example.txt', 'w') as f:
     print("%10s" % x, file=f)
@@ -286,20 +286,20 @@ You can use the <b>sep</b> and <b>end</b> parameters of the <b>print()</b> funct
 
 
 For example, to print two numbers separated by a dash, you can use:
-```
+```python
 x = 10
 y = 20
 print(x, y, sep="-")
 ```
 and if you want to continue printing in the same line, you can change the `end` param to a space:
-```
+```python
 print(x, y, sep="-", end=' ')
 ```
 *This will output "10-20", with a dash separator between the numbers.*
 
 You can do the same with a more complex data structure and write it to the file. <br>*For example, to write a list of names separated by commas to a file, you can use the following code:*
 
-```
+```python
 names = [John, Anna, Bob]                             # Create a list of numbers
 
 with open("names.txt", "w") as f:                     # Open & Close a file using 'with' keyword
@@ -336,7 +336,7 @@ print('-'.join(names+names2), file=f)
 You can also use curly braces **{}** as placeholders in a string and use the `format()` method to substitute variables or expressions. The curly brackets can contain optional parameters that define the format of the value being inserted *(see [set width, type & align](#set-width-type--align))*.
 
 **You can use format() context manager to subsitute values of variables to the template data structures:**
-```
+```python
 name = "John"                                           # variable 1
 age = 32                                                # variable 2
 country = "USA"                                         # variable 3
@@ -346,7 +346,7 @@ print("{} {} {}".format(name, age, country))            # substitution of variab
 
 You can do the same with a more complex data structure and write it to the file:
 
-```
+```python
 people = {"John" : 30, "Anna" : 22, "Bob" : 27}                             # Create directory of key:value pairs
 
 with open("example.txt", "w") as f:                                         # Open & Close a file using 'with' keyword
@@ -368,7 +368,7 @@ In Python, curly brackets {} are used as placeholders in a string to be replaced
 </div><br>
 
 You can **use the curly braces {} as placeholders** for the values you want to print, and then use the `format()` method to substitute those placeholders with actual values *(general syntax below)*.
-```
+```python
 print("{:align width}".format(variable))
 ```
 
@@ -390,12 +390,12 @@ The **curly brackets {}** can contain optional parameters that define the format
   * `s` for strings
 
 For example, to format a floating-point number with two decimal places, you can use the following code:
-```
+```python
 x = 3.141592653589793
 print("The value of pi is {:.2f}".format(x))
 ```
 and to write it to the file use:
-```
+```python
 x = 3.141592653589793
 with open('example.txt', 'w') as file:
     print("The value of pi is {:.2f}".format(x), file=f)
@@ -404,7 +404,7 @@ with open('example.txt', 'w') as file:
 
 You can do the same with a more complex data structure and write it to the file:
 
-```
+```python
 people = {"John" : 30, "Anna" : 22, "Bob" : 27}                                    # Create directory of key:value pairs
 
 with open("example.txt", "w") as f:                                                # Open & Close a file using 'with' keyword
@@ -420,17 +420,17 @@ with open("example.txt", "w") as f:                                             
 ###  • *use f-strings*
 Since Python 3.6, you can use f-strings to format strings with variables or expressions. <br>
 **Variables in the f-strings are enclosed in curly braces {} and prefixed with the letter "f":**
-```
+```python
 f"some text {variable}"
 ```
 For example, embed the values of two variables into the sentence template:
-```
+```python
 name = "Alice"
 age = 30
 print(f"My name is {name} and I'm {age} years old")
 ```
 and to write it to the file use:
-```
+```python
 name = "Alice"
 age = 30
 with open('example.txt', 'w') as f:
@@ -441,7 +441,7 @@ with open('example.txt', 'w') as f:
 
 You can also add formatting *(see [set width, type & align](#set-width-type--align))* to the f-string output in Python:
 
-```
+```python
 name = "Alice"
 age = 30
 with open('example.txt', 'w') as f:
@@ -455,12 +455,12 @@ with open('example.txt', 'w') as f:
 When working with text files, it is important to handle errors that may occur during the process. While manipulating data files in Python, errors can occur if the file **does not exist**, **cannot be opened**, or **cannot be read or written** to for any other reason. To handle these errors, you can **use Python's exception handling mechanism**.
 
 In Python, you can use the `try...except` statement to catch and handle exceptions that may occur when working with files. The `try` block contains the code that may raise an exception, while the `except` block contains the code to handle the exception if it occurs. <br>
-<span style="color: #ff3870;font-weight: 500;">Learn more about Python's exception handling mechanism in section</span> {% include target_link href=531 section="#--try-except-finally" text="Control Flow: Try-Except-Finally" %} in the tutorial {% include target_link href=531 text="Introduction to Python programming" %} 
+<span style="color: #ff3870;font-weight: 500;">Learn more about Python's exception handling mechanism in section</span> {% include target_link href=531 section="#--try-except-finally" text="Control Flow: Try-Except-Finally" %} in the tutorial {% include target_link href=531 text="Introduction to Python programming" %}
 
 ## EXAMPLE: *FileNotFoundError*
 To handle this error, we can use a try/except block:
 
-```
+```python
 try:
     file = open('example.txt', 'r')
     content = file.read()

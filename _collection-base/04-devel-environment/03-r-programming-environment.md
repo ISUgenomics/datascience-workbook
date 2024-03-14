@@ -98,7 +98,7 @@ Here are a few examples of the things that you can do with R: <br>
 ### Simple examples
 To perform a simple arithmetic calculation, you can enter the following into the console:
 
-```
+```r
 > 2 + 2
 
 ##If you press enter, you will get the following output
@@ -108,7 +108,7 @@ In this example, the output is the result of the calculation 2 + 2, which is 4.
 
 In addition to basic arithmetic operations, R also has a variety of functions that can be used to perform more complex statistical analyses. For example, you can use the mean() function to calculate the mean of a set of numbers:
 
-```
+```r
 > a1 <- c(1, 2, 3, 4, 5)
 > mean(a1)
 [1] 3
@@ -117,7 +117,7 @@ In this example, the mean() function calculates the mean of the `a1` numeric vec
 
 R also has powerful capabilities for visualizing data. For example, you can use the plot() function to create a scatterplot:
 
-```
+```r
 > plot(1:20)
 ```
 

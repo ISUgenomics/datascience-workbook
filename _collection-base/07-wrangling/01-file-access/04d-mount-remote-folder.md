@@ -69,7 +69,7 @@ SSH (Secure Shell) is a secure network protocol that allows users to securely ac
 Here's a practical guide to mounting a remote HPC folder on a local machine using the `sshfs` command:
 
 **1.** Open a terminal on your local machine and check if you have the `sshfs` already installed:
-```
+```bash
 sshfs --version
 ```
 
@@ -113,7 +113,7 @@ brew install sshfs
 
 **2.** Once SSHFS is installed, you can mount a remote folder using the following command:
 
-```
+```bash
 sshfs user@hostname:/remote/folder /local/folder [options]
 ```
 
@@ -132,7 +132,7 @@ Note that you may be prompted to enter your credentials: password and MFA (authe
 
 **3.** Navigate to the **mountpoint** on your local machine:
 
-```
+```bash
 cd /local/folder
 ```
 
@@ -170,7 +170,7 @@ This will mount the remote folder to the local directory specified in the script
 ##  • unmount folder
 
 To unmount a remote folder that you have mounted using SSHFS, you can use the `umount` command:
-```
+```bash
 umount /local/folder
 ```
 
@@ -178,7 +178,7 @@ where <b>/local/folder</b> is a mountpoint on your local machine where the remot
 
 
 For example, if you mounted a remote folder to the `~/Documents/HPC` directory using SSHFS, you can unmount it using the following command:
-```
+```bash
 umount ~/Documents/HPCumount
 ```
 
@@ -209,7 +209,7 @@ The `sshfs` command has several additional options that can be used to customize
 | -o IdentityFile=filename |specifies the SSH private key file to use for authentication|
 
 These options can be combined together as needed, for example:
-```
+```bash
 sshfs -o IdentityFile=mykey.pem -o compression -o allow_other user@hostname:/path/to/remote/folder ~/Documents/HPC
 ```
 

@@ -424,24 +424,24 @@ Once you have installed Conda, you can use it to create and manage Python enviro
 **Create & Manage Conda environment**
 
 **CREATE ENV:** You can create a new conda environment like so:
-```
+```bash
 conda create --name my_env
 ```
 *This will create a new environment called "myenv".*
 
 **LIST ALL ENVs:** You can check the list of all available environments by typing:
-```
+```bash
 conda info -e
 ```
 
 **ACTIVATE ENV:** You can activate the selected environment by running:
-```
+```bash
 conda activate my_env
 ```
 *Once the environment is activated, any packages you install using conda will be installed only in that environment.*
 
 **INSTALL PACKAGE:** To install Python packages, *(e.g., Pandas)* using `conda`, you can run the following command in your terminal:
-```
+```bash
 conda install pandas
 ```
 
@@ -464,17 +464,17 @@ conda install numpy=1.2.3
 It is possible to **install packages with** `pip` in a current Conda environment. You first need to activate the environment in your command prompt or terminal. Then, you can use `pip` to install packages as you normally would.
 
 *For example, to install the "numpy" package with pip, you can use the following command:*
-```
+```bash
 pip install numpy
 ```
 or
-```
+```bash
 pip install numpy==1.2.3
 ```
 *This will install the latest or selected (here: 1.2.3) version of the "numpy" package into your current Python environment.*
 
 **DEACTIVATE ENV:** To deactivate a Conda environment, you can use the following command:
-```
+```bash
 conda deactivate
 ```
 *This will deactivate the current active Conda environment and return you to the* `base` *environment or your system's default Python environment.*
@@ -505,14 +505,14 @@ When you create a <b>virtual environment with venv, it is associated with the pr
 **Install venv**
 
 `venv` comes installed with Python 3, so you don't need to install anything extra to use it. <br> *However, if you're using an older version of Python or if venv is not available for some reason, you can install it with* `pip`:
-```
+```bash
 pip install virtualenv
 ```
 
 **Create venv environment**
 
 **CREATE ENV:** To create a new virtual environment with `venv`, **navigate to your project directory** and run the following command:
-```
+```bash
 python3 -m venv env
 ```
 *This will create a new virtual environment in a directory called "env". You can replace "env" with any name you like.*
@@ -527,7 +527,7 @@ If you choose to create the virtual environment in a different location than a r
 </div><br>
 
 **ACTIVATE ENV:** To activate the virtual environment, run the following command:
-```
+```bash
 source env/bin/activate
 ```
 *This will activate the virtual environment and change your prompt to indicate that you are now working inside the environment. You should see something like* `(env)` *at the beginning of your prompt.*
@@ -544,12 +544,12 @@ source env/bin/activate
 **INSTALL PACKAGE:** With the virtual environment activated, you can now install packages using `pip`, just like you would normally.
 
 *For example, to install the "numpy" package, run the following command:*
-```
+```bash
 pip install numpy
 ```
 
 **DEACTIVATE ENV:** To deactivate the virtual environment, simply run the following command:
-```
+```bash
 deactivate
 ```
 
@@ -585,7 +585,7 @@ By convention, the file is always named <b>Dockerfile</b> (with a capital "D" an
 </div><br>
 
 You can create a Dockerfile using a text editor like a command-line `nano` or `Visual Studio Code` with a graphical user interface. *For example, here's a* `Dockerfile` *template:*
-```
+```Dockerfile
 # Use a base image (in this case, Python 3.9)
 FROM python:3.9-slim-buster
 
@@ -613,7 +613,7 @@ CMD ["python", "app.py"]
 *This Dockerfile starts with a base image of Python 3.9, sets the working directory to* `/app`, *copies the* `requirements.txt` *file into the container, installs the packages listed in* `requirements.txt`, *copies the rest of the application code into the container, and runs* `app.py` *using the python command.*
 
 Once you've created the Dockerfile, you can build the container using the `docker build` command, like so:
-```
+```bash
 docker build -t myapp .
 ```
 *This will create a Docker image called* `myapp` *that you can then run using the* `docker run` *command.*
@@ -656,7 +656,7 @@ It is highly recommended to create a <b>requirements file</b> that is a common w
 When working with `conda`, you can create a **YAML file** that lists all of the packages in your environment, including the version numbers. This file can then be used to recreate the environment on another machine or to share with others who need to use the same dependencies.
 
 To create the YAML file, activate the environment you want to export and run the following command:
-```
+```bash
 conda env export > environment.yml
 ```
 *This will create a file named "environment.yml" in the current directory that contains the environment's name, a list of channels used to install packages, and a list of packages with their versions.*
@@ -667,7 +667,7 @@ conda env export > environment.yml
 When working with `venv`, you can create a **requirements.txt** file that lists all of the packages installed in the virtual environment, including their version numbers.
 
 To create the file, activate the environment you want to export and run the following command:
-```
+```bash
 pip freeze > requirements.txt
 ```
 *This will create a file named "requirements.txt" in the current directory that contains a list of packages with their versions.*
@@ -676,7 +676,7 @@ pip freeze > requirements.txt
 
 **DOCKER** <br>
 When working with `Docker`, you can include a **requirements.txt** file in your project directory and copy it to the Docker container during the build process. To do this, **include the following lines in your Dockerfile**:
-```
+```Dockerfile
 COPY requirements.txt .
 
 RUN pip install -r requirements.txt
@@ -706,7 +706,7 @@ Python pre-defined functions are made available as libraries *(also referred to 
 **1.** **PyPI** (Python Package Index) <br>
 This is the default package repository for Python packages. You can use the `pip` package manager to install packages from PyPI. <br>
 <i>For example, you can install the <b>requests</b> package by running:</i>
-```
+```bash
 pip install requests
 ```
 
@@ -714,11 +714,11 @@ pip install requests
 
 **2.** **Conda** <br>
 Conda is a package manager that is commonly used for scientific computing in Python. You can use the `conda` command to install packages from the Anaconda distribution or the default Conda package repository. <i>For example, you can install the <b>numpy</b> package by running:</i>
-```
+```bash
 conda install numpy
 ```
 With `conda` you can also install packages from a specific channels *(repository of packages)* other than the defaults. To use the `conda install -c` command, you need to specify the <b>channel name</b> and the <b>package name</b>. <i>For example, you can install the <b>biopython</b> package from the bioconda channel by running:</i>
-```
+```bash
 conda install -c bioconda biopython
 ```
 **The popular Conda channels for Python packages include:**
@@ -736,28 +736,28 @@ Many Python packages are available on GitHub, which is a platform for code hosti
 
 Here are the general steps:
 1. Clone the GitHub repository to your local machine using `git clone`.
-```
+```bash
 git clone https://github.com/username/repository.git
 ```
 
 2. Navigate to the cloned repository's directory.
-```
+```bash
 cd repository
 ```
 
 3. Build the package:
-```
+```bash
 python setup.py sdist
 ```
 Then follow by installing with `pip` or `conda`.
 
 **INSTALL USING PIP:** <br>
-```
+```bash
 pip install .
 ```
 
 **INSTALL USING CONDA:** <br>
-```
+```bash
 conda build .
 conda install --use-local <package>
 ```

@@ -42,14 +42,14 @@ If you don't do NOT know what is terminal or command-line, start with the tutori
 
 ### on Linux (*Debian, Ubuntu*)
 
-```
+```bash
 sudo apt-get update
 sudo apt-get install gnuplot
 ```
 
 ### on Mac OS
 
-```
+```bash
 brew install gnuplot
 ```
 
@@ -63,7 +63,7 @@ Please visit [http://www.gnuplot.info/download.html](http://www.gnuplot.info/dow
 
 To start a new Gnuplot session, type in the terminal window:
 
-```
+```bash
 gnuplot
 ```
 ![Open Gnuplot in the Terminal]({{ images_path }}/gnuplot_in_terminal.png)<br>
@@ -106,7 +106,7 @@ So, it is good practice to create a set of settings in a terminal with a live pr
 
 In this case, you do NOT have to launch gnuplot session in the terminal. Instead, create an empty file for Bash script, e.g., `touch gnuplot_graphing.sh`, open the file in any editor, and copy-pased the code snippet provided below. Then save changes.
 
-```
+```bash
 #!/bin/bash
 
 # BASH VARIABLES
@@ -136,7 +136,7 @@ Instead of defining variables, you can provide these values directly in the `gnu
 
 Finally, there is a `gnuplot` section, where the `<<EOF ... EOF` syntax allows to execute the Gnuplot command within a Bash script. All settings contained inside this syntax can be directly pasted from a Gnuplot session run directly in the terminal. In this example, the only exception is using pre-defined variables instead of exact values. To use a Bash variable defined outside the gnuplot section, prefix the variable name with $ and enclose the entire variable in single quotes *(for text like variables)*.
 
-```
+```bash
 variable --> '$variable'
 ```
 
@@ -162,7 +162,7 @@ The `gnuplot` section contains two main blocks of commands:
 
 To run the script, execute the following command in the terminal window:
 
-```
+```bash
 . ./gnuplot_graphing.sh
 ```
 

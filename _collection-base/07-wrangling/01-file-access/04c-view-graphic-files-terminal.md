@@ -50,7 +50,7 @@ In such cases, **the process of downloading intermediate graphic files from the 
 
 `sshfs` is a tool that allows you to mount a remote HPC folder on your local machine over secure SSH connection, allowing you to browse, view, and modify files stored remotely as if they were stored locally. <br>
 For example, you can use the command:
-```
+```bash
 sshfs user@hostname:/remote/folder /local/folder
 ```
 to mount a remote folder on your local machine, and then browse and open files in that folder using your local graphical file explorer or command line.
@@ -61,7 +61,7 @@ to mount a remote folder on your local machine, and then browse and open files i
 
 One approach is to use a remote desktop or X11 forwarding to display the graphic files on a local machine. In this case, the remote system that is hosting the graphic files will need to have a graphical desktop environment installed, and the user will need to establish a remote connection using tools like VNC or SSH with X11 forwarding.
 
-```
+```bash
 ssh -X user@hostname
 ```
 
@@ -130,12 +130,12 @@ When working on an HPC system, it can be challenging to install custom software 
 Regardless of the tool you choose, you need to follow some preliminary steps:
 
 **1.** Log in to the HPC system:
-```
+```bash
 ssh user@hostname
 ```
 
 **2.** Check the operating system (OS) on the HPC system:
-```
+```bash
 cat /etc/os-release
 ```
 The first few rows of the output displayed on the terminal screen should looks something like:
@@ -153,7 +153,7 @@ You will use this name to find the appropriate category of operating systems at 
 ![01-install_custom_software_pkgs.png]({{ images_path }}/01-install_custom_software_pkgs.png)
 
 **3.** Check also the operating system architecture for the HPC system:
-```
+```bash
 uname -i
 ```
 The result should look like `x86_64` *(this case)* or `arch64` or `amd64` or `arm64`, etc.
@@ -170,17 +170,17 @@ This will take you to the subpage for the software package in the dedicated conf
 
 **5.** In the command line on the HPC system navigate to the location dedicated to your custom software storage (e.g., `/work/SOFTWARE`) and use the `wget command` to download the source package archive:
 
-```
+```bash
 wget https://download-ib01.fedoraproject.org/pub/epel/7/SRPMS/Packages/j/jp2a-1.0.7-1.el7.src.rpm
 ```
 
 Now, extract the package:
-```
+```bash
 rpm2cpio jp2a-1.0.7-1.el7.src.rpm | cpio -idmv
 ```
 
 to get a compressed archive, e.g., `jp2a-1.0.7.tar.gz` that you need further to extract using the command appropriate for the compression format: [see a quick guide {% include target_link href=644 section="#how-to-decompress-the-archive" text="How to decompress the archive?" %}]
-```
+```bash
 tar -xvzf jp2a-1.0.7.tar.gz
 ```
 
@@ -269,13 +269,13 @@ brew install jp2a
 **jp2a USAGE:**
 
 Here's an example command to view an image using asciiview:
-```
+```bash
 jp2a fancy-cat.jpeg --colors
 ```
 <p align="center"><img width="800" src="{{ images_path }}/01-remote_view_jp2a.png"></p>
 
 If you have <b>imagemagick</b> suite available on your system you can convert other formats to JPEG and stream it for jp2a. You first need to load `imagemagick` module and then use `convert` tool:
-```
+```bash
 module load imagemagick
 convert linux-logo.png jpg:- | jp2a -
 ```
@@ -349,7 +349,7 @@ brew install aview
 **asciiview USAGE:**
 
 Here's an example command to view an image using asciiview:
-```
+```bash
 module load imagemagick
 asciiview fancy-cat.jpeg
 ```
@@ -419,7 +419,7 @@ brew install libcaca
 **img2txt USAGE:**
 
 Here's an example command to convert an image to ASCII art using img2txt:
-```
+```bash
 img2txt linux-logo.png
 ```
 
@@ -507,7 +507,7 @@ brew install TheZoraiz/ascii-image-converter/ascii-image-converter
 **ascii-image-converter USAGE:**
 
 Once installed, you can use `ascii-image-converter` to convert an image to ASCII art by running the simple command:
-```
+```bash
 ascii-image-converter linux-logo.png
 ```
 
@@ -553,7 +553,7 @@ See more options at <a href="https://github.com/TheZoraiz/ascii-image-converter#
 
 You can install this python module directly in a terminal on your local machine - then it will always be accessible from the command line. On a remote HPC machine, first activate the <a href="https://" target="_blank">Conda virtual environment  ⤴</a> (or create a new one) and install the module the same way using the `pip` Python package manager.
 
-```
+```bash
 pip install ascii-python
 ```
 
@@ -561,7 +561,7 @@ pip install ascii-python
 
 Once installed, you can use the module to convert an image to ASCII art using the following commands directly in your terminal:
 
-```
+```python
 python
 import ascii_py
 chars = ascii_py.asciiImage()
@@ -570,7 +570,7 @@ print(asciiImg)
 ```
 
 *In this example, linux-logo.png is the input file. The `python` keyword will activate the Python console in your terminal window. Once you run the remaining commands, the image will be displayed in the terminal window. You can also skip `python` keyword and save the code snippet in the script file with `.py` extension. Then run in the command line:*
-```
+```bash
 python my_script.py
 ```
 
@@ -579,7 +579,7 @@ python my_script.py
 
 The default characters used to create the ASCII art are: `["@", "#", "S", "%", "?", "*", "+", ";", ":", ",", "."]` *(see left panel)*. You can customize the settings by providing the adjusted list in the `chars` variable *(see right panel)*:
 
-```
+```python
 chars = ascii_py.asciiImage(["*", ":", ".", " "])
 ```
 The last provided character is used as a background. There are no color options available.

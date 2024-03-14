@@ -30,19 +30,19 @@ To login automatically from your machine to the remote host, you can save the pr
 
 ## Step 1: Create public and private keys (local computer)
 
-```
+```bash
 ssh-keygen
 ```
 
 ## Step 2: Copy the public key to remote-host
 
-```
+```bash
 ssh-copy-id -i ~/.ssh/id_rsa.pub userid@MACHINENAME
 ```
 
 ## Step 3: Login  
 
-```
+```bash
 ssh userid@MACHINENAME
 # Ensure file permissions for ~/.ssh/.id_rsa (local) and ~/.ssh/authorized_keys (remote) are such that it is only readable by you!
 ```

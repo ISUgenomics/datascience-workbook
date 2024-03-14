@@ -136,22 +136,22 @@ Below you have a quick overview for the most commonly used variants of arithmeti
 
 The arithmetic expansion `$(( expression ))` substitutes the results of an evaluated expression into a variable. [[source: gnu.org](https://www.gnu.org/software/bash/manual/bash.html#Arithmetic-Expansion)]
 
-```
+```bash
 echo $((1+2))
 ```
 
-```
+```bash
 echo $((x=1, y=1, x+y))
 ```
 
-```
+```bash
 n=1;
 echo $((++n))
 ```
 
 ### - let command
 
-```
+```bash
 k=1;
 let k=$k + 2
 ```
@@ -160,7 +160,7 @@ let k=$k + 2
 
 *(supports floating-point up to 20 decimal places)*
 
-```
+```bash
 echo "1.5 + 2.0" | bc -l
 ```
 
@@ -168,7 +168,7 @@ echo "1.5 + 2.0" | bc -l
 
 *(supports floating-point up to 6 decimal places)*
 
-```
+```bash
 awk 'BEGIN { x = 1.5; y = 1.5; print "x + y = "(x+y) }'
 ```
 
@@ -176,7 +176,7 @@ awk 'BEGIN { x = 1.5; y = 1.5; print "x + y = "(x+y) }'
 
 *(supports floating-point up to 20 decimal places)*
 
-```
+```bash
 perl -e 'print 1.5+2.0'
 ```
 
@@ -188,18 +188,18 @@ perl -e 'print 1.5+2.0'
 
 A. Use the array of strings<br>
 *(note that there are no spaces)*
-```
+```bash
 echo "Hello "{Universe,World,Contry,City,Friend}
 ```
 
 B. Use the array of auto-generated integers
-```
+```bash
 echo "Count "{0..10}
 ```
 
 C. Use combinations of many arrays
 
-```
+```bash
 echo {a,b}_{0..5}
 ```
 
@@ -207,12 +207,12 @@ echo {a,b}_{0..5}
 
 Use ``` `command` ``` or an equivalent `$(command)` syntax to create the array of items on-the-fly.
 
-```
+```bash
 for i in `seq 10`; do echo $i; done
 ```
 
 It works for any command enclosed in the \`\` or $(). The most comman usages are generating array of integers with `seq` command or creating an array of strings `cat` from the one-column file.
-```
+```bash
 for i in `seq 1 2 10`; do echo $i; done
 for i in $(seq 1 2 10); do echo $i; done
 
@@ -227,7 +227,7 @@ for i in $(cat one-column-file); do echo $i; done
 Bash is a Unix shell that allows you to call processes on the computing machine directly in the command line. In addition to a set of built-in commands *(check them with the `compgen -b` command)* that perform predefined tasks, you can **create your own algorithms in the Bash** shell. To give a structure to the algorithm, Bash uses several keywords and special characters that are interpreted by the Unix shell. The set of these expressions is referred to as **Bash statements** and can be understood as a set of universal **building blocks** that you can use to build your own customized algorithm.<br>
 You can view the available Bash statements on the command line using the `compgen` command with the ***k*** flag:
 
-```
+```bash
 compgen -k
 ```
 ![terminal colors]({{ images_path }}/02_bash_keywords.png)<br>
@@ -263,7 +263,7 @@ There are about twenty-some Bash statements, which can be further divided into s
 
 The syntax is made up of several keywords reserved for the bash shell and customized arguments provided by the user. When a statement is defined in a script file, it usually has a block structure, where the contents encapsulated in `do ... done` syntax is indented by a fixed number of spaces, usually 4 or 2 for more nested algorithms.
 
-```
+```bash
 for item in {first,second,third,fourth,fifth}
 do
     echo $item
@@ -291,7 +291,7 @@ Avoid naming iterators and other variables with a single character since there a
 
 You can also use **FOR** loop syntax directly in the command line as a one-liner, to see the result immediately:
 
-```
+```bash
 for item in {first,second,third,fourth,fifth}; do echo $item; done
 ```
 
@@ -309,28 +309,28 @@ Remember to always separate consecutive statement elements with a semicolon <b>;
 **VARIANTS OF A FOR-LOOP SYNTAX**
 
 *A. Iterate over strings given directly (separated by spaces):*
-```
+```bash
 for item in item1 item2 item3 item4 item5; do
     echo  $item
 done
 ```
 
 *B. Iterate over strings given in an array (separated by commas without spaces):*
-```
+```bash
 for item in {item1,item2,item3,item4,item5}; do
     echo  $item
 done
 ```
 
 *C. Iterate over integers given in an array (separated by commas without spaces):*
-```
+```bash
 for item in {1,2,3,4,5}; do
     echo  $item
 done
 ```
 
 *D. Iterate over integers generated automatically using an array:*
-```
+```bash
 for item in {1..5}; do
     echo  $item
 done
@@ -344,7 +344,7 @@ You can replace explicit integers with variables, e.g., {$START..$END..$STEP}. N
 </div><br>
 
 *E. Iterate over integers generated automatically using sequence:*
-```
+```bash
 for item in `seq 1 1 10`; do
     echo  $item
 done
@@ -357,7 +357,7 @@ The syntax for generating integers in a sequence is 'seq START STEP END' or $(se
 </div><br>
 
 *F. Iterate over integers generated automatically using incrementation:*
-```
+```bash
 for ((item=1;item<=5;item++)); do
     echo $item
 done
@@ -371,7 +371,7 @@ You can start with a large intiger and count down using the decrementing ( item-
 </div><br>
 
 *G. Iterate over any items stored in the one-column file:*
-```
+```bash
 for item in `cat file`; do
     echo $item
 done
@@ -384,7 +384,7 @@ That syntax `cat file` is useful when iterating over a long list of strings that
 </div><br>
 
 *H. Iterate over items resulting from the command:*
-```
+```bash
 for item in `ls | grep "txt"`; do
     echo $item
 done
@@ -401,7 +401,7 @@ That syntax `custom command` is useful when iterating over a filtrated list of f
 
 When you want to **iterate on an each-to-any** basis over two or more sets of features, such as creating a set of files with specific names in 3 different formats, use **nested FOR loops**.
 
-```
+```bash
 # script variant
 for name in {dog,cat,fish,snake,bird}; do
   for format in txt dat png; do
@@ -413,7 +413,7 @@ done
 ![terminal colors]({{ images_path }}/02_bash_for_loop_nested.png)<br>
 
 The same algorithm can be executed as a one-liner directly in the command line.
-```
+```bash
 # one-liner variant
 for name in {dog,cat,fish,snake,bird}; do for format in txt dat png; do echo $name.$format; done; done
 ```
@@ -422,7 +422,7 @@ for name in {dog,cat,fish,snake,bird}; do for format in txt dat png; do echo $na
 
 
 **Use a template for 2 nested FOR loops**
-```
+```bash
 for item1 in {ARRAY-OF-ITEMS}; do
   for item2 in {ARRAY-OF-ITEMS}; do
     <COMMANDS>
@@ -446,7 +446,7 @@ See the previous subsection in the tutorial to learn what **other iteration opti
 **WHILE** loop iterates as long as the user-provided condition is **true**. So, use `while` loop statement if you want to perform a certain number of iterations, whether that number is known or not. Syntax is made up of `while ` keyword reserved for the bash shell and customized condition provided by the user in square brackets. Similarly to other Bash loops, the commands *(dependent on loop condition)* are encapsulated in the `do ... done` block of code.
 
 **Use a template for WHILE loop**
-```
+```bash
 while [ <CONDITION> ]
 do
     <COMMANDS>
@@ -475,7 +475,7 @@ The three most common usages of `while` loop are iterating for **as long as the 
 
 Let's assume that you know the upper threshold of a certain parameter and you know that once this value is exceeded, the analysis makes no further sense, e.g., you know that the percentage of component X in the mixture cannot be higher than 50%. You can use a `while` loop to test the properties of your mixture, increasing the content of component X every 1% until you reach the limit value.
 
-```
+```bash
 max_val=50
 val=0
 
@@ -491,7 +491,7 @@ done
 
 Let's first create the simple file with several lines of content:
 
-```
+```bash
 # script variant
 for i in {Ana,Eric,Bob}; do
   for j in welcome; do
@@ -511,7 +511,7 @@ You can preview the results saved into a file using `less file` command:
 
 Once we have a file with some content, we can read it line-by-line with a `while` loop and derive from each line the name and the city.
 
-```
+```bash
 filename=./file
 
 while read -r line; do
@@ -535,7 +535,7 @@ In this case, the condition for the `while` loop is replaced by the `read` comma
 
 Imagine that you never turn off your computer, and every day at the same time, you want to perform a certain process, such as checking the date. You can easily do this with a while loop and an infinity condition `while :` or `while true`. After executing the process once, you can manage to silence the loop activity for the next 24 hours with `sleep` command. Then the commands in the loop will be executed again.
 
-```
+```bash
 while :
 do
   echo "Today is: "$(date)
@@ -545,7 +545,7 @@ done
 
 If you don't want to have the terminal blocked with a process running indefinitely, move that process to the background using `&` at the end of the command.
 
-```
+```bash
 while true; do echo "Today is: "$(date); sleep 24h; done&
 ```
 
@@ -558,7 +558,7 @@ To restore this process to foreground, use the `fg` command. Then you can end th
 **UNTIL** loop iterates as long as the user-provided condition is **false**. So, use `until` loop statement if you want to perform a given number of iterations. Syntax is made up of `until ` keyword reserved for the bash shell and customized condition provided by the user in square brackets. Similarly to other Bash loops, the commands *(dependent on loop condition)* are encapsulated in the `do ... done` block of code.
 
 **Use a template for WHILE loop**
-```
+```bash
 until [ <CONDITION> ]
 do
     <COMMANDS>
@@ -574,7 +574,7 @@ The most common uses of the until loop include **iterating until the iterator re
 Suppose you want to perform an optimization using program X, which will use the results from the previous cycle for each subsequent iteration. You know that this program converges to the best results in 10 iterations and further calculations make no improvement. An effective solution, is to enclose this procedure in a loop `until`, where the loop will terminate when the iterator value reaches a predefined maximum value, `max_iter`.<br>
 If you do not know after how many cycles the optimization will be achieved, you can set to replace the *iter* variable with *score* and terminate when the expected threshold of improvement between iterations is reached.  
 
-```
+```bash
 max_iter=10
 iter=0
 
@@ -590,7 +590,7 @@ done
 
 Let's create a script that  checks the status of running processes with the `squeue` command and will notify you when your queued task is finished. The `until` loop will be terminated when the JOBID of your task is no longer visible in the queue on the computing cluster. However, as long as the task is running, comparing the number of matching JOBID to zero will return false in the conditional and the loop will still be active.
 
-```
+```bash
 JOBID=1689115
 
 until [ `squeue | awk '{print $1}' | grep $JOBID | wc -l` -eq 0 ]
@@ -611,7 +611,7 @@ The most external and mandatory part of the syntax is the bracket `if ... fi`.
 
 The `if` takes as an argument a condition defined in square brackets (single or double) or must be preceded by the keyword `test`. The `test` can be considered equivalent to the `[ ]` syntax, while the double brackets [[ ]] are a more robust solution that allows defining multiple conditions connected by `&&` (and) or `||` (or) operators. The reserved word `then` in bash indicates where to trigger commands if the condition is met.
 
-```
+```bash
 if [ <condition> ]; then
     <COMMANDS>
 fi
@@ -625,7 +625,7 @@ fi
 
 The following can be used as conditions: operators on files, strings comparison, the numerical comparison of iterator to integer value. For more on the comparing conditions and available operators, see section 1.2 of this tutorial.
 
-```
+```bash
 touch file; file=file
 if [ -f $file ]; then echo $file; fi        # execute if $file is a regular file
 
@@ -638,7 +638,7 @@ if [ $num -gt 5 ]; then echo $num; fi       # execute if $num is numerical and g
 
 The above examples prove that the `echo` command is executed when the condition is met. But what if we want to execute another command if the condition is not satisfied? In this case, the syntax should be expanded with additional keywords `elif` and/or `else`. While `elif` can be used multiple times to define further specific conditions, `else` occurs once, always at the end of the syntax just before closing with `fi`. That is because `else` covers all cases not directly provided in condition variants, or in other words, executes a default set of commands in case all conditions are false.
 
-```
+```bash
 num=2
 if [ $num -gt 10 ]; then
   echo "The value "$num" is greater than 10"
@@ -660,7 +660,7 @@ Therefore, analyzing the above example: the elif variant will not return numbers
 </div><br>
 
 **Use the template of if-elif-else-fi conditional**
-```
+```bash
 if [[ <condition(s)> ]]; then
     <COMMANDS>
 elif [[ <condition(s)> ]]; then
@@ -674,7 +674,7 @@ fi
 
 The `continue` statement **terminates the current iteration**, skipping the remaining commands in the current loop (if nested), and passes the execution mode to the next iteration of a current loop. That means no more than **premature termination of the single iteration** in a given loop. Further iterations in this loop, as well as remaining commands in the other loops are not altered by this event.
 
-```
+```bash
 for i in 1 2 3 4 5; do
   if [ $i -eq 2 ]; then
     continue            #--------------- remaining code in this iteration (i=2) will NOT be executed
@@ -690,7 +690,7 @@ done
 
 The `break` statement **terminates the loop** at the current iteration, exactly in the place where the `break` keyword occurs in the block of code. It means that commands remaining in the loop will not be executed, and the **loop will not continue to iterate**. The execution mode will be moved just outside the loop. Thus, the commands following the `done` keyword will further execute.
 
-```
+```bash
 for i in 1 2 3 4 5; do
   if [ $i -gt 2 ]; then
     break               #--------------- remaining code in the FOR loop and IF-ELSE-FI conditional will NOT be executed
@@ -714,7 +714,7 @@ In general, break terminates the loop in which it occurs. If it is an inner loop
 
 Let's terminate the outer loop from the inner loop level:
 
-```
+```bash
 for i in {1..3}; do
   for j in a b c; do
     if [ $j = "c" ]; then
@@ -774,7 +774,7 @@ D. LOCAL: The local variables are temporary by design and they usually exist/are
 
 A. PIPE-linked stream of commands
 
-```
+```bash
 cat file | grep "keyword" | tr '-' ' ' | awk '{print $2,$4,$6}' | sort -nk1 | uniq
 ```
 
@@ -790,7 +790,7 @@ Note that the result of the command stream can be redirected to:<br>
 
 B. Encapsulation in a loop
 
-```
+```bash
 for i in {0..10}; do
     touch file-$i;
 done
@@ -799,7 +799,7 @@ done
 C. Conditional execution of commands
 
 
-```
+```bash
 if [ $variable -gt 5 ]; then
     echo $variable
 else
@@ -811,7 +811,7 @@ D. Various types of outputs
 
 TEXT OUTPUTS
 
-```
+```bash
 k="Hello World!"
 echo $k
 ```
@@ -820,7 +820,7 @@ GRAPHICAL OUTPUTS
 
 Encapsulating Gnuplot script in a bash **for** loop allows for returning image files all at once for multiple inputs.
 
-```
+```bash
 #!/bin/bash
 
 # BASH VARIABLES

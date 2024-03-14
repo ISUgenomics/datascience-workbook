@@ -78,13 +78,13 @@ Jupyter's tools are available in the Python Package Index (PyPI, [https://pypi.o
 
 You can easily install `jupyter` on your local computing machine in the variant of your choice (lab, notebook) or both. You can do a global installation in the default Unix environment or create a virtual environment with Conda (see the {% include target_link href=223 text="Basic developer libraries" %} tutorial in section {% include target_link href=200 text="02: Setting Up Computing Machine" %}) to add more modules specific to your analysis later. Regardless of the chosen environment, the installation is straightforward when using `pip`.
 
-```
+```bash
 pip install jupyterlab
 ```
 
 or (and)
 
-```
+```bash
 pip install notebook
 ```
 
@@ -95,7 +95,7 @@ Launching the jupyter web application is also effortless, you just simply type `
 ### - JupyterLab
 
 <br>Once installed, you can start it from the command line by typing:
-```
+```bash
 jupyter lab
 ```
 
@@ -106,7 +106,7 @@ That will open your Jupyter session in a web browser on **localhost** with a def
 ### - Jupyter Notebook
 
 <br>Once installed, you can start it from the command line by typing:
-```
+```bash
 jupyter notebook
 ```
 

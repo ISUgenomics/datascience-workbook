@@ -24,12 +24,12 @@ In late 2021, **Singularity underwent a rebranding to Apptainer**, changing the 
 
 Before diving into container tasks on HPC infrastructure:
 * ensure you checked the available module using the commands:
-```
+```bash
 module avail apptainer
 module avail singularity
 ```
 * load a module of your choice:
-```
+```bash
 module load apptainer/<version>       # e.g., module load apptainer/1.1.9-py310-wsbt4ge
 ```
 * and consistently use the appropriate keyword for your commands *(in this example: apptainer)*.
@@ -61,7 +61,7 @@ Singularity Recipes have Five main sections
 You can find more information about these sections on the [singularity website](http://singularity.lbl.gov/docs-recipes#environment)
 
 You can bootstrap from existing images either from Docker or Singularity.
-```
+```Dockerfile
 Bootstrap:docker
 From:centos:7
 
@@ -75,7 +75,7 @@ Here is an example where we use a prebuilt singularity container that has spack 
 
 In this example we use the spack base singularity image and build onto it by installing gsnap, bowtie2, bwa, gatk bedtools2, samtools, picard and java.  These installations which can be long and involved are a 3 word command in spack (see %post section below)
 
-```
+```bash
 Bootstrap:shub
 From:ResearchIT/spack-singularity:openmpi
 
@@ -135,15 +135,13 @@ cd $SPACK_ROOT
 
 %runscript
 echo "This container contains a environment and all prequisite programs to run prepare_genome_modules.sh"
-
-
 ```
 
 
 #### Building an image
 If working locally start a singularity VM
 
-```
+```bash
 vagrant init singularityware/singularity-2.4
 vagrant up
 vagrant ssh
@@ -151,7 +149,7 @@ vagrant ssh
 
 Place the example recipe above into a file named recipe then create a singularity image we will call test.simg using the following command.
 
-```
+```bash
 sudo singularity build test.simg recipe
 ```
 
@@ -164,7 +162,7 @@ One of the goals of GitHub is to share code and scripts that we find useful so t
 
 let's start by downloading the example we have used throughout this tutorial.
 
-```
+```bash
 git clone https://github.com/ISUGIFsingularity/utilities.git
 cd utilities
 ls
@@ -185,7 +183,7 @@ The GitHub repo can now be used in the traditional way where you git clone the r
 
 Here is an example bash script wrapper for a singularity execution of a command in a container.  The use of singularity is completely hidden to the user.
 
-```
+```bash
 new_assemblathon
 #!/bin/bash
 

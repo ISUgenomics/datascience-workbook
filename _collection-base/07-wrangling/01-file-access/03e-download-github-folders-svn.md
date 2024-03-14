@@ -46,7 +46,7 @@ Subversion (SVN) is a popular **open-source centralized version control** system
 
 <br><br>
 To get started with SVN, check if it pre-installed on your computing machine, either local one or remote HPC system. In the terminal window type the following command:
-```
+```bash
 svn --version
 ```
 
@@ -95,7 +95,7 @@ brew install svn
 One common use case is to download a single folder from a GitHub repository or other remote repository using the `svn export` command.
 
 **1.** First, navigate to the location in your file system where you want to download. <br> *You can do this by using the `cd` command in your terminal to navigate to the parent folder, and then using the `ls` command to list the contents of the folder.*
-```
+```bash
 cd path/to/destination/location
 ```
 
@@ -106,7 +106,7 @@ cd path/to/destination/location
 
 **3.** Now, go back to the terminal window to download only the selected folder. First, type `svn export` and paste the copied URL.
 
-```
+```bash
 svn export https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data
 ```
 
@@ -118,7 +118,7 @@ svn export https://github.com/ISUgenomics/data_wrangling/trunk/bin_data
 
 **3'.** To make it easier for future use, create an empty script file, e.g., `get_folder.sh` and copy-paste the code snippet:
 
-```
+```bash
 #!/bin/bash
 
 echo "----------------"
@@ -135,12 +135,12 @@ svn export $folder
 ```
 
 Make the script executable:
-```
+```bash
 chmod u+rwx get_folder.sh
 ```
 
 From now on, you do not need to replace keywords in the copy-pasted URL because it will be done automatically using the script. So, to download the folder from the example above, simply type in the command line:
-```
+```bash
 get_folder.sh https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data
 ```
 
@@ -182,7 +182,7 @@ If you need to download a single file from the GitHub repository, the simplest s
 **4.** Open the terminal window and navigate to the desired location in the file system (on a local or remote machine).
 
 **5.** Use the `wget` command followed by the copied URL:
-```
+```bash
 wget https://raw.githubusercontent.com/ISUgenomics/data_wrangling/main/bin_data/app/bin_data.py
 ```
 
@@ -201,7 +201,7 @@ You can use the <b>wget</b> command to download any type of file from online rep
 **Once you have installed SVN, you can use it to download a single file from the GitHub!**
 
 **1.** First, navigate to the location in your file system where you want to download. <br> *You can do this by using the `cd` command in your terminal to navigate to the parent folder, and then using the `ls` command to list the contents of the folder.*
-```
+```bash
 cd path/to/destination/location
 ```
 
@@ -212,19 +212,19 @@ cd path/to/destination/location
 
 **3.** Now, go back to the terminal window to download only the selected file. First, type `svn export` and paste the copied URL.
 
-```
+```bash
 svn export https://github.com/ISUgenomics/data_wrangling/blob/main/bin_data/app/bin_data.py
 ```
 
 Before you execute the command, replace **blob/master** or **blob/main** with **trunk** keyword.
 
-```
+```bash
 svn export https://github.com/ISUgenomics/data_wrangling/trunk/bin_data/app/bin_data.py
 ```
 
 **3'.** To make it easier for future use, create an empty script file, e.g., `get_file.sh` and copy-paste the code snippet:
 
-```
+```bash
 #!/bin/bash
 
 echo "----------------"
@@ -242,12 +242,12 @@ get_GitHub_file.sh (END)
 ```
 
 Make the script executable:
-```
+```bash
 chmod u+rwx get_file.sh
 ```
 
 From now on, you do not need to replace keywords in the copy-pasted URL because it will be done automatically using the script. So, to download the file from the example above, simply type in the command line:
-```
+```bash
 get_file.sh https://github.com/ISUgenomics/data_wrangling/blob/main/bin_data/app/bin_data.py
 ```
 
@@ -295,7 +295,7 @@ So far, the most robust and easiest way to download a single folder from a GitHu
 <p align="center"><img width="800" src="{{ images_path }}/github_in-browser_editor2.gif"></p>
 
 *To decompress the archive, use `unzip` or `tar -xf` command followed by the name of the downloaded file:*
-```
+```bash
 unzip isugenomics-data-wrangling-bin-data.zip
 ```
 

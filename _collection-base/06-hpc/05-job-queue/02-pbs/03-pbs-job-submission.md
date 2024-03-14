@@ -63,7 +63,7 @@ Here are some examples of commonly used directives:
 | `#PBS -d /path/to/working/directory` | specify the working directory where the job will be executed |
 
 Here's an example of how to specify `#PBS` directives in a real-world PBS job script:
-```
+```bash
 #!/bin/bash
 #PBS -N my_job
 #PBS -l nodes=2:ppn=8
@@ -107,7 +107,7 @@ Here's an example of how these environment variables might be used in a PBS job 
 #PBS -q batch
 </code>
 
-```
+```bash
 # USE SOME PBS VARIABLES (if needed)
 
 cd $PBS_O_WORKDIR
@@ -134,7 +134,7 @@ Note, the <b>$PBS_O_WORKDIR</b> environment variable is used to change the curre
 </span>
 </div>
 
-```
+```bash
 cd $PBS_O_WORKDIR
 ```
 *This is a common practice in PBS job scripts, since the working directory of the submission script is typically not the same as the working directory of the job itself. **By changing the working directory to the directory in which the job was submitted**, we ensure that any input files, output files, or other data referenced by the job are located in the correct place.*
@@ -166,7 +166,7 @@ echo "Running on host `hostname`" <br>
 echo "Starting run at: `date`"
 </code>
 
-```
+```bash
 # PROVIDE COMMANDS TO BE EXECUTED
 
 my_command --input data_file.txt --output results.txt --param1 10 --param2 20
@@ -179,13 +179,13 @@ In this example, we're using the `my_command` command to process some data. The 
 # Submit the job
 
 To submit a PBS script to the queue, you can use the qsub command followed by the name of your script.
-```
+```bash
 qsub my_job.pbs
 ```
 *This will submit the job to the default queue, and you should see a message indicating that the job has been submitted, along with a job ID number.*
 
 If you want to submit the job to a specific queue, you can use the `-q` option followed by the name of the queue. For example:
-```
+```bash
 qsub -q my_queue my_job.pbs
 ```
 *This will submit the job to a queue called my_queue.*

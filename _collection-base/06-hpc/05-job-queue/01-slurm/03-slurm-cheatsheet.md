@@ -48,7 +48,7 @@ tags: []
 
 A typical job script will look like this:
 
-```
+```bash
 #!/bin/bash
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=8
@@ -84,7 +84,7 @@ Lines starting with `#SBATCH` are for `SLURM` resource manager to request resour
 
 To start a interactive session execute the following:
 
-```
+```bash
 #this command will give 1 Node for a time of 4 hours
 
 srun -N 1 -t 4:00:00 --pty /bin/bash
@@ -93,7 +93,7 @@ srun -N 1 -t 4:00:00 --pty /bin/bash
 
 You can use slurm database to see how much memory your previous jobs used, e.g. the following command will report requested memory and used residential and virtual memory for job <JOBID>
 
-```
+```bash
 sacct -j <JOBID> --format JobID,Partition,Submit,Start,End,NodeList%40,ReqMem,MaxRSS,MaxRSSNode,MaxRSSTask,MaxVMSize,ExitCode
 
 ```
@@ -101,7 +101,7 @@ sacct -j <JOBID> --format JobID,Partition,Submit,Start,End,NodeList%40,ReqMem,Ma
 ### Aliases that provide useful information parsed from the SLURM commands
 
 Place these alias' into your .bashrc
-```
+```bash
 alias si="sinfo -o \"%20P %5D %14F %8z %10m %10d %11l %16f %N\""
 alias sq="squeue -o \"%8i %12j %4t %10u %20q %20a %10g %20P %10Q %5D %11l %11L %R\""
 ```

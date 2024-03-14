@@ -71,20 +71,20 @@ Open a terminal and paste the command, press enter. The image will be downloaded
 ## Using Docker containers
 Docker can be used through the app or via command line (use any terminal). Open the terminal and enter the following to check the version of docker (and if it installed properly).
 
-```
+```bash
 docker --version
 ```
 
 Run following command to see full list of commands for docker.
 
-```
+```bash
 docker --help
 ```
 
 ### Run Docker container using Singularity
 If you are unable to use Docker, for example you may be on an HPC, you can run Docker containers through Singularity.
 
-```
+```bash
 singularity pull docker://user/image:tag
 ```
 
@@ -115,13 +115,13 @@ I had trouble at container `run` step as it would not run and exit immediately. 
 <br>
 You can also find images and their details including image ID from the terminal. Open a terminal (for example, PowerShell on windows) and enter `docker images` to list all images. To initiate a container enter following:
 
-```
+```bash
 docker run -v path-to-your-blast-files:/data -it image-ID bash
 ```
 
 Add path to your input files and the image-ID, it might look something like:
 
-```
+```bash
 docker run -v C:\Users\abc\Desktop\blast:/data -it eaeed4320e5as0b1d136533f02 bash
 ```
 

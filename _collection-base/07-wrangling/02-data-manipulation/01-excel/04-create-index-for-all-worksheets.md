@@ -30,7 +30,7 @@ Click on `DEVELOPER` and then `Macros`, type in some name (eg. `import_text`), c
 
 Paste the below code on the popped window:
 
-```
+```vb
 Sub CreateLinksToAllSheets()
 Dim sh As Worksheet
 Dim cell As Range
