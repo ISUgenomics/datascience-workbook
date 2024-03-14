@@ -1,7 +1,125 @@
-.no-decoration {
-  text-decoration: none !important;
+/* variables */
+:root {
+  --bc-warning: mistyrose;
+  --bc-protip: #cff4fc;
+  --bc-note: #dff5b3;
+  --bc-example: #FFFACD;
+  --bc-exercise: #ffd7b5;
+  --c-boxdark: #2a4960;
+  --c-announce: #ff3870;
+  --c-warning: #e84b4b;
+  --c-protip: #5790c4;
+  --c-note: #1bba6e;
+  --c-example: #ffbb00;
+  --c-exercise: #EC8000;
 }
 
+
+/* resource wide*/
+.no-decoration {text-decoration: none !important;}
+
+.warning, .protip, .note, .example, .exercise {
+  margin: 0.5em 0 1.8em 0;
+  padding: 0.8em 1em;
+  font-size: 0.8em;
+  color: var(--c-boxdark);
+}
+.warning {background-color: var(--bc-warning);}
+.protip {background-color: var(--bc-protip);}
+.note {background-color: var(--bc-note);}
+.example {background-color: var(--bc-example);}
+.exercise {background-color: var(--bc-exercise);}
+
+.warning::before, .protip::before, .note::before, .example::before, .exercise::before {
+  font-weight: bold;
+  font-size: 1.1em;
+  display: block;
+  margin-bottom: 0.2em;
+}
+.warning::before {content: "WARNING"; color: var(--c-warning);}
+.protip::before {content: "PRO TIP"; color: var(--c-protip);}
+.note::before {content: "NOTE"; color: var(--c-note);}
+.example::before {content: "EXAMPLE"; color: var(--c-example);}
+.exercise::before {content: "EXERCISE"; color: var(--c-exercise);}
+
+.warning p, .protip p, .note p, .example p, .exercise p {margin-block-end: 0em !important;}
+.warning ul, .protip ul, .note ul, .example ul, .exercise ul {margin-block-start: 0.1em; margin-block-end: 0em !important;}
+
+
+
+.code-inline {
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  padding: 0.1rem 0.3rem;
+  font-size: .75em;
+  background: #fafafa;
+  border-radius: 4px;
+}
+
+.code-block {
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  font-size: .75em;
+  margin: 0;
+  padding: 1em 1em;
+  background-color: #f8f8f8;
+}
+
+.li-level-1 {
+  margin-left: 2.8em;
+  padding: 1em 1em;
+}
+
+.li-level-2 {
+  margin-left: 2.8em;
+  padding: 1em 0;
+}
+
+
+/* resource-wide: styles for custom target links */
+.wrapper {
+  margin-bottom: 0 !important;
+  display: inline !important;;
+}
+.wrapper-link {
+  display: inline !important;
+}
+.inline {display: inline !important;}
+
+.target-link {
+  text-decoration: none !important;
+}
+/*.target-link::before {
+  content: "\00a0";
+}
+.target-link::after {
+  content: "\00a0";
+}*/
+.target-link-btn {
+  background-color: #e7e7e7;
+  color: black;
+}
+
+
+/* collection-wide: linked path to the root of the section (at the top of each tutorial) */
+.page-sourcing {
+  font-size: 0.8em !important;
+}
+
+/* collection-wide: semi-transparent button in the right corner of the footer with tutorial order number */
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+#copyOrderBtn {
+  font-size: 0.6em;
+  color: #e8e9e8;
+  border: 1px solid #e8e9e8;
+  background-color: transparent;
+  padding: 0 10px;
+}
+
+
+/* _pages: sitemap */
 .toc-type {
   text-decoration: none !important;
   text-transform: uppercase !important;
@@ -28,7 +146,6 @@ toc-note {
 .tutorial {background-color: #dff5b3;}
 .cheatsheet {background-color: #FFFACD;}
 
-
 .prefix-0 {
   font-weight: 750;
   font-size: 1.5em;
@@ -53,7 +170,6 @@ toc-note {
   margin-left: 64px;
   color: #3f5a8a;
 }
-
 
 .collapsible {
   background-color: #e8e9e8;
@@ -85,74 +201,4 @@ toc-note {
 }
 .content a:visited {
   color: #52adc8;
-}
-
-/* collection-wide: linked path to the root of the section (at the top of each tutorial) */
-.page-sourcing {
-  font-size: 0.8em !important;
-}
-
-/* resource-wide: styles for custom target links */
-.wrapper {
-  margin-bottom: 0 !important;
-  display: inline !important;;
-}
-.wrapper-link {
-  display: inline !important;
-}
-.inline {display: inline !important;}
-
-.target-link {
-  text-decoration: none !important;
-}
-/*.target-link::before {
-  content: "\00a0";
-}
-.target-link::after {
-  content: "\00a0";
-}*/
-.target-link-btn {
-  background-color: #e7e7e7;
-  color: black;
-}
-
-
-/* collection-wide: semi-transparent button in the right corner of the footer with tutorial order number */
-.footer-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-#copyOrderBtn {
-  font-size: 0.6em;
-  color: #e8e9e8;
-  border: 1px solid #e8e9e8;
-  background-color: transparent;
-  padding: 0 10px;
-}
-
-.code-inline {
-  font-family: Monaco, Consolas, "Lucida Console", monospace;
-  padding: 0.1rem 0.3rem;
-  font-size: .75em;
-  background: #fafafa;
-  border-radius: 4px;
-}
-
-.code-block {
-  font-family: Monaco, Consolas, "Lucida Console", monospace;
-  font-size: .75em;
-  margin: 0;
-  padding: 1em 1em;
-  background-color: #f8f8f8;
-}
-
-.li-level-1 {
-  margin-left: 2.8em;
-  padding: 1em 1em;
-}
-
-.li-level-2 {
-  margin-left: 2.8em;
-  padding: 1em 0;
 }
