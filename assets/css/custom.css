@@ -100,16 +100,17 @@ toc-note {
 .wrapper-link {
   display: inline !important;
 }
+.inline {display: inline !important;}
 
 .target-link {
   text-decoration: none !important;
 }
-.target-link::before {
+/*.target-link::before {
   content: "\00a0";
 }
 .target-link::after {
   content: "\00a0";
-}
+}*/
 .target-link-btn {
   background-color: #e7e7e7;
   color: black;
