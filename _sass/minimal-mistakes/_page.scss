@@ -98,6 +98,8 @@
     }
   }
 
+  a {text-decoration: none;}
+
   a:not(.btn) {
     &:hover {
       text-decoration: underline;
