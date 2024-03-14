@@ -58,12 +58,9 @@ In Linux you can start a terminal session by clicking on the black square icon *
 ![Linux Terminal]({{ images_path }}/terminalLin.png)
 
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-The window can be resized with the mouse and the font text can be increased by pressing `cmd +` or `ctrl +` on Mac or Windows/Linux, respectively.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+*The window can be resized with the mouse and the font text can be increased by pressing* `cmd +` *or* `ctrl +` *on Mac or Windows/Linux, respectively.*
+</div>
 
 
 # Terminal Basics
@@ -148,12 +145,9 @@ To check if the hidden file exists, type in the terminal window:
 ls -a ~
 ```
 
-<div style="background: mistyrose; padding: 15px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Note that <b>~</b> refers to the $HOME of a given user and <b>/</b> refers to the root directory in the file system! <br>You can replace it with a path to any location.
-</span>
-</div><br>
+<div class="warning" markdown="1">
+*Note that* `~` *refers to the* `$HOME` *of a given user and* `/` *refers to the root directory in the file system! <br> You can **replace it with a path** to any location.*
+</div>
 
 Then, you should find on your screen a bunch of files starting with a dot, such as `.bashrc`, `.bash_profile`, and `.bash_history`.
 

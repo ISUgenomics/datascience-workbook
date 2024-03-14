@@ -37,12 +37,9 @@ The main difference between using **Linux** and Windows/Mac is that you use the 
 ![CLI vs GUI]({{ images_path }}/cli_vs_gui_enhanced.png)
 **Figure 2.** *In the graphical user interface (GUI, on the left), you use a mouse to navigate the file system and execute applications by clicking, while in the command-line interface (CLI, on the right), you type text-like commands on your keyboard to do the same (and much more!).*
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-In the terminal, get used to using only the keyboard and abandon the use of the mouse.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+*In the terminal, get used to using only the keyboard and abandon the use of the mouse.*
+</div>
 
 ## Keyboard shortcuts
 
@@ -90,12 +87,9 @@ Below is a list of handy keyboard shortcuts to make it easier for you to switch 
 |ctrl + O    |cmd + O     |open||
 
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-More shortcuts for specific version of macOS you can find at <a href="https://support.apple.com/guide/terminal/keyboard-shortcuts-trmlshtcts/mac">Apple support page</a>.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+*More shortcuts for specific version of macOS you can find at <a href="https://support.apple.com/guide/terminal/keyboard-shortcuts-trmlshtcts/mac" target="_blank">Apple support page</a>.*
+</div>
 
 ___
 
@@ -176,23 +170,18 @@ Thus, your `HOME` directory is accessible on the path:
 * `/Users/{username}` for Mac operating system
 * `\Users\{username}` for Windows operating system
 
-<div style="background: mistyrose; padding: 15px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Note that backslash is used on Windows!
-</span>
-</div><br>
+<div class="warning" markdown="1">
+*Note that backslash is used on Windows!*
+</div>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Few more tips on how to navigate into the HOME or root directories:
-<br>
-cd &nbsp;/ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;# navigates you into the ROOT directory <br>
-cd ~ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;# navigates you into the HOME directory <br>
-cd .. &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;# navigates you UP one directory level
-</span>
-</div><br>
+<div class="protip" markdown="1">
+*Few more tips on how to navigate into the HOME or root directories:*
+```bash
+cd /           # navigates you into the ROOT directory
+cd ~           # navigates you into the $HOME directory
+cd ..          # navigates you UP one directory level
+```
+</div>
 
 The table below shows the structure of a file system for various operating systems. $HOME corresponds to the directory called with custom {username} (*i.e.,  value of $USER variable*). The configuration of the Unix shell can be adjusted in the hidden ***.bashrc*** file.
 
@@ -211,12 +200,9 @@ As you can see in Table above, the $HOME folder contains several built-in subdir
 
 On a private computer, subdirectories with projects and data are usually created directly in $HOME. However, on shared computing infrastructures such as HPC clusters, the amount of memory allocated to a user in HOME is limited (e.g., 5GB quota). Thus, recommendation says to keep only configuration files and important installations there. The project data, virtual environments and specific software are stored in another location, referred to as a **working space**. Usually this is another directory located directly in ROOT, for example `/work` or `/project`. There, subdirectories are created for individual research groups or collaborative projects, to which specific user groups have access. Such organization on the computing infrastructure allows to keep order and optimize the use of resources, for example, by reducing the redundancy of files on which several users work concurrently.
 
-<div style="background: mistyrose; padding: 15px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Note that on most HPC infrastructures, including HPC@ISU and SCINet, queuing jobs that <b>write outputs to the $HOME directory is prohibited</b>! Instead, use the path <b>/work/{group}/{user}</b> on ISU and <b>/project/{group}</b> or <b>/90daysdata/</b> on SCINet clusters.
-</span>
-</div><br>
+<div class="warning" markdown="1">
+*Note that on most HPC infrastructures, including HPC@ISU and SCINet, queuing jobs that* <br> ***write outputs to the*** `$HOME` ***directory is prohibited!*** <br> *Instead, use the path* `/work/{group}/{user}` *on ISU and* `/project/{group}` *or* `/90daysdata/` *on SCINet clusters.*
+</div>
 
 
 ## 2.3 Good practices for HOME organization
@@ -234,12 +220,9 @@ Once you access the file system using terminal window or command prompt, the set
 ls -a ~
 ```
 
-<div style="background: mistyrose; padding: 15px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Note that <b>~</b> refers to the $HOME of a given user.
-</span>
-</div><br>
+<div class="warning" markdown="1">
+*Note that* `~` *refers to the* `$HOME` *of a given user.*
+</div>
 
 Then, you should find `.bashrc` and `.bash_profile`on your screen.
 
@@ -252,15 +235,17 @@ less ~/.bashrc
 less ~/.bash_profile
 ```
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-To print the contents of a file on the screen use <b>cat</b> command: <br>
-cat ~/.bashrc <br><br>
-To edit a file in the terminal use text editor such as <b>nano, vim</b> or <b>mcedit</b>: <br>
+<div class="protip" markdown="1">
+*To print the contents of a file on the screen use* `cat` *command:*
+```bash
+cat ~/.bashrc
+```
+<br>
+*To edit a file in the terminal use text editor such as* `nano`, `vim` *or* `mcedit`:
+```bash
 nano ~/.bashrc
-</span>
-</div><br>
+```
+</div>
 
 ## 3.1 ***.bashrc*** & ***.bash_profile***
 
@@ -274,16 +259,13 @@ source ~/.bash_profile
 
 By *activate*, I mean applaying to the current environment the changed values of the shell variables, loading new modules, adding new aliases to the list of known commands, etc.
 
-<div style="background: mistyrose; padding: 15px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-So remember, changes made to <b>.bashrc</b> and <b>.bash_profile</b> files will NOT be visible in the Unix shell (e.g., newly added variable will be unrecognized) until you activate the changes with the <b>source</b> command. That will refresh the current shell environment.
-</span>
-</div><br>
+<div class="warning" markdown="1">
+*So remember, changes made to* `.bashrc` *and* `.bash_profile` *files will NOT be visible in the Unix shell (e.g., newly added variable will be unrecognized) until you activate the changes with the* `source` *command. That will refresh the current shell environment.*
+</div>
 
 So what really makes **.bashrc** different from **.bash_profile**?
 
-Well, the **~/.bash_profile is loaded once**, just after opening the terminal on the local machine or logging into the remote infrastructure. Whereas **~/.bashrc** is read each time you start bash as an interactive shell (e.g., open new tab in the terminal). Thus, it is responsible for **the default settings** of your shell at the start. So, **if you want to always** have a certain prompt appearance or always load a bunch of modules at startup or be able to effortlessly call executable programs from a given path, **specify these rules in .bashrc**. Then, append the syntax provided below to your ~/.bash_profile. It will force the execution of ~/.bashrc in the scenario when ~/.bash_profile is called.
+Well, the `~/.bash_profile` **is loaded once**, just after opening the terminal on the local machine or logging into the remote infrastructure. Whereas `~/.bashrc` **is read each time** you start bash as an interactive shell (e.g., open new tab in the terminal). Thus, it is responsible for **the default settings** of your shell at the start. So, **if you want to always** have a certain prompt appearance or always load a bunch of modules at startup or be able to effortlessly call executable programs from a given path, **specify these rules in .bashrc**. Then, append the syntax provided below to your `~/.bash_profile`. It will force the execution of `~/.bashrc` in the scenario when `~/.bash_profile` is called.
 
 ```bash
 if [ -f ~/.bashrc ]; then
@@ -421,16 +403,14 @@ LS_COLORS='rs=0:di=1;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd
 alias ls='ls --color=auto'
 ```
 
-^ *the `alias` line will apply autocoloring when calling the default `ls` command. More about aliases you can learn in the next section of this tutorial.*
+^ *the* `alias` *line will apply auto-coloring when calling the default* `ls` *command. More about aliases you can learn in the next section of this tutorial.*
 
-<div style="background: mistyrose; padding: 15px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Do NOT forget to apply the changes to the current environemnt! Type on the command line:<br>
------------------<br>
+<div class="warning" markdown="1">
+***Do NOT forget to apply the changes to the current environment!*** *Type on the command line:*
+```bash
 source ~/.bashrc
-</span>
-</div><br>
+```
+</div>
 
 
 Let's see the differences between a machine with default settings (top) and one with color customization for the user (bottom). The comfort of working in a customized terminal is much greater!
@@ -488,12 +468,9 @@ Adding aliases can be useful for:
 * maintaining a complex syntax of commands combined in a stream, for example, to routinely parse a certain type of text files from your analysis
 * changing the development environment, such as switching the Conda distribution between Intel's x86 and the M1's ARM architecture on MacBook Pro
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Keeping your <b>.bashrc</b> neatly organized will bring you convenience, especially when you want to change something after a long time. Therefore, it is suggested that you create <b>a separate section in this file for all the ALIASES</b> you will add over time. It is best to give this section a highly visible header. As a reminder, <b>#</b> is a comment character in the bash shell.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+*Keeping your* `.bashrc` *neatly organized will bring you convenience, especially when you want to change something after a long time. Therefore, it is suggested that you create* ***a separate section in this file for all the ALIASES*** *you will add over time. It is best to give this section a highly visible header. As a reminder,* `#` *is a comment character in the bash shell.*
+</div>
 
 Below, you can find examples of some useful aliases that should be copy-paste into your `~/.bashrc` file.
 
@@ -515,12 +492,9 @@ alias source_condaX86="source /Users/$USER/Library/Miniforge3_x86/bin/activate"
 alias source_conda="source /Users/$USER/Library/Miniforge3/bin/activate"
 ```
 
-<div style="background: mistyrose; padding: 15px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-While the temptation is high, you must <b>NOT create aliases to store passwords</b> in this way. Doing so would be a serious threat not only to your privacy, but also a significant security risk to the entire HPC infrastructure and all users.
-</span>
-</div><br>
+<div class="warning" markdown="1">
+*While the temptation is high, you must* ***NOT create aliases to store passwords*** *in this way. Doing so would be a serious threat not only to your privacy, but also a significant security risk to the entire HPC infrastructure and all users.*
+</div>
 
 
 ## 3.5 Load modules
@@ -549,22 +523,12 @@ In case you want to always start your Bash shell session with a specific module 
 module load python/3.9.2
 ```
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Keeping your <b>.bashrc</b> neatly organized will bring you convenience, especially when you want to change something after a long time. Therefore, it is suggested that you create <b>a separate section in this file for all the MODULES</b> you will add over time. It is best to give this section a highly visible header. As a reminder, <b>#</b> is a comment character in the bash shell.
-</span>
-</div><br>
-
-<div style="background: mistyrose; padding: 15px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Prudence lies in moderation. So do NOT add modules used infrequently or only in a specific pipeline to your ~/.bashrc. Watch out for this, especially on a computing cluster, where the resources allocated for your $HOME are often severely limited.<br><br>
-
-<b>So, how can you keep the organizations of the modules necessary for analyses?</b><br>
-The answer comes from virtual environments. You can create a new environment for a particular analysis and within it manage the list of necessary modules. <b>For python-based environments, Conda will provide you with assistance.</b> You can learn more by following the tutorial in section 3 of the workbook, Setting Up Computing Machine -> Must-Have Software -> {% include target_link href=223 text="Basic Developer Libraries." %}
-</span>
-</div><br>
+<div class="warning" markdown="1">
+*Prudence lies in moderation. So do NOT add modules used infrequently or only in a specific pipeline to your* `~/.bashrc`*. Watch out for this, especially on a computing cluster, where the resources allocated for your* `$HOME` *are often severely limited.*
+<br><br>
+***So, how can you keep the organizations of the modules necessary for analyses?*** <br>
+*The answer comes from virtual environments. You can create a new environment for a particular analysis and within it manage the list of necessary modules.* ***For python-based environments, Conda will provide you with assistance.*** *You can learn more by following the tutorial in section Setting Up Computing Machine:* {% include target_link href=223 text="<b>Basic Developer Libraries</b>" %}
+</div>
 
 
 ## 3.6 Export $PATH and more
@@ -591,13 +555,9 @@ export PATH="$HOME/bin:$PATH"
 
 That means you just added a new location in the file system at the beginning of a previous state of the string being a value of the $PATH variable.
 
-
-
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-With the <b>export</b> command you can overwrite or update the value of any environment variable in the Unix shell. <br>
-For example, directly from the command line you can change the number of commands saved in the Bash shell history: <br>-----------------------<br>
+<div class="protip" markdown="1">
+*With the* `export` *command you can overwrite or update the value of any environment variable in the Unix shell. For example, directly from the command line you can change the number of commands saved in the Bash shell history:*
+```bash
 export HISTSIZE=300
-</span>
-</div><br>
+```
+</div>

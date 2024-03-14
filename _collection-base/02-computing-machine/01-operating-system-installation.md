@@ -40,19 +40,17 @@ Some common examples of operating systems include:
 
 Each operating system has its own set of features and functions and is designed to work with specific types of hardware. For example, Windows and macOS are typically used on personal computers and laptops, Linux is used on high-performance computing clusters, while iOS is used on iPhones and iPads.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-<b>Linux</b> is open-source operating system, <b>free to download and use</b>, which makes it an attractive option for individuals and organizations on a budget. Here are some of the benefits of using Linux: <br>
-<li><b>cost</b>, Linux is free to download and use</li>
-<li><b>security</b>, Linux is generally considered to be more secure than other operating systems, as it is less vulnerable to malware and other security threats</li>
-<li><b>performance</b>, Linux is known for its high performance, with a lightweight kernel and a minimalistic design that allows it to run efficiently on a wide range of hardware</li>
-<li><b>compatibility</b>, Linux is compatible with a wide range of hardware, including x86, x86-64, ARM, and MIPS architectures</li>
-<li><b>reliability</b>, Linux is a stable and reliable operating system that is designed to run smoothly even under heavy workloads</li>
-<li><b>customizability</b>, Linux is known for its high level of customization, with a wide range of distributions (versions) available that cater to different users and use cases</li>
-<li><b>community</b>, Linux has a large and active community of users and developers who contribute to the development and improvement of the operating system</li>
-</span>
-</div><br>
+<div class="protip" markdown="1">
+***Linux*** *is open-source operating system, **free to download and use**, which makes it an attractive option for individuals and organizations on a budget. <br>Here are some benefits of using Linux:*
+* **cost**, Linux is free to download and use
+* **security**, Linux is generally considered to be more secure than other operating systems, as it is less vulnerable to malware and other security threats
+* **performance**, Linux is known for its high performance, with a lightweight kernel and a minimalistic design that allows it to run efficiently on a wide range of hardware
+* **compatibility**, Linux is compatible with a wide range of hardware, including x86, x86-64, ARM, and MIPS architectures
+* **reliability**, Linux is a stable and reliable operating system that is designed to run smoothly even under heavy workloads
+* **customizability**, Linux is known for its high level of customization, with a wide range of distributions (versions) available that cater to different users and use cases
+* **community**, Linux has a large and active community of users and developers who contribute to the development and improvement of the operating system
+</div>
+
 
 **Select any of 20 popular Linux distributions:**
 
@@ -80,11 +78,8 @@ There are a few situations where you might want to consider reinstalling your op
 
 5. If you are experiencing problems with your operating system, such as system crashes or error messages, and other troubleshooting steps have not been successful, reinstalling the operating system may help fix these problems.
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Before you reinstall your operating system, it is important to back up any important data and documents that you do not want to lose. Reinstalling the operating system will erase all data on the hard drive, so it is important to make sure you have a copy of your important files.
-</span>
+<div class="warning" markdown="1">
+*Before you reinstall your operating system, it is important to back up any important data and documents that you do not want to lose. Reinstalling the operating system will erase all data on the hard drive, so it is important to make sure you have a copy of your important files.*
 </div>
 
 
@@ -105,11 +100,8 @@ Installing any operating system (OS) on a computer is a process that typically i
 6. Once the installation is complete, remove the installation media and restart your computer. The operating system should now be installed on your computer and you should be able to boot into it.
 
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-The exact steps for installing an operating system may vary depending on the specific operating system you are installing and the type of computer you are using. It is always a good idea to consult the documentation for the operating system and your computer for specific instructions.
-</span>
+<div class="protip" markdown="1">
+*The exact steps for installing an operating system may vary depending on the specific operating system you are installing and the type of computer you are using. It is always a good idea to consult the documentation for the operating system and your computer for specific instructions.*
 </div>
 
 
