@@ -166,8 +166,9 @@ a > code,
 li > code,
 figcaption > code,
 td > code {
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
+  padding: 0.1rem;
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
   font-size: $type-size-6;
   background: $code-background-color;
   border-radius: $border-radius;
