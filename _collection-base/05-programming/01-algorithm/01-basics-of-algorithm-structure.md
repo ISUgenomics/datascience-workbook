@@ -33,14 +33,11 @@ It's also important to write the code in a structured and organized manner. This
 
 **Creating algorithms is important regardless of programming language** because algorithms are the foundation of any software development project. Even simple Bash scripts, which are used to automate tasks in a Unix-based operating system, rely on algorithms to perform their intended tasks.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-Algorithms are essentially a set of logical tep-by-step instructions that a computer program follows to solve a particular problem or perform a specific task. They're used to process data, perform calculations, and automate repetitive tasks.
-</span>
-</div><br>
+<div class="note" markdown="1">
+Algorithms are essentially a set of logical step-by-step instructions that a computer program follows to solve a particular problem or perform a specific task. They're used to process data, perform calculations, and automate repetitive tasks.
+</div>
 
-Algorithms are important because they allow us to automate tasks, perform calculations quickly and accurately, and process large amounts of data efficiently. They're used in a wide range of applications, including tasks in varous research projects.
+Algorithms are important because they allow us to automate tasks, perform calculations quickly and accurately, and process large amounts of data efficiently. They're used in a wide range of applications, including tasks in various research projects.
 
 
 ## Basic terminology
@@ -88,12 +85,9 @@ Flowcharts use specific symbols to represent different elements of the algorithm
 * a diamond is used to represent a decision point, and
 * an oval is used to represent the start or end of the algorithm.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-<b>Flowcharts can be a useful tool for visualizing and communicating the structure of an algorithm</b>, especially for more complex algorithms. By using a flowchart, we can easily see the order in which steps are executed, where decisions are made, and what the inputs and outputs are.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+**Flowcharts can be a useful tool for visualizing and communicating the structure of an algorithm**, especially for more complex algorithms. By using a flowchart, we can easily see the order in which steps are executed, where decisions are made, and what the inputs and outputs are.
+</div>
 
 
 ## Algorithm's pseudocode
@@ -102,12 +96,9 @@ Flowcharts use specific symbols to represent different elements of the algorithm
 
 One common way to represent algorithm's structure is by using pseudocode. **Pseudocode is a way of writing out an algorithm in plain language**, using specific keywords and syntax to indicate different parts of the algorithm.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
+<div class="note" markdown="1">
 The syntax of the pseudocode is designed to be easy to read and understand, without being tied to any specific programming language.
-</span>
-</div><br>
+</div>
 
 Here's an example of pseudocode for the rectangle example algorithm:
 ```yml
@@ -121,19 +112,13 @@ End
 ```
 *In this pseudocode, we first define the inputs (length and width) and initialize the area variable to 0. Then, we move on to the processing step, where we calculate the area by multiplying the length and width. Finally, we output the result (the area) and end the algorithm.*
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Note that the specific <b>syntax of pseudocode can vary</b> depending on the context and individual preference. <b>The goal is to provide a clear and structured outline of the algorithm's logic</b>, rather than to conform to a specific programming language's syntax.
-</span>
+<div class="warning" markdown="1">
+Note that the specific <u>syntax of pseudocode can vary</u> depending on the context and individual preference. **The goal is to provide a clear and structured outline of the algorithm's logic**, rather than to conform to a specific programming language's syntax.
 </div>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-<b>Pseudocode is often used in the early stages of algorithm development</b>, as a way of outlining the basic structure of the algorithm before translating it into a specific programming language. By using pseudocode, we can <b>focus on the logic of the algorithm</b> without worrying about a specific programming language's syntax.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+**Pseudocode is often used in the early stages of algorithm development**, as a way of outlining the basic structure of the algorithm before translating it into a specific programming language. By using `pseudocode`, we can **focus on the logic of the algorithm** without worrying about a specific programming language's syntax.
+</div>
 
 
 ## Control structure
@@ -146,12 +131,9 @@ In addition to the basic `input`-`processing`-`output` structure, algorithms oft
 
 `Conditional statements` and `loops` are two examples of control structures that are commonly used in algorithms.
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-When you're creating algorithms, it's important to remember that <b>different programming languages have different syntax and available elements of the algorithm's structure</b>. For example, the syntax for loops and conditional statements in Bash may be different from that in Python or R.
-</span>
-</div><br>
+<div class="warning" markdown="1">
+When you're creating algorithms, it's important to remember that **different programming languages have different** `syntax` **and available elements of the algorithm's structure**. For example, the syntax for loops and conditional statements in `Bash` may be different from that in `Python` or `R`.
+</div>
 
 <span style="color: #ff3870;font-weight: 500;">To learn more about the syntax of various programming languages and the different elements of algorithm structure, consider visiting tutorials:</span>
 * {% include target_link href=521 text="Introduction to Bash scripting" %}
@@ -166,12 +148,11 @@ When you're creating algorithms, it's important to remember that <b>different pr
 
 Conditional statements allow an algorithm to **perform different actions based on whether a certain condition is *true* or *false***. In programming, conditional statements are often written using the keywords `if`, `else if`, and `else`.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-The <b>if</b> statement is followed by a block of code to be executed if the condition is true. The <b>else if</b> statement allows for additional conditions to be checked, followed by a block of code to be executed if that condition is true. Finally, the <b>else</b> statement provides a default option to be <b>executed if none of the previous conditions are true</b>.
-</span>
-</div><br>
+<div class="note" markdown="1">
+The `if` statement is followed by a block of code to be executed if the condition is true. <br>
+The `else if` statement allows for additional conditions to be checked, followed by a block of code to be executed if that condition is true. <br>
+Finally, the `else` statement provides a default option to be executed if none of the previous conditions are true.
+</div>
 
 Here's an example of `pseudocode` for a conditional statement:
 ```yml
@@ -216,13 +197,10 @@ else:
 <details><summary><b>What code in Python does?</b></summary>
 
 In this Python code, we first initialize the variable <b>num</b> to be equal to 5. The conditional statement <b><i>if</i></b> checks if the remainder of num divided by 2 is equal to 0 (i.e. whether <b>num</b> is even). If it is, the program outputs "5 is even". Otherwise, the <b>else</b> condition is executed and it outputs "5 is odd". <br>
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-In Python, the syntax for conditional statements is <b>if</b> followed by the condition, a colon, and a block of indented code to be executed if the condition is true. The <b>else</b> statement provides a block of code to be executed if the condition is false.
-</span>
+<div class="protip" markdown="1">
+In Python, the syntax for conditional statements is `if` followed by the condition, a colon, and a block of indented code to be executed if the condition is **true**. The `else` statement provides a block of code to be executed if the condition is **false**.
 </div>
-</details><br>
+</details>
 
 ### *Loops*
 
@@ -282,14 +260,11 @@ End
 ```
 *In this example, we first initialize the variable "i" to 10. Then, we enter a while loop, which continues as long as "i" is greater than 0. Inside the loop, we first print the value of "i", and then subtract 1 from "i". This process continues until "i" is no longer greater than 0, at which point the loop ends and the algorithm finishes.*
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-The <b>while loop</b> in this example is useful because it <b>allows us to repeat a certain action</b> (printing the value of "i") <b>as many times as necessary</b> (until "i" is no longer greater than 0). By controlling the flow of the algorithm in this way, we can <b>create more powerful and versatile programs</b> that can handle a wider range of situations.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+The `while` **loop** in this example is useful because it **allows us to repeat a certain action** (printing the value of `i`) **as many times as necessary** (until `i` is no longer greater than 0). By controlling the flow of the algorithm in this way, we can <u>create more powerful and versatile programs</u> that can handle a wider range of situations.
+</div>
 
-Below you can explore the executable code written in 1) Bash and 2) Python, based on the pseudocode of the algorithm.
+Below you can explore the executable code written in 1) `Bash` and 2) `Python`, based on the pseudocode of the algorithm.
 
 **1)** `code in Bash`
 ```bash
@@ -439,14 +414,11 @@ Algorithm:
 5. Return r as the output.
 ```
 **EXPLANATION:** <br>
-The above pseudocode assumes a 0-indexed string, meaning the first character of the string is at index 0. If your string is 1-indexed (i.e., the first character is at index 1), then you'll need to adjust the loop accordingly by starting at len and ending at 1 with a step size of -1.
+The above pseudocode assumes a `0-indexed` string, meaning the first character of the string is at index 0. If your string is `1-indexed` *(i.e., the first character is at index 1)*, then you'll need to adjust the loop accordingly by starting at `len` and ending at `1` with a step size of `-1`.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-Pseudocode is a high-level description of a computer program that uses a mix of natural language and structured programming language-like syntax. Pseudocode can be more descriptive using text, where it provides detailed explanations of each step, or more like a template of the code, where it resembles actual programming code without adhering to a specific programming language's syntax.
-</span>
-</div><br>
+<div class="note" markdown="1">
+Pseudocode is a high-level description of a computer program that uses a mix of natural language and structured programming language-like syntax. `Pseudocode` **can be more descriptive using text**, where it provides detailed explanations of each step, or more like a <u>template of the code</u>, where it resembles actual programming code without adhering to a specific programming language's syntax.
+</div>
 
 <span style="color: #ff3870;font-weight: 500;">Transforming the descriptive pseudocode from this example to code-like pseudocode can be a great exercise to help you understand how to translate an algorithm's logic into actual code.</span> <br>
 *So, I encourage you to take the descriptive pseudocode from the example and try to transform it into code-like pseudocode. This will not only help you understand the algorithm's logic better but also give you practice in translating that logic into actual code.*

@@ -272,22 +272,16 @@ done
 
 ![terminal colors]({{ images_path }}/02_bash_for_loop_script.png)<br>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-In some intra-terminal text editors such as <b>mcedit</b> (part of the midnight commander package), individual components of bash syntax are highlighted in different colors, making it easier to follow the correctness of the code.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+In some intra-terminal text editors such as `mcedit` (part of the `midnight commander` package), individual components of **bash syntax** are highlighted in different colors, making it easier to follow the correctness of the code.
+</div>
 
 The `for, in, do, done` are fixed bash statement elements, performing specific functions that are interpreted by the Unix shell *(for details see table above)*. The word or character occurring between `for` and `in` is a user-provided variable that specifies the name of the iterator. Usually it is the letter ***i***, but it can be any string, which will specify the type of iterated values. In successive loop cycles *(iterations)*, the iterator takes the next value from the array and executes for it the commands contained in the `do ... done` code block.
 
-<div style="background: mistyrose; padding: 15px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Avoid naming iterators and other variables with a single character since there are a finite number of letters. Overriding the iterator value inside the loop could result in algorithm failure.<br>
-<b>Note:</b> The more meaningful the iterator name reflecting the type of items, the better readable the code for other programmers.
-</span>
-</div><br>
+<div class="warning" markdown="1">
+Avoid naming `iterators` and other `variables` with a single character since there are a finite number of letters. Overriding the iterator value inside the loop could result in algorithm failure.<br>
+**Note:** The more meaningful the `iterator` name reflecting the `type` of items, the better readable the code for other programmers.
+</div>
 
 You can also use **FOR** loop syntax directly in the command line as a one-liner, to see the result immediately:
 
@@ -297,12 +291,9 @@ for item in {first,second,third,fourth,fifth}; do echo $item; done
 
 ![terminal colors]({{ images_path }}/02_bash_for_loop_inline.png)<br>
 
-<div style="background: mistyrose; padding: 15px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Remember to always separate consecutive statement elements with a semicolon <b>;</b> in single-line syntax.
-</span>
-</div><br>
+<div class="warning" markdown="1">
+Remember to always separate consecutive statement elements with a semicolon `;` <u>in single-line syntax</u>.
+</div>
 
 
 
@@ -335,13 +326,10 @@ for item in {1..5}; do
     echo  $item
 done
 ```
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-You can add a step as a third argument to the array syntax, e.g., <b>{1..10..2}</b> to iterate over odd numbers.<br>
-You can replace explicit integers with variables, e.g., {$START..$END..$STEP}. Note, however, that you must define them in advance and assign them a value before usage.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+You can add a **step** as a third argument to the array syntax, e.g., `{1..10..2}` to iterate over odd numbers. <base class="mb">
+You can replace explicit integers with **variables**, e.g., `{$START..$END..$STEP}`. Note, however, that you must define them in advance and assign them a value before usage.
+</div>
 
 *E. Iterate over integers generated automatically using sequence:*
 ```bash
@@ -349,12 +337,9 @@ for item in `seq 1 1 10`; do
     echo  $item
 done
 ```
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-The syntax for generating integers in a sequence is 'seq START STEP END' or $(seq START STEP END). If your step is equal to one, you can skip the middle argument.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+The syntax for generating integers in a sequence is `seq START STEP END` or `$(seq START STEP END)`. <br> If your step is equal to one, you can skip the middle argument.
+</div>
 
 *F. Iterate over integers generated automatically using incrementation:*
 ```bash
@@ -363,12 +348,9 @@ for ((item=1;item<=5;item++)); do
 done
 ```
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-You can start with a large intiger and count down using the decrementing ( item-- ).
-</span>
-</div><br>
+<div class="protip" markdown="1">
+You can start with a large integer and count down <u>using the decrementing</u> ( `item--` ).
+</div>
 
 *G. Iterate over any items stored in the one-column file:*
 ```bash
@@ -376,12 +358,10 @@ for item in `cat file`; do
     echo $item
 done
 ```
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-That syntax `cat file` is useful when iterating over a long list of strings that can be read directly from a one-column file.
-</span>
-</div><br>
+
+<div class="protip" markdown="1">
+That syntax `cat file` is useful when iterating over a long list of strings that can be read directly from a <u>one-column file</u>.
+</div>
 
 *H. Iterate over items resulting from the command:*
 ```bash
@@ -389,12 +369,10 @@ for item in `ls | grep "txt"`; do
     echo $item
 done
 ```
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-That syntax `custom command` is useful when iterating over a filtrated list of files stored in current directory (or any location in a file system).
-</span>
-</div><br>
+
+<div class="protip" markdown="1">
+That the **custom command** syntax, such as `ls | grep "txt"`, is useful when iterating over a filtrated list of files stored in current directory (or any location in a file system).
+</div>
 
 
 ### - NESTED LOOPS
@@ -422,6 +400,7 @@ for name in {dog,cat,fish,snake,bird}; do for format in txt dat png; do echo $na
 
 
 **Use a template for 2 nested FOR loops**
+
 ```bash
 for item1 in {ARRAY-OF-ITEMS}; do
   for item2 in {ARRAY-OF-ITEMS}; do
@@ -430,13 +409,10 @@ for item1 in {ARRAY-OF-ITEMS}; do
 done
 ```
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-As long as you are diligent in properly nesting consecutive 'for-in-do-done' statements, you can make as many inner loops as you want.<br>
-<b>Note: </b>Remember that the inner loop must always be closed with the <b>done</b> keyword before the more outer loop.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+As long as you are diligent in properly nesting consecutive `for-do-done` statements, you can make as many inner loops as you want. <br>
+**Note:** Remember that the inner loop must always be closed with the `done` keyword before the more outer loop.
+</div>
 
 See the previous subsection in the tutorial to learn what **other iteration options** are available than using arrays.
 
@@ -522,12 +498,9 @@ done < "$filename"
 
 The `filename` variable stores the name of recently created file.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-If you work by executing scripts rather than typing directly on the command line, it's a good practice to create a variable that stores the path to the file. Then running the same script for a different inupt only requires substituting the path or a filename at the top of the file.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+If you work by executing scripts rather than typing directly on the command line, it's a good practice to create a `variable` that stores the **path to the input file**. Then running the same script for a different input only requires substituting the `path` or a `filename` at the top of the file.
+</div>
 
 In this case, the condition for the `while` loop is replaced by the `read` command followed by the name of the variable in which the loaded content is stored. By default, the `read` command reads a single line from a bash shell or, as in this example, a single line from a text file. The text file is inserted into the loop using `<` stream redirection. Inside the `do ... done` syntax it is possible to parse a single line from a file.
 
@@ -650,14 +623,11 @@ fi
 
 ```
 
-<div style="background: mistyrose; padding: 15px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Be precise when you define conditions. In particular, take care of the order of the conditions being checked in the single syntax `if .... fi`. That is important because the <b>else</b> condition is executed only if all of the above return false.<br>
-Therefore, analyzing the above example: the elif variant will not return numbers greater than 10, even though they will be greater than 5, because they will already be returned in the if condition.<br>
-<b>Note: </b>Remember, in a given syntax <b>if ... fi</b> for the considered variable are <b>executed commands only from the first condition that is satisfied</b>.
-</span>
-</div><br>
+<div class="warning" markdown="1">
+**Be precise when you define conditions.** <br> In particular, take care of the order of the conditions being checked in the single syntax `if .... fi`. That is important because the `else` condition is <u>executed only if all of the above return false</u>. <base class="mb">
+Therefore, analyzing the above example: the `elif` variant will not return numbers greater than 10, even though they will be greater than 5, because they will already be returned in the `if` condition.<br>
+**Note:** Remember, in the given syntax of `if ... fi` **commands are executed only for the first satisfied condition** of the considered variable.
+</div>
 
 **Use the template of if-elif-else-fi conditional**
 ```bash
@@ -704,13 +674,10 @@ echo "The last iterated value is $i"
 
 ![terminal colors]({{ images_path }}/02_bash_break.png)<br>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Usually <b>break</b> is placed in the conditional if ... fi, but this statement is a universal terminator for all bash loops, including FOR, WHILE, UNTIL and SELECT.<br><br>
-In general, break terminates the loop in which it occurs. If it is an inner loop in a nested schema, by default it only terminates the inner loop. To terminate parent loops from within the inner loop, use the <b>break -n</b> command, where n is the index of the higher level loop counted from the loop in which the break resides. The default is n=1 and applies the termination to the current loop.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+Usually `break` is placed in the conditional `if ... fi`, <br> but this statement is a **universal terminator for all bash loops**, including `for`, `while`, `until` and `select`. <base class="mb">
+**In general,** `break` **terminates the loop in which it occurs.** <br> If it is an inner loop in a nested schema, by default it only terminates the inner loop. To terminate parent loops from within the inner loop, use the `break -n` command, where `n` is the <u>index of the higher level loop</u> counted from the loop in which the break resides. The default is `n=1` and applies the termination to the current loop.
+</div>
 
 Let's terminate the outer loop from the inner loop level:
 
@@ -739,12 +706,9 @@ echo "The last iterated values are $i-$j"
 
 It is good to know that almost any bash script saved in a file can be copy-pasted into the command line and executed at the press of `enter`. The only limitation is the size of this script. The invaluable advantage of storing the script in a file is also the knowledge retention from the project and reusability. Nevertheless, even multi-nested loops can be effectively written and executed directly on the command line. This approach is useful in daily workflows and helps prevent easily reproducible code from cluttering up storage space. Note also that usually the last 500 commands are kept in the shell history, so it is easy to retrieve longer one-liners used a few days earlier.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Remember to separate the elements of bash statements with a semicolon <b>;</b> when creating one-liners on the command line.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+Remember to separate the elements of bash statements with a semicolon `;` when creating one-liners on the command line.
+</div>
 
 ## 3.2 Setting up the script
 
@@ -778,15 +742,12 @@ A. PIPE-linked stream of commands
 cat file | grep "keyword" | tr '-' ' ' | awk '{print $2,$4,$6}' | sort -nk1 | uniq
 ```
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Note that the result of the command stream can be redirected to:<br>
-- a file, e.g., command1 | command2 > file <br>
-- to a variable, variable=`command1 | command2`<br>
-- or displayed on the screen, e.g., command1 | command2
-</span>
-</div><br>
+<div class="protip" markdown="1">
+Note that the result of the command stream can be redirected to:
+* a file, e.g., `command1 | command2 > file`
+* to a variable, e.g., <code class="code-inline">variable=`command1 | command2`</code>
+* or displayed on the screen, e.g., `command1 | command2`
+</div>
 
 B. Encapsulation in a loop
 

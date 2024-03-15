@@ -73,12 +73,9 @@ If you're new to PyCharm and want to get started with this powerful Python IDE, 
 
 # 1. Installing PyCharm
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-PyCharm is available in two editions: the <b><a href="https://www.jetbrains.com/pycharm/download/" target="_blank">Community Edition  ⤴</a></b>, which is free and open-source, and the <b><a href="https://www.jetbrains.com/pycharm/download/" target="_blank">Professional Edition  ⤴</a></b>, which is a paid version with additional features like support for web development, database integration, and remote development.
-</span>
-</div><br>
+<div class="note" markdown="1">
+PyCharm is available in two editions: the <a href="https://www.jetbrains.com/pycharm/download/" target="_blank">Community Edition  ⤴</a>, which is free and open-source, and the <a href="https://www.jetbrains.com/pycharm/download/" target="_blank">Professional Edition  ⤴</a>, which is a paid version with additional features like support for web development, database integration, and remote development.
+</div>
 
 ![02_python-pycharm-download.png]({{ images_path }}/02_python-pycharm-download.png)
 
@@ -90,12 +87,9 @@ PyCharm is available in two editions: the <b><a href="https://www.jetbrains.com/
 
 **A standalone installation** of PyCharm involves downloading and running a **separate installer for your operating system**. With a standalone installation, you have more control over the installation process and can customize which components of PyCharm to install and where to install them. Standalone installations are also a good option if you need to perform advanced installation tasks.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-If you only plan on coding in Python, either installation option will work well for you. The <b>Toolbox App</b> is a good option with a simple, streamlined installation process, and that is why it <b>is recommended installation method</b>. It also provides you flexibility in using multiple JetBrains IDEs if you decide so in the future.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+If you only plan on coding in Python, either installation option will work well for you. The **Toolbox App** is a good option with a simple, streamlined installation process, and that is why it **is recommended installation method**. It also provides you flexibility in using multiple JetBrains IDEs if you decide so in the future.
+</div>
 
 ![02_python-pycharm-installation.png]({{ images_path }}/02_python-pycharm-installation.png)
 
@@ -153,12 +147,10 @@ In this tab, users can customize various aspects of the PyCharm GUI, including:
 
 ![02_python-pycharm-theme.png]({{ images_path }}/02_python-pycharm-theme.png)
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br>
-PyCharm offers a few <b>pre-defined color themes</b> [<i>Darcula, IntelliJ Light, High contrast</i>] that can be synchronized with settings in your operating systems, as well as the ability to create custom themes. <br><br>
-PyCharm offers several <b>pre-defined keymaps</b> [<i>macOS, Emacs, IntelliJ IDEA Classic, Sublime Text</i>], as well as the ability to create custom keymaps. <i>This allows users to tailor the IDE to their personal preferences and workflow.</i>
-</div><br>
+<div class="note" markdown="1">
+PyCharm offers a few **pre-defined color themes** [Darcula, IntelliJ Light, High contrast] that can be synchronized with settings in your operating systems, as well as the ability to create custom themes. <base class="mb">
+PyCharm offers several **pre-defined keymaps** [macOS, Emacs, IntelliJ IDEA Classic, Sublime Text], as well as the ability to create custom keymaps. This allows users to tailor the `IDE` to their personal preferences and workflow.
+</div>
 
 Within the `Customize` tab, PyCharm also offers an <b>"Import Settings..."</b> option, which allows users to import settings from a previous installation of PyCharm or from another JetBrains IDE. <br>
 <i>This can help users quickly set up PyCharm with their preferred settings.</i>
@@ -175,12 +167,9 @@ For more **advanced customization options**, PyCharm offers an <b>"All Settings"
 
 The `Plugins` section in the general options of PyCharm provides users with a way to manage the various plugins and add-ons that are available for the IDE.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
+<div class="note" markdown="1">
 Plugins are additional software components that can be installed in PyCharm to extend its functionality and provide additional features.
-</span>
-</div><br>
+</div>
 
 The **Plugins section allows users to browse and install plugins** from the JetBrains Plugin Repository, which is a centralized repository of plugins for all JetBrains IDEs. Users can search for plugins by name, category, or keyword, and can view ratings and reviews from other users.
 
@@ -227,12 +216,9 @@ PyCharm offers a collection of video tutorials and webinars covering a wide rang
 **4. Shortcuts** <br>
 One of the resources available in the `Learn` tab is a **Keyboard Shortcuts** cheat sheet in PDF format.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-Keyboard shortcuts are combinations of keys that perform certain functions in PyCharm, such as opening a file, running a program, or debugging code. Knowing and using keyboard shortcuts can save time and make coding more efficient.
-</span>
-</div><br>
+<div class="note" markdown="1">
+Keyboard `shortcuts` are combinations of keys that perform certain functions in PyCharm, such as opening a file, running a program, or debugging code. Knowing and using keyboard shortcuts can save time and make coding more efficient.
+</div>
 
 The Keyboard Shortcuts cheat sheet in PyCharm provides a comprehensive list of keyboard shortcuts that are available in PyCharm, along with a brief description of each shortcut's function.
 
@@ -240,11 +226,8 @@ The Keyboard Shortcuts cheat sheet in PyCharm provides a comprehensive list of k
 
 ![02_python-pycharm-project-shortcuts.png]({{ images_path }}/02_python-pycharm-project-shortcuts.png)
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
+<div class="warning" markdown="1">
 The keyboard shortcuts may differ depending on the operating system and PyCharm configuration being used. Consult the Keyboard Shortcuts cheat sheet in your PyCharm instance to find the right shortcuts for your specific setup.
-</span>
 </div>
 
 ---
@@ -272,10 +255,9 @@ When you use PyCharm for the first time, the "Projects" section in the general o
 
 <span style="color: #ff3870;font-weight: 500;">You can learn more about creating and managing Python environments from the practical tutorial</span> {% include target_link href=423 text="Local Python setup on your computing machine" %} ( see section {% include target_link href=423 section="#3-manage-python-environments" text="3. Manage Python environments." %})
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">Python best practice is to create a virtualenv for each project. In most cases, PyCharm create a new virtual environment automatically and you don't need to configure anything. </span>
-</div><br>
+<div class="protip" markdown="1">
+Python best practice is to **create a** `virtualenv` **for each project**. <br> In most cases, PyCharm create a new virtual environment automatically and you don't need to configure anything.
+</div>
 
 **3.** You can choose to select or deselect the checkbox for the automatic creation of a `main.py` file. Typically this file is intended to contain the code that launches your multi-file application. For a simple project, all your code can exist within this single file. You can keep the name `main.py` or change it for something more meaningful.
 
@@ -346,14 +328,9 @@ The `Project` view also allows you to:
 * open an existing project, *or*
 * clone a project from a version control system.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-<b>To create a new project</b>, click the "New Project" button in the toolbar. This will open the New Project dialog, where you can specify the name, location, and other settings for your new project. <br><br>
-<b>To open an existing project</b> off the PyCharm list, click the "Open" button in the toolbar. This will open a file browser where you can select the project you want to open. <br><br>
-If you have enabled version control for your project, you can use the "Get from VCS" button to <b>clone the project from your version control system</b>.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+**To create a new project**, click the `New Project` button in the toolbar. This will open the <u>New Project</u> dialog, where you can specify the name, location, and other settings for your new project. <base class="mb"> **To open an existing project** off the PyCharm list, click the `Open` button in the toolbar. This will open a <u>file browser</u> where you can select the project you want to open. <base class="mb"> If you have enabled <u>version control</u> for your project, you can use the `Get from VCS` button to **clone the project from your version control system**.
+</div>
 
 
 ###  • *Add a new file*
@@ -369,13 +346,10 @@ The ***Tip of the Day*** is a feature in PyCharm that displays a useful tip or t
 
 ![02_python-pycharm-project-tips.png]({{ images_path }}/02_python-pycharm-project-tips.png)
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-The tips presented in the <b>"Tip of the Day"</b> feature are meant to help users become more proficient in using PyCharm and developing in Python. It is smart to spend a few minutes exploring these tips every day to enhance your fluency with the IDE features. <br><br>
-You can <b>access the tips at any time</b> by going to the "Tip of the Day" section in the PyCharm Help menu.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+The tips presented in the <b>"Tip of the Day"</b> feature are meant to help users become more proficient in using PyCharm and developing in Python. It is smart to spend a few minutes exploring these tips every day to enhance your fluency with the IDE features. <base class="mb">
+You can **access the tips at any time** by going to the "Tip of the Day" section in the PyCharm `Help` menu.
+</div>
 
 ---
 
@@ -383,10 +357,9 @@ You can <b>access the tips at any time</b> by going to the "Tip of the Day" sect
 
 In this section we will focus on features available in the **Editor Panel** of the Project view in PyCharm. It offers a wide range of built-in features to make coding easier and more efficient.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">The file editor area in PyCharm is where you can view and edit the contents of your project files. It includes a variety of features to help you write and maintain high-quality code.</span>
-</div><br>
+<div class="note" markdown="1">
+The file <u>editor area</u> in PyCharm is where you can **view and edit** the contents of your project files. It includes a variety of features to help you write and maintain high-quality code.
+</div>
 
 ![02_python-pycharm-project-editor.png]({{ images_path }}/02_python-pycharm-project-editor.png)<br>
 Here are some of the most useful options in the PyCharm editor:
@@ -501,12 +474,9 @@ Here are some of the options you can use to debug Python code in PyCharm:
 
 You can set breakpoints at specific lines of code in your Python program, which will pause the program's execution when it reaches that line.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-A breakpoint is a tool that allows you to pause the execution of your Python code at a specific line or point in the code, allowing you to examine the state of your program at that moment.
-</span>
-</div><br>
+<div class="note" markdown="1">
+A `breakpoint` is a tool that allows you to **pause the execution** of your Python code at a specific line or point in the code, allowing you to examine the state of your program at that moment.
+</div>
 
 *To set a breakpoint in PyCharm, you can click on the line number in the editor where you want to pause execution. This will add a red dot to the line, indicating that a breakpoint has been set. You can also the key shortcut or use the `Run` menu on the top and select "Toggle Breakpoint".*
 

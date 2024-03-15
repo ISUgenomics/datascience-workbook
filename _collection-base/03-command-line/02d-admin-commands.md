@@ -24,21 +24,15 @@ tags: []
 
 The superuser, also known as the **"root" user**, is a special user account in Unix and Linux systems that has complete control over the system, including unrestricted access to all files and commands on the system. In most Unix-like systems, the superuser is the only user that can perform certain tasks, such as changing the system's hostname, modifying system-wide files and configuration settings, installing software, and creating and deleting user accounts.
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Because the superuser has such wide-ranging privileges, it is important to use this account cautiously. Accidental mistakes or malicious actions performed as the superuser can have serious consequences, such as damaging the system or compromising security.
-</span>
+<div class="warning" markdown="1">
+*Because the superuser has such wide-ranging privileges, it is important to use this account cautiously. Accidental mistakes or malicious actions performed as the superuser can have serious consequences, such as damaging the system or compromising security.*
 </div>
 
 The superuser account is typically reserved for **system administrators** and other advanced users who need to perform tasks that require high levels of privilege. It is generally a good idea to use the superuser account sparingly, and only when absolutely necessary, as it has the potential to cause significant harm to the system if used improperly. Thus, it is always better to create a separate user account for daily use and reserve the superuser account for tasks that require its elevated privileges. This helps to prevent accidental mistakes and reduce the risk of security vulnerabilities.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-<b>On a personal computing machine</b>, the superuser is typically the user who created the account when the operating system was installed. This initial account is often the default administrative account, meaning that <b>you have full control over the system settings</b>. The user who created this account is usually the owner of the computer.  <br><br>
-<b>On a high-performance computing (HPC) infrastructure</b>, the superuser is typically a system administrator or other advanced user who has been granted superuser privileges. So, as a non-admin user, <b>you have limited ability to modify system settings</b> or install software.
-</span>
+<div class="protip" markdown="1">
+***On a personal computing machine***, *the superuser is typically the user who created the account when the operating system was installed. This initial account is often the default administrative account, meaning that* ***you have full control over the system settings***. *The user who created this account is usually the owner of the computer.*  <br><br>
+***On a high-performance computing (HPC) infrastructure***, *the superuser is typically a system administrator or other advanced user who has been granted superuser privileges. So, as a non-admin user,* ***you have limited ability to modify system settings*** *or install software.*
 </div>
 
 
@@ -80,12 +74,8 @@ The root user has complete control over the system and can perform any action th
   *The superuser can modify kernel parameters, which are settings that control the behavior of the operating system kernel.*
 
 
-<div style="background: #cff4fc; padding: 15px;">
-  <span style="font-weight:800;">PRO TIP:</span>
-  <br><span style="font-style:italic;">
-For you, as a regular <i>(non-admin)</i> user on the HPC infrastructure, these tasks are not available to perform. <br><br>
-To perform these tasks on your personal computing machine when necessary, you need to activate superuser privileges.
-  </span>
+<div class="protip" markdown="1">
+*For you, as a regular (non-admin) user on the HPC infrastructure, these tasks are not available to perform. <br> To perform these tasks on your personal computing machine when necessary, you need to activate superuser privileges.*
 </div>
 
 ### Permission denied error
@@ -197,9 +187,8 @@ sudo apt-get update
 
 In this example, the apt-get update command is being run with superuser privileges, which is necessary to update the system's package manager database.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;"> You should always update the system's package manager database before installing a new software or library. </span>
+<div class="protip" markdown="1">
+*You should always update the system's package manager database before installing a new software or library.*
 </div>
 
 **2. Installing a software package:**
@@ -300,8 +289,6 @@ The `cron` service is the cron daemon, which is used to schedule tasks to run at
 **These are just a few examples of using the sudo command.** <br>
 There are many other tasks that may require superuser privileges, and sudo can be used to execute any of these tasks.
 
-
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;"> It is important to use <b>sudo</b> sparingly, and only when absolutely necessary, as it has the potential to cause significant harm to the system if used improperly. </span>
+<div class="warning" markdown="1">
+*It is important to use* `sudo` *sparingly, and only when absolutely necessary, as it has the potential to cause significant harm to the system if used improperly.*
 </div>

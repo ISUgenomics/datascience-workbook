@@ -78,12 +78,9 @@ print("Hello, world!")
 
 ![]({{ images_path }}/03_python-anywhere_ex1.png)<br>
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-The <b>print()</b> function in Python is used to output or display text or other data to the console or terminal. It is a built-in function that takes one or more arguments (values or variables) and prints them to the console. Multiple variables should be separated by a comma.
-</span>
-</div><br>
+<div class="note" markdown="1">
+*The* `print()` *function in Python is used to output or display text or other data to the console or terminal. It is a built-in function that takes one or more arguments (values or variables) and prints them to the console. Multiple variables should be separated by a comma.*
+</div>
 
 ***Example 2:*** *Storing and manipulating data in variables:*
 
@@ -98,13 +95,9 @@ print(x, y)
 
 ![]({{ images_path }}/03_python-anywhere_ex2A.png)<br>
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-In Python, a <b>variable</b> is a name that refers to a value stored in the computer's memory. It is used to store data that can be accessed and manipulated by the program. The type of a variable is determined automatically based on the value assigned to it.<br>
-To assign a value to a variable in Python, you simply use the assignment operator <b>=</b>. For example, x = 10.
-</span>
-</div><br>
+<div class="note" markdown="1">
+*In Python, a* ***variable*** *is a name that refers to a value stored in the computer's memory. It is used to store data that can be accessed and manipulated by the program. <br> The* `type` *of a variable is determined automatically based on the value assigned to it. <br> To assign a* `value` *to a variable in Python, you simply use the assignment operator* `=`. *For example,* `x = 10`.
+</div>
 
 ***Example 3:*** *Perform some basic arithmetic operations:*
 
@@ -120,18 +113,14 @@ print(z)
 
 ![]({{ images_path }}/03_python-anywhere_ex2B.png)<br>
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-In Python, you can use variables to assign the result of <b>basic mathematical operations</b> such as summing, multiplying, and so on, by using standard mathematical operators:
-<li>+ &emsp; for addition</li>
-<li>- &emsp; for substraction</li>
-<li>* &emsp; for multiplication</li>
-<li>/ &emsp; for division</li>
-</span>
-</div><br>
+<div class="note" markdown="1">
+*In Python, you can use variables to assign the result of* ***basic mathematical operations*** *such as summing, multiplying, and so on, by using standard mathematical operators:*
+* `+` &emsp; *for addition*
+* `-` &emsp; *for substraction*
+* `*` &emsp; *for multiplication*
+* `/` &emsp; *for division*
+</div>
 
----
 
 <span style="color: #ff3870;font-weight: 500;">
 It is highly recommended to learn more about the basics of programming in Python</span> by working through the hands-on tutorials provided in Section {% include target_link href=531 text="05. Introduction to Programming / Introduction to Python programming" %} of this workbook. These tutorials cover topics such as variables, data types, operators, control flow statements, functions, and more.

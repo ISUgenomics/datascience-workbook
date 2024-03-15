@@ -49,17 +49,12 @@ In this section, we will cover the process of setting up Python on a local machi
 
 ## *Tips & Warnings*
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-For installing Python either pick Anaconda or local install via package manager. Try not to mix install methods or you will have conflict errors and may need to uninstall and reinstall python entirely.</span>
+<div class="warning">
+For installing Python either pick Anaconda or local install via package manager. Try not to mix install methods or you will have conflict errors and may need to uninstall and reinstall python entirely.
 </div>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Due to incompatabilities between certain python libraries, it is highly recommended to manage python packages in virtual environments (<b>conda</b> , <b>venv</b>, or equivalent), one environment per project.
-</span>
+<div class="protip" markdown="1">
+Due to incompatibilities between certain python libraries, it is highly recommended to manage python packages in virtual environments (`conda` , `venv` or equivalent), one environment per project.
 </div>
 
 ---
@@ -87,12 +82,12 @@ Some integrated development environments (IDEs) and text editors come with Pytho
 **PROS & CONS**
 
 | A. Official Installer | B. Package Manager | C. IDE, e.g., Anaconda |
-|-----------------------|--------------------|---------------------|
-| ✓ Easy to use and install | ✓ Makes installation and upgrading of Python easier | ✓ Comes with pre-installed Python and additional packages and tools |
-| ✓ Allows installation of any Python version | ✓ Usually comes with additional packages and tools  | ✓ Allows easy management of virtual environments |
-| ✓ Works on all operating systems | ✓ Handles dependencies automatically | ✓ Comes with an integrated development environment (IDE) |
-| ✗ May require manual configuration for some systems | ✗ May not have the latest version of Python | ✗ May not have the latest version of Python |
-| ✗ May not include additional packages and tools | ✗ May require additional configuration to work properly | ✗ May require additional configuration to work properly |
+|-----------------------|--------------------|------------------------|
+| <em class="pros"></em> Easy to use and install                           | <em class="pros"></em> Makes installation and upgrading of Python easier     | <em class="pros"></em> Comes with pre-installed Python and additional packages and tools |
+| <em class="pros"></em> Allows installation of any Python version         | <em class="pros"></em> Usually comes with additional packages and tools      | <em class="pros"></em> Allows easy management of virtual environments                     |
+| <em class="pros"></em> Works on all operating systems                    | <em class="pros"></em> Handles dependencies automatically                    | <em class="pros"></em> Comes with an integrated development environment (IDE)            |
+| <em class="cons"></em> May require manual configuration for some systems | <em class="cons"></em> May not have the latest version of Python             | <em class="cons"></em> May not have the latest version of Python                           |
+| <em class="cons"></em> May not include additional packages and tools     | <em class="cons"></em> May require additional configuration to work properly | <em class="cons"></em> May require additional configuration to work properly              |
 
 
 ^ Anaconda comes with an IDE that provides easier entry point *(recommended for Windows)*.<br>
@@ -171,10 +166,9 @@ sudo make install
 
 When you install Python using a package manager, you are getting the core Python programming language, the Python interpreter, and its standard library, but you will still need to separately install an IDE or other tools if you want to develop Python code using a more feature-rich development environment.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">Using a package manager from the command line allows you to easily install, update, and remove packages, including Python and its dependencies. </span>
-</div><br>
+<div class="protip">
+Using a package manager from the command line allows you to easily install, update, and remove packages, including Python and its dependencies.
+</div>
 
 <b>WINDOWS</b> <i>(not available)</i>
 
@@ -234,12 +228,9 @@ sudo apt install python3.9
 
 Anaconda is an open-source distribution of Python that includes the Conda package and environment management system, along with a curated collection of popular Python packages and tools commonly used in data science. It provides a convenient way for users to install and manage Python packages, libraries, and dependencies for data analysis, machine learning, and other scientific computing tasks.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+<div class="protip">
 Anaconda is a popular choice for data scientists, researchers, and developers who work with large datasets and complex computations. It provides a streamlined and consistent way to set up and manage Python environments and packages, making it easier to get started with data analysis and scientific computing.
-</span>
-</div><br>
+</div>
 
 **INSTALL ANACONDA** <a href="https://www.anaconda.com/products/distribution#Downloads" target="_blank">https://www.anaconda.com/products/distribution#Downloads  ⤴</a>
 
@@ -305,12 +296,9 @@ Anaconda provides a **graphical user interface (GUI) called Anaconda Navigator**
 
 Choosing the right development environment is essential for coding in Python as it can significantly impact the productivity and efficiency of the developer.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-An Integrated Development Environment (<b>IDE</b>) is a software tool that provides a comprehensive set of features, including: <br> code editing, debugging, testing, and deployment.
-</span>
-</div><br>
+<div class="note" markdown="1">
+An Integrated Development Environment (**IDE**) is a software tool that provides a comprehensive set of features, including: code editing, debugging, testing, and deployment.
+</div>
 
 
 Here are some of the reasons **why choosing the right development environment is important**:
@@ -352,10 +340,9 @@ Follow a discussion on Python IDE - <a href="https://realpython.com/python-ides-
 
 **Python environments** are an important aspect of Python development, as they allow developers to **isolate different versions of Python** and related sets of Python packages and dependencies. This is particularly important when working on multiple projects, as it can help avoid conflicts and ensure that each project has access to the specific dependencies it requires.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">In Python development, an environment refers to a specific instance of a Python interpreter along with its associated installed packages and dependencies.</span>
-</div><br>
+<div class="note">
+In Python development, an environment refers to a specific instance of a Python interpreter along with its associated installed packages and dependencies.
+</div>
 
 There are several tools available for managing Python environments, including:
 * isolated environments *(via environment management)*:
@@ -381,12 +368,9 @@ There are several tools available for managing Python environments, including:
 |Version control      | Built-in  | No built-in | Based on Docker images |
 
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><b>Do not mix python environment managers. Pick one and stick with it.</b><br>
-<span style="font-style:italic;">
+<div class="warning" markdown="1">
+**Do not mix python environment managers. Pick one and stick with it.** <br>
 It's generally not a good idea to mix Python environment managers because different environment managers can have different ways of managing packages and dependencies, which can lead to conflicts and inconsistencies in your Python environment.
-</span>
 </div>
 
 
@@ -394,24 +378,18 @@ It's generally not a good idea to mix Python environment managers because differ
 
 Conda is an open-source package management system and environment management system for installing and managing packages and dependencies in Python and other programming languages. It was developed by Anaconda, Inc. and is available as part of the Anaconda distribution, but it can also be installed separately.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-Conda allows users to create and <b>manage isolated environments for different projects</b> or workflows, each with its own set of packages and dependencies. This helps to ensure that each project has the specific versions of packages it needs, without conflicting with other projects or the base system.
-</span>
-</div><br>
+<div class="note" markdown="1">
+Conda allows users to create and **manage isolated environments for different projects** or workflows, each with its own set of packages and dependencies. This helps to ensure that each project has the specific versions of packages it needs, without conflicting with other projects or the base system.
+</div>
 
 **Install Conda**
 
 <span style="color: #ff3870;font-weight: 500;">When you [install Anaconda](#via-anaconda), Conda is installed alongside it as part of the distribution.</span><br>
 <b>However, if you choose to do a "pure Python" installation via package manager or official installer, Conda will not be pre-installed.</b> In this case, you will need to install Conda separately if you want to use it as your package manager for managing Python environments.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-The fastest way to obtain conda is to <b>install Miniconda</b>, a mini version of Anaconda that includes only conda and its dependencies. If you prefer to have conda plus over 7,500 open-source packages, install Anaconda. [source: <a href="https://conda.io/projects/conda/en/latest/user-guide/install/index.html#installation" target="_blank">https://conda.io/projects/conda  ⤴</a>]
-</span>
-</div><br>
+<div class="protip" markdown="1">
+The fastest way to obtain `conda` is to **install Miniconda**, a mini version of Anaconda that includes only conda and its dependencies. If you prefer to have conda plus over 7,500 open-source packages, install Anaconda. [source: <a href="https://conda.io/projects/conda/en/latest/user-guide/install/index.html#installation" target="_blank">https://conda.io/projects/conda  ⤴</a>]
+</div>
 
 **Practical Guides**<br>
 Follow the up-to-date installation guide for **Miniconda** from the official documentation provided at <a href="https://conda.io/projects/conda/en/latest/user-guide/install/index.html#regular-installation" target="_blank">https://conda.io/projects/conda/en/latest/user-guide/install/index.html#regular-installation  ⤴</a>.
@@ -445,21 +423,19 @@ conda activate my_env
 conda install pandas
 ```
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+<div class="protip" markdown="1">
 You can also specify the packages that you want to install all-in-one step during the environment creation process:
-</span>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```bash
 conda create --name my_env python=3.9 pandas numpy scipy <br>
 conda activate my_env
-</code><br>
-<i>To install a <b>specific version of a package</b> with Conda, you can use the following command:</i>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```
+<base class="mt">
+To install a **specific version of a package** with Conda, you can use the following command:
+```bash
 conda install numpy=1.2.3
-</code><br>
-<i>This will install version 1.2.3 of the "numpy" package into your current Conda environment.</i>
-</div><br>
+```
+^ This will install version 1.2.3 of the `numpy` package into your current Conda environment.
+</div>
 
 It is possible to **install packages with** `pip` in a current Conda environment. You first need to activate the environment in your command prompt or terminal. Then, you can use `pip` to install packages as you normally would.
 
@@ -479,11 +455,8 @@ conda deactivate
 ```
 *This will deactivate the current active Conda environment and return you to the* `base` *environment or your system's default Python environment.*
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-It's important to note that <b>you should always deactivate your Conda environment</b> before switching to another environment or exiting your terminal or command prompt. This ensures that any changes or updates you have made to the environment are saved and that you don't accidentally install packages to the wrong environment.
-</span>
+<div class="warning" markdown="1">
+It's important to note that **you should always deactivate your Conda environment** before switching to another environment or exiting your terminal or command prompt. This ensures that any changes or updates you have made to the environment are saved and that you don't accidentally install packages to the wrong environment.
 </div>
 
 <span style="color: #ff3870;font-weight: 500;">Learn more about CONDA commands from the <a href="https://kapeli.com/cheat_sheets/Conda.docset/Contents/Resources/Documents/index" target="_blank">Conda CheatSheet  ⤴</a></span>.
@@ -495,12 +468,9 @@ Virtual environments are a useful tool for Python developers to manage dependenc
 
 Here is a useful resource for learning more about the default virtual environments in Python, <a href="https://docs.python.org/3/library/venv.html" target="_blank">https://docs.python.org/3/library/venv.html  ⤴</a> *(source: official Python documentation)*
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-When you create a <b>virtual environment with venv, it is associated with the project directory</b> where you created it. Specifically, the virtual environment is created in a subdirectory of your project directory called env, which is where all the environment-specific files are stored. This allows you to easily manage dependencies and packages for each project separately.
-</span>
-</div><br>
+<div class="note" markdown="1">
+When you create a **virtual environment with venv, it is associated with the project directory** where you created it. Specifically, the virtual environment is created in a subdirectory of your project directory called env, which is where all the environment-specific files are stored. This allows you to easily manage dependencies and packages for each project separately.
+</div>
 
 **Install venv**
 
@@ -519,12 +489,9 @@ python3 -m venv env
 
 **LIST ALL ENVs:** Unfortunately, `venv` does not provide a built-in command to list all virtual environments created using it.
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
+<div class="warning" markdown="1">
 If you choose to create the virtual environment in a different location than a root of a project or with a different name than "env", you'll need to remember that location/name and use it to activate the environment.
-</span>
-</div><br>
+</div>
 
 **ACTIVATE ENV:** To activate the virtual environment, run the following command:
 ```bash
@@ -532,14 +499,12 @@ source env/bin/activate
 ```
 *This will activate the virtual environment and change your prompt to indicate that you are now working inside the environment. You should see something like* `(env)` *at the beginning of your prompt.*
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-You need to <b>remember the path of the virtual environment</b> that you created for a given project if you want to activate and use that environment in the future. By default, venv creates the virtual environment in a subdirectory of your project root directory called <b>env</b>, so if you use this default location, you can always navigate to your project directory and activate the environment with the following command:</span>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+<div class="warning" markdown="1">
+You need to **remember the path of the virtual environment** that you created for a given project if you want to activate and use that environment in the future. By default, `venv` creates the virtual environment in a subdirectory of your <u>project root directory</u> called **env**, so if you use this default location, you can always navigate to your project directory and activate the environment with the following command:</span>
+```bash
 source env/bin/activate
-</code>
-</div><br>
+```
+</div>
 
 **INSTALL PACKAGE:** With the virtual environment activated, you can now install packages using `pip`, just like you would normally.
 
@@ -558,31 +523,22 @@ deactivate
 
 Docker is a containerization platform that allows you to package up an entire application, including its dependencies, into a single container that can be run on any system that has Docker installed.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+<div class="protip">
 Docker can be particularly useful when working on projects that have complex dependencies or that need to be run in specific environments.
-</span>
-</div><br>
+</div>
 
 **CREATE A DOCKER CONTAINER** <br>
 You can **create a Docker container for your Python application** by creating a *Dockerfile* that specifies the dependencies you need and how to run your application.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-A Dockerfile is a text file that <b>contains a series of instructions for building a Docker image</b>. The Dockerfile specifies the base image to use, any additional software or dependencies to install, and any configuration or setup required for the container.
-</span>
-</div><br>
+<div class="note" markdown="1">
+A Dockerfile is a text file that **contains a series of instructions for building a Docker image**. The `Dockerfile` specifies the base image to use, any additional software or dependencies to install, and any configuration or setup required for the container.
+</div>
 
 The Docker engine reads the Dockerfile and creates an image based on the instructions it contains. A Dockerfile typically starts with a `FROM` instruction, which specifies the base image to use for the container. Other instructions, such as `WORKDIR`, `COPY`, `RUN`, `ENV`, `EXPOSE`, and `CMD`, are used to configure the environment, install dependencies, and define the command to run when the container starts.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-By convention, the file is always named <b>Dockerfile</b> (with a capital "D" and no file extension), and it must be placed in the root directory of the "build context". The build context is the set of files and directories used to build the Docker image
-</span>
-</div><br>
+<div class="protip" markdown="1">
+By convention, the file is always named `Dockerfile` (with a capital **"D"** and no file extension), and it must be placed in the root directory of the "build context". The build context is the set of files and directories used to build the Docker image.
+</div>
 
 You can create a Dockerfile using a text editor like a command-line `nano` or `Visual Studio Code` with a graphical user interface. *For example, here's a* `Dockerfile` *template:*
 ```Dockerfile
@@ -618,17 +574,15 @@ docker build -t myapp .
 ```
 *This will create a Docker image called* `myapp` *that you can then run using the* `docker run` *command.*
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-If you want to use a different name for the <b>Dockerfile</b>, you can specify the filename using the <b>-f</b> or <b>--file</b> option when you run the <b>docker build</b> command. <br><br>
+<div class="protip" markdown="1">
+If you want to use a different name for the `Dockerfile`, you can specify the filename using the `-f` or `--file` option when you run the <b>docker build</b> command. <base class="mb">
 For example, if your Dockerfile is named MyDockerfile, you can use the following command to build the image:
-</span>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```bash
 docker build -t myimage:latest -f MyDockerfile .
-</code>
-<i>This command specifies that the Dockerfile is named "MyDockerfile" and is located in the current directory (.), and it sets the name of the resulting image to "myimage" with the latest tag.</i>
-</div><br>
+```
+<base class="mt">
+This command specifies that `Dockerfile` is named "MyDockerfile" and is located in the current directory `.`, and it sets the name of the resulting image to "myimage" with the latest tag.
+</div>
 
 <span style="color: #ff3870;font-weight: 500;">Learn more about Docker containers and Docker graphical user interface (GUI) from the practical tutorial</span> {% include target_link href=672.1 text="Docker - accelerated container application development" %} available in the {% include target_link href=670 text="Introduction to containers" %} section of this workbook.  
 
@@ -638,14 +592,11 @@ docker build -t myimage:latest -f MyDockerfile .
 
 Managing dependencies is an important part of working with Python projects, and each of the tools *(Conda, venv, and Docker)* has its own approach to managing dependencies.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-It is highly recommended to create a <b>requirements file</b> that is a common way to manage dependencies for Python projects, regardless of the tool you use. The file should list all of the packages required for the project, along with their version numbers, so that others can easily <b>install the same dependencies on another machine</b>.
-</span>
+<div class="protip" markdown="1">
+It is highly recommended to create a **requirements file** that is a common way to manage dependencies for Python projects, regardless of the tool you use. The file should list all of the packages required for the project, along with their version numbers, so that others can easily **install the same dependencies on another machine**.
 </div>
 
-<br>The **requirements file** can be created: with
+The **requirements file** can be created: with
 * the `conda env export` command for conda environments,
 * the `pip freeze` command for venv environments,
 * or by manually creating a `requirements.txt` file for Docker environments.
@@ -683,19 +634,17 @@ RUN pip install -r requirements.txt
 ```
 *This will copy the "requirements.txt" file from the project directory to the Docker build context. Then, it will install all of the packages listed in the "requirements.txt" file in the Docker container.*
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-An example "requirements.txt" file for a Docker environment might look something like this:
-</span>
-<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-flask==2.1.0 <br>
-pandas==1.3.4 <br>
-numpy==1.21.3 <br>
+<div class="protip" markdown="1">
+An example `requirements.txt` file for a **Docker environment** might look something like this:
+```
+flask==2.1.0
+pandas==1.3.4
+numpy==1.21.3
 matplotlib==3.4.3
-</code>
-<i>In this example, the file lists four Python packages (Flask, Pandas, NumPy, and Matplotlib) along with their version numbers. These are just example packages, but you would list the packages that your project requires in the file.</i>
-</div><br>
+```
+<base class="mt">
+In this example, the file lists four **Python** packages (`Flask`, `Pandas`, `NumPy` and `Matplotlib`) along with their version numbers. These are just example packages, but you would list the packages that your project requires in the file.
+</div>
 
 ---
 
@@ -762,7 +711,6 @@ conda build .
 conda install --use-local <package>
 ```
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">Note that the package name may be different from the repository name. You can check the <b>"setup.py"</b> file to see the package name.</span>
-</div><br>
+<div class="warning" markdown="1">
+Note that the package name may be different from the repository name. You can check the `setup.py` file to see the package name.
+</div>

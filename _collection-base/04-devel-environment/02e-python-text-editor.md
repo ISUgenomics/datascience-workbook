@@ -43,25 +43,16 @@ When writing a script in a file, the technical process is different from using P
 
 In other words, when using the interactive shell, you can experiment with single operations and test them immediately, while when writing a script, it is better to plan out the larger snippet of code and ensure that it works as expected before executing it.
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
+<div class="warning" markdown="1">
 When writing a script, testing the code after adding each line of code is possible but can be both annoying and inefficient. This is because writing a complete program requires a series of steps that often depend on each other, so it's difficult to test individual parts of the program before it's complete.
-</span>
 </div>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-When scripting, it's expected that the developer has a clear idea of the program as a whole and is fluent in basics of Python syntax in order to assemble the code for the task with a reasonable structure. This involves breaking down the task into smaller, manageable steps and writing code to accomplish each step, using available components (operators, built-in functions, imports) whenever possible.
-</span>
+<div class="protip" markdown="1">
+When scripting, it's expected that the developer has a clear idea of the program as a whole and is fluent in basics of Python syntax in order to assemble the code for the task with a reasonable structure. This involves **breaking down the task into smaller, manageable steps** and writing code to accomplish each step, using available components (operators, built-in functions, imports) whenever possible.
 </div>
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-With a script, you have the ability to save and reuse the code for later use, whereas in the interactive shell, you can only reuse code that you have written and executed in that particular session.
-</span>
+<div class="note" markdown="1">
+With a **script**, you have the ability to <u>save and reuse the code</u> for later use, whereas in the interactive shell, you can only reuse code that you have written and executed in that particular session.
 </div>
 
 
@@ -106,12 +97,9 @@ nano calc_average.py
 
 **3.** Type or paste Python code from the snippet below into the file.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Note that lines starting with the <b>#</b> sign are not executed.  It is how we <b>introduce commenting into the code</b>, which contains a description of individual code fragments. From the comments in the following code snippet, you will learn the role of the code in the next line.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+Note that lines starting with the `#` sign are not executed.  It is how we **introduce commenting into the code**, which contains a description of individual code fragments. From the comments in the following code snippet, you will learn the role of the code in the next line.
+</div>
 
 ```python
 #1 Get a list of numbers from user (typed in a terminal)
@@ -274,23 +262,19 @@ word_count = {'This' : 2, 'is' : 2, 'text' : 2, 'for' : 3, 'example' : 1}
 <b>#2 Print the word counts</b><br>
 The dictionary is filled with key:value pairs by the script's algorithm and stored in the memory as long as the script is active. This way, the extracted and structured information can be passed on to the next task in the script. For example, once the input file "input.txt" is processed to the end, the next task can be to filter out words shorter than 2 letters and further print only these counted more then once.<br>
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Note that in this case, we used a different syntax for the built-in print() function:</span>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+<div class="warning" markdown="1">
+Note that in this case, we used a different syntax for the built-in print() function:
+```python
 print(f"{variable} text {variable}")
-</code>
-<span style="font-style:italic;">It allows for easier way of merging text-like with non-text {variables}.</span>
+```
+<base class="mt">
+It allows for easier way of merging text-like with non-text `{variables}`.
 </div>
-</details>
+</details><br>
 
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-It is a good practice to separate blocks of code for different tasks in the script and provide comments for better readability and understanding of the code. This can be done by using comments <b>#</b> at the top of each code block to explain its general purpose. Additionally, comments <b>##</b> can be added to the end of specific lines that may not be immediately obvious what their purpose is.
-</span>
+<div class="protip" markdown="1">
+It is a good practice to separate blocks of code for different tasks in the script and provide comments for better readability and understanding of the code. This can be done by using comments `#` at the top of each code block to explain its general purpose. Additionally, comments `##` can be added to the end of specific lines that may not be immediately obvious what their purpose is.
 </div>
 
 <span style="color: #ff3870;font-weight: 500;">Learn more about Python built-in functions such as </span><b>open(), strip(), split(), items(), len(), print(f""), Python loops and built-in objects </b> <span style="color: #ff3870;font-weight: 500;">from tutorials provided in section</span> {% include target_link href=500 %} :
@@ -314,11 +298,8 @@ python3 count_words.py
 
 *This time we execute the script with the keyword `python3` to emphasize that the print() function with argument syntax `f"{variable}"` is available in the python3 variant only. If you have Python in version 2, see the syntax for the print() function in Example 1.*
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Remember that the script configuration (in this case) requires the input file (called "input.txt") to be in the same location as the script.
-</span>
+<div class="warning" markdown="1">
+Remember that the script configuration (in this case) requires the <u>input file</u> (called "input.txt") to be in the same location as the script.
 </div>
 
 <i>This will execute your script and print to the console the words with at least 2 counts and at least 2-letter long.</i>
@@ -334,12 +315,9 @@ Remember that the script configuration (in this case) requires the input file (c
 
 Here's how you can create a new Python script using `mcedit`, an advanced text editor *(in terminal and GUI-like)* that typically requires installation, but its utility is worth it!
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-<b>MCedit</b> has a graphical user interface in the terminal and a <b>built-in file manager</b>. This means that `mcedit` is generally easier to use for beginners (for basic tasks) since it provides a familiar <b>point-and-click interface</b> besides the keyboard navigation.  
-</span>
-</div><br>
+<div class="note" markdown="1">
+**MCedit** has a graphical user interface in the terminal and a **built-in file manager**. This means that `mcedit` is generally easier to use for beginners (for basic tasks) since it provides a familiar **point-and-click interface** besides the keyboard navigation.
+</div>
 
 ![02_python-mcedit.png]({{ images_path }}/02_python-mcedit.png)
 
@@ -373,12 +351,9 @@ sudo apt-get install mc
 </code><br>
 </details><br>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-If MC is not available in your distribution's official repositories, you can download the source code from the official website and compile it yourself. The instructions for doing so are provided on the website <a href="https://midnight-commander.org/     " target="_blank">https://midnight-commander.org/  ⤴</a>.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+If `mc` is not available in your distribution's official repositories, you can download the source code from the official website and compile it yourself. The instructions for doing so are provided on the website <a href="https://midnight-commander.org/     " target="_blank">https://midnight-commander.org/  ⤴</a>.
+</div>
 
 **1.** Open the terminal and navigate to the directory where you want to create the script. <br>
 
@@ -419,12 +394,9 @@ In Python, <b>import statements are used to bring in external modules</b> or lib
 <b>#1 Create a function that generates randomized password</b><br>
 By defining a function, we can execute the code encapsulated within the function body multiple times within the same script by calling the function name. If the function takes arguments, e.g., a "length" in our function, the result returned by a function will depend on the value of the input argument. <br>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+<div class="protip" markdown="1">
 Defining functions can significantly reduce the amount of code duplication and make it easier to modify or update the code in the future.
-</span>
-</div><br>
+</div>
 
 First, within the function body, we define the base of characters used to generate a password. We Create a string of characters imported from the <b>string</b> module as a combination of ASCII letters, digits, and punctuation characters:
 <code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
@@ -438,18 +410,16 @@ Finally, the function uses the special keyword <b>return</b> followed by a varia
 <br><br>
 <b>#2 Call the function to generate a password</b><br>
 In this code block, you can decide with what argument value to call the function. In particular, you can pass the value of an argument directly or as the result of another operation, or use the input() function to take a value entered interactively by the final user of the code.
-</details>
+</details><br>
 
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Defining a function for a repetitive task can save you time and effort. If you have a task that needs to be done several times with only the input parameters changing, consider <b>defining a function</b> that can take those parameters as arguments. This will not only make your code more readable and maintainable, but it will also save you from writing the same code multiple times.</span> <br>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-def function_name(argument1, argument2): <br>
-&emsp;&emsp;&emsp; # function body <br>
-&emsp;&emsp;&emsp; return "result"
-</code>
+<div class="protip" markdown="1">
+Defining a function for a repetitive task can save you time and effort. If you have a task that needs to be done several times with only the input parameters changing, consider **defining a function** that can take those parameters as arguments. This will not only make your code more readable and maintainable, but it will also save you from writing the same code multiple times.
+```python
+def function_name(argument1, argument2):
+    # function body
+    return "result"
+```
 </div>
 
 <span style="color: #ff3870;font-weight: 500;">Learn more about Python built-in functions such as </span><b>join(), range(), input(), Python imports, and a function definition</b> <span style="color: #ff3870;font-weight: 500;">from tutorials provided in section</span> {% include target_link href=500 %} :

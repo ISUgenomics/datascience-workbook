@@ -58,12 +58,9 @@ The first two are mainly dedicated for individual usage, while [JupyterHub](http
 
 ![terminal colors]({{ images_path }}/04_jupyter_lab.png)<br>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Note, that both Jupyter variants can coexist on the same computing machine, and the files generated on them are fully compatible.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+*Note, that both Jupyter variants can coexist on the same computing machine, and the files generated on them are fully compatible.*
+</div>
 
 
 **Voilà** is an extension that turns notebooks into standalone web applications stripping out the input cells and source code. So the rendered notebook contains only visualizations of the results, e.g., tables or graphs, that can be changed by the user using interactive widgets.
@@ -112,15 +109,12 @@ jupyter notebook
 
 That will open your Jupyter session in a web browser on **localhost** with a default URL: [http://localhost:8888/tree](http://localhost:8888/tree).
 
-<p align="center"><img width="800" src="{{ images_path }}/04_jupyter_notebook_launch.gif"></p><br>
+<p align="center"><img width="800" src="{{ images_path }}/04_jupyter_notebook_launch.gif"></p>
 
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-If you accidentally close a browser window with the active Jupyter interface to reopen it, manually copy-paste the URL displayed in the terminal into the new web browser instance.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+*If you accidentally close a browser window with the active Jupyter interface to reopen it, manually copy-paste the URL displayed in the terminal into the new web browser instance.*
+</div>
 
 ![terminal colors]({{ images_path }}/04_jupyter_reopen.png)<br>
 
@@ -131,13 +125,9 @@ If you accidentally close a browser window with the active Jupyter interface to 
 
 Having that software on a cluster with interactive visual access through the OOD service allows you to **work with data directly without copying it to a local machine** (which could be beyond its capacity with big data).
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-The good news is that <b>you do NOT have to install</b> anything yourself! <br>
-The OOD service is managed by the admins of specific HPC infrastructure. Also, the programs available through the OOD are installed and updated by them. You just need to log into the system in your browser and set up your interactive session.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+*The good news is that* ***you do NOT have to install*** *anything yourself! <br> The OOD service is managed by the admins of specific HPC infrastructure. Also, the programs available through the OOD are installed and updated by them. You just need to log into the system in your browser and set up your interactive session.*
+</div>
 
 
 ## Jupyter via SCINet OOD

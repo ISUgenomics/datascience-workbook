@@ -40,12 +40,9 @@ Here are some key differences between the Python Shell and IDLE:
 |workflow       | designed for quick experimentation and testing | provides a more structured workflow for developing larger programs |
 |difficulty     | easy to use for a beginner and doesn't require any setup | a great tool for more experienced Python developers |
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+<div class="protip" markdown="1">
 If you're just starting out with Python or working on small projects, the Python shell may be sufficient. However, if you're working on larger projects or need more advanced features, IDLE or another Python IDE may be a better choice. For details, see <a href="#further-reading" target="_blank">Further Reading</a> section in this tutorial.
-</span>
-</div><br>
+</div>
 
 
 ## First, install Python
@@ -187,12 +184,9 @@ Python IDLE is a **useful tool for learning and working with Python**, supportin
 * **help and documentation** <br>
 <i>Python IDLE provides access to Python's built-in help system, which allows you to look up information about Python functions, modules, and other features. This can be very helpful when you're trying to learn how to use a new feature or library in Python.</i>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-If you're just getting started with Python, I would encourage you to give Python IDLE a try before the more advanced IDEs and see how it can help you on your learning journey. Once you have Python installed on your local machine, you can use IDLE offline any time without further configuration.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+If you're just getting started with Python, I would encourage you to give `Python IDLE` a try before the more advanced IDEs and see how it can help you on your learning journey. Once you have Python installed on your local machine, you can **use IDLE offline** any time without further configuration.
+</div>
 
 ## Launch an IDLE
 

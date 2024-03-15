@@ -22,18 +22,12 @@ tags: []
 
 # Introduction
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-A <b>digital notebook</b> is a transformative tool in contemporary research, revolutionizing how data is analyzed, visualized, and shared. It offers an all-in-one document format that seamlessly combines <b>executable code with rich text</b> elements like project objectives, documentation, comments, and result interpretations. It supports multiple programming languages and file formats. The built-in capability to incorporate graphical visualizations, <b>including interactive plots and images</b>, further enhances its utility in diverse research scenarios.
-</span>
+<div class="note" markdown="1">
+*A* ***digital notebook*** *is a transformative tool in contemporary research, revolutionizing how data is analyzed, visualized, and shared. It offers an all-in-one document format that seamlessly combines* ***executable code with rich text*** *elements like project objectives, documentation, comments, and result interpretations. It supports multiple programming languages and file formats. The built-in capability to incorporate graphical visualizations,* ***including interactive plots and images***, *further enhances its utility in diverse research scenarios.*
 </div>
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-JupyterLab elevates the concept of a development environment to an <b>Interactive DE accessible anytime, anywhere in the form of a web application hosted directly in your preferred web browser</b>. It’s versatile, offering various modes of access – offline, online in the cloud, and on HPC systems through Open On Demand service. These features, combined with its user-friendly graphical interface, create a comfortable daily working environment that significantly <b>facilitates sharing and real-time collaboration</b>.
-</span>
+<div class="note" markdown="1">
+*JupyterLab elevates the concept of a development environment to an* ***Interactive DE accessible anytime, anywhere in the form of a web application hosted directly in your preferred web browser***. *It’s versatile, offering various modes of access – offline, online in the cloud, and on HPC systems through Open On Demand service. These features, combined with its user-friendly graphical interface, create a comfortable daily working environment that significantly* ***facilitates sharing and real-time collaboration***.
 </div>
 
 ## Start JupyterLab via Terminal
@@ -60,20 +54,14 @@ In the top menu bar select `File →  New Launcher` to add a new tab with shortc
 
 <p align="center"><img width="800" src="{{ images_path }}/04_jupyter_app_shortcuts.gif"></p>
 
-<div style="background: mistyrose; padding: 15px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Note that the terminal window in which the local server was started must remain active (can be minimized) to make the GUI in the web browser work.
-</span>
-</div><br>
+<div class="warning" markdown="1">
+*Note that the terminal window in which the local server was started must remain active (can be minimized) to make the GUI in the web browser work.*
+</div>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-A quick shortcut to <b>adding a new tab with Launcher</b> is that big blue button with the plus sign on the top left in the GUI.<br><br>
-<img width="400" src="{{ images_path }}/04_jupyter_launcher_shortcut.png">
-</span>
-</div><br>
+<div class="protip" markdown="1">
+*To quickly* ***add a new tab with Launcher view***, *click the big blue plus button at the top left of the GUI.* <br>
+<img width="300" src="{{ images_path }}/04_jupyter_launcher_shortcut.png">
+</div>
 
 
 ### - Rename a file
@@ -203,12 +191,9 @@ On the right side in the top menu of the notebook is the bug icon that enables d
 
 ![Jupyter select kernel]({{ images_path }}/04_jupyter_notebook_debug.png)
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-By clicking on the <b>blue vertical bar</b> on the left-hand side of each cell, you can <b>hide its contents</b> for a clearer view when needed.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+*By clicking on the* ***blue vertical bar*** *on the left-hand side of each cell, you can* ***hide its contents*** *for a clearer view when needed.*
+</div>
 
 
 <!-- ## Console

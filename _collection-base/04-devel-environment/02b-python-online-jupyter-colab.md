@@ -79,33 +79,33 @@ There are several online options to create a `.ipynb` notebook:
 
 Online notebooks can be a **great tool for interactive data analysis and collaboration.**
 
-<span style="font-size: 24px; font-weight: 600; color: #66cb5e; ">✓</span> The notebook `.ipynb` is primarily designed for **interactive computing, data exploration, and rapid prototyping**, making it an excellent tool for tasks like data analysis, data visualization, and machine learning.
+<em class="pros"></em> The notebook `.ipynb` is primarily designed for **interactive computing, data exploration, and rapid prototyping**, making it an excellent tool for tasks like data analysis, data visualization, and machine learning.
 
-<span style="font-size: 24px; font-weight: 600; color: #66cb5e; ">✓</span> Online notebooks can be **accessed from any computer with an internet connection**, allowing you to work from anywhere.
+<em class="pros"></em> Online notebooks can be **accessed from any computer with an internet connection**, allowing you to work from anywhere.
 
-<span style="font-size: 24px; font-weight: 600; color: #66cb5e; ">✓</span> Online notebooks make it **easy to collaborate** with others in real time, as multiple users can edit the same notebook simultaneously.
+<em class="pros"></em> Online notebooks make it **easy to collaborate** with others in real time, as multiple users can edit the same notebook simultaneously.
 
-<span style="font-size: 24px; font-weight: 600; color: #66cb5e; ">✓</span> Many online notebook platforms **come with pre-installed libraries**, making it easy to get started with data analysis and machine learning.
+<em class="pros"></em> Many online notebook platforms **come with pre-installed libraries**, making it easy to get started with data analysis and machine learning.
 
-<span style="font-size: 24px; font-weight: 600; color: #66cb5e; ">✓</span> Some online notebook platforms **offer access to high-performance hardware resources like GPUs and TPUs**, which can speed up machine learning workloads.
+<em class="pros"></em> Some online notebook platforms **offer access to high-performance hardware resources like GPUs and TPUs**, which can speed up machine learning workloads.
 <br><br>
 
 While online notebooks can be a convenient and accessible way to work with Python, there are some potential drawbacks to consider:
 
-<span style="font-size: 24px; font-weight: 600; color: #df0010; ">✗</span> For **small Python scripts** or **large modular Python developments** a plain text file script `.py` or IDEs such as Visual Studio Code (VSC) or PyCharm are often a better choice than Jupyter, since they offer more advanced features, like debugging, refactoring, and testing, that are essential for professional development.
+<em class="cons"></em> For **small Python scripts** or **large modular Python developments** a plain text file script `.py` or IDEs such as Visual Studio Code (VSC) or PyCharm are often a better choice than Jupyter, since they offer more advanced features, like debugging, refactoring, and testing, that are essential for professional development.
 
 <span style="color: #ff3870;font-weight: 500;">Learn more from the practical tutorials:</span>
 * {% include target_link href=425 text="Text editors: create Python code in terminal text files" %}
 * {% include target_link href=427 text="PyCharm: IDE for professional Python developers" %}
 
 <br><br>
-<span style="font-size: 24px; font-weight: 600; color: #df0010; ">✗</span> Online notebooks may not provide as much flexibility and customization as locally-installed versions of Jupyter. This can be a **limitation if you need to install specific libraries** or modify the environment in other ways.
+<em class="cons"></em> Online notebooks may not provide as much flexibility and customization as locally-installed versions of Jupyter. This can be a **limitation if you need to install specific libraries** or modify the environment in other ways.
 
-<span style="font-size: 24px; font-weight: 600; color: #df0010; ">✗</span> Depending on the complexity of your code and the amount of data you're working with, online notebooks **may be slower to execute** than a local installation of Python.
+<em class="cons"></em> Depending on the complexity of your code and the amount of data you're working with, online notebooks **may be slower to execute** than a local installation of Python.
 
-<span style="font-size: 24px; font-weight: 600; color: #df0010; ">✗</span> Working with sensitive data in an online notebook can pose security risks, as the data may be stored on a remote server that you don't control. *It's important to carefully consider the security implications of using online notebooks, and to take appropriate precautions to protect your data.*
+<em class="cons"></em> Working with sensitive data in an online notebook can pose security risks, as the data may be stored on a remote server that you don't control. *It's important to carefully consider the security implications of using online notebooks, and to take appropriate precautions to protect your data.*
 
-<span style="font-size: 24px; font-weight: 600; color: #df0010; ">✗</span> Some online notebook platforms **require a subscription or incur charges** for access to additional resources, which may be an issue for those working on a tight budget.
+<em class="cons"></em> Some online notebook platforms **require a subscription or incur charges** for access to additional resources, which may be an issue for those working on a tight budget.
 
 
 ---
@@ -116,22 +116,20 @@ The Jupyter Project offers an **online training platform** called <i>"Try Jupyte
 
 The <a href="https://jupyter.org/try-jupyter/lab/" target="_blank">Try Jupyter ⤴</a> online coding platform provides Python kernel with the <a href="https://pyodide.org/en/stable/" target="_blank">Pyodide  ⤴</a> distribution.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-<b>Pyodide is a Python runtime environment that runs entirely in the browser using WebAssembly</b>. It includes the Python interpreter, standard library <i>(<a href="https://pyodide.org/en/stable/usage/wasm-constraints.html" target="_blank">limited modules only  ⤴</a>)</i>, and a number of third-party libraries (e.g., numpy, pandas, scipy, scikit-learn, matplotlib, pillow, and <a href="https://pyodide.org/en/stable/usage/packages-in-pyodide.html" target="_blank">more  ⤴</a>), all of which can be used directly <b>in the browser without requiring any installation</b> or setup. Pyodide was developed by Mozilla and is part of the larger WebAssembly project.
-</span>
-</div><br>
+<div class="note" markdown="1">
+**Pyodide is a Python runtime environment** that runs entirely in the browser using WebAssembly. It includes the Python interpreter, standard library (<a href="https://pyodide.org/en/stable/usage/wasm-constraints.html" target="_blank">limited modules only</a>), and a number of third-party libraries (e.g., `numpy`, `pandas`, `scipy`, `scikit-learn`, `matplotlib`, `pillow`, and <a href="https://pyodide.org/en/stable/usage/packages-in-pyodide.html" target="_blank">more  ⤴</a>), all of which can be used directly **in the browser without requiring any installation** or setup. Pyodide was developed by Mozilla and is part of the larger WebAssembly project.
+</div>
 
 ## *PROS & CONS*
 
-<span style="font-size: 24px; font-weight: 600; color: #66cb5e; ">✓</span> A good option to quickly see if working in JupyterLab is for you. <br>
-<span style="font-size: 24px; font-weight: 600; color: #66cb5e; ">✓</span> You don't even need to install Jupyter Lab, all you need is an Internet connection. <br>
-<span style="font-size: 24px; font-weight: 600; color: #66cb5e; ">✓</span> Most useful libraries are available without additional installation. <br>
-<span style="font-size: 24px; font-weight: 600; color: #66cb5e; ">✓</span> You don't need an account or to sign in. Just open the jupyter-try and start using it! <br>
-<span style="font-size: 24px; font-weight: 600; color: #df0010; ">✗</span> You can't install custom libraries. <br>
-<span style="font-size: 24px; font-weight: 600; color: #df0010; ">✗</span> You can't easily load files from your local file system <i>(<a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/set_up_a_local_testing_server#running_a_simple_local_http_server" target="_blank">running a simple local HTTP server  ⤴</a> is required)</i> <br>
-<span style="font-size: 24px; font-weight: 600; color: #df0010; ">✗</span> You can't easily load data files and images from online resources. <br>
+<p class="pros"> A good option to quickly see if working in JupyterLab is for you. </p>
+<p class="pros"> You don't even need to install Jupyter Lab, all you need is an Internet connection. </p>
+<p class="pros"> Most useful libraries are available without additional installation. </p>
+<p class="pros"> You don't need an account or to sign in. Just open the jupyter-try and start using it! </p>
+<p class="cons"> You can't install custom libraries. </p>
+<p class="cons"> You can't easily load files from your local file system <i>(<a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/set_up_a_local_testing_server#running_a_simple_local_http_server" target="_blank">running a simple local HTTP server  ⤴</a> is required)</i> </p>
+<p class="cons"> You can't easily load data files and images from online resources. </p>
+
 
 ## Get started on a platform
 
@@ -165,15 +163,11 @@ You can now start writing Python code in the notebook cells and running them by 
 
 **5. Example Python-based notebook for creating scatterplot using matplotlib.**
 
-<i>In this example, we create the set of 100 random 3-dimensional points using `numpy` library. Then we will use a `matplotlib` functions to plot the dataset as a 2-dimensional scatterplot with a third dimension determining the size of the points.</i>
+*In this example, we create the set of 100 random 3-dimensional points using* `numpy` *library. Then we will use a* `matplotlib` *functions to plot the dataset as a 2-dimensional scatterplot with a third dimension determining the size of the points.*
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-<a href="https://numpy.org/" target="_blank">NumPy  ⤴</a> is a Python library for numerical computing that includes a <a href="https://numpy.org/doc/stable/reference/random/index.html" target="_blank">random  ⤴</a> module for generating random numbers and arrays. <br><br>
-<a href="https://matplotlib.org" target="_blank">Matplotlib  ⤴</a> is a popular data visualization library for Python. It provides a wide range of tools for creating different types of plots, including line plots, scatter plots, bar plots, histograms, and more.
-</span>
-</div><br>
+<div class="note" markdown="1">
+<a href="https://numpy.org/" target="_blank">NumPy  ⤴</a> is a Python library for numerical computing that includes a <a href="https://numpy.org/doc/stable/reference/random/index.html" target="_blank">random  ⤴</a> module for generating random numbers and arrays. <base class="mb"> <a href="https://matplotlib.org" target="_blank">Matplotlib  ⤴</a> is a popular data visualization library for Python. It provides a wide range of tools for creating different types of plots, including line plots, scatter plots, bar plots, histograms, and more.
+</div>
 
 Both libraries are included within the Pyodide distribution, so no installations are required.
 
@@ -181,25 +175,21 @@ Both libraries are included within the Pyodide distribution, so no installations
 
 *You can copy the text provided below and paste it into the first cell in the notebook.*
 
-<div style="background: #e8e9e8; padding: 15px;">
+<div class="example">
 # Python-based ScatterPlot <br>
 In this project, we will explore the use of: <br>
 * `matplotlib`, a Python data visualization library, to create a scatterplot <br>
 * `random` module of the `numpy` library, to generate a dataset for plotting, composed of 100 3-dimensional points. <br><br>
-
 *Through this exercise, we aim to showcase the potential of these powerful tools in effectively representing and visualizing complex data sets. By leveraging the capabilities of Matplotlib and Numpy, we hope to provide insights into the relationships and patterns that can be inferred from the given dataset.*
-</div><br>
+</div>
 
 Now, change the cell type from `code` to `markdown` in the top menu bar in the notebook section.
 
 ![02_python-jupyter-try-notebook-cell.png]({{ images_path }}/02_python-jupyter-try-notebook-cell.png)
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-To learn more about Markdown syntax and benefits, check out the practical tutorial {% include target_link href=933.5 text="Introduction to Markdown" %} in Section {% include target_link href=933.1 text="09. Project Management / Documentation Improvement Tool." %} It will provide you with a hands-on experience of using Markdown to format text, add images, create lists, and more. Don't miss out on this opportunity to enhance your skills!
-</span>
-</div><br>
+<div class="protip" markdown="1">
+To learn more about Markdown syntax and benefits, check out the practical tutorial {% include target_link href=933.5 text="Introduction to Markdown" %} in Section {% include target_link href=933.1 text="09. Project Management / Documentation Improvement Tool." %} It will provide you with a hands-on experience of using Markdown to format text, add images, create lists, and more. <br> Don't miss out on this opportunity to enhance your skills!
+</div>
 
 To execute the cell press `Alt + Enter` ( use `option + return` for macOS ). <br>
 *This will render the markdown content and add a new cell below. By default, new cells are always of the `code` type.*
@@ -303,22 +293,15 @@ To execute the code cell, again press `Alt + Enter` ( use `option + return` for 
 
 ![02_python-jupyter-try-notebook-graph.png]({{ images_path }}/02_python-jupyter-try-notebook-graph.png)
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-When you execute a code cell, the output generated by that cell is displayed below the code. If you want to modify the code, you can simply click on the cell and make changes to the code. Once you've made the desired changes, you can execute the cell again by clicking on the "Run" button, or by using the keyboard shortcut <i>Shift + Enter</i> or <i>Alt + Enter</i>.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+When you execute a code cell, the output generated by that cell is displayed below the code. If you want to modify the code, you can simply click on the cell and make changes to the code. <br> Once you've made the desired changes, you can execute the cell again by clicking on the `Run` button, or by using the keyboard shortcut `Shift + Enter` or `Alt + Enter`.
+</div>
 
 <p align="center"><img width="950" src="{{ images_path }}/02_python-matplotlib.gif"></p>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-By editing and re-running cells, you can quickly test different variations of your code and see how they affect the output. This can be particularly useful if you want to explore different parameters or settings for your code. <br><br>
-In addition to editing and re-running cells, you can also add new cells to your notebook to test out different options. This way, you can easily compare the results of different versions of your code side-by-side.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+By editing and re-running cells, you can quickly test different variations of your code and see how they affect the output. This can be particularly useful if you want to explore different parameters or settings for your code. <base class="mb"> In addition to editing and re-running cells, you can also add new cells to your notebook to test out different options. This way, you can easily compare the results of different versions of your code side-by-side.
+</div>
 
 After completing your work in the <b>try-jupyter</b> notebook, you may wish to download it for either personal reference or to share with others. To do this, simply select `File` from the top menu, and then choose `Download` to obtain a local copy of the notebook.
 
@@ -333,24 +316,20 @@ After completing your work in the <b>try-jupyter</b> notebook, you may wish to d
 <b>Google Colab uses Python 3</b> as its default programming language. Specifically, it uses the Anaconda distribution of Python, which includes many popular Python libraries for scientific computing and data analysis. Colab notebooks can also <b>leverage Google's machine learning</b> and data analysis services, such as <a href="https://www.tensorflow.org/" target="_blank">TensorFlow  ⤴</a> and <a href="https://cloud.google.com/bigquery/docs/" target="_blank">BigQuery  ⤴</a>.
 
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-The use of the <a href="https://docs.anaconda.com/anaconda/" target="_blank">Anaconda  ⤴</a> distribution of Python in Google Colab provides a convenient and flexible environment for data analysis and scientific computing, while also allowing users to install and use custom packages as needed. <br><br>
-Colab provides access to a <b>high-powered cloud-based computing environment</b>, which can be used to run code that requires more computational resources than a typical laptop or desktop computer can provide.
-</span>
-</div><br>
+<div class="note" markdown="1">
+The use of the <a href="https://docs.anaconda.com/anaconda/" target="_blank">Anaconda  ⤴</a> distribution of Python in Google Colab provides a convenient and flexible environment for data analysis and scientific computing, while also allowing users to install and use custom packages as needed. <base class="mb"> Colab provides access to a **high-powered cloud-based computing environment**, which can be used to run code that requires more computational resources than a typical laptop or desktop computer can provide.
+</div>
 
 ## *PROS & CONS*
 
-<span style="font-size: 24px; font-weight: 600; color: #66cb5e; ">✓</span> You can create Jupyter notebooks in a web browser without any installation on your computer. <br>
-<span style="font-size: 24px; font-weight: 600; color: #66cb5e; ">✓</span> You can use the Google's high-powered cloud-based computing resources. <i>(limited per user)</i> <br>
-<span style="font-size: 24px; font-weight: 600; color: #66cb5e; ">✓</span> A variety of commonly used Python libraries are pre-installed. You can also install custom packages. <br>
-<span style="font-size: 24px; font-weight: 600; color: #66cb5e; ">✓</span> It is easy to collaborate simultaneously with others on the same notebook shared via a link. <br>
-<span style="font-size: 24px; font-weight: 600; color: #66cb5e; ">✓</span> Colab integrates with other Google services, such as Google Drive to easily store your projects. <br>
-<span style="font-size: 24px; font-weight: 600; color: #df0010; ">✗</span> You need a Google account to sign in and use Google Colab. *(<a href="https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp&hl=en" target="_blank">Google account  ⤴</a> is free)* <br>
-<span style="font-size: 24px; font-weight: 600; color: #df0010; ">✗</span> Colab sessions may time out after a certain period of inactivity. <br>
-<span style="font-size: 24px; font-weight: 600; color: #df0010; ">✗</span> There may be concerns about data security and privacy when working with sensitive data. <br>
+<p class="pros"> You can create Jupyter notebooks in a web browser without any installation on your computer. </p>
+<p class="pros"> You can use the Google's high-powered cloud-based computing resources. <i>(limited per user)</i> </p>
+<p class="pros"> A variety of commonly used Python libraries are pre-installed. You can also install custom packages. </p>
+<p class="pros"> It is easy to collaborate simultaneously with others on the same notebook shared via a link. </p>
+<p class="pros"> Colab integrates with other Google services, such as Google Drive to easily store your projects. </p>
+<p class="cons"> You need a Google account to sign in and use Google Colab. <i>(<a href="https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp&hl=en" target="_blank">Google account  ⤴</a> is free)</i> </p>
+<p class="cons"> Colab sessions may time out after a certain period of inactivity. </p>
+<p class="cons"> There may be concerns about data security and privacy when working with sensitive data. </p>
 
 ## Get started on a platform
 
@@ -405,29 +384,27 @@ You can now start writing Python code in the notebook cells. Run your code by cl
 
 <i>In this example, we use a ready-made <b>Wine dataset</b> loaded from the `sklearn` library. Then we will use a `seaborn` functions to plot some dataset characteristics as a 2-dimensional scatterplot with a third parameter determining the color of points.</i>
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-<a href="https://scikit-learn.org/stable/" target="_blank">Scikit-learn  ⤴</a> is a a Python machine learning library that provides tools for data mining, data analysis, and machine learning tasks. It includes example datasets, for example <a href="https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_wine.html" target="_blank">Wine dataset  ⤴</a> that contains the results of a chemical analysis of wines grown in the same region in Italy by three different cultivators. The dataset has 178 samples and 13 features. <br><br>
-<a href="https://seaborn.pydata.org/" target="_blank">Seaborn  ⤴</a> is a Python data visualization library based on Matplotlib that provides a high-level interface for creating informative and attractive statistical graphics. <br><br>
+<div class="note" markdown="1">
+<a href="https://scikit-learn.org/stable/" target="_blank">Scikit-learn  ⤴</a> is a a Python machine learning library that provides tools for data mining, data analysis, and machine learning tasks. It includes example datasets, for example <a href="https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_wine.html" target="_blank">Wine dataset  ⤴</a> that contains the results of a chemical analysis of wines grown in the same region in Italy by three different cultivators. The dataset has 178 samples and 13 features. <base class="mb">
+<a href="https://seaborn.pydata.org/" target="_blank">Seaborn  ⤴</a> is a Python data visualization library based on Matplotlib that provides a high-level interface for creating informative and attractive statistical graphics. <base class="mb">
 <a href="https://pandas.pydata.org/" target="_blank">Pandas  ⤴</a> is a Python data manipulation library that provides data structures for efficiently storing and manipulating large datasets, and tools for cleaning, filtering, and transforming data.
-</span>
-</div><br>
+</div>
 
 All libraries are included within the Google Colab development environment, so no installations are required.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span><br>
-When running code in Colab, you may encounter an error message that indicates that a library is not available: "ModuleNotFoundError: No module named XXX". <br>
-To install a library that is not available in Colab, you can use the <b>!pip install</b> command:
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+<div class="protip" markdown="1">
+When running code in Colab, you may encounter an error message that indicates that a library is not available: <em class="c-warning">"ModuleNotFoundError: No module named XXX".</em>
+<base class="mb">
+To install a library that is not available in Colab, you can use the `!pip install` command:
+```bash
 !pip install library_name
-</code><br>
+```
+<base class="mt">
 This will install the library in your Colab environment, and then you should import it in your code:
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```python
 import library_name
-</code>
-</div><br>
+```
+</div>
 
 **STEP A: Add a markdown cell in the notebook providing the introduction to your project.**
 
@@ -437,26 +414,22 @@ import library_name
 
 *You can copy the text provided below and paste it into the new text cell in the notebook.*
 
-<div style="background: #e8e9e8; padding: 15px;">
+<div class="example">
 # Exploring Wine Dataset using Seaborn <br><br>
 
 This project demonstrates how to load and explore the ***Wine dataset*** from Scikit-learn using Pandas, and how to explore the relationship between the features of the dataset using Seaborn plotting functions. <br><br>
-
 * First, we'll load the dataset using the `load_wine()` function from the `sklearn.datasets` module. <br>
 * We'll then convert the dataset to a **Pandas** `DataFrame` to make it easier to work with. <br>
 * Next, we'll create a **scatter plot** comparing the "alcohol" and "color_intensity" features of the dataset using the `scatterplot()` function from the **Seaborn** library.
-</div><br>
+</div>
 
 *After pasting the text, you will see the editing interface on the left and a preview of the rendered markdown on the right. You can customize the formatting to your liking.*
 
 ![02_python-colab-add-text.png]({{ images_path }}/02_python-colab-edit-text.png)
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-To learn more about Markdown syntax and benefits, check out the practical tutorial {% include target_link href=933.5 text="Introduction to Markdown" %} in Section {% include target_link href=933.1 text="09. Project Management / Documentation improvement tools." %} It will provide you with a hands-on experience of using Markdown to format text, add images, create lists, and more. Don't miss out on this opportunity to enhance your skills!
-</span>
-</div><br>
+<div class="protip" markdown="1">
+To learn more about Markdown syntax and benefits, check out the practical tutorial {% include target_link href=933.5 text="Introduction to Markdown" %} in Section {% include target_link href=933.1 text="09. Project Management / Documentation improvement tools." %} It will provide you with a hands-on experience of using Markdown to format text, add images, create lists, and more. <br> Don't miss out on this opportunity to enhance your skills!
+</div>
 
 To render the **text cell** press `Shift + Enter`. <br>
 *This will render the markdown content and move your cursor to the cell below.*
@@ -533,13 +506,9 @@ Now, we can use a structured form of the dataset to create plots.
 
 To execute the code cell, press `Shift + Enter` or click the `Run` button.
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Note that in Colab, the result of procedures performed in a cell with a code is displayed just below but within the same cell. <br>
-In the Jupyter interface, the output appears as a separate next cell.
-</span>
-</div><br>
+<div class="warning" markdown="1">
+Note that in <u>Colab</u>, the result of procedures performed in a cell with a code is displayed just below but within the same cell. In the <u>Jupyter</u> interface, the output appears as a separate next cell.
+</div>
 
 Just below the code snippet in your notebook, you should see the output of the `print()` function:
 

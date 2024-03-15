@@ -44,22 +44,24 @@ Notebooks can be easily shared as a `.ipynb` file or hosted on online platforms 
 
 However, while Python coding in Jupyter offers many advantages, **it may not always be the best choice for every project or use case**.
 
-<span style="font-size: 24px; font-weight: 600; color: #66cb5e; ">✓</span> Jupyter notebook `.ipynb` is primarily **designed for interactive computing, data exploration, and rapid prototyping**, making it an excellent tool for tasks like data analysis, data visualization, and machine learning.
+<em class="pros"></em> Jupyter notebook `.ipynb` is primarily **designed for interactive computing, data exploration, and rapid prototyping**, making it an excellent tool for tasks like data analysis, data visualization, and machine learning.
 * interactive coding environment that allows you to test code snippets and **experiment with different algorithms** or techniques
 * notebooks make it easy to **create visualizations** of data using Python libraries like Matplotlib, Seaborn, and Plotly
 * notebook format allows you to **easily document your code**, including adding text, images, or links, which can help with reproducibility and documentation
 
-<span style="font-size: 24px; font-weight: 600; color: #df0010; ">✗</span> For **small Python scripts**, a plain text file script `.py` is often sufficient and may be more appropriate than a Jupyter notebook `.ipynb`.
+<em class="cons"></em> For **small Python scripts**, a plain text file script `.py` is often sufficient and may be more appropriate than a Jupyter notebook `.ipynb`.
 * Plain text files are lightweight, easy to read, and can be executed directly from the command line, which makes them a suitable choice for simple scripts.
 * Additionally, plain text files are easier to version control with tools like Git, which can be essential for collaborating and managing code changes.
 
-<span style="color: #ff3870;font-weight: 500;">Learn more from the practical tutorial {% include target_link href=425 text="Text editors: create Python code in terminal text files." %} </span>
+<span style="color: #ff3870;font-weight: 500;">Learn more from the practical tutorial</span> {% include target_link href=425 text="Text editors: create Python code in terminal text files." %}
 
-<span style="font-size: 24px; font-weight: 600; color: #df0010; ">✗</span> For **production-level Python code**, where performance, scalability, and maintainability are critical, other tools may be more suitable. Jupyter notebooks can be **challenging to manage with version control systems** like Git, which can make it difficult to track changes over time.
+<base class="mt">
+<em class="cons"></em> For **production-level Python code**, where performance, scalability, and maintainability are critical, other tools may be more suitable. Jupyter notebooks can be **challenging to manage with version control systems** like Git, which can make it difficult to track changes over time.
 
-<span style="font-size: 24px; font-weight: 600; color: #df0010; ">✗</span> For **large modular Python developments**, IDEs such as Visual Studio Code (VSC) or PyCharm are often a better choice than Jupyter, since they offer more advanced features, like debugging, refactoring, and testing, that are essential for professional development.
+<base class="mt">
+<em class="cons"></em> For **large modular Python developments**, IDEs such as Visual Studio Code (VSC) or PyCharm are often a better choice than Jupyter, since they offer more advanced features, like debugging, refactoring, and testing, that are essential for professional development.
 
-<span style="color: #ff3870;font-weight: 500;">Learn more from the practical tutorial {% include target_link href=427 text="PyCharm: IDE for professional Python developers." %} </span>
+<span style="color: #ff3870;font-weight: 500;">Learn more from the practical tutorial</span> {% include target_link href=427 text="PyCharm: IDE for professional Python developers." %}
 
 ---
 
@@ -100,6 +102,7 @@ To check which Python kernel is currently selected, you can click on the kernel 
 
 <p align="center"><img src="{{ images_path }}/04_jupyter_notebook_select_kernel.png" alt="Jupyter select kernel"></p>
 
+---
 
 # Python coding example <br> <i>- scatterplot by <b>plotly</b></i>
 
@@ -107,14 +110,11 @@ To check which Python kernel is currently selected, you can click on the kernel 
 
 *In this example, we use a simple dataset for a bioinformatics project. Then we will use the* `pandas` *library to create a well-structure DataFrame from the input data. Finally, we apply the* `plotly` *graphing functions to plot gene expression levels for different samples on a scatterplot.*
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
+<div class="note" markdown="1">
 <a href="https://pandas.pydata.org/" target="_blank">Pandas  ⤴</a> is a Python data manipulation library that provides data structures for efficiently storing and manipulating large datasets, and tools for cleaning, filtering, and transforming data.
-<br><br>
+<base class="mb">
 <a href="https://plotly.com/" target="_blank">Plotly  ⤴</a> is a Python data visualization library that allows users to create interactive charts and plots that can be easily shared and published online.
-</span>
-</div><br>
+</div>
 
 **1. Install Requirements**
 
@@ -130,46 +130,31 @@ pip install pandas
 pip install plotly
 ```
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-It's important to note that <b>installing libraries system-wide can also lead to version conflicts</b> and potential compatibility issues with other libraries that you may have installed. It's generally recommended to use virtual environments (e.g., Conda) or containerization tools like Docker to manage your project dependencies and avoid conflicts between different versions of the same library.
-</span>
+<div class="warning" markdown="1">
+It's important to note that **installing libraries system-wide can also lead to version conflicts** and potential compatibility issues with other libraries that you may have installed. It's generally recommended to use <u>virtual environments</u> (e.g., `conda`) or <u>containerization tools</u> like `Docker` to manage your project dependencies and avoid conflicts between different versions of the same library.
 </div>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Make sure that you have <b>pip</b> installed on your machine before running installation commands. <br>
-You can check if pip is installed by running <b>pip --version</b> in your terminal. If pip is not installed, you can download and install it from the official Python website: <a href="https://www.python.org/downloads/" target="_blank">https://www.python.org/downloads/  ⤴</a>.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+Make sure that you have `pip` installed on your machine before running installation commands. <br>
+You can check if pip is installed by running `pip --version` in your terminal. If pip is not installed, you can download and install it from the official Python website: <a href="https://www.python.org/downloads/" target="_blank">https://www.python.org/downloads/  ⤴</a>.
+</div>
 
 
 **B.** Install within env with `conda` *(not recommended)*
 
 Installing Pandas and Plotly using `conda` is a better choice in many cases because conda provides a complete package management system that allows you to manage your Python environments and dependencies more easily. It is a more robust and flexible solution than using `pip` alone.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-With <b>Conda</b>, you can <b>create isolated environments</b> for each of your projects, each with its own set of dependencies, which helps to avoid version conflicts and compatibility issues between different libraries. Additionally, conda allows you to install both Python packages and non-Python packages (such as compilers and scientific libraries) from the same command-line interface, making it easier to manage your entire development environment.
-</span>
+<div class="note" markdown="1">
+With `conda`, you can **create isolated environments** for each of your projects, each with its own set of dependencies, which helps to avoid version conflicts and compatibility issues between different libraries. Additionally, conda allows you to install both Python packages and non-Python packages (such as compilers and scientific libraries) from the same command-line interface, making it easier to manage your entire development environment.
 </div>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Conda can automatically resolve package dependencies and install compatible versions of all required packages, which saves you time and effort in setting up your development environment.
-</span>
+<div class="protip" markdown="1">
+Conda can <u>automatically resolve package dependencies</u> and install compatible versions of all required packages, which saves you time and effort in setting up your development environment.
 </div>
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-When you install packages using conda, <b>they are installed in the "base" environment by default</b>, which is activated when you start a new terminal session. This means that any packages you install using conda will be available globally, and can potentially lead to version conflicts or compatibility issues with other packages that are already installed on your system.
-</span><br>
-<b>To avoid these issues, it's recommended that you create a new conda environment for each of your projects, and install the required packages into that environment. </b>
+<div class="warning" markdown="1">
+When you install packages using `conda`, **they are installed in the "base" environment by default**, which is activated when you start a new terminal session. This means that any packages you install using conda will be available globally, and can potentially lead to version conflicts or compatibility issues with other packages that are already installed on your system.
+To avoid these issues, it's recommended that you **create a new** `conda` **environment for each of your projects**, and install the required packages into that environment.
 </div>
 
 
@@ -194,17 +179,14 @@ conda install plotly
 
 Now, you are ready to launch Jupyter Lab interface in the activated Conda environment. <br>[**see STEP 2**]
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-The step-by-step guide, provided above, explains how to install new packages into the currently active environment using the conda install command. <br>
+<div class="protip" markdown="1">
+The step-by-step guide, provided above, explains how to install new packages into the currently active environment using the conda install command. <base class="mb">
 You can also specify the packages that you want to install all-in-one step during the environment creation process:
-</span>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-conda create --name graphic_env python=3.9 pandas plotly <br>
+```bash
+conda create --name graphic_env python=3.9 pandas plotly
 conda activate graphic_env
-</code>
-</div><br>
+```
+</div>
 
 
 **2. Launch Jupyter Lab interface and create a notebook**
@@ -257,12 +239,9 @@ Now, change the cell type from `code` to `markdown` in the top menu bar in the n
 
 ![02_python-jupyter-cell-markdown.png]({{ images_path }}/02_python-jupyter-cell-markdown.png)
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-To learn more about Markdown syntax and benefits, check out the practical tutorial {% include target_link href=933.5 text="Introduction to Markdown" %} in Section {% include target_link href=933.1 text="09. Project Management / Documentation improvement tools." %} It will provide you with a hands-on experience of using Markdown to format text, add images, create lists, and more. Don't miss out on this opportunity to enhance your skills!
-</span>
-</div><br>
+<div class="protip" markdown="1">
+To learn more about `Markdown syntax` and benefits, check out the practical tutorial {% include target_link href=933.5 text="Introduction to Markdown" %} in Section {% include target_link href=933.1 text="09. Project Management / Documentation improvement tools." %} It will provide you with a hands-on experience of using Markdown to format text, add images, create lists, and more. Don't miss out on this opportunity to enhance your skills!
+</div>
 
 To execute the cell press `Alt + Enter` ( use `option + return` for macOS ). <br>
 *This will render the markdown content and add a new cell below. By default, new cells are always of the `code` type.*
@@ -330,44 +309,50 @@ df = pd.read_csv("gene_expression.csv", index_col=0)
 df.head()                     # optional: preview the DataFrame structure
 ```
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Aletrantively, if you do NOT want to load file from a local file system, you can install <b>numpy</b> library, which provides <b>random</b> module. You can use it to generate a sample dataset.<br>
-To install a new package from the level of Jupyter notebook, use the <b>!pip</b> command (preceded by an exclamation mark):
-</span>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+<div class="protip" markdown="1">
+Alternatively, if you do NOT want to load file from a local file system, you can install `numpy` library, which provides `random` module. You can use it to generate a sample dataset.
+<base class="mb">
+To install a new package from the level of Jupyter notebook, use the `!pip` command (preceded by an exclamation mark):
+```bash
 !pip install numpy
-</code><br>
-<b>NOTE:</b> <i>You can call any bash command this way, such as ls to view files.</i>
-<br><br>
+```
+<base class="mt">
+**NOTE:** You can call any bash command this way, such as `ls` to view files.
+<base class="mb">
 
-<details><summary><b><i>see the Python code to generate random dataset</i></b></summary>
+<details><summary><b>see the Python code to generate random dataset</b></summary>
 
-<i>Let's create a random dataset of gene expression levels for different samples.</i>
+<div markdown="1">
+<base class="mb">
+Let's create a random dataset of gene expression levels for different samples.
+```python
+import numpy as np
 
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-import numpy as np <br><br>
-#1 Generate 2 lists: 'genes' and 'samples' with identifiers for the observations <br>
-n = 10 <br>
-genes = ["Gene_"+str(i) for i in range(n)] <br>
-samples = ["Sample_"+str(i) for i in range(n)] <br><br>
-#2 Create the Pandas Dataframe with a random (matrix) dataset matching the size of input lists <br>
-df = pd.DataFrame( <br>
-    &emsp; &emsp; np.random.rand(len(genes), len(samples)), <br>
-    &emsp; &emsp; columns=samples, <br>
-    &emsp; &emsp; index=genes <br>
-) <br><br>
-df.head() &emsp; &emsp; &emsp; &emsp; # optional: preview the DataFrame structure<br><br>
-#3 Rename the index and column names for clarity <br>
-df.index.name = "Gene" <br>
-df.columns.name = "Sample" <br><br>
-#4 Reset the index to make the gene names a column <br>
+#1 Generate 2 lists: 'genes' and 'samples' with identifiers for the observations
+n = 10
+genes = ["Gene_"+str(i) for i in range(n)]
+samples = ["Sample_"+str(i) for i in range(n)]
+
+#2 Create the Pandas Dataframe with a random (matrix) dataset matching the size of input lists
+df = pd.DataFrame(
+    np.random.rand(len(genes), len(samples)),
+    columns=samples,
+    index=genes
+)
+df.head()                           # optional: preview the DataFrame structure
+
+#3 Rename the index and column names for clarity
+df.index.name = "Gene"
+df.columns.name = "Sample"
+
+#4 Reset the index to make the gene names a column
 df = df.reset_index().melt(id_vars=["Gene"], var_name="Sample", value_name="Expression")
-</code><br>
-<i>This will create a Pandas DataFrame with 10 samples and 10 genes, where each cell contains a random value between 0 and 1.</i>
+```
+<base class="mb">
+This will create a **Pandas** `DataFrame` with 10 samples and 10 genes, where each cell contains a random value between 0 and 1.
+</div>
 </details>
-</div><br>
+</div>
 
 
 
