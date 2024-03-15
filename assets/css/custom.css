@@ -79,15 +79,16 @@ p.pros, p.cons {margin-bottom: 0;}
 /* Code settings */
 .code-inline {
   font-family: Monaco, Consolas, "Lucida Console", monospace;
-  padding: 0.1rem 0.3rem;
-  font-size: .75em;
+  font-style: normal !important;
+  font-size: .8em;
   background: #fafafa;
   border-radius: 4px;
+  padding: 0.1rem 0.3rem;
 }
 
 .code-block {
   font-family: Monaco, Consolas, "Lucida Console", monospace;
-  font-size: .75em;
+  font-size: .8em;
   margin: 0;
   padding: 1em 1em;
   background-color: #f8f8f8;
