@@ -14,7 +14,7 @@ function adjustWrapperLinks() {
     if (prev) {console.log("Prev: ", prev.tagName)}                             //
     if (next) {console.log("Next: ", next.tagName)}                             //
     if (parent) {
-      if (parent.tagName === 'SECTION') {
+      if (parent.tagName === 'SECTION' || parent.tagName === 'DIV') {
         var nextUlFound = true;
         if (next && next.tagName === 'P') {
           next.classList.add('inline');
@@ -76,9 +76,43 @@ function adjustWrapperLinks() {
   });
 }
 
+function showNotification(message, parentElement) {
+    var notification = document.createElement('div');
+    notification.textContent = message;
+    notification.className = 'user-alert';
+    parentElement.appendChild(notification);
+
+    // Remove the notification after 2 seconds
+    setTimeout(function() {
+        notification.remove();
+    }, 2000);
+}
+
+// A function to copy code block to clipboard
+function copyCodeButton() {
+  document.querySelectorAll('pre code').forEach((codeBlock) => {
+    var btn = document.createElement('button');
+    btn.textContent = 'copy';
+    btn.className = 'code-btn';
+    btn.onclick = function() {
+      navigator.clipboard.writeText(codeBlock.innerText).then(function() {
+        showNotification('Code block copied to clipboard!', codeBlock.parentNode);
+      }, function(err) {
+        console.error('Could not copy text: ', err);
+      });
+    };
+
+    var wrapperDiv = document.createElement('div');
+    wrapperDiv.style.position = 'relative';
+    codeBlock.parentNode.insertBefore(wrapperDiv, codeBlock);
+    wrapperDiv.appendChild(codeBlock);
+    wrapperDiv.appendChild(btn);
+  });
+}
+
 
 // A function to copy order to clipboard
-function copyOrderToClipboard(orderValue) {
+function copyOrderToClipboard(orderValue, buttonElement) {
     var tempInput = document.createElement('input');
     tempInput.value = orderValue;
     document.body.appendChild(tempInput);
@@ -86,20 +120,22 @@ function copyOrderToClipboard(orderValue) {
     document.execCommand('copy');
     document.body.removeChild(tempInput);
 
-    // Feedback to the user
-    alert('Order ' + orderValue + ' copied to clipboard!');
+    buttonElement.parentNode.style.position = 'relative';
+    showNotification('Order ' + orderValue + ' copied to clipboard!', buttonElement.parentNode);
 }
+
 
 
 // Event listener for custom.js functions
 document.addEventListener('DOMContentLoaded', function() {
   adjustWrapperLinks();                                                         // reformatting target-links
+  copyCodeButton();
 
   var copyButton = document.getElementById('copyOrderBtn');                     // find and setup the button for copying order
   if (copyButton) {
     copyButton.addEventListener('click', function() {
         var orderValue = this.getAttribute('data-order');
-        copyOrderToClipboard(orderValue);
+        copyOrderToClipboard(orderValue, copyButton);
     });
   }
 });
