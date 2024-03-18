@@ -125,6 +125,7 @@ function copyOrderToClipboard(orderValue, buttonElement) {
 }
 
 
+//A function to customize the ::before of the color-coded boxes
 function addTextToBefore() {
   document.querySelectorAll('.before').forEach(function(div) {
     var customText = div.getAttribute('data-before');
