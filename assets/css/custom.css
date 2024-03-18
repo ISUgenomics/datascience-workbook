@@ -21,8 +21,11 @@
 .no-decoration {text-decoration: none !important;}
 .italic {font-style: italic !important;}
 
-.mb {margin-bottom: 0.6em; display: block;}
-.mt {margin-top: 0.8em; display: block;}
+.font-1 {font-size: 1em !important;}
+.mb-0 {margin-bottom: 0 !important;}
+.mt-0 {margin-top: 0 !important;}
+.mb {margin-bottom: 0.6em !important; display: block;}
+.mt {margin-top: 0.8em !important; display: block;}
 .c-warning {color: var(--c-warning);}
 
 .pros::before, .cons::before {
@@ -55,11 +58,11 @@ p.pros, p.cons {margin-bottom: 0;}
   margin-bottom: 0.2em;
   margin-top: -0.2em;
 }
-.warning::before {content: "WARNING"; color: var(--c-warning);}
-.protip::before {content: "PRO TIP"; color: var(--c-protip);}
-.note::before {content: "NOTE"; color: var(--c-note);}
-.example::before {content: "EXAMPLE"; color: var(--c-example);}
-.exercise::before {content: "EXERCISE"; color: var(--c-exercise);}
+.warning::before {content: var(--custom-before, "WARNING"); color: var(--c-warning);}
+.protip::before {content: var(--custom-before, "PRO TIP"); color: var(--c-protip);}
+.note::before {content: var(--custom-before, "NOTE"); color: var(--c-note);}
+.example::before {content: var(--custom-before, "EXAMPLE"); color: var(--c-example);}
+.exercise::before {content: var(--custom-before, "EXERCISE"); color: var(--c-exercise);}
 
 .warning p, .protip p, .note p, .example p, .exercise p {margin-block-end: 0em !important;}
 .warning ul, .protip ul, .note ul, .example ul, .exercise ul {margin-block-start: 0.1em; margin-block-end: 0em !important;}
@@ -122,6 +125,8 @@ pre {
 
 
 /* indentation settings */
+.level-1 {margin-left: 2.3em !important;}
+
 .li-level-1 {
   margin-left: 2.8em;
   padding: 1em 1em;
