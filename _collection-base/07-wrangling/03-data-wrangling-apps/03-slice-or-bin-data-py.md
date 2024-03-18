@@ -108,7 +108,8 @@ optional arguments:
 ## Usage (generic)
 
 **syntax:**<br>
-*^ arguments provided in square brackets [] are optional*
+<i>^ arguments provided in square brackets [] are optional</i>
+
 ```bash
 python3 bin_data.py -i input -l label -r range [-ll labels_list] [-hd header_names]
                    [-ch chunks_size] [-s {true,false}]
@@ -204,11 +205,8 @@ The data delimiter used does NOT matter, as it will be automatically detected by
 
 ![Column separator]({{ images_path }}/03-input_separator.png)
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Note that only data from numeric columns will be aggregated. So, if the values in a column are a list, so even if the values in the list are numeric, such a column will be treated as a string. If you want to process such data, change the data structure of the input so that the values in the list split into separate columns.
-</span>
+<div class="warning" markdown="1">
+**Note that only data from numeric columns will be aggregated.** So, if the values in a column are a list, so even if the values in the list are numeric, such a column will be treated as a string. If you want to process such data, change the data structure of the input so that the values in the list split into separate columns.
 </div>
 
 ### *Column names*
@@ -315,11 +313,9 @@ svn export https://github.com/ISUgenomics/data_wrangling/trunk/bin_data
 ```
 
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+<div class="protip" markdown="1">
 <i>If you downloaded the files here, ignore the download suggestions in the individual examples. You already have a set of the necessary files.</i></span>
-</div><br>
+</div>
 
 
 ### *E1: Load data from a single text file*
@@ -360,18 +356,13 @@ label_10	2265	0	0	0	0	0	1	0
 python3 bin_data.py -i input.txt -l 0 -r 1 -t 'step' -n 100 -c 'ave' -o 'output_data-step_ave'
 ```
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-The <b>labels-col</b> is used to split data into label-based chunks using <code>-l {col_index}</code> option. If you want to process only a few selected labels, use <code>-ll {to-keep_list_of_labels}</code> to define a list of kept labels. The argument of <code>-ll</code> option can be a path to a 1-column file with wanted labels or comma-separated & no-space string of those labels.<br><br>
-<b>For example,</b><br>
-<code style="background-color: #e4f0f0; width:100%; display: block; margin-top:5px;">
+<div class="protip" markdown="1">
+The **labels-col** is used to split data into label-based chunks using `-l {col_index}` option. If you want to process only a few selected labels, use `-ll {to-keep_list_of_labels}` to define a list of kept labels. <br> The argument of `-ll` option can be a path to a 1-column file with wanted labels or comma-separated & no-space string of those labels. <base class="mb">
+For example, this command will process only the even-numbered labels:<br>
+```bash
 python3 bin_data.py -i input.txt -l 0 -ll 'label_2,label_4,label_6,label_8,label_10' -r 1 -t 'step' -n 100 -c 'ave' -o 'output_data-step_ave-filtered'
-</code>
-<br>
-will process only the even-numbered labels.
-</span>
-</div><br>
+```
+</div>
 
 **RESULTS**
 

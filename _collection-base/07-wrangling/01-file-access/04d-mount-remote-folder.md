@@ -43,15 +43,13 @@ Mounting a remote High-Performance Computing (HPC) folder locally can be useful 
 * **better collaboration** <br>
 <i>Mounting a remote HPC folder locally can make it easier to collaborate with colleagues who may be working on the same data set or project. By having access to the same data set locally, you can share code, scripts, and workflows more easily, and work together more efficiently.</i>
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-However, it is important to note that mounting a remote HPC folder locally may NOT always be the best option. In some cases, it may be more appropriate to <b>work with the data directly on the remote cluster</b>, particularly if: <br>
-<li>the data is too large to be easily transferred to a local machine,</li>
-<li>there are concerns about data security.</li>
-Additionally, the process of <b>mounting a remote folder may require some technical expertise</b>, and may not be appropriate for all users or workflows.
-</span>
-</div><br>
+<div class="warning" markdown="1">
+However, it is important to note that mounting a remote HPC folder locally may NOT always be the best option. In some cases, it may be more appropriate to **work with the data directly on the remote cluster**, particularly if:
+* the data is too large to be easily transferred to a local machine,
+* there are concerns about data security.
+<base class="mb">
+Additionally, the process of **mounting a remote folder may require some technical expertise**, and may not be appropriate for all users or workflows.
+</div>
 
 
 ## Mount using SSH connection
@@ -123,12 +121,9 @@ sshfs user@hostname:/remote/folder /local/folder [options]
 * `/remote/folder` is he path to the remote folder you want to mount,
 * `/local/folder` is the mountpoint on your local machine  where you want to mount the remote folder.
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Note that you may be prompted to enter your credentials: password and MFA (authentication) code for the remote server after running this command.
-</span>
-</div><br>
+<div class="warning" markdown="1">
+Note that you may be prompted to enter your credentials: `password` and `MFA` (authentication) code for the remote server after running this command.
+</div>
 
 **3.** Navigate to the **mountpoint** on your local machine:
 
@@ -138,33 +133,27 @@ cd /local/folder
 
 **That's it! You should now be able to access the remote HPC folder as if it were stored locally on your macOS machine.**
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-<b>Remember to always unmount a remote folder when your task is done.</b><br>
-To mount a remote folder again the next time you need to use it, you can use the same sshfs command that you used to mount it the first time. <br><br>
-However, if you want to avoid having to type the command again every time you want to mount the remote folder, you can create a shell script (e.g., mount_hpc_folder.sh) that automates the process for you.
-
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-#!/bin/bash <br>
+<div class="protip" markdown="1">
+**Remember to always unmount a remote folder when your task is done.** <br>
+To mount a remote folder again the next time you need to use it, you can use the same `sshfs` command that you used to mount it the first time. <base class="mb">
+However, if you want to avoid having to type the command again every time you want to mount the remote folder, you can create a shell script (e.g., `mount_hpc_folder.sh`) that automates the process for you.
+```bash
+#!/bin/bash
 sshfs user@hostname:/remote/folder /local/folder
-</code><br>
-
+```
+<base class="mb">
 Make the file executable by entering the following command in the terminal:
-
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```bash
 chmod +x mount_remote_folder.sh
-</code><br>
-
+```
+<base class="mb">
 To mount the remote folder using the script, simply run the script from the terminal:
-
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```bash
 ./mount_remote_folder.sh
-</code><br>
-
-This will mount the remote folder to the local directory specified in the script. With this script, you can easily mount the remote folder with a single command, without having to remember the sshfs command, its arguments, and additional options.
-</span>
-</div><br>
+```
+<base class="mb">
+This will mount the remote folder to the local directory specified in the script. With this script, you can easily mount the remote folder with a single command, without having to remember the `sshfs` command, its arguments, and additional options.
+</div>
 
 
 ##  • unmount folder
@@ -182,15 +171,12 @@ For example, if you mounted a remote folder to the `~/Documents/HPC` directory u
 umount ~/Documents/HPCumount
 ```
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Note that <b>you may need to use sudo before the umount command</b> if you do not have sufficient permissions to unmount the directory. In that case, the command would be:
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+<div class="warning" markdown="1">
+Note that **you may need to use sudo before the umount command** if you do not have sufficient permissions to unmount the directory. In that case, the command would be:
+```bash
 sudo umount mountpoint
-</code><br>
-</span>
-</div><br>
+```
+</div>
 
 
 ## SSHFS options CheatSheet

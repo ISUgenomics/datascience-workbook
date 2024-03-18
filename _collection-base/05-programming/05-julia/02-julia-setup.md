@@ -44,11 +44,8 @@ julia --version
 
 Then you can use Julia in your current session on the cluster.
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP for SCINet users:</span>
-<br><span style="font-style:italic;">
-On <b>Atlas cluster</b>, Julia is available as a module in <b>version 1.5</b>, and <br>on <b>Ceres cluster</b>, it's available in <b>version 1.7</b> <i>(October 2023)</i>. <br>Depending on the version compatibility with your project dependencies, you can choose the cluster that best suits your needs. If neither of these versions aligns with your project, <b>you have the option to install a different Julia version in your user space</b>. For detailed instructions on how to do this, refer to the section {% include target_link href=552 section="#install-julia-in-selected-version" text="Install Julia in selected version" %} in this tutorial.
-</span>
+<div class="protip" markdown="1">
+On **Atlas cluster**, Julia is available as a module in `version 1.5`, and <br> on **Ceres cluster**, it's available in `version 1.7` (October 2023). <br> Depending on the version compatibility with your project dependencies, you can choose the cluster that best suits your needs. If neither of these versions aligns with your project, **you have the option to install a different Julia version in your user space**. For detailed instructions on how to do this, refer to the section {% include target_link href=552 section="#install-julia-in-selected-version" text="Install Julia in selected version" %} in this tutorial.
 </div>
 
 
@@ -115,11 +112,8 @@ julia +release
 
 When needed, **close Julia interpreter** by typing `exit()`.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-The <b>Julia interpreter is called REPL</b>, Read-Eval-Print Loop. It is an interactive environment where you can enter Julia expressions for evaluation, see the results, and repeat this process to explore Julia code in a live, iterative manner.
-</span>
+<div class="note" markdown="1">
+The **Julia interpreter is called** `REPL`, Read-Eval-Print Loop. It is an interactive environment where you can enter Julia expressions for evaluation, see the results, and repeat this process to explore Julia code in a live, iterative manner.
 </div>
 
 
@@ -203,11 +197,8 @@ Commands: <br>
 
 Once you launch REPL with a `julia` keyword you will enter the default Julia environment. The default environment is typically the `@v#.#` environment, where `#.#` corresponds to the version of Julia that you are using. For example, for Julia version 1.9, the default environment would be `@v1.9`. <br>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-In this default environment, you have access to all the <b>packages that have been installed system-wide for your user account</b>. It acts as a <b>base environment</b> where you can access common packages and utilities. Any packages installed in this environment are <b>available across all other environments</b> unless a different version of the same package is specified in another environment.
-</span>
+<div class="protip" markdown="1">
+In this default environment, you have access to all the **packages that have been installed system-wide** <u>for your user account</u>. It acts as a `base` **environment** where you can access common packages and utilities. Any packages installed in this environment are <u>available across all other environments</u> unless a different version of the same package is specified in another environment.
 </div>
 
 To install additional packages to your default Julia environment, enter the package manager mode with `]`:
@@ -233,11 +224,8 @@ You can also add (install) multiple packages with a single add command in Julia:
 
 Creating a virtual environment in Julia is slightly different compared to languages like Python. In Julia, the term for a virtual environment is a "project". Each project has its own set of dependencies, which are managed through a `Project.toml` file, and optionally a `Manifest.toml` file.
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; ">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-It's beneficial to <b>have a centralized location for all your Julia Projects</b>, i.e., isolated environments, instead of creating each environment in a different location alongside specific projects. Centralizing your Julia environments facilitates easier management, backup, and sharing of environments, while also ensuring a consistent and organized structure, which simplifies the process of finding and activating environments as you switch between different projects.
-</span>
+<div class="protip" markdown="1">
+It's beneficial to **have a centralized location for all your Julia Projects**, i.e., isolated environments, instead of creating each environment in a different location alongside specific projects. Centralizing your Julia environments facilitates easier management, backup, and sharing of environments, while also ensuring a consistent and organized structure, which simplifies the process of finding and activating environments as you switch between different projects.
 </div>
 
 1. **Open terminal** and navigate to the location where you want to store your isolated environments for Julia. <br><br>
@@ -285,12 +273,12 @@ You can also add (install) multiple packages with a single add command in Julia:
 
 ### Move `.julia` from home to project on HPC
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-When you <b>set up Julia on the HPC</b> infrastructure for the first time, remember to relocate the <b>.julia</b> hidden folder from your home to the storage space without limited memory quota (e.g., on SCINET clusters it can be the <b>/project/</b> path). Then soft link them back to the /home/user.name directory to make them accessible from this default location. <br><br>
-<b>NOTE:</b> The .julia hidden folder may not appear immediately after loading a Julia module, but it will definitely be created once you install some Julia libraries. To verify the presence of the .julia directory in your home, utilize the command: <br> <b>ls -lha ~</b>
-</span>
+<div class="warning" markdown="1">
+When you **set up Julia on the HPC** infrastructure for the first time, remember to relocate the `.julia` hidden folder from your `$HOME` to the storage space without limited memory quota (e.g., on SCINET clusters it can be the `/project/` **path**). Then soft link them back to the `/home/user.name` directory to make them accessible from this default location. <base class="mb">
+**NOTE:** The `.julia` hidden folder may not appear immediately after loading a Julia module, but it will definitely be created once you install some Julia libraries. To verify the presence of the `.julia` directory in your `$HOME`, utilize the command:
+```bash
+ls -lha ~
+```
 </div>
 
 ```bash
@@ -323,11 +311,8 @@ Pkg.add("IJulia")
 ![05_julia_jupyter_kernel.png]({{ images_path }}/05_julia_jupyter_kernel.png)
 
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; margin-left: 37px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-If you <b>install IJulia in the base environment</b>, you'll obtain a universal Julia kernel in Jupyter Lab, which can be paired with any custom environment created later. To utilize a custom environment with this universal kernel, simply activate the desired environment within a notebook (follow the steps provided below).
-</span>
+<div class="protip level-1" markdown="1">
+If you **install** `IJulia` **in the base environment**, you'll obtain a <u>universal Julia kernel in Jupyter Lab</u>, which can be paired with any custom environment created later. To utilize a custom environment with this universal kernel, simply activate the desired environment within a notebook (follow the steps provided below).
 </div>
 
 Once `IJulia` is installed, you can launch Jupyter Lab ( assuming you {% include target_link href=412 section="#installing-jupyter" text="have it installed" %}).
@@ -367,29 +352,19 @@ using Pkg
 Pkg.activate("/path/to/your/environment")
 ```
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-If you decided to create a unified storage location for your Julia environments, e.g. <b>JULIA_ENVS</b>, the path should look like <br>
-/project/account/user.name/JULIA_ENVS/env_name. <br>
-In the JupyterLab interface, you can check the location of your notebook using the file browser on the top left, and specify the relative or absolute path to the custom Julia environment.
-</span>
+<div class="protip" markdown="1">
+If you decided to create a unified storage location for your Julia environments, e.g. `JULIA_ENVS`, the path should look like `/project/account/user.name/JULIA_ENVS/env_name`. <base class="mb">
+In the **JupyterLab interface**, you can check the location of your notebook using the <u>file browser on the top left</u>, and specify the relative or absolute path to the custom Julia environment.
 </div>
 
 Press `alt + enter` or `option + return` (on Mac) to activate your custom project (env). <br>In the following cells in the notebook, you can test your Julia code.
 
 ![05_julia_activate_env_in_notebook.png]({{ images_path }}/05_julia_activate_env_in_notebook.png)
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-To create a new kernel for each environment, you would typically create a new IJulia kernel specification file that points to the desired environment. This can be a bit more complex and requires some additional setup compared to the method showed above.
-</span>
+<div class="warning" markdown="1">
+To create <u>a new kernel</u> for each environment, you would typically create a new `IJulia kernel` specification file that points to the desired environment. This can be a bit more complex and requires some additional setup compared to the method showed above.
 </div>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-It is recommended to <b>create a single Julia kernel in the base environment</b> with system-wide installed libraries, and then activate more specific environments as needed within individual Jupyter notebooks.
-</span>
+<div class="protip" markdown="1">
+It is recommended to **create a single** `Julia kernel` **in the base environment** with system-wide installed libraries, and then activate more specific environments as needed within individual Jupyter notebooks.
 </div>

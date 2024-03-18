@@ -74,20 +74,16 @@ Here are several examples of how proficiency in raster graphic editing can assis
 
 The scientific community relies on transparent and unbiased reporting of results to ensure the reproducibility and validity of research. Modifying data using raster editors undermines the trust and reliability of scientific investigations, potentially leading to misleading conclusions and hampering scientific progress.
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;"><b>Modifying or artificially changing research results using a raster editor is strongly discouraged and considered unethical.</b><br>
-It is crucial to maintain the integrity and credibility of scientific research by presenting accurate and unaltered data. Altering or manipulating research results using raster graphic editing tools can lead to misrepresentation, distortion of findings, and a breach of scientific ethics.</span>
+<div class="warning" markdown="1">
+**Modifying or artificially changing research results using a raster editor is strongly discouraged and considered unethical.** <br>
+It is crucial to maintain the integrity and credibility of scientific research by presenting accurate and unaltered data. Altering or manipulating research results using raster graphic editing tools can lead to misrepresentation, distortion of findings, and a breach of scientific ethics.
 </div>
 
 ## Common file formats: <br>PNG, JPEG, TIFF
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-Raster graphics formats are image file formats that store and represent images as a grid of pixels, where each pixel contains color and intensity information. These formats are widely used for various applications, including digital photography, graphic design, and web graphics.
-</span>
-</div><br>
+<div class="note" markdown="1">
+**Raster graphics formats** are image file formats that store and represent images as a grid of pixels, where each pixel contains color and intensity information. These formats are widely used for various applications, including digital photography, graphic design, and web graphics.
+</div>
 
 Each raster graphics format offers unique features and characteristics, catering to different needs and use cases. The choice of format depends on factors such as image complexity, desired image quality, transparency requirements, file size considerations, and compatibility with specific software or platforms.
 
@@ -284,12 +280,9 @@ Go to **Colors** tab in the menu bar and explore options like:
 
 to make adjustments to the image's color and tone.
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Keep caution when editing layers in GIMP and ensure the correct layer is selected to avoid unintended modifications. To change the active layer in GIMP, go to the <b>Layers</b> dialog panel (typically on the bottom-right) and click on the layer intended for edition. The currently active layer is highlighted. See {% include target_link href=812 section="#layers" text="Layers section" %} for more details.
-</span>
-</div><br>
+<div class="warning" markdown="1">
+Keep caution when editing layers in GIMP and ensure the correct layer is selected to avoid unintended modifications. To change the active layer in GIMP, go to the **Layers** dialog panel (typically on the bottom-right) and click on the layer intended for edition. The currently active layer is highlighted. See {% include target_link href=812 section="#layers" text="Layers section" %} for more details.
+</div>
 
 ![01-raster_gimp_colors1.png]({{ images_path }}/01-raster_gimp_colors1.png)
 

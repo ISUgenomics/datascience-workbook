@@ -111,33 +111,27 @@ It is important to close the file once we are finished using it. This ensures th
 ```python
 file.close()
 ```
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">So, each time you use <b>open(file)</b> function, once you are done processing the file, remember to also use the <b>close()</b> function to protect the file content.</span>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-file = open('example.txt', 'r') <br><br>
-&sharp; (file processing) <br><br>
+
+<div class="protip" markdown="1">
+So, each time you use `open(file)` function, once you are done processing the file, remember to also use the `close()` function to protect the file content.
+```python
+file = open('example.txt', 'r')
+# (file processing)
 file.close()
-</code>
-</div><br>
+```
+</div>
 
 ## Open-Close using `with` <br> ***(recommended)***
 
 In Python, the `with` statement is used to wrap the execution of a block of code with methods defined by a context manager. The with statement ensures that the resources are properly managed and cleaned up even if an exception occurs. This is particularly useful when working with files or other resources that need to be **opened and closed properly** to avoid resource leaks.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-A context manager is an object that defines the methods <code>__enter__()</code> and <code>__exit__()</code> that are used to set up and tear down resources that are used by the block of code.
-</span>
-</div><br>
+<div class="note" markdown="1">
+A context manager is an object that defines the methods `__enter__()` and `__exit__()` that are used to set up and tear down resources that are used by the block of code.
+</div>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Using the <b>with</b> statement is considered a best practice in Python because it ensures that resources are properly managed and cleaned up, and reduces the likelihood of resource leaks and other errors.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+Using the `with` statement is considered a best practice in Python because it ensures that resources are properly managed and cleaned up, and reduces the likelihood of resource leaks and other errors.
+</div>
 
 
 The `with` statement is a convenient way to **manage file objects in Python** because it automatically takes care of closing the file when the block of code is exited, even if an exception is raised. The benefits of using the with statement to manage open-close a file include:
@@ -162,10 +156,9 @@ with open('output_file.txt', 'w') as f:
 ```
 <i>In this example, the open() function is used to open a file called "output_file.txt" in write mode ('w'). The <b>with</b> statement ensures that the file is properly closed after the block of code is executed, even if an exception occurs. Inside the with block, the <b>f.write()</b> method is used to write a line of text to the file.</i>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">If you want to write to a file line by line, remember to add a new line charaster <b>"\n"</b> to the end of your string.</span>
-</div><br>
+<div class="protip" markdown="1">
+If you want to <u>write to a file line by line</u>, remember to add a new line charaster `\n` to the end of your string.
+</div>
 
 
 ## **Reading a file**
@@ -244,17 +237,13 @@ with open('example.txt', 'w') as file:          # Open the file in write mode an
 
 In Python, you can use the `print()` function with the `file` parameter to **write output to a text file**. The *file* parameter allows you to specify the file object that you want to write the output to. The `print()` function also **supports formatting output** to make it more readable. This can be a convenient way to write formatted data to a file without having to use the `write()` method.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">The <b>print()</b> function can be used to write formatted output to the console or to a text file. By default, <b>print()</b> writes to the console, but you can specify a "file" object as the file parameter to write to a text file instead.</span>
-</div><br>
+<div class="note" markdown="1">
+The `print()` function can be used to write formatted output to the console or to a text file. By default, `print()` writes to the console, but you can specify a "file" object as the file parameter to write to a text file instead.
+</div>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-It is recommended to <b>use the <code>with</code> statement to manage the open-close of the processed file</b>. When the <code>with</code> block ends, the file is automatically closed and any buffered data is flushed to the disk.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+It is recommended to **use the** `with` **statement to manage the open-close of the processed file**. When the `with` block ends, the file is automatically closed and any buffered data is flushed to the disk.
+</div>
 
 
 ###  • *padding with spaces*
@@ -277,12 +266,9 @@ with open('example.txt', 'w') as f:
 ###  • *data separator: sep & end*
 The `print()` function also has a `sep` parameter that allows you to specify a separator between multiple arguments *(e.g., variables)* that will be printed. By default, the `print()` function ends the line with a new line characterbut you can change that by customizung the value of the `end` parameter.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-You can use the <b>sep</b> and <b>end</b> parameters of the <b>print()</b> function to control the separator between values and the end-of-line character. <br><br>
-</span>
-</div><br>
+<div class="protip" markdown="1">
+You can use the `sep` and `end` parameters of the `print()` function to control the separator between values and the end-of-line character.
+</div>
 
 
 For example, to print two numbers separated by a dash, you can use:
@@ -307,29 +293,27 @@ with open("names.txt", "w") as f:                     # Open & Close a file usin
 ```
 *In this example, we first define a list of names called 'names'. We then use the with statement to open a file called "names.txt" in write mode, which automatically closes the file when we're done with it. We use the print() function to write the list of names to the file. The 'sep' parameter in the print() function separates the names with a comma (,), which will result in the names being written to the file as a comma-separated list.*
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-By using the <b>*</b> operator to unpack the list (<code>*names</code> in the example above), you can pass each list element as a separate argument to the print() function.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+By using the `*` operator to unpack the list (e.g., `*names` in the example above), you can pass each list element as a separate argument to the `print()` function.
+</div>
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Note that the <b>print()</b> function automatically adds a newline character <b>("\n")</b> at the end of the output, so each call to print() will start a new line in the file. If you want to write multiple values to the same line, you can use:</span> <br><br>
-1) 'end' parameter in the print() function: <br>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+<div class="warning" markdown="1">
+Note that the `print()` function automatically adds a newline character (`"\n"`) at the end of the output, so each call to `print()` will start a new line in the file. If you want to write multiple values to the same line, you can use: <base class="mb">
+1) `end` parameter in the `print()` function:
+```python
 print(*names, sep="-", end=" ", file=f)
-</code><br>
-2) string concatenation: <br>
-<i>String concatenation is the process of combining two or more strings into a single string. In Python, you can concatenate strings using the + operator or by using the join() method.</i>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-names = [John, Anna, Bob] <br>
-names2 = ['Sam', 'Kathy', 'Emma'] <br><br>
+```
+<base class="mt">
+2) string concatenation:
+<div class="note font-1 mb" markdown="1">
+String concatenation is the process of combining two or more strings into a single string. In Python, you can concatenate strings using the `+` operator or by using the `join()` method.
+</div>
+```python
+names = [John, Anna, Bob]
+names2 = ['Sam', 'Kathy', 'Emma']
 print('-'.join(names+names2), file=f)
-</code>
-</div><br>
+```
+</div>
 
 
 ###  • *use format() method*
@@ -360,12 +344,9 @@ with open("example.txt", "w") as f:                                         # Op
 
 The `print()` function in Python supports various formatting options to align output in a specific way.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-In Python, curly brackets {} are used as placeholders in a string to be replaced with values at runtime. When used with the format() method, the curly brackets are used to indicate the location and formatting of values that will be inserted into the string.
-</span>
-</div><br>
+<div class="note" markdown="1">
+In Python, curly brackets `{}` are <u>used as placeholders</u> in a string to be replaced with values at runtime. When used with the `format()` method, the curly brackets are used to indicate the location and formatting of values that will be inserted into the string.
+</div>
 
 You can **use the curly braces {} as placeholders** for the values you want to print, and then use the `format()` method to substitute those placeholders with actual values *(general syntax below)*.
 ```python
@@ -482,9 +463,6 @@ There are several common types of exceptions that may occur when working with fi
 * `TypeError` : Raised when an object provided to a file operation is of the wrong type, such as when passing a string where a file object is expected.
 
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-It's important to handle exceptions when working with files in Python, as failure to do so can result in unexpected program crashes or data loss. By using exception handling, you can gracefully handle errors and provide useful error messages to the user.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+It's important to **handle exceptions** when working with files in Python, as failure to do so can result in unexpected program crashes or data loss. By using exception handling, you can gracefully handle errors and <u>provide useful error messages to the user</u>.
+</div>

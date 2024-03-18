@@ -69,13 +69,9 @@ There are several ways to **find available software** on a high-performance comp
 * D. [Check the documentation](#check-the-documentation)
 * E. [Ask the system administrator](#ask-the-system-administrator)
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-It's worth noting that <b>each HPC system can have a different way of managing and organizing the software</b>, so it's best to consult the documentation or <b>ask the system administrator for specific instructions</b>.
-<br><br>
-Additionally, in some cases a software is not publicly available and may require to go through a software request process, so it's best to <b>clarify the availability and access rights of the software</b>.
-</span>
+<div class="warning" markdown="1">
+It's worth noting that **each HPC system can have a different way of managing and organizing the software<**, so it's best to consult the documentation or <u>ask the system administrator for specific instructions</u>. <base class="mb">
+Additionally, in some cases a software is not publicly available and may require to go through a software request process, so it's best to <u>clarify the availability and access rights of the software</u>.
 </div>
 
 ## **Software as built-in commands**
@@ -221,15 +217,17 @@ scp <user>@<hostname_to_remote>:<path_on_remote>/<transferred_file_name> <path_o
 scp alex.badacz@atlas-dtn.hpc.msstate.edu:/project/90daydata/file.txt ~/DATA/
 ```
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-To copy directories use: <br>
-<code>scp -r {path_to_the source} {path_to_the_destination} </code><br><br>
-To synchronize the content in both locations, recursively transfer the data using <code>rsync</code> command: <br>
-<code>rsync -avz --no-p --no-g {path_to_the source} {path_to_the_destination} </code><br><br>
-</span>
-</div><br>
+<div class="protip" markdown="1">
+To copy directories use:
+```bash
+scp -r {path_to_the source} {path_to_the_destination}
+```
+<base class="mt">
+To synchronize the content in both locations, recursively transfer the data using `rsync` command:
+```bash
+rsync -avz --no-p --no-g {path_to_the source} {path_to_the_destination}
+```
+</div>
 
 Learn more from the practical tutorials about {% include target_link href=712 text="Remote data transfer" %} available in section {% include target_link href=700 text="07: Data Acquisition and Wrangling" %} of this workbook. <br>
 If you seek for a guide about transferring data to {% include target_link href=612.1 text="SCINet Scientific Computing" %}, see tutorials:

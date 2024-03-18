@@ -46,12 +46,9 @@ Another benefit of making data available online is **saving users time and effor
 
 In most cases, the online interface visited by a user is simply a **rendered frontend for content stored on a physical backend**, such as an HPC storage or server located somewhere in the world. The online resources provide an easy & friendly way for users to access and interact with the data, which could be difficult to access otherwise.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-It's worth noting, however, that there are <b>some exceptions</b> to this. For example, some web applications or services may use client-side technologies, such as JavaScript or WebAssembly, to <b>process data or content directly in the user's web browser</b>, without sending the data back to the server for processing. In these cases, the online interface may play a more active role in manipulating the visible content.
-</span>
-</div><br>
+<div class="note" markdown="1">
+It's worth noting, however, that there are **some exceptions** to this. For example, some web applications or services may use client-side technologies, such as JavaScript or WebAssembly, to **process data or content directly in the user's web browser**, without sending the data back to the server for processing. In these cases, the online interface may play a more active role in manipulating the visible content.
+</div>
 
 
 ## Explore vs. Download
@@ -119,12 +116,9 @@ To help you compare and contrast available methods, please explore the table pro
 When you visit a website, your computer sends a **HTTP request** to the server hosting the website to retrieve the webpage or other content that you want to see. <br>
 *For example, when you enter a URL in your web browser and press "Enter" your browser sends an HTTP request to the server hosting the website associated with that URL, asking for the webpage to be retrieved and displayed in your browser.*
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-An HTTP request is a message sent by a client <i>(such as a web browser)</i> to a server <i>(such as a web server)</i> asking for a particular resource or action to be performed. It is a fundamental part of the communication that takes place between clients and servers on the internet, allowing users to access the content and services they need from online resources.
-</span>
-</div><br>
+<div class="note" markdown="1">
+An `HTTP request` is a message sent by a client (such as a web browser) to a server (such as a web server) asking for a particular resource or action to be performed. It is a fundamental part of the communication that takes place between clients and servers on the internet, allowing users to access the content and services they need from online resources.
+</div>
 
 **HTTP vs. HTTPS**
 
@@ -136,12 +130,9 @@ The primary difference between HTTP and HTTPS is that **HTTP is an unsecured** p
 * **HTTPS** <br>
 <i>HTTPS uses SSL/TLS encryption to protect the data being transmitted. This encryption ensures that the data is kept private and cannot be intercepted or read by unauthorized parties. In addition, HTTPS provides authentication, ensuring that the client is communicating with the intended server and not an imposter.</i>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Think of it like sending a letter in the mail. With a regular HTTP request, your letter would be sent in a plain envelope that anyone could open and read. But with an HTTPS request, your letter would be sent in a sealed, tamper-proof envelope that only the intended recipient can open. This ensures that your private information, such as your login credentials or credit card details, are protected while you're browsing the internet.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+Think of it like sending a letter in the mail. With a regular `HTTP request`, your letter would be sent in a plain envelope that anyone could open and read. But with an `HTTPS request`, your letter would be sent in a sealed, tamper-proof envelope that only the intended recipient can open. This ensures that your private information, such as your login credentials or credit card details, are protected while you're browsing the internet.
+</div>
 
 
 ## 1. Web browser extensions
@@ -153,21 +144,14 @@ Web browser extensions and built-in buttons can be used to download data directl
 ![01-download_web_button.png]({{ images_path }}/01-download_web_button.png) <br>
 *The figure shows the online interface of the Uniptot Database, accessible at <a href="https://www.uniprot.org" target="_blank">https://www.uniprot.org  ⤴</a>.*
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-<b>Downloading online data by clicking built-in buttons can be time-consuming if you need to download hundreds of files.</b> <br>
-This is because clicking on each individual download button requires manual input and takes time to complete. If you need to download a large number of files, this process can become tedious and inefficient.
-</span>
+<div class="warning" markdown="1">
+**Downloading online data by clicking built-in buttons can be time-consuming if you need to download hundreds of files.** This is because clicking on each individual download button requires manual input and takes time to complete. If you need to download a large number of files, this process can become tedious and inefficient.
 </div>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-<b>In such cases, using a batch download tool can significantly speed up the download process.</b> <br>
-Batch download tools are software or command-line programs that automate the process of downloading multiple files at once. These approaches can be especially useful if the files are hosted on a website that requires user authentication or if the files are only accessible through a complex navigation path on the website. Learn more in the following sections.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+**In such cases, using a batch download tool can significantly speed up the download process.** <br>
+Batch download tools are software or command-line programs that automate the process of downloading multiple files at once. These approaches can be especially useful if the files are hosted on a website that requires user authentication or if the files are only accessible through a complex navigation path on the website. <br> Learn more in the following sections.
+</div>
 
 
 ## 2. HTTP interface for file transfer
@@ -181,10 +165,9 @@ The HTTPS interface for file transfer can be accessed through a web browser and 
 This interface is typically used for **downloading voluminous files** that are too large to be sent as email attachments or for **distributing files to a large number of users**. The HTTP(S) protocols are widely supported by web browsers and other HTTP clients, making it an easy and accessible way to distribute files. <br>
 One advantage of using an HTTP interface for file transfer is that it **does NOT require any special software** or tools to use. Users only need a web browser and an internet connection to access the interface and download files. Additionally, because the files are downloaded using HTTP, **data can be split into chunks**, allowing for faster and more efficient downloads.
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">Some websites may require users to log in or provide authentication credentials before allowing them to download files</span>
-</div><br>
+<div class="warning" markdown="1">
+Some websites may require users to log in or provide authentication credentials before allowing them to download files.
+</div>
 
 Downloading via HTTP(S) interface for file transfer is **possible both manually** on the web interface **and from the command line** using command-line tools like `curl` or `wget` followed by the URL to the downloaded file. *After right-clicking on the selected file, select the "Copy Link" option from the pop-up dialog box.*
 
@@ -246,13 +229,10 @@ API (Application Programming Interface) is a set of protocols, tools, and standa
 
 **APIs are also commonly used in scientific web services** to allow researchers to access and interact with data in another way than manually in the web-based GUI. Many scientific web services provide APIs that facilitate researchers to automate data retrieval and analysis, and to integrate data from multiple sources into their research workflows. <span style="color: #ff3870;font-weight: 500;">To explore a broad list of science-driven web services providing API access to their resources, visit section X in tutorial Y.</span> (coming soon)
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-APIs are a standardized way for web services to expose data and functionality to other applications. While many websites and web services provide APIs that can be used to retrieve data, <b>NOT all websites have APIs available for public use</b>.<br>
-In cases where a website or web service does not provide an API, you may need to <b>use web scraping</b> [see section below] or other techniques to retrieve data from the website.
-</span>
-</div><br>
+<div class="note" markdown="1">
+APIs are a standardized way for web services to expose data and functionality to other applications. <br> While many websites and web services provide APIs that can be used to retrieve data, **NOT all websites have APIs available for public use**. <base class="mb">
+In cases where a website or web service does not provide an API, you may need to **use web scraping** (see section below) or other techniques to retrieve data from the website.
+</div>
 
 ### *How to get started?*
 
@@ -268,20 +248,14 @@ Whether you are a beginner or an experienced researcher, **learning how to use A
 
 Web scraping involves extracting data from websites by analyzing the website's HTML (source code) and identifying specific elements that contain the desired information. Web scraping can be done using **Python programming** language and dedicated libraries such as <a href="https://pypi.org/project/beautifulsoup4/" target="_blank">Beautiful Soup  ⤴</a>, <a href="https://pypi.org/project/Scrapy3/" target="_blank">Scrapy  ⤴</a>, or <a href="https://pypi.org/project/selenium/" target="_blank">Selenium  ⤴</a>. **Web scraping can be more complex and less reliable than using an API** [see section above](#api).
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Web scraping is a more advanced task that <b>requires a higher level of technical knowledge and programming skills</b> than simple file transfers or API requests. In particular, it is recommended that those taking up the web scraping challenge have a basic understanding of Python before attempting to scrape websites.
-</span>
+<div class="warning" markdown="1">
+Web scraping is a more advanced task that **requires a higher level of technical knowledge and programming skills** than simple file transfers or API requests. In particular, it is recommended that those taking up the web scraping challenge have a basic understanding of Python before attempting to scrape websites.
 </div>
 
 **The challenges of web scraping** are primarily related to the fact that websites are designed for human consumption, and so the structure and format of the data on a website can be complex and inconsistent. As a result, web scraping often **requires the use of advanced techniques** like regular expressions and parsing algorithms to extract the desired data from a website.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Before attempting to scrape a website for data, it is often a good idea to <b>explore other options for downloading the data first</b>. Many online resources provide APIs or other tools for accessing their data, and their developers may be willing to help you find the best method for accessing the data you need. In some cases, <b>reaching out to the website admins directly</b> may be the easiest and fastest way.
-</span>
+<div class="protip" markdown="1">
+Before attempting to scrape a website for data, it is often a good idea to **explore other options for downloading the data first**. Many online resources provide APIs or other tools for accessing their data, and their developers may be willing to help you find the best method for accessing the data you need. In some cases, **reaching out to the website admins directly** may be the easiest and fastest way.
 </div>
 
 If you have exhausted all other options for obtaining the data you need or if web scraping is a topic that interests you, <span style="color: #ff3870; font-weight: 500;">exploring the hands-on tutorial</span> {% include target_link href=713.3 text="Downloading online data using Python-based web scraping" %} provided in this workbook, may be a good next step.

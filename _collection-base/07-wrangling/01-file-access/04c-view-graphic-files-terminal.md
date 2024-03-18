@@ -27,12 +27,9 @@ tags: []
 
 Graphics are often used in scientific research, including **charts, graphs, and images**. They **can be successfully generated on computing clusters** either as an output of some software or custom user's scripts. However, the problem arises when the user wants to quickly view any graphic files in the command line interface.
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-When it comes to previewing graphic files, it's important to note that the <b>command line interface itself does not support displaying graphics</b>. This is because the command line interface is primarily text-based and lacks the graphical capabilities necessary for displaying images, charts, and other visual elements.
-</span>
-</div><br>
+<div class="warning" markdown="1">
+When it comes to previewing graphic files, it's important to note that the **command line interface itself does not support displaying graphics**. This is because the command line interface is primarily text-based and lacks the graphical capabilities necessary for displaying images, charts, and other visual elements.
+</div>
 
 ## *What's the issue?*
 
@@ -76,24 +73,18 @@ One technique is **converting graphics to ASCII art** displayed directly in the 
 ![01-remote_preview_ascii_art.png]({{ images_path }}/01-remote_preview_ascii_art.png)<br>
 *The figure shows the Linux logo in PNG format (left panel) and two variants of its conversion to ASCII art displayed directly in the terminal window (middle and right panels). The tool used was an ascii-image-converter.*
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-ASCII stands for American Standard Code for Information Interchange, which is a <b>character encoding standard</b> that assigns unique numeric codes to represent letters, numbers, punctuation marks, and other characters commonly used in the English language. ASCII defines 128 different characters, each of which is represented by a unique 7-bit binary code.
-</span>
-</div><br>
+<div class="note" markdown="1">
+ASCII stands for American Standard Code for Information Interchange, which is a **character encoding standard** that assigns unique numeric codes to represent letters, numbers, punctuation marks, and other characters commonly used in the English language. ASCII defines 128 different characters, each of which is represented by a unique 7-bit binary code.
+</div>
 
 ***How it works?*** <br>
 When <b>converting graphics to text-based ASCII art in the terminal</b>, the image is first divided into small sections called "tiles". Each tile corresponds to a block of text characters in the output ASCII art. The brightness or color of the pixels in each tile is then analyzed, and a character is selected from a predefined set of ASCII characters based on how closely it matches the brightness or color of the tile. This process is repeated for each tile in the image, resulting in a text-based representation of the original image.
 
 ![01-remote_preview_ascii_art2.png]({{ images_path }}/01-remote_preview_ascii_art2.png)<br>
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
+<div class="warning" markdown="1">
 Depending on the complexity and size of the original graphic, the resulting text output may be quite lengthy and difficult to interpret.
-</span>
-</div><br>
+</div>
 
 
 # Hands-on tutorial (ASCII art)
@@ -103,12 +94,9 @@ The primary focus of this tutorial is to help users get the required software in
 
 There are many tools available that can be used to **convert graphics to ASCII art in the terminal**. Some of these tools may be preinstalled on the remote machine, while others can be installed in the user's local space or even in their home directory. This means that **users can often set up and use these tools without requiring administrative privileges** or the installation of additional software on the remote HPC system.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-When working on an HPC system, it can be challenging to install custom software because users typically do not have the necessary privileges to install packages using the system's package manager. In such cases, the best options are either to <b>use container of the software image or to build the executable from source code</b> in the user space.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+When working on an HPC system, it can be challenging to install custom software because users typically do not have the necessary privileges to install packages using the system's package manager. In such cases, the best options are either to **use container of the software image or to build the executable from source code** in the user space.
+</div>
 
 **In this tutorial, we will focus on providing a unified and robust way of custom software installation on HPC systems, primarily by using source code available from trusted repositories such as <a href="https://pkgs.org/" target="_blank">pkgs.org  ⤴</a>.** There will be also provided a quick guide for installing the required tools on Linux or macOS, in case the user want these tools also on a local machine.
 
@@ -188,13 +176,10 @@ Finally, you should get a folder *(in this case **jp2a-1.0.7**)* with a source c
 
 For further instructions, follow the **INSTALLATION: HPC system** section for the specific tool provided below in this tutorial.
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-<b>Remember to indicate the custom location <i>(--prefix=PATH)</i> during installation where the executables will be created</b>. On HPC system it should NOT be the <b>'/usr/local/bin'</b> path because as a regular user you will get an error: <i>Permission denied</i>. Also, it would be better if it was not a path in your home directory, because you will quickly run out of quota.<br>
-It is recommended to create a SOFTWARE directory in the workspace, where all the executables will be collected and <b>add this directory to the environment variable $PATH</b> or create symbolic links to the home directory.
-</span>
-</div><br>
+<div class="warning" markdown="1">
+**Remember to indicate the custom location** [ `--prefix=PATH` ] **during installation where the executables will be created.** On HPC system it should NOT be the `/usr/local/bin` path because as a regular user you will get an error: <em class="c-warning">Permission denied</em>. Also, it would be better if it was not a path in your home directory, because you will quickly run out of quota.<br>
+It is recommended to create a `SOFTWARE` **directory** in the workspace, where all the executables will be collected and **add this directory to the environment variable** `$PATH` or create symbolic links to the home directory.
+</div>
 
 
 ## jp2a
@@ -204,12 +189,9 @@ This is a tool for viewing images in the terminal as ASCII art that **supports J
 * download package: <a href="https://pkgs.org/download/jp2a" target="_blank">https://pkgs.org/download/jp2a</a>
 * devel GitHub: <a href="https://github.com/cslarsen/jp2a" target="_blank">https://github.com/cslarsen/jp2a</a>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-You can use an ImageMagick built-in <b>convert</b> tool to convert other formats (e.g., PNG, TIFF) to JPEG first. See a quick guide below.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+You can use an **ImageMagick** built-in `convert` tool to convert other formats (e.g., PNG, TIFF) to JPEG first. See a quick guide below.
+</div>
 
 **INSTALLATION**
 
@@ -233,10 +215,9 @@ automake --add-missing --copy --no-force <br>
 
 3. Run configure script while adjusting value for arguments: <br>
 <b>--with-jpeg-prefix=</b>, <i>provide custom path to which you have writing permission</i><br>
-<b>--prefix=</b>, <i>provide custom path to which you have writing permission</i><br><br>
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">You can use the current directory or create a directory a level up from where the script is executed. It is best to specify an absolute path.</span>
+<b>--prefix=</b>, <i>provide custom path to which you have writing permission</i><br>
+<div class="protip" markdown="1">
+You can use the current directory or create a directory a level up from where the script is executed. It is best to specify an absolute path.
 </div>
 <code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
 ./configure --with-jpeg-prefix=/work/gif/Alex/software/jp2a --with-curl-config=`which curl-config` --prefix=/work/gif/Alex/software/jp2a
@@ -391,12 +372,10 @@ make <br>
 make install
 </code><br>
 This will create a bin directory on the custom path that will contain software executables: <br>
-<b>img2txt</b>, cacaview, cacaclock  cacademo  cacafire  cacaplay  cacaserver.<br><br>
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-In my case, the program has NOT been built with Imlib2 support, since this graphics library was not natively pre-installed on my HPC system. This results in only BMP loading is supported. So, note that when you face the same issue and try to convert JPEG or PNG you will get the <b>error message</b>: <i>"unable to load image-filename"</i>.</span>
-</div><br>
+<b>img2txt</b>, cacaview, cacaclock  cacademo  cacafire  cacaplay  cacaserver.<br>
+<div class="warning" markdown="1">
+In my case, the program has NOT been built with `Imlib2` support, since this graphics library was not natively pre-installed on my HPC system. This results in only BMP loading is supported. So, note that when you face the same issue and try to convert JPEG or PNG you will get the **error message**: <em class="c-warning">"unable to load image-filename"</em>.
+</div>
 </details>
 
 
@@ -436,12 +415,9 @@ img2txt linux-logo.png
 * download package: <a href="https://github.com/TheZoraiz/ascii-image-converter/releases" target="_blank">https://github.com/TheZoraiz/ascii-image-converter/releases</a>
 * devel GitHub: <a href="https://github.com/TheZoraiz/ascii-image-converter" target="_blank">https://github.com/TheZoraiz/ascii-image-converter</a>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+<div class="protip" markdown="1">
 I recommend this software because it is easy to install on any local or remote machine, and it is also easy to use while providing many built-in options that allow fine-tuning the output. In my tests on the HPC, it gave the best effect of ASCII art without additional configuration.
-</span>
-</div><br>
+</div>
 
 **INSTALLATION**
 
@@ -464,24 +440,22 @@ ascii-image-converter
 <code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
 ./ascii-image-converter -h
 </code><br>
-You should see the help message on your screen <i>"This tool converts images into ascii art and prints them on the terminal."</i><br><br>
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Remember that you must add the location of this executable file to the $PATH environment variable: <br>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+You should see the help message on your screen <i>"This tool converts images into ascii art and prints them on the terminal."</i><br>
+<div class="warning" markdown="1">
+Remember that you must add the location of this executable file to the `$PATH` environment variable:
+```bash
 export PATH="abolute/path/to-ascii-image:$PATH"
-</code><br>
+```
+<base class="mt">
 Otherwise, you must always precede the file name with the exact path:
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```bash
 ./ascii-image-converter
-</code>
+```
 or
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```bash
 /absolute/path/ascii-image-converter
-</code>
-</span>
-</div><br>
+```
+</div>
 </details>
 
 

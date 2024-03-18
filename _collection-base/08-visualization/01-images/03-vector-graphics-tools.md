@@ -81,20 +81,16 @@ Ethical editing of vector graphics involves:
 
 to ensure accurate representation and responsible use of visual materials.
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;"><b>Modifying or artificially changing research results using a vector graphics editor is strongly discouraged and considered unethical.</b><br>
-It is crucial to maintain the integrity and credibility of scientific research by presenting accurate and unaltered data. Altering or manipulating research results using vector graphic editing tools can lead to misrepresentation, distortion of findings, and a breach of scientific ethics.</span>
+<div class="warning" markdown="1">
+**Modifying or artificially changing research results using a vector graphics editor is strongly discouraged and considered unethical.** <br>
+It is crucial to maintain the integrity and credibility of scientific research by presenting accurate and unaltered data. Altering or manipulating research results using vector graphic editing tools can lead to misrepresentation, distortion of findings, and a breach of scientific ethics.
 </div>
 
 ## Common file formats: <br>SVG, AI, EPS
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-Vector graphics formats offer the advantage of <b>easy editing of artwork components even after saving and reopening the file</b>. Unlike raster graphics formats, which store information as a fixed grid of pixels, vector graphics formats store objects and their properties as mathematical equations. This mathematical representation allows for <b>precise manipulation of individual components</b> such as shapes, lines, and colors, making it effortless to modify & reuse the artwork without losing quality or detail.
-</span>
-</div><br>
+<div class="note" markdown="1">
+Vector graphics formats offer the advantage of **easy editing of artwork components even after saving and reopening the file**. Unlike raster graphics formats, which store information as a fixed grid of pixels, vector graphics formats store objects and their properties as mathematical equations. This mathematical representation allows for **precise manipulation of individual components** such as shapes, lines, and colors, making it effortless to modify & reuse the artwork without losing quality or detail.
+</div>
 
 The choice of format depends on factors such as compatibility with specific software, intended use, and desired levels of editability and scalability. There are several common file formats used for storing vector graphics:
 
@@ -252,15 +248,12 @@ or
 
 **2.** `Terminal`: Open a terminal window and type "inkscape" *(without quotes)* and press Enter. Inkscape should start running in the terminal. You can also create a desktop shortcut or add Inkscape to your application launcher for easier access.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-When you launch Inkscape for the first time, you may be prompted to configure some initial settings. These settings may include language preferences, default units, and document properties. Adjust these settings according to your preferences.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+When you launch **Inkscape** for the first time, you may be prompted to <u>configure some initial settings</u>. These settings may include language preferences, default units, and document properties. Adjust these settings according to your preferences.
+</div>
 
 **Congratulations!** <br>
-You can now begin exploring its features and creating vector graphics with this powerful design tool.
+<span style="color: #ff3870;font-weight: 500;"> You can now begin exploring its features and creating vector graphics with this powerful design tool.</span>
 
 ## First-time user basics
 
@@ -282,12 +275,9 @@ If you have existing artwork in your default Inkscape document and you want to s
 
 ![01-vector_inkscape_new_doc.png]({{ images_path }}/01-vector_inkscape_new_doc.png)
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+<div class="protip" markdown="1">
 You can easily switch between different documents or work on multiple projects simultaneously. This flexibility enables you to explore new ideas, experiment with different designs, or keep your work organized by separating projects into individual documents.
-</span>
-</div><br>
+</div>
 
 **3. Set the document properties** <br>
 In Inkscape, you have the flexibility to change document properties at any time to adjust various aspects of your artwork. These properties include the **size, orientation, units, and resolution** of the document. By modifying these properties, you can tailor the document to meet your specific needs and requirements.
@@ -299,34 +289,33 @@ To change the document properties in Inkscape, you can follow these steps:
 
 ![01-vector_inkscape_doc_properties.png]({{ images_path }}/01-vector_inkscape_doc_properties.png)
 
-`Page tab` <br>
+**Page tab**
+
 In the **Page** tab, you can adjust the **width and height** of the document by entering new values. In the `Custom Size` section, you can set a **custom size for the document** by entering your desired dimensions. You can also choose a different measurement unit *(e.g., pixels, inches, millimeters)* from the dropdown menu. If needed, you can change the **document orientation** from portrait to landscape or vice versa using the "Orientation" option.
 
-`Grids & Guides` <br>
+**Grids & Guides**
+
 The **Grids** and **Guides** tabs allow you to configure grid and guide settings for precise alignment and positioning of objects.
 
-`Scripting tab` <br>
+**Scripting tab**
+
 The **Scripting** tab provides a way to automate tasks and perform advanced operations using scripts in Inkscape. nkscape supports scripting through various languages such as **Python, Perl, and Ruby**, allowing you to write custom scripts to manipulate objects, apply effects, or perform complex operations.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;"> Within the "Scripting" tab, you can enable or disable scripting support and specify the scripting language you want to use. </span>
-</div><br>
+<div class="protip" markdown="1">
+Within the `Scripting` tab, you can enable or disable scripting support and specify the scripting language you want to use.
+</div>
 
-`Metadata tab` <br>
+**Metadata tab**
+
 The **Metadata** tab allows you to add descriptive information and metadata to your Inkscape document. Metadata provides additional context about the document, such as the **author, title, description, copyright information, and keywords**.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">In the "Metadata" tab, you can enter and edit various metadata fields, ensuring that your document is properly identified and documented. By adding metadata, you can organize and categorize your documents, making them more searchable and providing relevant information to others who access your artwork.</span>
-</div><br>
+<div class="protip" markdown="1">
+In the `Metadata` tab, you can enter and edit various metadata fields, ensuring that your document is properly identified and documented. By adding metadata, you can organize and categorize your documents, making them more searchable and providing relevant information to others who access your artwork.
+</div>
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-"Scripting" and "Metadata," provide advanced features that allow you to <b>extend the functionality of Inkscape</b> through scripting and add important metadata to your documents. While they may not be utilized by all users, they offer powerful capabilities for automation, customization, and documentation purposes.
-</span>
-</div><br>
+<div class="note" markdown="1">
+`Scripting` and `Metadata` provide advanced features that allow you to <b>extend the functionality of Inkscape</b> through scripting and add important metadata to your documents. While they may not be utilized by all users, they offer powerful capabilities for automation, customization, and documentation purposes.
+</div>
 
 ### Interface and Layout
 
@@ -385,12 +374,9 @@ is a horizontal toolbar **located at the bottom** of the interface. It provides 
 **TOP MENUS** <br>
 Inkscape provides a menu bar at the top of the interface with various menus, such as **File, Edit, View, Layer, Object, Path, Text, Filers**, and more. These menus contain additional commands and options for working with your artwork. The top menu bar also includes more advanced options for working with paths, text, filters, extensions, and exporting your artwork in various formats, giving you comprehensive control over your design process.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Take some time to explore the interface, panels, toolbars, and menus to familiarize yourself with the layout of Inkscape. Understanding the different elements will help you navigate the software efficiently and access the tools and functions you need to create your vector artwork.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+Take some time to explore the `interface`, `panels`, `toolbars`, and `menus` to familiarize yourself with the layout of Inkscape. Understanding the different elements will help you navigate the software efficiently and access the tools and functions you need to create your vector artwork.
+</div>
 
 ### Navigating & Zooming the Canvas
 
@@ -439,7 +425,7 @@ The `Node` tool (icon just below the Selection) lets you edit the shape's nodes 
   * to refine the shape's outline, e.g., to round the corners of the rectangle
   * to change the shape's size
 
-<p align="center"><img width="850" src="{{ images_path }}s/01-vector_inkscape_edit_path.gif"></p>
+<p align="center"><img width="850" src="{{ images_path }}/01-vector_inkscape_edit_path.gif"></p>
 
 
 ### Distributing objects
@@ -548,25 +534,22 @@ In Inkscape, you have different options for saving and exporting your artwork. C
 
 The `File > Save` option allows you to save your Inkscape document in its native **SVG format**. Saving your work as an SVG file preserves the vector data, layers, and other editing capabilities.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;"> Use this option when you want to save your work to continue editing it in Inkscape later. </span>
-</div><br>
+<div class="protip" markdown="1">
+Use this option when you want to save your work to continue editing it in Inkscape later.
+</div>
 
 The `File > Save As` option lets you save your Inkscape document in various file formats, including SVG, PNG, PDF, EPS, and more.
 * Choose the desired file format from the dropdown menu, specify the file name and location, and click Save.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;"> Use this option when you want to export your artwork in a specific format for sharing or use in other applications. </span>
-</div><br>
+<div class="protip" markdown="1">
+Use this option when you want to export your artwork in a specific format for sharing or use in other applications.
+</div>
 
 ### Exporting PNG
 
 The `File > Export PNG Image` option allows you to export your artwork **as a raster image in the PNG format**.
 * Specify the desired image size, resolution, and other options in the Export PNG Image dialog box, and click Export.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;"> This option is useful when you want to share your artwork as a high-quality image or when you need a raster image format for web or print purposes. </span>
-</div><br>
+<div class="protip" markdown="1">
+This option is useful when you want to share your artwork as a high-quality image or when you need a raster image format for web or print purposes.
+</div>

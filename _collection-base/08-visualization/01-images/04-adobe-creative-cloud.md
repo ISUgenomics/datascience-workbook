@@ -30,23 +30,17 @@ The <a href="https://www.adobe.com/creativecloud.html" target="_blank">Adobe Cre
 
 ## Pricing: You can have it free!
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
+<div class="note" markdown="1">
 Adobe Creative Cloud operates on a subscription model, offering different pricing tiers to cater to the needs of individual users, businesses, students, and schools. From single app subscriptions to the full creative suite, Adobe provides options to fit a variety of budgets. Each subscription comes with additional benefits like cloud storage, Adobe Fonts, and access to the vast Adobe Stock library.
-</span>
-</div><br>
+</div>
 
 <span style="color: #ff3870;font-weight: 500;"> If you're a student, teacher, researcher, or staff member at an educational institution such as a university, there's good news!</span>
 
 Many universities (e.g., Iowa State University) and institutions partner with Adobe to provide Adobe Creative Cloud subscriptions to their members at no extra cost or at significantly reduced rates. This initiative is part of a commitment to **fostering creativity and enhancing digital literacy in educational settings**. By utilizing this opportunity, you can tap into the vast potential of Adobe Creative Cloud and elevate the quality of your research, all potentially free of charge.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Before purchasing a subscription, <b>it's worth checking with your institution's IT or software licensing department to see if they provide access to Adobe Creative Cloud</b>. If they do, they'll provide instructions on how to download and install the software on your device.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+Before purchasing a subscription, **it's worth checking with your institution's IT or software licensing department to see if they provide access to Adobe Creative Cloud**. If they do, they'll provide instructions on how to download and install the software on your device.
+</div>
 
 If you are an employee at the <a href="https://www.iastate.edu" target="_blank">Iowa State University</a>, check your access to the Adobe Creative Cloud subscription in your OKTA dashboard page at <a href="https://iastate.okta.com/app/UserHome" target="_blank">https://iastate.okta.com/app/UserHome  ⤴</a>
 
@@ -81,12 +75,9 @@ For scientists working in fields where 3D visualization can enhance understandin
   * **Teaching and Learning** <br>
   Many Adobe tools are great for creating educational content, whether it's interactive online materials with `Adobe Captivate`, or tutorials and explainer videos with `Premiere Pro` and `After Effects`.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Adobe Creative Cloud storage also provides features like document sharing and collaborative editing, making it easier for research teams to work together, even remotely.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+Adobe Creative Cloud storage also provides features like `document sharing` and `collaborative editing`, making it easier for research teams to work together, even remotely.
+</div>
 
 Lastly, familiarity with **Adobe Creative Cloud can be a valuable skill in itself**. As science becomes more interdisciplinary, the ability to work effectively with diverse tools is an asset. It can make a scientist more versatile, opening up new opportunities for collaboration, communication, and **professional development**.
 
@@ -103,12 +94,9 @@ Here's a table comparing the pros and cons of using Adobe Creative Cloud tools a
 |**Updates**<br>Regular updates and improvements are included in the subscription, ensuring you have access to the latest features.|**System Requirements**<br>Adobe tools are resource-intensive and may require a powerful computer. |
 |**Learning Resources**<br>Access to a vast array of tutorials and a large community for support.|**Overkill for Simple Tasks**<br>If your needs are simple (e.g., basic photo editing), Adobe tools may offer more features than needed. |
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+<div class="protip" markdown="1">
 It's always a good idea to evaluate the specific needs of your scientific work and consider the available alternatives before deciding on the tools to use.
-</span>
-</div><br>
+</div>
 
 
 # What is Adobe Creative Cloud?
@@ -153,14 +141,10 @@ Follow these steps to sign up:
 **1.** Visit the Adobe Creative Cloud website at <a href="www.adobe.com/creativecloud.html" target="_blank">www.adobe.com/creativecloud.html  ⤴</a>  <br>
 **2. Choose your plan.** <br>*Click on the “Plans & Pricing” section to choose the best plan for your needs.*
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">Remember, if you are affiliated with an educational institution, check if your institution provides access to Adobe Creative Cloud.
-<br><br>
+<div class="protip" markdown="1">
+Remember, if you are affiliated with an educational institution, check if your institution provides access to Adobe Creative Cloud. <base class="mb">
 If you are affiliated with Iowa State University, look for Adobe Creative Cloud app in your OKTA dashboard page at <a href="https://iastate.okta.com/app/UserHome" target="_blank">https://iastate.okta.com/app/UserHome  ⤴</a>
-
-</span>
-</div><br>
+</div>
 
 **3. Create or Sign in to your Adobe account.** <br>*After choosing your plan, you'll be prompted to either sign in to your existing Adobe Account or to create a new one.*
 
@@ -225,12 +209,9 @@ After launching the Creative Cloud Desktop app, you'll be greeted with a user-fr
   * `to explore extensions`
 
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+<div class="protip" markdown="1">
 Note, the Creative Cloud Desktop App is your main hub for managing all your Adobe Creative Cloud activities, so it's worth spending some time to get familiar with it.
-</span>
-</div><br>
+</div>
 
 
 ### Install and Update Tools
@@ -255,11 +236,8 @@ Alternatively, click **Updates** button located at the top of the left panel und
 
 ![01-adobe_update_app.png]({{ images_path }}/01-adobe_update_app.png)
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+<div class="protip" markdown="1">
 Remember, keeping your apps up to date ensures you have the latest features, improvements, and security patches. It's recommended to always use the latest version of your Adobe applications.
-</span>
 </div>
 
 
@@ -433,12 +411,9 @@ Beyond its robust suite of creative applications, Adobe Creative Cloud also offe
 
 Adobe Creative Cloud includes <a href="https://helpx.adobe.com/creative-cloud/kb/file-storage-quota.html" target="_blank">Cloud Storage  ⤴</a>, which allows you to access your files anytime, anywhere, and on any device.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
+<div class="note" markdown="1">
 You get up to 100GB of storage with your subscription, and can upgrade to 1TB or more. The cloud storage supports all file types and is integrated directly into all the Creative Cloud apps. This means you can easily save your work directly to the cloud and access it from any device.
-</span>
-</div><br>
+</div>
 
 ![01-adobe_cloud_storage.png]({{ images_path }}/01-adobe_cloud_storage.png)
 
@@ -462,13 +437,10 @@ The fonts are easy to browse and can be activated and used in any application wi
 
 <a href="https://stock.adobe.com/" target="_blank">Adobe Stock  ⤴</a> is an online service that provides access to millions of high-quality, curated, royalty-free photos, vectors, illustrations, videos, templates, and 3D assets. You can use these resources in your projects, saving you time and effort on creating or searching for them elsewhere. Adobe Stock is integrated into Adobe apps so you can search for and license assets right within your design workspace.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Did you know that with your Adobe Creative Cloud subscription, including the one you have access to through your research institution, <b>you also have free access to many assets in Adobe Stock?</b><br>
+<div class="protip" markdown="1">
+**Did you know** that with your Adobe Creative Cloud subscription, including the one you have access to through your research institution, **you also have free access to many assets in Adobe Stock?** <br>
 This includes a vast collection of photos, vectors, illustrations, and more. You can directly download and integrate these assets into your projects at no additional cost.
-</span>
-</div><br>
+</div>
 
 **Searching for assets in Adobe Stock**
 
@@ -489,12 +461,9 @@ After you've entered your search term, you can refine your results using the var
 
 When you find an asset you like, click on it for a larger preview. If it fits your needs, click on the `License & Save to` button to license the asset and save it directly to your Creative Cloud Libraries. If the asset is free, it will be downloaded without deducting from your Adobe Stock credits.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+<div class="protip" markdown="1">
 Remember, the assets you license are royalty-free, which means you can use them in your projects without worrying about additional fees after your initial subscription. However, you should always check the specific licensing agreement before using an asset to ensure it's suitable for your intended use.
-</span>
-</div><br>
+</div>
 
 
 ### Adobe Express

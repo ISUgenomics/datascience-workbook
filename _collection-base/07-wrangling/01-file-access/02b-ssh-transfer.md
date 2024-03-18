@@ -40,17 +40,15 @@ All you need is a terminal window providing the **command line interface and you
 * your access `password`
 * multifactor `authentication code`
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-A <b>hostname</b> is a label that is assigned to a computer on a network, and it is used to identify the computer and its location on the network. The specific format of a hostname can vary, but it must be unique on the network in order to function correctly. <br>Here are some examples of hostnames:
-<li><b>example.com</b>, A domain name that is used to identify a website or a network of computers.</li>
-<li><b>www.example.com</b>, The hostname of the web server that serves a website at the domain example.com.</li>
-<li><b>ftp.example.com</b>, The hostname of the FTP server that serves files for the domain example.com.</li>
-<li><b>mail.example.com</b>, The hostname of the mail server that handles email for the domain example.com.</li>
-<li><b>192.168.1.100</b>, An IP address that is used to identify a computer on a local network.</li>
-<li><b>my-computer</b>, A hostname that is assigned to a computer on a local network.</li>
-</span>
+<div class="note" markdown="1">
+A `hostname` is a label that is assigned to a computer on a network, and it is used to identify the computer and its location on the network. The specific format of a hostname can vary, but it must be unique on the network in order to function correctly. <br>Here are some examples of hostnames:
+* **example.com**, A domain name that is used to identify a website or a network of computers.
+* **www.example.com**, The hostname of the web server that serves a website at the domain example.com.
+* **ftp.example.com**, The hostname of the FTP server that serves files for the domain example.com.
+* **mail.example.com**, The hostname of the mail server that handles email for the domain example.com.
+* **192.168.1.100**, An IP address that is used to identify a computer on a local network.
+* **my-computer**>, A hostname that is assigned to a computer on a local network.
+
 </div>
 
 ## Command SYNTAX
@@ -73,22 +71,19 @@ scp /local/directory/file.txt username@remote-hostname:/remote/directory/
 * `remote-hostname` - is the a label that is assigned to a remote computer
 * `/remote/directory/` - is the relative or absolute path on a remote machine
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-A file path is used to specify the location of a file or directory on the computer's file system. There are two types of file paths: absolute paths and relative paths. <br>
-<li><b>absolute path:</b></li>
-An absolute path is a complete path to a file or directory that starts from the root directory of the file system. Absolute paths provide a complete and unambiguous reference to a file or directory, and they always <b>start with a / character</b>. <br>
-For example, <code>/home/user/documents/file.txt</code> is an absolute path to a file in a directory on the file system.<br><br>
-<li><b>relative path:</b></li>
-A relative path, on the other hand, is a path to a file or directory that is relative to the current working directory. Relative paths do <b>NOT start with a / character</b>, and they are interpreted relative to the current working directory. <br>
-For example, <code>./documents/file.txt</code> is a relative path to a file in a directory that is located in the current working directory. <br>
-- current directory:<b> ./ </b><br>
-- one directory above: <b> ../ </b><br>
-- two directories above: <b> ../../ </b><br>
+<div class="protip" markdown="1">
+A file path is used to specify the location of a file or directory on the computer's file system. There are two types of file paths: absolute paths and relative paths.
+* **absolute path:** <br>
+An absolute path is a complete path to a file or directory that starts from the root directory of the file system. Absolute paths provide a complete and unambiguous reference to a file or directory, and they always **start with a** `/` **character**. <br>
+For example, `/home/user/documents/file.txt` is <u>an absolute path</u> to a file in a directory on the file system.
+* **relative path:** <br>
+A relative path, on the other hand, is a path to a file or directory that is relative to the current working directory. Relative paths do **NOT start with a** `/` **character**, and they are interpreted relative to the current working directory. <br>
+For example, `./documents/file.txt` is <u>a relative path</u> to a file in a directory that is located in the current working directory.
+  * current directory: `./`
+  * one directory above: `../`
+  *  two directories above: `../../`
 ...and so on
-</span>
-</div><br>
+</div>
 
 
 # SCP (secure copy)
@@ -128,14 +123,11 @@ scp -r /local/directory/file.txt username@remote-hostname:/remote/directory/
 scp -r username@remote-hostname:/remote/directory/file.txt /local/directory/
 ```
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Admins of some HPC systems, e.g. {% include target_link href=612.1 text="SCINet Scientific Computing" %} recommend to use <b><code>csp</code> to transfer a single file only</b>.<br>
-So please be aware of this note: <br>
-"It is not advised to use “scp -r” command to transfer directories to Ceres, since the setgid bit on directories at destination is not inherited. This is not a problem if directories are copied to /home/$USER but is a problem when copying to /project area and usually results in quota exceeded errors." <br>
-If you decide to use scp to transfer directories to <b>Ceres cluster</b> follow the instructions provided at <a href="https://scinet.usda.gov/guides/data/datatransfer#small-data-transfer-using-scp-and-rsync" target="_blank">SCINet website: Small Data Transfer Using scp  ⤴</a>.
-</span>
+<div class="warning" markdown="1">
+Admins of some HPC systems, e.g. {% include target_link href=612.1 text="SCINet Scientific Computing" %} <base>
+<p class="inline" markdown="1">recommend to use `scp` **to transfer a single file only**. So please be aware of this note: </p><base class="mb">
+<blockquote class="mb-0 mt-0">"It is not advised to use <code class="code-inline">scp -r</code> command to transfer directories to Ceres, since the setgid bit on directories at destination is not inherited. This is not a problem if directories are copied to <code class="code-inline">/home/$USER</code> but is a problem when copying to <code class="code-inline">/project</code> area and usually results in quota exceeded errors." </blockquote><base class="mb">
+If you decide to use `scp` to transfer directories to **Ceres cluster** follow the instructions provided at <a href="https://scinet.usda.gov/guides/data/datatransfer#small-data-transfer-using-scp-and-rsync" target="_blank">SCINet website: Small Data Transfer Using scp  ⤴</a>.
 </div>
 
 ### Example Options
@@ -190,16 +182,13 @@ scp -q ~/data user@example-hostname:~/backup
 
 **`rsync` (secure synchronization) is a command line tool** for efficiently transferring and synchronizing files between computers using SSH (Secure Shell) protocol for data transfer. It works by establishing an encrypted `ssh` connection between two computers and copying the data over this connection. This tool is commonly used for backup, data replication, and file distribution.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-<b>rsync</b> works by comparing the source and destination files and only transferring the differences, making it <b>much more efficient than other file transfer tools</b>, such as cp or scp, when the source and destination files are similar. This makes rsync particularly useful <b>for transferring large files or large collections of files</b> that change only slightly over time, as it can significantly reduce the amount of data that needs to be transferred. <br><br>
-In addition to its efficiency, rsync also <b>provides a number of features</b> that make it a versatile tool for file transfer and synchronization, such as: <br>
-<li>support for preserving file permissions and attributes,</li>
-<li>excluding files based on patterns,</li>
-<li>and transferring files over an encrypted ssh connection.</li>
-</span>
-</div><br>
+<div class="note" markdown="1">
+`rsync` works by comparing the source and destination files and only transferring the differences, making it **much more efficient than other file transfer tools**, such as `cp` or `scp`, when the source and destination files are similar. This makes rsync particularly useful **for transferring large files or large collections of files** that change only slightly over time, as it can significantly reduce the amount of data that needs to be transferred. <base class="mb">
+In addition to its efficiency, rsync also **provides a number of features** that make it a versatile tool for file transfer and synchronization, such as:
+* support for preserving file permissions and attributes,
+* excluding files based on patterns,
+* and transferring files over an encrypted ssh connection.
+</div>
 
 <span style="color: #ff3870;font-weight: 500;">RSYNC is usually available on Linux and Mac in terminal, and on Windows 10 in Windows PowerShell.</span><br>
 

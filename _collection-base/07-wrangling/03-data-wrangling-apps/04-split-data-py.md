@@ -208,22 +208,18 @@ pip install pandas
 pip install numpy
 ```
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Note that if you do not indicate the version of the module you are installing, the latest stable release will usually be installed. <br><br>
-When you install by <code>conda</code>, assign the module's version using a single equals sign <b><code>=</code></b>. <br><br>
-When you install by <code>pip</code>, assign the module's version using a double equals sign <b><code>==</code></b>.
-</span>
+<div class="warning" markdown="1">
+Note that if you do not indicate the version of the module you are installing, the latest stable release will usually be installed. <base class="mb">
+When you install by `conda`, assign the module's version using a single equals sign `=`. <base class="mb">
+When you install by `pip`, assign the module's version using a double equals sign `==`.
 </div>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;"> If you don't know whether a particular library is already installed in your Conda environment, you can check it using the <code>conda list</code> command. <br>
-Your terminal screen will display a list of installed software in the active environment. <br>
+<div class="protip" markdown="1">
+If you don't know whether a particular library is already installed in your Conda environment, you can check it using the `conda list` command. <br>
+Your terminal screen will display a list of installed software in the active environment. <base class="mb">
 <img src="{{ images_path }}/03-conda_list.png" alt="conda list" width="100%">
-</span>
-</div><br>
+</div>
+
 
 ## **Inputs**
 
@@ -254,12 +250,9 @@ The data delimiter used does NOT matter, as it will be automatically detected by
 
 ![Column separator]({{ images_path }}/03-input_separator.png)
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Note that only data from numeric columns will be aggregated. So, if the values in a column are a list, so even if the values in the list are numeric, such a column will be treated as a string. <br>
+<div class="warning" markdown="1">
+**Note that only data from numeric columns will be aggregated.** So, if the values in a column are a list, so even if the values in the list are numeric, such a column will be treated as a string. <br>
 If you want to process such data, change the data structure of the input so that the values in the list split into separate columns.
-</span>
 </div>
 
 ### *Column names*

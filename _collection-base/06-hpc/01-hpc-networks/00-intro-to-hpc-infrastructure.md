@@ -43,14 +43,12 @@ Here are some terms commonly used in the field of high-performance computing (HP
 | slurm    | a job scheduler used to allocate resources (nodes, cores, memory) on an HPC system; the scheduler determines & optimizes which jobs should be run on which nodes |
 | parallel processing | the use of multiple processors or computers to solve a problem simultaneously |
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Taking tutorials from the section {% include target_link href=300 text="03: Introduction to Command Line" %} is helpful before starting to use high-performance computing (HPC) systems because many HPC systems are based on Unix or a Unix-like operating system. Unix is a powerful and flexible operating system that is widely used in HPC and other technical fields. For more details, see {% include target_link href=320 text="Introduction to UNIX Shell" %} and {% include target_link href=325 text="Getting started with UNIX (video + exercises)" %} <br><br>
+<div class="protip" markdown="1">
+Taking tutorials from the section {% include target_link href=300 text="03: Introduction to Command Line" %} is helpful before starting to use high-performance computing (HPC) systems because many HPC systems are based on Unix or a Unix-like operating system. Unix is a powerful and flexible operating system that is widely used in HPC and other technical fields. For more details, see {% include target_link href=320 text="Introduction to UNIX Shell" %} and {% include target_link href=325 text="Getting started with UNIX (video + exercises)" %} <base class="mb">
 Overall, familiarity with Unix can help users get the most out of their HPC systems and make it easier to use these systems effectively.
-</span>
-</div><br>
+</div>
 
+---
 
 # HPC infrastructure
 
@@ -71,14 +69,12 @@ There are several benefits to using high-performance computing (HPC) systems:
 * **collaboration** - allow researchers and scientists from different locations to work together and share resources, which can facilitate collaboration and accelerate the pace of research and discovery;
 * **cost savings** - using an HPC system may be more cost-effective than buying and maintaining multiple traditional computers to solve a complex problem.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+<div class="protip" markdown="1">
 Using high-performance computing (HPC) systems can be challenging for beginners, especially those who never used the command line or Linux operating system. Before deciding to use HPC for your research, consider whether it is a suitable platform for your needs. Typically, analyses that are well-suited for HPC are:
-<li>CPU intensive workloads</li>
-<li>high memory workloads</li> <br>
-Additionally, consider whether your analyses are already <b>optimized</b>, and whether you will need to <b>parallelize</b> your analyses or require distributed computing with <b>multiple nodes</b>.
-</span>
+* CPU intensive workloads
+* high memory workloads
+<base class="mt">
+Additionally, consider whether your analyses are already **optimized**, and whether you will need to **parallelize** your analyses or require distributed <u>computing with multiple nodes</u>.
 </div>
 
 ## HPC system access

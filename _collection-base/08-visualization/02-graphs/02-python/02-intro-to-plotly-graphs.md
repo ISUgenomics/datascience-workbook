@@ -33,13 +33,10 @@ Don't hesitate to explore the user-friendly documentation: https://plotly.com/py
 
 Getting started with the **Plotly** library as a **Python** developer is straightforward, regardless of the operating system you are working on. Just open a terminal window (or command prompt) and install Plotly with `pip` or `conda` following the commands below.
 
-<div style="background: mistyrose; padding: 15px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
+<div class="warning" markdown="1">
 If you don't have pip or Conda installed, start with the tutorial(s) that will guide you through this necessary step:
-</span>
-<li> <span style="font-weight:800;">PIP INSTALLATION:</span> {% include target_link href=531 %} </li>
-<li> <span style="font-weight:800;">CONDA INSTALLATION:</span> {% include target_link href=231 %} </li>
+* **PIP INSTALLATION:** {% include target_link href=531 %}
+* **CONDA INSTALLATION:** {% include target_link href=231 %}
 </div>
 
 
@@ -57,21 +54,15 @@ In terminal window, execute the command:
 conda install -c plotly plotly=5.8.1
 ```
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-For the efficient development of interactive Python applications, you will also need other libraries, such as Dash, Pandas, or SciPy. So, it is a good idea to create a new virtual environment with Conda right away and add into it other modules over time.
-</span>
-<br>
-<br>Quick guide (execute commands in the terminal window):<br>
-<br>conda info --envs
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-<span style="font-style: italic"># Active environment shown with *; on Mac Pro activate base for Miniforge3_x86</span>
-<br>conda create -n plotly python=3.8
-&emsp;&emsp;&ensp;
-<span style="font-style: italic"># replace 'plotly' with custom name</span>
-<br>conda activate plotly
-<br>pip install plotly==5.8.1
+<div class="protip" markdown="1">
+For the efficient development of interactive Python applications, you will also need other libraries, such as Dash, Pandas, or SciPy. So, it is a good idea to create a new virtual environment with Conda right away and add into it other modules over time. <base class="mb">
+Quick guide (execute commands in the terminal window):
+```bash
+conda info --envs                     # Active environment shown with *; on Mac Pro activate base for Miniforge3_x86
+conda create -n plotly python=3.8     # replace 'plotly' with custom name
+conda activate plotly
+pip install plotly==5.8.1
+```
 </div>
 
 ### Plotly import
@@ -95,14 +86,10 @@ In the terminal window execute the command provided below to start a new Jupyter
 jupyter lab
 ```
 
-<div style="background: mistyrose; padding: 15px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
+<div class="warning" markdown="1">
 If you don't have a Jupyter installed, start with the tutorial that will guide you through this necessary step:
-</span>
-<li> <span style="font-weight:800;">JUPYTER INSTALLATION:</span> {% include target_link href=412 %} </li>
+* **JUPYTER INSTALLATION:** {% include target_link href=412 %}
 </div>
-<br>
 
 Once you have launched the Jupyter Development Environment in a browser window, navigate to the desired location in the file system and open a new file under the Python kernel.
 

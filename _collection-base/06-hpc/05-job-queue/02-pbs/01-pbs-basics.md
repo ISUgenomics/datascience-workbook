@@ -26,12 +26,9 @@ The **Portable Batch System** (<a href="https://www.openpbs.org" target="_blank"
 
 **PBS is an open-source system** that is widely used in research computing, scientific computing, and high-performance computing environments. It provides a flexible and scalable environment for running parallel and distributed applications across a large number of compute nodes.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-PBS has two main components: the PBS server and the PBS client. The <b>PBS server</b> manages the resources on the cluster, including nodes, queues, and jobs, while the <b>PBS client</b> is used by users to submit and manage their jobs.
-</span>
-</div><br>
+<div class="note" markdown="1">
+PBS has two main components: the PBS server and the PBS client. The **PBS server** manages the resources on the cluster, including nodes, queues, and jobs, while the **PBS client** is used by users to submit and manage their jobs.
+</div>
 
 ## PBS features
 
@@ -120,11 +117,8 @@ cd /path/to/working/directory
 echo "Hello, world!"
 ```
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+<div class="protip" markdown="1">
 Users can modify this template to suit their specific needs by changing the job name, output and error file names, resource requirements, email address, and commands to be executed.
-</span>
 </div>
 
 ### `#PBS` *directives*
@@ -147,12 +141,9 @@ The table provides a brief explanation of the commonly used PBS directives in th
 
 PBS provides a set of commands and interfaces that allow users to submit, monitor, and control the execution of jobs, and administrators to manage the resources and configure the system.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
+<div class="note" markdown="1">
 By using PBS commands, users can efficiently manage their jobs on the cluster and ensure that they are using the resources effectively.
-</span>
-</div><br>
+</div>
 
 Here are some common PBS commands with examples:
 

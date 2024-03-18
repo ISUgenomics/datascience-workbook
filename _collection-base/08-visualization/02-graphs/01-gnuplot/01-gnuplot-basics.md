@@ -31,13 +31,10 @@ Since version 5.0 and up, there are new features in Gnuplot and enhanced online 
 
 On Linux systems, **Gnuplot** is usually pre-installed. The other operating systems, including Mac OS and Windows, require quick and straightforward installation. Below, you can find a brief guide that requires you to copy-paste code snippets in the **terminal window**.
 
-<div style="background: mistyrose; padding: 15px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
+<div class="warning" markdown="1">
 If you don't do NOT know what is terminal or command-line, start with the tutorial(s) that will give you a good introduction:
-</span>
-<li> <span style="font-weight:800;">TERMINAL:</span> {% include target_link href=310 %} </li>
-<li> <span style="font-weight:800;">COMMAND-LINE:</span> {% include target_link href=320 %} </li>
+* **TERMINAL:** {% include target_link href=310 %}
+* **COMMAND-LINE:** {% include target_link href=320 %}
 </div>
 
 ### on Linux (*Debian, Ubuntu*)
@@ -91,13 +88,10 @@ As you noticed, executing the `plot` command starts the GUI window, which allows
 
 In the [Settings for gnuploting](settings-for-gnuploting) section you will learn the Gnuplot syntax for setting up details of the graph's layout and plotting commands.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-The identical syntax of settings can be used directly in the terminal, as well as pasted into a script in Bash. For details, see the next section, Generating static graphs using Bash scripts.
+<div class="protip" markdown="1">
+The identical syntax of settings can be used directly in the terminal, as well as pasted into a script in Bash. For details, see the next section, [Generating static graphs using Bash scripts](#generating-static-graphs-using-bash-scripts).
 <br>
-So, it is good practice to create a set of settings in a terminal with a live preview of the graph in a GUI window and then copy-paste those settings into a script. This way, you can easily reuse it in the future or generate the same type of chart in a loop for thousands of samples. That will also allow you to create graphs on a remote machine including HPC infrastructure.
-</span>
+So, it is good practice to create a set of settings in a terminal with a live preview of the graph in a GUI window and then copy-paste those settings into a script. This way, <u>you can easily reuse it in the future</u> or generate the same type of chart in a loop for thousands of samples. That will also allow you to create graphs on a remote machine including HPC infrastructure.
 </div>
 
 
@@ -140,13 +134,9 @@ Finally, there is a `gnuplot` section, where the `<<EOF ... EOF` syntax allows t
 variable --> '$variable'
 ```
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-To learn more about Gnuplot variables, loops, and conditional plotting, as well as developing an efficient Bash loop to generate many repetetive charts, see the other tutorial:
-<span style="font-weight:bold;">Gnuplot variables, loops, and conditionals.</span>
-</span>
-</div><br>
+<div class="protip" markdown="1">
+To learn more about Gnuplot variables, loops, and conditional plotting, as well as developing an efficient Bash loop to generate many repetetive charts, see the other tutorial: {% include target_link href=821.2 %}
+</div>
 
 The `gnuplot` section contains two main blocks of commands:
 

@@ -84,13 +84,9 @@ Many HPC systems support multiple users with different needs, Environment Module
 # `module` command
 The `module` command is a way to manage and access software packages on HPC systems that use the Environment Modules package. This package allows users to **easily switch between different versions of software** that are installed on the system, and to set environment variables such as paths and library paths.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Note that some modules might have dependencies on other modules, so <b>loading one module may automatically load other modules</b>, or unloading a module might unload other dependent modules. The module command can be complex and have additional functionality. <br>
-System administrators and the module documentation will provide information on the dependencies and best practice for using the modules.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+Note that some modules might have dependencies on other modules, so **loading one module may automatically load other modules**, or unloading a module might unload other dependent modules. The `module` command can be complex and have additional functionality. System administrators and the <u>module documentation</u> will provide information on the dependencies and best practice for using the modules.
+</div>
 
 ## How to **find a module**?
 Here are some common `module` commands that can be used to **list and search for available software** on an HPC system:
@@ -164,11 +160,8 @@ A wide range of software can be made available as modules on an HPC system. Some
 * [5. Visualization tool](#5-visualization-tools)
 * [6. Interoperability packages](#6-interoperability-packages)
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-It's worth noting that the specific syntax and <b>names of the modules may vary depending on the HPC system</b> and the naming conventions used by the system administrator. <br>In general, you can use the <code>module avail</code> command to see the list of available modules, and the <code>module show {name}</code> command to see the details of a specific module, such as its dependencies and conflicts.
-</span>
+<div class="warning" markdown="1">
+It's worth noting that the specific syntax and **names of the modules may vary depending on the HPC system** and the naming conventions used by the system administrator. In general, you can use the `module avail` command to see the list of available modules, and the `module show {name}` command to see the details of a specific module, such as its dependencies and conflicts.
 </div>
 
 ### *1. Compilers and interpreters*

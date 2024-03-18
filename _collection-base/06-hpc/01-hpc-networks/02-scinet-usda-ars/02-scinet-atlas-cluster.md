@@ -38,14 +38,11 @@ Atlas transfer node: <b>@atlas-dtn.hpc.msstate.edu</b> <br>
 Atlas Open OnDemand: <b><a href="https://atlas-ood.hpc.msstate.edu" target="_blank">https://atlas-ood.hpc.msstate.edu  ⤴</a></b> <br>
 <i><span style="color: #ff3870;font-weight: 500;">*SCINet account is required to get access</span></i>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-To obtain a SCINet account, a <b>SCINet Account Request</b> must be submitted. To learn more, visit the official <a href="https://scinet.usda.gov/about/signup#sign-up-for-a-scinet-account" target="_blank">Sign up for a SCINet account  ⤴</a> guide or use links provided below: <br>
-<li> for ARS-affiliated users: <a href="https://scinet.usda.gov/about/signup#ars-employees" target="_blank">SCINet Account Request  ⤴</a></li>
-<li> for non-ARS users: <a href="https://scinet.usda.gov/about/signup#non-ars-employees" target="_blank">Non-ARS SCINet Account Request  ⤴</a></li>
-</span>
-</div><br>
+<div class="protip" markdown="1">
+To obtain a SCINet account, a `SCINet Account Request` must be submitted. To learn more, visit the official <a href="https://scinet.usda.gov/about/signup#sign-up-for-a-scinet-account" target="_blank">Sign up for a SCINet account  ⤴</a> guide or use links provided below:
+* for ARS-affiliated users: <a href="https://scinet.usda.gov/about/signup#ars-employees" target="_blank">SCINet Account Request  ⤴</a>
+* for non-ARS users: <a href="https://scinet.usda.gov/about/signup#non-ars-employees" target="_blank">Non-ARS SCINet Account Request  ⤴</a>
+</div>
 
 
 ## Atlas documentation *by HPC² at MSU*
@@ -76,10 +73,9 @@ In the one-page documentation you will find the sections listed below. <br>
 
 If you already have **SCINet account** and **Multi-Factor Authentication (MFA)**, skip to step 3 or 4.<br>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">Note, your SCINet credentials are the same for all components of the SCINet resources, including HPC Systems.</span>
-</div><br>
+<div class="protip" markdown="1">
+Note, your SCINet credentials are the same for all components of the SCINet resources, including HPC Systems.
+</div>
 
 
 ## **1. SCINet Account Request**
@@ -101,12 +97,9 @@ Once your request is approved you should get the <b><i>"Welcome to SCINet"</i></
 <span style="color: #ff3870;font-weight: 500; font-size: 20px;">Any logins to SCINet need to use Multi-Factor Authentication (MFA)!</span><br>
 <i>This include both <b>SSH connection</b> in the terminal and <b>Open OnDemand access</b> in the web browser.</i>
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-Multi-Factor Authentication (MFA) is a <b>security system that requires more than one method of authentication</b> from independent categories of credentials to verify the user's identity. This is done to increase the security of the authentication process and <b>make it more difficult for an attacker to gain access to a user's systems or data</b>.
-</span>
-</div><br>
+<div class="note" markdown="1">
+Multi-Factor Authentication `MFA` is a **security system that requires more than one method of authentication** from independent categories of credentials to verify the user's identity. This is done to increase the security of the authentication process and **make it more difficult for an attacker to gain access to a user's systems or data**.
+</div>
 
 
 <table>
@@ -118,7 +111,7 @@ Multi-Factor Authentication (MFA) is a <b>security system that requires more tha
     <p><i>Technically, you will get an app on your device. It will generate unique 6-digit codes every 60 seconds. You need to use the code that is current at the time of logging in or transferring data.</i><br><br>
     If needed, learn more about <a href="https://scinet.usda.gov/guides/access/mfa#what-is-multifactor-authentication" target="_blank">What is Multifactor Authentication  ⤴</a>.</p>
   </td>
-  <td><img src="{{ images_path }}/01_hpc_GA.png" width="800"></td>
+  <td style="width: 250px;"><img src="{{ images_path }}/01_hpc_GA.png" width="800"></td>
 </table>
 
 
@@ -137,15 +130,12 @@ Terminal access to a high-performance computing (HPC) system using the ssh (Secu
 
 * and the **login credentials** (login & password) for an account on the HPC system <br>( you will get the initial SCINet credentials in the "Welcome to SCINet" email, see section {% include target_link href=612.2 section="#1-scinet-account-request" text="SCINet Account Request" %})
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-To get familiar with SSH connection, explore the hands-on tutorials in this workbook: <br>
-<li>{% include target_link href=623 section="#what-is-ssh" text="SSH: Secure Shell Connection - What is ssh?" %}</li>
-<li>{% include target_link href=623.1 section="#shortcuts-for-ssh-hosts" text="Set up shortcuts for SSH hosts" %}</li>
-<li>{% include target_link href=623.1 section="#setup-password-less-login-for-hpc" text="Setup password-less SSH for HPC" %}</li>
-</span>
-</div><br>
+<div class="protip" markdown="1">
+To get familiar with SSH connection, explore the hands-on tutorials in this workbook:
+* {% include target_link href=623 section="#what-is-ssh" text="SSH: Secure Shell Connection - What is ssh?" %}
+* {% include target_link href=623.1 section="#shortcuts-for-ssh-hosts" text="Set up shortcuts for SSH hosts" %}
+* {% include target_link href=623.1 section="#setup-password-less-login-for-hpc" text="Setup password-less SSH for HPC" %}
+</div>
 
 ### • *Benefits of using SHH*
 
@@ -196,9 +186,8 @@ If you need a more detailed guide for a specific operating system, follow the st
 
 ### *Command line data transfer*
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;"> {% include target_link href=612.2 section="#data-transfer-using-globus" text="Globus Online" %} is the recommended method for transferring data to and from the SCINet clusters. It provides faster data transfer speeds compared to scp, has a graphical interface, and does not require a GA verification code for every file transfer. </span>
+<div class="warning" markdown="1">
+{% include target_link href=612.2 section="#data-transfer-using-globus" text="Globus Online" %} is the recommended method for transferring data to and from the SCINet clusters. It provides faster data transfer speeds compared to scp, has a graphical interface, and does not require a GA verification code for every file transfer.
 </div>
 
 
@@ -290,17 +279,14 @@ sbatch submit_job.sh
 
 Web-browser access to a high-performance computing (HPC) system allows users to **access and interact with the HPC system using a web browser**. This can be useful for users who do not have an ssh client installed on their local computer, or who prefer to **use a graphical user interface (GUI) rather than the command line**.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-To provide web-browser access to an HPC system, a server with a web interface must be installed on the HPC system. This server <b>can be accessed from any web browser</b> by visiting a specific URL. <b>Once the user logs in to the web interface, they will be able to access a variety of tools and services</b>, such as: <br>
-<li>a desktop, </li>
-<li>a terminal emulator, </li>
-<li>a file browser, </li>
-<li>a job submission interface, </li>
-<li>and other software that require graphical user interface (GUI), e.g., JupyterLab, RStudio. </li>
-</span>
-</div><br>
+<div class="note" markdown="1">
+To provide web-browser access to an HPC system, a server with a web interface must be installed on the HPC system. This server **can be accessed from any web browser** by visiting a specific URL. Once the user logs in to the web interface, they will be able to **access a variety of tools and services**, such as:
+* a desktop,
+* a terminal emulator,
+* a file browser,
+* a job submission interface,
+* and other software that require graphical user interface (GUI), e.g., JupyterLab, RStudio.
+</div>
 
 
 ### *Open OnDemand login*

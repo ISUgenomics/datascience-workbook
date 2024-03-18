@@ -84,11 +84,8 @@ In this section, you can find the elementary code snippets that provide a basic 
 
 ### *Julia Syntax*
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-The syntax of a programming language refers to the set of rules that dictate how programs should be written in that language, encompassing the arrangement of words, symbols, and phrases.
-</span>
+<div class="note" markdown="1">
+The **syntax** of a programming language refers to the <u>set of rules</u> that dictate how programs should be written in that language, encompassing the arrangement of words, symbols, and phrases.
 </div>
 
 Julia's syntax is expressive, readable, and easy to write. It's designed to be familiar to users of other technical computing languages, which aids in lowering the learning curve.
@@ -105,11 +102,8 @@ Julia's syntax is expressive, readable, and easy to write. It's designed to be f
 
 
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-In Julia, the <b>end</b> keyword is commonly used to close various syntax components such as control flow blocks, functions, and structures, marking the conclusion of these code segments.
-</span>
+<div class="protip" markdown="1">
+In Julia, the `end` keyword is commonly used to **close various syntax components** such as control flow blocks, functions, and structures, marking the conclusion of these code segments.
 </div>
 
 
@@ -135,11 +129,8 @@ A variable named y is being declared and assigned the floating-point value 20.5.
 A variable named z is being declared with a type annotation Int (integer), and is being assigned the integer value 30. The <b>::Int</b> part enforces that z must be an integer, providing a level of type safety.
 </i><br><br>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-In Julia, variable names should begin with a letter (uppercase or lowercase), underscore, or a Unicode character, and can be followed by letters, digits, underscores, or exclamation marks, but should <b>avoid using reserved words like function, for, or end</b>, as these have special meanings in the language.
-</span>
+<div class="protip" markdown="1">
+In Julia, **variable names** should begin with a letter (uppercase or lowercase), underscore, or a Unicode character, and can be followed by letters, digits, underscores, or exclamation marks, but should **avoid using reserved words like** `function`, `for`, or `end`, as these have special meanings in the language.
 </div>
 
 ### *Core Data Types*
@@ -156,10 +147,8 @@ char_val = 'J'                 # character
 
 *Variables of different data types (integer, float, complex number, string, and character) are being defined. Note that in Julia, a character is a single Unicode character represented within single quotes (e.g., 'a'), while a string is a sequence of characters enclosed in double quotes (e.g., "hello"), allowing for representation of words, sentences, or any arbitrary text.*
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span><br>
-In the given example of <b>complex_val</b>, <b>im</b> is used to represent the imaginary unit (often denoted as <i>i</i> or <i>j</i> in other contexts), which is the square root of -1. <b>In Julia, im is the built-in representation for the imaginary unit</b>, and it's used to define complex numbers. The expression 3 + 4im represents a complex number where 3 is the real part and 4 is the imaginary part, forming the complex number.
-</span>
+<div class="protip" markdown="1">
+In the given example of `complex_val`, `im` is used to represent the **imaginary unit** (often denoted as `i` or `j` in other contexts), which is the square root of -1. **In Julia,** `im` **is the built-in representation for the imaginary unit**, and it's used to define complex numbers. The expression `3 + 4im` represents a complex number where 3 is the real part and 4 is the imaginary part, forming the complex number.
 </div>
 
 ### *Unicode Support*
@@ -174,12 +163,8 @@ println(α)                       # Output: 3.14
 *A variable with a Unicode name α is defined and printed. This demonstrates Julia's support for Unicode characters in variable names.*
 
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Unicode support in Julia which allows for a more readable and math-friendly code by using familiar mathematical symbols. However, <b>simply writing equations using mathematical symbols won't automatically solve them.</b> <br>
-You would typically use or write functions to solve equations. You can use Julia's own algebraic and numerical libraries like AlgebraicEquations.jl, Roots.jl, or NLsolve.jl to solve various types of equations. There are also libraries like SymPy.jl, which interfaces with Python's SymPy library, to symbolically solve equations.
-</span>
+<div class="warning" markdown="1">
+Unicode support in Julia which allows for a more readable and `math-friendly code` by using familiar mathematical symbols. However, **simply writing equations using mathematical symbols won't automatically solve them.** You would typically use or write functions to solve equations. You can use Julia's own algebraic and numerical libraries like `AlgebraicEquations.jl`, `Roots.jl`, or `NLsolve.jl` to solve various types of equations. There are also libraries like `SymPy.jl`, which interfaces with Python's `SymPy` library, to symbolically solve equations.
 </div>
 
 
@@ -252,13 +237,12 @@ println("y is greater or equal")      |     print("y is greater or equal")
 end                                   |
 ```
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span><br>
-<i>In Julia, you can write the entire <b>if-else</b> block in a single line as follows:</i> <br>
-<div style="background: #e6f0f0; padding: 5px; margin: 10px 0;">
+<div class="protip" markdown="1">
+In Julia, you can write the entire `if-else` block in a single line as follows:
+```julia
 if x > y println("x is greater") else println("y is greater or equal") end
-</div>
-<i>This will work correctly in Julia, although spreading the code out over multiple lines is often preferred for readability. The single-line if-else syntax in Julia is somewhat similar to that in R and Bash, though there are differences in syntax and keywords used.</i>
+```
+This will work correctly in **Julia**, although spreading the code out over multiple lines is often preferred for readability. The single-line `if-else` syntax in Julia is somewhat similar to that in **R** and **Bash**, though there are differences in syntax and keywords used.
 </div>
 
 ### *Control Flow*
@@ -424,11 +408,8 @@ person = Person("Alice", 30)        # create an instance of 'Person' struct
 
 ### *Metaprogramming*
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-Metaprogramming in Julia refers to the ability to treat code as data and data as code, which facilitates the creation of complex coding constructs and the generation of code programmatically. This feature promotes code reuse, generalization, and performance optimizations. One of the primary tools used in metaprogramming is macros.
-</span>
+<div class="note" markdown="1">
+Metaprogramming in Julia refers to the ability to treat code as data and data as code, which facilitates the creation of complex coding constructs and the generation of code programmatically. This feature promotes code reuse, generalization, and performance optimizations. One of the primary tools used in metaprogramming is `macros`.
 </div>
 
 Julia supports metaprogramming, which allows the creation of complex coding constructs and the **generation of code programmatically**.
@@ -444,25 +425,19 @@ end
 
 *A loop is used alongside the @eval macro to generate four functions (+, -, *, /) programmatically. A loop iterates over a tuple of operators (+, -, *, /). The @eval macro is utilized within the loop to generate four functions corresponding to these operators. This is a simplified illustration of metaprogramming in Julia, where code is generated and evaluated dynamically.*
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-The <b>@eval macro in Julia</b> is used for evaluating expressions in the global scope. It is often utilized in metaprogramming to <b>execute generated code</b>. When you have an expression that you want to evaluate, you can use the @eval macro to execute that expression and return the result.
-</span>
-<div style="background: #e6f0f0; padding: 5px; margin: 10px 0;">
-expression = :(2 + 2)   &emsp; &emsp; &emsp; &emsp;&ensp; # Create an expression for the sum of 2 and 2 <br>
-result = @eval($expression)  &emsp;&emsp; # Evaluate the expression using the @eval macro <br>
-println(result)  &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; # Output: 4
-</div>
+<div class="protip" markdown="1">
+The `@eval` **macro in Julia** is used for evaluating expressions in the global scope. It is often utilized in metaprogramming to **execute generated code**. When you have an expression that you want to evaluate, you can use the `@eval` macro to execute that expression and return the result.
+```julia
+expression = :(2 + 2)              # Create an expression for the sum of 2 and 2
+result = @eval($expression)        # Evaluate the expression using the @eval macro <br>
+println(result)                    # Output: 4
+```
 </div>
 
 **Macros in Julia**
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-Macros in Julia are a type of function that operates on the expression code passed to them, generating new code expressions which are then incorporated into the program. They are prefixed with the @ symbol and play a crucial role in metaprogramming. While <b>macros</b> are heavily used in metaprogramming, they are not the only tool; other features like <b>quoting</b>, <b>splicing</b>, and <b>reflection</b> also play significant roles.
-</span>
+<div class="note" markdown="1">
+Macros in Julia are a <u>type of function</u> that operates on the **expression code** passed to them, generating new code expressions which are then incorporated into the program. They are prefixed with the `@` symbol and play a crucial role in metaprogramming. While `macros` are heavily used in metaprogramming, they are not the only tool; other features like `quoting`, `splicing`, and `reflection` also play significant roles.
 </div>
 
 Macros operate on the code itself before it's run, enabling powerful code-generation capabilities. Suppose you want to create a macro that automatically squares a given expression. You could define such a macro, `@square`, like so:

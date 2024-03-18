@@ -29,12 +29,9 @@ A **workload manager** is a critical component of a cluster or grid computing en
 
 **Workload managers are used in high-performance computing (HPC) environments** where multiple users or groups of users need to run computationally intensive applications simultaneously. These applications may require a large number of processors, a large amount of memory, and access to specialized hardware. A workload manager ensures that the **available resources are allocated in an efficient and fair manner**, and that jobs are executed as quickly as possible.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
+<div class="note" markdown="1">
 A workload manager is a software system that manages the allocation and distribution of computing resources, such as processors, memory, and storage, to user jobs in a cluster or grid computing environment. It is responsible for scheduling, monitoring, and tracking the execution of user jobs on the computing resources available in the cluster.
-</span>
-</div><br>
+</div>
 
 There are several workload managers commonly used in high-performance computing (HPC) environments. Here are some of the most popular ones:
 
@@ -64,12 +61,9 @@ Job scheduling is a key component of workload management. **When a user submits 
 
 Job scheduling is an essential aspect of managing a computational cluster. Overall, effective job scheduling on a computational cluster requires careful planning, advanced software tools, and expert knowledge of HPC concepts and techniques.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
+<div class="note" markdown="1">
 By implementing a robust and efficient job scheduling strategy, cluster managers can improve the productivity of their users and maximize the use of their cluster resources.
-</span>
-</div><br>
+</div>
 
 ### *Basic terms*
 
@@ -123,9 +117,6 @@ lsb_release -a
 ```
 *This will display the version of LSF installed on the cluster, along with other system information.*
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-If the above commands do not work, you can also check with the system administrator or refer to the cluster documentation to find out which workload manager is being used.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+If the above commands do not work, you can also check with the system administrator or refer to the <u>cluster documentation</u> to find out which workload manager is being used.
+</div>

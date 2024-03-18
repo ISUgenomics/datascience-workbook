@@ -47,11 +47,11 @@ mat <- as.matrix(read.csv ("PATH/TO/file.csv", sep = ',', row.names = 1, header=
 # mat[1:5,1:3]   #to view the matrix
 ```
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;"> If the dataset has non-numeric entries, the matrix might be loaded as character type and can lead to heatmap not displaying properly. If this is a problem, get rid of the non-numeric characters and convert the matrix type to numeric (see below).<br>
-According to the complete reference documentation: "NA is allowed in the matrix. You can control the color of NA by na_col argument (by default it is grey for NA). A matrix that contains NA can be clustered by Heatmap() as long as there is no NA distances between any of the rows or columns respectively." </span>
-</div><br>
+<div class="warning" markdown="1">
+**If the dataset has non-numeric entries**, <u>the matrix might be loaded as character type</u> and can lead to heatmap not displaying properly. If this is a problem, get rid of the non-numeric characters and convert the matrix type to numeric (see below). <base class="mb">
+According to the complete reference documentation: <base class="mb">
+<blockquote class="mb-0 mt-0">"NA is allowed in the matrix. You can control the color of NA by na_col argument (by default it is grey for NA). A matrix that contains NA can be clustered by Heatmap() as long as there is no NA distances between any of the rows or columns respectively."</blockquote>
+</div>
 
 ```r
 # after loading the data as.matrix, check matrix type in the environment panel in RStudio or by using:
@@ -91,11 +91,10 @@ Heatmap(mat)              # mat is the dataset name loaded earlier as matrix
 ![Heatmap1]({{ images_path }}/02Heatmap_1.png)
 <br>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;"> The commands in R are case sensitive, so heatmap and Heatmap are commands from two different packages. </span>
+<div class="warning" markdown="1">
+The commands in **R** are case sensitive, so `heatmap` and `Heatmap` are commands from two different packages.
 </div>
-<br>
+
 
 ## Customize your heatmap
 There are countless ways to customize your heatmap with R. Here are a few of the ways to make a great heatmap. <br>

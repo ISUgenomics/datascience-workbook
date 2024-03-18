@@ -75,12 +75,9 @@ Otherwise, if you receive an error message `command not found`, **you will need 
 
 ## *Conda Setup*
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-Conda is an open-source package management system and environment management system for installing and managing packages and dependencies in Python and other programming languages. Conda allows users to create and <b>manage isolated environments for different projects or workflows</b>, each with its own set of packages and dependencies.
-</span>
-</div><br>
+<div class="note" markdown="1">
+Conda is an open-source package management system and environment management system for installing and managing packages and dependencies in Python and other programming languages. Conda allows users to create and **manage isolated environments for different projects or workflows**, each with its own set of packages and dependencies.
+</div>
 
 <span style="color: #ff3870;font-weight: 500;">Learn more about Conda basics in section</span> {% include target_link href=423 section="#3-manage-python-environments" text="Manage Python environments" %} of the tutorial {% include target_link href=423 %}
 
@@ -136,20 +133,14 @@ pip install numpy
 pip install openpyxl
 ```
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Note that if you do not indicate the version of the module you are installing, the latest stable release will usually be installed. <br><br>
-When you install by <code>conda</code>, assign the module's version using a single equals sign <b><code>=</code></b>. <br><br>
-When you install by <code>pip</code>, assign the module's version using a double equals sign <b><code>==</code></b>.
-</span>
+<div class="warning" markdown="1">
+Note that if you do not indicate the version of the module you are installing, the latest stable release will usually be installed. <base class="mb">
+When you install by `conda`, assign the module's version using a single equals sign `=`. <base class="mb">
+When you install by `pip`, assign the module's version using a double equals sign `==`.
 </div>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Some applications may have <b>additional requirements</b> listed in the corresponding tutorial. When necessary, you can install them in the conda environment using the <b>pip</b> command.
-</span>
+<div class="protip" markdown="1">
+Some applications may have **additional requirements** listed in the corresponding tutorial. When necessary, you can install them in the conda environment using the `pip` command.
 </div>
 
 

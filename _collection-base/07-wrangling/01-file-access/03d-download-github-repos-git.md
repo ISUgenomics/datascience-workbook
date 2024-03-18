@@ -54,12 +54,13 @@ In this tutorial, you will learn how to **download online repositories using the
 Whether you are a seasoned developer or just starting out with Git, this tutorial will help you understand the basics of working with Git repositories and provide you with the tools and knowledge you need to effectively manage your code and data. <br>
 *You can also follow these instructions if you simply want to download resources from any public repository to use them locally.*
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-<a href="https://git-scm.com" target="_blank">Git  ⤴</a> is a popular and powerful version control system that is widely used for managing software development projects and other types of data. You can use command-line git to download the repository hosted on any remote server, including: <br>
-<a href="https://github.com" target="_blank">GitHub  ⤴</a>, <a href="https://bitbucket.org" target="_blank">Bitbucket  ⤴</a>, <a href="https://gitlab.com" target="_blank">GitLab  ⤴</a>, <a href="https://sourceforge.net" target="_blank">SourceForge  ⤴</a>, <a href="https://www.gitkraken.com" target="_blank">GitKraken  ⤴</a>.
-</span>
+<div class="note" markdown="1">
+<a href="https://git-scm.com" target="_blank">Git  ⤴</a> is a popular and powerful version control system that is widely used for managing software development projects and other types of data. You can use command-line `git` to download the repository hosted on any remote server, including:
+<a href="https://github.com" target="_blank">GitHub  ⤴</a>,
+<a href="https://bitbucket.org" target="_blank">Bitbucket  ⤴</a>,
+<a href="https://gitlab.com" target="_blank">GitLab  ⤴</a>,
+<a href="https://sourceforge.net" target="_blank">SourceForge  ⤴</a>,
+<a href="https://www.gitkraken.com" target="_blank">GitKraken  ⤴</a>.
 </div>
 
 
@@ -80,28 +81,28 @@ In case `git` is not installed on your machine, an error message will appear on 
 **Linux** <br>
 The easiest way to install Git on Linux is through your distribution's package manager. Here are the steps to install Git on some of the most popular Linux distributions. *Copy-paste commands to your terminal window.*
 
-<details><summary>Ubuntu/Debian:</summary>
+<details markdown="1"><summary>Ubuntu/Debian:</summary>
 
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
-sudo apt-get update <br>
+```bash
+sudo apt-get update
 sudo apt-get install git
-</code><br>
+```
 </details>
 
-<details><summary>Fedora:</summary>
+<details markdown="1"><summary>Fedora:</summary>
 
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
-sudo dnf update <br>
+```bash
+sudo dnf update
 sudo dnf install git
-</code><br>
+```
 </details>
 
-<details><summary>CentOS:</summary>
+<details markdown="1"><summary>CentOS:</summary>
 
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
-sudo yum update <br>
+```bash
+sudo yum update
 sudo yum install git
-</code><br>
+```
 </details><br>
 
 For more information, please see the official Git documentation: <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank">https://git-scm.com/book/en/v2/Getting-Started-Installing-Git ⤴</a>
@@ -110,23 +111,23 @@ For more information, please see the official Git documentation: <a href="https:
 **MacOS** <br>
 There are a few ways to install Git on MacOS, including using:
 
-<details><summary><b>A.</b> the Homebrew package manager</summary>
+<details markdown="1"><summary><b>A.</b> the Homebrew package manager</summary>
 
 <i>Install <a href="https://brew.sh/" target="_blank">homebrew  ⤴</a>
  if you don't already have it, then:</i>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
-brew update <br>
+```bash
+brew update
 brew install git
-</code><br>
+```
 </details>
 
-<details><summary><b>B.</b> the MacPorts software package</summary>
+<details markdown="1"><summary><b>B.</b> the MacPorts software package</summary>
 
 <i>Install <a href="https://www.macports.org/" target="_blank">MacPorts  ⤴</a>
  if you don't already have it, then:</i>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
+```bash
 sudo port install git
-</code><br>
+```
 </details><br>
 
 
@@ -143,15 +144,12 @@ The easiest way to install Git on Windows is to download the official Git for Wi
 
 Know that you can use a command line Git to **download a repository from any platform that supports Git**, including GitHub, Bitbucket, GitKraken, SourceForge, and others. The command works the same way regardless of the platform you are using. All you need to do is specify the URL of the repository you want to clone, and Git will take care of the rest.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-It's worth noting that while Git is a distributed version control system, and you can use it to clone a repository from any Git server, some platforms like <b>GitHub and Bitbucket offer additional features and services that are specifically designed for Git</b>, such as issue tracking, pull requests, and continuous integration and deployment. So, depending on your needs, you may want to consider using a platform like GitHub or Bitbucket for your Git work.
-</span>
+<div class="protip" markdown="1">
+It's worth noting that while Git is a distributed version control system, and you can use it to clone a repository from any Git server, some platforms like **GitHub and Bitbucket offer additional features and services that are specifically designed for Git**, such as issue tracking, pull requests, and continuous integration and deployment. So, depending on your needs, you may want to consider using a platform like GitHub or Bitbucket for your Git work.
 </div>
 
 
-### *`git clone`* command
+### `git clone` *command*
 
 The `git clone` command is one of the most basic and essential Git commands. It allows you to download (or "clone") an entire Git repository from a remote server to your local computer. *This can be useful when you want to start working with an existing project or contribute to an open-source project.*
 
@@ -209,15 +207,12 @@ For example, you can run:
 
 Also, you can also use the `git status` command to check the current branch, as it will show you the branch you are currently on in the output.
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
+<div class="warning" markdown="1">
 When cloning a repository, Git automatically creates a remote named 'origin' that points to the URL you cloned from. You can interact with the remote using Git commands such as: <br>
-<li><b>git pull</b> - to download changes from a remote Git repository to your local machine</li>
-<li><b>git add</b> - to add files to the staging area, which is where you prepare changes to be committed to the Git repository,</li>
-<li><b>git commit</b> - to create a new commit in the Git repository, which is a snapshot of the current state of the code,</li>
-<li><b>git push</b> - to upload changes from your local machine to a remote Git repository</li>
-</span>
+`git pull` - to download changes from a remote Git repository to your local machine, <br>
+`git add` - to add files to the staging area, which is where you prepare changes to be committed to the Git repo, <br>
+`git commit` - to create a new commit in the Git repository, which is a snapshot of the current state of the code, <br>
+`git push` - to upload changes from your local machine to a remote Git repository.
 </div>
 
 If you are planning to contribute to any GIT-based repository, it is worthwhile for you to learn more about the useful options offered by git. In this case, use the hands-on tutorials that provide **instructions for more advanced git commands**:

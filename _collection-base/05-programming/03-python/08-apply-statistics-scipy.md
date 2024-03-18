@@ -50,24 +50,17 @@ conda install scipy
 
 *This will download and install the latest version of SciPy from the conda repository.*
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-This command will install SciPy and any necessary dependencies in your current Conda environment. <br><br>
-If you don't have Conda installed yet, you can follow the guide provided in the tutorial {% include target_link href=423 text="Local Python setup on your computing machine." %} If you are using the Anaconda distribution, conda is already installed by default.
-</span>
+<div class="warning" markdown="1">
+This command will install `scipy` and any necessary dependencies in your current **Conda environment**. <base class="mb">
+If you don't have `conda` installed yet, you can follow the guide provided in the tutorial {% include target_link href=423 text="Local Python setup on your computing machine." %} If you are using the Anaconda distribution, `conda` is already installed by default.
 </div>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Conda provides additional benefits over pip, such as the ability to create and manage multiple environments for different projects with different dependencies, and the ability to install packages from both the Conda and PyPI (Python Package Index) repositories.
-</span>
+<div class="protip" markdown="1">
+`conda` provides additional benefits over `pip`, such as the ability to create and manage multiple environments for different projects with different dependencies, and the ability to install packages from both the Conda and PyPI (Python Package Index) repositories.
 </div>
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;"> If you are working in a virtual environment, you can install packages without administrative privileges by activating the virtual environment before running the installation command. </span>
+<div class="note" markdown="1">
+If you are working in a **virtual environment**, you can install packages without administrative privileges by activating the virtual environment before running the installation command.
 </div>
 
 

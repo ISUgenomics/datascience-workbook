@@ -264,19 +264,13 @@ The <a href="https://github.com/ISUgenomics/data_wrangling/tree/main/merge_data#
 
 <span style="color: #ff3870;font-weight: 500;">In this section of the tutorial we use the data_merge app to solve a real-life problem faced by the collaborating researchers who needed to merge their datasets labeled differently.</span>
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Matching datasets manually can be a time-consuming and error-prone process. It is not a reliable approach due to the risk of human error and the possibility of missing data or overlooking important information. Mistakes can lead to data inconsistencies, inaccuracies, and negatively impact research outcomes.
-</span>
+<div class="warning" markdown="1">
+**Matching datasets manually can be a time-consuming and error-prone process.** It is not a reliable approach due to the risk of <u>human error</u> and the possibility of <u>missing data</u> or overlooking important information. Mistakes can lead to data inconsistencies, inaccuracies, and negatively impact research outcomes.
 </div>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Software solutions like Python-based <b>data_merge app</b> can be a better approach for matching datasets because they can automate the process, reducing the likelihood of human error and increasing efficiency. It can also ensure consistency and accuracy, identify discrepancies, and be customized to meet specific needs and requirements.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+Software solutions like **Python-based** `data_merge` **app** can be a better approach for matching datasets because they can <u>automate the process</u>, reducing the likelihood of human error and increasing efficiency. It can also <u>ensure consistency and accuracy</u>, identify discrepancies, and be customized to meet specific needs and requirements.
+</div>
 
 **In this Case Study we use the inputs in the Excel format (.xlsx).** Usage examples for different input formats (CSV, TXT) are available in the <a href="https://github.com/ISUgenomics/data_wrangling/tree/main/merge_data#example-usage" target="_blank">Example usage  ⤴</a> section in the documentaion of the app in the <a href="https://github.com/ISUgenomics/data_wrangling/" target="_blank">data_wrangling  ⤴</a> repo.
 

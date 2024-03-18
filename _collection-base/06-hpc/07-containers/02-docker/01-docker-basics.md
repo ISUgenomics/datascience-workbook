@@ -31,13 +31,10 @@ Docker is a lightweight platform for automating the deployment of applications w
 
 ## Finding Containers
 Singularity is commonly used for High-Performance Computing (HPC) clusters environments whereas Docker is usually run locally as it needs admin privileges. Docker container images can be searched from the <a href="https://hub.docker.com/search?q=" target="_blank">Docker Hub ⤴</a> or directly from the Docker Desktop app. <br>
-<br>
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;"> Singularity is able to support Docker containers, which means that you can run Docker containers using Singularity. But, Docker does not natively support Singularity containers. However, there are some workarounds that allow you to run Singularity containers inside a Docker container, such as using Singularity as an entry point for the Docker container. </span>
-</div> <br>
-<br>
+<div class="note" markdown="1">
+Singularity is able to support Docker containers, which means that **you can run Docker containers using Singularity**. But, Docker does not natively support Singularity containers. However, there are some workarounds that allow you to run Singularity containers inside a Docker container, such as using Singularity as an entry point for the Docker container.
+</div>
 
 ## Pulling a container image
 The simplest way to pull (download) a container image is using the Docker Desktop app.

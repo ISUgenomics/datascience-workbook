@@ -61,9 +61,8 @@ Here's a summary of several **online graphics platforms**, categorized by their 
 * Templates available depend on the focus of the tool. For example, `BioRender` has a vast library of templates and icons specifically for life sciences.
 * Most of the tools have a free tier, but full access and capabilities usually require a paid subscription.
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;"> Please note that while most of these tools offer free versions or trials, some features may require a paid subscription. </span>
+<div class="warning" markdown="1">
+Please note that while most of these tools offer free versions or trials, some features may require a paid subscription.
 </div>
 
 ## **Online tools with scientific templates**
@@ -133,12 +132,9 @@ Mind the Graph provides numerous **science-specific infographic elements across 
 
 Tools introduced in this section are universal in their application, providing a broad range of templates and design elements that can be utilized across various fields and disciplines, including scientific research. Whether you need to design an infographic, create an engaging presentation, visualize complex data, or collaborate on a visual project, these tools provide the resources to do so in a convenient online format.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+<div class="protip" markdown="1">
 Please note that while these tools offer some level of free access, some features or assets may require a paid subscription. As with any online tool, features and pricing can change over time, so it's recommended to check the respective websites for the most current information.
-</span>
-</div><br>
+</div>
 
 ###  • Adobe (Spark) Express
 

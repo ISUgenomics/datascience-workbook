@@ -36,10 +36,9 @@ It is built around a powerful and efficient data structure called an `ndarray`, 
 |<i># Create a 1-dimensional array of integers from 0 to 9<br></i> <br>`arr = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])`| <i># Create a 2-dimensional array of floats with shape (3, 4)</i><br><br>`arr2d = np.array([`<br>&emsp;&nbsp;&emsp;&nbsp;`[1.0, 2.0, 3.0, 4.0],`<br>&emsp;&nbsp;&emsp;&nbsp;`[5.0, 6.0, 7.0, 8.0],`<br>&emsp;&nbsp;&emsp;&nbsp;`[9.0, 10.0, 11.0, 12.0]`<br>`])` |
 |<i># Printing the 1D array</i><br>`print(arr)`<br><br># Output: [0 1 2 3 4 5 6 7 8 9]|<i># Printing the 2D array</i><br>`print(arr2d)`<br><br># Output: <br>[[ 1.  2.  3.  4.]<br>&ensp;[ 5.  6.  7.  8.]<br>&ensp;[ 9. 10. 11. 12.]]|
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;"> <b>ndarrays are homogeneous</b>, meaning all elements in the array must be of the same data type, and they support element-wise operations and mathematical functions. </span>
-</div><br>
+<div class="warning" markdown="1">
+The `ndarrays` are homogeneous, meaning **all elements in the array must be of the same data type**, and they support element-wise operations and mathematical functions.
+</div>
 
 Some of the key features of the NumPy library include:
 
@@ -54,9 +53,9 @@ Some of the key features of the NumPy library include:
 
 * **Broadcasting** *(<a href="https://numpy.org/doc/stable/user/basics.broadcasting.html#broadcasting" target="_blank">learn more from the docs  ⤴</a>)* <br>
 <i>NumPy's broadcasting feature allows you to perform operations on arrays with different shapes and sizes.</i>
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;"> When you perform an operation on two arrays, NumPy will automatically broadcast the smaller array to match the shape of the larger array. </span>
+
+<div class="protip level-1" markdown="1">
+When you perform an operation on two arrays, **NumPy** will automatically broadcast the smaller array to match the shape of the larger array.
 </div>
 
 
@@ -75,30 +74,26 @@ Some of the key features of the NumPy library include:
 * **Interoperability with other libraries** <br>
 <i>NumPy is widely used in the scientific Python ecosystem, and it can be easily integrated with other libraries for data analysis, visualization, and machine learning, such as Pandas, Matplotlib, and scikit-learn.</i>
 
-
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-For numerical and scientific computing, NumPy and SciPy are often the go-to options, while for data manipulation and analysis, Pandas and other packages such as Dask and PySpark may be more appropriate.<br>
-<li><b>numerical and scientific computing:</b></li>
-&emsp; <a href="https://numpy.org/" target="_blank">NumPy  ⤴</a>, provides support for multidimensional arrays and matrices, and includes a wide range of mathematical functions<br>
-&emsp; <a href="https://www.scipy.org/" target="_blank">SciPy  ⤴</a>, includes modules for optimization, signal processing, and linear algebra, among others<br>
-<li><b>data manipulation and analysis:</b></li>
-&emsp; <a href="https://pandas.pydata.org/" target="_blank">Pandas  ⤴</a>, provides high-level tools for working with tabular and heterogeneous data<br>
-&emsp; <a href="https://scikit-learn.org/" target="_blank">Scikit-learn  ⤴</a>, includes modules for classification, regression, clustering, and dimensionality reduction<br>
-&emsp; <a href="https://spark.apache.org/docs/latest/api/python/index.html" target="_blank">PySpark  ⤴</a>, allows users to process large datasets in parallel across multiple nodes<br>
-&emsp; <a href="https://dask.org/" target="_blank">Dask  ⤴</a>, provides support for distributed computing and enables users to work with larger-than-memory datasets<br>
-</span>
-</div><br>
+<div class="protip level-1" markdown="1">
+For numerical and scientific computing, `numpy` and `scipy` are often the go-to options, while for data manipulation and analysis, `pandas` and other packages such as `dask` and `pyspark` may be more appropriate. <base class="mb">
+**1) numerical and scientific computing:**
+  * <a href="https://numpy.org/" target="_blank">NumPy  ⤴</a>, provides support for multidimensional arrays and matrices, and includes a wide range of mathematical functions
+  * <a href="https://www.scipy.org/" target="_blank">SciPy  ⤴</a>, includes modules for optimization, signal processing, and linear algebra, among others
+<base class="mt">
+**2) data manipulation and analysis:**
+  * <a href="https://pandas.pydata.org/" target="_blank">Pandas  ⤴</a>, provides high-level tools for working with tabular and heterogeneous data
+  * <a href="https://scikit-learn.org/" target="_blank">Scikit-learn  ⤴</a>, includes modules for classification, regression, clustering, and dimensionality reduction
+  * <a href="https://spark.apache.org/docs/latest/api/python/index.html" target="_blank">PySpark  ⤴</a>, allows users to process large datasets in parallel across multiple nodes
+  * <a href="https://dask.org/" target="_blank">Dask  ⤴</a>, provides support for distributed computing and enables users to work with larger-than-memory datasets
+</div>
 
 
 # Getting started with NumPy
 
 NumPy is NOT a built-in Python module, meaning it is not included with the standard Python distribution. It is a third-party package that needs to be installed separately to be used in your Python environment.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;"> NumPy is widely used in scientific computing and data analysis in Python, and it is included in many popular scientific Python distributions, such as Anaconda and Enthought Canopy. It can also be installed using package managers like pip or conda (see instructions below).</span>
+<div class="protip" markdown="1">
+**NumPy** is widely used in scientific computing and data analysis in Python, and it is included in many popular scientific Python distributions, such as Anaconda and Enthought Canopy. It can also be installed using package managers like `pip` or `conda` (see instructions below).
 </div>
 
 ## Install `numpy` library
@@ -118,24 +113,17 @@ conda install numpy
 
 *This will download and install the latest version of NumPy from the conda repository.*
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-This command will install NumPy and any necessary dependencies in your current Conda environment. <br><br>
-If you don't have Conda installed yet, you can follow the guide provided in the tutorial {% include target_link href=423 text="Local Python setup on your computing machine." %} If you are using the Anaconda distribution, conda is already installed by default.
-</span>
+<div class="warning" markdown="1">
+This command will install **NumPy** and any necessary dependencies <u>in your current Conda environment</u>. <base class="mb">
+If you don't have `conda` installed yet, you can follow the guide provided in the tutorial {% include target_link href=423 text="Local Python setup on your computing machine." %} If you are using the Anaconda distribution, `conda` is already installed by default.
 </div>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Conda provides additional benefits over pip, such as the ability to create and manage multiple environments for different projects with different dependencies, and the ability to install packages from both the Conda and PyPI (Python Package Index) repositories.
-</span>
+<div class="protip" markdown="1">
+`conda` provides additional benefits over `pip`, such as the ability to create and manage multiple environments for different projects with different dependencies, and the ability to install packages from both the Conda and PyPI (Python Package Index) repositories.
 </div>
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;"> If you are working in a virtual environment, you can install packages without administrative privileges by activating the virtual environment before running the installation command. </span>
+<div class="note" markdown="1">
+If you are working in a **virtual environment**, you can install packages without administrative privileges by activating the virtual environment before running the installation command.
 </div>
 
 
@@ -154,9 +142,8 @@ You can then use the NumPy functions and classes in your code by prefixing them 
 
 NumPy is primarily designed for **numerical computing** and is optimized for operations on arrays of numerical data. While NumPy arrays can technically store any type of data, they are most commonly used to store numerical data, such as `integers`, `floating-point` numbers, and `complex numbers`.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;"> While NumPy is primarily used for numerical data, it can also be used for other types of data, such as images and sound signals, which can be represented as numerical arrays. NumPy is also commonly used in combination with other Python libraries for scientific computing and data analysis, such as Pandas, SciPy, and Matplotlib. </span>
+<div class="note" markdown="1">
+While `numpy` is primarily used for numerical data, it can also be used for other types of data, such as images and sound signals, which can be represented as numerical arrays. **NumPy** is also commonly used in combination with <u>other Python libraries</u> for scientific computing and data analysis, such as `pandas`, `scipy`, and `matplotlib`.
 </div>
 
 ## NumPy objects
@@ -331,9 +318,8 @@ print(arr[1:4])                                 # Output: [2 3 4]
 
 *Here, the `arr[1:4]` selects elements from position 1 to position 3 (inclusive) of the array arr.*
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;"> You can also use slicing to select every other element, or to reverse the order of the elements. </span>
+<div class="protip" markdown="1">
+You can also use slicing to select every other element, or to reverse the order of the elements.
 </div>
 
 ## *Boolean indexing*
@@ -344,10 +330,9 @@ For example, `arr[arr > 2]` selects all the elements of the array arr that are g
 
 ## *Indexing in multidimensional array*
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;"> Numpy arrays can also be indexed using multi-dimensional indices. For example, arr[0, 2] selects the element at row 0 and column 2 of a 2D array. You can also use slicing and Boolean indexing along each dimension of a multi-dimensional array to select specific subsets of the array. </span>
-</div><br>
+<div class="protip" markdown="1">
+Numpy arrays can also be indexed using **multi-dimensional indices**. For example, `arr[0, 2]` selects the <u>element at row 0 and column 2</u> of a 2D array. You can also use slicing and Boolean indexing along each dimension of a multi-dimensional array to select specific subsets of the array.
+</div>
 
 Let's assume we have a simple 1D array:
 ```python
@@ -370,9 +355,8 @@ print(arr[:2, 1:])                              # Output: [[2], [4]]
 
 *(<a href="https://numpy.org/doc/stable/user/basics.creation.html#array-creation" target="_blank">learn more from the docs: Array creation  ⤴</a>)*
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;"> In NumPy, <b>numpy.ndarray</b> and <b>numpy.array</b> refer to the same thing.</span>
+<div class="warning" markdown="1">
+In NumPy, `numpy.ndarray` and `numpy.array` refer to the same thing.
 </div>
 
 
@@ -384,9 +368,8 @@ For example, the following code creates a new ndarray object using the `numpy.ar
 |`import numpy as np` <br><br>`a = np.array([1, 2, 3])` <br><br>`print(type(a))` | `import numpy as np` <br><br>`a = np.ndarray([1, 2, 3])` <br><br>`print(type(a))` |
 | # OUTPUT: <class 'numpy.ndarray'> | # OUTPUT: <class 'numpy.ndarray'>|
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;"> It is generally recommended to use <b>numpy.array</b> to create new ndarray objects, as it provides additional options and features, such as dtype, copy, order, and subok. </span>
+<div class="protip" markdown="1">
+It is generally recommended to use `numpy.array` to create new **ndarray objects**, as it provides additional options and features, such as `dtype`, `copy`, `order`, and `subok`.
 </div>
 
 
@@ -418,12 +401,12 @@ print(a)                        # OUTPUT: array([[1, 2], [3, 4], [5, 6]])
 
 *The resulting array have the same number of dimensions as the nested list (in this case, 2 dimensions), with each inner list converted to a row of the array*
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;"> Note that the shape of the resulting array will be <b>(n, m)</b>, where
-<li>n is the number of inner lists in the nested list, and </li>
-<li>m is the length of each inner list. </li>
-In this example, n = 3 and m = 2, so the shape of the resulting array is (3, 2), i.e. 3 rows and 2 columns. </span>
+<div class="example italic" markdown="1">
+Note that the shape of the resulting array will be `(n, m)`, where:
+* `n` is the number of inner lists in the nested list, and
+* `m` is the length of each inner list.
+<base class="mt">
+In this example, `n = 3` and `m = 2`, so the shape of the resulting array is `(3, 2)`, i.e. 3 rows and 2 columns.
 </div>
 
 
@@ -499,10 +482,9 @@ Consider the following two 2D arrays:|Let's create the same arrays as matrices:|
 |`c = np.dot(a, b)` <br><br>`print(c)`|`c_mat = a_mat * b_mat` <br><br>`print(c_mat)`|
 | # OUTPUT: [ [19 22], [43 50] ] | # OUTPUT: [ [19 22], [43 50] ] |
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;"> Note that with matrices, you can use the <b>*</b> operator to perform matrix multiplication instead of the <b>np.dot</b> function. This can make the code more concise and easier to read. </span>
-</div><br>
+<div class="protip" markdown="1">
+Note that with matrices, you can use the `*` **operator** to perform <u>matrix multiplication</u> instead of the `np.dot` function. This can make the code more concise and easier to read.
+</div>
 
 <span style="color: #ff3870;font-weight: 500;"> In addition, matrices have some additional methods that are not available for 2D arrays. </span> *(see section below)*
 
@@ -535,9 +517,8 @@ mat = np.matrix(arr)                    # matrix
 | getT   | mat.getT  | *see T* | Returns the transpose of the matrix. |
 | getconj | mat.getconj | *see conj* | Returns the complex conjugate of the matrix. |
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;"> Note that these methods are NOT available for NumPy arrays. However, some of them can be emulated using NumPy array methods. For example, the transpose of an array can be calculated using the <b>np.transpose</b> function, and the inverse of a matrix can be calculated using the <b>np.linalg.inv</b> function. </span>
+<div class="warning" markdown="1">
+Note that these methods are **NOT available for NumPy arrays**. However, some of them can be emulated using NumPy array methods. For example, the transpose of an array can be calculated using the `np.transpose` function, and the inverse of a matrix can be calculated using the `np.linalg.inv` function.
 </div>
 
 
@@ -554,10 +535,9 @@ Some of the popular I/O options are:
 
 These are the most basic functions provided by NumPy for **saving and loading arrays in the binary `.npy` format**.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;"> The .npy format is a binary format that stores the data in a raw binary format.  </span>
-</div><br>
+<div class="note" markdown="1">
+The `.npy` **format** is a binary format that stores the data in a raw binary format.
+</div>
 
 The `np.save()` function saves an array to a binary file in `.npy` format, while the `np.load()` function loads the data from the binary file into an array.
 
@@ -787,10 +767,9 @@ $ Output: <br>
 $ [1 2 3 4 5 6]
 </code><br>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;"> Note that the <b>np.hstack()</b> function can also be used to concatenate arrays horizontally, and the <b>np.dstack()</b> function can be used to concatenate arrays along a third dimension. </span>
-</div><br>
+<div class="protip" markdown="1">
+Note that the `np.hstack()` function can also be used to concatenate arrays horizontally, and the `np.dstack()` function can be used to concatenate arrays along a third dimension. 
+</div>
 
 ## np.split()
 

@@ -24,11 +24,9 @@ tags: []
 
 Remote access to the contents stored on remote machines refers to the ability for a user to **access, view, and manipulate files, data, and software available on another computer**, including servers, databases, and HPC systems. This can be accomplished **from anywhere over a network connection** such as the Internet. Though, the user **must have the necessary permissions** and credentials to access the remote machine and its contents. In particular, there are several ways to access remotely the resources available on high-performance computing (HPC) clusters.
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-It is important to note that <b>accessing data on an HPC cluster remotely can be slower</b> than accessing data locally, due to the added latency of transmitting data over the network. <br><br>In addition, users may <b>need to be granted access</b> to the HPC cluster in order to use it remotely.
-</span>
+<div class="warning" markdown="1">
+It is important to note that **accessing data on an HPC cluster remotely can be slower** than accessing data locally, due to the added latency of transmitting data over the network.
+<base class="mb"> In addition, users may **need to be granted access** to the HPC cluster in order to use it remotely.
 </div>
 
 
@@ -78,12 +76,9 @@ Learn more from the hands-on tutorials in the {% include target_link href=714 te
 * {% include target_link href=714.3 text="Viewing graphics in a terminal as the text-based ASCII art" %}
 * {% include target_link href=714.4 text="Mounting remote folder on a local machine" %}
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-If the HPC system already has RFS pre-configured, the user may simply need to follow the appropriate steps to access the remote file system, such as <b>mounting the file system and logging in with their credentials</b>. The specific steps and commands required to access the RFS will vary depending on the operating system and RFS implementation being used.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+If the HPC system already has RFS pre-configured, the user may simply need to follow the appropriate steps to access the remote file system, such as **mounting the file system and logging in with their credentials**. The specific steps and commands required to access the RFS will vary depending on the operating system and RFS implementation being used.
+</div>
 
 ---
 

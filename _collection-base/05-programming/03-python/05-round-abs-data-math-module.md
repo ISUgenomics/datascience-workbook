@@ -169,11 +169,8 @@ The math module provides a range of additional mathematical functions, including
 
 **MATH is a built-in module** *(no installation required)* that contains various mathematical constants and more advanced mathematical operations such as trigonometric functions, logarithmic functions, and statistical functions, among others.
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-The <b>math module</b> does not contain functions for basic arithmetic operations such as addition, subtraction, multiplication, and division. These are basic mathematical operations that can be performed using the standard arithmetic operators in Python, such as <b>+, -, *, /</b>.
-</span>
+<div class="warning" markdown="1">
+The `math` **module** does not contain functions for basic arithmetic operations such as addition, subtraction, multiplication, and division. These are basic mathematical operations that can be performed using the <u>standard arithmetic operators</u> in Python, such as `+`, `-`, `*`, `/`.
 </div>
 
 

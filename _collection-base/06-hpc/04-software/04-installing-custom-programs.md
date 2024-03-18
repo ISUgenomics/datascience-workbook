@@ -23,23 +23,23 @@ tags: []
 # Introduction
 
 Installing programs on a high-performance computing (HPC) system can be different from installing software on a personal computer due to the complex nature of HPC systems and limited privileges for regular users. <br>
-If you need a **specific software package**, first check whether this software is already pre-installed on HPC. Typically, compilers, programming languages, libraries and frameworks, basic visualization software, text editors, and job schedulers are all available. What's more, popular software for specialized analysis (*such as `blast` for bioinformatics*) is often not only available but also regularly upgraded to the latest release. See tutorial {% include target_link href=641 section="#how-to-find-available-software" text="How to find available software?" %} to learn more about:
+If you need a **specific software package**, first check whether this software is already pre-installed on HPC. Typically, compilers, programming languages, libraries and frameworks, basic visualization software, text editors, and job schedulers are all available. What's more, popular software for specialized analysis (*such as* `blast` *for bioinformatics*) is often not only available but also regularly upgraded to the latest release. See tutorial {% include target_link href=641 section="#how-to-find-available-software" text="How to find available software?" %} to learn more about:
 * {% include target_link href=642 text="software available as pre-installed modules" %}
 * {% include target_link href=643 text="software available via package manager" %}
 * {% include target_link href=644 text="installing custom programs in user space" %}
 * {% include target_link href=641 section="#check-the-documentation" text="other methods of accessing the software" %}
 
+---
 
 # Installing custom programs on HPC
 
 Most HPC systems run on Linux-based operating system, so **installing custom programs is done on the command line**.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;"> If you would like to learn more about the command line interface and Linux-based operating systems start with the tutorials:
-<li>{% include target_link href=310 text="Terminal - an interface for command-line operations" %}</li>
-<li>{% include target_link href=320 text="Introduction to UNIX Shell" %}</li></span>
-</div><br>
+<div class="protip" markdown="1">
+If you would like to learn more about the command line interface and Linux-based operating systems start with the tutorials:
+* {% include target_link href=310 %}
+* {% include target_link href=320 %}
+</div>
 
 <b>What you can NOT do as a regular user on HPC:</b>
 * install new packages using the package manager, such as YUM, APT, DNF, ZYpp, or Pacman
@@ -184,14 +184,13 @@ The `YUM` package manager extracts the contents of the `.rpm` archive, verifies 
 
 **Follow the steps to extract and install software from `.rpm` file:**
 
-**1.** Find the RPM package correct for your system. <i>The <a href="http://pkgs.org" target="_blank">http://pkgs.org  ⤴</a> website lists all RPMs available, and they are free to download.</i><br>
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+**1.** Find the RPM package correct for your system. <i>The <a href="http://pkgs.org" target="_blank">http://pkgs.org  ⤴</a> website lists all RPMs available, and they are free to download.</i>
+
+
+<div class="protip" markdown="1">
 All CentOS and Fedora RPM's work on Red Hat (RHEL). <br>
-Download the <b>Source Package</b> (not Binary) because as a reugular user you can't use the <code>yum install</code> command. Instead, you can extract the source package and use a custom installation.
-</span>
-</div><br>
+Download the **Source Package** (not Binary) because as a reugular user you can't use the `yum install` command. Instead, you can extract the source package and use a custom installation.
+</div>
 
 **2.** Extract the package:
 ```bash
@@ -203,12 +202,13 @@ rpm2cpio package.rpm | cpio -idmv
 ```bash
 cd path/to/extracted/files
 ```
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-In rare cases, when you have patches (extracted from RPM), you might have to apply them before you install. <br><br> <code>patch -Np1 -i path/to/file.patch</code>
-</span>
-</div><br>
+
+<div class="warning" markdown="1">
+In rare cases, when you have patches (extracted from RPM), you might have to apply them before you install.
+```bash
+patch -Np1 -i path/to/file.patch
+```
+</div>
 
 **4.** Configure the package with a custom installation prefix:
 ```bash
@@ -221,25 +221,23 @@ make
 make install
 ```
 
-This installs the package into the <b>$HOME/local</b> directory. This allows you to install the software without root access. However, keep in mind that the installed software will only be accessible from within your home directory and may not be visible to other users on the system.
+This installs the package into the `$HOME/local` directory. This allows you to install the software without root access. However, keep in mind that the installed software will only be accessible from within your home directory and may not be visible to other users on the system.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-You can install software to another location in the file system (where you have write access to) and then create symbolic links (sym-links) to the executables in your home directory, allowing you to easily access them. <br><br>
-**4'-5'.** Configure the package with a custom installation prefix: <br>
-<pre><code>
+<div class="protip" markdown="1">
+You can install software to another location in the file system (where you have write access to) and then create symbolic links (**sym-links**) to the executables in your home directory, allowing you to easily access them. <base class="mb">
+**4'-5'.** Configure the package with a custom installation prefix:
+```bash
 ./configure --prefix=/project/{group-wide folder}/SOFTWARE/package_name
 make
 make install
-</code></pre>
-**6.** Create sym-links to the executables in your $HOME directory: <br>
-<pre><code>
+```
+<base class="mt">
+**6.** Create sym-links to the executables in your $HOME directory:
+```bash
 cd $HOME
 ln -s project/{group-wide folder}/SOFTWARE/
-</code></pre>
-</span>
-</div><br>
+```
+</div>
 
 
 ### • *use .configure file*
@@ -309,29 +307,26 @@ source ~/.bashrc
 module load myprogram
 ```
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
+<div class="warning" markdown="1">
 In case something goes wrong or you get an error saying that you need 'package x' before installing, then you can undo these steps before attempting installation again, using: <br>
-<code>make clean</code><br><br>
+```bash
+make clean
+```
+<base class="mt">
 If the program doesn't work as intended or something goes wrong after installation, many programs can be safely uninstalled:<br>
-<code>
+```bash
 make uninstall
-</code>
-</span>
-</div><br>
+```
+</div>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-It is good idea to run all the above commands in a <b>build</b> directory inside the package directory, so that if something doesn't work you can easily delete the <b>build</b> directory to start over.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+It is good idea to run all the above commands in a `build` **directory** inside the package directory, so that if something doesn't work you can easily delete the `build` **directory** to start over.
+</div>
 
 
 ### • *use Makefile file*
 
-Some programs don't have `.configure` but they already have a `Makefile`. These programs do not need the first step *(i.e., executing `.configure`)*, and you can simply install them by typing:
+Some programs don't have `.configure` but they already have a `Makefile`. These programs do not need the first step *(i.e., executing* `.configure`*)*, and you can simply install them by typing:
 ```bash
 make
 make install
@@ -404,12 +399,9 @@ module load app_name
 
 <i>By using the `module use` command, you can temporarily modify the `module search` path for your current shell session without affecting the module search path for other users.</i>
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-The <code>module use</code> command in a high performance computing system allows you to temporarily modify the search path for modules. This command allows you to add or prepend one or more directories to the existing module search path, so that when you run the <code>module avail</code> or <code>module load</code> commands, it will search the newly added directories first. This can be useful if you have your own custom modules or if you want to use a different version of a module than what is available in the default module search path.
-</span>
-</div><br>
+<div class="note" markdown="1">
+The `module use` command in a high performance computing system allows you to temporarily modify the search path for modules. This command allows you to add or prepend one or more directories to the existing module search path, so that when you run the `module avail` or `module load` commands, it will search the newly added directories first. This can be useful if you have your own custom modules or if you want to use a different version of a module than what is available in the default module search path.
+</div>
 
 **5.** To set the modules path to be available on login, add the `module use` command to your **~/.bashrc** file:
 ```bash

@@ -26,11 +26,8 @@ tags: []
 
 ![Python]({{ images_path }}/03_python.png)
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-Python was created by <b>Guido van Rossum</b>, who is a Dutch computer programmer and software engineer. He based Python on several other programming languages, including ABC, Modula-3, and C. He released the first version of Python in December 1989, and has continued to develop and maintain the language ever since.
-</span>
+<div class="note" markdown="1">
+Python was created by **Guido van Rossum**, who is a Dutch computer programmer and software engineer. He based Python on several other programming languages, including ABC, Modula-3, and C. He released the first version of Python in December 1989, and has continued to develop and maintain the language ever since.
 </div>
 
 
@@ -109,13 +106,10 @@ Starting your Python learning journey with online platform provides you with:
 
 There are many online platforms that allow you to write and run Python code directly in your web browser. Several examples are described in the section {% include target_link href=420 section="#1-online-coding-platforms-beginner" text="1. Online coding platforms" %} of the {% include target_link href=420 text="Python programming environment(s)" %} tutorial. For this hands-on exercise I select the <a href="https://www.python.org/shell/" target="_blank">Python Console  ⤴</a> web platform [by Python], to start right away without creating any account.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+<div class="protip" markdown="1">
 If you want to keep your projects online for future reuse, open the <a href="https://www.pythonanywhere.com/" target="_blank">PythonAnywhere  ⤴</a> online platform and create the account (using its basic plan) to get started with Python coding for free. <br>
 Follow the step-by-step guide in the tutorial {% include target_link href=421 text="Online Console: simple Python code in a browser" %} to create the free account and get started with Python.
-</span>
-</div><br>
+</div>
 
 You can also stay here and enhance your experience by following the step-by-step guide while coding in the default online Python Console.
 
@@ -228,11 +222,8 @@ Python has several built-in operators that you can use to perform operations on 
 <details><summary><b>Bitwise</b></summary>
 
 Bitwise operators are used to manipulate the individual bits of binary numbers. In computing, binary numbers are numbers expressed in the base-2 numeral system, which uses only two digits (0 and 1) to represent all values. <br>
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
+<div class="note" markdown="1">
 Bitwise operators operate on these binary representations of numbers at the bit level, which means they manipulate the individual bits that make up the binary representation of a number.
-</span>
 </div>
 <table>
   <tr><th>Operator</th><th>Description</th></tr>
@@ -282,12 +273,9 @@ In Python, the `for`, `while`, and `until` loops are used to execute a block of 
 * The `while` loop is used to execute a block of code repeatedly as long as a specified **condition is true**.
 * The `while not` loop is used to execute a block of code repeatedly as long as a specified **condition is false**.
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-The <b>until loop</b> is NOT a built-in loop in Python. Instead, it is often used in other programming languages such as Ruby. In Python, a similar behavior can be achieved using a while loop with a negated condition (<b>while not</b>).
-</span>
-</div><br>
+<div class="warning" markdown="1">
+The **until loop** is NOT a built-in loop in Python. Instead, it is often used in other programming languages such as Ruby. In Python, a similar behavior can be achieved using a **while loop with a negated condition**, `while not`.
+</div>
 
 **FOR** <br>
 Here's an example of using a for loop to iterate over a list of numbers and print each number:
@@ -478,13 +466,10 @@ In addition to built-in functions and user-defined functions, Python also allows
 
 Python provides several ways to import functions from external modules. The most common way is to use the `import` statement, which allows you to **import an entire module or just specific functions** from that module.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-A <b>module</b> is a file containing Python definitions and statements that can be used in other Python code. <br><br>
-A <b>package</b> is a collection of related modules that can be organized hierarchically.
-</span>
-</div><br>
+<div class="note" markdown="1">
+A **module** is a file containing Python definitions and statements that can be used in other Python code. <base class="mb">
+A **package** is a collection of related modules that can be organized hierarchically.
+</div>
 
 To use multiple functions from a package, you can **import the entire package** using the `import` statement and then call the functions using the dot `.` notation.
 
@@ -497,24 +482,25 @@ print(result)                             # output: 5.0
 ```
 *In this example, we import the math module using the import statement and then call the sqrt() function from the math module using the syntax math.sqrt(). This allows us to calculate the square root of the number 25 and store the result in a variable result.*
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-If the name of the package is long or inconvenient you can use a cutomized shortcut with the <b>as</b> keyword:
-</span>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+<div class="protip" markdown="1">
+If the name of the package is long or inconvenient you can use a cutomized shortcut with the `as` keyword:
+```python
 import pandas as pd
-</code><br>
+```
+<base class="mt">
 Then, use a shortcut instead of the full name in your code:
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```python
 my_dataframe = pd.DataFrame({'col1': [1, 2], 'col2': [3, 4]}) <br>
 print(my_dataframe)
-</code><br>
-<i># output:</i> <br>
- &emsp; &emsp; col1 &emsp;  col2 <br>
-0 &emsp; &emsp; 1 &emsp; &emsp; 3 <br>
-1 &emsp; &emsp; 2 &emsp; &emsp; 4
-</div><br>
+```
+<base class="mt">
+<i># output:</i>
+```
+  col1  col2
+0    1     3
+1    2     4
+```
+</div>
 
 Instead of importing an entire module, you can **import only a specific function** from the module using the from keyword.
 
@@ -696,11 +682,9 @@ for name in names100:
 
 In this solution, we used a single line syntax for nested loops that returns a list, i.e., the content of `name100` list. The `range()` function generates a list of integers. We want 10 digits. **In Python numbering starts from 0**, so the first integer is 0, and the tenth is 9 when incrementing by 1. So, the elements in the list are numbers `[0,1,2,3,4,5,6,7,8,9]` and we can NOT simply add the number to the name string. It is where the `str()` function comes in. By applying this function to the number `0` we get the string `'0'`. And, we can do that on the fly. To sum up, in the external loop we generate integers, which are converted to string representation and pasted with every name in the inner loop.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">More about <code>range()</code> function</span><br>
-<br><span style="font-style:italic;">
-The <b>range()</b> function in Python is a built-in function that allows you to generate a sequence of integers. It takes three arguments: start, stop, and step, and returns a sequence of integers that starts at the start value, and ends at the stop value, incrementing by the step value. The range() function is often used in Python in conjunction with a for loop to iterate over a sequence of integers. It can also be used to create lists of integers, or to generate values for other purposes.
-</span>
+<div class="note" markdown="1">
+**More about range() function** <base class="mb">
+The `range()` function in Python is a built-in function that allows you to generate a sequence of integers. It takes three arguments: start, stop, and step, and returns a sequence of integers that starts at the start value, and ends at the stop value, incrementing by the step value. The `range()` function is often used in Python in conjunction with a for loop to iterate over a sequence of integers. It can also be used to create lists of integers, or to generate values for other purposes.
 </div>
 
 For example, the following code generates a sequence of integers from 0 to 9, incrementing by 1:
@@ -714,12 +698,9 @@ for i in range(10, 16, 2):
     print(i)                      # Output: 10 12 14
 ```
 
-<br>
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">More about <code>str()</code> function</span><br>
-<br><span style="font-style:italic;">
-The <b>str()</b> function in Python is a built-in function that converts a value to a string. It takes a single argument, which can be of any data type, and returns a string representation of that value. The str() function is often used to convert values to strings for display or printing purposes, or to convert values from one data type to another.
-</span>
+<div class="note" markdown="1">
+**More about str() function** <base class="mb">
+The `str()` function in Python is a built-in function that converts a value to a string. It takes a single argument, which can be of any data type, and returns a string representation of that value. The `str()` function is often used to convert values to strings for display or printing purposes, or to convert values from one data type to another.
 </div>
 
 For example, the following code converts an integer to a string:<br>
@@ -757,12 +738,9 @@ First, you need to download and install Python on your computer. You can downloa
 ### *A. Use Python interactive shell* - beginner
 In the simplest scenario, you need a command line interface, which can be opened in the terminal *(Linux, macOS)* or Command Prompt *(Windows)*.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+<div class="protip" markdown="1">
 If you are a beginner in command line, it may be beneficial for you to start with the tutorials provided in section {% include target_link href=300 text="03: Introduction to Command Line." %} This tutorial will guide you through the process of setting up your command line and familiarizing yourself with the fundamental concepts of Unix.
-</span>
-</div><br>
+</div>
 
 <span style="color: #ff3870;font-weight: 500;"> You can learn the details from the comprehensive introduction to</span> {% include target_link href=424 text="Shell & IDLE: create Python code in a terminal or simple IDE (beginner)" %}, provided in the section {% include target_link href=400 text="04. Development Environment" %} of this <a href="https://datascience.101workbook.org/" target="_blank">workbook  ⤴</a>.
 

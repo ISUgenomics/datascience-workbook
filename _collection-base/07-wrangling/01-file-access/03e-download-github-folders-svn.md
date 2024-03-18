@@ -52,12 +52,9 @@ svn --version
 
 *This command will check if SVN is installed and display the version number of SVN if it is installed on the system. If the command is not recognized, it means that SVN is not installed on the system.*
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
+<div class="warning" markdown="1">
 If SVN is not installed on the HPC system, you may need to contact your system administrator to request that it be installed.
-</span>
-</div><br>
+</div>
 
 If SVN is not installed on your local machine, you will first need to download and install it on your system. SVN is available for Windows, macOS, and Linux, and can be downloaded from the Apache Subversion website: <a href="https://subversion.apache.org/download/" target="_blank">https://subversion.apache.org/download/  ⤴</a>.
 
@@ -144,23 +141,22 @@ From now on, you do not need to replace keywords in the copy-pasted URL because 
 get_folder.sh https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data
 ```
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Ideally, you should place the script in a directory with your all universal scripts, such as ~/SCRIPTS. This way the path will be easy to remember. You can also add it to the $PATH environment variable to make it easier to execute the script. <br>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
+<div class="protip" markdown="1">
+Ideally, you should place the script in a directory with your all universal scripts, such as `~/SCRIPTS`. This way the path will be easy to remember. You can also add it to the $PATH environment variable to make it easier to execute the script.
+```bash
 export PATH=$PATH:~/SCRIPTS
-</code> <br>
+```
+<base class="mt">
 For this change to be applied to every shell you open, add it to the file that the shell will source when it is invoked.
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
+```bash
 source ~/.bashrc
-</code> <br>
+```
+<base class="mt">
 Then you can execute the script by its name from any location in the file syetem:
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
+```bash
 get_folder.sh https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data
-</code> <br>
-</span>
-</div><br>
+```
+</div>
 
 
 ## **GitHub File**
@@ -186,15 +182,12 @@ If you need to download a single file from the GitHub repository, the simplest s
 wget https://raw.githubusercontent.com/ISUgenomics/data_wrangling/main/bin_data/app/bin_data.py
 ```
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-You can use the <b>wget</b> command to download any type of file from online repository.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+You can use the `wget` command to download any type of file from online repository.
+</div>
 
 
-## • *use `svn export` command*
+## • *use* `svn export` *command*
 
 <span style="color: #ff3870;font-weight: 500;">To get started with the SVN tool (e.g., to check if you have it installed) see section [Get started with SVN](#get-started-with-svn) in this tutorial.</span> To learn more about version control systems, including SVN and Git, explore tutorials in section {% include target_link href=932.1 text="09. Project Management / Storage & Version Control" %} of this workbook.
 
@@ -255,14 +248,12 @@ get_file.sh https://github.com/ISUgenomics/data_wrangling/blob/main/bin_data/app
 
 <span style="color: #ff3870;font-weight: 500;">(manual download from the web-based GUI)</span>
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
+<div class="warning" markdown="1">
 These approach require browser access directly on the machine where the download will take place. <br>
-If you want <b>to download a single folder from a GitHub repository to a remote HPC system</b> that doesn't have a browser-based GUI, such as Open On Demand, then you need to <b>1) download the folder to a local machine</b> and further <b> 2) transfer it to the cluster</b> using, for example, an ssh connection and the scp or rsync command.
-</span>
-</div><br>
-
+If you want **to download a single folder from a GitHub repository to a remote HPC system** that doesn't have a browser-based GUI, such as Open On Demand, then you need to <br>
+**1) download the folder to a local machine** and further <br>
+**2) transfer it to the cluster** <br> using, for example, an `ssh` connection and the `scp` or `rsync` commands.
+</div>
 ## **GitHub Folder**
 
 ## • *Edge | Opera | Chrome | Chromium*

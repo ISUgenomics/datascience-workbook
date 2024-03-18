@@ -130,9 +130,8 @@ The dataset consists of 100 records, each representing the number of individuals
 * `Yellow Warbler` : the number of Yellow Warblers observed
 
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">Note that the dataset is artificial and was prepared for the purpose of this tutorial.</span>
+<div class="warning" markdown="1">
+Note that the dataset is artificial and was prepared for the purpose of this tutorial.
 </div>
 
 Here's a sample of the first 10 records in the dataset, showing the data structure:

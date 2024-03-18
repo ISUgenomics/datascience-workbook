@@ -37,21 +37,16 @@ The SCINet homepage is shown on the screenshoot below.*
 
 ![Scinet website]({{ images_path }}/01_hpc_scinet_web.png) <br>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+<div class="protip" markdown="1">
 Use the SCINet website to request SCINet accounts, access user guides, get technical support, and find out about upcoming and previous training events.
-</span>
-</div><br>
+</div>
 
 ### *Cite SCINet*
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-style:italic;">
-Add the following sentence as an acknowledgment <b>for using CERES</b> as a resource in your manuscripts meant for publication: <br><br>
-<i>“This research used resources provided by the SCINet project of the USDA Agricultural Research Service, ARS project number 0500-00093-001-00-D.”</i>
-</span>
-</div><br>
+<div class="note" markdown="1">
+Add the following sentence as an acknowledgment **for using CERES** as a resource in your manuscripts meant for publication: <base class="mb">
+“This research used resources provided by the SCINet project of the USDA Agricultural Research Service, ARS project number 0500-00093-001-00-D.”
+</div>
 
 ## **Before you get started**
 
@@ -113,12 +108,9 @@ Reading the SCINet Policy before you get started using the SCINet resources is i
 
 It is generally a good idea to **browse the Frequently Asked Questions** (<a href="https://scinet.usda.gov/support/faq#faqs" target="_blank">SCINet FAQ  ⤴</a>) section first because it can save you time and effort. The FAQ section is designed to provide answers to common questions that users may have about the SCINet service.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-By browsing the FAQ section, you may be able to <b>quickly find the answer to your question</b> without having to contact SCINet support team or search through other parts of the website. Overall, browsing the FAQ section can be a useful first step in getting the information you need and can help you save time and effort in the process.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+By browsing the FAQ section, you may be able to **quickly find the answer to your question** without having to contact SCINet support team or search through other parts of the website. Overall, browsing the FAQ section can be a useful first step in getting the information you need and can help you save time and effort in the process.
+</div>
 
 <i><b>Quick preview of <a href="https://scinet.usda.gov/support/faq#faqs" target="_blank">SCINet FAQ  ⤴</a>below:</b></i>
 

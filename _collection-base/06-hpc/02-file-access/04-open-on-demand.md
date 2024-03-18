@@ -31,27 +31,22 @@ OOD provides a convenient way for users to **access remote resources through a w
 
 So, first open your favorite web-browser (e.g., Chrome, Firefox, Safari) and **visit the URL specific to the HPC system** you want to access.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-This URL address for the OOD interface should be available in the documentation or on your organization's website. <br>
-For example, you can open the OOD interface for: </span>
-<ul><li> {% include target_link href=612.2 text="Atlas" %} cluster (part of {% include target_link href=612.1 text="SCINet Scientific Computing" %}) at <a href="https://atlas-ood.hpc.msstate.edu/" target="_blank">https://atlas-ood.hpc.msstate.edu/  ⤴</a></li>
-<li> {% include target_link href=612.3 text="Ceres" %} cluster (part of {% include target_link href=612.1 text="SCINet Scientific Computing" %}) at <a href="http://ceres-ood.scinet.usda.gov" target="_blank">http://ceres-ood.scinet.usda.gov  ⤴</a></li>
-<li> {% include target_link href=613.3 text="Nova" %} cluster (part of {% include target_link href=613.1 text="Iowa State University HPC" %}) at <a href="http://nova-ondemand.its.iastate.edu/" target="_blank">http://nova-ondemand.its.iastate.edu/  ⤴</a></li></ul>
-</div><br>
+<div class="protip" markdown="1">
+This URL address for the OOD interface should be available in the documentation or on your organization's website.
+For example, you can open the OOD interface for:
+* {% include target_link href=612.2 text="Atlas" %} cluster (part of {% include target_link href=612.1 text="SCINet Scientific Computing" %}) at <a href="https://atlas-ood.hpc.msstate.edu/" target="_blank">https://atlas-ood.hpc.msstate.edu/  ⤴</a>
+* {% include target_link href=612.3 text="Ceres" %} cluster (part of {% include target_link href=612.1 text="SCINet Scientific Computing" %}) at <a href="http://ceres-ood.scinet.usda.gov" target="_blank">http://ceres-ood.scinet.usda.gov  ⤴</a>
+* {% include target_link href=613.3 text="Nova" %} cluster (part of {% include target_link href=613.1 text="Iowa State University HPC" %}) at <a href="http://nova-ondemand.its.iastate.edu/" target="_blank">http://nova-ondemand.its.iastate.edu/  ⤴</a>
+</div>
 
 Most resources probably require a login and allow access only to authorized users. Yet the good news is that logging into the OOD interface will require the same user credentials (`username` & `password`) as command-line access. To add an extra layer of security to the user authentication process, you may be asked for a **multi-factor authentication** (MFA). <br>
 <i>Typically, it is a several-digit code generated in time intervals in the application (e.g., <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=en_US&gl=US&pli=1" target="_blank">Google Authenticator  ⤴</a>, <b>GA</b>) on your mobile device. <br>* You need to install the required app on one of your own devices.</i>
 
 ![02_remote_ood_login_ceres.png]({{ images_path }}/02_remote_ood_login_ceres.png)
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-Multi-factor authentication is a security mechanism that requires users to provide multiple forms of identification to verify their identity. It adds an extra layer of security to the authentication process, making it more difficult for an unauthorized user to gain access to a system. To ensure that only authorized users can access the resources, the <b>OOD interface typically requires multi-factor authentication</b>.
-</span>
-</div><br>
+<div class="note" markdown="1">
+Multi-factor authentication is a security mechanism that requires users to provide multiple forms of identification to verify their identity. It adds an extra layer of security to the authentication process, making it more difficult for an unauthorized user to gain access to a system. To ensure that only authorized users can access the resources, the **OOD interface typically requires multi-factor authentication** (MFA).
+</div>
 
 
 

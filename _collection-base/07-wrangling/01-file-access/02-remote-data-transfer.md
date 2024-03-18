@@ -24,13 +24,10 @@ tags: []
 
 Remote data transfer refers to the transfer of data from one location to another. It requires a network, such as the Internet, that provides the means of **transmitting the data between the source and destination devices**. It allows individuals and organizations to share and exchange information, **regardless of their physical location**.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-With remote data transfer, data can be sent from a source device, such as a computer, to a destination device, such as another computer or a server, using a variety of protocols, such as File Transfer Protocol (FTP), Secure File Transfer Protocol (SFTP), and cloud storage services.<br>
-<b>Remote data transfer is not possible without a network.</b> Without a network, data can only be transferred directly between two devices using a physical connection, such as a USB drive or an external hard drive.
-</span>
-</div><br>
+<div class="note" markdown="1">
+With remote data transfer, data can be sent from a source device, such as a computer, to a destination device, such as another computer or a server, using a variety of protocols, such as File Transfer Protocol (**FTP**), Secure File Transfer Protocol (**SFTP**) and cloud storage services. <base class="mb">
+**Remote data transfer is not possible without a network.** Without a network, data can only be transferred directly between two devices using a physical connection, such as a USB drive or an external hard drive.
+</div>
 
 Remote data transfer can be used for a wide range of purposes, such as:
 * sharing files and documents,
@@ -120,17 +117,14 @@ Cloud storage services provide scalable and highly available data storage servic
 
 Some web-based file transfer services allow you to send large files over the Internet without the need to install any software. These services typically use a web browser as the client, and the recipient simply needs to follow a link to download the file. While web-based free file transfer services can be convenient, **they may not provide the level of security and reliability** required for sensitive or confidential data.
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
+<div class="warning" markdown="1">
 The safety and security of web-based free file transfer services can vary greatly. While some services may offer a certain level of security, it is important to consider the potential risks associated with using these services. <br>
-<b>Remember that nothing comes for free.</b> Here are some of the risks associated with using web-based free file transfer services:<br>
-<li><b>lack of encryption</b>, leaving the data vulnerable to interception and unauthorized access</li>
-<li><b>limited security features</b>, such as weak password protection, which can leave the data at risk of unauthorized access</li>
-<li><b>data privacy</b>, services may collect and use personal data for advertising or other purposes</li>
-<li><b>unreliable servers</b>, which can result in data loss or corruption during transmission</li>
-<li><b>no technical support</b>, which can make it difficult to resolve issues or recover lost data</li>
-</span>
+**Remember that nothing comes for free.** Here are some of the risks associated with using web-based free file transfer services:
+* **lack of encryption**, leaving the data vulnerable to interception and unauthorized access
+* **limited security features**, such as weak password protection, which can leave the data at risk of unauthorized access
+* **data privacy**, services may collect and use personal data for advertising or other purposes
+* **unreliable servers**, which can result in data loss or corruption during transmission
+* **no technical support**, which can make it difficult to resolve issues or recover lost data
 </div>
 
 # 4. **Data transfer** to and from HPC
@@ -154,13 +148,10 @@ Learn more about {% include target_link href=612.2 section="#data-transfer-using
 
 FTP (File Transfer Protocol) is a standard network protocol used for transferring files between computers over the internet. The protocol was designed to be simple and efficient, allowing for the easy transfer of large files between hosts. Many websites and online resources offer FTP access, which allows users to download files directly to their local machine using an FTP client.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-FTP works by establishing a connection between a client and a server. The client is typically an FTP software application, also known as an <b>FTP client</b>, while the server is a remote computer that stores the files to be transferred. The FTP client uses the protocol to send commands to the server to download or upload files. <br><br>
-<b>FTP is not a secure protocol</b>, as data is transferred in plain text and can be intercepted by third parties. As such, it is recommended to <b>use a secure file transfer protocol</b>, such as <b>SFTP</b> (Secure File Transfer Protocol) or <b>FTPS</b> (FTP over SSL), for transferring sensitive data.
-</span>
-</div><br>
+<div class="note" markdown="1">
+FTP works by establishing a connection between a client and a server. The client is typically an FTP software application, also known as an **FTP client**, while the server is a remote computer that stores the files to be transferred. The FTP client uses the protocol to send commands to the server to download or upload files. <base class="mb">
+**FTP is not a secure protocol**, as data is transferred in plain text and can be intercepted by third parties. As such, it is recommended to **use a secure file transfer protocol**, such as `SFTP` (Secure File Transfer Protocol) or `FTPS` (FTP over SSL), for transferring sensitive data.
+</div>
 
 **QUICK GUIDE**
 

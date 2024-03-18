@@ -54,20 +54,18 @@ Some of the key features of the Pandas library include:
 <i>Pandas is optimized for performance, with functions that are designed to handle large datasets efficiently.</i>
 
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-For numerical and scientific computing, NumPy and SciPy are often the go-to options, while for data manipulation and analysis, Pandas and other packages such as Dask and PySpark may be more appropriate.<br>
-<li><b>numerical and scientific computing:</b></li>
-&emsp; <a href="https://numpy.org/" target="_blank">NumPy  ⤴</a>, provides support for multidimensional arrays and matrices, and includes a wide range of mathematical functions<br>
-&emsp; <a href="https://www.scipy.org/" target="_blank">SciPy  ⤴</a>, includes modules for optimization, signal processing, and linear algebra, among others<br>
-<li><b>data manipulation and analysis:</b></li>
-&emsp; <a href="https://pandas.pydata.org/" target="_blank">Pandas  ⤴</a>, provides high-level tools for working with tabular and heterogeneous data<br>
-&emsp; <a href="https://scikit-learn.org/" target="_blank">Scikit-learn  ⤴</a>, includes modules for classification, regression, clustering, and dimensionality reduction<br>
-&emsp; <a href="https://spark.apache.org/docs/latest/api/python/index.html" target="_blank">PySpark  ⤴</a>, allows users to process large datasets in parallel across multiple nodes<br>
-&emsp; <a href="https://dask.org/" target="_blank">Dask  ⤴</a>, provides support for distributed computing and enables users to work with larger-than-memory datasets<br>
-</span>
-</div><br>
+<div class="protip" markdown="1">
+For numerical and scientific computing, `numpy` and `scipy` are often the go-to options, while for data manipulation and analysis, `pandas` and other packages such as `dask` and `pyspark` may be more appropriate. <base class="mb">
+**1) numerical and scientific computing:**
+  * <a href="https://numpy.org/" target="_blank">NumPy  ⤴</a>, provides support for multidimensional arrays and matrices, and includes a wide range of mathematical functions
+  * <a href="https://www.scipy.org/" target="_blank">SciPy  ⤴</a>, includes modules for optimization, signal processing, and linear algebra, among others
+<base class="mt">
+**2) data manipulation and analysis:**
+  * <a href="https://pandas.pydata.org/" target="_blank">Pandas  ⤴</a>, provides high-level tools for working with tabular and heterogeneous data
+  * <a href="https://scikit-learn.org/" target="_blank">Scikit-learn  ⤴</a>, includes modules for classification, regression, clustering, and dimensionality reduction
+  * <a href="https://spark.apache.org/docs/latest/api/python/index.html" target="_blank">PySpark  ⤴</a>, allows users to process large datasets in parallel across multiple nodes
+  * <a href="https://dask.org/" target="_blank">Dask  ⤴</a>, provides support for distributed computing and enables users to work with larger-than-memory datasets
+</div>
 
 
 # Getting started with Pandas
@@ -86,19 +84,13 @@ An alternative way to install Pandas is using Conda. This way you can install di
 conda install pandas
 ```
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-This command will install Pandas and any necessary dependencies in your current Conda environment. <br><br>
-If you don't have Conda installed yet, you can follow the guide provided in the tutorial {% include target_link href=423 text="Local Python setup on your computing machine." %}
-</span>
+<div class="warning" markdown="1">
+This command will install **Pandas** and any necessary dependencies in your current **Conda** environment. <base class="mb">
+If you don't have `conda` installed yet, you can follow the guide provided in the tutorial {% include target_link href=423 text="Local Python setup on your computing machine." %}
 </div>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Conda provides additional benefits over pip, such as the ability to create and manage multiple environments for different projects with different dependencies, and the ability to install packages from both the Conda and PyPI (Python Package Index) repositories.
-</span>
+<div class="protip" markdown="1">
+`conda` provides additional benefits over `pip`, such as the ability to create and manage multiple environments for different projects with different dependencies, and the ability to install packages from both the Conda and PyPI (Python Package Index) repositories.
 </div>
 
 
@@ -136,12 +128,9 @@ In Pandas, there are two main types of objects: `Series` and `DataFrame`.
 
 In Pandas, a **Series is a one-dimensional labeled data structure** that can hold any data type, such as integers, floats, strings, or even complex objects. It is similar to a **column in a DataFrame** or a one-dimensional array in NumPy or a column in a spreadsheet.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-A Series consists of an <b>array of values and a set of labels, called the index</b>. The index labels the values in the Series and allows you to access them by label instead of by position. If you don't specify an index, Pandas will automatically assign a numerical index starting from 0.
-</span>
-</div><br>
+<div class="note" markdown="1">
+A Series consists of an **array of values and a set of labels, called the index**. The `index` labels the values in the `Series` and allows you to access them by label instead of by position. If you don't specify an index, Pandas will automatically assign a numerical <u>index starting from 0</u>.
+</div>
 
 Here's an example of a simple Series:
 ```yml
@@ -224,19 +213,14 @@ Columns: [] <br>
 Index: [] <br>
 </code>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-You can create an empty <b>DataFrame</b> in Pandas and add data to it later using the <code>df.append()</code> method.
-</span>
+<div class="protip" markdown="1">
+You can create an empty `DataFrame` in Pandas and add data to it later using the `df.append()` method.
 </div>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">While using <b>df</b> as a variable name for a Pandas DataFrame object is a common convention, it's generally a better practice to <b>use a more descriptive and unique name</b> that corresponds to the content of the DataFrame. <br><br>
-This is particularly <b>important if you're working with multiple DataFrames in your code</b>, as using the same variable name for multiple objects can lead to confusion and errors. By choosing a more descriptive name, you can help make your code more readable and understandable to others (and your future self!).
-</span>
-</div><br>
+<div class="protip" markdown="1">
+While using `df` as a variable name for a Pandas `DataFrame` object is a common convention, it's generally a better practice to **use a more descriptive and unique name** that corresponds to the content of the DataFrame. <br>
+This is particularly <u>important if you're working with multiple DataFrames</u> in your code, as using the same variable name for multiple objects can lead to confusion and errors. By choosing a more descriptive name, you can help make your code more readable and understandable to others (and your future self!).
+</div>
 
 
 ### *Create an empty DataFrame with structure*
@@ -269,12 +253,9 @@ You can then add data to this DataFrame using the `df.append()` method.
 
 One of the powerful features of Pandas is that it allows you to create DataFrames from a variety of different data sources, including built-in Python objects like lists and dictionaries.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-In general, Pandas makes it easy to convert data from a variety of different sources to DataFrames, allowing you to work with and manipulate the data using the powerful tools and functionality provided by the library.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+In general, **Pandas** makes it easy to convert data from a variety of different sources to `DataFrames`, allowing you to work with and manipulate the data using the powerful tools and functionality provided by the library.
+</div>
 
 **DataFrame from a list** <br>
 To create a `DataFrame` from a list, you can simply pass the list to the `pd.DataFrame()` constructor function. By default, Pandas will create a one-dimensional DataFrame with a single column containing the list values.
@@ -335,12 +316,9 @@ The values in each column correspond to the values in the corresponding dictiona
 
 To add data to an empty DataFrame, you can use the `df.append()` method. This method appends rows of data to the end of the DataFrame.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-The <b>df.append()</b> method takes a dictionary or Series object containing the values to add as a new row to the DataFrame, and appends it to the end of the DataFrame.
-</span>
-</div><br>
+<div class="note" markdown="1">
+The `df.append()` method takes a dictionary or `Series` object containing the values to <u>add as a new row</u> to the `DataFrame`, and appends it to the end of the `DataFrame`.
+</div>
 
 Let's assume we have an empty DataFrame:
 <code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
@@ -360,11 +338,8 @@ df = df.append({'name': 'Charlie', 'age': 35, 'city': 'Chicago'}, ignore_index=T
 print(df)
 ```
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-The <b>ignore_index=True</b> argument tells Pandas to ignore any existing index labels on the DataFrame, and instead generate new integer index labels starting from 0.
-</span>
+<div class="warning" markdown="1">
+The `ignore_index=True` argument tells **Pandas** to ignore any existing index labels on the `DataFrame`, and instead <u>generate new integer index labels</u> starting from 0.
 </div>
 
 The `print()` function displays the DataFrame with the added data:
@@ -425,11 +400,8 @@ The output of this code will be a DataFrame with six rows and three columns, inc
 5 &emsp; &emsp; NaN &emsp; NaN &emsp; NaN
 </code><br>
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Note that the values in the new empty row are represented as <b>NaN</b> (Not a Number), which is the default value for missing or undefined data in Pandas.
-</span>
+<div class="warning" markdown="1">
+Note that the <u>values in the new empty row</u> are represented as `NaN` (Not a Number), which is the default value for missing or undefined data in **Pandas**.
 </div>
 
 ### *new column to existing DataFrame*
@@ -483,11 +455,8 @@ The output of this code will be a DataFrame with four columns, including the new
 5 &emsp; &emsp; NaN &emsp; NaN &emsp; NaN &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; NaN &emsp; &emsp;&emsp; NaN
 </code><br>
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Note that the values in the new empty column are represented as <b>NaN</b> (Not a Number), which is the default value for missing or undefined data in Pandas.
-</span>
+<div class="warning" markdown="1">
+Note that the <u>values in the new empty column</u> are represented as `NaN` (Not a Number), which is the default value for missing or undefined data in **Pandas**.
 </div>
 
 
@@ -597,14 +566,12 @@ new_df_subset = df[(df['age'] > 25) & (df['city'] == 'New York')][['name', 'age'
 ```
 *This returns a new DataFrame containing only the 'name' and 'age' columns for the rows where the age is greater than 25 and the city is 'New York'.*
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Note that there are many other ways to access data in a DataFrame in Pandas, such as:
-<li> using integer indexing with the <b>iloc</b> method, </li>
-<li> using advanced indexing techniques like <b>.loc[]</b> and <b>.iloc[]</b>.</li><br>
+<div class="protip" markdown="1">
+Note that there are many other ways to access data in a `DataFrame` in Pandas, such as: <base class="mb">
+* using integer indexing with the `iloc` method,
+* using advanced indexing techniques like `.loc[]` and `.iloc[]`.
+<base class="mt">
 The best method to use depends on the specific task at hand.
-</span>
 </div>
 
 <span style="color: #ff3870;font-weight: 500;">Learn more about Pandas indexing and selecting data from the official documentation:</span>
@@ -634,7 +601,7 @@ df = pd.read_csv('data.csv')
 
 ### EXCEL/XLSX: `read_excel()`
 To load data from an Excel file, you can use the `read_excel()` function in Pandas.
-```v
+```python
 import pandas as pd
 
 # Load data from an Excel file

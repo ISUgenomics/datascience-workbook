@@ -33,12 +33,9 @@ tags: []
 
 JSON (JavaScript Object Notation) format is a **lightweight data storage format** based on a subset of the JavaScript programming language, but is **language independent** and can be used with any programming language.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-JSON is a lightweight data interchange format that is easy for humans to read and write, and easy for machines to parse and generate. It is widely used for web APIs, configuration files, and other data exchange purposes.
-</span>
-</div><br>
+<div class="note" markdown="1">
+**JSON** is a lightweight data interchange format that is easy for humans to read and write, and easy for machines to parse and generate. It is widely used for web APIs, configuration files, and other **data exchange purposes**.
+</div>
 
 <span style="color: #ff3870;font-weight: 500;">The official documentation for the JSON module in Python can be found at <a href="https://docs.python.org/3/library/json.html" target="_blank">https://docs.python.org/3/library/json.html  ⤴</a></span>
 

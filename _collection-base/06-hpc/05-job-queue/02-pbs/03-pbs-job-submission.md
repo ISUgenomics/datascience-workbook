@@ -40,12 +40,9 @@ The `#PBS` directives are commands that are used in a PBS job script to provide 
 
 **There are many `#PBS` directives that can be used in a job script, each serving a different purpose.**
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-Using <b>#PBS directives</b> in a job script is important because it <b>allows the user to request specific resources</b> and provide information about the job that can be used by the PBS scheduler to optimize the allocation of resources and <b>manage the job efficiently</b>.
-</span>
-</div><br>
+<div class="note" markdown="1">
+Using `#PBS` **directives** in a job script is important because it **allows the user to request specific resources** and provide information about the job that can be used by the PBS scheduler to optimize the allocation of resources and **manage the job efficiently**.
+</div>
 
 Here are some examples of commonly used directives:
 
@@ -127,11 +124,8 @@ echo "Processors per node: $PBS_NUM_PPN"
 
 *In this example, we're using the $PBS_NODEFILE variable to get a list of the nodes assigned to the job, which we then print out. We're also using the $PBS_JOBID, $PBS_ARRAYID, $PBS_NUM_NODES, and $PBS_NUM_PPN variables to print out some basic job information.*
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Note, the <b>$PBS_O_WORKDIR</b> environment variable is used to change the current working directory to the directory in which the job was submitted. This is done using the <b>cd</b> command.
-</span>
+<div class="warning" markdown="1">
+Note, the `$PBS_O_WORKDIR` environment variable is used to change the current working directory to the directory in which the job was submitted. This is done using the `cd` command.
 </div>
 
 ```bash
@@ -140,11 +134,8 @@ cd $PBS_O_WORKDIR
 *This is a common practice in PBS job scripts, since the working directory of the submission script is typically not the same as the working directory of the job itself. **By changing the working directory to the directory in which the job was submitted**, we ensure that any input files, output files, or other data referenced by the job are located in the correct place.*
 
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+<div class="protip" markdown="1">
 PBS variables can be very useful for debugging and monitoring jobs running under PBS.
-</span>
 </div>
 
 ## 4. Generate commands for the tasks

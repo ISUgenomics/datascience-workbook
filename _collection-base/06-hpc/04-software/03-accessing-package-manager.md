@@ -24,12 +24,9 @@ tags: []
 
 A package manager is a tool for managing software packages and their dependencies on a computer system. On HPC systems, package managers are commonly used to install, update, and remove software packages, as well as manage dependencies between packages.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-The package manager maintains a database of available packages and their versions, as well as the dependencies between packages. When you install a package, the package manager automatically resolves any dependencies, downloading and installing any necessary packages. When you remove a package, the package manager ensures that any packages that depend on it are also removed or updated to a version that no longer requires the removed package.
-</span>
-</div><br>
+<div class="note" markdown="1">
+The package manager maintains a database of available packages and their versions, as well as the dependencies between packages. When you install a package, the package manager automatically resolves any dependencies, downloading and installing any necessary packages. When you remove a package, the package manager ensures any dependent packages are also removed or updated to a version not requiring the removed package.
+</div>
 
 <b>Many package managers like APT and YUM require {% include target_link href=324 text="superuser privileges" %} to install new packages system-wide.</b> <span style="color: #ff3870; font-weight: 500;">In these cases, a regular users can NOT use a package manager to install new packages on HPC system.</span> <b>However, they can use all the packages already installed.</b>
 
@@ -125,9 +122,6 @@ Once a package is found using package manager, you can use the software provided
 
 For example, if you searched for the `gcc` package, you can use the GCC compiler by simply typing `gcc` followed by the name of the source code file you want to compile, and any necessary command line options.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-If you don't know how to use the program, you can always preview the available options and instructions for use by calling the name of the program along with the <code>--help</code> flag.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+If you don't know how to use the program, you can always preview the available options and instructions for use by calling the name of the program along with the `--help` flag.
+</div>

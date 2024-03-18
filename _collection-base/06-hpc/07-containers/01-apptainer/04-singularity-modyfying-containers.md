@@ -30,7 +30,8 @@ module avail singularity
 ```
 * load a module of your choice:
 ```bash
-module load apptainer/<version>       # e.g., module load apptainer/1.1.9-py310-wsbt4ge
+module load apptainer/<version>       
+# e.g., module load apptainer/1.1.9-py310-wsbt4ge
 ```
 * and consistently use the appropriate keyword for your commands *(in this example: apptainer)*.
 

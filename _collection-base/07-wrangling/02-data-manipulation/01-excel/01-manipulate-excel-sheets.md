@@ -28,22 +28,16 @@ tags: []
 * performing calculations and analyses,
 * and creating charts and graphs to visualize data.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
+<div class="note" markdown="1">
 A spreadsheet is a software program used to organize and manipulate data in a tabular format, consisting of rows and columns. Spreadsheets are commonly used for tasks such as financial analysis, budgeting, data management, and project tracking.
-</span>
-</div><br>
+</div>
 
 Spreadsheet software such as **Excel**, **Google Sheets**, and **LibreOffice Calc** offer a graphical interface that allows users to easily work with data and manipulate it using a range of tools and functions. This interface typically includes a grid of cells where data can be entered and edited, as well as menus and toolbars that provide access to various functions and features.
 
 ![02_data_manipulation_excel_sheet.png]({{ images_path }}/02_data_manipulation_excel_sheet.png)
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-While <b>spreadsheet software offers a user-friendly graphical interface</b> (GUI) for manipulating data, they may not be as efficient as Python-based approaches when it comes to handling large datasets or performing complex analyses. <b>Python-based approaches</b>, on the other hand, <b>can be more efficient</b> when working with large amounts of data and can automate many tasks using scripts and programming in the command-line interface (CLI).
-</span>
+<div class="protip" markdown="1">
+While **spreadsheet software offers a user-friendly graphical interface** (GUI) for manipulating data, they may not be as efficient as Python-based approaches when it comes to handling large datasets or performing complex analyses. **Python-based approaches**, on the other hand, **can be more efficient** when working with large amounts of data and can automate many tasks using scripts and programming in the command-line interface (CLI).
 </div>
 
 ## Data Sheets Software
@@ -91,12 +85,9 @@ Manipulating data in spreadsheets is an essential task in scientific projects an
 
 To manipulate data in a spreadsheet, users can use a wide range of **built-in functions and formulas**, which allow them to perform complex calculations and analyses on data. *For example, users can use functions to find the sum, average, minimum, or maximum value in a range of cells, or to count the number of cells that meet specific criteria.*
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+<div class="protip" markdown="1">
 Overall, manipulating data in spreadsheets is a critical task in scientific projects and research, and requires careful attention to detail, strong analytical skills, and a deep understanding of spreadsheet functions, formulas, and tools.
-</span>
-</div><br>
+</div>
 
 
 Some common tasks involved in manipulating data in spreadsheets in the context of scientific projects and research include:

@@ -48,12 +48,9 @@ Both data visualizations and infographics are used to present information visual
 
 Infographics, are **visual representations of information, data, or knowledge** that are designed to be easily understood and engaging. They are typically used **to communicate complex ideas, processes, or concepts**.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-The main goal of designing infographics is to make information more accessible and engaging for the audience. Infographics can <b>include various design elements, such as illustrations, icons, text, and images</b>, to tell a story and convey information in a way that is both interesting and easy to understand.
-</span>
-</div><br>
+<div class="note" markdown="1">
+The main goal of designing infographics is to make information more accessible and engaging for the audience. Infographics can **include various design elements, such as illustrations, icons, text, and images**, to tell a story and convey information in a way that is both interesting and easy to understand.
+</div>
 
 <span style="color: #ff3870;font-weight: 500;">Infographics can be a helpful tool in your research.</span><br>
 One unique advantage of using infographics is their ability to **condense complex information** into an easy-to-understand visual format. Another unique advantage of infographics is their ability to **tell a story**. Infographics can also be a helpful tool for researchers who want to **engage with the audience** beyond the traditional academic community.

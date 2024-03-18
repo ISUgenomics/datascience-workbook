@@ -35,23 +35,17 @@ Here are some specific advantages and disadvantages of using spreadsheet softwar
 | Spreadsheet Software | ✓ Easy-to-use **graphical interface** <br>✓ Built-in functions for statistical analysis <br>✓ Good for small to medium-sized datasets and simple data manipulation tasks <br>✓ Can **quickly create charts** and graphs | ✗ Limited capacity for handling large datasets <br>✗ Limited flexibility for complex data manipulations <br>✗ Limited reproducibility of data analyses <br>✗ Potential for human error in manual data entry |
 | Python algorithms | ✓ Powerful and flexible environment for data manipulation and analysis <br>✓ Wide range of libraries and tools for **advanced data manipulation** and analysis <br>✓ Good for **handling large datasets** and performing complex data analyses <br>✓ **High reproducibility** of data analyses | ✗ Steep learning curve for beginners <br>✗ Requires programming skills and knowledge of data structures <br>✗ Requires more effort to create charts and graphs than spreadsheet software |
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+<div class="protip" markdown="1">
 Ultimately, the choice between spreadsheet software and Python depends on the size and complexity of the dataset, the level of data manipulation required, and the user's level of expertise in programming and data analysis.
-</span>
-</div><br>
+</div>
 
 # Manipulating Data with Python
 
 In data analysis and research, it is common to work with text files that contain **data in a structured or unstructured format**. Manipulating text files is an important part of the data analysis process, as it allows researchers to **load data, extract information needed, and transform data structure** for further analysis. Python provides a rich set of **built-in modules and functions** that make it easy to read, write, and manipulate text files in a variety of formats. You can also easily install **additional Python libraries for more advanced data processing tasks**.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
+<div class="note" markdown="1">
 Python is a general-purpose programming language that provides a powerful and flexible environment for data manipulation and analysis.
-</span>
-</div><br>
+</div>
 
 **Python-based approaches typically require users to work within a command-line interface** rather than a graphical user interface. This means that users need to have some programming skills and be comfortable working with command-line tools in order to use Python-based approaches effectively.
 

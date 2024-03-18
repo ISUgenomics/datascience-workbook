@@ -48,19 +48,13 @@ Both data visualizations and infographics are used to present information visual
 
 Data visualizations are used to **represent data in a visual form**. They are typically used **to illustrate trends, patterns, and relationships** in the data. Data visualizations can be simple or complex, and they can include **charts, graphs, tables, and maps**.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
+<div class="note" markdown="1">
 The main goal of creating data visualizations is to present data in a clear and concise way that is easy to understand. They are often used to communicate findings in research papers, presentations, and reports.
-</span>
-</div><br>
+</div>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+<div class="protip" markdown="1">
 Data visualizations are particularly useful for presenting large amounts of data or for illustrating complex relationships.
-</span>
-</div><br>
+</div>
 
 ### *Data types*
 

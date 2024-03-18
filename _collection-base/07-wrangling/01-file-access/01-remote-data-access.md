@@ -37,17 +37,13 @@ Learn more from the hands-on tutorials available in the {% include target_link h
   * {% include target_link href=623 text="Secure Shell Connection (SSH)" %}
   * {% include target_link href=623.1 text="SSH shortcuts and password-less login" %}
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">Accessing data using VPN or SSH connection typically involves using a command-line interface (CLI), rather than a graphical user interface (GUI). To learn more about <b>command line</b> explore tutorials in the section</span> {% include target_link href=300 text="03: Introduction to Command Line" %}
+<div class="warning" markdown="1">
+Accessing data using VPN or SSH connection typically involves using a command-line interface (CLI), rather than a graphical user interface (GUI). To learn more about **command line** explore tutorials in the section {% include target_link href=300 text="03: Introduction to Command Line" %}
 </div>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-When accessing data using VPN, you first need to <b>establish a VPN connection</b> between your local machine and the remote network. This is typically done <b>using VPN client software</b> that you install on your local machine. Once the VPN connection is established, you can access the remote network as if you were directly connected to it, and you can <b>use SSH protocol to access the data</b> stored on the remote machines.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+When accessing data using VPN, you first need to **establish a VPN connection** between your local machine and the remote network. This is typically done **using VPN client software** that you install on your local machine. Once the VPN connection is established, you can access the remote network as if you were directly connected to it, and you can **use SSH protocol to access the data** stored on the remote machines.
+</div>
 
 You start by opening a {% include target_link href=310 text="terminal window" %} on your local machine and entering the following command to log into the remote machine:
 
@@ -77,12 +73,9 @@ Some HPC systems may also provide web-based graphical interfaces for remotely ac
 
 ###  *OOD (Open On Demand)*
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-<a href="https://openondemand.org" target="_blank">Open On-Demand  ⤴</a> is a web-based platform that provides <b>remote access to high-performance computing (HPC) resources</b>, such as supercomputers and large-scale clusters. It provides a <b>user-friendly interface</b> for accessing these resources <b>from a web browser</b>, without the need for complex software installations or command-line interfaces.
-</span>
-</div><br>
+<div class="note" markdown="1">
+<a href="https://openondemand.org" target="_blank">Open On-Demand  ⤴</a> is a web-based platform that provides **remote access to high-performance computing (HPC) resources**, such as supercomputers and large-scale clusters. It provides a **user-friendly interface** for accessing these resources **from a web browser**, without the need for complex software installations or command-line interfaces.
+</div>
 
 <span style="color: #ff3870;font-weight: 500;">Follow the hands-on tutorial</span> {% include target_link href=624 text="Open On Demand (OOD) Connection using web-based interface" %} to learn how to use different tools and features available in the OOD web interface of HPC systems.
 
@@ -97,12 +90,9 @@ You start by opening a web browser on your local machine and entering the URL to
 
 You will be prompted to **enter your credentials** for the HPC system, and if the login is successful, you will be logged into the remote machine and have access to its file system and resources.
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Note that <b>all you need is a web browser with internet connection</b>. You don't need to open the terminal window or use the SSH protocol. After logging in, you will perform everything in a browser window, and all <b>applications will be opened automatically in the next tabs</b>.
-</span>
-</div><br>
+<div class="warning" markdown="1">
+Note that **all you need is a web browser with internet connection**. You don't need to open the terminal window or use the SSH protocol. After logging in, you will perform everything in a browser window, and all **applications will be opened automatically in the next tabs**.
+</div>
 
 You can then use web-based graphical interface to use remotely the available resources, including:
 
@@ -123,12 +113,9 @@ some HPC systems. They provide a standard set of protocols and standards for exc
 
 Web servers typically use a client-server communication model, when a user wants to access data stored on a remote system. This means that the user's device (the client, e.g., local computer or mobile device) sends a request for data to another device (the server) that is hosting the data.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-Web services use a combination of technologies, including Simple Object Access Protocol (<b>SOAP</b>), Extensible Markup Language (<b>XML</b>), and Hypertext Transfer Protocol (<b>HTTP</b>) to exchange data between applications. These technologies provide a common format for data exchange and allow different applications to communicate with each other, regardless of the programming languages or operating systems they use.
-</span>
-</div><br>
+<div class="note" markdown="1">
+Web services use a combination of technologies, including Simple Object Access Protocol (**SOAP**), Extensible Markup Language (**XML**), and Hypertext Transfer Protocol (**HTTP**) to exchange data between applications. These technologies provide a common format for data exchange and allow different applications to communicate with each other, regardless of the programming languages or operating systems they use.
+</div>
 
 Here's a simple explanation of how it works:
 1. The client sends a request for data to the server using a network connection (such as the internet).
@@ -142,15 +129,15 @@ This client-server communication happens over the internet, and the data is tran
 
 So in practice, accessing data stored on a remote system can be as simple as navigating to a web page and making a few selections and clicks through a web-based graphical interface. The user doesn't need to have any knowledge of the underlying technologies or protocols.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br>
-<b>Web services are NOT designed to provide wide access to all data stored on HPC systems</b>. Rather, they are used as a tool for developers or scientists to <b>provide open access to selected datasets</b>, analytical pipelines, and computing resources to those who do not have direct access to the source storage systems. <br><br>
-<span style="font-style:italic;">
-For example, a researcher may have data stored on an HPC system that they want to share with colleagues or the public. By using a web service, they can make that data accessible over the World Wide Web, without the need for their colleagues or the public to have direct access to the HPC system. <br><br>
-Similarly, a scientist may have developed a computational pipeline that they want to share with others. By exposing that pipeline through a web service, they can allow others to run the pipeline on the data of their choice, without the need for direct access to the underlying HPC system.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+**Web services are NOT designed to provide wide access to all data stored on HPC systems.** Rather, they are used as a tool for developers or scientists to **provide open access to selected datasets**, analytical pipelines, and computing resources to those who do not have direct access to the source storage systems.
+  <div class="example mb-0 font-1" markdown="1">
+  For example, a researcher may have **data stored on an HPC system** that they want to share with colleagues or the public. By using a web service, they can make that data accessible over the World Wide Web, without the need for their colleagues or the public to have direct access to the HPC system.
+  </div>
+  <div class="example mb-0 font-1" markdown="1">
+  Similarly, a scientist may have **developed a computational pipeline** that they want to share with others. By exposing that pipeline through a web service, they can allow others to run the pipeline on the data of their choice, without the need for direct access to the underlying HPC system.
+  </div>
+</div>
 
 There are many different types of web services that can be used to exchange data between applications or systems over the World Wide Web. Some common examples include:
 
@@ -219,12 +206,9 @@ curl https://www.uniprot.org/uniprot/P12345.xml
 ```
 This will return an XML file with information about the protein, such as its amino acid sequence, function, and references to related data in other databases.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Note that this is just a basic example of accessing a RESTful web service. RESTful web services can support many other types of requests, such as POST and DELETE, and can provide data in different formats, such as JSON. The specifics of how to access a RESTful web service can vary depending on the specific web service and the desired data.
-</span>
-</div><br>
+<div class="protip" markdown="1">
+Note that this is just a basic example of accessing a **RESTful web service**. RESTful web services can support many other types of requests, such as `POST` and `DELETE`, and can provide data in different formats, such as `JSON`. The specifics of how to access a RESTful web service can vary depending on the specific web service and the desired data.
+</div>
 
 ### *D. SOAP Web Services*
 

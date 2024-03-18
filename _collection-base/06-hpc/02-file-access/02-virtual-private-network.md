@@ -29,12 +29,9 @@ To access the shared computing machine (e.g., cluster on the HPC system), a user
 
 Virtual Private Network (VPN) is a technology that allows users to **securely access a private network over the Internet** through an encrypted tunnel. VPNs are often used by businesses and research institutions to **remotely access their organization's internal network** and protect sensitive data while using public Wi-Fi or other untrusted networks. Some VPN services are also provided by third-party companies for personal use. The user can then **connect to the VPN server to encrypt the internet traffic** and protect their online privacy. Some VPNs also help users to work around censorship and enter restricted websites and services.
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-<b>A VPN is typically created by a company or organization to provide secure remote access to their internal network for their employees or authorized users.</b> The VPN server is set up and maintained by the organization, and users are provided with a VPN client software or configuration settings that allow them to connect to the VPN server.
-</span>
-</div><br>
+<div class="note" markdown="1">
+**A VPN is typically created by a company or organization to provide secure remote access to their internal network for their employees or authorized users.** The VPN server is set up and maintained by the organization, and users are provided with a VPN client software or configuration settings that allow them to connect to the VPN server.
+</div>
 
 There are several different types of VPNs, including:
 * **site-to-site VPNs**, which connect two networks together, e.g., the corporate office to branch offices
@@ -121,11 +118,8 @@ Running the VPN client software initiates your connection with the VPN server. T
 
 Once the VPN connection is established, you can access the remote network as if you were directly connected to it *(e.g., when you are physically on campus)*. Then, you can use SSH or other protocols to access the data stored on the remote machines.
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-It's important to note that you may need to have appropriate <b>permissions and credentials to access</b> the data stored on the remote machine, and you may need to follow specific security policies and procedures to access the data securely.
-</span>
+<div class="warning" markdown="1">
+It's important to note that you may need to have appropriate **permissions and credentials to access** the data stored on the remote machine, and you may need to follow specific security policies and procedures to access the data securely.
 </div>
 
 

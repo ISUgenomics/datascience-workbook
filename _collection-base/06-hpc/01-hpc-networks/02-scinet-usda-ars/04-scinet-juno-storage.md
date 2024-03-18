@@ -55,14 +55,11 @@ Juno transfer node: <b>@nal-dtn.scinet.usda.gov</b> <br>
 Juno end point via Globus: <b>“NAL DTN 0”</b> (*recommended*) <br>
 <i><span style="color: #ff3870;font-weight: 500;">*SCINet account is required to get access</span></i>
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-To obtain a SCINet account, a <b>SCINet Account Request</b> must be submitted. To learn more, visit the official <a href="https://scinet.usda.gov/about/signup#sign-up-for-a-scinet-account" target="_blank">Sign up for a SCINet account  ⤴</a> guide or use links provided below: <br>
-<li> for ARS-affiliated users: <a href="https://scinet.usda.gov/about/signup#ars-employees" target="_blank">SCINet Account Request  ⤴</a></li>
-<li> for non-ARS users: <a href="https://scinet.usda.gov/about/signup#non-ars-employees" target="_blank">Non-ARS SCINet Account Request  ⤴</a></li>
-</span>
-</div><br>
+<div class="protip" markdown="1">
+To obtain a SCINet account, a `SCINet Account Request` must be submitted. To learn more, visit the official <a href="https://scinet.usda.gov/about/signup#sign-up-for-a-scinet-account" target="_blank">Sign up for a SCINet account  ⤴</a> guide or use links provided below:
+* for ARS-affiliated users: <a href="https://scinet.usda.gov/about/signup#ars-employees" target="_blank">SCINet Account Request  ⤴</a>
+* for non-ARS users: <a href="https://scinet.usda.gov/about/signup#non-ars-employees" target="_blank">Non-ARS SCINet Account Request  ⤴</a>
+</div>
 
 ## **Copy your data to Juno**
 
@@ -92,7 +89,6 @@ For small datat transfers it is allowed to move data to Juno storage using comma
 rsync -avz --no-p --no-g ttt nal-dtn.scinet.usda.gov:/LTS/project/<project_name>/
 ```
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;"> Note, the organization of the file system is slightly different on computing clusters: <b>/project/project_name</b> and Juno storage: <b>/LTS/project/project_name</b> .</span>
-</div><br>
+<div class="warning" markdown="1">
+Note, the organization of the file system is slightly different on <u>computing clusters</u>: `/project/project_name` and <u>Juno storage</u>: `/LTS/project/project_name`.
+</div>

@@ -60,13 +60,9 @@ Explore the journey from Singularity to Apptainer and uncover the expanded featu
 
 ## Apptainer as container technology
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-Containers, like Apptainer, address the challenge of installing and configuring custom software in the user space of Unix systems, HPC in particular, where regular user does not have root privileges. <br><br>
-Containers are lightweight, standalone units designed to package software, its dependencies, and runtime environment into a single entity, ensuring consistent behavior across diverse systems. <br><br> Apptainer, formerly known as Singularity, offers unique advantages tailored for high-performance computing and scientific workflows.
-</span>
-</div><br>
+<div class="note" markdown="1">
+Containers, like **Apptainer**, address the challenge of installing and configuring custom software in the user space of Unix systems, HPC in particular, where regular user does not have root privileges. <base class="mb"> Containers are lightweight, <u>standalone units</u> designed to package software, its dependencies, and runtime environment into a single entity, ensuring consistent behavior across diverse systems. <base class="mb"> Apptainer, <u>formerly known as Singularity</u>, offers unique advantages tailored for high-performance computing and scientific workflows.
+</div>
 
 Apptainer <i>(previously Singularity)</i> offers some features that make it distinct from other container technologies like Docker, such as:
 * run complex applications on HPC clusters
@@ -127,11 +123,8 @@ chmod -R g+s /project/<your_project_dir>/<account_name>/.apptainer
 ln -s /project/<your_project_dir>/<account_name>/.apptainer .apptainer
 ```
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-HPC admins might set default values for these variables to optimize system-wide performance or to prevent users from filling up specific filesystems with cache data. These defaults can be set in global configuration files or through module environments. When an admin sets these, users on the system will typically inherit these values automatically unless they override them.
-</span>
+<div class="warning" markdown="1">
+HPC admins might set default values for these variables to optimize system-wide performance or to prevent users from filling up specific filesystems with cache data. These defaults can be set in <u>global configuration files</u> or through module environments. When an admin sets these, users on the system will typically inherit these values automatically unless they override them.
 </div>
 
 In practice, it's always a good idea for users to check whether these variables are set by default on their HPC system and to be aware of how to set them if needed.
@@ -142,11 +135,8 @@ To see what is currently set for these environment variables, you can use the `e
 echo $APPTAINER_CACHEDIR
 ```
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Individual users can override the default settings by specifying their own values for these environment variables in their session or job scripts. This can be useful if a user has a specific directory they want to use for caching or if they're encountering space issues with the default cache location.
-</span>
+<div class="protip" markdown="1">
+Individual users can override the default settings by specifying their own values for these **environment variables** in their `session` or `job scripts`. This can be useful if a user has a specific directory they want to use for caching or if they're encountering space issues with the default cache location.
 </div>
 
 If you've set `$APPTAINER_CACHEDIR` to a custom location, that directory will be used for caching instead of the default `~/.apptainer`. However, if `$APPTAINER_CACHEDIR` points directly to `~/.apptainer`, then they are functionally the same.
@@ -159,22 +149,16 @@ export APPTAINER_CACHEDIR=/path/to/custom/cache
 **Permanent Setting** <br>
 If you find yourself frequently setting these variables, you can add the `export` command to your shell's startup scripts (e.g., `.bashrc` or `.bash_profile`) to set them automatically whenever you start a new session.
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Remember that setting these variables will direct Apptainer or Singularity to use the specified directory for caching. Make sure the path you provide has enough space, especially if you're pulling large images or frequently building containers. It's also wise to periodically clean up old cache files to free up space using the command <b>apptainer cache clean</b>.
-</span>
+<div class="protip" markdown="1">
+Remember that setting these variables will direct Apptainer or Singularity to use the specified directory for caching. Make sure the path you provide <u>has enough space</u>, especially if you're pulling large images or frequently building containers. It's also wise to periodically clean up old cache files to free up space using the command `apptainer cache clean`.
 </div>
 
 ## **Apptainer Commands**
 
 Apptainer *(formerly Singularity)* provides a variety of commands to manage and interact with containers.
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-<b>With the rebranding from Singularity to Apptainer</b>, the command-line keyword changed from "singularity" to "apptainer." However, the structure and many of the <b>options and arguments for the commands remained consistent</b>, allowing for a familiar experience for those who had previously used Singularity.
-</span>
+<div class="warning" markdown="1">
+**With the rebranding from Singularity to Apptainer**, the command-line keyword changed from `singularity` to `apptainer`. However, the structure and many of the **options and arguments for the commands remained consistent**, allowing for a familiar experience for those who had previously used Singularity.
 </div>
 
 Apptainer commands follow the structure of:
