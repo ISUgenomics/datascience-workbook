@@ -125,11 +125,20 @@ function copyOrderToClipboard(orderValue, buttonElement) {
 }
 
 
+function addTextToBefore() {
+  document.querySelectorAll('.before').forEach(function(div) {
+    var customText = div.getAttribute('data-before');
+    div.style.setProperty('--custom-before', `"${customText}"`);
+    console.log('YESSSS');
+  });
+}
+
 
 // Event listener for custom.js functions
 document.addEventListener('DOMContentLoaded', function() {
   adjustWrapperLinks();                                                         // reformatting target-links
   copyCodeButton();
+  addTextToBefore();
 
   var copyButton = document.getElementById('copyOrderBtn');                     // find and setup the button for copying order
   if (copyButton) {
