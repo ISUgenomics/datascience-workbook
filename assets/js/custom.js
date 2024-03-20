@@ -88,12 +88,22 @@ function showNotification(message, parentElement) {
     }, 2000);
 }
 
+
 // A function to copy code block to clipboard
 function copyCodeButton() {
   document.querySelectorAll('pre code').forEach((codeBlock) => {
     var btn = document.createElement('button');
     btn.textContent = 'copy';
     btn.className = 'code-btn';
+
+    var parentDiv = codeBlock.parentNode;
+    const style = window.getComputedStyle(codeBlock);
+    const paddingTop = parseInt(style.paddingTop, 10);
+    const paddingRight = parseInt(style.paddingRight, 10);
+    btn.style.top = `${paddingTop}px`;
+    btn.style.right = `${paddingRight}px`;
+    parentDiv.parentNode.appendChild(btn);
+
     btn.onclick = function() {
       navigator.clipboard.writeText(codeBlock.innerText).then(function() {
         showNotification('Code block copied to clipboard!', codeBlock.parentNode);
@@ -102,13 +112,9 @@ function copyCodeButton() {
       });
     };
 
-    var wrapperDiv = document.createElement('div');
-    wrapperDiv.style.position = 'relative';
-    codeBlock.parentNode.insertBefore(wrapperDiv, codeBlock);
-    wrapperDiv.appendChild(codeBlock);
-    wrapperDiv.appendChild(btn);
   });
 }
+
 
 
 // A function to copy order to clipboard
@@ -130,7 +136,6 @@ function addTextToBefore() {
   document.querySelectorAll('.before').forEach(function(div) {
     var customText = div.getAttribute('data-before');
     div.style.setProperty('--custom-before', `"${customText}"`);
-    console.log('YESSSS');
   });
 }
 
