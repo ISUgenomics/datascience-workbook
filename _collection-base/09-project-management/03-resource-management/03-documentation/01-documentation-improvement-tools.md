@@ -23,11 +23,8 @@ tags: []
 
 # Introduction
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
+<div class="note" markdown="1">
 Documentation is the process of systematically recording information about a subject. , serving as a reference or guide. Its purpose is to provide clarity, ensure consistency, and facilitate understanding or usage by users, developers, and other researchers.
-</span>
 </div>
 
 ## Importance of documentation in research and code development
@@ -85,10 +82,8 @@ A few inspiring examples of tools supporting documentation *(including some AI-p
 
 **Clear and organized documentation serves as a foundational reference**, enabling users and developers to understand, use, and build upon a system or process efficiently. It ensures consistency and minimizes ambiguities, reducing the potential for errors or misinterpretations. Moreover, **well-structured documentation facilitates smoother collaboration** and onboarding, ensuring that the project's objectives and methodologies are transparent and accessible to all stakeholders.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-style:italic;">
-Imagine embarking on a journey through a dense forest without a map, compass, or any trail markers. You might wander aimlessly, get lost, or miss the breathtaking waterfall just a short distance away. In much the same way, diving into a complex project without clear and organized documentation is like navigating that forest blindfolded. <b>The documentation is your map, guiding you through the intricacies, ensuring you don't get lost, and highlighting the project's hidden gems and nuances.</b> Without it, you might spend hours, if not days, retracing steps or overlooking vital features, hindering your progress and success.
-</span>
+<div class="example italic" markdown="1">
+Imagine embarking on a journey through a dense forest without a map, compass, or any trail markers. You might wander aimlessly, get lost, or miss the breathtaking waterfall just a short distance away. In much the same way, diving into a complex project without clear and organized documentation is like navigating that forest blindfolded. **The documentation is your map, guiding you through the intricacies, ensuring you don't get lost, and highlighting the project's hidden gems and nuances.** Without it, you might spend hours, if not days, retracing steps or overlooking vital features, hindering your progress and success.
 </div>
 
 ## The interplay between good documentation and project success
@@ -106,10 +101,8 @@ Imagine embarking on a journey through a dense forest without a map, compass, or
 A well-documented project streamlines collaboration, as team members have a shared point of reference. This reduces ambiguities, leading to fewer errors and more efficient work processes. When newcomers join, they can get up to speed faster, reducing onboarding time. <br>
 In essence, while the project's core may be its functionality, good documentation ensures its accessibility, sustainability, and adaptability in real-world scenarios, driving its success.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-style:italic;">
-Think of good documentation as a time-traveling mentor. <b>Every hour you invest now in crafting clear, detailed documentation is a future hour saved when revisiting pipelines or repurposing code.</b> With robust documentation in hand, you sidestep those familiar pitfalls, bypassing errors or bottlenecks that once hindered progress. And it's not just about you; it's a legacy. Your teammates can harness the knowledge, fast-tracking projects by learning from your past experiences. In essence, well-penned documentation doesn't just recall what was done; it standardizes, educates, and accelerates. <b>Build for tomorrow, document today!</b>
-</span>
+<div class="protip" markdown="1">
+Think of good documentation as a time-traveling mentor. **Every hour you invest now in crafting clear, detailed documentation is a future hour saved when revisiting pipelines or repurposing code.** With robust documentation in hand, you sidestep those familiar pitfalls, bypassing errors or bottlenecks that once hindered progress. And it's not just about you; it's a legacy. Your teammates can harness the knowledge, fast-tracking projects by learning from your past experiences. In essence, well-penned documentation doesn't just recall what was done; it standardizes, educates, and accelerates. **Build for tomorrow, document today!**
 </div>
 
 ## Best Practices for Documentation

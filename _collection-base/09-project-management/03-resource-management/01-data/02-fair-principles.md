@@ -25,14 +25,12 @@ tags: []
 
 The FAIR Principles are **key guidelines in data management**, widely acknowledged in the scientific community. They advocate for making data Findable, Accessible, Interoperable, and Reusable. These principles are essential in the modern research landscape, **enhancing the efficiency and effectiveness of data handling and usage**.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">The Purpose:</span>
-<br><span style="font-style:italic;">The FAIR Principles were designed to improve the way data is handled in research, ensuring that it's easy for both people and machines to find and use the data they need. These principles have become a standard in the scientific community, helping to streamline data management and maximize the utility of data across different research fields.</span>
+<div class="note before" markdown="1" data-before="The Purpose">
+The FAIR Principles were designed to improve the way data is handled in research, ensuring that it's easy for both people and machines to find and use the data they need. These principles have become a standard in the scientific community, helping to streamline data management and maximize the utility of data across different research fields.
 </div>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">In essence, the FAIR Principles are all about <b>making the most out of data in science</b>. They ensure that data is not only easy to find and access but also that it's set up in a way that others can use it both now and in the future. It's a framework that encourages scientists to manage data in a way that's open, clear, and beneficial for the entire scientific community, much like how the {% include target_link href=931.3 %} advocate for fairness and justice in data governance related to Indigenous communities.</span>
+<div class="protip" markdown="1">
+In essence, the FAIR Principles are all about **making the most out of data in science**. They ensure that data is not only easy to find and access but also that it's set up in a way that others can use it both now and in the future. It's a framework that encourages scientists to manage data in a way that's open, clear, and beneficial for the entire scientific community, much like how the {% include target_link href=931.3 %} advocate for fairness and justice in data governance related to Indigenous communities.
 </div>
 
 
@@ -102,14 +100,12 @@ Many funding agencies and scholarly journals now require or highly recommend adh
 **Enhancing Open Science through FAIR Principles** <br>
 The FAIR principles align closely with the goals of Open Science, which aims to make scientific research more transparent, accessible, and collaborative. By ensuring that data is easily findable, accessible, interoperable, and reusable, FAIR principles contribute to making scientific research and data more openly available to the broader scientific community and the public.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">Promoting Transparency and Reproducibility</span>
-<br><span style="font-style:italic;">By making data easily accessible and reusable, other researchers can validate, replicate, and build upon existing research, thus supporting the reproducibility of scientific findings. This transparency is a cornerstone of Open Science, fostering trust and credibility in scientific research.</span>
+<div class="note before" markdown="1" data-before="Promoting Transparency and Reproducibility">
+By making data easily accessible and reusable, other researchers can validate, replicate, and build upon existing research, thus supporting the reproducibility of scientific findings. This transparency is a cornerstone of Open Science, fostering trust and credibility in scientific research.
 </div>
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">Contributing to Scientific Advancements</span>
-<br><span style="font-style:italic;">By adhering to FAIR principles within the framework of Open Science, researchers contribute to a more efficient and effective use of data. This not only accelerates scientific discoveries but also maximizes the impact and utility of research investments, benefiting the global research community and society at large.</span>
+<div class="note before" markdown="1" data-before="Contributing to Scientific Advancements">
+By adhering to FAIR principles within the framework of Open Science, researchers contribute to a more efficient and effective use of data. This not only accelerates scientific discoveries but also maximizes the impact and utility of research investments, benefiting the global research community and society at large.
 </div>
 
 ##  Resources and Tools
@@ -161,17 +157,14 @@ Leverage [tools](#resources-and-tools) like F-UJI or ARDC's FAIR Data Self Asses
 ### The Long-Term Perks
 
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">Boost Your Research's Visibility</span>
-<br><span style="font-style:italic;">FAIR data gets noticed. It’s easier for other researchers to find, cite, and build upon your work, which can lead to more citations and recognition.</span>
+<div class="protip before" markdown="1" data-before="Boost Your Research's Visibility">
+FAIR data gets noticed. It’s easier for other researchers to find, cite, and build upon your work, which can lead to more citations and recognition.
 </div>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">Improve Research Impact and Usability</span>
-<br><span style="font-style:italic;">When your data is easy to access and use, it can be repurposed for new, sometimes unexpected, research avenues. This not only stretches the usefulness of your data but also sparks new collaborations and discoveries.</span>
+<div class="protip before" markdown="1" data-before="Improve Research Impact and Usability">
+When your data is easy to access and use, it can be repurposed for new, sometimes unexpected, research avenues. This not only stretches the usefulness of your data but also sparks new collaborations and discoveries.
 </div>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">Stay Ahead in the Ever-Evolving Data World</span>
-<br><span style="font-style:italic;">The world of data is always changing, and staying FAIR-compliant means you’re keeping up. It’s about being adaptable and ready for new data technologies and standards as they come.</span>
+<div class="protip before" markdown="1" data-before="Stay Ahead in the Ever-Evolving Data World">
+The world of data is always changing, and staying FAIR-compliant means you’re keeping up. It’s about being adaptable and ready for new data technologies and standards as they come.
 </div>

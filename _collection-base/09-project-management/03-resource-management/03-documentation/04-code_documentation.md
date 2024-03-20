@@ -42,11 +42,8 @@ Documentation is essential for code of all scales, from simple scripts to comple
 | `scripts`, `short programs` | `modules`, `libraries` | `entire systems`, `platforms` |
 | Even a simple script that's a few lines long can benefit from a brief comment explaining its purpose. This helps future readers (or even the same developer) understand the purpose of the script after a long time. | Documentation should explain the purpose of modules, the functions they provide, any classes they contain, and how they can be used. | Comprehensive documentation is required, including high-level architecture diagrams, flow charts, module explanations, API references, and more. |
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+<div class="protip" markdown="1">
 In essence, the scale or type of code does not negate the need for documentation. Instead, it dictates the depth and style of documentation required. Always aim for clarity, relevance, and accuracy in documentation.
-</span>
 </div>
 
 **2. Types of code to document**
@@ -142,18 +139,12 @@ All forms of in-code documentation can be crafted using the same tools as those 
 </table>
 
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
+<div class="warning" markdown="1">
 Remember to always exercise caution when downloading software; ensure that you're getting it from the official source or a trusted distributor.
-</span>
 </div>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-On a cluster (HPC), text-based editors like <b>nano</b> and <b>vim</b> often come preinstalled, whereas GUI-based tools are usually not available, though it's worthwhile to check for Open OnDemand services. On your local machine, you'll typically need to manually install these tools.
-</span>
+<div class="protip" markdown="1">
+On a cluster (HPC), text-based editors like `nano` and `vim` often come preinstalled, whereas GUI-based tools are usually not available, though it's worthwhile to check for **Open OnDemand** services. On your local machine, you'll typically need to manually install these tools.
 </div>
 
 
@@ -161,11 +152,8 @@ On a cluster (HPC), text-based editors like <b>nano</b> and <b>vim</b> often com
 
 Inline comments are essential tools in the developer's arsenal, serving as **in-the-moment annotations that provide context to the codebase**.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">What are Inline Comments?</span>
-<br><span style="font-style:italic;">
+<div class="note before" markdown="1" data-before="What are Inline Comments?">
 Inline comments are annotations placed directly within the source code. They are used to describe the purpose and behavior of specific sections of the code, providing context and clarity to developers who might be reading or maintaining the code later.
-</span>
 </div>
 
 **How to add inline comment?**
@@ -224,11 +212,8 @@ int main() {
 ```
 ^ **NOTE:** *In C++, the* `#` *character is used to denote preprocessor directives, not inline comments.*
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
+<div class="warning" markdown="1">
 While the examples above are simplistic for illustrative purposes, it's crucial in real-world development not to over-comment by annotating every straightforward operation, as it can clutter the code and reduce readability.
-</span>
 </div>
 
 **When to use inline comments?**
@@ -261,11 +246,8 @@ While the examples above are simplistic for illustrative purposes, it's crucial 
 
 Block comments are another indispensable tool in a developer's toolkit, acting as **extended annotations that can span multiple lines** and provide more comprehensive explanations compared to inline comments.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">What are Block Comments?</span>
-<br><span style="font-style:italic;">
-Block comments, unlike inline comments, are designed to <b>describe larger sections of code</b>, potentially spanning multiple lines. They offer a <b>detailed context, often used for top-level documentation</b> like function or module descriptions, or to annotate longer sections of code where a brief inline comment might be insufficient.
-</span>
+<div class="note before" markdown="1" data-before="What are Block Comments?">
+Block comments, unlike inline comments, are designed to **describe larger sections of code**, potentially spanning multiple lines. They offer a **detailed context, often used for top-level documentation** like function or module descriptions, or to annotate longer sections of code where a brief inline comment might be insufficient.
 </div>
 
 **How to add block comment?**
@@ -276,11 +258,8 @@ Block comments usually **begin and end with specific delimiters** that distingui
 * **before a function or class definition** to explain its functionality *(see Python example below)*
 * **anywhere within the codebase as TODOs** to highlight areas that need future attention *(see R example below)*
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-TODOs are block comments in the codebase flagged with the keyword "TODO" to mark specific sections for further development. TODOs can be strategically placed anywhere in the code to provide developers with guidance on areas requiring attention, enhancement, or the addition of new features.
-</span>
+<div class="protip" markdown="1">
+TODOs are block comments in the codebase flagged with the keyword `TODO` to mark specific sections for further development. TODOs can be strategically placed anywhere in the code to provide developers with guidance on areas requiring attention, enhancement, or the addition of new features.
 </div>
 
 **Examples of block comments**
@@ -347,9 +326,8 @@ def add(a, b):
     return a + b
 ```
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">In Python, a <b>docstring</b> is a special string literal that occurs as <b>the first statement in a module, function, class, or method definition</b>, used for providing a concise explanation or documentation for that code segment. The tools like <b>sphinx</b> or <b>pydoc</b> <u>can process this convention to automatically generate documentation</u>. </span>
+<div class="note" markdown="1">
+In Python, a `docstring` is a special string literal that occurs as **the first statement in a module, function, class, or method definition**, used for providing a concise explanation or documentation for that code segment. The tools like `sphinx` or `pydoc` can process this convention to <u>automatically generate documentation</u>.
 </div>
 
 
@@ -373,18 +351,12 @@ public class Calculator {
 }
 ```
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-In Java, <b>JavaDoc</b> is a tool and documentation standard used to generate API documentation in HTML format from Java source code. The source code is annotated with special JavaDoc comments, which are distinct from regular comments. These JavaDoc comments start with <code>/**</code> and end with <code>*/</code>.
-</span>
+<div class="note" markdown="1">
+In Java, **JavaDoc** is a tool and documentation standard used to generate API documentation in HTML format from Java source code. The source code is annotated with special JavaDoc comments, which are distinct from regular comments. These JavaDoc comments start with `/**` and end with `*/`.
 </div>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-In Java, single-line comments are preceded by <code>//</code> and are not processed by <b>javadoc tool</b>. Only comments starting with <code>/**</code> and ending with <code>*/</code> are recognized and processed by <i>javadoc</i> as JavaDoc comments. Even when the syntax <code>/** text */</code> is on a single line, it is still a valid JavaDoc comment.
-</span>
+<div class="protip" markdown="1">
+In **Java**, single-line comments are preceded by `//` and are not processed by `javadoc` **tool**. Only comments starting with `/**` and ending with `*/` are recognized and processed by `javadoc` as JavaDoc comments. Even when the syntax `/** text */` is on a single line, it is still a valid JavaDoc comment.
 </div>
 
 * **C++**, use `/* text */` syntax for (multi-line) block comments
@@ -399,11 +371,8 @@ int multiply(int a, int b) {
 }
 ```
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
+<div class="warning" markdown="1">
 Just like with inline comments, avoid the temptation to overuse block comments. While they're useful for providing context, excessive or redundant comments can make code harder to read.
-</span>
 </div>
 
 **When to use block comments?**
@@ -432,34 +401,24 @@ Just like with inline comments, avoid the temptation to overuse block comments. 
 
 By incorporating relevant information to log messages, developers create a vital component of code documentation, aiding in the identification, diagnosis, and resolution of issues. Logging tools manages messages during a program's runtime, allowing users to adjust verbosity levels to meet specific needs.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">What are Error Logs?</span>
-<br><span style="font-style:italic;">
+<div class="note before mb-0" markdown="1" data-before="What are Error Logs?">
 Error logs are records generated by a program that capture error events or notable runtime incidents. These logs offer invaluable insights into problematic code blocks, making debugging and performance optimization more efficient.
-</span><br><br>
-<span style="font-weight:800;">What is verbosity?</span>
-<br><span style="font-style:italic;">
+</div>
+
+<div class="note before" markdown="1" data-before="What is verbosity?">
 Verbosity refers to the level of detail included in messages or logs, especially error logs, with higher verbosity levels providing more detailed and informative content about the system's status, processes or issues.
-</span>
 </div>
 
 **How are error logs generated?**
 
 Log messages, strategically placed by developers at critical points in the code, communicate various events — be it issues, progress, or the completion of specific steps during runtime. The depth and detail of these messages are governed by `verbosity levels` set by developers, categorizing the significance and granularity of each event. When a user selects a verbosity level during program execution and the code reaches a relevant logging point, the appropriate `log message` is displayed, offering insights into the ongoing process or potential issues.
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-As a developer, it's your responsibility to determine where and what log messages should be added to the codebase. Remember, the system can only report what you instruct it to. <b>If you don't insert log messages to the code, no messages will be printed when an error occurs.</b> Proactive logging will aid in better runtime insights and troubleshooting.
-</span>
+<div class="protip" markdown="1">
+As a developer, it's your responsibility to determine where and what log messages should be added to the codebase. Remember, the system can only report what you instruct it to. **If you don't insert log messages to the code, no messages will be printed when an error occurs.** Proactive logging will aid in better runtime insights and troubleshooting.
 </div>
 
-
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
+<div class="warning" markdown="1">
 Error logs can contain sensitive information. Always ensure that logs do not expose confidential data or security-critical information, especially when deployed in production environments.
-</span>
 </div>
 
 **How to create a logging message?**
@@ -489,24 +448,20 @@ echo "This is an error" 1>&2
 ```
 *The last example, instead of displaying the message on the standard output (like it would by default with echo), it sends the message to the standard error stream.*
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-For system-wide logging, Bash scripts can log messages to <b>syslog</b> using the <code>logger</code> command, making the logs accessible through tools like <b>journalctl</b> or tail on the /var/log/syslog file. <br>
-<code>
-# To log a message with a specific priority (for example, error) and under a specific tag: <br>
-logger t MYSCRIPT -p user.err "This is an error message from my script" <br>
-# To filter and view messages from a custom tag "MYSCRIPT": <br>
-journalctl -t MYSCRIPT <br>
-# To view the latest log messages and possibly spot yours: <br>
+<div class="protip" markdown="1">
+For system-wide logging, Bash scripts can log messages to **syslog** using the `logger` command, making the logs accessible through tools like **journalctl** or tail on the `/var/log/syslog` file.
+```bash
+# To log a message with a specific priority (for example, error) and under a specific tag:
+logger t MYSCRIPT -p user.err "This is an error message from my script"
+# To filter and view messages from a custom tag "MYSCRIPT":
+journalctl -t MYSCRIPT
+# To view the latest log messages and possibly spot yours:
 tail -n 50 /var/log/syslog
-</code>
-</span><br><br>
-<div style="background: mistyrose; padding: 15px; margin-bottom: 0px;">
-<span style="font-weight:800;">WARNING:</span>
-Keep in mind, the exact path to the syslog file might vary depending on your system. On some systems, it might be /var/log/messages or similar. Also, ensure you have the necessary permissions to access these log files; you might need to prepend sudo to some commands. <b>It typically won't be possible on HPC infrastructure.</b><br><span style="font-style:italic;">
-</span>
-</div>
+```
+<base class="mt">
+  <div class="warning font-1 mb-0" markdown="1">
+  Keep in mind, the exact path to the syslog file might vary depending on your system. On some systems, it might be /var/log/messages or similar. Also, ensure you have the necessary permissions to access these log files; you might need to prepend sudo to some commands. **It typically won't be possible on HPC infrastructure.**
+  </div>
 </div>
 
 
@@ -550,11 +505,8 @@ logging.basicConfig(filename='app.log', level=logging.DEBUG)
 logging.error("This error will be written to 'app.log'")
 ```
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-<b>For simpler scripts or applications, developers sometimes just use print() statements to log messages to the console.</b> Using the <code>logging</code> module or any dedicated logging library in Python is advantageous over simple print() statements because it provides granularity (via log levels), flexibility in log destinations (console, file, remote server, etc.), and precise control.
-</span>
+<div class="protip" markdown="1">
+**For simpler scripts or applications, developers sometimes just use print() statements to log messages to the console.** Using the `logging` module or any dedicated logging library in Python is advantageous over simple `print()` statements because it provides granularity (via log levels), flexibility in log destinations (console, file, remote server, etc.), and precise control.
 </div>
 
 * **C++**, use `cerr` functionality
@@ -577,11 +529,8 @@ log_file << "This is a log message written to a file." << std::endl;
 log_file.close();
 ```
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-It's important to choose a logging approach based on the requirements of the project. While using standard streams might be adequate for simple applications, for larger projects or applications with specific logging needs, dedicated libraries like <b>spdlog</b> or <b>Boost.Log</b> would be more appropriate.
-</span>
+<div class="protip" markdown="1">
+It's important to choose a logging approach based on the requirements of the project. While using standard streams might be adequate for simple applications, for larger projects or applications with specific logging needs, dedicated libraries like `spdlog` or `Boost.Log` would be more appropriate.
 </div>
 
 
@@ -616,11 +565,8 @@ It's important to choose a logging approach based on the requirements of the pro
 Usage messages or `help messages` are important elements in the <u>developer and user toolkit</u>, acting as real-time guidance that <b>outline how to use a specific tool, command, or software effectively</b>. They are vital part in code documentation, especially for command-line interfaces or APIs.
 
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">What is a usage message?</span>
-<br><span style="font-style:italic;">
-Usage messages, also known as help messages, are concise, structured text descriptions displayed to the user, typically upon invoking a command with specific flags like <b>-h</b> or <b>--help</b>. They <b>describe how to use a program</b>, what arguments it accepts, and provide a brief explanation of each option.
-</span>
+<div class="note before" markdown="1" data-before="What is a usage message?">
+Usage messages, also known as help messages, are concise, structured text descriptions displayed to the user, typically upon invoking a command with specific flags like `-h` or `--help`. They **describe how to use a program**, what arguments it accepts, and provide a brief explanation of each option.
 </div>
 
 Depending on the situation or tool, one's role can shift between being a user *(seeking guidance on software features)*, developer *(responsible for creating it)*, or both *(enhancing it based on personal experiences)* when interacting with a usage (help) message. This dual perspective can be advantageous, as understanding the user experience can lead to the creation of more intuitive and effective help messages.
@@ -653,26 +599,21 @@ Options:
 * when the user provides invalid input or arguments
 
 ```bash
-$ myprogram --man
+myprogram --man
 
-myprogram: unrecognized option `--man'
-
-usage: myprogram [-f file] [-o file]
+# myprogram: unrecognized option `--man'
+# usage: myprogram [-f file] [-o file]
 ```
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Most bash commands, standalone tools, and applications from GitHub repos typically offer a standardized approach, and you can view their usage syntax and options using '--help', provided the developer has set up a usage message.
-</span>
+<div class="protip" markdown="1">
+Most bash commands, standalone tools, and applications from GitHub repos typically offer a standardized approach, and you can view their usage syntax and options using `--help`, provided the developer has set up a usage message.
 </div>
 
 **Examples of usage message** *(being a software user)*
 
-In Bash, you can use `command --help` for a brief usage overview, while `man command` offers more comprehensive information and details about each command. Try these commands for commonly used Bash commands such as `ls` `grep` `awk` `wget` `tar` `ssh` `git` to see examples of well-crafted usage message.
+In Bash, you can use `command --help` for a brief usage overview, while `man command` offers more comprehensive information and details about each command. Try these commands for commonly used Bash commands such as `ls` , `grep` , `awk` , `wget` , `tar` , `ssh` , `git` to see examples of well-crafted usage message.
 ```bash
 grep --help
-
 man  grep
 ```
 
@@ -708,12 +649,9 @@ Many standalone CLI tools and applications cloned from GitHub repositories often
 * If there's a major change or update to the software, you might consider displaying a "what's new" guide.
 
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-A well-crafted usage message is invaluable to users of your software, providing them with concise information about how to interact with the program and its available options. <br><br>
-Many CLI libraries/frameworks (e.g., <b>argparse</b> in Python) <b>automatically generate usage messages</b> based on the defined options/commands. Leverage these to maintain consistency and accuracy.
-</span>
+<div class="protip" markdown="1">
+A well-crafted usage message is invaluable to users of your software, providing them with concise information about how to interact with the program and its available options. <base class="mb">
+Many CLI libraries/frameworks (e.g., `argparse` in Python) **automatically generate usage messages** based on the defined options/commands. Leverage these to maintain consistency and accuracy.
 </div>
 
 
@@ -721,18 +659,12 @@ Many CLI libraries/frameworks (e.g., <b>argparse</b> in Python) <b>automatically
 
 Different programming languages and platforms have varying libraries or mechanisms to handle and display usage messages. Create a concise, informative, and clear usage message that outlines the program’s purpose, input parameters, options, and examples, ensuring future you can quickly understand and utilize its functionality without revisiting the code or documentation.
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
+<div class="warning" markdown="1">
 Ensure that your usage message stays updated with the software's functionalities. An outdated or incorrect usage message can confuse or mislead users.
-</span>
 </div>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+<div class="protip" markdown="1">
 Overloading the usage message with too much information or presenting it in a non-structured manner can overwhelm users. Ensure the message is succinct and comprehensible.
-</span>
 </div>
 
 * **BASH**
@@ -789,11 +721,8 @@ input_file = sys.argv[1]
 ```
 *In this example, the script expects at least one argument, in this case an argument for input_file. If it's not provided, the usage message will be displayed and the script will exit.*
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-In most programming languages, <b>the first argument</b> <i>(sometimes indexed as 0, e.g., in Python)</i> <b>is the name of the program itself</b>; therefore, if you're checking the number of arguments to display a usage message when only the program name is executed, <b>the condition should typically be set to <2</b>, as the first user-provided option is always the second argument.
-</span>
+<div class="warning" markdown="1">
+In most programming languages, **the first argument** (sometimes indexed as 0, e.g., in Python) **is the name of the program itself**; therefore, if you're checking the number of arguments to display a usage message when only the program name is executed, **the condition should typically be set to** `<2`, as the first user-provided option is always the second argument.
 </div>
 
 In Python, the `argparse` module provides a convenient way to define and handle command-line arguments, and it automatically generates a usage message based on the defined arguments. It is a recommended approach <b>when your code expects numerous arguments or offers multiple options</b>, ensuring clarity and efficient parsing.
@@ -816,19 +745,19 @@ args = parser.parse_args()
 # rest of the script...
 ```
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-In the <b>parser.add_argument()</b> method, apart from required and help, you can set several other parameters, including but not limited to:
+<div class="note" markdown="1">
+In the `parser.add_argument()` method, apart from required and help, you can set several other parameters, including but not limited to: <base class="mb">
 
-<li><b>type:</b> Specifies the type of the argument, like int, float, or any callable function.</li>
-<li><b>default:</b> Specifies a default value if the argument is not provided.</li>
-<li><b>choices:</b> A container of the allowable values for the argument.</li>
-<li><b>action:</b> The basic type of action to be taken when the argument is encountered, e.g., 'store', 'append', 'store_true', etc.</li>
-<li><b>nargs:</b> Specifies the number of command-line arguments that should be consumed, e.g., '?', '*', +, or an integer.</li>
-<li><b>const:</b> A constant value required by some action and nargs selections.</li>
-<li><b>metavar:</b> A name for the argument in usage messages.</li>
-</span>
+| param    | description |
+|----------|-------------|
+| `type`   | Specifies the type of the argument, like int, float, or any callable function. |
+|`default` | Specifies a default value if the argument is not provided.                     |
+|`choices` | A container of the allowable values for the argument.                          |
+| `action` | The basic type of action to be taken when the argument is encountered,  *e.g., 'store', 'append', 'store_true', etc.* |
+| `nargs`  | Specifies the number of command-line arguments that should be consumed, *e.g.,* `?`, `*`, `+`, *or an integer.* |
+| `const`  | A constant value required by some action and nargs selections.                 |
+| `metavar`| A name for the argument in usage messages.                                     |
+
 </div>
 
 Assuming your code was saved in `my_script.py` script file, when you run:
@@ -915,12 +844,9 @@ Usage: my_program <filename> <operation>
 * **consistency is key** <br>
 <i>If you're creating multiple tools or utilities, maintain a consistent structure and style across all usage messages.</i>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+<div class="protip" markdown="1">
 Remember, the key of usage message is to make it as easy as possible for a user, whether they're a newbie or an expert, to understand and use your software effectively.
 When crafting a usage message for your program, design it as if you're leaving instructions for your future self, detailing both its purpose and usage instructions.
-</span>
 </div>
 
 
@@ -938,18 +864,12 @@ While the specific types of external documentation can differ based on the softw
 | Reference Materials             | Detailed technical info  that provides specific insights or clarifications. | API Documentation, Architecture Diagrams, Glossaries|
 | Meta Documentation              | Information about the documentation or process itself. | Release Notes, License Documentation |
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
+<div class="warning" markdown="1">
 Maintaining external documentation can be challenging. As software evolves, documentation needs to be updated to reflect those changes. Outdated or incorrect documentation can sometimes be worse than no documentation.
-</span>
 </div>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+<div class="protip" markdown="1">
 Using tools and practices like continuous integration to check documentation, or treating documentation as code (where changes to software and its documentation are done simultaneously) can help address these challenges.
-</span>
 </div>
 
 **Benefits of External Documentation:**
@@ -1174,11 +1094,8 @@ See the real-tool example here: <a href="https://github.com/tensorflow/tensorflo
 *TensorFlow has configure scripts in its root directory. This script is meant to be run before building TensorFlow from source. When executed, it will ask users a series of questions regarding their build (like which version of Python to use, whether to build with CUDA support, etc.) and generate a .tf_configure.bazelrc configuration file based on the responses.*
 
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-The <b>INSTALL</b> file is an essential component of your software's documentation, serving as the foundational guide to ensure your tool is operable and accessible to others.
-</span>
+<div class="protip" markdown="1">
+The `INSTALL` file is an essential component of your software's documentation, serving as the foundational guide to ensure your tool is operable and accessible to others.
 </div>
 
 
@@ -1238,11 +1155,8 @@ See the real-tool example here: <a href="https://keras.io/getting_started/faq/" 
 
 Developer-centric documentation is primarily aimed at individuals who wish to delve deeper into the software's architecture, perhaps to make modifications, contribute with new features, or understand its inner workings more intimately. As a project expands, encompassing multiple modules, dependencies, and contributors, a detailed developer guide becomes pivotal in ensuring consistent understanding, development practices, and smooth collaboration among team members.
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-The significance of developer-centric documentation grows proportionally with the complexity and scale of a software project. <b>For smaller modu</b>les or simple collections of scripts, such in-depth documentation might be superfluous. It's often more beneficial to <b>prioritize thorough in-code documentat</b>ion, ensuring that the code itself is self-explanatory and easily understandable to anyone who might use or modify it.
-</span>
+<div class="protip" markdown="1">
+The significance of developer-centric documentation grows proportionally with the complexity and scale of a software project. **For smaller modules** or simple collections of scripts, such in-depth documentation might be superfluous. It's often more beneficial to **prioritize thorough in-code documentation**, ensuring that the code itself is self-explanatory and easily understandable to anyone who might use or modify it.
 </div>
 
 ## *Developer guides*
@@ -1298,11 +1212,10 @@ See the real-tool example here: <a href="https://docs.gitlab.com/ee/development/
 
 ## **Documentation for pipelines**
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span><br>
-Pipelines and workflows refer to a <b>series of automated processes</b> that allow code to move from development to production. This can encompass various stages, such as code compilation, testing, deployment, execution, and monitoring. <br>
-<li><b>Pipelines</b> are typically sequences of tasks, often represented as code, that transform and process data. Pipelines are common in data processing. </li>
-<li><b>Workflows</b> usually refer to higher-level orchestrations of tasks, which might include decision-making processes, loops, and conditional operations. Workflows are prevalent in workflow management systems and platforms that coordinate execution of various software.</li>
+<div class="note" markdown="1">
+Pipelines and workflows refer to a **series of automated processes** that allow code to move from development to production. This can encompass various stages, such as code compilation, testing, deployment, execution, and monitoring.
+* **Pipelines** are typically sequences of tasks, often represented as code, that transform and process data. Pipelines are common in data processing.
+* **Workflows** usually refer to higher-level orchestrations of tasks, which might include decision-making processes, loops, and conditional operations. Workflows are prevalent in workflow management systems and platforms that coordinate execution of various software.
 </div>
 
 Pipelines and workflows represent automated sequences of tasks in software and data processing. They require detailed documentation to ensure clarity in their operations, dependencies, and error handling, ensuring smooth execution and maintenance. The documentation of computational pipelines is a critical aspect of modern data-intensive sciences and software development.
@@ -1324,20 +1237,14 @@ Pipelines and workflows represent automated sequences of tasks in software and d
 
 ## Interactive Notebooks
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-Interactive notebooks are <b>web-based platforms that allow for the combination of live code, visualizations, and narrative text in a single document</b>. They facilitate an exploratory approach to data analysis and are particularly popular in data science and machine learning fields. For code documentation, they offer an intuitive way to <b>document and demonstrate code functionality in real-time</b>, enhancing clarity and comprehensibility.
-</span>
+<div class="note" markdown="1">
+Interactive notebooks are **web-based platforms that allow for the combination of live code, visualizations, and narrative text in a single document**. They facilitate an exploratory approach to data analysis and are particularly popular in data science and machine learning fields. For code documentation, they offer an intuitive way to **document and demonstrate code functionality in real-time**, enhancing clarity and comprehensibility.
 </div>
 
 **Interactive notebooks excel in documenting computational pipelines**, where multiple steps and varied tools come into play, providing a cohesive and **step-by-step demonstration of the entire process**. Their format allows for real-time execution, visualization, and annotation, making them ideal for capturing complex workflows in detail.  These platforms **enhance the understandability and reproducibility of computational work**, bridging the gap between code development and data storytelling. Interactive Notebooks deliver specialized collaborative environments that adapt to diverse programming and analytical needs.
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+<div class="protip" markdown="1">
 For large-scale software documentation, where comprehensive architectural details, API references, and broader system interactions are crucial, traditional documentation tools might be more suitable.
-</span>
 </div>
 
 <p style="color: #ff3870; font-weight: 500;">
@@ -1348,20 +1255,14 @@ specifically tailored for the <a href="https://jupyter.org/" target="_blank">Jup
 
 Combining tools or steps into a workflow, especially using platforms like <a href="https://www.nextflow.io" target="_blank">Nextflow</a>, is a form of **documentation for the computing process**. In essence, while traditional documentation (like `README` files, user manuals, or online guides) is critical for understanding and using a software or pipeline, the structured, explicit nature of workflow scripts, especially in platforms like Nextflow, provides a form of `executable documentation`. This not only describes the computing process but also enables and ensures its reproducibility across different scenarios and platforms.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-Nextflow is a workflow management system designed for <b>scalable and reproducible scientific workflows</b> using software containers. It simplifies the process of writing, deploying, and sharing complex data analysis pipelines across different computing environments.
-</span>
+<div class="note" markdown="1">
+Nextflow is a workflow management system designed for **scalable and reproducible scientific workflows** using software containers. It simplifies the process of writing, deploying, and sharing complex data analysis pipelines across different computing environments.
 </div>
 
 <a href="https://www.nextflow.io" target="_blank">Nextflow</a> is a workflow management system for writing and running scalable and reproducible scientific workflows. <a href="https://tower.nf/" target="_blank">Nextflow Tower</a> is an associated web-based application that provides a user interface for monitoring, managing, and scaling Nextflow workflows, offering enhanced visualization, logging, and collaboration capabilities for Nextflow runs.
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-<b>Nextflow is NOT restricted to any particular discipline.</b> It is a versatile workflow management system that can be used to script, organize, and execute workflows for a wide range of applications across various fields. While it has gained significant popularity in bioinformatics and genomics (due to the complex, multi-step computational analyses often required in these fields) it is fundamentally designed to be domain-agnostic.
-</span>
+<div class="protip" markdown="1">
+**Nextflow is NOT restricted to any particular discipline.** It is a versatile workflow management system that can be used to script, organize, and execute workflows for a wide range of applications across various fields. While it has gained significant popularity in bioinformatics and genomics (due to the complex, multi-step computational analyses often required in these fields) it is fundamentally designed to be domain-agnostic.
 </div>
 
 ## **Documentation Generators**
@@ -1399,11 +1300,8 @@ Here's a table with documentation platforms, starting with the most popular ones
 | <a href="https://www.dozuki.com/" target="_blank">Dozuki</a>           | Designed for step-by-step technical guides with visual breakdowns. | Specific to its own format |
 | <a href="DocuWare" target="_blank">DocuWare</a>         | Enterprise document management system, more for storage than technical doc display. | Not optimized for doc generators |
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+<div class="protip" markdown="1">
 Platforms like GitHub Pages, Netlify, Vercel, and even Read the Docs (with some configuration) can easily host documentation generated by Doxygen and Javadoc, as these tools produce static HTML files that these platforms are designed to serve.
-</span>
 </div>
 
 
@@ -1444,13 +1342,11 @@ html_theme = "sphinx_rtd_theme"
 
 **4. Writing Documentation:** <br>
 Sphinx uses `reStructuredText` as its markup language, which is similar to `Markdown` but more powerful. You can start by editing the `index.rst` **file, which is the root of your documentation.**
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; margin-left: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-The i<b>ndex.rst file acts as the homepage or table of contents for your documentation</b>.<br><br>
-The <b>.. toctree::</b> directive in this file is crucial. It defines the "table of contents tree", which is a hierarchical listing of the other "reStructuredText" files that should be included in the generated documentation.<br><br>
-The <b>.. automodule::</b> directive is used to <b>automatically pull in the docstrings from a Python module</b> and include them in the documentation. The <b>:members:</b> option tells Sphinx to generate documentation for each of the public members (functions, classes, etc.) of the module. Without this option, Sphinx would only include the module's docstring.
-</span>
+
+<div class="note" markdown="1">
+**The** `index.rst` **file acts as the homepage or table of contents for your documentation.** <base class="mb">
+The `.. toctree::` directive in this file is crucial. It defines the "table of contents tree", which is a hierarchical listing of the other "reStructuredText" files that should be included in the generated documentation. <base class="mb">
+The `.. automodule::` directive is used to **automatically pull in the docstrings from a Python module** and include them in the documentation. The `:members:` option tells Sphinx to generate documentation for each of the public members (functions, classes, etc.) of the module. Without this option, Sphinx would only include the module's docstring.
 </div>
 
   * To document a Python module, use the `automodule` directive within `index.rst`. **Specify the module you want to include.**
@@ -1484,11 +1380,8 @@ As you update your Python code and its docstrings, **re-run the** `make html` **
 **8. Publishing Documentation:** <br>
 If you want to share your documentation with others, consider using a platform like <a href="https://readthedocs.org/" target="_blank">Read the Docs  ⤴</a>. <br>It can automatically build and host your Sphinx documentation.
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Remember to <b>write comprehensive docstrings in your Python code using the reStructuredText format</b>, so Sphinx can pick up and format them appropriately. As long as your code is well-documented with meaningful docstrings, you can automatically create detailed and accurate <b>documentation without excessive manual effort</b>. Refer to the <a href="https://www.sphinx-doc.org/en/master/" target="_blank">Sphinx documentation  ⤴</a> for advanced topics and configurations.
-</span>
+<div class="protip" markdown="1">
+Remember to **write comprehensive docstrings in your Python code using the reStructuredText format**, so Sphinx can pick up and format them appropriately. As long as your code is well-documented with meaningful `docstrings`, you can automatically create detailed and accurate **documentation without excessive manual effort**. Refer to the <a href="https://www.sphinx-doc.org/en/master/" target="_blank">Sphinx documentation  ⤴</a> for advanced topics and configurations.
 </div>
 
 

@@ -26,9 +26,8 @@ tags: []
 In this tutorial, let's dive into the world of Monitoring & Evaluation (M&E) and unpack why it's such a game-changer for your research projects. M&E isn't just fancy jargon; **it's a critical toolkit that helps you keep your project on track**, ensuring that you're not just doing work, but you're doing the right work. It's all about making sure that your project hits its marks, delivers on its promises and, most importantly, contributes to knowledge and practice in meaningful ways. By integrating M&E from the get-go, you're setting up your project for success and ensuring that every effort counts towards making a tangible impact.
 
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;"> With a little creativity and strategic thinking, Monitoring and Evaluation techniques can reinforce your research and help you <b>make informed decisions every step of the way</b>. </span>
+<div class="protip" markdown="1">
+With a little creativity and strategic thinking, Monitoring and Evaluation techniques can reinforce your research and help you **make informed decisions every step of the way**.
 </div>
 
 *Let's explore how you can apply M&E principles effectively, ensuring your project is not just a drop in the ocean but a wave of change in your field.*
@@ -38,9 +37,8 @@ In this tutorial, let's dive into the world of Monitoring & Evaluation (M&E) and
 
 In small to moderate size research projects, M&E plays a crucial role by providing a structured approach to manage and evaluate the project from inception to conclusion. Its application helps in steering the project towards its defined goals, ensuring resources are used effectively and outcomes are achieved as planned.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;"> Monitoring & Evaluation (M&E) is a systematic framework designed to assess the progress and effectiveness of a research project's activities, ensuring objectives are efficiently met. </span>
+<div class="note" markdown="1">
+Monitoring & Evaluation (M&E) is a systematic framework designed to assess the progress and effectiveness of a research project's activities, ensuring objectives are efficiently met.
 </div>
 
 M&E activities are structured around four pivotal components: `Planning`, `Monitoring`, `Evaluation` and `Adaptation`. Each serves a unique purpose:
@@ -56,16 +54,16 @@ M&E activities are structured around four pivotal components: `Planning`, `Monit
 - **Adaptation fine-tuning for excellence.** <br>
 <i>Implementing changes based on evaluation insights to refine and improve project processes and outcomes. This step involves adjusting strategies, methods, or practices in response to identified challenges and opportunities for enhancement.</i>
 
-<div style="background: #FFFACD; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">EXAMPLE 1:</span>
-<br><i> Consider a moderate-scale agricultural study aimed at improving tomato plant yield using two different organic fertilizers.
-<li><b>Planning:</b> The team decides to monitor plant growth rates and fruit yield as key metrics to assess the effectiveness of each fertilizer. </li>
-<li><b>Monitoring:</b> Every two weeks, the team measures the height of tomato plants and records the number of tomatoes produced per plant, comparing these figures against expected growth milestones and yield targets. </li>
-<li><b>Evaluation:</b> After two months, the team evaluates the collected data and discovers that while plants with Fertilizer A are taller, those with Fertilizer B produce more fruit.</li>
-<li><b>Adaptation:</b> Based on these insights, the team adapts their approach by deciding to combine both fertilizers in a new ratio, aiming to optimize both plant height and fruit yield in the next planting cycle.</li></i>
-------------- <br>
-<span style="font-weight:800;">EXAMPLE 2:</span>
-<br><i> Consider a small-scale bioinformatics project focused on identifying genetic markers associated with resistance to a specific antibiotic in bacteria.</i>
+<div class="example italic mb-0" markdown="1">
+Consider a moderate-scale agricultural study aimed at improving tomato plant yield using two different organic fertilizers.
+* **Planning:** The team decides to monitor plant growth rates and fruit yield as key metrics to assess the effectiveness of each fertilizer.
+* **Monitoring:** Every two weeks, the team measures the height of tomato plants and records the number of tomatoes produced per plant, comparing these figures against expected growth milestones and yield targets.
+* **Evaluation:** After two months, the team evaluates the collected data and discovers that while plants with Fertilizer A are taller, those with Fertilizer B produce more fruit.
+* **Adaptation:** Based on these insights, the team adapts their approach by deciding to combine both fertilizers in a new ratio, aiming to optimize both plant height and fruit yield in the next planting cycle.
+</div>
+
+<div class="example italic" markdown="1">
+Consider a small-scale bioinformatics project focused on identifying genetic markers associated with resistance to a specific antibiotic in bacteria.
 <table style="margin-bottom: 0px; margin-top: 10px;">
   <tr><th>Project</th><th>Planning</th><th>Monitoring</th><th>Evaluation</th><th>Adaptation</th></tr>
   <tr>
@@ -82,9 +80,8 @@ M&E activities are structured around four pivotal components: `Planning`, `Monit
 
 Boosting the quality of research requires a balanced approach that merges quantitative assessments of specific targets in your project, such as measuring data accuracy or computational efficiency, with qualitative actions and a strong commitment to best practices. This holistic approach ensures that while statistics on data provides objective insights into progress and performance, some good habits enrich the research's depth, integrity, and relevance.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">Best practices in M&E emphasize a structured, transparent, and participatory approach to research, ensuring that projects are not only accountable and effective but also adaptable and impactful based on solid evidence and academic community engagement. </span>
+<div class="note" markdown="1">
+Best practices in M&E emphasize a structured, transparent, and participatory approach to research, ensuring that projects are not only accountable and effective but also adaptable and impactful based on solid evidence and academic community engagement.
 </div>
 
 Here are additional activities under Monitoring and Evaluation that can help ensure quality assurance.
@@ -209,20 +206,18 @@ One team member is tasked with tracking the computational efficiency of the anal
 
 ### EXCERCISE
 
-<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;"><i>Planning M&E actions in your research</i></span><br>
-<br><span style="font-style:italic;">Choose any current or upcoming project you're involved in. Based on the best practice recommendations provided, draft a brief outline of the Monitoring & Evaluation (M&E) actions you plan to implement. Include specific tools, methods, and frequency of evaluations.<br>
-<b> TIP:</b> Ensure your plan addresses each of the key M&E components: Planning, Monitoring, and Evaluation.<br><br>
-<b>Additional Questions to Guide Your Task:</b>
-<li>What are the primary objectives of your project, and how can they be measured effectively?</li>
-<li>How often will you review and adjust your M&E plan based on findings and feedback?</li>
-<li>Who are the key collaborators in your project, and how will you keep them informed and engaged throughout the M&E process?</li>
-<li>What challenges do you anticipate in implementing your M&E plan, and how might you address them?</li><br>
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">If you're currently without a project idea, try answering those questions for a hypothetical photogrammetry project focused on surveying corn crops in a region prone to weather hazards, to gain practical insights into planning M&E actions.</span>
+<div class="exercise before" markdown="1" data-before="Planning M&E actions in your research">
+Choose any current or upcoming project you're involved in. Based on the best practice recommendations provided, draft a brief outline of the Monitoring & Evaluation (M&E) actions you plan to implement. Include specific tools, methods, and frequency of evaluations. <br>
+**TIP:** *Ensure your plan addresses each of the key M&E components: Planning, Monitoring, and Evaluation.* <base class="mb">
+**Additional Questions to Guide Your Task:**
+* What are the primary objectives of your project, and how can they be measured effectively?
+* How often will you review and adjust your M&E plan based on findings and feedback?
+* Who are the key collaborators in your project, and how will you keep them informed and engaged throughout the M&E process?
+* What challenges do you anticipate in implementing your M&E plan, and how might you address them?
+
+<div class="protip font-1 mb-0 before" markdown="1" data-before="PRO TIP">
+If you're currently without a project idea, try answering those questions for a hypothetical photogrammetry project focused on surveying corn crops in a region prone to weather hazards, to gain practical insights into planning M&E actions.
 </div>
-</span>
 </div>
 
 
@@ -230,8 +225,8 @@ One team member is tasked with tracking the computational efficiency of the anal
 
 # Tools and Methods
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-style:italic;">Selecting the right Monitoring & Evaluation (M&E) tools and methods is pivotal for the success of any research project, especially for those operating on a small to medium scale. <b>The right set of tools can significantly enhance the effectiveness and efficiency of your project</b>, enabling you to track progress and make informed decisions with greater precision. </span>
+<div class="note" markdown="1">
+Selecting the right Monitoring & Evaluation (M&E) tools and methods is pivotal for the success of any research project, especially for those operating on a small to medium scale. **The right set of tools can significantly enhance the effectiveness and efficiency of your project**, enabling you to track progress and make informed decisions with greater precision.
 </div>
 
 When it comes to choosing these tools and methods, several key criteria must be considered to ensure they align well with your project's needs. `Cost` is often a primary concern for smaller projects, making affordable or free tools particularly attractive. `Ease of use` is crucial as well, as it impacts the learning curve and the speed at which your team can become productive. `Scalability` ensures that the tool can grow with your project, accommodating more data or users as needed. Lastly, the `relevance` of the tool to your specific project needs is essential to ensure it adds value rather than complexity to your processes.
@@ -243,16 +238,16 @@ When it comes to choosing these tools and methods, several key criteria must be 
   <tr><td>Relevance</td><td>It must meet the specific needs of the project, whether for data collection, analysis, or reporting.</td></tr>
 </table>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">Understanding and applying these criteria will help you navigate the wide array of available M&E tools and methods, ensuring you select those that will most effectively support your project's unique requirements.</span>
+<div class="protip" markdown="1">
+Understanding and applying these criteria will help you navigate the wide array of available M&E tools and methods, ensuring you select those that will most effectively support your project's unique requirements.
 </div>
 
 ## Manual Methods
 
 It's smart to recognize the significance and utility of manual methods and low-tech solutions, especially in scenarios where digital tools may not be feasible or necessary. This can be particularly relevant for small-scale research projects where resources are limited, the datasets are easily manageable or in environments with limited access to technology.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;"><span style="font-style:italic;">Manual methods bring several advantages, including simplicity, direct control, and the absence of a steep learning curve associated with many digital tools. Moreover, they <b>foster a hands-on approach to M&E</b>, encouraging you to engage closely with the data and processes. This can lead to a deeper understanding of the project's progress and challenges. </span>
+<div class="note" markdown="1">
+Manual methods bring several advantages, including simplicity, direct control, and the absence of a steep learning curve associated with many digital tools. Moreover, they **foster a hands-on approach to M&E**, encouraging you to engage closely with the data and processes. This can lead to a deeper understanding of the project's progress and challenges.
 </div>
 
 <table>
@@ -289,10 +284,8 @@ Digital tools for Monitoring & Evaluation in Quality Assurance have become indis
 | Version Control | [Git](https://git-scm.com/) with [GitHub](https://github.com) | Medium | online GUI/CLI | Essential for tracking changes in methodologies and data scripts, enhancing methodological transparency and reproducibility. |
 | Validation and Reporting | [Jupyter Notebooks](https://jupyter.org/) | High | UI in web browser | An open-source web application that allows you to create and share documents that contain live code, equations, visualizations, and narrative text for transparent reporting. |
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-While digital tools can significantly aid in detecting errors, filling in missing values, and resolving inconsistent formatting, it's crucial to understand that <b>no single tool can automatically "fix" your data</b> or provide a one-stop solution for a "beautified" data collection. The landscape of digital tools is vast, and selecting the right one requires careful consideration of your specific project needs and challenges. </span>
+<div class="warning" markdown="1">
+While digital tools can significantly aid in detecting errors, filling in missing values, and resolving inconsistent formatting, it's crucial to understand that **no single tool can automatically "fix" your data** or provide a one-stop solution for a "beautified" data collection. The landscape of digital tools is vast, and selecting the right one requires careful consideration of your specific project needs and challenges.
 </div>
 
 

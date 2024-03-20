@@ -24,11 +24,8 @@ tags: []
 
 **GIT repositories** are centralized locations where developers store and manage their source code and related files, enabling version control, collaboration, and tracking of changes over time. Repositories are typically stored locally on a developer's machine and **can be synchronized with remote servers or online hosting platforms**.
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+<div class="protip" markdown="1">
 Git repositories do NOT have to be hosted on online platforms. Git is a distributed version control system, which means that a Git repository can be stored and managed locally on a single machine or on a network of machines. However, hosting Git repositories on an online platform provides several benefits.
-</span>
 </div>
 
 ---

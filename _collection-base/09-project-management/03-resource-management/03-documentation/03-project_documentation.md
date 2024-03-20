@@ -38,9 +38,8 @@ Tools for research documentation play an essential role in **streamlining and or
 
 ## Digital Laboratory Notebooks
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;"><span style="font-style:italic;">
-Digital Laboratory Notebooks (DLNs) provide an innovative solution for researchers to chronicle their experiments, observations, and findings in a digital format. They replace traditional paper lab notebooks, offering features like data integrity assurance, traceability, compliance with research standards, and enhanced collaboration. By integrating with various lab equipment and software, DLNs simplify and elevate the process of research documentation, making data transfer and management easier.
-</span>
+<div class="note" markdown="1">
+Digital Laboratory Notebooks (DLNs) provide an innovative solution for researchers to chronicle their experiments, observations, and findings in a digital format. They <u>replace traditional paper lab notebooks</u>, offering features like data integrity assurance, traceability, compliance with research standards, and enhanced collaboration. <br> By integrating with various lab equipment and software, DLNs simplify and elevate the process of <br> `research documentation`, making data transfer and management easier.
 </div>
 
 Digital Laboratory Notebooks (DLNs) have revolutionized the way scientists and researchers document their experimental processes and results.  The adoption of these platforms ensures enhanced reproducibility, compliance with research standards, and seamless collaboration among research teams. DLNs provide tailored solutions that cater to various scientific disciplines.
@@ -54,14 +53,9 @@ Open-source tools:
 |<a href="https://www.scinote.net/" target="_blank">SciNote</a>|SciNote offers practical solutions for researchers with features like electronic lab notebook functionalities, task management, and team collaboration. While SciNote offers premium versions, it does have a free version that can be quite useful for individual researchers or smaller teams.|
 |<a href="https://jupyter.org/" target="_blank">Jupyter Notebooks</a>|While not a traditional ELN, Jupyter Notebooks are popular among researchers, especially in computational fields, for blending code, output, and documentation in a seamless manner. `FREE`|
 
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+<div class="protip" markdown="1">
 If you're part of an academic institution or are comfortable with setting up and maintaining software, hosting an open-source tool on institutional servers or cloud services might be a viable option. However, always ensure data privacy, regular backups, and compliance with any institutional guidelines when doing so.
-
-
-</span>
-</div><br>
+</div>
 
 Commercial tools:
 
@@ -114,13 +108,10 @@ Collaborative writing platforms, like the open-source tool <a href="https://ethe
 |<a href="https://papeeria.com/" target="_blank">Papeeria</a>|LaTeX editing, real-time collaboration, version control|LaTeX document creation, academic writing, theses|free & subscription tiers, account required |
 |<a href="https://www.gitbook.com" target="_blank">GitBook</a>|collaborative writing, version control and Git integration, `markdown support`|technical documentation, `educational guides & tutorials`, handbooks|free & subscription tiers, account required, public & private visibility |
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-If you're affiliated with an academic or research institution, <b>Microsoft Word Online</b> might be included in your institution's Office 365 subscription, making it free for you to use. <br><br>
-When drafting scientific papers, remember that many journals provide templates in either <i>Microsoft Word</i> or <i>LaTeX</i> formats; the latter can be conveniently edited using <b>Overleaf</b>. <br><br>
-Additionally, <b>Google Docs</b>, with its <i>Paperpile</i> plugin, offers a seamless experience for collaborative writing by simplifying the online search and management of citations.
-</span>
+<div class="protip" markdown="1">
+If you're affiliated with an academic or research institution, **Microsoft Word Online** might be included in your institution's Office 365 subscription, making it free for you to use. <base class="mb">
+When drafting scientific papers, remember that many journals provide templates in either **Microsoft Word** or `LaTeX` formats; the latter can be conveniently edited using **Overleaf**. <base class="mb">
+Additionally, **Google Docs**, with its `Paperpile` plugin, offers a seamless experience for collaborative writing by simplifying the online search and management of citations.
 </div>
 
 
@@ -137,11 +128,8 @@ Reference managers, such as the popular and free-to-use <a href="https://www.zot
 |<a href="https://endnote.com/" target="_blank">EndNote</a> | EndNote is a `widely-used commercial option`, known for its comprehensive features and integration with various word processors and comprehensive reference management capabilities. Paired with its ability to search international databases and retrieve full-text articles, it offers robust organization, synchronization across devices, and versatile formatting options. | Microsoft Word, Apple Pages, OpenOffice |
 |<a href="https://www.paperpile.com/" target="_blank">Paperpile</a> | Paperpile shines with its deep integration into Google Workspace, especially Google Docs. Its straightforward and modern interface makes reference management, PDF annotations, and online citation search streamlined, catering specifically to the needs of collaborative researchers in the digital age. | `Google Docs`, Microsoft Word (via plugin) |
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
+<div class="warning" markdown="1">
 It's worth noting that while some integrations come built-in, others might require separate plugins or extensions to function properly. Always refer to the official documentation for specific integration details.
-</span>
 </div>
 
 

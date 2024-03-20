@@ -33,11 +33,8 @@ Collaboration and communication are fundamental elements in research projects. E
 
 
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">A tale of collaboration:</span>
-<br><span style="font-style:italic;">
-In the bustling corridors of a research institution during open days, Dr. Mira, a marine biologist, unexpectedly bumped into Dr. Patel, an AI specialist. Over a casual coffee conversation, they discovered a mutual interest: understanding whale communication. Mira provided recordings of mysterious whale songs, while Patel used machine learning to decode their patterns. Together, they unveiled a complex language system, paving the way for groundbreaking research into interspecies communication. Their serendipitous collaboration demonstrated the profound potential of merging two seemingly unrelated fields.
-</span>
+<div class="example italic before" markdown="1" data-before="A tale of collaboration:">
+In the bustling corridors of a research institution during open days, Dr. Mira, a marine biologist, unexpectedly bumped into Dr. Patel, an AI specialist. Over a casual coffee conversation, they discovered a mutual interest: understanding whale communication. Mira provided recordings of mysterious whale songs, while Patel used machine learning to decode their patterns. Together, they unveiled a complex language system, paving the way for groundbreaking research into interspecies communication. Their serendipitous **collaboration demonstrated the profound potential of merging two seemingly unrelated fields**.
 </div>
 
 ---
@@ -45,11 +42,8 @@ In the bustling corridors of a research institution during open days, Dr. Mira, 
 
 Without clear communication, even the most promising research endeavors can falter, leading to misinterpretations, errors, or missed opportunities. Effective communication in research facilitates the seamless integration of diverse expertise and ensures mutual understanding among team members.
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">Voices in the lab:</span>
-<br><span style="font-style:italic;">
-In the heart of a crowded research lab, Dr. Adams had an epiphany that could change the trajectory of their study. However, without clear communication, his breakthrough became a mere whisper, lost in the cacophony of parallel projects and ambitions. <b>When teams prioritize open dialogue, they weave together individual insights into a cohesive tapestry, turning potential roadblocks into stepping stones</b>; but in its absence, the threads of innovation and progress can easily unravel.
-</span>
+<div class="example italic before" markdown="1" data-before="Voices in the lab:">
+In the heart of a crowded research lab, Dr. Adams had an epiphany that could change the trajectory of their study. However, without clear communication, his breakthrough became a mere whisper, lost in the cacophony of parallel projects and ambitions. **When teams prioritize open dialogue, they weave together individual insights into a cohesive tapestry, turning potential roadblocks into stepping stones**; but in its absence, the threads of innovation and progress can easily unravel.
 </div>
 
 Effective communication supports:
@@ -70,11 +64,8 @@ Differences in opinion are natural in any collaborative endeavor. Open communica
 
 Implementing a well-structured communication plan can transform the landscape of your research project, making it more organized, easily navigable, and meticulously documented, thereby fostering an environment where innovation and collaboration thrive.
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Having a communication strategy, when implemented effectively, can foster a collaborative environment where ideas are shared freely, and every voice is heard, ensuring the research progresses smoothly and efficiently.
-</span>
+<div class="protip" markdown="1">
+Having a `communication strategy`, when implemented effectively, can foster a collaborative environment where ideas are shared freely, and every voice is heard, ensuring the research progresses smoothly and efficiently.
 </div>
 
 1. **Plan Regular Centralized Meetings** <br>
@@ -145,14 +136,12 @@ A combination of platforms like Slack, Zoom, GitHub and Microsoft Office 365 can
 
 The multifaceted benefits of collaboration in research projects unfold as diverse minds converge, creating a tapestry of ideas, expertise, and resources that is far richer and more nuanced than any single contributor could weave alone.
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">Channeling collective wisdom through collaboration</span>
-<br><span style="font-style:italic;">
-In the research landscape, imagine two neighboring islands. <br>
-On one, a team constantly communicates, bridging knowledge gaps and pooling collective wisdom. They thrive, turning hypotheses into discoveries. <br>
-On the adjacent island, communication is sporadic; misunderstandings are frequent, leading to redundant efforts and missed insights. <br>
-As time progresses, the first island flourishes with innovation, while the other laments lost opportunities. This landscape underscores the paramount importance of <b>collaboration in research - it speeds up progress and discoveries</b> instead of stagnant ideas and overlooked potentials.
-</span>
+<div class="example before" markdown="1" data-before="Channeling collective wisdom through collaboration">
+In the research landscape, imagine two neighboring islands.
+* On one, a team constantly communicates, bridging knowledge gaps and pooling collective wisdom. They thrive, turning hypotheses into discoveries.
+* On the adjacent island, communication is sporadic; misunderstandings are frequent, leading to redundant efforts and missed insights.
+
+As time progresses, the first island flourishes with innovation, while the other laments lost opportunities. This landscape underscores the paramount importance of **collaboration in research - it speeds up progress and discoveries** instead of stagnant ideas and overlooked potentials.
 </div>
 
 

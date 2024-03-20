@@ -191,10 +191,8 @@ the process of managing and maintaining a list of issues, often with regards to 
 
 Think of it as a mindset or approach where you prioritize flexibility and collaboration. Instead of doing all the planning at the beginning and then executing, Agile promotes iterative progress, where you develop a bit, then reassess, make changes, and develop some more.
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-style:italic;">
+<div class="protip" markdown="1">
 It's kind of like building a Lego castle; instead of having a fixed design from the start, you build a section, evaluate, adjust your plans if needed, and continue building.
-</span>
 </div>
 
 <span style="color: #518cc2; font-weight:bold">Epics</span> -
@@ -318,10 +316,8 @@ Digital asset sharing platforms are sophisticated systems designed to **store, o
 
 For modern research teams, efficient management and sharing of these digital assets are paramount, ensuring that essential data, findings, and tools are readily available for collective use, fostering transparency, and accelerating the research process.
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">
-Always ensure that the method and tool you select for sharing or transferring digital assets align with the type and size of the data in question. <b>As a general rule, avoid sending assets via email or through public transfer websites.</b> It's essential to utilize secure transfer channels that have been approved or recommended by your institution.</span>
+<div class="warning" markdown="1">
+Always ensure that the method and tool you select for sharing or transferring digital assets align with the type and size of the data in question. **As a general rule, avoid sending assets via email or through public transfer websites.** It's essential to utilize secure transfer channels that have been approved or recommended by your institution.
 <table>
 <tr><th>Content</th><th style="background-color:darkred; color: mistyrose;">Bad Practice</th><th style="background-color:#0ba37f; color: #e6f0f0; ">Good Practice</th></tr>
 <tr><td>Sensitive Content</td><td>Sending via regular email attachments.</td><td>Using encrypted platforms or institution-approved secured cloud storage with password protection.</td></tr>
@@ -330,7 +326,7 @@ Always ensure that the method and tool you select for sharing or transferring di
 <tr><td>Collaborative Documents</td><td>Sending different versions as email attachments leading to version confusion.</td><td>Using platforms like Microsoft 365 or Google Workspace where real-time collaboration and version control are integrated.</td></tr>
 <tr><td>Institution-specific Information</td><td>Sharing on public forums or non-secured platforms.</td><td>Using institution-specific intranets or secured platforms, ensuring only authorized individuals have access.</td></tr>
 </table>
-<b>Always prioritize security and adhere to best practices for data management and sharing.</b>
+**Always prioritize security and adhere to best practices for data management and sharing.**
 </div>
 
 ## *Principles of Secure Data Sharing*
@@ -382,11 +378,8 @@ Platforms like Google Drive, Dropbox, and OneDrive not only **provide storage bu
 
 ^ *Free and open-source options include: Dataverse, GitHub.*
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+<div class="protip" markdown="1">
 Your research institution may offer subscription plans for various tools, including Globus, Microsoft 365, GitHub for organizations, and Bitbucket. It's worth checking as registering with your work email could grant you access to these tools at no additional cost.
-</span>
 </div>
 
 ## Code developments

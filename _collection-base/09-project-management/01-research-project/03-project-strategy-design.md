@@ -30,16 +30,14 @@ The **strategic planning and thoughtful design** of research projects are crucia
 
 * For example, a well-designed strategy helps in **effectively allocating resources** and **choosing the right methodologies**, as seen in the <a href="https://www.genome.gov/about-nhgri/strategic-plan/overview" target="_blank">Human Genome Project</a>, where meticulous planning enabled groundbreaking genetic insights.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; margin-left: 35px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">The Human Genome Project (<a href="https://www.genome.gov/about-genomics/educational-resources/fact-sheets/human-genome-project" target="_blank">HGP</a>) is a prime example of the importance of strategic planning, design, and risk management in research projects. Launched in 1990, the HGP was a landmark global scientific effort that generated the first sequence of the human genome, completed in 2003, two years ahead of its projected completion date. This success was due to meticulous strategic planning and collaborative efforts, involving researchers from 20 universities and research centers across various countries. </span>
+<div class="note level-1" markdown="1">
+The Human Genome Project (<a href="https://www.genome.gov/about-genomics/educational-resources/fact-sheets/human-genome-project" target="_blank">HGP</a>) is a prime example of the importance of strategic planning, design, and risk management in research projects. Launched in 1990, the HGP was a landmark global scientific effort that generated the first sequence of the human genome, completed in 2003, two years ahead of its projected completion date. This success was due to meticulous strategic planning and collaborative efforts, involving researchers from 20 universities and research centers across various countries.
 </div>
 
 * Similarly, **risk management** is essential for anticipating and mitigating potential setbacks, such as funding issues or technological challenges, **ensuring project continuity and success**, as demonstrated in long-term environmental studies where contingency plans for data collection are critical in the face of unpredictable weather patterns.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; margin-left: 35px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">It is widely recognized in (<a href="https://www.bing.com/search?pc=OA1&q=long%20term%20environmental%20studies%20risk%20management%20contingency%20planning%20weather%20patterns" target="_blank">environmental research</a>)  that contingency planning is a critical aspect of project management. This is particularly pertinent in studies involving fieldwork, where variables such as weather can significantly impact data collection. The necessity of having flexible, adaptive plans in place allows researchers to mitigate risks associated with unforeseen environmental changes, ensuring the continuity and integrity of the research despite external challenges. </span>
+<div class="note level-1" markdown="1">
+It is widely recognized in (<a href="https://www.bing.com/search?pc=OA1&q=long%20term%20environmental%20studies%20risk%20management%20contingency%20planning%20weather%20patterns" target="_blank">environmental research</a>)  that contingency planning is a critical aspect of project management. This is particularly pertinent in studies involving fieldwork, where variables such as weather can significantly impact data collection. The necessity of having flexible, adaptive plans in place allows researchers to mitigate risks associated with unforeseen environmental changes, ensuring the continuity and integrity of the research despite external challenges.
 </div>
 
 * Other examples of large and successful research endeavors that highlight the importance of strategy, design, and risk management include NASA's Mars Rover Missions and CERN's Large Hadron Collider. The <a href="https://mars.nasa.gov/mars-exploration/missions/" target="_blank">Mars Rover missions</a>, like <a href="https://mars.nasa.gov/mars-exploration/missions/mars-science-laboratory" target="_blank">Curiosity</a> and <a href="https://mars.nasa.gov/mars-exploration/missions/mars2020/" target="_blank">Perseverance</a>, required extensive strategic planning and risk assessment for successful deployment and operation on Mars. Similarly, the <a href="https://home.cern/science/accelerators/large-hadron-collider" target="_blank">Large Hadron Collider's construction</a> and experiments demanded rigorous design and risk management due to its complexity and potential safety issues, leading to significant discoveries in particle physics.
@@ -47,25 +45,24 @@ The **strategic planning and thoughtful design** of research projects are crucia
 
 <span style="color: #ff3870;font-weight: 500; font-size: 22px;"> Strategy for Small-Scale Projects Matters </span>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">Strategy, design and risk management principles are not just applicable to large-scale endeavors like the HGP but are equally important in single-project level research, ensuring efficient use of resources, timely completion, and high-quality outcomes​. </span>
+<div class="protip" markdown="1">
+Strategy, design and risk management principles are not just applicable to large-scale endeavors like the HGP but are equally important in single-project level research, ensuring efficient use of resources, timely completion, and high-quality outcomes​.
 </div>
 
 **In small-scale research projects, strategic planning is just as crucial as in larger endeavors.** Implementing a tailored project strategy and design can be the key to unlocking significant discoveries, even with limited resources.
 * For instance, in a bioinformatics project focused on genome analysis, a well-devised strategy can streamline data processing, enhance accuracy, and lead to more meaningful results. This approach not only maximizes efficiency but also fosters confidence among team members, encouraging innovation and exploration in the field of biological research.
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;  margin-left: 35px;">
-<span style="font-style:italic;">Without strategic planning and risk management, a bioinformatics project focused on gene sequencing could face misallocation of computational resources, leading to inefficient data processing and potential misinterpretation of genetic information, thus compromising the project's scientific validity.</span>
+<div class="warning level-1" markdown="1">
+Without strategic planning and risk management, a bioinformatics project focused on gene sequencing could face misallocation of computational resources, leading to inefficient data processing and potential misinterpretation of genetic information, thus compromising the project's scientific validity.
 </div>
 
 * Consider another scenario where a small research team uses drone-based photogrammetry to assess crop health and yield. A well-planned strategy would involve selecting appropriate drone technology, defining precise flight paths, and establishing efficient data analysis protocols. This focused approach can lead to accurate crop health monitoring, enabling farmers to optimize agricultural practices.
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;  margin-left: 35px;">
-<span style="font-style:italic;">In the absence of a well-defined strategy and risk assessment, a photogrammetry project for crop analysis might suffer from inadequate data collection due to poorly planned drone flight paths, resulting in inaccurate crop health assessments and potentially leading to misguided agricultural decisions.</span>
+<div class="warning level-1" markdown="1">
+<span style="font-style:italic;">In the absence of a well-defined strategy and risk assessment, a photogrammetry project for crop analysis might suffer from inadequate data collection due to poorly planned drone flight paths, resulting in inaccurate crop health assessments and potentially leading to misguided agricultural decisions.
 </div>
 
-<br>
+
 ---
 
 # Project Strategy
@@ -99,24 +96,24 @@ Defining goals and objectives in a research project is like setting the destinat
 
 The journey of a research project often starts with broad goals that refine and adapt over time, as seen in examples below. Various factors, such as new discoveries, data availability, or funding changes, can significantly alter initial objectives. These scenarios demonstrate the fluid nature of research, where goals must be flexible and open to revision. This adaptability ensures that research stays relevant and feasible, navigating through the dynamic landscape of scientific inquiry. Periodic reassessments of goals are key to this process, allowing for the realignment of objectives with current circumstances and resources.
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-style:italic;">Imagine you're a biologist aiming to study the effects of a new compound on cell growth. Your initial goal might be as broad as understanding the compound's impact, but as you delve deeper, you realize <b>a more specific objective</b>: determine the compound's effect on cancer cell proliferation under controlled laboratory conditions.</span>
+<div class="example italic mb-0" markdown="1">
+Imagine you're a biologist aiming to study the effects of a new compound on cell growth. Your initial goal might be as broad as understanding the compound's impact, but as you delve deeper, you realize **a more specific objective**: determine the compound's effect on cancer cell proliferation under controlled laboratory conditions.
 </div>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-style:italic;">As a bioinformatician, your initial goal was to analyze genetic data for disease mechanisms, but upon discovering <b>similar research was recently published, you quickly adapt</b>. You refocus on a more specific aspect of your data, such as the impact of genetic variations on treatment efficacy for the same disease.</span>
+<div class="example italic mb-0" markdown="1">
+As a bioinformatician, your initial goal was to analyze genetic data for disease mechanisms, but upon discovering **similar research was recently published, you quickly adapt**. You refocus on a more specific aspect of your data, such as the impact of genetic variations on treatment efficacy for the same disease.
 </div>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-style:italic;">While analyzing aggregation properties in protein structures, your research resulted in <b>unexpected findings</b>. You discovered a unique folding pattern in a subset of proteins linked to neurodegenerative diseases. This revelation prompted a shift in your project's focus, now aiming to deeply understand this peculiar behavior and its implications for disease mechanisms.</span>
+<div class="example italic mb-0" markdown="1">
+While analyzing aggregation properties in protein structures, your research resulted in **unexpected findings**. You discovered a unique folding pattern in a subset of proteins linked to neurodegenerative diseases. This revelation prompted a shift in your project's focus, now aiming to deeply understand this peculiar behavior and its implications for disease mechanisms.
 </div>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-style:italic;">In your photogrammetry project on crop yields, you initially planned to investigate a range of factors. However, due to <b>data availability issues</b> for several factors, you streamlined your focus to specifically analyze the impact of different irrigation methods on crop yields.</span>
+<div class="example italic mb-0" markdown="1">
+In your photogrammetry project on crop yields, you initially planned to investigate a range of factors. However, due to **data availability issues** for several factors, you streamlined your focus to specifically analyze the impact of different irrigation methods on crop yields.
 </div>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-style:italic;">Originally, your project aimed to explore a broad range of new materials. However, due to <b>adjustments in funding</b>, your focus shifted to a more specific, budget-friendly goal: developing a new conductive material optimized for solar cell technology.</span>
+<div class="example italic" markdown="1">
+Originally, your project aimed to explore a broad range of new materials. However, due to **adjustments in funding**, your focus shifted to a more specific, budget-friendly goal: developing a new conductive material optimized for solar cell technology.
 </div>
 
 Here are some factors leading to a change in the initial project goal:
@@ -178,9 +175,8 @@ In the world of small-scale research projects, risk management is like navigatin
 <td width=500 style="border: transparent;"><img width="800" src="{{ images_path }}/01-project_risks.png"></td>
 </tr></table>
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;"> In smaller projects, this process is crucial yet often more agile than in larger endeavors. You might not have a massive team or a hefty budget, but that doesn't mean risks are any less significant – in fact, they can be more impactful due to limited resources.</span>
+<div class="warning" markdown="1">
+In smaller projects, this process is crucial yet often more agile than in larger endeavors. You might not have a massive team or a hefty budget, but that doesn't mean risks are any less significant – in fact, they can be more impactful due to limited resources.
 </div>
 
 **Effective risk management in often involves being creative, adaptable, and proactive.** It's about making smart choices with the resources you have, learning from each step, and keeping your project on track despite the uncertainties that research naturally brings.  It's all about balancing foresight with flexibility, planning with adaptability, and, most importantly, **turning potential problems into stepping stones for success**.
@@ -356,40 +352,34 @@ Diving into the tales of failed projects isn't just about understanding mishaps;
 
 Exploring failed projects in real-life due to poor risk management can provide valuable insights and learning opportunities. These case studies were found in project management textbooks, academic journals, and online resources dedicated to project management and risk analysis.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">Challenger Space Shuttle Disaster</span>
-<br><span style="font-style:italic;">The Challenger disaster is a tragic example where ignoring potential risks had catastrophic consequences. The decision to launch despite concerns about the O-ring's performance in cold weather is a case study in the critical importance of heeding risk indicators in project decisions.</span><br>
+<div class="example before mb-0" markdown="1" data-before="Challenger Space Shuttle Disaster">
+<em>The Challenger disaster is a tragic example where ignoring potential risks had catastrophic consequences. The decision to launch despite concerns about the O-ring's performance in cold weather is a case study in the critical importance of heeding risk indicators in project decisions.</em><br>
 [<a href="https://en.wikipedia.org/wiki/Space_Shuttle_Challenger_disaster" target="_blank">source: wikipedia  ⤴</a>]
 </div>
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">Mars Climate Orbiter</span>
-<br><span style="font-style:italic;">NASA's Mars Climate Orbiter was lost due to a simple unit conversion error (metric vs imperial units). This incident underlines the importance of clear communication and rigorous verification processes in risk management.</span><br>
+<div class="example before mb-0" markdown="1" data-before="Mars Climate Orbiter">
+<em>NASA's Mars Climate Orbiter was lost due to a simple unit conversion error (metric vs imperial units). This incident underlines the importance of clear communication and rigorous verification processes in risk management.</em><br>
 [<a href="https://science.nasa.gov/mission/mars-climate-orbiter/" target="_blank">source: NASA  ⤴</a>]
 </div>
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">Psychological Research Ethics Issues</span>
-<br><span style="font-style:italic;">There have been instances where psychological studies were halted or faced severe criticism due to ethical concerns. A notable example is the "Facebook Emotional Contagion Study", where researchers manipulated the news feed content of almost 700,000 Facebook users to study emotional responses. The study faced backlash for not obtaining informed consent, highlighting risks associated with ethical approval and participant consent in research.</span> <br>
+<div class="example before mb-0" markdown="1" data-before="Psychological Research Ethics Issues">
+<em>There have been instances where psychological studies were halted or faced severe criticism due to ethical concerns. A notable example is the "Facebook Emotional Contagion Study", where researchers manipulated the news feed content of almost 700,000 Facebook users to study emotional responses. The study faced backlash for not obtaining informed consent, highlighting risks associated with ethical approval and participant consent in research.</em> <br>
 [<a href="https://www.linkedin.com/pulse/research-ethics-2014-facebook-emotion-study-elizabeth-tay" target="_blank">source: LinkedIn  ⤴</a> ,
 <a href="https://www.theguardian.com/technology/2014/jun/30/facebook-emotion-study-breached-ethical-guidelines-researchers-say" target="_blank">The Guardian  ⤴</a> ,
 <a href="https://pubmed.ncbi.nlm.nih.gov/25740760/" target="_blank">J Bioeth Inq. 2015; 12(2):179-82  ⤴</a>]
 </div>
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">Denver International Airport’s Automated Baggage System</span>
-<br><span style="font-style:italic;">Originally intended to be the most advanced airport baggage handling system, the project failed spectacularly due to over-ambitious technology goals and poor risk management. This case study is often cited for its lessons on the importance of realistic planning and rigorous testing.</span> <br>
+<div class="example before mb-0" markdown="1" data-before="Denver International Airport’s Automated Baggage System">
+<em>Originally intended to be the most advanced airport baggage handling system, the project failed spectacularly due to over-ambitious technology goals and poor risk management. This case study is often cited for its lessons on the importance of realistic planning and rigorous testing.</em> <br>
 [<a href="https://www.pmi.org/learning/library/case-based-project-management-education-7714" target="_blank">source: Project Management Institute  ⤴</a>]
 </div>
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">FBI's Virtual Case File (VCF) System</span>
-<br><span style="font-style:italic;">The FBI's VCF system was a digital case management project that was abandoned after years of development and nearly $100 million spent. The failure was attributed to numerous changes in project scope and lack of a clear risk management strategy.</span><br>
+<div class="example before" markdown="1" data-before="FBI's Virtual Case File (VCF) System">
+<em>The FBI's VCF system was a digital case management project that was abandoned after years of development and nearly $100 million spent. The failure was attributed to numerous changes in project scope and lack of a clear risk management strategy.</em> <br>
 [<a href="https://scholarworks.lib.csusb.edu/cgi/viewcontent.cgi?referer=&httpsredir=1&article=1132&context=ciima" target="_blank">source: International Information Management Association  ⤴</a>]
 </div>
 
 
-<br>
 ---
 
 # Hands-on Case Study: Project Strategy and Risk Management
@@ -452,11 +442,10 @@ Develop a predictive model for chemotherapy effectiveness based on patients' gen
 </table>
 </details>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; margin-top: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">1. Filling in all relevant sections of your project strategy plan offers a holistic view of your project, ensuring that every critical aspect is considered and addressed. <br>
-2. Remember, this plan is subjective and flexible; don't hesitate to add more sections tailored to the unique needs of your project. <br>
-3. Having a well-thought-out strategy plan can be especially beneficial when writing grant proposals, as it demonstrates a clear well-organized vision of your project.</span>
+<div class="protip" markdown="1">
+1. Filling in all relevant sections of your project strategy plan offers a holistic view of your project, ensuring that every critical aspect is considered and addressed.
+2. Remember, this plan is subjective and flexible; don't hesitate to add more sections tailored to the unique needs of your project.
+3. Having a well-thought-out strategy plan can be especially beneficial when writing grant proposals, as it demonstrates a clear well-organized vision of your project.
 </div>
 
 
@@ -501,11 +490,10 @@ Develop a predictive model for chemotherapy effectiveness based on patients' gen
 |-|-|-|
 ||The initiation of a new collaboration with pharmacogenomics experts led to a `significant shift in our research focus`. Guided by their specialized knowledge, we honed in on exploring the interaction between genetic markers and specific chemotherapeutic agents, aiming to develop more targeted treatment protocols.||
 
-<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px;">
-<span style="color: #ff3870; font-weight: 400; font-size: 22px;">Excercise</span>
-<br><span style="font-style:italic;">Time to put on your project manager hat! <br>
-<b>Your task:</b> Tweak the background story and project strategy to reflect these new dimensions discussed in "Aligning Project with Research Agenda" steps. <br>
-<b>PRO TIP:</b> Think about new research findings, the latest tech in bioinformatics, or fresh insights from new project collaborations. Flex your creative muscles and reshape the strategy to reflect these changes! </span>
+<div class="exercise" markdown="1">
+<em>Time to put on your project manager hat!<em> <base class="mb">
+**Your task:** Tweak the background story and project strategy to reflect these new dimensions discussed in ["Aligning Project with Research Agenda"](#aligning-project-with-research-agenda) steps. <br>
+**PRO TIP:** Think about new research findings, the latest tech in bioinformatics, or fresh insights from new project collaborations. Flex your creative muscles and reshape the strategy to reflect these changes!
 </div>
 
 ## 4. Risk Management
@@ -570,15 +558,14 @@ Develop a predictive model for chemotherapy effectiveness based on patients' gen
 </table>
 </details>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">1. Note that the additional "Notes" column in your strategy plan and risks checklist can be particularly useful for adding comments and observations over time. <br>2. I suggest maintaining both documents in an electronic format, such as a Word document or Excel spreadsheet. This approach enables seamless updates and documentation of changes, making it easier to track the evolution of your strategy and risk management efforts throughout the project's lifecycle.</span>
+<div class="protip" markdown="1">
+1. Note that the additional **"Notes"** column in your `strategy plan` and `risks checklist` can be particularly useful for adding comments and observations over time.
+2. I suggest maintaining both documents in an electronic format, such as a Word document or Excel spreadsheet. *This approach enables seamless updates and documentation of changes, making it easier to track the evolution of your strategy and risk management efforts throughout the project's lifecycle.*
 </div>
 
-<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px;">
-<span style="color: #ff3870; font-weight: 400; font-size: 22px;">Excercise</span>
-<br><span style="font-style:italic;">Now, your mission is to brainstorm and propose additional potential risks that our bioinformatics project might face – ones that weren’t listed in the template checklist. <b> This exercise will sharpen your risk identification skills!</b><br>
-<b>PRO TIP: </b>Think outside the box: what other challenges could pop up? Consider everything from sudden changes in research regulations to unexpected shifts in technological trends, or even collaboration hiccups. Jot down these new risks and ponder how they might impact the project.  </span>
+<div class="exercise" markdown="1">
+Now, your mission is to brainstorm and propose additional potential risks that our bioinformatics project might face – ones that weren’t listed in the template checklist. ***This exercise will sharpen your risk identification skills!*** <base class="mb">
+**PRO TIP:** Think outside the box: *what other challenges could pop up?* <br> Consider everything from sudden changes in research regulations to unexpected shifts in technological trends, or even collaboration hiccups. Jot down these new risks and ponder how they might impact the project.
 </div>
 
 
@@ -608,9 +595,8 @@ Develop a predictive model for chemotherapy effectiveness based on patients' gen
 
 **2. Hands-On Quantitative Assessment of Project Delays Due to Technological Challenges**
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">Gantt Chart</span>
-<br><span style="font-style:italic;">A Gantt chart is a visual project management tool that outlines a project schedule, depicting the start and end dates of various elements of a project, such as tasks, milestones, and dependencies, in a clear, horizontal bar chart format.</span>
+<div class="note" markdown="1">
+A Gantt chart is a visual project management tool that outlines a project schedule, depicting the start and end dates of various elements of a project, such as tasks, milestones, and dependencies, in a clear, horizontal bar chart format.
 </div>
 
 * **Gantt Chart Analysis**
@@ -626,23 +612,22 @@ Develop a predictive model for chemotherapy effectiveness based on patients' gen
 *-The time frame for the major data analysis phase.* <br>
 *-An indication of the potential delay due to software malfunction, along with its probability.*
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">Since Gantt charts typically don't include probabilities directly, I will represent the potential delay as a separate, conditional phase in the project timeline, highlighting its uncertain nature.</span>
+<div class="warning" markdown="1">
+Since Gantt charts typically don't include probabilities directly, I will represent the potential delay as a separate, conditional phase in the project timeline, highlighting its uncertain nature.
 </div>
 
 ![Gantt Chart]({{ images_path }}/01-project_gantt_chart.png)
 
 *The Gantt chart shows that implementing a new bioinformatics tool is scheduled concurrently with a major data analysis phase. The risk of software malfunction could lead to a two-month delay in project milestones.*
 
-<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px;">
-<span style="color: #ff3870; font-weight: 400; font-size: 22px;">Excercise</span>
-<br><span style="font-style:italic;">Take a close look at the Gantt chart we've developed, focusing on the overlap between the implementation of the new bioinformatics tool and the major data analysis phase. Your task is to interpret this chart and assess the severity of the risk. Based on your assessment, propose solutions to either mitigate this risk or adjust the project timeline. <b>This exercise will help you enhance your skills in risk analysis and strategic planning.</b><br>
-<b>PRO TIP: </b>Consider factors like the duration of overlap and the dependencies of subsequent tasks. Think creatively about backup plans, resource reallocation, or alternative methodologies that could safeguard the project against potential delays. </span>
+<div class="exercise" markdown="1">
+Take a close look at the Gantt chart we've developed, focusing on the overlap between the implementation of the new bioinformatics tool and the major data analysis phase. <base class="mb">
+**Your task** is to interpret this chart and assess the severity of the risk. Based on your assessment, propose solutions to either mitigate this risk or adjust the project timeline. ***This exercise will help you enhance your skills in risk analysis and strategic planning.*** <base class="mb">
+**PRO TIP:** Consider factors like the duration of overlap and the dependencies of subsequent tasks. Think creatively about backup plans, resource reallocation, or alternative methodologies that could safeguard the project against potential delays.
 
-<details><summary>solution</summary>
+<details markdown="1"><summary>solution</summary>
 
-- Having both risks – software malfunction and the implementation of a new tool – overlapping with the major data analysis phase elevates the seriousness of this risk in our assessment. This scenario necessitates prioritizing the mitigation strategy for these risks to prevent significant project delays. <br>
+- Having both risks (*i.e.,* software malfunction and the implementation of a new tool) overlapping with the major data analysis phase elevates the seriousness of this risk in our assessment. This scenario necessitates prioritizing the mitigation strategy for these risks to prevent significant project delays. <br>
 - Alternatively, if mitigating the risk isn't feasible, it may be necessary to reassess and set a new, more realistic deadline for this phase of the project to accommodate potential setbacks. <br>
 </details>
 </div>
@@ -675,20 +660,20 @@ Develop a predictive model for chemotherapy effectiveness based on patients' gen
 
 *Tackling unforeseen obstacles in real-time is key, and it's important to acknowledge and be proud of the many risks you've already mitigated through your strategic planning and contingency solutions.*
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">Even the best plans can encounter unexpected challenges. If something major arises that wasn't predicted as a risk, remember that it's a natural part of project management.</span>
+<div class="warning" markdown="1">
+Even the best plans can encounter unexpected challenges. If something major arises that wasn't predicted as a risk, remember that it's a natural part of project management.
 </div>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">Each unexpected challenge is a learning opportunity, and the insights gained from these experiences become the bedrock of success in your future projects. Embrace these moments as valuable steps in your journey towards mastery in project management.</span>
+<div class="protip" markdown="1">
+Each unexpected challenge is a learning opportunity, and the insights gained from these experiences become the bedrock of success in your future projects. Embrace these moments as valuable steps in your journey towards mastery in project management.
 </div>
 
-<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px;">
-<span style="color: #ff3870; font-weight: 400; font-size: 22px;">Excercise</span>
-<br><span style="font-style:italic;">Recall that inventive list of potential risks you identified for our bioinformatics project? Your next challenge is to come up with robust mitigation and contingency strategies for each of those risks. <b>Try your problem-solving skills!</b><br>
-<b>PRO TIP: </b>Think about how you can prevent these scenarios from turning into disasters. Ask yourself: What steps can be taken now to reduce the likelihood or impact of these risks? And for those "just in case" moments, what are your backup plans?  </span>
+<div class="exercise" markdown="1">
+Recall that inventive list of potential risks you identified for our bioinformatics project? <br>
+**Your next challenge** is to come up with robust mitigation and contingency strategies for each of those risks. <br> ***Try your problem-solving skills!*** <base class="mb">
+**PRO TIP:** Think about how you can prevent these scenarios from turning into disasters. ***Ask yourself:***
+* *What steps can be taken now to reduce the likelihood or impact of these risks?*
+* *And for those "just in case" moments, what are your backup plans?*
 </div>
 
 
@@ -768,27 +753,27 @@ Status: All protocols meet the current legal and ethical guidelines.
 
 *These examples provide insightful reflections on the project's challenges and successes, offering valuable guidelines for improving practices and decision-making in future research projects.*
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">Importance of Data Security and Compliance</span><br>
-<br><b>Lesson Learned: </b><span style="font-style:italic;">Rigorous data privacy protocols are essential when handling sensitive genomic data. This project highlighted the importance of establishing strong data encryption and access control measures from the outset.</span><br>
-<br><b>Application for Future Projects: </b><span style="font-style:italic;">In future projects, allocate sufficient resources and time for setting up comprehensive data security measures, and consider involving a data security specialist during the planning phase.</span>
+<div class="example before mb-0" markdown="1" data-before="Importance of Data Security and Compliance">
+**Lesson Learned:** *Rigorous data privacy protocols are essential when handling sensitive genomic data. This project highlighted the importance of establishing strong data encryption and access control measures from the outset.* <base class="mb">
+**Application for Future Projects:** *In future projects, allocate sufficient resources and time for setting up comprehensive data security measures, and consider involving a data security specialist during the planning phase.*
 </div>
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">Effective Collaboration with External Experts</span><br>
-<br><b>Lesson Learned: </b><span style="font-style:italic;">Collaborating with pharmacogenomics experts and bioethicists significantly enhanced the project's scope and quality. However, coordinating schedules and aligning objectives required more effort than anticipated.</span><br>
-<br><b>Application for Future Projects: </b><span style="font-style:italic;">Future projects should include a detailed collaboration plan with clear communication channels, defined roles, and regular update meetings. Building in extra time for collaboration-related activities is also advisable.</span>
+<div class="example before mb-0" markdown="1" data-before="Effective Collaboration with External Experts">
+**Lesson Learned:** *Collaborating with pharmacogenomics experts and bioethicists significantly enhanced the project's scope and quality. However, coordinating schedules and aligning objectives required more effort than anticipated.* <base class="mb">
+**Application for Future Projects:** *Future projects should include a detailed collaboration plan with clear communication channels, defined roles, and regular update meetings. Building in extra time for collaboration-related activities is also advisable.*
 </div>
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">Adaptability in Research Methodology</span><br>
-<br><b>Lesson Learned: </b><span style="font-style:italic;">The project's shift to focus on a specific subset of breast cancer types due to new findings and expert advice proved valuable. It emphasized the need for adaptability in research objectives and methodologies.</span><br>
-<br><b>Application for Future Projects: </b><span style="font-style:italic;">Remain flexible and open to changing research directions based on emerging data and expert consultations. Regularly scheduled reviews should include reassessments of the project's direction and methodology.</span>
+<div class="example before" markdown="1" data-before="Adaptability in Research Methodolog">
+**Lesson Learned:** *The project's shift to focus on a specific subset of breast cancer types due to new findings and expert advice proved valuable. It emphasized the need for adaptability in research objectives and methodologies.* <base class="mb">
+**Application for Future Projects:** *Remain flexible and open to changing research directions based on emerging data and expert consultations. Regularly scheduled reviews should include reassessments of the project's direction and methodology.*
 </div>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">1. The best approach to collecting and organizing lessons learned for easy retrieval and searchability is to maintain a structured digital document, such as a spreadsheet or a database, where each entry follows a consistent format. <br><br>2. Include fields such as "Project Name", "Date", "Lesson Learned", "Impact", and "Keywords". This structure allows you to categorize and search lessons by specific themes or keywords. For instance, an entry might have a keyword like "data security" or "collaboration". <br><br>* Regularly updating this document and reviewing it at the start of each new project can provide invaluable insights. By maintaining this disciplined approach, you create a personalized and evolving knowledge base.</span>
+<div class="protip" markdown="1">
+1. The best approach to collecting and organizing lessons learned for easy retrieval and searchability is to maintain a structured digital document, such as a spreadsheet or a database, where each entry follows a consistent format.
+2. Include fields such as `Project Name`, `Date`, `Lesson Learned`, `Impact`, and `Keywords`. <br>
+This structure allows you to categorize and search lessons by specific themes or keywords. <br> For instance, an entry might have a keyword like "data security" or "collaboration".
+<base class="mt">
+Regularly updating this document and reviewing it at the start of each new project can provide invaluable insights. By maintaining this disciplined approach, you create a personalized and evolving knowledge base.
 </div>
 
 ### 5.2 Adaptability
@@ -821,25 +806,24 @@ The incident led to a review of hardware dependencies, resulting in an investmen
 
 *These examples demonstrate how the project team's ability to adapt to new solutions and unforeseen circumstances helped in effectively managing risks, ensuring the project's continuity and success.*
 
-<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px;">
-<span style="color: #ff3870; font-weight: 400; font-size: 22px;">Excercise</span>
-<br><span style="font-style:italic;">Here are three example risks for the bioinformatics project that serve as an exercise for you to come up with "Adaptability in Action" responses. These scenarios are designed to encourage critical thinking and strategic adaptability in response to evolving challenges within the project.</span><br><br>
-<b>1. RISK: Delay in Data Acquisition</b><br>
-- <b>Adaptability Challenge:</b> What would be your adaptive response if your data providers face delays due to a new international data regulation?
+<div class="exercise" markdown="1">
+Here are three example risks for the bioinformatics project that serve as an exercise for you to come up with `Adaptability in Action` responses. These scenarios are designed to encourage critical thinking and strategic adaptability in response to evolving challenges within the project. <base class="mb">
+**1. RISK: Delay in Data Acquisition** <br>
+* **Adaptability Challenge:** *What would be your adaptive response if your data providers face delays due to a new international data regulation?*
 <details><summary>solution</summary>
 
 Establish agreements with multiple data providers to ensure timely data acquisition.
 </details>
 <br>
-<b>2. RISK: Inadequate Funding Mid-Project</b><br>
-- <b>Adaptability Challenge:</b> How would you adapt if the reserve fund is depleted and additional funding sources become unavailable due to an economic downturn?
+**2. RISK: Inadequate Funding Mid-Project** <br>
+* **Adaptability Challenge:** *How would you adapt if the reserve fund is depleted and additional funding sources become unavailable due to an economic downturn?*
 <details><summary>solution</summary>
 
 Diversify funding sources and maintain a reserve fund.
 </details>
 <br>
-<b>3. RISK: Unforeseen Technological Obsolescence</b><br>
-- <b>Adaptability Challenge:</b> How would you handle this scenario, considering no initial strategy was in place for such a rapid technological change?
+**3. RISK: Unforeseen Technological Obsolescence** <br>
+* **Adaptability Challenge:** *How would you handle this scenario, considering no initial strategy was in place for such a rapid technological change?*
 <details><summary>solution</summary>
 
 - Quickly evaluate the new technology to understand its capabilities, benefits, and learning curve. Determine if and how it can enhance the project's outcomes.<br>
@@ -853,9 +837,8 @@ Diversify funding sources and maintain a reserve fund.
 
 **Ongoing communication with funders, institutional partners, and the scientific community**
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">Engaging actively with funders, institutional partners, and the broader scientific community offers significant benefits for your project adaptability. Ongoing communication fosters transparency, builds trust, and facilitates the exchange of ideas and feedback, which can lead to improved project outcomes and potential collaborations. Moreover, this engagement keeps funding bodies informed, enhancing the visibility and impact of your research within the scientific ecosystem and beyond.</span>
+<div class="protip" markdown="1">
+Engaging actively with funders, institutional partners, and the broader scientific community offers significant benefits for your project adaptability. Ongoing communication fosters transparency, builds trust, and facilitates the exchange of ideas and feedback, which can lead to improved project outcomes and potential collaborations. Moreover, this engagement keeps funding bodies informed, enhancing the visibility and impact of your research within the scientific ecosystem and beyond.
 </div>
 
 <br><span style="color: #ff3870;font-weight: 500;">As a final note...</span><br>

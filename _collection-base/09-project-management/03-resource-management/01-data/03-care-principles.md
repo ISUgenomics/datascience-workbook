@@ -26,14 +26,12 @@ tags: []
 The <a href="https://en.wikipedia.org/wiki/CARE_Principles_for_Indigenous_Data_Governance" target="_blank"><b>CARE Principles</b></a> for Indigenous Data Governance focus specifically on the ethical use and stewardship of data related to Indigenous peoples. These are guidelines that really highlight <b>how important data is for empowering Indigenous communities</b>, helping them maintain their sovereignty and self-determination.
 
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">The <b>CARE</b> Principles were developed to complement the {% include target_link href=931.2 %} (<b>F</b>indable, <b>A</b>ccessible, <b>I</b>nteroperable, and <b>R</b>eusable), which are all about making data easy to find, access, share, and use in the scientific world. FAIR is widely recognized in the scientific community for data management.</span>
+<div class="note" markdown="1">
+The **CARE** Principles were developed to complement the {% include target_link href=931.2 %} (**F**indable, **A**ccessible, **I**nteroperable, and **R**eusable), which are all about making data easy to find, access, share, and use in the scientific world. FAIR is widely recognized in the scientific community for data management.
 </div>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">In a nutshell, the CARE Principles are there to make sure that when it comes to data about Indigenous peoples, everything is done in a way that’s fair, respectful, and beneficial to them. It's all about promoting fairness and justice in data governance.</span>
+<div class="protip" markdown="1">
+In a nutshell, the CARE Principles are there to make sure that when it comes to data about Indigenous peoples, everything is done in a way that’s fair, respectful, and beneficial to them. It's all about promoting fairness and justice in data governance.
 </div>
 
 
@@ -90,19 +88,16 @@ When Indigenous communities are involved in the research process, the data colle
 Increasingly, funding agencies and regulatory bodies are emphasizing ethical data practices, including those outlined in the CARE Principles. Scientists may find that ***compliance with these principles is necessary for securing funding*** and for ethical clearance of their research projects.
 
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-When working on a project involving Indigenous communities' data, researchers should take several essential steps to ensure ethical and respectful engagement. These steps align with the CARE Principles and broader ethical research practices: <br><br>
-1. Establish partnerships and engagement. <br>
-2. Obtain informed consent from the community. <br>
-3. Understand and Respect Cultural Protocols. <br>
-4. Design the research in a way that it benefits the Indigenous community. <br>
-5. Recognize and respect the data sovereignty of the Indigenous community. <br>
-6. Work with the community to establish collaborative data management practices. <br>
-7. Keep the community informed throughout the research process. Share results with the community. <br>
-8. Aim to establish long-term relationships with the community beyond the lifespan of a single project. <br>
-9. Ensure the research project complies with institutional ethical requirements and any specific guidelines or policies related to research involving Indigenous communities. <br>
+<div class="protip" markdown="1">
+When working on a project involving Indigenous communities' data, researchers should take several essential steps to ensure ethical and respectful engagement. These steps align with the CARE Principles and broader ethical research practices:
+1. Establish partnerships and engagement.
+2. Obtain informed consent from the community.
+3. Understand and Respect Cultural Protocols.
+4. Design the research in a way that it benefits the Indigenous community.
+5. Recognize and respect the data sovereignty of the Indigenous community.
+6. Work with the community to establish collaborative data management practices.
+7. Keep the community informed throughout the research process. Share results with the community.
+8. Aim to establish long-term relationships with the community beyond the lifespan of a single project.
+9. Ensure the research project complies with institutional ethical requirements and any specific guidelines or policies related to research involving Indigenous communities.
 10. Be open to learning from the community and continuously reflect on your practices as a researcher.
-</span>
 </div>

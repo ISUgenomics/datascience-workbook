@@ -39,12 +39,9 @@ See {% include target_link href=933.5 %} tutorial as a good starting point.
 
 ## Version Control Systems
 
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
+<div class="note" markdown="1">
 Version control systems are software tools that help manage changes to source code over time, allowing multiple contributors to work collaboratively and track modifications, enabling easy recovery of previous versions if needed.
-</span>
-</div><br>
+</div>
 
 <p style="color: #ff3870;font-weight: 500;"> To learn more about Version Control Systems, see the introduction to {% include target_link href=932.1 %} in the {% include target_link href=900 %} section of this workbook.</p>
 

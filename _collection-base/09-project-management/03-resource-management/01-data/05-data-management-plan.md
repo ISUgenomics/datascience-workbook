@@ -24,16 +24,12 @@ tags: []
 
 Let's talk about crafting a **Data Management Plan (DMP)**. Think of it as your roadmap for handling all the data in your research project. It's not just a bunch of formalities; it’s a practical guide that helps you sort out **how you'll collect, store, and share your data**. Plus, it's super handy for **making sure your data is managed responsibly and effectively**, right from the get-go.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-ChatGPT
-A Data Management Plan (DMP) is a formal document outlining how data will be handled both during and after a research project. It covers aspects like data collection, storage, sharing, and preservation. The importance of a DMP in a research project lies in ensuring that data is managed efficiently, ethically, and in compliance with legal and funding requirements. It helps to maximize data's usefulness, facilitates collaboration, and enhances the transparency and reproducibility of research.</span>
+<div class="note" markdown="1">
+A Data Management Plan (DMP) is a formal document outlining how data will be handled both during and after a research project. It covers aspects like data collection, storage, sharing, and preservation. The importance of a DMP in a research project lies in ensuring that data is managed efficiently, ethically, and in compliance with legal and funding requirements. It helps to maximize data's usefulness, facilitates collaboration, and enhances the transparency and reproducibility of research.
 </div>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">Whether you're dealing with heaps of numbers, images, stacks of surveys, or any other kind of data, a good DMP keeps everything organized and makes your research life a whole lot easier. Besides, a well-structured data management plan that adheres to all TRUST, FAIR and CARE principles ensures responsible and effective data handling.</span>
+<div class="protip" markdown="1">
+Whether you're dealing with heaps of numbers, images, stacks of surveys, or any other kind of data, a good DMP keeps everything organized and makes your research life a whole lot easier. Besides, a well-structured data management plan that adheres to all TRUST, FAIR and CARE principles ensures responsible and effective data handling.
 </div>
 
 *Let's dive into how you can set up a DMP that really works for you and your research!*
@@ -47,9 +43,8 @@ Creating a data management plan (DMP) that is compliant with both TRUST, FAIR an
 
 When putting together your Data Management Plan (DMP), make sure to give each of the steps in the checklist a good look and answer them as they apply to your work. Covering all these bases will make sure your research data is not just well-managed, but also really lines up with all principles for the best possible outcome.
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">To create a thorough and robust Data Management Plan (DMP) that aligns with FAIR, CARE, and TRUST principles and adheres to best practices in data management, <b>carefully address the included list of questions for each section of the DMP</b>. Your detailed responses will ensure a holistic and effective approach to managing your research data throughout its lifecycle.</span>
+<div class="protip" markdown="1">
+To create a thorough and robust Data Management Plan (DMP) that aligns with FAIR, CARE, and TRUST principles and adheres to best practices in data management, **carefully address the included list of questions for each section of the DMP**. Your detailed responses will ensure a holistic and effective approach to managing your research data throughout its lifecycle.
 </div>
 
 ---
@@ -333,19 +328,18 @@ The career stage influences the complexity, scope, and resources available for d
 |Plans might focus more on **individual projects**, with a greater emphasis on specific data types relevant to their research.| Plans may include a **mix of qualitative and quantitative data**, with a focus on ethical considerations and participant consent. | Tend to have **more comprehensive plans**, detailing complex data types like neuroimaging or genomic data.|
 |Might rely more on existing platforms and standard methods for data sharing and preservation. | There's an emphasis on making data accessible to a broader research community, including non-specialists. | Plans often include developing new methods for data sharing or using established, sophisticated platforms.|
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">Regardless of your career stage or the scale of your project, having a Data Management Plan is not only valuable but also increases the success rate of your research. </span>
+<div class="protip" markdown="1">
+Regardless of your career stage or the scale of your project, having a Data Management Plan is not only valuable but also increases the success rate of your research.
 </div>
 
 A well-crafted DMP ensures that data are rigorously collected, well-preserved, and include meaningful descriptors or metadata. This approach not only helps researchers achieve solid, meaningful results but also enhances the utility and reproducibility of their data, contributing significantly to the advancement of scientific knowledge.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">Proper data management is essential across different fields of science and project sizes, and it plays a key role in collaborative research, open science, and ensuring the long-term value of data.<br>
+<div class="note" markdown="1">
+Proper data management is essential across different fields of science and project sizes, and it plays a key role in collaborative research, open science, and ensuring the long-term value of data.<br>
 [further reading: <a href="https://www.nature.com/articles/d41586-018-03065-z" target="_blank">Everyone needs a data-management plan, Nature 555, 286 (2018)</a>]
-</span>
 </div>
+
+---
 
 # **Hands-on Case Study:** <br>Data Management Plan for research project
 
@@ -363,9 +357,8 @@ The project involves analyzing genomic data to identify genetic markers associat
 
 Following the initial conceptualization of your research project, the subsequent critical step is to develop a Data Management Plan (DMP). This plan serves as a roadmap for managing your project's data efficiently. It details each stage of the data lifecycle, from collection to archiving, ensuring optimal data handling, compliance, and integrity. A well-structured DMP is key to navigating your project towards successful outcomes and maximizing the value of your research data.
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">In a Data Management Plan (DMP), answers should be detailed enough to provide clear guidance on how data will be handled, while remaining concise to ensure readability and practicality. The level of detail should adequately address specific project needs and comply with any relevant funder or institutional requirements.</span>
+<div class="protip" markdown="1">
+In a Data Management Plan (DMP), answers should be detailed enough to provide clear guidance on how data will be handled, while remaining concise to ensure readability and practicality. The level of detail should adequately address specific project needs and comply with any relevant funder or institutional requirements.
 </div>
 
 *This comprehensive DMP provides a structured approach to managing the genomic data crucial for advancing personalized medicine in breast cancer treatment, ensuring the data's integrity, security, and long-term value.*

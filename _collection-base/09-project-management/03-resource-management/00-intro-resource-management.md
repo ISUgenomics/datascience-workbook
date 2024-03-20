@@ -24,9 +24,8 @@ tags: []
 
 In the context of research, effective **resource management** is crucial as it directly **influences the quality, timeline, and costs of research**, ultimately determining the success of the project. By optimizing resource utilization, research teams can avoid overuse or waste of resources, address bottlenecks promptly, and **enhance productivity and innovation**.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;"> Resource Management in research projects is a <b>systematic process of planning, allocating, and utilizing resources efficiently</b> and effectively throughout the lifecycle of a project. It involves understanding project requirements, managing constraints, and ensuring that the <b>right resources are available at the right times</b> to meet project goals.  </span>
+<div class="note" markdown="1">
+Resource Management in research projects is a **systematic process of planning, allocating, and utilizing resources efficiently** and effectively throughout the lifecycle of a project. It involves understanding project requirements, managing constraints, and ensuring that the **right resources are available at the right times** to meet project goals.
 </div>
 
 
@@ -117,23 +116,22 @@ Informational resources, such as data, research papers, and software tools, are 
 
 
 In a research project, Informational Resources encompass crucial components such as:
-1. {% include target_link href=931.0 %} <br>
-<i>Data Management ensures the integrity, accessibility, and security of data, forming the backbone of research analysis and insights. </i>
 
-2. {% include target_link href=932.0 %} <br>
-<i>Code Management, through practices like version control, maintains the consistency and trackability of software code, a critical element in reproducible and collaborative research. </i>
+**1.** {% include target_link href=931.0 %} <br>
+<i>Data Management ensures the integrity, accessibility, and security of data, forming the backbone of research analysis and insights. </i> <base class="mb">
 
-3. {% include target_link href=932.1 %} <br>
-<i>Storage and Version Control systems safeguard information, provide historical tracking of project progress, and facilitate efficient resource sharing.</i>
+**2.** {% include target_link href=932.0 %} <br>
+<i>Code Management, through practices like version control, maintains the consistency and trackability of software code, a critical element in reproducible and collaborative research. </i> <base class="mb">
 
-4. {% include target_link href=933.1 %} <br>
-<i>Documentation acts as the repository of knowledge, capturing the nuances of research methodologies, findings, and intellectual property, ensuring that every aspect of the research is recorded, understandable, and accessible for future reference.</i>
+**3.** {% include target_link href=932.1 %} <br>
+<i>Storage and Version Control systems safeguard information, provide historical tracking of project progress, and facilitate efficient resource sharing.</i> <base class="mb">
+
+**4.** {% include target_link href=933.1 %} <br>
+<i>Documentation acts as the repository of knowledge, capturing the nuances of research methodologies, findings, and intellectual property, ensuring that every aspect of the research is recorded, understandable, and accessible for future reference.</i> <base class="mb">
 
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-Please utilize the links provided above to navigate to the corresponding detailed sections within this workbook.  These sections are designed to offer in-depth insights, practical tips, and structured guidelines to assist you in effectively managing informational resources in your research project.</span>
+<div class="protip" markdown="1">
+Please utilize the links provided above to navigate to the corresponding detailed sections within this workbook. These sections are designed to offer in-depth insights, practical tips, and structured guidelines to assist you in effectively managing informational resources in your research project.
 </div>
 
 

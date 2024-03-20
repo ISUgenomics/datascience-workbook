@@ -76,9 +76,8 @@ and <br>- the guidelines for decision-making.</td>
 </table>
 
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">This comprehensive approach is particularly valuable in research projects, where strategic alignment, detailed planning, and robust governance are key to navigating the complexities and uncertainties inherent in research.</span>
+<div class="note" markdown="1">
+This comprehensive approach is particularly valuable in research projects, where strategic alignment, detailed planning, and robust governance are key to navigating the complexities and uncertainties inherent in research.
 </div>
 
 For a practical understanding of <span style="color: #ff3870; font-weight: 500;">Project Strategy and Risk Management</span> in the context of research applications, I highly recommend exploring the {% include target_link href=913 text="hands-on tutorial" %}  in this workbook. This tutorial is designed to provide you with real-world insights and actionable skills, specifically tailored to managing research projects.
@@ -86,9 +85,8 @@ For a practical understanding of <span style="color: #ff3870; font-weight: 500;"
 <span style="color: #ff3870;font-weight: 500;">Now, let's delve into how Project Design and Project Framework can be adapted for research projects!</span><br>
 *In this tutorial, the focus is on practicality and adaptability, ensuring that the project management practices enhance rather than hinder your research process. The goal is to strike a balance between structured management and the fluid, dynamic nature of research work.*
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;"> Integrating professional project management techniques into the context of small-scale research projects is a great approach to enhance efficiency and effectiveness. It’s a bit less formal, more dynamic, and definitely more focused on the journey of discovery. </span>
+<div class="protip" markdown="1">
+Integrating professional project management techniques into the context of small-scale research projects is a great approach to enhance efficiency and effectiveness. It’s a bit less formal, more dynamic, and definitely more focused on the journey of discovery.
 </div>
 
 ---
@@ -200,9 +198,8 @@ In simpler words, **picking between Agile and Waterfall** is like choosing betwe
 |Stakeholder Engagement | Regular stakeholder involvement and feedback. | Stakeholder involvement mainly at the beginning and end.|
 |Outcome     | Can result in `more innovative solutions` due to adaptability. | `More predictable outcomes`, adhering closely to initial plans.|
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">In research, if your path is clear and your destination is set, Waterfall might be the way to go. But if you're in the mood for some exploration and expect a few surprises along the way, Agile could be your ticket. It's all about what fits the nature of your project best.</span>
+<div class="protip" markdown="1">
+In research, if your path is clear and your destination is set, Waterfall might be the way to go. But if you're in the mood for some exploration and expect a few surprises along the way, Agile could be your ticket. It's all about what fits the nature of your project best.
 </div>
 
 

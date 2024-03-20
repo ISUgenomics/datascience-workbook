@@ -25,14 +25,12 @@ tags: []
 
 The TRUST Principles are **fundamental guidelines for digital repositories**, crucial in the realm of data stewardship. They focus on ensuring repositories are Transparent, Responsible, User-focused, Sustainable, and employ appropriate Technology. These principles are increasingly important in managing and preserving research data **effectively and ethically**.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">The Purpose:</span><br>
-Essentially, the TRUST Principles are all about <b>ensuring the reliability and longevity of research data</b>. They focus on not just preserving data but also making sure it's handled in a way that’s transparent, responsible, and user-friendly. This framework is key for repositories aiming to be trusted custodians of data, mirroring the ethics and community focus found in the {% include target_link href=931.3 %} and the efficiency and utility emphasized in the {% include target_link href=931.2 %}
+<div class="note before" markdown="1" data-before="The Purpose">
+Essentially, the TRUST Principles are all about **ensuring the reliability and longevity of research data**. They focus on not just preserving data but also making sure it's handled in a way that’s transparent, responsible, and user-friendly. This framework is key for repositories aiming to be trusted custodians of data, mirroring the ethics and community focus found in the {% include target_link href=931.3 %} and the efficiency and utility emphasized in the {% include target_link href=931.2 %}
 </div>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">By adhering to the TRUST Principles, digital repositories can effectively manage and preserve research data, making it a valuable resource for the scientific community and the public, both now and in the future. </span>
+<div class="protip" markdown="1">
+By adhering to the TRUST Principles, digital repositories can effectively manage and preserve research data, making it a valuable resource for the scientific community and the public, both now and in the future.
 </div>
 
 ## TRUST Principles
@@ -70,25 +68,22 @@ The TRUST Principles are not just guidelines for digital repositories; they are 
 * **Ensuring Data Integrity and Reliability** <br>
 The TRUST Principles help scientists be confident that the data repositories they use are managing their data responsibly. This means the data remains authentic, integral, and usable over time.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; margin-left: 37px;">
-<span style="font-weight:800;">Example:</span>
-<br><span style="font-style:italic;">A climate research team uses a TRUST-compliant digital repository to store their extensive climate models and datasets. This ensures that their data, <b>including its original format and metadata</b>, remains unaltered and reliable for future verification and studies.</span>
+<div class="example italic level-1" markdown="1">
+A climate research team uses a TRUST-compliant digital repository to store their extensive climate models and datasets. This ensures that their data, **including its original format and metadata**, remains unaltered and reliable for future verification and studies.
 </div>
 
 * **Facilitating Data Reuse and Longevity** <br>
 By adhering to TRUST guidelines, repositories ensure that data is preserved in a sustainable manner, which is crucial for longitudinal studies and for enabling future researchers to revisit and reuse the data.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; margin-left: 37px;">
-<span style="font-weight:800;">Example:</span>
-<br><span style="font-style:italic;">A medical research group archives its clinical trial data in a TRUST-certified repository. <b>Years later, another team can access and reuse this data</b> for a longitudinal study on long-term treatment effects, confident that the data has been preserved accurately over time.</span>
+<div class="example italic level-1" markdown="1">
+A medical research group archives its clinical trial data in a TRUST-certified repository. **Years later, another team can access and reuse this data** for a longitudinal study on long-term treatment effects, confident that the data has been preserved accurately over time.
 </div>
 
 * **Enhancing Research Credibility** <br>
 When data is stored in TRUST-compliant repositories, it adds credibility to the research. Other scientists, reviewers, and the public are more likely to trust findings backed by data held in trustworthy repositories.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; margin-left: 37px;">
-<span style="font-weight:800;">Example:</span>
-<br><span style="font-style:italic;">In a bioinformatics study, researchers publish their findings on gene expression patterns. The study's credibility is enhanced as the underlying genomic data is stored in a TRUST-compliant repository, providing assurance to the scientific community about the <b>data's authenticity and the research's reliability</b>.</span>
+<div class="example italic level-1" markdown="1">
+In a bioinformatics study, researchers publish their findings on gene expression patterns. The study's credibility is enhanced as the underlying genomic data is stored in a TRUST-compliant repository, providing assurance to the scientific community about the **data's authenticity and the research's reliability**.
 </div>
 
 ## TRUST and Open Science
@@ -115,9 +110,11 @@ There are specific resources and tools dedicated to supporting the TRUST princip
 | <b><a href="https://www.fairsfair.eu/" target="_blank">FAIRsFAIR</a></b> | While focused on FAIR principles, FAIRsFAIR project also includes aspects of trustworthiness in data repositories, particularly concerning sustainability and repository services.|
 
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">Among the listed resources, the most applicable for research projects are: <br>1. CoreTrustSeal Certification <br>2. FAIRsFAIR Project and <br>3. Digital Curation Centre (DCC).</span>
+<div class="protip" markdown="1">
+Among the listed resources, the most applicable for research projects are:
+1. CoreTrustSeal Certification
+2. FAIRsFAIR Project and
+3. Digital Curation Centre (DCC).
 </div>
 
 | resource | application | how to use |
@@ -158,22 +155,18 @@ Utilize tools and services that adhere to TRUST principles. This could include u
 
 ### The Long-Term Benefits
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">Enhancing Data Credibility and Reliability</span>
-<br><span style="font-style:italic;">By adhering to TRUST principles, you’re signaling to your peers and the public that your data is managed responsibly, enhancing the credibility and reliability of your research.</span>
+<div class="protip before" markdown="1" data-before="Enhancing Data Credibility and Reliability">
+By adhering to TRUST principles, you’re signaling to your peers and the public that your data is managed responsibly, enhancing the credibility and reliability of your research.
 </div>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">Facilitating Data Longevity and Reusability</span>
-<br><span style="font-style:italic;">TRUST-compliant data management ensures your data is preserved for the long term, making it more likely to be reused in future studies, which can lead to new discoveries and collaborations.</span>
+<div class="protip before" markdown="1" data-before="Facilitating Data Longevity and Reusability">
+TRUST-compliant data management ensures your data is preserved for the long term, making it more likely to be reused in future studies, which can lead to new discoveries and collaborations.
 </div>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">Keeping Pace with Evolving Data Management Standards</span>
-<br><span style="font-style:italic;">The digital data landscape is continuously evolving. Staying informed and compliant with the TRUST principles prepares you to adapt to new challenges and opportunities in data management.</span>
+<div class="protip before" markdown="1" data-before="Keeping Pace with Evolving Data Management Standards">
+The digital data landscape is continuously evolving. Staying informed and compliant with the TRUST principles prepares you to adapt to new challenges and opportunities in data management.
 </div>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">Impact on Funding and Publication</span>
-<br><span style="font-style:italic;">More funding agencies and scientific journals are recognizing the importance of trustworthy data management. Complying with TRUST principles can therefore be crucial for securing funding and getting research published.</span>
+<div class="protip before" markdown="1" data-before="Impact on Funding and Publication">
+More funding agencies and scientific journals are recognizing the importance of trustworthy data management. Complying with TRUST principles can therefore be crucial for securing funding and getting research published.
 </div>

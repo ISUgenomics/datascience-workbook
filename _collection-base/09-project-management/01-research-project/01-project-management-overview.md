@@ -75,16 +75,12 @@ There are several official guides, schools, and knowledge bases on topics relate
 
 Professional bodies like the <a href="https://www.pmi.org" target="_blank">Project Management Institute</a> (PMI) provide guidelines and best practices, as seen in their <a href="https://www.pmi.org/pmbok-guide-standards/foundational/pmbok" target="_blank">PMBOK</a> (Project Management Body of Knowledge) Guide. Additionally, the <a href="https://www.prince2.com/usa/prince2" target="_blank">PRINCE2</a> (Projects IN Controlled Environments) methodology offers a structured approach to project management. Online platforms like <a href="https://www.coursera.org/search?query=project%20management" target="_blank">Coursera</a> or <a href="https://www.linkedin.com/learning/subscription/project-management-cert-prep-ceu?src" target="_blank">LinkedIn Learning</a> also host courses and resources in these areas.  I would say that consulting these educational resources and methodologies can be beneficial for detailed and specific guidance.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PMBOK:</span>
-<br><span style="font-style:italic;">The Project Management Body of Knowledge (PMBOK) Guide, published by the Project Management Institute (PMI), is a comprehensive set of standards and guidelines for project management. It outlines a framework of best practices and terminologies that are universally accepted in the field of project management. The guide covers key processes and knowledge areas areas necessary for effective project management, providing a foundational reference for professionals to manage projects efficiently and effectively. This guide is widely recognized and used as a primary resource for project management training and certification.</span>
+<div class="note" markdown="1">
+The Project Management Body of Knowledge (**PMBOK**) Guide, published by the Project Management Institute (PMI), is a comprehensive set of standards and guidelines for project management. It outlines a framework of best practices and terminologies that are universally accepted in the field of project management. The guide covers key processes and knowledge areas areas necessary for effective project management, providing a foundational reference for professionals to manage projects efficiently and effectively. This guide is widely recognized and used as a primary resource for project management training and certification.
 </div>
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRINCE2:</span>
-<br><span style="font-style:italic;">
-ChatGPT
-PRINCE2 (Projects IN Controlled Environments) is a structured project management methodology widely recognized internationally. It is particularly known for its focus on process-driven project management, which divides projects into manageable and controllable stages. PRINCE2 emphasizes a high level of organization and control over all aspects of the project, from initiation to closure, and is adaptable to a wide range of project types and sizes. Its widespread recognition and use, particularly in the UK and Europe, make it a valuable skill set for project managers seeking a formal, process-oriented approach to project management.</span>
+<div class="note" markdown="1">
+**PRINCE2** (Projects IN Controlled Environments) is a structured project management methodology widely recognized internationally. It is particularly known for its focus on process-driven project management, which divides projects into manageable and controllable stages. PRINCE2 emphasizes a high level of organization and control over all aspects of the project, from initiation to closure, and is adaptable to a wide range of project types and sizes. Its widespread recognition and use, particularly in the UK and Europe, make it a valuable skill set for project managers seeking a formal, process-oriented approach to project management.
 </div>
 
 

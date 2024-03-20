@@ -25,9 +25,8 @@ tags: []
 
 Quality Assurance (QA) in research is a systematic process designed to ensure that the research methodology, execution, analysis, and reporting are conducted to the **highest possible standards**. The primary objective of QA is to enhance the **integrity, reliability, and validity of research outcomes**. By implementing QA practices, researchers can minimize errors, bias, and uncertainties in their work, leading to more accurate and **credible findings**. By emphasizing the need for meticulous planning, robust methodologies, and **transparent reporting**, QA practices contribute significantly to the advancement of knowledge and support evidence-based decision-making.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;"> The purpose of Quality Assurance in research is multifaceted, aiming not only to uphold the quality of research outputs but also to foster a culture of excellence and accountability within the research community. It helps researchers, funding bodies, and the wider academic community, to have confidence in the findings reported. </span>
+<div class="note" markdown="1">
+The purpose of Quality Assurance in research is multifaceted, aiming not only to uphold the quality of research outputs but also to foster a culture of excellence and accountability within the research community. It helps researchers, funding bodies, and the wider academic community, to have confidence in the findings reported.
 </div>
 
 **Quality Assurance practices are essential for:**
@@ -92,9 +91,8 @@ Adopting systematic approaches to Quality Assurance is crucial for ensuring that
 |**Continuous Improvement**|Employing feedback mechanisms and periodic reviews to identify areas for improvement in research practices and outcomes.|
 |**Training and Development**|Investing in the ongoing training and development of researchers to foster a culture of quality and continuous learning.|
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;"> Quality Assurance is not merely a set of tasks to be checked off a list but a fundamental approach to conducting research. It requires commitment, foresight, and a proactive stance from all individuals involved in the research process. Engaging in QA practices shows researcher's dedication to excellence, integrity, and the pursuit of truth. </span>
+<div class="protip" markdown="1">
+Quality Assurance is not merely a set of tasks to be checked off a list but a fundamental approach to conducting research. It requires commitment, foresight, and a proactive stance from all individuals involved in the research process. Engaging in QA practices shows researcher's dedication to excellence, integrity, and the pursuit of truth.
 </div>
 
 
@@ -161,9 +159,8 @@ The components of Monitoring & Evaluation, namely `Planning`, `Monitoring`, and 
   </tr>
 </table>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">Embrace feedback from Monitoring and Evaluation like a roadmap for excellence. It's your key to pinpoint adjustments and boost both the quality and impact of your research. Think of it as fine-tuning your approach based on what works best, ensuring your project not only meets but exceeds expectations.</span>
+<div class="protip" markdown="1">
+Embrace feedback from Monitoring and Evaluation like a roadmap for excellence. It's your key to pinpoint adjustments and boost both the quality and impact of your research. Think of it as fine-tuning your approach based on what works best, ensuring your project not only meets but exceeds expectations.
 </div>
 
 <br><span style="background-color: #e8e9e8; color: #0ba37f; font-weight: 500; padding: 5px 7px;">TUTORIAL</span>&nbsp;
@@ -202,11 +199,11 @@ Research Productivity is about maximizing the efficiency and outcomes of your re
   </tr>
 </table>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">Boost your research productivity by embracing a culture of continuous improvement and openness to change. Regularly review your strategies for Resource Management, Prioritization, and Collaboration to find new ways to enhance efficiency and impact. Remember, the most productive researchers are those who adapt swiftly and leverage their networks effectively.</span>
+<div class="protip" markdown="1">
+Boost your research productivity by embracing a culture of continuous improvement and openness to change. Regularly review your strategies for Resource Management, Prioritization, and Collaboration to find new ways to enhance efficiency and impact. Remember, the most productive researchers are those who adapt swiftly and leverage their networks effectively.
 </div>
-<br><span style="background-color: #e8e9e8; color: #0ba37f; font-weight: 500; padding: 5px 7px;">TUTORIAL</span>
+
+<span style="background-color: #e8e9e8; color: #0ba37f; font-weight: 500; padding: 5px 7px;">TUTORIAL</span>
 Dive deeper into strategies for maximizing Research Productivity in small to moderate scale projects with our comprehensive tutorial on {% include target_link href=942 %}
 
 ---
@@ -242,15 +239,13 @@ Research Reproducibility is the cornerstone of credible science. It ensures that
   </tr>
 </table>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">Make Research Reproducibility a priority from day one of your project. Document everything with the mindset that someone else will need to follow in your footsteps. This not only aids in reproducibility but also enhances your own understanding and organization of the research process. The more transparent and accessible your work, the more it contributes to the collective knowledge of your field.</span>
+<div class="protip" markdown="1">
+Make Research Reproducibility a priority from day one of your project. Document everything with the mindset that someone else will need to follow in your footsteps. This not only aids in reproducibility but also enhances your own understanding and organization of the research process. The more transparent and accessible your work, the more it contributes to the collective knowledge of your field.
 </div>
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;"> If your research involves <b>data with special security requirements</b>, such as medical records or government data (e.g., <b>USDA</b>), it's crucial to closely adhere to the guidance and recommendations provided by your institution and relevant regulatory bodies <b>before making any data public</b>. Ensuring compliance with privacy laws and ethical standards is paramount to protect sensitive information and maintain the trustworthiness of your research. </span>
+<div class="warning" markdown="1">
+If your research involves **data with special security requirements**, such as medical records or government data (e.g., `USDA`), it's crucial to closely adhere to the guidance and recommendations provided by your institution and relevant regulatory bodies **before making any data public**. Ensuring compliance with privacy laws and ethical standards is paramount to protect sensitive information and maintain the trustworthiness of your research.
 </div>
 
-<br><span style="background-color: #e8e9e8; color: #0ba37f; font-weight: 500; padding: 5px 7px;">TUTORIAL</span>
+<span style="background-color: #e8e9e8; color: #0ba37f; font-weight: 500; padding: 5px 7px;">TUTORIAL</span>
 To further explore how to ensure your research is reproducible, especially in small to moderate scale projects, check out our in-depth tutorial on {% include target_link href=943 %}

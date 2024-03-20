@@ -25,9 +25,8 @@ tags: []
 <table><tr>
 <td style="border: transparent; vertical-align: top; font-size: 21px;">
 Data Management is a critical aspect of research, ensuring that data collected, analyzed, and generated throughout a project is organized, stored, protected, and preserved effectively. This process enhances the integrity, reproducibility, and validity of research outcomes.
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; margin-top: 25px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">  In small and moderate scale projects, efficient data management is crucial for maximizing resource utilization, maintaining data quality, and ensuring compliance with ethical and legal standards. </span>
+<div class="protip font-1" markdown="1">
+In small and moderate scale projects, efficient data management is crucial for maximizing resource utilization, maintaining data quality, and ensuring compliance with ethical and legal standards.
 </div>
 </td>
 <td width=500 style="border: transparent;"><img width="800" src="{{ images_path }}/02_data_management.png"></td>
@@ -51,14 +50,12 @@ Embarking on the Data Lifecycle Management journey, we recognize the critical ro
 | [Data Documentation](#data-documentation) | Detailed records of data collection methodologies, processing and metadata. |
 | [Roles and Responsibilities](#roles-and-responsibilities) | Clear delineation of data management tasks assigned to project team members. |
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;"> Please be aware that the information provided in this section is concise and intended to serve as an introduction to various aspects of Data Management in research. The examples of practices and tools mentioned are selected to illustrate a cross-section of the wide array of options available but do not represent an exhaustive list. Our goal is to familiarize you with the terminology and basic concepts, encouraging further exploration of the tools and methodologies that best meet your specific needs. </span>
+<div class="warning" markdown="1">
+Please be aware that the information provided in this section is concise and intended to serve as an introduction to various aspects of Data Management in research. The examples of practices and tools mentioned are selected to illustrate a cross-section of the wide array of options available but do not represent an exhaustive list. Our goal is to familiarize you with the terminology and basic concepts, encouraging further exploration of the tools and methodologies that best meet your specific needs.
 </div>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;"> Some widely-applicable tools and practices are covered in more detail in hands-on tutorials within this workbook. These tutorials are designed to provide practical insights and guidance on implementing key aspects of Data Management in your research projects. <br>We encourage you to delve deeper into each topic and explore additional resources!</span>
+<div class="protip" markdown="1">
+Some widely-applicable tools and practices are covered in more detail in hands-on tutorials within this workbook. These tutorials are designed to provide practical insights and guidance on implementing key aspects of Data Management in your research projects. <br>We encourage you to delve deeper into each topic and explore additional resources!
 </div>
 
 ## Data Collection Methods
@@ -68,9 +65,8 @@ Data Collection Methods refer to the structured and strategic approaches employe
 **IMPORTANCE** <br>
 The rigor and appropriateness of data collection methods directly influence the quality and interpretability of research outcomes. Accurate and ethically gathered data, adhering to {% include target_link href=931.2 %} (Findable, Accessible, Interoperable, Reusable) and {% include target_link href=931.3 %} (Collective Benefit, Authority to Control, Responsibility, Ethics), not only bolster the credibility of the research but also ensure respect for community rights and compliance with legal standards.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;"> Effective data collection methods lay the groundwork for generating actionable insights, facilitating knowledge advancement, and informing evidence-based decision-making. </span>
+<div class="note" markdown="1">
+Effective data collection methods lay the groundwork for generating actionable insights, facilitating knowledge advancement, and informing evidence-based decision-making.
 </div>
 
 **Examples of Data Collection Methods and Tools:**
@@ -116,10 +112,8 @@ Data Storage Solutions encompass a range of systems and services meticulously de
 **IMPORTANCE** <br>
 The choice of appropriate and secure data storage solutions is paramount in safeguarding data integrity, ensuring data availability, and facilitating seamless data retrieval. Adherence to {% include target_link href=931.4 %} (Transparent, Responsible, User Focus, Sustainable, Technology) further guarantees that data repositories meet high standards of reliability, sustainability, and security, providing researchers with the confidence that their data is preserved in a state-of-the-art environment.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">
-Effective and well-planned data storage significantly enhances the reliability, accessibility, and longevity of research data, thereby bolstering the overall integrity and impact of a research project. </span>
+<div class="note" markdown="1">
+Effective and **well-planned data storage** significantly enhances the reliability, accessibility, and longevity of research data, thereby bolstering the overall integrity and impact of a research project.
 </div>
 
 **Examples of Data Storage Solutions:**
@@ -178,9 +172,8 @@ Data Privacy and Security Measures refer to a comprehensive set of strategies, p
 **IMPORTANCE** <br>
 Robust privacy and security practices are foundational to any research project, especially those handling sensitive or confidential information. They not only protect against data breaches and loss but also bolster the credibility of the research by ensuring data is handled responsibly.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;"> Implementing strong privacy and security measures is a direct reflection of the project's commitment to ethical standards, participant respect, and legal compliance, and is often a requirement for institutional and regulatory approval. </span>
+<div class="note" markdown="1">
+Implementing strong privacy and security measures is a direct reflection of the project's commitment to ethical standards, participant respect, and legal compliance, and is often a requirement for institutional and regulatory approval.
 </div>
 
 **Examples of Data Privacy and Security Measures:**
@@ -226,13 +219,12 @@ Data Sharing and Accessibility Policies encompass a set of structured guidelines
 **IMPORTANCE** <br>
 Implementing clear data sharing and accessibility policies is pivotal in promoting scientific collaboration, enhancing the transparency of research processes, and fostering innovation.  Moreover, aligning with the {% include target_link href=120 %} <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/03-DATA/03-fair-principles" target="_blank"> FAIR  ⤴</a> principles (Findable, Accessible, Interoperable, Reusable) ensures that shared data is easily discoverable, accessible, and usable by others, thereby maximizing the research's impact and utility.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;"> <b>Open Access, Open Data, and Open Science</b> policies are particularly relevant for data sharing and accessibility.
-<li>Open Access ensures that research findings and publications are freely available, complementing </li>
-<li>Open Data policies that advocate for the unrestricted sharing of research data, thereby enhancing transparency and collaboration. </li>
-<li>Meanwhile, Open Science serves as an overarching framework, promoting the accessibility and sharing of all research outputs, including data, methods, and materials. </li>
-By adhering to these policies, researchers contribute to a culture of openness, allowing for the validation of research findings, the replication of studies, and the advancement of knowledge. </span>
+<div class="note" markdown="1">
+**Open Access, Open Data, and Open Science** policies are particularly relevant for data sharing and accessibility.
+* Open Access ensures that research findings and publications are freely available, complementing
+* Open Data policies that advocate for the unrestricted sharing of research data, thereby enhancing transparency and collaboration.
+* Meanwhile, Open Science serves as an overarching framework, promoting the accessibility and sharing of all research outputs, including data, methods, and materials.
+By adhering to these policies, researchers contribute to a culture of openness, allowing for the validation of research findings, the replication of studies, and the advancement of knowledge.
 </div>
 
 <p style="color: #ff3870;font-weight: 500;"> For an in-depth exploration of how these and other open-type policies foster a culture of openness and collaboration in research, refer to our detailed {% include target_link href=931.1 text="article on open-type policies" %} </p>
@@ -279,9 +271,8 @@ Data Archiving and Preservation refer to the strategic processes of storing and 
 **IMPORTANCE** <br>
 Archiving and preserving data is crucial for sustaining the life cycle of research data. It safeguards valuable information against loss and degradation, ensuring that future researchers, policymakers, and the public can access and utilize historical data.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;"> Data Archiving not only supports the reproducibility of scientific research but also enables ongoing discovery and innovation by providing a rich, historical dataset for future analysis and comparison. </span>
+<div class="note" markdown="1">
+Data Archiving not only supports the reproducibility of scientific research but also enables ongoing discovery and innovation by providing a rich, historical dataset for future analysis and comparison.
 </div>
 
 **Examples of Data Archiving and Preservation Services:**
@@ -321,9 +312,8 @@ Documentation involves creating comprehensive records that encompass methodologi
 **IMPORTANCE** <br>
 Data Documentation is fundamental to the integrity and utility of research data. It ensures that data can be accurately interpreted, validated, and utilized both during and after the life of the research project.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;"> By providing a clear roadmap of the data journey, documentation supports the reproducibility of research findings, facilitates peer review, and enables other researchers to build upon existing work effectively and ethically. </span>
+<div class="note" markdown="1">
+By providing a clear roadmap of the data journey, documentation supports the reproducibility of research findings, facilitates peer review, and enables other researchers to build upon existing work effectively and ethically.
 </div>
 
 **Examples of Data Documentation Tools:**
@@ -368,9 +358,8 @@ Roles and Responsibilities in Data Management involve the explicit allocation an
 **IMPORTANCE** <br>
 Establishing well-defined roles and responsibilities is crucial for ensuring a cohesive and efficient data management strategy. It promotes accountability, enhances clarity in task execution, and ensures that all facets of data management, from collection to preservation, are competently managed. Moreover, it helps in preventing data-related errors, ensuring compliance with data policies.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;"> Defining Roles and Responsibilities facilitates effective communication and collaboration among team members. </span>
+<div class="note" markdown="1">
+Defining Roles and Responsibilities facilitates effective communication and collaboration among team members.
 </div>
 
 **Key Roles in Data Management and Their Responsibilities:**

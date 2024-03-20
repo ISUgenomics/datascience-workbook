@@ -25,12 +25,9 @@ tags: []
 At its core, **reproducibility is the ability to repeat a research study's processes and obtain the same results**. It's a hallmark of high-quality scientific work, ensuring that findings are not just a one-time miracle but a reliable outcome that others can achieve independently. This involves everything from the initial hypothesis to the methodologies, data analysis, and even the presentation of results. Decent documentation plays a crucial role in this process, serving as the foundation that enables others to understand, evaluate, and replicate the research findings accurately.
 
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-weight:800;">Related Terms:</span><br>
-<br><span style="font-style:italic;">
-<b>Replicability</b> refers to the ability to achieve similar outcomes by conducting the same study but with different methods, data sets, or conditions. While it sounds similar, replicability extends the idea of reproducibility to test the universality of findings across various contexts. <br><br>
-<b>Transparency</b> is the openness with which researchers share their methods, data, and findings, enabling others to scrutinize and understand their work fully.
-</span>
+<div class="note before" markdown="1" data-before="Related Terms:">
+**Replicability** refers to the ability to achieve similar outcomes by conducting the same study but with different methods, data sets, or conditions. While it sounds similar, replicability extends the idea of reproducibility to test the universality of findings across various contexts. <base class="mb">
+**Transparency** is the openness with which researchers share their methods, data, and findings, enabling others to scrutinize and understand their work fully.
 </div>
 
 **Why does reproducibility matter so much?** <br>
@@ -40,9 +37,8 @@ Reproducibility is not just a technical requirement. It's a commitment to scient
 * It also ensures that research funds and efforts are utilized effectively, paving the way for **standardized approaches** and genuine advancements in science.
 * This fosters further investigation, innovation, and **application of research findings in real-world scenarios**, from healthcare to environmental policy.
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">Practically, reproducibility enhances the credibility and impact of your research, establishing you as a trustworthy figure in your field. For your future research, it opens doors to collaboration and increases the likelihood of funding. It also allows you to efficiently revisit and extend your own work in the future, whether it's applying the methodology to new datasets or refining your analysis as new information becomes available. </span>
+<div class="protip" markdown="1">
+Practically, reproducibility enhances the credibility and impact of your research, establishing you as a trustworthy figure in your field. For your future research, it opens doors to collaboration and increases the likelihood of funding. It also allows you to efficiently revisit and extend your own work in the future, whether it's applying the methodology to new datasets or refining your analysis as new information becomes available.
 </div>
 
 
@@ -64,10 +60,8 @@ The tendency to publish positive results over negative or inconclusive ones can 
 
 From a researcher's perspective, meeting reproducibility standards is challenging due to the extra time and effort required for detailed documentation, method sharing, and navigating data privacy  concerns. The rush to publish  quickly and the competitive academic landscape can push these tasks lower on the priority list. Without clear rewards or direct incentives for these efforts, motivation to invest in reproducibility can wane, despite its importance for scientific integrity. <br>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-style:italic;">
-<b>The key to overcoming these challenges lies in adopting a new approach and mindset</b>, seeing reproducibility not as a hurdle but as an integral part of the research process. By shifting our perspective, we can start <b>to see the value in the extra steps involved</b>, recognizing them as investments in the credibility and longevity of our work.
-</span>
+<div class="protip" markdown="1">
+**The key to overcoming these challenges lies in adopting a new approach and mindset**, seeing reproducibility not as a hurdle but as an integral part of the research process. By shifting our perspective, we can start **to see the value in the extra steps involved**, recognizing them as investments in the credibility and longevity of our work.
 </div>
 
 
@@ -89,9 +83,8 @@ The path toward reproducible research is illuminated by the lessons gleaned from
   </tr>
 </table>
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">Recent publications continue to highlight the challenge of reproducibility in research, underscoring the ongoing need for a shift in our [reserchers] approach to embrace more transparent and rigorous practices. </span>
+<div class="warning" markdown="1">
+Recent publications continue to highlight the `challenge of reproducibility` in research, underscoring the ongoing need for a shift in our research approach to embrace more transparent and rigorous practices.
 </div>
 
 **Lessons Learned** <br>
@@ -106,9 +99,8 @@ Many reproducibility issues arise from statistical misinterpretation or the use 
 * **Collaboration and Community Standards** <br>
 Both successful and challenging examples highlight the role of community engagement and the establishment of standards in fostering reproducibility. *Collaborative efforts, such as the Polymath Project, illustrate how collective wisdom and open dialogue can lead to breakthroughs, while initiatives like the Reproducibility Project help set benchmarks for research practices.*
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">By reflecting on these real-life examples, you can better navigate the complexities of reproducibility, adopting practices that enhance the reliability, integrity, and impact of your work. </span>
+<div class="protip" markdown="1">
+By reflecting on these real-life examples, you can better navigate the complexities of reproducibility, adopting practices that enhance the reliability, integrity, and impact of your work.
 </div>
 
 ---
@@ -122,8 +114,8 @@ In a research project, reproducibility is not just a goal but a guiding principl
 
 The first cornerstone of reproducible research is transparency in methodology. This means providing a clear, detailed account of how research is conducted, from the initial hypothesis through to data collection and analysis. Every step should be documented so thoroughly that `fellow researchers can follow the same path without ambiguity`. This includes specifying the software and tools used, the versions of those tools, and any custom code or algorithms developed.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-style:italic;">Transparency is the bridge that allows others to walk in your scientific footsteps, ensuring that your work can be critically assessed, validated, or refuted. </span>
+<div class="note" markdown="1">
+Transparency is the bridge that allows others to walk in your scientific footsteps, ensuring that your work can be critically assessed, validated, or refuted.
 </div>
 
 This table provides clear examples of practices that promote transparency in the methodology versus those that hinder it, helping to guide you toward more reproducible research practices.
@@ -160,15 +152,14 @@ This table provides clear examples of practices that promote transparency in the
 
 This exercise is designed to enhance your awareness and implementation of transparency in research methodologies, fostering a culture of openness and replicability.
 
-<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-weight:800;">A Personalized Methodology Transparency Checklist</span>
-<br><br><span style="font-style:italic;"><b>Objective:</b><br>
-Create a customized checklist that ensures transparency in the methodology of your projects.
-<br><br><b>Instructions:</b><br>
-<b>1.</b> List all steps of your typical research process.<br>
-<b>2.</b> Next to each step, jot down specific questions that ensure transparency.</br>
-<b>3.</b> Use this checklist as a guide when documenting your methodology in future projects.
-</span><br><br>
+<div class="exercise before" markdown="1" data-before="A Personalized Methodology Transparency Checklist">
+<base class="mt">
+**Objective:** <br>
+Create a customized checklist that ensures transparency in the methodology of your projects. <base class="mb">
+**Instructions:** <br>
+1. List all steps of your typical research process.
+2. Next to each step, jot down specific questions that ensure transparency.
+3. Use this checklist as a guide when documenting your methodology in future projects.
 <details><summary style="background: #FFFACD; width:250px;">See General Example</summary>
 
 <div style="background: #FFFACD; padding: 15px; font-size: 18px;">
@@ -225,8 +216,8 @@ Does the documentation cover my customized visualization scripts in R and variou
 
 Accessibility is the second key principle, focusing on the ease with which data and materials can be obtained and used by others. This involves not only `making your data available` but ensuring it is in a format that is understandable and usable. Sharing should be done through reputable, accessible platforms or repositories that ensure `data preservation and accessibility over time`. This principle also encompasses the sharing of materials used in the research, such as chemical compounds, biological specimens, or software code.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-style:italic;">The aim is to remove barriers to accessing the building blocks of your research, enabling others to reproduce or build upon your findings. </span>
+<div class="note" markdown="1">
+The aim is to remove barriers to accessing the building blocks of your research, enabling others to reproduce or build upon your findings.
 </div>
 
 This table aims to guide you toward best practices in making your data and materials accessible, while also highlighting common pitfalls. It also offers actionable advice to improve accessibility and long-term preservation to ensure that data remains usable for future research endeavors.
@@ -269,15 +260,14 @@ This table aims to guide you toward best practices in making your data and mater
 
 This example is designed to help you systematically think through and plan for the accessibility of your research data and materials, ensuring they can be shared and used by others in the scientific community.
 
-<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-weight:800;">Data Management Plan Drafting</span>
-<br><br><span style="font-style:italic;"><b>Objective:</b><br>
-Draft a data management plan (DMP) that outlines how data and materials will be handled, stored, and shared. Following this plan enhances the accessibility of your data and materials.
-<br><br><b>Instructions:</b><br>
-<b>1.</b> Identify the types of data you typically generate and list them.<br>
-<b>2.</b> For each data type, write down how you will store, archive, and share this data, considering data formats, platforms for sharing, and any privacy concerns.<br>
-<b>3.</b> Include a section on the tools and software you'll use, ensuring they align with open standards.
-</span><br><br>
+<div class="exercise before" markdown="1" data-before="Data Management Plan Drafting">
+<base class="mt">
+**Objective:** <br>
+Draft a data management plan (DMP) that outlines how data and materials will be handled, stored, and shared. Following this plan enhances the accessibility of your data and materials.  <base class="mb">
+**Instructions:** <br>
+1. Identify the types of data you typically generate and list them.
+2. For each data type, write down how you will store, archive, and share this data, considering data formats, platforms for sharing, and any privacy concerns.
+3. Include a section on the tools and software you'll use, ensuring they align with open standards.
 <details><summary style="background: #FFFACD; width:250px;">See General Example</summary>
 
 <div style="background: #FFFACD; padding: 15px; font-size: 18px;">
@@ -322,8 +312,8 @@ Documentation of all bioinformatics tools (e.g., STAR v2.7.3a, DESeq2 v1.28.1) u
 
 The third principle, adherence to standards and protocols, serves as a shared language in the scientific community, enabling researchers to communicate their methods and findings more effectively. By `following established guidelines and practices`, researchers can create a common framework that provides a clear and accessible blueprint of the study. It facilitates the replication of their work by others and ensures that outcomes are verifiable. This includes `following established protocols` and standards within your field. It’s also about contributing to the community by potentially `setting new standards` that others can follow, enhancing the collective ability to achieve reproducible results. By `utilizing open-source tools` and platforms, you ensure that your methods are not only transparent but accessible to anyone with an interest in your work. This not only enhances the credibility and validity of the research but also fosters collaboration and innovation.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-style:italic;">The aim of adhering to standards and building robust protocols is to ensure consistency, reliability, and quality in your research.  </span>
+<div class="note" markdown="1">
+The aim of adhering to standards and building robust protocols is to ensure `consistency`, `reliability` and `quality` in your research.
 </div>
 
 This table highlights the importance of adhering to standards and developing robust protocols to enhance the reproducibility of research.
@@ -366,15 +356,14 @@ This table highlights the importance of adhering to standards and developing rob
 
 This exercise is intended to encourage you to actively engage with and adhere to the standards and protocols in your field, ensuring that your research practices meet global benchmarks for quality and reproducibility.
 
-<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-weight:800;">Standards and Protocols Assessment</span>
-<br><br><span style="font-style:italic;"><b>Objective:</b><br>
-Evaluate and document the standards and protocols you currently use or plan to use in your research. In a result, you will get the assessment document that outlines your commitment to standards and protocols, ensuring reproducibility.
-<br><br><b>Instructions:</b><br>
-<b>1.</b> Make a list of the main standards and protocols relevant to your field of research (e.g., data formats, metadata standards).<br>
-<b>2.</b> Assess how well your current or planned research practices align with these standards.<br>
-<b>3.</b> For each standard or protocol, write a brief plan on how you will ensure compliance in your research.
-</span><br><br>
+<div class="exercise before" markdown="1" data-before="Standards and Protocols Assessment">
+<base class="mt">
+**Objective:** <br>
+Evaluate and document the standards and protocols you currently use or plan to use in your research. In a result, you will get the assessment document that outlines your commitment to standards and protocols, ensuring reproducibility. <base class="mb">
+**Instructions:** <br>
+1. Make a list of the main standards and protocols relevant to your field of research (e.g., data formats, metadata standards).
+2. Assess how well your current or planned research practices align with these standards.
+3. For each standard or protocol, write a brief plan on how you will ensure compliance in your research.
 <details><summary style="background: #FFFACD; width:250px;">See General Example</summary>
 
 <div style="background: #FFFACD; padding: 15px; font-size: 18px;">
@@ -412,8 +401,8 @@ Following the ENCODE project's best practices for RNA-Seq analysis, including qu
 
 Central to these principles is the need for comprehensive documentation. It's not enough to follow these principles in practice; each component must be meticulously recorded and shared. It should cover the `methodology`, `data sources`, `analysis techniques`, and any `challenges` or deviations encountered along the way. Comprehensive documentation ensures that your research is not a closed book but an open invitation for scrutiny, collaboration, and advancement.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-style:italic;">Documentation acts as the blueprint of your research, detailing every choice made and every step taken. </span>
+<div class="note" markdown="1">
+Documentation acts as the blueprint of your research, detailing every choice made and every step taken.
 </div>
 
 <table>
@@ -460,15 +449,14 @@ Central to these principles is the need for comprehensive documentation. It's no
 
 This task is designed to guide you in creating a detailed and structured approach to documenting your research, making it easier for others to understand, replicate, and build upon your work.
 
-<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-weight:800;">Documentation Template Development</span>
-<br><br><span style="font-style:italic;"><b>Objective:</b><br>
-Develop a comprehensive documentation template tailored to your research process.
-<br><br><b>Instructions:</b><br>
-<b>1.</b> Outline the sections needed to fully document a project, including background, methodology, data collection and analysis, results, and deviations.<br>
-<b>2.</b> For each section, add prompts or questions that guide you to provide detailed information. <br>
-<b>3.</b> Integrate a section for notes on deviations or unexpected challenges encountered during the project.
-</span><br><br>
+<div class="exercise before" markdown="1" data-before="Documentation Template Development">
+<base class="mt">
+**Objective:** <br>
+Develop a comprehensive documentation template tailored to your research process. <base class="mb">
+**Instructions:** <br>
+1. Outline the sections needed to fully document a project, including background, methodology, data collection and analysis, results, and deviations.
+2. For each section, add prompts or questions that guide you to provide detailed information.
+3. Integrate a section for notes on deviations or unexpected challenges encountered during the project.
 <details><summary style="background: #FFFACD; width:250px;">See General Example</summary>
 
 <div style="background: #FFFACD; padding: 15px; font-size: 18px;">
@@ -574,27 +562,28 @@ These exercises are crafted to provide you with practical skills and hands-on ex
 
 This exercise is designed to illustrate the critical role of version control in tracking and managing changes in research projects, promoting collaboration, and ensuring that all project versions are accessible and reproducible.
 
-<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-weight:800;">Version Control Basics with Git</span>
-<br><br><b>Objective:</b><br>
-Familiarize yourself with Git for version control to manage changes in your research project efficiently.
-<br><br><b>Instructions:</b><br>
-<b>1. Install Git:</b> Download and install Git from <a href="https://git-scm.com/" target="_blank">https://git-scm.com/</a>.<br>
-<b>2. Create a Repository:</b>
-<li>Open Terminal (Mac/Linux) or Git Bash (Windows).</li>
-<li>Navigate to your project folder and run <code>git init</code> to initialize a new Git repository on your local machine.</li>
-<b>3. Make Your First Commit:</b>
-<li>Create a file in the repository (e.g., <b>README.md</b>) and edit it.</li>
-<li>Run <code>git add README.md</code> to stage the file for committing.</li>
-<li>Then, commit it using <code>git commit -m "Initial commit"</code>.</li>
-<b>4. Explore History:</b>
-<li>Make further changes to your file and commit them.</li>
-<li>Then, use <code>git log</code> to view the history of changes.</li>
-<div style="background: #cff4fc; padding: 15px; margin-top: 10px; font-size: 18px;">
-<span style="font-weight:800;">PRO TIP:</span><br>
+<div class="exercise before" markdown="1" data-before="Version Control Basics with Git">
+<base class="mt">
+**Objective:** <br>
+Familiarize yourself with Git for version control to manage changes in your research project efficiently. <base class="mb">
+**Instructions:** <br>
+**1. Install Git:** Download and install Git from <a href="https://git-scm.com/" target="_blank">https://git-scm.com/</a>.<br>
+**2. Create a Repository:**
+* Open Terminal (Mac/Linux) or Git Bash (Windows).
+* Navigate to your project folder and run <code>git init</code> to initialize a new Git repository on your local machine.
+
+**3. Make Your First Commit:**
+* Create a file in the repository (e.g., <b>README.md</b>) and edit it.
+* Run `git add README.md` to stage the file for committing.
+* Then, commit it using `git commit -m "Initial commit"`
+
+**4. Explore History:**
+* Make further changes to your file and commit them.
+* Then, use `git log` to view the history of changes.
+<div class="protip font-1 mb-0 before" markdown="1" data-before="PRO TIP">
 To see a more detailed step-by-step guide with graphical aids to complete this exercise, navigate to tutorial {% include target_link href=932.2 %} and follow the steps in the hands-on sections:
-<li>{% include target_link href=932.2 section="#1-install-git" text="Install Git" %} </li>
-<li>{% include target_link href=932.2 section="#working-with-local-repos" text="Working with local repos" %} </li>
+* {% include target_link href=932.2 section="#1-install-git" text="Install Git" %}
+* {% include target_link href=932.2 section="#working-with-local-repos" text="Working with local repos" %}
 </div>
 </div>
 
@@ -603,22 +592,23 @@ To see a more detailed step-by-step guide with graphical aids to complete this e
 
 This exercise is designed to underscore the importance of using open-source tools for data analysis, emphasizing clear, well-commented scripts that can be easily shared and replicated.
 
-<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-weight:800;">Documenting Research with Jupyter Notebooks</span>
-<br><br><b>Objective:</b><br>
-Create a Jupyter Notebook that integrates code, outputs, and narrative, showcasing how this tool can enhance research documentation.
-<br><br><b>Instructions:</b><br>
-<b>1. Install Jupyter:</b> Follow the instructions at <a href="https://jupyter.org/install" target="_blank">https://jupyter.org/install</a>.<br>
-<b>2. Create a New Notebook:</b>
-<li>Navigate to your project folder.</li>
-<li>Launch Jupyter Notebook ausing command <code>jupyter lab</code>.</li>
-<li>Create a new notebook file using File option in the top menu bar. It will be saved in your File System.</li>
-<b>3. Document Your Process:</b>
-<li>Write a brief introduction in a <b>markdown cell</b> explaining what the notebook will achieve.</li>
-<li>Add separate <b>markdown cells</b> to explain each step, including your thought process and interpretation of results.</li>
-<li>Below each markdown cell include <b>code cells</b> to load a dataset and perform simple analyses (you will use them in Exercise 3).</li>
-<div style="background: #cff4fc; padding: 15px; margin-top: 10px; font-size: 18px;">
-<span style="font-weight:800;">PRO TIP:</span><br>
+<div class="exercise before" markdown="1" data-before="Documenting Research with Jupyter Notebooks">
+<base class="mt">
+**Objective:** <br>
+Create a Jupyter Notebook that integrates code, outputs, and narrative, showcasing how this tool can enhance research documentation. <base class="mb">
+**Instructions:** <br>
+**1. Install Jupyter:** Follow the instructions at <a href="https://jupyter.org/install" target="_blank">https://jupyter.org/install</a>.
+
+**2. Create a New Notebook:**
+* Navigate to your project folder.
+* Launch Jupyter Notebook using command `jupyter lab`.
+* Create a new notebook file using `File` option in the top menu bar. It will be saved in your **File System**.
+
+**3. Document Your Process:**
+* Write a brief introduction in a **markdown cell** explaining what the notebook will achieve.
+* Add more **markdown cells** to explain each step, including your thought process and interpretation of results.
+* Below each markdown cell include **code cells** to load a dataset and perform simple analyses. <br> *(you will use them in Exercise 3)*
+<div class="protip before mb-0 font-1" markdown="1" data-before="PRO TIP">
 To see a more detailed step-by-step guide with graphical aids to complete this exercise, navigate to tutorial {% include target_link href=412 %} and follow the installation steps in the {% include target_link href=412 section="#installing-jupyter" text="Installing Jupyter" %} hands-on section. Then jump to {% include target_link href=413 %} tutorial to launch Jupyter interface, learn about components in the GUI, create new notebook and add cells of various types. To start using rich text markup in your documentation, check out the {% include target_link href=933.5 %} tutorial.
 </div>
 </div>
@@ -628,18 +618,19 @@ To see a more detailed step-by-step guide with graphical aids to complete this e
 
 This exercise is designed to underscore the importance of using open-source tools for data analysis, emphasizing clear, well-commented scripts that can be easily shared and replicated.
 
-<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-weight:800;">Data Analysis in R or Python</span>
-<br><br><b>Objective:</b><br>
-Perform a basic data analysis using R or Python, focusing on making the script reproducible.
-<br><br><b>Instructions:</b><br>
-<b>1. Choose Your Tool</b>
-<li>Install <b>R</b> (programming language) and <b>RStudio</b> (develpment environment, DE)</li>
-&emsp; and/or
-<li>Insytall <b>Python</b> (programming language) and use <b>Jupyter Notebook</b> (develpment environment, DE)</li>
-<b>2. Analysis Task:</b>
-<li>Choose a simple dataset <i>(e.g., <b>Iris dataset</b> is available in both R and Python).</i></li>
-<li>Load the dataset.</li>
+<div class="exercise before" markdown="1" data-before="Data Analysis in R or Python">
+<base class="mt">
+**Objective:** <br>
+Perform a basic data analysis using R or Python, focusing on making the script reproducible. <base class="mb">
+**Instructions:** <br>
+**1. Choose Your Tool**
+* Install `R` *(programming language)* and `RStudio` *(develpment environment, DE)* <br>
+**and/or**
+* Insytall `Python` *(programming language)* and use `Jupyter Lab` *(develpment environment, DE)*
+<base class="mb">
+**2. Analysis Task:**
+* Choose a simple dataset *(e.g.,* `Iris dataset` *is available in both R and Python).*
+* Load the dataset.
 <details style="margin: 5px 0;"><summary style="background: #FFFACD; width:250px;">See Code Example</summary>
 
 <div style="background: #FFFACD; padding: 15px; font-size: 18px;">
@@ -662,10 +653,10 @@ iris = sns.load_dataset('iris')
 iris.head()
 </code>
 </div>
-</details>
-<b>3. Perform Basic Analysis:</b>
-<li>Perform simple statistical summaries (mean, median, standard deviation).</li>
-<li>Create a basic plot (e.g., scatter plot or histogram).</li>
+</details> <base class="mb">
+**3. Perform Basic Analysis:**
+* Perform simple statistical summaries (mean, median, standard deviation).
+* Create a basic plot *(e.g., scatter plot or histogram)*.
 <details style="margin: 5px 0;"><summary style="background: #FFFACD; width:265px;">See Code Example <i>(step 1)</i></summary>
 
 <div style="background: #FFFACD; padding: 15px; font-size: 18px;">
@@ -709,23 +700,20 @@ plt.title("Sepal Length vs. Sepal Width")
 plt.show()
 </code>
 </div>
-</details>
-<b>4. Ensure Reproducibility:</b>
-<li>Comment your code thoroughly.</li>
-<li>Include instructions for installing any required packages. Include info about used versions.</li>
- &emsp; <i>(You can draw inspiration from the code block instructions provided in the earlier steps of this exercise.)</i>
-<li>Save your script or notebook file.</li>
-<div style="background: #cff4fc; padding: 15px; margin-top: 10px; font-size: 18px;">
-<span style="font-weight:800;">PRO TIP:</span><br>
+</details> <base class="mb">
+**4. Ensure Reproducibility:**
+* Comment your code thoroughly.
+* Include instructions for installing any required packages. Include info about used versions. <br>
+*(You can draw inspiration from the code block instructions provided in the earlier steps of this exercise.)*
+* Save your script or notebook file.
+<div class="protip before mb-0 font-1" markdown="1" data-before="PRO TIP">
 To see a more detailed step-by-step guide with graphical aids to complete this exercise, explore the following tutorials:
-<li>{% include target_link href=413 %} </li>
-<li>{% include target_link href=420 %} </li>
-<li>{% include target_link href=531 %} </li>
-<li>{% include target_link href=536 %} </li><br>
-<li>{% include target_link href=431 %} </li>
-<li>{% include target_link href=430 %} </li>
-<li>{% include target_link href=541 %} </li>
-<li>{% include target_link href=544 %} </li>
+<table>
+<tr> <td><li>{% include target_link href=413 %}</li></td>  <td><li>{% include target_link href=431 %} </li></td></tr>
+<tr> <td><li>{% include target_link href=420 %}</li></td>  <td><li>{% include target_link href=430 %} </li></td></tr>
+<tr> <td><li>{% include target_link href=531 %}</li></td>  <td><li>{% include target_link href=541 %} </li></td></tr>
+<tr> <td><li>{% include target_link href=536 %}</li></td>  <td><li>{% include target_link href=544 %} </li></td></tr>
+</table>
 </div>
 </div>
 
@@ -734,34 +722,41 @@ To see a more detailed step-by-step guide with graphical aids to complete this e
 
 This exercise is designed to highlight the importance of collaboration and community engagement in ensuring reproducibility and quality in research.
 
-<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-weight:800;">Community Standards and Collaboration using GitHub</span>
-<br><br><b>Objective:</b><br>
-Explore collaborative features of GitHub, such as issues and pull requests, to understand community standards in code development.
-<br><br><b>Instructions:</b><br>
-<b>1. Create a GitHub Account online:</b> Sign up at <a href="https://github.com/" target="_blank">https://github.com/</a> if you haven't already. (It is free.)<br>
-<b>2. Ceate Your Own Empty Repository:</b>
-<li>Navigate to the Repositories tab and click the "New" button.</li>
-<li>Name your repository and add a brief description. Ensure the repository is set to public.</li>
-<li>Initialize the repository without a README, .gitignore, or license (because you initialized your repo locally in the previous exercise).</li>
-<li>Navigate to your GitHub repository page, click the "Code" button, and then copy the URL of your repo to the clipboard. (You will use it in the next step.)</li>
-<b>3. Push Changes from Your Locally Created Git Repository:</b>
-<li>Open terminal or Git Bash on your computing machine.</li>
-<li>Navigate to the folder containing your Jupyter Notebook.</li>
-<li>Link your local repository to the GitHub repository you created using </li>
- &emsp; <code>git remote add origin [repository-URL]</code>
-<li>Push your changes to GitHub using </li>
- &emsp; <code>git push -u origin master</code> or <code>git push -u origin main</code><br>
- &emsp; depending on your default branch name.<br>
-<b>4. Share Your Notebook via GitHub:</b>
-<li>Ensure your Jupyter Notebook is clearly named and includes comments or markdown cells that explain the analysis steps.</li>
-<li>After pushing, navigate to your GitHub repository online to verify that your notebook is visible and accessible.</li>
-<li>Once your Jupyter Notebook is on GitHub, you can preview it directly in the browser and copy the URL to share it with your collaborators. For broader context, you can also send the link to the entire repository if needed, allowing others to access not only the notebook but any associated data and documentation.</li><br>
-<b>Optional Steps for Further Engagement:</b> <br>
-<b>5. Fork a Repository:</b> Explore other users' repositories related to your research interests, fork one, and consider contributing by adding improvements or additional analysis.<br>
-<b>6. Engage with the Community:</b> Participate in discussions, open issues for any bugs you find, or offer solutions to existing issues. Collaboration is key to advancing reproducible research.
-<div style="background: #cff4fc; padding: 15px; margin-top: 10px; font-size: 18px;">
-<span style="font-weight:800;">PRO TIP:</span><br>
+<div class="exercise before" markdown="1" data-before="Community Standards and Collaboration using GitHub">
+<base class="mt">
+**Objective:** <br>
+Explore collaborative features of GitHub, such as issues and pull requests, to understand community standards in code development. <base class="mb">
+**Instructions:** <br>
+**1. Create a GitHub Account online:** <br>
+Sign up at <a href="https://github.com/" target="_blank">https://github.com/</a> if you haven't already. *(It is free.)* <base class="mb">
+**2. Ceate Your Own Empty Repository:**
+* Navigate to the Repositories tab and click the `"New"` button.
+* Name your repository and add a brief description. Ensure the repository is set to public.
+* Initialize the repository without a `README`, `.gitignore`, or `license` because you initialized your repo locally in the previous exercise.
+* Navigate to your GitHub repository page, click the "Code" button, and then copy the URL of your repo to the clipboard. *(You will use it in the next step.)*
+<base class="mb">
+**3. Push Changes from Your Locally Created Git Repository:**
+* Open terminal or Git Bash on your computing machine.
+* Navigate to the folder containing your Jupyter Notebook.
+* Link your local repository to the GitHub repository you created using:
+```bash
+git remote add origin [repository-URL]
+```
+* Push your changes to GitHub using:
+```bash
+git push -u origin master                   # or git push -u origin main
+```
+depending on your default branch name.
+<base class="mb">
+**4. Share Your Notebook via GitHub:**
+* Ensure your Jupyter Notebook is clearly named and includes comments or markdown cells that explain the analysis steps.
+* After pushing, navigate to your GitHub repository online to verify that your notebook is visible and accessible.
+* Once your Jupyter Notebook is on GitHub, you can preview it directly in the browser and copy the URL to share it with your collaborators. For broader context, you can also send the link to the entire repository if needed, allowing others to access not only the notebook but any associated data and documentation.
+
+**Optional Steps for Further Engagement:** <base class="mb">
+**5. Fork a Repository:** Explore other users' repositories related to your research interests, fork one, and consider contributing by adding improvements or additional analysis. <base class="mb">
+**6. Engage with the Community:** Participate in discussions, open issues for any bugs you find, or offer solutions to existing issues. Collaboration is key to advancing reproducible research.
+<div class="protip before mb-0 font-1" markdown="1" data-before="PRO TIP">
 To see a more detailed step-by-step guide with graphical aids to complete this exercise, navigate to tutorial {% include target_link href=932.2 %} and follow the steps in the {% include target_link href=932.2 section="#working-with-remote-repos" text="Working with remote repos" %} hands-on section. You can engage further by exploring the {% include target_link href=932.2 section="#collaborating-on-projects" text="Collaborating on projects" %}.
 </div>
 </div>

@@ -33,10 +33,8 @@ Productivity in research isn't merely about speeding through tasks or ticking of
 And just as a ship is only as strong as its crew, **effective collaboration** and delegation are paramount. Sharing the workload not only lightens your burden but also empowers your team, fostering a spirit of unity and shared purpose. Yet, amidst the hustle of navigating through research tasks, remember the importance of **maintaining well-being** as it's crucial for sustaining your work over the long term.
 
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-style:italic;">
+<div class="note" markdown="1">
 Productivity is the efficiency with which a researcher or research team transforms resources, including time, funding, and equipment, into valuable outcomes, insights, or innovations, often measured by the quality and impact of publications, breakthroughs, and real-world applications achieved within a given timeframe.
-</span>
 </div>
 
 # Boosting Productivity
@@ -47,8 +45,8 @@ Boosting productivity in your research is akin to building a strong, resilient s
 
 ## 1. Set Clear Goals
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-style:italic;">Define what you aim to achieve, both in the short term and long term. This will guide your daily tasks and motivate you. </span>
+<div class="protip" markdown="1">
+<span style="font-style:italic;">Define what you aim to achieve, both in the short term and long term. <br> This will guide your daily tasks and motivate you.
 </div>
 
 Effective goal setting is crucial for the success of research project or personal endeavor. Utilizing the SMART criteria can help ensure that your goals are well-defined and achievable, whether they are short-term tasks or long-term objectives.
@@ -75,9 +73,8 @@ Make sure to leverage the SMART criteria that transform your goals from vague as
 |**Relevant**| Choose goals that directly contribute to the progress of your research project, ensuring that each task is aligned with your overall research objectives.|Ensure your long-term goals align with the broader aims of your field, potentially contributing to significant advancements or addressing key challenges.|
 |**Time-bound**| Assign deadlines to short-term goals to maintain momentum and ensure timely progress toward larger milestones.| Establish a realistic timeline for achieving long-term goals, considering factors like research phases, funding cycles, and publication processes.|
 
-**EXAMPLE:** The table below outlines a concise example of setting and achieving SMART goals for a research project in agriculture.
-
-<div style="background: #FFFACD; padding: 15px; margin-bottom: 20px; font-size: 20px;">
+<div class="example" markdown="1">
+*The table below outlines a concise example of setting and achieving SMART goals for a research project in agriculture.* <base class="mb">
 <table style="margin: 0;"><tr><th>step</th><th>Short-Term Goal (Next 3 Months)</th><th>Long-Term Goal (Next 3 Years)</th></tr>
   <tr>
     <td><b>Reflection</b></td>
@@ -110,30 +107,37 @@ Make sure to leverage the SMART criteria that transform your goals from vague as
 
 ### <i><span style="color: #EC8000; ">EXERCISE</span></i>
 
-<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-weight:800;">How Do I Effectively Set SMART Goals?</span>
-<br><br><span style="font-style:italic;"><b>Step 1: Reflection</b><br>
-Start with a broad reflection on what you want to achieve in both the immediate future and down the line. <br>Consider your values, interests, and the impact you wish to have.
-<br><br><b>Step 2: Breakdown</b><br> Break down long-term goals into smaller, manageable short-term goals. <br>This approach makes the long-term goals less daunting and provides a clear path forward.
-<br><br><b>Step 3: Prioritize</b><br> With a list of potential goals, prioritize them based on their relevance and urgency. <br>Focus on those that will have the most significant impact on your long-term objectives.
-<br><br><b>Step 4: Plan</b><br> Develop a detailed plan for each goal, including the steps needed to achieve it, resources required, and potential obstacles. <br>This plan should be revisited and adapted as you make progress.
-<br><br><b>Step 5: Review and Adjust</b><br> Regularly review your goals to ensure they remain relevant and achievable. <br>Be prepared to adjust your plans as needed in response to new information or changing circumstances.
-</span>
+<div class="exercise before" markdown="1" data-before="How Do I Effectively Set SMART Goals?">
+<base class="mt">
+**Step 1: Reflection** <br>
+*Start with a broad reflection on what you want to achieve in both the immediate future and down the line.* <br>
+*Consider your values, interests, and the impact you wish to have.* <base class="mb">
+**Step 2: Breakdown** <br>
+*Break down long-term goals into smaller, manageable short-term goals.* <br>
+*This approach makes the long-term goals less daunting and provides a clear path forward.* <base class="mb">
+**Step 3: Prioritize** <br>
+*With a list of potential goals, prioritize them based on their relevance and urgency.* <br>
+*Focus on those that will have the most significant impact on your long-term objectives.* <base class="mb">
+**Step 4: Plan** <br>
+*Develop a detailed plan for each goal, including the steps needed to achieve it, resources required, and potential obstacles.* <br>
+*This plan should be revisited and adapted as you make progress.* <base class="mb">
+**Step 5: Review and Adjust** <br>
+*Regularly review your goals to ensure they remain relevant and achievable.* <br>
+*Be prepared to adjust your plans as needed in response to new information or changing circumstances.*
 </div>
 
 ---
 
 ### Celebrate Small Wins
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-style:italic;">Recognizing and celebrating small accomplishments can boost morale and motivation.  Whether through team meetings, informal gatherings, or even digital shout-outs, find ways to shine a light on the small victories.</span>
+<div class="protip" markdown="1">
+Recognizing and celebrating small accomplishments can boost morale and motivation.  Whether through team meetings, informal gatherings, or even digital shout-outs, find ways to shine a light on the small victories.
 </div>
 
 The journey of research is often long and strewn with challenges, making it easy to lose sight of progress. This is where the power of celebrating small wins becomes evident. Small wins are the milestones that mark your journey toward larger goals. They serve as evidence of progress, however incremental, keeping the flame of motivation alive. Celebrating these achievements fosters a culture of recognition and appreciation within the team, highlighting the value of every team member's contributions.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">Incorporating the habit of <b>celebrating your own small wins</b> requires intentional effort. You might start a journal to track and reflect on daily or weekly achievements, set aside time for a small reward when you reach a milestone, or simply pause to acknowledge the completion of a task before moving on to the next.  </span>
+<div class="note" markdown="1">
+Incorporating the habit of <b>celebrating your own small wins</b> requires intentional effort. You might start a journal to track and reflect on daily or weekly achievements, set aside time for a small reward when you reach a milestone, or simply pause to acknowledge the completion of a task before moving on to the next.
 </div>
 
 Acknowledging small wins helps to:
@@ -164,17 +168,19 @@ Acknowledging small wins helps to:
 
 ### <i><span style="color: #EC8000; ">EXERCISE</span></i>
 
-<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-weight:800;">Reflecting on Your Most Recent Small Achievement</span>
-<br><br><span style="font-style:italic;"><b>Step 1: Identify Your Achievement</b><br>
-Think about the most recent small achievement in your research work or personal life, especially something you've worked hard on or for a long time.
-<br><br><b>Step 2: Reflect on Your Progress</b><br> Take a moment to reflect on your personal development over the last 6 months. What new skills or knowledge have you acquired?
-<br><br><b>Step 3: Select a Celebration Method</b><br> Go ahead and celebrate your achievement using the method that resonates with you. Allow yourself to fully enjoy this moment. <br>If it's a team achievement, consider organizing a group-oriented celebration!
-<br><br><b>Step 4: Reflect on the Impact</b><br> After celebrating, take some time to reflect on how this activity impacted your mood and motivation. Consider:
-<li>How do I feel now compared to before the celebration?</li>
-<li>Has this affected my outlook on future tasks or challenges?</li>
-<li>What does this tell me about the importance of acknowledging my own progress?</li>
-</span>
+<div class="exercise before" markdown="1" data-before="Reflecting on Your Most Recent Small Achievement">
+<base class="mt">
+**Step 1: Identify Your Achievement** <br>
+*Think about the most recent small achievement in your research work or personal life, especially something you've worked hard on or for a long time.* <base class="mb">
+**Step 2: Reflect on Your Progress** <br>
+*Take a moment to reflect on your personal development over the last 6 months.* <br> *What new skills or knowledge have you acquired?* <base class="mb">
+**Step 3: Select a Celebration Method** <br>
+*Go ahead and celebrate your achievement using the method that resonates with you. Allow yourself to fully enjoy this moment. If it's a team achievement, consider organizing a group-oriented celebration!* <base class="mb">
+**Step 4: Reflect on the Impact** <br>
+*After celebrating, take some time to reflect on how this activity impacted your mood and motivation.* <br> &emsp; ***Consider:***
+* *How do I feel now compared to before the celebration?*
+* *Has this affected my outlook on future tasks or challenges?*
+* *What does this tell me about the importance of acknowledging my own progress?*
 </div>
 
 ## 2. Organize Your Research
@@ -183,8 +189,10 @@ Efficiently organizing your research activities is not merely a procedural task.
 
 ### Break Tasks into Manageable Steps
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-style:italic;">Divide larger tasks into smaller, actionable steps to make them less daunting. <br>Resist the urge to be a multitasking hero - being a single-tasking legend is where it's at. You’ll get things done faster and better that way.</span>
+<div class="protip" markdown="1">
+* Divide larger tasks into smaller, actionable steps to make them less daunting.
+* Resist the urge to be a multitasking hero - being a single-tasking legend is where it's at.
+<base class="mt"> You’ll get things done faster and better that way.
 </div>
 
 Ever looked at your project and thought: "*How on earth am I going to tackle this?*" Yeah, we've all been there. <br>
@@ -218,31 +226,31 @@ Here's why multitasking can trip you up:
 
 This exercise is designed to give you hands-on experience with organizing a project and focusing your efforts. By actively engaging in these strategies, you'll develop a better understanding of how to apply them to larger, more complex research projects.
 
-<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-weight:800;">Plan Manageable Steps in Your Project</span>
-<br><br><span style="font-style:italic;"><b>Part 1: Break Tasks into Manageable Steps</b><br>
-Pick a topic you're interested in, example: "The impact of daily walks on mental health". <br>
-Write down the main components of your project. Then, take each main component and divide it into smaller, actionable steps.<br>
-Decide which steps need to happen first and assign a rough timeline to each. This helps you see how tasks overlap and what needs immediate attention.
-<br><br><b>Part 2: Avoid Multitasking and Focus on One Step at a Time</b><br>
- Using the steps you've outlined, dedicate a set amount of time to work on just one step. <br>Start with 25 minutes of focused work, followed by a 5-minute break. (Pomodoro Technique)
-<div style="background: #cff4fc; padding: 15px; margin: 10px 0; font-size: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;"> Before starting, remove potential distractions. This could mean turning off phone notifications, closing unrelated browser tabs, or finding a quiet place to work. </span>
-</div>
-<b>Part 3: Reflect on Your Performance</b><br> After each work session, take a few minutes to reflect on the experience of focusing on one task.
-<li>Did you find it more productive?</li>
-<li>What challenges did you face?</li>
-<li>How did breaking down the project into smaller steps affect your approach to starting and completing tasks?</li>
-<li>How did this exercise change your perception of multitasking and task management in research?</li>
-</span>
+<div class="exercise before" markdown="1" data-before="Plan Manageable Steps in Your Project">
+<base class="mt">
+**Part 1: Break Tasks into Manageable Steps** <br>
+Pick a topic you're interested in, example: *"The impact of daily walks on mental health"*. <br>
+Write down the main components of your project. Then, take each main component and divide it into smaller, actionable steps. Decide which steps need to happen first and assign a rough timeline to each. <br>
+*This helps you see how tasks overlap and what needs immediate attention.* <base class="mb">
+**Part 2: Avoid Multitasking and Focus on One Step at a Time** <br>
+Using the steps you've outlined, dedicate a set amount of time to work on just one step. <br>
+**TIP:** Start with 25 minutes of focused work, followed by a 5-minute break. *(Pomodoro Technique)*
+<div class="protip font-1 before mb-0" markdown="1" data-before="PRO TIP">
+Before starting, remove potential distractions. This could mean turning off phone notifications, closing unrelated browser tabs, or finding a quiet place to work.
+</div> <base class="mt">
+**Part 3: Reflect on Your Performance** <br>
+After each work session, take a few minutes to reflect on the experience of focusing on one task.
+* *Did you find it more productive?*
+* *What challenges did you face?*
+* *How did breaking down the project into smaller steps affect your approach to starting and completing tasks?*
+* *How did this exercise change your perception of multitasking and task management in research?*
 </div>
 
 
 ### Centralize Information
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-style:italic;">Use a central platform where all team members can access necessary information. This reduces the friction of searching for data, references, or resources. </span>
+<div class="protip" markdown="1">
+Use a central platform where all team members can access necessary information. This reduces the friction of searching for data, references, or resources.
 </div>
 
 **Have you ever experienced the frustration of searching for a specific piece of data you are certain you saved, only to find it elusive?** <br>
@@ -263,9 +271,8 @@ Here's a table comparing the pros and cons of a well-organized and well-document
 | *example* | <b><span style="color: green;">Good Central Repo Example</span></b>| <b><span style="color: red;">Bad Randomized Data Storage Example</span></b> |
 ||*A research team used GitHub to centralize their code, documentation, and results for a multi-year data science project. This setup allowed for seamless collaboration across institutions, easy onboarding of new team members, and efficient project tracking, significantly accelerating their research publication timeline.* | *In a hastily organized study, one team stored datasets on various local machines, shared files via email, and kept crucial documentation in paper notes. This disorganization led to lost data when a team member left, delayed analysis due to inaccessible information, and ultimately, a significant setback in their research project's progress.* |
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">Using a central platform to store all your project information, including data, documentation, and resources, practically ensures that everyone on the team can find what they need without sifting through emails, chat histories, or multiple versions of documents. For instance, <a href="https://github.com" target="_blank">GitHub  ⤴</a> is fantastic for version control and collaboration on code, while High-Performance Computing <b>(HPC) storage</b> solutions offer robust options for storing large datasets securely.  </span>
+<div class="note" markdown="1">
+Using a central platform to store all your project information, including data, documentation, and resources, practically ensures that everyone on the team can find what they need without sifting through emails, chat histories, or multiple versions of documents. For instance, <a href="https://github.com" target="_blank">GitHub  ⤴</a> is fantastic for version control and collaboration on code, while High-Performance Computing **(HPC) storage** solutions offer robust options for storing large datasets securely.
 </div>
 
 For a deep dive into setting up and using these platforms effectively, **check out the dedicated tutorials in the workbook**. They’ll walk you through everything from the basics to pro tips, ensuring your project's info is as accessible and organized as possible.
@@ -276,8 +283,8 @@ For a deep dive into setting up and using these platforms effectively, **check o
 
 ### Stay Organized
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-style:italic;">Keep your workspace tidy, and use tools or apps to manage your tasks and projects. By keeping both your physical and digital spaces organized, you’re setting yourself up for success. </span>
+<div class="protip" markdown="1">
+Keep your workspace tidy, and use tools or apps to manage your tasks and projects. By keeping both your physical and digital spaces organized, you’re setting yourself up for success.
 </div>
 
 Staying organized is more than just a clean desk. It’s about keeping your digital life sorted too. There are tons of tools and apps out there designed to keep your tasks and projects as neat as a row of books on a shelf. Whether it’s <a href="https://" target="_blank">Trello  ⤴</a> for tracking your to-dos, <a href="https://" target="_blank">Evernote  ⤴</a> for jotting down your brilliant ideas, or <a href="https://" target="_blank">GitHub  ⤴</a> for storing your files in the cloud, finding the right tools can turn chaos into calm. Using these aids, you’ll spend less time searching for things and more time doing what you do best: making progress on your research.
@@ -321,15 +328,15 @@ Create a structured folder system on your computer or cloud storage service (lik
 
 ### Regular Backup
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-style:italic;">Always have backups of critical data and assets. Data loss can be a massive setback for research projects. </span>
+<div class="protip" markdown="1">
+Always have backups of critical data and assets. Data loss can be a massive setback for research projects.
 </div>
 
 Imagine spending months on your research, only to lose everything because of a computer crash or a misplaced flash drive. *Ouch, right?* <br>
 That's why backing up your data isn’t just a good idea - it’s a non-negotiable part of your workflow. Think of it as an insurance policy for your research work.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-style:italic;">Backing up your data regularly ensures that even if you face hardware failure, theft, or accidental deletion, your hard work won’t be lost in the void.<br> It’s about peace of mind, knowing your research can withstand almost anything life throws at it. </span>
+<div class="note" markdown="1">
+Backing up your data regularly ensures that even if you face hardware failure, theft, or accidental deletion, your hard work won’t be lost in the void. It’s about peace of mind, knowing your research can withstand almost anything life throws at it.
 </div>
 
 Here's how to make sure your data stays safe and sound:
@@ -342,18 +349,17 @@ Here's how to make sure your data stays safe and sound:
 | version control | If you’re working with code or documents, version control systems like Git can track changes and back up your work. |
 | regular intervals  | Set a schedule for your backups: daily, weekly, or after any major update to your work. |
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">Follow a golden standard: 3-2-1 backup rule. <br>
-Have at least three total copies of your data, two of which are local but on different devices, and one copy off-site (like cloud storage). <br>
-This way, you’re covered from all angles. </span>
+<div class="protip" markdown="1">
+**Follow a golden standard: 3-2-1 backup rule.** Have at least three total copies of your data, two of which are local but on different devices, and one copy off-site (like cloud storage). <br>
+This way, you’re covered from all angles.
 </div>
 
 
 ### Good Documentation
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-style:italic;">When crafting documentation, lay out a roadmap so that your future self, or anyone else who picks up your work, <br>can understand <b>the what, why, and how of the project.</b> It’s a lifesaver when you need to revisit a project after some time. </span>
+<div class="protip" markdown="1">
+When crafting documentation, lay out a roadmap so that your future self, or anyone else who picks up your work, can understand the `what`, `why`, and `how` **of the project**. <br>
+It’s a lifesaver when you need to revisit a project after some time.
 </div>
 
 ***Ever tried retracing your steps in a project only to find that past-you left no clues?*** <br>
@@ -387,14 +393,14 @@ To ensure your project's documentation serves as a valuable resource rather than
 ### <i><span style="color: #EC8000; ">EXERCISE</span></i>
 This exercise aims to reflect on your current practices in managing and organizing project-related data and information. Consider the following open questions and compare your answers with the provided guidelines to understand what constitutes good and bad practices.
 
-<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-weight:800;">Data and Information Management Practices</span>
-<br><br><span style="font-style:italic;"><b>Where do you currently store your project's data and documentation?</b><br>
+<div class="exercise before" markdown="1" data-before="Data and Information Management Practices">
+<base class="mt">
+***Where do you currently store your project's data and documentation?*** <br>
 <details><summary>See the recommendations</summary>
 
 <span style="color: #005920;">Storing data and documentation in a centralized, accessible platform (e.g., GitHub, Bitbucket, long-term HPC storage or a dedicated project management tool) is recommended for easy access and collaboration.</span> <span style="color: #AF0000;">Storing files across disparate, unconnected locations such as local machines, various online repositories, or physical notes is a bad practice due to the risk of data loss, inefficiency, and security vulnerabilities.</span>
-</details>
-<br><b>How do you ensure that all team members have access to the latest version of a document or dataset?</b><br>
+</details><br>
+***How do you ensure that all team members have access to the latest version of a document or dataset?*** <br>
 <details><summary>See the recommendations</summary>
 
 <span style="color: #005920;">Utilizing version control systems (like Git) and centralized repositories ensures that all team members have access to the latest versions.</span><br> <span style="color: #AF0000;">Failing to implement a version control system or relying on email and physical copies leads to confusion, duplication of work, and errors.</span>
@@ -403,18 +409,17 @@ This exercise aims to reflect on your current practices in managing and organizi
 <details><summary>See the recommendations</summary>
 
 <span style="color: #005920;">Implementing robust security protocols, such as encrypted storage, access controls, and regular backups, are good practices. </span> <span style="color: #AF0000;">Neglecting security measures or assuming default settings provide sufficient protection without verification are bad practices that expose data to potential breaches and loss.</span>
-</details>
-<br><b>How do you document changes and decisions related to your project?</b>
+</details><br>
+***How do you document changes and decisions related to your project?*** <br>
 <details><summary>See the recommendations</summary>
 
 <span style="color: #005920;">Maintaining comprehensive documentation within the central repository, including change logs and decision rationales, is a good practice. </span><br> <span style="color: #AF0000;">Sporadic or non-existent documentation, especially when changes are communicated verbally or through informal channels without record, <br>is a bad practice that hinders project continuity and accountability.</span>
-</details>
-<br><b>What strategy do you use for backing up project data?</b>
+</details><br>
+***What strategy do you use for backing up project data?*** <br>
 <details><summary>See the recommendations</summary>
 
 <span style="color: #005920;">Regularly scheduled backups to multiple locations, including cloud services and physical drives, following the 3-2-1 backup rule <br>(3 total copies of your data, 2 of which are local but on different devices, and 1 copy off-site) is a good practice.</span><br> <span style="color: #AF0000;">Random or infrequent backups, or relying on a single backup solution, are bad practices that increase the risk of irrecoverable data loss.</span>
 </details>
-</span>
 </div>
 
 **Compiled Guide of Recommended Practices**
@@ -438,14 +443,14 @@ By adopting key strategies for organizing your tasks, meet deadlines more comfor
 
 ### Set Deadlines
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-style:italic;">Add deadlines to all tasks, even those without set due dates. Having a deadline can create a sense of purpose and urgency to complete tasks. </span>
+<div class="protip" markdown="1">
+Add deadlines to all tasks, even those without set due dates. Having a deadline can create a sense of purpose and urgency to complete tasks.
 </div>
 
 Setting deadlines is a powerful tool in the arsenal of time management strategies, transforming endless tasks into upcoming events. By assigning specific end dates to every task, including those inherently without deadlines, you create a structured roadmap of your project. This not only instills a sense of urgency and commitment but also facilitates better planning and prioritization.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-style:italic;">Deadlines serve as mini-milestones, offering clear targets to aim for and opportunities to celebrate progress, significantly enhancing motivation and productivity. </span>
+<div class="note" markdown="1">
+Deadlines serve as mini-milestones, offering clear targets to aim for and opportunities to celebrate progress, significantly enhancing motivation and productivity.
 </div>
 
 **Here are some practical solutions to effectively set deadlines, due dates, and mini-milestones:**
@@ -477,10 +482,10 @@ Setting deadlines is a powerful tool in the arsenal of time management strategie
 ### <i><span style="color: #EC8000; ">EXERCISE</span></i>
 This exercise is designed to help you prioritize tasks, set realistic deadlines, and manage your workload more efficiently. Enjoy the process and use it as an opportunity to gain clarity and focus in your research.
 
-<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-weight:800;">Unlock the Strategic Time Management: <i>It's Easier Than You Think!</i></span>
-<br><br><span style="font-style:italic;"><b>Part 1: Visual Mapping of Your Projects</b><br>
-This will provide a clear overview of your projects and tasks, aiding in better understanding of your workload.<br>
+<div class="exercise before" markdown="1" data-before="Unlock the Strategic Time Management - It's Easier Than You Think!">
+<base class="mt">
+**Part 1: Visual Mapping of Your Projects** <br>
+*This will provide a clear overview of your projects and tasks, aiding in better understanding of your workload.* <br>
 <details><summary>See instructions</summary>
 
 <li>Take a large sheet of paper or use a digital drawing tool.</li>
@@ -489,46 +494,45 @@ This will provide a clear overview of your projects and tasks, aiding in better 
 <li>For each task, add a second layer detailing specific details or subtasks.</li>
 <li>Analyze the connections between projects and identify any overlapping tasks or similarities.</li>
 <li>Determine the priority of each task based on importance and urgency.</li>
-</details>
-<br><b>Part 2: Setting Deadlines using Gantt Chart</b><br>
-This will provide a structured timeline for your tasks, ensuring no overload periods and special attention around bottlenecks.<br>
+</details><br>
+**Part 2: Setting Deadlines using Gantt Chart** <br>
+*This will provide a structured timeline for your tasks, preventing overload periods and addressing bottlenecks.*
 <details><summary>See instructions</summary>
 
 <li>Transfer your visual mapping onto a Gantt chart, either on paper or using software like Microsoft Excel.</li>
 <li>Assign deadlines to each task based on their priority and dependencies.</li>
 <li>Ensure that tasks with higher priority are allocated appropriate time slots.</li>
 <li>Use different colors or shading to represent different projects or task categories.</li>
-</details>
-<br><b>Part 3: Setting Reminders in the Digital Calendar</b> <br>
-This will help you stay organized and ensure you're aware of upcoming deadlines well in advance.
+</details><br>
+**Part 3: Setting Reminders in the Digital Calendar** <br>
+*This will help you stay organized and ensure you're aware of upcoming deadlines well in advance.*
 <details><summary>See instructions</summary>
 
 <li>Once you've finalized your Gantt chart, add key deadlines as events to your digital calendar (e.g., Google Calendar, Microsoft Outlook).</li>
 <li>Set reminders for each deadline, scheduling alerts one month and one week before the task is due.</li>
-</details>
-<br><b>REFLECTION</b><br>
-Take a moment to reflect on these questions and gain valuable insights into your project management process.<br><br>
-<b><li>Did creating the visual mapping and Gantt chart help clarify the scope of your current projects?</li>
-<li>Have you discovered any new insights or connections between tasks during the exercise?</li>
-<li>Did the exercise assist in assessing priorities and adjusting deadlines effectively?</li>
-<li>How much did your initial assumptions about project timelines differ from the reality revealed by the Gantt chart?</li>
-<li>Did the Gantt chart highlight any overload periods or bottleneck phases that could potentially delay the project?</li></b>
-<br>When you come back here after a month or so...<br>
-<b><li>Reflecting on your use of calendar reminders, how effective were they in completing tasks before deadlines without last-minute rush and stress?</li></b>
-</span>
+</details><br>
+**REFLECTION** <br>
+Take a moment to reflect on these questions and gain valuable insights into your project management process. <base class="mb">
+* *Did creating the visual mapping and Gantt chart help clarify the scope of your current projects?*
+* *Have you discovered any new insights or connections between tasks during the exercise?*
+* *Did the exercise assist in assessing priorities and adjusting deadlines effectively?*
+* *How did your initial assumptions about project timelines differ from the reality revealed by the Gantt chart?*
+* *Did the Gantt chart reveal any overload periods or bottlenecks that might delay the project?* <base class="mb">
+***When you come back here after a month or so...***
+* *Reflecting on your use of calendar reminders, how effective were they in completing tasks before deadlines without last-minute rush and stress?*
 </div>
 
 
 ### Review & Reflect
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-style:italic;">At the end of the week or month, review your accomplishments and reflect on what could be improved. <br>This practice not only helps you appreciate your progress but also sharpens your focus on where you need to go next. </span>
+<div class="protip" markdown="1">
+At the end of the week or month, review your accomplishments and reflect on what could be improved. <br>This practice not only helps you appreciate your progress but also sharpens your focus on where you need to go next.
 </div>
 
 Taking time to review and reflect on your work isn't just about patting yourself on the back for jobs well done. It's a crucial strategy for continuous improvement and effective time management. By periodically assessing your progress, you can identify what's working well and pinpoint areas needing a tweak or a complete overhaul. This process ensures that your efforts remain aligned with your objectives, and you can adjust your strategies as needed to stay on course.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-style:italic;">Reflection allows you to recognize patterns in your work habits that could be optimized, leading to smarter work, not just harder work. Celebrating milestones along the way boosts morale and reinvigorates your commitment to the project. </span>
+<div class="note" markdown="1">
+Reflection allows you to recognize patterns in your work habits that could be optimized, leading to smarter work, not just harder work. Celebrating milestones along the way boosts morale and reinvigorates your commitment to the project.
 </div>
 
 **Reflective Questions for Better Productivity**<br>
@@ -554,14 +558,14 @@ The topics listed below can serve as starting points for deeper reflection on sp
 
 ### Continue Learning
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-style:italic;">Invest time in learning new productivity techniques, tools, or software that can help you streamline your tasks. <br>Making this a habit can significantly boost your efficiency and overall workflow. </span>
+<div class="protip" markdown="1">
+Invest time in learning new productivity techniques, tools, or software that can help you streamline your tasks. <br>Making this a habit can significantly boost your efficiency and overall workflow.
 </div>
 
 Continuously seeking out new knowledge and skills is not just about personal growth. It's a strategic approach to staying ahead in the fast-paced world of research. By investing time in learning new techniques and tools, you not only enhance your productivity in a current workflow but also prepare yourself for future challenges. This ongoing quest for improvement ensures you're always working at your best, equipped with the latest strategies to manage your time and resources effectively.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-style:italic;">Embracing new learning opportunities can lead to innovative solutions for your research challenges, fostering a more dynamic and adaptable work environment. </span>
+<div class="note" markdown="1">
+Embracing new learning opportunities can lead to innovative solutions for your research challenges, fostering a more dynamic and adaptable work environment.
 </div>
 
 Here are some ideas of easily applicable tips & tricks for self-development:
@@ -583,14 +587,17 @@ Take advantage of `online courses`, `tutorials`, `webinars` and `articles` avail
 ### <i><span style="color: #EC8000; ">EXERCISE</span></i>
 This exercise is designed to kickstart your day with clarity and purpose. The recommended proactive approach involves spending just 5-10 minutes revising your plan for the day, allowing you to schedule your tasks in a manageable order. By planning ahead, you can optimize your time for productivity and leave room for enjoyable activities or learning opportunities, taking a daily step toward your self-development. This practice also helps reduce the stress of the unknown and prevents feeling overwhelmed. *Whether it's for work or just tackling your personal to-dos, trust me, this approach really works.*
 
-<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-weight:800;">Crafting Your To-Do List for a Productive and Fulfilling Day</span>
-<br><br><b>Step 1: Select a digital note-taking app</b><br>
-Grab a pen and paper or open a digital note-taking app. Opting for a single digital note-taking app for your daily to-do list is not only convenient but also offers the advantage of keeping a comprehensive history of your tasks, serving as valuable documentation. <br>
-For Mac users, the built-in <a href="https://support.apple.com/guide/notes/welcome/mac" target="_blank">Notes app  ⤴</a> provides a simple and convenient tool for jotting down notes and creating lists. On Windows, <a href="https://www.microsoft.com/en-us/microsoft-365/onenote/digital-note-taking-app" target="_blank">OneNote  ⤴</a> offers similar functionality, while Linux users can utilize applications like <a href="https://simplenote.com" target="_blank">Simplenote  ⤴</a> for easy note-taking and list management.
-<details><summary><b>PRO TIP</b></summary>
+<div class="exercise before" markdown="1" data-before="Crafting Your To-Do List for a Productive and Fulfilling Day">
+<base class="mt">
+**Step 1: Select a digital note-taking app** <br>
+Grab a pen and paper or open a digital note-taking app. <br>
+**TIP:** Opting for a single digital note-taking app for your daily to-do list is not only convenient but also offers the advantage of keeping a comprehensive history of your tasks, serving as valuable documentation.
+* For Mac users, the built-in <a href="https://support.apple.com/guide/notes/welcome/mac" target="_blank">Notes app  ⤴</a> provides a simple and convenient tool for jotting down notes ,
+* on Windows, <a href="https://www.microsoft.com/en-us/microsoft-365/onenote/digital-note-taking-app" target="_blank">OneNote  ⤴</a> offers similar functionality, including creating lists,
+* while Linux users can utilize applications like <a href="https://simplenote.com" target="_blank">Simplenote  ⤴</a> for easy note-taking and list management.
+<details><summary style="background-color: #cff4fc; width: 20%;">More Options...</summary>
 
-<div style="background: #cff4fc; padding: 15px; margin: 10px 0; font-size: 20px;">
+<div style="background: #cff4fc; padding: 15px; margin: 0 0; font-size: 1em;">
 <span style="font-style:italic;">You can also leverage spreadsheet tools like Excel or LibreOffice to organize your tasks. Create monthly sheets within a single file for the entire year, with each day represented in columns and your to-do tasks listed in rows. This method allows for easy tracking and organization of your daily agenda in a structured format. </span>
 <table border="1" style="margin: 0 0;">
   <tr><th>Date</th><th>Feb 1</th><th>Feb 2 - today</th><th>Feb 3</th><th>Feb 4</th><th>Feb 5</th><th>Feb 6</th><th>...</th></tr>
@@ -599,20 +606,22 @@ For Mac users, the built-in <a href="https://support.apple.com/guide/notes/welco
   <tr><td>Task 3</td><td>Write research paper</td><td>Collect data</td><td></td><td></td><td></td><td></td><td></td></tr>
 </table>
 </div>
-</details>
-<br><b>Step 2: List Your Tasks</b> <br>
+</details><br>
+**Step 2: List Your Tasks** <br>
 Begin by listing out all the tasks you need to complete today. <br>
-Be sure to include work-related tasks, commitments and any self-development plans you have. Keep it general at this point.<br>
-<details><summary>See example</summary>
+**TIP:** *Be sure to include work-related tasks, commitments and any self-development plans you have.* <br>&emsp;&emsp; *Keep it general at this point.* <br>
+<details><summary style="background-color: #FFFACD; width: 20%;">See example</summary>
 
 <li>Email Correspondence</li>
 <li>Review Literature</li>
 <li>Administrative Tasks</li>
 <li>Writing</li>
-</details>
-<br><b>Step 3: Add Learning Activities</b><br>
-Integrate learning activities or skill-building tasks into your to-do list. Be specific about what you want to learn and how much time you'll dedicate to each activity. This could include reading an article, watching a tutorial, practicing a new skill, or attending a webinar.<br>
-<details><summary>See example</summary>
+</details><br>
+**Step 3: Add Learning Activities** <br>
+Integrate learning activities or skill-building tasks into your to-do list. <br>
+Be specific about what you want to learn and how much time you'll dedicate to each activity. <br>
+**TIP:** *This could include reading an article, watching a tutorial, practicing a new skill, or attending a webinar.*
+<details><summary style="background-color: #FFFACD; width: 20%;">See example</summary>
 
 <li>Review Literature</li>
 <li>Administrative Tasks</li>
@@ -624,10 +633,11 @@ Integrate learning activities or skill-building tasks into your to-do list. Be s
 <li><b>Self-Care</b></li>
 &emsp; - Take a 15-minute walk outside during lunch break.<br>
 &emsp; - Practice deep breathing exercises for stress relief before starting each task.
-</details>
-<br><b>Step 4: Prioritize Your Tasks</b> <br>
-Identify the tasks that are <span style="color: #AF0000;">essential to complete today</span> and mark them as top priorities. Look at your list and prioritize tasks based on their importance and urgency. Remember to intersperse blocks of intensive tasks with short self-care or rest moments, such as a leisurely walk during your lunch break or listening to uplifting music. To kickstart your day, consider starting with a short, insightful podcast session to energize and inspire you.<br>
-<details><summary>See example</summary>
+</details><br>
+**Step 4: Prioritize Your Tasks** <br>
+Identify the tasks that are <span style="color: #AF0000;">essential to complete today</span> and mark them as top priorities. Look at your list and prioritize tasks based on their importance and urgency. Remember to intersperse blocks of intensive tasks with short self-care or rest moments, such as a leisurely walk during your lunch break or listening to uplifting music. <br>
+**TIP:** *To kickstart your day, consider starting with a short, insightful podcast session to energize and inspire you.*
+<details><summary style="background-color: #FFFACD; width: 20%;">See example</summary>
 
 <li>0. Personal Development 1/2: podcast episode on current trends in the field (10min)</li>
 <li style="color: #AF0000;">1. Email Correspondence</li>
@@ -636,10 +646,10 @@ Identify the tasks that are <span style="color: #AF0000;">essential to complete 
 <li>4. Self-Care: Take a 15-minute walk outside during lunch break.</li>
 <li>5. Writing</li>
 <li>6. Personal Development 2/2: Spend 30 minutes completing a coding lesson on Coursera.</li>
-</details>
-<br><b>Step 5: Break Down Tasks</b><br>
-Break down larger tasks into smaller, actionable steps to make them more manageable. This will help prevent feeling overwhelmed and make it easier to track your progress. Utilizing digital apps such as the Note app on your Mac enables you to create a checklist, so you can mark completed tasks throughout the day.<br>
-<details><summary>See example</summary>
+</details><br>
+**Step 5: Break Down Tasks** <br>
+Break down larger tasks into smaller, actionable steps to make them more manageable. This will help prevent feeling overwhelmed and make it easier to track your progress. Utilizing digital apps such as the Note app on your Mac enables you to create a checklist, so you can mark completed tasks throughout the day.
+<details><summary style="background-color: #FFFACD; width: 20%;">See example</summary>
 
 <li><b>0. Personal Development 1/2</b></li>
 &emsp; - Listen to podcast episode on current trends in the field (10min)
@@ -658,22 +668,22 @@ Break down larger tasks into smaller, actionable steps to make them more managea
 &emsp; - Revise methods section based on feedback from supervisor.
 <li><b>6. Personal Development 2/2</b></li>
 &emsp; - Spend 30 minutes completing a coding lesson on Coursera.
-</details>
-<br><b>Step 6: Stay Flexible</b><br>
-Remain flexible throughout the day and be prepared to adjust your schedule if unexpected tasks or opportunities arise. <br>
-<br><b>Step 7: Reflect and Celebrate</b><br>
-At the end of the day, take a moment to reflect on your accomplishments and learning experiences. Review your to-do list and celebrate the tasks you completed and progress you made toward your goals.
-<div style="background: #cff4fc; padding: 15px; margin: 0 0; font-size: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">If you didn't finish some tasks, don't stress! Simply move them to tomorrow's list. With time, you'll learn more about how much you can handle each day and get better at managing your tasks. </span>
+</details><br>
+**Step 6: Stay Flexible** <br>
+Stay flexible during the day and be ready to adapt your schedule for unexpected tasks or opportunities. <br><br>
+**Step 7: Reflect and Celebrate** <br>
+At the end of the day, take a moment to reflect on your accomplishments and learning experiences. <br>
+Review your to-do list and celebrate the tasks you completed and progress you made toward your goals.
+<div class="protip font-1 mb-0 before" markdown="1" data-before="PRO TIP">
+If you didn't finish some tasks, don't stress! Simply move them to tomorrow's list. With time, you'll learn more about how much you can handle each day and get better at managing your tasks.
 </div>
 </div>
 
 
 ### Train Your Team
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-style:italic;">Dedicate time not only to familiarize your team with essential tools and platforms but also to support their personal development in areas they're passionate about. This balanced approach can significantly reduce mistakes and enhance overall productivity, fostering a culture of growth and innovation. </span>
+<div class="protip" markdown="1">
+Dedicate time not only to familiarize your team with essential tools and platforms but also to support their personal development in areas they're passionate about. This balanced approach can significantly reduce mistakes and enhance overall productivity, fostering a culture of growth and innovation.
 </div>
 
 Empowering your team through training is a critical step towards enhancing productivity and fostering a collaborative research environment.
@@ -682,17 +692,17 @@ Empowering your team through training is a critical step towards enhancing produ
 
 This investment in your team’s skills leads to a more cohesive and capable group, ready to tackle challenges with confidence and efficiency. This tailored approach ensures that each member's unique talents and aspirations are recognized and developed, contributing to a more dynamic and resourceful team environment.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-style:italic;">Effective team training also promotes a culture of continuous learning and improvement, encouraging members to share knowledge and support each other’s development. A true leader embraces the expansion of each individual's skill set within the team without hesitation.</span>
+<div class="note" markdown="1">
+Effective team training also promotes a culture of continuous learning and improvement, encouraging members to share knowledge and support each other’s development. A true leader embraces the expansion of each individual's skill set within the team without hesitation.
 </div>
 
 By implementing these strategies, leaders and managers can create an environment where team members feel supported and encouraged to invest in their own self-development:
 
 * **Facilitate Access to Learning Platforms** <br>
 Offer access to online learning platforms such as <a href="https://www.linkedin.com/learning/" target="_blank">LinkedIn Learning  ⤴</a>, <a href="https://www.coursera.org/" target="_blank">Coursera  ⤴</a>, <a href="https://www.udemy.com/" target="_blank">Udemy  ⤴</a>, or <a href="https://www.skillshare.com/" target="_blank">Skillshare  ⤴</a>. These platforms offer a wide range of courses covering various topics and skills. Consider investing in subscriptions to relevant learning platforms.
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">As a USDA ARS scientist, take advantage of your free access to <b>Coursera</b> which offers a variety of certification options through the <a href="https://www.coursera.org/programs/scinet-program-of-study-a6nd3?currentTab=CATALOG" target="_blank">SCINet Program of Study ⤴</a> or <a href="https://www.coursera.org/programs/ai-center-of-excellence-program-of-study-yunri?currentTab=CATALOG" target="_blank">AI Center of Excellence Program of Study  ⤴</a>. Consider enrolling in programs like <a href="https://www.coursera.org/programs/ai-center-of-excellence-program-of-study-yunri/professional-certificates/ibm-data-science" target="_blank">"IBM Data Science Specialization"</a> or <a href="https://www.coursera.org/programs/ai-center-of-excellence-program-of-study-yunri/learn/practical-machine-learning?collectionId=9izGL" target="_blank">"Practical Machine Learning"</a> to enhance your skills and expertise in relevant areas.  </span>
+
+<div class="protip" markdown="1">
+As a USDA ARS scientist, take advantage of your free access to **Coursera** which offers a variety of certification options through the <a href="https://www.coursera.org/programs/scinet-program-of-study-a6nd3?currentTab=CATALOG" target="_blank">SCINet Program of Study ⤴</a> or <a href="https://www.coursera.org/programs/ai-center-of-excellence-program-of-study-yunri?currentTab=CATALOG" target="_blank">AI Center of Excellence Program of Study  ⤴</a>. Consider enrolling in programs like <a href="https://www.coursera.org/programs/ai-center-of-excellence-program-of-study-yunri/professional-certificates/ibm-data-science" target="_blank">"IBM Data Science Specialization"</a> or <a href="https://www.coursera.org/programs/ai-center-of-excellence-program-of-study-yunri/learn/practical-machine-learning?collectionId=9izGL" target="_blank">"Practical Machine Learning"</a> to enhance your skills and expertise in relevant areas.
 </div>
 
 * **Recommend AI-Powered Learning Tools** <br>
@@ -715,17 +725,15 @@ Acknowledge and celebrate team members' learning achievements and milestones. Th
 * **Support Work-Life Balance** <br>
 Encourage a healthy work-life balance by promoting flexibility and offering support for personal development activities outside of work hours. Respect boundaries and encourage time off to recharge and pursue personal interests, which can contribute to overall well-being and motivation.
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px; margin-left: 37px; font-size: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;">It's essential to foster an inclusive environment where professional development is encouraged but not mandatory, recognizing that team members have diverse life situations and commitments. There should be no pressure or negative consequences for those who are unable to engage in such activities due to personal or professional reasons. </span>
+<div class="warning level-1" markdown="1">
+It's essential to foster an inclusive environment where professional development is encouraged but not mandatory, recognizing that team members have diverse life situations and commitments. There should be no pressure or negative consequences for those who are unable to engage in such activities due to personal or professional reasons.
 </div>
 
 
 ### Delegate When Possible
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">Don't try to do everything yourself. Delegate tasks that others can do so you can focus on what's most important. The goal is to make your research project a hit, and that means getting the best out of everyone involved.</span>
+<div class="protip" markdown="1">
+Don't try to do everything yourself. Delegate tasks that others can do so you can focus on what's most important. The goal is to make your research project a hit, and that means getting the best out of everyone involved.
 </div>
 
 Delegating isn’t about offloading work you don’t want to do... It’s about playing to everyone’s strengths. If someone on the team is a wizard with data analysis or has a knack for graphic design, let them shine. It frees up your bandwidth so you can focus on the stuff only you can do, and it empowers your team members by valuing their skills and contributions.
@@ -751,14 +759,14 @@ Explore the examples in the table to master effective delegation techniques that
 
 ### Limit Meetings
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-style:italic;">Too many meetings can disrupt your day. Ensure every meeting has a clear purpose, and avoid them if they're not necessary. </span>
+<div class="protip" markdown="1">
+Too many meetings can disrupt your day. Ensure every meeting has a clear purpose, and avoid them if they're not necessary.
 </div>
 
 Inefficient meeting practices, such as excessive routine meetings or unnecessary reporting requirements, can drain valuable time and hinder productivity in research projects. Instead, prioritize merit-only meetings that add tangible value to the project's progress. Strategic time management involves discerning between essential collaborations and time-consuming rituals, ensuring every meeting contributes meaningfully to the research objectives.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-style:italic;">Implementing strategies like setting agendas, defining objectives, and keeping meetings concise can help optimize their effectiveness and minimize their impact on your schedule. Organizing daily routine or control meetings with no clear purpose leads to a waste of time, resources and hampers the efficiency of the team. </span>
+<div class="note" markdown="1">
+Implementing strategies like setting agendas, defining objectives, and keeping meetings concise can help optimize their effectiveness and minimize their impact on your schedule. Organizing daily routine or control meetings with no clear purpose leads to a waste of time, resources and hampers the efficiency of the team.
 </div>
 
 
@@ -779,21 +787,19 @@ The following table delineates between good and bad reasons for scheduling meeti
 | Reviewing and refining project strategies after a milestone. | Using meetings as a substitute for individual work. |
 | Seeking feedback from team members on project closing. | Gathering for the sake of tradition or habit. |
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;"><a href="https://en.wikipedia.org/wiki/Micromanagement/" target="_blank"><b>Micromanagement</b>  ⤴</a> is a management style where a supervisor closely observes or controls the work of their subordinates, often to an excessive degree. This can involve scrutinizing small details, such as closely monitoring work processes or nitpicking minor errors. It may also include requiring frequent progress reports through various means such as meetings, messages or spreadsheets, to ensure constant oversight. Additionally, not trusting employees to work autonomously is also a sign of micromanagement through behaviors like checking email drafts or requiring to be cc'd or taking back delegated work. This can lead to decreased morale, reduced productivity, increased stress levels and hindered creativity among team members. </span>
+<div class="warning" markdown="1">
+<a href="https://en.wikipedia.org/wiki/Micromanagement/" target="_blank"><b>Micromanagement</b>  ⤴</a> is a management style where a supervisor closely observes or controls the work of their subordinates, often to an excessive degree. This can involve scrutinizing small details, such as closely monitoring work processes or nitpicking minor errors. It may also include requiring frequent progress reports through various means such as meetings, messages or spreadsheets, to ensure constant oversight. Additionally, not trusting employees to work autonomously is also a sign of micromanagement through behaviors like checking email drafts or requiring to be cc'd or taking back delegated work. This can lead to decreased morale, reduced productivity, increased stress levels and hindered creativity among team members.
 </div>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">If you work with experienced, conscientious and professional people consider blending the Results-Only Work Environment (<a href="https://www.mindtools.com/agx0aqn/managing-in-a-results-only-work-environment" target="_blank">ROWE  ⤴</a>) approach with a <a href="https://blog.idonethis.com/trust-verify-management-tool/" target="_blank">"trust but verify"  ⤴</a> mindset. Provide employees with autonomy to manage their schedules and tasks while maintaining open channels for feedback and support when needed. This allows for a balance between autonomy and accountability, ensuring alignment with goals while promoting trust and a supportive work environment. </span>
+<div class="protip" markdown="1">
+If you work with experienced, conscientious and professional people consider blending the Results-Only Work Environment (<a href="https://www.mindtools.com/agx0aqn/managing-in-a-results-only-work-environment" target="_blank">ROWE  ⤴</a>) approach with a <a href="https://blog.idonethis.com/trust-verify-management-tool/" target="_blank">"trust but verify"  ⤴</a> mindset. Provide employees with autonomy to manage their schedules and tasks while maintaining open channels for feedback and support when needed. This allows for a balance between autonomy and accountability, ensuring alignment with goals while promoting trust and a supportive work environment.
 </div>
 
 
 ### Effective Collaboration
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-style:italic;">Foster effective collaboration by establishing clear communication channels and encouraging open dialogue among team members. </span>
+<div class="protip" markdown="1">
+Foster effective collaboration by establishing clear communication channels and encouraging open dialogue among team members.
 </div>
 
 In research projects, effective collaboration is essential for breakthrough and success.
@@ -803,17 +809,17 @@ In research projects, effective collaboration is essential for breakthrough and 
 
 Embrace collaboration as a cornerstone of your research process, allowing for diverse perspectives and innovative solutions to emerge.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-style:italic;">Keeping in touch through communication platforms and respecting defined roles and responsibilities are key elements in fostering a collaborative research environment that promotes productivity and innovation.</span>
+<div class="note" markdown="1">
+Keeping in touch through communication platforms and respecting defined roles and responsibilities are key elements in fostering a collaborative research environment that promotes productivity and innovation.
 </div>
 
 ### <i><span style="color: #EC8000; ">EXERCISE</span></i>
 This exercise is designed to promote seamless communication and collaboration within your team by utilizing <a href="https://slack.com" target="_blank">Slack  ⤴</a> as a centralized platform. By establishing communication channels and encouraging daily engagement, you'll foster a culture of teamwork and mutual support. This approach enhances productivity and efficiency, facilitating effective project management and decision-making processes.
 
-<div style="background: #ffd7b5;  padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-weight:800;">Building Effective Collaboration with Slack</span>
-<br><br><b>Part 0: Get Started with Slack</b><br>
-This step will guide you through the initial setup process, from registering for a Slack account to customizing your profile and exploring the platform's features.<br>
+<div class="exercise before" markdown="1" data-before="Building Effective Collaboration with Slack">
+<base class="mt">
+**Part 0: Get Started with Slack** <br>
+*This step will guide you through the initial setup process, from registering for a Slack account to customizing your profile and exploring the platform's features.*
 <details><summary>See instructions</summary>
 
 <b>1. Register for an Account</b><br>
@@ -827,43 +833,42 @@ This step will guide you through the initial setup process, from registering for
 <b>5. Customize Your Profile</b><br>
 &emsp; Click on your profile picture at the bottom left corner of the app to access <a href="https://slack.com/help/categories/360000047906" target="_blank">your profile settings  ⤴</a>. <br>
 &emsp; Add a profile picture and update your display name to make it easier for team members to recognize you.
-</details>
-<br><b>Part 1: Set Up Slack Workspace</b><br>
-This step will guide you through the process of setting up your team workspace, ensuring all members have access to essential channels and resources.<br>
+</details><br>
+**Part 1: Set Up Slack Workspace** <br>
+*This step will guide you through the process of setting up your team workspace, ensuring all members have access to essential channels and resources.*
 <details><summary>See instructions</summary>
 
 <li><a href="https://slack.com/help/articles/206845317-Create-a-Slack-workspace" target="_blank">Create a new workspace on Slack  ⤴</a> or use an existing one.</li>
 <li>Read up on <a href="https://slack.com/help/articles/217626298-Getting-started-for-workspace-creators" target="_blank">how to set up and manage your new workspace  ⤴</a>.</li>
 <li><a href="https://slack.com/help/articles/217626378-Email-template-for-introducing-Slack" target="_blank">Invite team members to join the workspace  ⤴</a> by sending them email invitations.</li>
 <li><a href="https://slack.com/help/articles/218080037-Getting-started-for-new-Slack-users" target="_blank">Encourage team members  ⤴</a> to install the Slack app on their local machines or mobile devices.</li>
-</details>
-<br><b>Part 2: Establish Communication Channels</b><br>
-This step will prompt you to create various channels tailored to different purposes, fostering organized discussions and effective project management within your team.<br>
+</details><br>
+**Part 2: Establish Communication Channels** <br>
+*This step will prompt you to create various channels tailored to different purposes, fostering organized discussions and effective project management within your team.*
 <details><summary>See instructions</summary>
 
 <li><a href="https://slack.com/help/categories/200111606#channels" target="_blank">Create general-purpose channels  ⤴</a> such as <b>#general</b>, <b>#announcements</b>, and <b>#books</b> for team-wide communication.</li>
 <li>Establish project-specific channels for ongoing projects, e.g., <b>#project-alpha</b>, <b>#project-beta</b>.</li>
 <li>Create socializing channels like <b>#random</b> or <b>#team-events</b> for informal discussions and bonding.</li>
 <li><a href="https://slack.com/help/articles/201980108-Add-people-to-a-channel" target="_blank">Invite and add selected collaborators  ⤴</a> to relevant channels to facilitate seamless communication.</li>
-</details>
-<br><b>Part 3: Engage in Daily Communication</b> <br>
-Encourage open communication and transparency within the team, fostering a culture of collaboration and mutual support.
+</details><br>
+**Part 3: Engage in Daily Communication** <br>
+*This step will encourage open communication and transparency within the team, fostering a culture of collaboration and mutual support.*
 <details><summary>See instructions</summary>
 
 <li>Encourage team members to connect on Slack daily, regardless of their location (remote or on-site).</li>
 <li>Set a routine for checking and responding to messages, fostering real-time collaboration and information sharing.</li>
 <li>Prompt team members to actively participate in discussions, share updates, seek assistance and use <a href="https://slack.com/help/categories/200111606#direct-messages" target="_blank">direct messages  ⤴</a> when needed.</li>
-</details>
-<br><b>REFLECTION</b><br>
-<span style="font-style:italic;">
-Take a moment to reflect on your experience with Slack and effective collaboartion in your team.<br><br>
-<b><li>How did using Slack enhance communication and collaboration within your team?</li>
-<li>Did you find the creation of different channels useful for organizing discussions and tasks?</li>
-<li>What challenges, if any, did you encounter while setting up and using Slack?</li>
-<li>Did you notice any improvements in team productivity or workflow efficiency?</li>
-<li>How do you plan to integrate Slack into your daily work routine moving forward?</li></b>
-</span><br>
-<a href="https://slack.com/help/categories/360000049063" target="_blank">Discover more Slack Tutorials and Videos   ⤴</a>.
+</details><br>
+**REFLECTION** <br>
+Take a moment to reflect on your experience with Slack and effective collaboration in your team. <base class="mb">
+* *How did using Slack enhance communication and collaboration within your team?*
+* *Did you find the creation of different channels useful for organizing discussions and tasks?*
+* *What challenges, if any, did you encounter while setting up and using Slack?*
+* *Did you notice any improvements in team productivity or workflow efficiency?*
+* *How do you plan to integrate Slack into your daily work routine moving forward?*
+
+<b><a href="https://slack.com/help/categories/360000049063" target="_blank">Discover more Slack Tutorials and Videos   ⤴</a></b>
 </div>
 
 
@@ -873,67 +878,66 @@ In the fast-paced world of the XXI century, it's easy to get caught up in the de
 
 ### Stress Management
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-style:italic;">Incorporate short mindfulness breaks into your daily routine to recharge and refocus. Pausing for a few minutes to breathe deeply, center your thoughts, and reconnect with the present moment can help alleviate stress and enhance clarity and productivity. </span>
+<div class="protip" markdown="1">
+Incorporate short mindfulness breaks into your daily routine to recharge and refocus. Pausing for a few minutes to breathe deeply, center your thoughts, and reconnect with the present moment can help alleviate stress and enhance clarity and productivity.
 </div>
 
 Research projects can often be accompanied by high levels of stress, but adopting effective stress management strategies can help mitigate its impact on your well-being. By incorporating mindfulness practices, regular physical activity, and efficient time management techniques into your routine, you can better cope with stressors and maintain clarity and resilience in the face of challenges.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-style:italic;">Prioritizing self-care and seeking support from peers or professionals when needed are essential components of effective stress management, ensuring that you can navigate the demands of research with resilience and vitality.</span>
+<div class="note" markdown="1">
+Prioritizing self-care and seeking support from peers or professionals when needed are essential components of effective stress management, ensuring that you can navigate the demands of research with resilience and vitality.
 </div>
 
 Here's a list of practices and approaches to help manage stress. By incorporating these practices into your daily routine, you can effectively manage stress and maintain your well-being while navigating the demands of research projects.
 
 * **Time Management Techniques** <br>
 Implement effective time management techniques such as prioritizing tasks, breaking them down into smaller steps, and using tools like the <a href="https://todoist.com/productivity-methods/pomodoro-technique" target="_blank">Pomodoro Technique  ⤴</a> or <a href="https://todoist.com/productivity-methods/getting-things-done" target="_blank">Getting Things Done (GTD)  ⤴</a> method to work in focused bursts with regular breaks.
-<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px; margin-left: 37px; font-size: 20px;">
-<span style="font-style:italic;"><b>Challenge:</b> Take a short quiz to find out <a href="https://todoist.com/productivity-methods" target="_blank">Which productivity method is right for you?</a>
-</span>
+<div class="exercise before level-1" markdown="1" data-before="">
+**Challenge:** Take a short quiz to find out *<a href="https://todoist.com/productivity-methods" target="_blank">Which productivity method is right for you?</a>*
 </div>
 
 
 * **Setting Boundaries** <br>
 Establish clear boundaries between work and personal life to prevent burnout. Schedule dedicated time for relaxation, hobbies, and social activities to recharge and rejuvenate. Keep your focus on work during work hours and fully engage in your personal life once the workday ends.
-<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px; margin-left: 37px; font-size: 20px;">
-<span style="font-style:italic;"><b>Challenge:</b> Set clear boundaries by establishing your designated work hours and resisting the temptation to work outside of those times, ensuring a healthy work-life balance. </span>
+<div class="exercise before level-1" markdown="1" data-before="">
+**Challenge:** Set clear boundaries by establishing your designated work hours and resisting the temptation to work outside of those times, ensuring a healthy work-life balance.
 </div>
 
 * **Deep Breathing Exercises** <br>
 Practice deep breathing exercises to calm your mind and body. Take slow, deep breaths, focusing on filling your lungs with air and then exhaling slowly. This can help activate your body's relaxation response and reduce stress.
-<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px; margin-left: 37px; font-size: 20px;">
-<span style="font-style:italic;"><b>Challenge:</b> Take a 2-minute break every hour to practice deep breathing: inhale slowly for 4 counts, hold for 4 counts, exhale for 4 counts, and repeat. </span>
+<div class="exercise before level-1" markdown="1" data-before="">
+**Challenge:** Take a 2-minute break every hour to practice deep breathing: inhale slowly for 4 counts, hold for 4 counts, exhale for 4 counts, and repeat.
 </div>
 
 * **Mindfulness Meditation** <br>
 Take short breaks throughout the day to practice mindfulness meditation. Focus on your breath allowing yourself to relax and refocus. During these breaks, you can also take a moment to relax your eyes, especially if you spend many hours working with a computer screen.
-<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px; margin-left: 37px; font-size: 20px;">
-<span style="font-style:italic;"><b>Challenge:</b> Try the 20-20-20 rule: every 20 minutes, look at something 20 feet away for 20 seconds to reduce eye strain and prevent fatigue. </span>
+<div class="exercise before level-1" markdown="1" data-before="">
+**Challenge:** Try the 20-20-20 rule: every 20 minutes, look at something 20 feet away for 20 seconds to reduce eye strain and prevent fatigue.
 </div>
 
 * **Physical Activity** <br>
 Incorporate regular physical activity into your routine, whether it's going for a walk, practicing yoga, or engaging in your favorite form of exercise. Physical activity can help reduce stress levels and improve overall well-being.
-<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px; margin-left: 37px; font-size: 20px;">
-<span style="font-style:italic;"><b>Challenge:</b> Incorporate a 10-minute stretching into your morning routine or take a 15-minute walk after lunch to boost circulation and alleviate physical tension. </span>
+<div class="exercise before level-1" markdown="1" data-before="">
+**Challenge:** Incorporate a 10-minute stretching into your morning routine or take a 15-minute walk after lunch to boost circulation and alleviate physical tension.
 </div>
 
 * **Seeking Social Support** <br>
 Reach out to friends, family members, or colleagues for support and encouragement. Sharing your feelings and experiences with others can help alleviate stress and provide perspective.
-<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px; margin-left: 37px; font-size: 20px;">
-<span style="font-style:italic;"><b>Challenge:</b> Send a quick message to a friend to check in and share a positive moment from your day, fostering social connections and providing mutual support. </span>
+<div class="exercise before level-1" markdown="1" data-before="">
+**Challenge:** Send a quick message to a friend to check in and share a positive moment from your day, fostering social connections and providing mutual support.
 </div>
 
 * **Professional Support** <br>
 Don't hesitate to seek professional support from a counselor, therapist, or mental health professional if you're feeling overwhelmed or unable to cope with stress on your own. Therapy can provide valuable tools and strategies for managing stress effectively.
-<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px; margin-left: 37px; font-size: 20px;">
-<span style="font-style:italic;"><b>Challenge:</b> You've got this! Reaching out for support is a brave and positive step. We're all in this together. </span>
+<div class="exercise before level-1" markdown="1" data-before="">
+**Challenge:** You've got this! Reaching out for support is a brave and positive step. We're all in this together.
 </div>
 
 
 ### Work-Life Balance
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-style:italic;">Decide on a specific time to stop working each day and make it a ritual to shut down your computer then. <br>Save exceptions for truly urgent situations, and prioritize relaxation and personal time to recharge for the next day.</span>
+<div class="protip" markdown="1">
+Decide on a specific time to stop working each day and make it a ritual to shut down your computer then. <br>Save exceptions for truly urgent situations, and prioritize relaxation and personal time to recharge for the next day.
 </div>
 
 Achieving a healthy work-life balance is essential for sustained productivity and well-being in the research field. It is important for your well-being to:
@@ -943,22 +947,21 @@ Achieving a healthy work-life balance is essential for sustained productivity an
 
 These practices can `prevent your burnout` and maintain a sense of equilibrium amidst your professional responsibilities.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-style:italic;">Taking care of yourself isn't a luxury - it's a necessity. Embracing work-life balance not only enhances your quality of life but also improves your effectiveness and creativity as a researcher.</span>
+<div class="note" markdown="1">
+Taking care of yourself isn't a luxury - it's a necessity. Embracing work-life balance not only enhances your quality of life but also improves your effectiveness and creativity as a researcher.
 </div>
 
 ### <i><span style="color: #EC8000; ">EXERCISE</span></i>
 This exercise is designed to help you reconnect with your passions and interests, prioritizing time for activities that bring you joy and fulfillment outside of work. This fosters a sense of fulfillment and helps maintain a healthy work-life balance, ultimately contributing to your overall well-being, creativity and productivity.
 
-<div style="background: #ffd7b5; padding: 15px; margin-bottom: 20px; font-size: 20px;">
-<span style="font-style:italic;"><b>Passion Pursuit Challenge</b> <br>
-Take a moment to reflect on what activities or topics truly spark your interest and passion. This could be anything from a hobby you enjoy, a skill you've always wanted to learn, or a cause you're passionate about. <br><br>
-Consider the following questions to help you identify your passion:
-<li>What activities do you find yourself naturally drawn to?</li>
-<li>What topics or subjects do you enjoy learning about in your free time?</li>
-<li>What activities make you lose track of time because you're so engaged?</li>
-<br>
-<b>START TODAY: </b>Once you've identified your passion or interest, set aside about 20 minutes this evening to delve into articles, videos, or books related to your passion. <br><br>
-<b>CONTINUE: </b>Mark a specific time in your calendar for the upcoming weekend to fully engage in this activity for at least 2 hours. Treat it as you would any other important appointment or commitment, and prioritize giving yourself dedicated time to explore and indulge in your passion. <b>Enjoy yourself!</b>
-</span>
+<div class="exercise before" markdown="1" data-before="Passion Pursuit Challenge">
+<base class="mt">
+Take a moment to reflect on what activities or topics truly spark your interest and passion. This could be anything from a `hobby` you enjoy, a `skill` you've always wanted to learn or a `mission` you're passionate about. <base class="mb">
+Consider the following questions to help you <u>identify your passion:</u>
+* *What activities do you find yourself naturally drawn to?*
+* *What topics or subjects do you enjoy learning about in your free time?*
+* *What activities make you lose track of time because you're so engaged?*
+<base class="mt">
+**START TODAY:** Once you've identified your passion or interest, set aside about <u>20 minutes this evening</u> to delve into articles, videos, or books related to your passion. <base class="mb">
+**CONTINUE:** Mark a specific time in your calendar for the <u>upcoming weekend</u> to fully engage in this activity for at least 2 hours. Treat it as you would any other important appointment or commitment, and prioritize giving yourself dedicated time to explore and indulge in your passion. **Enjoy yourself!**
 </div>

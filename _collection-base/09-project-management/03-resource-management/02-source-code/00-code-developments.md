@@ -26,9 +26,8 @@ tags: []
 <table><tr>
 <td style="border: transparent; vertical-align: top; font-size: 21px;">
 Code management is a critical aspect of research, especially in projects that involve computational methods, data analysis, and software development. Effective code management practices ensure that code is not only reusable and maintainable but also that it contributes to the <b>reproducibility and transparency of research outcomes</b>.
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px; margin-top: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">The efficient Code Management ensures that code, whether part of small-scale pipelines utilizing existing tools or complex development projects, remains robust, well-organized, accessible and usable.</span>
+<div class="protip font-1" markdown="1">
+The efficient Code Management ensures that code, whether part of small-scale pipelines utilizing existing tools or complex development projects, remains robust, well-organized, accessible and usable.
 </div>
 </td>
 <td width=500 style="border: transparent;"><img width="800" src="{{ images_path }}/03_code_management.png"></td>
@@ -41,9 +40,8 @@ Code management is a critical aspect of research, especially in projects that in
 
 Code Lifecycle Management (CLM) is a pivotal component of conducting research in the digital age, particularly as computational methods and software development become integral to scientific inquiry. CLM encompass all aspects of handling code in a systematic and efficient manner throughout its entire lifecycle,  its inception through development, maintenance, deployment to maintenance and eventual retirement.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;"> In research projects, code often serves as both the methodology and the tool through which hypotheses are tested and insights are gleaned. Thus, managing the lifecycle of this code goes beyond mere programming - it is about stewarding a vital asset through the iterative processes of refinement and evolution that characterize scientific exploration.  </span>
+<div class="note" markdown="1">
+In research projects, code often serves as both the methodology and the tool through which hypotheses are tested and insights are gleaned. Thus, managing the lifecycle of this code goes beyond mere programming - it is about stewarding a vital asset through the iterative processes of refinement and evolution that characterize scientific exploration.
 </div>
 
 The lifecycle begins with initial **development**, where ideas are translated into executable code, and extends to **version control**, which safeguards progress and facilitates collaboration. **Documentation and commenting** then make these efforts comprehensible, ensuring that the rationale, functionality, and usage of the code are transparent and accessible. As code matures, **testing and quality assurance** become crucial, serving as the linchpins of reliability and validity in the results produced. **Sharing and collaboration** platforms further extend the utility of code, opening avenues for peer review, community contributions, and broader dissemination. The lifecycle culminates in structured **code releases**, which mark milestones of stability and functionality, and **archiving**, which preserves the code's legacy and supports reproducibility in research.
@@ -61,14 +59,12 @@ In this subsection, we will navigate through these integral phases, illustrating
 | [Code Archiving](#code-archiving) | The preservation of code in a way that ensures its long-term accessibility and reusability. |
 
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;"> Please be aware that the information provided in this section is concise and intended to serve as an introduction to various aspects of Code Management in research. The examples of practices and tools mentioned are selected to illustrate a cross-section of the wide array of options available but do not represent an exhaustive list. Our goal is to familiarize you with the terminology and basic concepts, encouraging further exploration of the tools and methodologies that best meet your specific needs. </span>
+<div class="warning" markdown="1">
+Please be aware that the information provided in this section is concise and intended to serve as an introduction to various aspects of Code Management in research. The examples of practices and tools mentioned are selected to illustrate a cross-section of the wide array of options available but do not represent an exhaustive list. Our goal is to familiarize you with the terminology and basic concepts, encouraging further exploration of the tools and methodologies that best meet your specific needs.
 </div>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;"> Some widely-applicable tools and practices are covered in more detail in hands-on tutorials within this workbook. These tutorials are designed to provide practical insights and guidance on implementing key aspects of Code Management in your research projects. <br>We encourage you to delve deeper into each topic and explore additional resources!</span>
+<div class="protip" markdown="1">
+Some widely-applicable tools and practices are covered in more detail in hands-on tutorials within this workbook. These tutorials are designed to provide practical insights and guidance on implementing key aspects of Code Management in your research projects. <base class="mb"> We encourage you to delve deeper into each topic and explore additional resources!
 </div>
 
 ## Code Development
@@ -78,9 +74,8 @@ Code Development refers to the **process of writing, testing, and maintaining co
 **IMPORTANCE** <br>
 The quality of code development significantly impacts the reliability, efficiency, and reproducibility of research findings. High-quality code, developed with best practices in mind, ensures that computational analyses are transparent and verifiable. Adhering to principles such as **modularity, readability, and maintainability** makes the code more adaptable to future research needs and facilitates collaboration among researchers.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;"> Effective code development practices enable researchers to build upon existing knowledge, accelerate the research process, and contribute to the scientific community's collective efforts. Whether for simple data processing tasks or complex computational models, well-developed code is a critical asset in the digital resources for research. </span>
+<div class="note" markdown="1">
+Effective code development practices enable researchers to build upon existing knowledge, accelerate the research process, and contribute to the scientific community's collective efforts. Whether for simple data processing tasks or complex computational models, well-developed code is a critical asset in the digital resources for research.
 </div>
 
 **Examples of Code Development Practices and Tools:**
@@ -123,14 +118,12 @@ Code Version Control is a system that records changes to a file or set of files 
 **IMPORTANCE** <br>
 In research projects, code version control is essential for ensuring the integrity and reproducibility of computational work. It allows researchers to track and revert to previous versions of their work, understand the history of changes, and collaborate on code without conflict. By maintaining a detailed record of modifications, version control systems support transparency and accountability in the research process.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;"> Adopting version control is a foundational practice in modern computational research, enabling scientists to build on previous work confidently, share their developments with the community, and ensure that their findings are reproducible and verifiable. </span>
+<div class="note" markdown="1">
+Adopting version control is a foundational practice in modern computational research, enabling scientists to build on previous work confidently, share their developments with the community, and ensure that their findings are reproducible and verifiable.
 </div>
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;"> Whether for simple data analysis scripts or complex computational models, version control systems help manage the development process and facilitate collaboration among team members. </span>
+<div class="protip" markdown="1">
+Whether for simple data analysis scripts or complex computational models, version control systems help manage the development process and facilitate collaboration among team members.
 </div>
 
 **Examples of Code Version Control Tools and Hosting Platforms:**
@@ -173,9 +166,8 @@ Code Documentation involves creating comprehensive and accessible descriptions a
 **IMPORTANCE** <br>
 Proper code documentation is crucial for maintaining the **longevity, usability, and transparency of research software**. It facilitates easier onboarding for new project members, enhances the reproducibility of research results, and supports the academic principle of sharing knowledge.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;"> Good documentation practices transform code from being a solitary tool into a shared scientific resource, contributing to the collective advancement of knowledge and enabling more efficient and effective research collaborations. </span>
+<div class="note" markdown="1">
+Good documentation practices transform code from being a solitary tool into a shared scientific resource, contributing to the collective advancement of knowledge and enabling more efficient and effective research collaborations.
 </div>
 
 **Examples of Code Documentation Practices and Tools:**
@@ -207,9 +199,8 @@ Regularly review and update documentation to reflect changes in the codebase, pr
 5. **Leverage Documentation Tools** <br>
 Use tools that automate part of the documentation process to save time and ensure consistency. Structure your documentation logically, making it easy for readers to find the information they need quickly.
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;"> Your documentation should ensure that code can be understood, utilized, and further developed by others, including future self, thereby extending the research's impact and utility. Adhering to these documentation practices ensures that your code is not just a functional part of your research but also a valuable contribution to the broader scientific community, accessible and understandable to those who wish to learn from or build upon your work.</span>
+<div class="protip" markdown="1">
+Your documentation should ensure that code can be understood, utilized, and further developed by others, including future self, thereby extending the research's impact and utility. Adhering to these documentation practices ensures that your code is not just a functional part of your research but also a valuable contribution to the broader scientific community, accessible and understandable to those who wish to learn from or build upon your work.
 </div>
 
 
@@ -220,9 +211,8 @@ Code Sharing and Collaboration refer to the practices and platforms that enable 
 **IMPORTANCE** <br>
 The sharing and collaborative development of code **enhance the pace of scientific discovery, promote transparency, and facilitate peer review** of computational methods. It allows researchers to build upon the work of others, avoid duplicating efforts, and leverage collective expertise to solve complex problems. Furthermore, code sharing is increasingly recognized as a component of good scientific practice, contributing to the reproducibility and credibility of research findings.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;"> Embracing code sharing and collaboration not only accelerates the research process but also fosters a culture of openness and mutual support within the scientific community, leading to more impactful and reliable scientific advancements. </span>
+<div class="note" markdown="1">
+Embracing code sharing and collaboration not only accelerates the research process but also fosters a culture of openness and mutual support within the scientific community, leading to more impactful and reliable scientific advancements.
 </div>
 
 **Examples of Code Sharing and Collaboration Practices:**
@@ -254,9 +244,8 @@ Be mindful of security implications, especially when sharing code that may conta
 5. **Recognize Contributions** <br>
 Engage with the Community by participating in forums, mailing lists, and social media to connect with other researchers and developers to share insights and seek feedback. Acknowledge contributors' efforts in your project documentation or through mechanisms like the CONTRIBUTORS file in your repository.
 
-<div style="background: #cff4fc; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;"> By fostering an environment of open collaboration and sharing, you can significantly enhance the value, reach, and impact of your computational work, contributing to the advancement of science in an inclusive and transparent manner. </span>
+<div class="protip" markdown="1">
+By fostering an environment of open collaboration and sharing, you can significantly enhance the value, reach, and impact of your computational work, contributing to the advancement of science in an inclusive and transparent manner.
 </div>
 
 
@@ -267,9 +256,8 @@ Code Testing and Quality Assurance (QA) in research encompasses a set of practic
 **IMPORTANCE** <br>
 Effective testing practices are pivotal for the scientific community, as they directly impact the accuracy and reliability of research outcomes. By identifying and **rectifying errors early** in the development process, researchers can **avoid costly mistakes** and ensure that their findings are based on sound computational principles. Moreover, well-tested and quality-assured code **enhances the credibility** of the research and fosters trust within the scientific community and with the broader public.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;"> Adopting a systematic approach to code testing and quality assurance is not just about preventing errors; it's about embedding quality and reliability into the fabric of the research process, thereby enhancing the overall value and impact of scientific work. </span>
+<div class="note" markdown="1">
+Adopting a systematic approach to code testing and quality assurance is not just about preventing errors; it's about embedding quality and reliability into the fabric of the research process, thereby enhancing the overall value and impact of scientific work.
 </div>
 
 **Examples of Code Testing and Quality Assurance Practices:**
@@ -309,9 +297,8 @@ Code Release/Deployment refers to the process of making a **robust version of th
 **IMPORTANCE** <br>
 The release and deployment phase is critical for ensuring the software developed during the research is **accessible, usable, and impactful**. It marks the transition of software from a developmental stage to being a tool that can contribute to scientific discovery and validation. Properly managed releases help in version tracking, facilitate user feedback, and ensure that the **software can be reliably cited** in academic work. Moreover, well-documented releases support reproducibility and transparency in research.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;"> A systematic approach to code release/deployment not only enhances the visibility and usability of research software but also contributes to the integrity and credibility of the research process by ensuring that tools are accessible for verification and further study. </span>
+<div class="note" markdown="1">
+A systematic approach to code release/deployment not only enhances the visibility and usability of research software but also contributes to the integrity and credibility of the research process by ensuring that tools are accessible for verification and further study.
 </div>
 
 **Examples of Code Release/Deployment Practices and Tools:**
@@ -351,9 +338,8 @@ Code Archiving in the context of research involves the **long-term preservation 
 **IMPORTANCE** <br>
 Effective code archiving supports the principles of {% include target_link href=931.1 %} by preserving the digital artifacts of research for future reference. It ensures that **scientific findings can be validated and reproduced**, enhancing the credibility and impact of research. Additionally, archiving provides a mechanism for **recognizing the computational contributions** of researchers through citations, contributing to academic recognition and career advancement.
 
-<div style="background: #dff5b3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;"> A thoughtful approach to code archiving respects the effort invested in developing research software and scripts, safeguarding this intellectual property for future generations of researchers. </span>
+<div class="note" markdown="1">
+A thoughtful approach to code archiving respects the effort invested in developing research software and scripts, safeguarding this intellectual property for future generations of researchers.
 </div>
 
 **Examples of Code Archiving Practices and Tools:**
