@@ -65,8 +65,10 @@ p.pros, p.cons {margin-bottom: 0;}
 .exercise::before {content: var(--custom-before, "EXERCISE"); color: var(--c-exercise);}
 
 .warning p, .protip p, .note p, .example p, .exercise p {margin-block-end: 0em !important;}
-.warning ul, .protip ul, .note ul, .example ul, .exercise ul {margin-block-start: 0.1em; margin-block-end: 0em !important;}
 .warning a, .protip a, .note a, .example a, .exercise a {color: var(--c-boxlink) !important;}
+.warning ul, .protip ul, .note ul, .example ul, .exercise ul {margin-block-start: 0.1em; margin-block-end: 0em !important;}
+.warning ol, .protip ol, .note ol, .example ol, .exercise ol {margin-block-start: 0.25em; margin-block-end: 0em !important;}
+.warning table, .protip table, .note table, .example table, .exercise table {font-size: 0.9em !important; font-style: normal !important;}
 
 .warning .highlighter-rouge, .protip .highlighter-rouge, .note .highlighter-rouge,
 .example .highlighter-rouge, .exercise .highlighter-rouge {
