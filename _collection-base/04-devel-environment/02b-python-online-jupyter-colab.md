@@ -393,7 +393,7 @@ You can now start writing Python code in the notebook cells. Run your code by cl
 All libraries are included within the Google Colab development environment, so no installations are required.
 
 <div class="protip" markdown="1">
-When running code in Colab, you may encounter an error message that indicates that a library is not available: <em class="c-warning">"ModuleNotFoundError: No module named XXX".</em>
+When running code in Colab, you may encounter an error message that indicates that a library is not available: <em class="c-bad">"ModuleNotFoundError: No module named XXX".</em>
 <base class="mb">
 To install a library that is not available in Colab, you can use the `!pip install` command:
 ```bash

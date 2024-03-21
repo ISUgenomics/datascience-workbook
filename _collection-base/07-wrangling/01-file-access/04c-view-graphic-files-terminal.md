@@ -177,7 +177,7 @@ Finally, you should get a folder *(in this case **jp2a-1.0.7**)* with a source c
 For further instructions, follow the **INSTALLATION: HPC system** section for the specific tool provided below in this tutorial.
 
 <div class="warning" markdown="1">
-**Remember to indicate the custom location** [ `--prefix=PATH` ] **during installation where the executables will be created.** On HPC system it should NOT be the `/usr/local/bin` path because as a regular user you will get an error: <em class="c-warning">Permission denied</em>. Also, it would be better if it was not a path in your home directory, because you will quickly run out of quota.<br>
+**Remember to indicate the custom location** [ `--prefix=PATH` ] **during installation where the executables will be created.** On HPC system it should NOT be the `/usr/local/bin` path because as a regular user you will get an error: <em class="c-bad">Permission denied</em>. Also, it would be better if it was not a path in your home directory, because you will quickly run out of quota.<br>
 It is recommended to create a `SOFTWARE` **directory** in the workspace, where all the executables will be collected and **add this directory to the environment variable** `$PATH` or create symbolic links to the home directory.
 </div>
 
@@ -374,7 +374,7 @@ make install
 This will create a bin directory on the custom path that will contain software executables: <br>
 <b>img2txt</b>, cacaview, cacaclock  cacademo  cacafire  cacaplay  cacaserver.<br>
 <div class="warning" markdown="1">
-In my case, the program has NOT been built with `Imlib2` support, since this graphics library was not natively pre-installed on my HPC system. This results in only BMP loading is supported. So, note that when you face the same issue and try to convert JPEG or PNG you will get the **error message**: <em class="c-warning">"unable to load image-filename"</em>.
+In my case, the program has NOT been built with `Imlib2` support, since this graphics library was not natively pre-installed on my HPC system. This results in only BMP loading is supported. So, note that when you face the same issue and try to convert JPEG or PNG you will get the **error message**: <em class="c-bad">"unable to load image-filename"</em>.
 </div>
 </details>
 

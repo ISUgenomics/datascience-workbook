@@ -429,7 +429,7 @@ end
 The `@eval` **macro in Julia** is used for evaluating expressions in the global scope. It is often utilized in metaprogramming to **execute generated code**. When you have an expression that you want to evaluate, you can use the `@eval` macro to execute that expression and return the result.
 ```julia
 expression = :(2 + 2)              # Create an expression for the sum of 2 and 2
-result = @eval($expression)        # Evaluate the expression using the @eval macro <br>
+result = @eval($expression)        # Evaluate the expression using the @eval macro
 println(result)                    # Output: 4
 ```
 </div>
