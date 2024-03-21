@@ -6,18 +6,30 @@
   --bc-example: #FFFACD;
   --bc-exercise: #ffd7b5;
   --bc-code: #fafafa;
+  --c-gray: #c2c6d3;
   --c-boxdark: #2a4960;
   --c-boxlink: #7dc2d6;
-  --c-announce: #ff3870;
+  --c-alert: #ff3870;
   --c-warning: #e84b4b;
   --c-protip: #5790c4;
-  --c-note: #1bba6e;
+  --c-note: #0ba37f; /*#1bba6e;*/
   --c-example: #ffbb00;
   --c-exercise: #EC8000;
+  --c-header: #8896c1;
   --b-darkgray: #898c8f;
 }
 
+.c-header {color: var(--c-header) !important;}
+.c-gray {color: var(--c-gray) !important;}
+.c-good {color: var(--c-note) !important;}
+.c-bad {color: var(--c-warning) !important;}
+.c-alert {color: var(--c-alert) !important;}
+.c-exercise {color: var(--c-exercise) !important;}
+
 /* resource wide*/
+.inline {display: inline !important; max-width: 100%;}
+.flex {display: inline-flex; margin-right: 0.6em;}
+.flex h3 {margin-block-start: 0.5em;}
 .row {display: flex;}
 .col-6 {width: 50%;}
 
@@ -31,10 +43,16 @@
 
 .no-decoration {text-decoration: none !important;}
 .italic {font-style: italic !important;}
-
 .font-1 {font-size: 1em !important;}
 
-.c-warning {color: var(--c-warning);}
+.btn {
+  font-size: 0.6em !important;
+  padding: 0.8em 0.8em 0.3em 0.8em !important;
+  border: none;
+  margin: 0.1em !important;
+}
+.toc .btn {font-size: 0.8em !important;}
+
 
 .pros::before, .cons::before {
   font-size: 1.1em;
@@ -45,13 +63,21 @@
 .cons::before {content: "✗"; color: #df0010;}
 p.pros, p.cons {margin-bottom: 0;}
 
-.warning, .protip, .note {font-style: italic;}
-.warning, .protip, .note, .example, .exercise {
+
+.warning, .protip, .note, .footnote {font-style: italic;}
+.warning, .protip, .note, .example, .exercise, .footnote {
   margin: 0.5em 0 1.5em 0;
   padding: 0.8em 1em;
   font-size: 0.8em;
   color: var(--c-boxdark);
 }
+.footnote {
+  color: var(--c-gray);
+  font-weight: 250;
+  font-size: 0.8em !important;
+  padding: 0 1em !important;
+}
+
 .warning {background-color: var(--bc-warning);}
 .protip {background-color: var(--bc-protip);}
 .note {background-color: var(--bc-note);}
@@ -79,11 +105,12 @@ p.pros, p.cons {margin-bottom: 0;}
 .warning table, .protip table, .note table, .example table, .exercise table {font-size: 0.9em !important; font-style: normal !important;}
 
 .warning .highlighter-rouge, .protip .highlighter-rouge, .note .highlighter-rouge,
-.example .highlighter-rouge, .exercise .highlighter-rouge {
+.example .highlighter-rouge, .exercise .highlighter-rouge, .footnote .highlighter-rouge {
   margin-bottom: 0.2em !important;
   margin-top: 0.4em !important;
   font-style: normal !important;
   font-size: 0.8em !important;
+  color: var(--c-boxdark) !important;
 }
 .warning pre.highlight, .protip pre.highlight, .note pre.highlight,
 .example pre.highlight, .exercise pre.highlight {padding: 0.3em 0.8em !important; font-size: 1.1em !important;}
@@ -157,7 +184,6 @@ pre {
 .wrapper-link {
   display: inline !important;
 }
-.inline {display: inline !important;}
 
 .target-link {
   text-decoration: none !important;
