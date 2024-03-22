@@ -16,11 +16,13 @@
   --c-example: #ffbb00;
   --c-exercise: #EC8000;
   --c-header: #8896c1;
+  --c-pros: #66cb5e;
   --b-darkgray: #898c8f;
 }
 
 .c-header {color: var(--c-header) !important;}
 .c-gray {color: var(--c-gray) !important;}
+.c-pros {color: var(--c-pros) !important;}
 .c-good {color: var(--c-note) !important;}
 .c-bad {color: var(--c-warning) !important;}
 .c-alert {color: var(--c-alert) !important;}
@@ -36,10 +38,11 @@
 .pr-2 {padding-right: 2em;}
 .pl-2 {padding-left: 2em;}
 
-.mb-0 {margin-bottom: 0 !important;}
-.mt-0 {margin-top: 0 !important;}
 .mb {margin-bottom: 0.6em !important; display: block;}
-.mt {margin-top: 0.8em !important; display: block;}
+.mt {margin-top: 1.5em !important; display: block;}
+.mt- {margin-top: -0.8em !important;}
+.mt-0 {margin-top: 0 !important;}
+.mb-0 {margin-bottom: 0 !important;}
 
 .no-decoration {text-decoration: none !important;}
 .italic {font-style: italic !important;}
@@ -59,8 +62,8 @@
   font-weight: 600;
   margin-right: 0.5em;
 }
-.pros::before {content: "✓"; color: #66cb5e;}
-.cons::before {content: "✗"; color: #df0010;}
+.pros::before {content: "✓"; color: var(--c-pros); /*#66cb5e;*/}
+.cons::before {content: "✗"; color: var(--c-warning);}
 p.pros, p.cons {margin-bottom: 0;}
 
 
@@ -164,6 +167,8 @@ pre {
 
 /* indentation settings */
 .level-1 {margin-left: 2.3em !important;}
+.level-2 {margin-left: 4.5em !important;}
+.level-3 {margin-left: 6.8em !important;}
 
 .li-level-1 {
   margin-left: 2.8em;
