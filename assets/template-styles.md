@@ -297,13 +297,13 @@ By default, color-coded boxes span 100% width, but you can adjust their indentat
 
 ```html
 <div class="exercise" markdown="1">
-**Challenge:** You've got this! Reaching out for support is a brave and positive step. We're all in this together.
+**You've got this!** Reaching out for support is a brave and positive step. We're all in this together.
 </div>
 ```
 </details>
 
 <div class="exercise" markdown="1">
-**Challenge:** You've got this! Reaching out for support is a brave and positive step. We're all in this together.
+**You've got this!** Reaching out for support is a brave and positive step. We're all in this together.
 </div>
 
 
@@ -311,19 +311,35 @@ By default, color-coded boxes span 100% width, but you can adjust their indentat
 
 ```html
 <div class="exercise level-1" markdown="1">
-**Challenge:** You've got this! Reaching out for support is a brave and positive step. We're all in this together.
+**You've got this!** Reaching out for support is a brave and positive step. We're all in this together.
 </div>
 ```
 </details>
 
+* example bullet point, **class:** `level-1`
 <div class="exercise level-1" markdown="1">
-**Challenge:** You've got this! Reaching out for support is a brave and positive step. We're all in this together.
+**You've got this!** Reaching out for support is a brave and positive step. We're all in this together.
 </div>
 
+<ul><ul><li> example bullet point, <b>class:</b> <code>level-2</code></li></ul></ul>
+
+<div class="exercise level-2" markdown="1">
+**You've got this!** Reaching out for support is a brave and positive step. We're all in this together.
+</div>
+
+<ul><ul><ul><li> example bullet point, <b>class:</b> <code>level-3</code></li></ul></ul></ul>
+
+<div class="exercise level-3" markdown="1">
+**You've got this!** Reaching out for support is a brave and positive step. We're all in this together.
+</div>
 
 ## *custom box title*
 
+By default, each color-coded box comes with a built-in title, like <button class="btn protip"></button> or <button class="btn warning"></button>, which occupies some space but can be helpful for users by providing immediate context. This feature is designed for contributor convenience. Should your needs require altering or removing this title, it can be achieved with minimal customization.
+
 ### *- no title*
+
+If you prefer a color-coded box without a title, add **before** to the `class` attribute and include an additional `data-before` attribute set to an empty string **""**. *This will remove the box title.*
 
 <details class="inline" markdown="1"><summary class="italic c-header">see code example (no box title)</summary>
 
@@ -338,7 +354,9 @@ By default, color-coded boxes span 100% width, but you can adjust their indentat
 **Challenge:** You've got this! Reaching out for support is a brave and positive step. We're all in this together.
 </div>
 
-### *-custom title*
+### *- custom title*
+
+To customize the title of a color-coded box, add **before** to the `class` attribute and specify your **custom text** in the `data-before` attribute. *This will replace the default box title with your text.*
 
 <details class="inline" markdown="1"><summary class="italic c-header">see code example (custom box title)</summary>
 
@@ -354,35 +372,258 @@ The Challenger disaster is a tragic example where ignoring potential risks had c
 </div>
 
 
+---
+
+# pros & cons
+
+Pros and cons lists are crucial in tutorials as they provide a balanced overview, **helping readers make informed decisions** by clearly outlining the advantages and disadvantages of a particular tool, method, or concept. To facilitate this, built-in **pros** <em class="pros"></em> and **cons** <em class="cons"></em> `classes` are provided, supporting two main usage cases:
+
+* **marker + independent text styling** <br>
+By using an `<em class="pros"></em>` or `<em class="cons"></em>` tag without any text, <br> you incorporate a <strong class="c-pros">green</strong> or <strong class="c-bad">red</strong> **marker**, respectively. This is ideal when you wish to <u>follow the marker with text using different styling</u>, allowing for **markdown styling in your text**. <base class="mb"> *It's a flexible option for when you want to visually indicate pros and cons without affecting the styling of the text that follows.*
+
+<details class="inline level-1" markdown="1"><summary class="italic c-header">see code example (marker + text with markdown styling, manual items spacing)</summary>
+
+```html
+<em class="pros"></em> The notebook `.ipynb` is primarily designed for **interactive computing, data exploration, and rapid prototyping**, making it an excellent tool for tasks like data analysis, data visualization, and machine learning.
+
+<em class="cons"></em> Some online notebook platforms **require a subscription or incur charges** for access to additional resources, which may be an issue for those working on a tight budget.
+```
+</details>
+
+<div class="level-1" markdown="1">
+<em class="pros"></em> The notebook `.ipynb` is primarily designed for **interactive computing, data exploration, and rapid prototyping**, making it an excellent tool for tasks like data analysis, data visualization, and machine learning.
+
+<em class="cons"></em> Some online notebook platforms **require a subscription or incur charges** for access to additional resources, which may be an issue for those working on a tight budget.
+</div>
+
+* **marker + plain text** <br>
+Applying a class within `<p class="pros"> text </p>` or `<p class="cons"> text </p>` tags not only adds a <strong class="c-pros">green</strong> or <strong class="c-bad">red</strong> **marker** but also includes your text, prefixing your paragraph with this visual cue. This approach **automatically spaces items** for clarity. Markdown is not allowed for text styling, you should **use plain text** or combine HTML (tags like: `<em>`, `<i>`, `<b>`, `<u>`) and CSS styling. <base class="mb"> *It's beneficial for creating simple lists or paragraphs where consistent spacing with no advanced styling are key.*
+
+<details class="inline level-1" markdown="1"><summary class="italic c-header">see code example (marker + plain text, automatic items spacing)</summary>
+
+```html
+<p class="pros"> You don't need an account or to sign in. Just open the jupyter-try and start using it! </p>
+<p class="cons"> You can't install custom libraries. </p>
+```
+</details>
+
+<div class="level-1" markdown="1">
+<p class="pros"> You don't need an account or to sign in. Just open the jupyter-try and start using it! </p>
+<p class="cons"> You can't install custom libraries. </p>
+</div>
+
+---
+
+# custom spacing
+
+Occasionally, customizing the spacing between built-in components can be beneficial. While the default settings are optimized for most scenarios, there might be instances where you want to add an extra `line break` for clarity or <u>reduce the space</u> for a more compact look. To accommodate these needs, several styling classes are available:
+
+* **add extra space**
+
+| <span style="display: flex; width: 150px;">component</span> | effect          | additional info |
+|---------------------|----------------------------------------|-----------------------------------|
+| `<br>`              | line break                             | works with both Markdown and HTML syntax; for a full-size empty line, simply add it twice: <br><br> |
+| `<base class="mb">` | line break with 0.5 line space below   | useful if you want to add some space between paragraphs or html components |
+| `<base class="mb">` | line break with 0.8 line space above   | useful if you want to add some space between paragraphs or html components |
+
+
+<br>**MARKDOWN LIMITATIONS**
+
+<div class="row">
+<div style="width: 46%" markdown="1">
+```
+You don't need an account or to sign in.
+You can't install custom libraries.
+```
+</div>
+<div class="pl-2" style="font-size: 0.8em;" markdown="1">
+<em class="c-gray"> 1) Text is displayed <u>inline</u>:</em> <base class="mb">
+You don't need an account or to sign in.
+You can't install custom libraries.
+</div>
+</div>
+
+<div class="row">
+<div style="width: 46%" markdown="1">
+```
+You don't need an account or to sign in.
+
+You can't install custom libraries.
+```
+</div>
+<div class="pl-2" style="font-size: 0.8em;" markdown="1">
+<em class="c-gray">2) Text is displayed with <u>new line</u> break:</em> <base class="mb">
+You don't need an account or to sign in.
+
+You can't install custom libraries.
+</div>
+</div>
+
+<br>**CUSTOM TEXT SPACING**
+
+<div class="row">
+<div style="width: 55%" markdown="1">
+```html
+You don't need an account or to sign in. <br> You can't install custom libraries.
+```
+</div>
+<div class="pl-2" style="font-size: 0.8em; margin-top: -0.4em;" markdown="1">
+<em class="c-gray"> Simple <u>line break</u> with</em> `<br>` <base class="mb">
+You don't need an account or to sign in. <br> You can't install custom libraries.
+</div>
+</div> <base class="mb">
+
+<div class="row">
+<div style="width: 55%; padding-top: 1.4em;" markdown="1">
+```html
+You don't need an account or to sign in. <br><br> You can't install custom libraries.
+```
+</div>
+<div class="pl-2" style="font-size: 0.8em;" markdown="1">
+<em class="c-gray"><u>Full-line space</u> with</em> `<br><br>` <base class="mb">
+You don't need an account or to sign in. <br><br> You can't install custom libraries.
+</div>
+</div>
+
+<div class="row">
+<div style="width: 55%; padding-top: 1.4em;" markdown="1">
+```html
+**NumPy** is a Python library for numerical computing
+that includes a random module for generating random numbers
+and arrays. <base class="mb"> **Matplotlib** is a popular
+data visualization library for Python. It provides a wide
+range of tools for creating different types of plots.
+```
+</div>
+<div class="pl-2" style="font-size: 0.8em; padding-top: 1.4em;" markdown="1">
+<em class="c-gray"><u>Half-line space</u> with</em> `<base class="mb">` <base class="mb">
+**NumPy** is a Python library for numerical computing
+that includes a random module for generating random numbers
+and arrays. <base class="mb"> **Matplotlib** is a popular
+data visualization library for Python. It provides a wide
+range of tools for creating different types of plots.
+</div>
+</div>
+
+<div class="row">
+<div style="width: 55%; padding-top: 1.4em;">
+<div class="language-html highlighter-rouge"><div class="highlight">
+<pre class="highlight"><code>```python
+# Define a function that calculates the sum of two numbers
+def add_numbers(x, y):
+    return x + y
+```
+<span style="color:#000080;">&lt;base</span> <span style="color:#008080;">class=</span><span style="color:#d14;">"mt"</span><span style="color:#000080;">&gt;</span> **C. Imported functions**
+</code></pre></div></div>
+</div>
+<div class="pl-2" style="font-size: 0.8em; padding-top: 1.45em;" markdown="1">
+<em class="c-gray"><u>Mid-section break</u> (1.5 line) with</em> `<base class="mt">` <br>
+<div class="footnote c-alert mt-" markdown="1">
+\* add some extra space after code block for a new subsection
+</div> <base class="mb">
+```python
+# Define a function that calculates the sum of two numbers
+def add_numbers(x, y):
+    return x + y
+```
+<base class="mt"> **C. Imported functions**
+</div>
+</div>
+
+
+
+
+<br>**COMPONENTS SPACING**
+
+Color-coded boxes feature a `0.5 line` margin on **top** and a `1.5 line` margin at the **bottom**.
+* Reducing spacing becomes useful to enhance appearance when **stacking multiple boxes**, similar to when a box is the last element in a nested structure.
+* For adding more spacing, the <u>solutions for spacing text</u> *(see subsection just above)* can also be applied to other components with success.
+
+<div class="row">
+<div style="width: 55%" markdown="1">
+```html
+<div class="exercise" markdown="1">
+  **Step 1: Identify Your Achievement**
+</div>
+<div class="exercise" markdown="1">
+  **Step 2: Reflect on Your Progress**
+</div>
+```
+</div>
+<div class="pl-2" style="font-size: 0.8em; margin-top: -0.4em; width: 45%" markdown="1">
+<em class="c-gray"> Default spacing between color-coded boxes</em> <base class="mb">
+<div class="exercise" markdown="1">
+  **Step 1: Identify Your Achievement**
+</div>
+<div class="exercise" markdown="1">
+  **Step 2: Reflect on Your Progress**
+</div>
+</div>
+</div> <base class="mt">
+
+<div class="row">
+<div style="width:55%" markdown="1">
+```html
+<div class="exercise mb-0" markdown="1">
+  **Step 1: Identify Your Achievement**
+</div>
+<div class="exercise" markdown="1">
+  **Step 2: Reflect on Your Progress**
+</div>
+```
+</div>
+<div class="pl-2" style="font-size: 0.8em; margin-top: -0.7em; width: 45%" markdown="1">
+<em class="c-gray"> Reduced bottom spacing with</em> `class` **mb-0** <base class="mb">
+<div class="exercise mb-0" markdown="1">
+  **Step 1: Identify Your Achievement**
+</div>
+<div class="exercise mb-0" markdown="1">
+  **Step 2: Reflect on Your Progress**
+</div>
+<div class="footnote c-alert" markdown="1">
+\* there are also: **mt-0** and **mt-** `classes` that set top margin to 0 and -0.8, respectively
+</div>
+</div>
+</div> <base class="mt">
+
+<div class="row">
+<div style="width:55%" markdown="1">
+```html
+<div class="exercise" markdown="1">
+  **Step 1: Identify Your Achievement**
+  <div class="protip mb-0 font-1" markdown="1">
+    **Step 2: Reflect on Your Progress**
+  </div>
+</div>
+```
+</div>
+<div class="pl-2" style="font-size: 0.8em; margin-top: -0.8em; width: 45%" markdown="1">
+<em class="c-gray"> Useful for nested boxes (box as the last element)</em> <base class="mb">
+<div class="exercise mb-0" markdown="1">
+  **Step 1: Identify Your Achievement**
+  <div class="protip mb-0 font-1">
+    <b>Step 2: Reflect on Your Progress</b>
+  </div>
+</div>
+<div class="footnote c-alert" markdown="1">
+\* `font-1` class keeps the same font size for nested boxes; font size is decreased otherwise
+</div>
+</div>
+</div> <base class="mb">
+
+
+
+
 
 
 
 
 <!--
+---
 
-## pros & cons
+# code
 
-<em class="pros"></em> The notebook `.ipynb` is primarily designed for **interactive computing, data exploration, and rapid prototyping**, making it an excellent tool for tasks like data analysis, data visualization, and machine learning.
-
-<em class="cons"></em> Some online notebook platforms **require a subscription or incur charges** for access to additional resources, which may be an issue for those working on a tight budget.
-
-
-<p class="pros"> You don't need an account or to sign in. Just open the jupyter-try and start using it! </p>
-<p class="cons"> You can't install custom libraries. </p>
-
-
-
-## spacing
-
-* <br>   -   line break
-
-* <base class="mb">   -   line break with 0.5 line space
-* <base class="mt">
-
-<a href="https://numpy.org/" target="_blank">NumPy  ⤴</a> is a Python library for numerical computing that includes a <a href="https://numpy.org/doc/stable/reference/random/index.html" target="_blank">random  ⤴</a> module for generating random numbers and arrays. <base class="mb"> <a href="https://matplotlib.org" target="_blank">Matplotlib  ⤴</a> is a popular data visualization library for Python. It provides a wide range of tools for creating different types of plots, including line plots, scatter plots, bar plots, histograms, and more.
-
-
-# code-inline
+## code-inline
 
 
 <code class="code-inline">command</code>
