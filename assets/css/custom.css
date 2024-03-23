@@ -20,6 +20,7 @@
   --b-darkgray: #898c8f;
 }
 
+/* pre-defined font colors */
 .c-header {color: var(--c-header) !important;}
 .c-gray {color: var(--c-gray) !important;}
 .c-pros {color: var(--c-pros) !important;}
@@ -27,6 +28,14 @@
 .c-bad {color: var(--c-warning) !important;}
 .c-alert {color: var(--c-alert) !important;}
 .c-exercise {color: var(--c-exercise) !important;}
+
+/* pre-defined bg colors, including custom <details> */
+.bc-warning {--bg-color: var(--bc-warning); background-color: var(--bc-warning);}
+.bc-protip {--bg-color: var(--bc-protip); background-color: var(--bc-protip);}
+.bc-note {--bg-color: var(--bc-note); background-color: var(--bc-note);}
+.bc-example {--bg-color: var(--bc-example); background-color: var(--bc-example);}
+.bc-exercise {--bg-color: var(--bc-exercise); background-color: var(--bc-exercise);}
+
 
 /* resource wide*/
 .inline {display: inline !important; max-width: 100%;}
@@ -46,6 +55,7 @@
 
 .no-decoration {text-decoration: none !important;}
 .italic {font-style: italic !important;}
+.bold {font-weight: bold !important;}
 .font-1 {font-size: 1em !important;}
 
 .btn {
@@ -127,14 +137,6 @@ p.pros, p.cons {margin-bottom: 0;}
   background: #fafafa;
   border-radius: 4px;
   padding: 0.1rem 0.3rem;
-}
-
-.code-block {
-  font-family: Monaco, Consolas, "Lucida Console", monospace;
-  font-size: .8em;
-  margin: 0;
-  padding: 1em 1em;
-  background-color: #f8f8f8;
 }
 
 
@@ -308,3 +310,36 @@ toc-note {
 .content a:visited {
   color: #52adc8;
 }
+
+
+/* custom collapsible <details> */
+summary {
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+  justify-content: space-between;
+  padding: 0.15em 0.3em 0.1em 0.3em;
+  margin-left: -0.8em;
+  background-color: var(--bg-color);
+}
+summary::before {
+  content: '▶ ';
+  display: inline-block;
+  margin: -0.15em 0.5em -0.1em -0.3em;
+  padding: 0.2em 0 0 0.3em;
+  transition: transform 0.2s;
+}
+summary::after {
+  content: "";
+  flex-grow: 1;
+  background-color: var(--parent-color, white);
+  margin: -0.15em -2.0em -0.1em 2em;
+}
+details {
+  margin-bottom: 1.5em;
+  padding: 0 0.8em 0 0.8em;
+  background-color: var(--bg-color);
+}
+details[open] {padding-bottom: 0.5em;}
+details[open] > summary {margin-bottom: 0.5em;}
+details[open] > summary::before {transform: rotate(90deg);}
