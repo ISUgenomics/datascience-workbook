@@ -63,17 +63,29 @@ This involves <u>wrapping your text</u> in simple **HTML tags** like `<span>`, `
     <p class="c-bad"> text </p>
   </div>
 </div>
+
 In your tutorial you can use it like this: <br>
 <div class="row">
   <div class="col-6" markdown="1">
   ```html
-  The font can be changed to <span class="c-bad"> red text </span> or
+  The font can be changed to <span class="c-good"> green text </span> or
   <em class="c-bad"> red italic </em> using these HTML tags.
   ```
   </div>
   <div class="pl-2">
     <em class="c-gray">preview:</em><br>
-    The font can be changed to <span class="c-bad"> red text </span> or <em class="c-bad"> red italic </em> using these HTML tags.
+    The font can be changed to <span class="c-good"> green text </span> or <em class="c-bad"> red italic </em> using these HTML tags.
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-6" markdown="1">
+  ```html
+  <em class="c-alert"><b>NOTE:</b> Before starting this tutorial, ensure you meet a few necessary requirements. </em>
+  ```
+  </div>
+  <div class="pl-2">
+    <em class="c-alert"><b>NOTE:</b> Before starting this tutorial, ensure you meet a few necessary requirements. </em>
   </div>
 </div>
 
@@ -88,6 +100,99 @@ Below is a list of `class names` designed to standardize `font colors` across th
 |`c-header`  | <span class="c-header"> text </span>   | `<span class="c-header"> text </span>`   | *important section that will be highlighted in the table of contents*     |
 |`c-alert`   | <span class="c-alert"> text </span>    | `<span class="c-alert"> text </span>`    | `notifications`, `announcements`, `user alerts`                           |
 |`c-exercise`| <span class="c-exercise"> text </span> | `<span class="c-exercise"> text </span>` | *headers for* `exercises` *that will be highlighted in the table of contents* |
+
+
+## **TOC highlighted section :**
+
+You can change the color of a section title by applying one of the predefined color classes, which will also **reflect in the Table of Contents**. This approach is a strategic way to underscore section significance, ensuring it's both eye-catching and readily noticeable to readers. <base class="mb">
+**To prevent overuse**, it's recommended to limit this approach to three specific scenarios:
+
+### -<span class="c-header bold"> Important Section </span>
+
+<details class="pl-2"><summary class="italic c-header">see code example</summary>
+
+<div class="inline"> <span class="c-header" style="font-size: 1.25em; font-weight: bold;"> Important Section </span> </div>
+<details class="pl-2 inline" markdown="1"><summary class="italic c-gray">see code example</summary>
+
+```html
+## <span class="c-header"> Important Section </span>
+```
+```html
+<h2 class="c-header"> Important Section </h2>
+```
+</details> <base class="mb">
+
+<div class="inline"> <span class="c-header italic" style="font-size: 1.25em; font-weight: bold;"> Important Section </span> </div>
+<details class="pl-2 inline" markdown="1"><summary class="italic c-gray">see code example</summary>
+
+```html
+<h2 class="c-header italic"> Important Section </h2>
+```
+</details>
+</details> <base class="mb">
+
+<div class="pl-2" markdown="1">
+Apply `c-header` color class for sections of special significance, as determined by your discretion.
+</div>
+
+
+### -<span class="c-exercise bold"> EXERCISE </span>
+
+<details class="pl-2"><summary class="italic c-header">see code example</summary>
+
+<div class="inline"> <span class="c-exercise" style="font-size: 1.25em; font-weight: bold;"> EXERCISE </span> </div>
+<details class="pl-2 inline" markdown="1"><summary class="italic c-gray">see code example</summary>
+
+```html
+## span class="c-exercise"> EXERCISE </span>
+```
+```html
+<h2 class="c-exercise"> EXERCISE </h2>
+```
+</details> <base class="mb">
+
+<div class="inline"> <span class="c-exercise italic" style="font-size: 1.25em; font-weight: bold;"> EXERCISE </span> </div>
+<details class="pl-2 inline" markdown="1"><summary class="italic c-gray">see code example</summary>
+
+```html
+<h2 class="c-exercise italic"> EXERCISE </h2>
+```
+</details>
+</details> <base class="mb">
+
+<div class="pl-2" markdown="1">
+Mark exercises using `c-exercise` color class and the simple keyword **EXERCISE**.
+</div>
+
+
+### -<span class="c-alert bold"> Coming Soon </span>
+
+<details class="pl-2"><summary class="italic c-header">see code example</summary>
+
+<div class="inline"> <span class="c-alert" style="font-size: 1.25em; font-weight: bold;"> Coming Soon </span> </div>
+<details class="pl-2 inline" markdown="1"><summary class="italic c-gray">see code example</summary>
+
+```html
+## <span class="c-alert"> Coming Soon </span>
+```
+```html
+<h2 class="c-alert"> Coming Soon </h2>
+```
+</details> <base class="mb">
+
+<div class="inline"> <span class="c-alert italic" style="font-size: 1.25em; font-weight: bold;"> Coming Soon </span> </div>
+<details class="pl-2 inline" markdown="1"><summary class="italic c-gray">see code example</summary>
+
+```html
+<h2 class="c-alert italic"> Coming Soon </h2>
+```
+</details>
+</details> <base class="mb">
+
+<div class="pl-2" markdown="1">
+Use `c-alert` color class for <u>temporary alerts</u> with straightforward action keywords like <em class="c-alert">"Coming Soon", "Update Required", "New Feature" or "Important Notice"</em>. These tags and keywords ensure the content's importance is immediately recognizable, enhancing the document's overall effectiveness and user navigation.
+</div>
+
 
 ---
 
@@ -217,7 +322,7 @@ In this project, we will explore the use of: <br>
 </div>
 
 
-## **custom styling**
+## **custom box styling**
 
 The built-in styles include:
 * `background color`, `box type title`, `default text color`
@@ -288,7 +393,7 @@ Due to incompatibilities between certain python libraries, it is highly recommen
 </div>
 
 
-## *indentation*
+## *box indentation*
 
 By default, color-coded boxes span 100% width, but you can adjust their indentation up to 3 levels to `left-align` with bullet points if desired.
 
@@ -374,7 +479,7 @@ The Challenger disaster is a tragic example where ignoring potential risks had c
 
 ---
 
-# pros & cons
+# pros & cons marks: <em class="pros"></em><em class="cons"></em>
 
 Pros and cons lists are crucial in tutorials as they provide a balanced overview, **helping readers make informed decisions** by clearly outlining the advantages and disadvantages of a particular tool, method, or concept. To facilitate this, built-in **pros** <em class="pros"></em> and **cons** <em class="cons"></em> `classes` are provided, supporting two main usage cases:
 
@@ -507,14 +612,13 @@ range of tools for creating different types of plots.
 
 <div class="row">
 <div style="width: 55%; padding-top: 1.4em;">
-<div class="language-html highlighter-rouge"><div class="highlight">
-<pre class="highlight"><code>```python
+<code class="code-block">```python
 # Define a function that calculates the sum of two numbers
 def add_numbers(x, y):
     return x + y
 ```
 <span style="color:#000080;">&lt;base</span> <span style="color:#008080;">class=</span><span style="color:#d14;">"mt"</span><span style="color:#000080;">&gt;</span> **C. Imported functions**
-</code></pre></div></div>
+</code>
 </div>
 <div class="pl-2" style="font-size: 0.8em; padding-top: 1.45em;" markdown="1">
 <em class="c-gray"><u>Mid-section break</u> (1.5 line) with</em> `<base class="mt">` <br>
@@ -529,8 +633,6 @@ def add_numbers(x, y):
 <base class="mt"> **C. Imported functions**
 </div>
 </div>
-
-
 
 
 <br>**COMPONENTS SPACING**
@@ -612,23 +714,223 @@ Color-coded boxes feature a `0.5 line` margin on **top** and a `1.5 line` margin
 </div> <base class="mb">
 
 
+---
 
+# code
+
+Embedding code snippets in tutorials provides practical examples, enhancing understanding and facilitating hands-on learning. <base class="mb">
+In the workbook, several aspects of code presentation are **automated**, including:
+* code styling (font, background color, layout),
+* highlighting within code blocks based on the specified programming language,
+* a copy button for code blocks in the top-right corner,
+* and simple inline formatting for brief commands or options.
+
+## code-inline
+
+**Inline code in Markdown** is used to format text as code within a sentence, making it highlighted for clarity. The syntax for inline code involves wrapping the text with
+<u>backticks</u> <code class="code-inline">` `</code>, for example <code class="code-inline">`text`</code>, to format it as `text` within the flow of a sentence. <base class="mb">
+Examples include using code syntax for:
+* short commands like `git clone`,
+* function names such as `print()`,
+* options like `--verbose`
+
+**Inline code in HTML-based components**, like color-coded boxes, is possible when the `markdown="1"` attribute is included in the HTML tag.
+
+<div class="row">
+<div style="width:55%" markdown="1">
+```html
+<div class="exercise" markdown="1">
+  Navigate to desired location using the `cd` command.
+</div>
+```
+</div>
+<div class="pl-2" style="font-size: 0.8em; width: 45%" markdown="1">
+<em class="c-gray"> Preview:</em> <base class="mb">
+<div class="exercise" markdown="1">
+  Navigate to desired location using the `cd` command.
+</div>
+</div>
+</div> <base class="mb">
+
+
+If this approach fails, employing the `<code>` tag with `class="code-inline"` ensures inline code rendering. <em class="c-alert">In this case, the</em> `markdown="1"` <em class="c-alert"> attribute is not required.</em>
+
+**SYNTAX:** `<code class="code-inline"> text </code>`
+
+<div class="row">
+<div style="width:55%" markdown="1">
+```html
+<div class="exercise">
+  Navigate to desired location using the <code class="code-inline">cd</code> command.
+</div>
+```
+</div>
+<div class="pl-2" style="font-size: 0.8em; width: 45%" markdown="1">
+<em class="c-gray"> Preview:</em> <base class="mb">
+<div class="exercise">
+  Navigate to desired location using the <code class="code-inline">cd</code> command.
+</div>
+</div>
+</div> <base class="mb">
+
+Moreover, this method enables the <u>presentation of raw Markdown syntax</u> *(including backticks)* as inline code. This is particularly **useful for explaining syntax**, as demonstrated in this guide.
+
+<div class="row">
+<div style="width:55%" markdown="1">
+```html
+<div class="exercise">
+The Markdown syntax for inline code involves wrapping the text with <u>backticks</u>
+<code class="code-inline">` `</code>, for example <code class="code-inline">`text`</code>
+</div>
+```
+</div>
+<div class="pl-2" style="font-size: 0.8em; width: 45%" markdown="1">
+<em class="c-gray"> Preview:</em> <base class="mb">
+<div class="exercise">
+The Markdown syntax for inline code involves wrapping the text with <u>backticks</u>
+<code class="code-inline">` `</code>, for example <code class="code-inline">`text`</code>
+</div>
+</div>
+</div> <base class="mb">
+
+
+## code-block
+
+Code blocks in tutorials provide a clear and structured way to **present complex code snippets**, facilitating easier understanding and practical learning for the reader. <base class="mb"> The Markdown **syntax for multiline code snippets** involves enclosing the code between triple backticks <code class="code-inline">```</code> and optionally following the opening backticks with the programming language name to guide syntax highlighting by Rouge.
+
+<div class="row">
+<div style="width:55%">
+<code class="code-block">```bash
+for i in 123; do
+    echo $i
+```</code>
+</div>
+<div class="pl-2" style="font-size: 0.8em; width: 45%" markdown="1">
+<em class="c-gray"> Rendering preview:</em> <base class="mb">
+```bash
+for i in 123; do
+    echo $i
+```
+</div>
+</div> <base class="mb">
+
+Displaying the raw Markdown syntax *(left panel above)* was achieved by encapsulating it within a pure HTML `<code>` tag, used with the `class="code-block"` to preserve and showcase the syntax accurately. <em class="c-gray">This approach is useful for providing a guide on the exact code to be used, as it prevents immediate rendering of Markdown syntax, allowing users to see the code as it is.</em> <base class="mb"> You can include Markdown syntax within the HTML `<code>` tag like this: <br>
+<em class="c-header">(ensuring it still renders as a code block in your tutorial)</em>
+
+<div class="row">
+<div style="width:55%" markdown="1">
+```
+<code class="code-block">```bash
+for i in 123; do
+    echo $i
+```</code>
+```
+</div>
+<div class="pl-2" style="font-size: 0.8em; width: 45%; margin-top: -0.4em;">
+<em class="c-gray"> Rendering preview:</em> <base class="mb">
+<code class="code-block">```bash
+for i in 123; do
+    echo $i
+```</code>
+</div>
+</div> <base class="mb">
+
+
+
+---
+
+# collapsible section
+
+A collapsible element is a **section that users can expand or collapse**, which enhances <u>clarity and visibility</u> by allowing readers to control the amount of information displayed at one time. You would encounter many such collapsible components throughout this guide.
+
+Collapsible section uses the `<details> content </details>` syntax, which are automatically rendered by Markdown, but can also be further styled with predefined classes to improve appearance and better integrate with your tutorial layout.
+
+* **basic variant**
+
+The opening and closing tags of a collapsible element should be on separate lines, with the content placed in between. Immediately after the opening tag, include a `<summary>` element to display short instructions or titles like <em class="c-header">"see example"</em>, <em class="c-header">"expand instructions"</em> or <em class="c-header">"here are more details"</em>. <base class="mb">
+
+<span class="c-alert">It's essential to <b>leave one blank line</b> between &lt;/summary&gt; element and the actual content of the section to ensure it renders correctly.</span>
+
+<div class="row">
+  <div style="width:60%" markdown="1">
+  ```html
+  <details><summary> see the preview </summary>
+
+  **By default** `Markdown` **syntax is not automatically
+  rendered within** `<details>` **component.**
+  </details>
+  ```
+  </div>
+  <div class="pl-2" style="font-size: 0.8em; width: 45%">
+  <details><summary> see the preview </summary>
+
+  **By default** `Markdown` **syntax is not automatically
+  rendered within** `&lt;details&gt;` **component.**
+  </details>
+  </div>
+</div>
+
+<span class="c-alert">To enable Markdown syntax interpretation <b>add markdown="1"</b> attribute within</span> `<details>` <span class="c-alert">tag:</span>
+
+<div class="row">
+<div style="width:60%" markdown="1">
+```html
+<details markdown="1"><summary> see the preview </summary>
+
+**By default** `Markdown` **syntax is not automatically
+rendered within** `<details>` **component.**
+</details>
+```
+</div>
+<div class="pl-2" style="font-size: 0.8em; width: 45%">
+<details markdown="1"><summary> see the preview </summary>
+
+**By default** `Markdown` **syntax is not automatically
+rendered within** `<details>` **component.**
+</details>
+</div>
+</div>
+
+When Markdown is enabled, you can **seamlessly embed code snippets** within a collapsible:
+
+<div class="row">
+<div style="width:60%">
+<code class="code-block">&lt;details markdown="1"&gt;&lt;summary&gt; see the preview &lt;/summary&gt;
+
+*Here is an example of how to open a file:*
+```python
+file = open('example.txt', 'r')
+```
+&lt;/details&gt;</code>
+</div>
+<div class="pl-2" style="font-size: 0.8em; width: 45%">
+<details markdown="1"><summary> see the preview </summary>
+
+*Here is an example of how to open a file:*
+```python
+file = open('example.txt', 'r')
+```
+</details>
+</div>
+</div>
+
+
+* **customized variant**
+
+
+
+<details class="bc-example"><summary class="bc-note bold"> EXAMPLE: </summary>
+
+<div>
+<span style="font-style:italic;">The project team uses a cloud-based bioinformatics platform (Galaxy) to streamline data analysis. This platform allows for <b>scalable computing resources</b> to handle large genomic datasets efficiently and <b>includes built-in tools</b> for data visualization, which simplifies the monitoring of analysis progress and outcomes. </span>
+</div>
+</details>
 
 
 
 
 
 <!--
----
-
-# code
-
-## code-inline
-
-
-<code class="code-inline">command</code>
-
----
 
 # TODO:
 
@@ -636,24 +938,5 @@ Color-coded boxes feature a `0.5 line` margin on **top** and a `1.5 line` margin
 
 <br><span style="background-color: #e8e9e8; color: #0ba37f; font-weight: 500; padding: 5px 7px;">TUTORIAL</span>&nbsp;
 
-<span style="color: #ff3870;font-weight: 500;">Experimenting with new development ideas often involves creating new branches or forks.</span>
-
-# <span style="color: #8896c1;">Working with Local Repos</span>
-
-
-<details style="margin: 0 0 20px 0;"><summary style="background-color: #FFFACD; width: 25%;"><span style="font-weight:800; font-size: 16px;">EXAMPLE:</span></summary>
-
 <div style="background: #FFFACD; padding: 15px; margin-bottom: 20px; font-size: 16px;">
-<span style="font-style:italic;">The project team uses a cloud-based bioinformatics platform (Galaxy) to streamline data analysis. This platform allows for <b>scalable computing resources</b> to handle large genomic datasets efficiently and <b>includes built-in tools</b> for data visualization, which simplifies the monitoring of analysis progress and outcomes. </span>
-</div>
-</details>
-
-### <i><span style="color: #EC8000; ">EXERCISE</span></i>
-
-
-<details><summary>See the recommendations</summary>
-
-<span style="color: #005920;">Regularly scheduled backups to multiple locations, including cloud services and physical drives, following the 3-2-1 backup rule <br>(3 total copies of your data, 2 of which are local but on different devices, and 1 copy off-site) is a good practice.</span><br> <span style="color: #AF0000;">Random or infrequent backups, or relying on a single backup solution, are bad practices that increase the risk of irrecoverable data loss.</span>
-</details>
-
 -->
