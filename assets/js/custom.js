@@ -89,6 +89,41 @@ function showNotification(message, parentElement) {
 }
 
 
+//A function that derives parent background color for custom collapsible <details>
+function getParentColor() {
+  document.querySelectorAll('details').forEach(details => {
+    let parent = details.parentNode;
+    let color = getComputedStyle(parent).backgroundColor;
+    while (color === 'rgba(0, 0, 0, 0)' && parent !== null) {
+      parent = parent.parentNode;
+      color = getComputedStyle(parent).backgroundColor;
+    }
+    details.style.setProperty('--parent-color', color);
+  });
+}
+
+
+// A function to wrap custom HTML code blocks into default structure
+function wrapCodeBlocks() {
+  document.querySelectorAll('code.code-block').forEach((codeBlock) => {
+    const divExternal = document.createElement('div');
+    divExternal.className = 'language-html highlighter-rouge';
+    const divParent = document.createElement('div');
+    divParent.className = 'highlight';
+    const preH = document.createElement('pre');
+    preH.className = 'highlight';
+
+    // Nest the elements
+    divExternal.appendChild(divParent);
+    divParent.appendChild(preH);
+    preH.appendChild(codeBlock.cloneNode(true));
+
+    // Replace the original code block with the new structure
+    codeBlock.parentNode.replaceChild(divExternal, codeBlock);
+  });
+}
+
+
 // A function to copy code block to clipboard
 function copyCodeButton() {
   document.querySelectorAll('pre code').forEach((codeBlock) => {
@@ -114,7 +149,6 @@ function copyCodeButton() {
 
   });
 }
-
 
 
 // A function to copy order to clipboard
@@ -143,8 +177,10 @@ function addTextToBefore() {
 // Event listener for custom.js functions
 document.addEventListener('DOMContentLoaded', function() {
   adjustWrapperLinks();                                                         // reformatting target-links
+  wrapCodeBlocks()
   copyCodeButton();
   addTextToBefore();
+  getParentColor();
 
   var copyButton = document.getElementById('copyOrderBtn');                     // find and setup the button for copying order
   if (copyButton) {
