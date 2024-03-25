@@ -128,21 +128,23 @@ p.pros, p.cons {margin-bottom: 0;}
 
 .warning .highlighter-rouge, .protip .highlighter-rouge, .note .highlighter-rouge,
 .example .highlighter-rouge, .exercise .highlighter-rouge, .footnote .highlighter-rouge {
-  margin-bottom: 0.2em !important;
+/*  margin-bottom: 0.2em !important;*/
   margin-top: 0.4em !important;
   font-style: normal !important;
   font-size: 0.8em !important;
   color: var(--c-boxdark) !important;
 }
+div.highlighter-rouge {margin-bottom: 0.8em;}
+
 .warning pre.highlight, .protip pre.highlight, .note pre.highlight,
 .example pre.highlight, .exercise pre.highlight {padding: 0.3em 0.8em !important; font-size: 1.1em !important;}
 
 .warning.btn, .protip.btn, .note.btn, .example.btn, .exercise.btn {
   padding: 0.8em 0.8em 0.3em 0.8em !important;
   border: none !important;
-  font-size: 0.6em !important;
+  font-size: 0.6em;
 }
-.toc .btn {font-size: 0.8em !important;}
+.toc .btn {font-size: 0.9em !important;}
 
 
 /* Code settings */
