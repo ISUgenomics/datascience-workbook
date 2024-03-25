@@ -175,7 +175,7 @@ Options:
 ```
 
 
-## Practical examples
+## <button class="btn example before" data-before="PRACTICAL &nbsp; EXAMPLES"></button>
 
 Here are a few practical examples of using the `sudo` command:
 

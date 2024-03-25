@@ -39,7 +39,7 @@ wget XXX
 ---
 # 1. The Unix manual pages and history of used commands
 
-#### `man` -- <span style="color:Blue">man</span>ual, gives a guide of asked command
+### `man` -- <b class="c-alert">man</b>ual, gives a guide of asked command
 
 The `man` command will provide a description of a unix command and list the parameters that can be used to modify its behavior. To exit the manual for a command you press `q` on your keyboard.
 
@@ -48,7 +48,7 @@ man ls
 man less
 ```
 
-#### `history` -- gives a history of recently used Unix commands
+### `history` -- gives a history of recently used Unix commands
 
 Browse all your previously used commands by typing `history` on your terminal (typically, last 500 commands will be saved in this file).
 
@@ -58,11 +58,13 @@ It is often convenient to find a command or oneliner by searching your history. 
 history | grep man | tail -n 5
 ```
 
-`NOTE:` You can also recall your previous commands by pressing &#8593; or &#8595; arrow keys.
+<span class="c-alert"><b>NOTE:</b> You can also recall your previous commands by pressing <button class="btn">&#8593;</button> or <button class="btn">&#8595;</button> arrow keys.</span>
+
+---
 
 # 2. The Unix special characters
 
-| <span style="color:Green">_Character_</span>|<span style="color:Green">_Function_</span>|<span style="color:Green">_Syntax_</span> |<span style="color:Green">_Example usage_</span> |
+| character | function | syntax | example usage |
 |--|--|--|--|
 |`?`|replaces single character|| *m?_file.txt* to replace 'y' in the *my_file.txt*|
 |`*`|replaces multiple characters|| \*file.txt to replace 'my_' in the *my_file.txt*|
@@ -76,7 +78,7 @@ history | grep man | tail -n 5
 |`\n`|breaks text into next line || echo "text \n text in the next line" |
 |`\t`|inserts tabulator space || echo "text \t text after tabulator space" |
 
-#### `?` and `*` -- variables to represent one or many chracters in filenames
+### `?` and `*` -- variables to represent one or many chracters in filenames
 
 First, let's display all text files with the .txt extension located on current path.
 
@@ -91,9 +93,9 @@ ls ??.txt
 ls ?.txt
 ```
 
-#### `|` -- pipe to execute commands in the ordered sequence
+### `|` -- pipe to execute commands in the ordered sequence
 
-
+---
 
 # 3. Command-line navigation in the file system
 
@@ -101,9 +103,9 @@ ls ?.txt
 
 You can use absolute path or abbreviated path.
 
-### *Checking current path*
+## *Checking current path*
 
-#### pwd -- <span style="color:Blue">P</span>ath of <span style="color:Blue">W</span>orking <span style="color:Blue">D</span>irectory
+### pwd -- <b class="c-alert">P</b>ath of <b class="c-alert">W</b>orking <b class="c-alert">D</b>irectory
 
 At this point you might be feeling like you are completely blind because you can't see the result of what you did.  So let me teach you a few more commands and change that.  This command will tell you where you are.
 
@@ -117,9 +119,9 @@ In my case this returns the following to standard out where severin is my userna
 
 What this is telling me is that I am in a directory named severin which is in a directory named home.
 
-### *Changing the path*
+## *Changing the path*
 
-#### `cd` -- <span style="color:Blue">C</span>hange <span style="color:Blue">D</span>irectory
+### `cd` -- <b class="c-alert">C</b>hange <b class="c-alert">D</b>irectory
 
 You will recall we made a directory called unixTutorial above. We can change to that directory using the `cd` command.
 
@@ -166,16 +168,17 @@ pwd
 ```
 **TIP**: You can type in first few letters of the directory name and then press `Tab` to auto complete rest of the name (especially useful when the file/directory name is long). This only works when there are unique matches for the starting letters you have typed. If there is more than one matching files/directories, pressing `Tab` twice will list all the matching names.
 
+---
 
 # 4. Command-line directory operations
 
 ## 4.1 Folder creation
 
-### *Creating an empty dir*
+## *Creating an empty dir*
 
 This section will introduce you to some basic file/directory navigation
 
-#### mkdir -- <span style="color:Blue">M</span>a<span style="color:Blue">k</span>e <span style="color:Blue">Dir</span>ectory Command
+### mkdir -- <b class="c-alert">M</b>a<b class="c-alert">k</b>e <b class="c-alert">Dir</b>ectory Command
 Let's make a new directory (folder) called unixTutorial.  To create a directory, the `mkdir` (`m`a`k`e `dir`ectory) command can be used. Type in the next command and hit the &#8629; (`Enter`) key. Notice there is a space between the mkdir command and the filename we supply to the mkdir command
 
 ```bash
@@ -192,9 +195,9 @@ mkdir: cannot create directory ‘unixTutorial’: File exists
 ```
 
 
-### *Copying a dir*
+## *Copying a dir*
 
-#### `cp` -- <span style="color:Blue">c</span>o<span style="color:Blue">p</span>y command
+### `cp` -- <b class="c-alert">c</b>o<b class="c-alert">p</b>y command
 
 The `cp` command can be used to duplicate a folder. To copy a folder you have to add the `-r` parameter to copy recursively
 
@@ -203,9 +206,9 @@ cp -r Letters Letters_copy
 ```
 
 
-### *(Re)Moving a dir*
+## *(Re)Moving a dir*
 
-#### `rmdir` or `rm -r` -- <span style="color:Blue">R</span>e<span style="color:Blue">m</span>ove <span style="color:Blue">Dir</span>ectory
+### `rmdir` or `rm -r` -- <b class="c-alert">R</b>e<b class="c-alert">m</b>ove <b class="c-alert">Dir</b>ectory
 This command can remove an empty directory
 
 Let's remove the extra Deleteme2 directory using this command
@@ -214,18 +217,19 @@ Let's remove the extra Deleteme2 directory using this command
 rmdir Deleteme3
 ```
 
-### Warning about deleting files and directories
+### <span class="c-alert">WARNING:</span> about deleting files and directories
 
-In Unix there is no undo command.  If you delete a file it is gone.  There is no trash bin.  The next two commands are very powerful commands and cna lead to unfortunate losses if not used with care. With that said you can only delete files you have created.  So it is impossible to delete someone else files without permission.
+<div class="warning before" markdown="1" data-before="">
+**In Unix there is no undo command.** If you delete a file it is gone. There is no trash bin. The next two commands are very powerful commands and can lead to unfortunate losses if not used with care. With that said you can only delete files you have created. So it is impossible to delete someone else files without permission.
+</div>
 
 ## 4.2 Folder Preview
 
-#### `ls` (<span style="color:Blue">l</span>i<span style="color:Blue">s</span>t) command
+### `ls` (<b class="c-alert">l</b>i<b class="c-alert">s</b>t) command
 
-|| ||
+| command | function | syntax/example usage |
 |--|--|--|
-| <span style="color:Green">_Command_</span>|<span style="color:Green">_Function_</span>|<span style="color:Green">_Syntax/example usage_</span> |
-|`ls` 	|list contents	|`ls` <span style="color:Red">[OPTIONS] DIRECTORY</span>|
+|`ls` 	|list contents	|`ls` <span class="c-bad">[OPTIONS] DIRECTORY</span>|
 
 Now that we know how to move between directories, The contents of a directory can be viewed using `ls`. If no directory name is provided then `ls` will list all the contents of the present directory.
 ```bash
@@ -243,23 +247,22 @@ ls –t #Lists all the files, sorted based on creation time
 ls –S #Lists all the files, sorted based on size
 ```
 
-
+---
 
 # 5. Command-line file operations
 
-|File operations | | |
+| command | function | syntax/example usage |
 |--|--|--|
-| <span style="color:Green">_Command_</span>|<span style="color:Green">_Function_</span>|<span style="color:Green">_Syntax/example usage_</span> |
-|`touch`|	create file	|`touch` <span style="color:Red">FILE</span>|
-|`rm`	|remove file(s)	|`rm` <span style="color:Red">FILE</span>|
-|`cp`|copy files/directories	|`cp `<span style="color:Red">SOURCE DESTINATION</span>|
-|`mv`	|move files/directories	|`mv` <span style="color:Red">SOURCE DESTINATION</span>|
+|`touch`|	create file	|`touch` <span class="c-bad">FILE</span>|
+|`rm`	|remove file(s)	        |`rm` <span class="c-bad">FILE</span>|
+|`cp`   |copy files/directories	|`cp `<span class="c-bad">SOURCE DESTINATION</span>|
+|`mv`	|move files/directories	|`mv` <span class="c-bad">SOURCE DESTINATION</span>|
 
 ## 5.1 File creation
 
-### *Creating an empty file*
+## *Creating an empty file*
 
-#### `touch` command
+### `touch` command
 
 This command is used to quickly create many empty files.
 
@@ -288,9 +291,9 @@ The standard output now returns
 1.txt 2.txt 3.txt 4.txt 5.txt 6.txt AA.txt BB.txt CC.txt DD.txt EE.txt GG.txt
 ```
 
-### *Copying a file*
+## *Copying a file*
 
-#### `cp` -- <span style="color:Blue">c</span>o<span style="color:Blue">p</span>y command
+### `cp` -- <b class="c-alert">c</b>o<b class="c-alert">p</b>y command
 
 The `cp` command can be used to duplicate a file
 
@@ -300,9 +303,9 @@ cp myFirstFile.txt mySecondfile.txt
 ls
 ```
 
-### *(Re)Moving a file*
+## *(Re)Moving a file*
 
-#### `rm` -- <span style="color:Blue">R</span>e<span style="color:Blue">m</span>ove file
+### `rm` -- <b class="c-alert">R</b>e<b class="c-alert">m</b>ove file
 
 In this example, we will remove the file deleteme3.txt in the Deleteme2 directory.
 
@@ -318,7 +321,7 @@ rm -r Deleteme Deleteme2/deleteme3.txt
 ls
 ```
 
-#### `mv` -- <span style="color:Blue">m</span>o<span style="color:Blue">v</span>e command
+### `mv` -- <b class="c-alert">m</b>o<b class="c-alert">v</b>e command
 
 Move is used to move files to a different location and to rename a file.
 
@@ -340,23 +343,25 @@ Easy to remember these commands using this sentence.
 
 A `cat` has a `head` and a `tail`, `more` or `less`
 
-|File/Directory operations | | |
+| command | function | syntax/example usage |
 |--|--|--|
-|`cat`	|catalog file contents	|`cat` <span style="color:Red">FILE</span>|
-|`head`|show first few lines of a file	|`head` <span style="color:Red">FILE</span>|
-|`tail`	|show last few lines of a file	|`tail` <span style="color:Red">FILE</span>|
-|`more`|view file (with less options)	|`more` <span style="color:Red">FILE</span>|
-|`less`	|view file (with more options)	|`less` <span style="color:Red">FILE</span>|
+|`cat`	|catalog file contents	|`cat` <span class="c-bad">FILE</span>|
+|`head`|show first few lines of a file	|`head` <span class="c-bad">FILE</span>|
+|`tail`	|show last few lines of a file	|`tail` <span class="c-bad">FILE</span>|
+|`more`|view file (with less options)	|`more` <span class="c-bad">FILE</span>|
+|`less`	|view file (with more options)	|`less` <span class="c-bad">FILE</span>|
 
-### *Viewing file without edition*
+## *Viewing file without edition*
 
-#### `more` -- command to step through a file one screen length at a time using the spacebar. hit `q` to quit the file before reaching the end.
+### `more` -- command to step through a file one screen length at a time using the spacebar.
+
+Hit `q` to quit the file before reaching the end.
 
 ```bash
 more numSeq.txt
 ```
 
-#### `less` -- similar to the more command but lets you scroll backwards as well.
+### `less` -- similar to the more command but lets you scroll backwards as well.
 
 ```bash
 less numSeq.txt
@@ -367,7 +372,7 @@ less numSeq.txt
 |`q` | quit|
 |`u` | up one screen|
 |`d` or `space bar`| down one screen|
-|`g` <span style="color:Red">NUM</span>| go to line NUM|
+|`g` <span class="c-bad">NUM</span>| go to line NUM|
 
 
 ### *Streaming file content*

@@ -211,6 +211,7 @@ Whether you're working on a local machine or a remote shared infrastructure, kee
 
 To configure your $HOME to work efficiently on a computing cluster, take a look at the tutorial {% include target_link href=631 text="Home Directory Setup" %} in the section 06. High-Performance Computing of this workbook. More specifically, follow the directions in the {% include target_link href=632 text="Example .bashrc file configuration" %} tutorial to properly configure your `~/.bashrc`.
 
+---
 
 # 3. Unix Shell Configuration
 
@@ -350,7 +351,7 @@ printf "\e[1;5;36;45mBOLD-BLINK-CYAN-TEXT-ON-PURPLE-BACKGROUND\e[0m\n"
 <p align="center"><img width="800" src="{{ images_path }}/prompt.gif"></p>
 <p align="center">^ Note that strikethrough option didn't work on my terminal. It should look like <b><del>STRIKETHROUGH</del></b>. </p>
 
-Set your colored Prompt syntax using variables and text decorations from the tables above and paste it into your `~/.bashrc` following the given example, in which you will get the <span style="background-color: white; color: red; font-weight:600;"> &ensp; user@host:path$ &ensp;</span> for a root-user and <span style="background-color: white; color: green; font-weight:600;"> &ensp; user@host:path$ &ensp;</span> for any other user.
+Set your colored Prompt syntax using variables and text decorations from the tables above and paste it into your `~/.bashrc` following the given example, in which you will get the <b class="c-bad">&ensp; user@host:path$ &ensp;</b> for a root-user and <b class="c-good">&ensp; user@host:path$ &ensp;</b> for any other user.
 ```bash
 if [[ $USER = "root" ]]; then
   PS1="\[\e[1;31m\]\u@\h:\w\$\e[0m "
@@ -359,7 +360,7 @@ else
 fi
 ```
 
-To get prompt like mine, <span style="background-color: black; color: cyan; font-weight:600;"> &ensp; user</span><span style="background-color: black; color: white; font-weight:300;">@host</span><span style="background-color: black; color: lightgray; font-weight:300;">(shell):</span><span style="background-color: black; color: lightgreen; font-weight:400;">path</span><span style="background-color: black; color: red; font-weight:600;">$ &nbsp;</span>, use the syntax below:
+To get prompt like mine <span style="background-color: black;"><b style="color: cyan;"> &ensp; user</b><span style="color: white; font-weight:300;">@host</span><span style="color: lightgray; font-weight:300;">(shell):</span><span style="color: lightgreen; font-weight:400;">path</span><b style="color: red; font-weight:600;">$ &nbsp; </b></span>&nbsp; use the syntax below:
 
 ```bash
 PS1="\[\e[1;36m\]\u\[\e[m\]@\h\[\e[0;37m\](\s):\[\e[0;32m\]\W\[\e[0;31m\]$\[\e[m\]"
@@ -386,7 +387,7 @@ In the previous section (customizing the command line prompt) the standard color
 |`7` - reverse text color with a background |`36` - <span style="background-color: black; color: cyan;"> cyan </span>   | `46` - <span style="background-color: cyan; color: black;"> cyan </span>   |
 |`9` - <del>strikethrough</del>   |`37` - <span style="background-color: black; color: lightgray;"> light-gray </span> | `47` - <span style="background-color: lightgray; color: black;"> light-gray </span> |
 
-In Linux, the variable responsible for storing settings for coloring files and directories is called **$LS_COLORS**. It takes a string of elements separated by a colon `:` as a value. A given item consists of a file type with assigned styles using an equals sign, `type=styles:`. The names of a few types are predefined (see the list below), and the user can add as a type any format, such as `*.png`, where all files with PNG extension will have the assigned style applied. The styling is defined the same as for the prompt, i.e., any combination of numeric codes assigned to the colors and decorations of the text, all separated by a semicolon, e.g., `di=2;36` for coloring directories in <span style="background-color: black; color: cyan; font-weight:700;">&nbsp; bold-cyan </span> &nbsp;.
+In Linux, the variable responsible for storing settings for coloring files and directories is called **$LS_COLORS**. It takes a string of elements separated by a colon `:` as a value. A given item consists of a file type with assigned styles using an equals sign, `type=styles:`. The names of a few types are predefined (see the list below), and the user can add as a type any format, such as `*.png`, where all files with PNG extension will have the assigned style applied. The styling is defined the same as for the prompt, i.e., any combination of numeric codes assigned to the colors and decorations of the text, all separated by a semicolon, e.g., `di=2;36` for coloring directories in <b style="background-color: black; color: cyan;">&nbsp;bold-cyan </b> &nbsp;.
 
 **Important predefined types:** <br>
 ^ the complete list can be expolred at [bigsoft.co.uk](http://www.bigsoft.co.uk/blog/2008/04/11/configuring-ls_colors)<br>

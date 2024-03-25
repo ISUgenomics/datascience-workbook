@@ -50,7 +50,7 @@ A terminal is the program that is used to access files on your laptop/computer t
 
 ## What is ssh?
 
-* <span style="color:Blue">SSH</span> is short for **S**ecure <span style="color:Blue">SH</span>ell
+* <b class="c-alert">SSH</b> is short for **S**ecure **SH**ell
 
 ```bash
 ssh (SSH client) is a program for logging into a remote machine and for
@@ -109,7 +109,9 @@ When working in a terminal, it is helpful to know some basic terminology for whe
 
 Let us start by getting everyone logged in and to the same location in the file system. If you haven't already logged in to a remote machine by typing in the following command in the terminal.
 
-**NOTE** When you are prompted for a password you won't see the typing.  Just keep typing.
+<div class="warning" markdown="1">
+When you are prompted for a password you won't see the typing. Just keep typing.
+</div>
 
 ```bash
 ssh usename@hostname
@@ -136,18 +138,18 @@ clear
 
 || ||
 |--|--|--|
-| <span style="color:Green">_Command_</span>|<span style="color:Green">_Function_</span>|<span style="color:Green">_Syntax/example usage_</span> |
-|`mkdir`	|make directory	|`mkdir` <span style="color:Red">DIRECTORY</span>|
-|`pwd`	|print working directory	|`pwd`|
-|`cd`|change directory	|`cd` ~ or `cd` 		#home directory|
+| command | function | syntax/example usage |
+|`mkdir`	|make directory	|`mkdir` <span class="c-bad">DIRECTORY</span>|
+|`pwd`	        |print working directory	|`pwd`|
+|`cd`           |change directory	|`cd` ~ or `cd` 		#home directory|
 | | 			|`cd` .. #previous (parent directory)|
-|`ls` 	|list contents	|`ls` <span style="color:Red">[OPTIONS] DIRECTORY</span>|
+|`ls` 	        |list contents	|`ls` <span class="c-bad">[OPTIONS] DIRECTORY</span>|
 
 
 
 This section will introduce you to some basic file/directory navigation
 
-## mkdir -- <span style="color:Blue">M</span>a<span style="color:Blue">k</span>e <span style="color:Blue">Dir</span>ectory Command
+## mkdir -- <b class="c-alert">M</b>a<b class="c-alert">k</b>e <b class="c-alert">Dir</b>ectory Command
 Let's make a new directory (folder) called unixTutorial.  To create a directory, the `mkdir` (`m`a`k`e `dir`ectory) command can be used. Type in the next command and hit the &#8629; (`Enter`) key. Notice there is a space between the mkdir command and the filename we supply to the mkdir command
 
 ```bash
@@ -164,7 +166,7 @@ mkdir: cannot create directory ‘unixTutorial’: File exists
 ```
 
 
-## pwd -- <span style="color:Blue">P</span>ath of <span style="color:Blue">W</span>orking <span style="color:Blue">D</span>irectory
+## `pwd` -- <b class="c-alert">P</b>ath of <b class="c-alert">W</b>orking <b class="c-alert">D</b>irectory
 
 At this point you might be feeling like you are completely blind because you can't see the result of what you did.  So let me teach you a few more commands and change that.  This command will tell you where you are.
 
@@ -178,7 +180,7 @@ In my case this returns the following to standard out where severin is my userna
 
 What this is telling me is that I am in a directory named severin which is in a directory named home.
 
-## `cd` -- <span style="color:Blue">C</span>hange <span style="color:Blue">D</span>irectory
+## `cd` -- <b class="c-alert">C</b>hange <b class="c-alert">D</b>irectory
 
 You will recall we made a directory called unixTutorial above. We can change to that directory using the `cd` command.
 
@@ -190,7 +192,7 @@ Now if we type the path of working directory command `pwd` we get the following
 pwd
 # /home/severin/unixTutorial
 ```
-We are now in a directory called unixTutorial which is a subdirectory of severin which is a subdirectory of home.
+We are now in a directory called `unixTutorial` which is a subdirectory of `severin` which is a subdirectory of `home`.
 
 To change back to the previous directory we can type in the full path like so.
 
@@ -205,7 +207,9 @@ or we can use `..` which refers to the directory above the one you are in and ty
 cd ..
 ```
 
-**NOTE:** Present directory is represented as `.` (dot) and parent directory is represented as `..` (dot dot).
+<div class="note" markdown="1">
+Present directory is represented as `.` (dot) and parent directory is represented as `..` (dot dot).
+</div>
 
 Try this out with the following commands
 
@@ -223,24 +227,24 @@ cd
 cd unixTutorial
 pwd
 ```
-**TIP**: You can type in first few letters of the directory name and then press `Tab` to auto complete rest of the name (especially useful when the file/directory name is long). This only works when there are unique matches for the starting letters you have typed. If there is more than one matching files/directories, pressing `Tab` twice will list all the matching names.
 
+<div class="protip" markdown="1">
+You can type in first few letters of the directory name and then press <button class="btn">tab</button> to auto complete rest of the name (especially useful when the file/directory name is long). This only works when there are unique matches for the starting letters you have typed. If there is more than one matching files/directories, pressing <button class="btn">tab</button> twice will list all the matching names.
+</div>
 
-
-# File creation and editing
 ---
 
+# File creation and editing
 
 
-|| ||
+| command | function | syntax/example usage |
 |--|--|--|
-| <span style="color:Green">_Command_</span>|<span style="color:Green">_Function_</span>|<span style="color:Green">_Syntax/example usage_</span> |
-|`ls` 	|list contents	|`ls` <span style="color:Red">[OPTIONS] DIRECTORY</span>|
-|`nano`	|edit file	|`nano` <span style="color:Red">FILENAME</span>|
-|`vim` | edit a file | `vim` <span style="color:Red">FILENAME</span>
+|`ls` 	|list contents	|`ls` <span class="c-bad">[OPTIONS] DIRECTORY</span>|
+|`nano`	|edit file	|`nano` <span class="c-bad">FILENAME</span>|
+|`vim` | edit a file | `vim` <span class="c-bad">FILENAME</span>
 
 
-## `ls` (<span style="color:Blue">l</span>i<span style="color:Blue">s</span>t) command
+## `ls` (<b class="c-alert">l</b>i<b class="c-alert">s</b>t) command
 
 Now that we know how to move between directories, The contents of a directory can be viewed using `ls`. If no directory name is provided then `ls` will list all the contents of the present directory.
 ```
@@ -250,13 +254,12 @@ ls DIRECTORY
 ```
 Everyone should currently be in their unixTutorial directory that they just created, which is empty so the `ls` command will return you to a new prompt without anything written to standard out. To exit nano you type this series of keys -- hit `ctr x` press `y` for yes to save and hit `enter`.  Nano tells you how to exit along with many of the following shortcuts at the bottom of your screen and will step you through how to exit and save.
 
-## nano -- Text editor more like a GUI
+## `nano` -- Text editor more like a GUI
 
 Nano opens up and will feel like a typical text editor you are familiar with.  Arrow keys can be used navigate the text. Below are some additional shortcuts.
 
-|NANO SHORTCUTS| |
+|NANO SHORTCUTS| function |
 |--|--|
-| <span style="color:Green">_Command_</span>|<span style="color:Green">_Function_</span>|
 |`ctrl+o`	|save file|
 |`ctrl+x`	|close file|
 |`alt+/`	|go to end of the file|
@@ -268,11 +271,13 @@ Nano opens up and will feel like a typical text editor you are familiar with.  A
 |`alt+w`	|find next match|
 |`ctrl+\`	|find and replace|
 
-#### <span style="color:Green">Exercise:</span>
 
-Copy and paste the following text into a file named myFirstfile.txt
-```
-The greatest challenge is sifting through all the data that is generated by the
+## <button class="btn exercise"></button>
+
+<div class="exercise before" markdown="1" data-before="COPY-PASTE TO A FILE IN TERMINAL">
+Copy and paste the following text into a file named `myFirstfile.txt`
+
+<code class="code-block bc-data">The greatest challenge is sifting through all the data that is generated by the
 simulation.  In fact, it is impossible.  Impossible because to record every
 event everywhere in the artificial universe would take more hard drive space
 than was physically possible to create given Earth's dwindling resources.
@@ -280,14 +285,18 @@ Therefore, my life's greatest achievement was to encode a method to filter the
 data, so only the most relevant events related to what we want is recorded. In
 our case, that means space travel.  But not just any space travel, space travel
 between galaxies.
-```
+</code>
 
-Start by copying the text above using your mouse then in a terminal use nano to create a file named myFirstfile.txt
+Start by copying the text above using your mouse (or built-in <button class="btn">copy</button> button).
+Then in a terminal use `nano` to create a file named `myFirstfile.txt`
 
 ```bash
 nano myFirstfile.txt
 ```
-Paste your text and then hit `ctr x` press `y` for yes to save and hit `enter`, which will return you to the prompt.  This will save the file with the text in it.
+
+Paste your text and then hit `ctr x` press `y` for yes to save and hit `enter`, which will return you to the prompt. *This will save the file with the text in it.*
+</div>
+
 
 ## VIM
 
@@ -315,14 +324,14 @@ A `cat` has a `head` and a `tail`, `more` or `less`
 
 |File/Directory operations | | |
 |--|--|--|
-|`cat`	|catalog file contents	|`cat` <span style="color:Red">FILE</span>|
-|`head`|show first few lines of a file	|`head` <span style="color:Red">FILE</span>|
-|`tail`	|show last few lines of a file	|`tail` <span style="color:Red">FILE</span>|
-|`more`|view file (with less options)	|`more` <span style="color:Red">FILE</span>|
-|`less`	|view file (with more options)	|`less` <span style="color:Red">FILE</span>|
-|`seq` | write a sequence of numbers | `seq` <span style="color:Red">1 1 10</span>|
+|`cat`	|catalog file contents	|`cat` <span class="c-bad">FILE</span>|
+|`head`|show first few lines of a file	|`head` <span class="c-bad">FILE</span>|
+|`tail`	|show last few lines of a file	|`tail` <span class="c-bad">FILE</span>|
+|`more`|view file (with less options)	|`more` <span class="c-bad">FILE</span>|
+|`less`	|view file (with more options)	|`less` <span class="c-bad">FILE</span>|
+|`seq` | write a sequence of numbers | `seq` <span class="c-bad">1 1 10</span>|
 
-## `seq` -- short for <span style="color:Blue">seq</span>uence of numbers
+## `seq` -- short for <b class="c-alert">seq</b>uence of numbers
 
 To fully appreciate the commands for viewing the contents of a file let's create a file with the numbers from 1 to 100.  Execute the following command and put it into a file named `numSeq.txt`
 
@@ -334,13 +343,13 @@ nano numSeq.txt
 #make sure there is no extra empty lines at the end of the file.
 ```
 
-## `cat` -- con<span style="color:Blue">cat</span>enate and print files
+## `cat` -- con<b class="c-alert">cat</b>enate and print files
 
 This command will print out the entire file. Try it out with the numSeq.txt file.  You should see all 100 numbers print to the screen.
 
-## `head` -- head of the file.
+## `head` -- head of the file
 
-This command will give you the first 10 lines of a file. Try it out with the numSeq.txt file.
+This command will give you the first 10 lines of a file. Try it out with the `numSeq.txt` file.
 
 ```bash
 head numSeq.txt
@@ -357,13 +366,15 @@ tail numSeq.txt
 tail -n 5 numSeq.txt
 ```
 
-## `more` -- command to step through a file one screen length at a time using the spacebar. hit `q` to quit the file before reaching the end.
+## `more` -- command to step through a file one screen length at a time using the spacebar
+
+Hit `q` to quit the file before reaching the end.
 
 ```bash
 more numSeq.txt
 ```
 
-## `less` -- similar to the more command but lets you scroll backwards as well.
+## `less` -- similar to the more command but lets you scroll backwards as well
 
 ```bash
 less numSeq.txt
@@ -374,22 +385,22 @@ less numSeq.txt
 |`q` | quit|
 |`u` | up one screen|
 |`d` or `space bar`| down one screen|
-|`g` <span style="color:Red">NUM</span>| go to line NUM|
-
-
-# Renaming, copying and deleting files and directories
+|`g` <span class="c-bad">NUM</span>| go to line NUM|
 
 ---
 
-|File/Directory operations | | |
+# Renaming, copying and deleting files and directories
+
+File/Directory operations
+
+| command | function | syntax/example usage |
 |--|--|--|
-| <span style="color:Green">_Command_</span>|<span style="color:Green">_Function_</span>|<span style="color:Green">_Syntax/example usage_</span> |
-|`touch`|	create file	|`touch` <span style="color:Red">FILE</span>|
-|`mkdir`	|make directory	|`mkdir` <span style="color:Red">DIRECTORY</span>|
-|`rmdir`	|remove empty directory	|`rmdir` <span style="color:Red">DIRECTORY</span>|
-|`rm`	|remove file(s)	|`rm` <span style="color:Red">FILE</span>|
-|`cp`|copy files/directories	|`cp `<span style="color:Red">SOURCE DESTINATION</span>|
-|`mv`	|move files/directories	|`mv` <span style="color:Red">SOURCE DESTINATION</span>|
+|`touch`|	create file	|`touch` <span class="c-bad">FILE</span>|
+|`mkdir`	|make directory	|`mkdir` <span class="c-bad">DIRECTORY</span>|
+|`rmdir`	|remove empty directory	|`rmdir` <span class="c-bad">DIRECTORY</span>|
+|`rm`	|remove file(s)	|`rm` <span class="c-bad">FILE</span>|
+|`cp`|copy files/directories	|`cp `<span class="c-bad">SOURCE DESTINATION</span>|
+|`mv`	|move files/directories	|`mv` <span class="c-bad">SOURCE DESTINATION</span>|
 
 
 
@@ -422,7 +433,7 @@ The standard output now returns
 1.txt 2.txt 3.txt 4.txt 5.txt 6.txt AA.txt BB.txt CC.txt DD.txt EE.txt GG.txt
 ```
 
-## `mkdir` -- <span style="color:Blue">M</span>a<span style="color:Blue">k</span>e <span style="color:Blue">Dir</span>ectory
+## `mkdir` -- <b class="c-alert">M</b>a<b class="c-alert">k</b>e <b class="c-alert">Dir</b>ectory
 We have already discussed the mkdir command but here is a brief review.  For this section of the tutorial we are going to make four folders named Numbers, Letters, Deleteme and Deleteme2.
 
 ```bash

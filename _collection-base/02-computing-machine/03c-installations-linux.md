@@ -20,15 +20,13 @@ tags: []
 ---
 
 
-# Introduction
-
 # Guide for installing various types of programs in Linux
 
 This handy guide is for installing programs in `UNIX` environment. Most of these steps assume that you are installing package in a group accessible location, without root access and utilizing the environment module systems for package management. However, you can easily modify these steps for other cases as well.
 
 
 
-### Conda
+## Conda
 
 One of the easiest ways you can install you own software in your home or project directory is through the [Conda package manager](https://conda.io/docs/user-guide/getting-started.html). Thousands of biological packages and their dependencies can be installed with a single command using the [Bioconda repository](https://bioconda.github.io/) for the Conda package manager.
 
@@ -66,9 +64,9 @@ uncompress package.Z           # Files having *.Z extension
 
 Once de-compressed, proceed with installation, depending on what type of package you are installing.
 
-### Regular Linux packages
+## Regular Linux packages
 
-#### Standard approach
+### Standard approach
 
 Many `Linux/UNIX` programs comes with a standard set of files that lets you install programs with ease. After unpacking, if you see `configure` file in unpacked directory, use this approach.
 
@@ -96,7 +94,7 @@ make uninstall
 Note that all of these options are not supported by all makefiles so your mileage may vary. It is also good idea to run all the above command in a `build` directroy inside the package directroy, so that if something doesn't work you can easily delete the `build` directory to start over.
 
 
-#### Special cases
+### Special cases
 
 *1. No configure file*
 
@@ -117,7 +115,7 @@ PREFIX=/your/installation/location  make
 *2. Source obtained as RPM package*
 
 In some rare cases when you don't find a package for Red Hat Linux, but you have `rpm` package for the program, then use these steps to extract and install:
-  * Find the correct RPM package for your system. This [[http://pkgs.org | webiste]] lists all RPMs available, and are free to download. All CentOS RPM's work on Red Hat. Download the `Source` package (not Binary).
+  * Find the correct RPM package for your system. This [webiste](http://pkgs.org) lists all RPMs available, and are free to download. All CentOS RPM's work on Red Hat. Download the `Source` package (not Binary).
   * Extract the package: use `rpm2cpio package.rpm |cpio -idv` command to extract, you should see a `*tar.gz` or other type of compressed program, if this completes successfully.
   * Follow the steps described earlier to install like any other package.
   * In rare cases, when you have patches (extracted from RPM), you might have to apply it before you install. After extracting `*.tar.gz` file, `cd` in to the directory and run `patch -Np1 -i path/to/file.patch` and install as usual.
@@ -141,10 +139,12 @@ make
 # that will have the executables
 ```
 
-## Group installation
+---
+
+# Group installation
 Rather than trying to install to root, it is useful to be able to install programs that are common for your group/lab.  To attain this type of installation it is necessary to download and load your own version of `python` (not the `python` installed in root, by admin). Global installations are not possible when you are not the administrator, and personal directory installations are only available to one person.  When it is desirable to install to group.  Start with Python installation in your groups directory (example: /work/GIF on condo).
 
-### Python packages
+## Python packages
 Using our own `python` will allow writing/installing modules to it as needed. After unpacking, `cd` to the package, and install it as follows:
 ```bash
 module load python
@@ -169,7 +169,7 @@ pip uninstall SomePackage # uninstalls a package
 pip freeze # lists all the packages that are currently installed and their version
 ```
 
-### Perl modules
+## Perl modules
 Once the module is loaded, use the following set of commands to install any `perl` modules.
 ```bash
 module load perl
@@ -191,7 +191,7 @@ perl Buil.PL
 ```
 The module will be installed in the group's perl folder (not in the package directory). So, like you did in `Python` you need to set up a dummy module file that load `Perl`
 
-### R or Bioconductor packages
+## R or Bioconductor packages
 
 Installing `R` libraries for the group is really easy since you don't have to do anything different from the way you install packages to your home directory. GIF has its own `R` version installed as module and it is configured such that it will automatically install the package in the correct location, when you are using this module.
 ```bash
@@ -201,7 +201,7 @@ R
 >
 ```
 
-#### Installing CRAN R Packages
+### Installing CRAN R Packages
 CRAN packages are by far the easiest. From within R prompt, type:
 ```bash
 module load R
@@ -220,7 +220,7 @@ library(some_package)
 # this should load the package and return without any error message
 ```
 
-#### Install manually downloaded R Package
+### Install manually downloaded R Package
 Some packages that aren't in CRAN but are available from the author directly, can be installed for group as well. Download the the `package.tar.gz` from the author's website.
 ```r
 module load R
@@ -233,7 +233,7 @@ R
 # this should load the package and return without any error message
 ```
 
-#### Installing Bioconductor Modules
+### Installing Bioconductor Modules
 For Bioconductor packages, follow these steps:
 ```r
 module load R
@@ -245,8 +245,9 @@ R
 > library(package_name)
 # this should load the package and return without any error message
 ```
+---
 
-#### Managing packages
+# Managing packages
 
 *List available packages*
 

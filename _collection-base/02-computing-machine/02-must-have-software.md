@@ -24,12 +24,13 @@ tags: []
 
 In this section, we will explore the must-have software for modern scientists. With so many options available, it is not easy to determine **which tools are professional** for conducting research. From equipment for the easy office, to data analysis & visualization and project management, digital utilities in your computer are sure to be valuable assets to any researcher. Whether you're a bioinformatician, chemist, physicist, biologist, or engineer, these programs will **help you to efficiently and effectively do your work**. Thus, we will discuss applications of some essential software that every modern scientist should have in their toolbox.
 
+![Notes]({{ images_path }}/hand_notes_to_digital.png)
 
 ## Why should you incorporate a basic tool suite into your daily work?
 
 The use of digital software and applications in scientific research has become increasingly prevalent in recent years. These tools offer a wide range of benefits to researchers, including **efficiency, data management, collaboration, and data visualization**. The following list highlights some of the key advantages of using digital software and applications in various scientific tasks.
 
-* <span style="color: #ff3870;font-weight: 600;">Efficiency | Reproducibility | Time-saving | Loss protection</span> <br>*automate repetitive tasks and streamline processes, allowing researchers to work more efficiently and effectively*
+* <b class="c-good">Efficiency &ensp;|&ensp; Reproducibility &ensp;|&ensp; Time-saving &ensp;|&ensp; Loss protection</b> <br>*automate repetitive tasks and streamline processes, allowing researchers to work more efficiently and effectively*
 
 * **Office Management** <br>*provide features for creating and editing documents, spreadsheets, and presentations, which can be useful for creating reports, proposals, and other written materials*
 
@@ -45,6 +46,5 @@ The use of digital software and applications in scientific research has become i
 
 * **Remote Access** <br>*tools can often be accessed remotely, making it possible for scientists to work from anywhere, at any time*
 
-![Notes]({{ images_path }}/hand_notes_to_digital.png)
 
-<span style="color: #ff3870; font-weight: 500; font-size: 20;">Explore the featured software groups in the [Further Reading](#further-reading) section.</span>
+<em class="c-alert">Explore the featured software groups in the [Further Reading](#further-reading) section.</em>

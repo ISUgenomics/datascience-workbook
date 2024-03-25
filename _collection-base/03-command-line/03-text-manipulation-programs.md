@@ -248,7 +248,7 @@ To learn more, explore the **Unix Getting Started** tutorial in the section: {% 
 
 ---
 
-# Jump to solution examples
+# <button class="btn example"></button> - jump to solution
 
 ### Removing duplicate lines from a file
 
