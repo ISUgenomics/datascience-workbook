@@ -99,6 +99,10 @@ function getParentColor() {
       color = getComputedStyle(parent).backgroundColor;
     }
     details.style.setProperty('--parent-color', color);
+    const bc = Array.from(details.classList).some(className => className.startsWith('bc-'));
+    if (bc) {
+      details.querySelectorAll(':scope > summary ~ *').forEach(elem => {elem.style.padding = '0 0.8em 0.3em 0.8em';});
+    }
   });
 }
 
@@ -112,6 +116,9 @@ function wrapCodeBlocks() {
     divParent.className = 'highlight';
     const preH = document.createElement('pre');
     preH.className = 'highlight';
+
+    const bgColor = window.getComputedStyle(codeBlock).backgroundColor;
+    preH.style.backgroundColor = bgColor;
 
     // Nest the elements
     divExternal.appendChild(divParent);
