@@ -5,7 +5,9 @@
   --bc-note: #dff5b3;
   --bc-example: #FFFACD;
   --bc-exercise: #ffd7b5;
-  --bc-code: #fafafa;
+  --bc-code: #f7f7f7;
+  --bc-data: #e3edee;
+  --bc-template: #d9d9e3;
   --c-gray: #c2c6d3;
   --c-boxdark: #2a4960;
   --c-boxlink: #7dc2d6;
@@ -30,12 +32,20 @@
 .c-exercise {color: var(--c-exercise) !important;}
 
 /* pre-defined bg colors, including custom <details> */
-.bc-warning {--bg-color: var(--bc-warning); background-color: var(--bc-warning);}
-.bc-protip {--bg-color: var(--bc-protip); background-color: var(--bc-protip);}
-.bc-note {--bg-color: var(--bc-note); background-color: var(--bc-note);}
-.bc-example {--bg-color: var(--bc-example); background-color: var(--bc-example);}
-.bc-exercise {--bg-color: var(--bc-exercise); background-color: var(--bc-exercise);}
+.bc-warning {--bg-color: var(--bc-warning); background-color: var(--bc-warning); color: var(--c-boxdark);}
+.bc-protip {--bg-color: var(--bc-protip); background-color: var(--bc-protip); color: var(--c-boxdark);}
+.bc-note {--bg-color: var(--bc-note); background-color: var(--bc-note); color: var(--c-boxdark);}
+.bc-example {--bg-color: var(--bc-example); background-color: var(--bc-example); color: var(--c-boxdark);}
+.bc-exercise {--bg-color: var(--bc-exercise); background-color: var(--bc-exercise); color: var(--c-boxdark);}
+.bc-code {--bg-color: var(--bc-code); background-color: var(--bc-code); color: var(--c-boxdark);}
+.bc-data {--bg-color: var(--bc-data); background-color: var(--bc-data); color: var(--c-boxdark);}
+.bc-template {--bg-color: var(--bc-template); background-color: var(--bc-template); color: var(--c-boxdark);}
+.bc-output {--bg-color: var(--c-boxdark); background-color: var(--c-boxdark); color: var(--bc-data);}
 
+div.bc-warning, div.bc-protip, div.bc-note, div.bc-example, div.bc-exercise,
+div.bc-code, div.bc-data, div.bc-template, div.bc-output {padding: 0.4em 0.8em;}
+pre.bc-warning, pre.bc-protip, pre.bc-note, pre.bc-example, pre.bc-exercise,
+pre.bc-code, pre.bc-data, pre.bc-template, pre.bc-output {padding: 0.4em 0.8em; font-size: 0.8em;}
 
 /* resource wide*/
 .inline {display: inline !important; max-width: 100%;}
@@ -44,12 +54,14 @@
 .row {display: flex;}
 .col-6 {width: 50%;}
 
+.pa-s {padding: 0.1em 0.2em;}
 .pr-2 {padding-right: 2em;}
 .pl-2 {padding-left: 2em;}
 
 .mb {margin-bottom: 0.6em !important; display: block;}
 .mt {margin-top: 1.5em !important; display: block;}
 .mt- {margin-top: -0.8em !important;}
+.mb- {margin-bottom: -0.8em !important;}
 .mt-0 {margin-top: 0 !important;}
 .mb-0 {margin-bottom: 0 !important;}
 
@@ -59,13 +71,10 @@
 .font-1 {font-size: 1em !important;}
 
 .btn {
-  font-size: 0.6em !important;
-  padding: 0.8em 0.8em 0.3em 0.8em !important;
-  border: none;
-  margin: 0.1em !important;
+  padding: 0.4em 0.5em !important;
+  border: 1px solid var(--b-darkgray) !important;
+  margin: 0.05em !important;
 }
-.toc .btn {font-size: 0.8em !important;}
-
 
 .pros::before, .cons::before {
   font-size: 1.1em;
@@ -128,6 +137,13 @@ p.pros, p.cons {margin-bottom: 0;}
 .warning pre.highlight, .protip pre.highlight, .note pre.highlight,
 .example pre.highlight, .exercise pre.highlight {padding: 0.3em 0.8em !important; font-size: 1.1em !important;}
 
+.warning.btn, .protip.btn, .note.btn, .example.btn, .exercise.btn {
+  padding: 0.8em 0.8em 0.3em 0.8em !important;
+  border: none !important;
+  font-size: 0.6em !important;
+}
+.toc .btn {font-size: 0.8em !important;}
+
 
 /* Code settings */
 .code-inline {
@@ -142,6 +158,7 @@ p.pros, p.cons {margin-bottom: 0;}
 
 pre {
   position: relative;
+  margin-top: 0;
 }
 
 .code-btn {
@@ -315,11 +332,9 @@ toc-note {
 /* custom collapsible <details> */
 summary {
   display: flex;
-  width: 100%;
   cursor: pointer;
   justify-content: space-between;
   padding: 0.15em 0.3em 0.1em 0.3em;
-  margin-left: -0.8em;
   background-color: var(--bg-color);
 }
 summary::before {
@@ -336,10 +351,8 @@ summary::after {
   margin: -0.15em -2.0em -0.1em 2em;
 }
 details {
-  margin-bottom: 1.5em;
-  padding: 0 0.8em 0 0.8em;
+  margin-bottom: 0.3em;
   background-color: var(--bg-color);
 }
-details[open] {padding-bottom: 0.5em;}
-details[open] > summary {margin-bottom: 0.5em;}
+details[open] > summary {margin-bottom: 0.3em;}
 details[open] > summary::before {transform: rotate(90deg);}
