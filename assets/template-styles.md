@@ -29,7 +29,7 @@ This document is designed to empower your content creation with a suite of styli
 
 ---
 
-# standardized colors
+# text (font) colors
 
 **Markdown doesn't support text coloring**, but you can easily apply colors using **CSS styling**. <base class="mb">
 This involves <u>wrapping your text</u> in simple **HTML tags** like `<span>`, `<em>`, `<p>`
@@ -192,6 +192,129 @@ Mark exercises using `c-exercise` color class and the simple keyword **EXERCISE*
 <div class="pl-2" markdown="1">
 Use `c-alert` color class for <u>temporary alerts</u> with straightforward action keywords like <em class="c-alert">"Coming Soon", "Update Required", "New Feature" or "Important Notice"</em>. These tags and keywords ensure the content's importance is immediately recognizable, enhancing the document's overall effectiveness and user navigation.
 </div>
+
+
+---
+
+# background colors
+
+
+Below is a list of `class names` designed to standardize `background colors` across the workbook:
+
+| <span style="display: flex; width: 100px;">class name</span> | preview | <span style="display: flex; width: 320px;">syntax</span> | usage |
+|------------|----------------------------------------|------------------------------------------|---------------------------------------------------------------------------|
+|`bc-warning` | <span class="bc-warning pa-s"> background </span>  | `<span class="bc-warning"> text </span>`  | *background of the warning color-coded box*       |
+|`bc-protip`  | <span class="bc-protip pa-s"> background </span>   | `<span class="bc-protip"> text </span>`   | *background of the pro tip color-coded box*       |
+|`bc-note`    | <span class="bc-note pa-s"> background </span>     | `<span class="bc-note"> text </span>`     | *background of the note color-coded box*          |
+|`bc-example` | <span class="bc-example pa-s"> background </span>  | `<span class="bc-example"> text </span>`  | *background of the example color-coded box*       |
+|`bc-exercise`| <span class="bc-exercise pa-s"> background </span> | `<span class="bc-exercise"> text </span>` | *background of the exercise color-coded box*      |
+|`bc-code`    | <span class="bc-code pa-s"> background </span>     | `<span class="bc-code"> text </span>`     | *background imitating code blocks*                |
+|`bc-data`    | <span class="bc-data pa-s"> background </span>     | `<span class="bc-data"> text </span>`     | *example input data for coding exercises*         |
+|`bc-template`| <span class="bc-template pa-s"> background </span> | `<span class="bc-template"> text </span>` | *templates for a user: checklists / docs, etc.*   |
+|`bc-output`  | <span class="bc-output pa-s"> background </span>   | `<span class="bc-output"> text </span>`   | *outputs from the command-line / terminal*        |
+
+<base class="mt">
+<p class="mb-">Background color classes can be applied to:</p>
+### **- TEXT**
+within HTML tags like `<span>`, `<em>`, `<p>`:
+
+<details class="inline" markdown="1"><summary class="italic c-header">see code example (simple text)</summary>
+
+```html
+Learn more about the basics of <em class="bc-note">programming in Python</em> by working through the <span class="bc-protip">hands-on tutorials.</span>
+```
+</details>
+
+Learn more about the basics of <em class="bc-note">programming in Python</em> by working through the <span class="bc-protip">hands-on tutorials.</span>
+
+
+### **- BUTTONS**
+
+<details class="inline" markdown="1"><summary class="italic c-header">see code example (simple button)</summary>
+
+```html
+Learn more about the basics of programming in <button class="btn bc-note">Python</button> by working through the <button class="btn bc-template">hands-on tutorials</button>.
+```
+</details>
+
+Learn more about the basics of programming in <button class="btn bc-note">Python</button> by working through the <button class="btn bc-template">hands-on tutorials</button>.
+
+
+<details class="inline" markdown="1"><summary class="italic c-header">see code example (useful standardized buttons)</summary>
+
+```html
+<button class="btn bc-code c-good">TUTORIAL</button>
+<button class="btn bc-code c-alert">checklist</button>
+```
+</details>
+
+<button class="btn bc-code c-good">TUTORIAL</button> &emsp; <button class="btn bc-code c-alert">checklist</button>
+
+
+
+
+
+<base class="mt">
+**- COLLAPSIBLE SECTIONS**: See [collapsible section](#collapsible-section)
+<base class="mt">
+**- COLOR-CODED BOXES**: See section [color-coded boxes](#color-coded-boxes)
+
+### **- CUSTOM BOXES**
+such as HTML tags `<div>` or `<pre>` or <code>:
+
+<details class="inline" markdown="1"><summary class="italic c-header">see code example (expected command line output)</summary>
+
+```html
+<div class="bc-output">
+<b class="c-header">abadacz</b>@MacBook(bash):<b class="c-good">data_wrangling</b><span class="c-bad">$</span> pwd <br>
+/Users/abadacz/WORKDIR/data_wrangling
+</div>
+```
+</details>
+
+<div class="bc-output">
+<b class="c-header">abadacz</b>@MacBook(bash):<b class="c-good">data_wrangling</b><span class="c-bad">$</span> pwd <br>
+/Users/abadacz/WORKDIR/data_wrangling
+</div>
+
+
+<details class="inline mt" markdown="1"><summary class="italic c-header">see code example (data preserving whitespace)</summary>
+
+```html
+<pre class="bc-data">
+label_1  982     0       0       0       0       0       1       0       0
+label_1  983     0       0       0       0       0       1       0       0
+label_1  984     0       0       0       0       0       1       0       0
+</pre>
+```
+</details>
+
+<pre class="bc-data">
+label_1  982     0       0       0       0       0       1       0       0
+label_1  983     0       0       0       0       0       1       0       0
+label_1  984     0       0       0       0       0       1       0       0
+</pre>
+
+
+<details class="inline mt" markdown="1"><summary class="italic c-header">see code example (custom box with copyable content)</summary>
+
+```html
+<code class="code-block bc-template"># Define a function that calculates the sum of two numbers
+def add_numbers(x, y):
+    return x + y
+</code>
+```
+</details>
+
+
+<code class="code-block bc-template"># Define a function that calculates the sum of two numbers
+def add_numbers(x, y):
+    return x + y
+</code>
+<div class="footnote c-alert" markdown="1">
+\* Ensure that your `text` begins on the same line as the opening `<code>` tag! Don't forget to add the `“code-block”` class to include a copy button.
+</div>
+
 
 
 ---
@@ -917,26 +1040,64 @@ file = open('example.txt', 'r')
 
 * **customized variant**
 
+By utilizing predefined **background color classes**, you can style the `<details>` container to seamlessly integrate with your layout:
+* applying a color class directly to `<details>` results in a uniform color for both the collapsible button and its expandable content,
 
+<div style="margin-left: 1.8em;">
+<details class="inline" markdown="1"><summary class="italic c-header">see code example (single color)</summary>
 
-<details class="bc-example"><summary class="bc-note bold"> EXAMPLE: </summary>
+```html
+<details class="bc-example" markdown="1"><summary> EXAMPLE: </summary>
 
-<div>
-<span style="font-style:italic;">The project team uses a cloud-based bioinformatics platform (Galaxy) to streamline data analysis. This platform allows for <b>scalable computing resources</b> to handle large genomic datasets efficiently and <b>includes built-in tools</b> for data visualization, which simplifies the monitoring of analysis progress and outcomes. </span>
-</div>
+*The project team uses a cloud-based bioinformatics platform (Galaxy) to streamline data analysis.
+This platform allows for* **scalable computing resources** *to handle large genomic datasets efficiently and*
+**includes built-in tools** *for data visualization, which simplifies the monitoring of analysis progress and outcomes.*
+</details>
+```
 </details>
 
+<details class="bc-example" markdown="1"><summary> EXAMPLE: </summary>
 
+*The project team uses a cloud-based bioinformatics platform (Galaxy) to streamline data analysis. This platform allows for* **scalable computing resources** *to handle large genomic datasets efficiently and* **includes built-in tools** *for data visualization, which simplifies the monitoring of analysis progress and outcomes.*
+</details>
+</div>
 
+* while assigning a color class to `<summary>` allows for distinct coloring of the button independent from the container.
 
+<div style="margin-left: 1.8em;">
+<details class="inline" markdown="1"><summary class="italic c-header">see code example (color summary only)</summary>
 
-<!--
+```html
+<details markdown="1"><summary class="bc-note"> EXAMPLE: </summary>
 
-# TODO:
+*The project team uses a cloud-based bioinformatics platform (Galaxy) to streamline data analysis.
+This platform allows for* **scalable computing resources** *to handle large genomic datasets efficiently and*
+**includes built-in tools** *for data visualization, which simplifies the monitoring of analysis progress and outcomes.*
+</details>
+```
+</details>
 
-<br><span style="background-color: #e8e9e8; color: #ff3870; font-weight: 500; padding: 5px 7px;">checklist</span>&nbsp; **A few universal tips for Data Collection:**
+<details markdown="1"><summary class="bc-note"> EXAMPLE: </summary>
 
-<br><span style="background-color: #e8e9e8; color: #0ba37f; font-weight: 500; padding: 5px 7px;">TUTORIAL</span>&nbsp;
+*The project team uses a cloud-based bioinformatics platform (Galaxy) to streamline data analysis. This platform allows for* **scalable computing resources** *to handle large genomic datasets efficiently and* **includes built-in tools** *for data visualization, which simplifies the monitoring of analysis progress and outcomes.*
+</details>
+</div>
 
-<div style="background: #FFFACD; padding: 15px; margin-bottom: 20px; font-size: 16px;">
--->
+<div style="margin-left: 1.8em;">
+<details class="inline" markdown="1"><summary class="italic c-header">see code example (distinct colors)</summary>
+
+```html
+<details class="bc-example" markdown="1"><summary class="bc-note"> EXAMPLE: </summary>
+
+*The project team uses a cloud-based bioinformatics platform (Galaxy) to streamline data analysis.
+This platform allows for* **scalable computing resources** *to handle large genomic datasets efficiently and*
+**includes built-in tools** *for data visualization, which simplifies the monitoring of analysis progress and outcomes.*
+</details>
+```
+</details>
+
+<details class="bc-example" markdown="1"><summary class="bc-note"> EXAMPLE: </summary>
+
+*The project team uses a cloud-based bioinformatics platform (Galaxy) to streamline data analysis. This platform allows for* **scalable computing resources** *to handle large genomic datasets efficiently and* **includes built-in tools** *for data visualization, which simplifies the monitoring of analysis progress and outcomes.*
+</details>
+</div>
