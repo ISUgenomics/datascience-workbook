@@ -240,15 +240,27 @@ Learn more about the basics of programming in <button class="btn bc-note">Python
 <details class="inline" markdown="1"><summary class="italic c-header">see code example (useful standardized buttons)</summary>
 
 ```html
-<button class="btn bc-code c-good">TUTORIAL</button>
-<button class="btn bc-code c-alert">checklist</button>
+<button class="btn c-good">TUTORIAL</button>
+<button class="btn c-alert">checklist</button>
+<button class="btn" type="button">Download</button>
 ```
 </details>
 
-<button class="btn bc-code c-good">TUTORIAL</button> &emsp; <button class="btn bc-code c-alert">checklist</button>
+<button class="btn c-good">TUTORIAL</button> &emsp; <button class="btn c-alert">checklist</button> &emsp; <button class="btn" type="button">Download</button>
 
 
+<details class="inline" markdown="1"><summary class="italic c-header">see code example (buttons matching color-coded boxes)</summary>
 
+```html
+<button class="btn protip"></button>
+<button class="btn warning"></button>
+<button class="btn note"></button>
+<button class="btn example"></button>
+<button class="btn exercise"></button>
+```
+</details>
+
+<button class="btn protip"></button> &emsp; <button class="btn warning"></button> &emsp; <button class="btn note"></button> &emsp; <button class="btn example"></button> &emsp; <button class="btn exercise"></button>
 
 
 <base class="mt">
@@ -1024,7 +1036,7 @@ file = open('example.txt', 'r')
 </div>
 
 
-* **customized variant**
+* **color-customized variant**
 
 By utilizing predefined **background color classes**, you can style the `<details>` container to seamlessly integrate with your layout:
 * applying a color class directly to `<details>` results in a uniform color for both the collapsible button and its expandable content,
@@ -1085,6 +1097,113 @@ This platform allows for* **scalable computing resources** *to handle large geno
 <details class="bc-example" markdown="1"><summary class="bc-note"> EXAMPLE: </summary>
 
 *The project team uses a cloud-based bioinformatics platform (Galaxy) to streamline data analysis. This platform allows for* **scalable computing resources** *to handle large genomic datasets efficiently and* **includes built-in tools** *for data visualization, which simplifies the monitoring of analysis progress and outcomes.*
+</details>
+</div>
+
+
+* **example inputs and outputs**
+
+You can include well-formatted data examples within a collapsible component with some additional settings:
+* to add well-formatted text, such as tab-spaced columns of an input file, you can utilize the `<pre>` tag,
+
+<div style="margin-left: 1.8em;">
+<details class="inline" markdown="1"><summary class="italic c-header">see code example (well-formated data)</summary>
+
+```html
+<details><summary> DATA EXAMPLE: </summary>
+
+<pre class="bc-data">
+label_1  982    0       0       0       0       0       1       0       0
+label_1  983    0       0       0       0       0       1       0       0
+label_1  984    0       0       0       0       0       1       0       0
+</pre>
+</details>
+```
+</details>
+
+<details><summary> DATA EXAMPLE: </summary>
+
+<pre class="bc-data">
+label_1  982    0       0       0       0       0       1       0       0
+label_1  983    0       0       0       0       0       1       0       0
+label_1  984    0       0       0       0       0       1       0       0
+</pre>
+</details>
+</div>
+
+* by adding a specific class to the `<pre>` tag, its background color can be easily changed to distinguish the specific content:
+
+<div style="margin-left: 1.8em;">
+<details class="inline" markdown="1"><summary class="italic c-header">see code example (expected output)</summary>
+
+```html
+<details><summary class="bc-template"> Expected output: </summary>
+
+<pre class="bc-output">
+<b class="c-header">abadacz</b>@MacBook(bash):<b class="c-good">data_wrangling</b><span class="c-bad">$</span> pwd
+        /Users/abadacz/WORKDIR/data_wrangling
+</pre>
+</details>
+```
+</details>
+
+<details><summary class="bc-template"> Expected output: </summary>
+
+<pre class="bc-output">
+<b class="c-header">abadacz</b>@MacBook(bash):<b class="c-good">data_wrangling</b><span class="c-bad">$</span> pwd
+        /Users/abadacz/WORKDIR/data_wrangling
+</pre>
+</details>
+</div>
+
+* to make well-formatted text **copyable** by a user, you can utilize the `<code class="code-block">` tag combined with other classes for styling,
+
+<div style="margin-left: 1.8em;">
+<details class="inline" markdown="1"><summary class="italic c-header">see code example (copyable data)</summary>
+
+```html
+<details><summary> copyable data: </summary>
+
+<code class="code-block bc-data"># Example dataset
+label_1  982    0       0       0       0       0       1       0       0
+label_1  983    0       0       0       0       0       1       0       0
+</code>
+</details>
+```
+</details>
+
+<details><summary> copyable data: </summary>
+
+<code class="code-block bc-data"># Example dataset
+label_1  982    0       0       0       0       0       1       0       0
+label_1  983    0       0       0       0       0       1       0       0
+</code>
+</details>
+</div>
+
+
+* to make well-formatted text **downloadable** by a user, you can add the *Download* button within `<summary>` tag,
+
+<div style="margin-left: 1.8em;">
+<details class="inline" markdown="1"><summary class="italic c-header">see code example (downloadable data)</summary>
+
+```html
+<details><summary> downloadable data: <button class="btn details-save" type="button"></button> </summary>
+
+<code class="code-block bc-data"># Example dataset
+label_1  982    0       0       0       0       0       1       0       0
+label_1  983    0       0       0       0       0       1       0       0
+</code>
+</details>
+```
+</details>
+
+<details><summary> downloadable data: <button class="btn details-save" type="button"></button> </summary>
+
+<code class="code-block bc-data"># Example dataset
+label_1  982    0       0       0       0       0       1       0       0
+label_1  983    0       0       0       0       0       1       0       0
+</code>
 </details>
 </div>
 
