@@ -1,4 +1,15 @@
 
+// A function moving toc outside page__content section to facilitate its availability on page scrolling
+function moveToc() {
+  const sidebarRight = document.querySelector('.sidebar__right');
+  const pageInnerWrapper = document.querySelector('.page');
+  if (sidebarRight && pageInnerWrapper) {
+    pageInnerWrapper.appendChild(sidebarRight);
+    console.log("item moved");
+  }
+};
+
+
 // A function (called for each single.html based content) reformatting default markdown behavior for target links
 function adjustWrapperLinks() {
 
@@ -144,6 +155,7 @@ function copyCodeButton() {
     const paddingRight = parseInt(style.paddingRight, 10);
     btn.style.top = `${paddingTop}px`;
     btn.style.right = `${paddingRight}px`;
+    btn.style.backgroundColor = "#eee";
     parentDiv.parentNode.appendChild(btn);
 
     btn.onclick = function() {
@@ -183,6 +195,7 @@ function addTextToBefore() {
 
 // Event listener for custom.js functions
 document.addEventListener('DOMContentLoaded', function() {
+  moveToc();
   adjustWrapperLinks();                                                         // reformatting target-links
   wrapCodeBlocks()
   copyCodeButton();

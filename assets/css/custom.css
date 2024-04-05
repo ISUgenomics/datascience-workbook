@@ -157,7 +157,28 @@ div.highlighter-rouge {margin-bottom: 0.8em;}
   font-size: 0.6em;
 }
 
+/* sticky table of contents when scroling */
 
+.page {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.page__inner-wrap {
+  flex-grow: 1;
+}
+
+.sidebar__right {
+  flex-basis: 300px;
+  width: 300px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 1em;
+  align-self: flex-start;
+}
+
+.toc .btn {font-size: 0.9em !important;}
 
 
 /* Code settings */
