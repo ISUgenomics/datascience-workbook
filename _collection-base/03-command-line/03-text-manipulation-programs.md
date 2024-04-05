@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -40,7 +38,7 @@ In this section, we will discuss some of the most popular and useful command lin
   <tr><td>{% include target_link href=330 section="#head-and-tail" text="head and tail" %}</td> <td><i>output the first or last part of a file, respectively</i></td> <td></td></tr>
 </table>
 
-*^Click on the tool name (in the first column) to jump to the cheat sheet.*
+<p class="footnote mt-">^ Click on the tool name (in the first column) to jump to the cheat sheet.</p>
 
 These tools are often used together in pipelines to perform more complex text manipulations.
 Understanding **text manipulation programs** can greatly improve a user's productivity and efficiency when working with text files, without the need for graphical user interfaces.
@@ -246,7 +244,6 @@ To learn more, explore the **Unix Getting Started** tutorial in the section: {% 
 
 To learn more, explore the **Unix Getting Started** tutorial in the section: {% include target_link href=330 section="#head-and-tail" text="TAIL of the file. " %}
 
----
 
 # <button class="btn example"></button> - jump to solution
 

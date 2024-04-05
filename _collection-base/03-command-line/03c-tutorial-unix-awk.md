@@ -17,13 +17,13 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
 
 ## Introduction
 
 AWK, named after its creators Aho, Weinberger, and Kernighan, emerged in the 1970s at AT&T Bell Laboratories. It was designed as a programming language for processing text-based data, making it one of the pioneering tools for text manipulation and data extraction on Unix-like operating systems. The design of AWK was aimed at enabling users to write short programs directly in the command line, making it exceptionally powerful for processing text files where data is structured in rows and columns. Over the years, AWK has evolved through several versions, with gawk (GNU AWK) being one of the most popular and widely supported versions today. Its legacy in the Unix and Linux community is significant, influencing the development of many modern scripting languages and tools.
 
 ## Why learn AWK?
+
 In an era where data is ubiquitous, learning AWK offers several advantages. Firstly, AWK is unparalleled in its simplicity and efficiency for certain text processing tasks. It allows users to perform complex data manipulations with just a few lines of code, making it a valuable tool for quick data analysis, report generation, and file management tasks. AWK's syntax is concise, and it integrates seamlessly with Unix/Linux shell environments, making it an excellent tool for automating repetitive text processing tasks directly from the command line.
 
 Furthermore, AWK is incredibly versatile. Beyond simple text processing, it can be used for data extraction, transforming data formats, generating formatted reports, and even as a prototyping tool for algorithms that deal with text data. Its pattern matching capabilities, combined with actions that can be performed on text that matches patterns, make it a powerful tool for log analysis and configuration file management.
@@ -119,6 +119,7 @@ Graham Gooch 43
 There are just two records in this case.
 
 ### Doing Arithmetic
+
 Let us get the average marks scored by the candidates. For that we do:
 ```bash
 $ awk '{sum+=$3} END {print sum}' marksheet.txt

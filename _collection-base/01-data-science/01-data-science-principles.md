@@ -17,18 +17,14 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
 
-
-# Introduction
-
-## 1. What is Data?
+# 1. What is Data?
 
 Data is a collection of observables registered in any form. Commonly, it is a sequence of written characters (numerical or symbolic), audio stream, or visual depiction. The analog signals [�](a "Analog signal is a continous signal representing the changes in a physical variable, such as sound, light, temperature, position, pressure, etc.") have been steadily replaced since the 1960s by digital records [�](a "Digital signal represents a quantized values transmitted as an electrical or optical signal reduced into two discrete bands: 0 - false and 1 - true."), so today, **digital data** prevail. <br>A single item of data is called a datum. Each datum, in a computer-readable representation, has assigned the binary value of "zero" or "one" (corresponding to logical "*false*" and "*true*"), resulting in a **bit** of information, i.e., one binary digit. <br>
 Due to the source and size, data may have different structures. The technical construction of the data structure is a significant factor in the computer's ability to easily access, search, update, and process the data.
 
 
-### 1.1. Structured Data
+## 1.1. Structured Data
 
 In a nutshell, structured data is **highly organized** in terms of easy digital deciphering rather than human readability. That includes a standardized format, enduring order, and categorization in a well-determined arrangement that facilitates managing and querying datasets in various combinations. Depending on the intent to use the data, the specific relations between elements are revealing. Structured data is easily serchable.
 
@@ -52,7 +48,7 @@ Explore also:<br>
 * <a href="https://www.ibm.com/cloud/blog/structured-vs-unstructured-data" target="_blank">IBM Cloud Education: Structured vs. Unstructured Data: What’s the Difference?</a>
 * <a href="https://www.datamation.com/big-data/structured-vs-unstructured-data/" target="_blank">Datamation Education: Structured vs. Unstructured Data</a>
 
-### 1.2. Unstructured Data
+## 1.2. Unstructured Data
 
 Unstructured data, as defined by itself, has **no regular structure** that can be easily detected, processed, and categorized by computer algorithms - even though it is easily understood by a human. A good example is the streams of highly varied text contained in emails, social media posts, online blogs, newspapers, books, and scientific publications. The **descriptive nature** of this data is clear in meaning to humans, but semantic complexity and context are often a limitation for conventional computer programs.
 
@@ -68,7 +64,7 @@ Explore also:
 * <a href="https://www.ibm.com/cloud/blog/structured-vs-unstructured-data" target="_blank">IBM Cloud Education: Structured vs. Unstructured Data: What’s the Difference?</a> []()<br>
 * <a href="https://www.datamation.com/big-data/structured-vs-unstructured-data/" target="_blank">Datamation Education: Structured vs. Unstructured Data</a>
 
-### 1.3. Big Data
+## 1.3. Big Data
 
 The **Big Data** term emerged in the 1990s [�](a "Steve Lohr, The Origins of 'Big Data': An Etymological Detective Story. The New York Times. 28 September 2016.") with the rapid growth of digital data. The first two decades of the 21st century have dynamically ushered us into the Zettabyte Era [�](a "The Zettabyte Era started in the mid-2010s, when the amount of digital data in the world first exceeded a zettabyte, i.e., 10^21 bytes."). Thus, the essence of Big Data focuses on the **size of data**, the volume of which continually expands and becomes a bottleneck on existing computational approaches. You are not wrong guessing that Big Data input is mainly **unstructured data**.
 
@@ -86,7 +82,7 @@ Explore also:
 * <a href="https://www.educba.com/big-data-vs-data-science/" target="_blank">eduCBA Education: Big Data vs Data Science</a>
 
 
-## 2. The Life Cycle of Data
+# 2. The Life Cycle of Data
 
 |The life cycle of Big Data <br>goes through 5 major phases:|*Figure 3. The Life Cycle of Data <br><span style="color: #8997c1;">[track image sources in the [FILE](../assets/images/sources)]</span>*|
 |--|--|
@@ -95,7 +91,7 @@ Explore also:
 During the cycle, the amount of data is reduced by much in favor of **densification of value** and relevance. Large amounts of raw, usually highly variable data, are first cleansed by filtering. Then the relevant data is mined through **pattern search and machine learning**. Initial data clustering reveals some relations that are feasible to **classify information**. At this stage, volumetric data is transformed into valuable information, defined as processed, organized, and structured data. Statistical analysis and combinatorial querying of categorized information enable the discovery of deeply coupled correlations and formulate non-trivial conclusions. That means **extracting knowledge**. Insights are advantageous when applied successfully, so meaningful communication is critical for **knowledge retention** and steady development.
 
 
-### 2.1. States of Data
+## 2.1. States of Data
 
 ### *Raw Data*
 
@@ -110,7 +106,7 @@ Information is a **meaningful and organized** product of data processing. It mai
 Knowledge is an extracted **non-trivial insight** from the data classification and analysis of information that while applied **leads to problem-solving**, improvements, and steady development.
 
 
-### 2.2. Data Operations
+## 2.2. Data Operations
 
 ### *Storage - Data at Rest*
 

@@ -18,29 +18,20 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
-
-# Introduction
-
-<!-- Intro section is required for page navigation
-you can use it somehow
--->
 
 # Comparing and Collating Two Files with Unix
 
 The `diff`, `comm`, and `cmp` commands are powerful utilities in Unix systems for comparing and analyzing differences between multiple files. `diff` highlights discrepancies line by line, making it ideal for pinpointing changes between two text files. It provides a detailed output, showing added, removed, and modified lines. Conversely, `comm` is perfect for comparing sorted files, displaying lines unique to each file and those common to both. Its structured output simplifies identifying differences and similarities between files, particularly in sorted datasets. Meanwhile, `cmp` offers a byte-level comparison, efficiently highlighting differences in binary files. It displays the first differing bytes and their offsets, making it invaluable for verifying the integrity of binary data or identifying discrepancies in large files. These commands collectively provide versatile solutions for comparing files, catering to various use cases from text to binary comparisons in Unix environments.
 
-**The two input files used to demonstrate the tutorial, note: they are tab separated.**
-</break>
+<div class="example" markdown="1">
+**The two input files used to demonstrate the tutorial** <b class="c-alert">Note: they are tab separated!</b>
 
-Sample files to demonstrate the usefullness of the below commands
+*Sample files to demonstrate the usefullness of the commands in this tutorial.*
 
-<details>
-<summary>File1.txt</summary>
 
-```
-##gff-version 3
+<details><summary>File1.txt <button class="btn details-save" type="button"></button> </summary>
+
+<code class="code-block bc-data">##gff-version 3
 ##sequence-region   Chromosome_4 10612335 10618026
 Chromosome_4    gffcl   gene    10612335        10618026        .       -       .       ID=gene1;Alias=RLOC_00010436
 Chromosome_4    Mikado_loci     mRNA    10612335        10618026        19      -       .       ID=mRNA1;Parent=gene1;Alias=mikado.Scaffold_4G3148.1
@@ -74,15 +65,13 @@ Chromosome_2    .       intron  6726308 6726382 .       +       .       Parent=m
 Chromosome_2    Mikado_loci     CDS     6726383 6726606 .       +       2       Parent=mRNA2
 Chromosome_2    Mikado_loci     exon    6726383 6726696 .       +       .       Parent=mRNA2
 ###
-```
-
+</code>
 </details>
 
-<details>
-<summary>File2.txt</summary>
 
-```
-##gff-version 3
+<details><summary>File2.txt <button class="btn details-save" type="button"></button> </summary>
+
+<code class="code-block bc-data">##gff-version 3
 ##sequence-region   Chromosome_4 10612335 10618026
 Chromosome_4    gffcl   gene    10612335        10618026        .       -       .       ID=gene1;Alias=RLOC_00010436
 Chromosome_4    Mikado_loci     mRNA    10612335        10618026        19      -       .       ID=mRNA1;Parent=gene1;Alias=mikado.Scaffold_4G3148.1
@@ -142,11 +131,14 @@ Chromosome_9    gffcl   gene    10846325        10846912        .       -       
 Chromosome_9    Mikado_loci     CDS     10846326        10846553        .       -       0       Parent=Hetgly20668.t1
 Chromosome_9    Mikado_loci     exon    10846606        10846840        .       -       .       Parent=Hetgly20668.t1
 Chromosome_9    Mikado_loci     exon    10846885        10846912        .       -       .       Parent=Hetgly20668.t1
-```
+</code>
 </details>
+</div>
+
 
 # The diff command
-diff is a command that will immediately tell you the differences and commonalities in each line between two sorted files.
+
+`diff` is a command that will immediately tell you the differences and commonalities in each line between two sorted files.
 ```bash
 diff File1.txt File2.txt
 
@@ -154,10 +146,9 @@ Using process substitutions we can sort them in place if needed
 diff <(sort File1.txt) <(sort File2.txt)
 ```
 
-<details>
-<summary>Output</summary>
+<details><summary>Output</summary>
 
-```
+<pre class="bc-output">
 < Chromosome_4  Mikado_loci     CDS     10616667        10616725        .       -       0       Parent=mRNA1
 < Chromosome_4  Mikado_loci     exon    10616667        10616725        .       -       .       Parent=mRNA1
 < Chromosome_4  .       intron  10616726        10616766        .       -       .       Parent=mRNA1
@@ -233,22 +224,23 @@ diff <(sort File1.txt) <(sort File2.txt)
 > Chromosome_9  Mikado_loci     CDS     10846326        10846553        .       -       0       Parent=Hetgly20668.t1
 > Chromosome_9  Mikado_loci     exon    10846606        10846840        .       -       .       Parent=Hetgly20668.t1
 > Chromosome_9  Mikado_loci     exon    10846885        10846912        .       -       .       Parent=Hetgly20668.t1
-```
+</pre>
 </details>
 
 
 # The comm command
+
 ```bash
 Print only lines that are common between the two files
-comm -1 -2  <(sort File1.txt) <(sort File2.txt) |less
+comm -1 -2  <(sort File1.txt) <(sort File2.txt) | less
 
 Using process substitutions we can sort them in place if needed
 comm <(sort File1.txt) <(sort File2.txt)
 ```
-<details>
-<summary>Output</summary>
 
-```
+<details><summary>Output</summary>
+
+<pre class="bc-output">
 Chromosome_4    gffcl   gene    10612335        10618026        .       -       .       ID=gene1;Alias=RLOC_00010436
 Chromosome_4    .       intron  10612437        10616129        .       -       .       Parent=mRNA1
 Chromosome_4    .       intron  10616191        10616666        .       -       .       Parent=mRNA1
@@ -259,21 +251,25 @@ Chromosome_4    Mikado_loci     exon    10616130        10616190        .       
 Chromosome_4    Mikado_loci     mRNA    10612335        10618026        19      -       .       ID=mRNA1;Parent=gene1;Alias=mikado.Scaffold_4G3148.1
 ##gff-version 3
 ##sequence-region   Chromosome_4 10612335 10618026
-```
+</pre>
 </details>
 
+
 # The cmp command
-What is the first difference between two files? cmp will print which byte and which line contains this first difference. Extremely useful when verifying the contents of binary or large files.
+
+What is the first difference between two files? The `cmp` will print which byte and which line contains this first difference.
+<em class="c-alert">Extremely useful when verifying the contents of binary or large files.</em>
+
 ```bash
 cmp File1.txt File2.txt
 ```
-<details>
-<summary>Output</summary>
-```
-/dev/fd/63 /dev/fd/62 differ: byte 1, line 1
-#These files are different at the first byte and line.
-```
 
+<details><summary>Output</summary>
+
+<pre class="bc-output">
+/dev/fd/63 /dev/fd/62 differ: byte 1, line 1
+</pre>
+<p class="footnote mt-"> These files are different at the first byte and line.</p>
 </details>
 
 
@@ -284,12 +280,12 @@ The join command in Unix is a versatile tool for combining lines from two differ
 
 This command sorts both files based on their ninth field, then performs a join operation on the sorted data using the ninth field as the key.
 ```bash
-join -1 9 -2 9  <(sort -k9,9 File1.txt) <(sort -k9,9 File2.txt) |less
+join -1 9 -2 9  <(sort -k9,9 File1.txt) <(sort -k9,9 File2.txt) | less
 ```
-<details>
-<summary>Output</summary>
 
-```
+<details><summary>Output</summary>
+
+<pre class="bc-output">
  ### ##gff-version 3
  ### ##sequence-region Chromosome_4 10612335 10618026
  ### ##gff-version 3
@@ -382,37 +378,40 @@ Parent=mRNA1 Chromosome_4 Mikado_loci exon 10616767 10616850 . - . Chromosome_4 
 Parent=mRNA1 Chromosome_4 Mikado_loci exon 10616767 10616850 . - . Chromosome_4 Mikado_loci exon 10616130 10616190 . - .
 Parent=mRNA1 Chromosome_4 Mikado_loci exon 10617973 10618026 . - . Chromosome_4 . intron 10612437 10616129 . - .
 Parent=mRNA1 Chromosome_4 Mikado_loci exon 10617973 10618026 . - . Chromosome_4 . intron 10616191 10616666 . - .
-```
+</pre>
 </details>
+
 
 # Using Awk to compare two files
 
 Awk stands out as a robust utility for comparing two files in Unix environments due to its text-processing prowess and simplicity. Its primary strength lies in its ability to handle structured data efficiently. Awk processes input line by line, making it ideal for comparing files containing records or lines with similar structures. By specifying field delimiters and comparison criteria, users can precisely identify differences or similarities between corresponding fields in the two files.
 
+### <span class="c-gray">STEP 1</span>
 
 **This command compares the combinations of the first and second fields in both files. It outputs lines from File2.txt where these combinations are unique, meaning they do not occur in File1.txt.**
 ```bash
 awk  'NR==FNR { c[$1$2]++; next} c[$1$2]++ == 0' File1.txt File2.txt
 ```
 
-<details>
-<summary>Output</summary>
-This command prints the first occurence of a line from file2 if file2's column1 and 2 match column 1 and 2 from file 1
-```
+<details markdown="1"><summary>Output</summary>
+
+<pre class="bc-output">
 Chromosome_9    Mikado_loci     exon    10818058        10818082        .       -       .       Parent=Hetgly20664.t1
 Chromosome_9    gffcl   gene    10818169        10823373        .       +       .       ID=Hetgly20665;Alias=RLOC_00024670
-```
+</pre>
+*This command prints the first occurence of a line from file2 if file2's column1 and 2 match column 1 and 2 from file 1:*
 </details>
+
+### <span class="c-gray">STEP 2</span>
 
 **This command outputs lines from File2.txt where the value of the ninth field is not present in File1.txt, effectively showing differences or unique values between the two files based on the ninth field.**
 ```bash
 awk 'FNR==NR{a[$9];next}!($9 in a)' File1.txt File2.txt
 ```
-<details>
-<summary>Output</summary>
 
-This command added all of column 9 from file 1 to the array (a), and if there is not a column 9 from file2 that matches, print the line
-```
+<details markdown="1"><summary>Output</summary>
+
+<pre class="bc-output">
 Chromosome_9    Mikado_loci     exon    10818058        10818082        .       -       .       Parent=Hetgly20664.t1
 Chromosome_9    Mikado_loci     CDS     10818058        10818082        .       -       0       Parent=Hetgly20664.t1
 Chromosome_9    gffcl   gene    10818169        10823373        .       +       .       ID=Hetgly20665;Alias=RLOC_00024670
@@ -463,18 +462,20 @@ Chromosome_9    gffcl   gene    10846325        10846912        .       -       
 Chromosome_9    Mikado_loci     CDS     10846326        10846553        .       -       0       Parent=Hetgly20668.t1
 Chromosome_9    Mikado_loci     exon    10846606        10846840        .       -       .       Parent=Hetgly20668.t1
 Chromosome_9    Mikado_loci     exon    10846885        10846912        .       -       .       Parent=Hetgly20668.t1
-```
-
+</pre>
+This command added all of column 9 from file 1 to the array (a), and if there is not a column 9 from file2 that matches, print the line
 </details>
+
+### <span class="c-gray">STEP 3</span>
 
 **Likewise, we can do the opposite of the above just by removing the "!".  If column 9 from file 1 is found in column 9 from file2, print the line**
 ```bash
 awk 'FNR==NR{a[$9];next}($9 in a)' File1.txt File2.txt
 ```
-<details>
-<summary>Output</summary>
 
-```
+<details><summary>Output</summary>
+
+<pre class="bc-output">
 ##gff-version 3
 ##sequence-region   Chromosome_4 10612335 10618026
 Chromosome_4    gffcl   gene    10612335        10618026        .       -       .       ID=gene1;Alias=RLOC_00010436
@@ -485,18 +486,19 @@ Chromosome_4    .       intron  10612437        10616129        .       -       
 Chromosome_4    Mikado_loci     CDS     10616130        10616190        .       -       1       Parent=mRNA1
 Chromosome_4    Mikado_loci     exon    10616130        10616190        .       -       .       Parent=mRNA1
 Chromosome_4    .       intron  10616191        10616666        .       -       .       Parent=mRNA1
-```
+</pre>
 </details>
+
+### <span class="c-gray">STEP 4</span>
 
 **Attach column1 and 2 to an array and match these with column 1 and 2 from file 2.  If there is a difference (true), print line from File2.txt that maches.**
 ```bash
 awk  'NR==FNR{c[$1$2];next};c[$1$2] > 0' File1.txt File2.txt
 ```
 
-<details>
-<summary>Output</summary>
+<details><summary>Output</summary>
 
-```
+<pre class="bc-output">
 ##gff-version 3
 ##sequence-region   Chromosome_4 10612335 10618026
 Chromosome_4    gffcl   gene    10612335        10618026        .       -       .       ID=gene1;Alias=RLOC_00010436
@@ -507,20 +509,19 @@ Chromosome_4    .       intron  10612437        10616129        .       -       
 Chromosome_4    Mikado_loci     CDS     10616130        10616190        .       -       1       Parent=mRNA1
 Chromosome_4    Mikado_loci     exon    10616130        10616190        .       -       .       Parent=mRNA1
 Chromosome_4    .       intron  10616191        10616666        .       -       .       Parent=mRNA1
-```
-
+</pre>
 </details>
 
+### <span class="c-gray">STEP 5</span>
 
 **If column 9 from file 1 does not match column 9 from file 2, print the line from file 2**
 ```bash
 awk 'NR==FNR { a[$9]; next } !($9 in a) { print $0 }' File1.txt File2.txt
 ```
 
-<details>
-<summary>Output</summary>
+<details><summary>Output</summary>
 
-```
+<pre class="bc-output">
 Chromosome_9    Mikado_loci     exon    10818058        10818082        .       -       .       Parent=Hetgly20664.t1
 Chromosome_9    Mikado_loci     CDS     10818058        10818082        .       -       0       Parent=Hetgly20664.t1
 Chromosome_9    gffcl   gene    10818169        10823373        .       +       .       ID=Hetgly20665;Alias=RLOC_00024670
@@ -571,18 +572,19 @@ Chromosome_9    gffcl   gene    10846325        10846912        .       -       
 Chromosome_9    Mikado_loci     CDS     10846326        10846553        .       -       0       Parent=Hetgly20668.t1
 Chromosome_9    Mikado_loci     exon    10846606        10846840        .       -       .       Parent=Hetgly20668.t1
 Chromosome_9    Mikado_loci     exon    10846885        10846912        .       -       .       Parent=Hetgly20668.t1
-```
+</pre>
 </details>
+
+### <span class="c-gray">STEP 6</span>
 
 **Like the above example, if column 9 from file 1 does match column 9 from file2, print the column 9 from file 1 and the matching line from file 2. Note that this time I am naming the array's key $9 and making the key value $9 as well.**
 ```bash
 awk 'NR==FNR { a[$9]=$9; next } ($9 in a) { print a[$9],$0 }' File1.txt File2.txt
 ```
 
-<details>
-<summary>Output</summary>
+<details><summary>Output</summary>
 
-```
+<pre class="bc-output">
  ##gff-version 3
  ##sequence-region   Chromosome_4 10612335 10618026
 ID=gene1;Alias=RLOC_00010436 Chromosome_4       gffcl   gene    10612335        10618026        .       -       .       ID=gene1;Alias=RLOC_00010436
@@ -593,5 +595,5 @@ Parent=mRNA1 Chromosome_4       .       intron  10612437        10616129        
 Parent=mRNA1 Chromosome_4       Mikado_loci     CDS     10616130        10616190        .       -       1       Parent=mRNA1
 Parent=mRNA1 Chromosome_4       Mikado_loci     exon    10616130        10616190        .       -       .       Parent=mRNA1
 Parent=mRNA1 Chromosome_4       .       intron  10616191        10616666        .       -       .       Parent=mRNA1
-```
+</pre>
 </details>

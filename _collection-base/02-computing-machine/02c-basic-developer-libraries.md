@@ -15,17 +15,12 @@ tags: []
 
 {% include toc %}
 {% include images_path %}
-
 {% include page-sourcing.html %}
 
----
 
+# Developer Libraries
 
-# Introduction
-
-## Developer Libraries
-
-### Conda
+## Conda
 
 Conda is an open-source and cross-platform environment management system. Conda quickly installs, runs, and updates packages and their dependencies. It helps build the virtual environment required for a specific project, including novel software development.
 <br>Conda is yet another package manager that is very popular in the bioinformatics community. Almost every software you want to install can be installed using Conda by creating a `conda` environment. The new MacBook Pros with the M1 Arm chips does make installations a little more challenging as not all software has been formatted to run natively on the ARM architecture. Fortunately, Apple's translation environment software, Rosetta 2, can be used to install and run anything we want that was meant for Intel chips.

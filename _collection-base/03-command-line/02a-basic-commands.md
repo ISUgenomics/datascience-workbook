@@ -18,7 +18,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
 
 # Introduction
 
@@ -36,7 +35,6 @@ wget XXX
 ```
 
 
----
 # 1. The Unix manual pages and history of used commands
 
 ### `man` -- <b class="c-alert">man</b>ual, gives a guide of asked command
@@ -60,23 +58,22 @@ history | grep man | tail -n 5
 
 <span class="c-alert"><b>NOTE:</b> You can also recall your previous commands by pressing <button class="btn">&#8593;</button> or <button class="btn">&#8595;</button> arrow keys.</span>
 
----
 
 # 2. The Unix special characters
 
-| character | function | syntax | example usage |
-|--|--|--|--|
-|`?`|replaces single character|| *m?_file.txt* to replace 'y' in the *my_file.txt*|
-|`*`|replaces multiple characters|| \*file.txt to replace 'my_' in the *my_file.txt*|
-|`\|`|executes commands in order |command_1 \| command_2| cat *my_file.txt* \| tail -5 |
-|`>`|save standard stream to the output file |command_1 > output_file| cat *my_file.txt* > output.txt |
-|`>>`|append standard stream to the end of the output file |command_1 >> output_file| cat *my_file.txt* >> output.txt |
-|`2>`|save error stream to the output file |command_1 > output_file| cat *my_file.txt* 2> output.txt |
-|`2>>`|append error stream to the end of the output file |command_1 2>> output_file| cat *my_file.txt* 2>> output.txt |
-|`2>&1`|redirects standard error to standard output |command_1 2>&1 output_file| cat *my_file.txt* 2>&1 output.txt |
-|`/dev/null`|discard output from saving |command_1 > /dev/null| cat *my_file.txt* > /dev/null |
-|`\n`|breaks text into next line || echo "text \n text in the next line" |
-|`\t`|inserts tabulator space || echo "text \t text after tabulator space" |
+| character | function                                            | syntax                   | example usage                       |
+|-----------|-----------------------------------------------------|--------------------------|-------------------------------------|
+|`?`        |replaces single character                            |             | *m?_file.txt* to replace 'y' in the *my_file.txt*|
+|`*`        |replaces multiple characters                         |             | \*file.txt to replace 'my_' in the *my_file.txt* |
+|`\|`       |executes commands in order                           |command_1 \| command_2    | cat *my_file.txt* \| tail -5        |
+|`>`        |save standard stream to the output file              |command_1 > output_file   | cat *my_file.txt* > output.txt      |
+|`>>`       |append standard stream to the end of the output file |command_1 >> output_file  | cat *my_file.txt* >> output.txt     |
+|`2>`       |save error stream to the output file                 |command_1 > output_file   | cat *my_file.txt* 2> output.txt     |
+|`2>>`      |append error stream to the end of the output file    |command_1 2>> output_file | cat *my_file.txt* 2>> output.txt    |
+|`2>&1`     |redirects standard error to standard output          |command_1 2>&1 output_file| cat *my_file.txt* 2>&1 output.txt   |
+|`/dev/null`|discard output from saving                           |command_1 > /dev/null     | cat *my_file.txt* > /dev/null       |
+|`\n`       |breaks text into next line                           |             | echo "text \n text in the next line"             |
+|`\t`       |inserts tabulator space                              |             | echo "text \t text after tabulator space"        |
 
 ### `?` and `*` -- variables to represent one or many chracters in filenames
 
@@ -95,7 +92,6 @@ ls ?.txt
 
 ### `|` -- pipe to execute commands in the ordered sequence
 
----
 
 # 3. Command-line navigation in the file system
 
@@ -168,7 +164,6 @@ pwd
 ```
 **TIP**: You can type in first few letters of the directory name and then press `Tab` to auto complete rest of the name (especially useful when the file/directory name is long). This only works when there are unique matches for the starting letters you have typed. If there is more than one matching files/directories, pressing `Tab` twice will list all the matching names.
 
----
 
 # 4. Command-line directory operations
 
@@ -223,6 +218,7 @@ rmdir Deleteme3
 **In Unix there is no undo command.** If you delete a file it is gone. There is no trash bin. The next two commands are very powerful commands and can lead to unfortunate losses if not used with care. With that said you can only delete files you have created. So it is impossible to delete someone else files without permission.
 </div>
 
+
 ## 4.2 Folder Preview
 
 ### `ls` (<b class="c-alert">l</b>i<b class="c-alert">s</b>t) command
@@ -247,7 +243,6 @@ ls –t #Lists all the files, sorted based on creation time
 ls –S #Lists all the files, sorted based on size
 ```
 
----
 
 # 5. Command-line file operations
 

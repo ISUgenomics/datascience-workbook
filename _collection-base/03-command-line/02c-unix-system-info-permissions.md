@@ -17,27 +17,24 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
 
 # Introduction
+
 This exercise will provide you details about some administrative commands with examples. Here, you can learn how to change permissions for files and folders to modify its accessibility and commands to obtain information about the system you are using.
 
 ## Changing permissions
 
 All files in the UNIX system will have a set of permissions which define what can be done with that file and by whom. Here, what refers to read (view contents), write (modify) and execute (run as a script) and whom refers to user (owner), group (collection of users that the user belongs to) and others (everyone else).
 
-| Permissions | Symbol    |
-|:-------------|----------:|
-| read         | `r`       |
-| write        | `w`       |
-| execute      | `x`       |
-| all users    | `a`       |
 
-| Relations | Symbol |
-|:----------|-------:|
-| owner     | `u`    |
-| group     | `g`    |
-| others    | `o`    |
+| Permissions  | read  | write | execute | all users|
+|--------------|-------|-------|---------|----------|
+| Symbol       | `r`   | `w`   | `x`     | `a`      |
+
+| Relations    | owner | group | others  |          |
+|--------------|-------|-------|---------|----------|
+| Symbol       | `u`   | `g`   | `o`     |          |
+
 
 To look at the permissions for any file, you can list the files with `l` option (`ls –l`).
 Permissions	User	Group	Size	Date modified	Name
@@ -198,8 +195,8 @@ Swap:           58          0         57
 ```
 This is much easier to understand.
 
-### 5. System properties
 
+### 5. System properties
 
 Just to get the Operating system name:
 ```bash
@@ -244,7 +241,7 @@ uname -p # processor type
 uname -o # OS type
 ```
 
-### 7. Processor and Memory information:
+### 6. Processor and Memory information:
 
 These information will be in the file. Just by cataloging the file, you can find read these information:
 ```bash
@@ -257,7 +254,7 @@ cat /proc/cpuinfo
 ```
 for the CPU information
 
-### 8. IP address:
+### 7. IP address:
 
 To get the IP address for the machine you can use the `ifconfig` command.
 

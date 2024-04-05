@@ -13,7 +13,7 @@ categories: ["computing", "text-manipulation"]
 tags: ["commands", "linux", "bash-scripting"]
 ---
 
-{% include toc %}
+
 {% include images_path %}
 
 Command Line is a text interface for the computer's operating system that passes on-demand the predefined commands and triggers the execution of various processes. That gives the user powerful computing capabilities, great analytical flexibility, and significant time savings from automating tasks. In this section, you become familiar with a terminal, including command-line navigation in the file system, and learn vitally important commands for parsing text files.

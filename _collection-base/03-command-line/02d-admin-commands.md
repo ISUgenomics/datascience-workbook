@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Superuser
 
@@ -175,7 +173,7 @@ Options:
 ```
 
 
-## <button class="btn example before" data-before="PRACTICAL &nbsp; EXAMPLES"></button>
+# <button class="btn example before" data-before="PRACTICAL &nbsp; EXAMPLES"></button>
 
 Here are a few practical examples of using the `sudo` command:
 

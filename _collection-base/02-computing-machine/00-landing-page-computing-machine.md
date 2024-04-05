@@ -13,7 +13,7 @@ categories: []
 tags: []
 ---
 
-{% include toc %}
+
 {% include images_path %}
 
 

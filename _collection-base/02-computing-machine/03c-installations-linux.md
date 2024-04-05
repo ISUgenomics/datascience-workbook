@@ -17,13 +17,10 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Guide for installing various types of programs in Linux
 
 This handy guide is for installing programs in `UNIX` environment. Most of these steps assume that you are installing package in a group accessible location, without root access and utilizing the environment module systems for package management. However, you can easily modify these steps for other cases as well.
-
 
 
 ## Conda
@@ -139,12 +136,13 @@ make
 # that will have the executables
 ```
 
----
 
 # Group installation
+
 Rather than trying to install to root, it is useful to be able to install programs that are common for your group/lab.  To attain this type of installation it is necessary to download and load your own version of `python` (not the `python` installed in root, by admin). Global installations are not possible when you are not the administrator, and personal directory installations are only available to one person.  When it is desirable to install to group.  Start with Python installation in your groups directory (example: /work/GIF on condo).
 
 ## Python packages
+
 Using our own `python` will allow writing/installing modules to it as needed. After unpacking, `cd` to the package, and install it as follows:
 ```bash
 module load python
@@ -170,6 +168,7 @@ pip freeze # lists all the packages that are currently installed and their versi
 ```
 
 ## Perl modules
+
 Once the module is loaded, use the following set of commands to install any `perl` modules.
 ```bash
 module load perl
@@ -202,6 +201,7 @@ R
 ```
 
 ### Installing CRAN R Packages
+
 CRAN packages are by far the easiest. From within R prompt, type:
 ```bash
 module load R
@@ -221,6 +221,7 @@ library(some_package)
 ```
 
 ### Install manually downloaded R Package
+
 Some packages that aren't in CRAN but are available from the author directly, can be installed for group as well. Download the the `package.tar.gz` from the author's website.
 ```r
 module load R
@@ -234,6 +235,7 @@ R
 ```
 
 ### Installing Bioconductor Modules
+
 For Bioconductor packages, follow these steps:
 ```r
 module load R
@@ -245,7 +247,7 @@ R
 > library(package_name)
 # this should load the package and return without any error message
 ```
----
+
 
 # Managing packages
 
@@ -260,7 +262,8 @@ To get all packages installed along with their version number, type
 > installed.packages()[,c("Package","Version")]
 ```
 
-#### Upgrade packages
+## Upgrade packages
+
 For the R packages that you installed from `CRAN` can all be upgrades in single command
 ```r
 update.packages() # upgrades all packages
@@ -271,7 +274,7 @@ Other useful option to check the status of all packages currently installed is:
 > inst <- packageStatus()$inst
 > inst[inst$Status != "ok", c("Package", "Version", "Status")]
 ```
-#### Uninstall package
+## Uninstall package
 
 Packages can be uninstalled easily using `remove.packages` command
 ```r
@@ -279,6 +282,7 @@ Packages can be uninstalled easily using `remove.packages` command
 ```
 
 ### Java programs
+
 Precompiled java programs that come as `.jar` files, can be placed in any directory and can be called from there. For using it with environment modulefile, you need to do these steps. First, create directory (program name) and sub-directory (version number). Place the `.jar` file in this sub-directory. Within this create another directory and call it as bin. For all `.jar` files in `/programname/version/` create a text file in `/programname/version/bin`. This text file will just have a single line, something like:
 ```java
 java program_name.jar

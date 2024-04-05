@@ -17,7 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
 
 # Introduction
 
@@ -38,7 +37,7 @@ Like any other command there are various options available for this command. Mos
 | `-l`      | lists the file names containing the pattern (instead of match).   |
 | `-n`      | prints the line number containing the pattern (instead of match). |
 | `-c`      | counts the number of matches for a pattern                        |
-| `-o`      | only print the matching pattern 			                            |
+| `-o`      | only print the matching pattern 			                |
 | `-w`      | forces the pattern to match an entire word.                       |
 | `-x`      | forces patterns to match the whole line.                          |
 

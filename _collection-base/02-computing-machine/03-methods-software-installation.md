@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -28,7 +26,7 @@ Depending on how the software is distributed and how popular it is different ins
 
 ### Installation via App Store
 
-The **App Store** is an in-built store platform available on your MacBook Pro that allows you to browse and install the software. The App Store shortcut &nbsp;<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS61Gy0FdwGsIx-u4Zu50BPt9ZxbFmsAbRNFApRrs1-zxoQnpAj6VnvXJ3iY3trykjn3Uc&usqp=CAU" alt="Mac App Store" height="18" width="18">&nbsp; is usually visible on your Dock (by default, it is a horizontal menu with icons of pre-installed apps). You can also easily use *Finder* &nbsp;<img src="https://images.macrumors.com/t/5BiCx6nBBb0fGUFWfLHjqaD1zFk=/1200x1200/smart/article-new/2018/02/macos-finder-icon.jpg" alt="Mac App Store" height="18" width="18">&nbsp; or *Launchpad* &nbsp;<img src="https://uploads-ssl.webflow.com/5f7081c044fb7b3321ac260e/5fedaca4acad015c2de7b6a1_30_launchpad.png" alt="Mac App Store" height="22" width="22">&nbsp; to find the App Store on your system. Once you open the app, a search box is located in the upper left corner. After entering your query key, the matching applications will appear. Many of them are free. Then, click the <span style="background-color:#f2f2f2; color:blue;">&nbsp;get&nbsp;</span> button and then the <span style="background-color:green; color:white;">&nbsp;install&nbsp;</span> button. The newly installed program will appear in the Applications folder, easily accessible via the menu on the left side of the *Finder*. The latter is a graphical interface for browsing the disk contents.
+The **App Store** is an in-built store platform available on your MacBook Pro that allows you to browse and install the software. The App Store shortcut &nbsp;<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS61Gy0FdwGsIx-u4Zu50BPt9ZxbFmsAbRNFApRrs1-zxoQnpAj6VnvXJ3iY3trykjn3Uc&usqp=CAU" alt="Mac App Store" height="22" width="22" class="inline mb-0 mt-0">&nbsp; is usually visible on your Dock (by default, it is a horizontal menu with icons of pre-installed apps). You can also easily use *Finder* &nbsp;<img src="https://images.macrumors.com/t/5BiCx6nBBb0fGUFWfLHjqaD1zFk=/1200x1200/smart/article-new/2018/02/macos-finder-icon.jpg" alt="Mac App Store" height="22" width="22" class="inline mb-0 mt-0">&nbsp; or *Launchpad* &nbsp;<img src="https://uploads-ssl.webflow.com/5f7081c044fb7b3321ac260e/5fedaca4acad015c2de7b6a1_30_launchpad.png" alt="Mac App Store" height="32" width="32" class="inline mb-0 mt-0">&nbsp; to find the App Store on your system. Once you open the app, a search box is located in the upper left corner. After entering your query key, the matching applications will appear. Many of them are free. Then, click the <span style="background-color:#f2f2f2; color:blue;">&nbsp;get&nbsp;</span> button and then the <span style="background-color:green; color:white;">&nbsp;install&nbsp;</span> button. The newly installed program will appear in the Applications folder, easily accessible via the menu on the left side of the *Finder*. The latter is a graphical interface for browsing the disk contents.
 
 ### Installation with Dialog Box
 

@@ -17,32 +17,30 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Text Files editors in the Terminal
 
-| command | function | syntax/example usage |
-|--|--|--|
-|`nano`	|edit file	|`nano` <span class="c-bad">FILENAME</span>|
-|`vim` | edit a file | `vim` <span class="c-bad">FILENAME</span>
+| command | function    | syntax/example usage                       |
+|---------|-------------|--------------------------------------------|
+|`nano`   | edit file   | `nano` <span class="c-bad">FILENAME</span> |
+|`vim`    | edit a file | `vim` <span class="c-bad">FILENAME</span>  |
 
 ### `nano` -- Text editor more like a GUI
 
 Nano opens up and will feel like a typical text editor you are familiar with.  Arrow keys can be used navigate the text. Below are some additional shortcuts.
 
-|NANO SHORTCUTS| functionality |
-|--|--|
-|`ctrl+o`	|save file|
-|`ctrl+x`	|close file|
-|`alt+/`	|go to end of the file|
-|`ctrl+a`	|go to start of the line|
-|`ctrl+e`	|go to end of the line|
-|`ctrl+c`	|show line number|
-|`ctrl+_`	|go to line number |
-|`ctrl+w`	|find matching word|
-|`alt+w`	|find next match|
-|`ctrl+\`	|find and replace|
+|NANO SHORTCUTS | functionality         |
+|---------------|-----------------------|
+|`ctrl+o`       |save file              |
+|`ctrl+x`       |close file             |
+|`alt+/`        |go to end of the file  |
+|`ctrl+a`       |go to start of the line|
+|`ctrl+e`       |go to end of the line  |
+|`ctrl+c`       |show line number       |
+|`ctrl+_`       |go to line number      |
+|`ctrl+w`       |find matching word     |
+|`alt+w`        |find next match        |
+|`ctrl+\`       |find and replace       |
 
 ## <button class="btn exercise"></button>
 
@@ -74,11 +72,11 @@ Paste your text and then hit `ctr x` press `y` for yes to save and hit `enter`, 
 
 `vim` is another text editor that when you are more comfortable with the unix command line, it will be worth your time to learn.  Many first time Unix users type in `vim` to enter the editor and get stuck in the editor as it is less intuitive than nano.  I will not go into great detail in this introductory tutorial but want to provide you with resources to explore on your own. There is a command line like feature in this editor that a user can use to execute very powerful text editing functions.
 
-|Vim | Very Basics Usage|
-| -- | -- |
-|esc| Hitting escape will take you back to the original state when you opened vim.|
-|i| insert mode: In this mode it is possible to add/edit the text |
-|esc :wq| hitting escape then typing `:` `w` `q` will write(save) the file and quit|
+|Vim      | Very Basics Usage|
+|-------- |------------------|
+|`esc`    | Hitting escape will take you back to the original state when you opened vim.|
+|`i`      | insert mode: In this mode it is possible to add/edit the text               |
+|`esc :wq`| hitting escape then typing `:` `w` `q` will write(save) the file and quit   |
 
 Copying and pasting work like other editors as long as you are in the insert mode.
 
@@ -175,8 +173,6 @@ color green "[ST]"
 The screenshot for the above format:
 
 ![clustalw alignment format]({{ images_path }}/nanorc_alignment.png)
-
-
 
 
 ## Using BioSyntax (for vim and other tools)

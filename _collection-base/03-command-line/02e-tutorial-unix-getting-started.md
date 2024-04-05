@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -62,7 +60,7 @@ ssh (SSH client) is a program for logging into a remote machine and for
 
 ### On a Mac (OS)
 
-1. Use the Finder ![]({{ images_path }}/finder_magnifier.png) and search for and open the Terminal program ![]({{ images_path }}/terminal.png).
+1. Use the Finder <img class="inline mb-0 mt-0" src="{{ images_path }}/finder_magnifier.png"> and search for and open the Terminal program <img class="inline mb-0 mt-0" src="{{ images_path }}/terminal.png">.
 2. Type ```ssh username@hostname```
   * Example1:  ```ssh andrew.severin@login.scinet.science```
   * Example2: ```ssh severin@bridges.psc.edu```
@@ -135,17 +133,13 @@ alias grep='grep --color=auto'
 clear
 ```
 
-
-|| ||
-|--|--|--|
-| command | function | syntax/example usage |
-|`mkdir`	|make directory	|`mkdir` <span class="c-bad">DIRECTORY</span>|
-|`pwd`	        |print working directory	|`pwd`|
-|`cd`           |change directory	|`cd` ~ or `cd` 		#home directory|
-| | 			|`cd` .. #previous (parent directory)|
-|`ls` 	        |list contents	|`ls` <span class="c-bad">[OPTIONS] DIRECTORY</span>|
-
-
+| command | function                | syntax/example usage                              |
+|---------|-------------------------|---------------------------------------------------|
+|`mkdir`  | make directory          |`mkdir` <span class="c-bad">DIRECTORY</span>       |
+|`pwd`    | print working directory |`pwd`                                              |
+|`cd`     | change directory        |`cd` ~ or `cd` #home directory                     |
+|         |                         |`cd` .. #previous (parent directory)               |
+|`ls`     | list contents           |`ls` <span class="c-bad">[OPTIONS] DIRECTORY</span>|
 
 This section will introduce you to some basic file/directory navigation
 
@@ -232,7 +226,6 @@ pwd
 You can type in first few letters of the directory name and then press <button class="btn">tab</button> to auto complete rest of the name (especially useful when the file/directory name is long). This only works when there are unique matches for the starting letters you have typed. If there is more than one matching files/directories, pressing <button class="btn">tab</button> twice will list all the matching names.
 </div>
 
----
 
 # File creation and editing
 
@@ -316,7 +309,6 @@ Copying and pasting work like other editors as long as you are in the insert mod
 
 
 #  Viewing file contents
----
 
 Easy to remember these commands using this sentence.
 
@@ -387,7 +379,6 @@ less numSeq.txt
 |`d` or `space bar`| down one screen|
 |`g` <span class="c-bad">NUM</span>| go to line NUM|
 
----
 
 # Renaming, copying and deleting files and directories
 
@@ -401,7 +392,6 @@ File/Directory operations
 |`rm`	|remove file(s)	|`rm` <span class="c-bad">FILE</span>|
 |`cp`|copy files/directories	|`cp `<span class="c-bad">SOURCE DESTINATION</span>|
 |`mv`	|move files/directories	|`mv` <span class="c-bad">SOURCE DESTINATION</span>|
-
 
 
 ## `touch` command
@@ -598,7 +588,6 @@ ls -l Letters_copy
 
 
 # Counting, Sorting and Redirecting Output
----
 
 Up to this point we have learned individual commands that give you roughly the same kind of ability as you would using your mouse in in IOS or Windows operating systems.  From this point forward however, you will start to understand the power of being able to combine commands on the command line to execute more complex tasks and save time.
 
@@ -802,8 +791,9 @@ cat myFirstfile.txt | tr ' ' '\n' | sort | uniq -c | sort -n | tail -n 4
 ```
 It is through this method that a long Unix 'one-liner' can be created. By looking at the standard output and seeing what each command does you can tweek each command using parameters until you get the desired output.
 
+
 # Find and Replace
----
+
 
 | | | |
 |--|--|--|
@@ -901,8 +891,9 @@ or we can edit the file inplace using the `-i`, meaning the change will take eff
 sed -i 's/galaxies/universes/g' myFirstFile.txt
 ```
 
+
 # Downloading and transferring data
----
+
 
 | | | |
 |--|--|--|

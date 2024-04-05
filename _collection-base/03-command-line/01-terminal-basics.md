@@ -17,7 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
 
 # What is a terminal?
 
@@ -47,7 +46,7 @@ Follow these steps to display the terminal window:
 
 In macOS you can start a terminal session by clicking on the black square icon present in the Dock bar. If the shortcut is not there by default, you can search for *'Terminal'* or '*iTerm'* in the Finder.
 
-1. Use the Finder ![]({{ images_path }}/finder_magnifier.png) and search for and open the Terminal program ![]({{ images_path }}/terminal.png).
+1. Use the Finder <img class="inline mb-0 mt-0" src="{{ images_path }}/finder_magnifier.png"> and search for and open the Terminal program <img class="inline mb-0 mt-0" src="{{ images_path }}/terminal.png">.
 
 ![macOS Terminal]({{ images_path }}/terminalMac.png)
 
@@ -111,8 +110,8 @@ That is useful when you remember only a few first letters of a less common comma
 **(2)** In case of more matching options, you will hear a beep, but nothing will change on the command line. That means you should press the `tab` one more time. If there are few possibilities, let's say less than 10, all of them will be displayed on the screen for you to use the hints. You just need to type enough letters to make your searched command unique among the others. Then auto-completion will work with the next pressing of a `tab`. <br>
 **(3)** However, if there are many more possible command choices, you will be asked if you want to show all possible options. Once you find the desired command, you can enter it manually or select it with the mouse, then copy and paste it into the command line.
 
-<p align="center"><img width="800" src="{{ images_path }}/terminal_autocompletion.gif"></p>
-<p align="center">^ <i>on macOS, use <b>return</b> instead of arrows keys to browse the preview of possibilities</i></p>
+<img width="800" src="{{ images_path }}/terminal_autocompletion.gif">
+<p class="footnote center-h mt-">^ on macOS, use <code class="code-inline">return</code> instead of arrow keys to browse the preview of possibilities</p>
 
 ## Command history
 
@@ -124,11 +123,11 @@ To display all previously used commands, type `history` command on your terminal
 history
 ```
 
-<p align="center"><img width="800" src="{{ images_path }}/terminal_history.png"></p>
+<img width="800" src="{{ images_path }}/terminal_history.png">
 
 The history can be browsed directly in the terminal window with an upper-arrow key `↑` following the direction of older commands and a down-arrow key `↓` to return to more recent ones. Also, you can effortlessly search in history by keyword after pressing `CTRL+R` on your keyboard. That facilitates getting quick a syntax used far in the past if only you know the unique fragment of it. When the filtrated batch of commands is more than one in size, you can again use arrow keys to select a desired one.
 
-<p align="center"><img width="800" src="{{ images_path }}/terminal_history.gif"></p>
+<img width="800" src="{{ images_path }}/terminal_history.gif">
 
 As you noticed, the `history` command returns the text output on the screen. Thus, you can further parse it to filtrate the required information. Since the history output is printed as a single command per line, it is easy to `grep` by keyword or limit the display to *n* last results with the `tail -n` command. The `uniq` allows you to remove redundant hits.
 

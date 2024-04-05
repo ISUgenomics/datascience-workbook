@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -60,8 +58,8 @@ Each operating system has its own set of features and functions and is designed 
 | [Manjaro](https://sourceforge.net/projects/manjarolinux/files/) | [Zorin](http://zorin-os.com/free.html) | [Kubuntu](https://www.kubuntu.org/getkubuntu/) | [Xubuntu](https://xubuntu.org/getxubuntu/) | [Lubuntu](https://lubuntu.me/downloads/) |
 | [Slackware](http://www.slackware.com/getslack/) | [Slackel](https://sourceforge.net/projects/slackel/files/) | [Solus](https://getsol.us/download/) | [Puppy](https://puppylinux-woof-ce.github.io/) | [PCLinuxOS](http://pclinuxos.com/?page_id=10) |
 
-![Linux distributions]({{ images_path }}/linux_distributions.png)<br>
-*Figure shows logos of the most popular Linux distributions, all based on the Unix command-line interface.*
+![Linux distributions]({{ images_path }}/linux_distributions.png)
+<p class="footnote center-h">Figure shows logos of the most popular Linux distributions, all based on the Unix command-line interface.</p>
 
 
 ## When to reinstall the OS?
@@ -111,8 +109,11 @@ Installing any operating system (OS) on a computer is a process that typically i
 
 To dual-boot multiple operating systems on a single computer, you will **need to partition the hard drive** and install each operating system on a separate partition. During the boot process, you will be presented with a menu that allows you to choose which operating system you want to boot into.
 
-![Multi-booting]({{ images_path }}/multi-booting.png)<br>
-*To select an operating system restart your computer and wait for the boot menu to appear. The boot menu is usually displayed after the computer's BIOS or UEFI has completed its initial checks and is ready to boot the operating system. Then, use the arrow keys or the mouse to select the operating system you want to boot into. Press Enter or click the "Boot" button to boot into the selected operating system.*
+![Multi-booting]({{ images_path }}/multi-booting.png)
+
+<div class="protip" markdown="1">
+To select an operating system restart your computer and wait for the boot menu to appear. The boot menu is usually displayed after the computer's BIOS or UEFI has completed its initial checks and is ready to boot the operating system. Then, use the arrow keys or the mouse to select the operating system you want to boot into. Press Enter or click the "Boot" button to boot into the selected operating system.
+</div>
 
 There are a few things to consider when multi-booting a few operating systems on a single computer. You will need to:
 
