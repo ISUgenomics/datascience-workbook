@@ -48,13 +48,23 @@ pre.bc-warning, pre.bc-protip, pre.bc-note, pre.bc-example, pre.bc-exercise,
 pre.bc-code, pre.bc-data, pre.bc-template, pre.bc-output {padding: 0.4em 0.8em; font-size: 0.8em;}
 
 /* resource wide*/
+h1:not(#page-title)::before {
+  content: "";
+  display: block;
+  border-top: 1px dashed #ddd;
+  width: 85%;
+  margin: 1.2em auto;
+}
+
 .inline {display: inline !important; max-width: 100%;}
 .flex {display: inline-flex; margin-right: 0.6em;}
 .flex h3 {margin-block-start: 0.5em;}
 .row {display: flex;}
 .col-6 {width: 50%;}
+.no-border {border: none;}
 
 .pa-s {padding: 0.1em 0.2em;}
+.pl-0 {padding-left:0;}
 .pr-2 {padding-right: 2em;}
 .pl-2 {padding-left: 2em;}
 
@@ -69,6 +79,8 @@ pre.bc-code, pre.bc-data, pre.bc-template, pre.bc-output {padding: 0.4em 0.8em; 
 .italic {font-style: italic !important;}
 .bold {font-weight: bold !important;}
 .font-1 {font-size: 1em !important;}
+.font-1r {font-size: 1rem !important;}
+.center-h {text-align: center !important;}
 
 .btn {
   padding: 0.4em 0.5em !important;
@@ -144,7 +156,8 @@ div.highlighter-rouge {margin-bottom: 0.8em;}
   border: none !important;
   font-size: 0.6em;
 }
-.toc .btn {font-size: 0.9em !important;}
+
+
 
 
 /* Code settings */
@@ -358,3 +371,28 @@ details {
 }
 details[open] > summary {margin-bottom: 0.3em;}
 details[open] > summary::before {transform: rotate(90deg);}
+summary::-webkit-details-marker {display: none;}   /* important in Safari */
+
+
+/* custom <table> */
+
+table {
+  margin: 0.5em 0 1rem 0;
+}
+
+th, thead {
+  background-color: var(--bc-code);
+  border-bottom: 2px solid var(--c-gray);
+}
+
+td {
+  border-bottom: 1px solid var(--c-gray);
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5em;
+  margin-bottom: 1.2em;
+}
