@@ -27,7 +27,6 @@ This document is designed to empower your content creation with a suite of styli
 | **Interactive Elements**       | To make learning more engaging, some templates include interactive elements. | *These range from hover effects to complex interactions, improving user experience with better organized, on-click content presentation.* |
 | **Accessibility Features**     | Guidelines are provided to ensure content accessibility for everyone. | *This ensures that your content is not only beautiful but also accessible to users with diverse needs.* |
 
----
 
 # text (font) colors
 
@@ -194,8 +193,6 @@ Use `c-alert` color class for <u>temporary alerts</u> with straightforward actio
 </div>
 
 
----
-
 # background colors
 
 
@@ -315,9 +312,6 @@ def add_numbers(x, y):
 \* Ensure that your `text` begins on the same line as the opening `<code>` tag! Don't forget to add the `“code-block”` class to include a copy button.
 </div>
 
-
-
----
 
 # color-coded boxes
 
@@ -600,8 +594,6 @@ The Challenger disaster is a tragic example where ignoring potential risks had c
 </div>
 
 
----
-
 # pros & cons marks: <em class="pros"></em><em class="cons"></em>
 
 Pros and cons lists are crucial in tutorials as they provide a balanced overview, **helping readers make informed decisions** by clearly outlining the advantages and disadvantages of a particular tool, method, or concept. To facilitate this, built-in **pros** <em class="pros"></em> and **cons** <em class="cons"></em> `classes` are provided, supporting two main usage cases:
@@ -640,7 +632,6 @@ Applying a class within `<p class="pros"> text </p>` or `<p class="cons"> text <
 <p class="cons"> You can't install custom libraries. </p>
 </div>
 
----
 
 # custom spacing
 
@@ -652,7 +643,7 @@ Occasionally, customizing the spacing between built-in components can be benefic
 |---------------------|----------------------------------------|-----------------------------------|
 | `<br>`              | line break                             | works with both Markdown and HTML syntax; for a full-size empty line, simply add it twice: <br><br> |
 | `<base class="mb">` | line break with 0.5 line space below   | useful if you want to add some space between paragraphs or html components |
-| `<base class="mb">` | line break with 0.8 line space above   | useful if you want to add some space between paragraphs or html components |
+| `<base class="mt">` | line break with 0.8 line space above   | useful if you want to add some space between paragraphs or html components |
 
 
 <br>**MARKDOWN LIMITATIONS**
@@ -837,8 +828,6 @@ Color-coded boxes feature a `0.5 line` margin on **top** and a `1.5 line` margin
 </div> <base class="mb">
 
 
----
-
 # code
 
 Embedding code snippets in tutorials provides practical examples, enhancing understanding and facilitating hands-on learning. <base class="mb">
@@ -958,9 +947,6 @@ for i in 123; do
 </div>
 </div> <base class="mb">
 
-
-
----
 
 # collapsible section
 
@@ -1100,4 +1086,135 @@ This platform allows for* **scalable computing resources** *to handle large geno
 
 *The project team uses a cloud-based bioinformatics platform (Galaxy) to streamline data analysis. This platform allows for* **scalable computing resources** *to handle large genomic datasets efficiently and* **includes built-in tools** *for data visualization, which simplifies the monitoring of analysis progress and outcomes.*
 </details>
+</div>
+
+
+# table
+
+Tables can be useful to organize content because they provide a structured format for displaying data in rows and columns, making it easier to read, compare, and understand. <br>
+Example applications:
+- Detail parameters or arguments for functions or commands, including name, type, description, and default values if applicable.
+- Compare features, options, or configurations of different tools or software versions.
+- Break down multi-step processes into a structured format, with each row detailing a specific step, its description, and possibly the expected outcome.
+- Organize common problems and their solutions in a table, allowing users to quickly scan and find fixes to issues they might encounter.
+- Summarize the advantages and disadvantages of different methodologies, tools, or technologies, providing a clear comparison to help readers weigh their options.
+- Incorporate rows that pair images with descriptive text, useful for tutorials involving GUI applications, demonstrating workflows, or highlighting before-and-after scenarios.
+
+You can create tables using either Markdown syntax or the HTML `<table>` tag, both of which are styled to provide a consistent rendering effect by default.
+
+* **Markdown table** <br>
+Markdown tables are simpler and more human-readable in raw code, offering an intuitive way to structure data. They automatically interpret other Markdown syntax elements, such as `*text*` for italics or <code>`code`</code> for inline code.
+
+<div class="row level-1">
+<div style="width:50%;" markdown="1">
+```markdown
+| Shortcut      |        Command        |
+|---------------|-----------------------|
+|`Ctrl+Shift+`  | New Terminal          |
+|`Ctrl+Shift+v` | Open Markdown preview |
+|`Ctrl+s`       | File: Save            |
+```
+</div>
+<div class="pl-2" style="font-size: 0.8em; width: 45%" markdown="1">
+<p class="italic c-header mb-0">see the preview</p>
+
+| Shortcut      |        Command        |
+|---------------|-----------------------|
+|`Ctrl+Shift+`  | New Terminal          |
+|`Ctrl+Shift+v` | Open Markdown preview |
+|`Ctrl+s`       | File: Save            |
+
+</div>
+</div>
+
+
+* **HTML table** <br>
+HTML tables require the use of various HTML tags (each of which needs careful closing), such as:
+<table class="level-1 mt-" markdown="1">
+  <tr>
+    <td><code>&lt;table&gt;</code> - for the table itself</td>
+    <td><code>&lt;tr&gt;</code> - for a new row</td>
+    <td><code>&lt;th&gt;</code> - for a header cell</td>
+    <td><code>&lt;td&gt;</code> - for a regular cell</td>
+  </tr>
+</table>
+
+<div class="row level-1">
+<div style="width:50%;" markdown="1">
+```html
+<table>
+  <tr> <th>Shortcut</th> <th>Command</th> </tr>
+  <tr> <td><code>Ctrl+Shift+</code></td> <td>New Terminal</td> </tr>
+  <tr> <td><code>Ctrl+s</code></td> <td>File: Save</td> </tr>
+  <tr> <td><code>F5</code></td> <td>Start Debugging</td> </tr>
+</table>
+```
+</div>
+<div class="pl-2" style="font-size: 0.8em; width: 45%" markdown="1">
+<p class="italic c-header mb-0">see the preview</p>
+<table>
+  <tr><th>Shortcut</th><th>Command</th></tr>
+  <tr><td><code>Ctrl+Shift+</code></td><td>New Terminal</td></tr>
+  <tr><td><code>Ctrl+s</code></td><td>File: Save</td></tr>
+  <tr><td><code>F5</code></td><td>Start Debugging</td></tr>
+</table>
+</div>
+</div>
+
+<div class="level-1" markdown="1">
+To apply Markdown syntax within an HTML table, like using `*text*` for italics or <code>`ticks`</code> for inline code, you must add the **markdown="1"** attribute to the internal `<p>` tag <br>*(but not directly to the table-related tags)*.
+
+<div class="row">
+<div style="width:50%;" markdown="1">
+```html
+<table>
+  <tr> <th>Shortcut</th> <th>Command</th> </tr>
+  <tr> <td><p markdown="1">`Ctrl+Shift+`</p></td> <td>New Terminal</td> </tr>
+  <tr> <td><p markdown="1">`Ctrl+s`</p></td> <td>File: Save</td> </tr>
+</table>
+```
+</div>
+<div class="pl-2" style="font-size: 0.8em; width: 45%" markdown="1">
+<p class="italic c-header mb-0">see the preview</p>
+<table>
+  <tr> <th>Shortcut</th> <th>Command</th> </tr>
+  <tr> <td><p markdown="1">`Ctrl+Shift+`</p></td> <td>New Terminal</td> </tr>
+  <tr> <td><p markdown="1">`Ctrl+s`</p></td> <td>File: Save</td> </tr>
+</table>
+</div>
+</div>
+
+
+While HTML syntax makes the raw code less readable due to the verbosity and necessity of closing tags, these tables offer **more flexibility in construction and styling**. You can opt for a more tailored presentation of data, for instance:
+<ul class="mb">
+  <li> skipping the header row or </li>
+  <li> customize the styling by:</li>
+  <ul> <li> removing boundary lines</li>
+  <li> adding more or less padding</li>
+  <li> coloring cell backgrounds</li>
+  <li> aligning an image with text horizontally</li></ul>
+</ul>
+
+<div class="row">
+<div style="width:50%;" markdown="1">
+```html
+<table>
+  <tr>
+    <td class="pl-0 font-1r no-border bc-example">This cell has 0 left padding, regular font size and no bottom border. The next cell in this row inludes an image.</td>
+    <td class="no-border" width=110><img src="/04-devel-environment/assets/images/VSC_logo.png"></td>
+  </tr>
+</table>
+```
+</div>
+<div class="pl-2" style="font-size: 0.8em; width: 45%" markdown="1">
+<p class="italic c-header mb-0">see the preview</p>
+<table>
+  <tr>
+    <td class="pl-0 font-1r no-border bc-example">This cell has 0 left padding, regular font size and no bottom border. The next cell in this row inludes an image.</td>
+    <td class="no-border" width=110><img src="/04-devel-environment/assets/images/VSC_logo.png"></td>
+  </tr>
+</table>
+</div>
+</div>
+
 </div>
