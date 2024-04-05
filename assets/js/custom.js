@@ -160,13 +160,47 @@ function copyCodeButton() {
 
     btn.onclick = function() {
       navigator.clipboard.writeText(codeBlock.innerText).then(function() {
-        showNotification('Code block copied to clipboard!', codeBlock.parentNode);
+        showNotification('Content copied to clipboard!', codeBlock.parentNode);
       }, function(err) {
         console.error('Could not copy text: ', err);
       });
     };
 
   });
+}
+
+// A set of functions to download (as a file) text content of the copyable box
+function downloadContent() {
+    document.querySelectorAll('.details-save').forEach(button => {
+        button.addEventListener('click', function(event) {
+            event.stopPropagation();
+            const codeBlock = this.closest('details').querySelector('pre code');
+            if (codeBlock) {
+                const textToCopy = codeBlock.textContent;
+                console.log(textToCopy);
+                download(textToCopy);
+            }
+        });
+    });
+};
+
+function download(content) {
+    const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    const stamp = timestamp();
+    link.href = url;
+    link.download = `DSW_download_${stamp}.txt`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+}
+
+function timestamp() {
+    const now = new Date();
+    const timestamp = now.toISOString().replace(/:\s*/g, "-").replace(/\.\d+/, "").replace("T", "_");
+    return timestamp;
 }
 
 
@@ -197,8 +231,9 @@ function addTextToBefore() {
 document.addEventListener('DOMContentLoaded', function() {
   moveToc();
   adjustWrapperLinks();                                                         // reformatting target-links
-  wrapCodeBlocks()
+  wrapCodeBlocks();
   copyCodeButton();
+  downloadContent();
   addTextToBefore();
   getParentColor();
 
