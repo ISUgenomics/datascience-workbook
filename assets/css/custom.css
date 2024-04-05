@@ -32,15 +32,15 @@
 .c-exercise {color: var(--c-exercise) !important;}
 
 /* pre-defined bg colors, including custom <details> */
-.bc-warning {--bg-color: var(--bc-warning); background-color: var(--bc-warning); color: var(--c-boxdark);}
-.bc-protip {--bg-color: var(--bc-protip); background-color: var(--bc-protip); color: var(--c-boxdark);}
-.bc-note {--bg-color: var(--bc-note); background-color: var(--bc-note); color: var(--c-boxdark);}
-.bc-example {--bg-color: var(--bc-example); background-color: var(--bc-example); color: var(--c-boxdark);}
-.bc-exercise {--bg-color: var(--bc-exercise); background-color: var(--bc-exercise); color: var(--c-boxdark);}
-.bc-code {--bg-color: var(--bc-code); background-color: var(--bc-code); color: var(--c-boxdark);}
-.bc-data {--bg-color: var(--bc-data); background-color: var(--bc-data); color: var(--c-boxdark);}
-.bc-template {--bg-color: var(--bc-template); background-color: var(--bc-template); color: var(--c-boxdark);}
-.bc-output {--bg-color: var(--c-boxdark); background-color: var(--c-boxdark); color: var(--bc-data);}
+.bc-warning {--bg-color: var(--bc-warning); background-color: var(--bc-warning) !important; color: var(--c-boxdark);}
+.bc-protip {--bg-color: var(--bc-protip); background-color: var(--bc-protip) !important; color: var(--c-boxdark);}
+.bc-note {--bg-color: var(--bc-note); background-color: var(--bc-note) !important; color: var(--c-boxdark);}
+.bc-example {--bg-color: var(--bc-example); background-color: var(--bc-example) !important; color: var(--c-boxdark);}
+.bc-exercise {--bg-color: var(--bc-exercise); background-color: var(--bc-exercise) !important; color: var(--c-boxdark);}
+.bc-code {--bg-color: var(--bc-code); background-color: var(--bc-code) !important; color: var(--c-boxdark);}
+.bc-data {--bg-color: var(--bc-data); background-color: var(--bc-data) !important; color: var(--c-boxdark);}
+.bc-template {--bg-color: var(--bc-template); background-color: var(--bc-template) !important; color: var(--c-boxdark);}
+.bc-output {--bg-color: var(--c-boxdark); background-color: var(--c-boxdark) !important; color: var(--bc-data);}
 
 div.bc-warning, div.bc-protip, div.bc-note, div.bc-example, div.bc-exercise,
 div.bc-code, div.bc-data, div.bc-template, div.bc-output {padding: 0.4em 0.8em;}
@@ -86,7 +86,10 @@ h1:not(#page-title)::before {
   padding: 0.4em 0.5em !important;
   border: 1px solid var(--b-darkgray) !important;
   margin: 0.05em !important;
+  background-color: var(--bc-code);
+  color: var(--c-boxdark);
 }
+
 
 .pros::before, .cons::before {
   font-size: 1.1em;
@@ -110,6 +113,7 @@ p.pros, p.cons {margin-bottom: 0;}
   font-weight: 250;
   font-size: 0.8em !important;
   padding: 0 1em !important;
+  margin-bottom: 1.2em !important;
 }
 
 .warning {background-color: var(--bc-warning);}
@@ -384,7 +388,7 @@ summary::after {
   content: "";
   flex-grow: 1;
   background-color: var(--parent-color, white);
-  margin: -0.15em -2.0em -0.1em 2em;
+  margin: -0.15em -1.3em -0.1em 2em;
 }
 details {
   margin-bottom: 0.3em;
@@ -394,6 +398,11 @@ details[open] > summary {margin-bottom: 0.3em;}
 details[open] > summary::before {transform: rotate(90deg);}
 summary::-webkit-details-marker {display: none;}   /* important in Safari */
 
+.details-save {
+  margin-left: 1em !important;
+  margin-top: -0.1em !important;
+}
+.details-save::before {content: "Download"}
 
 /* custom <table> */
 
