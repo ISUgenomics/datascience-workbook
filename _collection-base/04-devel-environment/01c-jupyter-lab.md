@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -46,13 +44,13 @@ That will start a server on **localhost** and automatically open the Jupyter int
 
 The JupyterLab interface is built up of two main panels: a **file system browser** on the left-hand side of the GUI window, and **developer space** on the right-hand side. By default, on start, you will see the **Launcher** mode in the developer's panel. There you will find several icons with shortcuts that open a new instance of one of several most popular applications, such as a **multifunctional notebook**, a **console** in the programming language of your choice, a **terminal** emulator, a **raw text** file, a rich text file (**markdown**), or a **script file**. Clicking on the icon converts the launcher to the selected app. Many applications can be opened at the same time, and each of them will be added in a separate tab in the same browser window.<br>
 
-<p align="center"><img width="800" src="{{ images_path }}/04_jupyter_launching.gif"></p>
+<img width="800" src="{{ images_path }}/04_jupyter_launching.gif">
 
 ### - Keep multiple apps open
 
 In the top menu bar select `File →  New Launcher` to add a new tab with shortcuts for the apps. You can also select a particular type of application directly from the menu by following the options `File →  New  →  {Console, Notebook, Terminal, Text File, Markdown File, Python File}`. For `Console`, you can further customize the **kernel** by selecting options available in your environment *(see the animated image above)*. Selecting **Notebook** will open an interactive notebook in a new tab in your Jupyter web-based GUI where you can execute your code cells, create documentation in markdown cells, and visualize graphically your results.
 
-<p align="center"><img width="800" src="{{ images_path }}/04_jupyter_app_shortcuts.gif"></p>
+<img width="800" src="{{ images_path }}/04_jupyter_app_shortcuts.gif">
 
 <div class="warning" markdown="1">
 *Note that the terminal window in which the local server was started must remain active (can be minimized) to make the GUI in the web browser work.*
@@ -60,7 +58,7 @@ In the top menu bar select `File →  New Launcher` to add a new tab with shortc
 
 <div class="protip" markdown="1">
 *To quickly* ***add a new tab with Launcher view***, *click the big blue plus button at the top left of the GUI.* <br>
-<img width="300" src="{{ images_path }}/04_jupyter_launcher_shortcut.png">
+<img width="300" class="mb-0" src="{{ images_path }}/04_jupyter_launcher_shortcut.png">
 </div>
 
 
@@ -95,7 +93,7 @@ Browse file system to enter your workdir. By default, JupterLab will open a file
 
 6. **Open a file** selected from the file system by double-clicking on it. A new tab in the developers panel will appear where you will be able to further edit your file.
 
-<p align="center"><img width="800" src="{{ images_path }}/04_jupyter_file_browser.gif"></p>
+<img width="800" src="{{ images_path }}/04_jupyter_file_browser.gif">
 
 
 ### - Save the progress
@@ -114,14 +112,14 @@ C. `File →  Save and Export Notebook As`, if you want to convert the current c
 
 ![Jupyter_files_menager]({{ images_path }}/04_jupyter_save.png)
 
-<p align="center"><i>^ Note that the available saving options may differ slightly for different file formats.</i></p>
+<p class="footnote center-h mt-">^ Note that the available saving options may differ slightly for different file formats.</p>
 
 
 ### - Terminate JupyterLab
 
 To terminate the Jupyter interface, first, save the changes with `File →  Save File`, then close the tab in the browser `⤬`, to finally terminate the server with `CTRL+C` in the terminal.
 
-<p align="center"><img width="800" src="{{ images_path }}/04_jupyter_terminate.gif"></p>
+<img width="800" src="{{ images_path }}/04_jupyter_terminate.gif">
 
 
 # Jupyter Apps

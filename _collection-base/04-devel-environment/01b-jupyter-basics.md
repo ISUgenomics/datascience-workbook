@@ -17,26 +17,22 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
-
-# Introduction
 
 # **JupyterLab** Development Environment <br>*interactive web-based computing interface*
 
-![terminal colors]({{ images_path }}/04_jupyter_logo.png)<br>
+![terminal colors]({{ images_path }}/04_jupyter_logo.png)
 
 ## Introduction to Project Jupyter
 
-Jupyter (*[https://jupyter.org](https://jupyter.org)*) is an **open-source** project started in  2014 to support interactive scientific computing. Now it also facilitates easy sharing of the visual conclusions of the analytical results.
-<br>The Jupyter interface has a form of a **web application**, providing the Graphical User Interface (GUI) via localhost in any web browser. It is also universal in terms of preferred programming languages, including *Python, Java, R, Julia, Matlab, Octave, Scheme, Processing, and Scala,* which sum up to nearly 100 [kernels �](a "The kernel is a runtime environment that provides support for the selected programming language and its particular version."). <br>The entire computing pipeline, combining sections of:
+Jupyter (*[https://jupyter.org](https://jupyter.org)*) is an **open-source** project started in  2014 to support interactive scientific computing. It also simplifies the sharing of visual analytical outcomes. <base class="mb">
+The Jupyter interface has a form of a **web application**, providing the Graphical User Interface (GUI) via localhost in any web browser. It is also universal in terms of preferred programming languages, including *Python, Java, R, Julia, Matlab, Octave, Scheme, Processing, and Scala,* which sum up to nearly 100 kernels. <br>The entire computing pipeline, combining sections of:
 * executive code cells,
 * rich-text descriptions and comments,
 * and graphical visualizations of analytical conclusions,
 
 can all be saved into a **single notebook** file. This file also **caches the kernel** for the selected programming language and other settings. That makes the development environment **easily transferable** among various computing machines and contributors. Note that the Jupyter notebook format is recognized and **rendered by GitHub**, making it human-readable and thus greatly benefiting day-to-day usability.
 
-![terminal colors]({{ images_path }}/04_jupyter_cell_types.png)<br>
+![terminal colors]({{ images_path }}/04_jupyter_cell_types.png)
 
 **In a word, it is worth to start using Jupyter, especially at the stage of final parsing of results and data visualization, also interactive ones.**
 
@@ -52,11 +48,11 @@ The first two are mainly dedicated for individual usage, while [JupyterHub](http
 
 **Jupyter Notebook** is a simple interface intended for editing <u>a single document</u>. All other files (e.g., for input previews) will open in separate web browser tabs. This variant of the interface has limited capabilities to render certain data types (e.g., CSV) as human-readable. Still, it is a good starting point for beginners or users who occasionally review notebooks received from others.
 
-![terminal colors]({{ images_path }}/04_jupyter_notebook.png)<br>
+![terminal colors]({{ images_path }}/04_jupyter_notebook.png)
 
 **JupyterLab** is a more advanced interface providing some functionality of the integrated development environment (IDE). That includes the convenience of a built-in file system viewer and wide developer section, where the selected files open as separate sub-tabs or customized compartments, all in the same browser tab. The display of various file types (HTML, Markdown, CSV, etc.) is clearly improved. This distribution is well suited for developers and daily-based users, especially those working with analysis summaries and visualizations.
 
-![terminal colors]({{ images_path }}/04_jupyter_lab.png)<br>
+![terminal colors]({{ images_path }}/04_jupyter_lab.png)
 
 <div class="protip" markdown="1">
 *Note, that both Jupyter variants can coexist on the same computing machine, and the files generated on them are fully compatible.*
@@ -109,14 +105,14 @@ jupyter notebook
 
 That will open your Jupyter session in a web browser on **localhost** with a default URL: [http://localhost:8888/tree](http://localhost:8888/tree).
 
-<p align="center"><img width="800" src="{{ images_path }}/04_jupyter_notebook_launch.gif"></p>
+<img width="800" src="{{ images_path }}/04_jupyter_notebook_launch.gif">
 
 
 <div class="protip" markdown="1">
 *If you accidentally close a browser window with the active Jupyter interface to reopen it, manually copy-paste the URL displayed in the terminal into the new web browser instance.*
 </div>
 
-![terminal colors]({{ images_path }}/04_jupyter_reopen.png)<br>
+![terminal colors]({{ images_path }}/04_jupyter_reopen.png)
 
 
 # Jupyter via Open OnDemand
