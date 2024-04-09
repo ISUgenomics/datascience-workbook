@@ -18,7 +18,8 @@ tags: []
 {% include page-sourcing.html %}
 
 
-# **JupyterLab** Development Environment <br>*interactive web-based computing interface*
+# **JupyterLab** Development Environment
+<h2 class="mt-0"><i>interactive web-based computing interface</i></h2>
 
 ![terminal colors]({{ images_path }}/04_jupyter_logo.png)
 
@@ -130,13 +131,13 @@ Having that software on a cluster with interactive visual access through the OOD
 
 [SCINet](https://scinet.usda.gov) is a Scientific Computing Network combining high-performance computing ({% include target_link href=600 text="HPC" %}) infrastructure ({% include target_link href=612.2 text="Atlas cluster" %}, {% include target_link href=612.3 text="Ceres cluster" %}, {% include target_link href=612.4 text="Juno storage" %}), professional training, and improvement of collaborative network among USDA researchers. To access these resources you must be an ARS-related (or sponsored) scientist and apply for a **[SCINet account](https://scinet.usda.gov/about/signup)** in advance. Both clusters, Atlas and Ceres, currently have an OOD service in operation.
 
-**Jupyter on ATLAS**
+* **Jupyter on ATLAS**
 
 Access the **Atlas OOD login** web page at: [https://atlas-ood.hpc.msstate.edu/](https://atlas-ood.hpc.msstate.edu/ )
 
 Follow the Atlas Open OnDemand **Guide** at [hpc.msstate.edu](https://www.hpc.msstate.edu/computing/atlas/#ondemand)
 
-**Jupyter on Ceres**
+* **Jupyter on Ceres**
 
 Access the **Ceres OOD login** web page at: [http://ceres-ood.scinet.usda.gov/](http://ceres-ood.scinet.usda.gov/)
 

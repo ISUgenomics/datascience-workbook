@@ -20,15 +20,16 @@ tags: []
 
 ---
 
+### <button class="btn required"></button>
 
-<span style="color: #ff3870;font-weight: 500;">NOTE:</span> Please note that this tutorial requires the user to have a basic understanding of the options available in Jupyter. If you are not familiar with Jupyter, we recommend exploring other tutorials in section {% include target_link href=400 text="04. Development Environment" %} to get started:
+<div class="required before" data-before="" markdown="1">
+Please note that this tutorial requires the user to have a basic understanding of the options available in Jupyter. If you are not familiar with Jupyter, we recommend exploring other tutorials in section {% include target_link href=400 text="04. Development Environment" %} to get started:
+<base class="mb">
+&nbsp;<b class="prefix-2"></b> {% include target_link href=412 text="Jupyter: interactive web-based multi-kernel DE" %} <br>
+&emsp;<b class="prefix-3"></b> {% include target_link href=413 text="Getting started with JupyterLab"%} <br>
+&emsp;<b class="prefix-3"></b> {% include target_link href=414 text="Getting started with Jupyter Notebook on HPC systems"%}
+</div>
 
-* {% include target_link href=412 text="Jupyter: interactive web-based multi-kernel DE" %}
-  * {% include target_link href=413 text="Getting started with JupyterLab" level=1 %}
-  * {% include target_link href=414 text="Getting started with Jupyter Notebook on HPC systems" level=1 %}
-
-
----
 
 # Introduction
 
@@ -52,7 +53,7 @@ Notebooks consist of a series of cells, which can be either `code cells` or `mar
 Notebooks can be easily shared as a `.ipynb` file or hosted on online platforms (e.g., <a href="https://colab.research.google.com/" target="_blank">Google Colab  ⤴</a>), **allowing collaborators to access and modify the same document in real-time**, which streamlines collaboration and helps to reduce errors and redundancies.
 
 
-## *Online Notebook Platforms*
+## Online Notebook Platforms
 
 There are several online options to create a `.ipynb` notebook:
 
@@ -94,11 +95,14 @@ While online notebooks can be a convenient and accessible way to work with Pytho
 
 <em class="cons"></em> For **small Python scripts** or **large modular Python developments** a plain text file script `.py` or IDEs such as Visual Studio Code (VSC) or PyCharm are often a better choice than Jupyter, since they offer more advanced features, like debugging, refactoring, and testing, that are essential for professional development.
 
-<span style="color: #ff3870;font-weight: 500;">Learn more from the practical tutorials:</span>
+
+<div class="more" markdown="1">
+Learn more from the practical tutorials:
 * {% include target_link href=425 text="Text editors: create Python code in terminal text files" %}
 * {% include target_link href=427 text="PyCharm: IDE for professional Python developers" %}
+</div>
 
-<br><br>
+
 <em class="cons"></em> Online notebooks may not provide as much flexibility and customization as locally-installed versions of Jupyter. This can be a **limitation if you need to install specific libraries** or modify the environment in other ways.
 
 <em class="cons"></em> Depending on the complexity of your code and the amount of data you're working with, online notebooks **may be slower to execute** than a local installation of Python.
@@ -108,9 +112,7 @@ While online notebooks can be a convenient and accessible way to work with Pytho
 <em class="cons"></em> Some online notebook platforms **require a subscription or incur charges** for access to additional resources, which may be an issue for those working on a tight budget.
 
 
----
-
-# *try-jupyter* **online**
+# try-jupyter online
 
 The Jupyter Project offers an **online training platform** called <i>"Try Jupyter"</i> that allows users to **get started with Python projects in Jupyter** without having to install any software on their own computer.
 
@@ -231,63 +233,63 @@ ax.set(title="Some random data, created with JupyterLab!")
 plt.show()
 ```
 
-<details><summary><i><b>What the script does?</b></i></summary>
+<details class="l-frame" markdown="1"><summary class="c-header"><b><i>What the script does?</i></b></summary>
 
-<b>#1 Generate 100 random data points along 3 dimensions</b><br>
-The numpy libarary includes a random module. One of the functions provided by <b>numpy.random</b> is <i>randn()</i>. This function generates an array of random numbers that are drawn from a standard normal distribution. The arguments of the function determine the the shape of the generated array.
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+<b class="c-header">#1 Generate 100 random data points along 3 dimensions</b><br>
+The numpy libarary includes a random module. One of the functions provided by `numpy.random` is `randn()`. This function generates an array of random numbers drawn from a standard normal distribution. The arguments of the function determine the the shape of the generated array.
+```python
 x, y, scale = np.random.randn(3, 100)
-</code><br>
-<i>In this example we create a 2D array with 3 rows ('x', 'y', 'scale') and 100 columns containing random numbers. We split the array by row dimension into three separate objects. By organizing the data in this way, we can easily manipulate the points coordinates ('x' and 'y') and scale their size. </i>
-<br><br>
-<b>#2 Create a scatter plot</b><br>
+```
+*In this example we create a 2D array with 3 rows (x, y, scale) and 100 columns containing random numbers. We split the array by row dimension into three separate objects. By organizing the data this way, we can easily manipulate the point coordinates (x and y) and scale their size.*
+<base class="mt">
+<b class="c-header">#2 Create a scatter plot</b><br>
 Matplotlib library creates a figure that can contain one or more subplots within it.
-<div style="background: #dff5b3; padding: 15px;">
-<span style="font-weight:800;">NOTE:</span>
-<br><span style="font-style:italic;">Subplots are essentially smaller plots within a larger plot, which can be useful for visualizing multiple sets of data or for creating more complex visualizations.</span>
-</div><br>
-The plt.subplots() function returns two values: a figure object (fig) and an array of axes objects (ax).
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-fig, ax = plt.subplots()
-</code><br>
-The figure object represents the entire plot, while the axes objects represent the individual subplots within the plot. When no arguments are provided, a single subplot is created by applying the default settings <b>plt.subplots(nrows=1, ncols=1)</b>.
-<br><br>
-<b>#3 Add dataset to the scatterplot</b><br>
-<b>ax.scatter()</b> is a function in the Matplotlib library that is used to create a scatter plot. It takes in a set of x and y coordinates, along with some optional arguments, and plots them as individual points on a 2D plane. The basic syntax for ax.scatter() is as follows: <br>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-ax.scatter(x, y, s=None, c=None, marker=None, cmap=None, alpha=None)
-</code>
-<i>where:</i>
-<li><b>x</b> is a sequence of x coordinates for the points to be plotted</li>
-<li><b>y</b> is a sequence of y coordinates for the points to be plotted</li>
-<li><b>c</b> is the color of the markers</li>
-    <i>&emsp;This can be a single color, or a sequence of colors that correspond to each point in the plot.</i>
-<li><b>s</b> is the size of the markers (points) in the scatter plot</li>
-    <i>&emsp;This can be a scalar value, or a sequence of values that correspond to each point in the plot.</i>
-<li><b>marker</b> is the shape of the markers</li>
-    <i>&emsp;This can be a string specifying a built-in marker shape (e.g., 'o' for circles), or a custom marker object.</i>
-<li><b>cmap</b> is a colormap object that maps the "c" values to a range of colors</li>
-<li><b>alpha</b> is the transparency of the markers</li> <br>
-<i>In this example, we use arrays of random values to set XY coordinates of the points and determine numerical range mapped to the default colorscale. The size of the points is the scale array transformed to absolute values using np.abs() function and multiplied by 500 to provide intiger sizes in range from 1 to 500.</i>
-<br><br>
-<b>#4 Add labels and title</b><br>
-In Matplotlib, the <b>ax</b> object is a reference to the axis of a plot. It provides various functions that can be used to customize the scatterplot and other types of plots.<br><br>
-For a scatterplot created using the ax.scatter() function, some of the common functions that can be used to customize the plot include:
-<li><b>ax.set_xlabel()</b> sets the x-axis label for the scatterplot</li>
-<li><b>ax.set_ylabel()</b> sets the y-axis label for the scatterplot</li>
-<li><b>ax.set_title()</b> sets the title of the scatterplot</li>
-<li><b>ax.set_xlim()</b> sets the limits of the x-axis for the scatterplot</li>
-<li><b>ax.set_ylim()</b> sets the limits of the y-axis for the scatterplot.</li>
-<br>
-<b>#5 Show the scatterplot</b><br>
-In Matplotlib, <b>plt.show()</b> is a function that displays all currently active figures. When you call plt.show(), Matplotlib will display any previously created plots that have not yet been shown.<br>
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
-The <b>plt.show() function should typically be called at the end of the code block</b> that creates a plot. This is because, until the plt.show() function is called, Matplotlib will hold the plot in memory, but won't display it. This allows you to create multiple plots in a single script or code block and display them all at once.
-</span>
+<div class="note" markdown="1">
+Subplots are essentially smaller plots within a larger plot, which can be useful for visualizing multiple sets of data or for creating more complex visualizations.</span>
 </div>
-</details><br>
+The `plt.subplots()` function returns two values:
+* a figure object (fig) and
+* an array of axes objects (ax).
+
+```python
+fig, ax = plt.subplots()
+```
+*The figure object represents the entire plot, while the axes objects represent the individual subplots within the plot. When no arguments are provided, a single subplot is created by applying the default settings* `plt.subplots(nrows=1, ncols=1)`.
+<base class="mt">
+<b class="c-header">#3 Add dataset to the scatterplot</b><br>
+The `ax.scatter()` is a function in the Matplotlib library that is used to create a scatter plot. It takes in a set of x and y coordinates, along with some optional arguments, and plots them as individual points on a 2D plane. The basic syntax for `ax.scatter()` is as follows:
+```python
+ax.scatter(x, y, s=None, c=None, marker=None, cmap=None, alpha=None)
+```
+*where:*
+
+|param     |description|notes|
+|----------|-----------|-----|
+| `x`      |is a sequence of x coordinates for the points to be plotted||
+| `y`      |is a sequence of y coordinates for the points to be plotted||
+| `c`      |is the color of the markers | *This can be a single color, or a sequence of colors that correspond to each point in the plot.*|
+| `s`      |is the size of the markers (points) in the scatter plot | *This can be a scalar value, or a sequence of values that correspond to each point in the plot.*|
+| `marker` | is the shape of the markers | *This can be a string specifying a built-in marker shape (e.g., 'o' for circles), or a custom marker object.*|
+| `cmap`   | is a colormap object that maps the `c` values to a range of colors||
+| `alpha`  | is the transparency of the markers||
+
+*In this example, we use arrays of random values to set XY coordinates of the points and determine numerical range mapped to the default colorscale. The size of the points is the scale array transformed to absolute values using* `np.abs()` *function and multiplied by 500 to provide intiger sizes in range from 1 to 500.*
+<base class="mt">
+<b class="c-header">#4 Add labels and title</b><br>
+In Matplotlib, the `ax` object is a reference to the axis of a plot. It provides various functions that can be used to customize the scatterplot and other types of plots.<base class="mb">
+For a scatterplot created using the `ax.scatter()` function, some of the common functions that can be used to customize the plot include:
+* `ax.set_xlabel()` sets the x-axis label for the scatterplot
+* `ax.set_ylabel()` sets the y-axis label for the scatterplot
+* `ax.set_title()` sets the title of the scatterplot
+* `ax.set_xlim()` sets the limits of the x-axis for the scatterplot
+* `ax.set_ylim()` sets the limits of the y-axis for the scatterplot.
+<base class="mt">
+<b class="c-header">#5 Show the scatterplot</b><br>
+In Matplotlib, `plt.show()` is a function that displays all currently active figures. When you call `plt.show()`, Matplotlib will display any previously created plots that have not yet been shown.
+<div class="protip" markdown="1">
+The `plt.show()` **function should typically be called at the end of the code block** that creates a plot. This is because, until the `plt.show()` function is called, Matplotlib will hold the plot in memory, but won't display it. This allows you to create multiple plots in a single script or code block and display them all at once.
+</div>
+</details><base class="mt">
 
 To execute the code cell, again press `Alt + Enter` ( use `option + return` for macOS ).
 
@@ -307,18 +309,17 @@ After completing your work in the <b>try-jupyter</b> notebook, you may wish to d
 
 ![02_python-jupyter-try-notebook-download.png]({{ images_path }}/02_python-jupyter-try-notebook-download.png)
 
----
 
-# *Google Colab* **online**
+# Google Colab online
 
 <a href="https://colab.research.google.com" target="_blank">Google Colab  ⤴</a> (short for <i>research colaboratory</i>) is a **cloud-based service** provided by Google that allows users **to create, run, and share interactive Jupyter notebooks without the need to install** any software on their computer.
 
 <b>Google Colab uses Python 3</b> as its default programming language. Specifically, it uses the Anaconda distribution of Python, which includes many popular Python libraries for scientific computing and data analysis. Colab notebooks can also <b>leverage Google's machine learning</b> and data analysis services, such as <a href="https://www.tensorflow.org/" target="_blank">TensorFlow  ⤴</a> and <a href="https://cloud.google.com/bigquery/docs/" target="_blank">BigQuery  ⤴</a>.
 
-
 <div class="note" markdown="1">
 The use of the <a href="https://docs.anaconda.com/anaconda/" target="_blank">Anaconda  ⤴</a> distribution of Python in Google Colab provides a convenient and flexible environment for data analysis and scientific computing, while also allowing users to install and use custom packages as needed. <base class="mb"> Colab provides access to a **high-powered cloud-based computing environment**, which can be used to run code that requires more computational resources than a typical laptop or desktop computer can provide.
 </div>
+
 
 ## *PROS & CONS*
 
@@ -339,11 +340,11 @@ The use of the <a href="https://docs.anaconda.com/anaconda/" target="_blank">Ana
 
 <i>When you open the Google Colab website, you will land on the "Welcome to Colab" page, which provides a quick guide to <b>"What is Colab?"</b> The guide also provides a <b>sample code snippet</b> to help users get started with running their first Colab notebook. Further, you can find there some information about applications in data science and machine learning studies. Finally, you will get many useful links to in-depth resources for learning more about Colab and how to use it effectively.</i>
 
-<p align="center"><img width="950" src="{{ images_path }}/02_python-google-colab.gif"></p>
+<img width="950" src="{{ images_path }}/02_python-google-colab.gif">
 
 **2.** Click on the `File` button in the top menu bar and then click on the `New Notebook` option, to launch the Colab-Jupyter user interface in your browser. `Sign in` to get access to your Google account.
 
-<p align="center"><img width="950" src="{{ images_path }}/02_python-colab-sign.gif"></p>
+<img width="950" src="{{ images_path }}/02_python-colab-sign.gif">
 
 Once successfully logged in, the new notebook will appear in your browser tab, and you should be redirected to the URL: <a href="https://colab.research.google.com/drive/" target="_blank">https://colab.research.google.com/drive/  ⤴</a> followed by the random string encoding the address of your new notebook.
 
@@ -351,38 +352,45 @@ Once successfully logged in, the new notebook will appear in your browser tab, a
 
 **While Jupyter and Colab share many similarities, there are a few key differences in their user interfaces and workflows.** Colab provides a more convenient way to run cells. Instead of having to use keyboard shortcuts or click a toolbar button, you can simply click the button on the left end of the cell. This button looks like a triangle or a `play` button, and it lets you run the cell with a single click. *It is convenient if you're using Colab on a touch-enabled device.*
 
-Colab provides many other features. Here's the quick look on the **options available in the Colab interface**:
+Colab provides many other features. Here's the quick look on the **options available in the Colab interface**.
 
-<details><summary><b><i>Expand to learn more:</i></b></summary>
+<details class="l-frame" markdown="1"><summary class="c-header"><p class="btn more before" data-before="Expand to learn more..."></p></summary>
 
-<b>Rename the notebook</b><br>
-<i>This option allows you to change the name of your notebook. By default, your notebook will be named "Untitled.ipynb", but you can rename it to something more descriptive by clicking on the current name and typing in a new name.</i> <br><br>
-<b>Find and replace</b><br>
-<i>This option allows you to search for specific text in your notebook and replace it with something else. You can use this option to quickly make changes to your code, for example, if you need to replace a variable name throughout your notebook.</i> <br><br>
-<b>Variable inspector</b><br>
-<i>This option allows you to view all the variables that are currently defined in your notebook, along with their values and data types. This can be helpful for debugging your code and understanding how different parts of your notebook are connected.</i> <br><br>
-<b>File browser</b><br>
-<i>This option provides a file browser for navigating and managing the files in your Google Drive. You can use this option to create new folders, upload and download files, and open notebooks and other files in Google Colab.</i> <br><br>
-<b>Code snippets</b><br>
-<i>This option provides a collection of pre-written code snippets that you can use as a starting point for your own code. The code snippets are organized by topic, such as "Data Loading", "Model Training", and "Visualization".</i> <br><br>
-<b>Commands palette</b><br>
-<i>This option allows you to quickly access various commands and features in Google Colab using a search interface. You can use this option to quickly find shortcuts without having to navigate through menus and options.</i> <br><br>
-<b>Runtime terminal</b><br>
-<i>This option provides a terminal interface that allows you to run commands directly on the underlying operating system of your Google Colab instance. This can be useful for running system commands, installing software, and managing files outside of your notebook. <b>(available only in the ColabPro)</b></i> <br><br>
-</details><br>
+<div class="more before mb-0" data-before="Rename the notebook" markdown="1">
+This option allows you to change the name of your notebook. By default, your notebook will be named "Untitled.ipynb", but you can rename it to something more descriptive by clicking on the current name and typing in a new name.
+</div>
+<div class="more before mb-0" data-before="Find and replace" markdown="1">
+This option allows you to search for specific text in your notebook and replace it with something else. You can use this option to quickly make changes to your code, for example, if you need to replace a variable name throughout your notebook.
+</div>
+<div class="more before mb-0" data-before="Variable inspector" markdown="1">
+This option allows you to view all the variables that are currently defined in your notebook, along with their values and data types. This can be helpful for debugging your code and understanding how different parts of your notebook are connected.
+</div>
+<div class="more before mb-0" data-before="File browser" markdown="1">
+This option provides a file browser for navigating and managing the files in your Google Drive. You can use this option to create new folders, upload and download files, and open notebooks and other files in Google Colab.
+</div>
+<div class="more before mb-0" data-before="Code snippets" markdown="1">
+This option provides a collection of pre-written code snippets that you can use as a starting point for your own code. The code snippets are organized by topic, such as "Data Loading", "Model Training", and "Visualization".
+</div>
+<div class="more before mb-0" data-before="Commands palette" markdown="1">
+This option allows you to quickly access various commands and features in Google Colab using a search interface. You can use this option to quickly find shortcuts without having to navigate through menus and options.
+</div>
+<div class="more before" data-before="Runtime terminal" markdown="1">
+This option provides a terminal interface that allows you to run commands directly on the underlying operating system of your Google Colab instance. This can be useful for running system commands, installing software, and managing files outside of your notebook. (available only in the ColabPro)
+</div>
+</details><base class="mt">
 
 ![02_python-colab-notebook.png]({{ images_path }}/02_python-colab-options.png)
 
 
-**3.** You can rename the notebook file by clicking on the filename which activates the edit mode. *My notebook is called `scatterplot_seaborn.ipynb`.*
+**3.** You can rename the notebook file by clicking on the filename which activates the edit mode. *My notebook is called* `scatterplot_seaborn.ipynb`.
 
 You can now start writing Python code in the notebook cells. Run your code by clicking on the `Run` button next to the cell or pressing `Ctrl + Enter` *(while having cursor within a cell)*.
 
-## Python coding example <br> <i>- scatterplot by <b>seaborn</b></i>
+## <button class="btn example before" data-before="CODING EXAMPLE - PYTHON"></button><br>scatterplot using <b>seaborn</b>
 
 **4. Example Python-based notebook for creating scatterplot using seaborn.**
 
-<i>In this example, we use a ready-made <b>Wine dataset</b> loaded from the `sklearn` library. Then we will use a `seaborn` functions to plot some dataset characteristics as a 2-dimensional scatterplot with a third parameter determining the color of points.</i>
+*In this example, we use a ready-made* ***Wine dataset*** *loaded from the* `sklearn` *library. Then we will use a* `seaborn` *functions to plot some dataset characteristics as a 2-dimensional scatterplot with a third parameter determining the color of points.*
 
 <div class="note" markdown="1">
 <a href="https://scikit-learn.org/stable/" target="_blank">Scikit-learn  ⤴</a> is a a Python machine learning library that provides tools for data mining, data analysis, and machine learning tasks. It includes example datasets, for example <a href="https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_wine.html" target="_blank">Wine dataset  ⤴</a> that contains the results of a chemical analysis of wines grown in the same region in Italy by three different cultivators. The dataset has 178 samples and 13 features. <base class="mb">
@@ -390,7 +398,7 @@ You can now start writing Python code in the notebook cells. Run your code by cl
 <a href="https://pandas.pydata.org/" target="_blank">Pandas  ⤴</a> is a Python data manipulation library that provides data structures for efficiently storing and manipulating large datasets, and tools for cleaning, filtering, and transforming data.
 </div>
 
-All libraries are included within the Google Colab development environment, so no installations are required.
+All libraries are included within the Google Colab development environment, <br>so **no installations are required**.
 
 <div class="protip" markdown="1">
 When running code in Colab, you may encounter an error message that indicates that a library is not available: <em class="c-bad">"ModuleNotFoundError: No module named XXX".</em>
@@ -406,7 +414,7 @@ import library_name
 ```
 </div>
 
-**STEP A: Add a markdown cell in the notebook providing the introduction to your project.**
+<b class="c-header">STEP A:</b> **Add a markdown cell in the notebook providing the introduction to your project.**
 
 <i>Hover the mouse over the top edge of the <b>code cell</b> to display buttons for adding an additional <b>text cell</b> above.</i>
 
@@ -434,7 +442,7 @@ To learn more about Markdown syntax and benefits, check out the practical tutori
 To render the **text cell** press `Shift + Enter`. <br>
 *This will render the markdown content and move your cursor to the cell below.*
 
-**STEP B: Add a code cell to import required modules.**
+<b class="c-header">STEP B:</b> **Add a code cell to import required modules.**
 
 In the next **code cell** add Python code for all required imports, i.e., `pandas`, `seaborn`, and wine dataset from the `sklearn`.
 
@@ -449,7 +457,7 @@ from sklearn.datasets import load_wine    # to load the ready-made dataset
 
 To execute the code cell, press `Shift + Enter` or click the `Run` button.
 
-**STEP C: Add a code cell to create the python code for loading the dataset.**
+<b class="c-header">STEP C:</b> **Add a code cell to create the python code for loading the dataset.**
 
 Add next `code cell`, and copy-paste Python code for loading the dataset and exploring its contents.
 
@@ -469,40 +477,39 @@ df['target'] = wine_data.target
 print(f'DATAFRAME:\n{df.head()}')                   # optional
 ```
 
-<details><summary><i><b>What the script does?</b></i></summary>
+<details class="l-frame" markdown="1"><summary class="c-header"><b><i>What the script does?</i></b></summary>
 
-<b>#1 Load the Wine dataset</b><br>
-First, we call <b>load_wine()</b> function imported from the sklearn.datasets module.
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+<b class="c-header">#1 Load the Wine dataset</b><br>
+First, we call `load_wine()` function imported from the sklearn.datasets module.
+```python
 wine_data = load_wine()
-</code>
-This loads the wine dataset as a Python object of a <i>dictionary</i> type.
-<br><br>
-<b>#2 Preview dataset structured</b><br>
-Then, using a <b>print()</b> function, we can preview, what is the structure of the dataset and how to extract the information we need. The dictionary object in Python has a built-in method <b>dict.keys()</b> that returns the list of the keys available in the dictionary.
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```
+*This loads the wine dataset as a Python object of a dictionary type.*
+<base class="mt">
+<b class="c-header">#2 Preview dataset structured</b><br>
+Then, using a `print()` function, we can preview, what is the structure of the dataset and how to extract the information we need. The dictionary object in Python has a built-in method `dict.keys()` that returns the list of the keys available in the dictionary.
+```python
 print(f'KEYS: {list(wine_data.keys())}\n')
-</code>
+```
 In this case, we receive the following keys:
-<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-['data', 'target', 'frame', 'target_names', 'DESCR', 'feature_names']
-</code>
-The value corresponding to each key can be previewed as an attribute of the dictionary object, i.e., dict.attribute:
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-wine_data.DESCR &emsp; &emsp; &emsp; &emsp; &emsp; # returns decription of the dataset<br>
-wine_data.feature_names &emsp; # returns names of the measured features
-</code><br>
-<b>#3 Convert the dataset to a Pandas DataFrame</b><br>
-Once you know what is in the dataset, you can create a well-structured Pandas DataFrame object containing the information you need. In this case, we build the DataFrame using information from the "data" field with column headers from the "feature_names" field.
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+<code class="code-block bc-output">['data', 'target', 'frame', 'target_names', 'DESCR', 'feature_names']</code>
+The value corresponding to each key can be previewed as an attribute of the dictionary object, i.e., `dict.attribute`:
+```python
+wine_data.DESCR                         # returns decription of the dataset
+wine_data.feature_names                 # returns names of the measured features
+```
+<base class="mt">
+<b class="c-header">#3 Convert the dataset to a Pandas DataFrame</b><br>
+Once you know what is in the dataset, you can create a well-structured Pandas `DataFrame` object containing the information you need. In this case, we build the DataFrame using information from the **data** field with column headers from the **feature_names** field.
+```python
 df = pd.DataFrame(wine_data.data, columns=wine_data.feature_names)
-</code>
-We also want to know to which target class the observations belong so we add an additional column to the DataFrame we created in a previous step:
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```
+We also want to know to which **target class** the observations belong so we add an additional column to the `DataFrame` we created in a previous step:
+```python
 df['target'] = wine_data.target
-</code>
+```
 Now, we can use a structured form of the dataset to create plots.
-</details><br>
+</details><base class="mt">
 
 To execute the code cell, press `Shift + Enter` or click the `Run` button.
 
@@ -520,8 +527,8 @@ Just below the code snippet in your notebook, you should see the output of the `
 
 *This part of the output shows the structure of dataset transformed to the DataFrame object. The first 5 samples of the Wine dataset is displayed, which include the names of the features and their corresponding values.*
 
-
-**STEP D: Add a code cell to create the scatterplot using seaborn.**
+<base class="mt">
+<b class="c-header">STEP D:</b> **Add a code cell to create the scatterplot using seaborn.**
 
 Add next `code cell`, and copy-paste Python code to create a scatter plot comparing the <i>"alcohol"</i> and <i>"color_intensity"</i> features of the dataset.
 
@@ -531,39 +538,49 @@ sns.set(rc={'figure.figsize':(6,3), 'figure.dpi': 200})         # set the graph 
 sns.scatterplot(data=df, x="alcohol", y="color_intensity", hue="target", size=80)
 ```
 
-<details><summary><i><b>What the script does?</b></i></summary>
+<details class="l-frame" markdown="1"><summary class="c-header"><b><i>What the script does?</i></b></summary>
 
-<b># Configure a graph settings</b><br>
-Seaborn's <b>sns.set()</b> function is used to customize the appearance of plots created using Seaborn. It can be used to change the default settings for font size, color palettes, plot styles, and more. The <b>rc</b> parameter in Seaborn's sns.set() function allows you to specify values for Matplotlib's runtime configuration parameters. These parameters control a wide variety of aspects of the plot, including the figure size (<i>'figure.figsize'</i>), resolution (<i>'figure.dpi'</i>), font size (<i>'font.size'</i>), axes (<i>'axes.labelsize'</i>, <i>'axes.titlesize'</i>), line styles (<i>'lines.linewidth'</i>, <i>'lines.linestyle'</i>), and more.
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+<b class="c-header">#1 Configure a graph settings</b><br>
+Seaborn's `sns.set()` function is used to customize the appearance of plots created using Seaborn. It can be used to change the default settings for font size, color palettes, plot styles, and more. The `rc` parameter in Seaborn's `sns.set()` function allows you to specify values for Matplotlib's runtime configuration parameters. These parameters control a wide variety of aspects of the plot, including the figure size (`'figure.figsize'`), resolution (`'figure.dpi'`), font size (`'font.size'`), axes (`'axes.labelsize'`, `'axes.titlesize'`), line styles (`'lines.linewidth'`, `'lines.linestyle'`), and more.
+```python
 sns.set(rc={'figure.figsize':(6,3), 'figure.dpi': 200})
-</code><br>
-Here are some of the available options for sns.set():
-<li><b>palette='deep'</b> sets the color palette for the plot; options: <i>'deep', 'muted', 'pastel', 'bright', 'dark', and 'colorblind'</i></li>
-<li><b>style='darkgrid'</b> sets the overall style of the plot; options: <i>'ticks', 'darkgrid', 'whitegrid', 'dark', and 'white'</i></li>
-<li><b>font='sans-serif'</b> a dictionary specifying the font properties</li>
-<li><b>context='poster'</b> a string specifying the context in which the plot will be displayed; options: <i>'paper', 'notebook', 'talk', 'poster'</i></li>
-<br>
-<b># Plot using seaborn graphs</b><br>
-Seaborn provides a wide range of plot types for visualizing statistical data, including:<br> <i>'scatterplot', 'lineplot', 'histplot', 'kdeplot', 'rugplot', 'jointplot', 'pairplot', 'heatmap', 'clustermap', 'boxplot', 'violinplot', 'barplot', 'countplot', 'relplot'</i>.<br>
+```
+<base class="mb">
+Here are some of the available options for `sns.set()`:
+
+|param                |description                                  |options|
+|---------------------|---------------------------------------------|-------|
+| `palette='deep'`    | sets the color palette for the plot         | `'deep'`, `'muted'`, `'pastel'`, `'bright'`, `'dark'`, `'colorblind'` |
+| `style='darkgrid'`  | sets the overall style of the plot          | `'ticks'`, `'darkgrid'`, `'whitegrid'`, `'dark'`, `'white'` |
+| `font='arial'`      | a dictionary specifying the font properties ||
+| `context='poster'`  | a string specifying the context in which the plot will be displayed | `'paper'`, `'notebook'`, `'talk'`, `'poster'` |
+
+<base class="mt">
+<b class="c-header">#2 Plot using seaborn graphs</b><br>
+Seaborn provides a wide range of plot types for visualizing statistical data, including:<br> `scatterplot`, `lineplot`, `histplot`, `kdeplot`, `rugplot`, `jointplot`, `pairplot`, `heatmap`, `clustermap`, `boxplot`, `violinplot`, `barplot`, `countplot`, `relplot`.<br>
 These plot types are similar to those available in Matplotlib, but Seaborn provides several additional types of plots and additional functionality for customizing the visual style of the plots.
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```python
 sns.scatterplot(data=df, x="alcohol", y="color_intensity", hue="target", size=80)
-</code><br>
-The <b>scatterplot() function</b> in Seaborn is used to draw a scatter plot of two variables with possible semantic grouping. Here are some of the options available for customizing the scatter plot in Seaborn:
-<li><b>x, y</b> : variables to be plotted on the x and y axes</li>
-<li><b>data</b> : DataFrame or array containing the data to be plotted</li>
-<li><b>hue</b> : variable used to group the data by color; <i>this can be a categorical or numeric variable</i></li>
-<li><b>markers</b> : set of marker styles to use for the style variable</li>
-<li><b>size</b> : variable used to set the size of the markers; <i>this can be a numeric variable or a categorical variable with a specified mapping of size values</i></li>
-<li><b>sizes</b> : minimum and maximum sizes to use for the markers</li>
-<li><b>style</b> : ariable used to set the marker style; <i>this can be a categorical variable with a specified mapping of marker styles</i></li>
-<li><b>palette</b> : color palette to use for coloring the markers based on the hue variable</li>
-<li><b>alpha</b> : transparency of the markers</li>
-<li><b>edgecolor</b> : color of the marker edges</li>
-<li><b>linewidth</b> : width of the marker edges</li>
-<li><b>ax</b> : the matplotlib Axes object to draw the plot onto</li>
-</details><br>
+```
+<base class="mt">
+The `scatterplot()` function in Seaborn is used to draw a scatter plot of two variables with possible semantic grouping. Here are some of the options available for customizing the scatter plot in Seaborn:
+
+|param          |description                                                   |
+|---------------|--------------------------------------------------------------|
+| **x, y**      | variables to be plotted on the x and y axes                  |
+| **data**      | DataFrame or array containing the data to be plotted         |
+| **hue**       | variable used to group the data by color; *this can be a categorical or numeric variable* |
+| **markers**   | set of marker styles to use for the style variable           |
+| **size**      | variable used to set the size of the markers; *this can be a numeric variable or a categorical variable with a specified mapping of size values* |
+| **sizes**     | minimum and maximum sizes to use for the markers             |
+| **style**     | variable used to set the marker style; *this can be a categorical variable with mapping of marker styles* |
+| **palette**   | color palette to use for coloring the markers based on the hue variable |
+| **alpha**     | transparency of the markers                                  |
+| **edgecolor** | color of the marker edges                                    |
+| **linewidth** | width of the marker edges                                    |
+| **ax**        | the matplotlib Axes object on which the plot should be drawn |
+
+</details><base class="mt">
 
 To execute the code cell, press `Shift + Enter` or click the `Run` button.
 

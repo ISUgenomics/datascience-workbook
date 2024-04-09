@@ -17,18 +17,11 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
-
-# Introduction
 
 # Sharing Jupyter Notebooks via MyBinder
 
-**Last Update:** 9 Dec 2020
-
 Learn how to publish Jupyter Notebooks on MyBinder. Launch an example of a shared Jupyter Notebook in binder here:
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/j23414/test_binder.git/HEAD?filepath=tutorials)
+[<img class="inline mb-0 mt-0" src="https://mybinder.org/badge_logo.svg">](https://mybinder.org/v2/gh/j23414/test_binder.git/HEAD?filepath=tutorials)
 
 ## Introduction
 
@@ -229,4 +222,4 @@ This installs `numpy` into the docker container, and you'll be able to load the 
 import numpy as np
 ```
 
-Together, the Jupyter Notebook + MyBinder + environment.yml provides a way to sharing a reproducible Python analysis pipeline.
+Together, the `Jupyter Notebook` + `MyBinder` + `environment.yml` provides a way to sharing a reproducible Python analysis pipeline.

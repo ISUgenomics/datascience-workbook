@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -30,9 +28,10 @@ tags: []
 *In computer science, an interpreted language is a type of programming language for which most of its implementations execute instructions directly, without previously compiling a program into machine-language instructions. This makes it easier to write and test code, however, Python programs may run slower than those written in a compiled language.*
 </div>
 
-<span style="color: #ff3870;font-weight: 500;"> To learn more about Python programming and its advantages, see section</span> {% include target_link href=500 text="05: Introduction to Programming" %} / {% include target_link href=531 text="3. Introduction to Python programming" %}
+<div class="more" markdown="1">
+...about Python programming and its advantages in section:<br> {% include target_link href=500 text="05: Introduction to Programming" %} / {% include target_link href=531 text="3. Introduction to Python programming" %}
+</div>
 
----
 
 # Python programming environment
 
@@ -54,20 +53,21 @@ Typically, these online platform provide interface for the Python built-in shell
 ## **2. Command Line (CL) code editors** *(intermediate)*
 You can also use a plain text editor, such as <a href="https://www.nano-editor.org" target="_blank">nano  ⤴</a> [GNU], <a href="https://www.vim.org" target="_blank">Vim  ⤴</a> [Bram Moolenaar], or <a href="https://linuxcommand.org/lc3_adv_mc.php" target="_blank">mcedit  ⤴</a> [Midnight Commander] to write Python code and run it from the command line. To do this, **you will need to install Python on your computer** and then use the Python interpreter to execute your code.
 
-![Python]({{ images_path }}/04_02_cli_editors.png)<br>
+![Python]({{ images_path }}/04_02_cli_editors.png)
 
 <div class="protip" markdown="1">
 *This option is a good choice to develop quickly a simple script directly on the remote machine (such as high-performance computing cluster) where the graphical user interface (GUI) is not available.*
 </div>
 
-<span style="color: #ff3870;font-weight: 500;">Learn more  !</span> <br>
-...about the <b>CL editors</b> from the tutorial {% include target_link href=322 text="Command Line text files editors: nano, vim" %} in this <a href="https://datascience.101workbook.org" target="_blank">workbook  ⤴</a>
+<div class="more" markdown="1">
+...about the <b>CLI text editors</b> from the tutorial {% include target_link href=322 text="Command Line text files editors: nano, vim" %} in this workbook.
+</div>
 
 
 ## **3. Integrated Development Environment (IDE)** *(advanced)*
 An Integrated Development Environment (IDE) is a software application that provides a comprehensive set of tools for software development. IDEs typically provide a range of tools and features for editing, debugging, and testing code, as well as integrations with other tools and services that are commonly used in software development (e.g., Git version control).
 
-![Python]({{ images_path }}/04_02_ide_features.png)<br>
+![Python]({{ images_path }}/04_02_ide_features.png)
 
 ### *A. Multi-language IDE*
 There are many multi-language IDEs available, such as <a href="https://code.visualstudio.com" target="_blank">VSC  ⤴</a> [Microsoft], <a href="https://www.eclipse.org/ide/" target="_blank">Eclipse  ⤴</a>, <a href="https://netbeans.apache.org" target="_blank">NetBeans  ⤴</a>, and <a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ IDEA  ⤴</a> [JetBrains].
@@ -76,30 +76,31 @@ There are many multi-language IDEs available, such as <a href="https://code.visu
 *Multi-language IDEs can be useful* ***for developers who work on projects that involve more than one programming language***, *as they provide a single platform for managing all of the code and related resources. They can also be a good choice for developers who want a more comprehensive development environment that includes a range of tools and features beyond just a code editor.*
 </div>
 
-<br><span style="color: #ff3870;font-weight: 500;">Learn more  !</span> <br>
-...about the <b>VSC IDE</b> from the {% include target_link href=411 text="Tutorial: Visual Studio Code" %}
+<button class="btn more"></button> *...about the **VSC IDE** from the tutorial* {% include target_link href=411 text="<i>Visual Studio Code</i>" %}
+
 
 ### *B. Python-dedicated IDE*
 Some popular IDEs dedicated for programming in Python include <a href="https://realpython.com/python-idle/" target="_blank">IDLE  ⤴</a> *(included with the Python installation)*, <a href="https://www.jetbrains.com/pycharm/" target="_blank">PyCharm  ⤴</a>, and <a href="https://www.spyder-ide.org" target="_blank">Spyder  ⤴</a>.
 
-![Python]({{ images_path }}/04_02_python_ide.png)<br>
+![Python]({{ images_path }}/04_02_python_ide.png)
 
-<div class="protip" markdown="1">
+<div class="protip mt-" markdown="1">
 *Using a Python-dedicated IDE can make it easier to work with Python code and take advantage of the language's features. These IDEs often include* ***advanced code completion*** *and* ***error highlighting***, *as well as a range of* ***debugging and testing tools***. *They may also include integrations with popular third-party libraries and frameworks, such as Django and Flask. Overall, using a Python-dedicated IDE can be a* ***good choice if you are primarily working with Python*** *and want a development environment that is optimized for the language.*
 </div>
 
-<span style="color: #ff3870;font-weight: 500;">Learn more  !</span> <br>
-...about the <b>PyCharm IDE</b> from the tutorial {% include target_link href=427 text="PyCharm: IDE for professional Python developers" %} in this <a href="https://datascience.101workbook.org" target="_blank">workbook  ⤴</a>
+<div class="more" markdown="1">
+...about the <b>PyCharm IDE</b> from the tutorial {% include target_link href=427 text="PyCharm: IDE for professional Python developers" %} in this workbook
+</div>
 
 
 ### *C. Web-based interactive DE*
 <a href="https://jupyter.org/install" target="_blank">JupyterLab  ⤴</a> is an open-source web-based interactive development environment (IDE) for working with Jupyter notebooks, code, and data. It is not a traditional IDE in the sense that it does not provide features such as a code editor or debugger, but it does offer a range of tools and features for working with notebooks and other interactive documents that combine code, text *(markdown)*, and visualizations.
 
-<table>
+<table class="mb-0">
   <tr> <th>1. Launch Jupyter Lab</th> <th>2. Develop code, comment, and visualize results</th> </tr>
   <tr>
-    <td><img src="{{ images_path }}/04_jupyter_launch.gif" alt="Merge data app" width="600"></td>
-    <td><img src="{{ images_path }}/04_jupyter_cell_types.png" alt="Merge data app" width="600"></td>
+    <td class="no-border"><img src="{{ images_path }}/04_jupyter_launch.gif" alt="Merge data app" width="648"></td>
+    <td class="no-border"><img src="{{ images_path }}/04_jupyter_cell_types.png" alt="Merge data app" width="552"></td>
   </tr>
 </table>
 
@@ -109,5 +110,6 @@ Although, JupyterLab does not include a debugger in the traditional sense, it su
 *Overall, JupyterLab is a useful tool for interactive computing and data analysis, particularly in the fields of scientific computing, data science, and machine learning. However, it is not a traditional IDE and may not be the best choice for all types of development projects.*
 </div>
 
-<span style="color: #ff3870;font-weight: 500;">Learn more  !</span> <br>
-...about the <b>Jupyter Lab</b> from the tutorial {% include target_link href=412 text="Jupyter: interactive web-based multi-kernel DE" %} in this <a href="https://datascience.101workbook.org" target="_blank">workbook  ⤴</a>
+<div class="more" markdown="1">
+...about the <b>Jupyter Lab</b> from the tutorial {% include target_link href=412 text="Jupyter: interactive web-based multi-kernel DE" %} in this workbook.
+</div>
