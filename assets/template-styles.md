@@ -257,10 +257,13 @@ Learn more about the basics of programming in <button class="btn bc-note">Python
 <button class="btn note"></button>
 <button class="btn example"></button>
 <button class="btn exercise"></button>
+<button class="btn more"></button>
+<button class="btn required"></button>
 ```
 </details>
 
-<button class="btn protip"></button> &emsp; <button class="btn warning"></button> &emsp; <button class="btn note"></button> &emsp; <button class="btn example"></button> &emsp; <button class="btn exercise"></button>
+<button class="btn protip"></button> &emsp; <button class="btn warning"></button> &emsp; <button class="btn note"></button> &emsp;
+<button class="btn example"></button> &emsp; <button class="btn exercise"></button> &emsp; <button class="btn more"></button>  &emsp; <button class="btn required"></button>
 
 
 <base class="mt">
@@ -448,6 +451,46 @@ In this project, we will explore the use of: <br>
 <div class="exercise mt-0" markdown="1">
 **Step 1: Identify Your Achievement** <br>
 *Think about the most recent small achievement in your research work or personal life, especially something you’ve worked hard on or for a long time.*
+</div>
+
+<div class="flex" markdown="1">
+### <button class="btn more"></button>
+</div>
+
+<details class="inline" markdown="1"><summary class="italic c-header">see example code</summary>
+
+```html
+<div class="more" markdown="1">
+…about the Command Line text editors from the <button class="btn c-good">TUTORIAL</button> <a href="/03-command-line/02b-text-files-editors/" target="_blank" class="target-link">Command Line text files editors: nano, vim</a>, available in this workbook.
+</div>
+```
+</details>
+
+<div class="more" markdown="1">
+…about the Command Line text editors from the <button class="btn c-good">TUTORIAL</button> {% include target_link href=322 text="Command Line text files editors: nano, vim" %}, available in this workbook.
+</div>
+
+<div class="flex" markdown="1">
+### <button class="btn required"></button>
+</div>
+
+<details class="inline" markdown="1"><summary class="italic c-header">see example code</summary>
+
+```html
+<div class="required" markdown="1">
+Please note that this tutorial requires the user to have a basic understanding of the options available in Jupyter. If you are not familiar with Jupyter, we recommend exploring other tutorials in section <a href="/04-devel-environment/00-landing-page-devel-environment/" target="_blank" class="target-link">04. Development Environment</a> to get started:
+* <a href="/04-devel-environment/01b-jupyter-basics/" target="_blank" class="target-link">Jupyter: interactive web-based multi-kernel DE</a>
+  * <a href="/04-devel-environment/01c-jupyter-lab/" target="_blank" class="target-link">Getting started with JupyterLab</a>
+  * <a href="/04-devel-environment/01d-jupyter-notebook/" target="_blank" class="target-link">Getting started with Jupyter Notebook on HPC systems</a>
+</div>
+```
+</details>
+
+<div class="required" markdown="1">
+Please note that this tutorial requires the user to have a basic understanding of the options available in Jupyter. If you are not familiar with Jupyter, we recommend exploring other tutorials in section {% include target_link href=400 text="04. Development Environment" %} to get started:
+* <a href="/04-devel-environment/01b-jupyter-basics/" target="_blank" class="target-link">Jupyter: interactive web-based multi-kernel DE</a>
+  * <a href="/04-devel-environment/01c-jupyter-lab/" target="_blank" class="target-link">Getting started with JupyterLab</a>
+  * <a href="/04-devel-environment/01d-jupyter-notebook/" target="_blank" class="target-link">Getting started with Jupyter Notebook on HPC systems</a>
 </div>
 
 
@@ -1337,3 +1380,14 @@ While HTML syntax makes the raw code less readable due to the verbosity and nece
 </div>
 
 </div>
+
+
+
+
+<!---  TODO
+
+<b class="prefix-2"></b> - bullet, useful in headers
+
+<details class="l-frame" markdown="1"><summary class="c-header"><b><i>What the script does?</i></b></summary>
+
+-->
