@@ -11,7 +11,7 @@
   --c-text: #494e52;
   --c-gray: #c2c6d3;
   --c-boxdark: #2a4960;
-  --c-boxlink: #7dc2d6;
+  --c-boxlink: #52adc8; /*#7dc2d6;*/
   --c-required: #8744db; /*#ab68ff;*/
   --c-alert: #ff3870;
   --c-warning: #e84b4b;
@@ -33,6 +33,7 @@
 .c-good {color: var(--c-note) !important;}
 .c-bad {color: var(--c-warning) !important;}
 .c-alert {color: var(--c-alert) !important;}
+.c-required {color: var(--c-required) !important;}
 .c-exercise {color: var(--c-exercise) !important;}
 
 /* pre-defined bg colors, including custom <details> */
@@ -62,15 +63,25 @@ h1:not(#page-title)::before {
 }
 h3 {font-size: 1.2em; font-style: italic; font-weight: 600;}
 
+.btn {
+  border: 1px solid var(--b-darkgray) !important;
+  padding: 0.5em 0.5em !important;
+  margin: 0 0.05em !important;
+  background-color: var(--bc-code);
+  color: var(--c-boxdark);
+  font-weight: 600;
+  font-size: 0.6em;
+  letter-spacing: 0.15em;
+}
+
 .inline {display: inline !important; max-width: 100%;}
 .flex {display: inline-flex; margin-right: 0.6em;}
 .flex h3 {margin-block-start: 0.5em;}
 .row {display: flex;}
 .col-6 {width: 50%;}
 .no-border {border: none;}
-.l-frame {border-left: 1px solid var(--c-header); padding-left: 0.8em;}
 
-.pa-s {padding: 0.1em 0.2em;}
+.pa-s {padding: 0.1em 0.2em !important;}
 .pl-0 {padding-left:0;}
 .pr-2 {padding-right: 2em;}
 .pl-2 {padding-left: 2em;}
@@ -81,6 +92,7 @@ h3 {font-size: 1.2em; font-style: italic; font-weight: 600;}
 .mb- {margin-bottom: -0.8em !important;}
 .mt-0 {margin-top: 0 !important;}
 .mb-0 {margin-bottom: 0 !important;}
+.mr {margin-right: 1em !important;}
 
 .no-decoration {text-decoration: none !important;}
 .italic {font-style: italic !important;}
@@ -88,15 +100,6 @@ h3 {font-size: 1.2em; font-style: italic; font-weight: 600;}
 .font-1 {font-size: 1em !important;}
 .font-1r {font-size: 1rem !important;}
 .center-h {text-align: center !important;}
-
-.btn {
-  padding: 0.4em 0.5em !important;
-  border: 1px solid var(--b-darkgray) !important;
-  margin: 0 0.05em !important;
-  background-color: var(--bc-code);
-  color: var(--c-boxdark);
-  font-weight: 450;
-}
 
 
 .pros::before, .cons::before {
@@ -125,13 +128,13 @@ p.pros, p.cons {margin-bottom: 0;}
   margin-bottom: 1.2em !important;
 }
 
-.warning {background-color: var(--bc-warning);}
-.protip {background-color: var(--bc-protip);}
-.note {background-color: var(--bc-note);}
-.example {background-color: var(--bc-example);}
-.exercise {background-color: var(--bc-exercise);}
-.more {background-color: rgb(251, 250, 250); border: 1px solid var(--c-alert);}
-.required {background-color: rgb(251, 250, 253); border: 1px solid var(--c-required);}
+.warning {background-color: var(--bc-warning); --link-color: var(--c-boxlink);}
+.protip {background-color: var(--bc-protip); --link-color: #35aeff;}
+.note {background-color: var(--bc-note); --link-color: var(--c-boxlink);}
+.example {background-color: var(--bc-example); --link-color: var(--c-boxlink);}
+.exercise {background-color: var(--bc-exercise); --link-color: var(--c-boxlink);}
+.more {background-color: rgb(251, 250, 250); border: 1px solid var(--c-alert); --link-color: var(--c-alert);}
+.required {background-color: rgb(251, 250, 253); border: 1px solid var(--c-required); --link-color:  var(--c-required);}
 
 .warning::before, .protip::before, .note::before, .example::before, .exercise::before, .more::before, .required::before {
   font-weight: bold;
@@ -150,12 +153,12 @@ p.pros, p.cons {margin-bottom: 0;}
 .required::before {content: var(--custom-before, "REQUIRED"); color: var(--c-required); font-size: 1em !important;}
 
 .warning p, .protip p, .note p, .example p, .exercise p, .more p, .required p {margin-block-end: 0em !important;}
-.warning a, .protip a, .note a, .example a, .exercise a {color: var(--c-boxlink) !important;}
-.more a {color: var(--c-alert) !important;}
-.required a {color: var(--c-required) !important;}
+.warning a, .protip a, .note a, .example a, .exercise a, .more a, .required a {color: var(--link-color) !important;}
 .warning ul, .protip ul, .note ul, .example ul, .exercise ul, .more ul , .required ul {margin-block-start: 0.1em; margin-block-end: 0em !important;}
 .warning ol, .protip ol, .note ol, .example ol, .exercise ol, .more ol, .required ol {margin-block-start: 0.25em; margin-block-end: 0em !important;}
 .warning table, .protip table, .note table, .example table, .exercise table, .more table, .required table {font-size: 0.9em !important; font-style: normal !important;}
+
+div.protip a:hover {color: #1a86ce !important;}
 
 .warning .highlighter-rouge, .protip .highlighter-rouge, .note .highlighter-rouge, .example .highlighter-rouge,
 .exercise .highlighter-rouge, .more .highlighter-rouge, .required .highlighter-rouge, .footnote .highlighter-rouge {
@@ -170,20 +173,18 @@ div.highlighter-rouge {margin-bottom: 0.8em;}
 .warning pre.highlight, .protip pre.highlight, .note pre.highlight, .example pre.highlight,
 .exercise pre.highlight, .more pre.highlight, .required pre.highlight {padding: 0.3em 0.8em !important; font-size: 1.1em !important;}
 
-.warning.btn, .protip.btn, .note.btn, .example.btn, .exercise.btn {
+.warning.btn, .protip.btn, .note.btn, .example.btn, .exercise.btn, .more.btn, .required.btn {
   padding: 0.8em 0.8em 0.3em 0.8em !important;
   border: none !important;
   font-size: 0.6em;
 }
 .more.btn {
-  padding: 0.7em 0.8em 0.25em 0.8em !important;
+  padding-top: 0.7em !important;
   border: 1px solid var(--c-alert) !important;
-  font-size: 0.6em;
 }
 .required.btn {
-  padding: 0.7em 0.8em 0.25em 0.8em !important;
+  padding-top: 0.7em !important;
   border: 1px solid var(--c-required) !important;
-  font-size: 0.6em;
 }
 
 /* sticky table of contents when scroling */
@@ -205,6 +206,8 @@ div.highlighter-rouge {margin-bottom: 0.8em;}
   position: sticky;
   top: 1em;
   align-self: flex-start;
+  max-height: 85vh;
+  overflow-y: auto;
 }
 
 .toc .btn {font-size: 0.9em !important;}
@@ -277,6 +280,11 @@ pre {
 .target-link {
   text-decoration: none !important;
 }
+.target-link:hover {
+  text-decoration: underline !important;
+  color: var(--c-boxlink);
+}
+
 /*.target-link::before {
   content: "\00a0";
 }
@@ -419,7 +427,10 @@ details {
 }
 details[open] > summary {margin-bottom: 0.3em;}
 details[open] > summary::before {transform: rotate(90deg);}
+details[open].l-frame {border-left: 1px solid var(--c-header); padding-left: 0.8em;}
+
 summary::-webkit-details-marker {display: none;}   /* important in Safari */
+
 
 .details-save {
   margin-left: 1em !important;
@@ -436,7 +447,9 @@ table {
 th, thead {
   background-color: var(--bc-code);
   border-bottom: 2px solid var(--c-gray);
+  text-transform: uppercase;
   font-style: italic;
+  color: #9a9faf;
 }
 
 td {
