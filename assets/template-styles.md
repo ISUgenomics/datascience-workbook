@@ -240,13 +240,13 @@ Learn more about the basics of programming in <button class="btn bc-note">Python
 <details class="inline" markdown="1"><summary class="italic c-header">see code example (useful standardized buttons)</summary>
 
 ```html
+<button class="btn" type="button">Download</button>
 <button class="btn c-good">TUTORIAL</button>
 <button class="btn c-alert">checklist</button>
-<button class="btn" type="button">Download</button>
 ```
 </details>
 
-<button class="btn c-good">TUTORIAL</button> &emsp; <button class="btn c-alert">checklist</button> &emsp; <button class="btn" type="button">Download</button>
+<button class="btn" type="button">Download</button> &emsp; <button class="btn c-good">TUTORIAL</button> &emsp; <button class="btn c-alert">checklist</button>
 
 
 <details class="inline" markdown="1"><summary class="italic c-header">see code example (buttons matching color-coded boxes)</summary>
