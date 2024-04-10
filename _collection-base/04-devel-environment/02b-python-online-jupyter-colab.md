@@ -1,5 +1,5 @@
 ---
-title: "Online Notebook: interactive Python code on Try-jupyter and Colab"
+title: "Online Notebook: interactive Python on Try-jupyter and Colab"
 note: (no installation)
 layout: single
 author: Aleksandra Badaczewska

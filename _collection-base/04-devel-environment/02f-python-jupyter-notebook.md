@@ -21,11 +21,12 @@ tags: []
 ---
 
 
-<span style="color: #ff3870;font-weight: 500;">NOTE:</span> <i>Please note that this tutorial requires the user to have a basic understanding of the options available in Jupyter. If you are not familiar with Jupyter, we recommend exploring other tutorials in section</i> {% include target_link href=400 text="04. Development Environment" %} :
+<div class="required" markdown="1">
+Please note that this tutorial requires the user to have a basic understanding of the options available in Jupyter. If you are not familiar with Jupyter, I recommend exploring other tutorials in section {% include target_link href=400 text="04. Development Environment" %} :
 * {% include target_link href=412 text="Jupyter: interactive web-based multi-kernel DE" %}
 * {% include target_link href=413 text="Getting started with JupyterLab on a local machine" %}
 * {% include target_link href=414 text="Getting Started with Jupyter Notebook on HPC systems" %}
-
+</div>
 
 # Introduction
 
@@ -53,7 +54,7 @@ However, while Python coding in Jupyter offers many advantages, **it may not alw
 * Plain text files are lightweight, easy to read, and can be executed directly from the command line, which makes them a suitable choice for simple scripts.
 * Additionally, plain text files are easier to version control with tools like Git, which can be essential for collaborating and managing code changes.
 
-<span style="color: #ff3870;font-weight: 500;">Learn more from the practical tutorial</span> {% include target_link href=425 text="Text editors: create Python code in terminal text files." %}
+<button class="btn more"></button> <button class="btn c-good mr">HANDS-ON TUTORIAL</button> {% include target_link href=425 text="Text editors: create Python code in terminal text files" %}
 
 <base class="mt">
 <em class="cons"></em> For **production-level Python code**, where performance, scalability, and maintainability are critical, other tools may be more suitable. Jupyter notebooks can be **challenging to manage with version control systems** like Git, which can make it difficult to track changes over time.
@@ -61,18 +62,20 @@ However, while Python coding in Jupyter offers many advantages, **it may not alw
 <base class="mt">
 <em class="cons"></em> For **large modular Python developments**, IDEs such as Visual Studio Code (VSC) or PyCharm are often a better choice than Jupyter, since they offer more advanced features, like debugging, refactoring, and testing, that are essential for professional development.
 
-<span style="color: #ff3870;font-weight: 500;">Learn more from the practical tutorial</span> {% include target_link href=427 text="PyCharm: IDE for professional Python developers." %}
+<button class="btn more"></button> <button class="btn c-good mr">HANDS-ON TUTORIAL</button>  {% include target_link href=427 text="PyCharm: IDE for professional Python developers" %}
 
----
 
 # Python in *JupyterLab* **locally**
 
-<span style="color: #ff3870;font-weight: 500;">If you don't already have Jupyter Lab installed on your local machine, make up for this step by following the instructions in the {% include target_link href=412 section="#installing-jupyter" text="Installing Jupyter" %} section of the {% include target_link href=412 text="Jupyter: interactive web-based multi-kernel DE" %} tutorial.<br>
-To learn more about Jupyter Lab interface <i>(cell types, opening and saving files, executing the code, and other options)</i> see {% include target_link href=413 text="Getting started with JupyterLab" %} tutorial.
-</span>
+<div class="required" markdown="1">
+If you don't already have Jupyter Lab installed on your local machine, make up for this step by following the instructions in the {% include target_link href=412 section="#installing-jupyter" text="Installing Jupyter" %} section of the {% include target_link href=412 text="Jupyter: interactive web-based multi-kernel DE" %} tutorial.
+</div>
+<div class="more mt-" markdown="1">
+To learn more about Jupyter Lab interface *(cell types, opening and saving files, executing the code, and other options)* see {% include target_link href=413 text="Getting started with JupyterLab" %} tutorial.
+</div>
 
 
-**A. Launch Jupyter in the default Python version**
+## <button class="btn example before" data-before="A. Launch Jupyter with"></button><br><i class="pa-s">default Python version</i>
 
 The version of Python used in JupyterLab locally depends on the Python kernel that you have installed and selected for your JupyterLab session. So, once you have Jupyter Lab and Python installed on your local machine, you can simply type in the terminal:
 ```bash
@@ -80,7 +83,7 @@ jupyter lab
 ```
 to autmoatically launch the Jupyter Lab interface in your default web browser.
 
-**B. Launch Jupyter in the selected Python version**
+## <button class="btn example before" data-before="B. Launch Jupyter with"></button><br><i class="pa-s">selected Python version</i>
 
 If you want to use a specific version of Python or a specific set of packages, you should **create first a new environment with the desired version of Python** installed and then activate that environment before you  launch JupyterLab interface. *For example, to have a kernel with Python in version 3.9 create and activate the Conda environment like that:*
 
@@ -91,20 +94,19 @@ conda activate new_env_py3.9
 jupyter lab
 ```
 
-<span style="color: #ff3870;font-weight: 500;">You can learn more about creating virtual environments for Python using Conda in the tutorial</span> {% include target_link href=423 text="Local Python setup on your computing machine" %}.
+<div class="more" markdown="1">
+You can learn more about creating virtual environments for Python using Conda in the tutorial {% include target_link href=423 text="Local Python setup on your computing machine" %}.
+</div><base class="mt">
 
-<br>
-**C. Launch Jupyter and switch the Python kernel**
+## <button class="btn example before" data-before="C. Launch Jupyter and"></button><br><i class="pa-s">switch the Python kernel</i>
 
 When you create a new notebook in JupyterLab interface, you can select the kernel you want to use for that notebook. If you have multiple kernels installed, you can choose the appropriate kernel for your project.
 
 To check which Python kernel is currently selected, you can click on the kernel name in the top right corner of the notebook interface. This will display a dropdown menu with the currently available kernels. The name of the selected kernel will be highlighted in bold. You can also change the version of Python from the `Kernel` option in the top menu bar, as shown in the figure below.
 
-<p align="center"><img src="{{ images_path }}/04_jupyter_notebook_select_kernel.png" alt="Jupyter select kernel"></p>
+<img src="{{ images_path }}/04_jupyter_notebook_select_kernel.png" alt="Jupyter select kernel">
 
----
-
-# Python coding example <br> <i>- scatterplot by <b>plotly</b></i>
+# <button class="btn example before" data-before="CODING EXAMPLE"></button><br><i>scatterplot with <b>plotly</b></i>
 
 **Example Python-based notebook for creating scatterplot using Plotly.**
 
@@ -116,11 +118,11 @@ To check which Python kernel is currently selected, you can click on the kernel 
 <a href="https://plotly.com/" target="_blank">Plotly  ⤴</a> is a Python data visualization library that allows users to create interactive charts and plots that can be easily shared and published online.
 </div>
 
-**1. Install Requirements**
+## **1. Install Requirements**
 
-**Pandas and Plotly are not included in the standard Python library**, which means <span style="color: #ff3870;font-weight: 500;">they need to be installed separately</span> if you want to use them in your Python environment. You can install them using `pip` or `conda` package managers depending on your preference.
+**Pandas and Plotly are not included in the standard Python library**, which means <span class="c-required">they need to be installed separately</span> if you want to use them in your Python environment. You can install them using `pip` or `conda` package managers depending on your preference.
 
-**A.** Install system-wide with `pip` *(not recommended)*
+**A. Install system-wide with** `pip` *(not recommended)*
 
 When you install Pandas and Plotly using `pip`, the libraries are installed system-wide, which means they are available to all Python environments on your machine. This can be beneficial if you want to use these libraries across multiple projects or if you have multiple Python environments that need to access these libraries.
 
@@ -140,7 +142,7 @@ You can check if pip is installed by running `pip --version` in your terminal. I
 </div>
 
 
-**B.** Install within env with `conda` *(not recommended)*
+**B. Install within env with** `conda` *(not recommended)*
 
 Installing Pandas and Plotly using `conda` is a better choice in many cases because conda provides a complete package management system that allows you to manage your Python environments and dependencies more easily. It is a more robust and flexible solution than using `pip` alone.
 
@@ -177,7 +179,7 @@ conda install plotly
 ```
 *This way, your new project has its own isolated environment with its own set of dependencies.*
 
-Now, you are ready to launch Jupyter Lab interface in the activated Conda environment. <br>[**see STEP 2**]
+Now, you are ready to launch Jupyter Lab interface in the activated Conda environment. <br>[**see STEP 2**](#2-launch-jupyter-lab-interface-and-create-a-notebook)
 
 <div class="protip" markdown="1">
 The step-by-step guide, provided above, explains how to install new packages into the currently active environment using the conda install command. <base class="mb">
@@ -189,51 +191,44 @@ conda activate graphic_env
 </div>
 
 
-**2. Launch Jupyter Lab interface and create a notebook**
+## **2. Launch Jupyter Lab interface and create a notebook**
 
 Once you have all dependencies installed (python=3.9, pandas, plotly) (and activated) on your local machine, launch the Jupyter Lab interface by typing in your terminal:
 ```bash
 jupyter Lab
 ```
-
-<p align="center"><img width="800" src="{{ images_path }}/04_jupyter_launch.gif"></p>
-
 *That will open your Jupyter session in a web browser on localhost with a default URL: <a href="http://localhost:8889/lab" target="_blank">http://localhost:8889/lab  ⤴</a>.*
-
+<img width="800" src="{{ images_path }}/04_jupyter_launch.gif">
 
 Once the platform has loaded, you can start a new notebook:
 
-* using the Launcher shortcuts by clicking on the Python (Pyodide) button in the Notebook section
+* using the <button class="btn">Launcher</button> shortcuts by clicking on the Python (Pyodide) button
 
 or
 
-* using the top menu bar: File : New : Notebook and selecting Python (Pyodide) from the drop-down menu.
+* using the top menu bar: `File` → `New` → `Notebook` and selecting `Python` (Pyodide) from the drop-down menu.
 
+<img class="mb-0" alt="02_python-jupyter-try-notebook.png" src="{{ images_path }}/02_python-jupyter-try-notebook.png">
+<em class="footnote">^ The new notebook should appear as a new tab in your JupyterLab interface.</em>
 
-![02_python-jupyter-try-notebook.png]({{ images_path }}/02_python-jupyter-try-notebook.png)
-
-*The new notebook should appear as a new tab in your JupyterLab interface.*
-
-You can rename the notebook file by double clicking on the filename in the `File browser` panel on the left-hand side. *My notebook is called `scatterplot.ipynb`.*
+You can rename the notebook file by double clicking on the filename in the <button class="btn">File browser</button> panel on the left-hand side. *My notebook is called* `scatterplot.ipynb`
 
 ![02_python-jupyter-try-notebook-file.png]({{ images_path }}/02_python-jupyter-try-notebook-file.png)
 
 You can now start writing Python code in the notebook cells and running them by clicking on the `Run` button in the top menu bar or pressing `Shift + Enter` to run the current cell and select the cell below it.
 
-**3. Python coding example**
+## **3. Python coding example**
 
-**STEP A: Add a markdown cell in the notebook providing the introduction to your project.**
+### *STEP A: Add a markdown cell with the intro to your project*
 
 *You can copy the text provided below and paste it into the first cell in the notebook.*
 
-<div style="background: #e8e9e8; padding: 15px;">
-# Python-based ScatterPlot <br>
-In this project, we will explore the use of: <br>
-* `plotly`, a Python data visualization library, to create a scatterplot <br>
-* `DataFrame` object of the `pandas` library, to create a structured form of data <br><br>
+<code class="code-block bc-data"># Python-based ScatterPlot
+In this project, we will explore the use of: <br>* `plotly`, a Python data visualization library, to create a scatterplot <br>* `DataFrame` object of the `pandas` library, to create a structured form of data
+</code>
 
 *Through this exercise, we aim to showcase the potential of these powerful tools in effectively representing and visualizing complex data sets. By leveraging the capabilities of Plotly and Pandas, we hope to provide insights into the the expression levels of selected genes.*
-</div><br>
+
 
 Now, change the cell type from `code` to `markdown` in the top menu bar in the notebook section.
 
@@ -246,7 +241,7 @@ To learn more about `Markdown syntax` and benefits, check out the practical tuto
 To execute the cell press `Alt + Enter` ( use `option + return` for macOS ). <br>
 *This will render the markdown content and add a new cell below. By default, new cells are always of the `code` type.*
 
-**STEP B: Add a code cell to import required modules.**
+### *STEP B: Add a code cell to import required modules*
 
 In the next cell add Python code for all required imports, i.e., `numpy` and `matplotlib`.
 
@@ -260,46 +255,44 @@ import plotly.express as px                # to create scatterplot
 
 To execute the code cell, again press `Alt + Enter` ( use `option + return` for macOS ).
 
-**STEP C: Add a code cell to load/create input dataset.**
+### *STEP C: Add a code cell to load/create input dataset*
 
 In the next `code cell` add Python code for generating the sample dataset. <br>
 
 
-Let's assume we have a CSV file called `gene_expression.csv` that contains our gene expression data.
+Let's assume we have a CSV file called `gene_expression.csv` that contains gene expression data.
 
-<details><summary><b><i>Example contents of the input file:</i></b></summary>
+<details class="l-frame" markdown="1"><summary class="c-header"><b><i>Example contents of the input file:</i></b></summary>
 
-<code style="background-color: #e8e9e8;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-,Gene,Sample,Expression <br>
-0,Gene_A,Sample_0,0.018122 <br>
-1,Gene_B,Sample_0,0.854391 <br>
-2,Gene_C,Sample_0,0.927634 <br>
-3,Gene_D,Sample_0,0.086761 <br>
-4,Gene_E,Sample_0,0.023127 <br>
-5,Gene_A,Sample_1,0.644789 <br>
-6,Gene_B,Sample_1,0.713899 <br>
-7,Gene_C,Sample_1,0.212016 <br>
-8,Gene_D,Sample_1,0.224403 <br>
-9,Gene_E,Sample_1,0.111510 <br>
-10,Gene_A,Sample_2,0.170066 <br>
-11,Gene_B,Sample_2,0.393153 <br>
-12,Gene_C,Sample_2,0.312330 <br>
-13,Gene_D,Sample_2,0.933357 <br>
-14,Gene_E,Sample_2,0.821238 <br>
-15,Gene_A,Sample_3,0.422352 <br>
-16,Gene_B,Sample_3,0.757691 <br>
-17,Gene_C,Sample_3,0.188810 <br>
-18,Gene_D,Sample_3,0.894539 <br>
-19,Gene_E,Sample_3,0.655583 <br>
-20,Gene_A,Sample_4,0.259517 <br>
-21,Gene_B,Sample_4,0.592189 <br>
-22,Gene_C,Sample_4,0.655544 <br>
-23,Gene_D,Sample_4,0.185386 <br>
-24,Gene_E,Sample_4,0.716791 <br>
+<code class="code-block bc-data">,Gene,Sample,Expression
+0,Gene_A,Sample_0,0.018122
+1,Gene_B,Sample_0,0.854391
+2,Gene_C,Sample_0,0.927634
+3,Gene_D,Sample_0,0.086761
+4,Gene_E,Sample_0,0.023127
+5,Gene_A,Sample_1,0.644789
+6,Gene_B,Sample_1,0.713899
+7,Gene_C,Sample_1,0.212016
+8,Gene_D,Sample_1,0.224403
+9,Gene_E,Sample_1,0.111510
+10,Gene_A,Sample_2,0.170066
+11,Gene_B,Sample_2,0.393153
+12,Gene_C,Sample_2,0.312330
+13,Gene_D,Sample_2,0.933357
+14,Gene_E,Sample_2,0.821238
+15,Gene_A,Sample_3,0.422352
+16,Gene_B,Sample_3,0.757691
+17,Gene_C,Sample_3,0.188810
+18,Gene_D,Sample_3,0.894539
+19,Gene_E,Sample_3,0.655583
+20,Gene_A,Sample_4,0.259517
+21,Gene_B,Sample_4,0.592189
+22,Gene_C,Sample_4,0.655544
+23,Gene_D,Sample_4,0.185386
+24,Gene_E,Sample_4,0.716791
 </code>
-<i>This file contains 5 samples and 5 genes. Expression level is a random value between 0 and 1.</i>
-<br>
-</details><br>
+*This file contains 5 samples and 5 genes. Expression level is a random value between 0 and 1.*
+</details><base class="mt">
 
 We can load this file using Pandas function `read_csv()`. This assumes that the CSV file is in the same directory as the Jupyter notebook file.
 
@@ -355,22 +348,21 @@ This will create a **Pandas** `DataFrame` with 10 samples and 10 genes, where ea
 </div>
 
 
-
-**STEP D: Visualizing the Data with Plotly**
+### *STEP D: Visualizing the Data with Plotly*
 
 Now let's create a scatterplot of the gene expression levels using Plotly:
 
 ```python
 #1 Create scatterplot using Plotly library
 fig = px.scatter(
-        df,                                     # DataFrame object storing the data
-        x="Gene",                               # column header for the X-axis variable
-        y="Expression",                         # column header for the Y-axis values
-        color='Sample',                         # column header for the color grouping
+        df,                                  # DataFrame object storing the data
+        x="Gene",                            # column header for the X-axis variable
+        y="Expression",                      # column header for the Y-axis values
+        color='Sample',                      # column header for the color grouping
         title="Gene Expression Levels"
 )
 
-#2 Update graph layout                          # optional section, if you want to customize the plot
+#2 Update graph layout                       # optional section, if you want to customize the plot
 fig.update_layout(
     xaxis_title="Genes",
     yaxis_title="Expression",

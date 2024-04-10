@@ -1,5 +1,5 @@
 ---
-title: "Shell & IDLE: create Python code in a terminal or simple IDE"
+title: "Shell & IDLE: Python code in a terminal or simple IDE"
 note: (beginner)
 layout: single
 author: Aleksandra Badaczewska
@@ -18,18 +18,28 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
-Python comes with built-in options for live coding and immediate execution, which include the 1) **Python Shell** and 2) **Python IDLE**. Both options are **available without any additional installations** other than Python.
+Python comes with built-in options for live coding and immediate execution, which include: <br>
+<b class="prefix-3">Python Shell</b> <br>
+<b class="prefix-3">Python IDLE</b> <br>
+Both options are <span class="c-required">available without any additional requirements</span> other than Python installation.
 
-**Python Shell** is a built-in self-interpreter that can be activated directly in the terminal once Python is installed on a computing machine. This interpreter is also known as the REPL (Read-Evaluate-Print Loop). With Python shell you can write and execute **Python code directly in a terminal window**. <br>
-*You can easily start Python shell in a terminal using the `python` command (note: `python3` for Python3).*
 
-**Python IDLE** is an integrated development environment (IDE) for Python that provides a more advanced coding environment than the Python shell. With Python IDLE, you can write, edit, and run **Python code in a single window** *(separated from the terminal window)*. <br>
-*You can easily launch Python IDLE from a terminal using the `idle` command (note: `idle3` for Python3).*
+<table style="font-size: 0.9em;">
+  <tr> <td class="center-h"><b>Python Shell</b></td> <td class="center-h"><b>Python IDLE</b></td> </tr>
+  <tr>
+    <td><span markdown="1">is a built-in self-interpreter that can be activated directly in the terminal once Python is installed on a computing machine. This interpreter is also known as the REPL *(Read-Evaluate-Print Loop)*. With Python shell you can write and execute **Python code directly in a terminal**.</span></td>
+    <td><span markdown="1">is an integrated development environment (IDE) for Python that provides a more advanced coding environment than the Python shell. With Python IDLE, you can write, edit, and execute **Python code in a single window** *(separated from the terminal window)*.</span></td>
+  </tr>
+  <tr>
+    <td class="protip">You can easily start Python shell in a terminal using the <code>python</code> command (note: <code>python3</code> for Python3).</td>
+    <td class="protip">You can easily launch Python IDLE from a terminal using the <code>idle</code> command (note: <code>idle3</code> for Python3).</td>
+  </tr>
+</table>
+
+
 
 Here are some key differences between the Python Shell and IDLE:
 
@@ -49,80 +59,103 @@ If you're just starting out with Python or working on small projects, the Python
 
 To use Python Shell or IDLE, you first need to have Python installed on your computer. You can **download the latest version of Python** from the official Python website at <a href="https://www.python.org/downloads/" target="_blank">https://www.python.org/downloads/  ⤴</a>. Be sure to choose the version that is compatible with your operating system (Windows, macOS, or Linux).
 
-<details><summary>Windows:</summary>
+<details class="l-frame" markdown="1"><summary class="c-header">Windows:</summary>
 
-1. Go to the official Python website at <a href="https://www.python.org/downloads/windows/" target="_blank">https://www.python.org/downloads/windows/  ⤴</a>.<br>
-2. Scroll down to the "Download Python" section and click on the "Windows" button. <br>
-3. Scroll down to the "Stable Releases" section and click on the latest version of Python. <br>
-<p align="left"><img width="800" src="{{ images_path }}/02_python-windows.png"></p><br>
-4. Download the "Windows x86-64 executable installer" for 64-bit Windows or the "Windows x86 executable installer" for 32-bit Windows. <br>
+1. Go to the official Python website at <a href="https://www.python.org/downloads/windows/" target="_blank">https://www.python.org/downloads/windows/  ⤴</a>.
+2. Scroll down to the "Download Python" section and click on the <button class="btn"><a class="c-text" href="https://www.python.org/downloads/windows/" target="_blank">Windows</a></button> button.
+3. Scroll down to the "Stable Releases" section and click on the latest version of Python.
+<img width="1000" src="{{ images_path }}/02_python-windows.png">
+4. Download the `"Windows x86-64 executable installer"` for 64-bit Windows or <br>&nbsp;<span class="level-2">the</span> `"Windows x86 executable installer"` for 32-bit Windows.
 5. Run the installer and follow the on-screen prompts to complete the installation.
 </details>
 
-<details><summary>macOS:</summary>
+<details class="l-frame" markdown="1"><summary class="c-header">macOS:</summary>
 
-<b>A. MANUALLY</b> <br>
-1. Go to the official Python website at <a href="https://www.python.org/downloads/mac-osx/" target="_blank">https://www.python.org/downloads/mac-osx/  ⤴</a>.<br>
-2. Scroll down to the "Download Python" section and click on the latest version of Python. <br>
-<p align="left"><img width="800" src="{{ images_path }}/02_python-macos.png"></p><br>
-3. Download the macOS installer package. <br>
-4. Run the installer package and follow the on-screen prompts to complete the installation. <br><br>
+**A. MANUALLY**
+1. Go to the official Python website at <a href="https://www.python.org/downloads/mac-osx/" target="_blank">https://www.python.org/downloads/mac-osx/  ⤴</a>.
+2. Scroll down to the "Download Python" section and click on the latest version of Python.
+<img width="1000" src="{{ images_path }}/02_python-macos.png">
+3. Download the macOS installer package.
+4. Run the installer package and follow the on-screen prompts to complete the installation.
 
-<b>B. IN a TERMINAL</b> <br>
-1. Open the Terminal app on your Mac. <br>
-2. First, check if you have Homebrew installed using the <b>brew -h</b> command. If you received an error message "Command not found", then type the following command to install Homebrew (a package manager for macOS): <br>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+<base class="mt">
+**B. IN a TERMINAL**
+1. Open the Terminal app on your Mac.
+2. First, check if you have Homebrew installed using the `brew -h` command. <br>If you received an error message <em class="c-bad">"Command not found"</em>, then type the following command to install Homebrew *(a package manager for macOS)*:
+```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-</code><br>
-3. Wait for the installation to complete. <br>
-4. Type the following command to install the latest release of Python: <br>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```
+3. Wait for the installation to complete.
+4. Type the following command to install the latest release of Python:
+```bash
 brew install python
-</code><br>
-and if you need a specific version of Python, provide it with the <b>@</b> syntax: <br>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```
+and if you need a specific version of Python, provide it with the **@** syntax:
+```bash
 brew install python@3.9
-</code><br>
+```
 </details>
 
-<details><summary>Linux (Ubuntu and Debian):</summary>
+<details class="l-frame" markdown="1"><summary class="c-header">Linux (Ubuntu and Debian):</summary>
 
-1. Open a terminal window. <br>
-2. Type the following command to install Python: <br>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-sudo apt-get update <br>
+1. Open a terminal window.
+2. Type the following command to install Python:
+```bash
+sudo apt-get update
 sudo apt-get install python3
-</code><br>
+```
 </details>
 
-<details><summary>HPC system:</summary>
+<details class="l-frame" markdown="1"><summary class="c-header">HPC system:</summary>
 
-On a high-performance computing (HPC) system, it's common to have <b>multiple versions of Python pre-installed</b>. This is because different software packages and applications may require different versions of Python or specific Python packages. <br>
-To switch between different versions of Python on an HPC system, you can use the <b>module</b> command. The module command allows you to load and unload software modules, including different versions of Python.<br><br>
-0. Log in to the HPC system. <br
+On a high-performance computing (HPC) system, it's common to have **multiple versions of Python pre-installed**. This is because different software packages and applications may require different versions of Python or specific Python packages.
+To switch between different versions of Python on an HPC system, you can use the `module` command. The `module` command allows you to load and unload software modules, including different versions of Python.
+0. Log in to the HPC system.
 1. Type the following command to see a list of available Python modules:
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```bash
 module avail python
-</code><br>
-2. Look for the version of Python that you want to use. The module name will typically include the version number, such as <bpython/3.9.2</b>. <br
-3. Type the following command to load the Python module: <br>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-module load python/3.9.2
-</code><br>
-4. Wait for the module to be loaded. This may take a few seconds. <br>
-5. Type the following command to verify that the correct version of Python is being used: <br>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```
+<pre class="code-block bc-output level-1 mt-">[abadacz@nova23-1 ~]$ <span class="c-gray">module avail python</span>
+-------------- /opt/rit/el9/current/modules/lmod/linux-rhel9-x86_64/Core --------------
+   py-biopython/1.81-py310-wt5scj7              py-meson-python/0.13.1-py310-kvhvsds   (D)
+   py-gitpython/3.1.27-py310-pyitit6            py-python-dateutil/2.8.2-py39-rsw6pyr
+   py-ipython-genutils/0.2.0-py310-bnwyyxn      py-python-dateutil/2.8.2-py310-lnvzhiv (D)
+   py-ipython/8.11.0-py310-lbl246q              python/3.8.18-4j5jvxi
+   py-meson-python/0.12.0-py310-kvp7vmw         <span class="c-exercise">python/3.9.16-yukabfp</span>
+   py-meson-python/0.13.1-py39-py310-x75x5l2    python/3.10.10-zwlkg4l                 (D)
+   py-meson-python/0.13.1-py310-cnxhztb         r-findpython/1.0.7-py310-r42-a4fhsub
+Where:
+   D:  Default Module
+</pre>
+
+2. Look for the version of Python that you want to use. <br>*The module name will typically include the version number, such as* `python/3.9.16`
+3. Type the following command to load the Python module:
+```bash
+module load python/3.9.16-yukabfp
+```
+4. Wait for the module to be loaded. *This may take a few seconds.*
+<pre class="code-block bc-output level-1 mt-">[abadacz@nova23-1 ~]$ <span class="c-gray">module load python/3.9.16-yukabfp</span>
+[abadacz@nova23-1 ~]$
+</pre>
+5. Type the following command to verify that the correct version of Python is being used:
+```bash
 python --version
-</code><br>
-<i>This should display the version number of the Python interpreter that you just loaded.</i><br>
+```
+*This should display the version number of the Python interpreter that you just loaded.*
+<pre class="code-block bc-output level-1 mt-">[abadacz@nova23-1 ~]$ <span class="c-gray">python --version</span>
+Python 3.9.16
+</pre>
 </details>
 
-<br>
-<span style="color: #ff3870;font-weight: 500;">That's it! Once Python is installed on your computer, you can start using it to write and run Python code.</span>
+<base class="mt">
+<div class="protip before" data-before="That's it!" markdown="1">
+Once Python is installed on your computer, you can start using it to write and execute Python code.
+</div>
 
-**See the following sections [Python Shell](#python-shell) and [Python IDLE](#python-idle) to get started with Python on your machine.**
+<div class="more" markdown="1">
+See the following sections [Python Shell](#python-shell) and [Python IDLE](#python-idle) to get started with Python on your machine.
+</div>
 
----
 
 # Python Shell
 
@@ -134,38 +167,35 @@ To start the Python shell, you need to have Python installed on your computer. I
 
 Once you have installed Python, you can start the Python shell by following these steps:
 
-**1.** Open the terminal or command prompt on your computer.
+1. Open the terminal or command prompt on your computer.
 
-**2.** Type `python` or `python3`, depending on your system's configuration, and press `Enter` on your keyboard.
+2. Type `python` or `python3`, depending on your system's configuration, and press `Enter` on your keyboard.
 ```bash
 python3
 ```
 
-**3.** The Python Shell will start and display a prompt (`>>>`) where you can start entering Python commands.
+3. The Python Shell will start and display a prompt (`>>>`) where you can start entering Python commands. <br>
+<img width="1000" src="{{ images_path }}/02_python-shell.gif">
 
-<p align="center"><img width="800" src="{{ images_path }}/02_python-shell.gif"></p>
-
-**4.** To terminate the Python shell press `CTRL + D` or type `exit()` or `quit()` at the prompt and press Enter. <br>
-*You will automatically return to your basic shell (e.g., Bash).*
-
-**3'.** Once the Python shell is running, you can write and execute Python code directly in the shell without the need to create script files. For example, you can use the shell to perform simple calculations, experiment with Python syntax, or test out small code snippets.
-
+4. Once the Python shell is running, you can write and execute Python code directly in the shell without the need to create script files. For example, you can use the shell to perform simple calculations, experiment with Python syntax, or test out small code snippets. <base class="mb">
 Let's start with using the `print()` function to display the <i>"Hello, world!"</i> welcome messeage on the screen:
-
+```python
+print("Hello, world!")
+```
 ![02_python-shell.png]({{ images_path }}/02_python-shell.png)
-
 Now, you can try using the Python shell to perform a simple calculation:
-
 ```python
 a = 10
 b = 5
 c = a + b
 print(c)
 ```
+*In this example, we created three variables (a, b, c) in the Python shell and assigned the values using the* `=` *operator. We then used the* `+` *operator to add a and b together and assigned the result to the variable c. Finally, we printed the value of c to the console using the* `print()` *function.*
 
-*In this example, we created three variables (a, b, c) in the Python shell and assigned the values using the `=` operator. We then used the `+` operator to add a and b together and assigned the result to the variable c. Finally, we printed the value of c to the console using the `print()` function.*
-
----
+5. To terminate the Python shell press `CTRL + D` or type `exit()` or `quit()` at the prompt and press Enter. *You will automatically return to your basic shell (e.g., Bash).*
+<pre class="code-block bc-output level-1 mt-"><span class="c-gray">&gt;&gt;&gt;</span> exit()
+<b style="color: cyan;">abadacz</b>@MacBook<span class="c-gray">(bash):</span><b class="c-good">~</b><span class="c-bad">$</span>
+</pre>
 
 # Python IDLE
 
@@ -173,20 +203,21 @@ Integrated Development and Learning Environment (IDLE) is the default Python env
 Python IDLE is a **useful tool for learning and working with Python**, supporting the user with:
 
 * **interactive mode** <br>
-<i>Python IDLE allows you to run Python code interactively, which means you can enter code directly into the shell and see the results immediately. It can be very helpful when you're learning how to coding in Python.</i>
+*Python IDLE allows you to run Python code interactively, which means you can enter code directly into the shell and see the results immediately. It can be very helpful when you're learning how to coding in Python.*
 
 * **code editor** <br>
-<i>Python IDLE also includes a code editor that allows you to write and edit Python code in a more structured way than in interactive mode. The editor provides features such as syntax highlighting, indentation, and auto-completion to make it easier to write and read Python code.</i>
+*Python IDLE also includes a code editor that allows you to write and edit Python code in a more structured way than in interactive mode. The editor provides features such as syntax highlighting, indentation, and auto-completion to make it easier to write and read the code.*
 
 * **debugging** <br>
-<i>Python IDLE includes a debugger that allows you to step through your code line by line and inspect variables as you go. This can be very helpful when you're trying to track down a bug or understand how your code is working.</i>
+*Python IDLE includes a debugger that allows you to step through your code line by line and inspect variables as you go. This can be very helpful when you're trying to track down a bug or understand how your code is working.*
 
 * **help and documentation** <br>
-<i>Python IDLE provides access to Python's built-in help system, which allows you to look up information about Python functions, modules, and other features. This can be very helpful when you're trying to learn how to use a new feature or library in Python.</i>
+*Python IDLE provides access to Python's built-in help system, which allows you to look up information about Python functions, modules, and other features. This can be very helpful when you're trying to learn how to use a new feature or library in Python.*
 
 <div class="protip" markdown="1">
 If you're just getting started with Python, I would encourage you to give `Python IDLE` a try before the more advanced IDEs and see how it can help you on your learning journey. Once you have Python installed on your local machine, you can **use IDLE offline** any time without further configuration.
 </div>
+
 
 ## Launch an IDLE
 
@@ -194,31 +225,23 @@ Python IDLE can be launched from the command line or from your computer's applic
 
 To launch the Python IDLE from the terminal window, you can follow these steps:
 
-**1.** Open the terminal or command prompt on your computer.
+1. Open the terminal or command prompt on your computer.
 
-**2.** Type `idle` or `idle3`, depending on your system's configuration, and press `Enter` on your keyboard.
-*Start typing `idle`, then press the `TAB` key twice to display available IDLE variants.* <br>
+2. Type `idle` or `idle3`, depending on your system's configuration, and press `Enter`. <br>
+*Start typing `idle`, then press the `TAB` key twice to display available IDLE variants.*
+<img width="1000" src="{{ images_path }}/02_python-idle.gif">
 
-<p align="center"><img width="800" src="{{ images_path }}/02_python-idle.gif"></p>
-
-**3.** The Python IDLE will open in a separate window, providing you graphical user interface (GUI) with a `menu bar` on the top.
+3. The Python IDLE will open in a separate window, providing you graphical user interface (GUI) with a <button class="btn">menu bar</button> on the top.
 *By default, the first view in the IDLE is a Python Shell, which works the same as the interactive Python shell started directly in the terminal.*
 
-**4.** You can use the Python IDLE to create, edit, and run Python code.
-
-* To create a new Python file in IDLE, you can click `File > New File`, or press `Ctrl+N` on Windows or `Command+N` on Mac.
-
+4. You can use the Python IDLE to create, edit, and run Python code.
+* To create a **new Python file** in IDLE, click `File > New File`, or press `Ctrl+N` on Windows or `Command+N` on Mac.
 ![02_python-idle.png]({{ images_path }}/02_python-idle.png)
-
-* To save your code, you can click `File > Save`, or press `Ctrl+S` on Windows or `Command+S` on Mac. <br>
-<i>You can customize the file name and saving location in the pop-up dialog box.</i>
-
-* You can run your code in IDLE by clicking `Run > Run Module`, or pressing `F5` on your keyboard. <br>
-<i>The output will be displayed in the Python shell at the bottom of the IDLE window.</i>
-
+* To **save your code**, click `File > Save`, or press `Ctrl+S` on Windows or `Command+S` on Mac. *You can customize the file name and saving location in the pop-up dialog box.*
+* You can **run code in IDLE** by clicking `Run > Run Module`, or pressing `F5` on the keyboard. *The output will be displayed in the Python shell at the bottom of the IDLE window.*
 ![02_python-idle2.png]({{ images_path }}/02_python-idle2.png)
 
----
-
-<span style="color: #ff3870;font-weight: 500;">
-It is highly recommended to learn more about the basics of programming in Python</span> by working through the hands-on tutorials provided in Section {% include target_link href=531 text="05. Introduction to Programming / Introduction to Python programming." %} These tutorials cover topics such as variables, data types, operators, control flow statements, functions, and more.
+<base class="mt">
+<div class="more" markdown="1">
+It is highly recommended to learn more about the basics of programming in Python by working through the hands-on tutorials provided in section {% include target_link href=531 text="05. Introduction to Programming / Introduction to Python programming" %}. These tutorials cover topics such as variables, data types, operators, control flow statements, functions, and more.
+</div>

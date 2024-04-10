@@ -18,8 +18,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -57,7 +55,6 @@ For installing Python either pick Anaconda or local install via package manager.
 Due to incompatibilities between certain python libraries, it is highly recommended to manage python packages in virtual environments (`conda` , `venv` or equivalent), one environment per project.
 </div>
 
----
 
 # 1. Get Python locally
 
@@ -78,7 +75,7 @@ Many Linux distributions come with Python pre-installed, but if you need a diffe
 Some integrated development environments (IDEs) and text editors come with Python pre-installed or have built-in support for Python. For example, Anaconda and PyCharm are popular Python IDEs that come with Python pre-installed. <br>
 **Best for:** Windows, macOS, Linux
 
-
+<base class="mt">
 **PROS & CONS**
 
 | A. Official Installer | B. Package Manager | C. IDE, e.g., Anaconda |
@@ -89,9 +86,8 @@ Some integrated development environments (IDEs) and text editors come with Pytho
 | <em class="cons"></em> May require manual configuration for some systems | <em class="cons"></em> May not have the latest version of Python             | <em class="cons"></em> May not have the latest version of Python                           |
 | <em class="cons"></em> May not include additional packages and tools     | <em class="cons"></em> May require additional configuration to work properly | <em class="cons"></em> May require additional configuration to work properly              |
 
-
-^ Anaconda comes with an IDE that provides easier entry point *(recommended for Windows)*.<br>
-^ Local Install is more consistent for intermediate programmers.
+<p class="footnote">^ Anaconda comes with an IDE that provides easier entry point (recommended for Windows).<br>
+^ Local Install is more consistent for intermediate programmers.</p>
 
 ### *Which installation on my Operating System?*
 
@@ -109,56 +105,52 @@ If you prefer a pure python install (**only command line and without IDE**), ins
 
 *Follow the instructions for your operating system to install Python using an official installer.*
 
-<details><summary><b>WINDOWS</b> <i>(via GUI, recommended)</i></summary>
+<details class="l-frame" markdown="1"><summary class="c-header"><b>WINDOWS</b>&nbsp;<i>(via GUI, recommended)</i></summary>
 
-<br>
-<b>1.</b> Go to the official Python website at <a href="https://www.python.org/downloads/windows/" target="_blank">https://www.python.org/downloads/windows/  ⤴</a>. <br><br>
-<b>2.</b> Scroll down to the <b><i>Stable Releases</i></b> section and click on the: <br>
-<li><i>"Download Windows installer (64-bit)"</i> link if you have a 64-bit version of Windows, or</li>
-<li><i>"Download Windows installer (32-bit)"</i> link if you have a 32-bit version of Windows.</li> <br>
-<b>3.</b> Run the downloaded executable (`EXE`) file and follow the instructions in the installation wizard.
-<br><br>
+1. Go to the official Python website at <a href="https://www.python.org/downloads/windows/" target="_blank">https://www.python.org/downloads/windows/  ⤴</a>.
+2. Scroll down to the **Stable Releases** section and click on the:
+* *"Download Windows installer (64-bit)"* link if you have a 64-bit version of Windows, or
+* *"Download Windows installer (32-bit)"* link if you have a 32-bit version of Windows.
+3. Run the downloaded executable (`EXE`) file and follow the instructions in the installation wizard.
 </details>
 
-<details><summary><b>macOS</b> <i>(via GUI, recommended)</i></summary>
+<details class="l-frame" markdown="1"><summary class="c-header"><b>macOS</b>&nbsp;<i>(via GUI, recommended)</i></summary>
 
-<br>
-<b>1.</b> Go to the official Python website at <a href="https://www.python.org/downloads/macos/" target="_blank">https://www.python.org/downloads/macos/  ⤴</a>. <br><br>
-<b>2.</b> Scroll down to the <b><i>Stable Releases</i></b> section and click on the <i>"Download macOS 64-bit installer"</i>. <br><br>
-<b>3.</b> Run the downloaded `PKG` file and follow the instructions in the installation wizard. <br><br>
+1. Go to the official Python website at <a href="https://www.python.org/downloads/macos/" target="_blank">https://www.python.org/downloads/macos/  ⤴</a>.
+2. Scroll down to the **Stable Releases** section and click on the *"Download macOS 64-bit installer"*.
+3. Run the downloaded `PKG` file and follow the instructions in the installation wizard.
 </details>
 
-<details><summary><b>Linux</b> <i>(via CLI, not recommended)</i></summary>
+<details class="l-frame" markdown="1"><summary class="c-header"><b>Linux</b>&nbsp;<i>(via CLI, not recommended)</i></summary>
 
-<div style="background: mistyrose; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">WARNING:</span>
-<br><span style="font-style:italic;"> The installation process on Linux can vary depending on the distribution you're using. </span>
+<div class="warning" markdown="1">
+The installation process on Linux can vary depending on the distribution you're using.
 </div>
-<b>Here are some general steps for Ubuntu:</b><br>
-<b>1.</b> Open the terminal.
-<b>2.</b> Update your package list:
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+Here are some general steps for Ubuntu:
+1. Open the terminal.
+2. Update your package list:
+```bash
 sudo apt-get update
-</code><br>
-<b>3.</b> Install the required packages for Python:
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```
+3. Install the required packages for Python:
+```bash
 sudo apt-get install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev
-</code><br>
-<b>4.</b> Download the Python source code from the official website at <a href="https://www.python.org/downloads/source/" target="_blank">https://www.python.org/downloads/source/  ⤴</a>.<br><br>
-<b>5.</b> Extract the downloaded archive. <i>Replace "x.x.x" with the version number you downloaded.</i>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```
+4. Download the Python source code from the official website at <a href="https://www.python.org/downloads/source/" target="_blank">https://www.python.org/downloads/source/  ⤴</a>.
+5. Extract the downloaded archive. *Replace "x.x.x" with the version number you downloaded.*
+```bash
 tar -xf Python-x.x.x.tgz <br>
 cd Python-x.x.x
-</code><br>
-<b>6.</b> Configure the build options. <i>This will build a version of Python with optimizations enabled.</i>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```
+6. Configure the build options. <i>This will build a version of Python with optimizations enabled.
+```bash
 ./configure --enable-optimizations
-</code><br>
-<b>7.</b> Build and install Python. <i>Replace "N" with the number of cores in your CPU to speed up the build process.</i>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```
+7. Build and install Python. *Replace* `"N"` *with the number of cores in your CPU to speed up the build process.*
+```bash
 make -j N <br>
 sudo make install
-</code><br>
+```
 </details>
 
 
@@ -170,57 +162,55 @@ When you install Python using a package manager, you are getting the core Python
 Using a package manager from the command line allows you to easily install, update, and remove packages, including Python and its dependencies.
 </div>
 
-<b>WINDOWS</b> <i>(not available)</i>
+ &ensp; &ensp; <b class="c-header">WINDOWS</b> <i class="c-gray">(not available)</i>
 
-<details><summary><b>macOS</b> <i>(via CLI, recommended)</i></summary>
+<details class="l-frame" markdown="1"><summary class="c-header"><b>macOS</b>&nbsp;<i>(via CLI, recommended)</i></summary>
 
-<br>
-<b>Homebrew is a popular package manager for MacOS that can be used to install Python.</b><br><br>
-<b>0.</b> Install Homebrew, if needed: <br>
-<i>Install Homebrew by opening a terminal and running the following command:</i>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+<div class="note" markdown="1">
+Homebrew is a popular package manager for MacOS that can be used to install Python.
+</div>
+0. Install Homebrew *(if needed)*: by opening a terminal and running the following command:
+```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-</code><br>
-<b>1.</b> Once Homebrew is installed, run the following command to update the package list:
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```
+1. Once Homebrew is installed, run the following command to update the package list:
+```bash
 brew update
-</code><br>
-<b>2.</b> To install the latest version of Python available in Homebrew use the following command:
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```
+2. To install the latest version of Python available in Homebrew use the following command:
+```bash
 brew install python
-</code><br>
-<div style="background: #cff4fc; padding: 15px;">
-<span style="font-weight:800;">PRO TIP:</span>
-<br><span style="font-style:italic;">
+```
+<div class="protip level-1" markdown="1">
 If you want to install a specific version of Python, you can use the following command instead:
-</span>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```bash
 brew install python@3.9
-</code><br>
-<i>Replace "3.9" with the version number you want to install.</i>
-<br>
-</div><br>
+```
+*Replace* `"3.9"` *with the version number you want to install.*
+</div>
 </details>
 
+<details class="l-frame" markdown="1"><summary class="c-header"><b>Linux</b>&nbsp;<i>(via CLI, recommended)</i></summary>
 
-<details><summary><b>Linux</b> <i>(via CLI, recommended)</i></summary>
-
-<br>
-<b>Ubuntu</b> and <b>Debian</b> both use the apt package manager, which can be used to install Python. <br><br>
-<b>Here's how to install Python using apt:</b> <br><br>
-<b>1.</b> Open the terminal and run the following command to update the package list:
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+<div class="note" markdown="1">
+**Ubuntu** and **Debian** both use the apt package manager, which can be used to install Python.
+</div>
+*Here's how to install Python using* `apt` *:*
+1. Open the terminal and run the following command to update the package list:
+```bash
 sudo apt update
-</code><br>
-<b>2.</b> Install Python using the following command:
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```
+2. Install Python using the following command:
+```bash
 sudo apt install python3
-</code>
-<i>This will install the latest version of Python 3 available in the Ubuntu/Debian repositories.</i> <br><br>
+```
+*This will install the latest version of Python 3 available in the Ubuntu/Debian repositories.*
+<div class="protip level-1" markdown="1">
 If you want to install a specific version of Python, you can use the following command instead:
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```bash
 sudo apt install python3.9
-</code><br>
+```
+</div>
 </details>
 
 
@@ -234,63 +224,63 @@ Anaconda is a popular choice for data scientists, researchers, and developers wh
 
 **INSTALL ANACONDA** <a href="https://www.anaconda.com/products/distribution#Downloads" target="_blank">https://www.anaconda.com/products/distribution#Downloads  ⤴</a>
 
-<details><summary><b>Windows</b> <i>(recommended)</i></summary>
+<details class="l-frame" markdown="1"><summary class="c-header"><b>Windows</b>&nbsp;<i>(recommended)</i></summary>
 
 1. Download the Anaconda installer for Windows from the Anaconda website: <a href="https://www.anaconda.com/products/individual#windows" target="_blank">https://www.anaconda.com/products/individual#windows  ⤴</a> <br>
-2. Once the installer is downloaded, click on it to start the installation process. <i>Follow the prompts in the installer to choose the installation location, select any additional options or packages you would like to install, and complete the installation.</i> <br>
-3. After the installation is complete, open the <b>Anaconda Navigator</b> application from the <i>Start menu</i>. <br>
-4. From the Anaconda Navigator, you can <b>create a new Python environment</b> by clicking on the <b>"Environments" tab</b> and then clicking the <b>"Create"</b> button. Choose the name and Python version for the environment, and then click <b>"Create"</b> to create the new environment. <br>
-5. You can now install any additional packages or libraries you need using the <b>"Packages" tab</b> in the Anaconda Navigator, or by running the <code>conda install</code> command in a terminal or command prompt.
+2. Once the installer is downloaded, click on it to start the installation process. <br>
+*Follow the prompts in the installer to choose the installation location, select any additional options or packages you would like to install, and complete the installation.*
+3. After the installation is complete, open the **Anaconda Navigator** application from the <b class="btn pa-s">Start menu</b>.
+4. From the Anaconda Navigator, you can **create a new Python environment** by clicking on the <b class="c-alert">Environments tab</b> and then clicking the <b class="btn pa-s">Create</b> button. Choose the name and Python version for the environment, and then click <b class="btn pa-s">Create</b> to create the new environment.
+5. You can now install any additional packages or libraries you need using the <b class="c-alert">Packages tab</b> in the Anaconda Navigator, or by running the `conda install` command in a terminal or command prompt.
 </details>
 
-<details><summary><b>macOS</b></summary>
+<details class="l-frame" markdown="1"><summary class="c-header"><b>macOS</b></summary>
 
-1. Download the Anaconda installer for macOS from the Anaconda website: <a href="https://www.anaconda.com/products/individual#macos" target="_blank">https://www.anaconda.com/products/individual#macos  ⤴</a> <br>
-2. Once the installer is downloaded, open the <code>.dmg</code> file and run the Anaconda installer application. <br>
-3. Follow the prompts in the installer to choose the installation location, select any additional options or packages you would like to install, and complete the installation. <br>
-4. After the installation is complete, open the <bAnaconda Navigator</b> application from the <i>Applications folder</i>. <br>
-5. From the Anaconda Navigator, you can create a new Python environment by clicking on the <b>"Environments" tab</b> and then clicking the <b>"Create"</b> button. Choose the name and Python version for the environment, and then click <b>"Create"</b> to create the new environment. <br>
-6. You can now install any additional packages or libraries you need using the <b>"Packages" tab</b> in the Anaconda Navigator, or by running the <code>conda install</code> command in a terminal or command prompt.
+1. Download the Anaconda installer for macOS from the Anaconda website: <a href="https://www.anaconda.com/products/individual#macos" target="_blank">https://www.anaconda.com/products/individual#macos  ⤴</a>
+2. Once the installer is downloaded, open the `.dmg` file and run the Anaconda installer application.
+3. Follow the prompts in the installer to choose the installation location, select any additional options or packages you would like to install, and complete the installation.
+4. After the installation is complete, open the **Anaconda Navigator** application from the <b class="c-alert">Applications folder</b>.
+5. From the Anaconda Navigator, you can create a new Python environment by clicking on the <b class="c-alert">Environments tab</b> and then clicking the <b class="btn pa-s">Create</b> button. Choose the name and Python version for the environment, and then click <b class="btn pa-s">Create</b> to create the new environment.
+6. You can now install any additional packages or libraries you need using the <b class="c-alert">Packages tab</b> in the Anaconda Navigator, or by running the `conda install` command in a terminal or command prompt.
 </details>
 
-<details><summary><b>Linux</b></summary>
+<details class="l-frame" markdown="1"><summary class="c-header"><b>Linux</b></summary>
 
 1. Download the Anaconda installer for Linux from the Anaconda website: <a href="https://www.anaconda.com/products/individual#linux" target="_blank">https://www.anaconda.com/products/individual#linux  ⤴</a><br>
-<i>For example using wget command:</i><br>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+*For example using wget command:*
+```bash
 wget https://repo.anaconda.com/archive/Anaconda3-2022.10-Linux-x86_64.sh
-</code><br>
-2. Open a terminal and navigate to the directory where the Anaconda installer was downloaded. <br>
+```
+2. Open a terminal and navigate to the directory where the Anaconda installer was downloaded.
 3. Run the following command to make the installer executable:
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```bash
 chmod +x Anaconda*.sh
-</code><br>
-4. Run the Anaconda installer by running the following command, replacing <i>{version}</i> with the version number of the Anaconda installer:
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```
+4. Run the Anaconda installer by running the following command, replacing `{version}` with the version number of the Anaconda installer:
+```bash
 ./Anaconda{version}.sh
-</code><br>
-5. Follow the prompts in the installer to choose the installation location, select any additional options or packages you would like to install, and complete the installation. <br>
-6. After the installation is complete, open a new terminal window to activate the base environment by running the command:
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```
+5. Follow the prompts in the installer to choose the installation location, select any additional options or packages you would like to install, and complete the installation.
+6. After the installation is complete, **open a new terminal window** to activate the base environment by running the command:
+```bash
 conda activate base
-</code><br>
-7. From the terminal, you can create a new Python environment by running the following command, replacing <i>"myenv"</i> with the name you would like to give your environment.
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```
+7. From the terminal, you can **create a new Python environment** by running the following command, replacing `myenv` with the name you would like to give your environment.
+```bash
 conda create --name myenv python=3.9
-</code><br>
-8. Activate the new environment by running the command and replacing <i>"myenv"</i> with the name of your environment:
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```
+8. **Activate the new environment** by running the command and replacing `myenv` with the name of your environment:
+```bash
 conda activate myenv
-</code><br>
-9. You can now install any additional packages or libraries you need using the <code>conda</code> install command.
-</details><br>
+```
+9. You can now **install any additional packages or libraries** you need using the `conda install` command.
+</details>
 
 ![02_python-anaconda.png]({{ images_path }}/02_python-anaconda.png)
 
-Anaconda provides a **graphical user interface (GUI) called Anaconda Navigator**, which makes it easier to manage environments and packages using a point-and-click interface.
-![Anaconda Dashboard]({{ images_path }}/03-Anaconda.png)
+<p class="mb-" markdown="1">Anaconda provides a **graphical user interface (GUI) called Anaconda Navigator**, which makes it easier to manage environments and packages using a point-and-click interface.
+<img class="mb- mt-0" alt="Anaconda Dashboard" src="{{ images_path }}/03-Anaconda.png"></p>
 
----
 
 # 2. Select Development Environment
 
@@ -299,7 +289,6 @@ Choosing the right development environment is essential for coding in Python as 
 <div class="note" markdown="1">
 An Integrated Development Environment (**IDE**) is a software tool that provides a comprehensive set of features, including: code editing, debugging, testing, and deployment.
 </div>
-
 
 Here are some of the reasons **why choosing the right development environment is important**:
 
@@ -313,28 +302,37 @@ Here are some of the reasons **why choosing the right development environment is
 
 Choosing the **development environment for Python** projects depends on personal preferences, operating systems, and the specific requirements of the project. Some of the best choices include:
 * <a href="https://www.jetbrains.com/pycharm/" target="_blank"><b>PyCharm</b>  ⤴</a> is a powerful and popular development environment for Python <br>
-<span style="color: #ff3870;font-weight: 500;">Learn more from the hands-on tutorial:</span> {% include target_link href=427 text="PyCharm: IDE for professional Python developers" %}
+<button class="btn more"></button> <button class="btn c-good mr">HANDS-ON TUTORIAL</button> {% include target_link href=427 text="PyCharm: IDE for professional Python developers" %}
 
+<base class="mt">
 * <a href="https://code.visualstudio.com/" target="_blank"><b>Visual Studio Code</b> (VSC)  ⤴</a> is a lightweight and versatile code editor that can be used for Python development <br>
-<span style="color: #ff3870;font-weight: 500;">Learn more from the hands-on tutorial:</span> {% include target_link href=411 text="Visual Studio Code: multi-language integrated DE (VSC)" %}
+<button class="btn more"></button> <button class="btn c-good mr">HANDS-ON TUTORIAL</button>  {% include target_link href=411 text="Visual Studio Code: multi-language integrated DE (VSC)" %}
 
+<base class="mt">
 <ul><li> <a href="https://jupyter.org/" target="_blank"><b>Jupyter Notebook</b>  ⤴</a> is a web-based development environment that is ideal for Python-based data science <br>
-<span style="color: #ff3870;font-weight: 500;">Learn more from the hands-on tutorial:</span> {% include target_link href=412 text="Jupyter: interactive web-based multi-kernel DE" %}</li>
+<button class="btn more"></button> <button class="btn c-good mr">HANDS-ON TUTORIAL</button> {% include target_link href=412 text="Jupyter: interactive web-based multi-kernel DE" %}</li>
 <ul>
-  <li> {% include target_link href=413 level=1 %} </li>
+  <li> {% include target_link href=413 %} </li>
   <li> {% include target_link href=414 %} </li>
   <li> {% include target_link href=426 %} </li>
 </ul></ul>
 
-* <a href="https://replit.com/" target="_blank"><b>Repl.it</b>  ⤴</a> is an online development environment that supports multiple programming languages, including Python. **Note:** *It requires to sign up, a free plan includes 0.5 GB of account storage.*
+* <a href="https://replit.com/" target="_blank"><b>Repl.it</b>  ⤴</a> is an online development environment that supports multiple programming languages, including Python.
+<div class="warning level-1 mt-" markdown="1">
+It requires to sign up, a free plan includes 0.5 GB of account storage.
+</div>
 
 * <a href="https://www.vim.org/" target="_blank"><b>Vim</b>  ⤴</a> is a highly customizable and powerful in-terminal code editor <br>
-<span style="color: #ff3870;font-weight: 500;">Learn more from the hands-on tutorial:</span> {% include target_link href=322 text="Command Line text files editors: nano, vim" %}
+<button class="btn more"></button> <button class="btn c-good mr">HANDS-ON TUTORIAL</button> {% include target_link href=322 text="Command Line text files editors: nano, vim" %}
 
-**All of them can be used in Windows, macOS, and Linux.** <br>
-Follow a discussion on Python IDE - <a href="https://realpython.com/python-ides-code-editors-guide/" target="_blank">https://realpython.com/python-ides-code-editors-guide/  ⤴</a>
+<base class="mb">
+<em class="level-1">All of them can be used in Windows, macOS, and Linux.</em>
 
----
+
+<div class="protip mt" markdown="1">
+Follow a discussion on Python IDE at <a href="https://realpython.com/python-ides-code-editors-guide/" target="_blank">https://realpython.com/python-ides-code-editors-guide/</a>
+</div>
+
 
 # 3. Manage Python environments
 
@@ -374,7 +372,7 @@ It's generally not a good idea to mix Python environment managers because differ
 </div>
 
 
-## Conda
+## <b class="c-header">Conda</b>
 
 Conda is an open-source package management system and environment management system for installing and managing packages and dependencies in Python and other programming languages. It was developed by Anaconda, Inc. and is available as part of the Anaconda distribution, but it can also be installed separately.
 
@@ -382,13 +380,13 @@ Conda is an open-source package management system and environment management sys
 Conda allows users to create and **manage isolated environments for different projects** or workflows, each with its own set of packages and dependencies. This helps to ensure that each project has the specific versions of packages it needs, without conflicting with other projects or the base system.
 </div>
 
-**Install Conda**
+### *Install Conda*
 
-<span style="color: #ff3870;font-weight: 500;">When you [install Anaconda](#via-anaconda), Conda is installed alongside it as part of the distribution.</span><br>
-<b>However, if you choose to do a "pure Python" installation via package manager or official installer, Conda will not be pre-installed.</b> In this case, you will need to install Conda separately if you want to use it as your package manager for managing Python environments.
+<span class="c-alert">When you [install Anaconda](#via-anaconda), Conda is installed alongside it as part of the distribution.</span><br>
+However, if you choose to do a <u>pure Python installation</u> via package manager or official installer, **Conda will not be pre-installed**. In this case, you will need to install Conda separately if you want to use it as your package manager for managing Python environments.
 
 <div class="protip" markdown="1">
-The fastest way to obtain `conda` is to **install Miniconda**, a mini version of Anaconda that includes only conda and its dependencies. If you prefer to have conda plus over 7,500 open-source packages, install Anaconda. [source: <a href="https://conda.io/projects/conda/en/latest/user-guide/install/index.html#installation" target="_blank">https://conda.io/projects/conda  ⤴</a>]
+The fastest way to obtain `conda` is to **install Miniconda**, a mini version of Anaconda that includes only conda and its dependencies. If you prefer to have conda plus over 7,500 open-source packages, install Anaconda. <br>[source: <a href="https://conda.io/projects/conda/en/latest/user-guide/install/index.html#installation" target="_blank">https://conda.io/projects/conda  ⤴</a>]
 </div>
 
 **Practical Guides**<br>
@@ -396,29 +394,30 @@ Follow the up-to-date installation guide for **Miniconda** from the official doc
 
 You can also follow a step by step guide for installing **Conda Miniforge3 for both ARM and Intel chips** on your MacBook Pro in the tutorial {% include target_link href=231 section="#-install-conda" text="Installations on MacBook Pro / Install Conda" %}
 
-
+<base class="mb">
 Once you have installed Conda, you can use it to create and manage Python environments, install packages, and more.
 
-**Create & Manage Conda environment**
 
-**CREATE ENV:** You can create a new conda environment like so:
+### *Create & Manage Conda environment*
+
+<base class="mt"><b class="btn example before" data-before="CREATE ENV"></b> You can create a new conda environment like so:
 ```bash
 conda create --name my_env
 ```
 *This will create a new environment called "myenv".*
 
-**LIST ALL ENVs:** You can check the list of all available environments by typing:
+<base class="mt"><b class="btn example before" data-before="LIST ALL ENVs"></b> You can check the list of all available environments by typing:
 ```bash
 conda info -e
 ```
 
-**ACTIVATE ENV:** You can activate the selected environment by running:
+<base class="mt"><b class="btn example before" data-before="ACTIVATE ENV"></b> You can activate the selected environment by running:
 ```bash
 conda activate my_env
 ```
 *Once the environment is activated, any packages you install using conda will be installed only in that environment.*
 
-**INSTALL PACKAGE:** To install Python packages, *(e.g., Pandas)* using `conda`, you can run the following command in your terminal:
+<base class="mt"><button class="btn example before" data-before="INSTALL PACKAGE"></button> You can install Python packages, *(e.g., Pandas)* using `conda` like this:
 ```bash
 conda install pandas
 ```
@@ -449,7 +448,7 @@ pip install numpy==1.2.3
 ```
 *This will install the latest or selected (here: 1.2.3) version of the "numpy" package into your current Python environment.*
 
-**DEACTIVATE ENV:** To deactivate a Conda environment, you can use the following command:
+<base class="mt"><b class="btn example before" data-before="DEACTIVATE ENV"></b> To deactivate a Conda environment, use the following command:
 ```bash
 conda deactivate
 ```
@@ -459,10 +458,10 @@ conda deactivate
 It's important to note that **you should always deactivate your Conda environment** before switching to another environment or exiting your terminal or command prompt. This ensures that any changes or updates you have made to the environment are saved and that you don't accidentally install packages to the wrong environment.
 </div>
 
-<span style="color: #ff3870;font-weight: 500;">Learn more about CONDA commands from the <a href="https://kapeli.com/cheat_sheets/Conda.docset/Contents/Resources/Documents/index" target="_blank">Conda CheatSheet  ⤴</a></span>.
+<button class="btn more"></button> ...about CONDA commands from the <a href="https://kapeli.com/cheat_sheets/Conda.docset/Contents/Resources/Documents/index" target="_blank">Conda CheatSheet  ⤴</a>
 
 
-## venv
+## <b class="c-header">venv</b>
 
 Virtual environments are a useful tool for Python developers to manage dependencies and isolate project environments. `venv` **is the default virtual environment module that comes with Python 3**. It allows you to create and manage virtual environments directly from the command line.
 
@@ -472,32 +471,37 @@ Here is a useful resource for learning more about the default virtual environmen
 When you create a **virtual environment with venv, it is associated with the project directory** where you created it. Specifically, the virtual environment is created in a subdirectory of your project directory called env, which is where all the environment-specific files are stored. This allows you to easily manage dependencies and packages for each project separately.
 </div>
 
-**Install venv**
+### *Install venv*
 
 `venv` comes installed with Python 3, so you don't need to install anything extra to use it. <br> *However, if you're using an older version of Python or if venv is not available for some reason, you can install it with* `pip`:
 ```bash
 pip install virtualenv
 ```
 
-**Create venv environment**
+### *Create venv environment*
 
-**CREATE ENV:** To create a new virtual environment with `venv`, **navigate to your project directory** and run the following command:
+<base class="mt"><b class="btn example before" data-before="CREATE ENV"></b> To create a new virtual environment with `venv`, <br>**navigate to your project directory** and run the following command:
 ```bash
 python3 -m venv env
 ```
 *This will create a new virtual environment in a directory called "env". You can replace "env" with any name you like.*
 
-**LIST ALL ENVs:** Unfortunately, `venv` does not provide a built-in command to list all virtual environments created using it.
+<base class="mt"><b class="btn example before" data-before="LIST ALL ENVs"></b> Unfortunately, `venv` does not provide a built-in command to list all virtual envs.
 
 <div class="warning" markdown="1">
 If you choose to create the virtual environment in a different location than a root of a project or with a different name than "env", you'll need to remember that location/name and use it to activate the environment.
 </div>
 
-**ACTIVATE ENV:** To activate the virtual environment, run the following command:
+<base class="mt"><b class="btn example before" data-before="ACTIVATE ENV"></b> To activate the virtual environment, run the following command:
 ```bash
 source env/bin/activate
 ```
-*This will activate the virtual environment and change your prompt to indicate that you are now working inside the environment. You should see something like* `(env)` *at the beginning of your prompt.*
+*This will activate the virtual environment and change your prompt to indicate that you are now working inside the environment. You should see your* `(env)` *at the beginning of your prompt.*
+
+<pre class="bc-output">
+<b class="c-header">abadacz</b>@MacBook(bash):<b class="c-good">data_wrangling</b><span class="c-bad">$</span>                   # before
+(env) <b class="c-header">abadacz</b>@MacBook(bash):<b class="c-good">data_wrangling</b><span class="c-bad">$</span>             # after (env activated)
+</pre>
 
 <div class="warning" markdown="1">
 You need to **remember the path of the virtual environment** that you created for a given project if you want to activate and use that environment in the future. By default, `venv` creates the virtual environment in a subdirectory of your <u>project root directory</u> called **env**, so if you use this default location, you can always navigate to your project directory and activate the environment with the following command:</span>
@@ -506,20 +510,21 @@ source env/bin/activate
 ```
 </div>
 
-**INSTALL PACKAGE:** With the virtual environment activated, you can now install packages using `pip`, just like you would normally.
+<base class="mt"><b class="btn example before" data-before="INSTALL PACKAGE"></b> You can now install packages using `pip`, just like you would normally. <br>
+<span class="level-2"><em class="footnote level-2"> ^ (assuming the desired virtual environment is activated)</em></span>
 
-*For example, to install the "numpy" package, run the following command:*
+*For example, to install the* `numpy` *package, run the following command:*
 ```bash
 pip install numpy
 ```
 
-**DEACTIVATE ENV:** To deactivate the virtual environment, simply run the following command:
+<base class="mt"><b class="btn example before" data-before="DEACTIVATE ENV"></b> To deactivate the virtual environment, simply run the following command:
 ```bash
 deactivate
 ```
 
 
-## Docker
+## <b class="c-header">Docker</b>
 
 Docker is a containerization platform that allows you to package up an entire application, including its dependencies, into a single container that can be run on any system that has Docker installed.
 
@@ -527,20 +532,20 @@ Docker is a containerization platform that allows you to package up an entire ap
 Docker can be particularly useful when working on projects that have complex dependencies or that need to be run in specific environments.
 </div>
 
-**CREATE A DOCKER CONTAINER** <br>
-You can **create a Docker container for your Python application** by creating a *Dockerfile* that specifies the dependencies you need and how to run your application.
+### *Create a Docker container*
+You can **create a Docker container for your Python application** by creating a `Dockerfile` that specifies the dependencies you need and how to run your application.
 
 <div class="note" markdown="1">
 A Dockerfile is a text file that **contains a series of instructions for building a Docker image**. The `Dockerfile` specifies the base image to use, any additional software or dependencies to install, and any configuration or setup required for the container.
 </div>
 
-The Docker engine reads the Dockerfile and creates an image based on the instructions it contains. A Dockerfile typically starts with a `FROM` instruction, which specifies the base image to use for the container. Other instructions, such as `WORKDIR`, `COPY`, `RUN`, `ENV`, `EXPOSE`, and `CMD`, are used to configure the environment, install dependencies, and define the command to run when the container starts.
+The Docker engine reads the `Dockerfile` and creates an image based on the instructions it contains. A Dockerfile typically starts with a `FROM` instruction, which specifies the base image to use for the container. Other instructions, such as `WORKDIR`, `COPY`, `RUN`, `ENV`, `EXPOSE`, and `CMD`, are used to configure the environment, install dependencies, and define the command to run when the container starts.
 
 <div class="protip" markdown="1">
 By convention, the file is always named `Dockerfile` (with a capital **"D"** and no file extension), and it must be placed in the root directory of the "build context". The build context is the set of files and directories used to build the Docker image.
 </div>
 
-You can create a Dockerfile using a text editor like a command-line `nano` or `Visual Studio Code` with a graphical user interface. *For example, here's a* `Dockerfile` *template:*
+You can create a `Dockerfile` using a text editor like a command-line `nano` or `Visual Studio Code` with a graphical user interface. *For example, here's a* `Dockerfile` *template:*
 ```Dockerfile
 # Use a base image (in this case, Python 3.9)
 FROM python:3.9-slim-buster
@@ -584,19 +589,20 @@ docker build -t myimage:latest -f MyDockerfile .
 This command specifies that `Dockerfile` is named "MyDockerfile" and is located in the current directory `.`, and it sets the name of the resulting image to "myimage" with the latest tag.
 </div>
 
-<span style="color: #ff3870;font-weight: 500;">Learn more about Docker containers and Docker graphical user interface (GUI) from the practical tutorial</span> {% include target_link href=672.1 text="Docker - accelerated container application development" %} available in the {% include target_link href=670 text="Introduction to containers" %} section of this workbook.  
+<div class="more" markdown="1">
+...about Docker containers and Docker graphical user interface (GUI) from the practical tutorial {% include target_link href=672.1 text="Docker - accelerated container application development" %} available in the {% include target_link href=670 text="Introduction to containers" %} section of this workbook.
+</div>
 
----
 
-### *Manage Project Dependencies*
+# 4. Manage Project Dependencies
 
-Managing dependencies is an important part of working with Python projects, and each of the tools *(Conda, venv, and Docker)* has its own approach to managing dependencies.
+Managing dependencies is an important part of working with Python projects, and each of the tools ([Conda](#conda), [venv](#venv), and [Docker](#docker)) has its own approach to managing dependencies.
 
 <div class="protip" markdown="1">
 It is highly recommended to create a **requirements file** that is a common way to manage dependencies for Python projects, regardless of the tool you use. The file should list all of the packages required for the project, along with their version numbers, so that others can easily **install the same dependencies on another machine**.
 </div>
 
-The **requirements file** can be created: with
+The <b class="c-required">requirements file</b> can be created with:
 * the `conda env export` command for conda environments,
 * the `pip freeze` command for venv environments,
 * or by manually creating a `requirements.txt` file for Docker environments.
@@ -604,35 +610,35 @@ The **requirements file** can be created: with
 ---
 
 **CONDA** <br>
-When working with `conda`, you can create a **YAML file** that lists all of the packages in your environment, including the version numbers. This file can then be used to recreate the environment on another machine or to share with others who need to use the same dependencies.
+When working with `conda`, you can create a <b class="c-required">YAML file</b> that lists all of the packages in your environment, including the version numbers. This file can then be used to recreate the environment on another machine or to share with others who need to use the same dependencies.
 
 To create the YAML file, activate the environment you want to export and run the following command:
 ```bash
 conda env export > environment.yml
 ```
-*This will create a file named "environment.yml" in the current directory that contains the environment's name, a list of channels used to install packages, and a list of packages with their versions.*
+*This will create a file named* `environment.yml` *in the current directory that contains the environment's name, a list of channels used to install packages, and a list of packages with their versions.*
 
 ---
 
 **VENV** <br>
-When working with `venv`, you can create a **requirements.txt** file that lists all of the packages installed in the virtual environment, including their version numbers.
+When working with `venv`, you can create a <b class="c-required">requirements.txt</b> file that lists all of the packages installed in the virtual environment, including their version numbers.
 
 To create the file, activate the environment you want to export and run the following command:
 ```bash
 pip freeze > requirements.txt
 ```
-*This will create a file named "requirements.txt" in the current directory that contains a list of packages with their versions.*
+*This will create a file named* `requirements.txt` *in the current directory that contains a list of packages with their versions.*
 
 ---
 
 **DOCKER** <br>
-When working with `Docker`, you can include a **requirements.txt** file in your project directory and copy it to the Docker container during the build process. To do this, **include the following lines in your Dockerfile**:
+When working with `Docker`, you can include a <b class="c-required">requirements.txt</b> file in your project directory and copy it to the Docker container during the build process. To do this, **include the following lines in your Dockerfile**:
 ```Dockerfile
 COPY requirements.txt .
 
 RUN pip install -r requirements.txt
 ```
-*This will copy the "requirements.txt" file from the project directory to the Docker build context. Then, it will install all of the packages listed in the "requirements.txt" file in the Docker container.*
+*This will copy the* `requirements.txt` *file from the project directory to the Docker build context. Then, it will install all of the packages listed in the* `requirements.txt` *file in the Docker container.*
 
 <div class="protip" markdown="1">
 An example `requirements.txt` file for a **Docker environment** might look something like this:
@@ -646,30 +652,28 @@ matplotlib==3.4.3
 In this example, the file lists four **Python** packages (`Flask`, `Pandas`, `NumPy` and `Matplotlib`) along with their version numbers. These are just example packages, but you would list the packages that your project requires in the file.
 </div>
 
----
 
-# 4. Instal Python Libraries
+# 5. Instal Python Libraries
 
-Python pre-defined functions are made available as libraries *(also referred to as packages)* which need to be installed from somewhere. Python libraries can be indexed on CRAN, bioconductor and GitHub. What's the difference between installing from these locations?
+Python pre-defined functions are made available as `libraries`, also referred to as* `packages`, which need to be installed from somewhere. Python libraries can be indexed on CRAN, bioconductor and GitHub. What's the difference between installing from these locations?
 
-**1.** **PyPI** (Python Package Index) <br>
-This is the default package repository for Python packages. You can use the `pip` package manager to install packages from PyPI. <br>
-<i>For example, you can install the <b>requests</b> package by running:</i>
+### PyPI - Python Package Index
+Python Package Index (PyPI) is the default package repository for Python packages. You can use the `pip` package manager to install packages from PyPI. <br>
+*For example, you can install the* `requests` *package by running:*
 ```bash
 pip install requests
 ```
 
-<br>
-
-**2.** **Conda** <br>
-Conda is a package manager that is commonly used for scientific computing in Python. You can use the `conda` command to install packages from the Anaconda distribution or the default Conda package repository. <i>For example, you can install the <b>numpy</b> package by running:</i>
+### Conda
+Conda is a package manager that is commonly used for scientific computing in Python. You can use the `conda` command to install packages from the Anaconda distribution or the default Conda package repository. *For example, you can install the* `numpy` *package by running:*
 ```bash
 conda install numpy
 ```
-With `conda` you can also install packages from a specific channels *(repository of packages)* other than the defaults. To use the `conda install -c` command, you need to specify the <b>channel name</b> and the <b>package name</b>. <i>For example, you can install the <b>biopython</b> package from the bioconda channel by running:</i>
+With `conda` you can also install packages from a specific channels *(repository of packages)* other than the defaults. To use the `conda install -c` command, you need to specify the **hannel name** and the **package name**. *For example, you can install the* `biopython` *package from the bioconda channel by running:*
 ```bash
 conda install -c bioconda biopython
 ```
+<base class="mt">
 **The popular Conda channels for Python packages include:**
 * <a href="https://anaconda.org/anaconda" target="_blank">Anaconda  ⤴</a> &emsp; &emsp; `conda install -c anaconda <package>`
 * <a href="https://bioconda.github.io/" target="_blank">bioconda  ⤴</a> &emsp;&emsp; &nbsp; `conda install -c bioconda <package>`
@@ -678,9 +682,8 @@ conda install -c bioconda biopython
 * <a href="https://anaconda.org/nvidia" target="_blank">NVIDIA  ⤴</a> &emsp; &emsp; &emsp; `conda install -c nvidia <package>`
 * <a href="https://anaconda.org/intel" target="_blank">Intel  ⤴</a> &emsp; &emsp; &emsp; &emsp; `conda install -c intel <package>`
 
-<br>
 
-**3.** **GitHub python libraries** <br>
+### GitHub python libraries
 Many Python packages are available on GitHub, which is a platform for code hosting and collaboration. To install a Python package from GitHub, you can use the `pip` or `conda` package managers.
 
 Here are the general steps:
@@ -700,12 +703,12 @@ python setup.py sdist
 ```
 Then follow by installing with `pip` or `conda`.
 
-**INSTALL USING PIP:** <br>
+<b class="c-header">INSTALL USING PIP:</b>
 ```bash
 pip install .
 ```
 
-**INSTALL USING CONDA:** <br>
+<b class="c-header">INSTALL USING CONDA:</b>
 ```bash
 conda build .
 conda install --use-local <package>

@@ -18,8 +18,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -74,242 +72,230 @@ To create a Python script in a terminal, you can use a text editor such as:
 * `vim` &emsp;&emsp;&emsp;&emsp; *(moderate)*
 * `mcedit` &emsp;&emsp;&emsp;*(advanced)*
 
-<span style="color: #ff3870;font-weight: 500;">To learn more about text editors available in the terminal</span> (command-line interface) and their options, see tutorials in section {% include target_link href=300 %}, for example {% include target_link href=322 %}
+<div class="more" markdown="1">
+...about text editors available in the terminal *(command-line interface)* and their options, see tutorials in section {% include target_link href=300 %}, for example {% include target_link href=322 %}
+</div>
 
-## Script Example 1 in <b>nano</b> <br> *calculate the average*
+## <button class="btn example before" data-before="EXAMPLE: Script in nano"></button><br><i class="pa-s">calculate the average</i>
 
 Here's how you can create a new Python script using `nano`, a simple text editor that is typically available in the command line without installation.
 
-**1.** Open the terminal and navigate to the directory where you want to create the script.
+1. Open the terminal and navigate to the directory where you want to create the script.
+   ```bash
+   cd </file_system/location>
+   ```
 
-```bash
-cd </file_system/location>
-```
+2. Type the following command to open a new file in `nano`:
+   ```bash
+   nano calc_average.py
+   ```
+   *This will create a new file called* `"calc_average.py"`  *and open it in the* `nano` *text editor.*
+   ![02_python-nano1.png]({{ images_path }}/02_python-nano1.png)
 
-**2.** Type the following command to open a new file in `nano`:
+3. Type or paste Python code from the snippet below into the file.
+   <div class="protip" markdown="1">
+   Note that lines starting with the `#` sign are not executed.  It is how we **introduce commenting into the code**, which contains a description of individual code fragments. From the comments in the following code snippet, you will learn the role of the code in the next line.
+   </div>
+   ```python
+   #1 Get a list of numbers from user (typed in a terminal)
+   num_string = input("Enter a list of numbers separated by spaces: ")
 
-```bash
-nano calc_average.py
-```
-<i>This will create a new file called "calc_average.py"  and open it in the `nano` text editor.</i>
+   #2 Split the input string into a list of numbers
+   num_list = num_string.split()
 
-![02_python-nano1.png]({{ images_path }}/02_python-nano1.png)
+   #3 Convert each element of the list to a float
+   num_list = [float(x) for x in num_list]
 
-**3.** Type or paste Python code from the snippet below into the file.
+   #4 Calculate the average of the numbers
+   avg = sum(num_list) / len(num_list)
 
-<div class="protip" markdown="1">
-Note that lines starting with the `#` sign are not executed.  It is how we **introduce commenting into the code**, which contains a description of individual code fragments. From the comments in the following code snippet, you will learn the role of the code in the next line.
-</div>
+   #5 Print the result
+   print("The average is:", avg)
+   ```
 
-```python
-#1 Get a list of numbers from user (typed in a terminal)
-num_string = input("Enter a list of numbers separated by spaces: ")
+   <details class="l-frame" markdown="1"><summary class="c-header"><b><i>What the script does?</i></b></summary>
 
-#2 Split the input string into a list of numbers
-num_list = num_string.split()
+   <b class="c-header">#1 Get a list of numbers from user</b>
+   ```python
+   num_list = input("Enter a list of numbers separated by spaces: ")
+   ```
+   In this code line, we create the list called `num_list` which is filled up with numbers by using the Python built-in function `input()`. *This function prompts the user to type the input numbers in the command line once the script is executed.* The default format of entered numbers requires separating them by spaces. <base class="mt">
+   <b class="c-header">#2 Split the input string into a list of numbers</b>
+   ```python
+   num_list = num_list.split()
+   ```
+   When the user approves with `Enter` the completeness of the list of numbers, the script will proceed to the task in the next line of code. In this case, it will use the built-in `split()` function that separate the inputed string of numbers on spaces and create a list of words. <base class="mt">
+   <b class="c-header">#3 Convert each element of the list to a float</b>
+   ```python
+   num_list = [float(x) for x in num_list]
+   ```
+   Since the input function automatically converts the loaded information into a string variable (text) and mathematical operations work on numeric variables of type int (integer) or float (floating point), it is necessary to convert the list of words into a list of numbers. It can be done using the built-in `float()` function. The function takes a single variable as an argument, so you need to use a loop iterating through the list to convert all its elements into floating-point numbers. <base class="mt">
+   <b class="c-header">#4 Calculate the average of the numbers</b>
+   ```python
+   avg = sum(num_list) / len(num_list)
+   ```
+   In this step we use the next two built-in Python functions: <br>
+   * `sum()`, which takes a list of numbers as an argument and returns the sum of its elements
+   * `len()`, which returns the length of provided argument *(e.g., string or list)*, i.e., the number of elements in the list (in this case)
 
-#3 Convert each element of the list to a float
-num_list = [float(x) for x in num_list]
+   Each function returns a single numeric type value, so you can use the mathematical divide operator `/` on them to calculate the average. <base class="mt">
+   <b class="c-header">#5 Print the result</b>
+   ```python
+   print("The average is:", avg)
+   ```
+   Finally, we use a Python built-in function `print()` to display the message for the user on the screen with the calculated average of the inputted list of numbers.
+   </details> <base class="mt">
 
-#4 Calculate the average of the numbers
-avg = sum(num_list) / len(num_list)
+4. Save and exit the file by pressing `Ctrl+X`, then `Y`, and then `Enter` <br>
+*This will save your changes and exit the nano text editor.*
+<img width="1000" src="{{ images_path }}/02_python-nano.gif">
 
-#5 Print the result
-print("The average is:", avg)
-```
+5. You can now run your Python script from the terminal by typing:
+   ```bash
+   python calc_average.py
+   ```
+   *This will execute your script and print  to the console the average of user-provided numbers.*
 
-<details><summary><i><b>What the script does?</b></i></summary>
+   ![02_python-nano2.png]({{ images_path }}/02_python-nano2.png)
 
-<b>#1 Get a list of numbers from user</b>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-num_list = input("Enter a list of numbers separated by spaces: ")
-</code>
-In this code line, we create the list called <i>"num_list"</i> which is filled up with numbers by using the Python built-in function <b>input()</b>. This function prompts the user to type the input numbers in the command line once the script is executed. The default format of entered numbers requires separating them by spaces.
-<br><br>
-<b>#2 Split the input string into a list of numbers</b>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-num_list = num_list.split()
-</code>
-When the user approves with <i>Enter</i> the completeness of the list of numbers, the script will proceed to the task in the next line of code. In this case, it will use the built-in split() function that separate the inputed string of numbers on spaces and create a list of words.
-<br><br>
-<b>#3 Convert each element of the list to a float</b>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-num_list = [float(x) for x in num_list]
-</code>
-Since the input function automatically converts the loaded information into a string variable (text) and mathematical operations work on numeric variables of type int (integer) or float (floating point), it is necessary to convert the list of words into a list of numbers. It can be done using the built-in float() function. The function takes a single variable as an argument, so you need to use a loop iterating through the list to convert all its elements into floating-point numbers.
-<br><br>
-<b>#4 Calculate the average of the numbers</b>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-avg = sum(num_list) / len(num_list)
-</code>
-In this step we use the next two built-in Python functions: <br>
-<li><b>sum()</b>, which takes a list of numbers as an argument and returns the sum of its elements</li>
-<li><b>len()</b>, which returns the length of provided argument (e.g., string or list), i.e., the number of elements in the list (in this case)</li>
-Each function returns a single numeric type value, so you can use the mathematical divide operator <b>" / "</b> on them to calculate the average.
-<br><br>
-<b>#5 Print the result</b>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-print("The average is:", avg)
-</code>
-Finally, we use a Python built-in function <b>print()</b> to display the message for the user on the screen with the calculated average of the inputted list of numbers.
-</details><br>
 
-<span style="color: #ff3870;font-weight: 500;">Learn more about Python built-in functions such as </span><b>input(), split(), float(), sum(), len(), print(),</b> <span style="color: #ff3870;font-weight: 500;">and more from tutorials provided in section</span> {% include target_link href=500 %} :
+<div class="more mt" markdown="1">
+...about Python built-in functions such as `input()`, `split()`, `float()`, `sum()`, `len()`, `print()` and more from tutorials provided in section {% include target_link href=500 %} :
 * {% include target_link href=531 %}
 * {% include target_link href=531 section="#getting-started-with-python-programming" text="Python syntax and simple operations" %}
 * {% include target_link href=531 section="#functions" text="Python built-in functions" %}
-
-<br><br><br>
-**4.** Save and exit the file by pressing `Ctrl+X`, then `Y`, and then `Enter`. <br>
-<i>This will save your changes and exit the nano text editor.</i>
-
-<p align="left"><img width="800" src="{{ images_path }}/02_python-nano.gif"></p>
-
-**5.** You can now run your Python script from the terminal by typing:
-```bash
-python calc_average.py
-```
-<i>This will execute your script and print  to the console the average of user-provided numbers.</i>
-
-![02_python-nano2.png]({{ images_path }}/02_python-nano2.png)
+</div>
 
 ---
 
-## Script Example 2 in <b>vim</b> <br> *script for word counts*
+## <button class="btn example before" data-before="EXAMPLE: Script in vim"></button><br><i class="pa-s">script for word counts</i>
 
 *In this example, we create a script to count the number of occurrences of each word in a text.*
 
 Here's how you can create a new Python script using `vim`, an advanced text editor that is typically available on the HPC systems.
 
-**1.** Open the terminal and navigate to the directory where you want to create the script. <br>
-In this example, we use input data loaded from a text file instead of inputs interactively provided by a user. You can copy-paste the content of the sample `input.txt` file from the text box below.
+1. Open the terminal and navigate to the directory where you want to create the script. <br>
+   *In this example, we use input data loaded from a text file instead of inputs interactively provided by a user. You can copy-paste the content of the sample* `input.txt` *file from the text box below.*
 
-<pre><code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; font-size:0.8em;">
-This is a sample text file.
-It contains some text for counting the number of occurrences of each word.
-This is just a sample, but it can be used for testing the script.<br>
-</code></pre>
+   <code class="code-block bc-data">This is a sample text file.
+   It contains some text for counting the number of occurrences of each word.
+   This is just a sample, but it can be used for testing the script.
+   </code>
 
-**2.** Type the following command to open a new file in `vim`:
+2. Type the following command to open a new file in `vim`:
+   ```bash
+   vim count_words.py
+   ```
+   *This will create a new file called "count_words.py" and open it in the* `vim` *text editor.*
 
-```bash
-vim count_words.py
-```
-<i>This will create a new file called "count_words.py" and open it in the `vim` text editor.</i>
+   ![02_python-vim1.png]({{ images_path }}/02_python-vim1.png)
 
-![02_python-vim1.png]({{ images_path }}/02_python-vim1.png)
+3. Once the `vim` editor is activated, press the `i` key to enter insert mode and start typing your code or copy-paste it from the snippet below.
 
-**3.** Once the `vim` editor is activated, press the `i` key to enter insert mode and start typing your code or copy-paste it from the snippet below. <br>
+   <img width="1000" src="{{ images_path }}/02_python-vim1.gif">
+   *Select the text below, right-click on your mouse abd select* `Copy` *from the pop-up menu. Go to the* `vim` *editor in your terminal and use the right-click again, this time select the* `Paste` *option.*
 
-<p align="left"><img width="800" src="{{ images_path }}/02_python-vim1.gif"></p>
+   ```python
+   #1 Open the input file
+   with open("input.txt", "r") as f:
+       word_count = {}                        ## Create an empty dictionary to hold the word counts
+       for line in f:                         ## Loop over each line in the file
+           words = line.strip().split()       ## Split the line into words
+           for word in words:                 ## Loop over each word in the line
+               if word in word_count:         ## Increment the word count if the word is already in the dictionary
+                   word_count[word] += 1
+               else:                          ## Add the word to the dictionary if it's not already there
+                   word_count[word] = 1
 
-<i>Select the text below, right-click on your mouse abd select `Copy` from the pop-up menu. Go to the `vim` editor in your terminal and use the right-click again, this time select the `Paste` option.</i>
+   #2 Print the word counts
+   for word, count in word_count.items():
+       if count > 1 and len(word) > 1:        ## skip 1-letter words aand those with counts less than 2
+           print(f"{word}: {count}")
+   ```
+   <details class="l-frame" markdown="1"><summary class="c-header"><b><i>What the script does?</i></b></summary>
 
-```python
-#1 Open the input file
-with open("input.txt", "r") as f:
-    word_count = {}                        ## Create an empty dictionary to hold the word counts
-    for line in f:                         ## Loop over each line in the file
-        words = line.strip().split()       ## Split the line into words
-        for word in words:                 ## Loop over each word in the line
-            if word in word_count:         ## Increment the word count if the word is already in the dictionary
-                word_count[word] += 1
-            else:                          ## Add the word to the dictionary if it's not already there
-                word_count[word] = 1
+   <b class="c-header">#1 Open the input file</b>
+   ```python
+   with open("input.txt", "r") as f:
+   ```
+   In this code line, we open text a file called `"input.txt"`, which contains sample text that serves as input for the script processing task. <br>
+   To do so, we use the Python built-in function `open()`, which takes 2 arguments here: <br>
+    &emsp; 1) the path and filename of the input file, and <br>
+    &emsp; 2) a processing mode "r" that is a shortcut for *"reading"*. <base class="mb">
+   The file is processed line by line in the `for` loop:
+   ```python
+   for line in f:
+   ```
+   where the string of words is separated to the list of words called `words`:
+   ```python
+   words = line.strip().split()
+   ```
+   The `words` list is overwritten in each iteration, i.e., for each line in the file.
+   ```python
+   for word in words:
+   ```
+   This inner `for` loop is used to browse the `words` list in each external iteration to increment the counts for previously registered words:
+   ```python
+   if word in word_count:
+       word_count[word] += 1
+   ```
+   and, add a new unique word to the "word_count" dictionary:
+   ```python
+   else:
+       word_count[word] = 1
+   ```
+   The `word_count` is a dictionary, i.e., a type of Python object declared by `{}` and composed of **key:value** pairs separated by commas, for example:
+   ```python
+   word_count = {'This' : 2, 'is' : 2, 'text' : 2, 'for' : 3, 'example' : 1}
+   ```
+   <base class="mt">
+   <b class="c-header">#2 Print the word counts</b><br>
+   The dictionary is filled with **key:value** pairs by the script's algorithm and stored in the memory as long as the script is active. This way, the extracted and structured information can be passed on to the next task in the script. For example, once the input file `"input.txt"` is processed to the end, the next task can be to filter out words shorter than 2 letters and further print only these counted more then once.<br>
 
+   <div class="warning" markdown="1">
+   Note that in this case, we used a different syntax for the built-in print() function:
+   ```python
+   print(f"{variable} text {variable}")
+   ```
+   <base class="mb">
+   It allows for easier way of merging text-like with non-text `{variables}`.
+   </div>
+   </details><base class="mt">
+   <div class="protip" markdown="1">
+   It is a good practice to separate blocks of code for different tasks in the script and provide comments for better readability and understanding of the code. This can be done by using comments `#` at the top of each code block to explain its general purpose. Additionally, comments `##` can be added to the end of specific lines that may not be immediately obvious what their purpose is.
+   </div><base class="mt">
 
-#2 Print the word counts
-for word, count in word_count.items():
-    if count > 1 and len(word) > 1:        ## skip 1-letter words aand those with counts less than 2
-        print(f"{word}: {count}")
-```
+4. Once you are done editing, press the `Esc` key to exit insert mode.
+   * To save the changes, type `:w` and press `Enter`. *This will save the file.*
+   * To exit Vim, type `:q` and press `Enter`. <br>
+   *If you have unsaved changes, Vim will warn you and you can type* `:q!` *to force quit without saving, or* `:wq` *to save and quit.*
 
-<details><summary><i><b>What the script does?</b></i></summary>
+   <img width="1000" src="{{ images_path }}/02_python-vim2.gif">
 
-<b>#1 Open the input file</b>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-with open("input.txt", "r") as f:
-</code>
-In this code line, we open text a file called <i>"input.txt"</i>, which contains sample text that serves as input for the script processing task. To do so, we use the Python built-in function <b>open()</b>, which takes 2 arguments here, 1) the path and filename of the input file, and 2) a processing mode "r" that is a shortcut for "reading".
-<br><br>
-The file is processed line by line in the <b>for</b> loop:
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-for line in f:
-</code>
-where the string of words is separated to the list of words called "words":
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-words = line.strip().split()
-</code>
-The "words" list is overwritten in each iteration, i.e., for each line in the file.
-The inner <b>for</b> loop:
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-for word in words:
-</code>
-is used to browse the "words" list in each external iteration to increment the counts for previously registered words:
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-if word in word_count: <br>
- &emsp; &emsp;  word_count[word] += 1
-</code>
-and, add a new unique word to the "word_count" dictionary:
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-else: <br>
- &emsp; &emsp; word_count[word] = 1
-</code><br>
-The "word_count" is a dictionary, i.e., a type of Python object declared by {} and composed of key:value pairs separated by commas, for example:
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-word_count = {'This' : 2, 'is' : 2, 'text' : 2, 'for' : 3, 'example' : 1}
-</code><br>
-<b>#2 Print the word counts</b><br>
-The dictionary is filled with key:value pairs by the script's algorithm and stored in the memory as long as the script is active. This way, the extracted and structured information can be passed on to the next task in the script. For example, once the input file "input.txt" is processed to the end, the next task can be to filter out words shorter than 2 letters and further print only these counted more then once.<br>
+5. Once you're done editing and saving the file, you can run it in the terminal by typing:
+   ```bash
+   python3 count_words.py
+   ```
+   *This time we execute the script with the keyword* `python3` *to emphasize that the* `print()` *function with argument syntax* `f"{variable}"` *is available in the python3 variant only. <br>If you have Python in version 2, see the syntax for the* `print()` *function in* [Example 1: calculate the average](#calculate-the-average).
 
-<div class="warning" markdown="1">
-Note that in this case, we used a different syntax for the built-in print() function:
-```python
-print(f"{variable} text {variable}")
-```
-<base class="mt">
-It allows for easier way of merging text-like with non-text `{variables}`.
-</div>
-</details><br>
+   <div class="warning" markdown="1">
+   Remember that the script configuration (in this case) requires the <u>input file</u> (called "input.txt") to be in the same location as the script.
+   </div>
 
+   *This will execute your script and print to the console the words with at least 2 counts and at least 2-letter long.*
 
-<div class="protip" markdown="1">
-It is a good practice to separate blocks of code for different tasks in the script and provide comments for better readability and understanding of the code. This can be done by using comments `#` at the top of each code block to explain its general purpose. Additionally, comments `##` can be added to the end of specific lines that may not be immediately obvious what their purpose is.
-</div>
+   ![02_python-vim2.png]({{ images_path }}/02_python-vim2.png)
 
-<span style="color: #ff3870;font-weight: 500;">Learn more about Python built-in functions such as </span><b>open(), strip(), split(), items(), len(), print(f""), Python loops and built-in objects </b> <span style="color: #ff3870;font-weight: 500;">from tutorials provided in section</span> {% include target_link href=500 %} :
+<div class="more" markdown="1">
+...about Python built-in functions such as `open()`, `strip()`, `split()`, `items()`, `len()`, `print(f"")`, **Python loops and built-in objects** from tutorials provided in section {% include target_link href=500 %} :
 * {% include target_link href=531 %}
 * {% include target_link href=531 section="#getting-started-with-python-programming" text="Python syntax and simple operations" %}
 * {% include target_link href=531 section="#functions" text="Python built-in functions" %}
-
-<br><br><br>
-**4.** Once you are done editing, press the `Esc` key to exit insert mode. <br>
-* To save the changes, type `:w` and press `Enter`. *This will save the file.*
-* To exit Vim, type `:q` and press `Enter`. <br>
-<i>If you have unsaved changes, Vim will warn you and you can type `:q!` to force quit without saving, or `:wq` to save and quit.</i>
-
-<p align="left"><img width="800" src="{{ images_path }}/02_python-vim2.gif"></p>
-
-**5.** Once you're done editing and saving the file, you can run it in the terminal by typing:
-
-```bash
-python3 count_words.py
-```
-
-*This time we execute the script with the keyword `python3` to emphasize that the print() function with argument syntax `f"{variable}"` is available in the python3 variant only. If you have Python in version 2, see the syntax for the print() function in Example 1.*
-
-<div class="warning" markdown="1">
-Remember that the script configuration (in this case) requires the <u>input file</u> (called "input.txt") to be in the same location as the script.
 </div>
-
-<i>This will execute your script and print to the console the words with at least 2 counts and at least 2-letter long.</i>
-
-![02_python-vim2.png]({{ images_path }}/02_python-vim2.png)
-
 
 ---
 
-## Script Example 3 in <b>mcedit</b> <br> *password generator*
+## <button class="btn example before" data-before="EXAMPLE: Code in mcedit"></button><br><i class="pa-s">password generator</i>
 
 *This script can be used to generate strong and random passwords for users. It uses the `string` and `random` modules to generate the text strings that can serve as passwords.*
 
@@ -321,128 +307,125 @@ Here's how you can create a new Python script using `mcedit`, an advanced text e
 
 ![02_python-mcedit.png]({{ images_path }}/02_python-mcedit.png)
 
-**0.** If you haven't already done so, install the midnight commander package that provides you with the editor `mcedit`.
+1. If you haven't already done so, install the midnight commander package that provides you with the editor `mcedit`.
 
-<details><summary>Windows:</summary>
+   <details class="l-frame" markdown="1"><summary class="c-header">Windows:</summary>
 
-1. To install MC on Windows, you need to download the Windows version of MC from the official website <a href="https://midnight-commander.org/downloads/" target="_blank">https://midnight-commander.org/downloads/  ⤴</a>. <br>
-2. Once downloaded, run the executable file and follow the installation instructions to complete the installation. <br>
-3. You may need to add the path to the MC executable to your system's environment variables to use it from the command line. <br>
-</details>
+   1. To install MC on Windows, you need to download the Windows version of MC from the official website <a href="https://midnight-commander.org/downloads/" target="_blank">https://midnight-commander.org/downloads/  ⤴</a>.
+   2. Once downloaded, run the executable file and follow the installation instructions to complete the installation.
+   3. You may need to add the path to the MC executable to your system's environment variables to use it from the command line.
+   </details>
 
-<details><summary>macOS:</summary>
+   <details class="l-frame" markdown="1"><summary class="c-header">macOS:</summary>
 
-To install MC on macOS, you can use Homebrew, a package manager for macOS. <br>
-If you haven't done this already, install Homebrew by following the instructions on its website <a href="https://brew.sh/" target="_blank">https://brew.sh/  ⤴</a>
-1. Once Homebrew is installed, open Terminal and run the following command:
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-brew install midnight-commander
-</code>
-<i>This will download and install MC and all its dependencies.</i>
-<br><br>
-</details>
+   To install MC on macOS, you can use Homebrew, a package manager for macOS.
+   If you haven't done this already, install Homebrew by following the instructions on its website <a href="https://brew.sh/" target="_blank">https://brew.sh/  ⤴</a> <base class="mb">
+   Once Homebrew is installed, open Terminal and run the following command:
+   ```bash
+   brew install midnight-commander
+   ```
+   *This will download and install MC and all its dependencies.*
+   </details>
 
-<details><summary>LINUX: Ubuntu/Debian:</summary>
+   <details class="l-frame" markdown="1"><summary class="c-header">LINUX: Ubuntu/Debian:</summary>
 
-Open Terminal and run the following command:
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-sudo apt-get update <br>
-sudo apt-get install mc
-</code><br>
-</details><br>
+   Open Terminal and run the following command:
+   ```bash
+   sudo apt-get update <br>
+   sudo apt-get install mc
+   ```
+   </details> <base class="mt">
 
-<div class="protip" markdown="1">
-If `mc` is not available in your distribution's official repositories, you can download the source code from the official website and compile it yourself. The instructions for doing so are provided on the website <a href="https://midnight-commander.org/     " target="_blank">https://midnight-commander.org/  ⤴</a>.
-</div>
+   <div class="protip" markdown="1">
+   If `mc` is not available in your distribution's official repositories, you can download the source code from the official website and compile it yourself. The instructions for doing so are provided on the website <a href="https://midnight-commander.org/" target="_blank">https://midnight-commander.org/  ⤴</a>.
+   </div>
 
-**1.** Open the terminal and navigate to the directory where you want to create the script. <br>
+2. Open the terminal and navigate to the directory where you want to create the script.
 
-**2.** Type the following command to open a new file in `mcedit`:
+3. Type the following command to open a new file in `mcedit`:
 
-```bash
-mcedit generate_password.py
-```
-<i>This will create a new file called "generate_password.py" and open it in the `mcedit` text editor.</i>
+   ```bash
+   mcedit generate_password.py
+   ```
+   *This will create a new file called* `"generate_password.py"` *and open it in the* `mcedit` *text editor.*
 
-![02_python-mcedit1.png]({{ images_path }}/02_python-mcedit1.png)
+   ![02_python-mcedit1.png]({{ images_path }}/02_python-mcedit1.png)
 
-**3.** Type or paste Python code from the snippet below into the file.
+4. Type or paste Python code from the snippet below into the file.
 
-```python
-#0 Import external modules to bring in their functionality into the script
-import string
-import random
+   ```python
+   #0 Import external modules to bring in their functionality into the script
+   import string
+   import random
 
-#1 Create a function that generates randomized password
-def generate_password(length):
-    chars = string.ascii_letters + string.digits + string.punctuation    ## Define the base of characters
-    password = ''.join(random.choice(chars) for i in range(length))      ## Generate the password
-    return password
+   #1 Create a function that generates randomized password
+   def generate_password(length):
+       chars = string.ascii_letters + string.digits + string.punctuation    ## Define the base of characters
+       password = ''.join(random.choice(chars) for i in range(length))      ## Generate the password
+       return password
 
+   #2 Call the function to generate a password with selected length
+   generate_password(input("Enter a lenth of the password:"))               ## password of user-provided length
+   #password = generate_password(10)                                        ## password with length 10
+   print(password)
+   ```
 
-#2 Call the function to generate a password with selected length
-generate_password(input("Enter a lenth of the password:"))               ## password of user-provided length
-#password = generate_password(10)                                        ## password with length 10
-print(password)
-```
+   <details class="l-frame" markdown="1"><summary class="c-header"><b><i>What the script does?</i></b></summary>
 
-<details><summary><i><b>What the script does?</b></i></summary>
+   <b class="c-header">#0 Import external modules</b><br>
+   In Python, <b>import statements are used to bring in external modules</b> or libraries into the current script, making their functionality available for use. For example, the <b>string</b> module contains a collection of useful string manipulation functions. The <b>random</b> module contains functions to generate random numbers, such as <i>random()</i>.
+   <base class="mt">
+   <b class="c-header">#1 Create a function that generates randomized password</b><br>
+   By defining a function, we can execute the code encapsulated within the function body multiple times within the same script by calling the function name. If the function takes arguments, e.g., a "length" in our function, the result returned by a function will depend on the value of the input argument.
 
-<b>#0 Import external modules</b><br>
-In Python, <b>import statements are used to bring in external modules</b> or libraries into the current script, making their functionality available for use. For example, the <b>string</b> module contains a collection of useful string manipulation functions. The <b>random</b> module contains functions to generate random numbers, such as <i>random()</i>.
-<br><br>
-<b>#1 Create a function that generates randomized password</b><br>
-By defining a function, we can execute the code encapsulated within the function body multiple times within the same script by calling the function name. If the function takes arguments, e.g., a "length" in our function, the result returned by a function will depend on the value of the input argument. <br>
+   <div class="protip" markdown="1">
+   Defining functions can significantly reduce the amount of code duplication and make it easier to modify or update the code in the future.
+   </div>
 
-<div class="protip" markdown="1">
-Defining functions can significantly reduce the amount of code duplication and make it easier to modify or update the code in the future.
-</div>
+   First, within the function body, we define the base of characters used to generate a password. We Create a string of characters imported from the <b>string</b> module as a combination of ASCII letters, digits, and punctuation characters:
+   ```python
+   chars = string.ascii_letters + string.digits + string.punctuation
+   ```
+   Next, we use a `for` loop to draw `N=length` times a single character from the pool of all chars. The list of selected characters is converted to a string (single word) using the `''.join(list)` function syntax.
+   ```python
+   password = ''.join(random.choice(chars) for i in range(length))
+   ```
+   Finally, the function uses the special keyword <b>return</b> followed by a variable passed on as the expected result.
+   <base class="mt">
+   <b class="c-header">#2 Call the function to generate a password</b><br>
+   In this code block, you can decide with what argument value to call the function. In particular, you can pass the value of an argument directly or as the result of another operation, or use the input() function to take a value entered interactively by the final user of the code.
+   </details>
 
-First, within the function body, we define the base of characters used to generate a password. We Create a string of characters imported from the <b>string</b> module as a combination of ASCII letters, digits, and punctuation characters:
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-chars = string.ascii_letters + string.digits + string.punctuation
-</code><br>
-Next, we use a <b>for</b> loop to draw <i>N=length</i> times a single character from the pool of all chars. The list of selected characters is converted to a string (single word) using the <b>''.join(list)</b> function syntax.
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-password = ''.join(random.choice(chars) for i in range(length))
-</code><br>
-Finally, the function uses the special keyword <b>return</b> followed by a variable passed on as the expected result.
-<br><br>
-<b>#2 Call the function to generate a password</b><br>
-In this code block, you can decide with what argument value to call the function. In particular, you can pass the value of an argument directly or as the result of another operation, or use the input() function to take a value entered interactively by the final user of the code.
-</details><br>
+   <div class="protip" markdown="1">
+   Defining a function for a repetitive task can save you time and effort. If you have a task that needs to be done several times with only the input parameters changing, consider **defining a function** that can take those parameters as arguments. This will not only make your code more readable and maintainable, but it will also save you from writing the same code multiple times.
+   ```python
+   def function_name(argument1, argument2):
+       # function body
+       return "result"
+   ```
+   </div><base class="mt">
 
+5. Once you are done editing, press the `F2` key to save changes. <br><b class="footnote c-alert" markdown="1">Note: Use `fn` and `F2` together on macOS</b><base class="mb">
+   To exit MCedit, press `Esc`, then `0`. <br>
+   <img width="1000" src="{{ images_path }}/02_python-mcedit.gif">
 
-<div class="protip" markdown="1">
-Defining a function for a repetitive task can save you time and effort. If you have a task that needs to be done several times with only the input parameters changing, consider **defining a function** that can take those parameters as arguments. This will not only make your code more readable and maintainable, but it will also save you from writing the same code multiple times.
-```python
-def function_name(argument1, argument2):
-    # function body
-    return "result"
-```
-</div>
+   *If you have unsaved changes, MCedit will pop-up the* `"Close file"` *dialog menu with options to save changes (*`Yes`*), discard changes (*`No`*), or abandon file closing (*`Cancel`*).*
 
-<span style="color: #ff3870;font-weight: 500;">Learn more about Python built-in functions such as </span><b>join(), range(), input(), Python imports, and a function definition</b> <span style="color: #ff3870;font-weight: 500;">from tutorials provided in section</span> {% include target_link href=500 %} :
+   ![02_python-mcedit-close.png]({{ images_path }}/02_python-mcedit-close.png)
+
+6. Once you're done editing and saving the file, you can run it in the terminal by typing:
+
+   ```bash
+   python generate_password.py
+   ```
+
+   *This will execute your script, prompt user to select password length, and print the generated random string of characters.*
+
+   <img width="1000" src="{{ images_path }}/02_python-run-input.gif"><base class="mt">
+
+<div class="more" markdown="1">
+...about Python built-in functions such as `join()`, `range()`, `input()`, **Python imports, and a function definition** from tutorials provided in section {% include target_link href=500 %} :
 * {% include target_link href=531 %}
 * {% include target_link href=531 section="#getting-started-with-python-programming" text="Python syntax and simple operations" %}
 * {% include target_link href=531 section="#functions" text="Python built-in functions" %}
-
-<br><br><br>
-**4.** Once you are done editing, press the `F2` key to save changes. (*Note:* `fn` and `F2` *together on macOS*)<br>
-* To exit MCedit, press `Esc`, then `0`. <br>
-
-<p align="left"><img width="800" src="{{ images_path }}/02_python-mcedit.gif"></p>
-
-<i>If you have unsaved changes, MCedit will pop-up the "Close file" dialog menu with options to save changes (Yes), discard changes (No), or abandon file closing (Cancel).</i>
-
-![02_python-mcedit-close.png]({{ images_path }}/02_python-mcedit-close.png)
-
-**5.** Once you're done editing and saving the file, you can run it in the terminal by typing:
-
-```bash
-python generate_password.py
-```
-
-<i>This will execute your script, prompt user to select password length, and print the generated random string of characters.</i>
-
-<p align="left"><img width="800" src="{{ images_path }}/02_python-run-input.gif"></p>
+</div>
