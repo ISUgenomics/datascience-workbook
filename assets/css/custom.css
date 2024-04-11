@@ -62,6 +62,7 @@ h1:not(#page-title)::before {
   margin: 1.2em auto;
 }
 h3 {font-size: 1.2em; font-style: italic; font-weight: 600;}
+h4 {font-size: 1em; font-weight: 500; letter-spacing: 0.1em;}
 
 .btn {
   border: 1px solid var(--b-darkgray) !important;
@@ -269,31 +270,13 @@ pre {
 
 
 /* resource-wide: styles for custom target links */
-.wrapper {
-  margin-bottom: 0 !important;
-  display: inline !important;;
-}
-.wrapper-link {
-  display: inline !important;
-}
 
-.target-link {
+.t-links {
   text-decoration: none !important;
 }
-.target-link:hover {
+.t-links:hover {
   text-decoration: underline !important;
   color: var(--c-boxlink);
-}
-
-/*.target-link::before {
-  content: "\00a0";
-}
-.target-link::after {
-  content: "\00a0";
-}*/
-.target-link-btn {
-  background-color: #e7e7e7;
-  color: black;
 }
 
 
