@@ -18,8 +18,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -127,15 +125,15 @@ All forms of in-code documentation can be crafted using the same tools as those 
 
 <table>
 <tr> <th>tool</th> <th>type</th> <th>supported languages</th> <th>tutorial</th> </tr>
-<tr> <td><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></td> <td>development environment with GUI</td> <td>universal</td> <td>{% include target_link href=411 text="tutorial" %}</td> </tr>
+<tr> <td><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></td> <td>development environment with GUI</td> <td>universal</td> <td><a class="t-links" href="411">tutorial</a></td> </tr>
 <tr> <td><a href="https://atom.io/" target="_blank">Atom</a></td> <td>development environment  with GUI</td> <td>universal</td> <td><i>(obsolete)</i></td> </tr>
 <tr> <td><a href="https://www.sublimetext.com/" target="_blank">Sublime Text</a></td> <td>development environment with GUI</td> <td>universal</td> <td></td> </tr>
 <tr> <td><a href="https://www.eclipse.org/" target="_blank">Eclipse</a></td> <td></td> <td>development environment with GUI</td> <td>universal</td> </tr>
-<tr> <td><a href="https://www.jetbrains.com/pycharm/" target="_blank">PyCharm</a></td> <td>development environment with GUI</td> <td>Python</td> <td>{% include target_link href=427 text="tutorial" %}</td> </tr>
-<tr> <td><a href="https://www.rstudio.com/" target="_blank">RStudio</a></td> <td>development environment with GUI</td> <td>R</td> <td>{% include target_link href=431 text="tutorial" %}</td> </tr>
-<tr> <td><a href="https://www.gnu.org/software/nano/" target="_blank">nano</a></td> <td>CLI text editor, use in terminal</td> <td>universal</td> <td>{% include target_link href=322 section="#nano--text-editor-more-like-a-gui" text="tutorial" %}</td> </tr>
-<tr> <td><a href="https://www.vim.org/" target="_blank">vim</a></td> <td>CLI text editor, use in terminal</td> <td>universal</td> <td>{% include target_link href=322 section="#vim" text="tutorial" %}</td> </tr>
-<tr> <td><a href="https://midnight-commander.org/" target="_blank">mc</a></td> <td>CLI text editor, use in terminal</td> <td>universal</td> <td>{% include target_link href=322 text="tutorial" %}</td> </tr>
+<tr> <td><a href="https://www.jetbrains.com/pycharm/" target="_blank">PyCharm</a></td> <td>development environment with GUI</td> <td>Python</td> <td><a class="t-links" href="427">tutorial</a></td> </tr>
+<tr> <td><a href="https://www.rstudio.com/" target="_blank">RStudio</a></td> <td>development environment with GUI</td> <td>R</td> <td><a class="t-links" href="431">tutorial</a></td> </tr>
+<tr> <td><a href="https://www.gnu.org/software/nano/" target="_blank">nano</a></td> <td>CLI text editor, use in terminal</td> <td>universal</td> <td><a class="t-links" href="322" section="#nano--text-editor-more-like-a-gui">tutorial</a>{</td> </tr>
+<tr> <td><a href="https://www.vim.org/" target="_blank">vim</a></td> <td>CLI text editor, use in terminal</td> <td>universal</td> <td><a class="t-links" href="322" section="#vim">tutorial</a></td> </tr>
+<tr> <td><a href="https://midnight-commander.org/" target="_blank">mc</a></td> <td>CLI text editor, use in terminal</td> <td>universal</td> <td><a class="t-links" href="322">tutorial</a></td> </tr>
 </table>
 
 
@@ -899,7 +897,7 @@ As a user, refer to the README when initially accessing a project to understand 
 
 README files are typically hand-written by developers, though tools like `readme-md-generator` can assist in creating a structured document. For GitHub repositories, the README file is typically written in Markdown, a lightweight and easy-to-use syntax designed for formatting plain text. When you upload or commit a Markdown-based README to GitHub, the platform automatically renders it, displaying the formatted text and any embedded media on the repository's main page. *See real-life examples: <a href="https://github.com/ISUgenomics/data_wrangling" target="_blank">data_wrangling  ⤴</a>, <a href="https://github.com/ISUgenomics/geo_utils" target="_blank">geo_utils  ⤴</a>, <a href="https://github.com/zsiki/Find-GCP" target="_blank">Find-GCP  ⤴</a>*
 
-<span style="color: #ff3870;font-weight: 500;">For a deeper dive into Markdown syntax and its various capabilities, I'd recommend checking out the dedicated tutorial in this workbook:</span> {% include target_link href=933.5 %}
+<span style="color: #ff3870;font-weight: 500;">For a deeper dive into Markdown syntax and its various capabilities, I'd recommend checking out the dedicated tutorial in this workbook:</span> <a class="t-links" href="933.5"></a>
 <br><br>
 
 **What to include in the README as a developer?**
@@ -1248,7 +1246,7 @@ For large-scale software documentation, where comprehensive architectural detail
 </div>
 
 <p style="color: #ff3870; font-weight: 500;">
-For a comprehensive understanding and hands-on experience with <b>interactive notebooks</b>, I highly encourage you to delve into the tutorials presented in section {% include target_link href=400 %} / {% include target_link href=412 %}
+For a comprehensive understanding and hands-on experience with <b>interactive notebooks</b>, I highly encourage you to delve into the tutorials presented in section <a class="t-links" href="400"></a> / <a class="t-links" href="412"></a>
 specifically tailored for the <a href="https://jupyter.org/" target="_blank">Jupyter</a> interface.</p>
 
 ## Nextflow workflows
@@ -1309,7 +1307,7 @@ Platforms like GitHub Pages, Netlify, Vercel, and even Read the Docs (with some 
 
 Documentation generators **primarily rely on in-code comments and docstrings** to produce documentation. The tool parses these non-executable text from files with the source code, extracting relevant information to create structured documentation. In some cases, they can also generate documentation directly from the code itself, especially for aspects like function signatures, classes, and module structures.
 
-<span style="color: #ff3870;font-weight: 500;">Jump to section</span> {% include target_link href=933.4 section="#in-code-documentation" text="In-code documenattion" %} to learn how to add in-code comments and docstrings.
+<span style="color: #ff3870;font-weight: 500;">Jump to section</span> <a class="t-links" href="933.4" section="#in-code-documentation">In-code documenattion</a> to learn how to add in-code comments and docstrings.
 
 
 ###  • *SPHINX for Python docs*
@@ -1389,5 +1387,5 @@ Remember to **write comprehensive docstrings in your Python code using the reStr
 
 Version control platforms, such as Git and Mercurial, enable developers to track and manage changes to software projects over time while simultaneously providing features for detailed documentation. These platforms enable users to maintain a history of code modifications, branch and merge projects. They also often come integrated with documentation tools that facilitate the creation, management, and sharing of documentation related to the project in the form of **internal wikis or README files to guide users and collaborators**. As a result, they provide a unified environment where both the code and its accompanying documentation evolve in tandem, ensuring consistency and clarity for all contributors.
 
-<span style="color: #ff3870;font-weight: 500;"> I highly recommend checking out the section in the workbook dedicated to </span> {% include target_link href=932.1 %} <br>
+<span style="color: #ff3870;font-weight: 500;"> I highly recommend checking out the section in the workbook dedicated to </span> <a class="t-links" href="932.1"></a> <br>
 *It offers practical tutorials that will equip you with hands-on skills, ensuring you can effectively utilize version control in your projects. This knowledge is invaluable for any modern software development endeavor.*

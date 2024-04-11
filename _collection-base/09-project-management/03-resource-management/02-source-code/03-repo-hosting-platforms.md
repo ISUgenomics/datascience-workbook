@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -28,7 +26,6 @@ tags: []
 Git repositories do NOT have to be hosted on online platforms. Git is a distributed version control system, which means that a Git repository can be stored and managed locally on a single machine or on a network of machines. However, hosting Git repositories on an online platform provides several benefits.
 </div>
 
----
 
 # Online hosting of Git repos
 
@@ -88,7 +85,7 @@ The table provides a general overview of a few major online hosting platforms fo
 <a href="https://github.com" target="_blank">GitHub  ⤴</a> is a web-based platform that provides hosting for Git repositories. It allows you to **create public or private repositories**, collaborate with other people on a project, and track changes over time. GitHub is **widely used by developers and organizations** to manage their code and is one of the most popular Git hosting services available.
 
 <span style="color: #ff3870;font-weight: 500;">
-Learn more from the <b>hands-on tutorial</b> {% include target_link href=932.4 %} provided in this section of the workbook.
+Learn more from the <b>hands-on tutorial</b> <a class="t-links" href="932.4"></a> provided in this section of the workbook.
 </span><br><br>
 
 ![01-github_website.png]({{ images_path }}/01-github_website.png)
@@ -98,7 +95,7 @@ Learn more from the <b>hands-on tutorial</b> {% include target_link href=932.4 %
 <a href="https://bitbucket.org" target="_blank">Bitbucket  ⤴</a> is a code hosting service that **supports multiple version control systems**, including both Git and Mercurial. It provides a range of tools for managing teams and projects, including permissions management, role-based access control, support for large files & binary files, and collaboration features. Bitbucket is **part of the Atlassian suite of tools**, and it integrates well with other Atlassian products such as <a href="https://www.atlassian.com/software/jira" target="_blank">Jira  ⤴</a> *(issue tracking tool)* and <a href="https://www.atlassian.com/software/confluence" target="_blank">Confluence  ⤴</a> *(collaboration and documentation platform)*.
 
 <span style="color: #ff3870;font-weight: 500;">
-Learn more from the <b>hands-on tutorial</b> {% include target_link href=932.5 %} provided in this section of the workbook.
+Learn more from the <b>hands-on tutorial</b> <a class="t-links" href="932.5"></a> provided in this section of the workbook.
 </span><br><br>
 
 ![01-version_control_bitbucket.png]({{ images_path }}/01-version_control_bitbucket.png)

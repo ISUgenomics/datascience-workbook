@@ -17,14 +17,12 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
 Downloading data **from online and remote resources** can be a challenging task, particularly when dealing with large datasets or complex or dynamic web pages. However, many tools and techniques are available to simplify this process and allow users to download data with ease. In this section, we will focus on the **command-line approaches for downloading data** from online and remote resources. It will cover popular tools and provide practical examples of how to use them to download data from various online resources.
 
-If you rather are interested in <span style="color: #ff3870; font-weight: 500;">transferring files between remote computing machines</span> than downloading data from online resources, see the tutorials in section {% include target_link href=712 text="07. Data Acquisition and Wrangling / Remote data access / <b>Remote data transfer</b>" %}
+If you rather are interested in <span style="color: #ff3870; font-weight: 500;">transferring files between remote computing machines</span> than downloading data from online resources, see the tutorials in section <a class="t-links" href="712">07. Data Acquisition and Wrangling / Remote data access / <b>Remote data transfer</a>
 
 
 ## *Why data is available online?*
@@ -196,7 +194,7 @@ For example, to download a file from a website, you can use the following comman
 wget https://ftp.uniprot.org/pub/databases/uniprot/README
 ```
 
-<span style="color: #ff3870; font-weight: 500;">Explore more practical examples in the hands-on tutorial: </span>. {% include target_link href=713.1 text="Downloading Online Data using WGET" %}
+<span style="color: #ff3870; font-weight: 500;">Explore more practical examples in the hands-on tutorial: </span>. <a class="t-links" href="713.1">Downloading Online Data using WGET</a>
 
 
 
@@ -219,7 +217,7 @@ To use `wget` (or *curl*) for batch downloading, you can create a text file that
 wget -i download_list.txt
 ```
 
-<b>Follow more practical examples of batch download in the section <span style="color: #ff3870; font-weight: 500;">wget for multiple files and directories</span> in the hands-on tutorial:</b> {% include target_link href=713.1 text="Downloading Online Data using WGETl" %}
+<b>Follow more practical examples of batch download in the section <span style="color: #ff3870; font-weight: 500;">wget for multiple files and directories</span> in the hands-on tutorial:</b> <a class="t-links" href="713.1">Downloading Online Data using WGET</a>
 
 
 ## 4. API
@@ -258,4 +256,4 @@ Web scraping is a more advanced task that **requires a higher level of technical
 Before attempting to scrape a website for data, it is often a good idea to **explore other options for downloading the data first**. Many online resources provide APIs or other tools for accessing their data, and their developers may be willing to help you find the best method for accessing the data you need. In some cases, **reaching out to the website admins directly** may be the easiest and fastest way.
 </div>
 
-If you have exhausted all other options for obtaining the data you need or if web scraping is a topic that interests you, <span style="color: #ff3870; font-weight: 500;">exploring the hands-on tutorial</span> {% include target_link href=713.3 text="Downloading online data using Python-based web scraping" %} provided in this workbook, may be a good next step.
+If you have exhausted all other options for obtaining the data you need or if web scraping is a topic that interests you, <span style="color: #ff3870; font-weight: 500;">exploring the hands-on tutorial</span> <a class="t-links" href="713.3">Downloading online data using Python-based web scraping</a> provided in this workbook, may be a good next step.

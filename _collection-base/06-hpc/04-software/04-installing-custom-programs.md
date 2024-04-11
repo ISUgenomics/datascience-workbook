@@ -17,19 +17,16 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
 Installing programs on a high-performance computing (HPC) system can be different from installing software on a personal computer due to the complex nature of HPC systems and limited privileges for regular users. <br>
-If you need a **specific software package**, first check whether this software is already pre-installed on HPC. Typically, compilers, programming languages, libraries and frameworks, basic visualization software, text editors, and job schedulers are all available. What's more, popular software for specialized analysis (*such as* `blast` *for bioinformatics*) is often not only available but also regularly upgraded to the latest release. See tutorial {% include target_link href=641 section="#how-to-find-available-software" text="How to find available software?" %} to learn more about:
-* {% include target_link href=642 text="software available as pre-installed modules" %}
-* {% include target_link href=643 text="software available via package manager" %}
-* {% include target_link href=644 text="installing custom programs in user space" %}
-* {% include target_link href=641 section="#check-the-documentation" text="other methods of accessing the software" %}
+If you need a **specific software package**, first check whether this software is already pre-installed on HPC. Typically, compilers, programming languages, libraries and frameworks, basic visualization software, text editors, and job schedulers are all available. What's more, popular software for specialized analysis (*such as* `blast` *for bioinformatics*) is often not only available but also regularly upgraded to the latest release. See tutorial <a class="t-links" href="641" section="#how-to-find-available-software">How to find available software?</a> to learn more about:
+* <a class="t-links" href="642">software available as pre-installed modules</a>
+* <a class="t-links" href="643">software available via package manager</a>
+* <a class="t-links" href="644">installing custom programs in user space</a>
+* <a class="t-links" href="641" section="#check-the-documentation">other methods of accessing the software</a>
 
----
 
 # Installing custom programs on HPC
 
@@ -37,8 +34,8 @@ Most HPC systems run on Linux-based operating system, so **installing custom pro
 
 <div class="protip" markdown="1">
 If you would like to learn more about the command line interface and Linux-based operating systems start with the tutorials:
-* {% include target_link href=310 %}
-* {% include target_link href=320 %}
+* <a class="t-links" href="310"></a>
+* <a class="t-links" href="320"></a>
 </div>
 
 <b>What you can NOT do as a regular user on HPC:</b>
@@ -60,18 +57,18 @@ Most of these steps assume that you: <br>1) are installing package in a user or 
 ## Install custom software
 
 ### ***Where to install the software?***
-If you need to install software on a high-performance computing (HPC) system, there are several methods you can use, depending on the software and the HPC system. Note that global installations are not possible when you are not the superuser (root, administrator), and personal directory installations are only available to one person (see [user-only access](#-install-for-user-only-access)). If the software will be used by members of a particular group, it is a good idea to install one copy of the software available to all (see [group-wide access](#-install-for-group-wide-access)). Finally, if there is a chance that the software can serve a larger number of users from different groups, it is reasonable to ask the cluster administrators for system-wide installations ( see {% include target_link href=641 section="#ask-the-system-administrator" text="How to get new software installed?" %})
+If you need to install software on a high-performance computing (HPC) system, there are several methods you can use, depending on the software and the HPC system. Note that global installations are not possible when you are not the superuser (root, administrator), and personal directory installations are only available to one person (see [user-only access](#-install-for-user-only-access)). If the software will be used by members of a particular group, it is a good idea to install one copy of the software available to all (see [group-wide access](#-install-for-group-wide-access)). Finally, if there is a chance that the software can serve a larger number of users from different groups, it is reasonable to ask the cluster administrators for system-wide installations (see <a class="t-links" href="641" section="#ask-the-system-administrator">How to get new software installed?</a>).
 
 ### • *Install for user-only access*
 Some HPC systems allow users to install software in their home directory. This is typically done by downloading the software, compiling it from source code, and installing it in a directory within the user's home directory. This method is often used for small programs because of the **limited storage space in the home directory**. Installing all the software in the home directory will quickly fill the available space, and this will result in serious dysfunctions in the operation of user's account. The recommended solution is to install programms elsewhere (i.e., in the working directory) and soft-link the installation location to the home directory.
 
-Explore section {% include target_link href=320 section="#2-home-directory" text="Home directory" %} tutorial, to find out:
-* {% include target_link href=320 section="#21-what-is-the-home-folder-used-for" text="What is the HOME folder used for?" %}
-* {% include target_link href=320 section="#22-is-home-a-working-directory" text="Is HOME a working directory?" %}
-* {% include target_link href=320 section="#23-good-practices-for-home-organization" text="Good practices for HOME organization." %}
+Explore section <a class="t-links" href="320" section="#2-home-directory">Home directory</a> tutorial, to find out:
+* <a class="t-links" href="320" section="#21-what-is-the-home-folder-used-for">What is the HOME folder used for?</a>
+* <a class="t-links" href="320" section="#22-is-home-a-working-directory">Is HOME a working directory?</a>
+* <a class="t-links" href="320" section="#23-good-practices-for-home-organization">Good practices for HOME organization</a>
 
 <br><br>
-Follow the guide in the tutorial {% include target_link href=631 text="Setting up your home directory for data analysis" %} to learn about the file system organization on the HPC, including the principles for {% include target_link href=631 section="#your-home-folder" text="home directory" %}, {% include target_link href=631 section="#your-project-folder" text="working directory" %}, and storage space.
+Follow the guide in the tutorial <a class="t-links" href="631">Setting up your home directory for data analysis</a> to learn about the file system organization on the HPC, including the principles for <a class="t-links" href="631">home directory</a>, <a class="t-links" href="631">working directory</a>, and storage space.
 
 <br>
 **Quick Guide**
@@ -389,7 +386,7 @@ prepend-path LD_LIBRARY_PATH $MY_APP_DIR/lib
 alias myapp='$MY_APP_DIR/bin/my_app.sh'
 ```
 
-<i>This custom module file sets an <b>environment variable MY_APP_DIR</b> to the location of your personal installation of the <b>software</b>. It also updates PATH and LD_LIBRARY_PATH to include the <b>bin</b> and <b>lib</b> directories in MY_APP_DIR. Finally, it sets an {% include target_link href=320 section="#34-define-aliases" text="alias" %} for running the my_app.sh script in the bin directory.</i>
+<i>This custom module file sets an <b>environment variable MY_APP_DIR</b> to the location of your personal installation of the <b>software</b>. It also updates PATH and LD_LIBRARY_PATH to include the <b>bin</b> and <b>lib</b> directories in MY_APP_DIR. Finally, it sets an <a class="t-links" href="320" section="#34-define-aliases">alias</a> for running the my_app.sh script in the bin directory.</i>
 
 **4.** Once you have your custom modules, you can add the directory containing the modules to your module search path using the `module use` command. Then use the `module load` command to load the module, which is the name of the directory for selected software in the *custom_modules* location.
 ```bash

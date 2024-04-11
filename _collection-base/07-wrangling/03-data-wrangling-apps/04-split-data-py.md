@@ -18,8 +18,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -169,7 +167,7 @@ The application is developed in Python programming language and requires importi
 
 * **When you don't have Conda yet...**
 
-To <b>install <a href="https://docs.conda.io/en/latest/" target="_blank">Conda ⤴</a></b> environment management system <b>and configure an instance for data wrangling applications</b>, follow a step-by-step instructions provided in the tutorial {% include target_link href=731 section="#environment-setup" text="Data Wrangling / Environment setup" %}
+To <b>install <a href="https://docs.conda.io/en/latest/" target="_blank">Conda ⤴</a></b> environment management system <b>and configure an instance for data wrangling applications</b>, follow a step-by-step instructions provided in the tutorial <a class="t-links" href="731" section="#environment-setup">Data Wrangling / Environment setup</a>
 
 * **Once you have Conda and the <i>data_wrangling</i> environment follow further steps below**
 
@@ -257,7 +255,7 @@ If you want to process such data, change the data structure of the input so that
 
 ### *Column names*
 
-The **header** is usually the first line of the file and contains the column labels. Naming the columns brings great **informational value** to the analyzed data. However, the application does NOT require the input file to have a header. If it is in the file it will be detected automatically. Otherwise, the default set of column labels [{% include target_link href=733 section="#options" text="<i>see options section</i>" %}] will be assigned.
+The **header** is usually the first line of the file and contains the column labels. Naming the columns brings great **informational value** to the analyzed data. However, the application does NOT require the input file to have a header. If it is in the file it will be detected automatically. Otherwise, the default set of column labels [<a class="t-links" href="733" section="#options"><i>see options section</i></a>] will be assigned.
 
 ![Columns header]({{ images_path }}/03-input_header.png)
 

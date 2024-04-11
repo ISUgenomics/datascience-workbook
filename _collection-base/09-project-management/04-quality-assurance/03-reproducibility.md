@@ -18,7 +18,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
 
 # Introduction
 
@@ -518,23 +517,23 @@ Together, these digital tools form a critical infrastructure for advancing repro
 
 ## Version Control Systems
 
-{% include target_link href=932.1 text="Version control systems" %} are essential for tracking changes in research projects, facilitating collaboration, and ensuring the integrity of research data and code over time.
+<a class="t-links" href="932.1">Version control systems</a> are essential for tracking changes in research projects, facilitating collaboration, and ensuring the integrity of research data and code over time.
 
 <table>
 <tr> <th>tool</th> <th>tutorial</th> <th>applications</th> </tr>
-<tr> <td><a href="https://git-scm.com " target="_blank">Git</a></td> <td>{% include target_link href=932.2 %} <br> {% include target_link href=932.21 %}</td> <td>Distributed version control system widely used for source code management.</td> </tr>
-<tr> <td><a href="https://subversion.apache.org" target="_blank">SVN</a></td> <td>{% include target_link href=932.1 section="#-subversion-svn" text="Subversion (SVN)" %}</td> <td>Centralized version control system designed to keep track of changes in files and directories.</td> </tr>
+<tr> <td><a href="https://git-scm.com " target="_blank">Git</a></td> <td><a class="t-links" href="932.2"></a> <br> <a class="t-links" href="932.21"></a></td> <td>Distributed version control system widely used for source code management.</td> </tr>
+<tr> <td><a href="https://subversion.apache.org" target="_blank">SVN</a></td> <td><a class="t-links" href="932.1" section="#-subversion-svn">Subversion (SVN)</a></td> <td>Centralized version control system designed to keep track of changes in files and directories.</td> </tr>
 </table>
 
 
 
 ## Shared Repositories
 
-{% include target_link href=932.3 %} are crucial for reproducibility, enabling researchers to access, use, and cite the exact datasets and software versions used in research studies.
+<a class="t-links" href="932.3"></a> are crucial for reproducibility, enabling researchers to access, use, and cite the exact datasets and software versions used in research studies.
 
 <table>
 <tr> <th>tool</th> <th>tutorial</th> <th>applications</th> </tr>
-<tr> <td><a href="https://github.com" target="_blank">GitHub</a></td> <td>{% include target_link href=932.4 %} <br> {% include target_link href=932.41 %}</td> <td>Hosting for software development and version control using Git, with features for collaboration, issue tracking, and code review. <i>GitHub is the most commonly used platform for hosting and collaborating on open-source projects.</i></td> </tr>
+<tr> <td><a href="https://github.com" target="_blank">GitHub</a></td> <td><a class="t-links" href="932.4"></a> <br> <a class="t-links" href="932.41"></a></td> <td>Hosting for software development and version control using Git, with features for collaboration, issue tracking, and code review. <i>GitHub is the most commonly used platform for hosting and collaborating on open-source projects.</i></td> </tr>
 <tr> <td><a href="https://zenodo.org" target="_blank">Zenodo</a></td> <td> </td> <td>General-purpose open-access repository developed under the European OpenAIRE program, for research data and software.</td> </tr>
 <tr> <td><a href="https://osf.io" target="_blank">OSF</a></td> <td> </td> <td>Open Science Framework supports the entire research lifecycle: planning, execution, reporting, archiving, and discovery.</td> </tr>
 </table>
@@ -546,10 +545,10 @@ Open-source statistical and computational tools offer powerful, transparent, and
 
 <table>
 <tr> <th>tool</th> <th>tutorial</th> <th>applications</th> </tr>
-<tr> <td><a href="https://www.r-project.org" target="_blank">R</a></td> <td>{% include target_link href=541 %} and <a href="https://datascience.101workbook.org/sitemap.html" target="_blank">more  ⤴</a></td> <td>Statistical computing and graphics, with a wide range of packages for various data analysis tasks.</td> </tr>
-<tr> <td><a href="https://www.python.org" target="_blank">Python</a></td> <td>{% include target_link href=531 %} and <a href="https://datascience.101workbook.org/sitemap.html" target="_blank">more  ⤴</a></td> <td>General-purpose programming language with extensive libraries for data analysis, machine learning, and scientific computing.</td> </tr>
-<tr> <td><a href="https://julialang.org" target="_blank">Julia</a></td> <td>{% include target_link href=551 %} and <a href="https://datascience.101workbook.org/sitemap.html" target="_blank">more  ⤴</a></td> <td>High-level, high-performance dynamic programming language for technical computing, with syntax that is familiar to users of other technical computing environments.</td> </tr>
-<tr> <td><a href="https://jupyter.org" target="_blank">Jupyter Notebooks</a></td> <td>{% include target_link href=412 %} and <a href="https://datascience.101workbook.org/sitemap.html" target="_blank">more  ⤴</a></td> <td>Open-source web application that allows you to create and share documents that contain live code, equations, visualizations, and narrative text.</td> </tr>
+<tr> <td><a href="https://www.r-project.org" target="_blank">R</a></td> <td><a class="t-links" href="541"></a> and <a href="https://datascience.101workbook.org/sitemap.html" target="_blank">more  ⤴</a></td> <td>Statistical computing and graphics, with a wide range of packages for various data analysis tasks.</td> </tr>
+<tr> <td><a href="https://www.python.org" target="_blank">Python</a></td> <td><a class="t-links" href="531"></a> and <a href="https://datascience.101workbook.org/sitemap.html" target="_blank">more  ⤴</a></td> <td>General-purpose programming language with extensive libraries for data analysis, machine learning, and scientific computing.</td> </tr>
+<tr> <td><a href="https://julialang.org" target="_blank">Julia</a></td> <td><a class="t-links" href="551"></a> and <a href="https://datascience.101workbook.org/sitemap.html" target="_blank">more  ⤴</a></td> <td>High-level, high-performance dynamic programming language for technical computing, with syntax that is familiar to users of other technical computing environments.</td> </tr>
+<tr> <td><a href="https://jupyter.org" target="_blank">Jupyter Notebooks</a></td> <td><a class="t-links" href="412"></a> and <a href="https://datascience.101workbook.org/sitemap.html" target="_blank">more  ⤴</a></td> <td>Open-source web application that allows you to create and share documents that contain live code, equations, visualizations, and narrative text.</td> </tr>
 </table>
 <br>
 
@@ -581,9 +580,9 @@ Familiarize yourself with Git for version control to manage changes in your rese
 * Make further changes to your file and commit them.
 * Then, use `git log` to view the history of changes.
 <div class="protip font-1 mb-0 before" markdown="1" data-before="PRO TIP">
-To see a more detailed step-by-step guide with graphical aids to complete this exercise, navigate to tutorial {% include target_link href=932.2 %} and follow the steps in the hands-on sections:
-* {% include target_link href=932.2 section="#1-install-git" text="Install Git" %}
-* {% include target_link href=932.2 section="#working-with-local-repos" text="Working with local repos" %}
+To see a more detailed step-by-step guide with graphical aids to complete this exercise, navigate to tutorial <a class="t-links" href="932.2"></a> and follow the steps in the hands-on sections:
+* <a class="t-links" href="932.2" section="#1-install-git">Install Git</a>
+* <a class="t-links" href="932.2" section="#working-with-local-repos">Working with local repos</a>
 </div>
 </div>
 
@@ -609,7 +608,7 @@ Create a Jupyter Notebook that integrates code, outputs, and narrative, showcasi
 * Add more **markdown cells** to explain each step, including your thought process and interpretation of results.
 * Below each markdown cell include **code cells** to load a dataset and perform simple analyses. <br> *(you will use them in Exercise 3)*
 <div class="protip before mb-0 font-1" markdown="1" data-before="PRO TIP">
-To see a more detailed step-by-step guide with graphical aids to complete this exercise, navigate to tutorial {% include target_link href=412 %} and follow the installation steps in the {% include target_link href=412 section="#installing-jupyter" text="Installing Jupyter" %} hands-on section. Then jump to {% include target_link href=413 %} tutorial to launch Jupyter interface, learn about components in the GUI, create new notebook and add cells of various types. To start using rich text markup in your documentation, check out the {% include target_link href=933.5 %} tutorial.
+To see a more detailed step-by-step guide with graphical aids to complete this exercise, navigate to tutorial <a class="t-links" href="412"></a> and follow the installation steps in the <a class="t-links" href="412" section="#installing-jupyter">Installing Jupyter</a> hands-on section. Then jump to <a class="t-links" href="413"></a> tutorial to launch Jupyter interface, learn about components in the GUI, create new notebook and add cells of various types. To start using rich text markup in your documentation, check out the <a class="t-links" href="933.5"></a> tutorial.
 </div>
 </div>
 
@@ -709,10 +708,10 @@ plt.show()
 <div class="protip before mb-0 font-1" markdown="1" data-before="PRO TIP">
 To see a more detailed step-by-step guide with graphical aids to complete this exercise, explore the following tutorials:
 <table>
-<tr> <td><li>{% include target_link href=413 %}</li></td>  <td><li>{% include target_link href=431 %} </li></td></tr>
-<tr> <td><li>{% include target_link href=420 %}</li></td>  <td><li>{% include target_link href=430 %} </li></td></tr>
-<tr> <td><li>{% include target_link href=531 %}</li></td>  <td><li>{% include target_link href=541 %} </li></td></tr>
-<tr> <td><li>{% include target_link href=536 %}</li></td>  <td><li>{% include target_link href=544 %} </li></td></tr>
+<tr> <td><li><a class="t-links" href="413"></a></li></td>  <td><li><a class="t-links" href="431"></a> </li></td></tr>
+<tr> <td><li><a class="t-links" href="420"></a></li></td>  <td><li><a class="t-links" href="430"></a> </li></td></tr>
+<tr> <td><li><a class="t-links" href="531"></a></li></td>  <td><li><a class="t-links" href="541"></a> </li></td></tr>
+<tr> <td><li><a class="t-links" href="536"></a></li></td>  <td><li><a class="t-links" href="544"></a> </li></td></tr>
 </table>
 </div>
 </div>
@@ -757,6 +756,6 @@ depending on your default branch name.
 **5. Fork a Repository:** Explore other users' repositories related to your research interests, fork one, and consider contributing by adding improvements or additional analysis. <base class="mb">
 **6. Engage with the Community:** Participate in discussions, open issues for any bugs you find, or offer solutions to existing issues. Collaboration is key to advancing reproducible research.
 <div class="protip before mb-0 font-1" markdown="1" data-before="PRO TIP">
-To see a more detailed step-by-step guide with graphical aids to complete this exercise, navigate to tutorial {% include target_link href=932.2 %} and follow the steps in the {% include target_link href=932.2 section="#working-with-remote-repos" text="Working with remote repos" %} hands-on section. You can engage further by exploring the {% include target_link href=932.2 section="#collaborating-on-projects" text="Collaborating on projects" %}.
+To see a more detailed step-by-step guide with graphical aids to complete this exercise, navigate to tutorial <a class="t-links" href="932.2"></a> and follow the steps in the <a class="t-links" href="932.2" section="#working-with-remote-repos">Working with remote repos</a> hands-on section. You can engage further by exploring the <a class="t-links" href="932.2" section="#collaborating-on-projects">Collaborating on projects</a>.
 </div>
 </div>

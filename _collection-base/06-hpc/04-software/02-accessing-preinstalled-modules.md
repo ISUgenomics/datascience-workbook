@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -32,17 +30,16 @@ The software available on a High-Performance Computing system can vary depending
 * scientific libraries to accelerate computations
 * applications, including numerical simulations, data analysis, and visualization tools
 
-Explore the {% include target_link href=641 text="Software available on HPC" %} tutorial in this workbook, to learn more about:
+Explore the <a class="t-links" href="641"></a> tutorial in this workbook, to learn more about:
 
-* {% include target_link href=641 section="#how-to-find-available-software" text="How to find available software?" %}
-  * {% include target_link href=641 section="#software-as-built-in-commands" text="Software as built-in commands" level=1 %}
-  * {% include target_link href=642 section="#software-as-built-in-modules" text="<b>Software as built-in modules</b> <i>(see below)</i>" level=1 %}
-  * {% include target_link href=641 section="#software-via-package-manager" text="Software via package manager" level=1 %}
-  * {% include target_link href=641 section="#check-the-documentation" text="Check the documentation" level=1 %}
-  * {% include target_link href=641 section="#ask-the-system-administrator" text="Ask the system administrator" level=1 %}
-* {% include target_link href=644 text="How to get new software installed?" %}
+* <a class="t-links" href="641" section="#how-to-find-available-software">How to find available software?</a>{
+  * <a class="t-links" href="641" section="#software-as-built-in-commands">Software as built-in commands</a>
+  * <a class="t-links" href="642" section="#software-as-built-in-modules">Software as built-in modules</a>
+  * <a class="t-links" href="641" section="#software-via-package-manager">Software via package manager</a>
+  * <a class="t-links" href="641" section="#check-the-documentation">Check the documentation</a>
+  * <a class="t-links" href="641" section="#ask-the-system-administrator">Ask the system administrator</a>
+* <a class="t-links" href="644">How to get new software installed?</a>
 
----
 
 # Software as built-in modules
 
@@ -228,11 +225,11 @@ module load openmpi/4.1.3
 ```
 
 ## **SCINet HPC modules**
-Both {% include target_link href=612.1 text="SCINet HPC" %} clusters, {% include target_link href=612.2 text="Atlas" %} and {% include target_link href=612.3 text="Ceres" %} use the Environment Modules package. <br>Learn more from SCINet resources:
+Both <a class="t-links" href="612.1">SCINet HPC</a> clusters, <a class="t-links" href="612.2">Atlas</a> and <a class="t-links" href="612.3">Ceres</a> use the Environment Modules package. <br>Learn more from SCINet resources:
 * <a href="https://scinet.usda.gov/guides/software/modules#environment-modules" target="_blank">Environment Modules on SCINet HPC  ⤴</a>
 * <a href="https://scinet.usda.gov/guides/software/preinstalled#ceres-command-line-software-managed-by-the-module-system" target="_blank">Ceres Command-line Software Managed by the Module System  ⤴</a>
 
 ## **ISU HPC modules**
-Both {% include target_link href=613.1 text="ISU HPC" %} clusters, {% include target_link href=613.3 text="Nova" %} and {% include target_link href=613.2 text="Condo" %} use the Environment Modules package. <br>Learn more from ISU resources:
-* {% include target_link href=120 text="Tutorial" %} <a href="https://www.hpc.iastate.edu/guides/nova/software" target="_blank">Environment Modules on Nova  ⤴</a>
-* {% include target_link href=120 text="Tutorial" %} <a href="https://www.hpc.iastate.edu/guides/condo-2017/software" target="_blank">Environment Modules on Condo  ⤴</a>
+Both <a class="t-links" href="613.1">ISU HPC</a> clusters, <a class="t-links" href="613.3">Nova</a> and <a class="t-links" href="613.2">Condo</a> use the Environment Modules package. <br>Learn more from ISU resources:
+* <a href="https://www.hpc.iastate.edu/guides/nova/software" target="_blank">Environment Modules on Nova  ⤴</a>
+* <a href="https://www.hpc.iastate.edu/guides/condo-2017/software" target="_blank">Environment Modules on Condo  ⤴</a>

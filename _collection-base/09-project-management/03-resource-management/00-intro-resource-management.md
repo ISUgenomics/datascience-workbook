@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -117,16 +115,16 @@ Informational resources, such as data, research papers, and software tools, are 
 
 In a research project, Informational Resources encompass crucial components such as:
 
-**1.** {% include target_link href=931.0 %} <br>
+**1.** <a class="t-links" href="931.0"></a> <br>
 <i>Data Management ensures the integrity, accessibility, and security of data, forming the backbone of research analysis and insights. </i> <base class="mb">
 
-**2.** {% include target_link href=932.0 %} <br>
+**2.** <a class="t-links" href="932.0"></a> <br>
 <i>Code Management, through practices like version control, maintains the consistency and trackability of software code, a critical element in reproducible and collaborative research. </i> <base class="mb">
 
-**3.** {% include target_link href=932.1 %} <br>
+**3.** <a class="t-links" href="932.1"></a> <br>
 <i>Storage and Version Control systems safeguard information, provide historical tracking of project progress, and facilitate efficient resource sharing.</i> <base class="mb">
 
-**4.** {% include target_link href=933.1 %} <br>
+**4.** <a class="t-links" href="933.1"></a> <br>
 <i>Documentation acts as the repository of knowledge, capturing the nuances of research methodologies, findings, and intellectual property, ensuring that every aspect of the research is recorded, understandable, and accessible for future reference.</i> <base class="mb">
 
 

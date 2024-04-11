@@ -18,8 +18,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -30,7 +28,6 @@ tags: []
 
 Documentation is a multifaceted pillar that supports more than just code — it's integral to the entire spectrum of research activities. A well-documented project **sheds light on the intricacies of the research process**, paving the way for success. It amplifies clarity, ensures repeatability, and garners increased credibility for the research undertaken. Beyond its immediate benefits, documentation acts as a reservoir of knowledge, allowing researchers to effortlessly revisit previous works, retrieve pivotal methodologies, and draw insights for subsequent projects. This archival quality not only conserves precious time but also acts as a catalyst for **elevating productivity and innovation in future endeavors**.
 
----
 
 # Tools for Research Documentation
 
@@ -138,4 +135,4 @@ It's worth noting that while some integrations come built-in, others might requi
 Data visualization tools adeptly convert intricate datasets into clear and `interactive visuals`, offering diverse representations like `graphs`, `charts`, and `maps` to **aid in data interpretation and presentation**. These tools bridge the gap between raw data and comprehensible insights, making communication more effective.
 
 For detailed tutorials on **Data Visualization Tools** and methodologies, refer to section
-{% include target_link href=800 %} which includes topics such as {% include target_link href=811 %} and {% include target_link href=820 %} providing hands-on examples with tools like {% include target_link href=814 %} , {% include target_link href=821.1 %} (creating plots in the UNIX shell), {% include target_link href=822.01 %} (data processing & interactive plotting with Python), and {% include target_link href=823.01 %} (data processing & plotting with R).
+<a class="t-links" href="800"></a> which includes topics such as <a class="t-links" href="811"></a> and <a class="t-links" href="820"></a> providing hands-on examples with tools like <a class="t-links" href="814"></a>, <a class="t-links" href="821.1"></a> (creating plots in the UNIX shell), <a class="t-links" href="822.01"></a> (data processing & interactive plotting with Python), and <a class="t-links" href="823.01"></a> (data processing & plotting with R).

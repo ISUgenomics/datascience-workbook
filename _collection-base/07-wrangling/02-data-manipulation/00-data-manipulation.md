@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -70,24 +68,24 @@ By using these features, researchers can quickly and easily manipulate data shee
 To learn more about manipulating Excel data sheets, you can visit the following website: <a href="https://support.microsoft.com/en-us/office/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca" target="_blank">Basic tasks in Excel  ⤴</a> *by Microsoft*.
 <span style="color: #ff3870;font-weight: 500;">Explore practical examples in the hands-on tutorials available in this workbook:</span>
 
-<ul><li><b>INTRODUCTION:</b> {% include target_link href=721.1 %} </li>
+<ul><li><b>INTRODUCTION:</b> <a class="t-links" href="721.1"></a> </li>
 <li><b>TUTORIALS:</b></li>
-  <ul><li> {% include target_link href=721.2 %}</li>
-  <li> {% include target_link href=721.3 %}</li>
-  <li> {% include target_link href=721.4 %}</li>
-  <li> {% include target_link href=721.5 %}</li></ul></ul>
+  <ul><li> <a class="t-links" href="721.2"></a></li>
+  <li> <a class="t-links" href="721.3"></a></li>
+  <li> <a class="t-links" href="721.4"></a></li>
+  <li> <a class="t-links" href="721.5"></a></li></ul></ul>
 
 
 ## Python
 
 <a href="https://www.python.org/shell/" target="_blank">Python  ⤴</a> is a powerful programming language widely used for **advanced data analysis, statistics, and interactive visualization**, particularly for working with large text files. Python offers a rich set of libraries and modules that can be used to manipulate text files, including:
 <ul>
-<li> {% include target_link href=536 text="Tutorial" button="Y" %} <a href="https://pandas.pydata.org/" target="_blank">Pandas</a>, a Python library for efficient data structure manipulation and analysis </li>
-<li> {% include target_link href=537 text="Tutorial" button="Y" %} <a href="https://numpy.org/" target="_blank">NumPy</a>, a Python library for computing and data structure transformation </li>
-<li> {% include target_link href=538 text="Tutorial" button="Y" %} <a href="https://www.scipy.org/" target="_blank">SciPy</a>, a Python library for scientific computing and statistics </li>
-<li> {% include target_link href=535 text="Tutorial" button="Y" %} <a href="https://docs.python.org/3/library/math.html" target="_blank">Math</a>, a Python module for mathematical operations </li>
-<li> {% include target_link href="" text="Tutorial" button="Y" %} <a href="https://docs.python.org/3/library/re.html" target="_blank">Regex</a>, a Python module for working with regular expressions </li>
-<li> {% include target_link href=534 text="Tutorial" button="Y" %} <a href="https://docs.python.org/3/library/json.html" target="_blank">JSON</a>, a Python module for working with data in JSON format </li>
+<li> <a class="t-links" href="536" button="true">Tutorial</a> <a href="https://pandas.pydata.org/" target="_blank">Pandas</a>, a Python library for efficient data structure manipulation and analysis </li>
+<li> <a class="t-links" href="537" button="true">Tutorial</a> <a href="https://numpy.org/" target="_blank">NumPy</a>, a Python library for computing and data structure transformation </li>
+<li> <a class="t-links" href="538" button="true">Tutorial</a> <a href="https://www.scipy.org/" target="_blank">SciPy</a>, a Python library for scientific computing and statistics </li>
+<li> <a class="t-links" href="535" button="true">Tutorial</a>
+<li> <a class="t-links" href=""> button="true"><span class="c-alert">Comming soon</span></a> <a href="https://docs.python.org/3/library/re.html" target="_blank">Regex</a>, a Python module for working with regular expressions </li>
+<li> <a class="t-links" href="534" button="true">Tutorial</a> <a href="https://docs.python.org/3/library/json.html" target="_blank">JSON</a>, a Python module for working with data in JSON format </li>
 </ul>
 
 With these libraries, you can manipulate large text files, clean and transform data, perform statistical analysis, and format the the output.
@@ -95,14 +93,14 @@ With these libraries, you can manipulate large text files, clean and transform d
 <span style="color: #ff3870;font-weight: 500;">To learn more about manipulating large text files with Python, you can visit the following tutorials in this workbook:</span>
 
 <ul><li><b>INTRODUCTION:</b></li><ul>
-  <li> {% include target_link href=420 %} </li>
-  <li> {% include target_link href=531 %} </li></ul>
+  <li> <a class="t-links" href="420"></a> </li>
+  <li> <a class="t-links" href="531"></a> </li></ul>
 <li><b>TUTORIALS:</b></li><ul>
-  <li> {% include target_link href=423 %} </li>
-  <li> {% include target_link href=533 %} </li>
-  <li> {% include target_link href=722.1 %} </li>
-  <li> {% include target_link href=731 %} </li>
-  <li> {% include target_link href=822.01 %} </li>
+  <li> <a class="t-links" href="423"></a> </li>
+  <li> <a class="t-links" href="533"></a> </li>
+  <li> <a class="t-links" href="722.1"></a> </li>
+  <li> <a class="t-links" href="731"></a> </li>
+  <li> <a class="t-links" href="822.01"></a> </li>
 </ul></ul>
 
 
@@ -118,11 +116,11 @@ With these libraries, you can manipulate and transform data, filter, select, and
 <span style="color: #ff3870;font-weight: 500;">To learn more about manipulating data for a quick statistical analysis with R, you can visit the following tutorials in this workbook:</span>
 
 <ul><li><b>INTRODUCTION:</b></li><ul>
-  <li> {% include target_link href=430 %} </li>
-  <li> {% include target_link href=541 %} </li></ul>
+  <li> <a class="t-links" href="430"></a> </li>
+  <li> <a class="t-links" href="541"></a> </li></ul>
 <li><b>TUTORIALS:</b></li><ul>
-  <li> {% include target_link href=432 %} </li>
-  <li> {% include target_link href=823.01 %} </li>
+  <li> <a class="t-links" href="432"></a> </li>
+  <li> <a class="t-links" href="823.01"></a> </li>
 </ul></ul>
 
 

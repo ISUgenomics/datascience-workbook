@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -124,11 +122,11 @@ The role of remote communication tools becomes indispensable. They ensure that c
 A combination of platforms like Slack, Zoom, GitHub and Microsoft Office 365 can facilitate day-to-day communication and task management. </span> Learn more about selected tools from dedicated hands-on tutorials:
 
 <ul>
-<li> {% include target_link href=921 %} </li>
-  <ul><li> {% include target_link href=922 %} </li></ul>
-<li> {% include target_link href=932.3 %} </li>
-  <ul><li> {% include target_link href=932.4 %} </li></ul>
-<li> {% include target_link href=221 %}</li>
+<li> <a class="t-links" href="921"></a> </li>
+  <ul><li> <a class="t-links" href="922"></a> </li></ul>
+<li> <a class="t-links" href="932.3"></a> </li>
+  <ul><li> <a class="t-links" href="932.4"></a> </li></ul>
+<li> <a class="t-links" href="221"></a></li>
 </ul>
 
 ---

@@ -17,12 +17,10 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
-For a quick list of frequently used PBS commands/options, take a look at this {% include target_link href=652.2 text="PBS commands (cheatsheet)" %}
+For a quick list of frequently used PBS commands/options, take a look at this <a class="t-links" href="652.2">commands (cheatsheet)</a>
 
 This guide will show you how to generate PBS job submission scripts for your commands, easily and efficiently!
 
@@ -185,4 +183,4 @@ Once the job has been submitted, you can use various `qstat` commands to check t
 * `qstat -a` - to see all jobs in the queue, or
 * `qstat -u username` - to see all jobs submitted by a particular user.
 
-<span style="color: #ff3870;font-weight: 500;">If you want to learn more about PBS commands for monitoring submitted jobs, a useful resource to explore is the</span> {% include target_link href=652.2 text="PBS commands (cheatsheet)." %}
+<span style="color: #ff3870;font-weight: 500;">If you want to learn more about PBS commands for monitoring submitted jobs, a useful resource to explore is the</span> <a class="t-links" href="652.2">PBS commands (cheatsheet)</a>

@@ -18,8 +18,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Why use Markdown?
 
@@ -38,9 +36,9 @@ tags: []
 ### Some additional reasons for using Markdown:
 
 * It has become a staple of reproducible science
-* It can be rendered on {% include target_link href=932.4 %} (also Bitbucket & GitLab) and makes online repositories more readable and accessible
+* It can be rendered on <a class="t-links" href="932.4"></a> (also Bitbucket & GitLab) and makes online repositories more readable and accessible
 * It is used as a notebook interface for R (<a href="http://rmarkdown.rstudio.com/" target="_blank">Rmarkdown ⤴</a>)
-* It is used as the markup language for {% include target_link href=412 %} which provide a notebook interface for many languages, including Python and R
+* It is used as the markup language for <a class="t-links" href="412"></a> which provide a notebook interface for many languages, including Python and R
 * There are some freely available editors that make writing in Markdown pretty easy
 
     * Windows and Linux: [Github ATOM](https://atom.io/) and [REMARKABLE](https://remarkableapp.github.io/)
@@ -136,7 +134,7 @@ In this tutorial, you will learn how to use Markdown in different environments, 
 
 ## Using Markdown on GitHub docs
 
-{% include target_link href=932.4 %} allows you to write and format documentation using Markdown. To use Markdown on GitHub Docs:
+<a class="t-links" href="932.4"></a> allows you to write and format documentation using Markdown. To use Markdown on GitHub Docs:
 
 1. Create a new Markdown file with `.md` extension.
 
@@ -149,7 +147,7 @@ In this tutorial, you will learn how to use Markdown in different environments, 
 
 ## Using Markdown in Jupyter Notebook
 
-{% include target_link href=412 %} is a popular interactive computing environment that supports Markdown for creating narrative content alongside code cells. Markdown cells in Jupyter Notebook allow you to document your code, explain your thought process, and present your results in a clear and organized manner.
+<a class="t-links" href="412"></a> is a popular interactive computing environment that supports Markdown for creating narrative content alongside code cells. Markdown cells in Jupyter Notebook allow you to document your code, explain your thought process, and present your results in a clear and organized manner.
 
 Open a new Jupyter notebook and follow these steps to use Markdown in Jupyter Notebook:
 
@@ -172,7 +170,7 @@ Note that the next cell type will switch to Code by default after you run the Ma
 
 ## Using Markdown in VSCode
 
-{% include target_link href=411 %} and Atom: Both VSCode and Atom have built-in support for Markdown. Both provide a seamless Markdown editing experience with features like syntax highlighting, live preview, and extensions for enhanced functionality.
+<a class="t-links" href="411"></a> and Atom: Both VSCode and Atom have built-in support for Markdown. Both provide a seamless Markdown editing experience with features like syntax highlighting, live preview, and extensions for enhanced functionality.
 
 To use Markdown in VSCode:
 

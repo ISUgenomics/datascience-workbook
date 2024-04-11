@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -29,23 +27,23 @@ To access remotely data stored on a HPC cluster, you need to log into a node wit
 
 * **VPN (Virtual Private Network)** <br>
 It could be required when you are in an **off-campus location**. <br>
-Learn more from the hands-on tutorial {% include target_link href=622 text="Virtual Private Network (VPN) connection" %} provided in the {% include target_link href=600 text="06: High-Performance Computing (HPC)" %} section of this workbook.
+Learn more from the hands-on tutorial <a class="t-links" href="622"></a> provided in the <a class="t-links" href="600"></a> section of this workbook.
 
 * **SSH (Secure Shell connection)** <br>
 It can be used **when you are already in the internal network**, i.e., when you are on campus or have a VPN connection to the organization's network. <br>
-Learn more from the hands-on tutorials available in the {% include target_link href=621 text="06. HPC / Remote access to HPC resources" %} section of this workbook:
-  * {% include target_link href=623 text="Secure Shell Connection (SSH)" %}
-  * {% include target_link href=623.1 text="SSH shortcuts and password-less login" %}
+Learn more from the hands-on tutorials available in the <a class="t-links" href="621">06. HPC / Remote access to HPC resources</a> section of this workbook:
+  * <a class="t-links" href="623"></a>
+  * <a class="t-links" href="623.1"></a>
 
 <div class="warning" markdown="1">
-Accessing data using VPN or SSH connection typically involves using a command-line interface (CLI), rather than a graphical user interface (GUI). To learn more about **command line** explore tutorials in the section {% include target_link href=300 text="03: Introduction to Command Line" %}
+Accessing data using VPN or SSH connection typically involves using a command-line interface (CLI), rather than a graphical user interface (GUI). To learn more about **command line** explore tutorials in the section <a class="t-links" href="300"></a>
 </div>
 
 <div class="protip" markdown="1">
 When accessing data using VPN, you first need to **establish a VPN connection** between your local machine and the remote network. This is typically done **using VPN client software** that you install on your local machine. Once the VPN connection is established, you can access the remote network as if you were directly connected to it, and you can **use SSH protocol to access the data** stored on the remote machines.
 </div>
 
-You start by opening a {% include target_link href=310 text="terminal window" %} on your local machine and entering the following command to log into the remote machine:
+You start by opening a <a class="t-links" href="310">terminal window</a> on your local machine and entering the following command to log into the remote machine:
 
 ```
 ssh username@remote_host
@@ -59,13 +57,13 @@ You can then use standard file system commands, such as `ls`, `cd`, and `pwd`, t
 ### Command line approach for:
 
 ### • *data transfer*
-Follow the hands-on tutorial: {% include target_link href=712 text="Transfer data from and to the remote machine" %}
+Follow the hands-on tutorial: <a class="t-links" href="712">Transfer data from and to the remote machine</a>
 
 ### • *data download*
-Follow the hands-on tutorial: {% include target_link href=713 text="Download data from online resources" %}
+Follow the hands-on tutorial: <a class="t-links" href="713">Download data from online resources</a>
 
 ### • *data preview & edit*
-Follow the hands-on tutorial: {% include target_link href=714 text="Preview and edit remote data without downloading" %}
+Follow the hands-on tutorial: <a class="t-links" href="714">Preview and edit remote data without downloading</a>
 
 ## **2. Log in to the HPC web-based interface**
 Some HPC systems may also provide web-based graphical interfaces for remotely accessing and managing data. One of the most commonly practiced solutions is:
@@ -77,16 +75,16 @@ Some HPC systems may also provide web-based graphical interfaces for remotely ac
 <a href="https://openondemand.org" target="_blank">Open On-Demand  ⤴</a> is a web-based platform that provides **remote access to high-performance computing (HPC) resources**, such as supercomputers and large-scale clusters. It provides a **user-friendly interface** for accessing these resources **from a web browser**, without the need for complex software installations or command-line interfaces.
 </div>
 
-<span style="color: #ff3870;font-weight: 500;">Follow the hands-on tutorial</span> {% include target_link href=624 text="Open On Demand (OOD) Connection using web-based interface" %} to learn how to use different tools and features available in the OOD web interface of HPC systems.
+<span style="color: #ff3870;font-weight: 500;">Follow the hands-on tutorial</span> <a class="t-links" href="624">Open On Demand (OOD) Connection using web-based interface</a> to learn how to use different tools and features available in the OOD web interface of HPC systems.
 
 
 **QUICK GUIDE to OOD**
 
 You start by opening a web browser on your local machine and entering the URL to the website that hosts the OOD interface for a given HPC system, e.g.,
 
-* <a href="https://atlas-ood.hpc.msstate.edu/" target="_blank">https://atlas-ood.hpc.msstate.edu/  ⤴</a> for {% include target_link href=612.2 section="#open-ondemand-login" text="OOD access to Atlas" %} computing cluster of the {% include target_link href=612.1 text="SCINet Scientific Computing" %}
-* <a href="http://ceres-ood.scinet.usda.gov/" target="_blank">http://ceres-ood.scinet.usda.gov/  ⤴</a> <i>for <a href="https://scinet.usda.gov/guides/access/open-ondemand#open-ondemand-interface-guide" target="_blank">OOD access to Ceres  ⤴</a> computing cluster of the {% include target_link href=612.1 text="SCINet Scientific Computing" %}
-* <a href="http://nova-ondemand.its.iastate.edu/" target="_blank">http://nova-ondemand.its.iastate.edu/  ⤴</a> for <a href="https://www.hpc.iastate.edu/guides/open-ondemand" target="_blank">OOD access to Nova  ⤴</a> computing cluster of the {% include target_link href=613.1 text="ISU HPC Network" %}
+* <a href="https://atlas-ood.hpc.msstate.edu/" target="_blank">https://atlas-ood.hpc.msstate.edu/  ⤴</a> for <a class="t-links" href="612.2" section="#open-ondemand-login">OOD access to Atlas</a> computing cluster of the <a class="t-links" href="612.1">SCINet Scientific Computing</a>
+* <a href="http://ceres-ood.scinet.usda.gov/" target="_blank">http://ceres-ood.scinet.usda.gov/  ⤴</a> <i>for <a href="https://scinet.usda.gov/guides/access/open-ondemand#open-ondemand-interface-guide" target="_blank">OOD access to Ceres  ⤴</a> computing cluster of the <a class="t-links" href="612.1">SCINet Scientific Computing</a>
+* <a href="http://nova-ondemand.its.iastate.edu/" target="_blank">http://nova-ondemand.its.iastate.edu/  ⤴</a> for <a href="https://www.hpc.iastate.edu/guides/open-ondemand" target="_blank">OOD access to Nova  ⤴</a> computing cluster of the <a class="t-links" href="613.1">ISU HPC Network</a>
 
 You will be prompted to **enter your credentials** for the HPC system, and if the login is successful, you will be logged into the remote machine and have access to its file system and resources.
 

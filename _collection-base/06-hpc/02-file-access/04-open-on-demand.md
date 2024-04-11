@@ -18,8 +18,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -34,9 +32,9 @@ So, first open your favorite web-browser (e.g., Chrome, Firefox, Safari) and **v
 <div class="protip" markdown="1">
 This URL address for the OOD interface should be available in the documentation or on your organization's website.
 For example, you can open the OOD interface for:
-* {% include target_link href=612.2 text="Atlas" %} cluster (part of {% include target_link href=612.1 text="SCINet Scientific Computing" %}) at <a href="https://atlas-ood.hpc.msstate.edu/" target="_blank">https://atlas-ood.hpc.msstate.edu/  ⤴</a>
-* {% include target_link href=612.3 text="Ceres" %} cluster (part of {% include target_link href=612.1 text="SCINet Scientific Computing" %}) at <a href="http://ceres-ood.scinet.usda.gov" target="_blank">http://ceres-ood.scinet.usda.gov  ⤴</a>
-* {% include target_link href=613.3 text="Nova" %} cluster (part of {% include target_link href=613.1 text="Iowa State University HPC" %}) at <a href="http://nova-ondemand.its.iastate.edu/" target="_blank">http://nova-ondemand.its.iastate.edu/  ⤴</a>
+* <a class="t-links" href="612.2">Atlas</a> cluster (part of <a class="t-links" href="612.1">SCINet Scientific Computing</a>) at <a href="https://atlas-ood.hpc.msstate.edu/" target="_blank">https://atlas-ood.hpc.msstate.edu/  ⤴</a>
+* <a class="t-links" href="612.3">Ceres</a> cluster (part of <a class="t-links" href="612.1">SCINet Scientific Computing</a>) at <a href="http://ceres-ood.scinet.usda.gov" target="_blank">http://ceres-ood.scinet.usda.gov  ⤴</a>
+* <a class="t-links" href="613.3">Nova</a> cluster (part of <a class="t-links" href="613.1">Iowa State University HPC</a>) at <a href="http://nova-ondemand.its.iastate.edu/" target="_blank">http://nova-ondemand.its.iastate.edu/  ⤴</a>
 </div>
 
 Most resources probably require a login and allow access only to authorized users. Yet the good news is that logging into the OOD interface will require the same user credentials (`username` & `password`) as command-line access. To add an extra layer of security to the user authentication process, you may be asked for a **multi-factor authentication** (MFA). <br>
@@ -76,13 +74,11 @@ With Open on Demand, **users can log into a remote cluster** and access its comp
 
 ^ *Command Line Features in the OOD web-based interface are available once you launch `Shell Access` as an interactive session or open a terminal window available in the interactive Desktop.*
 
----
 
 # Atlas Open OnDemand
 
-Follow the intrutions in the section: {% include target_link href=612.2 section="#open-ondemand-login" text="The web-browser access: Open OnDemand login" %} in the {% include target_link href=612.2 text="SCINet: Atlas Computing Cluster" %} tutorial in this workbook.
+Follow the intrutions in the section: <a class="t-links" href="612.2" section="#open-ondemand-login">The web-browser access: Open OnDemand login</a> in the <a class="t-links" href="612.2">SCINet: Atlas Computing Cluster</a> tutorial in this workbook.
 
----
 
 # Ceres Open OnDemand
 

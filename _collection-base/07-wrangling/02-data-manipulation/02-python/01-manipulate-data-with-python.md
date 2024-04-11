@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -58,39 +56,39 @@ Before starting data manipulation with Python, there are several steps that need
 ### 1. Setting up a Python DE
 
 Before installing Python, you need to choose an Integrated Development Environment (IDE) to write and execute your code. Some popular Python IDEs include PyCharm, Jupyter Notebook, and Spyder. Choose an IDE that best fits your needs and install it on your computer. <br>
-<span style="color: #ff3870;font-weight: 500;"> Learn more about Python IDEs by following the hands-on tutorials in the</span> {% include target_link href=420 %} section of this workbook:
+<span style="color: #ff3870;font-weight: 500;"> Learn more about Python IDEs by following the hands-on tutorials in the</span> <a class="t-links" href="420"></a> section of this workbook:
 <ul>
-<li> {% include target_link href=421 %} <i>(without installation)</i> </li>
-<li> {% include target_link href=422 %} <i>(no installation)</i> </li>
-<li> {% include target_link href=423 %} <i>(installation needed)</i> </li><ul>
-  <li> {% include target_link href=424 %} <i>(beginner)</i> </li>
-  <li> {% include target_link href=425 %} <i>(intermediate)</i> </li>
-  <li> {% include target_link href=426 %} <i>(advanced)</i> </li>
-  <li> {% include target_link href=427 %} <i>(professional)</i> </li></ul>
+<li> <a class="t-links" href="421"></a> <i>(without installation)</i> </li>
+<li> <a class="t-links" href="422"></a> <i>(no installation)</i> </li>
+<li> <a class="t-links" href="423"></a> <i>(installation needed)</i> </li><ul>
+  <li> <a class="t-links" href="424"></a> <i>(beginner)</i> </li>
+  <li> <a class="t-links" href="425"></a> <i>(intermediate)</i> </li>
+  <li> <a class="t-links" href="426"></a> <i>(advanced)</i> </li>
+  <li> <a class="t-links" href="427"></a> <i>(professional)</i> </li></ul>
 </ul>
 
 ### 2. Python installation
 
 After setting up your IDE, you need to install Python on your computer. You can download the latest version of Python from the official website (https://www.python.org/downloads/). Choose the appropriate version for your operating system and follow the installation instructions. <br>
 <span style="color: #ff3870;font-weight: 500;"> Learn more about Python Installation options by following the hands-on tutorial in this workbook:</span>
-* {% include target_link href=423 %} <i> (installation needed)</i>
+* <a class="t-links" href="423"></a> <i> (installation needed)</i>
 
 ### 3. Intro to Python programming
 
 Once you have installed Python, you need to learn the basics of Python programming. This includes understanding the structure of algorithms, data types, control structures, functions, and modules. You can find many free online resources to learn Python, including courses, tutorials, and documentation. <br>
-<span style="color: #ff3870;font-weight: 500;"> Learn more about Python programming by following the hands-on tutorials in the</span> {% include target_link href=531 %} section of this workbook:
-* {% include target_link href=533 %}
-* {% include target_link href=534 %}
-* {% include target_link href=535 %}
+<span style="color: #ff3870;font-weight: 500;"> Learn more about Python programming by following the hands-on tutorials in the</span> <a class="t-links" href="531"></a> section of this workbook:
+* <a class="t-links" href="533"></a>
+* <a class="t-links" href="534"></a>
+* <a class="t-links" href="535"></a>
 
 
 ### 4. Learning about Python libraries
 
 Python has several libraries specifically designed for data manipulation, such as NumPy, Pandas, and Matplotlib. You need to learn about these libraries and their functions before you start data manipulation. You can find many tutorials and online courses that focus on these libraries. <br>
-<span style="color: #ff3870; font-weight: 500;"> Learn more about Python libraries for data manipulation by following the hands-on tutorials in the</span> {% include target_link href=531 %} section of this workbook:
-* {% include target_link href=536 %}
-* {% include target_link href=537 %}
-* {% include target_link href=538 %}
+<span style="color: #ff3870; font-weight: 500;"> Learn more about Python libraries for data manipulation by following the hands-on tutorials in the</span> <a class="t-links" href="531"></a> section of this workbook:
+* <a class="t-links" href="536"></a>
+* <a class="t-links" href="537"></a>
+* <a class="t-links" href="538"></a>
 
 
 ### 5. Getting practical experience
@@ -98,10 +96,10 @@ Python has several libraries specifically designed for data manipulation, such a
 Finally, you need to practice what you have learned by working on hands-on tutorials. This will help you apply your knowledge of Python programming and data manipulation libraries to real-world problems. There are many hands-on tutorials in this workbook! <br>
 <span style="color: #ff3870; font-weight: 500;"> Start manipulating data files with Python by following the hands-on tutorials in this workbook:</span>
 <ul>
-<li> SECTION: {% include target_link href=722.1 %} </li>
-  <ul><li> {% include target_link href=722.2 %} </li></ul>
-<li> SECTION: {% include target_link href=731 %} </li>
-  <ul><li> {% include target_link href=732 %} </li>
-  <li> {% include target_link href=733 %} </li></ul>
-<li> SECTION: {% include target_link href=822.01 %} </li>
+<li> SECTION: <a class="t-links" href="722.1"></a> </li>
+  <ul><li> <a class="t-links" href="722.2"></a> </li></ul>
+<li> SECTION: <a class="t-links" href="731"></a> </li>
+  <ul><li> <a class="t-links" href="732"></a> </li>
+  <li> <a class="t-links" href="733"></a>{ </li></ul>
+<li> SECTION: <a class="t-links" href="822.01"></a> </li>
 </ul>

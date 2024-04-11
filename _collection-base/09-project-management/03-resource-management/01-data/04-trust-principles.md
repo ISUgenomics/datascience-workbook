@@ -17,7 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
 
 <span style="color: #ff3870;">Guidelines to ensure digital repositories are <b>T</b>ransparent, <b>R</b>esponsible, <b>U</b>ser-focused, <b>S</b>ustainable, and employ appropriate <b>T</b>echnology.</span>
 
@@ -26,7 +25,7 @@ tags: []
 The TRUST Principles are **fundamental guidelines for digital repositories**, crucial in the realm of data stewardship. They focus on ensuring repositories are Transparent, Responsible, User-focused, Sustainable, and employ appropriate Technology. These principles are increasingly important in managing and preserving research data **effectively and ethically**.
 
 <div class="note before" markdown="1" data-before="The Purpose">
-Essentially, the TRUST Principles are all about **ensuring the reliability and longevity of research data**. They focus on not just preserving data but also making sure it's handled in a way that’s transparent, responsible, and user-friendly. This framework is key for repositories aiming to be trusted custodians of data, mirroring the ethics and community focus found in the {% include target_link href=931.3 %} and the efficiency and utility emphasized in the {% include target_link href=931.2 %}
+Essentially, the TRUST Principles are all about **ensuring the reliability and longevity of research data**. They focus on not just preserving data but also making sure it's handled in a way that’s transparent, responsible, and user-friendly. This framework is key for repositories aiming to be trusted custodians of data, mirroring the ethics and community focus found in the <a class="t-links" href="931.3"></a> and the efficiency and utility emphasized in the <a class="t-links" href="931.2"></a>
 </div>
 
 <div class="protip" markdown="1">

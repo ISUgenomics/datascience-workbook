@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -33,20 +31,19 @@ tags: []
 
 In general, online repositories can be used for any type of project that involves multiple files that change over time. Git is a powerful tool that facilitates management and version control of these repositories. In particular, **you can use `git` to download the repository you need**. That's what you will learn in this practical tutorial [ *go to the [hands-on section](#hands-on-tutorial)* ].
 
-To learn more about project storage and version control, explore the {% include target_link href=932.1 text="09. Project Management / Storage & Version Control" %} section in this workbook. Specifically, you can **get started with a few popular online hosting platforms** that allow you to version control using Git:
+To learn more about project storage and version control, explore the <a class="t-links" href="932.1">09. Project Management / Storage & Version Control</a> section in this workbook. Specifically, you can **get started with a few popular online hosting platforms** that allow you to version control using Git:
 
-<ul><li>{% include target_link href=932.3 text="Online hosting platforms for GIT repositories" %}</li>
-  <ul><li> {% include target_link href=932.4 text="Introduction to GitHub" %}</li>
-  <li> {% include target_link href=932.5 text="Introduction to BitBucket" %}</li></ul>
+<ul><li><a class="t-links" href="932.3"></a></li>
+  <ul><li> <a class="t-links" href="932.4"></a></li>
+  <li> <a class="t-links" href="932.5"></a></li></ul>
 </ul>
 
 <span style="color: #ff3870; font-weight: 500;">If you are planning to contribute to any repository</span>, it is worthwhile for you to learn more about the useful options offered by `Git`. In this case, use the hands-on tutorials that provide **instructions for more advanced git commands**:
 
-<ul><li> {% include target_link href=932.2 text="GIT - a distributed version control system" %}</li>
-  <ul><li> {% include target_link href=932.21 text="GIT Commands <i>cheatsheet</i>" %}</li></ul>
-<li> {% include target_link href=932.41 text="GitHub for advanced users" %}</li></ul>
+<ul><li> <a class="t-links" href="932.2"></a></li>
+  <ul><li> <a class="t-links" href="932.21">GIT Commands <i>cheatsheet</i></a></li></ul>
+<li> <a class="t-links" href="932.41"></a></li></ul>
 
----
 
 # Hands-on tutorial
 
@@ -217,6 +214,6 @@ When cloning a repository, Git automatically creates a remote named 'origin' tha
 
 If you are planning to contribute to any GIT-based repository, it is worthwhile for you to learn more about the useful options offered by git. In this case, use the hands-on tutorials that provide **instructions for more advanced git commands**:
 
-<ul><li> {% include target_link href=932.2 text="GIT - a distributed version control system" %}</li>
-  <ul><li> {% include target_link href=932.21 text="GIT Commands <i>cheatsheet</i>" %}</li></ul>
+<ul><li> <a class="t-links" href="932.2"></a></li>
+  <ul><li> <a class="t-links" href="932.21">GIT Commands <i>cheatsheet</i></a></li></ul>
 </ul>

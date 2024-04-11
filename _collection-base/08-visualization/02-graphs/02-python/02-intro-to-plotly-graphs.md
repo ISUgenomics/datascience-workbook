@@ -18,8 +18,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -35,8 +33,8 @@ Getting started with the **Plotly** library as a **Python** developer is straigh
 
 <div class="warning" markdown="1">
 If you don't have pip or Conda installed, start with the tutorial(s) that will guide you through this necessary step:
-* **PIP INSTALLATION:** {% include target_link href=531 %}
-* **CONDA INSTALLATION:** {% include target_link href=231 %}
+* **PIP INSTALLATION:** <a class="t-links" href="531"></a>
+* **CONDA INSTALLATION:** <a class="t-links" href="231"></a>
 </div>
 
 
@@ -88,7 +86,7 @@ jupyter lab
 
 <div class="warning" markdown="1">
 If you don't have a Jupyter installed, start with the tutorial that will guide you through this necessary step:
-* **JUPYTER INSTALLATION:** {% include target_link href=412 %}
+* **JUPYTER INSTALLATION:** <a class="t-links" href="412"></a>
 </div>
 
 Once you have launched the Jupyter Development Environment in a browser window, navigate to the desired location in the file system and open a new file under the Python kernel.

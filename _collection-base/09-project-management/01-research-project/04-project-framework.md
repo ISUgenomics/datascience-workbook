@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -80,7 +78,7 @@ and <br>- the guidelines for decision-making.</td>
 This comprehensive approach is particularly valuable in research projects, where strategic alignment, detailed planning, and robust governance are key to navigating the complexities and uncertainties inherent in research.
 </div>
 
-For a practical understanding of <span style="color: #ff3870; font-weight: 500;">Project Strategy and Risk Management</span> in the context of research applications, I highly recommend exploring the {% include target_link href=913 text="hands-on tutorial" %}  in this workbook. This tutorial is designed to provide you with real-world insights and actionable skills, specifically tailored to managing research projects.
+For a practical understanding of <span style="color: #ff3870; font-weight: 500;">Project Strategy and Risk Management</span> in the context of research applications, I highly recommend exploring the <a class="t-links" href="913">hands-on tutorial</a> in this workbook. This tutorial is designed to provide you with real-world insights and actionable skills, specifically tailored to managing research projects.
 
 <span style="color: #ff3870;font-weight: 500;">Now, let's delve into how Project Design and Project Framework can be adapted for research projects!</span><br>
 *In this tutorial, the focus is on practicality and adaptability, ensuring that the project management practices enhance rather than hinder your research process. The goal is to strike a balance between structured management and the fluid, dynamic nature of research work.*

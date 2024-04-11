@@ -18,8 +18,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -115,7 +113,7 @@ python3 merge_data.py -i input_file -m merge_file -c 1,5
 
 ## Environment setup
 
-The application is developed in Python3 programming language and requires importing several useful  libraries. Thus, to manage dependencies, first you have to set up the Conda environment on your (local or remote) machine. Follow the instructions provided in section {% include target_link href=731 section="#environment-setup" text="Environment setup" %} in the introduction to {% include target_link href=731 text="Data Wrangling: use ready-made apps" %} to get Python installed and create `data_wrangling` virtual environment using <b>install <a href="https://docs.conda.io/en/latest/" target="_blank">Conda ⤴</a></b>.
+The application is developed in Python3 programming language and requires importing several useful  libraries. Thus, to manage dependencies, first you have to set up the Conda environment on your (local or remote) machine. Follow the instructions provided in section <a class="t-links" href="731" section="#environment-setup">Environment setup</a> in the introduction to <a class="t-links" href="731"></a> to get Python installed and create `data_wrangling` virtual environment using <b>install <a href="https://docs.conda.io/en/latest/" target="_blank">Conda ⤴</a></b>.
 
 <span style="color: #ff3870;font-weight: 500;">Once you have Conda and the <i>data_wrangling</i> environment follow further steps below.</span>
 

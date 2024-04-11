@@ -17,7 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
 
 <span style="color: #ff3870;">Principles to ensure data management is centered on <b>C</b>ollective benefit, <b>A</b>uthority to control, <b>R</b>esponsibility, and <b>E</b>thics, especially in the context of Indigenous data sovereignty.</span>
 
@@ -27,7 +26,7 @@ The <a href="https://en.wikipedia.org/wiki/CARE_Principles_for_Indigenous_Data_G
 
 
 <div class="note" markdown="1">
-The **CARE** Principles were developed to complement the {% include target_link href=931.2 %} (**F**indable, **A**ccessible, **I**nteroperable, and **R**eusable), which are all about making data easy to find, access, share, and use in the scientific world. FAIR is widely recognized in the scientific community for data management.
+The **CARE** Principles were developed to complement the <a class="t-links" href="931.2"></a> (**F**indable, **A**ccessible, **I**nteroperable, and **R**eusable), which are all about making data easy to find, access, share, and use in the scientific world. FAIR is widely recognized in the scientific community for data management.
 </div>
 
 <div class="protip" markdown="1">

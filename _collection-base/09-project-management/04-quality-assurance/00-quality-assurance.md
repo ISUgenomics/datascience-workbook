@@ -18,8 +18,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -164,7 +162,7 @@ Embrace feedback from Monitoring and Evaluation like a roadmap for excellence. I
 </div>
 
 <br><span style="background-color: #e8e9e8; color: #0ba37f; font-weight: 500; padding: 5px 7px;">TUTORIAL</span>&nbsp;
-For a deep dive into real-life solutions and tools that can elevate the Monitoring & Evaluation of small to moderate scale research projects, be sure to check out our detailed tutorial on {% include target_link href=941 %}
+For a deep dive into real-life solutions and tools that can elevate the Monitoring & Evaluation of small to moderate scale research projects, be sure to check out our detailed tutorial on <a class="t-links" href="941"></a>
 
 ---
 
@@ -204,7 +202,7 @@ Boost your research productivity by embracing a culture of continuous improvemen
 </div>
 
 <span style="background-color: #e8e9e8; color: #0ba37f; font-weight: 500; padding: 5px 7px;">TUTORIAL</span>
-Dive deeper into strategies for maximizing Research Productivity in small to moderate scale projects with our comprehensive tutorial on {% include target_link href=942 %}
+Dive deeper into strategies for maximizing Research Productivity in small to moderate scale projects with our comprehensive tutorial on <a class="t-links" href="942"></a>
 
 ---
 
@@ -248,4 +246,4 @@ If your research involves **data with special security requirements**, such as m
 </div>
 
 <span style="background-color: #e8e9e8; color: #0ba37f; font-weight: 500; padding: 5px 7px;">TUTORIAL</span>
-To further explore how to ensure your research is reproducible, especially in small to moderate scale projects, check out our in-depth tutorial on {% include target_link href=943 %}
+To further explore how to ensure your research is reproducible, especially in small to moderate scale projects, check out our in-depth tutorial on <a class="t-links" href="943"></a>

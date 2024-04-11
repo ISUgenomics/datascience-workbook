@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -281,7 +279,7 @@ Go to **Colors** tab in the menu bar and explore options like:
 to make adjustments to the image's color and tone.
 
 <div class="warning" markdown="1">
-Keep caution when editing layers in GIMP and ensure the correct layer is selected to avoid unintended modifications. To change the active layer in GIMP, go to the **Layers** dialog panel (typically on the bottom-right) and click on the layer intended for edition. The currently active layer is highlighted. See {% include target_link href=812 section="#layers" text="Layers section" %} for more details.
+Keep caution when editing layers in GIMP and ensure the correct layer is selected to avoid unintended modifications. To change the active layer in GIMP, go to the **Layers** dialog panel (typically on the bottom-right) and click on the layer intended for edition. The currently active layer is highlighted. See <a class="t-links" href="812" section="#layers">Layers section</a> for more details.
 </div>
 
 ![01-raster_gimp_colors1.png]({{ images_path }}/01-raster_gimp_colors1.png)

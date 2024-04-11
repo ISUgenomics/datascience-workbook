@@ -17,7 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
 
 <span style="color: #ff3870;font-weight: 500;">Strategies to ensure research data is <b>F</b>indable, <b>A</b>ccessible, <b>I</b>nteroperable, and <b>R</b>eusable.</span>
 
@@ -30,7 +29,7 @@ The FAIR Principles were designed to improve the way data is handled in research
 </div>
 
 <div class="protip" markdown="1">
-In essence, the FAIR Principles are all about **making the most out of data in science**. They ensure that data is not only easy to find and access but also that it's set up in a way that others can use it both now and in the future. It's a framework that encourages scientists to manage data in a way that's open, clear, and beneficial for the entire scientific community, much like how the {% include target_link href=931.3 %} advocate for fairness and justice in data governance related to Indigenous communities.
+In essence, the FAIR Principles are all about **making the most out of data in science**. They ensure that data is not only easy to find and access but also that it's set up in a way that others can use it both now and in the future. It's a framework that encourages scientists to manage data in a way that's open, clear, and beneficial for the entire scientific community, much like how the <a class="t-links" href="931.3"></a> advocate for fairness and justice in data governance related to Indigenous communities.
 </div>
 
 

@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -56,7 +54,7 @@ Additionally, the process of **mounting a remote folder may require some technic
 
 SSH (Secure Shell) is a secure network protocol that allows users to securely access and manage remote computers over an unsecured network. It encrypts all data transmitted between the client and server, ensuring that sensitive information is protected.
 
-<span style="color: #ff3870; font-weight: 500;">To learn more about SSH visit the tutorial </span> {% include target_link href=623 text="Secure Shell Connection (SSH)" %} available in section {% include target_link href=621 text="06. High-Performance Computing (HPC) / Remote Access to HPC Resources" %} of this workbook.
+<span style="color: #ff3870; font-weight: 500;">To learn more about SSH visit the tutorial </span> <a class="t-links" href="623"></a> available in section <a class="t-links" href="621">06. High-Performance Computing (HPC) / Remote Access to HPC Resources</a> of this workbook.
 
 **SSHFS is a command-line tool** that allows you to mount a remote file system using SSH. It uses the SSH protocol to securely connect to the remote server and mount the remote file system on your local machine, allowing you to view and access files as if they were stored locally.
 

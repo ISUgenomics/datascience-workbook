@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -35,8 +33,8 @@ In general, <a href="https://git-scm.com" target="_blank">Git  ⤴</a> is consid
 
 If you are planning to contribute to any GIT-based repository, it is worthwhile for you to learn more about the useful options offered by git. In this case, follow the hands-on tutorials:
 
-* Tutorial: {% include target_link href=932.2 %}
-* Cheatsheet: {% include target_link href=932.21 %}
+* Tutorial: <a class="t-links" href="932.2"></a>
+* Cheatsheet: <a class="t-links" href="932.21"></a>
 
 In the next [section: Types of GIT-based repositories](#types-of-git-based-repositories), you will learn which popular **online platforms hosting repositories** use Git-based version control.
 

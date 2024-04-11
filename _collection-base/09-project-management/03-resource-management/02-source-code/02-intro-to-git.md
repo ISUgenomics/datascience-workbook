@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # <span style="color: #8896c1;">Introduction</span>
 
@@ -31,7 +29,7 @@ In the simplest of terms, VCS are the toolkits for programmers that keep track o
 Imagine you're working on a big project, and suddenly something breaks. With VCS, you can hop back to the past version where things worked just fine! Intriguing, right?
 </div>
 
-<span style="color: #ff3870;font-weight: 500;"> To better understand what a VCS is, you can refer back to our previous section in this workbook, {% include target_link href=932.1 %} which comprehensively covers this topic.</span>
+<span style="color: #ff3870;font-weight: 500;"> To better understand what a VCS is, you can refer back to our previous section in this workbook, <a class="t-links" href="932.1"></a> which comprehensively covers this topic.</span>
 
 <a href="https://git-scm.com/" target="_blank">Git  ⤴</a>, unlike other VCSs, is a distributed version control system. In a non-techie lingo, it means that **every person contributing to a project gets their copy of the entire project**. *(It's like having your cake and eating it too!)* This sets Git apart from other VCS, as it doesn't rely on a central server to store all the versions of a project. Instead, every developer's working copy of the code is also a repository that can contain the full history and version tracking capabilities. So, the beauty of Git is that **it allows you to work offline and work concurrently with other developers without interrupting each other's contributions**.
 
@@ -389,7 +387,7 @@ Branching commands are essential when you want to experiment with new features o
 ### • *More advanced*
 
 <div class="protip" markdown="1">
-Remember, Git is a very powerful tool with a plethora of commands. This was just a basic list for beginners, and there are many more commands and options to explore as you become more comfortable with using Git. Then it may be helpful for you to visit a more comprehensive list of {% include target_link href=932.21 %} (cheatsheet) also provided in this workbook.
+Remember, Git is a very powerful tool with a plethora of commands. This was just a basic list for beginners, and there are many more commands and options to explore as you become more comfortable with using Git. Then it may be helpful for you to visit a more comprehensive list of <a class="t-links" href="932.21"></a> (cheatsheet) also provided in this workbook.
 </div>
 
 ---
@@ -644,7 +642,7 @@ In this section of the tutorial, we will be focusing on working with remote repo
 
 If you don't already have one, you'll need a GitHub account to create and manage remote repositories. <br>
 **You can sign up for a free account on the <a href="https://github.com/" target="_blank">GitHub homepage  ⤴</a>.** <br>
-<span style="color: #ff3870;font-weight: 500;"> If you need a detailed guide for this step,</span> please see section {% include target_link href=932.4 section="#how-to-get-a-github-account" text="How to get a Github account?" %} in the tutorial <i><b>"Introduction to GitHub"</b></i>, available in this workbook.
+<span style="color: #ff3870;font-weight: 500;"> If you need a detailed guide for this step,</span> please see section <a class="t-links" href="932.4" section="#how-to-get-a-github-account">How to get a Github account?</a> in the tutorial <i><b>"Introduction to GitHub"</b></i>, available in this workbook.
 
 ![01-github_website.png]({{ images_path }}/01-github_website.png)
 
@@ -1074,8 +1072,8 @@ Before merging, it's important to review and test your changes thoroughly to ens
 
 <div class="warning" markdown="1">
 Please note that you might not have permission to push directly to the original repository, so you may need to:
-* {% include target_link href=932.2 section="#-fork-the-entire-repo" text="Fork the repo" %} first, which creates your own copy of the repository on GitHub.
-* {% include target_link href=932.2 section="#14-submit-pull-request" text="Submit Pull Request" %} that allows you to propose changes to the administrators of the original repo.
+* <a class="t-links" href="932.2" section="#-fork-the-entire-repo">Fork the repo</a> first, which creates your own copy of the repository on GitHub.
+* <a class="t-links" href="932.2" section="#14-submit-pull-request">Submit Pull Request</a> that allows you to propose changes to the administrators of the original repo.
 </div>
 
 

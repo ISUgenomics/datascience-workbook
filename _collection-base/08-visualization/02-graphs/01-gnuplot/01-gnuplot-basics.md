@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -33,8 +31,8 @@ On Linux systems, **Gnuplot** is usually pre-installed. The other operating syst
 
 <div class="warning" markdown="1">
 If you don't do NOT know what is terminal or command-line, start with the tutorial(s) that will give you a good introduction:
-* **TERMINAL:** {% include target_link href=310 %}
-* **COMMAND-LINE:** {% include target_link href=320 %}
+* **TERMINAL:** <a class="t-links" href="310"></a>
+* **COMMAND-LINE:** <a class="t-links" href="320"></a>
 </div>
 
 ### on Linux (*Debian, Ubuntu*)
@@ -135,7 +133,7 @@ variable --> '$variable'
 ```
 
 <div class="protip" markdown="1">
-To learn more about Gnuplot variables, loops, and conditional plotting, as well as developing an efficient Bash loop to generate many repetetive charts, see the other tutorial: {% include target_link href=821.2 %}
+To learn more about Gnuplot variables, loops, and conditional plotting, as well as developing an efficient Bash loop to generate many repetetive charts, see the other tutorial: <a class="t-links" href="821.2"></a>
 </div>
 
 The `gnuplot` section contains two main blocks of commands:

@@ -18,8 +18,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -131,9 +129,8 @@ So, all you need is to open the terminal window and log in to the HPC resources 
 *Accessing data using Secure Shell (SSH) typically involves using a terminal or command-line interface, rather than a graphical user interface (GUI).*
 
 **Start by opening a terminal window** on your local machine. <br>
-<i>If you do NOT know what the terminal is, start with this tutorial:</i> {% include target_link href=310 text="Terminal - an interface for command-line operations" %}
+<i>If you do NOT know what the terminal is, start with this tutorial:</i> <a class="t-links" href="310"></a>
 
-<br><br>
 Then, **enter the following command** to log into the remote machine:
 
 ```
@@ -141,12 +138,11 @@ ssh username@remote-hostname
 ```
 
 
-*where `username` is your username on the remote machine and `remote-hostname` is the hostname or IP address of the remote machine,* <br>
-*e.g., `abadacz@nova.its.iastate.edu`*
+*where `username` is your username on the remote machine and `remote-hostname` is the hostname or IP address of the remote machine, e.g.,* `abadacz@nova.its.iastate.edu`
 
 You will be prompted to **enter your password** for the remote machine, and if the login is successful, you will be logged into the remote resources and have access to its file system.
 
-**Learn more about the Secure Shell (SSH) Protocol** from the following tutorial in this section: <br>
-{% include target_link href=623 text="Secure Shell Connection (SSH)" %} <br>
-Also, get the advantage of **useful SSH shortcuts and set up password-less access** to your remote computing systems with this step-by-step guide: <br>
-{% include target_link href=623.1 text="SSH shortcuts and password-less login" %}
+<div class="more" markdown="1">
+...about the **Secure Shell (SSH) Protocol** from the tutorial in this section: <a class="t-links" href="623"></a> <base class="mb">
+Also, get the advantage of **useful SSH shortcuts and set up password-less access** to your remote computing systems with this step-by-step guide: <a class="t-links" href="623.1"></a>
+</div>

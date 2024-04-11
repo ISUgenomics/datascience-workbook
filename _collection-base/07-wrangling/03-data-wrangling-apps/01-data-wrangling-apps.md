@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -44,7 +42,7 @@ More advanced (multi-purpose or multi-options) applications have a **built-in lo
 The applications are developed in Python programming language and requires importing several libraries providing useful ready-made functions and objects handling complex data structure. Thus, to have the apps working on your (local or remote) machine, first you have to set up the environment.
 
 Considering you will be using various applications that require different dependencies, you need neat way to manage them. A good choice is <a href="https://docs.conda.io/en/latest/" target="_blank">Conda ⤴</a> environment management system that runs on all: Windows, macOS, and Linux.<br>
-If you are not already using Conda, go to the {% include target_link href=223 %} tutorial for a step-by-step guide on how to set up the environment manager on your target computing machine. If you have a Mac with a dual processor (Arm64 and Intel's x86-64) you can find dedicated setup instructions in section {% include target_link href=231 section="#install-developer-libraries" text=" Install basic developer tools" %} of the {% include target_link href=231 %} tutorial.
+If you are not already using Conda, go to the <a class="t-links" href="223"></a> tutorial for a step-by-step guide on how to set up the environment manager on your target computing machine. If you have a Mac with a dual processor (Arm64 and Intel's x86-64) you can find dedicated setup instructions in section <a class="t-links" href="231" section="#install-developer-libraries">Install basic developer tools</a> of the <a class="t-links" href="231"></a> tutorial.
 
 ## *Python Setup*
 
@@ -70,7 +68,7 @@ or
 python3 --version
 ```
 If the returned value will be something like `Python 3.8.9`, you are good to **getting started with data_wrangling** apps. *Note that python in version 3.x is required.*<br>
-Otherwise, if you receive an error message `command not found`, **you will need to install Python**. You can make up for this step by following the hands-on tutorial provided in section {% include target_link href=420 %} / {% include target_link href=423 %}
+Otherwise, if you receive an error message `command not found`, **you will need to install Python**. You can make up for this step by following the hands-on tutorial provided in section <a class="t-links" href="420"></a> /<a class="t-links" href="423"></a>
 
 
 ## *Conda Setup*
@@ -79,7 +77,7 @@ Otherwise, if you receive an error message `command not found`, **you will need 
 Conda is an open-source package management system and environment management system for installing and managing packages and dependencies in Python and other programming languages. Conda allows users to create and **manage isolated environments for different projects or workflows**, each with its own set of packages and dependencies.
 </div>
 
-<span style="color: #ff3870;font-weight: 500;">Learn more about Conda basics in section</span> {% include target_link href=423 section="#3-manage-python-environments" text="Manage Python environments" %} of the tutorial {% include target_link href=423 %}
+<span style="color: #ff3870;font-weight: 500;">Learn more about Conda basics in section</span> <a class="t-links" href="423" section="#3-manage-python-environments">Manage Python environments</a> of the tutorial <a class="t-links" href="">423</a>
 
 
 **Test Conda installation**
@@ -146,6 +144,6 @@ Some applications may have **additional requirements** listed in the correspondi
 
 ## Hands-on tutorials
 
-Right here, in the [Data Science Workbook](https://datascience.101workbook.org): {% include target_link href=700 %} / {% include target_link href=731 %} section, you can follow the <span style="color: #ff3870;">hands-on tutorials</span> to learn how to run the ready-made applications <span style="color: #ff3870;">using example datasets</span> and further employ them to support your own research.
+Right here, in the [Data Science Workbook](https://datascience.101workbook.org): <a class="t-links" href="700"></a> / <a class="t-links" href="731"></a> section, you can follow the <span style="color: #ff3870;">hands-on tutorials</span> to learn how to run the ready-made applications <span style="color: #ff3870;">using example datasets</span> and further employ them to support your own research.
 
 Browse available tutorials in the **Further Reading** paragraph (*just below*).

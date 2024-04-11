@@ -18,8 +18,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -276,9 +274,9 @@ Using a central platform to store all your project information, including data, 
 </div>
 
 For a deep dive into setting up and using these platforms effectively, **check out the dedicated tutorials in the workbook**. They’ll walk you through everything from the basics to pro tips, ensuring your project's info is as accessible and organized as possible.
-* {% include target_link href=931.0 %}
-* {% include target_link href=932.0 %}
-* {% include target_link href=932.3 %}
+* <a class="t-links" href="931.0"></a>
+* <a class="t-links" href="932.0"></a>
+* <a class="t-links" href="932.3"></a>
 
 
 ### Stay Organized
@@ -296,7 +294,7 @@ The table below lists some popular tools for organizing work. These tools can gr
 <tr> <th>tool </th> <th>description</th> </tr>
 <tr> <td><a href="https://trello.com" target="_blank">Trello</a></td> <td>A project management tool that helps you organize tasks and projects into boards.</td> </tr>
 <tr> <td><a href="https://asana.com" target="_blank">Asana</a></td> <td>A web and mobile application designed to help teams organize, track, and manage their work.</td> </tr>
-<tr> <td><a href="https://slack.com" target="_blank">Slack</a></td> <td>A messaging app for teams that can help streamline communication and collaboration. <br>See tutorial: {% include target_link href=922 %} </td> </tr>
+<tr> <td><a href="https://slack.com" target="_blank">Slack</a></td> <td>A messaging app for teams that can help streamline communication and collaboration. <br>See tutorial: <a class="t-links" href="922"></a> </td> </tr>
 <tr> <td><a href="https://www.microsoft.com/en-us/microsoft-teams/group-chat-software" target="_blank">Microsoft Teams</a></td> <td>A platform that combines workplace chat, meetings, notes, and attachments.</td> </tr>
 <tr> <td><a href="https://www.zotero.org" target="_blank">Zotero</a></td> <td>A free tool to help you collect, organize, cite, and share research.</td> </tr>
 <tr> <td><a href="https://www.mendeley.com" target="_blank">Mendeley</a></td> <td>A reference manager and academic social network that can help organize your research.</td> </tr>

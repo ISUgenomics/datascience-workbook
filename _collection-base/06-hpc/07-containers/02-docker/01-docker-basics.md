@@ -17,12 +17,11 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
 
 # Introduction
 
 ## What are Containers?
-Containers are executable units of software containing anything from a small process to a larger application, along with its libraries and dependencies. Start with the {% include target_link href=671.1 text="Apptainer: the container system for secure HPC" %} tutorial to get to know about using containers. <br>
+Containers are executable units of software containing anything from a small process to a larger application, along with its libraries and dependencies. Start with the <a class="t-links" href="671.1">Apptainer: the container system for secure HPC</a> tutorial to get to know about using containers.
 
 
 ## Docker setup

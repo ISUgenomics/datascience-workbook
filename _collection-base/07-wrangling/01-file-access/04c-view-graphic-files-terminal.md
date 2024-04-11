@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -52,7 +50,7 @@ sshfs user@hostname:/remote/folder /local/folder
 ```
 to mount a remote folder on your local machine, and then browse and open files in that folder using your local graphical file explorer or command line.
 
-<span style="color: #ff3870; font-weight: 500;">To learn more visit the tutorial </span> {% include target_link href=714.4 text="Mounting remote folder on a local machine" %}
+<span style="color: #ff3870; font-weight: 500;">To learn more visit the tutorial </span> <a class="t-links" href="714.4"></a>
 
 ##  • remote desktop or X11 forwarding
 
@@ -62,7 +60,7 @@ One approach is to use a remote desktop or X11 forwarding to display the graphic
 ssh -X user@hostname
 ```
 
-<span style="color: #ff3870; font-weight: 500;">To learn more visit the tutorial </span> {% include target_link href=714.2 text="Viewing PDF files using X11 SSH connection" %}
+<span style="color: #ff3870; font-weight: 500;">To learn more visit the tutorial </span> <a class="t-links" href="714.2"></a>
 
 ##  • convert the graphic files into text-based formats (ASCII art)
 
@@ -100,9 +98,8 @@ When working on an HPC system, it can be challenging to install custom software 
 
 **In this tutorial, we will focus on providing a unified and robust way of custom software installation on HPC systems, primarily by using source code available from trusted repositories such as <a href="https://pkgs.org/" target="_blank">pkgs.org  ⤴</a>.** There will be also provided a quick guide for installing the required tools on Linux or macOS, in case the user want these tools also on a local machine.
 
-<span style="color: #ff3870;font-weight: 500;">To learn more about installations on HPC visit the tutorial </span> {% include target_link href=644 text="Installing custom programs in user space" %} available in section {% include target_link href=641 text="06. High-Performance Computing (HPC) / Software available on HPC" %} of this workbook.
+<span style="color: #ff3870;font-weight: 500;">To learn more about installations on HPC visit the tutorial </span> <a class="t-links" href="644"></a> available in section <a class="t-links" href="641">06. High-Performance Computing (HPC) / Software available on HPC</a> of this workbook.
 
-<br>
 
 | TOOL | LICENSE | AUTHOR | GitHub | DOCS |
 |------|---------|--------|--------|------|
@@ -167,7 +164,7 @@ Now, extract the package:
 rpm2cpio jp2a-1.0.7-1.el7.src.rpm | cpio -idmv
 ```
 
-to get a compressed archive, e.g., `jp2a-1.0.7.tar.gz` that you need further to extract using the command appropriate for the compression format: [see a quick guide {% include target_link href=644 section="#how-to-decompress-the-archive" text="How to decompress the archive?" %}]
+to get a compressed archive, e.g., `jp2a-1.0.7.tar.gz` that you need further to extract using the command appropriate for the compression format: [see a quick guide <a class="t-links" href="644" section="#how-to-decompress-the-archive">How to decompress the archive?</a>]
 ```bash
 tar -xvzf jp2a-1.0.7.tar.gz
 ```
@@ -197,7 +194,7 @@ You can use an **ImageMagick** built-in `convert` tool to convert other formats 
 
 <details><summary>HPC system:</summary>
 
-1. Perform STEPS 1-5 provided in section {% include target_link href=714.3 section="#getting-started" text="Getting started" %} using the <b>jp2a</b> keyword for software searching at <a href="https://pkgs.org/" target="_blank">pkgs.org  ⤴</a>
+1. Perform STEPS 1-5 provided in section <a class="t-links" href="714.3" section="#getting-started">Getting started</a> using the <b>jp2a</b> keyword for software searching at <a href="https://pkgs.org/" target="_blank">pkgs.org  ⤴</a>
 or try this link: <a href="https://pkgs.org/download/jp2a" target="_blank">https://pkgs.org/download/jp2a  ⤴</a><br>
 <i>*If your HPC uses Enterprise Linux OS with x86_64 architecture, you can use these commands directly:</i>
 <code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
@@ -276,7 +273,7 @@ This is a tool for viewing images in the terminal as ASCII art. `aview` can only
 
 <details><summary>HPC system:</summary>
 
-The <b>asciiview</b> requires the <b>aalib</b>, so we need to install the dependency first. On the <a href="https://pkgs.org/" target="_blank">pkgs.org  ⤴</a> find and download both packages. For each, perform STEPS 1-5 provided in section {% include target_link href=714.3 section="#getting-started" text="Getting started" %}. <br>
+The <b>asciiview</b> requires the <b>aalib</b>, so we need to install the dependency first. On the <a href="https://pkgs.org/" target="_blank">pkgs.org  ⤴</a> find and download both packages. For each, perform STEPS 1-5 provided in section <a class="t-links" href="714.3" section="#getting-started">Getting started</a>. <br>
 <i>*If your HPC uses Enterprise Linux OS with x86_64 architecture, you can use these commands directly:</i><br>
 <b>aalib:</b> <a href="https://pkgs.org/download/aalib" target="_blank">https://pkgs.org/download/aalib</a><br>
 <code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
@@ -352,7 +349,7 @@ This is a tool for converting various image formats to ASCII art. It supports fo
 <details><summary>HPC system:</summary>
 
 The <b>img2txt</b> tool is a part of the <b>libcaca</b> package.
-1. Perform STEPS 1-5 provided in section {% include target_link href=714.3 section="#getting-started" text="libcaca" %} using the <b>libcaca</b> keyword for software searching at <a href="https://pkgs.org/" target="_blank">pkgs.org</a>
+1. Perform STEPS 1-5 provided in section <a class="t-links" href="714.3" section="#getting-started">libcaca</a> using the <b>libcaca</b> keyword for software searching at <a href="https://pkgs.org/" target="_blank">pkgs.org</a>
 or try this link: <a href="https://pkgs.org/download/libcaca" target="_blank">https://pkgs.org/download/libcaca</a><br>
 <i>*If your HPC uses Enterprise Linux OS with x86_64 architecture, you can use these commands directly:</i>
 <code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">

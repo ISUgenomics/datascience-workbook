@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -231,4 +229,4 @@ qrls 123456
 ```
 *This will release the job with ID 1234 from hold.*
 
-<span style="color: #ff3870;font-weight: 500;">If you want to learn more about PBS commands, a useful resource to explore is the</span> {% include target_link href=652.2 text="PBS commands (cheatsheet)." %}
+<span style="color: #ff3870;font-weight: 500;">If you want to learn more about PBS commands, a useful resource to explore is the</span> <a class="t-links" href="652.2">PBS commands (cheatsheet)</a>

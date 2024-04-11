@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -105,7 +103,7 @@ compgen -b
 ```
 
 * **Using the alias command** <br>
-The `alias` command can be used to view a list of all currently defined aliases, which are often used to create custom built-in commands. Learn more from subsection {% include target_link href=320 section="#34-define-aliases" text="Define aliases" %} in the practical {% include target_link href=320 text="Introduction to UNIX Shell" %} tutorial in this workbook.
+The `alias` command can be used to view a list of all currently defined aliases, which are often used to create custom built-in commands. Learn more from subsection <a class="t-links" href="320" section="#34-define-aliases">Define aliases</a> in the practical <a class="t-links" href="320"></a> tutorial in this workbook.
 
 ```bash
 alias
@@ -114,9 +112,9 @@ alias
 <ul><li> <b>Examining shell initialization files</b> <br>
 Some HPC systems may define built-in commands in shell initialization files such as <span class="code-inline">.bashrc</span>, <span class="code-inline">.bash_profile</span>, <span class="code-inline">.bash_aliases</span> or similar. The user can check these files for custom built-in commands. Learn more from hands-on tutorials available in this workbook:
   <ul>
-  <li> <p>section</p> {% include target_link href=320 section="#3-unix-shell-configuration" text="Unix Shell Configuration: .bashrc & .bash_profile" %} in the tutorial {% include target_link href=320 text="Introduction to UNIX Shel" %} </li>
-  <li> <p>tutorial</p> {% include target_link href=631 text="Setting up your home directory for data analysis" %} </li>
-  <li> <p>tutorial</p> {% include target_link href=632 text="Example .bashrc file configuration" %} </li>
+  <li> <p>section</p> <a class="t-links" href="320" section="#3-unix-shell-configuration">Unix Shell Configuration: .bashrc & .bash_profile</a> in the tutorial <a class="t-links" href="320"></a> </li>
+  <li> <p>tutorial</p> <a class="t-links" href="631">Setting up your home directory for data analysis</a> </li>
+  <li> <p>tutorial</p> <a class="t-links" href="632">Example .bashrc file configuration</a> </li>
   </ul>
 </li></ul>
 
@@ -143,12 +141,12 @@ Basic system utilities, such as `ls`, `cd`, and `mkdir`, are often available as 
 * manage files and directories,
 * and perform other basic tasks.
 
-Learn more from the practical tutorial {% include target_link href=321 text="Basic Commands: navigation, file creation & preview" %}, available in section {% include target_link href=300 text="03: Introduction to Command Line" %} of this workbook.
+Learn more from the practical tutorial <a class="t-links" href="321"></a>, available in section <a class="t-links" href="300"></a> of this workbook.
 
 ### *2.  Text processing and manipulation tools*
-Some common text processing and manipulation tools like `sed`, `awk`, `grep` and `cut` are often available, which allow users to manipulate and extract data from text files or command-line text streams. Learn more from the practical tutorial {% include target_link href=330 text="Useful text manipulation programs" %}, available in section {% include target_link href=300 text="03: Introduction to Command Line" %} of this workbook. <br><br>
+Some common text processing and manipulation tools like `sed`, `awk`, `grep` and `cut` are often available, which allow users to manipulate and extract data from text files or command-line text streams. Learn more from the practical tutorial <a class="t-links" href="330"></a>, available in section <a class="t-links" href="300"></a> of this workbook. <br><br>
 
-There are also a built-in command-line text editors with basic graphical interface, such as `nano` or `vim`, which allow to write a script, edit a configuration file, modify data file, or create a quick note or documentation. Learn more from the practical tutorial {% include target_link href=322 text="Command Line text files editors: nano, vim" %}, available in section {% include target_link href=300 text="03: Introduction to Command Line" %} of this workbook.
+There are also a built-in command-line text editors with basic graphical interface, such as `nano` or `vim`, which allow to write a script, edit a configuration file, modify data file, or create a quick note or documentation. Learn more from the practical tutorial <a class="t-links" href="322"></a>, available in section <a class="t-links" href="300"></a> of this workbook.
 
 ### *3.  Compression and archiving tools*
 Tools like `gzip`, `tar` and `zip` are often available, which allow users to compress and archive large files and directories.
@@ -191,10 +189,10 @@ The <a href="https://en.wikipedia.org/wiki/Portable_Batch_System" target="_blank
 | seff {job_ID}       | qstat -fxw {job_ID}  | provides resource usage report for a finished job |
 | salloc              | qsub -I {job_script} | starts interactive session |
 
-Learn more from the practical {% include target_link href=650 text="Introduction to job scheduling" %} tutorials ( including {% include target_link href=651.1 text="SLURM" %} and {% include target_link href=652.1 text="PBS" %}) in the section {% include target_link href=600 text="06: High-Performance Computing (HPC)" %} of this workbook. For more, see also <a href="https://www.msi.umn.edu/slurm/pbs-conversion" target="_blank">PBS to Slurm Conversion Cheat Sheet  ⤴</a>.
+Learn more from the practical <a class="t-links" href="650">Introduction to job scheduling</a> tutorials ( including <a class="t-links" href="651.1">SLURM</a> and <a class="t-links" href="652.1">PBS</a>) in the section <a class="t-links" href="600"></a> of this workbook. For more, see also <a href="https://www.msi.umn.edu/slurm/pbs-conversion" target="_blank">PBS to Slurm Conversion Cheat Sheet  ⤴</a>.
 
 ### *5.  Remote access tools*
-Tools like `ssh`, `telnet` and `rlogin` are often available, which allow users to remotely access and control other systems on the network. Learn more about SSH connection from the practical tutorial {% include target_link href=623 text="Secure Shell Connection (SSH)" %} available in section {% include target_link href=600 text="06: High-Performance Computing (HPC)" %} of this workbook.
+Tools like `ssh`, `telnet` and `rlogin` are often available, which allow users to remotely access and control other systems on the network. Learn more about SSH connection from the practical tutorial <a class="t-links" href="623"></a> available in section <a class="t-links" href="600"></a> of this workbook.
 
 ### *6.  File transfer tools*
 Tools such as `scp` and `rsync` are often available as built-in commands, which allow users to securely transfer files to and from the HPC system.
@@ -229,10 +227,10 @@ rsync -avz --no-p --no-g {path_to_the source} {path_to_the_destination}
 ```
 </div>
 
-Learn more from the practical tutorials about {% include target_link href=712 text="Remote data transfer" %} available in section {% include target_link href=700 text="07: Data Acquisition and Wrangling" %} of this workbook. <br>
-If you seek for a guide about transferring data to {% include target_link href=612.1 text="SCINet Scientific Computing" %}, see tutorials:
-* {% include target_link href=612.2 section="#command-line-data-transfer" text="Command line data transfer to Atlas" %} and
-* {% include target_link href=612.4 section="#copy-your-data-to-juno" text="Copy your data to Juno" %}
+Learn more from the practical tutorials about <a class="t-links" href="712"></a> available in section <a class="t-links" href="700"></a> of this workbook. <br>
+If you seek for a guide about transferring data to <a class="t-links" href="612.1"></a>, see tutorials:
+* <a class="t-links" href="612.2" section="#command-line-data-transfer">Command line data transfer to Atlas</a> and
+* <a class="t-links" href="612.4" section="#copy-your-data-to-juno">Copy your data to Juno</a>
 
 
 ## **Software as built-in modules**
@@ -245,10 +243,10 @@ module avail <name>     # List available variants of a given package
 module list             # List currently loaded modules
 ```
 
-Learn more from the practical tutorial {% include target_link href=642 text="Accessing pre-installed modules" %} available in section {% include target_link href=600 text="06. High-Performance Computing (HPC)" %} of this workbook.
+Learn more from the practical tutorial <a class="t-links" href="642"></a> available in section <a class="t-links" href="600"></a> of this workbook.
 
 ## **Software via package manager**
-The centralized package manager enables searching for and listing the available software packages on HPC systems. Different package managers match various operating systems. So first, check the operating system (OS) on your HPC infrastructure and identify the package manager in use. Then follow the cheatsheet below to search for the software needed. Learn more from the practical tutorial  {% include target_link href=643 text="Accessing software via package manager" %} available in section {% include target_link href=600 text="06. High-Performance Computing (HPC)" %} of this workbook.
+The centralized package manager enables searching for and listing the available software packages on HPC systems. Different package managers match various operating systems. So first, check the operating system (OS) on your HPC infrastructure and identify the package manager in use. Then follow the cheatsheet below to search for the software needed. Learn more from the practical tutorial  <a class="t-links" href="643"></a> available in section <a class="t-links" href="00"></a> of this workbook.
 
 * for Ubuntu / Debian: *.deb* packages managed by `apt` and `dpkg` <br>
 ```bash
@@ -314,4 +312,4 @@ The HPC administrator have access to the information on all the software install
 If the answer to any is yes, contact the HPC administrator and submit a request for software installation. <br>
 Otherwise, go to step 3.
 
-**3.** Go to the {% include target_link href=644 text="Installing custom programs in user space" %} tutorial to learn how to install the necessary software yourself.
+**3.** Go to the <a class="t-links" href="644"></a> tutorial to learn how to install the necessary software yourself.

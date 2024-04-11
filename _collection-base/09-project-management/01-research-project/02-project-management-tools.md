@@ -18,8 +18,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -387,7 +385,7 @@ Your research institution may offer subscription plans for various tools, includ
 
 Repositories like GitHub, GitLab, and Bitbucket are **more than just storage for code**. They offer `version control`, `collaborative contributions` through pull/merge requests, `issue tracking`, and integration capabilities. These features enable research teams to maintain code integrity, track changes, and ensure every member is working on the latest version.
 
-<p style="color: #ff3870;font-weight: 500;">Learn more in section {% include target_link href=932.1 %} </p>
+<p style="color: #ff3870;font-weight: 500;">Learn more in section <a class="t-links" href="932.1"></a> </p>
 
 ## Real-time writing in a project
 <i>Document Examples: <a href="https://docs.google.com/" target="_blank">Google Docs</a>, <a href="https://office.live.com/start/Word.aspx" target="_blank">Microsoft Word Online</a>, <a href="https://quip.com/" target="_blank">Quip</a>, <a href="https://www.overleaf.com" target="_blank">Overleaf</a></i>

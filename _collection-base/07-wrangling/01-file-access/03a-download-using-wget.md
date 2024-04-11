@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -32,7 +30,6 @@ Upon completion of this section the learner will be able to:
 * Utilize wget to download a files
 * Download multiple files using regular expressions
 * Download an entire website
-
 
 
 Here is a generic example of how to use wget

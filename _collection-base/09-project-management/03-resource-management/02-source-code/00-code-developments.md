@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -33,8 +31,6 @@ The efficient Code Management ensures that code, whether part of small-scale pip
 <td width=500 style="border: transparent;"><img width="800" src="{{ images_path }}/03_code_management.png"></td>
 </tr></table>
 
-
----
 
 # Code Lifecycle Management
 
@@ -82,9 +78,9 @@ Effective code development practices enable researchers to build upon existing k
 
 <table>
 <tr> <th>aspect</th> <th>tool</th> <th>tool applicability</th> </tr>
-<tr> <td>Interactive Development Environment (IDE) for coding and analysis</td> <td><a href="https://jupyter.org/" target="_blank">JupyterLab</a></td> <td>offers comprehensive coding support, including debugging, syntax highlighting, and version control integration [{% include target_link href=412 text="tutorial" %}]</td> </tr>
-<tr> <td>Integrated Development Environment (IDE) for coding efficiency</td> <td><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></td> <td>offers comprehensive coding support, including debugging, syntax highlighting, and version control integration [{% include target_link href=411 text="tutorial" %}]</td> </tr>
-<tr> <td>Version Control for tracking changes</td> <td><a href="https://git-scm.com/" target="_blank">Git</a></td> <td>essential for managing revisions and collaborating on code projects [{% include target_link href=932.2 text="tutorial" %}]</td> </tr>
+<tr> <td>Interactive Development Environment (IDE) for coding and analysis</td> <td><a href="https://jupyter.org/" target="_blank">JupyterLab</a></td> <td>offers comprehensive coding support, including debugging, syntax highlighting, and version control integration [<a class="t-links" href="412">tutorial</a>]</td> </tr>
+<tr> <td>Integrated Development Environment (IDE) for coding efficiency</td> <td><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></td> <td>offers comprehensive coding support, including debugging, syntax highlighting, and version control integration [<a class="t-links" href="411">tutorial</a>]</td> </tr>
+<tr> <td>Version Control for tracking changes</td> <td><a href="https://git-scm.com/" target="_blank">Git</a></td> <td>essential for managing revisions and collaborating on code projects [<a class="t-links" href="932.2">tutorial</a>]</td> </tr>
 <tr> <td>code documentation for clarity and reusability</td> <td><a href="https://www.sphinx-doc.org/en/master/" target="_blank">Sphinx</a></td> <td>generates documentation from code comments, facilitating understanding and use by others</td> </tr>
 <tr> <td>static code analysis for quality assurance</td> <td><a href="https://www.sonarqube.org/" target="_blank">SonarQube</a></td> <td>analyzes code quality and identifies bugs, vulnerabilities, and code smells</td> </tr>
 <tr> <td>Continuous Integration/Continuous Deployment (CI/CD) for automated testing and deployment</td> <td><a href="https://travis-ci.org/" target="_blank">Travis CI</a></td> <td>automates the process of testing code and deploying it to production environments, ensuring code quality and reliability</td> </tr>
@@ -130,9 +126,9 @@ Whether for simple data analysis scripts or complex computational models, versio
 
 <table>
 <tr> <th>aspect</th> <th>tool</th> <th>tool applicability</th> </tr>
-<tr> <td>version tracking and collaboration</td> <td><a href="https://git-scm.com/" target="_blank">Git</a></td> <td>the backbone of modern code version control, supporting distributed collaboration [{% include target_link href=932.2 text="tutorial" %}, {% include target_link href=932.3 text="tutorial" %}]</td> </tr>
-<tr> <td>repository hosting and management</td> <td><a href="https://github.com/" target="_blank">GitHub</a></td> <td>widely used for hosting Git repositories, facilitating collaboration, issue tracking, and code review [{% include target_link href=932.4 text="tutorial" %}]</td> </tr>
-<tr> <td>code review and collaboration</td> <td><a href="https://bitbucket.org/" target="_blank">Bitbucket</a></td> <td>offers Git repository hosting with integrated code review and collaboration features [{% include target_link href=932.5 text="tutorial" %}]</td> </tr>
+<tr> <td>version tracking and collaboration</td> <td><a href="https://git-scm.com/" target="_blank">Git</a></td> <td>the backbone of modern code version control, supporting distributed collaboration [<a class="t-links" href="932.2">tutorial</a>{, <a class="t-links" href="932.3">tutorial</a>]</td> </tr>
+<tr> <td>repository hosting and management</td> <td><a href="https://github.com/" target="_blank">GitHub</a></td> <td>widely used for hosting Git repositories, facilitating collaboration, issue tracking, and code review [<a class="t-links" href="932.4">tutorial</a>]</td> </tr>
+<tr> <td>code review and collaboration</td> <td><a href="https://bitbucket.org/" target="_blank">Bitbucket</a></td> <td>offers Git repository hosting with integrated code review and collaboration features [<a class="t-links" href="932.5">tutorial</a>]</td> </tr>
 <tr> <td>continuous integration and deployment</td> <td><a href="https://gitlab.com/" target="_blank">GitLab CI</a></td> <td>integrates with GitLab to automate the testing and deployment of code</td> </tr>
 <tr> <td>graphical user interface for git</td> <td><a href="https://www.sourcetreeapp.com/" target="_blank">SourceTree </a></td> <td>provides a visual interface to manage git repositories for those who prefer a GUI over command line</td> </tr>
 </table>
@@ -175,7 +171,7 @@ Good documentation practices transform code from being a solitary tool into a sh
 <table>
 <tr> <th>aspect</th> <th>tool</th> <th>tool applicability</th> </tr>
 <tr> <td>inline commenting for clarity</td> <td>good_practice</td> <td>directly within the code, explains the purpose of complex algorithms or logic</td> </tr>
-<tr> <td>readme files for project overview</td> <td><a href="https://www.markdownguide.org" target="_blank">Markdown</a></td> <td>simple, lightweight markup language used to write formatted documents [{% include target_link href=933.5 text="tutorial" %}]</td> </tr>
+<tr> <td>readme files for project overview</td> <td><a href="https://www.markdownguide.org" target="_blank">Markdown</a></td> <td>simple, lightweight markup language used to write formatted documents [<a class="t-links" href="933.5">tutorial</a>]</td> </tr>
 <tr> <td>automated documentation generation</td> <td><a href="https://www.sphinx-doc.org/en/master/" target="_blank">Sphinx </a></td> <td>generates documentation from source code comments, especially popular in Python projects</td> </tr>
 <tr> <td>documentation hosting and collaboration</td> <td><a href="https://readthedocs.org/" target="_blank">ReadTheDocs</a></td> <td>automatically builds, versions, and hosts documentation, making it easily accessible to users</td> </tr>
 <tr> <td>api documentation</td> <td><a href="https://swagger.io/" target="_blank">Swagger</a></td> <td>simplifies API documentation, making it interactive and user-friendly for web-based projects</td> </tr>
@@ -219,7 +215,7 @@ Embracing code sharing and collaboration not only accelerates the research proce
 
 <table>
 <tr> <th>aspect</th> <th>tool</th> <th>tool applicability</th> </tr>
-<tr> <td>version control and repository hosting</td> <td><a href="https://github.com/" target="_blank">GitHub</a></td> <td>hosts code repositories, supports collaboration through issues, pull requests, and more [{% include target_link href=932.4 text="tutorial" %}]</td> </tr>
+<tr> <td>version control and repository hosting</td> <td><a href="https://github.com/" target="_blank">GitHub</a></td> <td>hosts code repositories, supports collaboration through issues, pull requests, and more [<a class="t-links" href="932.4">tutorial</a>]</td> </tr>
 <tr> <td>code review and management</td> <td><a href="https://gitlab.com/" target="_blank">GitLab</a></td> <td>simple, lightweight markup language used to write formatted documents</td> </tr>
 <tr> <td>collaborative coding and live sharing</td> <td><a href="https://visualstudio.microsoft.com/services/live-share/" target="_blank">VSCode live share</a></td> <td>enables real-time collaborative coding sessions directly within Visual Studio Code</td> </tr>
 <tr> <td>open-source contribution platforms</td> <td><a href="https://sourceforge.net/" target="_blank">SourceForge</a></td> <td>a platform for open-source projects to host their code, track issues, and engage with their user community</td> </tr>
@@ -306,7 +302,7 @@ A systematic approach to code release/deployment not only enhances the visibilit
 <table>
 <tr> <th>aspect</th> <th>tool</th> <th>tool applicability</th> </tr>
 <tr> <td>versioning and release management</td> <td><a href="https://semver.org/" target="_blank">semantic versioning</a></td> <td>a versioning standard that helps in managing releases and conveying changes' nature</td> </tr>
-<tr> <td>packaging and distribution</td> <td><a href="https://www.docker.com/" target="_blank">Docker</a></td> <td>containers package software, making it easy to run applications reliably in different computing environments [{% include target_link href=672.1 text="Docker" %}]</td> </tr>
+<tr> <td>packaging and distribution</td> <td><a href="https://www.docker.com/" target="_blank">Docker</a></td> <td>containers package software, making it easy to run applications reliably in different computing environments [<a class="t-links" href="672.1">Docker</a>]</td> </tr>
 <tr> <td>software archiving for citation</td> <td><a href="https://zenodo.org/" target="_blank">Zenodo</a></td> <td>integrates with GitHub to archive releases and assign DOIs for easy citation</td> </tr>
 <tr> <td>continuous integration/deployment</td> <td><a href="https://github.com/features/actions" target="_blank">GitHub Actions </a></td> <td>automates the release process, from testing to deployment, directly within GitHub</td> </tr>
 <tr> <td>documentation and user guides</td> <td><a href="https://readthedocs.org/" target="_blank">ReadTheDocs </a></td> <td>hosts documentation, ensuring users have access to up-to-date guides and release notes</td> </tr>
@@ -336,7 +332,7 @@ Distribute your software through platforms that are accessible to your target au
 Code Archiving in the context of research involves the **long-term preservation of software**, scripts, and digital objects developed during the research process. This practice ensures that **code remains accessible, usable, and understandable in the future**, facilitating reproducibility, verification, and further study. Archiving is particularly important for completed projects, allowing the research community to build upon previous work without reinventing the wheel.
 
 **IMPORTANCE** <br>
-Effective code archiving supports the principles of {% include target_link href=931.1 %} by preserving the digital artifacts of research for future reference. It ensures that **scientific findings can be validated and reproduced**, enhancing the credibility and impact of research. Additionally, archiving provides a mechanism for **recognizing the computational contributions** of researchers through citations, contributing to academic recognition and career advancement.
+Effective code archiving supports the principles of <a class="t-links" href="931.1"></a> by preserving the digital artifacts of research for future reference. It ensures that **scientific findings can be validated and reproduced**, enhancing the credibility and impact of research. Additionally, archiving provides a mechanism for **recognizing the computational contributions** of researchers through citations, contributing to academic recognition and career advancement.
 
 <div class="note" markdown="1">
 A thoughtful approach to code archiving respects the effort invested in developing research software and scripts, safeguarding this intellectual property for future generations of researchers.
@@ -347,7 +343,7 @@ A thoughtful approach to code archiving respects the effort invested in developi
 <table>
 <tr> <th>aspect</th> <th>tool</th> <th>tool applicability</th> </tr>
 <tr> <td>digital repository services</td> <td><a href="https://zenodo.org/" target="_blank">Zenodo</a></td> <td>provides a DOI for each archive, facilitating citation and ensuring discoverability</td> </tr>
-<tr> <td>version control system integration</td> <td><a href="https://github.com/" target="_blank">GitHub</a></td> <td>can integrate with archival services like Zenodo to archive each release automatically [{% include target_link href=932.4 text="tutorial" %}]</td> </tr>
+<tr> <td>version control system integration</td> <td><a href="https://github.com/" target="_blank">GitHub</a></td> <td>can integrate with archival services like Zenodo to archive each release automatically [<a class="t-links" href="932.4">tutorial</a>]</td> </tr>
 <tr> <td>software metadata standards</td> <td><a href="https://codemeta.github.io/" target="_blank">CodeMeta </a></td> <td>provides a crosswalk for software metadata to enhance discoverability and reuse</td> </tr>
 <tr> <td>preservation of digital objects</td> <td><a href="https://www.softwareheritage.org/" target="_blank">Software Heritage</a></td> <td>aims to collect, preserve, and share all publicly available software in source code form</td> </tr>
 <tr> <td>institutional repositories</td> <td><a href="https://dspace.org/" target="_blank">Dspace</a></td> <td>widely used by academic institutions for archiving and providing access to research outputs, including software</td> </tr>

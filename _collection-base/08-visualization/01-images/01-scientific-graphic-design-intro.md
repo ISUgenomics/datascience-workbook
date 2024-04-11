@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -41,7 +39,7 @@ There are two main categories of scientific graphics:
 Both data visualizations and infographics are used to present information visually. **Infographics are primarily designed to communicate complex ideas and concepts**, while data visualizations are focused on representing data.
 <span style="color: #ff3870;font-weight: 500;">Understanding the differences between these two types of scientific graphics can help researchers choose the right type of visualization for their specific needs.
 </span><br>
-**In this section we provide introduction to the types and roles of Infographics**. See section {% include target_link href=820 %} to learn more about data visualization.
+**In this section we provide introduction to the types and roles of Infographics**. See section <a class="t-links" href="820"></a> to learn more about data visualization.
 
 
 ## Designing Infographics

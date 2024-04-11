@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -28,7 +26,7 @@ A package manager is a tool for managing software packages and their dependencie
 The package manager maintains a database of available packages and their versions, as well as the dependencies between packages. When you install a package, the package manager automatically resolves any dependencies, downloading and installing any necessary packages. When you remove a package, the package manager ensures any dependent packages are also removed or updated to a version not requiring the removed package.
 </div>
 
-<b>Many package managers like APT and YUM require {% include target_link href=324 text="superuser privileges" %} to install new packages system-wide.</b> <span style="color: #ff3870; font-weight: 500;">In these cases, a regular users can NOT use a package manager to install new packages on HPC system.</span> <b>However, they can use all the packages already installed.</b>
+<b>Many package managers like APT and YUM require <a class="t-links" href="324">superuser privileges</a> to install new packages system-wide.</b> <span style="color: #ff3870; font-weight: 500;">In these cases, a regular users can NOT use a package manager to install new packages on HPC system.</span> <b>However, they can use all the packages already installed.</b>
 
 # Access software using package manager
 
@@ -39,8 +37,8 @@ Some of the most commonly used Linux-based operating systems in HPC include:
 
 <table>
   <tr> <th>operating system</th> <th>package manager</th> <th>cluster example</th> </tr>
-  <tr> <td>Red Hat Enterprise Linux (RHEL)</td> <td><b>YUM</b> <i>(Yellowdog Updater, Modified)</i></td> <td>{% include target_link href=613.3 text="Nova" %} [RHEL 7.6], {% include target_link href=613.2 text="Condo" %} [RHEL 7.5]</td> </tr>
-  <tr> <td>CentOS</td> <td><b>YUM</b> <i>(Yellowdog Updater, Modified)</i></td> <td>{% include target_link href=612.2 text="Atlas" %}, {% include target_link href=612.3 text="Ceres" %} [CentOS 7.8]</td> </tr>
+  <tr> <td>Red Hat Enterprise Linux (RHEL)</td> <td><b>YUM</b> <i>(Yellowdog Updater, Modified)</i></td> <td><a class="t-links" href="613.3">Nova</a> [RHEL 7.6], <a class="t-links" href="613.2">Condo</a> [RHEL 7.5]</td> </tr>
+  <tr> <td>CentOS</td> <td><b>YUM</b> <i>(Yellowdog Updater, Modified)</i></td> <td><a class="t-links" href="612.2">Atlas</a>, <a class="t-links" href="612.3">Ceres</a> [CentOS 7.8]</td> </tr>
   <tr> <td>Fedora</td> <td><b>DNF</b> <i>(Dandified YUM)</i>; <br> for older than Fedora22: <b>YUM</b> <i>(Yellowdog Updater, Modified)</i></td> <td></td> </tr>
   <tr> <td>Ubuntu</td> <td><b>APT</b> <i>(Advanced Package Tool)</i> </td> <td></td> </tr>
   <tr> <td>OpenSUSE</td> <td><b>ZYpp</b></td> <td></td> </tr>

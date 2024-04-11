@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -130,12 +128,11 @@ Overall, Excel is a powerful and versatile tool for managing and analyzing data,
 <a href="https://support.microsoft.com/en-us/office/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca" target="_blank">Microsoft 365 support online  ⤴</a> is an excellent resource for users who want to **get started with Excel and learn basic tasks**. The website provides a wide range of tutorials and articles that can help users get started with Excel, including how to create a new spreadsheet, enter data, format cells, and use basic formulas and functions. Users can also learn how to create charts and graphs, work with tables, and collaborate with others using Excel.
 
 If you are looking to **improve your skills in manipulating data in Excel data sheets**, I highly encourage you to explore hands-on tutorials in this section:
-* {% include target_link href=721.2 %}
-* {% include target_link href=721.3 %}
-* {% include target_link href=721.4 %}
-* {% include target_link href=721.5 %}
+* <a class="t-links" href="721.2"></a>
+* <a class="t-links" href="721.3"></a>
+* <a class="t-links" href="721.4"></a>
+* <a class="t-links" href="721.5"></a>
 
-<br><br>
 These tutorials can provide you with step-by-step guidance on how to perform specific tasks and functions in Excel, which can help you gain a deeper understanding of the software and improve your overall proficiency.
 
 So, whether you are a beginner or an advanced user, **exploring hands-on tutorials can be a great way to improve your Excel skills** and become more proficient in manipulating data in spreadsheets.

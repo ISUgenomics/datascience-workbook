@@ -18,8 +18,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -132,7 +130,7 @@ python3 bin_data.py -i input_file -l 0 -r 1
 
 ## **Environment setup**
 
-The application is developed in Python3 programming language and requires importing several useful  libraries. Thus, to manage dependencies, first you have to set up the Conda environment on your (local or remote) machine. Follow the instructions provided in section {% include target_link href=731 section="#environment-setup" text="Environment setup" %} in the introduction to {% include target_link href=731 text="Data Wrangling: use ready-made apps" %} to get Python installed and create `data_wrangling` virtual environment using <b>install <a href="https://docs.conda.io/en/latest/" target="_blank">Conda ⤴</a></b>.
+The application is developed in Python3 programming language and requires importing several useful  libraries. Thus, to manage dependencies, first you have to set up the Conda environment on your (local or remote) machine. Follow the instructions provided in section <a class="t-links" href="731" section="#environment-setup">Environment setup</a> in the introduction to <a class="t-links" href="731"></a> to get Python installed and create `data_wrangling` virtual environment using <b>install <a href="https://docs.conda.io/en/latest/" target="_blank">Conda ⤴</a></b>.
 
 <span style="color: #ff3870;font-weight: 500;">Once you have Conda and the <i>data_wrangling</i> environment follow further steps below.</span>
 
@@ -211,7 +209,7 @@ The data delimiter used does NOT matter, as it will be automatically detected by
 
 ### *Column names*
 
-The **header** is usually the first line of the file and contains the column labels. Naming the columns brings great **informational value** to the analyzed data. However, the application does NOT require the input file to have a header. If it is in the file it will be detected automatically. Otherwise, the default set of column labels [{% include target_link href=733 section="#options" text="<i>see options section</i>" %} ] will be assigned.
+The **header** is usually the first line of the file and contains the column labels. Naming the columns brings great **informational value** to the analyzed data. However, the application does NOT require the input file to have a header. If it is in the file it will be detected automatically. Otherwise, the default set of column labels [<a class="t-links" href="733" section="#options"><i>see options section</i></a>] will be assigned.
 
 ![Columns header]({{ images_path }}/03-input_header.png)
 
@@ -349,7 +347,7 @@ label_10	2265	0	0	0	0	0	1	0
 
 * To feed the application with the data from a single file, use option `-i` followed by the `path/file_name` of your input.
 * You need to select a column used to split data into the categories based on the set of unique values (labels). The `label-col` can be text or numerical.<br> *In this example we will use the first column with text-like labels to create data chunks. Index of the selected `label-col` is feed to the algorithm with the option `-l`.*
-* You also need to select a column used to cut data into slices. The `ranges-col` requires to be numerical, because the range of values in the slice will be reported in the output. If none column is relevant for that purpose, you can use the approach proposed in the {% include target_link href=733 section="#file-content" text="File Content" %}/{% include target_link href=733 section="#-ranges-column" text="Ranges Column" %}/{% include target_link href=733 section="#-add-indexing" text="<b>Add Indexing</b>" %} section to add a column with generic indexing.<br> *In this example we will use the second column (Python index: 1) with integers to derive reference value ranges of slices.*
+* You also need to select a column used to cut data into slices. The `ranges-col` requires to be numerical, because the range of values in the slice will be reported in the output. If none column is relevant for that purpose, you can use the approach proposed in the <a class="t-links" href="733" section="#file-content">File Content</a>/<a class="t-links" href="733" section="#-ranges-column">Ranges Column</a>/<a class="t-links" href="733" section="#-add-indexing"><b>Add Indexing</b></a> section to add a column with generic indexing.<br> *In this example we will use the second column (Python index: 1) with integers to derive reference value ranges of slices.*
 * For the remaining options, the default values will be used. Thus, label-based data chunks split for slices of 100-rows in length (options: `-t 'step' -n 100`) and data is aggregated by calculating mean value (option: `-c 'ave'`).
 
 ```bash
@@ -399,7 +397,7 @@ Typically the directory type of input will be `-i CHUNKS` as the default output 
 **App usage**
 
 * To feed the application with the data from a directory, use the option `-i` followed by the `path/dir_name` of your input directory.
-* The settings of `labels-col` and `ranges-col` are the same as in the {% include target_link href=733 section="#e1-load-data-from-a-single-text-file" text="previous example." %} So, we are using labels from the column of index 0 (`-l 0`), and value ranges from the column of index 1 (`-r 1`).
+* The settings of `labels-col` and `ranges-col` are the same as in the <a class="t-links" href="733" section="#e1-load-data-from-a-single-text-file"></a>. So, we are using labels from the column of index 0 (`-l 0`), and value ranges from the column of index 1 (`-r 1`).
 * This time label-based data chunks split for 100 slices of X-rows in length (options: `-t 'bin' -n 100`).
 
 ```bash

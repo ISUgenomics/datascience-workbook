@@ -17,14 +17,12 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
 Manipulating text files and research data is a common task in scientific research, and Python provides powerful tools to accomplish this. By using these tools, you can read, write, and manipulate text files, as well as read and manipulate structured research data stored in formats such as CSV, JSON, Excel files, and more.
 
-<span style="color: #ff3870;font-weight: 500;">If you are new in Python, get started with exploring the Introduction to</span> {% include target_link href=722.1 %} *You will find there a step-by-step guide from setting up a Python development environment to getting practical experience in basics of Python programming.* <br><br>
+<span style="color: #ff3870;font-weight: 500;">If you are new in Python, get started with exploring the Introduction to</span> <a class="t-links" href="722.1"></a> *You will find there a step-by-step guide from setting up a Python development environment to getting practical experience in basics of Python programming.* <br><br>
 
 In this practical tutorial we will explore data manipulation tasks related to:
 1. Reading from and writing to data files
@@ -51,7 +49,7 @@ print(contents)
 ```
 *This code opens the file 'input.txt' in read mode and assigns its contents to the variable 'contents'. The* `with` *statement ensures that the file is properly closed after it has been read.*
 
-<span style="color: #ff3870;font-weight: 500;">To learn more about other options to read files in Python see the comprehensive tutorial:</span><br> {% include target_link href=533 %}
+<span style="color: #ff3870;font-weight: 500;">To learn more about other options to read files in Python see the comprehensive tutorial:</span><br> <a class="t-links" href="533"></a>
 
 
 ## Writing text files
@@ -89,8 +87,8 @@ new_text = text.replace('sample', 'new')        # replace the word 'sample' with
 Research data is often stored in structured formats such as CSV, JSON string, or Excel files. Python provides powerful libraries such as `pandas` and `numpy` to read and manipulate such data, including selecting, spliting, and grouping by specific conditions.
 
 <span style="color: #ff3870;font-weight: 500;">To learn more about <b>pandas</b> and <b>numpy</b> libraries for Python see the corresponding tutorials: </span>
-<ul><li> {% include target_link href=536 %} </li>
-<li> {% include target_link href=537 %} </li></ul>
+<ul><li> <a class="t-links" href="536"></a> </li>
+<li> <a class="t-links" href="537"></a> </li></ul>
 
 
 Here is an example of how to **read a CSV file into a pandas** `DataFrame` and manipulate the data:

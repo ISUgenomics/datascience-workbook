@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -53,10 +51,10 @@ Other methods like API requests or file transfers may be much faster and more ef
 
 Before attempting to scrape a website for data, it is often a good idea to **explore other options for downloading the data first**. In many cases, there may be simpler and more efficient methods available:
 
-<ul><li> {% include target_link href=713 text="Introduction to downloading from online resources" %}</li>
-  <ul><li> {% include target_link href=713.1 text="Downloading online data using WGET" %}</li>
-  <li> {% include target_link href=713.4 text="Downloading online repos using GIT" %}</li>
-  <li> {% include target_link href=713.5 text="Downloading a single folder or file from GitHub" %}</li></ul>
+<ul><li> <a class="t-links" href="713">Introduction to downloading from online resources</a></li>
+  <ul><li> <a class="t-links" href="713.1">Downloading online data using WGET</a></li>
+  <li> <a class="t-links" href="713.4">Downloading online repos using GIT</a></li>
+  <li> <a class="t-links" href="713.5">Downloading a single folder or file from GitHub</a></li></ul>
 </ul>
 
 <div class="protip" markdown="1">
@@ -101,9 +99,9 @@ Below you can find some of the essential libraries and components you need for w
 If you do NOT like developing scripts in the command line text editors and are not familiar with any IDE, **using a web-based development environment such as Jupyter Lab** can be a great alternative as it provides a user-friendly interface that allows for interactive development, documentation, and visualizations. <base class="mb">
 
 To install and launch Jupyter Lab, follow steps provided in the practical tutorials in section <br>
-{% include target_link href=412 text="04. Development Environment / Jupyter: interactive web-based multi-kernel DE" %}:
-* {% include target_link href=413 text="Getting started with JupyterLab on a local machine" %}
-* {% include target_link href=414 text="Getting started with Jupyter Notebook on HPC systems" %}
+<a class="t-links" href="412">04. Development Environment / Jupyter: interactive web-based multi-kernel DE</a> :
+* <a class="t-links" href="413">Getting started with JupyterLab on a local machine</a>
+* <a class="t-links" href="414">Getting started with Jupyter Notebook on HPC systems</a>
 <base class="mt">
 <p markdown="1">Once Jupyter Lab is installed, you can launch it directly from the command line by typing the following command:</p>
 ```bash
@@ -122,7 +120,7 @@ Python is a popular high-level **programming language** that is good for web scr
 2. Download the latest version of Python for your operating system and architecture. <br>
 3. Run the installer and follow the installation wizard.
 <div class="protip" markdown="1">
-If you run into trouble, go to the practical tutorials of this workbook in section {% include target_link href=230 text="03. Setting Up Computing Machine: Various methods of software installation" %} which will show you step-by-step how to install Python on a given operating system.
+If you run into trouble, go to the practical tutorials of this workbook in section <a class="t-links" href="230">03. Setting Up Computing Machine: Various methods of software installation</a> which will show you step-by-step how to install Python on a given operating system.
 </div>
 </details>
 
