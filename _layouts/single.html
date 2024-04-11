@@ -37,14 +37,7 @@ layout: default
       {% endunless %}
 
       <section class="page__content" itemprop="text">
-        {% if page.toc %}
-          <aside class="sidebar__right">
-            <nav class="toc">
-              <header><h4 class="nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label }}</h4></header>
-              {% include toc.html sanitize=true html=content h_min=2 h_max=3 class="toc__menu" %}
-            </nav>
-          </aside>
-        {% endif %}
+        {% include target_link %}
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
         {% if page.path contains '_collection-base' %}
@@ -52,6 +45,14 @@ layout: default
             {% include further-reading.html %}
           {% endunless %}
         {% endif %}
+<!--        {% if page.toc %}
+          <aside class="sidebar__right">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label }}</h4></header>
+              {% include toc.html sanitize=true html=content h_min=2 h_max=3 class="toc__menu" %}
+            </nav>
+          </aside>
+        {% endif %}-->
       </section>
 
       <footer class="page__meta">
@@ -72,7 +73,9 @@ layout: default
         {% include collection_pagination.html %}
       {% endif %}
     </div>
+<!--
 
+-->
     {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
       {% include comments.html %}
     {% endif %}
