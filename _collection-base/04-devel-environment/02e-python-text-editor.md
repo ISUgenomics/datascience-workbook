@@ -21,7 +21,7 @@ tags: []
 
 # Introduction
 
-Once a beginner Python user has familiarized themselves with the {% include target_link href=424 text="Python shell and IDLE <i>(see the tutorial)</i>" %} and has explored the {% include target_link href=531 section="#getting-started-with-python-programming" text="Python syntax and simple operations <i>(see the tutorial)</i>" %} they may realize they want to **save the code in a text file for future reuse**. These text files, which contain relatively simple code, are called scripts and are saved with the `.py` extension. Saving code in a script is useful for:
+Once a beginner Python user has familiarized themselves with the <a class="t-links" href="424">Python shell and IDLE <i>(see the tutorial)</i></a> and has explored the <a class="t-links" href="531" section="#getting-started-with-python-programming">Python syntax and simple operations <i>(see the tutorial)</i></a> they may realize they want to **save the code in a text file for future reuse**. These text files, which contain relatively simple code, are called scripts and are saved with the `.py` extension. Saving code in a script is useful for:
 * easy editing &emsp;&emsp; &emsp; &emsp; &emsp;  *(make changes and updates to your code in one place)*
 * portability &emsp; &emsp; &emsp; &emsp;&emsp;&emsp; *(transfer between machines)*
 * reusability &emsp;&emsp;&emsp;&emsp; &emsp; &emsp;  *(you can reuse the same code repeatedly)*
@@ -73,7 +73,7 @@ To create a Python script in a terminal, you can use a text editor such as:
 * `mcedit` &emsp;&emsp;&emsp;*(advanced)*
 
 <div class="more" markdown="1">
-...about text editors available in the terminal *(command-line interface)* and their options, see tutorials in section {% include target_link href=300 %}, for example {% include target_link href=322 %}
+...about text editors available in the terminal *(command-line interface)* and their options, see tutorials in section <a class="t-links" href="300"></a>, for example <a class="t-links" href="322"></a>
 </div>
 
 ## <button class="btn example before" data-before="EXAMPLE: Script in nano"></button><br><i class="pa-s">calculate the average</i>
@@ -146,6 +146,13 @@ Here's how you can create a new Python script using `nano`, a simple text editor
    Finally, we use a Python built-in function `print()` to display the message for the user on the screen with the calculated average of the inputted list of numbers.
    </details> <base class="mt">
 
+   <div class="more mt" markdown="1">
+   ...about Python built-in functions such as `input()`, `split()`, `float()`, `sum()`, `len()`, `print()` and more from tutorials provided in section <a class="t-links" href="500"></a> :
+   * <a class="t-links" href="531"></a>
+   * <a class="t-links" href="531" section="#getting-started-with-python-programming">Python syntax and simple operations</a>
+   * <a class="t-links" href="531" section="#functions">Python built-in functions</a>
+   </div><base class="mt">
+
 4. Save and exit the file by pressing `Ctrl+X`, then `Y`, and then `Enter` <br>
 *This will save your changes and exit the nano text editor.*
 <img width="1000" src="{{ images_path }}/02_python-nano.gif">
@@ -157,14 +164,6 @@ Here's how you can create a new Python script using `nano`, a simple text editor
    *This will execute your script and print  to the console the average of user-provided numbers.*
 
    ![02_python-nano2.png]({{ images_path }}/02_python-nano2.png)
-
-
-<div class="more mt" markdown="1">
-...about Python built-in functions such as `input()`, `split()`, `float()`, `sum()`, `len()`, `print()` and more from tutorials provided in section {% include target_link href=500 %} :
-* {% include target_link href=531 %}
-* {% include target_link href=531 section="#getting-started-with-python-programming" text="Python syntax and simple operations" %}
-* {% include target_link href=531 section="#functions" text="Python built-in functions" %}
-</div>
 
 ---
 
@@ -263,6 +262,13 @@ Here's how you can create a new Python script using `vim`, an advanced text edit
    </details><base class="mt">
    <div class="protip" markdown="1">
    It is a good practice to separate blocks of code for different tasks in the script and provide comments for better readability and understanding of the code. This can be done by using comments `#` at the top of each code block to explain its general purpose. Additionally, comments `##` can be added to the end of specific lines that may not be immediately obvious what their purpose is.
+   </div>
+
+   <div class="more" markdown="1">
+   ...about Python built-in functions such as `open()`, `strip()`, `split()`, `items()`, `len()`, `print(f"")`, **Python loops and built-in objects** from tutorials provided in section <a class="t-links" href="500"></a> :
+   * <a class="t-links" href="531"></a>
+   * <a class="t-links" href="531" section="#getting-started-with-python-programming">Python syntax and simple operations</a>
+   * <a class="t-links" href="531" section="#functions">Python built-in functions</a>
    </div><base class="mt">
 
 4. Once you are done editing, press the `Esc` key to exit insert mode.
@@ -285,13 +291,6 @@ Here's how you can create a new Python script using `vim`, an advanced text edit
    *This will execute your script and print to the console the words with at least 2 counts and at least 2-letter long.*
 
    ![02_python-vim2.png]({{ images_path }}/02_python-vim2.png)
-
-<div class="more" markdown="1">
-...about Python built-in functions such as `open()`, `strip()`, `split()`, `items()`, `len()`, `print(f"")`, **Python loops and built-in objects** from tutorials provided in section {% include target_link href=500 %} :
-* {% include target_link href=531 %}
-* {% include target_link href=531 section="#getting-started-with-python-programming" text="Python syntax and simple operations" %}
-* {% include target_link href=531 section="#functions" text="Python built-in functions" %}
-</div>
 
 ---
 
@@ -403,6 +402,13 @@ Here's how you can create a new Python script using `mcedit`, an advanced text e
        # function body
        return "result"
    ```
+   </div>
+
+   <div class="more" markdown="1">
+   ...about Python built-in functions such as `join()`, `range()`, `input()`, **Python imports, and a function definition** from tutorials provided in section <a class="t-links" href="500"></a> :
+   * <a class="t-links" href="531"></a>
+   * <a class="t-links" href="531" section="#getting-started-with-python-programming">Python syntax and simple operations</a>
+   * <a class="t-links" href="531" section="#functions">Python built-in functions</a>
    </div><base class="mt">
 
 5. Once you are done editing, press the `F2` key to save changes. <br><b class="footnote c-alert" markdown="1">Note: Use `fn` and `F2` together on macOS</b><base class="mb">
@@ -422,10 +428,3 @@ Here's how you can create a new Python script using `mcedit`, an advanced text e
    *This will execute your script, prompt user to select password length, and print the generated random string of characters.*
 
    <img width="1000" src="{{ images_path }}/02_python-run-input.gif"><base class="mt">
-
-<div class="more" markdown="1">
-...about Python built-in functions such as `join()`, `range()`, `input()`, **Python imports, and a function definition** from tutorials provided in section {% include target_link href=500 %} :
-* {% include target_link href=531 %}
-* {% include target_link href=531 section="#getting-started-with-python-programming" text="Python syntax and simple operations" %}
-* {% include target_link href=531 section="#functions" text="Python built-in functions" %}
-</div>

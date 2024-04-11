@@ -19,15 +19,20 @@ tags: []
 
 ---
 
-<span style="color: #ff3870;font-weight: 500;">Before starting this tutorial, there are a few requirements that you should have in place.</span>
+<div class="required" markdown="1">
+Before starting this tutorial, there are a few requirements that you should have in place.
 * Firstly, you should be familiar with using the **command line in terminal** on your computer. <br>
-<i>Learn more from the practical tutorials in section</i> {% include target_link href=300 text="03: Introduction to Command Line" %}
+<button class="btn more mr"></button> ...from the practical tutorials in section <a class="t-links" href="300"></a>
+
 * Secondly, you should **have Python installed** on your local machine.  <br>
-<i>Learn more from the practical tutorial </i> {% include target_link href=423 text="Local Python setup on your computing machine" %}
+<button class="btn more mr"></button> ...from the practical tutorial <a class="t-links" href="423"></a>
+
 * Thirdly, you should have a Python Integrated **Development Environment** (IDE) set up on your computer, e.g., PyCharm or JupyterLab or any text editor.  <br>
-<i>Learn more from the practical tutorial </i> {% include target_link href=420 text="Python programming environment(s)" %}
+<button class="btn more mr"></button> ...from the practical tutorial <a class="t-links" href="420"></a>
+
 * Finally, you should have a **basic understanding of Python** programming.  <br>
-<i>Learn more from the practical tutorial </i> {% include target_link href=531 text="Introduction to Python programming" %}
+<button class="btn more mr"></button> ...from the practical tutorial <a class="t-links" href="531"></a>
+</div>
 
 
 # Introduction
@@ -59,10 +64,12 @@ Using the `math` module in Python can help you **perform complex mathematical op
 ## *Getting Started*
 
 You can try out the `math` module on your **local machine** if you have Python installed. <br>
-<span style="color: #ff3870;font-weight: 500;"> If you want to make up for the installation step, you can follow the installation guide provided in the tutorial</span> {% include target_link href=423 text="Local Python setup on your computing machine." %}
 
+<div class="required" markdown="1">
+If you want to make up for the installation step, you can follow the installation guide provided in the tutorial <a class="t-links" href="423"></a>.
+</div>
 
-Alternatively, if you prefer to **work online**, you can use various online Python interpreters such as <a href="https://repl.it/" target="_blank">Repl.it  ⤴</a>, {% include target_link href=120 text="Tutorial" %} <a href="https://www.pythonanywhere.com/" target="_blank">PythonAnywhere  ⤴</a>, or <a href="https://colab.research.google.com/" target="_blank">Colab  ⤴</a>. These online interpreters provide a Python shell and allow you to run Python code without installing Python on your local machine.
+Alternatively, if you prefer to **work online**, you can use various online Python interpreters such as <a href="https://repl.it/" target="_blank">Repl.it  ⤴</a>, <a href="https://www.pythonanywhere.com/" target="_blank">PythonAnywhere  ⤴</a>, or <a href="https://colab.research.google.com/" target="_blank">Colab  ⤴</a>. These online interpreters provide a Python shell and allow you to run Python code without installing Python on your local machine.
 
 
 For example, you can **use online Python shell** immediately available at <a href="https://www.python.org/shell/" target="_blank">https://www.python.org/shell/  ⤴</a> to experiment with the `math` module. <br> *Simply type in your Python code in the shell and hit enter to see the output.*

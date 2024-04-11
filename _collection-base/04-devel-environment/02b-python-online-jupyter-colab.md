@@ -23,11 +23,11 @@ tags: []
 ### <button class="btn required"></button>
 
 <div class="required before" data-before="" markdown="1">
-Please note that this tutorial requires the user to have a basic understanding of the options available in Jupyter. If you are not familiar with Jupyter, we recommend exploring other tutorials in section {% include target_link href=400 text="04. Development Environment" %} to get started:
+Please note that this tutorial requires the user to have a basic understanding of the options available in Jupyter. If you are not familiar with Jupyter, we recommend exploring other tutorials in section <a class="t-links" href="400"></a> to get started:
 <base class="mb">
-&nbsp;<b class="prefix-2"></b> {% include target_link href=412 text="Jupyter: interactive web-based multi-kernel DE" %} <br>
-&emsp;<b class="prefix-3"></b> {% include target_link href=413 text="Getting started with JupyterLab"%} <br>
-&emsp;<b class="prefix-3"></b> {% include target_link href=414 text="Getting started with Jupyter Notebook on HPC systems"%}
+&nbsp;<b class="prefix-2"></b> <a class="t-links" href="412"></a> <br>
+&emsp;<b class="prefix-3"></b> <a class="t-links" href="413"></a> <br>
+&emsp;<b class="prefix-3"></b> <a class="t-links" href="414"></a>
 </div>
 
 
@@ -97,9 +97,9 @@ While online notebooks can be a convenient and accessible way to work with Pytho
 
 
 <div class="more" markdown="1">
-Learn more from the practical tutorials:
-* {% include target_link href=425 text="Text editors: create Python code in terminal text files" %}
-* {% include target_link href=427 text="PyCharm: IDE for professional Python developers" %}
+Learn more from the &ensp;<button class="btn c-good">HANDS-ON TUTORIALS</button> <base class="mb">
+* <a class="t-links" href="425"></a>
+* <a class="t-links" href="427"></a>
 </div>
 
 
@@ -161,7 +161,8 @@ or
 
 You can now start writing Python code in the notebook cells and running them by clicking on the `Run` button in the top menu bar or pressing `Shift + Enter` to run the current cell and select the cell below it.
 
-## Python coding example <br> <i>- scatterplot by <b>matplotlib</b></i>
+
+## <button class="btn example mr before" data-before="PYTHON CODE EXAMPLE"></button>plot using <b>matplotlib</b>
 
 **5. Example Python-based notebook for creating scatterplot using matplotlib.**
 
@@ -173,7 +174,7 @@ You can now start writing Python code in the notebook cells and running them by 
 
 Both libraries are included within the Pyodide distribution, so no installations are required.
 
-**STEP A: Add a markdown cell in the notebook providing the introduction to your project.**
+<b class="c-header">STEP A:</b> **Add a markdown cell in the notebook providing the introduction to your project**
 
 *You can copy the text provided below and paste it into the first cell in the notebook.*
 
@@ -190,13 +191,13 @@ Now, change the cell type from `code` to `markdown` in the top menu bar in the n
 ![02_python-jupyter-try-notebook-cell.png]({{ images_path }}/02_python-jupyter-try-notebook-cell.png)
 
 <div class="protip" markdown="1">
-To learn more about Markdown syntax and benefits, check out the practical tutorial {% include target_link href=933.5 text="Introduction to Markdown" %} in Section {% include target_link href=933.1 text="09. Project Management / Documentation Improvement Tool." %} It will provide you with a hands-on experience of using Markdown to format text, add images, create lists, and more. <br> Don't miss out on this opportunity to enhance your skills!
+To learn more about Markdown syntax and benefits, check out the practical tutorial <a class="t-links" href="933.5"></a> in Section <a class="t-links" href="933.1">09. Project Management / Documentation Improvement Tool</a>. It will provide you with a hands-on experience of using Markdown to format text, add images, create lists, and more. <br> Don't miss out on this opportunity to enhance your skills!
 </div>
 
 To execute the cell press `Alt + Enter` ( use `option + return` for macOS ). <br>
 *This will render the markdown content and add a new cell below. By default, new cells are always of the `code` type.*
 
-**STEP B: Add a code cell to import required modules.**
+<b class="c-header">STEP B:</b> **Add a code cell to import required modules**
 
 In the next cell add Python code for all required imports, i.e., `numpy` and `matplotlib`.
 
@@ -210,7 +211,7 @@ from matplotlib import pyplot as plt      # to create scatterplot
 
 To execute the code cell, again press `Alt + Enter` ( use `option + return` for macOS ).
 
-**STEP C: Add a code cell to create the python code.**
+<b class="c-header">STEP C:</b> **Add a code cell to create the python code**
 
 In the next `code cell` add Python code for generating the dataset and creating the scatterplot.
 
@@ -386,7 +387,7 @@ This option provides a terminal interface that allows you to run commands direct
 
 You can now start writing Python code in the notebook cells. Run your code by clicking on the `Run` button next to the cell or pressing `Ctrl + Enter` *(while having cursor within a cell)*.
 
-## <button class="btn example before" data-before="CODING EXAMPLE - PYTHON"></button><br>scatterplot using <b>seaborn</b>
+## <button class="btn example mr before" data-before="PYTHON CODE EXAMPLE"></button>scatterplot using <b>seaborn</b>
 
 **4. Example Python-based notebook for creating scatterplot using seaborn.**
 
@@ -414,7 +415,7 @@ import library_name
 ```
 </div>
 
-<b class="c-header">STEP A:</b> **Add a markdown cell in the notebook providing the introduction to your project.**
+<b class="c-header">STEP A:</b> **Add a markdown cell in the notebook providing the introduction to your project**
 
 <i>Hover the mouse over the top edge of the <b>code cell</b> to display buttons for adding an additional <b>text cell</b> above.</i>
 
@@ -436,13 +437,13 @@ This project demonstrates how to load and explore the ***Wine dataset*** from Sc
 ![02_python-colab-add-text.png]({{ images_path }}/02_python-colab-edit-text.png)
 
 <div class="protip" markdown="1">
-To learn more about Markdown syntax and benefits, check out the practical tutorial {% include target_link href=933.5 text="Introduction to Markdown" %} in Section {% include target_link href=933.1 text="09. Project Management / Documentation improvement tools." %} It will provide you with a hands-on experience of using Markdown to format text, add images, create lists, and more. <br> Don't miss out on this opportunity to enhance your skills!
+To learn more about Markdown syntax and benefits, check out the practical tutorial <a class="t-links" href="933.5"></a> in section <a class="t-links" href="933.1">09. Project Management / Documentation improvement tools</a>. It will provide you with a hands-on experience of using Markdown to format text, add images, create lists, and more. <br> Don't miss out on this opportunity to enhance your skills!
 </div>
 
 To render the **text cell** press `Shift + Enter`. <br>
 *This will render the markdown content and move your cursor to the cell below.*
 
-<b class="c-header">STEP B:</b> **Add a code cell to import required modules.**
+<b class="c-header">STEP B:</b> **Add a code cell to import required modules**
 
 In the next **code cell** add Python code for all required imports, i.e., `pandas`, `seaborn`, and wine dataset from the `sklearn`.
 
@@ -457,7 +458,7 @@ from sklearn.datasets import load_wine    # to load the ready-made dataset
 
 To execute the code cell, press `Shift + Enter` or click the `Run` button.
 
-<b class="c-header">STEP C:</b> **Add a code cell to create the python code for loading the dataset.**
+<b class="c-header">STEP C:</b> **Add a code cell to create the python code for loading the dataset**
 
 Add next `code cell`, and copy-paste Python code for loading the dataset and exploring its contents.
 
@@ -528,7 +529,7 @@ Just below the code snippet in your notebook, you should see the output of the `
 *This part of the output shows the structure of dataset transformed to the DataFrame object. The first 5 samples of the Wine dataset is displayed, which include the names of the features and their corresponding values.*
 
 <base class="mt">
-<b class="c-header">STEP D:</b> **Add a code cell to create the scatterplot using seaborn.**
+<b class="c-header">STEP D:</b> **Add a code cell to create the scatterplot using seaborn**
 
 Add next `code cell`, and copy-paste Python code to create a scatter plot comparing the <i>"alcohol"</i> and <i>"color_intensity"</i> features of the dataset.
 

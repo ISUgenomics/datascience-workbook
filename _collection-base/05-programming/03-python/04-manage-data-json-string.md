@@ -19,15 +19,21 @@ tags: []
 
 ---
 
-<span style="color: #ff3870;font-weight: 500;">Before starting this tutorial, there are a few requirements that you should have in place.</span>
+<div class="required" markdown="1">
+Before starting this tutorial, there are a few requirements that you should have in place.
 * Firstly, you should be familiar with using the **command line in terminal** on your computer. <br>
-<i>Learn more from the practical tutorials in section</i> {% include target_link href=300 text="03: Introduction to Command Line" %}
+<button class="btn more mr"></button> ...from the practical tutorials in section <a class="t-links" href="300"></a>
+
 * Secondly, you should **have Python installed** on your local machine.  <br>
-<i>Learn more from the practical tutorial</i> {% include target_link href=423 text="Local Python setup on your computing machine" %}
+<button class="btn more mr"></button> ...from the practical tutorial <a class="t-links" href="423"></a>
+
 * Thirdly, you should have a Python Integrated **Development Environment** (IDE) set up on your computer, e.g., PyCharm or JupyterLab or any text editor.  <br>
-<i>Learn more from the practical tutorial</i> {% include target_link href=420 text="Python programming environment(s)" %}
+<button class="btn more mr"></button> ...from the practical tutorial <a class="t-links" href="420"></a>
+
 * Finally, you should have a **basic understanding of Python** programming.  <br>
-<i>Learn more from the practical tutorial</i> {% include target_link href=531 text="Introduction to Python programming" %}
+<button class="btn more mr"></button> ...from the practical tutorial <a class="t-links" href="531"></a>
+</div>
+
 
 # Introduction
 
@@ -191,9 +197,11 @@ The json module also provides other methods for more advanced use cases, such as
 
 ## *Getting Started*
 
-You can try out the `json` module on your **local machine** if you have Python installed. <br>
-<span style="color: #ff3870;font-weight: 500;"> If you want to make up for the installation step, you can follow the installation guide provided in the tutorial</span> {% include target_link href=423 text="Local Python setup on your computing machine." %}
+You can try out the `json` module on your **local machine** if you have Python installed.
 
+<div class="required" markdown="1">
+If you want to make up for the installation step, you can follow the installation guide provided in the tutorial <a class="t-links" href="423"></a>.
+</div>
 
 Alternatively, if you prefer to **work online**, you can use various online Python interpreters such as <a href="https://repl.it/" target="_blank">Repl.it  ⤴</a>, <a href="https://www.pythonanywhere.com/" target="_blank">PythonAnywhere  ⤴</a>, or <a href="https://colab.research.google.com/" target="_blank">Colab  ⤴</a>. These online interpreters provide a Python shell and allow you to run Python code without installing Python on your local machine.
 
@@ -311,7 +319,7 @@ with open("data.json", "r") as file:
 print(data)
 ```
 
-<span style="color: #ff3870;font-weight: 500;">Learn more about File-Open-Close process from the practical tutorial</span> {% include target_link href=533 text="Open-Close & Read-Write of data files." %}.
+<button class="btn more mr"></button> ...about File-Open-Close process from the  <a class="t-links" href="533" btn="true"><span class="c-good">HANDS-ON TUTORIAL</span></a>.
 
 ## Writing JSON Data to a File
 

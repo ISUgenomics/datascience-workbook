@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -44,11 +42,10 @@ Here are some terms commonly used in the field of high-performance computing (HP
 | parallel processing | the use of multiple processors or computers to solve a problem simultaneously |
 
 <div class="protip" markdown="1">
-Taking tutorials from the section {% include target_link href=300 text="03: Introduction to Command Line" %} is helpful before starting to use high-performance computing (HPC) systems because many HPC systems are based on Unix or a Unix-like operating system. Unix is a powerful and flexible operating system that is widely used in HPC and other technical fields. For more details, see {% include target_link href=320 text="Introduction to UNIX Shell" %} and {% include target_link href=325 text="Getting started with UNIX (video + exercises)" %} <base class="mb">
+Taking tutorials from the section <a class="t-links" href="300"></a> is helpful before starting to use high-performance computing (HPC) systems because many HPC systems are based on Unix or a Unix-like operating system. Unix is a powerful and flexible operating system that is widely used in HPC and other technical fields. For more details, see <a class="t-links" href="320"></a> and <a class="t-links" href="325">Getting started with UNIX (video + exercises)</a>. <base class="mb">
 Overall, familiarity with Unix can help users get the most out of their HPC systems and make it easier to use these systems effectively.
 </div>
 
----
 
 # HPC infrastructure
 
@@ -81,10 +78,11 @@ Additionally, consider whether your analyses are already **optimized**, and whet
 
 To access an HPC system, users will typically need to **create an account** and authenticate themselves using a username and password. Then, there are a few different ways to access high-performance computing (HPC) systems:
 * **on-site access:** *Some HPC systems are located in facilities that are open to researchers and scientists, who can use the system in person. In these cases, users will typically need to apply for access and may need to meet certain eligibility requirements.*
-* **remote access:** <i>Many HPC systems can be accessed remotely via the internet. In these cases, users can submit jobs to the system and access the results from their own computers using secure shell connection</i> ({% include target_link href=623 text="Secure Shell Connection (SSH)" %}).
-* **cloud computing:** Additionally, some HPC systems are available for use by researchers and scientists via cloud computing platforms, which allow users to access computing resources over the internet (*e.g., Open On Demand access, <a href="https://cloud.google.com" target="_blank">Google Cloud Platform  ⤴</a>*).
+* **remote access:** *Many HPC systems can be accessed remotely via the internet. In these cases, users can submit jobs to the system and access the results from their own computers using secure shell connection* (see tutorial <a class="t-links" href="623"></a>).
+* **cloud computing:** *Additionally, some HPC systems are available for use by researchers and scientists via cloud computing platforms, which allow users to access computing resources over the internet (e.g., Open On Demand access, <a href="https://cloud.google.com" target="_blank">Google Cloud Platform  ⤴</a>).*
 
-There are some national or international research and education HPC networks that provide access to a wide range of computing resources (<i>see section {% include target_link href=610 section="#examples-of-hpc-infrastructure" text="Examples of HPC infrastructure." %} Usually, researchers and scientists may be able to access it for free as part of a research project or grant. In commercial cases, users may need to pay a fee to use an HPC system.
+There are some national or international research and education HPC networks that provide access to a wide range of computing resources (<i>see section <a class="t-links" href="610" section="#examples-of-hpc-infrastructure">Examples of HPC infrastructure</a>. Usually, researchers and scientists may be able to access it for free as part of a research project or grant. <br>
+<em class="footnote c-alert">^ In commercial cases, users may need to pay a fee to use an HPC system.</em>
 
 
 ## HPC tasks

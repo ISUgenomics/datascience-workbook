@@ -135,13 +135,14 @@ In addition to the basic `input`-`processing`-`output` structure, algorithms oft
 When you're creating algorithms, it's important to remember that **different programming languages have different** `syntax` **and available elements of the algorithm's structure**. For example, the syntax for loops and conditional statements in `Bash` may be different from that in `Python` or `R`.
 </div>
 
-<span style="color: #ff3870;font-weight: 500;">To learn more about the syntax of various programming languages and the different elements of algorithm structure, consider visiting tutorials:</span>
-* {% include target_link href=521 text="Introduction to Bash scripting" %}
-* {% include target_link href=531 text="Introduction to Python programming" %}
-* {% include target_link href=541 text="Introduction to R programming" %}
-* {% include target_link href=551 text="Introduction to Julia programming" %}
+<div class="more" markdown="1">
+...about the syntax of various programming languages and the different elements of algorithm structure, consider visiting tutorials:
+* <a class="t-links" href="521"></a>
+* <a class="t-links" href="531"></a>
+* <a class="t-links" href="541"></a>
+* <a class="t-links" href="551"></a>
+</div>
 
-<br><br>
 *These resources can help you gain a deeper understanding of topics like conditional statements, loops, and other elements of algorithm structure, and how to use them effectively in your scripts or programs.*
 
 ### *Conditional Statements*

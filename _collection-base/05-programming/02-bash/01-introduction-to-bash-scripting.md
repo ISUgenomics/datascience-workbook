@@ -19,13 +19,10 @@ tags: []
 
 ---
 
+<div class="required" markdown="1">
+If you are a beginner at Linux, it may be beneficial for you to start with the tutorials provided in section <a class="t-links" href="300"></a>.
+</div>
 
-# Introduction
-
-<span style="color: #ff3870; font-weight: 600;">If you are a beginner at Linux, it may be beneficial for you to start with the tutorials provided in section</span>
-{% include target_link href=300 text="03: Introduction to Command Line" %}
-
----
 
 # 1. Bash expressions
 
@@ -712,9 +709,11 @@ Remember to separate the elements of bash statements with a semicolon `;` when c
 
 ## 3.2 Setting up the script
 
-If you don't know how to create a file from the command line or redirect a command stream to a file, I recommend that you start with the {% include target_link href=320 text="Introduction to UNIX Shell" %} and {% include target_link href=321 text="Basic Commands: navigation, file creation & preview." %}
-
-If you are not familiar with any of the basic text file editors in the terminal, such as `nano`, `vim`, or `mcedit`, take a look at the {% include target_link href=322 text="Command Line text files editors: nano, vim." %}
+<div class="required" markdown="1">
+If you don't know **how to create a file from the command line** or redirect a command stream to a file, I recommend that you start with the <a class="t-links" href="320"></a> and <a class="t-links" href="321"></a>.
+<base class="mb">
+If you are not familiar with any of the **basic text file editors** in the terminal, such as `nano`, `vim`, or `mcedit`, take a look at the <a class="t-links" href="322"></a>.
+</div>
 
 
 ### - HEADER

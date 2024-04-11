@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -27,7 +25,7 @@ The condo cluster is out of support since July 1, 2021. It is now under Free Tie
 
 # Getting Started
 ## Access and Login
-If logging in the first time, check the {% include target_link href=613.1 section="#logging-in" text="Tutorial" %} section of intro to HPC page. Using Condo cluster has same requirements as the [Nova Computing Cluster ⤴](03-isu-hpc-nova-cluster) except Condo is free. Faculty can fill out the Cluster Access Request on <a href="https://www.hpc.iastate.edu/" target="_blank">HPC webpage ⤴</a> to request access for their group. Use Google Authenticator on <a href="https://www.hpc.iastate.edu/guides/condo-2017/access-and-login/google-auth-on-android" target="_blank">Android ⤴</a>, <a href="https://www.hpc.iastate.edu/guides/condo-2017/access-and-login/google-auth-on-iphone-ipad-ipod" target="_blank">iPhone ⤴</a> or <a href="https://www.hpc.iastate.edu/guides/condo-2017/access-and-login/google-auth-on-windows" target="_blank">Windows ⤴</a> devices for authentication.
+If logging in the first time, check the <a class="t-links" href="613.1" section="#logging-in">Logging in</a> section of intro to HPC page. Using Condo cluster has same requirements as the [Nova Computing Cluster ⤴](03-isu-hpc-nova-cluster) except Condo is free. Faculty can fill out the Cluster Access Request on <a href="https://www.hpc.iastate.edu/" target="_blank">HPC webpage ⤴</a> to request access for their group. Use Google Authenticator on <a href="https://www.hpc.iastate.edu/guides/condo-2017/access-and-login/google-auth-on-android" target="_blank">Android ⤴</a>, <a href="https://www.hpc.iastate.edu/guides/condo-2017/access-and-login/google-auth-on-iphone-ipad-ipod" target="_blank">iPhone ⤴</a> or <a href="https://www.hpc.iastate.edu/guides/condo-2017/access-and-login/google-auth-on-windows" target="_blank">Windows ⤴</a> devices for authentication.
 
 
 To log in to Condo, use any Terminal (Terminal on Linux/Mac and Powershell on Windows) to ssh with the login hostname:
@@ -51,7 +49,7 @@ cp /home/$USER/test.txt /myfiles/Users/$USER/
 
 * Check the <a href="https://www.hpc.iastate.edu/guides/introduction-to-hpc-clusters/getting-data-to-and-from-the-cluster" target="_blank">Data Transfer guide ⤴</a> for more information about data transfers.
 * SLURM job <a href="https://www.hpc.iastate.edu/guides/condo-2017/slurm-job-script-generator-for-condo" target="_blank">script generator for Condo ⤴</a>.
-* Check out the {% include target_link href=651.1 text="SLURM: basics of workload manager" %} to learn about running your job on Condo or any other HPC Cluster.
+* Check out the <a class="t-links" href="651.1"></a> to learn about running your job on Condo or any other HPC Cluster.
 <br>
 <br>
 
@@ -89,6 +87,6 @@ squeue -u your_netID
 # Available Software
 Check out the following:
 * <a href="https://www.hpc.iastate.edu/guides/condo-2017/software" target="_blank">System and Application Software ⤴</a> guide for Condo from ISU.
-* {% include target_link href=641 text="Software available on HPC" %} in this workbook.
+* <a class="t-links" href="641"></a> in this workbook.
 <br>
 <br>

@@ -17,7 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
 
 # Introduction
 
@@ -86,7 +85,7 @@ conda install pandas
 
 <div class="warning" markdown="1">
 This command will install **Pandas** and any necessary dependencies in your current **Conda** environment. <base class="mb">
-If you don't have `conda` installed yet, you can follow the guide provided in the tutorial {% include target_link href=423 text="Local Python setup on your computing machine." %}
+<button class="btn required mr"></button> If you don't have `conda` installed yet, you can follow the guide provided in the tutorial <a class="t-links" href="423"></a>.
 </div>
 
 <div class="protip" markdown="1">

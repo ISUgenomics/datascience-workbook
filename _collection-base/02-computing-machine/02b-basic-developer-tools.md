@@ -40,7 +40,7 @@ Integrated development environments (IDEs) provide many benefits to programmers 
 
 ### VSC editor
 
-With its powerful tools and flexibility, **V**isual **S**tudio **C**ode (<a href="https://code.visualstudio.com/download" target="_blank">VSC website  ⤴</a>) is a widely used and well-regarded IDE for programmers and developers of all skill levels. It offers an intuitive and user-friendly interface that allows for easy code editing, debugging, and project management. VSC supports multiple programming languages, including `C++`, `C#`, `Python`, and `JavaScript`, and has built-in libraries and frameworks that can be easily integrated into projects. Additionally, VSC offers a wide range of extensions and plugins that can be used to customize and enhance the development experience. Get started with the VSC by following the hands-on tutorial {% include target_link href=411 text="Introduction to Visual Studio Code" %}.
+With its powerful tools and flexibility, **V**isual **S**tudio **C**ode (<a href="https://code.visualstudio.com/download" target="_blank">VSC website  ⤴</a>) is a widely used and well-regarded IDE for programmers and developers of all skill levels. It offers an intuitive and user-friendly interface that allows for easy code editing, debugging, and project management. VSC supports multiple programming languages, including `C++`, `C#`, `Python`, and `JavaScript`, and has built-in libraries and frameworks that can be easily integrated into projects. Additionally, VSC offers a wide range of extensions and plugins that can be used to customize and enhance the development experience. Get started with the VSC by following the hands-on tutorial <a class="t-links" href="411">Introduction to Visual Studio Code</a>.
 
 
 ## 2. Text editor
@@ -77,7 +77,7 @@ The Visual Studio Debugger is a powerful and feature-rich debugging tool that is
 * **reverse debugging:** allows developers to step backwards through the execution of a program, which can be useful for identifying the root cause of a problem;
 * **data visualizers:** allows developers to view data in a variety of formats such as text, hexadecimal, and graphic, to make it easier to understand the values of variables;
 
-Get started with the Visual Studio Debugger by following the hands-on tutorial {% include target_link href=411 text="Introduction to Visual Studio Code" %}.
+Get started with the Visual Studio Debugger by following the hands-on tutorial <a class="t-links" href="411">Introduction to Visual Studio Code</a>.
 
 ## 5. Version control
 

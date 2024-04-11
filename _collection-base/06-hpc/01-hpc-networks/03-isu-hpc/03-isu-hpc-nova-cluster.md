@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -28,7 +26,7 @@ Nodes and storage can be purchased on the Nova cluster for use by the researcher
 
 # Getting Started
 ## Access and Login
-Before logging in the first time, check the Loging in section of the {% include target_link href=613.1 text="Intro to ISU HPC" %} page for information about getting started. Install Google Authenticator on <a href="https://www.hpc.iastate.edu/guides/nova/access-and-login/google-auth-on-android" target="_blank">Android ⤴</a>, <a href="https://www.hpc.iastate.edu/guides/nova/access-and-login/google-auth-on-iphone-ipad-ipod" target="_blank">iPhone ⤴</a> or <a href="https://www.hpc.iastate.edu/guides/nova/access-and-login/google-auth-on-windows" target="_blank">Windows ⤴</a> devices for authentication.
+Before logging in the first time, check the Loging in section of the <a class="t-links" href="613.1">Intro to ISU HPC</a> page for information about getting started. Install Google Authenticator on <a href="https://www.hpc.iastate.edu/guides/nova/access-and-login/google-auth-on-android" target="_blank">Android ⤴</a>, <a href="https://www.hpc.iastate.edu/guides/nova/access-and-login/google-auth-on-iphone-ipad-ipod" target="_blank">iPhone ⤴</a> or <a href="https://www.hpc.iastate.edu/guides/nova/access-and-login/google-auth-on-windows" target="_blank">Windows ⤴</a> devices for authentication.
 
 Once connected to ISU network, use any Terminal (Terminal on Linux/Mac and Powershell on Windows) and input following command to log in to Nova:
 
@@ -49,7 +47,7 @@ ssh Your-ISU-NetID@novadtn.its.iastate.edu
 cp /home/$USER/test.txt /myfiles/Users/$USER/
 ```
 
-Once logged in you can start using Nova cluster and submit jobs using {% include target_link href=651.1 text="SLURM workload manager." %} SLURM is used to allocate memory and processors to an input job on Nova. If not familiar with the script, use this <a href="https://www.hpc.iastate.edu/guides/nova/slurm-script-generator-for-nova" target="_blank">Script generator for Nova ⤴</a>, input your requirements and it will generate a text script. You can then copy this script in a text file, add your commands at the bottom and then submit the job. Check out the {% include target_link href=651.2 text="Introduction to SLURM" %} to learn about running your job on Nova or any other HPC Cluster.
+Once logged in you can start using Nova cluster and submit jobs using <a class="t-links" href="651.1">SLURM workload manager</a>. SLURM is used to allocate memory and processors to an input job on Nova. If not familiar with the script, use this <a href="https://www.hpc.iastate.edu/guides/nova/slurm-script-generator-for-nova" target="_blank">Script generator for Nova ⤴</a>, input your requirements and it will generate a text script. You can then copy this script in a text file, add your commands at the bottom and then submit the job. Check out the <a class="t-links" href="651.2">Introduction to SLURM</a> to learn about running your job on Nova or any other HPC Cluster.
 <br>
 
 
@@ -82,11 +80,8 @@ Check your queued jobs:
 squeue -u your_netID
 ```
 
-<br>
 
 # Available Software
 Check out the following:
 * <a href="https://www.hpc.iastate.edu/guides/nova/software" target="_blank">System and Application Software ⤴</a> guide for Nova from ISU
-* {% include target_link href=641 text="Software available on HPC" %} in this workbook
-<br>
-<br>
+* <a class="t-links" href="641"></a> in this workbook

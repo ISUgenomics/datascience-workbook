@@ -21,21 +21,21 @@ tags: []
 # Introduction
 
 **The command line interface (CLI) is a powerful environment for text manipulation tasks.** <br>
-There are a variety of text manipulation programs available in the {% include target_link href=310 text="terminal" %} that allow users to quickly and efficiently process large amounts of text data. These programs offer a wide range of capabilities, including searching for patterns, transforming text, sorting lines, removing duplicates, and counting characters, words, and lines.
+There are a variety of text manipulation programs available in the <a class="t-links" href="310">terminal</a> that allow users to quickly and efficiently process large amounts of text data. These programs offer a wide range of capabilities, including searching for patterns, transforming text, sorting lines, removing duplicates, and counting characters, words, and lines.
 
 In this section, we will discuss some of the most popular and useful command line text manipulation programs, such as:
 
 <table>
   <tr><th>TOOL</th><th>TDESCRIPTION</th><th>NOTES</th></tr>
-  <tr><td>{% include target_link href=330 section="#grep---search-pattern" text="grep" %}</td> <td><i>searches for a specific pattern in text files and outputs matching lines</i></td> <td>{% include target_link href=331 text="Tutorial: GREP" %}</td></tr>
-  <tr><td>{% include target_link href=330 section="#sed---replace-pattern" text="sed" %}</td> <td><i>stream editor for filtering and transforming text</i></td> <td>{% include target_link href=332 text="Tutorial: SED" %}</td></tr>
-  <tr><td>{% include target_link href=330 section="#awk---manage-order" text="awk" %}</td> <td><i>a programming language for processing text data, often used for text manipulation tasks</i></td> <td>{% include target_link href=333 text="Tutorial: AWK" %}</td></tr>
-  <tr><td>{% include target_link href=330 section="#cut---cut-characters" text="cut" %}</td> <td><i>cuts out specific columns or fields from a file</i></td> <td></td></tr>
-  <tr><td>{% include target_link href=330 section="#sort---sort-lines" text="sort" %}</td> <td><i>sorts lines of text alphabetically or numerically</i></td> <td></td></tr>
-  <tr><td>{% include target_link href=330 section="#uniq---unique-lines" text="uniq" %}</td> <td><i>removes duplicate lines from a file</i></td> <td></td></tr>
-  <tr><td>{% include target_link href=330 section="#tr---swap-characters" text="tr" %}</td> <td><i>translates or deletes characters from a file</i></td> <td></td></tr>
-  <tr><td>{% include target_link href=330 section="#wc---count-lines-words" text="wc" %}</td> <td><i>counts the number of lines, words, and characters in a file</i></td> <td></td></tr>
-  <tr><td>{% include target_link href=330 section="#head-and-tail" text="head and tail" %}</td> <td><i>output the first or last part of a file, respectively</i></td> <td></td></tr>
+  <tr><td><a class="t-links" href="330" section="#grep---search-pattern">grep</a></td> <td><i>searches for a specific pattern in text files and outputs matching lines</i></td> <td><a class="t-links" href="331">Tutorial: GREP</a></td></tr>
+  <tr><td><a class="t-links" href="330" section="#sed---replace-pattern">sed</a></td> <td><i>stream editor for filtering and transforming text</i></td> <td><a class="t-links" href="332">Tutorial: SED</a></td></tr>
+  <tr><td><a class="t-links" href="330" section="#awk---manage-order">awk</a></td> <td><i>a programming language for processing text data, often used for text manipulation tasks</i></td> <td><a class="t-links" href="333">Tutorial: AWK</a></td></tr>
+  <tr><td><a class="t-links" href="330" section="#cut---cut-characters">cut</a></td> <td><i>cuts out specific columns or fields from a file</i></td> <td></td></tr>
+  <tr><td><a class="t-links" href="330" section="#sort---sort-lines">sort</a></td> <td><i>sorts lines of text alphabetically or numerically</i></td> <td></td></tr>
+  <tr><td><a class="t-links" href="330" section="#uniq---unique-lines">uniq</a></td> <td><i>removes duplicate lines from a file</i></td> <td></td></tr>
+  <tr><td><a class="t-links" href="330" section="#tr---swap-characters">tr</a></td> <td><i>translates or deletes characters from a file</i></td> <td></td></tr>
+  <tr><td><a class="t-links" href="330" section="#wc---count-lines-words">wc</a></td> <td><i>counts the number of lines, words, and characters in a file</i></td> <td></td></tr>
+  <tr><td><a class="t-links" href="330" section="#head-and-tail">tail</a></td> <td><i>output the first or last part of a file, respectively</i></td> <td></td></tr>
 </table>
 
 <p class="footnote mt-">^ Click on the tool name (in the first column) to jump to the cheat sheet.</p>
@@ -89,7 +89,7 @@ Manipulating text files in the command line is a powerful and efficient method f
 | `grep -n <PATTERN> <FILE>` | `grep -n 'version' file.txt` | Show line numbers for matches. |
 | `grep -o <PATTERN> <FILE>` | `grep -o 'version' file.txt` | Show only the matching portion of the line. |
 
-To learn more, see the comprehensive tutorial in this workbook: {% include target_link href=331 text="Tutorial: GREP – simple search for regular expressions." %}
+<button class="btn more"></button> <button class="btn c-good mr">HANDS-ON TUTORIAL</button> <a class="t-links" href="331"></a>
 
 ## **SED** - replace pattern
 
@@ -106,7 +106,7 @@ To learn more, see the comprehensive tutorial in this workbook: {% include targe
 | `sed 's/<PATTERN>//g' FILE` | `sed 's/version//g'` | Delete all occurrences of a pattern in a file. |
 | `sed 's/<PATTERN>/<REPLACEMENT>/N' FILE` | `sed 's/version/V/2'` | Replace the *n*th occurrence of a pattern in a line. |
 
-To learn more, see the comprehensive tutorial in this workbook: {% include target_link href=332 text="Tutorial: SED – replace pattern in stream text." %}
+<button class="btn more"></button> <button class="btn c-good mr">HANDS-ON TUTORIAL</button> <a class="t-links" href="332"></a>
 
 ## **AWK** - manage order
 
@@ -124,8 +124,9 @@ To learn more, see the comprehensive tutorial in this workbook: {% include targe
 | `awk '{sum+=$2} END {print sum}' <FILE>` | `awk '{sum+=$2} END {print sum}' file.txt` | Print the sum of all numbers in the second column. |
 | `awk '{printf "%-10s %s\n", $1, $2}' <FILE>` | `awk '{printf "%-10s %s\n", $1, $2}' file.txt` | Format the output. |
 
-To learn more, see the comprehensive tutorial in this workbook: {% include target_link href=333 text="Tutorial: AWK – advanced text processing." %} <br>
-To learn more about **BIOAWK**, see the comprehensive tutorial in this workbook: {% include target_link href=334 text="Tutorial: BIOAWK – biological data manipulation." %}
+<button class="btn more"></button> <button class="btn c-good mr">HANDS-ON TUTORIAL</button>
+* <a class="t-links" href="333"></a>
+* <a class="t-links" href="334"></a>
 
 ## **CUT** - cut characters
 
@@ -158,7 +159,7 @@ To learn more about **BIOAWK**, see the comprehensive tutorial in this workbook:
 | `sort -k 2 <FILE>` | `sort -k 2 file.txt` | Sort the lines of a file based on the second field (column). |
 | `sort -n <FILE>` | `sort -n file.txt` | Sort the lines of a file numerically. |
 
-To learn more, explore the **Unix Getting Started** tutorial in the section: {% include target_link href=325 section="#sort--sort-a-file-by-lines-alpha-numerically" text="SORT a file by lines." %}
+<button class="btn more"></button> ...explore the **Unix Getting Started** tutorial in the section: <a class="t-links" href="325" section="#sort--sort-a-file-by-lines-alpha-numerically">SORT a file by lines</a>
 
 ## **UNIQ** - unique lines
 
@@ -175,7 +176,7 @@ To learn more, explore the **Unix Getting Started** tutorial in the section: {% 
 | `uniq -d <FILE>` | uniq -d file.txt | Show only the duplicates in a file. |
 | `uniq -u <FILE>` | `uniq -u file.txt` | Show only the unique lines in a file. |
 
-To learn more, explore the **Unix Getting Started** tutorial in the section: {% include target_link href=325 section="#uniq--unique-command-to-remove-duplicates-of-adjacent-presorted-lines" text="UNIQ - command to remove duplicates." %}
+<button class="btn more"></button> ...explore the **Unix Getting Started**, section: <a class="t-links" href="325" section="#uniq--unique-command-to-remove-duplicates-of-adjacent-presorted-lines">UNIQ - command to remove duplicates</a>
 
 ## **TR** - swap characters
 
@@ -192,7 +193,7 @@ To learn more, explore the **Unix Getting Started** tutorial in the section: {% 
 | `tr ' ' '\t' < <FILE>` | `tr ' ' '\t' < file.txt` | Translate all spaces to tabs. |
 | `tr -d '[AEIOUaeiou]' < <FILE>` | `tr -d '[AEIOUaeiou]' < file.txt` | Delete all vowels from a file. |
 
-To learn more, explore the **Unix Getting Started** tutorial in the section: {% include target_link href=330 section="#tr---swap-characters" text="TR - translate." %}
+<button class="btn more"></button> ...explore the **Unix Getting Started** tutorial in the section: <a class="t-links" href="325" section="#tr---swap-characters">TR - translate</a>
 
 ## **WC** - count lines, words
 
@@ -210,7 +211,7 @@ To learn more, explore the **Unix Getting Started** tutorial in the section: {% 
 | `wc -w <FILE>` | `wc -w file.txt` | Count the number of words in a file. |
 | `wc -m <FILE>` | `wc -m file.txt` | Count the number of characters in a file. |
 
-To learn more, explore the **Unix Getting Started** tutorial in the section: {% include target_link href=330 section="#wc---count-lines-words" text="WC - word count." %}
+<button class="btn more"></button> ...explore the **Unix Getting Started** tutorial in the section: <a class="t-links" href="325" section="#wc---count-lines-words">WC - word count</a>
 
 ## **HEAD** and **TAIL**
 
@@ -225,27 +226,28 @@ These tools are very useful for quickly inspecting the contents of a file and ca
 
 **HEAD**
 
-| COMMAND SYNTAX | EXAMPLE | TASK |
-|----------------|---------|-------------|
-| `head <FILE>` | `head file.txt` | Print the first 10 lines of a file. |
-| `head -n N <FILE>` | head -n 5 file.txt | Print the first N lines of a file. |
+| COMMAND SYNTAX     | EXAMPLE             | TASK                               |
+|--------------------|---------------------|------------------------------------|
+| `head <FILE>`      | `head file.txt`     | Print the first 10 lines of a file.|
+| `head -n N <FILE>` | head -n 5 file.txt  | Print the first N lines of a file. |
 | `head -c N <FILE>` | head -c 10 file.txt | Print the first N bytes of a file. |
 
-To learn more, explore the **Unix Getting Started** tutorial in the section: {% include target_link href=330 section="#head-and-tail" text="HEAD of the file." %}<br><br>
+<button class="btn more"></button> ...explore the **Unix Getting Started** tutorial in the section: <a class="t-links" href="325" section="#head-and-tail">HEAD of the file</a>
 
+<base class="mt">
 **TAIL**
 
-| COMMAND SYNTAX | EXAMPLE | TASK |
-|----------------|---------|-------------|
-| `tail <FILE>` | `tail file.txt` | Print the last 10 lines of a file. |
-| `tail -n N <FILE>` | `tail -n 5 file.txt` | Print the last N lines of a file. |
-| `tail -c N <FILE>` | `tail -c N file.txt` | Print the last N bytes of a file. |
-| `tail -f <FILE>` | `tail -f file.txt` | Continuously monitor the end of a file. |
+| COMMAND SYNTAX     | EXAMPLE              | TASK                                    |
+|--------------------|----------------------|-----------------------------------------|
+| `tail <FILE>`      | `tail file.txt`      | Print the last 10 lines of a file.      |
+| `tail -n N <FILE>` | `tail -n 5 file.txt` | Print the last N lines of a file.       |
+| `tail -c N <FILE>` | `tail -c N file.txt` | Print the last N bytes of a file.       |
+| `tail -f <FILE>`   | `tail -f file.txt`   | Continuously monitor the end of a file. |
 
-To learn more, explore the **Unix Getting Started** tutorial in the section: {% include target_link href=330 section="#head-and-tail" text="TAIL of the file. " %}
+<button class="btn more"></button> ...explore the **Unix Getting Started** tutorial in the section: <a class="t-links" href="330" section="#head-and-tail">TAIL of the file</a>
 
 
-# <button class="btn example"></button> - jump to solution
+# <button class="btn example mr"></button>jump to solution
 
 ### Removing duplicate lines from a file
 

@@ -70,7 +70,7 @@ Jupyter's tools are available in the Python Package Index (PyPI, [https://pypi.o
 
 **Installation**
 
-You can easily install `jupyter` on your local computing machine in the variant of your choice (lab, notebook) or both. You can do a global installation in the default Unix environment or create a virtual environment with Conda (see the {% include target_link href=223 text="Basic developer libraries" %} tutorial in section {% include target_link href=200 text="02: Setting Up Computing Machine" %}) to add more modules specific to your analysis later. Regardless of the chosen environment, the installation is straightforward when using `pip`.
+You can easily install `jupyter` on your local computing machine in the variant of your choice (lab, notebook) or both. You can do a global installation in the default Unix environment or create a virtual environment with Conda (see the <a class="t-links" href="223"></a> tutorial in section <a class="t-links" href="200"></a>) to add more modules specific to your analysis later. Regardless of the chosen environment, the installation is straightforward when using `pip`.
 
 ```bash
 pip install jupyterlab
@@ -118,7 +118,7 @@ That will open your Jupyter session in a web browser on **localhost** with a def
 
 # Jupyter via Open OnDemand
 
-[Open OnDemand](https://openondemand.org) (OOD) is an **interactive interface to remote computing resources** such as {% include target_link href=612.1 text="SCINet Scientific Computing" %} or other {% include target_link href=610 text="HPC clusters." %} Figuratively speaking, OOD  creates a graphical user interface **using a web browser window** to provide the user interactive access to HPC infrastructure. In a nutshell, it serves a **desktop to a file system on a cluster**, visible to the user and managed in a web browser window. Actually, the desktop is one of the interactive applications available through the OOD service. In general, **programs available via the OOD service operate based on graphical visualization**, which is impossible directly in the terminal on a remote machine. These are, for example, programs for **geospatial analysis or RStudio and Jupyter**, which provide the opportunity to graphically present the analyses, managed commonly in R and Python.
+[Open OnDemand](https://openondemand.org) (OOD) is an **interactive interface to remote computing resources** such as <a class="t-links" href="612.1">SCINet Scientific Computing</a> or other <a class="t-links" href="610">HPC clusters</a>.  Figuratively speaking, OOD  creates a graphical user interface **using a web browser window** to provide the user interactive access to HPC infrastructure. In a nutshell, it serves a **desktop to a file system on a cluster**, visible to the user and managed in a web browser window. Actually, the desktop is one of the interactive applications available through the OOD service. In general, **programs available via the OOD service operate based on graphical visualization**, which is impossible directly in the terminal on a remote machine. These are, for example, programs for **geospatial analysis or RStudio and Jupyter**, which provide the opportunity to graphically present the analyses, managed commonly in R and Python.
 
 Having that software on a cluster with interactive visual access through the OOD service allows you to **work with data directly without copying it to a local machine** (which could be beyond its capacity with big data).
 
@@ -129,7 +129,7 @@ Having that software on a cluster with interactive visual access through the OOD
 
 ## Jupyter via SCINet OOD
 
-[SCINet](https://scinet.usda.gov) is a Scientific Computing Network combining high-performance computing ({% include target_link href=600 text="HPC" %}) infrastructure ({% include target_link href=612.2 text="Atlas cluster" %}, {% include target_link href=612.3 text="Ceres cluster" %}, {% include target_link href=612.4 text="Juno storage" %}), professional training, and improvement of collaborative network among USDA researchers. To access these resources you must be an ARS-related (or sponsored) scientist and apply for a **[SCINet account](https://scinet.usda.gov/about/signup)** in advance. Both clusters, Atlas and Ceres, currently have an OOD service in operation.
+[SCINet](https://scinet.usda.gov) is a Scientific Computing Network combining high-performance computing (<a class="t-links" href="600">HPC</a>) infrastructure (<a class="t-links" href="612.2">Atlas cluster</a>, <a class="t-links" href="612.3">Ceres cluster</a>, <a class="t-links" href="612.4">Juno storage</a>), professional training, and improvement of collaborative network among USDA researchers. To access these resources you must be an ARS-related (or sponsored) scientist and apply for a **[SCINet account](https://scinet.usda.gov/about/signup)** in advance. Both clusters, Atlas and Ceres, currently have an OOD service in operation.
 
 * **Jupyter on ATLAS**
 

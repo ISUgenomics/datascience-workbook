@@ -18,8 +18,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -879,7 +877,7 @@ module unload miniconda
 
 **There are also some SLURM-specific commands that are very useful**
 
-See the {% include target_link href=651.1 text="SLURM: basics of workload manager" %} for more than what we cover here.
+See the <a class="t-links" href="651.1"></a> for more than what we cover here.
 
 **sinfo** - see the status of all the nodes
 

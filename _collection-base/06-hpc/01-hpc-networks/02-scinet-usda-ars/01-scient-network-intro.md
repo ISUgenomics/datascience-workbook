@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -52,11 +50,11 @@ Add the following sentence as an acknowledgment **for using CERES** as a resourc
 
 Before you get started actively using the SCINet resources, perform the A, B, and C steps to familiarize yourself with the SCINet initiative.
 
-**A.** {% include target_link href=612.1 section="#a-sign-up-for-a-scinet-account" text="Sign up for a SCINet account" %} <br>
+**A.** <a class="t-links" href="612.1" section="#a-sign-up-for-a-scinet-account">Sign up for a SCINet account</a>
 
-**B.** {% include target_link href=612.1 section="#b-read-the-scinet-policy" text="Read the SCINet Policy" %} <br>
+**B.** <a class="t-links" href="612.1" section="#b-read-the-scinet-policy">Read the SCINet Policy</a>
 
-**C.** {% include target_link href=612.1 section="#c-know-where-to-find-help" text="Know where to find help" %} <br>
+**C.** <a class="t-links" href="612.1" section="#c-know-where-to-find-help">Know where to find help</a>
 
 
 ### *A. Sign up for a SCINet account*
@@ -224,7 +222,7 @@ Finally, contact other SCINet users on the <b><a href="https://forum.scinet.usda
 
 # SCINet HPC System
 
-A High Performance Computing (HPC) system offers a computational environment that can quickly process data and perform intricate computations at high speeds. To learn more, see the {% include target_link href=610 text="Introduction to HPC infrastructure." %}
+A High Performance Computing (HPC) system offers a computational environment that can quickly process data and perform intricate computations at high speeds. To learn more, see the <a class="t-links" href="610"></a>.
 
 The SCINet HPC System is three-component, including:
 * **computing nodes** that are connected together and configured to a consistent system environment:
@@ -306,7 +304,7 @@ To dive in a more comprehensive description, see detailed SCINet guides about
 Ceres login node: <b>@ceres.scinet.usda.gov</b> <br>
 Ceres transfer node: <b>@ceres-dtn.scinet.usda.gov</b> <br>
 Ceres Open OnDemand: <b><a href="http://ceres-ood.scinet.usda.gov" target="_blank">http://ceres-ood.scinet.usda.gov  ⤴</a></b> <br>
-**Ceres Getting started tutorial**: {% include target_link href=612.3 text="Ceres computing cluster" %} *(in this workbook)*
+**Ceres Getting started tutorial**: <a class="t-links" href="612.3"></a> *(in this workbook)*
 
 
 <b><a href="https://scinet.usda.gov/guides/resources/ceres#scinet-ceres" target="_blank">Ceres computing cluster User Guides</a></b> by SCINet :<br>
@@ -343,7 +341,7 @@ Ceres Open OnDemand: <b><a href="http://ceres-ood.scinet.usda.gov" target="_blan
 Atlas login node: <b>@atlas-login.hpc.msstate.edu</b> <br>
 Atlas transfer node: <b>@atlas-dtn.hpc.msstate.edu</b> <br>
 Atlas Open OnDemand: <b><a href="https://atlas-ood.hpc.msstate.edu" target="_blank">https://atlas-ood.hpc.msstate.edu  ⤴</a></b> <br>
-**Atlas Getting started tutorial**: {% include target_link href=612.2 text="Atlas computing cluster" %} *(in this workbook)*
+**Atlas Getting started tutorial**: <a class="t-links" href="612.2"></a> *(in this workbook)*
 
 
 <b><a href="https://www.hpc.msstate.edu/computing/atlas/" target="_blank">Atlas computing cluster User Guides   ⤴</a></b> by SCINet :<br>

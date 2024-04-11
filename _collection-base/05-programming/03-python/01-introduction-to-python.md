@@ -104,11 +104,11 @@ Starting your Python learning journey with online platform provides you with:
 * <b>no setup required</b>, *you can start writing and running code right away; this can be especially useful if you are just starting out with Python and don't want to spend time setting up a development environment.*
 * <b>collaboration</b>, *useful even for advanced users, e.g., if you are working on a team or sharing your code with others*
 
-There are many online platforms that allow you to write and run Python code directly in your web browser. Several examples are described in the section {% include target_link href=420 section="#1-online-coding-platforms-beginner" text="1. Online coding platforms" %} of the {% include target_link href=420 text="Python programming environment(s)" %} tutorial. For this hands-on exercise I select the <a href="https://www.python.org/shell/" target="_blank">Python Console  ⤴</a> web platform [by Python], to start right away without creating any account.
+There are many online platforms that allow you to write and run Python code directly in your web browser. Several examples are described in the section <a class="t-links" href="420" section="#1-online-coding-platforms-beginner">1. Online coding platforms</a> of the <a class="t-links" href="420"></a> tutorial. For this hands-on exercise I select the <a href="https://www.python.org/shell/" target="_blank">Python Console  ⤴</a> web platform [by Python], to start right away without creating any account.
 
 <div class="protip" markdown="1">
 If you want to keep your projects online for future reuse, open the <a href="https://www.pythonanywhere.com/" target="_blank">PythonAnywhere  ⤴</a> online platform and create the account (using its basic plan) to get started with Python coding for free. <br>
-Follow the step-by-step guide in the tutorial {% include target_link href=421 text="Online Console: simple Python code in a browser" %} to create the free account and get started with Python.
+Follow the step-by-step guide in the tutorial <a class="t-links" href="421"></a> to create the free account and get started with Python.
 </div>
 
 You can also stay here and enhance your experience by following the step-by-step guide while coding in the default online Python Console.
@@ -727,37 +727,45 @@ Before you start programming in Python, you need to install Python and set up th
 
 First, you need to download and install Python on your computer. You can download the latest version of Python from the official website: <a href="https://www.python.org/downloads/" target="_blank">https://www.python.org/downloads/  ⤴</a>
 
-<span style="color: #ff3870; font-weight: 500;">Follow the practical guide in the tutorial</span> {% include target_link href=423 text="Local Python setup on your computing machine (installation needed)" %} to get and set up Python.
+<button class="btn required mr"></button> Follow the practical guide in the tutorial <a class="t-links" href="423">Local Python setup on your computing machine <i>(installation needed)</i></a> to get and set up Python.
 
 ## Set up Development Environment (DE)
 
 **To start programming in Python on your local machine, you need the development environment, where you will create and test your code.** There are several ways to set up a Python programming environment, depending on your needs and preferences.
 
-<span style="color: #ff3870;font-weight: 500;"> You can learn the details from the comprehensive introduction to</span> {% include target_link href=420 text="Python programming environment(s)" %}, provided in the section {% include target_link href=400 text="04: Development Environment" %} of this {% include target_link href=120 text="Tutorial" %} <a href="https://datascience.101workbook.org/" target="_blank">workbook  ⤴</a>.
+<button class="btn required mr"></button> You can learn the details from the comprehensive introduction to <a class="t-links" href="420"></a>, provided in the section <a class="t-links" href="400"></a> of this workbook.
 
 ### *A. Use Python interactive shell* - beginner
 In the simplest scenario, you need a command line interface, which can be opened in the terminal *(Linux, macOS)* or Command Prompt *(Windows)*.
 
 <div class="protip" markdown="1">
-If you are a beginner in command line, it may be beneficial for you to start with the tutorials provided in section {% include target_link href=300 text="03: Introduction to Command Line." %} This tutorial will guide you through the process of setting up your command line and familiarizing yourself with the fundamental concepts of Unix.
+If you are a beginner in command line, it may be beneficial for you to start with the tutorials provided in section <a class="t-links" href="300"></a>. This tutorial will guide you through the process of setting up your command line and familiarizing yourself with the fundamental concepts of Unix.
 </div>
 
-<span style="color: #ff3870;font-weight: 500;"> You can learn the details from the comprehensive introduction to</span> {% include target_link href=424 text="Shell & IDLE: create Python code in a terminal or simple IDE (beginner)" %}, provided in the section {% include target_link href=400 text="04. Development Environment" %} of this <a href="https://datascience.101workbook.org/" target="_blank">workbook  ⤴</a>.
+<div class="more" markdown="1">
+You can learn the details from the comprehensive introduction to <a class="t-links" href="424">Shell & IDLE: create Python code in a terminal or simple IDE (beginner)</a>, provided in the section <a class="t-links" href="400"></a> of this workbook.
+</div>
 
 ### *B. Use simple text editor: nano, vim, mcedit* - intermediate
 Once you familiarize yourself with Python basics in the interactive shell, you can try to develop a simple Python script in any text editor. When working on a remote machine, it may not always be convenient or feasible to use a graphical user interface (GUI) text editor (e.g., PyCharm). In such cases, using a built-in text editor in the terminal can be a quick and easy way to make changes to a Python script.
 
-<span style="color: #ff3870;font-weight: 500;"> You can learn the details from the comprehensive introduction to</span> {% include target_link href=425 text="Text editors: create Python code in terminal text files (intermediate)" %}, provided in the section {% include target_link href=400 text="04. Development Environment" %} of this <a href="https://datascience.101workbook.org/" target="_blank">workbook  ⤴</a>.
+<div class="more" markdown="1">
+You can learn the details from the comprehensive introduction to</span> <a class="t-links" href="425">Text editors: create Python code in terminal text files (intermediate)</a>, provided in the section <a class="t-links" href="400"></a> of this workbook.
+</div>
 
 ### *C. Use Interactive Development Environment: Jupyter Lab* - advanced
 
 Using Jupyter Notebook and Jupyter Lab, you can perform interactive data analysis with visualization by creating Python notebooks that combine code, visualizations, and narrative text. You can use popular Python libraries such as NumPy, Pandas, Matplotlib, and Seaborn to import, manipulate, analyze, and visualize data.
 
-<span style="color: #ff3870;font-weight: 500;"> You can learn the details from the comprehensive introduction to</span> {% include target_link href=426 text="Jupyter Lab: create an interactive Python notebook (advanced)" %}, provided in the section {% include target_link href=400 text="04. Development Environment" %} of this <a href="https://datascience.101workbook.org/" target="_blank">workbook  ⤴</a>.
+<div class="more" markdown="1">
+You can learn the details from the comprehensive introduction to</span> <a class="t-links" href="426">Jupyter Lab: create an interactive Python notebook (advanced)</a>, provided in the section <a class="t-links" href="400"></a> of this <workbook.
+</div>
 
 ### *D. Use Integrated Development Environment: VSC or PyCharm* - professional
 
 If you're developing a more complex Python project that includes multiple modules or a web application, then using a professional Integrated Development Environment (IDE) such as PyCharm can be the best choice. PyCharm is a powerful IDE that provides a range of advanced features and tools for Python development, including code analysis, debugging, testing, and refactoring. <br>
 *Beginners may want to start with a simpler text editor until they feel comfortable with the basics of Python programming.*
 
-<span style="color: #ff3870;font-weight: 500;"> You can learn the details from the comprehensive introduction to</span> {% include target_link href=427 text="PyCharm: IDE for professional Python developers (professional)" %}, provided in the section {% include target_link href=400 text="04. Development Environment" %} of this <a href="https://datascience.101workbook.org/" target="_blank">workbook  ⤴</a>.
+<div class="more" markdown="1">
+You can learn the details from the comprehensive introduction to</span> <a class="t-links" href="427">PyCharm: IDE for professional Python developers (professional)</a>, provided in the section <a class="t-links" href="400"></a> of this workbook.
+</div>

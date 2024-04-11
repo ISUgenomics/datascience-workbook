@@ -17,17 +17,16 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
 
 # Introduction
 
 ## Installation of R and RStudio, and packages
 
-* {% include target_link href=430 text="Simple introduction to R " %}
+* <a class="t-links" href="430">Simple introduction to R</a>
 
-* {% include target_link href=432 text="R and RStudio set up" %}
+* <a class="t-links" href="432">R and RStudio set up</a>
 
-* {% include target_link href=431 text="RStudio basics" %}
+* <a class="t-links" href="431">RStudio basics</a>
 
 
 ## Basic operations

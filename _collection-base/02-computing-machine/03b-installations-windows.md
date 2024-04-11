@@ -21,7 +21,7 @@ tags: []
 
 # Introduction
 
-This is a guide for setup of a windows machine for bioinformatics data analysis. I list here some important tools useful for most bioinformatics analyses and the process to install them. Check out the {% include target_link href=900 text="Project Management" %} section before you start a new project.
+This is a guide for setup of a windows machine for bioinformatics data analysis. I list here some important tools useful for most bioinformatics analyses and the process to install them. Check out the <a class="t-links" href="900">Project Management</a>.
 
 ## General guide to software installation
 
@@ -49,9 +49,9 @@ Installing any software on Windows usually involves some common steps:
 
 ## Atom editor (now archived)
 
-Try {% include target_link href=411 text="VSCode" %} instead. <br>
+Try <a class="t-links" href="411">VSCode</a>.
 
-Atom is a text editor with `git` version control integrated in it and is compatible with {% include target_link href=933.5 text="Markdown" %} syntax. It makes working with Git and GitHub more efficient.
+Atom is a text editor with `git` version control integrated in it and is compatible with <a class="t-links" href="933.5">Markdown</a> syntax. It makes working with Git and GitHub more efficient.
 
 <a href="https://atom.io/" target="_blank">Download ⤴</a> and install Atom following general guide to installation, and then install packages to improve function. To install packages on Atom, use the package manager in settings (`File` -> `Settings` -> `Install`). <br>
 
@@ -93,7 +93,7 @@ Request for package information failed: Application error
 ![setup]({{ images_path }}/01Git.png)
 
 - Open downloaded file and install Git (with default options)
-- To set up a GitHub account check the {% include target_link href=932.4 text="GitHub tutorial" %}
+- To set up a GitHub account check the <a class="t-links" href="932.4">GitHub tutorial</a>
 
 ## Linux on Windows
 
@@ -126,8 +126,8 @@ Alternatively, see following sections to download IDEs and programming languages
 
 An Integrated Development Environment (IDE) is a program developed for coding/programming with your language of choice. There are several good IDE options available: <br>
 - <a href="https://www.spyder-ide.org/" target="_blank">Spyder ⤴</a> is used for scientific programming in python. It is a user friendly IDE.
-- RStudio is an IDE for programming in R. There are two options for using RStudio; <a href="https://www.rstudio.com/products/rstudio/#rstudio-server" target="_blank">RStudio Server ⤴</a> is online version and <a href="https://www.rstudio.com/products/rstudio/download/#download" target="_blank">RStudio Desktop ⤴</a> is a desktop application run locally. Check out the {% include target_link href=431 text="RStudio tutorial" %} for more details.
-- <a href="https://jupyter.org/" target="_blank">Jupyter ⤴</a> supports multiple programming languages. Check out the {% include target_link href=412 text="Jupyter tutorial" %} for more details.
+- RStudio is an IDE for programming in R. There are two options for using RStudio; <a href="https://www.rstudio.com/products/rstudio/#rstudio-server" target="_blank">RStudio Server ⤴</a> is online version and <a href="https://www.rstudio.com/products/rstudio/download/#download" target="_blank">RStudio Desktop ⤴</a> is a desktop application run locally. Check out the <a class="t-links" href="431">RStudio tutorial</a> for more details.
+- <a href="https://jupyter.org/" target="_blank">Jupyter ⤴</a> supports multiple programming languages. Check out the <a class="t-links" href="412">Jupyter tutorial</a> for more details.
 
 ## Python
 
@@ -135,13 +135,13 @@ Python is a high-level, general-purpose programming language. It is one of the b
 
 - <a href="https://www.python.org/downloads/windows/" target="_blank">Install Python ⤴</a> locally.
 - Follow general guidelines for installation.
-- Check out the {% include target_link href=420 text="Python programming environment" %} and {% include target_link href=531 text="Intro to Python" %} pages of this workbook for more details.
+- Check out the <a class="t-links" href="420" title="true"></a> and <a class="t-links" href="531">Intro to Python</a> pages of this workbook for more details.
 
 ## R
 
 R is a programming language for statistical computing and graphics. It is one of the most popular tools used for data mining, data modeling and generating graphics.
 
-<a href="https://mirror.las.iastate.edu/CRAN/" target="_blank">Install R here ⤴</a> locally and check out the tutorials for {% include target_link href=430 text="R Programming Environment" %} in this workbook for more details including installing R libraries.
+<a href="https://mirror.las.iastate.edu/CRAN/" target="_blank">Install R here ⤴</a> locally and check out the tutorials for <a class="t-links" href="430" title="true"></a> in this workbook for more details including installing R libraries.
 
 Use RStudio and plot to test if R is working. Open RStudio, type following command in console and press enter.
 
@@ -180,7 +180,7 @@ Conda is an open-source package and environment manager. <a href="https://github
 
 ## Docker
 
-Docker is a platform used to deliver software in packages called containers. Check out the tutorials {% include target_link href=672.1 text="Docker basics" %} and {% include target_link href=670 text="Intro to Containers" %} for more details.
+Docker is a platform used to deliver software in packages called containers. Check out the tutorials <a class="t-links" href="672.1">Docker basics</a> and <a class="t-links" href="670">Intro to Containers</a> for more details.
 
 ## NextFlow
 

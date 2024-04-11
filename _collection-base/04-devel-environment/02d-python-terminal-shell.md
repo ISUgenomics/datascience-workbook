@@ -243,5 +243,5 @@ To launch the Python IDLE from the terminal window, you can follow these steps:
 
 <base class="mt">
 <div class="more" markdown="1">
-It is highly recommended to learn more about the basics of programming in Python by working through the hands-on tutorials provided in section {% include target_link href=531 text="05. Introduction to Programming / Introduction to Python programming" %}. These tutorials cover topics such as variables, data types, operators, control flow statements, functions, and more.
+It is highly recommended to learn more about the basics of programming in Python by working through the hands-on tutorials provided in section <a class="t-links" href="531">05. Introduction to Programming / Introduction to Python programming</a>. These tutorials cover topics such as variables, data types, operators, control flow statements, functions, and more.
 </div>

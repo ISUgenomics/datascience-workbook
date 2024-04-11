@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -45,7 +43,7 @@ julia --version
 Then you can use Julia in your current session on the cluster.
 
 <div class="protip" markdown="1">
-On **Atlas cluster**, Julia is available as a module in `version 1.5`, and <br> on **Ceres cluster**, it's available in `version 1.7` (October 2023). <br> Depending on the version compatibility with your project dependencies, you can choose the cluster that best suits your needs. If neither of these versions aligns with your project, **you have the option to install a different Julia version in your user space**. For detailed instructions on how to do this, refer to the section {% include target_link href=552 section="#install-julia-in-selected-version" text="Install Julia in selected version" %} in this tutorial.
+On **Atlas cluster**, Julia is available as a module in `version 1.5`, and <br> on **Ceres cluster**, it's available in `version 1.7` (October 2023). <br> Depending on the version compatibility with your project dependencies, you can choose the cluster that best suits your needs. If neither of these versions aligns with your project, **you have the option to install a different Julia version in your user space**. For detailed instructions on how to do this, refer to the section <a class="t-links" href="552" section="#install-julia-in-selected-version">Install Julia in selected version</a> in this tutorial.
 </div>
 
 
@@ -315,7 +313,7 @@ Pkg.add("IJulia")
 If you **install** `IJulia` **in the base environment**, you'll obtain a <u>universal Julia kernel in Jupyter Lab</u>, which can be paired with any custom environment created later. To utilize a custom environment with this universal kernel, simply activate the desired environment within a notebook (follow the steps provided below).
 </div>
 
-Once `IJulia` is installed, you can launch Jupyter Lab ( assuming you {% include target_link href=412 section="#installing-jupyter" text="have it installed" %}).
+Once `IJulia` is installed, you can launch Jupyter Lab (assuming you <a class="t-links" href="412" section="#installing-jupyter">have it installed</a>).
 
 ### Access Julia in Jupyter Lab
 
@@ -330,7 +328,7 @@ enter your login credentials, and select **JupyterLab** from the `Interactive Ap
 
 **B. Launch Jupyter Lab installed on your local machine**
 
-In the separate terminal tab, navigate to the desired location in your file system and launch the Jupyter Lab ( assuming you {% include target_link href=412 section="#installing-jupyter" text="have it installed" %}):
+In the separate terminal tab, navigate to the desired location in your file system and launch the Jupyter Lab (assuming you <a class="t-links" href="412" section="#installing-jupyter">have it installed</a>):
 ```bash
 jupyter lab
 ```

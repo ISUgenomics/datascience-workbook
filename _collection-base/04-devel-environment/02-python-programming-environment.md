@@ -29,7 +29,7 @@ tags: []
 </div>
 
 <div class="more" markdown="1">
-...about Python programming and its advantages in section:<br> {% include target_link href=500 text="05: Introduction to Programming" %} / {% include target_link href=531 text="3. Introduction to Python programming" %}
+...about Python programming and its advantages in section:<br> <a class="t-links" href="500"></a> / <a class="t-links" href="531"></a>
 </div>
 
 
@@ -60,7 +60,7 @@ You can also use a plain text editor, such as <a href="https://www.nano-editor.o
 </div>
 
 <div class="more" markdown="1">
-...about the <b>CLI text editors</b> from the tutorial {% include target_link href=322 text="Command Line text files editors: nano, vim" %} in this workbook.
+...about the <b>CLI text editors</b> from the tutorial <a class="t-links" href="322"></a> in this workbook.
 </div>
 
 
@@ -76,7 +76,7 @@ There are many multi-language IDEs available, such as <a href="https://code.visu
 *Multi-language IDEs can be useful* ***for developers who work on projects that involve more than one programming language***, *as they provide a single platform for managing all of the code and related resources. They can also be a good choice for developers who want a more comprehensive development environment that includes a range of tools and features beyond just a code editor.*
 </div>
 
-<button class="btn more"></button> *...about the **VSC IDE** from the tutorial* {% include target_link href=411 text="<i>Visual Studio Code</i>" %}
+<button class="btn more"></button> ...about the **VSC IDE** from the tutorial <a class="t-links" href="411">Visual Studio Code</a>
 
 
 ### *B. Python-dedicated IDE*
@@ -89,7 +89,7 @@ Some popular IDEs dedicated for programming in Python include <a href="https://r
 </div>
 
 <div class="more" markdown="1">
-...about the <b>PyCharm IDE</b> from the tutorial {% include target_link href=427 text="PyCharm: IDE for professional Python developers" %} in this workbook
+...about the <b>PyCharm IDE</b> from the tutorial <a class="t-links" href="427"></a> in this workbook.
 </div>
 
 
@@ -111,5 +111,5 @@ Although, JupyterLab does not include a debugger in the traditional sense, it su
 </div>
 
 <div class="more" markdown="1">
-...about the <b>Jupyter Lab</b> from the tutorial {% include target_link href=412 text="Jupyter: interactive web-based multi-kernel DE" %} in this workbook.
+...about the <b>Jupyter Lab</b> from the tutorial <a class="t-links" href="412"></a> in this workbook.
 </div>

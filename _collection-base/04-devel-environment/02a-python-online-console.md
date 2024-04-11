@@ -29,7 +29,7 @@ Overall, using an online platform for Python programming can be a convenient and
 
 ## Open online Python console
 
-There are many online platforms that allow you to write and run Python code directly in your web browser. Several examples are described in the section {% include target_link href=420 section="#1-online-coding-platforms-beginner" text="Tutorial" %} of the {% include target_link href=420 text="Python programming environment(s)" %} tutorial. For our hands-on exercise we select the <a href="https://www.pythonanywhere.com/" target="_blank">PythonAnywhere  ⤴</a> web platform [by Anaconda], using its basic plan to get started with Python coding for free. <br>
+There are many online platforms that allow you to write and run Python code directly in your web browser. Several examples are described in the <a class="t-links" href="420" section="#1-online-coding-platforms-beginner">section</a> of the <a class="t-links" href="420"></a> tutorial. For our hands-on exercise we select the <a href="https://www.pythonanywhere.com/" target="_blank">PythonAnywhere  ⤴</a> web platform [by Anaconda], using its basic plan to get started with Python coding for free. <br>
 
 ### <b class="prefix-2"></b>python.org/shell
 
@@ -119,7 +119,6 @@ print(z)
 * `/` &emsp; *for division*
 </div>
 
-
 <div class="more" markdown="1">
-<i class="c-alert">It is highly recommended to learn more about the basics of programming in Python</i> by working through the hands-on tutorials provided in section {% include target_link href=531 text="05. Introduction to Programming / Introduction to Python programming" %} of this workbook. These tutorials cover topics such as variables, data types, operators, control flow statements, functions, and more.
+**It is highly recommended to learn more about the basics of programming in Python** by working through the hands-on tutorials provided in section <a class="t-links" href="531">05. Introduction to Programming / Introduction to Python programming</a> of this workbook. These tutorials cover topics such as variables, data types, operators, control flow statements, functions, and more.
 </div>

@@ -22,10 +22,10 @@ tags: []
 
 
 <div class="required" markdown="1">
-Please note that this tutorial requires the user to have a basic understanding of the options available in Jupyter. If you are not familiar with Jupyter, I recommend exploring other tutorials in section {% include target_link href=400 text="04. Development Environment" %} :
-* {% include target_link href=412 text="Jupyter: interactive web-based multi-kernel DE" %}
-* {% include target_link href=413 text="Getting started with JupyterLab on a local machine" %}
-* {% include target_link href=414 text="Getting Started with Jupyter Notebook on HPC systems" %}
+Please note that this tutorial requires the user to have a basic understanding of the options available in Jupyter. If you are not familiar with Jupyter, I recommend exploring other tutorials in section <a class="t-links" href="400"></a> :
+* <a class="t-links" href="412"></a>
+* <a class="t-links" href="413"></a>
+* <a class="t-links" href="414"></a>
 </div>
 
 # Introduction
@@ -54,7 +54,7 @@ However, while Python coding in Jupyter offers many advantages, **it may not alw
 * Plain text files are lightweight, easy to read, and can be executed directly from the command line, which makes them a suitable choice for simple scripts.
 * Additionally, plain text files are easier to version control with tools like Git, which can be essential for collaborating and managing code changes.
 
-<button class="btn more"></button> <button class="btn c-good mr">HANDS-ON TUTORIAL</button> {% include target_link href=425 text="Text editors: create Python code in terminal text files" %}
+<button class="btn more"></button> <button class="btn c-good mr">HANDS-ON TUTORIAL</button> <a class="t-links" href="425"></a>
 
 <base class="mt">
 <em class="cons"></em> For **production-level Python code**, where performance, scalability, and maintainability are critical, other tools may be more suitable. Jupyter notebooks can be **challenging to manage with version control systems** like Git, which can make it difficult to track changes over time.
@@ -62,16 +62,16 @@ However, while Python coding in Jupyter offers many advantages, **it may not alw
 <base class="mt">
 <em class="cons"></em> For **large modular Python developments**, IDEs such as Visual Studio Code (VSC) or PyCharm are often a better choice than Jupyter, since they offer more advanced features, like debugging, refactoring, and testing, that are essential for professional development.
 
-<button class="btn more"></button> <button class="btn c-good mr">HANDS-ON TUTORIAL</button>  {% include target_link href=427 text="PyCharm: IDE for professional Python developers" %}
+<button class="btn more"></button> <button class="btn c-good mr">HANDS-ON TUTORIAL</button>  <a class="t-links" href="427"></a>
 
 
 # Python in *JupyterLab* **locally**
 
 <div class="required" markdown="1">
-If you don't already have Jupyter Lab installed on your local machine, make up for this step by following the instructions in the {% include target_link href=412 section="#installing-jupyter" text="Installing Jupyter" %} section of the {% include target_link href=412 text="Jupyter: interactive web-based multi-kernel DE" %} tutorial.
+If you don't already have Jupyter Lab installed on your local machine, make up for this step by following the instructions in the <a class="t-links" href="412" section="#installing-jupyter">Installing Jupyter</a> section of the <a class="t-links" href="412"></a>.
 </div>
 <div class="more mt-" markdown="1">
-To learn more about Jupyter Lab interface *(cell types, opening and saving files, executing the code, and other options)* see {% include target_link href=413 text="Getting started with JupyterLab" %} tutorial.
+To learn more about Jupyter Lab interface *(cell types, opening and saving files, executing the code, and other options)* see <a class="t-links" href="413"></a> tutorial.
 </div>
 
 
@@ -95,7 +95,7 @@ jupyter lab
 ```
 
 <div class="more" markdown="1">
-You can learn more about creating virtual environments for Python using Conda in the tutorial {% include target_link href=423 text="Local Python setup on your computing machine" %}.
+You can learn more about creating virtual environments for Python using Conda in the tutorial <a class="t-links" href="423"></a>.
 </div><base class="mt">
 
 ## <button class="btn example before" data-before="C. Launch Jupyter and"></button><br><i class="pa-s">switch the Python kernel</i>
@@ -198,7 +198,7 @@ Once you have all dependencies installed (python=3.9, pandas, plotly) (and activ
 jupyter Lab
 ```
 *That will open your Jupyter session in a web browser on localhost with a default URL: <a href="http://localhost:8889/lab" target="_blank">http://localhost:8889/lab  ⤴</a>.*
-<img width="800" src="{{ images_path }}/04_jupyter_launch.gif">
+<img width="1000" src="{{ images_path }}/04_jupyter_launch.gif">
 
 Once the platform has loaded, you can start a new notebook:
 
@@ -235,7 +235,7 @@ Now, change the cell type from `code` to `markdown` in the top menu bar in the n
 ![02_python-jupyter-cell-markdown.png]({{ images_path }}/02_python-jupyter-cell-markdown.png)
 
 <div class="protip" markdown="1">
-To learn more about `Markdown syntax` and benefits, check out the practical tutorial {% include target_link href=933.5 text="Introduction to Markdown" %} in Section {% include target_link href=933.1 text="09. Project Management / Documentation improvement tools." %} It will provide you with a hands-on experience of using Markdown to format text, add images, create lists, and more. Don't miss out on this opportunity to enhance your skills!
+To learn more about `Markdown syntax` and benefits, check out the practical tutorial <a class="t-links" href="933.5"></a> in section <a class="t-links" href="933.1">09. Project Management / Documentation improvement tools</a>. It will provide you with a hands-on experience of using Markdown to format text, add images, create lists, and more. Don't miss out on this opportunity to enhance your skills!
 </div>
 
 To execute the cell press `Alt + Enter` ( use `option + return` for macOS ). <br>

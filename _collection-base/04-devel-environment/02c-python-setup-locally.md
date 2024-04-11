@@ -31,12 +31,11 @@ In this section, we will cover the process of setting up Python on a local machi
 
 **Python-related sections in this workbook:**
 
-* {% include target_link href=420 text="Python programming environment(s)" %}
-* {% include target_link href=531 text="Introduction to Python programming" %}
-* {% include target_link href=722.1 text="Manipulating data files with Python" %}
-* {% include target_link href=822.01 text="Plotly-Dash: interactive plotting with Python" %}
+* <a class="t-links" href="420"></a>
+* <a class="t-links" href="531"></a>
+* <a class="t-links" href="722.1">Manipulating data files with Python</a>
+* <a class="t-links" href="822.01"></a>
 
-<br><br>
 **Sections in this tutorial:**
 
 1. [Get Python on your local machine](#1-get-python-on-your-local-machine)
@@ -302,31 +301,30 @@ Here are some of the reasons **why choosing the right development environment is
 
 Choosing the **development environment for Python** projects depends on personal preferences, operating systems, and the specific requirements of the project. Some of the best choices include:
 * <a href="https://www.jetbrains.com/pycharm/" target="_blank"><b>PyCharm</b>  ⤴</a> is a powerful and popular development environment for Python <br>
-<button class="btn more"></button> <button class="btn c-good mr">HANDS-ON TUTORIAL</button> {% include target_link href=427 text="PyCharm: IDE for professional Python developers" %}
+<button class="btn more"></button> <button class="btn c-good mr">HANDS-ON TUTORIAL</button> <a class="t-links" href="427"></a>
 
 <base class="mt">
 * <a href="https://code.visualstudio.com/" target="_blank"><b>Visual Studio Code</b> (VSC)  ⤴</a> is a lightweight and versatile code editor that can be used for Python development <br>
-<button class="btn more"></button> <button class="btn c-good mr">HANDS-ON TUTORIAL</button>  {% include target_link href=411 text="Visual Studio Code: multi-language integrated DE (VSC)" %}
+<button class="btn more"></button> <button class="btn c-good mr">HANDS-ON TUTORIAL</button>  <a class="t-links" href="411"></a>
 
 <base class="mt">
-<ul><li> <a href="https://jupyter.org/" target="_blank"><b>Jupyter Notebook</b>  ⤴</a> is a web-based development environment that is ideal for Python-based data science <br>
-<button class="btn more"></button> <button class="btn c-good mr">HANDS-ON TUTORIAL</button> {% include target_link href=412 text="Jupyter: interactive web-based multi-kernel DE" %}</li>
-<ul>
-  <li> {% include target_link href=413 %} </li>
-  <li> {% include target_link href=414 %} </li>
-  <li> {% include target_link href=426 %} </li>
-</ul></ul>
+* <a href="https://jupyter.org/" target="_blank"><b>Jupyter Notebook</b>  ⤴</a> is a web-based development environment that is ideal for Python-based data science <br>
+<button class="btn more"></button> <button class="btn c-good mr">HANDS-ON TUTORIAL</button> <a class="t-links" href="412"></a>
+  * <a class="t-links" href="413"></a>
+  * <a class="t-links" href="414"></a>
+  * <a class="t-links" href="426"></a>
 
+<base class="mt">
 * <a href="https://replit.com/" target="_blank"><b>Repl.it</b>  ⤴</a> is an online development environment that supports multiple programming languages, including Python.
 <div class="warning level-1 mt-" markdown="1">
 It requires to sign up, a free plan includes 0.5 GB of account storage.
 </div>
 
 * <a href="https://www.vim.org/" target="_blank"><b>Vim</b>  ⤴</a> is a highly customizable and powerful in-terminal code editor <br>
-<button class="btn more"></button> <button class="btn c-good mr">HANDS-ON TUTORIAL</button> {% include target_link href=322 text="Command Line text files editors: nano, vim" %}
+<button class="btn more"></button> <button class="btn c-good mr">HANDS-ON TUTORIAL</button> <a class="t-links" href="322"></a>
 
 <base class="mb">
-<em class="level-1">All of them can be used in Windows, macOS, and Linux.</em>
+<em class="footnote">^ All of them can be used in Windows, macOS, and Linux.</em>
 
 
 <div class="protip mt" markdown="1">
@@ -392,7 +390,7 @@ The fastest way to obtain `conda` is to **install Miniconda**, a mini version of
 **Practical Guides**<br>
 Follow the up-to-date installation guide for **Miniconda** from the official documentation provided at <a href="https://conda.io/projects/conda/en/latest/user-guide/install/index.html#regular-installation" target="_blank">https://conda.io/projects/conda/en/latest/user-guide/install/index.html#regular-installation  ⤴</a>.
 
-You can also follow a step by step guide for installing **Conda Miniforge3 for both ARM and Intel chips** on your MacBook Pro in the tutorial {% include target_link href=231 section="#-install-conda" text="Installations on MacBook Pro / Install Conda" %}
+You can also follow a step by step guide for installing **Conda Miniforge3 for both ARM and Intel chips** on your MacBook Pro in the tutorial <a class="t-links" href="231" section="#-install-conda">Installations on MacBook Pro / Install Conda</a>
 
 <base class="mb">
 Once you have installed Conda, you can use it to create and manage Python environments, install packages, and more.
@@ -590,7 +588,7 @@ This command specifies that `Dockerfile` is named "MyDockerfile" and is located 
 </div>
 
 <div class="more" markdown="1">
-...about Docker containers and Docker graphical user interface (GUI) from the practical tutorial {% include target_link href=672.1 text="Docker - accelerated container application development" %} available in the {% include target_link href=670 text="Introduction to containers" %} section of this workbook.
+...about Docker containers and Docker graphical user interface (GUI) from the practical tutorial <a class="t-links" href="672.1"></a> available in the <a class="t-links" href="670"></a> section of this workbook.
 </div>
 
 

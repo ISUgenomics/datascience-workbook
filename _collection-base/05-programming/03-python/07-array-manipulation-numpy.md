@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -115,7 +113,7 @@ conda install numpy
 
 <div class="warning" markdown="1">
 This command will install **NumPy** and any necessary dependencies <u>in your current Conda environment</u>. <base class="mb">
-If you don't have `conda` installed yet, you can follow the guide provided in the tutorial {% include target_link href=423 text="Local Python setup on your computing machine." %} If you are using the Anaconda distribution, `conda` is already installed by default.
+<button class="btn required mr"></button> If you don't have `conda` installed yet, you can follow the guide provided in the tutorial <a class="t-links" href="423"></a>. If you are using the Anaconda distribution, `conda` is already installed by default.
 </div>
 
 <div class="protip" markdown="1">
@@ -768,7 +766,7 @@ $ [1 2 3 4 5 6]
 </code><br>
 
 <div class="protip" markdown="1">
-Note that the `np.hstack()` function can also be used to concatenate arrays horizontally, and the `np.dstack()` function can be used to concatenate arrays along a third dimension. 
+Note that the `np.hstack()` function can also be used to concatenate arrays horizontally, and the `np.dstack()` function can be used to concatenate arrays along a third dimension.
 </div>
 
 ## np.split()

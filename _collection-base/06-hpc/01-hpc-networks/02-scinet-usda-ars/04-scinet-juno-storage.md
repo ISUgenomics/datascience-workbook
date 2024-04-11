@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -28,12 +26,12 @@ tags: []
 Explore the resources to learn more:
 * SCINet website: <a href="https://scinet.usda.gov" target="_blank">https://scinet.usda.gov  ⤴</a>
 * USDA-ARS website: <a href="https://www.ars.usda.gov/" target="_blank">https://www.ars.usda.gov/  ⤴</a>
-* Introduction to SCINet HPC in this workbook: {% include target_link href=612.1 text="What is SCINet? " %}
+* Introduction to SCINet HPC in this workbook: <a class="t-links" href="612.1">What is SCINet?</a>
 
 ## **What is Juno used for?**
 
 In addition to its powerful computing capabilities, the SCINet HPC system also offers data storage solutions to efficiently manage and store data and results:
-* **Tier 1 Storage**, short-term, <u>not backed up</u> storage on each computing cluster ({% include target_link href=612.2 text="Atlas" %}, {% include target_link href=612.3 text="Ceres" %}) for storing code, data, and intermediate results while performing a series of computational jobs
+* **Tier 1 Storage**, short-term, <u>not backed up</u> storage on each computing cluster (<a class="t-links" href="612.2">Atlas</a>, <a class="t-links" href="612.3">Ceres</a>) for storing code, data, and intermediate results while performing a series of computational jobs
 * **Juno storage**, with a large, multi-petabyte ARS long-term storage, periodically backed up to tape device.
 
 Learn more about SCINet Data and Storage **recommended procedures** from the <a href="https://scinet.usda.gov/guides/data/data-management#data-and-storage-sop" target="_blank">guide  ⤴</a>, provided by SCINet VRSC.
