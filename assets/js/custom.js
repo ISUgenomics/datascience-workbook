@@ -1,92 +1,4 @@
-
-// A function moving toc outside page__content section to facilitate its availability on page scrolling
-function moveToc() {
-  const sidebarRight = document.querySelector('.sidebar__right');
-  const pageInnerWrapper = document.querySelector('.page');
-  if (sidebarRight && pageInnerWrapper) {
-    pageInnerWrapper.appendChild(sidebarRight);
-    console.log("item moved");
-  }
-};
-
-
-// A function (called for each single.html based content) reformatting default markdown behavior for target links
-function adjustWrapperLinks() {
-
-  var targetLinks = document.querySelectorAll('p.wrapper');
-  targetLinks.forEach(function(targetLink) {
-    var aTag = targetLink.querySelector('a');                                   //
-    if (targetLink.classList.contains('done')) {return;}
-    var parent = targetLink.parentNode;
-    console.log(parent.tagName, aTag.text);                                     //
-
-    var next = targetLink.nextElementSibling;
-    var prev = targetLink.previousElementSibling;
-    if (prev) {console.log("Prev: ", prev.tagName)}                             //
-    if (next) {console.log("Next: ", next.tagName)}                             //
-    if (parent) {
-      if (parent.tagName === 'SECTION' || parent.tagName === 'DIV') {
-        var nextUlFound = true;
-        if (next && next.tagName === 'P') {
-          next.classList.add('inline');
-          if (/^[a-zA-Z]/.test(next.textContent)) {next.textContent = ' ' + next.textContent;}
-          nextUlFound = false;
-        }
-        if (prev) {
-          if (prev.tagName === 'P') {prev.classList.add('inline');}
-
-          else if (prev.tagName === 'UL') {
-            var lastLi = prev.querySelector('li:last-child');
-            lastLi.appendChild(targetLink);
-            var current = next;
-            while (current && current.tagName === 'P' && !nextUlFound) {
-              console.log("HERE: ", current.tagName, current);                  //
-              if (current.textContent) {
-                if (/^[a-zA-Z]/.test(current.textContent)) {current.textContent = ' ' + current.textContent;}
-                var nodes = current.childNodes
-                if (nodes.length >= 2 && nodes[0].tagName === 'BR' && nodes[1].tagName === 'BR') {
-                  current.removeChild(current.firstElementChild);
-                  current.removeChild(current.firstElementChild);
-                  console.log("YES");                                           //
-                  break;
-                }
-              }
-              if (current.classList.contains('wrapper')) {current.classList.add('done');}
-              else {current.classList.add('inline');}
-              var next2 = current.nextElementSibling;
-              lastLi.appendChild(current);
-              if (!next2 || next2.tagName === 'UL') {nextUlFound = true;}
-              else {current = next2;}
-            }
-
-            if (parent.tagName === 'SECTION' && targetLink.classList.contains('level-1')) {
-              console.log("FOUND");                                             //
-              var n = prev.previousElementSibling;
-              console.log(": ", n.tagName);                                     //
-              if (n && n.tagName === 'UL' && !prev.classList.contains('level-1')) {
-                n.appendChild(prev);
-                prev.classList.add('level-1');
-                console.log("prev: ", prev.tagName, prev.classList);            //
-              }
-            }
-
-          }
-
-        }
-      }
-      else if (parent.tagName === 'LI') {
-        if (prev) {prev.classList.add('inline');}
-        tmp = parent.parentNode.nextElementSibling;
-        if (tmp && tmp.tagName === 'P') {
-          tmp.classList.add('inline');
-          parent.appendChild(tmp);
-        }
-      }
-
-    }
-  });
-}
-
+// A function showing the temporary notification (e.g., after copying to clipboard)
 function showNotification(message, parentElement) {
     var notification = document.createElement('div');
     notification.textContent = message;
@@ -100,7 +12,39 @@ function showNotification(message, parentElement) {
 }
 
 
-//A function that derives parent background color for custom collapsible <details>
+// A function moving toc outside page__content section to facilitate its availability on page scrolling
+function moveToc() {
+  const sidebarRight = document.querySelector('.sidebar__right');
+  const pageInnerWrapper = document.querySelector('.page');
+  if (sidebarRight && pageInnerWrapper) {
+    pageInnerWrapper.appendChild(sidebarRight);
+    console.log("item moved");
+  }
+};
+
+
+// A function (called for each single.html based content) replacing order to URL of the tutorial # include target-link
+function updateTargetLinks() {
+    var links = document.querySelectorAll('a.t-links');
+    links.forEach(function(link) {
+      var hrefValue = link.getAttribute('href');
+      var sectionValue = link.getAttribute('section');
+      if (urlDict[hrefValue]) {
+        var url = urlDict[hrefValue].url + (sectionValue || '');
+        link.setAttribute('href', url);
+        if (!link.textContent.trim() || link.getAttribute('title') === 'true') {
+          link.textContent = urlDict[hrefValue].title.replace(/<[^>]*>/g, '');
+        }
+        if (link.getAttribute('btn') === 'true') {
+          link.classList.add('btn');
+        }
+        link.setAttribute('target', '_blank');
+      }
+    });
+}
+
+
+// A function that derives parent background color for custom collapsible <details>
 function getParentColor() {
   document.querySelectorAll('details').forEach(details => {
     let parent = details.parentNode;
@@ -230,7 +174,7 @@ function addTextToBefore() {
 // Event listener for custom.js functions
 document.addEventListener('DOMContentLoaded', function() {
   moveToc();
-  adjustWrapperLinks();                                                         // reformatting target-links
+  updateTargetLinks();
   wrapCodeBlocks();
   copyCodeButton();
   downloadContent();
