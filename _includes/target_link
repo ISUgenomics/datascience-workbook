@@ -1,39 +1,20 @@
 
 {% comment %}
-  target_link.html
+  target_link
   Usage:
-    - href:    (required) A numeric value matching 'order' variable in a linked tutorial or a direct URL.
+      Anywhere in the page content link selected tutorial:
+      <a class="my-targets" href="423" section="#3-manage-python-environments" title="true" btn="true"></a>
+    - href:    (required) A numeric value(s) matching 'order' variable in a linked tutorial(s). Comma-separated, in quotes if decimal.
     - section: (optional) A subsection on the page to link to, preceded by '#'.
-    - text:    (optional) The text for the link. By default, the title of the page matched with the order.
-    - button:  (optional) Any text or value, when provided converts link to a button.
-    - level:   (optional) Integer number (0 by default) setting the indentation (useful for bullet lists).
+    - title:   (optional) The text for the link. When true, the title of the page matched with the order.
+    - btn:     (optional) When true, converts link to a button.
 {% endcomment %}
 
 
-{% if include.href contains 'http' %}
-  {% assign href = include.href %}
-{% else %}
-  {% assign content = site['collection-base'] | sort: 'order' %}
-  {% assign item = content | where: "order", include.href | first %}
-  {% assign href = item.url %}
-  {% assign text = item.title %}
-{% endif %}
-
-{% if include.section %}
-  {% assign href = href | append: include.section %}
-{% endif %}
-
-{% if include.text %}
-  {% assign text = include.text %}
-{% endif %}
-
-{% assign level = "" %}
-{% if include.level %}
-  {% assign level = "level-" | append: include.level %}
-{% endif %}
-
-{% if include.button %}
-  <p class="wrapper {{ level }}"> <a href="{{ href }}" target="_blank" class="target-link"><input type="button" value={{ text }} class="target-link-btn" /></a></p>
-{% else %}
-  <p class="wrapper {{ level }}"> <a href="{{ href }}" target="_blank" class="target-link">{{ text }}</a></p>
-{% endif %}
+<script>
+  var urlDict = {
+    {% for item in site.collection-base %}
+      "{{ item.order }}": {"url": "{{ site.baseurl }}{{ item.url }}", "title": "{{ item.title }}"}{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  };
+</script>
