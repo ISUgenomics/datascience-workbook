@@ -35,6 +35,7 @@
 .c-alert {color: var(--c-alert) !important;}
 .c-required {color: var(--c-required) !important;}
 .c-exercise {color: var(--c-exercise) !important;}
+.c-example {color: var(--c-example) !important;}
 
 /* pre-defined bg colors, including custom <details> */
 .bc-warning {--bg-color: var(--bc-warning); background-color: var(--bc-warning) !important; color: var(--c-boxdark);}
@@ -80,9 +81,13 @@ h4 {font-size: 1em; font-weight: 500; letter-spacing: 0.1em;}
 .flex h3 {margin-block-start: 0.5em;}
 .row {display: flex;}
 .col-6 {width: 50%;}
+.w-1 {width: 100% !important;}
+
 .no-border {border: none;}
+.bl {border-left: 1px solid var(--c-gray);}
 
 .pa-s {padding: 0.1em 0.2em !important;}
+.pa-m {padding: 0.3em 0.6em !important;}
 .pl-0 {padding-left:0;}
 .pr-2 {padding-right: 2em;}
 .pl-2 {padding-left: 2em;}
@@ -133,7 +138,7 @@ p.pros, p.cons {margin-bottom: 0;}
 .protip {background-color: var(--bc-protip); --link-color: #35aeff;}
 .note {background-color: var(--bc-note); --link-color: var(--c-boxlink);}
 .example {background-color: var(--bc-example); --link-color: var(--c-boxlink);}
-.exercise {background-color: var(--bc-exercise); --link-color: var(--c-boxlink);}
+.exercise {background-color: var(--bc-exercise); --link-color: #35aeff;}
 .more {background-color: rgb(251, 250, 250); border: 1px solid var(--c-alert); --link-color: var(--c-alert);}
 .required {background-color: rgb(251, 250, 253); border: 1px solid var(--c-required); --link-color:  var(--c-required);}
 
@@ -211,7 +216,14 @@ div.highlighter-rouge {margin-bottom: 0.8em;}
   overflow-y: auto;
 }
 
-.toc .btn {font-size: 0.9em !important;}
+.toc .btn {font-size: 1em;}
+.toc .btn::before {font-size: 0.9em !important;}
+.toc .spc {
+    width: 100%;
+    text-align: left;
+    padding-left: 1.35em !important;
+    color: #898c8f;
+}
 
 
 /* Code settings */
