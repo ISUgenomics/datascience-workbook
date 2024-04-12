@@ -14,7 +14,6 @@ tags: []
 ---
 
 
-{% include toc %}
 {% include images_path %}
 
 With some knowledge of scripting and algorithm design, you can easily encapsulate a repetitive task in a loop that starts with a single command and runs in the background of your schedule. It makes a huge difference compared to manually renumbering 1000 files. The larger the data set, the greater the savings in researcher time, reduced human error and increased reproducibility and standardization. Here you'll learn Bash scripting basics and be introduced to two of the most widely used programming languages, R and Python.

@@ -20,41 +20,44 @@ tags: []
 
 # Introduction
 
+<div class="note" markdown="1">
 R is a programming language and software environment for statistical computing and graphics. It is widely used among statisticians and data scientists for developing statistical software, data analysis, and data visualization. Statisticians Ross Ihaka and Robert Gentleman created it in the early 1990s at the University of Auckland, New Zealand. It is an open-source language, meaning that anyone can contribute to its development and use it for free.
+</div>
 
 One of the strengths of R is its large and active community of users who have developed a vast collection of packages. These packages are pre-written R code that can be easily downloaded and extend the functionality of R and make it possible to perform a wide variety of statistical analyses and data visualization tasks.
 
 
-## R Development Environment
+# R Development Environment
+
 Several development environments are available for programming in R, each with its features and capabilities. The choice of environment depends on your needs and preferences, so it is worth exploring different options to see which works best for you. Some of the available options are listed below.
 
 
-# 1. Integrated Development Environment (IDE)
+## 1. Integrated Development Environment (IDE)
 An Integrated Development Environment (IDE) is software designed to make coding easier and more efficient. It usually comes with an integrated version control system. An IDE could be specifically designed for one programming language or have multi-language support. Using multiple languages usually needs additional installations of packages/extensions on top of the IDE. In addition to the software running locally on your computer, there are web-based options.
 
 
-## A. Universal IDEs
+## <b class="level-1">A.</b> *Universal IDEs*
 Universal or multi-language IDEs are highly customizable, multi-platform text editors that can be used for coding in multiple programming languages. A universal IDE can be a good choice if you work with multiple programming languages and prefer a single development environment for your projects. Some popular universal IDEs are:
 
 * **Visual Studio Code (VSCode)**: VSCode is an open-source code editor that can be used for R programming by installing the R extension. It provides features such as code highlighting, code completion, and debugging. <br><button class="btn more"></button> ...from the tutorial <a class="t-links" href="411" title="true"></a>
 * **Microsoft R Open**: This is a distribution of R that includes a development environment from Microsoft. <a href="https://learn.microsoft.com/en-us/answers/questions/1335739/link-to-download-r-open-4-0-2" target="_blank">Microsoft R Open ⤴</a> is now retired.
 * **Atom**: Now archived, <a href="https://github.blog/2022-06-08-sunsetting-atom/" target="_blank">Atom ⤴</a> is one of the most liked IDEs out there. Plenty of packages are available to extend the functionality, including support of programming languages such as R.
-* **Eclipse**: Eclipse is a popular open-source Java-based IDE that can be used for R programming through the StatET plugin. It provides features such as code highlighting, debugging, and visualization tools. Check out the <a href="https://www.eclipse.org/ide/" target="_blank">Eclipse website ⤴</a> for information about Eclipse and related IDEs.
+* **Eclipse**: Eclipse is a popular open-source Java-based IDE that can be used for R programming through the StatET plugin. It provides features such as code highlighting, debugging, and visualization tools. Check out the <a href="https://www.eclipse.org/ide/" target="_blank">Eclipse website ⤴</a> for information about related IDEs.
 * **Architect**: is an IDE designed for data scientists. It has an R console integrated within it and supports multiple languages as it is based on Eclipse. Get Architect from the <a href="https://www.getarchitect.io/" target="_blank">website ⤴</a>.
 
 
-## B. R-Dedicated IDEs
+## <b class="level-1">B.</b> *R-Dedicated IDEs*
 
 * **RStudio**: is a popular open-source IDE specifically designed for R programming. It has a user-friendly interface with features such as code highlighting, code completion, debugging, and visualization tools. Both new and experienced R users widely use RStudio. <br><button class="btn more"></button> ...about <a class="t-links" href="431">RStudio: integrated environment for R</a> and <a class="t-links" href="432" title="true"></a>.
 * **Tinn-R**: is an open-source IDE with GUI for R programming and environment that provides a customizable interface for editing, running, and debugging R code. Check the <a href="https://tinn-r.org/en/" target="_blank">Tinn-R website ⤴</a> to download and for more information.
 
 
-## C. Web-based IDEs
+## <b class="level-1">C.</b> *Web-based IDEs*
 * **Jupyter Notebook**: is a web-based IDE that allows users to create and share documents that contain live code, equations, visualizations, and narrative text. Learn more about the **Jupyter Lab** from the tutorial <a class="t-links" href="412" title="true"></a> in this workbook.
 * **RStudio Cloud**: RStudio Cloud is a free, web-based version of the RStudio IDE that provides a complete environment for coding in R. You can write, run, and share your R code from anywhere with an internet connection. RStudio Cloud is now known as <a href="https://posit.cloud/" target="_blank">Posit Cloud ⤴</a>.
 
 
-# 2. Online Coding Platforms
+## 2. Online Coding Platforms
 
 Several online platforms provide an easy way to start coding in R without having to install anything on your local computer. They are especially useful for collaborating with others and as an alternative to installing software on your machine. However, they may have processing power, storage, and memory limitations. Some online platforms for R are:
 
@@ -62,16 +65,22 @@ Several online platforms provide an easy way to start coding in R without having
 * <a href="https://www.kaggle.com/code" target="_blank"><b>Kaggle Kernels</b> ⤴</a>: Formally Scripts, Kaggle Kernels is a free, web-based multi-language platform. It provides a Jupyter Notebook-style environment and is well-suited for data science and machine learning projects.
 
 
-# 3. Text Editors
+## 3. Text Editors
 
 Text editors are limited in terms of functionality and user-friendliness compared to IDEs. You can use text editors to write your code and then use a console/R environment to run the code.
 Text editors that can be used for R programming:
-* Nano
-* Vim
-* Notepad++
-* Gedit
-* Kate
-* Sublime Text
+
+<table class="center-h font-1">
+  <tr>
+    <td width="16.6%" class="no-border">Nano</td>
+    <td width="16.6%" class="no-border bl">Vim</td>
+    <td width="16.6%" class="no-border bl">Notepad++</td>
+    <td width="16.6%" class="no-border bl">Gedit</td>
+    <td width="16.6%" class="no-border bl">Kate</td>
+    <td width="16.6%" class="no-border bl">Sublime Text</td>
+  </tr>
+</table>
+
 
 Nano and Vim are Unix text editors and are good options if you are working on an HPC cluster. Learn more about `nano` and `vim` from the tutorial <a class="t-links" href="322" title="true"></a> in this workbook.
 
@@ -81,7 +90,7 @@ Some basic development environments for programming in R along with the text edi
 * **R Commander**: R Commander is a graphical user interface (GUI) for R. It is especially useful for novice R users and also comes with the standard R installation.
 
 
-# 4. Getting started with using R
+# Getting started with R
 
 You will need to install the R software on your computer to use R. This can be done easily by downloading it from the Comprehensive R Archive Network (CRAN), the official repository for R packages and software. You will also need a text editor or an IDE of your choice to write and edit code. I recommend using RStudio or RStudio Cloud. Check out <a class="t-links" href="432" title="true"></a> for more details about getting started in R and installing R libraries. Also, check the <a class="t-links" href="431" title="true"></a> tutorial if you are not familiar with RStudio interface.
 <br>

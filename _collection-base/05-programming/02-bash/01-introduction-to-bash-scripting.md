@@ -17,7 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
 
 <div class="required" markdown="1">
 If you are a beginner at Linux, it may be beneficial for you to start with the tutorials provided in section <a class="t-links" href="300"></a>.
@@ -28,33 +27,26 @@ If you are a beginner at Linux, it may be beneficial for you to start with the t
 
 The complete Bash Reference Manual is available at official documentation provided by [www.gnu.org/](https://www.gnu.org/software/bash/manual/bash.html).
 
-## 1.1 Bash shortcuts
+## **1.1 Bash shortcuts**
 
-**~ EXPANSION**
+| symbol | description                                            | usage example    | reference                 |
+|--------|--------------------------------------------------------|------------------|---------------------------|
+| `~`    | a shortcut for the `$HOME` location in the file system | `cd ~`           | *tilda expansion*         |
+| `*`    | denotes **multiple** unknown characters in a string    | `ls *.txt`       | *wild card expansion*     |
+| `?`    | denotes **single** unknown character in a string       | `for i in ???`   | *question mark expansion* |
+| `$`    | to use/substitute the variable's value                 | `echo $variable` | *dollar expansion*        |
 
-`~` is a shortcut for the $HOME location in the file system
-
-**\* and ? EXPANSION**
-
-`*` - denotes multiple unknown characters in a string
-
-`?` - denotes single unknown character in a string
-
-USAGE in regular expressions:
-
+COMMON USAGE of `*` and `?` in regular expressions:
 * in searching, e.g., with `grep` or `find`
 * in listing file system, i.e., `ls`
-* in filtering files processed in the **for** loop
+* in filtering files processed in the `for` loop
 
-**$ for VARIABLES**
 
-`$variable` - to use/substitute the variable's value
-
-## 1.2 Logical operators
+## **1.2 Logical operators**
 
 The full list of Bash conditional expressions is provided in [section 6.4 of bash manual](https://www.gnu.org/software/bash/manual/bash.html#Bash-Conditional-Expressions) available at [www.gnu.org/](www.gnu.org/).
 
-### - FILE OPERATORS
+## <b class="prefix-2"></b>FILE OPERATORS
 
 Below you have a quick overview for the most commonly used variants of file conditionals.
 
@@ -69,7 +61,7 @@ Below you have a quick overview for the most commonly used variants of file cond
 | [ -s file ]           | true if the file has a size greater than zero |
 | [ file_1 -ot file_2 ] | true if file_1 is older then file_2 or if only file_2 exists |
 
-### - STRING OPERATORS
+## <b class="prefix-2"></b>STRING OPERATORS
 
 Below you have a quick overview for the most commonly used variants of string conditionals.
 
@@ -84,7 +76,7 @@ Below you have a quick overview for the most commonly used variants of string co
 | [ string1 > string2 ]  | true if string1 sorts after string2      |
 
 
-### - NUMERICAL OPERATORS
+## <b class="prefix-2"></b>NUMERICAL OPERATORS
 
 Below you have a quick overview for the most commonly used variants of numerical conditionals.
 
@@ -97,39 +89,39 @@ Below you have a quick overview for the most commonly used variants of numerical
 | [ arg1 -gt arg2 ]  | true if arg1 is greater than arg2             |
 | [ arg1 -ge arg2 ]  | true if arg1 is greater than or equal to arg2 |
 
-*^ **arg1** and **arg2** may be positive or negative integers*
+<p class="footnote mt-" markdown="1">^ The **arg1** and **arg2** may be positive or negative integers.</p>
 
-## 1.3 In-shell arithmetic
+## **1.3 In-shell arithmetic**
 
 The full list of Bash shell arithmetic is provided in [section 6.5 of bash manual](https://www.gnu.org/software/bash/manual/bash.html#Shell-Arithmetic) available at [www.gnu.org/](www.gnu.org/).
 
-### - OPERATORS
+## <b class="prefix-2"></b>OPERATORS
 
 Below you have a quick overview for the most commonly used variants of arithmetic operators.
 
-| OPERATORS  |definition               | OPERATORS  |definition               |
-|------------|-------------------------|------------|-------------------------|
-| iter++     | variable post-increment | iter--     | variable post-decrement |
-| ++iter     | variable pre-increment  | --iter     | variable pre-decrement  |
-| !          | logical negation        | ~          | bitwise negation        |
-| **         | exponentiation          | %          | remainder               |
-| *          | multiplication          | /          | division                |
-| id++       | variable post-increment | id--       | variable post-decrement |
-| id++       | variable post-increment | id--       | variable post-decrement |
-| id++       | variable post-increment | id--       | variable post-decrement |
-| -          | substraction            | +          | addition                |
-| `<=` `>=` `<` `>`  | comparison              |            |                         |
-| &&         | logical AND             | \|\|       | logical OR              |
+| OPERATORS    | definition              | OPERATORS    | definition              |
+|--------------|-------------------------|--------------|-------------------------|
+| `iter++`     | variable post-increment | `iter--`     | variable post-decrement |
+| `++iter`     | variable pre-increment  | `--iter`     | variable pre-decrement  |
+| `!`          | logical negation        | `~`          | bitwise negation        |
+| `**`         | exponentiation          | `%`          | remainder               |
+| `*`          | multiplication          | `/`          | division                |
+| `id++`       | variable post-increment | `id--`       | variable post-decrement |
+| `id++`       | variable post-increment | `id--`       | variable post-decrement |
+| `id++`       | variable post-increment | `id--`       | variable post-decrement |
+| `-`          | substraction            | `+`          | addition                |
+| `<=` `>=` `<` `>`  | comparison        |              |                         |
+| `&&`         | logical AND             | `||`       | logical OR              |
 
-*^ the operators are listed in order of decreasing precedence*
+<p class="footnote mt-" markdown="1">^ The operators are listed in order of decreasing precedence.</p>
 
 
-### - LIMITATIONS (integers)
+## <b class="prefix-2"></b>INTEGER LIMITATIONS
 
 * division by 0 is prohibited
 * floating-point arithmetic is not directly supported
 
-### - ARITHMETIC EXPANSION
+## <b class="prefix-2"></b>ARITHMETIC EXPANSION
 
 The arithmetic expansion `$(( expression ))` substitutes the results of an evaluated expression into a variable. [[source: gnu.org](https://www.gnu.org/software/bash/manual/bash.html#Arithmetic-Expansion)]
 
@@ -146,14 +138,14 @@ n=1;
 echo $((++n))
 ```
 
-### - let command
+## <b class="pl-2"></b>`let` command
 
 ```bash
 k=1;
 let k=$k + 2
 ```
 
-### - bc command
+## <b class="pl-2"></b>`bc` command
 
 *(supports floating-point up to 20 decimal places)*
 
@@ -161,7 +153,7 @@ let k=$k + 2
 echo "1.5 + 2.0" | bc -l
 ```
 
-### - awk command
+## <b class="pl-2"></b>`awk` command
 
 *(supports floating-point up to 6 decimal places)*
 
@@ -169,7 +161,7 @@ echo "1.5 + 2.0" | bc -l
 awk 'BEGIN { x = 1.5; y = 1.5; print "x + y = "(x+y) }'
 ```
 
-### - perl command
+## <b class="pl-2"></b>`perl` command
 
 *(supports floating-point up to 20 decimal places)*
 
@@ -177,11 +169,11 @@ awk 'BEGIN { x = 1.5; y = 1.5; print "x + y = "(x+y) }'
 perl -e 'print 1.5+2.0'
 ```
 
-## 1.4 In-line substitution
+## **1.4 In-line substitution**
 
 * useful as in-line generators of arguments for **for** loop
 
-### - BRACE AUTOCOMPLETION
+## *BRACE AUTOCOMPLETION*
 
 A. Use the array of strings<br>
 *(note that there are no spaces)*
@@ -200,7 +192,7 @@ C. Use combinations of many arrays
 echo {a,b}_{0..5}
 ```
 
-### - COMMAND SUBSTITUTION
+## *COMMAND SUBSTITUTION*
 
 Use ``` `command` ``` or an equivalent `$(command)` syntax to create the array of items on-the-fly.
 
@@ -217,7 +209,6 @@ for i in `cat one-column-file`; do echo $i; done
 for i in $(cat one-column-file); do echo $i; done
 ```
 
----
 
 # 2. Bash statements
 
@@ -227,31 +218,31 @@ You can view the available Bash statements on the command line using the `compge
 ```bash
 compgen -k
 ```
-![terminal colors]({{ images_path }}/02_bash_keywords.png)<br>
+![terminal colors]({{ images_path }}/02_bash_keywords.png)
 
 There are about twenty-some Bash statements, which can be further divided into several groups, including **loops**, **conditionals**, the **action operators**, and others. The table below contains the syntax, type, and definitions of the most common Bash statements. Explore additional column with notes to gain an idea of when to use different syntaxes. In the following subsections, we will discuss the usage of Bash statements following real-life examples.
 
-|statement      | type               | definition | notes |
-|---------------|--------------------|------------|-------|
-| for           | loop               | iterating over **each item** in the list            | use if you want to execute commands in order for all items in the list<br> YES, nested loops are allowed |
-| while         | loop               | iterating as long as the condition is **true**      | use if you want to perform a certain number of iterations, such as reading a file line by line<br>YES, infinite loop is possible, try `while :` |
-| until         | loop               | iterating as long as the condition is **false**     | use if you want to perform an infinite number of iterations terminated by meeting a condition<br> the frequency of execution of the condition is usually adjusted with the `sleep` command |
-| select        | loop               | selective iterating over options in the menu    | use to give the user the interactive option to select items from a menu (predefined list) |
-| if ... fi     | conditional        | considering the first condition                 | use `if` for the first condition and `fi` after the last condition |
-| elif          | conditional        | considering the next condition                  | use for the second and following conditions |
-| else          | conditional        | operation for all other scenarios               | if no condition was met then follow these commands |
-| case ... esac | conditional        | matching condition for query variable           | use when all of the conditions depend <br>on the value of the same variable<br> |
-| in            | iteration operator | iterating in the `for` and `select` loops       |for loop syntax:<br> `for item in {1..5}; do commands; done`<br> select loop syntax:<br> `select item in {1..5}; do commands; done`|
-| do ... done   | action operator    | encapsulating the contents of the loop          | use the syntax: `do commands; done` in a loop syntax|
-| then          | action operator    | executing commands if condition is true         | use the syntax: `if condition; then commands; fi` |
-| break         | action operator    | terminating the current loop                    | use to terminate a loop at this point<br> and go straight to the commands that follows |
-| continue      | action operator    | moving to the next iteration in the loop        | use to skip the commands in the current iteration<br> and go straight to the next |
-| function      | function construct | keyword that precede the creation of a function | to define a new function available in the bash shell,<br> use syntax: `function custom_name {commands}`|
-| time          | shell command      | keyword that estimates the execution time       | use the time keyword before executing the command<br> e.g., `time ls \| grep "PNG"` |
-| test          | shell command      | keyword that checks the logic of the condition  | e.g., `if test $x -gt $y`<br> returns true when x is greater than y |
-| [ ... ]       | logic construct    | syntax that checks the logic of the condition   | the equivalent to the *test* command<br> e.g., `if [ $x -gt $y ]` |
-| [[ ... ]]     | logic construct    | syntax that checks the logic of the condition   | helps to avoid logic errors in Bash;<br> `&&`, ```\|\|```, `<` and `>` operators work |
-| { ... }       | array builder      | syntax that allows to build an array of items   | it can be a predefined list of strings or numbers<br> e.g., `{one,two,three,four,five}`<br> it can be an automatically generated list of integers<br> e.g., `{1..5}` , *use two dots between the numbers* |
+|statement        | type               | definition                                      | notes |
+|-----------------|--------------------|-------------------------------------------------|-------|
+| `for`           | loop               | iterating over **each item** in the list        | use if you want to execute commands in order for all items in the list<br> YES, nested loops are allowed |
+| `while`         | loop               | iterating as long as the condition is **true**  | use if you want to perform a certain number of iterations, such as reading a file line by line<br>YES, infinite loop is possible, try `while :` |
+| `until`         | loop               | iterating as long as the condition is **false** | use if you want to perform an infinite number of iterations terminated by meeting a condition<br> the frequency of execution of the condition is usually adjusted with the `sleep` command |
+| `select`        | loop               | selective iterating over options in the menu    | use to give the user the interactive option to select items from a menu (predefined list) |
+| `if ... fi`     | conditional        | considering the first condition                 | use `if` for the first condition and `fi` after the last condition |
+| `elif`          | conditional        | considering the next condition                  | use for the second and following conditions |
+| `else`          | conditional        | operation for all other scenarios               | if no condition was met then follow these commands |
+| `case...esac` | conditional        | matching condition for query variable           | use when all of the conditions depend <br>on the value of the same variable<br> |
+| `in`            | iteration operator | iterating in the `for` and `select` loops       |for loop syntax:<br> `for item in {1..5}; do commands; done`<br> select loop syntax:<br> `select item in {1..5}; do commands; done`|
+| `do ... done`   | action operator    | encapsulating the contents of the loop          | use the syntax: `do commands; done` in a loop syntax|
+| `then`          | action operator    | executing commands if condition is true         | use the syntax: `if condition; then commands; fi` |
+| `break`         | action operator    | terminating the current loop                    | use to terminate a loop at this point<br> and go straight to the commands that follows |
+| `continue`      | action operator    | moving to the next iteration in the loop        | use to skip the commands in the current iteration<br> and go straight to the next |
+| `function`      | function construct | keyword that precede the creation of a function | to define a new function available in the bash shell,<br> use syntax: `function custom_name {commands}`|
+| `time`          | shell command      | keyword that estimates the execution time       | use the time keyword before executing the command<br> e.g., `time ls \| grep "PNG"` |
+| `test`          | shell command      | keyword that checks the logic of the condition  | e.g., `if test $x -gt $y`<br> returns true when x is greater than y |
+| `[ ... ]`       | logic construct    | syntax that checks the logic of the condition   | the equivalent to the *test* command<br> e.g., `if [ $x -gt $y ]` |
+| `[[ ... ]]`     | logic construct    | syntax that checks the logic of the condition   | helps to avoid logic errors in Bash;<br> `&&`, ```\|\|```, `<` and `>` operators work |
+| `{ ... }`       | array builder      | syntax that allows to build an array of items   | it can be a predefined list of strings or numbers<br> e.g., `{one,two,three,four,five}`<br> it can be an automatically generated list of integers<br> e.g., `{1..5}` , *use two dots between the numbers* |
 
 
 ## **FOR** each item loop
@@ -267,7 +258,7 @@ do
 done
 ```
 
-![terminal colors]({{ images_path }}/02_bash_for_loop_script.png)<br>
+![terminal colors]({{ images_path }}/02_bash_for_loop_script.png)
 
 <div class="protip" markdown="1">
 In some intra-terminal text editors such as `mcedit` (part of the `midnight commander` package), individual components of **bash syntax** are highlighted in different colors, making it easier to follow the correctness of the code.
@@ -286,15 +277,14 @@ You can also use **FOR** loop syntax directly in the command line as a one-liner
 for item in {first,second,third,fourth,fifth}; do echo $item; done
 ```
 
-![terminal colors]({{ images_path }}/02_bash_for_loop_inline.png)<br>
+![terminal colors]({{ images_path }}/02_bash_for_loop_inline.png)
 
 <div class="warning" markdown="1">
 Remember to always separate consecutive statement elements with a semicolon `;` <u>in single-line syntax</u>.
 </div>
 
-
-
-**VARIANTS OF A FOR-LOOP SYNTAX**
+### <b class="pl-2"></b>*ITERATION VARIANTS*
+<p class="footnote mt-0 pl-2">&emsp; (VARIANTS OF A FOR-LOOP SYNTAX)</p>
 
 *A. Iterate over strings given directly (separated by spaces):*
 ```bash
@@ -372,7 +362,7 @@ That the **custom command** syntax, such as `ls | grep "txt"`, is useful when it
 </div>
 
 
-### - NESTED LOOPS
+### <b class="pl-2"></b>*NESTED LOOPS*
 
 When you want to **iterate on an each-to-any** basis over two or more sets of features, such as creating a set of files with specific names in 3 different formats, use **nested FOR loops**.
 
@@ -385,7 +375,7 @@ for name in {dog,cat,fish,snake,bird}; do
 done
 ```
 
-![terminal colors]({{ images_path }}/02_bash_for_loop_nested.png)<br>
+![terminal colors]({{ images_path }}/02_bash_for_loop_nested.png)
 
 The same algorithm can be executed as a one-liner directly in the command line.
 ```bash
@@ -393,7 +383,7 @@ The same algorithm can be executed as a one-liner directly in the command line.
 for name in {dog,cat,fish,snake,bird}; do for format in txt dat png; do echo $name.$format; done; done
 ```
 
-![terminal colors]({{ images_path }}/02_bash_for_loop_nested_inline.png)<br>
+![terminal colors]({{ images_path }}/02_bash_for_loop_nested_inline.png)
 
 
 **Use a template for 2 nested FOR loops**
@@ -411,7 +401,7 @@ As long as you are diligent in properly nesting consecutive `for-do-done` statem
 **Note:** Remember that the inner loop must always be closed with the `done` keyword before the more outer loop.
 </div>
 
-See the previous subsection in the tutorial to learn what **other iteration options** are available than using arrays.
+<button class="btn more"></button> ...from the [previous subsection](#iteration-variants) in this tutorial about **other iteration options** available besides using arrays.
 
 
 ## **WHILE** true loop
@@ -444,7 +434,7 @@ Commands are executed as long as the user-provided **condition evaluates to true
 The three most common usages of `while` loop are iterating for **as long as the specific iterator value is not reached**, **reading the file line-by-line to the end** of the file, and for creating an **infinite loop** that runs in the background and monitors any process.<br>
 
 
-### - ITERATE WHILE THE VALUE
+### <b class="pl-2"></b>*ITERATE WHILE VALUE*
 
 Let's assume that you know the upper threshold of a certain parameter and you know that once this value is exceeded, the analysis makes no further sense, e.g., you know that the percentage of component X in the mixture cannot be higher than 50%. You can use a `while` loop to test the properties of your mixture, increasing the content of component X every 1% until you reach the limit value.
 
@@ -460,7 +450,7 @@ do
 done
 ```
 
-### - READ FILE LINE-BY-LINE
+### <b class="pl-2"></b>*READ FILE LINE-BY-LINE*
 
 Let's first create the simple file with several lines of content:
 
@@ -480,7 +470,7 @@ for i in {Ana,Eric,Bob}; do for j in welcome; do for k in {London,NYC,Paris}; do
 
 You can preview the results saved into a file using `less file` command:
 
-![terminal colors]({{ images_path }}/02_bash_for_create_file_content.png)<br>
+![terminal colors]({{ images_path }}/02_bash_for_create_file_content.png)
 
 Once we have a file with some content, we can read it line-by-line with a `while` loop and derive from each line the name and the city.
 
@@ -491,7 +481,7 @@ while read -r line; do
   echo $line | tr ',' ' ' | tr '.' ' ' | awk '{print $1,$4}'
 done < "$filename"
 ```
-![terminal colors]({{ images_path }}/02_bash_for_create_file_content_inline.png)<br>
+![terminal colors]({{ images_path }}/02_bash_for_create_file_content_inline.png)
 
 The `filename` variable stores the name of recently created file.
 
@@ -501,7 +491,7 @@ If you work by executing scripts rather than typing directly on the command line
 
 In this case, the condition for the `while` loop is replaced by the `read` command followed by the name of the variable in which the loaded content is stored. By default, the `read` command reads a single line from a bash shell or, as in this example, a single line from a text file. The text file is inserted into the loop using `<` stream redirection. Inside the `do ... done` syntax it is possible to parse a single line from a file.
 
-### - INFINITE LOOP
+### <b class="pl-2"></b>*INFINITE LOOP*
 
 Imagine that you never turn off your computer, and every day at the same time, you want to perform a certain process, such as checking the date. You can easily do this with a while loop and an infinity condition `while :` or `while true`. After executing the process once, you can manage to silence the loop activity for the next 24 hours with `sleep` command. Then the commands in the loop will be executed again.
 
@@ -521,7 +511,7 @@ while true; do echo "Today is: "$(date); sleep 24h; done&
 
 To restore this process to foreground, use the `fg` command. Then you can end the loop definitively using `CTRL+C` if it is no longer needed.
 
-![terminal colors]({{ images_path }}/02_bash_while_infinite.png)<br>
+![terminal colors]({{ images_path }}/02_bash_while_infinite.png)
 
 ## **UNTIL** false loop
 
@@ -539,7 +529,7 @@ Commands are executed as long as the user-provided **condition evaluates to fals
 
 The most common uses of the until loop include **iterating until the iterator reaches a given value**, or **checking the status of a specific process**.
 
-### - ITERATE UNTIL THE VALUE
+### <b class="pl-2"></b>*ITERATE UNTIL VALUE*
 
 Suppose you want to perform an optimization using program X, which will use the results from the previous cycle for each subsequent iteration. You know that this program converges to the best results in 10 iterations and further calculations make no improvement. An effective solution, is to enclose this procedure in a loop `until`, where the loop will terminate when the iterator value reaches a predefined maximum value, `max_iter`.<br>
 If you do not know after how many cycles the optimization will be achieved, you can set to replace the *iter* variable with *score* and terminate when the expected threshold of improvement between iterations is reached.  
@@ -556,7 +546,7 @@ do
 done
 ```
 
-### - STOP ONCE SUCCESS
+### <b class="pl-2"></b>*STOP ONCE SUCCESS*
 
 Let's create a script that  checks the status of running processes with the `squeue` command and will notify you when your queued task is finished. The `until` loop will be terminated when the JOBID of your task is no longer visible in the queue on the computing cluster. However, as long as the task is running, comparing the number of matching JOBID to zero will return false in the conditional and the loop will still be active.
 
@@ -571,7 +561,8 @@ done
 echo "Job $JOBID is completed."
 ```
 
-![terminal colors]({{ images_path }}/02_bash_until_loop.png)<br>
+![terminal colors]({{ images_path }}/02_bash_until_loop.png)
+
 
 ## **if-elif-else-fi** conditional
 
@@ -585,15 +576,15 @@ The `if` takes as an argument a condition defined in square brackets (single or 
 if [ <condition> ]; then
     <COMMANDS>
 fi
+```
 
-#-------------------
-
+```bash
 if [[ <condition_1 && condition_2 > ]]; then
     <COMMANDS>
 fi
 ```
 
-The following can be used as conditions: operators on files, strings comparison, the numerical comparison of iterator to integer value. For more on the comparing conditions and available operators, see section 1.2 of this tutorial.
+The following can be used as conditions: operators on files, strings comparison, the numerical comparison of iterator to integer value. For more on the comparing conditions and available operators, see [section 1.2](#12-logical-operators) of this tutorial.
 
 ```bash
 touch file; file=file
@@ -644,14 +635,14 @@ The `continue` statement **terminates the current iteration**, skipping the rema
 ```bash
 for i in 1 2 3 4 5; do
   if [ $i -eq 2 ]; then
-    continue            #--------------- remaining code in this iteration (i=2) will NOT be executed
+    continue           #-------- remaining code in this iteration (i=2) will NOT be executed
   else
     echo $i
   fi
 done
 ```
 
-![terminal colors]({{ images_path }}/02_bash_continue.png)<br>
+![terminal colors]({{ images_path }}/02_bash_continue.png)
 
 ## **break** the loop
 
@@ -660,16 +651,16 @@ The `break` statement **terminates the loop** at the current iteration, exactly 
 ```bash
 for i in 1 2 3 4 5; do
   if [ $i -gt 2 ]; then
-    break               #--------------- remaining code in the FOR loop and IF-ELSE-FI conditional will NOT be executed
+    break              #-------- remaining code in the FOR loop and IF-ELSE-FI conditional will NOT be executed
   else
     echo $i
   fi
-done                    #--------------- commands below the line will be executed after break statement
+done                   #-------- commands below the line will be executed after break statement
 
 echo "The last iterated value is $i"
 ```
 
-![terminal colors]({{ images_path }}/02_bash_break.png)<br>
+![terminal colors]({{ images_path }}/02_bash_break.png)
 
 <div class="protip" markdown="1">
 Usually `break` is placed in the conditional `if ... fi`, <br> but this statement is a **universal terminator for all bash loops**, including `for`, `while`, `until` and `select`. <base class="mb">
@@ -682,24 +673,22 @@ Let's terminate the outer loop from the inner loop level:
 for i in {1..3}; do
   for j in a b c; do
     if [ $j = "c" ]; then
-      break 2             #--------------- remaining code in both loops will NOT be executed
+      break 2            #-------- remaining code in both loops will NOT be executed
     else
       echo $i-$j
     fi
   done
-done                      #--------------- commands below the line will be executed after break statement
+done                     #-------- commands below the line will be executed after break statement
 
 echo "The last iterated values are $i-$j"
 ```
 
-![terminal colors]({{ images_path }}/02_bash_break_nested.png)<br>
+![terminal colors]({{ images_path }}/02_bash_break_nested.png)
 
-
----
 
 # 3. Bash scripting
 
-## 3.1 In-line scripting
+## **3.1 In-line scripting**
 
 It is good to know that almost any bash script saved in a file can be copy-pasted into the command line and executed at the press of `enter`. The only limitation is the size of this script. The invaluable advantage of storing the script in a file is also the knowledge retention from the project and reusability. Nevertheless, even multi-nested loops can be effectively written and executed directly on the command line. This approach is useful in daily workflows and helps prevent easily reproducible code from cluttering up storage space. Note also that usually the last 500 commands are kept in the shell history, so it is easy to retrieve longer one-liners used a few days earlier.
 
@@ -707,7 +696,7 @@ It is good to know that almost any bash script saved in a file can be copy-paste
 Remember to separate the elements of bash statements with a semicolon `;` when creating one-liners on the command line.
 </div>
 
-## 3.2 Setting up the script
+## **3.2 Setting up the script**
 
 <div class="required" markdown="1">
 If you don't know **how to create a file from the command line** or redirect a command stream to a file, I recommend that you start with the <a class="t-links" href="320"></a> and <a class="t-links" href="321"></a>.
@@ -716,13 +705,15 @@ If you are not familiar with any of the **basic text file editors** in the termi
 </div>
 
 
-### - HEADER
+## <b class="prefix-2"></b>HEADER
 
 Use `#!/bin/env bash` syntax at the top of your script file instead of `#!/bin/bash` as a more robust solution to keep a stable Bash environment. Applying the first statement will provide you with the default version of the program (e.g., bash or python) for your current environment.
 
+<div class="more" markdown="1">
 Follow the user's discussion at [unix.stackexchange.com](https://unix.stackexchange.com/questions/29608/why-is-it-better-to-use-usr-bin-env-name-instead-of-path-to-name-as-my/29620#29620) and [stackoverflow.com](https://stackoverflow.com/questions/16365130/what-is-the-difference-between-usr-bin-env-bash-and-usr-bin-bash) to learn more.
+</div>
 
-### - VARIABLES
+## <b class="prefix-2"></b>VARIABLES
 
 A. FROM ARGUMENT: Use `$1` variable to pass the value of the first argument provided after script name when executing.
 
@@ -733,7 +724,7 @@ C. ITERATIVE: The iterative variables are those that store the current value of 
 D. LOCAL: The local variables are temporary by design and they usually exist/are accessible only in the loop or conditional where they were created.
 
 
-### - ALGORITHM
+## <b class="prefix-2"></b>ALGORITHM
 
 A. PIPE-linked stream of commands
 

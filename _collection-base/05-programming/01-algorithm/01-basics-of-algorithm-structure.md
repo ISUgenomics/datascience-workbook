@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -44,11 +42,11 @@ Algorithms are important because they allow us to automate tasks, perform calcul
 
 Before we dive into the structure of an algorithm, let's define some key terms that we'll be using throughout this tutorial:
 
-| term    | description | notes |
-|---------|-------------|---------|
-| inputs  | These are the values or data that are provided to an algorithm when it's executed. | For example, if we're writing an algorithm to calculate the area of a rectangle, the length and width of the rectangle would be the inputs. |
-| processing steps | These are the individual actions or instructions that make up an algorithm. | Each step should be clear and unambiguous, and they should be executed in a specific order. |
-| outputs | These are the results produced by an algorithm when it's executed. | In the case of our rectangle example, the output would be the area of the rectangle. |
+| term             | description             | notes                           |
+|------------------|-------------------------|---------------------------------|
+| inputs           | These are the values or data that are provided to an algorithm when it's executed. | For example, if we're writing an algorithm to calculate the area of a rectangle, the length and width of the rectangle would be the inputs. |
+| processing steps | These are the individual actions or instructions that make up an algorithm.        | Each step should be clear and unambiguous, and they should be executed in a specific order. |
+| outputs          | These are the results produced by an algorithm when it's executed.                 | In the case of our rectangle example, the output would be the area of the rectangle.        |
 
 
 # Algorithm structure
@@ -58,32 +56,34 @@ Regardless of the programming language being used, **understanding the basics of
 At its core, an algorithm is made up of three basic parts: `input`, *processing steps*, and `output`. <br>
 Let's take a look at how these three parts fit together in a simple algorithm.
 
-<table>
+<table class="font-1 c-header">
   <tr>
-    <td>
-      Here's an example algorithm that calculates the area of a rectangle: <br><br>
-      <b>Input:</b> The length and width of the rectangle <br><br>
-      <b>Processing steps:</b> Multiply the length by the width to get the area <br><br>
-      <b>Output:</b> The area of the rectangle <br><br><br>
+    <td class="no-border">
+      Here's an example algorithm that calculates the area of a rectangle: <base class="mt">
+      <b>Input:</b> The length and width of the rectangle <base class="mb">
+      <b>Processing steps:</b> Multiply the length by the width to get the area <base class="mb">
+      <b>Output:</b> The area of the rectangle <base class="mt">
       <i>In this example, the input is the length and width of the rectangle, the processing involves multiplying the length by the width, and the output is the area of the rectangle.</i>
     </td>
-    <td><p align="center"><img width="400" src="{{ images_path }}/01_algorithm_flowchart_example.png"></p></td>
+    <td class="no-border"><img width="420" src="{{ images_path }}/01_algorithm_flowchart_example.png"></td>
   </tr>
 </table>
 
 
 ## Algorithm's flowchart
 
-*Now that we've defined basic terms, let's talk about how we can represent an algorithm in a visual way.*
+*We've defined basic terms, now let's talk about how we can represent an algorithm in a visual way.*
 
-One common tool used to represent algorithms is a flowchart. **A flowchart is a diagram that shows the flow of an algorithm**, including its inputs, outputs, and steps.
-
-<p align="center"><img width="600" src="{{ images_path }}/01_algorithm_flowchart.png"></p>
+One common tool used to represent algorithms is a **flowchart**.
+<div class="note" markdown="1">
+**A flowchart is a diagram that shows the flow of an algorithm**, including its inputs, outputs, and steps.
+</div>
+<img width="600" src="{{ images_path }}/01_algorithm_flowchart.png">
 
 Flowcharts use specific symbols to represent different elements of the algorithm:
-* a rectangle is used to represent a process or step,
-* a diamond is used to represent a decision point, and
-* an oval is used to represent the start or end of the algorithm.
+* a `rectangle` is used to represent a process or step,
+* a `diamond` is used to represent a decision point, and
+* an `oval` is used to represent the start or end of the algorithm.
 
 <div class="protip" markdown="1">
 **Flowcharts can be a useful tool for visualizing and communicating the structure of an algorithm**, especially for more complex algorithms. By using a flowchart, we can easily see the order in which steps are executed, where decisions are made, and what the inputs and outputs are.
@@ -94,9 +94,9 @@ Flowcharts use specific symbols to represent different elements of the algorithm
 
 *Now, let's talk about how we can represent an algorithm in a more structured way.*
 
-One common way to represent algorithm's structure is by using pseudocode. **Pseudocode is a way of writing out an algorithm in plain language**, using specific keywords and syntax to indicate different parts of the algorithm.
-
+One common way to represent algorithm's structure is by using **pseudocode**.
 <div class="note" markdown="1">
+**Pseudocode is a way of writing out an algorithm in plain language**, using specific keywords and syntax to indicate different parts of the algorithm.
 The syntax of the pseudocode is designed to be easy to read and understand, without being tied to any specific programming language.
 </div>
 
@@ -126,10 +126,10 @@ Note that the specific <u>syntax of pseudocode can vary</u> depending on the con
 In addition to the basic `input`-`processing`-`output` structure, algorithms often include control structures. **Control structures are statements that control the flow of the algorithm**, allowing it to make decisions and perform different actions based on different conditions.
 
 
-![01_algorithm_flowchart_variants.png]({{ images_path }}/01_algorithm_flowchart_variants.png) <br>
-*The figure shows a few flowcharts of algorithms that use various control structures, such as conditional statements (if) or loops (until, while).*
+![01_algorithm_flowchart_variants.png]({{ images_path }}/01_algorithm_flowchart_variants.png)
+<p class="footnote center-h mt-" markdown="1">The figure shows a few flowcharts of algorithms that use various control structures, such as conditional statements (`if`) or loops (`until`, `while`).</p>
 
-`Conditional statements` and `loops` are two examples of control structures that are commonly used in algorithms.
+**Conditional statements** and **loops** are two examples of control structures that are commonly used in algorithms.
 
 <div class="warning" markdown="1">
 When you're creating algorithms, it's important to remember that **different programming languages have different** `syntax` **and available elements of the algorithm's structure**. For example, the syntax for loops and conditional statements in `Bash` may be different from that in `Python` or `R`.
@@ -180,11 +180,15 @@ else
 fi
 ```
 
-<details><summary><b>What code in Bash does?</b></summary>
+<details class="l-frame" markdown="1"><summary class="c-header"><b><i>What code in Bash does?</i></b></summary>
 
-In this Bash script, we first initialize the variable <b>num</b> to be equal to 5. The conditional statement <b><i>if</i></b> checks if the remainder of num divided by 2 is equal to 0 (i.e. whether <b>num</b> is even). If it is, the program outputs "5 is even". Otherwise, the <b>else</b> condition is executed and it outputs "5 is odd". <br>
-<b>TIP:</b> <i>The double parentheses around the condition are used to perform arithmetic operations in Bash.</i> <br>
-</details><br>
+In this Bash script, we first initialize the variable `num` to be equal to 5. <br>
+The conditional statement `if` checks if the remainder of num divided by 2 is equal to 0 *(i.e. whether* `num` *is even)*. If it is, the program outputs `"5 is even"`. <br>
+Otherwise, the `else` condition is executed and it outputs `"5 is odd"`.
+<div class="protip" markdown="1">
+The double parentheses around the condition are used to perform arithmetic operations in Bash.
+</div>
+</details><base class="mt">
 
 **2)** `code in Python`
 ```python
@@ -195,9 +199,11 @@ else:
     print(num, "is odd")
 ```
 
-<details><summary><b>What code in Python does?</b></summary>
+<details class="l-frame" markdown="1"><summary class="c-header"><b><i>What code in Python does?</i></b></summary>
 
-In this Python code, we first initialize the variable <b>num</b> to be equal to 5. The conditional statement <b><i>if</i></b> checks if the remainder of num divided by 2 is equal to 0 (i.e. whether <b>num</b> is even). If it is, the program outputs "5 is even". Otherwise, the <b>else</b> condition is executed and it outputs "5 is odd". <br>
+In this Python code, we first initialize the variable `num` to be equal to 5. <br>
+The conditional statement `if` checks if the remainder of num divided by 2 is equal to 0 *(i.e. whether* `num` *is even)*. If it is, the program outputs `"5 is even"`. <br>
+Otherwise, the `else` condition is executed and it outputs `"5 is odd"`. <br>
 <div class="protip" markdown="1">
 In Python, the syntax for conditional statements is `if` followed by the condition, a colon, and a block of indented code to be executed if the condition is **true**. The `else` statement provides a block of code to be executed if the condition is **false**.
 </div>
@@ -207,18 +213,18 @@ In Python, the syntax for conditional statements is `if` followed by the conditi
 
 **Loops allow an algorithm to repeat a certain action multiple times**, either for a fixed number of iterations or until a certain condition is met. In programming, there are two main types of loops: `for` loops and `while` loops.
 
-**Example FOR loop** <br>
+**example FOR loop** <br>
 Here's an example of a `for` loop that prints the numbers 1 through 10:
 
-`pseudocode`
+**0)** `pseudocode`
 ```yml
 For i = 1 to 10 with a step of 1, do the following:
    Print i
 End For
 ```
-*In this pseudocode, we use the For keyword to start a loop that will iterate from 1 to 10, with a step of 1. The i variable is initialized to 1 at the beginning of the loop. The loop will continue to execute as long as i is less than or equal to 10. Inside the loop, we print the value of i. Then, at the end of each iteration, we increment the value of i by 1 using the i++ expression.*
+*In this pseudocode, we use the* `For` *keyword to start a loop that will iterate from 1 to 10, with a step of 1. The* `i` *variable is initialized to 1 at the beginning of the loop. The loop will continue to execute as long as* `i` *is less than or equal to 10. Inside the loop, we print the value of* `i`.
 
-Below you can explore the executable code written in 1) Bash and 2) Python, based on the pseudocode of the algorithm.
+Below you can explore the executable code written in 1) `Bash` and 2) `Python`, based on the pseudocode of the algorithm.
 
 **1)** `code in Bash`
 ```bash
@@ -230,10 +236,10 @@ do
 done
 ```
 
-<details><summary><b>What code in Bash does?</b></summary>
+<details class="l-frame" markdown="1"><summary class="c-header"><b><i>What code in Bash does?</i></b></summary>
 
-In this Bash script, we use the <b>for</b> keyword to start a loop that will iterate from 1 to 10, with a step of 1. We initialize the loop variable <b><i>i</i></b> to 1 using the <code>(( i=1 ))</code> expression. The loop will continue to execute as long as <b><i>i</i></b> is less than or equal to 10. Inside the loop, we print the value of <b><i>i</i></b> using the echo command. Then, at the end of each iteration, we increment the value of <b><i>i</i></b> by 1 using the <code>(( i++ ))</code> expression. <br>
-</details><br>
+In this Bash script, we use the `for` keyword to start a loop that will iterate from 1 to 10, with a step of 1. We initialize the loop variable `i` to 1 using the `i=1` expression. The loop will continue to execute as long as `i` is less than or equal to 10. Inside the loop, we print the value of `i` using the echo command. Then, at the end of each iteration, we increment the value of `i` by 1 using the `i++` expression.
+</details>
 
 **2)** `code in Python`
 ```python
@@ -241,15 +247,15 @@ for i in range(1, 11):
     print(i)
 ```
 
-<details><summary><b>What code in Python does?</b></summary>
+<details class="l-frame" markdown="1"><summary class="c-header"><b><i>What code in Python does?</i></b></summary>
 
-In this Python script, we use the <b>for</b> keyword to start a loop that will iterate over a range of numbers from 1 to 10. We use the <b>range</b> function to generate a sequence of numbers, starting from 1 and ending at 11 (which is not included in the sequence). Inside the loop, we print the value of <b><i>i</i></b> using the <b>print</b> function. <br>
-</details><br>
+In this Python script, we use the `for` keyword to start a loop that will iterate over a range of numbers from 1 to 10. We use the `range()` function to generate a sequence of numbers, starting from 1 and ending at 11 *(which is not included in the sequence)*. Inside the loop, we print the value of `i` using the `print()` function.
+</details><base class="mt">
 
 **Example WHILE loop** <br>
 Suppose we want to write an algorithm that counts down from 10 to 1 and prints each number on a new line. We could use a while loop to do this as follows:
 
-`pseudocode`
+**0)** `pseudocode`
 ```yml
 Start
    Set i to 10
@@ -259,7 +265,7 @@ Start
    End While
 End
 ```
-*In this example, we first initialize the variable "i" to 10. Then, we enter a while loop, which continues as long as "i" is greater than 0. Inside the loop, we first print the value of "i", and then subtract 1 from "i". This process continues until "i" is no longer greater than 0, at which point the loop ends and the algorithm finishes.*
+*In this example, we first initialize the variable* `i` *to 10. Then, we enter a while loop, which continues as long as* `i` *is greater than 0. Inside the loop, we first print the value of* `i`*, and then subtract 1 from* `i`*. This* ***process continues until*** `i` *is no longer greater than 0, at which point the loop ends and the algorithm finishes.*
 
 <div class="protip" markdown="1">
 The `while` **loop** in this example is useful because it **allows us to repeat a certain action** (printing the value of `i`) **as many times as necessary** (until `i` is no longer greater than 0). By controlling the flow of the algorithm in this way, we can <u>create more powerful and versatile programs</u> that can handle a wider range of situations.
@@ -279,10 +285,10 @@ do
 done
 ```
 
-<details><summary><b>What code in Bash does?</b></summary>
+<details class="l-frame" markdown="1"><summary class="c-header"><b><i>What code in Bash does?</i></b></summary>
 
-In this Bash script, we first set the variable <b><i>i</i></b> to 10. Then, we enter a <b>while</b> loop using the while keyword, with the condition <code>[ $i -gt 0 ]</code>, which means "while i is greater than 0". Inside the loop, we print the value of <b><i>i</i></b> variable using the <b>echo</b> command, and then decrement <b><i>i</i></b> by 1 using the <code>$((i-1))</code> expression. This process continues until <b><i>i</i></b> is no longer greater than 0, at which point the loop ends and the script finishes. <br>
-</details><br>
+In this Bash script, we first set the variable `i` to 10. Then, we enter a `while` loop using the while keyword, with the condition `[ $i -gt 0 ]`, which means "while i is greater than 0". Inside the loop, we print the value of `i` variable using the `echo` command, and then decrement `i` by 1 using the `$((i-1))` expression. This process continues until `i` is no longer greater than 0, at which point the loop ends and the script finishes.
+</details><base class="mt">
 
 **2)** `code in Python`
 ```python
@@ -292,19 +298,18 @@ while i > 0:
     i -= 1
 ```
 
-<details><summary><b>What code in Python does?</b></summary>
+<details class="l-frame" markdown="1"><summary class="c-header"><b><i>What code in Python does?</i></b></summary>
 
-In this Python script, we first set the variable <b><i>i</i></b> to 10. Then, we enter a <b>while</b> loop using the while keyword, with the condition <code>i > 0</code>, which means "while i is greater than 0". Inside the loop, we print the value of <b><i>i</i></b> using the print function, and then decrement <b><i>i</i></b> by 1 using the <code>i -= 1</code> shorthand for <i>i = i - 1</i>. This process continues until <b><i>i</i></b> is no longer greater than 0, at which point the loop ends and the script finishes. <br>
-</details><br>
+In this Python script, we first set the variable `i` to 10. Then, we enter a `while` loop using the while keyword, with the condition `i > 0`, which means "while i is greater than 0". Inside the loop, we print the value of `i` using the print function, and then decrement `i` by 1 using the `i -= 1` shorthand for `i = i - 1`. This process continues until `i` is no longer greater than 0, at which point the loop ends and the script finishes.
+</details>
 
 
-# Examples of algorithms
+# <button class="btn spc example">SIMPLE ALGORITHMS</button>
 
-In this section, we will provide several examples of simple algorithms and walk through how they work. We will create pseudocode to represent these algorithms and explain how control structures are used in these examples. These examples will demonstrate how the basic concepts of algorithms and control structures can be applied in various situations.
+*In this section, we will provide several examples of simple algorithms and walk through how they work.* ***We will create pseudocode*** *to represent these algorithms and explain how control structures are used in these examples. These examples will demonstrate how the basic concepts of algorithms and control structures can be applied in various situations.*
 
-## Sum of two numbers
+### *Sum of two numbers*
 
-`pseudocode`
 ```yml
 input: two numbers, num1 and num2
 output: sum of the two numbers, sum
@@ -312,12 +317,13 @@ output: sum of the two numbers, sum
 set sum = num1 + num2
 output sum
 ```
-**EXPLANATION:** <br>
+<details class="l-frame" markdown="1"><summary class="c-header"><b><i>EXPLANATION</i></b></summary>
+
 This algorithm takes in two numbers as input and outputs their sum. There are no control structures used in this algorithm.
+</details>
 
-## Factorial of a number
+### *Factorial of a number*
 
-`pseudocode`
 ```yml
 input: a number, num
 output: the factorial of num, fact
@@ -327,12 +333,13 @@ for i from 1 to num:
     set fact = fact * i
 output fact
 ```
-**EXPLANATION:** <br>
+<details class="l-frame" markdown="1"><summary class="c-header"><b><i>EXPLANATION</i></b></summary>
+
 This algorithm takes in a number as input and outputs its factorial. A `for` **loop** is used to iterate from 1 to the input number and multiply each number in the range together to get the factorial.
+</details>
 
-## Greatest common divisor
+### *Greatest common divisor*
 
-`pseudocode`
 ```yml
 input: two numbers, num1 and num2
 output: the greatest common divisor of num1 and num2, gcd
@@ -343,12 +350,13 @@ while num2 is not 0:
     set num1 = temp
 output num1
 ```
-**EXPLANATION:** <br>
+<details class="l-frame" markdown="1"><summary class="c-header"><b><i>EXPLANATION</i></b></summary>
+
 This algorithm takes in two numbers as input and outputs their greatest common divisor. A `while` **loop** is used to repeatedly calculate the remainder of dividing the larger number by the smaller number until the remainder is 0. The final value of the smaller number is the greatest common divisor.
+</details>
 
-## Linear search
+### *Linear search*
 
-`pseudocode`
 ```yml
 input: an array of numbers, arr, and a value to search for, val
 output: the index of val in arr, or -1 if val is not in arr
@@ -358,12 +366,13 @@ for i from 0 to length of arr - 1:
         output i
 output -1
 ```
-**EXPLANATION:** <br>
+<details class="l-frame" markdown="1"><summary class="c-header"><b><i>EXPLANATION</i></b></summary>
+
 This algorithm searches for a value in an array using the linear search algorithm. A `for` **loop** is used to iterate through each element of the array and compare it to the search value within a simple `if` condition statement.
+</details>
 
-## Binary search
+### *Binary search*
 
-`pseudocode`
 ```yml
 input: a sorted array, arr, and a value to search for, val
 output: the index of val in arr, or -1 if val is not in arr
@@ -380,12 +389,13 @@ while left <= right:
         set right = mid - 1
 output -1
 ```
-**EXPLANATION:** <br>
+<details class="l-frame" markdown="1"><summary class="c-header"><b><i>EXPLANATION</i></b></summary>
+
 This algorithm searches for a value in a sorted array using the binary search algorithm. A `while` **loop** is used to repeatedly cut the search range in half by comparing the value to the middle element of the current range and adjusting the endpoints accordingly within the `if`-`else if`-`else` condition statement.
+</details>
 
-## Bubble sort
+### *Bubble sort*
 
-`pseudocode`
 ```yml
 input: an array of numbers, arr
 output: the sorted array
@@ -397,12 +407,13 @@ for i from 0 to n - 1:
             swap arr[j] and arr[j+1]
 output arr
 ```
-**EXPLANATION:** <br>
+<details class="l-frame" markdown="1"><summary class="c-header"><b><i>EXPLANATION</i></b></summary>
+
 This algorithm sorts an array of numbers using the bubble sort algorithm. **Two nested** `for` **loops** are used to compare adjacent elements of the array and swap them `if` they are in the wrong order, repeatedly iterating through the array until no more swaps are needed.
+</details>
 
-## Reverse a string
+### *Reverse a string*
 
-`pseudocode`
 ```yml
 input: string s
 output: reversed string r
@@ -414,12 +425,59 @@ Algorithm:
 4. For each iteration, add the character at index i of s to r.
 5. Return r as the output.
 ```
-**EXPLANATION:** <br>
+<details class="l-frame" markdown="1"><summary class="c-header"><b><i>EXPLANATION</i></b></summary>
+
 The above pseudocode assumes a `0-indexed` string, meaning the first character of the string is at index 0. If your string is `1-indexed` *(i.e., the first character is at index 1)*, then you'll need to adjust the loop accordingly by starting at `len` and ending at `1` with a step size of `-1`.
+</details>
 
 <div class="note" markdown="1">
 Pseudocode is a high-level description of a computer program that uses a mix of natural language and structured programming language-like syntax. `Pseudocode` **can be more descriptive using text**, where it provides detailed explanations of each step, or more like a <u>template of the code</u>, where it resembles actual programming code without adhering to a specific programming language's syntax.
 </div>
 
-<span style="color: #ff3870;font-weight: 500;">Transforming the descriptive pseudocode from this example to code-like pseudocode can be a great exercise to help you understand how to translate an algorithm's logic into actual code.</span> <br>
-*So, I encourage you to take the descriptive pseudocode from the example and try to transform it into code-like pseudocode. This will not only help you understand the algorithm's logic better but also give you practice in translating that logic into actual code.*
+#### <button class="btn exercise"></button>
+
+<div class="exercise before" data-before="" markdown="1">
+**Transforming the descriptive pseudocode from above example to code-like pseudocode can be a great exercise to help you understand how to translate an algorithm's logic into actual code.** <base class="mb">
+*So, I encourage you to take the descriptive pseudocode from [this example](#reverse-a-string) and try to transform it into code-like pseudocode. This will not only help you understand the algorithm's logic better but also give you practice in translating that logic into actual code.* <base class="mb">
+
+<details markdown="1"><summary><b><i>see example code-like solution</i></b></summary>
+
+Here's how you would implement the algorithm in code-like pseudocode:
+```yml
+input: string s
+output: string r, as reversed string s
+
+set r = ""                             # Initialize an empty string called r.
+set len = length of s                  # Get the length of s and store it in a variable called len.
+
+FOR i FROM len-1 TO 0 STEP -1 DO:      # Loop from len-1 to 0 with a step size of -1.
+    r = r + s[i]                       # For each iteration, add the character at index i of s to r.
+END FOR
+
+RETURN r                               # Return r as the output.
+```
+</details>
+
+<details markdown="1"><summary><b><i>see realistic Python implementation</i></b></summary>
+
+Here's how you would implement the algorithm in Python:
+```python
+def reverse_string(s):
+    r = ""
+    length = len(s)
+
+    for i in range(length - 1, -1, -1):
+        r += s[i]
+
+    return r
+
+# Usage example:
+result = reverse_string("hello")
+print("Reversed string:", result)
+```
+
+<div class="protip font-1 mb-0" markdown="1">
+Enclosing the algorithm in a Python function enhances code modularity, reusability, and readability by encapsulating the logic within a named unit that can be easily called and utilized throughout the codebase.
+</div>
+</details>
+</div>
