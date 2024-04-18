@@ -17,8 +17,6 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
 
 # Introduction
 
@@ -35,74 +33,69 @@ Python was created by **Guido van Rossum**, who is a Dutch computer programmer a
 
 Python is known for its simplicity, readability, and versatility. It has a number of features that make it a powerful programming language and popular choice for a wide range of applications. These are just a few of the many features of Python:
 
-⦿ **Easy to learn and use** <br>
-<i>Python has a simple and **straightforward syntax**, which makes it easy to read and understand. This can make it a good choice for projects where code readability and maintainability are important.</i>
+<table>
+<tr><th>Easy to learn & use</th>
+    <td><p markdown="1">*Python has a simple and* ***straightforward syntax***, *which makes it easy to read and understand. This can make it a good choice for projects where code readability and maintainability are important.*</p></td></tr>
+<tr><th>Interpreted <br>(not compiled)</th>
+    <td><p markdown="1">*Python is an interpreted language, which means that it is not transformed into machine code before it is executed. Instead, the Python interpreter reads and* ***executes the source code directly, line by line***. *This makes it* ***easier to write and test code***, *because you don't need to wait for the code to be compiled before you can run it. However, it also means that Python programs* ***may run slower than programs written in a compiled language***.</p></td></tr>
+<tr><th>Object-oriented</th>
+    <td><p markdown="1">*Python supports object-oriented programming, which means that you can* ***define classes and create objects*** *to represent real-world entities in your code. This can make it easier to design and organize your code, and to reuse and extend existing code.*</p></td></tr>
+<tr><th>Dynamically-typed</th>
+    <td><p markdown="1">*Python is a dynamically-typed language, which means that you* ***do NOT need to specify the data type*** *of a variable when you declare it. This can make it easier to write code quickly, but it can also make it more difficult to catch type-related errors at runtime.*</p></td></tr>
+<tr><th>High-level <br>data types</th>
+    <td><p markdown="1">*Python has a number of* ***built-in data types*** *that are designed to be easy to use and manipulate. These include lists, dictionaries, and tuples, which can be used to store and manipulate data in a more intuitive way.*</p></td></tr>
+<tr><th>Extensive <br>standard library</th>
+    <td><p markdown="1">*Python has a large and comprehensive standard library, which includes a* ***wide range of modules and functions*** *for tasks such as connecting to web servers, reading and writing files, and working with data. This can make it easier to perform many common programming tasks without the need to install additional libraries.*</p></td></tr>
+<tr><th>Support for third-party libraries</th>
+    <td><p markdown="1">*Python has a* ***large ecosystem of third-party libraries*** *that can be used to extend the capabilities of the language. These libraries cover a wide range of topics, including scientific computing, data analysis, machine learning, web development, and more.*</p></td></tr>
+<tr><th>Support for modular coding & large-scale projects</th>
+    <td><p markdown="1">*Python is a* ***scalable language*** *that is well-suited for large-scale projects. It has a number of features, such as modules and packages, which allow you to <b>organize your code into logical units</b> and reuse it across different projects. This can make it easier to maintain and update your code over time.*</p></td></tr>
+<tr><th>Support for cross-platform use</th>
+    <td><p markdown="1">*Python is a cross-platform language, which means that* ***it can be run on a variety of operating systems***, *including Windows, macOS, Linux, and others. This makes it a good choice for projects that need to run on multiple platforms.*</p></td></tr>
+<tr><th>Exception handling</th>
+    <td><p markdown="1">*Python includes a robust exception handling system that allows you to* ***handle errors and exceptions in your code*** *in a controlled way. This can make it easier to write code that is more reliable and robust.*</p></td></tr>
+<tr><th>Automatic indentation</th>
+    <td><p markdown="1">*Python uses indentation to* ***indicate blocks of code***, *rather than curly braces or other symbols. This can make Python code easier to read and understand, as the indentation helps to visually group related code together.*</p></td></tr>
+<tr><th>Automatic memory management</th>
+    <td><p markdown="1">*Python has an automatic garbage collection system that* ***frees up memory that is no longer being used***. *This means that you don't need to worry about manually allocating and deallocating memory, which can make your code more reliable and easier to write.*</p></td></tr>
+<tr><th>Interactive mode & interactive shell</th>
+    <td><p markdown="1">*Python includes an interactive mode that allows you to enter and* ***execute code one line at a time***. *It also provides an interactive shell, called the Python interpreter, which allows you to enter and* ***execute code in a terminal or command prompt***. *This can be a useful way to test small pieces of code and see their output immediately.*</p></td></tr>
+<tr><th>Strong community support</th>
+    <td><p markdown="1">*Python has a large and* ***active user community***, *which means that you can find a wealth of resources and support online. There are many online forums, mailing lists, and other resources where you can* ***ask questions and get help</b> with Python-related issues***.</p></td></tr>
+</table>
 
-⦿ **Interpreted (not compiled)** <br>
-<i>Python is an interpreted language, which means that it is not transformed into machine code before it is executed. Instead, the Python interpreter reads and <b>executes the source code directly, line by line</b>. This makes it <b>easier to write and test code</b>, because you don't need to wait for the code to be compiled before you can run it. However, it also means that Python programs <b>may run slower than programs written in a compiled language</b>.</i>
-
-⦿ **Object-oriented** <br>
-<i>Python supports object-oriented programming, which means that you can <b>define classes and create objects</b> to represent real-world entities in your code. This can make it easier to design and organize your code, and to reuse and extend existing code.</i>
-
-⦿ **Dynamically-typed** <br>
-<i>Python is a dynamically-typed language, which means that you <b>do NOT need to specify the data type</b> of a variable when you declare it. This can make it easier to write code quickly, but it can also make it more difficult to catch type-related errors at runtime.</i>
-
-⦿ **High-level data types** <br>
-<i>Python has a number of <b>built-in data types</b> that are designed to be easy to use and manipulate. These include lists, dictionaries, and tuples, which can be used to store and manipulate data in a more intuitive way.</i>
-
-⦿ **Extensive standard library** <br>
-<i>Python has a large and comprehensive standard library, which includes a <b>wide range of modules and functions</b> for tasks such as connecting to web servers, reading and writing files, and working with data. This can make it easier to perform many common programming tasks without the need to install additional libraries.</i>
-
-⦿ **Support for third-party libraries** <br>
-<i>Python has a <b>large ecosystem of third-party libraries</b> that can be used to extend the capabilities of the language. These libraries cover a wide range of topics, including scientific computing, data analysis, machine learning, web development, and more.</i>
-
-⦿ **Support for modular coding & large-scale projects** <br>
-<i>Python is a <b>scalable language</b> that is well-suited for large-scale projects. It has a number of features, such as modules and packages, which allow you to <b>organize your code into logical units</b> and reuse it across different projects. This can make it easier to maintain and update your code over time.</i>
-
-⦿ **Support for cross-platform use** <br>
-<i>Python is a cross-platform language, which means that <b>it can be run on a variety of operating systems</b>, including Windows, macOS, Linux, and others. This makes it a good choice for projects that need to run on multiple platforms.</i>
-
-⦿ **Exception handling** <br>
-<i>Python includes a robust exception handling system that allows you to <b>handle errors and exceptions in your code</b> in a controlled way. This can make it easier to write code that is more reliable and robust.</i>
-
-⦿ **Automatic indentation** <br>
-<i>Python uses indentation to <b>indicate blocks of code</b>, rather than curly braces or other symbols. This can make Python code easier to read and understand, as the indentation helps to visually group related code together.</i>
-
-⦿ **Automatic memory management** <br>
-<i>Python has an automatic garbage collection system that <b>frees up memory that is no longer being used</b>. This means that you don't need to worry about manually allocating and deallocating memory, which can make your code more reliable and easier to write.</i>
-
-⦿ **Interactive mode & interactive shell** <br>
-<i>Python includes an interactive mode that allows you to enter and **execute code one line at a time**. It also provides an interactive shell, called the Python interpreter, which allows you to enter and **execute code in a terminal or command prompt**. This can be a useful way to test small pieces of code and see their output immediately.</i>
-
-⦿ **Strong community support** <br>
-<i>Python has a large and <b>active user community</b>, which means that you can find a wealth of resources and support online. There are many online forums, mailing lists, and other resources where you can <b>ask questions and get help</b> with Python-related issues.</i>
 
 ## Python online support
-<span style="color: #ff3870;font-weight: 500;">Here are a few URL addresses for online forums and Python-related issues:</span><br>
+
+Here are a few URL addresses for online forums and Python-related issues:
 * Python Forum: <a href="https://python-forum.io/" target="_blank">https://python-forum.io/  ⤴</a>
 * Python subreddit: <a href="https://www.reddit.com/r/Python/" target="_blank">https://www.reddit.com/r/Python/  ⤴</a>
 * Stack Overflow: <a href="https://stackoverflow.com/questions/tagged/python" target="_blank">https://stackoverflow.com/questions/tagged/python  ⤴</a>
 * Python mailing lists: <a href="https://mail.python.org/mailman/listinfo" target="_blank">https://mail.python.org/mailman/listinfo  ⤴</a>
 
+<div class="protip" markdown="1">
 These are just a few examples of the many online resources that are available for Python developers. You can also find many other resources by searching online for terms such as <i>"Python community forums"</i> or <i>"Python support"</i>.
+</div>
 
 
 ## Getting started with Python programming
 
-<span style="color: #ff3870;font-weight: 500;">If you are starting your Python adventure from scratch, it is worthwhile to develop your skills gradually strengthening them over time. In that case, it's best to follow this tutorial in order.</span>
+<div class="required" markdown="1">
+If you are starting your Python adventure from scratch, it is worthwhile to develop your skills gradually strengthening them over time. In that case, it's best to follow this tutorial in order.
 
 1. [Learn Python basics using online platform](#1-learn-python-basics-using-online-platform)
 2. [Get Python locally and start coding in the IDE](#2-get-python-locally-and-start-coding-in-the-ide)
+</div>
+
 
 # 1. Learn Python basics using online platform
 
 Using an online platform for Python programming can be a convenient and accessible way to write and run Python code, especially if you are just starting out with the language or don't want to install anything on your local computer.
 
-
 Starting your Python learning journey with online platform provides you with:
-* <b>convenience & accessibility</b>, *write and run Python code from any device with an internet connection, without the need to install any software (including Python)*
-* <b>no setup required</b>, *you can start writing and running code right away; this can be especially useful if you are just starting out with Python and don't want to spend time setting up a development environment.*
-* <b>collaboration</b>, *useful even for advanced users, e.g., if you are working on a team or sharing your code with others*
+* **convenience & accessibility**, *write and run Python code from any device with an internet connection, without the need to install any software (including Python)*
+* **no setup required**, *you can start writing and running code right away; this can be especially useful if you are just starting out with Python and don't want to spend time setting up a development environment.*
+* **collaboration**, *useful even for advanced users, e.g., if you are working on a team or sharing your code with others*
 
 There are many online platforms that allow you to write and run Python code directly in your web browser. Several examples are described in the section <a class="t-links" href="420" section="#1-online-coding-platforms-beginner">1. Online coding platforms</a> of the <a class="t-links" href="420"></a> tutorial. For this hands-on exercise I select the <a href="https://www.python.org/shell/" target="_blank">Python Console  ⤴</a> web platform [by Python], to start right away without creating any account.
 
@@ -118,20 +111,24 @@ You can also stay here and enhance your experience by following the step-by-step
 * You will see the webpage interface, shown on the screenshoot below
 * You can start typing directly in this online console to try your Python skills
 
-![Python Console Online]({{ images_path }}/03_python-online-console.png) <br><br>
+![Python Console Online]({{ images_path }}/03_python-online-console.png)
 
 ## Basic Concepts
 
 1. [Variables](#variables) and [Data Types](#data-types) <br>
-<i>In Python, you can assign values to variables using the <b>=</b> operator. <br>Python has several data types, including integers, floats, strings, and booleans.</i>
+  In Python, you can assign values to variables using the* `=` operator. <br>
+  Python has several data types, including `integers`, `floats`, `strings`, and `booleans`.
 2. [Operators](#operators) <br>
-<i>Python has several operators, including: <br> - arithmetic operators (+, -, *, /), <br> - comparison operators (>, <, ==), and <br> - logical operators (and, or, not).</i>
+  Python has several operators, including:
+  - arithmetic operators (+, -, *, /),
+  - comparison operators (>, <, ==), and
+  - logical operators (and, or, not).
 3. [Control Flow](#control-flow) <br>
-<i>Control flow statements allow you to control the flow of your program. Some common control flow statements in Python include: <b>if/else</b> statements, <b>for</b> and <b>while</b> loops.</i>
+  Control flow statements allow you to control the flow of your program. Some common control flow statements in Python include: `if/else` statements, `for` and `while` loops.
 4. [Functions](#functions) <br>
-<i>Functions are reusable blocks of code that perform a specific task. You can define your own functions in Python using the <b>def</b> keyword.</i>
+  Functions are reusable blocks of code that perform a specific task. You can define your own functions in Python using the `def` keyword.
 5. [Classes](#classes) <br>
-<i>A class is a blueprint for creating objects of specific type defined using the <b>class</b> keyword.</i>
+  A class is a blueprint for creating objects of specific type defined using the `class` keyword.
 
 
 ## **Variables**
@@ -164,76 +161,78 @@ print(type(x))           # Output: <class 'int'>
 
 Python has several built-in operators that you can use to perform operations on variables.
 
-<details><summary><b>Arithmetic</b></summary>
+<details markdown="1"><summary><b>Arithmetic</b></summary>
 
-<table>
-  <tr><th>Operator</th><th>Description</th></tr>
-  <tr><td>+</td><td>Adds two numbers together</td></tr>
-  <tr><td>-</td><td>Subtracts the second number from the first</td></tr>
-  <tr><td>*</td><td>Multiplies two numbers together</td></tr>
-  <tr><td>/</td><td>Divides the first number by the second</td></tr>
-  <tr><td>//</td><td>Performs integer division</td></tr>
-  <tr><td>%</td><td>Returns the remainder of the division</td></tr>
-  <tr><td>**</td><td>Raises the first number to the power of the second</td></tr>
-</table>
+| Operator | Description                                        |
+|----------|----------------------------------------------------|
+| `+`      | Adds two numbers together                          |
+| `-`      | Subtracts the second number from the first         |
+| `*`      | Multiplies two numbers together                    |
+| `/`      | Divides the first number by the second             |
+| `//`     | Performs integer division                          |
+| `%`      | Returns the remainder of the division              |
+| `**`     | Raises the first number to the power of the second |
+
 </details>
 
-<details><summary><b>Comparison</b></summary>
+<details markdown="1"><summary><b>Comparison</b></summary>
 
-<table>
-  <tr><th>Operator</th><th>Description</th></tr>
-  <tr><td>==</td><td>Checks if two values are equal</td></tr>
-  <tr><td>!=</td><td>Checks if two values are not equal</td></tr>
-  <tr><td>&lt;</td><td>Checks if the first value is less than the second</td></tr>
-  <tr><td>&gt;</td><td>Checks if the first value is greater than the second</td></tr>
-  <tr><td>&lt;=</td><td>Checks if the first value is less than or equal to the second</td></tr>
-  <tr><td>&gt;=</td><td>Checks if the first value is greater than or equal to the second</td></tr>
-</table>
+| Operator | Description                                                      |
+|----------|------------------------------------------------------------------|
+| `==`     | Checks if two values are equal                                   |
+| `!=`     | Checks if two values are not equal                               |
+| `<`      | Checks if the first value is less than the second                |
+| `>`      | Checks if the first value is greater than the second             |
+| `<=`     | Checks if the first value is less than or equal to the second    |
+| `>=`     | Checks if the first value is greater than or equal to the second |
+
 </details>
 
-<details><summary><b>Logical</b></summary>
+<details markdown="1"><summary><b>Logical</b></summary>
 
-<table>
-  <tr><th>Operator</th><th>Description</th></tr>
-  <tr><td>and</td><td>Returns True if both conditions are True</td></tr>
-  <tr><td>or</td><td>Returns True if at least one condition is True</td></tr>
-  <tr><td>not</td><td>Returns the opposite boolean value</td></tr>
-</table>
+| Operator | Description                                    |
+|----------|------------------------------------------------|
+| `and`    | Returns True if both conditions are True       |
+| `or`     | Returns True if at least one condition is True |
+| `not`    | Returns the opposite boolean value             |
+
 </details>
 
-<details><summary><b>Membership</b></summary>
+<details markdown="1"><summary><b>Membership</b></summary>
 
-<table>
-  <tr><th>Operator</th><th>Description</th></tr>
-  <tr><td>in</td><td>Checks if a value exists in a sequence</td></tr>
-  <tr><td>not in</td><td>Checks if a value does not exist in a sequence</td></tr>
-</table>
+| Operator | Description                                    |
+|----------|------------------------------------------------|
+| `in`     | Checks if a value exists in a sequence         |
+| `not in` | Checks if a value does not exist in a sequence |
+
 </details>
 
-<details><summary><b>Identity</b></summary>
+<details markdown="1"><summary><b>Identity</b></summary>
 
-<table>
-  <tr><th>Operator</th><th>Description</th></tr>
-  <tr><td>is</td><td>Checks if two variables refer to the same object</td></tr>
-  <tr><td>is not</td><td>Checks if two variables do not refer to the same object</td></tr>
-</table>
+| Operator | Description                                             |
+|----------|---------------------------------------------------------|
+| `is`     | Checks if two variables refer to the same object        |
+| `is not` | Checks if two variables do not refer to the same object |
+
 </details>
 
-<details><summary><b>Bitwise</b></summary>
+<details class="l-frame" markdown="1"><summary><b>Bitwise</b></summary>
 
-Bitwise operators are used to manipulate the individual bits of binary numbers. In computing, binary numbers are numbers expressed in the base-2 numeral system, which uses only two digits (0 and 1) to represent all values. <br>
+Bitwise operators are used to manipulate the individual bits of binary numbers. In computing, binary numbers are numbers expressed in the base-2 numeral system, which uses only two digits (0 and 1) to represent all values.
+
 <div class="note" markdown="1">
 Bitwise operators operate on these binary representations of numbers at the bit level, which means they manipulate the individual bits that make up the binary representation of a number.
 </div>
-<table>
-  <tr><th>Operator</th><th>Description</th></tr>
-  <tr><td>&</td><td>Performs a bitwise AND operation</td></tr>
-  <tr><td>^</td><td>Performs a bitwise XOR operation</td></tr>
-  <tr><td>~</td><td>Performs a bitwise NOT operation</td></tr>
-  <tr><td>&lt;&lt;</td><td>Shifts bits to the left</td></tr>
-  <tr><td>&gt;&gt;</td><td>Shifts bits to the right</td></tr>
-</table>
-</details><br>
+
+| Operator | Description                      |
+|----------|----------------------------------|
+| `&`      | Performs a bitwise AND operation |
+| `^`      | Performs a bitwise XOR operation |
+| `~`      | Performs a bitwise NOT operation |
+| `<<`     | Shifts bits to the left          |
+| `>>`     | Shifts bits to the right         |
+
+</details>
 
 
 For example, you can use the `+` operator to add two numbers together:
@@ -253,7 +252,7 @@ Python has several control flow statements, including:
 * `pass`, `continue`, `break` change the flow
 
 
-###  •  *IF-ELIF-ELSE conditional*
+### <em class="prefix-2">IF-ELIF-ELSE conditional</em>
 Here's an example of a simple if/else statement:
 ```python
 x = 42
@@ -266,7 +265,7 @@ else:
 ```
 
 
-###  •  *FOR-WHILE loop*
+### <em class="prefix-2">FOR-WHILE loop</em>
 In Python, the `for`, `while`, and `until` loops are used to execute a block of code repeatedly based on a specified condition.
 
 * The `for` loop is used to iterate over a sequence, such as a list or a string.
@@ -276,7 +275,7 @@ In Python, the `for`, `while`, and `until` loops are used to execute a block of 
 <div class="warning" markdown="1">
 The **until loop** is NOT a built-in loop in Python. Instead, it is often used in other programming languages such as Ruby. In Python, a similar behavior can be achieved using a **while loop with a negated condition**, `while not`.
 </div>
-
+<base class="mt">
 **FOR** <br>
 Here's an example of using a for loop to iterate over a list of numbers and print each number:
 ```python
@@ -286,7 +285,7 @@ for num in numbers:
     print(num)
 ```
 *In this example, we create a list of numbers and use a for loop to iterate over each number in the list. The num variable takes on the value of each number in the list in turn, and the print() function is called to output each number to the console.*
-
+<base class="mt">
 **WHILE** <br>
 Here's an example of using a while loop to print the numbers from 1 to 5:
 ```python
@@ -297,7 +296,7 @@ while num <= 5:
     num += 1
 ```
 *In this example, we use a while loop to execute the block of code as long as the value of the num variable is less than or equal to 5. Inside the loop, we print the value of num to the console and then increment its value by 1.*
-
+<base class="mt">
 **WHILE NOT** *(equivalent to until loop)* <br>
 Here's an example of using a while loop to print the numbers from 1 to 5 using a negated condition:
 ```python
@@ -310,14 +309,15 @@ while not (num > 5):
 *In this example, we use a while loop with a negated condition to execute the block of code as long as the value of the num variable is not greater than 5. Inside the loop, we print the value of num to the console and then increment its value by 1.*
 
 
-###  •  *TRY-EXCEPT-FINALLY*
+### <em class="prefix-2">TRY-EXCEPT-FINALLY</em>
 
 In Python, `try-except-finally` is a powerful mechanism for handling errors and exceptions in Python code that may occur during program execution. By catching and handling errors gracefully, you can ensure that your program does not crash or behave unpredictably in the face of unexpected errors.
 * The `try` block contains the code that may raise an exception.
 * The `except` block contains the code to handle the exception if it occurs.
 * The `finally` is an optional block hat is executed regardless of whether an exception is raised or not.
 
-**EXAMPLE 1:** Here's an example of using try-except to handle a division by zero error:
+<button class="btn example"></button><base class="mb">
+**1)** Here's an example of using try-except to handle a division by zero error:
 ```python
 numerator = 10
 denominator = 0
@@ -329,7 +329,8 @@ except ZeroDivisionError:
 ```
 *In this example, we attempt to divide the 'numerator' variable by the 'denominator' variable inside a try block. However, since denominator is zero, this will raise a 'ZeroDivisionError'. To handle this error, we use an except block that specifies the type of exception to catch (ZeroDivisionError) and the code to execute when the exception is caught (print("Error: division by zero")).*
 
-**EXAMPLE 2:** Here's an example of using try-except-finally to handle a file I/O error:
+<button class="btn example"></button><base class="mb">
+**2)** Here's an example of using try-except-finally to handle a file I/O error:
 ```python
 try:
     file = open("myfile.txt", "r")
@@ -342,7 +343,7 @@ finally:
 *In this example, we attempt to open a file named "myfile.txt" in read mode inside a try block. However, if the file is not found or could not be read, this will raise an 'IOError'. To handle this error, we use an except block that prints an error message. We also include a finally block that closes the file, regardless of whether an error occurred or not.*
 
 
-###  •  *PASS-CONTINUE-BREAK*
+### <em class="prefix-2">PASS-CONTINUE-BREAK</em>
 
 In Python, `pass`, `continue`, and `break` are control statements used to change the flow of a program's execution in a loop or conditional statement.
 
@@ -357,49 +358,49 @@ for i in range(5):
 ```
 <i>Here, when i is equal to 2, the pass statement is executed, but it doesn't do anything. The loop continues to execute, and the output shows that the value 2 was still printed.</i>
 
-<details><summary style="color: #ff3870;"><b>See a tip for <i>pass</i> in try-except block</b></summary>
+<details class="l-frame" markdown="1"><summary class="c-header"><b>See a tip for <i>pass</i> in try-except block</b></summary>
 
-In Python, <b>pass</b> is often used in <b>try-except</b> error handlers as a placeholder for an empty block of code when no action is required in the event of an exception. <br><br>
-When an error occurs in a try block, Python searches for an appropriate <b>except</b> block to handle the error. In some cases, you may want to catch the error but not take any action when it occurs. In such situations, you can use <b>pass</b> as a placeholder in the except block. This will tell Python to do nothing when the exception occurs, allowing the program to continue executing without interruption. <br><br>
-Here is an example that demonstrates the use of pass in a try-except block:
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-try: <br>
-    &emsp; &emsp; x = int(input("Enter a number: ")) <br>
-    &emsp; &emsp; result = 10 / x <br>
-    &emsp; &emsp; print("The result is:", result) <br>
-except ValueError: <br>
-    &emsp; &emsp; print("Invalid input. Please enter a valid number.") <br>
-    &emsp; &emsp; pass <br>
-except ZeroDivisionError: <br>
-    &emsp; &emsp; print("Cannot divide by zero.") <br>
-    &emsp; &emsp; pass <br>
-</code><br>
-<i>In this example, the <b>try</b> block attempts to get user input and perform a division operation. If the user enters an invalid input or a zero, a "ValueError" or "ZeroDivisionError" will occur, respectively. In each case, the corresponding except block handles the error by printing a message and using pass as a placeholder for an empty block of code.</i>
-</details><br>
+In Python, `pass` is often used in `try-except` error handlers as a placeholder for an empty block of code when no action is required in the event of an exception. <base class="mb">
+When an error occurs in a try block, Python searches for an appropriate `except` block to handle the error. In some cases, you may want to catch the error but not take any action when it occurs. In such situations, you can use `pass` as a placeholder in the except block. This will tell Python to do nothing when the exception occurs, allowing the program to continue executing without interruption. <base class="mb">
+Here is an example that demonstrates the use of `pass` in a **try-except** block:
+```python
+try:
+    x = int(input("Enter a number: "))
+    result = 10 / x
+    print("The result is:", result)
+except ValueError:
+    print("Invalid input. Please enter a valid number.")
+    pass
+except ZeroDivisionError:
+    print("Cannot divide by zero.")
+    pass
+```
+*In this example, the* `try` *block attempts to get user input and perform a division operation. If the user enters an invalid input or a zero, a* <i class="c-bad">"ValueError"</i> or <i class="c-bad">"ZeroDivisionError"</i> *will occur, respectively. In each case, the corresponding except block handles the error by printing a message and using pass as a placeholder for an empty block of code.*
+</details>
 
-
+<base class="mt">
 **CONTINUE** <br>
 The `continue` keyword is used to skip the current iteration of a loop and move on to the next one. <br>
-<i>For example:</i>
+*For example:*
 ```python
 for i in range(5):
     if i == 2:
         continue
     print(i)           # output: 0 1 3 4  ; 2 is skipped
 ```
-<i>Here, when i is equal to 2, the continue statement is executed, and the loop skips the rest of the code in that iteration and moves on to the next one. So, the value 2 is not printed.</i>
+*Here, when i is equal to 2, the continue statement is executed, and the loop skips the rest of the code in that iteration and moves on to the next one. So, the value 2 is not printed.*
 
-
+<base class="mt">
 **BREAK** <br>
 The `break` keyword is used to exit a loop prematurely. When break is executed, the loop terminates immediately, and the program continues executing the code that comes after the loop.  <br>
-<i>For example:</i>
+*For example:*
 ```python
 for i in range(5):
     if i == 2:
         break
     print(i)           # output: 0 1  ; all iterations since i = 2 are skipped
 ```
-<i>Here, when i is equal to 2, the break statement is executed, and the loop terminates immediately. The program moves on to execute the code that comes after the loop. So, the value 2, as well as 3 and 4, are not printed.</i>
+*Here, when i is equal to 2, the break statement is executed, and the loop terminates immediately. The program moves on to execute the code that comes after the loop. So, the value 2, as well as 3 and 4, are not printed.*
 
 
 ## **Functions**
@@ -414,14 +415,13 @@ Examples of built-in functions include:
 
 | function |  example    | description |
 |----------|-------------|-------------|
-| print()  | `print("Hello, world!")` <br><br> *# output: Hello, world!* | used to output text and variables to the console |
-| input()  | `input("Provide a number:")` <br><br> *# output: Provide a number:* | used to accept user input from the console |
-| len()    | `my_string = "Hello, world!"` <br> `print(len(my_string))` <br><br> *# output: 13* | used to return the length of an object *(e.g. string, list, etc.)* |
-| type()   | `my_list = [1, 2, 3]` <br> `print(type(my_list))` <br><br> *# output: <class 'list'>* | used to return the type of an object *(e.g. int, str, list, etc.)* |
-| range()  | `for i in range(1, 6):` <br>&emsp;  `print(i)` <br><br> *# output: 1 2 3 4 5* | used to generate a sequence of numbers within a specified range |
-| sum()    | `my_list = [1, 2, 3, 4, 5]` <br> `print(sum(my_list))` <br><br> *# output: 15* | used to return the sum of a sequence of numbers |
-| sorted() | `my_list = [3, 1, 4, 2, 5]` <br> `print(sorted(my_list))` <br><br> *# output: [1, 2, 3, 4, 5]* | used to sort the elements of an iterable in ascending or descending order|
-
+| print()  | `print("Hello, world!")`                                   <base class="mb"> <i class="c-gray"># output: Hello, world!</i>     | used to output text and variables to the console                         |
+| input()  | `input("Provide a number:")`                               <base class="mb"> <i class="c-gray"># output: Provide a number:</i> | used to accept user input from the console                               |
+| len()    | `my_string = "Hello, world!"` <br> `print(len(my_string))` <base class="mb"> <i class="c-gray"># output: 13</i>                | used to return the length of an object *(e.g. string, list, etc.)*       |
+| type()   | `my_list = [1, 2, 3]` <br> `print(type(my_list))`          <base class="mb"> <i class="c-gray"># output: <class 'list'></i>    | used to return the type of an object *(e.g. int, str, list, etc.)*       |
+| range()  | `for i in range(1, 6):` <br>&emsp;  `print(i)`             <base class="mb"> <i class="c-gray"># output: 1 2 3 4 5</i>         | used to generate a sequence of numbers within a specified range          |
+| sum()    | `my_list = [1, 2, 3, 4, 5]` <br> `print(sum(my_list))`     <base class="mb"> <i class="c-gray"># output: 15</i>                | used to return the sum of a sequence of numbers                          |
+| sorted() | `my_list = [3, 1, 4, 2, 5]` <br> `print(sorted(my_list))`  <base class="mb"> <i class="c-gray"># output: [1, 2, 3, 4, 5]</i>   | used to sort the elements of an iterable in ascending or descending order|
 
 
 ### *B. User-defined functions*
@@ -453,11 +453,9 @@ def print_numbers(num1, num2=0, *args):
 print_numbers(1)                           # output: 1 0        ; the second number has a default value
 print_numbers(1, 2, 3, 4, 5)               # output: 1 2 3 4 5  ; the default value of the second parameter is overwritten
 ```
-*In this example, we define a function "print_numbers()" that takes two parameters num1 and num2, with num2 having a default value of 0. The function also takes a variable-length argument list *args, which allows for an arbitrary number of additional arguments to be passed to the function. Inside the function, we print the values of num1, num2, and all the additional arguments in args.* <br>
-<i>We then call the print_numbers function with two different sets of arguments: <br>
- • with the value 1 only - in this call, num1 is 1, num2 is 2, and args contains the values 3, 4, and 5 <br>
- • with the values 1, 2, 3, 4, and 5 - in this call, num1 is 1 and num2 is default so equal 0, and list of args is empty
-</i>
+*In this example, we define a function* `print_numbers()` *that takes two parameters* `num1` *and* `num2`, *with num2 having a default value of 0. The function also takes a variable-length argument list* `*args`, *which allows for an arbitrary number of additional arguments to be passed to the function. Inside the function, we print the values of num1, num2, and all the additional arguments in args. We then call the print_numbers function with two different sets of arguments:* <br>
+<b class="prefix-2"></b> *with the value 1 in the call, num1 is 1, num2 is 2, and args contains the values 3, 4, and 5* <br>
+<b class="prefix-2"></b> *with the values 1, 2, 3, 4, and 5 in the call, num1 is 1 and num2 is default so equal 0, and list of args is empty*
 
 
 ### *C. Imported functions*
@@ -473,14 +471,15 @@ A **package** is a collection of related modules that can be organized hierarchi
 
 To use multiple functions from a package, you can **import the entire package** using the `import` statement and then call the functions using the dot `.` notation.
 
-**Example 1:** Let's say we want to use the `sqrt()` function from the **math module** to calculate the square root of a number:
+<button class="btn example"></button><base class="mb">
+**1)** Let's say we want to use the `sqrt()` function from the **math module** to calculate the square root of a number:
 ```python
 import math
 
 result = math.sqrt(25)
 print(result)                             # output: 5.0
 ```
-*In this example, we import the math module using the import statement and then call the sqrt() function from the math module using the syntax math.sqrt(). This allows us to calculate the square root of the number 25 and store the result in a variable result.*
+*In this example, we import the math module using the import statement and then call the* `sqrt()` *function from the math module using the syntax* `math.sqrt()`. *This allows us to calculate the square root of the number 25 and store the result in a variable result.*
 
 <div class="protip" markdown="1">
 If the name of the package is long or inconvenient you can use a cutomized shortcut with the `as` keyword:
@@ -504,14 +503,15 @@ print(my_dataframe)
 
 Instead of importing an entire module, you can **import only a specific function** from the module using the from keyword.
 
-**Example 2:** Let's say we only want to use the sqrt() function from the math module:
+<button class="btn example"></button><base class="mb">
+**2)** Let's say we only want to use the sqrt() function from the math module:
 ```python
 from math import sqrt
 
 result = sqrt(25)
 print(result)                             # output: 5.0
 ```
-*In this example, we use the from keyword to import only the sqrt() function from the math module. This allows us to call the sqrt() function directly without having to use the math prefix.*
+*In this example, we use the from keyword to import only the* `sqrt()` *function from the math module. This allows us to call the* `sqrt()` *function directly without having to use the math prefix.*
 
 
 ## **Classes**
@@ -541,12 +541,12 @@ In this example, we define a **Person class** with four methods:
 * `get_age`, a simple getter method that return the value of the "age"
 * `set_age`, a setter method that takes a new age value and sets the <b>self.age</b> instance attribute to this new value.
 
-With this `Person class` defined, we can **create instances of it (objects), like so:
+With this `Person class` defined, we can **create instances** of it (objects), like so:
 ```python
 person1 = Person("Alice", 25)
 person2 = Person("Bob", 30)
 ```
-*We just created two instances of the Person class, person1 and person2, with different name and age values.*
+*We just created two instances of the Person class: person1 and person2, with different name and age values.*
 
 We can now call the methods of these instances to get and set their attributes:
 ```python
@@ -557,22 +557,29 @@ person1.set_age(30)
 print(person1.get_age())                  # output: 30
 ```
 
-## *Writing Your First Python Program* **(EXAMPLES)**
+
+# <button class="btn wf example"><b>Writing Your First Python Program</b></button>
 
 Now that you have a basic understanding of Python, it's time to try your Python skills! <br>
 Here are a few simple examples of Python code that you can try out:
 
-***Example 1:*** *Printing a message to the console:*
+### <button class="btn example mr before" data-before="EXAMPLE 1"></button><em class="vam">Printing a message to the console</em>
 
 ```python
 print("Hello, world!")
 ```
 
-*This code will print the message "Hello, world!" to the console. It uses a built-in Python function `print()`. The argument of this function is a text string enclosed in the single or double quotation marks, `""` or `''`.*
+*This code will print the message "Hello, world!" to the console. It uses a built-in Python function* `print()`. *The argument of this function is a text string enclosed in the single or double quotation marks,* `""` *or* `''`.
 
-![]({{ images_path }}/03_python-anywhere_ex1.png)<br>
+<pre class="output">
+<b class="prompt-1"></b>
+<b class="prompt-1"></b>print("Hello, world!")
+Hello, world!
+<b class="prompt-1"></b>
+</pre>
 
-***Example 2:*** *Storing and manipulating data in variables:*
+
+### <button class="btn example mr before" data-before="EXAMPLE 2"></button><em class="vam">Storing and manipulating data in variables</em>
 
 ```python
 x = 10
@@ -581,11 +588,18 @@ y = 5
 print(x, y)
 ```
 
-*This code defines two variables, `x` and `y`, and assigns them the values 10 and 5, respectively. The current value assigned to the variable can be displayed on the console screen using `print()` function with a variable as an argument (e.g., `print(x)`).*
+*This code defines two variables,* `x` *and* `y`, *and assigns them the values 10 and 5, respectively. The current value assigned to the variable can be displayed on the console screen using* `print()` *function with a variable as an argument (e.g.,* `print(x)`*).*
 
-![]({{ images_path }}/03_python-anywhere_ex2A.png)<br>
+<pre class="output">
+<b class="prompt-1"></b>x = 10
+<b class="prompt-1"></b>y = 5
+<b class="prompt-1"></b>
+<b class="prompt-1"></b>print(x, y)
+10 5
+</pre>
 
-***Example 3:*** *Perform some basic arithmetic operations:*
+
+### <button class="btn example mr before" data-before="EXAMPLE 3"></button><em class="vam">Perform some basic arithmetic operations</em>
 
 ```python
 z = x + y
@@ -595,21 +609,29 @@ z = x * y
 print(z)
 ```
 
-*This code uses previously defined variables `x` and `y` to perform some basic arithmetic operations like summing or multiplying. The result of the calculations is assigned to a new variable `z`. It stores the most recent assigned value, which can be previewed using a built-in `print()` function.*
+*This code uses previously defined variables* `x` *and* `y` *to perform some basic arithmetic operations like summing or multiplying. The result of the calculations is assigned to a new variable* `z`. *It stores the most recent assigned value, which can be previewed using a built-in* `print()` *function.*
 
-![]({{ images_path }}/03_python-anywhere_ex2B.png)<br>
+<pre class="output">
+<b class="prompt-1"></b>z = x + y
+<b class="prompt-1"></b>print(z)
+15
+<b class="prompt-1"></b>z = x * y
+<b class="prompt-1"></b>print(z)
+50
+</pre>
 
-***Example 4:*** *Calling a built-in function:*
+
+### <button class="btn example mr before" data-before="EXAMPLE 4"></button><em class="vam">Calling a built-in function</em>
 
 ```python
 name = input("What is your name? ")
 print("Hello, " + name + "!")
 ```
 
-*This code prompts the user for their name using a built-in input() function and then greets them. The input() function prints the message on the console and wait antil user type the input data.*
+*This code prompts the user for their name using a built-in* `input()` *function and then greets them. The* `input()` *function prints the message on the console and wait antil user type the input data.*
 
 
-***Example 5:*** *Defining and calling a custom function:*
+### <button class="btn example mr before" data-before="EXAMPLE 5"></button><em class="vam">Defining and calling a custom function</em>
 
 ```python
 def greet(name):
@@ -617,7 +639,7 @@ def greet(name):
     print(f"Hello, {name}!")
 ```
 
-*This code defines a function called `greet()` that takes a single argument, `name`, and prints a greeting to the console. You can substitute any text as a `name` argument to print a greeting for it. Let's try it!*
+*This code defines a function called* `greet()` *that takes a single argument,* `name`, *and prints a greeting to the console. You can substitute any text as a* `name` *argument to print a greeting for it. Let's try it!*
 
 ```python
 greet("Alice")
@@ -626,9 +648,19 @@ greet("Bob")
 
 *The function is called with two different names, "Alice" and "Bob", to demonstrate how it can be used.*
 
-![]({{ images_path }}/03_python-anywhere_ex3.png)<br>
+<pre class="output">
+<b class="prompt-1"></b>def greet(name):
+<b class="prompt-2"></b>    """Prints a greeting to the given name."""
+<b class="prompt-2"></b>    print(f"Hello, {name}!")
+<b class="prompt-2"></b>
+<b class="prompt-1"></b>greet("Alice")
+<i>Hello, Alice!</i>
+<b class="prompt-1"></b>greet("Bob")
+<i>Hello, Bob!</i>
+</pre>
 
-***Example 6:*** *Call function in a loop:*
+
+### <button class="btn example mr before" data-before="EXAMPLE 6"></button><em class="vam">Call function in a loop</em>
 
 ```python
 names = ["Alice", "Bob", "Kathy", "Tim", "Hannah", "Adam", "Tina", "Eric", "Anna", "Sam"]
@@ -637,16 +669,38 @@ for name in names:
     greet(name)
 ```
 
-*This code defines a list composed of 10 names and call a `greet()` function in a loop for each name in the list. Note that such a solution is much more concise than calling the function for each name separately. The code snippet iterating through the list of names will look the same regardless of the length of the list.*
+*This code defines a list composed of 10 names and call a* `greet()` *function in a loop for each name in the list. Note that such a solution is much more concise than calling the function for each name separately. The code snippet iterating through the list of names will look the same regardless of the length of the list.*
 
-![]({{ images_path }}/03_python-anywhere_ex4.png)<br>
+<pre class="output">
+<b class="prompt-1"></b>
+<b class="prompt-1"></b>names = ["Alice", "Bob", "Kathy", "Tim", "Hannah", "Adam", "Tina", "Eric", "Anna", "Sam"]
+<b class="prompt-1"></b>
+<b class="prompt-1"></b>for name in names:
+<b class="prompt-2"></b>    greet(name)
+<b class="prompt-2"></b>
+Hello, Alice!
+Hello, Bob!
+Hello, Kathy!
+Hello, Tim!
+Hello, Hannah!
+Hello, Adam!
+Hello, Tina!
+Hello, Eric!
+Hello, Anna!
+Hello, Sam!
+</pre>
 
-***Example 7:*** *Task for you!*
+
+### <button class="btn exercise mr"></button><em class="vam">Your Task!</em>
+
+<div class="exercise before" data-before="" markdown="1">
 
 1. Using a for loop, create a list of 100 names by adding a digit from 0 to 9 to each name.
 2. Using a for loop, print greeting for each name.
 
-Do it yourself! Then, check the solution below.
+<b class="pl-2"> Do it yourself!</b> Then, check the solution below. <base class="mb">
+
+<details class="l-frame" markdown="1"><summary><b><i>See the example solution</i></b></summary>
 
 ```python
 names100 = []
@@ -659,11 +713,33 @@ for name in names100:
     greet(name)
 ```
 
-*First, we defined the empty list for a hundred new names, `names100`. Then, we used a nested loop composed of external loop over 10 digits, and internal loop over 10 names. In this case, it's an everyone-with-everyone loop, which means that the number of iterations is equal to the multiply of the lengths of both lists (i.e., digits x names = 100). For each pair name-digit we assigned a new value for the `new_name` variable and added it to the end of the list `names100`. Once the new list of names is created, we could use the same code snippet to call a greet() function for every name on the list.*
+*First, we defined the empty list for a hundred new names,* `names100`. *Then, we used a nested loop composed of external loop over 10 digits, and internal loop over 10 names. In this case, it's an everyone-with-everyone loop, which means that the number of iterations is equal to the multiply of the lengths of both lists (i.e., digits x names = 100). For each pair name-digit we assigned a new value for the* `new_name` *variable and added it to the end of the list* `names100`. *Once the new list of names is created, we could use the same code snippet to call a* `greet()` *function for every name on the list.*
+<base class="mb">
+<pre class="output">
+<b class="prompt-1"></b>names100 = []
+<b class="prompt-1"></b>for num in ['0','1','2','3','4','5','6','7','8','9']:
+<b class="prompt-2"></b>    for name in names:
+<b class="prompt-2"></b>        new_name = name+num
+<b class="prompt-2"></b>        names100 = names100 + [new_name]
+<b class="prompt-2"></b>
+<b class="prompt-1"></b>print(names100)
+['Alice0', 'Bob0', 'Kathy0', 'Tim0', 'Hannah0', 'Adam0', 'Tina0', 'Eric0', 'Anna0', 'Sam0', 'Alice1', 'Bob1', 'Kathy1', 'Tim1', 'Hannah1', 'Adam1', 'Tina1', 'Eric1', 'Anna1', 'Sam1', 'Alice2', 'Bob2', 'Kathy2', 'Tim2', 'Hannah2', 'Adam2', 'Tina2', 'Eric2', 'Anna2', 'Sam2', 'Alice3', 'Bob3', 'Kathy3', 'Tim3', 'Hannah3', 'Adam3', 'Tina3', 'Eric3', 'Anna3', 'Sam3', 'Alice4', 'Bob4', 'Kathy4', 'Tim4', 'Hannah4', 'Adam4', 'Tina4', 'Eric4', 'Anna4', 'Sam4', 'Alice5', 'Bob5', 'Kathy5', 'Tim5', 'Hannah5', 'Adam5', 'Tina5', 'Eric5', 'Anna5', 'Sam5', 'Alice6', 'Bob6', 'Kathy6', 'Tim6', 'Hannah6', 'Adam6', 'Tina6', 'Eric6', 'Anna6', 'Sam6', 'Alice7', 'Bob7', 'Kathy7', 'Tim7', 'Hannah7', 'Adam7', 'Tina7', 'Eric7', 'Anna7', 'Sam7', 'Alice8', 'Bob8', 'Kathy8', 'Tim8', 'Hannah8', 'Adam8', 'Tina8', 'Eric8', 'Anna8', 'Sam8', 'Alice9', 'Bob9', 'Kathy9', 'Tim9', 'Hannah9', 'Adam9', 'Tina9', 'Eric9', 'Anna9', 'Sam9']
+<b class="prompt-1"></b>
+<b class="prompt-1"></b>for name in names100:
+<b class="prompt-2"></b>    greet(name)
+<b class="prompt-2"></b>
+Hello, Alice0!
+Hello, Bob0!
+Hello, Kathy0!
+<b class="prompt-2"></b>
+Hello, Eric9!
+Hello, Anna9!
+Hello, Sam9!
+</pre>
 
-![]({{ images_path }}/03_python-anywhere_ex5.png)<br>
+</details>
 
-***PRO solution for example 7***
+<details class="l-frame" markdown="1"><summary><b><i>PRO solution for this task</i></b></summary>
 
 Python definitely has more built-in functions than `print()`. Knowing that others exist can make code development very easy. *Why reinvent the wheel?*
 
@@ -715,13 +791,19 @@ x = 3.14159
 y = str(x)
 print(y)              # Output: "3.14159"
 ```
+</details>
+</div>
 
-<span style="color: #ff3870;font-weight: 500;">If you have completed all the examples provided and successfully solved the assignment task, you should now be ready to start coding in Python on your own computer, which means you will need to download and set up Python locally.</span>
+<b class="c-alert mt">If you have completed all the examples provided and successfully solved the assignment task, you should now be ready to start coding in Python on your own computer, which means you will need to download and set up Python locally.</b>
 
 
 # 2. Get Python locally and start coding in the IDE
 
-Before you start programming in Python, you need to install Python and set up the development environment on your computing machine. Expolore sections provided below to select the best option for you!
+<div class="required" markdown="1">
+Before you start programming in Python, you need to install Python and set up the development environment on your computing machine.
+</div>
+
+*Expolore sections provided below to select the best option for you!*
 
 ## Get Python locally
 
