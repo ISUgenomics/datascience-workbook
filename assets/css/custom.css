@@ -101,6 +101,7 @@ h4 {font-size: 1em; font-weight: 500; letter-spacing: 0.1em;}
 .mr {margin-right: 1em !important;}
 
 .no-decoration {text-decoration: none !important;}
+.plain {font-style: normal !important;}
 .italic {font-style: italic !important;}
 .bold {font-weight: bold !important;}
 .font-1 {font-size: 1em !important;}
