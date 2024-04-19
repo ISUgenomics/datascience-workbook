@@ -290,6 +290,26 @@ such as HTML tags `<div>` or `<pre>` or <code>:
 </div>
 
 
+<details class="inline mt" markdown="1"><summary class="italic c-header">see code example (expected output annotation)</summary>
+
+```html
+<pre class="output">
+<b class="prompt-1"></b>
+<b class="prompt-1"></b>print("Hello, world!")
+Hello, world!
+<b class="prompt-1"></b>
+</pre>
+```
+</details>
+
+<pre class="output">
+<b class="prompt-1"></b>
+<b class="prompt-1"></b>print("Hello, world!")
+Hello, world!
+<b class="prompt-1"></b>
+</pre>
+
+
 <details class="inline mt" markdown="1"><summary class="italic c-header">see code example (data preserving whitespace)</summary>
 
 ```html
@@ -1389,5 +1409,6 @@ While HTML syntax makes the raw code less readable due to the verbosity and nece
 <b class="prefix-2"></b> - bullet, useful in headers
 
 <details class="l-frame" markdown="1"><summary class="c-header"><b><i>What the script does?</i></b></summary>
+
 
 -->
