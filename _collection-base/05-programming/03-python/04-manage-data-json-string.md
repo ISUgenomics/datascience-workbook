@@ -43,20 +43,24 @@ JSON (JavaScript Object Notation) format is a **lightweight data storage format*
 **JSON** is a lightweight data interchange format that is easy for humans to read and write, and easy for machines to parse and generate. It is widely used for web APIs, configuration files, and other **data exchange purposes**.
 </div>
 
-<span style="color: #ff3870;font-weight: 500;">The official documentation for the JSON module in Python can be found at <a href="https://docs.python.org/3/library/json.html" target="_blank">https://docs.python.org/3/library/json.html  ⤴</a></span>
+<div class="more" markdown="1">
+The official documentation for the JSON module in Python can be found at <a href="https://docs.python.org/3/library/json.html" target="_blank">https://docs.python.org/3/library/json.html  ⤴</a>
+</div>
 
 ## JSON format
 
-JSON format is built on two data structures: objects and arrays. <br>
-**An object is an unordered collection of key:value pairs**, where:
+JSON format is built on two data structures: **objects** and **arrays**.
+
+An **object** is an unordered collection of key:value pairs, where:
 * the **keys** (also called names) are `strings` and
-* the **values** can be any valid JSON data type (`strings`, `numbers`, `booleans`, `objects`, or `arrays`).
+* the **values** can be any valid JSON data type <br>(`strings`, `numbers`, `booleans`, `objects`, or `arrays`).
 
-**An array is an ordered list of values**, where each value can be any valid JSON data type.
+An **array** is an ordered list of values, where each value can be any valid JSON data type.
 
-In JSON, there are two main types of brackets used: <br>
-**A.** square brackets `[]` to define arrays <br>
-**B.** curly braces `{}` to define objects <br>
+
+In JSON, there are two main types of brackets used:
+* square brackets `[]` to define arrays
+* curly braces `{}` to define objects
 These two types of brackets are the building blocks of JSON data structures.
 
 ### *A. Square brackets [ ]*
@@ -145,6 +149,7 @@ Here's an example of a JSON object that contains array of objects for its "pets"
 ```
 *This JSON data represents an object with four properties: name, age, city, and pets. The name, age, and city properties are simple values (a* `string`, *a* `number`, *and a* `string`, *respectively), while the pets property is an* `array` *of objects, each representing a pet with a name and a species.*
 
+
 ## *Pros & Cons of JSON*
 
 | PROS | CONS |
@@ -155,24 +160,19 @@ Here's an example of a JSON object that contains array of objects for its "pets"
 |Widely supported across different programming languages and platforms|May not be suitable for very large datasets or applications that require real-time data processing, due to its text-based format and potential for high network traffic.|
 |Can be easily converted to and from other data formats, such as XML and CSV||
 
+
 ## *Where JSON is used?*
 
 JSON format is widely used in a variety of contexts where data needs to be exchanged between different applications and systems. **Its ease of use, readability, and flexibility make it a popular choice for data exchange and storage.**
 
 Some common applications of JSON format include:
 
-* **web API** <br>
-<i>JSON is often used as a data format for web APIs (Application Programming Interfaces), which are used to exchange data between web applications and servers. JSON is <b>easy to parse and generate</b> using JavaScript, making it a popular choice for building web APIs.</i>
-
-* **configuration files** <br>
-<i>JSON is often used to store configuration data for applications and systems. Because it is <b>easy to read and write</b>, and can be parsed by a variety of programming languages, JSON is a popular choice for storing configuration data.</i>
-
-* **Big Data** <br>
-<i>JSON is used to store and <b>exchange large amounts of data</b> in Big Data applications. Since JSON is lightweight and easily readable by both humans and machines, it can be used to store and exchange data in real-time between different parts of a Big Data system.</i>
-
-* **research data** <br>
-<i>JSON can be used to <b>store and exchange research data in a standardized format</b>, making it easier to share and reuse data across different research projects and teams. JSON is also compatible with many popular data analysis tools and libraries, making it a flexible choice for storing and analyzing research data.</i>
-
+<table>
+  <tr> <th>web API</th> <td><i>JSON is often used as a data format for web APIs (Application Programming Interfaces), which are used to exchange data between web applications and servers. JSON is <b>easy to parse and generate</b> using JavaScript, making it a popular choice for building web APIs.</i></td> </tr>
+  <tr> <th>configuration files</th> <td><i>JSON is often used to store configuration data for applications and systems. Because it is <b>easy to read and write</b>, and can be parsed by a variety of programming languages, JSON is a popular choice for storing configuration data.</i></td> </tr>
+  <tr> <th>Big Data</th> <td><i>JSON is used to store and <b>exchange large amounts of data</b> in Big Data applications. Since JSON is lightweight and easily readable by both humans and machines, it can be used to store and exchange data in real-time between different parts of a Big Data system.</i></td> </tr>
+  <tr> <th class="no-border">research data</th> <td class="no-border"><i>JSON can be used to <b>store and exchange research data in a standardized format</b>, making it easier to share and reuse data across different research projects and teams. JSON is also compatible with many popular data analysis tools and libraries, making it a flexible choice for storing and analyzing research data.</i></td> </tr>
+</table>
 
 
 # JSON in Python
@@ -188,12 +188,17 @@ The `json` module provides four main methods:
 |`json.loads()`| `object=json.loads(JSON_string)` | **takes a JSON string** and converts it into a Python object|
 |`json.load()`| `object=json.load(file)` | **reads the JSON data from a file** and converts it into a Python object.|
 
-^ *In summary,* `json.load()` *and* `json.dump()` *deal with* ***file I/O*** *operations,* <br> *while* `json.loads()` *and* `json.dumps()` *deal with* ***string I/O*** *operations.*
+<div class="note before" data-before="" markdown="1">
+In summary:
+* `json.load()` and `json.dump()` deal with **file I/O** operations,
+* while `json.loads()` and `json.dumps()` deal with **string I/O** operations.
+</div>
 
-The json module also provides other methods for more advanced use cases, such as:
+The `json` module also provides other methods for more advanced use cases, such as:
 * [encoding and decoding custom objects](#encode--decode-custom-objects),
 * [pretty-printing JSON data](#pretty-printing-json-data),
 * [controlling the encoding and decoding](#more-controlling-options) process through optional parameters.
+
 
 ## *Getting Started*
 
@@ -238,8 +243,14 @@ cities_json = json.dumps(cities_array)          # object to JSON string
 print(cities_json)
 print(type(cities_json))
 ```
-**OUTPUT:** *string*
-![03_python-module-json-o0.png]({{ images_path }}/03_python-module-json-o0.png)
+**output type:** *string*
+<pre class="output">
+<b class="prompt-1"></b>print(cities_json)
+["New York", "London", "Warsaw"]
+<b class="prompt-1"></b>
+<b class="prompt-1"></b>print(type(cities_json))
+<class 'str'>
+</pre>
 
 
 ## JSON string from Dictionary
@@ -259,8 +270,14 @@ person_json = json.dumps(person_object)          # object to JSON string
 print(person_json)
 print(type(person_json))
 ```
-**OUTPUT:** *string*
-![03_python-module-json-o1.png]({{ images_path }}/03_python-module-json-o1.png)
+**output type:** *string*
+<pre class="output">
+<b class="prompt-1"></b>print(person_json)
+["name": "John", "age": 30, "city": "New York"]
+<b class="prompt-1"></b>
+<b class="prompt-1"></b>print(type(person_json))
+<class 'str'>
+</pre>
 
 
 ## Python object from JSON string
@@ -276,8 +293,14 @@ person_object = json.loads(person_json)          # object from JSON string
 print(person_object)
 print(type(person_object))
 ```
-**OUTPUT:** *dictionary*
-![03_python-module-json-o2.png]({{ images_path }}/03_python-module-json-o2.png)
+**output type:** *dictionary*
+<pre class="output">
+<b class="prompt-1"></b>print(person_object)
+["name": "John", "age": 30, "city": "New York"]
+<b class="prompt-1"></b>
+<b class="prompt-1"></b>print(type(person_object))
+<class 'dict'>
+</pre>
 
 
 ## Accessing JSON Data
@@ -293,21 +316,26 @@ person = json.loads(person_json)          # object from JSON string
 
 print(person["name"])                     # take the element from object
 ```
-**OUTPUT:** *string*
-![03_python-module-json-o3.png]({{ images_path }}/03_python-module-json-o3.png)
+**output type:** *string*
+<pre class="output">
+<b class="prompt-1"></b>print(person["name"])
+John
+<b class="prompt-1"></b>print(type(person["name"]))
+<class 'str'>
+</pre>
+
 
 ## Reading JSON Data from a File
 
 To read JSON data from a file in Python, you can use the `json.load()` method.
 
 *Assume we have a JSON file named "data.json" with the following content:*
-<code style="background-color: #d9d9e3;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-{ <br>
- &nbsp; &nbsp; "name": "John", <br>
- &nbsp; &nbsp; "age": 30, <br>
- &nbsp; &nbsp; "city": "New York" <br>
+<code class="code-block bc-data">{
+    "name": "John",
+    "age": 30,
+    "city": "New York"
 }
-</code><br>
+</code>
 
 You can open the file and load its JSON string content directly to the Python object:
 ```python
@@ -343,7 +371,7 @@ When working with JSON in Python, you may encounter errors if the JSON data is i
 ```python
 import json
 
-person_json = '{"name": "John", "age": 30, "city": "New York"'          # invalid JSON string (missing closing curly brace)
+person_json = '{"name": "John", "age": 30, "city": "New York"'        # invalid JSON string (missing closing curly brace)
 
 try:
     person = json.loads(person_json)
@@ -351,8 +379,10 @@ try:
 except json.JSONDecodeError as e:
     print("Error decoding JSON:", e)
 ```
-**OUTPUT:** *error message*
-![03_python-module-json-o4.png]({{ images_path }}/03_python-module-json-o4.png)
+**output type:** *error message*
+<pre class="output">
+Error decoding JSON: Expecting ',' delimiter: line 1 column 47 (char 46)
+</pre>
 
 
 # Advanced JSON tasks
@@ -394,15 +424,32 @@ person_obj = Person(person_dict['name'], person_dict['age'])
 print(person_obj.name, person_obj.age)
 ```
 
-<details><summary><b>What the code does?</b></summary>
+<details class="l-frame" markdown="1"><summary class="c-header"><b><i>What the script does?</i></b></summary>
 
-In this example, (<b>#1</b>) we define a custom `Person class` with a <i>name</i> and <i>age</i> attributes. (<b>#2</b>) We also define a `encode_person()` function that takes an object and returns a dictionary with the name and age attributes if the object is an instance of the `Person` class. Otherwise, it raises a `TypeError`. <br><br>
-(<b>#3</b>) We then create a `Person object` and (<b>#4</b>) encode it to a JSON string using the `json.dumps()` method with the <b>default argument</b> set to <i>encode_person</i>. This allows us to encode our custom `Person object` to JSON. <br><br>
-(<b>#5</b>) We also decode the JSON string back to a <i>dictionary</i> using the `json.loads()` method, and create a new `Person object` from the <i>dictionary</i>.
-</details><br>
+In this example: <br>
+(**#1**) We define a custom `Person class` with a *name* and *age* attributes. <br>
+(**#2**) We also define a `encode_person()` function that takes an object and returns a dictionary with the name and age attributes if the object is an instance of the `Person` class. Otherwise, it raises a `TypeError`. <br>
+(**#3**) We then create a `Person object` and <br>
+(**#4**) encode it to a JSON string using the `json.dumps()` method with the **default argument** set to *encode_person*. This allows us to encode our custom `Person object` to JSON. <br>
+(**#5**) We also decode the JSON string back to a *dictionary* using the `json.loads()` method, and create a new `Person object` from the *dictionary*.
+</details>
 
-**OUTPUT:**
-![03_python-module-json-o5.png]({{ images_path }}/03_python-module-json-o5.png)
+<pre class="output">
+<b class="prompt-1"></b>print(person_json)
+{"name": "John", "age": 30}
+<b class="prompt-1"></b>print(type(person_json))
+<class 'str'>
+
+<b class="prompt-1"></b>print(person_dict)
+{'name': 'John', 'age': 30}
+<b class="prompt-1"></b>print(type(person_dict))
+<class 'dict'>
+
+<b class="prompt-1"></b>print(person_obj.name, person_obj.age)
+John 30
+<b class="prompt-1"></b>print(type(person_obj))
+<class '__main__.Person'>
+</pre>
 
 
 ## Pretty-printing JSON data
@@ -422,13 +469,19 @@ person_json_pretty = json.dumps(person, indent=4)
 print(person_json_pretty)
 ```
 
-<details><summary><b>What the code does?</b></summary>
+<details class="l-frame" markdown="1"><summary class="c-header"><b><i>What the script does?</i></b></summary>
 
-In this example, we create a Python <i>dictionary</i> with "name", "age", and "city" keys. We then encode the dictionary to a JSON string using the `json.dumps()` method with the <b>indent</b> argument set to 4. This formats the JSON string with 4 spaces for each level of indentation, making it more readable.
-</details><br>
+In this example, we create a Python *dictionary* with "name", "age", and "city" keys. We then encode the dictionary to a JSON string using the `json.dumps()` method with the **indent** argument set to 4. This formats the JSON string with 4 spaces for each level of indentation, making it more readable.
+</details>
 
-**OUTPUT:**
-![03_python-module-json-o6.png]({{ images_path }}/03_python-module-json-o6.png)
+<pre class="output">
+<b class="prompt-1"></b>print(person_json_pretty)
+{
+    "name": "John",
+    "age": 30,
+    "city": "New York"
+}
+</pre>
 
 
 ## More controlling options
@@ -454,14 +507,19 @@ person_json_custom = json.dumps(person, ensure_ascii=False, sort_keys=True, skip
 print(person_json_custom)
 ```
 
-<details><summary><b>What the code does?</b></summary>
+<details class="l-frame" markdown="1"><summary class="c-header"><b><i>What the script does?</i></b></summary>
 
-In this example, we create a Python <i>dictionary</i> with "name", "age", and "city" keys. We then encode the <i>dictionary</i> to a JSON string using the `json.dumps()` method with the <b>ensure_ascii</b>, <b>sort_keys</b>, and <b>skipkeys</b> arguments set to <i>False</i>, <i>True</i>, and <i>True</i>, respectively.
+In this example, we create a Python *dictionary* with "name", "age", and "city" keys. We then encode the *dictionary* to a JSON string using the `json.dumps()` method with the **ensure_ascii**, **sort_keys**, and **skipkeys** arguments set to `False`, and `True`, respectively.
 
-<li><b>ensure_ascii=False</b> ensures that non-ASCII characters are not escaped, which can make the JSON string more readable.</li>
-<li><b>sort_keys=True</b> sorts the keys in the JSON object alphabetically, making it easier to compare and search for specific keys.</li>
-<li><b>skipkeys=True</b> skips any keys in the dictionary that are not basic Python types (<i>str, int, float, bool, None</i>), which can prevent `TypeError` errors when encoding the dictionary to JSON.</li>
-</details><br>
+| argument             | description |
+|----------------------|-------------|
+| `ensure_ascii=False` | Ensures that non-ASCII characters are not escaped, which can make the JSON string more readable. |
+| `sort_keys=True`     | Sorts the keys in the JSON object alphabetically, making it easier to compare and search for specific keys. |
+| `skipkeys=True`      | Skips any keys in the dictionary that are not basic Python types (*str, int, float, bool, None*), which can prevent `TypeError` errors when encoding the dictionary to JSON. |
 
-**OUTPUT:**
-![03_python-module-json-o7.png]({{ images_path }}/03_python-module-json-o7.png)
+</details>
+
+<pre class="output">
+<b class="prompt-1"></b>print(person_json_custom)
+{"age": 30, "city": "New York", "name": "John"}
+</pre>

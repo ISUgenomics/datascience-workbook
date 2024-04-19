@@ -25,33 +25,33 @@ tags: []
 * data cleaning,
 * data organization,
 
-making it a popular choice for data scientists, analysts, and developers who work with large datasets.
+making it a popular choice for data scientists, analysts, and developers who work with large datasets and require efficient and scalable solutions for their data-related tasks.
 
-The library is built on top of the <a href="https://numpy.org/doc/" target="_blank">NumPy  ⤴</a> library and provides **two primary data structures**:
+Pandas is built on top of the <a href="https://numpy.org/doc/" target="_blank">NumPy  ⤴</a> library and provides **two primary data structures**:
 
-| `Series` | `DataFrame` |
-|----------|-------------|
-|A Series is a **one-dimensional array-like object** that can hold any data type.|A DataFrame is a **two-dimensional tabular data structure** that consists of rows and columns.|
-|<i># Creating a Pandas Series with some data<br></i> <br>`s = pd.Series([1, 3, 5, 7])`| <i># Creating a Pandas DataFrame with some data</i><br><br>`data = {'name': ['Alice', 'Bob'], 'age': [25, 32]}` <br>`df = pd.DataFrame(data)`|
-|<i># Printing the Series</i><br>0 &emsp; 1<br>1 &emsp; 3<br>2 &emsp; 5<br>3 &emsp; 7<br>dtype: int64|<i># Printing the DataFrame</i><br>   &emsp; &emsp;name  &emsp;age<br>0  &emsp; Alice &emsp; 25<br>1 &emsp;&nbsp; Bob &emsp;&nbsp; 32|
+<table>
+  <tr> <th width="50%" class="center-h">Series</th> <th class="center-h">DataFrame</th> </tr>
+  <tr> <td>A Series is a <b>one-dimensional array-like object</b> that can hold any data type.</td> <td>A DataFrame is a <b>two-dimensional tabular data structure</b> that consists of rows and columns.</td> </tr>
+  <tr>
+    <td><i># Creating a Pandas Series with some data</i>    <base class="mb"> <code class="code-block">s = pd.Series([1, 3, 5])<br> </code></td>
+    <td><i># Creating a Pandas DataFrame with some data</i> <base class="mb"> <code class="code-block">data = {'name': ['Alice', 'Bob'], 'age': [25, 32]}<br>df = pd.DataFrame(data)</code></td>
+  </tr>
+  <tr>
+    <td class="no-border"><i># Printing the Series</i>    <base class="mb"> <pre class="output">0    1<br>1    3<br>2    5<br>dtype: int64</pre></td>
+    <td class="no-border"><i># Printing the DataFrame</i> <base class="mb"> <pre class="output">       name    age<br>0      Alice   25<br>1      Bob     32<br> </pre></td>
+  </tr>
+</table><base class="mt">
 
-Some of the key features of the Pandas library include:
 
-* **Input-Output (IO) operations** <br>
-<i>The library can read and write data from a variety of sources, including CSV, Excel, and SQL databases.</i>
+**Some of the key features of the Pandas library include:**
 
-* **Data cleaning** <br>
-<i>The library makes it easy to handle missing or duplicate data, and provides tools for data normalization and standardization.</i>
-
-* **Data manipulation** <br>
-<i>Pandas provides a wide range of functions for manipulating and transforming data, such as merging, grouping, and pivoting.</i>
-
-* **Data visualization** <br>
-<i>Pandas includes built-in tools for creating basic visualizations, such as bar charts and scatter plots.</i>
-
-* **High performance** <br>
-<i>Pandas is optimized for performance, with functions that are designed to handle large datasets efficiently.</i>
-
+<table>
+  <tr> <th>Input-Output (IO) operations</th> <td><i>The library can read and write data from a variety of sources, including CSV, Excel, and SQL databases.</i></td> </tr>
+  <tr> <th>Data cleaning</th> <td><i>The library makes it easy to handle missing or duplicate data, and provides tools for data normalization and standardization.</i></td> </tr>
+  <tr> <th>Data manipulation</th> <td><i>Pandas provides a wide range of functions for manipulating and transforming data, such as merging, grouping, and pivoting.</i></td> </tr>
+  <tr> <th>Data visualization</th> <td><i>Pandas includes built-in tools for creating basic visualizations, such as bar charts and scatter plots.</i></td> </tr>
+  <tr> <th>High performance</th> <td><i>Pandas is optimized for performance, with functions that are designed to handle large datasets efficiently.</i></td> </tr>
+</table>
 
 <div class="protip" markdown="1">
 For numerical and scientific computing, `numpy` and `scipy` are often the go-to options, while for data manipulation and analysis, `pandas` and other packages such as `dask` and `pyspark` may be more appropriate. <base class="mb">
@@ -69,7 +69,9 @@ For numerical and scientific computing, `numpy` and `scipy` are often the go-to 
 
 # Getting started with Pandas
 
+<div class="required" markdown="1">
 Pandas is NOT a built-in Python module, meaning it is not included with the standard Python distribution. To use Pandas in your Python environment, you will need to install it separately.
+</div>
 
 ## Install `pandas` library
 
@@ -77,7 +79,7 @@ To install Pandas, you can use `pip`, which is the standard package installer fo
 ```bash
 pip install pandas
 ```
-
+<base class="mt">
 An alternative way to install Pandas is using Conda. This way you can install different variants of `pandas` library in separate virtual environments, depending on the requirements of your project. You can create and activate a new conda environment, and then install `pandas` libarary:
 ```bash
 conda install pandas
@@ -99,15 +101,14 @@ After installation, you need to import Pandas in your Python code using the foll
 ```python
 import pandas as pd
 ```
-This will import the Pandas library and give it an alias of `pd`, which is a commonly used abbreviation for Pandas.
+*This will import the Pandas library and give it an alias of* `pd`, *which is a commonly used abbreviation for Pandas.*
 
 You can then use the Pandas functions and classes in your code by prefixing them with **pd**, such as `pd.DataFrame` or `pd.read_csv`.
 
----
 
-# Data manipulation with `pandas`
+# Data manipulation
 
-Pandas is a powerful Python library for data manipulation and analysis that provides easy-to-use and **efficient data structures** for handling tabular, structured, and time-series data. With its rich functionality and flexible syntax, Pandas is a powerful tool for data analysis and manipulation in Python.
+Pandas is a powerful Python library for data manipulation and analysis that provides easy-to-use and **efficient data structures** for handling tabular, structured, and time-series data. With its rich functionality and flexible syntax, Pandas is a powerful tool for data wrangling and advanced analysis in Python.
 
 Here is an index of data manipulation tasks with Pandas:
 
@@ -119,11 +120,11 @@ Here is an index of data manipulation tasks with Pandas:
 5. [Aggregating data](#aggregate-data)
 
 
-## Create Pandas objects
+## **Create Pandas objects**
 
 In Pandas, there are two main types of objects: `Series` and `DataFrame`.
 
-### `Series` object
+### `Series` *object*
 
 In Pandas, a **Series is a one-dimensional labeled data structure** that can hold any data type, such as integers, floats, strings, or even complex objects. It is similar to a **column in a DataFrame** or a one-dimensional array in NumPy or a column in a spreadsheet.
 
@@ -139,10 +140,10 @@ Here's an example of a simple Series:
 3      Jill
 Name: Name, dtype: object
 ```
-*In this example, we have a Series with four values, which are strings representing names. The index labels each value with a number from 0 to 3. The label "Name" at the end of the Series specifies the name of the Series.*
+*In this example, we have a* `Series` *with four values, which are strings representing names. The index labels each value with a number from 0 to 3. The label "Name" at the end of the Series specifies the name of the Series.*
 
 
-### `DataFrame` object
+### `DataFrame` *object*
 
 In Pandas, a `DataFrame` is a 2-dimensional labeled data structure with columns of potentially different data types. It is similar to a table in a relational database or a spreadsheet. It can hold multiple Series objects of different data types and allows you to perform operations on the entire data set, such as merging, grouping, filtering, and sorting.
 
@@ -156,18 +157,23 @@ Here's an example of a simple DataFrame:
 2  Jack    35     Paris
 3  Jill    40     Tokyo
 ```
-
 *In this example, we have a* `DataFrame` *with four rows and three columns: "Name", "Age", and "City". The first column contains strings (the names), the second column contains integers (the ages), and the third column contains strings (the cities).*
 
+<div class="note" markdown="1">
 **The rows and columns in a DataFrame are labeled, which means you can access the data using the labels.**
 * The row labels are called the `index`.
 * The column labels are called the `column names`.
-
+</div>
+<div class="protip" markdown="1">
 You can think of a `DataFrame` as a dictionary of `Series` objects, where **each column is a Series**.
+</div>
 
-### Other Pandas objects
 
-Pandas also provides Index objects such as Index, Numeric Index, CategoricalIndex, IntervalIndex, MultiIndex, DatetimeIndex, TimeDeltaIndex, PeriodIndex (see <a href="https://pandas.pydata.org/docs/reference/indexing.html#index-objects" target="_blank">Pandas documentation  ⤴</a> for details). They are used to label and index the data in Series and DataFrame objects.
+### `Index` *objects*
+
+Pandas also provides **Index objects** such as `Index`, `Numeric Index`, `CategoricalIndex`, `IntervalIndex`, `MultiIndex`, `DatetimeIndex`, `TimeDeltaIndex`, `PeriodIndex`. They are used to label and index the data in Series and DataFrame objects. <base class="mb">
+<button class="btn more"></button> ...from <a href="https://pandas.pydata.org/docs/reference/indexing.html#index-objects" target="_blank">Pandas documentation  ⤴</a>
+
 
 ### *Create a Series*
 
@@ -181,15 +187,16 @@ s = pd.Series([25, 30, 35, 40], index=['John', 'Jane', 'Jack', 'Jill'])
 # print the Series
 print(s)
 ```
-*In this example, we use the* `pd.Series()` *constructor function to create a Series. We pass a list of four values and a list of four index labels. The resulting Series has the values and index labels specified:*
+*In this example, we use the* `pd.Series()` *constructor function to create a Series. We pass a list of four values and a list of four index labels.*
 
-<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;"><br>
-John    25 <br>
-Jane    30 <br>
-Jack    35 <br>
-Jill    40 <br>
-dtype: int64 <br>
-</code><br>
+The resulting Series has the values and index labels specified:
+<pre class="output">
+John    25
+Jane    30
+Jack    35
+Jill    40
+<i>dtype: int64</i>
+</pre>
 
 
 ### *Create an empty DataFrame*
@@ -204,19 +211,16 @@ df = pd.DataFrame()
 # print the DataFrame
 print(df)
 ```
-This will create an empty `DataFrame` with no rows or columns:
-
-<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;"><br>
-Empty DataFrame <br>
-Columns: [] <br>
-Index: [] <br>
-</code>
-
-<div class="protip" markdown="1">
-You can create an empty `DataFrame` in Pandas and add data to it later using the `df.append()` method.
-</div>
+*This will create an empty* `DataFrame` *with no rows or columns:*
+<pre class="output">
+<i>Empty DataFrame</i>
+Columns: []
+Index: []
+</pre>
 
 <div class="protip" markdown="1">
+You can create an empty `DataFrame` in Pandas and add data to it later using the `df.append()` method. <base class="mt">
+
 While using `df` as a variable name for a Pandas `DataFrame` object is a common convention, it's generally a better practice to **use a more descriptive and unique name** that corresponds to the content of the DataFrame. <br>
 This is particularly <u>important if you're working with multiple DataFrames</u> in your code, as using the same variable name for multiple objects can lead to confusion and errors. By choosing a more descriptive name, you can help make your code more readable and understandable to others (and your future self!).
 </div>
@@ -236,15 +240,15 @@ df = pd.DataFrame(columns=['name', 'age', 'city'], dtype=str)
 # print the DataFrame
 print(df)
 ```
-*In this example, we use the pd.DataFrame() constructor function to create an empty DataFrame. We pass a dictionary containing the column names as keys and the data types as values. We set the data type to str for all columns.*
+*In this example, we use the* `pd.DataFrame()` *constructor function to create an empty DataFrame. We pass a dictionary containing the column names as keys and the data types as values. We set the data type to str for all columns.*
 
 The resulting DataFrame has the specified column names and data types, but no rows:
 
-<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-Empty DataFrame <br>
-Columns: [name, age, city] <br>
-Index: [] <br>
-</code>
+<pre class="output">
+<i>Empty DataFrame</i>
+Columns: [name, age, city]
+Index: []
+</pre>
 
 You can then add data to this DataFrame using the `df.append()` method.
 
@@ -270,17 +274,17 @@ df = pd.DataFrame(values)
 # print the DataFrame
 print(df)
 ```
-*This code creates a DataFrame with a single column containing the values 'apple', 'banana', 'cherry', and 'date'*
+*This code creates a* `DataFrame` *with a single column containing the values 'apple', 'banana', 'cherry', and 'date'*
 
-<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-&emsp; &emsp; 0 <br>
-0   apple <br>
-1  banana <br>
-2  cherry <br>
-3    date <br>
-</code><br>
+<pre class="output">
+        0
+0   apple
+1  banana
+2  cherry
+3    date
+</pre>
 
-
+<base class="mt">
 **DataFrame from a dictionary** <br>
 To create a `DataFrame` from a dictionary, you can pass the dictionary to the `pd.DataFrame()` constructor function. By default, Pandas will create a DataFrame with one column for each key in the dictionary, with the column name corresponding to the key name.
 ```python
@@ -297,21 +301,20 @@ df = pd.DataFrame(data)
 # print the DataFrame
 print(df)
 ```
-*This code creates a DataFrame with three columns corresponding to the keys in the dictionary: 'name', 'age', and 'city'.*
+*This code creates a* `DataFrame` *with three columns corresponding to the keys in the dictionary: 'name', 'age', and 'city'.*
 
 The values in each column correspond to the values in the corresponding dictionary values:
+<pre class="output">
+      name   age  city
+0    Alice   25   New York
+1      Bob   30   Los Angeles
+2  Charlie   35   Chicago
+</pre>
 
-<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-&emsp; &emsp;&emsp; name &emsp; age &emsp; city <br>
-0 &emsp; Alice &emsp;&emsp; 25 &emsp; New York <br>
-1 &emsp; &emsp; Bob &emsp;&emsp; 30 &emsp; Los Angeles <br>
-2  Charlie &emsp;&emsp; 35 &emsp; Chicago <br>
-</code>
 
+## **Add data**
 
-## Add data
-
-### *to empty DataFrame*
+### <b class="prefix-2"></b>*to empty DataFrame*
 
 To add data to an empty DataFrame, you can use the `df.append()` method. This method appends rows of data to the end of the DataFrame.
 
@@ -320,11 +323,12 @@ The `df.append()` method takes a dictionary or `Series` object containing the va
 </div>
 
 Let's assume we have an empty DataFrame:
-<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-import pandas as pd <br><br>
-&#9839; create an empty DataFrame <br>
-df = pd.DataFrame() <br>
-</code>
+```python
+import pandas as pd
+
+# create an empty DataFrame
+df = pd.DataFrame()
+```
 
 We can add some data to the DataFrame using `df.append()` method:
 ```python
@@ -342,20 +346,18 @@ The `ignore_index=True` argument tells **Pandas** to ignore any existing index l
 </div>
 
 The `print()` function displays the DataFrame with the added data:
+<pre class="output">
+      name   age  city
+0    Alice   25   New York
+1      Bob   30   Los Angeles
+2  Charlie   35   Chicago
+</pre>
 
-<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-&emsp; &emsp;&emsp; name &emsp;  age &emsp; city <br>
-0 &emsp;  Alice &emsp;&emsp; 25 &emsp;  New York <br>
-1 &emsp;&emsp;&emsp; Bob &emsp;&emsp; 30 &emsp;  Los Angeles <br>
-2  Charlie &emsp;&emsp; 35 &emsp; Chicago <br>
-</code><br>
 
-
-### *new row to existing DataFrame*
+### <b class="prefix-2"></b>*new row to existing DataFrame*
 
 **add a new row with data** <br>
-To add new data as a new row to an existing DataFrame in Pandas, you can use the `append()` method. <br>
-*(Let's use the **df** DataFrame object from previous example.)*
+To add new data as a new row to an existing DataFrame in Pandas, you can use the `append()` method. *(Let's use the* `df` *DataFrame object from previous example.)*
 ```python
 # add new data to the DataFrame
 df = df.append({'name': 'David', 'age': 28, 'city': 'Miami'}, ignore_index=True)
@@ -363,20 +365,19 @@ df = df.append({'name': 'Emily', 'age': 27, 'city': 'San Francisco'}, ignore_ind
 
 print(df)
 ```
-*We just added two more rows of data to the DataFrame using append() method. The ignore_index=True parameter ensures that the new rows are added with consecutive row numbers.*
+*We just added two more rows of data to the DataFrame using* `append()` *method. The* `ignore_index=True` *parameter ensures that the new rows are added with consecutive row numbers.*
 
 The output of this code will be a DataFrame with five rows of data, including the new rows added at the end:
+<pre class="output">
+      name   age  city
+0    Alice    25  New York
+1      Bob    30  Los Angeles
+2  Charlie    35  Chicago
+3    David    28  Miami
+4    Emily    27  San Francisco
+</pre>
 
-<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-&emsp; &emsp;&emsp; name &emsp;  age &emsp; city <br>
-0 &emsp;  Alice &emsp;&emsp; 25 &emsp;  New York <br>
-1 &emsp;&emsp;&emsp; Bob &emsp;&emsp; 30 &emsp;  Los Angeles <br>
-2  Charlie &emsp;&emsp; 35 &emsp; Chicago <br>
-3 &emsp; David &emsp;&emsp; 28 &emsp; Miami <br>
-4 &emsp; Emily &emsp;&emsp; 27 &emsp; San Francisco
-</code><br>
-
-
+<base class="mt">
 **add a new row with data** <br>
 In Pandas, you can add a new empty row to a DataFrame by appending a new empty dictionary to the DataFrame using the append method.
 ```python
@@ -385,25 +386,24 @@ df = df.append({}, ignore_index=True)
 
 print(df)
 ```
-*In this example, we added a new empty row to the DataFrame by appending an empty dictionary to it using the append method and setting the ignore_index parameter to True to ensure that the index of the new row is automatically assigned.*
+*In this example, we added a new empty row to the* `DataFrame` *by appending an empty dictionary to it using the append method and setting the* `ignore_index` *parameter to* `True` *to ensure that the index of the new row is automatically assigned.*
 
 The output of this code will be a DataFrame with six rows and three columns, including the new empty row:
-
-<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-&emsp; &emsp;&emsp; name &emsp;  age &emsp; city <br>
-0 &emsp;  Alice &emsp;&emsp; 25 &emsp;  New York <br>
-1 &emsp;&emsp;&emsp; Bob &emsp;&emsp; 30 &emsp;  Los Angeles <br>
-2  Charlie &emsp;&emsp; 35 &emsp; Chicago <br>
-3 &emsp; David &emsp;&emsp; 28 &emsp; Miami <br>
-4 &emsp; Emily &emsp;&emsp; 27 &emsp; San Francisco <br>
-5 &emsp; &emsp; NaN &emsp; NaN &emsp; NaN
-</code><br>
+<pre class="output">
+      name   age  city
+0    Alice    25  New York
+1      Bob    30  Los Angeles
+2  Charlie    35  Chicago
+3    David    28  Miami
+4    Emily    27  San Francisco
+5      NaN   NaN  NaN
+</pre>
 
 <div class="warning" markdown="1">
 Note that the <u>values in the new empty row</u> are represented as `NaN` (Not a Number), which is the default value for missing or undefined data in **Pandas**.
 </div>
 
-### *new column to existing DataFrame*
+### <b class="prefix-2"></b>*new column to existing DataFrame*
 
 **add a column with values** <br>
 To add a new column to an existing DataFrame in Pandas, you can simply assign a new column with a name and values to the DataFrame.
@@ -415,21 +415,22 @@ df['gender'] = ['F', 'M', 'M', 'M', 'F']
 
 print(df)
 ```
-*In this example, we added a new column called 'gender' to the DataFrame by assigning a list of values to it using the square bracket notation.* ***Note that the length of the list must match the number of rows in the DataFrame.***
+*In this example, we added a new column called 'gender' to the* `DataFrame` *by assigning a list of values to it using the square bracket notation.* <br>
+<p class="footnote c-alert mt-">* Note that the length of the list must match the number of rows in the DataFrame.</p>
+
 
 The output of this code will be a DataFrame with four columns, including the new 'gender' column:
+<pre class="output">
+      name   age  city           gender
+0    Alice    25  New York            F
+1      Bob    30  Los Angeles         M
+2  Charlie    35  Chicago             M
+3    David    28  Miami               M
+4    Emily    27  San Francisco       F
+5      NaN   NaN  NaN               NaN
+</pre>
 
-<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-&emsp; &emsp;&emsp; name &emsp;  age &emsp; city &emsp; &emsp; &emsp; &emsp; &emsp; gender <br>
-0 &emsp;  Alice &emsp;&emsp; 25 &emsp;  New York &emsp; &emsp; &emsp; &emsp; &emsp;&emsp; F <br>
-1 &emsp;&emsp;&emsp; Bob &emsp;&emsp; 30 &emsp;  Los Angeles &emsp; &emsp; &emsp; &emsp; M <br>
-2  Charlie &emsp;&emsp; 35 &emsp; Chicago &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; M  <br>
-3 &emsp; David &emsp;&emsp; 28 &emsp; Miami &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; M  <br>
-4 &emsp; Emily &emsp;&emsp; 27 &emsp; San Francisco &emsp; &emsp; &emsp; F  <br>
-5 &emsp; &emsp; NaN &emsp; NaN &emsp; NaN &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; NaN  
-</code><br>
-
-
+<base class="mt">
 **add an empty column** <br>
 To add an empty column to an existing DataFrame in Pandas, you can simply assign an empty Series with a name to the DataFrame.
 
@@ -440,132 +441,181 @@ df['income'] = pd.Series(dtype=float)
 
 print(df)
 ```
-*In this example, we added an empty column called 'income' to the DataFrame by assigning an empty Pandas Series with a data type (dtype) of float to it using the square bracket notation.*
+*In this example, we added an empty column called 'income' to the* `DataFrame` *by assigning an empty Pandas* `Series` *with a data type (dtype) of float to it using the square bracket notation.*
 
 The output of this code will be a DataFrame with four columns, including the new empty 'income' column:
-
-<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-&emsp; &emsp;&emsp; name &emsp;  age &emsp; city &emsp; &emsp; &emsp; &emsp; &emsp; gender &emsp; income<br>
-0 &emsp;  Alice &emsp;&emsp; 25 &emsp;  New York &emsp; &emsp; &emsp; &emsp; &emsp;&emsp; F &emsp; &emsp;&emsp; NaN<br>
-1 &emsp;&emsp;&emsp; Bob &emsp;&emsp; 30 &emsp;  Los Angeles &emsp; &emsp; &emsp; &emsp; M &emsp; &emsp;&emsp; NaN<br>
-2  Charlie &emsp;&emsp; 35 &emsp; Chicago &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; M  &emsp; &emsp;&emsp; NaN<br>
-3 &emsp; David &emsp;&emsp; 28 &emsp; Miami &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; M  &emsp; &emsp;&emsp; NaN<br>
-4 &emsp; Emily &emsp;&emsp; 27 &emsp; San Francisco &emsp; &emsp; &emsp; F &emsp; &emsp;&emsp; NaN <br>
-5 &emsp; &emsp; NaN &emsp; NaN &emsp; NaN &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; NaN &emsp; &emsp;&emsp; NaN
-</code><br>
+<pre class="output">
+      name   age  city           gender  income
+0    Alice    25  New York            F     NaN
+1      Bob    30  Los Angeles         M     NaN
+2  Charlie    35  Chicago             M     NaN
+3    David    28  Miami               M     NaN
+4    Emily    27  San Francisco       F     NaN
+5      NaN   NaN  NaN               NaN     NaN
+</pre>
 
 <div class="warning" markdown="1">
 Note that the <u>values in the new empty column</u> are represented as `NaN` (Not a Number), which is the default value for missing or undefined data in **Pandas**.
 </div>
 
 
-## Access data
+## **Access data**
 
-### *in the Series*
+### *in the* `Series`
 
 Let's assume we have a Pandas Series:
 
-<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-import pandas as pd <br><br>
-&#9839; create a Pandas Series with four values <br>
+```python
+import pandas as pd
+
+# create a Pandas Series with four values
 s = pd.Series([25, 30, 35, 40], index=['John', 'Jane', 'Jack', 'Jill'])
-</code>
+```
 
 We can access the values and index labels of the Series using indexing:
 ```python
 # access the value for 'Jane'
 print(s['Jane'])
 ```
-**OUTPUT:** 30<br>
+<pre class="output">30</pre>
 
 ```python
 # access the values for 'Jane' and 'Jack'
 print(s[['Jane', 'Jack']])
 ```
-**OUTPUT:**
-<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-Jane    30 <br>
-Jack    35 <br>
-dtype: int64
-</code><br>
+<pre class="output">
+Jane    30
+Jack    35
+<i>dtype: int64</i>
+</pre>
 
 ```python
 # access the values greater than 30
 print(s[s > 30])
 ```
-**OUTPUT:**
-<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-Jack    35 <br>
-Jill    40 <br>
-dtype: int64
-</code><br>
+<pre class="output">
+Jack    35
+Jill    40
+<i>dtype: int64</i>
+</pre>
 
 
-### *in the DataFrame*
+### *in the* `DataFrame`
 
 Let's assume we have a Pandas DataFrame:
 
-<code style="background-color: #d9d9e3;   padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-import pandas as pd <br><br>
-&#9839; create the DataFrame <br>
+```python
+import pandas as pd
+
+# create the DataFrame
 df = pd.DataFrame({'name': ['Alice', 'Bob', 'Charlie'], 'age': [25, 30, 35], 'city': ['New York', 'Los Angeles', 'Chicago']})
-</code>
+```
 
 The `print()` function displays the DataFrame:
+```python
+print(df)
+```
+<pre class="output">
+      name  age         city
+0    Alice   25     New York
+1      Bob   30  Los Angeles
+2  Charlie   35      Chicago
+</pre>
 
-<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-&emsp; &emsp;&emsp; name &emsp;  age &emsp; city <br>
-0 &emsp;  Alice &emsp;&emsp; 25 &emsp;  New York <br>
-1 &emsp;&emsp;&emsp; Bob &emsp;&emsp; 30 &emsp;  Los Angeles <br>
-2  Charlie &emsp;&emsp; 35 &emsp; Chicago <br>
-</code><br>
+<div class="note" markdown="1">
+In Pandas, you can **access data in a DataFrame using indexing and slicing.**
+</div>
 
+Here are some examples of how to access data in the DataFrame `df`:
 
-In Pandas, you can **access data in a DataFrame using indexing and slicing.** Here are some examples of how to access data in the DataFrame ***df***:
-
-**A. Access a single column by name:**
+<details class="l-frame" markdown="1"><summary><b>A. Access a single column by name</b></summary>
 
 ```python
 series_col = df['name']
 ```
 *This returns a Pandas Series object containing the values in the 'name' column.*
+<pre class="output">
+<b class="prompt-1"></b>print(series_col)
+0      Alice
+1        Bob
+2    Charlie
+</pre>
+</details>
 
-**B. Access multiple columns by name:**
+
+<details class="l-frame" markdown="1"><summary><b>B. Access multiple columns by name</b></summary>
 
 ```python
 new_df_col = df[['name', 'age']]
 ```
 *This returns a new DataFrame containing only the 'name' and 'age' columns.*
+<pre class="output">
+<b class="prompt-1"></b>new_df_col
+      name  age
+0    Alice   25
+1      Bob   30
+2  Charlie   35
+</pre>
+</details>
 
-**C. Access a single row by index:**
+
+<details class="l-frame" markdown="1"><summary><b>C. Access a single row by index</b></summary>
 
 ```python
 series_row = df.loc[0]
 ```
 *This returns a Series object containing the values in the first row of the DataFrame (index 0).*
+<pre class="output">
+<b class="prompt-1"></b>series_row
+name       Alice
+age           25
+city    New York
+</pre>
+</details>
 
-**D. Access multiple rows by index:**
+
+<details class="l-frame" markdown="1"><summary><b>D. Access multiple rows by index</b></summary>
 
 ```python
 new_df_row = df.loc[0:1]
 ```
 *This returns a new DataFrame containing the first two rows of the DataFrame (indexes 0 and 1).*
+<pre class="output">
+<b class="prompt-1"></b>new_df_row
+    name  age         city
+0  Alice   25     New York
+1    Bob   30  Los Angeles
+</pre>
+</details>
 
-**E. Access a single value by row and column index:**
+
+<details class="l-frame" markdown="1"><summary><b>E. Access a single value by row and column index</b></summary>
 
 ```python
 this_value = df.loc[0, 'name']
 ```
 *This returns the value in the first row and 'name' column of the DataFrame (which is 'Alice' in this example).*
+<pre class="output">
+<b class="prompt-1"></b>this_value
+'Alice'
+</pre>
+</details>
 
-**F. Access a subset of rows and columns using boolean indexing:**
+
+<details class="l-frame" markdown="1"><summary><b>F. Access a subset of rows and columns using boolean indexing</b></summary>
 
 ```python
-new_df_subset = df[(df['age'] > 25) & (df['city'] == 'New York')][['name', 'age']]
+new_df_subset = df[(df['age'] > 25) & (df['city'] == 'Chicago')][['name', 'age']]
 ```
-*This returns a new DataFrame containing only the 'name' and 'age' columns for the rows where the age is greater than 25 and the city is 'New York'.*
+*This returns a new DataFrame containing only the 'name' and 'age' columns for the rows where the age is greater than 25 and the city is 'Chicago'.*
+<pre class="output">
+<b class="prompt-1"></b>new_df_subset
+      name  age
+2  Charlie   35
+</pre>
+</details>
 
-<div class="protip" markdown="1">
+<div class="protip mt" markdown="1">
 Note that there are many other ways to access data in a `DataFrame` in Pandas, such as: <base class="mb">
 * using integer indexing with the `iloc` method,
 * using advanced indexing techniques like `.loc[]` and `.iloc[]`.
@@ -573,21 +623,35 @@ Note that there are many other ways to access data in a `DataFrame` in Pandas, s
 The best method to use depends on the specific task at hand.
 </div>
 
-<span style="color: #ff3870;font-weight: 500;">Learn more about Pandas indexing and selecting data from the official documentation:</span>
+<div class="more" markdown="1">
+Learn more about Pandas indexing and selecting data from the official documentation:
 * <a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html" target="_blank">Indexing and selecting data  ⤴</a>
 * <a href=" https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#indexing-label" target="_blank"><b>.loc[]</b>: Selection by label  ⤴</a>
 * <a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#selection-by-position" target="_blank"><b>.iloc[]</b>: Selection by position  ⤴</a>
+</div>
 
 
-## Load data from a file
+## **Load data from a file**
 
 Pandas provides functions for reading data from a variety of sources, including:
-* CSV files, &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; `pd.read_csv()`
-* Excel spreadsheets, &emsp; &emsp;
-* SQL databases, &emsp; &emsp; &emsp;
-* and more.
+
+| function          | file type          | tutorial                         |
+|-------------------|--------------------|----------------------------------|
+| `pd.read_csv()`   | CSV files          | [example](#csv-read_csv)         |
+| `pd.read_excel()` | Excel spreadsheets | [example](#excelxlsx-read_excel) |
+| `pd.read_sql()`   | SQL databases      | [example](#sql-read_sql)         |
+| `pd.read_json()`  | JSON files         | [example](#json-read_json)       |
+| `pd.read_html()`  | HTML code          | [example](#html-read_html)       |
+
+...and more. <button class="btn more"></button> from <a href="https://pandas.pydata.org/pandas-docs/stable/reference/io.html" target="_blank">Pandas : Input/Output</a>
+
 
 ### CSV: `read_csv()`
+
+<div class="note" markdown="1">
+The `pd.read_csv()` function is a convenient way to read in data from a CSV or TXT file and convert it to a DataFrame object. While importing data from a file, you can also handle various data types and missing values, facilitating seamless data manipulation and analysis in Python.
+</div>
+
 You can use the `pd.read_csv()` function to read data from a CSV file, for example:
 ```python
 import pandas as pd
@@ -595,8 +659,7 @@ import pandas as pd
 # Load data from a CSV file
 df = pd.read_csv('data.csv')
 ```
-
-*In this example, we're using Pandas to load data from a CSV file called "data.csv" and store it in a `DataFrame` called* **df**. *The* `pd.read_csv()` *function is a convenient way to read in data from a CSV file and convert it to a DataFrame object.*
+*In this example, we're using Pandas to load data from a CSV file called "data.csv" and store it in a `DataFrame` called* **df**.
 
 ### EXCEL/XLSX: `read_excel()`
 To load data from an Excel file, you can use the `read_excel()` function in Pandas.
@@ -648,8 +711,12 @@ df = tables[0]
 ```
 *In this example, we are loading data from an HTML table on the Wikipedia page for a list of countries by population. The* `read_html()` *function returns a list of all tables found on the page. We then select the table we want by indexing the list. The resulting data is stored in a Pandas DataFrame named* **df**.
 
-### OTHER FORMATS I/O CheetSheet
-<span style="color: #ff3870;font-weight: 500;">The complete list of file formats supported by Pandas can be found in the official documentation under the IO Tools section: <a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/io.html" target="_blank">IO tools (text, CSV, HDF5, …)  ⤴</a></span> *This page provides detailed information on how to read and write data from various file formats, including CSV, Excel, SQL, JSON, HTML, HDF5, Parquet, Feather, Msgpack, and many others. Each format has its own section with examples and explanations.*
+### OTHER FORMATS <br><span class="c-header">I/O CheetSheet</span>
+
+<div class="more" markdown="1">
+The complete list of **file formats supported by Pandas** can be found in the official documentation under the IO Tools section: <a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/io.html" target="_blank">IO tools (text, CSV, HDF5, …)  ⤴</a> <br>
+This page provides detailed information on how to read and write data from various file formats, including CSV, Excel, SQL, JSON, HTML, HDF5, Parquet, Feather, Msgpack, and many others. Each format has its own section with examples and explanations.
+</div>
 
 | File Format           | Reader           | Writer            |
 |-----------------------|------------------|-------------------|
@@ -673,8 +740,7 @@ df = tables[0]
 | Google BigQuery       | read_gbq()       | to_gbq()          |
 
 
-
-## Explore data
+## **Explore data**
 
 Once you've loaded your data into a Pandas DataFrame, you can use various functions to explore the data and get a sense of its structure and characteristics. For example, you can use the following functions:
 * `df.head()` to display the first few rows of a DataFrame,
@@ -692,7 +758,92 @@ print(df.describe())
 print(df.info())
 ```
 
-## Clean data
+<div class="exercise" markdown="1">
+
+Assume the following data:
+<code class="code-block bc-data">      name   age  city
+0    Alice    25  New York
+1      Bob    30  Los Angeles
+2  Charlie    35  Chicago
+3    David    28  Miami
+4    Emily    27  San Francisco
+</code>
+
+1. Now, you have two options:
+* **Option 1:** Copy this data to a file named "data.txt" or format it to CSV. Then, read a file with Pandas.
+* **Option 2:** Create the DataFrame directly in your code.
+
+2. Once you have the DataFrame ready, explore the data using the following functions:
+* Use `print(df.head())` to display the first few rows.
+* Utilize `print(df.describe())` for summary statistics.
+* Apply `print(df.info())` to view information about the DataFrame.
+
+<div class="protip mt mb-0 font-1" markdown="1">
+Refer to the previous section for detailed instructions:
+* [Create DataFrame from Python object → DataFrame from a dictionary](#create-dataframe-from-python-object)
+* [Load data from a file](#load-data-from-a-file) → [CSV: read_csv()](#csv-read_csv)
+* [Explore data](#explore-data)
+</div>
+
+<details class="l-frame mt" markdown="1"><summary><b><i>See example solution for option 1</i></b></summary>
+
+```python
+import pandas as pd
+
+# Read data from the file
+df = pd.read_csv("data.txt", delim_whitespace=True)
+```
+
+**Explore the data**
+```python
+print("First few rows:")
+print(df.head())
+```
+<pre class="output">
+      name  age           city
+0    Alice   25       New York
+1      Bob   30    Los Angeles
+2  Charlie   35        Chicago
+3    David   28          Miami
+4    Emily   27  San Francisco
+</pre>
+```python
+print("\nSummary statistics:")
+print(df.describe())
+```
+<pre class="output">
+             age
+count   5.000000
+mean   29.000000
+std     3.807887
+min    25.000000
+25%    27.000000
+50%    28.000000
+75%    30.000000
+max    35.000000
+</pre>
+```python
+print("\nDataFrame information:")
+print(df.info())
+```
+<pre class="output mb-0">
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 5 entries, 0 to 4
+Data columns (total 3 columns):
+ #   Column  Non-Null Count  Dtype
+---  ------  --------------  -----
+ 0   name    5 non-null      object
+ 1   age     5 non-null      int64
+ 2   city    5 non-null      object
+dtypes: int64(1), object(2)
+memory usage: 248.0+ bytes
+None
+</pre>
+</details>
+</div>
+
+
+## **Clean data**
 
 Pandas provides functions for cleaning and transforming data, such as:
 * `df.drop_duplicates()` to remove duplicate rows from a DataFrame,
@@ -710,7 +861,7 @@ df['column_name'].fillna(df['column_name'].mean(), inplace=True)
 df['date_column'] = pd.to_datetime(df['date_column'], format='%Y-%m-%d')
 ```
 
-## Filter data
+## **Filter data**
 
 You can use *Boolean indexing* and other functions to filter and subset data based on certain criteria.
 
@@ -724,7 +875,7 @@ filtered_df = df[df['column_name'].isin(list_of_values)]
 ```
 
 
-## Aggregate data
+## **Aggregate data**
 
 Pandas provides functions for grouping and aggregating data, such as calculating the mean, sum, or count of values in a column or group.
 

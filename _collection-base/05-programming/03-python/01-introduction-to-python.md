@@ -723,7 +723,15 @@ for name in names100:
 <b class="prompt-2"></b>        names100 = names100 + [new_name]
 <b class="prompt-2"></b>
 <b class="prompt-1"></b>print(names100)
-['Alice0', 'Bob0', 'Kathy0', 'Tim0', 'Hannah0', 'Adam0', 'Tina0', 'Eric0', 'Anna0', 'Sam0', 'Alice1', 'Bob1', 'Kathy1', 'Tim1', 'Hannah1', 'Adam1', 'Tina1', 'Eric1', 'Anna1', 'Sam1', 'Alice2', 'Bob2', 'Kathy2', 'Tim2', 'Hannah2', 'Adam2', 'Tina2', 'Eric2', 'Anna2', 'Sam2', 'Alice3', 'Bob3', 'Kathy3', 'Tim3', 'Hannah3', 'Adam3', 'Tina3', 'Eric3', 'Anna3', 'Sam3', 'Alice4', 'Bob4', 'Kathy4', 'Tim4', 'Hannah4', 'Adam4', 'Tina4', 'Eric4', 'Anna4', 'Sam4', 'Alice5', 'Bob5', 'Kathy5', 'Tim5', 'Hannah5', 'Adam5', 'Tina5', 'Eric5', 'Anna5', 'Sam5', 'Alice6', 'Bob6', 'Kathy6', 'Tim6', 'Hannah6', 'Adam6', 'Tina6', 'Eric6', 'Anna6', 'Sam6', 'Alice7', 'Bob7', 'Kathy7', 'Tim7', 'Hannah7', 'Adam7', 'Tina7', 'Eric7', 'Anna7', 'Sam7', 'Alice8', 'Bob8', 'Kathy8', 'Tim8', 'Hannah8', 'Adam8', 'Tina8', 'Eric8', 'Anna8', 'Sam8', 'Alice9', 'Bob9', 'Kathy9', 'Tim9', 'Hannah9', 'Adam9', 'Tina9', 'Eric9', 'Anna9', 'Sam9']
+['Alice0', 'Bob0', 'Kathy0', 'Tim0', 'Hannah0', 'Adam0', 'Tina0', 'Eric0', 'Anna0', 'Sam0', 'Alice1', 'Bob1',
+'Kathy1', 'Tim1', 'Hannah1', 'Adam1', 'Tina1', 'Eric1', 'Anna1', 'Sam1', 'Alice2', 'Bob2', 'Kathy2', 'Tim2',
+'Hannah2', 'Adam2', 'Tina2', 'Eric2', 'Anna2', 'Sam2', 'Alice3', 'Bob3', 'Kathy3', 'Tim3', 'Hannah3', 'Adam3',
+'Tina3', 'Eric3', 'Anna3', 'Sam3', 'Alice4', 'Bob4', 'Kathy4', 'Tim4', 'Hannah4', 'Adam4', 'Tina4', 'Eric4',
+'Anna4', 'Sam4', 'Alice5', 'Bob5', 'Kathy5', 'Tim5', 'Hannah5', 'Adam5', 'Tina5', 'Eric5', 'Anna5', 'Sam5',
+'Alice6', 'Bob6', 'Kathy6', 'Tim6', 'Hannah6', 'Adam6', 'Tina6', 'Eric6', 'Anna6', 'Sam6', 'Alice7', 'Bob7',
+'Kathy7', 'Tim7', 'Hannah7', 'Adam7', 'Tina7', 'Eric7', 'Anna7', 'Sam7', 'Alice8', 'Bob8', 'Kathy8', 'Tim8',
+'Hannah8', 'Adam8', 'Tina8', 'Eric8', 'Anna8', 'Sam8', 'Alice9', 'Bob9', 'Kathy9', 'Tim9', 'Hannah9', 'Adam9',
+'Tina9', 'Eric9', 'Anna9', 'Sam9']
 <b class="prompt-1"></b>
 <b class="prompt-1"></b>for name in names100:
 <b class="prompt-2"></b>    greet(name)

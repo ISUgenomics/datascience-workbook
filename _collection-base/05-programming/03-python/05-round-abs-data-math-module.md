@@ -35,26 +35,20 @@ Before starting this tutorial, there are a few requirements that you should have
 </div>
 
 
-# Introduction
-
-
-
-
 # Math in Python
 
 Mathematics is a fundamental aspect of programming, and Python provides a range of tools and resources for working with math. Python provides a robust set of tools for working with math, including:
-* built-in operators, *for example:* `+`, `-`, `*`, `/`, `%`, `//`, `**`
-* built-in functions, *for example:* `sum()`, `min()`, `max()`, `round()`
-* built-in modules like `math`, *and*
-* the ability to import external libraries for more specialized tasks, *for example:* `NumPy`, `SciPy`, and `Pandas`
+* built-in **operators**, *for example:* `+`, `-`, `*`, `/`, `%`, `//`, `**`
+* built-in **functions**, *for example:* `sum()`, `min()`, `max()`, `round()`
+* built-in **modules** like `math`, *and*
+* the ability to import **external libraries** for more specialized tasks, *for example:* `NumPy`, `SciPy`, and `Pandas`
 
-The `math` module is a built-in module in Python that provides access to many mathematical functions. It includes functions that provide more advanced mathematical operations such as:
-* trigonometric
-* logarithmic
-* exponential
-* statistical
+The `math` module is a built-in module in Python that provides access to many **mathematical functions**. It includes functions that provide more advanced mathematical operations such as:
+
+<table> <tr> <th>trigonometric</th>  <th>logarithmic</th>  <th>exponential</th>  <th>statistical</th> </tr> </table>
 
 In addition to built-in modules, Python also provides a way to import external libraries, such as `NumPy`, `SciPy`, and `Pandas`. These libraries contain a range of specialized functions and tools for working with specific areas of mathematics and data analysis.
+
 
 ## *When use math module?*
 
@@ -76,20 +70,25 @@ For example, you can **use online Python shell** immediately available at <a hre
 
 <img src="{{ images_path }}/03_python-online-console.png" alt="03_python-online-console.png">
 
----
 
 # Built-in Operators
 
 Python has several built-in operators for basic arithmetic operations, such as:
-* addition: `+`
-* subtraction: `-`
-* multiplication: `*`
-* division: `/`
 
-In addition to these, Python also provides operators for more advanced mathematical operations, such as:
-* modulus: `%` &emsp; &emsp; &emsp; &emsp; *for finding the remainder of a division*
-* integer division: `//` &emsp;&nbsp; *for performing integer division*
-* exponentiation: `**` &emsp;&ensp; *for raising a number to a power*
+| operator | function       | description |
+|----------|----------------|-------------|
+| `+`      | addition       | |
+| `-`      | subtraction    | |
+| `*`      | multiplication | |
+| `/`      | division       | |
+
+In addition, Python also provides operators for more advanced mathematical operations, such as:
+
+<table>
+  <tr> <td width="283"><code>%</code></td>  <td width="310">modulus</td> <td><i>for finding the remainder of a division</i></td> </tr>
+  <tr> <td><code>//</code></td>             <td>integer division</td>    <td><i>for performing integer division</i></td> </tr>
+  <tr> <td><code>**</code></td>             <td>exponentiation</td>      <td><i>for raising a number to a power</i></td> </tr>
+</table>
 
 ## BASIC ARITHMETICS
 
@@ -116,9 +115,9 @@ print(z)                        # Output: 3.3333333333333335
 
 ## ADVANCED OPERATIONS
 
-### • *Exponentiation*
+### <b class="prefix-2"></b>*Exponentiation*
 
-<i>Python has an exponentiation operator `**` that raises a number to a power.</i>
+*Python has an exponentiation operator* `**` *that raises a number to a power.*
 
 ```python
 x = 2
@@ -129,7 +128,7 @@ z = x ** y
 print(z)                        # Output: 8
 ```
 
-### • *Integer Division*
+### <b class="prefix-2"></b>*Integer Division*
 <i>In Python, integer division is performed using the double slash `//` operator</i>
 
 ```python
@@ -141,7 +140,7 @@ z = x // y
 print(z)                        # Output: 4
 ```
 
-### • *Modulus*
+### <b class="prefix-2"></b>*Modulus*
 <i>In Python, the modulus operation is performed using the percent `%` operator.</i>
 
 ```python
@@ -153,24 +152,23 @@ z = x % y
 print(z)                        # Output: 3
 ```
 
----
 
 # Built-in Functions
 
 Python also has many built-in functions for performing mathematical operations.
 
-| function      | example | description |
-|---------------|---------|-------------|
-|**abs(x)**     | abs(-10)<br><i>returns: 10</i> | returns the absolute value of a number |
-|**round(x, y)**| round(3.14159, 2)<br><i>returns: 3.14</i> | rounds a number (x) to a specified number (y) of decimal places |
-|**sum(list)**  | sum([1,2,3])<br><i>returns: 6</i> |return the sum of the values in a list|
-|**min(list)**  | min([1,2,3])<br><i>returns: 1</i> |return the minimum value in a list|
-|**max(list)**  | max([1,2,3])<br><i>returns: 3</i> |return the maximum value in a list|
+| function      | example                      | description                            |
+|---------------|------------------------------|----------------------------------------|
+|**abs(x)**     | abs(-10)<br>*returns: 10*    | returns the absolute value of a number |
+|**round(x, y)**| round(3.14159, 2)<br>*returns: 3.14* | rounds a number (x) to a specified number (y) of decimal places |
+|**sum(list)**  | sum([1,2,3])<br>*returns: 6* | return the sum of the values in a list |
+|**min(list)**  | min([1,2,3])<br>*returns: 1* | return the minimum value in a list     |
+|**max(list)**  | max([1,2,3])<br>*returns: 3* | return the maximum value in a list     |
 
+<div class="more" markdown="1">
+The `math` module provides a range of additional mathematical functions, including <a href="https://docs.python.org/3/library/math.html#trigonometric-functions/" target="_blank">trigonometric</a> functions, <a href="https://docs.python.org/3/library/math.html#power-and-logarithmic-functions" target="_blank">logarithmic</a> functions, <a href="https://docs.python.org/3/library/math.html#special-functions" target="_blank">statistical & special</a> functions, and more.
+</div>
 
-The math module provides a range of additional mathematical functions, including trigonometric functions, logarithmic functions, statistical functions, and more.
-
----
 
 # Built-in Module: `math`
 
@@ -255,5 +253,8 @@ To use the `math` module, you need to import it first using the `import` stateme
 ```python
 import math
 ```
-Once the math module is imported, you can access all its functions by prefixing them with math, followed by a dot and the function name, `math.function_name()`. <br>
-*For example, to find the square root of a number, you can use the `math.sqrt()` function.*
+Once the `math` module is imported, you can access all its functions by prefixing them with **math**, followed by a dot and the function name, `math.function_name()`. <br>
+*For example, to find the square root of a number, you can use a* `math.sqrt()` *function:*
+```python
+my_variable = math.sqrt(5)
+```
