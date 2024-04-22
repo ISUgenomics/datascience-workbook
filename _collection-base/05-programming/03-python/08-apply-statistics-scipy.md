@@ -20,7 +20,9 @@ tags: []
 
 # Introduction
 
-<span style="color: #ff3870;font-weight: 500;"> You can find the official SciPy documentation on their website at: <a href="https://docs.scipy.org/doc/scipy/tutorial/index.html" target="_blank">https://docs.scipy.org/doc/scipy/tutorial/index.html  ⤴</a></span>
+<div class="more" markdown="1">
+You can find the official SciPy documentation on their website at: <a href="https://docs.scipy.org/doc/scipy/tutorial/index.html" target="_blank">https://docs.scipy.org/doc/scipy/tutorial/index.html  ⤴</a>
+</div>
 
 <a href="https://www.scipy.org/" target="_blank">SciPy  ⤴</a> is a Python library for scientific and technical computing that provides a **collection of algorithms and functions** for tasks such as optimization, signal processing, linear algebra, and more. It is built on top of <a href="https://numpy.org/" target="_blank">NumPy  ⤴</a>, another popular Python library for numerical computing, and is a **fundamental tool for data analysis and scientific computing**.
 
@@ -93,7 +95,11 @@ x = solve(A, b)                                 # use imported method directly
 
 print(x)
 ```
-*In this example, we import the solve method from `scipy.linalg` and then use it to solve a system of linear equations.*
+*In this example, we import the solve method from* `scipy.linalg` *and then use it to solve a system of linear equations.*
+<pre class="output">
+<b class="prompt-1"></b>print(x)
+[-4.   4.5]
+</pre>
 
 
 # Submodules in SciPy
@@ -121,7 +127,7 @@ The SciPy library contains several submodules that cater to specific scientific 
 | scipy.**misc** | Offers various **utility functions for scientific computing**, such as image manipulation and numerical approximations. | <a href="https://docs.scipy.org/doc/scipy/reference/misc.html#module-scipy.misc" target="_blank">docs  ⤴</a> |
 
 
-## scipy.io
+## **`scipy.io`**
 
 The `scipy.io` module provides functions for reading and writing data in various file formats. Some of the most common functions in this module are:
 * `loadmat()` - oad data from MATLAB .mat files
@@ -129,10 +135,14 @@ The `scipy.io` module provides functions for reading and writing data in various
 
 Other I/O functions refer to IDL files, Matrix Market files, Unformatted Fortran files, Netcdf, Harwell-Boeing files, Wav sound files, and Arff files. Learn more from the official <a href="https://docs.scipy.org/doc/scipy/reference/io.html#module-scipy.io" target="_blank">documentation: scipy.io  ⤴</a>.
 
-**Example usage `savemat()` & `loadmat()`:**
+<base class="mt">
+<button class="btn example"></button>
+<table>
+  <tr> <th width="50%" class="center-h">savemat()</th> <th class="center-h">loadmat()</th> </tr>
+  <tr> <td><p markdown="1">`savemat()` <br>function used to save data to a MATLAB `.mat` file</p></td> <td><p markdown="1">`loadmat()` <br>function used to load data from MATLAB `.mat` files</p></td> </tr>
+  <tr> <td><i>It takes a dictionary of variables and their values as input.</i></td> <td><i>It returns a dictionary containing the variables and their values.</i></td> </tr>
+</table>
 
-The `savemat()` function is used to save data to a MATLAB `.mat` file. It takes a dictionary of variables and their values as input. <br>
-The `loadmat()` function is used to load data from MATLAB `.mat` files. It returns a dictionary containing the variables and their values.
 ```python
 import scipy.io as sio
 import numpy as np
@@ -146,10 +156,10 @@ data = sio.loadmat('data.mat')                                  # load data from
 print(data.keys())                                              # output: ['x', 'y']
 print(data['x'])                                                # output: [][1 2 3]]
 ```
-*In this example, we create a dictionary data that contains two arrays, x and y. We then use the `savemat` function to save the data to a MATLAB .mat file called data.mat. Then, we use the `loadmat` function to load data from a MATLAB .mat file called data.mat. We print the keys of the dictionary that is returned by the function to see the variables that were loaded, and then we print the value of the x variable.*
+*In this example, we create a dictionary data that contains two arrays, x and y. We then use the* `savemat()` *function to save the data to a MATLAB* `.mat` *file called* `data.mat`. *Then, we use the* `loadmat` *function to load data from a MATLAB .mat file called* `data.mat`. *We print the keys of the dictionary that is returned by the function to see the variables that were loaded, and then we print the value of the* `x` *variable.*
 
 
-## scipy.datasets
+## **`scipy.datasets`**
 
 The `scipy.datasets` module provides a set of 3 datasets that can be used for testing, benchmarking, and other purposes:
 * `ascent()` - grayscale image
@@ -162,50 +172,75 @@ import scipy
 
 data = scipy.datasets.ascent()
 ```
+<pre class="output">
+<b class="prompt-1"></b>print(data)
+[[ 83  83  83 ... 117 117 117]
+ [ 82  82  83 ... 117 117 117]
+ [ 80  81  83 ... 117 117 117]
+ ...
+ [178 178 178 ...  57  59  57]
+ [178 178 178 ...  56  57  57]
+ [178 178 178 ...  57  57  58]]
+</pre>
 
-If you want to download all datasets included in Scipy, you can use the `download_all()` function. This function will download all three datasets and save them to a selected location as .dat files.
+<base class="mt">
+If you want to download all datasets included in Scipy, you can use the `download_all()` function. This function will download all three datasets and save them to a selected location as `.dat` files.
 ```python
 from scipy.datasets import download_all
 
 download_all('.', subok=True)
 ```
-*In this code, download_all() will download the three datasets to the current working directory, represented by '.'. The subok=True parameter ensures that any subdirectories needed to save the files will be created if they don't already exist.*
+*In this code,* `download_all()` *will download the three datasets to the current working directory, represented by* `'.'`. *The* `subok=True` *parameter ensures that any subdirectories needed to save the files will be created if they don't already exist.*
 
-Learn more from the official <a href="https://docs.scipy.org/doc/scipy/reference/datasets.html" target="_blank">documentation: scipy.datasets  ⤴</a>.
+<button class="btn more"></button> *...from the official documentation: <a href="https://docs.scipy.org/doc/scipy/reference/datasets.html" target="_blank">scipy.datasets  ⤴</a>.*
 
 
-## scipy.constants
+## **`scipy.constants`**
 
 The `scipy.constants` module provides a collection of physical and mathematical constants. These constants are often used in scientific calculations and simulations. The full list of available constants can be explored in the official <a href="https://docs.scipy.org/doc/scipy/reference/constants.html" target="_blank">documentation: scipy.constants  ⤴</a>
 
 Here are some of the most commonly used methods in this module along with their usage examples:
 
-scipy.constants.**value(constant_name)** <br>
+* scipy.constants.**value(constant_name)**
+
 Returns the numerical value of a given physical constant.
 ```python
 from scipy import constants
 
-constants.value('Planck constant')               # output: 6.62607015e-34
+constants.value('Planck constant')
 ```
+<pre class="output">
+6.62607015e-3
+</pre>
+
 
 Some common constants, such as R *(molar gas constant)*, C *(speed of light in vacuum)*, g *(standard acceleration due to gravity)*, or atomic mass, can be called directly by their symbol or name:
 ```python
 from scipy import constants
 
-constants.C                                      # output: 299792458.0
+constants.c                                      # output: 299792458.0
 constants.g                                      # output: 9.80665
 constants.R                                      # output: 8.31446261815324
 constants.atomic_mass                            # output: 1.6605390666e-27
 ```
 
-scipy.constants.**find(substring)** <br>
+<base class="mt">
+* scipy.constants.**find(substring)**
+
 Returns a list of constants whose names contain the given substring.
 ```python
 from scipy import constants
 
-constants.find('Planck')                         # output: ['Planck constant', 'Planck length', 'Planck mass', 'Planck temperature']
+constants.find('Planck')
 ```
+<pre class="output">
+['Planck constant', 'Planck constant in eV/Hz', 'Planck length', 'Planck mass',
+ 'Planck mass energy equivalent in GeV', 'Planck temperature', 'Planck time',
+ 'molar Planck constant', 'reduced Planck constant', 'reduced Planck constant in eV s',
+ 'reduced Planck constant times c in MeV fm']
+</pre>
 
+<base class="mt">
 scipy.constants.**physical_constants[constant_name]** <br>
 Returns a tuple containing the value, unit, and uncertainty of a given physical constant.
 ```python
@@ -213,8 +248,13 @@ from scipy import constants
 
 constants.physical_constants['proton mass']      # output: (1.67262192369e-27, 'kg', 5.1e-37)
 ```
+<pre class="output">
+(1.67262192369e-27, 'kg', 5.1e-37)
+</pre>
 
-scipy.constants.**unit(constant_name)** <br>
+<base class="mt">
+* scipy.constants.**unit(constant_name)**
+
 Returns the unit of a given physical constant.
 ```python
 from scipy import constants
@@ -222,7 +262,9 @@ from scipy import constants
 constants.unit['proton mass']                    # output: 'kg'
 ```
 
-scipy.constants.**convert_temperature(temp, from_unit, to_unit)** <br>
+<base class="mt">
+* scipy.constants.**convert_temperature(temp, from_unit, to_unit)**
+
 Returns the unit of a given physical constant.
 ```python
 from scipy import constants
@@ -231,7 +273,7 @@ constants.convert_temperature(100, 'Celsius', 'Kelvin')        # output: 373.15
 ```
 
 
-## scipy.stats
+## **`scipy.stats`**
 
 The `scipy.stats` module provides a wide range of **distributions**, including:
 * <a href="https://docs.scipy.org/doc/scipy/reference/stats.html#probability-distributions" target="_blank">Probability distributions  ⤴</a>
@@ -253,46 +295,74 @@ and **statistical functions**:
 
 and other statistical functionality such as <a href="https://docs.scipy.org/doc/scipy/reference/stats.html#transformations" target="_blank">Transformations  ⤴</a>, <a href="https://docs.scipy.org/doc/scipy/reference/stats.html#sampling" target="_blank">Sampling  ⤴</a>, <a href="https://docs.scipy.org/doc/scipy/reference/stats.html#resampling-methods" target="_blank">Resampling Methods  ⤴</a>, <a href="https://docs.scipy.org/doc/scipy/reference/stats.html#quasi-monte-carlo" target="_blank">Quasi-Monte Carlo  ⤴</a> and <a href="https://docs.scipy.org/doc/scipy/reference/stats.html#warnings-errors-used-in-scipy-stats" target="_blank">stats-specific Warnings / Errors  ⤴</a>.
 
+---
 
-Here are a few common methods with usage examples:
+***Here are a few common methods with usage examples:***
 
 ### *generate random samples*
 
-**A. Returns a normal continuous random variable:**
+**A. Returns a normal continuous random variable:** <br>
 `scipy.stats.norm` <br>
 Here's an example of generating 10 random samples from a normal distribution with a mean of 0 and a standard deviation of 1:
 ```python
 from scipy.stats import norm
 
-data = norm.rvs(size=10)                        # output: array([ 1.04477379,  0.38281021,  0.46577888, -0.83614266,  0.21376598, -0.49608913, -0.41941393,  1.31005358, -1.40978119,  0.10541643])
+data = norm.rvs(size=10)
 ```
+<pre class="output">
+<b class="prompt-1"></b>data
+array([-0.78903894, -1.55293905, -0.64965826, -1.05128015,  2.55342981,
+       -0.2064151 , -0.60322765, -0.861767  , -0.75899174, -1.28693063])
 
-**B. Returns a binomial discrete random variable:**
+<b class="prompt-1"></b>print(data)
+[-0.78903894 -1.55293905 -0.64965826 -1.05128015  2.55342981 -0.2064151
+ -0.60322765 -0.861767   -0.75899174 -1.28693063]
+</pre>
+
+<base class="mt">
+**B. Returns a binomial discrete random variable:** <br>
 `scipy.stats.binom` <br>
 Here's an example of generating 10 random samples from a binomial distribution with 10 trials and a success probability of 0.5:
 ```python
 from scipy.stats import binom
 
-data = binom.rvs(n=10, p=0.5, size=10)         # output: array([5, 7, 4, 3, 7, 5, 7, 4, 7, 7])
+data = binom.rvs(n=10, p=0.5, size=10)
 ```
+<pre class="output">
+<b class="prompt-1"></b>print(data)
+[2 4 4 5 5 7 6 6 3 5]
+</pre>
 
-**C. Returns a chi-squared continuous random variable:**
+<base class="mt">
+**C. Returns a chi-squared continuous random variable:** <br>
 `scipy.stats.chi2` <br>
 Here's an example of generating 10 random samples from a chi-squared distribution with 2 degrees of freedom:
 ```python
 from scipy.stats import chi2
 
-data = chi2.rvs(df=2, size=10)                 # output: array([1.53630305, 3.7814804 , 0.4032692 , 1.43028812, 1.69657965, 3.43180981, 0.60332784, 0.44769606, 0.67045952, 1.54229542])
+data = chi2.rvs(df=2, size=10)
 ```
+<pre class="output">
+<b class="prompt-1"></b>print(data)
+[1.04467704 1.1461272  0.36506538 0.81107591 3.26317094 4.84727761
+ 4.52965288 0.93817042 8.51668502 3.2564631 ]
+</pre>
 
-**D. Returns a gamma continuous random variable:**
+<base class="mt">
+**D. Returns a gamma continuous random variable:** <br>
 `scipy.stats.gamma` <br>
 Here's an example of generating 10 random samples from a gamma distribution with a shape parameter of 2 and a scale parameter of 2:
 ```python
 from scipy.stats import gamma
 
-data = gamma.rvs(a=2, scale=2, size=10)        # output: array([ 4.15564664,  4.60700567,  1.16833357,  3.3120714 ,  2.74423165, 7.29029297, 11.97580958,  0.46736018,  3.91648843,  1.42816416])
+data = gamma.rvs(a=2, scale=2, size=10)
 ```
+<pre class="output">
+<b class="prompt-1"></b>print(data)
+[ 0.80623887  3.61599447  4.67765372  3.27401918  4.62340971  4.33309687
+  1.51408293  1.31255128  3.13450136 10.43018603]
+</pre>
+
 
 ### *calculate T-test of one sample*
 
@@ -303,8 +373,12 @@ from scipy.stats import ttest_1samp
 
 data = [1, 2, 3, 4, 5]
 
-ttest_1samp(data, 3)                    # output: TtestResult(statistic=-8.440522610503814, pvalue=1.4388318908140554e-05, df=9)
+ttest_1samp(data, 3)
 ```
+<pre class="output">
+TtestResult(statistic=0.0, pvalue=1.0, df=4
+</pre>
+
 
 ### *calculate ANOVA test for multiple samples*
 
@@ -317,8 +391,12 @@ data1 = [1, 2, 3, 4, 5]
 data2 = [2, 4, 6, 8, 10]
 data3 = [3, 6, 9, 12, 15]
 
-f_oneway(data1, data2, data3)           # output: F_onewayResult(statistic=3.857142857142857, pvalue=0.05086290933139865)
+f_oneway(data1, data2, data3)
 ```
+<pre class="output">
+F_onewayResult(statistic=3.857142857142857, pvalue=0.05086290933139865)
+</pre>
+
 
 ### *calculate a Pearson correlation coefficient*
 
@@ -330,8 +408,12 @@ from scipy.stats import pearsonr
 x = [1, 2, 3, 4, 5]
 y = [2, 4, 6, 8, 10]
 
-pearsonr(x, y)                          # output: PearsonRResult(statistic=1.0, pvalue=0.0)
+pearsonr(x, y)
 ```
+<pre class="output">
+PearsonRResult(statistic=1.0, pvalue=0.0)
+</pre>
+
 
 ### *calculate a linear least-squares regression*
 
@@ -345,9 +427,12 @@ y = [2, 4, 6, 8, 10]
 
 linregress(x, y)                        # output: LinregressResult(slope=2.0, intercept=0.0, rvalue=1.0, pvalue=1.2004217548761408e-30, stderr=0.0, intercept_stderr=0.0)
 ```
+<pre class="output">
+LinregressResult(slope=2.0, intercept=0.0, rvalue=1.0, pvalue=1.2004217548761408e-30, stderr=0.0, intercept_stderr=0.0)
+</pre>
 
 
-## scipy.cluster
+## **`scipy.cluster`**
 
 The `scipy.cluster` module of Scipy provides algorithms for clustering, which involves grouping data points into clusters based on their similarities. The full list of available clustering methods can be explored in the official <a href="https://docs.scipy.org/doc/scipy/reference/cluster.html" target="_blank">documentation: scipy.cluster  ⤴</a>
 
@@ -365,7 +450,25 @@ data = np.random.rand(5, 3)
 
 linkage_matrix = linkage(data, method='single')
 ```
+<details class="l-frame" markdown="1"><summary class="c-header"><b><i>see the expected output</i></b></summary>
 
+<pre class="output">
+<b class="prompt-1"></b>print(data)
+[[0.97309739 0.14092786 0.73237976]
+ [0.53102418 0.85463043 0.28841557]
+ [0.25546178 0.51738497 0.28659921]
+ [0.7780539  0.35929428 0.53852367]
+ [0.60161033 0.82559442 0.34248004]]
+
+<b class="prompt-1"></b>print( linkage_matrix)
+[[1.         4.         0.09353321 2.        ]
+ [0.         3.         0.3511496  2.        ]
+ [2.         5.         0.43551399 3.        ]
+ [6.         7.         0.53572498 5.        ]]
+</pre>
+</details>
+
+<base class="mt">
 **Check if a linkage matrix is valid**
 
 `scipy.cluster.hierarchy.is_valid_linkage` <br>
@@ -376,6 +479,7 @@ from scipy.cluster.hierarchy import is_valid_linkage
 print(is_valid_linkage(linkage_matrix))                         # output: True
 ```
 
+<base class="mt">
 **Get leaf nodes of a hierarchical clustering**
 
 `scipy.cluster.hierarchy.leaves_list` <br>
@@ -384,8 +488,12 @@ Returns the leaf nodes of a hierarchical clustering.
 from scipy.cluster.hierarchy import leaves_list
 
 leaves = leaves_list(linkage_matrix)
-print(leaves)                                                   # output: [0 3 4 1 2]
 ```
+<pre class="output">
+<b class="prompt-1"></b>print(leaves)
+[0 3 2 1 4]
+</pre>
+
 
 ### *hierarchical clustering as a dendrogram*
 
@@ -403,6 +511,21 @@ dendrogram(linkage_matrix)
 
 plt.show()
 ```
+<pre class="output">
+<b class="prompt-1"></b>dendrogram(linkage_matrix)
+{'icoord': [[5.0, 5.0, 15.0, 15.0], [35.0, 35.0, 45.0, 45.0], [25.0, 25.0, 40.0, 40.0], [10.0, 10.0, 32.5, 32.5]],
+ 'dcoord': [[0.0, 0.4609265621656883, 0.4609265621656883, 0.0], [0.0, 0.28518916147512924, 0.28518916147512924, 0.0], [0.0, 0.491984094759486, 0.491984094759486, 0.28518916147512924], [0.4609265621656883, 0.5412089099877605, 0.5412089099877605, 0.491984094759486]],
+ 'ivl': ['1', '2', '3', '0', '4'],
+ 'leaves': [1, 2, 3, 0, 4],
+ 'color_list': ['C0', 'C1', 'C0', 'C0'],
+ 'leaves_color_list': ['C0', 'C0', 'C0', 'C1', 'C1']
+}
+
+<b class="prompt-1"></b>plt.show()
+</pre>
+
+![scipy_clustering_dendrogram]({{ images_path }}/scipy_clustering_dendrogram.png)
+
 
 ### *k-means clustering with centroids*
 
@@ -415,9 +538,14 @@ from scipy.cluster.vq import kmeans
 data = np.random.rand(5, 3)
 
 centroids, _ = kmeans(data, 2)
-print(centroids)                        # output: [[0.73481431 0.93805966 0.0423946 ][0.46138279 0.36387293 0.57807921]]
 ```
+<pre class="output">
+<b class="prompt-1"></b>print(centroids)
+[[0.24676794 0.82368652 0.88983179]
+ [0.6756976  0.53838277 0.16609091]]
+</pre>
 
+<base class="mt">
 **Assigns point to the nearest cluster centroid**
 
 `scipy.cluster.vq.vq` <br>
@@ -426,5 +554,8 @@ Assigns each data point to the nearest cluster centroid using vector quantizatio
 from scipy.cluster.vq import vq
 
 labels, _ = vq(data, centroids)
-print(labels)                           # output: [0 0 1 0 0]
 ```
+<pre class="output">
+<b class="prompt-1"></b>print(labels)
+[0 0 1 0 1]
+</pre>

@@ -20,59 +20,47 @@ tags: []
 
 # Introduction
 
-<span style="color: #ff3870;font-weight: 500;"> You can find the official NumPy documentation on their website at: <a href="https://numpy.org/doc/stable/" target="_blank">https://numpy.org/doc/stable/  ⤴</a></span>
-
 <a href="https://numpy.org/" target="_blank">NumPy  ⤴</a> is a popular Python library for scientific computing that provides support for:
 * large, multi-dimensional arrays and matrices,
 * along with a variety of high-level mathematical functions.
 
+<button class="btn more"></button> ...about NumPy from the official documentation at: <a href="https://numpy.org/doc/stable/" target="_blank">https://numpy.org/doc/stable/  ⤴</a>
+
 It is built around a powerful and efficient data structure called an `ndarray`, which stands for **n-dimensional array**. This data structure allows for fast and efficient computation on large sets of data, and it is optimized for numerical operations.
 
-| 1D `ndarray` | 2D `ndarray` |
-|----------|-------------|
-|A 1D array is a data structure that holds a sequence of elements of the same data type in a linear fashion. It is similar to a list. |A multi-dimensional ndarray is an array with more than one dimension represented with a shape tuple of the sizes of each dimension (n1, n2, ..., nk).|
-|<i># Create a 1-dimensional array of integers from 0 to 9<br></i> <br>`arr = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])`| <i># Create a 2-dimensional array of floats with shape (3, 4)</i><br><br>`arr2d = np.array([`<br>&emsp;&nbsp;&emsp;&nbsp;`[1.0, 2.0, 3.0, 4.0],`<br>&emsp;&nbsp;&emsp;&nbsp;`[5.0, 6.0, 7.0, 8.0],`<br>&emsp;&nbsp;&emsp;&nbsp;`[9.0, 10.0, 11.0, 12.0]`<br>`])` |
-|<i># Printing the 1D array</i><br>`print(arr)`<br><br># Output: [0 1 2 3 4 5 6 7 8 9]|<i># Printing the 2D array</i><br>`print(arr2d)`<br><br># Output: <br>[[ 1.  2.  3.  4.]<br>&ensp;[ 5.  6.  7.  8.]<br>&ensp;[ 9. 10. 11. 12.]]|
+<table>
+  <tr> <th width="50%" class="center-h">1D ndarray</th> <th class="center-h">2D ndarray</th> </tr>
+  <tr> <td>A 1D array is a data structure that holds a sequence of elements of the same data type in a linear fashion. It is similar to a list.</td> <td>A multi-dimensional ndarray is an array with more than one dimension represented with a shape tuple of the sizes of each dimension (n1, n2, ..., nk).</td> </tr>
+  <tr>
+    <td><i># Create a 1-dimensional array of integers from 0 to 9</i>    <base class="mb"> <code class="code-block">sarr = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])<br><br><br><br> </code></td>
+    <td><i># Create a 2-dimensional array of floats with shape (3, 4)</i> <base class="mb"> <code class="code-block">arr2d = np.array([<br>    [1.0, 2.0, 3.0, 4.0],<br>    [5.0, 6.0, 7.0, 8.0],<br>    [9.0, 10.0, 11.0, 12.0]<br>])</code></td>
+  </tr>
+  <tr>
+    <td class="no-border"><i># Printing the 1D array</i> <base class="mb"> <pre class="output">print(arr)<br><br># Output: [0 1 2 3 4 5 6 7 8 9]<br><br><br> </pre></td>
+    <td class="no-border"><i># Printing the 2D array</i> <base class="mb"> <pre class="output">print(arr2d)<br><br># Output: <br>[[ 1.  2.  3.  4.]<br> [ 5.  6.  7.  8.]<br> [ 9. 10. 11. 12.]]</pre></td>
+  </tr>
+</table>
 
-<div class="warning" markdown="1">
+<div class="warning mt-" markdown="1">
 The `ndarrays` are homogeneous, meaning **all elements in the array must be of the same data type**, and they support element-wise operations and mathematical functions.
 </div>
 
 Some of the key features of the NumPy library include:
 
-* **ndarrays objects** <br>
-<i>NumPy's main feature is its ndarray, a powerful data structure for representing and manipulating large <b>arrays of numerical data</b>.</i>
+<table>
+  <tr> <th>ndarrays objects</th> <td><i>NumPy's main feature is its ndarray, a powerful data structure for representing and manipulating large <b>arrays of numerical data</b>.</i></td> </tr>
+  <tr> <th>Input-Output (IO) operations</th> <td><i>NumPy includes tools for reading and writing data to and from disk, including support for a wide variety of file formats and data types.</i></td> </tr>
+  <tr> <th>Vectorized operations</th> <td><i>NumPy's vectorized operations allow you to perform operations on entire arrays at once, making your code faster and more efficient than using loops or Python's built-in list data type.</i></td> </tr>
+  <tr> <th>Broadcasting</th> <td><i>NumPy's broadcasting feature allows you to perform operations on arrays with different shapes and sizes.</i>
+<div class="protip font-1 mb-0 before" data-before="" markdown="1">
+When you perform an operation on two arrays, **NumPy** will automatically broadcast the smaller array to match the shape of the larger array. <a class="btn" href="https://numpy.org/doc/stable/user/basics.broadcasting.html#broadcasting" target="_blank"><span class="c-alert">LEARN MORE</span></a>
+</div></td> </tr>
+  <tr> <th>Mathematical functions</th> <td><i>NumPy provides a wide range of mathematical functions for manipulating ndarrays, including: basic arithmetic functions, trigonometric functions, logarithmic functions, statistical functions, and linear algebra functions. </i></td> </tr>
+  <tr> <th>Random number generation</th> <td><i>NumPy includes a powerful random number generation module that allows you to generate random numbers from a variety of distributions.</i></td> </tr>
+  <tr> <th>Interoperability with other libraries</th> <td><i>NumPy is widely used in the scientific Python ecosystem, and it can be easily integrated with other libraries for data analysis, visualization, and machine learning, such as Pandas, Matplotlib, and scikit-learn.</i></td> </tr>
+</table>
 
-* **Input-Output (IO) operations** <br>
-<i>NumPy includes tools for reading and writing data to and from disk, including support for a wide variety of file formats and data types.</i>
-
-* **Vectorized operations** <br>
-<i>NumPy's vectorized operations allow you to perform operations on entire arrays at once, making your code faster and more efficient than using loops or Python's built-in list data type.</i>
-
-* **Broadcasting** *(<a href="https://numpy.org/doc/stable/user/basics.broadcasting.html#broadcasting" target="_blank">learn more from the docs  ⤴</a>)* <br>
-<i>NumPy's broadcasting feature allows you to perform operations on arrays with different shapes and sizes.</i>
-
-<div class="protip level-1" markdown="1">
-When you perform an operation on two arrays, **NumPy** will automatically broadcast the smaller array to match the shape of the larger array.
-</div>
-
-
-* **Mathematical functions** <br>
-<i>NumPy provides a wide range of mathematical functions for manipulating ndarrays, including:</i>
-  * *basic arithmetic functions,*
-  * *trigonometric functions,*
-  * *logarithmic functions,*
-  * *statistical functions, and*
-  * *linear algebra functions.*
-
-
-* **Random number generation** <br>
-<i>NumPy includes a powerful random number generation module that allows you to generate random numbers from a variety of distributions.</i>
-
-* **Interoperability with other libraries** <br>
-<i>NumPy is widely used in the scientific Python ecosystem, and it can be easily integrated with other libraries for data analysis, visualization, and machine learning, such as Pandas, Matplotlib, and scikit-learn.</i>
-
-<div class="protip level-1" markdown="1">
+<div class="protip" markdown="1">
 For numerical and scientific computing, `numpy` and `scipy` are often the go-to options, while for data manipulation and analysis, `pandas` and other packages such as `dask` and `pyspark` may be more appropriate. <base class="mb">
 **1) numerical and scientific computing:**
   * <a href="https://numpy.org/" target="_blank">NumPy  ⤴</a>, provides support for multidimensional arrays and matrices, and includes a wide range of mathematical functions
@@ -93,6 +81,7 @@ NumPy is NOT a built-in Python module, meaning it is not included with the stand
 <div class="protip" markdown="1">
 **NumPy** is widely used in scientific computing and data analysis in Python, and it is included in many popular scientific Python distributions, such as Anaconda and Enthought Canopy. It can also be installed using package managers like `pip` or `conda` (see instructions below).
 </div>
+
 
 ## Install `numpy` library
 
@@ -144,6 +133,7 @@ NumPy is primarily designed for **numerical computing** and is optimized for ope
 While `numpy` is primarily used for numerical data, it can also be used for other types of data, such as images and sound signals, which can be represented as numerical arrays. **NumPy** is also commonly used in combination with <u>other Python libraries</u> for scientific computing and data analysis, such as `pandas`, `scipy`, and `matplotlib`.
 </div>
 
+
 ## NumPy objects
 
 There is only one basic class in NumPy, which is the `ndarray` (short for **n-dimensional array**). This is the fundamental data structure in NumPy, and it is used to represent arrays of numerical data in Python. It also provides efficient storage and manipulation of large arrays, as well as fast computation through optimized C code and parallel processing.
@@ -154,6 +144,11 @@ import numpy as np
 arr = np.array([1, 2, 3])
 ```
 
+<pre class="output">
+<b class="prompt-1"></b>print(arr)
+[1 2 3]
+</pre>
+
 The `ndarray` class provides many built-in methods and functions for working with arrays, such as:
 * element-wise mathematical operations,
 * slicing and indexing,
@@ -163,98 +158,86 @@ The `ndarray` class provides many built-in methods and functions for working wit
 
 In addition to the `numpy.ndarray` class, NumPy has several other subclasses of arrays that have additional methods and properties for specific use cases:
 
-<details><summary><b>numpy.matrix()</b></summary>
+<details class="l-frame" markdown="1"><summary><b>numpy.matrix()</b></summary>
 
 This is a subclass of ndarray that has additional methods for matrix operations, such as matrix multiplication, matrix inversion, and transposition.
-
-<code style="background-color: #e6f0f0;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-import numpy as np <br><br>
+```python
+import numpy as np
 mat = np.matrix([[1, 2], [3, 4]])
-</code><br>
-
-Output:
-<code style="background-color: #d9d9e3;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-[[1 2] <br>
-&nbsp;[3 4]]
-</code>
-
+```
+<pre class="output">
+<b class="prompt-1"></b>print(mat)
+[[1 2]
+ [3 4]]
+</pre>
 *In this example, we create a 2D matrix with values 1, 2, 3, and 4.*
 </details>
 
-<details><summary><b>numpy.chararray()</b></summary>
+<details class="l-frame" markdown="1"><summary><b>numpy.chararray()</b></summary>
 
 This is a subclass of ndarray that is designed for working with strings. It provides additional methods for string operations, such as string concatenation, string splitting, and string comparison.
-
-<code style="background-color: #e6f0f0;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-import numpy as np <br><br>
-char_arr = np.chararray((2, 2)) <br>
+```python
+import numpy as np
+char_arr = np.chararray((2, 2))
 char_arr[:] = 'a'
-</code><br>
-
-Output:
-<code style="background-color: #d9d9e3;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-[['a' 'a'] <br>
-&nbsp;['a' 'a']]
-</code>
-
-<i>Here we created a 2x2 character array using np.chararray() function. The values are initialized with 'a'.</i>
+```
+<pre class="output">
+<b class="prompt-1"></b>print(char_arr)
+[['a' 'a']
+ ['a' 'a']]
+</pre>
+*Here we created a 2x2 character array using np.chararray() function. The values are initialized with* `'a'`.
 </details>
 
-<details><summary><b>numpy.ma.MaskedArray()</b></summary>
+<details class="l-frame" markdown="1"><summary><b>numpy.ma.MaskedArray()</b></summary>
 
 This is a subclass of ndarray that allows you to specify a mask to indicate missing or invalid data. It provides additional methods for working with masked arrays, such as filling missing values, calculating statistics, and applying mathematical operations.
-
-<code style="background-color: #e6f0f0;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-import numpy as np <br><br>
+```python
+import numpy as np
 arr = np.ma.MaskedArray([1, 2, 3], mask=[False, True, False])
-</code><br>
-
-Output:
-<code style="background-color: #d9d9e3;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```
+<pre class="output">
+<b class="prompt-1"></b>print(arr)
 [1 -- 3]
-</code>
-
-<i>The numpy.ma.MaskedArray class is a subclass of numpy.ndarray that represents arrays with some masked values, which are treated as missing values. In this example, we create a 1D masked array with values 1, 2, and 3, but mask the value at index 1.</i>
+</pre>
+*The* `numpy.ma.MaskedArray` *class is a subclass of* `numpy.ndarray` *that represents arrays with some masked values, which are treated as missing values. In this example, we create a 1D masked array with values 1, 2, and 3, but mask the value at index 1.*
 </details>
 
-<details><summary><b>numpy.recarray()</b></summary>
+<details class="l-frame" markdown="1"><summary><b>numpy.recarray()</b></summary>
 
 This is a subclass of ndarray that allows you to specify a named data type for each column of the array. It provides additional methods for working with structured arrays, such as accessing fields by name, sorting by field, and grouping by field.
-
-<code style="background-color: #e6f0f0;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-import numpy as np <br><br>
+```python
+import numpy as np
 rec_arr = np.rec.array([(1, 'John'), (2, 'Doe')], dtype=[('id', int), ('name', 'U10')])
-</code><br>
-
-Output:
-<code style="background-color: #d9d9e3;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```
+<pre class="output">
+<b class="prompt-1"></b>print(rec_arr)
 [(1, 'John') (2, 'Doe')]
-</code>
-
-<i>The numpy.recarray class is a subclass of numpy.ndarray that represents arrays with named fields, where each field has a different data type.  In this case, the record array has two fields: 'id' which is of integer data type and 'name' which is of Unicode string data type with a maximum length of 10 characters ('U10').</i>
-<br><br>
-<i>The data of the record array is passed as a list of tuples, where each tuple represents a record with values for each field in the order they are specified in the dtype parameter. In this case, the list contains two tuples representing two records, each with an 'id' and 'name' field.</i>
+</pre>
+*The* `numpy.recarray` *class is a subclass of* `numpy.ndarray` *that represents arrays with named fields, where each field has a different data type.  In this case, the record array has two fields:*
+* `'id'` *which is of integer data type and*
+* `'name'` *which is of Unicode string data type with a maximum length of 10 characters ('U10').* <base class="mb">
+The data of the record array is passed as a list of tuples, where each tuple represents a record with values for each field in the order they are specified in the dtype parameter. *In this case, the list contains two tuples representing two records, each with an 'id' and 'name' field.*
 </details>
 
-<details><summary><b>numpy.datetime64()</b></summary>
+<details class="l-frame" markdown="1"><summary><b>numpy.datetime64()</b></summary>
 
 This is a subclass of ndarray that is designed for working with dates and times. It provides additional methods for working with dates and times, such as converting between time zones, parsing date strings, and formatting dates for display.
-
-<code style="background-color: #e6f0f0;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```python
 import numpy as np <br><br>
 dt = np.datetime64('2022-12-25')
-</code><br>
-
-Output:
-<code style="background-color: #d9d9e3;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
+```
+<pre class="output">
+<b class="prompt-1"></b>print(dt)
 2022-12-25
-</code>
-
-<i>This code creates a scalar datetime object of the numpy.datetime64 class. The date "2022-12-25" is passed as a string to the np.datetime64() function, which returns a datetime object representing the specified date. The numpy.datetime64 class is used to represent dates and times in NumPy with nanosecond precision.</i>
+</pre>
+*This code creates a scalar datetime object of the numpy.datetime64 class. The date "2022-12-25" is passed as a string to the* `np.datetime64()` *function, which returns a datetime object representing the specified date. The* `numpy.datetime64` *class is used to represent dates and times in NumPy with nanosecond precision.*
 </details>
 
 
 ## *NumPy data types*
+
+<button class="btn more"></button> *...from the docs: <a href="https://numpy.org/doc/stable/user/basics.types.html#data-types" target="_blank"> Data types  ⤴</a>*
 
 NumPy supports a wide range of data types, including:
 
@@ -265,18 +248,18 @@ NumPy supports a wide range of data types, including:
 * **Unicode** (U + number of bytes, e.g. U10 for 10-byte Unicode strings)
 * **Structured data** (compound types with named fields)
 
-^ *NumPy also provides options to set the endianness (byte order) of the data.* <br>
-*(<a href="https://numpy.org/doc/stable/user/basics.types.html#data-types" target="_blank">learn more from the docs: Data types  ⤴</a>)*
+<p class="footnote mt-">^ NumPy also provides options to set the endianness (byte order) of the data. </p>
 
 
 ## **Indexing & Slicing arrays**
 
-*(<a href="https://numpy.org/doc/stable/user/basics.indexing.html#indexing-on-ndarrays" target="_blank">learn more from the docs: Indexing on ndarrays  ⤴</a>)*
+<button class="btn more"></button> *...from the docs: <a href="https://numpy.org/doc/stable/user/basics.indexing.html#indexing-on-ndarrays" target="_blank"> Indexing on ndarrays  ⤴</a>*
 
 Indexing in Numpy arrays refers to **accessing specific elements or subsets of an array**. <br>Numpy arrays can be indexed using:
 * integers,
 * slices, and
 * Boolean masks.
+
 
 ## *Integer indexing*
 
@@ -288,22 +271,23 @@ import numpy as np
 
 arr = np.array([1, 2, 3, 4, 5, 6])
 ```
-
+<base class="mt">
 To **access a single element** in the array, you can use its index in square brackets:
 ```python
 print(arr[0])                                   # Output: 1
 ```
-
+<base class="mt">
 You can also **select multiple elements** by passing in a list or an array of indices. <br>*For example:*
 ```python
 print(arr[[0, 2, 4]])                           # Output: 1, 3, 5
 ```
 *selects the 1st, 3rd, and 5th elements of the array arr.*
-
+<base class="mt">
 You can also use negative indices to **count from the end of the array**:
 ```python
 print(arr[-1])                                  # Output: 6
 ```
+
 
 ## *Slicing*
 
@@ -314,17 +298,24 @@ To access a range of elements, you can use slicing with the **start:stop:step** 
 print(arr[1:4])                                 # Output: [2 3 4]
 ```
 
-*Here, the `arr[1:4]` selects elements from position 1 to position 3 (inclusive) of the array arr.*
+*Here, the* `arr[1:4]` *selects elements from position 1 to position 3 (inclusive) of the array arr.*
 
 <div class="protip" markdown="1">
 You can also use slicing to select every other element, or to reverse the order of the elements.
 </div>
+
 
 ## *Boolean indexing*
 
 Boolean indexing is used to **select elements of an array that satisfy a certain condition**. You can create a Boolean mask by applying a condition to an array, and then use this mask to select the elements of the array that meet the condition.
 
 For example, `arr[arr > 2]` selects all the elements of the array arr that are greater than 2.
+
+<pre class="output">
+<b class="prompt-1"></b>print(arr[arr > 2])
+[3 4 5 6]
+</pre>
+
 
 ## *Indexing in multidimensional array*
 
@@ -338,12 +329,12 @@ import numpy as np
 
 arr = np.array([[1, 2], [3, 4], [5, 6]])
 ```
-
+<base class="mt">
 To **access a single element** in the multidimensional array, you can use comma-separated indices:
 ```python
 print(arr[0, 1])                                # Output: 2
 ```
-
+<base class="mt">
 You can also use slicing with multiple indices to **access subarrays**:
 ```python
 print(arr[:2, 1:])                              # Output: [[2], [4]]
@@ -351,22 +342,28 @@ print(arr[:2, 1:])                              # Output: [[2], [4]]
 
 ## **Create NumPy arrays**
 
-*(<a href="https://numpy.org/doc/stable/user/basics.creation.html#array-creation" target="_blank">learn more from the docs: Array creation  ⤴</a>)*
+<button class="btn more"></button> *...from the docs: (<a href="https://numpy.org/doc/stable/user/basics.creation.html#array-creation" target="_blank"> Array creation  ⤴</a>*
 
 <div class="warning" markdown="1">
 In NumPy, `numpy.ndarray` and `numpy.array` refer to the same thing.
 </div>
 
+The `numpy.array` is a function that creates a new instance of `numpy.ndarray` *(underlying class that represents NumPy arrays)*. Using the `numpy.array` is the preferred way to create an ndarray object in NumPy.
 
-`numpy.array` is a function that creates a new instance of `numpy.ndarray` *(underlying class that represents NumPy arrays)*. Using the `numpy.array` is the preferred way to create an ndarray object in NumPy.
+<table class="mb-0">
+  <tr> <th width="50%" class="center-h">numpy.array (preferred)</th> <th class="center-h">numpy.ndarray</th> </tr>
+  <tr> <td>For example, the following code creates a new ndarray object using the `numpy.array` function:</td> <td>Alternatively, you could also create an ndarray object directly using the `numpy.ndarray` class constructor, like this:</td> </tr>
+  <tr>
+    <td><code class="code-block">import numpy as np <br><br>a = np.array([1, 2, 3]) <br><br>print(type(a))</code></td>
+    <td><code class="code-block">import numpy as np <br><br>a = np.ndarray([1, 2, 3]) <br><br>print(type(a))</code></td>
+  </tr>
+  <tr>
+    <td class="no-border"><pre class="output font-1"><class 'numpy.ndarray'></pre></td>
+    <td class="no-border"><pre class="output font-1"><class 'numpy.ndarray'></pre></td>
+  </tr>
+</table>
 
-| **numpy.array**  *(preferred)* | **numpy.ndarray** |
-|-------------------------------|-------------------|
-For example, the following code creates a new ndarray object using the `numpy.array` function:|Alternatively, you could also create an ndarray object directly using the `numpy.ndarray` class constructor, like this:|
-|`import numpy as np` <br><br>`a = np.array([1, 2, 3])` <br><br>`print(type(a))` | `import numpy as np` <br><br>`a = np.ndarray([1, 2, 3])` <br><br>`print(type(a))` |
-| # OUTPUT: <class 'numpy.ndarray'> | # OUTPUT: <class 'numpy.ndarray'>|
-
-<div class="protip" markdown="1">
+<div class="protip mt-0" markdown="1">
 It is generally recommended to use `numpy.array` to create new **ndarray objects**, as it provides additional options and features, such as `dtype`, `copy`, `order`, and `subok`.
 </div>
 
@@ -381,8 +378,13 @@ import numpy as np
 l = [1, 2, 3, 4, 5]             # python list
 a = np.array(l)                 # numpy array
 
-print(a)                        # OUTPUT: [1 2 3 4 5]
+print(a)
 ```
+<pre class="output">
+<b class="prompt-1"></b>print(a)
+[1 2 3 4 5]
+</pre>
+
 
 ## *Create 2D array*
 
@@ -392,19 +394,24 @@ To create a 2D array, you can use the `np.array` function and **pass a nested li
 import numpy as np
 
 l = [[1, 2], [3, 4], [5, 6]]    # nested list composed of 3 inner lists
-a = np.array(l)                 # numpy 2D array of 3 rows and 2 columns
+b = np.array(l)                 # numpy 2D array of 3 rows and 2 columns
 
-print(a)                        # OUTPUT: array([[1, 2], [3, 4], [5, 6]])
+print(b)
 ```
-
 *The resulting array have the same number of dimensions as the nested list (in this case, 2 dimensions), with each inner list converted to a row of the array*
+<pre class="output">
+<b class="prompt-1"></b>print(b)
+[[1 2]
+ [3 4]
+ [5 6]]
+</pre>
 
 <div class="example italic" markdown="1">
 Note that the shape of the resulting array will be `(n, m)`, where:
 * `n` is the number of inner lists in the nested list, and
 * `m` is the length of each inner list.
 <base class="mt">
-In this example, `n = 3` and `m = 2`, so the shape of the resulting array is `(3, 2)`, i.e. 3 rows and 2 columns.
+In the above example, `n = 3` and `m = 2`, so the shape of the resulting array is `(3, 2)`, i.e. 3 rows and 2 columns.
 </div>
 
 
@@ -423,6 +430,16 @@ arr = np.array([
 ```
 *This creates a 3-dimensional array with shape (2, 2, 3), where the first dimension has length 2, the second dimension has length 2, and the third dimension has length 3. The array contains two "layers", each of which contains two "rows" of three elements each.*
 
+<pre class="output">
+<b class="prompt-1"></b>print(arr)
+[[[ 1  2  3]
+  [ 4  5  6]]
+
+ [[ 7  8  9]
+  [10 11 12]]]
+</pre>
+
+<base class="mt">
 Here is an example of a **4-dimensional** NumPy array with shape (2, 3, 4, 5):
 ```python
 import numpy as np
@@ -446,6 +463,32 @@ arr = np.array([
 * *The third dimension has length 2, indicating that each block has two "rows".*
 * *The fourth dimension has length 4, indicating that each row has four elements.*
 
+<details class="l-frame" markdown="1"><summary class="c-header"><b><i>see the expected output</i></b></summary>
+
+<pre class="output">
+<b class="prompt-1"></b>print(arr)
+[[[[ 1  2  3  4]
+   [ 5  6  7  8]]
+
+  [[ 9 10 11 12]
+   [13 14 15 16]]
+
+  [[17 18 19 20]
+   [21 22 23 24]]]
+
+
+ [[[25 26 27 28]
+   [29 30 31 32]]
+
+  [[33 34 35 36]
+   [37 38 39 40]]
+
+  [[41 42 43 44]
+   [45 46 47 48]]]]
+</pre>
+</details>
+
+
 ## **Create NumPy matrices**
 
 A matrix is a special case of a multidimensional **array with two dimensions**. You can create a matrix using the `np.matrix` function, which takes a nested list or 2D array as an argument:
@@ -455,36 +498,61 @@ import numpy as np
 l = [[1, 2], [3, 4]]            # nested list composed of 2 inner lists
 a = np.matrix(l)                # numpy 2D array of 2 rows and 2 columns
 
-print(a)                        # OUTPUT: array([[1, 2], [3, 4]])
+print(a)
 ```
+<pre class="output">
+<b class="prompt-1"></b>print(a)
+[[1 2]
+ [3 4]]
+</pre>
 
+<base class="mt">
 You can also create a matrix using the `np.array` function and passing a nested list or 2D array as an argument:
 ```python
 import numpy as np
 l = [[1, 2], [3, 4]]                    # nested list composed of 2 inner lists
 a = np.array(l, dtype=np.matrix)        # numpy 2D array of 2 rows and 2 columns
 
-print(a)                                # OUTPUT: array([[1, 2], [3, 4]])
+print(a)
 ```
-*Note that the dtype argument is used to specify the data type of the array, which in this case is np.matrix.*
+<p class="footnote c-alert mt-0" markdown="1">^ Note that the `dtype` argument is used to specify the data type of the array, which in this case is `np.matrix`.</p>
+
+<pre class="output mt-">
+<b class="prompt-1"></b>print(a)
+[[1 2]
+ [3 4]]
+</pre>
+
 
 ## *2D array vs. matrix*
 
 In NumPy, a **2D array** is a general term that refers to an array with two dimensions. It can be created using the `np.array` function. A NumPy **matrix** is a subclass of a 2D array that has specific properties and behaviors. It is created using the `np.matrix` function. One key difference between a matrix and a 2D array is the way that they handle matrix multiplication.
 
-| **2D array** | **matrix** |
-|--------------|-------------------|
-Consider the following two 2D arrays:|Let's create the same arrays as matrices:|
-|`import numpy as np` <br><br>`a = np.array([[1, 2], [3, 4]])` <br>`b = np.array([[5, 6], [7, 8]])` | `import numpy as np` <br><br>`a_mat = np.matrix([[1, 2], [3, 4]])` <br>`b_mat = np.matrix([[5, 6], [7, 8]])` |
-| To perform matrix multiplication on these arrays, you can use the `np.dot` function: | To perform matrix multiplication on these matrices, you can use the `*` operator:|
-|`c = np.dot(a, b)` <br><br>`print(c)`|`c_mat = a_mat * b_mat` <br><br>`print(c_mat)`|
-| # OUTPUT: [ [19 22], [43 50] ] | # OUTPUT: [ [19 22], [43 50] ] |
+<table class="mb-0">
+  <tr> <th width="50%" class="center-h">2D array</th> <th class="center-h">matrix</th> </tr>
+  <tr> <td>Consider the following two 2D arrays:</td> <td>Let's create the same arrays as matrices:</td> </tr>
+  <tr>
+    <td><code class="code-block">import numpy as np <br><br>a = np.array([[1, 2], [3, 4]]) <br>b = np.array([[5, 6], [7, 8]])</code></td>
+    <td><code class="code-block">import numpy as np <br><br>a_mat = np.matrix([[1, 2], [3, 4]]) <br>b_mat = np.matrix([[5, 6], [7, 8]])</code></td>
+  </tr>
+  <tr> <td><p markdown="1">To perform matrix multiplication on these arrays, you can use the `np.dot` function:</p></td> <td><p markdown="1">To perform matrix multiplication on these matrices, you can use the `*` operator:</p></td> </tr>
+  <tr>
+    <td><code class="code-block">c = np.dot(a, b) <br><br>print(c)</code></td>
+    <td><code class="code-block">c_mat = a_mat * b_mat <br><br>print(c_mat)</code></td>
+  </tr>
+  <tr>
+    <td class="no-border"><pre class="output font-1">[[19 22]<br> [43 50]]</pre></td>
+    <td class="no-border"><pre class="output font-1">[[19 22]<br> [43 50]]</pre></td>
+  </tr>
+</table>
 
-<div class="protip" markdown="1">
+<div class="protip mt-0" markdown="1">
 Note that with matrices, you can use the `*` **operator** to perform <u>matrix multiplication</u> instead of the `np.dot` function. This can make the code more concise and easier to read.
 </div>
+<div class="note" markdown="1">
+In addition, matrices have some additional methods that are not available for 2D arrays. <br>*([see section below](#functions-for-matrix-operations))*
+</div>
 
-<span style="color: #ff3870;font-weight: 500;"> In addition, matrices have some additional methods that are not available for 2D arrays. </span> *(see section below)*
 
 ## *Functions for Matrix operations*
 
@@ -500,20 +568,20 @@ mat = np.matrix(arr)                    # matrix
 ```
 
 
-| method | usage  | output           | description |
-|--------|--------|------------------|-------------|
-| A      | mat.A  | [[1 2] [3 4]]    | Returns the base array of the matrix. <br>*This simply returns the original ndarray that was used to create the matrix.* |
-| A1     | mat.A1 | [1 2 3 4]        | Returns the flattened base array of the matrix. <br>*This is the same as A, except that the resulting array is flattened (i.e., converted to a 1D array).* |
-| H      | mat.H  | [[1 3] [2 4]]    | Returns the conjugate transpose of the matrix. <br>*This is equivalent to taking the transpose of the matrix and then taking the complex conjugate of each element.* |
-| I      | mat.I  | [[-2. 1.] [ 1.5 -0.5]] | Returns the inverse of the matrix. <br>*Note that the matrix must be square in order to have an inverse.* |
-| T      | mat.T  | [[1 3] [2 4]]    | Returns the transpose of the matrix. <br>*This is equivalent to "flipping" the matrix along its diagonal.* |
-| conj   | mat.conj | [[1.-0.j 2.-0.j] [3.-0.j 4.-0.j]]| Returns the complex conjugate of the matrix. <br>*This is equivalent to taking the complex conjugate of each element of the matrix.* |
-| getA   | mat.getA | *see A* | Returns the base array of the matrix. |
-| getA1  | mat.getA1 | *see A1* | Returns the flattened base array of the matrix. |
-| getH   | mat.getH  | *see H* | Returns the conjugate transpose of the matrix. |
-| getI   | mat.getI  | *see I* | Returns the inverse of the matrix. |
-| getT   | mat.getT  | *see T* | Returns the transpose of the matrix. |
-| getconj | mat.getconj | *see conj* | Returns the complex conjugate of the matrix. |
+| method  | usage       | output                 | description |
+|---------|-------------|------------------------|-------------|
+| A       | mat.A       | [[1 2] [3 4]]          | Returns the base array of the matrix. <br>*This simply returns the original ndarray that was used to create the matrix.* |
+| A1      | mat.A1      | [1 2 3 4]              | Returns the flattened base array of the matrix. <br>*This is the same as A, except that the resulting array is flattened (i.e., converted to a 1D array).* |
+| H       | mat.H       | [[1 3] [2 4]]          | Returns the conjugate transpose of the matrix. <br>*This is equivalent to taking the transpose of the matrix and then taking the complex conjugate of each element.* |
+| I       | mat.I       | [[-2. 1.] [ 1.5 -0.5]] | Returns the inverse of the matrix. <br>*Note that the matrix must be square in order to have an inverse.*  |
+| T       | mat.T       | [[1 3] [2 4]]          | Returns the transpose of the matrix. <br>*This is equivalent to "flipping" the matrix along its diagonal.* |
+| conj    | mat.conj    | [[1.-0.j 2.-0.j] [3.-0.j 4.-0.j]]| Returns the complex conjugate of the matrix. <br>*This is equivalent to taking the complex conjugate of each element of the matrix.* |
+| getA    | mat.getA    | *see A*                | Returns the base array of the matrix.           |
+| getA1   | mat.getA1   | *see A1*               | Returns the flattened base array of the matrix. |
+| getH    | mat.getH    | *see H*                | Returns the conjugate transpose of the matrix.  |
+| getI    | mat.getI    | *see I*                | Returns the inverse of the matrix.              |
+| getT    | mat.getT    | *see T*                | Returns the transpose of the matrix.            |
+| getconj | mat.getconj | *see conj*             | Returns the complex conjugate of the matrix.    |
 
 <div class="warning" markdown="1">
 Note that these methods are **NOT available for NumPy arrays**. However, some of them can be emulated using NumPy array methods. For example, the transpose of an array can be calculated using the `np.transpose` function, and the inverse of a matrix can be calculated using the `np.linalg.inv` function.
@@ -539,7 +607,7 @@ The `.npy` **format** is a binary format that stores the data in a raw binary fo
 
 The `np.save()` function saves an array to a binary file in `.npy` format, while the `np.load()` function loads the data from the binary file into an array.
 
-**Example usage:**
+<button class="btn example"></button>
 ```python
 import numpy as np
 
@@ -559,7 +627,7 @@ print(loaded_arr)
 
 These functions are used for **reading and writing arrays in text format**. The `np.savetxt()` function saves an array to a text file in a specified format, while the `np.loadtxt()` function loads the data from a text file into an array.
 
-**Example usage:**
+<button class="btn example"></button>
 ```python
 import numpy as np
 
@@ -579,7 +647,7 @@ print(loaded_arr)
 
 This function is used to **load data from a text file with missing values**. It returns an array with the missing values replaced with a default value or a specified value.
 
-**Example usage:**
+<button class="btn example"></button>
 ```python
 import numpy as np
 
@@ -595,7 +663,7 @@ print(loaded_arr)
 
 # Functions for Array operations
 
-<span style="color: #ff3870;font-weight: 500;"> You can find the official NumPy documentation on their website at: <a href="https://numpy.org/doc/stable/" target="_blank">https://numpy.org/doc/stable/  ⤴</a></span>
+<button class="btn more"></button> *...from the official NumPy documentation at: <a href="https://numpy.org/doc/stable/" target="_blank">https://numpy.org/doc/stable/  ⤴</a>*
 
 NumPy provides a wide range of built-in functions to perform various operations on NumPy arrays. Some of the commonly used functions for NumPy array operations are:
 
@@ -629,13 +697,12 @@ import numpy as np
 # Create a 2D array of zeros with 3 rows and 4 columns
 arr = np.zeros((3, 4))
 ```
-<code style="background-color: #d9d9e3;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-print(arr) <br><br>
-$ Output: <br>
-$ [[0. 0. 0. 0.] <br>
-$ &nbsp;[0. 0. 0. 0.] <br>
-$ &nbsp;[0. 0. 0. 0.]]
-</code>
+<pre class="output">
+<b class="prompt-1"></b>print(arr)
+[[0. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 0.]]
+</pre>
 
 ## np.ones()
 
@@ -648,11 +715,10 @@ import numpy as np
 # Create a 1D array of ones with 5 elements
 arr = np.ones(5)
 ```
-<code style="background-color: #d9d9e3;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-print(arr) <br><br>
-$ Output: <br>
-$ [1. 1. 1. 1. 1.]
-</code>
+<pre class="output">
+<b class="prompt-1"></b>print(arr)
+[1. 1. 1. 1. 1.]
+</pre>
 
 ## np.arange()
 
@@ -665,11 +731,10 @@ import numpy as np
 # Create an array of integers from 0 to 9
 arr = np.arange(10)
 ```
-<code style="background-color: #d9d9e3;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-print(arr) <br><br>
-$ Output: <br>
-$ [0 1 2 3 4 5 6 7 8 9]
-</code>
+<pre class="output">
+<b class="prompt-1"></b>print(arr)
+[0 1 2 3 4 5 6 7 8 9]
+</pre>
 
 ## np.linspace()
 
@@ -682,11 +747,10 @@ import numpy as np
 # Create an array of 5 numbers from 0 to 1 (inclusive)
 arr = np.linspace(0, 1, 5)
 ```
-<code style="background-color: #d9d9e3;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-print(arr) <br><br>
-$ Output: <br>
-$ [0.   0.25 0.5  0.75 1.  ]
-</code>
+<pre class="output">
+<b class="prompt-1"></b>print(arr)
+[0.   0.25 0.5  0.75 1.  ]
+</pre>
 
 ## np.reshape()
 
@@ -702,12 +766,11 @@ arr = np.arange(10)                             # output: [0 1 2 3 4 5 6 7 8 9]
 # Reshape the array into a 2D array with 2 rows and 5 columns
 arr_reshaped = np.reshape(arr, (2, 5))
 ```
-<code style="background-color: #d9d9e3;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-print(arr_reshaped) <br><br>
-$ Output: <br>
-$ [[0 1 2 3 4] <br>
-$ &nbsp;[5 6 7 8 9]]
-</code>
+<pre class="output">
+<b class="prompt-1"></b>print(arr_reshaped)
+[[0 1 2 3 4]
+ [5 6 7 8 9]]
+</pre>
 
 ## np.transpose()
 
@@ -722,13 +785,12 @@ arr = np.array([[1, 2, 3], [4, 5, 6]])
 # Transpose the array (rows become columns and columns become rows)
 arr_transposed = np.transpose(arr)
 ```
-<code style="background-color: #d9d9e3;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-print(arr_transposed) <br><br>
-$ Output: <br>
-$ [[1 4] <br>
-$ &nbsp;[2 5] <br>
-$ &nbsp;[3 6]]
-</code>
+<pre class="output">
+<b class="prompt-1"></b>print(arr_transposed)
+[[1 4]
+ [2 5]
+ 3 6]]
+</pre>
 
 ## np.concatenate()
 
@@ -750,24 +812,22 @@ result_v = np.vstack((arr1, arr2))
 # concatenate the two arrays along the second axis
 result_a = np.concatenate((arr1, arr2), axis=0)
 ```
-<code style="background-color: #d9d9e3;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-print(result_h) <br><br>
-$ Output: <br>
-$ [1 2 3 4 5 6] <br><br>
------- <br>
-print(result_v) <br><br>
-$ Output: <br>
-$ [[1 2 3] <br>
-$ &nbsp;[4 5 6]] <br><br>
------- <br>
-print(result_a) <br><br>
-$ Output: <br>
-$ [1 2 3 4 5 6]
-</code><br>
+<pre class="output">
+<b class="prompt-1"></b>print(result_h)
+[1 2 3 4 5 6]
+
+<b class="prompt-1"></b>print(result_v)
+[[1 2 3]
+ [4 5 6]]
+
+<b class="prompt-1"></b>print(result_a)
+[1 2 3 4 5 6]
+</pre>
 
 <div class="protip" markdown="1">
 Note that the `np.hstack()` function can also be used to concatenate arrays horizontally, and the `np.dstack()` function can be used to concatenate arrays along a third dimension.
 </div>
+
 
 ## np.split()
 
@@ -779,12 +839,11 @@ import numpy as np
 arr = np.arange(16).reshape((4,4))
 sub_arrays = np.split(arr, 2, axis=0)
 ```
-<code style="background-color: #d9d9e3;  padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-print(sub_arrays) <br><br>
-$ Output: <br>
-$ [array([[0, 1, 2, 3], [4, 5, 6, 7]]),  <br>
-$ &nbsp;array([[ 8,  9, 10, 11], [12, 13, 14, 15]])]
-</code>
+<pre class="output">
+<b class="prompt-1"></b>print(sub_arrays)
+[array([[0, 1, 2, 3], [4, 5, 6, 7]]),
+ array([[ 8,  9, 10, 11], [12, 13, 14, 15]])]
+</pre>
 
 ## np.sort()
 
