@@ -356,10 +356,10 @@ toc-note {
 .prefix-4::before {content: "⊙ \00a0\00a0\00a0";}
 .prefix-4 {margin-left: 64px;}
 
-.prompt-1::before {content: ">>>  "; color: var(--c-gray);}
-.prompt-2::before {content: "...  "; color: var(--c-gray);}
-.prompt-3::before {content: "$:  "; color: var(--c-good);}
-.prompt-4::before {content: "custom output"; color: var(--c-exercise);}
+.prompt-1::before {content: var(--custom-before, ">>>  "); color: var(--c-gray);}
+.prompt-2::before {content: var(--custom-before, "...  "); color: var(--c-gray);}
+.prompt-3::before {content: var(--custom-before, "$:  "); color: var(--c-good);}
+.prompt-4::before {content: var(--custom-before, "!:  "); color: var(--c-exercise);}
 
 .collapsible-content .prefix-2, .collapsible-content .prefix-3, .collapsible-content .prefix-4 {color: #3f5a8a;}
 .collapsible-content .prefix-2 a, .collapsible-content .prefix-3 a, .collapsible-content .prefix-4 a {color: #3f5a8a !important;}
