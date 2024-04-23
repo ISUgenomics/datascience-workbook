@@ -18,10 +18,10 @@ tags: []
 {% include page-sourcing.html %}
 
 
-# Introduction
+# Getting started with Julia
 
 
-## **Load Julia as module on HPC**
+## Load Julia as module on HPC
 
 
 Julia, like Python or R, is often preinstalled on High Performance Computing (HPC) clusters to facilitate computational tasks. To check the available versions of Julia on the cluster, you can use the command:
@@ -47,9 +47,9 @@ On **Atlas cluster**, Julia is available as a module in `version 1.5`, and <br> 
 </div>
 
 
-## **Install Julia in selected version**
+## Install Julia in selected version
 
-* explore options for installing Julia at [https://julialang.org/downloads/](https://julialang.org/downloads/)
+<button class="btn more"></button> explore options for installing Julia at [https://julialang.org/downloads/](https://julialang.org/downloads/)
 
 **RECOMMENDED ON YOUR LOCAL MACHINE** <br>
 Install Julia with [Juliaup](https://github.com/JuliaLang/juliaup) - a Rust-based cross-platform Julia installer & version manager:
@@ -62,7 +62,7 @@ curl -fsSL https://install.julialang.org | sh -s -- --yes --default-channel rele
 
 Depending on which shell you are using, run one of the following
 commands to reload the PATH environment variable:
-```
+```bash
 . ~/.bashrc
 . ~/.bash_profile
 . ~/.zshrc
@@ -81,7 +81,7 @@ julia --help
 ```
 which display the `usage message` for each tool. You can learn about available options and usage examples. Explore the [Using Juliaup](https://github.com/JuliaLang/juliaup#using-juliaup) section in the official documentation of the GitHub repo, to learn what you can do with `juliaup`.
 
-
+<base class="mt">
 **Julia via Juliaup on HPC**
 
 You can utilize the [Juliaup](https://github.com/JuliaLang/juliaup#using-juliaup) version manager to install Julia in your user space on the HPC, and it's advisable to relocate and create symbolic links for the corresponding hidden directories for `.julia` and `.juliaup` **from your home directory to your project location** to prevent exceeding memory quota in your home directory.
@@ -89,7 +89,7 @@ You can utilize the [Juliaup](https://github.com/JuliaLang/juliaup#using-juliaup
 ![05_juliaup_on_hpc.png]({{ images_path }}/05_juliaup_on_hpc.png)
 
 
-### Launch interactive Julia interpreter
+## Launch interactive Julia interpreter
 
 To check the default Julia version use command:
 ```bash
@@ -121,11 +121,12 @@ Once in the interactive Julia interpreter, type `?` and press `enter`. This will
 ```julia
 julia> ?
 ```
-![05_julia_help.png]({{ images_path }}/05_julia_help.png) <br><br>
-<b>NOTE:</b> *For help on a specific function or macro, type* `?` *followed by its name, e.g.* `?cos`, *or* `?@time`, *and press enter.*
+![05_julia_help.png]({{ images_path }}/05_julia_help.png)
+
+<p class="footnote c-alert mt-" markdown="1">**NOTE:** For help on a specific function or macro, type `?` followed by its name, e.g. `?cos`, or `?@time`, and press enter.</p>
 
 
-## **Julia package manager**
+# Julia package manager
 
 In the Julia REPL, type `]` to enter the package manager mode. This will automatically switch the `julia>` prompt into the `(@v1.9) pkg>` built-in package manager mode.
 ```julia
@@ -149,49 +150,49 @@ Further, you can get more detailed help on various commands, for example:
 ```
 ![05_julia_manager_help.png]({{ images_path }}/05_julia_manager_help.png)
 
-<details> <summary>See the full list of commands</summary>
+<details class="l-frame" markdown="1"><summary class="c-header"><b>See the full list of commands</b></summary>
 
-<div style="background: #e6f0f0; padding: 15px; margin-bottom: 20px;">
+<pre class="output">
 Welcome to the Pkg REPL-mode. To return to the julia> prompt, either press backspace when the input line is empty or press
-Ctrl+C. <br><br>
+Ctrl+C.
 Full documentation available at https://pkgdocs.julialang.org/
-<br><br>
-Synopsis<br>
-pkg> cmd [opts] [args]
-<br><br>
+
+Synopsis
+<b class="prompt-1 before" data-before="pkg>  "></b>cmd [opts] [args]
+
 Multiple commands can be given on the same line by interleaving a ; between the commands. Some commands have an alias,
 indicated below.
-<br><br>
-Commands: <br>
-<b>activate:</b> set the primary environment the package manager manipulates<br>
-<b>add:</b> add packages to project<br>
-<b>build:</b> run the build script for packages<br>
-<b>compat:</b> edit compat entries in the current Project and re-resolve<br>
-<b>develop, dev:</b> clone the full package repo locally for development<br>
-<b>free:</b> undoes a pin, develop, or stops tracking a repo<br
-<b>gc:</b> garbage collect packages not used for a significant time<br>
-<b>generate:</b> generate files for a new project<br>
-<b>help, ?:</b> show this message<br>
-<b>instantiate:</b> downloads all the dependencies for the project<br>
-<b>pin:</b> pins the version of packages<br>
-<b>precompile:</b> precompile all the project dependencies<br>
-<b>redo:</b> redo the latest change to the active project<br>
-<b>remove, rm:</b> remove packages from project or manifest<br>
-<b>resolve:</b> resolves to update the manifest from changes in dependencies of developed packages<br>
-<b>status, st:</b> summarize contents of and changes to environment<br>
-<b>test:</b> run tests for packages<br>
-<b>undo:</b> undo the latest change to the active project<br>
-<b>update, up:</b> update packages in manifest<br>
-<b>why:</b> shows why a package is in the manifest<br>
-<b>registry add:</b> add package registries<br>
-<b>registry remove, rm:</b> remove package registries<br>
-<b>registry status, st:</b> information about installed registries<br>
-<b>registry update, up:</b> update package registries
-</div>
+
+Commands:
+<b class="c-exercise">activate</b> : set the primary environment the package manager manipulates
+<b class="c-exercise">add</b> : add packages to project
+<b class="c-exercise">build</b> : run the build script for packages
+<b class="c-exercise">ompat</b> : c edit compat entries in the current Project and re-resolve
+<b class="c-exercise">develop, dev</b> : clone the full package repo locally for development
+<b class="c-exercise">free</b> : undoes a pin, develop, or stops tracking a repo
+<b class="c-exercise">gc</b> : garbage collect packages not used for a significant time
+<b class="c-exercise">generate</b> : generate files for a new project
+<b class="c-exercise">help, ?</b> : show this message
+<b class="c-exercise">instantiate</b> : downloads all the dependencies for the project
+<b class="c-exercise">pin</b> : pins the version of packages
+<b class="c-exercise">precompile</b> : precompile all the project dependencies
+<b class="c-exercise">redo</b> : redo the latest change to the active project
+<b class="c-exercise">remove, rm</b> : remove packages from project or manifest
+<b class="c-exercise">resolve</b> : resolves to update the manifest from changes in dependencies of developed packages
+<b class="c-exercise">status, st</b> : summarize contents of and changes to environment
+<b class="c-exercise">test</b> : run tests for packages
+<b class="c-exercise">undo</b> : undo the latest change to the active project
+<b class="c-exercise">update, up</b> : update packages in manifest
+<b class="c-exercise">why</b> : shows why a package is in the manifest
+<b class="c-exercise">registry add</b> : add package registries
+<b class="c-exercise">registry remove, rm</b> : remove package registries
+<b class="c-exercise">registry status, st</b> : information about installed registries
+<b class="c-exercise">registry update, up</b> : update package registries
+</pre>
 </details>
 
 
-### Install Packages system-wide
+## Install Packages system-wide
 
 Once you launch REPL with a `julia` keyword you will enter the default Julia environment. The default environment is typically the `@v#.#` environment, where `#.#` corresponds to the version of Julia that you are using. For example, for Julia version 1.9, the default environment would be `@v1.9`. <br>
 
@@ -218,7 +219,7 @@ You can also add (install) multiple packages with a single add command in Julia:
 (@v1.9) pkg> add DataFrames@v1.6.1 DelimitedFiles@v1.9.1 ProgressBars@v1.5.1
 ```
 
-### Create isolated environment
+## Create isolated environment
 
 Creating a virtual environment in Julia is slightly different compared to languages like Python. In Julia, the term for a virtual environment is a "project". Each project has its own set of dependencies, which are managed through a `Project.toml` file, and optionally a `Manifest.toml` file.
 
@@ -227,49 +228,49 @@ It's beneficial to **have a centralized location for all your Julia Projects**, 
 </div>
 
 1. **Open terminal** and navigate to the location where you want to store your isolated environments for Julia. <br><br>
-You can create a **JULIA_ENVS** directory in your `/project/` working space on a cluster and house all your Julia environments there with meaningful names. When a particular environment is needed, you can easily activate it from this centralized path, or create symbolic links (softlinks) to the corresponding project location if you prefer to keep them together with your data and scripts.
+  You can create a **JULIA_ENVS** directory in your `/project/` working space on a cluster and house all your Julia environments there with meaningful names. When a particular environment is needed, you can easily activate it from this centralized path, or create symbolic links (softlinks) to the corresponding project location if you prefer to keep them together with your data and scripts.
 
 2. **Launch a Julia** interactive interpreter in a terminal:
-```bash
-julia
-```
+  ```bash
+  julia
+  ```
 
 3. **Type** `]` to enter the package manager mode. <br>*Note that the prompt changed from julia> to something like (@v1.9) pkg>.*
 
 4. **Create a new project** by running the command `generate YourProjectName`, replacing "YourProjectName" with the name you want to give to your project.
-```julia
-(@v1.9) pkg> generate julia_geo
-```
-*This will create a new directory named julia_geo with a Project.toml file in it.*
+  ```julia
+  (@v1.9) pkg> generate julia_geo
+  ```
+  *This will create a new directory named julia_geo with a Project.toml file in it.*
 
 5. **Activate the Project** *(i.e. the environment)*. Still in the package manager mode, navigate to the project directory and activate the project by running the command:
-```julia
-(@v1.9) pkg> activate ./julia_geo
-```
-![05_julia_create_env.png]({{ images_path }}/05_julia_create_env.png) <br>
-<i>Once you activate the environment, the prompt will change to display the name of the active environment (e.g., julia_geo), indicating that you are now working within this specific environment.</i>
+  ```julia
+  (@v1.9) pkg> activate ./julia_geo
+  ```
+  ![05_julia_create_env.png]({{ images_path }}/05_julia_create_env.png)
+  *Once you activate the environment, the prompt will change to display the name of the active environment (e.g., julia_geo), indicating that you are now working within this specific environment.*
 
 6. **Install Packages** in the new environment. With your new environment activated, you can now install packages using the `add` command:
-```julia
-(julia_geo) pkg> add Geodesy
-```
-or to install a specific version of a package:
-```julia
-(julia_geo) pkg> add Geodesy@v1.1.0
-```
-![]()
-You can also add (install) multiple packages with a single add command in Julia:
-```julia
-(julia_geo) pkg> add ImageMagick@v1.3.0 Images@v0.26.0 CairoMakie@v0.10.9
-```
+  ```julia
+  (julia_geo) pkg> add Geodesy
+  ```
+  or to install a specific version of a package:
+  ```julia
+  (julia_geo) pkg> add Geodesy@v1.1.0
+  ```
+  You can also add (install) multiple packages with a single add command in Julia:
+  ```julia
+  (julia_geo) pkg> add ImageMagick@v1.3.0 Images@v0.26.0 CairoMakie@v0.10.9
+  ```
 
 7. **Deactivate the Project**, i.e. the specific environment, and return to the default environment:
-```julia
-(julia_geo) pkg> activate
-```
-*Now you are back in the default environment (@v1.9 in this example) and can access all the packages installed there.*
+  ```julia
+  (julia_geo) pkg> activate
+  ```
+  *Now you are back in the default environment (@v1.9 in this example) and can access all the packages installed there.*
 
-### Move `.julia` from home to project on HPC
+
+### *Move* `.julia` *from home to project on HPC*
 
 <div class="warning" markdown="1">
 When you **set up Julia on the HPC** infrastructure for the first time, remember to relocate the `.julia` hidden folder from your `$HOME` to the storage space without limited memory quota (e.g., on SCINET clusters it can be the `/project/` **path**). Then soft link them back to the `/home/user.name` directory to make them accessible from this default location. <base class="mb">
@@ -290,24 +291,24 @@ ln -s /project/<your_project_dir>/<account_name>/.julia* ./
 ![05_julia_move_files.png]({{ images_path }}/05_julia_move_files.png)
 
 
-## **Julia in Jupyter Lab**
+# Julia in Jupyter Lab
 
 Julia is not natively available in Jupyter Lab upon a fresh installation. However, you can easily add Julia to Jupyter Lab through the `IJulia` package, which serves as a Julia-language backend for the Jupyter interactive environment.
 
-### Install IJulia
+
+## Install IJulia
 
 1. First, ensure you have Julia installed on your machine.
 2. In the terminal, launch the built-in interactive interpreter (REPL) for Julia:
-```bash
-julia
-```
+  ```bash
+  julia
+  ```
 3. In the Julia REPL, run the following command to install the `IJulia` package:
-```julia
-using Pkg
-Pkg.add("IJulia")
-```
-![05_julia_jupyter_kernel.png]({{ images_path }}/05_julia_jupyter_kernel.png)
-
+  ```julia
+  using Pkg
+  Pkg.add("IJulia")
+  ```
+  ![05_julia_jupyter_kernel.png]({{ images_path }}/05_julia_jupyter_kernel.png)
 
 <div class="protip level-1" markdown="1">
 If you **install** `IJulia` **in the base environment**, you'll obtain a <u>universal Julia kernel in Jupyter Lab</u>, which can be paired with any custom environment created later. To utilize a custom environment with this universal kernel, simply activate the desired environment within a notebook (follow the steps provided below).
@@ -315,7 +316,8 @@ If you **install** `IJulia` **in the base environment**, you'll obtain a <u>univ
 
 Once `IJulia` is installed, you can launch Jupyter Lab (assuming you <a class="t-links" href="412" section="#installing-jupyter">have it installed</a>).
 
-### Access Julia in Jupyter Lab
+
+## Access Julia in Jupyter Lab
 
 **A. Launch Jupyter Lab installed on HPC via OOD**
 
@@ -340,7 +342,8 @@ In Jupyter Lab, you should now see Julia as an available kernel, which allows yo
 
 To open a new instance of a selected app, such as a Julia-based notebook, navigate to the Launcher in JupyterLab and click on the Julia kernel.
 
-### Activate an Isolated Environment
+
+## Activate an Isolated Environment
 
 When it comes to working in isolated environments with specific dependencies, you can switch to any environment you want within a single notebook by running the `Pkg.activate()` command with the path to the desired environment. This method is quick and easy, and allows you to manage your environments directly within your Jupyter notebooks.
 
