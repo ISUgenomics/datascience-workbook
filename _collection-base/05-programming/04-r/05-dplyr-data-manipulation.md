@@ -17,14 +17,13 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
 
 # Introduction
 
-`dplyr` provides a set of verbs for data manipulation. It is one of the most popular packages in R written by Hadley Wickham.
-[dplyr](https://dplyr.tidyverse.org)
+[dplyr](https://dplyr.tidyverse.org) provides a set of verbs for data manipulation. It is one of the most popular packages in R written by Hadley Wickham.
 
-### Installing required packages
+
+## Installing required packages
 
 
 ```r
@@ -39,18 +38,18 @@ if ( any(installed_packages == FALSE) ) {
   cat("The packages are already installed!\n")
 }
 ```
+<pre class="output">
+The packages are already installed!
+</pre>
 
-```
-## The packages are already installed!
-```
+## Loading packages
 
 ```r
 # Loading packages
 invisible( lapply(packages, library, character.only = TRUE) )
 ```
 
-```
-##
+<pre class="output">
 ## Attaching package: 'dplyr'
 ## The following objects are masked from 'package:stats':
 ##
@@ -65,28 +64,29 @@ invisible( lapply(packages, library, character.only = TRUE) )
 ## The following object is masked from 'package:dplyr':
 ##
 ##     group_rows
-```
+</pre>
 
 
-### Alternative way to load the required packages
+### *Alternative way to load the required packages*
 
 ```r
-library( gapminder ) # data set
-library( dplyr ) # grammar of data manipulation
-library( ggplot2 ) # Visualisation
-library( wesanderson ) # colour palette
+library( gapminder )     # data set
+library( dplyr )         # grammar of data manipulation
+library( ggplot2 )       # Visualisation
+library( wesanderson )   # colour palette
 ```
 
-### The gapminder data set
+## The gapminder data set
+
 The data set contains data (1952-2007) on various indicators such as life expectancy and GDP for countries around the world.
 
-### Displaying the structure of the `gapminder` data set
+### *Displaying the structure of the data set*
 
 ```r
 str( gapminder )
 ```
 
-```
+<pre class="output">
 ## tibble [1,704 × 6] (S3: tbl_df/tbl/data.frame)
 ##  $ country  : Factor w/ 142 levels "Afghanistan",..: 1 1 1 1 1 1 1 1 1 1 ...
 ##  $ continent: Factor w/ 5 levels "Africa","Americas",..: 3 3 3 3 3 3 3 3 3 3 ...
@@ -94,7 +94,7 @@ str( gapminder )
 ##  $ lifeExp  : num [1:1704] 28.8 30.3 32 34 36.1 ...
 ##  $ pop      : int [1:1704] 8425333 9240934 10267083 11537966 13079460 14880372 12881816 13867957 16317921 22227415 ...
 ##  $ gdpPercap: num [1:1704] 779 821 853 836 740 ...
-```
+</pre>
 
 The top six rows of the data set.
 
@@ -102,19 +102,21 @@ The top six rows of the data set.
 head( gapminder )
 ```
 
-```
+<pre class="output">
 ## # A tibble: 6 × 6
 ##   country     continent  year lifeExp      pop gdpPercap
-##   <fct>       <fct>     <int>   <dbl>    <int>     <dbl>
+##   &lt;fct>       &lt;fct>     &lt;int>   &lt;dbl>    &lt;int>     &lt;dbl>
 ## 1 Afghanistan Asia       1952    28.8  8425333      779.
 ## 2 Afghanistan Asia       1957    30.3  9240934      821.
 ## 3 Afghanistan Asia       1962    32.0 10267083      853.
 ## 4 Afghanistan Asia       1967    34.0 11537966      836.
 ## 5 Afghanistan Asia       1972    36.1 13079460      740.
 ## 6 Afghanistan Asia       1977    38.4 14880372      786.
-```
+</pre>
 
-### dplyr verbs
+
+## **`dplyr`** verbs
+
 - filter()
 - select()
 - arrange()
@@ -122,18 +124,18 @@ head( gapminder )
 - summarize()
 - group_by()
 
-1. filter
-The `filter()` function subsets the data based on certain logical conditions
+### <b class="prefix-2"></b>`filter()`
 
+The `filter()` function subsets the data based on certain logical conditions
 
 ```r
 filter( gapminder, country == "United States" )
 ```
 
-```
+<pre class="output">
 ## # A tibble: 12 × 6
 ##    country       continent  year lifeExp       pop gdpPercap
-##    <fct>         <fct>     <int>   <dbl>     <int>     <dbl>
+##    &lt;fct>         &lt;fct>     &lt;int>   &lt;dbl>     &lt;int>     &lt;dbl>
 ##  1 United States Americas   1952    68.4 157553000    13990.
 ##  2 United States Americas   1957    69.5 171984000    14847.
 ##  3 United States Americas   1962    70.2 186538000    16173.
@@ -146,17 +148,17 @@ filter( gapminder, country == "United States" )
 ## 10 United States Americas   1997    76.8 272911760    35767.
 ## 11 United States Americas   2002    77.3 287675526    39097.
 ## 12 United States Americas   2007    78.2 301139947    42952.
-```
+</pre>
 
 
 ```r
 filter( gapminder, lifeExp > 80)
 ```
 
-```
+<pre class="output">
 ## # A tibble: 21 × 6
 ##    country          continent  year lifeExp      pop gdpPercap
-##    <fct>            <fct>     <int>   <dbl>    <int>     <dbl>
+##    <&lt;fct>            &lt;fct>     &lt;int>   &lt;dbl>    &lt;int>     &lt;dbl>
 ##  1 Australia        Oceania    2002    80.4 19546792    30688.
 ##  2 Australia        Oceania    2007    81.2 20434176    34435.
 ##  3 Canada           Americas   2007    80.7 33390141    36319.
@@ -169,17 +171,17 @@ filter( gapminder, lifeExp > 80)
 ## 10 Italy            Europe     2002    80.2 57926999    27968.
 ## # … with 11 more rows
 ## # ℹ Use `print(n = ...)` to see more rows
-```
+</pre>
 
 
 ```r
 filter( gapminder, year == 2007 )
 ```
 
-```
+<pre class="output">
 ## # A tibble: 142 × 6
 ##    country     continent  year lifeExp       pop gdpPercap
-##    <fct>       <fct>     <int>   <dbl>     <int>     <dbl>
+##    <&lt;fct>       &lt;fct>     &lt;int>   <&lt;dbl>     &lt;int>     &lt;dbl>
 ##  1 Afghanistan Asia       2007    43.8  31889923      975.
 ##  2 Albania     Europe     2007    76.4   3600523     5937.
 ##  3 Algeria     Africa     2007    72.3  33333216     6223.
@@ -192,20 +194,20 @@ filter( gapminder, year == 2007 )
 ## 10 Belgium     Europe     2007    79.4  10392226    33693.
 ## # … with 132 more rows
 ## # ℹ Use `print(n = ...)` to see more rows
-```
+</pre>
 
-2. select
+### <b class="prefix-2"></b>`select()`
+
 The `select()` function selects desired variables
-
 
 ```r
 select( gapminder, country, year, gdpPercap)
 ```
 
-```
+<pre class="output">
 ## # A tibble: 1,704 × 3
 ##    country      year gdpPercap
-##    <fct>       <int>     <dbl>
+##    <&lt;fct>       &lt;int>     &lt;dbl>
 ##  1 Afghanistan  1952      779.
 ##  2 Afghanistan  1957      821.
 ##  3 Afghanistan  1962      853.
@@ -218,50 +220,50 @@ select( gapminder, country, year, gdpPercap)
 ## 10 Afghanistan  1997      635.
 ## # … with 1,694 more rows
 ## # ℹ Use `print(n = ...)` to see more rows
-```
+</pre>
 
 
 ```r
 head( select( gapminder, country, lifeExp:gdpPercap ) )
 ```
 
-```
+<pre class="output">
 ## # A tibble: 6 × 4
 ##   country     lifeExp      pop gdpPercap
-##   <fct>         <dbl>    <int>     <dbl>
+##   &lt;fct>         <&lt;dbl>    &lt;int>     &lt;dbl>
 ## 1 Afghanistan    28.8  8425333      779.
 ## 2 Afghanistan    30.3  9240934      821.
 ## 3 Afghanistan    32.0 10267083      853.
 ## 4 Afghanistan    34.0 11537966      836.
 ## 5 Afghanistan    36.1 13079460      740.
 ## 6 Afghanistan    38.4 14880372      786.
-```
+</pre>
 
 
 ```r
 head( gapminder )
 ```
 
-```
+<pre class="output">
 ## # A tibble: 6 × 6
 ##   country     continent  year lifeExp      pop gdpPercap
-##   <fct>       <fct>     <int>   <dbl>    <int>     <dbl>
+##   &lt;fct>       &lt;fct>     &lt;int>   &lt;dbl>    &lt;int>     &lt;dbl>
 ## 1 Afghanistan Asia       1952    28.8  8425333      779.
 ## 2 Afghanistan Asia       1957    30.3  9240934      821.
 ## 3 Afghanistan Asia       1962    32.0 10267083      853.
 ## 4 Afghanistan Asia       1967    34.0 11537966      836.
 ## 5 Afghanistan Asia       1972    36.1 13079460      740.
 ## 6 Afghanistan Asia       1977    38.4 14880372      786.
-```
+</pre>
 
 ```r
 select( gapminder, 1, 4:6 )
 ```
 
-```
+<pre class="output">
 ## # A tibble: 1,704 × 4
 ##    country     lifeExp      pop gdpPercap
-##    <fct>         <dbl>    <int>     <dbl>
+##    <&lt;fct>         &lt;dbl>    &lt;int>     &lt;dbl>
 ##  1 Afghanistan    28.8  8425333      779.
 ##  2 Afghanistan    30.3  9240934      821.
 ##  3 Afghanistan    32.0 10267083      853.
@@ -274,17 +276,17 @@ select( gapminder, 1, 4:6 )
 ## 10 Afghanistan    41.8 22227415      635.
 ## # … with 1,694 more rows
 ## # ℹ Use `print(n = ...)` to see more rows
-```
+</pre>
 
 
 ```r
 select( gapminder, where(is.factor) | where(is.integer) )
 ```
 
-```
+<pre class="output">
 ## # A tibble: 1,704 × 4
 ##    country     continent  year      pop
-##    <fct>       <fct>     <int>    <int>
+##    <&lt;fct>      &lt;fct>     &lt;int>    &lt;int>
 ##  1 Afghanistan Asia       1952  8425333
 ##  2 Afghanistan Asia       1957  9240934
 ##  3 Afghanistan Asia       1962 10267083
@@ -297,13 +299,13 @@ select( gapminder, where(is.factor) | where(is.integer) )
 ## 10 Afghanistan Asia       1997 22227415
 ## # … with 1,694 more rows
 ## # ℹ Use `print(n = ...)` to see more rows
-```
+</pre>
 
 ```r
 str( gapminder )
 ```
 
-```
+<pre class="output">
 ## tibble [1,704 × 6] (S3: tbl_df/tbl/data.frame)
 ##  $ country  : Factor w/ 142 levels "Afghanistan",..: 1 1 1 1 1 1 1 1 1 1 ...
 ##  $ continent: Factor w/ 5 levels "Africa","Americas",..: 3 3 3 3 3 3 3 3 3 3 ...
@@ -311,20 +313,20 @@ str( gapminder )
 ##  $ lifeExp  : num [1:1704] 28.8 30.3 32 34 36.1 ...
 ##  $ pop      : int [1:1704] 8425333 9240934 10267083 11537966 13079460 14880372 12881816 13867957 16317921 22227415 ...
 ##  $ gdpPercap: num [1:1704] 779 821 853 836 740 ...
-```
+</pre>
 
-3. arrange
+### <b class="prefix-2"></b>`arrange()`
+
 The `arrange()` function sorts data in a column in either ascending or descending order.
-
 
 ```r
 arrange( gapminder, gdpPercap ) # arranges lowest to highest
 ```
 
-```
+<pre class="output">
 ## # A tibble: 1,704 × 6
 ##    country          continent  year lifeExp      pop gdpPercap
-##    <fct>            <fct>     <int>   <dbl>    <int>     <dbl>
+##    &lt;fct>            &lt;fct>     &lt;int>   &lt;dbl>    &lt;int>     <&lt;dbl>
 ##  1 Congo, Dem. Rep. Africa     2002    45.0 55379852      241.
 ##  2 Congo, Dem. Rep. Africa     2007    46.5 64606759      278.
 ##  3 Lesotho          Africa     1952    42.1   748747      299.
@@ -337,17 +339,17 @@ arrange( gapminder, gdpPercap ) # arranges lowest to highest
 ## 10 Eritrea          Africa     1957    38.0  1542611      344.
 ## # … with 1,694 more rows
 ## # ℹ Use `print(n = ...)` to see more rows
-```
+</pre>
 
 
 ```r
 arrange( gapminder, desc(gdpPercap) ) # arranges highest to lowest
 ```
 
-```
+<pre class="output">
 ## # A tibble: 1,704 × 6
 ##    country   continent  year lifeExp     pop gdpPercap
-##    <fct>     <fct>     <int>   <dbl>   <int>     <dbl>
+##    <&lt;fct>     &lt;fct>     &lt;int>   &lt;dbl>   &lt;int>     &lt;dbl>
 ##  1 Kuwait    Asia       1957    58.0  212846   113523.
 ##  2 Kuwait    Asia       1972    67.7  841934   109348.
 ##  3 Kuwait    Asia       1952    55.6  160000   108382.
@@ -360,20 +362,20 @@ arrange( gapminder, desc(gdpPercap) ) # arranges highest to lowest
 ## 10 Norway    Europe     2002    79.0 4535591    44684.
 ## # … with 1,694 more rows
 ## # ℹ Use `print(n = ...)` to see more rows
-```
+</pre>
 
-4. mutate
+### <b class="prefix-2"></b>`mutate()`
+
 The `mutate()` function adds new columns to the data. For adding a `gdp` column,
-
 
 ```r
 mutate( gapminder, gdp = pop * gdpPercap )
 ```
 
-```
+<pre class="output">
 ## # A tibble: 1,704 × 7
 ##    country     continent  year lifeExp      pop gdpPercap          gdp
-##    <fct>       <fct>     <int>   <dbl>    <int>     <dbl>        <dbl>
+##    &lt;fct>       &lt;fct>     &lt;int>   &lt;dbl>    <&lt;int>     &lt;dbl>        &lt;dbl>
 ##  1 Afghanistan Asia       1952    28.8  8425333      779.  6567086330.
 ##  2 Afghanistan Asia       1957    30.3  9240934      821.  7585448670.
 ##  3 Afghanistan Asia       1962    32.0 10267083      853.  8758855797.
@@ -386,70 +388,71 @@ mutate( gapminder, gdp = pop * gdpPercap )
 ## 10 Afghanistan Asia       1997    41.8 22227415      635. 14121995875.
 ## # … with 1,694 more rows
 ## # ℹ Use `print(n = ...)` to see more rows
-```
+</pre>
 
-5. summarize
-The `summarise` or `summarize` function summarizes multiple values to a single value.
+### <b class="prefix-2"></b>`summarize()`
 
+The `summarise()` or `summarize()` function summarizes multiple values to a single value.
 
 ```r
 summarize( gapminder, mean(lifeExp) )
 ```
 
-```
+<pre class="output">
 ## # A tibble: 1 × 1
 ##   `mean(lifeExp)`
-##             <dbl>
+##             &lt;dbl>
 ## 1            59.5
-```
+</pre>
 
 
 ```r
 summarize( gapminder, mean_life_exp=mean(lifeExp) )
 ```
 
-```
+<pre class="output">
 ## # A tibble: 1 × 1
 ##   mean_life_exp
-##           <dbl>
+##           &lt;dbl>
 ## 1          59.5
-```
+</pre>
 
 
 ```r
 summarize( gapminder, n() )
 ```
 
-```
+<pre class="output">
 ## # A tibble: 1 × 1
 ##   `n()`
-##   <int>
+##   &lt;int>
 ## 1  1704
-```
+</pre>
 
 
 ```r
 summarize( gapminder, n_distinct(continent) )
 ```
 
-```
+<pre class="output">
 ## # A tibble: 1 × 1
 ##   `n_distinct(continent)`
-##                     <int>
+##                     &lt;int>
 ## 1                       5
-```
+</pre>
 
-6. group_by
+### <b class="prefix-2"></b>`group_by()`
+
 The `group_by()` function is used to group data by one or more variables. Grouping doesn't actually change how the data is presented.
 
 ```r
 gapminder
 ```
 
-```
+<pre class="output">
 ## # A tibble: 1,704 × 6
 ##    country     continent  year lifeExp      pop gdpPercap
-##    <fct>       <fct>     <int>   <dbl>    <int>     <dbl>
+##    &lt;fct>       &lt;fct>     &lt;int>   &lt;dbl>    &lt;int>     &lt;dbl>
 ##  1 Afghanistan Asia       1952    28.8  8425333      779.
 ##  2 Afghanistan Asia       1957    30.3  9240934      821.
 ##  3 Afghanistan Asia       1962    32.0 10267083      853.
@@ -462,17 +465,17 @@ gapminder
 ## 10 Afghanistan Asia       1997    41.8 22227415      635.
 ## # … with 1,694 more rows
 ## # ℹ Use `print(n = ...)` to see more rows
-```
+</pre>
 
 ```r
 group_by( gapminder, continent )
 ```
 
-```
+<pre class="output">
 ## # A tibble: 1,704 × 6
 ## # Groups:   continent [5]
 ##    country     continent  year lifeExp      pop gdpPercap
-##    <fct>       <fct>     <int>   <dbl>    <int>     <dbl>
+##    &lt;fct>       &lt;fct>     &lt;int>   &lt;dbl>    &lt;int>     &lt;dbl>
 ##  1 Afghanistan Asia       1952    28.8  8425333      779.
 ##  2 Afghanistan Asia       1957    30.3  9240934      821.
 ##  3 Afghanistan Asia       1962    32.0 10267083      853.
@@ -485,78 +488,80 @@ group_by( gapminder, continent )
 ## 10 Afghanistan Asia       1997    41.8 22227415      635.
 ## # … with 1,694 more rows
 ## # ℹ Use `print(n = ...)` to see more rows
-```
+</pre>
 
 ```r
 summarise( group_by(gapminder, continent), n = n() )
 ```
 
-```
+<pre class="output">
 ## # A tibble: 5 × 2
 ##   continent     n
-##   <fct>     <int>
+##   &lt;fct>     &lt;int>
 ## 1 Africa      624
 ## 2 Americas    300
 ## 3 Asia        396
 ## 4 Europe      360
 ## 5 Oceania      24
-```
+</pre>
+
 
 ### Using pipes ( %>% or |> )
+
 The difference between `%>%` and `|>` is the latter is a native pipe while the former is part of the `magrittr` package.
 
 ```r
 head( gapminder )
 ```
 
-```
+<pre class="output">
 ## # A tibble: 6 × 6
 ##   country     continent  year lifeExp      pop gdpPercap
-##   <fct>       <fct>     <int>   <dbl>    <int>     <dbl>
+##   &lt;fct>       &lt;fct>     &lt;int>   &lt;dbl>    &lt;int>     &lt;dbl>
 ## 1 Afghanistan Asia       1952    28.8  8425333      779.
 ## 2 Afghanistan Asia       1957    30.3  9240934      821.
 ## 3 Afghanistan Asia       1962    32.0 10267083      853.
 ## 4 Afghanistan Asia       1967    34.0 11537966      836.
 ## 5 Afghanistan Asia       1972    36.1 13079460      740.
 ## 6 Afghanistan Asia       1977    38.4 14880372      786.
-```
+</pre>
 
 ```r
 gapminder %>% head
 ```
 
-```
+<pre class="output">
 ## # A tibble: 6 × 6
 ##   country     continent  year lifeExp      pop gdpPercap
-##   <fct>       <fct>     <int>   <dbl>    <int>     <dbl>
+##   &lt;fct>       &lt;fct>     &lt;int>   &lt;dbl>    &lt;int>     &lt;dbl>
 ## 1 Afghanistan Asia       1952    28.8  8425333      779.
 ## 2 Afghanistan Asia       1957    30.3  9240934      821.
 ## 3 Afghanistan Asia       1962    32.0 10267083      853.
 ## 4 Afghanistan Asia       1967    34.0 11537966      836.
 ## 5 Afghanistan Asia       1972    36.1 13079460      740.
 ## 6 Afghanistan Asia       1977    38.4 14880372      786.
-```
+</pre>
 
 ```r
 gapminder |> head(2)
 ```
 
-```
+<pre class="output">
 ## # A tibble: 2 × 6
 ##   country     continent  year lifeExp     pop gdpPercap
-##   <fct>       <fct>     <int>   <dbl>   <int>     <dbl>
+##   &lt;fct>       &lt;fct>     &lt;int>   &lt;dbl>   &lt;int>     &lt;dbl>
 ## 1 Afghanistan Asia       1952    28.8 8425333      779.
 ## 2 Afghanistan Asia       1957    30.3 9240934      821.
-```
+</pre>
 
 
 ```r
 gapminder |> dim()
 ```
 
-```
+<pre class="output">
 ## [1] 1704    6
-```
+</pre>
 
 This piece of code with nested functions:
 
@@ -565,15 +570,15 @@ This piece of code with nested functions:
 summarise( group_by( gapminder, year, continent ), n = n() )
 ```
 
-```
+<pre class="output">
 ## `summarise()` has grouped output by 'year'. You can override using the `.groups` argument.
-```
+</pre>
 
-```
+<pre class="output">
 ## # A tibble: 60 × 3
 ## # Groups:   year [12]
 ##     year continent     n
-##    <int> <fct>     <int>
+##    &lt;int> &lt;fct>     &lt;int>
 ##  1  1952 Africa       52
 ##  2  1952 Americas     25
 ##  3  1952 Asia         33
@@ -586,7 +591,7 @@ summarise( group_by( gapminder, year, continent ), n = n() )
 ## 10  1957 Oceania       2
 ## # … with 50 more rows
 ## # ℹ Use `print(n = ...)` to see more rows
-```
+</pre>
 
 can be written as:
 
@@ -597,14 +602,14 @@ gapminder |>
   summarise( n() )
 ```
 
-```
+<pre class="output">
 ## `summarise()` has grouped output by 'year'. You can override using the `.groups` argument.
 
 
 ## # A tibble: 60 × 3
 ## # Groups:   year [12]
 ##     year continent `n()`
-##    <int> <fct>     <int>
+##    &lt;int> &lt;fct>     &lt;int>
 ##  1  1952 Africa       52
 ##  2  1952 Americas     25
 ##  3  1952 Asia         33
@@ -617,7 +622,7 @@ gapminder |>
 ## 10  1957 Oceania       2
 ## # … with 50 more rows
 ## # ℹ Use `print(n = ...)` to see more rows
-```
+</pre>
 
 
 ```r
@@ -629,77 +634,21 @@ gapminder |>
   kable_styling(bootstrap_options = "striped") # kableExtra package
 ```
 
-<table class="table table-striped" style="margin-left: auto; margin-right: auto;">
- <thead>
-  <tr>
-   <th style="text-align:left;"> continent </th>
-   <th style="text-align:right;"> year </th>
-   <th style="text-align:right;"> mean_gdppercap </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:left;"> Americas </td>
-   <td style="text-align:right;"> 1952 </td>
-   <td style="text-align:right;"> 4079.063 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Americas </td>
-   <td style="text-align:right;"> 1957 </td>
-   <td style="text-align:right;"> 4616.044 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Americas </td>
-   <td style="text-align:right;"> 1962 </td>
-   <td style="text-align:right;"> 4901.542 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Americas </td>
-   <td style="text-align:right;"> 1967 </td>
-   <td style="text-align:right;"> 5668.253 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Americas </td>
-   <td style="text-align:right;"> 1972 </td>
-   <td style="text-align:right;"> 6491.334 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Americas </td>
-   <td style="text-align:right;"> 1977 </td>
-   <td style="text-align:right;"> 7352.007 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Americas </td>
-   <td style="text-align:right;"> 1982 </td>
-   <td style="text-align:right;"> 7506.737 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Americas </td>
-   <td style="text-align:right;"> 1987 </td>
-   <td style="text-align:right;"> 7793.400 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Americas </td>
-   <td style="text-align:right;"> 1992 </td>
-   <td style="text-align:right;"> 8044.934 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Americas </td>
-   <td style="text-align:right;"> 1997 </td>
-   <td style="text-align:right;"> 8889.301 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Americas </td>
-   <td style="text-align:right;"> 2002 </td>
-   <td style="text-align:right;"> 9287.677 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Americas </td>
-   <td style="text-align:right;"> 2007 </td>
-   <td style="text-align:right;"> 11003.032 </td>
-  </tr>
-</tbody>
-</table>
+| continent | year | mean_gdppercap |
+|-----------|------|----------------|
+| Americas  | 1952 | 4079.063       |
+| Americas  | 1957 | 4616.044       |
+| Americas  | 1962 | 4901.542       |
+| Americas  | 1967 | 5668.253       |
+| Americas  | 1972 | 6491.334       |
+| Americas  | 1977 | 7352.007       |
+| Americas  | 1982 | 7506.737       |
+| Americas  | 1987 | 7793.400       |
+| Americas  | 1992 | 8044.934       |
+| Americas  | 1997 | 8889.301       |
+| Americas  | 2002 | 9287.677       |
+| Americas  | 2007 | 11003.032      |
+
 
 ### Integrating with ggplot2
 
@@ -727,7 +676,7 @@ More on dplyr:
 sessionInfo()
 ```
 
-```
+<pre class="output">
 ## R version 4.2.1 (2022-06-23)
 ## Platform: x86_64-apple-darwin17.0 (64-bit)
 ## Running under: macOS Big Sur 11.6.7
@@ -759,4 +708,4 @@ sessionInfo()
 ## [41] htmltools_0.5.3    rvest_1.0.2        assertthat_0.2.1   colorspace_2.0-3  
 ## [45] labeling_0.4.2     utf8_1.2.2         stringi_1.7.8      munsell_0.5.0     
 ## [49] crayon_1.5.1
-```
+</pre>

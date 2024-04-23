@@ -17,8 +17,4 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
-
-## <span style="color: #ff3870;">New content coming soon!</span>
-
-# Introduction
+# <span style="color: #ff3870;">New content coming soon!</span>

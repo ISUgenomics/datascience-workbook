@@ -17,74 +17,76 @@ tags: []
 {% include images_path %}
 {% include page-sourcing.html %}
 
----
 
 # Introduction
 
-ggplot2 is "A system for 'declaratively' creating graphics, based on
-`The Grammar of Graphics`. You provide the data, tell 'ggplot2' how to map
-variables to aesthetics, what graphical primitives to use, and it takes care of
-the details."
+<div class="note" markdown="1">
+**ggplot2** is *"A system for 'declaratively' creating graphics, based on **The Grammar of Graphics**. You provide the data, tell* `ggplot2` *how to map variables to aesthetics, what graphical primitives to use, and it takes care of the details."*
+</div>
 
-`The Grammar of Graphics`, written by Leland Wilkinson, presents a theoretical
-foundation for producing quantitative graphics. [The Book](https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448/ref=as_li_ss_tl)
-
-This book is the foundation for ggplot2 created by Hadley Wickham.
+**[The Grammar of Graphics](https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448/ref=as_li_ss_tl)**, written by Leland Wilkinson, presents a theoretical
+foundation for producing quantitative graphics. *This book is the foundation for ggplot2 created by Hadley Wickham.*
 
 We are going to use the `faithful` and `iris` data sets to explore ggplot2. The data sets are
 part of the R package.
 
+## <button class="btn more before" data-before="IMPORTANT"></button>
+
+<div class="more before" data-before="" markdown="1">
 The following are important while using ggplot2.
 
 1. Data
-
-- Most important aspect
-- Data representation holds the key to what can be done with the data
+  - Most important aspect
+  - Data representation holds the key to what can be done with the data
 
 2. Mapping
-
-- Aesthetic mapping
-  Variables in the data linked to graphical properties
-- Facet mapping
-  Variables are linked to panels
+  - Aesthetic mapping
+    Variables in the data linked to graphical properties
+  - Facet mapping
+    Variables are linked to panels
 
 3. Geometries
-
-- geom\_\*()
+  - geom\_\*()
 
 4. Themes
 5. Scale
+</div>
 
-Installing and loading the package.
+## <button class="btn required mr"></button>Installing and loading the package
 
 ```r
 # install.packages("ggplot2")
 library(ggplot2)
 ```
+*Within the code chunk the first line is a comment and it tells the user to install the* `ggplot2` *package. This line is commented out because the package* `ggplot2` *is already installed. The second line loads the* `ggplot2` *package into the current R session.*
 
-Within the code chunk the first line is a comment and it tells the user to install the ggplot2 package. This line is commented out because the package `ggplot2` is already installed. The second line loads the ggplot2 package into the current R session. The various functions in the package are now available for use.
+## Exploring the dataset
 
+The various functions in the package are now available for use.
+
+<div class="note" markdown="1">
 The `faithful` data set contains information on the eruption pattern of the
 Old Faithful geyser in Yellowstone National Park.
+</div>
 
 ```r
 # Look at the data
 str(faithful)
 ```
 
-The faithful data set is then examined by displaying its structure with the str() function. This will show the names and types of the variables in the data set.
+The `faithful` data set is then examined by displaying its structure with the `str()` function. This will show the names and types of the variables in the data set.
 
-```
+<pre class="output">
 ## 'data.frame':	272 obs. of  2 variables:
 ##  $ eruptions: num  3.6 1.8 3.33 2.28 4.53 ...
 ##  $ waiting  : num  79 54 74 62 85 55 88 85 51 85 ...
-```
+</pre>
 
 ```r
 head(faithful)
 ```
 
-```
+<pre class="output">
 ##   eruptions waiting
 ## 1     3.600      79
 ## 2     1.800      54
@@ -92,9 +94,9 @@ head(faithful)
 ## 4     2.283      62
 ## 5     4.533      85
 ## 6     2.883      55
-```
+</pre>
 
-- Data
+### *Data*
 
 ```r
 #data("faithful")
@@ -103,7 +105,7 @@ ggplot(data = faithful)
 
 ![plot of chunk unnamed-chunk-4]({{ images_path }}/04_ggplot2_4.png)
 
-- Mapping
+### *Mapping*
 
 ```r
 # Adding the mapping
@@ -112,7 +114,7 @@ ggplot(data = faithful, mapping = aes(x = eruptions))
 
 ![plot of chunk unnamed-chunk-5]({{ images_path }}/04_ggplot2_5.png)
 
-- Geometry
+### *Geometry*
 
 ```r
 # Basic histogram
@@ -120,9 +122,9 @@ ggplot(data = faithful, mapping = aes(x = eruptions)) +
   geom_histogram()
 ```
 
-```
-## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
-```
+<pre class="output">
+<b class="prompt-1"></b>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+</pre>
 
 ![plot of chunk unnamed-chunk-6]({{ images_path }}/04_ggplot2_6.png)
 
@@ -133,13 +135,13 @@ ggplot() +
   geom_histogram(data = faithful, aes(x = eruptions))
 ```
 
-```
-## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
-```
+<pre class="output">
+<b class="prompt-1"></b>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+</pre>
 
 ![plot of chunk unnamed-chunk-7]({{ images_path }}/04_ggplot2_7.png)
 
-- Theme
+### *Theme*
 
 ```r
 ggplot(faithful, aes(x = eruptions)) +
@@ -149,13 +151,14 @@ ggplot(faithful, aes(x = eruptions)) +
   theme_minimal()
 ```
 
-```
-## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
-```
+<pre class="output">
+<b class="prompt-1"></b>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+</pre>
 
 ![plot of chunk unnamed-chunk-8]({{ images_path }}/04_ggplot2_8.png)
 
-Colour based on mapping
+
+* **Colour based on mapping**
 
 ```r
 ggplot(faithful, aes(x = eruptions)) +
@@ -163,13 +166,13 @@ ggplot(faithful, aes(x = eruptions)) +
   theme_classic()
 ```
 
-```
-## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
-```
+<pre class="output">
+<b class="prompt-1"></b>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+</pre>
 
 ![plot of chunk unnamed-chunk-9]({{ images_path }}/04_ggplot2_9.png)
 
-Fill based on mapping
+* **Fill based on mapping**
 
 ```r
 ggplot(faithful, aes(x = eruptions)) +
@@ -177,9 +180,9 @@ ggplot(faithful, aes(x = eruptions)) +
   theme_classic()
 ```
 
-```
-## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
-```
+<pre class="output">
+<b class="prompt-1"></b>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+</pre>
 
 ![plot of chunk unnamed-chunk-10]({{ images_path }}/04_ggplot2_10.png)
 Let us now use the `iris` data set for futher exploration of the ggplot2 package.
@@ -188,28 +191,28 @@ Let us now use the `iris` data set for futher exploration of the ggplot2 package
 str(iris)
 ```
 
-```
+<pre class="output">
 ## 'data.frame':	150 obs. of  5 variables:
 ##  $ Sepal.Length: num  5.1 4.9 4.7 4.6 5 5.4 4.6 5 4.4 4.9 ...
 ##  $ Sepal.Width : num  3.5 3 3.2 3.1 3.6 3.9 3.4 3.4 2.9 3.1 ...
 ##  $ Petal.Length: num  1.4 1.4 1.3 1.5 1.4 1.7 1.4 1.5 1.4 1.5 ...
 ##  $ Petal.Width : num  0.2 0.2 0.2 0.2 0.2 0.4 0.3 0.2 0.2 0.1 ...
 ##  $ Species     : Factor w/ 3 levels "setosa","versicolor",..: 1 1 1 1 1 1 1 1 1 1 ...
-```
+</pre>
 
 ```r
 unique(levels(iris$Species))
 ```
 
-```
-## [1] "setosa"     "versicolor" "virginica"
-```
+<pre class="output">
+<b class="prompt-1 before" data-before="[1]  "></b>"setosa"     "versicolor" "virginica"
+</pre>
 
 ```r
 head(iris)
 ```
 
-```
+<pre class="output">
 ##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
 ## 1          5.1         3.5          1.4         0.2  setosa
 ## 2          4.9         3.0          1.4         0.2  setosa
@@ -217,7 +220,7 @@ head(iris)
 ## 4          4.6         3.1          1.5         0.2  setosa
 ## 5          5.0         3.6          1.4         0.2  setosa
 ## 6          5.4         3.9          1.7         0.4  setosa
-```
+</pre>
 
 ```r
 # Basic scatterplot
@@ -228,8 +231,9 @@ ggplot(data = iris, mapping = aes(x = Petal.Width, y = Petal.Length)) +
 
 ![plot of chunk unnamed-chunk-13]({{ images_path }}/04_ggplot2_13.png)
 
-- Scale
-  Adding a different colour scheme
+### *Scale*
+
+Adding a different colour scheme
 
 ```r
 RColorBrewer::display.brewer.all()
@@ -246,7 +250,7 @@ ggplot(data = iris, mapping = aes(x = Petal.Width, y = Petal.Length)) +
 
 ![plot of chunk unnamed-chunk-15]({{ images_path }}/04_ggplot2_15.png)
 
-- Facets
+### *Facets*
 
 ```r
 ggplot(data = iris, mapping = aes(x = Petal.Width, y = Petal.Length)) +
@@ -286,7 +290,7 @@ ggplot(iris, aes(x = Petal.Width, y = Petal.Length)) +
 sessionInfo()
 ```
 
-```
+<pre class="output">
 ## R version 4.2.1 (2022-06-23)
 ## Platform: x86_64-apple-darwin17.0 (64-bit)
 ## Running under: macOS Big Sur 11.6.7
@@ -315,4 +319,4 @@ sessionInfo()
 ## [33] magrittr_2.0.3     scales_1.2.0       htmltools_0.5.3    assertthat_0.2.1
 ## [37] colorspace_2.0-3   labeling_0.4.2     utf8_1.2.2         stringi_1.7.8
 ## [41] munsell_0.5.0
-```
+</pre>

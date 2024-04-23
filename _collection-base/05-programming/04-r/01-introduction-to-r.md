@@ -18,9 +18,7 @@ tags: []
 {% include page-sourcing.html %}
 
 
-# Introduction
-
-## Installation of R and RStudio, and packages
+# Installation of R and RStudio, and packages
 
 * <a class="t-links" href="430">Simple introduction to R</a>
 
@@ -29,91 +27,63 @@ tags: []
 * <a class="t-links" href="431">RStudio basics</a>
 
 
-## Basic operations
-Some very basic operations you can can carry out in R.
+# Basic operations
 
+Some very basic operations you can can carry out in R. Here R works like a calculator:
 
-```r
-1 + 1 # addition
+<table>
+  <tr> <th width="20%">addition</th> <td width="27.5%" class="no-border"><div class="font-1r mb-" markdown="1">```r
+1 + 1
 ```
+  </div></td> <td class="no-border"><pre class="output font-1 mb-0"><br><b class="prompt-1 before" data-before="[1]  "></b>2</pre></td> </tr>
+  <tr> <th>subtraction</th> <td class="no-border"><div class="font-1r mb-" markdown="1">```r
+2 - 1
+```
+  </div></td> <td class="no-border"><pre class="output font-1 mb-0"><br><b class="prompt-1 before" data-before="[2]  "></b>1</pre></td> </tr>
+  <tr> <th>multiplication</th> <td class="no-border"><div class="font-1r mb-" markdown="1">```r
+2 * 2
+```
+  </div></td> <td class="no-border"><pre class="output font-1 mb-0"><br><b class="prompt-1 before" data-before="[3]  "></b>4</pre></td> </tr>
+  <tr> <th>division</th> <td class="no-border"><div class="font-1r mb-" markdown="1">```r
+6 / 2
+```
+  </div></td> <td class="no-border"><pre class="output font-1 mb-0"><br><b class="prompt-1 before" data-before="[4]  "></b>3</pre></td> </tr>
+  <tr> <th>exponential</th> <td class="no-border"><div class="font-1r mb-" markdown="1">```r
+3 ** 2
+```
+  </div></td> <td class="no-border"><pre class="output font-1 mb-0"><br><b class="prompt-1 before" data-before="[5]  "></b>9</pre></td> </tr>
+  <tr> <th>exponential</th> <td class="no-border"><div class="font-1r mb-" markdown="1">```r
+3 ^ 2
+```
+  </div></td> <td class="no-border"><pre class="output font-1 mb-0"><br><b class="prompt-1 before" data-before="[6]  "></b>9</pre></td> </tr>
+</table>
 
-```
-[1] 2
-```
+<base class="mt">
+Apart from numbers, R can also help us print letters or a string of letters.
 
-```r
-2 - 1 # subtraction
-```
-
-```
-[1] 1
-```
-
-```r
-2 * 2 # multiplication
-```
-
-```
-[1] 4
-```
-
-```r
-6 / 2 # division
-```
-
-```
-[1] 3
-```
-
-```r
-3 ** 2 # exponential
-```
-
-```
-[1] 9
-```
-
-```r
-3 ^ 2 # exponential
-```
-
-```
-[1] 9
-```
-Here R works like a calculator. Apart from numbers, R can also help us print letters or a string of letters.
-
-
-```r
+<table>
+  <tr> <td width="50%" class="no-border"><div class="font-1r mb-" markdown="1">```r
 "a"
 ```
-
-```
-[1] "a"
-```
-
-```r
+  </div></td> <td class="no-border"><pre class="output font-1 mb-0"><br><b class="prompt-1 before" data-before="[1]  "></b>"a"</pre></td> </tr>
+  <tr> <td class="no-border"><div class="font-1r mb-" markdown="1">```r
 'a'
 ```
-
-```
-[1] "a"
-```
-
-```r
+  </div></td> <td class="no-border"><pre class="output font-1 mb-0"><br><b class="prompt-1 before" data-before="[2]  "></b>"a"</pre></td> </tr>
+  <tr> <td class="no-border"><div class="font-1r mb-" markdown="1">```r
 "language"
 ```
-
-```
-[1] "language"
-```
-
-```r
+  </div></td> <td class="no-border"><pre class="output font-1 mb-0"><br><b class="prompt-1 before" data-before="[3]  "></b>"language"</pre></td> </tr>
+  <tr> <td class="no-border"><div class="font-1r mb-" markdown="1">```r
 "R is my favourite programming language"
 ```
+  </div></td> <td class="no-border"><pre class="output font-1 mb-0"><br><b class="prompt-1 before" data-before="[4]  "></b>"R is my favourite programming language"</pre></td> </tr>
+</table>
 
-```
-[1] "R is my favourite programming language"
-```
+
+# Basic objects in R
+
+## Creating a **variable**
 
 When working with large numbers such as **1934929292** and **23992343**, we cannot keep them in mind, or for that matter, remember complex computations. So, we have the concept of object or variable.
 
@@ -121,180 +91,159 @@ When working with large numbers such as **1934929292** and **23992343**, we cann
 ```r
 a <- 1934929292
 b <- 23992343
+```
+
+<table>
+  <tr> <td width="50%" class="no-border"><div class="font-1r mb-" markdown="1">```r
 a
 ```
-
-```
-[1] 1934929292
-```
-
-```r
+  </div></td> <td class="no-border"><pre class="output font-1 mb-0"><br><b class="prompt-1 before" data-before="[1]  "></b>1934929292</pre></td> </tr>
+  <tr> <td class="no-border"><div class="font-1r mb-" markdown="1">```r
 b
 ```
+  </div></td> <td class="no-border"><pre class="output font-1 mb-0"><br><b class="prompt-1 before" data-before="[2]  "></b>23992343</pre></td> </tr>
+</table>
 
-```
-[1] 23992343
-```
-Here, we assign "<-" the first number to "a" and the second to "b". The "<-" is called the "assignment operator". "a" and "b" are called objects or variables. This now enables us to actually use the variables for doing further operations as seen below.
+Here, we assign `<-` the first number to **"a"** and the second to **"b"**. The `<-` is called the "assignment operator". "a" and "b" are called objects or variables. This now enables us to actually use the variables for doing further operations as seen below.
 
 
-```r
+<table>
+  <tr> <td width="50%" class="no-border"><div class="font-1r mb-" markdown="1">```r
 a + b
 ```
-
-```
-[1] 1958921635
-```
-
-```r
+  </div></td> <td class="no-border"><pre class="output font-1 mb-0"><br><b class="prompt-1 before" data-before="[1]  "></b>1958921635</pre></td> </tr>
+  <tr> <td class="no-border"><div class="font-1r mb-" markdown="1">```r
 a - b
 ```
-
-```
-[1] 1910936949
-```
-
-```r
+  </div></td> <td class="no-border"><pre class="output font-1 mb-0"><br><b class="prompt-1 before" data-before="[2]  "></b>1910936949</pre></td> </tr>
+  <tr> <td class="no-border"><div class="font-1r mb-" markdown="1">```r
 a * b
 ```
-
-```
-[1] 4.642349e+16
-```
-
-```r
+  </div></td> <td class="no-border"><pre class="output font-1 mb-0"><br><b class="prompt-1 before" data-before="[3]  "></b>4.642349e+16</pre></td> </tr>
+  <tr> <td class="no-border"><div class="font-1r mb-" markdown="1">```r
 a ^ b
 ```
+  </div></td> <td class="no-border"><pre class="output font-1 mb-0"><br><b class="prompt-1 before" data-before="[4]  "></b>Inf</pre></td> </tr>
+</table>
 
-```
-[1] Inf
-```
 We can do something similar with strings too.
 
 ```r
 x <- "language"
 y <- "R is my favourite programming language"
+```
+
+<table>
+  <tr> <td width="50%" class="no-border"><div class="font-1r mb-" markdown="1">```r
 x
 ```
-
-```
-[1] "language"
-```
-
-```r
+  </div></td> <td class="no-border"><pre class="output font-1 mb-0"><br><b class="prompt-1 before" data-before="[1]  "></b>"language"</pre></td> </tr>
+  <tr> <td class="no-border"><div class="font-1r mb-" markdown="1">```r
 y
 ```
+  </div></td> <td class="no-border"><pre class="output font-1 mb-0"><br><b class="prompt-1 before" data-before="[2]  "></b>"R is my favourite programming language"</pre></td> </tr>
 
-```
-[1] "R is my favourite programming language"
-```
-
-
-```r
+  <tr> <td width="50%" class="no-border"><div class="font-1r mb-" markdown="1">```r
 print(x)
 ```
+  </div></td> <td class="no-border"><pre class="output font-1 mb-0"><br><b class="prompt-1 before" data-before="[3]  "></b>"language"</pre></td> </tr>
 
-```
-[1] "language"
-```
-
-```r
+  <tr> <td width="50%" class="no-border"><div class="font-1r mb-" markdown="1">```r
 print(y)
 ```
+  </div></td> <td class="no-border"><pre class="output font-1 mb-0"><br><b class="prompt-1 before" data-before="[4]  "></b>"R is my favourite programming language"</pre></td> </tr>
+</table>
 
-```
-[1] "R is my favourite programming language"
-```
 
-## Creating a vector
+## Creating a **vector**
+
 In R, vectors are the most basic data objects. Let us create vectors **x** and **y**. We will do that in two ways. One, using the *c()* function, and the other using the *seq()* function. 'c' combines values into a vector. 'seq' is a sequence generator.  
 
 
 ```r
 x <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 y <- seq(11, 20)
+```
+*The code above creates two vectors:* `x` *and* `y`.
+
+```r
 x
 ```
-
-```
- [1]  1  2  3  4  5  6  7  8  9 10
-```
+<pre class="output">
+<b class="prompt-1 before" data-before="[1]  "></b>1  2  3  4  5  6  7  8  9 10
+</pre>
 
 ```r
 y
 ```
+<pre class="output">
+<b class="prompt-1 before" data-before="[2]  "></b>11 12 13 14 15 16 17 18 19 20
+</pre>
 
-```
- [1] 11 12 13 14 15 16 17 18 19 20
-```
-The code above creates two vectors, **x** and **y**. Adding the two vectors gives:
-
-
-
+Adding the two vectors gives:
 ```r
 x + y
 ```
-
-```
- [1] 12 14 16 18 20 22 24 26 28 30
-```
+<pre class="output">
+<b class="prompt-1 before" data-before="[3]  "></b>12 14 16 18 20 22 24 26 28 30
+</pre>
 
 ```r
 x * y
 ```
+<pre class="output">
+<b class="prompt-1 before" data-before="[4]  "></b>11  24  39  56  75  96 119 144 171 200
+</pre>
 
-```
- [1]  11  24  39  56  75  96 119 144 171 200
-```
-The elements are added element-wise. The operations in R are element-wise. As an exercise you can try doing the other mathematical
-operations on the two vectors.
+<p class="footnote c-alert mt-0">^ The elements are added element-wise. The operations in R are element-wise.</p>
 
-## Indexing
-The elements in the vectors are indexed. So, to extract an element you need only know its position. To extract the first element in x and in y:
+<div class="exercise" markdown="1">
+As an exercise you can try doing the other mathematical operations on the two vectors.
+</div>
 
 
+### *Indexing*
+The elements in the vectors are indexed. So, to extract an element you need only know its position. To extract the first element in x use:
 ```r
 x[1]
 ```
+<pre class="output">
+<b class="prompt-1 before" data-before="[1]  "></b>1
+</pre>
+*This returns 1.*
 
-```
-[1] 1
-```
-This returns **1**. Try the following and see what you get.
-
-
+<base class="mt">
+Try the following and see what you get.
 ```r
 y[1:4]
 ```
-
-```
-[1] 11 12 13 14
-```
+<pre class="output">
+<b class="prompt-1 before" data-before="[2]  "></b>11 12 13 14
+</pre>
 
 ```r
 y[c(1, 3, 5)]
 ```
-
-```
-[1] 11 13 15
-```
+<pre class="output">
+<b class="prompt-1 before" data-before="[3]  "></b>11 13 15
+</pre>
 
 ```r
 y[c(-1, -3, -5)]
 ```
-
-```
-[1] 12 14 16 17 18 19 20
-```
+<pre class="output">
+<b class="prompt-1 before" data-before="[4]  "></b>12 14 16 17 18 19 20
+</pre>
 
 ```r
 y[-c(1, 3, 5)]
 ```
+<pre class="output">
+<b class="prompt-1 before" data-before="[5]  "></b>12 14 16 17 18 19 20
+</pre>
 
-```
-[1] 12 14 16 17 18 19 20
-```
-## Data types
+
+### *Data types*
 
 What are the important data types? They can be listed as:
 
@@ -302,141 +251,136 @@ What are the important data types? They can be listed as:
 * **numeric**
 * **logical**
 * **character**
-Let us first create some vectors
 
-
+Let us first create some vectors:
 ```r
-n <- 1 # numeric
-i <- 1L # integer
-l <- TRUE # logical
-c <- "Some string" #character
+n <- 1                # numeric
+i <- 1L               # integer
+l <- TRUE             # logical
+c <- "Some string"    # character
 ```
-Here we have four vectors created. x is a numeric vector, y an integer vector, t a logical vector, and c is a character vector. Remember, in R everything is a vector. There are no scalars. Therefore, all these vectors that we have created are all vectors of length one. To check the length of the vector, use the length() function:
+*Here we have four vectors created.* `x` *is a numeric vector,* `y` *is an integer vector,* `t` *is a logical vector, and* `c` *is a character vector.*
+
+<div class="protip" markdown="1">
+Remember, in R everything is a vector. There are no scalars.
+</div>
+
+Therefore, all these vectors that we have created are all vectors of length one.
 
 
+### *Vector length*
+
+To check the length of the vector, use the `length()` function:
 ```r
 length(n)
 ```
-
-```
-[1] 1
-```
+<pre class="output">
+<b class="prompt-1 before" data-before="[1]  "></b>1
+</pre>
 
 ```r
 length(i)
 ```
-
-```
-[1] 1
-```
+<pre class="output">
+<b class="prompt-1 before" data-before="[2]  "></b>1
+</pre>
 
 ```r
 length(l)
 ```
-
-```
-[1] 1
-```
+<pre class="output">
+<b class="prompt-1 before" data-before="[3]  "></b>1
+</pre>
 
 ```r
 length(c)
 ```
+<pre class="output">
+<b class="prompt-1 before" data-before="[4]  "></b>1
+</pre>
 
-```
-[1] 1
-```
-You can see that all objects created are of length one.
+*You can see that all objects created are of length one.*
 
-Now let us check these vectors using the *class()* function:
+
+### *check data* `class()`
+
+Now let us check these vectors using the `class()` function:
 
 ```r
 class(x)
 ```
-
-```
-[1] "numeric"
-```
+<pre class="output">
+<b class="prompt-1 before" data-before="[1]  "></b>"numeric"
+</pre>
 
 ```r
 class(y)
 ```
-
-```
-[1] "integer"
-```
+<pre class="output">
+<b class="prompt-1 before" data-before="[2]  "></b>"integer"
+</pre>
 
 ```r
 class(l)
 ```
-
-```
-[1] "logical"
-```
+<pre class="output">
+<b class="prompt-1 before" data-before="[3]  "></b>"logical"
+</pre>
 
 ```r
 class(c)
 ```
+<pre class="output">
+<b class="prompt-1 before" data-before="[4]  "></b>"character"
+</pre>
 
-```
-[1] "character"
-```
-Now let us create vectors of length > 1
+<base class="mt">
+Now let us create vectors of **length > 1**:
 
 ```r
-num_vr <- c(1, 3.0, 5.0) # numeric vector
-int_vr <- c(1L, 3L, 5L) # integer vector
-log_vr <- c(TRUE, FALSE, TRUE) # logical vector
-char_vr <- c("I am", "a", "string.") # character vector
+num_vr <- c(1, 3.0, 5.0)                 # numeric vector
+int_vr <- c(1L, 3L, 5L)                  # integer vector
+log_vr <- c(TRUE, FALSE, TRUE)           # logical vector
+char_vr <- c("I am", "a", "string.")     # character vector
 ```
+
 Now get their class.
 
 ```r
 class(num_vr); length(num_vr)
 ```
-
-```
-[1] "numeric"
-```
-
-```
-[1] 3
-```
+<pre class="output">
+<b class="prompt-1 before" data-before="[1]  "></b>"numeric"
+<b class="prompt-1 before" data-before="[2]  "></b>3
+</pre>
 
 ```r
 class(int_vr); length(int_vr)
 ```
-
-```
-[1] "integer"
-```
-
-```
-[1] 3
-```
+<pre class="output">
+<b class="prompt-1 before" data-before="[3]  "></b>"integer"
+<b class="prompt-1 before" data-before="[4]  "></b>3
+</pre>
 
 ```r
 class(log_vr); length(log_vr)
 ```
-
-```
-[1] "logical"
-```
-
-```
-[1] 3
-```
+<pre class="output">
+<b class="prompt-1 before" data-before="[5]  "></b>"logical"
+<b class="prompt-1 before" data-before="[6]  "></b>3
+</pre>
 
 ```r
 class(char_vr); length(char_vr)
 ```
+<pre class="output">
+<b class="prompt-1 before" data-before="[7]  "></b>"character"
+<b class="prompt-1 before" data-before="[8]  "></b>3
+</pre>
 
-```
-[1] "character"
-```
 
-```
-[1] 3
-```
+## Creating a **matrix**
+
 We learnt to make vectors before, and now we have learnt to understand them a bit more. We now move on to matrices.
 First, let us create some vectors.
 
@@ -445,160 +389,163 @@ v1 <- 1:5
 v2 <- 6:10
 v3 <- 11:15
 ```
+
 We have three vectors v1, v2, and v3 and we are going to bind them column-wise.
 
 ```r
 cbind(v1, v2, v3)
 ```
-
-```
+<pre class="output">
      v1 v2 v3
 [1,]  1  6 11
 [2,]  2  7 12
 [3,]  3  8 13
 [4,]  4  9 14
 [5,]  5 10 15
-```
-The output just spews out to the console, which is not helpful. Let us create a variable, my_mat, and store the output
+</pre>
+*The output just spews out to the console, which is not helpful.*
+
+Let us create a variable, `my_mat`, and store the output:
 
 ```r
 my_mat <- cbind(v1, v2, v3)
 my_mat
 ```
-
-```
+*Here, we used a function,* `cbind()`, *to bind three vectors into three columns.*
+<pre class="output">
      v1 v2 v3
 [1,]  1  6 11
 [2,]  2  7 12
 [3,]  3  8 13
 [4,]  4  9 14
 [5,]  5 10 15
-```
-Here, we used a function, cbind(), to bind three vectors into three columns. Now let us use the class function on the my_mat variable.
+</pre>
+
+<base class="mt">
+Now let us use the `class()` function on the `my_mat` variable.
 
 ```r
 class(my_mat)
 ```
+<pre class="output">
+<b class="prompt-1 before" data-before="[1]  "></b>"matrix" "array"
+</pre>
+*The* `my_matrix` *is a matrix. It has three columns, v1, v2, and v3. And, as it should be clear now, we used three vectors to create a matrix.*
 
-```
-[1] "matrix" "array"
-```
-my_matrix is a matrix. It has three columns, v1, v2, and v3. And, as it should be clear now, we used three vectors to create a matrix. Let us now see an alternate method for creating a matrix.
+<base class="mt">
+Let us now see an alternate method for creating a matrix.
 
 ```r
 trial_mat <- matrix(1:20, nrow=5, ncol=4, byrow = TRUE)
 trial_mat
 ```
-
-```
+<pre class="output">
      [,1] [,2] [,3] [,4]
 [1,]    1    2    3    4
 [2,]    5    6    7    8
 [3,]    9   10   11   12
 [4,]   13   14   15   16
 [5,]   17   18   19   20
-```
+</pre>
+*This creates a matrix with 4 rows and 5 columns. The* `[1,]` *refers to the first row. The* `[,1]` *refers to the first column.*
 
-This creates a matrix with 4 rows and 5 columns. The [1,] refers to the first row. The [,1] refers to the first column.
+## Creating a **data.frame**
 
-Let us now talk about another kind of data structure, data frame. So, a data frame is similar to a matrix, but it can hold vectors of different classes. Let us create the same vectors we created previously even though they are still in memory.
+Let us now talk about another kind of data structure, `data frame`. So, a data frame is similar to a matrix, but it can hold vectors of different classes.
 
+Let us create the same vectors we created previously even though they are still in memory.
 
 ```r
-num_vr <- c(1, 3.0, 5.0) # numeric vector
-int_vr <- c(1L, 3L, 5L) # integer vector
-log_vr <- c(TRUE, FALSE, TRUE) # logical vector
-char_vr <- c("I am", "a", "string.") # character vector
+num_vr <- c(1, 3.0, 5.0)                 # numeric vector
+int_vr <- c(1L, 3L, 5L)                  # integer vector
+log_vr <- c(TRUE, FALSE, TRUE)           # logical vector
+char_vr <- c("I am", "a", "string.")     # character vector
 
 # Let us use the cbind() function to put them together.
 
 new_mat <- cbind(num_vr, int_vr, log_vr, char_vr)
 new_mat
 ```
-
-```
+<pre class="output">
      num_vr int_vr log_vr  char_vr  
 [1,] "1"    "1"    "TRUE"  "I am"   
 [2,] "3"    "3"    "FALSE" "a"      
 [3,] "5"    "5"    "TRUE"  "string."
-```
-Looking at the output, we know that it is something we do not want. What is the class of the new variable?
-
+</pre>
+*Looking at the output, we know that it is something we do not want.* <br>
+***What is the class of the new variable?***
 
 ```r
 class(new_mat)
 ```
+<pre class="output">
+<b class="prompt-1 before" data-before="[1]  "></b>"matrix" "array"
+</pre>
+*The class of the object* `new_mat` *is "matrix".*
 
-```
-[1] "matrix" "array"
-```
-The class of the object new_mat is "matrix". A matrix can hold data belonging to a particular class. In this case, every data point is converted into a character. This is called coercion. Here we need a different kind of data structure that can hold different classes of data. To demostrate this point, let us create some vectors that we will make use of in creating this structure.
+<div class="note" markdown="1">
+A matrix can hold data belonging to a particular class.
+</div>
 
+*In this case, every data point is converted into a character.* **This is called coercion.**
+
+Here we need a different kind of data structure that can hold different classes of data. To demostrate this point, let us create some vectors that we will make use of in creating this structure.
 
 ```r
-set.seed(1234) # since the numbers are random, this will make sure we always
-              # get the same set of random numbers
+# since the numbers are random...
+set.seed(1234)                  # this will make sure we always get the same set of random numbers
 plant_height <- rnorm(100, 110, 10)
 head(plant_height)
 ```
-
-```
-[1]  97.92934 112.77429 120.84441  86.54302 114.29125 115.06056
-```
+<pre class="output">
+<b class="prompt-1 before" data-before="[1]  "></b>97.92934 112.77429 120.84441  86.54302 114.29125 115.06056
+</pre>
 
 Too many decimals. Let us round it off to two.
-
 
 ```r
 plant_height <- round(plant_height, 2)
 head(plant_height)
 ```
-
-```
-[1]  97.93 112.77 120.84  86.54 114.29 115.06
-```
-
+<pre class="output">
+<b class="prompt-1 before" data-before="[2]  "></b>97.93 112.77 120.84  86.54 114.29 115.06
+</pre>
 
 ```r
 set.seed(237)
 flowering_50 <- round(rnorm(100, 100, 10))
 head(flowering_50)
 ```
-
-```
-[1] 102 100 101 100 107 101
-```
-
+<pre class="output">
+<b class="prompt-1 before" data-before="[3]  "></b>102 100 101 100 107 101
+</pre>
 
 ```r
 set.seed(6438)
 spikelet_fertility <- round(rnorm(100, 90, 3), 2)
 head(spikelet_fertility)
 ```
-
-```
-[1] 89.05 89.18 93.49 92.28 88.04 93.61
-```
+<pre class="output">
+<b class="prompt-1 before" data-before="[4]  "></b>89.05 89.18 93.49 92.28 88.04 93.61
+</pre>
 
 ```r
 max(spikelet_fertility)
 ```
-
-```
-[1] 95.27
-```
-
+<pre class="output">
+<b class="prompt-1 before" data-before="[5]  "></b>95.27
+</pre>
 
 ```r
 set.seed(345)
 thousand_seed_weight <- round(rnorm(100, 22, 3), 2)
 head(thousand_seed_weight)
 ```
+<pre class="output">
+<b class="prompt-1 before" data-before="[6]  "></b>19.65 21.16 21.52 21.13 21.80 20.10
+</pre>
 
-```
-[1] 19.65 21.16 21.52 21.13 21.80 20.10
-```
-
+<base class="mt">
 Now let us combine the four vectors into a single data structure.
 
 
@@ -606,8 +553,7 @@ Now let us combine the four vectors into a single data structure.
 my_data <- cbind(plant_height, flowering_50, spikelet_fertility, thousand_seed_weight)
 head(my_data)
 ```
-
-```
+<pre class="output">
      plant_height flowering_50 spikelet_fertility thousand_seed_weight
 [1,]        97.93          102              89.05                19.65
 [2,]       112.77          100              89.18                21.16
@@ -615,18 +561,18 @@ head(my_data)
 [4,]        86.54          100              92.28                21.13
 [5,]       114.29          107              88.04                21.80
 [6,]       115.06          101              93.61                20.10
-```
+</pre>
 
 ```r
 class(my_data)
 ```
+<pre class="output">
+<b class="prompt-1 before" data-before="[7]  "></b>"matrix" "array"
+</pre>
 
-```
-[1] "matrix" "array"
-```
-
-Let us now create some numbers that we will use as genotype ids. We have 100 observations and that makes it 100 genotypes. We will name the genotypes from "001" to "100". Let us use the paste() function to create these ids.
-
+<base class="mt">
+Let us now create some numbers that we will use as genotype ids. We have 100 observations and that makes it 100 genotypes. We will name the genotypes from "001" to "100". <br>
+Let us use the `paste()` function to create these ids.
 
 ```r
 a1 <- paste("00", 1:9, sep = "")
@@ -634,8 +580,7 @@ a2 <- paste0("0", 10:99)
 genotypes <- c(a1, a2, 100)
 genotypes
 ```
-
-```
+<pre class="output">
   [1] "001" "002" "003" "004" "005" "006" "007" "008" "009" "010" "011"
  [12] "012" "013" "014" "015" "016" "017" "018" "019" "020" "021" "022"
  [23] "023" "024" "025" "026" "027" "028" "029" "030" "031" "032" "033"
@@ -646,17 +591,15 @@ genotypes
  [78] "078" "079" "080" "081" "082" "083" "084" "085" "086" "087" "088"
  [89] "089" "090" "091" "092" "093" "094" "095" "096" "097" "098" "099"
 [100] "100"
-```
+</pre>
 
-Let us add this vector to our my_data object.
-
+Let us add this vector to our `my_data` object.
 
 ```r
 newdat <- cbind(genotypes, my_data)
 head(newdat)
 ```
-
-```
+<pre class="output">
      genotypes plant_height flowering_50 spikelet_fertility
 [1,] "001"     "97.93"      "102"        "89.05"           
 [2,] "002"     "112.77"     "100"        "89.18"           
@@ -671,17 +614,15 @@ head(newdat)
 [4,] "21.13"             
 [5,] "21.8"              
 [6,] "20.1"              
-```
+</pre>
 
-We have seen this problem before; the entire data getting converted into a character class. To overcome this problem we use the data.frame() function.
-
+We have seen this problem before; the entire data getting converted into a character class. To overcome this problem we use the `data.frame()` function.
 
 ```r
 field_data <- data.frame(genotypes, my_data)
 head(field_data)
 ```
-
-```
+<pre class="output">
   genotypes plant_height flowering_50 spikelet_fertility
 1       001        97.93          102              89.05
 2       002       112.77          100              89.18
@@ -696,36 +637,38 @@ head(field_data)
 4                21.13
 5                21.80
 6                20.10
-```
+</pre>
 
-This output is more like it. Let us check the class of the df object.
-
+This output is more like it. Let us check the class of the `df` object.
 
 ```r
 class(field_data)
 ```
+<pre class="output">
+<b class="prompt-1 before" data-before="[8]  "></b>"data.frame"
+</pre>
+*It is a dataframe.*
 
-```
-[1] "data.frame"
-```
+<div class="note" markdown="1">
+A dataframe, unlike a matrix, can hold vectors of different classes.
+</div>
 
-It is a dataframe. A dataframe, unlike a matrix, can hold vectors of different classes. Using the most important function in R, str(), we get a glimpse of what the field object contains.
-
+Using the most important function in R, `str()`, we get a glimpse of what the field object contains.
 
 ```r
 str(field_data)
 ```
-
-```
+<pre class="output">
 'data.frame':	100 obs. of  5 variables:
  $ genotypes           : chr  "001" "002" "003" "004" ...
  $ plant_height        : num  97.9 112.8 120.8 86.5 114.3 ...
  $ flowering_50        : num  102 100 101 100 107 101 92 95 93 78 ...
  $ spikelet_fertility  : num  89 89.2 93.5 92.3 88 ...
  $ thousand_seed_weight: num  19.6 21.2 21.5 21.1 21.8 ...
-```
+</pre>
 
-The "field" object is a data frame with 100 observations and 4 variables. Except for a, which is a factor, plant_height, flowering_50, and spikelet_fertility are numeric. Remember that 'a' is a vector containing the genotype ids. Therefore, "a" is recognised as a factor here.
+*The* `field` *object is a data frame with 100 observations and 4 variables. Except for* `a`, *which is a factor,* `plant_height`, `flowering_50`, *and* `spikelet_fertility` *are numeric. Remember that* `a` *is a vector containing the genotype ids. Therefore,* `a` *is recognised as a factor here.*
+
 
 ### Writing data to file
 
@@ -733,8 +676,11 @@ The "field" object is a data frame with 100 observations and 4 variables. Except
 write.csv(field_data, "field_data.csv", quote = F, row.names = F)
 ```
 
-### Plotting
-### Creating a mirror plot
+
+
+# Plotting
+
+## Creating a mirror plot
 
 In this section we will see how to make the plot shown below.
 
@@ -747,8 +693,7 @@ Reading data in:
 gene_nums_mirror <- read.csv( "../assets/data/up_down_gene_numbers.csv" )
 gene_nums_mirror
 ```
-
-```
+<pre class="output">
     stress responsiveness num_genes
 1     cold             up      1743
 2     cold           down      2303
@@ -760,9 +705,9 @@ gene_nums_mirror
 8     salt           down       726
 9  drought             up       826
 10 drought           down       913
-```
+</pre>
 
-This data set has three columns and 10 rows. It is about differentially expressed genes under different stress conditions. So, let us start plotting with *ggplot2*.
+This data set has three columns and 10 rows. It is about differentially expressed genes under different stress conditions. So, let us start plotting with **ggplot2**.
 
 
 ```r
@@ -780,8 +725,7 @@ gene_nums_mirror$num_genes[gene_nums_mirror$responsiveness=="down"] <-
   -gene_nums_mirror$num_genes[gene_nums_mirror$responsiveness=="down"]
 gene_nums_mirror
 ```
-
-```
+<pre class="output">
     stress responsiveness num_genes
 1     cold             up      1743
 2     cold           down     -2303
@@ -793,8 +737,7 @@ gene_nums_mirror
 8     salt           down      -726
 9  drought             up       826
 10 drought           down      -913
-```
-
+</pre>
 
 ```r
 ggplot(data = gene_nums_mirror, aes(x = stress, y = num_genes)) +
