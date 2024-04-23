@@ -18,8 +18,6 @@ tags: []
 {% include page-sourcing.html %}
 
 
-# Introduction
-
 # What is SCINet?
 
 The SCINet initiative is an effort by the USDA Agricultural Research Service (<a href="https://www.ars.usda.gov/" target="_blank">ARS  ⤴</a>) to grow USDA’s research capacity by providing scientists with access to
@@ -28,25 +26,31 @@ The SCINet initiative is an effort by the USDA Agricultural Research Service (<a
 3. training in scientific computing
 4. virtual research support
 
+
+### *Website*
+
 An official **SCINet website** is hosted on the United States government domain at <b><a href="https://scinet.usda.gov" target="_blank">https://scinet.usda.gov  ⤴</a></b>
-
-*This introduction to SCINet features much of its material sourced from the SCINet website. <br>
-The SCINet homepage is shown on the screenshoot below.*
-
-![Scinet website]({{ images_path }}/01_hpc_scinet_web.png) <br>
 
 <div class="protip" markdown="1">
 Use the SCINet website to request SCINet accounts, access user guides, get technical support, and find out about upcoming and previous training events.
 </div>
 
+*This introduction to SCINet features much of its material sourced from the SCINet website. <br>
+The SCINet homepage is shown on the screenshoot below.*
+
+![Scinet website]({{ images_path }}/01_hpc_scinet_web.png)
+
+
 ### *Cite SCINet*
 
-<div class="note" markdown="1">
-Add the following sentence as an acknowledgment **for using CERES** as a resource in your manuscripts meant for publication: <base class="mb">
+Add the following sentence as an acknowledgment **for using CERES** as a resource in your manuscripts meant for publication:
+
+<div class="note before" data-before="" markdown="1">
 “This research used resources provided by the SCINet project of the USDA Agricultural Research Service, ARS project number 0500-00093-001-00-D.”
 </div>
 
-## **Before you get started**
+
+# **Before you get started**
 
 Before you get started actively using the SCINet resources, perform the A, B, and C steps to familiarize yourself with the SCINet initiative.
 
@@ -65,11 +69,15 @@ To obtain a SCINet account, a SCINet Account Request must be submitted:
 * for ARS-affiliated users: <a href="https://scinet.usda.gov/about/signup#ars-employees" target="_blank">SCINet Account Request  ⤴</a>
 * for non-ARS users: <a href="https://scinet.usda.gov/about/signup#non-ars-employees" target="_blank">Non-ARS SCINet Account Request  ⤴</a>
 
-The approval process depends on the affiliation of the requester. To learn more, visit the official <a href="https://scinet.usda.gov/about/signup#sign-up-for-a-scinet-account" target="_blank">Sign up for a SCINet account  ⤴</a> guide.
+*The approval process depends on the affiliation of the requester:*
 
-![SCINet account]({{ images_path }}/01_hpc_scinet_account.png)<br>
+![SCINet account]({{ images_path }}/01_hpc_scinet_account.png)
 
-<b>Once your request is approved you should get the <i>"Welcome to SCINet"</i> email with further instructions.</b>
+<div class="protip" markdown="1">
+Once your request is approved you should get the <i>"Welcome to SCINet"</i> email with further instructions. <br>
+<button class="btn more"></button> ...from the official <a href="https://scinet.usda.gov/about/signup#sign-up-for-a-scinet-account" target="_blank">Sign up for a SCINet account  ⤴</a> guide.
+</div>
+
 
 ### *B. Read the SCINet Policy*
 
@@ -102,7 +110,7 @@ Reading the SCINet Policy before you get started using the SCINet resources is i
 </table>
 
 
-**1. read FAQs**
+## <em class="level-1">1. read FAQs</em>
 
 It is generally a good idea to **browse the Frequently Asked Questions** (<a href="https://scinet.usda.gov/support/faq#faqs" target="_blank">SCINet FAQ  ⤴</a>) section first because it can save you time and effort. The FAQ section is designed to provide answers to common questions that users may have about the SCINet service.
 
@@ -181,13 +189,12 @@ By browsing the FAQ section, you may be able to **quickly find the answer to you
 </details>
 <br>
 
-**2. read GUIDEs**
+## <em class="level-1">2. read GUIDEs</em>
 
 Reading **user guides** can be a good starting point to get an overview on how to use the SCINet services. You can easily find the links to the User Guides in the top dropdown menu on the <a href="https://scinet.usda.gov" target="_blank">SCINet website  ⤴</a>.
 
 ![Scinet website]({{ images_path }}/01_hpc_scinet_guides_menu.png)
 
-Select:
 * <a href="https://scinet.usda.gov/guides/start" target="_blank">Quick Start  ⤴</a>, to getting started with SCINet
 * <a href="https://scinet.usda.gov/guides/" target="_blank">All User Guides  ⤴</a>, to open a grouped list of guides in categories:
   * <a href="https://scinet.usda.gov/guides/#access-guides" target="_blank">Access Guides  ⤴</a> *(login, authentication, VPN, command line, Open OnDemand, nomenclature)*
@@ -198,7 +205,7 @@ Select:
   * <a href="https://scinet.usda.gov/guides/#aws-guides" target="_blank">AWS Guides  ⤴</a>
 
 
-**3. contact VRSC**
+## <em class="level-1">3. contact VRSC</em>
 
 If your question is not on the FAQs list or the answer in the guide is not comprehensive, please **contact the VRSC support team**. <br>
 Email is a good way to contact SCINet support team for information or direct help. There are two addresses assigned to different needs:
@@ -212,13 +219,15 @@ Email is a good way to contact SCINet support team for information or direct hel
 * **scinet-training@usda.gov**
   * use it for all inquires for help from the SCINet Office
 
-**4. use SCINet Forum**
+
+## <em class="level-1">4. use SCINet Forum</em>
 
 Finally, contact other SCINet users on the <b><a href="https://forum.scinet.usda.gov/login" target="_blank">SCINet Forum  ⤴</a></b> to get a quick response to your question.
 
 ![Scinet forum]({{ images_path }}/01_hpc_scinet_forum.png)
 
 *The forum is actively monitored by community members who are willing to help others, so you may be able to get an answer to your question in a short amount of time. Another benefit is that you can get a variety of perspectives on your question. By asking your question on a forum, you can get input from multiple people who may have different experiences and expertise. Finally, the SCINet forum can be a good resource for learning more about a particular topic. By reading through previous discussions and questions on the forum, you may be able to learn more about the issue and get ideas for your own questions.*
+
 
 # SCINet HPC System
 
@@ -237,7 +246,7 @@ The SCINet HPC System is three-component, including:
 
 To fully understand the user guides, first familiarize yourself with the <a href="https://scinet.usda.gov/guides/access/glossary#scinet-nomenclature" target="_blank">SCINet nomenclature  ⤴</a>.
 
-## **Access Guides**
+## Access Guides
 
 Explore comprehensive user guides in category: <a href="https://scinet.usda.gov/guides/#access-guides" target="_blank">Access Guides  ⤴</a>
 * <b><a href="https://scinet.usda.gov/guides/access/login#logging-in-to-scinet" target="_blank">Logging in to SCINet  ⤴</a></b>
@@ -301,13 +310,16 @@ To dive in a more comprehensive description, see detailed SCINet guides about
 
 
 ### *Ceres Guides*
+
+<div class="required before" data-before="" markdown="1">
 Ceres login node: <b>@ceres.scinet.usda.gov</b> <br>
-Ceres transfer node: <b>@ceres-dtn.scinet.usda.gov</b> <br>
+Ceres transfer node: <b>@ceres-dtn.scinet.usda.gov</b> <base class="mb">
 Ceres Open OnDemand: <b><a href="http://ceres-ood.scinet.usda.gov" target="_blank">http://ceres-ood.scinet.usda.gov  ⤴</a></b> <br>
 **Ceres Getting started tutorial**: <a class="t-links" href="612.3"></a> *(in this workbook)*
+</div>
 
+<details class="l-frame" markdown="1"><summary class="c-header"><b>Ceres computing cluster User Guides <a href="https://scinet.usda.gov/guides/resources/ceres#scinet-ceres" target="_blank">by SCINet:</a></b></summary>
 
-<b><a href="https://scinet.usda.gov/guides/resources/ceres#scinet-ceres" target="_blank">Ceres computing cluster User Guides</a></b> by SCINet :<br>
 * <a href="https://scinet.usda.gov/guides/resources/ceres#onboarding-videos" target="_blank">Onboarding Videos  ⤴</a>
 * <a href="https://scinet.usda.gov/guides/resources/ceres#technical-overview" target="_blank">Technical Overview  ⤴</a>
 * <a href="https://scinet.usda.gov/guides/resources/ceres#system-configuration" target="_blank">System Configuration  ⤴</a>
@@ -335,16 +347,19 @@ Ceres Open OnDemand: <b><a href="http://ceres-ood.scinet.usda.gov" target="_blan
   * learn more from the universal <a href="https://scinet.usda.gov/guides/#software-guides" target="_blank">Software guides  ⤴</a> section:
     * <a href="https://scinet.usda.gov/guides/software/modules#environment-modules" target="_blank">Environment Modules  ⤴</a>
     * <a href="https://scinet.usda.gov/guides/software/singularity#singularity-containers" target="_blank">Singularity Containers  ⤴</a>
-
+</details>
 
 ### *Atlas Guides*
+
+<div class="required before" data-before="" markdown="1">
 Atlas login node: <b>@atlas-login.hpc.msstate.edu</b> <br>
-Atlas transfer node: <b>@atlas-dtn.hpc.msstate.edu</b> <br>
+Atlas transfer node: <b>@atlas-dtn.hpc.msstate.edu</b> <base class="mb">
 Atlas Open OnDemand: <b><a href="https://atlas-ood.hpc.msstate.edu" target="_blank">https://atlas-ood.hpc.msstate.edu  ⤴</a></b> <br>
 **Atlas Getting started tutorial**: <a class="t-links" href="612.2"></a> *(in this workbook)*
+</div>
 
+<details class="l-frame" markdown="1"><summary class="c-header"><b>Atlas computing cluster User Guides <a href="https://www.hpc.msstate.edu/computing/atlas/" target="_blank">by SCINet:</a></b></summary>
 
-<b><a href="https://www.hpc.msstate.edu/computing/atlas/" target="_blank">Atlas computing cluster User Guides   ⤴</a></b> by SCINet :<br>
 In the one-page documentation you will find the sections listed below. To navigate to the selected topic, press `CTRL + F` on your keyboard (on macOS use `COMMAND + F`), and copy-paste the name of the section.
 * Node Specifications
 * Accessing Atlas
@@ -382,7 +397,7 @@ In the one-page documentation you will find the sections listed below. To naviga
   * learn more from the universal <a href="https://scinet.usda.gov/guides/#software-guides" target="_blank">Software guides  ⤴</a> section:
     * <a href="https://scinet.usda.gov/guides/software/modules#environment-modules" target="_blank">Environment Modules  ⤴</a>
     * <a href="https://scinet.usda.gov/guides/software/singularity#singularity-containers" target="_blank">Singularity Containers  ⤴</a>
-
+</details>
 
 # SCINet Data Transfer & Storage
 
@@ -391,7 +406,8 @@ The SCINet HPC infrastructure contains data storage distributed among locations 
 * Juno storage, is a multi-petabyte ARS storage device used for **long-term storage** of data and results and periodically backed up to tape device.
 * Tape backup, is an off-site **backup** of Juno, NOT accessible directly by regular SCINet users.
 
-To learn on how to manage data on SCINet, explore comprehensive user guides *(by SCINet)* in category: <a href="https://scinet.usda.gov/guides/#data-guides" target="_blank">Data Guides  ⤴</a>
+To learn on how to manage data on SCINet, explore comprehensive user guides offered <a href="https://scinet.usda.gov/guides/#data-guides" target="_blank">by SCINet</a>:
+<details class="l-frame" markdown="1"><summary class="c-header"><b>Data Guides</b></summary>
 
 * <a href="https://scinet.usda.gov/guides/data/storage#scinet-storage" target="_blank">SCINet Storage  ⤴</a>
   * <a href="https://scinet.usda.gov/guides/data/storage#quotas" target="_blank">Quotas  ⤴</a>
@@ -412,3 +428,4 @@ To learn on how to manage data on SCINet, explore comprehensive user guides *(by
   * <a href="https://scinet.usda.gov/guides/data/datatransfer#other-ways-to-transfer-data" target="_blank">Other Ways to Transfer Data  ⤴</a>
   * <a href="https://scinet.usda.gov/guides/data/datatransfer#data-transfer-to-ncbi" target="_blank">Data Transfer to NCBI  ⤴</a>
   * <a href="https://scinet.usda.gov/guides/data/rclone#rclone-moving-data-to-and-from-cloud-resources" target="_blank">Rclone: Moving Data To and From Cloud Resources  ⤴</a>
+</details>

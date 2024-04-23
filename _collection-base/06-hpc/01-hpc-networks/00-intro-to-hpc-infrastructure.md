@@ -51,20 +51,22 @@ Overall, familiarity with Unix can help users get the most out of their HPC syst
 
 HPC infrastructure often consists of **clusters of computers** that are connected together and **work in parallel** to solve a problem, and they may also **use specialized hardware** such as graphics processing units (GPUs) or field-programmable gate arrays (FPGAs) **to accelerate performance**. Some HPC systems are **located in specialized facilities called "*data centers*"**, which are designed to house and maintain large numbers of computers and other equipment. These data centers may be owned and operated by research institutions, government agencies, or private companies. In some cases, HPC systems may be distributed across multiple locations (*e.g., SCINet HPC*), with each location contributing its own resources to the network (*e.g., computing nodes, large scale storage, high-speed network*).
 
-![]({{ images_path }}/01_hpc_system.png)<br>
+![]({{ images_path }}/01_hpc_system.png)
 *The figure shows the data center of computing clusters, where thousands of computing processors are organized in properly cooled and secured cabinets. Many HPC systems are accessed via the internet with a web browser-based interface. The outsourced tasks are referred to as cloud computing which provides many benefits.*
 
 ### *Why use an HPC System?*
 
 There are several benefits to using high-performance computing (HPC) systems:
 
-* **infrastructure** - provide the configured infrastructure that allow researchers to improve or make possible computationally intensive workflows;
-* **speed** - much faster than traditional computers, and they can solve complex problems much more quickly;
-* **accuracy**  - ability to perform calculations with greater accuracy and precision than traditional computers;
-* **capacity** - much larger capacity than traditional computers, which means they can handle larger datasets and more complex problems;
-* **versatility** - ability to solve a wide range of problems, from analyzing financial data to simulating complex physical phenomena;
-* **collaboration** - allow researchers and scientists from different locations to work together and share resources, which can facilitate collaboration and accelerate the pace of research and discovery;
-* **cost savings** - using an HPC system may be more cost-effective than buying and maintaining multiple traditional computers to solve a complex problem.
+<table>
+  <tr> <th>infrastructure</th> <td>provide the configured infrastructure that allow researchers to improve or make possible computationally intensive workflows</td> </tr>
+  <tr> <th>speed</th> <td>much faster than traditional computers, and they can solve complex problems much more quickly</td> </tr>
+  <tr> <th>accuracy</th> <td>ability to perform calculations with greater accuracy and precision than traditional computers</td> </tr>
+  <tr> <th>capacity</th> <td>much larger capacity than traditional computers, which means they can handle larger datasets and more complex problems</td> </tr>
+  <tr> <th>versatility</th> <td>ability to solve a wide range of problems, from analyzing financial data to simulating complex physical phenomena</td> </tr>
+  <tr> <th>collaboration</th> <td>allow researchers and scientists from different locations to work together and share resources, which can facilitate collaboration and accelerate the pace of research and discovery</td> </tr>
+  <tr> <th>cost savings</th> <td>using an HPC system may be more cost-effective than buying and maintaining multiple traditional computers to solve a complex problem</td> </tr>
+</table>
 
 <div class="protip" markdown="1">
 Using high-performance computing (HPC) systems can be challenging for beginners, especially those who never used the command line or Linux operating system. Before deciding to use HPC for your research, consider whether it is a suitable platform for your needs. Typically, analyses that are well-suited for HPC are:
@@ -89,15 +91,17 @@ There are some national or international research and education HPC networks tha
 
 HPC systems are an essential tool for solving many of the most challenging computational problems facing society today. They are used in a variety of fields, including science, engineering, finance, and government, to analyze and model data and phenomena that are large and complex. Some examples include:
 
-* **Bioinformatics** <br>*HPC systems are used to analyze and interpret large amounts of data from genome sequencing projects, which can help researchers understand the genetic basis of diseases and develop new treatments.*
-* **Protein folding** <br>*HPC systems are used to simulate the folding of proteins, which is important for understanding how proteins function in the body and for drug discovery.*
-* **Drug discovery** <br>*HPC systems are used to analyze large amounts of data and perform complex simulations to help discover new drugs and treatments.*
-* **Medicine and population health** <br>*HPC systems are used to analyze and interpret medical images, such as CT scans and MRI scans, which can help doctors diagnose and treat diseases. They are also used o analyze data from clinical trials and help researchers understand the effectiveness and safety of new drugs and treatments. HPC systems are used to store, manage, and analyze electronic medical records, which can help improve patient care.*
-* **Geospatial applications** <br>*HPC systems are used to analyze data from satellites and other Earth observation instruments to study the Earth's land, oceans, and atmosphere. They are also used to process, analyze, and visualize large datasets from geographic information systems (GIS), GPS and other positioning systems to create maps, enable navigation, and help researchers understand spatial patterns and trends.*
-* **Climate modeling** <br> *HPC systems are used to simulate and predict the Earth's climate and weather patterns, as well as estimate the impact of earthquakes and other natural disasters.*
-* **Astronomy** <br>*HPC systems are used to analyze data from telescopes and other instruments to study celestial objects and phenomena.*
-* **Aeronautical design** <br>*HPC systems are used to design and test new aircraft and aerospace systems.*
-* **Financial modeling** <br>*HPC systems are used to analyze large amounts of financial data and build complex models to make predictions and inform investment decisions.*
+<table>
+  <tr> <th>Bioinformatics</th>                 <td>HPC systems are used to analyze and interpret large amounts of data from genome sequencing projects, which can help researchers understand the genetic basis of diseases and develop new treatments.</td> </tr>
+  <tr> <th>Protein folding</th>                <td>HPC systems are used to simulate the folding of proteins, which is important for understanding how proteins function in the body and for drug discovery.</td> </tr>
+  <tr> <th>Drug discovery</th>                 <td>HPC systems are used to analyze large amounts of data and perform complex simulations to help discover new drugs and treatments.</td> </tr>
+  <tr> <th>Medicine and population health</th> <td>HPC systems are used to analyze and interpret medical images, such as CT scans and MRI scans, which can help doctors diagnose and treat diseases. They are also used o analyze data from clinical trials and help researchers understand the effectiveness and safety of new drugs and treatments. HPC systems are used to store, manage, and analyze electronic medical records, which can help improve patient care.</td> </tr>
+  <tr> <th>Geospatial applications</th>        <td>HPC systems are used to analyze data from satellites and other Earth observation instruments to study the Earth's land, oceans, and atmosphere. They are also used to process, analyze, and visualize large datasets from geographic information systems (GIS), GPS and other positioning systems to create maps, enable navigation, and help researchers understand spatial patterns and trends.</td> </tr>
+  <tr> <th>Climate modeling</th>               <td>HPC systems are used to simulate and predict the Earth's climate and weather patterns, as well as estimate the impact of earthquakes and other natural disasters.</td> </tr>
+  <tr> <th>Astronomy</th>                      <td>HPC systems are used to analyze data from telescopes and other instruments to study celestial objects and phenomena.</td> </tr>
+  <tr> <th>Aeronautical design</th>            <td>HPC systems are used to design and test new aircraft and aerospace systems.</td> </tr>
+  <tr> <th>Financial modeling</th>             <td>HPC systems are used to analyze large amounts of financial data and build complex models to make predictions and inform investment decisions.</td> </tr>
+</table>
 
 HPC systems are also used extensively in artificial intelligence (AI) and machine learning, including:
 * **Natural language processing**, *to process and analyze large amounts of text data to improve natural language processing tasks such as language translation and text classification.*
