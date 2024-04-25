@@ -343,7 +343,7 @@ The HPC administrator have access to the information on all the software install
 
 ### • *How to get new software installed?*
 
-**1.** Check that the software is not already installed *(follow the guide in this tutorial)*
+**1.** Check that the software is not already installed *(follow the [guide in this tutorial](#how-to-find-available-software))*
 
 **2.** Consider the following criteria:
   * if you think that the new software will be useful to many more users <br>
@@ -351,7 +351,7 @@ The HPC administrator have access to the information on all the software install
   * the software is licensed <br>
 <i>or</i>
   * installation requires superuser privileges <br><br>
-If the answer to any is yes, contact the HPC administrator and submit a request for software installation. <br>
+If the answer to any is `YES`, contact the HPC administrator and submit a request for software installation. <br>
 Otherwise, go to step 3.
 
 **3.** Go to the <a class="t-links" href="644"></a> tutorial to learn how to install the necessary software yourself.
