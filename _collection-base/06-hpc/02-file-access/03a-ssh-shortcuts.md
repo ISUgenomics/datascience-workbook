@@ -18,27 +18,27 @@ tags: []
 {% include page-sourcing.html %}
 
 
-# Introduction
-
 # Setup password-less login for HPC
 
+<div class="warning" markdown="1">
 Most HPC resources should now require double authentication which will make this type of password-less login not possible.  For those that don't have double authentication, this will work.
+</div>
 
 To login automatically from your machine to the remote host, you can save the private/public key pair in both machines. This way, you don't have to enter password each time you login.
 
-## Step 1: Create public and private keys (local computer)
+### **Step 1:** *Create public and private keys (local computer)*
 
 ```bash
 ssh-keygen
 ```
 
-## Step 2: Copy the public key to remote-host
+### **Step 2:** *Copy the public key to remote-host*
 
 ```bash
 ssh-copy-id -i ~/.ssh/id_rsa.pub userid@MACHINENAME
 ```
 
-## Step 3: Login  
+### **Step 3:** *Login*  
 
 ```bash
 ssh userid@MACHINENAME
@@ -48,9 +48,11 @@ ssh userid@MACHINENAME
 
 # Shortcuts for SSH hosts
 
-Are you tired of typing full length host-names while connecting via SSH? Do you frequently `scp` files from one server to another and have to lookup what the host-names are? Do you want to `rsync` between local and remote host easily with a simple command? Then, read-on.
+*Are you tired of typing full length host-names while connecting via SSH?* <br>
+*Do you frequently* `scp` *files from one server to another and have to lookup what the host-names are?* *Do you want to* `rsync` *between local and remote host easily with a simple command?* <base class="mb">
+**Then, read-on!**
 
-The hard-way:
+The hard-way approach *(requires typing anew each time)*:
 
 ```bash
 # connect
@@ -61,22 +63,23 @@ scp yourfile usename@login.scinet.science:/path/to/destination/
 rsync -e 'ssh -c aes128-ctr' -rts your_folder username@login.scinet.science:/path/to/destination/
 ```
 
+<div class="warning" markdown="1">
 As you can see, if you have a bunch of hosts, it gets really hairy to retype them every time you want to do any of these things.
+</div>
+
 
 ## The Solution
 
 Create a `config` file under the `~/.ssh` directory, with the short name for these host-names. Then you can simply connect to the server by using the short name instead of the full host-name!
 
 
-First, edit the file
+1. First, edit the `config` file:
+  ```bash
+  vi ~/.ssh/config
+  ```
 
-```bash
-vi ~/.ssh/config
-```
-
-and add the details:
-
-```bash
+2. And, add the details:
+  ```bash
 Host ceres
   Hostname login.scinet.science
   User username
@@ -86,15 +89,15 @@ Host condo
   Hostname condo2017.its.iastate.edu
   User username
   ForwardX11 yes
-```
+  ```
 
-Set permissions straight:
+3. Set permissions straight:
+  ```bash
+  chmod 600 ~/.ssh/config
+  ```
 
-```bash
-chmod 600 ~/.ssh/config
-```
-
-Now, have fun! the above commands can now be done using:
+***Now, have fun!*** <br>
+The above commands can now be done using:
 
 ```bash
 # connect
@@ -105,10 +108,11 @@ scp yourfile ceres:/path/to/destination/
 rsync -e 'ssh -c aes128-ctr' -rts your_folder ceres:/path/to/destination/
 ```
 
-You can read more about the config by opening the man page:
+<div class="more mt" markdown="1">
+You can read more about the `config` by opening the man page:
+<code class="code-block bc-data">man ssh-config</code>
+</div>
 
-```bash
-man ssh-config
-```
-
+<div class="protip" markdown="1">
 Now, combine this with [password-less login](#setup-password-less-login-for-HPC) and work smart!
+</div>

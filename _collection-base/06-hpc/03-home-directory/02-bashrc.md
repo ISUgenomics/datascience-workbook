@@ -20,7 +20,7 @@ tags: []
 
 # Introduction
 
-The `.bashrc` for bash shell is one of the most useful files for a unix user. It is read every time a new shell is created (for example when submitting jobs).  In many HPC systems, the `.bash_profile` will also contain a line that will source the `.bashrc` upon login.  Below is a `.bashrc` example that has examples of useful features you may want to include in your own `.bashrc` file.
+The `.bashrc` for bash shell is one of the most useful files for a unix user. It is read every time a new shell is created (for example when submitting jobs).  In many HPC systems, the `.bash_profile` will also contain a line that will source the `.bashrc` upon login.  Below is a `.bashrc` [template](#example-bashrc) that has examples of useful features you may want to include in your own `.bashrc` file, including:
 
 * Exports
 * Singularity
@@ -28,20 +28,22 @@ The `.bashrc` for bash shell is one of the most useful files for a unix user. It
 * Never ending history
 * Functions
 
-1\. Make a backup of your original `.bashrc` file
+## How to set up .bashrc?
 
-```bash
+1. Make a backup of your original `.bashrc` file.
+  ```bash
 cp .bashrc .bashrc.orig
-```
+  ```
 
-2\. Copy the .bashrc file contained inside the code block below to a new `.bashrc` file
+2. Copy the `.bashrc` file contained inside the [code block below](#example-bashrc) to a new `.bashrc` file.
 
-3\. Update the following lines with the correct information
-
-```
+3. Update the following lines with the correct information.
+  ```
 export PROJECTFOLDER=/PATH/To/Working/Directory
 alias gclone='git clone git clone git@github.com:GITHUBID/$1'  # update your gitorganization or ID here
-```
+  ```
+
+## example .bashrc
 
 ```bash
 # /etc/skel/.bashrc
@@ -54,33 +56,35 @@ fi
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
 
-
 ###############################
 ## Exports: When you need a variable every time you login.
 ###############################
+
 # Extend your PATH to find locally installed programs or scripts
 export PATH="~/bin:$PATH"
 export PATH="$PATH:/home/$USER/.local/bin"
 
-
-
 # corrects for Error:  E437: terminal capability "cm" required
 export TERM=xterm
 
-# Project Directory  Be sure to update this path
+# Project Directory  -  be sure to update this path
 export PROJECTFOLDER=/PATH/To/Working/Directory
 
 
-# User defined Modules
-  # this is where you might put modules you always load or modules you have installed yourself
-    # module load singularity
+###############################
+## User defined Modules  -  this is where you might put modules you always load or modules you have installed yourself
+###############################
 
-    # Give others in your group read but (no write or execute) permissions upon file/folder creation
-      umask 0022
+# module load singularity
+
+# Give others in your group read but (no write or execute) permissions upon file/folder creation
+umask 0022
+
 
 ###############################
 ## Singularity
 ###############################
+
 ## Singularity Variables added to your path
 if !  [ -d $PROJECTFOLDER/NXFContainers ]; then
     mkdir $PROJECTFOLDER/NXFContainers
@@ -88,17 +92,14 @@ fi
   export NXF_SINGULARITY_CACHEDIR=$PROJECTFOLDER/NXFContainers
 
 
-
-
-
 ###############################
 ## Aliases:  Make your most commonly used commands shorter!
 ###############################
+
   alias table='column  -t | less -S'  # this produces better columns for output cat file | table
   alias whitespace="sed 's/ /·/g;s/\t/￫/g;s/\r/§/g;s/$/¶/g'"  # show the whitespaces in a file
 
-  alias pwd='pwd -P'  # always show the full path and not softlinked path to folder
-
+  alias pwd='pwd -P'                  # always show the full path and not softlinked path to folder
 
   # add color to grep and ls
   alias grep='grep --color=auto'
@@ -107,11 +108,11 @@ fi
   alias ls='ls --color=auto -v'
 
   # File and folder size
-  alias du='du -kh'          # Makes a more readable output.
+  alias du='du -kh'                   # Makes a more readable output.
   alias df='df -kTh'
   alias dd='du -sch *'
-  alias dG='du -hs * | awk '$1~"G"'' #show all files/folders with a size in the Gigabytes
-  alias dT='du -hs * | awk '$1~"T"'' #show all files/folders with a size in the Terabytes
+  alias dG='du -hs * | awk '$1~"G"''  #show all files/folders with a size in the Gigabytes
+  alias dT='du -hs * | awk '$1~"T"''  #show all files/folders with a size in the Terabytes
 
   # shortcuts for ls
   alias lh='ls -lh'          # sort in readable way
@@ -125,7 +126,7 @@ fi
   alias lr='ls -lR'          # recursive ls
   alias ld='ls -d */'        # list directories only
   alias ll='ls -l'
-  alias lsr='tree -Csu'     # nice alternative to 'recursive ls'
+  alias lsr='tree -Csu'      # nice alternative to 'recursive ls'
   alias dirtree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'"
 
   #git shortcuts
@@ -142,6 +143,7 @@ fi
   alias si="sinfo -o \"%20P %5D %14F %8z %10m %10d %11l %16f %N\""
   alias sq="squeue -o \"%8i %30j %4t %10u %20q %20a %10g %20P %10Q %5D %11l %11L %R %Z\""
   alias sacct='sacct --format JobID,Partition,Timelimit,Start,Elapsed,NodeList%20,ExitCode,ReqMem,MaxRSS,MaxVMSize,AllocCPUS'
+
 
 ###############################
 ## Never ending history:  never lose a command due to a history limit.
@@ -162,16 +164,16 @@ fi
   #export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
 
 
-
-
 ###############################
 ## FUNCTIONS: Scripts can be added as functions in this file so you don't have to add it to your path.
 ###############################
 
-pathadd()  # When you are in a hurry and want to add the current path to your PATH variable; not perminent
+# When you are in a hurry and want to add the current path to your PATH variable; not perminent
+pathadd()
   { export PATH=$PATH:$1; }
 
-function extract()      # Handy Extract Program that will extract any file
+# Handy Extract Program that will extract any file
+function extract()
   {
        if [ -f $1 ] ; then
            case $1 in
@@ -198,7 +200,7 @@ function extract()      # Handy Extract Program that will extract any file
 function ff() { find $(pwd -P) -type f -iname '*'$*'*' -ls ; }
 function fd() { find $(pwd -P) -type d -iname '*'$*'*' -ls ; }
 
-#it puts line number for grep matches, but only when it is at the end of the pipe
+# It puts line number for grep matches, but only when it is at the end of the pipe
 function grep()
   {
       if [[ -t 1 ]]; then
