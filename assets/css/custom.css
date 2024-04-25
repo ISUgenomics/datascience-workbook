@@ -358,7 +358,7 @@ toc-note {
 
 .prompt-1::before {content: var(--custom-before, ">>>  "); color: var(--c-gray);}
 .prompt-2::before {content: var(--custom-before, "...  "); color: var(--c-gray);}
-.prompt-3::before {content: var(--custom-before, "$:  "); color: var(--c-good);}
+.prompt-3::before {content: var(--custom-before, "$:  "); color: var(--c-pros);}
 .prompt-4::before {content: var(--custom-before, "!:  "); color: var(--c-exercise);}
 
 .collapsible-content .prefix-2, .collapsible-content .prefix-3, .collapsible-content .prefix-4 {color: #3f5a8a;}
