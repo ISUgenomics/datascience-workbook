@@ -33,67 +33,68 @@ By using these PBS commands, users can efficiently manage their jobs on the clus
 
 ## Job control commands
 
-| Commands | Function | Basic Usage | Example |
-|----------|----------|-------------|---------|
-| `qsub`   | submit a job | qsub [script] | *qsub job.pbs* |
-| `qsub -I`| submits an interactive job | qsub -I | *qsub -I* |
-| `qdel`   | deletes a job from the queue | qdel [job_id] | *qdel 123456* |
-| `qhold`  | puts a job on hold, preventing it from running | qhold [job_id] | *qhold 123456* |
-| `qrls`   | releases a job from hold, allowing it to run | qrls [job_id] | *qrls 123456* |
-| `qreturn`| return a batch job | qreturn [job_id] | *qreturn 123456*|
-| `qmove`  | move a batch job to another queue | qmove [job_id] [new_queue] | *qmove 123456 short* |
+| Commands | Function                                       | Basic Usage                  | Example              |
+|----------|------------------------------------------------|------------------------------|----------------------|
+| `qsub`   | submit a job                                   | `qsub [script]`              | `qsub job.pbs`       |
+| `qsub -I`| submits an interactive job                     | `qsub -I`                    | `qsub -I`            |
+| `qdel`   | deletes a job from the queue                   | `qdel [job_id]`              | `qdel 123456`        |
+| `qhold`  | puts a job on hold, preventing it from running | `qhold [job_id]`             | `qhold 123456`       |
+| `qrls`   | releases a job from hold, allowing it to run   | `qrls [job_id]`              | `qrls 123456`        |
+| `qreturn`| return a batch job                             | `qreturn [job_id]`           | `qreturn 123456`     |
+| `qmove`  | move a batch job to another queue              | `qmove [job_id] [new_queue]` | `qmove 123456 short` |
 
 
 ## Job monitoring commands
 
-| Commands | Function | Example |
-|----------|----------|---------|
-| `qstat`  | show status of batch jobs | *qstat* |
-| `qstat -u [user]` | displays the status of all jobs submitted by a specific user | *qstat -u myuser* |
-| `qstat [job_id]` | display the status of a specific job | *qstat 123456* |
-| `qstat -f [job_id]`| displays more detailed information about a specific job | *qstat -f 123456* |
-| `qstat -q [queue_name]` | display the status of jobs in a specific queue | *qstat -q short* |
+| Commands                | Function                                                     | Example               |
+|-------------------------|--------------------------------------------------------------|-----------------------|
+| `qstat`                 | show status of batch jobs                                    | `qstat`               |
+| `qstat -u [user]`       | displays the status of all jobs submitted by a specific user | `qstat -u myuser`     |
+| `qstat [job_id]`        | display the status of a specific job                         | `qstat 123456`        |
+| `qstat -f [job_id]`     | displays more detailed information about a specific job      | `qstat -f 123456`     |
+| `qstat -q [queue_name]` | display the status of jobs in a specific queue               | `qstat -q short`      |
 ||||
-| `qselect` | select a specific subset of jobs | *qselect* |
-| `qselect -u [user]` | select all job IDs submitted by a specific user | *qselect -u myuser* |
-| `qselect -N [jobname]` | select all job IDs with a specific job name | *qselect -N job_name* |
-| `qselect -s R` | select all job IDs that are currently running <br>The `-s` option specifies the job state to filter by. "R" stands for "Running". | *qselect -s R* |
+| `qselect`               | select a specific subset of jobs                             | `qselect`             |
+| `qselect -u [user]`     | select all job IDs submitted by a specific user              | `qselect -u myuser`   |
+| `qselect -N [jobname]`  | select all job IDs with a specific job name                  | `qselect -N job_name` |
+| `qselect -s R`          | select all job IDs that are currently running <br>The `-s` option specifies the job state to filter by. "R" stands for "Running". | `qselect -s R` |
 
 
 ## Node status commands
 
-| Commands   | Function | Example |
-|------------|----------|---------|
-| `pbsnodes` | display the status of all nodes in the cluster | *pbsnodes* |
-| `pbsnodes [node_name]` | display the status of a specific node | *pbsnodes nova-123456* |
-| `pbsnodes -a [node_name]` | display more detailed information about a specific node | *pbsnodes -a nova-123456* |
-| `pbsnodes -s [state]` | display the status of nodes in a specific state | *pbsnodes -s down* |
-| `pbsnodes -l property=value` | display the status of nodes with specific properties | *pbsnodes -l mem=16gb* |
+| Commands                     | Function                                                | Example                   |
+|------------------------------|---------------------------------------------------------|---------------------------|
+| `pbsnodes`                   | display the status of all nodes in the cluster          | `pbsnodes`                |
+| `pbsnodes [node_name]`       | display the status of a specific node                   | `pbsnodes nova-123456`    |
+| `pbsnodes -a [node_name]`    | display more detailed information about a specific node | `pbsnodes -a nova-123456` |
+| `pbsnodes -s [state]`        | display the status of nodes in a specific state         | `pbsnodes -s down`        |
+| `pbsnodes -l property=value` | display the status of nodes with specific properties    | `pbsnodes -l mem=16gb`    |
 
 
 ## PBS environment variables
 
-| variable        | description |
-|-----------------|-------------|
+| variable        | description                                                                  |
+|-----------------|------------------------------------------------------------------------------|
 | PBS_ENVIRONMENT | set to PBS_BATCH to indicate that the job is a batch job; otherwise, set to PBS_INTERACTIVE to indicate that the job is a PBS interactive job |
-| **PBS_JOBID**   | the job identifier assigned to the job by the batch system |
-| PBS_JOBNAME     | the job name supplied by the user |
+| **PBS_JOBID**   | the job identifier assigned to the job by the batch system                   |
+| PBS_JOBNAME     | the job name supplied by the user                                            |
 | PBS_NODEFILE    | the name of the file that contains the list of the nodes assigned to the job |
-| PBS_QUEUE       | the name of the queue from which the job is executed |
-| PBS_O_HOME      | value of the HOME variable in the environment in which qsub was executed |
-| PBS_O_LANG      | value of the LANG variable in the environment in which qsub was executed |
-| PBS_O_LOGNAME   | value of the LOGNAME variable in the environment in which qsub was executed |
-| PBS_O_PATH      | value of the PATH variable in the environment in which qsub was executed |
-| PBS_O_MAIL      | value of the MAIL variable in the environment in which qsub was executed |
-| PBS_O_SHELL     | value of the SHELL variable in the environment in which qsub was executed |
-| PBS_O_TZ        | value of the TZ variable in the environment in which qsub was executed |
-| PBS_O_HOST      | the name of the host upon which the qsub command is running |
-| PBS_O_QUEUE     | the name of the original queue to which the job was submitted |
-|**PBS_O_WORKDIR**| the absolute path of the current working directory of the qsub command |
+| PBS_QUEUE       | the name of the queue from which the job is executed                         |
+| PBS_O_HOME      | value of the HOME variable in the environment in which qsub was executed     |
+| PBS_O_LANG      | value of the LANG variable in the environment in which qsub was executed     |
+| PBS_O_LOGNAME   | value of the LOGNAME variable in the environment in which qsub was executed  |
+| PBS_O_PATH      | value of the PATH variable in the environment in which qsub was executed     |
+| PBS_O_MAIL      | value of the MAIL variable in the environment in which qsub was executed     |
+| PBS_O_SHELL     | value of the SHELL variable in the environment in which qsub was executed    |
+| PBS_O_TZ        | value of the TZ variable in the environment in which qsub was executed       |
+| PBS_O_HOST      | the name of the host upon which the qsub command is running                  |
+| PBS_O_QUEUE     | the name of the original queue to which the job was submitted                |
+|**PBS_O_WORKDIR**| the absolute path of the current working directory of the qsub command       |
 
-[source: <a href="https://albertsk.files.wordpress.com/2011/12/pbs.pdf" target="_blank">Quick Tutorial for Portable Batch System (PBS)  ⤴</a>]
+<em class="footnote plain">source: <a href="https://albertsk.files.wordpress.com/2011/12/pbs.pdf" target="_blank">Quick Tutorial for Portable Batch System (PBS)  ⤴</a></em>
 
-## PBS submission script
+
+## **PBS submission script**
 
 Here's a template PBS script with commonly used `#PBS` directives:
 
@@ -112,23 +113,24 @@ Here's a template PBS script with commonly used `#PBS` directives:
 
 cd /path/to/working/directory
 
-# Your commands go here
+# your commands go below
 echo "Hello, world!"
 ```
 
 
 ### `#PBS` *directives*
+
 The table provides a brief explanation of the commonly used `#PBS` directives in the PBS submission script.
 
-| directives | description |
-|------------|-------------|
-| `#!/bin/bash` | specifies the interpreter to be used for the script |
-| `#PBS -N job_name` | sets the name of the job |
-| `#PBS -o output_file` | specifies the name of the file to which standard output will be written |
-| `#PBS -e error_file`  | specifies the name of the file to which standard error will be written  |
-| `#PBS -l nodes=1:ppn=8` | specifies the number of nodes and processors per node needed for the job |
-| `#PBS -l mem=16gb` | specifies the amount of memory needed for the job |
-| `#PBS -l walltime=1:00:00` | specifies the maximum wall time for the job |
-| `#PBS -M user_email@domain.com` | specifies the email address to which notifications should be sent |
-| `#PBS -m abe` | specifies the types of notifications to be sent. <br>The **a** option sends email when the job is aborted, <br>**b** sends email when the job begins, <br>and **e** sends email when the job ends. |
-| `#PBS -d /path/to/working/directory` | specify the working directory where the job will be executed |
+| directives                           | description                                                              |
+|--------------------------------------|--------------------------------------------------------------------------|
+| `#!/bin/bash`                        | specifies the interpreter to be used for the script                      |
+| `#PBS -N job_name`                   | sets the name of the job                                                 |
+| `#PBS -o output_file`                | specifies the name of the file to which standard output will be written  |
+| `#PBS -e error_file`                 | specifies the name of the file to which standard error will be written   |
+| `#PBS -l nodes=1:ppn=8`              | specifies the number of nodes and processors per node needed for the job |
+| `#PBS -l mem=16gb`                   | specifies the amount of memory needed for the job                        |
+| `#PBS -l walltime=1:00:00`           | specifies the maximum wall time for the job                              |
+| `#PBS -M user_email@domain.com`      | specifies the email address to which notifications should be sent        |
+| `#PBS -m abe`                        | specifies the types of notifications to be sent. <br>The **a** option sends email when the job is aborted, <br>**b** sends email when the job begins, <br>and **e** sends email when the job ends. |
+| `#PBS -d /path/to/working/directory` | specify the working directory where the job will be executed             |

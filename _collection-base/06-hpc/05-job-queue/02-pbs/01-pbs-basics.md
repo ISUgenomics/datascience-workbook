@@ -47,7 +47,7 @@ Creating a script for PBS workload manager is essential for submitting and manag
 
 Once a PBS script is created, it can be submitted to the queue using the `qsub` command. The job is added to the PBS queue and its status can be monitored. Various PBS commands allow users to manage their jobs, for example check the progress of their jobs, make modifications to the job parameters, and cancel or hold jobs if necessary.
 
-## Why to create a PBS script?
+## *Why to create a PBS script?*
 
 Here are some reasons why creating a script for PBS is important
 
@@ -60,7 +60,7 @@ A PBS script ensures that the job is submitted with the same requirements each t
 * **Customization** <br>
 A PBS script allows users to customize their jobs by specifying the specific commands to be executed and the order in which they should be executed.
 
-## How to create & submit a PBS script?
+## *How to create & submit a PBS script?*
 
 By following the steps 1-7, users can create a PBS script and submit their jobs to the cluster.
 
@@ -92,7 +92,7 @@ echo "Hello, world!"
 qsub myjob.pbs
 ```
 
-## Template PBS script
+## **Template PBS script**
 
 Here's a template PBS script with commonly used `#PBS` directives:
 
@@ -135,6 +135,7 @@ The table provides a brief explanation of the commonly used PBS directives in th
 | `#PBS -m abe` | specifies the types of notifications to be sent. <br>The **a** option sends email when the job is aborted, <br>**b** sends email when the job begins, <br>and **e** sends email when the job ends. |
 | `#PBS -d /path/to/working/directory` | specify the working directory where the job will be executed |
 
+
 # PBS commands
 
 PBS provides a set of commands and interfaces that allow users to submit, monitor, and control the execution of jobs, and administrators to manage the resources and configure the system.
@@ -153,28 +154,31 @@ qsub myjob.pbs
 ```
 *This will submit the job script "myjob.pbs" to the queue.*
 
-**- add job requirements** <br>
+---
+
+Explore the most common usage scenarios:
+* **add job requirements** <br>
 The `-l` flag is used with the `qsub` command to specify job requirements such as the number of nodes, CPUs, memory, and walltime.
 ```bash
 qsub -l nodes=2:ppn=4,mem=16gb,walltime=1:00:00 myjob.pbs
 ```
 *This will submit a job requesting 2 nodes with 4 CPUs each, 16GB of memory, and a walltime of 1 hour.*
 
-**- specify a name for the job** <br>
+* **specify a name for the job** <br>
 The `-N` flag is used with the `qsub` command to specify a name for the job.
 ```bash
 qsub -N myjob myjob.pbs
 ```
 *This will submit the job script "myjob.pbs" with the name "myjob".*
 
-**- redirect the output and error** <br>
+* **redirect the output and error** <br>
 The `-o` and `-e` flags are used with the `qsub` command to redirect the output and error messages of the job to a file.
 ```bash
 qsub -o myjob.out -e myjob.err myjob.pbs
 ```
 *This will submit the job script "myjob.pbs" and redirect the output to "myjob.out" and errors to "myjob.err".*
 
-**- specify the queue** <br>
+* **specify the queue** <br>
 The `-q` flag is used with the `qsub` command to specify the queue where the job should be submitted.
 ```bash
 qsub -q myqueue myjob.pbs
@@ -190,7 +194,8 @@ qstat -u myuser
 ```
 *This will show the status of all jobs submitted by the user "myuser".*
 
-**- display job info** <br>
+<base class="mt">
+* **display job info** <br>
 The `-f` flag is used used with the `qstat` command to display detailed information about a job, including its resource requirements, priority, and status.
 ```bash
 qstat -f 123456
@@ -214,7 +219,8 @@ qhold 123456
 ```
 *This will put the job with ID 1234 on hold.*
 
-**- set of jobs on hold** <br>
+<base class="mt">
+* **set of jobs on hold** <br>
 The `-j` flag is used with the `qhold` command to put a set of jobs on hold.
 ```bash
 qhold -j 1234,5678,9101
@@ -229,4 +235,8 @@ qrls 123456
 ```
 *This will release the job with ID 1234 from hold.*
 
-<span style="color: #ff3870;font-weight: 500;">If you want to learn more about PBS commands, a useful resource to explore is the</span> <a class="t-links" href="652.2">PBS commands (cheatsheet)</a>
+
+### <button class="btn more"></button>
+<div class="more before" data-before="" markdown="1">
+If you want to learn more about PBS commands, a useful resource to explore is the <a class="t-links" href="652.2">PBS commands (cheatsheet)</a>.
+</div>

@@ -18,48 +18,45 @@ tags: []
 {% include page-sourcing.html %}
 
 
-# Introduction
-
 # Submitting dependency jobs using PBS-Torque
 
 To submit jobs one after the other (i.e., run second job after the completion of first), we can use `depend` function of `qsub`.
 
-First submit the firstjob, like normal
-
+Submit the first job, like usual:
 ```bash
 qsub first_job.sub
 ```
 
-You will get the output (jobid#)
-
-```bash
+You will get the output (jobid#):
+<pre class="output">
 1234567.computername
-```
+</pre>
 
-Second submit the second job following way,
-
+Then, submit the second job like this:
 ```bash
 qsub -W depend=afterok:1234567 second_job.sub
 ```
+*Both job will be queued, but second job won't start till the first job is finished.*
 
-Both job will be queued, but second job won't start till the first job is finished.
+### *other dependency types*
 
-The other dependencies that can be used with `-W depend=dependency:jobid` are
+The other dependencies that can be used with `-W depend=dependency:jobid` include:
 
-| Argument | Description |
-| --- | --- |
-| after | this job can be scheduled after job jobid begins execution. |
-| afterok | this job can be scheduled after job jobid finishes successfully. |
-| afternotok | this job can be scheduled after job jobid finishes unsucessfully. |
-| afterany | this job can be scheduled after job jobid finishes in any state. |
-| before | this job must begin execution before job jobid can be scheduled. |
-| beforeok | this job must finish successfully before job jobid begins |
-| beforenotok | this job must finish unsuccessfully before job jobid begins |
-| beforeany | this job must finish in any state before job jobid begins |
+| Argument    | Description                                                      |
+|-------------|------------------------------------------------------------------|
+| after       | this job can be scheduled after job jobid begins execution       |
+| afterok     | this job can be scheduled after job jobid finishes successfully  |
+| afternotok  | this job can be scheduled after job jobid finishes unsucessfully |
+| afterany    | this job can be scheduled after job jobid finishes in any state  |
+| before      | this job must begin execution before job jobid can be scheduled  |
+| beforeok    | this job must finish successfully before job jobid begins        |
+| beforenotok | this job must finish unsuccessfully before job jobid begins      |
+| beforeany   | this job must finish in any state before job jobid begins        |
 
 
+### *automate the process*
 
-Simple way to automate this with a bash script:
+here is an example on how to automate the sequence of job execution within a bash script:
 
 ```bash
 #!/bin/bash
