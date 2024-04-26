@@ -47,6 +47,7 @@
 .bc-data {--bg-color: var(--bc-data); background-color: var(--bc-data) !important; color: var(--c-boxdark);}
 .bc-template {--bg-color: var(--bc-template); background-color: var(--bc-template) !important; color: var(--c-boxdark);}
 .bc-output {--bg-color: var(--c-boxdark); background-color: var(--c-boxdark) !important; color: var(--bc-data);}
+.bc-white {background-color: rgb(253, 253, 253) !important;}
 
 div.bc-warning, div.bc-protip, div.bc-note, div.bc-example, div.bc-exercise,
 div.bc-code, div.bc-data, div.bc-template, div.bc-output {padding: 0.4em 0.8em;}
