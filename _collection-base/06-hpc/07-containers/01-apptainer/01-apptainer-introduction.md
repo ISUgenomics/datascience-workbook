@@ -40,11 +40,11 @@ Explore the journey from Singularity to Apptainer and uncover the expanded featu
   * *Sylabs still has a Singularity, how does Apptainer relate to that?*
   * *What immediate changes will be implemented?*
   * *What about backwards compatibility?*
-  ```
-  Apptainer will provide singularity as a command line link
-  and will maintain as much of the CLI and environment functionality as possible.
-  From the user's perspective, very little, if anything, will change.
-  ```
+  <pre class="bc-template italic level-1">
+  "Apptainer will provide singularity as a command line link
+   and will maintain as much of the CLI and environment functionality as possible.
+   From the user's perspective, very little, if anything, will change."
+  </pre>
 
 # Apptainer User Guide
 
@@ -85,47 +85,45 @@ Apptainer is usually preconfigured by HPC administrators, allowing regular users
 module avail apptainer
 ```
 to list available modules and search for Apptainer in the output:
+<pre class="output">
+--------------------------- /software/el9/modulefiles ---------------------------
+   apptainer/1.1.8    apptainer/1.2.2    apptainer/1.2.5 (D)
 
-![06_apptainer_module.png]({{ images_path }}/06_apptainer_module.png)
+  Where:
+   D:  Default Module
+</pre>
 
 Users should choose the specific version of the Apptainer module they wish to work with, and activate it by loading the module using the command:
 ```bash
-module load apptainer/<version>         # e.g., module load apptainer/1.1.9-py310-wsbt4ge
+module load apptainer/<version>         # e.g., module load apptainer/1.2.5
 ```
 
 Once the desired Apptainer module version is loaded, users can then directly execute `apptainer` commands and manage their containers within the HPC environment.
+<pre class="output">
+<b class="prompt-3"></b><span class="c-gray">apptainer --version</span>
+apptainer version 1.2.5
+</pre>
+
 
 ### *Apptainer temporary files*
-In the context of jobs in HPC environments, **controlling the cache location** can be crucial to ensure that jobs do not run out of space or hit quotas during execution. By setting the cache directory paths, users can:
-* optimize performance by placing the cache on a fast filesystem
-* and manage storage by avoiding directories with space constraints (such as `home`).
+In the context of jobs in HPC environments, **controlling the cache location** can be crucial to ensure that **jobs do not run out of space** or hit quotas during execution. By setting the cache directory paths, users can: <br>
+**1.** optimize performance by placing the cache on a fast filesystem <br>
+**2.** and manage storage by avoiding directories with space constraints (such as `home`).
 
 The `APPTAINER_CACHEDIR` and `SINGULARITY_CACHEDIR` are environment variables that determine where Apptainer (formerly Singularity) caches its temporary files during operations like image builds or container pulls.
 
 |variable|description|
 |----|----|
 |`SINGULARITY_CACHEDIR`| This environment variable was used in Singularity versions to specify the directory where Singularity should cache images and layers during operations. Setting this variable allows users to control the caching location, especially useful in HPC environments where home directories might have quota limits. |
-|`APPTAINER_CACHEDIR`| Given the rebranding from Singularity to Apptainer, it's logical to infer that this environment variable serves a similar purpose for Apptainer as SINGULARITY_CACHEDIR did for Singularity. |
-
-If a user doesn't manually set these variables and there's no default set by the admin, **the Apptainer will use its own default caching location, which is typically in the user's home directory** or a temporary directory. By default, without setting `$APPTAINER_CACHEDIR`, Apptainer might use a directory like `~/.apptainer` (in the user's home directory) for its cache, similar to how Singularity used `~/.singularity` by default.
-
-**Move `.apptainer` dir outside `home` location** <br>
-You can relocate the `.apptainer` directory from your `home` to a location without storage limits *(e.g., /project path on SCINet clusters)*, and then create a symbolic link in your `home` pointing to the new location, ensuring that the cache remains accessible from the `home` directory without additional modifications.
-
-<i>For example, at Atlas or Ceres (SCINet clusters), you can do:</i>
-```bash
-cd ~
-mkdir /project/<your_project_dir>/<account_name>
-mv .apptainer /project/<your_project_dir>/<account_name>/
-chmod -R g+s /project/<your_project_dir>/<account_name>/.apptainer
-ln -s /project/<your_project_dir>/<account_name>/.apptainer .apptainer
-```
+|`APPTAINER_CACHEDIR`| Given the rebranding from Singularity to Apptainer, it's logical to infer that this environment variable serves a similar purpose for Apptainer as `SINGULARITY_CACHEDIR` did for Singularity. |
 
 <div class="warning" markdown="1">
 HPC admins might set default values for these variables to optimize system-wide performance or to prevent users from filling up specific filesystems with cache data. These defaults can be set in <u>global configuration files</u> or through module environments. When an admin sets these, users on the system will typically inherit these values automatically unless they override them.
 </div>
 
 In practice, it's always a good idea for users to check whether these variables are set by default on their HPC system and to be aware of how to set them if needed.
+
+### <b class="prefix-2"></b>*set* `CACHEDIR` *variable*
 
 **Check the current value** <br>
 To see what is currently set for these environment variables, you can use the `echo` command:
@@ -151,6 +149,44 @@ If you find yourself frequently setting these variables, you can add the `export
 Remember that setting these variables will direct Apptainer or Singularity to use the specified directory for caching. Make sure the path you provide <u>has enough space</u>, especially if you're pulling large images or frequently building containers. It's also wise to periodically clean up old cache files to free up space using the command `apptainer cache clean`.
 </div>
 
+
+<div class="warning" markdown="1">
+If a user doesn't manually set these variables and there's no default set by the admin, **the Apptainer will use its own default caching location, which is typically in the user's home directory** or a temporary directory. By default, without setting `$APPTAINER_CACHEDIR`, Apptainer might use a directory like `~/.apptainer` (in the user's home directory) for its cache, similar to how Singularity used `~/.singularity` by default.
+```
+ls -lha ~
+```
+<pre class="output plain mb-0">
+drwx------.    2 alex.badacz alex.badacz    2 Oct 31 20:26 <span class="c-example">.apptainer</span>
+<b class="prompt-2"></b>
+</pre>
+</div>
+
+### <b class="prefix-2"></b>*Move* `.apptainer` *dir outside* `home` *location*
+
+You can relocate the `.apptainer` directory from your `home` to a location without storage limits *(e.g.,* `/project` *path on SCINet clusters)*, and then create a symbolic link in your `home` pointing to the new location, ensuring that the cache remains accessible from the `home` directory without additional modifications.
+
+*For example, at Atlas or Ceres (SCINet clusters), you can do:*
+```bash
+cd ~
+mkdir /project/<your_project_dir>/<account_name>
+mv .apptainer /project/<your_project_dir>/<account_name>/
+chmod -R g+s /project/<your_project_dir>/<account_name>/.apptainer
+ln -s /project/<your_project_dir>/<account_name>/.apptainer .apptainer
+```
+*In my case it looked like this:*
+<code class="code-block bc-template">cd ~
+mkdir /project/isu_gif_vrsc/alex
+mv .apptainer /project/isu_gif_vrsc/alex
+chmod -R g+s /project/isu_gif_vrsc/alex/.apptainer
+ln -s /project/isu_gif_vrsc/alex/.apptainer .apptainer
+</code>
+
+<pre class="output">
+<b class="prompt-3"></b>ls -lha ~
+drwx------.    2 alex.badacz alex.badacz    2 Oct 31 20:28 <span style="color:cyan;">.apptainer</span> -> <span class="c-example">/project/isu_gif_vrsc/alex/.apptainer/</span>
+</pre>
+
+
 ## **Apptainer Commands**
 
 Apptainer *(formerly Singularity)* provides a variety of commands to manage and interact with containers.
@@ -169,12 +205,13 @@ where:
 * **[arguments]** are inputs or targets for the command.
 
 The `apptainer help` command gives an overview of Apptainer options and subcommands:
-```
+<pre class="output">
+<b class="prompt-3"></b><span class="c-gray">apptainer help</span>
 Linux container platform optimized for High Performance Computing (HPC) and
 Enterprise Performance Computing (EPC)
 
 Usage:
-  apptainer [global options...]
+  <span class="c-alert">apptainer</span> [global options...]
 
 Description:
   Apptainer containers provide an application virtualization layer enabling
@@ -183,48 +220,49 @@ Description:
   other Linux system where Apptainer is installed.
 
 Options:
-  -d, --debug     print debugging information (highest verbosity)
-  -h, --help      help for apptainer
-      --nocolor   print without color output (default False)
-  -q, --quiet     suppress normal output
-  -s, --silent    only print errors
-  -v, --verbose   print additional information
+  <span class="c-good">-d, --debug</span>     print debugging information (highest verbosity)
+  <span class="c-good">-h, --help</span>      help for apptainer
+      <span class="c-good">--nocolor</span>   print without color output (default False)
+  <span class="c-good">-q, --quiet</span>     suppress normal output
+  <span class="c-good">-s, --silent</span>    only print errors
+  <span class="c-good">-v, --verbose</span>   print additional information
 
 Available Commands:
-  build       Build an Apptainer image
-  cache       Manage the local cache
-  capability  Manage Linux capabilities for users and groups
-  exec        Run a command within a container
-  help        Help about any command
-  inspect     Show metadata for an image
-  instance    Manage containers running as services
-  key         Manage OpenPGP keys
-  oci         Manage OCI containers
-  plugin      Manage apptainer plugins
-  pull        Pull an image from a URI
-  push        Upload image to the provided URI
-  remote      Manage apptainer remote endpoints
-  run         Run the user-defined default command within a container
-  run-help    Show the user-defined help for an image
-  search      Search a Container Library for images
-  shell       Run a shell within a container
-  sif         siftool is a program for Singularity Image Format (SIF) file manipulation
-  sign        Attach a cryptographic signature to an image
-  test        Run the user-defined tests within a container
-  verify      Verify cryptographic signatures attached to an image
-  version     Show the version for Apptainer
+  <span class="c-example">build</span>       Build an Apptainer image
+  <span class="c-example">cache</span>       Manage the local cache
+  <span class="c-example">capability</span>  Manage Linux capabilities for users and groups
+  <span class="c-example">exec</span>        Run a command within a container
+  <span class="c-example">help</span>        Help about any command
+  <span class="c-example">inspect</span>     Show metadata for an image
+  <span class="c-example">instance</span>    Manage containers running as services
+  <span class="c-example">key</span>         Manage OpenPGP keys
+  <span class="c-example">oci</span>         Manage OCI containers
+  <span class="c-example">plugin</span>      Manage apptainer plugins
+  <span class="c-example">pull</span>        Pull an image from a URI
+  <span class="c-example">push</span>        Upload image to the provided URI
+  <span class="c-example">remote</span>      Manage apptainer remote endpoints
+  <span class="c-example">run</span>         Run the user-defined default command within a container
+  <span class="c-example">run-help</span>    Show the user-defined help for an image
+  <span class="c-example">search</span>      Search a Container Library for images
+  <span class="c-example">shell</span>       Run a shell within a container
+  <span class="c-example">sif</span>         siftool is a program for Singularity Image Format (SIF) file manipulation
+  <span class="c-example">sign</span>        Attach a cryptographic signature to an image
+  <span class="c-example">test</span>        Run the user-defined tests within a container
+  <span class="c-example">verify</span>      Verify cryptographic signatures attached to an image
+  <span class="c-example">version</span>     Show the version for Apptainer
 
 Examples:
-  $ apptainer help <command> [<subcommand>]
-  $ apptainer help build
-  $ apptainer help instance start
-
+  <b class="prompt-3"></b><span class="c-alert">apptainer</span> <span class="c-good">help</span> <span class="c-example">&lt;command> [&lt;subcommand>]</span>
+  <b class="prompt-3"></b><span class="c-alert">apptainer</span> <span class="c-good">help</span> <span class="c-example">build</span>
+  <b class="prompt-3"></b><span class="c-alert">apptainer</span> <span class="c-good">help</span> <span class="c-example">instance start</span>
 
 For additional help or support, please visit https://www.apptainer.org/docs/
-```
+</pre>
 
-Learn more about example commands and options fronm the official docs: <a href="https://apptainer.org/docs/user/latest/quick_start.html#overview-of-the-apptainer-interface" target="_blank">Overview of the Apptainer Interface</a>.
+<div class="more" markdown="1">
+...about example commands and options fronm the official docs: <a href="https://apptainer.org/docs/user/latest/quick_start.html#overview-of-the-apptainer-interface" target="_blank">Overview of the Apptainer Interface</a>.
+</div>
 
----
-
-**Dive into tutorials focused on specific tasks related to creating and managing containers;** even if they were crafted for Singularity, you can seamlessly adapt them by simply replacing the `singularity` keyword with `apptainer`. *The list of tutorials is provided below.*
+<div class="protip" markdown="1">
+**Dive into tutorials focused on specific tasks related to creating and managing containers;** even if they were crafted for Singularity, you can seamlessly adapt them by simply replacing the `singularity` keyword with `apptainer`. *The list of tutorials is provided [below](#further-reading).*
+</div>

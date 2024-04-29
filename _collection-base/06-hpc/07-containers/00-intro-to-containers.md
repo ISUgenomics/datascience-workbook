@@ -21,9 +21,18 @@ tags: []
 # Introduction
 
 ## What are Containers?
-At its core, container is a technology that enables you to package and run applications in isolated environments. A container image is a file that contains the application code, libraries, and dependencies required to run an application. It can be used directly via a container platform to run an application without installation. Containers are a form of operating system virtualization that allows multiple applications to run on a single host system.
+Containers are a form of operating system virtualization that allows multiple applications to run on a single host system. At its core, container is a technology that enables you to package and run applications in isolated environments.
 
-Containers are a powerful tool that are widely used in various fields including Genomics, High-performance Computing, and Machine Learning. For example, a researcher might use containers for doing a simple blast locally, or for running an entire genome assembly pipeline. This page provides an introduction to container technology and you can refer to the <a class="t-links" href="671.1">Apptainer (singularity rebranding)</a> and <a class="t-links" href="672.1">Docker</a> tutorial pages in this <a href="https://datascience.101workbook.org" target="_blank">workbook  ⤴</a> to get started with using containers with these platforms.
+<div class="note" markdown="1">
+A container image is a file that contains the application code, libraries, and dependencies required to run an application. It can be used directly via a container platform to run an application without installation.
+</div>
+
+Containers are a powerful tool that are widely used in various fields including Genomics, High-performance Computing and Machine Learning.
+<div class="example before" data-before="" markdown="1">
+For example, a researcher might use containers for doing a simple blast locally or for running an entire genome assembly pipeline.
+</div>
+
+*This page provides an introduction to container technology and you can refer to the <a class="t-links" href="671.1">Apptainer (singularity rebranding)</a> and <a class="t-links" href="672.1">Docker</a> tutorial pages in this <a href="https://datascience.101workbook.org" target="_blank">workbook  ⤴</a> to get started with using containers with these platforms.*
 <br>
 
 
@@ -39,22 +48,27 @@ Containers are a powerful tool that are widely used in various fields including 
 ## Container Platforms
 A container platform is a software platform that provides an environment for running and managing containerized applications. Some of these are also workflow management tools that are used to automate tasks, improve efficiency, and ensure consistency in processes.
 
-* <a class="t-links" href="671.2">Singularity (archival)</a> : is an open-source platform for high-performance computing clusters. It is designed to meet the specific needs of HPC, providing improved performance, security, and compatibility with HPC environments.
-* <a class="t-links" href="672.1">Docker</a> : is an open-source platform that automates the deployment of applications inside containers. It provides a way to package, deploy, and run applications in isolated environments using containers.
-* <a href="https://bioinformaticsworkbook.org/dataAnalysis/nextflow/01_introductionToNextFlow.html#gsc.tab=0" target="_blank"><b>Nextflow</b> ⤴</a>: is a workflow platform for automating data-driven pipelines. It provides a way to define and execute pipelines using a simple, high-level language, and provides built-in support for containers and cloud computing.
-* <a href="https://kubernetes.io/" target="_blank"><b>Kubernetes</b> ⤴</a>: is an open-source platform for automating the deployment, scaling, and management of containerized applications. It provides a unified platform for deploying, scaling, and managing containers, and provides a way to orchestrate and manage the entire container lifecycle.
-* Other tools used for containers include <a href="https://linuxcontainers.org/lxd/" target="_blank">LXD ⤴</a>, <a href="https://github.com/rkt/rkt" target="_blank">rkt ⤴</a>, <a href="https://podman.io/" target="_blank">Podman ⤴</a>, etc.
-<br>
+<table>
+  <tr><td><a class="t-links" href="671.2">Singularity</a>(archival)</td> <td>is an open-source platform for high-performance computing clusters. It is designed to meet the specific needs of HPC, providing improved performance, security, and compatibility with HPC environments.</td> </tr>
+  <tr><td><a class="t-links" href="672.1">Docker</a></td> <td>is an open-source platform that automates the deployment of applications inside containers. It provides a way to package, deploy, and run applications in isolated environments using containers.</td> </tr>
+  <tr><td><a href="https://bioinformaticsworkbook.org/dataAnalysis/nextflow/01_introductionToNextFlow.html#gsc.tab=0" target="_blank"><b>Nextflow</b> ⤴</a></td> <td>is a workflow platform for automating data-driven pipelines. It provides a way to define and execute pipelines using a simple, high-level language, and provides built-in support for containers and cloud computing.</td> </tr>
+  <tr><td><a href="https://kubernetes.io/" target="_blank"><b>Kubernetes</b> ⤴</a></td> <td>is an open-source platform for automating the deployment, scaling, and management of containerized applications. It provides a unified platform for deploying, scaling, and managing containers, and provides a way to orchestrate and manage the entire container lifecycle.</td> </tr>
+  <tr><td></td> <td>Other tools used for containers include <a href="https://linuxcontainers.org/lxd/" target="_blank">LXD ⤴</a>, <a href="https://github.com/rkt/rkt" target="_blank">rkt ⤴</a>, <a href="https://podman.io/" target="_blank">Podman ⤴</a>, etc.</td> </tr>
+</table>
 
 
 ## Virtual Machines vs Containers
-Virtual Machines (VMs) and Containers are software technologies that can be used to run software in isolated environments and manage applications. Container sofware examples like Docker were discussed above, some examples of VM software include VMWare, VirtualBox, Parallels Desktop, Citrix, and Hyper-V. VMs and containers differ in several key ways:
+Virtual Machines (VMs) and Containers are software technologies that can be used to run software in isolated environments and manage applications. Container sofware examples like Docker were discussed above, some examples of VM software include VMWare, VirtualBox, Parallels Desktop, Citrix, and Hyper-V.
 
-* <b>Resource Utilization</b>: Virtual machines run a complete OS for each application, which can consume a large amount of system resources such as memory and storage. In contrast, containers share the host operating system making them much more resource-efficient.
-* <b>Isolation</b>: VMs provide full isolation, as each machine has its own OS and file system. Containers provide process-level isolation, meaning they share the host OS kernel but have their isolated file system.
-* <b>Portability</b>: Containers are much more portable, as can run on any system that supports container runtime, compared to VMs which require a compatible hypervisor/Virtual Machine Monitor (VMM) to run.
-* <b>Start-up Time</b>: Virtual machines have longer start-up time, as they need to boot a complete OS but Containers do not need an OS boot.
-* <b>Scalability</b>: Containers are designed to be easily scalable, making it simple to add more resources to an application as it grows but Virtual machines can be more challenging to scale.
+**VMs and containers differ in several key ways:**
+
+<table>
+  <tr><th>Resource Utilization</th> <td>Virtual machines run a complete OS for each application, which can consume a large amount of system resources such as memory and storage. In contrast, containers share the host operating system making them much more resource-efficient.</td></tr>
+  <tr><th>Isolation</th> <td>VMs provide full isolation, as each machine has its own OS and file system. Containers provide process-level isolation, meaning they share the host OS kernel but have their isolated file system.</td></tr>
+  <tr><th>Portability</th> <td>Containers are much more portable, as can run on any system that supports container runtime, compared to VMs which require a compatible hypervisor/Virtual Machine Monitor (VMM) to run.</td></tr>
+  <tr><th>Start-up Time</th> <td>Virtual machines have longer start-up time, as they need to boot a complete OS but Containers do not need an OS boot.</td></tr>
+  <tr><th>Scalability</th> <td>Containers are designed to be easily scalable, making it simple to add more resources to an application as it grows but Virtual machines can be more challenging to scale.</td></tr>
+</table>
 
 In summary, containers offer a more resource-efficient and portable solution, with faster start-up times and easier scalability than virtual machines. However, virtual machines provide a higher level of isolation, as they run a complete operating system for each application. The choice between containers and virtual machines depends on the specific requirements of the application and the deployment environment.
 <br>
