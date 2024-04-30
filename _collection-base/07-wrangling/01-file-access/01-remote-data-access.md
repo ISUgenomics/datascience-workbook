@@ -26,14 +26,19 @@ Remote data access refers to the ability to **access data that is stored on a re
 To access remotely data stored on a HPC cluster, you need to log into a node within the cluster that has access to the data. You may need one or both tools (listed below) to log in to HPC system, depending on your location and your organization's network settings.
 
 * **VPN (Virtual Private Network)** <br>
-It could be required when you are in an **off-campus location**. <br>
-Learn more from the hands-on tutorial <a class="t-links" href="622"></a> provided in the <a class="t-links" href="600"></a> section of this workbook.
+It could be required when you are in an **off-campus location**.
+
+<div class="more level-1" markdown="1">
+...from the hands-on tutorial <a class="t-links" href="622"></a> provided in the <a class="t-links" href="600"></a> section of this workbook.
+</div>
 
 * **SSH (Secure Shell connection)** <br>
 It can be used **when you are already in the internal network**, i.e., when you are on campus or have a VPN connection to the organization's network. <br>
-Learn more from the hands-on tutorials available in the <a class="t-links" href="621">06. HPC / Remote access to HPC resources</a> section of this workbook:
+<div class="more level-1" markdown="1">
+...from the hands-on tutorials available in the <a class="t-links" href="621">06. HPC / Remote access to HPC resources</a> section of this workbook:
   * <a class="t-links" href="623"></a>
   * <a class="t-links" href="623.1"></a>
+</div>
 
 <div class="warning" markdown="1">
 Accessing data using VPN or SSH connection typically involves using a command-line interface (CLI), rather than a graphical user interface (GUI). To learn more about **command line** explore tutorials in the section <a class="t-links" href="300"></a>
@@ -48,7 +53,7 @@ You start by opening a <a class="t-links" href="310">terminal window</a> on your
 ```
 ssh username@remote_host
 ```
-*where `username` is your username on the remote machine and `remote_host` is the hostname or IP address of the remote machine.*
+*where* `username` *is your username on the remote machine and* `remote_host` *is the hostname or IP address of the remote machine.*
 
 You will be prompted to **enter your password** for the remote machine, and if the login is successful, you will be logged into the remote machine and have access to its file system as if the files were stored locally.
 
@@ -75,16 +80,20 @@ Some HPC systems may also provide web-based graphical interfaces for remotely ac
 <a href="https://openondemand.org" target="_blank">Open On-Demand  ⤴</a> is a web-based platform that provides **remote access to high-performance computing (HPC) resources**, such as supercomputers and large-scale clusters. It provides a **user-friendly interface** for accessing these resources **from a web browser**, without the need for complex software installations or command-line interfaces.
 </div>
 
-<span style="color: #ff3870;font-weight: 500;">Follow the hands-on tutorial</span> <a class="t-links" href="624">Open On Demand (OOD) Connection using web-based interface</a> to learn how to use different tools and features available in the OOD web interface of HPC systems.
-
+<div class="more" markdown="1">
+Follow the hands-on tutorial</span> <a class="t-links" href="624">Open On Demand (OOD) Connection using web-based interface</a> to learn how to use different tools and features available in the OOD web interface of HPC systems.
+</div>
 
 **QUICK GUIDE to OOD**
 
 You start by opening a web browser on your local machine and entering the URL to the website that hosts the OOD interface for a given HPC system, e.g.,
 
-* <a href="https://atlas-ood.hpc.msstate.edu/" target="_blank">https://atlas-ood.hpc.msstate.edu/  ⤴</a> for <a class="t-links" href="612.2" section="#open-ondemand-login">OOD access to Atlas</a> computing cluster of the <a class="t-links" href="612.1">SCINet Scientific Computing</a>
-* <a href="http://ceres-ood.scinet.usda.gov/" target="_blank">http://ceres-ood.scinet.usda.gov/  ⤴</a> <i>for <a href="https://scinet.usda.gov/guides/access/open-ondemand#open-ondemand-interface-guide" target="_blank">OOD access to Ceres  ⤴</a> computing cluster of the <a class="t-links" href="612.1">SCINet Scientific Computing</a>
-* <a href="http://nova-ondemand.its.iastate.edu/" target="_blank">http://nova-ondemand.its.iastate.edu/  ⤴</a> for <a href="https://www.hpc.iastate.edu/guides/open-ondemand" target="_blank">OOD access to Nova  ⤴</a> computing cluster of the <a class="t-links" href="613.1">ISU HPC Network</a>
+<table>
+  <tr> <th>OOD access</th> <th>computing cluster</th> <th>HPC infrastructure</th> </tr>
+  <tr> <td><a href="https://atlas-ood.hpc.msstate.edu/" target="_blank">https://atlas-ood.hpc.msstate.edu/</a></td> <td><a class="t-links" href="612.2" section="#open-ondemand-login">OOD access to Atlas  ⤴</a> (guide)</td> <td><a class="t-links" href="612.1">SCINet Scientific Computing</a></td> </tr>
+  <tr> <td><a href="http://ceres-ood.scinet.usda.gov/" target="_blank">http://ceres-ood.scinet.usda.gov/</a></td> <td><a href="https://scinet.usda.gov/guides/access/open-ondemand#open-ondemand-interface-guide" target="_blank">OOD access to Ceres  ⤴</a> (guide)</td> <td><a class="t-links" href="612.1">SCINet Scientific Computing</a></td> </tr>
+  <tr> <td><a href="http://nova-ondemand.its.iastate.edu/" target="_blank">http://nova-ondemand.its.iastate.edu/</a></td> <td><a href="https://www.hpc.iastate.edu/guides/open-ondemand" target="_blank">OOD access to Nova  ⤴</a> (guide)</td> <td><a class="t-links" href="613.1">ISU HPC Network</a></td> </tr>
+</table>
 
 You will be prompted to **enter your credentials** for the HPC system, and if the login is successful, you will be logged into the remote machine and have access to its file system and resources.
 
@@ -94,15 +103,18 @@ Note that **all you need is a web browser with internet connection**. You don't 
 
 You can then use web-based graphical interface to use remotely the available resources, including:
 
-* open virtual desktop environment
+* open **virtual desktop** environment
   * browse file system in graphical interface *(by clicking on the folders)*
-* open terminal or console to get a web-based command line access
+* open **terminal or console** to get a web-based command line access
   * browse file system in the command line interface
   * submit jobs to the queueing system
-* launch individual interactive applications that only work in the GUI *(e.g., JupyterLab, RStudio, specialistic software)*
-* submit jobs to the queueing system using job generator
+* launch individual interactive **applications** that only work in the GUI *(e.g., JupyterLab, RStudio, specialistic software)*
+* **submit jobs** to the queueing system using job generator
 
+<div class="note" markdown="1">
 Open On-Demand is designed to be scalable, secure, and flexible. By providing web-based access to these resources, OOD makes it easy for a wider range of users to take advantage of the power of HPC, without the need for the user to know the command line.
+</div>
+
 
 ## **3. Access data via web services**
 
@@ -123,7 +135,7 @@ Here's a simple explanation of how it works:
 
 This client-server communication happens over the internet, and the data is transmitted securely to protect it from unauthorized access. The communication is based on standardized protocols, such as HTTP, which ensure that the client and server can understand each other and exchange data in a consistent and reliable way.
 
-**How it works from the user's perspective?**
+***How it works from the user's perspective?***
 
 So in practice, accessing data stored on a remote system can be as simple as navigating to a web page and making a few selections and clicks through a web-based graphical interface. The user doesn't need to have any knowledge of the underlying technologies or protocols.
 
@@ -139,79 +151,84 @@ So in practice, accessing data stored on a remote system can be as simple as nav
 
 There are many different types of web services that can be used to exchange data between applications or systems over the World Wide Web. Some common examples include:
 
-### *A. Databases*
+### A. Databases
 
 Databases are systems used to store and manage data, and can be accessed through web services to retrieve data or perform data-related operations. Examples of databases include relational databases like MySQL and NoSQL databases like MongoDB.
 
 Here are a few examples of database services in science:
 
-* <b><a href="https://www.ensembl.org/" target="_blank">Ensembl  ⤴</a></b><br>
-<i>Ensembl is a web-based platform for genome analysis, providing access to a range of genomic data, including reference genomes, gene annotations, and comparative genomics data.</i>
+<table>
+  <tr> <td width="15%"><b><a href="https://www.ensembl.org/" target="_blank">Ensembl</a></b></td>
+       <td><i>Ensembl is a web-based platform for genome analysis, providing access to a range of genomic data, including reference genomes, gene annotations, and comparative genomics data.</i></td> </tr>
+  <tr> <td><b><a href="https://www.uniprot.org/" target="_blank">UniProt</a></b></td>
+       <td><i>UniProt is a web-based platform for protein analysis, providing access to a comprehensive database of protein information, as well as tools for sequence analysis and functional annotation.</i></td> </tr>
+  <tr> <td><b><a href="https://www.kegg.jp/" target="_blank">KEGG</a></b></td>
+       <td><i>KEGG (Kyoto Encyclopedia of Genes and Genomes) is a database that provides information about the biological pathways and molecular interactions in various organisms.</i></td> </tr>
+  <tr> <td><b><a href="https://www.rcsb.org/" target="_blank">PDB (RCSB)</a></b></td>
+       <td><i>A web-based platform for structural biology, providing access to a large database of protein structures (derived experimentally), as well as tools for structural analysis and visualization.</i></td> </tr>
+  <tr> <td><b><a href="https://alphafold.ebi.ac.uk" target="_blank">AlphaFold DB</a></b></td>
+       <td><i>AlphaFold Protein Structure Database collects over 200 million protein structure predictions by AlphaFold, the state-of-the-art AI system developed by DeepMind.</i></td> </tr>
+  <tr> <td class="no-border"><b><a href="http://biocomp.chem.uw.edu.pl/A3D2/hproteome" target="_blank">A3D Database</a></b></td>
+       <td class="no-border"><i>is a secondary database that provides the the analysis of solubility and aggregation properties for human protein structures from the AlphaFold Database.</i></td> </tr>
+</table>
 
-* <b><a href="https://www.uniprot.org/" target="_blank">UniProt  ⤴</a></b><br>
-<i>UniProt is a web-based platform for protein analysis, providing access to a comprehensive database of protein information, as well as tools for sequence analysis and functional annotation.</i>
 
-* <b><a href="https://www.kegg.jp/" target="_blank">KEGG  ⤴</a></b><br>
-<i>KEGG (Kyoto Encyclopedia of Genes and Genomes) is a database that provides information about the biological pathways and molecular interactions in various organisms.</i>
-
-* <b><a href="https://www.rcsb.org/" target="_blank">PDB (RCSB)  ⤴</a></b><br>
-<i>A web-based platform for structural biology, providing access to a large database of protein structures (derived experimentally), as well as tools for structural analysis and visualization.</i>
-
-* <b><a href="https://alphafold.ebi.ac.uk" target="_blank">AlphaFold DB  ⤴</a></b><br>
-<i>AlphaFold Protein Structure Database collects over 200 million protein structure predictions by AlphaFold, the state-of-the-art AI system developed by DeepMind.</i>
-  * <b><a href="http://biocomp.chem.uw.edu.pl/A3D2/hproteome" target="_blank">A3D Database  ⤴</a></b> <i>is a secondary database that provides the the analysis of solubility and aggregation properties for human protein structures from the AlphaFold Database.</i>
-
-### *B. Web Applications*
+### B. Web Applications
 
 Web applications are software applications that are accessible through a web browser and run on a server. Examples of web applications include online shopping platforms, social media platforms, and productivity tools like Google Docs. Web applications often use web services to exchange data with other systems or to retrieve data from a database.
 
 Here are a few examples of web application services in science:
 
-* <b><a href="https://galaxyproject.org/" target="_blank">Galaxy  ⤴</a></b><br>
-<i>Galaxy is a web-based platform for genomic data analysis that provides a comprehensive suite of tools for processing, visualizing, and analyzing large-scale genomic data.</i>
+<table>
+  <tr> <td width="15%"><b><a href="https://galaxyproject.org/" target="_blank">Galaxy  ⤴</a></b></td>
+       <td><i>Galaxy is a web-based platform for genomic data analysis that provides a comprehensive suite of tools for processing, visualizing, and analyzing large-scale genomic data.</i></td> </tr>
+  <tr> <td><b><a href="https://genepattern.org/" target="_blank">GenePattern  ⤴</a></b></td>
+       <td><i>GenePattern is a platform for computational biology that provides access to hundreds of analytical tools and pipelines for gene expression analysis, genomics, and proteomics.</i></td> </tr>
+  <tr> <td><b><a href="https://" target="_blank">Cytoscape  ⤴</a></b></td>
+       <td><i>Cytoscape is a web-based platform for network analysis and visualization that provides a suite of tools for exploring and analyzing complex biological networks.</i></td> </tr>
+  <tr> <td><b><a href="https://" target="_blank">MAPIYA  ⤴</a></b></td>
+       <td><i>Mapiya is acontact map server for identification and visualization of molecular interactions in proteins and biological complexes.</i></td> </tr>
+</table>
 
-* <b><a href="https://genepattern.org/" target="_blank">GenePattern  ⤴</a></b><br>
-<i>GenePattern is a platform for computational biology that provides access to hundreds of analytical tools and pipelines for gene expression analysis, genomics, and proteomics.</i>
 
-* <b><a href="https://" target="_blank">Cytoscape  ⤴</a></b><br>
-<i>Cytoscape is a web-based platform for network analysis and visualization that provides a suite of tools for exploring and analyzing complex biological networks.</i>
-
-* <b><a href="https://" target="_blank">MAPIYA  ⤴</a></b><br>
-<i>Mapiya is acontact map server for identification and visualization of molecular interactions in proteins and biological complexes.</i>
-
-
-### *C. RESTful Web Services*
+### C. RESTful Web Services
 
 This type of web service uses the Representational State Transfer (REST) architectural style and is based on the HTTP protocol. RESTful web services are designed to be lightweight and easy to use, and are often used for simple data exchange tasks such as retrieving information from a database or providing access to a web application.
 
-<b>RESTful web services are a popular choice in science because they are lightweight and easy to use, making them well-suited for simple data exchange tasks.</b> <i>For example, a researcher might use a RESTful web service to retrieve data from a database or to access a web application.</i>
+<div class="note plain" markdown="1">
+RESTful web services are a popular choice in science because they are lightweight and easy to use, making them well-suited for simple data exchange tasks.
+*For example, a researcher might use a RESTful web service to **retrieve data from a database** or to access a web application.*
+</div>
 
 
-### • *automatic data retrival*
+### *Automatic data retrival*
 
-While databases and online applications are explored by users primarily through a graphical web-based interface, those based on a RESTful approach also allow data retrieval from the command line.
-<span style="color: #ff3870;font-weight: 500;">
-So know that there is a more efficient method of downloading data from web services than manually.
-</span><br>
+<div class="protip" markdown="1">
+While databases and online applications are explored by users primarily through a graphical web-based interface, those based on a RESTful approach also allow data retrieval from the command line. **So, know that there is a more efficient method of downloading data from web services than manually.**
+</div>
 
 RESTful web services can be accessed from the command line using tools like `curl`, `wget`, or `httpie`. These tools allow you to **make HTTP requests from the terminal**, which can be useful for testing or automating interactions with the web service.
 
-<i>Let's say you want to retrieve information about a specific protein from the <b>UniProt database</b>. You can do this by sending a GET request to the UniProt RESTful web service API endpoint for the desired protein. For example, the endpoint for the protein with the accession number "P12345" would be "<a href="https://www.uniprot.org/uniprot/P12345.xml" target="_blank">https://www.uniprot.org/uniprot/P12345.xml</a>".</i>
+<div class="example" markdown="1">
+Let's say you want to retrieve information about a specific protein from the <a href="https://www.uniprot.org/" target="_blank">UniProt database</a>. You can do this by sending a GET request to the UniProt RESTful web service API endpoint for the desired protein. <br>
+*For example, the endpoint for the protein with the accession number **"P12345"** would be <a href="https://www.uniprot.org/uniprot/P12345.xml" target="_blank">https://www.uniprot.org/uniprot/P12345.xml</a>.*
 
-To access this information, you can use a tool like curl in the command line:
+To access this information, you can use a tool like `curl` in the command line:
 ```bash
 curl https://www.uniprot.org/uniprot/P12345.xml
 ```
-This will return an XML file with information about the protein, such as its amino acid sequence, function, and references to related data in other databases.
+*This will return an XML file with information about the protein, such as its amino acid sequence, function, and references to related data in other databases.*
+</div>
 
 <div class="protip" markdown="1">
 Note that this is just a basic example of accessing a **RESTful web service**. RESTful web services can support many other types of requests, such as `POST` and `DELETE`, and can provide data in different formats, such as `JSON`. The specifics of how to access a RESTful web service can vary depending on the specific web service and the desired data.
 </div>
 
-### *D. SOAP Web Services*
+
+### D. SOAP Web Services
 
 This type of web service uses the Simple Object Access Protocol (SOAP) and is typically used for more complex data exchange tasks, such as processing transactions or integrating with other systems. SOAP web services often rely on XML for encoding messages, and may use other protocols, such as SMTP, for transportation.
 
-### *E. Microservices*
+### E. Microservices
 
 Microservices are small, independent, and modular applications that can be combined to form a larger system. They are often used in web applications and can be accessed through web services to perform specific tasks or exchange data.
