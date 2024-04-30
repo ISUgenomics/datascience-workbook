@@ -18,9 +18,17 @@ tags: []
 {% include page-sourcing.html %}
 
 
-<span style="color: #ff3870;font-weight: 800;">NOTE:</span>
-In late 2021, **Singularity underwent a rebranding to Apptainer**, changing the command keyword from`singularity` to `apptainer`, though the majority of subsequent commands and options retained their functionality. <i>Learn more about the changes in the tutorial</i> <a class="t-links" href="671.1">Apptainer: the container system for secure HPC</a>
+# Introduction
 
+<div class="warning" markdown="1">
+In late 2021, **Singularity underwent a rebranding to Apptainer**, changing the command keyword from`singularity` to `apptainer`, though the majority of subsequent commands and options retained their functionality. <i>Learn more about the changes in the tutorial</i> <a class="t-links" href="671.1">Apptainer: the container system for secure HPC</a>.
+</div>
+
+<div class="note before" data-before="SCINet NOTE" markdown="1">
+**Apptainer is the recommended module** for container management, and SCINet users are advised to transition to it for enhanced functionality and support.
+</div>
+
+<div class="required" markdown="1">
 Before diving into container tasks on HPC infrastructure:
 * ensure you checked the available module using the commands:
 ```bash
@@ -29,17 +37,14 @@ module avail singularity
 ```
 * load a module of your choice:
 ```bash
-module load apptainer/<version>       # e.g., module load apptainer/1.1.9-py310-wsbt4ge
+module load apptainer/<version>       # e.g., module load apptainer/1.2.5
 ```
-* and consistently use the appropriate keyword for your commands *(in this example: apptainer)*.
+* and consistently use the appropriate keyword for your commands *(in this example:* `apptainer`*)*.
+</div>
 
-<span style="color: #ff3870;font-weight: 500;"><b>Apptainer is the recommended module</b> for container management, and users are advised to transition to it for enhanced functionality and support.</span>
+# Creating your own containers
 
-# Introduction
-
-**Creating your own Singularity containers.  What you need to know.**
-
-This tutorial will help you create your own Singularity container using a github, a recipe file and Singularity Hub.  It will also suggest a GitHub repo organization that will maximize a researcher's ability to utilize your scripts and pipelines in your repo.
+This tutorial will help you create your own Singularity container using a <a href="https://github.com/" target="_blank">Github</a>, a recipe file and DataLad.  It will also suggest a GitHub repo organization that will maximize a researcher's ability to utilize your scripts and pipelines in your repo.
 
 You will need:
 * A GitHub Repo [https://github.com/](https://github.com/)
