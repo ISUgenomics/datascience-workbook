@@ -23,13 +23,10 @@ tags: []
 Copying data using SSH (Secure Shell connection) provides a **secure way to transfer data between two computers**. The **data is encrypted while it is being transmitted**, providing protection against eavesdropping and tampering. By establishing an encrypted connection and verifying the identity of the user, SSH protocol ensures that the data is transmitted securely.
 
 **The data can be copied or synchronized between two computers** using a command line tools such as:
-* **`scp` (secure copy)**, recommended for transferring individual files [[go to the section](#scp-secure-copy)]
+* `scp` **(secure copy)**, recommended for transferring individual files [[go to the section](#scp-secure-copy)] or
+* `rsync` **(secure synchronization)**, recommended to update the differences between the corresponding directories [[go to the section](#rsync-secure-synchro)]
 
-or
-
-* **`rsync` (secure synchronization)**, recommended to update the differences between the corresponding directories [[go to the section](#rsync-secure-synchro)]
-
-## *What you need to start?*
+## *What you need to get started?*
 
 All you need is a terminal window providing the **command line interface and your access credentials** to the remote machine. Typically, these include:
 
@@ -45,18 +42,17 @@ A `hostname` is a label that is assigned to a computer on a network, and it is u
 * **ftp.example.com**, The hostname of the FTP server that serves files for the domain example.com.
 * **mail.example.com**, The hostname of the mail server that handles email for the domain example.com.
 * **192.168.1.100**, An IP address that is used to identify a computer on a local network.
-* **my-computer**>, A hostname that is assigned to a computer on a local network.
-
+* **my-computer**, A hostname that is assigned to a computer on a local network.
 </div>
 
 ## Command SYNTAX
 
-The command syntax for both command line tools, `scp` and `rsync`, are very similar and use similar components:
+The command syntax for both command line tools, `scp` and `rsync`, use similar components:
+<pre class="bc-template">
+scp &lt;source> &lt;destination>  or  rsync &lt;source> &lt;destination>
+</pre>
 
-`scp <source> <destination>`  or  `rsync <source> <destination>`
-
-*e.g.,* <br>
-
+*e.g.,*
 ```bash
 scp /local/directory/file.txt username@remote-hostname:/remote/directory/
 ```
@@ -72,10 +68,10 @@ scp /local/directory/file.txt username@remote-hostname:/remote/directory/
 <div class="protip" markdown="1">
 A file path is used to specify the location of a file or directory on the computer's file system. There are two types of file paths: absolute paths and relative paths.
 * **absolute path:** <br>
-An absolute path is a complete path to a file or directory that starts from the root directory of the file system. Absolute paths provide a complete and unambiguous reference to a file or directory, and they always **start with a** `/` **character**. <br>
+An absolute path is a complete path to a file or directory that starts from the root directory of the file system. Absolute paths provide a complete and unambiguous reference to a file or directory, and they always <b class="c-good">start with a</b> `/` character. <br>
 For example, `/home/user/documents/file.txt` is <u>an absolute path</u> to a file in a directory on the file system.
 * **relative path:** <br>
-A relative path, on the other hand, is a path to a file or directory that is relative to the current working directory. Relative paths do **NOT start with a** `/` **character**, and they are interpreted relative to the current working directory. <br>
+A relative path, on the other hand, is a path to a file or directory that is relative to the current working directory. Relative paths do <b class="c-bad">NOT start with a</b> `/` character, and they are interpreted relative to the current working directory. <br>
 For example, `./documents/file.txt` is <u>a relative path</u> to a file in a directory that is located in the current working directory.
   * current directory: `./`
   * one directory above: `../`
@@ -88,24 +84,26 @@ For example, `./documents/file.txt` is <u>a relative path</u> to a file in a dir
 
 **`scp` (secure copy) is a command line tool** for copying files between computers using SSH (Secure Shell) protocol for data transfer. It works by establishing an encrypted `ssh` connection between two computers and copying the data over this connection.
 
-<span style="color: #ff3870;font-weight: 500;">SCP is usually available on Linux and Mac in terminal, and on Windows 10 in Windows PowerShell.</span><br>
+<div class="note" markdown="1">
+SCP is usually available on Linux and Mac in terminal, and on Windows 10 in Windows PowerShell.
+</div>
 
 **Getting started:** <br>
-Open terminal window on your local machine and copy-paste the command example (provided below), while adjusting paths and credentials to your needs *(according to directions from the [Command SYNTAX](#command-syntax) section)*.
+Open terminal window <u>on your local machine</u> and copy-paste the command example *(provided below)*, while adjusting paths and credentials to your needs *(according to directions from the [Command SYNTAX](#command-syntax) section)*.
 
-### <i>Copy file: <b>local to remote</b></i>
+### *Copy file: **local to remote***
 
 ```bash
 scp /local/directory/file.txt username@remote-hostname:/remote/directory/
 ```
 
-### <i>Copy file: <b>remote to local</b></i>
+### *Copy file: **remote to local***
 
 ```bash
 scp username@remote-hostname:/remote/directory/file.txt /local/directory/
 ```
 
-### <i>Copy a directory</i>
+### *Copy a directory*
 
 If you want to copy the entire directory, use the `scp -r` command, where the `-r` flag tells copy the directory and its contents recursively.
 
@@ -128,71 +126,77 @@ Admins of some HPC systems, e.g. <a class="t-links" href="612.1">SCINet Scientif
 If you decide to use `scp` to transfer directories to **Ceres cluster** follow the instructions provided at <a href="https://scinet.usda.gov/guides/data/datatransfer#small-data-transfer-using-scp-and-rsync" target="_blank">SCINet website: Small Data Transfer Using scp  ⤴</a>.
 </div>
 
-### Example Options
 
-<i>To learn more about scp command and all available options <b>type “man scp”</b> in the command line.</i>
+### <button class="btn example">SCP Common Usage Options</button>
+
+<button class="btn more mr"></button> *...about* `scp` *command and all available options from the* `man scp` *command.*
 
 Here are some options most commonly used with the `scp` command:
 
-* `-r` - **Recursively copy** the entire contents of a directory, including subdirectories and files.
-* `-v` - **Verbose output.** Display the progress of the transfer and any error messages.
-* `-P 8080` - **Specify the port** to use for the connection, *8080* is just an example.
-* `-C` - **Compression** during transfer.
-* `-q` - **Quiet mode.** Suppress output, including error messages.
+| option    | description                                                                                  |
+|-----------|----------------------------------------------------------------------------------------------|
+| `-r`      | **Recursively copy** the entire contents of a directory, including subdirectories and files. |
+| `-v`      | **Verbose output.** Display the progress of the transfer and any error messages.             |
+| `-P 8080` | **Specify the port** to use for the connection, *8080* is just an example.                   |
+| `-C`      | **Compression** during transfer.                                                             |
+| `-q`      | **Quiet mode.** Suppress output, including error messages.                                   |
 
-<details><summary><b>Example 1:</b> Recursively copy a directory and its contents</summary>
+<details class="mt" markdown="1"><summary><p markdown="1">**Example 1:** Recursively copy a directory and its contents</p></summary>
 
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
+```bash
 scp -r ~/data user@example-hostname:~/backup
-</code><br>
+```
 </details>
 
-<details><summary><b>Example 2:</b> Display verbose output during the transfer</summary>
+<details markdown="1"><summary><p markdown="1">**Example 2:** Display verbose output during the transfer</p></summary>
 
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
+```bash
 scp -v ~/data user@example-hostname:~/backup
-</code><br>
+```
 </details>
 
-<details><summary><b>Example 3:</b> Specify the port to use for the connection</summary>
+<details markdown="1"><summary><p markdown="1">**Example 3:** Specify the port to use for the connection</p></summary>
 
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
+```bash
 scp -p 8080 ~/data user@example-hostname:~/backup
-</code><br>
+```
 </details>
 
-<details><summary><b>Example 4:</b> Enable data compression during transfer</summary>
+<details markdown="1"><summary><p markdown="1">**Example 4:** Enable data compression during transfer</p></summary>
 
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
+```bash
 scp -C ~/data user@example-hostname:~/backup
-</code><br>
+```
 </details>
 
-<details><summary><b>Example 5:</b> Suppress output, including error messages</summary>
+<details markdown="1"><summary><p markdown="1">**Example 5:** Suppress output, including error messages</p></summary>
 
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
+```bash
 scp -q ~/data user@example-hostname:~/backup
-</code><br>
-</details><br>
+```
+</details>
 
 
 # RSYNC (secure synchro)
 
-**`rsync` (secure synchronization) is a command line tool** for efficiently transferring and synchronizing files between computers using SSH (Secure Shell) protocol for data transfer. It works by establishing an encrypted `ssh` connection between two computers and copying the data over this connection. This tool is commonly used for backup, data replication, and file distribution.
+`rsync` **(secure synchronization) is a command line tool** for efficiently transferring and synchronizing files between computers using SSH (Secure Shell) protocol for data transfer. It works by establishing an encrypted `ssh` connection between two computers and copying the data over this connection. This tool is commonly used for backup, data replication, and file distribution.
 
 <div class="note" markdown="1">
+RSYNC is usually available on Linux and Mac in terminal, and on Windows 10 in Windows PowerShell.
+</div>
+
+<div class="protip" markdown="1">
 `rsync` works by comparing the source and destination files and only transferring the differences, making it **much more efficient than other file transfer tools**, such as `cp` or `scp`, when the source and destination files are similar. This makes rsync particularly useful **for transferring large files or large collections of files** that change only slightly over time, as it can significantly reduce the amount of data that needs to be transferred. <base class="mb">
-In addition to its efficiency, rsync also **provides a number of features** that make it a versatile tool for file transfer and synchronization, such as:
+</div>
+
+In addition to its efficiency, `rsync` also **provides a number of features** that make it a versatile tool for file transfer and synchronization, such as:
 * support for preserving file permissions and attributes,
 * excluding files based on patterns,
 * and transferring files over an encrypted ssh connection.
-</div>
-
-<span style="color: #ff3870;font-weight: 500;">RSYNC is usually available on Linux and Mac in terminal, and on Windows 10 in Windows PowerShell.</span><br>
 
 
 **Getting started:** <br>
-Open terminal window on your local machine and copy-paste the command example (provided below), while adjusting paths and credentials to your needs *(according to directions from the [Command SYNTAX](#command-syntax) section)*.
+Open terminal window <u>on your local machine</u> and copy-paste the command example *(provided below)*, while adjusting paths and credentials to your needs *(according to directions from the [Command SYNTAX](#command-syntax) section)*.
 
 The general syntax for synchronization requires to provide the source and destination locations. You can synchronize locations on a single machine or between different computers.
 ```bash
@@ -204,95 +208,103 @@ It can be practical to use the `rsync` command with `-avz` flags:
 * `-v` -  provides verbose output
 * `-z` - compresses the data during transfer
 
-<span style="color: #ff3870;font-weight: 500;">On the first transfer with <code>rsync</code> all data will be copied, while on future uses only the differences will be updated.</span>
+<div class="note" markdown="1">
+On the first transfer with <code>rsync</code> all data will be copied, while on future uses only the differences will be updated.
+</div>
 
-### <i>Synchronize <b>local to remote</b></i>
+
+### *Synchronize **local to remote***
 
 ```bash
 rsync -avz /local/directory username@remote-hostname:/remote/directory
 ```
 
-### <i>Synchronize <b>remote to local</b></i>
+### *Synchronize **remote to local***
 
 ```bash
 rsync -avz username@remote-hostname:/remote/directory /local/directory
 ```
 
-### <i>Synchronize <b>File or Dir</b></i>
+### *Synchronize **File or Dir***
 
-<b>Example 1:</b> if you wanted to **synchronize the file** `file.txt` stored in your home directory (`~/`) from your local computer to a remote computer with the hostname `example-hostname` and place it in the directory `~/backup`, you could run the following command:
+If you wanted to **synchronize the file** `file.txt` stored in your home directory (`~/`) from your local computer to a remote computer with the hostname `example-hostname` and place it in the directory `~/backup`, you could run the following command:
 
 ```bash
 rsync ~/file.txt user@example-hostname:~/backup
 ```
 
-<b>Example 2:</b> if you wanted to **synchronize the directory** `~/data` from your local computer to a remote computer with the hostname `example-hostname` and place it in the directory `~/backup`, you could run the following command:
+If you wanted to **synchronize the directory** `~/data` from your local computer to a remote computer with the hostname `example-hostname` and place it in the directory `~/backup`, you could run the following command:
 
 ```bash
 rsync -avz ~/data user@example-hostname:~/backup
 ```
-*Using -avz* flags will also 1) preserve file attributes, 2) provide verbose output, and 3) compress the data during transfer.
+<div class="protip" markdown="1">
+Using -avz flags will also:
+1. preserve file attributes, &emsp; 2. provide verbose output, &emsp; 3. compress the data during transfer.
+</div>
 
 
-### Example Options
+### <button class="btn example">RSYNC Common Usage Options</button>
 
-<i>To learn more about scp command and all available options <b>type “man rsync”</b> in the command line.</i>
+<button class="btn more"></button> *...about* `rsync` *command and all available options from the* `man rsync` *command.*
 
 Here are some options most commonly used with the `rsync` command:
 
-* `-a` - **Archive mode.** A shorthand for a set of options that preserve file attributes such as permissions, ownership, timestamps, and symbolic links.
-* `-v` - **Verbose output.** Display the progress of the transfer and a list of the files being transferred.
-* `-z` - **Compress** the data during transfer.
-* `-r` - **Recursively copy** the entire contents of a directory, including subdirectories and files.
-* `-n` - **Dry run.** Perform a test run without actually transferring any files.
-* `-u` - **Update only.** Transfer only files that are newer on the source than on the destination.
-* `--exclude='*.log'` - **Exclude files** or directories from the transfer based on a pattern, *'*.log'* is an example value for the option.
+| option              | description                                                                                         |
+|---------------------|-----------------------------------------------------------------------------------------------------|
+| `-a`                | **Archive mode.** A shorthand for a set of options that preserve file attributes such as permissions, ownership, timestamps, and symbolic links. |
+| `-v`                | **Verbose output.** Display the progress of the transfer and a list of the files being transferred. |
+| `-z`                | **Compress** the data during transfer.                                                              |
+| `-r`                | **Recursively copy** the entire contents of a directory, including subdirectories and files.        |
+| `-n`                | **Dry run.** Perform a test run without actually transferring any files.                            |
+| `-u`                | **Update only.** Transfer only files that are newer on the source than on the destination.          |
+| `--exclude='*.log'` | **Exclude files** or directories from the transfer based on a pattern, *'*.log'* is an example value for the option. |
 
-<details><summary><b>Example 1:</b> Transfer files in archive mode</summary>
+<details class="mt" markdown="1"><summary><p markdown="1">**Example 1:** Transfer files in archive mode</p></summary>
 
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
+```bash
 rsync -a ~/data user@example-hostname:~/backup
-</code><br>
+```
 </details>
 
-<details><summary><b>Example 2:</b> Display verbose output during the transfer</summary>
+<details markdown="1"><summary><p markdown="1">**Example 2:** Display verbose output during the transfer</p></summary>
 
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
+```bash
 rsync -v ~/data user@example-hostname:~/backup
-</code><br>
+```
 </details>
 
-<details><summary><b>Example 3:</b> Compress the data during transfer</summary>
+<details markdown="1"><summary><p markdown="1">**Example 3:** Compress the data during transfer</p></summary>
 
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
+```bash
 rsync -z ~/data user@example-hostname:~/backup
-</code><br>
+```
 </details>
 
-<details><summary><b>Example 4:</b> Recursively copy a directory and its contents</summary>
+<details markdown="1"><summary><p markdown="1">**Example 4:** Recursively copy a directory and its contents</p></summary>
 
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
+```bash
 rsync -r ~/data user@example-hostname:~/backup
-</code><br>
+```
 </details>
 
-<details><summary><b>Example 5:</b> Perform a dry run without transferring any files</summary>
+<details markdown="1"><summary><p markdown="1">**Example 5:** Perform a dry run without transferring any files</p></summary>
 
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
+```bash
 rsync -n ~/data user@example-hostname:~/backup
-</code><br>
+```
 </details>
 
-<details><summary><b>Example 6:</b> Update only files that are newer on the source than on the destination</summary>
+<details markdown="1"><summary><p markdown="1">**Example 6:** Update only files that are newer on the source than on the destination</p></summary>
 
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
+```bash
 rsync -u ~/data user@example-hostname:~/backup
-</code><br>
+```
 </details>
 
-<details><summary><b>Example 6:</b> Exclude files or directories based on a pattern</summary>
+<details markdown="1"><summary><p markdown="1">**Example 7:** Exclude files or directories based on a pattern</p></summary>
 
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
+```bash
 rsync --exclude='*.log' ~/data user@example-hostname:~/backup
-</code><br>
+```
 </details>
