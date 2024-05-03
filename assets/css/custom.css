@@ -92,6 +92,7 @@ h4 {font-size: 1em; font-weight: 500; letter-spacing: 0.1em;}
 .pl-0 {padding-left:0;}
 .pr-2 {padding-right: 2em;}
 .pl-2 {padding-left: 2em;}
+.pl-d {padding-left: 1.6em;}
 
 .mb {margin-bottom: 0.6em !important; display: block;}
 .mt {margin-top: 1.5em !important; display: block;}
@@ -100,6 +101,7 @@ h4 {font-size: 1em; font-weight: 500; letter-spacing: 0.1em;}
 .mt-0 {margin-top: 0 !important;}
 .mb-0 {margin-bottom: 0 !important;}
 .mr {margin-right: 1em !important;}
+.ml {margin-left: 1em !important;}
 
 .no-decoration {text-decoration: none !important;}
 .plain {font-style: normal !important;}
