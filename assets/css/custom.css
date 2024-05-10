@@ -1,16 +1,16 @@
 /* variables */
 :root {
   --bc-warning: mistyrose;
-  --bc-protip: #cff4fc;
+  --bc-protip: #d5f1f7; /*#cff4fc;*/
   --bc-note: #dff5b3;
   --bc-example: #FFFACD;
   --bc-exercise: #ffd7b5;
-  --bc-code: #f7f7f7;
+  --bc-code: #ececec; /*#f7f7f7;*/
   --bc-data: #e3edee;
   --bc-template: #d9d9e3;
   --c-text: #494e52;
-  --c-gray: #c2c6d3;
-  --c-boxdark: #2a4960;
+  --c-gray: #6b7597; /*#c2c6d3;*/
+  --c-boxdark: #224158; /*#2a4960;*/
   --c-boxlink: #52adc8; /*#7dc2d6;*/
   --c-required: #8744db; /*#ab68ff;*/
   --c-alert: #ff3870;
@@ -160,7 +160,7 @@ p.pros, p.cons {margin-bottom: 0;}
 .note::before {content: var(--custom-before, "NOTE"); color: var(--c-note);}
 .example::before {content: var(--custom-before, "EXAMPLE"); color: var(--c-example);}
 .exercise::before {content: var(--custom-before, "EXERCISE"); color: var(--c-exercise);}
-.output::before {content: var(--custom-before, "EXPECTED OUTPUT"); color: var(--c-gray); font-size: 0.9em !important; position: absolute; top: 0.4em; right: 1em;}
+.output::before {content: var(--custom-before, "EXPECTED OUTPUT"); color: #a5b0d1; font-size: 0.9em !important; position: absolute; top: 0.4em; right: 1em;}
 .more::before {content: var(--custom-before, "LEARN MORE"); color: var(--c-alert); font-size: 1em !important;}
 .required::before {content: var(--custom-before, "REQUIRED"); color: var(--c-required); font-size: 1em !important;}
 
@@ -254,7 +254,7 @@ pre {
   padding-bottom: 2px;
   z-index: 10;
   font-size: 0.65em;
-  color: var(--b-darkgray);
+  color: var(--c-text);
   border: 1px solid var(--b-darkgray);
 }
 
@@ -311,8 +311,8 @@ pre {
 
 #copyOrderBtn {
   font-size: 0.6em;
-  color: #e8e9e8;
-  border: 1px solid #e8e9e8;
+  color: #d8ddd8;
+  border: 1px solid #edf0ed;
   background-color: transparent;
   padding: 0 10px;
 }
@@ -359,8 +359,8 @@ toc-note {
 .prefix-4::before {content: "⊙ \00a0\00a0\00a0";}
 .prefix-4 {margin-left: 64px;}
 
-.prompt-1::before {content: var(--custom-before, ">>>  "); color: var(--c-gray);}
-.prompt-2::before {content: var(--custom-before, "...  "); color: var(--c-gray);}
+.prompt-1::before {content: var(--custom-before, ">>>  "); color: #a5b0d1;}
+.prompt-2::before {content: var(--custom-before, "...  "); color: #a5b0d1;}
 .prompt-3::before {content: var(--custom-before, "$:  "); color: var(--c-pros);}
 .prompt-4::before {content: var(--custom-before, "!:  "); color: var(--c-exercise);}
 
@@ -452,14 +452,14 @@ table {
 
 th, thead {
   background-color: var(--bc-code);
-  border-bottom: 2px solid var(--c-gray);
+  border-bottom: 2px solid #d7dadc; /*#bababa;*/
   text-transform: uppercase;
   font-style: italic;
-  color: #9a9faf;
+  color: #676a6d;
 }
 
 td {
-  border-bottom: 1px solid var(--c-gray);
+  border-bottom: 1px solid #e4e6e7;
 }
 
 img {
