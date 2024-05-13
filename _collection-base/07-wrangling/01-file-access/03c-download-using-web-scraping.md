@@ -110,14 +110,14 @@ jupyter lab
 </div>
 
 
-##  • *Python*
+## *Python*
 
 Python is a popular high-level **programming language** that is good for web scraping due to its simplicity, readability, availability of powerful libraries and tools, and ability to handle a variety of data formats.
 
-<details><summary><b>Python Installation:</b></summary>
+<details markdown="1"><summary><b>Python Installation:</b></summary>
 
-1. Go to the Python official website at <a href="https://www.python.org/downloads/" target="_blank">https://www.python.org/downloads/  ⤴</a> <br>
-2. Download the latest version of Python for your operating system and architecture. <br>
+1. Go to the Python official website at <a href="https://www.python.org/downloads/" target="_blank">https://www.python.org/downloads/  ⤴</a>
+2. Download the latest version of Python for your operating system and architecture.
 3. Run the installer and follow the installation wizard.
 <div class="protip" markdown="1">
 If you run into trouble, go to the practical tutorials of this workbook in section <a class="t-links" href="230">03. Setting Up Computing Machine: Various methods of software installation</a> which will show you step-by-step how to install Python on a given operating system.
@@ -125,7 +125,7 @@ If you run into trouble, go to the practical tutorials of this workbook in secti
 </details>
 
 
-##  • *urllib*
+## *urllib*
 
 The **urllib** is a Python library that provides a simple and powerful **interface for working with URLs**, allowing you to make HTTP requests and handle the response data, making it a useful tool for web scraping.
 
@@ -136,35 +136,35 @@ import urllib
 It provides several modules for working with URLs, including `urllib.request`, `urllib.parse`, and `urllib.error`.
 
 
-##  • *requests*
+## *requests*
 
 This library is used to **send HTTP requests** and handle responses in Python. It provides a user-friendly interface for making requests and handling the response data. `requests` is not included in the standard library and needs to be installed separately.
 
-<details><summary><b>Requests Installation:</b></summary>
+<details markdown="1"><summary><b>Requests Installation:</b></summary>
 
-1. Open a terminal or command prompt. <br>
-2. Type the following command to install requests: <br>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
+1. Open a terminal or command prompt.
+2. Type the following command to install requests:
+```bash
 pip install requests
-</code>
+```
 </details>
 
 
-##  • *BeautifulSoup*
+## *BeautifulSoup*
 
 This library is used to **extract data from HTML and XML documents**. It provides a simple and intuitive interface to parse HTML and XML and extract the data you need. `BeautifulSoup` is not included in the standard library and needs to be installed separately.
 
-<details><summary><b>BeautifulSoup Installation:</b></summary>
+<details markdown="1"><summary><b>BeautifulSoup Installation:</b></summary>
 
-1. Open a terminal or command prompt. <br>
-2. Type the following command to install BeautifulSoup: <br>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
+1. Open a terminal or command prompt.
+2. Type the following command to install BeautifulSoup:
+```bash
 pip install beautifulsoup4
-</code>
+```
 </details>
 
 
-##  • *selenium*
+## *selenium*
 
 This library is used to automate web browsers and simulate user interactions with web pages. It can be used to **scrape dynamic websites** that require user interactions to load data. Many modern websites are dynamic, with **content being loaded and rendered in real-time**, making web scraping a more challenging task. `selenium` is not included in the standard library and needs to be installed separately.
 
@@ -191,7 +191,7 @@ pip install webdriver_manager
 </details>
 
 
-##  • *pandas*
+## *pandas*
 
 This library is used for **data manipulation and analysis**. It provides a powerful data structure for handling tabular data and various functions for data cleaning and preprocessing. `pandas` is not included in the standard library and needs to be installed separately.
 
@@ -202,13 +202,12 @@ This library is used for **data manipulation and analysis**. It provides a power
 ```bash
 pip install pandas
 ```
-</details><br>
+</details>
 
----
+<div class="required mt" markdown="1">
+**That's it!** <span class="c-required">Once you've installed these libraries, you're ready to start web scraping in Python.</span>
+</div>
 
-<span style="color: #ff3870;font-weight: 500;"> That's it! Once you've installed these libraries, you're ready to start web scraping in Python.</span>
-
----
 
 ## **Create web scraping script**
 
@@ -251,49 +250,55 @@ One way to determine if a website is dynamic is to inspect the page's HTML sourc
 </div>
 
 **Background of the story:** <br>
-<i>In this practical tutorial, we will <b>use web scraping to extract names and URLs of third-party software</b> employed by a <a href="https://biapss.chem.iastate.edu" target="_blank">BIAPSS  ⤴</a> web service during the bioinformatics analysis of protein sequences that undergo liquid-liquid phase separation (LLPS). This information is particularly useful <b>for those who want to follow the backend pipeline</b> of the web service and download <b>and install all the tools required</b>. Manually deriving this information from the web service documentation can be time-consuming and tedious, but with web scraping, we can quickly and <b>easily retrieve the data and present it in a well-structured table</b> that includes the tool name, URL, and citation record.</i>
+*In this practical tutorial, we will <b>use web scraping to extract names and URLs of third-party software</b> employed by a <a href="https://biapss.chem.iastate.edu" target="_blank">BIAPSS  ⤴</a> web service during the bioinformatics analysis of protein sequences that undergo liquid-liquid phase separation (LLPS). This information is particularly useful **for those who want to follow the backend pipeline** of the web service and download **and install all the tools required**. Manually deriving this information from the web service documentation can be time-consuming and tedious, but with web scraping, we can quickly and **easily retrieve the data and present it in a well-structured table** that includes the tool name, URL and citation record.*
 
-<span style="color: #ff3870;font-weight: 500;">This tutorial will guide you through scraping the dynamic website and data parsing using Python</span>, <b>selenium, and webdriver for a Chrome browser</b>. This exercise will equip you with the necessary skills to extract and manipulate data from dynamic websites and web services.
+## <button class="btn exercise mr"></button>Web scrap the BIAPSS web service *(dynamic)*
 
-**STEP 1. Find the fragment of the web resource from which you want to retrieve the data**
+**This tutorial will guide you through scraping the dynamic website and data parsing using Python**, selenium, and webdriver for a Chrome browser. This exercise will equip you with the necessary skills to extract and manipulate data from dynamic websites and web services.
 
-Before starting the web scraping process, the first step is to navigate to the web service in a browser and locate the representative subpage that contains the data that you want to extract. This subpage could be a documentation page, a results page, or any other page that includes the data you need.
-
-<i>In this case, we first open the BIAPSS web service and navigate to the **Docs** tab available at <a href="https://biapss.chem.iastate.edu/documentation.html" target="_blank">https://biapss.chem.iastate.edu/documentation.html  ⤴</a>. From the menu panel on the left-hand side select **Tools & References** section. Its content appears in the right-hand panel on the page.<br>
-The backend bioinformatics analysis of the web service employed over 20 third-party tools to provide a high-level insights of the phase separation process. Each tool has a short description with a URL to the source page linked to the software name. We can also easily obtain software-related publications in one go.</i>
+<div class="exercise before font-1" data-before="" markdown="1">
+**STEP 1. Find the fragment of the web resource from which you want to retrieve the data** <br>
+Before starting the web scraping process, the first step is to navigate to the web service in a browser and locate the representative subpage that contains the data that you want to extract. This subpage could be a documentation page, a results page or any other page that includes the data you need.
+</div>
+*In this case, we first open the BIAPSS web service and navigate to the **Docs** tab available at <a href="https://biapss.chem.iastate.edu/documentation.html" target="_blank">https://biapss.chem.iastate.edu/documentation.html  ⤴</a>. From the menu panel on the left-hand side select **Tools & References** section. Its content appears in the right-hand panel on the page.<br>
+The backend bioinformatics analysis of the web service employed over 20 third-party tools to provide a high-level insights of the phase separation process. Each tool has a short description with a URL to the source page linked to the software name. We can also easily obtain software-related publications in one go.*
 
 ![01-python_web_scraping.png]({{ images_path }}/01-python_web_scraping.png)
 
-**STEP 2. Use developers tools in your browser to find the HTML component that stores the data**
-
+<div class="exercise before font-1" data-before="" markdown="1">
+**STEP 2. Use developers tools in a browser to find the HTML component with data** <br>
 It's important to carefully browse the website and identify the relevant subpage, as this will **determine which HTML elements and attributes you need to target** during the web scraping process. Once you have located the subpage, you can begin the process of inspecting its HTML structure to identify the elements that contain the desired data.
-
-<i>In this case, right-click on the link for the example tool (e.g., "PSPredictor") and select <b>Inspect Element</b> from the pop-up dialog box. This will open a separate browser window with the HTML source code of the web page. By default, the code corresponding to the selected text will be highlighted.</i>
+</div>
+*In this case, right-click on the link for the example tool (e.g., "PSPredictor") and select **Inspect Element** from the pop-up dialog box. This will open a separate browser window with the HTML source code of the web page. By default, the code corresponding to the selected text will be highlighted.*
 
 ![01-python_web_scraping_inspect.png]({{ images_path }}/01-python_web_scraping_inspect.png)
 
-**STEP 3. Look for an attribute that is the same for all data elements you want to extract**
-
-You will be lucky if the data you want to retrieve is located in regular HTML elements and the web page is well-structured. Regular HTML elements such as paragraphs, headings, tables, and lists are easy to identify and target using web scraping tools like *BeautifulSoup* or *Selenium*. However, not all web pages are well-structured or have data that is easily accessible through regular HTML elements. In some cases, the data may be hidden behind more complex JavaScript code.
-
-*In this case, the data we want to derive is located in a regular HTML components `<a>Tool Name</a>` used to hyperlink the text. You can notice several more links tags in between but only software links are preceded by a single `<br>` tag. Such a seemingly small element but distributed regularly increases the technical structure of the code and its identification can significantly facilitate data retrieval. However, it would be even simpler if this group of links had a specific HTML `class` attribute assigned to it.*
+<div class="exercise before font-1 mb-0" data-before="" markdown="1">
+**STEP 3. Look for an attribute that is the same for all data elements you want to extract** <br>
+You will be lucky if the data you want to retrieve is located in regular HTML elements and the web page is well-structured. Regular HTML elements such as paragraphs, headings, tables, and lists are easy to identify and target using web scraping tools like *BeautifulSoup* or *Selenium*.
+</div>
+<div class="warning" markdown="1">
+However, not all web pages are well-structured or have data that is easily accessible through regular HTML elements. In some cases, the data may be hidden behind more complex JavaScript code.
+</div>
+*In this case, the data we want to derive is located in a regular HTML components* `<a>Tool Name</a>` *used to hyperlink the text. You can notice several more links tags in between but only software links are preceded by a single* `<br>` *tag. Such a seemingly small element but distributed regularly increases the technical structure of the code and its identification can significantly facilitate data retrieval. However, it would be even simpler if this group of links had a specific HTML* `class` *attribute assigned to it.*
 
 ![01-python_web_scraping_html.png]({{ images_path }}/01-python_web_scraping_html.png)
 
-**STEP 4. Since the site can be scraped, create a dedicated script**
-
+<div class="exercise before font-1 mb-0" data-before="" markdown="1">
+**STEP 4. Since the site can be scraped, create a dedicated script** <br>
 Once you assessed the website is feasible to scrape, you can start developing a dedicated web scraping script. This script will be tailored to this specific website and the data that we want to extract. Also, it's essential to monitor the website for changes and update the web scraping script accordingly to ensure that it continues to work effectively if you want to retrieve the data updates regularly.
-
+</div>
 <div class="warning" markdown="1">
 It's important to note that this **script is likely not to be transferable** to other websites or pages, as the structure of the HTML and the location of the relevant data will likely differ from site to site. Additionally, the **website may be updated or changed by its developers**, causing the web scraping script to become outdated and ineffective.
 </div>
 
-
-<span style="color: #ff3870;font-weight: 500;">This step assumes you have the web scraping software installed!</span> <br>
-<b>For this example, you need: python3, selenium, webdriver_manager </b><br>
+<div class="required" markdown="1">
+This step assumes you have the web scraping software installed! <br>
+**For this exercise, you need: python3, selenium, webdriver_manager.** <base class="mb">
 For the installation instructions see section [Install requirements](#install-requirements).
+</div>
 
-**STEP A:** Retrieve software names and corresponding URLs
+<span class="bc-exercise pa-m">**STEP A:** Retrieve software names and corresponding URLs</span>
 
 SCRIPT file: `scrap_biapps_web_service.py`
 ```python
@@ -319,34 +324,42 @@ print("\n\nTOOL : URL\n")
         print(i, ":", DATA[i])
 ```
 
-<details markdown="1"><summary>An explanation of what the script does...</summary>
+<details class="l-frame mb" markdown="1"><summary class="c-header"><b><i>What the script does?</i></b></summary>
 
-<br>0. Create a Python script file, e.g., <i>scrap_biapps_web_service.py</i>
-<br>1. Import all necessary libraries
+1. Create a Python script file, e.g., `scrap_biapps_web_service.py`
+
+2. Import all necessary libraries
 ```python
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 ```
-<br>2. Activate the webdriver for your web browser. In this example, we use the Chrome browser, but you can adjust the script for other supported browsers, including Edge, Firefox, IE, and Safari. <br>[<a href="https://www.selenium.dev/documentation/webdriver/browsers/" target="_blank"> learn more at selenium.dev  ⤴</a> ]
+
+3. Activate the webdriver for your web browser. In this example, we use the Chrome browser, but you can adjust the script for other supported browsers, including Edge, Firefox, IE, and Safari. [<a href="https://www.selenium.dev/documentation/webdriver/browsers/" target="_blank"> learn more at selenium.dev  ⤴</a>]
 ```python
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 ```
-<br>3. Send a request to the website and get the WebElement with the text content you want to retrieve.
-<br><i>In this example we want to find an HTML element with an ID='tab17'. We know which ID it is because we have identified this element in the developer's tool 'Inspect Element' as an external container where descriptions of all software are stored (see steps 2 and 3 above).
-<br>This step returns a list of WebElements that match the query. Since only one 'tab17' exists, the first element [0] on the list (in Python, indexing starts from 0) is what we want.</i>
+
+4. Send a request to the website and get the WebElement with the text content you want to retrieve. <br>
+*In this example we want to find an HTML element with an* `ID='tab17'`. *We know which ID it is because we have identified this element in the developer's tool 'Inspect Element' as an external container where descriptions of all software are stored (see steps 2 and 3 above).* <br>
+*This step returns a list of WebElements that match the query. Since only one 'tab17' exists, the first element [0] on the list (in Python, indexing starts from 0) is what we want.*
 ```python
 driver.get('https://biapss.chem.iastate.edu/documentation.html')
 content = driver.find_elements(By.ID, 'tab17')[0]
 ```
+    <pre class="output">
+<b class="prompt-1"></b>print(content)
+&lt;selenium.webdriver.remote.webelement.WebElement (session="0f69ba1669a5c18cc0b93d4313a10f8a",
+                                                     element="f.8A907391AAF7D1548417A3592D33ED12.d.CAE2DB9FF9CBDF9D6F2963AB3D40E3D4.e.2312")&gt;
+    </pre>
+    <div class="protip" markdown="1">
+You can **find elements** on the website **by** several **HTML attributes**, including: <br>ID, NAME, XPATH, LINK_TEXT, PARTIAL_LINK_TEXT, TAG_NAME, CLASS_NAME, and CSS_SELECTOR. <br>
+[<a href="https://selenium-python.readthedocs.io/locating-elements.html" target="_blank"> learn more at selenium-python.readthedocs.io  ⤴</a>]
+    </div>
 
-<div class="protip" markdown="1">
-You can **find elements** on the website **by** several `HTML attributes`, including: <br>ID, NAME, XPATH, LINK_TEXT, PARTIAL_LINK_TEXT, TAG_NAME, CLASS_NAME, and CSS_SELECTOR. <br>[<a href="https://selenium-python.readthedocs.io/locating-elements.html" target="_blank"> learn more at selenium-python.readthedocs.io  ⤴</a> ]
-</div>
-
-<br>4. From the content, select all WebElements that are a link using <b>(By.TAG_NAME, 'a')</b> query and parse these elements to extract the <b>textContent</b> <i>(tool name)</i> and <b>href</b> attribute <i>(tool link)</i> of all the software with the one-word tool name.
-<br><i>Since the page text contains many more links, not only for tools' source code (single orange words) but also for related publications (pale yellow publication titles), we first filter out all links that have "textContent" of the link longer than a single word. Then for every record, we add an entry to the DATA dictionary where the key is the tool name, and the value is the URL (i.e., href attribute).</i>
+5. From the content, select all WebElements that are a link using **(By.TAG_NAME, 'a')** query and parse these elements to extract the `textContent` *(tool name)* and `href` attribute *(tool link)* of all the software with the one-word tool name. <br>
+*Since the page text contains many more links, not only for tools' source code (single orange words) but also for related publications (pale yellow publication titles), we first filter out all links that have* `textContent` *of the link longer than a single word. Then for every record, we add an entry to the DATA dictionary where the key is the tool name, and the value is the URL (i.e., href attribute).*
 ```python
 DATA = {}
 tool = ''
@@ -356,74 +369,72 @@ for i in content.find_elements(By.TAG_NAME, 'a'):
         DATA[tool] = i.get_attribute("href")
 ```
 
-<br>5. Finally, we print the DATA dictionary to display the retrieved information on the screen in the format TOOL : URL.
+6. Finally, we print the DATA dictionary to display the retrieved information on the screen in the format TOOL : URL.
 ```python
 print("\n\nTOOL : URL\n")
 for i in DATA:
     print(i, ":", DATA[i])
 ```
-</details><br>
+</details>
 
-**Run script in the terminal:**
 
+**Run script in the terminal:** <br>
 ```bash
 python scrap_biapps_web_service.py
 ```
+<pre class="output">
+TOOL : URL
+PSPredictor : http://www.pkumdl.cn:8000/PSPredictor
+SEG : ftp://ftp.ncbi.nih.gov/pub/seg/seg/
+fLPS : http://biology.mcgill.ca/faculty/harrison/flps.html
+CAST2 : http://structure.biol.ucy.ac.cy/CAST2/help.html
+SIMPLE : https://github.com/john-hancock/SIMPLE-V6
+HMMER3.3 : http://hmmer.org/
+PSIPRED : http://bioinf.cs.ucl.ac.uk/psipred/
+RAPTOR-X : http://raptorx.uchicago.edu/
+PORTER-5 : http://distilldeep.ucd.ie/porter/
+SPIDER-3 : https://sparks-lab.org/server/spider3/
+FESS : http://protein.bio.unipd.it/fells/
+PaleAle5.0 : http://distilldeep.ucd.ie/paleale/quickhelp.html
+SPOT-1D : https://sparks-lab.org/server/spot-1d/
+IUPred2A : https://iupred2a.elte.hu/
+DISOPRED3 : http://bioinf.cs.ucl.ac.uk/web_servers/psipred_server/disopred_overview/
+SPOT-Disorder2 : https://sparks-lab.org/server/spot-disorder/
+VSL2 : http://www.dabi.temple.edu/disprot/readmeVSL2.htm
+PONDR : http://www.pondr.com/
+PONDR-FIT : http://original.disprot.org/pondr-fit.php
+RAPTORX-Contact : http://raptorx.uchicago.edu/
+ResPRE : https://zhanglab.ccmb.med.umich.edu/ResPRE/
+SPOT-Contact : https://sparks-lab.org/server/spot-contact/
+ELM : http://elm.eu.org/elms
+LARKS : https://science.sciencemag.org/content/359/6376/698
+GAR : https://doi.org/10.1016/j.jmb.2018.06.014
+phosphosites : https://doi.org/10.3390/ijms20215501
+</pre>
 
-**Expected OUTPUT:**
+<p class="bc-exercise pa-m mt" markdown="1">**STEP B:** Retrieve publications with URLs and match them with the tools</p>
 
-<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size: 0.8em;">
-<br>TOOL : URL
-<br>PSPredictor : http://www.pkumdl.cn:8000/PSPredictor
-<br>SEG : ftp://ftp.ncbi.nih.gov/pub/seg/seg/
-<br>fLPS : http://biology.mcgill.ca/faculty/harrison/flps.html
-<br>CAST2 : http://structure.biol.ucy.ac.cy/CAST2/help.html
-<br>SIMPLE : https://github.com/john-hancock/SIMPLE-V6
-<br>HMMER3.3 : http://hmmer.org/
-<br>PSIPRED : http://bioinf.cs.ucl.ac.uk/psipred/
-<br>RAPTOR-X : http://raptorx.uchicago.edu/
-<br>PORTER-5 : http://distilldeep.ucd.ie/porter/
-<br>SPIDER-3 : https://sparks-lab.org/server/spider3/
-<br>FESS : http://protein.bio.unipd.it/fells/
-<br>PaleAle5.0 : http://distilldeep.ucd.ie/paleale/quickhelp.html
-<br>SPOT-1D : https://sparks-lab.org/server/spot-1d/
-<br>IUPred2A : https://iupred2a.elte.hu/
-<br>DISOPRED3 : http://bioinf.cs.ucl.ac.uk/web_servers/psipred_server/disopred_overview/
-<br>SPOT-Disorder2 : https://sparks-lab.org/server/spot-disorder/
-<br>VSL2 : http://www.dabi.temple.edu/disprot/readmeVSL2.htm
-<br>PONDR : http://www.pondr.com/
-<br>PONDR-FIT : http://original.disprot.org/pondr-fit.php
-<br>RAPTORX-Contact : http://raptorx.uchicago.edu/
-<br>ResPRE : https://zhanglab.ccmb.med.umich.edu/ResPRE/
-<br>SPOT-Contact : https://sparks-lab.org/server/spot-contact/
-<br>ELM : http://elm.eu.org/elms
-<br>LARKS : https://science.sciencemag.org/content/359/6376/698
-<br>GAR : https://doi.org/10.1016/j.jmb.2018.06.014
-<br>phosphosites : https://doi.org/10.3390/ijms20215501
-</code><br>
+<div class="protip" markdown="1">
+For step B, you can either modify the existing script (`scrap_biapps_web_service.py`), create a new one (`scrap_biapps_web_service_complete.py`) or initiate an interactive Python session in the terminal by entering `python` command and pasting all code snippets there.
+</div>
 
-**STEP B:** Retrieve publications with URLs and match them with the tools
-
-New sections in the Python script: <br>
- • Create list of publications <br>
- • Match Publications with a corresponding tool
-
-
-<code style="background-color: #d9d9e3; padding: 10px 10px; width:100%; display: block; margin-top: 10px;"><br>
-from selenium import webdriver <br>
-from selenium.webdriver.chrome.service import Service <br
-from webdriver_manager.chrome import ChromeDriverManager <br>
-from selenium.webdriver.common.by import By <br>
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install())) <br>
-driver.get('https://biapss.chem.iastate.edu/documentation.html') <br>
-content = driver.find_elements(By.ID, 'tab17')[0] <br>
+<code class="code-block bc-template">from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.common.by import By
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+driver.get('https://biapss.chem.iastate.edu/documentation.html')
+content = driver.find_elements(By.ID, 'tab17')[0]
 </code>
 
+Having the code snippet *(above)* for the **driver** and **content**, we can add next sections in the Python script to:
+* create a list of publications
+* match publications with a corresponding tool
+
 ```python
-## Create list of publications ##
+## Create list of publications
 elements = content.get_attribute("innerHTML").split('<br><br>')
-to_remove = ['<b>', '</b>', '<i>', '</i>', '<p>', '</p>', '\t', '</a>', 'target="_blank"', 'style="color:#F3
-E0BE;"']
+to_remove = ['<b>', '</b>', '<i>', '</i>', '<p>', '</p>', '\t', '</a>', 'target="_blank"', 'style="color:#F3E0BE;"']
 citations = []
 for e in elements:
     if "CITE:" in e:
@@ -436,95 +447,107 @@ for e in elements:
                 citations.append(cite.split('href=')[1])
 ```
 
-<details><summary>An explanation of what the script does...</summary>
+<details class="l-frame mb" markdown="1"><summary class="c-header"><b><i>What the script does?</i></b></summary>
 
-<br>As you notice, we add the block of code just below the <b>content</b> that stores the contents of the right panel of the documentation tab of the BIAPSS website once the "Tools & References" button (in the menu of the left panel) is clicked. The task is to retrieve publication records with corresponding links and keep them on the list as clean records (i.e., with all HTML tags removed). <br>
+As you notice, we add the block of code just below the **content** that stores the contents of the right panel of the documentation tab of the BIAPSS website once the "Tools & References" button (in the menu of the left panel) is clicked. The task is to retrieve publication records with corresponding links and keep them on the list as clean records (i.e., with all HTML tags removed). <br>
 
-<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size: 0.8em;">
-  &lt;br&gt;&lt;b&gt;CITE: &lt;/b&gt; &lt;a href="https://www.sciencedirect.com/science/article/pii/009784859385006X" target="_blank"  style="color:#F3E0BE;"&gt; <br>
-  &nbsp;&nbsp;&nbsp;Statistics of local complexity in amino acid sequence and sequence database.</a> Wootton, J.C. and Federhen, S., <br>
-  &nbsp;&nbsp;&nbsp;&lt;i&gt;Comput. Chem. 17149–163&lt;/i&gt;, 1993.
-</code>
+An example `elem` should look like this:
+<pre class="output" markdown="1">
+<b class="prompt-1">print(elements[2])</b>
+     &ltbr>&ltb>CITE: &lt;/b> &lt;a href="https://www.sciencedirect.com/science/article/pii/009784859385006X" target="_blank" style="color:#F3E0BE;">
+                                      Statistics of local complexity in amino acid sequence and sequence database.&lt;/a>
+                                      Wootton, J.C. and Federhen, S., &lt;i>Comput. Chem. 17149–163&lt;/i>, 1993.
+</pre>
 
-<br>transform the above to get the below:<br>
+And, opertations in the loops transform the above to get the below:
 
-<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size: 0.8em;">
-  "https://www.sciencedirect.com/science/article/pii/009784859385006X" : Statistics of local complexity in amino acid sequence and sequence database.</a> Wootton, J.C. and Federhen, S., Comput. Chem. 17149–163, 1993.
-</code>
+<pre class="output" markdown="1">
+<b class="prompt-1">print(citations[2])</b>
+   "https://www.sciencedirect.com/science/article/pii/009784859385006X" : Statistics of local complexity in amino acid sequence and sequence database. Wootton, J.C. and Federhen, S., Comput. Chem. 17149–163, 1993.
+</pre>
+***How to do that?***
+1. First, transform the WebElement object to plain HTML code (i.e., get website textContent while keeping all innerHTML tags). We need this form of content to extract URLs <i>(HTML href attribute)</i> to the publications which are not visible in the website interface (i.e., textContent). However, this means we must remove all unnecessary HTML tags stored in the <b>to_remove</b> list, to get cleansed publication records.
+    ```python
+    elements = content.get_attribute("innerHTML").split('<br><br>')
 
-<br>1. First, transform the WebElement object to plain HTML code (i.e., get website textContent while keeping all innerHTML tags). We need this form of content to extract URLs <i>(HTML href attribute)</i> to the publications which are not visible in the website interface (i.e., textContent). However, this means we must remove all unnecessary HTML tags stored in the <b>to_remove</b> list, to get cleansed publication records.
+    to_remove = ['<b>', '</b>', '<i>', '</i>', '<p>', '</p>', '\t', '</a>', 'target="_blank"', 'style="color:#F3E0BE;"']
+    ```
+    Now, **elements** is a list of text strings full of various HTML tags *(see to_remove list)*. Each string on the list corresponds to the single tool and may look like this:
+    <pre class="output">
+<b class="prompt-1">print(elements[2])</b>
+&lt;span>&lt;b>Low-Complexity Regions (LCRs)&lt;/b>&lt;/span>
+                             &lt;br>&lt;a href="ftp://ftp.ncbi.nih.gov/pub/seg/seg/" target="_blank">SEG&lt;/a> is a sequence-based tool for detecting LCRs within protein sequences.
+                                 SEG identifies the LCR, and then performs local optimization by masking with Xs the low-complexity regions within the protein sequence.
+                             &lt;br>SEG is available as a &lt;a href="ftp://ftp.ncbi.nih.gov/pub/seg/seg/" target="_blank">command-line tool&lt;/a>.
+                             &lt;br>&lt;b>CITE: &lt;/b> &lt;a href="https://www.sciencedirect.com/science/article/pii/009784859385006X" target="_blank" style="color:#F3E0BE;">
+                                       Statistics of local complexity in amino acid sequence and sequence database.&lt;/a> Wootton, J.C. and Federhen, S.,
+                                       &lt;i>Comput. Chem. 17149–163&lt;/i>, 1993.
+    </pre>
 
-<code style="background-color: #e6f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size: 0.8em;">
-elements = content.get_attribute("innerHTML").split('&lt;br&gt;&lt;br&gt;') <br>
-to_remove = ['&lt;b&gt;', '&lt;/b&gt;', '&lt;i&gt;', '&lt;/i&gt;', '&lt;p&gt;', '&lt;/p&gt;', '\t', '&lt;/a&gt;', 'target="_blank"', 'style="color:#F3
-E0BE;"']
-</code>
-
-<br>Now, <b>elements</b> is a list of text strings full of various HTML tags <i>(see to_remove list)</i>. Each string on the list corresponds to the single tool and may look like this:
-
-<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size: 0.8em;">
-&lt;br&gt;&lt;a href="ftp://ftp.ncbi.nih.gov/pub/seg/seg/" target="_blank"&gt;SEG&lt;/a&gt; is a sequence-based tool for detecting LCRs within protein sequences. <br>
-&nbsp;&nbsp;&nbsp; SEG identifies the LCR, and then performs local optimization by masking with Xs the low-complexity regions within the protein sequence. <br>
-&nbsp;&nbsp;&nbsp; &lt;br&gt;SEG is available as a &lt;a href="ftp://ftp.ncbi.nih.gov/pub/seg/seg/" target="_blank">command-line tool&lt;/a&gt;. <br>
-&nbsp;&nbsp;&nbsp; &lt;br&gt;&lt;b&gt;CITE: &lt;/b&gt; &lt;a href="https://www.sciencedirect.com/science/article/pii/009784859385006X" target="_blank" style="color:#F3E0BE;"&gt; <br>
-&nbsp;&nbsp;&nbsp; Statistics of local complexity in amino acid sequence and sequence database.\</a> Wootton, J.C. and Federhen, S., <br>
-&nbsp;&nbsp;&nbsp; &lt;i&gt;Comput. Chem. 17149–163&lt;/i&gt;, 1993.
-</code>
-
-<br>2. We will use Python to parse these text strings to extract clear URL : PUBLICATION records.
-
-<code style="background-color: #e6f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size: 0.8em;">
-for e in elements: <br>
-&nbsp;&nbsp;&nbsp; if "CITE:" in e: <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; elem = e.split("CITE:")[-1] <br>
-</code>
-
-While iterating elements:
-<li>first, select only those that contain the "CITE:" keyword</li>
-<li>then split the string by this keyword and keep only the last [-1] part of the string, i.e., the part corresponding to publications</li>
-
-<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size: 0.8em;">
+2. We will use Python to parse these text strings to extract clear `URL : PUBLICATION` records.
+    ```python
+    for e in elements:
+        if "CITE:" in e:
+            elem = e.split("CITE:")[-1]
+    ```
+    While iterating elements:
+    * first, select only those that contain the "CITE:" keyword
+    * then split the string by this keyword and keep only the last [-1] part of the string, i.e., the part corresponding to publications.
+    <pre class="output">
+<b class="prompt-1">print(elem)</b>
 &lt;/b&gt; &lt;a href="https://www.sciencedirect.com/science/article/pii/009784859385006X" target="_blank" style="color:#F3E0BE;"&gt;
 Statistics of local complexity in amino acid sequence and sequence database.</a> Wootton, J.C. and Federhen, S.,
 &lt;i&gt;Comput. Chem. 17149–163&lt;/i&gt;, 1993.
-</code>
-<br>
-<li>This part of the string is stored in the <b>elem</b> variable now. Remove all HTML tags from it by iterating the <i>to_remove</i> list:</li>
-
-<code style="background-color: #e6f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size: 0.8em;">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for tag in to_remove: <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; elem = elem.replace(tag, '')
-</code>
-
-<br>You should get something like this:
-
-<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size: 0.8em;">
+    </pre>
+    *This part of the string is stored in the* `elem` *variable now.* <base class="mb">
+    Remove all HTML tags from it by iterating the `to_remove` list:
+    ```python
+    for tag in to_remove:
+        elem = elem.replace(tag, '')
+    ```
+    You should get something like this:
+    <pre class="output">
+<b class="prompt-1">print(elem)</b>
 &lt;a href="https://www.sciencedirect.com/science/article/pii/009784859385006X"  &gt;
     Statistics of local complexity in amino acid sequence and sequence database. Wootton, J.C. and Federhen, S.,
     Comput. Chem. 17149–163, 1993.
+    </pre>
+
+3. In the next step, we replace multiple white characters with a single space and split by `<br>` publications for a single tool to create a separate record for each. Now, the `elem` becomes a list of individual publication records.
+    ```python
+    elem = ' '.join(elem.split()).split('<br>')
+    ```
+    <pre class="output">
+<b class="prompt-1">print(elem)</b>
+['&lt;a href="https://www.sciencedirect.com/science/article/pii/009784859385006X" > Statistics of local complexity in amino acid sequence and sequence database. Wootton, J.C. and Federhen, S., Comput. Chem. 17149–163, 1993.']
+    </pre>
+
+4. Finally, once we make sure the publication record contains an HTML attribute `href` storing the URL, we append such a record to the citation list, which will be used later to match publication records with a tool.
+    ```python
+    for cite in elem:
+        if "href" in cite:
+            citations.append(cite.split('href=')[1])
+    ```
+    <pre class="output">
+<b class="prompt-1">print(elem)</b>
+'"https://www.sciencedirect.com/science/article/pii/009784859385006X" > Statistics of local complexity in amino acid sequence and sequence database. Wootton, J.C. and Federhen, S., Comput. Chem. 17149–163, 1993.'
+    </pre>
+</details>
+
+
+So, we have publications with URLs sored in the **citations** list. And, we also have the previously created code snippet that creates dictionary `DATA` with tools as keys:
+
+<code class="code-block bc-template">DATA = {}
+tool = ''
+for i in content.find_elements(By.TAG_NAME, 'a'):
+    if len(i.get_attribute("textContent").split()) < 2:
+        tool = i.get_attribute("textContent")
+        DATA[tool] = [i.get_attribute("href"), []]
 </code>
 
-<br>3. In the next step, we replace multiple white characters with a single space and split by <b>'&lt;br&gt;'</b> publications for a single tool to create a separate record for each. Now, the <b>elem</b> becomes a list of individual publication records.
-
-<code style="background-color: #e6f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size: 0.8em;">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; elem = ' '.join(elem.split()).split('&lt;br&gt;')
-</code><br>
-
-Finally, once we make sure the publication record contains an HTML attribute *href* storing the URL, we append such a record to the citation list, which will be used later to match publication records with a tool.
-<br><hr>
-</details><br>
-
-<code style="background-color: #d9d9e3; padding: 10px 10px; width:100%; display: block; margin-top: 10px;">
-<br>DATA = {}
-<br>tool = '' <br>
-for i in content.find_elements(By.TAG_NAME, 'a'): <br>
- &emsp; &emsp; if len(i.get_attribute("textContent").split()) < 2: <br>
- &emsp; &emsp; &emsp; &emsp; tool = i.get_attribute("textContent") <br>
- &emsp; &emsp; &emsp; &emsp; DATA[tool] = [i.get_attribute("href"), []] <br>
-</code>
-
+Below, we insert a condition within the same `for` loop that will match the publictation to the tool:
 ```python
-    ## Match Publications with a tool ##
+    ## Match Publications with a tool
     elif tool != '':
         cite = ' '.join(i.get_attribute("textContent").split())
         for item in citations:
@@ -533,43 +556,88 @@ for i in content.find_elements(By.TAG_NAME, 'a'): <br>
                 break
 ```
 
-<details><summary>An explanation of what the script does...</summary>
+<details class="l-frame mb" markdown="1"><summary class="c-header"><b><i>What the script does?</i></b></summary>
 
-<br>While iterating over all links in the page content, once the <i>textContent</i> does not correspond to the tool, it is considered a publication record, parsed in the <b>elif</b> statement. First, we take the <i>textContent</i> and create the cleansed string stored in the <b>cite</b> variable to use as a search query in the <b>citation</b> list. Once found, the matching item from the citation list is added as a second field in the value of the tool key in the DATA dictionary.
-<br>
-<br>Now you are ready to print on the screen all data retrieved in the new format <br>TOOL : URL : PUBLICATIONS.
-<br><hr>
-</details><br>
+While iterating over all links in the page content, once the *textContent* does not correspond to the tool, it is considered a publication record, parsed in the `elif` statement. First, we take the *textContent* and create the cleansed string stored in the **cite** variable to use as a search query in the **citation** list. Once found, the matching item from the **citation** list is added as a second field `DATA[tool][1]` in the value of the tool key in the DATA dictionary.
+</details>
 
+Now you are ready to print on the screen all data retrieved in the new format: <br>`TOOL : URL : PUBLICATIONS`.
 ```python
 print("\n\nTOOL : URL : PUBLICATIONS\n")
-    for i in DATA:
-        print('\n', i, ":", DATA[i][0])
-        for j in DATA[i][1]:
-            print("  - ", j.replace('>', ': '))
+for i in DATA:
+    print('\n', i, ":", DATA[i][0])
+    for j in DATA[i][1]:
+        print("  - ", j.replace('>', ': '))
 ```
 
 **Run in the terminal:**
-
 ```bash
-python scrap_biapps_web_service.py
+python scrap_biapps_web_service_complete.py
 ```
 
-**Expected OUTPUT:**
+<details class="l-frame mb" markdown="1"><summary class="c-header"><b><i>see the complete script...</i></b>&emsp;<i>(if necessary)</i>)</summary>
 
-<code style="background-color: #e8e9e8; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size: 0.8em;">
-<br>TOOL : URL : PUBLICATIONS
-<br>PSPredictor : http://www.pkumdl.cn:8000/PSPredictor
-<br>  -  "https://doi.org/10.1101/842336" :  Prediction of liquid-liquid phase separation proteins using machine learning. T. Sun, Q. Li, Y. Xu, Z. Zhang, L. Lai, J. Pei., in press, 2019.
-<br>
-<br>SEG : ftp://ftp.ncbi.nih.gov/pub/seg/seg/
-<br>  -  "https://www.sciencedirect.com/science/article/pii/009784859385006X" :  Statistics of local complexity in amino acid sequence and sequence database. Wootton, J.C. and Federhen, S., Comput. Chem. 17149–163, 1993.
-<br>
-<br>fLPS : http://biology.mcgill.ca/faculty/harrison/flps.html
-<br>  -  "https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-017-1906-3" :  fLPS: Fast discovery of compositional biases for the protein universe. Harrison, P.M., BMC Bioinformatics, 18(1):476, 2017.
-<br>
-<br>CAST2 : http://structure.biol.ucy.ac.cy/CAST2/help.html
-<br>  -  "https://academic.oup.com/bioinformatics/article/16/10/915/223582" :  CAST: an iterative algorithm for the complexity analysis of sequence tracts. Promponas, V.J. et al., Bioinformatics, 16(10), 915–922, 2000.
-<br>
-<br>[...]
-</code><br>
+SCRIPT file: `scrap_biapps_web_service_complete.py`
+```python
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.common.by import By
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+driver.get('https://biapss.chem.iastate.edu/documentation.html')
+content = driver.find_elements(By.ID, 'tab17')[0]
+
+## Create list of publications
+elements = content.get_attribute("innerHTML").split('<br><br>')
+to_remove = ['<b>', '</b>', '<i>', '</i>', '<p>', '</p>', '\t', '</a>', 'target="_blank"', 'style="color:#F3E0BE;"']
+citations = []
+for e in elements:
+    if "CITE:" in e:
+        elem = e.split("CITE:")[-1]
+        for tag in to_remove:
+            elem = elem.replace(tag, '')
+        elem = ' '.join(elem.split()).split('<br>')
+        for cite in elem:
+            if "href" in cite:
+                citations.append(cite.split('href=')[1])
+
+DATA = {}
+tool = ''
+for i in content.find_elements(By.TAG_NAME, 'a'):
+    if len(i.get_attribute("textContent").split()) < 2:
+        tool = i.get_attribute("textContent")
+        DATA[tool] = [i.get_attribute("href"), []]
+
+    ## Match Publications with a tool
+    elif tool != '':
+        cite = ' '.join(i.get_attribute("textContent").split())
+        for item in citations:
+            if cite in item and item not in DATA[tool][1]:
+                DATA[tool][1].append(item)
+                break
+
+print("\n\nTOOL : URL : PUBLICATIONS\n")
+for i in DATA:
+    print('\n', i, ":", DATA[i][0])
+    for j in DATA[i][1]:
+        print("  - ", j.replace('>', ': '))
+```
+</details>
+
+<pre class="output">
+TOOL : URL : PUBLICATIONS
+
+PSPredictor : http://www.pkumdl.cn:8000/PSPredictor
+  -  "https://doi.org/10.1101/842336" :  Prediction of liquid-liquid phase separation proteins using machine learning. T. Sun, Q. Li, Y. Xu, Z. Zhang, L. Lai, J. Pei., in press, 2019.
+
+SEG : ftp://ftp.ncbi.nih.gov/pub/seg/seg/
+  -  "https://www.sciencedirect.com/science/article/pii/009784859385006X" :  Statistics of local complexity in amino acid sequence and sequence database. Wootton, J.C. and Federhen, S., Comput. Chem. 17149–163, 1993.
+
+fLPS : http://biology.mcgill.ca/faculty/harrison/flps.html
+  -  "https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-017-1906-3" :  fLPS: Fast discovery of compositional biases for the protein universe. Harrison, P.M., BMC Bioinformatics, 18(1):476, 2017.
+
+CAST2 : http://structure.biol.ucy.ac.cy/CAST2/help.html
+  -  "https://academic.oup.com/bioinformatics/article/16/10/915/223582" :  CAST: an iterative algorithm for the complexity analysis of sequence tracts. Promponas, V.J. et al., Bioinformatics, 16(10), 915–922, 2000.
+
+[...]
+</pre>
