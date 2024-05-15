@@ -54,82 +54,79 @@ Additionally, the process of **mounting a remote folder may require some technic
 
 SSH (Secure Shell) is a secure network protocol that allows users to securely access and manage remote computers over an unsecured network. It encrypts all data transmitted between the client and server, ensuring that sensitive information is protected.
 
-<span style="color: #ff3870; font-weight: 500;">To learn more about SSH visit the tutorial </span> <a class="t-links" href="623"></a> available in section <a class="t-links" href="621">06. High-Performance Computing (HPC) / Remote Access to HPC Resources</a> of this workbook.
+<div class="more" markdown="1">
+...about SSH from the tutorial <a class="t-links" href="623"></a> available in section <a class="t-links" href="621">06. High-Performance Computing (HPC) / Remote Access to HPC Resources</a> in this workbook.
+</div>
 
 **SSHFS is a command-line tool** that allows you to mount a remote file system using SSH. It uses the SSH protocol to securely connect to the remote server and mount the remote file system on your local machine, allowing you to view and access files as if they were stored locally.
 
-## **Hands-on tutorial**
 
-##  • mount folder
+# <button class="btn c-good">HANDS-ON TUTORIAL</button>
+
+##  mount remote folder
 
 Here's a practical guide to mounting a remote HPC folder on a local machine using the `sshfs` command:
 
-**1.** Open a terminal on your local machine and check if you have the `sshfs` already installed:
-```bash
-sshfs --version
-```
+1. Open a terminal on your local machine and check if you have the `sshfs` already installed:
+    ```bash
+    sshfs --version
+    ```
+    *The expected output should looks like this:*
+    ![01-remote_preview_sshfs.png]({{ images_path }}/01-remote_preview_sshfs.png)
+    In case the command returned an error message <em class="c-bad">"Command not found"</em>, you need to install the `sshfs` tool on your local machine.
+    <details class="l-frame" markdown="1"><summary>Ubuntu/Debian:</summary>
 
-*The expected output should looks like this:*
-![01-remote_preview_sshfs.png]({{ images_path }}/01-remote_preview_sshfs.png)
+    ```bash
+    sudo apt-get update <br>
+    sudo apt-get install sshfs
+    ```
+    </details>
 
-In case the command returned an error message <i>"Command not found"</i>, you need to install the `sshfs` tool on your local machine.
+    <details class="l-frame" markdown="1"><summary>Windows:</summary>
 
-<details><summary>Ubuntu/Debian:</summary>
+    *To install SSHFS on Windows, you will need to follow these steps:*
+    1. Download the latest version of WinFsp from the following website: <a href="https://github.com/billziss-gh/winfsp/releases" target="_blank">https://github.com/billziss-gh/winfsp/releases  ⤴</a>
+    * Click on the latest release and download the appropriate package for your version of Windows (32-bit or 64-bit).
+    * Make sure to download both the "WinFsp" and "WinFsp SSHFS" packages.
 
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-sudo apt-get update <br>
-sudo apt-get install sshfs
-</code><br>
-</details>
+    2. Install **WinFsp** by running the downloaded executable file and following the installation wizard.
 
-<details><summary>Windows:</summary>
+    3. Once WinFsp is installed, install the SSHFS package by running the downloaded executable file and following the installation wizard.
 
-<i>To install SSHFS on Windows, you will need to follow these steps: <br>
-1. Download the latest version of WinFsp from the following website: <a href="https://github.com/billziss-gh/winfsp/releases" target="_blank">https://github.com/billziss-gh/winfsp/releases  ⤴</a> <br>
+    4. After installation, you should be able to mount a remote folder using SSHFS by opening a Command Prompt window and running the `sshfs` command.
+    </details>
 
-* Click on the latest release and download the appropriate package for your version of Windows (32-bit or 64-bit).
-* Make sure to download both the "WinFsp" and "WinFsp SSHFS" packages.
+    <details class="l-frame" markdown="1"><summary>macOS:</summary>
 
-2. Install WinFsp by running the downloaded executable file and following the installation wizard.
+    *Install <a href="https://brew.sh/" target="_blank">homebrew  ⤴</a> if you don't already have it.* <br>
+    Then install SVN using Homebrew by running the following command in a terminal:
+    ```bash
+    brew install sshfs
+    ```
+    </details>
 
-3. Once WinFsp is installed, install the SSHFS package by running the downloaded executable file and following the installation wizard.
 
-4. After installation, you should be able to mount a remote folder using SSHFS by opening a Command Prompt window and running the <b>sshfs</b> command.
-</i><br>
-</details>
+2. Once SSHFS is installed, you can mount a remote folder using the following command:
+    ```bash
+    sshfs user@hostname:/remote/folder /local/folder [options]
+    ```
+    *where:*
+    * `user` is your username on the remote server,
+    * `hostname` is the hostname or IP address of the remote server,
+    * `/remote/folder` is he path to the remote folder you want to mount,
+    * `/local/folder` is the mountpoint on your local machine  where you want to mount the remote folder.
+    <div class="warning" markdown="1">
+    Note that you may be prompted to enter your credentials: `password` and `MFA` (authentication) code for the remote server after running this command.
+    </div>
 
-<details><summary>macOS:</summary>
 
-<i>Install <a href="https://brew.sh/" target="_blank">homebrew  ⤴</a>
- if you don't already have it. <br>Then install SVN using Homebrew by running the following command in a terminal:</i>
-<code style="background-color: #e4f0f0; padding: 10px 10px; width:100%; display: block; margin-top: 10px; font-size:0.8em;">
-brew install sshfs
-</code><br>
-</details><br>
+3. Navigate to the **mountpoint** on your local machine:
+   ```bash
+   cd /local/folder
+   ```
 
-**2.** Once SSHFS is installed, you can mount a remote folder using the following command:
-
-```bash
-sshfs user@hostname:/remote/folder /local/folder [options]
-```
-
-*where:* <br>
-* `user` is your username on the remote server,
-* `hostname` is the hostname or IP address of the remote server,
-* `/remote/folder` is he path to the remote folder you want to mount,
-* `/local/folder` is the mountpoint on your local machine  where you want to mount the remote folder.
-
-<div class="warning" markdown="1">
-Note that you may be prompted to enter your credentials: `password` and `MFA` (authentication) code for the remote server after running this command.
-</div>
-
-**3.** Navigate to the **mountpoint** on your local machine:
-
-```bash
-cd /local/folder
-```
-
-**That's it! You should now be able to access the remote HPC folder as if it were stored locally on your macOS machine.**
+**That's it!** <br>
+You should now be able to access the remote HPC folder as if it were stored locally on your macOS machine.
 
 <div class="protip" markdown="1">
 **Remember to always unmount a remote folder when your task is done.** <br>
@@ -154,14 +151,14 @@ This will mount the remote folder to the local directory specified in the script
 </div>
 
 
-##  • unmount folder
+##  unmount folder
 
 To unmount a remote folder that you have mounted using SSHFS, you can use the `umount` command:
 ```bash
 umount /local/folder
 ```
 
-where <b>/local/folder</b> is a mountpoint on your local machine where the remote folder is currently mounted.
+where `/local/folder` is a **mountpoint** on your local machine where the remote folder is currently mounted.
 
 
 For example, if you mounted a remote folder to the `~/Documents/HPC` directory using SSHFS, you can unmount it using the following command:
@@ -181,16 +178,16 @@ sudo umount mountpoint
 
 The `sshfs` command has several additional options that can be used to customize the behavior of the mount. The table contains some of the most common options.
 
-| option         | description |
-|----------------|-------------|
-| -f             |runs sshfs in the foreground, rather than detaching it as a background process|
-| -o             |specify additional options to be passed to the underlying ssh command|
-| -o Port=1234   |specify a custom SSH port|
-| -o reconnect   |enables auto-reconnection to the server in case the connection is lost|
-| -o cache       |enables caching of directory and file information to improve performance|
-| -o compression |enables compression of data transferred over the SSH connection to reduce bandwidth usage|
-| -o allow_other |allows other users on the system to access the mounted directory|
-| -o IdentityFile=filename |specifies the SSH private key file to use for authentication|
+| option           | description |
+|------------------|-------------|
+| `-f`             |runs sshfs in the foreground, rather than detaching it as a background process|
+| `-o`             |specify additional options to be passed to the underlying ssh command|
+| `-o Port=1234`   |specify a custom SSH port|
+| `-o reconnect`   |enables auto-reconnection to the server in case the connection is lost|
+| `-o cache`       |enables caching of directory and file information to improve performance|
+| `-o compression` |enables compression of data transferred over the SSH connection to reduce bandwidth usage|
+| `-o allow_other` |allows other users on the system to access the mounted directory|
+| `-o IdentityFile=filename` |specifies the SSH private key file to use for authentication|
 
 These options can be combined together as needed, for example:
 ```bash

@@ -20,9 +20,9 @@ tags: []
 
 # Introduction
 
-Data manipulation refers to the process of **transforming and organizing data** to make it more useful for analysis, reporting, meeting specific research requirements. It is a crucial step in data analysis, as it **enables researchers to extract valuable insights** from raw data.
-<span style="color: #ff3870;font-weight: 500;">This process often involves cleaning, merging, restructuring, or summarizing data, among other tasks.</span> <br>
-There are many tools and techniques available to help researchers effectively manipulate and analyze their data. Whether working with Excel, Python, R, SQL, or other specialized tools, researchers should carefully consider their data manipulation needs and **choose the tools and techniques that best suit the research goals**.
+Data manipulation refers to the process of **transforming and organizing data** to make it more useful for analysis, reporting, meeting specific research requirements. It is a crucial step in data analysis, as it **enables researchers to extract valuable insights** from raw data. <b class="c-required">This process often involves cleaning, merging, restructuring, or summarizing data, among other tasks.</b>
+
+There are many tools and techniques available to help researchers effectively manipulate and analyze their data. Whether working with `Excel`, `Python`, `R`, `SQL`, or other specialized tools, researchers should carefully consider their data manipulation needs and **choose the tools and techniques that best suit the research goals**.
 
 <p align="center" style="width:100%; display:inline-block; font-weight:600">Try out any of the tools quickly online!</p>
 <p align="center" style="width:49%; display:inline-block;">
@@ -35,8 +35,7 @@ There are many tools and techniques available to help researchers effectively ma
   <a href="https://www.programiz.com/sql/online-compiler/" target="_blank">www.programiz.com/sql  ⤴</a><br>
   SQL programming language
 </p>
-
-![02_data_manipulation_tools1.png]({{ images_path }}/02_data_manipulation_tools1.png)<br>
+![02_data_manipulation_tools1.png]({{ images_path }}/02_data_manipulation_tools1.png)
 
 
 <p align="center" style="width:49%; display:inline-block;">
@@ -49,10 +48,7 @@ There are many tools and techniques available to help researchers effectively ma
   <a href="https://rdrr.io/snippets/" target="_blank">https://rdrr.io/snippets/  ⤴</a><br>
   R programming language
 </p>
-
-![02_data_manipulation_tools2.png]({{ images_path }}/02_data_manipulation_tools2.png)<br>
-
-
+![02_data_manipulation_tools2.png]({{ images_path }}/02_data_manipulation_tools2.png)
 
 
 ## Excel
@@ -65,70 +61,75 @@ One of the most common **tools with a graphical user interface** (GUI) used for 
 
 By using these features, researchers can quickly and easily manipulate data sheets to create summaries, charts, and reports.
 
-To learn more about manipulating Excel data sheets, you can visit the following website: <a href="https://support.microsoft.com/en-us/office/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca" target="_blank">Basic tasks in Excel  ⤴</a> *by Microsoft*.
-<span style="color: #ff3870;font-weight: 500;">Explore practical examples in the hands-on tutorials available in this workbook:</span>
-
-<ul><li><b>INTRODUCTION:</b> <a class="t-links" href="721.1"></a> </li>
-<li><b>TUTORIALS:</b></li>
-  <ul><li> <a class="t-links" href="721.2"></a></li>
-  <li> <a class="t-links" href="721.3"></a></li>
-  <li> <a class="t-links" href="721.4"></a></li>
-  <li> <a class="t-links" href="721.5"></a></li></ul></ul>
+<div class="more" markdown="1">
+...about manipulating Excel data sheets, you can visit the following website: <a href="https://support.microsoft.com/en-us/office/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca" target="_blank">Basic tasks in Excel  ⤴</a> *by Microsoft*. <base class="mb">
+Explore practical examples in the hands-on tutorials available in this workbook:
+* **INTRODUCTION:** <a class="t-links" href="721.1"></a>
+* **TUTORIALS:**
+  * <a class="t-links" href="721.2"></a>
+  * <a class="t-links" href="721.3"></a>
+  * <a class="t-links" href="721.4"></a>
+  * <a class="t-links" href="721.5"></a>
+</div>
 
 
 ## Python
 
 <a href="https://www.python.org/shell/" target="_blank">Python  ⤴</a> is a powerful programming language widely used for **advanced data analysis, statistics, and interactive visualization**, particularly for working with large text files. Python offers a rich set of libraries and modules that can be used to manipulate text files, including:
-<ul>
-<li> <a class="t-links" href="536" button="true">Tutorial</a> <a href="https://pandas.pydata.org/" target="_blank">Pandas</a>, a Python library for efficient data structure manipulation and analysis </li>
-<li> <a class="t-links" href="537" button="true">Tutorial</a> <a href="https://numpy.org/" target="_blank">NumPy</a>, a Python library for computing and data structure transformation </li>
-<li> <a class="t-links" href="538" button="true">Tutorial</a> <a href="https://www.scipy.org/" target="_blank">SciPy</a>, a Python library for scientific computing and statistics </li>
-<li> <a class="t-links" href="535" button="true">Tutorial</a>
-<li> <a class="t-links" href=""> button="true"><span class="c-alert">Comming soon</span></a> <a href="https://docs.python.org/3/library/re.html" target="_blank">Regex</a>, a Python module for working with regular expressions </li>
-<li> <a class="t-links" href="534" button="true">Tutorial</a> <a href="https://docs.python.org/3/library/json.html" target="_blank">JSON</a>, a Python module for working with data in JSON format </li>
-</ul>
 
-With these libraries, you can manipulate large text files, clean and transform data, perform statistical analysis, and format the the output.
+| library | description | tutorial |
+|---------|-------------|----------|
+|<a href="https://pandas.pydata.org/" target="_blank">Pandas</a>               |a Python library for efficient data structure manipulation and analysis|<a class="t-links" href="536" btn='true'>Tutorial</a>|
+|<a href="https://numpy.org/" target="_blank">NumPy</a>                        |a Python library for computing and data structure transformation       |<a class="t-links" href="537" btn='true'>Tutorial</a>|
+|<a href="https://www.scipy.org/" target="_blank">SciPy</a>                    |a Python library for scientific computing and statistics               |<a class="t-links" href="538" btn='true'>Tutorial</a>|
+|<a href="https://docs.python.org/3/library/math.html" target="_blank">Math</a>|a Python module with various mathematical functions                    |<a class="t-links" href="535" btn='true'>Tutorial</a>|
+|<a href="https://docs.python.org/3/library/re.html" target="_blank">Regex</a> |a Python module for working with regular expressions                   |<a class="t-links" href="" btn='true'><span class="c-alert">Comming soon</span></a>|
+|<a href="https://docs.python.org/3/library/json.html" target="_blank">JSON</a>|a Python module for working with data in JSON format                   |<a class="t-links" href="534" btn='true'>Tutorial</a>|
 
-<span style="color: #ff3870;font-weight: 500;">To learn more about manipulating large text files with Python, you can visit the following tutorials in this workbook:</span>
+With these libraries, you can manipulate large text files, clean and transform data, perform statistical analysis, and format the output.
 
-<ul><li><b>INTRODUCTION:</b></li><ul>
-  <li> <a class="t-links" href="420"></a> </li>
-  <li> <a class="t-links" href="531"></a> </li></ul>
-<li><b>TUTORIALS:</b></li><ul>
-  <li> <a class="t-links" href="423"></a> </li>
-  <li> <a class="t-links" href="533"></a> </li>
-  <li> <a class="t-links" href="722.1"></a> </li>
-  <li> <a class="t-links" href="731"></a> </li>
-  <li> <a class="t-links" href="822.01"></a> </li>
-</ul></ul>
+<div class="more" markdown="1">
+...more about manipulating large text files with Python, you can visit the following tutorials in this workbook:
+* **INTRODUCTION:**
+  * <a class="t-links" href="420"></a>
+  * <a class="t-links" href="531"></a>
+* **TUTORIALS:**
+  * <a class="t-links" href="423"></a>
+  * <a class="t-links" href="533"></a>
+  * <a class="t-links" href="722.1"></a>
+  * <a class="t-links" href="731"></a>
+  * <a class="t-links" href="822.01"></a>
+</div>
 
 
 ## R
 
 <a href="https://www.r-project.org" target="_blank">R  ⤴</a> is another popular programming language used for **statistical analysis and simple data visualization**. It provides several libraries and functions for data manipulation, including:
-* <a href="https://dplyr.tidyverse.org/" target="_blank">dplyr  ⤴</a>, an R package for data filtering, selecting, arranging, and summarizing
-* <a href="https://tidyr.tidyverse.org/" target="_blank">tidyr  ⤴</a>, an R package for data cleaning, reshaping and tidying
-* <a href="https://cran.r-project.org/web/packages/reshape2/index.html" target="_blank">reshape2  ⤴</a>, an R package for data manipulation and reshaping
+
+| library | description | tutorial |
+|---------|-------------|----------|
+|<a href="https://dplyr.tidyverse.org/" target="_blank">dplyr</a>                                   |an R package for data filtering, selecting, arranging, and summarizing |<a class="t-links" href="545" btn='true'>Tutorial</a>|
+|<a href="https://tidyr.tidyverse.org/" target="_blank">tidyverse</a>                               |an R package for data cleaning, reshaping and tidying                  |<a class="t-links" href="546" btn='true'>Tutorial</a>|
+|<a href="https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html" target="_blank">data.table</a> |an R package for aggregation and manipulation of large data sets     |<a class="t-links" href="547" btn='true'>span class="c-alert">Comming soon</span></a>|
 
 With these libraries, you can manipulate and transform data, filter, select, and summarize data.
 
-<span style="color: #ff3870;font-weight: 500;">To learn more about manipulating data for a quick statistical analysis with R, you can visit the following tutorials in this workbook:</span>
-
-<ul><li><b>INTRODUCTION:</b></li><ul>
-  <li> <a class="t-links" href="430"></a> </li>
-  <li> <a class="t-links" href="541"></a> </li></ul>
-<li><b>TUTORIALS:</b></li><ul>
-  <li> <a class="t-links" href="432"></a> </li>
-  <li> <a class="t-links" href="823.01"></a> </li>
-</ul></ul>
+<div class="more" markdown="1">
+...more about manipulating data for a quick statistical analysis with R, you can visit the following tutorials in this workbook:
+* **INTRODUCTION:**
+  * <a class="t-links" href="430"></a>
+  * <a class="t-links" href="541"></a>
+* **TUTORIALS:**
+  * <a class="t-links" href="432"></a>
+  * <a class="t-links" href="823.01"></a>
+</div>
 
 
 ## SQL
 
 <a href="https://www.w3schools.com/sql/sql_intro.asp" target="_blank">SQL  ⤴</a> (Structured Query Language) is a powerful language used for **managing and manipulating relational databases**. It provides several functions and commands for data manipulation, including `SELECT`, `INSERT`, `UPDATE`, and `DELETE`. With SQL, you can manipulate data stored in a database, extract data, and perform statistical analysis.
 
-To learn more about SQL, you can visit the website <a href="https://www.w3schools.com/sql/default.asp" target="_blank">https://www.w3schools.com/sql/default.asp</a>
+<button class="btn more"></button> *...about SQL from the website <a href="https://www.w3schools.com/sql/default.asp" target="_blank">https://www.w3schools.com/sql/default.asp</a>*
 
 
 ## Other tools for data manipulation in research projects
