@@ -225,8 +225,8 @@ You can use an **ImageMagick** built-in `convert` tool to convert other formats 
     ```
 
 3. Run configure script while adjusting value for arguments: <br>
-    **--with-jpeg-prefix=** - *provide custom path to which you have writing permission* <br>
-    **--prefix=** - *provide custom path to which you have writing permission* <br>
+    `--with-jpeg-prefix=` - *provide custom path to which you have writing permission* <br>
+    `--prefix=` - *provide custom path to which you have writing permission* <br>
     <div class="protip" markdown="1">
     You can use the current directory or create a directory a level up from where the script is executed. It is best to specify an absolute path.
     </div>
