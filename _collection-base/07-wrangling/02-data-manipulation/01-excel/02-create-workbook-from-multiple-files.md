@@ -81,6 +81,13 @@ Excel `macros` are sequences of instructions recorded to automate repetitive tas
     ![]({{ images_path }}/excel_developer_tab_check.png)
     5. **Apply and Close:** Close the Ribbon & Toolbar preferences dialog box.
     ![]({{ images_path }}/excel_developer_tab_activated.png)
+    6. **Enable Full Disk Access for Excel** To ensure that Excel macros work correctly and can manage inputs and outputs on macOS, you need to grant Excel full disk access.
+      * Open `System Preferences`.
+      * Go to `Security & Privacy`.
+      * Click the `Privacy` tab.
+      * In the left sidebar, select `Full Disk Access`.
+      * Click the lock icon in the bottom left corner and enter your password to make changes.
+      * Click the `+` button and add the **Microsoft Excel** application to the list.
     </details>
 
 2. **Text Files:** A folder containing all the text files you want to import. <br>
@@ -308,12 +315,15 @@ Note that the file name of the text file will be used to label the worksheet (ta
     </table>
     </div>
 
-5. **Excel spreadsheet:** Go back to your Excel spreadsheet window.
-    Click on `Macros` again. This time, the pop-up `Macro` window has a list of your added macros. Select the one you've just created. Then, click the `Run` button.
-    ![]({{ images_path }}/excel_run_macro.png)
-    A window should pop up asking location of the text files. Navigate to the files location and select all text files. Click `OK`. <base class="mb">
-    All text files will be imported to a new spreadsheet. It might take a while to complete, if there are large number of files, so be patient.
-    ![]({{ images_path }}/excel_all_files_imported.png)
+### *3. Run the macro*
+
+**Excel spreadsheet:** Go back to your Excel spreadsheet window.
+
+Click on `Macros` again. This time, the pop-up `Macro` window has a list of your added macros. Select the one you've just created. Then, click the `Run` button.
+![]({{ images_path }}/excel_run_macro.png)
+A window should pop up asking location of the text files. Navigate to the files location and select all text files. Click `OK`. <base class="mb">
+All text files will be imported to a new spreadsheet. It might take a while to complete, if there are large number of files, so be patient.
+![]({{ images_path }}/excel_all_files_imported.png)
 
 
 ## **B. Python-based automation**
