@@ -506,8 +506,8 @@ df_reshaped = df_new.pivot_table(index=['Year', 'Statistic'], columns='Species',
 print(df_reshaped)
 ```
 *The output will be like this:*
-<pre class="output">
-Species         American Goldfinch  Eastern Bluebird  Northern Cardinal  Ruby-throated Hummingbird  Yellow Warbler
+<pre class="output"><base class="mb">
+Species         American Goldfinch  Eastern Bluebird  Northern Cardinal  Ruby-throated Hummingbird  Yellow Warbler &ensp;
 Year Statistic                                                                                                    
 2010 Mean                17.400000         10.400000          15.400000                   7.800000        7.400000
      Std                  9.126883          5.412947           5.594640                   3.346640        2.701851
