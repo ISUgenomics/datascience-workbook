@@ -30,8 +30,8 @@ Here are some specific advantages and disadvantages of using spreadsheet softwar
 
 | Approach | Advantages | Disadvantages |
 |----------|------------|---------------|
-| Spreadsheet Software | ✓ Easy-to-use **graphical interface** <br>✓ Built-in functions for statistical analysis <br>✓ Good for small to medium-sized datasets and simple data manipulation tasks <br>✓ Can **quickly create charts** and graphs | ✗ Limited capacity for handling large datasets <br>✗ Limited flexibility for complex data manipulations <br>✗ Limited reproducibility of data analyses <br>✗ Potential for human error in manual data entry |
-| Python algorithms | ✓ Powerful and flexible environment for data manipulation and analysis <br>✓ Wide range of libraries and tools for **advanced data manipulation** and analysis <br>✓ Good for **handling large datasets** and performing complex data analyses <br>✓ **High reproducibility** of data analyses | ✗ Steep learning curve for beginners <br>✗ Requires programming skills and knowledge of data structures <br>✗ Requires more effort to create charts and graphs than spreadsheet software |
+| Spreadsheet Software | <em class="pros"></em> Easy-to-use **graphical interface** <br><em class="pros"></em> Built-in functions for statistical analysis <br><em class="pros"></em> Good for small to medium-sized datasets and simple data manipulation tasks <br><em class="pros"></em> Can **quickly create charts** and graphs | <em class="cons"></em> Limited capacity for handling large datasets <br><em class="cons"></em> Limited flexibility for complex data manipulations <br><em class="cons"></em> Limited reproducibility of data analyses <br><em class="cons"></em> Potential for human error in manual data entry |
+| Python algorithms | <em class="pros"></em> Powerful and flexible environment for data manipulation and analysis <br><em class="pros"></em> Wide range of libraries and tools for **advanced data manipulation** and analysis <br><em class="pros"></em> Good for **handling large datasets** and performing complex data analyses <br><em class="pros"></em> **High reproducibility** of data analyses | <em class="cons"></em> Steep learning curve for beginners <br><em class="cons"></em> Requires programming skills and knowledge of data structures <br><em class="cons"></em> Requires more effort to create charts and graphs than spreadsheet software |
 
 <div class="protip" markdown="1">
 Ultimately, the choice between spreadsheet software and Python depends on the size and complexity of the dataset, the level of data manipulation required, and the user's level of expertise in programming and data analysis.
@@ -51,55 +51,64 @@ Python has a variety of libraries, such as `pandas` and `numpy`, that are specif
 
 ## Step-by-step guide
 
+<div class="required" markdown="1">
 Before starting data manipulation with Python, there are several steps that need to be taken. By following these steps, you will be well-equipped to manipulate data with Python.
+</div>
 
 ### 1. Setting up a Python DE
 
-Before installing Python, you need to choose an Integrated Development Environment (IDE) to write and execute your code. Some popular Python IDEs include PyCharm, Jupyter Notebook, and Spyder. Choose an IDE that best fits your needs and install it on your computer. <br>
-<span style="color: #ff3870;font-weight: 500;"> Learn more about Python IDEs by following the hands-on tutorials in the</span> <a class="t-links" href="420"></a> section of this workbook:
-<ul>
-<li> <a class="t-links" href="421"></a> <i>(without installation)</i> </li>
-<li> <a class="t-links" href="422"></a> <i>(no installation)</i> </li>
-<li> <a class="t-links" href="423"></a> <i>(installation needed)</i> </li><ul>
-  <li> <a class="t-links" href="424"></a> <i>(beginner)</i> </li>
-  <li> <a class="t-links" href="425"></a> <i>(intermediate)</i> </li>
-  <li> <a class="t-links" href="426"></a> <i>(advanced)</i> </li>
-  <li> <a class="t-links" href="427"></a> <i>(professional)</i> </li></ul>
-</ul>
+Before installing Python, you need to choose an Integrated Development Environment (IDE) to write and execute your code. Some popular Python IDEs include PyCharm, Jupyter Notebook, and Spyder. Choose an IDE that best fits your needs and install it on your computer.
+<div class="more" markdown="1">
+...about Python IDEs by following the hands-on tutorials in the <a class="t-links" href="420"></a> section of this workbook:
+* <a class="t-links" href="421"></a> *(without installation)*
+* <a class="t-links" href="422"></a> *(no installation)*
+* <a class="t-links" href="423"></a> *(installation needed)*
+  * <a class="t-links" href="424"></a> *(beginner)*
+  * <a class="t-links" href="425"></a> *(intermediate)*
+  * <a class="t-links" href="426"></a> *(advanced)*
+  * <a class="t-links" href="427"></a> *(professional)*
+</div>
 
 ### 2. Python installation
 
-After setting up your IDE, you need to install Python on your computer. You can download the latest version of Python from the official website (https://www.python.org/downloads/). Choose the appropriate version for your operating system and follow the installation instructions. <br>
-<span style="color: #ff3870;font-weight: 500;"> Learn more about Python Installation options by following the hands-on tutorial in this workbook:</span>
-* <a class="t-links" href="423"></a> <i> (installation needed)</i>
+After setting up your IDE, you need to install Python on your computer. You can download the latest version of Python from the official website <a href="https://www.python.org/downloads/" target="_blank">https://www.python.org/downloads/</a>. Choose the appropriate version for your operating system and follow the installation instructions.
+<div class="more" markdown="1">
+...about Python Installation options by following the hands-on tutorial in this workbook:
+* <a class="t-links" href="423"></a> *(installation needed)*
+</div>
 
 ### 3. Intro to Python programming
 
 Once you have installed Python, you need to learn the basics of Python programming. This includes understanding the structure of algorithms, data types, control structures, functions, and modules. You can find many free online resources to learn Python, including courses, tutorials, and documentation. <br>
-<span style="color: #ff3870;font-weight: 500;"> Learn more about Python programming by following the hands-on tutorials in the</span> <a class="t-links" href="531"></a> section of this workbook:
+<div class="more" markdown="1">
+...about Python programming by following the hands-on tutorials in the <a class="t-links" href="531"></a> section of this workbook:
 * <a class="t-links" href="533"></a>
 * <a class="t-links" href="534"></a>
 * <a class="t-links" href="535"></a>
-
+</div>
 
 ### 4. Learning about Python libraries
 
 Python has several libraries specifically designed for data manipulation, such as NumPy, Pandas, and Matplotlib. You need to learn about these libraries and their functions before you start data manipulation. You can find many tutorials and online courses that focus on these libraries. <br>
-<span style="color: #ff3870; font-weight: 500;"> Learn more about Python libraries for data manipulation by following the hands-on tutorials in the</span> <a class="t-links" href="531"></a> section of this workbook:
+<div class="more" markdown="1">
+...about Python libraries for data manipulation by following the hands-on tutorials in the <a class="t-links" href="531"></a> section of this workbook:
 * <a class="t-links" href="536"></a>
 * <a class="t-links" href="537"></a>
 * <a class="t-links" href="538"></a>
-
+</div>
 
 ### 5. Getting practical experience
 
 Finally, you need to practice what you have learned by working on hands-on tutorials. This will help you apply your knowledge of Python programming and data manipulation libraries to real-world problems. There are many hands-on tutorials in this workbook! <br>
-<span style="color: #ff3870; font-weight: 500;"> Start manipulating data files with Python by following the hands-on tutorials in this workbook:</span>
-<ul>
-<li> SECTION: <a class="t-links" href="722.1"></a> </li>
-  <ul><li> <a class="t-links" href="722.2"></a> </li></ul>
-<li> SECTION: <a class="t-links" href="731"></a> </li>
-  <ul><li> <a class="t-links" href="732"></a> </li>
-  <li> <a class="t-links" href="733"></a>{ </li></ul>
-<li> SECTION: <a class="t-links" href="822.01"></a> </li>
-</ul>
+<div class="more" markdown="1">
+Start manipulating data files with Python by following the hands-on tutorials in this workbook:
+* SECTION: <a class="t-links" href="722.1"></a>
+  * <a class="t-links" href="722.2"></a>
+* SECTION: <a class="t-links" href="731"></a>
+  * <a class="t-links" href="732"></a>
+  * <a class="t-links" href="733"></a>
+  * <a class="t-links" href="734"></a>
+  * <a class="t-links" href="721.2" section="#b-python-based-automation"></a> *(Excel files, Python-based approach)*
+  * <a class="t-links" href="721.3" section="#b-python-based-automation"></a> *(Excel files, Python-based approach)*
+* SECTION: <a class="t-links" href="822.01"></a>
+</div>
