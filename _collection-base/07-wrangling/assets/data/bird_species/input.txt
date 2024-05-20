@@ -1,0 +1,2 @@
+Manipulating text files and research data is a common task in scientific research, 
+and Python provides powerful tools to accomplish this. 
