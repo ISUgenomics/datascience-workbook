@@ -240,7 +240,7 @@ div.highlighter-rouge {margin-bottom: 0.8em;}
   font-family: Monaco, Consolas, "Lucida Console", monospace;
   font-style: normal !important;
   font-size: .8em;
-  background: #fafafa;
+  background: var(--bc-code);
   border-radius: 4px;
   padding: 0.1rem 0.3rem;
 }
