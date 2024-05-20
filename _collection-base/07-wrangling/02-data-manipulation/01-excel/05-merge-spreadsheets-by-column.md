@@ -23,7 +23,7 @@ tags: []
 
 Excel is most popular among researchers because of its ease of use and tons of useful features. In most cases scripting is the most efficient way to do these simple operations, but practicality of Excel for researchers and the cryptic scripting commands will always make excel a better choice.
 
-**TASL or CHALLENGE** <br>
+**TASK or CHALLENGE** <br>
 If you require two spreadsheets to merge based on a shared column, this tutorial will guide you through automating the process, making it more efficient and minimizing the risk of errors.
 
 ### Merge two spreadsheets using a common column
