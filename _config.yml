@@ -290,8 +290,6 @@ defaults:
       comments: true
       share: true
       related: true
-      layout: single
-      author_profile: false
 
 
 # Collections
