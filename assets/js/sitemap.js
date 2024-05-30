@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+  // Set 'toc' to display block by default
+  document.getElementById('toc').style.display = 'block';
 });
 
 
