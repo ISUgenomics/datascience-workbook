@@ -472,3 +472,7 @@ img {
   margin-top: 0.5em;
   margin-bottom: 1.2em;
 }
+
+.archive__item-teaser img {
+  margin-top: 0 !important;
+}
