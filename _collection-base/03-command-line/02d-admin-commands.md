@@ -80,9 +80,9 @@ The root user has complete control over the system and can perform any action th
 
 If you attempt to perform a task that requires superuser privileges without having the necessary permissions, you may see an error message similar to the following:
 
-```
-bash: command: Permission denied
-```
+<pre class="output">
+bash: command: <b class="c-example">Permission denied</b>
+</pre>
 
 This error message indicates that you do not have the necessary permissions to execute the command. In order to perform the task, you will need to activate superuser privileges *(see next section)*.
 

@@ -166,12 +166,12 @@ If you want to see how much memory is available on your machine, you can use the
 free
 ```
 Output would be:
-```
+<pre class="output">
              total       used       free     shared    buffers     cached
 Mem:      32874744   32607664     267080          0      77600   31013192
 -/+ buffers/cache:    1516872   31357872
 Swap:     61438900     873856   60565044
-```
+</pre>
 As you can see the numbers are in bytes and very difficult to understand. You can modify this default behavior using some options. some options to modify this are:
 
 
@@ -187,12 +187,12 @@ Example:
 free -g
 ```
 output would be:
-```
+<pre class="output">
              total       used       free     shared    buffers     cached
 Mem:            31         31          0          0          0         29
 -/+ buffers/cache:          1         29
 Swap:           58          0         57
-```
+</pre>
 This is much easier to understand.
 
 
@@ -203,29 +203,29 @@ Just to get the Operating system name:
 cat /etc/system-release
 ```
 Output would be:
-```
+<pre class="output">
 Red Hat Enterprise Linux Server release 6.4 (Santiago)
-```
+</pre>
 
 If no such file, they try:
 ```bash
 cat /etc/*release*
 ```
 you might get:
-```
+<pre class="output">
 Red Hat Enterprise Linux Server release 6.4 (Santiago)
 Red Hat Enterprise Linux Server release 6.4 (Santiago)
 cpe:/o:redhat:enterprise_linux:6server:ga:server
-```
+</pre>
 
 The other command is the `uname`
 ```bash
 uname -a
 ```
 output would be:
-```
+<pre class="output">
 Linux hpc5 2.6.32-358.11.1.el6.x86_64 #1 SMP Wed May 15 10:48:38 EDT 2013 x86_64 x86_64 x86_64 GNU/Linux
-```
+</pre>
 which is Kernel, node, kernel version, kernel release date, machine type, processor type, platform and OS type, respectively.
 
 You can also ask for a specific thing by using these options:
@@ -263,7 +263,7 @@ ifconfig
 ```
 it will lists all properties as follows:
 
-```
+<pre class="output">
 eth2      Link encap:Ethernet  HWaddr 00:0N:00:00:N0:NN
           inet addr:00.00.000.000  Bcast:00.00.000.000  Mask:000.000.000.0
           inet6 addr: 0000:000:000:000:00n:00nn:nn00:n000/00 Scope:Link
@@ -272,9 +272,9 @@ eth2      Link encap:Ethernet  HWaddr 00:0N:00:00:N0:NN
           TX packets:600815878 errors:0 dropped:0 overruns:0 carrier:0
           collisions:0 txqueuelen:10000
           RX bytes:14812199265240 (13.4 TiB)  TX bytes:52487439229 (48.8 GiB)
-...
-<clipped rest of the output>
-```
+<b class="prompt-2"></b>
+<b class="prompt-2 before" data-before="(clipped rest of the output)"></b>
+</pre>
 you can use the combination of commands to just display the IP address as follows:
 
 ```bash

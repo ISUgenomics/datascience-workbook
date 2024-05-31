@@ -98,7 +98,9 @@ In order of preference, first attempt to install from CRAN. If the library is no
 
 ![R Libraries]({{ images_path }}/R_libraries.png)
 
-**Warning:** Have a regular schedule (maybe once every 6 months) to keep your R libraries up to date. Some libraries depend on other libraries and will not install until you have the latest version.
+<div class="warning" markdown="1">
+Have a regular schedule (maybe once every 6 months) to keep your R libraries up to date. Some libraries depend on other libraries and will not install until you have the latest version.
+</div>
 
 ### Hands-On Exercise - installing an R library in three ways
 
@@ -118,7 +120,9 @@ To get the latest version of R libraries, RStudio has a "Packages" pane in the b
 
 ![RStudio Quad Chart]({{ images_path }}/R_updatepkgs.png)
 
+<div class="protip mt-" markdown="1">
 This may take several minutes since we are updating multiple packages. If the "Install Updates" hangs or errors out, install the packages one by one.
+</div>
 
 ## Using R on SCINet
 
