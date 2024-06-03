@@ -9,7 +9,7 @@ header:
 type: "article"
 order: 110
 level: 1
-categories: ["data-types", "knowledge"]
+categories: ["data-types"]
 tags: []
 ---
 

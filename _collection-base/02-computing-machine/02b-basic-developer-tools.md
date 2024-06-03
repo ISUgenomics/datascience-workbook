@@ -9,8 +9,8 @@ header:
 type: "article"
 order: 222
 level: 2
-categories: []
-tags: []
+categories: ["developer-tools", "installation", "version-control"]
+tags: ["IDE", "text-editors", "compiler", "debugger", "VSC", "git"]
 ---
 
 {% include toc %}

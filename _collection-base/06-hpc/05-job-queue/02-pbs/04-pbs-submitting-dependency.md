@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 652.4
 level: 3
-categories: []
-tags: []
+categories: ["HPC, computing", "job-scheduling", "command-line", "computing-tools"]
+tags: ["PBS", "dependencies", "multi-job"]
 ---
 
 {% include toc %}

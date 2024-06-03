@@ -10,8 +10,8 @@ header:
 type: "tutorial"
 order: 424
 level: 3
-categories: []
-tags: []
+categories: ["developer-tools", "programming", "installation", "command-line"]
+tags: ["IDLE", "code-editor", "python", "python-shell", "local-machine", ]
 ---
 
 {% include toc %}

@@ -10,8 +10,8 @@ header:
 type: "tutorial"
 order: 426
 level: 3
-categories: []
-tags: []
+categories: ["developer-tools", "programming", "installation", "virtual-env", "data-manipulation", "visualization", "plotting"]
+tags: ["IDE", "code-editor", "python", "interactive", "online", "local-machine", "jupyter", "notebook", "package-manager", "library-package-module", "kernel", "markdown", "plotly", "import"]
 ---
 
 {% include toc %}

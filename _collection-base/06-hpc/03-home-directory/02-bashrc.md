@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 632
 level: 2
-categories: []
-tags: []
+categories: ["HPC, computing", "command-line", "computing-tools"]
+tags: [".bashrc"]
 ---
 
 {% include toc %}

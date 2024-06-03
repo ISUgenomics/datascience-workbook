@@ -9,8 +9,8 @@ header:
 type: "intro"
 order: 610
 level: 1
-categories: []
-tags: []
+categories: ["HPC, computing", "command-line", "computing-tools"]
+tags: ["HPC-system", "HPC-tasks", "HPC-examples"]
 ---
 
 {% include toc %}

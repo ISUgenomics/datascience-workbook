@@ -9,8 +9,8 @@ header:
 type: "cheatsheet"
 order: 652.2
 level: 3
-categories: []
-tags: []
+categories: ["HPC, computing", "job-scheduling", "command-line", "computing-tools"]
+tags: ["PBS", "workload-manager", "job-script", "job-submission", "job-management", "qsub", "qstat", "qdel", "qhold", "command", "cheatsheet"]
 ---
 
 {% include toc %}

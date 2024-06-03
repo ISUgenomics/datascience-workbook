@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 231
 level: 2
-categories: []
-tags: []
+categories: ["operating-system", "installation", "developer-tools"]
+tags: ["macOS", "conda", "R", "python"]
 ---
 
 {% include toc %}

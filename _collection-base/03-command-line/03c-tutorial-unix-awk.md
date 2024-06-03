@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 333
 level: 2
-categories: []
-tags: []
+categories: ["command-line", "text-manipulation", "bash-unix"]
+tags: ["awk", "manage-order", "arithmetic", "variables"]
 ---
 
 {% include toc %}

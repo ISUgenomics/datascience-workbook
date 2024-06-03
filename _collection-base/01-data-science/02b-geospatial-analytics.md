@@ -9,7 +9,7 @@ header:
 type: "intro"
 order: 122
 level: 2
-categories: ["knowledge"]
+categories: []
 tags: []
 ---
 

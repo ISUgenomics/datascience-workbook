@@ -9,8 +9,8 @@ header:
 type: "intro"
 order: 511
 level: 1
-categories: []
-tags: []
+categories: ["programming", "bash-scripting", "command-line", "developer-tools"]
+tags: ["algorithm", "pseudocode", "loops", "conditionals", "inputs", "outputs"]
 ---
 
 {% include toc %}

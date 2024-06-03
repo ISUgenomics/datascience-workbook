@@ -9,7 +9,7 @@ header:
 type: "landing-page"
 order: 600
 level: 0
-categories: []
+categories: ["HPC, computing", "command-line", "job-scheduling", "containers", "computing-tools"]
 tags: []
 ---
 

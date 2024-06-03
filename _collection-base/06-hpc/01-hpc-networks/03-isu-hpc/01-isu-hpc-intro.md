@@ -9,8 +9,8 @@ header:
 type: "intro"
 order: 613.1
 level: 2
-categories: []
-tags: []
+categories: ["HPC, computing", "command-line", "computing-tools"]
+tags: ["ISU-HPC"]
 ---
 
 {% include toc %}

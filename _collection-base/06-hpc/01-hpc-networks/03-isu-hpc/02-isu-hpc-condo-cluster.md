@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 613.2
 level: 3
-categories: []
-tags: []
+categories: ["HPC, computing", "command-line", "computing-tools"]
+tags: ["ISU-HPC", "condo-cluster"]
 ---
 
 {% include toc %}

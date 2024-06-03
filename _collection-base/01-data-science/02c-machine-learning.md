@@ -9,7 +9,7 @@ header:
 type: "intro"
 order: 123
 level: 2
-categories: ["knowledge"]
+categories: ["machine-learning"]
 tags: []
 ---
 

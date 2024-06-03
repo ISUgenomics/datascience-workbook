@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 613.4
 level: 3
-categories: []
-tags: []
+categories: ["HPC, computing", "command-line", "computing-tools", "data-storage"]
+tags: ["ISU-HPC", "lss-storage"]
 ---
 
 {% include toc %}

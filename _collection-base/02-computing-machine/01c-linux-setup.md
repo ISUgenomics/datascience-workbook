@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 213
 level: 2
-categories: []
-tags: []
+categories: ["operating-system", "command-line", "installation"]
+tags: ["linux"]
 ---
 
 {% include toc %}

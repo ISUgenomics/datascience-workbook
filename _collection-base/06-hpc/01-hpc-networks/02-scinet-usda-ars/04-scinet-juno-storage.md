@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 612.4
 level: 3
-categories: []
-tags: []
+categories: ["HPC, computing", "command-line", "computing-tools", "data-storage"]
+tags: ["SCINet", "juno-storage"]
 ---
 
 {% include toc %}

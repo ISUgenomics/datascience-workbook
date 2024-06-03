@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 211
 level: 2
-categories: []
-tags: []
+categories: ["operating-system", "command-line"]
+tags: ["macOS"]
 ---
 
 {% include toc %}

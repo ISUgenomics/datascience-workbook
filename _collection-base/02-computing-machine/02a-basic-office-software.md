@@ -9,8 +9,8 @@ header:
 type: "article"
 order: 221
 level: 2
-categories: []
-tags: []
+categories: ["office-tools", "installation"]
+tags: ["Microsoft Office", "Adobe", "screen-capture", "password-manager", "virtual-communication", "browser-extensions", "productivity-software"]
 ---
 
 {% include toc %}

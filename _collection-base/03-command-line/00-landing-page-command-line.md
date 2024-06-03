@@ -9,8 +9,8 @@ header:
 type: "landing-page"
 order: 300
 level: 0
-categories: ["computing", "text-manipulation"]
-tags: ["commands", "linux", "bash-scripting"]
+categories: ["command-line", "bash-unix", "text-manipulation"]
+tags: ["command", "linux", "bash-scripting"]
 ---
 
 

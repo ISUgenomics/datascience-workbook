@@ -11,8 +11,8 @@ header:
 type: "tutorial"
 order: 671.2
 level: 3
-categories: []
-tags: []
+categories: ["HPC, computing", "command-line", "computing-tools", "containers", "virtual-env", "library-package-module"]
+tags: ["singularity", "apptainer", "pull-from-docker", "command"]
 ---
 
 {% include toc %}

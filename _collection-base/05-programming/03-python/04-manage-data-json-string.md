@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 534
 level: 2
-categories: []
-tags: []
+categories: ["programming", "data-types", "text-manipulation"]
+tags: ["json", "python"]
 ---
 
 {% include toc %}

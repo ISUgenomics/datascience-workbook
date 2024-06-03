@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 320
 level: 1
-categories: []
-tags: []
+categories: ["command-line", "bash-unix"]
+tags: ["home-dir", "alias", "prompt", "export-path", "shell-variables", "terminal", ".bashrc"]
 ---
 
 {% include toc %}
@@ -527,7 +527,7 @@ module load python/3.9.2
 *Prudence lies in moderation. So do NOT add modules used infrequently or only in a specific pipeline to your* `~/.bashrc`*. Watch out for this, especially on a computing cluster, where the resources allocated for your* `$HOME` *are often severely limited.*
 <br><br>
 ***So, how can you keep the organizations of the modules necessary for analyses?*** <br>
-*The answer comes from virtual environments. You can create a new environment for a particular analysis and within it manage the list of necessary modules.* ***For python-based environments, Conda will provide you with assistance.*** *You can learn more by following the tutorial in section Setting Up Computing Machine:* <a class="t-links" href="223"></a>. 
+*The answer comes from virtual environments. You can create a new environment for a particular analysis and within it manage the list of necessary modules.* ***For python-based environments, Conda will provide you with assistance.*** *You can learn more by following the tutorial in section Setting Up Computing Machine:* <a class="t-links" href="223"></a>.
 </div>
 
 

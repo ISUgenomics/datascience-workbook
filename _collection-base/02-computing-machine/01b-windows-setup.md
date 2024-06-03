@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 212
 level: 2
-categories: []
-tags: []
+categories: ["operating-system", "command-line"]
+tags: ["windows"]
 ---
 
 {% include toc %}

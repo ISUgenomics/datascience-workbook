@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 324
 level: 2
-categories: []
-tags: []
+categories: ["command-line"]
+tags: ["superuser", "sudo", "permission-denied", "permissions", "ownership", "installation", "linux"]
 ---
 
 {% include toc %}

@@ -9,8 +9,8 @@ header:
 type: "intro"
 order: 410
 level: 1
-categories: []
-tags: []
+categories: ["developer-tools", "version-control"]
+tags: ["code-editor", "debugger"]
 ---
 
 {% include toc %}

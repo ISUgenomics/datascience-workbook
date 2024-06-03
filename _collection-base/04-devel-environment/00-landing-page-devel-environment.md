@@ -9,7 +9,7 @@ header:
 type: "landing-page"
 order: 400
 level: 0
-categories: []
+categories: ["developer-tools", "programming"]
 tags: []
 ---
 

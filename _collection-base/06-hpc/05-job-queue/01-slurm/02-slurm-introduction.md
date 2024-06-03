@@ -10,8 +10,8 @@ header:
 type: "tutorial"
 order: 651.2
 level: 3
-categories: []
-tags: []
+categories: ["HPC, computing", "job-scheduling", "command-line", "computing-tools"]
+tags: ["slurm", "command", "sbatch", "squeue", "scancel", "sinfo", "scontrol", "salloc"]
 ---
 
 {% include toc %}

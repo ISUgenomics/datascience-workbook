@@ -10,8 +10,8 @@ header:
 type: "tutorial"
 order: 624
 level: 2
-categories: []
-tags: []
+categories: ["HPC, computing", "command-line", "computing-tools"]
+tags: ["OOD", "in-browser", "atlas-cluster", "ceres-cluster"]
 ---
 
 {% include toc %}

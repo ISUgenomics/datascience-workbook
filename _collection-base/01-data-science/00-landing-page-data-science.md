@@ -9,7 +9,7 @@ header:
 type: "landing-page"
 order: 100
 level: 0
-categories: ["analysis", "computing", "machine-learning"]
+categories: []
 tags: []
 ---
 

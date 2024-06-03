@@ -9,7 +9,7 @@ header:
 type: "tutorial"
 order: 522
 level: 2
-categories: []
+categories: ["command-line", "bash-scripting", "analysis"]
 tags: []
 ---
 

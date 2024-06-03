@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 671.5
 level: 4
-categories: []
-tags: []
+categories: ["HPC, computing", "command-line", "computing-tools", "containers", "virtual-env", "library-package-module"]
+tags: ["singularity", "apptainer", "vagrant-box", "macOS", "command"]
 ---
 
 {% include toc %}

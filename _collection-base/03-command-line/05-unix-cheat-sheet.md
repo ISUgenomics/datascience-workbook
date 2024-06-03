@@ -10,8 +10,8 @@ header:
 type: "cheatsheet"
 order: 350
 level: 1
-categories: []
-tags: []
+categories: ["command-line", "text-manipulation", "bash-unix"]
+tags: ["command", "manual-docs", "cheatsheet"]
 ---
 
 {% include toc %}

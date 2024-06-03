@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 322
 level: 2
-categories: []
-tags: []
+categories: ["command-line", "text-manipulation", "installation"]
+tags: ["nano", "vim", "text-editors"]
 ---
 
 {% include toc %}

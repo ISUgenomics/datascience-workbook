@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 644
 level: 2
-categories: []
-tags: []
+categories: ["HPC, computing", "command-line", "computing-tools", "library-package-module", "installation", "virtual-env"]
+tags: ["conda", "python", "R", "java", ".rpm"]
 ---
 
 {% include toc %}

@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 651.1
 level: 2
-categories: []
-tags: []
+categories: ["HPC, computing", "job-scheduling", "command-line", "computing-tools"]
+tags: ["slurm", "workload-manager", "job-script", "job-submission", "job-management", "alias", ".bashrc", "interactive", "command"]
 ---
 
 {% include toc %}

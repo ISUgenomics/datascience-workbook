@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 533
 level: 2
-categories: []
-tags: []
+categories: ["programming", "command-line", "text-manipulation", "data-types"]
+tags: ["python", "open-close", "read-write", "f-string", "formatting-output", "file-line-by-line", "handling-errors"]
 ---
 
 {% include toc %}

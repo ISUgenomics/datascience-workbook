@@ -10,8 +10,8 @@ header:
 type: "tutorial"
 order: 622
 level: 2
-categories: []
-tags: []
+categories: ["HPC, computing", "command-line", "computing-tools"]
+tags: ["VPN", "Cisco AnyConnect", "SSH", "remote-access"]
 ---
 
 {% include toc %}

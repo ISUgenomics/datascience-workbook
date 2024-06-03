@@ -9,8 +9,8 @@ header:
 type: "article"
 order: 223
 level: 2
-categories: []
-tags: []
+categories: ["developer-tools", "installation", "programming"]
+tags: ["conda", "python", "julia", "R", "virtual-env"]
 ---
 
 {% include toc %}

@@ -9,8 +9,8 @@ header:
 type: "cheatsheet"
 order: 651.3
 level: 3
-categories: []
-tags: []
+categories: ["HPC, computing", "job-scheduling", "command-line", "computing-tools"]
+tags: ["slurm", "cheatsheet", "alias", "command"]
 ---
 
 {% include toc %}

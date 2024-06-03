@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 650
 level: 1
-categories: []
-tags: []
+categories: ["HPC, computing", "job-scheduling", "command-line", "computing-tools"]
+tags: ["slurm", "PBS", "LSF", "workload-manager"]
 ---
 
 {% include toc %}

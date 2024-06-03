@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 623.1
 level: 3
-categories: []
-tags: []
+categories: ["HPC, computing", "command-line", "computing-tools"]
+tags: ["SSH"]
 ---
 
 {% include toc %}

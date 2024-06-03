@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 643
 level: 2
-categories: []
-tags: []
+categories: ["HPC, computing", "command-line", "computing-tools", "library-package-module"]
+tags: ["package-manager"]
 ---
 
 {% include toc %}

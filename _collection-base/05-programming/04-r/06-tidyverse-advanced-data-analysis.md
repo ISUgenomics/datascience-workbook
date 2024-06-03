@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 546
 level: 2
-categories: []
-tags: []
+categories: ["programming", "data-manipulation", "analysis", "hpc, computing", "library-package-module", "installation"]
+tags: ["tidyverse", "R", "dataset", "clean-data", "explore-data", "compare-data"]
 ---
 
 {% include toc %}

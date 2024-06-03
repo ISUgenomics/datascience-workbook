@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 552
 level: 2
-categories: []
-tags: []
+categories: ["programming", "command-line", "data-types", "installation", "virtual-env", "HPC, computing"]
+tags: ["julia", "package-manager", "jupyter", "kernel", "IDE", "dependencies"]
 ---
 
 {% include toc %}

@@ -9,8 +9,8 @@ header:
 type: "intro"
 order: 670
 level: 1
-categories: []
-tags: []
+categories: ["HPC, computing", "command-line", "computing-tools", "containers", "virtual-env"]
+tags: ["virtual-machine", "container"]
 ---
 
 {% include toc %}

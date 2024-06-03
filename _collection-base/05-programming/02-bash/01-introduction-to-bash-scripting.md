@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 521
 level: 1
-categories: []
-tags: []
+categories: ["command-line", "bash-scripting", "bash-unix"]
+tags: ["bash-expressions", "logical-operators", "arithmetic", "loops", "conditionals"]
 ---
 
 {% include toc %}

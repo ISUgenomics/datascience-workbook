@@ -9,7 +9,7 @@ header:
 type: "article"
 order: 210
 level: 1
-categories: []
+categories: ["installation", "operating-system"]
 tags: []
 ---
 

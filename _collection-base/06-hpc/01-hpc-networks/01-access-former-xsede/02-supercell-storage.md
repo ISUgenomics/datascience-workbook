@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 611.2
 level: 3
-categories: []
-tags: []
+categories: ["HPC, computing", "command-line", "computing-tools", "data-transfer"]
+tags: ["ACCESS", "XSEDE", "access-supercell"]
 ---
 
 {% include toc %}

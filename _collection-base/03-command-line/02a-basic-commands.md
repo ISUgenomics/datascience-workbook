@@ -10,8 +10,8 @@ header:
 type: "tutorial"
 order: 321
 level: 2
-categories: []
-tags: []
+categories: ["command-line", "bash-unix"]
+tags: ["command", "command-history", "path", "file-operations"]
 ---
 
 {% include toc %}

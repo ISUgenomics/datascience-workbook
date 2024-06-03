@@ -9,7 +9,7 @@ header:
 type: "intro"
 order: 220
 level: 1
-categories: []
+categories: ["office-tools", "developer-tools", "project-management", "communication"]
 tags: []
 ---
 

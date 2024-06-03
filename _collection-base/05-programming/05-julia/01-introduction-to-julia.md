@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 551
 level: 1
-categories: []
-tags: []
+categories: ["programming", "command-line", "data-types"]
+tags: ["julia", "syntax"]
 ---
 
 {% include toc %}

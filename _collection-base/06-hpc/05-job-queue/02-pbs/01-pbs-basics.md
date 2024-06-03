@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 652.1
 level: 2
-categories: []
-tags: []
+categories: ["HPC, computing", "job-scheduling", "command-line", "computing-tools"]
+tags: ["PBS", "workload-manager", "job-script", "job-submission", "job-management", "qsub", "qstat", "qdel", "qhold", "command"]
 ---
 
 {% include toc %}

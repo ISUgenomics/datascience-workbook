@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 541
 level: 1
-categories: []
-tags: []
+categories: ["programming", "command-line", "data-types", "plotting"]
+tags: ["R", "variables", "operators", "object", "vector", "dataframe"]
 ---
 
 {% include toc %}

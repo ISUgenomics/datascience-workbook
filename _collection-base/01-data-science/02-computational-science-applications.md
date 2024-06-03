@@ -9,7 +9,7 @@ header:
 type: "article"
 order: 120
 level: 1
-categories: ["knowledge"]
+categories: []
 tags: []
 ---
 

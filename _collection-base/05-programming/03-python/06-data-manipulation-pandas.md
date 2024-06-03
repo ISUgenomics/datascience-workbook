@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 536
 level: 2
-categories: []
-tags: []
+categories: ["programming", "data-types", "data-manipulation", "analysis", "hpc, computing", "library-package-module"]
+tags: ["pandas", "python", "series", "dataframe", "object", "functions", "import", "add-remove-data", "explore-data", "clean-data", "filter-data", "aggregate data"]
 ---
 
 {% include toc %}

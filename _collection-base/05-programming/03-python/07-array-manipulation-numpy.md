@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 537
 level: 2
-categories: []
-tags: []
+categories: ["programming", "data-types", "data-manipulation", "analysis", "hpc, computing", "library-package-module"]
+tags: ["numpy", "python", "array", "object", "functions", "import", "numerical-computing", "data-indexing", "data-clicing"]
 ---
 
 {% include toc %}

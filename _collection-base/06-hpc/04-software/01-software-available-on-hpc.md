@@ -9,7 +9,7 @@ header:
 type: "tutorial"
 order: 641
 level: 1
-categories: []
+categories: ["HPC, computing", "command-line", "computing-tools", "library-package-module"]
 tags: []
 ---
 

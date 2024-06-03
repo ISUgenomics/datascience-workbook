@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 414
 level: 3
-categories: []
-tags: []
+categories: ["developer-tools", "programming", "bash-scripting", "HPC, computing", "documentation"]
+tags: ["jupyter", "notebook", "IDE", "code-editor", "terminal", "R", "python", "markdown", "interactive", "OOD"]
 ---
 
 {% include toc %}

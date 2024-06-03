@@ -10,7 +10,7 @@ type: "tutorial"
 order: 310
 level: 1
 categories: ["command-line"]
-tags: []
+tags: ["windows", "macOS", "linux", "terminal", "command", "command-history", "prompt"]
 ---
 
 {% include toc %}

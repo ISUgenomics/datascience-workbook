@@ -10,8 +10,8 @@ header:
 type: "tutorial"
 order: 612.3
 level: 3
-categories: []
-tags: []
+categories: ["HPC, computing", "command-line", "computing-tools"]
+tags: ["SCINet", "ceres-cluster"]
 ---
 
 {% include toc %}

@@ -10,8 +10,8 @@ header:
 type: "tutorial"
 order: 423
 level: 2
-categories: []
-tags: []
+categories: ["developer-tools", "programming", "installation", "virtual-env"]
+tags: ["IDE", "code-editor", "python", "local-machine", "anaconda", "conda", "venv", "docker", "dependencies", "library-package-module"]
 ---
 
 {% include toc %}
@@ -651,7 +651,7 @@ In this example, the file lists four **Python** packages (`Flask`, `Pandas`, `Nu
 </div>
 
 
-# 5. Instal Python Libraries
+# 5. Install Python Libraries
 
 Python pre-defined functions are made available as `libraries`, also referred to as* `packages`, which need to be installed from somewhere. Python libraries can be indexed on CRAN, bioconductor and GitHub. What's the difference between installing from these locations?
 

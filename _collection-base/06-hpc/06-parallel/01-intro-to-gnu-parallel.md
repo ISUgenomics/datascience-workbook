@@ -10,8 +10,8 @@ header:
 type: "tutorial"
 order: 661
 level: 1
-categories: []
-tags: []
+categories: ["HPC, computing", "command-line", "computing-tools", "parallel-computing", "library-package-module"]
+tags: ["parallel"]
 ---
 
 {% include toc %}

@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 631
 level: 1
-categories: []
-tags: []
+categories: ["HPC, computing", "command-line", "computing-tools"]
+tags: ["home-dir", "project-dir", ".bashrc", "softlink"]
 ---
 
 {% include toc %}
