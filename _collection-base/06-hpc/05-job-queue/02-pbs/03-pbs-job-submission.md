@@ -10,7 +10,7 @@ type: "tutorial"
 order: 652.3
 level: 3
 categories: ["HPC, computing", "job-scheduling", "command-line", "computing-tools"]
-tags: ["PBS, "job-script", "job-submission"]
+tags: ["PBS", "job-script", "job-submission"]
 ---
 
 {% include toc %}
