@@ -440,6 +440,11 @@ details[open].l-frame {border-left: 1px solid var(--c-header); padding-left: 0.8
 
 summary::-webkit-details-marker {display: none;}   /* important in Safari */
 
+.choice:focus {
+  background-color: var(--c-boxdark);
+  color: var(--bc-code);
+  outline: none;
+}
 
 .details-save {
   margin-left: 1em !important;

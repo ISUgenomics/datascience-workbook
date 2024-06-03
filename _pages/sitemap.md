@@ -12,11 +12,12 @@ header:
 Collection size: {{ site['collection-base'] | size }}
 
 <!-- Buttons to switch views -->
-<button onclick="showDiv('toc')">Table of Contents</button>
-<button onclick="showDiv('index')">Site Index</button>
-<button onclick="showDiv('categories')">By Category</button>
+<button class="btn choice mr" onclick="showDiv('toc')">Table of Contents</button>
+<button class="btn choice mr" onclick="showDiv('index')">Site Index</button>
+<button class="btn choice" onclick="showDiv('categories')">By Category</button>
 
 {% assign content = site['collection-base'] | sort: 'order' %}
+
 
 <!-- Structured List -->
 {% assign tutorials_by_module = content | group_by_exp: "tutorial", "tutorial.path | remove: '_collection-base/' | split: '/' | first" %}
@@ -42,7 +43,6 @@ Collection size: {{ site['collection-base'] | size }}
 </div>
 
 
-
 <!-- Alphabetical List -->
 <div id="index" style="display: none;">
   <h2>Alphabetical List</h2>
@@ -60,7 +60,7 @@ Collection size: {{ site['collection-base'] | size }}
   <h2>Filtered by Category</h2>
   {% assign categories = content | map: 'categories' | flatten | uniq | sort %}
   {% for category in categories %}
-    <button class="category" onclick="showDiv('{{ category }}')">{{ category }}</button>
+    <button class="category btn choice" onclick="showDiv('{{ category }}')">{{ category }}</button>
   {% endfor %}
   <div class="selected-content">
     {% for category in categories %}
