@@ -57,24 +57,42 @@ Collection size: {{ site['collection-base'] | size }}
 
 <!-- Category List -->
 <div id="categories" style="display: none;">
-  <h2>Filtered by Category</h2>
+  <h2 id="category-heading">Filtered by Category</h2>
   {% assign categories = content | map: 'categories' | flatten | uniq | sort %}
+
   {% for category in categories %}
-    <button class="category btn choice" onclick="showDiv('{{ category }}')">{{ category }}</button>
+    {% assign sanitized_category = category | replace: ' ', '-' | replace: ',', '-' %}
+    <button class="category btn choice" onclick="showDiv('{{ sanitized_category }}', '{{ category }}')">{{ category }}</button>
   {% endfor %}
+
   <div class="selected-content">
     {% for category in categories %}
-      <div id="{{ category }}" class="category-content" style="display: none;">
-        <ul>
-          {% for tutorial in site['collection-base'] %}
-            {% if tutorial.categories contains category %}
-              <li>
-                <a href="{{ tutorial.url | relative_url }}" class="">{{ tutorial.title }}</a>
-              </li>
-            {% endif %}
+      {% assign sanitized_category = category | replace: ' ', '-' | replace: ',', '-' %}
+      {% assign tutorials = site['collection-base'] | where: 'categories', category %}
+      {% assign unique_tags = tutorials | map: 'tags' | flatten | uniq | sort %}
+
+      <div id="{{ sanitized_category }}" class="category-content" style="display: none;"><hr>
+        <button class="btn choice" onclick="showTags('{{ sanitized_category }}', this)">show tags</button>
+
+        <select id="tag-dropdown-{{ sanitized_category }}" class="tag-dropdown inline btn" style="display: none;" onchange="filterByTag(this, '{{ sanitized_category }}')">
+          <option value="">Filter by tag</option>
+          {% for tag in unique_tags %}
+            <option value="{{ tag }}">{{ tag }}</option>
+          {% endfor %}
+        </select>
+
+        <ul class="tutorial-list">
+          {% for tutorial in tutorials %}
+            <li data-tags="{{ tutorial.tags | join: ',' }}">
+              <a href="{{ tutorial.url | relative_url }}" class="">{{ tutorial.title }}</a>
+              <div class="tag-container" style="display: none;">
+                {% for tag in tutorial.tags %} <code class="code-inline" style="font-size: 0.6em;">{{ tag }}</code> {% endfor %}
+              </div>
+            </li>
           {% endfor %}
         </ul>
       </div>
+
     {% endfor %}
   </div>
 </div>

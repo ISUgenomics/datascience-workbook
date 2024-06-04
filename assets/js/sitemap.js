@@ -1,7 +1,6 @@
-
-
 // Table of Contents Collapsible Events
 document.addEventListener('DOMContentLoaded', () => {
+  // Initialize collapsible elements
   var coll = document.getElementsByClassName("collapsible");
   for (let i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
@@ -14,12 +13,18 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
   // Set 'toc' to display block by default
   document.getElementById('toc').style.display = 'block';
+
+  // Show tag dropdowns
+  var dropdowns = document.querySelectorAll('.tag-dropdown');
+  dropdowns.forEach(function(dropdown) {
+    dropdown.style.display = 'block';
+  });
 });
 
-
-function showDiv(targetId) {
+function showDiv(targetId, categoryName) {
   // Define the main views
   const mainViews = ['toc', 'index', 'categories'];
 
@@ -46,4 +51,36 @@ function showDiv(targetId) {
   if (!mainViews.includes(targetId)) {
     document.getElementById('categories').style.display = 'block';
   }
+
+  // Update the heading with the clicked category name
+  if (categoryName) {
+    document.getElementById('category-heading').innerHTML = 'Filtered by Category: <span style="color: #4a9fc2;">' + categoryName + '</span>';
+  }
+}
+
+function showTags(category, button) {
+  var tags = document.querySelectorAll(`#${category} .tag-container`);
+  var dropdown = document.getElementById(`tag-dropdown-${category}`);
+  var areVisible = Array.from(tags).some(tag => tag.style.display === 'block');
+
+  tags.forEach(tag => {
+    tag.style.display = areVisible ? 'none' : 'block';
+  });
+
+  button.textContent = areVisible ? 'show tags' : 'hide tags';
+}
+
+function filterByTag(selectElement, category) {
+  var selectedTag = selectElement.value;
+  var tutorialList = document.querySelector(`#${category} .tutorial-list`);
+  var tutorials = tutorialList.querySelectorAll('li');
+
+  tutorials.forEach(function(tutorial) {
+    var tags = tutorial.dataset.tags.split(',');
+    if (selectedTag === "" || tags.includes(selectedTag)) {
+      tutorial.style.display = 'list-item';
+    } else {
+      tutorial.style.display = 'none';
+    }
+  });
 }
