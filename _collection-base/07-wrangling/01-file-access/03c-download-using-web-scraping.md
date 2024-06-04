@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 713.3
 level: 3
-categories: []
-tags: []
+categories: ["HPC, computing", "data-management", "data-transfer", "command-line", "computing-tools", "library-package-module"]
+tags: ["python", "web-scraping", "download", "urllib", "requests", "BeautifulSoup", "selenium", "pandas"]
 ---
 
 {% include toc %}

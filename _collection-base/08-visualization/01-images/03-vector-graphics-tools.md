@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 813
 level: 2
-categories: []
-tags: []
+categories: ["visualization", "graphic-tools", "data-types"]
+tags: ["graphics", "vector", "scalable", "SVG", "AI", "EPS", "Inkscape", "Adobe Illustrator", "CorelDRAW", "Sketch", "Affinity Designer"]
 ---
 
 {% include toc %}

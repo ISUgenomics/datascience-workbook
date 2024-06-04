@@ -9,8 +9,8 @@ header:
 type: "cheatsheet"
 order: 932.21
 level: 4
-categories: []
-tags: []
+categories: ["project-management", "resources", "version-control", "documentation", "code-development"]
+tags: ["standards", "source-code", "code-storage", "git", "repository", "GitHub", "cheatsheet", "command"]
 ---
 
 {% include toc %}

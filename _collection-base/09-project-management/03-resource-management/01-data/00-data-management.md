@@ -9,8 +9,8 @@ header:
 type: "intro"
 order: 931.0
 level: 2
-categories: []
-tags: []
+categories: ["project-management", "resources", "data-management", "documentation"]
+tags: ["data-lifecycle", "data-collection", "data-security", "data-sharing", "data-archiving"]
 ---
 
 {% include toc %}

@@ -10,8 +10,8 @@ header:
 type: "tutorial"
 order: 712.3
 level: 3
-categories: []
-tags: []
+categories: ["HPC, computing", "data-management", "data-transfer", "command-line", "computing-tools"]
+tags: ["iRODS", "CyVerse", "command"]
 ---
 
 {% include toc %}

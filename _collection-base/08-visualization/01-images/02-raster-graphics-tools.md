@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 812
 level: 2
-categories: []
-tags: []
+categories: ["visualization", "graphic-tools", "data-types"]
+tags: ["graphics", "raster", "pixel", "PNG", "JPEG", "TIFF", "GIMP", "Adobe Photoshop", "CorelDRAW", "Pixlr", "Affinity Photo"]
 ---
 
 {% include toc %}

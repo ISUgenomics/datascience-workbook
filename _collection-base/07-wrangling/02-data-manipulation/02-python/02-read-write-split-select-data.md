@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 722.2
 level: 3
-categories: []
-tags: []
+categories: ["data-manipulation", "text-manipulation", "analysis", "command-line", "programming", "installation", "library-package-module"]
+tags: ["python", "pandas", "read-write", "join-merge", "split-data", "clean-data", "reshape-data", "filter-data", "select-data", "select-col", "select-row", "data-aggregation", "group-by", "dataset"]
 ---
 
 {% include toc %}
@@ -138,7 +138,7 @@ new_text:  This is a new text from a file.</span>
 </pre>
 
 
-## Spliting and selecting data
+## Splitting and selecting data
 
 Research data is often stored in structured formats such as CSV, JSON string, or Excel files. Python provides powerful libraries such as `pandas` and `numpy` to read and manipulate such data, including selecting, spliting, and grouping by specific conditions.
 

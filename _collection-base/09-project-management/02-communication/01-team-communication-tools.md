@@ -9,8 +9,8 @@ header:
 type: "intro"
 order: 921
 level: 2
-categories: []
-tags: []
+categories: ["project-management", "communication"]
+tags: ["video-conferencing", "messaging", "Teams", "Zoom", "Slack", "research-team", "collaboration"]
 ---
 
 {% include toc %}

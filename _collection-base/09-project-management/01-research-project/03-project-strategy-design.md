@@ -9,8 +9,8 @@ header:
 type: "article"
 order: 913
 level: 2
-categories: []
-tags: []
+categories: ["project-management"]
+tags: ["risk-management", "risk-mitigation", "strategy"]
 ---
 
 {% include toc %}

@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 714.1
 level: 3
-categories: []
-tags: []
+categories: ["HPC, computing", "data-preview", "command-line", "text-manipulation", "bash-unix", "computing-tools", "data-types"]
+tags: ["text-files", "TXT", "CSV", "TSV", "command", "less", "more", "cat", "tac", "head", "tail", "od"]
 ---
 
 {% include toc %}

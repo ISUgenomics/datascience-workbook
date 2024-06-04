@@ -9,7 +9,7 @@ header:
 type: "landing-page"
 order: 700
 level: 0
-categories: []
+categories: ["HPC, computing", "computing-tools", "analysis", "data-manipulation"]
 tags: []
 ---
 

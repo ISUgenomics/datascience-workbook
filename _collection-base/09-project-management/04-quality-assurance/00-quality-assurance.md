@@ -9,8 +9,8 @@ header:
 type: "article"
 order: 940
 level: 1
-categories: []
-tags: []
+categories: ["project-management", "data-management", "code-development", "documentation"]
+tags: ["standards", "productivity", "reproducibility"]
 ---
 
 

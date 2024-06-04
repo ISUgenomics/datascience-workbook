@@ -9,8 +9,8 @@ header:
 type: "article"
 order: 911
 level: 1
-categories: []
-tags: []
+categories: ["project-management"]
+tags: ["scientific", "automation", "decision-making"]
 ---
 
 {% include toc %}

@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 815
 level: 2
-categories: []
-tags: []
+categories: ["visualization", "graphic-tools", "data-types"]
+tags: ["graphics", "scientific", "BioRender", "SmartDraw", "Mind the Graph", "Adobe Express", "Google Drawings", "Canva", "Visme", "Infogram"]
 ---
 
 

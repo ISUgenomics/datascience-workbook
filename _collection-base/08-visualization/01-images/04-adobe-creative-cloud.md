@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 814
 level: 2
-categories: []
-tags: []
+categories: ["visualization", "graphic-tools", "data-types"]
+tags: ["graphics", "video", "audio", "animation", "e-signature", "PDF", "infographic", "design"]
 ---
 
 {% include toc %}

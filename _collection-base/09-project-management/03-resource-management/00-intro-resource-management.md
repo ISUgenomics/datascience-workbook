@@ -9,7 +9,7 @@ header:
 type: "intro"
 order: 930
 level: 1
-categories: []
+categories: ["project-management", "resources"]
 tags: []
 ---
 

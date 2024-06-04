@@ -9,7 +9,7 @@ header:
 type: "landing-page"
 order: 800
 level: 0
-categories: []
+categories: ["visualization", "plotting", "analysis", "graphic-tools"]
 tags: []
 ---
 

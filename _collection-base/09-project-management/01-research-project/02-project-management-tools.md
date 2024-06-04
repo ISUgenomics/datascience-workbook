@@ -9,8 +9,8 @@ header:
 type: "intro"
 order: 912
 level: 2
-categories: []
-tags: []
+categories: ["project-management", "documentation"]
+tags: ["scientific", "automation", "decision-making", "productivity", "agile", "timeline"]
 ---
 
 

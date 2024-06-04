@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 731
 level: 1
-categories: []
-tags: []
+categories: ["data-manipulation", "text-manipulation", "analysis", "command-line", "programming", "installation", "library-package-module", "virtual-env"]
+tags: ["python", "pandas", "numpy", "openpyxl", "conda"]
 ---
 
 {% include toc %}

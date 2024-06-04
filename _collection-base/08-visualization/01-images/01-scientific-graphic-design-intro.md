@@ -9,8 +9,8 @@ header:
 type: "intro"
 order: 811
 level: 1
-categories: []
-tags: []
+categories: ["visualization", "graphic-tools", "communication"]
+tags: ["graphics", "infographic"]
 ---
 
 {% include toc %}

@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 941
 level: 2
-categories: []
-tags: []
+categories: ["project-management", "data-management", "code-development", "documentation", "version-control"]
+tags: ["standards", "productivity", "reproducibility"]
 ---
 
 

@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 821.1
 level: 2
-categories: []
-tags: []
+categories: ["visualization", "graphic-tools", "plotting", "bash-scripting", "installation"]
+tags: ["gnuplot", "automation", "macOS", "linux", "windows", "in-terminal", "command"]
 ---
 
 {% include toc %}

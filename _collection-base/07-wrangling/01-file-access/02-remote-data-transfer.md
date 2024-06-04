@@ -9,8 +9,8 @@ header:
 type: "intro"
 order: 712
 level: 2
-categories: []
-tags: []
+categories: ["HPC, computing", "data-management", "data-transfer", "command-line", "computing-tools"]
+tags: ["data-sharing", "cloud-storage", "globus", "GridFTP", "scp", "rsync"]
 ---
 
 {% include toc %}

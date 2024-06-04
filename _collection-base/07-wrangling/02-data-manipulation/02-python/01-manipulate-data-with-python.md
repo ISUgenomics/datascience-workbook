@@ -9,8 +9,8 @@ header:
 type: "intro"
 order: 722.1
 level: 2
-categories: []
-tags: []
+categories: ["data-management", "data-manipulation", "analysis", "command-line", "programming", "installation", "library-package-module"]
+tags: ["python", "IDE"]
 ---
 
 {% include toc %}

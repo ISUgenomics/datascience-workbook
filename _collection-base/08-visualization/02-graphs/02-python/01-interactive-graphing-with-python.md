@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 822.01
 level: 2
-categories: []
-tags: []
+categories: ["visualization", "graphic-tools", "plotting", "programming", "library-package-module"]
+tags: ["plotly", "dash", "python", "charts", "widgets", "GUI", "interactive"]
 ---
 
 {% include toc %}

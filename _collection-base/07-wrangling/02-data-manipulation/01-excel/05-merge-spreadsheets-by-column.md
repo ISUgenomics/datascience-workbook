@@ -10,8 +10,8 @@ header:
 type: "tutorial"
 order: 721.5
 level: 3
-categories: []
-tags: []
+categories: ["data-management", "data-manipulation", "analysis"]
+tags: ["excel", "formula"]
 ---
 
 {% include toc %}

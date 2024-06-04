@@ -9,8 +9,8 @@ header:
 type: "article"
 order: 920
 level: 1
-categories: []
-tags: []
+categories: ["project-management", "communication"]
+tags: ["strategy", "collaboration"]
 ---
 
 {% include toc %}

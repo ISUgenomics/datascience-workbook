@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 931.2
 level: 4
-categories: []
-tags: []
+categories: ["project-management", "resources", "data-management"]
+tags: ["FAIR", "standards"]
 ---
 
 {% include toc %}

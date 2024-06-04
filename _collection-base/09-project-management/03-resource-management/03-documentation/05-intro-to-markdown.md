@@ -10,8 +10,8 @@ header:
 type: "tutorial"
 order: 933.5
 level: 3
-categories: []
-tags: []
+categories: ["project-management", "resources", "documentation"]
+tags: ["standards", "code-docs", "data-docs", "notebook", "jupyter", "VSC", "user-guide", "knowledge-retention", "reproducibility", "productivity", "markdown"]
 ---
 
 {% include toc %}

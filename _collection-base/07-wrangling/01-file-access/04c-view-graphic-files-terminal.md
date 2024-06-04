@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 714.3
 level: 3
-categories: []
-tags: []
+categories: ["HPC, computing", "data-preview", "command-line", "computing-tools", "visualization", "data-types", "installation"]
+tags: ["graphics", "X11-forwarding", "ASCII-art", "PNG", "",  "jp2a", "img2txt", "asciiview", "ascii-image-converter", "ascii-python"]
 ---
 
 {% include toc %}

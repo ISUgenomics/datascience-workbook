@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 952
 level: 2
-categories: []
-tags: []
+categories: ["project-management", "data-management", "code-development", "documentation", "version-control"]
+tags: ["standards", "reproducibility", "productivity", "deadline", "goals", "objectives", "strategy", "knowledge-retention", "publication"]
 ---
 
 {% include toc %}

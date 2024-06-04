@@ -9,8 +9,8 @@ header:
 type: "intro"
 order: 932.3
 level: 3
-categories: []
-tags: []
+categories: ["project-management", "resources", "version-control", "documentation", "code-development"]
+tags: ["standards", "source-code", "code-storage", "git", "repository", "GitHub", "hosting-platform"]
 ---
 
 {% include toc %}

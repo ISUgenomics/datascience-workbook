@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 712.1
 level: 3
-categories: []
-tags: []
+categories: ["HPC, computing", "data-management", "data-transfer", "computing-tools"]
+tags: ["GUI", "globus"]
 ---
 
 {% include toc %}

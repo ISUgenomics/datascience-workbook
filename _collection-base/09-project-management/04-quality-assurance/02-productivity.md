@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 942
 level: 2
-categories: []
-tags: []
+categories: ["project-management", "data-management", "code-development", "documentation", "version-control", "computing-tools"]
+tags: ["standards", "productivity", "timeline", "deadline", "goals", "objectives", "strategy", "backups", "knowledge-retention"]
 ---
 
 

@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 914
 level: 3
-categories: []
-tags: []
+categories: ["project-management"]
+tags: ["project-design", "framework", "planning", "goals", "objectives"]
 ---
 
 {% include toc %}

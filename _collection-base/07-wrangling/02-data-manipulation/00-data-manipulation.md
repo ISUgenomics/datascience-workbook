@@ -9,8 +9,8 @@ header:
 type: "intro"
 order: 720
 level: 1
-categories: []
-tags: []
+categories: ["data-manipulation", "analysis", "command-line", "programming", "bash-scripting"]
+tags: ["excel", "python", "R", "SQL"]
 ---
 
 {% include toc %}

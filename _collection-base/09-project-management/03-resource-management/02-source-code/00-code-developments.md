@@ -9,8 +9,8 @@ header:
 type: "intro"
 order: 932.0
 level: 2
-categories: []
-tags: []
+categories: ["project-management", "resources", "version-control", "documentation", "code-development"]
+tags: ["standards", "source-code", "code-lifecycle", "code-sharing", "code-testing", "code-release", "code-archiving"]
 ---
 
 {% include toc %}

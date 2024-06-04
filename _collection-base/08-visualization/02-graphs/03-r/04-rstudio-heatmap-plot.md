@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 823.04
 level: 4
-categories: []
-tags: []
+categories: ["visualization", "graphic-tools", "plotting", "programming", "library-package-module", "installation"]
+tags: ["Heatplus", "R", "heatmap-plot", "RStudio", "IDE"]
 ---
 
 {% include toc %}

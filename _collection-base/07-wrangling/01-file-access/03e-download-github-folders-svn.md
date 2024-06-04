@@ -9,8 +9,8 @@ header:
 type: "tutorial"
 order: 713.5
 level: 3
-categories: []
-tags: []
+categories: ["HPC, computing", "data-management", "data-transfer", "command-line", "computing-tools"]
+tags: ["GitHub", "download", "command", "get-github-folder", "get-github-file"]
 ---
 
 {% include toc %}

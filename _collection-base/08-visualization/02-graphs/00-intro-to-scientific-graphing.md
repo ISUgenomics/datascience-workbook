@@ -9,8 +9,8 @@ header:
 type: "intro"
 order: 820
 level: 1
-categories: []
-tags: []
+categories: ["visualization", "graphic-tools", "plotting", "bash-scripting", "programming"]
+tags: ["scientific", "excel", "gnuplot", "mathplotlib", "plotly", "python", "R", "Highcharts", "Google Charts", "Tableau Public"]
 ---
 
 {% include toc %}

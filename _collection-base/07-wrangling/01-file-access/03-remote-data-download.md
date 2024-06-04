@@ -9,8 +9,8 @@ header:
 type: "intro"
 order: 713
 level: 2
-categories: []
-tags: []
+categories: ["HPC, computing", "data-management", "data-transfer", "command-line", "computing-tools"]
+tags: ["download", "HTTP", "HTTPS", "wget", "curl", "API", "web-scraping", "batch-download"]
 ---
 
 {% include toc %}
