@@ -9,7 +9,7 @@ header:
 type: "tutorial"
 order: 542
 level: 2
-categories: ["programming", "data-manipulation", "analysis", "hpc, computing", "library-package-module"]
+categories: ["programming", "data-manipulation", "analysis", "HPC, computing", "library-package-module"]
 tags: ["R", "statistics"]
 ---
 

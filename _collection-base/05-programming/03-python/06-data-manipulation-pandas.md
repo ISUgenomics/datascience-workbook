@@ -9,7 +9,7 @@ header:
 type: "tutorial"
 order: 536
 level: 2
-categories: ["programming", "data-types", "data-manipulation", "analysis", "hpc, computing", "library-package-module"]
+categories: ["programming", "data-types", "data-manipulation", "analysis", "HPC, computing", "library-package-module"]
 tags: ["pandas", "python", "series", "dataframe", "object", "functions", "import", "add-remove-data", "explore-data", "clean-data", "filter-data", "aggregate data"]
 ---
 

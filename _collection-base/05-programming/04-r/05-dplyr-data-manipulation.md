@@ -9,7 +9,7 @@ header:
 type: "tutorial"
 order: 545
 level: 2
-categories: ["programming", "data-manipulation", "analysis", "hpc, computing", "library-package-module", "installation"]
+categories: ["programming", "data-manipulation", "analysis", "HPC, computing", "library-package-module", "installation"]
 tags: ["dplyr", "R", "dataset", "filter-data", "select-data", "summarize", "group-by"]
 ---
 

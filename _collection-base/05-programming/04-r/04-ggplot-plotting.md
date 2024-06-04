@@ -9,7 +9,7 @@ header:
 type: "tutorial"
 order: 544
 level: 2
-categories: ["programming", "data-manipulation", "analysis", "hpc, computing", "plotting", "library-package-module"]
+categories: ["programming", "data-manipulation", "analysis", "HPC, computing", "plotting", "library-package-module"]
 tags: ["ggplot2", "R", "charts", "dataset"]
 ---
 
