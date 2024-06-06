@@ -112,6 +112,7 @@ h4 {font-size: 1em; font-weight: 500; letter-spacing: 0.1em;}
 .bold {font-weight: bold !important;}
 .font-1 {font-size: 1em !important;}
 .font-1r {font-size: 1rem !important;}
+.font-08 {font-size: 0.8rem !important;}
 .center-h {text-align: center !important;}
 .vam {vertical-align: middle;}
 
@@ -174,6 +175,7 @@ p.pros, p.cons {margin-bottom: 0;}
 .warning table, .protip table, .note table, .example table, .exercise table, .more table, .required table {font-size: 0.9em !important; font-style: normal !important;}
 
 div.protip a:hover {color: #1a86ce !important;}
+div.bc-template p, div.bc-code p {margin-block-end: 0em !important;}
 
 .warning .highlighter-rouge, .protip .highlighter-rouge, .note .highlighter-rouge, .example .highlighter-rouge,
 .exercise .highlighter-rouge, .more .highlighter-rouge, .required .highlighter-rouge, .footnote .highlighter-rouge {
