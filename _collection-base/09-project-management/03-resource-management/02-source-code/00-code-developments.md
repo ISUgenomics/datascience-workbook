@@ -28,7 +28,7 @@ Code management is a critical aspect of research, especially in projects that in
 The efficient Code Management ensures that code, whether part of small-scale pipelines utilizing existing tools or complex development projects, remains robust, well-organized, accessible and usable.
 </div>
 </td>
-<td width=500 style="border: transparent;"><img width="800" src="{{ images_path }}/03_code_management.png"></td>
+<td width=500 style="border: transparent;"><img width="800" class="mb-0" src="{{ images_path }}/03_code_management.png"></td>
 </tr></table>
 
 
@@ -86,7 +86,7 @@ Effective code development practices enable researchers to build upon existing k
 <tr> <td>Continuous Integration/Continuous Deployment (CI/CD) for automated testing and deployment</td> <td><a href="https://travis-ci.org/" target="_blank">Travis CI</a></td> <td>automates the process of testing code and deploying it to production environments, ensuring code quality and reliability</td> </tr>
 </table>
 
-<br><span style="background-color: #e8e9e8; color: #ff3870; font-weight: 500; padding: 5px 7px;">checklist</span>&nbsp; **A few universal tips for Code Development:**
+<br><button class="btn c-alert mr font-08">checklist</button> **A few universal tips for Code Development:**
 
 1. **Define Clear Objectives** <br>
 Ensure that the purpose and requirements of your code are well-defined to guide its development.
@@ -134,7 +134,7 @@ Whether for simple data analysis scripts or complex computational models, versio
 </table>
 
 
-<br><span style="background-color: #e8e9e8; color: #ff3870; font-weight: 500; padding: 5px 7px;">checklist</span>&nbsp; **A few universal tips for Code Version Control:**
+<br><button class="btn c-alert mr font-08">checklist</button> **A few universal tips for Code Version Control:**
 
 1. **Start Early** <br>
 mplement version control at the beginning of your project to track changes from the start. Familiarize yourself with the basic commands of your version control system, even if you prefer a GUI tool, to enhance your efficiency and understanding.
@@ -178,7 +178,7 @@ Good documentation practices transform code from being a solitary tool into a sh
 </table>
 
 
-<br><span style="background-color: #e8e9e8; color: #ff3870; font-weight: 500; padding: 5px 7px;">checklist</span>&nbsp; **A few universal tips for Code Documentation:**
+<br><button class="btn c-alert mr font-08">checklist</button> **A few universal tips for Code Documentation:**
 
 1. **Document as You Go** <br>
 Integrate documentation into your development process instead of treating it as an afterthought to ensure completeness and accuracy.
@@ -223,7 +223,7 @@ Embracing code sharing and collaboration not only accelerates the research proce
 </table>
 
 
-<br><span style="background-color: #e8e9e8; color: #ff3870; font-weight: 500; padding: 5px 7px;">checklist</span>&nbsp; **A few universal tips for Code Sharing and Collaboration:**
+<br><button class="btn c-alert mr font-08">checklist</button> **A few universal tips for Code Sharing and Collaboration:**
 
 1. **Use Version Control Systems** <br>
 Adopt tools like Git to track changes, facilitate merges, and manage contributions from multiple collaborators.
@@ -268,7 +268,7 @@ Adopting a systematic approach to code testing and quality assurance is not just
 </table>
 
 
-<br><span style="background-color: #e8e9e8; color: #ff3870; font-weight: 500; padding: 5px 7px;">checklist</span>&nbsp; **A few universal tips for Code Testing and Quality Assurance:**
+<br><button class="btn c-alert mr font-08">checklist</button> **A few universal tips for Code Testing and Quality Assurance:**
 
 1. **Incorporate Testing Early** <br>
 Integrate testing into the early stages of development to catch and correct issues before they escalate. Incorporate code reviews into your QA process to leverage collective expertise and improve code quality.
@@ -309,7 +309,7 @@ A systematic approach to code release/deployment not only enhances the visibilit
 </table>
 
 
-<br><span style="background-color: #e8e9e8; color: #ff3870; font-weight: 500; padding: 5px 7px;">checklist</span>&nbsp; **A few universal tips for Code Release/Deployment:**
+<br><button class="btn c-alert mr font-08">checklist</button> **A few universal tips for Code Release/Deployment:**
 
 1. **Adopt a Versioning Scheme** <br>
 Use a clear versioning system (e.g., Semantic Versioning) to manage releases and communicate changes to users.
@@ -350,7 +350,7 @@ A thoughtful approach to code archiving respects the effort invested in developi
 </table>
 
 
-<br><span style="background-color: #e8e9e8; color: #ff3870; font-weight: 500; padding: 5px 7px;">checklist</span>&nbsp; **A few universal tips for Code Archiving:**
+<br><button class="btn c-alert mr font-08">checklist</button> **A few universal tips for Code Archiving:**
 
 1. **Select the Right Archiving Platform** <br>
 Choose a platform that aligns with your field’s standards and ensures long-term preservation and access. Explore resources offered by your institution, such as institutional repositories, for archiving and disseminating research outputs.

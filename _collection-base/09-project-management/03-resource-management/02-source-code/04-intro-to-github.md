@@ -41,7 +41,9 @@ See <a class="t-links" href="933.5"></a> tutorial as a good starting point.
 Version control systems are software tools that help manage changes to source code over time, allowing multiple contributors to work collaboratively and track modifications, enabling easy recovery of previous versions if needed.
 </div>
 
-<p style="color: #ff3870;font-weight: 500;"> To learn more about Version Control Systems, see the introduction to <a class="t-links" href="932.1"></a> in the <a class="t-links" href="900"></a> section of this workbook.</p>
+<div class="more" markdown="1">
+... about Version Control Systems from the introduction to <a class="t-links" href="932.1"></a> in the <a class="t-links" href="900"></a> section of this workbook.
+</div>
 
 ### What VCS allows you to do?
 
@@ -58,7 +60,11 @@ effecting others' work.
 
 <a href="https://github.com/" target="_blank">GitHub  ⤴</a> utilizes <b><a href="https://git-scm.com/" target="_blank">Git  ⤴</a></b>, a distributed version control system that tracks changes in files over time, perfect for facilitating collaboration among multiple contributors. As a cloud-based hosting platform, GitHub provides a space for developers to store their `Git-initialized projects` and manage versions of their code. Thus, the combination of **GitHub** and **Git** forms a robust infrastructure for effective code management, team collaboration, and open-source contributions.
 
-<p style="color: #ff3870;font-weight: 500;"> To learn more about <b>GIT</b>, see the practical tutorial <a class="t-links" href="932.2"></a> in the <a class="t-links" href="900"></a> / <a class="t-links" href="932.1"></a> section of this workbook.</p>
+<div class="more" markdown="1">
+... about <b>GIT</b> fromn the practical tutorial <a class="t-links" href="932.2"></a> in the <a class="t-links" href="900"></a> / <a class="t-links" href="932.1"></a> section of this workbook.
+</div>
+
+---
 
 Before we delve into the specifics of [getting started with GitHub](#how-to-get-a-github-account), it's crucial to **first revisit a few fundamental concepts of Git**, the version control system used for synchronizing your local changes with the remote GitHub repository.
 

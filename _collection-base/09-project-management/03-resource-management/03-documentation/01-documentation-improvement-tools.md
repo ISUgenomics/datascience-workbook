@@ -147,20 +147,21 @@ By adhering to these best practices, you not only facilitate understanding but a
 * Periodically revisit documentation for accuracy.
 * Have peers review it for clarity and comprehensiveness.
 
----
 
 # Markdown
 
 Markdown is a lightweight markup language that simplifies the formatting of text. Its simplicity and ease of use have made it a popular choice for creating digital documentation, READMEs, and even content for websites. Markdown is an ideal choice for both project documentation and inline code documentation, seamlessly blending human-readable text and technical details.
 
-<span style="color: #ff3870;font-weight: 500;">Learn more about Markdown following the practical tutorial</span> <a class="t-links" href="933.5"></a>
+<button class="btn more mr"></button> *...about Markdown following the practical tutorial <a class="t-links" href="933.5"></a>*
 
 
 # Tools for Research Documentation
 
 **Documentation** extends beyond just code, serving as a cornerstone for all research endeavors. An intricately documented project **illuminates the path to success** by enhancing understanding, interpretation, repeatability, and drawing increased attention to the presented study. Additionally, it serves as a time capsule, enabling researchers to efficiently revisit and extract valuable methodologies and insights for integration in future projects, saving time and **enhancing productivity**.
 
-<span style="color: #ff3870;font-weight: 500;">Explore the practical tutorial <a class="t-links" href="933.3"></a> to learn about Digital Laboratory Notebooks, Note-taking and Writing Tools, Collaborative Writing Platforms, Reference Managers, and Data Visualization Tools.</span>
+<div class="more" markdown="1">
+Explore the practical tutorial <a class="t-links" href="933.3"></a> to learn about Digital Laboratory Notebooks, Note-taking and Writing Tools, Collaborative Writing Platforms, Reference Managers, and Data Visualization Tools.
+</div>
 
 ## Digital Laboratory Notebooks
 
@@ -182,13 +183,14 @@ Reference managers are software tools designed to **collect, organize, and cite 
 
 Data visualization tools help researchers and analysts transform complex datasets into intuitive, interactive, and comprehensible visuals. They enable the creation of a variety of visual representations, such as graphs, charts, and maps, facilitating the interpretation and communication of data insights.
 
----
 
 # Tools for Code Documentation
 
 **Code documentation serves as the blueprint of software**, illuminating the architecture, functionalities, and nuances embedded within the lines of code. It acts as a beacon for developers, offering insights that expedite debugging, modification, and enhancement processes, ensuring the software’s resilience and adaptability. Moreover, well-crafted code documentation is akin to a **knowledge repository**, empowering developers to swiftly extract and **reapply coding solutions**, algorithms, or logic in new programming endeavors, **optimizing efficiency and innovation**.
 
-<span style="color: #ff3870;font-weight: 500;">Explore the practical tutorial <a class="t-links" href="933.4"></a> to learn about Digital Laboratory Notebooks, Note-taking and Writing Tools, Collaborative Writing Platforms, Reference Managers, and Data Visualization Tools.</span>
+<div class="more" markdown="1">
+Explore the practical tutorial <a class="t-links" href="933.4"></a> to learn about Digital Laboratory Notebooks, Note-taking and Writing Tools, Collaborative Writing Platforms, Reference Managers, and Data Visualization Tools.
+</div>
 
 ## Interactive Notebooks
 

@@ -68,9 +68,9 @@ The table provides a general overview of a few major online hosting platforms fo
 |Private Repositories|Limited | Unlimited|Limited  | Unlimited      |
 | Pricing            |Freemium, Paid|Freemium, Paid|Freemium, Paid|Free, Paid|
 
-^ `On-prem hosting` *short for on-premises hosting, refers to the deployment of the hosting platform on the organization's own infrastructure or servers.* <br>
-^ `Freemium pricing` *is a business model where the core features of a product or service are provided for free, while advanced or premium features require a paid subscription.* <br>
-^ `CI/CD integration` *short for Continuous Integration and Continuous Deployment/Delivery, refers to the seamless integration and automation of the software development process, from code changes to deployment.*
+^ `On-prem hosting` <em class="footnote">short for on-premises hosting, refers to the deployment of the hosting platform on the organization's own infrastructure or servers.</em> <br>
+^ `Freemium pricing` <em class="footnote">is a business model where the core features of a product or service are provided for free, while advanced or premium features require a paid subscription.</em> <br>
+^ `CI/CD integration` <em class="footnote">short for Continuous Integration and Continuous Deployment/Delivery, refers to the seamless integration and automation of the software development process, from code changes to deployment.</em>
 
 ---
 
@@ -84,9 +84,9 @@ The table provides a general overview of a few major online hosting platforms fo
 
 <a href="https://github.com" target="_blank">GitHub  ⤴</a> is a web-based platform that provides hosting for Git repositories. It allows you to **create public or private repositories**, collaborate with other people on a project, and track changes over time. GitHub is **widely used by developers and organizations** to manage their code and is one of the most popular Git hosting services available.
 
-<span style="color: #ff3870;font-weight: 500;">
-Learn more from the <b>hands-on tutorial</b> <a class="t-links" href="932.4"></a> provided in this section of the workbook.
-</span><br><br>
+<div class="more" markdown="1">
+... from the <b class="c-good">hands-on tutorial</b> <a class="t-links" href="932.4"></a> provided in this section of the workbook.
+</div>
 
 ![01-github_website.png]({{ images_path }}/01-github_website.png)
 
@@ -94,9 +94,9 @@ Learn more from the <b>hands-on tutorial</b> <a class="t-links" href="932.4"></a
 
 <a href="https://bitbucket.org" target="_blank">Bitbucket  ⤴</a> is a code hosting service that **supports multiple version control systems**, including both Git and Mercurial. It provides a range of tools for managing teams and projects, including permissions management, role-based access control, support for large files & binary files, and collaboration features. Bitbucket is **part of the Atlassian suite of tools**, and it integrates well with other Atlassian products such as <a href="https://www.atlassian.com/software/jira" target="_blank">Jira  ⤴</a> *(issue tracking tool)* and <a href="https://www.atlassian.com/software/confluence" target="_blank">Confluence  ⤴</a> *(collaboration and documentation platform)*.
 
-<span style="color: #ff3870;font-weight: 500;">
-Learn more from the <b>hands-on tutorial</b> <a class="t-links" href="932.5"></a> provided in this section of the workbook.
-</span><br><br>
+<div class="more" markdown="1">
+... from the <b class="c-good">hands-on tutorial</b> <a class="t-links" href="932.5"></a> provided in this section of the workbook.
+</div>
 
 ![01-version_control_bitbucket.png]({{ images_path }}/01-version_control_bitbucket.png)
 

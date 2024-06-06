@@ -18,7 +18,7 @@ tags: ["standards", "source-code", "code-storage", "git", "repository", "local-r
 {% include page-sourcing.html %}
 
 
-# <span style="color: #8896c1;">Introduction</span>
+# <b class="c-header">Introduction</b>
 
 **<a href="https://git-scm.com/" target="_blank">Git  ⤴</a> is a Version Control System** (VCS) that tracks changes to files over time so that you can recall specific versions later. It’s like a time machine for your code (and docs or notes), allowing you to travel back and see what your project looked like yesterday, last week, or even last year.
 
@@ -29,7 +29,9 @@ In the simplest of terms, VCS are the toolkits for programmers that keep track o
 Imagine you're working on a big project, and suddenly something breaks. With VCS, you can hop back to the past version where things worked just fine! Intriguing, right?
 </div>
 
-<span style="color: #ff3870;font-weight: 500;"> To better understand what a VCS is, you can refer back to our previous section in this workbook, <a class="t-links" href="932.1"></a> which comprehensively covers this topic.</span>
+<div class="more" markdown="1">
+To better understand what a VCS is, you can refer back to our previous section in this workbook, <a class="t-links" href="932.1"></a> which comprehensively covers this topic.
+</div>
 
 <a href="https://git-scm.com/" target="_blank">Git  ⤴</a>, unlike other VCSs, is a distributed version control system. In a non-techie lingo, it means that **every person contributing to a project gets their copy of the entire project**. *(It's like having your cake and eating it too!)* This sets Git apart from other VCS, as it doesn't rely on a central server to store all the versions of a project. Instead, every developer's working copy of the code is also a repository that can contain the full history and version tracking capabilities. So, the beauty of Git is that **it allows you to work offline and work concurrently with other developers without interrupting each other's contributions**.
 
@@ -64,37 +66,20 @@ Moreover, Git's architecture provides **support for divergent, simultaneous work
 
 ## Summary of Git features
 
-**Distributed Version Control System** <br>
-Every user gets a full-fledged copy of the entire codebase and its history on their local machine, enabling offline work and providing a safety net in case the central server fails.
-
-**Non-linear Development** <br>
-Git supports rapid branching and merging, and includes specific tools for visualizing and navigating a non-linear development history, enabling experimentation, simultaneous efforts, and flexibility for multiple collaborators.
-
-**Data Integrity** <br>
-Git uses a checksum mechanism to keep track of all changes in the repository, ensuring the integrity and consistency of your data.
-
-**Fast Performance** <br>
-Git operations (like `commit`, `merge`, and `compare`) are fast and efficient, as they are performed on the local repository without needing network access.
-
-**Staging Area** <br>
-Git provides a staging area or "index" that lets you format and review your commits before completing the commit.
-
-**Small Footprint** <br>
-Despite storing complete history, Git repositories are small and efficient compared to other VCS, thanks to the storage model Git uses.
-
-**Free and Open-Source** <br>
-Git is free software distributed under the terms of the GNU General Public License.
-
-**Garbage Accumulation Prevention** <br>
-Git cleans up unnecessary files and optimizes your repository using the `git gc` (garbage collection) command.
-
-**Large Community Support** <br>
-Git has a large and active community, which contributes to its continual development and offers extensive support and resources.
+<table>
+  <tr> <th>Distributed Version Control System</th> <td>Every user gets a full-fledged copy of the entire codebase and its history on their local machine, enabling offline work and providing a safety net in case the central server fails.</td> </tr>
+  <tr> <th>Non-linear Development</th> <td>Git supports rapid branching and merging, and includes specific tools for visualizing and navigating a non-linear development history, enabling experimentation, simultaneous efforts, and flexibility for multiple collaborators.</td> </tr>
+  <tr> <th>Data Integrity</th> <td>Git uses a checksum mechanism to keep track of all changes in the repository, ensuring the integrity and consistency of your data.</td> </tr>
+  <tr> <th>Fast Performance</th> <td><p markdown="1">Git operations (like `commit`, `merge`, and `compare`) are fast and efficient, as they are performed on the local repository without needing network access.</p></td> </tr>
+  <tr> <th>Staging Area</th> <td>Git provides a staging area or "index" that lets you format and review your commits before completing the commit.</td> </tr>
+  <tr> <th>Small Footprint</th> <td>Despite storing complete history, Git repositories are small and efficient compared to other VCS, thanks to the storage model Git uses.</td> </tr>
+  <tr> <th>Free and Open-Source</th> <td>Git is free software distributed under the terms of the GNU General Public License.</td> </tr>
+  <tr> <th>Garbage Accumulation Prevention</th> <td><p markdown="1">Git cleans up unnecessary files and optimizes your repository using the `git gc` (garbage collection) command.</p></td> </tr>
+  <tr> <th>Large Community Support</th> <td>Git has a large and active community, which contributes to its continual development and offers extensive support and resources.</td> </tr>
+</table>
 
 
----
-
-# <span style="color: #8896c1;">Getting started with Git</span>
+# <b class="c-header">Getting started with Git</b>
 
 *Excited to dive into the world of Git? I know you are!*
 
@@ -220,9 +205,7 @@ Edit some files or add new ones, then track and commit these changes, and finall
 Contribute your changes to the original repository by submitting `pull request` when you don't have permissions to pushing your commits directly. <br>
 
 
----
-
-# <span style="color: #8896c1;">Hands-on tutorial</span>
+# <b class="c-header">Hands-on tutorial</b>
 
 ## **1. Install Git**
 
@@ -303,7 +286,7 @@ In the context of Git commands, `git` is a command-line keyword that signals to 
 
 From initializing your first repository to making commits, managing remote repositories, and navigating branches, these commands form the backbone of typical Git workflows. As you grow in your journey of using Git, you'll find these commands invaluable for version control and collaborative coding endeavors.
 
-### • *General*
+### <b class="prefix-2"></b>*General*
 
 <div class="note" markdown="1">
 Git commands from the General category are used for setting up your Git environment and obtaining help on different commands; these commands are essential when you're just starting with Git or when you need further information on a specific command.
@@ -316,7 +299,7 @@ Git commands from the General category are used for setting up your Git environm
 | `git config --global user.name "{name}"` | Set the `name` you want attached to your commit transactions. |
 | `git config --global user.email "{email address}"` | Set the `email` you want attached to your commit transactions. |
 
-### • *Local Repository*
+### <b class="prefix-2"></b>*Local Repository*
 
 <div class="note" markdown="1">
 Commands in this category are utilized when you are working on a project on your local machine, such as initializing a new repository, making changes to files, staging these changes, and recording them with commits.
@@ -340,7 +323,7 @@ Commands in this category are utilized when you are working on a project on your
 | `git diff` | Show changes between commits, commit and working tree, etc. |
 
 
-### • *Remote Repository*
+### <b class="prefix-2"></b>*Remote Repository*
 
 <div class="note" markdown="1">
 These commands come into play when you need to interact with a repository that is hosted on an external server or online platform (like GitHub), such as when cloning an existing project to your local machine, connecting your local repo to a remote one, or sharing changes between local and remote repositories.
@@ -362,7 +345,7 @@ These commands come into play when you need to interact with a repository that i
 | `git pull` | Fetch and merge changes on the remote server to your working local directory. |
 
 
-### • *Branching*
+### <b class="prefix-2"></b>*Branching*
 
 <div class="note" markdown="1">
 Branching commands are essential when you want to experiment with new features or changes without affecting the main line of development. These commands allow you to create, switch between, merge, and delete branches in your repository.
@@ -384,15 +367,14 @@ Branching commands are essential when you want to experiment with new features o
 | `git branch -d {branch-name}` | Delete a selected branch. |
 
 
-### • *More advanced*
+### <b class="prefix-2"></b>*More advanced*
 
 <div class="protip" markdown="1">
 Remember, Git is a very powerful tool with a plethora of commands. This was just a basic list for beginners, and there are many more commands and options to explore as you become more comfortable with using Git. Then it may be helpful for you to visit a more comprehensive list of <a class="t-links" href="932.21"></a> (cheatsheet) also provided in this workbook.
 </div>
 
----
 
-# <span style="color: #8896c1;">Working with Local Repos</span>
+# <b class="c-header">Working with Local Repos</b>
 
 ## **3. Create a new Local Repo**
 
@@ -428,15 +410,13 @@ You can verify Git tracking feature by editing any file in your new local reposi
 
 By committing your changes, you're creating a record of the project's history, allowing you to easily track progress, revert changes if needed, and collaborate with others. Committing changes is a vital part of the Git workflow, providing a structured and organized approach to managing your project's evolution.
 
-<span style="color: #ff3870;font-weight: 500;">
-First, have a look at <b>Good Practices</b> when commiting:
-</span><br>
+<span class="c-good">First, have a look at <b>Good Practices</b> when commiting:</span><br>
 
-* **Creating separate commits for each modified file** allows for a granular history of changes, providing a clear record of which files were modified and when. This level of granularity makes it easier to pinpoint specific changes and understand their impact on the overall project.
+<em class="pros"></em> **Creating separate commits for each modified file** allows for a granular history of changes, providing a clear record of which files were modified and when. This level of granularity makes it easier to pinpoint specific changes and understand their impact on the overall project. <base class="mb">
 
-* **Making commits often**, even for changes within the same file, ensures that progress is captured regularly and can be easily rolled back if needed. This approach allows for a more fine-grained view of the development process and helps identify which specific modifications introduced issues or caused code to break.
+<em class="pros"></em> **Making commits often**, even for changes within the same file, ensures that progress is captured regularly and can be easily rolled back if needed. This approach allows for a more fine-grained view of the development process and helps identify which specific modifications introduced issues or caused code to break. <base class="mb">
 
-* By embracing this practice, developers can **maintain a reliable and detailed history** of their project, making it easier to understand, collaborate, and recover from any unexpected problems that may arise during the development process.
+<em class="pros"></em> By embracing this practice, developers can **maintain a reliable and detailed history** of their project, making it easier to understand, collaborate, and recover from any unexpected problems that may arise during the development process.
 
 
 So, after making modifications or adding new files to your project, <br>
@@ -552,18 +532,17 @@ This command allows you to compare different versions of your project. By specif
   <td style="width:57%; color:#5790c4;"><b>While in the state of a specific commit, <br>you can perform various actions:</b></td>
 </tr>
 <tr>
-  <td><b>Inspecting past code</b> <br>Switching to a specific commit allows you to view the code exactly as it was at that point in time. This can be useful for reviewing or understanding how certain features or functionalities were implemented in the past.</td>
-  <td><b>Viewing and inspecting the code</b> <br>You can examine the files, check their content, and review the changes made in that commit using tools like text editors, IDEs, or Git diff commands.</td>
+  <td style="vertical-align: top;"><b>Inspecting past code</b> <br>Switching to a specific commit allows you to view the code exactly as it was at that point in time. This can be useful for reviewing or understanding how certain features or functionalities were implemented in the past.</td>
+  <td style="vertical-align: top;"><b>Viewing and inspecting the code</b> <br>You can examine the files, check their content, and review the changes made in that commit using tools like text editors, IDEs, or Git diff commands.</td>
 </tr>
 <tr>
-  <td><b>Debugging or troubleshooting</b> <br>If you encounter a bug or issue in your current project, switching to a specific commit in the past can help you isolate and analyze the code at that particular state. This can assist in identifying the source of the problem and potentially finding a solution.</td>
-  <td><b>Running tests or simulations</b> <br>You can test the functionality or behavior of your project using the code at that specific commit. This can help assess how changes have impacted the project's behavior or performance.</td>
+  <td style="vertical-align: top;"><b>Debugging or troubleshooting</b> <br>If you encounter a bug or issue in your current project, switching to a specific commit in the past can help you isolate and analyze the code at that particular state. This can assist in identifying the source of the problem and potentially finding a solution.</td>
+  <td style="vertical-align: top;"><b>Running tests or simulations</b> <br>You can test the functionality or behavior of your project using the code at that specific commit. This can help assess how changes have impacted the project's behavior or performance.</td>
 </tr>
 <tr>
-  <td><b>Testing different code versions</b> <br>You may want to test how your project behaves at a specific point in time, comparing it to the current version. Switching to a specific commit allows you to run tests or perform experiments on that specific codebase.</td>
-  <td><b>Making temporary modifications</b> <br>While in the "detached HEAD" state, you can make changes, experiment, or test specific code in the context of that commit. <br><i>However, keep in mind that any changes made in this state will not be part of any branch and will be lost if you switch to a different commit or branch.</i> <br><br><b>Branching or creating new branches</b> <br>While in the state of a specific commit, you can create new branches to experiment or develop new features independently from the main development line.</td>
+  <td style="vertical-align: top;"><b>Testing different code versions</b> <br>You may want to test how your project behaves at a specific point in time, comparing it to the current version. Switching to a specific commit allows you to run tests or perform experiments on that specific codebase.</td>
+  <td style="vertical-align: top;"><b>Making temporary modifications</b> <br>While in the "detached HEAD" state, you can make changes, experiment, or test specific code in the context of that commit. <br><i>However, keep in mind that any changes made in this state will not be part of any branch and will be lost if you switch to a different commit or branch.</i> <br><br><b>Branching or creating new branches</b> <br>While in the state of a specific commit, you can create new branches to experiment or develop new features independently from the main development line.</td>
 </tr>
-
 </table>
 
 
@@ -629,9 +608,8 @@ git checkout master
 ```
 By executing this command, you will return to the latest commit on the main branch. This will bring your repository back to the current state and allow you to continue working on the main development line.
 
----
 
-# <span style="color: #8896c1;">Working with Remote Repos</span>
+# <b class="c-header">Working with Remote Repos</b>
 
 There are several online platforms, like <a href="https://github.com/" target="_blank">GitHub  ⤴</a>, Bitbucket, and GitLab, that provide hosting services for remote repositories. These platforms come with features that make collaboration easier, such as issue tracking, code reviews, and team management tools.
 
@@ -659,9 +637,9 @@ After you log into GitHub, you can create a new repository by clicking on the `+
   * and you can also provide a description,
   * decide whether the repository should be public or private,
   * and optionally initialize it with a `README` file.
-    * <i><span style="color: #ff3870;font-weight: 500;">Don't initialize the new remote repo with any files created online <br> if you're planning to connect it with your existing local repository.</span></i>
+    * <i><span class="c-bad">Don't initialize the new remote repo with any files created online <br> if you're planning to connect it with your existing local repository.</span></i>
 
-<p align="center"><img width="800" src="{{ images_path }}/01-github_new_repo_setup.png"></p>
+<img width="800" src="{{ images_path }}/01-github_new_repo_setup.png">
 
 
 ## **8. Connect a remote to your local repo**
@@ -794,9 +772,8 @@ This command sends your committed changes from the local branch to the correspon
 By executing `git push`, you contribute your work to the shared codebase, making it available for collaboration and integration. This allows others to view your changes, provide feedback, and incorporate them into the project.
 </div>
 
----
 
-# <span style="color: #8896c1;">Collaborating on Projects</span>
+# <b class="c-header">Collaborating on Projects</b>
 
 ***Ever wanted to work on an exciting open-source project, or maybe a colleague's project?*** <br>*That's where cloning repos comes into play.*
 
@@ -844,7 +821,7 @@ git clone https://github.com/ISUgenomics/data_graphing.git
 
 ![01-git_clone_local.png]({{ images_path }}/01-git_clone_local.png)
 
-<span style="color: #ff3870;font-weight: 500;">So as you can see:</span><br>
+<em class="c-header">So as you can see:</em><br>
 When you clone a repository, **Git automatically adds the original repository as a remote**, so you can fetch from and push to it right away without further setup.
 
 
@@ -897,13 +874,13 @@ You can view commits history with the `git log` command. This command will displ
 * and the `commit message`.
 
 When you run `git log`, you should see output similar to this:
-```
+<pre class="output">
 commit a8adf13dc8f5f88cbbf345b13126a9253cf8a7a4 (HEAD -> main, origin/main, origin/HEAD)
 Author: Author Name <author@email.com>
 Date:   Thu Jun 22 11:49:30 2023 -0700
 
     Some commit message here
-```
+</pre>
 
 ### *Compare commits*
 
@@ -1093,7 +1070,7 @@ When pulling from the remote repository or pushing to it, conflicts may arise if
 
 ![01-github_pull_conflict.png]({{ images_path }}/01-github_pull_conflict.png)
 
-### • *Edit conflicted file*
+### <b class="prefix-2"></b>*Edit conflicted file*
 
 **To resolve the conflict, you need to manually edit file(s) and choose which changes to keep.**
 
@@ -1103,14 +1080,13 @@ It's important to **carefully review and understand the conflicting changes** to
 
 Here's an example of a file with a conflict:
 
-<div style="margin-bottom: 10px;">
-<code style="background-color: #d9d9e3; width:100%; display: block; padding: 10px; font-size: 14px;">
-<<<<<<< HEAD <br>
-This is the current content of the file. <br>
-======= <br>
-This is the incoming change from the remote repository. <br>
+<pre class="output">
+<<<<<<< HEAD
+This is the current content of the file.
+=======
+This is the incoming change from the remote repository.
 >>>>>>> branch-name
-</code></div>
+</pre>
 
 In this example, the file contains a conflict between two different versions.
 * The section between `<<<<<<< HEAD` and `=======` represents the content of the file as it exists in your local branch (HEAD).
@@ -1121,10 +1097,9 @@ In this example, the file contains a conflict between two different versions.
 * and make the necessary modifications to resolve the conflict.
   * for example, decide to keep your local changes over incoming from remote codbase:
 
-    <div style="margin-bottom: 10px;">
-    <code style="background-color: #d9d9e3; width:100%; display: block; padding: 10px; font-size: 14px;">
-    This is the current content of the file. <br>
-    </code></div>
+    <div class="bc-template">
+    This is the current content of the file.
+    </div>
 
 **Once you've resolved the conflict**, you can:
 * save the file
@@ -1177,7 +1152,11 @@ Let's explore the differences and who can use each option:
 
 ### *Pull Request from a Fork*
 
-|Feature      |Pull requests are commonly used when contributing to open-source projects or collaborating on repositories where you do NOT have direct write access.|
+<div class="note" markdown="1">
+Pull requests are commonly used when contributing to open-source projects or collaborating on repositories where you do NOT have direct write access.
+</div>
+
+|rules        |explanation              |
 |-------------|-------------------------|
 |When to use? |In this case, to contribute you typically fork the original repository, which creates a separate copy under your own GitHub account.|
 |How to use?  |Forked repositories allow you to freely experiment, make changes, and **propose your changes back to the original repository via pull requests**.|
@@ -1213,7 +1192,11 @@ Now, the project maintainers or collaborators can review your changes, provide f
 
 ### *Pull Request from Branch*
 
-|Feature      |GitHub allows you to create pull requests from branches within the original repository itself.|
+<div class="note" markdown="1">
+GitHub allows you to create pull requests from branches within the original repository itself.
+</div>
+
+|rules        |explanation              |
 |-------------|-------------------------|
 |When to use? |This feature is particularly **useful for collaborative development** within a single repository where contributors **have direct write access**.|
 |How to use?  |By creating branches within the original repository, you can work on separate features, bug fixes, or experiments independently and propose those changes via pull requests for review and merging.|

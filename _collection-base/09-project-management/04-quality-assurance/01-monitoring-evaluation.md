@@ -143,7 +143,6 @@ One team member is tasked with tracking the computational efficiency of the anal
 </details>
 
 
-
 ### **EVALUATION**
 
 <table style="margin: 0;"><tr>
@@ -202,7 +201,7 @@ One team member is tasked with tracking the computational efficiency of the anal
 </details>
 
 
-### EXCERCISE
+### <button class="btn exercise"></button>
 
 <div class="exercise before" markdown="1" data-before="Planning M&E actions in your research">
 Choose any current or upcoming project you're involved in. Based on the best practice recommendations provided, draft a brief outline of the Monitoring & Evaluation (M&E) actions you plan to implement. Include specific tools, methods, and frequency of evaluations. <br>
@@ -218,8 +217,6 @@ If you're currently without a project idea, try answering those questions for a 
 </div>
 </div>
 
-
----
 
 # Tools and Methods
 

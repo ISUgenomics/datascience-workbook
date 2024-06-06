@@ -44,9 +44,6 @@ Containers
 - understand the basics of containers and the benefits of using them for code portability and reproducibility
 - navigate Dockerhub, build a Singularity container on Ceres from a Docker image, create a Docker image, create a DOI for a container image
 
-<br><br>
-
----
 
 ## Contents
 
@@ -74,8 +71,6 @@ Containers
   - [Building a Docker Image](#building-a-docker-image)
   - [Example: GitHub/Zenodo + Docker Hub Setup](#example-github-zenodo-docker-hub-setup-example)
 
----
-
 <!--
 ## Session Rules
 
@@ -88,7 +83,6 @@ Containers
 **KEEP YOURSELF ON MUTE** - Please mute yourself unless you are called on.
 <br><br>
 -->
----
 
 # Git and Github
 
@@ -470,9 +464,7 @@ Note: from the command line creating a new branch does not create a new folder i
 <br>
 
 [return to contents](#contents)
-<br><br>
 
----
 
 # Anaconda (Conda)
 
@@ -728,9 +720,6 @@ Once you have the Session 3 Jupyter notebook open, on the top right of the noteb
 <br>
 
 [return to contents](#contents)
-<br><br>
-
----
 
 
 # Containers (Docker and Singularity)

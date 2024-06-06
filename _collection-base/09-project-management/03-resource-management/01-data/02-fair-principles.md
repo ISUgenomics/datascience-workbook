@@ -18,7 +18,7 @@ tags: ["FAIR", "standards"]
 {% include page-sourcing.html %}
 
 
-<span style="color: #ff3870;font-weight: 500;">Strategies to ensure research data is <b>F</b>indable, <b>A</b>ccessible, <b>I</b>nteroperable, and <b>R</b>eusable.</span>
+<br><b class="c-header">Strategies to ensure research data is <u>F</u>indable, <u>A</u>ccessible, <u>I</u>nteroperable, and <u>R</u>eusable.</b>
 
 # Introduction
 
@@ -69,8 +69,6 @@ The FAIR Principles were officially introduced in 2016 and quickly gained recogn
 
 **4. Supporting Open Science** <br> *The principles align with the Open Access philosophy, promoting a common framework that increases the potential and efficiency of Open Access data and resources.*
 
-
----
 
 # FAIR in your Research
 

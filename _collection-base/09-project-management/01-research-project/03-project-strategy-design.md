@@ -61,8 +61,6 @@ Without strategic planning and risk management, a bioinformatics project focused
 </div>
 
 
----
-
 # Project Strategy
 
 <table><tr>
@@ -160,9 +158,6 @@ In practice, aligning your project with the broader research agenda involves sev
 |**collaborative opportunities** | Seek collaborative projects that can integrate your research into larger, ongoing studies, which can offer a broader context and impact. | Explore <a href="https://www.collaborationhub.net/" target="_blank">Collaboration Hub  ⤴</a> or <a href="https://twitter.com/home" target="_blank">X platform  ⤴</a> *(former Twitter)* for potential research collaborations. <a href="https://www.mendeley.com/" target="_blank">Mendeley's  ⤴</a> network and <a href="https://www.academia.edu/" target="_blank">Academia.edu  ⤴</a> also allows for connecting with fellow researchers.  |
 |**adaptability** | Be prepared to tweak your research objectives and methods to better align with evolving research agendas and opportunities in your field. | Stay informed on current trends and emerging topics in your field through news and articles on <a href="https://www.sciencedaily.com/" target="_blank">ScienceDaily  ⤴</a> or <a href="https://www.nature.com/latest-news" target="_blank">Nature News  ⤴</a> and <a href="https://www.biorxiv.org" target="_blank">bioRxiv  ⤴</a>. |
 
-
-<br>
----
 
 # Risk Management
 
@@ -377,8 +372,6 @@ Exploring failed projects in real-life due to poor risk management can provide v
 [<a href="https://scholarworks.lib.csusb.edu/cgi/viewcontent.cgi?referer=&httpsredir=1&article=1132&context=ciima" target="_blank">source: International Information Management Association  ⤴</a>]
 </div>
 
-
----
 
 # Hands-on Case Study: Project Strategy and Risk Management
 

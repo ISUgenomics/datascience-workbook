@@ -87,7 +87,6 @@ For a practical understanding of <span style="color: #ff3870; font-weight: 500;"
 Integrating professional project management techniques into the context of small-scale research projects is a great approach to enhance efficiency and effectiveness. It’s a bit less formal, more dynamic, and definitely more focused on the journey of discovery.
 </div>
 
----
 
 # Design for Research Projects
 
@@ -143,8 +142,6 @@ Employ technology for data collection, analysis, collaboration, and effective pr
 Be equipped to leverage unexpected discoveries and navigate the uncertainties inherent in research projects.
 
 
----
-
 # Framework for Research Projects
 
 In the intricate nature of research, the Project Framework acts as the essential scaffolding, giving shape and stability to your scholarly endeavors. It's more than just a structural necessity; it's the **strategic orchestration of roles, processes, and guidelines** that harmonize the complex elements of a research project. It's about constructing a robust yet **flexible support system that guides the project through its lifecycle**. From defining clear roles to establishing adaptive processes, this section is dedicated to constructing a framework that is receptive to the unique revelations of research exploration.
@@ -160,16 +157,13 @@ In the intricate nature of research, the Project Framework acts as the essential
 |5.|**Governance and Decision-Making Structure**|<img width="100" src="{{ images_path }}/01-project_framework_decisions.png">|Create a governance structure that outlines decision-making processes and authority, providing clear guidance for project progression.|
 
 
-
-
-
 ## Methodologies in Project Framework
 
 
 | Agile Methodology | Waterfall Methodology |
 |-------------------|-----------------------|
 |Agile is all about flexibility and iterative progress. | Waterfall is a more linear and structured approach. |
-|<img width="500" src="{{ images_path }}/01-project_framework_agile.png"> |<img width="460" src="{{ images_path }}/01-project_framework_waterfall.png"> |
+|<img width="500" src="{{ images_path }}/01-project_framework_agile.png"> |<img width="430" src="{{ images_path }}/01-project_framework_waterfall.png"> |
 |Agile methodology is an `iterative` project management approach that emphasizes `continuous iteration and improvement`. It originated in software development but has since been applied to various types of projects. | Waterfall methodology is a `sequential` project management approach that emphasizes a linear progression through a set of `predefined phases`. It originated in manufacturing and construction and has been traditionally used in software development.|
 |Agile focuses on delivering small, workable segments of the project in an iterative manner, allowing for `regular reassessment` and adaptation. | This approach relies on detailed upfront planning, clear documentation, and a stable project scope, which allows for `minimal changes` once the project is underway.|
 | **AGILE STEPS** *(Scrum)* | **WATERFALL STEPS** |
@@ -218,8 +212,6 @@ Employ a governance approach that allows for iterative decision-making, adapting
 5. **Embracing Technological and Methodological Innovations** <br>
 Incorporate the latest technology and methodologies in framework planning, enhancing the research process and outcomes.
 
-
----
 
 # **Hands-on Case Study:** <br>Project Design and Project Framework
 

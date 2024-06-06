@@ -48,15 +48,16 @@ To create a thorough and robust Data Management Plan (DMP) that aligns with FAIR
 
 ---
 
+<base class="mt">
 *Nailing down what data you’ll collect and how you describe it makes sure everyone can understand and use your research data effectively.*
 
-<div style="background: #d9d9e3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PART 1: Data Collection and Documentation</span>
-<br><br>
-<b>1. Data Description</b><br>
-<i>Clearly describe the data to be collected or generated.</i><br><br>
-<b>2. Metadata Standards</b><br>
-<i>Use standardized metadata to ensure that data is FAIR (Findable, Accessible, Interoperable, Reusable) and can be easily located and understood by others.</i>
+<div class="bc-template" markdown="1">
+**PART 1: Data Collection and Documentation**
+<base class="mb">
+**1. Data Description** <br>
+*Clearly describe the data to be collected or generated.* <base class="mb">
+**2. Metadata Standards** <br>
+*Use standardized metadata to ensure that data is FAIR (Findable, Accessible, Interoperable, Reusable) and can be easily located and understood by others.*
 </div>
 
 | extended subject matter      | considerations |
@@ -72,20 +73,18 @@ To create a thorough and robust Data Management Plan (DMP) that aligns with FAIR
 | `Collaborative Data` | * *If data is being collected collaboratively, how will roles and responsibilities be defined and communicated?* <br>* *What mechanisms will be in place for data integration and consistency across different collectors?* |
 | `Challenges and Mitigation` | * *What potential challenges might arise during data collection and how can they be mitigated?* <br>* *Are there contingency plans for unforeseen issues in data collection?* |
 
-
----
-
+<base class="mt">
 *Keeping your data use ethical and legal means you're respecting people’s rights and staying on the right side of the law.*
 
-<div style="background: #d9d9e3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PART 2: Ethical and Legal Compliance</span>
-<br><br>
-<b>1. Data Sharing and Privacy</b><br>
-<i>Address how the data will be shared while respecting privacy and ethical considerations, in line with TRUST principles.</i><br><br>
-<b>2. Ethical Considerations</b><br>
-<i>Address how the data will be shared while respecting ethical considerations, and cultural sensitivities. This includes adhering to the CARE principles for data related to Indigenous or marginalized communities, ensuring informed consent, community engagement, and benefit sharing.</i><br><br>
-<b>3. Intellectual Property Rights and Cultural Respect</b><br>
-<i>Clarify intellectual property rights (IPR) and ensure respect for the cultural values and norms of communities involved in the research. Be mindful of the ethical implications of data use and sharing, especially in contexts involving sensitive or indigenous data.</i>
+<div class="bc-template" markdown="1">
+**PART 2: Ethical and Legal Compliance**
+<base class="mb">
+**1. Data Sharing and Privacy** <br>
+*Address how the data will be shared while respecting privacy and ethical considerations, in line with TRUST principles.* <base class="mb">
+**2. Ethical Considerations** <br>
+*Address how the data will be shared while respecting ethical considerations, and cultural sensitivities. This includes adhering to the CARE principles for data related to Indigenous or marginalized communities, ensuring informed consent, community engagement, and benefit sharing.* <base class="mb">
+**3. Intellectual Property Rights and Cultural Respect** <br>
+*Clarify intellectual property rights (IPR) and ensure respect for the cultural values and norms of communities involved in the research. Be mindful of the ethical implications of data use and sharing, especially in contexts involving sensitive or indigenous data.*
 </div>
 
 | extended subject matter              | considerations |
@@ -101,18 +100,16 @@ To create a thorough and robust Data Management Plan (DMP) that aligns with FAIR
 | `Sensitive Data`          | * *How will sensitive data, such as health or personal information, be specifically managed to ensure compliance and privacy?* <br>* *Are additional security measures required for such data?* |
 | `Ownership`               | * *Who will own the data, and how will contributors be credited?* <br>* *Are there clear guidelines for acknowledging data sources and contributions?* |
 
-
----
-
+<base class="mt">
 *Picking the right place to store your data and keeping it safe means you won’t lose your hard work and can sleep easy knowing it’s secure.*
 
-<div style="background: #d9d9e3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PART 3: Data Storage and Security</span>
-<br><br>
-<b>1. Storage Solutions</b><br>
-<i>Choose secure and reliable storage solutions, ensuring data integrity and preservation (TRUST).</i><br><br>
-<b>2. Backup Strategies</b><br>
-<i>Implement regular backups to prevent data loss.</i>
+<div class="bc-template" markdown="1">
+**PART 3: Data Storage and Security**
+<base class="mb">
+**1. Storage Solutions** <br>
+*Choose secure and reliable storage solutions, ensuring data integrity and preservation (TRUST).* <base class="mb">
+**2. Backup Strategies** <br>
+*Implement regular backups to prevent data loss.*
 </div>
 
 | extended subject matter      | considerations |
@@ -128,18 +125,16 @@ To create a thorough and robust Data Management Plan (DMP) that aligns with FAIR
 | `Version Control`            | * *How will different versions of the data be managed and stored?* <br>* *What system will be used for tracking changes and updates to the data?* |
 | `Access Control and Authentication` | * *What methods will be used to control access to the data?* <br>* *How will user authentication and authorization be managed?* |
 
-
----
-
+<base class="mt">
 *Determining who can access your data and how ensures it's used responsibly and effectively by those who need it, while maintaining privacy and control.*
 
-<div style="background: #d9d9e3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PART 4: Data Access and Sharing</span>
-<br><br>
-<b>1. Access Policies</b><br>
-<i>Define how and under what conditions your data will be shared, considering both FAIR and TRUST principles.</i><br><br>
-<b>2. Formats and Standards</b><br>
-<i>Ensure that data formats are widely accessible and interoperable.</i>
+<div class="bc-template" markdown="1">
+**PART 4: Data Access and Sharing**
+<base class="mb">
+**1. Access Policies** <br>
+*Define how and under what conditions your data will be shared, considering both FAIR and TRUST principles.* <base class="mb">
+**2. Formats and Standards** <br>
+*Ensure that data formats are widely accessible and interoperable.*
 </div>
 
 |extended subject matter|considerations|
@@ -155,18 +150,16 @@ To create a thorough and robust Data Management Plan (DMP) that aligns with FAIR
 |`Incident Response Plan`|* *Is there an incident response plan in case of unauthorized access or data breaches?*|
 |`End-User Agreement`|* *Will end-users be required to agree to specific terms and conditions before accessing the data?*|
 
-
----
-
+<base class="mt">
 *Planning for your data’s long-term future ensures it can be a valuable resource for years to come.*
 
-<div style="background: #d9d9e3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PART 5: Data Archiving and Preservation</span>
-<br><br>
-<b>1. Long-term Preservation</b><br>
-<i>Outline plans for long-term preservation of data, ensuring sustainability and ongoing accessibility (TRUST).</i><br><br>
-<b>2. Repository Selection</b><br>
-<i>Choose a digital repository that adheres to TRUST and FAIR principles, like those with CoreTrustSeal certification.</i>
+<div class="bc-template" markdown="1">
+**PART 5: Data Archiving and Preservation**
+<base class="mb">
+**1. Long-term Preservation** <br>
+*Outline plans for long-term preservation of data, ensuring sustainability and ongoing accessibility (TRUST).* <base class="mb">
+**2. Repository Selection** <br>
+*Choose a digital repository that adheres to TRUST and FAIR principles, like those with CoreTrustSeal certification.*
 </div>
 
 | extended subject matter          | considerations |
@@ -182,18 +175,16 @@ To create a thorough and robust Data Management Plan (DMP) that aligns with FAIR
 | `Budgeting` | * *What are the estimated costs for data archiving and preservation?* <br>* *How will these costs be covered, and how does this impact the overall project budget?* |
 | `End-of-Project` | * *What procedures will be followed to transition data to the archive at the end of the project?* <br>* *Who will be responsible for managing this transition?* |
 
-
----
-
+<base class="mt">
 *Knowing who’s doing what in managing your data keeps things running smoothly and avoids any “I thought you were doing it” moments.*
 
-<div style="background: #d9d9e3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PART 6: Roles and Responsibilities</span>
-<br><br>
-<b>1. Data Stewardship</b><br>
-<i>Assign roles for data management and stewardship within the project team.</i><br><br>
-<b>2. Training and Support</b><br>
-<i> Identify any training or support needed to follow these data management practices.</i>
+<div class="bc-template" markdown="1">
+**PART 6: Roles and Responsibilities**
+<base class="mb">
+**1. Data Stewardship** <br>
+*Assign roles for data management and stewardship within the project team.* <base class="mb">
+**2. Training and Support** <br>
+*Identify any training or support needed to follow these data management practices.*
 </div>
 
 | extended subject matter        | considerations |
@@ -209,18 +200,16 @@ To create a thorough and robust Data Management Plan (DMP) that aligns with FAIR
 | `Resource Allocation` | * *Who is responsible for allocating resources (time, budget, tools) for data management activities?* <br>* *How will these decisions be made and communicated?* |
 | `Users Engagement`   | * *Who will be responsible for engaging with data users, addressing their queries, and collecting feedback?* <br>* *How will this feedback be used to improve data management?* |
 
-
----
-
+<base class="mt">
 *Making sure you’ve got the cash and tools for managing your data means you won’t hit a roadblock just when things are getting good.*
 
-<div style="background: #d9d9e3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PART 7: Budget and Resources</span>
-<br><br>
-<b>1. Funding for Data Management</b><br>
-<i>Allocate sufficient budget for data management activities, including data storage and preservation.</b></i><br><br>
-<b>2. Resource Allocation</b><br>
-<i> Ensure adequate resources are available for executing the data management plan.</i>
+<div class="bc-template" markdown="1">
+**PART 7: Budget and Resources**
+<base class="mb">
+**1. Funding for Data Management** <br>
+*Allocate sufficient budget for data management activities, including data storage and preservation.* <base class="mb">
+**2. Resource Allocation** <br>
+*Ensure adequate resources are available for executing the data management plan.*
 </div>
 
 | extended subject matter          | considerations |
@@ -236,18 +225,16 @@ To create a thorough and robust Data Management Plan (DMP) that aligns with FAIR
 | `Budget Revisions`  | * *What procedures are in place for revising the data management budget?* <br>* *How and to whom will budget usage and adjustments be reported?* |
 | `External Grants`     | * *Are there opportunities for external funding or grants specifically for data management activities?* <br>* *How will these opportunities be identified and pursued?* |
 
-
----
-
+<base class="mt">
 *Regular check-ins and being ready to change things up keep your data management on point and up-to-date with the latest practices.*
 
-<div style="background: #d9d9e3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PART 8: Review and Adaptation</span>
-<br><br>
-<b>1. Periodic Review</b><br>
-<i>Regularly review and update the data management plan to adapt to any changes in data management standards or project direction.</b></i><br><br>
-<b>2. Adaptability</b><br>
-<i> Be prepared to adapt the plan to new technologies and standards to maintain FAIR and TRUST compliance.</i>
+<div class="bc-template" markdown="1">
+**PART 8: Review and Adaptation**
+<base class="mb">
+**1. Periodic Review** <br>
+*Regularly review and update the data management plan to adapt to any changes in data management standards or project direction.* <base class="mb">
+**2. Adaptability** <br>
+*Be prepared to adapt the plan to new technologies and standards to maintain FAIR and TRUST compliance.*
 </div>
 
 | extended subject matter   | considerations |
@@ -263,18 +250,16 @@ To create a thorough and robust Data Management Plan (DMP) that aligns with FAIR
 | `Training needs`| * *What training or development needs might arise from changes to the DMP?* <br>* *How will these needs be addressed and funded?* |
 | `Data Lifecycle` | * *How will changes in the data lifecycle (collection, storage, sharing, archiving) be reflected in DMP updates?* <br>* *What process is in place to ensure these lifecycle changes are appropriately captured?* |
 
-
----
-
+<base class="mt">
 *Final documentation provides a comprehensive wrap-up of how data was managed and can serve as a reference for future projects. It aligns with the TRUST principle of transparency and responsibility.*
 
-<div style="background: #d9d9e3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PART 9: Post-Project Documentation</span> (optional yet recommended)
-<br><br>
-<b>1. Final Reporting</b><br>
-<i>Create a comprehensive final report detailing how the data was managed throughout the project, including any challenges and solutions.</b></i><br><br>
-<b>2. Archiving Documentation</b><br>
-<i> Maintain a well-organized database or system for your final notes after project closing, where attributes like data location, metadata, related pipelines, and access procedures can be easily searched and retrieved. This ensures efficient navigation and use of information from past projects.</i>
+<div class="bc-template" markdown="1">
+**PART 9: Post-Project Documentation** (optional yet recommended)
+<base class="mb">
+**1. Final Reporting** <br>
+*Create a comprehensive final report detailing how the data was managed throughout the project, including any challenges and solutions.* <base class="mb">
+**2. Archiving Documentation** <br>
+*Maintain a well-organized database or system for your final notes after project closing, where attributes like data location, metadata, related pipelines, and access procedures can be easily searched and retrieved. This ensures efficient navigation and use of information from past projects.*
 </div>
 
 | extended subject matter   | considerations |
@@ -290,16 +275,14 @@ To create a thorough and robust Data Management Plan (DMP) that aligns with FAIR
 | `Archiving Strategy`| * *What strategies will be employed to archive the project documentation effectively?* <br>* *How will these strategies ensure long-term access and usefulness?* |
 | `Closing Review`| * *What process will be in place to conduct a final review of data management practices?* <br>* *How will this review contribute to the final documentation and knowledge base?* |
 
-
----
-
+<base class="mt">
 *Regular checks ensure the ongoing integrity and usability of the data. This practice aligns with the sustainability aspect of TRUST and the reusability aspect of FAIR, as it helps to maintain the data’s quality and relevance over time.*
 
-<div style="background: #d9d9e3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PART 10: Post-Project Data Monitoring</span> (optional yet recommended)
-<br><br>
-<b>1. Sustainability Assessments</b><br>
-<i>Periodically conduct post-project checks to confirm the continued accessibility and integrity of the data. This includes verifying the ongoing viability of storage mediums and the accessibility of hosting platforms, ensuring the data remains intact and usable for future purposes.</b></i><br><br>
+<div class="bc-template" markdown="1">
+**PART 10: Post-Project Data Monitoring** (optional yet recommended)
+<base class="mb">
+**1. Sustainability Assessments** <br>
+*Periodically conduct post-project checks to confirm the continued accessibility and integrity of the data. This includes verifying the ongoing viability of storage mediums and the accessibility of hosting platforms, ensuring the data remains intact and usable for future purposes.*
 </div>
 
 | extended subject matter                  | considerations |
@@ -320,7 +303,7 @@ To create a thorough and robust Data Management Plan (DMP) that aligns with FAIR
 
 The career stage influences the complexity, scope, and resources available for data management. Senior researchers often have access to more resources and are involved in larger, more complex projects, while early career researchers and PhD students might work with more limited resources and focus on specific aspects of data management pertinent to their research stage.
 
-<i>*<span style="color:#c2c6d3;">[insights based on the analysis of <a href="https://wellcome.org/sites/default/files/2021-02/outputs-management-plans-examples-2021-01.pdf" target="_blank">real-life DMP examples</a> available at <a href="http://www.wellcome.ac.uk/About-us/Policy/Spotlight-issues/Data-sharing/Guidance-for-researchers/index.htm" target="_blank">Wellcome Trust. (n.d.). Guidance for Researchers: Developing a Data Management and Sharing Plan. </a>]</span></i>
+<em class="footnote">^ insights based on the analysis of <a href="https://wellcome.org/sites/default/files/2021-02/outputs-management-plans-examples-2021-01.pdf" target="_blank">real-life DMP examples</a> available at <br><a href="http://www.wellcome.ac.uk/About-us/Policy/Spotlight-issues/Data-sharing/Guidance-for-researchers/index.htm" target="_blank">Wellcome Trust. (n.d.). Guidance for Researchers: Developing a Data Management and Sharing Plan. </a></em>
 
 | Early Career | Mid-Career  | Senior Researchers |
 |--------------|-------------|--------------------|
@@ -335,10 +318,9 @@ A well-crafted DMP ensures that data are rigorously collected, well-preserved, a
 
 <div class="note" markdown="1">
 Proper data management is essential across different fields of science and project sizes, and it plays a key role in collaborative research, open science, and ensuring the long-term value of data.<br>
-[further reading: <a href="https://www.nature.com/articles/d41586-018-03065-z" target="_blank">Everyone needs a data-management plan, Nature 555, 286 (2018)</a>]
+[Further reading: <a href="https://www.nature.com/articles/d41586-018-03065-z" target="_blank">Everyone needs a data-management plan, Nature 555, 286 (2018)</a>]
 </div>
 
----
 
 # **Hands-on Case Study:** <br>Data Management Plan for research project
 
@@ -362,234 +344,247 @@ In a Data Management Plan (DMP), answers should be detailed enough to provide cl
 
 *This comprehensive DMP provides a structured approach to managing the genomic data crucial for advancing personalized medicine in breast cancer treatment, ensuring the data's integrity, security, and long-term value.*
 
-<div style="background: #d9d9e3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PART 1: Data Collection and Documentation</span>
-<br><br>
-<b>1. Data Description</b><br>
-<i>Clearly describe the data to be collected or generated.</i><br><br>
-<div style="background: #e8e9e8;  padding: 10px;">
+<div class="bc-template" markdown="1">
+**PART 1: Data Collection and Documentation**
+<base class="mb">
+**1. Data Description** <br>
+*Clearly describe the data to be collected or generated.* <base class="mb">
+<div class="bc-code" markdown="1">
 The project will generate genomic data, specifically Whole Genome Sequencing (WGS) and Whole Exome Sequencing (WES) data, to identify breast cancer treatment markers. The data characteristics documented will include sequencing depth, coverage, and variant call quality metrics.
 </div><br>
-<b>2. Metadata Standards</b><br>
-<i>Use standardized metadata to ensure that data is FAIR (Findable, Accessible, Interoperable, Reusable) and can be easily located and understood by others.</i><br><br>
-<div style="background: #e8e9e8;  padding: 10px;">
+**2. Metadata Standards** <br>
+*Use standardized metadata to ensure that data is FAIR (Findable, Accessible, Interoperable, Reusable) and can be easily located and understood by others.* <base class="mb">
+<div class="bc-code" markdown="1">
 Metadata will be documented using MIGS and HUGO standards for genomic data. Clinical data metadata will align with HIPAA compliance standards, documenting anonymized patient identifiers and treatment details.
 </div><br>
-<b>3. Data Collection Method</b><br>
-<i>&emsp; - How will the data be collected or produced, and what standards will be used?<br>&emsp; - Are there specific tools or software planned for data collection?</i><br><br>
-<div style="background: #e8e9e8;  padding: 10px;">
+**3. Data Collection Method** <br>
+&emsp; - *How will the data be collected or produced, and what standards will be used?* <br>
+&emsp; - *Are there specific tools or software planned for data collection?* <base class="mb">
+<div class="bc-code" markdown="1">
 Data will be collected using high-throughput sequencing techniques. NGS data will be sourced from public databases like gnomAD and TCGA. Clinical data from institutions like Johns Hopkins Hospital will be collected through collaborations, following standardized clinical data collection protocols.
 </div><br>
-<b>4. Data Formats</b><br>
-<i>&emsp; - What file formats will be used for the data, and why have these formats been chosen?<br>&emsp; - How do these formats support long-term accessibility and usability of the data?</i><br><br>
-<div style="background: #e8e9e8;  padding: 10px;">
+**4. Data Formats** <br>
+&emsp; - *What file formats will be used for the data, and why have these formats been chosen?*<br>
+&emsp; - *How do these formats support long-term accessibility and usability of the data?* <base class="mb">
+<div class="bc-code" markdown="1">
 Genomic data will be stored in standard formats like FASTQ for raw data and VCF for variant data. These formats are widely accepted in the genomics field and support long-term accessibility and interoperability.
 </div><br>
-<b>5. Data Quality</b><br>
-<i>&emsp; - What steps will be taken to ensure the accuracy and quality of the data during collection?<br>&emsp; - How will data quality be monitored and maintained throughout the project?</i><br><br>
-<div style="background: #e8e9e8;  padding: 10px;">
+**5. Data Quality** <br>
+&emsp; - *What steps will be taken to ensure the accuracy and quality of the data during collection?* <br>
+&emsp; - *How will data quality be monitored and maintained throughout the project?* <base class="mb">
+<div class="bc-code" markdown="1">
 Quality control measures will include sequencing error checks, read quality assessments, and variant validation. Quality monitoring will be ongoing, using bioinformatics tools like FastQC and GATK.
 </div><br>
-<b>6. Data Provenance & Documentation</b><br>
-<i>&emsp; - How will the origin and changes in the data be tracked and recorded?<br>&emsp; - What documentation will be created to detail the data creation and processing workflow?</i><br><br>
-<div style="background: #e8e9e8;  padding: 10px;">
-<li>Data provenance will be tracked using electronic lab notebooks (JupyterLab) and data processing logs (stored in GitHub repos). This will include details on data acquisition, processing steps, and analysis workflows.</li>
-<li>Comprehensive documentation will be maintained for all datasets, including data processing steps and analysis methods. Documentation will be regularly updated in a project-specific GitHub repository.</li></div><br>
-<b>7. Challenges and Mitigation</b><br>
-<i>&emsp; - What potential challenges might arise during data collection and how can they be mitigated?<br>&emsp; - Are there contingency plans for unforeseen issues in data collection?</i><br><br>
-<div style="background: #e8e9e8;  padding: 10px;">
-Potential challenges include data heterogeneity and integration issues. Mitigation strategies include using standardized data formats and protocols, and contingency plans will be in place for data integration challenges.
+**6. Data Provenance & Documentation** <br>
+&emsp; - *How will the origin and changes in the data be tracked and recorded?* <br>
+&emsp; - *What documentation will be created to detail the data creation and processing workflow?* <base class="mb">
+<div class="bc-code" markdown="1">
+<b class="prefix-2"></b> Data provenance will be tracked using electronic lab notebooks (JupyterLab) and data processing logs (stored in GitHub repos). This will include details on data acquisition, processing steps, and analysis workflows. <base class="mb">
+<b class="prefix-2"></b> Comprehensive documentation will be maintained for all datasets, including data processing steps and analysis methods. Documentation will be regularly updated in a project-specific GitHub repository.
 </div><br>
+**7. Challenges and Mitigation** <br>
+&emsp; - *What challenges might arise during data collection and how can they be mitigated?* <br>
+&emsp; - *Are there contingency plans for unforeseen issues in data collection?* <base class="mb">
+<div class="bc-code" markdown="1">
+Potential challenges include data heterogeneity and integration issues. Mitigation strategies include using standardized data formats and protocols, and contingency plans will be in place for data integration challenges.
+</div>
 </div>
 
 
-<div style="background: #d9d9e3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PART 2: Ethical and Legal Compliance</span>
-<br><br>
-<b>1. Data Sharing and Privacy</b><br>
-<i>Address how the data will be shared while respecting privacy and ethical considerations, in line with TRUST principles.</i><br><br>
-<div style="background: #e8e9e8;  padding: 10px;">
+<div class="bc-template mt" markdown="1">
+**PART 2: Ethical and Legal Compliance**
+<base class="mb">
+**1. Data Sharing and Privacy** <br>
+*Address how the data will be shared while respecting privacy and ethical considerations, in line with TRUST principles.* <base class="mb">
+<div class="bc-code" markdown="1">
 Patient data will be anonymized to protect privacy. Compliance with GDPR and other relevant data protection regulations will be strictly followed.
 </div><br>
-<b>2. Ethical Considerations</b><br>
-<i>Address how the data will be shared while respecting ethical considerations, and cultural sensitivities. This includes adhering to the CARE principles.</i><br><br>
-<div style="background: #e8e9e8;  padding: 10px;">
-<li>The project will adhere to ethical guidelines for human subject research, ensuring informed consent and transparent data use communication. </li>
-<li>Ethical approvals will be obtained from relevant institutional review boards:</li>
- &emsp;  -  .....................................<br>
- &emsp;  -  .....................................
+**2. Ethical Considerations** <br>
+*Address how the data will be shared while respecting ethical considerations, and cultural sensitivities. This includes adhering to the CARE principles.* <base class="mb">
+<div class="bc-code mb-0" markdown="1">
+<b class="prefix-2"></b> The project will adhere to ethical guidelines for human subject research, ensuring informed consent and transparent data use communication. <br>
+<b class="prefix-2"></b> Ethical approvals will be obtained from relevant institutional review boards: <br>
+&emsp; -  .....................................<br>
+&emsp; -  .....................................
 </div><br>
-<b>3. Intellectual Property Rights and Cultural Respect</b><br>
-<i>Clarify intellectual property rights (IPR) and ensure respect for the cultural values and norms of communities involved in the research. </i><br><br>
-<div style="background: #e8e9e8;  padding: 10px;">
+**3. Intellectual Property Rights and Cultural Respect** <br>
+*Clarify intellectual property rights (IPR) and ensure respect for the cultural values and norms of communities involved in the research.* <base class="mb">
+<div class="bc-code" markdown="1">
 Data from public databases will be used in accordance with their terms of use. Original research findings will be subject to intellectual property rights held by the research institution.
 </div><br>
-<b>4. CARE Compliance</b><br>
-<i>&emsp;  - How will the project ensure respect for cultural sensitivities, especially when handling Indigenous or community data, in alignment with CARE principles?<br>&emsp;  - Are there specific community permissions or consultations required?</i><br><br>
-<div style="background: #e8e9e8;  padding: 10px;">
-<b>IMPORTANT!</b> The data used in the project may include Indigenous community data. The project will respect cultural sensitivities and adhere to CARE principles. Community engagement and permissions will be sought where necessary.
+**4. CARE Compliance** <br>
+&emsp; - *How will the project ensure respect for cultural sensitivities, especially when handling Indigenous or community data, in alignment with CARE principles?* <br>
+&emsp; - *Are there specific community permissions or consultations required?* <base class="mb">
+<div class="bc-code" markdown="1">
+<b class="c-bad">IMPORTANT!</b> The data used in the project may include Indigenous community data. The project will respect cultural sensitivities and adhere to CARE principles. Community engagement and permissions will be sought where necessary.
 </div><br>
-<b>5. Legal Standards/Data Use Agreements</b><br>
-<i>&emsp;  - What legal standards and regulations are applicable to the data, and how will compliance be ensured? Are there any cross-border data transfer issues to consider?<br>&emsp;  - What terms will be included in data use agreements to ensure ethical and legal compliance?</i><br><br>
-<div style="background: #e8e9e8;  padding: 10px;">
+**5. Legal Standards/Data Use Agreements** <br>
+&emsp; - *What legal standards and regulations are applicable to the data, and how will compliance be ensured? Are there any cross-border data transfer issues to consider?* <br>
+&emsp; - *What terms will be included in data use agreements to ensure ethical and legal compliance?* <base class="mb">
+<div class="bc-code" markdown="1">
 The project will comply with legal standards like GDPR, particularly in handling personal health information. Cross-border data transfer will be managed in accordance with international data protection laws. Data use agreements will include terms that align with ethical and legal standards, ensuring responsible data sharing. These agreements will be regularly reviewed and monitored for compliance.
 </div><br>
-<b>6. Informed Consent & Data Anonymization</b><br>
-<i>&emsp;  - How will informed consent be obtained and documented for data derived from individuals?<br>&emsp;  - Are there clear procedures for participants to understand how their data will be used?<br>&emsp;  - What methods will be used to anonymize or de-identify sensitive data?<br>&emsp;  - How will these methods ensure the continued usefulness of the data?</i><br><br>
-<div style="background: #e8e9e8;  padding: 10px;">
-<li>Informed consent will be obtained for all data derived from individuals. The consent form will include easy-to-understand language detailing the data use. Additionally, an informational website and pamphlets will be provided, offering more in-depth explanations about the project, data security measures, and contact information for queries or concerns. Participants will also have access to a dedicated helpline for any questions related to their participation.</li>
-<li>Sensitive data will be anonymized or de-identified using methods like data masking or pseudonymization, ensuring the utility of the data while maintaining privacy. A two-step process will be applied. First, direct identifiers like names and social security numbers will be removed. Next, indirect identifiers will be altered using techniques like data perturbation and pseudonymization. Unique participant IDs will replace personal identifiers to link datasets without revealing individual identities.</li>
-<li>The anonymization methods are designed to preserve key data attributes and relationships, ensuring data utility for analysis. By maintaining the integrity of the data structure and statistical properties, researchers can draw valid conclusions from the anonymized datasets. Additionally, the use of unique participant IDs allows for data linkage without compromising privacy, enabling comprehensive analysis across multiple datasets.</li>
+**6. Informed Consent & Data Anonymization** <br>
+&emsp; - *How will informed consent be obtained and documented for data derived from individuals?* <br>
+&emsp; - *Are there clear procedures for participants to understand how their data will be used?* <br>
+&emsp; - *What methods will be used to anonymize or de-identify sensitive data?* <br>
+&emsp; - *How will these methods ensure the continued usefulness of the data?* <base class="mb">
+<div class="bc-code" markdown="1">
+<b class="prefix-2"></b> Informed consent will be obtained for all data derived from individuals. The consent form will include easy-to-understand language detailing the data use. Additionally, an informational website and pamphlets will be provided, offering more in-depth explanations about the project, data security measures, and contact information for queries or concerns. Participants will also have access to a dedicated helpline for any questions related to their participation. <base class="mb">
+<b class="prefix-2"></b>  Sensitive data will be anonymized or de-identified using methods like data masking or pseudonymization, ensuring the utility of the data while maintaining privacy. A two-step process will be applied. First, direct identifiers like names and social security numbers will be removed. Next, indirect identifiers will be altered using techniques like data perturbation and pseudonymization. Unique participant IDs will replace personal identifiers to link datasets without revealing individual identities. <base class="mb">
+<b class="prefix-2"></b>  The anonymization methods are designed to preserve key data attributes and relationships, ensuring data utility for analysis. By maintaining the integrity of the data structure and statistical properties, researchers can draw valid conclusions from the anonymized datasets. Additionally, the use of unique participant IDs allows for data linkage without compromising privacy, enabling comprehensive analysis across multiple datasets.
 </div><br>
-<b>7. Sensitive Data Management</b><br>
-<i>&emsp;  - How will sensitive data, such as health or personal information, be specifically managed to ensure compliance and privacy?<br>&emsp;  - Are additional security measures required for such data?</i><br><br>
-<div style="background: #e8e9e8;  padding: 10px;">
+**7. Sensitive Data Management** <br>
+&emsp; - *How will sensitive data, such as health or personal information, be specifically managed to ensure compliance and privacy?* <br>
+&emsp; - *Are additional security measures required for such data?* <base class="mb">
+<div class="bc-code mb-0" markdown="1">
 Sensitive data, including health and personal information, will be managed with rigorous security measures to ensure full compliance with privacy regulations and to maintain the confidentiality of participant data. Specific management strategies include:
-<li><b>Encryption:</b> All sensitive data will be encrypted both in transit and at rest. For data in transit, we'll use SSL/TLS encryption protocols. For data at rest, AES-256 encryption standards will be applied to the stored data on secure servers.</li>
-<li><b>Access Controls:</b> Access to sensitive data will be strictly controlled through a role-based access control system (RBAC). This means only authorized personnel, who require the data for specific research-related tasks, will have access, and their level of access will be based on their role in the project.</li>
-<li><b>Data Masking:</b> For any case where sensitive data needs to be used in a less secure environment (e.g., for certain types of analysis or testing), data masking techniques will be used to obscure the true data while preserving its usability for the required purpose.</li>
-<li><b>Secure Data Transfer Protocols:</b> When transferring data between entities, such as between the bioinformatics team and medical institutions, secure and encrypted data transfer protocols will be used. This includes using VPNs and SFTP for secure file transfers.</li>
-<li><b>Regular Security Audits:</b> The security measures in place will be regularly audited and updated to ensure they meet the latest standards and effectively protect the data against new threats. These audits will be conducted by an independent cybersecurity team.</li>
-<li><b>Training and Awareness:</b> All team members will receive regular training on data privacy and security protocols. This training will cover best practices for handling sensitive data, recognizing potential security threats, and understanding compliance requirements.</li><br>
-<b>Data Breach Response Plan</b><br>
-A comprehensive data breach response plan will be in place, outlining the steps to be taken in the event of a security breach. <br>
-1. Isolate the affected system to prevent further data leakage. --> IT contact: john.X@it.miracle.com<br>
-2. Initiate a secure backup protocol to safeguard unaffected data. <br>
-3. Conduct a forensic analysis to determine the breach's source, scope, and impact. <br>
-4. Identify the specific data and systems compromised. <br>
-5. Report the breach to relevant regulatory authorities as required by law. <br>
-6. Notify affected individuals, providing details about the nature of the breach and the data involved. <br>
-7. Implement security patches or updates to address the vulnerability exploited in the breach. <br>
-8. Enhance monitoring of network and data access. <br>
-9. Conduct a thorough review of existing security protocols. <br>
+<b class="prefix-2"></b>  **Encryption:** All sensitive data will be encrypted both in transit and at rest. For data in transit, we'll use SSL/TLS encryption protocols. For data at rest, AES-256 encryption standards will be applied to the stored data on secure servers. <base class="mb">
+<b class="prefix-2"></b>  **Access Controls:** Access to sensitive data will be strictly controlled through a role-based access control system (RBAC). This means only authorized personnel, who require the data for specific research-related tasks, will have access, and their level of access will be based on their role in the project. <base class="mb">
+<b class="prefix-2"></b>  **Data Masking:** For any case where sensitive data needs to be used in a less secure environment (e.g., for certain types of analysis or testing), data masking techniques will be used to obscure the true data while preserving its usability for the required purpose. <base class="mb">
+<b class="prefix-2"></b>  **Secure Data Transfer Protocols:** When transferring data between entities, such as between the bioinformatics team and medical institutions, secure and encrypted data transfer protocols will be used. This includes using VPNs and SFTP for secure file transfers. <base class="mb">
+<b class="prefix-2"></b>  **Regular Security Audits:** The security measures in place will be regularly audited and updated to ensure they meet the latest standards and effectively protect the data against new threats. These audits will be conducted by an independent cybersecurity team. <base class="mb">
+<b class="prefix-2"></b>  **Training and Awareness:** All team members will receive regular training on data privacy and security protocols. This training will cover best practices for handling sensitive data, recognizing potential security threats, and understanding compliance requirements.
+<base class="mt">
+**Data Breach Response Plan** <br>
+A comprehensive data breach response plan will be in place, outlining the steps to be taken in the event of a security breach.
+1. Isolate the affected system to prevent further data leakage. --> IT contact: `john.X@it.miracle.com`
+2. Initiate a secure backup protocol to safeguard unaffected data.
+3. Conduct a forensic analysis to determine the breach's source, scope, and impact.
+4. Identify the specific data and systems compromised.
+5. Report the breach to relevant regulatory authorities as required by law.
+6. Notify affected individuals, providing details about the nature of the breach and the data involved.
+7. Implement security patches or updates to address the vulnerability exploited in the breach.
+8. Enhance monitoring of network and data access.
+9. Conduct a thorough review of existing security protocols.
 10. Document the breach incident, response actions, and outcomes.
-</div><br>
+</div>
 </div>
 
 
-<div style="background: #d9d9e3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PART 3: Data Storage and Security</span>
-<br><br>
-<b>1. Storage Solutions</b><br>
-<i>Choose secure and reliable storage solutions, ensuring data integrity and preservation (TRUST).</i><br><br>
-<div style="background: #e8e9e8;  padding: 10px;">
+<div class="bc-template mt" markdown="1">
+**PART 3: Data Storage and Security**
+<base class="mb">
+**1. Storage Solutions** <br>
+*Choose secure and reliable storage solutions, ensuring data integrity and preservation (TRUST).* <base class="mb">
+<div class="bc-code mb-0" markdown="1">
 Data will be stored on secure, institution-approved servers with encryption protocols.
 </div><br>
-<b>2. Backup Strategies</b><br>
-<i>Implement regular backups to prevent data loss.</i><br><br>
-<div style="background: #e8e9e8;  padding: 10px;">
+**2. Backup Strategies** <br>
+*Implement regular backups to prevent data loss.* <base class="mb">
+<div class="bc-code mb-0" markdown="1">
 Regular backups will be maintained on separate secure servers. A RAID system will be implemented for redundancy.
-</div><br>
+</div>
 </div>
 
 
-<div style="background: #d9d9e3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PART 4: Data Access and Sharing</span>
-<br><br>
-<b>1. Access Policies</b><br>
-<i>Define how and under what conditions your data will be shared, considering both FAIR and TRUST principles.</i><br><br>
-<div style="background: #e8e9e8;  padding: 10px;">
+<div class="bc-template mt" markdown="1">
+**PART 4: Data Access and Sharing**
+<base class="mb">
+**1. Access Policies** <br>
+*Define how and under what conditions your data will be shared, considering both FAIR and TRUST principles.* <base class="mb">
+<div class="bc-code mb-0" markdown="1">
 Access to sensitive data will be restricted and controlled through secure login credentials.
 </div><br>
-<b>2. Formats and Standards</b><br>
-<i>Ensure that data formats are widely accessible and interoperable.</i><br><br>
-<div style="background: #e8e9e8;  padding: 10px;">
+**2. Formats and Standards** <br>
+*Ensure that data formats are widely accessible and interoperable.* <base class="mb">
+<div class="bc-code mb-0" markdown="1">
 ...
 </div><br>
-<b>3. Data Sharing Protocols</b><br>
-<i>...</i><br><br>
-<div style="background: #e8e9e8;  padding: 10px;">
+**3. Data Sharing Protocols** <br>
+*Ensure that data sharing protocols are robust and promote secure, seamless exchange of information.* <base class="mb">
+<div class="bc-code mb-0" markdown="1">
 Research findings will be shared through academic publications and data repositories, adhering to open-access policies.
-</div><br>
+</div>
 </div>
 
 
-<div style="background: #d9d9e3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PART 5: Data Archiving and Preservation</span>
-<br><br>
-<b>1. Long-term Preservation</b><br>
-<i>Outline plans for long-term preservation of data, ensuring sustainability and ongoing accessibility (TRUST).</i><br><br>
-<div style="background: #e8e9e8;  padding: 10px;">
+<div class="bc-template mt" markdown="1">
+**PART 5: Data Archiving and Preservation**
+<base class="mb">
+**1. Long-term Preservation** <br>
+*Outline plans for long-term preservation of data, ensuring sustainability and ongoing accessibility (TRUST).* <base class="mb">
+<div class="bc-code mb-0" markdown="1">
 Final datasets will be archived in institutional repositories with a 10-year minimum retention policy.
 </div><br>
-<b>2. Repository Selection</b><br>
-<i>Choose a digital repository that adheres to TRUST and FAIR principles, like those with CoreTrustSeal certification.</i><br><br>
-<div style="background: #e8e9e8;  padding: 10px;">
+**2. Repository Selection** <br>
+*Choose a digital repository that adheres to TRUST and FAIR principles, like those with CoreTrustSeal certification.* <base class="mb">
+<div class="bc-code mb-0" markdown="1">
 Data will be archived in repositories that adhere to FAIR and TRUST principles, such as Zenodo.
-</div><br>
+</div>
 </div>
 
 
-<div style="background: #d9d9e3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PART 6: Roles and Responsibilities</span>
-<br><br>
-<b>1. Data Stewardship</b><br>
-<i>Assign roles for data management and stewardship within the project team.</i><<br><br>
-<div style="background: #e8e9e8;  padding: 10px;">
+<div class="bc-template mt" markdown="1">
+**PART 6: Roles and Responsibilities**
+<base class="mb">
+**1. Data Stewardship** <br>
+*Assign roles for data management and stewardship within the project team.* <base class="mb">
+<div class="bc-code mb-0" markdown="1">
 A designated data manager will oversee data handling, storage, and sharing.
 </div><br>
-<b>2. Training and Support</b><br>
-<i> Identify any training or support needed to follow these data management practices.</i><br><br>
-<div style="background: #e8e9e8;  padding: 10px;">
+**2. Training and Support** <br>
+*Identify any training or support needed to follow these data management practices.* <base class="mb">
+<div class="bc-code mb-0" markdown="1">
 Team members will receive training in data management best practices and software tools used in the project.
-</div><br>
+</div>
 </div>
 
 
-<div style="background: #d9d9e3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PART 7: Budget and Resources</span>
-<br><br>
-<b>1. Funding for Data Management</b><br>
-<i>Allocate sufficient budget for data management activities, including data storage and preservation.</b></i><br><br>
-<div style="background: #e8e9e8;  padding: 10px;">
+<div class="bc-template mt" markdown="1">
+**PART 7: Budget and Resources**
+<base class="mb">
+**1. Funding for Data Management** <br>
+*Allocate sufficient budget for data management activities, including data storage and preservation.* <base class="mb">
+<div class="bc-code mb-0" markdown="1">
 The project budget includes specific allocations for data storage, backup solutions, and data management personnel.
 </div><br>
-<b>2. Resource Allocation</b><br>
-<i> Ensure adequate resources are available for executing the data management plan.</i><br><br>
-<div style="background: #e8e9e8;  padding: 10px;">
+**2. Resource Allocation** <br>
+*Ensure adequate resources are available for executing the data management plan.* <base class="mb">
+<div class="bc-code mb-0" markdown="1">
 Resources will be allocated for data security measures, software licenses, and server maintenance.
-</div><br>
+</div>
 </div>
 
 
-<div style="background: #d9d9e3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PART 8: Review and Adaptation</span>
-<br><br>
-<b>1. Periodic Review</b><br>
-<i>Regularly review and update the data management plan to adapt to any changes in data management standards or project direction.</b></i><br><br>
-<div style="background: #e8e9e8;  padding: 10px;">
+<div class="bc-template mt" markdown="1">
+**PART 8: Review and Adaptation**
+<base class="mb">
+**1. Periodic Review** <br>
+*Regularly review and update the data management plan to adapt to any changes in data management standards or project direction.* <base class="mb">
+<div class="bc-code mb-0" markdown="1">
 The DMP will be reviewed bi-annually to ensure it remains current and effective.
 </div><br>
-<b>2. Adaptability</b><br>
-<i> Be prepared to adapt the plan to new technologies and standards to maintain FAIR and TRUST compliance.</i><br><br>
-<div style="background: #e8e9e8;  padding: 10px;">
+**2. Adaptability** <br>
+*Be prepared to adapt the plan to new technologies and standards to maintain FAIR and TRUST compliance.* <base class="mb">
+<div class="bc-code mb-0" markdown="1">
 The DMP will be adapted in response to technological advancements and changes in data regulations.
-</div><br>
+</div>
 </div>
 
 
-<div style="background: #d9d9e3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PART 9: Post-Project Documentation</span> (optional yet recommended)
-<br><br>
-<b>1. Final Reporting</b><br>
-<i>Create a comprehensive final report detailing how the data was managed throughout the project, including any challenges and solutions.</b></i><br><br>
-<div style="background: #e8e9e8;  padding: 10px;">
+<div class="bc-template mt" markdown="1">
+**PART 9: Post-Project Documentation** (optional yet recommended)
+<base class="mb">
+**1. Final Reporting** <br>
+*Create a comprehensive final report detailing how the data was managed throughout the project, including any challenges and solutions.* <base class="mb">
+<div class="bc-code mb-0" markdown="1">
 A comprehensive report detailing the data management processes and challenges encountered will be produced at the project's end.
 </div><br>
-<b>2. Archiving Documentation</b><br>
-<i> Maintain a well-organized database or system for your final notes after project closing, where attributes like data location, metadata, related pipelines, and access procedures can be easily searched and retrieved. This ensures efficient navigation and use of information from past projects.</i><br><br>
-<div style="background: #e8e9e8;  padding: 10px;">
+**2. Archiving Documentation** <br>
+*Maintain a well-organized database or system for your final notes after project closing, where attributes like data location, metadata, related pipelines, and access procedures can be easily searched and retrieved. This ensures efficient navigation and use of information from past projects.* <base class="mb">
+<div class="bc-code mb-0" markdown="1">
 A database with final notes on data locations, metadata, and access procedures will be maintained for efficient future reference.
-</div><br>
+</div>
 </div>
 
 
-<div style="background: #d9d9e3; padding: 15px; margin-bottom: 20px;">
-<span style="font-weight:800;">PART 10: Post-Project Data Monitoring</span> (optional yet recommended)
-<br><br>
-<b>1. Sustainability Assessments</b><br>
-<i>Periodically conduct post-project checks to confirm the continued accessibility and integrity of the data. This includes verifying the ongoing viability of storage mediums and the accessibility of hosting platforms, ensuring the data remains intact and usable for future purposes.</b></i><br><br>
-<div style="background: #e8e9e8;  padding: 10px;">
+<div class="bc-template mt" markdown="1">
+**PART 10: Post-Project Data Monitoring** (optional yet recommended)
+<base class="mb">
+**1. Sustainability Assessments** <br>
+*Periodically conduct post-project checks to confirm the continued accessibility and integrity of the data. This includes verifying the ongoing viability of storage mediums and the accessibility of hosting platforms, ensuring the data remains intact and usable for future purposes.* <base class="mb">
+<div class="bc-code mb-0" markdown="1">
 Annual checks will be conducted to ensure the continued accessibility and integrity of the archived data.
-</div><br>
+</div>
 </div>

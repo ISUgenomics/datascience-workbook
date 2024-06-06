@@ -29,7 +29,11 @@ A **well-documented codebase illuminates the underlying logic and design decisio
 
 ## General Guidelines
 
-<span style="color: #ff3870;font-weight: 500;">Regardless of the scale or type of code, documentation plays a crucial role.</span><br> Here's a guide to understanding when and how to document your code.
+<div class="note" markdown="1">
+Regardless of the scale or type of code, documentation plays a crucial role.
+</div>
+
+*Here's a guide to understanding when and how to document your code.*
 
 **1. Document all scales of code**
 
@@ -48,8 +52,8 @@ In essence, the scale or type of code does not negate the need for documentation
 
 Different types of code necessitate varying documentation approaches to clarify their purpose and usage. Depending on the complexity and scale, it's essential to explain not only functional aspects but also underlying data structures and code modifications, all of which contribute to a comprehensive understanding.
 
-| type | comment |
-|------|---------|
+| type                | comment |
+|---------------------|---------|
 | **public APIs**     | These need thorough documentation since they are used by other developers. They should have explanations for every function, parameter, return type, and potential exception. |
 | **algorithms**      | Any code that is not straightforward should have accompanying comments explaining the logic and reasoning. |
 | **data structures** | Especially custom ones that aren’t standard in the programming language being used. |
@@ -131,7 +135,7 @@ All forms of in-code documentation can be crafted using the same tools as those 
 <tr> <td><a href="https://www.eclipse.org/" target="_blank">Eclipse</a></td> <td></td> <td>development environment with GUI</td> <td>universal</td> </tr>
 <tr> <td><a href="https://www.jetbrains.com/pycharm/" target="_blank">PyCharm</a></td> <td>development environment with GUI</td> <td>Python</td> <td><a class="t-links" href="427">tutorial</a></td> </tr>
 <tr> <td><a href="https://www.rstudio.com/" target="_blank">RStudio</a></td> <td>development environment with GUI</td> <td>R</td> <td><a class="t-links" href="431">tutorial</a></td> </tr>
-<tr> <td><a href="https://www.gnu.org/software/nano/" target="_blank">nano</a></td> <td>CLI text editor, use in terminal</td> <td>universal</td> <td><a class="t-links" href="322" section="#nano--text-editor-more-like-a-gui">tutorial</a>{</td> </tr>
+<tr> <td><a href="https://www.gnu.org/software/nano/" target="_blank">nano</a></td> <td>CLI text editor, use in terminal</td> <td>universal</td> <td><a class="t-links" href="322" section="#nano--text-editor-more-like-a-gui">tutorial</a></td> </tr>
 <tr> <td><a href="https://www.vim.org/" target="_blank">vim</a></td> <td>CLI text editor, use in terminal</td> <td>universal</td> <td><a class="t-links" href="322" section="#vim">tutorial</a></td> </tr>
 <tr> <td><a href="https://midnight-commander.org/" target="_blank">mc</a></td> <td>CLI text editor, use in terminal</td> <td>universal</td> <td><a class="t-links" href="322">tutorial</a></td> </tr>
 </table>
@@ -208,7 +212,7 @@ int main() {
     return 0;
 }
 ```
-^ **NOTE:** *In C++, the* `#` *character is used to denote preprocessor directives, not inline comments.*
+<p class="footnote" markdown="1">^ **NOTE:** *In C++, the* `#` *character is used to denote preprocessor directives, not inline comments.*</p>
 
 <div class="warning" markdown="1">
 While the examples above are simplistic for illustrative purposes, it's crucial in real-world development not to over-comment by annotating every straightforward operation, as it can clutter the code and reduce readability.
@@ -897,8 +901,8 @@ As a user, refer to the README when initially accessing a project to understand 
 
 README files are typically hand-written by developers, though tools like `readme-md-generator` can assist in creating a structured document. For GitHub repositories, the README file is typically written in Markdown, a lightweight and easy-to-use syntax designed for formatting plain text. When you upload or commit a Markdown-based README to GitHub, the platform automatically renders it, displaying the formatted text and any embedded media on the repository's main page. *See real-life examples: <a href="https://github.com/ISUgenomics/data_wrangling" target="_blank">data_wrangling  ⤴</a>, <a href="https://github.com/ISUgenomics/geo_utils" target="_blank">geo_utils  ⤴</a>, <a href="https://github.com/zsiki/Find-GCP" target="_blank">Find-GCP  ⤴</a>*
 
-<span style="color: #ff3870;font-weight: 500;">For a deeper dive into Markdown syntax and its various capabilities, I'd recommend checking out the dedicated tutorial in this workbook:</span> <a class="t-links" href="933.5"></a>
-<br><br>
+<div class="more" markdown="1">For a deeper dive into Markdown syntax and its various capabilities, I'd recommend checking out the dedicated tutorial in this workbook: <a class="t-links" href="933.5"></a>
+</div>
 
 **What to include in the README as a developer?**
 
@@ -907,7 +911,7 @@ README files are typically hand-written by developers, though tools like `readme
 **1. Project's overview** <br>
 <i>Introduces the tool or project, providing a high-level understanding of its purpose and primary functionality.</i>
 
-```
+```bash
 # DataCleanMaster: Automated Data Cleaning
 
 ## 1. Project's Overview
@@ -919,7 +923,7 @@ rectification methods, ensuring your data is clean and ready for analysis.
 **2. Dependencies** <br>
 <i>Lists external software or libraries that need to be installed or available for the tool to function correctly.</i>
 
-```
+```bash
 ## 2. Dependencies
 
 * Python >= 3.7
@@ -1013,20 +1017,18 @@ INSTALLATION GUIDE for DataProcessorTool
 
 2. Installation via pip:
    - Simply run the following command in your terminal or command prompt:
-     ```
-     pip install dataprocessortool
-     ```
+
+     `pip install dataprocessortool`
 
 3. From Source:
    - Clone the repository from GitHub:
-     ```
-     git clone https://github.com/user/dataprocessortool.git
-     ```
+
+     `git clone https://github.com/user/dataprocessortool.git`
+
    - Navigate to the directory and install:
-     ```
-     cd dataprocessortool
-     pip install .
-     ```
+
+     `cd dataprocessortool`
+     `pip install .`
 
 Thank you for choosing DataProcessorTool!
 ```
@@ -1183,7 +1185,7 @@ You can help improve this workbook: <a href="https://github.com/ISUgenomics/data
 Reference Materials serve as the backbone of technical information for complex or multi-layer software, offering deep insights into its structure and functionalities. This includes `API documentation` which elucidates how software components interact, `Testing documentation` detailing test strategies and results, and `Architecture diagrams` visually representing the system's overarching design. Together, these materials empower developers and users with a comprehensive understanding of the software's inner workings.
 
 
-###  • *API Documentation*
+### <b class="prefix-2"></b>*API Documentation*
 
 While it can also be useful for end-users, API (Application Programming Interface) documentation is crucial for developers. It details how different functions, methods, or classes of the software can be used, what inputs they expect, what outputs they return, and any side effects they might have.
 
@@ -1191,7 +1193,7 @@ While it can also be useful for end-users, API (Application Programming Interfac
 See the real-tool example here: <a href="https://www.tensorflow.org/api_docs" target="_blank">TensorFlow API Documentation  ⤴</a></span><br></i>
 *TensorFlow is one of the leading libraries for deep learning. Its API documentation, available in several languages, provides in-depth details about its classes, methods, and functions.*
 
-###  • *Testing Documentation*
+### <b class="prefix-2"></b>*Testing Documentation*
 
 This focuses on how developers can run tests, what the tests cover, and how to interpret test results. It ensures that quality and functionality are maintained as changes are made.
 
@@ -1199,7 +1201,7 @@ This focuses on how developers can run tests, what the tests cover, and how to i
 See the real-tool example here: <a href="https://docs.djangoproject.com/en/3.2/topics/testing/" target="_blank">Django Testing Documentation  ⤴</a></span><br></i>
 *Django is a high-level Python web framework. Its testing documentation covers how to write and run tests for Django applications.*
 
-###  • *Architecture Diagrams*
+### <b class="prefix-2"></b>*Architecture Diagrams*
 
 These provide visual and textual representations of the software's overarching structure and design. They can be crucial for understanding how different parts of the system interrelate, especially in complex projects.
 
@@ -1245,9 +1247,9 @@ Interactive notebooks are **web-based platforms that allow for the combination o
 For large-scale software documentation, where comprehensive architectural details, API references, and broader system interactions are crucial, traditional documentation tools might be more suitable.
 </div>
 
-<p style="color: #ff3870; font-weight: 500;">
-For a comprehensive understanding and hands-on experience with <b>interactive notebooks</b>, I highly encourage you to delve into the tutorials presented in section <a class="t-links" href="400"></a> / <a class="t-links" href="412"></a>
-specifically tailored for the <a href="https://jupyter.org/" target="_blank">Jupyter</a> interface.</p>
+<div class="more" markdown="1">
+For a comprehensive understanding and hands-on experience with **interactive notebooks**, I highly encourage you to delve into the tutorials presented in section <a class="t-links" href="400"></a> / <a class="t-links" href="412"></a> specifically tailored for the <a href="https://jupyter.org/" target="_blank">Jupyter</a> interface.
+</div>
 
 ## Nextflow workflows
 
@@ -1307,10 +1309,10 @@ Platforms like GitHub Pages, Netlify, Vercel, and even Read the Docs (with some 
 
 Documentation generators **primarily rely on in-code comments and docstrings** to produce documentation. The tool parses these non-executable text from files with the source code, extracting relevant information to create structured documentation. In some cases, they can also generate documentation directly from the code itself, especially for aspects like function signatures, classes, and module structures.
 
-<span style="color: #ff3870;font-weight: 500;">Jump to section</span> <a class="t-links" href="933.4" section="#in-code-documentation">In-code documenattion</a> to learn how to add in-code comments and docstrings.
+<button class="btn more mr"></button> *Jump to section <a class="t-links" href="933.4" section="#in-code-documentation">In-code documenattion</a> to learn how to add in-code comments and docstrings.*
 
 
-###  • *SPHINX for Python docs*
+###  <b class="prefix-2"></b>*SPHINX for Python docs*
 
 **Getting Started with Sphinx for Python Documentation**
 
@@ -1328,7 +1330,7 @@ sphinx-quickstart
 <i>This command will guide you through the initial configuration. <br>Answer the questions as prompted. For most users, the default values will be sufficient.</i> <br>
 ![02_sphinx_docs_for_python.png]({{ images_path }}/02_sphinx_docs_for_python.png)
 
-**3.Choose a Theme:** <br>
+**3. Choose a Theme:** <br>
 Sphinx uses themes to style the documentation. The default is called `alabaster`, but there are many others available. One popular choice is `Read the Docs`. To use it, first install the theme:
 ```bash
 pip install sphinx_rtd_theme
@@ -1373,10 +1375,10 @@ Navigate to the `_build/html` directory and open the `index.html` file in your w
 
 
 **7. Keeping Documentation Updated:** <br>
-As you update your Python code and its docstrings, **re-run the** `make html` **command to regenerate the documentation**. <br>**Sphinx is highly customizable and extensible.** You can use <a href="https://www.sphinx-doc.org/en/master/usage/extensions/index.html" target="_blank">extensions  ⤴</a> to add functionalities like automatic function/method signature inclusion, link code references, etc.
+As you update your Python code and its docstrings, re-run the `make html` command to **regenerate the documentation**. <br>*Sphinx is highly customizable and extensible. You can use <a href="https://www.sphinx-doc.org/en/master/usage/extensions/index.html" target="_blank">extensions  ⤴</a> to add functionalities like automatic function/method signature inclusion, link code references, etc.*
 
 **8. Publishing Documentation:** <br>
-If you want to share your documentation with others, consider using a platform like <a href="https://readthedocs.org/" target="_blank">Read the Docs  ⤴</a>. <br>It can automatically build and host your Sphinx documentation.
+If you want to share your documentation with others, consider using a platform like <a href="https://readthedocs.org/" target="_blank">Read the Docs</a>. <br>*It can automatically build and host your Sphinx documentation.*
 
 <div class="protip" markdown="1">
 Remember to **write comprehensive docstrings in your Python code using the reStructuredText format**, so Sphinx can pick up and format them appropriately. As long as your code is well-documented with meaningful `docstrings`, you can automatically create detailed and accurate **documentation without excessive manual effort**. Refer to the <a href="https://www.sphinx-doc.org/en/master/" target="_blank">Sphinx documentation  ⤴</a> for advanced topics and configurations.
@@ -1387,5 +1389,5 @@ Remember to **write comprehensive docstrings in your Python code using the reStr
 
 Version control platforms, such as Git and Mercurial, enable developers to track and manage changes to software projects over time while simultaneously providing features for detailed documentation. These platforms enable users to maintain a history of code modifications, branch and merge projects. They also often come integrated with documentation tools that facilitate the creation, management, and sharing of documentation related to the project in the form of **internal wikis or README files to guide users and collaborators**. As a result, they provide a unified environment where both the code and its accompanying documentation evolve in tandem, ensuring consistency and clarity for all contributors.
 
-<span style="color: #ff3870;font-weight: 500;"> I highly recommend checking out the section in the workbook dedicated to </span> <a class="t-links" href="932.1"></a> <br>
-*It offers practical tutorials that will equip you with hands-on skills, ensuring you can effectively utilize version control in your projects. This knowledge is invaluable for any modern software development endeavor.*
+<button class="btn more"></button> Check out the <a class="t-links" href="932.1"></a> section in this workbook.  <br>
+<em class="footnote">It offers practical tutorials that will equip you with hands-on skills, ensuring you can effectively utilize version control in your projects. This knowledge is invaluable for any modern software development endeavor.</em>

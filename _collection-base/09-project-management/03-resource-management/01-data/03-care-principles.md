@@ -18,7 +18,7 @@ tags: ["CARE", "standards"]
 {% include page-sourcing.html %}
 
 
-<span style="color: #ff3870;">Principles to ensure data management is centered on <b>C</b>ollective benefit, <b>A</b>uthority to control, <b>R</b>esponsibility, and <b>E</b>thics, especially in the context of Indigenous data sovereignty.</span>
+<br><b class="c-header">Principles to ensure data management is centered on <u>C</u>ollective benefit, <u>A</u>uthority to control, <u>R</u>esponsibility, and <u>E</u>thics, especially in the context of Indigenous data sovereignty.</b>
 
 # Introduction
 

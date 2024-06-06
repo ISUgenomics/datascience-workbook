@@ -18,7 +18,7 @@ tags: ["TRUST", "standards"]
 {% include page-sourcing.html %}
 
 
-<span style="color: #ff3870;">Guidelines to ensure digital repositories are <b>T</b>ransparent, <b>R</b>esponsible, <b>U</b>ser-focused, <b>S</b>ustainable, and employ appropriate <b>T</b>echnology.</span>
+<br><b class="c-header">Guidelines to ensure digital repositories are <u>T</u>ransparent, <u>R</u>esponsible, <u>U</u>ser-focused, <u>S</u>ustainable, and employ appropriate <u>T</u>echnology.</b>
 
 # Introduction
 
@@ -55,7 +55,6 @@ The TRUST Principles were **published in June 2020**, <a href="https://www.natur
 
 The TRUST Principles were implemented to complement the FAIR Principles, focusing on ensuring that digital repositories maintain Transparency, Responsibility, User-focus, Sustainability, and appropriate Technology. They <b>address the need for <a href="https://www.crl.edu/archiving-preservation/digital-archives/metrics" target="_blank">trustworthy digital repositories (TDRs)</a> that can preserve data over time</b> while adapting to technological and stakeholder changes. By doing so, they play a critical role in maintaining the value of data and supporting the principles of Open Science.
 
----
 
 # TRUST in your Research
 

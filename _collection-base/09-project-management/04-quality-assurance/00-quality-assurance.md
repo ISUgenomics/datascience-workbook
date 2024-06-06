@@ -110,16 +110,15 @@ This table illustrates how QA principles are integral at every stage, ensuring t
 | **Review and Revision**              | - incorporating feedback to refine quality<br>- improving research practices based on evaluations|
 
 
-<span style="color: #ff3870;font-weight: 500;">  Quality Assurance in research projects is essential for ensuring the integrity, reliability, and efficiency of research outcomes. </span>
+<div class="note" markdown="1">
+Quality Assurance in research projects is essential for ensuring the integrity, reliability and efficiency of research outcomes. <base class="mb">
 A comprehensive QA framework for research projects can be structured around three key subsections:
 
-|||
-|-|-|
-|[Monitoring & Evaluation](monitoring--evaluation)    | Continuously assess and improve the quality and effectiveness of the research project.|
-|[Research Productivity](#research-productivity)      | Maximize the efficiency and outcomes of research efforts.|
-|[Research Reproducibility](#research-reproducibility)| Ensure that research findings can be consistently reproduced under similar conditions.|
+[Monitoring & Evaluation](#monitoring--evaluation)   | Continuously assess and improve the quality and effectiveness of the research project.
+[Research Productivity](#research-productivity)      | Maximize the efficiency and outcomes of research efforts.
+[Research Reproducibility](#research-reproducibility)| Ensure that research findings can be consistently reproduced under similar conditions.
+</div>
 
----
 
 # Monitoring & Evaluation
 
@@ -161,10 +160,9 @@ The components of Monitoring & Evaluation, namely `Planning`, `Monitoring`, and 
 Embrace feedback from Monitoring and Evaluation like a roadmap for excellence. It's your key to pinpoint adjustments and boost both the quality and impact of your research. Think of it as fine-tuning your approach based on what works best, ensuring your project not only meets but exceeds expectations.
 </div>
 
-<br><span style="background-color: #e8e9e8; color: #0ba37f; font-weight: 500; padding: 5px 7px;">TUTORIAL</span>&nbsp;
-For a deep dive into real-life solutions and tools that can elevate the Monitoring & Evaluation of small to moderate scale research projects, be sure to check out our detailed tutorial on <a class="t-links" href="941"></a>
-
----
+<div class="more" markdown="1">
+For a deep dive into real-life solutions and tools that can elevate the Monitoring & Evaluation of small to moderate scale research projects, be sure to check out our detailed tutorial on <a class="t-links" href="941"></a>.
+</div>
 
 # Research Productivity
 
@@ -201,10 +199,9 @@ Research Productivity is about maximizing the efficiency and outcomes of your re
 Boost your research productivity by embracing a culture of continuous improvement and openness to change. Regularly review your strategies for Resource Management, Prioritization, and Collaboration to find new ways to enhance efficiency and impact. Remember, the most productive researchers are those who adapt swiftly and leverage their networks effectively.
 </div>
 
-<span style="background-color: #e8e9e8; color: #0ba37f; font-weight: 500; padding: 5px 7px;">TUTORIAL</span>
-Dive deeper into strategies for maximizing Research Productivity in small to moderate scale projects with our comprehensive tutorial on <a class="t-links" href="942"></a>
-
----
+<div class="more" markdown="1">
+Dive deeper into strategies for maximizing Research Productivity in small to moderate scale projects with our comprehensive tutorial on <a class="t-links" href="942"></a>.
+</div>
 
 # Research Reproducibility
 
@@ -245,5 +242,6 @@ Make Research Reproducibility a priority from day one of your project. Document 
 If your research involves **data with special security requirements**, such as medical records or government data (e.g., `USDA`), it's crucial to closely adhere to the guidance and recommendations provided by your institution and relevant regulatory bodies **before making any data public**. Ensuring compliance with privacy laws and ethical standards is paramount to protect sensitive information and maintain the trustworthiness of your research.
 </div>
 
-<span style="background-color: #e8e9e8; color: #0ba37f; font-weight: 500; padding: 5px 7px;">TUTORIAL</span>
-To further explore how to ensure your research is reproducible, especially in small to moderate scale projects, check out our in-depth tutorial on <a class="t-links" href="943"></a>
+<div class="more" markdown="1">
+To further explore how to ensure your research is reproducible, especially in small to moderate scale projects, check out our in-depth tutorial on <a class="t-links" href="943"></a>.
+</div>

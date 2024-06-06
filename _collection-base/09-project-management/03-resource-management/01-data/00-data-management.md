@@ -27,12 +27,11 @@ Data Management is a critical aspect of research, ensuring that data collected, 
 In small and moderate scale projects, efficient data management is crucial for maximizing resource utilization, maintaining data quality, and ensuring compliance with ethical and legal standards.
 </div>
 </td>
-<td width=500 style="border: transparent;"><img width="800" src="{{ images_path }}/02_data_management.png"></td>
+<td width=490 style="border: transparent;"><img width="800" src="{{ images_path }}/02_data_management.png"></td>
 </tr></table>
 
 Data Management serves as the backbone of project. It encompasses a series of structured practices and principles, aiming to ensure that data, a valuable and sensitive asset, is handled with utmost care. From the initial stages of collection to the final steps of preservation, every facet of Data Management is designed to uphold the quality, accessibility, and security of data. The systematic approach not only amplifies the credibility and reproducibility of research findings but also supports compliance with evolving ethical and legal standards.
 
----
 
 # Data Lifecycle Management
 
@@ -82,7 +81,7 @@ Effective data collection methods lay the groundwork for generating actionable i
 |sensor data in IoT projects|<a href="https://www.arduino.cc/" target="_blank">Arduino</a>|open-source electronics platform for building digital devices|
 
 
-<br><span style="background-color: #e8e9e8; color: #ff3870; font-weight: 500; padding: 5px 7px;">checklist</span>&nbsp; **A few universal tips for Data Collection:**
+<br><button class="btn c-alert mr font-08">checklist</button> **A few universal tips for Data Collection:**
 
 1. **Define Clear Objectives** <br>
 Ensure your data collection methods align precisely with your research goals.
@@ -139,7 +138,7 @@ Effective and **well-planned data storage** significantly enhances the reliabili
 |object storage for massive datasets|<a href="https://min.io/" target="_blank">MinIO</a>|high performance, Kubernetes-native object storage|
 
 
-<br><span style="background-color: #e8e9e8; color: #ff3870; font-weight: 500; padding: 5px 7px;">checklist</span>&nbsp; **A few universal tips for Data Storage:**
+<br><button class="btn c-alert mr font-08">checklist</button> **A few universal tips for Data Storage:**
 
 1. **Assess Storage Needs** <br>
 Evaluate the volume, variety, and velocity of data to choose the most suitable storage solution. Opt for storage solutions that comply with industry standards and possess certifications like TRUST, ensuring data reliability and sustainability.
@@ -189,7 +188,7 @@ Implementing strong privacy and security measures is a direct reflection of the 
 |data masking and anonymization|<a href="https://arx.deidentifier.org" target="_blank">ARX Data Anonymization Tool </a>|a software for anonymizing sensitive datasets while preserving data utility|
 |web application security|<a href="https://www.zaproxy.org/" target="_blank">OWASP ZAP</a>|open-source tool for finding vulnerabilities in web applications|
 
-<br><span style="background-color: #e8e9e8; color: #ff3870; font-weight: 500; padding: 5px 7px;">checklist</span>&nbsp; **A few universal tips for Data Privacy and Security:**
+<br><button class="btn c-alert mr font-08">checklist</button> **A few universal tips for Data Privacy and Security:**
 
 1. **Educate Your Team** <br>
 Ensure that all team members are aware of the importance of data privacy and security and are trained in the proper handling of sensitive data.
@@ -241,7 +240,7 @@ By adhering to these policies, researchers contribute to a culture of openness, 
 |domain-specific data sharing|<a href="https://www.ncbi.nlm.nih.gov/genbank" target="_blank">GenBank</a>|repository for genetic sequence data, widely used in the life sciences|
 |geospatial data sharing|<a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a>|collaborative project to create a free editable map of the world|
 
-<br><span style="background-color: #e8e9e8; color: #ff3870; font-weight: 500; padding: 5px 7px;">checklist</span>&nbsp; **A few universal tips for Data Privacy and Security:**
+<br><button class="btn c-alert mr font-08">checklist</button> **A few universal tips for Data Privacy and Security:**
 
 1. **Understand Data Sensitivity** <br>
 Assess the sensitivity of your data and determine what can be shared openly while respecting privacy, confidentiality, and intellectual property. Ensure that your team is aware of the importance of data sharing and accessibility and understands how to comply with relevant policies and best practices.
@@ -285,7 +284,7 @@ Data Archiving not only supports the reproducibility of scientific research but 
 |web page archiving|<a href="https://archive.org/" target="_blank">Internet Archive</a>|digital library known for archiving and providing public access to collections of digitized materials, including websites|
 |High-Performance Computing (HPC) storage|your institution's HPC facility|secure and long-term storage, public access may be limited|
 
-<br><span style="background-color: #e8e9e8; color: #ff3870; font-weight: 500; padding: 5px 7px;">checklist</span>&nbsp; **A few universal tips for Data Archiving and Preservation:**
+<br><button class="btn c-alert mr font-08">checklist</button> **A few universal tips for Data Archiving and Preservation:**
 
 1. **Develop a Preservation Plan** <br>
 Outline strategies for how and where data will be preserved, including file formats, storage media, and backup schedules. Follow established standards and best practices for data archiving and preservation to ensure data remains retrievable and understandable.
@@ -325,7 +324,7 @@ By providing a clear roadmap of the data journey, documentation supports the rep
 |documentation for code and datasets|<a href="https://readthedocs.org/" target="_blank">Read the Docs</a>|free and open-source documentation platform for software projects and datasets|
 |structured data documentation|<a href="https://ddialliance.org/" target="_blank">DDI</a>|an international standard for describing data from the social, behavioral, and economic sciences|
 
-<br><span style="background-color: #e8e9e8; color: #ff3870; font-weight: 500; padding: 5px 7px;">checklist</span>&nbsp; **A few universal tips for Data Documentation:**
+<br><button class="btn c-alert mr font-08">checklist</button> **A few universal tips for Data Documentation:**
 
 1. **Start Early** <br>
 Begin documenting at the start of the research process to ensure no details are overlooked or forgotten.
@@ -373,7 +372,7 @@ Defining Roles and Responsibilities facilitates effective communication and coll
 | Data Quality Manager |Ensures the accuracy, completeness, and reliability of data throughout its lifecycle.|
 | Data Architect |Designs and manages the data infrastructure, sets data standards, and ensures alignment with business goals.|
 
-<br><span style="background-color: #e8e9e8; color: #ff3870; font-weight: 500; padding: 5px 7px;">checklist</span>&nbsp; **Practical Tips for Managing Roles and Responsibilities:**
+<br><button class="btn c-alert mr font-08">checklist</button> **Practical Tips for Managing Roles and Responsibilities:**
 
 1. **Align Roles with Expertise** <br>
 Assign tasks based on individuals' expertise and experience to ensure tasks are executed efficiently and effectively. Be prepared to adjust roles and responsibilities as the project progresses and as team members' strengths and project needs evolve.

@@ -134,5 +134,13 @@ It's worth noting that while some integrations come built-in, others might requi
 
 Data visualization tools adeptly convert intricate datasets into clear and `interactive visuals`, offering diverse representations like `graphs`, `charts`, and `maps` to **aid in data interpretation and presentation**. These tools bridge the gap between raw data and comprehensible insights, making communication more effective.
 
-For detailed tutorials on **Data Visualization Tools** and methodologies, refer to section
-<a class="t-links" href="800"></a> which includes topics such as <a class="t-links" href="811"></a> and <a class="t-links" href="820"></a> providing hands-on examples with tools like <a class="t-links" href="814"></a>, <a class="t-links" href="821.1"></a> (creating plots in the UNIX shell), <a class="t-links" href="822.01"></a> (data processing & interactive plotting with Python), and <a class="t-links" href="823.01"></a> (data processing & plotting with R).
+<div class="more" markdown="1">
+For detailed tutorials on **Data Visualization Tools** and methodologies, refer to section <a class="t-links" href="800"></a> which includes topics such as:
+* <a class="t-links" href="811"></a> and
+* <a class="t-links" href="820"></a> <base class="mb">
+providing hands-on examples with tools like:
+* <a class="t-links" href="814"></a>,
+* <a class="t-links" href="821.1"></a> (creating plots in the UNIX shell),
+* <a class="t-links" href="822.01"></a> (data processing & interactive plotting with Python), and
+* <a class="t-links" href="823.01"></a> (data processing & plotting with R).
+</div>

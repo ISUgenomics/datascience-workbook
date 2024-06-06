@@ -102,7 +102,6 @@ Both successful and challenging examples highlight the role of community engagem
 By reflecting on these real-life examples, you can better navigate the complexities of reproducibility, adopting practices that enhance the reliability, integrity, and impact of your work.
 </div>
 
----
 
 # Key Principles and Best Practices
 
@@ -502,7 +501,6 @@ Logging any deviations from the planned methodology, such as:
 </details>
 </div>
 
----
 
 # Tools and Technologies
 
@@ -524,7 +522,6 @@ Together, these digital tools form a critical infrastructure for advancing repro
 <tr> <td><a href="https://git-scm.com " target="_blank">Git</a></td> <td><a class="t-links" href="932.2"></a> <br> <a class="t-links" href="932.21"></a></td> <td>Distributed version control system widely used for source code management.</td> </tr>
 <tr> <td><a href="https://subversion.apache.org" target="_blank">SVN</a></td> <td><a class="t-links" href="932.1" section="#-subversion-svn">Subversion (SVN)</a></td> <td>Centralized version control system designed to keep track of changes in files and directories.</td> </tr>
 </table>
-
 
 
 ## Shared Repositories
@@ -550,7 +547,6 @@ Open-source statistical and computational tools offer powerful, transparent, and
 <tr> <td><a href="https://julialang.org" target="_blank">Julia</a></td> <td><a class="t-links" href="551"></a> and <a href="https://datascience.101workbook.org/sitemap.html" target="_blank">more  ⤴</a></td> <td>High-level, high-performance dynamic programming language for technical computing, with syntax that is familiar to users of other technical computing environments.</td> </tr>
 <tr> <td><a href="https://jupyter.org" target="_blank">Jupyter Notebooks</a></td> <td><a class="t-links" href="412"></a> and <a href="https://datascience.101workbook.org/sitemap.html" target="_blank">more  ⤴</a></td> <td>Open-source web application that allows you to create and share documents that contain live code, equations, visualizations, and narrative text.</td> </tr>
 </table>
-<br>
 
 
 # Practice Your Skills

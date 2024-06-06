@@ -29,13 +29,11 @@ Collaboration and communication are fundamental elements in research projects. E
 </tr></table>
 
 
-
-
 <div class="example italic before" markdown="1" data-before="A tale of collaboration:">
 In the bustling corridors of a research institution during open days, Dr. Mira, a marine biologist, unexpectedly bumped into Dr. Patel, an AI specialist. Over a casual coffee conversation, they discovered a mutual interest: understanding whale communication. Mira provided recordings of mysterious whale songs, while Patel used machine learning to decode their patterns. Together, they unveiled a complex language system, paving the way for groundbreaking research into interspecies communication. Their serendipitous **collaboration demonstrated the profound potential of merging two seemingly unrelated fields**.
 </div>
 
----
+
 # Importance of Communication in Research
 
 Without clear communication, even the most promising research endeavors can falter, leading to misinterpretations, errors, or missed opportunities. Effective communication in research facilitates the seamless integration of diverse expertise and ensures mutual understanding among team members.
@@ -129,7 +127,7 @@ A combination of platforms like Slack, Zoom, GitHub and Microsoft Office 365 can
 <li> <a class="t-links" href="221"></a></li>
 </ul>
 
----
+
 # Benefits of Collaboration in Research Projects
 
 The multifaceted benefits of collaboration in research projects unfold as diverse minds converge, creating a tapestry of ideas, expertise, and resources that is far richer and more nuanced than any single contributor could weave alone.
@@ -187,7 +185,6 @@ The path of collaboration is paved with myriad decisions and insights. Keeping r
 
 
 # Challenges and ethics
-
 
 Navigating collaboration often entails confronting challenges such as unequal contributions, differing methodologies, and potential conflicts of interest. Furthermore, upholding ethical standards requires clear agreements on data usage, intellectual property rights, and ensuring that credit is equitably distributed among collaborators.
 
