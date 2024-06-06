@@ -9,8 +9,9 @@ header:
 type: "intro"
 order: 123
 level: 2
-categories: ["machine-learning"]
-tags: []
+categories: ["data-science"]
+tags: ["scientific", "computational", "machine-learning"]
+attributes: ["example"]
 ---
 
 {% include toc %}

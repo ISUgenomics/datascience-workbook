@@ -9,8 +9,9 @@ header:
 type: "article"
 order: 110
 level: 1
-categories: ["data-types"]
-tags: []
+categories: ["data-science", "data-types"]
+tags: ["information", "knowledge", "data-states", "structured-data", "unstructured-data", "big-data"]
+attributes: ["example"]
 ---
 
 {% include toc %}

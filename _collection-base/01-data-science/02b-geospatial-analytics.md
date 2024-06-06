@@ -9,8 +9,9 @@ header:
 type: "intro"
 order: 122
 level: 2
-categories: []
-tags: []
+categories: ["data-science"]
+tags: ["scientific", "computational", "geospatial"]
+attributes: ["example"]
 ---
 
 {% include toc %}

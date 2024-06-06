@@ -9,9 +9,9 @@ header:
 type: "intro"
 order: 121
 level: 2
-categories: []
-tags: []
-
+categories: ["data-science"]
+tags: ["scientific", "computational", "bioinformatics"]
+attributes: ["example"]
 ---
 
 {% include toc %}

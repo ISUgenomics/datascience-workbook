@@ -9,8 +9,9 @@ header:
 type: "article"
 order: 120
 level: 1
-categories: []
-tags: []
+categories: ["data-science"]
+tags: ["scientific", "computational"]
+attributes: ["example"]
 ---
 
 {% include toc %}
