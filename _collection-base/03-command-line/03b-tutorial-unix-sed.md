@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 332
 level: 2
-categories: ["command-line", "text-manipulation", "bash-unix"]
-tags: ["sed", "replace-pattern"]
+categories: ["command-line", "text-manipulation"]
+tags: ["CLI", "terminal", "unix", "manual-guide", "sed", "replace-pattern"]
+attributes: ["command", "ready-made-slution"]
 ---
 
 {% include toc %}

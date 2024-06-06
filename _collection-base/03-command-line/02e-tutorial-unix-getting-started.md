@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 325
 level: 2
-categories: ["command-line", "bash-unix", "text-manipulation"]
-tags: ["terminal", "file-operations", "manual-docs"]
+categories: ["command-line", "text-manipulation"]
+tags: ["CLI", "terminal", "unix", "bash", "file-operations", "manual-guide"]
+attributes: ["command", "exercise"]
 ---
 
 {% include toc %}

@@ -10,8 +10,9 @@ header:
 type: "cheatsheet"
 order: 350
 level: 1
-categories: ["command-line", "text-manipulation", "bash-unix"]
-tags: ["command", "manual-docs", "cheatsheet"]
+categories: ["command-line", "text-manipulation"]
+tags: ["CLI", "terminal", "unix", "manual-guide", "CLI-navigation", "file-operations", "file-compression", "permissions", "shell-variables", "hpc-cluster", "SLURM", "PBS", "nano", "shortcuts", "comand-piping"]
+attributes: ["cheatsheet"]
 ---
 
 {% include toc %}

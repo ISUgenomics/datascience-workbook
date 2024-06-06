@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 323
 level: 2
-categories: ["command-line"]
-tags: ["permissions", "file-size", "IP-address", "memory", "disk-space"]
+categories: ["system-setup", "command-line"]
+tags: ["permissions", "file-size", "IP-address", "processor", "memory", "disk-space"]
+attributes: ["command"]
 ---
 
 {% include toc %}

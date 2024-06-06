@@ -10,8 +10,9 @@ header:
 type: "tutorial"
 order: 321
 level: 2
-categories: ["command-line", "bash-unix"]
-tags: ["command", "command-history", "path", "file-operations"]
+categories: ["command-line"]
+tags: ["unix", "bash", "user-guide", "command-history", "path", "file-system", "CLI-navigation", "file-operations", "command-piping", "pwd", "cd", "mkdir", "mv", "rm", "cp", "ls"]
+attributes: ["example", "command"]
 ---
 
 {% include toc %}

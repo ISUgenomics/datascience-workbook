@@ -10,7 +10,8 @@ type: "intro"
 order: 330
 level: 1
 categories: ["command-line", "text-manipulation"]
-tags: ["text-editors", "search-pattern", "replace-pattern", "manage-order", "sort-lines", "cut-characters", "swap-characters", "count-words"]
+tags: ["CLI", "terminal", "unix", "text-editor", "search-pattern", "replace-pattern", "manage-order", "sort-lines", "cut-characters", "swap-characters", "count-words", "grep", "sed", "awk", "sort", "cut", "tr", "count"]
+attributes: ["command", "ready-made-solution"]
 ---
 
 {% include toc %}

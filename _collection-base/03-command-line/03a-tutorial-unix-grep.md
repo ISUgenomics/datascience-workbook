@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 331
 level: 2
-categories: ["command-line", "text-manipulation", "bash-unix"]
-tags: ["grep", "search-pattern"]
+categories: ["command-line", "text-manipulation"]
+tags: ["CLI", "terminal", "unix", "manual-guide", "grep", "search-pattern"]
+attributes: ["command", "ready-made-slution"]
 ---
 
 {% include toc %}

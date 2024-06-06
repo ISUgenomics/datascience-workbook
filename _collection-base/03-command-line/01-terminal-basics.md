@@ -10,7 +10,8 @@ type: "tutorial"
 order: 310
 level: 1
 categories: ["command-line"]
-tags: ["windows", "macOS", "linux", "terminal", "command", "command-history", "prompt"]
+tags: ["windows", "macOS", "linux", "unix", "terminal", interface, CLI, "prompt", "command-history", "auto-completion", "standard-output", "standard-error"]
+attributes: []
 ---
 
 {% include toc %}

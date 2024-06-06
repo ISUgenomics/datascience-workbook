@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 322
 level: 2
-categories: ["command-line", "text-manipulation", "installation"]
-tags: ["nano", "vim", "text-editors"]
+categories: ["command-line", "text-manipulation"]
+tags: ["terminal", "text-editor", "nano", "vim", "syntax-highlighting"]
+attributes: ["example", "exercise", "installation"]
 ---
 
 {% include toc %}
@@ -85,7 +86,7 @@ Copying and pasting work like other editors as long as you are in the insert mod
 * [Vim-adventures](http://vim-adventures.com/)
 
 
-## Syntax high-lighting for Biology specific files
+## Syntax highlighting for Biology specific files
 
 If you're a coder, then you already know how useful the syntax highlighting is for your programming language. However, if you're a biologist and work with lots of biology specific files (fasta, msa, vcf etc) on command-line, then you might have noticed how non-intuitive it feels for manually inspecting them. This tutorial aims to reduce that feeling a little bit and makes working on CLI a bit better!
 

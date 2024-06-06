@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 320
 level: 1
-categories: ["command-line", "bash-unix"]
-tags: ["home-dir", "alias", "prompt", "export-path", "shell-variables", "terminal", ".bashrc"]
+categories: ["system-setup", "command-line"]
+tags: ["unix", "bash", "terminal", "interface", "CLI", "prompt", "root", "path", "export-path", "shell-variables", "home-dir", ".bashrc", "alias"]
+attributes: ["example", "code-snippet", "ready-made-solution"]
 ---
 
 {% include toc %}

@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 333
 level: 2
-categories: ["command-line", "text-manipulation", "bash-unix"]
-tags: ["awk", "manage-order", "arithmetic", "variables"]
+categories: ["command-line", "text-manipulation"]
+tags: ["CLI", "terminal", "unix", "manual-guide", "awk", "manage-order", "arithmetic", "variables"]
+attributes: ["command", "ready-made-slution"]
 ---
 
 {% include toc %}

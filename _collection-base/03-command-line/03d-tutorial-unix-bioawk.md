@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 334
 level: 2
-categories: ["command-line", "text-manipulation", "bash-unix", "data-types"]
-tags: ["bioawk", "bioinformatics"]
+categories: ["command-line", "text-manipulation", "data-types"]
+tags: ["CLI", "terminal", "unix", "manual-guide", "bioawk", "bioinformatics"]
+attributes: ["command", "ready-made-slution"]
 ---
 
 {% include toc %}

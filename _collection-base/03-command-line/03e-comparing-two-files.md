@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 335
 level: 2
-categories: ["command-line", "text-manipulation", "bash-unix"]
-tags: ["diff", "comm", "cmp", "comparing-files"]
+categories: ["command-line", "text-manipulation"]
+tags: ["CLI", "terminal", "unix", "manual-guide", "diff", "comm", "cmp", "comparing-files"]
+attributes: ["command", "ready-made-slution"]
 ---
 
 
