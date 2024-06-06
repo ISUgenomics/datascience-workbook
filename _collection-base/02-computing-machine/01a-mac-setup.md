@@ -1,5 +1,5 @@
 ---
-title: "Linux command line tools on macOS"
+title: "Unix command line tools on macOS"
 layout: single
 author:
 author_profile: false
@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 211
 level: 2
-categories: ["operating-system", "command-line"]
-tags: ["macOS"]
+categories: ["system-setup", "command-line"]
+tags: ["local-machine", "operating-system", "macOS", "unix", "bash"]
+attributes: []
 ---
 
 {% include toc %}

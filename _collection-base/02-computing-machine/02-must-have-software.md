@@ -9,8 +9,9 @@ header:
 type: "intro"
 order: 220
 level: 1
-categories: ["office-tools", "developer-tools", "project-management", "communication"]
+categories: ["project-management", "office-tools", "graphic-tools", "collaboration-tools", "computing-tools", "developer-tools", "remote-access", "programming", "documentation"]
 tags: []
+attributes: ["example"]
 ---
 
 {% include toc %}

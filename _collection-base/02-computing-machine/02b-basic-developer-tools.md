@@ -9,8 +9,9 @@ header:
 type: "article"
 order: 222
 level: 2
-categories: ["developer-tools", "installation", "version-control"]
-tags: ["IDE", "text-editors", "compiler", "debugger", "VSC", "git"]
+categories: ["developer-tools", "version-control"]
+tags: ["development-environment", "IDE", "code-editor", "text-editor", "file-manager", "compiler", "debugger", "VSC", "Atom", "gcc", "git", "Midnight Commander", "VPN"]
+attributes: ["example"]
 ---
 
 {% include toc %}

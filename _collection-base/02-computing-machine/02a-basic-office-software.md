@@ -9,8 +9,9 @@ header:
 type: "article"
 order: 221
 level: 2
-categories: ["office-tools", "installation"]
-tags: ["Microsoft Office", "Adobe", "screen-capture", "password-manager", "virtual-communication", "browser-extensions", "productivity-software"]
+categories: ["office-tools", "graphic-tools", "collaboration-tools"]
+tags: ["productivity-tools", "screen-capture", "text-editor", "video-editor", "password-manager", "virtual-communication", "browser-extensions", "Microsoft Office", "Adobe", "Alfred"]
+attributes: ["example", "automation"]
 ---
 
 {% include toc %}

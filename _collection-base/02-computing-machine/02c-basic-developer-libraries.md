@@ -9,8 +9,9 @@ header:
 type: "article"
 order: 223
 level: 2
-categories: ["developer-tools", "installation", "programming"]
-tags: ["conda", "python", "julia", "R", "virtual-env"]
+categories: ["developer-tools", "programming", "library-package-module", "virtual-environment"]
+tags: ["package-manager", "conda", "venv", "python", "R", "virtual-env", "dependencies", "library", "package", "module", "numpy", "pandas", "math", "scipy", "openpyxl", "ggplot", "dplyr", "tidyverse"]
+attributes: ["example"]
 ---
 
 {% include toc %}

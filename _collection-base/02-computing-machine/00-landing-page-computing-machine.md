@@ -9,8 +9,9 @@ header:
 type: "landing-page"
 order: 200
 level: 0
-categories: []
-tags: []
+categories: ["system-setup"]
+tags: ["operating-system", "local-machine"]
+attributes: []
 ---
 
 

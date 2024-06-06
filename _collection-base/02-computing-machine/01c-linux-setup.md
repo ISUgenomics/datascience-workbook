@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 213
 level: 2
-categories: ["operating-system", "command-line", "installation"]
-tags: ["linux"]
+categories: ["system-setup", "command-line"]
+tags: ["local-machine", "operating-system", "linux", "WSL", "PowerShell", "unix", "bash"]
+attributes: ["installation"]
 ---
 
 {% include toc %}

@@ -10,8 +10,9 @@ module: "03. Computing Machine Setup"
 type: "tutorial"
 order: 232
 level: 2
-categories: ["operating-system", "installation", "developer-tools"]
-tags: ["windows", "conda", "R", "python", "IDE", "git"]
+categories: ["system-setup", "developer-tools"]
+tags: ["local-machine", "operating-system", "windows", "IDE", "Atom", "git", "conda", "python", "R", "java", "perl", "docker", "nextflow"]
+attributes: ["installation"]
 ---
 
 {% include toc %}

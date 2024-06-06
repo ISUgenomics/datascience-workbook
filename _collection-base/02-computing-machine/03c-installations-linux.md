@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 233
 level: 2
-categories: ["operating-system", "installation"]
-tags: ["linux", "conda", "python", "R", "perl"]
+categories: ["system-setup", "developer-tools"]
+tags: ["local-machine", "operating-system", "linux", "conda", "python", "R", "perl", "java"]
+attributes: ["installation"]
 ---
 
 {% include toc %}

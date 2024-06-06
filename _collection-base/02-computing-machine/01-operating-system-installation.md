@@ -9,8 +9,9 @@ header:
 type: "article"
 order: 210
 level: 1
-categories: ["installation", "operating-system"]
-tags: []
+categories: ["system-setup"]
+tags: ["local-machine", "operating-system", "linux", "windows", "macOS", "multi-booting"]
+attributes: ["installation"]
 ---
 
 {% include toc %}

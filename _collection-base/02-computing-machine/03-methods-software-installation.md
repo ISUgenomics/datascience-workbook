@@ -9,8 +9,9 @@ header:
 type: "intro"
 order: 230
 level: 1
-categories: ["operating-system", "installation"]
-tags: []
+categories: ["system-setup", "office-tools", "graphic-tools", "collaboration-tools", "computing-tools", "developer-tools"]
+tags: ["local-machine", ".dmg", ".pkg", ".exe", ".zip", "source-code", "GUI", "terminal", "linux", "windows", "macOS", "App Store", "package-manager"]
+attributes: ["example", "installation"]
 ---
 
 {% include toc %}
