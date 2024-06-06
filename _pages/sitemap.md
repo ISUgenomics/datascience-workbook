@@ -57,7 +57,7 @@ Collection size: {{ site['collection-base'] | size }}
 
 <!-- Category List -->
 <div id="categories" style="display: none;">
-  <h2 id="category-heading">Filtered by Category</h2>
+  <h2 id="category-heading">Filter by Category: <span id="category-name"></span></h2>
   {% assign categories = content | map: 'categories' | flatten | uniq | sort %}
 
   {% for category in categories %}
@@ -74,19 +74,22 @@ Collection size: {{ site['collection-base'] | size }}
       <div id="{{ sanitized_category }}" class="category-content" style="display: none;"><hr>
         <button class="btn choice" onclick="showTags('{{ sanitized_category }}', this)">show tags</button>
 
-        <select id="tag-dropdown-{{ sanitized_category }}" class="tag-dropdown inline btn" style="display: none;" onchange="filterByTag(this, '{{ sanitized_category }}')">
+        <select id="tag-dropdown-{{ sanitized_category }}" class="tag-dropdown btn" style="display: none;" onchange="filterByTag(this, '{{ sanitized_category }}')">
           <option value="">Filter by tag</option>
           {% for tag in unique_tags %}
             <option value="{{ tag }}">{{ tag }}</option>
           {% endfor %}
         </select>
 
+        <div id="selected-tags-{{ sanitized_category }}"></div>
         <ul class="tutorial-list">
           {% for tutorial in tutorials %}
             <li data-tags="{{ tutorial.tags | join: ',' }}">
               <a href="{{ tutorial.url | relative_url }}" class="">{{ tutorial.title }}</a>
-              <div class="tag-container" style="display: none;">
-                {% for tag in tutorial.tags %} <code class="code-inline" style="font-size: 0.6em;">{{ tag }}</code> {% endfor %}
+              <div class="tag-container" style="display: none; margin-top: -0.3em;">
+                {% for tag in tutorial.tags %}
+                  <button class="btn-s choice" onclick="filterByTagButton('{{ tag }}', '{{ sanitized_category }}')">{{ tag }}</button>
+                {% endfor %}
               </div>
             </li>
           {% endfor %}

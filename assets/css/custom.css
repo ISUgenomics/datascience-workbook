@@ -77,6 +77,24 @@ h4 {font-size: 1em; font-weight: 500; letter-spacing: 0.1em;}
   letter-spacing: 0.15em;
 }
 
+.btn-s {
+  border: 1px solid var(--bc-template) !important;
+  padding: 0.2em 0.3em !important;
+  margin: 0 0.05em;
+  background-color: white;
+  color: #73777a;
+  font-weight: 500;
+  font-size: 0.6em;
+  letter-spacing: 0.1em;
+}
+
+.btn-s:hover {
+  background-color: var(--bc-code);
+}
+.btn-s:focus {
+  border: none;
+}
+
 .inline {display: inline !important; max-width: 100%;}
 .flex {display: inline-flex; margin-right: 0.6em;}
 .flex h3 {margin-block-start: 0.5em;}

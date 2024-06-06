@@ -20,9 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // Show tag dropdowns
   var dropdowns = document.querySelectorAll('.tag-dropdown');
   dropdowns.forEach(function(dropdown) {
-    dropdown.style.display = 'block';
+    dropdown.style.display = 'inline-block';
   });
 });
+
+let selectedTags = {};
 
 function showDiv(targetId, categoryName) {
   // Define the main views
@@ -56,6 +58,10 @@ function showDiv(targetId, categoryName) {
   if (categoryName) {
     document.getElementById('category-heading').innerHTML = 'Filtered by Category: <span style="color: #4a9fc2;">' + categoryName + '</span>';
   }
+
+  // Reset selected tags
+  selectedTags[targetId] = [];
+  updateSelectedTags(targetId);
 }
 
 function showTags(category, button) {
@@ -72,12 +78,50 @@ function showTags(category, button) {
 
 function filterByTag(selectElement, category) {
   var selectedTag = selectElement.value;
+  if (selectedTag) {
+    // Reset selected tags when a new tag is selected from the dropdown
+    selectedTags[category] = [selectedTag];
+    updateSelectedTags(category);
+    filterTutorials(category);
+  }
+}
+
+function filterByTagButton(tag, category) {
+  if (!selectedTags[category].includes(tag)) {
+    selectedTags[category].push(tag);
+    updateSelectedTags(category);
+    filterTutorials(category);
+  }
+}
+
+function updateSelectedTags(category) {
+  var selectedTagsContainer = document.getElementById(`selected-tags-${category}`);
+  selectedTagsContainer.innerHTML = '';
+  selectedTags[category].forEach(tag => {
+    var tagButton = document.createElement('button');
+    tagButton.innerHTML = tag + ' <span class="c-bad">×</span>';
+    tagButton.classList.add('btn-s');
+    tagButton.style.marginRight = '0.2em';
+    tagButton.onclick = function() {
+      removeTag(tag, category);
+    };
+    selectedTagsContainer.appendChild(tagButton);
+  });
+}
+
+function removeTag(tag, category) {
+  selectedTags[category] = selectedTags[category].filter(t => t !== tag);
+  updateSelectedTags(category);
+  filterTutorials(category);
+}
+
+function filterTutorials(category) {
   var tutorialList = document.querySelector(`#${category} .tutorial-list`);
   var tutorials = tutorialList.querySelectorAll('li');
 
   tutorials.forEach(function(tutorial) {
     var tags = tutorial.dataset.tags.split(',');
-    if (selectedTag === "" || tags.includes(selectedTag)) {
+    if (selectedTags[category].every(tag => tags.includes(tag))) {
       tutorial.style.display = 'list-item';
     } else {
       tutorial.style.display = 'none';
