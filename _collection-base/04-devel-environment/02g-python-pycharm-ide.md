@@ -10,8 +10,9 @@ header:
 type: "tutorial"
 order: 427
 level: 3
-categories: ["developer-tools", "programming", "bash-scripting", "version-control", "installation"]
-tags: ["IDE", "code-editor", "debugger", "terminal", "python", "markdown", "professional"]
+categories: ["developer-tools", "programming", "version-control"]
+tags: ["development-environment", "IDE", "code-editor", "debugger", "terminal", "python", "markdown"]
+attributes: ["installation", "user-guide", "professional"]
 ---
 
 {% include toc %}

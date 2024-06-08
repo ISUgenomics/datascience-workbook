@@ -10,7 +10,8 @@ type: "tutorial"
 order: 415
 level: 3
 categories: ["developer-tools", "programming", "documentation"]
-tags: ["jupyter", "notebook", "IDE", "code-editor", "python", "markdown", "interactive", "my-binder", "code-sharing"]
+tags: ["jupyter", "notebook", "IDE", "code-editor", "python", "markdown", "my-binder", "code-sharing", "github"]
+attributes: ["user-guide"]
 ---
 
 {% include toc %}

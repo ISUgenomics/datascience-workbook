@@ -11,7 +11,8 @@ type: "tutorial"
 order: 421
 level: 2
 categories: ["developer-tools", "programming"]
-tags: ["IDE", "code-editor", "python", "interactive", "online"]
+tags: ["development-environment", "IDE", "code-editor", "python", "python-console", "in-browser", "PythonAnywhere", "variable", "arithmetic"]
+attributes: ["example"]
 ---
 
 {% include toc %}

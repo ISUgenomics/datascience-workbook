@@ -10,8 +10,9 @@ header:
 type: "tutorial"
 order: 422
 level: 2
-categories: ["developer-tools", "programming"]
-tags: ["IDE", "code-editor", "python", "interactive", "online", "jupyter", "colab", "notebook"]
+categories: ["developer-tools", "programming", "library-package-module", "visualization", "plotting"]
+tags: ["development-environment", "IDE", "code-editor", "markdown", "python", "in-browser", "jupyter", "colab", "notebook", "kernel", "matplotlip", "seaborn", "scatter-plot"]
+attributes: ["interactive", "example", "code-snippet"]
 ---
 
 {% include toc %}

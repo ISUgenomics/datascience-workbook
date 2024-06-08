@@ -10,8 +10,9 @@ header:
 type: "tutorial"
 order: 426
 level: 3
-categories: ["developer-tools", "programming", "installation", "virtual-env", "data-manipulation", "visualization", "plotting"]
-tags: ["IDE", "code-editor", "python", "interactive", "online", "local-machine", "jupyter", "notebook", "package-manager", "library-package-module", "kernel", "markdown", "plotly", "import"]
+categories: ["developer-tools", "programming", "virtual-environment", "library-package-module", "data-manipulation", "visualization", "plotting"]
+tags: ["development-environment", "IDE", "code-editor", "python", "in-browser", "local-machine", "jupyter", "notebook", "kernel", "markdown", "package-manager", "plotly", "import", "scatter-plot"]
+attributes: ["installation", "interactive", "example", "code-snippet", "ready-made-solution"]
 ---
 
 {% include toc %}

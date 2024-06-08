@@ -10,8 +10,9 @@ header:
 type: "tutorial"
 order: 425
 level: 3
-categories: []
-tags: []
+categories: ["developer-tools", "programming", "command-line"]
+tags: ["text-editor", "vim", "nano", "mcedit", "python", "script-file", "calc-average", "count-words", "password-generator"]
+attributes: ["installation", "example", "code-snippet", "ready-made-solution"]
 ---
 
 {% include toc %}

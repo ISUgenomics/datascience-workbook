@@ -10,7 +10,8 @@ type: "intro"
 order: 420
 level: 1
 categories: ["developer-tools", "programming"]
-tags: ["IDE", "code-editor", "python"]
+tags: ["development-environment", "IDE", "code-editor", "python", "in-browser", "PythonAnywhere", "CodeAcademy"]
+attributes: []
 ---
 
 {% include toc %}

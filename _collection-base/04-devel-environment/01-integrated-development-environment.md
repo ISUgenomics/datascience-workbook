@@ -10,7 +10,8 @@ type: "intro"
 order: 410
 level: 1
 categories: ["developer-tools", "version-control"]
-tags: ["code-editor", "debugger"]
+tags: ["development-environment", "IDE", "code-editor", "debugger"]
+attributes: []
 ---
 
 {% include toc %}

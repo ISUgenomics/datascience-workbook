@@ -10,7 +10,8 @@ type: "landing-page"
 order: 400
 level: 0
 categories: ["developer-tools", "programming"]
-tags: []
+tags: ["development-environment", "IDE"]
+attributes: []
 ---
 
 

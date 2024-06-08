@@ -10,7 +10,8 @@ type: "intro"
 order: 430
 level: 1
 categories: ["developer-tools", "programming"]
-tags: ["IDE", "code-editor", "R", "RStudio"]
+tags: ["development-environment", "IDE", "code-editor", "R", "RStudio"]
+attributes: ["example"]
 ---
 
 {% include toc %}

@@ -10,8 +10,9 @@ header:
 type: "tutorial"
 order: 423
 level: 2
-categories: ["developer-tools", "programming", "installation", "virtual-env"]
-tags: ["IDE", "code-editor", "python", "local-machine", "anaconda", "conda", "venv", "docker", "dependencies", "library-package-module"]
+categories: ["developer-tools", "programming", "virtual-environment", "library-package-module"]
+tags: ["development-environment", "IDE", "code-editor", "python", "local-machine", "package-manager", "anaconda", "conda", "venv", "docker", "dependencies", "github", "PyPI"]
+attributes: ["installation"]
 ---
 
 {% include toc %}

@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 432
 level: 3
-categories: ["developer-tools", "programming", "visualization", "plotting", "analysis", "HPC, computing", "installation"]
-tags: ["RStudio", "IDE", "code-editor", "debugger", "R", "interactive", "local-machine", "dependencies", "library-package-module"]
+categories: ["developer-tools", "programming", "visualization", "plotting", "hpc", "library-package-module"]
+tags: ["development-environment", "IDE", "RStudio", "code-editor", "debugger", "R", "local-machine", "dependencies"]
+attributes: ["installation", "exercise"]
 ---
 
 {% include toc %}
