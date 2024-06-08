@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 714.3
 level: 3
-categories: ["HPC, computing", "data-preview", "command-line", "computing-tools", "visualization", "data-types", "installation"]
-tags: ["graphics", "X11-forwarding", "ASCII-art", "PNG", "",  "jp2a", "img2txt", "asciiview", "ascii-image-converter", "ascii-python"]
+categories: ["visualization", "data-preview", "data-types", "computing-tools", "hpc", "remote-access", "command-line"]
+tags: ["data-exploration", "graphics", "file-format", "PNG", "access-point", "X11-forwarding", "mount-folder", "sshfs", "ASCII-art", "jp2a", "img2txt", "asciiview", "ascii-image-converter", "ascii-python"]
+attributes: ["installation", "example", "command", "ready-made-solution"]
 ---
 
 {% include toc %}

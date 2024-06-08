@@ -10,8 +10,9 @@ header:
 type: "tutorial"
 order: 721.3
 level: 3
-categories: ["data-management", "data-manipulation"]
-tags: ["excel", "VBA", "macro", "worksheet-to-files", "windows", "macOS", "python", "automation"]
+categories: ["data-manipulation"]
+tags: ["spreadsheet", "excel", "VBA", "macro", "worksheet-to-files", "windows", "macOS", "python"]
+attributes: ["example", "code-snippet", "ready-made-solution", "automation"]
 ---
 
 {% include toc %}

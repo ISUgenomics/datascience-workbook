@@ -9,8 +9,9 @@ header:
 type: "landing-page"
 order: 700
 level: 0
-categories: ["HPC, computing", "computing-tools", "analysis", "data-manipulation"]
-tags: []
+categories: ["data-acquisition", "data-manipulation", "data-science", "remote-access", "command-line", "hpc"]
+tags: ["big-data", "data-security", "data-download", "data-wrangling", "data-exploration", "data-sharing", "data-archiving"]
+attributes: []
 ---
 
 

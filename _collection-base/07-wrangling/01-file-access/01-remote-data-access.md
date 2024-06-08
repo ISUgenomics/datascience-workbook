@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 711
 level: 1
-categories: ["HPC, computing", "data-management", "data-transfer", "command-line", "computing-tools"]
-tags: ["VPN", "SSH", "RESTful", "OOD"]
+categories: ["remote-access", "data-acquisition", "data-preview", "data-transfer", "computing-tools", "command-line", "hpc"]
+tags: ["remote-machine", "hpc-cluster", "VPN", "terminal", "SSH", "in-browser", "OOD", "data-download", "RESTful"]
+attributes: []
 ---
 
 {% include toc %}

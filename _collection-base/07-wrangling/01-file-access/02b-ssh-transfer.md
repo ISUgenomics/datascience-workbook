@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 712.2
 level: 3
-categories: ["HPC, computing", "data-management", "data-transfer", "command-line", "computing-tools"]
-tags: ["SSH", "scp", "rsync", "command"]
+categories: ["data-transfer", "computing-tools", "hpc", "command-line"]
+tags: ["CLI", "terminal", "SSH", "scp", "rsync"]
+attributes: ["example", "command", "automation"]
 ---
 
 {% include toc %}

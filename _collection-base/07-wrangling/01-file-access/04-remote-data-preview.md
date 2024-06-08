@@ -10,8 +10,9 @@ header:
 type: "tutorial"
 order: 714
 level: 2
-categories: ["HPC, computing", "data-preview", "command-line", "computing-tools", "data-types"]
-tags: ["graphic-files", "PDF", "text-files"]
+categories: ["data-preview", "data-types", "computing-tools", "hpc", "remote-access", "command-line"]
+tags: ["graphic-files", "text-files", "PDF"]
+attributes: []
 ---
 
 {% include toc %}

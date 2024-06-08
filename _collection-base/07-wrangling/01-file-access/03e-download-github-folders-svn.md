@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 713.5
 level: 3
-categories: ["HPC, computing", "data-management", "data-transfer", "command-line", "computing-tools"]
-tags: ["GitHub", "download", "command", "get-github-folder", "get-github-file"]
+categories: ["data-acquisition", "computing-tools", "resources", "remote-access"]
+tags: ["hosting-platform", "GitHub", "repository", "git", "CLI", "terminal", "download", "SVN", "svn-export", "get-github-folder", "get-github-file"]
+attributes: ["example", "user-guide", "command", "ready-made-solution"]
 ---
 
 {% include toc %}

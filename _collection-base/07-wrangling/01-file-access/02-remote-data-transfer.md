@@ -9,8 +9,9 @@ header:
 type: "intro"
 order: 712
 level: 2
-categories: ["HPC, computing", "data-management", "data-transfer", "command-line", "computing-tools"]
-tags: ["data-sharing", "cloud-storage", "globus", "GridFTP", "scp", "rsync"]
+categories: ["data-transfer", "computing-tools", "hpc", "command-line"]
+tags: ["data-security", "data-sharing", "data-archiving", "data-move", "data-copy", "data-upload", "GUI", "globus", "CLI", "scp", "rsync", "GridFTP", "FileZilla", "Cyberduck", "WINscp"]
+attributes: ["command", "automation"]
 ---
 
 {% include toc %}

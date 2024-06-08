@@ -9,8 +9,9 @@ header:
 type: "intro"
 order: 721.1
 level: 2
-categories: ["data-management", "data-manipulation", "data-preview", "analysis", "visualization", "plotting"]
-tags: ["excel", "spreadsheet", "data-entry", "clean-data", "data-formatting"]
+categories: ["data-manipulation", "data-preview", "visualization", "plotting"]
+tags: ["spreadsheet", "data-entry", "data-cleaning", "data-formatting", "excel", "Google Sheets", "Apple Numbers", "LibreOffice Calc"]
+attributes: []
 ---
 
 {% include toc %}

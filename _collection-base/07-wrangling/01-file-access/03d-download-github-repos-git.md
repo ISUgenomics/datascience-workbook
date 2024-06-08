@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 713.4
 level: 3
-categories: ["HPC, computing", "data-management", "data-transfer", "command-line", "computing-tools"]
-tags: ["git", "GitHub", "clone-repo", "download", "command"]
+categories: ["data-acquisition", "computing-tools", "resources", "remote-access"]
+tags: ["hosting-platform", "GitHub", "repository", "git", "clone-repo", "download"]
+attributes: ["example", "user-guide", "installation", "command", "ready-made-solution"]
 ---
 
 {% include toc %}

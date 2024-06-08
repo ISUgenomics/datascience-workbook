@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 713.2
 level: 3
-categories: ["HPC, computing", "data-management", "data-transfer", "command-line", "computing-tools"]
+categories: ["data-acquisition", "computing-tools", "resources", "remote-access", "command-line", "data-types"]
 tags: ["API", "HTTP", "HTTPS", "JSON", "XML"]
+attributes: []
 ---
 
 {% include toc %}

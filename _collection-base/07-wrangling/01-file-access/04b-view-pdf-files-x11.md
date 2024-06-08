@@ -10,8 +10,9 @@ header:
 type: "tutorial"
 order: 714.2
 level: 3
-categories: ["HPC, computing", "data-preview", "command-line", "computing-tools", "visualization", "data-types"]
-tags: ["graphics", "PDF", "PNG", "ImageMagic", "gnuplot", "firefox", "in-browser"]
+categories: ["data-preview", "data-types", "computing-tools", "hpc", "remote-access", "command-line"]
+tags: ["graphics", "file-format", "PDF", "PNG", "data-exploration", "ImageMagic", "gnuplot", "in-browser", "firefox"]
+attributes: ["example", "command"]
 ---
 
 {% include toc %}

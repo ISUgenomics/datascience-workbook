@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 714.4
 level: 3
-categories: ["HPC, computing", "data-preview", "remote-access", "command-line", "computing-tools", "visualization", "installation"]
-tags: ["SSH", "sshfs", "command", "mount-folder", "cheatsheet"]
+categories: ["visualization", "data-preview", "computing-tools", "hpc", "remote-access", "command-line"]
+tags: ["local-machine", "SSH", "remote-machine", "access-point", "mount-folder", "sshfs", "data-exploration"]
+attributes: ["installation", "example", "command", "cheatsheet"]
 ---
 
 {% include toc %}

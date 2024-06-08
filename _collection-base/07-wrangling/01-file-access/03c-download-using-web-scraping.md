@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 713.3
 level: 3
-categories: ["HPC, computing", "data-management", "data-transfer", "command-line", "computing-tools", "library-package-module"]
-tags: ["python", "web-scraping", "download", "urllib", "requests", "BeautifulSoup", "selenium", "pandas"]
+categories: ["data-acquisition", "computing-tools", "resources", "remote-access", "command-line", "programming", "library-package-module"]
+tags: ["data-download", "batch-download", "python", "web-scraping", "urllib", "requests", "BeautifulSoup", "selenium", "pandas"]
+attributes: ["example", "user-guide", "hands-on", "code-snippet", "installation", "ready-made-solution", "automation", "advanced"]
 ---
 
 {% include toc %}

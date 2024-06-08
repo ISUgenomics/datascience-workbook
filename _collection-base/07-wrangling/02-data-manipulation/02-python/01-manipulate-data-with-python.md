@@ -9,8 +9,9 @@ header:
 type: "intro"
 order: 722.1
 level: 2
-categories: ["data-management", "data-manipulation", "analysis", "command-line", "programming", "installation", "library-package-module"]
-tags: ["python", "IDE"]
+categories: ["data-manipulation", "programming", "library-package-module", "command-line"]
+tags: ["python", "text-files", "spreadsheet", "data-object"]
+attributes: ["installation", "user-guide"]
 ---
 
 {% include toc %}
@@ -24,7 +25,7 @@ Both spreadsheet software and Python are commonly used for manipulating data in 
 * `Spreadsheet` software can be a great option for those who need a user-friendly **graphical interface** for working with data, while
 * `Python-based` approaches can be **more efficient for handling large datasets** or performing complex analyses, but **require some programming skills** and familiarity with command-line interfaces.
 
-## Spreadsheet vs. Python
+## Spreadsheet vs. Python object
 
 Here are some specific advantages and disadvantages of using spreadsheet software and Python for data manipulation:
 

@@ -10,8 +10,9 @@ header:
 type: "tutorial"
 order: 712.3
 level: 3
-categories: ["HPC, computing", "data-management", "data-transfer", "command-line", "computing-tools"]
-tags: ["iRODS", "CyVerse", "command"]
+categories: ["data-transfer", "computing-tools", "resources", "remote-access", "command-line"]
+tags: ["dataset", "iRODS", "iRODS-client", "iRODS-server", "CyVerse", "data-sharing", "data-archiving", "permissions", "synchronize"]
+attributes: ["example", "command", "automation"]
 ---
 
 {% include toc %}

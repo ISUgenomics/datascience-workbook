@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 713.1
 level: 3
-categories: ["HPC, computing", "data-management", "data-transfer", "command-line", "computing-tools"]
-tags: ["wget", "command"]
+categories: ["data-acquisition", "computing-tools", "resources", "remote-access", "command-line"]
+tags: ["data-online", "access-point", "database", "web-server", "data-collection", "download", "CLI", "terminal", "wget", "batch-download"]
+attributes: ["example", "command", "automation"]
 ---
 
 {% include toc %}

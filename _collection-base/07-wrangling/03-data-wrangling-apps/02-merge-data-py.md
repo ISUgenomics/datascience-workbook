@@ -10,8 +10,9 @@ header:
 type: "tutorial"
 order: 732
 level: 2
-categories: ["data-manipulation", "text-manipulation", "analysis", "command-line", "programming", "installation", "library-package-module", "virtual-env"]
-tags: ["python", "pandas", "openpyxl", "conda", "algorithm", "merge-files-by-col"]
+categories: ["data-manipulation", "text-manipulation", "programming", "library-package-module", "virtual-environment", "command-line"]
+tags: ["python", "library", "package", "module", "pandas", "openpyxl", "package-manager", "conda", "virtual-env", "import", "algorithm", "merge-files-by-col", "inputs", "outputs"]
+attributes: ["installation", "user-guide", "example", "ready-made-solution"]
 ---
 
 {% include toc %}
