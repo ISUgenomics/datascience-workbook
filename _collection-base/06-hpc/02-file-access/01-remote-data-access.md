@@ -9,8 +9,9 @@ header:
 type: "intro"
 order: 621
 level: 1
-categories: ["HPC, computing", "command-line", "computing-tools"]
-tags: ["remote-access", "VPN", "SSH", "RFS", "OOD"]
+categories: ["hpc", "computing-tools", "remote-access"]
+tags: ["hpc-cluster", "authentication-MFA", "access-point", "CLI-login", "terminal", "VPN", "SSH", "RFS", "in-browser", "OOD", "OOD-login"]
+attributes: []
 ---
 
 {% include toc %}

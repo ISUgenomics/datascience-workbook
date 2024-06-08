@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 613.3
 level: 3
-categories: ["HPC, computing", "command-line", "computing-tools"]
-tags: ["ISU-HPC", "nova-cluster"]
+categories: ["hpc", "computing-tools", "documentation", "remote-access", "data-transfer", "job-scheduling"]
+tags: ["HPC-system", "ISU-HPC", "super-computer", "computer-power", "hpc-cluster", "nova-cluster", "HPC-tasks", "scientific-computing", "access-point", "authentication-MFA", "CLI-login", "job-script"]
+attributes: ["user-guide", "command"]
 ---
 
 {% include toc %}

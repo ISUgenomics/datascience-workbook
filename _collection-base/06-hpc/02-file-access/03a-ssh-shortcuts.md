@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 623.1
 level: 3
-categories: ["HPC, computing", "command-line", "computing-tools"]
-tags: ["SSH"]
+categories: ["hpc", "computing-tools", "remote-access", "command-line"]
+tags: ["hpc-cluster", "authentication-MFA", "access-point", "CLI-login", "terminal", "SSH"]
+attributes: ["user-guide", "command", "shortcuts", "automation"]
 ---
 
 {% include toc %}

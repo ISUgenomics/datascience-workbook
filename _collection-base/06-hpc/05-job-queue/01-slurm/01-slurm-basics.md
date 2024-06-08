@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 651.1
 level: 2
-categories: ["HPC, computing", "job-scheduling", "command-line", "computing-tools"]
-tags: ["slurm", "workload-manager", "job-script", "job-submission", "job-management", "alias", ".bashrc", "interactive", "command"]
+categories: ["hpc", "job-scheduling", "command-line", "computing-tools"]
+tags: ["remote-machine", "hpc-cluster", "workload-manager", "SLURM", "job-script", "job-submission", "sbatch", "job-management", "JOBID", "squeue", "sinfo", "interactive-session", "salloc", ".bashrc", "alias"]
+attributes: ["example", "command", "cheatsheet"]
 ---
 
 {% include toc %}

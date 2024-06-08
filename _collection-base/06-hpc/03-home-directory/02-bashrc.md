@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 632
 level: 2
-categories: ["HPC, computing", "command-line", "computing-tools"]
-tags: [".bashrc"]
+categories: ["hpc", "resources", "system-setup", "command-line"]
+tags: [".bashrc", "first-time-setup", "global-definitions", "export-path", "softlink", "alias", "module", "singularity"]
+attributes: ["example", "code-snippet", "ready-made-solution", "automation"]
 ---
 
 {% include toc %}

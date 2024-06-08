@@ -10,8 +10,9 @@ header:
 type: "tutorial"
 order: 651.2
 level: 3
-categories: ["HPC, computing", "job-scheduling", "command-line", "computing-tools"]
-tags: ["slurm", "command", "sbatch", "squeue", "scancel", "sinfo", "scontrol", "salloc"]
+categories: ["hpc", "job-scheduling", "command-line", "computing-tools"]
+tags: ["remote-machine", "hpc-cluster", "workload-manager", "SLURM", "job-script", "job-submission", "job-management", "interactive-session", "JOBID", "sbatch", "squeue", "scancel", "sinfo", "scontrol", "salloc", "alias"]
+attributes: ["example", "command", "cheatsheet"]
 ---
 
 {% include toc %}

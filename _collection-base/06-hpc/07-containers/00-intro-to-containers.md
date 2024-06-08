@@ -9,8 +9,9 @@ header:
 type: "intro"
 order: 670
 level: 1
-categories: ["HPC, computing", "command-line", "computing-tools", "containers", "virtual-env"]
-tags: ["virtual-machine", "container"]
+categories: ["hpc", "computing-tools", "virtual-environment", "containers"]
+tags: ["virtual-env", "virtual-machine", "container", "apptainer", "singularity", "docker", "nextflow", "kubernetes"]
+attributes: []
 ---
 
 {% include toc %}

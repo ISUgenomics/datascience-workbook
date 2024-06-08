@@ -10,8 +10,9 @@ header:
 type: "tutorial"
 order: 672.1
 level: 2
-categories: ["HPC, computing", "command-line", "computing-tools", "containers", "virtual-env", "library-package-module"]
-tags: ["docker", "command", "pull-from-docker"]
+categories: ["computing-tools", "virtual-environment", "containers"]
+tags: ["local-machine", "superuser", "permissions", "virtual-env", "container", "GUI", "docker", "terminal", "CLI", "pull-from-docker", "docker-pull", "docker-run"]
+attributes: ["user-guide", "example", "command"]
 ---
 
 {% include toc %}

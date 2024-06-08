@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 613.4
 level: 3
-categories: ["HPC, computing", "command-line", "computing-tools", "data-storage"]
-tags: ["ISU-HPC", "lss-storage"]
+categories: ["hpc", "computing-tools", "documentation", "remote-access", "data-storage", "data-transfer"]
+tags: ["HPC-system", "ISU-HPC", "HPC-tasks", "LSS-storage", "storage-quota", "backup", "long-term-storage", "data-move", "data-copy", "data-archiving", "access-point", "authentication-MFA", "CLI-login", "Globus", "scp", "rsync"]
+attributes: ["user-guide", "command", "automation"]
 ---
 
 {% include toc %}

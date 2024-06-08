@@ -9,8 +9,9 @@ header:
 type: "intro"
 order: 610
 level: 1
-categories: ["HPC, computing", "command-line", "computing-tools"]
-tags: ["HPC-system", "HPC-tasks", "HPC-examples"]
+categories: ["hpc", "command-line", "computing-tools", "parallel-computing"]
+tags: ["HPC-system", "HPC-tasks", "hpc-cluster", "super-computer", "computer-power", "terminal", "SSH", "node", "core", "CPU", "GPU", "job-script", "queue", "batch", "SLURM"]
+attributes: ["user-guide"]
 ---
 
 {% include toc %}

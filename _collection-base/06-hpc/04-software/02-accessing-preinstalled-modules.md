@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 642
 level: 2
-categories: ["HPC, computing", "command-line", "computing-tools", "library-package-module"]
-tags: []
+categories: ["hpc", "computing-tools", "command-line", "bash-scripting", "programming", "library-package-module", "job-scheduling", "plotting"]
+tags: ["terminal", "bash", "python", "R", "julia", "compiler", "debugger", "package-manager", "library", "package", "module", "module-list", "module-avail", "module-show", "module-load", "module-purge", "machine-learning", "scientific-computing", "numerical-computing"]
+attributes: ["user-guide", "command"]
 ---
 
 {% include toc %}

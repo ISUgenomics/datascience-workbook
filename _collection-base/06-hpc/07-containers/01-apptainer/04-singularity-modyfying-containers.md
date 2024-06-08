@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 671.4
 level: 4
-categories: ["HPC, computing", "command-line", "computing-tools", "containers", "virtual-env", "library-package-module"]
-tags: ["singularity", "apptainer", "modify-container", "command"]
+categories: ["hpc", "computing-tools", "command-line", "virtual-environment", "containers", "library-package-module"]
+tags: ["local-machine", "remote-machine", "hpc-cluster", "virtual-env", "container", "apptainer", "singularity", "modify-container", "singularity-build"]
+attributes: ["example", "command"]
 ---
 
 {% include toc %}

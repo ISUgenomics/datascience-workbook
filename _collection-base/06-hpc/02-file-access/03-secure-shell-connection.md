@@ -10,8 +10,9 @@ header:
 type: "tutorial"
 order: 623
 level: 2
-categories: ["HPC, computing", "command-line", "computing-tools"]
-tags: ["SSH", "windows", "macOS", "remote-access"]
+categories: ["hpc", "computing-tools", "remote-access", "command-line"]
+tags: ["hpc-cluster", "access-point", "CLI-login", "terminal", "SSH", "windows", "macOS"]
+attributes: ["example", "command"]
 ---
 
 {% include toc %}

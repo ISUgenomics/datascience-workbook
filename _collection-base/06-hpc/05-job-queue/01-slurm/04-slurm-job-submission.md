@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 651.4
 level: 3
-categories: ["HPC, computing", "job-scheduling", "command-line", "computing-tools"]
-tags: ["slurm", "job-script", "job-submission"]
+categories: ["hpc", "job-scheduling", "command-line", "computing-tools"]
+tags: ["remote-machine", "hpc-cluster", "workload-manager", "SLURM", "job-script", "job-submission", "JOBID"]
+attributes: ["example", "command", "automation"]
 ---
 
 {% include toc %}

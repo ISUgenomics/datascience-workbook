@@ -9,8 +9,9 @@ header:
 type: "intro"
 order: 613.1
 level: 2
-categories: ["HPC, computing", "command-line", "computing-tools"]
-tags: ["ISU-HPC"]
+categories: ["hpc", "computing-tools", "documentation"]
+tags: ["HPC-system", "ISU-HPC", "super-computer", "computer-power", "hpc-cluster", "nova-cluster", "condo-cluster", "LSS-storage", "HPC-tasks", "scientific-computing"]
+attributes: ["user-guide"]
 ---
 
 {% include toc %}

@@ -9,8 +9,9 @@ header:
 type: "intro"
 order: 612.1
 level: 2
-categories: ["HPC, computing", "command-line", "computing-tools"]
-tags: ["SCINet"]
+categories: ["hpc", "computing-tools", "documentation"]
+tags: ["HPC-system", "SCINet", "super-computer", "computer-power", "hpc-cluster", "ceres-cluster", "atlas-cluster", "juno-storage", "HPC-tasks", "scientific-computing"]
+attributes: ["user-guide"]
 ---
 
 {% include toc %}

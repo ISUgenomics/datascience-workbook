@@ -9,8 +9,9 @@ header:
 type: "intro"
 order: 611.1
 level: 2
-categories: ["HPC, computing", "command-line", "computing-tools"]
-tags: ["ACCESS", "XSEDE", "resource-allocation"]
+categories: ["hpc", "computing-tools"]
+tags: ["HPC-system", "ACCESS", "XSEDE", "super-computer", "computer-power", "resource-allocation"]
+attributes: ["user-guide"]
 ---
 
 {% include toc %}

@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 644
 level: 2
-categories: ["HPC, computing", "command-line", "computing-tools", "library-package-module", "installation", "virtual-env"]
-tags: ["conda", "python", "R", "java", ".rpm"]
+categories: ["hpc", "computing-tools", "command-line", "programming", "library-package-module", "virtual-environment"]
+tags: ["terminal", "remote-machine", "hpc-cluster", "home-dir", "project-dir", "source-code", "file-decompression", ".tar.gz", ".rpm", ".configure", "Makefile", "cmake", "custom-software", "module", ".bashrc", "alias", "python", "conda", "virtual-env", "R", "Bioconductor", "perl", "java", ".jar"]
+attributes: ["installation", "user-guide", "command"]
 ---
 
 {% include toc %}

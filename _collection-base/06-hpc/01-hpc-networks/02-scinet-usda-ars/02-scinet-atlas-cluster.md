@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 612.2
 level: 3
-categories: ["HPC, computing", "command-line", "computing-tools"]
-tags: ["SCINet", "atlas-cluster"]
+categories: ["hpc", "computing-tools", "documentation", "remote-access", "data-transfer"]
+tags: ["HPC-system", "SCINet", "super-computer", "computer-power", "hpc-cluster", "atlas-cluster", "HPC-tasks", "scientific-computing", "access-point", "authentication-MFA", "CLI-login", "OOD-login"]
+attributes: ["user-guide", "command"]
 ---
 
 {% include toc %}

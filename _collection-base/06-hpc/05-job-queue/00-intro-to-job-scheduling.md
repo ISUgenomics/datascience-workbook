@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 650
 level: 1
-categories: ["HPC, computing", "job-scheduling", "command-line", "computing-tools"]
-tags: ["slurm", "PBS", "LSF", "workload-manager"]
+categories: ["hpc", "job-scheduling", "command-line", "computing-tools"]
+tags: ["remote-machine", "hpc-cluster", "workload-manager", "SLURM", "PBS", "LSF", "job-management", "resource-allocation", "queue", "performance-optimization", "identify-job-scheduler"]
+attributes: ["command"]
 ---
 
 {% include toc %}

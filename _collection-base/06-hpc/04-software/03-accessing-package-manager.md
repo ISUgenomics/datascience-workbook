@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 643
 level: 2
-categories: ["HPC, computing", "command-line", "computing-tools", "library-package-module"]
-tags: ["package-manager"]
+categories: ["hpc", "computing-tools", "command-line", "programming", "library-package-module"]
+tags: ["terminal", "package-manager", "local-machine", "apt-list", "hpc-cluster", "remote-machine", "yum-list-all",  "dependencies"]
+attributes: ["command"]
 ---
 
 {% include toc %}

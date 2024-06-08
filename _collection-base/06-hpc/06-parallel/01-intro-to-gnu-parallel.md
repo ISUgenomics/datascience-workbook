@@ -10,8 +10,9 @@ header:
 type: "tutorial"
 order: 661
 level: 1
-categories: ["HPC, computing", "command-line", "computing-tools", "parallel-computing", "library-package-module"]
-tags: ["parallel"]
+categories: ["hpc", "command-line", "computing-tools", "parallel-computing", "library-package-module"]
+tags: ["hpc-cluster", "module", "module-load",  "parallel", "computer-power", "CPU", "scalable", "use-multiple-cores", "zipping-files", "feeding-inputs", "bioinformatics", "blast-in-parallel"]
+attributes: ["example", "command", "automation"]
 ---
 
 {% include toc %}

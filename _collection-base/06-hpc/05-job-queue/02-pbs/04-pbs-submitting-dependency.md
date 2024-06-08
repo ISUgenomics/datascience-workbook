@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 652.4
 level: 3
-categories: ["HPC, computing", "job-scheduling", "command-line", "computing-tools"]
-tags: ["PBS", "dependencies", "multi-job"]
+categories: ["hpc", "job-scheduling", "command-line", "computing-tools"]
+tags: ["remote-machine", "hpc-cluster", "workload-manager", "PBS", "job-script", "job-submission", "dependencies", "multi-job", "JOBID", "qsub-depend"]
+attributes: ["example", "command", "automation"]
 ---
 
 {% include toc %}
