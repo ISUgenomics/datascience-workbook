@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 531
 level: 1
-categories: ["programming", "command-line", "data-types"]
-tags: ["python", "variables", "operators", "loops", "conditionals", "functions", "classes"]
+categories: ["programming", "data-types", "library-package-module"]
+tags: ["python", "syntax", "variable", "operator", "control-flow", "loop", "function", "class", "error-handling", "try-except", "break", "continue", "if-else", "import", "math"]
+attributes: ["example", "code-snippet", "ready-made-solution", "exercise", "hands-on"]
 ---
 
 {% include toc %}

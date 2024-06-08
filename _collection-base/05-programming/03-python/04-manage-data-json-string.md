@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 534
 level: 2
-categories: ["programming", "data-types", "text-manipulation"]
-tags: ["json", "python"]
+categories: ["programming", "data-types", "text-manipulation", "data-manipulation", "library-package-module"]
+tags: ["JSON", "python", "object", "array", "dictionary", "error-handling", "data-formatting"]
+attributes: ["example", "code-snippet", "user-guide"]
 ---
 
 {% include toc %}

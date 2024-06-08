@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 544
 level: 2
-categories: ["programming", "data-manipulation", "analysis", "HPC, computing", "plotting", "library-package-module"]
-tags: ["ggplot2", "R", "charts", "dataset"]
+categories: ["programming", "data-manipulation", "plotting", "library-package-module"]
+tags: ["R", "ggplot2", "chart", "dataset", "box-plot", "scatter-plot", "colorscale"]
+attributes: ["installation", "user-guide", "example", "code-snippet"]
 ---
 
 {% include toc %}
@@ -231,7 +232,7 @@ ggplot(data = iris, mapping = aes(x = Petal.Width, y = Petal.Length)) +
 
 ![plot of chunk unnamed-chunk-13]({{ images_path }}/04_ggplot2_13.png)
 
-### *Scale*
+### *Colorscale*
 
 Adding a different colour scheme
 

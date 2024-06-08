@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 541
 level: 1
-categories: ["programming", "command-line", "data-types", "plotting"]
-tags: ["R", "variables", "operators", "object", "vector", "dataframe"]
+categories: ["programming", "data-types", "data-manipulation", "plotting", "library-package-module"]
+tags: ["R", "variable", "operator", "object", "vector", "matrix", "dataframe", "read-write", "ggplot", "box-plot", "mirror-plot"]
+attributes: ["installation", "user-guide", "example", "code-snippet"]
 ---
 
 {% include toc %}

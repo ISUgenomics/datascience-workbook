@@ -9,8 +9,9 @@ header:
 type: "intro"
 order: 511
 level: 1
-categories: ["programming", "bash-scripting", "command-line", "developer-tools"]
-tags: ["algorithm", "pseudocode", "loops", "conditionals", "inputs", "outputs"]
+categories: ["command-line", "bash-scripting", "programming"]
+tags: ["algorithm", "pseudocode", "script-file", "control-flow", "loop", "inputs", "outputs", "bash", "python", "sum", "factorial", "common-divisor", "linear-search", "binary-search", "bubble-sort", "reverse-string"]
+attributes: ["example", "code-snippet", "ready-made-solution", "exercise"]
 ---
 
 {% include toc %}

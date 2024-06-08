@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 545
 level: 2
-categories: ["programming", "data-manipulation", "analysis", "HPC, computing", "library-package-module", "installation"]
-tags: ["dplyr", "R", "dataset", "filter-data", "select-data", "summarize", "group-by"]
+categories: ["programming", "data-manipulation", "library-package-module"]
+tags: ["R", "dplyr", "dataset", "data-filtering", "data-selection", "summarize", "group-by"]
+attributes: ["installation", "user-guide", "example", "code-snippet"]
 ---
 
 {% include toc %}

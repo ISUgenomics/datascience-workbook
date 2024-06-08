@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 552
 level: 2
-categories: ["programming", "command-line", "data-types", "installation", "virtual-env", "HPC, computing"]
-tags: ["julia", "package-manager", "jupyter", "kernel", "IDE", "dependencies"]
+categories: ["programming", "data-types", "developer-tools", "virtual-environment", "command-line", "hpc"]
+tags: ["julia", "hpc-cluster", "OOD", "development-environment", "IDE", "jupyter", "kernel", "IJulia", "package-manager", "pkg", "dependencies", "virtual-env"]
+attributes: ["installation", "user-guide", "example", "code-snippet"]
 ---
 
 {% include toc %}

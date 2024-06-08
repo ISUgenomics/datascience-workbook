@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 551
 level: 1
-categories: ["programming", "command-line", "data-types"]
-tags: ["julia", "syntax"]
+categories: ["programming", "data-types"]
+tags: ["julia", "syntax", "variable", "object", "array", "dictionary", "data-indexing", "control-flow", "loop", "function", "multiple-dispatch", "metaprogramming", "macros", "module", "package-manager", "error-handling", "PyCall", "RCall"]
+attributes: ["user-guide", "example", "code-snippet"]
 ---
 
 {% include toc %}

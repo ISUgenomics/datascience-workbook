@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 523
 level: 2
-categories: ["bash-scripting", "command-line", "regular-expression"]
-tags: []
+categories: ["command-line", "bash-scripting"]
+tags: ["regular-expression", "search-pattern", "replace-pattern", "regex"]
+attributes: ["example", "command", "ready-made-solution"]
 ---
 
 

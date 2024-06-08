@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 543
 level: 2
-categories: ["programming", "data-manipulation", "analysis", "HPC, computing", "plotting", "library-package-module"]
-tags: ["R"]
+categories: ["programming", "data-manipulation", "plotting", "library-package-module"]
+tags: ["R", "statistics"]
+attributes: ["installation", "user-guide", "example", "code-snippet"]
 ---
 
 {% include toc %}

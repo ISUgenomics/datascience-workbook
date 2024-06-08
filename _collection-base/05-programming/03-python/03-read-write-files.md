@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 533
 level: 2
-categories: ["programming", "command-line", "text-manipulation", "data-types"]
-tags: ["python", "open-close", "read-write", "f-string", "formatting-output", "file-line-by-line", "handling-errors"]
+categories: ["programming", "data-types", "text-manipulation", "data-manipulation"]
+tags: ["python", "file-format", "data-separator", "CSV", "JSON", "XML", "open-close", "read-write", "f-string", "data-formatting", "file-line-by-line", "handling-errors"]
+attributes: ["example", "code-snippet"]
 ---
 
 {% include toc %}

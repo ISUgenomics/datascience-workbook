@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 522
 level: 2
-categories: ["command-line", "bash-scripting", "analysis"]
-tags: []
+categories: ["command-line", "bash-scripting"]
+tags: ["bash", "algorithm", "paste", "join", "comm", "diff", "process-multiple-files"]
+attributes: ["example", "command", "ready-made-solution"]
 ---
 
 {% include toc %}

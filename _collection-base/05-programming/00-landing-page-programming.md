@@ -9,8 +9,9 @@ header:
 type: "landing-page"
 order: 500
 level: 0
-categories: ["programming"]
-tags: []
+categories: ["bash-scripting", "programming"]
+tags: ["algorithm", "reproducibility"]
+attributes: []
 ---
 
 

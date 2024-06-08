@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 538
 level: 2
-categories: ["programming", "data-types", "data-manipulation", "analysis", "HPC, computing", "library-package-module"]
-tags: ["scipy", "python", "array", "object", "functions", "import", "scientific-computing", "dataset", "constants", "statistics", "clustering"]
+categories: ["programming", "data-types", "data-manipulation", "library-package-module"]
+tags: ["python", "import", "scipy", "module", "function", "scientific-computing", "dataset", "constant", "statistics", "generate-random-sample", "T-test", "ANOVA-test", "Pearson-correlation", "linear-regression", "clustering", "hierarchical-clustering", "k-means-clustering", "centroid"]
+attributes: ["installation", "user-guide", "example", "code-snippet", "ready-made-solution", "automation"]
 ---
 
 {% include toc %}
