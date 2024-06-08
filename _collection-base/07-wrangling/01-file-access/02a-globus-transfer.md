@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 712.1
 level: 3
-categories: ["HPC, computing", "data-management", "data-transfer", "computing-tools"]
-tags: ["GUI", "globus"]
+categories: ["data-transfer", "computing-tools", "hpc", "command-line"]
+tags: ["hpc-cluster", "GUI", "globus", "access-point", "data-move", "data-copy", "data-download", "data-upload", "backup", "long-term-storage"]
+attributes: ["example", "user-guide", "automation"]
 ---
 
 {% include toc %}
