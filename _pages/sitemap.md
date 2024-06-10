@@ -58,7 +58,7 @@ Collection size: {{ site['collection-base'] | size }}
 <!-- Category List -->
 <div id="categories" style="display: none;">
   <h2 id="category-heading">Filter by Category: <span id="category-name"></span></h2>
-  {% assign categories = content | map: 'categories' | flatten | uniq | sort %}
+  {% assign categories = content | map: 'categories' | default: "" | compact | flatten | uniq | sort %}
 
   {% for category in categories %}
     {% assign sanitized_category = category | replace: ' ', '-' | replace: ',', '-' %}
@@ -84,11 +84,17 @@ Collection size: {{ site['collection-base'] | size }}
         <div id="selected-tags-{{ sanitized_category }}"></div>
         <ul class="tutorial-list">
           {% for tutorial in tutorials %}
-            <li data-tags="{{ tutorial.tags | join: ',' }}">
+            <li data-tags="{{ tutorial.tags | join: ',' }}" data-attributes="{{ tutorial.attributes | join: ',' }}">
               <a href="{{ tutorial.url | relative_url }}" class="">{{ tutorial.title }}</a>
-              <div class="tag-container" style="display: none; margin-top: -0.3em;">
+              <div class="tag-container" style="display: none;">
                 {% for tag in tutorial.tags %}
-                  <button class="btn-s choice" onclick="filterByTagButton('{{ tag }}', '{{ sanitized_category }}')">{{ tag }}</button>
+                  <button class="btn-s bc-warning choice" onclick="filterByTagButton('{{ tag }}', '{{ sanitized_category }}')">{{ tag }}</button>
+                {% endfor %}
+                {% for attr in tutorial.attributes %}
+                  <button class="btn-s bc-protip choice" onclick="filterByTagButton('{{ attr }}', '{{ sanitized_category }}')">{{ attr }}</button>
+                {% endfor %}
+                {% for cat in tutorial.categories %}
+                  <button disabled class="btn-s" style="cursor: not-allowed;" title="Select this tag in the Category Filter section (above).">#{{ cat }}</button>
                 {% endfor %}
               </div>
             </li>
