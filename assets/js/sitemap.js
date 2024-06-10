@@ -67,10 +67,10 @@ function showDiv(targetId, categoryName) {
 function showTags(category, button) {
   var tags = document.querySelectorAll(`#${category} .tag-container`);
   var dropdown = document.getElementById(`tag-dropdown-${category}`);
-  var areVisible = Array.from(tags).some(tag => tag.style.display === 'block');
+  var areVisible = Array.from(tags).some(tag => tag.style.display === 'flex');
 
   tags.forEach(tag => {
-    tag.style.display = areVisible ? 'none' : 'block';
+    tag.style.display = areVisible ? 'none' : 'flex';
   });
 
   button.textContent = areVisible ? 'show tags' : 'hide tags';
@@ -121,7 +121,9 @@ function filterTutorials(category) {
 
   tutorials.forEach(function(tutorial) {
     var tags = tutorial.dataset.tags.split(',');
-    if (selectedTags[category].every(tag => tags.includes(tag))) {
+    var attributes = tutorial.dataset.attributes.split(',');
+    var allTags = tags.concat(attributes);
+    if (selectedTags[category].every(tag => allTags.includes(tag))) {
       tutorial.style.display = 'list-item';
     } else {
       tutorial.style.display = 'none';
