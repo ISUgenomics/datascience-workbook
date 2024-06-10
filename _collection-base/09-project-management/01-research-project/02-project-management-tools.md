@@ -10,7 +10,8 @@ type: "intro"
 order: 912
 level: 2
 categories: ["project-management", "documentation"]
-tags: ["scientific", "automation", "decision-making", "productivity", "agile", "timeline"]
+tags: ["scientific", "decision-making", "productivity", "agile", "timeline"]
+attributes: ["automation"]
 ---
 
 

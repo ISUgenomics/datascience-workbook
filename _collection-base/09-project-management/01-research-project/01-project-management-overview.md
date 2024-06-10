@@ -10,7 +10,8 @@ type: "article"
 order: 911
 level: 1
 categories: ["project-management"]
-tags: ["scientific", "automation", "decision-making"]
+tags: ["scientific", "decision-making", "risk-management", "risk-mitigation", "data-security"]
+attributes: ["automation", "professional"]
 ---
 
 {% include toc %}

@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 932.2
 level: 3
-categories: ["project-management", "resources", "version-control", "documentation", "code-development", "installation"]
-tags: ["standards", "source-code", "code-storage", "git", "repository", "local-repo", "remote-repo", "GitHub", "hosting-platform", "commit", "command", "pull-updates", "push-changes", "manage-conflicts"]
+categories: ["project-management", "resources", "version-control", "documentation", "code-development", "developer-tools"]
+tags: ["standards", "source-code", "code-storage", "git", "repository", "local-repo", "remote-repo", "GitHub", "hosting-platform", "commit", "command", "pull-updates", "push-changes", "manage-conflicts", "GUI", "CLI"]
+attributes: ["example", "user-guide", "hands-on", "installation", "command"]
 ---
 
 {% include toc %}

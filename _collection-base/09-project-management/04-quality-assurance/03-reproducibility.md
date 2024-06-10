@@ -11,6 +11,7 @@ order: 943
 level: 2
 categories: ["project-management", "data-management", "code-development", "documentation", "version-control", "computing-tools"]
 tags: ["standards", "reproducibility", "timeline", "deadline", "goals", "objectives", "strategy", "backups", "knowledge-retention"]
+attributes: ["eample", "exercise", "user-guide"]
 ---
 
 

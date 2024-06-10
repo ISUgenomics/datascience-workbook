@@ -9,8 +9,9 @@ header:
 type: "article"
 order: 920
 level: 1
-categories: ["project-management", "communication"]
-tags: ["strategy", "collaboration"]
+categories: ["project-management", "collaboration-tools"]
+tags: ["strategy", "coordination", "collaboration", "virtual-communication", "decision-making"]
+attributes: []
 ---
 
 {% include toc %}

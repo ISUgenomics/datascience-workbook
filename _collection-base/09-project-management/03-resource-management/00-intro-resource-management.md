@@ -10,7 +10,8 @@ type: "intro"
 order: 930
 level: 1
 categories: ["project-management", "resources"]
-tags: []
+tags: ["resource-types", "resource-allocation"]
+attributes: []
 ---
 
 {% include toc %}

@@ -11,6 +11,7 @@ order: 914
 level: 3
 categories: ["project-management"]
 tags: ["project-design", "framework", "planning", "goals", "objectives"]
+attributes: []
 ---
 
 {% include toc %}

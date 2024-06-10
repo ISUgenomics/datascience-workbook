@@ -10,7 +10,8 @@ type: "intro"
 order: 932.0
 level: 2
 categories: ["project-management", "resources", "version-control", "documentation", "code-development"]
-tags: ["standards", "source-code", "code-lifecycle", "code-sharing", "code-testing", "code-release", "code-archiving"]
+tags: ["standards", "source-code", "code-lifecycle", "code-sharing", "code-testing", "code-release", "code-archiving", "collaboration"]
+attributes: ["example"]
 ---
 
 {% include toc %}

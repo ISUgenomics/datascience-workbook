@@ -10,8 +10,9 @@ header:
 type: "tutorial"
 order: 931.5
 level: 3
-categories: ["project-management", "resources", "data-management"]
-tags: ["standards", "DMP"]
+categories: ["project-management", "resources", "documentation", "data-management", "data-storage"]
+tags: ["standards", "DMP", "TRUST", "FAIR", "CARE", "data-security", "data-sharing", "ethics"]
+attributes: ["example", "hands-on"]
 ---
 
 {% include toc %}

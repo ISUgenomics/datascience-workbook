@@ -11,6 +11,7 @@ order: 941
 level: 2
 categories: ["project-management", "data-management", "code-development", "documentation", "version-control"]
 tags: ["standards", "productivity", "reproducibility"]
+attributes: ["eample", "exercise"]
 ---
 
 

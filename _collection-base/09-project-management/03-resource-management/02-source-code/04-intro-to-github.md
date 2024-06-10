@@ -10,8 +10,9 @@ header:
 type: "tutorial"
 order: 932.4
 level: 4
-categories: ["project-management", "resources", "version-control", "documentation", "code-development"]
+categories: ["project-management", "resources", "version-control", "documentation", "code-development", "developer-tools"]
 tags: ["standards", "source-code", "code-storage", "data-storage", "code-sharing", "git", "repository", "GitHub", "hosting-platform"]
+attributes: ["example", "command"]
 ---
 
 {% include toc %}

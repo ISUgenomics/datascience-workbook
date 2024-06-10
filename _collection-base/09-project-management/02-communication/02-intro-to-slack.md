@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 922
 level: 3
-categories: ["project-management", "communication", "documentation", "installation"]
+categories: ["project-management", "documentation", "collaboration-tools"]
 tags: ["research-team", "collaboration", "messaging"]
+attributes: ["installation"]
 ---
 
 {% include toc %}

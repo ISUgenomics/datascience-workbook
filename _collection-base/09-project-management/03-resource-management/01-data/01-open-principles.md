@@ -11,6 +11,7 @@ order: 931.1
 level: 3
 categories: ["project-management", "resources", "data-management"]
 tags: ["open-science", "open-data", "open-access", "open-methods", "open-standards", "open-source", "open-review"]
+attributes: []
 ---
 
 {% include toc %}

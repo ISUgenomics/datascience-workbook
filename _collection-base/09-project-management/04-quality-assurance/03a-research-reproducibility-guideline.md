@@ -12,6 +12,7 @@ order: 943.1
 level: 3
 categories: ["project-management", "data-management", "code-development", "documentation", "version-control", "computing-tools"]
 tags: ["standards", "reproducibility", "timeline", "deadline", "goals", "objectives", "strategy", "backups", "knowledge-retention"]
+attributes: ["eample", "user-guide", "command"]
 ---
 
 {% include toc %}
