@@ -80,7 +80,6 @@ h4 {font-size: 1em; font-weight: 500; letter-spacing: 0.1em;}
 .btn-s {
   border: 1px solid var(--bc-template) !important;
   padding: 0.2em 0.3em !important;
-  margin: 0 0.05em;
   background-color: white;
   color: #73777a;
   font-weight: 500;
@@ -93,6 +92,14 @@ h4 {font-size: 1em; font-weight: 500; letter-spacing: 0.1em;}
 }
 .btn-s:focus {
   border: none;
+}
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px 4px;
+}
+.tag-dropdown {
+  padding: 0.4em 0.5em !important;
 }
 
 .inline {display: inline !important; max-width: 100%;}
@@ -461,7 +468,7 @@ details[open].l-frame {border-left: 1px solid var(--c-header); padding-left: 0.8
 summary::-webkit-details-marker {display: none;}   /* important in Safari */
 
 .choice:focus {
-  background-color: var(--c-boxdark);
+  background-color: var(--c-boxdark) !important;
   color: var(--bc-code);
   outline: none;
 }
