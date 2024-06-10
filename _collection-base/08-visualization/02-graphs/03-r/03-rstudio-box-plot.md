@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 823.03
 level: 4
-categories: ["visualization", "graphic-tools", "plotting", "programming", "library-package-module", "installation"]
-tags: ["ggplot", "R", "box-plot", "RStudio", "IDE"]
+categories: ["visualization", "graphic-tools", "plotting", "programming", "library-package-module"]
+tags: ["R", "ggplot", "development-environment", "IDE", "RStudio", "box-plot"]
+attributes: ["installation", "example", "code-snippet"]
 ---
 
 {% include toc %}

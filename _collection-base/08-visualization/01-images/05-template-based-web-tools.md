@@ -11,6 +11,7 @@ order: 815
 level: 2
 categories: ["visualization", "graphic-tools", "data-types"]
 tags: ["graphics", "scientific", "BioRender", "SmartDraw", "Mind the Graph", "Adobe Express", "Google Drawings", "Canva", "Visme", "Infogram"]
+attributes: []
 ---
 
 

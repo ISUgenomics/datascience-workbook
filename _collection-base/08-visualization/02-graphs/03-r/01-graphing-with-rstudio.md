@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 823.01
 level: 2
-categories: ["visualization", "graphic-tools", "plotting", "programming", "library-package-module", "installation"]
-tags: ["plotly", "R", "scatter-plot", "histogram", "heatmap-plot", "RStudio", "IDE"]
+categories: ["visualization", "graphic-tools", "plotting", "programming", "library-package-module"]
+tags: ["R", "plotly", "development-environment", "IDE", "RStudio", "scatter-plot", "histogram", "heatmap-plot"]
+attributes: ["installation", "example", "code-snippet"]
 ---
 
 {% include toc %}

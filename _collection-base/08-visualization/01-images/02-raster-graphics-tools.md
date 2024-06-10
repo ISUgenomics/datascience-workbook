@@ -11,6 +11,7 @@ order: 812
 level: 2
 categories: ["visualization", "graphic-tools", "data-types"]
 tags: ["graphics", "raster", "pixel", "PNG", "JPEG", "TIFF", "GIMP", "Adobe Photoshop", "CorelDRAW", "Pixlr", "Affinity Photo"]
+attributes: ["installation", "example", "user-guide"]
 ---
 
 {% include toc %}

@@ -10,8 +10,9 @@ header:
 type: "tutorial"
 order: 822.03
 level: 3
-categories: ["visualization", "graphic-tools", "plotting", "programming", "library-package-module", "installation"]
-tags: ["dash", "python", "widgets", "interactive"]
+categories: ["visualization", "graphic-tools", "plotting", "programming", "library-package-module"]
+tags: ["python", "dash", "widgets"]
+attributes: ["installation", "example", "interactive"]
 ---
 
 {% include toc %}

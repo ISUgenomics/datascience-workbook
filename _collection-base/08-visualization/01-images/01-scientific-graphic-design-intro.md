@@ -9,8 +9,9 @@ header:
 type: "intro"
 order: 811
 level: 1
-categories: ["visualization", "graphic-tools", "communication"]
-tags: ["graphics", "infographic"]
+categories: ["visualization", "graphic-tools"]
+tags: ["graphics", "infographic", "GIMP", "Inkscape", "Adobe Illustrator", "Canva", "CorelDRAW", "Piktochart"]
+attributes: []
 ---
 
 {% include toc %}

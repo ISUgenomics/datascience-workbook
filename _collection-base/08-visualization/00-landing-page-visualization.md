@@ -9,8 +9,9 @@ header:
 type: "landing-page"
 order: 800
 level: 0
-categories: ["visualization", "plotting", "analysis", "graphic-tools"]
+categories: ["visualization", "plotting", "graphic-tools"]
 tags: []
+attributes: []
 ---
 
 {% include toc %}

@@ -9,8 +9,9 @@ header:
 type: "tutorial"
 order: 822.10
 level: 4
-categories: ["visualization", "graphic-tools", "plotting", "programming", "library-package-module", "installation", "virtual-env"]
-tags: ["plotly", "python", "clustergram-plot", "interactive", "jupyter", "notebook", "IDE"]
+categories: ["visualization", "graphic-tools", "plotting", "programming", "library-package-module", "installation", "virtual-environment"]
+tags: ["python", "plotly", "development-environment", "IDE", "jupyter", "notebook", "clustergram-plot"]
+attributes: ["installation", "example", "user-guide", "code-snippet", "ready-made-solution", "interactive", "automation"]
 ---
 
 {% include toc %}

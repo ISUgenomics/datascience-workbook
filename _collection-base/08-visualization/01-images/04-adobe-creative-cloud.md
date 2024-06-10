@@ -11,6 +11,7 @@ order: 814
 level: 2
 categories: ["visualization", "graphic-tools", "data-types"]
 tags: ["graphics", "video", "audio", "animation", "e-signature", "PDF", "infographic", "design"]
+attributes: ["installation", "example", "user-guide"]
 ---
 
 {% include toc %}

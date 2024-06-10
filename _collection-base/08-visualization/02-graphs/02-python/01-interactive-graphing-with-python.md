@@ -10,7 +10,8 @@ type: "tutorial"
 order: 822.01
 level: 2
 categories: ["visualization", "graphic-tools", "plotting", "programming", "library-package-module"]
-tags: ["plotly", "dash", "python", "charts", "widgets", "GUI", "interactive"]
+tags: ["plotly", "dash", "python", "charts", "widgets", "GUI"]
+attributes: ["example", "command", "automation", "interactive"]
 ---
 
 {% include toc %}

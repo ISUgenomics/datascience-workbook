@@ -10,8 +10,9 @@ header:
 type: "tutorial"
 order: 822.02
 level: 3
-categories: ["visualization", "graphic-tools", "plotting", "programming", "library-package-module", "installation"]
-tags: ["plotly", "python", "charts", "interactive", "jupyter", "notebook"]
+categories: ["visualization", "graphic-tools", "plotting", "programming", "library-package-module"]
+tags: ["python", "plotly", "chart", "development-environment", "IDE", "jupyter", "notebook", "colorscale"]
+attributes: ["installation", "example", "interactive"]
 ---
 
 {% include toc %}

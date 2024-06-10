@@ -10,7 +10,8 @@ type: "tutorial"
 order: 821.2
 level: 3
 categories: ["visualization", "graphic-tools", "plotting", "bash-scripting"]
-tags: ["gnuplot", "automation", "in-terminal", "syntax", "command"]
+tags: ["gnuplot", "syntax", "variable"]
+attributes: ["example", "command", "automation"]
 ---
 
 {% include toc %}

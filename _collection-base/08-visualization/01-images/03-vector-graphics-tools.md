@@ -11,6 +11,7 @@ order: 813
 level: 2
 categories: ["visualization", "graphic-tools", "data-types"]
 tags: ["graphics", "vector", "scalable", "SVG", "AI", "EPS", "Inkscape", "Adobe Illustrator", "CorelDRAW", "Sketch", "Affinity Designer"]
+attributes: ["installation", "example", "user-guide"]
 ---
 
 {% include toc %}
