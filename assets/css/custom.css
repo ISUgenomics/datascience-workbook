@@ -88,11 +88,20 @@ h4 {font-size: 1em; font-weight: 500; letter-spacing: 0.1em;}
 }
 
 .btn-s:hover {
-  background-color: var(--bc-code);
+  background-color: var(--bc-code) !important;
+  border: 1px solid var(--c-gray) !important;
 }
 .btn-s:focus {
   border: none;
 }
+
+.btn-disabled:hover {
+  cursor: not-allowed;
+  background-color: white !important;
+  border: 1px solid var(--bc-template) !important;
+  color: var(--c-boxdark);
+}
+
 .tag-container {
   display: flex;
   flex-wrap: wrap;
