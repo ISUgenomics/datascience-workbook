@@ -88,13 +88,13 @@ Collection size: {{ site['collection-base'] | size }}
               <a href="{{ tutorial.url | relative_url }}" class="">{{ tutorial.title }}</a>
               <div class="tag-container" style="display: none;">
                 {% for tag in tutorial.tags %}
-                  <button class="btn-s bc-warning choice" onclick="filterByTagButton('{{ tag }}', '{{ sanitized_category }}')">{{ tag }}</button>
+                  <button class="btn-s bc-protip choice" title="topic tag" onclick="filterByTagButton('{{ tag }}', '{{ sanitized_category }}')">{{ tag }}</button>
                 {% endfor %}
                 {% for attr in tutorial.attributes %}
-                  <button class="btn-s bc-protip choice" onclick="filterByTagButton('{{ attr }}', '{{ sanitized_category }}')">{{ attr }}</button>
+                  <button class="btn-s bc-warning choice" title="funtionality attribute" onclick="filterByTagButton('{{ attr }}', '{{ sanitized_category }}')">{{ attr }}</button>
                 {% endfor %}
                 {% for cat in tutorial.categories %}
-                  <button disabled class="btn-s" style="cursor: not-allowed;" title="Select this tag in the Category Filter section (above).">#{{ cat }}</button>
+                  <button disabled class="btn-s btn-disabled" title="Select this tag in the Filter by Category section (above).">#{{ cat }}</button>
                 {% endfor %}
               </div>
             </li>
