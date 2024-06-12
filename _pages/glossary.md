@@ -20,13 +20,13 @@ header:
     {% assign current_letter = first_letter %}
 ## {{ current_letter }}
   {% endif %}
-<h4> <a href="https://en.wikipedia.org/wiki/{{ item.wiki }}" target="_blank" class="glossary-term" data-term="{{ item.name }}">{{ item.name | replace: '-', ' ' | upcase }}</a>
+<h4 id="{{ item.name }}"> <a href="https://en.wikipedia.org/wiki/{{ item.wiki }}" target="_blank" class="glossary-term" data-term="{{ item.name }}">{{ item.name | replace: '-', ' ' | upcase }}</a>
   {% assign name_lower = item.name | replace: '-', ' ' | downcase %}
   {% assign wiki_lower = item.wiki | replace: '_', ' ' | downcase %}
   {% if name_lower != wiki_lower and wiki_lower != "" %}
     <em class="c-gray pl-2 font-08">alt. {{ item.wiki | replace: '_', ' ' | replace: '#', ': ' }}</em>
   {% endif %}
 </h4>
-  {{ item.definition }}
+  <span class="c-glossary">{{ item.definition }}</span>
 
 {% endfor %}
