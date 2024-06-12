@@ -521,7 +521,7 @@ img {
 
 
 
-/*------------------------*/
+/*------------ GLOSSARY subpage ------------*/
 /* Horizontal TOC styling */
 .toc-horizontal {
   display: flex;
@@ -542,4 +542,40 @@ img {
 .toc-horizontal a {
   text-decoration: none;
   font-weight: bold;
+}
+
+.toc-vertical {
+  flex-basis: 90px;
+  padding-left: 1.5em;
+  margin-top: 4.5em;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 0.8em;
+}
+
+.toc-vertical ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.toc-vertical li {
+  margin-bottom: 10px;
+}
+
+.toc-vertical a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.glossary-categories {
+  display:inline-block;
+  width: 80%;
+  margin-top: -0.5em;
+}
+
+.glossary-categories > a:hover {
+  color: var(--c-warning) !important;
+}
+.highlight-tutorial > a {
+    background-color: var(--c-warning);
+    color: white !important;
 }
