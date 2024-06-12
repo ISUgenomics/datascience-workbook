@@ -1,0 +1,8 @@
+<div class="toc-horizontal">
+  <ul>
+    {% assign letters = "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z" | split: ',' %}
+    {% for letter in letters %}
+      <li><a href="#{{ letter | downcase }}">{{ letter }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
