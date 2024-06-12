@@ -36,6 +36,7 @@
 .c-required {color: var(--c-required) !important;}
 .c-exercise {color: var(--c-exercise) !important;}
 .c-example {color: var(--c-example) !important;}
+.c-glossary {color: #24376b;}
 
 /* pre-defined bg colors, including custom <details> */
 .bc-warning {--bg-color: var(--bc-warning); background-color: var(--bc-warning) !important; color: var(--c-boxdark);}
