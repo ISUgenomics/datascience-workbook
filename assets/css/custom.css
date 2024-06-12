@@ -517,3 +517,28 @@ img {
 .archive__item-teaser img {
   margin-top: 0 !important;
 }
+
+
+
+/*------------------------*/
+/* Horizontal TOC styling */
+.toc-horizontal {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.toc-horizontal ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.toc-horizontal li {
+  margin: 0 10px;
+}
+
+.toc-horizontal a {
+  text-decoration: none;
+  font-weight: bold;
+}
