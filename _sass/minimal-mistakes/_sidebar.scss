@@ -7,39 +7,57 @@
    ========================================================================== */
 
 .sidebar {
+  flex-basis: $sidebar-width;
+  width: $sidebar-width;
+  margin-right: 1em;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 2em;
+  opacity: 0.75;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  overflow-y: auto;
+  height: calc(100vh - 90px - 2em);
+
   @include clearfix();
   margin-bottom: 1em;
 
-  @include breakpoint(max-width $large) {
-    /* fix z-index order of follow links */
+  @include breakpoint(max-width $medium) {
     position: relative;
-    z-index: 10;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    top: 0;
+    width: 100%;
+    min-height: 120px;
+    max-height: 16vh;
+    padding-right: 1em;
   }
 
   @include breakpoint($large) {
-    float: left;
-    width: calc(#{$right-sidebar-width-narrow} - 1em);
-    opacity: 0.75;
-    -webkit-transition: opacity 0.2s ease-in-out;
-    transition: opacity 0.2s ease-in-out;
-
     &:hover {
       opacity: 1;
     }
-
-    &.sticky {
-      overflow-y: auto;
-      /* calculate height of nav list */
-      height: calc(
-        100vh - 90px - 2em
-      ); // viewport height - approx. masthead height - main content top margin
-    }
   }
 
-  @include breakpoint($x-large) {
-    width: calc(#{$right-sidebar-width} - 1em);
+  @include breakpoint(min-width $medium) {
+    display: block;
+    margin-left: -1em;
+    flex-basis: #{$sidebar-width};
+    width: #{$sidebar-width};
+  }
+
+  @include breakpoint(min-width $large) {
+    margin-left: 0;
+    flex-basis: #{$sidebar-width-narrow};
+    width: #{$sidebar-width-narrow};
+  }
+  @include breakpoint(min-width $x-large) {
+    flex-basis: #{$sidebar-width};
+    width: #{$sidebar-width};
+  }
+
+  @include breakpoint(min-width $x-large-wide) {
+    flex-basis: #{$sidebar-width-wide};
+    width: #{$sidebar-width-wide};
+    margin-left: 1em;
   }
 
   h2,
@@ -64,25 +82,59 @@
 }
 
 .sidebar__right {
-  margin-bottom: 1em;
+  flex-basis: $sidebar-width;
+  width: $sidebar-width;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 2em;
+  align-self: flex-start;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding-left: 1em;
 
-  @include breakpoint($large) {
-    position: absolute;
+  @include breakpoint(max-width $large) {
+    position: relative;
     top: 0;
-    right: 0;
-    width: $right-sidebar-width-narrow;
-    margin-right: -1 * $right-sidebar-width-narrow;
-    padding-left: 1em;
-    z-index: 10;
+    width: 100%;
+    min-height: 8em;
+    max-height: 16vh;
+    overflow-y: auto;
+    padding-left: 0;
+    order: -1;
+    margin-bottom: 1em;
   }
 
-  @include breakpoint($x-large) {
-    width: $right-sidebar-width;
-    margin-right: -1 * $right-sidebar-width;
+  @include breakpoint(min-width $large) {
+    flex-basis: #{$sidebar-width};
+    width: #{$sidebar-width};
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2em;
+    align-self: flex-start;
+    max-height: 85vh;
+    overflow-y: auto;
+    padding-left: 1em;
+    margin-right: -2em;
+    order: initial;
+  }
+
+  @include breakpoint(min-width $x-large) {
+    margin-right: 0;
+    flex-basis: 30%;
+    width: 30%;
+  }
+
+  @include breakpoint(min-width $x-large-wide) {
+    margin-right: 1em;
+  }
+
+  @include breakpoint(min-width $xxl) {
+  flex-basis: 22em;
+  width: 22em;
   }
 }
 
-.splash .sidebar__right {
+/*.splash .sidebar__right {
   @include breakpoint($large) {
     position: relative;
     float: right;
@@ -92,7 +144,7 @@
   @include breakpoint($x-large) {
     margin-right: 0;
   }
-}
+}*/
 
 /*
    Author profile and links
@@ -104,19 +156,24 @@
   width: 36px;
   height: 36px;
 
-  @include breakpoint($large) {
+  @include breakpoint(min-width $medium) {
     display: block;
-    width: auto;
+    width: 4em;
     height: auto;
+    padding-left: 1em;
+  }
+
+  @include breakpoint(min-width $large) {
+    width: 6em;
   }
 
   img {
     max-width: 110px;
     border-radius: 50%;
 
-    @include breakpoint($large) {
+    @include breakpoint(min-width $large) {
       padding: 5px;
-      border: 1px solid $border-color;
+      margin-left: 0;
     }
   }
 }
@@ -169,7 +226,6 @@
   vertical-align: middle;
   font-family: $sans-serif;
   z-index: 10;
-  position: relative;
   cursor: pointer;
 
   li:last-child {
@@ -178,8 +234,9 @@
     }
   }
 
-  @include breakpoint($large) {
+  @include breakpoint(min-width $medium) {
     display: block;
+    padding-left: 0.8em;
   }
 
   button {
@@ -294,4 +351,3 @@
     margin-right: initial;
   }
 }
-

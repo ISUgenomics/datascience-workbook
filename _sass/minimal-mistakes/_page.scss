@@ -15,29 +15,62 @@
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
 
-  @include breakpoint($x-large) {
-    max-width: $x-large;
+  @include breakpoint(min-width $medium) {
+    display: flex;
+  }
+  @include breakpoint($xxl) {
+    max-width: $xxl;
   }
 }
 
-.page {
- @include breakpoint($large) {
-   float: right;
-   width: calc(100% - #{$right-sidebar-width-narrow});
-//   padding-right: $right-sidebar-width-narrow;
- }
+.layout--splash #main {
+  max-width: $x-large;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
 
- @include breakpoint($x-large) {
-   width: calc(100% - #{$right-sidebar-width});
-//   padding-right: $right-sidebar-width;
- }
+.page {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 0;
+  max-width: 1920px;
+
+  @include breakpoint(max-width $medium) {
+    flex-direction: column;
+    width: 100%
+  }
+
+  @include breakpoint(min-width $medium) {
+    flex-direction: column;
+    max-width: 74%;
+  }
+  @include breakpoint(min-width $large) {
+    flex-direction: row;
+    max-width: calc(100% - #{$sidebar-width-narrow} - 0.8em);
+  }
+  @include breakpoint(min-width $x-large) {
+    max-width: calc(100% - #{$sidebar-width});
+  }
+
+  @include breakpoint(min-width $x-large-wide) {
+    max-width: calc(100% - #{$sidebar-width-wide});
+  }
 
  .page__inner-wrap {
-   float: left;
-   margin-left: 0;
-   margin-right: 0;
+   flex-grow: 1;
    width: 100%;
-   clear: both;
+
+   @include breakpoint(min-width $large) {
+     max-width: calc(100% - #{$sidebar-width});
+   }
+
+   @include breakpoint(min-width $xxl) {
+     margin-left: 1.058em;
+     margin-right: 1.058em;
+   }
 
    .page__content,
    .page__meta,
@@ -51,13 +84,6 @@
    }
  }
 }
-
-
-// .page {
-//
-//     width: calc(100% - #{$right-sidebar-width-narrow});
-//
-// }
 
 .page__title {
   margin-top: 0;
@@ -484,11 +510,11 @@
 
   @include breakpoint($large) {
     float: right;
-    width: calc(100% - #{$right-sidebar-width-narrow});
+    width: calc(100% - #{$sidebar-width-narrow});
   }
 
   @include breakpoint($x-large) {
-    width: calc(100% - #{$right-sidebar-width});
+    width: calc(100% - #{$sidebar-width});
   }
 
   a {
