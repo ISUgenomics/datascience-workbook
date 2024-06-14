@@ -2,23 +2,25 @@
 title: "Glossary"
 
 permalink: /glossary.html
-layout: single
+layout: splash
 header:
   overlay_color: "444444"
   overlay_image: /assets/images/data_science_about_banner.png
 ---
 
-{% include toc_horizontal.html %}
 
+<div class="glossary-container">
 <!-- Sticky container for displaying tutorials -->
-<div id="term-tutorials-container" class="sidebar sticky" style="display:none; margin-left: -300px;">
-  <h4 id="term-tutorials-header" class="font-08"></h4>
+<div id="term-tutorials-container" class="sidebar-tutorials" style="display:none;">
+  <h4 id="term-tutorials-header" class="inline tutorials-header"></h4>
+  <span id="close-term-tutorials">x</span>
   <ul id="term-tutorials-list"></ul>
 </div>
 
 {% assign glossary_terms = site.data.glossary %}
 {% assign tutorials = site['collection-base'] | sort: 'order' %}
 
+<div class="glossary-content" markdown="1">
 <!-- glossary starts here -->
 {% assign current_letter = "" %}
 {% for item in site.data.glossary %}
@@ -59,6 +61,16 @@ header:
   {% endfor %}
 </div>
 
+</div> <!-- glossary-content -->
+<div class="toc-vertical">
+      <ul>
+        {% assign letters = "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z" | split: ',' %}
+        {% for letter in letters %}
+          <li><a href="#{{ letter | downcase }}">{{ letter }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+</div>
 
 <!-- JavaScript to handle showing/hiding tutorials -->
 <script>
@@ -68,8 +80,9 @@ header:
     var termTutorialsHeader = document.getElementById('term-tutorials-header');
     var termTutorialsList = document.getElementById('term-tutorials-list');
     var hiddenTutorials = document.getElementById('glossary-tutorials');
+    var closeButton = document.getElementById('close-term-tutorials');
 
-    // Pre-populate categories for each term on page load
+// Pre-populate categories for each term on page load
     var glossaryTerms = document.querySelectorAll('.glossary-term');
     glossaryTerms.forEach(function(termElement) {
       var term = termElement.getAttribute('data-term');
@@ -90,30 +103,38 @@ header:
       });
     });
 
-    // Display the list of tutorials related with selected term in the glossary
+// Function to hide term tutorials container
+    function hideTermTutorials() {
+      termTutorialsContainer.style.display = 'none';
+    }
+// Add event listener to the close button
+    closeButton.addEventListener('click', hideTermTutorials);
+
+// Display the list of tutorials related with selected term in the glossary
     buttons.forEach(function(button) {
       button.addEventListener('click', function() {
-        // Clear existing list items
+
+    // Clear existing list items
         termTutorialsList.innerHTML = '';
 
-        // Get the term associated with the clicked button
+    // Get the term associated with the clicked button
         var term = this.getAttribute('data-term');
 
-        // Update the header text
+    // Update the header text
         termTutorialsHeader.textContent = 'Tutorials on ' + term.replace('-', ' ');
 
-        // Get all tutorial list items that match the term
+    // Get all tutorial list items that match the term
         var matchingItems = hiddenTutorials.querySelectorAll('li[data-term="' + term + '"]');
 
-        // Append matching items to the list
+    // Append matching items to the list
         matchingItems.forEach(function(item) {
           termTutorialsList.appendChild(item.cloneNode(true));
         });
 
-        // Show the container
+    // Show the container
         termTutorialsContainer.style.display = 'block';
 
-        // Add hover functionality to category links
+    // Add hover functionality to category links
         var categoryLinks = document.querySelectorAll('.category-link');
         categoryLinks.forEach(function(link) {
           link.addEventListener('mouseover', function() {
@@ -131,7 +152,6 @@ header:
             });
           });
         });
-
       });
     });
   });

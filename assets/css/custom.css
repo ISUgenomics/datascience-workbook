@@ -22,6 +22,7 @@
   --c-header: #8896c1;
   --c-pros: #66cb5e;
   --b-darkgray: #898c8f;
+  --large: 1024px;
 }
 
 /* pre-defined font colors */
@@ -240,27 +241,6 @@ div.highlighter-rouge {margin-bottom: 0.8em;}
 }
 
 /* sticky table of contents when scroling */
-
-.page {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
-
-.page__inner-wrap {
-  flex-grow: 1;
-}
-
-.sidebar__right {
-  flex-basis: 300px;
-  width: 300px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 1em;
-  align-self: flex-start;
-  max-height: 85vh;
-  overflow-y: auto;
-}
 
 .toc .btn {font-size: 1em;}
 .toc .btn::before {font-size: 0.9em !important;}
@@ -522,45 +502,65 @@ img {
 
 
 /*------------ GLOSSARY subpage ------------*/
-/* Horizontal TOC styling */
-.toc-horizontal {
+
+.glossary-container {
   display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+  align-items: flex-start;
 }
 
-.toc-horizontal ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-}
-
-.toc-horizontal li {
-  margin: 0 10px;
-}
-
-.toc-horizontal a {
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.toc-vertical {
-  flex-basis: 90px;
-  padding-left: 1.5em;
-  margin-top: 4.5em;
-  background-color: rgba(255, 255, 255, 0.8);
+/* Styles for the term tutorials container */
+.sidebar-tutorials {
+  min-width: 150px;
+  max-width: 300px;
+  flex-shrink: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 2.5em;
+  left: 0;
+  padding-right: 1em;
   font-size: 0.8em;
 }
+#close-term-tutorials {
+  cursor: pointer;
+  margin-left: 1em;
+  font-weight: bold;
+  color: var(--c-alert);
+  background-color: var(--bc-code);
+  padding: 0 5px 2px 5px;
+  border: 1px solid var(--c-header);
+  border-radius: 4px;
+}
 
+/* Styles for the glossary content */
+.glossary-content {
+  flex-grow: 1;
+  padding: 0;
+  margin-top: -2em;
+  box-sizing: border-box;
+}
+
+/* Styles for the TOC vertical */
+.toc-vertical {
+  min-width: 40px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 2em;
+  right: 0;
+  padding-left: 1em;
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 0.8em;
+  min-height: 200px;
+  max-height: 75vh;
+  overflow-y: scroll;
+}
 .toc-vertical ul {
   list-style-type: none;
   padding: 0;
 }
-
 .toc-vertical li {
   margin-bottom: 10px;
 }
-
 .toc-vertical a {
   text-decoration: none;
   font-weight: bold;
@@ -578,4 +578,63 @@ img {
 .highlight-tutorial > a {
     background-color: var(--c-warning);
     color: white !important;
+}
+
+/* Adjust for small screens */
+@media (min-width: 768px) {
+  .tutorials-header {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 768px) {
+  .glossary-container {
+    flex-direction: column;
+  }
+  .sidebar-tutorials {
+    width: 100%;
+    position: relative;
+    margin-top: -4em;
+    margin-bottom: 1em;
+  }
+  .glossary-content {
+    order: 1;
+  }
+  .toc-vertical {
+    position: fixed;
+    right: 0;
+    width: 40px;
+    top: 18em;
+    padding-left: 0.5em;
+    max-height: 50vh;
+  }
+  .glossary-categories {
+    display: block;
+    width: 100%;
+    margin-top: 0.5em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sitemap-content {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1450px) {
+  .glossary-container {
+    width: 65em;
+    margin-left: -4em;
+  }
+  .sidebar-tutorials {
+    padding-right: 2em;
+    max-width: 350vw;
+    margin-left: -1vw;
+  }
+  .toc-vertical {
+    padding-left: 2em;
+  }
+  .tutorials-header {
+    font-size: 1em;
+  }
 }
