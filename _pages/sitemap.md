@@ -2,15 +2,15 @@
 title: "Browse the workbook contents"
 
 permalink: /sitemap.html
-layout: single
+layout: splash
 header:
   overlay_color: "444444"
   overlay_image: /assets/images/data_science_about_banner.png
 ---
 
-
+<div class="sitemap-content">
 Collection size: {{ site['collection-base'] | size }}
-
+<base class="mb">
 <!-- Buttons to switch views -->
 <button class="btn choice mr" onclick="showDiv('toc')">Table of Contents</button>
 <button class="btn choice mr" onclick="showDiv('index')">Site Index</button>
@@ -104,4 +104,6 @@ Collection size: {{ site['collection-base'] | size }}
 
     {% endfor %}
   </div>
+</div>
+
 </div>

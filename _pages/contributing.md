@@ -2,7 +2,7 @@
 title: "Contributing"
 
 permalink: /contributing.html
-layout: single
+layout: splash
 header:
   overlay_color: "444444"
   overlay_image: /assets/images/data_science_about_banner.png
@@ -67,8 +67,6 @@ It can be anything, please feel free to get in touch with us! We will be more th
 {: style="text-align: justify"}
 
 
-
-
 ## Submitting changes
 
 Please send a [GitHub Pull Request to datascience-workbook](https://github.com/ISUgenomics/datascience-workbook/pull/new/master) with a clear list of what you've done (read more about [pull requests](https://help.github.com/en/articles/about-pull-requests)). Please follow our writing conventions (below) and make sure all of your commits are atomic (one feature per commit).
@@ -77,9 +75,11 @@ Please send a [GitHub Pull Request to datascience-workbook](https://github.com/I
 Always write a clear log message for your commits. One-line messages are fine for small changes, but bigger changes should look like this:
 {: style="text-align: justify"}
 
-    $ git commit -m "A brief summary of the commit
-    >
-    > A paragraph describing what changed and its impact."
+```bash
+$ git commit -m "A brief summary of the commit
+>
+> A paragraph describing what changed and its impact."
+```
 
 ## Writing conventions
 

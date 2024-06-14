@@ -2,7 +2,7 @@
 title: "People"
 
 permalink: /people.html
-layout: single
+layout: splash
 header:
   overlay_color: "444444"
   overlay_image: /assets/images/data_science_about_banner.png
