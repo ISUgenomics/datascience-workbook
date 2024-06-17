@@ -11,11 +11,11 @@ header:
 
 <div class="glossary-container">
 <!-- Sticky container for displaying tutorials -->
-<div id="term-tutorials-container" class="sidebar-tutorials" style="display:none;">
-  <h4 id="term-tutorials-header" class="inline tutorials-header"></h4>
+<div id="term-tutorials-container" class="sidebar-tutorials" style="display:none;"><div style="direction:ltr;">
   <span id="close-term-tutorials">x</span>
+  <h4 id="term-tutorials-header" class="inline tutorials-header"></h4>
   <ul id="term-tutorials-list"></ul>
-</div>
+</div></div>
 
 {% assign glossary_terms = site.data.glossary %}
 {% assign tutorials = site['collection-base'] | sort: 'order' %}
@@ -25,7 +25,7 @@ header:
 {% assign current_letter = "" %}
 {% for item in site.data.glossary %}
   {% assign first_letter = item.name | slice: 0, 1 | upcase %}
-  {% if current_letter != first_letter %}
+  {% if current_letter != first_letter and first_letter != "." %}
     {% assign current_letter = first_letter %}
 ## {{ current_letter }}
   {% endif %}
@@ -52,7 +52,8 @@ header:
     {% assign tutorial_tags = tutorial.tags %}
 
     {% for term in site.data.glossary %}
-      {% if tutorial_categories contains term.name or tutorial_tags contains term.name %}
+      {% assign wiki = term.wiki | replace: '_', '-' | downcase %}
+      {% if tutorial_categories contains term.name or tutorial_tags contains term.name or tutorial_tags contains wiki %}
         <li data-term="{{ term.name }}" data-modules="{{ tutorial.categories | join: ',' }}">
           <a href="{{ tutorial.url }}" target="_blank">{{ tutorial.title }}</a>
         </li>
