@@ -511,7 +511,7 @@ img {
 /* Styles for the term tutorials container */
 .sidebar-tutorials {
   min-width: 150px;
-  max-width: 300px;
+  max-width: 25vw;
   flex-shrink: 0;
   position: -webkit-sticky;
   position: sticky;
@@ -519,10 +519,15 @@ img {
   left: 0;
   padding-right: 1em;
   font-size: 0.8em;
+  min-height: 200px;
+  max-height: 75vh;
+  overflow-y: auto;
+  direction:rtl;
 }
 #close-term-tutorials {
   cursor: pointer;
-  margin-left: 1em;
+  margin-left: 0.3em;
+  margin-right: 0.4em;
   font-weight: bold;
   color: var(--c-alert);
   background-color: var(--bc-code);
@@ -546,7 +551,7 @@ img {
   position: sticky;
   top: 2em;
   right: 0;
-  padding-left: 1em;
+  padding-left: 4em;
   flex-shrink: 0;
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 0.8em;
@@ -568,7 +573,6 @@ img {
 
 .glossary-categories {
   display:inline-block;
-  width: 80%;
   margin-top: -0.5em;
 }
 
@@ -581,18 +585,13 @@ img {
 }
 
 /* Adjust for small screens */
-@media (min-width: 768px) {
-  .tutorials-header {
-    font-size: 0.8em;
-  }
-}
 
 @media (max-width: 768px) {
   .glossary-container {
     flex-direction: column;
   }
   .sidebar-tutorials {
-    width: 100%;
+    max-width: 90%;
     position: relative;
     margin-top: -4em;
     margin-bottom: 1em;
@@ -615,24 +614,39 @@ img {
   }
 }
 
+@media (min-width: 768px) {
+  .tutorials-header {
+    font-size: 0.8em;
+  }
+  .glossary-categories {
+    width: 70%;
+  }
+}
+
 @media (min-width: 1024px) {
   .sitemap-content {
     width: 80%;
     margin: 0 auto;
   }
+  .toc-vertical {
+    padding-left: 2em;
+  }
+  .glossary-categories {
+    width: 78%;
+  }
 }
 @media (min-width: 1450px) {
   .glossary-container {
-    width: 65em;
-    margin-left: -4em;
+    width: calc(50em + 20vw);
+    margin-left: -4vw;
   }
   .sidebar-tutorials {
     padding-right: 2em;
-    max-width: 350vw;
-    margin-left: -1vw;
+    max-width: 22vw;
+    margin-left: -2vw;
   }
   .toc-vertical {
-    padding-left: 2em;
+    padding-left: 4em;
   }
   .tutorials-header {
     font-size: 1em;
