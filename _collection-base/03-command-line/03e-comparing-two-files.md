@@ -10,7 +10,7 @@ type: "tutorial"
 order: 335
 level: 2
 categories: ["command-line", "text-manipulation"]
-tags: ["CLI", "terminal", "unix", "manual-guide", "diff", "comm", "cmp", "comparing-files"]
+tags: ["CLI", "terminal", "unix", "manual-guide", "diff", "comm", "cmp", "comparing-files", "binary"]
 attributes: ["command", "ready-made-slution"]
 ---
 

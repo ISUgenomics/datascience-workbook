@@ -10,7 +10,7 @@ type: "tutorial"
 order: 320
 level: 1
 categories: ["system-setup", "command-line"]
-tags: ["unix", "bash", "terminal", "interface", "CLI", "prompt", "root", "path", "export-path", "shell-variables", "home-dir", ".bashrc", "alias"]
+tags: ["unix", "bash", "terminal", "interface", "CLI", "prompt", "root", "path", "export-path", "shell-variables", "home-dir", ".bashrc", "alias", "workdir", "binary"]
 attributes: ["example", "code-snippet", "ready-made-solution"]
 ---
 

@@ -11,7 +11,7 @@ type: "tutorial"
 order: 712.3
 level: 3
 categories: ["data-transfer", "computing-tools", "resources", "remote-access", "command-line"]
-tags: ["dataset", "iRODS", "iRODS-client", "iRODS-server", "CyVerse", "data-sharing", "data-archiving", "permissions", "synchronize"]
+tags: ["dataset", "iRODS", "iRODS-client", "iRODS-server", "CyVerse", "data-sharing", "data-archiving", "permissions", "synchronize", "workdir"]
 attributes: ["example", "command", "automation"]
 ---
 

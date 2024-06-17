@@ -11,7 +11,7 @@ type: "tutorial"
 order: 651.2
 level: 3
 categories: ["hpc", "job-scheduling", "command-line", "computing-tools"]
-tags: ["remote-machine", "hpc-cluster", "workload-manager", "SLURM", "job-script", "job-submission", "job-management", "interactive-session", "JOBID", "sbatch", "squeue", "scancel", "sinfo", "scontrol", "salloc", "alias"]
+tags: ["remote-machine", "hpc-cluster", "workload-manager", "SLURM", "job-script", "job-submission", "job-management", "interactive-session", "JOBID", "sbatch", "squeue", "scancel", "sinfo", "scontrol", "salloc", "alias", "workdir"]
 attributes: ["example", "command", "cheatsheet"]
 ---
 

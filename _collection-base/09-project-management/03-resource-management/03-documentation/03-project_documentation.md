@@ -10,7 +10,7 @@ type: "tutorial"
 order: 933.3
 level: 3
 categories: ["project-management", "resources", "version-control", "documentation", "code-development", "data-management"]
-tags: ["standards", "notebook", "jupyter", "eLabFTW", "SciNote", "knowledge-retention", "reproducibility", "productivity", "collaboration", "note-taking", "reference-manager"]
+tags: ["standards", "notebook", "jupyter", "eLabFTW", "SciNote", "knowledge-retention", "reproducibility", "productivity", "collaboration", "note-taking", "reference-manager", "raw-data"]
 attributes: ["example"]
 ---
 

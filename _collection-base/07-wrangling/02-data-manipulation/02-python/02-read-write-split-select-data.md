@@ -10,7 +10,7 @@ type: "tutorial"
 order: 722.2
 level: 3
 categories: ["data-manipulation", "text-manipulation", "programming", "library-package-module", "command-line"]
-tags: ["python", "pandas", "dataset", "text-files", "read-write", "join-merge", "data-splitting", "data-cleaning", "data-reshape", "data-filtering", "data-selection", "data-aggregation", "select-col", "select-row", "group-by"]
+tags: ["python", "pandas", "dataset", "text-files", "read-write", "join-merge", "data-splitting", "data-cleaning", "data-reshape", "data-filtering", "data-selection", "data-aggregation", "select-col", "select-row", "group-by", "workdir"]
 attributes: ["installation", "example", "code-snippet"]
 ---
 

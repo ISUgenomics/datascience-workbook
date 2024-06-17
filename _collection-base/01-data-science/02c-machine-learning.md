@@ -10,7 +10,7 @@ type: "intro"
 order: 123
 level: 2
 categories: ["data-science"]
-tags: ["scientific", "computational", "machine-learning"]
+tags: ["scientific", "computational", "machine-learning", "artificial-intelligence"]
 attributes: ["example"]
 ---
 

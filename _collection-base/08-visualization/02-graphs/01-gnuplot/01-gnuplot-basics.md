@@ -10,7 +10,7 @@ type: "tutorial"
 order: 821.1
 level: 2
 categories: ["visualization", "graphic-tools", "plotting", "bash-scripting"]
-tags: ["gnuplot", "macOS", "linux", "windows", "terminal", "2D-plot", "3D-plot", "plot-data-from-file", "plot-math-formula", "graph-layout"]
+tags: ["gnuplot", "macOS", "linux", "windows", "terminal", "2D-plot", "3D-plot", "plot-data-from-file", "plot-math-formula", "graph-layout", "workdir"]
 attributes: ["installation", "automation", "command", "example"]
 ---
 

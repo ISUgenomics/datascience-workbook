@@ -10,7 +10,7 @@ type: "tutorial"
 order: 714.3
 level: 3
 categories: ["visualization", "data-preview", "data-types", "computing-tools", "hpc", "remote-access", "command-line"]
-tags: ["data-exploration", "graphics", "file-format", "PNG", "access-point", "X11-forwarding", "mount-folder", "sshfs", "ASCII-art", "jp2a", "img2txt", "asciiview", "ascii-image-converter", "ascii-python"]
+tags: ["data-exploration", "graphics", "file-format", "PNG", "access-point", "X11-forwarding", "mount-folder", "sshfs", "ASCII-art", "jp2a", "img2txt", "asciiview", "ascii-image-converter", "ascii-python", "binary"]
 attributes: ["installation", "example", "command", "ready-made-solution"]
 ---
 

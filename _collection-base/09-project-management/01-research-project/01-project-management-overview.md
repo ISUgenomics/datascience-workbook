@@ -10,7 +10,7 @@ type: "article"
 order: 911
 level: 1
 categories: ["project-management"]
-tags: ["scientific", "decision-making", "risk-management", "risk-mitigation", "data-security"]
+tags: ["scientific", "decision-making", "risk-management", "risk-mitigation", "data-security", "artificial-intelligence"]
 attributes: ["automation", "professional"]
 ---
 

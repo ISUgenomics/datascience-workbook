@@ -10,7 +10,7 @@ type: "tutorial"
 order: 712.2
 level: 3
 categories: ["data-transfer", "computing-tools", "hpc", "command-line"]
-tags: ["CLI", "terminal", "SSH", "scp", "rsync"]
+tags: ["CLI", "terminal", "SSH", "scp", "rsync", "workdir"]
 attributes: ["example", "command", "automation"]
 ---
 

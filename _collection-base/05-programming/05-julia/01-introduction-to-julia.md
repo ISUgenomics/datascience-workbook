@@ -10,7 +10,7 @@ type: "tutorial"
 order: 551
 level: 1
 categories: ["programming", "data-types"]
-tags: ["julia", "syntax", "variable", "object", "array", "dictionary", "data-indexing", "control-flow", "loop", "function", "multiple-dispatch", "metaprogramming", "macros", "module", "package-manager", "error-handling", "PyCall", "RCall"]
+tags: ["julia", "syntax", "variable", "object", "array", "dictionary", "data-indexing", "control-flow", "loop", "function", "multiple-dispatch", "metaprogramming", "macros", "module", "package-manager", "error-handling", "PyCall", "RCall", "binary"]
 attributes: ["user-guide", "example", "code-snippet"]
 ---
 

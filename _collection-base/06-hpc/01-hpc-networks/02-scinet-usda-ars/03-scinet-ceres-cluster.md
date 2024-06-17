@@ -11,7 +11,7 @@ type: "tutorial"
 order: 612.3
 level: 3
 categories: ["hpc", "computing-tools", "documentation", "remote-access", "data-transfer"]
-tags: ["HPC-system", "SCINet", "super-computer", "computer-power", "hpc-cluster", "ceres-cluster", "HPC-tasks", "scientific-computing", "access-point", "authentication-MFA", "CLI-login", "OOD-login"]
+tags: ["HPC-system", "SCINet", "super-computer", "computer-power", "hpc-cluster", "ceres-cluster", "HPC-tasks", "scientific-computing", "access-point", "authentication-MFA", "CLI-login", "OOD-login", "workdir", "distributed-computing"]
 attributes: ["user-guide", "command"]
 ---
 

@@ -11,7 +11,7 @@ type: "tutorial"
 order: 943.1
 level: 3
 categories: ["project-management", "data-management", "code-development", "documentation", "version-control", "computing-tools"]
-tags: ["standards", "reproducibility", "timeline", "deadline", "goals", "objectives", "strategy", "backups", "knowledge-retention"]
+tags: ["standards", "reproducibility", "timeline", "deadline", "goals", "objectives", "strategy", "backups", "knowledge-retention", "workdir"]
 attributes: ["eample", "user-guide", "command"]
 ---
 

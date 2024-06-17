@@ -11,7 +11,7 @@ type: "tutorial"
 order: 931.5
 level: 3
 categories: ["project-management", "resources", "documentation", "data-management", "data-storage"]
-tags: ["standards", "DMP", "TRUST", "FAIR", "CARE", "data-security", "data-sharing", "ethics"]
+tags: ["standards", "DMP", "TRUST", "FAIR", "CARE", "data-security", "data-sharing", "ethics", "raw-data"]
 attributes: ["example", "hands-on"]
 ---
 

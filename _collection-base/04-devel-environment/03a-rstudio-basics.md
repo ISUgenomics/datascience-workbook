@@ -10,7 +10,7 @@ type: "tutorial"
 order: 431
 level: 2
 categories: ["developer-tools", "programming", "visualization", "plotting", "hpc"]
-tags: ["development-environment", "IDE", "RStudio", "code-editor", "debugger", "terminal", "R", "script-file", "local-machine", "hpc-cluster", "in-browser", "OOD", "dependencies"]
+tags: ["development-environment", "IDE", "RStudio", "code-editor", "debugger", "terminal", "R", "script-file", "local-machine", "hpc-cluster", "in-browser", "OOD", "dependencies", "workdir"]
 attributes: ["interactive", "user-guide"]
 ---
 

@@ -11,7 +11,7 @@ type: "tutorial"
 order: 822.03
 level: 3
 categories: ["visualization", "graphic-tools", "plotting", "programming", "library-package-module"]
-tags: ["python", "dash", "widgets"]
+tags: ["python", "dash", "widgets", "interactive-graphing"]
 attributes: ["installation", "example", "interactive"]
 ---
 

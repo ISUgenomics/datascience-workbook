@@ -11,7 +11,7 @@ type: "tutorial"
 order: 423
 level: 2
 categories: ["developer-tools", "programming", "virtual-environment", "library-package-module"]
-tags: ["development-environment", "IDE", "code-editor", "python", "local-machine", "package-manager", "anaconda", "conda", "venv", "docker", "dependencies", "github", "PyPI"]
+tags: ["development-environment", "IDE", "code-editor", "python", "local-machine", "package-manager", "anaconda", "conda", "venv", "docker", "dependencies", "github", "PyPI", "workdir"]
 attributes: ["installation"]
 ---
 

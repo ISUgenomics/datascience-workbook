@@ -10,7 +10,7 @@ type: "tutorial"
 order: 531
 level: 1
 categories: ["programming", "data-types", "library-package-module"]
-tags: ["python", "syntax", "variable", "operator", "control-flow", "loop", "function", "class", "error-handling", "try-except", "break", "continue", "if-else", "import", "math"]
+tags: ["python", "syntax", "variable", "operator", "control-flow", "loop", "function", "class", "error-handling", "try-except", "break", "continue", "if-else", "import", "math", "artificial-intelligence", "binary"]
 attributes: ["example", "code-snippet", "ready-made-solution", "exercise", "hands-on"]
 ---
 

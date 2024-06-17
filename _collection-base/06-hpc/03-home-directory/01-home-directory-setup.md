@@ -10,7 +10,7 @@ type: "tutorial"
 order: 631
 level: 1
 categories: ["hpc", "resources", "system-setup", "command-line"]
-tags: ["remote-machine", "hpc-cluster", "storage-quota", "file-system", "home-dir", "project-dir", ".bashrc", "softlink", "alias", "first-time-setup"]
+tags: ["remote-machine", "hpc-cluster", "storage-quota", "file-system", "home-dir", "workdir", "project-dir", ".bashrc", "softlink", "alias", "first-time-setup"]
 attributes: ["user-guide", "ready-made-solution", "automation"]
 ---
 

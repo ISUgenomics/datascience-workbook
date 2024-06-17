@@ -12,7 +12,7 @@ type: "tutorial"
 order: 671.2
 level: 3
 categories: ["hpc", "computing-tools", "command-line", "virtual-environment", "containers", "library-package-module"]
-tags: ["local-machine", "remote-machine", "hpc-cluster", "virtual-env", "container", "apptainer", "singularity", "pull-from-docker", "pull-from-singularity-hub", "singularity-exec"]
+tags: ["local-machine", "remote-machine", "hpc-cluster", "virtual-env", "container", "apptainer", "singularity", "pull-from-docker", "pull-from-singularity-hub", "singularity-exec", "workdir"]
 attributes: ["example", "command"]
 ---
 

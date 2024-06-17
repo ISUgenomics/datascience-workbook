@@ -10,7 +10,7 @@ type: "tutorial"
 order: 941
 level: 2
 categories: ["project-management", "data-management", "code-development", "documentation", "version-control"]
-tags: ["standards", "productivity", "reproducibility"]
+tags: ["standards", "productivity", "reproducibility", "raw-data"]
 attributes: ["eample", "exercise"]
 ---
 

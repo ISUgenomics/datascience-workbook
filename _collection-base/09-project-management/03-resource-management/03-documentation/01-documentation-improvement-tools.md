@@ -10,7 +10,7 @@ type: "intro"
 order: 933.1
 level: 2
 categories: ["project-management", "resources", "version-control", "documentation", "code-development", "data-management"]
-tags: ["standards", "source-code", "code-docs", "data-docs", "docs-generator", "knowledge-retention", "reproducibility", "productivity"]
+tags: ["standards", "source-code", "code-docs", "data-docs", "docs-generator", "knowledge-retention", "reproducibility", "productivity", "artificial-intelligence"]
 attributes: ["example"]
 ---
 

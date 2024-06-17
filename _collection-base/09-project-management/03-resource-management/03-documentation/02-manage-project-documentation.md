@@ -10,7 +10,7 @@ type: "tutorial"
 order: 933.2
 level: 3
 categories: ["project-management", "resources", "version-control", "documentation", "code-development", "data-management"]
-tags: ["standards", "source-code", "code-docs", "data-docs", "docs-generator", "knowledge-retention", "reproducibility", "productivity", "markdown", "backup", "Slack", "OneNote", "count-files", "file-size", "file-list"]
+tags: ["standards", "source-code", "code-docs", "data-docs", "docs-generator", "knowledge-retention", "reproducibility", "productivity", "markdown", "backup", "Slack", "OneNote", "count-files", "file-size", "file-list", "workdir", "raw-data"]
 attributes: ["example", "command", "code-snippet", "automation"]
 ---
 

@@ -10,7 +10,7 @@ type: "tutorial"
 order: 823.03
 level: 4
 categories: ["visualization", "graphic-tools", "plotting", "programming", "library-package-module"]
-tags: ["R", "ggplot", "development-environment", "IDE", "RStudio", "box-plot"]
+tags: ["R", "ggplot", "development-environment", "IDE", "RStudio", "box-plot", "workdir"]
 attributes: ["installation", "example", "code-snippet"]
 ---
 

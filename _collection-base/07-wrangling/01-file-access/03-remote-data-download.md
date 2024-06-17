@@ -10,7 +10,7 @@ type: "intro"
 order: 713
 level: 2
 categories: ["data-acquisition", "computing-tools", "resources", "remote-access", "command-line"]
-tags: ["data-online", "access-point", "database", "web-server", "data-exploration", "data-collection", "download", "HTTP", "HTTPS", "wget", "curl", "API", "web-scraping", "batch-download"]
+tags: ["data-online", "access-point", "database", "web-server", "data-exploration", "data-collection", "download", "HTTP", "HTTPS", "wget", "curl", "API", "web-scraping", "batch-download", "raw-data"]
 attributes: ["example", "command", "automation"]
 ---
 

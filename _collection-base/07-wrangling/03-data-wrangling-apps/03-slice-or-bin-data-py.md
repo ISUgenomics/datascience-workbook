@@ -11,7 +11,7 @@ type: "tutorial"
 order: 733
 level: 2
 categories: ["data-manipulation", "text-manipulation", "programming", "library-package-module", "virtual-environment", "command-line"]
-tags: ["python", "library", "package", "module", "pandas", "package-manager", "conda", "virtual-env", "import", "algorithm", "aggregate-data", "inputs", "outputs"]
+tags: ["python", "library", "package", "module", "pandas", "package-manager", "conda", "virtual-env", "import", "algorithm", "aggregate-data", "inputs", "outputs", "workdir", "raw-data"]
 attributes: ["installation", "user-guide", "example", "ready-made-solution"]
 ---
 

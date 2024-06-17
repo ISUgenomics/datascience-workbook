@@ -10,7 +10,7 @@ type: "article"
 order: 110
 level: 1
 categories: ["data-science", "data-types"]
-tags: ["information", "knowledge", "data-states", "structured-data", "unstructured-data", "big-data"]
+tags: ["information", "knowledge", "data-states", "structured-data", "unstructured-data", "big-data", "digital-data", "artificial-intelligence", "binary", "distributed-computing", "interactive-graphing"]
 attributes: ["example"]
 ---
 

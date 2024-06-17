@@ -10,7 +10,7 @@ type: "tutorial"
 order: 652.3
 level: 3
 categories: ["hpc", "job-scheduling", "command-line", "computing-tools"]
-tags: ["remote-machine", "hpc-cluster", "workload-manager", "PBS", "job-script", "job-submission", "JOBID"]
+tags: ["remote-machine", "hpc-cluster", "workload-manager", "PBS", "job-script", "job-submission", "JOBID", "workdir"]
 attributes: ["example", "command", "automation"]
 ---
 

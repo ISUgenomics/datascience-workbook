@@ -11,7 +11,7 @@ type: "tutorial"
 order: 661
 level: 1
 categories: ["hpc", "command-line", "computing-tools", "parallel-computing", "library-package-module"]
-tags: ["hpc-cluster", "module", "module-load",  "parallel", "computer-power", "CPU", "scalable", "use-multiple-cores", "zipping-files", "feeding-inputs", "bioinformatics", "blast-in-parallel"]
+tags: ["hpc-cluster", "module", "module-load",  "parallel", "computer-power", "CPU", "scalable", "use-multiple-cores", "zipping-files", "feeding-inputs", "bioinformatics", "blast-in-parallel", "workdir", "raw-data"]
 attributes: ["example", "command", "automation"]
 ---
 

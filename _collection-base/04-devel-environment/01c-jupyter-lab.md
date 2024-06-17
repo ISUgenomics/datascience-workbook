@@ -10,7 +10,7 @@ type: "tutorial"
 order: 413
 level: 3
 categories: ["developer-tools", "programming", "documentation"]
-tags: ["local-machine", "jupyter", "notebook", "interface", "in-browser", "IDE", "code-editor", "debugger", "R", "python", "markdown", "OOD", "terminal"]
+tags: ["local-machine", "jupyter", "notebook", "interface", "in-browser", "IDE", "code-editor", "debugger", "R", "python", "markdown", "OOD", "terminal", "workdir"]
 attributes: ["interactive", "user-guide"]
 ---
 

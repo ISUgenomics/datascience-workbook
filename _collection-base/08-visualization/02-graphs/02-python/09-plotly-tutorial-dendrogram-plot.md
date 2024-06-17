@@ -10,7 +10,7 @@ type: "tutorial"
 order: 822.09
 level: 4
 categories: ["visualization", "graphic-tools", "plotting", "programming", "library-package-module", "virtual-environment"]
-tags: ["python", "plotly", "development-environment", "IDE", "jupyter", "notebook", "dendrogram-plot"]
+tags: ["python", "plotly", "development-environment", "IDE", "jupyter", "notebook", "dendrogram-plot", "interactive-graphing"]
 attributes: ["installation", "example", "user-guide", "code-snippet", "ready-made-solution", "interactive", "automation"]
 ---
 

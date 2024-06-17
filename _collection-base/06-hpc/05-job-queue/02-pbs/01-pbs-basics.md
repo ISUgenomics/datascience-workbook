@@ -10,7 +10,7 @@ type: "tutorial"
 order: 652.1
 level: 2
 categories: ["hpc", "job-scheduling", "command-line", "computing-tools"]
-tags: ["remote-machine", "hpc-cluster", "workload-manager", "PBS", "job-script", "job-submission", "qsub", "job-management", "qstat", "qdel", "qhold"]
+tags: ["remote-machine", "hpc-cluster", "workload-manager", "PBS", "job-script", "job-submission", "qsub", "job-management", "qstat", "qdel", "qhold", "workdir"]
 attributes: ["example", "command"]
 ---
 

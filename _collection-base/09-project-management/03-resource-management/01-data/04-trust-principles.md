@@ -9,7 +9,7 @@ header:
 type: "tutorial"
 order: 931.4
 level: 4
-categories: ["project-management", "resources", "data-management"]
+categories: ["project-management", "resources", "data-management", "digital-data"]
 tags: ["TRUST", "standards"]
 attributes: []
 ---

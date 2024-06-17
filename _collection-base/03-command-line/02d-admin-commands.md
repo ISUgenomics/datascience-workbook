@@ -10,7 +10,7 @@ type: "tutorial"
 order: 324
 level: 2
 categories: ["system-setup", "command-line"]
-tags: ["CLI", "terminal", "permissions", "permission-denied", "ownership", "superuser", "sudo", "unix", "linux"]
+tags: ["CLI", "terminal", "permissions", "permission-denied", "ownership", "superuser", "sudo", "unix", "linux", "workdir"]
 attributes: ["command", "installation"]
 ---
 

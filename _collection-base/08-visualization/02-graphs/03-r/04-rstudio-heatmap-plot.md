@@ -9,7 +9,7 @@ header:
 type: "tutorial"
 order: 823.04
 level: 4
-categories: ["visualization", "graphic-tools", "plotting", "programming", "library-package-module", "installation"]
+categories: ["visualization", "graphic-tools", "plotting", "programming", "library-package-module"]
 tags: ["R", "Heatplus", "development-environment", "IDE", "RStudio", "heatmap-plot"]
 attributes: ["installation", "example", "code-snippet"]
 ---

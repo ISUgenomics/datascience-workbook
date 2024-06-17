@@ -11,7 +11,7 @@ type: "tutorial"
 order: 321
 level: 2
 categories: ["command-line"]
-tags: ["unix", "bash", "user-guide", "command-history", "path", "file-system", "CLI-navigation", "file-operations", "command-piping", "pwd", "cd", "mkdir", "mv", "rm", "cp", "ls"]
+tags: ["unix", "bash", "user-guide", "command-history", "path", "file-system", "CLI-navigation", "file-operations", "command-piping", "pwd", "cd", "mkdir", "mv", "rm", "cp", "ls", "workdir"]
 attributes: ["example", "command"]
 ---
 

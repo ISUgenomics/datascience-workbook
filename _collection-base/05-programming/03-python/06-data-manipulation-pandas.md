@@ -10,7 +10,7 @@ type: "tutorial"
 order: 536
 level: 2
 categories: ["programming", "data-types", "data-manipulation", "library-package-module"]
-tags: ["python", "import", "pandas", "object", "series", "dataframe", "function", "add-remove-data", "explore-data", "clean-data", "filter-data", "aggregate data", "data-file", "file-format", ".xlsx", "CSV", "JSON", "SQL", "HTML"]
+tags: ["python", "import", "pandas", "object", "series", "dataframe", "function", "add-remove-data", "explore-data", "clean-data", "filter-data", "aggregate data", "data-file", "file-format", ".xlsx", "CSV", "JSON", "SQL", "HTML", "distributed-computing"]
 attributes: ["installation", "cheatsheet", "user-guide", "example", "code-snippet"]
 ---
 

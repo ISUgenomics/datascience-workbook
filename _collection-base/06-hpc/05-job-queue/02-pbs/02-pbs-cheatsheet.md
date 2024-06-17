@@ -10,7 +10,7 @@ type: "cheatsheet"
 order: 652.2
 level: 3
 categories: ["hpc", "job-scheduling", "command-line", "computing-tools"]
-tags: ["remote-machine", "hpc-cluster", "workload-manager", "PBS", "job-script", "job-submission", "job-management", "qsub", "qstat", "qdel", "qhold"]
+tags: ["remote-machine", "hpc-cluster", "workload-manager", "PBS", "job-script", "job-submission", "job-management", "qsub", "qstat", "qdel", "qhold", "workdir"]
 attributes: ["example", "command", "cheatsheet"]
 ---
 

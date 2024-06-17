@@ -10,7 +10,7 @@ type: "tutorial"
 order: 932.41
 level: 4
 categories: ["project-management", "resources", "version-control", "documentation", "code-development", "developer-tools"]
-tags: ["standards", "source-code", "code-storage", "data-storage", "code-sharing", "git", "repository", "GitHub", "hosting-platform"]
+tags: ["standards", "source-code", "code-storage", "data-storage", "code-sharing", "git", "repository", "GitHub", "hosting-platform", "workdir", "binary"]
 attributes: ["example", "command"]
 ---
 

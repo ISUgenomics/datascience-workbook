@@ -10,7 +10,7 @@ type: "tutorial"
 order: 537
 level: 2
 categories: ["programming", "data-types", "data-manipulation", "library-package-module"]
-tags: ["python", "import", "numpy", "object", "array", "matrix", "function", "numerical-computing", "data-indexing", "data-slicing", "read-write"]
+tags: ["python", "import", "numpy", "object", "array", "matrix", "function", "numerical-computing", "data-indexing", "data-slicing", "read-write", "binary", "distributed-computing"]
 attributes: ["installation", "user-guide", "example", "code-snippet"]
 ---
 

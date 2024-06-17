@@ -10,7 +10,7 @@ type: "tutorial"
 order: 538
 level: 2
 categories: ["programming", "data-types", "data-manipulation", "library-package-module"]
-tags: ["python", "import", "scipy", "module", "function", "scientific-computing", "dataset", "constant", "statistics", "generate-random-sample", "T-test", "ANOVA-test", "Pearson-correlation", "linear-regression", "clustering", "hierarchical-clustering", "k-means-clustering", "centroid"]
+tags: ["python", "import", "scipy", "module", "function", "scientific-computing", "dataset", "constant", "statistics", "generate-random-sample", "T-test", "ANOVA-test", "Pearson-correlation", "linear-regression", "clustering", "hierarchical-clustering", "k-means-clustering", "centroid", "workdir"]
 attributes: ["installation", "user-guide", "example", "code-snippet", "ready-made-solution", "automation"]
 ---
 

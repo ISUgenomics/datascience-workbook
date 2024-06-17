@@ -10,7 +10,7 @@ type: "tutorial"
 order: 325
 level: 2
 categories: ["command-line", "text-manipulation"]
-tags: ["CLI", "terminal", "unix", "bash", "file-operations", "manual-guide"]
+tags: ["CLI", "terminal", "unix", "bash", "file-operations", "manual-guide", "workdir"]
 attributes: ["command", "exercise"]
 ---
 

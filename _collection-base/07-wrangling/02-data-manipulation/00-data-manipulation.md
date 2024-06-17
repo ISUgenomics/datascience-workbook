@@ -10,7 +10,7 @@ type: "intro"
 order: 720
 level: 1
 categories: ["data-manipulation", "command-line", "bash-scripting", "programming"]
-tags: ["excel", "python", "R", "SQL"]
+tags: ["excel", "python", "R", "SQL", "raw-data"]
 attributes: []
 ---
 

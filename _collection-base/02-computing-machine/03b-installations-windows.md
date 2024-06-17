@@ -11,7 +11,7 @@ type: "tutorial"
 order: 232
 level: 2
 categories: ["system-setup", "developer-tools"]
-tags: ["local-machine", "operating-system", "windows", "IDE", "Atom", "git", "conda", "python", "R", "java", "perl", "docker", "nextflow"]
+tags: ["local-machine", "operating-system", "windows", "IDE", "Atom", "git", "conda", "python", "R", "java", "perl", "docker", "nextflow", "binary"]
 attributes: ["installation"]
 ---
 
