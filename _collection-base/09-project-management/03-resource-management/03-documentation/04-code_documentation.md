@@ -10,7 +10,7 @@ type: "tutorial"
 order: 933.4
 level: 3
 categories: ["project-management", "resources", "version-control", "documentation", "code-development"]
-tags: ["standards", "code-docs", "comments", "docstring", "readme", "user-guide", "config", "knowledge-retention", "reproducibility", "productivity", "markdown", "python", "R", "bash", "binary"]
+tags: ["standards", "code-docs", "comments", "docstring", "readme", "config", "knowledge-retention", "reproducibility", "productivity", "markdown", "python", "R", "bash", "binary"]
 attributes: ["example", "code-snippet", "user-guide"]
 ---
 

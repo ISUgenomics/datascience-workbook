@@ -10,7 +10,7 @@ type: "tutorial"
 order: 333
 level: 2
 categories: ["command-line", "text-manipulation"]
-tags: ["CLI", "terminal", "unix", "manual-guide", "awk", "manage-order", "arithmetic", "variables"]
+tags: ["CLI", "terminal", "unix", "manual-guide", "awk", "manage-order", "arithmetic", "variable"]
 attributes: ["command", "ready-made-slution"]
 ---
 
