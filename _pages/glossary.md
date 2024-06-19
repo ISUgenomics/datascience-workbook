@@ -17,13 +17,14 @@ header:
   <ul id="term-tutorials-list"></ul>
 </div></div>
 
-{% assign glossary_terms = site.data.glossary %}
+<!-- Data storage objects required for matching glossary terms and tags in tutorials -->
 {% assign tutorials = site['collection-base'] | sort: 'order' %}
+{% assign glossary_items = site.data.glossary %}
 
-<div class="glossary-content" markdown="1">
 <!-- glossary starts here -->
+<div class="glossary-content" markdown="1">
 {% assign current_letter = "" %}
-{% for item in site.data.glossary %}
+{% for item in glossary_items %}
   {% assign first_letter = item.name | slice: 0, 1 | upcase %}
   {% if current_letter != first_letter and first_letter != "." %}
     {% assign current_letter = first_letter %}
@@ -37,7 +38,7 @@ header:
     <em class="c-gray pl-2 font-08">alt. {{ item.wiki | replace: '_', ' ' | replace: '#', ': ' }}</em>
   {% endif %}
 </h4>
-  <span class="c-glossary">{{ item.definition }}</span><br>
+  <span class="c-glossary" data-definition="{{ item.name }}">{{ item.definition }}</span><br>
   <div class="inline w-1">
     <button class="btn show-tutorials choice mr" data-term="{{ item.name }}" style="display:inline-block; vertical-align: top;">List tutorials</button>
     <div id="categories-{{ item.name }}" class="glossary-categories font-08"></div>
@@ -48,10 +49,10 @@ header:
 <!-- Render all tutorials as hidden list items with data-term attributes -->
 <div id="glossary-tutorials" style="display:none;">
   {% for tutorial in tutorials %}
-    {% assign tutorial_categories = tutorial.categories %}
-    {% assign tutorial_tags = tutorial.tags %}
+    {% assign tutorial_categories = tutorial.categories  | downcase %}
+    {% assign tutorial_tags = tutorial.tags | downcase %}
 
-    {% for term in site.data.glossary %}
+    {% for term in glossary_items %}
       {% assign wiki = term.wiki | replace: '_', '-' | downcase %}
       {% if tutorial_categories contains term.name or tutorial_tags contains term.name or tutorial_tags contains wiki %}
         <li data-term="{{ term.name }}" data-modules="{{ tutorial.categories | join: ',' }}">
@@ -111,6 +112,25 @@ header:
 // Add event listener to the close button
     closeButton.addEventListener('click', hideTermTutorials);
 
+// Add hover functionality to category links
+    var categoryLinks = document.querySelectorAll('.category-link');
+    categoryLinks.forEach(function(link) {
+      link.addEventListener('mouseover', function() {
+        var category = this.getAttribute('data-category');
+        var tutorials = termTutorialsList.querySelectorAll('li[data-modules*="' + category + '"]');
+        tutorials.forEach(function(tutorial) {
+          tutorial.classList.add('highlight-tutorial');
+        });
+      });
+      link.addEventListener('mouseout', function() {
+        var category = this.getAttribute('data-category');
+        var tutorials = termTutorialsList.querySelectorAll('li[data-modules*="' + category + '"]');
+        tutorials.forEach(function(tutorial) {
+          tutorial.classList.remove('highlight-tutorial');
+        });
+      });
+    });
+
 // Display the list of tutorials related with selected term in the glossary
     buttons.forEach(function(button) {
       button.addEventListener('click', function() {
@@ -135,25 +155,69 @@ header:
     // Show the container
         termTutorialsContainer.style.display = 'block';
 
-    // Add hover functionality to category links
-        var categoryLinks = document.querySelectorAll('.category-link');
-        categoryLinks.forEach(function(link) {
-          link.addEventListener('mouseover', function() {
-            var category = this.getAttribute('data-category');
-            var tutorials = termTutorialsList.querySelectorAll('li[data-modules*="' + category + '"]');
-            tutorials.forEach(function(tutorial) {
-              tutorial.classList.add('highlight-tutorial');
-            });
-          });
-          link.addEventListener('mouseout', function() {
-            var category = this.getAttribute('data-category');
-            var tutorials = termTutorialsList.querySelectorAll('li[data-modules*="' + category + '"]');
-            tutorials.forEach(function(tutorial) {
-              tutorial.classList.remove('highlight-tutorial');
-            });
-          });
-        });
       });
     });
+
+// Function to escape regex special characters in a string
+    function escapeRegExp(string) {
+      return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    }
+
+// Linking related terms in definitions
+    var glossaryItems = document.querySelectorAll('.c-glossary');
+    var termsMap = {};
+    glossaryTerms.forEach(function(termElement) {
+      var term = termElement.getAttribute('data-term');
+      termsMap[term] = termElement.innerText.trim();
+    });
+
+    // Sort terms by length in descending order to prioritize longer matches
+    var sortedTerms = Object.keys(termsMap).sort(function(a, b) {
+      return b.length - a.length;
+    });
+
+    // Function to create regex patterns for each term
+    function createTermPattern(term) {
+      const escapedTerm = escapeRegExp(term);
+      const pattern = `\\b${escapedTerm.replace('-', '[\\s-]')}(?:s|es)?\\b`;
+      return new RegExp(pattern, 'gi');
+    }
+
+    glossaryItems.forEach(function(definitionElement) {
+      var term = definitionElement.getAttribute('data-definition');
+      var definition = definitionElement.innerHTML;
+
+      // Split the definition by code blocks and anchor tags to avoid matching inside them
+      var parts = definition.split(/(<code[^>]*>.*?<\/code>|<a[^>]*>.*?<\/a>)/gi);
+
+      sortedTerms.forEach(function(key) {
+        if (key !== term) {
+          // Create regex pattern for the term
+          var regex = createTermPattern(key);
+          parts = parts.map(function(part, index) {
+            // Skip code blocks and anchor tags
+            if (index % 2 === 1) {
+              return part;
+            }
+            // Split part again to ensure newly created <a> tags are not processed
+            var subparts = part.split(/(<a[^>]*>.*?<\/a>)/gi);
+            subparts = subparts.map(function(subpart, subindex) {
+              // Skip all anchor tags
+              if (subindex % 2 === 1) {
+                return subpart;
+              }
+              // Replace terms with links
+              return subpart.replace(regex, function(matched) {
+                return `<a href="#${key.replace(/\s+/g, '-').toLowerCase()}">${matched}</a>`;
+              });
+            });
+            return subparts.join('');
+          });
+        }
+      });
+
+      definitionElement.innerHTML = parts.join('');
+    });
+
   });
 </script>
