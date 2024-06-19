@@ -24,11 +24,14 @@ attributes: ["installation", "example", "interactive"]
 
 ## Plotly Graphing Library for Python
 
-In this article you will learn the basics about Plotly Graphing Library for Python,
-[https://plotly.com/python/](https://plotly.com/python/) <br>
-Don't hesitate to explore the user-friendly documentation: https://plotly.com/python/reference/
+In this article you will learn the basics about <a href="https://plotly.com/python/" target="_blank">Plotly Graphing Library for Python</a>. <br>
+Don't hesitate to explore the user-friendly <a href="https://plotly.com/python/reference/" target="_blank">Plotly for Python documentation</a>.
 
-### Plotly installation
+# Plotly installation
+
+<div class="required" markdown="1">
+Plotly is an external library and is **not included in the Python standard library**. Therefore, it **requires a separate installation**. Ensure you install a version that meets the specific needs of your application.
+</div>
 
 Getting started with the **Plotly** library as a **Python** developer is straightforward, regardless of the operating system you are working on. Just open a terminal window (or command prompt) and install Plotly with `pip` or `conda` following the commands below.
 
@@ -39,14 +42,18 @@ If you don't have pip or Conda installed, start with the tutorial(s) that will g
 </div>
 
 
-#### Install with pip
+## Install with pip
 
 In terminal window, execute the command:
 ```bash
 pip install plotly==5.8.1
 ```
 
-#### Install with conda
+<div class="warning" markdown="1">
+The version specified in the command (e.g., `5.8.1`) should be adjusted to suit the requirements of your application. It is best to **use the latest stable release** of Plotly, which can be checked and verified <a href="https://pypi.org/project/plotly/" target="_blank">here</a>.
+</div>
+
+## Install with conda
 
 In terminal window, execute the command:
 ```bash
@@ -64,22 +71,22 @@ pip install plotly==5.8.1
 ```
 </div>
 
-### Plotly import
 
+# Select development environment (IDE)
 
-**A. Coding in the Terminal**
-<br>
-In the terminal window navigate to the desired location and create the empty script file, e.g. `ex_plotly_graphing.py`
+## Coding in the Terminal
+
+In the <a class="t-links" href="310">terminal window</a> navigate to the desired location and create the empty script file, e.g. `ex_plotly_graphing.py`
 
 ```bash
 touch ex_plotly_graphing.py
 ```
 
-Open the file in the selected text editor (Atom, Nano, Vim, mcedit, etc.) and go to **section C** of this pharagraph.
+Open the file in the selected <a class="t-links" href="322">CLI text editor</a> (Nano, Vim, mcedit, etc.) or <a class="t-links" href="411">VSC editor with GUI</a> and go to [Plotly import](#plotly-import) section in this tutorial.
 
-**B. Coding in the JupyterLab**
-<br>
-In the terminal window execute the command provided below to start a new JupyterLab session.
+## Coding in the JupyterLab
+
+In the terminal window execute the command provided below to start a new JupyterLab session *(assuming you have Jupyter <a class="t-links" href="412" section="#installing-jupyter">installed</a>)*.
 
 ```bash
 jupyter lab
@@ -90,10 +97,12 @@ If you don't have a Jupyter installed, start with the tutorial that will guide y
 * **JUPYTER INSTALLATION:** <a class="t-links" href="412"></a>
 </div>
 
-Once you have launched the Jupyter Development Environment in a browser window, navigate to the desired location in the file system and open a new file under the Python kernel.
+Once you have launched the Jupyter Development Environment in a browser window, navigate to the desired location in the file system and open a new file under the Python kernel. <base class="mb">
+Follow to the next step: [Plotly import](#plotly-import) section in this tutorial.
 
-**C. Import Plotly**
-and copy paste the folowing code snippet:
+# Plotly import
+
+Open your python script file or Jupyter notebook and copy paste the folowing code snippet:
 
 ```python
 # -*- coding: utf-8 -*-
@@ -102,25 +111,26 @@ import plotly
 ```
 
 
-### Plotly Express wrapper
+## Plotly Express wrapper
 
-[Plotly Express](https://plotly.com/python/plotly-express/) is a built-in module in the **Plotly** library and provides a high-level API for smart & efficient creation of interactive graphs.
+<a href="https://plotly.com/python/plotly-express/" target="_blank">Plotly Express</a> is a built-in module in the **Plotly** library and provides a high-level API for smart & efficient creation of interactive graphs.
 
 ```python
 import plotly.express as px
 ```
 
-#### Color Variables
+### *Color Variables*
 
 Color variables in **Plotly** have a string type value provided in the one of the following forms:
-- HEX color, e.g., "#FFFFFF"
-- HSL color, e.g., "hsl(hue, saturation,lightness)"; The Hue values are in degrees, from 0 to 360 (0 - red, 120 - green, 240 - blue). The saturation and lightness are in % from 0% to 100%.
-- RGB color, e.g., "rgb(red, green, blue)"; Each channel is provided as an intiger between 0 and 255, e.g., rgb(128, 0, 128).
-- RGBA color, e.g., "rgba(r, g, b, a)" with 'a' value set up in range from 0.0 (transparent) to 1.0 (solid)
-- common name, e.g., "blue"
+- HEX color, e.g., `"#FFFFFF"`
+- HSL color, e.g., `"hsl(hue, saturation,lightness)"` <br><em class="c-header">The Hue values are in degrees, from 0 to 360 (0 - red, 120 - green, 240 - blue). The saturation and lightness are in % from 0% to 100%.</em>
+- RGB color, e.g., `"rgb(red, green, blue)"` <br><em class="c-header">Each channel is provided as an intiger between 0 and 255, e.g., rgb(128, 0, 128).</em>
+- RGBA color, e.g., `"rgba(r, g, b, a)"` <br><em class="c-header">with 'a' value set up in range from 0.0 (transparent) to 1.0 (solid)</em>
+- common name, e.g., `"blue"` <br><em class="c-header">see [Built-in Plotly colors](#built-in-plotly-colors) section below</em>
 
-##### **Built-in Plotly colors** *(common names)*
+#### <b class="prefix-2"></b>Built-in Plotly colors
 
+*(common names)* <br>
 <span style="background-color:aliceblue">aliceblue</span>,
 <span style="background-color:antiquewhite">antiquewhite</span>,
 <span style="background-color:aqua">aqua</span>,
@@ -271,7 +281,8 @@ Color variables in **Plotly** have a string type value provided in the one of th
 <span style="background-color:yellowgreen">yellowgreen</span>
 
 
-##### **Built-in Plotly colorscales**  
+#### <b class="prefix-2"></b>Built-in Plotly colorscales
+
 Select one of the following named colorscales for coloring the Heatmap section:
 
 'aggrnyl', 'agsunset', 'algae', 'amp', 'armyrose', 'balance',
@@ -289,11 +300,15 @@ Select one of the following named colorscales for coloring the Heatmap section:
 'tealrose', 'tempo', 'temps', 'thermal', 'tropic', 'turbid',
 'turbo', 'twilight', 'viridis', 'ylgn', 'ylgnbu', 'ylorbr', 'ylorrd'
 
-***Appending '_r' to a named colorscale reverses it.***
+<div class="protip" markdown="1">
+**Appending '_r' to a named colorscale reverses colors order**, e.g., mint_r
+</div>
 
 ![built-in Plotly Colorscales]({{ images_path }}/plotly-colorscales.png)
 
-You can also create your own colorscale as an array of lists, each composed of two elements. The first refers to the percentile rank, and the second to the applied color. Color can be provided in any string format among hex, hsl, rgb, or common name.
+#### <b class="prefix-2"></b>Custom colorscale
+
+You can also create your own colorscale as an array of lists, each composed of two elements. The first refers to the percentile rank, and the second to the applied color. Color can be provided in any [string format](#color-variables) among hex, hsl, rgb or common name.
 <br>e.g.,
 
 ```python
@@ -306,13 +321,14 @@ custom_colorscale = [
                      ]
 ```
 
-Explore *px_scatter_PCA.ipynb* notebook.
+<!-- Explore *px_scatter_PCA.ipynb* notebook.  -->
 
-### Plotly Graph Objects wrapper
-[Plotly Graph Objects](https://plotly.com/python/graph-objects/) is a built-in module in the **plotly** library and manages the Figure object that represent the entire plotting area.
+## Plotly Graph Objects wrapper
+
+<a href="https://plotly.com/python/graph-objects/" target="_blank">Plotly Graph Objects</a> is a built-in module in the **Plotly** library and manages the `Figure` object that represent the entire plotting area.
 
 ```python
 import plotly.graph_objects as go
 ```
 
-Explore *go_heatmap_FQC.ipynb* notebook.
+<!-- Explore *go_heatmap_FQC.ipynb* notebook. -->
