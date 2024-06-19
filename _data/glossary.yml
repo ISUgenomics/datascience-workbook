@@ -131,7 +131,7 @@
 - name: "graphic-tools"
   wiki: "Graphics"
   definition: "refer to visual representations of data, images and designs created and manipulated using computer software. In the context of computing and research, graphics involve generating plots, charts and visualizations to represent complex data sets clearly and intuitively. Tools and libraries such as Matplotlib, Plotly, and ggplot2 in programming languages like Python and R are commonly used for creating these visualizations. Graphics also encompass design and editing software like Adobe Photoshop and Illustrator, which are used for creating and modifying images and illustrations. Effective use of graphics enhances data interpretation, communication and overall presentation quality in various fields."
-- name: "GUI"
+- name: "gui"
   wiki: "Graphical_user_interface"
   definition: "short for Graphical User Interface, is an interface through which users interact with computers and other electronic devices using icons, buttons and other visual elements. Unlike command-line interfaces, GUIs provide a more intuitive and user-friendly experience by allowing users to navigate and control software applications through graphical representations rather than text commands. GUIs are prevalent in operating systems (like Windows, macOS and Linux), software applications, and mobile devices, making technology accessible to a broader audience by simplifying complex operations through visual cues and interactive elements."
 # H
@@ -142,11 +142,11 @@
   wiki: "Computer_cluster"
   definition: "or a computer cluster is a group of computing machines or servers that work together as a single system. Clusters provide high performance computing and parallel processing by distribution of tasks across multiple machines."
 
-- name: "HTML"
+- name: "html"
   wiki: "HTML"
   definition: "HyperText Markup Language is the standard language for webpages. HTML is used to display the contents of a website on a web browser."
 # I
-- name: "IDE"
+- name: "ide"
   wiki: "Integrated_development_environment"
   definition: "is an application for software development that includes a code editor, debugging tools, and version control system. IDE softwares are designed to make the process of writing, testing, and debugging code easier and more efficient."
 - name: "in-browser"
@@ -210,7 +210,7 @@
 - name: "office-tools"
   wiki: "Productivity_software"
   definition: "are productivity software applications designed to assist with common tasks in a professional or academic setting. These tools include word processors (e.g., Microsoft Word, Google Docs), spreadsheets (e.g., Microsoft Excel, Google Sheets), presentation software (e.g., Microsoft PowerPoint, Google Slides), email clients (e.g., Microsoft Outlook, Gmail), password managers and schedule managers among other applications. Office tools facilitate document creation, data analysis, notetaking, presentations and communication, enhancing efficiency and collaboration. They often come with features like templates, real-time collaboration, cloud storage and integration with other software, making them essential for productivity and effective project management."
-- name: "OOD"
+- name: "ood"
   wiki: "Open OnDemand"
   definition: "is a web-based interface that provides easy and flexible access to High-Performance Computing (HPC) resources. It allows users to manage computational tasks, transfer files and access software applications from any location using a web browser. OOD simplifies the process of interacting with HPC systems by offering an intuitive interface, eliminating the need for complex command-line operations, and enabling users to monitor and control their jobs, visualize data and collaborate more effectively."
 - name: "operating-system"
@@ -280,7 +280,7 @@
   wiki: "Environment_variable"
   definition: "**shell variables** are variables defined within a shell session that store data and can be used in commands and scripts. They are local to the shell in which they were created and are not accessible to child processes. *Users can create any shell variable with a custom name and value using syntax like <code class='code-inline'>myVar='Hello'</code>.* <base class='mb'>
   **environment variables** are a type of shell variable that are exported to and accessible by child processes of the shell. They are used to pass configuration settings and other data to applications and scripts running in the shell environment. *While some environment variables have predefined names (e.g., PATH, HOME), users can modify their values and create new ones using the export command, such as <code class='code-inline'>export PATH='/usr/local/bin:$PATH'</code>.*"
-- name: "SLURM"
+- name: "slurm"
   wiki: "Slurm_Workload_Manager"
   definition: "(Simple Linux Utility for Resource Management) is a powerful and widely-used cluster management and job scheduling system designed for high-performance computing (HPC) environments. It manages the allocation of resources such as CPU, memory and storage across multiple nodes in a computing cluster. SLURM enables users to submit, schedule, and monitor jobs efficiently, ensuring optimal resource utilization and job prioritization. Its capabilities include workload management, job dependency handling and resource reservation, making it an essential tool for researchers and engineers working in HPC settings. SLURM's flexibility and scalability allow it to support a wide range of computational workloads and complex workflows."
 - name: "softlink"
