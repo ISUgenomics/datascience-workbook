@@ -11,8 +11,8 @@ type: "tutorial"
 order: 822.02
 level: 3
 categories: ["visualization", "graphic-tools", "plotting", "programming", "library-package-module"]
-tags: ["python", "plotly", "chart", "development-environment", "IDE", "jupyter", "notebook", "colorscale", "machine-learning"]
-attributes: ["installation", "example", "interactive"]
+tags: ["python", "plotly", "chart", "development-environment", "IDE", "jupyter", "notebook", "colorscale", "dataset", "scatterplot", "heatmap", "barplot", "machine-learning"]
+attributes: ["installation", "example", "user-guide", "code-snippet", "ready-made-solution", "cheatsheet", "interactive"]
 ---
 
 {% include toc %}
