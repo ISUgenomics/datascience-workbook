@@ -97,7 +97,14 @@ VSCode has powerful tools to help you find and fix errors in your code. To start
 
 
 ## Version Control
-If you are not familiar with Git, check out these tutorials about <a class="t-links" href="932.2"></a> and <a class="t-links" href="932.4"></a>. It is possible to work with Git repositories directly from the VSC editor. You can clone a repo, or initialize a repo for your project from the terminal. `Source Control` pane on the left is used to manage your Git repositories. You will need to log in to your GitHub account the first time you use Git. The common Git operations such as Pull, Push, Clone, Commit, and Create Branch can be performed from here. Check this page for a list of <a class="t-links" href="932.21" section="#vs-code-git-commands">Git commands</a> on VSCode.
+If you are not familiar with Git, check out these tutorials about <a class="t-links" href="932.2"></a> and <a class="t-links" href="932.4"></a>. It is possible to work with Git repositories directly from the VSC editor. You will need to log in to your GitHub account the first time you use Git. To log in, select `Remote Explorer` icon from left-hand taskbar.
+
+![remoteexp]({{ images_path }}/VSC_remoteexplorer.png)
+
+Select `Sign in to GitHub` (you may need to let the page load a little before the sign in button appears). If your system asks *The extension `GitHub Codespaces` wants to sign in using GitHub.* then select allow. You will be directed to the GitHub login webpage. Select `Authorize Visual-Studio-Code` to connect your GitHub account to VSCode.
+
+
+You can clone a repo, or initialize a repo for your project from the terminal. `Source Control` pane on the left is used to manage your Git repositories. You will need to log in to your GitHub account the first time you use Git. The common Git operations such as Pull, Push, Clone, Commit, and Create Branch can be performed from here. Check this page for a list of <a class="t-links" href="932.21" section="#vs-code-git-commands">Git commands</a> on VSCode.
 
 ![VC]({{ images_path }}/VSC_sourcecontrol.png)
 
