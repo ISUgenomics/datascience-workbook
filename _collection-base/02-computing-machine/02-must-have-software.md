@@ -1,5 +1,5 @@
 ---
-title: "Must-have softaware"
+title: "Must-have software"
 layout: single
 author: Aleksandra Badaczewska
 author_profile: true
