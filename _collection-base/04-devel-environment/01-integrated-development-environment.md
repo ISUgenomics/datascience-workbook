@@ -31,4 +31,4 @@ IDEs include many different tools that help developers code efficiently:
 * Application testing and deployment
 
 
-IDEs are essential tools for software development, provide one place to work on all aspects of a project, and have a wide range of features to streamline the development process. Some popular IDEs are [Visual Studio Code ⤴](01A-tutorial-VSCode.md), Eclipse, [PyCharm ⤴](02E-pycharm-ide.md), [Jupyter ⤴](01B-jupyter-basics), [RStudio ⤴](03A-rstudio-basics.md), Atom, and Spyder.
+IDEs are essential tools for software development, provide one place to work on all aspects of a project, and have a wide range of features to streamline the development process. Some popular IDEs are <a class="t-links" href="411"></a>, Eclipse, <a class="t-links" href="427"></a>, <a class="t-links" href="412"></a>, <a class="t-links" href="431"></a>, Atom, and Spyder.

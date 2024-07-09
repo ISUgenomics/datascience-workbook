@@ -44,7 +44,7 @@ Once connected to ISU network, use any Terminal (Terminal on Linux/Mac and Power
 ## Data Transfer and Jobs
 
 <div class="required" markdown="1">
-**Nova transfer node:** @nova.its.iastate.edu
+**Nova transfer node:** @novadtn.its.iastate.edu
 </div>
 <div class="protip" markdown="1">
 Use the login hostname @**nova**.its.iastate.edu to log in to Nova and submit jobs, <br>

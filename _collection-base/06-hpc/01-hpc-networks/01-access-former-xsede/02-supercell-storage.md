@@ -22,7 +22,7 @@ attributes: ["user-guide", "command"]
 # Introduction
 
 <div class="warning" markdown="1">
-**XSEDE has been replaced by ACCESS.** Check the [ACCESS guide ⤴](01-supercomputer-intro.md) for more information.
+**XSEDE has been replaced by ACCESS.** Check the <a class="t-links" href="611.1"></a> for more information.
 </div>
 
 

@@ -34,7 +34,7 @@ Containers are executable units of software containing anything from a small pro
 
 Apptainer *(previous Singularity)* is commonly used for High-Performance Computing (HPC) environments whereas Docker is usually run locally as it needs <a class="t-links" href="324">admin privileges</a>. Docker container images can be searched from the <a href="https://hub.docker.com/search?q=" target="_blank">Docker Hub ⤴</a> or directly from the Docker Desktop app. <br>
 
-<div class="note" markdown="1">
+<div class="protip" markdown="1">
 Apptainer *(previous Singularity)* is able to support Docker containers, which means that **you can run Docker containers using Apptainer**. But, Docker does not natively support Apptainer/Singularity containers. However, there are some workarounds that allow you to run Apptainer containers inside a Docker container, such as using Apptainer as an entry point for the Docker container.
 </div>
 

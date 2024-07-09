@@ -25,7 +25,7 @@ The LSS is a storage service for Iowa State faculty and staff. It is useful for 
 
 ## Access
 
-Space on LSS can be requested from <a href="https://lss.apps.it.iastate.edu/" target="_blank">ISU LSS website ⤴</a>. <base class="mb">
+Space on LSS can be requested from <a href="https://lss.apps.it.iastate.edu/" target="_blank">ISU LSS website ⤴</a> (requires ISU login). <base class="mb">
 Once you have purchased space on LSS, folders can be mounted to your computer directly. Check out this guide on <a href="https://researchit.las.iastate.edu/guides/lss/mount_folders/" target="_blank">how to mount folders from LSS ⤴</a>.
 
 
