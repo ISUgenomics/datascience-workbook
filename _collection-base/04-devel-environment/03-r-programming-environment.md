@@ -135,6 +135,6 @@ For example, you can use the `plot()` function to create a scatterplot:
 ```
 ![R_plot]({{ images_path }}/R_plot.png)
 
-<div class="protip" markdown="1">
+<div class="note" markdown="1">
 With its powerful statistical and data visualization capabilities, R is a valuable tool for anyone working with data.
 </div>

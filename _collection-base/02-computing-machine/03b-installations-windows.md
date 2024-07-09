@@ -22,7 +22,7 @@ attributes: ["installation"]
 
 # Introduction
 
-This is a guide for setup of a windows machine for bioinformatics data analysis. I list here some important tools useful for most bioinformatics analyses and the process to install them. Check out the <a class="t-links" href="900">Project Management</a>.
+This is a guide for setup of a windows machine for bioinformatics data analysis. I list here some important tools useful for most bioinformatics analyses and the process to install them. Check out the <a class="t-links" href="900">Project Management</a> guide.
 
 ## General guide to software installation
 

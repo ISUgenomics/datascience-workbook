@@ -47,7 +47,7 @@ attributes: ["user-guide"]
 # Logging in
 To log in to Nova/Condo Clusters, you need to be connected to ISU network on-campus or use <a href="https://vpn.iastate.edu/+CSCOE+/logon.html#form_title_text" target="_blank">ISU VPN ⤴</a> if you are off-campus. The first time you try to log in to Nova or Condo, a new Google Authenticator (GA) account is created. You will need to use GA for login.
 
-The first time you use the <a class="t-links" href="623"></a> connection to Nova/Condo, it will respond with:
+The first time you use the <a class="t-links" href="623"></a> to Nova/Condo, it will respond with:
 
 <pre class="output">
 "host key not found, generate hostkey?(yes/no)"

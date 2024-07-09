@@ -21,7 +21,7 @@ attributes: ["user-guide"]
 
 # Introduction to ACCESS
 
-<div class="warning" markdown="1">
+<div class="note" markdown="1">
 **ACCESS has now replaced a similar service called the Extreme Science and Engineering Discovery Environment (XSEDE).** Similar to ACCESS, XSEDE was a NSF funded collection of supercomputers and high-end visualization and data analysis resources. XSEDE ended on August 31, 2022. <base class="mb">
 <button class="btn more mr"></button>Links to archives with more information about XSEDE are available <a href="https://portal.xsede.org/#/guest" target="_blank">here ⤴</a>.
 </div>

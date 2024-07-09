@@ -34,7 +34,7 @@ attributes: ["user-guide", "command"]
 If logging in the first time, check the <a class="t-links" href="613.1" section="#logging-in">Logging in</a> section of intro to HPC page.
 </div>
 
-Using Condo cluster has same requirements as the [Nova Computing Cluster ⤴](03-isu-hpc-nova-cluster) except Condo is free. Faculty can fill out the Cluster Access Request on <a href="https://www.hpc.iastate.edu/" target="_blank">HPC webpage ⤴</a> to request access for their group. Use Google Authenticator on <a href="https://www.hpc.iastate.edu/guides/condo-2017/access-and-login/google-auth-on-android" target="_blank">Android ⤴</a>, <a href="https://www.hpc.iastate.edu/guides/condo-2017/access-and-login/google-auth-on-iphone-ipad-ipod" target="_blank">iPhone ⤴</a> or <a href="https://www.hpc.iastate.edu/guides/condo-2017/access-and-login/google-auth-on-windows" target="_blank">Windows ⤴</a> devices for authentication.
+Using Condo cluster has same requirements as the <a class="t-links" href="613.3"></a> except Condo is free. Faculty can fill out the Cluster Access Request on <a href="https://www.hpc.iastate.edu/" target="_blank">HPC webpage ⤴</a> to request access for their group. Use Google Authenticator on <a href="https://www.hpc.iastate.edu/guides/condo-2017/access-and-login/google-auth-on-android" target="_blank">Android ⤴</a>, <a href="https://www.hpc.iastate.edu/guides/condo-2017/access-and-login/google-auth-on-iphone-ipad-ipod" target="_blank">iPhone ⤴</a> or <a href="https://www.hpc.iastate.edu/guides/condo-2017/access-and-login/google-auth-on-windows" target="_blank">Windows ⤴</a> devices for authentication.
 
 
 To log in to Condo, use any Terminal (Terminal on Linux/Mac and Powershell on Windows) to ssh with the login hostname:
