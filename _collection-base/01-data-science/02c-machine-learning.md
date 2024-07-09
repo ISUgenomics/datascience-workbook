@@ -52,7 +52,7 @@ There are many applications of artificial intelligence (AI) and machine learning
         <li> customer service: chatbots and virtual assistants </li>
         <li> manufacturing: identify inefficiencies, prevent accidents </li>
     </td> <td>
-        <img src="assets/images/AI.jpeg" alt="Computational Science" width="400"><br>
+        <img src="{{ images_path }}/AI.png" alt="Computational Science" width="400"><br>
           <i>The figure shows the applications of the Artificial Intelligence.</i>
     </td> </tr>
 </table>
@@ -78,4 +78,4 @@ One effective way to learn about AI applications is to study examples of real-wo
 1. <a href="https://ai.101workbook.org/about.html" target="_blank">About the AI Workbook  ⤴</a>
 2. <a href="https://ai.101workbook.org/list.html" target="_blank">Detailed Table of Content  ⤴</a>
 3. <a href="https://ai.101workbook.org/glossary.html" target="_blank">AI Glossary  ⤴</a>
-4. <a href="https://ai.101workbook.org/Contributing.html" target="_blank">How to contribute?  ⤴</a>
+4. <a href="https://ai.101workbook.org/contributing.html" target="_blank">How to contribute?  ⤴</a>
