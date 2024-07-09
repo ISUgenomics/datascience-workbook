@@ -61,12 +61,12 @@ conda install -c plotly plotly=5.8.1
 ```
 
 <div class="protip" markdown="1">
-For the efficient development of interactive Python applications, you will also need other libraries, such as Dash, Pandas, or SciPy. So, it is a good idea to create a new virtual environment with Conda right away and add into it other modules over time. <base class="mb">
+For the efficient development of interactive Python applications, you will also need other libraries, such as Dash, Pandas or SciPy. So, it is a good idea to create a new virtual environment with Conda right away and add into it other modules over time. <base class="mb">
 Quick guide (execute commands in the terminal window):
 ```bash
-conda info --envs                     # Active environment shown with *; on Mac Pro activate base for Miniforge3_x86
-conda create -n plotly python=3.8     # replace 'plotly' with custom name
-conda activate plotly
+conda info --envs                       # Active environment shown with *; on Mac Pro activate base for Miniforge3_x86
+conda create -n graphing python=3.8     # replace 'graphig' with custom name
+conda activate graphing
 pip install plotly==5.8.1
 ```
 </div>
@@ -396,7 +396,7 @@ import plotly.data as data
 
 ### <button class="btn example">BUILT-IN DATASETS</button>
 
-This example loads the gapminder dataset and creates a line plot showing life expectancy over the years, with different colors representing different continents.
+This example loads the `gapminder` dataset and creates a line plot showing life expectancy over the years, with different colors representing different continents.
 
 ```python
 import plotly.express as px
@@ -427,7 +427,7 @@ For the examples given above, you can add additional import for pandas like this
 import pandas as pd
 ```
 Now you can use pandas functions to manipulate the DataFrame `df` if needed. <br>
-*Forexample, you can filter the data to include only records after the year 2000 using pandas, and then creates a line plot showing life expectancy over the years for different continents.*
+*For example, you can filter the data to include only records after the year 2000 using pandas, and then creates a line plot showing life expectancy over the years for different continents.*
 ```python
 import plotly.express as px
 import plotly.data as data
