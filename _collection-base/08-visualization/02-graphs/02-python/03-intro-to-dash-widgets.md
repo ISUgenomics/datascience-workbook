@@ -24,7 +24,9 @@ attributes: ["installation", "example", "interactive"]
 
 # Introduction
 
+<div class="note" markdown="1">
 Dash is an open-source framework for building analytical web applications using Python. It is particularly useful for creating interactive, data-driven dashboards without requiring extensive knowledge of web development. Dash is ideal for data scientists and analysts who want to visualize complex datasets and share interactive results with others.
+</div>
 
 ## Dash framework for Python
 
@@ -181,7 +183,7 @@ Finally, the app is deployed on a local Python server with `app.run(debug=True)`
 ```bash
 python dash_app.py
 ```
-The go to the <a href="http://127.0.0.1:8050/" target="_blank">http://127.0.0.1:8050/</a> address in your web browser.
+Then go to the <a href="http://127.0.0.1:8050/" target="_blank">http://127.0.0.1:8050/</a> address in your web browser.
 
 ![python-dash-minimal-app]({{ images_path }}/dash-minimal-app.png)
 
@@ -194,12 +196,12 @@ The `app.layout` in a Dash application is highly customizable to fit your needs.
 Dash components are the building blocks of Dash application layout, enabling you to create interactive, web-based data visualizations using Python. Major categories of Dash components include:
 * **[HTML components](#html-components)** (`html`): Basic HTML elements like headings, paragraphs, divs, etc.
 * **[Core Components](#core-components)** (`dcc`): Higher-level components like graphs, dropdowns, sliders, etc.
-* **[Dependencies](#)** : `Input`, `Output`, and `State` components manage user input, display output, and track component state in Dash callbacks, enabling dynamic interactivity in the application.
+* **[Dependencies](#)** : `Input`, `Output` and `State` components manage user input, display output, and track component state in Dash callbacks, enabling dynamic interactivity in the application.
 * **[Callbacks](#)** : Functions that enable interactivity by linking inputs and outputs.
 
 These components are integrated into the layout of a Dash application to create a user interface that responds dynamically to user interactions. *For example, a dropdown component can store options that filter or switch data on a plot interactively when selected by a user.*
 
-**Categories and Example Components**
+**Dash modules and example components**
 
 | module    | description | example component | explanation |
 |-----------|-------------|-------------------|-------------|
