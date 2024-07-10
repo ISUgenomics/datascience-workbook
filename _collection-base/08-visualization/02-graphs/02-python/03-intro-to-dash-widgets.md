@@ -148,7 +148,7 @@ According to the latest Dash documentation, importing submodules directly with `
 </div>
 
 
-## Creating your first dash application
+## Minimal Dash application
 
 ```python
 # Import Dash components
@@ -168,7 +168,7 @@ if __name__ == '__main__':
     app.run(debug=True)
 ```
 
-<details markdown="1"><summary class="bc-template"> What the code does? </summary>
+<details markdown="1" class="mb"><summary class="bc-template"> What the code does? </summary>
 
 *This setup creates a basic interactive web application with a title and a placeholder for a graph.*
 The provided code:
@@ -201,6 +201,9 @@ Dash components are the building blocks of Dash application layout, enabling you
 
 These components are integrated into the layout of a Dash application to create a user interface that responds dynamically to user interactions. *For example, a dropdown component can store options that filter or switch data on a plot interactively when selected by a user.*
 
+<img src="{{images_path}}/plotly-dash-components.png" alt="types of dash components">
+<em class="footnote">Figure 2. Examples of Dash widgets for interactive web applications, including Core, HTM and Bootstrap components.</em>
+
 **Dash modules and example components**
 
 | module    | description | example component | explanation |
@@ -211,10 +214,213 @@ These components are integrated into the layout of a Dash application to create 
 |`Output`   | Defines outputs to update components.                    | `Output('graph', 'figure')`  | Updates the `figure` property of the graph component. |
 |`callback` | Links inputs and outputs to create interactivity.        | `@app.callback(Output('graph', 'figure'), [Input('dropdown', 'value')])` | Updates the graph based on the dropdown selection. |
 
-<!---
+
 ## HTML components
 
-### <button class="btn example">HTML elements</button>
+The `html` module in Dash provides a suite of components that mirror standard HTML elements, enabling you to structure the layout of your Dash application. These components include headings, paragraphs, divs, etc. They allow you to create a well-organized and visually appealing interface.
+
+<div class="note" markdown="1">
+Each Dash HTML component formats and displays text or other content in a specific way, helping to arrange and organize visual elements on the app's page. For example, a heading component makes text appear larger and bolder, while a division component groups selected elements together.
+</div>
+
+**Commonly used HTML components**
+
+| component     | description               | example instance                         | rendering |
+|---------------|---------------------------|------------------------------------------|-----------|
+| `html.H1`     | main heading (h1)         | `html.H1('Title of Dash App')`           | <h1>Title of Dash App</h1>   |
+| `html.H2`     | secondary heading (h2)    | `html.H2('Subtitle')`                    | <h2>Subtitle</h2>            |
+| `html.Div`    | division or section (div) | `html.Div(children='content goes here')` | <div>Content goes here</div> |
+| `html.P`      | paragraph (p)             | `html.P('This is a paragraph.')`         | <p>This is a paragraph.</p>  |
+| `html.Span`   | inline container (span)   | `html.Span('This is a span.')`           | <span>This is a span.</span> |
+| `html.A`      | hyperlink (a)             | `html.A('Link Text', href='https://dash.plotly.com/')` | <a href="https://dash.plotly.com/">Link Text</a> |
+| `html.Img`    | image (img)               | `html.Img(src='path/to/image.jpg')`      | <img src="{{images_path}}/01_graphic_design_elements.png">     |
+| `html.Button` | button (button)           | `html.Button('Click Me', id='button')`   | <button class="btn">Click Me</button> |
+| `html.Label`  | label for form elements   | `html.Label('Label Text')`               | <label>Label Text</label>             |
+| `html.Input`  | input field               | `html.Input(type='text', value='input')` | <input value="input"></input>         |
+| `html.Ul`     | unordered list (ul)       | `html.Ul(children=[html.Li('Item 1'), html.Li('Item 2')])` | <ul><li>Item 1</li><li>Item 2</li><ul>       |
+| `html.Ol`     | ordered list (ol)         | `html.Ol(children=[html.Li('Item 1'), html.Li('Item 2')])` | <ol><li>Item 1</li><li>Item 2</li><ol>       |
+| `html.Li`     | list item (li)            | `html.Li('List Item')`                   | <li>List Item</li> |
+
+<div class="protip" markdown="1">
+For a comprehensive list of available Dash HTML components, check the <a href="https://dash.plotly.com/dash-html-components" target="_blank">official Dash documentation</a> under the section **Open Source Component Libraries** → **Dash HTML Components**. This resource provides detailed information and examples to help you effectively use these components in your applications.
+</div>
+
+### HTML component properties
+
+When using Dash HTML components, you can customize them with various properties.
+
+<div class="note" markdown="1">
+Properties of Dash HTML components are settings that customize how elements appear and behave. These properties are predefined attributes with fixed names that you can modify by assigning values. For example, the `style` property can change the element's color or size by assigning specific values to these styles, e.g., `style={"color": "red", "size": "24px"}`.
+</div>
+
+Here's a concise guide to the main properties and some useful tips:
+
+| property    | description | tips |
+|-------------|-------------|------|
+| `style`     | a dictionary to define inline CSS styles | Use **camelCase** for properties (e.g., `backgroundColor`). |
+| `className` | assigns CSS classes to the component     | `class` is renamed to `className` in Dash                   |
+| `id`        | unique identifier for the component      | Useful for callback targeting and CSS styling.              |
+
+Typically, properties are placed within the Dash calling function for a given component, immediately following the children attribute, which always comes first. <br>
+*For example:*
+```python
+html.H1('Title of Dash App', style={'textAlign': 'center', 'color': 'red'}, id='app-title')
+html.Div(children='content goes here', id='content-div', className='example-div', style={'backgroundColor': 'yellow', 'color': 'red'})
+```
+
+### <button class="btn example">HTML elements in a Dash app</button>
+
+*This example demonstrates the use of various HTML components and their properties in the Dash app layout, making the application well-organized and practically useful.*
+
+```python
+# Import Dash components
+from dash import Dash, html
+
+# Create Dash app instance
+app = Dash()
+
+# Define app layout using HTML components
+app.layout = html.Div([
+    # Main Heading
+    html.H1('Title of Dash App', style={'textAlign': 'center', 'color': 'blue'}, id='main-heading'),
+    # Section 1
+    html.Div([
+        html.H2('Section 1', style={'textAlign': 'left'}),
+        html.P('This is a paragraph in section 1.', style={'fontSize': 14}),
+        html.Ul([
+            html.Li('List Item 1'),
+            html.Li('List Item 2'),
+            html.Li('List Item 3'),
+        ]),
+    ], style={'padding': '20px', 'border': '1px solid black'}),                 # style for a html.Div goes after the content
+    # Section 2
+    html.Div([
+        html.H2('Section 2', style={'textAlign': 'left'}),
+        html.P('This is a paragraph in section 2.', style={'fontSize': 14}),
+        html.Img(src='https://via.placeholder.com/150', style={'display': 'block', 'margin': 'auto'}),
+    ], style={'padding': '20px', 'border': '1px solid black', 'marginTop': '20px'}),
+    # Section 3
+    html.Div([
+        html.H2('Section 3', style={'textAlign': 'left'}),
+        html.P('This is a paragraph in section 3 with a button below.', style={'fontSize': 14}),
+        html.Button('Click Me', id='button', style={'display': 'block', 'margin': 'auto', 'padding': '10px 20px'}),
+    ], style={'padding': '20px', 'border': '1px solid black', 'marginTop': '20px'}),
+])
+
+# Deploy app on the local Python server
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+
+<details markdown="1" class="mb"><summary class="bc-template"> What the code does? </summary>
+
+This code creates a Main Heading followed by 3 styled Sections in the app layout:
+* **Main Heading:** Centered and styled with a specific color.
+* **Section 1:** Includes a secondary heading, a paragraph, and an unordered list.
+* **Section 2:** Contains a secondary heading, a paragraph, and a centered image.
+* **Section 3:** Features a secondary heading, a paragraph, and a centered button.
+
+Finally, the app is deployed on a local Python server with `app.run(debug=True)` when the script is run directly.
+</details>
+
+![python-dash-app-html-components]({{ images_path }}/dash-app-html-components.png)
+
+### CSS Styles: inline vs variable vs className
+
+When building Dash applications, repetitive style definitions can clutter your code, making it hard to read and maintain. Two effective solutions to this problem are using variables for common styles and/or assigning className defined within external CSS files.
+
+#### Using **variables** for common styles
+
+Using variables for common styles involves defining reusable style dictionaries and applying them to components. This method keeps your code clean and easy to manage by centralizing style definitions.
+
+*Here is the prvious example (shortened to first section only) with the styles converted to variables.*
+
+```python
+# Import Dash components
+from dash import Dash, html
+
+# Create Dash app instance
+app = Dash(__name__)
+
+# Define common styles
+container_style = {'padding': '20px', 'border': '1px solid black', 'marginTop': '20px'}
+heading_style = {'textAlign': 'left'}
+centered_style = {'textAlign': 'center'}
+
+# Define app layout using HTML components
+app.layout = html.Div([
+    html.H1('Title of Dash App', style=centered_style, id='main-heading'),
+
+    html.Div([
+        html.H2('Section 1', style=heading_style),
+        html.P('This is a paragraph in section 1.', style={'fontSize': 14}),
+        html.Ul([
+            html.Li('List Item 1'),
+            html.Li('List Item 2'),
+            html.Li('List Item 3'),
+        ]),
+    ], style=container_style),
+])
+
+# Deploy app on the local Python server
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+***What changed:*** *Repeated style properties are moved to variables above the* `app.layout` *and applied to multiple html components, reducing redundancy.*
+
+#### Using **className** for common styles
+
+Using class names for common styles involves assigning CSS classes to components and defining styles in an external CSS file. This approach separates style definitions from your code, promoting better organization and maintainability.
+
+*Here is the prvious example (shortened to first section only) with the styles converted to CSS classes.*
+
+First, create an external CSS file (e.g., `assets/custom_styles.css`):
+```css
+.container {
+    padding: 20px;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+.heading {
+    text-align: left;
+}
+
+.centered {
+    text-align: center;
+}
+```
+
+Then, update your Dash app to use the class names:
+
+```python
+# Import Dash components
+from dash import Dash, html
+
+# Create Dash app instance
+app = Dash(__name__)
+
+# Define app layout using HTML components
+app.layout = html.Div([
+    html.H1('Title of Dash App', className='centered', id='main-heading'),
+
+    html.Div([
+        html.H2('Section 1', className='heading'),
+        html.P('This is a paragraph in section 1.', style={'fontSize': 14}),
+        html.Ul([
+            html.Li('List Item 1'),
+            html.Li('List Item 2'),
+            html.Li('List Item 3'),
+        ]),
+    ], className='container'),
+])
+
+# Deploy app on the local Python server
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+***What changed:*** *Styles definitions are moved to an external CSS file, and components are assigned* `className` *property instead of* `style`*, making the code cleaner and styles easier to manage.*
+
 
 ## Core components
 
@@ -271,5 +477,3 @@ These components are integrated into the layout of a Dash application to create 
 ## Deploying on the cloud
 
 ### <button class="btn example">Deploying on Heroku</button>
-
--->
