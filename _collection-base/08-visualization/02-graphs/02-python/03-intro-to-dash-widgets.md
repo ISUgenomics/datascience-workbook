@@ -215,7 +215,7 @@ These components are integrated into the layout of a Dash application to create 
 |`callback` | Links inputs and outputs to create interactivity.        | `@app.callback(Output('graph', 'figure'), [Input('dropdown', 'value')])` | Updates the graph based on the dropdown selection. |
 
 
-## HTML components
+## **HTML components**
 
 The `html` module in Dash provides a suite of components that mirror standard HTML elements, enabling you to structure the layout of your Dash application. These components include headings, paragraphs, divs, etc. They allow you to create a well-organized and visually appealing interface.
 
@@ -242,12 +242,12 @@ Each Dash HTML component formats and displays text or other content in a specifi
 | `html.Li`     | list item (li)            | `html.Li('List Item')`                   | <li>List Item</li> |
 
 <div class="protip" markdown="1">
-For a comprehensive list of available Dash HTML components, check the <a href="https://dash.plotly.com/dash-html-components" target="_blank">official Dash documentation</a> under the section **Open Source Component Libraries** → **Dash HTML Components**. This resource provides detailed information and examples to help you effectively use these components in your applications.
+For a comprehensive list of available Dash HTML components, check the <a href="https://dash.plotly.com/dash-html-components#full-elements-reference" target="_blank">official Dash documentation</a> under the section **Open Source Component Libraries** → **Dash HTML Components**. This resource provides detailed information and examples to help you effectively use these components in your applications.
 </div>
 
-### HTML component properties
+### *HTML component properties*
 
-When using Dash HTML components, you can customize them with various properties.
+When using Dash HTML components, you can customize them with <a href="https://dash.plotly.com/dash-html-components#html-component-properties" target="_blank">various properties</a>.
 
 <div class="note" markdown="1">
 Properties of Dash HTML components are settings that customize how elements appear and behave. These properties are predefined attributes with fixed names that you can modify by assigning values. For example, the `style` property can change the element's color or size by assigning specific values to these styles, e.g., `style={"color": "red", "size": "24px"}`.
@@ -325,15 +325,15 @@ Finally, the app is deployed on a local Python server with `app.run(debug=True)`
 
 ![python-dash-app-html-components]({{ images_path }}/dash-app-html-components.png)
 
-### CSS Styles: inline vs variable vs className
+### **CSS Styles:** *inline* vs *variable* vs *className*
 
 When building Dash applications, repetitive style definitions can clutter your code, making it hard to read and maintain. Two effective solutions to this problem are using variables for common styles and/or assigning className defined within external CSS files.
 
-#### Using **variables** for common styles
+#### *Using* `variables` *for common styles*
 
 Using variables for common styles involves defining reusable style dictionaries and applying them to components. This method keeps your code clean and easy to manage by centralizing style definitions.
 
-*Here is the prvious example (shortened to first section only) with the styles converted to variables.*
+<em class="c-header">Here is the prvious example (shortened to first section only) with the styles converted to variables.</em>
 
 ```python
 # Import Dash components
@@ -368,11 +368,11 @@ if __name__ == '__main__':
 ```
 ***What changed:*** *Repeated style properties are moved to variables above the* `app.layout` *and applied to multiple html components, reducing redundancy.*
 
-#### Using **className** for common styles
+#### *Using* `className` *for common styles*
 
 Using class names for common styles involves assigning CSS classes to components and defining styles in an external CSS file. This approach separates style definitions from your code, promoting better organization and maintainability.
 
-*Here is the prvious example (shortened to first section only) with the styles converted to CSS classes.*
+<em class="c-header">Here is the prvious example (shortened to first section only) with the styles converted to CSS classes.</em>
 
 First, create an external CSS file (e.g., `assets/custom_styles.css`):
 ```css
@@ -419,9 +419,13 @@ app.layout = html.Div([
 if __name__ == '__main__':
     app.run(debug=True)
 ```
-***What changed:*** *Styles definitions are moved to an external CSS file, and components are assigned* `className` *property instead of* `style`*, making the code cleaner and styles easier to manage.*
+***What changed:*** *Styles definitions are moved to an external CSS file. HTML components are assigned* `className` *property instead of* `style`*, making the code cleaner and styles easier to manage.*
 
+<div class="warning" markdown="1">
+When defining CSS classes in the external CSS file, remember that class names must be **prefixed with a dot**. For example, use `.container` instead of `container`. Then assign this class to the `className` property of the selected HTML component to apply the desired styles.
+</div>
 
+<!--
 ## Core components
 
 ### <button class="btn example">Inputs and Outputs</button>
@@ -477,3 +481,4 @@ if __name__ == '__main__':
 ## Deploying on the cloud
 
 ### <button class="btn example">Deploying on Heroku</button>
+-->
