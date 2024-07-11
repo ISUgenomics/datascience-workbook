@@ -168,7 +168,7 @@ if __name__ == '__main__':
     app.run(debug=True)
 ```
 
-<details markdown="1" class="mb"><summary class="bc-template"> What the code does? </summary>
+<details class="l-frame" markdown="1"><summary class="c-header"><b><i>What the script does?</i></b></summary>
 
 *This setup creates a basic interactive web application with a title and a placeholder for a graph.*
 The provided code:
@@ -202,7 +202,7 @@ Dash components are the building blocks of Dash application layout, enabling you
 These components are integrated into the layout of a Dash application to create a user interface that responds dynamically to user interactions. *For example, a dropdown component can store options that filter or switch data on a plot interactively when selected by a user.*
 
 <img src="{{images_path}}/plotly-dash-components.png" alt="types of dash components">
-<em class="footnote">Figure 2. Examples of Dash widgets for interactive web applications, including Core, HTM and Bootstrap components.</em>
+<em class="footnote">Examples of Dash widgets for interactive web applications, including Core, HTM and Bootstrap components.</em>
 
 **Dash modules and example components**
 
@@ -220,26 +220,26 @@ These components are integrated into the layout of a Dash application to create 
 The `html` module in Dash provides a suite of components that mirror standard HTML elements, enabling you to structure the layout of your Dash application. These components include headings, paragraphs, divs, etc. They allow you to create a well-organized and visually appealing interface.
 
 <div class="note" markdown="1">
-Each Dash HTML component formats and displays text or other content in a specific way, helping to arrange and organize visual elements on the app's page. For example, a heading component makes text appear larger and bolder, while a division component groups selected elements together.
+Each Dash HTML component **formats and displays text** or other content in a specific way, helping to arrange and **organize visual elements** on the app's page. For example, a `heading` component makes text appear larger and bolder, while a division component groups selected elements together.
 </div>
 
 **Commonly used HTML components**
 
 | component     | description               | example instance                         | rendering |
 |---------------|---------------------------|------------------------------------------|-----------|
-| `html.H1`     | main heading (h1)         | `html.H1('Title of Dash App')`           | <h1>Title of Dash App</h1>   |
-| `html.H2`     | secondary heading (h2)    | `html.H2('Subtitle')`                    | <h2>Subtitle</h2>            |
-| `html.Div`    | division or section (div) | `html.Div(children='content goes here')` | <div>Content goes here</div> |
-| `html.P`      | paragraph (p)             | `html.P('This is a paragraph.')`         | <p>This is a paragraph.</p>  |
+| `html.H1`     | main heading (h1)         | `html.H1('Title of Dash App')`           | <span style="font-size:28px; font-weight: bold;">Title of Dash App</span>    |
+| `html.H2`     | secondary heading (h2)    | `html.H2('Subtitle')`                    | <span style="font-size:24px;">Subtitle</span>                  |
+| `html.Div`    | division or section (div) | `html.Div(children='content goes here')` | <span style="border:1px solid black; padding: 5px;">content goes here</span> |
+| `html.P`      | paragraph (p)             | `html.P('This is a paragraph.')`         | This is a paragraph.         |
 | `html.Span`   | inline container (span)   | `html.Span('This is a span.')`           | <span>This is a span.</span> |
 | `html.A`      | hyperlink (a)             | `html.A('Link Text', href='https://dash.plotly.com/')` | <a href="https://dash.plotly.com/">Link Text</a> |
 | `html.Img`    | image (img)               | `html.Img(src='path/to/image.jpg')`      | <img src="{{images_path}}/01_graphic_design_elements.png">     |
-| `html.Button` | button (button)           | `html.Button('Click Me', id='button')`   | <button class="btn">Click Me</button> |
-| `html.Label`  | label for form elements   | `html.Label('Label Text')`               | <label>Label Text</label>             |
-| `html.Input`  | input field               | `html.Input(type='text', value='input')` | <input value="input"></input>         |
-| `html.Ul`     | unordered list (ul)       | `html.Ul(children=[html.Li('Item 1'), html.Li('Item 2')])` | <ul><li>Item 1</li><li>Item 2</li><ul>       |
-| `html.Ol`     | ordered list (ol)         | `html.Ol(children=[html.Li('Item 1'), html.Li('Item 2')])` | <ol><li>Item 1</li><li>Item 2</li><ol>       |
-| `html.Li`     | list item (li)            | `html.Li('List Item')`                   | <li>List Item</li> |
+| `html.Button` | button (button)           | `html.Button('Click Me', id='button')`   | <button class="btn">Click Me</button>      |
+| `html.Label`  | label for form elements   | `html.Label('Label Text')`               | <label>Label Text</label>                  |
+| `html.Input`  | input field               | `html.Input(type='text', value='input')` | <input value="input">                      |
+| `html.Ul`     | unordered list (ul)       | `html.Ul(children=[html.Li('Item 1'), html.Li('Item 2')])` | • Item 1 <br> • Item     |
+| `html.Ol`     | ordered list (ol)         | `html.Ol(children=[html.Li('Item 1'), html.Li('Item 2')])` | 1. Item 1 <br> 2. Item 2 |
+| `html.Li`     | list item (li)            | `html.Li('List Item')`                   | • List Item     |
 
 <div class="protip" markdown="1">
 For a comprehensive list of available Dash HTML components, check the <a href="https://dash.plotly.com/dash-html-components#full-elements-reference" target="_blank">official Dash documentation</a> under the section **Open Source Component Libraries** → **Dash HTML Components**. This resource provides detailed information and examples to help you effectively use these components in your applications.
@@ -312,7 +312,7 @@ if __name__ == '__main__':
     app.run(debug=True)
 ```
 
-<details markdown="1" class="mb"><summary class="bc-template"> What the code does? </summary>
+<details class="l-frame" markdown="1"><summary class="c-header"><b><i>What the script does?</i></b></summary>
 
 This code creates a Main Heading followed by 3 styled Sections in the app layout:
 * **Main Heading:** Centered and styled with a specific color.
@@ -391,6 +391,10 @@ First, create an external CSS file (e.g., `assets/custom_styles.css`):
 }
 ```
 
+<div class="warning" markdown="1">
+When defining CSS classes in the external CSS file, remember that class names must be **prefixed with a dot**. For example, use `.container` instead of `container`. Then assign this class to the `className` property of the selected HTML component to apply the desired styles.
+</div>
+
 Then, update your Dash app to use the class names:
 
 ```python
@@ -421,14 +425,124 @@ if __name__ == '__main__':
 ```
 ***What changed:*** *Styles definitions are moved to an external CSS file. HTML components are assigned* `className` *property instead of* `style`*, making the code cleaner and styles easier to manage.*
 
+
+## DCC (core) components
+
+The `dcc` (Dash Core Components) module in Dash provides a variety of higher-level components for creating interactive and data-driven applications. These components include graphs, dropdowns, radio buttons, sliders and more, enabling rich user interactions within your Dash application.
+
+<div class="note" markdown="1">
+Each Dash Core Component is designed to **facilitate user interactions and dynamic data visualization**. For example, a `dropdown` component allows users to select from a list of options, while a `graph` component displays data visually with the ability to zoom in/out.
+</div>
+
+**Commonly used DCC components**
+
+| component      | description                         | example instance                         | rendering |
+|----------------|-------------------------------------|------------------------------------------|-----------|
+| `dcc.Graph`    | plots interactive graphs            | `dcc.Graph(id='example-graph')`          |  |
+| `dcc.Markdown` | renders Markdown text               | `dcc.Markdown('**Bold Text**')`          | **Bold Text** |
+| `dcc.Dropdown` | dropdown menu for selecting options | `dcc.Dropdown(options=[{'label': 'A', 'value': 'a'}])` |  |
+| `dcc.Input`    | input box for text input            | `dcc.Input(id='input-box', type='text')` | <input type="text" id="input-box" /> |
+| `dcc.Slider`   | slider for selecting numeric value  | `dcc.Slider(min=0, max=10, step=1, value=5)` |  |
+| `dcc.RangeSlider` | slider for selecting numeric range | `dcc.RangeSlider(min=0, max=10, step=1, value=[3, 7])` |  |
+| `dcc.Checklist`   | checklist for multiple selections  | `dcc.Checklist(options=[{'label': 'A', 'value': 'a'}])`  |  |
+| `dcc.RadioItems`  | radio buttons for single selection | `dcc.RadioItems(options=[{'label': 'A', 'value': 'a'}])` |  |
+| `dcc.DatePickerSingle` | single date picker            | `dcc.DatePickerSingle(id='date-picker')`                 |  |
+| `dcc.DatePickerRange`  | range date picker             | `dcc.DatePickerRange(id='date-picker-range')`            |  |
+
+<div class="protip" markdown="1">
+For a comprehensive list of available Dash Core Components, check the <a href="https://dash.plotly.com/dash-core-components" target="_blank">official Dash documentation</a> under the section Open Source Component Libraries → Dash Core Components. This resource provides detailed information and examples to help you effectively use these components in your applications.
+</div>
+
+### *DCC component properties*
+
+<div class="note" markdown="1">
+Dash Core Components can have the same properties (`style`, `className`, `id`) as HTML components *(see the [HTML component properties](#html-component-properties) section)*. These properties allow you to style and identify components within your application.
+</div>
+
 <div class="warning" markdown="1">
-When defining CSS classes in the external CSS file, remember that class names must be **prefixed with a dot**. For example, use `.container` instead of `container`. Then assign this class to the `className` property of the selected HTML component to apply the desired styles.
+Not all Dash Core Components have a `style` property available, such as **dcc.Slider**. However, all components should have a `className` property, allowing you to style them by defining the corresponding CSS class in an external stylesheet. This ensures you can still apply custom styles even when the style property is not supported.
+</div>
+
+Dash Core Components have many more properties specific to each component compared to HTML components. These properties enable functionalities such as specifying `options` for dropdowns or checklists, setting `min` and `max` boundaries for sliders, and using the `value` property to store the currently selected value. Other useful properties include:
+* `disabled` : Prevents the selection from being changed.
+* `persistence` : Keeps selected values even after a page refresh.
+* `placeholder` : Provides a hint to the user when nothing is selected.
+
+<div class="protip" markdown="1">
+For a comprehensive list of properties available for each DCC (core) component, it is recommended to review the dedicated documentation page. For example, see <a href="https://dash.plotly.com/dash-core-components/dropdown#dropdown-properties" target="_blank">Dropdown Properties</a>.
+</div>
+
+### <button class="btn example">HTML elements in a Dash app</button>
+
+This example demonstrates the minimal use of various DCC (core)) components with their properties in the Dash app layout, showcasing how these components can be combined effectively for practical applications.
+
+```python
+from dash import Dash, dcc, html
+
+app = Dash(__name__)
+
+spacing_style = {'padding': '5px', 'marginTop': '20px', 'marginBottom': '20px'}
+
+app.layout = [
+
+    dcc.Markdown('''
+        ### Dash Core Components Example
+        Use Markdown to add *formatted* **text** easily.
+    ''', style={'textAlign': 'center'}),
+
+    dcc.Dropdown(id='dropdown', style={'width':'30%'},
+        options=[
+            {'label': 'Option 1', 'value': '1'},
+            {'label': 'Option 2', 'value': '2'},
+            {'label': 'Option 3', 'value': '3'}
+        ],
+        value='1'
+    ),
+
+    dcc.Checklist(id='checklist', style=spacing_style,
+        options=[
+            {'label': 'Check Item 1', 'value': '1'},
+            {'label': 'Check Item 2', 'value': '2'}
+        ],
+        value=['1', '2']
+    ),
+
+    dcc.Slider(id='slider', min=0, max=10, step=1, value=5),                    # Note: the Slider has no 'style' property, define className instead
+
+    dcc.Graph(id='example-graph',
+        figure={
+            'layout': {'title': 'Placeholder Graph'}
+        }
+    ),
+]
+
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+
+<details class="l-frame" markdown="1"><summary class="c-header"><b><i>What the script does?</i></b></summary>
+
+This example creates a Dash app with various Dash Core Components in the app layout:
+* **Markdown:** Displays formatted text.
+* **Dropdown Menu:** Allows the selection of an option.
+* **Checklist:** Enables multiple selections.
+* **Slider:** Allows selection of a numeric value.
+* **Graph Placeholder:** A placeholder for future graph data.
+
+Finally, the app is deployed on a local Python server with `app.run(debug=True)` when the script is run directly.
+</details>
+
+![python-dash-app-html-components]({{ images_path }}/dash-app-core-components.png)
+
+<div class="warning" markdown="1">
+In the current state, the Dash Core Components are implemented with predefined values and options that can be changed by the user. However, they are not linked to any functionality or interactivity. To create interactive responses to changes in the selected values of these components, you need to implement callbacks. <base class="mt">
+<button class="btn required mr"></button> Refer to the [Callbacks section](#Callbacks) to learn more about how to link components and add interactivity to your Dash application.
 </div>
 
 <!--
-## Core components
-
 ### <button class="btn example">Inputs and Outputs</button>
+
+
 
 ## Graph components
 
