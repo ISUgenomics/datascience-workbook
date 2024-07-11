@@ -215,7 +215,7 @@ These components are integrated into the layout of a Dash application to create 
 |`callback` | Links inputs and outputs to create interactivity.        | `@app.callback(Output('graph', 'figure'), [Input('dropdown', 'value')])` | Updates the graph based on the dropdown selection. |
 
 
-## **HTML components**
+# HTML components
 
 The `html` module in Dash provides a suite of components that mirror standard HTML elements, enabling you to structure the layout of your Dash application. These components include headings, paragraphs, divs, etc. They allow you to create a well-organized and visually appealing interface.
 
@@ -245,7 +245,7 @@ Each Dash HTML component **formats and displays text** or other content in a spe
 For a comprehensive list of available Dash HTML components, check the <a href="https://dash.plotly.com/dash-html-components#full-elements-reference" target="_blank">official Dash documentation</a> under the section **Open Source Component Libraries** → **Dash HTML Components**. This resource provides detailed information and examples to help you effectively use these components in your applications.
 </div>
 
-### *HTML component properties*
+## *HTML component properties*
 
 When using Dash HTML components, you can customize them with <a href="https://dash.plotly.com/dash-html-components#html-component-properties" target="_blank">various properties</a>.
 
@@ -426,7 +426,7 @@ if __name__ == '__main__':
 ***What changed:*** *Styles definitions are moved to an external CSS file. HTML components are assigned* `className` *property instead of* `style`*, making the code cleaner and styles easier to manage.*
 
 
-## DCC (core) components
+# DCC (core) components
 
 The `dcc` (Dash Core Components) module in Dash provides a variety of higher-level components for creating interactive and data-driven applications. These components include graphs, dropdowns, radio buttons, sliders and more, enabling rich user interactions within your Dash application.
 
@@ -453,14 +453,14 @@ Each Dash Core Component is designed to **facilitate user interactions and dynam
 For a comprehensive list of available Dash Core Components, check the <a href="https://dash.plotly.com/dash-core-components" target="_blank">official Dash documentation</a> under the section Open Source Component Libraries → Dash Core Components. This resource provides detailed information and examples to help you effectively use these components in your applications.
 </div>
 
-### *DCC component properties*
+## *DCC component properties*
 
 <div class="note" markdown="1">
 Dash Core Components can have the same properties (`style`, `className`, `id`) as HTML components *(see the [HTML component properties](#html-component-properties) section)*. These properties allow you to style and identify components within your application.
 </div>
 
 <div class="warning" markdown="1">
-Not all Dash Core Components have a `style` property available, such as **dcc.Slider**. However, all components should have a `className` property, allowing you to style them by defining the corresponding CSS class in an external stylesheet. This ensures you can still apply custom styles even when the style property is not supported.
+Not all Dash Core Components have a `style` property available, such as **dcc.Slider**. However, all components should have a `className` property, allowing you to style them by defining the corresponding CSS class in an external stylesheet *(see the [Using className for common styles](#using-classname-for-common-styles) section)*. This ensures you can still apply custom styles even when the style property is not supported.
 </div>
 
 Dash Core Components have many more properties specific to each component compared to HTML components. These properties enable functionalities such as specifying `options` for dropdowns or checklists, setting `min` and `max` boundaries for sliders, and using the `value` property to store the currently selected value. Other useful properties include:
@@ -472,7 +472,7 @@ Dash Core Components have many more properties specific to each component compar
 For a comprehensive list of properties available for each DCC (core) component, it is recommended to review the dedicated documentation page. For example, see <a href="https://dash.plotly.com/dash-core-components/dropdown#dropdown-properties" target="_blank">Dropdown Properties</a>.
 </div>
 
-### <button class="btn example">HTML elements in a Dash app</button>
+### <button class="btn example">DCC elements in a Dash app</button>
 
 This example demonstrates the minimal use of various DCC (core)) components with their properties in the Dash app layout, showcasing how these components can be combined effectively for practical applications.
 
@@ -507,7 +507,7 @@ app.layout = [
         value=['1', '2']
     ),
 
-    dcc.Slider(id='slider', min=0, max=10, step=1, value=5),                    # Note: the Slider has no 'style' property, define className instead
+    dcc.Slider(id='slider', min=0, max=10, step=1, value=5),    # Note: the Slider has no 'style' property, define className instead
 
     dcc.Graph(id='example-graph',
         figure={
@@ -532,12 +532,14 @@ This example creates a Dash app with various Dash Core Components in the app lay
 Finally, the app is deployed on a local Python server with `app.run(debug=True)` when the script is run directly.
 </details>
 
-![python-dash-app-html-components]({{ images_path }}/dash-app-core-components.png)
+![python-dash-app-html-components]({{ images_path }}/dash-app-core-components.gif)
 
 <div class="warning" markdown="1">
 In the current state, the Dash Core Components are implemented with predefined values and options that can be changed by the user. However, they are not linked to any functionality or interactivity. To create interactive responses to changes in the selected values of these components, you need to implement callbacks. <base class="mt">
 <button class="btn required mr"></button> Refer to the [Callbacks section](#Callbacks) to learn more about how to link components and add interactivity to your Dash application.
 </div>
+
+
 
 <!--
 ### <button class="btn example">Inputs and Outputs</button>
