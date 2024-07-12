@@ -536,15 +536,121 @@ Finally, the app is deployed on a local Python server with `app.run(debug=True)`
 
 <div class="warning" markdown="1">
 In the current state, the Dash Core Components are implemented with predefined values and options that can be changed by the user. However, they are not linked to any functionality or interactivity. To create interactive responses to changes in the selected values of these components, you need to implement callbacks. <base class="mt">
-<button class="btn required mr"></button> Refer to the [Callbacks section](#Callbacks) to learn more about how to link components and add interactivity to your Dash application.
+<button class="btn more mr"></button> Refer to the [Callbacks section](#Callbacks) to learn more about how to link components and add interactivity to your Dash application.
 </div>
+
+# Dash Dependencies: Input, Output, State
+
+Dash dependencies, such as `Input`, `Output` and `State`, are essential for creating interactivity within your Dash applications. They allow components to respond dynamically to user input and other component states.
+
+<div class="note" markdown="1">
+`Input` captures user inputs. <br>
+`Output` defines which component properties to update. <br>
+`State` allows access to the current state of a component without triggering a callback.
+</div>
+
+| dependency | description | example instance | explanation |
+|------------|-------------|------------------|-------------|
+| `Inputs`   | captures user input from components like dropdowns, sliders, etc.          | `Input('dropdown', 'value')` | Monitors the selected value of the dropdown.    |
+| `Output`   | specifies which property of a component will be updated by the callback    | `Output('graph', 'figure')`  | Updates the figure property of the graph.    |
+| `State`    | retrieves the current state of a component without triggering the callback | `State('input-box', 'value')`| Reads the value of the input box without triggering a callback. |
+
+The syntax for `Input`, `Output` and `State` is similar and specifies the **component id** and the **property** to monitor or update.
+* `component_id` - the `id` attribute of the Dash component
+* `property` - the property of the component to monitor for `Input` or update for `Output`
+
+```python
+# Syntax for Input
+Input(component_id, property)
+
+# Syntax for Output
+Output(component_id, property)
+```
+
+<div class="protip" markdown="1">
+For a comprehensive list of available properties and methods for Dash dependencies, check the <a href="https://dash.plotly.com/basic-callbacks" target="_blank">official Dash documentation</a> under the Callbacks section.
+</div>
+
+<div class="note" markdown="1">
+Dash dependencies enable dynamic interactivity within your app. For instance, `Input` can trigger changes, `Output` specifies the target component for updates and `State` can maintain component values without causing callbacks.
+</div>
+
+<div class="warning" markdown="1">
+Be mindful that components using `State` will not trigger a callback on their own. They only provide their current state to the callback function when it is triggered by an `Input`.
+</div>
+
+
+## Callbacks
+
+`Inputs`, `Outputs` and `States` components are used exclusively within **callbacks** in Dash applications. They define the interactivity by specifying which component properties trigger the callbacks (`Inputs`) and which properties are updated by the callbacks (`Outputs`). This structure allows for dynamic updates and interactivity in your Dash app.
+
+<div class="note" markdown="1">
+Callbacks in Dash are **Python functions** that are **automatically called when a specified input changes**, allowing components in the app to interact dynamically. By using callbacks, you can achieve real-time updates, such as updating graphs, changing displayed text or manipulating any component properties based on user input. This interactivity makes Dash applications highly responsive and capable of handling complex user interactions.
+</div>
+
+**The minimal example: callback with Inputs and Outputs**
+
+```python
+@app.callback(
+    Output('output-div', 'children'),
+    Input('input-box', 'value')
+)
+def update_output(value):
+    return f'You entered: {value}'
+```
+In this example, the **callback function** `update_output` is triggered by changes to the `input-box` *value* (Input) and updates the `output-div` content (i.e. Output *children* property).
+* `Input('input-box', 'value')` : Monitors the `value` property of the component with `id` *input-box*.
+* `Output('output-div', 'children')` : Updates the `children` property of the component with `id` *output-div*.
+
+These specifications ensure the callback function is triggered by the specified `Input` and updates the specified `Output`.
+
+<div class="warning" markdown="1">
+This **callback function** assumes that the `Input` and `Output` components with the same `id` attributes are already created in the app's layout. Ensure that the components specified in the Input and Output decorators exist within the `app.layout` to avoid errors. For example, *input-box* and *output-div* must be defined as `id` of some components within the layout for the callback to function correctly.
+</div>
+
+*Here is the minimal app that uses this callback:*
+
+```python
+from dash import Dash, dcc, html, Input, Output
+
+# Create Dash app instance
+app = Dash(__name__)
+
+# Define app layout
+app.layout = html.Div([
+    dcc.Input(id='input-box', type='text', value='initial value'),
+    html.Div(id='output-div')
+])
+
+# Define callback function
+@app.callback(
+    Output('output-div', 'children'),
+    Input('input-box', 'value')
+)
+def update_output(value):
+    return f'You entered: {value}'
+
+# Deploy app on the local Python server
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+
+<details class="l-frame" markdown="1"><summary class="c-header"><b><i>What the script does?</i></b></summary>
+
+This minimal Dash app includes an input box (`dcc.Input`) and a div element (`html.div`), examples of [Dash core components](#) and [HTML components](#), respectively. The callback function updates the div's content to display the text entered in the input box. This example demonstrates the basic use of Input and Output to create interactivity within the app.
+</details>
+
+Note that the `app.layout` comes first, defining all static components of the application. This is where you set up the structure and initial state of your app, defining all components with their `id` attribute and other properties. Following the layout, the **callbacks section** is defined. This section includes functions that handle the interactivity of the app by updating component properties based on user inputs/actions.
+
+<div class="protip" markdown="1">
+The separation of the layout and callbacks ensures a clear structure and organization of the app.
+</div>
+
+![python-dash-app-callback-dependencies]({{ images_path }}/dash-app-callback-dependencies.gif)
 
 
 
 <!--
-### <button class="btn example">Inputs and Outputs</button>
-
-
 
 ## Graph components
 
