@@ -140,33 +140,122 @@ from dash import Dash, html, dcc, callback, Output, Input
 According to the latest Dash documentation, importing submodules directly with `from dash import ...` is sufficient. This import statement brings in the necessary components directly, making the code cleaner and more efficient. No need for an additional `import dash` before using this statement.
 </div>
 
-<div class="more" markdown="1">
-…about the [Dash components](#dash-components) in the section below, including:
-* [Core components](#core-components)
-* [HTML components](#html-components)
-* [Graph components](#graph-components)
+# Dash application
+
+<div class="note" markdown="1">
+A Dash app is a web application framework designed for building interactive data visualizations using Python. It typically includes sections for importing libraries, defining global variables/settings, setting up the layout with `app.layout`, implementing interactivity through `callbacks` and deploying the server to run the app. This structure allows users to build dynamic dashboards that respond to user inputs in real time.
 </div>
 
+These 5 sections listed below, work together to create a functional and interactive Dash app, enabling the visualization and exploration of data in a dynamic way.
 
-## Minimal Dash application
+**1. Imports**
+
+Import necessary libraries like Dash, dash core components, dash html components and Plotly. <br>
+*(see section [Dash import](#dash-import))*
 
 ```python
-# Import Dash components
-from dash import Dash, html, dcc
+from dash import Dash, dcc, html, Input, Output
+import plotly.express as px                     # optional, useful if you want to use Plotly Express graphs
+```
 
-# Create Dash app instance
-app = Dash()
+**2. Global variables or settings**
 
-# Define app layout
+Define any global variables or settings needed for the app, such as datasets or configuration options or common inline styles.
+
+```python
+df = px.data.tips()                                                             # dataframe from example dataset
+fruits = ["Apples", "Oranges", "Bananas", "Grapes"]                             # custom data array
+spacing_style = {'padding': '5px', 'marginTop': '20px', 'marginBottom': '20px'} # some CSS style settings
+```
+
+**3. Layout of the application**
+
+Define the layout of the app using `app.layout = []` statement, which includes all static components and the structure of the interface. <br>
+*(see section [Dash components](#dash-components)*
+
+```python
+app = Dash(__name__)
+
 app.layout = [
-    html.H1(children='title of Dash app', style={'textAlign':'center'}),
-    dcc.Graph(id='bar-graph')
+    dcc.Dropdown(id='input-box', options=[{'label': fruit, 'value': fruit} for fruit in fruits],
+        value=fruits[0]),
+    html.Div(id='output-div', style="spacing_style"),
+    dcc.Graph(id='example-graph')
 ]
+```
 
-# Deploy app on the local Python server
+**4. Callbacks**
+
+Implement callback functions that define the interactivity of the app. These functions specify how inputs (user interactions) update the outputs (displayed components). <br>
+*(see section [Dash dependencies and callbacks](#dash-dependencies-input-output-state))*
+
+```python
+@app.callback(
+    Output('output-div', 'children'),
+    Input('input-box', 'value')
+)
+def update_output(value):
+    return f'You selected: {value}'
+```
+
+**5. App Deployment**
+
+Run the app on a local server to make it accessible via a web browser. <br>
+
+```python
 if __name__ == '__main__':
     app.run(debug=True)
 ```
+
+**6. Use the app**
+
+All the sections 1-5 should be saved together in a file with a `.py` extension, for example, `dash_app.py`. To run the app, open a terminal and execute the command:
+```bash
+python dash_app.py
+```
+
+Then, your app can be explored in any web browser at <a href="http://127.0.0.1:8050" target="_blank">http://127.0.0.1:8050</a>.
+
+<em class="c-alert bold">Try the [Minimal Dash App](#minimal-dash-app) example.</em>
+
+
+## Minimal Dash App
+
+1. **Open Terminal:** Navigate to your desired directory.
+
+2. **Create File:** Create a new Python file `dash_app.py`.
+```bash
+touch dash_app.py
+```
+
+3. **Edit File:** Open the file in a text editor and copy-paste the following code snippet:
+
+  ```python
+  # Import Dash components
+  from dash import Dash, html, dcc
+
+  # Create Dash app instance
+  app = Dash()
+
+  # Define app layout
+  app.layout = [
+      html.H1(children='title of Dash app', style={'textAlign':'center'}),
+      dcc.Graph(id='bar-graph')
+  ]
+
+  # Define app callbacks (if any)
+
+  # Deploy app on the local Python server
+  if __name__ == '__main__':
+      app.run(debug=True)
+  ```
+
+4. **Run the App:** Execute the following command in the terminal:
+```bash
+python dash_app.py
+```
+
+5. **Explore:** Open your web browser and navigate to <a href="http://127.0.0.1:8050" target="_blank">http://127.0.0.1:8050</a> to see your app.
 
 <details class="l-frame" markdown="1"><summary class="c-header"><b><i>What the script does?</i></b></summary>
 
@@ -179,25 +268,27 @@ The provided code:
 Finally, the app is deployed on a local Python server with `app.run(debug=True)` when the script is run directly.
 </details>
 
-**To run the app**, copy the above code into a new file named `dash_app.py` and execute the following command in your terminal or Jupyter notebook cell:
-```bash
-python dash_app.py
-```
-Then go to the <a href="http://127.0.0.1:8050/" target="_blank">http://127.0.0.1:8050/</a> address in your web browser.
-
 ![python-dash-minimal-app]({{ images_path }}/dash-minimal-app.png)
 
 <div class="protip" markdown="1">
 The `app.layout` in a Dash application is highly customizable to fit your needs. It can include a variety of [dash components](#dash-components) such as multiple graphs, tables, sliders, dropdowns and other widgets to facilitate interactive communication with users. This flexibility allows you to build complex, data-driven dashboards that can respond to user inputs in real-time, providing a dynamic and engaging user experience.
 </div>
 
+<div class="more" markdown="1">
+…about the [Dash components](#dash-components) in the section below, including:
+* [HTML components](#html-components)
+* [Core components](#core-components)
+  * [Graph components](#graph-components)
+</div>
+
+
 # Dash components
 
 Dash components are the building blocks of Dash application layout, enabling you to create interactive, web-based data visualizations using Python. Major categories of Dash components include:
 * **[HTML components](#html-components)** (`html`): Basic HTML elements like headings, paragraphs, divs, etc.
 * **[Core Components](#core-components)** (`dcc`): Higher-level components like graphs, dropdowns, sliders, etc.
-* **[Dependencies](#)** : `Input`, `Output` and `State` components manage user input, display output, and track component state in Dash callbacks, enabling dynamic interactivity in the application.
-* **[Callbacks](#)** : Functions that enable interactivity by linking inputs and outputs.
+* **[Dependencies](#dash-dependencies-input-output-state)** : `Input`, `Output` and `State` components manage user input, display output, and track component state in Dash callbacks, enabling dynamic interactivity in the application.
+    * **[Callbacks](#callbacks)** : Functions that enable interactivity by linking inputs and outputs.
 
 These components are integrated into the layout of a Dash application to create a user interface that responds dynamically to user interactions. *For example, a dropdown component can store options that filter or switch data on a plot interactively when selected by a user.*
 
@@ -540,7 +631,7 @@ In the current state, the Dash Core Components are implemented with predefined v
 </div>
 
 
-## Graph components
+## **Graph components**
 
 The `dcc.Graph` component in Dash is distinct from other Dash Core Components (dcc) widgets. While widgets like dropdowns, sliders, and checklists are typically used to update graphs, the `dcc.Graph` component itself is used to display data visually. These relationships between widgets and graphs bring interactivity, allowing users to dynamically change the data displayed in the graph.
 
@@ -549,6 +640,14 @@ Widgets such as dropdowns, sliders, and checklists are connected to the graph vi
 </div>
 
 ### *dcc.Graph vs. Plotly Graphs*
+
+<div class="note" markdown="1">
+The **dcc.Graph** component in Dash is a versatile tool for displaying interactive graphs and visualizations. Unlike other Dash Core Components that typically serve as inputs to update graphs, `dcc.Graph` serves as the display area for visual data. By linking `dcc.Graph` with other widgets like dropdowns and sliders, you can create highly interactive and dynamic visualizations.
+</div>
+
+<div class="note" markdown="1">
+**Plotly graphs**, which can be rendered within `dcc.Graph`, offer extensive customization options. Using either **Plotly Express** (e.g., `px.bar`) or **Plotly Graph Objects** (e.g., `go.Bar`), you can create a wide variety of graph types and customize them to fit your needs. This section explores how `dcc.Graph` can be used in conjunction with these Plotly tools to build powerful data visualizations.
+</div>
 
 |                 | dcc.Graph | Plotly graph |
 |-----------------|-----------|--------------|
@@ -591,7 +690,9 @@ The app is deployed on a local Python server with `app.run(debug=True)` when the
 The `dcc.Graph` component holds the Plotly graph, and additional widgets like the slider can be used to add interactivity to the graph through [Dash callbacks](#callbacks). This setup allows for a flexible and dynamic user experience.
 </div>
 
-*This updated Dash app includes a callback to demonstrate interactivity using the dropdown. The color of the bar chart will change for the fruit selected in the dropdown.*
+Instead of directly defining the `figure` property in the `dcc.Graph`, you can provide only its `id` property and then dynamically insert the selected plot type in the [callback](#callback). This makes your `dcc.Graph` placeholder flexible, allowing it to be interactively changed or updated based on user activity. <em class="footnote">See the example below.</em>
+
+*This updated Dash app includes a [callback](#callback) to demonstrate interactivity using the dropdown. The color of the bar chart will change for the fruit selected in the dropdown.*
 
 ```python
 from dash import Dash, dcc, html, Input, Output
@@ -629,7 +730,8 @@ if __name__ == '__main__':
 <details class="l-frame" markdown="1"><summary class="c-header"><b><i>What the script does?</i></b></summary>
 
 This Dash app demonstrates the use of the `dcc.Graph` component to display a bar chart created with Plotly Express wrapper. The app consists of a **bar chart** that visualizes data on different types of fruits and their quantities. The selected fruit is highlighted in blue.
-* **Layout:** The app includes a `dcc.Dropdown` above the dcc.Graph to select a fruit.
+* **Layout:** The app includes a `dcc.Dropdown` above the `dcc.Graph` to select a fruit.
+    * By only specifying the `id` property in the `dcc.Graph` component, you can dynamically set the `figure` property in the `Output` of the callback function. This makes your graph placeholder versatile, allowing it to be updated interactively based on user selections or other activities.
 * **Callback:** The *update_graph* function uses `px.bar` to change the color of the bar for the selected fruit to blue and the rest to grey.
     * `category_orders` : The *category_orders* parameter ensures the bars are displayed in the order of the fruits list, maintaining the original order.
     * `color_discrete_map` : Maps the colors to ensure the correct color assignment to the selected and non-selected fruits.
@@ -643,6 +745,94 @@ To maintain the original order of fruits in the plot, you need to explicitly set
 </div>
 
 ![python-dash-app-callback-interactivity]({{ images_path }}/dash-app-callback-interactivity.gif)
+
+### *Graph properties*
+
+Graph properties in Dash and Plotly are essential for customizing and controlling the appearance and behavior of your visualizations. The `dcc.Graph` component allows you to embed Plotly graphs as value of its `figure` property, which can be dynamically updated based on user interactions. Key properties of **dcc.Graph** include `id`, `figure`, `config`, `style` and `className`.
+
+Similarly, Plotly graphs created with **Plotly Express** (`px.`) or **Plotly Graph Objects** (`go.`) offer numerous properties such as `data_frame`, `x`, `y`, `color`, `size`, `title`, `labels` and `template`. These properties help tailor your graphs to fit specific needs and enhance interactivity and user experience.
+
+| dcc.Graph                 | description                          |
+|---------------------------|--------------------------------------|
+| `id`                      | Unique identifier for the component. |
+| `figure`                  | The figure property holds the Plotly figure (a dictionary). |
+| `config`                  | Dictionary to configure the appearance and behavior of the graph (e.g., displayModeBar, responsive). |
+| `style`                   | CSS styling for the graph component. |
+| `className`               | CSS class name for applying styles.  |
+
+<div class="protip" markdown="1">
+Both methods: **Plotly Express** and **Plotly Graph Objects** can create similar visualizations, but Plotly Express is more concise and user-friendly for quick plots, while Plotly Graph Objects offer more detailed customization and flexibility.
+</div>
+
+| Plotly Express (px)       | description                          |
+|---------------------------|--------------------------------------|
+| `data_frame`              | Data frame or array to visualize.    |
+| `x`                       | Column name for x-axis.              |
+| `y`                       | Column name for y-axis.              |
+| `color`                   | Column name for color coding.        |
+| `size`                    | Column name for sizing markers (e.g., scatter plots). |
+| `title`                   | Title of the graph.                  |
+| `labels`                  | Dictionary for axis labels.          |
+| `template`                | Layout template for the graph (e.g., 'plotly_dark').  |
+
+<button class="btn example"></button>
+
+*PX properties are designed for quick and easy creation of standard plots with minimal code.*
+
+```python
+import plotly.express as px
+
+df = px.data.tips()
+fig = px.bar(df, x='day', y='total_bill', color='sex', title='Total Bill per Day')
+```
+
+| Plotly Graph Objects (go) | description                          |
+|---------------------------|--------------------------------------|
+| `data`                    | List of traces (e.g., go.Bar, go.Scatter).            |
+| `layout`                  | Dictionary for layout settings (e.g., title, xaxis, yaxis). |
+| `title`                   | Title of the graph. |
+| `xaxis`                   | Dictionary for x-axis settings (e.g., title, range).  |
+| `yaxis`                   | Dictionary for y-axis settings (e.g., title, range).  |
+
+<button class="btn example"></button>
+
+*GO properties provide more control and customization for complex plots with detailed specifications.*
+
+```python
+import plotly.graph_objects as go
+
+fig = go.Figure(data=[go.Bar(x=['A', 'B', 'C'], y=[1, 3, 2])])
+fig.update_layout(title='Sample Bar Chart', xaxis_title='Category', yaxis_title='Value')
+```
+
+<div class="warning" markdown="1">
+You cannot directly use properties like `title`, `xaxis_title` and `yaxis_title` within `go.Bar`. Instead, you set these properties using the `update_layout()` method.
+</div>
+
+<div class="warning" markdown="1">
+In Plotly, `go.Bar` needs to be embedded within a `go.Figure` to define the overall layout and combine multiple traces. Combining traces and layouts in `go.Figure` enables the creation of complex, interactive visualizations. This structure allows for comprehensive customization and management of graph elements.
+
+```python
+import plotly.graph_objects as go
+
+# Create a bar chart using go.Bar
+trace = go.Bar(x=['A', 'B', 'C'], y=[1, 3, 2])
+
+# Embed the trace in go.Figure
+fig = go.Figure(data=[trace])
+
+# Update the layout for titles
+fig.update_layout(
+    title='Sample Bar Chart',
+    xaxis_title='Category',
+    yaxis_title='Value'
+)
+
+# Display the figure
+fig.show()
+```
+</div>
+
 
 # Dash Dependencies: Input, Output, State
 
@@ -756,16 +946,16 @@ The separation of the layout and callbacks in the app's code ensures a clear str
 
 
 <!--
+# Dash deployment
 
-# Layout and Callbacks
+## Deploying locally
 
-## Defining the layout
+### <button class="btn example">Running a local server</button>
 
-### <button class="btn example">Simple layout</button>
+## Deploying on the cloud
 
-## Creating interactive callbacks
+### <button class="btn example">Deploying on Heroku</button>
 
-### <button class="btn example">Interactive callback</button>
 
 # Dash styling
 
@@ -796,14 +986,4 @@ The separation of the layout and callbacks in the app's code ensures a clear str
 ## Multi-page applications
 
 ### <button class="btn example">Navigation between pages</button>
-
-# Dash deployment
-
-## Deploying locally
-
-### <button class="btn example">Running a local server</button>
-
-## Deploying on the cloud
-
-### <button class="btn example">Deploying on Heroku</button>
 -->
