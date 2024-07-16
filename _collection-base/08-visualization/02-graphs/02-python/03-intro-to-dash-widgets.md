@@ -630,7 +630,7 @@ Finally, the app is deployed on a local Python server with `app.run(debug=True)`
 
 <div class="warning" markdown="1">
 In the current state, the Dash Core Components are implemented with predefined values and options that can be changed by the user. However, they are not linked to any functionality or interactivity. To create interactive responses to changes in the selected values of these components, you need to implement callbacks. <base class="mt">
-<button class="btn more mr"></button> Refer to the [Callbacks section](#callbacks) to learn more about how to link components and add interactivity to your Dash application.
+<button class="btn more mr"></button> Refer to the [Callbacks section](#callbacks) to learn how to link components and add interactivity to your Dash application.
 </div>
 
 
