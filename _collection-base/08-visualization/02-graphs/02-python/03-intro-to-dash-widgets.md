@@ -321,7 +321,7 @@ Each Dash HTML component **formats and displays text** or other content in a spe
 
 | component     | description               | example instance                         | rendering |
 |---------------|---------------------------|------------------------------------------|-----------|
-| `html.H1`     | main heading (h1)         | `html.H1('Title of Dash App')`           | <span style="font-size:28px; font-weight: bold;">Title of Dash App</span>    |
+| `html.H1`     | main heading (h1)         | `html.H1('App Title')`           | <span style="font-size:28px; font-weight: bold;">App Title</span>    |
 | `html.H2`     | secondary heading (h2)    | `html.H2('Subtitle')`                    | <span style="font-size:24px;">Subtitle</span>                  |
 | `html.Div`    | division or section (div) | `html.Div(children='content goes here')` | <span style="border:1px solid black; padding: 5px;">content goes here</span> |
 | `html.P`      | paragraph (p)             | `html.P('This is a paragraph.')`         | This is a paragraph.         |
@@ -532,16 +532,16 @@ Each Dash Core Component is designed to **facilitate user interactions and dynam
 
 | component      | description                         | example instance                         | rendering |
 |----------------|-------------------------------------|------------------------------------------|-----------|
-| `dcc.Graph`    | plots interactive graphs            | `dcc.Graph(id='example-graph')`          |  |
+| `dcc.Graph`    | plots interactive graphs            | `dcc.Graph(id='example-graph')`          | <img src="{{images_path}}/dash-dcc-graph.png"> |
 | `dcc.Markdown` | renders Markdown text               | `dcc.Markdown('**Bold Text**')`          | **Bold Text** |
-| `dcc.Dropdown` | dropdown menu for selecting options | `dcc.Dropdown(options=[{'label': 'A', 'value': 'a'}])` |  |
+| `dcc.Dropdown` | dropdown menu for selecting options | `dcc.Dropdown(options=[{'label': 'A', 'value': 'a'}])` | <img src="{{images_path}}/dash-dcc-dropdown.png"> |
 | `dcc.Input`    | input box for text input            | `dcc.Input(id='input-box', type='text')` | <input type="text" id="input-box" /> |
-| `dcc.Slider`   | slider for selecting numeric value  | `dcc.Slider(min=0, max=10, step=1, value=5)` |  |
-| `dcc.RangeSlider` | slider for selecting numeric range | `dcc.RangeSlider(min=0, max=10, step=1, value=[3, 7])` |  |
-| `dcc.Checklist`   | checklist for multiple selections  | `dcc.Checklist(options=[{'label': 'A', 'value': 'a'}])`  |  |
-| `dcc.RadioItems`  | radio buttons for single selection | `dcc.RadioItems(options=[{'label': 'A', 'value': 'a'}])` |  |
-| `dcc.DatePickerSingle` | single date picker            | `dcc.DatePickerSingle(id='date-picker')`                 |  |
-| `dcc.DatePickerRange`  | range date picker             | `dcc.DatePickerRange(id='date-picker-range')`            |  |
+| `dcc.Slider`   | slider for selecting numeric value  | `dcc.Slider(min=0, max=10, step=1, value=5)` | <img src="{{images_path}}/dash-dcc-slider.png"> |
+| `dcc.RangeSlider` | slider for selecting numeric range | `dcc.RangeSlider(min=0, max=10, step=1, value=[3, 7])` | <img src="{{images_path}}/dash-dcc-rslider.png"> |
+| `dcc.Checklist`   | checklist for multiple selections  | `dcc.Checklist(options=[{'label': 'A', 'value': 'a'}])`  | <img src="{{images_path}}/dash-dcc-checklist.png"> |
+| `dcc.RadioItems`  | radio buttons for single selection | `dcc.RadioItems(options=[{'label': 'A', 'value': 'a'}])` | <img src="{{images_path}}/dash-dcc-radioitems.png"> |
+| `dcc.DatePickerSingle` | single date picker            | `dcc.DatePickerSingle(id='date-picker')`                 | <img src="{{images_path}}/dash-dcc-datesingle.png"> |
+| `dcc.DatePickerRange`  | range date picker             | `dcc.DatePickerRange(id='date-picker-range')`            | <img src="{{images_path}}/dash-dcc-dash-dcc-daterange.png"> |
 
 <div class="protip" markdown="1">
 For a comprehensive list of available Dash Core Components, check the <a href="https://dash.plotly.com/dash-core-components" target="_blank">official Dash documentation</a> under the section Open Source Component Libraries → Dash Core Components. This resource provides detailed information and examples to help you effectively use these components in your applications.
