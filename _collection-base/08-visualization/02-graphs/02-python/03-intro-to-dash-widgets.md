@@ -171,7 +171,7 @@ spacing_style = {'padding': '5px', 'marginTop': '20px', 'marginBottom': '20px'} 
 **3. Layout of the application**
 
 Define the layout of the app using `app.layout = []` statement, which includes all static components and the structure of the interface. <br>
-*(see section [Dash components](#dash-components)*
+*(see section [Dash components](#dash-components))*
 
 ```python
 app = Dash(__name__)
@@ -229,7 +229,6 @@ touch dash_app.py
 ```
 
 3. **Edit File:** Open the file in a text editor and copy-paste the following code snippet:
-
   ```python
   # Import Dash components
   from dash import Dash, html, dcc
@@ -249,6 +248,16 @@ touch dash_app.py
   if __name__ == '__main__':
       app.run(debug=True)
   ```
+  <details class="l-frame" markdown="1"><summary class="c-header"><b><i>What the script does?</i></b></summary>
+
+  *This setup creates a basic interactive web application with a title and a placeholder for a graph.*
+  The provided code:
+  * initializes a Dash application by importing elementary components (`Dash`, `html`, `dcc`),
+  * creates an **app** instance (`app = Dash()`)
+  * and defines the **layout** with a centered title (`html.H1`) and a graph object (`dcc.Graph`). The application layout is assigned to `app.layout`.
+
+  Finally, the app is deployed on a local Python server with `app.run(debug=True)` when the script is run directly.
+  </details>
 
 4. **Run the App:** Execute the following command in the terminal:
 ```bash
@@ -256,17 +265,6 @@ python dash_app.py
 ```
 
 5. **Explore:** Open your web browser and navigate to <a href="http://127.0.0.1:8050" target="_blank">http://127.0.0.1:8050</a> to see your app.
-
-<details class="l-frame" markdown="1"><summary class="c-header"><b><i>What the script does?</i></b></summary>
-
-*This setup creates a basic interactive web application with a title and a placeholder for a graph.*
-The provided code:
-* initializes a Dash application by importing elementary components (`Dash`, `html`, `dcc`),
-* creates an **app** instance (`app = Dash()`)
-* and defines the **layout** with a centered title (`html.H1`) and a graph object (`dcc.Graph`). The application layout is assigned to `app.layout`.
-
-Finally, the app is deployed on a local Python server with `app.run(debug=True)` when the script is run directly.
-</details>
 
 ![python-dash-minimal-app]({{ images_path }}/dash-minimal-app.png)
 
