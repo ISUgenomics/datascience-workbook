@@ -184,6 +184,17 @@ app.layout = [
 ]
 ```
 
+<div class="protip" markdown="1">
+The `app.layout` in a Dash application is highly customizable to fit your needs. It can include a variety of [dash components](#dash-components) such as multiple graphs, tables, sliders, dropdowns and other widgets to facilitate interactive communication with users. This flexibility allows you to build complex, data-driven dashboards that can respond to user inputs in real-time, providing a dynamic and engaging user experience.
+</div>
+
+<div class="more" markdown="1">
+…about the [Dash components](#dash-components) in the section below, including:
+* [HTML components](#html-components)
+* [Core components](#core-components)
+  * [Graph components](#graph-components)
+</div>
+
 **4. Callbacks**
 
 Implement callback functions that define the interactivity of the app. These functions specify how inputs (user interactions) update the outputs (displayed components). <br>
@@ -221,63 +232,57 @@ Then, your app can be explored in any web browser at <a href="http://127.0.0.1:8
 
 ## Minimal Dash App
 
-1. **Open Terminal:** Navigate to your desired directory.
+**1. Open Terminal:** Navigate to your desired directory.
 
-2. **Create File:** Create a new Python file `dash_app.py`.
+**2. Create File:** Create a new Python file `dash_app.py`.
+
 ```bash
 touch dash_app.py
 ```
 
-3. **Edit File:** Open the file in a text editor and copy-paste the following code snippet:
-  ```python
-  # Import Dash components
-  from dash import Dash, html, dcc
+**3. Edit File:** Open the file in a text editor and copy-paste the following code snippet:
 
-  # Create Dash app instance
-  app = Dash()
+```python
+# Import Dash components
+ from dash import Dash, html, dcc
 
-  # Define app layout
-  app.layout = [
-      html.H1(children='title of Dash app', style={'textAlign':'center'}),
-      dcc.Graph(id='bar-graph')
-  ]
+# Create Dash app instance
+app = Dash()
 
-  # Define app callbacks (if any)
+# Define app layout
+app.layout = [
+    html.H1(children='title of Dash app', style={'textAlign':'center'}),
+    dcc.Graph(id='bar-graph')
+]
 
-  # Deploy app on the local Python server
-  if __name__ == '__main__':
-      app.run(debug=True)
-  ```
-  <details class="l-frame" markdown="1"><summary class="c-header"><b><i>What the script does?</i></b></summary>
+# Define app callbacks (if any)
 
-  *This setup creates a basic interactive web application with a title and a placeholder for a graph.*
-  The provided code:
-  * initializes a Dash application by importing elementary components (`Dash`, `html`, `dcc`),
-  * creates an **app** instance (`app = Dash()`)
-  * and defines the **layout** with a centered title (`html.H1`) and a graph object (`dcc.Graph`). The application layout is assigned to `app.layout`.
+# Deploy app on the local Python server
+if __name__ == '__main__':
+    app.run(debug=True)
+```
 
-  Finally, the app is deployed on a local Python server with `app.run(debug=True)` when the script is run directly.
-  </details>
+<details class="l-frame" markdown="1"><summary class="c-header"><b><i>What the script does?</i></b></summary>
 
-4. **Run the App:** Execute the following command in the terminal:
+*This setup creates a basic interactive web application with a title and a placeholder for a graph.*
+
+The provided code:
+* initializes a Dash application by importing elementary components (`Dash`, `html`, `dcc`),
+* creates an **app** instance (`app = Dash()`)
+* and defines the **layout** with a centered title (`html.H1`) and a graph object (`dcc.Graph`). The application layout is assigned to `app.layout`.
+
+Finally, the app is deployed on a local Python server with `app.run(debug=True)` when the script is run directly.
+</details>
+
+**4. Run the App:** Execute the following command in the terminal:
+
 ```bash
 python dash_app.py
 ```
 
-5. **Explore:** Open your web browser and navigate to <a href="http://127.0.0.1:8050" target="_blank">http://127.0.0.1:8050</a> to see your app.
+**5. Explore:** Open your web browser and navigate to <a href="http://127.0.0.1:8050" target="_blank">http://127.0.0.1:8050</a> to see your app.
 
 ![python-dash-minimal-app]({{ images_path }}/dash-minimal-app.png)
-
-<div class="protip" markdown="1">
-The `app.layout` in a Dash application is highly customizable to fit your needs. It can include a variety of [dash components](#dash-components) such as multiple graphs, tables, sliders, dropdowns and other widgets to facilitate interactive communication with users. This flexibility allows you to build complex, data-driven dashboards that can respond to user inputs in real-time, providing a dynamic and engaging user experience.
-</div>
-
-<div class="more" markdown="1">
-…about the [Dash components](#dash-components) in the section below, including:
-* [HTML components](#html-components)
-* [Core components](#core-components)
-  * [Graph components](#graph-components)
-</div>
 
 
 # Dash components
