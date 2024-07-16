@@ -191,7 +191,7 @@ The `app.layout` in a Dash application is highly customizable to fit your needs.
 <div class="more" markdown="1">
 …about the [Dash components](#dash-components) in the section below, including:
 * [HTML components](#html-components)
-* [Core components](#core-components)
+* [Core components](#dcc-core-components)
   * [Graph components](#graph-components)
 </div>
 
@@ -309,7 +309,7 @@ These components are integrated into the layout of a Dash application to create 
 |`callback` | Links inputs and outputs to create interactivity.        | `@app.callback(Output('graph', 'figure'), [Input('dropdown', 'value')])` | Updates the graph based on the dropdown selection. |
 
 
-# HTML components
+# <b class="c-header">HTML components</b>
 
 The `html` module in Dash provides a suite of components that mirror standard HTML elements, enabling you to structure the layout of your Dash application. These components include headings, paragraphs, divs, etc. They allow you to create a well-organized and visually appealing interface.
 
@@ -520,7 +520,7 @@ if __name__ == '__main__':
 ***What changed:*** *Styles definitions are moved to an external CSS file. HTML components are assigned* `className` *property instead of* `style`*, making the code cleaner and styles easier to manage.*
 
 
-# DCC (core) components
+# <b class="c-header">DCC (core) components</b>
 
 The `dcc` (Dash Core Components) module in Dash provides a variety of higher-level components for creating interactive and data-driven applications. These components include graphs, dropdowns, radio buttons, sliders and more, enabling rich user interactions within your Dash application.
 
@@ -837,7 +837,7 @@ fig.show()
 </div>
 
 
-# Dash Dependencies: Input, Output, State
+# <b class="c-header">Dash Dependencies: Input, Output, State</b>
 
 Dash dependencies, such as `Input`, `Output` and `State`, are essential for creating interactivity within your Dash applications. They allow components to respond dynamically to user input and other component states.
 
