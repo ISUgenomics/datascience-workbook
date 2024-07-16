@@ -233,7 +233,7 @@ Each Dash HTML component **formats and displays text** or other content in a spe
 | `html.P`      | paragraph (p)             | `html.P('This is a paragraph.')`         | This is a paragraph.         |
 | `html.Span`   | inline container (span)   | `html.Span('This is a span.')`           | <span>This is a span.</span> |
 | `html.A`      | hyperlink (a)             | `html.A('Link Text', href='https://dash.plotly.com/')` | <a href="https://dash.plotly.com/">Link Text</a> |
-| `html.Img`    | image (img)               | `html.Img(src='path/to/image.jpg')`      | <img src="{{images_path}}/01_graphic_design_elements.png">     |
+| `html.Img`    | image (img)               | `html.Img(src='path/to/image.jpg')`      | <img src="{{images_path}}/example_heatmap.png">     |
 | `html.Button` | button (button)           | `html.Button('Click Me', id='button')`   | <button class="btn">Click Me</button>      |
 | `html.Label`  | label for form elements   | `html.Label('Label Text')`               | <label>Label Text</label>                  |
 | `html.Input`  | input field               | `html.Input(type='text', value='input')` | <input value="input">                      |
@@ -536,8 +536,113 @@ Finally, the app is deployed on a local Python server with `app.run(debug=True)`
 
 <div class="warning" markdown="1">
 In the current state, the Dash Core Components are implemented with predefined values and options that can be changed by the user. However, they are not linked to any functionality or interactivity. To create interactive responses to changes in the selected values of these components, you need to implement callbacks. <base class="mt">
-<button class="btn more mr"></button> Refer to the [Callbacks section](#Callbacks) to learn more about how to link components and add interactivity to your Dash application.
+<button class="btn more mr"></button> Refer to the [Callbacks section](#callbacks) to learn more about how to link components and add interactivity to your Dash application.
 </div>
+
+
+## Graph components
+
+The `dcc.Graph` component in Dash is distinct from other Dash Core Components (dcc) widgets. While widgets like dropdowns, sliders, and checklists are typically used to update graphs, the `dcc.Graph` component itself is used to display data visually. These relationships between widgets and graphs bring interactivity, allowing users to dynamically change the data displayed in the graph.
+
+<div class="note" markdown="1">
+Widgets such as dropdowns, sliders, and checklists are connected to the graph via [callbacks](#callbacks). When a user interacts with these widgets, the graph updates in real time based on the user’s input, providing a highly interactive experience.
+</div>
+
+### *dcc.Graph vs. Plotly Graphs*
+
+|                 | dcc.Graph | Plotly graph |
+|-----------------|-----------|--------------|
+| **purpose**     | Integrates with Dash to provide interactive, dynamic visualizations within a web application. | Standalone graphing library used for creating static or interactive plots outside of Dash applications. |
+| **integration** | Designed to work seamlessly with Dash callbacks, allowing for interactive updates. | Can be used in various environments like Jupyter Notebooks, standalone HTML files, and other web applications. |
+| **scope**       | Supports the full range of Plotly’s graphing library, including scatter plots, bar charts, line charts, heatmaps, and more. | Offers a comprehensive range of graph types similar to `dcc.Graph`, but without the built-in interactivity provided by Dash callbacks. |
+
+<div class="note" markdown="1">
+The `dcc.Graph` component in Dash serves as a universal placeholder for any Plotly graph, enabling interactivity through Dash widgets. You can insert any Plotly graph by setting it as **the value** of the *figure* property of the `dcc.Graph` component. This allows you to leverage Plotly's powerful graphing capabilities while integrating with Dash's interactive features.
+</div>
+
+*This example demonstrates how to use the dcc.Graph component in Dash using Plotly's built-in data visualization capabilities.*
+
+```python
+from dash import Dash, dcc, html
+import plotly.express as px
+
+# Create a Plotly figure using manually eneterd sample x-y data
+fig = px.bar(x=["Apples", "Oranges", "Bananas", "Grapes"], y=[4, 1, 2, 3])
+
+# Create Dash app
+app = Dash(__name__)
+
+app.layout = html.Div([
+    dcc.Graph(id='example-graph', figure=fig)
+])
+
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+
+<details class="l-frame" markdown="1"><summary class="c-header"><b><i>What the script does?</i></b></summary>
+
+This Dash app demonstrates the use of the `dcc.Graph` component to display a bar chart created with Plotly. The app consists of a **bar chart** that visualizes data on different types of fruits and their quantities.
+
+The app is deployed on a local Python server with `app.run(debug=True)` when the script is run directly.
+</details>
+
+<div class="protip" markdown="1">
+The `dcc.Graph` component holds the Plotly graph, and additional widgets like the slider can be used to add interactivity to the graph through [Dash callbacks](#callbacks). This setup allows for a flexible and dynamic user experience.
+</div>
+
+*This updated Dash app includes a callback to demonstrate interactivity using the dropdown. The color of the bar chart will change for the fruit selected in the dropdown.*
+
+```python
+from dash import Dash, dcc, html, Input, Output
+import plotly.express as px
+
+# Initial data for the bar chart
+fruits = ["Apples", "Oranges", "Bananas", "Grapes"]
+amounts = [4, 1, 2, 3]
+
+# Create Dash app
+app = Dash(__name__)
+
+app.layout = html.Div([
+    dcc.Dropdown(
+        id='fruit-dropdown',
+        options=[{'label': fruit, 'value': fruit} for fruit in fruits],
+        value=fruits[0]
+    ),
+    dcc.Graph(id='example-graph')
+])
+
+@app.callback(
+    Output('example-graph', 'figure'),
+    Input('fruit-dropdown', 'value')
+)
+def update_graph(selected_fruit):
+    colors = ['blue' if fruit == selected_fruit else 'grey' for fruit in fruits]
+    fig = px.bar(x=fruits, y=amounts, color=colors, color_discrete_map={"blue": "blue", "grey": "grey"}, category_orders={"x": fruits})
+    return fig
+
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+
+<details class="l-frame" markdown="1"><summary class="c-header"><b><i>What the script does?</i></b></summary>
+
+This Dash app demonstrates the use of the `dcc.Graph` component to display a bar chart created with Plotly Express wrapper. The app consists of a **bar chart** that visualizes data on different types of fruits and their quantities. The selected fruit is highlighted in blue.
+* **Layout:** The app includes a `dcc.Dropdown` above the dcc.Graph to select a fruit.
+* **Callback:** The *update_graph* function uses `px.bar` to change the color of the bar for the selected fruit to blue and the rest to grey.
+    * `category_orders` : The *category_orders* parameter ensures the bars are displayed in the order of the fruits list, maintaining the original order.
+    * `color_discrete_map` : Maps the colors to ensure the correct color assignment to the selected and non-selected fruits.
+* **Interactivity:** As the user selects a different fruit from the dropdown, the corresponding bar changes color to highlight it.
+
+The app is deployed on a local Python server with `app.run(debug=True)` when the script is run directly.
+</details>
+
+<div class="warning" markdown="1">
+To maintain the original order of fruits in the plot, you need to explicitly set the `category_orders` property in the Plotly Express bar plot. Otherwise, the `px.bar` automatically sorts the data based on the color variable.
+</div>
+
+![python-dash-app-callback-interactivity]({{ images_path }}/dash-app-callback-interactivity.gif)
 
 # Dash Dependencies: Input, Output, State
 
@@ -643,7 +748,7 @@ This minimal Dash app includes an input box (`dcc.Input`) and a div element (`ht
 Note that the `app.layout` comes first, defining all static components of the application. This is where you set up the structure and initial state of your app, defining all components with their `id` attribute and other properties. Following the layout, the **callbacks section** is defined. This section includes functions that handle the interactivity of the app by updating component properties based on user inputs/actions.
 
 <div class="protip" markdown="1">
-The separation of the layout and callbacks ensures a clear structure and organization of the app.
+The separation of the layout and callbacks in the app's code ensures a clear structure and organization of the app.
 </div>
 
 ![python-dash-app-callback-dependencies]({{ images_path }}/dash-app-callback-dependencies.gif)
@@ -651,8 +756,6 @@ The separation of the layout and callbacks ensures a clear structure and organiz
 
 
 <!--
-
-## Graph components
 
 # Layout and Callbacks
 
