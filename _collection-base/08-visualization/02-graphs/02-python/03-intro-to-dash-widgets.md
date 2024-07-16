@@ -289,7 +289,7 @@ python dash_app.py
 
 Dash components are the building blocks of Dash application layout, enabling you to create interactive, web-based data visualizations using Python. Major categories of Dash components include:
 * **[HTML components](#html-components)** (`html`): Basic HTML elements like headings, paragraphs, divs, etc.
-* **[Core Components](#core-components)** (`dcc`): Higher-level components like graphs, dropdowns, sliders, etc.
+* **[Core Components](#dcc-core-components)** (`dcc`): Higher-level components like graphs, dropdowns, sliders, etc.
 * **[Dependencies](#dash-dependencies-input-output-state)** : `Input`, `Output` and `State` components manage user input, display output, and track component state in Dash callbacks, enabling dynamic interactivity in the application.
     * **[Callbacks](#callbacks)** : Functions that enable interactivity by linking inputs and outputs.
 
@@ -327,7 +327,7 @@ Each Dash HTML component **formats and displays text** or other content in a spe
 | `html.P`      | paragraph (p)             | `html.P('This is a paragraph.')`         | This is a paragraph.         |
 | `html.Span`   | inline container (span)   | `html.Span('This is a span.')`           | <span>This is a span.</span> |
 | `html.A`      | hyperlink (a)             | `html.A('Link Text', href='https://dash.plotly.com/')` | <a href="https://dash.plotly.com/">Link Text</a> |
-| `html.Img`    | image (img)               | `html.Img(src='path/to/image.jpg')`      | <img src="{{images_path}}/example_heatmap.png">     |
+| `html.Img`    | image (img)               | `html.Img(src='path/to/image.jpg')`      | <img src="{{images_path}}/example_heatmap.png" width="200">     |
 | `html.Button` | button (button)           | `html.Button('Click Me', id='button')`   | <button class="btn">Click Me</button>      |
 | `html.Label`  | label for form elements   | `html.Label('Label Text')`               | <label>Label Text</label>                  |
 | `html.Input`  | input field               | `html.Input(type='text', value='input')` | <input value="input">                      |
@@ -532,16 +532,16 @@ Each Dash Core Component is designed to **facilitate user interactions and dynam
 
 | component      | description                         | example instance                         | rendering |
 |----------------|-------------------------------------|------------------------------------------|-----------|
-| `dcc.Graph`    | plots interactive graphs            | `dcc.Graph(id='example-graph')`          | <img src="{{images_path}}/dash-dcc-graph.png"> |
+| `dcc.Graph`    | plots interactive graphs            | `dcc.Graph(id='example-graph')`          | <img src="{{images_path}}/dash-dcc-graph.png" width="200"> |
 | `dcc.Markdown` | renders Markdown text               | `dcc.Markdown('**Bold Text**')`          | **Bold Text** |
-| `dcc.Dropdown` | dropdown menu for selecting options | `dcc.Dropdown(options=[{'label': 'A', 'value': 'a'}])` | <img src="{{images_path}}/dash-dcc-dropdown.png"> |
+| `dcc.Dropdown` | dropdown menu for selecting options | `dcc.Dropdown(options=[{'label': 'A', 'value': 'a'}])` | <img src="{{images_path}}/dash-dcc-dropdown.png" width="200"> |
 | `dcc.Input`    | input box for text input            | `dcc.Input(id='input-box', type='text')` | <input type="text" id="input-box" /> |
-| `dcc.Slider`   | slider for selecting numeric value  | `dcc.Slider(min=0, max=10, step=1, value=5)` | <img src="{{images_path}}/dash-dcc-slider.png"> |
-| `dcc.RangeSlider` | slider for selecting numeric range | `dcc.RangeSlider(min=0, max=10, step=1, value=[3, 7])` | <img src="{{images_path}}/dash-dcc-rslider.png"> |
-| `dcc.Checklist`   | checklist for multiple selections  | `dcc.Checklist(options=[{'label': 'A', 'value': 'a'}])`  | <img src="{{images_path}}/dash-dcc-checklist.png"> |
-| `dcc.RadioItems`  | radio buttons for single selection | `dcc.RadioItems(options=[{'label': 'A', 'value': 'a'}])` | <img src="{{images_path}}/dash-dcc-radioitems.png"> |
-| `dcc.DatePickerSingle` | single date picker            | `dcc.DatePickerSingle(id='date-picker')`                 | <img src="{{images_path}}/dash-dcc-datesingle.png"> |
-| `dcc.DatePickerRange`  | range date picker             | `dcc.DatePickerRange(id='date-picker-range')`            | <img src="{{images_path}}/dash-dcc-dash-dcc-daterange.png"> |
+| `dcc.Slider`   | slider for selecting numeric value  | `dcc.Slider(min=0, max=10, step=1, value=5)` | <img src="{{images_path}}/dash-dcc-slider.png" width="200"> |
+| `dcc.RangeSlider` | slider for selecting numeric range | `dcc.RangeSlider(min=0, max=10, step=1, value=[3, 7])` | <img src="{{images_path}}/dash-dcc-rslider.png" width="200"> |
+| `dcc.Checklist`   | checklist for multiple selections  | `dcc.Checklist(options=[{'label': 'A', 'value': 'a'}])`  | <img src="{{images_path}}/dash-dcc-checklist.png" width="200"> |
+| `dcc.RadioItems`  | radio buttons for single selection | `dcc.RadioItems(options=[{'label': 'A', 'value': 'a'}])` | <img src="{{images_path}}/dash-dcc-radioitems.png" width="200"> |
+| `dcc.DatePickerSingle` | single date picker            | `dcc.DatePickerSingle(id='date-picker')`                 | <img src="{{images_path}}/dash-dcc-datesingle.png" width="200"> |
+| `dcc.DatePickerRange`  | range date picker             | `dcc.DatePickerRange(id='date-picker-range')`            | <img src="{{images_path}}/dash-dcc-daterange.png" width="200"> |
 
 <div class="protip" markdown="1">
 For a comprehensive list of available Dash Core Components, check the <a href="https://dash.plotly.com/dash-core-components" target="_blank">official Dash documentation</a> under the section Open Source Component Libraries → Dash Core Components. This resource provides detailed information and examples to help you effectively use these components in your applications.
