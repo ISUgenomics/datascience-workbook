@@ -29,7 +29,7 @@ I am a Ph.D. in Molecular Biology and Biotechnology with broad expertise is in t
 ### Rick Masonbrink
 
 ![Rick](../assets/images/people/Rick.jpg){: .align-left}
-I work on a multitude of projects. Some of them involve: characterizing the genomes of endangered abalone species, assessing the cellular roles of small RNAs in nematodes, creating user-friendly bioinformatics tutorials, assessing transposition in irradiated maize, trans-splicing in nematodes, etc.  With the huge variation of collaborative projects that come into the GIF, the constant influx of novel ideas creates an environment conducive to my development.
+I am fortunate to work as a research scientist in the Genome Informatics Facility at Iowa State University, where I am surrounded by highly skilled bioinformaticians and constantly exposed to new ideas and approaches. This dynamic environment fosters my passion for science and my curiosity to keep learning and growing. With the support of the USDA, I have had the opportunity to create workshops and tutorials, and I also assist our faculty and industry collaborators through fee-for-service work. Over the years, I’ve been involved in a wide range of projects, developing and applying bioinformatics pipelines tailored to specific needs. I have also gained considerable experience in Hi-C scaffolding and genome annotation. I view this continuous exchange of ideas as key to my growth as both a researcher and a contributing member of the broader scientific community.
 
 ### Viswa Satheesh
 
