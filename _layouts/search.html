@@ -14,7 +14,7 @@ layout: default
 {% endif %}
 </header>
 
-<div id="main" role="main">
+<div id="main" role="main" tabindex="-1">
   {% include sidebar.html %}
 
   <div class="archive">
@@ -31,7 +31,7 @@ layout: default
         <div id="results" class="results"></div>
       {%- when "google" -%}
         <form onsubmit="return googleCustomSearchExecute();" id="cse-search-box-form-id">
-        <input type="text" id="cse-search-input-box-id" class="search-input" tabindex="-1" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Enter your search term...' }}" />
+        <input type="text" id="cse-search-input-box-id" title="Search input" class="search-input" tabindex="-1" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Enter your search term...' }}" />
         </form>
         <div id="results" class="results">
           <gcse:searchresults-only></gcse:searchresults-only>
