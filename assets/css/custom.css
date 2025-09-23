@@ -309,6 +309,23 @@ pre {
 
 /* resource-wide: styles for custom target links */
 
+.skip-link {
+  position: absolute;
+  top: -50px;   /* hide above viewport */
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 100;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.skip-link:focus {
+  top: 0;   /* reveal when focused */
+}
+
+
 .t-links {
   text-decoration: none !important;
 }
