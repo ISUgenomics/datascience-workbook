@@ -17,4 +17,5 @@ gem "jemoji"
 gem "jekyll-include-cache"
 gem "jekyll-algolia"
 gem "rouge"
+gem "webrick", "~> 1.8"
 end
