@@ -125,7 +125,10 @@
     }
   }
 
-  a {text-decoration: none;}
+  a {
+    text-decoration: none;
+    border-bottom: 1px solid;
+  }
 
   a:not(.btn) {
     &:hover {

@@ -133,11 +133,14 @@ a {
   &:hover,
   &:active {
     color: $link-color-hover;
+    text-decoration: none !important;
     outline: 0;
   }
 
   &:visited {
     color: $link-color-visited;
+
+    &:hover {color: $link-color-hover;}
   }
 }
 
