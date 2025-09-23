@@ -56,7 +56,7 @@ function showDiv(targetId, categoryName) {
 
   // Update the heading with the clicked category name
   if (categoryName) {
-    document.getElementById('category-heading').innerHTML = 'Filtered by Category: <span style="color: #4a9fc2;">' + categoryName + '</span>';
+    document.getElementById('category-heading').innerHTML = 'Filtered by Category: <span style="color: #a2007a;">' + categoryName + '</span>';
   }
 
   // Reset selected tags

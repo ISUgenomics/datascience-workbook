@@ -33,7 +33,7 @@ Collection size: {{ site['collection-base'] | size }}
           {% for tutorial in module.items offset:1 %}
             <div>
               <div class="toc-type {{ tutorial.type }}">{{ tutorial.type }}</div>
-              <a href="{{ tutorial.url | relative_url }}" class="prefix-{{ tutorial.level }}">{{ tutorial.title | default: 'Untitled' }}</a> <i><span style="color: #a9bbd1;">{{ tutorial.note | default: '' }}</span></i>
+              <a href="{{ tutorial.url | relative_url }}" class="prefix-{{ tutorial.level }}">{{ tutorial.title | default: 'Untitled' }}</a> <i><span style="color: #a2007a;">{{ tutorial.note | default: '' }}</span></i>
             </div>
           {% endfor %}
       </div>
@@ -74,8 +74,10 @@ Collection size: {{ site['collection-base'] | size }}
       <div id="{{ sanitized_category }}" class="category-content" style="display: none;"><hr>
         <button class="btn choice" onclick="showTags('{{ sanitized_category }}', this)">show tags</button>
 
+        <label for="tag-dropdown-{{ sanitized_category }}" class="visually-hidden">Filter by tag</label>
         <select id="tag-dropdown-{{ sanitized_category }}" class="tag-dropdown btn" style="display: none;" onchange="filterByTag(this, '{{ sanitized_category }}')">
           <option value="">Filter by tag</option>
+          aria-label="Filter by tag"
           {% for tag in unique_tags %}
             <option value="{{ tag }}">{{ tag }}</option>
           {% endfor %}
