@@ -16,6 +16,7 @@
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
 
+    <a class="skip-link" href="#main">Skip to content</a>
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
@@ -40,3 +41,13 @@
 
   </body>
 </html>
+
+<script>
+  document.querySelector('.skip-link').addEventListener('click', function(e) {
+    var main = document.getElementById('main');
+    if (main) {
+      main.setAttribute('tabindex', '-1'); // ensure focusable
+      main.focus();
+    }
+  });
+</script>
