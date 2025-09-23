@@ -29,13 +29,15 @@ header:
   {% if current_letter != first_letter and first_letter != "." %}
     {% assign current_letter = first_letter %}
 ## {{ current_letter }}
+<h3 class="visually-hidden">Glossary terms starting with {{ current_letter }}</h3>
   {% endif %}
 
-<h4 id="{{ item.name }}"> <a href="https://en.wikipedia.org/wiki/{{ item.wiki }}" target="_blank" class="glossary-term" data-term="{{ item.name }}">{{ item.name | replace: '-', ' ' | upcase }}</a>
-  {% assign name_lower = item.name | replace: '-', ' ' | downcase %}
-  {% assign wiki_lower = item.wiki | replace: '_', ' ' | downcase %}
-  {% if name_lower != wiki_lower and wiki_lower != "" %}
-    <em class="c-gray pl-2 font-08">alt. {{ item.wiki | replace: '_', ' ' | replace: '#', ': ' }}</em>
+<h4 id="{{ item.name }}">
+  <span class="glossary-term" style="color: #24376b;" data-term="{{ item.name }}">{{ item.name | replace: '-', ' ' | upcase }}</span>
+  {% if item.wiki and item.wiki != "" %}
+    {% assign name_lower = item.name | replace: '-', ' ' | downcase %}{% assign wiki_lower = item.wiki | replace: '_', ' ' | downcase %}
+    {% if name_lower != wiki_lower %}<em class="c-gray pl-2 font-08">alt. {{ item.wiki | replace: '_', ' ' | replace: '#', ': ' }}</em>{% endif %}
+    &emsp;<a href="https://en.wikipedia.org/wiki/{{ item.wiki | escape }}" class="font-08" target="_blank" rel="noopener noreferrer">𝐖𝐢𝐤𝐢</a>
   {% endif %}
 </h4>
   <span class="c-glossary" data-definition="{{ item.name }}">{{ item.definition }}</span><br>
@@ -100,7 +102,7 @@ header:
       });
 
       categories.forEach(function(category) {
-        var categoryLink = '<a class="c-header italic category-link" href="#' + category.replace(/\s+/g, '-').toLowerCase() + '" data-category="' + category + '">#' + category + '</a>';
+        var categoryLink = '<a class="c-header italic category-link" style="border-bottom: 0;" href="#' + category.replace(/\s+/g, '-').toLowerCase() + '" data-category="' + category + '">#' + category + '</a>';
         categoriesDiv.innerHTML += categoryLink + '<span style="color: #d7dadc;">&ensp;|&ensp;</span>';
       });
     });

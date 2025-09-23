@@ -30,7 +30,7 @@
 /* pre-defined font colors */
 .c-white {color: rgb(253, 253, 253) !important;}
 .c-text {color: var(--c-text) !important;}
-.c-header {color: var(--c-header) !important;}
+.c-header {color: var(--sitemap-0) !important;}
 .c-gray {color: var(--c-gray) !important;}
 .c-pros {color: var(--c-pros) !important;}
 .c-good {color: var(--c-note) !important;}
