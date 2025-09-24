@@ -85,7 +85,7 @@ As you noticed, executing the `plot` command starts the GUI window, which allows
 ![Open Gnuplot in the Terminal]({{ images_path }}/gnuplot_interactive_window.png)<br>
 **Figure 4.** *The interactive graph is launched in the separate GUI window which provides options to save image in the selected graphical format.*
 
-In the [Settings for gnuploting](settings-for-gnuploting) section you will learn the Gnuplot syntax for setting up details of the graph's layout and plotting commands.
+In the [Plotting Options](#plotting-options) section you will learn the Gnuplot syntax for setting up details of the graph's layout and plotting commands.
 
 <div class="protip" markdown="1">
 The identical syntax of settings can be used directly in the terminal, as well as pasted into a script in Bash. For details, see the next section, [Generating static graphs using Bash scripts](#generating-static-graphs-using-bash-scripts).

@@ -103,8 +103,8 @@ When working on an HPC system, it can be challenging to install custom software 
 
 | TOOL | LICENSE | AUTHOR | GitHub | DOCS |
 |------|---------|--------|--------|------|
-| [jp2a](#jp2a) | GNU General | C.S. Larsen | <a href="https://github.com/cslarsen/jp2a" target="_blank">https://github.com/cslarsen/jp2a</a> | <a href="https://manpages.ubuntu.com/manpages/xenial/man1/jp2a.1.html#author" target="_blank">ubuntu manuals: jp2a</a> |
-| [asciiview](#asciiview-or-aview) | GNU General | J. Hubicka | | <a href="https://manpages.ubuntu.com/manpages/kinetic/en/man1/aview.1.html" target="_blank">ubuntu manuals: aview</a>|
+| [jp2a](#jp2a) | GNU General | C.S. Larsen | <a href="https://github.com/cslarsen/jp2a" target="_blank">https://github.com/cslarsen/jp2a</a> | <a href="https://manpages.ubuntu.com/manpages/jammy/en/man1/jp2a.1.html" target="_blank">ubuntu manuals: jp2a</a> |
+| [asciiview](#asciiview-or-aview) | GNU General | J. Hubicka | | <a href="https://manpages.ubuntu.com/manpages/jammy/en/man1/aview.1.html" target="_blank">ubuntu manuals: aview</a>|
 | [img2txt](#img2txt)  | <a href="http://www.wtfpl.net" target="_blank">WTFPL</a> | S. Hocevar <br>J.-Y. Lamoureux | <a href="https://github.com/cacalabs/libcaca" target="_blank">https://github.com/cacalabs/libcaca</a> | <a href="https://manpages.ubuntu.com/manpages/jammy/en/man1/img2txt.1.html" target="_blank">ubuntu manuals: img2txt</a> |
 | [ascii-image-converter](#ascii-image-converter-recommended) | Apache-2.0 | Z. Hassan | <a href="https://github.com/TheZoraiz/ascii-image-converter" target="_blank">https://github.com/TheZoraiz/ascii-image-converter</a> | <a href="https://github.com/TheZoraiz/ascii-image-converter#cli-usage" target="_blank">CLI usage & flags</a> |
 | [ascii-python](#ascii-python-python) | MIT License |A. Bhouri| <a href="https://github.com/Adam-BH/ascii_py" target="_blank">https://github.com/Adam-BH/ascii_py</a>| <a href="https://github.com/Adam-BH/ascii_py#docs" target="_blank">docs: ascii-python</a>|
@@ -198,7 +198,7 @@ The above demonstration outlined the general steps required for installing any t
 ## jp2a
 
 This is a tool for viewing images in the terminal as ASCII art that **supports JPEG format only**.
-* options: <a href="https://manpages.ubuntu.com/manpages/xenial/man1/jp2a.1.html#author" target="_blank">ubuntu manuals: jp2a</a>
+* options: <a href="https://manpages.ubuntu.com/manpages/jammy/en/man1/jp2a.1.html" target="_blank">ubuntu manuals: jp2a</a>
 * download package: <a href="https://pkgs.org/download/jp2a" target="_blank">https://pkgs.org/download/jp2a</a>
 * devel GitHub: <a href="https://github.com/cslarsen/jp2a" target="_blank">https://github.com/cslarsen/jp2a</a>
 
@@ -278,7 +278,7 @@ convert linux-logo.png jpg:- | jp2a -
 ## asciiview or aview
 
 This is a tool for viewing images in the terminal as ASCII art. `aview` can only show files in the PNM file format. `asciiview` automatically converts the file formats (including PNG, JPEG, BMP, and GIF) to PNM with extern programs like ImageMagic (so remember to `module load imagemagick`) and then runs aview.
-* options: <a href="https://manpages.ubuntu.com/manpages/kinetic/en/man1/aview.1.html" target="_blank">ubuntu manuals: aview & asciiview</a>
+* options: <a href="https://manpages.ubuntu.com/manpages/jammy/en/man1/aview.1.html" target="_blank">ubuntu manuals: aview & asciiview</a>
 * download package: <a href="https://pkgs.org/download/aview" target="_blank">https://pkgs.org/download/aview</a>
 * devel sourceForge: <a href="https://aa-project.sourceforge.net/aalib/" target="_blank">https://aa-project.sourceforge.net/aalib/</a>
 

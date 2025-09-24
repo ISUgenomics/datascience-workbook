@@ -37,7 +37,7 @@ attributes: ["user-guide"]
 
 ## Education Cluster
 * **HPC Class** - These are partitions on Nova cluster dedicated to class use
-  * Check the <a href="https://www.hpc.iastate.edu/guides/nova/hpc-class" target="_blank">Guide to HPC Class ⤴</a> from ISU for more details
+  * Check the <a href="https://research.it.iastate.edu/hpc-class" target="_blank">Guide to HPC Class ⤴</a> from ISU for more details
 
 
 ## LSS Storage
@@ -65,7 +65,7 @@ You need to answer `yes` to continue.
 | Cores per node       | 16/20/32/40                | 36/48/64/96              |
 | Home directory space | 5 GB                       | 5 GB                     |
 | Workload Manager     | SLURM                      | SLURM                    |
-| Partitions           | <a href="https://www.hpc.iastate.edu/guides/condo-2017/queue-configuration" target="_blank">Partitions List ⤴</a> | <a href="https://www.hpc.iastate.edu/guides/nova/partition-configuration" target="_blank">Partitions List ⤴</a> |
+| Partitions           |  | <a href="https://research.it.iastate.edu/nova" target="_blank">Nova cluster ⤴</a> |
 
 Tutorials to get you started on different HPC Clusters are available in this workbook.
 * <a class="t-links" href="613.2">Condo computing cluster</a>
@@ -105,8 +105,8 @@ Also check out the <a class="t-links" href="911">Introduction to Project Managem
 ## General guides
 
 * <a href="https://www.hpc.iastate.edu/guides/introduction-to-hpc-clusters" target="_blank">Intro to HPC clusters ⤴</a>
-* <a href="https://www.hpc.iastate.edu/guides/nova" target="_blank">Intro to Nova cluster ⤴</a>
-* <a href="https://www.hpc.iastate.edu/guides/open-ondemand" target="_blank">Nova OnDemand ⤴</a>
+* <a href="https://research.it.iastate.edu/nova" target="_blank">Intro to Nova cluster ⤴</a>
+* <a href="https://research.it.iastate.edu/nova-ondemand" target="_blank">Nova OnDemand ⤴</a>
 * <a href="https://www.hpc.iastate.edu/guides/virtual-environments" target="_blank">Virtual Environments ⤴</a>
 * <a href="https://www.hpc.iastate.edu/guides/sample-job-scripts" target="_blank">Sample Job Scripts ⤴</a>
 <br>
@@ -121,10 +121,7 @@ Also check out the <a class="t-links" href="911">Introduction to Project Managem
 ## Additional guides
 
 * <a href="https://www.hpc.iastate.edu/guides/unix-introduction" target="_blank">Unix Introduction ⤴</a>
-* <a href="https://www.hpc.iastate.edu/guides/scslab" target="_blank">SCSLab ⤴</a>
-* <a href="https://www.hpc.iastate.edu/guides/using-matlab-parallel-server" target="_blank">Matlab Parallel Server ⤴</a>
 * <a href="https://www.hpc.iastate.edu/guides/using-ddt-parallel-debugger--map-profiler-and-performance-reports" target="_blank">ARM DDT Parallel Debugger, MAP profiler and Performance Reports ⤴</a>
-* <a href="https://www.hpc.iastate.edu/guides/using-ansys-rsm" target="_blank">ANSYS RSM ⤴</a>
 * <a href="https://www.hpc.iastate.edu/guides/containers" target="_blank">Containers ⤴</a>
 * <a href="https://researchit.las.iastate.edu/guides/pronto/machine_learning/" target="_blank">Machine Learning Container ⤴</a>
 <br>

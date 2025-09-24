@@ -45,7 +45,7 @@ COMMON USAGE of `*` and `?` in regular expressions:
 
 ## **1.2 Logical operators**
 
-The full list of Bash conditional expressions is provided in [section 6.4 of bash manual](https://www.gnu.org/software/bash/manual/bash.html#Bash-Conditional-Expressions) available at [www.gnu.org/](www.gnu.org/).
+The full list of Bash conditional expressions is provided in [section 6.4 of bash manual](https://www.gnu.org/software/bash/manual/bash.html#Bash-Conditional-Expressions) available at [gnu.org](https://www.gnu.org/).
 
 ## <b class="prefix-2"></b>FILE OPERATORS
 
@@ -94,7 +94,7 @@ Below you have a quick overview for the most commonly used variants of numerical
 
 ## **1.3 In-shell arithmetic**
 
-The full list of Bash shell arithmetic is provided in [section 6.5 of bash manual](https://www.gnu.org/software/bash/manual/bash.html#Shell-Arithmetic) available at [www.gnu.org/](www.gnu.org/).
+The full list of Bash shell arithmetic is provided in [section 6.5 of bash manual](https://www.gnu.org/software/bash/manual/bash.html#Shell-Arithmetic) available at [gnu.org/](https://www.gnu.org/).
 
 ## <b class="prefix-2"></b>OPERATORS
 

@@ -177,20 +177,19 @@ Open-source nature of GIMP fosters a vibrant community of users and developers w
 <span style="color: #ff3870;font-weight: 500;">This tutorial covers installation and some basic functions in GIMP to get you started.</span> As you become more familiar with the software, you can explore its extensive capabilities, including advanced selection tools, masks, brushes, and more. <br>
 Additionally, there are numerous online tutorials, forums, and resources available to further enhance your skills and explore GIMP's full potential. <b>A good starting point for more advanced tutorials is the <a href="https://www.gimp.org/tutorials/" target="_blank">official GIMP website ⤴</a>:</b>
 * **BEGINNER**
-  * <a href="https://www.gimp.org/tutorials/GIMP_Quickies/" target="_blank">GIMP Quickies  ⤴</a>
-  * <a href="https://www.gimp.org/tutorials/Floating_Logo/" target="_blank">Simple Floating Logo  ⤴</a>
-  * <a href="https://www.gimp.org/tutorials/CircleImage/" target="_blank">Making a Circle-Shaped Image  ⤴</a>
-  * <a href="https://www.gimp.org/tutorials/Layer_Masks/" target="_blank">Layer Masks  ⤴</a>
-  * <a href="https://www.gimp.org/tutorials/Basic_Color_Curves/" target="_blank">Basic Color Curves  ⤴</a>
-  * <a href="https://www.gimp.org/tutorials/ImageFormats/" target="_blank">Image Formats Overview  ⤴</a>
+  * <a href="https://www.gimp.org/tutorials/community/GIMP_Quickies/" target="_blank">GIMP Quickies  ⤴</a>
+  * <a href="https://www.gimp.org/tutorials/community/Floating_Logo/" target="_blank">Simple Floating Logo  ⤴</a>
+  * <a href="https://www.gimp.org/tutorials/community/CircleImage/" target="_blank">Making a Circle-Shaped Image  ⤴</a>
+  * <a href="https://www.gimp.org/tutorials/community/Layer_Masks/" target="_blank">Layer Masks  ⤴</a>
+  * <a href="https://www.gimp.org/tutorials/community/Basic_Color_Curves/" target="_blank">Basic Color Curves  ⤴</a>
 * **ADVANCED**
-  * <a href="https://www.gimp.org/tutorials/Focus_Group/" target="_blank">Focus Group - Layer masking and creative filter applications  ⤴</a>
-  * <a href="https://www.gimp.org/tutorials/Parametric_Brush/" target="_blank">Painting - Parametric Brushes  ⤴</a>
+  * <a href="https://www.gimp.org/tutorials/community/Focus_Group/" target="_blank">Focus Group - Layer masking and creative filter applications  ⤴</a>
+  * <a href="https://www.gimp.org/tutorials/community/Parametric_Brush/" target="_blank">Painting - Parametric Brushes  ⤴</a>
   * <a href="https://www.gimp.org/unix/fonts.html" target="_blank">How to install fonts for use with GIMP  ⤴</a>
 * **PROGRAMMING**
-  * <a href="https://www.gimp.org/tutorials/Basic_Perl/" target="_blank">Basics of GIMP - Perl module  ⤴</a>
-  * <a href="https://www.gimp.org/tutorials/Automate_Editing_in_GIMP/" target="_blank">Automate Editing with GIMP - Python  ⤴</a>
-  * <a href="https://www.gimp.org/tutorials/AutomatedJpgToXcf/" target="_blank">Automatic Creation of XCF from JPG  ⤴</a>
+  * <a href="https://gitlab.gnome.org/Infrastructure/gimp-web/-/tree/testing/content/tutorials/legacy/Basic_Perl" target="_blank">Basics of GIMP - Perl module  ⤴</a>
+  * <a href="https://gitlab.gnome.org/Infrastructure/gimp-web/-/tree/testing/content/tutorials/legacy/Automate_Editing_in_GIMP" target="_blank">Automate Editing with GIMP - Python  ⤴</a>
+  * <a href="https://gitlab.gnome.org/Infrastructure/gimp-web/-/tree/testing/content/tutorials/legacy/AutomatedJpgToXcf" target="_blank">Automatic Creation of XCF from JPG  ⤴</a>
 
 
 ## Installation and Setup

@@ -303,7 +303,7 @@ Before exploring examples, please copy the source code and inputs to your comput
 git clone https://github.com/ISUgenomics/data_wrangling.git
 ```
 
-**B.** or download the data_wrangling/<a href="https://github.com/ISUgenomics/data_wrangling/bin_data" target="_blank">bin_data </a> folder:
+**B.** or download the data_wrangling/<a href="https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data" target="_blank">bin_data </a> folder:
 
 * *download from the command line*
 

@@ -125,7 +125,7 @@ The SciPy library contains several submodules that cater to specific scientific 
 | scipy.**signal**  | Offers a range of **signal processing functions**, including filtering, Fourier analysis, wavelets, and convolution. | <a href="https://docs.scipy.org/doc/scipy/reference/signal.html#module-scipy.signal" target="_blank">docs  ⤴</a> |
 | scipy.**ndimage** | Provides functions for **n-dimensional image processing** and filtering, such as smoothing, edge detection, and morphology. | <a href="https://docs.scipy.org/doc/scipy/reference/ndimage.html#module-scipy.ndimage" target="_blank">docs  ⤴</a> |
 | scipy.**special** | Contains **special functions**, such as Bessel functions, gamma functions, and error functions. | <a href="https://docs.scipy.org/doc/scipy/reference/special.html#module-scipy.special" target="_blank">docs  ⤴</a> |
-| scipy.**misc** | Offers various **utility functions for scientific computing**, such as image manipulation and numerical approximations. | <a href="https://docs.scipy.org/doc/scipy/reference/misc.html#module-scipy.misc" target="_blank">docs  ⤴</a> |
+| scipy.**misc** | Offers various **utility functions for scientific computing**, such as image manipulation and numerical approximations. | <a href="https://docs.scipy.org/doc/scipy/" target="_blank">docs  ⤴</a> |
 
 
 ## **`scipy.io`**

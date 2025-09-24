@@ -27,11 +27,11 @@ attributes: ["interactive", "user-guide"]
 
 * [PMC Articles about or using JupyterHub](https://www.ncbi.nlm.nih.gov/pmc/?term=Jupyterhub)
 
-## Ceres HPC Login with JupyterHub
+JupyterHub allows access to Ceres through a web browser and spawns an instance of JupyterLab on a compute node.
 
-In summer 2020, a new way of accessing Ceres was set up with JupyterHub. JupyterHub allows access to Ceres through a web browser and spawns an instance of JupyterLab on a compute node.
+## SCINet Options for Jupyter 
 
-Let's walk through how to login to Ceres using JupyterHub with the [Jupyter Guide](https://scinet.usda.gov/guide/jupyter).
+Let's walk through SCINet Options for [Jupyter Guide](https://scinet.usda.gov/guides/ide/jupyter).
 
 ## Tour of JupyterLab
 

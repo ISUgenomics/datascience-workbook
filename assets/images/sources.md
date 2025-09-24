@@ -123,7 +123,7 @@ GitHub location: <span style="color: #8997c1;">datascience-workbook/05-IntroToPr
 
 | filename | status | author | original source | items |
 |----|----|-----|----|----|
-|**05_programming_banner.png**|created|[Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska)|[Adobe Stock](https://stock.adobe.com/)|[183265735](https://stock.adobe.com/183265735) ; [306184592](https://stock.adobe.com/306184592) ; [186097438](https://stock.adobe.com/186097438)|
+|**05_programming_banner.png**|created|[Aleksandra Badaczewska](https://www.linkedin.com/in/aleksandra-badaczewska)|[Adobe Stock](https://stock.adobe.com/)|[183265735](https://stock.adobe.com/183265735) ; [186097438](https://stock.adobe.com/186097438)|
 
 ### <span style="color: #24376b;">Tutorials</span>
 

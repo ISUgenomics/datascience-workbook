@@ -43,7 +43,7 @@ Once installed locally, you can start a web-based interface of **JupyterLab** fr
 jupyter lab
 ```
 
-That will start a server on **localhost** and automatically open the Jupyter interface in your default browser. It will work on URL: [http://localhost:8889/lab](http://localhost:8889/lab).
+That will start a server on **localhost** and automatically open the Jupyter interface in your default browser. It will work on URL: <http://localhost:8889/lab>.
 
 ## **JupyterLab GUI**
 

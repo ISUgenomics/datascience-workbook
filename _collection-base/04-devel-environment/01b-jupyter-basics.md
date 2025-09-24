@@ -94,7 +94,7 @@ Launching the jupyter web application is also effortless, you just simply type `
 jupyter lab
 ```
 
-That will open your Jupyter session in a web browser on **localhost** with a default URL: [http://localhost:8889/lab](http://localhost:8889/lab).
+That will open your Jupyter session in a web browser on **localhost** with a default URL: <http://localhost:8889/lab>.
 
 <p align="center"><img width="800" src="{{ images_path }}/04_jupyter_launch.gif"></p>
 
@@ -105,7 +105,7 @@ That will open your Jupyter session in a web browser on **localhost** with a def
 jupyter notebook
 ```
 
-That will open your Jupyter session in a web browser on **localhost** with a default URL: [http://localhost:8888/tree](http://localhost:8888/tree).
+That will open your Jupyter session in a web browser on **localhost** with a default URL: <http://localhost:8888/tree>.
 
 <img width="800" src="{{ images_path }}/04_jupyter_notebook_launch.gif">
 
@@ -134,7 +134,7 @@ Having that software on a cluster with interactive visual access through the OOD
 
 * **Jupyter on ATLAS**
 
-Access the **Atlas OOD login** web page at: [https://atlas-ood.hpc.msstate.edu/](https://atlas-ood.hpc.msstate.edu/ )
+Access the **Atlas OOD login** web page at: [https://atlas-ood.hpc.msstate.edu/](https://atlas-ood.hpc.msstate.edu)
 
 Follow the Atlas Open OnDemand **Guide** at [hpc.msstate.edu](https://www.hpc.msstate.edu/computing/atlas/#ondemand)
 
@@ -142,4 +142,4 @@ Follow the Atlas Open OnDemand **Guide** at [hpc.msstate.edu](https://www.hpc.ms
 
 Access the **Ceres OOD login** web page at: [http://ceres-ood.scinet.usda.gov/](http://ceres-ood.scinet.usda.gov/)
 
-Follow the Ceres Open OnDemand **Guide** at [scinet.usda.gov](https://scinet.usda.gov/guide/ceres_ood/)
+Follow the Ceres Open OnDemand **Guide** at [scinet.usda.gov](https://scinet.usda.gov/guides/use/open-ondemand)

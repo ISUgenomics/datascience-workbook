@@ -31,8 +31,8 @@ Explore the journey from Singularity to Apptainer and uncover the expanded featu
 ## Useful Resources
 
 * <a href="https://join.slack.com/t/apptainer/shared_invite/zt-z95o8dg3-_URQItov5W_8djlR2hNZWw" target="_blank">Apptainer Slack  ⤴</a>
-* email lists: <a href="singularity@lbl.gov" target="_blank">singularity@lbl.gov  ⤴</a>
-* <a href="https://apptainer.org/help" target="_blank">community help  ⤴</a>
+* email lists: `singularity@lbl.gov`
+* <a href="https://apptainer.org/support/" target="_blank">community help  ⤴</a>
 * <a href="https://apptainer.org/docs" target="_blank">documentation  ⤴</a>
 * Apptainer GitHub repo: <a href="https://github.com/apptainer/apptainer" target="_blank">https://github.com/apptainer/apptainer  ⤴</a>
 * Singularity GitHub repo (archival): <a href="https://github.com/apptainer/singularity" target="_blank">https://github.com/apptainer/singularity  ⤴</a>

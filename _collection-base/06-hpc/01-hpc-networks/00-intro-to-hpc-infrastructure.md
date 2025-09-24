@@ -118,14 +118,14 @@ HPC systems are also used extensively in artificial intelligence (AI) and machin
 ### *XSEDE*
 **The Extreme Science and Engineering Discovery Environment, NSF funded project**
 
-* go to [XSEDE Supercomputer](01-XSEDE/01-supercomputer-intro)
+* go to [ACCESS Supercomputers](01-XSEDE/01-supercomputer-intro)<a class="t-links" href="611.1"></a>
 
 ### *SCINet*
 **Scientific Computing Network, USDA ARS funded project**
 
-* go to [SCINet Network](02-SCINET/01-scient-network-intro)
+* go to [SCINet Network](02-SCINET/01-scient-network-intro)<a class="t-links" href="612.1"></a>
 
 ### *ISU HPC*
 **HPC clusters at Iowa State University**
 
-* go to [ISU HPC](03-ISUHPC/01-isu-hpc-intro)
+* go to [ISU HPC](03-ISUHPC/01-isu-hpc-intro)<a class="t-links" href="613.1"></a>

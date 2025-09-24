@@ -52,4 +52,4 @@ One effective way to learn about geospatial analysis is to study examples of rea
 1. <a href="https://geospatial.101workbook.org/about.html" target="_blank">About the Geospatial Workbook  ⤴</a>
 2. <a href="https://geospatial.101workbook.org/list.html" target="_blank">Detailed Table of Content  ⤴</a>
 3. <a href="https://geospatial.101workbook.org/glossary.html" target="_blank">Geospatial Glossary  ⤴</a>
-4. <a href="https://geospatial.101workbook.org/Contributing.html" target="_blank">How to contribute?  ⤴</a>
+4. <a href="https://geospatial.101workbook.org/contributing.html" target="_blank">How to contribute?  ⤴</a>

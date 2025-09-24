@@ -91,9 +91,9 @@ You start by opening a web browser on your local machine and entering the URL to
 
 <table>
   <tr> <th>OOD access</th> <th>computing cluster</th> <th>HPC infrastructure</th> </tr>
-  <tr> <td><a href="https://atlas-ood.hpc.msstate.edu/" target="_blank">https://atlas-ood.hpc.msstate.edu/</a></td> <td><a class="t-links" href="612.2" section="#open-ondemand-login">OOD access to Atlas  ⤴</a> (guide)</td> <td><a class="t-links" href="612.1">SCINet Scientific Computing</a></td> </tr>
-  <tr> <td><a href="http://ceres-ood.scinet.usda.gov/" target="_blank">http://ceres-ood.scinet.usda.gov/</a></td> <td><a href="https://scinet.usda.gov/guides/access/open-ondemand#open-ondemand-interface-guide" target="_blank">OOD access to Ceres  ⤴</a> (guide)</td> <td><a class="t-links" href="612.1">SCINet Scientific Computing</a></td> </tr>
-  <tr> <td><a href="http://nova-ondemand.its.iastate.edu/" target="_blank">http://nova-ondemand.its.iastate.edu/</a></td> <td><a href="https://www.hpc.iastate.edu/guides/open-ondemand" target="_blank">OOD access to Nova  ⤴</a> (guide)</td> <td><a class="t-links" href="613.1">ISU HPC Network</a></td> </tr>
+  <tr> <td><a href="https://atlas-ood.hpc.msstate.edu" target="_blank">https://atlas-ood.hpc.msstate.edu</a></td> <td><a class="t-links" href="612.2" section="#open-ondemand-login">OOD access to Atlas  ⤴</a> (guide)</td> <td><a class="t-links" href="612.1">SCINet Scientific Computing</a></td> </tr>
+  <tr> <td><a href="https://ceres-ondemand.scinet.usda.gov/" target="_blank">https://ceres-ondemand.scinet.usda.gov/</a></td> <td><a href="https://scinet.usda.gov/guides/access/open-ondemand#open-ondemand-interface-guide" target="_blank">OOD access to Ceres  ⤴</a> (guide)</td> <td><a class="t-links" href="612.1">SCINet Scientific Computing</a></td> </tr>
+  <tr> <td><a href="https://nova-ondemand.its.iastate.edu" target="_blank">https://nova-ondemand.its.iastate.edu</a></td> <td><a href="https://research.it.iastate.edu/nova-ondemand" target="_blank">OOD access to Nova  ⤴</a> (guide)</td> <td><a class="t-links" href="613.1">ISU HPC Network</a></td> </tr>
 </table>
 
 You will be prompted to **enter your credentials** for the HPC system, and if the login is successful, you will be logged into the remote machine and have access to its file system and resources.

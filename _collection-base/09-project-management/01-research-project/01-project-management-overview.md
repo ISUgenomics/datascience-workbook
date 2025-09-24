@@ -91,8 +91,6 @@ There are also specific courses and programs dedicated to managing research proj
 
 * UC San Diego Extension provides a course called <a href="https://extendedstudies.ucsd.edu/courses-and-programs/project-management-within-a-scientific-research-environment" target="_blank">"Project Management within a Scientific/Research Environment"</a>. This course focuses on the application of project management and leadership principles specifically in the biotech/pharma sector. It includes real-life examples of leadership best practices and management strategies.
 
-* The Center for Clinical and Translational Science (CCTS) at Ohio State University offers a toolkit titled <a href="https://ccts.osu.edu/content/project-management-research" target="_blank">"Project Management for Research"</a>. This toolkit provides various tools for managing research projects, including recommendations for general project management software and tools to help manage activities from grant writing to project closeout
-
 
 ## Future Trends in Research Project Management
 

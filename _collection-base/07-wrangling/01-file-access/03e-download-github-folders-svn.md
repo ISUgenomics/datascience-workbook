@@ -217,7 +217,7 @@ To get started with the SVN tool (e.g., to check if you have it installed) see s
     ```
 
 2. Go to the online repository, find a file you want to download and click on it to open its preview. Copy the URL from the address bar in the web browser. <br>
-    *As an example, let's use the* `bin_data.py` *file located in the <a href="https://github.com/ISUgenomics/data_wrangling/bin_data/app" target="_blank">bin_data/app  ⤴</a> folder of the **data_wrangling** GitHub repo:*
+    *As an example, let's use the* `bin_data.py` *file located in the <a href="https://github.com/ISUgenomics/data_wrangling/tree/main/bin_data/app" target="_blank">bin_data/app  ⤴</a> folder of the **data_wrangling** GitHub repo:*
     ![01-svn_download_repo_file.png]({{ images_path }}/01-svn_download_repo_file.png)
 
 3. Now, go back to the terminal window to download only the selected file. First, type `svn export` and paste the copied URL.

@@ -225,7 +225,7 @@ All the sections 1-5 should be saved together in a file with a `.py` extension, 
 python dash_app.py
 ```
 
-Then, your app can be explored in any web browser at <a href="http://127.0.0.1:8050" target="_blank">http://127.0.0.1:8050</a>.
+Then, your app can be explored in any web browser at <http://127.0.0.1:8050>.
 
 <em class="c-alert bold">Try the [Minimal Dash App](#minimal-dash-app) example.</em>
 
@@ -280,7 +280,7 @@ Finally, the app is deployed on a local Python server with `app.run(debug=True)`
 python dash_app.py
 ```
 
-**5. Explore:** Open your web browser and navigate to <a href="http://127.0.0.1:8050" target="_blank">http://127.0.0.1:8050</a> to see your app.
+**5. Explore:** Open your web browser and navigate to <http://127.0.0.1:8050> to see your app.
 
 ![python-dash-minimal-app]({{ images_path }}/dash-minimal-app.png)
 

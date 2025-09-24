@@ -30,7 +30,7 @@ However, there are **some tools that can be downloaded and used offline** withou
 * <a href="http://www.cellillustrator.com/" target="_blank">Cell Illustrator  ⤴</a> is a tool that enables biologists to create, visualize and simulate `genetic` regulatory and `biochemical` reaction networks.
 * <a href="https://cytoscape.org/" target="_blank">Cytoscape  ⤴</a> is a free open-source software for visualizing `complex networks` and integrating these with any type of attribute data.
 * <a href="https://pathvisio.github.io/" target="_blank">PathVisio  ⤴</a> is a free open-source pathway analysis and drawing software for drawing, editing, and analyzing `biological pathways`.
-* <a href="https://www.perkinelmer.com/product/chemdraw-professional-chemdrawpro" target="_blank">ChemDraw  ⤴</a> is a leading `chemical` drawing tool used by chemists and biochemists.
+* <a href="https://revvitysignals.com/products/research/chemdraw" target="_blank">ChemDraw  ⤴</a> is a leading `chemical` drawing tool used by chemists and biochemists.
 * <a href="https://www.gplates.org/" target="_blank">GPlates  ⤴</a> is a plate tectonics tool for interactive cutting-edge `geoscience` research and visualization.
 
 

@@ -139,7 +139,7 @@ To begin using Adobe Creative Cloud, you need to create an Adobe ID and sign up 
 
 Follow these steps to sign up:
 
-**1.** Visit the Adobe Creative Cloud website at <a href="www.adobe.com/creativecloud.html" target="_blank">www.adobe.com/creativecloud.html  ⤴</a>  <br>
+**1.** Visit the Adobe Creative Cloud website at <a href="https://www.adobe.com/creativecloud.html" target="_blank">https://www.adobe.com/creativecloud.html  ⤴</a>  <br>
 **2. Choose your plan.** <br>*Click on the “Plans & Pricing” section to choose the best plan for your needs.*
 
 <div class="protip" markdown="1">

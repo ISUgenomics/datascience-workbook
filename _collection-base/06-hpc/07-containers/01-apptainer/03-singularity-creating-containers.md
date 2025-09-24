@@ -74,7 +74,7 @@ Bootstrap:shub
 From:ResearchIT/spack-singularity:openmpi
 ```
 
-Here is an example where we use a prebuilt singularity container that has spack installed.  [Spack](https://spack.io/) is community driven package manager that attempts to improve scientific reproducibility by providing installation methods for software installation. By combining spack methods with container recipes we can capture both the reproducibility of installation but also the entire environment.  In addition, spack makes creating singularity containers extremely straight forward so long as the [package is found in spack](http://spack.readthedocs.io/en/latest/package_list.html).
+Here is an example where we use a prebuilt singularity container that has spack installed.  [Spack](https://spack.io/) is community driven package manager that attempts to improve scientific reproducibility by providing installation methods for software installation. By combining spack methods with container recipes we can capture both the reproducibility of installation but also the entire environment.  In addition, spack makes creating singularity containers extremely straight forward so long as the [package is found in spack](https://spack.readthedocs.io/en/latest/).
 
 #### Example prepare_genome_modules
 

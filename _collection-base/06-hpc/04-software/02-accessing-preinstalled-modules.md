@@ -205,7 +205,7 @@ module load R/4.0.3-openblas-0.3.9
 Typical **module names** for other data analysis tools: `scipy`, `matlab`, `octave`, and for python: `pandas`, `numpy`, `matplotlib`, `seaborn`, `plotly`.
 
 ### *4. Deep learning framework*
-Many popular deep learning frameworks can be made available as modules on an HPC system, including <a href="https://www.tensorflow.org/" target="_blank">TensorFlow  ⤴</a>, <a href="https://pytorch.org/" target="_blank">PyTorch  ⤴</a>, <a href="http://caffe.berkeleyvision.org/" target="_blank">Caffe  ⤴</a>, <a href="http://www.deeplearning.net/software/theano/" target="_blank">Theano  ⤴</a>, and <a href="https://keras.io/" target="_blank">Keras  ⤴</a>.
+Many popular deep learning frameworks can be made available as modules on an HPC system, including <a href="https://www.tensorflow.org/" target="_blank">TensorFlow  ⤴</a>, <a href="https://pytorch.org/" target="_blank">PyTorch  ⤴</a>, <a href="http://caffe.berkeleyvision.org/" target="_blank">Caffe  ⤴</a>, <a href="https://pypi.org/project/Theano/" target="_blank">Theano  ⤴</a>, and <a href="https://keras.io/" target="_blank">Keras  ⤴</a>.
 
 <div class="example" markdown="1">
 *Loading a specific version of a `pytorch` deep learning framework:*
@@ -247,5 +247,5 @@ Both <a class="t-links" href="612.1">SCINet HPC</a> clusters, <a class="t-links"
 
 ## **ISU HPC modules**
 Both <a class="t-links" href="613.1">ISU HPC</a> clusters, <a class="t-links" href="613.3">Nova</a> and <a class="t-links" href="613.2">Condo</a> use the Environment Modules package. <br>Learn more from ISU resources:
-* <a href="https://www.hpc.iastate.edu/guides/nova/software" target="_blank">Environment Modules on Nova  ⤴</a>
-* <a href="https://www.hpc.iastate.edu/guides/condo-2017/software" target="_blank">Environment Modules on Condo  ⤴</a>
+* <a href="https://research.it.iastate.edu/getting-started-with-modules" target="_blank">Environment Modules on Nova  ⤴</a>
+

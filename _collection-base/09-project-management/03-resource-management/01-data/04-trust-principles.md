@@ -54,7 +54,7 @@ The TRUST Principles were **proposed by a collaborative group of experts in the 
 
 The TRUST Principles were **published in June 2020**, <a href="https://www.nature.com/articles/s41597-020-0486-7" target="_blank"><i>The TRUST Principles for digital repositories</i>  ⤴</a>. This publication marked the formal introduction of these principles to the scientific and data repository communities, promoting a standardized approach to digital data preservation.
 
-The TRUST Principles were implemented to complement the FAIR Principles, focusing on ensuring that digital repositories maintain Transparency, Responsibility, User-focus, Sustainability, and appropriate Technology. They <b>address the need for <a href="https://www.crl.edu/archiving-preservation/digital-archives/metrics" target="_blank">trustworthy digital repositories (TDRs)</a> that can preserve data over time</b> while adapting to technological and stakeholder changes. By doing so, they play a critical role in maintaining the value of data and supporting the principles of Open Science.
+The TRUST Principles were implemented to complement the FAIR Principles, focusing on ensuring that digital repositories maintain Transparency, Responsibility, User-focus, Sustainability, and appropriate Technology. They <b>address the need for <a href="https://en.wikipedia.org/wiki/Trustworthy_Repositories_Audit_%26_Certification" target="_blank">trustworthy digital repositories (TDRs)</a> that can preserve data over time</b> while adapting to technological and stakeholder changes. By doing so, they play a critical role in maintaining the value of data and supporting the principles of Open Science.
 
 
 # TRUST in your Research
@@ -101,7 +101,6 @@ There are specific resources and tools dedicated to supporting the TRUST princip
 | resource | brief about |
 |----------|-------------|
 | <b><a href="https://www.coretrustseal.org/" target="_blank">CoreTrustSeal</a></b> | CoreTrustSeal  is a core certification for data repositories, ensuring they meet specific standards related to transparency, responsibility, user focus, sustainability, and technology. |
-| <a href="https://www.crl.edu/archiving-preservation/digital-archives/metrics-assessing-and-certifying/trac" target="_blank">TRAC</a> | Trusted Repository Audit Checklist (TRAC) is a checklist developed by the Center for Research Libraries (CRL), provides metrics for evaluating digital repositories in areas like administration, policy, object handling, and technology. |
 | <a href="https://www.iso.org/standard/56510.html" target="_blank">ISO 16363</a> | ISO 16363 for Audit and Certification of Trustworthy Digital Repositories is an international standard providing a framework for assessing the trustworthiness of digital repositories. |
 | <a href="https://public.ccsds.org/Pubs/652x0m1.pdf" target="_blank">RACWG</a> | Repository Audit and Certification Working Group (RACWG) is part of the Consultative Committee for Space Data Systems (CCSDS). This group works on developing auditing standards for digital repositories. |
 | <b><a href="https://www.dcc.ac.uk/" target="_blank">DCC</a></b> | Digital Curation Centre (DCC) offers tools and guidance for data management, including aspects relevant to TDRs and compliance with TRUST principles, <i>"Because good research needs good data"</i>. |
@@ -132,7 +131,7 @@ Embracing the TRUST principles in managing your research data is more than just 
 1. **Select the Right Repository** <br>
 Choose digital repositories that are committed to the TRUST principles. This choice ensures your data is managed with the highest degree of transparency, security, and sustainability. <br> <i>For example, repositories with <a href="https://www.coretrustseal.org/" target="_blank">CoreTrustSeal</a> certification are often a safe bet, as they are recognized for meeting strict trustworthiness criteria.</i>
 
-  A list of <a href="hhttps://amt.coretrustseal.org/certificates" target="_blank">CoreTrustSeal certified data repositories  ⤴</a>, examples include:
+  A list of <a href="https://amt.coretrustseal.org/certificates" target="_blank">CoreTrustSeal certified data repositories  ⤴</a>, examples include:
 
   * <a href="https://wwpdb.org/" target="_blank">Worldwide Protein Data Bank</a>
   * <a href="https://www.ncmi.cn/" target="_blank">Population Health Data Archive</a>

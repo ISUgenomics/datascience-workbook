@@ -28,7 +28,7 @@ attributes: ["example", "automation"]
 Written communication is required in almost every informatics position. The majority of individuals that we will be communicating results will be using either Microsoft Office Word or Apple's Pages.
 
 * Apple Suite (Keynote, Numbers, Pages) should be pre-installed on your MacBook Pro.
-* Microsoft Office Suite is available at <a href="https://softwarekeep.com/office-for-mac" target="_blank">https://softwarekeep.com/office-for-mac</a>. The Iowa State community can download the entire toolkit with a free academic license through Okta Application Dashboard, available at <a href="https://web.iastate.edu/signons" target="_blank">https://web.iastate.edu/signons</a>. Once the package is downloaded, the automatic installer will guide you through the process. New tools will be available in the *Applications* on your Mac. Along with the MS package you will be equipped with office tools:
+* Microsoft Office Suite is available at <a href="https://www.microsoft.com/en-us/microsoft-365/mac/microsoft-365-for-mac" target="_blank">https://www.microsoft.com/en-us/microsoft-365/mac/microsoft-365-for-mac</a>. The Iowa State community can download the entire toolkit with a free academic license through My Apps Dashboard, available at <a href="https://myapps.microsoft.com/" target="_blank">https://myapps.microsoft.com/</a>. Once the package is downloaded, the automatic installer will guide you through the process. New tools will be available in the *Applications* on your Mac. Along with the MS package you will be equipped with office tools:
   * **Word** - a word processing software, which offers DOC/DOCX formats,
   * **Excel** - a spreadsheet creator, which features calculation or computation capabilities, graphing tools, and pivot tables,
   * **Powerpoint** - a presentation and slideshow maker,
@@ -38,7 +38,7 @@ Written communication is required in almost every informatics position. The majo
 
 ### Adobe for Graphic and Design
 
-Adobe Inc. delivers comprehensive solutions for digital media, including Video, Design, Photography, and the Web. The applications can be installed from the <a href="https://www.adobe.com/creativecloud.html" target="_blank">Creative Cloud</a> platform. Iowa State has a license for these apps in Okta Application Dashboard, available at <a href="https://web.iastate.edu/signons" target="_blank">https://web.iastate.edu/signons</a>. Otherwise, it is ~$30/month for students/faculty.
+Adobe Inc. delivers comprehensive solutions for digital media, including Video, Design, Photography, and the Web. The applications can be installed from the <a href="https://www.adobe.com/creativecloud.html" target="_blank">Creative Cloud</a> platform. Iowa State has a license for these apps in My Apps Dashboard, available at <a href="https://myapps.microsoft.com/" target="_blank">https://myapps.microsoft.com/</a>. Otherwise, it is ~$30/month for students/faculty.
 
 Along with the Adobe package you will be equipped with professional tools dedicated for:
 

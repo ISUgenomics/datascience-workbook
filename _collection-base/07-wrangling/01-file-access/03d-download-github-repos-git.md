@@ -133,7 +133,7 @@ For more information, please see the official Git documentation: <a href="https:
 </details>
 <details class="l-frame" markdown="1"><summary><b>Windows</b></summary>
 
-The easiest way to install Git on Windows is to download the official Git for Windows installer from the Git website: <a href="https://git-scm.com/download/windows" target="_blank">https://git-scm.com/download/windows  ⤴</a> <base class="mb">
+The easiest way to install Git on Windows is to download the official Git for Windows installer from the Git website: <a href="https://git-scm.com/downloads/win" target="_blank">https://git-scm.com/download/windows  ⤴</a> <base class="mb">
 *Follow the instructions in the installer to complete the installation process. After installation, you can access Git from the Windows command prompt or from Git Bash, which is included with the Git for Windows installation.*
 </details>
 </div>

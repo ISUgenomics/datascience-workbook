@@ -88,7 +88,7 @@ conda activate data_graphing
 jupyter lab
 ```
 
-This will open a browser on a **localhost**, by default [http://127.0.0.1:8888](http://127.0.0.1:8888).
+This will open a browser on a **localhost**, by default <http://127.0.0.1:8888>.
 
 <!-- ![Jupyter_files_menager]({{ images_path }}/jupyter_lab.png) -->
 

@@ -62,7 +62,7 @@ iRODS is an adaptable and robust system ideal for managing complex data workflow
 
 You can use any of the standard UNIX command by adding `i` as prefix (eg., `icp` to copy, `imv` to move, `ipwd` to print working directory *etc.*).
 
-A full list of irods commands can be found <a href="https://docs.irods.org/master/icommands/user/" target="_blank">here</a>.
+A full list of irods commands can be found <a href="https://docs.irods.org/5.0.1/" target="_blank">here</a>.
 
 
 # ***What you need to use iRODS?***
@@ -121,7 +121,7 @@ This command lists the directories and files in your iRODS data space. If your e
 No module(s) or extension(s) found!
 </pre>
 
-You can either install it yourself following the guidelines <a href="https://docs.irods.org/master/getting_started/installation/#irods-setup" target="_blank">here</a> or skip installation by using the apptainer (singularity) container *(and run* `irods` *commands within the container)*. <base class="mt">
+You can either install it yourself following the guidelines <a href="https://docs.irods.org/5.0.1/getting_started/installation/" target="_blank">here</a> or skip installation by using the apptainer (singularity) container *(and run* `irods` *commands within the container)*. <base class="mt">
 
 To pull (download) the `irods` container from the (archival) Singularity Hub:
 <base class="mb">

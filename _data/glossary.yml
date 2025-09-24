@@ -358,7 +358,7 @@
   wiki: "Text_file"
   definition: "is a file that contains plain text without any formatting, typically encoded in formats such as ASCII or UTF-8. Text files can be created and edited using simple text editors like Notepad with GUI or Vim and Nano in the terminal CLI, and are commonly used for storing data, configuration settings and programming code. Text files are versatile and can be used for a variety of purposes, from writing scripts and storing logs to documenting information, making them essential in many computing tasks."
 - name: "text-manipulation"
-  wiki: "Text_Utilities"
+  wiki: "Text_processing"
   definition: "is the process of modifying and organizing text to achieve a desired format or structure. In the context of GNU Core Utilities, it involves using command-line tools like `cat`, `cut`, `tr` or `sort` to perform operations such as reading, replacing, extracting and sorting text data. These tools enable efficient and automated handling of text files, simplifying complex text processing tasks."
 - name: "timeline"
   wiki: "Milestone_(project_management)"

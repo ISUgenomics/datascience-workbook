@@ -27,7 +27,7 @@ In this section, we will cover the process of setting up Python on a local machi
 **More information from external sources**
 
 * Python official website: <a href="https://www.python.org" target="_blank">https://www.python.org  ⤴</a>
-* Wikipedia: <a href="https://en.wikipedia.org/wiki/Python_(programming_language" target="_blank">Python (programming language  ⤴</a>
+* Wikipedia: <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank">Python (programming language)  ⤴</a>
 * <a href="https://github.com/topics/python" target="_blank">List of Python projects on GitHub  ⤴</a>
 
 **Python-related sections in this workbook:**

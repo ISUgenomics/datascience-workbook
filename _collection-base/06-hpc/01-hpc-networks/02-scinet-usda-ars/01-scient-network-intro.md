@@ -251,25 +251,8 @@ To fully understand the user guides, first familiarize yourself with the <a href
 
 Explore comprehensive user guides in category: <a href="https://scinet.usda.gov/guides/#access-guides" target="_blank">Access Guides  ⤴</a>
 * <b><a href="https://scinet.usda.gov/guides/access/login#logging-in-to-scinet" target="_blank">Logging in to SCINet  ⤴</a></b>
-  * <a href="https://scinet.usda.gov/guides/access/login#using-ssh-to-connect" target="_blank">Using ssh to Connect  ⤴</a>
-  * <a href="https://scinet.usda.gov/guides/access/login#password-requirements" target="_blank">Password Requirements  ⤴</a>
-  * <a href="https://scinet.usda.gov/guides/access/login#frequently-asked-questions" target="_blank">Frequently Asked Questions  ⤴</a> :
-    * *It didn’t ask me for the Verification Code from Google Authenticator. What do I do?*
-    * *I can’t find the .ssh folder when saving my config file. Where is it located?*
-    * *My password/Google Authenticator Verification Code isn’t showing up when I type it. What is wrong?*
-    * *After creating my account and changing my temporary password, I was prompted for my cell phone. Should I include this?*
-
-
-* <b><a href="https://scinet.usda.gov/guides/access/mfa#what-is-multifactor-authentication" target="_blank">What is Multifactor Authentication?  ⤴</a></b>
-  * <a href="https://scinet.usda.gov/guides/access/mfa#google-authenticator-ga-on-android" target="_blank">Google Authenticator (GA) on Android  ⤴</a>
-  * <a href="https://scinet.usda.gov/guides/access/mfa#google-authenticator-ga-on-apple-ios-iphones-and-ipads" target="_blank">Google Authenticator (GA) on Apple iOS iPhones and iPads  ⤴</a>
-  * <a href="https://scinet.usda.gov/guides/access/mfa#authentication-on-your-computer-using-authy" target="_blank">Authentication on your computer using Authy  ⤴</a>
-  * <a href="https://scinet.usda.gov/guides/access/mfa#ga-account-reset" target="_blank">GA account reset  ⤴</a>
-
-
-* <b><a href="https://scinet.usda.gov/guides/access/vpn#scinet-vpn" target="_blank">SCINet VPN  ⤴</a></b>
-  * <a href="https://scinet.usda.gov/guides/access/vpn#anyconnect-vpn" target="_blank">AnyConnect VPN  ⤴</a>
-  * <a href="https://scinet.usda.gov/guides/access/vpn#openconnect-vpn" target="_blank">OpenConnect VPN  ⤴</a>
+  * <a href="https://scinet.usda.gov/guides/access/login/#smallstepscli-logon-troubleshooting" target="_blank">Using ssh to Connect  ⤴</a>
+  * <a href="https://scinet.usda.gov/guides/access/login/#updating-your-scinet-password" target="_blank">Password Requirements  ⤴</a>
 
 
 ## **Ceres vs. Atlas clusters**
@@ -280,7 +263,7 @@ Explore comprehensive user guides in category: <a href="https://scinet.usda.gov/
 |----------------------------|----------------------------|-------|
 |login node                  | @ceres.scinet.usda.gov     | @atlas-login.hpc.msstate.edu |
 |transfer node               | @ceres-dtn.scinet.usda.gov | @atlas-dtn.hpc.msstate.edu |
-|Open OnDemand               | <a href="http://ceres-ood.scinet.usda.gov" target="_blank">http://ceres-ood.scinet.usda.gov</a> | <a href="https://atlas-ood.hpc.msstate.edu" target="_blank">https://atlas-ood.hpc.msstate.edu</a> |
+|Open OnDemand               | <a href="https://ceres-ondemand.scinet.usda.gov/" target="_blank">https://ceres-ondemand.scinet.usda.gov/</a> | <a href="https://atlas-ood.hpc.msstate.edu" target="_blank">https://atlas-ood.hpc.msstate.eduu</a> |
 |**home** directory quota    | displayed at login ; <br>type `my_quotas` | type `quota -s` |
 |**project** directory quota | displayed at login ; <br>type `my_quotas` | default 1TB ; <br>type `/apps/bin/reportFSUsage -p proj1,proj2,proj3`|
 |preinstalled **software** <img width="160"/> | <a href="https://scinet.usda.gov/guides/software/preinstalled#software-preinstalled-on-ceres" target="_blank">Software preinstalled on Ceres  ⤴</a> <br><a href="https://scinet.usda.gov/guides/software/singularity#ceres-container-repository/" target="_blank">Ceres Container Repository  ⤴</a> <img width="300"/>| Singularity container image files in the Ceres Container Repository are synced to Atlas daily. <br>For more information about software on Atlas, see <a href="https://www.hpc.msstate.edu/computing/atlas/" target="_blank">Atlas Documentation  ⤴</a>. |
@@ -289,25 +272,24 @@ Explore comprehensive user guides in category: <a href="https://scinet.usda.gov/
 
 | feature   | Ceres               | Atlas               | notes |
 |-----------|---------------------|---------------------|-------|
-|job scheduler | slurm | slurm | <a href="https://slurm.schedmd.com/quickstart.html" target="_blank">documentation  ⤴</a> ; <a href="https://scinet.usda.gov/guides/use/running-jobs#useful-slurm-commands" target="_blank">Useful SLURM Commands  ⤴</a> ; <br><a href="https://scinet.usda.gov/guides/use/running-jobs#interactive-mode" target="_blank">Interactive Mode (use node live) ⤴</a> ; <br><a href="https://scinet.usda.gov/guides/use/running-jobs#batch-mode" target="_blank">Batch Mode (submit job) ⤴</a> |
+|job scheduler | slurm | slurm | <a href="https://slurm.schedmd.com/quickstart.html" target="_blank">documentation  ⤴</a> ; <a href="https://scinet.usda.gov/guides/use/running-jobs#useful-slurm-commands" target="_blank">Useful SLURM Commands  ⤴</a> ; <br><a href="https://scinet.usda.gov/guides/use/slurm#interactive-mode" target="_blank">Interactive Mode (use node live) ⤴</a> ; <br><a href="https://scinet.usda.gov/guides/use/slurm#batch-mode" target="_blank">Batch Mode (submit job) ⤴</a> |
 |default walltime | partition’s max <br>simulation time | 15 min | see *partitions* row in this table to learn about partition’s max simulation time on Ceres <br> on Atlas max walltime depends on the selected queues|
 |default allocation | 2 cores on 1 node | 1 core on 1 node | on Ceres hyper-threading is turned on (the smallest allocation is 2 logical cores) |
-|valid account  <img width="100"/> | required <img width="420"/> | required <img width="360"/> | To see which <a href="https://scinet.usda.gov/guides/use/running-jobs#interactive-mode" target="_blank">accounts  ⤴</a> you are on, along with valid QOS's for that account, use <br>on Atlas: <br><code>sacctmgr show associations where user=$USER format=account%20,qos%50</code> <br> on Ceres: <br><code>sacctmgr -Pns show user format=account,defaultaccount </code>|
+|valid account  <img width="100"/> | required <img width="420"/> | required <img width="360"/> | To see which <a href="https://scinet.usda.gov/guides/use/slurm#slurm-accounts" target="_blank">accounts  ⤴</a> you are on, along with valid QOS's for that account, use <br>on Atlas: <br><code>sacctmgr show associations where user=$USER format=account%20,qos%50</code> <br> on Ceres: <br><code>sacctmgr -Pns show user format=account,defaultaccount </code>|
 |queues <br> *[max_walltime]*| see *partitions* row | **normal** *[14d]* <br> **debug** *[30 min]* <br> **special** <br> **priority** | on Atlas, *special* and *priority* queues must be requested and approved <br> on Ceres queues are replaced by the functional groups of nodes called partitions |
-|cores <br>per node | 72 or 80 or 96 | 48 | see <a href="https://scinet.usda.gov/guides/use/running-jobs#partitions-or-queues" target="_blank">Partitions or Queues  ⤴</a> and <a href="https://scinet.usda.gov/guides/resources/ceres#technical-overview" target="_blank">Ceres Technical Overview  ⤴</a> to learn details about logical cores per specific groups of nodes on Ceres <br>see <a href="https://scinet.usda.gov/guides/use/running-jobs#requesting-the-proper-number-of-nodes-and-cores" target="_blank">Requesting the Proper Number of Nodes and Cores  ⤴</a> |
+|cores <br>per node | 72 or 80 or 96 | 48 | see <a href="https://scinet.usda.gov/guides/use/partitions-queues#partitions-or-queues" target="_blank">Partitions or Queues  ⤴</a> and <a href="https://scinet.usda.gov/guides/resources/ceres#technical-overview" target="_blank">Ceres Technical Overview  ⤴</a> to learn details about logical cores per specific groups of nodes on Ceres <br>see <a href="https://scinet.usda.gov/guides/use/resource-allocation#resource-allocation" target="_blank">Requesting the Proper Number of Nodes and Cores  ⤴</a> |
 |partitions <br> *[nodes/mem GB/time]* | **short** *[41/384/48h]* <br> **medium** *[32/384/7d]* <br> **long** *[11/384/21d]* <br> **long60** *[2/384/60d]* <br> **debug** *[2/384/1h]* <br> **mem** *[4/1250/7d]* <br> **mem768** *[1/768/7d]* <br> **longmem** *[1/1250/1000h]* <br><br> + priority nodes* | **atlas** *[228/384]* <br> **bigmem** *[8/1536]* <br> **gpu** *[4/384]* <br> **service** *[2/192]* <br> **development** *[2/768]* <br> **development-gpu** *[2/384]* <br><br> | see <a href="https://scinet.usda.gov/guides/use/running-jobs#partitions-or-queues" target="_blank">Partitions or Queues  ⤴</a> to learn details about ***priority nodes on Ceres** |
 
 
 To dive in a more comprehensive description, see detailed SCINet guides about
-<b><a href="https://scinet.usda.gov/guides/resources/ceresatlasdifferences#differences-between-ceres-and-atlas" target="_blank">Differences between Ceres and Atlas  ⤴</a></b>, including sections:
-* <a href="https://scinet.usda.gov/guides/resources/ceresatlasdifferences#quotas" target="_blank">Quotas [project & home directories]  ⤴</a>
-* <a href="https://scinet.usda.gov/guides/resources/ceresatlasdifferences#software" target="_blank">Preinstalled software  ⤴</a>
-* <a href="https://scinet.usda.gov/guides/resources/ceresatlasdifferences#submitting-a-job" target="_blank">Submitting a Job  ⤴</a>
-  * <a href="https://scinet.usda.gov/guides/resources/ceresatlasdifferences#internet-connection" target="_blank">Internet Connection  ⤴</a>
-  * <a href="https://scinet.usda.gov/guides/resources/ceresatlasdifferences#slurm-account" target="_blank">Slurm account  ⤴</a>
-  * <a href="https://scinet.usda.gov/guides/resources/ceresatlasdifferences#partitions" target="_blank">Partitions  ⤴</a>
-  * <a href="https://scinet.usda.gov/guides/resources/ceresatlasdifferences#nodes" target="_blank">Nodes  ⤴</a>
-  * <a href="https://scinet.usda.gov/guides/resources/ceresatlasdifferences#salloc" target="_blank">salloc command ⤴</a>
+<b><a href="https://scinet.usda.gov/guides/resources/CeresAtlasDifferences#differences-between-ceres-and-atlas" target="_blank">Differences between Ceres and Atlas  ⤴</a></b>, including sections:
+* <a href="https://scinet.usda.gov/guides/resources/CeresAtlasDifferences#quotas" target="_blank">Quotas [project & home directories]  ⤴</a>
+* <a href="https://scinet.usda.gov/guides/resources/CeresAtlasDifferences#software" target="_blank">Preinstalled software  ⤴</a>
+* <a href="https://scinet.usda.gov/guides/resources/CeresAtlasDifferences#submitting-a-job" target="_blank">Submitting a Job  ⤴</a>
+  * <a href="https://scinet.usda.gov/guides/resources/CeresAtlasDifferences#slurm-account" target="_blank">Slurm account  ⤴</a>
+  * <a href="https://scinet.usda.gov/guides/resources/CeresAtlasDifferences#partitions" target="_blank">Partitions  ⤴</a>
+  * <a href="https://scinet.usda.gov/guides/resources/CeresAtlasDifferences#nodes" target="_blank">Nodes  ⤴</a>
+  * <a href="https://scinet.usda.gov/guides/resources/CeresAtlasDifferences#salloc" target="_blank">salloc command ⤴</a>
 
 
 ### *Ceres Guides*
@@ -315,7 +297,7 @@ To dive in a more comprehensive description, see detailed SCINet guides about
 <div class="required before" data-before="" markdown="1">
 Ceres login node: <b>@ceres.scinet.usda.gov</b> <br>
 Ceres transfer node: <b>@ceres-dtn.scinet.usda.gov</b> <base class="mb">
-Ceres Open OnDemand: <b><a href="http://ceres-ood.scinet.usda.gov" target="_blank">http://ceres-ood.scinet.usda.gov  ⤴</a></b> <br>
+Ceres Open OnDemand: <b><a href="https://ceres-ondemand.scinet.usda.gov/" target="_blank">https://ceres-ondemand.scinet.usda.gov/  ⤴</a></b> <br>
 **Ceres Getting started tutorial**: <a class="t-links" href="612.3"></a> *(in this workbook)*
 </div>
 
@@ -328,14 +310,13 @@ Ceres Open OnDemand: <b><a href="http://ceres-ood.scinet.usda.gov" target="_blan
 
 * *see* <a href="https://scinet.usda.gov/guides/access/login#logging-in-to-scinet" target="_blank">Logging in to SCINet  ⤴</a><br>
   * <b>Ceres login node:</b> @ceres.scinet.usda.gov
-  * <a href="https://scinet.usda.gov/guides/access/cli#using-linux-command-line-interface" target="_blank">Using Linux Command Line Interface  ⤴</a>
+  * <a href="https://scinet.usda.gov/guides/use/cli#linux-command-line-interface" target="_blank">Using Linux Command Line Interface  ⤴</a>
   * <a href="https://scinet.usda.gov/guides/access/open-ondemand#open-ondemand-interface-guide" target="_blank">Using web-based Open OnDemand Interface  ⤴</a>
-    * Access **Ceres OpenOnDemand** at <a href="http://ceres-ood.scinet.usda.gov/" target="_blank">http://ceres-ood.scinet.usda.gov</a> and see the <a href="https://scinet.usda.gov/guides/access/open-ondemand#access" target="_blank">tutorial  ⤴</a>
+    * Access **Ceres OpenOnDemand** at <a href="https://ceres-ondemand.scinet.usda.gov/" target="_blank">https://ceres-ondemand.scinet.usda.gov/</a> 
     * <a href="https://scinet.usda.gov/guides/access/open-ondemand#using-ood" target="_blank">Explore OOD guides  ⤴</a>
-      * <a href="https://scinet.usda.gov/guides/access/open-ondemand#shell-access" target="_blank">Open Shell  ⤴</a>
-      * <a href="https://scinet.usda.gov/guides/access/open-ondemand#files" target="_blank">Open File Manager  ⤴</a>
-      * <a href="https://scinet.usda.gov/guides/access/open-ondemand#interactive-apps" target="_blank">Launch Interactive Apps  ⤴</a>
-      * <a href="https://scinet.usda.gov/guides/access/open-ondemand#logging-out" target="_blank">Log out  ⤴</a>
+      * <a href="https://scinet.usda.gov/guides/use/open-ondemand#shell-access" target="_blank">Open Shell  ⤴</a>
+      * <a href="https://scinet.usda.gov/guides/use/open-ondemand#files" target="_blank">Open File Manager  ⤴</a>
+      * <a href="https://scinet.usda.gov/guides/use/open-ondemand#launching-interactive-apps" target="_blank">Launch Interactive Apps  ⤴</a>
 
 
 * <b>Software on Ceres:</b>
@@ -384,14 +365,13 @@ In the one-page documentation you will find the sections listed below. To naviga
 
 * *see* <a href="https://scinet.usda.gov/guides/access/login#logging-in-to-scinet" target="_blank">Logging in to SCINet  ⤴</a><br>
   * <b>Atlas login node:</b> @atlas-login.hpc.msstate.edu
-  * <a href="https://scinet.usda.gov/guides/access/cli#using-linux-command-line-interface" target="_blank">Using Linux Command Line Interface  ⤴</a>
+  * <a href="https://scinet.usda.gov/guides/use/cli#linux-command-line-interface" target="_blank">Using Linux Command Line Interface  ⤴</a>
   * <a href="https://scinet.usda.gov/guides/access/open-ondemand#open-ondemand-interface-guide" target="_blank">Using web-based Open OnDemand Interface  ⤴</a>
     * Access **Atlas OpenOnDemand** at <a href="https://atlas-ood.hpc.msstate.edu/" target="_blank">https://atlas-ood.hpc.msstate.edu</a>
     * <a href="https://scinet.usda.gov/guides/access/open-ondemand#using-ood" target="_blank">Explore OOD guides  ⤴</a>
-      * <a href="https://scinet.usda.gov/guides/access/open-ondemand#shell-access" target="_blank">Open Shell  ⤴</a>
-      * <a href="https://scinet.usda.gov/guides/access/open-ondemand#files" target="_blank">Open File Manager  ⤴</a>
-      * <a href="https://scinet.usda.gov/guides/access/open-ondemand#interactive-apps" target="_blank">Launch Interactive Apps  ⤴</a>
-      * <a href="https://scinet.usda.gov/guides/access/open-ondemand#logging-out" target="_blank">Log out  ⤴</a>
+      * <a href="https://scinet.usda.gov/guides/use/open-ondemand#shell-access" target="_blank">Open Shell  ⤴</a>
+      * <a href="https://scinet.usda.gov/guides/use/open-ondemand#files" target="_blank">Open File Manager  ⤴</a>
+      * <a href="https://scinet.usda.gov/guides/use/open-ondemand#launching-interactive-apps" target="_blank">Launch Interactive Apps  ⤴</a>
 
 
 * <b>Software on Atlas:</b>
@@ -412,7 +392,7 @@ To learn on how to manage data on SCINet, explore comprehensive user guides offe
 
 * <a href="https://scinet.usda.gov/guides/data/storage#scinet-storage" target="_blank">SCINet Storage  ⤴</a>
   * <a href="https://scinet.usda.gov/guides/data/storage#quotas" target="_blank">Quotas  ⤴</a>
-    * <a href="https://scinet.usda.gov/guides/data/quotas#storage-quotas" target="_blank">my_quotas  ⤴</a>
+    * <a href="https://scinet.usda.gov/guides/resources/CeresAtlasDifferences#quotas" target="_blank">my_quotas  ⤴</a>
   * <a href="https://scinet.usda.gov/guides/data/storage#home-directories" target="_blank">Home Directories  ⤴</a>
   * <a href="https://scinet.usda.gov/guides/data/storage#project-directories" target="_blank">Project Directories  ⤴</a>
     * <b><a href="https://forms.office.com/g/wD9rYarVyn" target="_blank">Request a PROJECT directory  ⤴</a></b>

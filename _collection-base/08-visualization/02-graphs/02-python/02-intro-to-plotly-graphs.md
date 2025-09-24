@@ -375,7 +375,7 @@ to enable <a href="https://plotly.com/python/static-image-export/" target="_blan
 
 ## **Plotly Data**
 
-<a href="https://plotly.com/python/data/" target="_blank">Plotly Data</a> is a built-in module in the **Plotly** library. It includes sample datasets that can be used for testing and learning. These datasets provide convenient data for trying out Plotly’s functionalities.
+<a href="https://plotly.com/python-api-reference/generated/plotly.data.html" target="_blank">Plotly Data</a> is a built-in module in the **Plotly** library. It includes sample datasets that can be used for testing and learning. These datasets provide convenient data for trying out Plotly’s functionalities.
 
 **Import Statement:**
 ```python

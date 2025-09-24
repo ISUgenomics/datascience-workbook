@@ -149,7 +149,7 @@ A snapshot of [RevBayes](https://github.com/revbayes/revbayes): 28 contributors;
 
 * There are several options for remote hosts
 
-* You can set up your own server and host all of your repositories privately using [Gitolite](https://github.com/sitaramc/gitolite/) or [Gitosis](https://git-scm.com/book/no-nb/v1/Git-on-the-Server-Gitosis) (not recommended)
+* You can set up your own server and host all of your repositories privately using [Gitolite](https://github.com/sitaramc/gitolite/) or [Gitosis](https://git-scm.com/book/en/v2/Git-on-the-Server-The-Protocols) (not recommended)
 
 * You can use a web-based Git host
 

@@ -77,7 +77,6 @@ Effective data collection methods lay the groundwork for generating actionable i
 |social media analysis|<a href="https://www.smrfoundation.org/nodexl" target="_blank">NodeXL</a>|excel-based tool for network and content analysis|
 |web scraping for online data|<a href="https://www.octoparse.com/" target="_blank">Octoparse</a>|user-friendly tool for extracting large amounts of web data|
 |experimental data in labs|<a href="https://www.labarchives.com/" target="_blank">LabArchives</a>|electronic lab notebook for recording and sharing data|
-|biological sampling|<a href="https://ednatools.org/" target="_blank">eDNAtools</a>|facilitates the processing and analysis of eDNA samples|
 |field data in environmental studies|<a href="https://www.kobotoolbox.org/" target="_blank">KoboToolbox</a>|robust for field data collection, even offline|
 |sensor data in IoT projects|<a href="https://www.arduino.cc/" target="_blank">Arduino</a>|open-source electronics platform for building digital devices|
 
@@ -215,7 +214,7 @@ Have a clear plan in place for responding to data breaches or security incidents
 Data Sharing and Accessibility Policies encompass a set of structured guidelines and ethical practices aimed at making research data available to other researchers, the public, or both. These policies dictate how data should be shared, the extent of data accessibility, and under what conditions, ensuring that data sharing is conducted transparently, responsibly, and in a manner that respects privacy and intellectual property rights.
 
 **IMPORTANCE** <br>
-Implementing clear data sharing and accessibility policies is pivotal in promoting scientific collaboration, enhancing the transparency of research processes, and fostering innovation.  Moreover, aligning with the <a class="t-links" href="120"></a> <a href="https://datascience.101workbook.org/09-ProjectManagement/02-MANAGEMENT/03-DATA/03-fair-principles" target="_blank"> FAIR  ⤴</a> principles (Findable, Accessible, Interoperable, Reusable) ensures that shared data is easily discoverable, accessible, and usable by others, thereby maximizing the research's impact and utility.
+Implementing clear data sharing and accessibility policies is pivotal in promoting scientific collaboration, enhancing the transparency of research processes, and fostering innovation.  Moreover, aligning with the <a class="t-links" href="120"></a> <a class="t-links" href="931.2"></a> (Findable, Accessible, Interoperable, Reusable) ensures that shared data is easily discoverable, accessible, and usable by others, thereby maximizing the research's impact and utility.
 
 <div class="note" markdown="1">
 **Open Access, Open Data, and Open Science** policies are particularly relevant for data sharing and accessibility.

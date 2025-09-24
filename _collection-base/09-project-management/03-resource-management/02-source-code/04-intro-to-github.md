@@ -79,13 +79,13 @@ Before we delve into the specifics of [getting started with GitHub](#how-to-get-
 ![](https://git-scm.com/book/en/v2/book/01-introduction/images/snapshots.png)
 
 (image source:
-[https://git-scm.com](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics))
+[https://git-scm.com/](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control))
 
 * **Almost every interaction with Git happens locally.**
 
 <div style="text-align:center"><img src="https://git-scm.com/book/en/v2/book/01-introduction/images/areas.png" alt="gource" width="650" /></div>
 
-(image source [https://git-scm.com](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics))
+(image source [https://git-scm.com](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository))
 
 * **A remote host adds an additional level to a Git repository.**
 

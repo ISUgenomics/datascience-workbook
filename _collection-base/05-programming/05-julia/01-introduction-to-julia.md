@@ -32,11 +32,10 @@ These resources can provide a wealth of information, tutorials, community suppor
 
 * Official Website: <a href="https://julialang.org/" target="_blank">https://julialang.org/</a>
 * Documentation: <a href="https://docs.julialang.org/en/v1/" target="_blank">https://docs.julialang.org/en/v1/</a>
-* Learning Resources: <a href="https://learnjulia.org/" target="_blank">https://learnjulia.org/</a>
+* Learning Resources: <a href="https://julialang.org/learning/" target="_blank">https://julialang.org/learning/</a>
 * Tutorials: <a href="https://juliaacademy.com/" target="_blank">https://juliaacademy.com/</a>
 * GitHub Repository: <a href="https://github.com/JuliaLang/julia" target="_blank">https://github.com/JuliaLang/julia</a>
 * Packages:
-  * <a href="https://juliaobserver.com/" target="_blank">Julia Observer</a>
   * <a href="https://juliahub.com/ui/Home" target="_blank">JuliaHub</a>
 * Community and Forums:
   * <a href="https://discourse.julialang.org/" target="_blank">JuliaLang Discourse</a>

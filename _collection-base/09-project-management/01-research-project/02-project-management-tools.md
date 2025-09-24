@@ -354,7 +354,7 @@ Ensure understanding and management of data based on its inherent sensitivity, a
 Always have backup systems in place to recover lost data and ensure the backup locations are also secure.
 
 4. **Data Transfer Protocols** <br>
-Use secure protocols (like SFTP or HTTPS) for data transfer. <span style="color: #ff3870;font-weight: 500;">Learn more in section <a href="https://datascience.101workbook.org/07-DataParsing/00-DataParsing-LandingPage" target="_blank">07. Data Acquisition and Wrangling</a>.</span>
+Use secure protocols (like SFTP or HTTPS) for data transfer. <span style="color: #ff3870;font-weight: 500;">Learn more in section <a class="t-links" href="700"></a>.</span>
 
 5. **Size Considerations** <br>
 Big data requires robust infrastructure for transfer and storage, ensuring high-speed, stable connections, and adequate storage space.

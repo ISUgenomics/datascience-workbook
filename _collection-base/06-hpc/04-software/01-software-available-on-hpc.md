@@ -48,7 +48,7 @@ The software available on a high-performance computing (HPC) system can vary dep
 
 | category | examples | description |
 |----------|----------|-------------|
-| <b>distributed file systems</b>      | <i><a href="https://www.lustre.org" target="_blank">Lustre  ⤴</a>, <a href="https://www.gluster.org" target="_blank">GlusterFS  ⤴</a>, <a href="https://www.ibm.com/docs/en/gpfs/4.1.0.4?topic=guide-introducing-general-parallel-file-system" target="_blank">GPFS  ⤴</a></i> | enable efficient data sharing and collaboration among multiple users |
+| <b>distributed file systems</b>      | <i><a href="https://www.lustre.org" target="_blank">Lustre  ⤴</a>, <a href="https://www.gluster.org" target="_blank">GlusterFS  ⤴</a>, GPFS</i> | enable efficient data sharing and collaboration among multiple users |
 | <b>backup and archiving software</b> | <i><a href="http://www.amanda.org" target="_blank">Amanda  ⤴</a>, <a href="https://www.baculasystems.com" target="_blank">Bacula  ⤴</a>, <a href="https://www.ibm.com/docs/en/tsm/7.1.0?topic=servers-tivoli-storage-manager-overview" target="_blank">Tivoli Storage Manager  ⤴</a></i> | protect data by creating regular backups and archiving older data to long-term storage |
 | <b>data transfer software</b>        | <i><a href="https://www.globus.org/data-transfer" target="_blank">Globus  ⤴</a>, <a href="https://docs.nersc.gov/services/gridftp/" target="_blank">GridFTP  ⤴</a>, <a href="https://www.ibm.com/products/aspera" target="_blank">Aspera  ⤴</a></i> | transfer large amounts of data quickly and efficiently between HPC systems and other storage or computing machines |
 | <b>data cataloging and metadata management software</b> | <i><a href="https://irods.org" target="_blank">iRODS  ⤴</a>, <a href="https://dataverse.org" target="_blank">Dataverse  ⤴</a>, <a href="https://www.xnat.org" target="_blank">XNAT  ⤴</a></i> | manage and organize large amounts of data, and provide search capabilities |
@@ -332,8 +332,7 @@ Software available on the **SCINet HPC systems**:
 * <a href="https://scinet.usda.gov/guides/software#scinet-software" target="_blank">SCINet Software  ⤴</a>
 
 Software available on the **ISU HPC systems**:
-* <a href="https://www.hpc.iastate.edu/guides/nova/software" target="_blank">Software on Nova  ⤴</a>
-* <a href="https://www.hpc.iastate.edu/guides/condo-2017/software" target="_blank">Software on Condo  ⤴</a>
+* <a href="https://research.it.iastate.edu/getting-started-with-modules" target="_blank">Software on Nova  ⤴</a>
 
 
 ## **Ask the system administrator**

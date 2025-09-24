@@ -104,7 +104,7 @@ Some popular standalone scientific infographics tools include:
 
 | tool | description |
 |------|-------------|
-|<a href="https://www.gimp.org/)" target="_blank">GIMP  ⤴</a>|GIMP (GNU Image Manipulation Program) is a **free and open-source raster graphics editor** that can be used to create scientific infographics. It offers a range of advanced features and customization options.|
+|<a href="https://www.gimp.org/" target="_blank">GIMP  ⤴</a>|GIMP (GNU Image Manipulation Program) is a **free and open-source raster graphics editor** that can be used to create scientific infographics. It offers a range of advanced features and customization options.|
 |<a href="https://inkscape.org/" target="_blank">Inkscape  ⤴</a>|Inkscape is a **free and open-source vector graphics editor** that can be used to create scientific infographics, diagrams, and illustrations. It offers a range of advanced features and customization options.|
 |<a href="https://www.adobe.com/products/illustrator.html" target="_blank">Adobe Illustrator  ⤴</a>|Adobe Illustrator is a professional **vector graphics editor** that allows users to create high-quality scientific infographics. It offers a wide range of customization options, but is **more expensive and complex** than other tools.||
 |<a href="https://www.coreldraw.com/" target="_blank">CorelDRAW  ⤴</a>|CorelDRAW is a professional **vector graphics editor** that can be used to create high-quality scientific infographics, diagrams, and illustrations. It offers a wide range of customization options, but is **more expensive and complex** than other tools.|

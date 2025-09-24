@@ -198,7 +198,7 @@ Once you have all dependencies installed (python=3.9, pandas, plotly) (and activ
 ```bash
 jupyter Lab
 ```
-*That will open your Jupyter session in a web browser on localhost with a default URL: <a href="http://localhost:8889/lab" target="_blank">http://localhost:8889/lab  ⤴</a>.*
+*That will open your Jupyter session in a web browser on localhost with a default URL: <http://localhost:8889/lab>.*
 <img width="1000" src="{{ images_path }}/04_jupyter_launch.gif">
 
 Once the platform has loaded, you can start a new notebook:

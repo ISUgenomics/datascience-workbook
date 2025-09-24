@@ -67,7 +67,7 @@ Once logged in you can start using Nova cluster and submit jobs using <a class="
 SLURM is used to allocate memory and processors to an input job on Nova.
 </div>
 
-If not familiar with the SLURM syntax, use this <a href="https://www.hpc.iastate.edu/guides/nova/slurm-script-generator-for-nova" target="_blank">Script generator for Nova ⤴</a>, input your requirements and it will generate a text script. You can then copy this script in a text file, add your commands at the bottom and then submit the job.
+If not familiar with the SLURM syntax, use this <a href="https://research.it.iastate.edu/slurm-script-generator" target="_blank">Script generator for Nova ⤴</a>, input your requirements and it will generate a text script. You can then copy this script in a text file, add your commands at the bottom and then submit the job.
 
 <div class="more" markdown="1">
 Check out the <a class="t-links" href="651.2">Introduction to SLURM</a> to learn about running your job on Nova or any other HPC Cluster.
@@ -108,6 +108,6 @@ squeue -u your_netID
 
 <div class="more" markdown="1">
 Check out the following:
-* <a href="https://www.hpc.iastate.edu/guides/nova/software" target="_blank">System and Application Software ⤴</a> guide for Nova from ISU
+* <a href="https://research.it.iastate.edu/getting-started-with-modules" target="_blank">Getting Started with Software Modules ⤴</a> guide for Nova from ISU
 * <a class="t-links" href="641"></a> in this workbook
 </div>

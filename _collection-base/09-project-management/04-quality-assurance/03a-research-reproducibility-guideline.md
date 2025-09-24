@@ -511,7 +511,7 @@ Conda also let's you run separate instances of the same software, for example, m
 <br><br>
 
 ## Accessing Conda on Ceres
-Conda is available on Ceres without users having to install it themselves. Actually, it's recommended that users NOT install Conda themselves. Conda can be accessed through the software module system or by logging into the system using JupyterHub as described below. See also the [Guide to User-Installed Software on Ceres with Conda](https://scinet.usda.gov/guide/conda/) on the SCINet website.
+Conda is available on Ceres without users having to install it themselves. Actually, it's recommended that users NOT install Conda themselves. Conda can be accessed through the software module system or by logging into the system using JupyterHub as described below. See also the [Guide to User-Installed Software on Ceres with Conda](https://scinet.usda.gov/guides/software/conda) on the SCINet website.
 <br>
 
 ### From the Module System
@@ -529,7 +529,7 @@ You will then want to immediately issue the following command which will put you
 source activate
 ```
 
-Note: If you forget to ```source activate``` and later try to ```conda activate my_env```, you will get a command not found error and will be instructed to ```conda init```. Despite the standard output instructions, **DO NOT EVER TYPE ```conda init``` ON THE CERES HPC**. It will make a permanent modification to your $PATH that doesn't play nice with the software module system or with Jupyter. If you accidentally ```conda init``` you will have to modify your .bashrc file to remove any conda initialization info. See the section of the [Guide to User-Installed Software on Ceres with Conda](https://scinet.usda.gov/guide/conda/) highlighted in red for more detail about how to fix your .bashrc in this case.
+Note: If you forget to ```source activate``` and later try to ```conda activate my_env```, you will get a command not found error and will be instructed to ```conda init```. Despite the standard output instructions, **DO NOT EVER TYPE ```conda init``` ON THE CERES HPC**. It will make a permanent modification to your $PATH that doesn't play nice with the software module system or with Jupyter. If you accidentally ```conda init``` you will have to modify your .bashrc file to remove any conda initialization info. See the section of the [Guide to User-Installed Software on Ceres with Conda](https://scinet.usda.gov/guides/software/conda) highlighted in red for more detail about how to fix your .bashrc in this case.
 
 After you ```source activate``` and are placed in the base environment, you will then be able to ```conda activate my_env``` with no problems.
 
@@ -714,7 +714,7 @@ conda create --name session3_env --file ~/.conda/envs/session3_env_spec_file.txt
 
 During the Session 3 Tutorial we ran the tutorial in a container that already contained all the necessary software but use of a container wasn't totally necessary. The session3_env Conda environment we have created also contains all the software needed to run it.
 
-To run the Session3 Tutorial using your new session3_env Conda environment, navigate in JupyterLab to where you saved the Session 3 .ipynb file. If you didn't participate in Session 3, go to the [workshop website tutorial page](https://kerriegeil.github.io/SCINET-GEOSPATIAL-RESEARCH-WG/content/2-tutorials.html) for instructions on how to download the .ipynb file.
+To run the Session3 Tutorial using your new session3_env Conda environment, navigate in JupyterLab to where you saved the Session 3 .ipynb file. If you didn't participate in Session 3, go to the [workshop website tutorial page](https://kerriegeil.github.io/SCINET-GEOSPATIAL-RESEARCH-WG/) for instructions on how to download the .ipynb file.
 
 Once you have the Session 3 Jupyter notebook open, on the top right of the notebook you should be able to click to select a Kernel. In the Select Kernel window that pops up choose you session3_env from the dropdown list and then click Select. You are now running the Jupyter notebook in your session3_env Conda environment!
 
@@ -731,7 +731,7 @@ Containers are a virtualized run-time environment- they are like handing someone
 
 If you've ever written code on one machine and then tried to run it without success on a different machine, then you could benefit from using containers. As you can imagine, using containers to make your code portable means that sharing code between collaborators is very simple. And portable code makes it much easier for others to reproduce your results.
 
-This tutorial <mark>focuses on creating container images with Docker and running the images on the Ceres HPC with Singularity</mark>. You can also create container images with Singularity and store/version them on Singularity-hub but we have chosen to feature a mostly Docker workflow because Docker container images are currently much more common (outside the HPC ecosystem) than Singularity. For more detailed information about singularity on Ceres, see [this SCINet page](https://scinet.usda.gov/guide/singularity).
+This tutorial <mark>focuses on creating container images with Docker and running the images on the Ceres HPC with Singularity</mark>. You can also create container images with Singularity and store/version them on Singularity-hub but we have chosen to feature a mostly Docker workflow because Docker container images are currently much more common (outside the HPC ecosystem) than Singularity. For more detailed information about singularity on Ceres, see [this SCINet page](https://scinet.usda.gov/guides/software/singularity).
 
 <br>
 
