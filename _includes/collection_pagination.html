@@ -22,17 +22,17 @@
 {% if prevPage or nextPage %}
   <nav class="pagination">
     {% if prev >= 0 and prevPage %}
-      <a href="{{ prevPage.url | relative_url }}" class="pagination--pager" title="{{ prevPage.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "previous" }}</a>
+      <a href="{{ prevPage.url | relative_url }}" class="pagination--pager font-07" title="{{ prevPage.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "previous" }}</a>
     {% else %}
-      <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_previous | default: "previous" }}</a>
+      <a href="#" class="pagination--pager disabled font-07">{{ site.data.ui-text[site.locale].pagination_previous | default: "previous" }}</a>
     {% endif %}
     {% if nextPage %}
-      <a href="{{ nextPage.url | relative_url }}" class="pagination--pager" title="{{ nextPage.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
+      <a href="{{ nextPage.url | relative_url }}" class="pagination--pager font-07" title="{{ nextPage.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
     {% else %}
       <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
     {% endif %}
-    <a href="#top-of-page" class="pagination--pager" title="Go to top">Go to Top</a>
-    <a href="{{ sectionTOC.url | relative_url }}" class="pagination--pager" title="{{ sectionTOC.title | markdownify | strip_html }}">Module Index</a>
-    <a href="{% link _pages/sitemap.md %}" class="pagination--pager" title="Site Map">Site Map</a>
+    <a href="#top-of-page" class="pagination--pager font-07" title="Go to top">Go to Top</a>
+    <a href="{{ sectionTOC.url | relative_url }}" class="pagination--pager font-07" title="{{ sectionTOC.title | markdownify | strip_html }}">Module Index</a>
+    <a href="{% link _pages/sitemap.md %}" class="pagination--pager font-07" title="Site Map">Site Map</a>
   </nav>
 {% endif %}

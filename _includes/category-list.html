@@ -15,7 +15,7 @@
 
   <p class="page__taxonomy">
     <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].categories_label | default: "Categories:" }} </strong>
-    <span itemprop="keywords">
+    <span itemprop="keywords" class="font-07">
     {% for hash in category_hashes %}
       {% assign keyValue = hash | split: '#' %}
       {% capture category_word %}{{ keyValue[1] | strip_newlines }}{% endcapture %}

@@ -6,7 +6,7 @@
 {% assign tutorials_by_module = content | group_by_exp: "tutorial", "tutorial.path | remove: '_collection-base/' | split: '/' | first" %}
 
 <div id="toc">
-<h2 style="color: #8997c1;">Table of Contents</h2>
+<h2 class="c-header">Table of Contents</h2>
 {% for module in tutorials_by_module %}
   {% if module.name == landing_page %}
     {% for tutorial in module.items offset:1 %}
@@ -28,7 +28,7 @@
         {% assign index = '' %}
         {% assign style = "font-size: 1.1em; line-height: 45px; text-decoration: italic;" %}
       {% endif %}
-      <a href="{{ tutorial.url | relative_url }}" class="no-decoration prefix-{{ tutorial.level }}" style="{{ style }}">{{ index }} {{ tutorial.title | default: 'Untitled' }}</a> <i><span style="color: #a9bbd1; font-size: 0.8em;">{{ tutorial.note | default: '' }}</span></i><br>
+      <a href="{{ tutorial.url | relative_url }}" class="no-decoration prefix-{{ tutorial.level }} no-border font-08" style="{{ style }}">{{ index }} {{ tutorial.title | default: 'Untitled' }}&ensp;<b class="bi bi-box-arrow-up-right font-07 align-top"></b></a> <i><span style="color: #a9bbd1; font-size: 0.8em;">{{ tutorial.note | default: '' }}</span></i><br>
     {% endfor %}
     {% break %}
   {% endif %}
