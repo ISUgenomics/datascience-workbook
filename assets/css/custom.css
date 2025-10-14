@@ -336,6 +336,48 @@ pre {
   color: var(--c-boxlink);
 }
 
+.anchor-link {
+  visibility: hidden;
+  margin-left: 0.4em;
+  color: inherit;
+  font-size: 0.8em;
+  border-bottom: none !important;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+h1:hover .anchor-link,
+h2:hover .anchor-link,
+h3:hover .anchor-link,
+h4:hover .anchor-link,
+h5:hover .anchor-link,
+h6:hover .anchor-link {
+  visibility: visible;
+}
+
+.anchor-link:hover {
+  color: rgb(18, 96, 228);
+  border-bottom: none !important;
+  text-decoration: none !important;
+}
+
+.anchor-link.copied::after {
+  content: " ✓";
+  color: #28a745;
+  font-weight: bold;
+}
+
+.external-link i {
+  font-size: 0.8em;
+  vertical-align: middle;
+  opacity: 0.7;
+}
+
+.external-link:hover i {
+  opacity: 1;
+}
+
+
 
 /* collection-wide: linked path to the root of the section (at the top of each tutorial) */
 .page-sourcing {

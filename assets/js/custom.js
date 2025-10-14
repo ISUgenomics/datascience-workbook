@@ -189,3 +189,85 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+
+
+// adds icon to links, so users can right-click or copy that link easily.
+document.addEventListener("DOMContentLoaded", function () {
+  const headings = document.querySelectorAll("h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]");
+
+  headings.forEach(heading => {
+    // Skip headings inside an element with class="accordion"
+    if (heading.closest(".accordion")) return;
+    const fullUrl = `${window.location.origin}${window.location.pathname}#${heading.id}`;
+
+    // Create the actual link (must exist in DOM as <a> for right-click menu)
+    const anchor = document.createElement("a");
+    anchor.href = fullUrl;
+    anchor.classList.add("anchor-link");
+    anchor.innerHTML = '<i class="bi bi-link-45deg"></i>';
+
+    // Copy on click
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      const urlToCopy = anchor.getAttribute("data-full-url");
+      navigator.clipboard.writeText(urlToCopy).then(() => {
+        anchor.classList.add("copied");
+        setTimeout(() => anchor.classList.remove("copied"), 800);
+      });
+    });
+
+    heading.appendChild(anchor);
+  });
+});
+
+// adds tooltips for links (external/internal) and an icon for external links
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll("a[href]");
+  const currentPath = window.location.pathname.replace(/\/$/, ""); // normalize
+
+  links.forEach(link => {
+    const href = link.getAttribute("href");
+    if (!href || href.startsWith("javascript:") || href.startsWith("mailto:") || href.startsWith("tel:")) return;
+
+    // Handle same-page anchor links
+    if (href.startsWith("#")) {
+      link.setAttribute("title", "Internal redirection to a section on this page");
+      return;
+    }
+
+    // External link (different origin)
+    if (!href.startsWith("/") && !href.startsWith(window.location.origin)) {
+      link.classList.add("external-link");
+      link.setAttribute("target", "_blank");
+      link.setAttribute("rel", "noopener noreferrer");
+      link.setAttribute("title", "Link to the external resource");
+      link.setAttribute("aria-label", "Opens in new tab"); // accessibility
+
+      // Add external icon
+      if (!link.querySelector(".bi-box-arrow-up-right")) {
+        if (link.closest(".social-icons")) return; 
+        const icon = document.createElement("i");
+        icon.classList.add("bi", "bi-box-arrow-up-right", "ms-1");
+        link.appendChild(icon);
+      }
+
+      return;
+    }
+
+    // Internal link (to another page or same page)
+    const absoluteHref = href.startsWith("http") ? new URL(href).pathname : href;
+    const linkPath = absoluteHref.replace(/\/$/, "");
+
+    let tooltipText;
+    if (linkPath === currentPath) {
+      tooltipText = "Internal redirection to a section on this page";
+    } else {
+      const parts = linkPath.split("/").filter(Boolean);
+      const lastPart = decodeURIComponent(parts[parts.length - 1]);
+      tooltipText = `Internal redirection to ${lastPart.replace(/[-_]/g, " ")}`;
+    }
+
+    link.setAttribute("title", tooltipText);
+  });
+});
