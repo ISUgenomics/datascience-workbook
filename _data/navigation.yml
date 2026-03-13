@@ -10,8 +10,8 @@ main:
     url: /people.html
   - title: "Contribute"
     url: /contributing.html
-  - title: "Donate"
-    url: /donate.html
+#  - title: "Donate"
+#    url: /donate.html
 
 
 
