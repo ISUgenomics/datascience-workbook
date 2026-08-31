@@ -5,6 +5,9 @@
 - name: "alias"
   wiki: "Alias_(command)"
   definition: "is a shortcut or a shorthand notation used in command-line interfaces to represent a longer command or series of commands. By defining an alias, users can save time and reduce the effort required to execute frequently used commands. Aliases are typically defined in shell configuration files, such as .bashrc or .zshrc, allowing them to be automatically available in every new terminal session. For example, an alias can be set to replace a lengthy directory path with a simple command or to bundle multiple commands into one. This feature enhances productivity and efficiency in command-line operations."
+- name: "apple-silicon"
+  wiki: "Apple_silicon"
+  definition: "is Apple’s family of system-on-a-chip processors used in current Mac computers, including the M-series chips. Apple-silicon Macs use the ARM-based `arm64` architecture, which differs from the `x86_64` architecture used by Intel-based Macs. Software installers and compiled research tools may provide separate versions for these architectures."
 - name: "apptainer"
   wiki: "Singularity_(software)"
   definition: "(formerly known as Singularity) is a container platform designed specifically for HPC environments. It allows users to create and run containers that package applications and their dependencies in a portable and reproducible way. Apptainer ensures that software runs consistently across different computing environments, from local workstations to HPC clusters. It supports seamless integration with HPC resource managers and adheres to security practices suitable for multi-user environments. Apptainer is particularly useful for scientific research and complex computational tasks, enabling researchers to easily share and deploy their applications."
@@ -68,6 +71,9 @@
   wiki: "CURL"
   definition: "is a command-line tool and library for transferring data with URLs, supporting a wide range of protocols, including HTTP, HTTPS, FTP and many more. It allows users to send and receive data from web servers, making it highly versatile for tasks such as downloading files, making API requests and web scraping. Curl is capable of handling various forms of authentication, SSL certificates and can execute requests with complex parameters. It is particularly useful for developers and system administrators for testing endpoints, automating web interactions and debugging network issues. Curl's flexibility and extensive options make it a powerful tool for interacting with web services and retrieving online data."
 # D
+- name: "darwin"
+  wiki: "Darwin_(operating_system)"
+  definition: "is the open-source Unix-based core of macOS. It combines the XNU kernel with other low-level operating-system components, while macOS adds Apple’s graphical interface, applications, and hardware integration. This foundation is why many Unix command-line conventions also work on a Mac."
 - name: "data-acquisition"
   wiki: "Data_acquisition"
   definition: "is the process of collecting and measuring information from various sources to be used for analysis and research. This involves gathering data through sensors, instruments, surveys and other methods, and often includes digitizing and storing the data for further processing. In scientific research and engineering, data acquisition systems (DAQ) capture physical phenomena like temperature, pressure and sound, converting them into digital signals for analysis. Effective data acquisition ensures the accuracy and reliability of the data, forming the foundation for insightful analysis and informed decision-making."
@@ -199,6 +205,9 @@
   wiki: "SSHFS"
   definition: "is the process of making a directory on a remote server accessible on a local machine as if it were part of the local filesystem. This is especially useful in HPC environments where large datasets are stored on remote servers. By mounting a remote HPC directory, you can preview and work with data directly without downloading it. <base class='mb'>
   <i class='c-header font-08'>NOTE: Tools like SSHFS allow you to securely mount remote directories over SSH, enabling seamless access and manipulation of remote files from your local machine.</i>"
+- name: "macos"
+  wiki: "MacOS"
+  definition: "is Apple’s operating system for Mac computers. macOS provides a graphical desktop environment and a Unix-based command-line environment that can be accessed through Terminal. Its command-line behavior is similar to Linux in many areas, but the systems and available software are not identical."
 # N
 - name: "nextflow"
   wiki: "Nextflow"
@@ -458,6 +467,9 @@
   wiki: "Yum_(software)"
   definition: "(Yellowdog Updater, Modified) is a package management utility for RPM-based Linux distributions such as Red Hat Enterprise Linux (RHEL), CentOS and Fedora, common on HPC systems. YUM simplifies the process of installing, updating and removing software packages, resolving dependencies automatically to ensure that all required packages are installed. It retrieves packages from configured repositories and can manage package groups for easier software deployment. <base class='mb'> The command **yum list all** provides a comprehensive list of all available packages in the configured repositories, including those that are installed and those that are available for installation. This command is useful for users who need to see the full range of software options and versions available on their system."
 # Z
+- name: "zsh"
+  wiki: "Z_shell"
+  definition: "(Z shell) is a Unix shell used to interpret commands and run scripts. It is the default login shell on current macOS systems. Zsh supports interactive features such as command history, completion, aliases, and shell configuration files such as `.zshrc`."
 - name: "zipping-files"
   wiki: "ZIP_(file_format)"
   definition: "is the process of compressing one or more files into a single archive file, typically with a `.zip` extension. This reduces the total file size, making it easier to store and transfer. Zipping files preserves the directory structure and can also include additional metadata. Common tools for zipping files include software like WinZip, 7-Zip, and the built-in zip utilities in operating systems like Windows, macOS and Linux. In addition to saving space, zipping files can also facilitate the packaging of multiple files into a single, manageable unit for easier distribution and organization."
