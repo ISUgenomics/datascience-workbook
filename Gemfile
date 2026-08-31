@@ -2,6 +2,8 @@
 source "https://rubygems.org"
 
 gem 'github-pages', '229', group: :jekyll_plugins
+# github-pages 229 uses the Faraday 1.x API, including its default adapter.
+gem 'faraday', '< 2'
 
 gem "tzinfo-data"
 

@@ -3,6 +3,7 @@ __pycache__/
 *.pyc
 .DS_Store
 .env
+.tmp
 _site
 Gemfile.lock
 run_locally.sh
