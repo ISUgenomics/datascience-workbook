@@ -453,6 +453,8 @@ toc-note {
 #further-reading .prefix-2, #further-reading .prefix-3, #further-reading .prefix-4 {color: var(--sitemap-2);}
 #further-reading .prefix-1 {color: #24376b;}
 #further-reading .prefix-0 {color: var(--sitemap-0);}
+#further-reading a.no-border {border-bottom: none !important; font-size: 1em !important; text-decoration: none !important;}
+#further-reading a.no-border:hover {text-decoration: none !important;}
 
 .collapsible {
   background-color: #e8e9e8;
