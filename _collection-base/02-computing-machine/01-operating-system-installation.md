@@ -19,9 +19,9 @@ attributes: ["installation"]
 {% include page-sourcing.html %}
 
 
-# Introduction
+## Introduction
 
-## What is an **O**perating **S**ystem?
+### What is an **O**perating **S**ystem?
 
 An operating system (OS) is the software that manages and controls the hardware and other software on a computer. It provides a platform for programs to run on and performs tasks such as:
 * managing memory,
@@ -63,7 +63,7 @@ Each operating system has its own set of features and functions and is designed 
 <p class="footnote center-h">Figure shows logos of the most popular Linux distributions, all based on the Unix command-line interface.</p>
 
 
-## When to reinstall the OS?
+### When to reinstall OS?
 
 There are a few situations where you might want to consider reinstalling your operating system:
 
@@ -82,7 +82,7 @@ There are a few situations where you might want to consider reinstalling your op
 </div>
 
 
-## How to install the OS?
+## How to install OS?
 
 Installing any operating system (OS) on a computer is a process that typically involves the following steps:
 
@@ -126,9 +126,11 @@ There are a few things to consider when multi-booting a few operating systems on
 
 Having **multiple operating systems** installed on a single computer can provide a number of benefits, including flexibility, compatibility, testing, and security. With multiple operating systems installed, you can **switch between them** as needed, depending on the task at hand. This can be useful if you need to use different operating systems **for work and personal use**, or if you need to use the operating system that is best suited for a particular task or application. Additionally, having multiple operating systems installed can **make it easier to test applications** or configurations on multiple operating systems, and can **provide an additional layer of security** by allowing you to use one operating system for sensitive tasks and another for less sensitive tasks.
 
+### Dual-booting guides
 
-**Follow the specialized external resources to customize your boot options:**
+1. For a Linux-specific installation, continue to [Getting started with Ubuntu](/02-computing-machine/01c-linux-setup/#install-ubuntu).
 
+2. Or, follow the specialized external resources to customize your boot options:
 * <a href="https://learn.microsoft.com/en-us/windows-hardware/drivers/devtest/editing-boot-options" target="_blank">Customize boot options in Windows [by Microsoft]  ⤴</a>
 * <a href="https://www.oreilly.com/library/view/windows-xp-hacks/0596005113/ch01s02.html" target="_blank">Customize Multiboot Startup Options if you have only Windows XP installed [by O'reilly] ⤴</a>
 * <a href="https://www.freecodecamp.org/news/how-to-dual-boot-any-linux-distribution-with-windows/" target="_blank">How to Dual Boot Any Linux Distribution With Windows [by freeCodeCamp] ⤴</a>
