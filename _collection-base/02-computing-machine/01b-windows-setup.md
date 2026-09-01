@@ -1,5 +1,5 @@
 ---
-title: "Unix command line tools on Windows"
+title: "Windows command-line environments"
 layout: single
 author: Aleksandra Badaczewska
 author_profile: true
@@ -19,371 +19,204 @@ attributes: ["installation"]
 {% include page-sourcing.html %}
 
 
-# Introduction
+## Introduction
 
-## PowerShell Commands
+Windows provides several command-line environments for research computing. **PowerShell** is the native Windows shell, **Windows Subsystem for Linux (WSL)** provides a Linux environment, and **Git Bash** provides a Unix-like shell with selected command-line tools. This tutorial explains how to open and configure each option, how they differ, and which one to choose for common tasks.
 
-Getting started with the terminal and command line on Windows is straightforward, as PowerShell is built into Windows 11, providing a powerful scripting environment.
+## Choosing a command-line environment
 
+* Use [PowerShell](#powershell) for Windows-native commands, administration, and automation.
+* Use [WSL](#wsl---windows-subsystem-for-linux) for Bash scripts, Linux command-line tools, and software designed for Linux.
+* Use [Git Bash](#git-bash) for Git workflows and lightweight Unix-like commands.
 
-## Bash commands on Windows
+The environments can coexist in Windows Terminal. Choose one deliberately for each task and do not assume that a command from PowerShell, Bash, or WSL will work unchanged in another shell.
 
-Bash commands do not work in PowerShell or the traditional Command Prompt by default since bash is a Unix shell and command language. To use bash commands directly, you would need to enable Windows Subsystem for Linux (WSL) or use a third-party application like Git Bash.
+<div class="more" markdown="1">
+For a worked example of organizing and renaming many files with PowerShell, Bash in WSL, Python, and R, continue to [Automated batch file operations on Windows](/02-computing-machine/01b-windows-file-manipulation/).
+</div>
 
----
+## PowerShell
 
-### Using PowerShell
+PowerShell is the native Windows shell. It is a good default for Windows-specific administration, file operations, and automation. PowerShell commands and Bash commands are not interchangeable, so first check which shell is open before running a command.
 
-1. **Access PowerShell**
-* Right-click the `Start button` or press `Win + X`, then select ***Windows Terminal*** or ***Windows PowerShell*** from the menu. Windows Terminal allows you to use PowerShell, Command Prompt, and other shells from the same window.
-* Alternatively, you can search for ***PowerShell*** in the `Start menu`.
+### Open PowerShell
 
-2. **Basic PowerShell Commands**
+1. Open **Windows Terminal** from the **Start menu**. If it is not installed, install it from the [Microsoft Store](https://apps.microsoft.com/detail/9n0dx20hk701).
+2. Open a PowerShell tab by selecting the arrow beside the **+** button and choosing **PowerShell**. Windows Terminal usually opens PowerShell as its default profile.
+3. You can also search for **PowerShell** in the **Start menu**. Use **Terminal (Admin)** only when a task explicitly requires administrator privileges.
 
-| command | description |
-|---------|-------------|
-|`Get-Command`                    | Lists all commands available in PowerShell. |
-|`Get-Help <command>`             | Displays help information about PowerShell commands. |
-|`Get-Location`                   | Shows your current directory. |
-|`Set-Location <path>`            | Changes your current directory. |
-|`Get-ChildItem`                  | Lists files and directories in the current directory. |
-|`Copy-Item <path> <destination>` | Copies files or directories. |
-|`Move-Item <path> <destination>` | Moves files or directories. |
-|`Remove-Item <path>`             | Deletes files or directories. |
+### Check the PowerShell session
 
-3. **Executing Scripts**
-* PowerShell scripts have a `.ps1` extension.
-* To run a script:
-  * navigate to the script's directory,
-  * type `./scriptName.ps1`
-  * press `Enter`
+Run the following commands one at a time:
 
+1. Display the PowerShell version:
+   ```powershell
+   $PSVersionTable.PSVersion
+   ```
+2. Display the current directory:
+   ```powershell
+   Get-Location
+   ```
+3. List files and folders in the current directory:
+   ```powershell
+   Get-ChildItem
+   ```
 
-### Enabling Windows Subsystem for Linux (WSL) for Bash Commands
+<code>Get-Location</code> and <code>Get-ChildItem</code> are PowerShell commands. Their shorter aliases, <code>pwd</code> and <code>ls</code>, may also work, but using the full names makes a script easier to understand.
 
-1. **Enable WSL**
-* Open PowerShell as Administrator.
-* Run the command `wsl --install` to install the Windows Subsystem for Linux and a Linux distribution (Ubuntu by default).
-* Follow the prompts and restart your computer if required.
+| command | purpose |
+|---------|---------|
+| `Get-Command` | Lists available commands. |
+| `Get-Help <command>` | Displays help for a command. |
+| `Get-Location` | Shows the current directory. |
+| `Set-Location <path>` | Changes the current directory. |
+| `Get-ChildItem` | Lists files and directories. |
+| `Copy-Item <source> <destination>` | Copies files or directories. |
+| `Move-Item <source> <destination>` | Moves files or directories. |
+| `Remove-Item <path>` | Removes files or directories. |
 
-2. **Access Linux Terminal**
-* After installation, open the `Start menu`, search for the Linux distribution you installed (e.g., "Ubuntu"), and open it.
-* Complete the initial setup by creating a user and setting a password.
+### Get help and run scripts
 
-3. **Using Bash Commands**
-* Now, you can use bash commands within this Linux environment on Windows 11.
+PowerShell includes an integrated help system:
 
+1. Read the general description of a command:
+   ```powershell
+   Get-Help Get-ChildItem
+   ```
+2. Display examples for a command:
+   ```powershell
+   Get-Help Get-ChildItem -Examples
+   ```
+3. Create and run the script:
+   * Create and open a new script file in Notepad. If the file does not exist, Notepad will ask whether to create it:
+     ```powershell
+     notepad hello.ps1
+     ```
+   * Paste the following content, save the file, and close Notepad:
+     ```powershell
+     $name = "researcher"
+     Write-Output "Hello, $name"
+     ```
+   * Run the script from the current directory:
+     ```powershell
+     .\hello.ps1
+     ```
 
-### Using Third-party Applications like Git Bash
+<div class="warning" markdown="1">
+PowerShell may restrict script execution through its **execution policy**. Check the policy before changing it:
 
-Download and install `Git for Windows` from its official website. During installation, select options that allow you to use Git from the Windows Command Prompt if desired. Once installed, you can open `Git Bash` from the `Start menu` and use bash commands directly.
-
-*This setup allows you to work with a variety of command-line tools and environments directly on Windows 11, whether you're more comfortable with PowerShell, prefer the Unix-style environment of bash, or need to use both.*
-
-
-## TASK: Change files structure and rename files (Power Shell)
-
-You can accomplish this task using PowerShell by leveraging its scripting capabilities to iterate through the directories, extract the required parts from the file path *(year, trial, sample name, and slice)* and then rename and move the files accordingly.
-
-Below is a PowerShell script that demonstrates how you might approach this task.
-
-This script assumes that you have a root directory where your structured folders start (e.g., `C:\Data\Year\Trial\Sample Name\Slice X\Name.bmp`), and you want to move all `.bmp` files to a single target directory, renaming them in the process to the format `Sample_Name_Slice_X.bmp.`
-
-**1. Create a script file** `copy_files.ps1` **and copy-paste the code**
-
-```bash
-# Define the root directory where the structured folders start
-$rootDirectory = "C:\Path\To\Your\RootDirectory"
-
-# Define the target directory where you want to move and rename the files
-$targetDirectory = "C:\Path\To\Your\TargetDirectory"
-
-# Create the target directory if it does not already exist
-if (-not (Test-Path -Path $targetDirectory)) {
-    New-Item -Path $targetDirectory -ItemType Directory
-}
-
-# Recursively find all .bmp files in the root directory
-$files = Get-ChildItem -Path $rootDirectory -Filter *.bmp -Recurse
-
-foreach ($file in $files) {
-    # Extract parts of the file path
-    $pathParts = $file.DirectoryName -split '\\'
-    # Assuming the structure is always Year/Trial/Sample Name/Slice X
-    $sampleName = $pathParts[-2] -replace ' ', '_'
-    $slice = $pathParts[-1] -replace ' ', '_'
-
-    # Create the new file name based on your desired format
-    $newFileName = "$($sampleName)_$($slice).bmp"
-
-    # Define the full path for the new file location
-    $newFilePath = Join-Path -Path $targetDirectory -ChildPath $newFileName
-
-    # Move and rename the file
-    Copy-Item -Path $file.FullName -Destination $newFilePath
-}
-
-Write-Output "All files have been moved and renamed successfully."
-```
-
-Make sure to replace:
-* `C:\Path\To\Your\RootDirectory` with the path to your root directory and
-* `C:\Path\To\Your\TargetDirectory` with the path to the directory where you want to move the files.
-
-This script will not overwrite files in the target directory if a file with the same name already exists. If you're dealing with files that might have the same resulting name, consider adding additional logic to handle duplicates, such as appending a number to the file name.
-
-**Always test scripts like this on a small set of data before running them on your entire dataset to ensure it works as expected and to avoid data loss.**
-
-
-**2. Running PowerShell Scripts**
-
-To run a PowerShell script on a Windows machine, you first need to ensure that your system is configured to allow the execution of PowerShell scripts. PowerShell's execution policy might restrict the running of scripts by default.
-
-* **Open PowerShell** <br>
-Right-click the `Start button`, then select "Windows Terminal" or "PowerShell" from the menu.
-
-* **Check Execution Policy** <br>
-Before running a script, check the current execution policy using the following command:
-```bash
+```powershell
 Get-ExecutionPolicy
 ```
 
-*If it returns `Restricted`, you'll need to change the execution policy.*
+Do not weaken the policy merely to run an unknown script. Read the script, verify its source, and consult the [PowerShell execution policy documentation](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy) before making a change.
+</div>
 
-* **Change Execution Policy** *(if needed)* <br>
-To allow script execution, set the execution policy to, for example, `RemoteSigned` which allows running scripts created on the local machine:
+## WSL - Windows Subsystem for Linux
+
+WSL runs a Linux distribution alongside Windows without requiring a separate virtual machine or dual-boot installation. It is the most suitable option when you need Bash, Linux command-line tools, or software documented for Linux.
+
+### Check requirements
+
+The one-command installation requires Windows 10 version 2004 (build 19041) or later, or Windows 11. If you use an older Windows version, follow Microsoft’s [manual WSL installation guide](https://learn.microsoft.com/en-us/windows/wsl/install-manual).
+
+### Install WSL
+
+1. Open **Windows Terminal (Admin)**. Approve the User Account Control prompt.
+2. Install WSL and the default Ubuntu distribution:
+   ```powershell
+   wsl --install
+   ```
+3. Restart Windows when prompted.
+4. Open **Ubuntu** from the **Start menu**. The first launch may take a few minutes while the distribution is configured.
+5. Create a Linux username and password when prompted. The password is not displayed while you type it.
+
+If the installation command displays help text instead of installing a distribution, list the available distributions and install one explicitly:
+
+```powershell
+wsl --list --online
+wsl --install --distribution Ubuntu
+```
+
+See Microsoft’s [WSL installation guide](https://learn.microsoft.com/en-us/windows/wsl/install) for other distributions and troubleshooting.
+
+### Update the Linux environment
+
+After opening Ubuntu, update its package information and installed packages:
+
 ```bash
-Set-ExecutionPolicy RemoteSigned
+sudo apt update
+sudo apt upgrade
 ```
 
-**WARNING:** *This command requires Administrator privileges. Choose an execution policy level that meets your security needs.*
+These commands run inside Ubuntu, not in PowerShell. When a command asks for the Linux password, type the password created during the first launch.
 
-* **Run the Script** <br>
-Navigate to the directory containing your script, then run it by specifying its path:
-```
-.\YourScriptName.ps1
-```
+The first four commands run inside Ubuntu. The last three are WSL management commands, run from PowerShell or Windows Terminal:
 
+| command | purpose |
+|---------|---------|
+| `pwd` | Shows the current Linux directory. |
+| `ls -lha` | Lists visible and hidden files with details. |
+| `cd <path>` | Changes the current directory. |
+| `mkdir <name>` | Creates a directory. |
+| `wsl --list --verbose` | Lists installed distributions and their WSL versions. |
+| `wsl --status` | Displays the WSL configuration. |
+| `wsl --shutdown` | Stops all running WSL distributions. |
 
-## TASK: Change files structure and rename files (Bash commands via WSL)
+### Open WSL in Terminal
 
-You can perform the same task using Bash commands. The approach involves:
-- finding all `.bmp` files within the nested directory structure,
-- then extracting necessary parts of the file path to construct the new file name,
-- and finally copying/moving and renaming the files to a single directory.
+1. Open **Windows Terminal**.
+2. Select the arrow beside the **+** button.
+3. Choose **Ubuntu** or another installed Linux distribution.
+4. To make it the default profile, open **Settings → Startup → Default profile** and select the distribution.
 
-This script assumes you have a similar directory structure (`Year/Trial/Sample Name/Slice 1 or Slice 2/Name.bmp`) and you want to move all `.bmp` files to a single directory, renaming them to the format `Sample_Name_Slice_1.bmp` or similar.
-
-**1. Create the script file** `copy-files.sh` **and copy-paste the code**
+Windows drives are mounted inside WSL under <code>/mnt</code>. For example, the Windows <code>C:</code> drive is available at <code>/mnt/c</code>:
 
 ```bash
-#!/bin/bash
-
-# Define the root directory where your structured folders start
-rootDirectory="/path/to/your/rootDirectory"
-
-# Define the target directory where you want to move and rename the files
-targetDirectory="/path/to/your/targetDirectory"
-
-# Create the target directory if it does not exist
-mkdir -p "$targetDirectory"
-
-# Find all .bmp files in the root directory and its subdirectories
-find "$rootDirectory" -type f -name "*.bmp" | while read file; do
-    # Extract the parts of the file path
-    pathParts=($(dirname "$file" | tr '/' '\n'))
-    sampleName=$(echo "${pathParts[-2]}" | tr ' ' '_')
-    slice=$(echo "${pathParts[-1]}" | tr ' ' '_')
-
-    # Extract the file name
-    fileName=$(basename "$file")
-
-    # Construct the new file name
-    newFileName="${sampleName}_${slice}.bmp"
-
-    # Move and rename the file to the target directory
-    cp "$file" "$targetDirectory/$newFileName"
-done
-
-echo "All files have been moved and renamed successfully."
+ls /mnt/c/Users
 ```
 
-In this script:
-* `find "$rootDirectory" -type f -name "*.bmp"`: Finds all `.bmp` files starting from `$rootDirectory`.
+<div class="protip" markdown="1">
+For active research projects, keep frequently accessed Linux-oriented files inside the WSL file system and use <code>/mnt/c/</code> when you need to access Windows files. Microsoft provides further guidance in [Working across Windows and Linux file systems](https://learn.microsoft.com/en-us/windows/wsl/filesystems).
+</div>
 
-* `dirname "$file" and basename "$file"`: Extract the directory path and file name, respectively.
+## Git Bash
 
-* `tr '/' '\n'`: Translates slashes to newlines to split the path into parts.
+Git Bash is installed with [Git for Windows](https://gitforwindows.org/). It provides Bash and a collection of Unix-like tools, making it useful for Git workflows and lightweight command-line tasks. It is not a complete Linux distribution: software that requires Linux system services or packages may need WSL instead.
 
-* `tr ' ' '_'`: Replaces spaces with underscores in directory names to match your desired file naming convention.
+### Install Git Bash
 
-* `mv "$file" "$targetDirectory/$newFileName"`: Moves and renames the file to the target directory.
+1. Download Git for Windows from the [official website](https://gitforwindows.org/).
+2. Run the installer and review the options. The defaults are suitable for most users; do not change settings unless you understand their effect.
+3. Open **Git Bash** from the **Start menu**.
+4. To open Git Bash in a particular folder, use the folder’s context menu in File Explorer and select **Open Git Bash here**, when available.
 
-Make sure to replace `/path/to/your/rootDirectory` with the actual path to your root directory and `/path/to/your/targetDirectory` with the path to your desired target directory. As with any script that moves and renames files, it's wise to test this on a small subset of your data before applying it to the entire dataset to ensure it behaves as expected.
+### Check the Git Bash session
 
-**2. Running Bash Scripts**
+Run the following commands:
 
-On Unix-like systems (Linux, macOS) or Windows with Windows Subsystem for Linux (WSL) or Git Bash, running Bash scripts is straightforward:
+1. Confirm that Git is available:
+   ```bash
+   git --version
+   ```
+2. Display the current directory:
+   ```bash
+   pwd
+   ```
+3. List visible and hidden files:
+   ```bash
+   ls -lha
+   ```
 
-* **Open Terminal or Bash** <br>
-  * On Linux or macOS, open the Terminal application.
-  * On Windows, open WSL or Git Bash.
+Git Bash uses Unix-style paths and commands, but it works with files stored on Windows. Use the shell’s current working directory and path format consistently within a command sequence.
 
-
-* **Make the Script Executable** *(if not already)* <br>
-Before running a Bash script, you might need to make it executable. Navigate to the directory containing your script and run:
-```
-chmod +x script_name.sh
-```
-<i>This step is only needed once for each script.</i>
-
-* **Run the Script** <br>
-Execute the script by specifying its path:
-```bash
-./YourScriptName.sh
-```
-
-**NOTES:**
-* For **Windows users** running Bash scripts, if you're using `WSL`, you can access your C drive, for example, at `/mnt/c/` from within WSL.
-* When **running scripts that affect your file system** or configuration, always make sure you understand what the script does to avoid unintended changes.
-* Depending on your script's requirements, you may need to run the PowerShell or Terminal application with Administrator privileges or use sudo in Unix-like systems for commands that require superuser access.
-
-
-## Python
-
-Python can be a good choice for tasks involving file manipulation, such as copying files from a nested directory structure while renaming them, due to its readability and the powerful libraries available for file and path manipulations.
-
-Python might not always be more efficient than shell commands in terms of execution speed, especially for simple tasks, but it can offer more straightforward and maintainable code for complex tasks.
-
-Below is a Python script that accomplishes the task. <br>
-This script does not require any external libraries beyond what is included with a standard Python installation, specifically using the `os` and `shutil` modules.
-
-This script walks through the directory structure starting from your custom `root_directory`, finds all `.bmp` files, constructs a new file name based on the parent and grandparent directory names (replacing spaces with underscores), and copies them to your custom `target_directory` with the new names.
-
-**1. Create the script file** `copy_files.py` **and copy-paste the code**
-
-```python
-import os
-import shutil
-
-def copy_and_rename_files(root_directory, target_directory):
-    for root, dirs, files in os.walk(root_directory):
-        for file in files:
-            if file.endswith(".bmp"):
-                # Construct the new file path
-                parts = root.split(os.sep)
-                sample_name = parts[-2].replace(' ', '_')
-                slice_name = parts[-1].replace(' ', '_')
-                new_file_name = f"{sample_name}_{slice_name}.bmp"
-
-                source_path = os.path.join(root, file)
-                target_path = os.path.join(target_directory, new_file_name)
-
-                # Copy the file to the new location
-                shutil.copy2(source_path, target_path)
-                print(f"Copied: {source_path} to {target_path}")
-
-# Example usage
-root_directory = "/path/to/your/rootDirectory"
-target_directory = "/path/to/your/targetDirectory"
-copy_and_rename_files(root_directory, target_directory)
-```
-
-Remember to replace `/path/to/your/rootDirectory` and `/path/to/your/targetDirectory` with the actual paths for your directories.
-
-**The Python approach offers flexibility and might be easier to maintain and modify**, especially for those more comfortable with Python than shell scripting.
-
-**2. Installing Python is required** *(do it only once)*
-
-If Python is not already installed on your system, follow these instructions to install it:
-
-* **Windows**
-  * Download the Python installer from the official Python website (https://python.org).
-  * Run the installer. Ensure you check the box that says "Add Python X.X to PATH" at the start of the installation process.
-  * Follow the installation prompts, choosing the install location or using the default one.
-
-
-**3. Running the Python Script**
-
-* Save the script to a file, for example, `copy_files.py` *(if not already)*.
-* Open a terminal or command prompt.
-* Navigate to the directory containing `copy_files.py`.
-* Run the script with Python by executing:
-```bash
-python copy_files.py
-```
-
-**WARNING:** *On some systems, you may need to use python3 instead of python to use Python 3.*
-
-
-## R
-
-You can accomplish the task in R as well. <br>
-R is not typically the first choice for file manipulation tasks, but it is quite capable of handling them through its built-in functions and the fs package for file system operations, which provides a more consistent interface across different operating systems.
-
-The following `R script` iterates over a specified directory structure, finds all `.bmp` files, constructs new file names based on their directory path, and then copies them to a target directory.
-
-```r
-# Load necessary library
-library(fs)
-
-# Function to copy and rename files
-copy_and_rename_files <- function(root_directory, target_directory) {
-  # Create the target directory if it doesn't exist
-  dir.create(target_directory, recursive = TRUE, showWarnings = FALSE)
-
-  # Recursively list all .bmp files in the root directory
-  file_paths <- fs::dir_ls(root_directory, glob = "*.bmp", recurse = TRUE)
-
-  # Iterate over each file
-  for (file_path in file_paths) {
-    # Extract the parts of the file path
-    path_parts <- unlist(strsplit(file_path, "/"))
-    sample_name <- gsub(" ", "_", path_parts[length(path_parts)-2])
-    slice_name <- gsub(" ", "_", path_parts[length(path_parts)-1])
-    new_file_name <- paste(sample_name, slice_name, sep = "_")
-
-    # Construct the target file path
-    target_file_path <- file.path(target_directory, new_file_name)
-
-    # Copy the file
-    file.copy(file_path, target_file_path)
-  }
-}
-
-# Example usage
-root_directory <- "/path/to/your/rootDirectory"
-target_directory <- "/path/to/your/targetDirectory"
-copy_and_rename_files(root_directory, target_directory)
-```
-
-This script provides a straightforward way to accomplish your file copying and renaming task in R, suitable for those who prefer or require working within the R ecosystem.
-
-**2. Installing R and RStudio**
-
-If you don't have R and RStudio installed:
-
-* **Install R**
-  * Visit the Comprehensive R Archive Network (CRAN) at <a href="https://cran.r-project.org/" target="_blank">https://cran.r-project.org/</a> and download the R version for your operating system.
-  * Follow the installation instructions.
-
-* **Install RStudio**
-  * Go to the RStudio download page at <a href="https://www.rstudio.com/products/rstudio/download/" target="_blank">https://www.rstudio.com/products/rstudio/download/</a> and download the appropriate version for your operating system.
-  * Install RStudio following the provided instructions.
-
-**3. Running the R Script**
-
-* **In RStudio:**
-  * Open RStudio.
-  * Paste the script into a new script file.
-  * Set root_directory and target_directory to your specific paths.
-  * Press the `Run button` or use the keyboard shortcut (`Ctrl+Enter` on Windows/Linux, `Cmd+Enter` on macOS) to execute.
-
-* **In Terminal:**
-  * Save the script to a file, e.g., `copy_files.R`.
-  * Open a terminal.
-  * Navigate to the directory containing `copy_files.R`.
-  * Run the script with R by executing:
-```r
-Rscript copy_files.R
-```
+| command | purpose |
+|---------|---------|
+| `pwd` | Shows the current directory. |
+| `ls -lha` | Lists visible and hidden files with details. |
+| `cd <path>` | Changes the current directory. |
+| `mkdir <name>` | Creates a directory. |
+| `cp <source> <destination>` | Copies files or directories. |
+| `mv <source> <destination>` | Moves or renames files or directories. |
+| `rm <path>` | Removes files or directories. |
+| `git status` | Shows the state of a Git repository. |
