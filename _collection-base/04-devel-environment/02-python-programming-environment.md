@@ -44,7 +44,7 @@ There are also online platforms that allow you to write and run Python code dire
 * <a href="https://www.python.org/shell/" target="_blank">Python Shell  ⤴</a>, includes an online console from PythonAnywhere; use it right away without creating an account or signing-in
 * <a href="https://www.codecademy.com/" target="_blank">CodeAcademy  ⤴</a>, includes a code editor and interactive exercises to help you learn programming; offers interactive courses and tutorials on a variety of programming languages, including Python
 * <a href="https://repl.it/" target="_blank">Repl.it  ⤴</a>, includes a code editor, debugger, and integrations with various tools and services; supports a wide range of programming languages, including Python
-* <a href="https://trinket.io/" target="_blank">Trinket  ⤴</a>, includes a code editor, debugger, and integrations with various tools and services; supports a number of programming languages, including Python
+* <a href="https://coddy.tech/playground/python" target="_blank">Coddy  ⤴</a>, includes a code editor that runs in the browser with no account, and links for sharing code; supports a number of programming languages, including Python
 * <a href="https://www.pythonanywhere.com/" target="_blank">PythonAnywhere  ⤴</a>, includes a code editor, debugger, and support for web development frameworks such as Django and Flask;  supports developing and hosting Python web applications
 
 Typically, these online platform provide interface for the Python built-in shell, i.e., the Integrated Development and Learning Environment (**Python IDLE**) that comes with the standard installation of Python.
